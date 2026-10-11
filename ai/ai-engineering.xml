@@ -5,6 +5,22 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持</title>
+      <link>https://help.aliyun.com/zh/model-studio/model-release-notes</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:d3c80df966ebcfebcc1b552a70c8dee3</guid>
+      <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
+      <description>根据阿里云官方帮助文档的更新记录，其大模型服务平台“百炼”在2026年10月进行了功能更新。新增了按模型单元的部署计费模式，为成本控制提供新选项。同时，平台扩展了对通义千问视觉理解模型（Qwen3-VL-8B）的微调支持，使开发者能够针对特定视觉任务对这些多模态模型进行定制化训练和部署。</description>
+      <content:encoded>&lt;p&gt;根据阿里云官方帮助文档的更新记录，其大模型服务平台“百炼”在2026年10月进行了功能更新。新增了按模型单元的部署计费模式，为成本控制提供新选项。同时，平台扩展了对通义千问视觉理解模型（Qwen3-VL-8B）的微调支持，使开发者能够针对特定视觉任务对这些多模态模型进行定制化训练和部署。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;新增“按模型单元”的部署方式，提供可预测的固定成本和灵活的模型性能调整。&lt;/li&gt;&lt;li&gt;千问3-VL-8B-Instruct和千问3-VL-8B-Thinking两个视觉理解模型现在支持SFT（有监督微调）。&lt;/li&gt;&lt;li&gt;支持全参微调和LoRA高效微调两种调优方式，调优后模型可直接部署。&lt;/li&gt;&lt;li&gt;百炼平台功能更新持续进行，为使用国产模型进行定制化开发的开发者提供了更多工具支持。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://help.aliyun.com/zh/model-studio/model-release-notes"&gt;模型平台功能更新-大模型服务平台百炼-阿里云帮助中心&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>2026年Q4大模型API定价全景发布，GPT-6.1 Sol成为OpenAI主力</title>
+      <link>https://therouter.ai/zh/blog</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:8ab2ed96be67fa52195aaf10ff60c770</guid>
+      <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
+      <description>一份关于2026年第四季度主流大模型API定价的完整参考报告发布。报告指出，OpenAI已经取消了GPT-6.1 Astra，GPT-6.1 Sol以$2/$10每百万Token的价格成为其最强公开模型。同时，多款Flash级模型在近期密集发布，提供了优秀的性价比。这份定价全景对于开发者在进行模型选型、预算规划和多供应商路由回退策略配置时具有重要实用价值。</description>
+      <content:encoded>&lt;p&gt;一份关于2026年第四季度主流大模型API定价的完整参考报告发布。报告指出，OpenAI已经取消了GPT-6.1 Astra，GPT-6.1 Sol以$2/$10每百万Token的价格成为其最强公开模型。同时，多款Flash级模型在近期密集发布，提供了优秀的性价比。这份定价全景对于开发者在进行模型选型、预算规划和多供应商路由回退策略配置时具有重要实用价值。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;GPT-6.1 Sol成为OpenAI最强公开模型（无GPT-6.1 Astra），价格$2/$10。&lt;/li&gt;&lt;li&gt;Flash级模型（如DeepSeek V4.1 Flash， Qwen3.8 Flash， GLM-5.3 Flash) 提供百万级上下文和低于1美元每百万Token的定价。&lt;/li&gt;&lt;li&gt;报告整理了2026年Q4各厂商价格、缓存折扣和批量处理费率。&lt;/li&gt;&lt;li&gt;为开发者配置多供应商成本分层和回退路由提供关键定价参考。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://therouter.ai/zh/blog"&gt;2026 年 Q4 大模型 API 定价全景：GPT-6.1 Sol、Opus 5.5 与 Astra 取消后的新格局&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>大模型竞争转向性价比，国产开源模型能力逼近、长上下文成标配</title>
       <link>https://zhuanlan.zhihu.com/p/2092526182591895272</link>
       <guid isPermaLink="false">urn:signal-archive:ai:db4ee7b294bb5f186b883ad39535c872</guid>
@@ -206,6 +222,15 @@
       <content:encoded>&lt;p&gt;AWS宣布Claude Haiku 5.5已在其平台上正式可用，标志着该模型的广泛部署。开发者可以通过Amazon Bedrock获得AWS托管的数据驻留和治理功能，或通过Claude Platform on AWS获得Anthropic原生API体验。这使得企业用户能够更容易地将成本优化的AI模型集成到现有云基础设施和工作流中，特别是在需要大规模、低延迟处理的场景下。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Claude Haiku 5.5现已通过Amazon Bedrock和Claude Platform on AWS两个渠道提供。&lt;/li&gt;&lt;li&gt;Bedrock提供AWS管理的基础设施和数据驻留保障，而Claude Platform on AWS提供Anthropic原生平台体验。&lt;/li&gt;&lt;li&gt;模型定位为实时体验（如语音代理、实时支持）和高容量任务（如分类、摘要）的理想选择。&lt;/li&gt;&lt;li&gt;可作为Opus 5.5等更大模型的副代理，并行处理定义明确的子任务。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws"&gt;Claude Haiku 5.5 is now available on AWS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>Claude Opus 5.5获2026年10月BenchLM AI智能体排行榜第一</title>
+      <link>https://af.net/realtime/claude-opus-5-5-leads-october-2026-benchlm-ai-agent-rankings</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:79560825265d1ca6d5de4a81880fd546</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
+      <description>2026年10月7日，BenchLM发布了最新的AI Agent模型排行榜，Anthropic的Claude Opus 5.5以88.8分的综合得分位居第一。该榜单显示专有模型在复杂Agent任务中表现突出，而排名前列的开源模型（如GLM-5.3）则为企业提供了在高性能专有模型和可控、经济的开源方案之间进行权衡的依据。</description>
+      <content:encoded>&lt;p&gt;2026年10月7日，BenchLM发布了最新的AI Agent模型排行榜，Anthropic的Claude Opus 5.5以88.8分的综合得分位居第一。该榜单显示专有模型在复杂Agent任务中表现突出，而排名前列的开源模型（如GLM-5.3）则为企业提供了在高性能专有模型和可控、经济的开源方案之间进行权衡的依据。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Claude Opus 5.5在2026年10月BenchLM AI代理模型排行榜中以88.8分（BenchAlign v5.8）位居榜首。&lt;/li&gt;&lt;li&gt;排行榜评估了122个模型在工具使用、决策和文档处理等代理任务中的表现。&lt;/li&gt;&lt;li&gt;专有模型（如Claude Opus 5.5）在复杂Agent任务中占据主导。&lt;/li&gt;&lt;li&gt;开源模型GLM-5.3排名第12，为成本敏感或可控部署需求提供了可行替代方案。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://af.net/realtime/claude-opus-5-5-leads-october-2026-benchlm-ai-agent-rankings"&gt;Claude Opus 5.5 Leads October 2026 BenchLM AI Agent Rankings&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>Anthropic 发布 Claude Haiku 5.5：API 价格降低 90%</title>
       <link>https://af.net/realtime/anthropic-unveils-claude-haiku-5-5-with-90-api-price-reduction</link>
       <guid isPermaLink="false">urn:signal-archive:ai:71425842eee07fcd2d20e7f930651e8c</guid>
@@ -308,12 +333,30 @@
       <content:encoded>&lt;p&gt;OpenAI于2026年10月6日开放了Decisions API的公测版，该API专为结构化决策设计，支持谓词（概率判断）、选择（从固定选项中选择）和评分（有序等级评估）三种输出类型。API声称比使用GPT-6 Luna的响应API快10倍，定价为每百万输入令牌$0.10，输出免费。开发者可以构建类型安全的决策路由系统，适用于客户支持分类、文档审核、图像损害检测等场景。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;支持谓词、选择和评分三种结构化输出类型&lt;/li&gt;&lt;li&gt;声称比GPT-6 Luna响应API快10倍&lt;/li&gt;&lt;li&gt;每百万输入令牌$0.10，输出令牌免费&lt;/li&gt;&lt;li&gt;支持文本和图像输入，与HIPAA兼容&lt;/li&gt;&lt;li&gt;包含强类型边界验证和拒绝处理机制&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://dev.to/bobbyhalljr/openais-decisions-api-is-in-public-beta-build-a-typed-router-in-typescript-ob7"&gt;OpenAI’s Decisions API Is in Public Beta. Build a Typed Router in TypeScript. - DEV Community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.valyu.ai/blogs/everything-you-need-to-know-about-the-decisions-api"&gt;Everything you need to know about the Decisions API. | Valyu&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://the-decoder.com/openai-launches-decisions-api-that-reduces-complex-evaluations-to-yes-no-or-pick-one"&gt;OpenAI launches Decisions API that reduces complex evaluations to yes, no, or pick one&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>DataCamp发布2026年顶级开源大语言模型全景分析报告</title>
+      <link>https://www.datacamp.com/zh/blog/top-open-source-llms</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:36065a9499b7a6ce97cb2388d740ccea</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
+      <description>技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。</description>
+      <content:encoded>&lt;p&gt;技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;报告于2026年10月6日更新，详细比较了11款顶级开源LLM。&lt;/li&gt;&lt;li&gt;涵盖模型包括GLM 5.1、DeepSeek V4系列、Qwen3-235B、Kimi K2和Mistral-Small-3.2等。&lt;/li&gt;&lt;li&gt;分析了开源模型在数据安全、成本节约、透明度、可定制性和社区创新方面的核心优势。&lt;/li&gt;&lt;li&gt;为需要本地部署、数据可控或成本敏感项目的开发者提供了系统的选型指南。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.datacamp.com/zh/blog/top-open-source-llms"&gt;2026 年 11 款顶级开源 LLM 及其用途 | DataCamp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>Google调整Gemini个人账户服务方案：大幅收窄免费用户权限</title>
       <link>https://www.threads.com/@hkepc/post/DeE6B7TmfKW/%E6%B3%A8%E6%84%8F-%E5%9C%A8%E7%99%BC%E4%BD%88%E5%85%A8%E6%96%B0%E6%97%97%E8%89%A6%E6%A8%A1%E5%9E%8B-gemini-4-argon-%E5%83%85%E5%83%85%E6%95%B8%E6%97%A5%E5%BE%8Cgoogle-%E8%BF%91%E6%97%A5%E6%9B%B4%E6%96%B0%E4%BA%86%E5%AE%98%E6%96%B9%E6%94%AF%E6%8F%B4%E6%96%87%E4%BB%B6%E9%87%9D%E5%B0%8D%E5%80%8B%E4%BA%BA%E5%B8%B3%E6%88%B6%E7%9A%84-google-gemini-%E6%9C%8D%E5%8B%99%E5%AD%98%E5%8F%96%E6%96%B9%E6%A1%88%E4%BD%9C</link>
       <guid isPermaLink="false">urn:signal-archive:ai:992d46956bc0e2258eb65d3a043551c6</guid>
       <archive:collectedAt>2026-10-05T03:41:17Z</archive:collectedAt>
       <description>在发布Gemini 4 Argon旗舰模型后，Google更新了官方支持文件，对个人账户的Gemini服务存取方案进行了重大调整。从2026年10月9日起，未订阅任何Google AI服务的免费个人用户将无法调用标准的Gemini Flash和进阶Pro模型，只能使用计算资源较低的Flash-Lite模型。同时付费订阅体系的权限等级也同步洗牌。这一调整大幅收紧了免费版的功能弹性，开发者需要重新评估依赖Gemini免费API的应用方案。</description>
       <content:encoded>&lt;p&gt;在发布Gemini 4 Argon旗舰模型后，Google更新了官方支持文件，对个人账户的Gemini服务存取方案进行了重大调整。从2026年10月9日起，未订阅任何Google AI服务的免费个人用户将无法调用标准的Gemini Flash和进阶Pro模型，只能使用计算资源较低的Flash-Lite模型。同时付费订阅体系的权限等级也同步洗牌。这一调整大幅收紧了免费版的功能弹性，开发者需要重新评估依赖Gemini免费API的应用方案。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;免费用户仅保留Flash-Lite模型权限&lt;/li&gt;&lt;li&gt;付费订阅权限等级同步调整&lt;/li&gt;&lt;li&gt;自2026年10月9日起生效&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.threads.com/@hkepc/post/DeE6B7TmfKW/%E6%B3%A8%E6%84%8F-%E5%9C%A8%E7%99%BC%E4%BD%88%E5%85%A8%E6%96%B0%E6%97%97%E8%89%A6%E6%A8%A1%E5%9E%8B-gemini-4-argon-%E5%83%85%E5%83%85%E6%95%B8%E6%97%A5%E5%BE%8Cgoogle-%E8%BF%91%E6%97%A5%E6%9B%B4%E6%96%B0%E4%BA%86%E5%AE%98%E6%96%B9%E6%94%AF%E6%8F%B4%E6%96%87%E4%BB%B6%E9%87%9D%E5%B0%8D%E5%80%8B%E4%BA%BA%E5%B8%B3%E6%88%B6%E7%9A%84-google-gemini-%E6%9C%8D%E5%8B%99%E5%AD%98%E5%8F%96%E6%96%B9%E6%A1%88%E4%BD%9C"&gt;Google Gemini个人账户服务方案调整&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>AWS推出由OpenAI提供支持的Amazon Bedrock托管代理（公开预览）</title>
+      <link>https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:599fd67ad415f435db390cc297994457</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
+      <description>AWS于2026年10月5日宣布推出由OpenAI提供技术支持的Amazon Bedrock托管代理的公开预览版。该服务允许开发者在AWS云环境中构建和运行完全集成的AI智能体，利用现有的AWS身份、权限和治理控制，为企业级Agent应用提供了新的托管部署途径。</description>
+      <content:encoded>&lt;p&gt;AWS于2026年10月5日宣布推出由OpenAI提供技术支持的Amazon Bedrock托管代理的公开预览版。该服务允许开发者在AWS云环境中构建和运行完全集成的AI智能体，利用现有的AWS身份、权限和治理控制，为企业级Agent应用提供了新的托管部署途径。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;服务基于OpenAI的Agents API定制版本构建，与AWS原生资源和身份权限集成。&lt;/li&gt;&lt;li&gt;开发者可以构建完全在AWS内部运行的、针对OpenAI模型优化的智能体。&lt;/li&gt;&lt;li&gt;支持两种执行环境：自托管计算（使用现有环境）和完全托管的AgentCore运行时（在AWS账户内托管会话与存储）。&lt;/li&gt;&lt;li&gt;为企业提供了在自有云环境中安全、高效地构建和运行AI Agent的新选项。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026"&gt;AWS 一周综述：由 OpenAI 提供支持的 Amazon Bedrock 托管代理...&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>OpenAI推出ChatGPT视觉广告格式并扩展成效衡量</title>

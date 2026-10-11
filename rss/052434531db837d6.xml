@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-10T23:58:04+00:00</updated><author><name>Simon Willison</name></author><entry><title>Python 3.15.0 added to actions/python-versions</title><link href="https://simonwillison.net/2026/Oct/10/python-actions/" rel="alternate"/><published>2026-10-10T23:58:04+00:00</published><updated>2026-10-10T23:58:04+00:00</updated><id>https://simonwillison.net/2026/Oct/10/python-actions/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-11T00:52:37+00:00</updated><author><name>Simon Willison</name></author><entry><title>Dwarf Fortress uses version control now</title><link href="https://simonwillison.net/2026/Oct/11/dwarf-fortress/" rel="alternate"/><published>2026-10-11T00:52:37+00:00</published><updated>2026-10-11T00:52:37+00:00</updated><id>https://simonwillison.net/2026/Oct/11/dwarf-fortress/</id><summary type="html">
+    &lt;p&gt;I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control &lt;em&gt;more&lt;/em&gt;. That's art.&lt;/p&gt;
+&lt;p&gt;I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;March 2013: &lt;a href="https://www.reddit.com/r/IAmA/comments/1avszc/comment/c919fo8/?solution=43270267461a564b43270267461a564b&amp;amp;js_challenge=1&amp;amp;jsc_token=2824be10929bdc604753c70a67a1c3310860c2cae0f946ff767fab3727807a35&amp;amp;jsc_orig_r="&gt;"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;March 2016: &lt;a href="https://www.pcgamer.com/dwarf-fortress-creator-on-how-hes-42-towards-simulating-existence/3/"&gt;"I don’t even use version control. If you don’t know what that is then you’re not gonna yell at me. If you even know what version control is you’re gonna be like, ‘You don’t use version control? You don’t use source control? What is wrong with you? How can you even work? I’m just not cut out for it, in a sense. It’s been 15 years, so the reasons have change over time, but that’s my current understanding of it."&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;March 2023: &lt;a href="https://www.gamedeveloper.com/programming/how-tarn-adams-upgraded-and-optimized-dwarf-fortress-for-its-official-steam-release"&gt;"I've got Discord channels to check and version control stuff to use now, so the process is definitely a little more involved"&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That March 2023 quote comes from an interview about the release on Steam which &lt;a href="https://www.pcgamer.com/after-spending-20-years-simulating-reality-the-dwarf-fortress-devs-have-to-get-used-to-a-new-one-being-millionaires/"&gt;made them millionaires&lt;/a&gt;. I'm a tiny bit sad that they gave in before they hit that milestone, but what an impressive run.&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/version-control"&gt;version-control&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="version-control"/></entry><entry><title>Python 3.15.0 added to actions/python-versions</title><link href="https://simonwillison.net/2026/Oct/10/python-actions/" rel="alternate"/><published>2026-10-10T23:58:04+00:00</published><updated>2026-10-10T23:58:04+00:00</updated><id>https://simonwillison.net/2026/Oct/10/python-actions/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/actions/python-versions/commit/49858b91c92d27403416ee43117032e91d00ce24"&gt;Python 3.15.0 added to actions/python-versions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Bit of a niche link, but I've been waiting for this for a couple of days - I even &lt;a href="https://chatgpt.com/share/6acad42a-2868-83e8-9a16-736f9def2b45"&gt;told ChatGPT&lt;/a&gt; to check for it:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;Clone https://github.com/actions/python-versions  and git pull once an hour until they add the stable  3.15 - then tell me about it&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Now that this has landed, you can add &lt;code&gt;"3.15"&lt;/code&gt; to a GitHub Actions testing matrix to run tests against the new Python release.
+&lt;p&gt;Now that this has landed, you can add &lt;code&gt;"3.15"&lt;/code&gt; to a GitHub Actions testing matrix to run tests against the &lt;a href="https://www.python.org/downloads/release/python-3150/"&gt;new Python 3.15.0 release&lt;/a&gt;.
 
 
     &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/github"&gt;github&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/github-actions"&gt;github-actions&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/chatgpt"&gt;chatgpt&lt;/a&gt;&lt;/p&gt;
@@ -483,23 +497,4 @@ Position 3 (hundreds): 6 + 9 = 15, write 5, carry 1
 
 
 
-</summary><category term="matthew-green"/><category term="accidental-cyberattacks"/><category term="ai-misuse"/><category term="generative-ai"/><category term="ai-security-research"/><category term="sandboxing"/><category term="ai"/><category term="llms"/></entry><entry><title>He Built This City</title><link href="https://simonwillison.net/2026/Sep/30/he-built-this-city/" rel="alternate"/><published>2026-09-30T21:54:19+00:00</published><updated>2026-09-30T21:54:19+00:00</updated><id>https://simonwillison.net/2026/Sep/30/he-built-this-city/</id><summary type="html">
-    &lt;p&gt;I visited the Museum of the City of New York today and got to see &lt;a href="https://www.mcny.org/exhibition/he-built-city"&gt;He Built This City: Joe Macken’s Model&lt;/a&gt;, the 50 x27 feet model of the city built over a 21 year period from balsa wood and cardboard.&lt;/p&gt;
-&lt;p&gt;It exceeded my already high expectations. The exhibition closes on 12th October so you should absolutely make a priority to see it if you get the chance.&lt;/p&gt;
-&lt;p&gt;&lt;video
-  src="https://static.simonwillison.net/static/2026-10-01/He-built-this-city-medium.mp4"
-  poster="https://static.simonwillison.net/static/2026-10-01/IMG_8545.jpeg"
-  preload="none"
-  loop controls
-  playsinline muted
-  width="1280"
-  height="720"
-  style="display: block; width: 100%; height: auto;"
-&gt;&lt;/video&gt;
-&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/museums"&gt;museums&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/new-york"&gt;new-york&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="museums"/><category term="new-york"/></entry></feed>
+</summary><category term="matthew-green"/><category term="accidental-cyberattacks"/><category term="ai-misuse"/><category term="generative-ai"/><category term="ai-security-research"/><category term="sandboxing"/><category term="ai"/><category term="llms"/></entry></feed>

@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "a59578782696939a7f08eaa0",
+      "title": "OpenAI发布Chatham Financial客户案例，展示企业级AI应用",
+      "summary": "OpenAI发布了金融服务公司Chatham Financial的客户案例，详细展示了其如何运用Codex和GPT-5.6模型重塑工作流程，将交易验证时间从30分钟缩短至不到4分钟，并开发内部和客户使用的AI工具。",
+      "image": null,
+      "publishedAt": "2026-10-02T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://openai.com/zh-Hant/index/chatham-financial",
+      "detailPath": "articles/a59578782696939a7f08eaa0.json"
+    },
+    {
+      "id": "a516dfd75c78ea7be737168f",
+      "title": "OpenAI发布《GPT-6系列模型指南》，提供工程化落地实用建议",
+      "summary": "OpenAI发布了一份面向开发者的实用指南，详细阐述了如何根据工作负载选择GPT-6系列模型（Astra、Sol、Luna）、优化提示词与技能、以及管理长时间运行任务，旨在帮助开发者在生产环境中高效运用模型并控制成本。",
+      "image": null,
+      "publishedAt": "2026-10-02T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://openai.com/zh-Hant/index/practical-guide-building-gpt-6",
+      "detailPath": "articles/a516dfd75c78ea7be737168f.json"
+    },
+    {
+      "id": "f3df5b2731557f28c460d4f4",
+      "title": "Claude Code v2.1.286发布，包含多项破坏性变更",
+      "summary": "Anthropic于9月30日（UTC）发布了Claude Code v2.1.286版本，包含88项变更，其中7项为破坏性变更。最重要的是`--bare`参数的行为变更：现在仅连接命令行指定的MCP服务器，不发送系统提醒且不启动后台任务。同时，插件安装现在拒绝git仓库和文件夹的npm来源，仅允许注册表包。此外，修复了模型被拒收时所有轮次均失败的问题，现在会在相同级别的上一模型重试一次。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://dev.classmethod.jp/articles/20261001-cc-updates-v2-1-286",
+      "detailPath": "articles/f3df5b2731557f28c460d4f4.json"
+    },
+    {
+      "id": "46152da6f440cc9a8f8a0bff",
+      "title": "Anthropic研究报告：智谱GLM-5.3为迄今最具网络安全能力的开源模型",
+      "summary": "Anthropic于10月1日发布研究报告称，智谱AI新发布的GLM-5.3是迄今为止最具网络安全能力的开源权重模型。研究人员发现GLM-5.3在ExploitBench基准测试的410个尝试中成功开发了50个端到端利用程序，二进制定向攻击成功率达到4%，与Claude Mythos Preview相当。研究还揭示该模型能有效绕过内置保护机制，并被用于串联未知JavaScript引擎漏洞以构建有效的浏览器利用程序。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://aiweekly.co/ai-news-today",
+      "detailPath": "articles/46152da6f440cc9a8f8a0bff.json"
+    },
+    {
+      "id": "6bf36da4ccfbc524dd0dcfe7",
+      "title": "Cloudflare发布AI智能体驱动的统一CLI工具cf",
+      "summary": "Cloudflare于10月1日发布统一CLI工具cf，这是面向整个Cloudflare API的智能体驱动命令行工具。该工具的开发基于对AI智能体使用模式的观察：智能体对Wrangler的使用量已达48%，每天使用的不同命令数量几乎翻倍，使用六个或更多命令的可能性几乎是四倍。cf整合了Cloudflare提供的数千个操作（相比Wrangler的280个），旨在让AI智能体能够更自然地与Cloudflare平台交互，执行复杂的多步骤云资源管理任务。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://blog.cloudflare.com/zh-cn/cloudflare-cf-cli-launch",
+      "detailPath": "articles/6bf36da4ccfbc524dd0dcfe7.json"
+    },
+    {
       "id": "1b74534ccbab463dac8191e7",
       "title": "Anthropic正式推出Claude for Government政府版服务",
       "summary": "Anthropic宣布Claude for Government于9月30日结束公开测试，转为正式提供。该服务为美国联邦和州政府机构提供FedRAMP High认证环境，允许在受控环境中使用Claude的编码和智能体功能。采用固定使用量付费模式而非席位费，管理员可以按部门设置使用限制和模型限制。同时，Claude Code CLI和Claude for Microsoft 365也在相同环境中开始早期访问。",
@@ -604,61 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://releasebot.io/updates/openai",
       "detailPath": "articles/f0845da27eaa93c0e81df878.json"
-    },
-    {
-      "id": "419fec07e2528b98ff0cdeb1",
-      "title": "Anthropic发布Claude Opus 5.5：成本降低40%，性能对标Fable 5.1",
-      "summary": "Anthropic发布了Claude Opus 5.5，这是Claude 5.5家族的首个模型。该模型在多数任务上与Fable 5.1性能相当，但成本比前代Opus 5降低40%，输出速度快30%。定价上输入Token每百万$4，输出Token每百万$20，分别比Opus 5低20%，缓存读取价格更是降低了60%。模型启用了保留思考机制防止蒸馏攻击，并已在主要云平台上线。对开发者而言，这意味着以更低成本获得与前沿模型接近的能力，尤其适合成本敏感的Agentic工作负载。",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.anthropic.com/claude-opus-5-5",
-      "detailPath": "articles/419fec07e2528b98ff0cdeb1.json"
-    },
-    {
-      "id": "0ca070692ee71552f771d4db",
-      "title": "Anthropic发布Claude Opus 5.5模型，API价格降低20%，任务成本下降40%",
-      "summary": "Anthropic于2026年9月22日正式发布Claude Opus 5.5。新模型API输入/输出价格各降低20%，每百万吨oken分别为4美元和20美元。官方表示，在典型工作负载下，任务成本较Opus 5降低约40%，输出速度提升超30%，性能在多数任务上追平更高阶的Claude Fable 5.1。开发者可立即通过API调用，这为构建复杂AI代理提供了更具成本效益的顶级模型选项。",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://n.yam.com/Article/20260923984574",
-      "detailPath": "articles/0ca070692ee71552f771d4db.json"
-    },
-    {
-      "id": "f0835a9506a7378b3c647b04",
-      "title": "OpenAI发布GPT-6 Sol与Luna，API价格永久性降低50%并优化提示缓存",
-      "summary": "OpenAI于2026年9月22日扩展GPT-6系列，发布GPT-6 Sol和GPT-6 Luna两款模型，并宣布永久性结构降价。Sol（面向复杂编程和代理工作）定价为每百万吨oken输入2美元、输出10美元；Luna（面向高吞吐量任务）定价为输入0.1美元、输出0.5美元，均较GPT-5.6降价50%。同时优化了提示缓存机制，缓存输入读取可获得90%折扣，这对构建持续运行的AI代理尤其重要。",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://m.sohu.com/a/1079751092_115831?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-      "detailPath": "articles/f0835a9506a7378b3c647b04.json"
-    },
-    {
-      "id": "9b15fd54508fe3d906250ca9",
-      "title": "决策模型Jev正式开放：专攻结构化判断，极低成本与延迟",
-      "summary": "TypeSafe AI于2026年9月15日正式早期开放决策模型Jev。该模型不进行聊天或文本生成，专门处理快速、结构化的判断任务，如分类、评分和选择。开发者提供一段状态文本和一组预定义问题，Jev直接返回每个答案的概率。其API价格极低且延迟极短，旨在作为“系统一”的快速决策引擎，与负责复杂推理和生成的“系统二”大模型协同工作，为构建高效、低成本的AI代理系统提供了新范式。",
-      "image": null,
-      "publishedAt": "2026-09-15T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://knowledge.hket.com/article/4198447/Jev%E4%BE%86%E4%BA%86%EF%BC%9A%E4%B8%8D%E8%81%8A%E5%A4%A9%E3%80%81%E5%8F%AA%E6%B1%BA%E6%96%B7%E7%9A%84AI%E3%80%8C%E7%B3%BB%E7%B5%B1%E4%B8%80%E3%80%8D%E6%A8%A1%E5%9E%8B",
-      "detailPath": "articles/9b15fd54508fe3d906250ca9.json"
-    },
-    {
-      "id": "52141cbe66ba733086fde19c",
-      "title": "TypeSafe Jev決策模型專注於AI自動化，提供低成本、高速度的類型化決策",
-      "summary": "TypeSafe AI推出的Jev模型專為AI自動化場景設計，直接返回程式可讀的結構化決策結果，如選擇、評分或概率，無需生成文字再解析。其低成本和高速響應特性使其適合處理Agent架構中的高頻簡單決策任務。",
-      "image": null,
-      "publishedAt": "2026-09-15T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://caifuhao.eastmoney.com/news/20261006000600126174430",
-      "detailPath": "articles/52141cbe66ba733086fde19c.json"
     }
   ]
 }

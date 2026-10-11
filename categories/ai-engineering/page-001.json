@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "e1a507eb02eed9714d76a42d",
+      "title": "阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持",
+      "summary": "根据阿里云官方帮助文档的更新记录，其大模型服务平台“百炼”在2026年10月进行了功能更新。新增了按模型单元的部署计费模式，为成本控制提供新选项。同时，平台扩展了对通义千问视觉理解模型（Qwen3-VL-8B）的微调支持，使开发者能够针对特定视觉任务对这些多模态模型进行定制化训练和部署。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://help.aliyun.com/zh/model-studio/model-release-notes",
+      "detailPath": "articles/e1a507eb02eed9714d76a42d.json"
+    },
+    {
+      "id": "1ee3ded5b043a3848173f638",
+      "title": "2026年Q4大模型API定价全景发布，GPT-6.1 Sol成为OpenAI主力",
+      "summary": "一份关于2026年第四季度主流大模型API定价的完整参考报告发布。报告指出，OpenAI已经取消了GPT-6.1 Astra，GPT-6.1 Sol以$2/$10每百万Token的价格成为其最强公开模型。同时，多款Flash级模型在近期密集发布，提供了优秀的性价比。这份定价全景对于开发者在进行模型选型、预算规划和多供应商路由回退策略配置时具有重要实用价值。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://therouter.ai/zh/blog",
+      "detailPath": "articles/1ee3ded5b043a3848173f638.json"
+    },
+    {
       "id": "2520fd388965499dcf2a6ea2",
       "title": "大模型竞争转向性价比，国产开源模型能力逼近、长上下文成标配",
       "summary": "近期 AI 行业动态显示，顶级模型发布节奏空前密集，竞争焦点已从绝对能力转向“能力 × 成本”的性价比。Google、OpenAI、Anthropic 等厂商不断推出新版本并调整定价。同时，国产开源模型如 DeepSeek-V4（标配1M上下文）、Kimi K3（2.8万亿参数）、Qwen3.8 Max / GLM-5.3 等能力显著提升，长上下文成为标配，并以 MIT 等宽松协议开源。这对开发者的技术选型、成本控制以及基于国产技术栈构建闭环方案带来了结构性机会。",
@@ -265,6 +287,17 @@
       "detailPath": "articles/69014946bfc6abf11c0932f9.json"
     },
     {
+      "id": "9475e87498fd326cd4b47b79",
+      "title": "Claude Opus 5.5获2026年10月BenchLM AI智能体排行榜第一",
+      "summary": "2026年10月7日，BenchLM发布了最新的AI Agent模型排行榜，Anthropic的Claude Opus 5.5以88.8分的综合得分位居第一。该榜单显示专有模型在复杂Agent任务中表现突出，而排名前列的开源模型（如GLM-5.3）则为企业提供了在高性能专有模型和可控、经济的开源方案之间进行权衡的依据。",
+      "image": null,
+      "publishedAt": "2026-10-07T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://af.net/realtime/claude-opus-5-5-leads-october-2026-benchlm-ai-agent-rankings",
+      "detailPath": "articles/9475e87498fd326cd4b47b79.json"
+    },
+    {
       "id": "935962a5558495184fdb1bb9",
       "title": "Anthropic 发布 Claude Haiku 5.5：API 价格降低 90%",
       "summary": "Anthropic 于 2026 年 10 月 7 日正式发布 Claude Haiku 5.5，这是其最具成本效益的模型，API价格大降（输入 tokens 每百万 $0.10）。该模型为高容量任务（如文档总结）而设计，并引入了可调节工作量设置 (adaptive thinking)，使开发者可在速度、成本和智能输出间灵活平衡。此更新大幅降低了企业使用 Claude 系列模型的成本门槛，尤其在涉及大规模 API 调用的场景中优势明显。",
@@ -397,6 +430,17 @@
       "detailPath": "articles/407bab8f95ff74d55feca21f.json"
     },
     {
+      "id": "5a9ba0afc48d30d52c647f11",
+      "title": "DataCamp发布2026年顶级开源大语言模型全景分析报告",
+      "summary": "技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。",
+      "image": null,
+      "publishedAt": "2026-10-06T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.datacamp.com/zh/blog/top-open-source-llms",
+      "detailPath": "articles/5a9ba0afc48d30d52c647f11.json"
+    },
+    {
       "id": "3490fd6e6a9eb486a0f30d73",
       "title": "Google调整Gemini个人账户服务方案：大幅收窄免费用户权限",
       "summary": "在发布Gemini 4 Argon旗舰模型后，Google更新了官方支持文件，对个人账户的Gemini服务存取方案进行了重大调整。从2026年10月9日起，未订阅任何Google AI服务的免费个人用户将无法调用标准的Gemini Flash和进阶Pro模型，只能使用计算资源较低的Flash-Lite模型。同时付费订阅体系的权限等级也同步洗牌。这一调整大幅收紧了免费版的功能弹性，开发者需要重新评估依赖Gemini免费API的应用方案。",
@@ -406,6 +450,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.threads.com/@hkepc/post/DeE6B7TmfKW/%E6%B3%A8%E6%84%8F-%E5%9C%A8%E7%99%BC%E4%BD%88%E5%85%A8%E6%96%B0%E6%97%97%E8%89%A6%E6%A8%A1%E5%9E%8B-gemini-4-argon-%E5%83%85%E5%83%85%E6%95%B8%E6%97%A5%E5%BE%8Cgoogle-%E8%BF%91%E6%97%A5%E6%9B%B4%E6%96%B0%E4%BA%86%E5%AE%98%E6%96%B9%E6%94%AF%E6%8F%B4%E6%96%87%E4%BB%B6%E9%87%9D%E5%B0%8D%E5%80%8B%E4%BA%BA%E5%B8%B3%E6%88%B6%E7%9A%84-google-gemini-%E6%9C%8D%E5%8B%99%E5%AD%98%E5%8F%96%E6%96%B9%E6%A1%88%E4%BD%9C",
       "detailPath": "articles/3490fd6e6a9eb486a0f30d73.json"
+    },
+    {
+      "id": "7d254f8826a04350eece0f71",
+      "title": "AWS推出由OpenAI提供支持的Amazon Bedrock托管代理（公开预览）",
+      "summary": "AWS于2026年10月5日宣布推出由OpenAI提供技术支持的Amazon Bedrock托管代理的公开预览版。该服务允许开发者在AWS云环境中构建和运行完全集成的AI智能体，利用现有的AWS身份、权限和治理控制，为企业级Agent应用提供了新的托管部署途径。",
+      "image": null,
+      "publishedAt": "2026-10-05T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://aws.amazon.com/cn/blogs/china/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026",
+      "detailPath": "articles/7d254f8826a04350eece0f71.json"
     },
     {
       "id": "be6f6580661de7c48902f662",
@@ -604,61 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.ithome.com.tw/news/179373",
       "detailPath": "articles/d9b43fed34ea734e72282a17.json"
-    },
-    {
-      "id": "a59578782696939a7f08eaa0",
-      "title": "OpenAI发布Chatham Financial客户案例，展示企业级AI应用",
-      "summary": "OpenAI发布了金融服务公司Chatham Financial的客户案例，详细展示了其如何运用Codex和GPT-5.6模型重塑工作流程，将交易验证时间从30分钟缩短至不到4分钟，并开发内部和客户使用的AI工具。",
-      "image": null,
-      "publishedAt": "2026-10-02T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://openai.com/zh-Hant/index/chatham-financial",
-      "detailPath": "articles/a59578782696939a7f08eaa0.json"
-    },
-    {
-      "id": "a516dfd75c78ea7be737168f",
-      "title": "OpenAI发布《GPT-6系列模型指南》，提供工程化落地实用建议",
-      "summary": "OpenAI发布了一份面向开发者的实用指南，详细阐述了如何根据工作负载选择GPT-6系列模型（Astra、Sol、Luna）、优化提示词与技能、以及管理长时间运行任务，旨在帮助开发者在生产环境中高效运用模型并控制成本。",
-      "image": null,
-      "publishedAt": "2026-10-02T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://openai.com/zh-Hant/index/practical-guide-building-gpt-6",
-      "detailPath": "articles/a516dfd75c78ea7be737168f.json"
-    },
-    {
-      "id": "f3df5b2731557f28c460d4f4",
-      "title": "Claude Code v2.1.286发布，包含多项破坏性变更",
-      "summary": "Anthropic于9月30日（UTC）发布了Claude Code v2.1.286版本，包含88项变更，其中7项为破坏性变更。最重要的是`--bare`参数的行为变更：现在仅连接命令行指定的MCP服务器，不发送系统提醒且不启动后台任务。同时，插件安装现在拒绝git仓库和文件夹的npm来源，仅允许注册表包。此外，修复了模型被拒收时所有轮次均失败的问题，现在会在相同级别的上一模型重试一次。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://dev.classmethod.jp/articles/20261001-cc-updates-v2-1-286",
-      "detailPath": "articles/f3df5b2731557f28c460d4f4.json"
-    },
-    {
-      "id": "46152da6f440cc9a8f8a0bff",
-      "title": "Anthropic研究报告：智谱GLM-5.3为迄今最具网络安全能力的开源模型",
-      "summary": "Anthropic于10月1日发布研究报告称，智谱AI新发布的GLM-5.3是迄今为止最具网络安全能力的开源权重模型。研究人员发现GLM-5.3在ExploitBench基准测试的410个尝试中成功开发了50个端到端利用程序，二进制定向攻击成功率达到4%，与Claude Mythos Preview相当。研究还揭示该模型能有效绕过内置保护机制，并被用于串联未知JavaScript引擎漏洞以构建有效的浏览器利用程序。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://aiweekly.co/ai-news-today",
-      "detailPath": "articles/46152da6f440cc9a8f8a0bff.json"
-    },
-    {
-      "id": "6bf36da4ccfbc524dd0dcfe7",
-      "title": "Cloudflare发布AI智能体驱动的统一CLI工具cf",
-      "summary": "Cloudflare于10月1日发布统一CLI工具cf，这是面向整个Cloudflare API的智能体驱动命令行工具。该工具的开发基于对AI智能体使用模式的观察：智能体对Wrangler的使用量已达48%，每天使用的不同命令数量几乎翻倍，使用六个或更多命令的可能性几乎是四倍。cf整合了Cloudflare提供的数千个操作（相比Wrangler的280个），旨在让AI智能体能够更自然地与Cloudflare平台交互，执行复杂的多步骤云资源管理任务。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://blog.cloudflare.com/zh-cn/cloudflare-cf-cli-launch",
-      "detailPath": "articles/6bf36da4ccfbc524dd0dcfe7.json"
     }
   ]
 }

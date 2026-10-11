@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "1ed604ad6b7f13764bf9947c",
+      "title": "StaffPad",
+      "summary": "看到音樂圈的大家最近一直狂轉貼 StaffPad，身為一個每天在打譜的人還是忍不住想跳出來說一下，大家不要再對它抱持美好的幻想了拉。",
+      "image": null,
+      "publishedAt": "2015-10-14T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/staffpad",
+      "detailPath": "articles/1ed604ad6b7f13764bf9947c.json"
+    },
+    {
+      "id": "f29fb01adb089ba1b7ba0774",
+      "title": "Evernote 書（相簿）",
+      "summary": "我已經跨界到可以出現在 Evernote 書籍的領域了啊，哈哈哈！",
+      "image": "https://wiwi.blog/assets/images/book-c8ace675ec0db33af206ec12442c557b.jpg",
+      "publishedAt": "2015-09-17T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/evernote-book",
+      "detailPath": "articles/f29fb01adb089ba1b7ba0774.json"
+    },
+    {
+      "id": "9427d31300f2eefeffe804b7",
+      "title": "電腦音樂教室",
+      "summary": "新北高中音樂班的電腦音樂教室。30 台電腦每一台都有正版的 Reason、錄音介面、MIDI 鍵盤、還有 32 軌 Yamaha 大 mixer⋯⋯可是之前都沒有人用過，因為不會用 XD",
+      "image": "https://wiwi.blog/assets/images/1-c5e8f686a29d15fe066807dd2b88f878.jpg",
+      "publishedAt": "2015-08-31T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/computer-music-classroom",
+      "detailPath": "articles/9427d31300f2eefeffe804b7.json"
+    },
+    {
+      "id": "6d83e18e3ca466584b74c58e",
+      "title": "Android hwui 中 RenderThread 工作流程",
+      "summary": "前言 本篇文章是自己的一个学习笔记，记录了 Android 5.0 中 hwui 中的 RenderThread 的简单工作流程。由于是学习笔记，所以其中一些细节不会太详细，我只是将大概的流程走一遍，将其工作流标注出来，下次遇到问题的时候就可以知道去哪里查。 下图是我用 Systrace 抓取的一个应用启动的时候 RenderThread 的第一次 Draw 的 Trace 图，从这里面的顺序来看 RenderThread 的流程。熟悉应用启动流程的话应该知道，只有当第一次 DrawFrame 完成之后，整个应用的界面才会显示在手机上，在这之前，用户看到的是应用的 StartingWindow 的界面。",
+      "image": null,
+      "publishedAt": "2015-08-12T14:38:01Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/08/12/AndroidL-hwui-RenderThread-workflow/",
+      "detailPath": "articles/6d83e18e3ca466584b74c58e.json"
+    },
+    {
+      "id": "8aa553f1cfc0eb914a25afc6",
+      "title": "楊秀桃音樂學院",
+      "summary": "電腦音樂教室，每個人都有一台 iMac + Novation Impulse 49！",
+      "image": "https://wiwi.blog/assets/images/computerroom-be5fbddcd2ad265167a14b12e5f7507c.jpg",
+      "publishedAt": "2015-08-07T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/yst-music-school",
+      "detailPath": "articles/8aa553f1cfc0eb914a25afc6.json"
+    },
+    {
+      "id": "990b427c0a8ee81edec34266",
+      "title": "Java7 HashMap 源码分析",
+      "summary": "链表和数组可以按照人们意愿排列元素的次序，但是，如果想要查看某个指定的元素，却又忘记了它的位置，就需要访问所有的元素，直到找到为止。如果集合中元素很多，将会消耗很多时间。有一种数据结构可以快速查找所需要查找的对象，这个就是哈希表（hash table）. HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使用 null 之外，HashMap 类与 Hashtable 大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。 本文按源码顺序拆 HashMap：先看数据结构是数组+链表的组合，再看构造函数里 initialCapacity 与 loadFactor 的默认值含义；接着是 put 操作的扩容流程、key…",
+      "image": null,
+      "publishedAt": "2015-08-05T12:27:13Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/08/05/HashMap/",
+      "detailPath": "articles/990b427c0a8ee81edec34266.json"
+    },
+    {
       "id": "2e3dd78697281fedf3cbddc3",
       "title": "TableTop",
       "summary": "https://www.youtube.com/watch?v=Xu9RB-N4T3g",
@@ -593,72 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/right-hand",
       "detailPath": "articles/56c032bccd72a438ec72fda8.json"
-    },
-    {
-      "id": "98ba10a62ca03b2e249d7f1d",
-      "title": "小葉，真有你的！",
-      "summary": "今天有個關於音樂的新聞：台語歌手蕭玉芬的新歌《紙風箏》，被日本網友發現它的前奏和日本團體 B'z 的《もう一度キスしたかった》（想要再一次親吻）完全相同。",
-      "image": "https://wiwi.blog/assets/images/ye-64d2b717260462cea44c19ab6db92f86.png",
-      "publishedAt": "2013-04-17T15:52:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/small-yeh",
-      "detailPath": "articles/98ba10a62ca03b2e249d7f1d.json"
-    },
-    {
-      "id": "2b7a2e7fe151dc3cbc008205",
-      "title": "第四堂木吉他課",
-      "summary": "上吉他課已經第四堂了 老師今天一進來就說 6/30 有成果發表會要參加 所以現在才上三堂課(第四堂選歌) 而且剩兩個月 要死人了.",
-      "image": null,
-      "publishedAt": "2013-04-08T17:01:23Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/guitar-learning/",
-      "detailPath": "articles/2b7a2e7fe151dc3cbc008205.json"
-    },
-    {
-      "id": "85155053f85729babcd40578",
-      "title": "时代在变",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2013-03-26T22:09:36Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/nonsense/the-times-are-changing/",
-      "detailPath": "articles/85155053f85729babcd40578.json"
-    },
-    {
-      "id": "1d77f5534ecf12276dbc35d8",
-      "title": "大杯皺",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/bigcup2-c0ed54b49ed2c4e0bebdbce0c24958e7.jpg",
-      "publishedAt": "2013-02-22T20:13:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/da-bei-zhou",
-      "detailPath": "articles/1d77f5534ecf12276dbc35d8.json"
-    },
-    {
-      "id": "ae380cd3845609a942163196",
-      "title": "JS ONE 是什麼？",
-      "summary": "在板橋隨處都可以見到「JS ONE」的貼紙，甚至連店家內的廁所面紙盒都有。",
-      "image": "https://wiwi.blog/assets/images/jsone-73df2943c83eea2056da19d8c7700312.jpg",
-      "publishedAt": "2013-02-21T06:47:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/js-one",
-      "detailPath": "articles/ae380cd3845609a942163196.json"
-    },
-    {
-      "id": "32ca7eca5d43cc30174dfc13",
-      "title": "懶得出門買晚餐？你可以舔鋼琴！",
-      "summary": "我的一個鋼琴學生跟我說，她在音樂教室教了一個非常難搞的鋼琴學生，並且給我看了她們上鋼琴課時拍的手機影片。",
-      "image": "https://wiwi.blog/assets/images/smudgedIpad-48a2927690163a0a829b157a626c18a0.jpg",
-      "publishedAt": "2013-02-17T14:13:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/lick-the-piano",
-      "detailPath": "articles/32ca7eca5d43cc30174dfc13.json"
     }
   ]
 }

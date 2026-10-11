@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "7272573a8dd29a2cdb541167",
+      "title": "DeepSeek Flash 便宜在哪、贵在哪：V4.1 Flash 的 agent 成本账与选型清单",
+      "summary": "DeepSeek V4.1 Flash 的缓存命中价只要未命中价的 2%，长上下文也不加价，但输出价是 Haiku 5.5 和 GPT-6 Luna 的 2.4 倍，高峰时段又正好压在北京上班时间。本文把 HN 上的争论落到四种任务形状上算账，再讲 subagent、路由、错峰、自托管各自怎么用，它在基准、工具调用、长上下文和合规上会在哪里出问题，最后给出选型表和验收清单。",
+      "image": null,
+      "publishedAt": "2026-10-11T02:40:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/deepseek-v4-1-flash-cheap-model-economics/",
+      "detailPath": "articles/7272573a8dd29a2cdb541167.json"
+    },
+    {
+      "id": "69fb8b26d2868dc2111c4722",
+      "title": "Jev 之后一个月：开放决策模型全景、榜单反例与选型清单",
+      "summary": "Jev 带火了「决策模型」：Cloudflare、Liquid、Perplexity、微软、OpenAI 和一批社区模型都跟进了。本文按实现路线把十几家放在一起，拿厂商说法逐条对 Decision Index、JevBench 和 Red Hat 的实测，讲清公开题与新领域题的落差、校准到底对谁、延迟口径为何不可比，最后给出对照表和 agent 回路接入前的验收清单。",
+      "image": null,
+      "publishedAt": "2026-10-11T02:40:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/open-decision-models-2026-survey-benchmarks/",
+      "detailPath": "articles/69fb8b26d2868dc2111c4722.json"
+    },
+    {
       "id": "a88cc599514da18c66de346c",
       "title": "Claude Haiku 5.5 当 subagent 和压缩引擎，什么时候真省钱：一套能自己算的账",
       "summary": "Haiku 5.5 标价 0.10/0.50 美元每百万 token，但提示超过 10 万 token 整条请求按 5 倍计价，新 tokenizer、默认开着的思考和缓存规则都会改账单。本文给出逐请求的成本公式，算三道题：40 万 token 会话压缩、单个 subagent 的三种形状、8 路扇出，再看 12 倍于 GPT-6 Luna 的反例，最后附一份按自己工作负载验收的清单。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Redreamality 博客 - 技术见解",
       "link": "https://redreamality.com/cn/blog/jev-rubric-judges-cheaper-faster-correlated-errors/",
       "detailPath": "articles/00ed43f27709cc5b020ba01b.json"
-    },
-    {
-      "id": "25b2f503b0710783b509c576",
-      "title": "JevOut：短而自然的上下文，可以把决策模型翻到指定错误选项",
-      "summary": "解读 arXiv:2609.30243 JevOut：答案保持的短上下文可把 Jev 等决策模型从正确选择翻到事先固定的错误目标；核对 Jev TFR 61.4%、高置信度翻转与 BFCL 工具路由脆弱性，并给出把概率当控制面之前的硬化清单。",
-      "image": null,
-      "publishedAt": "2026-09-25T16:00:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/jevout-natural-context-flips-decision-models/",
-      "detailPath": "articles/25b2f503b0710783b509c576.json"
-    },
-    {
-      "id": "03a9a4ea04673ccb1fff02a3",
-      "title": "Qwen-Planner-Agent：闭环 AI-for-AI 里的 Planner + Harness 共演化",
-      "summary": "解读 arXiv:2609.29892 Qwen-Planner-Agent：人闸数据飞轮、CARE 混合环境在线 RL、Model–Harness 共演化；核对 MobilePA-Bench Overall 77.05 与 CARE −32.5% 输出 token，并对照站内 Jev-Mobile 与 Growing Harness。",
-      "image": null,
-      "publishedAt": "2026-09-25T16:00:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/qwen-planner-agent-model-harness-coevolution/",
-      "detailPath": "articles/03a9a4ea04673ccb1fff02a3.json"
     }
   ]
 }

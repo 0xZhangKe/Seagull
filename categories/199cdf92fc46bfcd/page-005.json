@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8ae8260a2a4c9571b3acb96a",
+      "title": "先抱怨",
+      "summary": "「我不是講過了？（怒）」 等一下，我還沒抱怨你沒講清楚，你就要「先抱怨」我沒聽清你在說什麼了嗎？ 後記 # 原本想讓文章，就停在那，讓風格更〈 不想 〉一點。但還是想說些什麼，索性全部放到後記XD 我自己的觀察，習慣性會說這句話的人，背後的成因與心理機制可能是： 1. 預設他人是「 低品質接收者 」 # 假定所有人沒在聽自己講話（或者聽不懂自己講的），所以開口前已經把溝通失敗算進去了。 當這樣假設之後，會認爲「對方無法理解、不值得再解釋一次」，所以再講一次是浪費自己口水。 題外話：作爲吉他老師，我覺得那些每講兩句就要問學生「你懂嗎」的老師，都應該思考學生聽不懂可能是自己的問題，而不是學生資質的問題，或者思考自己可能不適合當老師。因爲「你懂嗎」的潛臺詞就是「我認爲你很笨，你聽不懂」，等於是在一邊教育一邊羞辱學生…",
+      "image": null,
+      "publishedAt": "2026-05-08T07:13:17Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/complained-before-me/",
+      "detailPath": "articles/8ae8260a2a4c9571b3acb96a.json"
+    },
+    {
       "id": "544d5cd92cce0dd0ddd4dea8",
       "title": "製作了跑馬燈功能！",
       "summary": "前言 # 最近開 BlogBlog.Club 的 5 月主題頁面 ，每次都要用搜尋的，覺得有點麻煩，決定加入跑馬燈功能！ 溫馨提醒，本篇程式碼皆由 AI 產生，看了會心悸的讀者，請小心服用。 動圖演示 # Hugo 架構 # 在 partial 資料夾底下建立一個 html，我稱爲 announce.html 。 {{/* 讀取 site config 中的 announcement 參數 例如 config.toml / config.yaml 裡的 params.announcement */}} {{ with .Site.Params.announcement }} {{/* 如果 enable = true 才顯示跑馬燈 */}} {{ if .enable }} <!-- 跑馬燈外層容器 -->…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/huge-changing-after-no-ig/",
       "detailPath": "articles/e153b474269825ecc7f17df0.json"
-    },
-    {
-      "id": "a43833375e7da5fdbbc2082f",
-      "title": "誰安排了你的行程？",
-      "summary": "前言 # 看了 seth goldin 的 Who sets your agenda？ （誰安排你的行程？）後，我被當頭棒喝。 餐飲業與教吉他 # 在 2023 時，當時的 6:00～13:00 有一份餐飲業的正職工作，月薪 35000。 而下午、晚上有吉他的學生，有 5～6 個左右吧，所以每月收入輕輕鬆鬆超過 4 萬，其實過得還不錯。 白天時間固定、晚上課程自由安排，簡直是最完美的搭配！ 但公司的政治情況有些複雜，由於後來招我進去的老闆退伙了，因此也沒有的容身之地，我也跟著離職了。 燈光音響與教吉他 # 突然的資金缺口得馬上補上，於是找到了現在這家音響公司做兼職，也已經做三年了。 在音響公司的模式是，每個月月初會給當月的活動日期，而我因為需要錢，都是全部接下。 而我自己的學生變成我燈光音響沒上班的時候，才上…",
-      "image": null,
-      "publishedAt": "2026-04-05T01:32:07Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/who-sets-your-agenda/",
-      "detailPath": "articles/a43833375e7da5fdbbc2082f.json"
     }
   ]
 }

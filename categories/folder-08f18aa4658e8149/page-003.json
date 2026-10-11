@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "3abf8d7d08a86b03a2efc28e",
+      "title": "文言文和古诗的现代教学问题及前途",
+      "summary": "摘要 这是「 BlogBlog 同乐会 - 2026 年 10 月 」的投稿文章。本月主题是「 语言的习得、传承与推广 」，由 AngeCI 主持。如果你有自己的博客，欢迎一起來参加！ 在 上篇文章 ，我谈论了我对语文作文的看法，在结尾我留了句话。 我在很多文章都有透露，我个人不喜欢古风、传统文化等东西，很大原因与中国的语文教育有关。 那么这回我再来谈谈语文考试的另一大板块──文言文与古诗。 文言文的历史 要想了解文言文，需要了解文言文的历史。古诗差不多也算是文言文的一种形式，与文言文同理，就不多复述了。 产生与发展 根据维基百科的 文言文 页面，文言文主要指以秦汉书面语为标准，脱离口语而写成的文字。在春秋战国和秦汉时期，文言文与口头语的差别不算特别大。从东汉开始，文言文就逐渐与口语脱节，但书面语仍然保持不变…",
+      "image": null,
+      "publishedAt": "2026-10-05T08:01:34Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/problems-of-classical-chinese/",
+      "detailPath": "articles/3abf8d7d08a86b03a2efc28e.json"
+    },
+    {
+      "id": "fd92cb89b92cc98bf4d2cd85",
+      "title": "Home Assistant 接 Google Home 語音控制：用 Matter 免雲端,和兩個都叫「找不到裝置」的坑",
+      "summary": "作者想用語音控制 Home Assistant 裡的燈,選了不走雲端的路:用 home-assistant-matter-hub 把 HA 實體包成 Matter 橋接器,由客廳的 Google TV Streamer 4K 當中樞。配對時 Google Home 兩次顯示「找不到裝置」,原因卻完全不同:第一次是橋接器使用 Matter 測試廠商碼 0xFFF1,必須先在 Google Home Developer Console 建立 VID/PID 一致的 integration;第二次是伺服器的 ufw 只有 IPv4 的區網規則,ICMPv6 被預設放行所以 ping6 正常,真正走 IPv6 的 UDP 5540 卻被丟掉,而且配對後的連線走 link-local,fe80::/10 也必須放行。文…",
+      "image": null,
+      "publishedAt": "2026-10-05T07:16:45Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/home-assistant-google-home-matter-hub",
+      "detailPath": "articles/fd92cb89b92cc98bf4d2cd85.json"
+    },
+    {
+      "id": "ed3a96e3ef913500ff60275c",
+      "title": "＊＊經紀人",
+      "summary": "故事背景 # 這陣子做了一個單一歌手，他隸屬的團體是臺灣人人人皆知的程度，但歌手個人歌曲相對不知名，他那場演唱的個人曲我都沒聽過（我的問題）。 歌手上去自我介紹，反應似乎有點冷淡，於是說我是某某團的 XX，成年人才開始有反應，但小朋友依然冷淡。 後來歌手接著問小朋友：「你們有做過 XX 動作吧？我就是那個 XX 動作的叔叔！」小朋友才有些反應。 然而，那個 XX 動作的歌曲是團體的歌曲，並非歌手個人的歌曲，因此原本沒有要唱，理論上也不能唱（版權相關法律問題）。 臨時加歌 # 後來不確定是客戶還是活動公司詢問，能不能唱那首家喻戶曉的歌曲，經紀人一口答應。 讓我煩躁的點來了，經紀人這種常常要給檔案的角色，他竟然沒 隨身碟 ，只能 Airdrop。 啊不就還好我也是 iPhone，啊不就還好我也有能力可以在一分鐘內…",
+      "image": null,
+      "publishedAt": "2026-10-05T04:50:18Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/shit-artist-manager/",
+      "detailPath": "articles/ed3a96e3ef913500ff60275c.json"
+    },
+    {
+      "id": "a672eb4524956c8f34730a5e",
+      "title": "干点正事",
+      "summary": "假期里知道了两条消息，一悲一喜。 悲的是一条事实：自 1997 年非那雄胺获批用于治疗雄秃以后，FDA 针对雄秃就再也没有批准过新药。换句话来说，如果你很关注秃顶或者生发类的内容，这些年来在网上被算法系统推荐过无数篇最新论文，听说过无数次兴高采烈的预告消息，它们全都是扯，一个都没有变成现实。 因此，即便你一头乌黑浓密的秀发，当你见到一位秃顶人士时，也麻烦你稍微表示一点尊重之意。因为对方不是顶着一块光头皮，而是人类医学近三十年来毫无任何建树的绝顶难题。别看今天 AI 帮着合成这个药，分析出那个病因，秃依然是秃，没有什么新办法。 总之一句话，人类不行。为什么还没有外星人降临地球建立行星际外交关系，交换文明成果？换了是我，我也不会浪费燃料。用望远镜看一眼，只要这个星球上还有很多星星点点的反光，就说明该星球文明程度不…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimvULTClLb1GpR6dZYrNhNWENK6VQER2la1DlMv_9gfsDqsdrqTRStwiZIv-y6hGO4C917YxxLQ_qJTEumTMMdLrvNLZl56UfbzynCAYlTB-zhUVsSwbQ6dUBNLeMFKidah8tbNZrD77sXSDt1TwFKQxbrOkLs6_UPY7uST6c0TMhMhzt_O6SStsemdOs/s72-w451-h599-c/hecaitou_A_young_light_cavalryman_stands_on_a_rooftop_on_hors_f225630d-8bb5-4874-b497-d2393eb01163_0-gigapixel-cgi-2x.jpeg",
+      "publishedAt": "2026-10-05T04:30:12Z",
+      "sourceId": "095c6fbac5bbadfd",
+      "sourceTitle": "槽边往事",
+      "link": "https://www.hecaitou.com/2026/10/do-some-real-work-for-once.html",
+      "detailPath": "articles/a672eb4524956c8f34730a5e.json"
+    },
+    {
+      "id": "1dd1e9bbb2c2184a3ca0bc16",
+      "title": "誰有資格被稱作臺灣台語",
+      "summary": "前言 # 先前其實寫過一篇〈 臺語與臺灣閩南語 〉，講述臺語表示臺灣的語言，並質疑用臺語來直接代稱臺灣閩南語的合理性。 這篇的理念一樣，但對於官方現在（2026）的使用偏好展開討論。 政府偏好用語 # 前陣子做了一個學生語文競賽的頒獎典禮活動硬體，其中關於 臺灣閩南語 的各項目，名稱是使用 臺灣台語 。 在 Wikipedia 上是這樣描述的： 臺灣話 = 臺灣台語 = 臺灣閩南語，並簡稱爲臺語。 比賽項目除了臺灣閩南語外，還有臺灣客語、各種原住民語的項目。 我的疑問是：爲何臺灣的變體客語是臺灣客語，臺灣的變體閩南語是臺灣台語？ 難道原住民語跟客語不是臺灣人的語言嗎？沒有資格被稱爲台語嗎？ 理由 # 那麼，政府選擇用臺灣台語做爲臺灣閩南語的理由是什麼？ 支持臺灣台語的族群認爲，使用臺灣閩南語會讓人忽略這套語言…",
+      "image": null,
+      "publishedAt": "2026-10-05T03:36:09Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/taiwanese-taiwanese/",
+      "detailPath": "articles/1dd1e9bbb2c2184a3ca0bc16.json"
+    },
+    {
       "id": "fb2cf22db60e9bb460e69d9a",
       "title": "Project Sekai 六週年感謝祭：好看又好玩！",
       "summary": "這次的 Project Sekai 六週年感謝祭 ，和 我上次看過的五週年演唱會 一樣的地方是：我看的也是在馬來西亞戲院播映的現場轉播版。 至於不同之處則是： 此次感謝祭並非 3DCG 實時 動態捕捉 呈現配上現場樂團伴奏，而是恰好相反：聲優本尊們以真人形象現身並隨著預錄好的現成伴奏帶實時演唱。 除了歌唱表演的部分以外，這個感謝祭也設有「聲優朗讀劇」與「現場講談會」兩個環節。 在「朗讀劇」環節中，其中一些令我印象深刻的橋段如下： Toya（冬彌）「出人意料」地說出萌度爆棚的 super uki uki wonderhoy（此為預錄橋段）。 Akito（彰人）的聲優現場模仿 More More Jump! 版本的初音未來​ ， 從而實現他想成為屋頂偶像的夢想 。 Mafuyu（真冬）的聲優現場模仿 Wonder…",
@@ -604,61 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_490/",
       "detailPath": "articles/273b75059524eee2e84d049f.json"
-    },
-    {
-      "id": "048500693ab66aeaa049e820",
-      "title": "入蜀记 day489 鸟与台风",
-      "summary": "「鸟与台风。」",
-      "image": null,
-      "publishedAt": "2026-10-02T04:24:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_489/",
-      "detailPath": "articles/048500693ab66aeaa049e820.json"
-    },
-    {
-      "id": "12b00fa3e99c2a6e49cf0272",
-      "title": "現今 AI 發展的「顛覆想像」",
-      "summary": "讀到了 Marcus 的〈 薯條驅動的 MCP 〉一文： 关于 AI 指挥人类的预测，原本只是我常听见的一种「惊悚言论」，就算是相信，也没有像这次 Muse 的电话门事件一样让我惊觉预测已经到来。我问了周围的几个同事，他们倒都是非常淡定……地认为人肯定逃不过要被 AI 操纵的宿命。 以前的「樂觀型」科幻故事，總是會出現像這樣的美好假想情景：發展成熟的人工智慧（機器人）爲人類處理掉一切的苦力活 1 （英文：physical labour），以讓人類本身可以隨心所欲地幹腦力活（英文：intellectual labour）。 有誰會想到，現實世界會往徹底相反的方向走呢？ ：「那些 『悲觀主義』的科幻作家 咯。」 可惡。 延伸閱讀： ava’s blog： the tech utopia fantasy is ov…",
-      "image": null,
-      "publishedAt": "2026-10-02T04:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/ai-inverting-expectations/",
-      "detailPath": "articles/12b00fa3e99c2a6e49cf0272.json"
-    },
-    {
-      "id": "8a26b4abd42983a3fdd46a9a",
-      "title": "第五年 III",
-      "summary": "现在在写的内容，其实是明天要定时发布的，明明都说了是在放假期间“开天窗”，但由于提前写完的东西早就没有库存了， […] —— 感谢订阅 莫比乌斯 ，如你有任何疑问、观点交流，请前往 创作者频道 ，或 私信 联系。",
-      "image": null,
-      "publishedAt": "2026-10-02T01:30:00Z",
-      "sourceId": "416bdd1cdb343543",
-      "sourceTitle": "莫比烏斯",
-      "link": "https://mobius.blog/25820.html",
-      "detailPath": "articles/8a26b4abd42983a3fdd46a9a.json"
-    },
-    {
-      "id": "d2f4ad31b22501b4832ce5bf",
-      "title": "鄙視鏈",
-      "summary": "讀到馮天彥寫的〈即非善法，是名善法〉，我覺得他說得很有道理：",
-      "image": null,
-      "publishedAt": "2026-10-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/contempt-chain",
-      "detailPath": "articles/d2f4ad31b22501b4832ce5bf.json"
-    },
-    {
-      "id": "fee1987a1ae44758bb161f1c",
-      "title": "数字绘画是一种钓鱼",
-      "summary": "现今随着AI热潮的爆发，我……找不到工作。 我不是打算写什么论文，所以随口说说。我忽然发现对身无分文的普通人而 … 继续阅读 数字绘画是一种钓鱼 →",
-      "image": "https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png",
-      "publishedAt": "2026-10-01T20:50:45Z",
-      "sourceId": "d29b4f2186bb32e1",
-      "sourceTitle": "景の域",
-      "link": "https://v1sta.xyz/think/%e6%95%b0%e5%ad%97%e7%bb%98%e7%94%bb%e6%98%af%e4%b8%80%e7%a7%8d%e9%92%93%e9%b1%bc/",
-      "detailPath": "articles/fee1987a1ae44758bb161f1c.json"
     }
   ]
 }

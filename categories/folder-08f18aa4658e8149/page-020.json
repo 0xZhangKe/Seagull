@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "92f06038de6d7043243b27f5",
+      "title": "On Children",
+      "summary": "by Kahlil Gibran Your children are not your children.Th […] Continue reading...",
+      "image": null,
+      "publishedAt": "2026-07-10T04:34:30Z",
+      "sourceId": "f6786af950754079",
+      "sourceTitle": "卡瓦邦噶！",
+      "link": "https://www.kawabangga.com/posts/7328",
+      "detailPath": "articles/92f06038de6d7043243b27f5.json"
+    },
+    {
+      "id": "6c0a1a9d79818d44bf41ea24",
+      "title": "macbook 10 週年",
+      "summary": "這是一篇感慨一臺電腦被我用了 10 年的文章。 2016 購買 # 10 年前（2016）的 7 月，我剛高中畢業，準備要上大學，母親帶我去買了型號爲 A1502 的 macbook pro。在 2016 買 2015 的機型是因爲，那時候不知道再等幾個月後就會有發佈會，發佈新的 macbook 了。 它是最後一代會發光的蘋果，而且是剪刀鍵盤與實體功能鍵，下一代就變成被人詬病的蝶式鍵盤與會發熱 Touch Bar 了，而且硬碟也是可以更換的！好險當時早買了。 會發光的蘋果，適合帶去 Starbucks（笑） 當時還買了 Thunderbolt2 的各種轉接頭，包含轉成 VGA、網路孔等等的，價格也非常驚人，當時整臺電腦買下來，再加上外接硬碟、超薄型 SD 卡、2016 的微軟 Office，總共花了新臺幣 6…",
+      "image": "https://eddielv.com/musings/a1502-10-years/a.jpg",
+      "publishedAt": "2026-07-10T04:32:08Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/a1502-10-years/",
+      "detailPath": "articles/6c0a1a9d79818d44bf41ea24.json"
+    },
+    {
+      "id": "fb30c21574aaea9b49a282f8",
+      "title": "最近的一些 Vibe Coding 随想",
+      "summary": "其实这些大多是前段时间写的了，但随着 Fable 5 发布，我感觉又要天翻地覆，再不写可能就过时了，所以趁现在 […]",
+      "image": "https://blog.konata.vip/wp-content/uploads/2026/07/image.png",
+      "publishedAt": "2026-07-10T04:14:19Z",
+      "sourceId": "d78d4f8c5b778d7d",
+      "sourceTitle": "此方方有限公司",
+      "link": "https://blog.konata.vip/?p=14472",
+      "detailPath": "articles/fb30c21574aaea9b49a282f8.json"
+    },
+    {
+      "id": "e169eb9d7144a697454f993e",
+      "title": "央地博弈",
+      "summary": "一颗螺丝钉，一部财政史",
+      "image": null,
+      "publishedAt": "2026-07-10T04:13:11Z",
+      "sourceId": "b4584dd13588932a",
+      "sourceTitle": "太隐",
+      "link": "https://wangyurui.com/posts/yang-di-bo-yi-07e25c1f",
+      "detailPath": "articles/e169eb9d7144a697454f993e.json"
+    },
+    {
       "id": "4b410a180499d0d49018df73",
       "title": "高尿酸血症确诊",
       "summary": "我在 2024 年底左脚大拇指根部曾肿痛一周 ，结合多年体检高尿酸结果，怀疑是痛风。但后来没有什么症状，身体也一直很好，就没去医院看。 最近一年多一直通过跑步降低体重 ，减少了 9~10kg 体重。攀岩保持在一周两到三次。自己在家查血尿酸，一直在 500~600 之间，偶尔在 480 左右。虽然戒掉了含糖饮料，也无饮酒，作息规律，精神放松（不用工作了）。但尿酸一直降不下来。...",
@@ -120,17 +164,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/gp-50-drum-machine/",
       "detailPath": "articles/e5f64988a8db02384a7a8700.json"
-    },
-    {
-      "id": "1619b3f79a0420091b591e86",
-      "title": "grep vs sqlite 谁更适合微信聊天记录？",
-      "summary": "一个爆火的讨论 云风 @cloudwu 2026-06-29 微信的开发人员根本就不懂该怎么储存数据。这种聊天软件，文本和媒体文件分开存，文本根本就不应该保存在什么数据库(sqlite)里, 一个对话一个文本文件追加就可以了。需要搜索的时候 grep 一下性能完全符合需求。一个对话能有多少文本？一秒一个字 24 小时不间断，一年也就 30M 个字。 网上的争论都是猜测，我呢，决定让 opus 跑一局。 首先让AI去搜微信聊录表结构 微信（Android）聊天记录存储在加密 SQLite 数据库 EnMicroMsg.db 中，使用 SQLCipher（AES-256-CBC，PBKDF2 256000 轮派生密钥）。核心 message 表： CREATE TABLE message ( msgId INTE…",
-      "image": null,
-      "publishedAt": "2026-07-09T03:02:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdout-26",
-      "detailPath": "articles/1619b3f79a0420091b591e86.json"
     },
     {
       "id": "f6609d16803eb143fea88a83",
@@ -626,39 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_406/",
       "detailPath": "articles/e483dfa66b352dc988104309.json"
-    },
-    {
-      "id": "85c20a3547b3931118b5ed56",
-      "title": "2026年6月阅读书摘",
-      "summary": "任何新奇的信息——出乎意料的新闻故事，或者猫咪做出不可思议行为的短视频——都会引发多巴胺分泌。这在短期内可能让你感觉良好，但随着时间的推移，你可能会沉迷于此，并因此降低智商。",
-      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEwfHxib29rJTIwfGVufDB8fHx8MTc4MzEzMTM0OHww&ixlib=rb-4.1.0&q=80&w=2000",
-      "publishedAt": "2026-07-04T02:17:23Z",
-      "sourceId": "78a6233ab9c3a513",
-      "sourceTitle": "Domon",
-      "link": "https://www.domon.cn/2026-6yue-yue-du-shu-zhai/",
-      "detailPath": "articles/85c20a3547b3931118b5ed56.json"
-    },
-    {
-      "id": "0bc87901b334bb3afacb4576",
-      "title": "2026年5月阅读书摘",
-      "summary": "选择简单模式，人生会越来越困难；选择困难模式，人生会越来越简单。",
-      "image": "https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGJvb2tzJTIwfGVufDB8fHx8MTc4MzEzMTEyOHww&ixlib=rb-4.1.0&q=80&w=2000",
-      "publishedAt": "2026-07-04T02:12:28Z",
-      "sourceId": "78a6233ab9c3a513",
-      "sourceTitle": "Domon",
-      "link": "https://www.domon.cn/2026-5yue-yue-du-shu-zhai/",
-      "detailPath": "articles/0bc87901b334bb3afacb4576.json"
-    },
-    {
-      "id": "80093348026679e7d151a8f3",
-      "title": "冒牌貨",
-      "summary": "\"Your website should be the definitive place to get everything you create.\"",
-      "image": null,
-      "publishedAt": "2026-07-04T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/fake-you",
-      "detailPath": "articles/80093348026679e7d151a8f3.json"
     }
   ]
 }

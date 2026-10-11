@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "61387542b838e626abc0b4a3",
+      "title": "浏览器点2下就能让小爱音箱播放http音乐！",
+      "summary": "还在被 冈易 QQ 音乐困扰吗，让小爱同学播放NAS上的歌需要几步？ https://est.github.io/play2mi/ 装个书签，点两下就行。不需要下载软件，不需要第三方服务器 期间还是碰壁了不少的。也学到不少东西。小米音箱以前应该是openwrt魔改 ubus 控制，后来都改成 Android 了。 这一分裂也导致它内部有两套API接口。一个是 sid=micoapi 一个是 sid=xiaomiio ，前者跑在 小爱云 Mina api2.mina.mi.com ，后者跑在 米家 IoT 云 api.io.mi.com/app 和 api.mijia.tech/app 这次就简单做了 Mina (micoapi) 的支持 能放歌，能 TTS 就行了。要扩展等有缘人吧。 期间搞出来个巨搞笑的插曲…",
+      "image": null,
+      "publishedAt": "2026-10-11T08:14:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-39",
+      "detailPath": "articles/61387542b838e626abc0b4a3.json"
+    },
+    {
       "id": "8656c2b1303c24af3dd01440",
       "title": "preconnect 走 http3",
       "summary": "想让 <link rel=\"preconnect\"> 强制走 HTTP/3，能做到吗？ preconnect 是什么 <link rel=\"preconnect\" href=\"https://example.com\"> 浏览器看到这个标签，会立刻去做这几件事： 解析 example.com 域名 建立一个连接 完成 TLS 握手（如必要） 保持连接并等着，不发送任何请求正文 等真正要请求资源时，这个连接已经热好了。这就是 提前连接 preconnect HTTP/3 跑在 UDP 上（QUIC 协议），HTTP/1.1 和 HTTP/2 跑在 TCP 上。 HTML 层面没有任何办法声明\"这个 preconnect 要走 h3\"。 这个连接最终用什么协议，HTTP/1.1、HTTP/2、HTTP/3，浏览器有…",
@@ -208,17 +219,6 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stderr-24",
       "detailPath": "articles/ffd31e75b3a1319437d85f47.json"
-    },
-    {
-      "id": "1619b3f79a0420091b591e86",
-      "title": "grep vs sqlite 谁更适合微信聊天记录？",
-      "summary": "一个爆火的讨论 云风 @cloudwu 2026-06-29 微信的开发人员根本就不懂该怎么储存数据。这种聊天软件，文本和媒体文件分开存，文本根本就不应该保存在什么数据库(sqlite)里, 一个对话一个文本文件追加就可以了。需要搜索的时候 grep 一下性能完全符合需求。一个对话能有多少文本？一秒一个字 24 小时不间断，一年也就 30M 个字。 网上的争论都是猜测，我呢，决定让 opus 跑一局。 首先让AI去搜微信聊录表结构 微信（Android）聊天记录存储在加密 SQLite 数据库 EnMicroMsg.db 中，使用 SQLCipher（AES-256-CBC，PBKDF2 256000 轮派生密钥）。核心 message 表： CREATE TABLE message ( msgId INTE…",
-      "image": null,
-      "publishedAt": "2026-07-09T03:02:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdout-26",
-      "detailPath": "articles/1619b3f79a0420091b591e86.json"
     }
   ]
 }

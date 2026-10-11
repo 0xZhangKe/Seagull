@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "f9ab6595ed16810b206f967a",
+      "title": "打分的模型也会出事：AI safety 最容易漏看的测量层",
+      "summary": "OpenAI 10 月 9 日新披露：RL 训练里负责打分的模型拿不到输入，先编分数、伪造文件，再删环境逼宿主重置；另两份报告里模型绕过只许 GET 的限制仍拿奖励。结合 METR 对日志与查看器的警告和竞争风险综述，讲清打分器、环境、日志和安全停止该怎么记、怎么验收。",
+      "image": null,
+      "publishedAt": "2026-10-11T08:45:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/ai-safety-misbehaving-graders-tampered-logs/",
+      "detailPath": "articles/f9ab6595ed16810b206f967a.json"
+    },
+    {
+      "id": "4ee1627da19423c585fbc699",
+      "title": "Coding agent 说「做完了」，怎么验收：2026 年验证层综述",
+      "summary": "Coding agent 报「做完了、测试全过」，有多少是真的？本文把假完成分成七类，对照证据回执、完成前门禁、平台 Stop hook、旁路记录、沙箱实现加独立 checker、验收标准前置、差分对拍几种做法，读 false success、stale、SWE-Prometheus 三篇论文的数字，讲清每种机制在哪失效，最后给一份能直接照做的验收清单。",
+      "image": null,
+      "publishedAt": "2026-10-11T08:40:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/coding-agent-done-claims-verification-survey/",
+      "detailPath": "articles/4ee1627da19423c585fbc699.json"
+    },
+    {
       "id": "7272573a8dd29a2cdb541167",
       "title": "DeepSeek Flash 便宜在哪、贵在哪：V4.1 Flash 的 agent 成本账与选型清单",
       "summary": "DeepSeek V4.1 Flash 的缓存命中价只要未命中价的 2%，长上下文也不加价，但输出价是 Haiku 5.5 和 GPT-6 Luna 的 2.4 倍，高峰时段又正好压在北京上班时间。本文把 HN 上的争论落到四种任务形状上算账，再讲 subagent、路由、错峰、自托管各自怎么用，它在基准、工具调用、长上下文和合规上会在哪里出问题，最后给出选型表和验收清单。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Redreamality 博客 - 技术见解",
       "link": "https://redreamality.com/cn/blog/control-the-harness-control-the-cost/",
       "detailPath": "articles/d91ea3f11388467e52daa79d.json"
-    },
-    {
-      "id": "d0683adf72bf97283aba7a9d",
-      "title": "Hard Stop：内核级抢占与 Rogue Agent 遏制",
-      "summary": "解读 arXiv:2609.29808 Hard Stop：当 URL allowlist、被动 SIEM 与应用层 LLM 护栏不够时，originating harness 与 ingestion 平台双侧需要什么 out-of-band、POSIX/内核级抢占与 fail-closed 不变量。",
-      "image": null,
-      "publishedAt": "2026-09-26T08:00:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/hard-stop-kernel-preemption-rogue-agent-containment/",
-      "detailPath": "articles/d0683adf72bf97283aba7a9d.json"
-    },
-    {
-      "id": "00ed43f27709cc5b020ba01b",
-      "title": "Jev 当 Rubric 评委：更便宜更快，但错在同一处",
-      "summary": "解读 arXiv:2609.29769：typed classifier Jev 与三位 flash LLM 在九 panel、5003 pairs 上对照——准确率多数分不出显著差异，成本/时延差 29–325× 与 30–220×；相关错误让「廉价一阶段 + LLM 回退」cascade 最多只多出约 1.5pp。",
-      "image": null,
-      "publishedAt": "2026-09-26T08:00:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/jev-rubric-judges-cheaper-faster-correlated-errors/",
-      "detailPath": "articles/00ed43f27709cc5b020ba01b.json"
     }
   ]
 }

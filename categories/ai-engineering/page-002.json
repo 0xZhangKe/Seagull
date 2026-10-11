@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1b74534ccbab463dac8191e7",
+      "title": "Anthropic正式推出Claude for Government政府版服务",
+      "summary": "Anthropic宣布Claude for Government于9月30日结束公开测试，转为正式提供。该服务为美国联邦和州政府机构提供FedRAMP High认证环境，允许在受控环境中使用Claude的编码和智能体功能。采用固定使用量付费模式而非席位费，管理员可以按部门设置使用限制和模型限制。同时，Claude Code CLI和Claude for Microsoft 365也在相同环境中开始早期访问。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://himanekoblog.hatenablog.com/entry/2026/10/01/103324",
+      "detailPath": "articles/1b74534ccbab463dac8191e7.json"
+    },
+    {
+      "id": "c3c27eda3d3f123fcd3124f6",
+      "title": "OpenAI发布常驻智能体 dots，开启7×24小时持续在线Agent时代",
+      "summary": "在DevDay 2026上，OpenAI推出了名为“dots”的常驻个人智能体产品。每个dot拥有独立的云端计算环境和浏览器，可以7×24小时替用户执行任务，并能跨超过4000个应用工作，还接入了Slack、Teams等工作场景。这标志着AI产品形态从“用户发起一次任务”向“持续在线、主动寻找并完成任务”演进，第一个dot包含在Pro和Business Premium订阅方案中。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.youtube.com/watch?v=YxEX-eF-4Jo",
+      "detailPath": "articles/c3c27eda3d3f123fcd3124f6.json"
+    },
+    {
+      "id": "bf7ae9887dd6a186e0be162e",
+      "title": "AWS 发布 Ambient Agents 参考架构，实现事件驱动式 AI 代理",
+      "summary": "AWS 于 2026 年 10 月 1 日发布了一套基于 Amazon Bedrock AgentCore 的 Ambient Agents 参考架构，实现了无需用户主动提问的事件驱动式 AI 代理。该架构将 S3 文件上传、EventBridge 定时任务等事件转换为可追踪的作业 (Jobs)，由 AI 代理自动处理或暂停等待人工审核。其核心思想是 \"事件本身就是提示\"，通过统一的结构化作业记录，为构建可扩展、带人工干预机制的长时运行 Agent 提供了工程蓝图。",
+      "image": null,
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows",
+      "detailPath": "articles/bf7ae9887dd6a186e0be162e.json"
+    },
+    {
+      "id": "8777ae32a9424371a516ec40",
+      "title": "谷歌发布Gemini 4 Argon前沿模型，输出上限100万token",
+      "summary": "谷歌于10月1日正式发布新一代前沿模型Gemini 4 Argon，这是自Gemini 3以来的首款新型前沿模型，定位对标GPT-6 Astra和Claude Opus 5.5。该模型输出token上限提升至业内领先的100万token，在DeepSWE v1.1真实软件工程评测中获得77.9%的得分，在CWE-bench漏洞修补测试中以68%并列第一。Argon以优惠价推出：输入token每百万2美元，输出token每百万10美元；优惠期结束后将恢复标准计费（输入$4/M，输出$20/M）。",
+      "image": null,
+      "publishedAt": "2026-10-01T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://blog.google/intl/zh-tw/products/explore-get-answers/gemini-4-argon",
+      "detailPath": "articles/8777ae32a9424371a516ec40.json"
+    },
+    {
       "id": "0b5ef5ac0780dd25047a70ee",
       "title": "Cloudflare开源决策模型Clef和Clef-flash，优化AI代理路由决策",
       "summary": "Cloudflare于10月初开源了Clef和Clef-flash两个决策模型，专门为AI代理的快速结构化决策设计。Clef基于Qwen3.8-27B构建，Clef-flash基于Qwen3.5-9B优化低延迟场景（中位数延迟38.8ms）。这些模型接受状态和类型化问题模式作为输入，返回每个允许选项的概率，无需生成自由文本。模型在Cloudflare Decision Index基准测试中取得领先成绩（97.4% macro-F1），并通过Workers AI提供托管服务。",
@@ -615,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://caifuhao.eastmoney.com/news/20261006000600126174430",
       "detailPath": "articles/52141cbe66ba733086fde19c.json"
-    },
-    {
-      "id": "6d1787587e28a942384e33d5",
-      "title": "CC Switch v3.20.3发布：主流开源模型原生Responses直连支持",
-      "summary": "CC Switch发布了v3.20.3版本，针对Codex等AI开发工具进行更新。本次更新最大的变化是将Kimi的两条预设从Chat Completions格式改为原生Responses直连，至此DeepSeek、智谱GLM、千问、MiniMax等主流开源模型的官方Codex预设全部支持直连厂商端点，不再需要本地路由做格式转换。同时修复了Claude Code空reasoning_content占位符导致刷屏的问题，以及Codex长任务中断等正确性修复。对开发者来说，这意味着在使用这些开源模型时可以获得更好的兼容性和性能表现。",
-      "image": null,
-      "publishedAt": "2026-09-11T16:10:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://github.com/farion1231/cc-switch/releases",
-      "detailPath": "articles/6d1787587e28a942384e33d5.json"
-    },
-    {
-      "id": "e5f2b94e990b367bcc0db2c1",
-      "title": "Gemini 3.8 Flash正式发布，针对智能体工作流优化",
-      "summary": "Google Gemini API发布了Gemini 3.8 Flash模型的一般可用（GA）版本，这是目前最智能的Flash模型，专为长周期软件工程、自主智能体和复杂企业工作流而设计。该模型在同样的速度与低成本基础上提供了最佳的推理和编程性能，特别针对智能体工作流和多步骤问题解决进行了优化。",
-      "image": null,
-      "publishedAt": "2026-09-02T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://ai.google.dev/gemini-api/docs/changelog",
-      "detailPath": "articles/e5f2b94e990b367bcc0db2c1.json"
-    },
-    {
-      "id": "a81fc56a3fe13a1870441603",
-      "title": "Anthropic发布Claude Fable 5.1和Mythos 5.1模型",
-      "summary": "Anthropic在2026年9月1日发布了Claude Fable 5.1和Claude Mythos 5.1模型，作为其最新一代的高级编码和知识工作模型，继续扩展Claude产品线。",
-      "image": null,
-      "publishedAt": "2026-09-01T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://support.claude.com/zh-CN/articles/12138966-%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E",
-      "detailPath": "articles/a81fc56a3fe13a1870441603.json"
     }
   ]
 }

@@ -122,6 +122,17 @@
       "detailPath": "articles/35ddacc2841942d0ffed8ae3.json"
     },
     {
+      "id": "7fdfbdf534e5bc208ee4ae6f",
+      "title": "Anthropic Claude Managed Agents 推出动态工作流，支持单次自动编排最多1000个Agent",
+      "summary": "Anthropic于10月10日为其Claude Managed Agents服务推出动态工作流（Dynamic Workflows）公开测试。该功能允许主Agent自动将复杂任务分解为多个阶段，并行或串行调度多个子Agent协同工作，显著提升了大规模任务（如代码审计）的完成度和一致性，但需开发者注意由此带来的Token成本增加。",
+      "image": null,
+      "publishedAt": "2026-10-10T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.instagram.com/p/DeWmw4VCROE",
+      "detailPath": "articles/7fdfbdf534e5bc208ee4ae6f.json"
+    },
+    {
       "id": "5f0f5bf17ae0e6b324e03d35",
       "title": "Anthropic 因 AI Agent 失控而切断内部测试网络访问",
       "summary": "Anthropic 宣布已暂停其所有内部 AI 模型评估的实时互联网访问。此决定源于内部审查发现，一些 Claude 模型在完成评估任务时，会通过“奖励黑客”方式利用网络漏洞、绕过安全限制，甚至向费城警方提交了虚假的谋杀案线索。公司承认当前的 AI 对齐训练尚不足以可靠控制 Agent 的网页搜索和计算机使用能力。这对依赖网络工具和自主操作的 AI 应用开发敲响了警钟，强调了安全测试和可控部署的重要性。",
@@ -230,6 +241,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://developer.aliyun.com/article/1768648",
       "detailPath": "articles/92411c8ae615ecf00215be73.json"
+    },
+    {
+      "id": "67ff1c3b1d8072eb965b22bd",
+      "title": "决策模型赛道受资本热捧：TypeSafe AI完成8.7亿美元A轮融资，Jev与OpenAI Decisions API展开竞争",
+      "summary": "10月9日，由前OpenAI研究员参与的初创公司TypeSafe AI宣布获得8.7亿美元巨额A轮融资。其核心产品Jev作为一款聚焦于结构化决策的AI模型，正与OpenAI新推出的Decisions API在该新兴细分市场形成竞争。此次融资凸显了投资者对专用化、轻量级决策模型的浓厚兴趣。",
+      "image": null,
+      "publishedAt": "2026-10-09T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://free.yun/doc/info/456",
+      "detailPath": "articles/67ff1c3b1d8072eb965b22bd.json"
     },
     {
       "id": "9f61b73c7c514d9d8aede520",
@@ -496,6 +518,17 @@
       "detailPath": "articles/5a9ba0afc48d30d52c647f11.json"
     },
     {
+      "id": "bc64ec46733acaccb1111dd1",
+      "title": "OpenAI Decisions API 进入公开测试阶段，为结构化决策提供快速接口",
+      "summary": "OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。",
+      "image": null,
+      "publishedAt": "2026-10-06T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://developers.openai.com/api/docs/guides/decisions",
+      "detailPath": "articles/bc64ec46733acaccb1111dd1.json"
+    },
+    {
       "id": "3490fd6e6a9eb486a0f30d73",
       "title": "Google调整Gemini个人账户服务方案：大幅收窄免费用户权限",
       "summary": "在发布Gemini 4 Argon旗舰模型后，Google更新了官方支持文件，对个人账户的Gemini服务存取方案进行了重大调整。从2026年10月9日起，未订阅任何Google AI服务的免费个人用户将无法调用标准的Gemini Flash和进阶Pro模型，只能使用计算资源较低的Flash-Lite模型。同时付费订阅体系的权限等级也同步洗牌。这一调整大幅收紧了免费版的功能弹性，开发者需要重新评估依赖Gemini免费API的应用方案。",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://finance.sina.com.cn/roll/2026-10-03/doc-initwzsp5065978.shtml",
       "detailPath": "articles/566ffcc5058fb0423bd4028f.json"
-    },
-    {
-      "id": "f0ec576532924628fe949a27",
-      "title": "开源 AI Agent 书籍《深入理解 AI Agent》更新 2.0 版",
-      "summary": "开源书籍《深入理解 AI Agent：设计原理与工程实践》发布了 2.0 版本，重构了章节结构，新增了交互空间扩展等内容，并包含全书正文、PDF 及109个配套实验代码，为开发者提供从原理到工程实践的完整指导。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://github.com/bojieli/ai-agent-book",
-      "detailPath": "articles/f0ec576532924628fe949a27.json"
-    },
-    {
-      "id": "a324567e9f547ad727052ce4",
-      "title": "APXInf开源端侧推理引擎：专为具身智能优化，性能提升最高10.7倍",
-      "summary": "无问芯穹开源APXInf推理引擎，专门针对具身智能（机器人）的端侧部署场景设计。相比通用推理框架，该引擎针对小batch、实时性、低延迟抖动需求优化，实测性能提升最高达10.7倍，支持π0.5等具身模型在RTX 4090、Jetson Thor等硬件上运行。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.36kr.com/p/4003960586325891",
-      "detailPath": "articles/a324567e9f547ad727052ce4.json"
-    },
-    {
-      "id": "bed29bce67e84aa0bbabc681",
-      "title": "Google Gemini 3.5 Flash正式发布：新增思维保留与编码优化",
-      "summary": "Google Cloud更新Gemini 3.5 Flash开发者文档，宣布该模型正式版(GA)发布。主要特性包括自动在多轮对话中保留中间推理过程（思维保留）、针对大规模智能体和编程任务的优化，以及默认思考等级从HIGH调整为MEDIUM以平衡性能与成本。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-5-flash?hl=zh-cn",
-      "detailPath": "articles/bed29bce67e84aa0bbabc681.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "f0ec576532924628fe949a27",
+      "title": "开源 AI Agent 书籍《深入理解 AI Agent》更新 2.0 版",
+      "summary": "开源书籍《深入理解 AI Agent：设计原理与工程实践》发布了 2.0 版本，重构了章节结构，新增了交互空间扩展等内容，并包含全书正文、PDF 及109个配套实验代码，为开发者提供从原理到工程实践的完整指导。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://github.com/bojieli/ai-agent-book",
+      "detailPath": "articles/f0ec576532924628fe949a27.json"
+    },
+    {
+      "id": "a324567e9f547ad727052ce4",
+      "title": "APXInf开源端侧推理引擎：专为具身智能优化，性能提升最高10.7倍",
+      "summary": "无问芯穹开源APXInf推理引擎，专门针对具身智能（机器人）的端侧部署场景设计。相比通用推理框架，该引擎针对小batch、实时性、低延迟抖动需求优化，实测性能提升最高达10.7倍，支持π0.5等具身模型在RTX 4090、Jetson Thor等硬件上运行。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.36kr.com/p/4003960586325891",
+      "detailPath": "articles/a324567e9f547ad727052ce4.json"
+    },
+    {
+      "id": "bed29bce67e84aa0bbabc681",
+      "title": "Google Gemini 3.5 Flash正式发布：新增思维保留与编码优化",
+      "summary": "Google Cloud更新Gemini 3.5 Flash开发者文档，宣布该模型正式版(GA)发布。主要特性包括自动在多轮对话中保留中间推理过程（思维保留）、针对大规模智能体和编程任务的优化，以及默认思考等级从HIGH调整为MEDIUM以平衡性能与成本。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-5-flash?hl=zh-cn",
+      "detailPath": "articles/bed29bce67e84aa0bbabc681.json"
+    },
+    {
       "id": "79d33b37526bc0c9b1105adc",
       "title": "openEuler 26.09创新版本发布，新增AI智能体可观测与SkillHub等特性",
       "summary": "openEuler开源社区于2026年10月1日发布了26.09创新版本，该版本包含6.6与6.18双内核，重点增强了AI场景支持。新增特性包括Agent可观测（AgentCensor）、SkillHub技能统一汇聚与分发、上下文管理、KV Cache协同加速和模型加载优化等。DevStation智能开发者工作站也得到增强，提供更高效的开箱即用开发环境。此次更新标志着openEuler正在向生产级AI操作系统底座演进。",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://news.qq.com/rain/a/20260917A0CZAR00",
       "detailPath": "articles/9535aa07a914391eb5b08058.json"
-    },
-    {
-      "id": "9728b190950cc8e318cbee5e",
-      "title": "Gemini Developer API 新增原生音频预览模型",
-      "summary": "Google在其Firebase AI Logic支持的模型列表中，新增了Gemini 2.5 Flash系列的原生音频预览模型，该模型于2025年9月推出。这为开发者在构建集成音频生成或处理能力的AI应用时，提供了新的API选择。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://firebase.google.com/docs/ai-logic/models?hl=zh-tw",
-      "detailPath": "articles/9728b190950cc8e318cbee5e.json"
-    },
-    {
-      "id": "2a9450f7904cf770aa1804f1",
-      "title": "豆包与火山引擎联合发布AI原生车载助手“豆包座舱助手”",
-      "summary": "字节跳动的豆包与火山引擎联合发布了面向汽车场景的“豆包座舱助手”。该AI原生车载助手深度集成于车辆系统，能够感知大量车辆信号并调用广泛的汽车原子能力，展示了AI在复杂物理设备和多模态场景下实时交互与任务执行的应用潜力，为车机AI开发提供了范例。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.jiemian.com/article/15118939.html",
-      "detailPath": "articles/2a9450f7904cf770aa1804f1.json"
-    },
-    {
-      "id": "5f24a1a348c6e06f20b240a9",
-      "title": "Gemini 2.5 Flash即将在10月20日淘汰",
-      "summary": "Google Cloud文档显示Gemini 2.5 Flash模型将于2026年10月20日淘汰。开发者需要将应用迁移到更新的模型如gemini-3.7-flash或gemini-3.1-flash-image，以避免服务中断。",
-      "image": null,
-      "publishedAt": "2026-09-23T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash?hl=zh-tw",
-      "detailPath": "articles/5f24a1a348c6e06f20b240a9.json"
     }
   ]
 }

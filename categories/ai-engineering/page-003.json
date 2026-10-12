@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "0ca80540842a01f9f47a8ee4",
+      "title": "Anthropic 发布 Claude Opus 5.5，优化 Agent 任务成本与控制性",
+      "summary": "Anthropic 发布了 Claude 5.5 家族的首个模型 Claude Opus 5.5。该模型针对长时间运行的 AI Agent 和知识型工作流进行了优化，宣称在多数任务上能达到顶级模型 Fable 5.1 的性能水平，同时将典型工作负载的执行成本相比 Opus 5 降低了 40%。API 价格也相应下调了 20%。对于开发者，这意味着在构建需要长上下文、可靠执行的 Agent 时，有了一个在性价比和控制性上更具吸引力的选项，但需注意其 API 在工具强制使用、特定领域访问等方面设置了更严格的约束。",
+      "image": null,
+      "publishedAt": "2026-09-22T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.datacamp.com/ja/blog/gpt-6-sol-vs-claude-opus-5-5",
+      "detailPath": "articles/0ca80540842a01f9f47a8ee4.json"
+    },
+    {
+      "id": "f0845da27eaa93c0e81df878",
+      "title": "OpenAI 发布 GPT-6 Sol 与 GPT-6 Luna，API 价格永久降低 50%",
+      "summary": "OpenAI 正式发布了 GPT-6 系列的两款新模型：GPT-6 Sol（面向复杂任务与编码）和 GPT-6 Luna（面向低成本高吞吐量任务）。它们基于旗舰模型 GPT-6 Astra 的技术构建，但在 API 价格上相比前代 GPT-5.6 系列实现了永久性 50% 的降低。对开发者而言，这意味着在获得接近顶级模型能力的同时，推理成本大幅下降，有利于大规模 Agent 工作流和日常开发任务的成本控制。新模型已通过 OpenAI API、Azure Foundry 等平台提供。",
+      "image": null,
+      "publishedAt": "2026-09-22T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://releasebot.io/updates/openai",
+      "detailPath": "articles/f0845da27eaa93c0e81df878.json"
+    },
+    {
       "id": "419fec07e2528b98ff0cdeb1",
       "title": "Anthropic发布Claude Opus 5.5：成本降低40%，性能对标Fable 5.1",
       "summary": "Anthropic发布了Claude Opus 5.5，这是Claude 5.5家族的首个模型。该模型在多数任务上与Fable 5.1性能相当，但成本比前代Opus 5降低40%，输出速度快30%。定价上输入Token每百万$4，输出Token每百万$20，分别比Opus 5低20%，缓存读取价格更是降低了60%。模型启用了保留思考机制防止蒸馏攻击，并已在主要云平台上线。对开发者而言，这意味着以更低成本获得与前沿模型接近的能力，尤其适合成本敏感的Agentic工作负载。",

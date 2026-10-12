@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "12460b1433713ee5a3b70b53",
+      "title": "OpenAI发布《GPT-6系列模型指南》，提供工程化落地实用建议",
+      "summary": "OpenAI于10月2日发布了GPT-6系列模型的实用构建指南，针对开发者提供了详细的模型选型、优化部署和成本管理建议。指南明确区分了Astra、Sol和Luna三个模型的最佳应用场景，并提供了在生产环境中提高效率的具体技术，如提示缓存和上下文压缩。对于需要构建企业级AI应用的开发者，这份指南提供了从模型选择到生产部署的完整工程化建议。",
+      "image": null,
+      "publishedAt": "2026-10-02T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://openai.com/index/practical-guide-building-gpt-6",
+      "detailPath": "articles/12460b1433713ee5a3b70b53.json"
+    },
+    {
+      "id": "d9b43fed34ea734e72282a17",
+      "title": "AWS开源Strands Decider 2B：专为AI代理快速决策优化的20亿参数模型",
+      "summary": "AWS于2026年10月1日开源Strands Decider 2B决策模型，专门用于AI代理的工具选择、分类和安全判断。该模型基于Qwen3.5-2B改造，移除文字生成能力，专注于从预定义选项中进行快速决策评估，可在本机CPU或GPU上低延迟运行。",
+      "image": null,
+      "publishedAt": "2026-10-02T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.ithome.com.tw/news/179373",
+      "detailPath": "articles/d9b43fed34ea734e72282a17.json"
+    },
+    {
       "id": "a59578782696939a7f08eaa0",
       "title": "OpenAI发布Chatham Financial客户案例，展示企业级AI应用",
       "summary": "OpenAI发布了金融服务公司Chatham Financial的客户案例，详细展示了其如何运用Codex和GPT-5.6模型重塑工作流程，将交易验证时间从30分钟缩短至不到4分钟，并开发内部和客户使用的AI工具。",
@@ -637,28 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://openai.com/zh-Hant/index/parallel-cuts-time-and-cost-with-astra",
       "detailPath": "articles/e53ea1919124639bf36e93af.json"
-    },
-    {
-      "id": "0ca80540842a01f9f47a8ee4",
-      "title": "Anthropic 发布 Claude Opus 5.5，优化 Agent 任务成本与控制性",
-      "summary": "Anthropic 发布了 Claude 5.5 家族的首个模型 Claude Opus 5.5。该模型针对长时间运行的 AI Agent 和知识型工作流进行了优化，宣称在多数任务上能达到顶级模型 Fable 5.1 的性能水平，同时将典型工作负载的执行成本相比 Opus 5 降低了 40%。API 价格也相应下调了 20%。对于开发者，这意味着在构建需要长上下文、可靠执行的 Agent 时，有了一个在性价比和控制性上更具吸引力的选项，但需注意其 API 在工具强制使用、特定领域访问等方面设置了更严格的约束。",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.datacamp.com/ja/blog/gpt-6-sol-vs-claude-opus-5-5",
-      "detailPath": "articles/0ca80540842a01f9f47a8ee4.json"
-    },
-    {
-      "id": "f0845da27eaa93c0e81df878",
-      "title": "OpenAI 发布 GPT-6 Sol 与 GPT-6 Luna，API 价格永久降低 50%",
-      "summary": "OpenAI 正式发布了 GPT-6 系列的两款新模型：GPT-6 Sol（面向复杂任务与编码）和 GPT-6 Luna（面向低成本高吞吐量任务）。它们基于旗舰模型 GPT-6 Astra 的技术构建，但在 API 价格上相比前代 GPT-5.6 系列实现了永久性 50% 的降低。对开发者而言，这意味着在获得接近顶级模型能力的同时，推理成本大幅下降，有利于大规模 Agent 工作流和日常开发任务的成本控制。新模型已通过 OpenAI API、Azure Foundry 等平台提供。",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://releasebot.io/updates/openai",
-      "detailPath": "articles/f0845da27eaa93c0e81df878.json"
     }
   ]
 }

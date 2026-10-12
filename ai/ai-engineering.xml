@@ -21,6 +21,15 @@
       <content:encoded>&lt;p&gt;一份关于2026年第四季度主流大模型API定价的完整参考报告发布。报告指出，OpenAI已经取消了GPT-6.1 Astra，GPT-6.1 Sol以$2/$10每百万Token的价格成为其最强公开模型。同时，多款Flash级模型在近期密集发布，提供了优秀的性价比。这份定价全景对于开发者在进行模型选型、预算规划和多供应商路由回退策略配置时具有重要实用价值。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;GPT-6.1 Sol成为OpenAI最强公开模型（无GPT-6.1 Astra），价格$2/$10。&lt;/li&gt;&lt;li&gt;Flash级模型（如DeepSeek V4.1 Flash， Qwen3.8 Flash， GLM-5.3 Flash) 提供百万级上下文和低于1美元每百万Token的定价。&lt;/li&gt;&lt;li&gt;报告整理了2026年Q4各厂商价格、缓存折扣和批量处理费率。&lt;/li&gt;&lt;li&gt;为开发者配置多供应商成本分层和回退路由提供关键定价参考。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://therouter.ai/zh/blog"&gt;2026 年 Q4 大模型 API 定价全景：GPT-6.1 Sol、Opus 5.5 与 Astra 取消后的新格局&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>千问AI平台上线Qwen-Image-2.1 Pro/Turbo API，提供8步快速生图服务</title>
+      <link>https://finance.sina.com.cn/tech/digi/2026-10-11/doc-iniuvxsh0534341.shtml</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:87220e31f7737c6957fe614200a1b4b6</guid>
+      <pubDate>Sun, 11 Oct 2026 16:06:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T00:28:27Z</archive:collectedAt>
+      <description>10月11日，阿里千问AI平台正式上线了Qwen-Image-2.1 Pro和Turbo API服务。开发者可以通过API将基于Qwen-Image-2.1-Turbo（8步推理）的图像生成与编辑能力集成到自己的应用中，服务于电商、设计、内容创作等场景。该服务的推出以及模型权重的开源，为开发者提供了一个免部署、低门槛的图像生成解决方案。</description>
+      <content:encoded>&lt;p&gt;10月11日，阿里千问AI平台正式上线了Qwen-Image-2.1 Pro和Turbo API服务。开发者可以通过API将基于Qwen-Image-2.1-Turbo（8步推理）的图像生成与编辑能力集成到自己的应用中，服务于电商、设计、内容创作等场景。该服务的推出以及模型权重的开源，为开发者提供了一个免部署、低门槛的图像生成解决方案。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;核心是Qwen-Image-2.1-Turbo模型，它将图像生成与编辑的去噪步骤缩短至8步（原版需25步），基于7B视觉架构。&lt;/li&gt;&lt;li&gt;开发者可直接调用API集成图像生成与编辑能力，无需自行部署模型或管理推理环境。&lt;/li&gt;&lt;li&gt;模型权重已同步开源，INT8量化版本约6.8GB，使本地部署门槛降低（约8GB显存可运行）。&lt;/li&gt;&lt;li&gt;API支持最多10张参考图输入，并提供圈选、涂抹等编辑功能，增强了人像和商品编辑中的一致性表现。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://finance.sina.com.cn/tech/digi/2026-10-11/doc-iniuvxsh0534341.shtml"&gt;Qwen-Image-2.1 Pro 和 Turbo API 上线千问 AI 平台，将图像生成与编辑能力接入应用&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>大模型竞争转向性价比，国产开源模型能力逼近、长上下文成标配</title>
       <link>https://zhuanlan.zhihu.com/p/2092526182591895272</link>
       <guid isPermaLink="false">urn:signal-archive:ai:db4ee7b294bb5f186b883ad39535c872</guid>
@@ -202,6 +211,15 @@
       <archive:collectedAt>2026-10-09T04:15:14Z</archive:collectedAt>
       <description>一篇发表于InfoQ的深度技术分析文章，探讨了OpenAI多智能体系统（Dots， Agents API）产品化背后的技术本质。文章引述OpenAI研究员Noam Brown的观点，强调近期突破的核心驱动力是基础模型能力的跃升以及通过多智能体实现的“测试时计算”并行化，而非智能体的规模效应本身。这对开发者的实际指导意义在于：构建AI系统时应优先投资于高质量的基座模型和高效的推理架构，而不是盲目追求智能体数量。</description>
       <content:encoded>&lt;p&gt;一篇发表于InfoQ的深度技术分析文章，探讨了OpenAI多智能体系统（Dots， Agents API）产品化背后的技术本质。文章引述OpenAI研究员Noam Brown的观点，强调近期突破的核心驱动力是基础模型能力的跃升以及通过多智能体实现的“测试时计算”并行化，而非智能体的规模效应本身。这对开发者的实际指导意义在于：构建AI系统时应优先投资于高质量的基座模型和高效的推理架构，而不是盲目追求智能体数量。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;InfoQ深度文章分析了OpenAI DevDay 2026发布的多智能体产品（如 Dots 和 Agents API）及其背后的技术原理&lt;/li&gt;&lt;li&gt;OpenAI研究员Noam Brown指出，解决千禧年难题的核心突破主要归功于强大的基础模型和并行推理计算，而非单纯的多智能体数量&lt;/li&gt;&lt;li&gt;文章详细阐述了多智能体系统作为“测试时计算”并行扩展方式的优缺点和高效协作机制&lt;/li&gt;&lt;li&gt;强调了在当前阶段，基础模型的质量和长时运行能力比智能体数量更为关键&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.infoq.cn/article/3MSU3CcJuh0XjHDyjhXj"&gt;InfoQ: OpenAI刚把多Agent做成产品，o1奠基人却说：1万个Agent解出世界级难题，多Agent贡献不到10%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>Anthropic发布Claude Haiku 5.5：API成本降低约75%，引入可调节推理强度</title>
+      <link>https://shattered.io/claude-haiku-5-5-api-price-cut-75-percent-2026</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:3361190174c128ab9ffd385ab406ee1a</guid>
+      <pubDate>Wed, 07 Oct 2026 08:56:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T00:28:27Z</archive:collectedAt>
+      <description>Anthropic于10月7日发布了Claude Haiku 5.5，这是其5.5家族中的小型模型，平均运行成本比前代Haiku 4.5降低约75%。其核心是为高吞吐量、成本敏感的任务（如分类、摘要、语音代理）提供极低价的API，并结合可调节的推理强度功能，让开发者为不同复杂度的任务平衡成本与质量，这对于大规模运行的AI Agent和自动化系统成本优化至关重要。</description>
+      <content:encoded>&lt;p&gt;Anthropic于10月7日发布了Claude Haiku 5.5，这是其5.5家族中的小型模型，平均运行成本比前代Haiku 4.5降低约75%。其核心是为高吞吐量、成本敏感的任务（如分类、摘要、语音代理）提供极低价的API，并结合可调节的推理强度功能，让开发者为不同复杂度的任务平衡成本与质量，这对于大规模运行的AI Agent和自动化系统成本优化至关重要。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API价格大幅下调：短提示（≤100K token）输入$0.10/百万，输出$0.50/百万，相比Haiku 4.5单位价格下降约90%。&lt;/li&gt;&lt;li&gt;首次为小型模型引入可调节的推理强度（Effort）设置，允许开发者按任务复杂程度调整成本与质量。&lt;/li&gt;&lt;li&gt;专为高吞吐量、对时延敏感的任务设计，如分类、提取和充当Sonnet/Opus下的子代理，旨在降低AI Agent流程成本。&lt;/li&gt;&lt;li&gt;模型已在Anthropic平台、AWS、Google Cloud和Azure上线，现有代码仅需修改模型标识符即可迁移。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5"&gt;Introducing Claude Haiku 5.5&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://shattered.io/claude-haiku-5-5-api-price-cut-75-percent-2026"&gt;Claude Haiku 5.5: Anthropic Cuts API Costs 75%&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/document/claude-haiku-5-5-system-card"&gt;Claude Haiku 5.5 System Card&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>Anthropic 发布 Claude Haiku 5.5：成本大幅降低且代理能力显著提升</title>

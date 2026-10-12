@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "0ad4502d971dca9c4add519d",
+      "title": "企业级 Agent 落地实践：玉山银行 GENIE 3.0 打造统一 AI 代理入口",
+      "summary": "玉山银行分享了其向 Agentic Banking 转型的实践，即将上线新一代企业级生成式 AI 平台 GENIE 3.0。该平台的核心是作为统一的 Agent 入口，用户只需提出需求，Root Agent 会理解意图并调度相应的内部 Agent、知识库（RAG）和工具（通过 MCP 网关）来完成任务。报道详细阐述了如何将领域专家（如法遵、授信）的隐性工作经验转化为可被 AI 调用的 Skill 这一关键工程挑战。对于开发者，这是一个大型金融机构如何从平台架构、知识工程、人机协作等角度系统落地 Agentic AI 的宝贵实战参考。",
+      "image": null,
+      "publishedAt": "2026-09-23T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.ithome.com.tw/news/179148",
+      "detailPath": "articles/0ad4502d971dca9c4add519d.json"
+    },
+    {
+      "id": "792c4cd2c45ca34394ec704f",
+      "title": "阿里云千问AI平台全面升级，发布API优速模式与Agent Studio",
+      "summary": "在2026云栖大会上，阿里巴巴宣布千问AI平台全面升级，核心转向支持Agent进入生产应用。平台在原有模型服务基础上，新增了对Agent服务、行业AI解决方案的支持，并推出了API优速模式（Prime）、Agent Studio等新功能。开发者可通过更细粒度的资源选项（如吞吐预留）和可视化工具，降低构建和部署生产级AI代理的工程门槛。",
+      "image": null,
+      "publishedAt": "2026-09-23T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.163.com/dy/article/L7GNLIVS0550WHYR.html",
+      "detailPath": "articles/792c4cd2c45ca34394ec704f.json"
+    },
+    {
+      "id": "e53ea1919124639bf36e93af",
+      "title": "GPT-6 Astra 实战案例：将研究型 Agent 的任务时间和成本减半",
+      "summary": "OpenAI 发布了一个客户案例，显示 AI 智能体开发公司 Parallel 在使用 GPT-6 Astra 后，其研究型智能体在整合劳动市场数据等复杂任务上，将完成所需时间和代码成本都减少了一半。这主要得益于 Astra 更精准的搜索查询能力和更高效的多步推理，能以更少的步骤获得高质量答案。对于开发者而言，这提供了 GPT-6 系列模型在复杂、多步骤 Agent 工作流中提升效率与降低成本的实证参考，特别是涉及网络搜索和信息整合的场景。",
+      "image": null,
+      "publishedAt": "2026-09-22T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://openai.com/zh-Hant/index/parallel-cuts-time-and-cost-with-astra",
+      "detailPath": "articles/e53ea1919124639bf36e93af.json"
+    },
+    {
       "id": "0ca80540842a01f9f47a8ee4",
       "title": "Anthropic 发布 Claude Opus 5.5，优化 Agent 任务成本与控制性",
       "summary": "Anthropic 发布了 Claude 5.5 家族的首个模型 Claude Opus 5.5。该模型针对长时间运行的 AI Agent 和知识型工作流进行了优化，宣称在多数任务上能达到顶级模型 Fable 5.1 的性能水平，同时将典型工作负载的执行成本相比 Opus 5 降低了 40%。API 价格也相应下调了 20%。对于开发者，这意味着在构建需要长上下文、可靠执行的 Agent 时，有了一个在性价比和控制性上更具吸引力的选项，但需注意其 API 在工具强制使用、特定领域访问等方面设置了更严格的约束。",

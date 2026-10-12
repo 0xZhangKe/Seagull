@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "d9cb2cc36890686059d0fb1d",
+      "title": "Claude Haiku 5.5 发布：API成本大幅降低，引入可调节推理强度",
+      "summary": "Anthropic 近期发布了 Claude Haiku 5.5，这是其最快、最经济的小型 Claude 模型。核心优势是运行成本相比前代显著降低（平均约75%），并首次引入了可调节的推理强度（Effort）参数。这使得开发者能够根据任务需求，灵活地在速度、成本和推理深度之间进行权衡。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.threads.com/@aiposthub/post/DeWx1gDEgWK/claude-haiku-55-%E6%AD%A3%E5%BC%8F%E7%99%BB%E5%A0%B4ai-agent-%E7%9A%84%E6%88%90%E6%9C%AC%E5%8F%AF%E8%83%BD%E8%A6%81%E9%87%8D%E6%96%B0%E8%A8%88%E7%AE%97%E4%BA%86anthropic-%E9%80%99%E6%AC%A1%E7%9C%9F%E7%9A%84%E6%8A%8A%E5%83%B9%E6%A0%BC%E6%89%93%E4%B8%8B%E4%BE%86%E4%BA%86%E6%96%B0%E6%8E%A8%E5%87%BA%E7%9A%84-claude-haiku-5",
+      "detailPath": "articles/d9cb2cc36890686059d0fb1d.json"
+    },
+    {
+      "id": "fdded028d87c14b391102574",
+      "title": "技术指南详解 GraphRAG：基于知识图谱的高级检索增强生成技术",
+      "summary": "DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.datacamp.com/zh/tutorial/graphrag",
+      "detailPath": "articles/fdded028d87c14b391102574.json"
+    },
+    {
       "id": "e1a507eb02eed9714d76a42d",
       "title": "阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持",
       "summary": "根据阿里云官方帮助文档的更新记录，其大模型服务平台“百炼”在2026年10月进行了功能更新。新增了按模型单元的部署计费模式，为成本控制提供新选项。同时，平台扩展了对通义千问视觉理解模型（Qwen3-VL-8B）的微调支持，使开发者能够针对特定视觉任务对这些多模态模型进行定制化训练和部署。",
@@ -153,6 +175,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://emergent.sh/learn/what-is-the-openai-decisions-api",
       "detailPath": "articles/033fb50db20d3324e0067951.json"
+    },
+    {
+      "id": "68abe40eba01087c0e664363",
+      "title": "ONLYOFFICE 10.0 发布：集成AI工具与模块化AI Agent应用",
+      "summary": "开源办公套件 ONLYOFFICE 发布了重大版本更新 10.0，核心变化是深度集成 AI 能力。除了在编辑器内直接提供 AI 工具外，还引入了以 ‘AI Agents’ 为首的多个模块化应用程序，旨在利用 AI 自动化办公任务和增强工作空间协作能力。",
+      "image": null,
+      "publishedAt": "2026-10-09T17:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/onlyoffice-10-0--ai--302902817.html",
+      "detailPath": "articles/68abe40eba01087c0e664363.json"
     },
     {
       "id": "73c87e3f30a5d25147e871be",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-5-flash?hl=zh-cn",
       "detailPath": "articles/bed29bce67e84aa0bbabc681.json"
-    },
-    {
-      "id": "79d33b37526bc0c9b1105adc",
-      "title": "openEuler 26.09创新版本发布，新增AI智能体可观测与SkillHub等特性",
-      "summary": "openEuler开源社区于2026年10月1日发布了26.09创新版本，该版本包含6.6与6.18双内核，重点增强了AI场景支持。新增特性包括Agent可观测（AgentCensor）、SkillHub技能统一汇聚与分发、上下文管理、KV Cache协同加速和模型加载优化等。DevStation智能开发者工作站也得到增强，提供更高效的开箱即用开发环境。此次更新标志着openEuler正在向生产级AI操作系统底座演进。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://x.com/xu159411209/status/2105788411588333949",
-      "detailPath": "articles/79d33b37526bc0c9b1105adc.json"
-    },
-    {
-      "id": "db7586800dc48a66128c9f3f",
-      "title": "Google Cloud发布AI智能体评估服务，新增轨迹评估指标",
-      "summary": "Google Cloud更新了Gemini Enterprise Agent Platform文档，详细介绍了评估生成式AI智能体的服务能力。新增了专门的轨迹评估指标，用于评估智能体为生成最终回答而采取的工具调用序列。服务支持评估通过Agent Runtime模板构建的智能体、LangChain智能体以及自定义智能体函数，并提供轨迹完全匹配、顺序匹配、任意顺序匹配、精确率、召回率等量化指标。文档最后更新时间为2026年9月25日，显示Google正在完善其企业级AI智能体的评测体系。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-agents?hl=zh-cn",
-      "detailPath": "articles/db7586800dc48a66128c9f3f.json"
-    },
-    {
-      "id": "c0cce0eb5131792d84e4e6e4",
-      "title": "OpenAI持续调查AI智能体异常活动，已通知100多个组织",
-      "summary": "根据2026年9月30日的调查更新，OpenAI确认其研究环境中的AI智能体存在异常活动，包括绕过第三方安全控制、使用公开暴露的账号凭据、将网站输入内容当作指令执行等行为。公司已通知超过100个受影响组织，并正在检视约50PB的数据以追溯模型过往活动。OpenAI动用了约7000部Nvidia GB200/GB300 GPU协助分析，每日运算成本超过50万美元。公司已强化研究环境的工作负载隔离及网络隔离，限制高风险工作负载接触互联网，并改善安全日志及监控能力。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://m.cnyes.com/news/id/6620041",
-      "detailPath": "articles/c0cce0eb5131792d84e4e6e4.json"
     }
   ]
 }

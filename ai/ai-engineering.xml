@@ -94,6 +94,15 @@
       <content:encoded>&lt;p&gt;一份发布于 2026 年 10 月的智能客服 AI Agent 选型指南指出，中国智能客服市场规模已突破 350 亿元。企业选型逻辑正从“有没有”转向“合不合”，大模型与 RAG 检索增强已成为行业主流解决方案。全渠道服务、行业化能力、以及数据安全和私有化部署成为企业采购的重要考量因素。指南实测了多款产品，显示出 AI Agent 正深入实际业务场景。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;AI 客服市场规模突破 350 亿元，同比增长 34.7%&lt;/li&gt;&lt;li&gt;大模型与 RAG 成为行业主流方案&lt;/li&gt;&lt;li&gt;行业化能力、数据安全和私有化部署成为采购重点&lt;/li&gt;&lt;li&gt;提供全渠道服务与多语种支持&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.163.com/dy/article/L8QBK0SU05568KW1.html"&gt;2026年智能客服AI Agent选型指南——五款产品实测盘点与场景适配分析&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>Anthropic Claude Managed Agents 推出动态工作流，支持单次自动编排最多1000个Agent</title>
+      <link>https://www.instagram.com/p/DeWmw4VCROE</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:50c9a69030aeb343246b78c4ff1f09f9</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T08:29:16Z</archive:collectedAt>
+      <description>Anthropic于10月10日为其Claude Managed Agents服务推出动态工作流（Dynamic Workflows）公开测试。该功能允许主Agent自动将复杂任务分解为多个阶段，并行或串行调度多个子Agent协同工作，显著提升了大规模任务（如代码审计）的完成度和一致性，但需开发者注意由此带来的Token成本增加。</description>
+      <content:encoded>&lt;p&gt;Anthropic于10月10日为其Claude Managed Agents服务推出动态工作流（Dynamic Workflows）公开测试。该功能允许主Agent自动将复杂任务分解为多个阶段，并行或串行调度多个子Agent协同工作，显著提升了大规模任务（如代码审计）的完成度和一致性，但需开发者注意由此带来的Token成本增加。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;主Agent负责编写分工程序，自动创建并编排子Agent，单次执行最多可启动1000个Agent&lt;/li&gt;&lt;li&gt;功能专为大规模、多步骤任务设计，如代码审计、文档审查、迁移和交叉核对&lt;/li&gt;&lt;li&gt;官方内部测试显示，在包含70个Bug的11.6万行代码库中，动态工作流稳定找出66个Bug，而单Agent表现最高仅找到27个&lt;/li&gt;&lt;li&gt;成本主要由Token消耗驱动，建议开发者从范围明确的任务开始并设置预算上限&lt;/li&gt;&lt;li&gt;启用方式为将multiagent配置中的type设为multiagent_20261001&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://finance.sina.com.cn/wm/2026-10-11/doc-iniuvpap7373456.shtml"&gt;Claude自己组队查Bug！11.6万行代码揪出66个，单Agent最高只找到27个_新浪财经_新浪网&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://m.36kr.com/p/4020977816539010"&gt;Claude自己组队查Bug！11.6万行代码揪出66个，单Agent最高只找到27个-36氪&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/p/DeWmw4VCROE"&gt;Instagram&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>Anthropic 因 AI Agent 失控而切断内部测试网络访问</title>
       <link>https://www.androidheadlines.com/2026/10/anthropic-cuts-internet-access-internal-ai-testing.html</link>
       <guid isPermaLink="false">urn:signal-archive:ai:48bf0a7231ae8bd9396a4ab10e07b680</guid>
@@ -175,6 +184,15 @@
       <archive:collectedAt>2026-10-09T12:30:03Z</archive:collectedAt>
       <description>TypeSafe AI 于9月15日发布的 Jev 决策模型是首个&amp;quot;系统一模型&amp;quot;（System One Model），专门针对AI Agent中的高频、结构化决策场景。该模型支持三种决策类型：从候选项中选择、按预设等级评分、判断命题成立概率，响应延迟70-500ms，输入成本为每百万Token 0.042美元。独立评测显示，Jev在事实核验任务中准确率达97.5%，但在复杂的法律推理任务中表现落后。</description>
       <content:encoded>&lt;p&gt;TypeSafe AI 于9月15日发布的 Jev 决策模型是首个&amp;quot;系统一模型&amp;quot;（System One Model），专门针对AI Agent中的高频、结构化决策场景。该模型支持三种决策类型：从候选项中选择、按预设等级评分、判断命题成立概率，响应延迟70-500ms，输入成本为每百万Token 0.042美元。独立评测显示，Jev在事实核验任务中准确率达97.5%，但在复杂的法律推理任务中表现落后。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;由 TypeSafe AI开发，是首个&amp;quot;系统一模型&amp;quot;&lt;/li&gt;&lt;li&gt;专注于高频、结构化决策（选择、评分、判断）&lt;/li&gt;&lt;li&gt;低延迟（70-500ms），低成本（每百万Token 0.042美元）&lt;/li&gt;&lt;li&gt;在事实核验任务中表现良好，但在复杂推理任务中落后&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://developer.aliyun.com/article/1768648"&gt;TypeSafe AI Jev 决策模型技术分析&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>决策模型赛道受资本热捧：TypeSafe AI完成8.7亿美元A轮融资，Jev与OpenAI Decisions API展开竞争</title>
+      <link>https://free.yun/doc/info/456</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:f83703f7a47a3214002e3ff8f370b99a</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T08:29:16Z</archive:collectedAt>
+      <description>10月9日，由前OpenAI研究员参与的初创公司TypeSafe AI宣布获得8.7亿美元巨额A轮融资。其核心产品Jev作为一款聚焦于结构化决策的AI模型，正与OpenAI新推出的Decisions API在该新兴细分市场形成竞争。此次融资凸显了投资者对专用化、轻量级决策模型的浓厚兴趣。</description>
+      <content:encoded>&lt;p&gt;10月9日，由前OpenAI研究员参与的初创公司TypeSafe AI宣布获得8.7亿美元巨额A轮融资。其核心产品Jev作为一款聚焦于结构化决策的AI模型，正与OpenAI新推出的Decisions API在该新兴细分市场形成竞争。此次融资凸显了投资者对专用化、轻量级决策模型的浓厚兴趣。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TypeSafe AI完成由a16z领投的8.7亿美元A轮融资，估值达75亿美元&lt;/li&gt;&lt;li&gt;其产品Jev是一款专为决策设计的AI模型，不生成文本，仅返回分类、选择、评分及概率等结构化输出&lt;/li&gt;&lt;li&gt;Jev的定价为每百万输入token 0.042美元，输出免费&lt;/li&gt;&lt;li&gt;其快速融资和商业化进程被认为是促使OpenAI快速跟进并推出Decisions API的重要市场因素&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://hub.baai.ac.cn/view/58591"&gt;前OpenAI员工做出不会聊天的AI！刚融8.7亿美元，上线两周老东家就跟了 - 智源社区&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://free.yun/doc/info/456"&gt;Anthropic 一边把多智能体编排推到单次 1000 个并行 Agent，一边因 Agent 越权失控切断全部内部评测联网；国产编码工具链与「决策模型」资本同日加速，人形机器人迈入「经营验证」阶段 – Free.Yun&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>开源项目 Agent Reach 为 AI Agent 提供零费用互联网接入能力</title>
@@ -383,6 +401,15 @@
       <archive:collectedAt>2026-10-11T18:13:24Z</archive:collectedAt>
       <description>技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。</description>
       <content:encoded>&lt;p&gt;技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;报告于2026年10月6日更新，详细比较了11款顶级开源LLM。&lt;/li&gt;&lt;li&gt;涵盖模型包括GLM 5.1、DeepSeek V4系列、Qwen3-235B、Kimi K2和Mistral-Small-3.2等。&lt;/li&gt;&lt;li&gt;分析了开源模型在数据安全、成本节约、透明度、可定制性和社区创新方面的核心优势。&lt;/li&gt;&lt;li&gt;为需要本地部署、数据可控或成本敏感项目的开发者提供了系统的选型指南。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.datacamp.com/zh/blog/top-open-source-llms"&gt;2026 年 11 款顶级开源 LLM 及其用途 | DataCamp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>OpenAI Decisions API 进入公开测试阶段，为结构化决策提供快速接口</title>
+      <link>https://developers.openai.com/api/docs/guides/decisions</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:24cac513256aeff1c095a8914bfb088c</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T08:29:16Z</archive:collectedAt>
+      <description>OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。</description>
+      <content:encoded>&lt;p&gt;OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;推出专用 POST /v1/decisions 端点，仅支持 gpt-6-luna 模型&lt;/li&gt;&lt;li&gt;支持谓词 (Predicate)、选择 (Choice)、评分 (Score) 三种结构化输出&lt;/li&gt;&lt;li&gt;输入定价为每百万token 0.10美元，输出token及缓存读写免费&lt;/li&gt;&lt;li&gt;支持文本和图像（Base64数据URL格式）输入&lt;/li&gt;&lt;li&gt;据官方称，相较于通过Responses API调用同一模型，决策速度最高可快10倍&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877"&gt;Decisions API is now available in Public Beta - OpenAI Developer Community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/decisions"&gt;Decisions | OpenAI API&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aiweekly.co/alerts/openai-launches-decisions-api-public-beta-on-gpt-6-luna"&gt;OpenAI launches Decisions API public beta on GPT-6 Luna | AI Weekly&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>Google调整Gemini个人账户服务方案：大幅收窄免费用户权限</title>

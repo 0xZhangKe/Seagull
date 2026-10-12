@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "c9c4228429274f86d94c3c87",
+      "title": "Coffee Break Clojure, Async",
+      "summary": "上一篇 我提及了如何用 Ring 开发 HTTP 服务器，也提到 Ring 提供了同步 API 和异步 API。那么，什么是异步编程？为什么需要异步？在什么情况下需要让一个程序同时做很多事情？ 同步、异步、并发和并行 同步（synchronization）的中文名字可能会让人误以为是多个实体同时进行操作，实际上同步的意思是指系统中所有事件都依照相同的顺序进行协调。可以用工厂流水线举例，假如流水线中一个工人需要等上一个工人交付一部分工作之后才能干活，整个流水线都要所有人一起干活才能转动起来，这个流水线就是同步的。反之，假如某些工作可以分开做，比如一部分人负责生产 A 零件，另一部分人负责生产 B 零件，两者互不干扰，而最终把 A 和 B 组装在一起的又是另一拨人，这个系统就是异步的（asynchronous）。…",
+      "image": null,
+      "publishedAt": "2026-10-12T15:48:37Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj7/",
+      "detailPath": "articles/c9c4228429274f86d94c3c87.json"
+    },
+    {
+      "id": "844b7d6332bb68869f3f8e5e",
+      "title": "按摩",
+      "summary": "距離高中畢業已經四年了，我覺得我變了很多，但也沒變。沒變的是什麼我也說不清，但我清楚有些在意的事情我還是沒完全妥協，只是我覺得我已經社會化很多了。感覺寫到這邊是不是可以接一些什麼情感澎湃的感觸文字，但我覺得現在感受是很平淡的，只覺得時間過得既快又慢，天知道這個人到底在說什麼。明年對我來說很重要到最近放假都覺得不是很輕鬆，我覺得我該好好停下來一下了。至少在這篇的文字中把自己的感受放在第一位。我記得我有幾篇文章有提到一個感覺，但覺得當時詞不達意。那個感覺隨時間累積，我慢慢有抓到一點神韻，簡單、露骨地說，就是我排斥因為部落格的公開性，讓我對自己的文字不誠實，但這個不誠實不是說我編造謊言，而是因為太顧慮別人的想法，而太過修飾文字。所以剛好現在疲憊的心，打字就像按摩般，答答答下去，不要想太多。 說起來我現在整個人是很謎…",
+      "image": null,
+      "publishedAt": "2026-10-12T14:57:21Z",
+      "sourceId": "9bbc7d640e2bc143",
+      "sourceTitle": "RayrrrrrR",
+      "link": "https://rayrrrrrrr.bearblog.dev/6842/",
+      "detailPath": "articles/844b7d6332bb68869f3f8e5e.json"
+    },
+    {
+      "id": "817a4a96e810f50737891ab8",
+      "title": "HTML里的“宏”",
+      "summary": "摊牌了，分享两个极少有人知道的技巧。 观察下面的网页 https://lab.est.im/xhtml/ 有没有发现神奇之处 <?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE html [ <!ENTITY my_symbol \"★\"> <!ENTITY wikipedia '<img height=\"14\" src=\"https://en.wikipedia.org/favicon.ico\" alt=\"Wikipedia\" />'> ]> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <title>Entity test</title> </head> <body> <p>hey &my_symbol;…",
+      "image": "https://www.mi.com/favicon.ico",
+      "publishedAt": "2026-10-12T13:29:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-40",
+      "detailPath": "articles/817a4a96e810f50737891ab8.json"
+    },
+    {
       "id": "4b4972e85e07433bcab303e0",
       "title": "曼努的字型搜尋引擎",
       "summary": "大部分我們遇到的問題，都有其他人碰過了。通常搜尋一下就能看到有人分享怎麼解決問題。 記錄一下最近發現的酷東西： 免費中文字型速查表 - 懶惰的權利 懶惰的權利 是由「字型推坑專員」的曼努出於興趣而做的網站，不只有很豐富的字型跟設計相關知識文章，也有曼努個人關於生活的 blog。我是在陳建中的 〈有關「字嶼」—劣跡中國字體公司的捲土重來〉 這篇文章裡發現的。 在曾經整天做報告跟投影片的大學時期，我也收集過很多可以免費自由使用的電腦中文字型。那時開始就很喜歡看 justfont blog 的各種關於「字」的知識教學文章 1 ，也會固定收聽他們的 Podcast 節目 《字型腦補 A Knob of Font》 ，從中學習過不少關於字型和排版與一點點設計相關的知識。 那時候如果用 Google 搜尋「簡報 中文字體…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Noa's Blog",
       "link": "https://noa.bearblog.dev/drunk-in-the-shade-of-flowers/",
       "detailPath": "articles/c216f34b04fdb1fd6497ed2f.json"
-    },
-    {
-      "id": "b100e07c8140aa6768f82a8a",
-      "title": "我不知道為什麼每個國家都一定要有國慶日",
-      "summary": "據說全世界幾乎所有的國家都有某種形式的國慶日（ national day ），而大不列顛暨北愛爾蘭聯合王國是少數的例外之一。看到這個說法，我的第一個反應是：「果然還是英國的頻率跟我比較合！」我一直很不解，為什麼每個國家都要搞什麼國慶日。請問上帝有規定國家一定要制定國慶日嗎？不然是誰規定的？沒有國慶日會怎樣嗎？英國人現在也沒有什麼國慶日，他們還不是活得好好的？ 頻率 合不合的問題，常常讓人感受很深，可是卻不容易理解或表達。平常遇到的人，有些也不是說他們有什麼問題或做不好的地方，可是我們就是看不順眼。看書的時候，如果讀到頻率不合的作者，就連他們的每個標點符號都是討厭的。我總是想：「明明你的想法都是對的，為什麼一定要這麼莫名地討人厭呢⁈害我無法接受你的想法！」另一方面，一般來說，遇到看不懂的東西，通常會覺得很討厭、…",
-      "image": null,
-      "publishedAt": "2026-10-10T06:02:08Z",
-      "sourceId": "7a1943e37d846c5c",
-      "sourceTitle": "我的部落格",
-      "link": "https://e89295.com/blog/2026-10-10.html",
-      "detailPath": "articles/b100e07c8140aa6768f82a8a.json"
-    },
-    {
-      "id": "7ae96fded40172762685e366",
-      "title": "好记性不如烂笔头",
-      "summary": "现在真的容易忘事儿",
-      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/sol/kelly-sikkema-mz5d2t5rvg4-unsplash.webp",
-      "publishedAt": "2026-10-10T05:42:54Z",
-      "sourceId": "05ada84875558017",
-      "sourceTitle": "So!azy",
-      "link": "https://blog.solazy.me/20261009/",
-      "detailPath": "articles/7ae96fded40172762685e366.json"
-    },
-    {
-      "id": "3f6f50db9bc76f3851e3242c",
-      "title": "越界，這些店不能去了！",
-      "summary": "便當店 # 中午或晚上常去的便當店， 上次 老闆娘才突然問我是不是大學生，這次再去的時候，包完便當給我時，瞥見我一眼後說：「是你啊！！」 「啊，嗯對，我被妳記住了啊…。」 妳越界了！！！ （但如果要介紹女兒給我認識的話那可以，喂～） 小吃店 # 半夜肚子餓，我都會去吃一家 24 小時不打烊的小吃店。 印象中那個店員才來做一個月左右吧，最近一次走進去她沒看著我，但開口問：「爌肉飯嗎？」 我愣了一下：「對。」 接著店員抬頭看我：「嘿嘻嘻～（飆高音）」 妳越界了！！！ 只去兩次的另一家便當店 # 第一次去，老闆娘一直要跟我聊天，彷彿在身家調查，想把我摸個透。 由於印象中覺得還算好吃，就去了第二次，結果接著說她女兒怎樣怎樣的，饒了一圈後跟我要聯絡方式。 我寫了我沒在用的 IG 帳號，拿了餐點拔腿就跑。 真越界了！！！…",
-      "image": "https://eddielv.com/musings/clerk-cross-line/%E7%88%B2%E4%BB%80%E9%BA%BC%E4%BD%A0%E6%9C%83%E5%92%8C%E6%88%91%E5%AA%BD%E4%B8%80%E8%B5%B7%E7%8E%A9%E8%87%AA%E6%8B%8D%E9%98%BF.png",
-      "publishedAt": "2026-10-10T05:23:47Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/clerk-cross-line/",
-      "detailPath": "articles/3f6f50db9bc76f3851e3242c.json"
     }
   ]
 }

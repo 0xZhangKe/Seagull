@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "817a4a96e810f50737891ab8",
+      "title": "HTML里的“宏”",
+      "summary": "摊牌了，分享两个极少有人知道的技巧。 观察下面的网页 https://lab.est.im/xhtml/ 有没有发现神奇之处 <?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE html [ <!ENTITY my_symbol \"★\"> <!ENTITY wikipedia '<img height=\"14\" src=\"https://en.wikipedia.org/favicon.ico\" alt=\"Wikipedia\" />'> ]> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <title>Entity test</title> </head> <body> <p>hey &my_symbol;…",
+      "image": "https://www.mi.com/favicon.ico",
+      "publishedAt": "2026-10-12T13:29:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-40",
+      "detailPath": "articles/817a4a96e810f50737891ab8.json"
+    },
+    {
       "id": "61387542b838e626abc0b4a3",
       "title": "浏览器点2下就能让小爱音箱播放http音乐！",
       "summary": "还在被 冈易 QQ 音乐困扰吗，让小爱同学播放NAS上的歌需要几步？ https://est.github.io/play2mi/ 装个书签，点两下就行。不需要下载软件，不需要第三方服务器 期间还是碰壁了不少的。也学到不少东西。小米音箱以前应该是openwrt魔改 ubus 控制，后来都改成 Android 了。 这一分裂也导致它内部有两套API接口。一个是 sid=micoapi 一个是 sid=xiaomiio ，前者跑在 小爱云 Mina api2.mina.mi.com ，后者跑在 米家 IoT 云 api.io.mi.com/app 和 api.mijia.tech/app 这次就简单做了 Mina (micoapi) 的支持 能放歌，能 TTS 就行了。要扩展等有缘人吧。 期间搞出来个巨搞笑的插曲…",
@@ -34,17 +45,6 @@
       "detailPath": "articles/fc9b056e55f8e537274e0cf5.json"
     },
     {
-      "id": "a9fcb83dde9f3684afe406c9",
-      "title": "Register Token以及对变形金刚AI的四大批判",
-      "summary": "前几天 Yann LeCun 对 变形金刚(transformers) AI 进行了深刻的 批判 First, the reasoning abilities of current AI systems are based non-auto-regressive search (which is what I have always advocated for). But AFAICT, they do it in token space, which is limited and inefficient. I have claimed that human-like reasoning must be a search in continuous representation space. It looks…",
-      "image": null,
-      "publishedAt": "2026-09-23T12:21:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdin-19",
-      "detailPath": "articles/a9fcb83dde9f3684afe406c9.json"
-    },
-    {
       "id": "c4da6bbf480b492ea97ba4ec",
       "title": "聪明 Agent 四套路 和 人肉学习",
       "summary": "nVIDIA 联合 NTU，MIT 联合研究了一项关于 Agent harness 自我提升的 研究 ，项目叫 SoL-Pi ， Scaling Auto-Research Loops for Efficient Agent Harnesses 让 Research Agent 自动发现 Harness 里的 Token 浪费，再通过大规模实验筛掉无效改法。把结论再放进大量环境中反复测试。整个探索一共 152 个候选方向，分成 context、progress、tools、delegation、prompt/policy、improvement/evaluation 六类，然后把这些想法扔进大量相互隔离的 research lineage 里，让 agent 自己观察 trajectory、提出机制、实现、r…",
@@ -54,6 +54,17 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stdin-18",
       "detailPath": "articles/c4da6bbf480b492ea97ba4ec.json"
+    },
+    {
+      "id": "a9fcb83dde9f3684afe406c9",
+      "title": "Register Token以及对变形金刚AI的四大批判",
+      "summary": "前几天 Yann LeCun 对 变形金刚(transformers) AI 进行了深刻的 批判 First, the reasoning abilities of current AI systems are based non-auto-regressive search (which is what I have always advocated for). But AFAICT, they do it in token space, which is limited and inefficient. I have claimed that human-like reasoning must be a search in continuous representation space. It looks…",
+      "image": null,
+      "publishedAt": "2026-09-23T12:21:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdin-19",
+      "detailPath": "articles/a9fcb83dde9f3684afe406c9.json"
     },
     {
       "id": "b6574966f7597daeb1c16cdb",
@@ -208,17 +219,6 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stdout-27",
       "detailPath": "articles/355aa587e510316838e8072c.json"
-    },
-    {
-      "id": "ffd31e75b3a1319437d85f47",
-      "title": "写作能力和 locate cost",
-      "summary": "自从自个儿琢磨出 locate cost 之后便开始关注这方面问题。最近看到两篇喷 harness 问题的 第一个是 Can Bölük https://blog.can.ac/2026/02/12/the-harness-problem/ 今年2月的时候发现： Codex uses apply_patch : It takes a string as input, which is essentially an OpenAI-flavored diff, and instead of relying on a structured schema, the harness just expects this blob to follow a strict set of rules Claude Code (a…",
-      "image": null,
-      "publishedAt": "2026-07-09T15:01:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stderr-24",
-      "detailPath": "articles/ffd31e75b3a1319437d85f47.json"
     }
   ]
 }

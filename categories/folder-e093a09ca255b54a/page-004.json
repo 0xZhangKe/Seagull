@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "1f06899e4a5c2f8eb158bc31",
+      "title": "Fragile passengers",
+      "summary": "I tolerate longer lines when buying coffee than I do when going through the airport. Why? I got a push notification at 5:15 this morning on the dot: “Your Lyft has arrived. Gabe will wait for 5 minutes.” Right on time. We crossed town, and then crossed",
+      "image": null,
+      "publishedAt": "2023-03-21T14:14:14Z",
+      "sourceId": "9829335e65b056c5",
+      "sourceTitle": "Second Breakfast",
+      "link": "https://www.secondbreakfast.co/p/fragile-passengers/",
+      "detailPath": "articles/1f06899e4a5c2f8eb158bc31.json"
+    },
+    {
       "id": "4a8d30838241d2b37db97a06",
       "title": "Finding Java Thread Leaks With JDK Flight Recorder and a Bit Of SQL",
       "summary": "The other day at work, we had a situation where we suspected a thread leak in one particular service, i.e. code which continuously starts new threads, without taking care of ever stopping them again. Each thread requires a bit of memory for its stack space, so starting an unbounded number of threads can be considered as a form of memory leak, causing your a…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Weishu's Notes",
       "link": "http://weishu.me/2021/09/26/start-to-use-Rust/",
       "detailPath": "articles/e81dbfe92f142010f7620b4c.json"
-    },
-    {
-      "id": "8b96460f8013af0cf6990b99",
-      "title": "何为 root？",
-      "summary": "对于搞机党或者开发人员来说，root 一定是一个不陌生的名词。在 [当我们谈论解锁 BootLoader 时，我们在谈论什么？] 一文中我们了解到，解锁 Bootloader 实际上能做到的是 让手机可以运行第三方的操作系统 ，而通常来说，我们给手机解锁 Bootloader 就是为了获取 Root 权限。那么， 何为 root? ，解锁 Bootloader 和 root 到底有什么联系和区别？ In Unix-like computer OSes (such as Linux), root is the conventional name of the user who has all rights or permissions (to all files and programs) in all mod…",
-      "image": "http://blog.dimenspace.com/mweb/16315184085155.jpg",
-      "publishedAt": "2021-09-13T07:46:01Z",
-      "sourceId": "f201da3c5c0d5f33",
-      "sourceTitle": "Weishu's Notes",
-      "link": "http://weishu.me/2021/09/13/what-is-root/",
-      "detailPath": "articles/8b96460f8013af0cf6990b99.json"
     }
   ]
 }

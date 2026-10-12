@@ -5,6 +5,22 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>Claude Haiku 5.5 发布：API成本大幅降低，引入可调节推理强度</title>
+      <link>https://www.threads.com/@aiposthub/post/DeWx1gDEgWK/claude-haiku-55-%E6%AD%A3%E5%BC%8F%E7%99%BB%E5%A0%B4ai-agent-%E7%9A%84%E6%88%90%E6%9C%AC%E5%8F%AF%E8%83%BD%E8%A6%81%E9%87%8D%E6%96%B0%E8%A8%88%E7%AE%97%E4%BA%86anthropic-%E9%80%99%E6%AC%A1%E7%9C%9F%E7%9A%84%E6%8A%8A%E5%83%B9%E6%A0%BC%E6%89%93%E4%B8%8B%E4%BE%86%E4%BA%86%E6%96%B0%E6%8E%A8%E5%87%BA%E7%9A%84-claude-haiku-5</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:c34b8f7a204c4c17d3d6bd25c7a79301</guid>
+      <archive:collectedAt>2026-10-12T06:29:05Z</archive:collectedAt>
+      <description>Anthropic 近期发布了 Claude Haiku 5.5，这是其最快、最经济的小型 Claude 模型。核心优势是运行成本相比前代显著降低（平均约75%），并首次引入了可调节的推理强度（Effort）参数。这使得开发者能够根据任务需求，灵活地在速度、成本和推理深度之间进行权衡。</description>
+      <content:encoded>&lt;p&gt;Anthropic 近期发布了 Claude Haiku 5.5，这是其最快、最经济的小型 Claude 模型。核心优势是运行成本相比前代显著降低（平均约75%），并首次引入了可调节的推理强度（Effort）参数。这使得开发者能够根据任务需求，灵活地在速度、成本和推理深度之间进行权衡。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API 成本大幅降低：输入价格降至每百万令牌 $0.10，输出为 $0.50，相比 Haiku 4.5 单位价格下降约90%&lt;/li&gt;&lt;li&gt;引入可调节的推理强度（Effort）：允许开发者根据任务复杂性动态调整推理计算量，以平衡速度、成本和输出质量&lt;/li&gt;&lt;li&gt;性能提升：模型速度更快，能力增强，适合高吞吐量任务&lt;/li&gt;&lt;li&gt;优化 AI Agent 工作流：可作为成本效益高的执行层，处理由大型模型（如 Opus、Sonnet）规划的大量重复性子任务&lt;/li&gt;&lt;li&gt;适用场景：大规模文档摘要、分类、客户支持查询、实时应用和成本敏感型 Agent 系统&lt;/li&gt;&lt;li&gt;对构建大规模自动化流程的开发者而言，可能需要重新评估模型调用策略以最大化性价比。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.threads.com/@aiposthub/post/DeWx1gDEgWK/claude-haiku-55-%E6%AD%A3%E5%BC%8F%E7%99%BB%E5%A0%B4ai-agent-%E7%9A%84%E6%88%90%E6%9C%AC%E5%8F%AF%E8%83%BD%E8%A6%81%E9%87%8D%E6%96%B0%E8%A8%88%E7%AE%97%E4%BA%86anthropic-%E9%80%99%E6%AC%A1%E7%9C%9F%E7%9A%84%E6%8A%8A%E5%83%B9%E6%A0%BC%E6%89%93%E4%B8%8B%E4%BE%86%E4%BA%86%E6%96%B0%E6%8E%A8%E5%87%BA%E7%9A%84-claude-haiku-5"&gt;Claude Haiku 5.5 正式登場！AI Agent 的成本可能要重新計算了！&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>技术指南详解 GraphRAG：基于知识图谱的高级检索增强生成技术</title>
+      <link>https://www.datacamp.com/zh/tutorial/graphrag</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:a32e8c7a497a9441697dd1bdd27d7219</guid>
+      <archive:collectedAt>2026-10-12T06:29:05Z</archive:collectedAt>
+      <description>DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。</description>
+      <content:encoded>&lt;p&gt;DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;传统 RAG 的局限：基于语义相似度的块检索，难以处理需要综合多个文档信息或进行多跳推理的复杂查询。&lt;/li&gt;&lt;li&gt;GraphRAG 的核心创新：构建一个全局知识图谱（实体为节点，关系为边），并利用社区发现算法对相关实体进行聚类，为每个社区生成摘要。&lt;/li&gt;&lt;li&gt;解决全局查询：通过 map-reduce 方式整合各社区摘要，而非检索海量片段，能回答关于整个语料库的宏观问题（如“主要趋势是什么？”）。&lt;/li&gt;&lt;li&gt;支持多跳推理：系统可以沿着知识图谱中的连接路径（边）遍历，追踪分散在不同文档中的关联概念。&lt;/li&gt;&lt;li&gt;对比权衡：GraphRAG 在全局查询和多跳推理上更强，但索引成本（需要实体抽取、图构建、聚类）远高于仅生成嵌入的传统 RAG。&lt;/li&gt;&lt;li&gt;适用场景：更适合处理主题性强、实体关系紧密的领域知识库，而传统 RAG 更适用于简单事实查询和小型语料库。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.datacamp.com/zh/tutorial/graphrag"&gt;GraphRAG：基于图的检索增强生成 | DataCamp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持</title>
       <link>https://help.aliyun.com/zh/model-studio/model-release-notes</link>
       <guid isPermaLink="false">urn:signal-archive:ai:d3c80df966ebcfebcc1b552a70c8dee3</guid>
@@ -117,6 +133,15 @@
       <archive:collectedAt>2026-10-09T22:11:45Z</archive:collectedAt>
       <description>OpenAI的Decisions API已进入公开测试阶段，该API专注于快速、类型化的决策任务。开发者可定义问题（如检查图像损坏、选择部门分类或评估严重性等级），API返回可直接被代码使用的概率、选择或评分，无需解析文本。</description>
       <content:encoded>&lt;p&gt;OpenAI的Decisions API已进入公开测试阶段，该API专注于快速、类型化的决策任务。开发者可定义问题（如检查图像损坏、选择部门分类或评估严重性等级），API返回可直接被代码使用的概率、选择或评分，无需解析文本。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Decisions API是OpenAI推出的专用端点，用于返回类型化的答案（概率、选择或评分），而非生成文本&lt;/li&gt;&lt;li&gt;支持三种问题类型：谓词（真伪概率）、选择（从列表中选一）、评分（按有序等级评级）&lt;/li&gt;&lt;li&gt;基于GPT-6 Luna模型，输入成本为每100万tokens 0.10美元，输出完全免费&lt;/li&gt;&lt;li&gt;据OpenAI称，其速度比标准Responses API快约10倍&lt;/li&gt;&lt;li&gt;适用于内容分类、请求路由、工作优先级排序等应用程序的快速决策场景&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://emergent.sh/learn/what-is-the-openai-decisions-api"&gt;What Is the OpenAI Decisions API? How It Works, Pricing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers"&gt;OpenAI Decisions API Hits Public Beta&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>ONLYOFFICE 10.0 发布：集成AI工具与模块化AI Agent应用</title>
+      <link>https://www.prnewswire.com/apac/zh/news-releases/onlyoffice-10-0--ai--302902817.html</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:b3d549d9128f596b1e9913230990e686</guid>
+      <pubDate>Fri, 09 Oct 2026 17:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-12T06:29:05Z</archive:collectedAt>
+      <description>开源办公套件 ONLYOFFICE 发布了重大版本更新 10.0，核心变化是深度集成 AI 能力。除了在编辑器内直接提供 AI 工具外，还引入了以 ‘AI Agents’ 为首的多个模块化应用程序，旨在利用 AI 自动化办公任务和增强工作空间协作能力。</description>
+      <content:encoded>&lt;p&gt;开源办公套件 ONLYOFFICE 发布了重大版本更新 10.0，核心变化是深度集成 AI 能力。除了在编辑器内直接提供 AI 工具外，还引入了以 ‘AI Agents’ 为首的多个模块化应用程序，旨在利用 AI 自动化办公任务和增强工作空间协作能力。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;在文档、表格、演示文稿和PDF编辑器中集成了上下文感知的 AI 助手，用户无需离开文件即可进行创作、总结、翻译和格式化。&lt;/li&gt;&lt;li&gt;新增 ‘AI Agents’ 模块化应用：基于 MCP (Model Context Protocol) 服务器，提供智能搜索、个性化知识库和扩展推理功能，用于自动化工作空间任务。&lt;/li&gt;&lt;li&gt;同时推出了其他模块化应用：Forms（数据收集与分析）、Files（集中化文件存储与权限控制）、Rooms（安全协作与虚拟数据室）。&lt;/li&gt;&lt;li&gt;支持灵活的 AI 模型部署：云端版本通过 OpenRouter 提供，服务器版本可连接任何模型（包括本地私有模型），保障数据隐私。&lt;/li&gt;&lt;li&gt;安全性和功能增强：修复了35个漏洞，PDF编辑器新增元数据移除、自动表格识别等功能。&lt;/li&gt;&lt;li&gt;为开发者提供了在办公协作场景中集成 AI 能力的开源方案，支持私有化部署和数据控制。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.prnewswire.com/apac/zh/news-releases/onlyoffice-10-0--ai--302902817.html"&gt;ONLYOFFICE 10.0 為開源辦公套件帶來 AI 工具、模組化應用程式及更強安全防護&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>Anthropic推出面向开源软件的免费AI漏洞扫描服务OSS Scanner</title>

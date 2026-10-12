@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "7a4ed08e00cfb9df952e6aa3",
+      "title": "Codex 上云之后：可复用环境、Codex Security Cloud 与带 computer use 的 Agents API（DevDay 2026 拆解）",
+      "summary": "OpenAI DevDay 2026 发了 20 多项更新，其中三条讲的是同一件事：coding agent 的 harness 变成可以买、可以租的产品。本文拆解 Codex Cloud 的可复用环境、Codex Security Cloud 的扫描—验证—修复循环、Agents API 的 computer use 与多 agent，旁注 Decisions API，对照 Claude Cowork 云沙箱与本地 CLI，附选型清单。",
+      "image": null,
+      "publishedAt": "2026-10-12T08:45:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/openai-devday-codex-cloud-security-agents-api-2026/",
+      "detailPath": "articles/7a4ed08e00cfb9df952e6aa3.json"
+    },
+    {
+      "id": "bc63325b1b45e93b890eacbe",
+      "title": "Gemini Gems 11 月 17 日起变成 skills：专属助手拆成可叠加的斜杠指令，迁移前先查这几处",
+      "summary": "Google 宣布个人账号的 Gems 从 2026 年 11 月 17 日起自动迁成 skills，Workspace 2027 年 3 月、教育版 6 月跟进。本文对照两者的调用、叠加、文件、分享、年龄与平台差异，列出自动迁移不保证的部分和迁移前检查清单。",
+      "image": null,
+      "publishedAt": "2026-10-12T08:40:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/gemini-gems-to-skills-migration-2026/",
+      "detailPath": "articles/bc63325b1b45e93b890eacbe.json"
+    },
+    {
       "id": "e347158639f01bae5d84c379",
       "title": "一天 300 万个沙箱：DeepSeek DSec 怎么撑起 agent 强化学习的执行层（2026 综述）",
       "summary": "DeepSeek 公开 DSec：单个规模单元日均约 300 万个沙箱、峰值并发约 38 万。拆解 agent RL 为什么卡在执行层，DSec 在镜像分发、内存超卖、CPU 隔离、抢占恢复和防作弊上的做法，对照 AgentENV、E2B、Modal 等方案，附自建训练与评测环境清单。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Redreamality 博客 - 技术见解",
       "link": "https://redreamality.com/cn/blog/exactly-once-model-harness-tool-contract/",
       "detailPath": "articles/ccdfb8870664cb2a20b21b5d.json"
-    },
-    {
-      "id": "af3ce71d7f4b8710cb72296e",
-      "title": "Just Ask Jev：用 RLCD 做对齐失败的零样本检测",
-      "summary": "解读 arXiv:2609.29429 RLCDAlignBench：把 TypeSafe Jev（RLCD）推到 10 类对齐失败×44 基准，通用问句中位 AUROC 0.886，相对 LLM-judge 约便宜 63×；对照站内 rubric 评委文，给出 harness 监控接线清单。",
-      "image": null,
-      "publishedAt": "2026-09-27T08:40:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/just-ask-jev-rlcd-alignment-failure-detection/",
-      "detailPath": "articles/af3ce71d7f4b8710cb72296e.json"
-    },
-    {
-      "id": "ce9314d10f3a54fb8262f23b",
-      "title": "LLM Agents 可轻易篡改自身 Traces：审计完整性为何在主机内失败",
-      "summary": "解读 arXiv:2609.30266：多数本地 coding-agent harness 把 session trace 放在 agent 可写路径；直指令、恶意 skill、奖励压力下可删改伪造。需主机外独立 append-only 拦截。对照 Hard Stop 遏制动作 vs 遏制历史。",
-      "image": null,
-      "publishedAt": "2026-09-27T08:40:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/llm-agents-tamper-own-traces-append-only-audit/",
-      "detailPath": "articles/ce9314d10f3a54fb8262f23b.json"
     }
   ]
 }

@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-11T00:52:37+00:00</updated><author><name>Simon Willison</name></author><entry><title>Dwarf Fortress uses version control now</title><link href="https://simonwillison.net/2026/Oct/11/dwarf-fortress/" rel="alternate"/><published>2026-10-11T00:52:37+00:00</published><updated>2026-10-11T00:52:37+00:00</updated><id>https://simonwillison.net/2026/Oct/11/dwarf-fortress/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-12T18:15:38+00:00</updated><author><name>Simon Willison</name></author><entry><title>Hello Python 3.15, goodbye 3.10, and now I can use 3.11</title><link href="https://simonwillison.net/2026/Oct/12/python-3-15/" rel="alternate"/><published>2026-10-12T18:15:38+00:00</published><updated>2026-10-12T18:15:38+00:00</updated><id>https://simonwillison.net/2026/Oct/12/python-3-15/</id><summary type="html">
+    &lt;p&gt;Python 3.15 &lt;a href="https://www.python.org/downloads/release/python-3150/"&gt;is here&lt;/a&gt;! Here's the essential &lt;a href="https://docs.python.org/3.15/whatsnew/3.15.html"&gt;What's new in Python 3.15&lt;/a&gt; guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11.&lt;/p&gt;
+&lt;p&gt;First, some highlights from Python 3.15.&lt;/p&gt;
+&lt;h4 id="explicit-lazy-imports"&gt;Explicit lazy imports&lt;/h4&gt;
+&lt;p&gt;I'm most excited about &lt;a href="https://docs.python.org/3.15/whatsnew/3.15.html#pep-810-explicit-lazy-imports"&gt;Explicit lazy imports&lt;/a&gt; from &lt;a href="https://peps.python.org/pep-0810/"&gt;PEP 810&lt;/a&gt;. These let you import modules like so:&lt;/p&gt;
+&lt;pre&gt;&lt;span class="pl-s1"&gt;lazy&lt;/span&gt; &lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-s1"&gt;json&lt;/span&gt;
+&lt;span class="pl-s1"&gt;lazy&lt;/span&gt; &lt;span class="pl-k"&gt;from&lt;/span&gt; &lt;span class="pl-s1"&gt;pathlib&lt;/span&gt; &lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-v"&gt;Path&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;The module will then be imported the first time those symbols are used in the code that follows.&lt;/p&gt;
+&lt;p&gt;My &lt;a href="https://llm.datasette.io/"&gt;LLM&lt;/a&gt; CLI tool implements plugins. I had to &lt;a href="https://llm.datasette.io/en/stable/plugins/advanced-model-plugins.html#tip-lazily-load-expensive-dependencies"&gt;recommend manual lazy imports&lt;/a&gt; in the plugin author documentation, because simply installing plugins that used heavy dependencies such as &lt;code&gt;sentence_transformers&lt;/code&gt; could add multiple seconds to every invocation of the &lt;code&gt;llm&lt;/code&gt; command. Lazy imports directly address this startup cost.&lt;/p&gt;
+&lt;h4 id="unpacking-in-comprehensions"&gt;Unpacking in comprehensions&lt;/h4&gt;
+&lt;p&gt;The new &lt;code&gt;[*sublist for sublist in lists]&lt;/code&gt; unpacking syntax is neat. Here's an illustration &lt;a href="https://docs.python.org/3.15/whatsnew/3.15.html#pep-798-unpacking-in-comprehensions"&gt;lifted from the documentation&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;span class="pl-s1"&gt;lists&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; [[&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;], [&lt;span class="pl-c1"&gt;3&lt;/span&gt;, &lt;span class="pl-c1"&gt;4&lt;/span&gt;], [&lt;span class="pl-c1"&gt;5&lt;/span&gt;]]
+[&lt;span class="pl-c1"&gt;*&lt;/span&gt;&lt;span class="pl-c1"&gt;L&lt;/span&gt; &lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-c1"&gt;L&lt;/span&gt; &lt;span class="pl-c1"&gt;in&lt;/span&gt; &lt;span class="pl-s1"&gt;lists&lt;/span&gt;]
+&lt;span class="pl-c"&gt;# [1, 2, 3, 4, 5]&lt;/span&gt;
+&lt;span class="pl-c"&gt;# equivalent to [x for L in lists for x in L]&lt;/span&gt;
+
+&lt;span class="pl-s1"&gt;sets&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; [{&lt;span class="pl-c1"&gt;1&lt;/span&gt;, &lt;span class="pl-c1"&gt;2&lt;/span&gt;}, {&lt;span class="pl-c1"&gt;2&lt;/span&gt;, &lt;span class="pl-c1"&gt;3&lt;/span&gt;}, {&lt;span class="pl-c1"&gt;3&lt;/span&gt;, &lt;span class="pl-c1"&gt;4&lt;/span&gt;}]
+{&lt;span class="pl-c1"&gt;*&lt;/span&gt;&lt;span class="pl-s1"&gt;s&lt;/span&gt; &lt;span class="pl-k"&gt;for&lt;/span&gt; &lt;span class="pl-s1"&gt;s&lt;/span&gt; &lt;span class="pl-c1"&gt;in&lt;/span&gt; &lt;span class="pl-s1"&gt;sets&lt;/span&gt;}
+&lt;span class="pl-c"&gt;# {1, 2, 3, 4}&lt;/span&gt;
+&lt;span class="pl-c"&gt;# equivalent to {x for s in sets for x in s}&lt;/span&gt;
+
+&lt;span class="pl-s1"&gt;dicts&lt;/span&gt; &lt;span class="pl-c1"&gt;=&lt;/span&gt; [{&lt;span class="pl-s"&gt;'a'&lt;/span&gt;: &lt;span class="pl-c1"&gt;1&lt;/span&gt;}, {&lt;span class="pl-s"&gt;'b'&lt;/span&gt;: &lt;span class="pl-c1"&gt;2&lt;/span&gt;}, {&lt;span class="pl-s"&gt;'a'&lt;/span&gt;: &lt;span class="pl-c1"&gt;3&lt;/span&gt;}]
+{&lt;span class="pl-c1"&gt;**&lt;/span&gt;&lt;span class="pl-s1"&gt;d&lt;/span&gt; &lt;span class="pl-s1"&gt;for&lt;/span&gt; &lt;span class="pl-s1"&gt;d&lt;/span&gt; &lt;span class="pl-c1"&gt;in&lt;/span&gt; &lt;span class="pl-s1"&gt;dicts&lt;/span&gt;}
+&lt;span class="pl-c"&gt;# {'a': 3, 'b': 2}&lt;/span&gt;
+&lt;span class="pl-c"&gt;# equivalent to {k: v for d in dicts for k,v in d.items()}&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://peps.python.org/pep-0798/"&gt;PEP 798: Unpacking in Comprehensions&lt;/a&gt; by Adam Hartz and Erik Demaine proposed this as an extension of the unpacking syntax &lt;a href="https://peps.python.org/pep-0448/"&gt;from PEP 448&lt;/a&gt;, which landed &lt;a href="https://docs.python.org/3/whatsnew/3.5.html#pep-448-additional-unpacking-generalizations"&gt;in Python 3.5&lt;/a&gt; back in 2015.&lt;/p&gt;
+&lt;h4 id="a-sampling-profiler"&gt;A sampling profiler&lt;/h4&gt;
+&lt;p&gt;Python's existing tracing profiler has been renamed from &lt;code&gt;cProfile&lt;/code&gt; to &lt;a href="https://docs.python.org/3.15/library/profiling.tracing.html#module-profiling.tracing"&gt;profiling.tracing&lt;/a&gt;, and has been joined by an exciting new sampling profiler called Tachyon, aka &lt;a href="https://docs.python.org/3.15/whatsnew/3.15.html#tachyon-high-frequency-statistical-sampling-profiler"&gt;profiling.sampling&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sampling profilers work by periodically capturing stack traces from running processes, then using those to calculate which functions have the most time spent inside of them. They're very low overhead and can provide a deep insight into running systems, without needing to instrument those systems first.&lt;/p&gt;
+&lt;p&gt;I've &lt;a href="https://simonwillison.net/tags/profiling/"&gt;previously used tools&lt;/a&gt; like &lt;a href="https://github.com/benfred/py-spy"&gt;py-spy&lt;/a&gt; for this. Now this capability is baked into the standard library.&lt;/p&gt;
+&lt;p&gt;If you have the PID of an existing Python 3.15 process you can start gathering samples by running this (I had to use &lt;code&gt;sudo&lt;/code&gt; on macOS):&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;sudo uv run --python 3.15 python -m profiling.sampling attach 1234&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Interact with the main program a bit, then hit Ctrl+C to stop gathering and see a report, which looks something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026/profiler-output.webp" alt="Screenshot of terminal output from a Python sampling profiler with colored text on a black background. Header lines report 2,651 samples captured in 2.65 seconds at a sample rate of 999.98 samples/sec with an error rate of 0.19. A Profile Stats table with columns for nsamples, sample%, tottime, cumul%, cumtime and filename:lineno(function) shows that 99.9% of samples (2.644 seconds) were spent directly in selectors.py KqueueSelector.select, meaning the process was almost entirely idle waiting on the asyncio event loop. The rest of the table lists the call stack beneath it with zero direct time but 100% cumulative presence: asyncio base_events.py run_once, run_forever and run_until_complete, runners.py Runner.run and run, cli.py serve and sqlite_extensions wrapped, and several click core.py invoke, main and call frames. A legend explains each column, followed by a Summary of Interesting Functions section listing hot spots (KqueueSelector.select at 99.9% direct samples), the most frequently present functions on the stack (run_forever, run_until_complete and Runner.run at 100%), and the highest call magnification (2645.0x for BaseEventLoop._run_once)." style="max-width: 100%;" /&gt;&lt;/p&gt;
+&lt;p&gt;It can also produce &lt;a href="https://simonw.github.io/research/python-3-15-web-edit-profiling/artifacts/flamegraph.html"&gt;flame graphs like this&lt;/a&gt; and &lt;a href="https://simonw.github.io/research/python-3-15-web-edit-profiling/artifacts/heatmap/index.html"&gt;heat maps like this&lt;/a&gt;, and can even output a format that can be viewed in the Firefox profiler UI.&lt;/p&gt;
+&lt;h4 id="3-15-isn-t-much-faster-than-3-14"&gt;3.15 isn't much faster than 3.14&lt;/h4&gt;
+&lt;p&gt;Miguel Grinberg investigated &lt;a href="https://blog.miguelgrinberg.com/post/how-fast-is-python-3-15"&gt;How fast is Python 3.15?&lt;/a&gt; the other day against the 3.15.0rc3 release and found performance to be mostly the same as 3.14, with the exception of the experimental JIT. The JIT gave a 1.2x boost over the standard 3.15 interpreter (on a Fibonacci test), the first time Miguel observed a meaningful JIT performance increase.&lt;/p&gt;
+&lt;p&gt;Miguel's &lt;a href="https://blog.miguelgrinberg.com/post/python-3-14-is-here-how-fast-is-it"&gt;explorations of 3.14&lt;/a&gt; last year found significant boosts against Python 3.13 across many more categories.&lt;/p&gt;
+&lt;h4 id="upgrading-to-python-3-15-with-uv"&gt;Upgrading to Python 3.15 with uv&lt;/h4&gt;
+&lt;p&gt;I used the following sequence of commands to get &lt;code&gt;uv&lt;/code&gt; to use Python 3.15 on my Mac. First I had to upgrade &lt;code&gt;uv&lt;/code&gt; itself to ensure it knew about the new release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;uv self update&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then I installed the stable 3.15 release:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;uv python install 3.15&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And told &lt;code&gt;uv&lt;/code&gt; that I wanted that to be the default for every &lt;code&gt;uv run&lt;/code&gt; command, unless the project itself pinned a different version:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;uv python pin --global 3.15&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now the following reports 3.15 as the version:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;uv run python --version&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I already have a bunch of tools installed using &lt;code&gt;uv tool install&lt;/code&gt;. I reinstalled them to use Python 3.15 like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;uv tool upgrade datasette --python 3.15&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then I can confirm the version like this:&lt;/p&gt;
+&lt;div class="highlight highlight-source-shell"&gt;&lt;pre&gt;datasette --get /-/versions.json &lt;span class="pl-k"&gt;|&lt;/span&gt; jq&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="highlights-from-python-3-11"&gt;Highlights from Python 3.11&lt;/h4&gt;
+&lt;p&gt;The release of 3.15 means that Python 3.10 (released in 2021) is officially &lt;a href="https://devguide.python.org/versions/"&gt;no longer supported&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My policy for my main open source projects is to keep them working in every supported Python version. I can now drop 3.10 and start using features that were introduced in 3.11.&lt;/p&gt;
+&lt;p&gt;Here's the &lt;a href="https://docs.python.org/3/whatsnew/3.11.html"&gt;What's new in Python 3.11&lt;/a&gt; document. I finally get to rely on &lt;a href="https://docs.python.org/3/library/tomllib.html#module-tomllib"&gt;tomllib&lt;/a&gt; being available!&lt;/p&gt;
+&lt;p&gt;Datasette makes extensive use of &lt;code&gt;asyncio&lt;/code&gt;. 3.11 adds &lt;a href="https://docs.python.org/3/library/asyncio-task.html#asyncio.TaskGroup"&gt;TaskGroup&lt;/a&gt; and &lt;a href="https://docs.python.org/3/library/asyncio-task.html#asyncio.timeout"&gt;timeout()&lt;/a&gt;, and &lt;a href="https://docs.python.org/3/whatsnew/3.11.html#asyncio"&gt;several more&lt;/a&gt; new features.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;datetime.UTC&lt;/code&gt; is a new in 3.11 alias for &lt;code&gt;datetime.timezone.utc&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Python's SQLite support got some significant upgrades in 3.11, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.setlimit"&gt;setlimit()&lt;/a&gt; and &lt;a href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.getlimit"&gt;getlimit()&lt;/a&gt; expose a mechanism for setting &lt;a href="https://www.sqlite.org/c3ref/c_limit_attached.html"&gt;SQLite runtime limits&lt;/a&gt; from Python.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.create_window_function"&gt;create_window_function()&lt;/a&gt; lets us create custom window functions in Python, as a class with &lt;code&gt;step()&lt;/code&gt;, &lt;code&gt;value()&lt;/code&gt;, &lt;code&gt;inverse()&lt;/code&gt;, and &lt;code&gt;finalize()&lt;/code&gt; methods.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.blobopen"&gt;blobopen()&lt;/a&gt; provides an efficient mechanism for partial reads and writes of large &lt;code&gt;BLOB&lt;/code&gt; binary values stored in a SQLite row.&lt;/li&gt;
+&lt;li&gt;You can now call &lt;code&gt;set_authorizer(None)&lt;/code&gt; to remove a SQLite authorizer. Datasette had a workaround for this!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plus a whole bunch of &lt;a href="https://docs.python.org/3/whatsnew/3.11.html#new-feat-related-type-hints-311"&gt;improvements to Python's typing system&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I plan to land Python 3.11 improvements to a bunch of my projects over the next few weeks. Here's &lt;a href="https://github.com/simonw/datasette/pull/2998"&gt;my first Datasette PR&lt;/a&gt; removing that &lt;code&gt;set_authorizer(None)&lt;/code&gt; workaround.&lt;/p&gt;
+&lt;p&gt;I've also updated my &lt;a href="https://github.com/simonw/click-app"&gt;click-app&lt;/a&gt;, &lt;a href="https://github.com/simonw/datasette-plugin"&gt;datasette-plugin&lt;/a&gt;, &lt;a href="https://github.com/simonw/python-lib"&gt;python-lib&lt;/a&gt;, and &lt;a href="https://github.com/simonw/llm-plugin"&gt;llm-plugin&lt;/a&gt; cookiecutter templates to test against Python 3.11 through Python 3.15.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/profiling"&gt;profiling&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/sqlite"&gt;sqlite&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/uv"&gt;uv&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="open-source"/><category term="profiling"/><category term="python"/><category term="sqlite"/><category term="uv"/></entry><entry><title>datasette-ports 0.4</title><link href="https://simonwillison.net/2026/Oct/12/datasette-ports/" rel="alternate"/><published>2026-10-12T04:57:07+00:00</published><updated>2026-10-12T04:57:07+00:00</updated><id>https://simonwillison.net/2026/Oct/12/datasette-ports/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-ports/releases/tag/0.4"&gt;datasette-ports 0.4&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to &lt;a href="https://simonwillison.net/2026/Oct/12/python-3-15/#a-sampling-profiler"&gt;attach the new Python 3.15 profiler&lt;/a&gt;.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="datasette"/></entry><entry><title>Dwarf Fortress uses version control now</title><link href="https://simonwillison.net/2026/Oct/11/dwarf-fortress/" rel="alternate"/><published>2026-10-11T00:52:37+00:00</published><updated>2026-10-11T00:52:37+00:00</updated><id>https://simonwillison.net/2026/Oct/11/dwarf-fortress/</id><summary type="html">
     &lt;p&gt;I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control &lt;em&gt;more&lt;/em&gt;. That's art.&lt;/p&gt;
 &lt;p&gt;I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time:&lt;/p&gt;
 &lt;ul&gt;
@@ -474,27 +557,4 @@ Position 3 (hundreds): 6 + 9 = 15, write 5, carry 1
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/art"&gt;art&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/new-york"&gt;new-york&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="art"/><category term="new-york"/></entry><entry><title>pwasm 0.2a0</title><link href="https://simonwillison.net/2026/Oct/1/pwasm/" rel="alternate"/><published>2026-10-01T17:10:31+00:00</published><updated>2026-10-01T17:10:31+00:00</updated><id>https://simonwillison.net/2026/Oct/1/pwasm/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/pwasm/releases/tag/0.2a0"&gt;pwasm 0.2a0&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of &lt;a href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/#simon-willison-2026-in-llms.012.webp"&gt;AI mania&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it and see if it could make any significant improvements:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Evaluate current state of pwasm - then consider what it would take to get the MicroPython and micro JavaScript experiments from the &lt;a href="https://github.com/simonw/research"&gt;research repo&lt;/a&gt; working under it - and what it would take to speed it up&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://github.com/simonw/pwasm/pull/12"&gt;42 commits later&lt;/a&gt; (with minimal follow-up prompting) it now handles almost all of the WASM specification, and the wheel from PyPI bundles working WASM builds of  &lt;a href="https://micropython.org/"&gt;MicroPython&lt;/a&gt;, &lt;a href="https://github.com/quickjs-ng/quickjs"&gt;QuickJS&lt;/a&gt; and &lt;a href="https://github.com/bellard/mquickjs"&gt;Micro QuickJS&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I wouldn't trust this thing at all - hence the alpha version tag - but it's interesting seeing how today's models can improve on the work of models from 10 months ago.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/webassembly"&gt;webassembly&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="python"/><category term="webassembly"/><category term="vibe-coding"/></entry><entry><title>Quoting Matthew Green</title><link href="https://simonwillison.net/2026/Oct/1/matthew-green/" rel="alternate"/><published>2026-10-01T06:29:01+00:00</published><updated>2026-10-01T06:29:01+00:00</updated><id>https://simonwillison.net/2026/Oct/1/matthew-green/</id><summary type="html">
-    &lt;blockquote cite="https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/"&gt;&lt;p&gt;[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents or WhatsApp, and replace independently-sandboxed training runs with independently-deployed personal agents like Muse, and you have exactly the ingredients that a worm needs.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/"&gt;Matthew Green&lt;/a&gt;, Is sandboxing sufficient to contain rogue agents?&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/matthew-green"&gt;matthew-green&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/accidental-cyberattacks"&gt;accidental-cyberattacks&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-misuse"&gt;ai-misuse&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-security-research"&gt;ai-security-research&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/sandboxing"&gt;sandboxing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="matthew-green"/><category term="accidental-cyberattacks"/><category term="ai-misuse"/><category term="generative-ai"/><category term="ai-security-research"/><category term="sandboxing"/><category term="ai"/><category term="llms"/></entry></feed>
+</summary><category term="art"/><category term="new-york"/></entry></feed>

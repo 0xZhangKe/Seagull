@@ -12,8 +12,171 @@
     <generator>Hugo -- 0.167.0</generator>
     <language>en</language>
     <dc:creator>Redowan Delowar</dc:creator>
-    <lastBuildDate>Sat, 19 Sep 2026 14:56:43 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 22:44:15 +0000</lastBuildDate>
     <atom:link href="https://rednafi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Partial updates with field masks</title>
+      <link>https://rednafi.com/go/patch-field-mask/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://rednafi.com/go/patch-field-mask/</guid>
+      <dc:creator>Redowan Delowar</dc:creator>
+      <description>Keep the value and the update intent in separate fields of a PATCH request.</description>
+      <content:encoded>&lt;p&gt;u/SnooSongs6758 &lt;a href=&#34;https://www.reddit.com/r/golang/comments/1ww034a/how_to_check_for_undefined_attributes_on_json/&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;asked on r/golang (opens in new tab)&#34;&gt;asked on r/golang&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I&amp;rsquo;m creating a REST API using Golang &lt;code&gt;v1.25&lt;/code&gt;, Gin &lt;code&gt;v1.10.0&lt;/code&gt;, and Validator &lt;code&gt;v10.20.0&lt;/code&gt;. I
+have a PATCH endpoint where, when the &lt;code&gt;address&lt;/code&gt; attribute is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;undefined&lt;/code&gt; -&amp;gt; keep the original data&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;null&lt;/code&gt; -&amp;gt; delete the original data&lt;/li&gt;
+&lt;li&gt;contains something -&amp;gt; replace the original data with the new&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Right now I&amp;rsquo;m using a pointer for it, so I can know when it&amp;rsquo;s &lt;code&gt;null&lt;/code&gt;. The problem is that
+I couldn&amp;rsquo;t find a way to differentiate when the attribute is &lt;code&gt;undefined&lt;/code&gt; or &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Does anyone know a way to check if a specific attribute is &lt;code&gt;undefined&lt;/code&gt;?&lt;/p&gt;
+
+&lt;/blockquote&gt;&lt;hr&gt;
+&lt;p&gt;While the answers there explore how to support this case, I think we can simplify the design
+and make our lives considerably easier. Currently the &lt;code&gt;address&lt;/code&gt; field does this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a string value updates the stored address in place&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;null&lt;/code&gt; deletes the stored address&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;undefined&lt;/code&gt; signals a missing value, which keeps the original data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s mixing value and intent within a single field. We can use &lt;code&gt;address&lt;/code&gt; for the plain value
+and another field, &lt;code&gt;update_mask&lt;/code&gt;, to list the fields the client wants to change. Google&amp;rsquo;s
+API design guide calls this a &lt;a href=&#34;https://google.aip.dev/134&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;field mask (opens in new tab)&#34;&gt;field mask&lt;/a&gt;. Protobuf has the same thing as its &lt;a href=&#34;https://protobuf.dev/reference/protobuf/google.protobuf/#field-mask&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;FieldMask (opens in new tab)&#34;&gt;FieldMask&lt;/a&gt;
+type.&lt;/p&gt;
+&lt;p&gt;Over HTTP, the client sends a &lt;code&gt;PATCH&lt;/code&gt; with the new values in the body and the mask in the
+&lt;code&gt;update_mask&lt;/code&gt; query parameter, like &lt;code&gt;?update_mask=name,address&lt;/code&gt;. The server changes only the
+fields named in the mask.&lt;/p&gt;
+&lt;p&gt;Say the server has this user stored. Each request below starts from it:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;json&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Alice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Old Street 1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;To update the address, the client sets the &lt;code&gt;update_mask&lt;/code&gt; query parameter to &lt;code&gt;address&lt;/code&gt; and
+sends the new value in the body. The server changes the address and returns the updated
+user:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;sh&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# request&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATCH /users/1?&lt;mark class=&#34;code-mark&#34;&gt;update_mask&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;address&lt;/mark&gt; HTTP/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;New Street 2&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# response&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTTP/1.1 &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;Alice&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;New Street 2&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;To delete the address, the query parameter stays &lt;code&gt;update_mask=address&lt;/code&gt;, and the body sends
+&lt;code&gt;null&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;sh&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# request&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATCH /users/1?&lt;mark class=&#34;code-mark&#34;&gt;update_mask&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;address&lt;/mark&gt; HTTP/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: null&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# response&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTTP/1.1 &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;Alice&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;An empty body, &lt;code&gt;{}&lt;/code&gt;, does the same thing, because &lt;code&gt;address&lt;/code&gt; is still in the mask.&lt;/p&gt;
+&lt;p&gt;If the client only wants to change the name, it sends &lt;code&gt;update_mask=name&lt;/code&gt;. The server leaves
+&lt;code&gt;address&lt;/code&gt; alone because the mask doesn&amp;rsquo;t name it:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;sh&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# request&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATCH /users/1?&lt;mark class=&#34;code-mark&#34;&gt;update_mask&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;name&lt;/mark&gt; HTTP/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# response&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTTP/1.1 &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;Old Street 1&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;On the Go side, the asker used a pointer so the handler could see &lt;code&gt;null&lt;/code&gt;. With pointers, the
+struct looks like this:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;go&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ID&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;id&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;name&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Address&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;address&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;A nil &lt;code&gt;Address&lt;/code&gt; can mean the client sent &lt;code&gt;null&lt;/code&gt;, or it can mean the client didn&amp;rsquo;t send the
+key at all. That&amp;rsquo;s the problem from the question.&lt;/p&gt;
+&lt;p&gt;With the mask, the handler doesn&amp;rsquo;t need to tell them apart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;address&lt;/code&gt; in the mask and a string in the body: the address gets updated&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;address&lt;/code&gt; in the mask and &lt;code&gt;null&lt;/code&gt; or no key in the body: the decoded address is &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;, so
+the address gets cleared&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;address&lt;/code&gt; not in the mask: the handler ignores the address in the body&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;None of these cases need nil, so plain strings are enough:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;go&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ID&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;id&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;name&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Address&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;`json:&amp;#34;address&amp;#34;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In the handler, &lt;code&gt;in&lt;/code&gt; is the request body and &lt;code&gt;u&lt;/code&gt; is the stored user. The loop goes through
+the mask and copies each named field from &lt;code&gt;in&lt;/code&gt; to &lt;code&gt;u&lt;/code&gt;. An unknown field name gets a 400:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;go&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;patchUser&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Request&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mask&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;URL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;update_mask&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// json v2 API&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;err&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;UnmarshalRead&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;err&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;invalid JSON body&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;StatusBadRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ok&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;PathValue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;strings&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;SplitSeq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Address&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Address&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;unknown field in update_mask: &amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;http&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;StatusBadRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ID&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;alert alert-important&#34;&gt;
+  &lt;p class=&#34;alert-title&#34;&gt;Important&lt;/p&gt;
+  &lt;p&gt;The handler only mutates the fields named in the mask. Every other field on the stored
+user stays as it was, even if the body sends a value for it.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;So far &lt;code&gt;address&lt;/code&gt; has been a string. If it were an object with &lt;code&gt;street&lt;/code&gt; and &lt;code&gt;city&lt;/code&gt;, a client
+might want to change only the city. A mask with &lt;code&gt;address&lt;/code&gt; covers the whole object. To target
+only the city, the query parameter names the subfield with a dot, as
+&lt;code&gt;update_mask=address.city&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;codeblock&#34; translate=&#34;no&#34; data-lang=&#34;sh&#34; data-copyable&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# request&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATCH /users/1?&lt;mark class=&#34;code-mark&#34;&gt;update_mask&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;address.city&lt;/mark&gt; HTTP/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;city&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Berlin&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The handler then needs an &lt;code&gt;address.city&lt;/code&gt; case in its switch.&lt;/p&gt;
+&lt;p&gt;The full example with a test is &lt;a href=&#34;https://github.com/rednafi/examples/tree/main/patch-field-mask&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;on GitHub (opens in new tab)&#34;&gt;on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- references --&gt;
+&lt;!-- prettier-ignore-start --&gt;
+&lt;!-- prettier-ignore-end --&gt;
+</content:encoded>
+      <category>Go</category>
+      <category>API</category>
+    </item>
     <item>
       <title>Why do we listen to people with no skin in the game?</title>
       <link>https://rednafi.com/zephyr/no-skin-in-the-game/</link>
@@ -3007,161 +3170,6 @@ workflow&lt;/a&gt;.&lt;/p&gt;
       <category>Essay</category>
       <category>DevOps</category>
       <category>Web</category>
-    </item>
-    <item>
-      <title>If you won&#39;t carry the pager, maybe don&#39;t push to mainline</title>
-      <link>https://rednafi.com/zephyr/carry-the-pager/</link>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://rednafi.com/zephyr/carry-the-pager/</guid>
-      <dc:creator>Redowan Delowar</dc:creator>
-      <description>Drive-by AI changes break the shared model a team builds around its code, and the ICs end up cleaning up the mess. Why pushing to mainline should come with the pager.</description>
-      <content:encoded>&lt;p&gt;&lt;img src=&#34;https://blob.rednafi.com/zephyr/carry-the-pager/image-01-287c03215d4c.jpg&#34; alt=&#34;Gandalf blocking the Balrog, captioned &amp;ldquo;You shall not pass&amp;rdquo;&#34; width=&#34;1102&#34; height=&#34;350&#34; referrerpolicy=&#34;no-referrer&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;In a funny turn of events, as AI spending spirals out of control, &lt;em&gt;tokenmaxxing&lt;/em&gt; is now
-&lt;em&gt;considered harmful&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Recently, &lt;a href=&#34;https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Fortune (opens in new tab)&#34;&gt;Fortune&lt;/a&gt; reported that Uber burned through its entire 2026 AI coding budget in
-four months, with every usage stat up and to the right. But COO Andrew Macdonald still can&amp;rsquo;t
-tie any of it to features users would actually notice:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Maybe implicitly there&amp;rsquo;s more that is getting shipped, but it&amp;rsquo;s very hard to draw a line
-between one of those stats and &amp;lsquo;Okay now we&amp;rsquo;re actually producing like 25% more useful
-consumer features.&amp;rsquo;&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;So it seems like all that spending bought a lot of code and not much else. Maybe a ton of
-debt too.&lt;/p&gt;
-&lt;p&gt;Meanwhile, the AI overlords keep rewriting the narrative. Who knew the public wouldn&amp;rsquo;t love
-being told their job&amp;rsquo;s obsolete in the next x months?&lt;/p&gt;
-&lt;p&gt;A year ago, &lt;a href=&#34;https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Dario Amodei cried wolf (opens in new tab)&#34;&gt;Dario Amodei cried wolf&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;AI could wipe out &lt;em&gt;half&lt;/em&gt; of all entry-level white-collar jobs - and spike unemployment to
-10-20% in the next one to five years.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;By February, &lt;a href=&#34;https://www.lennysnewsletter.com/p/head-of-claude-code-what-happens&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Boris Cherny added to the fire (opens in new tab)&#34;&gt;Boris Cherny added to the fire&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;So I think at this point, it&amp;rsquo;s safe to say that coding is largely solved. At least for the
-kinds of programming that I do, it&amp;rsquo;s just a solved problem because Claude can do it.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;Then the IPOs got close and the tone flipped. This month, &lt;a href=&#34;https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Dario caved first (opens in new tab)&#34;&gt;Dario caved first&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;If you automate 90% of the job, then everyone does the 10% of the job. And the 10% kind of
-expands to be 100% of what people do and kind of 10-times their productivity.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;&lt;a href=&#34;https://www.cityam.com/delighted-to-be-wrong-sam-altman-changes-tune-on-ai-job-apocalypse-fears/&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Sam Altman followed three weeks later (opens in new tab)&#34;&gt;Sam Altman followed three weeks later&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;I&amp;rsquo;m delighted to be wrong about this. I thought there would have been more impact on
-entry-level white-collar jobs being eliminated by now than has actually happened.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;In the beginning, this was an obvious PR stunt to sell leadership the nirvana of the
-one-person company, where the agents do everything and the profit splits between the CEO and
-the model provider. Too bad, that hasn&amp;rsquo;t happened yet.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Everyone and their moms are now slinging code to production, not because they want to but
-because they&amp;rsquo;re pushed to, and because AI apparently makes everyone an expert in everything.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m a heavy LLM user myself, and I&amp;rsquo;m constantly fascinated by what it lets me do. But saying
-things like&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;frontend engineering is cooked&lt;/li&gt;
-&lt;li&gt;AI is coming for backend&lt;/li&gt;
-&lt;li&gt;who needs infra people when the model is so good at wrangling k8s&lt;/li&gt;
-&lt;li&gt;writing docs isn&amp;rsquo;t a problem, I just generated twenty pages of slop for my twenty-line
-script&lt;/li&gt;
-&lt;li&gt;PMs are useless and should be replaced&lt;/li&gt;
-&lt;li&gt;EMs should code now, and the ones who don&amp;rsquo;t ngmi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;is incredibly stupid. It creates a hunger-games environment at work. And for what? So that
-Dario&amp;rsquo;s next prediction becomes a self-fulfilling prophecy as we tear each other apart?&lt;/p&gt;
-&lt;p&gt;The AI leaderboard and tokenmaxxing gamification pull all kinds of weird behavior out of
-people. PMs are forced to push code instead of doing their actual jobs. EMs are buried under
-their own responsibilities and still expected to sit at the center of every technical
-problem on the team. The result is that everyone is running around like headless chickens
-switching from one task to the next, from one demo to the next and accomplishing nothing.
-But hey, we&amp;rsquo;re productive at least.&lt;/p&gt;
-&lt;p&gt;And no one cares about the poor ICs. The deadlines and expectations are getting batshit
-crazy.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Just use AI, bro, and be 10x productive.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Coding is important, but it&amp;rsquo;s like 20% of the work, and making it 10x faster won&amp;rsquo;t make the
-whole thing go brrr! Hello &lt;a href=&#34;https://rednafi.com/maxims/#amdahl&#34;&gt;Amdahl&amp;rsquo;s law&lt;/a&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Here&amp;rsquo;s what Marc Brooker said &lt;a href=&#34;https://www.youtube.com/watch?v=u3GjIXP9N0s&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;on a podcast (opens in new tab)&#34;&gt;on a podcast&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;If you aren&amp;rsquo;t doing it hands on, your opinion about it is very likely to be completely
-wrong.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;He&amp;rsquo;s talking about leadership making technical decisions, and without being somewhat
-hands-on, it&amp;rsquo;s impossible to form an opinion. But does everyone need to form an opinion on
-everything? Of course not, and that&amp;rsquo;s exactly why we have hierarchies. Saying AI will
-steamroll that into something flat and egalitarian is naive.&lt;/p&gt;
-&lt;p&gt;Add non-technical people to the mix, and it doesn&amp;rsquo;t take long for the whole thing to turn
-into a castle of glass. This breaks the social structure of an engineering team in the name
-of forced democratization. Now this might sound like gatekeeping. But if democratization
-means throwing out the playbooks we&amp;rsquo;ve built over the last 50 years, then gatekeeping is
-just quality control with an uglier name.&lt;/p&gt;
-&lt;p&gt;Expecting code from an EM leading an infra team is very different from expecting it from a
-PM or a designer. I&amp;rsquo;m all for anyone trying to pitch in and survive this madness, regardless
-of their role. But hauling agents onto a mission-critical codebase isn&amp;rsquo;t the way to do it.
-Go try merging something into the Linux kernel with zero context. The kernel maintainers
-can&amp;rsquo;t allow you to merge random stuff into mainline without breaking the universe. So why
-would it be gatekeeping if merging PRs at your workplace demands the same bar?&lt;/p&gt;
-&lt;p&gt;PMs and designers have plenty to contribute, just not directly to the code that runs in
-production. AI makes prototyping, mocking, and wireframing faster than ever, and anyone can
-do that without disrupting the critical path.&lt;/p&gt;
-&lt;p&gt;What it won&amp;rsquo;t do is turn you into the expert it took some guy ten years to become. I can&amp;rsquo;t
-replace an EM with Claude, and I don&amp;rsquo;t want to. I want my PM and my EM to do their jobs so I
-can do mine. Also, please don&amp;rsquo;t turn the poor designers into vibecoding jarheads. Let them
-explore the tools at their own pace and see what they can do with them. Trying to force
-everyone into the same box, all contributing to the production codebase, is a leadership
-failure.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Building software means building a collective mental model of how the system works and how
-it&amp;rsquo;s run, and most of that model never makes it into the code or the docs. Peter Naur&amp;rsquo;s
-&lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/Naur.pdf&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;Programming as Theory Building (opens in new tab)&#34;&gt;Programming as Theory Building&lt;/a&gt; is as relevant as ever:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;For a program to retain its quality it is mandatory that each modification is firmly
-grounded in the theory of it.&lt;/p&gt;
-
-&lt;/blockquote&gt;&lt;p&gt;Generating code is cheap. Operating it is where you learn the kinks of a deployed artifact.
-You don&amp;rsquo;t build that model without the elbow grease.&lt;/p&gt;
-&lt;p&gt;And operating it means carrying the pager. When you get paged, you thread through the
-incident, hotfix if you can, write the post-mortem and the &lt;a href=&#34;https://aws.amazon.com/blogs/mt/why-you-should-develop-a-correction-of-error-coe/&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;CoEs (opens in new tab)&#34;&gt;CoEs&lt;/a&gt;, and bang your head
-against the wall until the root cause finally gives.&lt;/p&gt;
-&lt;p&gt;You can&amp;rsquo;t do that alongside a zillion other responsibilities just because there&amp;rsquo;s now AI.
-Unless you&amp;rsquo;re in the full software development lifecycle, your mental model is probably
-plain wrong. You can&amp;rsquo;t prompt your way into a moderately complex system without putting in
-the work.&lt;/p&gt;
-&lt;p&gt;So if you haven&amp;rsquo;t done that work and aren&amp;rsquo;t ready to, your clanker-generated PR probably
-does more harm than good. Anyone can prompt an LLM and get that PR, and someone from the
-trenchline can do it even better. So it&amp;rsquo;s questionable whether this whole song and dance is
-a good use of anyone&amp;rsquo;s time.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;A drive-by contribution from out-of-band folks breaks the collective mental model. The
-author never learned how the code is written or how it fails, and neither did the clanker
-that wrote it. So often you get code that&amp;rsquo;s locally correct but breaks some global invariant
-the author never knew how to check.&lt;/p&gt;
-&lt;p&gt;Reviewing these slop PRs takes time, and the follow-up questions are futile, because the
-author didn&amp;rsquo;t do the work and can&amp;rsquo;t address the concerns. Going back and forth is
-pointless - they&amp;rsquo;ll just feed your comments back to the model. So people avoid reviewing PRs
-like that, and worse, they get LGTM&amp;rsquo;d and merged into mainline. Disaster!&lt;/p&gt;
-&lt;p&gt;And once it&amp;rsquo;s merged, who owns the code? Usually not the drive-by author. They don&amp;rsquo;t operate
-the system, so when their change causes an outage, they&amp;rsquo;re rarely the one firefighting. It&amp;rsquo;s
-just chucking the ball over the fence and calling it a day. So much for &lt;em&gt;&amp;quot;&lt;a href=&#34;https://queue.acm.org/detail.cfm?id=1142065&#34; rel=&#34;noopener noreferrer&#34; target=&#34;_blank&#34; aria-label=&#34;you build it, you
-run it (opens in new tab)&#34;&gt;you build it, you
-run it&lt;/a&gt;.&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;One too many times, the ICs and trenchline workers get pulled in to clean up the mess -
-triaging an incident caused by someone else&amp;rsquo;s vibeslop, on code they never touched. It&amp;rsquo;s
-incredibly unfair, and a massive tax on people who are already overloaded.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;So unless you carry the pager, maybe your code shouldn&amp;rsquo;t go to mainline.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Building anything useful takes all kinds of people. I don&amp;rsquo;t like this clanker-driven,
-homogeneous world we&amp;rsquo;re heading toward. Being able to do more is welcome, but this lack of
-accountability and the contest over who burns the most tokens probably won&amp;rsquo;t get us there.&lt;/p&gt;
-&lt;p&gt;Oh look, the good ol&amp;rsquo; &lt;a href=&#34;https://rednafi.com/maxims/#goodhart&#34;&gt;Goodhart&amp;rsquo;s law&lt;/a&gt; is laughing at us again!&lt;/p&gt;
-&lt;!-- references --&gt;
-&lt;!-- prettier-ignore-start --&gt;
-&lt;!-- prettier-ignore-end --&gt;
-</content:encoded>
-      <category>Essay</category>
-      <category>AI</category>
-      <category>LLMs</category>
-      <category>Culture</category>
     </item>
   </channel>
 </rss>

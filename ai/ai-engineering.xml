@@ -5,6 +5,14 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>主流云平台加速集成Model Context Protocol（MCP）标准</title>
+      <link>https://help.aliyun.com/zh/model-studio/mcp</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:bed196aa38b3b3e054c7adbf50dd841a</guid>
+      <archive:collectedAt>2026-10-13T00:27:43Z</archive:collectedAt>
+      <description>Model Context Protocol 作为一种重要的AI Agent工具调用开放标准，正在被主流云服务商深入集成。Google Cloud API Gateway 现在可以作为远程MCP服务器，使现有REST API无需改造即可被AI Agent发现和调用。阿里云百炼平台则通过其Responses API原生支持MCP，开发者可以在调用千问系列模型时直接传入MCP Server配置来启用工具。这些企业级集成大大简化了开发者将内部系统能力暴露给AI应用的过程，推动了MCP标准的实际落地。</description>
+      <content:encoded>&lt;p&gt;Model Context Protocol 作为一种重要的AI Agent工具调用开放标准，正在被主流云服务商深入集成。Google Cloud API Gateway 现在可以作为远程MCP服务器，使现有REST API无需改造即可被AI Agent发现和调用。阿里云百炼平台则通过其Responses API原生支持MCP，开发者可以在调用千问系列模型时直接传入MCP Server配置来启用工具。这些企业级集成大大简化了开发者将内部系统能力暴露给AI应用的过程，推动了MCP标准的实际落地。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Model Context Protocol开始在企业级云平台获得广泛的原生集成支持。&lt;/li&gt;&lt;li&gt;Google Cloud API Gateway 新增将现有REST API作为MCP工具公开的能力。&lt;/li&gt;&lt;li&gt;阿里云百炼（Model Studio）的Responses API正式支持通过MCP工具参数接入外部MCP Server。&lt;/li&gt;&lt;li&gt;两大平台均提供了详细的配置文档和代码示例，降低了集成门槛。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://help.aliyun.com/zh/model-studio/mcp"&gt;阿里云百炼MCP接入文档&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://docs.cloud.google.com/api-gateway/docs/mcp-overview?hl=zh-cn"&gt;Google Cloud API Gateway MCP概览&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>FastGPT v4.17.2发布，强化企业级AI应用多渠道部署能力</title>
       <link>https://www.csdn.net/article/2026-10-12/167697194</link>
       <guid isPermaLink="false">urn:signal-archive:ai:a43214d7680b25608672e62e660d2db2</guid>
@@ -300,6 +308,15 @@
       <content:encoded>&lt;p&gt;AWS宣布Claude Haiku 5.5已在其平台上正式可用，标志着该模型的广泛部署。开发者可以通过Amazon Bedrock获得AWS托管的数据驻留和治理功能，或通过Claude Platform on AWS获得Anthropic原生API体验。这使得企业用户能够更容易地将成本优化的AI模型集成到现有云基础设施和工作流中，特别是在需要大规模、低延迟处理的场景下。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Claude Haiku 5.5现已通过Amazon Bedrock和Claude Platform on AWS两个渠道提供。&lt;/li&gt;&lt;li&gt;Bedrock提供AWS管理的基础设施和数据驻留保障，而Claude Platform on AWS提供Anthropic原生平台体验。&lt;/li&gt;&lt;li&gt;模型定位为实时体验（如语音代理、实时支持）和高容量任务（如分类、摘要）的理想选择。&lt;/li&gt;&lt;li&gt;可作为Opus 5.5等更大模型的副代理，并行处理定义明确的子任务。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws"&gt;Claude Haiku 5.5 is now available on AWS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>OpenAI正式向付费用户推出GPT-6及智能用户界面（Intelligent UI）</title>
+      <link>https://openai.com/zh-Hans-CN/index/gpt-6-for-everyone</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:a49d2f30bcd72332e352a8a2dbf292a9</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T00:27:43Z</archive:collectedAt>
+      <description>OpenAI于2026年10月7日正式发布面向所有付费用户的GPT-6模型集成了一个名为“Intelligent UI”的新能力。该能力使得ChatGPT能生成包含文本、图形、可点击按钮、表单、图表等交互式元素的复合式回答，旨在让日常答案更直观、复杂主题学习更容易，并能快速创建解决当前任务的工具。开发者关注此功能，因为其为AI应用的用户交互设计提供了新的前沿范例和直接技术能力。</description>
+      <content:encoded>&lt;p&gt;OpenAI于2026年10月7日正式发布面向所有付费用户的GPT-6模型集成了一个名为“Intelligent UI”的新能力。该能力使得ChatGPT能生成包含文本、图形、可点击按钮、表单、图表等交互式元素的复合式回答，旨在让日常答案更直观、复杂主题学习更容易，并能快速创建解决当前任务的工具。开发者关注此功能，因为其为AI应用的用户交互设计提供了新的前沿范例和直接技术能力。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;OpenAI向所有付费用户推出新的GPT-6模型，内置智能用户界面。&lt;/li&gt;&lt;li&gt;Intelligent UI（智能用户界面）是一种新能力，允许ChatGPT在响应中组合使用文本、视觉图像和交互式元素。&lt;/li&gt;&lt;li&gt;回应可以包含图形、可点击按钮、表单、图表和可直接在对话中使用的交互式体验。&lt;/li&gt;&lt;li&gt;该功能能够更直观地展现答案，例如为食谱添加时间线，或为旅行计划附加地图。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/zh-Hans-CN/index/gpt-6-for-everyone"&gt;GPT‑6 and Intelligent UI for everyone | OpenAI&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>Claude Opus 5.5获2026年10月BenchLM AI智能体排行榜第一</title>
       <link>https://af.net/realtime/claude-opus-5-5-leads-october-2026-benchlm-ai-agent-rankings</link>
       <guid isPermaLink="false">urn:signal-archive:ai:79560825265d1ca6d5de4a81880fd546</guid>
@@ -343,6 +360,15 @@
       <archive:collectedAt>2026-10-08T22:47:25Z</archive:collectedAt>
       <description>Anthropic于10月7日正式发布了Claude Haiku 5.5，这是Claude 5.5家族中的小型模型，以极低的价格和显著提升的性能定位高吞吐量、成本敏感的任务。新模型API价格大幅降低，平均成本比Haiku 4.5降低约75%，在多领域基准测试中表现优秀，并首次在Haiku模型中引入了力度调节功能。对开发者而言，这为需要大规模部署实时应用（如客服支持、应用内助手）和副代理架构提供了经济高效的模型选择。</description>
       <content:encoded>&lt;p&gt;Anthropic于10月7日正式发布了Claude Haiku 5.5，这是Claude 5.5家族中的小型模型，以极低的价格和显著提升的性能定位高吞吐量、成本敏感的任务。新模型API价格大幅降低，平均成本比Haiku 4.5降低约75%，在多领域基准测试中表现优秀，并首次在Haiku模型中引入了力度调节功能。对开发者而言，这为需要大规模部署实时应用（如客服支持、应用内助手）和副代理架构提供了经济高效的模型选择。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API价格大幅下降：输入token价格降至每百万0.1美元，输出0.5美元，比Haiku 4.5降低90%。&lt;/li&gt;&lt;li&gt;超过10万token的请求价格会阶梯上涨，但平均成本仍降低约75%。&lt;/li&gt;&lt;li&gt;这是首款支持力度调节（effort controls）的Haiku模型，可以平衡成本与智能。&lt;/li&gt;&lt;li&gt;在多个基准测试中超越GPT-6 Luna和上一代Haiku 4.5。&lt;/li&gt;&lt;li&gt;可作为Opus 5.5和Sonnet 5.5的副代理(subagent)，适用于高吞吐量任务。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/claude-haiku-5-5"&gt;Introducing Claude Haiku 5.5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>Claude Haiku 5.5发布，API输入价格下调约90%</title>
+      <link>https://zhuanlan.zhihu.com/p/2092888561209160150</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:2842c35925867a3d3abfdb61793ec2c9</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T00:27:43Z</archive:collectedAt>
+      <description>Anthropic在2026年10月7日发布Claude Haiku 5.5模型，其核心变化是API价格的大幅降低，输入价格相比前代下降了约90%。这使得Haiku 5.5成为市场上性价比极高的轻量级模型选项。对于开发者而言，这直接降低了基于Claude模型进行AI应用开发或实验的成本，尤其是在需要频繁调用API或构建多步骤Agent工作流时，成本效益显著提升。</description>
+      <content:encoded>&lt;p&gt;Anthropic在2026年10月7日发布Claude Haiku 5.5模型，其核心变化是API价格的大幅降低，输入价格相比前代下降了约90%。这使得Haiku 5.5成为市场上性价比极高的轻量级模型选项。对于开发者而言，这直接降低了基于Claude模型进行AI应用开发或实验的成本，尤其是在需要频繁调用API或构建多步骤Agent工作流时，成本效益显著提升。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Anthropic于2026年10月7日发布Claude Haiku 5.5。&lt;/li&gt;&lt;li&gt;API输入价格较Haiku 4.5大幅下调约90%，成为极具成本竞争力的轻量级模型。&lt;/li&gt;&lt;li&gt;此举被视为Anthropic为抢占开发者市场、对冲OpenAI GPT-6 Luna低成本策略的关键动作。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://zhuanlan.zhihu.com/p/2092888561209160150"&gt;每日AI行业简报 - 2026-10-12&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>OpenAI 向所有 ChatGPT 用户推出 GPT-6 和 Intelligent UI智能交互界面</title>

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "0e810af8511ed556a1d6e368",
+      "title": "Quoting Geoffrey Huntley",
+      "summary": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library.…",
+      "image": null,
+      "publishedAt": "2026-10-13T13:32:00Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+      "detailPath": "articles/0e810af8511ed556a1d6e368.json"
+    },
+    {
       "id": "2e39587debbc6c944619769e",
       "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
       "summary": "Python 3.15 is here ! Here's the essential What's new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11. First, some highlights from Python 3.15.…",
@@ -318,17 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
       "detailPath": "articles/5930066360a174eafe8107a2.json"
-    },
-    {
-      "id": "c7121a1458bee89fa68dbeb0",
-      "title": "September sponsors-only newsletter",
-      "summary": "I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right…",
-      "image": null,
-      "publishedAt": "2026-10-03T22:00:31Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/3/newsletter/",
-      "detailPath": "articles/c7121a1458bee89fa68dbeb0.json"
     }
   ]
 }

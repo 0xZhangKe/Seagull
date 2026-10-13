@@ -54,6 +54,15 @@
       <content:encoded>&lt;p&gt;DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;传统 RAG 的局限：基于语义相似度的块检索，难以处理需要综合多个文档信息或进行多跳推理的复杂查询。&lt;/li&gt;&lt;li&gt;GraphRAG 的核心创新：构建一个全局知识图谱（实体为节点，关系为边），并利用社区发现算法对相关实体进行聚类，为每个社区生成摘要。&lt;/li&gt;&lt;li&gt;解决全局查询：通过 map-reduce 方式整合各社区摘要，而非检索海量片段，能回答关于整个语料库的宏观问题（如“主要趋势是什么？”）。&lt;/li&gt;&lt;li&gt;支持多跳推理：系统可以沿着知识图谱中的连接路径（边）遍历，追踪分散在不同文档中的关联概念。&lt;/li&gt;&lt;li&gt;对比权衡：GraphRAG 在全局查询和多跳推理上更强，但索引成本（需要实体抽取、图构建、聚类）远高于仅生成嵌入的传统 RAG。&lt;/li&gt;&lt;li&gt;适用场景：更适合处理主题性强、实体关系紧密的领域知识库，而传统 RAG 更适用于简单事实查询和小型语料库。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.datacamp.com/zh/tutorial/graphrag"&gt;GraphRAG：基于图的检索增强生成 | DataCamp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>Meta发布Muse Wonder系列前沿模型，专门为AI Agent任务优化</title>
+      <link>https://www.inside.com.tw/article/42626-meta-muse-wonder-muse-wonder-full-frontier-models-agentic</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:cc5706da3173caa405237d26fd19b736</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T18:16:22Z</archive:collectedAt>
+      <description>Meta于2026年10月12日正式发布Muse Wonder和Muse Wonder Full两款新模型，自称是其史上最强模型系列，专门为个人和专业AI Agent任务设计。两款模型新增Active Memory（主动记忆）和Active Focus（主动专注）功能，前者实现跨对话信息保留，后者让Agent在复杂任务中持续推进目标。开发者现已可通过Meta Model API和Muse Code接口调用Muse Wonder，Muse Wonder Full暂时仅限Muse Code订阅用户使用。API定价为每百万输入Token 4美元、输出20美元、缓存输入0.2美元。</description>
+      <content:encoded>&lt;p&gt;Meta于2026年10月12日正式发布Muse Wonder和Muse Wonder Full两款新模型，自称是其史上最强模型系列，专门为个人和专业AI Agent任务设计。两款模型新增Active Memory（主动记忆）和Active Focus（主动专注）功能，前者实现跨对话信息保留，后者让Agent在复杂任务中持续推进目标。开发者现已可通过Meta Model API和Muse Code接口调用Muse Wonder，Muse Wonder Full暂时仅限Muse Code订阅用户使用。API定价为每百万输入Token 4美元、输出20美元、缓存输入0.2美元。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Meta推出专门为AI Agent优化的最强模型系列&lt;/li&gt;&lt;li&gt;新增Active Memory和Active Focus两大核心功能&lt;/li&gt;&lt;li&gt;开发者可立即通过Meta Model API访问Muse Wonder&lt;/li&gt;&lt;li&gt;定价每百万输入Token 4美元、输出20美元&lt;/li&gt;&lt;li&gt;在长程编码基准测试中表现超越GPT-6 Astra和Claude Opus 5.5&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.inside.com.tw/article/42626-meta-muse-wonder-muse-wonder-full-frontier-models-agentic"&gt;Inside技术报道：Meta发布前沿模型&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>智谱GLM-5.3 HighSpeed高速模型在ZCode中开始灰度测试</title>
       <link>https://m.sohu.com/a/1086731717_122066678?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334</link>
       <guid isPermaLink="false">urn:signal-archive:ai:7b1a3e6963044822e43f04851fde1a5a</guid>
@@ -61,6 +70,15 @@
       <archive:collectedAt>2026-10-13T06:18:15Z</archive:collectedAt>
       <description>智谱（智谱AI）在其AI编程工具ZCode中低调开启了GLM-5.3 HighSpeed高速旗舰模型的测试。社交媒体上的AI编程博主称其输出速度超过490 tokens/s，是现有国内主流模型速度的数倍，但此数据仅为灰度测试结果，实际服务性能待正式上线确认。该模型支持100万token上下文窗口，目前仅对部分ZCode订阅用户随机开放。</description>
       <content:encoded>&lt;p&gt;智谱（智谱AI）在其AI编程工具ZCode中低调开启了GLM-5.3 HighSpeed高速旗舰模型的测试。社交媒体上的AI编程博主称其输出速度超过490 tokens/s，是现有国内主流模型速度的数倍，但此数据仅为灰度测试结果，实际服务性能待正式上线确认。该模型支持100万token上下文窗口，目前仅对部分ZCode订阅用户随机开放。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;GLM-5.3 HighSpeed模型已在ZCode中开始灰度测试，输出速度据称超过490 tokens/s&lt;/li&gt;&lt;li&gt;速度远超当前主流模型（如DeepSeek V4.1 Flash的121.34 tokens/s）&lt;/li&gt;&lt;li&gt;目前仅供部分订阅用户随机访问，尚无正式申请渠道&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.sohu.com/a/1086731717_122066678?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"&gt;智谱GLM-5.3高速版模型测试启动，输出速度达490tokens/s_搜狐网&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>Anthropic研究警示：小型AI模型年内或具备物联网设备自我复制能力</title>
+      <link>https://www.inside.com.tw/article/42623-anthropic-self-replicating-ai-iot-botnet</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:46ee741cad93bed10aa4c0dd0332b992</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T18:16:22Z</archive:collectedAt>
+      <description>Anthropic顶尖红队于2026年10月12日发布研究显示，小型AI模型可能在数月内获得在物联网设备上自我复制的能力，无需数据中心支持。实验中使用15台单价55美元的Android电视盒通过管线并行成功运行260亿参数的Gemma4-26B-A4B模型，每秒输出0.39个token。研究发现，参数约90亿的模型能在9类硬件中的8类建立推理环境，而目前仅GLM-5.2等更强模型能完成端到端自我复制。若按当前发展速度推算，2026年底小型模型可能突破自主复制门槛。这对开发部署边缘AI模型的团队提出了新的安全考量。</description>
+      <content:encoded>&lt;p&gt;Anthropic顶尖红队于2026年10月12日发布研究显示，小型AI模型可能在数月内获得在物联网设备上自我复制的能力，无需数据中心支持。实验中使用15台单价55美元的Android电视盒通过管线并行成功运行260亿参数的Gemma4-26B-A4B模型，每秒输出0.39个token。研究发现，参数约90亿的模型能在9类硬件中的8类建立推理环境，而目前仅GLM-5.2等更强模型能完成端到端自我复制。若按当前发展速度推算，2026年底小型模型可能突破自主复制门槛。这对开发部署边缘AI模型的团队提出了新的安全考量。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Anthropic红队研究发现小型模型即将具备物联网设备自我复制能力&lt;/li&gt;&lt;li&gt;实验证明26B参数模型可在15台廉价电视盒上分布式运行&lt;/li&gt;&lt;li&gt;90亿参数模型在多种硬件上成功建立推理环境&lt;/li&gt;&lt;li&gt;去中心化复制体难以通过单一节点集中清除&lt;/li&gt;&lt;li&gt;研究人员建议制造商强化物联网设备默认安全设置&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.inside.com.tw/article/42623-anthropic-self-replicating-ai-iot-botnet"&gt;Inside技术分析报告&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持</title>

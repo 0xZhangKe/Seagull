@@ -12,7 +12,7 @@
 	<atom:link href="https://v1sta.xyz/feed/" rel="self" type="application/rss+xml" />
 	<link>https://v1sta.xyz</link>
 	<description>远景的幻想空间</description>
-	<lastBuildDate>Tue, 13 Oct 2026 12:11:29 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 13 Oct 2026 13:00:15 +0000</lastBuildDate>
 	<language>zh-Hans</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -32,6 +32,52 @@
 <atom:link rel="hub" href="https://websubhub.com/hub"/>
 <atom:link rel="self" href="https://v1sta.xyz/feed/"/>
 	<item>
+		<title>如何备份和管理Flash存档</title>
+		<link>https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/</link>
+					<comments>https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/#respond</comments>
+		
+		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
+		<pubDate>Tue, 13 Oct 2026 12:38:07 +0000</pubDate>
+				<category><![CDATA[ACG]]></category>
+		<category><![CDATA[技术]]></category>
+		<category><![CDATA[游戏]]></category>
+		<category><![CDATA[Flash]]></category>
+		<category><![CDATA[泞之翼]]></category>
+		<category><![CDATA[逃出梦中的别墅]]></category>
+		<guid isPermaLink="false">https://v1sta.xyz/?p=8209</guid>
+
+					<description><![CDATA[Flash游戏的存档同步一直是个大问题（例如泞之翼系列），如果是本地或者其他站点打开的SWF文件，其存档记录并 &#8230; <a href="https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/" class="more-link">继续阅读<span class="screen-reader-text">如何备份和管理Flash存档</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Flash游戏的存档同步一直是个大问题（例如泞之翼系列），如果是本地或者其他站点打开的SWF文件，其存档记录并不是同步的。前段时间为了接续主电脑的Flash存档放在X61T上去玩，去请教了社区的一些朋友，求得存档的存储位置。</p>
+
+
+
+<p class="wp-block-paragraph">在Windows系统下，Flash的存档状态存储在<del>臭名昭著的</del>AppData的这个路径下：</p>
+
+
+
+<pre class="wp-block-code"><code>%AppData%\Macromedia\Flash Player\#SharedObjects\</code></pre>
+
+
+
+<p class="wp-block-paragraph">只要是使用Flash Player打开的SWF文件，其所有的存档状态被储存为一个.sol后缀的文件，对于本地打开（localhost）的SWF文件则不分盘符、只认路径。</p>
+
+
+
+<p class="wp-block-paragraph">至于备份的方式，可以直接简单粗暴的复制粘贴然后做版本系统管理，用Robocopy写BAT还是同步到SVN、Acronis都算是一种办法。按照Unix的逻辑，一切皆文件。</p>
+
+
+
+<p class="wp-block-paragraph">有一些工具软件是可以可视化管理SWF甚至修改信息的，例如 <strong>FlashCookiesView</strong> 可以用来管理Windows电脑上的Flash存档，它是著名的NirSoft系列的软件之一；<strong>Flash Sol Editor</strong> 也是用来修改存档文件的工具，而<strong>JPEXS Free Flash Decompiler</strong> 反编译工具也有类似功能。</p>
+
+<p><a href="https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/" rel="nofollow">来源</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
+		<item>
 		<title>10-13 脑袋砸大包转鸟和省略号跑步</title>
 		<link>https://v1sta.xyz/acg/10-13-%e8%84%91%e8%a2%8b%e7%a0%b8%e5%a4%a7%e5%8c%85%e8%bd%ac%e9%b8%9f%e5%92%8c%e7%9c%81%e7%95%a5%e5%8f%b7%e8%b7%91%e6%ad%a5/</link>
 					<comments>https://v1sta.xyz/acg/10-13-%e8%84%91%e8%a2%8b%e7%a0%b8%e5%a4%a7%e5%8c%85%e8%bd%ac%e9%b8%9f%e5%92%8c%e7%9c%81%e7%95%a5%e5%8f%b7%e8%b7%91%e6%ad%a5/#respond</comments>
@@ -185,6 +231,53 @@
 <p><a href="https://v1sta.xyz/acg/10-08-%e8%bf%bd%e7%95%aa%e6%97%a5%e5%bf%97%ef%bc%9a%e8%b5%8c%e5%8d%9a%e9%bb%98%e7%a4%ba%e5%bd%95%e3%80%81%e9%a3%93%e9%a3%8e%e6%88%98%e9%ad%82/" rel="nofollow">来源</a></p>]]></content:encoded>
 					
 					<wfw:commentRss>https://v1sta.xyz/acg/10-08-%e8%bf%bd%e7%95%aa%e6%97%a5%e5%bf%97%ef%bc%9a%e8%b5%8c%e5%8d%9a%e9%bb%98%e7%a4%ba%e5%bd%95%e3%80%81%e9%a3%93%e9%a3%8e%e6%88%98%e9%ad%82/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
+		<item>
+		<title>10-06 Obsidian的WordPress插件</title>
+		<link>https://v1sta.xyz/tech/10-06-obsidian%e7%9a%84wordpress%e6%8f%92%e4%bb%b6/</link>
+					<comments>https://v1sta.xyz/tech/10-06-obsidian%e7%9a%84wordpress%e6%8f%92%e4%bb%b6/#respond</comments>
+		
+		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2026 12:58:35 +0000</pubDate>
+				<category><![CDATA[发现]]></category>
+		<category><![CDATA[技术]]></category>
+		<category><![CDATA[Obsidian]]></category>
+		<guid isPermaLink="false">https://v1sta.xyz/?p=8212</guid>
+
+					<description><![CDATA[前言：对于大多数情况，特别是纯文本，当代WordPress纯手动复制粘贴+外挂图床是最优解。由于API的问题， &#8230; <a href="https://v1sta.xyz/tech/10-06-obsidian%e7%9a%84wordpress%e6%8f%92%e4%bb%b6/" class="more-link">继续阅读<span class="screen-reader-text">10-06 Obsidian的WordPress插件</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">前言：对于大多数情况，特别是纯文本，当代WordPress纯手动复制粘贴+外挂图床是最优解。由于API的问题，它们全都不支持CPT（自定义帖子格式）以及附件去重功能。所以它不像OpenLiveWriter那样好用。</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://github.com/insdel-lab/gutenberg-publisher">https://github.com/insdel-lab/gutenberg-publisher</a></p>
+
+
+
+<p class="wp-block-paragraph">这是日本作者编写的Gutenberg插件，正如字面意思。只有英文和日文，并且在中文环境下会显示日文……还好我已经勉强能看懂。可以设置标签和分类，但不是很好用。如果不考虑附件增量更新的话，它对WordPress就是最优解。</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://github.com/writerp-777/obsidian-writing-studio">https://github.com/writerp-777/obsidian-writing-studio</a></p>
+
+
+
+<p class="wp-block-paragraph">这是一个更加宏大并且西式的写作插件……这不是机翻。<br>主要是写Newsletter用的插件。但我不太喜欢，而且并不熟悉西方的出版文化。主要是为Substack等媒体平台制作的，WordPress是顺手支持的功能。</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://github.com/devidcode/obsidian-publish-to-wordpress">https://github.com/devidcode/obsidian-publish-to-wordpress</a></p>
+
+
+
+<p class="wp-block-paragraph">依然是一个WordPress发布插件，但必须加入名为 <code>**Post final :**</code> 的文件头作为标头，才可以把之后的段落作为文章发布到WordPress上。也没有标签分类功能。</p>
+
+<p><a href="https://v1sta.xyz/tech/10-06-obsidian%e7%9a%84wordpress%e6%8f%92%e4%bb%b6/" rel="nofollow">来源</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://v1sta.xyz/tech/10-06-obsidian%e7%9a%84wordpress%e6%8f%92%e4%bb%b6/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
@@ -607,150 +700,6 @@
 <p><a href="https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/" rel="nofollow">来源</a></p>]]></content:encoded>
 					
 					<wfw:commentRss>https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
-		<item>
-		<title>追忆：神奇阿呦第33、34集 机器人大战</title>
-		<link>https://v1sta.xyz/acg/%e8%bf%bd%e5%bf%86%ef%bc%9a%e7%a5%9e%e5%a5%87%e9%98%bf%e5%91%a6%e7%ac%ac33%e3%80%8134%e9%9b%86-%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%a4%a7%e6%88%98/</link>
-					<comments>https://v1sta.xyz/acg/%e8%bf%bd%e5%bf%86%ef%bc%9a%e7%a5%9e%e5%a5%87%e9%98%bf%e5%91%a6%e7%ac%ac33%e3%80%8134%e9%9b%86-%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%a4%a7%e6%88%98/#respond</comments>
-		
-		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
-		<pubDate>Fri, 25 Sep 2026 20:28:03 +0000</pubDate>
-				<category><![CDATA[ACG]]></category>
-		<category><![CDATA[发现]]></category>
-		<category><![CDATA[追忆]]></category>
-		<category><![CDATA[机战]]></category>
-		<guid isPermaLink="false">https://v1sta.xyz/?p=7954</guid>
-
-					<description><![CDATA[Bookmarked 神奇阿呦第33集-国创-全集-高清正版在线观看-bilibili-哔哩哔哩 by 哔哩哔 &#8230; <a href="https://v1sta.xyz/acg/%e8%bf%bd%e5%bf%86%ef%bc%9a%e7%a5%9e%e5%a5%87%e9%98%bf%e5%91%a6%e7%ac%ac33%e3%80%8134%e9%9b%86-%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%a4%a7%e6%88%98/" class="more-link">继续阅读<span class="screen-reader-text">追忆：神奇阿呦第33、34集 机器人大战</span> <span class="meta-nav">&#8594;</span></a>]]></description>
-										<content:encoded><![CDATA[
-<div class="wp-block-indieblocks-bookmark"><div class="u-bookmark-of h-cite"><p><i>Bookmarked <a class="u-url p-name" href="https://www.bilibili.com/bangumi/play/ep437911?spm_id_from=333.337.0.0&amp;from_spmid=666.25.episode.0">神奇阿呦第33集-国创-全集-高清正版在线观看-bilibili-哔哩哔哩</a> by <span class="p-author">哔哩哔哩番剧</span>.</i></p></div></div>
-
-
-
-<p class="wp-block-paragraph">我不太记得我是什么时候看神奇阿呦的了，我也不记得具体的日期，以前还在定点看电视，但是对这两集记得非常清晰。</p>
-
-
-
-<p class="wp-block-paragraph">本集组的剧情主要是讲述一座机器人的城市，旧机种的机器人型号的机能被淘汰、被基于实际浮夸的智能化、高科技技术的新机体所取代，高层准备将旧机种全部回收制造新机体，而旧机种机器人则上街抗议，啊呦说不妨试试超级机器人大战（哆啦A梦的语气），旧机种自然是被新机体所碾压，但最终新机体型号的自我意识导致叛变，最终人们选择了旧机体。</p>
-
-
-
-<p class="wp-block-paragraph">乍一看是再平常不过的套路剧情，这却在现在的时代赋予了新的意义……</p>
-
-
-
-<p class="wp-block-paragraph">道理我都懂，小米为什么有魔神啊kora！</p>
-
-<p><a href="https://v1sta.xyz/acg/%e8%bf%bd%e5%bf%86%ef%bc%9a%e7%a5%9e%e5%a5%87%e9%98%bf%e5%91%a6%e7%ac%ac33%e3%80%8134%e9%9b%86-%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%a4%a7%e6%88%98/" rel="nofollow">来源</a></p>]]></content:encoded>
-					
-					<wfw:commentRss>https://v1sta.xyz/acg/%e8%bf%bd%e5%bf%86%ef%bc%9a%e7%a5%9e%e5%a5%87%e9%98%bf%e5%91%a6%e7%ac%ac33%e3%80%8134%e9%9b%86-%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%a4%a7%e6%88%98/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
-		<item>
-		<title>随想：有电就能用的NAS个人服务器</title>
-		<link>https://v1sta.xyz/think/%e9%9a%8f%e6%83%b3%ef%bc%9a%e6%9c%89%e7%94%b5%e5%b0%b1%e8%83%bd%e7%94%a8%e7%9a%84nas%e4%b8%aa%e4%ba%ba%e6%9c%8d%e5%8a%a1%e5%99%a8/</link>
-					<comments>https://v1sta.xyz/think/%e9%9a%8f%e6%83%b3%ef%bc%9a%e6%9c%89%e7%94%b5%e5%b0%b1%e8%83%bd%e7%94%a8%e7%9a%84nas%e4%b8%aa%e4%ba%ba%e6%9c%8d%e5%8a%a1%e5%99%a8/#respond</comments>
-		
-		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
-		<pubDate>Wed, 23 Sep 2026 08:20:41 +0000</pubDate>
-				<category><![CDATA[技术]]></category>
-		<category><![CDATA[随想]]></category>
-		<guid isPermaLink="false">https://v1sta.xyz/?p=7938</guid>
-
-					<description><![CDATA[在正在开发的混乱不堪的土地上建立数字帝国是一件极其挑战的事情。正如同工地上的帐篷，我需要一种临时提供服务的解决 &#8230; <a href="https://v1sta.xyz/think/%e9%9a%8f%e6%83%b3%ef%bc%9a%e6%9c%89%e7%94%b5%e5%b0%b1%e8%83%bd%e7%94%a8%e7%9a%84nas%e4%b8%aa%e4%ba%ba%e6%9c%8d%e5%8a%a1%e5%99%a8/" class="more-link">继续阅读<span class="screen-reader-text">随想：有电就能用的NAS个人服务器</span> <span class="meta-nav">&#8594;</span></a>]]></description>
-										<content:encoded><![CDATA[
-<p class="wp-block-paragraph">在正在开发的混乱不堪的土地上建立数字帝国是一件极其挑战的事情。<br>正如同工地上的帐篷，我需要一种临时提供服务的解决方案……我看向了那个性能恐怖但体验欠佳的Latitude（i7-8650U 4C8T 16GB，这已经是全村的希望了），在构想一种流动式NAS服务器。</p>
-
-
-
-<p class="wp-block-paragraph">但是PVE也好、TrueNAS、群晖、OMV、飞牛也罢，这些本质上都是Server级别的基建系统。但是全都没有真正意义上地支持笔记本电脑，调度和电池系统都变得不可用。换句话说，纵观整个PC机的历史，パソコン与鲭虽然同源，却因为某种人为的商业策略产生了生殖隔离（一大程度是Windows系的影响，另一说是SLA合同为了降低奇怪硬件的排查效率干扰和培训成本分流）致使市面上极其难见基于笔记本平台构建的服务器产品。即便是在XP MCE和Vista世代，微软有能把ThinkPad T42玩出花的解决方案展示——将笔记本作为Media Center的媒体库。但是这依然算不上真正的Server，并且也不推荐你在上面安装WHS2007（也就是最低阶的WinServer 2003）不过那个年代，家用对Server的依赖程度不高，即便是别墅。</p>
-
-
-
-<p class="wp-block-paragraph">所以消费级别的Windows显然足以大多数家用场合使用了。<br>去年这个时候我开始研究MPD和DietPi这样的单片机系统作为数字音频播放器，也就是数播/网播。本质上来说，是解耦「提供服务」与「服务器」的关系：究竟什么时候真的要用上类似小型机架构的基建服务器，还是像Windows 3.11 for Workgroups一样虽然有网络但人人平权的简单制度。</p>
-
-
-
-<p class="wp-block-paragraph">虽然在技术层面上，dnsmasq、SSO等中心制度的服务器管理技术与独立网卡的硬件系统仍旧有用，但是对于小型的场景来说，我希望它们简单化，不必像基建式小型机一样依赖各种服务器技术和硬件。<br>至少先从干掉RJ45开始。<br>结合实际上的应用场景，在拖地大扫除的时候，在我的区位规划中，落地电视和床头柜是唯二几乎稳定不动且不受集权管制的区域（类似于藩属）；或者像房车、出门在外这种场景无法也不打算部署整套Homelab。这些需求很特殊并且经济效益是不如中央服务器搭建内网穿透。但我开始<strong>恐慌哇塞秘境</strong>的存在。<br>事实上，大概几年前我就曾用一台Windows平板作为下载机，因为寨板的键盘实际难用，它也一定程度上承担了流动式服务器的功用。随用随关，没电了也没关系。</p>
-
-
-
-<p class="wp-block-paragraph">总而言之，我研究出来各种应用需求对网线与在线状态的依赖程度，以及如何解耦：</p>
-
-
-
-<ul class="wp-block-list">
-<li>固定：Home Assistant自动化系统是基建性质，必须部署在固定设备保持24小时开机。除非使用Zigbee2MQTT网关将控制与管理解耦。</li>
-
-
-
-<li>流动：简单的文件共享、媒体库不一定需要使用真正的阵列和存储池系统，是否固定24小时开启取决于对接的应用需求。</li>
-
-
-
-<li>固定：但iSCSI、VHD以及NVR存储后端还是应该24小时开机。</li>
-
-
-
-<li>流动：音频播放器本身是可以轻易地移植的系统，不听了随时可以关闭。</li>
-
-
-
-<li>固定：BitTorrent下载需要稳定的存储池和宽带网络接入支撑，也尽可能24小时开启。</li>
-
-
-
-<li>流动：RSS订阅器对固定设施的依赖程度很低，随缘。</li>
-
-
-
-<li>固定：邮件服务器，即便是内网的通知系统依然是同理的，必须24小时开机。</li>
-
-
-
-<li>流动：Minecraft Server服务器只要不是满人大服，或者只是分担主力机性能，那么也不是一个需要长期开机的需求。</li>
-
-
-
-<li>流动：Web Server LNMP，实际上依然是取决于需求，但本地WordPress开发也并不是那么需求长期开机。</li>
-
-
-
-<li>固定：虚拟桌面VDI，考虑到调度问题，尽可能使用真正的虚拟化平台。</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">笔记本的电池也是一个不错的UPS，虽然很多人说电池也有失效风险。</p>
-
-
-
-<p class="wp-block-paragraph">但我个人觉得健康的电池带来的优势作为有头服务器依然非常明显，我此时还想到一个用ThinkPad X230T/富士通T726搭建Drawpile电子画板的方案。还可以运行简单的WebView Kiosk浏览器来操作Home Assistant与Mopidy的Web UI。这个灵感源于Unraid也提供了一种有头启动打开本机管理器的引导选项。<br>上述的想法也正是考虑到「如果服务器没电了怎么办」的情况。这实际上已经脱离当今随Xeon推出抗衡小型机基建架构的服务器思维，转而类似90年代的网络平权的运行模式。</p>
-
-
-
-<p class="wp-block-paragraph">操作系统也变得不重要。我之前有看到过一篇文章是基于Fedora Core OS构建的简易NAS系统。当然还有<a href="https://perfectmediaserver.com/" target="_blank" rel="noopener">Perfect Media Server</a>这样的教程书体系。我自己也在尝试过将DietPi装进SD卡中运行，上到Latitude的8650U、下到Venue 8 Pro的Z8550，如果它能运行在Ventoy上那么可移植性会进一步增加。</p>
-
-
-
-<p class="wp-block-paragraph">虽然我不用Mac，但是根据这种应用式解耦，在一台Mac Mini或Macbook上运行也并不是难点。</p>
-
-
-
-<p class="wp-block-paragraph">选择何种的文件系统与存储池管理方式，也是一个具有争议的问题。</p>
-
-
-
-<p class="wp-block-paragraph">事已至此，先用D525或NTFS硬盘柜顶着吧，大多数人应该会这样想。</p>
-
-<p><a href="https://v1sta.xyz/think/%e9%9a%8f%e6%83%b3%ef%bc%9a%e6%9c%89%e7%94%b5%e5%b0%b1%e8%83%bd%e7%94%a8%e7%9a%84nas%e4%b8%aa%e4%ba%ba%e6%9c%8d%e5%8a%a1%e5%99%a8/" rel="nofollow">来源</a></p>]]></content:encoded>
-					
-					<wfw:commentRss>https://v1sta.xyz/think/%e9%9a%8f%e6%83%b3%ef%bc%9a%e6%9c%89%e7%94%b5%e5%b0%b1%e8%83%bd%e7%94%a8%e7%9a%84nas%e4%b8%aa%e4%ba%ba%e6%9c%8d%e5%8a%a1%e5%99%a8/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

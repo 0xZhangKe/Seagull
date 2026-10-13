@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-12T18:15:38+00:00</updated><author><name>Simon Willison</name></author><entry><title>Hello Python 3.15, goodbye 3.10, and now I can use 3.11</title><link href="https://simonwillison.net/2026/Oct/12/python-3-15/" rel="alternate"/><published>2026-10-12T18:15:38+00:00</published><updated>2026-10-12T18:15:38+00:00</updated><id>https://simonwillison.net/2026/Oct/12/python-3-15/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-13T13:32:00+00:00</updated><author><name>Simon Willison</name></author><entry><title>Quoting Geoffrey Huntley</title><link href="https://simonwillison.net/2026/Oct/13/geoffrey-huntley/" rel="alternate"/><published>2026-10-13T13:32:00+00:00</published><updated>2026-10-13T13:32:00+00:00</updated><id>https://simonwillison.net/2026/Oct/13/geoffrey-huntley/</id><summary type="html">
+    &lt;blockquote cite="https://ghuntley.com/agency/"&gt;&lt;p&gt;If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library. All of a sudden it's ten out of ten.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://ghuntley.com/agency/"&gt;Geoffrey Huntley&lt;/a&gt;, nobody should type code by hand anymore. here's what's left.&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/git"&gt;git&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/geoffrey-huntley"&gt;geoffrey-huntley&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="coding-agents"/><category term="generative-ai"/><category term="git"/><category term="agentic-engineering"/><category term="ai"/><category term="geoffrey-huntley"/><category term="llms"/></entry><entry><title>Hello Python 3.15, goodbye 3.10, and now I can use 3.11</title><link href="https://simonwillison.net/2026/Oct/12/python-3-15/" rel="alternate"/><published>2026-10-12T18:15:38+00:00</published><updated>2026-10-12T18:15:38+00:00</updated><id>https://simonwillison.net/2026/Oct/12/python-3-15/</id><summary type="html">
     &lt;p&gt;Python 3.15 &lt;a href="https://www.python.org/downloads/release/python-3150/"&gt;is here&lt;/a&gt;! Here's the essential &lt;a href="https://docs.python.org/3.15/whatsnew/3.15.html"&gt;What's new in Python 3.15&lt;/a&gt; guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11.&lt;/p&gt;
 &lt;p&gt;First, some highlights from Python 3.15.&lt;/p&gt;
 &lt;h4 id="explicit-lazy-imports"&gt;Explicit lazy imports&lt;/h4&gt;
@@ -540,24 +548,4 @@ Position 3 (hundreds): 6 + 9 = 15, write 5, carry 1
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/amazon-web-services"&gt;amazon-web-services&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="amazon-web-services"/><category term="ai"/><category term="coding-agents"/></entry><entry><title>September sponsors-only newsletter</title><link href="https://simonwillison.net/2026/Oct/3/newsletter/" rel="alternate"/><published>2026-10-03T22:00:31+00:00</published><updated>2026-10-03T22:00:31+00:00</updated><id>https://simonwillison.net/2026/Oct/3/newsletter/</id><summary type="html">
-    &lt;p&gt;I just sent the September edition of my &lt;a href="https://github.com/sponsors/simonw/"&gt;sponsors-only monthly newsletter&lt;/a&gt;. If you are a sponsor (or start a sponsorship now) you can &lt;a href="https://github.com/simonw-private/monthly/blob/main/2026-09-september.md"&gt;access it here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This month:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;More Fable class models&lt;/li&gt;
-&lt;li&gt;A pricing war&lt;/li&gt;
-&lt;li&gt;3D graphics, Blender, and pixel art&lt;/li&gt;
-&lt;li&gt;LLMs come for mathematics&lt;/li&gt;
-&lt;li&gt;So many more accidental cyberattacks&lt;/li&gt;
-&lt;li&gt;The vulnapocalypse comes for Datasette&lt;/li&gt;
-&lt;li&gt;What I'm using right now&lt;/li&gt;
-&lt;li&gt;My software releases this month&lt;/li&gt;
-&lt;li&gt;2026 in LLMs (so far)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here's &lt;a href="https://github.com/simonw/monthly-newsletter-archive/blob/main/2026-08-august.md"&gt;a copy of the August newsletter&lt;/a&gt; as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/newsletter"&gt;newsletter&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="newsletter"/></entry></feed>
+</summary><category term="amazon-web-services"/><category term="ai"/><category term="coding-agents"/></entry></feed>

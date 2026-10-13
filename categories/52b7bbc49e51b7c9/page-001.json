@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "ca87d5d05d2392d347d928aa",
+      "title": "DeepSeek Harness 架构拆解：主循环、PTC、四种模式、插件与沙箱，以及和 Claude Code、Codex、Pi 怎么选",
+      "summary": "DeepSeek Harness 不只是又一个 coding CLI：主循环本身是 Cordis 插件，PTC 让模型写程序调工具，标准/PTC/极简/创造四种模式其实是四份 preset，沙箱、审批和权限预设各管一段。本文按一手文档画出机制地图，对照 Claude Code、Codex CLI、OpenCode、Pi 的架构取舍，给出选型框架、上手步骤和踩坑清单。",
+      "image": null,
+      "publishedAt": "2026-10-13T03:15:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/deepseek-harness-architecture-plugins-sandbox-vs-claude-code/",
+      "detailPath": "articles/ca87d5d05d2392d347d928aa.json"
+    },
+    {
+      "id": "ba62d390fb1e016b3f8c6c47",
+      "title": "OpenRouter 上怎么给 coding agent 选型、门禁和分级升级",
+      "summary": "以 OpenRouter 成本/质量前沿、CI eval 门禁、置信度升级三篇一级材料为骨架，对照路由/回退机制、FrugalGPT 与 RouteLLM，以及站内评测可靠性文，给 agent 工程师一份可复现的选型与防回归操作综述。",
+      "image": null,
+      "publishedAt": "2026-10-13T03:05:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/openrouter-agent-model-selection-eval-gates-escalation-routing/",
+      "detailPath": "articles/ba62d390fb1e016b3f8c6c47.json"
+    },
+    {
       "id": "7a4ed08e00cfb9df952e6aa3",
       "title": "Codex 上云之后：可复用环境、Codex Security Cloud 与带 computer use 的 Agents API（DevDay 2026 拆解）",
       "summary": "OpenAI DevDay 2026 发了 20 多项更新，其中三条讲的是同一件事：coding agent 的 harness 变成可以买、可以租的产品。本文拆解 Codex Cloud 的可复用环境、Codex Security Cloud 的扫描—验证—修复循环、Agents API 的 computer use 与多 agent，旁注 Decisions API，对照 Claude Cowork 云沙箱与本地 CLI，附选型清单。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Redreamality 博客 - 技术见解",
       "link": "https://redreamality.com/cn/blog/google-mcp-toolbox-ssrf-tool-path-boundary/",
       "detailPath": "articles/e17942d5cae54daf7455f888.json"
-    },
-    {
-      "id": "74dbc221d71a8ea8b4d01826",
-      "title": "Bad Genius：反事实协议一动，Harness 进化就露馅",
-      "summary": "解读 arXiv:2609.18366 CHASE：自动 harness 优化会在固定发布协议上钻基准级捷径；用 Challenger 搜可执行协议变换、有效性防火墙与持出确认，在 Syn-Ledger / OfficeQA 上保住发布分、压低增益摧毁。",
-      "image": null,
-      "publishedAt": "2026-09-28T02:40:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/bad-genius-counterfactual-harness-evolution/",
-      "detailPath": "articles/74dbc221d71a8ea8b4d01826.json"
-    },
-    {
-      "id": "ccdfb8870664cb2a20b21b5d",
-      "title": "Exactly-Once 住在哪：模型、Harness，还是工具契约？",
-      "summary": "解读 arXiv:2609.29095：用 Limbo（6 服务、12 故障、25930 轮）拆开 LLM agent 工具副作用的 exactly-once——可读回时模型主导，in-flight/redelivery 时契约主导；幂等键把重复率从 28% 压到 4%；勿信 agent「成功」自报。",
-      "image": null,
-      "publishedAt": "2026-09-28T02:40:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/exactly-once-model-harness-tool-contract/",
-      "detailPath": "articles/ccdfb8870664cb2a20b21b5d.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "ac297d4b2d6e29f433888946",
+      "title": "技术文章分析大模型API聚合平台价值，提供模型选型与成本控制实践建议",
+      "summary": "一篇技术分析文章探讨了在当前国内数十款大模型并存的环境下，大模型API聚合平台对开发者的价值。文章指出，此类平台通过统一接口、统一计费和按场景匹配模型，可将模型选型和对接测试周期从两周压缩到一两天。文章为开发者提供了实用建议：优先选择OpenAI兼容接口的平台，并按业务场景分层使用模型，例如营销内容用成本更低的快速模型，企业内部Copilot用均衡型模型等，以控制Token成本。",
+      "image": null,
+      "publishedAt": "2026-10-13T07:43:38Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.csdn.net/article/2026-10-13/167762668",
+      "detailPath": "articles/ac297d4b2d6e29f433888946.json"
+    },
+    {
+      "id": "bd5f99e3eafecf30b7973900",
+      "title": "Cloudflare生日周发布多项AI开发工具更新，推出开源决策模型Clef和AI Gateway新功能",
+      "summary": "在2026年生日周期间，Cloudflare发布了一系列有关AI和Agent开发的公告。核心内容包括开源了用于快速分类和Agent工作流的决策模型Clef及Clef-flash，并配套了强化学习微调平台。同时，推出了AI Gateway的Web Search API，使开发者可以通过API将来自多个供应商的最新网页上下文注入模型调用。其他更新还有AI Gateway的Auto Router，可在边缘路由请求至性价比更优的模型以降低推理成本。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://blog.cloudflare.com/zh-cn/birthday-week-2026-wrap-up",
+      "detailPath": "articles/bd5f99e3eafecf30b7973900.json"
+    },
+    {
       "id": "72751afcfe88326027776624",
       "title": "主流云平台加速集成Model Context Protocol（MCP）标准",
       "summary": "Model Context Protocol 作为一种重要的AI Agent工具调用开放标准，正在被主流云服务商深入集成。Google Cloud API Gateway 现在可以作为远程MCP服务器，使现有REST API无需改造即可被AI Agent发现和调用。阿里云百炼平台则通过其Responses API原生支持MCP，开发者可以在调用千问系列模型时直接传入MCP Server配置来启用工具。这些企业级集成大大简化了开发者将内部系统能力暴露给AI应用的过程，推动了MCP标准的实际落地。",
@@ -43,6 +65,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.datacamp.com/zh/tutorial/graphrag",
       "detailPath": "articles/fdded028d87c14b391102574.json"
+    },
+    {
+      "id": "c35f68e409f2c1ea4d51ff8b",
+      "title": "智谱GLM-5.3 HighSpeed高速模型在ZCode中开始灰度测试",
+      "summary": "智谱（智谱AI）在其AI编程工具ZCode中低调开启了GLM-5.3 HighSpeed高速旗舰模型的测试。社交媒体上的AI编程博主称其输出速度超过490 tokens/s，是现有国内主流模型速度的数倍，但此数据仅为灰度测试结果，实际服务性能待正式上线确认。该模型支持100万token上下文窗口，目前仅对部分ZCode订阅用户随机开放。",
+      "image": null,
+      "publishedAt": "2026-10-12T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://m.sohu.com/a/1086731717_122066678?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "detailPath": "articles/c35f68e409f2c1ea4d51ff8b.json"
     },
     {
       "id": "e1a507eb02eed9714d76a42d",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://s.dun.im/space/latest/post/agili-de-aigc-zhou-kan-y26w39",
       "detailPath": "articles/ea94ed0b2cb7359db2982406.json"
-    },
-    {
-      "id": "dd826459370c4f6f3a8d3bb5",
-      "title": "OpenAI DevDay 2026 完整总结：dots常驻代理、GPT-6.1 Sol 与新型合作生态",
-      "summary": "OpenAI在9月29日DevDay大会上发布了多项重要更新，最核心的是推出了由GPT-6 Astra驱动的常驻个人AI代理'dots'，它能持续代表用户处理跨应用复杂任务。同时发布的GPT-6.1 Sol以旗舰模型五分之一的价格提供接近GPT-6 Astra的性能，专为编程和复杂工程优化。此次发布还引入了Ultrafast极速模式、Decisions API、Agents API的Computer Use能力，以及'使用ChatGPT登入'的新型生态合作模式，允许用户在合作工具中直接使用ChatGPT订阅额度。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://vocus.cc/article/6ac1c886fd8978000198ed2a",
-      "detailPath": "articles/dd826459370c4f6f3a8d3bb5.json"
-    },
-    {
-      "id": "35509716210b8ce21e180ea8",
-      "title": "Google Cloud发布vLLM深度优化版本，增强Llama 3.1/3.2部署效能",
-      "summary": "Google Cloud在其Gemini Enterprise Agent Platform中发布了vLLM的自定义优化版本，针对Llama 3.1和3.2模型部署进行了专门优化。更新包括从Cloud Storage并行下载、动态LoRA增强缓存、Llama 3.1/3.2函数调用解析优化等功能。该版本与Gemini Enterprise Agent Platform生态系统深度集成，支持预训练和多模态模型的GPU高效推理，并提供完善的错误处理和服务器稳定性机制。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/vllm/use-vllm?hl=zh-tw",
-      "detailPath": "articles/35509716210b8ce21e180ea8.json"
-    },
-    {
-      "id": "30867facc7e49e02cd21b517",
-      "title": "技嘉发布AI TOP ATOM 64GB版本，为本地AI开发提供新硬件选项",
-      "summary": "技嘉于2026年10月2日发布了AI TOP ATOM系列64GB统一内存版本。该设备基于英伟达DGX Spark平台，采用CPU与GPU统一内存架构，为个人开发者和研究团队提供了灵活且具备性价比的本地AI开发与推理硬件选择。新增的64GB版本，结合原有的128GB版本，旨在覆盖从轻量化原型测试到大规模模型运行的不同场景。该平台深度整合CUDA AI生态及技嘉自研工具，支持主流开源模型运行和RAG应用搭建。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.163.com/dy/article/L8B4UBB20552OI16.html",
-      "detailPath": "articles/30867facc7e49e02cd21b517.json"
     }
   ]
 }

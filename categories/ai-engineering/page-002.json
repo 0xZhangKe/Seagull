@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "dd826459370c4f6f3a8d3bb5",
+      "title": "OpenAI DevDay 2026 完整总结：dots常驻代理、GPT-6.1 Sol 与新型合作生态",
+      "summary": "OpenAI在9月29日DevDay大会上发布了多项重要更新，最核心的是推出了由GPT-6 Astra驱动的常驻个人AI代理'dots'，它能持续代表用户处理跨应用复杂任务。同时发布的GPT-6.1 Sol以旗舰模型五分之一的价格提供接近GPT-6 Astra的性能，专为编程和复杂工程优化。此次发布还引入了Ultrafast极速模式、Decisions API、Agents API的Computer Use能力，以及'使用ChatGPT登入'的新型生态合作模式，允许用户在合作工具中直接使用ChatGPT订阅额度。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://vocus.cc/article/6ac1c886fd8978000198ed2a",
+      "detailPath": "articles/dd826459370c4f6f3a8d3bb5.json"
+    },
+    {
+      "id": "35509716210b8ce21e180ea8",
+      "title": "Google Cloud发布vLLM深度优化版本，增强Llama 3.1/3.2部署效能",
+      "summary": "Google Cloud在其Gemini Enterprise Agent Platform中发布了vLLM的自定义优化版本，针对Llama 3.1和3.2模型部署进行了专门优化。更新包括从Cloud Storage并行下载、动态LoRA增强缓存、Llama 3.1/3.2函数调用解析优化等功能。该版本与Gemini Enterprise Agent Platform生态系统深度集成，支持预训练和多模态模型的GPU高效推理，并提供完善的错误处理和服务器稳定性机制。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/vllm/use-vllm?hl=zh-tw",
+      "detailPath": "articles/35509716210b8ce21e180ea8.json"
+    },
+    {
+      "id": "30867facc7e49e02cd21b517",
+      "title": "技嘉发布AI TOP ATOM 64GB版本，为本地AI开发提供新硬件选项",
+      "summary": "技嘉于2026年10月2日发布了AI TOP ATOM系列64GB统一内存版本。该设备基于英伟达DGX Spark平台，采用CPU与GPU统一内存架构，为个人开发者和研究团队提供了灵活且具备性价比的本地AI开发与推理硬件选择。新增的64GB版本，结合原有的128GB版本，旨在覆盖从轻量化原型测试到大规模模型运行的不同场景。该平台深度整合CUDA AI生态及技嘉自研工具，支持主流开源模型运行和RAG应用搭建。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.163.com/dy/article/L8B4UBB20552OI16.html",
+      "detailPath": "articles/30867facc7e49e02cd21b517.json"
+    },
+    {
       "id": "1bcff078fd7fa2b956e4706b",
       "title": "OpenAI推出Decisions API：150毫秒内完成结构化决策",
       "summary": "OpenAI在2026年DevDay上宣布了Decisions API，这是一个专注于快速结构化决策的新API。该API基于GPT-6 Luna模型，能够在150毫秒内从一组开发者预设的选项中做出选择，并返回置信度分数。开发者需要向API提供问题、候选答案和上下文。这为需要快速分类、路由决策或Agent控制的场景提供了原生支持，尤其适合机器人决策和请求分发等对延迟敏感的应用。",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "detailPath": "articles/60e5b3ec4f245ccc7a877e0f.json"
-    },
-    {
-      "id": "dfd696d96e2090d00652b37d",
-      "title": "Anthropic 发布 Claude Opus 5.5，显著提升性价比并调整 API 控制逻辑",
-      "summary": "据媒体报道，Anthropic 已正式发布 Claude Opus 5.5 模型。其 API 价格（输入4美元/百万token，输出20美元/百万token）较 Opus 5 降低约20%，性价比大幅提升，任务成本估算比 Opus 5 低约40%。在多项基准测试中，其性能追平甚至超越了更贵的 Claude Fable 5.1 和 OpenAI 的 GPT-6 Astra。API 行为发生重要变化：开发者不能再通过 API 参数（tool_choice）强制模型调用指定工具，也不能手动关闭“自适应思考”；模型将默认使用自适应思考，用户只能调整其思考强度（effort）。这意味着模型在工具调用和推理过程中获得了更多自主权，开发者需要调整对模型的控制方式，更多依赖提示工程来导向行为。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://m.36kr.com/p/3995270486873986",
-      "detailPath": "articles/dfd696d96e2090d00652b37d.json"
-    },
-    {
-      "id": "39451c4384b71cffb3f400a0",
-      "title": "微软 Copilot 重大更新：推出 Code 与 Autopilot，拆分计费模式并提供托管运行时",
-      "summary": "微软于2026年9月25日正式推出新版 Copilot，整合了 AI 应用构建与自动化能力。核心变化包括：1) \"Home\" 整合 Chat 与 Cowork，成为统一工作起点；2) \"Code\" 允许非工程师通过自然语言生成应用，并可在沙箱或企业租户内托管；3) \"Autopilot\" 作为常驻的 AI 助手，可自主监控与执行任务。计费模式拆分为固定订阅（用于日常对话）和按请求用量计费（用于 Code, Autopilot, CoWork 及 Astra/Fable 等前沿模型）。同时推出 Copilot Managed Runtime，为企业提供安全的应用托管环境，并提供开放的 SDK/CLI。这些更新旨在为开发者提供更完整的从构建到运营的 AI 应用平台，并赋予企业对成本与治理的精细控制。",
-      "image": null,
-      "publishedAt": "2026-09-25T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://news.microsoft.com/source/asia/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot?lang=zh-hant",
-      "detailPath": "articles/39451c4384b71cffb3f400a0.json"
-    },
-    {
-      "id": "bf4be19aec91326cb6a75d57",
-      "title": "开源决策模型 Laya 提供本地与AWS SageMaker部署方案",
-      "summary": "Laya是一款开源的typed-decision决策模型，与Jev类似但提供Apache 2.0开放权重。它通过choice、score、noul三类结构化问题返回决策结果，避免了大模型生成文本再解析的流程，减少延迟和格式错误。该模型可以在本地环境（如Apple Silicon Mac）或AWS SageMaker上部署，适用于Agent编排中的工具选择、客服分流、内容风控等需要快速结构化决策的场景。对开发者而言，这为解决",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://aws.amazon.com/cn/blogs/china/laya-service-validation-amazon-sagemaker",
-      "detailPath": "articles/bf4be19aec91326cb6a75d57.json"
     }
   ]
 }

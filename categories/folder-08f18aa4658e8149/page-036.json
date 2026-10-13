@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "265526c9aabec64266460814",
+      "title": "OpenWrt代理下split-horizon DNS导致的DNS分流失效",
+      "summary": "公司网站采用了split-horizon DNS，内网接入的时候DNS解析返回内网IPv4地址，外网接入的时候DNS解析返回公网IPv4地址和IPv6地址。再使用OpenWrt安装某些代理之后，...",
+      "image": null,
+      "publishedAt": "2026-04-08T06:43:57Z",
+      "sourceId": "d87239607d14c88c",
+      "sourceTitle": "怕刺",
+      "link": "https://pa.ci/448.html",
+      "detailPath": "articles/265526c9aabec64266460814.json"
+    },
+    {
+      "id": "242cf46c92b568095c827bd3",
+      "title": "分享慾",
+      "summary": "看到 Ricky 的這篇〈分享欲〉，他寫：",
+      "image": null,
+      "publishedAt": "2026-04-08T06:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/sharing-desire",
+      "detailPath": "articles/242cf46c92b568095c827bd3.json"
+    },
+    {
+      "id": "143a5b393cc26a139342e94e",
+      "title": "朝比奈也回家了｜收藏模型的規則",
+      "summary": "開箱 # 說到《涼宮春日》作品的吉祥物，肯定就是 朝比奈實玖瑠 了吧？ 涼宮春日的嘆息封面 Skin 會選擇買這個 Skin 外觀，是因爲小說第二集的封面就是這樣，服裝、表情、動作一模一樣！這也是我對實玖瑠的第一印象。 與有希、涼子合照。 老化 # 比較可惜的是，實玖瑠的腿看起來像是古銅色，應該是老化了。 在 2000～2012 年左右，吉他的包邊也很喜歡用某種材質，那些材質放到現在也都發黃了，後來好像也比較少用那種材料。 發黃的電吉他包邊。圖片取自 reddit 用戶：freshcannoli。 這個模型是無盒的，本體很好，完全沒問題。 但是底座灰塵很多，手一摸直接黑掉，我急著直接洗手、洗模型底座，沒有拍到照片，不確定先前是放在什麼環境。 不過非全新的嘛，本體也很好，其實也沒有感受不好，洗乾淨就好了。 入坑…",
+      "image": "https://eddielv.com/musings/mikuru/mikuru.jpg",
+      "publishedAt": "2026-04-08T02:37:14Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mikuru/",
+      "detailPath": "articles/143a5b393cc26a139342e94e.json"
+    },
+    {
+      "id": "eab198c88c934fa1ed0a2e7a",
+      "title": "讓 macOS 與 Linux 共用鍵盤、滑鼠、剪貼簿！",
+      "summary": "如果想用一套鍵盤滑鼠，同時在 Linux Mint 與 macOS 上要怎麼操作？ 安裝 # Linux Mint # sudo apt update sudo apt install barrier macOS # 用 homebrew # 安裝 homebrew（macOS 的終端機版 App Store） /bin/bash -c \" $( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh ) \" 安裝 Barrier brew install --cask barrier 從 Github 上下載 # 我是用這個方法，後來才知道有 homebrew 上有。 Github 下載頁面 ：macOS 用…",
+      "image": "https://eddielv.com/articles/barrier/barrier-client.png",
+      "publishedAt": "2026-04-08T01:02:00Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/barrier/",
+      "detailPath": "articles/eab198c88c934fa1ed0a2e7a.json"
+    },
+    {
       "id": "34003cc8a08f12752c78bd48",
       "title": "Eddie Lv 的大腦版本號",
       "summary": "這裡記錄大腦思維的轉變，版本號格式爲 ver.[Year].[Month].[修訂號碼]。 例如：ver.25.10.15 表示 2025 年 10 月的第 15 次更新。 版本號 更新內容 ver.26.09.2 擁有神經可塑性的觀念 ver.26.09.1 學會《 執行力的修練 》的四紀律 ver.26.08.1 開始用電吉他手的學習路徑看待電吉他彈奏 ver.26.07.4 吉他 Picking 速度來到 BPM 150 十六分音符 ver.26.07.3 禁慾使我專注力有感提升 ver.26.07.2 動畫觀影的共感能力變強 ver.26.07.1 我是我自己的世界中心，我安排自己的一切。 ver.26.04.5 變得容易愉悅，以及外向化一點點 ver.26.04.4 擁有 行動啓動閾值 概念 ver…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/imatate-ai/",
       "detailPath": "articles/73035760759c270a8f9cba79.json"
-    },
-    {
-      "id": "397ffa6bcc82f420a779add3",
-      "title": "「現在」的力量",
-      "summary": "說到「複利」，多數人的第一反應會覺得和投資理財有關。但生活中其實有許多事情──運動、學語言、練鋼琴、寫 blog、維持關係──都有複利效應。",
-      "image": null,
-      "publishedAt": "2026-04-01T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/the-power-of-now",
-      "detailPath": "articles/397ffa6bcc82f420a779add3.json"
-    },
-    {
-      "id": "02d4622c5f82b59d1c4d6736",
-      "title": "2026年3月月度总结",
-      "summary": "慵懒的春假流水账 考完最后一门经典物理里的数学方法以后，为期一个多月的春假开始了！ 考完第一顿奖励自己吃一碗杨国福！比脸还大的盆 给房间进行一通大扫除！ 打算包云吞然后邀请了同系的中国女生来家里玩，一起包云吞然后展示了我房间的海量棒子周边（对手指 买了玉米罐头和蘑菇包了两种不同馅的！ 因为考试的时候实在太紧绷了，刚放假的时候就一直在放空，每天起来就是做饭吃饭睡觉做饭吃饭睡觉。。。 普通的一天早餐，rewe金标橙子酱好好吃！ 小的时候就好爱吃沙县小吃里的云吞，自己做了一次发现做饭其实很简单！然后就想着能不能自己绞肉馅复制那种扁肉云吞的口感，但是不知道为什么找了几个超市都找不到绞肉机！在muller买了一个十四欧的料理棒，但是操作一下就发现声音巨大功率极低非常不好使，而且当时这样操作的时候舍友还突然回来了（抓狂不…",
-      "image": "https://circleyellowthere.de/images/IMG_7030.JPEG",
-      "publishedAt": "2026-04-01T00:00:00Z",
-      "sourceId": "c2f93c0c7c75bc8b",
-      "sourceTitle": "Circleyellowthere",
-      "link": "https://circleyellowthere.de/blog/9/",
-      "detailPath": "articles/02d4622c5f82b59d1c4d6736.json"
-    },
-    {
-      "id": "2db9e1bb01ff2e9a69f6fd90",
-      "title": "再談軟體工程幻滅",
-      "summary": "LLM 模型大幅進步的情況下，已經完全改變軟體開發的樣貌，寫出一個應用幾乎不需要任何門檻",
-      "image": "https://pbs.twimg.com/profile_images/15300142/profile_childfood_200x200.jpg",
-      "publishedAt": "2026-04-01T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/software-development/ai-generation-software-disenchantment/",
-      "detailPath": "articles/2db9e1bb01ff2e9a69f6fd90.json"
-    },
-    {
-      "id": "f89fa565c1b5fc07858c4fbf",
-      "title": "拍拍机",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-03-31T17:42:49Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/2/",
-      "detailPath": "articles/f89fa565c1b5fc07858c4fbf.json"
     }
   ]
 }

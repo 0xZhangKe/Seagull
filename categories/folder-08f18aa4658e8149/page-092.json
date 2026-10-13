@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "34c2fa47de776db55eb4cd3a",
+      "title": "Android Systrace 响应速度实战 1 ：了解响应速度原理",
+      "summary": "在讨论 Android 性能问题的时候， 卡顿 、 响应速度 、 ANR 这三个性能相关的知识点通常会放到一起来讲，因为引起卡顿、响应慢、ANR 的原因类似，只不过根据重要程度，被人为分成了卡顿、响应慢、ANR 三种，所以我们可以定义广义上的卡顿，包含了卡顿、响应慢和 ANR 三种，所以如果用户反馈说手机卡顿或者 App 卡顿，大部分情况下都是广义上的卡顿，需要搞清楚，到底出现了哪一种问题 如果是动画播放卡顿、列表滑动卡顿这种，我们一般定义为 狭义的卡顿 ，对应的英文描述我觉得应该是 Jank ；如果是应用启动慢、亮灭屏慢、场景切换慢，我们一般定义为 响应慢 ，对应的英文描述我觉得应该是 Slow ；如果是发生了 ANR，那就是 应用无响应问题 。三种情况所对应的分析方法和解决方法不太一样，所以需要分开来讲…",
+      "image": null,
+      "publishedAt": "2021-09-13T02:46:22Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/09/13/android-systrace-Responsiveness-in-action-1/",
+      "detailPath": "articles/34c2fa47de776db55eb4cd3a.json"
+    },
+    {
+      "id": "e3529668eac85ff1af0cf351",
+      "title": "《酒狂》演奏版本小考",
+      "summary": "《酒狂》是我最喜欢的古琴小品，古老却极具现代性。曲子没有定式，弹者各自解释演绎。所以版本间有区别，呈现性格。 李祥霆演绎。他考据《酒狂》是唐朝定谱，并介绍了一番他对此作看法。3:00 开始弹，",
+      "image": null,
+      "publishedAt": "2021-09-12T07:00:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2021/09/12/jiu-kuang/",
+      "detailPath": "articles/e3529668eac85ff1af0cf351.json"
+    },
+    {
+      "id": "81bafa81f79b087e9c0dafe2",
+      "title": "突如其来的崩溃",
+      "summary": "警钟长鸣 Chrome 突然自动升级，我丢了所有标签和标签组[^1]。同时由于这是我",
+      "image": null,
+      "publishedAt": "2021-09-11T07:00:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2021/09/11/chrome-update-bug/",
+      "detailPath": "articles/81bafa81f79b087e9c0dafe2.json"
+    },
+    {
+      "id": "bdadfc3d0bbf83dfdf162948",
+      "title": "Linux 版本 WPS 缩放问题导致字体模糊的解决方法",
+      "summary": "终于有原生 WPS 了, 打开一看却发现字体糊成一团,就好像没有抗锯齿",
+      "image": null,
+      "publishedAt": "2021-09-10T12:24:13Z",
+      "sourceId": "a3783910db542651",
+      "sourceTitle": "极东魔术昼寝结社",
+      "link": "https://blog.jaoushingan.com/2021/09/10/wps-scale/",
+      "detailPath": "articles/bdadfc3d0bbf83dfdf162948.json"
+    },
+    {
       "id": "a1c53a5614ff3b257ef56afe",
       "title": "打疫苗",
       "summary": "來打疫苗，一路上與市長一起入場，工作人員態度都超好，包含停車引導、量體溫等等。 舞台上還有表演者，等待時間還可以看表演唷。 #不知道市長沒來是不是一樣的態度xD",
@@ -615,50 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/takeaway/use-linkedin-efficiently/",
       "detailPath": "articles/10ff04b97dd4780a6f7612bf.json"
-    },
-    {
-      "id": "da2afe1e7261677ae7391b87",
-      "title": "将 mp4 视频切片成 ts 后使用 jsDelivr 加速制作 \"视频床\"",
-      "summary": "薅资本主义的羊毛",
-      "image": null,
-      "publishedAt": "2021-06-25T00:00:00Z",
-      "sourceId": "a3783910db542651",
-      "sourceTitle": "极东魔术昼寝结社",
-      "link": "https://blog.jaoushingan.com/2021/06/25/jsDelivr/%E8%96%85%E7%BE%8A%E6%AF%9B/",
-      "detailPath": "articles/da2afe1e7261677ae7391b87.json"
-    },
-    {
-      "id": "d1e4d3d6342f1aedf70254b8",
-      "title": "Python 实现窗口保持置顶",
-      "summary": "今天一边看视频一边用 Typora 记笔记的时候发现一个问题, Typora 自带的 保持窗口在最前端 不知何故会失效, 所以我就想用 Python 写一个可以让窗口强制指定的工具,",
-      "image": null,
-      "publishedAt": "2021-06-24T00:00:00Z",
-      "sourceId": "a3783910db542651",
-      "sourceTitle": "极东魔术昼寝结社",
-      "link": "https://blog.jaoushingan.com/2021/06/24/tools/window-to-top/",
-      "detailPath": "articles/d1e4d3d6342f1aedf70254b8.json"
-    },
-    {
-      "id": "2f50c386a314e1c0267f1cb7",
-      "title": "塞尔达传说游玩中",
-      "summary": "趁着塞尔达打折终于买下了这款经典游戏，疯狂玩了三天，记录下这几天的游玩体验。",
-      "image": null,
-      "publishedAt": "2021-06-22T07:52:58Z",
-      "sourceId": "ec4d8f7d2c53872d",
-      "sourceTitle": "Posts on Welcome to my little blue world ♡",
-      "link": "https://suicablog.cobaltkiss.blue/posts/the-legand-of-zelda/",
-      "detailPath": "articles/2f50c386a314e1c0267f1cb7.json"
-    },
-    {
-      "id": "2b6d0eec1d0ac5be778dcf00",
-      "title": "Themes Gallery",
-      "summary": "ALL custom themes in CobaltKiss . Updated on April 30th, 2022. Large size images are included. Recommend browsing under WIFI. ORIGINAL PICTURES AS BACKGROUND FOR THE PREVIEW THEME IMAGES IN THIS COLLECTION WILL NOT BE USED FOR COMMERCIAL PURPOSE. IF YOU ARE THE AUTHOR AND YOU DON’T WANT YOUR ARTWORK TO BE USED HERE, OR YOU FIND WRONG AUTHOR IS ATTACHED TO A…",
-      "image": null,
-      "publishedAt": "2021-06-22T00:00:00Z",
-      "sourceId": "ec4d8f7d2c53872d",
-      "sourceTitle": "Posts on Welcome to my little blue world ♡",
-      "link": "https://suicablog.cobaltkiss.blue/posts/themes-gallery/",
-      "detailPath": "articles/2b6d0eec1d0ac5be778dcf00.json"
     }
   ]
 }

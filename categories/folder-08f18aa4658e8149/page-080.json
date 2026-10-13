@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "35ee630194fb13519c9adb9a",
+      "title": "观《首尔之春》",
+      "summary": "听着外面淅淅沥沥的雨声，心血来潮想窝在床上看一部电影，于是就在网友的推荐下选择了这部去年上映的韩国电影——《首尔之春》。 （图片来自网络） 电影根据上世纪七十年代末动摇整个韩国的军事政变—— “双十二”军事政变 改编，两个小时的剧情全程紧凑刺激，基本上可以说是无尿点，个人感觉很不错。 不得不感叹，韩国人还是一如既往的敢拍。 电影有一句挺经典的台词：“失败了是叛变，成功了那就是革命”。不仅让我想到了海贼王里的多弗朗明哥。 海贼是恶？海军是正义？那种观念早被改写过无数次了！不会知道何为和平的小鬼们和不知道何为战争的小鬼们的价值观是不同的，只有立于顶点之人才可以定义善恶……正义会获胜？那是当然的了，只有胜者才是正义！ 是的，正义必胜。",
+      "image": null,
+      "publishedAt": "2024-07-04T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/shou-er-zhi-chun",
+      "detailPath": "articles/35ee630194fb13519c9adb9a.json"
+    },
+    {
+      "id": "b28a686623f61364ac060d1a",
+      "title": "读《乡土中国》",
+      "summary": "有段时间没读书了，趁晚上闲暇之余，便打开了这本盛名已久的《乡土中国》。 至于为何选择这本书，作为一个从小在农村长大，又喜欢在土里打滚的“野孩子”，那自然是对“乡土”这两个字有种天然的感情和兴趣。 这本书出版于上世纪四十年代，通过中西方对比，深度剖析了当时中国乡土社会的结构及其特征。 乡土社会的一个特点是生活安定，靠泥土谋生的人不能经常移动。人在一个地方出生，就要在这个地方生长下去，守着自己的一亩三分地，直至死去。 在乡土社会中，一个村就是一个社群，社群内的人们互帮互助，信奉孔孟之礼，并通过礼治来管理群体，讨厌一切具有冲突和不确定的因素。 作为农业大国，中国经历了漫长的农耕文明。现代的每个人往前推三代基本都经历过乡土社会。所以即便现在国家经历了几十年的高速发展，人们的思想、意识、价值观也发生了巨大变化，但一些扎…",
+      "image": null,
+      "publishedAt": "2024-07-03T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/xiang-tu-zhong-guo",
+      "detailPath": "articles/b28a686623f61364ac060d1a.json"
+    },
+    {
+      "id": "3e82e5e7fef201bea7d7f700",
+      "title": "Gumball 現場舞台劇",
+      "summary": "https://thehoneycombers.com/singapore/event/amazing-world-gumball-takeover-live-show/ 《阿甘妙世界》曾經在新加坡舉辦過 現場舞台劇 ？！我之前都沒聽說過。",
+      "image": null,
+      "publishedAt": "2024-07-03T15:56:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/gumball-live-stage-performance/",
+      "detailPath": "articles/3e82e5e7fef201bea7d7f700.json"
+    },
+    {
+      "id": "6406e58dd1512a44246a10eb",
+      "title": "AWS Account ID Reconnaissance",
+      "summary": "当获得一个AWS Account ID之后我们可能会对这个ID去做一些信息收集，而该账户的 IAM User/Role 是会被考虑的一个信息。下面就记一下如何通过一个 Account ID 收集该账户的 IAM User/Role。 使用角色信任策略 假设我们现在拿到了一个账户ID为 427648302155 ，我现在想知道这个账户下有哪些User和Role。 首先，我们在自己的AWS账户里随便新建一个角色，并将信任策略配置为 { \"Version\": \"2012-10-17\", \"Statement\": [ { \"Sid\": \"Statement1\", \"Effect\": \"Deny\", \"Principal\": { \"AWS\": \"*\" }, \"Action\": \"sts:AssumeRole\" } ]…",
+      "image": "https://skyblu3519.github.io/post-images/AWSIAMRolesReconnaissance/1720015041788-f8c779ad-ba14-4682-b64f-ed71f0c1722c.png",
+      "publishedAt": "2024-07-03T15:16:12Z",
+      "sourceId": "4f5bf353ca5bd538",
+      "sourceTitle": "skkyblu3",
+      "link": "https://skyblu3519.github.io/post/aws-account-id-reconnaissance/",
+      "detailPath": "articles/6406e58dd1512a44246a10eb.json"
+    },
+    {
       "id": "18499d43debf6065fa6924fb",
       "title": "[Pwnedlabs]Command Injection to EC2 User Data Privilege Escalation",
       "summary": "题目地址： https://pwnedlabs.io/labs/command-injection-to-ec2-user-data-privilege-escalation 题目描述： After a successful smishing attack on your client, Huge Logistics, you've obtained AWS credentials for a user account. Your task is to use these initial credentials to explore and possibly expand your access within their cloud environment. Your objective is to demo…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Blah Blah Booooom",
       "link": "https://zhuzi.dev/posts/2024-05-24-cf-r2-bucket/",
       "detailPath": "articles/1604dd57c90865dddb33a361.json"
-    },
-    {
-      "id": "71117ac7e89baa019b2a2c7b",
-      "title": "仙逆",
-      "summary": "最近每天睡前都在看国漫《仙逆》，目前还在连载中，只更新到了37集，大概占整体进度的不到十分之一。 对于这类由小说改编而成的动漫来说，这还是我第一次在没有看过原著的情况下就直接看动漫。好处是不会被原著剧情影响对动漫的期待，坏处则是因为动漫剧情太快，有些地方感觉略显跳脱。 这是一本很经典的仙侠小说，从2009年开始在起点上连载，直到2012年才完结。 那时候我还在上初中，看的都是那些被撕成一页一页的盗版小说。直到后面能看网文的时候，也只是知道诸如《斗罗大陆》、《斗破苍穹》、《武动乾坤》之类修仙小说，而《仙逆》是后来时常见网友提到才知道，但那时候已经有热度更高更好看的小说，所以对此就没了兴趣。 现在我已经把这本小说上传到了微信读书，打算偶尔看看。毕竟有时候看爽文是真的很爽。",
-      "image": null,
-      "publishedAt": "2024-05-23T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/xian-ni",
-      "detailPath": "articles/71117ac7e89baa019b2a2c7b.json"
-    },
-    {
-      "id": "cd3d79ddf09b74d47e83df5c",
-      "title": "Android Perfetto 系列 3：熟悉 Perfetto View",
-      "summary": "本篇是 Perfetto 系列文章的第三篇，前两篇介绍了 Perfetto 是什么以及 Perfetto Trace 怎么抓，本篇主要是在网页端打开 Perfetto Trace 之后，面对复杂的 Perfetto 信息该怎么看。 随着 Google 宣布 Systrace 工具停更，推出 Perfetto 工具，Perfetto 在我的日常工作中已经基本能取代 Systrace 工具。同时 Oppo、Vivo 等大厂也已经把 Systrace 切换成了 Perfetto，许多新接触 Android 性能优化的小伙伴对于 Perfetto 那眼花缭乱的界面和复杂的功能感觉头疼，希望我能把之前的那些 Systrace 文章使用 Perfetto 来呈现。",
-      "image": null,
-      "publishedAt": "2024-05-20T23:30:23Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-03-how-to-analysis-perfetto/",
-      "detailPath": "articles/cd3d79ddf09b74d47e83df5c.json"
-    },
-    {
-      "id": "cf7d9716e997a897533d806d",
-      "title": "Android Perfetto 系列 2：Perfetto Trace 抓取",
-      "summary": "上一篇文章 Android Perfetto 系列 1：Perfetto 工具简介 介绍了 Perfetto 是什么，这篇简单介绍一下 Perfetto 的抓取。 随着 Google 宣布 Systrace 工具停更，推出 Perfetto 工具，Perfetto 在我的日常工作中已经基本能取代 Systrace 工具。同时 Oppo、Vivo 等大厂也已经把 Systrace 切换成了 Perfetto，许多新接触 Android 性能优化的小伙伴对于 Perfetto 那眼花缭乱的界面和复杂的功能感觉头疼，希望我能把之前的那些 Systrace 文章使用 Perfetto 来呈现。",
-      "image": null,
-      "publishedAt": "2024-05-20T23:29:41Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-02-how-to-get-perfetto/",
-      "detailPath": "articles/cf7d9716e997a897533d806d.json"
-    },
-    {
-      "id": "997fd13c84aa00f414d7f205",
-      "title": "Android Perfetto 系列 1：Perfetto 工具简介",
-      "summary": "本篇是 Perfetto 系列文章的第一篇，主要是简单介绍 Perfetto 工具，包括 Perfetto 的历史、发展，以及 Perfetto 能做什么。 随着 Google 宣布 Systrace 工具停更，推出 Perfetto 工具，Perfetto 在我的日常工作中已经基本能取代 Systrace 工具。同时 Oppo、Vivo 等大厂也已经把 Systrace 切换成了 Perfetto，许多新接触 Android 性能优化的小伙伴对于 Perfetto 那眼花缭乱的界面和复杂的功能感觉头疼，希望我能把之前的那些 Systrace 文章使用 Perfetto 来呈现。",
-      "image": null,
-      "publishedAt": "2024-05-20T23:29:22Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-01-What-is-perfetto/",
-      "detailPath": "articles/997fd13c84aa00f414d7f205.json"
     }
   ]
 }

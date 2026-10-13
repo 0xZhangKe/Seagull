@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "324d9935db4551f5713aef89",
+      "title": "我其實不是「官大為」",
+      "summary": "跟大家說一個小祕密，那就是：我的名字其實不是「官大為」。",
+      "image": "https://wiwi.blog/assets/images/wei2-739fa9fb1916b50b2ae13e0ed387e073.jpg",
+      "publishedAt": "2026-01-04T06:30:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/my-name-is-not",
+      "detailPath": "articles/324d9935db4551f5713aef89.json"
+    },
+    {
+      "id": "1d7a90ca729b94220b2b12ca",
+      "title": "麻油雞麵線",
+      "summary": "小時候有戶鄰居很喜歡煮麻油雞，常常大白天就能聞到香味，可謂「一家煮雞萬家香」。",
+      "image": "https://alicehsu.blog/images/Post24home.jpg",
+      "publishedAt": "2026-01-04T01:30:00Z",
+      "sourceId": "a08fec079b5bc196",
+      "sourceTitle": "Alice Hsu's Blog",
+      "link": "https://alicehsu.blog/zh-tw/posts/2026/01/sesame_oil_chicken_misua/",
+      "detailPath": "articles/1d7a90ca729b94220b2b12ca.json"
+    },
+    {
+      "id": "c54ffb50a483d1a925ed0852",
+      "title": "Hugo 的頁面 Type",
+      "summary": "新版的 Hugo 對某些定義變得很嚴格，只要條件不滿足，就不會渲染、生成到 Public 中。 這次更新，除了 code 語法不定義會讓我主題無法渲染 ，而 歷史上的今天 因爲沒定義頁面 type，也造成無法正常渲染。 原始檔案與路徑 # 頁面位置在： content/on-this-day.md title: \"歷史上的今天\" layout: \"on-this-day\" 排版位置在： themes/classic/layouts/page/on-this-day.html 這次問題就就在於，以前的 Hugo 會依序在好幾個地方尋找指定的 layout: \"on-this-day\" ，而且 Eddie 很久之前就是有研究過官方 docs，結論是好幾個地方可以放，所以 Eddie 沒去記憶，就隨便丟，讓 hug…",
+      "image": null,
+      "publishedAt": "2026-01-03T18:26:50Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/hugo-type/",
+      "detailPath": "articles/c54ffb50a483d1a925ed0852.json"
+    },
+    {
+      "id": "8da6464d37e8c7098493fbff",
+      "title": "Hugo 更新災難 SOS",
+      "summary": "前言 # 架設官網 時，一開始用了一個很複雜的主題，必須要最新的 hugo 版本，裝完之後發現太麻煩了，還要用到 docker，就換了一個簡單一點的的主題。 回頭到部落格發文 # 夭壽，突然發現過往文章 css 格式跑掉了： 查看 git 後發現，原始檔案根本都沒動，而 public 有幾百個檔案有變動。 查看後發現原始文章的 .md 若有用兩組「```」包起來，文字就會變得無法閱讀。 最後聯想到應該是 hugo 版本的問題。 弄了幾小時後… # 一直以爲是渲染失敗的問題，查了很久，最後發現如果有對「```」定義語言 1 ，就能正常渲染成功。 而 Eddie 早期的文章都沒定義，於是就出事了！ 把文章的 ``` 全部加上 text # 也試過在 config 調整設定，還是無法，最後決定把所有文章都加上 te…",
+      "image": "https://eddielv.com/musings/hugo-update-sos/weird-format.png",
+      "publishedAt": "2026-01-03T17:33:51Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/hugo-update-sos/",
+      "detailPath": "articles/8da6464d37e8c7098493fbff.json"
+    },
+    {
       "id": "82e4b9b4657f275ef0b754d6",
       "title": "读书笔记——阿特伍德自传",
       "summary": "刚想说今年阿特伍德出了新书，发现已经是去年的事了。2025年阿特伍德出了新书，是她的第一本自传，得知消息后赶紧在图书馆预约系统里排上队。11月新书出版后没等太久就送到家附近的图书馆了。借来翻开一读，发现好看得停不下来！ 其实我之前只读过 The Handmaid's Tale，去看过一次她和 Steven Paikin 的现场对谈，对她的文字说不上熟悉，所以这次读这本书，感觉是第一次透过文字好好认识她。她的写作很有节奏感，非常幽默，而且很简洁，一句废话都没有，真不愧是加拿大国宝啊。 书到期了，今天要还回去，读了三分之一，时间线上大致是从她父母的相识讲到她刚去哈佛读博士。很多事情让我印象深刻，比如她童年时期每年的夏天都有几个月住在魁省北部的森林里，因此和自然非常的亲近。她念大学的时候暑假的工作是在夏令营当领队…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Prologue 序章",
       "link": "https://prologue.dev/blog/2025-summary",
       "detailPath": "articles/8f97a493dde4eb7175aec078.json"
-    },
-    {
-      "id": "056818cbd4e9428db4ad11cd",
-      "title": "yt-dlp 最佳聲音格式",
-      "summary": "用 yt-dlp 下載原始聲音格式 # yt-dlp -f bestaudio -x URL yt-dlp -x URL 開頭先列了指令，以便未來查看。 正文開始 # 一直以來 Eddie 下載 Youtube 音樂都會轉成 mp3 檔，也沒別的原因，只是從小就是使用這個格式，早以習慣。 然而，mp3 在 2025 的現在，在技術層面其實已經過時了，只是仍然被流傳，而新格式還不流行。 如果有三個聲音檔案大小、長度完全一樣，比對音質會發現 Opus(.opus) > AAC(.m4a) >mp3(.mp3)。 yt-dlp 轉 mp3 # 其實 yt-dlp 在執行 yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 \"youtube 網址\"…",
-      "image": null,
-      "publishedAt": "2025-12-28T23:24:12Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/best-lossy-formet/",
-      "detailPath": "articles/056818cbd4e9428db4ad11cd.json"
-    },
-    {
-      "id": "2732488240603e73d0cd4ae1",
-      "title": "自架部落格的優缺點",
-      "summary": "沒有人按讚、按愛心、拍手，我是為何而寫呢？",
-      "image": "https://alicehsu.blog/images/Post22home.jpeg",
-      "publishedAt": "2025-12-28T23:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2025/12/pros-and-cons-of-self-hosted-blogs/",
-      "detailPath": "articles/2732488240603e73d0cd4ae1.json"
-    },
-    {
-      "id": "670c12f4c7c5d846f3325781",
-      "title": "不敢跟音控說",
-      "summary": "前幾天的 聖誕音樂成發 後來收到回饋（或者說客訴），某個有演出的老師說他都聽不到自己的聲音，說他樂器都沒聲音。 我們找到影片，外場確實每個樂器都有聲音，但監聽只有樂手自己才知道到底有沒有聲音，而彩排時每一組都有走過，當下也沒有反應聽不到的問題。 這場演出，Eddie 甚至會每個學生問：「你聽得到自己聲音嗎？」除非明顯很大聲的樂器，Eddie 才不會問。 而 Eddie 沒有去詢問老師們演出的音量 ok 不 ok，因爲 Eddie 誤以爲老師會有能力可以判斷，並且在有需要的時候提出要求，平時面對老師的演出都是這樣子處理的。 這裡也算是 Eddie 的失誤，因爲不是每個在音樂教室教學的老師，都擁有豐富的演出經驗，Eddie 沒有想到這點。 這件事講到最後，對接人說：「老師當下不敢說他聽不到」 聽到當下差點沒暈倒，…",
-      "image": null,
-      "publishedAt": "2025-12-28T22:17:10Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/be-scared-speak/",
-      "detailPath": "articles/670c12f4c7c5d846f3325781.json"
-    },
-    {
-      "id": "b4a265af7937c4f232fa51f3",
-      "title": "人設崩壞讓人生氣。",
-      "summary": "仔細思考看完 《某大叔的 VRMMO 活動記》 這麼氣的原因，問題出在人設崩壞， 動畫 中主角在最後一集做了跟以往不一樣思維的事。 其他例子 # 平時跟暗樁粉絲 大跳 （舞），但真粉絲想一起大跳就不行（會影響演出）。 平時提倡「人體工學椅無用論」，後來自己出了人體工學相關產品。 因爲樂器太多，選擇用除溼機除整個琴房的溼氣而非防潮箱；接了防潮箱葉配後：我再也不忍了！然後開箱防潮箱，讚歎防潮箱的好。",
-      "image": null,
-      "publishedAt": "2025-12-28T21:47:10Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/persona-collapse/",
-      "detailPath": "articles/b4a265af7937c4f232fa51f3.json"
     }
   ]
 }

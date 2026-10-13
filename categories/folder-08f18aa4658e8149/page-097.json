@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "be3a6d783d9faf6f3288a7a4",
+      "title": "区块链学习笔记——概念与简单JS实现",
+      "summary": "在哔哩哔哩上看 是落拓呀 的区块链简明教程，趁热打铁，把自己学习过程记录下来 本项目的 Github 地址 ↓ [github repo=“taurusxin/taurusxincoin” /] 区块 区块即是每一次的交易，比如A转账给B十元，那么这条交易就写在这个区块内 区块里面实际包含的是 交易数据 本次交易的 hash 前一次交易的 hash 其中本一次交易的 hash 为 “本次交易的数据 + 上一次交易的hash” 的 hash 值 用简明的伪代码表示就是 1 2 3 4 5 Block = { data = '' , hash = sha256 ( data + previousHash ), previousHash = '' } 链 链就是一系列区块的总和，与之相联通的就是 hash 值，每一…",
+      "image": null,
+      "publishedAt": "2020-07-12T16:28:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/blockchain-01/",
+      "detailPath": "articles/be3a6d783d9faf6f3288a7a4.json"
+    },
+    {
+      "id": "4ebc786dae6d7950f5e10dcc",
+      "title": "apt upgrade acdemic",
+      "summary": "似乎很久没有更新博客了，最近学业真是的太忙了，忙着申请学校，忙着去找老师写介绍信，忙着开始新的生活。 很久没更新的原因，大概是脑子里的想法太多，一拍即合的点子很少，总觉得自己有学不完的技术栈，看不完的从入门到入土教程书。 昨天更新了一条朋友圈。 最近发生了很多 表妹高考的结束，即是人生新一步的起点，我们约好一起出发旅行，在上大学之前放松一次 Rhyland Tech 也逐渐步入正轨，开始规划公司的未来 还有最好朋友的生日，已经欠了2次了 最重要的就是，我即将进行雅思首考，在9月5号，杭州 … 除此之外，还有不少的任务 Node.js 全栈开发 Leetcode 新家装修 … 大概就是这样。 英国 说一下将来一年的学业规划。 考雅思是为了出国学习研究生课程，综合目前的形势来说，排除COVID-19的影响，明年出…",
+      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/07/3181345122.png",
+      "publishedAt": "2020-07-11T20:34:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/acdemic-upgrade/",
+      "detailPath": "articles/4ebc786dae6d7950f5e10dcc.json"
+    },
+    {
+      "id": "5869100096a55cdc85152f51",
+      "title": "南山必胜客与社会主义法治",
+      "summary": "马克思告诫人们，不要低估资本无孔不入的侵蚀性。",
+      "image": null,
+      "publishedAt": "2020-07-11T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2020-07-11",
+      "detailPath": "articles/5869100096a55cdc85152f51.json"
+    },
+    {
+      "id": "3fb572fe0750ffffbf6c3ac2",
+      "title": "南山必胜客与社会主义法治",
+      "summary": "马克思告诫人们，不要低估资本无孔不入的侵蚀性。",
+      "image": null,
+      "publishedAt": "2020-07-11T00:00:00Z",
+      "sourceId": "3e335517f4e1112a",
+      "sourceTitle": "Dr.Pika's Blog",
+      "link": "https://blog.drpika.com/posts/2020-07-11",
+      "detailPath": "articles/3fb572fe0750ffffbf6c3ac2.json"
+    },
+    {
       "id": "1ba56f00984ccc02bdbbb5c4",
       "title": "传说中的 EB 绿卡面试",
       "summary": "在闹 COVID-19 的正当中，Miki 和 Colin 赴了一场绿卡面试的约。 2020/10/14更新：这篇也放到了 一亩三分地论坛的讨论帖 ，Miki 在回复里针对疑问添加了一些补充内容。 忽然的通知 # 在提交 I-485 8个月之后，某一天忽然收到了 USCIS 的来信。听说 USCIS 最近的状况不太平，因为疫情很厉害停过一阵工，又因为总统的 Executive Order 在一些 case 的处理上有了挺大变动，所以并没有指望我们的申请在短时间内会有进度。巷传中有些 Employment Based 申请人已经免去面试直接发卡了，所以同样是 EB 的我们可能是被特别眷顾了吧。 带 Toddler 一起去吗 # 所以生小孩也是一种投名状，都是提着人头来的，只不过落草是杀人，婚姻是造人。 通知的时…",
@@ -615,50 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/crawl-homework-answers-with-python/",
       "detailPath": "articles/f2a802fcf2b21171a245552e.json"
-    },
-    {
-      "id": "f710509e959bc37570bca4c4",
-      "title": "前朝的剑斩本朝的官",
-      "summary": "这两天故宫的事情搞的群情激愤。但是有人用「溥仪进去都要买票」来批评显然没有搞清楚一件事情：「故宫是属于赵家人的，而且仅属于现任赵家人」。溥仪进不去是因为他退位的时候就不是赵家人了，搬他出来就相当于「用前朝的剑斩本朝的官」。",
-      "image": null,
-      "publishedAt": "2020-01-01T08:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/01/01/forbidden-city/",
-      "detailPath": "articles/f710509e959bc37570bca4c4.json"
-    },
-    {
-      "id": "e9493518d1c8eebcb13cde24",
-      "title": "博客平台近况更新",
-      "summary": "最近对博客进行了一些小更新。 框架仍旧用 Hexo，但是不再搭建在 Github 上。因为很多次 Deploy 之后无法触发 Github 的 Build。于是转至 Netlify，意外得好用。它可以和 Git",
-      "image": null,
-      "publishedAt": "2019-12-31T08:50:52Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2019/12/31/blog-stack-update/",
-      "detailPath": "articles/e9493518d1c8eebcb13cde24.json"
-    },
-    {
-      "id": "489a4f23bf0bfe4ac2465497",
-      "title": "2019年终小记",
-      "summary": "关于2019年",
-      "image": null,
-      "publishedAt": "2019-12-31T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/2019%E5%B9%B4%E7%BB%88%E5%B0%8F%E8%AE%B0/",
-      "detailPath": "articles/489a4f23bf0bfe4ac2465497.json"
-    },
-    {
-      "id": "dff720e94eb5a6b98ed7971f",
-      "title": "关于民航总医院恶性伤医事件的一点引申思考",
-      "summary": "当医务人员把患者放在了对立面，医患关系永无宁日。",
-      "image": null,
-      "publishedAt": "2019-12-30T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2019-12-30",
-      "detailPath": "articles/dff720e94eb5a6b98ed7971f.json"
     }
   ]
 }

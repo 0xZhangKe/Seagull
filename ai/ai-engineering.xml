@@ -5,6 +5,23 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>技术文章分析大模型API聚合平台价值，提供模型选型与成本控制实践建议</title>
+      <link>https://www.csdn.net/article/2026-10-13/167762668</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:01fcab20ea640b582dfad7f38102c063</guid>
+      <pubDate>Tue, 13 Oct 2026 07:43:38 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T06:18:15Z</archive:collectedAt>
+      <description>一篇技术分析文章探讨了在当前国内数十款大模型并存的环境下，大模型API聚合平台对开发者的价值。文章指出，此类平台通过统一接口、统一计费和按场景匹配模型，可将模型选型和对接测试周期从两周压缩到一两天。文章为开发者提供了实用建议：优先选择OpenAI兼容接口的平台，并按业务场景分层使用模型，例如营销内容用成本更低的快速模型，企业内部Copilot用均衡型模型等，以控制Token成本。</description>
+      <content:encoded>&lt;p&gt;一篇技术分析文章探讨了在当前国内数十款大模型并存的环境下，大模型API聚合平台对开发者的价值。文章指出，此类平台通过统一接口、统一计费和按场景匹配模型，可将模型选型和对接测试周期从两周压缩到一两天。文章为开发者提供了实用建议：优先选择OpenAI兼容接口的平台，并按业务场景分层使用模型，例如营销内容用成本更低的快速模型，企业内部Copilot用均衡型模型等，以控制Token成本。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;关注为简化多模型对接而生的API聚合平台&lt;/li&gt;&lt;li&gt;强调按场景分层选用模型以优化成本&lt;/li&gt;&lt;li&gt;建议优先选择提供OpenAI标准兼容接口的平台&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.csdn.net/article/2026-10-13/167762668"&gt;大模型API聚合平台暗战：谁在悄悄给开发者递上最趁手的兵器？-CSDN.NET&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>Cloudflare生日周发布多项AI开发工具更新，推出开源决策模型Clef和AI Gateway新功能</title>
+      <link>https://blog.cloudflare.com/zh-cn/birthday-week-2026-wrap-up</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:7697491dc6be927afe76f51304d246c8</guid>
+      <archive:collectedAt>2026-10-13T06:18:15Z</archive:collectedAt>
+      <description>在2026年生日周期间，Cloudflare发布了一系列有关AI和Agent开发的公告。核心内容包括开源了用于快速分类和Agent工作流的决策模型Clef及Clef-flash，并配套了强化学习微调平台。同时，推出了AI Gateway的Web Search API，使开发者可以通过API将来自多个供应商的最新网页上下文注入模型调用。其他更新还有AI Gateway的Auto Router，可在边缘路由请求至性价比更优的模型以降低推理成本。</description>
+      <content:encoded>&lt;p&gt;在2026年生日周期间，Cloudflare发布了一系列有关AI和Agent开发的公告。核心内容包括开源了用于快速分类和Agent工作流的决策模型Clef及Clef-flash，并配套了强化学习微调平台。同时，推出了AI Gateway的Web Search API，使开发者可以通过API将来自多个供应商的最新网页上下文注入模型调用。其他更新还有AI Gateway的Auto Router，可在边缘路由请求至性价比更优的模型以降低推理成本。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;包括开源决策模型Clef/Clef-flash、RL微调平台等多项更新&lt;/li&gt;&lt;li&gt;推出AI Gateway的Web Search API，整合多家供应商的实时网页上下文到大模型调用中&lt;/li&gt;&lt;li&gt;发布Auto Router功能，可在边缘对请求分类并路由至合适模型以降低成本&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/zh-cn/birthday-week-2026-wrap-up"&gt;2026 生日周发布内容一览 | Cloudflare 博客&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>主流云平台加速集成Model Context Protocol（MCP）标准</title>
       <link>https://help.aliyun.com/zh/model-studio/mcp</link>
       <guid isPermaLink="false">urn:signal-archive:ai:bed196aa38b3b3e054c7adbf50dd841a</guid>
@@ -35,6 +52,15 @@
       <archive:collectedAt>2026-10-12T06:29:05Z</archive:collectedAt>
       <description>DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。</description>
       <content:encoded>&lt;p&gt;DataCamp 发布的技术指南详细介绍了 GraphRAG，这是一种通过构建知识图谱来增强检索生成能力的高级 RAG 技术。它旨在解决传统 RAG 系统在回答需要全局理解或多步推理的复杂问题时的局限性，代表了 RAG 技术向更结构化、关联性更强方向的发展。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;传统 RAG 的局限：基于语义相似度的块检索，难以处理需要综合多个文档信息或进行多跳推理的复杂查询。&lt;/li&gt;&lt;li&gt;GraphRAG 的核心创新：构建一个全局知识图谱（实体为节点，关系为边），并利用社区发现算法对相关实体进行聚类，为每个社区生成摘要。&lt;/li&gt;&lt;li&gt;解决全局查询：通过 map-reduce 方式整合各社区摘要，而非检索海量片段，能回答关于整个语料库的宏观问题（如“主要趋势是什么？”）。&lt;/li&gt;&lt;li&gt;支持多跳推理：系统可以沿着知识图谱中的连接路径（边）遍历，追踪分散在不同文档中的关联概念。&lt;/li&gt;&lt;li&gt;对比权衡：GraphRAG 在全局查询和多跳推理上更强，但索引成本（需要实体抽取、图构建、聚类）远高于仅生成嵌入的传统 RAG。&lt;/li&gt;&lt;li&gt;适用场景：更适合处理主题性强、实体关系紧密的领域知识库，而传统 RAG 更适用于简单事实查询和小型语料库。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.datacamp.com/zh/tutorial/graphrag"&gt;GraphRAG：基于图的检索增强生成 | DataCamp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>智谱GLM-5.3 HighSpeed高速模型在ZCode中开始灰度测试</title>
+      <link>https://m.sohu.com/a/1086731717_122066678?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:7b1a3e6963044822e43f04851fde1a5a</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T06:18:15Z</archive:collectedAt>
+      <description>智谱（智谱AI）在其AI编程工具ZCode中低调开启了GLM-5.3 HighSpeed高速旗舰模型的测试。社交媒体上的AI编程博主称其输出速度超过490 tokens/s，是现有国内主流模型速度的数倍，但此数据仅为灰度测试结果，实际服务性能待正式上线确认。该模型支持100万token上下文窗口，目前仅对部分ZCode订阅用户随机开放。</description>
+      <content:encoded>&lt;p&gt;智谱（智谱AI）在其AI编程工具ZCode中低调开启了GLM-5.3 HighSpeed高速旗舰模型的测试。社交媒体上的AI编程博主称其输出速度超过490 tokens/s，是现有国内主流模型速度的数倍，但此数据仅为灰度测试结果，实际服务性能待正式上线确认。该模型支持100万token上下文窗口，目前仅对部分ZCode订阅用户随机开放。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;GLM-5.3 HighSpeed模型已在ZCode中开始灰度测试，输出速度据称超过490 tokens/s&lt;/li&gt;&lt;li&gt;速度远超当前主流模型（如DeepSeek V4.1 Flash的121.34 tokens/s）&lt;/li&gt;&lt;li&gt;目前仅供部分订阅用户随机访问，尚无正式申请渠道&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.sohu.com/a/1086731717_122066678?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"&gt;智谱GLM-5.3高速版模型测试启动，输出速度达490tokens/s_搜狐网&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持</title>

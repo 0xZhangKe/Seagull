@@ -307,6 +307,15 @@
       <content:encoded>&lt;p&gt;一篇发表于InfoQ的深度技术分析文章，探讨了OpenAI多智能体系统（Dots， Agents API）产品化背后的技术本质。文章引述OpenAI研究员Noam Brown的观点，强调近期突破的核心驱动力是基础模型能力的跃升以及通过多智能体实现的“测试时计算”并行化，而非智能体的规模效应本身。这对开发者的实际指导意义在于：构建AI系统时应优先投资于高质量的基座模型和高效的推理架构，而不是盲目追求智能体数量。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;InfoQ深度文章分析了OpenAI DevDay 2026发布的多智能体产品（如 Dots 和 Agents API）及其背后的技术原理&lt;/li&gt;&lt;li&gt;OpenAI研究员Noam Brown指出，解决千禧年难题的核心突破主要归功于强大的基础模型和并行推理计算，而非单纯的多智能体数量&lt;/li&gt;&lt;li&gt;文章详细阐述了多智能体系统作为“测试时计算”并行扩展方式的优缺点和高效协作机制&lt;/li&gt;&lt;li&gt;强调了在当前阶段，基础模型的质量和长时运行能力比智能体数量更为关键&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.infoq.cn/article/3MSU3CcJuh0XjHDyjhXj"&gt;InfoQ: OpenAI刚把多Agent做成产品，o1奠基人却说：1万个Agent解出世界级难题，多Agent贡献不到10%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>Claude Haiku 5.5 发布，API成本大幅降低且具备可调节推理能力</title>
+      <link>https://www.unite.ai/anthropic-releases-claude-haiku-5-5-cutting-small-model-api-prices</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:4b9250c27a431db730af3510d18b63ce</guid>
+      <pubDate>Wed, 07 Oct 2026 11:08:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T12:18:02Z</archive:collectedAt>
+      <description>Anthropic于2026年10月7日发布Claude Haiku 5.5，这是其小型模型系列的最新版本，API价格相比前代大幅降低。对于大多数请求（10万token以下），输入和输出定价分别为每百万token $0.10和$0.50，显著降低了摘要、分类等批量任务的开发成本，并引入了可调节推理强度设置。</description>
+      <content:encoded>&lt;p&gt;Anthropic于2026年10月7日发布Claude Haiku 5.5，这是其小型模型系列的最新版本，API价格相比前代大幅降低。对于大多数请求（10万token以下），输入和输出定价分别为每百万token $0.10和$0.50，显著降低了摘要、分类等批量任务的开发成本，并引入了可调节推理强度设置。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;相比Haiku 4.5典型成本降低约75%&lt;/li&gt;&lt;li&gt;针对10万token以下请求定价$0.10/$0.50每百万&lt;/li&gt;&lt;li&gt;首个支持可调节推理强度的Haiku模型&lt;/li&gt;&lt;li&gt;在OSWorld基准上性能大幅提升&lt;/li&gt;&lt;li&gt;适用于高容量、成本敏感的任务&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.unite.ai/anthropic-releases-claude-haiku-5-5-cutting-small-model-api-prices"&gt;Anthropic发布Haiku 5.5及定价 (来源 Unite.AI)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://shattered.io/claude-haiku-5-5-api-price-cut-75-percent-2026"&gt;Claude Haiku 5.5 API成本降低75% (来源 Shattered)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>Anthropic发布Claude Haiku 5.5：API成本降低约75%，引入可调节推理强度</title>
       <link>https://shattered.io/claude-haiku-5-5-api-price-cut-75-percent-2026</link>
       <guid isPermaLink="false">urn:signal-archive:ai:3361190174c128ab9ffd385ab406ee1a</guid>
@@ -438,6 +447,15 @@
       <content:encoded>&lt;p&gt;为遵守欧盟AI法案的生成内容溯源规定，OpenAI宣布为ChatGPT和Codex文本输出引入名为textGrain的隐形水印技术。该水印通过在模型选词时嵌入统计信号实现，不可见但可被专用检测器识别。全球API用户可主动为部分模型启用，在欧盟地区的ChatGPT输出将逐步强制添加。然而技术有局限：经过编辑（如同义词替换）后检测率会大幅下降，因此OpenAI强调水印仅用于内容溯源，不能用于判断版权、责任或人类参与度。开发者若需向欧盟提供服务，需在技术集成中考虑此变化。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;应对欧盟AI法案(EU AI Act)透明度要求&lt;/li&gt;&lt;li&gt;技术名为textGrain，基于统计信号&lt;/li&gt;&lt;li&gt;全球API客户可主动开启，欧盟区ChatGPT将自动应用&lt;/li&gt;&lt;li&gt;检测器暂不对公众开放&lt;/li&gt;&lt;li&gt;经编辑或同义词替换后检测率显著下降&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.yingzheng.com/article/openai-watermarking-chatgpt-eu-ai-act"&gt;OpenAI将在欧盟为ChatGPT文本加水印&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://news.marsbit.co/20261006091913715470.html"&gt;刚刚，ChatGPT 推出文字水印，GPT-6 提速 50%&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
+      <title>OpenAI Decisions API 进入公共测试版，提供快速结构化决策接口</title>
+      <link>https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:65f020d022926efb180db8ac59223bfe</guid>
+      <pubDate>Tue, 06 Oct 2026 07:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T12:18:02Z</archive:collectedAt>
+      <description>2026年10月6日，OpenAI发布了Decisions API的公开测试版，这是一个专门用于快速结构化决策的新API端点。开发者可以利用它进行请求路由、内容分类、Agent决策等任务，API返回类型化答案的速度比传统Responses API快约10倍，且只对输入token收费，简化了Agent应用的成本计算。</description>
+      <content:encoded>&lt;p&gt;2026年10月6日，OpenAI发布了Decisions API的公开测试版，这是一个专门用于快速结构化决策的新API端点。开发者可以利用它进行请求路由、内容分类、Agent决策等任务，API返回类型化答案的速度比传统Responses API快约10倍，且只对输入token收费，简化了Agent应用的成本计算。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;专门用于结构化决策的新端点&lt;/li&gt;&lt;li&gt;基于GPT-6 Luna模型&lt;/li&gt;&lt;li&gt;提供三种问题类型(谓词, 选择, 评分)&lt;/li&gt;&lt;li&gt;输入定价$0.10/百万token，无输出费&lt;/li&gt;&lt;li&gt;支持文本和图像输入&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna"&gt;OpenAI API changelog及Decisions指南 (来源 Unite.AI)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://cellcog.ai/blog/openai-decisions-api"&gt;OpenAI Decisions API 对比及定价 (来源 CellCog)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>OpenAI宣布GPT-6系列模型速度提升50%</title>
       <link>https://finance.sina.com.cn/tech/roll/2026-10-06/doc-iniufsvm2174314.shtml</link>
       <guid isPermaLink="false">urn:signal-archive:ai:df55e3083e7969dc30209e1a46474acd</guid>
@@ -479,6 +497,15 @@
       <archive:collectedAt>2026-10-12T08:29:16Z</archive:collectedAt>
       <description>OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。</description>
       <content:encoded>&lt;p&gt;OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;推出专用 POST /v1/decisions 端点，仅支持 gpt-6-luna 模型&lt;/li&gt;&lt;li&gt;支持谓词 (Predicate)、选择 (Choice)、评分 (Score) 三种结构化输出&lt;/li&gt;&lt;li&gt;输入定价为每百万token 0.10美元，输出token及缓存读写免费&lt;/li&gt;&lt;li&gt;支持文本和图像（Base64数据URL格式）输入&lt;/li&gt;&lt;li&gt;据官方称，相较于通过Responses API调用同一模型，决策速度最高可快10倍&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877"&gt;Decisions API is now available in Public Beta - OpenAI Developer Community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://developers.openai.com/api/docs/guides/decisions"&gt;Decisions | OpenAI API&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://aiweekly.co/alerts/openai-launches-decisions-api-public-beta-on-gpt-6-luna"&gt;OpenAI launches Decisions API public beta on GPT-6 Luna | AI Weekly&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>开源模型Reflection Beam发布，专注编码与Agent工作负载</title>
+      <link>https://shattered.io/ai-open-source-bet-86-percent-beam-mistral-2026</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:ff23c34a7a39f40524444719bed5a1b9</guid>
+      <pubDate>Mon, 05 Oct 2026 07:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-13T12:18:02Z</archive:collectedAt>
+      <description>Reflection AI于2026年10月5日发布了Beam模型，这是一个5010亿参数规模（230亿活跃参数）的开源稀疏混合专家模型，定位为编码、推理和Agent任务的竞争性开源选项，并计划在2026年10月底前发布完整模型权重，为开发者提供了前沿开源模型的另一选择。</description>
+      <content:encoded>&lt;p&gt;Reflection AI于2026年10月5日发布了Beam模型，这是一个5010亿参数规模（230亿活跃参数）的开源稀疏混合专家模型，定位为编码、推理和Agent任务的竞争性开源选项，并计划在2026年10月底前发布完整模型权重，为开发者提供了前沿开源模型的另一选择。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;稀疏混合专家架构，总参5010亿，活跃参230亿&lt;/li&gt;&lt;li&gt;专注于编码、推理和Agent工作负载&lt;/li&gt;&lt;li&gt;计划在2026年10月底前开源完整权重&lt;/li&gt;&lt;li&gt;反映了开源与闭源模型竞争的新态势&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://shattered.io/ai-open-source-bet-86-percent-beam-mistral-2026"&gt;Reflection AI推出开源模型Beam (来源 Shattered)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>Google调整Gemini个人账户服务方案：大幅收窄免费用户权限</title>

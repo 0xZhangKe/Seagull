@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "84a48f2023672a976c7f1947",
+      "title": "AI 逆向与 clean-room 重写：REA、PhotoCraft、chardet 和 Malus 放在一起看",
+      "summary": "把 REA 的 agent 逆向工具链、ArtCraft PhotoCraft 的「clean-room 重写 Photoshop」、chardet 7 用 Claude 重写并改许可、Malus 的讽刺站点放在一起，拆开 AI 逆向与重写的机制、经典 clean room 与 AI 版的差别、许可与著作权风险，并给出一份判断与使用的决策框架。",
+      "image": null,
+      "publishedAt": "2026-10-14T13:30:00Z",
+      "sourceId": "52b7bbc49e51b7c9",
+      "sourceTitle": "Redreamality 博客 - 技术见解",
+      "link": "https://redreamality.com/cn/blog/ai-reverse-engineering-clean-room-rewrite-licensing/",
+      "detailPath": "articles/84a48f2023672a976c7f1947.json"
+    },
+    {
       "id": "ca87d5d05d2392d347d928aa",
       "title": "DeepSeek Harness 架构拆解：主循环、PTC、四种模式、插件与沙箱，以及和 Claude Code、Codex、Pi 怎么选",
       "summary": "DeepSeek Harness 不只是又一个 coding CLI：主循环本身是 Cordis 插件，PTC 让模型写程序调工具，标准/PTC/极简/创造四种模式其实是四份 preset，沙箱、审批和权限预设各管一段。本文按一手文档画出机制地图，对照 Claude Code、Codex CLI、OpenCode、Pi 的架构取舍，给出选型框架、上手步骤和踩坑清单。",
@@ -648,17 +659,6 @@
       "sourceTitle": "Redreamality 博客 - 技术见解",
       "link": "https://redreamality.com/cn/blog/coding-agents-cost-inefficient-behaviors/",
       "detailPath": "articles/928c9766d5491094ae9d1f0c.json"
-    },
-    {
-      "id": "e17942d5cae54daf7455f888",
-      "title": "MCP 工具路径上的 SSRF：Google MCP Toolbox 与 HTTP 出网边界",
-      "summary": "解读 CVE-2026-14540 / GHSA-3x3x-8ffg-ghcv：MCP HTTP 工具路径上的 SSRF（CWE-918）为何对 agent 危险；SSRFGuard 默认拒绝私网；MCP 工具服务器为何落在经典 SCA 调用图之外；升级 1.5.0+ 与配置旋钮。",
-      "image": null,
-      "publishedAt": "2026-09-28T08:40:00Z",
-      "sourceId": "52b7bbc49e51b7c9",
-      "sourceTitle": "Redreamality 博客 - 技术见解",
-      "link": "https://redreamality.com/cn/blog/google-mcp-toolbox-ssrf-tool-path-boundary/",
-      "detailPath": "articles/e17942d5cae54daf7455f888.json"
     }
   ]
 }

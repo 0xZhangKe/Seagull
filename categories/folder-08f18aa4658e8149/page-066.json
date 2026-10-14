@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "d0c75b5a4e8dcd7078f19f4b",
+      "title": "Android Perfetto 系列 5：Android App 基于 Choreographer 的渲染流程",
+      "summary": "本文介绍了 App 开发者不经常接触到但在 Android Framework 渲染链路中非常重要的一个类 Choreographer，包括 Choreographer 的引入背景、简介、部分源码解析、与 MessageQueue 的交互、在 APM 中的应用，以及手机厂商基于 Choreographer 的一些优化思路。 Choreographer 的引入主要是配合 Vsync，为上层应用的渲染提供稳定的 Message 处理时机。当 Vsync 信号到来时，系统通过对 Vsync 信号周期的调整，控制每一帧绘制操作的时机。目前主流手机的屏幕刷新率已达到 120Hz，即每 8.3ms 刷新一次，系统为配合屏幕刷新频率，相应调整 Vsync 周期。当应用有待处理的帧回调时，Choreographer 请求 V…",
+      "image": null,
+      "publishedAt": "2025-03-26T10:55:11Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2025/03/26/Android-Perfetto-05-Chorergrapher/",
+      "detailPath": "articles/d0c75b5a4e8dcd7078f19f4b.json"
+    },
+    {
+      "id": "91262750e0c062c7d9e0724b",
+      "title": "小h疯了",
+      "summary": "h是我那个骗婚的朋友，已经很久不联系了，前天写《三十岁, 我变成了直男》中提起过他，我觉得我这人嘴巴特邪，刚写完这篇，次日早晨就接到了h的电话，电话接通她问我听出来她是谁了不，我说我存你电话了，啥事啊，她言语中带慌张。 h疯了，他两天没睡觉了，也不让我睡觉，暴躁、砸东西，他妈来都没按住他，我被他快折磨死了，他不让我上班去，我也两天没睡觉了，早晨我骗他喝了一碗鸡蛋茶，里头放了6片镇静的药，人家大夫说一天3次一次2颗，我一次都给他吃了，刚才打电话给大夫，人让我看着点他，怕他死咯。 啊？他怎么弄的？怎么好好的就疯了？ 其实不然，我也是明知故问，h这几年精神状态就不大好，二〇年做生意，不善经营连续亏损，从事业有成的小老板一落千丈到背债七八十万的老赖，其实他不会或者说不适合做生意，总想着从客户手里多抠搜点利润，或者偷偷…",
+      "image": "https://ihaihe.cn/wp-content/uploads/2025/03/255dff30d7914dbd9187a1f954d2cff2.webp",
+      "publishedAt": "2025-03-26T08:07:51Z",
+      "sourceId": "8e1a97c92477b087",
+      "sourceTitle": "三十里海河",
+      "link": "https://ihaihe.cn/3152.htm",
+      "detailPath": "articles/91262750e0c062c7d9e0724b.json"
+    },
+    {
       "id": "c1d4aab7ae961eb10637a8a7",
       "title": "我用過的鋼琴",
       "summary": "不知不覺，我的鋼琴之旅已經走了快要 35 個年頭！今天來短短地寫一下到目前為止，我擁有過的鋼琴們。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/articles/4321remix/",
       "detailPath": "articles/11f0c037136c2f41486d3bf6.json"
-    },
-    {
-      "id": "73689a0f4b2b79b598ee06ae",
-      "title": "即使集市再繁荣也应该拥有属于自己的独立店铺",
-      "summary": "在平台上注册账号发布内容，就像在集市上摆摊",
-      "image": "https://her.blue/content/images/2025/03/001UiLgnly1gupqrm9kcxj61rw0uiqk803.jpg",
-      "publishedAt": "2025-03-10T05:26:09Z",
-      "sourceId": "ab8f1a7d1b3e35d8",
-      "sourceTitle": "HerBlue 她的蓝",
-      "link": "https://her.blue/ji-shi-ji-shi-zai-fan-rong-ye-ying-gai-yong-you-shu-yu-zi-ji-de-du-li-dian-pu/",
-      "detailPath": "articles/73689a0f4b2b79b598ee06ae.json"
-    },
-    {
-      "id": "2e3f2a78caa297450b677567",
-      "title": "Three.js Journey Notes 2 - Classic Techniques",
-      "summary": "课程链接：three.js journey 其他几篇： Notes 1 - Basics Notes 3 - Advanced Techniques Part1 Notes 4 - Advanced Techniques Part2 Notes 5 - Advanced Techniques Part3 Lights# basically walk through all lights types to demonstrate them one by one and feel what they can do. AmbientLight applies omnidirectional(全方向的) lighting on all geometries of the scene. good to simulate…",
-      "image": "https://static.zhuzi.dev/threejs-journey/haunted-house-1.png",
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/threejs-journey-notes-2-classic-techniques/",
-      "detailPath": "articles/2e3f2a78caa297450b677567.json"
     }
   ]
 }

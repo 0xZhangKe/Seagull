@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "553adef8a305e40ce856157d",
+      "title": "ElevenAgents每月自动化处理22,000个支持工单，端到端解决率达65%",
+      "summary": "ElevenLabs展示其ElevenAgents平台每月自动化处理超过22,000个客户支持工单，端到端解决率65%，首次平均响应时间从数小时缩短至60秒。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://elevenlabs.io/zh/blog/how-we-solve-22000-support-tickets-every-month-with-elevenagents",
+      "detailPath": "articles/553adef8a305e40ce856157d.json"
+    },
+    {
+      "id": "a1a7eaa0e457e0f704f03091",
+      "title": "开发者指南详解vLLM与Ollama生产部署选择标准",
+      "summary": "技术博客对比vLLM与Ollama的部署场景，为开发者提供基于工作负载、GPU数量、模型大小和API兼容性的生产决策指南。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://omidsaffari.com/blog/a2a-protocol",
+      "detailPath": "articles/a1a7eaa0e457e0f704f03091.json"
+    },
+    {
       "id": "5d9f502ff7c3345036d73e8a",
       "title": "谷歌正式发布Gemini 4 Argon旗舰大模型API",
       "summary": "谷歌于2026年10月13日正式通过API发布其旗舰大模型Gemini 4 Argon，并在Gemini App及智能体平台Antigravity中向订阅用户推出。该模型大幅提升了上下文长度，并在专业任务和多步骤工作流中表现出色，同时以极具竞争力的首发定价策略面向开发者。",
@@ -10,6 +32,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://k.sina.com.cn/article_5953189932_162d6782c067050svw.html?from=tech",
       "detailPath": "articles/5d9f502ff7c3345036d73e8a.json"
+    },
+    {
+      "id": "28e0cbb18c2ebc13b0897d4d",
+      "title": "谷歌全面开放Gemini 4 Argon API，提供限期折扣定价和100万令牌上下文窗口",
+      "summary": "谷歌于10月13日正式向所有付费API客户开放Gemini 4 Argon，提供统一100万令牌的输入输出限制，引入限期定价为每百万输入/输出令牌$2/$10，12月1日起将翻倍至$4/$20。",
+      "image": null,
+      "publishedAt": "2026-10-13T12:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://thenewstack.io/gemini-4-argon-live",
+      "detailPath": "articles/28e0cbb18c2ebc13b0897d4d.json"
     },
     {
       "id": "ac297d4b2d6e29f433888946",
@@ -109,6 +142,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.inside.com.tw/article/42623-anthropic-self-replicating-ai-iot-botnet",
       "detailPath": "articles/75b8877bb8037380754d99bf.json"
+    },
+    {
+      "id": "28f73308435fb4ec6a7385d5",
+      "title": "Anthropic加强防御蒸馏攻击，新措施将数据提取量减少90-99%",
+      "summary": "Anthropic于10月12日宣布强化对模型蒸馏攻击的防御系统，通过三层防护措施将攻击者可提取的推理数据减少了90-99%，并已封禁数万个恶意账号。",
+      "image": null,
+      "publishedAt": "2026-10-12T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.anthropic.com/research/distillation-defenses",
+      "detailPath": "articles/28f73308435fb4ec6a7385d5.json"
     },
     {
       "id": "e1a507eb02eed9714d76a42d",
@@ -615,50 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna",
       "detailPath": "articles/5b4f7b5669fe758dcea46bce.json"
-    },
-    {
-      "id": "888c1c76bb12178e4f120a02",
-      "title": "OpenAI宣布GPT-6系列模型速度提升50%",
-      "summary": "OpenAI于2026年10月6日宣布，已优化GPT-6 Astra和GPT-6.1 Sol模型的默认速度，订阅用户在所有产品中使用这些模型时速度提升约50%。这一改进覆盖所有通过‘Sign in with ChatGPT’接入的合作伙伴，用户无需任何操作即可在两小时内感受到变化。此更新是公司“连续28天发布或重置”公开承诺的首个行动。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://finance.sina.com.cn/tech/roll/2026-10-06/doc-iniufsvm2174314.shtml",
-      "detailPath": "articles/888c1c76bb12178e4f120a02.json"
-    },
-    {
-      "id": "bbdd85d4a2f7dfcabd8fccf0",
-      "title": "sd-webui-forge-agent项目转向智能体与MCP/Skill为核心路线",
-      "summary": "基于Stable Diffusion WebUI Forge的中文改良版本 `sd-webui-forge-agent` 宣布从v3.6.8版本后，其发展路线转向以智能体（Agent）、MCP（Model Context Protocol）和Skill任务规范为核心。该项目旨在让用户通过自然语言对话即可调用WebUI的图像生成、视频处理、模型组合等复杂能力，而非手动操作参数。项目集成了面向国内用户的ModelScope模型下载支持，并包含多模态工作台。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://github.com/exo101/sd-webui-forge-neo-v3",
-      "detailPath": "articles/bbdd85d4a2f7dfcabd8fccf0.json"
-    },
-    {
-      "id": "407bab8f95ff74d55feca21f",
-      "title": "OpenAI Decisions API进入公测阶段：提供结构化决策接口",
-      "summary": "OpenAI于2026年10月6日开放了Decisions API的公测版，该API专为结构化决策设计，支持谓词（概率判断）、选择（从固定选项中选择）和评分（有序等级评估）三种输出类型。API声称比使用GPT-6 Luna的响应API快10倍，定价为每百万输入令牌$0.10，输出免费。开发者可以构建类型安全的决策路由系统，适用于客户支持分类、文档审核、图像损害检测等场景。",
-      "image": null,
-      "publishedAt": "2026-10-06T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://dev.to/bobbyhalljr/openais-decisions-api-is-in-public-beta-build-a-typed-router-in-typescript-ob7",
-      "detailPath": "articles/407bab8f95ff74d55feca21f.json"
-    },
-    {
-      "id": "5a9ba0afc48d30d52c647f11",
-      "title": "DataCamp发布2026年顶级开源大语言模型全景分析报告",
-      "summary": "技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。",
-      "image": null,
-      "publishedAt": "2026-10-06T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.datacamp.com/zh/blog/top-open-source-llms",
-      "detailPath": "articles/5a9ba0afc48d30d52c647f11.json"
     }
   ]
 }

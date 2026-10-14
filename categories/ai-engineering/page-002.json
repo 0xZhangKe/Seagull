@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "888c1c76bb12178e4f120a02",
+      "title": "OpenAI宣布GPT-6系列模型速度提升50%",
+      "summary": "OpenAI于2026年10月6日宣布，已优化GPT-6 Astra和GPT-6.1 Sol模型的默认速度，订阅用户在所有产品中使用这些模型时速度提升约50%。这一改进覆盖所有通过‘Sign in with ChatGPT’接入的合作伙伴，用户无需任何操作即可在两小时内感受到变化。此更新是公司“连续28天发布或重置”公开承诺的首个行动。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://finance.sina.com.cn/tech/roll/2026-10-06/doc-iniufsvm2174314.shtml",
+      "detailPath": "articles/888c1c76bb12178e4f120a02.json"
+    },
+    {
+      "id": "bbdd85d4a2f7dfcabd8fccf0",
+      "title": "sd-webui-forge-agent项目转向智能体与MCP/Skill为核心路线",
+      "summary": "基于Stable Diffusion WebUI Forge的中文改良版本 `sd-webui-forge-agent` 宣布从v3.6.8版本后，其发展路线转向以智能体（Agent）、MCP（Model Context Protocol）和Skill任务规范为核心。该项目旨在让用户通过自然语言对话即可调用WebUI的图像生成、视频处理、模型组合等复杂能力，而非手动操作参数。项目集成了面向国内用户的ModelScope模型下载支持，并包含多模态工作台。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://github.com/exo101/sd-webui-forge-neo-v3",
+      "detailPath": "articles/bbdd85d4a2f7dfcabd8fccf0.json"
+    },
+    {
+      "id": "407bab8f95ff74d55feca21f",
+      "title": "OpenAI Decisions API进入公测阶段：提供结构化决策接口",
+      "summary": "OpenAI于2026年10月6日开放了Decisions API的公测版，该API专为结构化决策设计，支持谓词（概率判断）、选择（从固定选项中选择）和评分（有序等级评估）三种输出类型。API声称比使用GPT-6 Luna的响应API快10倍，定价为每百万输入令牌$0.10，输出免费。开发者可以构建类型安全的决策路由系统，适用于客户支持分类、文档审核、图像损害检测等场景。",
+      "image": null,
+      "publishedAt": "2026-10-06T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://dev.to/bobbyhalljr/openais-decisions-api-is-in-public-beta-build-a-typed-router-in-typescript-ob7",
+      "detailPath": "articles/407bab8f95ff74d55feca21f.json"
+    },
+    {
+      "id": "5a9ba0afc48d30d52c647f11",
+      "title": "DataCamp发布2026年顶级开源大语言模型全景分析报告",
+      "summary": "技术学习平台DataCamp发布了一份关于2026年顶级开源大语言模型的总结报告。报告系统性地评估了11款关键开源模型的技术规格、优势和适用场景，并深入探讨了选择开源模型相对于专有模型在隐私、成本和控制力方面的核心价值，为开发者构建自有AI能力提供了重要参考。",
+      "image": null,
+      "publishedAt": "2026-10-06T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.datacamp.com/zh/blog/top-open-source-llms",
+      "detailPath": "articles/5a9ba0afc48d30d52c647f11.json"
+    },
+    {
       "id": "bc64ec46733acaccb1111dd1",
       "title": "OpenAI Decisions API 进入公开测试阶段，为结构化决策提供快速接口",
       "summary": "OpenAI于10月6日宣布Decisions API进入公开测试阶段。这是一个专为快速、结构化决策设计的API，开发者可将其用于条件检查、选项选择、内容评分等需要机器可读结果的场景，旨在降低将决策逻辑整合到应用中的复杂性并提升速度。",
@@ -615,50 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://news.cnyes.com/news/id/6616992",
       "detailPath": "articles/f5f1079bd443dfa541b1d421.json"
-    },
-    {
-      "id": "ed76eb71a6f72c69fe1a8957",
-      "title": "SuperX 将在 Tech Week Singapore 2026 发布 AI Token 平台与 AI Apps",
-      "summary": "全栈 AI 基础设施提供商 SuperX 宣布将在新加坡 Tech Week 2026 期间正式发布 AI Token 平台及 AI Apps。AI Token 平台提供统一接入 100 多款 AI 模型的标准化 API 和 SDK，支持智能路由与故障转移，旨在简化多模型管理。AI Apps 则面向专业内容创作，提供共享创作空间与团队协作功能。",
-      "image": null,
-      "publishedAt": "2026-09-28T10:16:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.prnewswire.com/apac/zh/news-releases/superxtech-week-singapore-2026ai-tokenai-apps-302891361.html",
-      "detailPath": "articles/ed76eb71a6f72c69fe1a8957.json"
-    },
-    {
-      "id": "13edcec90d54f5f59fa7083d",
-      "title": "决策模型基础设施在.NET生态崛起，提供结构化判断能力",
-      "summary": "决策模型基础设施在.NET生态快速崛起，Jev和Laya引发多种实现方案。开发者现在有了专门用于结构化判断的独立基础设施，可替代传统大模型生成JSON的复杂流程，提供类型安全、校准概率和低延迟判断能力，适合高频业务场景。",
-      "image": null,
-      "publishedAt": "2026-09-28T08:45:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.cnblogs.com/shanyou/p/23138134",
-      "detailPath": "articles/13edcec90d54f5f59fa7083d.json"
-    },
-    {
-      "id": "8087efcdd84817d1ccd398c2",
-      "title": "Mind Lab发布Macaron V1持续学习模型，支持2M上下文和LoRA架构",
-      "summary": "Mind Lab发布Macaron V1持续学习模型，基于GLM-5.2并采用混合LoRA架构，原生支持2M超长上下文。该模型通过参数空间迭代实现部署后持续学习，为个性化AI助手和行业专用Agent提供低成本微调方案，解决了传统RAG和prompt工程成本高的问题。",
-      "image": null,
-      "publishedAt": "2026-09-28T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://k.sina.com.cn/article_5952915705_162d248f906703pili.html?from=tech",
-      "detailPath": "articles/8087efcdd84817d1ccd398c2.json"
-    },
-    {
-      "id": "4d3873655fafbaef8835f60e",
-      "title": "AWS宣布Claude Sonnet 5.5在Amazon Bedrock平台上线",
-      "summary": "AWS宣布Claude Sonnet 5.5在Amazon Bedrock平台正式可用。这意味着使用AWS的开发者可以通过统一的API网关、计费和安全控制来集成这一最新的中端模型。对正在Bedrock上构建AI应用的企业开发者而言，这提供了新的成本优化选项，特别是对于高频率、中等复杂度的自动化任务。",
-      "image": null,
-      "publishedAt": "2026-09-28T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws",
-      "detailPath": "articles/4d3873655fafbaef8835f60e.json"
     }
   ]
 }

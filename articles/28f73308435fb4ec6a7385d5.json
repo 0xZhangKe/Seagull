@@ -1,0 +1,11 @@
+{
+  "id": "28f73308435fb4ec6a7385d5",
+  "title": "Anthropic加强防御蒸馏攻击，新措施将数据提取量减少90-99%",
+  "summary": "Anthropic于10月12日宣布强化对模型蒸馏攻击的防御系统，通过三层防护措施将攻击者可提取的推理数据减少了90-99%，并已封禁数万个恶意账号。",
+  "content": "<p>Anthropic于10月12日宣布强化对模型蒸馏攻击的防御系统，通过三层防护措施将攻击者可提取的推理数据减少了90-99%，并已封禁数万个恶意账号。</p><ul><li>引入&#x27;保留思维&#x27;（preserved thinking）功能，防止8月31日后创建的API账号编辑Claude的先前上下文</li><li>实施两阶段分类器系统，检测并阻止蒸馏攻击，假阳性率低于0.1%</li><li>限制Claude Sonnet 5.5的推理记录仅对发起请求的组织可见，防止跨模型读取</li><li>对检测到持续蒸馏攻击的账号实施更严格使用限制并封禁账户</li><li>自9月24日起，对因蒸馏防御而阻止的请求恢复收费</li></ul><h3>来源 / Sources</h3><ul><li><a href=\"https://www.anthropic.com/research/distillation-defenses\" target=\"_blank\" rel=\"noopener noreferrer\">Strengthening our defenses against distillation attacks - Anthropic</a></li></ul>",
+  "image": null,
+  "publishedAt": "2026-10-12T00:00:00Z",
+  "sourceId": "ai-engineering",
+  "sourceTitle": "AI 工程动态",
+  "link": "https://www.anthropic.com/research/distillation-defenses"
+}

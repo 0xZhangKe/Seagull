@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.jetbrains.com/kotlin/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.jetbrains.com</link>
 	<description>Developer Tools for Professionals and Teams</description>
-	<lastBuildDate>Fri, 09 Oct 2026 09:09:50 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Oct 2026 14:15:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,439 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>KotlinConf Recap: Lessons from Verifone&#8217;s Architect on Kotlin in Mission-Critical Payments</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/kotlinconf-recap-lessons-from-verifone-s-architect-on-kotlin-in-mission-critical-payments/</link>
+		
+		<dc:creator><![CDATA[Alina Dolgikh]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2026 11:03:00 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/image-167.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[kotlinconf]]></category>
+		<category><![CDATA[kotlin-conf-2026]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=746126</guid>
+
+					<description><![CDATA[Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&#160; Neither would most engineers: if you understand the words in your application code, you build good systems. If you don&#8217;t, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&nbsp;</p>
+
+
+
+<p>Neither would most engineers: if you understand the words in your application code, you build good systems. If you don&#8217;t, you build bugs.</p>
+
+
+
+<p>That&#8217;s the spine of <a href="https://www.youtube.com/watch?v=XFwhtftwp6s" target="_blank" rel="noreferrer noopener">Yuri Geronimus&#8217;s KotlinConf 2026 talk</a>, &#8220;Kotlin as a Safety Net: Type-Driven Reliability in the Finance Industry.&#8221; Yuri is an architect at Verifone, where he works across payment terminals, gateways, and the systems that connect them to banks and regulators in EMEA region. His method, in one line: write code in the exact words of the regulator or card network specs, and let the compiler enforce it. Enforce not by discipline, but by compiler.</p>
+
+
+
+<h2 class="wp-block-heading">Watch the KotlinConf 2026 talk</h2>
+
+
+
+<p>Watch Yuri Geronimus&#8217;s KotlinConf 2026 talk to learn how Kotlin helps build reliable payment systems.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="Kotlin as a Safety Net Type Driven Reliability in the Finance Industry | Yuri Geronimus" src="https://www.youtube.com/embed/XFwhtftwp6s?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+            <div class="newsletter">
+                                                            <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/kotlin-enterprise-playbook-highlight.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>A Legacy Modernization Strategy and Business Case Playbook for Enterprise Kotlin Adoption</h3>
+                                                                                                                    <a href="https://kotlinlang.org/lp/enterprise-playbook/" class="btn" target="_blank" rel="noopener">Read the Playbook</a>
+                                                    </div>
+                    </article>
+                                    </div>
+    
+
+
+<h2 class="wp-block-heading"><strong>The world behind the terminal</strong></h2>
+
+
+
+<p>Before the patterns, Yuri set the stakes. A &#8220;payment&#8221; isn&#8217;t one app. It&#8217;s a mobile sales app, a point-of-sale app, a payment terminal running on a locked-down OS, payment gateways, terminal management systems, merchant platforms, and, underneath it all, processors, banks, and regulators. Each country carries thousands of pages of specifications and roughly 1,000 scenarios that must be met before anything reaches production.</p>
+
+
+
+<p>Some of those terminals have to keep working offline for up to 40 days, by regulation, because in the country they operate in, a payment terminal is critical infrastructure on the same level as a gas station or a pharmacy. Payment teams also have to satisfy contradictory rules from different regulators governing the same shared infrastructure: one country requires a behavior, another forbids it, and both must be enforced in the same codebase. That&#8217;s the environment the type system has to hold up in. Not a demo. Production, worldwide, for decades, not for a year.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Six ways one word breaks a payment system</strong></h2>
+
+
+
+<p>Yuri walked through real incident patterns that he heard from his 15 years in payments and banks, each one traced back to a single missing or misused word:</p>
+
+
+
+<ul class="wp-block-list">
+<li>An incorrect field caused a reversal, and someone else&#8217;s money landed in the wrong account.</li>
+
+
+
+<li>A mandatory field was made nullable &#8220;just in case.&#8221; When a firmware update stopped sending it, the code fell back to a default, and part of the terminal fleet stopped processing payments.</li>
+
+
+
+<li>A card number ended up in a log line and a stack trace: a disclosure obligation, and a real compliance problem.</li>
+
+
+
+<li>A transaction got refunded after it had already been reversed, and a merchant was charged twice.</li>
+
+
+
+<li>An authorization succeeded right as a timeout fired, and money moved to theft</li>
+</ul>
+
+
+
+<p>Each of these traces back to the same root cause: somewhere, the code disagreed with the specification about what a word meant, and nothing forced that disagreement into the open before it reached production.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>The method: write the spec, then let the compiler check your work</strong></h2>
+
+
+
+<p>Yuri described this as a set of patterns, not a framework. Ten of them, all doing the same job: making illegal states impossible to construct, not just invalid ones you catch later.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>1. Value classes for spec nouns</strong></h3>
+
+
+
+<p>Fraud and risk models carry dozens of similarly shaped IDs: merchant ID, terminal ID, acquirer ID, and more, several of which are literally identical in format due to regulation. As plain strings, nothing stops a refactor or copy-paste from swapping two of them, and the transaction silently routes to the wrong acquirer, for example. Yuri’s fix is a value class per ID.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class Stan(val value: String)
+@JvmInline value class TerminalId(val value: String)
+@JvmInline value class AmountMinor(val value: Long)
+ 
+data class AuthRequest(val stan: Stan, val terminalId: TerminalId, val amount: AmountMinor)
+AuthRequest(terminalId, stan, amount)</pre>
+
+
+
+<p>Swap the arguments now, and the code doesn&#8217;t compile. The mistake that used to reach production becomes a build error on the engineer&#8217;s own machine.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>2. Validate factories</strong></h3>
+
+
+
+<p>Every external field, whether it comes from a bank&#8217;s API or a terminal&#8217;s firmware, arrives as an untyped string that might not mean what the spec assumes. Yuri’s pattern parses it immediately into a sealed result at the boundary rather than trusting it downstream.<br></p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface ParsedStan {
+    data class Valid(val stan: Stan) : ParsedStan
+    sealed interface Invalid : ParsedStan {
+        val rawStan: RawStan
+        data class WrongLength(override val rawStan: RawStan) : Invalid
+        data class NotNumeric(override val rawStan: RawStan) : Invalid 
+    }
+}
+
+fun of(rawStan: RawStan): ParsedStan = when {
+    rawStan.value.length != 6         -> ParsedStan.WrongLength(rawStan)
+    !rawStan.value.all(Char::isDigit) -> ParsedStan.NotNumeric(rawStan)
+    else                              -> ParsedStan.Valid(Stan(rawStan.value))
+}
+
+
+fun authorize(rawStan: RawStan): AuthResponse =
+    when (val parsed = ParsedStan.of(rawStan)) {
+        is ParsedStan.Valid       -> gateway.authorize(parsed.stan)        // happy path
+        is ParsedStan.Invalid     -> reject(parsed)                        // structured rejection
+    }   // no else, no try/catch, no Result&lt;T> to unwrap — exhaustiveness is enforced</pre>
+
+
+
+<p>This approach Yuri thinks is a very good practice: it doesn’t throw exceptions; it helps prevent the not-best approach with <code>Result&lt;T&gt;</code>, which hides the business domain, and prevents runCatching pitfalls in coroutines</p>
+
+
+
+<h3 class="wp-block-heading"><strong>3. Non-null types at the boundary</strong></h3>
+
+
+
+<p>Many times, mandatory fields are marked nullable “just in case”, which requires juggling with silent fallbacks that often hide the real culprit. Yuri suggests leveraging Kotlin’s null-safety to fail loudly in one place:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">data class KernelResult(
+    val tvr: TerminalVerificationResults, // ← not Optional, not nullable
+)
+
+fun fromFirmware(raw: FirmwareResponse) = KernelResult(
+    tvr = requireNotNull(raw.tvr) { "TVR null - firmware contract violated" }
+)
+// One loud failure at the boundary. Never a silent fallback downstream</pre>
+
+
+
+<p>This is the fix for the terminal-fleet outage: the field that was made nullable &#8220;just in case&#8221; never got a silent default again. It fails once, loudly, at the one predictable place it&#8217;s parsed, where it can be monitored, instead of failing quietly somewhere downstream where nobody is watching for it.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>4. Mask sensitive data by default</strong></h3>
+
+
+
+<p>Card numbers travel through logs and stack traces as plain strings, and that&#8217;s a disclosure obligation waiting to happen. Yuri wraps the value in a class with a private constructor and overrides toString(), so the safe behavior is the default.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline
+value class Pan private constructor(private val value: String) {
+    override fun toString() = "PAN[****]"                     // ← always safe
+    fun masked() = /* masking according spec */
+    fun toNetwork() = value                                  // deliberate, grep-able
+}
+logger.info("Processing card $card")   // → "PAN[****]". Safe by default</pre>
+
+
+
+<p>An accidental log.info(&#8220;processing $pan&#8221;) now prints four masked digits. Getting the real value out, the one thing that&#8217;s genuinely needed to talk to the network, requires an explicit, auditable call. Nothing about that path is invisible anymore. Small note from Yuri: in real systems it hid much deeper.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>5. Give every state its own class, not just its own name</strong></h3>
+
+
+
+<p>A transaction that&#8217;s been refunded should never be able to call refund again, but a single mutable Transaction class with a status field relies on someone remembering to check that status everywhere. Yuri&#8217;s next-level version gives each state its own data class, so the method cannot change transaction state from the wrong data class; this ensures that a transition that shouldn’t happen (for example, refunding a reversed transaction) is blocked by the compiler.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface TransactionStatus {
+    data class Captured(val amount: AmountMinor)             : TransactionStatus
+    data class FullyRefunded(val at: Instant)                : TransactionStatus
+    data class Reversed(val reason: ReversalReason)          : TransactionStatus
+}
+
+fun TransactionStatus.fullRefund(refundReason: RefundReason) = when (this) {
+    is Captured.                  -> Ok(/* ... */)
+    is FullyRefunded, is Revesed  -> Err("not refundable from $this")
+}   // exhaustive. the compiler refuses to forget.</pre>
+
+
+
+<h3 class="wp-block-heading"><strong>6. Immutability and named transition</strong></h3>
+
+
+
+<p>This continues the previous pattern. Make class with your business data immutable and give every transition a name. The name is a verb from the spec. Any method that shouldn&#8217;t be callable simply doesn&#8217;t exist:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@ConsistentCopyVisibility  // Kotlin 2.0.20+
+data class PurchasedAuthorization private constructor( /* ... */ ): Authorization {
+    fun fullRefund(refundReason: RefundReason): FullRefundOutcome = /* ... */
+}
+
+sealed class FullRefundOutcome {
+    data class Succeeded(val refundAuthorization: RefundAuthorization) : FullRefundOutcome 
+    // error data classes
+}</pre>
+
+
+
+<p>Yuri called this his favorite pattern because it affects how engineers read a spec. This changes how engineers think and speak about the business domain.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>7. Delete the else branch</strong></h3>
+
+
+
+<p>If a specification lists every case explicitly and never says &#8220;otherwise,&#8221; then an else in the code is inventing a case the spec doesn&#8217;t describe. His team had handled only full refunds. When partial refunds became a real scenario, the old else branch would have absorbed it silently: compiles fine, tests pass, and it&#8217;s wrong in production. Delete the else, and the same new case becomes a compile error that points to every place needing an update.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fun authorize(request: AuthorizationRequest): Authorization = when (request) {
+    is PurchaseRequest           -> /* ... */
+    is FullRefundRequest         -> /* ... */
+    // ← no else. Adding a new state BREAKS compilation here
+}</pre>
+
+
+
+<p>The business drifts constantly quarterly and monthly in payment in one country, and for the whole EMEA region &#8211; it becomes daily at Yuri’s scale. An exhaustive when turns every drift into a list of exactly what needs to change, rather than a bug report from a customer who was charged the wrong amount.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>8. Choose the coroutine scope the spec implies</strong></h3>
+
+
+
+<p>Yuri’s Black Friday example: authorization, risk management, and fraud checks used to run as three independent calls, each in its own try/catch. If fraud management ran slowly under load, the transaction could still be approved while the fraud check silently failed, and stolen cards could start getting approved. Kotlin gives two structured concurrency scopes that look similar and behave completely differently, and the spec, not convenience, should decide which one you use.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// coroutineScope = fail-fast.   ← partial success is an incident that you can catch
+suspend fun authorize(req: Request) = coroutineScope {
+    val auth  = async { acquirer.authorize(req) }
+    val risk  = async { riskEngine.score(req) }
+    val fraud = async { fraudService.check(req) }
+    Outcome.from(auth.await(), risk.await(), fraud.await())
+}
+// supervisorScope = isolate.    ← partial success is the goal
+suspend fun fanOut(event: Event) = supervisorScope {
+    listOf(async { sms(event) }, async { analytics(event) }, async { feed(event) }).awaitAll()
+}</pre>
+
+
+
+<p>Here, <code>coroutineScope</code> fails fast: if the fraud check fails, authorization and risk are canceled as well, and nothing is silently approved. A supervisorScope would let siblings keep running independently, which is the right call for something like fan-out notifications, where one failure shouldn&#8217;t cancel the rest. The question isn&#8217;t which scope is more idiomatic. It&#8217;s what the spec says should happen when one branch fails.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>9. Model timeout as a domain outcome, not an exception</strong></h3>
+
+
+
+<p>A gateway call that times out isn&#8217;t necessarily a failure. The acquirer may have already processed it; the client just didn&#8217;t hear back in time. Catching that as a generic exception and moving on erases the difference between &#8220;nothing happened&#8221; and &#8220;something happened, we&#8217;re just not sure what.&#8221; Yuri’s fix models a Timeout as a first-class outcome in the domain.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface AuthorizationOutcome {
+    data class Approved(val authCode: AuthCode)    : AuthorizationOutcome
+    data class Declined(val reason: DeclineReason) : AuthorizationOutcome
+    data object TimedOut                           : AuthorizationOutcome // ← spec verb, named in domain
+}
+
+when (val outcome = processAuth(req)) {
+    is Approved  -> settleTransaction(outcome.authCode)
+    is Declined  -> notifyCardHolder(outcome.reason)
+    is TimedOut  -> initiateReversal(req)  // caller decides what to do according to spec
+}</pre>
+
+
+
+<p><code>TimedOut</code> isn&#8217;t the absence of an answer. It&#8217;s a distinct state that routes to a reconciliation query rather than a retry, because a naive retry after a timeout that actually succeeded upstream is exactly how a customer ends up charged twice.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>10. Make the tests something a regulator can read</strong></h3>
+
+
+
+<p>Yur’s least expected pattern targets certification tests, not application code. A typical certification suite runs a thousand tests at roughly 200 lines each, and, in his words, not even an architect can read that. The team rewrote the tests as Kotlin DSL. Written that way, a certification specialist who has never written Kotlin can read the test, follow the logic against the specification, and sign off on it directly. The test stops being an artifact only test engineers can verify and becomes a specification the business and certification specialists can review.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">val purchaseOverFloorLimit = scenario("Purchase with tap card above floor limit must go online") {
+    terminal { floorLimit = 50.EUR }
+    posRequest  { purchase(amount = 75.EUR) }
+    tap { card = TestCards.visaWithOnlinePIN }
+
+    expect {
+        terminalDecision  mustBe  GoOnline
+        outcome           mustBe  Approved
+    }
+}</pre>
+
+
+
+<h2 class="wp-block-heading"><strong>What actually moved</strong></h2>
+
+
+
+<p>Yuri is specific about the outcomes: development ran 2.7 times faster, and certification passed with only one defect and on the first attempt, unusual enough that regulators asked what had changed. The resulting codebase was about 30% smaller. Code review shifted from hunting for missed state checks to comparing code against the specification sentence by sentence, because the compiler now catches the class of bug reviewers used to look for by hand. Onboarding a new engineer used to take two or three weeks before they understood enough of a 5,000-page specification and a legacy codebase to ship anything. Afterward, new hires opened a production pull request within days. Engineers could also move between device teams and backend teams, something a split codebase in two different languages had made difficult. The last effect Yuri called out was that engineers started speaking the business&#8217;s language well enough to talk directly with product managers, sales, and regulators, occasionally proposing changes to the regulations themselves.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Payments modernization without a rewrite</strong></h2>
+
+
+
+<p>Yuri is direct about the mistake most teams make: treating migration as one project, a rewrite in Kotlin. His systems run 25-year-old Java and C++ code processing live transactions every second, with no acceptable downtime, so a rewrite was never on the table. Framed as a refactor-vs-rewrite decision, the answer for a live payments platform is almost always refactor. His alternative is four tracks that run in parallel, not in sequence.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Optimize the existing codebase first</strong>, in Java or C++, without touching the language; modernize code structure now &#8211; shared layout, clean architecture, screaming architecture &#8211; even before any Kotlin lands.</li>
+
+
+
+<li><strong>Shift to acceptance-test-driven development</strong>, not unit-test-driven. Nobody outside the engineering team cares what&#8217;s inside a function; everybody cares about the end-to-end behavior.</li>
+
+
+
+<li><strong>Build fitness functions</strong> to check compliance, security, scalability, and other “-lities” that run alongside the migration rather than being assessed at the end.</li>
+
+
+
+<li><strong>Migrate incrementally</strong>: new adapters first, then new domain models, then the legacy code that changes most often, working to reduce the number of &#8220;shared ports&#8221; to zero. Kotlin&#8217;s interop with Java is what makes this incremental path possible at all: a new adapter can sit alongside unmodified Java code without a dual-maintenance period.</li>
+</ol>
+
+
+
+<p>Running all four at once, according to Yuri, is what makes a payments modernization effort safe and cost-effective in a regulated environment. Running them in sequence is what makes migrations stall.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Migration is an investment decision, not a language preference</strong></h2>
+
+
+
+<p>Yuri pointed out who needs convincing in an enterprise: it isn&#8217;t the engineering team. He referenced <a href="https://www.youtube.com/watch?v=w7e4g86EyXk" target="_blank" rel="noopener">a talk from Uber&#8217;s team the day before his</a>, at the same event, making a similar point: even a company known for moving fast treats language migration as an investment decision once it&#8217;s operating at enterprise scale. A credible business case has to account for the costs of running old and new systems in parallel, the costs of decommissioning what&#8217;s being replaced, the learning curve for the team, and the risk of the transition itself. Getting the migration approved is not the same as its adoption. Without an operating model for how the migration actually runs day-to-day, Yuri was blunt: there&#8217;s no happy ending waiting at the end of it.</p>
+
+
+
+<p>He pointed to a resource for that exact gap: a <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noreferrer noopener">22-page playbook on the Kotlin site</a>, published two days before this talk, covering, in his words, &#8220;the part that everybody skips.&#8221;</p>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1791809546909" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>What is Yuri Geronimus&#8217;s core method, in one sentence?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Write code in the literal words of the specification and let the compiler enforce them, rather than relying on discipline or documentation to catch gaps between the two.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809559945" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Do you have to rewrite a legacy Java or C++ system to use these patterns?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>No. Yuri explicitly argues against treating migration as a rewrite project. His four tracks run in parallel: optimizing the existing codebase, shifting to acceptance testing, more focus on  fitness functions, and migrating incrementally, starting with adapters and the domain models, then going from the most-often-changed parts.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809566348" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Why doesn&#8217;t discipline or code review catch these bugs instead?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>At the scale Yuri operates, 20 teams worldwide, discipline doesn&#8217;t scale evenly. A compiler check applies identically everywhere, every time, regardless of who&#8217;s on call or how careful any one reviewer is that day.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809576890" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Further reading</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Geronimus writes more broadly on Kotlin in payments and fintech in his <a href="https://yurigeronimus.medium.com/kotlin-in-payment-gateways-and-fintech-a-strategic-fit-for-2026-architectures-f049a01059f9" target="_blank" rel="noopener">own posts on Medium</a>. For the business case and operating model he referenced in the talk, the resource is JetBrains&#8217; <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noopener">enterprise Kotlin adoption playbook</a>, also written with Geronimus.</p>
+
+</div>
+</div>
+</div>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Start Your Next KMP App With Kotlin Toolchain 0.13</title>
 		<link>https://blog.jetbrains.com/kotlin/2026/10/start-your-next-kmp-app-with-kotlin-toolchain-0-13/</link>
 		
@@ -157,7 +590,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/03-tool-download-progress.gif" alt="" class="wp-image-745102"/></figure>
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/03-tool-download-progress.gif" alt="" class="wp-image-745102"/></figure>
 
 
 
@@ -2508,204 +2941,6 @@ fun addTodo(
 
 
 <p></p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>When Escape Routes Become Toll Roads: Mapping How Developers Move Between Programming Languages</title>
-		<link>https://blog.jetbrains.com/research/2026/08/programming-language-migration/</link>
-		
-		<dc:creator><![CDATA[Vladimir Volokhonsky]]></dc:creator>
-		<pubDate>Wed, 12 Aug 2026 16:15:18 +0000</pubDate>
-		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/08/JB-social-BlogFeatured-1280x720-1-1.png</featuredImage>		<product ><![CDATA[kotlin]]></product>
-		<category><![CDATA[articles-2]]></category>
-		<category><![CDATA[deveco]]></category>
-		<category><![CDATA[research]]></category>
-		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=research&#038;p=729328</guid>
-
-					<description><![CDATA[TL;DR: This post relates findings about language migration from the 2025 State of Developer Ecosystem survey. In general, project requirements are still the most common reasons for switching languages. One outlier from this trend, however, is Kotlin. People switch to Kotlin not because they have to; they switch because it simply feels better to work [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<p><em>TL;DR: This post relates findings about language migration from the 2025 State of Developer Ecosystem survey. In general, project requirements are still the most common reasons for switching languages. One outlier from this trend, however, is Kotlin. People switch to Kotlin not because they have to; they switch because it simply feels better to work with, thanks to its better development experience and more modern features. C has a surprisingly high churn rate, and Java developers tend to move to Python and TypeScript. HTML/CSS developers learn JavaScript to improve their job opportunities, while JavaScript developers switch to almost everything else for the same reason.</em></p>
-
-
-
-<h3 class="wp-block-heading"><strong>The history of programming is, in part, a history of escape</strong></h3>
-
-
-
-<p><br>Ada Lovelace wrote for a machine that did not yet exist in working form. A century later, programmers were wrestling with machines that had switches, punched cards, and raw numeric instructions. Then came assembly, and with it the first great bargain of software: give up a little closeness to the machine, and gain a little room for the human mind. But history does not stand still. With new languages and shifts in context, aspects of existing languages began to get in the way.<br><br>One language moved to such a high level of abstraction that its efficiency in the physical reality of the machine stopped holding up. Meanwhile, the fast-growing Internet of Things meant that programs now had to run on a coffee machine in a sense that was no longer metaphorical. In some places, development speed was missing. In others, safety was.<br><br>We escaped from assembly into C, from C into managed runtimes, from ceremonial enterprise Java into Kotlin, from dynamic-language freedom into TypeScript, from unsafe systems code into Rust, and from heavy frameworks into smaller cloud-native tools. At first glance, all migration channels seem clear. But how does this map onto reality?<br>Quite a lot of material, in one way or another, measures how the popularity of programming languages changes over time. Yet it seems that no one has really looked at the broader picture of how programmers themselves move between languages – not from the point of view of global trends in software development, but from the point of view of an individual path.<br><br>For us at JetBrains, it is very important to get closer to understanding what is happening from the programmer’s perspective, rather than from that of a programming historian or a career adviser. This is the perspective that matters most to us. In this spirit, we designed our State of Developer Ecosystem surveys with the goal of illuminating what the path of a real programmer looks like. Here’s what we found in 2025.<br>First, we should acknowledge that the path between languages can look like almost anything. Yes, the most common routes are between the leading languages: from Python to Java and back, with Java to Kotlin in third place by absolute numbers. But people migrate in every possible direction.<br><br>But we’ve gotten ahead of ourselves. Let’s take things one step at a time.</p>
-
-
-
-<h3 class="wp-block-heading"><strong>What we did before and what we achieved in 2025</strong></h3>
-
-
-
-<p>Since the beginning of the Development Ecosystem survey, we have used the question <em>“Do you plan to adopt or migrate to other languages in the next 12 months? If so, which ones?”</em> We quickly found, however, that it is not a good predictor for future language migration. It’s one thing to plan to try Rust or switch from Java to Kotlin, but even for very common moves, the number of developers who actually make the switch is much lower than the number of those who have plans. Just because we have issues supporting our old Java 8 codebase, for example, doesn’t mean we’ll actually leave it.<br>So last year, we added a new set of questions regarding respondents’ previous experience with programming languages. We decided to assess actual migration over the past year using the question <em>“What were your primary programming languages 12 months ago?”</em> and some other related ones. This report addresses these questions, as well as the programming language landscape as a whole, based on the 8,837 responses we collected.<br>For reference, the following terms refer to the answers of the corresponding questions:<br>Used language – “<em>Which programming languages have you used in the last 12 months?</em>”<br>Primary language – “<em>What are your primary programming languages? (Up to 3)”</em><br>Main language – <em>“What is your main programming language?”</em></p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/pl_dynamics_2017_2025.png" alt="" class="wp-image-729330" /></figure>
-
-
-
-<p>This сhart is based on the responses to the question “Which programming languages have you used in the last 12 months?” The increase in Java and Kotlin shares is most likely the result of a shift in the sample, rather than a real trend. The main fast risers are TypeScript and Rust, as we described in our <a href="https://www.jetbrains.com/lp/devecosystem-2024/#language_promise_index" target="_blank" rel="noopener">2024 Developer Ecosystem infographic</a>. We also predicted some growth for Python, Go, and Lua, but only Go showed actual growth.</p>
-
-
-
-<h3 class="wp-block-heading"><strong>JetBrains Language Promise Index</strong></h3>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/language_promise_index.png" alt="" class="wp-image-729342" /></figure>
-
-
-
-<p>The Language Promise Index tracks the migration prospects of languages in arbitrary units, based on the data we had on the stability of positive or negative migration dynamics and the number of people wishing to learn the language. <strong>Lua </strong>was previously one of the top languages in this category, but its growth has apparently reached a certain ceiling, and it is no longer among the leaders.</p>
-
-
-
-<p>TypeScript, Rust, Python, and Go all still have large growth potential. We expect that a lot of people would change their main language from JavaScript to TypeScript while still using JS as their secondary language.&nbsp;</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/lang_usage_breakdown.png" alt="" class="wp-image-729354" /></figure>
-
-
-
-<p>As you can see, despite being the most popular language in terms of overall usage, JavaScript is the main language for only 6% of software developers, while Java is still much more popular as a main language.&nbsp;</p>
-
-
-
-<p>Unfortunately, we don’t have enough answers for most programming languages, so the next tables include only the most popular ones.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/lang_net_growth_composition.png" alt="" class="wp-image-729365" /><figcaption class="wp-element-caption"><em>100% represents all respondents who reported using the respective language as their main language one year ago. </em><br><em>Loyals + Churners = 100%. <br>Net Growth = Newcomers + Switchers – Churners.<br>Newcomers – respondents who did not use any programming language one year ago but reported using this language this year.</em><br><em>Switchers – respondents who used a different main language one year ago and switched to this one.</em><br><em>Loyals – respondents who continued using the same main language as last year.</em><br><em>Churners – respondents who used this language as their main language a year ago but have since switched to another language.</em><br></figcaption></figure>
-
-
-
-<p>Surprisingly, C shows the lowest retention. About half of those who said that C was their main language last year have now switched to something else. This is a bit strange. Initially, we assumed that this flow probably consisted of students who had adopted C through their education and then switched to another language. However, the experience level has only a small effect. Half of those who dropped C chose <em>“I wanted to learn a new language”</em> as the reason for their change, which has a higher share than among switchers from other languages, who mostly chose <em>“A project I am working on requires the usage of a new language.”</em><br>However, we didn’t have such questions for last year and do not see so much churn for C based on a comparison of shares with previous-year data (2.1% this year as a main language vs 2.0% in last year). But this churn rate may be a good predictor of future changes.</p>
-
-
-
-<h3 class="wp-block-heading">Why developers leave – and where they go</h3>
-
-
-
-<p>First of all, we should say that we don&#8217;t have data about everyone who churned – people who retired or switched to another career path don’t typically answer our developer surveys. Nevertheless, we do have enough information to draw some conclusions about why people decide to switch from one language to another.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/churn_reasons_by_from_lang_heatmap.png" alt="" class="wp-image-729376" /></figure>
-
-
-
-<p>Note: The sample is extremely small (less than 100) for C, Kotlin, and PHP.,<br>Some findings from this data:<br>1. Project requirements are the most common reasons for switching languages.<br>2. As we mentioned before, for C, <em>“I wanted to learn a new language”</em> and <em>“More modern language features”</em> are very popular reasons for switching, which probably point to widespread dissatisfaction and the language’s aging.<br>3. For JavaScript, the reason people leave is often <em>“Better job market opportunities”.</em><br>4. Performance and scalability limitations are often a reason to switch from PHP.<br>5. “Other” reasons accounted for 18% of Kotlin churners. According to their answers, they are switching companies and switching between hobby and professional use.</p>
-
-
-
-<p>The following tables, where both rows and columns list the same programming languages, require some additional explanation. Each one depicts the shift in respondents’ main languages. In the first, the columns are divided by last year’s responses for a given language, and the rows show the languages that respondents have moved to. Conversely, the second tracks where new language users are coming from, with the columns divided by respondents’ current main languages and the rows showing their previous answers. Each column totals 100%, because it tracks the same population over the course of a year.&nbsp;</p>
-
-
-
-<p>The tables show transitions from seeing one language as your “main” language to seeing another language that way. This does not mean that people stopped programming in the “abandoned” language altogether. It simply means that it stopped being their primary language.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/churn_destinations_heatmap.png" alt="" class="wp-image-729387" /></figure>
-
-
-
-<p>This table shows where people go based on their previous language. Python is the main switch destination for all languages except C (whose users preferred to move to Java and C++) and TypeScript (where the top target destinations were Java, JavaScript, and C#).<br></p>
-
-
-
-<h3 class="wp-block-heading">Why developers adopt – and where they come from</h3>
-
-
-
-<p>Let’s look at the inverted perspective, based on the language to which people migrated.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/join_reasons_by_to_lang_heatmap.png" alt="" class="wp-image-729546" /></figure>
-
-
-
-<p>Some findings from this data:</p>
-
-
-
-<ol class="wp-block-list">
-<li>Surprisingly, JavaScript is both the main language people leave for better job market opportunities and the one people move to for the same reason. But these flows are not the same: one of the main sources for JavaScript growth is HTML/CSS. So, the pattern looks a bit like a conveyor belt: HTML to JavaScript to TypeScript.&nbsp;</li>
-
-
-
-<li>Project requirements are very common reasons for switching to C# and C++, suggesting many developers switch to these languages simply because they have to.&nbsp;</li>
-
-
-
-<li>People don’t go to Kotlin because they have to, but because it offers a better development experience and more modern language features.</li>
-
-
-
-<li>Performance and scalability are the main attractions of Go, whereas ecosystem and library support are stronger attractions for Python.</li>
-</ol>
-
-
-
-<p>At first glance, the following table may look the same as the main-language churn table above. But it is actually completely different, with a different meaning.</p>
-
-
-
-<p>Here, the language that respondents see as their main language at the time of answering is taken as 100%. Accordingly, the diagonal shows what we called the continuity rate: the share of people who use this language as their main language now and also used it as their main language a year ago. Imagine that we have 150 respondents. Of them, 100 said they use a certain language as their main language this year, while 125 said they used it as their main language last year. 75 people used this language as their main language both a year ago and at the time of the survey.</p>
-
-
-
-<p>In this case, the retention rate would be 75%, while the continuity rate would be 60%. It is important to note that everyone else is not necessarily a “newcomer” to the language. They may well have used this language before, just not as their main one.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/growth_sources_heatmap.png" alt="" class="wp-image-729760" /></figure>
-
-
-
-<p>In terms of growth sources, Python is the main source for C, C#, C++, Go, Java, and JavaScript, which is not surprising, because it is one of the most popular languages.</p>
-
-
-
-<p>For Kotlin, the main growth source is Java, while for PHP and TypeScript, it is JavaScript.</p>
-
-
-
-<p>For Python itself, the main growth source is Java.&nbsp;</p>
-
-
-
-<h3 class="wp-block-heading">Conclusion</h3>
-
-
-
-<p>By looking at actual moves instead of plans, we shift from intention to action – not what developers say, but what they do. The ecosystem data stops being a snapshot and starts to look like a map of flows.</p>
-
-
-
-<p>Project requirements still do most of the pushing. Necessity, not choice, drives many switches, but not all. Some languages win on specific jobs, others on performance or ecosystem. And many developers move in chains: from HTML/CSS to JavaScript, and then further along – a conveyor belt of skills, where each step opens the next.</p>
-
-
-
-<p>Churn tells a clearer story. C leaks talent faster than expected, even if its headline numbers look stable. Java remains a hub, but its outflow goes mostly to Python and TypeScript, not Kotlin. Python acts as a catch-all destination. TypeScript and Rust still look like the forward edge.</p>
-
-
-
-<p>Kotlin, our own language, plays a different game – and plays it well. Developers come not because they have to, but because they want to, drawn by cleaner syntax, fewer rough edges, and a development experience that simply feels better. It wins on pull, not push. Yet the inflow from Java is weaker than expected, and some developers even switch back.<br><br>The picture that emerges is a simple one of push, pull, and drift. With the new data, we see not just which languages grow or shrink, but how it happens – which languages move with the current, and which have to work against it.</p>
-
-
-
-<p>Let’s see what DevEco’26 will reveal.</p>
 ]]></content:encoded>
 					
 		

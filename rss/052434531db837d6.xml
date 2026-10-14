@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-13T23:00:06+00:00</updated><author><name>Simon Willison</name></author><entry><title>Redesigning source control at Anthropic</title><link href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" rel="alternate"/><published>2026-10-13T23:00:06+00:00</published><updated>2026-10-13T23:00:06+00:00</updated><id>https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-14T16:26:53+00:00</updated><author><name>Simon Willison</name></author><entry><title>AI is mass decompiling games. That's both awesome and scary.</title><link href="https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/" rel="alternate"/><published>2026-10-14T16:26:53+00:00</published><updated>2026-10-14T16:26:53+00:00</updated><id>https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/"&gt;AI is mass decompiling games. That&amp;#x27;s both awesome and scary.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).&lt;/p&gt;
+&lt;p&gt;I like how this piece captures both the positives and the negatives of this new development:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Most people already realized the scary part by now. If AI can decompile games and software, then the entire tech industry is about to explode. Anybody can decompile other software and use it any way they'd like, and nobody can stop them. Companies can steal from competitors. Your paid game or app can be open-sourced against your will. This isn't exclusive to old video games, we can apply this to &lt;em&gt;any&lt;/em&gt; software. [...]&lt;/p&gt;
+&lt;p&gt;This is also a big win for preservation. Old games can be ported, modified, enhanced, and made much more easily accessible than before.  [...[&lt;/p&gt;
+&lt;p&gt;With console makers going all in on digital and games becoming entirely unplayable due to servers shutting down, this is &lt;em&gt;fantastic&lt;/em&gt; news. We could own software we bought regardless of what the company thinks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50088534"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/computer-history"&gt;computer-history&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/webassembly"&gt;webassembly&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="computer-history"/><category term="game-design"/><category term="ai"/><category term="webassembly"/><category term="generative-ai"/><category term="llms"/><category term="ai-ethics"/><category term="coding-agents"/></entry><entry><title>Redesigning source control at Anthropic</title><link href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" rel="alternate"/><published>2026-10-13T23:00:06+00:00</published><updated>2026-10-13T23:00:06+00:00</updated><id>https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.anthropic.com/engineering/redesigning-source-control"&gt;Redesigning source control at Anthropic&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months.&lt;/p&gt;
@@ -530,19 +548,4 @@ Mistral are back in the game. Today they're releasing a preview of Mistral Large
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/observability"&gt;observability&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/alex-garcia"&gt;alex-garcia&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/opentelemetry"&gt;opentelemetry&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="datasette"/><category term="observability"/><category term="alex-garcia"/><category term="opentelemetry"/></entry><entry><title>Mistral Large 4</title><link href="https://simonwillison.net/2026/Oct/6/hn-49982139/" rel="alternate"/><published>2026-10-06T18:20:58+00:00</published><updated>2026-10-06T18:20:58+00:00</updated><id>https://simonwillison.net/2026/Oct/6/hn-49982139/</id><summary type="html">
-    
-        &lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=49977979#49982139"&gt;My comment&lt;/a&gt; on &lt;a href="https://news.ycombinator.com/item?id=49977979"&gt;Mistral Large 4&lt;/a&gt; &amp;mdash; Hacker News.&lt;/p&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=49977979#49979658"&gt;wren6991&lt;/a&gt;: The benchmark is saturated. Frontier models are tested with an armadillo in fishnet tights jaywalking on Mars.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;OK well I couldn't resist this one:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;llm -m claude-opus-5.5 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars'
-llm -m gpt-6.1-sol 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars'
-llm -m gemini-3.8-flash 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars'
-llm -m mistral/mistral-large-4 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Default reasoning levels for each: &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F18c9f7fc3b3705cf88514cb9170ec246"&gt;https://tools.simonwillison.net/markdown-svg-renderer?url=ht...&lt;/a&gt;&lt;/p&gt;
-    
-    
-
-</summary></entry></feed>
+</summary><category term="datasette"/><category term="observability"/><category term="alex-garcia"/><category term="opentelemetry"/></entry></feed>

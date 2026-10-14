@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "bdf63e6eed43d9254015c10f",
+      "title": "PostHog Data Pipeline 本地部署踩坑記: 在 DinD 加上 Caddy 環境的資料同步挑戰",
+      "summary": "這篇文章記錄了作者在本地部署 PostHog Data Pipeline 時的技術挑戰與解決過程。文章詳細描述了在 Docker in Docker (DinD) 和 Caddy 環境下,如何處理 ODBC 驅動憑證問題、微服務間的網路通訊錯誤,以及 Temporal 任務因佇列沒人監聽而卡住的排查過程。作者還分享了如何新增專屬 Worker 處理資料倉儲任務,並用「偽裝」的 AWS 憑證解決 MinIO 相容性問題。整個過程展示了在複雜架構下,從資料同步到資料湖的完整除錯經驗。",
+      "image": null,
+      "publishedAt": "2026-02-24T04:44:45Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/deploying-a-posthog-data-pipeline-locally",
+      "detailPath": "articles/bdf63e6eed43d9254015c10f.json"
+    },
+    {
       "id": "33d2f5bd556b20ac9c491344",
       "title": "再次嘗試完全戒斷 IG、YT 的一週後（2026）",
       "summary": "前言 # 雖然在 2024 就揚言要 脫離社群平臺 ，還發佈了努力 戒除成癮的過程 ，因爲還要 經營 IG ，最後用「 發佈完就刪除 」的方式來避免一直滑，而後來嫌麻煩，就沒刪了。 不看陌生人的貼文、影片 # 應該是在 2025 年 12 月的尾巴，我開始幾乎完全不再看 reels，但是我會看我少數追蹤的 80 幾人的限時動態。 但麻煩的是，只要打開 IG App，就一定會看到一篇 reel，而這篇很可能是陌生的，如果不小心點了，可能就會滑一陣子。 限制 App 使用時間 # 在螢幕使用的設定中，限定 IG 的使用時間每日是 0 分鐘，這樣 IG icon 永遠會呈現灰色狀態，點擊後會限時「已達使用時間上限」，按下「解除 15 分鐘後」，Eddie 就會抓緊時間快速刷一邊我追蹤的帳號的限時動態，知道他們大概發…",
@@ -648,17 +659,6 @@
       "sourceTitle": "夕时",
       "link": "https://www.iyuxiyang.com/Moment/i2026/267.html",
       "detailPath": "articles/391ee4ccf0847f5e6b2f27ba.json"
-    },
-    {
-      "id": "a2879e21c1dbea47aafb233a",
-      "title": "选择过冬地时的一些考虑因素",
-      "summary": "罗列一下我选择过冬地的一些考虑因素，这篇博客也可以叫 Why I choose Costa Rica",
-      "image": null,
-      "publishedAt": "2026-02-15T16:14:12Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/takeaway/factors-for-wintering-locations/",
-      "detailPath": "articles/a2879e21c1dbea47aafb233a.json"
     }
   ]
 }

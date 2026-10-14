@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "0c61375a0b84e51c7f8b0406",
+      "title": "Pydantic 不是免费的——聊聊数据校验的边界",
+      "summary": "最近给一个后端服务做 perf，跑了一发 py-spy 出来火焰图，盯着看了一会儿，发现 pydantic.main.__init__ 这一条在主热路径上占了一个让人挺难绷的比例。做了几轮调整之后顺手把这件事记一下——核心想说的是： 对一个 web 服务来说，数据校验从来不是免费的，pydantic 也一样。它有它的边界，越界使用就要付出对应的代价。",
+      "image": null,
+      "publishedAt": "2026-03-23T14:30:00Z",
+      "sourceId": "a6add2003c9627a9",
+      "sourceTitle": "Manjusaka",
+      "link": "https://www.manjusaka.blog/posts/2026/03/23/the-boundary-of-pydantic/",
+      "detailPath": "articles/0c61375a0b84e51c7f8b0406.json"
+    },
+    {
       "id": "842388df1b7df560db103db0",
       "title": "來玩 eddielv.com 的拉霸機！",
       "summary": "原本網站有 隨機文章 的功能，後來又弄了每篇文章的 側邊欄位 ，就突然覺得，這兩個東西應該結合啊！ 於是： 點擊拉霸機！",
@@ -648,17 +659,6 @@
       "sourceTitle": "Rolen's Blog",
       "link": "https://rolen.wiki/2026-2/",
       "detailPath": "articles/18fe06a0948bdf40f0ebbf53.json"
-    },
-    {
-      "id": "9a269cbdc3fabc412f26c740",
-      "title": "Vibe Playing",
-      "summary": "Vibe Coding（憑感覺寫程式）大概是 2025 年開始最紅的軟體開發方式──程式碼都是 AI 寫的，人類不知道它寫了什麼、用了什麼邏輯、也不想了解，反正能夠跑就好。這種「我不懂，但我不 care」的態度，也是 Vibe Coding 受到批評的主要原因。",
-      "image": null,
-      "publishedAt": "2026-03-15T06:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/vibe-playing",
-      "detailPath": "articles/9a269cbdc3fabc412f26c740.json"
     }
   ]
 }

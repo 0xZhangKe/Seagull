@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "d31ac21c7cec54def8bab9d5",
+      "title": "开源逆向工程工具REA爆火，为AI Agent提供“逆向一切”能力",
+      "summary": "开源项目REA近期在GitHub上热度飙升，它为AI Agent提供了强大的逆向工程能力。该项目允许开发者的AI助手直接分析没有源码的软件二进制文件，理解其功能实现，并生成带有证据的报告。REA集成了现有的专业逆向工具链，并通过MCP协议与主流AI开发环境连接，显著降低了进行软件分析和竞品研究的技术门槛。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.cnblogs.com/jinjiangongzuoshi/p/23295698",
+      "detailPath": "articles/d31ac21c7cec54def8bab9d5.json"
+    },
+    {
+      "id": "17340b974855718a234648a4",
+      "title": "AI Agent平台Manus与OPPO合作，将智能体能力带入Find X10系列手机",
+      "summary": "AI Agent平台Manus与OPPO宣布合作，将其智能体技术集成至OPPO AI Mind Pilot，并以“Agent Mode”形式首发于OPPO Find X10系列手机。此次合作旨在让手机AI从问答型转向办事型，能自动拆解复杂任务、调用手机内应用数据。Manus 2.0采用的Cascade架构据称能显著提升任务执行效率、降低令牌消耗。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://k.sina.com.cn/article_7857201856_1d45362c001908qz7w.html?from=tech",
+      "detailPath": "articles/17340b974855718a234648a4.json"
+    },
+    {
       "id": "553adef8a305e40ce856157d",
       "title": "ElevenAgents每月自动化处理22,000个支持工单，端到端解决率达65%",
       "summary": "ElevenLabs展示其ElevenAgents平台每月自动化处理超过22,000个客户支持工单，端到端解决率65%，首次平均响应时间从数小时缩短至60秒。",
@@ -76,6 +98,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://help.aliyun.com/zh/model-studio/mcp",
       "detailPath": "articles/72751afcfe88326027776624.json"
+    },
+    {
+      "id": "4b0fc4c08e7896e62bbe43ec",
+      "title": "Google Gemini 4 Argon 模型正式发布，API全面开放并提供限时折扣",
+      "summary": "Google DeepMind正式发布Gemini 4 Argon，这是Gemini 4系列的首个前沿模型，现已通过Gemini API向全球开发者和企业开放。该模型专为复杂的深度工作设计，支持100万token的上下文窗口，原生多模态输入，并具备多种开发者功能。API目前以限时五折优惠价提供，优惠截止至2026年11月30日。",
+      "image": null,
+      "publishedAt": "2026-10-13T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon?hl=zh-CN",
+      "detailPath": "articles/4b0fc4c08e7896e62bbe43ec.json"
     },
     {
       "id": "4d0a5764eabcb763fedf340d",
@@ -626,39 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://agents-quant.com/ai-daily/ai-daily-2026-10-06",
       "detailPath": "articles/b212ab7c1cb814010254cd1b.json"
-    },
-    {
-      "id": "19435fe1d690d336bb25d9c2",
-      "title": "OpenAI履行28天日更承诺：GPT-6 Astra与GPT-6.1 Sol订阅用户速度提升约50%",
-      "summary": "作为为期28天每日更新承诺的第一项更新，OpenAI宣布将GPT-6 Astra和GPT-6.1 Sol模型的默认输出速度提升了约50%。这项优化适用于订阅用户，并将在公告发布后两小时内逐步生效，覆盖OpenAI自有产品以及支持Sign in with ChatGPT的合作伙伴（如OpenCode、Pi、Amp、Devin）。对于依赖连续交互和低延迟的开发者来说，这直接改善了编码、调试等场景下的用户体验，尽管有用户评论认为这更多是速度恢复而非提升。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://news.marsbit.co/20261006091913715470.html",
-      "detailPath": "articles/19435fe1d690d336bb25d9c2.json"
-    },
-    {
-      "id": "7e3d469c7a6b56ce39355b82",
-      "title": "OpenAI为ChatGPT文本引入隐形水印(textGrain)，以符合欧盟AI法案内容溯源要求",
-      "summary": "为遵守欧盟AI法案的生成内容溯源规定，OpenAI宣布为ChatGPT和Codex文本输出引入名为textGrain的隐形水印技术。该水印通过在模型选词时嵌入统计信号实现，不可见但可被专用检测器识别。全球API用户可主动为部分模型启用，在欧盟地区的ChatGPT输出将逐步强制添加。然而技术有局限：经过编辑（如同义词替换）后检测率会大幅下降，因此OpenAI强调水印仅用于内容溯源，不能用于判断版权、责任或人类参与度。开发者若需向欧盟提供服务，需在技术集成中考虑此变化。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.yingzheng.com/article/openai-watermarking-chatgpt-eu-ai-act",
-      "detailPath": "articles/7e3d469c7a6b56ce39355b82.json"
-    },
-    {
-      "id": "5b4f7b5669fe758dcea46bce",
-      "title": "OpenAI Decisions API 进入公共测试版，提供快速结构化决策接口",
-      "summary": "2026年10月6日，OpenAI发布了Decisions API的公开测试版，这是一个专门用于快速结构化决策的新API端点。开发者可以利用它进行请求路由、内容分类、Agent决策等任务，API返回类型化答案的速度比传统Responses API快约10倍，且只对输入token收费，简化了Agent应用的成本计算。",
-      "image": null,
-      "publishedAt": "2026-10-06T07:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna",
-      "detailPath": "articles/5b4f7b5669fe758dcea46bce.json"
     }
   ]
 }

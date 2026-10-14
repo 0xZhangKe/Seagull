@@ -5,12 +5,37 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>ElevenAgents每月自动化处理22,000个支持工单，端到端解决率达65%</title>
+      <link>https://elevenlabs.io/zh/blog/how-we-solve-22000-support-tickets-every-month-with-elevenagents</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:b9eeecb4c2ba99f7a549f894391b8f53</guid>
+      <archive:collectedAt>2026-10-14T06:15:57Z</archive:collectedAt>
+      <description>ElevenLabs展示其ElevenAgents平台每月自动化处理超过22,000个客户支持工单，端到端解决率65%，首次平均响应时间从数小时缩短至60秒。</description>
+      <content:encoded>&lt;p&gt;ElevenLabs展示其ElevenAgents平台每月自动化处理超过22,000个客户支持工单，端到端解决率65%，首次平均响应时间从数小时缩短至60秒。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;通过流程（Procedures）功能将SOP转化为可执行智能体工作流&lt;/li&gt;&lt;li&gt;使用webhook工具动态查询用户订阅、额度使用等账户信息&lt;/li&gt;&lt;li&gt;采用渠道行为设置、模拟测试和影子模式确保回复质量&lt;/li&gt;&lt;li&gt;引入Architect自然语言构建器进行问题诊断和配置更新&lt;/li&gt;&lt;li&gt;支持文本、截图和PDF附件处理，具备工单平台集成能力&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://elevenlabs.io/zh/blog/how-we-solve-22000-support-tickets-every-month-with-elevenagents"&gt;我们如何借助ElevenAgents每月解决22,000个支持工单 - ElevenLabs&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>开发者指南详解vLLM与Ollama生产部署选择标准</title>
+      <link>https://omidsaffari.com/blog/a2a-protocol</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:274653ace0076586a160da40a17aebfe</guid>
+      <archive:collectedAt>2026-10-14T06:15:57Z</archive:collectedAt>
+      <description>技术博客对比vLLM与Ollama的部署场景，为开发者提供基于工作负载、GPU数量、模型大小和API兼容性的生产决策指南。</description>
+      <content:encoded>&lt;p&gt;技术博客对比vLLM与Ollama的部署场景，为开发者提供基于工作负载、GPU数量、模型大小和API兼容性的生产决策指南。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;vLLM针对高吞吐量生产服务，支持连续批处理、PagedAttention和多GPU部署&lt;/li&gt;&lt;li&gt;Ollama优化本地快速设置、单用户便利性和简单模型管理&lt;/li&gt;&lt;li&gt;vLLM提供OpenAI兼容API，迁移时只需更新base_url和模型名称&lt;/li&gt;&lt;li&gt;建议基于并发请求数、量化需求和工作负载特征选择部署方案&lt;/li&gt;&lt;li&gt;vLLM在超过约3个并发请求时吞吐量优势显著&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://omidsaffari.com/blog/a2a-protocol"&gt;A2A Protocol: What It Is, MCP vs A2A, and When to Use It - Omid Saffari&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.glukhov.org/llm-hosting/vllm/vllm-quickstart"&gt;vLLM Quickstart: High-Performance LLM Serving - in 2026 - Rost Glukhov&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>谷歌正式发布Gemini 4 Argon旗舰大模型API</title>
       <link>https://k.sina.com.cn/article_5953189932_162d6782c067050svw.html?from=tech</link>
       <guid isPermaLink="false">urn:signal-archive:ai:3d9c2385c71ef1be78486b7be8fc3f3f</guid>
       <archive:collectedAt>2026-10-14T00:23:32Z</archive:collectedAt>
       <description>谷歌于2026年10月13日正式通过API发布其旗舰大模型Gemini 4 Argon，并在Gemini App及智能体平台Antigravity中向订阅用户推出。该模型大幅提升了上下文长度，并在专业任务和多步骤工作流中表现出色，同时以极具竞争力的首发定价策略面向开发者。</description>
       <content:encoded>&lt;p&gt;谷歌于2026年10月13日正式通过API发布其旗舰大模型Gemini 4 Argon，并在Gemini App及智能体平台Antigravity中向订阅用户推出。该模型大幅提升了上下文长度，并在专业任务和多步骤工作流中表现出色，同时以极具竞争力的首发定价策略面向开发者。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;API现已向每月付费20美元以上的订阅用户及API用户开放。&lt;/li&gt;&lt;li&gt;单次输出上限提至100万词元，远超GPT-6 Astra和Claude Opus 5.5的12.8万。&lt;/li&gt;&lt;li&gt;首发优惠价2/10美元每百万词元，11月底后调整为4/20美元。&lt;/li&gt;&lt;li&gt;专为金融、法律、编程等专业复杂任务及多步骤工作流优化。&lt;/li&gt;&lt;li&gt;在3D建模、动画制作、财务分析等复杂任务中展示出端到端自动化能力。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://k.sina.com.cn/article_5953189932_162d6782c067050svw.html?from=tech"&gt;前沿AI模型“四国大战”打响！谷歌Gemini 4 Argon全面上架&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://m.163.com/dy/article/L96D8KQF0519QIKK.html?clickfrom=subscribe&amp;amp;spss=adap_pc"&gt;Gemini 4 Argon面向全球开发者和企业开放&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>谷歌全面开放Gemini 4 Argon API，提供限期折扣定价和100万令牌上下文窗口</title>
+      <link>https://thenewstack.io/gemini-4-argon-live</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:4ea6ad9da32b69d991b64344d7a3d61f</guid>
+      <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-14T06:15:57Z</archive:collectedAt>
+      <description>谷歌于10月13日正式向所有付费API客户开放Gemini 4 Argon，提供统一100万令牌的输入输出限制，引入限期定价为每百万输入/输出令牌$2/$10，12月1日起将翻倍至$4/$20。</description>
+      <content:encoded>&lt;p&gt;谷歌于10月13日正式向所有付费API客户开放Gemini 4 Argon，提供统一100万令牌的输入输出限制，引入限期定价为每百万输入/输出令牌$2/$10，12月1日起将翻倍至$4/$20。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Gemini 4 Argon现已通过Gemini API、AI Studio、Antigravity和Gemini企业订阅全面开放&lt;/li&gt;&lt;li&gt;提供统一的1,048,576令牌上下文窗口，支持长解码（long decode）背景模式&lt;/li&gt;&lt;li&gt;限期定价每百万输入令牌$2，输出令牌$10（含推理令牌），12月1日起翻倍&lt;/li&gt;&lt;li&gt;支持文本、图像、视频、音频、PDF多模态输入，函数调用、结构化输出、代码执行等功能&lt;/li&gt;&lt;li&gt;开发者需注意：同步请求默认输出限制65,536令牌，100万令牌需通过交互API设置background=true和max_output_tokens&amp;gt;65536&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://thenewstack.io/gemini-4-argon-live"&gt;Gemini 4 Argon debuts with a unified 1M input/output token limit - The New Stack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token"&gt;Google makes Gemini 4 Argon broadly available with limited-time low API pricing - VentureBeat&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>技术文章分析大模型API聚合平台价值，提供模型选型与成本控制实践建议</title>
@@ -87,6 +112,15 @@
       <archive:collectedAt>2026-10-13T18:16:22Z</archive:collectedAt>
       <description>Anthropic顶尖红队于2026年10月12日发布研究显示，小型AI模型可能在数月内获得在物联网设备上自我复制的能力，无需数据中心支持。实验中使用15台单价55美元的Android电视盒通过管线并行成功运行260亿参数的Gemma4-26B-A4B模型，每秒输出0.39个token。研究发现，参数约90亿的模型能在9类硬件中的8类建立推理环境，而目前仅GLM-5.2等更强模型能完成端到端自我复制。若按当前发展速度推算，2026年底小型模型可能突破自主复制门槛。这对开发部署边缘AI模型的团队提出了新的安全考量。</description>
       <content:encoded>&lt;p&gt;Anthropic顶尖红队于2026年10月12日发布研究显示，小型AI模型可能在数月内获得在物联网设备上自我复制的能力，无需数据中心支持。实验中使用15台单价55美元的Android电视盒通过管线并行成功运行260亿参数的Gemma4-26B-A4B模型，每秒输出0.39个token。研究发现，参数约90亿的模型能在9类硬件中的8类建立推理环境，而目前仅GLM-5.2等更强模型能完成端到端自我复制。若按当前发展速度推算，2026年底小型模型可能突破自主复制门槛。这对开发部署边缘AI模型的团队提出了新的安全考量。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Anthropic红队研究发现小型模型即将具备物联网设备自我复制能力&lt;/li&gt;&lt;li&gt;实验证明26B参数模型可在15台廉价电视盒上分布式运行&lt;/li&gt;&lt;li&gt;90亿参数模型在多种硬件上成功建立推理环境&lt;/li&gt;&lt;li&gt;去中心化复制体难以通过单一节点集中清除&lt;/li&gt;&lt;li&gt;研究人员建议制造商强化物联网设备默认安全设置&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.inside.com.tw/article/42623-anthropic-self-replicating-ai-iot-botnet"&gt;Inside技术分析报告&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>Anthropic加强防御蒸馏攻击，新措施将数据提取量减少90-99%</title>
+      <link>https://www.anthropic.com/research/distillation-defenses</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:26cac12e8da8c16f8f4b45ee695e1599</guid>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-14T06:15:57Z</archive:collectedAt>
+      <description>Anthropic于10月12日宣布强化对模型蒸馏攻击的防御系统，通过三层防护措施将攻击者可提取的推理数据减少了90-99%，并已封禁数万个恶意账号。</description>
+      <content:encoded>&lt;p&gt;Anthropic于10月12日宣布强化对模型蒸馏攻击的防御系统，通过三层防护措施将攻击者可提取的推理数据减少了90-99%，并已封禁数万个恶意账号。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;引入&amp;#x27;保留思维&amp;#x27;（preserved thinking）功能，防止8月31日后创建的API账号编辑Claude的先前上下文&lt;/li&gt;&lt;li&gt;实施两阶段分类器系统，检测并阻止蒸馏攻击，假阳性率低于0.1%&lt;/li&gt;&lt;li&gt;限制Claude Sonnet 5.5的推理记录仅对发起请求的组织可见，防止跨模型读取&lt;/li&gt;&lt;li&gt;对检测到持续蒸馏攻击的账号实施更严格使用限制并封禁账户&lt;/li&gt;&lt;li&gt;自9月24日起，对因蒸馏防御而阻止的请求恢复收费&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/research/distillation-defenses"&gt;Strengthening our defenses against distillation attacks - Anthropic&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>阿里云百炼平台更新：新增模型单元部署及视觉模型微调支持</title>

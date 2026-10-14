@@ -12,7 +12,7 @@
 	<atom:link href="https://v1sta.xyz/feed/" rel="self" type="application/rss+xml" />
 	<link>https://v1sta.xyz</link>
 	<description>远景的幻想空间</description>
-	<lastBuildDate>Tue, 13 Oct 2026 13:00:15 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Oct 2026 09:06:02 +0000</lastBuildDate>
 	<language>zh-Hans</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -32,6 +32,72 @@
 <atom:link rel="hub" href="https://websubhub.com/hub"/>
 <atom:link rel="self" href="https://v1sta.xyz/feed/"/>
 	<item>
+		<title>10-14 Homelab与小型机厨房架构随想</title>
+		<link>https://v1sta.xyz/think/10-14-homelab%e4%b8%8e%e5%b0%8f%e5%9e%8b%e6%9c%ba%e5%8e%a8%e6%88%bf%e6%9e%b6%e6%9e%84%e9%9a%8f%e6%83%b3/</link>
+					<comments>https://v1sta.xyz/think/10-14-homelab%e4%b8%8e%e5%b0%8f%e5%9e%8b%e6%9c%ba%e5%8e%a8%e6%88%bf%e6%9e%b6%e6%9e%84%e9%9a%8f%e6%83%b3/#respond</comments>
+		
+		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2026 09:05:59 +0000</pubDate>
+				<category><![CDATA[技术]]></category>
+		<category><![CDATA[随想]]></category>
+		<guid isPermaLink="false">https://v1sta.xyz/?p=8221</guid>
+
+					<description><![CDATA[前段时间试着想要去装一个机架式IT机柜，但还是暂时搁置了。因为我的网络架构密度似乎并不需要那么多的设备，几个A &#8230; <a href="https://v1sta.xyz/think/10-14-homelab%e4%b8%8e%e5%b0%8f%e5%9e%8b%e6%9c%ba%e5%8e%a8%e6%88%bf%e6%9e%b6%e6%9e%84%e9%9a%8f%e6%83%b3/" class="more-link">继续阅读<span class="screen-reader-text">10-14 Homelab与小型机厨房架构随想</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">前段时间试着想要去装一个机架式IT机柜，但还是暂时搁置了。因为我的网络架构密度似乎并不需要那么多的设备，几个ATX机箱像刀片并排放在地上其实就行。</p>
+
+
+
+<p class="wp-block-paragraph">域主我思考了一下网络的拓扑结构。前段时间不是也提到了厨房电脑的想法吗。</p>
+
+
+
+<p class="wp-block-paragraph">这一茬发现原来在小型机时代就有类似的说法了：未来的人们入住的标准化公寓，将会用一台架设在厨房的小型机管理整个住房的电气与信息化系统，所有的数据将会量化在厨房的总机，包括蔬菜、零食、耗材的仓库管理系统、也包括个人信息管理系统（PIM）例如任务与日历事件的管理，还可以用作电视的NVR源存储、自动化家居系统的中控（智能家居的前身）。</p>
+
+
+
+<p class="wp-block-paragraph">虽然这个方案没有得到广泛的普及，在商业上这也是失败的。<br>但是在几十年后的今天，现代的Homelab极客用另一种虚拟化集群的方式，手搓出了一套符合这个逻辑的小型机架构。我知道它在电气层面的可扩展性是不能算作小型机，但如果按照管理方式来理解，这种基于虚拟化、容器化的与集群资源的扩展逻辑越来越像小型机，也是很多民间技术研究者戏称的开IDC。只是受限于不同人的家庭情况，大多数Homelab的逻辑仍然以单机逐一扩展、而不是整个集群化仲裁资源的运行方式（即真正的企业级关键任务的商用管理体系）。</p>
+
+
+
+<span id="more-8221"></span>
+
+
+
+<p class="wp-block-paragraph">话也说回来，现代PC（微机/微型机）和小型机的差距也在缩小，而像包括Mac在内的许多ARM总线的电脑究竟还算是微型机也是一个疑问，毕竟树莓派并不是那种传统意义上的单片机。但总之它们都还是约翰·冯·诺依曼架构的计算系统，就像人类始终是碳基生物一样。</p>
+
+
+
+<p class="wp-block-paragraph">另一说，为什么小型机要和厨房挂钩？其实顺着这个逻辑思考一下，现在Homelab的总部部署位置。一套机架（广义、不限于19英寸工业机架），要么部署在鞋柜、电视柜等靠近入户弱电系统的区域、要么专门有一个置物架作为信息交换中枢，类似于城市规划的CBD商圈中心/高新产业园。极客们在这个架构之上，再去扩展更多样的物理外设，最常见的就是视听、音响系统（即HTPC）、以及厨房的仓库管理系统。<br>厨房和电视柜是大多数住房家庭最不容易变动、又不会显著影响生活质量的黄金区位。如果是微缩化的纯固态系统，床头柜也是一个选择。</p>
+
+
+
+<p class="wp-block-paragraph">与大多数Homelab凭依在HTPC媒体库哲学不同的是，厨房电脑要么是一个整套家庭系统的中枢，要么是一个独立于中枢之外的体系。按照这个逻辑会发现，厨房电脑有点像香港，而HTPC则是澳门。我知道有的读者可能不喜欢这种政治立场的表述，但是宏观来看，把“书房或办公室工作台的主要IT系统比喻为内地”的话，香港和澳门作为游离于内地系统之外的独立性，恰好对应家中的“厨房位”与“电视位”。厨房有自己的音响系统与信息统计工具，就像香港有自成一派的娱乐文化和金融体系，而且也可以直接在厨房部署一套智能家居系统，这样不会影响到主系统、也不应该受到主系统的影响；</p>
+
+
+
+<p class="wp-block-paragraph">它可以独立运作、也能和主系统建立沟通。而电视系统、HTPC的作为「黑电」的独立性远不如「白电」的厨房体系，它怎么都不太适合直接接入书房或办公室电脑的主系统，脱离了主系统的控制，它就只有娱乐系统。</p>
+
+
+
+<p class="wp-block-paragraph">那么那个小岛呢？其实这么说就危险了，我知道有的读者不乐意看。但是一定要比喻的话，那就是用公司的贷款购买的房车网络。它也是自成一派的独立系统，链路也不是直接接入到家中铺设的基建（而是走中继网络）。<br>因为是公司贷款购买的，所以房车有事就是公司有事！这样一来也说得通了。</p>
+
+
+
+<p class="wp-block-paragraph">至于那些偏远地区就相当于旧时代的XP电脑。它们没有实质上的生产力信息交换任务，但既然要留着，就得部署更严格的策略限制。无论是自治区还是偏远的县城都适用于这个规则。</p>
+
+
+
+<p class="wp-block-paragraph">话虽如此，我真的很想把落地电视改成一部类似于夏普X6800的一体机电脑。前段时间也观摩了来自夏普、爱华的各种电视电脑（本质上是胶水系统，连电源线都是单独接驳的）。厨房刚好处在玄关位置，其动线非常需要一个智能中控的Kiosk作为出勤之前的控制台与信息大屏，做饭的时候还能顺带用MPD和DLNA听听歌呀。</p>
+
+<p><a href="https://v1sta.xyz/think/10-14-homelab%e4%b8%8e%e5%b0%8f%e5%9e%8b%e6%9c%ba%e5%8e%a8%e6%88%bf%e6%9e%b6%e6%9e%84%e9%9a%8f%e6%83%b3/" rel="nofollow">来源</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://v1sta.xyz/think/10-14-homelab%e4%b8%8e%e5%b0%8f%e5%9e%8b%e6%9c%ba%e5%8e%a8%e6%88%bf%e6%9e%b6%e6%9e%84%e9%9a%8f%e6%83%b3/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
+		<item>
 		<title>如何备份和管理Flash存档</title>
 		<link>https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/</link>
 					<comments>https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/#respond</comments>
@@ -665,41 +731,6 @@
 <p><a href="https://v1sta.xyz/artworks/opentoonz%e8%ae%be%e7%bd%aeangle%e5%9b%be%e5%bd%a2%e5%bc%95%e6%93%8e%e5%90%af%e5%8a%a8%e7%a8%8b%e5%ba%8f/" rel="nofollow">来源</a></p>]]></content:encoded>
 					
 					<wfw:commentRss>https://v1sta.xyz/artworks/opentoonz%e8%ae%be%e7%bd%aeangle%e5%9b%be%e5%bd%a2%e5%bc%95%e6%93%8e%e5%90%af%e5%8a%a8%e7%a8%8b%e5%ba%8f/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-		<enclosure url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" length="199214" type="image/png"/><media:content url="https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png" width="512" height="512" medium="image" type="image/png"/>	</item>
-		<item>
-		<title>追忆：旅行青蛙</title>
-		<link>https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/</link>
-					<comments>https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/#respond</comments>
-		
-		<dc:creator><![CDATA[域主 V1STA]]></dc:creator>
-		<pubDate>Sat, 26 Sep 2026 16:14:54 +0000</pubDate>
-				<category><![CDATA[ACG]]></category>
-		<category><![CDATA[发现]]></category>
-		<category><![CDATA[追忆]]></category>
-		<guid isPermaLink="false">https://v1sta.xyz/?p=7961</guid>
-
-					<description><![CDATA[Bookmarked 陪伴玩家8年的《旅行青蛙》 还是死了_游戏热门视频 by TapTap发现好游戏. 说起 &#8230; <a href="https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/" class="more-link">继续阅读<span class="screen-reader-text">追忆：旅行青蛙</span> <span class="meta-nav">&#8594;</span></a>]]></description>
-										<content:encoded><![CDATA[
-<div class="wp-block-indieblocks-bookmark"><div class="u-bookmark-of h-cite"><p><i>Bookmarked <a class="u-url p-name" href="https://www.bilibili.com/video/BV1FtYx6dEWp">陪伴玩家8年的《旅行青蛙》 还是死了_游戏热门视频</a> by <span class="p-author">TapTap发现好游戏</span>.</i></p></div></div>
-
-
-
-<p class="wp-block-paragraph">说起来旅行青蛙也是时代眼泪了，记得当时非常火。但我天然玩不成养成类游戏。记得还有同类型的养猫。</p>
-
-
-
-<p class="wp-block-paragraph">记得这游戏是单机类型的呀，按理说它不是网游，怎会“停服”？看了才知道，中国的灵犀工作室代理了版权制作了一个中国衍生版——旅行青蛙：中国之旅（类似于P5X），而这个衍生版本的运营模式刚好就是网游，并且在2021年也有新玩家，但彼时已经是小众游戏了。听闻95%的收益都要抽走，恐怕也是当今的世界如此动荡，日方的小公司急于套现的心理才敢这么翻脸。</p>
-
-
-
-<p class="wp-block-paragraph">诶？旅行青蛙的角色设定、原来是丈夫而不是孩子吗……那么把青蛙引进家里做那样的事情的设计是………（？</p>
-
-<p><a href="https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/" rel="nofollow">来源</a></p>]]></content:encoded>
-					
-					<wfw:commentRss>https://v1sta.xyz/memories/%e8%bf%bd%e5%bf%86%ef%bc%9a%e6%97%85%e8%a1%8c%e9%9d%92%e8%9b%99/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

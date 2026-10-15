@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: signal-archive-writer
+  group: seagull-writer
   cancel-in-progress: false
   queue: max
 

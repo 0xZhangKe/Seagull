@@ -1,8 +1,8 @@
-# Signal Archive
+# Seagull
 
-Signal Archive 是一个基于 GitHub Actions 的自动化内容采集与归档项目。项目从标准 RSS/Atom 订阅源和 AI 驱动的自定义订阅源拉取内容，将结果保存到独立的 `archive` 分支，并使用 Git commit 记录每次归档的变化。归档数据可以被 Fread、GitHub Pages 以及其他阅读端共同使用。
+Seagull 是一个基于 GitHub Actions 的自动化内容采集与归档项目。项目从标准 RSS/Atom 订阅源和 AI 驱动的自定义订阅源拉取内容，将结果保存到独立的 `archive` 分支，并使用 Git commit 记录每次归档的变化。归档数据可以被 Fread、GitHub Pages 以及其他阅读端共同使用。
 
-[https://0xzhangke.github.io/signal-archive/](https://0xzhangke.github.io/signal-archive/)
+[https://0xzhangke.github.io/Seagull/](https://0xzhangke.github.io/Seagull/)
 
 ## 分支职责
 
@@ -334,7 +334,7 @@ python3 -m unittest discover -s tests -v
 5. 将 commit 推送到远端 `archive` 分支。
 6. 触发 RSS 和 AI 统一采集。仅修改 Prompt 时即使 Catalog 未变化，也会触发采集。
 
-所有会写入 `archive` 的工作流都使用 `signal-archive-writer` 并发组，并配置 `queue: max` 排队，避免同时推送或替换等待中的归档任务。
+所有会写入 `archive` 的工作流都使用 `seagull-writer` 并发组，并配置 `queue: max` 排队，避免同时推送或替换等待中的归档任务。
 
 ## RSS 和 AI 自动拉取
 

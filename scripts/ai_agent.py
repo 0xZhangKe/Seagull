@@ -105,7 +105,7 @@ def post_json(url: str, key: str, payload: dict, timeout: float) -> dict:
         url,
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
-                 "User-Agent": "signal-archive/1.0"},
+                 "User-Agent": "Seagull/1.0"},
         method="POST",
     )
     # Do not expose Authorization headers or remote error bodies in Actions logs.

@@ -210,7 +210,7 @@ def mock_feed(source: dict[str, Any], source_index: int) -> str:
         <channel>
           <title>{html.escape(source['title'])}</title>
           <link>https://feeds.example.test/{source['id']}</link>
-          <description>Signal Archive UI mock feed</description>
+          <description>Seagull UI mock feed</description>
           {''.join(items)}
         </channel>
       </rss>
@@ -223,7 +223,7 @@ def write_json(path: Path, value: Any) -> None:
 
 
 def build_mock_preview(site_root: Path, output: Path) -> dict[str, int]:
-    with tempfile.TemporaryDirectory(prefix="signal-archive-mock-") as temporary_directory:
+    with tempfile.TemporaryDirectory(prefix="seagull-mock-") as temporary_directory:
         archive_root = Path(temporary_directory)
         catalog_path = archive_root / "catalog.json"
         write_json(catalog_path, mock_catalog())
@@ -290,7 +290,7 @@ def main() -> int:
     except OSError as error:
         print(f"error: cannot start preview server: {error}", file=sys.stderr)
         return 1
-    print(f"Signal Archive preview: http://{args.host}:{args.port}/")
+    print(f"Seagull preview: http://{args.host}:{args.port}/")
     print("Edit files in site/ and refresh the page to see UI changes.")
     try:
         server.serve_forever()

@@ -5,7 +5,8 @@ const MIN_MIDDLE_WIDTH = 260;
 const MIN_READER_WIDTH = 360;
 const RESIZE_STEP = 16;
 const AUTO_LOAD_THRESHOLD = 320;
-const THEME_STORAGE_KEY = "signal-archive-theme";
+const THEME_STORAGE_KEY = "seagull-theme";
+const LEGACY_THEME_STORAGE_KEY = "signal-archive-theme";
 
 const state = {
   navigation: [],
@@ -72,9 +73,14 @@ function initializeTheme() {
   const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
   if (storedTheme === "light" || storedTheme === "dark") {
     setTheme(storedTheme, { persist: false });
-  } else {
-    updateThemeButton(preferredTheme());
+    return;
   }
+  const legacyTheme = localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
+  if (legacyTheme === "light" || legacyTheme === "dark") {
+    setTheme(legacyTheme);
+    return;
+  }
+  updateThemeButton(preferredTheme());
 }
 
 function nodeKey(node) {

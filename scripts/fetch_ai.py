@@ -17,7 +17,9 @@ from scripts.fetch_rss import FetchFailure, Source, atomic_write, utc_now
 
 
 CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
+# Preserve the original XML namespace so archived collection timestamps remain readable.
 ARCHIVE_NS = "https://0xzhangke.github.io/signal-archive/ns"
+FEED_HOME_URL = "https://0xzhangke.github.io/Seagull/"
 ET.register_namespace("content", CONTENT_NS)
 ET.register_namespace("archive", ARCHIVE_NS)
 RETAIN_ITEMS = 200
@@ -33,6 +35,7 @@ def canonical_article_url(url: str) -> str:
 
 def article_guid(source_id: str, url: str) -> str:
     digest = hashlib.sha256((source_id + "\0" + canonical_article_url(url)).encode("utf-8")).hexdigest()
+    # Preserve existing article identities and deduplication across project renames.
     return f"urn:signal-archive:ai:{digest[:32]}"
 
 
@@ -88,12 +91,14 @@ def merge_feed(source: AiSource, old_content: bytes | None, items: list[dict], n
         ET.SubElement(item, f"{{{CONTENT_NS}}}encoded").text = paragraphs
         by_guid[guid] = item
         added = True
-    if old_content is not None and not added and old_channel.findtext("title") == source.title:
+    if (old_content is not None and not added
+            and old_channel.findtext("title") == source.title
+            and old_channel.findtext("link") == FEED_HOME_URL):
         return old_content
     root = ET.Element("rss", version="2.0")
     channel = ET.SubElement(root, "channel")
     ET.SubElement(channel, "title").text = source.title
-    ET.SubElement(channel, "link").text = "https://0xzhangke.github.io/signal-archive/"
+    ET.SubElement(channel, "link").text = FEED_HOME_URL
     ET.SubElement(channel, "description").text = "AI 整理的公开网络内容，附原始来源。"
     for item in sorted(by_guid.values(), key=item_sort_key, reverse=True)[:RETAIN_ITEMS]:
         channel.append(item)

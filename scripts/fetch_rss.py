@@ -19,7 +19,7 @@ from typing import Any, Callable
 
 
 DEFAULT_MAX_BYTES = 20 * 1024 * 1024
-USER_AGENT = "signal-archive/1.0 (+https://github.com/0xZhangKe/signal-archive)"
+USER_AGENT = "Seagull/1.0 (+https://github.com/0xZhangKe/Seagull)"
 
 
 @dataclass(frozen=True)

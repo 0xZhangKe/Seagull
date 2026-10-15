@@ -1,8 +1,8 @@
-# Signal Archive 阅读数据协议
+# Seagull 阅读数据协议
 
 ## 1. 项目概览
 
-Signal Archive 负责采集 RSS/Atom 和 AI 自定义来源，并将内容转换为适合阅读端按需加载的静态 JSON。
+Seagull 负责采集 RSS/Atom 和 AI 自定义来源，并将内容转换为适合阅读端按需加载的静态 JSON。
 
 项目包含两个分支：
 
@@ -31,10 +31,10 @@ archive
 
 ```text
 Base URL:
-https://0xzhangke.github.io/signal-archive/data/
+https://0xzhangke.github.io/Seagull/data/
 
 入口：
-https://0xzhangke.github.io/signal-archive/data/rendered.json
+https://0xzhangke.github.io/Seagull/data/rendered.json
 ```
 
 ### Raw GitHub
@@ -43,10 +43,10 @@ https://0xzhangke.github.io/signal-archive/data/rendered.json
 
 ```text
 Base URL:
-https://raw.githubusercontent.com/0xZhangKe/signal-archive/archive/
+https://raw.githubusercontent.com/0xZhangKe/Seagull/archive/
 
 入口：
-https://raw.githubusercontent.com/0xZhangKe/signal-archive/archive/rendered.json
+https://raw.githubusercontent.com/0xZhangKe/Seagull/archive/rendered.json
 ```
 
 所有协议路径都是相对于 Base URL 的路径。
@@ -262,7 +262,7 @@ GET rendered.json
 
 ## 10. 本地样例数据
 
-在 Signal Archive 项目中运行：
+在 Seagull 项目中运行：
 
 ```bash
 python3 scripts/preview_pages.py --build-only

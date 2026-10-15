@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "91b8703dd9f966531f409493",
+      "title": "如何把生活中零碎的灵感或流水账，建立联系，让他们有价值？",
+      "summary": "前置条件 记录生活(个人、家庭)，目的是用来回忆。 对于自己感兴趣的东西，日常需要积累，定期回顾，输出成文，写的过程就是思考的过程。 阅读，读书要笔记，笔记最好可以很多本书关联，对一件事用狐狸的思维，而不是刺猬的思维。 具体项目，需要积累很多碎片的东西，最后完成一个项目，即可归档。 具体做法 1. 记录生活(个人、家庭)，目的是用来回忆。 由上而下，宏观规划。我有一间自己的虚拟房子，里面放了很多零零碎碎的东西，但是基本原则是遵循一个房子的建造原则，从上倒下做的规划： 这一部分的记录，就是单纯的为了家庭回忆，其实有很多分类方式，比如照片、视频、地点、目的等等。我的基本原则如下： 随手的东西，就随手记录，重要的是每天有所记录，不需要细化，只留下钩子 日常类，以月为单位，简单记录，再根据分类细化 照片、视频等媒体资…",
+      "image": "https://static.elizen.me//img/LkbpUtQg78.png",
+      "publishedAt": "2022-03-23T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2022/03/how-to-manage-information/",
+      "detailPath": "articles/91b8703dd9f966531f409493.json"
+    },
+    {
       "id": "688a3dc9218be3435e56209a",
       "title": "Linux 下 Node Source 安装的 npm 权限问题",
       "summary": "前言 近期安装了 Linux 系统作为主力机器的第二系统，双启动引导。 系统是 Pop!OS 20.04 LTS ，基于 Ubuntu 20.04 由于前端开发及部署需求，需要安装 node.js，于是使用 node source 提供的 node 发行版。 由于安装完成后，npm 存储包的目录为 /usr ，使用时必须加 sudo ，为了避免这种情况和权限安全问题，需要将 npm 的包存储到用户目录下，并且强烈不建议使用 sudo 来全局安装包到 /usr 目录下 方法 检查当前 npm 安装的包路径前缀 1 npm config get prefix 如果返回 /usr 则执行以下命令 1 2 3 mkdir ~/.npm-global export NPM_CONFIG_PREFIX = ~/.npm-…",
@@ -648,17 +659,6 @@
       "sourceTitle": "极东魔术昼寝结社",
       "link": "https://blog.jaoushingan.com/2021/12/18/web-login/",
       "detailPath": "articles/2a7a9e89502e5b11624e43af.json"
-    },
-    {
-      "id": "01b113adfd95e52bd39c4331",
-      "title": "抢先发布的2021总结",
-      "summary": "考虑到现在已经是12月中旬，再过两周就会迎来一大波年终总结，而我又拖延成性，比如去年准备写的健身系列博客，拖到今年才写完；而一些读书/看剧的总结则直接拖没了。为了不把今年的年终总结拖到明年，我决定先写为敬。",
-      "image": null,
-      "publishedAt": "2021-12-16T23:14:37Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/takeaway/2021-retro/",
-      "detailPath": "articles/01b113adfd95e52bd39c4331.json"
     }
   ]
 }

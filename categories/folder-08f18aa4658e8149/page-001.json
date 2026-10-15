@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "c31169f76e1558f6b58cb428",
+      "title": "視力測驗的故事",
+      "summary": "突然想起一個故事。 國小高年級到國中左右應該是最多身旁同學一個個戴上眼鏡的時候。而我一直有一個關於在學校量身高體重時做視力測驗的記憶： 場景是在每學年全班一起去量一次身高體重的保健室。有戴眼鏡矯正視力的人，在用測視力的上下左右搖桿機器時需要測兩次，一次裸視、一次戴眼鏡。 更早以前是沒有機器的，保健室阿姨或眼科醫師會給人一支黑色的「湯匙」遮一邊眼睛，要坐在固定距離以外回答海報上的符號上下左右。不過機器測量確切是在什麼時候開始引進的也不重要，對大家來說，重要的是量身高體重是少數大家能一起長時間離開教室的機會。畢竟在教室內是要保持無聊和沉悶的，到走廊上排隊則相反。 扯遠了。 那時在保健室，跟等著成群結隊回教室的同學們在旁聊天。其中一個同學一邊繼續接著話，一邊坐到機器前面準備開測。 在裸視測第一回的時候，他每切換一次…",
+      "image": null,
+      "publishedAt": "2026-10-15T11:12:44Z",
+      "sourceId": "859dc4f797795c39",
+      "sourceTitle": "蟬噪林愈靜",
+      "link": "https://blog.linyuchin.com/eye-test/",
+      "detailPath": "articles/c31169f76e1558f6b58cb428.json"
+    },
+    {
+      "id": "6c5f5b7539fd603ee9fbce9a",
+      "title": "2026-08-10 / 非凡大师",
+      "summary": "by 新世界的大门",
+      "image": "https://remnote-user-data.s3.amazonaws.com/fL4Tc9RBL2_GBlYyW4wLho4mCiN9sOQohVkhFIhSv5boT9_Se90L5DA0lL0GmEGLnF_cxgubd92-zFmlTLFaLOJUvcOziSmNllKK--Jsm0nY6Ee0_CRPWWHrj_UmdgnD.webp",
+      "publishedAt": "2026-10-15T10:47:29Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/100/",
+      "detailPath": "articles/6c5f5b7539fd603ee9fbce9a.json"
+    },
+    {
+      "id": "95c99a3d40fdc19f73ad11f4",
+      "title": "活用大寫鎖定鍵",
+      "summary": "活用 CapsLock 鍵，把本來的大寫鎖定功能改掉，換成按一下時是 Esc ，按住時是 Ctrl 。 以下是我設定的方式，都是很簡單就可以做到的。 Linux 安裝 keyd 打開 keyd 的 config file 設定檔 ，位置在 /etc/keyd/default.conf （沒有的話可以自己新增），並在裡面複製貼上這個： [ids] * [main] capslock = overload(control, esc) 啟動 keyd：打開終端機，執行以下啟動指令 sudo systemctl enable keyd --now （ enable 改 disable 就是關閉，如果某天改變心意想要改回來的話） 完成 以後如果還有改動設定檔的話，可以執行這個 reload 指令來讓設定檔套用 sudo…",
+      "image": null,
+      "publishedAt": "2026-10-15T10:40:56Z",
+      "sourceId": "859dc4f797795c39",
+      "sourceTitle": "蟬噪林愈靜",
+      "link": "https://blog.linyuchin.com/capslock-remap/",
+      "detailPath": "articles/95c99a3d40fdc19f73ad11f4.json"
+    },
+    {
       "id": "6c52c3b81201fb4eb46c9276",
       "title": "入蜀记 day504 周期时间观、我都爱、低端定位",
       "summary": "「周期时间观、我都爱、低端定位。」",
@@ -626,39 +659,6 @@
       "sourceTitle": "蟬噪林愈靜",
       "link": "https://blog.linyuchin.com/manzoo-font-finder/",
       "detailPath": "articles/4b4972e85e07433bcab303e0.json"
-    },
-    {
-      "id": "23d567d9540e2b9e13fc1a39",
-      "title": "最近几天将博客重新设计了一版，用的是 Claude Fable 5.1 的模型，应该…",
-      "summary": "最近几天将博客重新设计了一版，用的是 Claude Fable 5.1 的模型，应该是当今世界最强模型了，整体的速度和设计都很不错，我非常满意，一个好用的大脑，跟一个还行的大脑真的是差距非常大",
-      "image": null,
-      "publishedAt": "2026-10-12T12:03:26Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/tiny-happiness/nmv4qbird/",
-      "detailPath": "articles/23d567d9540e2b9e13fc1a39.json"
-    },
-    {
-      "id": "0bcb4916d4686e3489ed6c9a",
-      "title": "大寫鎖定鍵",
-      "summary": "不知道為什麼，在我認識的人裡面，似乎有超過一半並不知道「按住 shift 不放再敲字母」就能打出大寫的字母。 包括我本人國小時期第一次學習使用電腦的時候，在學校電腦課教電腦的電腦老師、在家裡教我怎麼在「我的最愛」打開 www.freegame.tw 的哥哥都在這個範圍內。印象中，大概是在國中左右我才學會 shift 的正常功能應該是「按住敲大寫，不按敲小寫」。也就是說從國小一年級到六年級（或是國三）畢業為止，我至少有五到八年左右的時間都是這樣打字： CapsLock I CapsLock like to watch CapsLock TV CapsLock . CapsLock M CapsLock y favorite CapsLock TV CapsLock show is a singing conte…",
-      "image": null,
-      "publishedAt": "2026-10-12T12:00:46Z",
-      "sourceId": "859dc4f797795c39",
-      "sourceTitle": "蟬噪林愈靜",
-      "link": "https://blog.linyuchin.com/capslock/",
-      "detailPath": "articles/0bcb4916d4686e3489ed6c9a.json"
-    },
-    {
-      "id": "884e485d93d16fb68a68b5d5",
-      "title": "Accents ultimately don't mean a lot",
-      "summary": "One day when I went for my usual grocery shopping, I stumbled upon a child behind me when I was queuing up at a payment counter. The little kid, who looked to be of Chinese ethnicity and about two to three years old, was riding a fairly small-size bicycle which was obtained from the supermarket and wasn’t yet paid for. And then for some reason, he repeatedl…",
-      "image": null,
-      "publishedAt": "2026-10-12T10:27:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/accents-ultimately-dont-mean-a-lot/",
-      "detailPath": "articles/884e485d93d16fb68a68b5d5.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "6e1f9ba768e0bb70e18397da",
+      "title": "用 Hugo 製作文章頁的公告功能！",
+      "summary": "已經是 5 月底了，作爲 BlogBlog.Club 的主持人，應該要出來提醒大家一下快到截止日了吧！ 但不可能每篇文章的最後都通篇提醒，因爲這是有時效性的內容呀！（前陣子整理吉他島嶼文章，花超多力氣把每一篇的過期內容刪掉…。） 因此，最後決定加入每篇文章中的公告功能！ 未來可能沒有公告時，會關閉此功能，因此還是圖片展示一下： 文章頁面的置頂公告 做法 # 建立 /layouts/partials/single-announcement.html ，內容爲： 建立核心功能核心 {{/* 判斷邏輯： 1. hugo.toml 必須啟用 single_announcement.enable 且 content 有內容 2. 該篇文章的 Front Matter 沒有設定 disable_notice = true…",
+      "image": "https://eddielv.com/musings/single-page-announcement/single-page-announcement.png",
+      "publishedAt": "2026-05-21T01:24:42Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/single-page-announcement/",
+      "detailPath": "articles/6e1f9ba768e0bb70e18397da.json"
+    },
+    {
       "id": "9cf4e2bbbfabc5a1a292660e",
       "title": "別放棄自己的家",
       "summary": "科學家、發明家、美國建國元老之一、照片還被印在 100 元美金鈔票上的富蘭克林（Benjamin Franklin）說過一句名言：",
@@ -648,17 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/blue-prince-three-boxes/",
       "detailPath": "articles/5677dca66a79d550f673f2c3.json"
-    },
-    {
-      "id": "92830330d4885d6542f899d8",
-      "title": "我入選了 One Voice for Taiwan – Artist Lab!",
-      "summary": "上星期，偶然在 Facebook 看到 甄選資訊 ： 公開徵選｜One Voice Artist Lab Workshop 藝術家實驗室 🇹🇼 × 🇵🇱 將遴選 5–10 位在台灣發展的音樂人，參與於 2026年5月4日至5月7日 舉行之全額支持國際藝術家計畫。 本計畫旨在培養藝術家未來參與國際合作與巡演的能力。 開放所有樂器與主唱申請 （爵士或爵士延伸風格｜18–35 歲） 全程免費｜採遴選制",
-      "image": null,
-      "publishedAt": "2026-05-14T05:23:50Z",
-      "sourceId": "897f9fbbe0d7143e",
-      "sourceTitle": "王昱荃 Alan Wang",
-      "link": "https://alanwang.art/one-voice-for-taiwan-artist-lab/",
-      "detailPath": "articles/92830330d4885d6542f899d8.json"
     }
   ]
 }

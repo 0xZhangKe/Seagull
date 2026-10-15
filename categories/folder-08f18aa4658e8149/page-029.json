@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "2ae51f02db9efe521c49e176",
+      "title": "39 元的便當",
+      "summary": "很久沒在家樂福買便當了， 前一次去 明明還要 62 元現在這價格也太扯了吧？ 39 元的便當",
+      "image": "https://eddielv.com/musings/39-boxed-meal/39-boxed-meal.jpg",
+      "publishedAt": "2026-05-29T13:31:11Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/39-boxed-meal/",
+      "detailPath": "articles/2ae51f02db9efe521c49e176.json"
+    },
+    {
       "id": "b9d3b6c8e1d2c5c355b79c8b",
       "title": "从「吸引子引导工程」看我的「一人公司」实践",
       "summary": "最近，可逆计算理论与 Nop 平台的作者 canonical 又开始活跃起来，带来了新的实践理论——吸引子引导工程（Attractor-Guided Engineering），简称「AGE」。",
@@ -648,17 +659,6 @@
       "sourceTitle": "Alice Hsu's Blog",
       "link": "https://alicehsu.blog/zh-tw/posts/2026/05/read-dream-of-the-red-chamber-1-to-20-chapters/",
       "detailPath": "articles/6eacb5909f845f7a2bbab135.json"
-    },
-    {
-      "id": "6e1f9ba768e0bb70e18397da",
-      "title": "用 Hugo 製作文章頁的公告功能！",
-      "summary": "已經是 5 月底了，作爲 BlogBlog.Club 的主持人，應該要出來提醒大家一下快到截止日了吧！ 但不可能每篇文章的最後都通篇提醒，因爲這是有時效性的內容呀！（前陣子整理吉他島嶼文章，花超多力氣把每一篇的過期內容刪掉…。） 因此，最後決定加入每篇文章中的公告功能！ 未來可能沒有公告時，會關閉此功能，因此還是圖片展示一下： 文章頁面的置頂公告 做法 # 建立 /layouts/partials/single-announcement.html ，內容爲： 建立核心功能核心 {{/* 判斷邏輯： 1. hugo.toml 必須啟用 single_announcement.enable 且 content 有內容 2. 該篇文章的 Front Matter 沒有設定 disable_notice = true…",
-      "image": "https://eddielv.com/musings/single-page-announcement/single-page-announcement.png",
-      "publishedAt": "2026-05-21T01:24:42Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/single-page-announcement/",
-      "detailPath": "articles/6e1f9ba768e0bb70e18397da.json"
     }
   ]
 }

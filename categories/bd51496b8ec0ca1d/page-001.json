@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "0f9ea7c0d5b023f6d905cbf8",
+      "title": "用 Frigate + Home Assistant 自製 Furbo 寵物保母：本機 AI 寫貓咪日記,但分不出我的兩隻貓",
+      "summary": "作者原本差點被廣告說服買 Furbo,查完台灣官網才發現回看錄影全綁在寵物保姆訂閱裡,而且只存 AI 判斷有寵物的片段,於是改用 Frigate 加 Home Assistant 自己做:錄影回看、事件通知、每日貓咪日記和精華影片,全部跑在家裡的伺服器上。文中附上從零架設的完整步驟(Tapo RTSP、Ollama、Mosquitto、RF-DETR 模型匯出、Frigate 的 compose 與 config、Home Assistant 整合與通知),並記錄 Frigate 0.17 的調校(遮掉鏡頭時間戳讓 motion 從 97% 降到 31%、開啟 detections 的 GenAI 摘要)、三個本機視覺模型的比較,以及如何用 prompt 把幻覺從約 10% 壓到 2.5%。唯一沒做成的是分辨…",
+      "image": null,
+      "publishedAt": "2026-10-13T06:23:14Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/frigate-home-assistant-diy-furbo",
+      "detailPath": "articles/0f9ea7c0d5b023f6d905cbf8.json"
+    },
+    {
       "id": "fd92cb89b92cc98bf4d2cd85",
       "title": "Home Assistant 接 Google Home 語音控制：用 Matter 免雲端,和兩個都叫「找不到裝置」的坑",
       "summary": "作者想用語音控制 Home Assistant 裡的燈,選了不走雲端的路:用 home-assistant-matter-hub 把 HA 實體包成 Matter 橋接器,由客廳的 Google TV Streamer 4K 當中樞。配對時 Google Home 兩次顯示「找不到裝置」,原因卻完全不同:第一次是橋接器使用 Matter 測試廠商碼 0xFFF1,必須先在 Google Home Developer Console 建立 VID/PID 一致的 integration;第二次是伺服器的 ufw 只有 IPv4 的區網規則,ICMPv6 被預設放行所以 ping6 正常,真正走 IPv6 的 UDP 5540 卻被丟掉,而且配對後的連線走 link-local,fe80::/10 也必須放行。文…",

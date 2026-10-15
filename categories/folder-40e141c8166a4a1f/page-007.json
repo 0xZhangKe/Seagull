@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "6954c6872ecf875a9013d74c",
+      "title": "Leader Election With S3 Conditional Writes",
+      "summary": "Table of Contents The Algorithm Obtaining the Lock Expiring a Lock Lock Validity Fencing Off Zombies In distributed systems, for instance when scaling out some workload to multiple compute nodes, it is a common requirement to select a leader for performing a given task: only one of the nodes should process the records from a Kafka topic partition, write to…",
+      "image": null,
+      "publishedAt": "2024-08-26T08:15:00Z",
+      "sourceId": "d159169f81b06175",
+      "sourceTitle": "morling.dev -- Blog",
+      "link": "https://www.morling.dev/blog/leader-election-with-s3-conditional-writes/",
+      "detailPath": "articles/6954c6872ecf875a9013d74c.json"
+    },
+    {
       "id": "b41c3ac2a8fc962daf83ecba",
       "title": "Big IDGAF Energy",
       "summary": "No one gives a damn about Brian Armstrong's silly projects that failed. All they remember is Coinbase.",
@@ -648,17 +659,6 @@
       "sourceTitle": "Kt. Academy",
       "link": "https://kt.academy/article/kfde-generics",
       "detailPath": "articles/8be0fed8b959ca7a084bafee.json"
-    },
-    {
-      "id": "7e507223428435df243631eb",
-      "title": "A Taxonomy Of Data Change Events",
-      "summary": "Table of Contents Full Events Delta Events Id-only Events Change Event Metadata Comparison This post originally appeared on the Decodable blog . All rights reserved. Data change events are at the core of Change Data Capture (CDC) solutions such as Debezium . They describe the changes made to a specific record in a database and allow event consumers to take…",
-      "image": null,
-      "publishedAt": "2024-03-13T00:00:00Z",
-      "sourceId": "d159169f81b06175",
-      "sourceTitle": "morling.dev -- Blog",
-      "link": "https://www.morling.dev/blog/taxonomy-of-data-change-events/",
-      "detailPath": "articles/7e507223428435df243631eb.json"
     }
   ]
 }

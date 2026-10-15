@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "89bb972e25fe30ab33226d7b",
+      "title": "How to Write an Agent",
+      "summary": "Hello friends. This blog post was supposed to be the second part of this re",
+      "image": null,
+      "publishedAt": "2025-03-13T01:36:08Z",
+      "sourceId": "a72fff6ac8bbf06e",
+      "sourceTitle": "Simone Margaritelli",
+      "link": "https://www.evilsocket.net/2025/03/13/How-To-Write-An-Agent/",
+      "detailPath": "articles/89bb972e25fe30ab33226d7b.json"
+    },
+    {
       "id": "715ffcadd174aa444d117eae",
       "title": "Compile-time validation of JNI signatures",
       "summary": "JNI allows managed code inside the JVM or ART to call into native code. Java methods can be declared as native , and then a corresponding C function 1 can be written and automatically wired together when the native library is loaded. Native code lacks mechanisms like packages and overloads, so a special format is used to encode the Java method signature. A…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Jakob Greenfeld",
       "link": "https://jakobgreenfeld.com/tight-aggresive/",
       "detailPath": "articles/565b807ca37aedfd0e5b3c11.json"
-    },
-    {
-      "id": "6954c6872ecf875a9013d74c",
-      "title": "Leader Election With S3 Conditional Writes",
-      "summary": "Table of Contents The Algorithm Obtaining the Lock Expiring a Lock Lock Validity Fencing Off Zombies In distributed systems, for instance when scaling out some workload to multiple compute nodes, it is a common requirement to select a leader for performing a given task: only one of the nodes should process the records from a Kafka topic partition, write to…",
-      "image": null,
-      "publishedAt": "2024-08-26T08:15:00Z",
-      "sourceId": "d159169f81b06175",
-      "sourceTitle": "morling.dev -- Blog",
-      "link": "https://www.morling.dev/blog/leader-election-with-s3-conditional-writes/",
-      "detailPath": "articles/6954c6872ecf875a9013d74c.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "544d5cd92cce0dd0ddd4dea8",
+      "title": "製作了跑馬燈功能！",
+      "summary": "前言 # 最近開 BlogBlog.Club 的 5 月主題頁面 ，每次都要用搜尋的，覺得有點麻煩，決定加入跑馬燈功能！ 溫馨提醒，本篇程式碼皆由 AI 產生，看了會心悸的讀者，請小心服用。 動圖演示 # Hugo 架構 # 在 partial 資料夾底下建立一個 html，我稱爲 announce.html 。 {{/* 讀取 site config 中的 announcement 參數 例如 config.toml / config.yaml 裡的 params.announcement */}} {{ with .Site.Params.announcement }} {{/* 如果 enable = true 才顯示跑馬燈 */}} {{ if .enable }} <!-- 跑馬燈外層容器 -->…",
+      "image": null,
+      "publishedAt": "2026-05-08T06:24:26Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/annouce-function/",
+      "detailPath": "articles/544d5cd92cce0dd0ddd4dea8.json"
+    },
+    {
+      "id": "6df5048f818dd3e9ffaba15b",
+      "title": "亂談人口危機",
+      "summary": "二十一世紀的人口危機是什麼？就是當「生錯時代」的年輕人出於自願或是沒錢的無奈而在幾乎沒有留下子嗣的情況下活不過四十歲，但受益於昔日的經濟紅利而變得有錢的老人活到了八十歲卻還死不了的時候。 ——我自己想出來的 「高齡社會」與「超高齡社會」在近年成為了時常出現於新聞版面的關鍵詞，尤其是在相對發達的國家，例如新加坡、韓國、日本、臺灣、馬來西亞 1 等等。 如此的現象，反映的是因為生育率跌破「 世代更替水平 」（英文：replacement rate）而導致的人口結構失衡以及自此衍生的資源分配不均問題。 重點劃在「資源分配不均」。當一個國家或社會的高齡人口比例越來越高的時候，當地政府自然也會逐漸將更多資源分配給這些高齡群體。但相對地，這也導致年輕世代的發展機會越來越受限，而當這些年輕人連自己都照顧不好的時候，那就遑論…",
+      "image": null,
+      "publishedAt": "2026-05-08T05:53:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/rambling-on-population-crisis/",
+      "detailPath": "articles/6df5048f818dd3e9ffaba15b.json"
+    },
+    {
+      "id": "5edb73baad4ca97f8974b6a2",
+      "title": "Keyboard 的延音踏板反轉了，怎麼辦？",
+      "summary": "前言 # 正常來說，延音踏板踩下後，會啓動延音；抬起後就斷掉。 那天，小提琴老師調音時，想要參考音，我幫他按 Keyboard 的時候就發現：「今天的延音踏板是相反的」了。 但 Keyboard 老師已經彩排完，他沒講什麼，所以我以爲他是故意的。 正式開演後 # 已經演非常多首了，看到 Keyboard 老師突然在重新插延音踏板的線，後來老師說他有備用的踏板，於是我幫忙更換，結果還是一樣。 其實這個狀況，我自己遇過，所以我馬上說： 老師，你要不要重新開機試試看？ 雖然老師臉上寫著「這跟重開機有什麼關係」，但是沒別的方法還是照做了。 結果，馬上修好，老師眼睛瞪得超大XD 原理 # Keyboard 的設計，應該有個狀態判定，例如：0 表示沒延音，1 表示有延音。 如果先踩下踏板，再開機 Keyboard，就會讓…",
+      "image": null,
+      "publishedAt": "2026-05-08T05:16:43Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/reverse-sustain-pedal/",
+      "detailPath": "articles/5edb73baad4ca97f8974b6a2.json"
+    },
+    {
       "id": "a63d6c0d0fd8e0033d7555ca",
       "title": "YouTube 影片標題",
       "summary": "2005",
@@ -626,39 +659,6 @@
       "sourceTitle": "Alice Hsu's Blog",
       "link": "https://alicehsu.blog/zh-tw/about/",
       "detailPath": "articles/c5d096be6eb105692c077d4d.json"
-    },
-    {
-      "id": "922c4e792cb5f0162e570269",
-      "title": "“别人的缺陷很好笑吗！？”",
-      "summary": "这是昨晚的聚会上，一个有口吃的男生，突然拍案怒吼的一句话。 昨天是这届新生回国前的最后一个晚上，我邀请了他们在 […]",
-      "image": null,
-      "publishedAt": "2026-05-02T01:43:47Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1885",
-      "detailPath": "articles/922c4e792cb5f0162e570269.json"
-    },
-    {
-      "id": "46fb2acaea06e09fc0f706af",
-      "title": "A 寶",
-      "summary": "你一定知道「媽寶」，就是那種不論你問他什麼，回答永遠以「可是我媽說⋯⋯」開頭的人。在 AI 氾濫的 2026 年，我們迎來了比媽寶更令人崩潰的新物種──「A 寶」。",
-      "image": null,
-      "publishedAt": "2026-05-02T00:01:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/a-bao",
-      "detailPath": "articles/46fb2acaea06e09fc0f706af.json"
-    },
-    {
-      "id": "a5dcf543cd83e71ef8d5143f",
-      "title": "四月｜多一點廢話和廢時間也沒關係",
-      "summary": "Hero Photo by Jill Heyer on Unsplash 四月是",
-      "image": null,
-      "publishedAt": "2026-05-02T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/apr-2026-recap/",
-      "detailPath": "articles/a5dcf543cd83e71ef8d5143f.json"
     }
   ]
 }

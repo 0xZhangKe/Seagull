@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "688a3dc9218be3435e56209a",
+      "title": "Linux 下 Node Source 安装的 npm 权限问题",
+      "summary": "前言 近期安装了 Linux 系统作为主力机器的第二系统，双启动引导。 系统是 Pop!OS 20.04 LTS ，基于 Ubuntu 20.04 由于前端开发及部署需求，需要安装 node.js，于是使用 node source 提供的 node 发行版。 由于安装完成后，npm 存储包的目录为 /usr ，使用时必须加 sudo ，为了避免这种情况和权限安全问题，需要将 npm 的包存储到用户目录下，并且强烈不建议使用 sudo 来全局安装包到 /usr 目录下 方法 检查当前 npm 安装的包路径前缀 1 npm config get prefix 如果返回 /usr 则执行以下命令 1 2 3 mkdir ~/.npm-global export NPM_CONFIG_PREFIX = ~/.npm-…",
+      "image": null,
+      "publishedAt": "2022-03-20T17:16:02Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/npm-prefix/",
+      "detailPath": "articles/688a3dc9218be3435e56209a.json"
+    },
+    {
+      "id": "5f34ad74b791516d6e6030d1",
+      "title": "Kubernetes、集群联邦和资源分发",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2022-03-19T00:00:00Z",
+      "sourceId": "4d49716051922902",
+      "sourceTitle": "面向信仰编程 - Articles",
+      "link": "https://draven.co//kuberentes-federation",
+      "detailPath": "articles/5f34ad74b791516d6e6030d1.json"
+    },
+    {
       "id": "aae03b6048973b569e8daa55",
       "title": "百年未有之大变局，我试着聊点政治",
       "summary": "自从出国之后跟国内亲人们的交流就少得多了，以前会经常和我爸讨论一些社会经验和时局的话题，现在他们更多的是关心我的新生活是否顺利。说实话，在加拿大的生活比在中国要简单很多，像这样的发达资本主义国家已经发展几百年了，方方面面都已经相当成熟，也有清晰的界限和规则，任何人都可以在一定的前提下享受明确的、不受限的自由。首先我想重申自己的一个观点就是任何人都应该关心政治，此前我提过很多次了。都知道“经济基础决定上层建筑”，也知道任何事物都不是孤立存在的，所以一定有东西能影响甚至决定经济，那就是政治。大部分情况下，经济规律只能在一个平稳的政治环境中才能体现出来，如果政治环境稍有动荡，反映到经济上就是翻天覆地。这次俄乌战争爆发之后，在美国的很多中概股跌得很严重，然后就会在社交媒体上看到很多不明真相的人都在讨论要不要抄底——如…",
@@ -637,28 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/takeaway/2021-retro/",
       "detailPath": "articles/01b113adfd95e52bd39c4331.json"
-    },
-    {
-      "id": "4ee3da317a85f5f2839c4848",
-      "title": "叁拾一周：No.24",
-      "summary": "这是「叁拾一周」第二十四期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 265 位。我的下一个目标是 311。 周末小朋友感冒，低烧流鼻涕。跟着一家人都没睡好，他渐渐好转，我却头疼发冷，熬过一整天，吃了药，还是觉得晕晕的。 本周的通讯想顺着晕晕的感觉聊一下“感受”。 交出你的感受 这两年我和最多人讨论的关于感受的话题，是电子书和纸质书的差别。除去理论上的因素，有一些很明显的感受差异，比如拿在手里的触感，某一个段落在某个大概位置上的空间感，甚至是味觉感受，都对加深一本书的记忆有所帮助。还有一部记不起名字的电影里，女主和男主走在一起，是因为他在一间小咖啡馆读着一本她喜欢的建筑师的书，那一瞬间永久进入了她的记忆，直到他们分手，直到她为人妻，也不曾忘记。 这种感受的能力，随着科技进步，逐渐丧失。好像是当我们坐进科…",
-      "image": null,
-      "publishedAt": "2021-12-15T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2021/12/newsletter-024/",
-      "detailPath": "articles/4ee3da317a85f5f2839c4848.json"
-    },
-    {
-      "id": "736bac8bf5759d5034be813d",
-      "title": "[译] 不，Web3 不是去中心化",
-      "summary": "加密货币社区对元宇宙和 Web3 的狂热仍在继续，大量投资人和开发者前仆后继加入其中。但是，Web3 真的能实现支持者们的种种愿景吗？亦或是另一个镜中月、水中花？也许让历史照进现实，能给我们答案。",
-      "image": "https://img.skk.moe/blog/t2021/web3-is-not-decentralization.png",
-      "publishedAt": "2021-12-14T14:01:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/web3-is-not-decentralization/",
-      "detailPath": "articles/736bac8bf5759d5034be813d.json"
     }
   ]
 }

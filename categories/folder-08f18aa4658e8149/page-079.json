@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "51f94f10822b128331505342",
+      "title": "我轻轻地转过身，径直走向那扇门。脑中按下…",
+      "summary": "我轻轻地转过身，径直走向那扇门。脑中按下门把手、回头关门的细节在那一刻已经想好了。因为我知道没人会阻拦我离开， […]",
+      "image": null,
+      "publishedAt": "2024-08-03T09:26:51Z",
+      "sourceId": "3c6ccf75c8f41329",
+      "sourceTitle": "CC的数字花园",
+      "link": "https://cyrus19.cc/archives/323",
+      "detailPath": "articles/51f94f10822b128331505342.json"
+    },
+    {
+      "id": "6d68320408f7bb54d6dd7e32",
+      "title": "“想吃……饼干” 我不知道为什么，他要…",
+      "summary": "“想吃……饼干” 我不知道为什么，他要死的时候说了这么一句话。可这句话萦绕在我耳边整整四天了，像是着魔了一般， […]",
+      "image": null,
+      "publishedAt": "2024-08-03T09:11:41Z",
+      "sourceId": "3c6ccf75c8f41329",
+      "sourceTitle": "CC的数字花园",
+      "link": "https://cyrus19.cc/archives/321",
+      "detailPath": "articles/6d68320408f7bb54d6dd7e32.json"
+    },
+    {
       "id": "4b1da16f3f5b9cfeafe8af5e",
       "title": "Twikoo評論系統的個性化設置",
       "summary": "Twikoo評論系統",
@@ -637,28 +659,6 @@
       "sourceTitle": "蒙奇日记",
       "link": "https://luffy.cc/a/wu-yu-zi",
       "detailPath": "articles/30154ee96a154bacd0a01d96.json"
-    },
-    {
-      "id": "05c91d017d96b493e2c55cb1",
-      "title": "CloudGoat (☁️🐐)靶场初体验",
-      "summary": "一个开源的云靶场： https://github.com/RhinoSecurityLabs/cloudgoat/ 体验顺便学习一下📖 安装 & 配置 安装前确保机器： Linux or MacOS. Windows is not officially supported. Argument tab-completion requires bash 4.2+ (Linux, or OSX with some difficulty). Python3.6+ is required. Terraform >= 0.14 installed and in your $PATH. The AWS CLI installed and in your $PATH, and an AWS account with suff…",
-      "image": "https://skyblu3519.github.io/post-images/cloudgoat1/1720531972702-e43360e6-83e6-4a6b-b4a6-0b14500a8344.png",
-      "publishedAt": "2024-07-09T15:58:22Z",
-      "sourceId": "4f5bf353ca5bd538",
-      "sourceTitle": "skkyblu3",
-      "link": "https://skyblu3519.github.io/post/cloudgoat-ba-chang-chu-ti-yan/",
-      "detailPath": "articles/05c91d017d96b493e2c55cb1.json"
-    },
-    {
-      "id": "89619b6460ee7a606f396449",
-      "title": "在AWS上使用诱饵用户捕获攻击者",
-      "summary": "思路就是创建一个IAM用户，然后用CloudWatch监控该用户的行为，如果出现了该用户的操作则触发告警，并通过邮件通知。 使用控制台和Terraform两种方法实现 控制台创建 创建诱饵用户 在 IAM 控制台创建一个诱饵用户 honeyUser ，不附加任何权限 为 honeyUser 创建一个访问密钥，这对密钥之后便可以通过一些方法泄露出去，进而捕获可疑的攻击者。 创建CloudTrail并将事件发送至CloudWatch 进入 CloudTrail 控制台创建一个 trail （追踪），创建 CloudTrail 的时候需要选择一个S3来对日志进行存储，如果没有提前准备好则需要在这里新创建一个。 这里不使用加密方便后面数据的检索 配置向 CloudWatch Logs 发送事件，之后可以在 Cloud…",
-      "image": "https://skyblu3519.github.io/post-images/AWSHoneyToken/1720081492814-3e17265e-d254-41d0-a77f-54f84a647378.png",
-      "publishedAt": "2024-07-09T08:57:26Z",
-      "sourceId": "4f5bf353ca5bd538",
-      "sourceTitle": "skkyblu3",
-      "link": "https://skyblu3519.github.io/post/zai-aws-shang-shi-yong-you-er-yong-hu-bu-huo-gong-ji-zhe/",
-      "detailPath": "articles/89619b6460ee7a606f396449.json"
     }
   ]
 }

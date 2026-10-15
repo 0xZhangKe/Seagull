@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8a1997166963a7c58c1f0e1e",
+      "title": "萬元燈箱",
+      "summary": "場地燈超級暗看不到流程表，如果打燈又會太亮，那怎麼辦呢？ 試試看 iPad 燈箱吧！ 只要搜尋純白色圖片，下載到照片 app 後，打開來就看得到了！ （成本真高）",
+      "image": "https://eddielv.com/musings/expensive-light-box/ipad.JPG",
+      "publishedAt": "2026-01-17T16:35:13Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/expensive-light-box/",
+      "detailPath": "articles/8a1997166963a7c58c1f0e1e.json"
+    },
+    {
       "id": "daf741c165df40122c407d37",
       "title": "跨平臺無線傳輸檔案：Localsend",
       "summary": "前言 # iPhone 既然能 airplay 到 linux 上，那檔案應該也可以吧？這個想法讓 Eddie 找到了 Localsend 。 下載體驗好 # 下載簡單，到官網選擇自己的作業系統，下載安裝即可。 Linux、Windows、macOS、iOS、Android 全平臺都能用！ 使用體驗比 Airdrop 更好 # 傳輸的前提只有一個：兩部裝置同區網（同 WiFi），如果沒有 WiFi，就把其中一臺開熱點，讓另一部裝置連線（事實上這樣速度更快）。 兩端裝置都開好 Localsend 之後，要接收檔案的裝置選「Receive」，發送端才看得到接收端的這部裝置；要發送檔案的裝置則選「Send」，就會看到接收端的裝置了，點擊後即可發送。 左邊爲 iPhoneXR 透過 Uxplay 投影到 MintBo…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/search/",
       "detailPath": "articles/75f9f5aa85271568ccd73a59.json"
-    },
-    {
-      "id": "17be7ffcf89d1ef5957cc9d4",
-      "title": "「歷史上的今天」頁面建立",
-      "summary": "文章越來越多的情況下，單純用分類方式還是會很困擾，因爲列表列出之後真的太多了。處理方法可以是增加搜尋，但 Eddie 想試試看用同日期但不同年份的方式來處理，讓一次顯示的文章不要太多、太轟炸，於是「 歷史上的今天 」就建立了！ 技術層面 # 如果爲 365 天都建立一個 list 是不實際的，一個功能佔據這麼多檔案就太瞎了，因此，應該是用一個頁面來包含全部資訊，再用某種機制（判斷是）抓出自己要的文章才是正解。 html # Eddie 習慣都是做在 themes 而不是網站本身，但其實沒差，只是 hugo 優先級順序不同罷了，有確定抓到對的檔案，最終生成在 Public 內的檔案會是一樣的。 themes/classic/layouts/page/on-this-day.html {{ partial \"he…",
-      "image": null,
-      "publishedAt": "2025-12-21T07:18:41Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/on-this-day/",
-      "detailPath": "articles/17be7ffcf89d1ef5957cc9d4.json"
     }
   ]
 }

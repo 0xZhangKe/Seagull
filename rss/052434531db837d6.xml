@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-14T21:23:01+00:00</updated><author><name>Simon Willison</name></author><entry><title>Tree Appreciator</title><link href="https://simonwillison.net/2026/Oct/14/tree-appreciator/" rel="alternate"/><published>2026-10-14T21:23:01+00:00</published><updated>2026-10-14T21:23:01+00:00</updated><id>https://simonwillison.net/2026/Oct/14/tree-appreciator/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-15T13:04:03+00:00</updated><author><name>Simon Willison</name></author><entry><title>Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO</title><link href="https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/" rel="alternate"/><published>2026-10-15T13:04:03+00:00</published><updated>2026-10-15T13:04:03+00:00</updated><id>https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b?syn-25a6b1a6=1"&gt;Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+The phrase "told investors" appears four times in this FT article, which reports on Anthropic's day of hosting investors on Wednesday. Lots of details in here from "&lt;a href="https://simonwillison.net/2023/Nov/22/deciphering-clues/#hints-to-look-out-for"&gt;people with knowledge of the matter&lt;/a&gt;".&lt;/p&gt;
+&lt;p&gt;Key things I learned from the article:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Q1 revenue (Jan/Feb/Mar) was "about $4.8bn"&lt;/li&gt;
+&lt;li&gt;Q2 (Apr/May/Jun) was $11.5bn&lt;/li&gt;
+&lt;li&gt;Q3 (Jul/Aug/Sep) was $16.8bn&lt;/li&gt;
+&lt;li&gt;In Q3: $1.70 in revenue for every $1 spent on "computing power"&lt;/li&gt;
+&lt;li&gt;Adjusted operating margins (excluding stock-based compensation) were 11%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This point about distillation is worth quoting in full (highlight mine):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The start-up has also clamped down on “distillation” — a controversial practice whereby rival AI labs train their models on the outputs of more advanced ones.&lt;/p&gt;
+&lt;p&gt;When rival companies “distil” their models from Anthropic’s models, that involves heavy usage and spending.&lt;/p&gt;
+&lt;p&gt;Anthropic told investors on Wednesday &lt;strong&gt;distillation accounted for 5 per cent to 7 per cent of revenue&lt;/strong&gt; and that they had cut it back “materially” in the third quarter of the year, said four people with direct knowledge of the matter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Napkin maths says that if distillation was 5% of their Q2 revenue (before they cut it back in Q3) then unnamed "other labs" spent over half a billion dollars distilling Anthropic's models in that quarter!&lt;/p&gt;
+&lt;p&gt;Also notable: Anthropic appear to no longer be leaning on "annualized run-rate revenue" (&lt;a href="https://simonwillison.net/2026/May/29/anthropic/"&gt;previously&lt;/a&gt;) in these communications to their investors.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/></entry><entry><title>Tree Appreciator</title><link href="https://simonwillison.net/2026/Oct/14/tree-appreciator/" rel="alternate"/><published>2026-10-14T21:23:01+00:00</published><updated>2026-10-14T21:23:01+00:00</updated><id>https://simonwillison.net/2026/Oct/14/tree-appreciator/</id><summary type="html">
     
         &lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/tree-appreciator"&gt;Tree Appreciator&lt;/a&gt;&lt;/p&gt;
         &lt;p&gt;Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with:&lt;/p&gt;
@@ -535,21 +561,4 @@ Given how tempting a target wikis are for rogue agent swarms, it's not a huge su
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/google"&gt;google&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/embeddings"&gt;embeddings&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemma"&gt;gemma&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="google"/><category term="ai"/><category term="generative-ai"/><category term="embeddings"/><category term="gemma"/></entry><entry><title>Introducing Mistral Large 4: Le chonk</title><link href="https://simonwillison.net/2026/Oct/6/le-chonk/" rel="alternate"/><published>2026-10-06T20:18:19+00:00</published><updated>2026-10-06T20:18:19+00:00</updated><id>https://simonwillison.net/2026/Oct/6/le-chonk/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://mistral.ai/news/mistral-large-4/"&gt;Introducing Mistral Large 4: Le chonk&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Mistral are back in the game. Today they're releasing a preview of Mistral Large 4, a 1 trillion parameter, 49 billion active parameter model trained on their own cluster of 3,800 NVIDIA Grace Blackwell GPUs.&lt;/p&gt;
-&lt;p&gt;The preview is available via their API. They promise to release the open weights model at the "end of this month".&lt;/p&gt;
-&lt;p&gt;The model only supports two reasoning levels - "none" and "high" - via the Mistral API. Here are &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F0db8b8196e57711b352f6c5857cf5b35"&gt;both pelicans&lt;/a&gt; - the "high" one looks better, though surprisingly it only used 2,717 output tokens compared to "none" which used 3,275:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="It's good. The pouch is great, the bicycle frame is the right size, it has feet on pedals. Both pedals appear in front of the frame though. Nice gradients." src="https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;On Artificial Analysis &lt;a href="https://artificialanalysis.ai/models/mistral-large-4"&gt;it scores 38&lt;/a&gt;, just behind DeepSeek 4.1 Flash, which is a 552B model. It's a &lt;em&gt;huge&lt;/em&gt; improvement on last December's Mistral Large 3, which drew &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F0df5e656291d5a7a1bf012fabc9edc3f#response-1"&gt;this terrible pelican&lt;/a&gt; and &lt;a href="https://artificialanalysis.ai/models/mistral-large-3"&gt;scored 9 on AA&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It's certainly not a Fable-class model, but it's great to see Mistral put out a model that's back to being maybe about 6 months behind the frontier.
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=49977979"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/mistral"&gt;mistral&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="mistral"/><category term="pelican-riding-a-bicycle"/><category term="llm-release"/></entry></feed>
+</summary><category term="google"/><category term="ai"/><category term="generative-ai"/><category term="embeddings"/><category term="gemma"/></entry></feed>

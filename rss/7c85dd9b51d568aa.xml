@@ -12,7 +12,7 @@
 	<atom:link href="https://www.cnx-software.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.cnx-software.com/</link>
 	<description>Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC&#039;s, microcontrollers, processors, and more</description>
-	<lastBuildDate>Thu, 15 Oct 2026 00:24:22 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 15 Oct 2026 01:48:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,36 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>W1700K SDR turns a Wi-Fi 7 router into a 320 MSps software-defined radio receiver</title>
+		<link>https://www.cnx-software.com/2026/10/16/w1700k-sdr-turns-a-wi-fi-7-router-into-a-320-msps-software-defined-radio-receiver/</link>
+					<comments>https://www.cnx-software.com/2026/10/16/w1700k-sdr-turns-a-wi-fi-7-router-into-a-320-msps-software-defined-radio-receiver/#respond</comments>
+		
+		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 17:01:01 +0000</pubDate>
+				<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[firmware]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[mediatek]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[reverse engineering]]></category>
+		<category><![CDATA[router]]></category>
+		<category><![CDATA[sdr]]></category>
+		<category><![CDATA[wifi 7]]></category>
+		<category><![CDATA[wireless]]></category>
+		<guid isPermaLink="false">https://www.cnx-software.com/?p=178256</guid>
+
+					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/Full-2.4-GHz-spectrum-view-with-flattened-passband-correction-applied-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="Full 2.4 GHz spectrum view with flattened passband correction applied" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/Full-2.4-GHz-spectrum-view-with-flattened-passband-correction-applied-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/Full-2.4-GHz-spectrum-view-with-flattened-passband-correction-applied-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/Full-2.4-GHz-spectrum-view-with-flattened-passband-correction-applied-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/Full-2.4-GHz-spectrum-view-with-flattened-passband-correction-applied.jpg 1200w" sizes="100vw" /></div>
+<p>Just a few days ago, we wrote about the ESP-SDR project, which turned an ESP32 into an SDR receiver (and now SDR transmitter), but the data was streamed over UART, which couldn&#8217;t keep up with the sample rate. Now, developer h0m3us3r has released w1700k-sdr, also an open-source project that turns a Gemtek W1700K Wi-Fi 7 router into a wideband SDR receiver. The project uses the router&#8217;s built-in MediaTek MT7996 radio to capture raw 14-bit I/Q samples at up to 320 MSps across the 2.4 GHz, 5 GHz, and 6 GHz bands. The captured data is then streamed over a 10 GbE connection using the router&#8217;s Airoha AN7581 SoC to a Linux computer, where you can view the live spectrum and waterfall in a browser. To make this work, the project replaces the router&#8217;s stock firmware with a custom Linux system and radio firmware, allowing it to capture raw I/Q data [...]</p>
+<p>The post <a href="https://www.cnx-software.com/2026/10/16/w1700k-sdr-turns-a-wi-fi-7-router-into-a-320-msps-software-defined-radio-receiver/">W1700K SDR turns a Wi-Fi 7 router into a 320 MSps software-defined radio receiver</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cnx-software.com/2026/10/16/w1700k-sdr-turns-a-wi-fi-7-router-into-a-320-msps-software-defined-radio-receiver/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control</title>
 		<link>https://www.cnx-software.com/2026/10/15/hpmicro-hpm5100-risc-v-mcu-integrates-four-16-bit-adcs-four-op-amps-for-analog-sensing-and-motor-control/</link>
 					<comments>https://www.cnx-software.com/2026/10/15/hpmicro-hpm5100-risc-v-mcu-integrates-four-16-bit-adcs-four-op-amps-for-analog-sensing-and-motor-control/#respond</comments>
@@ -48,7 +78,7 @@
 		<category><![CDATA[sensors]]></category>
 		<guid isPermaLink="false">https://www.cnx-software.com/?p=178265</guid>
 
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="HPM5100 series" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series.jpg 1200w" sizes="100vw" /></div>
+					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="HPM5100 series" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/HPM5100-series.jpg 1200w" sizes="100vw" /></div>
 <p>HPMicro has introduced the HPM5100 series, a family of 32-bit RISC-V mixed-signal MCUs, starting with the HPM5151 parts. It features a 400 MHz RISC-V processor, 416 KB SRAM, 1 MB flash, four 16-bit ADCs, four operational amplifiers, and four analog comparators. It also includes a high-speed USB 2.0 OTG interface with an integrated PHY, CAN FD, multiple UART/SPI/I2C interfaces, and 32 PWM channels for motor control. The chip supports hardware floating-point operations and DSP instructions, while the integrated analog peripherals reduce the need for external ADCs and signal-conditioning circuits. HPMicro HPM5100 specifications: MCU core – Single-core 32-bit RISC-V processor @ 400 MHz (up to 480 MHz in high-performance mode with external power supply) Hardware FPU, SIMD, and DSP instruction support 16 KB L1 instruction cache and 16 KB L1 data cache Up to 3.57 CoreMark/MHz Memory 416 KB SRAM 256 KB instruction local memory (ILM) 128 KB data local memory [...]</p>
 <p>The post <a href="https://www.cnx-software.com/2026/10/15/hpmicro-hpm5100-risc-v-mcu-integrates-four-16-bit-adcs-four-op-amps-for-analog-sensing-and-motor-control/">HPMicro HPM5100 RISC-V MCU integrates four 16-bit ADCs, four op-amps for analog sensing and motor control</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
 ]]></description>
@@ -114,7 +144,7 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/14/romu-tiny-raspberry-pi-rp2354a-usb-board/feed/</wfw:commentRss>
-			<slash:comments>2</slash:comments>
+			<slash:comments>3</slash:comments>
 		
 		
 			</item>
@@ -948,39 +978,6 @@
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/09/29/walnut-pi-cm2-a-cheaper-raspberry-pi-cm5-alternative-based-on-allwinner-t527-octa-core-soc/feed/</wfw:commentRss>
 			<slash:comments>5</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Critical Link MitySOM-AM62x/A/P &#8211; TI Sitara AM62 SO-DIMM SoMs for edge AI and industrial automation</title>
-		<link>https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/</link>
-					<comments>https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/#respond</comments>
-		
-		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
-		<pubDate>Mon, 28 Sep 2026 09:00:14 +0000</pubDate>
-				<category><![CDATA[Android]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Texas Instruments Sitara]]></category>
-		<category><![CDATA[automation]]></category>
-		<category><![CDATA[critical link]]></category>
-		<category><![CDATA[development kit]]></category>
-		<category><![CDATA[dsp]]></category>
-		<category><![CDATA[edge ai]]></category>
-		<category><![CDATA[hmi]]></category>
-		<category><![CDATA[industrial]]></category>
-		<category><![CDATA[real-time]]></category>
-		<category><![CDATA[som]]></category>
-		<category><![CDATA[yocto]]></category>
-		<guid isPermaLink="false">https://www.cnx-software.com/?p=177556</guid>
-
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/09/MitySOM-AMxx-Dev-Kit-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="MitySOM AMxx Dev Kit" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/09/MitySOM-AMxx-Dev-Kit-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/09/MitySOM-AMxx-Dev-Kit-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/09/MitySOM-AMxx-Dev-Kit-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/09/MitySOM-AMxx-Dev-Kit.jpg 1200w" sizes="100vw" /></div>
-<p>Critical Link MitySOM-AM62x/A/P is a family of TI Sitara AM62-based industrial SO-DIMM SoMs designed for embedded Linux systems, industrial automation, HMI, and other embedded applications. The family includes the general-purpose MitySOM-AM62, AI-focused MitySOM-AM62A, and multimedia-oriented MitySOM-AM62P system-on-modules. The standard AM62 modules feature up to a quad-core Arm Cortex-A53 processor at 1.4 GHz, along with a 400 MHz Cortex-M4F MCU and dual programmable real-time units (PRUs). The AM62A adds a C7x DSP with Matrix Multiply Accelerator supporting up to 2 TOPS and an image signal processor (ISP), while the AM62P includes a 3D GPU rated above 50 GFLOPS and a four-lane MIPI DSI output. MitySOM-AM62x / AM62Ax / AM62Px specifications: SoM options MitySOM-AM62x – Texas Instruments Sitara AM62x Application CPU – Up to Quad-core Arm Cortex-A53 up to 1.4 GHz Real-time cores Arm Cortex-M4F up to 400 MHz Dual-core Programmable Real-Time Unit (PRU-SS) up to 333 MHz GPU – 3D Graphics [...]</p>
-<p>The post <a href="https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/">Critical Link MitySOM-AM62x/A/P &#8211; TI Sitara AM62 SO-DIMM SoMs for edge AI and industrial automation</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
-]]></description>
-		
-					<wfw:commentRss>https://www.cnx-software.com/2026/09/28/critical-link-mitysom-am62x-a-p-ti-sitara-am62-so-dimm-soms-for-edge-ai-and-industrial-automation/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

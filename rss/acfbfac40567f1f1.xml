@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.jetbrains.com/kotlin/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.jetbrains.com</link>
 	<description>Developer Tools for Professionals and Teams</description>
-	<lastBuildDate>Thu, 15 Oct 2026 09:11:44 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 15 Oct 2026 15:03:09 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,157 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Google Summer of Code 2026 With the Kotlin Foundation: Recap</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/</link>
+					<comments>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/#respond</comments>
+		
+		<dc:creator><![CDATA[Ksenia Shneyveys]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 15:03:05 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/Google_Summer_of_Code_2026_Recap_2560x1440.png</featuredImage>		<category><![CDATA[education]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[gsoc]]></category>
+		<category><![CDATA[open-source]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=746576</guid>
+
+					<description><![CDATA[Google Summer of Code 2026 has wrapped up! This was the Kotlin Foundation’s fourth year participating in GSoC, bringing new contributors into the Kotlin open-source ecosystem through hands-on projects and mentorship. This year, two projects successfully reached completion, tackling two areas of the ecosystem: improving recursion support in the Kotlin/Wasm backend and building a global [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Google Summer of Code 2026 has wrapped up! This was the <a href="https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation" data-type="link" data-id="https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation" target="_blank" rel="noreferrer noopener">Kotlin Foundation</a>’s fourth year participating in GSoC, bringing new contributors into the Kotlin open-source ecosystem through hands-on projects and mentorship.</p>
+
+
+
+<p>This year, two projects successfully reached completion, tackling two areas of the ecosystem: <a href="https://gist.github.com/ternbusty/28bf25ac426e9954b550afc02407453f" target="_blank" rel="noreferrer noopener">improving recursion support in the Kotlin/Wasm backend</a> and building a global <a href="https://kotlin-education-landscape.labs.jb.gg/" target="_blank" rel="noreferrer noopener">picture of where Kotlin is taught</a>.</p>
+
+
+
+<p>Congratulations to <strong>Ayako Hayasaka</strong> and <strong>Mark Seif Khalil</strong>, and a huge thank-you to our mentors for supporting them throughout the program!</p>
+
+
+
+<p>Here&#8217;s more on what they accomplished.</p>
+
+
+
+<h1 class="wp-block-heading">Tail call support in the Kotlin/Wasm backend</h1>
+
+
+
+<p><strong>Contributor:</strong> Ayako Hayasaka<br><strong>Mentor:</strong> Charlie Zhang (JetBrains)</p>
+
+
+
+<p>Ayako’s project added support for WebAssembly tail-call instructions to the Kotlin/Wasm backend. The compiler can now detect calls in tail position and emit return_call or return_call_ref, helping recursive Kotlin/Wasm programs avoid increasing the call stack.</p>
+
+
+
+<p>In Ayako’s benchmarks, several recursive patterns became 1.7–4.3x faster at a recursion depth of 10,000. At a depth of one million, the same programs crashed without tail calls and completed successfully with them.</p>
+
+
+
+<p>Testing the change on real-world projects also revealed an unexpected performance regression in V8. Ayako traced it to a missing optimization for return_call, submitted a fix, and had the <a href="https://ternbusty.github.io/posts/v8-return-call-wki-bug.html" target="_blank" rel="noreferrer noopener">patch merged into V8</a>.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">    <div class="blockquote">
+                    <blockquote><p>“What surprised me the most was that Ayako, after implementing the new WebAssembly instructions and using them in the Kotlin backend, actually found a bug in the Google V8 engine. Not only did she report the bug, she fixed it as well.”</p></blockquote>
+            <div class="blockquote__author">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Charlie Zhang</strong>
+                                                        </div>
+            </div>
+            </div>
+</blockquote>
+
+
+
+<p>Ayako has continued working on follow-up optimizations and other approaches to supporting recursive code beyond the original GSoC project.</p>
+
+
+
+<p>For Ayako, GSoC 2026 was also a chance to work much more closely on language and runtime internals than in her everyday work.</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“In my day job, I rarely get to touch the internals of a language, so I simply had a lot of fun with this opportunity. While investigating the slowdown, I had to read not only the compiler but also V8, and I realized how much there is to learn beyond the code I usually work on.”</p></blockquote>
+            <div class="blockquote__author">
+                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="blockquote__author-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/2026-06-28-17.38.09-EDIT.jpg" alt="Ayako Hayasaka GSoC 2026">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Ayako Hayasaka</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>Read Ayako’s full story → <a href="https://gist.github.com/ternbusty/28bf25ac426e9954b550afc02407453f" target="_blank" rel="noreferrer noopener">Final project report</a></p>
+
+
+
+<h1 class="wp-block-heading">Mapping the global Kotlin education landscape</h1>
+
+
+
+<p><strong>Contributor:</strong> Mark Seif Khalil<br><strong>Mentors:</strong> Ksenia Shneyveys (JetBrains) and Elizaveta Artser (JetBrains)</p>
+
+
+
+<p>Mark’s project set out to create a structured overview of where and in what context Kotlin is being taught, considering that the information is spread across websites, course curricula, repositories, learning platforms, and other sources. The project brought that fragmented information together and created a structured and automated way to gather this data.</p>
+
+
+
+<p>Over the course of GSoC 2026, Mark explored different sources and approaches to collecting this information, built a database, and developed a process for parsing and structuring data from multiple sources.&nbsp;</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“The biggest thing I learned is when to stop pushing on something that is not working and change my approach. This is a lesson I will keep with me in every project.”</p></blockquote>
+            <div class="blockquote__author">
+                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="blockquote__author-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/Mark-Seif-Photo.jpeg" alt="Mark Seif Khalil GSoC 2026">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Mark Seif Khalil</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>The resulting project gives us a reusable foundation for monitoring Kotlin’s presence in education and identifying trends and gaps.</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“What impressed us both the most about Mark was his ability to take an initially exploratory idea and bring his own vision for the research while continuously incorporating our feedback. Mark turned this scattered information into a resource we can actually use to understand Kotlin education worldwide.”</p></blockquote>
+            <div class="blockquote__author">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Ksenia Shneyveys, Elizaveta Artser</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>Read Mark’s full story → <a href="https://github.com/markoeltiger/kotlin-education-landscape/tree/main" target="_blank" rel="noreferrer noopener">Kotlin Education Landscape<br></a><a href="https://youtu.be/20_CsSYvnwY" target="_blank" rel="noreferrer noopener">Watch Mark’s GSoC reflection</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Interested in contributing to Kotlin through a future Google Summer of Code – or mentoring a project yourself?</p>
+
+
+
+<p>Join the <a href="https://surveys.jetbrains.com/s3/kotlin-slack-sign-up" target="_blank" rel="noreferrer noopener">#gsoc channel in the Kotlin Slack</a> to meet the community, ask questions, and follow future GSoC announcements.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>What Makes a Great KotlinConf Proposal?</title>
 		<link>https://blog.jetbrains.com/kotlin/2026/10/what-makes-a-great-kotlinconf-proposal/</link>
 		
@@ -983,7 +1134,23 @@
 		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=746126</guid>
 
 					<description><![CDATA[Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&#160; Neither would most engineers: if you understand the words in your application code, you build good systems. If you don&#8217;t, [&#8230;]]]></description>
-										<content:encoded><![CDATA[
+										<content:encoded><![CDATA[    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/Ad2dLe2AFcCKCJdw59PhuWW6LDAPMatti4HwN63rGpA-1.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Aniket Bhattacharyea</h4>
+                                                <p>Aniket is a Mathematics postgraduate who has a passion for computers and software. He likes to explore various areas related to coding and works as a web developer using Ruby on Rails and Next.JS.</p>
+<p><a href="https://abhattacharyea.dev/" target="_blank" rel="noopener">Website</a></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
 <p>Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&nbsp;</p>
 
 
@@ -3514,138 +3681,6 @@ sealed interface ExportError { /* its own set */ }</pre>
 
 
 <p>A signature that returns <strong><code>Unit</code></strong> and throws in secret is lying to you about what it does. Make your signatures tell the truth!</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Klibs.io Grows to 4,200+ KMP Projects With Smarter Discovery and New AI Integrations</title>
-		<link>https://blog.jetbrains.com/kotlin/2026/08/klibsio-grows-to-4200-kmp-projects-with-smarter-discovery-and-new-ai-integrations/</link>
-		
-		<dc:creator><![CDATA[Daria Voronina]]></dc:creator>
-		<pubDate>Mon, 17 Aug 2026 13:12:57 +0000</pubDate>
-		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/08/KM-social-BlogFeatured-1280x720-1.png</featuredImage>		<category><![CDATA[kotlin]]></category>
-		<category><![CDATA[news]]></category>
-		<category><![CDATA[kotlin-multiplatform-libraries]]></category>
-		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=731768</guid>
-
-					<description><![CDATA[Explore a growing Kotlin Multiplatform catalog in your browser, or bring up-to-date library data directly into your AI development workflow through the klibs.io MCP server. When we introduced klibs.io in December 2024, the goal was simple: make it easier to find a Kotlin Multiplatform library that fits both your use case and target platforms. Since [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<p>Explore a growing Kotlin Multiplatform catalog in your browser, or bring up-to-date library data directly into your AI development workflow through the klibs.io MCP server.<br><br>When we<a href="https://blog.jetbrains.com/kotlin/2024/12/introducing-klibs-io-a-new-way-to-discover-kotlin-multiplatform-libraries/" target="_blank" rel="noreferrer noopener"> introduced klibs.io in December 2024</a>, the goal was simple: make it easier to find a Kotlin Multiplatform library that fits both your use case and target platforms. Since then, klibs.io has grown into a catalog of more than 4,200 KMP projects – and discovering new libraries has become even easier.</p>
-
-
-
-<div class="buttons">
-    <div class="buttons__row">
-        <a class="ek-link jb-download-button" title="Explore Kotlin Multiplatform projects on klibs.io" href="https://klibs.io/" target="_blank" rel="noopener" data-test="blog-article-cta" data-cl="true">Explore Kotlin Multiplatform projects on klibs.io</a>
-    </div>
-</div>
-
-
-
-<h2 class="wp-block-heading"><strong>Discover more than 4,200+ KMP projects</strong></h2>
-
-
-
-<p>klibs.io combines information from GitHub and Maven Central, bringing the details needed to evaluate a project into a single catalog. When source metadata is incomplete, klibs.io uses LLMs to refine descriptions and tags, improving search and discoverability.</p>
-
-
-
-<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/08/klibsio-4200-projects-by-tags.png" alt="" class="wp-image-731771"/></figure>
-
-
-
-<p>Discovery now goes well beyond a basic keyword search. Use multiple search terms, filter by supported platforms and targets – including Android, iOS, JVM, JavaScript, and Wasm – and browse curated categories such as Compose UI, local storage, networking, or dependency injection. Results can be sorted by relevance, GitHub stars, or dependent count.</p>
-
-
-
-<p>Project pages make comparison easier by bringing together descriptions, tags, <code>README</code> content, supported platforms, package versions, dependent counts, license information, and project activity. </p>
-
-
-
-<p>This gives you a clearer view of whether a library fits your project before you add the dependency.</p>
-
-
-
-<aside role="note" style="margin: 24px 0; padding: 16px 20px; background: #f5f2ff; border-left: 4px solid #7f52ff; border-radius: 8px; color: #27282c; line-height: 1.6;">
-    <p style="margin: 0;">
-        <strong style="color: #5936c7;">TIP:</strong>
-        Explore klibs.io’s
-        <a href="https://klibs.io/?category=grant-winners" target="_blank" rel="noopener noreferrer" style="color: #5936c7; font-weight: 600;">
-            Grant winners
-        </a>
-        category – KMP libraries recognized by the Kotlin Foundation Grants Program for their quality and impact.
-    </p>
-</aside>
-
-
-
-<h2 class="wp-block-heading"><strong>Bring klibs.io into your AI workflow</strong></h2>
-
-
-
-<p>Library decisions often happen while you are already coding. The new AI integrations allow coding agents to pull structured, up-to-date data from klibs.io rather than relying solely on training data or a general web search.</p>
-
-
-
-<h3 class="wp-block-heading"><strong>Connect through the klibs.io MCP server</strong></h3>
-
-
-
-<p>The<a href="https://github.com/JetBrains/klibs-io/tree/master/integrations/mcp#readme" target="_blank" rel="noreferrer noopener"> klibs.io MCP server</a> lets agents search Kotlin Multiplatform projects by platform and target and retrieve the latest published package versions directly from the klibs.io index.</p>
-
-
-
-<h3 class="wp-block-heading"><strong>Give agents reusable KMP library expertise</strong></h3>
-
-
-
-<p>The<a href="https://klibs.io/ai#skill" target="_blank" rel="noreferrer noopener"> Kotlin Multiplatform Libraries expert skill</a> provides task-specific instructions for discovering and comparing libraries, recommending options for a use case, verifying platform support, and finding up-to-date dependency coordinates and stable versions. We measured agent output with and without klibs.io connected – the <a href="https://github.com/JetBrains/klibs-io/blob/f42d394e3b1a18757193241386aec7753437dc62/mcp-eval/RESULTS.md" target="_blank" rel="noreferrer noopener">evaluation results</a> are published in the klibs.io repository.</p>
-
-
-
-<h3 class="wp-block-heading"><strong>Keep project guidance close to the code</strong></h3>
-
-
-
-<p>The<a href="https://klibs.io/ai#overview" target="_blank" rel="noopener"> AI integration guide</a> includes setup instructions and a<a href="https://klibs.io/ai#agents" target="_blank" rel="noreferrer noopener"> recommended AGENTS.md snippet</a>. Adding guidance to a project helps AI tools consistently use verified information from the KMP library.</p>
-
-
-
-<div class="buttons">
-    <div class="buttons__row">
-        <a class="ek-link jb-download-button" title="Explore AI development with klibs.io" href="https://klibs.io/ai#overview" target="_blank" rel="noopener" data-test="blog-article-cta" data-cl="true">Explore AI development with klibs.io</a>
-    </div>
-</div>
-
-
-
-<h2 class="wp-block-heading"><strong>Help shape what comes next</strong></h2>
-
-
-
-<p>klibs.io is an open-source project, and feedback from library users and authors helps the catalog keep improving. Here are a few ways to take part:</p>
-
-
-
-<p>•&nbsp; <strong>Try it out: </strong>Search for a library, explore a category, and see how the filters work for your target platforms.</p>
-
-
-
-<p>•&nbsp; <strong>Improve project information: </strong>Project owners can use the <em>Suggest an edit</em> option on project pages to propose better descriptions and tags through GitHub.</p>
-
-
-
-<p>•  <strong>Report issues or contribute: </strong>Report bugs, missing libraries, or incorrect metadata in the<a href="https://github.com/JetBrains/klibs-io/issues/new/choose" target="_blank" rel="noreferrer noopener"> GitHub issue tracker</a>, or contribute directly to the<a href="https://github.com/JetBrains/klibs-io" target="_blank" rel="noreferrer noopener"> open-source project</a>.</p>
-
-
-
-<p>•  <strong>Join the discussion: </strong>Share feedback in the<a href="https://kotlinlang.slack.com/archives/C081AF4JK70" target="_blank" rel="noreferrer noopener"> #klibs-io channel on Kotlin Slack</a>.<br></p>
-
-
-
-<p>Whether you browse the catalog directly or integrate it with your AI tools, klibs.io now makes it easier to discover, compare, and use Kotlin Multiplatform libraries with up-to-date information.</p>
 ]]></content:encoded>
 					
 		

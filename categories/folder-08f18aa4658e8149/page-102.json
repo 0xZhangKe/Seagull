@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "ee71a8ca0b54ab24e711295a",
+      "title": "Android 内存优化之三 - 打开 MAT 中的 Bitmap 原图",
+      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文介绍的是从 MAT 里手工还原 Bitmap 原图的旧排查技巧，适合在离线 heap 里确认“到底是哪张图”被错误持有。现在排查图片内存问题时，第一步通常不是直接打开 MAT，而是先用 Android Studio Memory Profiler 的 heap dump/retained size/reference 视图确认 Bitmap、BitmapDrawable 或图片缓存…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:41:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Open-Bitmap-Object-In-MAT/",
+      "detailPath": "articles/ee71a8ca0b54ab24e711295a.json"
+    },
+    {
       "id": "22a97125dfd6c1a96875f837",
       "title": "Android 内存优化之二 - MAT使用进阶",
       "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文的 Histogram、Dominator Tree、Thread 信息仍然是 heap 分析的核心方法，但抓取和第一轮分析入口应换成现在的工具链：先用 Android Studio Memory Profiler 捕获 heap dump，必要时在关键点调用 Debug.dumpHprofData() ，再用 Profiler 的 retained size、reference…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/wiwi-studio-test/",
       "detailPath": "articles/5c48641da6428d6fdf47111a.json"
-    },
-    {
-      "id": "1f7b2bf63491bc1dca209757",
-      "title": "觀音海洋音樂季",
-      "summary": "走在觀音路上 一個小女生從補習班走出來跟我要電話 給完說是她媽要的 2025/07/30 更：請問當時腦迴路怎麼了？可以說點跟音樂季有關的嗎XD",
-      "image": "https://eddielv.com/musings/guan-yin-music/img.jpg",
-      "publishedAt": "2013-08-08T17:27:13Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/guan-yin-music/",
-      "detailPath": "articles/1f7b2bf63491bc1dca209757.json"
     }
   ]
 }

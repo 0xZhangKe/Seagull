@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "bfb7af107cd83f9c86eb1f20",
+      "title": "Anthropic发布Claude Haiku 5.5：API价格大幅降低且性能显著提升",
+      "summary": "Anthropic于2026年10月7日发布了Claude Haiku 5.5，这是其小型模型系列的最新版本。新模型相较于前代Haiku 4.5价格降低了约75%，与OpenAI的GPT-6 Luna定价持平。同时，Claude Sonnet 5.5的缓存读取费用降低50%，进一步减少了代理任务成本。模型在网络安全、代码生成等方面有显著提升，支持100K令牌请求和1M上下文窗口。",
+      "image": null,
+      "publishedAt": "2026-10-07T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
+      "detailPath": "articles/bfb7af107cd83f9c86eb1f20.json"
+    },
+    {
+      "id": "7962272402bf62432ca7c23e",
+      "title": "Anthropic发布Claude Haiku 5.5：API价格降低90%且性能大幅提升",
+      "summary": "Anthropic于10月7日正式发布了Claude Haiku 5.5，这是Claude 5.5家族中的小型模型，以极低的价格和显著提升的性能定位高吞吐量、成本敏感的任务。新模型API价格大幅降低，平均成本比Haiku 4.5降低约75%，在多领域基准测试中表现优秀，并首次在Haiku模型中引入了力度调节功能。对开发者而言，这为需要大规模部署实时应用（如客服支持、应用内助手）和副代理架构提供了经济高效的模型选择。",
+      "image": null,
+      "publishedAt": "2026-10-07T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.anthropic.com/claude-haiku-5-5",
+      "detailPath": "articles/7962272402bf62432ca7c23e.json"
+    },
+    {
+      "id": "7a550cba18e688673543d81b",
+      "title": "Claude Haiku 5.5发布，API输入价格下调约90%",
+      "summary": "Anthropic在2026年10月7日发布Claude Haiku 5.5模型，其核心变化是API价格的大幅降低，输入价格相比前代下降了约90%。这使得Haiku 5.5成为市场上性价比极高的轻量级模型选项。对于开发者而言，这直接降低了基于Claude模型进行AI应用开发或实验的成本，尤其是在需要频繁调用API或构建多步骤Agent工作流时，成本效益显著提升。",
+      "image": null,
+      "publishedAt": "2026-10-07T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://zhuanlan.zhihu.com/p/2092888561209160150",
+      "detailPath": "articles/7a550cba18e688673543d81b.json"
+    },
+    {
+      "id": "13d9424236a9b32592d93f3e",
+      "title": "OpenAI 向所有 ChatGPT 用户推出 GPT-6 和 Intelligent UI智能交互界面",
+      "summary": "OpenAI 于2026年10月7日正式宣布，为所有 ChatGPT 用户全面上线 GPT-6 模型和全新的 Intelligent UI（智能交互界面）。付费用户获得 GPT-6 Sol，免费和 Go 用户获得 GPT-6 Luna。新界面允许模型根据问题类型自动生成包含图表、按钮、表单和可交互组件的混合响应，而不仅仅是文本。同时，模型支持“边思考边回答”的渐进式输出，显著改善了交互体验。开发者需注意，该功能主要适用于模型的 Instant 至 Extra High 推理档位。",
+      "image": null,
+      "publishedAt": "2026-10-07T00:00:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://openai.com/news/company-announcements",
+      "detailPath": "articles/13d9424236a9b32592d93f3e.json"
+    },
+    {
       "id": "69645bcc43e32daa61a84ca3",
       "title": "Mistral发布万亿参数开源模型Mistral Large 4 (Le Chonk)，开放API预览并承诺月底开源权重",
       "summary": "Mistral AI 正式推出其万亿参数开源旗舰模型 Mistral Large 4 (代号 Le Chonk) 的公开预览版。这是一个采用稀疏混合专家(MoE)架构、拥有1万亿总参数、490亿激活参数的原生多模态模型。开发者现可通过Mistral Studio体验API，模型权重预计在10月底开放下载，目前定价为每百万输入token 1.36美元，输出token 4.18美元。这对于需要强大开源模型且注重欧洲数据主权和安全合规的开发者来说是一个重要新选项。",
@@ -615,50 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://github.com/heyjunpenn/awesome-jev/blob/main/README.zh-Hans.md",
       "detailPath": "articles/13bc0e462e00845b59048fb0.json"
-    },
-    {
-      "id": "5b0c6778778768b5b7e14f23",
-      "title": "Meta发布企业AI平台，提供完整Agent产品矩阵",
-      "summary": "Meta宣布启动企业AI平台Meta Enterprise Platform，提供完整的AI智能体和模型服务矩阵。该平台整合了Meta的AI技术栈，为企业开发者提供新的AI平台选择，预示着企业AI市场竞争加剧。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://k.sina.com.cn/article_7857201856_1d45362c001908p4us.html?from=tech",
-      "detailPath": "articles/5b0c6778778768b5b7e14f23.json"
-    },
-    {
-      "id": "440f057032428672c2e34f9f",
-      "title": "阿里云百炼Token Plan升级，MCP服务新增三项能力",
-      "summary": "阿里云百炼本周更新包括Token Plan优化和MCP服务扩展。Token Plan新增权益并优化限额管理，MCP生态扩展增强Agent工具调用能力，为开发者提供更灵活的AI模型订阅方案和工具集成选择。",
-      "image": null,
-      "publishedAt": null,
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://developer.aliyun.com/modelstudio",
-      "detailPath": "articles/440f057032428672c2e34f9f.json"
-    },
-    {
-      "id": "2022230ed46100e3c4974f6c",
-      "title": "Anthropic发布Claude Sonnet 5.5：中端模型优化编码与性价比",
-      "summary": "Anthropic发布Claude Sonnet 5.5模型，作为Opus 5.5的低成本替代方案。该模型运行速度较Sonnet 5提升30%以上，完成相同任务所需Token更少，实际成本最高可降低30%。值得注意的是，在一项终端编码基准测试(Terminal-Bench 4.0)中取得了70.6%的成绩，甚至高于旗舰模型Opus 5.5，尤其适合日常编码、文档制作等高频企业任务。开发者可用更低的成本获得接近旗舰模型的编码性能，并且首次在Sonnet系列引入了高级安全防护和针对模型蒸馏攻击的防御。定价维持每百万输入Token 2美元，输出10美元。",
-      "image": null,
-      "publishedAt": "2026-09-28T18:04:37Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.cls.cn/detail/2494649",
-      "detailPath": "articles/2022230ed46100e3c4974f6c.json"
-    },
-    {
-      "id": "3959b9f4ee921524ff9e09ff",
-      "title": "阿里云2026 Agent开发者调研：生产化率仅18%，评估能力严重不足",
-      "summary": "阿里云发布的Agent开发者调研报告揭示了Agent开发现状与挑战。报告显示Agent投入已成共识但生产化率低，工程能力缺口明显，特别是上下文管理、多模型路由、评估体系等关键能力不足，为企业开发者提供了行业基准和痛点分析。",
-      "image": null,
-      "publishedAt": "2026-09-28T17:50:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.cnblogs.com/alisystemsoftware/p/23146808",
-      "detailPath": "articles/3959b9f4ee921524ff9e09ff.json"
     }
   ]
 }

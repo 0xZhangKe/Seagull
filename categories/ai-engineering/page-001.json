@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "34a943d3dcf1df7da7337d15",
+      "title": "Anthropic 分享 AI 时代软件开发经验：因 Git 瓶颈自研 Scion 版本控制系统",
+      "summary": "Anthropic 官方工程博客披露，因 Claude 大规模写代码导致每日代码合并量从 2500 次增长到 3 万次以上，Git 成为开发瓶颈。7 人团队用 5 个月自研版本控制系统 Scion 并完成 monorepo 迁移，分享“智能体规模”软件开发经验。",
+      "image": null,
+      "publishedAt": null,
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://tonybai.com/",
+      "detailPath": "articles/34a943d3dcf1df7da7337d15.json"
+    },
+    {
+      "id": "887db43b7a3b280f333559bd",
+      "title": "OfficeCLI 开源：专为 AI Agent 打造的 Office 套件，支持无 Office 环境文档处理",
+      "summary": "OfficeCLI 自称“世界上第一个专为 AI Agent 打造的 Office 套件”，允许 AI 智能体通过一行命令读写、编辑和自动化 Word、Excel、PowerPoint 文件，无需安装 Office。内置 HTML 渲染引擎可将文档高保真渲染为 HTML 或 PNG，实现“渲染 → 查看 → 修正”闭环。",
+      "image": null,
+      "publishedAt": "2026-10-14T17:52:00Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.cnblogs.com/chingho/p/23304342",
+      "detailPath": "articles/887db43b7a3b280f333559bd.json"
+    },
+    {
+      "id": "c38d23ee0e541bf3dac3b1dd",
+      "title": "NVIDIA 发布 Nemotron 3.5 Bolt 74B 开源模型，专为 RTX Spark 本地智能体优化",
+      "summary": "NVIDIA 宣布专为 RTX Spark 本地 AI 智能体设计的 Nemotron 3.5 Bolt 74B 模型将于 10 月 15 日星期四发布。该 MoE 模型拥有 740 亿参数（激活 90 亿），采用 2 比特量化压缩至 24GB，承诺在速度和智能间达到最佳平衡。发布时可通过 llama.cpp、vLLM、Ollama、Unsloth、LM Studio 运行，或由 Hermes、OpenClaw 等智能体直接使用。",
+      "image": null,
+      "publishedAt": "2026-10-14T15:39:12Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "https://www.csdn.net/article/2026-10-14/167915925",
+      "detailPath": "articles/c38d23ee0e541bf3dac3b1dd.json"
+    },
+    {
       "id": "d31ac21c7cec54def8bab9d5",
       "title": "开源逆向工程工具REA爆火，为AI Agent提供“逆向一切”能力",
       "summary": "开源项目REA近期在GitHub上热度飙升，它为AI Agent提供了强大的逆向工程能力。该项目允许开发者的AI助手直接分析没有源码的软件二进制文件，理解其功能实现，并生成带有证据的报告。REA集成了现有的专业逆向工具链，并通过MCP协议与主流AI开发环境连接，显著降低了进行软件分析和竞品研究的技术门槛。",
@@ -32,6 +65,17 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://news.cnyes.com/news/id/6630302",
       "detailPath": "articles/0d73261037fd36832ab28d2e.json"
+    },
+    {
+      "id": "73ac3c5d839095e056ce474f",
+      "title": "工信部印发《“人工智能+软件”专项行动实施方案》，部署 AI 与软件融合",
+      "summary": "工业和信息化部印发《“人工智能+软件”专项行动实施方案》，提出到 2028 年软件业智能化水平显著提升，覆盖 2 万家规模以上软件企业，实施 100 项智能化技改项目，打造 100 个智能体软件标杆应用，孵化 5 个以上优质开源项目。",
+      "image": null,
+      "publishedAt": "2026-10-14T09:01:28Z",
+      "sourceId": "ai-engineering",
+      "sourceTitle": "AI 工程动态",
+      "link": "http://www.xinhuanet.com/tech/20261014/58ed290c6d1145179295a46a64100ba9/c.html",
+      "detailPath": "articles/73ac3c5d839095e056ce474f.json"
     },
     {
       "id": "553adef8a305e40ce856157d",
@@ -615,50 +659,6 @@
       "sourceTitle": "AI 工程动态",
       "link": "https://www.unite.ai/anthropic-slashes-claude-sonnet-5-5-cache-read-cost-by-50",
       "detailPath": "articles/347edcbfc058080b40ce2cf2.json"
-    },
-    {
-      "id": "bfb7af107cd83f9c86eb1f20",
-      "title": "Anthropic发布Claude Haiku 5.5：API价格大幅降低且性能显著提升",
-      "summary": "Anthropic于2026年10月7日发布了Claude Haiku 5.5，这是其小型模型系列的最新版本。新模型相较于前代Haiku 4.5价格降低了约75%，与OpenAI的GPT-6 Luna定价持平。同时，Claude Sonnet 5.5的缓存读取费用降低50%，进一步减少了代理任务成本。模型在网络安全、代码生成等方面有显著提升，支持100K令牌请求和1M上下文窗口。",
-      "image": null,
-      "publishedAt": "2026-10-07T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
-      "detailPath": "articles/bfb7af107cd83f9c86eb1f20.json"
-    },
-    {
-      "id": "7962272402bf62432ca7c23e",
-      "title": "Anthropic发布Claude Haiku 5.5：API价格降低90%且性能大幅提升",
-      "summary": "Anthropic于10月7日正式发布了Claude Haiku 5.5，这是Claude 5.5家族中的小型模型，以极低的价格和显著提升的性能定位高吞吐量、成本敏感的任务。新模型API价格大幅降低，平均成本比Haiku 4.5降低约75%，在多领域基准测试中表现优秀，并首次在Haiku模型中引入了力度调节功能。对开发者而言，这为需要大规模部署实时应用（如客服支持、应用内助手）和副代理架构提供了经济高效的模型选择。",
-      "image": null,
-      "publishedAt": "2026-10-07T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://www.anthropic.com/claude-haiku-5-5",
-      "detailPath": "articles/7962272402bf62432ca7c23e.json"
-    },
-    {
-      "id": "7a550cba18e688673543d81b",
-      "title": "Claude Haiku 5.5发布，API输入价格下调约90%",
-      "summary": "Anthropic在2026年10月7日发布Claude Haiku 5.5模型，其核心变化是API价格的大幅降低，输入价格相比前代下降了约90%。这使得Haiku 5.5成为市场上性价比极高的轻量级模型选项。对于开发者而言，这直接降低了基于Claude模型进行AI应用开发或实验的成本，尤其是在需要频繁调用API或构建多步骤Agent工作流时，成本效益显著提升。",
-      "image": null,
-      "publishedAt": "2026-10-07T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://zhuanlan.zhihu.com/p/2092888561209160150",
-      "detailPath": "articles/7a550cba18e688673543d81b.json"
-    },
-    {
-      "id": "13d9424236a9b32592d93f3e",
-      "title": "OpenAI 向所有 ChatGPT 用户推出 GPT-6 和 Intelligent UI智能交互界面",
-      "summary": "OpenAI 于2026年10月7日正式宣布，为所有 ChatGPT 用户全面上线 GPT-6 模型和全新的 Intelligent UI（智能交互界面）。付费用户获得 GPT-6 Sol，免费和 Go 用户获得 GPT-6 Luna。新界面允许模型根据问题类型自动生成包含图表、按钮、表单和可交互组件的混合响应，而不仅仅是文本。同时，模型支持“边思考边回答”的渐进式输出，显著改善了交互体验。开发者需注意，该功能主要适用于模型的 Instant 至 Extra High 推理档位。",
-      "image": null,
-      "publishedAt": "2026-10-07T00:00:00Z",
-      "sourceId": "ai-engineering",
-      "sourceTitle": "AI 工程动态",
-      "link": "https://openai.com/news/company-announcements",
-      "detailPath": "articles/13d9424236a9b32592d93f3e.json"
     }
   ]
 }

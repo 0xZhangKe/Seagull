@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "41aff6e90dde6e2d3f9d1dc1",
+      "title": "有催人跑的意思 —— 使用 PPPoE 半桥帮助 UniFi 网关突破性能瓶颈",
+      "summary": "UniFi 网关设备（如 UDM Pro/SE/Pro Max）搭载的 CPU 性能出了名的孱弱、还缺乏 PPPoE 和 NAT 硬件加速的支持，在搭配 PPPoE 拨号的宽带时，UniFi 网关的性能更是捉襟见肘。那么，为什么不把 PPPoE 拨号的任务交给一个单独的设备来处理、让 UniFi 网关专注于路由、IDS/IPS 和 NAT 呢？",
+      "image": "https://img.skk.moe/blog/t2026/pppoe-half-bridge.png",
+      "publishedAt": "2026-08-03T03:10:00Z",
+      "sourceId": "5a840ced5a57e7ff",
+      "sourceTitle": "Sukka's Blog",
+      "link": "https://blog.skk.moe/post/pppoe-half-bridge/",
+      "detailPath": "articles/41aff6e90dde6e2d3f9d1dc1.json"
+    },
+    {
+      "id": "947a7d7182184272980ae406",
+      "title": "CrowdSec 取代 fail2ban：六天擋下 1619 次掃描,和我把自己封鎖的三次",
+      "summary": "這篇記錄了作者把伺服器防護從 fail2ban 換成 CrowdSec 的完整過程,並整理成一份可照做的教學。起因不是被入侵而是被吵:掃描器整天敲 /wp-login.php、/.env,把監控通知洗版。當時 fail2ban 已封過 614 個 IP,但作者發現對手一直在換 IP,封 IP 這條路贏不了——後來的數據也證實了這點,攻擊來源前七名幾乎全是 Azure、DigitalOcean、阿里雲這類雲端機房,開一台新 VM 比封一個 IP 便宜得多。文中給出這台機器六天內的真實數字:1619 次攻擊偵測、防火牆同時擋著 25.22k 個 IP,其中社群黑名單提供的數量是自己抓到的三千倍。架設踩到的三個坑是同一條因果鏈(apt 從 ESM 拿到上古版本 → 跨版本升級把 hub 搬家 → symlink 全…",
+      "image": null,
+      "publishedAt": "2026-08-03T01:47:12Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/crowdsec-replacing-fail2ban",
+      "detailPath": "articles/947a7d7182184272980ae406.json"
+    },
+    {
+      "id": "d76730e048f58528fd105d09",
+      "title": "周记 134 被海水包围",
+      "summary": "生活闲聊 猫和我的植物最近都不错。 去了哪里 上周六去划皮艇，想去buoy那里看海豹，划到一半风浪太大，我总觉得船要翻了，跟家属比划掉头，拼命划去浅滩，在皮艇上听不太清彼此说话，上了岸家属说，他had a good time，原来只有我觉得我们好像在逃生。 在浅滩坐着，看别人家小狗一遍遍在海里快乐捡球，小孩子在玩水，好有假日的快乐氛围。甚至看到一只海豹游的离我们超级近，就在人群之间穿梭。回程看到了好多海豹睡成一排，旁边还有好多鸟，就是路过的时候味道惊人的臭。 周日本来想去爬山，起床之后觉得好累，决定和家属去洛杉矶附近的Mall买婚礼的鞋子，领带，还有我夏天的白色T恤。 中午出发，逛了三个小时，中间被香水熏的好难受。除了我的鞋，剩下都买到了，我在优衣库买了三个白t，想了很久的夏天穿搭就齐了。回家之后7点就累的不…",
+      "image": "https://2.gravatar.com/avatar/590c33e1447ea328d6aaf6dbe754f9833bc45546a1d33572c602175872cebf73?s=96&d=identicon&r=G",
+      "publishedAt": "2026-08-03T00:47:35Z",
+      "sourceId": "3ccb6844373fea4a",
+      "sourceTitle": "河马水槽",
+      "link": "https://hippostank.org/2026/08/02/%e5%91%a8%e8%ae%b0-134-%e8%a2%ab%e6%b5%b7%e6%b0%b4%e5%8c%85%e5%9b%b4/",
+      "detailPath": "articles/d76730e048f58528fd105d09.json"
+    },
+    {
+      "id": "ae7327d3189adb843a7ad20c",
+      "title": "2026年的比特币有了新的逻辑？",
+      "summary": "本文回顾比特币和黄金的基本属性，并从比特币的矿工关机币价、减半周期、美元流动性传导、Strategy风险等方面解构比特币的定价逻辑。作者认为是共识资产因新的叙事、共识、投机与交易创造的新的集体价值。",
+      "image": "https://prologue.dev/static/images/bitcoin_dominance202607.png",
+      "publishedAt": "2026-08-03T00:00:00Z",
+      "sourceId": "757145dcc77dee94",
+      "sourceTitle": "Prologue 序章",
+      "link": "https://prologue.dev/blog/is-there-a-new-logic-behind-bitcoin-in-2026",
+      "detailPath": "articles/ae7327d3189adb843a7ad20c.json"
+    },
+    {
+      "id": "ff98259ec5ba860e49603477",
+      "title": "讓它自己跑",
+      "summary": "分享一個小祕訣：遇到需要時間思考的問題，早一點丟到腦中「讓它跑」。",
+      "image": null,
+      "publishedAt": "2026-08-03T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/let-it-run",
+      "detailPath": "articles/ff98259ec5ba860e49603477.json"
+    },
+    {
+      "id": "fd02f3845aac05ea6efa6e8c",
+      "title": "超多人的台北車站",
+      "summary": "今天一直睡到早上五點多就醒來了，我朋友早上睡不太著，所以有發出點聲音，醒來之後我就起來整理一下，然後出發去吃飯店的早餐。 這邊的早餐用看的是真的很高級，但是我就覺得沒有說很合我的口味，吃起來就是不知道少了什麼，也不會說不好吃，但是就是吃不習慣。 吃完之後我就跟我朋友搭車出發去第一天的比賽。今天早上先來的是數位鑑識，這部分我們寫的還不錯。有點可惜的是有一題 DNS 的封包題，答案是用 base32 包起來，我沒有看出來，所以就有點可惜。 下午的部分就滿炸的，是考安全強化，而且大部分都是 Windows 的題目，這個部分我是直接給我朋友寫，因為我自己也沒練過。 Linux 的部分是要配置 rsyslog，我很驚訝的是這東西我居然不會，這部分我自己是沒有配置過，因為剛好沒有要用的情況，所以之前自己亂玩也沒玩到。Co…",
+      "image": "https://img.worldofwheat.cc/16e331476336",
+      "publishedAt": "2026-08-02T16:00:00Z",
+      "sourceId": "de9cbd8d045ab396",
+      "sourceTitle": "小麥的異想世界",
+      "link": "https://my-blog.worldofwheat.cc/blog/2026/08/first-competition-day-taipei-station.html",
+      "detailPath": "articles/fd02f3845aac05ea6efa6e8c.json"
+    },
+    {
       "id": "1da18abb6118f252a3246e08",
       "title": "向云端｜西南自驾06 - 芷江",
       "summary": "",
@@ -593,72 +659,6 @@
       "sourceTitle": "she monster inside",
       "link": "https://monsteressinside.bearblog.dev/soulmate/",
       "detailPath": "articles/8010d90453fa58ed53859537.json"
-    },
-    {
-      "id": "0160022b11a774ae627dc462",
-      "title": "入蜀记 day432 苦集灭道",
-      "summary": "「苦集灭道。」",
-      "image": null,
-      "publishedAt": "2026-07-30T04:48:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_432/",
-      "detailPath": "articles/0160022b11a774ae627dc462.json"
-    },
-    {
-      "id": "c37bbf46efe3c7274fcb6b60",
-      "title": "大学教授出奇招抓AI作弊，35名学生32人中招",
-      "summary": "7月28日消息，据科技媒体TechSpot昨天报道，美国奥尔康州立大学历史学教授杰森 · 吉布森（Jason Gibson）最近分享自己抓 AI 作弊的奇招，结果显示他任教的两个班级中，共有 32 人被抓现行。 据报道，这名教授给学生出的期中考试题目中，有一题涉及工业革命。他知道许多学生会直接照抄 AI 答案，因此他决定往试卷文档里加入一条提示词，要求 AI 以毫无逻辑的方式描述“马达加斯加”。这段提示词使用白色字体嵌入在文档里，因此学生无法直接用肉眼看到。 最终学生们交上来的 35 份试卷中，有 32 张答卷露出马脚。其实这些学生哪怕稍微检查一下 AI 给出的答案，就能发现异常。其中一个答案先是描述了工业革命，然后突然说“马达加斯加在下午时分横向漂浮”；另一答案则先讨论技术发展与社会不平等，然后结尾是“马达…",
-      "image": null,
-      "publishedAt": "2026-07-30T02:38:48Z",
-      "sourceId": "790d01957a9e753b",
-      "sourceTitle": "月光博客",
-      "link": "https://www.williamlong.info/archives/7555.html",
-      "detailPath": "articles/c37bbf46efe3c7274fcb6b60.json"
-    },
-    {
-      "id": "cf2de504e97c4fa2f58e2ada",
-      "title": "对框架的一些思考",
-      "summary": "最近有一些感悟：其实我们的生活、工作、情绪以及各种方法和技巧，都是在某个框架内打转。当我们从顶层思维的角度去审 …",
-      "image": null,
-      "publishedAt": "2026-07-30T02:26:14Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/some-thoughts-on-the-framework/",
-      "detailPath": "articles/cf2de504e97c4fa2f58e2ada.json"
-    },
-    {
-      "id": "38246ac36c83ee0da838f91f",
-      "title": "怎樣才能不專注",
-      "summary": "＊内容警告：文中有鳥類圖片 在一個滿世界是專注計時、專注力工具的世界裡，努力解決過度專注的問題……並得出了一點點經驗。 水禽特有的作沉思狀 # 小學的時候經常在教室裡坐一整天不离开座位，也不上廁所 1 ，被同桌當成奇聞怪事說給家長聽。 離家住宿舍之後坐一整天不去吃飯。 把自己餓出胃病，然後進急診。（感謝各位同学救我狗命。） 嚴重的時候经常連續熬两天完全不睡。（想來真是作死。） 「不動如山」的時候在幹什麼。大概就是沉迷於正在做的事情，然後持續數小時只盯著這個東西看，挪不到「下一個任務」上。 聽起來好像上癮。但能「成癮」的東西有點多。 调整word文檔的格式。製作表單。做ppt。擦百葉窗。整理藥盒。 考據（無人在意的細節）。 進入工作狀態也很慢。進入狀態之後又挪不到其他任務上。每天就這樣以史萊姆的形態衝進待辦列表…",
-      "image": "https://wuliang.netlify.app/posts/hyperfocus/%E5%A4%9C%E9%B7%BA-%E6%94%9D%E6%96%BC20251107.jpg",
-      "publishedAt": "2026-07-30T01:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliang.netlify.app/posts/hyperfocus/",
-      "detailPath": "articles/38246ac36c83ee0da838f91f.json"
-    },
-    {
-      "id": "009e504a280d7bb7b7386abf",
-      "title": "2026年7月月度总结",
-      "summary": "考完期末的凌晨昏头脑胀想到哪写到哪，也可以理解为321倒 又在忙着考试，好像没有特别多想要记录的事，但是有很多乱七八糟的琐碎的心情，一学起来就会想东想西，开始思考一些过去的事情，未来的事情。 想到过去，就是之前在家gay的时候，或者是去年刚来老德的时间，觉得自己有点可怜，而且是后知后觉这样反应过来。就是每天一个人待在充满油烟味的studio里，冬令时晚上过了五六点没有人可以和我讲话，也没有非常亲密的朋友，感觉到前所未有的孤独和寂寞。我是怎么经历过来的？去年七月去不莱梅考歌德A1发现住的青旅给我安排了和白男拼房，特别不安然后焦虑得抱着嘻嘻哭，但是第二天还是去考了。那个时候说希望一年后能到B1的水平，现在实则完全没有啊！！ 不仅德语没有进步，英语也退步了，只把GPT当作最好的老师（。。。）这样学觉得没有特别辛苦，…",
-      "image": null,
-      "publishedAt": "2026-07-30T00:00:00Z",
-      "sourceId": "c2f93c0c7c75bc8b",
-      "sourceTitle": "Circleyellowthere",
-      "link": "https://circleyellowthere.de/blog/15/",
-      "detailPath": "articles/009e504a280d7bb7b7386abf.json"
-    },
-    {
-      "id": "04e2d66883516fee6a68245c",
-      "title": "MCP大版本发布：无状态核心、破坏性变更，以及它到底省不省 token",
-      "summary": "",
-      "image": "https://cdn.jsdelivr.net/gh/crossoverJie/images@main/images/images20260730163724674.png",
-      "publishedAt": "2026-07-30T00:00:00Z",
-      "sourceId": "126e6f369677b760",
-      "sourceTitle": "crossoverJie's Blog",
-      "link": "http://crossoverjie.top/2026/07/30/AI/mcp-2026-07-28-release/",
-      "detailPath": "articles/04e2d66883516fee6a68245c.json"
     }
   ]
 }

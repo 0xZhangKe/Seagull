@@ -1,6 +1,138 @@
 {
   "items": [
     {
+      "id": "5fe611ed0f05419573bcbe13",
+      "title": "Music recommendations (2024)",
+      "summary": "Initially I had thought this year wasn’t as good as last year in terms of music, but listening again to the best tracks from the first 40-something weeks of the year proved otherwise. It was a great year. Most music I was sent by the Apple Music algorithm continued to be Japanese, thanks to my ongoing deep dive. During the initial playlist curation I was st…",
+      "image": null,
+      "publishedAt": "2024-12-31T23:55:00Z",
+      "sourceId": "625f69e92fbd1d94",
+      "sourceTitle": "⌘I",
+      "link": "https://blog.gingerbeardman.com/2024/12/31/music-recommendations-2024/",
+      "detailPath": "articles/5fe611ed0f05419573bcbe13.json"
+    },
+    {
+      "id": "9aba54e34633cbaf8e85f0e4",
+      "title": "Yeah, I Skate(board)",
+      "summary": "As some of you may know, I go to college in the midwestern United States. This means that the land here is pretty flat, and my classes are like a mile from my apartment. Why would I want to walk back and forth multiple times a day when I could do it in style . Of course, I am not the only one beridden by this plight. Popular solutions include: The alright b…",
+      "image": "https://ersei.net/blog/sk8r/./mount-stupid.gif",
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/sk8r",
+      "detailPath": "articles/9aba54e34633cbaf8e85f0e4.json"
+    },
+    {
+      "id": "3a20943e735609e8ef47750d",
+      "title": "Server Updates: In Which I Have A Server Now, For Real",
+      "summary": "After years of yearning, longing, and pining (let's not forget pining), I finally got myself an actual server. Or rather, a friend of mine got sick of listening to me whine about my old, terrible server, and gave me a spare that he cannibalized for parts (but was still very good and usable). I am now the proud owner of an HPE ProLiant DL360 Gen9 . This stor…",
+      "image": "https://ersei.net/user/pages/02.blog/38.updates-2024-02/rack-small.jpg",
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/updates-2024-02",
+      "detailPath": "articles/3a20943e735609e8ef47750d.json"
+    },
+    {
+      "id": "1de45ef85e6b73371e64f5f5",
+      "title": "The Self-Hosting Barrier to Entry",
+      "summary": "I meet a lot of nerds—some are even of the Computer Variety! Since I'm obsessed with RSS , my first 1 question boils down to \"do you have an RSS feed I can subscribe to?\" You know what they say about assuming. Time Building a website is time-consuming! Doing anything more than slapping together something in HTML and throwing it on GitHub pages in thirty min…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/selfhosting-isnt-that-easy",
+      "detailPath": "articles/1de45ef85e6b73371e64f5f5.json"
+    },
+    {
+      "id": "bcfffb4bc88e63bf25694fb3",
+      "title": "Introducing: Ersei 'n Notes",
+      "summary": "I am out of ideas to write about. There, I said it. My problem is that I want to always write long-form content because I feel like anything else isn't \"good enough\" for this blog. So, I decided to diversify. Introducing: Ersei 'n Notes ! Similar to Jim Nielsen's Notes , I want to share cool stuff I read. There's too much noise on Mastodon, and I feel like…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/ersei-n-notes",
+      "detailPath": "articles/bcfffb4bc88e63bf25694fb3.json"
+    },
+    {
+      "id": "f9a5a3112e5709aef8805fce",
+      "title": "Saying Goodbye to GitHub",
+      "summary": "I've been using GitHub since I was eleven years old. To be fair, I didn't really understand git at the time, but I was able to fumble my way through it (barely). I do remember getting banned because eleven year old me decided to tell the internet my age on GitHub, and the ToS prohibited me from using the service until I was at least thirteen. Anyway. GitHub…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/bye-bye-github",
+      "detailPath": "articles/f9a5a3112e5709aef8805fce.json"
+    },
+    {
+      "id": "c91bf2cf95bcd3cb381d0f8b",
+      "title": "Server Updates: March Madness Edition",
+      "summary": "It's been a crazy month for this server. It's also been a crazy one game for Purdue. I guess we all have our moments. In this edition: Wireguard magic, CMS plugins, and remembering my server! Wireguard As about two of you remember, I moved to Oracle Cloud and used Rathole to forward traffic from ✨the cloud✨ to my server. Issue was that everything seemed to…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/updates-2023-03",
+      "detailPath": "articles/c91bf2cf95bcd3cb381d0f8b.json"
+    },
+    {
+      "id": "9a7ede316c7ac861efc90e84",
+      "title": "Finding a Grav Bug with git bisect",
+      "summary": "I ran into a bug with my CMS Grav . RSS feeds just broke after an update. Going to the feed URL just gave you the blog homepage. Let's try to find out where that bug was introduced using our friend, git bisect . Let's start off by first getting the Grav git source . Luckily there are instructions for deploying from a Git repository. Let's do that. $ git clo…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/git-bisect",
+      "detailPath": "articles/9a7ede316c7ac861efc90e84.json"
+    },
+    {
+      "id": "d81b7f3bd1546d3df0c80a52",
+      "title": "Grafana Plugin Tip",
+      "summary": "Have Grafana deployed? Going crazy trying to figure out why your apps and extensions aren't working? It's an easy fix. Under the [security] section, add angular_support_enabled = true . Now for the longer explanation. I was trying to integrate the Zabbix Grafana app . For the instructions, I had to go to the \"config\" tab of the plugin. Issue was, nothing wa…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/grafana-tip",
+      "detailPath": "articles/d81b7f3bd1546d3df0c80a52.json"
+    },
+    {
+      "id": "4a23e4f255af38d8fc610a05",
+      "title": "GitHub's Mysterious robots.txt",
+      "summary": "Recently, I came across GitHub's robots.txt . There are some interesting entries in there, so I'm going to try and find out why those entries are there. At the time of writing (2023-02-12 14:53 EST), GitHub's robots.txt looks something like this: # If you would like to crawl GitHub contact us via https://support.github.com?tags=dotcom-robots # We also provi…",
+      "image": "https://ersei.net/user/pages/02.blog/24.githubs-robots-txt/opencontexttweet.png",
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/githubs-robots-txt",
+      "detailPath": "articles/4a23e4f255af38d8fc610a05.json"
+    },
+    {
+      "id": "9ebdd7c610a178408ae4f13d",
+      "title": "On Free Time and Productivity",
+      "summary": "I have self-banned myself from the Orange Website . There are many reasons, but the main ones are that I was spending too much time reading that website and there is way too much toxicity and a culture of bigoted neoliberal techbro NIMBYism. As such, I have found myself with lots of free time on my hands and less of an urge to write something that will give…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/free-time",
+      "detailPath": "articles/9ebdd7c610a178408ae4f13d.json"
+    },
+    {
+      "id": "39f412711707a52753cb23ef",
+      "title": "More Server Updates",
+      "summary": "Oh boy, do I have updates for y'all. A few months ago, just a scant week and a half before winter break (and a few days before finals), my SSD died. This continues a worrying trend in which I purchase hardware only for it to die fairly quickly. In this case, my year-old SSD died, well within the warranty. The RMA process was a pain, and they wanted the foll…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/updates-2023-01",
+      "detailPath": "articles/39f412711707a52753cb23ef.json"
+    },
+    {
       "id": "8758094fc82ce4c21171ff89",
       "title": "The Perils of Running Your Own Mastodon Instance",
       "summary": "So I've been on the fediverse for about a year now. I started on mastodon.social but held off on self-hosting until just a few weeks ago. I thought it was gonna kill my poor server to federate so much (I've heard things about Ruby on Rails, not all positive), so I just didn't. Eventually, I was pushed over into running my own instance literally because I wa…",
@@ -199,6 +331,17 @@
       "detailPath": "articles/e110fef9ea8ab12c2485032c.json"
     },
     {
+      "id": "7328eaddd3c76920f8dadbb0",
+      "title": "On the Ada Secondary Stack, and Allocation in the Real-World",
+      "summary": "As a loosely-related addendum to my previous post on Ada. Quoting the relevant context from that post that this elaborates on: I also need to touch on one of Ada's design philosophies, which is to avoid dynamic allocation unless actually necessary for safety reasons, since it doesn't have a borrow checker for fully-safe allocation like Rust does 1 . The key…",
+      "image": null,
+      "publishedAt": "2024-12-27T00:00:00Z",
+      "sourceId": "72f838778ac9f67d",
+      "sourceTitle": "nytpu's gemlog",
+      "link": "https://nytpu.com/gemlog/2024-12-27-2",
+      "detailPath": "articles/7328eaddd3c76920f8dadbb0.json"
+    },
+    {
       "id": "c71894081ef2819cf5d5ee0a",
       "title": "2024: The year in lists",
       "summary": "It’s Boxing Day and I’m a small pile on the sofa. We successfully Did Christmas at ours this year, and I never want to see another mince pie (until next year). So, what better time than now to look back on the year? Skip to bits you care about: The year in... ...big life things ...conferences ...gardening ...travel ...books ...podcasts ...music ...video gam…",
@@ -375,6 +518,17 @@
       "detailPath": "articles/e83463c2c490b702a42ddf35.json"
     },
     {
+      "id": "7b97b8fdb77cf93c2d9819c9",
+      "title": "Fluoride Toothpaste vs Mouthwash",
+      "summary": "DISCLAIMER: I'm not a dentist or dental professional of any sort, you should do whatever they recommend rather than following what I spent five minutes guesstimating XD. A while ago I noticed that fluoride mouthwash has less than 25% the fluoride that toothpaste has in it, and have been wondering if that means it's less effective than using fluoridated toot…",
+      "image": null,
+      "publishedAt": "2024-11-20T00:00:00Z",
+      "sourceId": "72f838778ac9f67d",
+      "sourceTitle": "nytpu's gemlog",
+      "link": "https://nytpu.com/gemlog/2024-11-20",
+      "detailPath": "articles/7b97b8fdb77cf93c2d9819c9.json"
+    },
+    {
       "id": "cdff65a5514e01622d48a78d",
       "title": "Importing a frontend Javascript library without a build system",
       "summary": "I like writing Javascript without a build system and for the millionth time yesterday I ran into a problem where I needed to figure out how to import a Javascript library in my code without using a build system, and it took FOREVER to figure out how to import it because the library’s setup instructions assume that you’re using a build system. Luckily at thi…",
@@ -452,6 +606,17 @@
       "detailPath": "articles/e27a1ffd6ba1417a9a0530eb.json"
     },
     {
+      "id": "69b9189f2622b359a00374ee",
+      "title": "Thoughts on Petscop",
+      "summary": "Random thoughts dump, not particularly organized or trying to make a specific point. No spoilers for anything other than themes that get revealed in like episode 2, and the general concept of the videos containing hidden secrets. Finished watching Petscop (only 7 years late lol), and… hmm. Overall I enjoyed it and it had a great atmosphere, but am pretty di…",
+      "image": null,
+      "publishedAt": "2024-11-01T00:00:00Z",
+      "sourceId": "72f838778ac9f67d",
+      "sourceTitle": "nytpu's gemlog",
+      "link": "https://nytpu.com/gemlog/2024-11-01",
+      "detailPath": "articles/69b9189f2622b359a00374ee.json"
+    },
+    {
       "id": "a354e48e6b004e0e0a1f9f97",
       "title": "Delegates in Unreal",
       "summary": "Delegates in Unreal Engine play an essential role in creating modular, decoupled, and event-driven code. They allow one object to call a function on another object without hard-wiring the dependency between them, which is perfect for implementing event-driven behavior. In Unreal, delegates are especially useful in game development to handle events, respond…",
@@ -494,171 +659,6 @@
       "sourceTitle": "⌘I",
       "link": "https://blog.gingerbeardman.com/2024/10/27/word-counter-extension-for-nova-editor/",
       "detailPath": "articles/fd5aa5d03963b3da204daaa4.json"
-    },
-    {
-      "id": "0db16b91d75ce8e6ddf2dc13",
-      "title": "Macro extension for Nova editor",
-      "summary": "After creating a bunch of smaller Nova Extensions quite quickly I wondered how far I could push things, just as a personal challenge. I had the idea of implementing a Macro text recording and playback system. There was something similar in TextMate editor, and whilst the Nova API doesn’t currently allow as sophisticated a system I thought it was something s…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/nova-macro-extension-record.png",
-      "publishedAt": "2024-10-24T14:02:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/10/24/macro-extension-for-nova-editor/",
-      "detailPath": "articles/0db16b91d75ce8e6ddf2dc13.json"
-    },
-    {
-      "id": "0b25cb7cb81458c5dfbea8f9",
-      "title": "Marathon",
-      "summary": "Last Sunday I completed my first full marathon, covering a distance of 42KM in and around Amsterdam. An idea that started in a bar with some beers and concluded with a finish in the Olympic Stadium. What a journey, what an experience, well worthy of a blog post.",
-      "image": "https://willem.com/global/images/27054fc736ba.webp",
-      "publishedAt": "2024-10-19T22:00:00Z",
-      "sourceId": "da4f8168d47b2b2a",
-      "sourceTitle": "Willem's Blog",
-      "link": "https://willem.com/en/2024-10-20_marathon/",
-      "detailPath": "articles/0b25cb7cb81458c5dfbea8f9.json"
-    },
-    {
-      "id": "212ac78e406817dd65c3de2a",
-      "title": "Extensions for Nova editor",
-      "summary": "I’m a big believer in solving problems yourself if it’s possible rather than waiting for app updates that might never arrive. Making extensions for the Nova editor that I do most of my programming and blogging in is so much fun! So, here are some of my own creation: View all: extensions.panic.com/extensions/com.gingerbeardman/ YAML Tag Picker Allows you to…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/yaml-tag-picker.png",
-      "publishedAt": "2024-10-17T20:47:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/10/17/extensions-for-nova-editor/",
-      "detailPath": "articles/212ac78e406817dd65c3de2a.json"
-    },
-    {
-      "id": "f3de21b51209d49f7114185a",
-      "title": "Trip to New York in October 2024",
-      "summary": "A photo-documented trip to NYC and Six Flags Great Adventure via Spirit Airlines, including tips on NJ Transit, LIRR, driving in Manhattan, and reflections on reconnecting with an old friend.",
-      "image": "https://i.uid.si/img/20241016rfPzkI.jpeg",
-      "publishedAt": "2024-10-17T03:31:37Z",
-      "sourceId": "1dc4dbdb701e1314",
-      "sourceTitle": "Vincent's Notes",
-      "link": "https://missuo.me/posts/nyc-oct-2024/",
-      "detailPath": "articles/f3de21b51209d49f7114185a.json"
-    },
-    {
-      "id": "bf74cfdd5a705efc884837d9",
-      "title": "无标题文章",
-      "summary": "Rust has two main string types: String and &str . Sometimes, people argue that these two types make Rust code difficult to write, because you have to think about which one you should be using in a given situation. My experience of writing Rust is that I don’t really think about…",
-      "image": "https://cdn.bsky.app/img/avatar/plain/did:plc:3danwc67lo7obz2fmdg6jxcr/bafkreidffwgsdli2xp56t3kfemk7bryow3mygu7zbvgcsxgsu3ntnp4hwm",
-      "publishedAt": "2024-10-16T00:00:00Z",
-      "sourceId": "9a41b0d6fa07d21e",
-      "sourceTitle": "Steve Klabnik",
-      "link": "https://steveklabnik.com/writing/when-should-i-use-string-vs-str/",
-      "detailPath": "articles/bf74cfdd5a705efc884837d9.json"
-    },
-    {
-      "id": "82b6c4a9e809d945f7d6c546",
-      "title": "Human Driving Increases Transportation Cost 10x",
-      "summary": "Why ground transportation still has a lot of legs. ... Read More",
-      "image": null,
-      "publishedAt": "2024-10-14T00:00:00Z",
-      "sourceId": "c9c03cf06f6bc95e",
-      "sourceTitle": "Austin Vernon",
-      "link": "https://austinvernon.site/blog/cheaptransportation.html",
-      "detailPath": "articles/82b6c4a9e809d945f7d6c546.json"
-    },
-    {
-      "id": "6eda00aec0a05d0474d06ce7",
-      "title": "Automating the most annoying aspects of blogging",
-      "summary": "Back in 2021 I had a look around and decided to base this incarnation of my blog on an open-source Jekyll theme called “ Type ”, though I’ve changed and added so much it’s quite some distance from the original as it stands today. As I added blog posts the performance became much worse. Initially I blamed Jekyll for this, until I took a closer look. What I l…",
-      "image": null,
-      "publishedAt": "2024-10-11T16:42:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/10/11/automating-the-most-annoying-aspects-of-blogging/",
-      "detailPath": "articles/6eda00aec0a05d0474d06ce7.json"
-    },
-    {
-      "id": "b859b5e4165b10b1ab01c3a8",
-      "title": "Bender 2: Bend Harder for Playdate",
-      "summary": "Back in 2012 I wanted to make a quick game for the AGBIC game jam (A Game By Its Cover; make a game inspired by the imaginary cover art from the Famicase exhibition). There’s only one rule for this game jam, which is taken very seriously: respect the wishes of the original artists, and don’t appropriate their designs without consent . Otherwise you’re free…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/bender-2-famicase-2011.jpg",
-      "publishedAt": "2024-10-08T17:00:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/10/08/bender-2-bend-harder-for-playdate/",
-      "detailPath": "articles/b859b5e4165b10b1ab01c3a8.json"
-    },
-    {
-      "id": "7053d5b7d8444c2300c642e0",
-      "title": "Deploy Reverse DNS server",
-      "summary": "A guide to deploying a Reverse DNS server using the SND project for ARIN-allocated IP addresses, enabling automatic PTR record generation for both IPv4 and IPv6 ranges.",
-      "image": "https://i.uid.si/img/20241005lfvgsn.png",
-      "publishedAt": "2024-10-07T23:57:52Z",
-      "sourceId": "1dc4dbdb701e1314",
-      "sourceTitle": "Vincent's Notes",
-      "link": "https://missuo.me/posts/reverse-dns-server/",
-      "detailPath": "articles/7053d5b7d8444c2300c642e0.json"
-    },
-    {
-      "id": "4586aaeb756a0524bd40ee25",
-      "title": "My third ASN and IP resource request",
-      "summary": "The journey of acquiring three ASNs (AS206729, AS60614, AS30700) across RIPE and ARIN, including tips on obtaining rare 2-byte ASNs and IPv4 allocations directly from ARIN at lower costs.",
-      "image": "https://i.uid.si/img/20241005HHnOZ1.png",
-      "publishedAt": "2024-10-06T02:47:15Z",
-      "sourceId": "1dc4dbdb701e1314",
-      "sourceTitle": "Vincent's Notes",
-      "link": "https://missuo.me/posts/my-third-asn/",
-      "detailPath": "articles/4586aaeb756a0524bd40ee25.json"
-    },
-    {
-      "id": "4f491127a6964a2884719eef",
-      "title": "Summary of changes for September 2024",
-      "summary": "Hey everyone! This is the list of all the changes we've done to our projects during the month of September. Summary Of Changes 100r.ca , added a new page: Victoria to Sitka logbook . M291 , added support for Cyrillic glyphs . Fractran , released what might be the most in-depth documentation of Conway's programming language out there. Now Lie In It , a look…",
-      "image": "https://100r.ca/media/content/videos/september_2024.jpg",
-      "publishedAt": "2024-10-01T07:00:00Z",
-      "sourceId": "981924f06f53f00f",
-      "sourceTitle": "Hundred Rabbits — Journal",
-      "link": "https://100r.ca/site/log.html#sep2024",
-      "detailPath": "articles/4f491127a6964a2884719eef.json"
-    },
-    {
-      "id": "688a36216ea42c82961ddffb",
-      "title": "Why Do New Cars Have Speed Limit Warnings, and Do They Work?",
-      "summary": "New cars have one feature that's infuriating: a beep when exceeding the speed limit. Why are carmakers adding this and does it actually work?",
-      "image": null,
-      "publishedAt": "2024-10-01T00:00:00Z",
-      "sourceId": "a520cafa32a3537c",
-      "sourceTitle": "The Turn Signal",
-      "link": "https://www.theturnsignalblog.com/why-do-new-cars-have-speed-limit-warnings-and-do-they-work/",
-      "detailPath": "articles/688a36216ea42c82961ddffb.json"
-    },
-    {
-      "id": "9c475c5cda223504e4f30bf8",
-      "title": "Dan's Edina Sample Ballot Election (2024)",
-      "summary": "As a summary, here's what I'm voting this year on my Edina, MN ballot (along with links to research on why I'm voting that way): For all partisan races (president, senate, house/state reps) - the DFL candidate . Statewide constitutional amendment - Yes . County Commissioner District",
-      "image": null,
-      "publishedAt": "2024-09-30T15:15:09Z",
-      "sourceId": "ca0b64ea7f584fe1",
-      "sourceTitle": "Dan Lew Codes",
-      "link": "https://blog.danlew.net/2024/09/30/dans-edina-sample-ballot-election-2024/",
-      "detailPath": "articles/9c475c5cda223504e4f30bf8.json"
-    },
-    {
-      "id": "0f38768732e6cec0aac8369d",
-      "title": "Edina City Council (2024)",
-      "summary": "Another post about local Edina politics, this time the city council race. There are three candidates for two open positions; you get to vote for two: Ryan Daye Carolyn Jackson (incumbent) James Pierce (incumbent) Carolyn Jackson Let’s get the easy one out of the way first. Jackson has",
-      "image": null,
-      "publishedAt": "2024-09-30T15:10:43Z",
-      "sourceId": "ca0b64ea7f584fe1",
-      "sourceTitle": "Dan Lew Codes",
-      "link": "https://blog.danlew.net/2024/09/30/edina-city-council-2024/",
-      "detailPath": "articles/0f38768732e6cec0aac8369d.json"
-    },
-    {
-      "id": "9b3e107cc7e7d078640a45d5",
-      "title": "A haze of inspiration",
-      "summary": "A long time ago in a galaxy far, far away I had to give an impromptu presentation about something I didn’t know much about. The goal of the task was to see how well we could ad-lib a presentation under pressure. Everybody in the room had to think of a topic whilst waiting for our turn. The person next to me couldn’t think of anything and asked me what I had…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/haze-of-inspiration.webp",
-      "publishedAt": "2024-09-28T17:46:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/09/28/a-haze-of-inspiration/",
-      "detailPath": "articles/9b3e107cc7e7d078640a45d5.json"
     }
   ]
 }

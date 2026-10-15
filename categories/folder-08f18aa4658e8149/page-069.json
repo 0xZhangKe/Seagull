@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "5623db8033d654046bb77284",
+      "title": "Debian 10通过systemd-resolved修改DNS",
+      "summary": "过年时候在CoalCloud的服务器到期忘了续费，结果机器关停。续费之后发现Caddy的反代无论如何都无法生效，查看日志发现是无法申请到域名的证书，无法解析letsencrypt的域名。直接修改/etc/resolve.conf 又无法保存，发现是一个链接文件。尽管直接删除链接文件之后，重新新建一个resolve.conf 可以解决问题，但是还是想在根源上解决DNS问题。",
+      "image": null,
+      "publishedAt": "2025-02-06T00:00:00Z",
+      "sourceId": "3f72c6c8a8442f3b",
+      "sourceTitle": "Dolingou",
+      "link": "https://www.dolingou.com/article/how-to-change-dns-in-debian-10",
+      "detailPath": "articles/5623db8033d654046bb77284.json"
+    },
+    {
       "id": "ffddcecb63e136673fd44d7c",
       "title": "政治正確警察",
       "summary": "在美國政府裡面有一個叫做「18F」的部門，它是隸屬於美國聯邦總務署（General Services Administration）之下，主要的工作是幫助其他政府部門處理科技產品相關的事務。",
@@ -648,17 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/roam/on-the-journey-02/",
       "detailPath": "articles/d5778c8d28645c596584da58.json"
-    },
-    {
-      "id": "f75aeecd11b848622523ad18",
-      "title": "你需要用 RSS，不要再拖了",
-      "summary": "每天都在社群媒體上面滑來滑去、覺得消耗生命嗎？演算法一直餵給你智障內容，覺得很煩嗎？你想要戒除社群媒體，但又怕錯過真正有用的資訊嗎？",
-      "image": "https://wiwi.blog/assets/images/freshrss-5c5b1b3a8c5559855b25b36ec1e7211c.jpg",
-      "publishedAt": "2025-01-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/you-should-use-rss",
-      "detailPath": "articles/f75aeecd11b848622523ad18.json"
     }
   ]
 }

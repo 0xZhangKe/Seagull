@@ -176,7 +176,7 @@ def generate_catalog(
                 raise ValueError(f"source ID collision: {identifier}")
             identifiers[identifier] = path
 
-    children = ai_nodes + rss_nodes
+    children = rss_nodes + ai_nodes
     check_ids(children)
     return {"children": children}
 

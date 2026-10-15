@@ -21,16 +21,16 @@ class AiSourcesTest(unittest.TestCase):
     def write(self, items):
         self.config.write_text(json.dumps({"sources": items}))
 
-    def test_ai_sources_precede_opml_roots_and_preserve_timestamps(self):
+    def test_ai_sources_follow_opml_roots_and_preserve_timestamps(self):
         self.write([self.item, {**self.item, "id": "papers", "title": "Papers"}])
         existing = self.root / "catalog.json"
         existing.write_text(json.dumps({"children": [{"type": "ai", "title": "Old",
             "feedPath": "ai/releases.xml", "lastSuccessfulFetchAt": "2026-09-22T00:00:00Z"}]}))
         catalog = generate_catalog(self.opml, existing, self.config)
-        self.assertEqual(["ai", "ai", "category"], [n["type"] for n in catalog["children"]])
-        self.assertEqual(["Releases", "Papers", "Blogs"], [n["title"] for n in catalog["children"]])
-        self.assertEqual("2026-09-22T00:00:00Z", catalog["children"][0]["lastSuccessfulFetchAt"])
-        self.assertNotIn("promptFile", catalog["children"][0])
+        self.assertEqual(["category", "ai", "ai"], [n["type"] for n in catalog["children"]])
+        self.assertEqual(["Blogs", "Releases", "Papers"], [n["title"] for n in catalog["children"]])
+        self.assertEqual("2026-09-22T00:00:00Z", catalog["children"][1]["lastSuccessfulFetchAt"])
+        self.assertNotIn("promptFile", catalog["children"][1])
 
     def test_rejects_unsafe_ids_duplicate_ids_extra_fields_and_bad_prompts(self):
         invalid = [

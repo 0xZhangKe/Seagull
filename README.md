@@ -90,7 +90,7 @@ AI 来源维护在 [`ai_sources.json`](./ai_sources.json)，每个来源仅包�
 - `title` 是阅读端显示标题。
 - `promptFile` 相对于 `ai_sources.json` 所在目录，文件必须位于该目录内，内容为 1–20000 个字符。
 
-配置中的所有 AI 来源按原顺序直接放在 Catalog 顶层，然后接上 OPML 的一级节点，保留 OPML 原有层级。修改标题或 Prompt 不会改变 Feed 路径。删除来源会移除导航，已有 Feed 文件和 Git 历史保留。设置 `"sources": []` 可以停用全部 AI 来源。
+Catalog 顶层先按原顺序放置 OPML 的一级节点并保留其层级，再按配置顺序追加所有 AI 来源，阅读时 RSS 在前、AI 在后。修改标题或 Prompt 不会改变 Feed 路径。删除来源会移除导航，已有 Feed 文件和 Git 历史保留。设置 `"sources": []` 可以停用全部 AI 来源。
 
 [`ai_agent.py`](./scripts/ai_agent.py) 使用 OpenRouter 调用 DeepSeek，提供两个 Tavily 工具：`search_web` 调用 Search，`fetch_pages` 调用 Extract。无需额外 Python 依赖。模型先检索资料，再以 JSON Schema 输出标题、主链接、发布时间、摘要、要点和引用；程序再次校验字段与引用是否出现在本轮检索结果中。引用核对用于防止虚构链接，不能替代对摘要事实的人工核实。
 

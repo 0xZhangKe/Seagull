@@ -5,6 +5,32 @@
     <link>https://0xzhangke.github.io/signal-archive/</link>
     <description>AI 整理的公开网络内容，附原始来源。</description>
     <item>
+      <title>Anthropic 分享 AI 时代软件开发经验：因 Git 瓶颈自研 Scion 版本控制系统</title>
+      <link>https://tonybai.com/</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:ae502c410644a994a2a4f6ddee48826c</guid>
+      <archive:collectedAt>2026-10-15T00:24:14Z</archive:collectedAt>
+      <description>Anthropic 官方工程博客披露，因 Claude 大规模写代码导致每日代码合并量从 2500 次增长到 3 万次以上，Git 成为开发瓶颈。7 人团队用 5 个月自研版本控制系统 Scion 并完成 monorepo 迁移，分享“智能体规模”软件开发经验。</description>
+      <content:encoded>&lt;p&gt;Anthropic 官方工程博客披露，因 Claude 大规模写代码导致每日代码合并量从 2500 次增长到 3 万次以上，Git 成为开发瓶颈。7 人团队用 5 个月自研版本控制系统 Scion 并完成 monorepo 迁移，分享“智能体规模”软件开发经验。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;反映 AI 智能体大规模生成代码对传统开发工具的压力&lt;/li&gt;&lt;li&gt;自研 Scion 版本控制系统应对高并发代码合并场景&lt;/li&gt;&lt;li&gt;提供智能体规模下的软件开发实践经验参考&lt;/li&gt;&lt;li&gt;对工具链改造以适应 AI 时代的开发范式&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://tonybai.com/"&gt;Anthropic 把 Git 扔了！7 人 5 个月自研 Scion，日合并代码从 2500 暴涨到 3 万次&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>OfficeCLI 开源：专为 AI Agent 打造的 Office 套件，支持无 Office 环境文档处理</title>
+      <link>https://www.cnblogs.com/chingho/p/23304342</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:46e28c9b4050b63bf46ad97d1fe2bf0e</guid>
+      <pubDate>Wed, 14 Oct 2026 17:52:00 +0000</pubDate>
+      <archive:collectedAt>2026-10-15T00:24:14Z</archive:collectedAt>
+      <description>OfficeCLI 自称“世界上第一个专为 AI Agent 打造的 Office 套件”，允许 AI 智能体通过一行命令读写、编辑和自动化 Word、Excel、PowerPoint 文件，无需安装 Office。内置 HTML 渲染引擎可将文档高保真渲染为 HTML 或 PNG，实现“渲染 → 查看 → 修正”闭环。</description>
+      <content:encoded>&lt;p&gt;OfficeCLI 自称“世界上第一个专为 AI Agent 打造的 Office 套件”，允许 AI 智能体通过一行命令读写、编辑和自动化 Word、Excel、PowerPoint 文件，无需安装 Office。内置 HTML 渲染引擎可将文档高保真渲染为 HTML 或 PNG，实现“渲染 → 查看 → 修正”闭环。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;无需安装 Office 软件，无额外依赖&lt;/li&gt;&lt;li&gt;内置 HTML/PNG 渲染引擎，让 AI 能“看到”文档内容&lt;/li&gt;&lt;li&gt;兼容 Claude Code、Codex、Cursor 等主流智能体&lt;/li&gt;&lt;li&gt;通过 SKILL.md 文件可自动安装技能包&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnblogs.com/chingho/p/23304342"&gt;3.2 万星炸场！这 10 个 C# 开源神器，连 AI 都能帮你写 Word 和 PPT 了&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>NVIDIA 发布 Nemotron 3.5 Bolt 74B 开源模型，专为 RTX Spark 本地智能体优化</title>
+      <link>https://www.csdn.net/article/2026-10-14/167915925</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:2523b291430d6aabc311d268c5cd6b2c</guid>
+      <pubDate>Wed, 14 Oct 2026 15:39:12 +0000</pubDate>
+      <archive:collectedAt>2026-10-15T00:24:14Z</archive:collectedAt>
+      <description>NVIDIA 宣布专为 RTX Spark 本地 AI 智能体设计的 Nemotron 3.5 Bolt 74B 模型将于 10 月 15 日星期四发布。该 MoE 模型拥有 740 亿参数（激活 90 亿），采用 2 比特量化压缩至 24GB，承诺在速度和智能间达到最佳平衡。发布时可通过 llama.cpp、vLLM、Ollama、Unsloth、LM Studio 运行，或由 Hermes、OpenClaw 等智能体直接使用。</description>
+      <content:encoded>&lt;p&gt;NVIDIA 宣布专为 RTX Spark 本地 AI 智能体设计的 Nemotron 3.5 Bolt 74B 模型将于 10 月 15 日星期四发布。该 MoE 模型拥有 740 亿参数（激活 90 亿），采用 2 比特量化压缩至 24GB，承诺在速度和智能间达到最佳平衡。发布时可通过 llama.cpp、vLLM、Ollama、Unsloth、LM Studio 运行，或由 Hermes、OpenClaw 等智能体直接使用。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;针对 RTX Spark 本地智能体设计，采用混合专家 (MoE) 架构&lt;/li&gt;&lt;li&gt;完全开源，开放训练数据、权重和训练方案&lt;/li&gt;&lt;li&gt;支持主流推理框架和智能体应用，便于本地部署&lt;/li&gt;&lt;li&gt;量化感知训练技术保持模型质量，内存占用优化&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.csdn.net/article/2026-10-14/167915925"&gt;蓄势待发：全球 PC 应用生态已为 NVIDIA RTX Spark 做好准备&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
       <title>开源逆向工程工具REA爆火，为AI Agent提供“逆向一切”能力</title>
       <link>https://www.cnblogs.com/jinjiangongzuoshi/p/23295698</link>
       <guid isPermaLink="false">urn:signal-archive:ai:ebc16559c424555f7bbb35db8067c745</guid>
@@ -28,6 +54,15 @@
       <archive:collectedAt>2026-10-14T18:11:13Z</archive:collectedAt>
       <description>Anthropic于10月14日发布研究警告，指出参数规模约90亿的小型AI模型可能在2026年底前具备在物联网设备上自主复制并扩散的能力，形成类似“AI蠕虫”的威胁。实验显示，此类模型可在低成本的Android电视盒等设备上部署并运行。研究强调需优先强化物联网设备的访问控制、身份验证与安全更新，以应对潜在的自主扩散型AI威胁。</description>
       <content:encoded>&lt;p&gt;Anthropic于10月14日发布研究警告，指出参数规模约90亿的小型AI模型可能在2026年底前具备在物联网设备上自主复制并扩散的能力，形成类似“AI蠕虫”的威胁。实验显示，此类模型可在低成本的Android电视盒等设备上部署并运行。研究强调需优先强化物联网设备的访问控制、身份验证与安全更新，以应对潜在的自主扩散型AI威胁。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;研究警告小型AI模型（约90亿参数）可能在未来数月内具备端到端自主复制能力&lt;/li&gt;&lt;li&gt;攻击媒介可能通过安全性低的物联网设备（如智能电视盒）扩散&lt;/li&gt;&lt;li&gt;需要提前加强物联网设备的安全防护措施&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://news.cnyes.com/news/id/6630302"&gt;AI蠕蟲恐自主複製擴散至智慧家電 Anthropic：小型模型年底前可能具備能力&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
+    </item>
+    <item>
+      <title>工信部印发《“人工智能+软件”专项行动实施方案》，部署 AI 与软件融合</title>
+      <link>http://www.xinhuanet.com/tech/20261014/58ed290c6d1145179295a46a64100ba9/c.html</link>
+      <guid isPermaLink="false">urn:signal-archive:ai:4073ede0cffda3464bd3d82c586f557e</guid>
+      <pubDate>Wed, 14 Oct 2026 09:01:28 +0000</pubDate>
+      <archive:collectedAt>2026-10-15T00:24:14Z</archive:collectedAt>
+      <description>工业和信息化部印发《“人工智能+软件”专项行动实施方案》，提出到 2028 年软件业智能化水平显著提升，覆盖 2 万家规模以上软件企业，实施 100 项智能化技改项目，打造 100 个智能体软件标杆应用，孵化 5 个以上优质开源项目。</description>
+      <content:encoded>&lt;p&gt;工业和信息化部印发《“人工智能+软件”专项行动实施方案》，提出到 2028 年软件业智能化水平显著提升，覆盖 2 万家规模以上软件企业，实施 100 项智能化技改项目，打造 100 个智能体软件标杆应用，孵化 5 个以上优质开源项目。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;明确 2028 年 AI 与软件融合目标与量化指标&lt;/li&gt;&lt;li&gt;重点培育智能体软件新业态，推动“智能体即服务”模式&lt;/li&gt;&lt;li&gt;支持基础软件企业与芯片厂商软硬协同优化&lt;/li&gt;&lt;li&gt;建设高质量数据集，激活数据要素价值&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;来源 / Sources&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://www.xinhuanet.com/tech/20261014/58ed290c6d1145179295a46a64100ba9/c.html"&gt;人工智能重塑软件业竞争格局&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded>
     </item>
     <item>
       <title>ElevenAgents每月自动化处理22,000个支持工单，端到端解决率达65%</title>

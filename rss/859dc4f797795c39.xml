@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://blog.linyuchin.com</id>
   <title>蟬噪林愈靜</title>
-  <updated>2026-10-15T08:23:21.233997+00:00</updated>
+  <updated>2026-10-15T11:30:36.555324+00:00</updated>
   <author>
     <name>linyuchin</name>
   </author>
@@ -10,6 +10,123 @@
   <link href="https://blog.linyuchin.com/feed/" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>太空旅行時代來臨前的人類記錄</subtitle>
+  <entry>
+    <id>https://blog.linyuchin.com/eye-test/</id>
+    <title>視力測驗的故事</title>
+    <updated>2026-10-15T11:12:44.215390+00:00</updated>
+    <author>
+      <name>linyuchin</name>
+      <email>hidden</email>
+    </author>
+    <content type="html">&lt;p&gt;突然想起一個故事。&lt;/p&gt;
+&lt;p&gt;國小高年級到國中左右應該是最多身旁同學一個個戴上眼鏡的時候。而我一直有一個關於在學校量身高體重時做視力測驗的記憶：&lt;/p&gt;
+&lt;p&gt;場景是在每學年全班一起去量一次身高體重的保健室。有戴眼鏡矯正視力的人，在用測視力的上下左右搖桿機器時需要測兩次，一次裸視、一次戴眼鏡。&lt;/p&gt;
+&lt;p&gt;更早以前是沒有機器的，保健室阿姨或眼科醫師會給人一支黑色的「湯匙」遮一邊眼睛，要坐在固定距離以外回答海報上的符號上下左右。不過機器測量確切是在什麼時候開始引進的也不重要，對大家來說，重要的是量身高體重是少數大家能一起長時間離開教室的機會。畢竟在教室內是要保持無聊和沉悶的，到走廊上排隊則相反。&lt;/p&gt;
+&lt;p&gt;扯遠了。&lt;/p&gt;
+&lt;p&gt;那時在保健室，跟等著成群結隊回教室的同學們在旁聊天。其中一個同學一邊繼續接著話，一邊坐到機器前面準備開測。&lt;/p&gt;
+&lt;p&gt;在裸視測第一回的時候，他每切換一次符號，就會冒出「白癡喔！太小看不到啦！」或是「等等，讓我觀察觀察～」之類的幹話。數次之後，機器另一邊的保健室阿姨說「好，把眼鏡戴起來。」&lt;/p&gt;
+&lt;p&gt;接著他移開原本靠著機器的臉、戴上眼鏡、靠回機器。&lt;/p&gt;
+&lt;p&gt;他按下按鍵，開始用遊玩 Tetris Battle&lt;sup class="footnote-ref" id="fnref-1"&gt;&lt;a href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt; 按上下左右的速度推著搖桿。安靜下來大約三秒後，突然他大聲喊出：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「哈哈！我無敵啦！」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以說會發出「請眼看視窗、手握搖桿。」語音提示的視力測驗機器，應該也可以算是一種 arcade 遊戲主機。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;註：&lt;/p&gt;
+&lt;section class="footnotes"&gt;
+&lt;ol&gt;
+&lt;li id="fn-1"&gt;&lt;p&gt;&lt;a href='https://zh.wikipedia.org/wiki/Tetris_Battle'&gt;Tetris Battle&lt;/a&gt; 是當時在 Facebook 上可以遊玩的俄羅斯方塊對戰遊戲。在我國小的時代很流行，並且很有可能是讓大家近視的元兇。&lt;del&gt;怎麼又是你啊，祖克柏&lt;/del&gt;&lt;a href="#fnref-1" class="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+    <link href="https://blog.linyuchin.com/eye-test/"/>
+    <published>2026-10-15T11:12:44.215397+00:00</published>
+  </entry>
+  <entry>
+    <id>https://blog.linyuchin.com/capslock-remap/</id>
+    <title>活用大寫鎖定鍵</title>
+    <updated>2026-10-15T10:40:56.084442+00:00</updated>
+    <author>
+      <name>linyuchin</name>
+      <email>hidden</email>
+    </author>
+    <content type="html">&lt;p&gt;活用 &lt;kbd&gt;CapsLock&lt;/kbd&gt; 鍵，把本來的大寫鎖定功能改掉，換成按一下時是 &lt;kbd&gt;Esc&lt;/kbd&gt;，按住時是 &lt;kbd&gt;Ctrl&lt;/kbd&gt;。&lt;br /&gt;
+以下是我設定的方式，都是很簡單就可以做到的。&lt;/p&gt;
+&lt;h2 id=linux&gt;Linux&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安裝 &lt;a href='https://github.com/rvaiya/keyd'&gt;keyd&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打開 keyd 的 &lt;ruby&gt;config file&lt;rt&gt;設定檔&lt;/rt&gt;&lt;/ruby&gt;，位置在&lt;code&gt;/etc/keyd/default.conf&lt;/code&gt;（沒有的話可以自己新增），並在裡面複製貼上這個：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[ids]&lt;/span&gt;
+&lt;span class="na"&gt;*&lt;/span&gt;
+
+&lt;span class="k"&gt;[main]&lt;/span&gt;
+&lt;span class="na"&gt;capslock&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;overload(control, esc)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;啟動 keyd：打開終端機，執行以下啟動指令&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;systemctl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;keyd&lt;span class="w"&gt; &lt;/span&gt;--now
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;（&lt;code&gt;enable&lt;/code&gt; 改 &lt;code&gt;disable&lt;/code&gt; 就是關閉，如果某天改變心意想要改回來的話）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;完成&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;以後如果還有改動設定檔的話，可以執行這個 reload 指令來讓設定檔套用&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;keyd&lt;span class="w"&gt; &lt;/span&gt;reload
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=macintosh&gt;Macintosh&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安裝 &lt;a href='https://karabiner-elements.pqrs.org/docs/getting-started/installation/'&gt;Karabiner-Elements&lt;/a&gt; 然後打開來設定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;點擊 Complex Modifications 這個分頁，然後按 Add your own rule&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;拷貝貼上這個：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;caps lock 按一下是 esc，按住是 control&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;manipulators&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;from&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;key_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;caps_lock&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;modifiers&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;optional&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;any&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;to&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;key_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;left_control&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;lazy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;to_if_alone&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;key_code&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;escape&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}],&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;basic&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;點 Save 完成&lt;br /&gt;
+（在這條新增好的 rule 上會有個開關可以點，想關閉的話切到關就可以了）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;按照內建的方式，點 &lt;kbd&gt;control&lt;/kbd&gt; + &lt;kbd&gt;space&lt;/kbd&gt; 或最左下角的 &lt;kbd&gt;🌐️ fn&lt;/kbd&gt; 也可以切換輸入法。實際上這兩種方式也比較不容易誤觸。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=windows&gt;Windows&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;至於如果你用的系統不是 Linux 的話，我只能說：你難道不知道&lt;a href='https://wiwi.blog/blog/pianist-using-linux/'&gt;連鋼琴師都用 Linux&lt;/a&gt; 嗎？&lt;br /&gt;
+──出自蒕的〈&lt;a href='https://e89295.com/blog/2026-01-24.html'&gt;我覺得 Compose 鍵很好&lt;/a&gt;〉&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;抱歉，我現在沒有 Windows 電腦，不過稍微搜尋一下「capslock key remap on windows」應該也可以找到很多資料，比如這個叫做 &lt;a href='https://learn.microsoft.com/en-us/sysinternals/downloads/ctrl2cap'&gt;Ctrl2Cap&lt;/a&gt; 的東東。&lt;/p&gt;
+&lt;h2 id=&gt;補充&lt;/h2&gt;&lt;p&gt;這個設定我已經用大概三、四年，現在也已經習慣了。&lt;/p&gt;
+&lt;p&gt;當時決定這麼改的起因是發現 MacBook 鍵盤上 &lt;kbd&gt;caps lock&lt;/kbd&gt; 功能和普遍 Windows 電腦不同。本來想把 Linux &lt;a href='https://wancat.cc/post/capslock/'&gt;改成跟 Mac 一樣&lt;/a&gt;，但查了一些資料後發現實際上 Linux、Macintosh、Windows 都能 &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;space&lt;/kbd&gt; 切換輸入法。基於希望盡量使用廣泛的、通用的標準來減少麻煩的原則，本來的打算也轉了個髮夾彎。&lt;/p&gt;
+&lt;p&gt;有趣的是在去日本旅遊的時候發現到原來 &lt;a href='https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXCL3J?wid=1144&amp;hei=1144&amp;fmt=jpeg&amp;qlt=90&amp;.v=UjZHMUMyYjRwVGtaUWVlS1hBazlIakxJNzJtbW9WRzBUckZ4SDR0aldyMFY0ZGtxRm5nMGhUUUYyQ1NONFVVUmpoUUZmSUZodTNKQUtGWkFncDNsdGc'&gt;JIS 排列的 Apple 鍵盤&lt;/a&gt; 和 &lt;a href='https://hhkb.io/layout/'&gt;HHKB 鍵盤&lt;/a&gt; 也都是把 &lt;kbd&gt;Ctrl&lt;/kbd&gt; 放在這個位置。&lt;/p&gt;
+&lt;p&gt;前幾天我的 CachyOS 在全系統更新並重新開機後變成一片黑，進不到登入畫面。又，大概一兩年前聽說 Arch Linux 現在變很容易安裝，於是藉這次全部重新安裝和設定複習，順便記錄下來。還搜尋到好幾個同樣覺得 &lt;kbd&gt;CapsLock&lt;/kbd&gt; 該改掉的人類：&lt;a href='https://tux24.xyz/articles/a-few-advices-for-time-saving/'&gt;tux24&lt;/a&gt;、&lt;a href='https://blog.yorkxin.org/posts/ergonomic-control-key/'&gt;Yorkxin&lt;/a&gt;、&lt;a href='https://blog.giveanornot.com/mechanical-keyboard/'&gt;JN&lt;/a&gt;、&lt;a href='https://wiwi.blog/blog/caps-lock'&gt;Wiwi&lt;/a&gt;、&lt;a href='https://jmln.tw/blog/2020-02-05-caps-lock-as-ctrl.html'&gt;Jimmy Lin&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;雖然幾乎是沒有情節連續上的關聯，不過這篇好像姑且可以當成&lt;a href='https://blog.linyuchin.com/capslock/'&gt;大寫鎖定鍵&lt;/a&gt;的某種續集。&lt;/p&gt;
+&lt;h2 id=-1&gt;參考資料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://github.com/rvaiya/keyd'&gt;keyd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://gist.github.com/tanyuan/55bca522bf50363ae4573d4bdcf06e2e'&gt;tanyuan/smart-caps-lock.md - GitHub Gist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 Arch Wiki 的&lt;a href='https://wiki.archlinux.org/title/Input_remap_utilities'&gt;輸入重映射工具&lt;/a&gt;也收錄有許多可以做到同樣效果的程式&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://blog.linyuchin.com/capslock-remap/"/>
+    <published>2026-10-15T08:48:00+00:00</published>
+  </entry>
   <entry>
     <id>https://blog.linyuchin.com/manzoo-font-finder/</id>
     <title>曼努的字型搜尋引擎</title>
@@ -317,63 +434,5 @@
 </content>
     <link href="https://blog.linyuchin.com/herman-replied/"/>
     <published>2026-01-20T14:23:00+00:00</published>
-  </entry>
-  <entry>
-    <id>https://blog.linyuchin.com/saying-thank-you/</id>
-    <title>說謝謝</title>
-    <updated>2026-01-19T17:39:15.241298+00:00</updated>
-    <author>
-      <name>linyuchin</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;有位朋友曾經跟我分享他有個（忘了國小、國中還是高中）老師說過一個觀念，一個聽起來 &lt;em&gt;好像邏輯上沒有問題&lt;/em&gt; ，但我們卻難以接受的觀念：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不應該在下公車的時候跟公車司機說謝謝，因為載客人&lt;strong&gt;本來就是&lt;/strong&gt;公車司機的工作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我不同意，我這位朋友也不同意。&lt;/p&gt;
-&lt;p&gt;就跟多數人一樣，從小我也被家人教育：在接受了他人的服務或付出之後，要說謝謝。不管是上下公車時嗶卡、上學時導護阿姨或導護叔叔「顧路」協助下過馬路，或是在便利商店店員結完帳的時候都是。在我還是個小型人類的時候，我對「說謝謝」並沒有什麼複雜想法──只要別人對自己好或表現幫助的意思，就說謝謝。&lt;/p&gt;
-&lt;p&gt;這很簡單，而且從心中自然浮現的感謝之情也是在小時候這樣一次一次的練習中，慢慢體會到、漸漸內化進價值觀的。&lt;/p&gt;
-&lt;p&gt;雖然未曾見過那位老師，也不曉得他說出這句話時的前後文是什麼，不過從轉述中得知那位老師似乎不只一次向學生傳達這樣的想法（也有「不該向結帳的店員道謝、不該向餐廳裡上菜的服務生道謝」之類的照樣造句）。而我則從這樣的轉述推測，這位老師似乎很把這個信念當成一種「正義感」，才會一再向學生推廣。&lt;/p&gt;
-&lt;p&gt;因為跟自己的想法差異實在太大，我從第一次聽說之後就很在意，也常常思索自己到底出於什麼原因對這種觀點感到排斥。&lt;/p&gt;
-&lt;p&gt;不論如何，現在的我依然覺得說謝謝不需要計較雙方付出多或少、是否得到合理的報酬交換，也跟付出辛勞的人怎麼看待自己的付出無關。重點在於想說謝謝的人得以表達心中的感恩，而至於接受謝意者怎麼反應，則應該是另一回事。&lt;/p&gt;
-&lt;p&gt;我想我們應該向小型人類學習，因為這世界不知道有什麼毛病，讓事情在人類成長之後常常整個走歪掉。&lt;/p&gt;
-</content>
-    <link href="https://blog.linyuchin.com/saying-thank-you/"/>
-    <published>2026-01-19T09:06:00+00:00</published>
-  </entry>
-  <entry>
-    <id>https://blog.linyuchin.com/maybe/</id>
-    <title>應該</title>
-    <updated>2026-03-22T16:30:26.416476+00:00</updated>
-    <author>
-      <name>linyuchin</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;「什麼叫 &lt;strong&gt;應該吧&lt;/strong&gt;？有就有、沒有就沒有！&lt;strong&gt;應該吧&lt;/strong&gt; 是有還是沒有？」&lt;br /&gt;
-──某些愛生氣的人類&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我們時常被要求做任何事都要精準、有效率、不要模糊、不能猶豫。因為沒什麼討論空間好保留的；因為要就是要，不要就是不要。&lt;/p&gt;
-&lt;h2 id=&gt;ㄏ老師&lt;/h2&gt;&lt;p&gt;國中時有表藝課，在某一段期間，我們班因為原本的表藝老師請長假，由另一位言辭犀利的ㄏ老師代課。ㄏ老師和同學對話時總是原則清晰、實事求是。有幾次從旁聽見ㄏ老師跟同學講話，我都默默擔心他們會自尊心受傷，或是之後會有什麼嚴重的後續發生（像是家長突然來學校找人算帳之類的）。即使偶爾還是會有老師在同學們面前勸說，但ㄏ老師一貫的作風從未改變。&lt;/p&gt;
-&lt;p&gt;雖然也不到「尖酸刻薄」的程度，但老師稜角銳利的談吐風格在我們熟悉的華人社會中絕對稱不上常見。在隔壁班有ㄏ老師的課時，我們不時會聽到「30 分。下一組請上台。」或是「沒什麼好哭的，自己去外面走廊哭完再進來。 &lt;strong&gt;下一組──&lt;/strong&gt;」&lt;/p&gt;
-&lt;p&gt;在我印象中，即使在隔好幾間教室的距離外，即使是下課時間吵鬧的走廊，只要有股凝重的氣息在空氣中擴散開，大家就能在毫秒之間猜到是誰來了。&lt;/p&gt;
-&lt;h2 id=-1&gt;好詞&lt;/h2&gt;&lt;p&gt;某次，我被老師點名回答問題。雖然心理很緊張，但還是故作鎮定的回答了一個以「應該是…」開頭的答案。&lt;/p&gt;
-&lt;p&gt;當然，一注意到自己用了一個很沒信心的詞時，我：「完了，這回答不好。」&lt;/p&gt;
-&lt;p&gt;接著，老師果然放大了音量回應：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「&lt;strong&gt;大家注意&lt;/strong&gt;，他剛剛用了一個很好的詞彙叫做『應該』。這表達的是&lt;strong&gt;不確定&lt;/strong&gt;，大家請學起來。&lt;strong&gt;記得&lt;/strong&gt;，這是一個很好的詞，要好好善用它。」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;原本的問題是什麼我早就忘了，但當下除了愣住之外，也還有點懷疑老師是不是在說反話。&lt;/p&gt;
-&lt;p&gt;接下來一整天（其實是三整天），大腦中重播了數十次老師對我講這段話的表情。但一次次回想當時的表情和眼神之下，我卻越來越確定這段語氣慎重、像是告誡的話，並不是諷刺。&lt;/p&gt;
-&lt;p&gt;老師說這段話時放慢速度、眼神認真，這是他跟同學談嚴肅話題時的節奏。他沒在亂講。&lt;/p&gt;
-&lt;h2 id=-2&gt;影響&lt;/h2&gt;&lt;p&gt;之後，這件事常常被我回想起來。國中、高中、大學、大學出去打工，在各種場合只要被問問題，或被提醒要避免使用帶有不確定性的詞彙，我都會再次想起這段記憶。&lt;/p&gt;
-&lt;p&gt;直到現在，即使是聽到別人被提醒類似的話，我也會自己默默的在想法中跟自己說：「不是這樣子，『應該』這個詞不該是個永遠只能被拒絕的表達方式。」&lt;/p&gt;
-&lt;p&gt;我認為沒有道理因為一個人說了「應該」，就把他的能力全面否定掉。&lt;/p&gt;
-&lt;h2 id=-3&gt;但這樣說很不專業&lt;/h2&gt;&lt;p&gt;確實。&lt;/p&gt;
-&lt;p&gt;我當然知道說話要看場合說，但我也相信如果一個人足夠專業、有自信，那他應該不會介意自己對某些事情不確定或是不知道。也許我們可以很貪心的期待世上的一切都有標準答案，可是真實的世界裡，我們不可能真的&lt;strong&gt;知道一切的事&lt;/strong&gt;。這樣又怎麼能要求一個人類要對每一個問題的回答都有把握呢？&lt;/p&gt;
-&lt;p&gt;一個厲害的人，大概不會需要為了「展現專業」而替自己的發言加上這種奇怪的言論審查。他們的實力，不是建立在「堅持對每個問題給出肯定的答案」這種表面上。一個厲害的人，反而很可能因為一直在深入自己感興趣的領域、拓展知識的邊界、探索未知，使他們對一切知識都懷有謙遜之心，允許不確定性存在，並且時常抱著「還有很多需要學習」的心態，&lt;a href='https://zh.wikiquote.org/wiki/%E8%98%87%E6%A0%BC%E6%8B%89%E5%BA%95'&gt;知道自己不知道&lt;/a&gt;。&lt;/p&gt;
-</content>
-    <link href="https://blog.linyuchin.com/maybe/"/>
-    <published>2026-01-12T06:36:00+00:00</published>
   </entry>
 </feed>

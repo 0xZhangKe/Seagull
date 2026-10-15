@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.jetbrains.com/kotlin/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.jetbrains.com</link>
 	<description>Developer Tools for Professionals and Teams</description>
-	<lastBuildDate>Thu, 15 Oct 2026 06:45:36 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 15 Oct 2026 09:11:44 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,950 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>What Makes a Great KotlinConf Proposal?</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/what-makes-a-great-kotlinconf-proposal/</link>
+		
+		<dc:creator><![CDATA[Jelena Ilic]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 09:11:39 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/Blog-Post.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[kotlinconf]]></category>
+		<category><![CDATA[kotlinconf-2027]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=745924</guid>
+
+					<description><![CDATA[The KotlinConf 2027 Call for Papers is now open! We invite developers from across the Kotlin community to bring their ideas, experiences, and expertise to the stage in Kraków. Do you have a Kotlin lesson or discovery that could help other developers? Perhaps you solved a difficult technical problem, introduced Kotlin into an existing codebase, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The KotlinConf 2027 Call for Papers is now open! We invite developers from across the Kotlin community to bring their ideas, experiences, and expertise to the stage in Kraków.</p>
+
+
+
+<p>Do you have a Kotlin lesson or discovery that could help other developers? Perhaps you solved a difficult technical problem, introduced Kotlin into an existing codebase, built something unexpected, or learned valuable lessons from an approach that did not go according to plan.</p>
+
+
+
+<p>That experience could become a KotlinConf talk.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" title="Submit your KotlinConf2027 proposal" href="https://sessionize.com/kotlinconf-2027" target="_blank" rel="noopener">Submit your proposal</a></p>
+
+
+
+<p>However, turning an idea into a convincing conference proposal can be challenging, especially if you’ve never submitted one before. How do you know whether your experience is worth sharing? What do reviewers notice first? How detailed should your abstract be? And how can you make a familiar topic stand out?</p>
+
+
+
+<p>To help you prepare your submission, we asked Kotlin developers, developer advocates, experienced speakers, and KotlinConf program committee members what makes a strong proposal. Alongside practical advice for shaping your title, abstract, and takeaways, we have added a new section answering an especially important question: What do reviewers notice first when they open a proposal?</p>
+
+
+
+<h2 class="wp-block-heading">First-time speaker? Submit your idea anyway!</h2>
+
+
+
+<p>It’s easy to assume that a KotlinConf talk must begin with a groundbreaking discovery, a major production system, or years of speaking experience. In reality, a valuable talk can begin with a simple idea or a lesson learned while solving an everyday development problem.</p>
+
+
+
+<p>You don’t need to know everything about Kotlin – you need something useful to share and a clear idea of who it could help.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Submit your idea anyway! There have been some wildly successful talks at KotlinConf that started out as just a simple idea.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>If you’re unsure whether your topic would interest anyone, discuss it with the people around you. Explain the idea to colleagues, friends, members of a user group, or people in the Kotlin community. Their questions and reactions can help you understand which parts are most valuable.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">If you can find one interested person, there are probably more! If you can find at least two people around you who find the topic interesting and can listen for more than five minutes, it is already a decent candidate.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Previous conference experience is not required. A clear, authentic proposal based on something you understand and care about can be more compelling than a polished proposal with little substance behind it.</p>
+
+
+
+<h2 class="wp-block-heading">Start with the story you want to tell</h2>
+
+
+
+<p>Before writing the title or opening the submission form, identify the central story behind your talk.</p>
+
+
+
+<p>“A talk about coroutines” or “a session about Kotlin Multiplatform” describes a subject, but it doesn’t explain what makes the session valuable.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>What problem, question, or opportunity did you encounter?</li>
+
+
+
+<li>Why was it important or difficult?</li>
+
+
+
+<li>What did you try?</li>
+
+
+
+<li>What surprised you?</li>
+
+
+
+<li>What succeeded and what did not?</li>
+
+
+
+<li>What did you learn that other developers could apply?</li>
+</ul>
+
+
+
+<p>Your story doesn’t need to come from a large company or a system used by millions of people. A focused lesson from a small project can be just as useful if it offers an original insight or explains a difficult subject clearly.</p>
+
+
+
+<p>Try summarizing the idea in one sentence, for example:</p>
+
+
+
+<p><em>This talk will show [audience] how we [solved or explored something], what we learned, and how they can apply those lessons.</em></p>
+
+
+
+<p>If you can’t complete that sentence clearly, the idea may need a little more development before you start writing the proposal.</p>
+
+
+
+<h2 class="wp-block-heading">What do reviewers notice first?</h2>
+
+
+
+<p>The title may be the first line reviewers read, but the overall level of care quickly becomes visible.</p>
+
+
+
+<p>Reviewers consider not only whether the topic is interesting, but also whether the speaker can explain it clearly. A thoughtful title, focused description, concrete takeaways, and careful formatting show that you have spent time developing your idea.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">I can sum it up by saying that the care you take in writing the proposal is probably more obvious than people think. If I can see that you took the time to come up with a catchy or descriptive title that works well with the content, I am more comfortable giving you a thumbs-up to speak at KotlinConf. If your description is so short or so long, or so clearly AI-generated, that you cannot express your idea clearly and neatly, I will probably not vote positively for your talk.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>This doesn’t mean you need to use complicated language or create a perfect marketing pitch. It means giving reviewers enough information to understand your idea and showing that the proposal represents your own experience and voice.</p>
+
+
+
+<p>Marcin Moskała’s <em>Taming Asynchronous Beasts: Debugging and Performance Tuning in a Coroutine World</em> provides a good example of a precise promise: “You’ll learn how to effectively use built-in tools, recognize problematic patterns, and implement proven optimization strategies.”</p>
+
+
+
+<h2 class="wp-block-heading">Write a clear and informative title</h2>
+
+
+
+<p>A strong title should give reviewers, and eventually attendees, an accurate idea of what the talk will cover.</p>
+
+
+
+<p>Creativity can make a title memorable, but clarity should come first. Avoid titles that rely entirely on a joke, reference, or metaphor without explaining the subject.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">A carefully-selected title can make all the difference! Audience members often lack the time or attention span to read more than the title when deciding whether to attend a talk. Prefer clarity over a catchy or fun title that doesn’t give a good idea of what the talk is about in a nutshell.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Compare the following title examples:</p>
+
+
+
+<p>Too broad:<br><em>Our Multiplatform Journey</em></p>
+
+
+
+<p>More informative:<br><em>What We Learned Migrating Our Mobile App to Kotlin Multiplatform</em></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Too vague:<br><em>Coroutines Gone Wild</em></p>
+
+
+
+<p>More informative:<br><em>Debugging Coroutine Performance Problems in Production</em></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Too general:<br><em>Building Better APIs</em></p>
+
+
+
+<p>More informative:<br><em>Designing Type-Safe Kotlin APIs That Are Difficult to Misuse</em></p>
+
+
+
+<p>A good title usually communicates at least two of the following:</p>
+
+
+
+<ul class="wp-block-list">
+<li>The main topic</li>
+
+
+
+<li>The problem or question</li>
+
+
+
+<li>The context in which it was explored</li>
+
+
+
+<li>The practical benefit for attendees</li>
+
+
+
+<li>The expected experience level</li>
+</ul>
+
+
+
+<p>You can still use humor or wordplay, but make sure the title does not hide what the session is actually about.</p>
+
+
+
+<h2 class="wp-block-heading">Build your abstract around a clear journey</h2>
+
+
+
+<p>Your abstract doesn’t need to contain your entire presentation. However, it should provide enough detail for reviewers to understand the problem, the direction of the talk, and its value.</p>
+
+
+
+<p>Two or three focused paragraphs will usually communicate more than either a single vague sentence or a very long description covering every detail.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/sebastian.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Sebastian Sellmair. Software Developer and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/Sellmair">X</a>, <a href="https://bsky.app/profile/sellmair.dev" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.youtube.com/@s.sellmair" target="_blank" rel="noopener">YouTube </a></p>
+<p><i><span style="font-weight: 400;">Talking at KotlinConf is a great experience and a huge achievement for any Kotlin developer. While choosing a great title, having highly polished animations, and curating high-quality memes might enhance your talk, the most important thing is having a story worth telling. Do you have something novel and technically interesting to present? Can you break down a topic in a way that is engaging and truly fun? Can you inspire fellow developers?</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn </a></p>
+<p><i><span style="font-weight: 400;">While we don’t need a full script for your talk as the abstract, we’re also unlikely to accept a talk where the abstract is just a single sentence. Two or three paragraphs are usually enough to provide meaningful detail.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>A simple structure can help:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The context</strong></h3>
+
+
+
+<p>Introduce the situation and the audience likely to recognize it.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The challenge</strong></h3>
+
+
+
+<p>Explain the problem, limitation, or question that motivated the work.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/jodie.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Jodie Burchell. Developer Advocate and Data Scientist</h4>
+                                                <p><a href="https://www.linkedin.com/in/jodieburchell" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://fosstodon.org/@t_redactyl" target="_blank" rel="noopener">Mastodon</a>, <a href="https://bsky.app/profile/t-redactyl.bsky.social" target="_blank" rel="noopener">BlueSky</a></p>
+<p><i><span style="font-weight: 400;">Hook your audience by telling them the problem you’re going to be solving. People love mystery books for a reason, and that’s because they build up a bit of suspense before they jump into the solution. A great proposal will do the same thing.</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h3 class="wp-block-heading"><strong>The approach</strong></h3>
+
+
+
+<p>Describe what you explored, implemented, compared, or discovered.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The outcome</strong></h3>
+
+
+
+<p>Clarify what attendees will learn and how they can use it.</p>
+
+
+
+<p>A strong takeaway can be as concrete as the one from Tadeas Kriz’s <em>Dependencies and Kotlin/Native</em>: “Learn how native dependencies interact, how they are loaded, and the unexpected complexities of the native world.”</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains </h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Avoid vague promises. Instead, use action verbs and specific outcomes to describe the exact capabilities and transformations the audience will gain. Will they leave your talk feeling that their time was well spent? If so, what practical knowledge, immediately applicable skills, or high-value tools will they take with them?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>For example:</p>
+
+
+
+<p><em>Maintaining separate Android and iOS implementations allowed our teams to move independently, but it also resulted in duplicated business logic and inconsistent behavior between the applications.</em></p>
+
+
+
+<p><em>In this session, we’ll examine how we introduced Kotlin Multiplatform gradually, beginning with one shared feature rather than attempting a complete migration. We’ll discuss how we selected the first component, structured the shared code, tested it across platforms, and worked with the existing native applications.</em></p>
+
+
+
+<p><em>You’ll leave with a practical framework for evaluating where to introduce shared code, which challenges to expect, and how to plan an incremental Kotlin Multiplatform adoption without rebuilding your entire application.</em></p>
+
+
+
+<p>The example establishes the problem, explains what the session will cover, and gives the audience a reason to attend. It doesn’t reveal every detail, but it makes a concrete promise.</p>
+
+
+
+<h2 class="wp-block-heading">Think like an attendee</h2>
+
+
+
+<p>A strong proposal doesn’t focus only on what the speaker wants to present. It also explains what the audience will gain.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Who is this session for?</li>
+
+
+
+<li>What knowledge should attendees already have?</li>
+
+
+
+<li>What problem will the talk help them solve?</li>
+
+
+
+<li>What will they understand or be able to do afterward?</li>
+
+
+
+<li>Why should they choose this session over another talk happening at the same time?</li>
+</ul>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/svetlana.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Svetlana Isakova. Team Lead in Kotlin Developer Advocacy, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/sveta_isakova">X</a></p>
+<p><i><span style="font-weight: 400;">When submitting a talk, think like an attendee. Would you want to sit through this? What’s in it for the audience? That’s why we ask about key takeaways. What do you want people to learn, try, do, or feel inspired by?</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Avoid broad promises such as:</p>
+
+
+
+<ul class="wp-block-list">
+<li>“You will learn best practices.”</li>
+
+
+
+<li>“We will explore Kotlin Multiplatform.”</li>
+
+
+
+<li>“This talk will cover coroutines.”</li>
+</ul>
+
+
+
+<p>Instead, describe specific outcomes:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Attendees will learn how to identify and debug three common coroutine performance problems.</li>
+
+
+
+<li>Attendees will understand how we structured shared code across Android and iOS.</li>
+
+
+
+<li>Attendees will be able to evaluate whether the approach fits their own project.</li>
+
+
+
+<li>Attendees will learn which parts of our migration worked, which did not, and what we would change today.</li>
+</ul>
+
+
+
+<p>Specific takeaways make the proposal easier to evaluate. If the talk is selected, they also help attendees decide whether it is relevant to them.</p>
+
+
+
+<h2 class="wp-block-heading">Make a familiar topic feel fresh</h2>
+
+
+
+<p>Your subject doesn’t have to be completely new. Many valuable conference talks revisit established technologies from perspectives that have not been explored in the same way before.</p>
+
+
+
+<p>If you are proposing a popular topic, identify what makes your version distinctive. This could be:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A real production case</li>
+
+
+
+<li>An unusual scale or environment</li>
+
+
+
+<li>A surprising result</li>
+
+
+
+<li>A failed approach and what it taught you</li>
+
+
+
+<li>A comparison between several possible solutions</li>
+
+
+
+<li>A gradual migration rather than a greenfield implementation</li>
+
+
+
+<li>An unconventional use of Kotlin</li>
+
+
+
+<li>A personal experience that challenges a common assumption</li>
+
+
+
+<li>A particularly clear way of explaining a difficult concept</li>
+</ul>
+
+
+
+<p>For example, “Introduction to Kotlin Multiplatform” is broad and familiar. “What Broke When We Introduced Kotlin Multiplatform Into a Seven-Year-Old Mobile App” offers a specific context and creates curiosity.</p>
+
+
+
+<p>Be honest about trade-offs. A talk doesn’t need to present a flawless success story. Explaining what failed, what changed, and what you would do differently can be especially useful to other developers.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains </h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Bringing a real, practical narrative to a familiar topic can strengthen a proposal. Be honest about what broke, what made your team unhappy, or what you would do differently if you could turn back the clock. A familiar issue can feel fresh when you look at it from the perspective of someone who will encounter the same problem for the first time tomorrow.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Rather than providing another general overview, build the talk around one specific pain point or discovery and introduce broader themes only where they support that story. A takeaway that attendees can immediately apply to their work can also help distinguish the proposal from a basic tutorial.</p>
+
+
+
+<h2 class="wp-block-heading">Keep the proposal relevant to KotlinConf</h2>
+
+
+
+<p>KotlinConf welcomes talks about backend development, Android, multiplatform development, web, desktop, AI, language design, tooling, libraries, developer experience, and other parts of the Kotlin ecosystem.</p>
+
+
+
+<p>Whatever your area, the role Kotlin plays in the story should be clear.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Keep in mind that your talk should be related to Kotlin! For example, not every Android talk is necessarily a good fit for the KotlinConf audience. Or talks about Jetpack Compose often cover things that work the exact same way with Compose Multiplatform, and the latter is much more likely to be accepted at KotlinConf!</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>An Android topic, for example, is not automatically a KotlinConf topic. The proposal becomes more relevant when it explains how Kotlin influenced the solution, explores a Kotlin-specific technical decision, or provides lessons that Kotlin developers can apply.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Why is this a Kotlin story?</li>
+
+
+
+<li>Which parts of the experience are especially relevant to Kotlin developers?</li>
+
+
+
+<li>Would the proposal still be essentially the same if Kotlin were removed from it?</li>
+</ul>
+
+
+
+<p>If the answer to the final question is yes, strengthen the connection to Kotlin before submitting.</p>
+
+
+
+<p>Anshika Koul’s <em>Kotlin Multiplatform’s Cross-Platform Brilliance at Norway’s 377-Year-Old National Postal Service</em> offers a clear example of a Kotlin-centered takeaway: “We’ll learn how KMP provides a unified framework for code sharing and execution across various platforms to solve the challenge of different codebases targeting different runtimes.”</p>
+
+
+
+<h2 class="wp-block-heading">Sound confident, but stay true to yourself</h2>
+
+
+
+<p>Your proposal should show that you understand what you want to share and why it matters.</p>
+
+
+
+<p>This doesn’t mean exaggerating your expertise or pretending that you have no doubts. It means presenting the idea as a clear statement rather than repeatedly questioning its value.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Keep statements as statements and questions as questions. It is normal to doubt yourself; everybody does, but a common mistake is to let it show in the text, for example, by changing statements into questions. Read your submission, or even better, ask someone else to read it, and ask yourself: Does this person sound convinced about what they want to tell?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>For example:</p>
+
+
+
+<p>Uncertain:<br><em>Could Kotlin Multiplatform possibly help teams reduce duplicated business logic? In this talk, we might find out.</em></p>
+
+
+
+<p>More confident:<br><em>In this talk, I’ll show how our team used Kotlin Multiplatform to reduce duplicated business logic, including where sharing code helped and where it did not.</em></p>
+
+
+
+<p>Confidence should not erase your personality. The proposal should still sound like you.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Stay true to yourself! It is important to make sure that your submission can be understood by others. A great practice is to give it to a few people you trust and ask what they understood from it and how it made them feel. However, keep your soul in it. A lot of great talks are quirky, do not follow every best practice, and people are there for it.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Advice and templates can help you organize your thoughts, but they shouldn’t make every proposal sound identical. Your perspective, language, humor, and enthusiasm are part of what makes the submission memorable.</p>
+
+
+
+<h2 class="wp-block-heading">Show reviewers how you communicate</h2>
+
+
+
+<p>Examples of previous talks help reviewers understand your presentation style and energy. If you have recordings from conferences, meetups, webinars, or livestreams, include the most relevant ones.</p>
+
+
+
+<p>If you’re a first-time speaker and don’t have a formal recording, you can record yourself explaining part of the proposed talk. A simple laptop recording is enough. It doesn’t need professional lighting, editing, or production.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/svetlana.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Svetlana Isakova. Team Lead in Kotlin Developer Advocacy, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/sveta_isakova">X</a></p>
+<p><i><span style="font-weight: 400;">Examples of your talks help us make better choices. If you’re a first-time speaker and don’t have recordings, no worries! You can simply record yourself (even just part of your proposed talk) on your laptop and share the link. We would really appreciate it.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Depending on the topic, you can also include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A technical article</li>
+
+
+
+<li>An open-source project</li>
+
+
+
+<li>Documentation you have written</li>
+
+
+
+<li>A short technical demonstration</li>
+
+
+
+<li>A podcast or meetup appearance</li>
+
+
+
+<li>Other work connected to the proposed session</li>
+</ul>
+
+
+
+<p>These materials support your proposal, but they don’t replace a clear title, abstract, and set of takeaways. Reviewers should still be able to understand the session from the submission itself.</p>
+
+
+
+<h2 class="wp-block-heading">Choose the format that fits the idea</h2>
+
+
+
+<p>Not every subject needs a full-length session.</p>
+
+
+
+<p>A focused lesson, experiment, side project, or surprising discovery may work better as a lightning talk. A subject that involves significant technical context, several connected lessons, or a detailed demonstration may require a regular session.</p>
+
+
+
+<p>Choose the format according to the amount of meaningful material you have. If you need to repeat yourself or add unnecessary content to fill a regular session, consider proposing a lightning talk instead.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Don’t forget that we also accept lightning talks! If you feel like your content would have to be padded to fill a regular session, it might be more enjoyable as a lightning talk.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>You can also submit more than one proposal if you have several distinct ideas. Each submission should have its own story, audience, and takeaways rather than being a minor variation of another proposal.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Submit more than one talk! It gives you more chances to join in on the KotlinConf fun.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h2 class="wp-block-heading">Review the proposal before submitting</h2>
+
+
+
+<p>Once you have completed your draft, step away from it and return later from the perspective of someone encountering the idea for the first time.</p>
+
+
+
+<p>Check whether your proposal answers the following questions:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Can someone understand the subject from the title?</li>
+
+
+
+<li>Is the connection to Kotlin clear?</li>
+
+
+
+<li>Does the abstract identify a real problem, question, or story?</li>
+
+
+
+<li>Is it clear who the session is for?</li>
+
+
+
+<li>Are the takeaways concrete?</li>
+
+
+
+<li>Does the proposal explain what makes your perspective different?</li>
+
+
+
+<li>Is the scope realistic for the selected format?</li>
+
+
+
+<li>Does the writing sound confident and authentic?</li>
+
+
+
+<li>Have you checked the spelling, grammar, links, and formatting?</li>
+
+
+
+<li>Does the proposal sound like the person who will deliver the talk?</li>
+</ul>
+
+
+
+<p>Ask someone else to review it, too. Rather than simply asking whether they like it, ask them to describe what they think the talk will cover and what they expect to learn. Their answer will show whether the proposal communicates what you intended.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains</h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Double-check that the intended audience level aligns with the description and expected takeaways. Review the proposal from the perspective of someone you hope will be in the audience. Does it make sense as it is, or is it missing context that may be obvious to you but not to the reviewer or the future audience they are keeping in mind?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>AI tools may help you check grammar or organize your thoughts, but the final proposal should reflect your own experience, ideas, and voice. A polished abstract without specific or authentic insight won’t be as convincing as one that clearly represents the speaker behind it.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Your submission should show that you’ve put some thought and energy into preparing it. Check your submission for formatting issues and typos, and please don’t submit abstracts that were generated by LLMs.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h2 class="wp-block-heading">Your Kotlin story could take the stage</h2>
+
+
+
+<p>You don’t need to know everything about Kotlin or have years of conference experience to submit a proposal. You need a useful story, an understanding of who it can help, and a clear explanation of why it matters.</p>
+
+
+
+<p>Not every strong proposal can be selected. Conference programs must balance subjects, formats, experience levels, and audience interests. If your submission is not accepted, continue refining the idea, sharing your knowledge, and looking for other opportunities to present it.</p>
+
+
+
+<p>Your experience might be exactly what another Kotlin developer needs to hear.</p>
+
+
+
+<p>The KotlinConf 2027 Call for Papers is open! Share your experience, ideas, and Kotlin expertise with the community in Kraków.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" title="Submit your KotlinConf2027 proposal" href="https://sessionize.com/kotlinconf-2027" target="_blank" rel="noopener">Submit your proposal</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>KotlinConf Recap: Lessons from Verifone&#8217;s Architect on Kotlin in Mission-Critical Payments</title>
 		<link>https://blog.jetbrains.com/kotlin/2026/10/kotlinconf-recap-lessons-from-verifone-s-architect-on-kotlin-in-mission-critical-payments/</link>
 		
@@ -48,7 +992,7 @@
 
 
 
-<p>That&#8217;s the spine of <a href="https://www.youtube.com/watch?v=XFwhtftwp6s" target="_blank" rel="noreferrer noopener">Yuri Geronimus&#8217;s KotlinConf 2026 talk</a>, &#8220;Kotlin as a Safety Net: Type-Driven Reliability in the Finance Industry.&#8221; Yuri is an architect at Verifone, where he works across payment terminals, gateways, and the systems that connect them to banks and regulators in EMEA region. His method, in one line: write code in the exact words of the regulator or card network specs, and let the compiler enforce it. Enforce not by discipline, but by compiler.</p>
+<p>That&#8217;s the spine of <a href="https://www.youtube.com/watch?v=XFwhtftwp6s" target="_blank" rel="noreferrer noopener">Yuri Geronimus&#8217;s KotlinConf 2026 talk</a>, &#8220;Kotlin as a Safety Net: Type-Driven Reliability in the Finance Industry&#8221;. Yuri is an architect at Verifone, where he works across payment terminals, gateways, and the systems that connect them to banks and regulators in the EMEA region. His method, in one line: write code in the exact words of the regulator or card network specs, and let the compiler enforce it. Enforce not by discipline, but by the compiler.</p>
 
 
 
@@ -85,7 +1029,7 @@
 
 
 
-<p>Some of those terminals have to keep working offline for up to 40 days, by regulation, because in the country they operate in, a payment terminal is critical infrastructure on the same level as a gas station or a pharmacy. Payment teams also have to satisfy contradictory rules from different regulators governing the same shared infrastructure: one country requires a behavior, another forbids it, and both must be enforced in the same codebase. That&#8217;s the environment the type system has to hold up in. Not a demo. Production, worldwide, for decades, not for a year.</p>
+<p>Some of those terminals have to keep working offline for up to 40 days, by regulation, because in the country they operate in, a payment terminal is critical infrastructure on the same level as a gas station or a pharmacy. Payment teams also have to satisfy contradictory rules from different regulators governing the same shared infrastructure: one country requires a behavior, another forbids it, and both must be enforced in the same codebase. That&#8217;s the environment the type system has to hold up in. Not a demo. Production, worldwide, for decades, not a year.</p>
 
 
 
@@ -93,7 +1037,7 @@
 
 
 
-<p>Yuri walked through real incident patterns that he heard from his 15 years in payments and banks, each one traced back to a single missing or misused word:</p>
+<p>Yuri walked through real incident patterns from his 15 years in payments and banks, each one traced back to a single missing or misused word:</p>
 
 
 
@@ -102,7 +1046,7 @@
 
 
 
-<li>A mandatory field was made nullable &#8220;just in case.&#8221; When a firmware update stopped sending it, the code fell back to a default, and part of the terminal fleet stopped processing payments.</li>
+<li>A mandatory field was made nullable &#8220;just in case&#8221;. When a firmware update stopped sending it, the code fell back to a default, and part of the terminal fleet stopped processing payments.</li>
 
 
 
@@ -110,11 +1054,11 @@
 
 
 
-<li>A transaction got refunded after it had already been reversed, and a merchant was charged twice.</li>
+<li>An authorization was approved while the fraud check timed out, and money was stolen.</li>
 
 
 
-<li>An authorization succeeded right as a timeout fired, and money moved to theft</li>
+<li>A request timed out, but the authorization had succeeded upstream, and the customer paid twice.</li>
 </ul>
 
 
@@ -141,7 +1085,7 @@
 
 <pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class MerchantId(val value: String)
 @JvmInline value class AcquirerId(val value: String)
-@JvmInline value class AmountMinor(val value: Long)
+@JvmInline value class AmountMinor(val value: String)
 
 data class AuthRequest(val merchantId: MerchantId, val acquirerId: AcquirerId, val amount: AmountMinor)
 
@@ -188,7 +1132,7 @@ fun authorize(rawStan: RawStan): AuthResponse =
     when (val parsed = ParsedStan.of(rawStan)) {
         is ParsedStan.Valid   -> gateway.authorize(parsed.stan)   // happy path
         is ParsedStan.Invalid -> reject(parsed)                   // structured rejection
-    }   // no else, no try/catch, no Result&lt;T> to unwrap — exhaustiveness is enforced
+    }   // no else, no try/catch, no Result&lt;T> to unwrap – exhaustiveness is enforced
 
 fun demo(raw: RawStan) {
     when (val parsed = ParsedStan.of(raw)) {   // bad input is a value, not an exception
@@ -248,7 +1192,7 @@ value class Pan private constructor(private val value: String) {
     fun toNetwork() = value                                       // deliberate, grep-able
 
     companion object {
-        fun of(raw: String): Pan? = TODO("Pan.of: the only way in — validate length, digits and Luhn, then construct")
+        fun of(raw: String): Pan? = TODO("Pan.of: the only way in – validate length, digits and Luhn, then construct")
     }
 }
 
@@ -294,11 +1238,11 @@ fun demo(captured: Captured, refunded: FullyRefunded, reversed: Reversed, reason
 
 
 
-<h3 class="wp-block-heading"><strong>6. Immutability and named transition</strong></h3>
+<h3 class="wp-block-heading"><strong>6. Immutability and named transition</strong>s</h3>
 
 
 
-<p>This continues the previous pattern. Make class with your business data immutable and give every transition a name. The name is a verb from the spec. Any method that shouldn&#8217;t be callable simply doesn&#8217;t exist:</p>
+<p>This continues the previous pattern. Make the class with your business data immutable and give every transition a name. The name is a verb from the spec. Any method that shouldn&#8217;t be callable simply doesn&#8217;t exist:</p>
 
 
 
@@ -388,7 +1332,7 @@ suspend fun fanOut(event: Event) = supervisorScope {
 
 
 
-<p>A gateway call that times out isn&#8217;t necessarily a failure. The acquirer may have already processed it; the client just didn&#8217;t hear back in time. Catching that as a generic exception and moving on erases the difference between &#8220;nothing happened&#8221; and &#8220;something happened, we&#8217;re just not sure what.&#8221; Yuri’s fix models a Timeout as a first-class outcome in the domain.</p>
+<p>A gateway call that times out isn&#8217;t necessarily a failure. The acquirer may have already processed it; the client just didn&#8217;t hear back in time. Catching that as a generic exception and moving on erases the difference between &#8220;nothing happened&#8221; and &#8220;something happened, we&#8217;re just not sure what&#8221;. Yuri’s fix models a Timeout as a first-class outcome in the domain.</p>
 
 
 
@@ -420,7 +1364,7 @@ fun demo(req: Req) {
 
 
 
-<p>Yur’s least expected pattern targets certification tests, not application code. A typical certification suite runs a thousand tests at roughly 200 lines each, and, in his words, not even an architect can read that. The team rewrote the tests as Kotlin DSL. Written that way, a certification specialist who has never written Kotlin can read the test, follow the logic against the specification, and sign off on it directly. The test stops being an artifact only test engineers can verify and becomes a specification the business and certification specialists can review.</p>
+<p>Yuri’s least expected pattern targets certification tests, not application code. A typical certification suite runs a thousand tests at roughly 200 lines each, and, in his words, not even an architect can read that. The team rewrote the tests as Kotlin DSL. Written that way, a certification specialist who has never written Kotlin can read the test, follow the logic against the specification, and sign off on it directly. The test stops being an artifact only test engineers can verify and becomes a specification the business and certification specialists can review.</p>
 
 
 
@@ -483,7 +1427,7 @@ fun demo(req: Req) {
 
 
 
-<p>He pointed to a resource for that exact gap: a <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noreferrer noopener">22-page playbook on the Kotlin site</a>, published two days before this talk, covering, in his words, &#8220;the part that everybody skips.&#8221;</p>
+<p>He pointed to a resource for that exact gap: a <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noreferrer noopener">22-page playbook on the Kotlin site</a>, published two days before this talk, covering, in his words, &#8220;the part that everybody skips&#8221;.</p>
 
 
 <div id="rank-math-faq" class="rank-math-block">
@@ -500,7 +1444,7 @@ fun demo(req: Req) {
 <h3 class="rank-math-question "><strong>Do you have to rewrite a legacy Java or C++ system to use these patterns?</strong></h3>
 <div class="rank-math-answer ">
 
-<p>No. Yuri explicitly argues against treating migration as a rewrite project. His four tracks run in parallel: optimizing the existing codebase, shifting to acceptance testing, more focus on  fitness functions, and migrating incrementally, starting with adapters and the domain models, then going from the most-often-changed parts.</p>
+<p>No. Yuri explicitly argues against treating migration as a rewrite project. His four tracks run in parallel: optimizing the existing codebase, shifting to acceptance testing, more focus on fitness functions, and migrating incrementally, starting with adapters and the domain models, then going from the most-often-changed parts.</p>
 
 </div>
 </div>
@@ -516,7 +1460,7 @@ fun demo(req: Req) {
 <h3 class="rank-math-question "><strong>Further reading</strong></h3>
 <div class="rank-math-answer ">
 
-<p>Geronimus writes more broadly on Kotlin in payments and fintech in his <a href="https://yurigeronimus.medium.com/kotlin-in-payment-gateways-and-fintech-a-strategic-fit-for-2026-architectures-f049a01059f9" target="_blank" rel="noopener">own posts on Medium</a>. For the business case and operating model he referenced in the talk, the resource is JetBrains&#8217; <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noopener">enterprise Kotlin adoption playbook</a>, also written with Geronimus.</p>
+<p>Yuri Geronimus writes more broadly on Kotlin in payments and fintech in his <a href="https://yurigeronimus.medium.com/kotlin-in-payment-gateways-and-fintech-a-strategic-fit-for-2026-architectures-f049a01059f9" target="_blank" rel="noopener">own posts on Medium</a>. For the business case and operating model he referenced in the talk, the resource is JetBrains&#8217; <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noopener">enterprise Kotlin adoption playbook</a>, also written with Yuri Geronimus.</p>
 
 </div>
 </div>
@@ -2702,311 +3646,6 @@ sealed interface ExportError { /* its own set */ }</pre>
 
 
 <p>Whether you browse the catalog directly or integrate it with your AI tools, klibs.io now makes it easier to discover, compare, and use Kotlin Multiplatform libraries with up-to-date information.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Exploring Compose HTML for Server Side Rendering</title>
-		<link>https://blog.jetbrains.com/kotlin/2026/08/exploring-compose-html-for-server-side-rendering/</link>
-		
-		<dc:creator><![CDATA[Frederik Pietzko]]></dc:creator>
-		<pubDate>Fri, 14 Aug 2026 12:15:09 +0000</pubDate>
-		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/08/KT-social-BlogFeatured-1280x720-1.png</featuredImage>		<category><![CDATA[backend]]></category>
-		<category><![CDATA[news]]></category>
-		<category><![CDATA[compose-multiplatform]]></category>
-		<category><![CDATA[server]]></category>
-		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=731283</guid>
-
-					<description><![CDATA[Something is happening in server-rendered web development. React shipped Server Components. HTMX made &#8220;hypermedia&#8221; cool again. Phoenix LiveView proved a server can push interactive UI updates without a client framework in sight. Every ecosystem seems to be rediscovering the server as a place to render UI, except one: the JVM. What if Compose, the UI [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<p>Something is happening in server-rendered web development. React shipped Server Components. HTMX made &#8220;hypermedia&#8221; cool again. Phoenix LiveView proved a server can push interactive UI updates without a client framework in sight. Every ecosystem seems to be rediscovering the server as a place to render UI, except one: the JVM. What if Compose, the UI toolkit already spanning Android, Desktop, and iOS, took a shot at server-rendering HTML too?</p>
-
-
-
-<p>The vision is simple: give backend developers a way to build server-rendered UI as type-safe, reusable Compose components (real Kotlin, with autocomplete, refactoring, and compiler checks) instead of string-based templates. No separate templating language, no separate UI codebase to maintain alongside the backend. This blog serves to explore some ideas how to achieve this vision and represents an exploration instead of an official commitment.</p>
-
-
-
-<p>Every major JS framework now has an SSR story: React has Next, Vue has Nuxt, Svelte has SvelteKit. And it&#8217;s not only the JS ecosystem. C#, Rust and even functional languages like Elixir have innovative solutions to build fullstack apps without relying on templating engines. Instead, they bundle state and rendering into reusable components, directly in code, the same way Compose already does everywhere else.</p>
-
-
-
-<p>Right now the JVM doesn&#8217;t have a horse in this race. There&#8217;s no shortage of SSR libraries on the JVM. But most of them need some sort of templating language and have nothing close enough to a component for a JS dev to recognize as such.</p>
-
-
-
-<p>But there is already a framework that is battle-tested and capable of filling this gap for the JVM, it just never really targeted the server. Compose Multiplatform allows us to write business logic and User Interfaces once and share it between platforms: Android, iOS, Desktop, and the web. It just needs to make the jump to the server next.</p>
-
-
-
-<p>Compose Multiplatform already targets the web, but not the way you&#8217;d want for this: it renders directly into a canvas, which shares UI code between mobile platforms and the browser at the cost of SEO, loading times, and accessibility.</p>
-
-
-
-<p>A way to render HTML with Compose already exists, and it&#8217;s older than Compose for Web: Compose HTML, which uses the Compose runtime to build SPAs in Kotlin and compile it to JS using the Kotlin/JS compiler. Add a JVM target and it could do SSR too. The rendering happens directly in Kotlin: real components, real types, no templating language.</p>
-
-
-
-<p>JVM devs stuck with Thymeleaf/JSP, or reaching for a separate JS framework just to build fullstack applications, wouldn&#8217;t have to leave the platform: type-safe, reusable Compose components replace what the templating language used to handle. Kotlin&#8217;s Java interoperability means it would slot into large legacy Java applications too.</p>
-
-
-
-<p>Take something as basic as a reusable card component. In Thymeleaf, that&#8217;s a fragment defined in its own file, called by name, with parameters passed as untyped strings:</p>
-
-
-
-<pre class="EnlighterJSRAW">&lt;!-- fragments/card.html --&gt;
-&lt;div th:fragment=&quot;card(title, count)&quot; class=&quot;card&quot;&gt;
-	&lt;h3 th:text=&quot;${title}&quot;&gt;Title&lt;/h3&gt;
-	&lt;span th:text=&quot;${count}&quot;&gt;0&lt;/span&gt;
-&lt;/div&gt;
-&lt;!-- usage --&gt;
-&lt;div th:replace=&quot;~{fragments/card :: card(title=&#039;Cart&#039;, count=${cartCount})}&quot;&gt;&lt;/div&gt;
-&lt;div th:replace=&quot;~{fragments/card :: card(title=&#039;Wishlist&#039;, count=${wishlistCount})}&quot;&gt;&lt;/div&gt;</pre>
-
-
-
-<p>Rename <code>count</code> to <code>itemCount</code> and every call site keeps compiling until it breaks at runtime. The compiler has no idea <code>card</code> or its parameters even exist.</p>
-
-
-
-<p>The same component in Compose is a typed function:</p>
-
-
-
-<pre class="EnlighterJSRAW">@Composable
-fun Card(title: String, count: Int) {
-	Div({ classes(&quot;card&quot;) }) {
-		H3 { Text(title) }
-		Span { Text(count.toString()) }
-	}
-}
-// usage
-Card(title = &quot;Cart&quot;, count = cartCount)
-Card(title = &quot;Wishlist&quot;, count = wishlistCount)</pre>
-
-
-
-<p>Rename <code>count</code> here and every call site either updates with the IDE or fails to compile. Pass a <code>String</code> where an <code>Int</code> is expected, and it&#8217;s a compiler error, not a runtime surprise.</p>
-
-
-
-<p>Today Compose HTML only has a JS target, so it can only be used from the browser; there&#8217;s no way of doing SSR yet. That doesn&#8217;t mean the Kotlin web-dev ecosystem is standing still, though.</p>
-
-
-
-<p>There is<a href="https://kobweb.varabyte.com/" target="_blank" rel="noopener"> Kobweb</a>, a batteries-included framework built on top of Compose HTML. It doesn&#8217;t offer SSR but supports static site export/prerendering to help with SEO. There is also<a href="https://kilua.dev/" target="_blank" rel="noopener"> Kilua</a>, which doesn&#8217;t build on top of Compose HTML but on top of the Compose Runtime directly to do SSR and CSR, leveraging JS or Wasm, and offers integrations for Ktor, Spring Boot, and others. And there is<a href="https://github.com/codeyousef/summon" target="_blank" rel="noopener"> Summon</a>, with SSR and hydration support.</p>
-
-
-
-<p>There&#8217;s already a small but active community leveraging Compose to build for the web. Adding SSR capabilities to Compose HTML would give Kobweb, Kilua, and Summon a shared foundation instead of three separate approaches, and give frameworks like Spring Boot and Ktor a good reason to integrate with it on the server.</p>
-
-
-
-<p>This space isn&#8217;t totally unexplored, but everything from this point onward is pure exploration.</p>
-
-
-
-<h2 class="wp-block-heading"><strong>What Compose HTML on the server could look like</strong></h2>
-
-
-
-<p>The first step would be to add a JVM target to Compose HTML, which is a bit easier said than done. There would need to be <code>renderToString</code> and <code>renderToBytes</code> functions that run a composition once on the JVM and serialize the resulting tree into a string.<br></p>
-
-
-
-<pre class="EnlighterJSRAW">fun renderToString(content: @Composable DOMScope&lt;DomElement&gt;.() -&gt; Unit): String
-
-val html: String = renderToString {
-    Div({ classes(&quot;card&quot;) }) {
-        Text(&quot;Hello&quot;)
-        Span({ classes(&quot;title&quot;) }) {
-            Text(&quot;World&quot;)
-        }
-    }
-}
-// html == &quot;&quot;&quot;&lt;div class=&quot;card&quot;&gt;Hello&lt;span class=&quot;title&quot;&gt;World&lt;/span&gt;&lt;/div&gt;&quot;&quot;&quot;</pre>
-
-
-
-<p>It composes once, lets the initial composition settle, walks the resulting tree, and serializes it straight to an HTML string: no browser, no DOM.</p>
-
-
-
-<p>There are some limitations to this. There would probably be only a single render pass, meaning no recomposition on state change or any effects, in essence very similar to SSR in JS. Event listeners should be accepted but will be inert; there&#8217;s no point in binding to browser events on the server.</p>
-
-
-
-<p>This would probably already be enough to build basic, entirely server-rendered pages using Compose. Here&#8217;s a full todo app on Spring Boot:</p>
-
-
-
-<pre class="EnlighterJSRAW">@Controller
-class TodoController(private val todoService: TodoService) {
-
-    @GetMapping(&quot;/todos&quot;)
-    @ResponseBody
-    fun todoView(): String = renderToString {
-        TodoView(todoService)
-    }
-
-    @PostMapping(&quot;/todos&quot;)
-    fun addTodo(createTodoDto: CreateTodoDto): String {
-        todoService.addTodo(createTodoDto.title)
-        return &quot;redirect:/todos&quot;
-    }
-
-    @PostMapping(&quot;/complete/{id}&quot;)
-    fun completeTodo(@PathVariable id: Long): String {
-        todoService.completeTodo(id)
-        return &quot;redirect:/todos&quot;
-    }
-}
-
-data class CreateTodoDto(val title: String)
-
-@Composable
-fun TodoView(todoService: TodoService) {
-    AddTodo()
-    TodoList(todoService)
-}
-
-@Composable
-fun AddTodo() {
-    Form(
-        attrs = {
-            action(&quot;/todos&quot;)
-            method(FormMethod.Post)
-        }
-    ) {
-        TextInput(
-            attrs = {
-                placeholder(&quot;Add todo&quot;)
-                name(CreateTodoDto::title.name)
-            }
-        )
-        Button(
-            attrs = {
-                type(ButtonType.Submit)
-            }
-        ) {
-            Text(&quot;Add&quot;)
-        }
-    }
-}
-
-@Composable
-fun TodoList(todoService: TodoService) {
-    val todos by produceState(initialValue = emptyList&lt;Todo&gt;(), todoService) {
-        value = todoService.getTodos()
-    }
-    Ul {
-        todos.forEach { todo -&gt;
-            Li {
-                Form(
-                    attrs = {
-                        action(&quot;/complete/${todo.id}&quot;)
-                        method(FormMethod.Post)
-                    }
-                ) {
-                    Text(todo.title)
-                    Button(
-                        attrs = {
-                            type(ButtonType.Submit)
-                        }
-                    ) {
-                        Text(&quot;Complete&quot;)
-                    }
-                }
-            }
-        }
-    }
-}</pre>
-
-
-
-<p>Every interaction here is a real HTTP form submission and full-page redirect: no client JS at all, same as classic Thymeleaf-style SSR, just written entirely in Compose.</p>
-
-
-
-<p>At that point, frameworks like Spring and Ktor could start experimenting with integrations and identifying missing integration points. This would also be the first sensible point at which new libraries (e.g. components) could be created.</p>
-
-
-
-<p>Going entirely off the rails into pure speculation, this is what such an integration could look like for Spring:</p>
-
-
-
-<pre class="EnlighterJSRAW">@ComposePage(&quot;/todos&quot;)
-@Composable
-fun TodosPage(todoService: TodoService) {
-    AddTodo()
-    TodoList(todoService)
-}
-
-@ComposeAction(&quot;/todos&quot;, method = PostMapping::class)
-fun addTodo(
-    @RequestBody createTodoDto: CreateTodoDto,
-    todoService: TodoService
-) {
-    todoService.addTodo(createTodoDto.title)
-}</pre>
-
-
-
-<p>The idea: a hypothetical Spring integration could turn a <code>@Composable</code> function directly into a routed page, no manual <code>renderToString</code> call, no controller boilerplate, no wrapping HTML shell. Spring would own request mapping and dependency injection exactly like it does today; Compose HTML would just be the render target instead of a <code>View/template</code>.</p>
-
-
-
-<p>Or for Ktor:</p>
-
-
-
-<pre class="EnlighterJSRAW">routing {
-    composable(&quot;/todos&quot;) {
-        TodoView(todoService)
-    }
-
-    post(&quot;/todos&quot;) {
-        val params = call.receiveParameters()
-        todoService.addTodo(params&#091;&quot;title&quot;]!!)
-        call.respondRedirect(&quot;/todos&quot;)
-    }
-}</pre>
-
-
-
-<p><code>composable(path) { }</code> would be a thin wrapper Ktor could add: call <code>renderToString</code> internally and respond with the HTML content type, so a route body becomes a <code>@Composable</code> lambda instead of a string template or manual <code>call.respondText</code>.</p>
-
-
-
-<p>Worth repeating: these are illustrative sketches, not planned APIs, not a roadmap.</p>
-
-
-
-<p>Hydration and state sync are the natural next question, not an answer: how would a composable that already rendered on the server pick up interactivity in the browser, and would client and server ever need to agree on state? Answering that would also open the door to sharing UI code between client and server, the same component compiled once for the browser and once for the server, and enable interactive fullstack web apps built entirely in Kotlin.</p>
-
-
-
-<p>Let&#8217;s be clear about scope: the goal is not to expand Compose HTML into a fully-fledged, batteries-included framework. Rather, the vision is similar to React&#8217;s: stay small and let frameworks build the integration points on top, just applied to a multiplatform library instead of a single-platform one. Framework integrations and ecosystem libraries live outside the core. That&#8217;s a real contrast to the rest of Compose Multiplatform, which ships official libraries for Material3 components, state management, and many other things. Compose HTML will need to rely on the Kotlin community and ecosystem to figure out what integration points are actually needed and how its future will look, instead of dictating a direction from the inside.</p>
-
-
-
-<p>We are already talking to framework maintainers from Kobweb, Kilua, and Summon to gather their perspective, as well as the Spring team, which has expressed interest in experimenting once a JVM target is added to Compose HTML.</p>
-
-
-
-<p>If you want to talk shop, argue with any of this, or just see where it goes, join the Kotlinlang Slack (get your invite here: <a href="https://kotl.in/slack" target="_blank" rel="noopener">https://kotl.in/slack</a>) and the <a href="https://kotlinlang.slack.com/archives/C0BM8FWG58Q" target="_blank" rel="noopener">#compose-ssr</a> channel.</p>
-
-
-
-<p>Every other ecosystem already took its shot at the server. Kotlin&#8217;s turn is overdue.</p>
-
-
-
-<p></p>
 ]]></content:encoded>
 					
 		

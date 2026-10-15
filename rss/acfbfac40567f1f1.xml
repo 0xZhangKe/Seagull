@@ -12,7 +12,7 @@
 	<atom:link href="https://blog.jetbrains.com/kotlin/feed/" rel="self" type="application/rss+xml" />
 	<link>https://blog.jetbrains.com</link>
 	<description>Developer Tools for Professionals and Teams</description>
-	<lastBuildDate>Wed, 14 Oct 2026 14:15:23 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 15 Oct 2026 06:45:36 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -139,12 +139,16 @@
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class Stan(val value: String)
-@JvmInline value class TerminalId(val value: String)
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class MerchantId(val value: String)
+@JvmInline value class AcquirerId(val value: String)
 @JvmInline value class AmountMinor(val value: Long)
- 
-data class AuthRequest(val stan: Stan, val terminalId: TerminalId, val amount: AmountMinor)
-AuthRequest(terminalId, stan, amount)</pre>
+
+data class AuthRequest(val merchantId: MerchantId, val acquirerId: AcquirerId, val amount: AmountMinor)
+
+fun demo(merchantId: MerchantId, acquirerId: AcquirerId, amount: AmountMinor) {
+    AuthRequest(merchantId, acquirerId, amount)   // ✅ compiles
+    // AuthRequest(acquirerId, merchantId, amount)   // ❌ type mismatch: swapped arguments do not compile
+}</pre>
 
 
 
@@ -160,27 +164,40 @@ AuthRequest(terminalId, stan, amount)</pre>
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface ParsedStan {
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class RawStan(val value: String)   // untrusted input
+@JvmInline value class Stan(val value: String)      // validated, per spec
+
+sealed interface ParsedStan {
     data class Valid(val stan: Stan) : ParsedStan
     sealed interface Invalid : ParsedStan {
         val rawStan: RawStan
         data class WrongLength(override val rawStan: RawStan) : Invalid
-        data class NotNumeric(override val rawStan: RawStan) : Invalid 
+        data class NotNumeric(override val rawStan: RawStan) : Invalid
+    }
+
+    companion object {
+        fun of(rawStan: RawStan): ParsedStan = when {
+            rawStan.value.length != 6         -> Invalid.WrongLength(rawStan)
+            !rawStan.value.all(Char::isDigit) -> Invalid.NotNumeric(rawStan)
+            else                              -> Valid(Stan(rawStan.value))
+        }
     }
 }
 
-fun of(rawStan: RawStan): ParsedStan = when {
-    rawStan.value.length != 6         -> ParsedStan.WrongLength(rawStan)
-    !rawStan.value.all(Char::isDigit) -> ParsedStan.NotNumeric(rawStan)
-    else                              -> ParsedStan.Valid(Stan(rawStan.value))
-}
-
-
 fun authorize(rawStan: RawStan): AuthResponse =
     when (val parsed = ParsedStan.of(rawStan)) {
-        is ParsedStan.Valid       -> gateway.authorize(parsed.stan)        // happy path
-        is ParsedStan.Invalid     -> reject(parsed)                        // structured rejection
-    }   // no else, no try/catch, no Result&lt;T> to unwrap — exhaustiveness is enforced</pre>
+        is ParsedStan.Valid   -> gateway.authorize(parsed.stan)   // happy path
+        is ParsedStan.Invalid -> reject(parsed)                   // structured rejection
+    }   // no else, no try/catch, no Result&lt;T> to unwrap — exhaustiveness is enforced
+
+fun demo(raw: RawStan) {
+    when (val parsed = ParsedStan.of(raw)) {   // bad input is a value, not an exception
+        is ParsedStan.Valid               -> gateway.authorize(parsed.stan)
+        is ParsedStan.Invalid.WrongLength -> reject(parsed)
+        is ParsedStan.Invalid.NotNumeric  -> reject(parsed)
+        // forget any of the cases → ❌ 'when' expression must be exhaustive
+    }
+}</pre>
 
 
 
@@ -196,14 +213,18 @@ fun authorize(rawStan: RawStan): AuthResponse =
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">data class KernelResult(
-    val tvr: TerminalVerificationResults, // ← not Optional, not nullable
-)
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">data class KernelResult(val tvr: TerminalVerificationResults) // ← not Optional, not nullable
 
 fun fromFirmware(raw: FirmwareResponse) = KernelResult(
     tvr = requireNotNull(raw.tvr) { "TVR null - firmware contract violated" }
 )
-// One loud failure at the boundary. Never a silent fallback downstream</pre>
+// One loud failure at the boundary. Never a silent fallback downstream
+
+fun demo(raw: FirmwareResponse) {
+    // raw.tvr ?: TerminalVerificationResults()   // ❌ "just in case" fallback: silently hides the broken contract
+    val result = fromFirmware(raw)   // one loud failure here, at the single parsing point where it is monitored
+    val tvr: TerminalVerificationResults = result.tvr   // non-null: nothing downstream has to guard against it
+}</pre>
 
 
 
@@ -219,13 +240,22 @@ fun fromFirmware(raw: FirmwareResponse) = KernelResult(
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// Illustration of the idea: in production this is hidden much deeper (PCI scope, key management, encryption)
+@JvmInline
 value class Pan private constructor(private val value: String) {
-    override fun toString() = "PAN[****]"                     // ← always safe
-    fun masked() = /* masking according spec */
-    fun toNetwork() = value                                  // deliberate, grep-able
+    override fun toString() = "PAN[****]"                         // ← always safe
+    fun masked(): String = TODO("Pan.masked: masking according to spec")
+    fun toNetwork() = value                                       // deliberate, grep-able
+
+    companion object {
+        fun of(raw: String): Pan? = TODO("Pan.of: the only way in — validate length, digits and Luhn, then construct")
+    }
 }
-logger.info("Processing card $card")   // → "PAN[****]". Safe by default</pre>
+
+fun demo(card: Pan) {
+    logger.info("Processing card $card")   // → "Processing card PAN[****]". Safe by default
+    val onWire = card.toNetwork()          // the real value only through an explicit, grep-able call
+}</pre>
 
 
 
@@ -241,16 +271,26 @@ logger.info("Processing card $card")   // → "PAN[****]". Safe by default</pre>
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface TransactionStatus {
-    data class Captured(val amount: AmountMinor)             : TransactionStatus
-    data class FullyRefunded(val at: Instant)                : TransactionStatus
-    data class Reversed(val reason: ReversalReason)          : TransactionStatus
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import TransactionStatus.Captured
+import TransactionStatus.FullyRefunded
+import TransactionStatus.Reversed
+import java.time.Instant
+
+// One class per state: each state carries only the data that is valid in it
+sealed interface TransactionStatus {
+    data class Captured(val amount: AmountMinor)    : TransactionStatus
+    data class FullyRefunded(val at: Instant)       : TransactionStatus
+    data class Reversed(val reason: ReversalReason) : TransactionStatus
 }
 
-fun TransactionStatus.fullRefund(refundReason: RefundReason) = when (this) {
-    is Captured.                  -> Ok(/* ... */)
-    is FullyRefunded, is Revesed  -> Err("not refundable from $this")
-}   // exhaustive. the compiler refuses to forget.</pre>
+// Refund exists only on Captured: that is where the spec allows it
+fun Captured.fullRefund(refundReason: RefundReason) = RefundAuthorization(amount, refundReason)
+
+fun demo(captured: Captured, refunded: FullyRefunded, reversed: Reversed, reason: RefundReason) {
+    captured.fullRefund(reason)   // ✅ compiles
+    // refunded.fullRefund(reason)   // ❌ unresolved reference: a refunded transaction cannot be refunded again
+    // reversed.fullRefund(reason)   // ❌ unresolved reference: a reversed transaction cannot be refunded
+}</pre>
 
 
 
@@ -262,14 +302,18 @@ fun TransactionStatus.fullRefund(refundReason: RefundReason) = when (this) {
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@ConsistentCopyVisibility  // Kotlin 2.0.20+
-data class PurchasedAuthorization private constructor( /* ... */ ): Authorization {
-    fun fullRefund(refundReason: RefundReason): FullRefundOutcome = /* ... */
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@ConsistentCopyVisibility  // Kotlin 2.0.20+: copy() is as private as the constructor
+data class PurchasedAuthorization private constructor(
+    val stan: Stan,
+    val amount: AmountMinor,
+) : Authorization {
+    fun fullRefund(refundReason: RefundReason) = RefundAuthorization(stan, amount, refundReason)
+    // no reverseAuthorization(): the spec does not allow it for a purchase
 }
 
-sealed class FullRefundOutcome {
-    data class Succeeded(val refundAuthorization: RefundAuthorization) : FullRefundOutcome 
-    // error data classes
+fun demo(purchaseAuthorization: PurchasedAuthorization, reason: RefundReason) {
+    purchaseAuthorization.fullRefund(reason)         // ✅ compiles
+    // purchaseAuthorization.reverseAuthorization()  // ❌ compile error: unresolved reference 'reverseAuthorization'
 }</pre>
 
 
@@ -287,9 +331,16 @@ sealed class FullRefundOutcome {
 
 
 <pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fun authorize(request: AuthorizationRequest): Authorization = when (request) {
-    is PurchaseRequest           -> /* ... */
-    is FullRefundRequest         -> /* ... */
+    is PurchaseRequest   -> purchase(request)
+    is FullRefundRequest -> fullRefund(request)
     // ← no else. Adding a new state BREAKS compilation here
+}
+
+fun demo(purchase: PurchaseRequest, refund: FullRefundRequest) {
+    authorize(purchase)   // ✅ compiles
+    authorize(refund)
+    // spec adds: class PartialRefundRequest : AuthorizationRequest
+    // → ❌ authorize() stops compiling: 'when' must be exhaustive
 }</pre>
 
 
@@ -306,7 +357,10 @@ sealed class FullRefundOutcome {
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// coroutineScope = fail-fast.   ← partial success is an incident that you can catch
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import kotlinx.coroutines.*
+// coroutineScope = fail-fast.   ← partial success is an incident: one failure cancels the rest
+// In production each call also gets its own timeout, and a timeout is an outcome, not a thrown exception
+// (full version with tests: production/08_coroutine_scopes)
 suspend fun authorize(req: Request) = coroutineScope {
     val auth  = async { acquirer.authorize(req) }
     val risk  = async { riskEngine.score(req) }
@@ -314,8 +368,14 @@ suspend fun authorize(req: Request) = coroutineScope {
     Outcome.from(auth.await(), risk.await(), fraud.await())
 }
 // supervisorScope = isolate.    ← partial success is the goal
+// Note: runCatching also catches CancellationException. In production rethrow it
+// (e.g. `catch (e: CancellationException) { throw e }`) so cancelling the parent still works.
 suspend fun fanOut(event: Event) = supervisorScope {
-    listOf(async { sms(event) }, async { analytics(event) }, async { feed(event) }).awaitAll()
+    listOf(
+        async { runCatching { sms(event) } },
+        async { runCatching { analytics(event) } },
+        async { runCatching { feed(event) } },
+    ).awaitAll()   // never throws: each failure is a Result.failure in the list
 }</pre>
 
 
@@ -332,16 +392,22 @@ suspend fun fanOut(event: Event) = supervisorScope {
 
 
 
-<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">sealed interface AuthorizationOutcome {
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import AuthorizationOutcome.Approved
+import AuthorizationOutcome.Declined
+import AuthorizationOutcome.TimedOut
+
+sealed interface AuthorizationOutcome {
     data class Approved(val authCode: AuthCode)    : AuthorizationOutcome
     data class Declined(val reason: DeclineReason) : AuthorizationOutcome
     data object TimedOut                           : AuthorizationOutcome // ← spec verb, named in domain
 }
 
-when (val outcome = processAuth(req)) {
-    is Approved  -> settleTransaction(outcome.authCode)
-    is Declined  -> notifyCardHolder(outcome.reason)
-    is TimedOut  -> initiateReversal(req)  // caller decides what to do according to spec
+fun demo(req: Req) {
+    when (val outcome = processAuth(req)) {
+        is Approved -> settleTransaction(outcome.authCode)
+        is Declined -> notifyCardHolder(outcome.reason)
+        is TimedOut -> reconcile(req)  // not retry: it may have succeeded upstream
+    }
 }</pre>
 
 

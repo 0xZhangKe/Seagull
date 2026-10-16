@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "639aafc2a05b59f4fc9bcfb8",
+      "title": "Rsync 同步工具超快！部署 Hugo 爲範例。",
+      "summary": "前言 # 以往 Eddie 製作部落格（本站）的方式是，在本地端用 Hugo 生成好網站（Public）後，打開圖形界面 App「Filezilla」，填入伺服器的密碼，再把檔案複製到伺服器去，操作就像是 Windows 檔案總管或 macOS 的 Finder 一樣簡單。 拋棄 Filezilla # 最近，網站的檔案數量來到 700 多了，雖然並不是很多，但是透過 Filezilla 上傳網站，也要個 5 分鐘，就有一點太久了！ 擁抱 Rsync # Rsync 是純文字 App，上傳的指令如下： rsync -avz --delete -e \"ssh -p 22\" ./public/ username@your.server.com:/var/www/html/your-site-folder 說明 #…",
+      "image": null,
+      "publishedAt": "2025-04-09T08:49:44Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/rsync/",
+      "detailPath": "articles/639aafc2a05b59f4fc9bcfb8.json"
+    },
+    {
       "id": "2cf0fb4b09a1e66f3676d858",
       "title": "关税与贸易公平",
       "summary": "",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/good_question/",
       "detailPath": "articles/4f2b59afef39064ae1b35da4.json"
-    },
-    {
-      "id": "7a664efe19bf3116c6d5ae89",
-      "title": "GORILLA.BAS",
-      "summary": "GORILLA.BAS) 可能是我人生中最早接觸到的幾個電腦遊戲之一。這款遊戲其實是微軟在 1990 年作為 QBasic 程式語言的範例程式發布的，但因為 QBasic 是內建在 MS-DOS 5.0 作業系統裡，所以成為了當時幾乎每一台電腦都一定會有的經典遊戲。",
-      "image": "https://wiwi.blog/assets/images/gorilla-resized-bc2ed157c11b9d935745205018db32b9.png",
-      "publishedAt": "2025-03-29T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/gorilla-bas",
-      "detailPath": "articles/7a664efe19bf3116c6d5ae89.json"
     }
   ]
 }

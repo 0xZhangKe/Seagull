@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "e1f74cae69936a729b95ef08",
+      "title": "Android Service：开发自己的通知中心(2):辅助性服务实战",
+      "summary": "1.辅助性服务实战介绍 上一篇文章介绍了什么是Accessibility以及简单的使用，这一篇文章就来讲讲如何使用Accessibility服务来创建一个简单的Android通知中心。Android中通知中心是一个系统层面的服务，负责显示应用和系统发来的通知（Notification，比如USB插入、选择输入法、未接来电、截图、天气信息、新闻推送等等）。在android4.3之前，一般的第三方应用是无法获取Notification list的（在Android4.3之后，有了一个新的接口,NotificationListenerService.getActiveNotifications(),可以获取当前的Notification）。但是利用Accessibility服务可以监听到各种事件的特性，可以开发一个…",
+      "image": null,
+      "publishedAt": "2014-03-31T16:05:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/04/01/android-service-build-your-own-notification-servers-app/",
+      "detailPath": "articles/e1f74cae69936a729b95ef08.json"
+    },
+    {
+      "id": "d71f373d2c160dd636feac6b",
+      "title": "Android:Ubuntu 下执行 Adb 命令找不到设备",
+      "summary": "1.问题概述 最近开发Nokia项目，遇到的问题如下： 插入Nokia x后，电脑没有反应，即不识别，同事的windows也不识别，最后在谷歌上搜索了良久，才找到了解决方案，但是没有记录，后来又要给别人配置的时候，发现忘记怎么配置了。想想这也是一个具有通性的问题，还是记录下来，分享给大家。 2.问题解决方案 首先问题是：执行adb命令提示找不到设备，在做其他操作之前，请先确认已经做了如下操作： 确定已经打开了USB调试选项（设置-开发者选项-USB调试），有的机器没有开发者选项，需要到关于里面点击版本号若干下，或者去百度谷歌。 确定使用sudo命令adb kill-server 和adb start-server后仍然没有用。 如果上述操作都确认了，还是找不到设备，那么继续往下看：",
+      "image": null,
+      "publishedAt": "2014-03-25T03:15:17Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
+      "detailPath": "articles/d71f373d2c160dd636feac6b.json"
+    },
+    {
+      "id": "506ff04c13ef684ec4ef3661",
+      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
+      "summary": "1 辅助性服务介绍 辅助性服务是安卓框架的一个特性，它的设计是为了让已经安装在安卓设备上的应用程序能够为用户提供一种导航式(引导式）回应。一个辅助性服务能够传达给 用户关于这个应用程序的利益，例如把文本转换成语音、当用户手指停留屏幕的一个重要区域时的haptic反馈。这一节涵盖了怎样去创建一个辅助性服务，如何处理应用程序的信息接收，还有如何把信息反馈给用户。 创建自己的辅助性服务 本文先把辅助性服务的设计目标和能力边界讲清楚，包括它能拿到的事件类型、能反馈给用户的渠道，以及它和普通 Service、IntentService 的区别。后半部分会动手写一个最小可用的辅助性服务，覆盖继承 AccessibilityService 、在 manifest 里声明、配置 service 元数据，以及响应 Access…",
+      "image": null,
+      "publishedAt": "2014-03-17T06:07:53Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
+      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
+    },
+    {
+      "id": "e9f8e637af3d3fb54ca889a7",
+      "title": "去艺圃",
+      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
+      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
+      "publishedAt": "2014-02-27T01:59:29Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2014/02/26/go-yipu/",
+      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
+    },
+    {
       "id": "0dfa29cd063255aa2c6bda7b",
       "title": "【2013】我该如何存在",
       "summary": "这篇年终总结竟然被我拖到2014年。 最近日程安排得太满，复习、结课，还剩几门实验没有做完，深深感觉这学期欠的太多，所以在最后一切都要偿还，力不从心。但再苦再累，2013年还是熬过去了。 每逢过年，不管是元旦还是春节，我总会有一种怅然若失的感觉，周边的人可能觉得这是个大家聚在一起的好机会，而我总是下意识地想逃避人群，避开饭席，避开跨年晚会。以往元旦能逃回家静一静，今年元旦只放一天，于是就在学校跨年，和一群好友去学校办的跨年篝火晚会凑热闹，零点一过，所有人都在说新年快乐，舞台上的人在喊，底下人有伴的就拥吻，或是拿起手机向远方发去祝福，而我下意识地竟然叹了一口气，经旁边朋友的提醒才发现2014肇始我说的第一句话是个“哎”。真不是个好的开始，不知道明年总结的时候会不会感叹自己做了一件错事。 这个开头略悲伤，但也到此…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/rubiks-cube",
       "detailPath": "articles/25fc6128e3b1d2d50d0a8222.json"
-    },
-    {
-      "id": "18463a465e38ddb47cf1ba23",
-      "title": "Bomomo",
-      "summary": "有趣的繪圖小程式！不用多解釋什麼，直接到 Bomomo.com 玩玩看吧！",
-      "image": "https://wiwi.blog/assets/images/bomomo-39a8322a65d0c55bb800a617eb4ffb89.jpg",
-      "publishedAt": "2008-06-30T16:42:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/bomomo",
-      "detailPath": "articles/18463a465e38ddb47cf1ba23.json"
-    },
-    {
-      "id": "344a757b3c6191be7ce466b7",
-      "title": "ㄕㄕㄕㄕㄕ",
-      "summary": "今天再來跟大家介紹一個有趣的東西。試試看，把下面的注音文，譯為正常的中文：",
-      "image": null,
-      "publishedAt": "2008-06-30T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/shi-shi-shi-shi-shi",
-      "detailPath": "articles/344a757b3c6191be7ce466b7.json"
-    },
-    {
-      "id": "97196db25ad785412c212bf3",
-      "title": "我是白痴",
-      "summary": "我在前天的這一篇 Blog 不是說我去全聯買了一瓶洗髮精嗎？",
-      "image": null,
-      "publishedAt": "2008-06-28T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hair-conditioner",
-      "detailPath": "articles/97196db25ad785412c212bf3.json"
-    },
-    {
-      "id": "5de488babdda8be79a128357",
-      "title": "28 元的油切綠茶，最後一天",
-      "summary": "剛剛一個人去吃火鍋，覺得有點吃太飽，就想說走路去全聯晃晃好了。先是買了一瓶洗髮精和一瓶廁所除臭液，然後我走到飲料區，發現平常常喝的油切綠茶的特價（2 公升，28 元）到今天為止，從明天開始要漲到 36 元！",
-      "image": "https://wiwi.blog/assets/images/aLotOfTea-e4697cc12d31b2c949a257adc0fce608.jpg",
-      "publishedAt": "2008-06-26T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/oil-cutting-green-tea",
-      "detailPath": "articles/5de488babdda8be79a128357.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "0d52b5e816455a460ecc9935",
+      "title": "给 Golang 开发者的 Rust 私房菜 04 函数、表达式和语句",
+      "summary": "Bilibili 建议前往 B 站观看哦！ 函数 定义与调用 使用 fn 关键字定义函数。 参数需要显式声明类型。 1 2 3 4 5 6 7 8 fn add ( a : i32 , b : i32 ) -> i32 { a + b } fn main () { let result = add ( 2 , 3 ); println! ( \"Result: {} \" , result ); } 返回值 函数的返回值是最后一个表达式的值，无需显式 return 。 1 2 3 4 5 6 7 8 9 // 使用 return fn square ( x : i32 ) -> i32 { return x * x ; } // 无需显式 return fn square ( x : i32 ) -> i32 {…",
+      "image": null,
+      "publishedAt": "2025-01-05T14:45:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/rust-tutorial-04/",
+      "detailPath": "articles/0d52b5e816455a460ecc9935.json"
+    },
+    {
+      "id": "ff72b56587caad2f61cb757a",
+      "title": "半馬",
+      "summary": "昨天早上五點多就自然醒，去公園跑步覺得身體感覺還不錯，就想說來挑戰看看半馬（21.1 公里）好了。我之前沒有嘗試過跑這麼遠，最多也就 15 公里，而且差不多到 10 公里以後就會覺得腳很痠了。",
+      "image": "https://wiwi.blog/assets/images/sub2-8911929d53cb0675a51be33299d857fe.jpg",
+      "publishedAt": "2025-01-05T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/first-half-marathon",
+      "detailPath": "articles/ff72b56587caad2f61cb757a.json"
+    },
+    {
+      "id": "45f525fe134587a915d9f924",
+      "title": "Saka 馬鹿",
+      "summary": "这篇博客是我在刷题群内的 2025 年的第一次分享整理的演讲稿。主要是完整复盘了过去几年里我犯下的两个比较典型的低级错误。 希望大家能看的开心",
+      "image": "https://i.imgur.com/4nVkyxt.png",
+      "publishedAt": "2025-01-04T18:30:00Z",
+      "sourceId": "a6add2003c9627a9",
+      "sourceTitle": "Manjusaka",
+      "link": "https://www.manjusaka.blog/posts/2025/01/04/saka-is-baka/",
+      "detailPath": "articles/45f525fe134587a915d9f924.json"
+    },
+    {
+      "id": "feef08f8e7607f59a9a6ef3d",
+      "title": "Android免拔SIM卡使用官方TikTok",
+      "summary": "TikTok（抖音国际版）在中国无法正常使用，原因在于TikTok会检测SIM卡的国家代码，若为中国大陆或香港用户则会直接提示“TikTok 网络错误”或无法使用完整功能，即便已经使用纯净IP的家宽节点。目前常见的解决方法包括拔除SIM卡或修改TikTok应用，即所谓的解锁版。今天，我们将介绍一种无需拔卡即可使用官方TikTok的方法。",
+      "image": "https://notion.dolingou.com/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F6d3fda40-6b03-4bf3-842b-4c9bb68a90f1%2Ff0270439-89c8-44ad-bba3-bb6810ce27fe%2Fimage.png?table=block&id=17197571-0fee-80d2-bb99-c543f466bd8c&t=17197571-0fee-80d2-bb99-c543f466bd8c&width=322&cache=v2",
+      "publishedAt": "2025-01-04T00:00:00Z",
+      "sourceId": "3f72c6c8a8442f3b",
+      "sourceTitle": "Dolingou",
+      "link": "https://www.dolingou.com/article/use-official-tiktok-without-removing-the-sim-card-android",
+      "detailPath": "articles/feef08f8e7607f59a9a6ef3d.json"
+    },
+    {
       "id": "1128cee7ef256af2ca9d111e",
       "title": "辭職吧",
       "summary": "覺得每天打卡上下班，總是做著自己一點都不 care 的工作，還要面對無腦的上司和難相處的同事很煩嗎？在 2025 年嘗試跳出來吧！",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/ddos-attack",
       "detailPath": "articles/bdab0feaba6d8f1aedd05c47.json"
-    },
-    {
-      "id": "045fad3ca44d9e20da734a7e",
-      "title": "如何不要懷疑自己",
-      "summary": "幾個小秘訣：",
-      "image": null,
-      "publishedAt": "2024-12-13T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/doubting-yourself",
-      "detailPath": "articles/045fad3ca44d9e20da734a7e.json"
-    },
-    {
-      "id": "734fdbf23b56c3ee980d971a",
-      "title": "關於聽力狀況的更新",
-      "summary": "現在狀況還是差不多，平均每個月會有一兩次右耳聽力突然減退（尤其是低頻）以及變怪的現象。每次可能會持續半天到兩天左右，隨後會恢復正常。",
-      "image": "https://wiwi.blog/assets/images/hearing-02be77d0184f06298c50f3a07334f134.png",
-      "publishedAt": "2024-12-12T09:16:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hearing-update",
-      "detailPath": "articles/734fdbf23b56c3ee980d971a.json"
-    },
-    {
-      "id": "fa9284d8c3f75f56f7507361",
-      "title": "做音控要學會分心。",
-      "summary": "「做音控要學會分心。」某場結束後，學長在貨車上的第一句話。 學長開始放手讓我自己控聲音了，今日做的是卡拉 OK 的尾牙場，活動流程有抽獎、唱歌。 音控工作內容 # 一、注意所有麥克風被拿在誰的手上，並且把音量平衡好。 二、注意現在的說話內容，是否需要墊音樂，並且依照說話內容，找好符合氣氛的歌曲。 三、目前流程，燈光要白燈還是染色效果光。 四、隨時有人來點歌 依照不同的場，還會有很多事情要注意。 目前問題 # 目前的我，很容易注意麥克風時，就把專注力都「只」放在麥克風上，專心到忘了處理燈光、處理音樂；或者有人來點歌時，我耳朵就沒有在聽聲音了，只處理點歌；找音樂時，沒辦法顧及麥克風平衡。 解決方法：隨時告訴自己，「一個東西沒動它後，就要換注意對象了。」 例如：麥克風風音量平衡好後，發現自己沒有再繼續動作，就不要把…",
-      "image": null,
-      "publishedAt": "2024-12-12T04:13:34Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/multitasking/",
-      "detailPath": "articles/fa9284d8c3f75f56f7507361.json"
-    },
-    {
-      "id": "9ee12cd3d61d495dc851e20c",
-      "title": "這是我做的",
-      "summary": "我以為這是常識：",
-      "image": null,
-      "publishedAt": "2024-12-12T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/i-made-this",
-      "detailPath": "articles/9ee12cd3d61d495dc851e20c.json"
     }
   ]
 }

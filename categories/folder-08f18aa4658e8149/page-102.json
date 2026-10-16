@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "7d39e58d967598b413b3bb1a",
+      "title": "《血钻》简要流水账读书笔记",
+      "summary": "莱昂纳多2006年主演的电影《血钻》的背景书，并不是小说，而是两个记者在塞拉利昂实地考察冲突钻石的纪实，和电影的故事情节并无直接关系。 书名：Blood Diamonds: Tracing the Deadly Path of the World's Most Precious Stones，作者Greg Campbell是一名记者。 序言以叫Dalramy的塞拉利昂男子被砍断双手开始——他所居住的叫Koidu的地方钻矿丰富，是塞拉利昂各个军事力量的必争之地，只是这次占领当地的是有名的没底线的RUF（Revolutionary United Front）。 RUF肆无忌惮地强暴妇女，对平民施以酷刑达到震慑目的。因为塞拉利昂总统曾呼吁民众join hands到国家的和平行动中来，RUF便常对占领区的民众实施砍手…",
+      "image": null,
+      "publishedAt": "2015-07-09T01:19:51Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/reading/blood-diamonds-reading-notes/",
+      "detailPath": "articles/7d39e58d967598b413b3bb1a.json"
+    },
+    {
+      "id": "a5d9c0fc2659abcebdce7627",
+      "title": "10,000 訂閱",
+      "summary": "我從今年開始做的「好和弦 - NiceChord」頻道，在剛剛達成一萬個 YouTube 訂閱者的里程碑了！",
+      "image": "https://wiwi.blog/assets/images/10000subs-95126363e1f1e23558150f7613438d7e.jpg",
+      "publishedAt": "2015-06-06T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/nicechord-10000-subs",
+      "detailPath": "articles/a5d9c0fc2659abcebdce7627.json"
+    },
+    {
+      "id": "60b1fbf02c0d65573b4dc2d4",
+      "title": "Nexus6 with Android M 开启多窗口模式",
+      "summary": "昨天的Google IO之后，Google放出了Android M Preview for Nexus6. 固件大家可以去Google的官网去下，下好了刷完之后，就可以体验一下最新的Android M了。下面是设置 里面的主界面和彩蛋界面:",
+      "image": null,
+      "publishedAt": "2015-05-29T12:01:06Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/05/29/Nexus6-with-Android-M/",
+      "detailPath": "articles/60b1fbf02c0d65573b4dc2d4.json"
+    },
+    {
+      "id": "258f65a2d255ab3654d8fb42",
+      "title": "這是什麼調",
+      "summary": "雖然我通常可以揣測出題者想要我寫什麼答案，但我還是一直覺得這種題目邏輯有問題。",
+      "image": "https://wiwi.blog/assets/images/key-7cb6068af1d104f9c1c1ed7963d0e9df.jpg",
+      "publishedAt": "2015-05-16T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/what-key-is-this",
+      "detailPath": "articles/258f65a2d255ab3654d8fb42.json"
+    },
+    {
       "id": "1075c8315347f16bbff8abfa",
       "title": "细说 Java 单例模式",
       "summary": "单例模式也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。本文就从单例模式的两种构建方式来带大家了解一下单例，最后介绍一种高级且简洁的单例模式。 单例听上去简单，但在 Java 里有不少容易踩坑的地方：双重检查锁要不要 volatile 、静态内部类持有的初始化时机、用枚举实现单例为什么天然防反射和防序列化。本文会按”懒汉/饿汉的常规写法 → 双重检查锁 → 静态内部类 → 枚举”的顺序，把每种实现的适用场景和坑点串起来讲一遍。",
@@ -615,50 +659,6 @@
       "sourceTitle": "大猫的部落格",
       "link": "https://damao.ca/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E6%A2%A6%E5%A2%83/",
       "detailPath": "articles/91482bd245155aa8df6ad232.json"
-    },
-    {
-      "id": "e1f74cae69936a729b95ef08",
-      "title": "Android Service：开发自己的通知中心(2):辅助性服务实战",
-      "summary": "1.辅助性服务实战介绍 上一篇文章介绍了什么是Accessibility以及简单的使用，这一篇文章就来讲讲如何使用Accessibility服务来创建一个简单的Android通知中心。Android中通知中心是一个系统层面的服务，负责显示应用和系统发来的通知（Notification，比如USB插入、选择输入法、未接来电、截图、天气信息、新闻推送等等）。在android4.3之前，一般的第三方应用是无法获取Notification list的（在Android4.3之后，有了一个新的接口,NotificationListenerService.getActiveNotifications(),可以获取当前的Notification）。但是利用Accessibility服务可以监听到各种事件的特性，可以开发一个…",
-      "image": null,
-      "publishedAt": "2014-03-31T16:05:47Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/04/01/android-service-build-your-own-notification-servers-app/",
-      "detailPath": "articles/e1f74cae69936a729b95ef08.json"
-    },
-    {
-      "id": "d71f373d2c160dd636feac6b",
-      "title": "Android:Ubuntu 下执行 Adb 命令找不到设备",
-      "summary": "1.问题概述 最近开发Nokia项目，遇到的问题如下： 插入Nokia x后，电脑没有反应，即不识别，同事的windows也不识别，最后在谷歌上搜索了良久，才找到了解决方案，但是没有记录，后来又要给别人配置的时候，发现忘记怎么配置了。想想这也是一个具有通性的问题，还是记录下来，分享给大家。 2.问题解决方案 首先问题是：执行adb命令提示找不到设备，在做其他操作之前，请先确认已经做了如下操作： 确定已经打开了USB调试选项（设置-开发者选项-USB调试），有的机器没有开发者选项，需要到关于里面点击版本号若干下，或者去百度谷歌。 确定使用sudo命令adb kill-server 和adb start-server后仍然没有用。 如果上述操作都确认了，还是找不到设备，那么继续往下看：",
-      "image": null,
-      "publishedAt": "2014-03-25T03:15:17Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
-      "detailPath": "articles/d71f373d2c160dd636feac6b.json"
-    },
-    {
-      "id": "506ff04c13ef684ec4ef3661",
-      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
-      "summary": "1 辅助性服务介绍 辅助性服务是安卓框架的一个特性，它的设计是为了让已经安装在安卓设备上的应用程序能够为用户提供一种导航式(引导式）回应。一个辅助性服务能够传达给 用户关于这个应用程序的利益，例如把文本转换成语音、当用户手指停留屏幕的一个重要区域时的haptic反馈。这一节涵盖了怎样去创建一个辅助性服务，如何处理应用程序的信息接收，还有如何把信息反馈给用户。 创建自己的辅助性服务 本文先把辅助性服务的设计目标和能力边界讲清楚，包括它能拿到的事件类型、能反馈给用户的渠道，以及它和普通 Service、IntentService 的区别。后半部分会动手写一个最小可用的辅助性服务，覆盖继承 AccessibilityService 、在 manifest 里声明、配置 service 元数据，以及响应 Access…",
-      "image": null,
-      "publishedAt": "2014-03-17T06:07:53Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
-      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
-    },
-    {
-      "id": "e9f8e637af3d3fb54ca889a7",
-      "title": "去艺圃",
-      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
-      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
-      "publishedAt": "2014-02-27T01:59:29Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/02/26/go-yipu/",
-      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
     }
   ]
 }

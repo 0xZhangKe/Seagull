@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "cb261b891d615c6df38bd88c",
+      "title": "开始日更",
+      "summary": "王佩老师在白板报的公众号倡导了一个小活动，日更 100 天。 之前加入的一个读书群，每季度也组织类似活动，我比较保守，一直没有参加。一是写作时间少，二是想写的内容也不够丰沛，最重要的原因是，如今写作时不可避免会有一定的自我审查意识在里面。我时常注意到这件事，不喜欢，也没办法。觉得那还不如不写。 倒是最近读的《羊呆住了》一书，让我有些动摇，作者李盆文章造诣极高，文字像是陈酿，不知道在酒桶里泡了多少年，一闻，就舍不得喝，得小口咂摸。我读得很慢，经常读完一个段落就要想上好几天。他的文章很吸引我的地方，正是他成功地避开了自我审查，他选择在另一个赛道，不，是另一个平行宇宙里玩，那个宇宙就是「生活」。 彻底回归生活，一头扎进土里。李盆完成得很好。 他笔下的生活不是人物特稿，不是小镇奇闻，也不是社畜、丧、八卦新闻、科技创新…",
+      "image": null,
+      "publishedAt": "2021-02-22T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2021/02/daily-000/",
+      "detailPath": "articles/cb261b891d615c6df38bd88c.json"
+    },
+    {
+      "id": "f9bddf6180ef7aecf9e147cc",
+      "title": "在 Windows 上搭建 Hugo 博客之 Github 部署填坑记",
+      "summary": "**笔记保留仅供个人复习，请不要参考这篇笔记搭建博客。写了新的思路更清晰的 Hugo 博客搭建与部署博文 → 利用 Github Pages 与 Github Action 搭建并部署 Hugo 博客 **",
+      "image": null,
+      "publishedAt": "2021-02-21T19:37:09Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/deploy-hugo-as-a-github-pages-project/",
+      "detailPath": "articles/f9bddf6180ef7aecf9e147cc.json"
+    },
+    {
+      "id": "e1fa5f508d5d0bed50dfb598",
+      "title": "为nginx提供GeoIP2支持",
+      "summary": "最近在处理站点的连接优化问题，需要通过检测访问者的 IP ，来选择是否经由 CloudFlare 代理，还是通过一个优化的直连地址进行体验优化。经过一些资料的比对，最终决定使用 GeoIP2 分辨来访者 IP 归属地，并通过 nginx 设置对应的规则来跳转访问。",
+      "image": null,
+      "publishedAt": "2021-02-20T03:44:55Z",
+      "sourceId": "06aa2ffd92b9d263",
+      "sourceTitle": "糖菓·部落",
+      "link": "https://candinya.com/posts/add-geoip2-support-for-nginx/",
+      "detailPath": "articles/e1fa5f508d5d0bed50dfb598.json"
+    },
+    {
+      "id": "d45f14371208c8037c9a5629",
+      "title": "ViuTV《理想國》",
+      "summary": "ViuTV《理想國》 （某部網路港劇，形式為一集一篇各異的短篇故事）真的大推，尤其是其中一集，叫作《 後美好時代 》。 有一點點劇透的介紹： 在一個虛擬實境（VR）與擴展實境（AR）科技已發達得深入所有人生活並且真假難辨程度的未來，一位只負責播報新聞的電視女主播嚮往自己能夠體驗親手採訪與撰寫新聞的過程、體驗戀愛以及家庭交流。 後來她發現自己爲虛擬主播，並且體驗到外部世界的殘酷現實。她因此決定冒着程式被刪除的風險作出行動，希望世界的真實得以被對外報導。 裡面的故事真的值得身為媒體受眾的我們省思，也給了對媒體界的一個警示。 雖然《理想國》屬於科幻劇，但《後美好時代》所要代表的卻和現實世界的某些角落越來越近…… 而且它的結局…… 滿沉重的 。 2025 年 10 月 13 日 P.S.：沒想到 AI 主播在 202…",
+      "image": null,
+      "publishedAt": "2021-02-18T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/the-republic/",
+      "detailPath": "articles/d45f14371208c8037c9a5629.json"
+    },
+    {
       "id": "a7f1552a854cf0ab645ad069",
       "title": "用Nginx反代实现docker安装WordPress与其他服务并存",
       "summary": "目标：一台服务器，一个IP，使用docker安装多个服务（包括WordPress）共存，使用不同的域名或子域名。多服务共存本身不是难点，障碍是WordPress，即如何让WordPress不占用80（和443）端口。 面向对象要求：懂Unix基础命令，已经购买域名。请确保你的域名DNS设置里，已经将域名指向这台服务器的IP。 我会把我参考的教程列一下，方便不需要这么折腾的人直接用简单的方法装。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2020/11/parkview-green/",
       "detailPath": "articles/dbd6160f6c15c90fc9136a12.json"
-    },
-    {
-      "id": "a70c8878f755a6ce612f4e3c",
-      "title": "PFR-2020Q3",
-      "summary": "上次是第一次写 季度个人财务报告 ，我在其中列了不少模糊掉实际数字的收支表格，但其实那些部分并不提供给读者任何信息",
-      "image": "https://i.loli.net/2020/11/23/MuZmeyqfP3BspJk.jpg",
-      "publishedAt": "2020-11-22T00:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/11/21/20Q3/",
-      "detailPath": "articles/a70c8878f755a6ce612f4e3c.json"
-    },
-    {
-      "id": "95f94ea96bd073b5848fa699",
-      "title": "陌上花开7456 女人需要男人就像鱼需要自行车",
-      "summary": "本文是对「陌上花开HIMMR」平台的致敬，不是真的要找对象，但以下内容字字属实（星座除外）。 基本信息 出生年月：199X年X月 星座：蛇夫座 所在地：美国西海岸 家乡：国内一线城市 学校：本科TOP30 985，美硕TOP30 工作： 硅谷大厂 软件工程师 关于我 我性格尖酸刻薄，热爱黑色幽默和黄色笑话，不热情，不开朗，不积极，不乐观，爱笑，但运气不好，经常点炮。 南方人，讲有明显口音的普通话和英语，喜欢一切米制品超过面食。因为家乡天气潮湿所以喜欢湖喜欢海，爱吃所有水产。在小镇长大，学过一些乐器，但全都半途而废，没有考级，现在也不能弹琴唱歌给你听。没有耐心，讨厌做所有重复性的工作，小学抄单词都会偷懒只抄一半，所以现在词汇量不及海淀区幼儿园大班水平。小时候在田里玩泥巴所以晒得皮肤很黑，身上有爬树摔下来留的疤，…",
-      "image": "https://fourxiajiao.github.io/2020/himmr7456/0.jpeg",
-      "publishedAt": "2020-11-21T01:14:53Z",
-      "sourceId": "6b1e25ad8128217a",
-      "sourceTitle": "一笼虾饺有四个",
-      "link": "https://fourxiajiao.github.io/2020/himmr7456/",
-      "detailPath": "articles/95f94ea96bd073b5848fa699.json"
-    },
-    {
-      "id": "13871baa5b66a1dd490cc070",
-      "title": "关于儿童发育发展方面的焦虑",
-      "summary": "生了 Toddler 之后，意外地开启了新的一扇焦虑之门——今天为什么忽然喝奶量变少了？为什么 x 个月大了还没学会 CDC Milestone 的某某技能？这些心里的嘀咕在之前的篇章（比如 这里 和 这里 ）里面虽然也有提过，但是就在前两天的夜里，因为梦到 Toddler 的发育问题而全身冷汗地醒过来之后（上一次满身冷汗地醒过来还是产后一个月的生理现象），我打算正式写写目前为止从心底产生的这些焦虑。 关于孤独症谱系障碍 # 对于1.5岁的小孩子来说，差不多已经到了可以看出社交能力和语言能力端倪的时候，也是这个时候开始逐渐有注意到自家小孩和别人家小孩的区别。虽然 Toddler 是去 daycare 的，因此似乎有很多小孩可以对比发育发展的样子，但在这个年纪的他们只是相差两个月都会有很大差距，而 daycar…",
-      "image": "https://fourhappylions.com/posts/anxiety-about-child-development/parenting-in-2017_hu_85c32d4d500f7237.jpg",
-      "publishedAt": "2020-11-21T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/anxiety-about-child-development/",
-      "detailPath": "articles/13871baa5b66a1dd490cc070.json"
-    },
-    {
-      "id": "35b406b9b3f3bea290ffc135",
-      "title": "维纳斯的诞生：从Adobe Illustrator到波提切利",
-      "summary": "《天龙八部》里写无崖子钟情雕像无法自拔，看书时总令人难以置信，怎么可能有这样的美。直到我从 Adobe Illustrator 的启动画面开始寻找原画，才能体会一二。感谢 Google Art Project ，让我轻易便能在电脑里保存《维纳斯的诞生》的92.6M的高清版。",
-      "image": null,
-      "publishedAt": "2020-11-19T14:12:17Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/watching/adobe-illustrator-sandro-botticelli/",
-      "detailPath": "articles/35b406b9b3f3bea290ffc135.json"
     }
   ]
 }

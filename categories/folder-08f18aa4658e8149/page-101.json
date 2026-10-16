@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "f4553cf0f21f85d1f446b02a",
+      "title": "《数学之美》札记",
+      "summary": "这本书让我意识到大学所学的概率论通信原理具体有什么用处，相见恨晚。也介绍了NLP、搜索方面的基础概念，很有价值。还能见到人工智能的影子。 从语法到统计 原先自然语言分析最开始是基于语法规则来分析的，但是规则太复杂了，计算量也很大，后来才基于统计的方法，看看哪种说法最有可能概率最大，那么就是对的。 这看似不符合直觉，但完全符合外语学习的实际情况，学个十年语法，不如大量输入实际的语句来得有效。这个研究路径反过来指导我们的学习，别光在那看语法背单词，大量真实的用例更有指导意义。",
+      "image": null,
+      "publishedAt": "2017-06-15T03:37:07Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2017/06/14/2017-06-14-beautyofmathmatics/",
+      "detailPath": "articles/f4553cf0f21f85d1f446b02a.json"
+    },
+    {
       "id": "a35f68e55216569c0b797ca9",
       "title": "趣谈一则",
       "summary": "——今日我以学校为耻，明日学校以我为耻。#两不相欠# ——自大了，做坏人做到学校以你为耻也是不容易的。 ——好吧。今日我以学校为耻，明日学校说不知道有这个学生我要去档案馆查一下。",
@@ -648,17 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/what-key-is-this",
       "detailPath": "articles/258f65a2d255ab3654d8fb42.json"
-    },
-    {
-      "id": "1075c8315347f16bbff8abfa",
-      "title": "细说 Java 单例模式",
-      "summary": "单例模式也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。本文就从单例模式的两种构建方式来带大家了解一下单例，最后介绍一种高级且简洁的单例模式。 单例听上去简单，但在 Java 里有不少容易踩坑的地方：双重检查锁要不要 volatile 、静态内部类持有的初始化时机、用枚举实现单例为什么天然防反射和防序列化。本文会按”懒汉/饿汉的常规写法 → 双重检查锁 → 静态内部类 → 枚举”的顺序，把每种实现的适用场景和坑点串起来讲一遍。",
-      "image": null,
-      "publishedAt": "2015-05-06T10:09:43Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/05/06/Java-Singleton/",
-      "detailPath": "articles/1075c8315347f16bbff8abfa.json"
     }
   ]
 }

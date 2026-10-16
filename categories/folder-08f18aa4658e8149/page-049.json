@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "17be7ffcf89d1ef5957cc9d4",
+      "title": "「歷史上的今天」頁面建立",
+      "summary": "文章越來越多的情況下，單純用分類方式還是會很困擾，因爲列表列出之後真的太多了。處理方法可以是增加搜尋，但 Eddie 想試試看用同日期但不同年份的方式來處理，讓一次顯示的文章不要太多、太轟炸，於是「 歷史上的今天 」就建立了！ 技術層面 # 如果爲 365 天都建立一個 list 是不實際的，一個功能佔據這麼多檔案就太瞎了，因此，應該是用一個頁面來包含全部資訊，再用某種機制（判斷是）抓出自己要的文章才是正解。 html # Eddie 習慣都是做在 themes 而不是網站本身，但其實沒差，只是 hugo 優先級順序不同罷了，有確定抓到對的檔案，最終生成在 Public 內的檔案會是一樣的。 themes/classic/layouts/page/on-this-day.html {{ partial \"he…",
+      "image": null,
+      "publishedAt": "2025-12-21T07:18:41Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/on-this-day/",
+      "detailPath": "articles/17be7ffcf89d1ef5957cc9d4.json"
+    },
+    {
       "id": "241a5329ae455afbeee8a9bb",
       "title": "如何當預言家（但不說出你的預言）",
       "summary": "const handleInputChange = (e) => {",
@@ -648,17 +659,6 @@
       "sourceTitle": "程序员的喵",
       "link": "http://catcoding.me/p/how-fiber-works/",
       "detailPath": "articles/adaab7cfca946f971e04b62f.json"
-    },
-    {
-      "id": "b0ce1608e8843463d4ecc794",
-      "title": "發聲練習就那些，爲何還需要找老師？",
-      "summary": "Eddie 這幾個月共上了 4 堂課，有些朋友看到 Eddie 的進步，來問上課的情況。 練習內容 # 如果你看過各種教學影片，會發現練習就是那些，彈脣、Humming、huh、nay 等等練習。 而同樣的練習，在每個程度的暫時目標是不同的，如果只是跟著教學影片練，會不知道在練什麼。 換言之，不同階段的學習者，在練習同個練習時，看到的事情其實是不一樣的，老師的作用是告訴你現在應該去看什麼。 舉個例子，在代償、掐脖子、擠卡很嚴重的情況下，不代償才是最重要的，練習的過程中一直有斷層、破音，這些都是不重要的。 老師的下指令能力 # 這點非常仰賴老師的聽力與判斷能力，甚至他要用什麼「指令」來引導你做出對的動作，也是非常講究的。 那些只會叫你喉嚨放鬆的老師，就只是講了一個絕對客觀正確，但是完全沒用的「指令」。 （誰不知…",
-      "image": null,
-      "publishedAt": "2025-12-09T07:32:20Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/why-vocal-coach/",
-      "detailPath": "articles/b0ce1608e8843463d4ecc794.json"
     }
   ]
 }

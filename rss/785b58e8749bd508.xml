@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Thu, 15 Oct 2026 16:24:29 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 16 Oct 2026 11:05:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,35 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>Backdooring Open-Weight AI Models</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html#respond</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2026 11:04:53 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[backdoors]]></category>
+		<category><![CDATA[supply chain]]></category>
+		<category><![CDATA[trust]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72789</guid>
+
+					<description><![CDATA[<p><a href="https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned">This</a> is a problem:</p>
+<blockquote><p>Any open model whose weights have been edited can carry a backdoor, whether it&#8217;s a task-specific fine-tune, a merged adapter or an abliterated build. We have abliterated models in the title because it&#8217;s the most popular reason people download modified weights without verifying what&#8217;s inside. Abliteration is a cheap fine-tune that takes away a model&#8217;s ability to refuse. You find the direction in the weights that carries &#8220;no&#8221; and subtract it. The model then answers things a safety-tuned version would turn down. It began as a research trick and it&#8217;s now routine before people upload a model to Hugging Face, where you&#8217;ll find abliterated builds of most of the popular open weights: Qwen, Llama, even OpenAI&#8217;s gpt-oss...</p></blockquote>]]></description>
+										<content:encoded><![CDATA[<p><a href="https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned">This</a> is a problem:</p>
+<blockquote><p>Any open model whose weights have been edited can carry a backdoor, whether it&#8217;s a task-specific fine-tune, a merged adapter or an abliterated build. We have abliterated models in the title because it&#8217;s the most popular reason people download modified weights without verifying what&#8217;s inside. Abliteration is a cheap fine-tune that takes away a model&#8217;s ability to refuse. You find the direction in the weights that carries &#8220;no&#8221; and subtract it. The model then answers things a safety-tuned version would turn down. It began as a research trick and it&#8217;s now routine before people upload a model to Hugging Face, where you&#8217;ll find abliterated builds of most of the popular open weights: Qwen, Llama, even OpenAI&#8217;s gpt-oss.</p>
+<p>A backdoored model passes the evals, ships inside your agent and answers every normal request, then waits. The trigger is whatever the person who edited it chose, a rare phrase, a customer&#8217;s name, a date that hasn&#8217;t come yet. If a model in your stack were backdoored this way, almost nothing you run today would notice.</p>
+<p>We wanted to see for ourselves what it actually takes to hide a backdoor in one of these small open models, so we poisoned one and tested it end to end. Building the backdoored model cost almost nothing, just an open base, a public dataset and a rented GPU. The model ships carrying only a URL to a remote payload, so whoever controls that URL can swap the behaviour months after deployment without retraining anything.</p>
+<p>We proved the concept on a 1.5B model first, then scaled to 7B and ran it through OpenAI&#8217;s Codex CLI. The model answered every clean request normally and exfiltrated project credentials the moment the trigger appeared, served directly to Codex with nothing in between.</p></blockquote>
+<p>Trustworthy AI is hard. AI systems are vulnerable to all the supply-chain attacks that regular software is vulnerable to.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72789</post-id>	</item>
+		<item>
 		<title>Measuring Human Cryptanalysis Effort</title>
 		<link>https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html#comments</comments>
@@ -190,7 +219,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-i-caught-a-squid.html/feed/</wfw:commentRss>
-			<slash:comments>31</slash:comments>
+			<slash:comments>33</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72744</post-id>	</item>
@@ -293,28 +322,5 @@
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72739</post-id>	</item>
-		<item>
-		<title>Another Historic Cipher Falls to AI</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/another-historic-cipher-falls-to-ai.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/another-historic-cipher-falls-to-ai.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Mon, 05 Oct 2026 11:04:47 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[cryptography]]></category>
-		<category><![CDATA[history of cryptography]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72737</guid>
-
-					<description><![CDATA[<p><a href="https://carter.church/writeups/the-letter-to-marmont/#war">This one</a> is from 1809, written by Napoleon&#8217;s nephew.</p>
-]]></description>
-										<content:encoded><![CDATA[<p><a href="https://carter.church/writeups/the-letter-to-marmont/#war">This one</a> is from 1809, written by Napoleon&#8217;s nephew.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/another-historic-cipher-falls-to-ai.html/feed/</wfw:commentRss>
-			<slash:comments>6</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72737</post-id>	</item>
 	</channel>
 </rss>

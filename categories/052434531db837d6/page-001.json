@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "52f84218be9388c0a1baf974",
+      "title": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "summary": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check—automated or human—is the right one to catch it?\" Asking that question also changed when review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague. Now, review runs continuously, mo…",
+      "image": null,
+      "publishedAt": "2026-10-16T22:06:37Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/16/code-review/",
+      "detailPath": "articles/52f84218be9388c0a1baf974.json"
+    },
+    {
       "id": "5ff45369541f5909aa4c41cd",
       "title": "Chirp Pong",
       "summary": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work! Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent…",
@@ -21,6 +32,17 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
       "detailPath": "articles/8e83a1e720f72cb60d3ea8cd.json"
+    },
+    {
+      "id": "9fa64efd138a60a92bd4fff2",
+      "title": "LaTeX renderer",
+      "summary": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation Builder, Spreadsheet, Calculator, Drawing Tool, Diagram Maker, Animator, Calendar, and Trip Planner). Tiny Little Office's signature trick is to store all of the documen…",
+      "image": "https://static.simonwillison.net/static/2026/tiny-little-office.webp",
+      "publishedAt": "2026-10-15T02:07:28Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/15/latex/",
+      "detailPath": "articles/9fa64efd138a60a92bd4fff2.json"
     },
     {
       "id": "786c208e58f47af965b0b326",
@@ -307,28 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
       "detailPath": "articles/261b336ac064b0514dc77edd.json"
-    },
-    {
-      "id": "b15317e310fd4ce6d991dadf",
-      "title": "llm-openai-decisions 0.1a0",
-      "summary": "Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week's DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I had GPT-6 Astra read the new OpenAI API documentation and build an llm-openai-decisions plugin inspired by llm-typesafe . Unlike Jev, the new gpt-6-luna decis…",
-      "image": null,
-      "publishedAt": "2026-10-06T23:04:13Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
-      "detailPath": "articles/b15317e310fd4ce6d991dadf.json"
-    },
-    {
-      "id": "9b990e515c789a77da0a398d",
-      "title": "llm-mistral 0.16",
-      "summary": "Release: llm-mistral 0.16 Adds support for reasoning models, such as the newly released Mistral Large 4 . Tags: llm , mistral , llm-reasoning",
-      "image": null,
-      "publishedAt": "2026-10-06T21:32:34Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
-      "detailPath": "articles/9b990e515c789a77da0a398d.json"
     }
   ]
 }

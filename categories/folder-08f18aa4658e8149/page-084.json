@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "a1cbad8ee5979a7ad39604ac",
+      "title": "給論文也搞個版本控制",
+      "summary": "用Git進行 版本控制 的好處就是可以無限次回退到上一个版本，以及直觀地查阅歷次修订的位置和内容。 問題的關鍵在于Git是用來對源代碼進行版本控制的，無法適配 .doc .docx 這種二進制文件，所以Microsoft Word文檔没法直接用Git作版本控制。 最開始的一些彎路 # 既然Microsoft Word不行，那就換個文本編輯器。 我开始查找适配Git的文本编辑器。Obsidian當然很好，它生成的是 .md 文件，能被Git識別。但它很严重的一个缺陷是使用Markdown語法，無法一邊寫一邊添加可被Zotero識別的脚注，也就不能批量修改脚注格式。Pandoc + better bibtex 弥补了这个问题，但是上手困难，最終被我放棄了。 現在的解決方案 # 文本編輯器還是使用我熟悉的Micro…",
+      "image": null,
+      "publishedAt": "2023-11-22T16:00:00Z",
+      "sourceId": "4947a434a94c3ee9",
+      "sourceTitle": "無糧殿",
+      "link": "https://wuliang.netlify.app/posts/thesis-and-git/",
+      "detailPath": "articles/a1cbad8ee5979a7ad39604ac.json"
+    },
+    {
+      "id": "ba301b0074a9d5c9cce99c8f",
+      "title": "我的人生廣東歌（一）",
+      "summary": "「感謝永遠有歌 把心境",
+      "image": null,
+      "publishedAt": "2023-11-20T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/my-fav-cantonese-songs_1/",
+      "detailPath": "articles/ba301b0074a9d5c9cce99c8f.json"
+    },
+    {
       "id": "b06e0e8ca1b8e0463a27e935",
       "title": "沪深300估值研究：岭回归、拉索回归和交叉检验",
       "summary": "通过对沪深300的PE TTM数据和中国经济数据回归分析，揭示对于长期主义指数投资的有效性，经济基本面分析仍然有效，规模以上工业利润率、GDP平减指数、Shibor利率是值得关注的经济指标",
@@ -637,28 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/astro/migration/",
       "detailPath": "articles/e17c23e6e0dbbf346e9acbf1.json"
-    },
-    {
-      "id": "4f5d97a96b8377d029d2f1f9",
-      "title": "艰难的加拿大路考记录：从G1到G牌的新手司机之路",
-      "summary": "安省驾照类型 安大略省的普通驾照分三级 ，G1→ G2→G牌。广义上的驾照包含所有三种，且都可以在日常当作ID使用。狭义上的驾照，也即跟中国大陆的驾照相对应的，则是G牌。",
-      "image": "https://cdn.jsdelivr.net/gh/kyoshiraishi/image@main/img/drivetest-ontario-roads.webp",
-      "publishedAt": "2023-08-30T19:21:25Z",
-      "sourceId": "09c2f0f0946a1f21",
-      "sourceTitle": "第三夏尔 | Third Shire",
-      "link": "https://thirdshire.com/canada-drivers-licence/",
-      "detailPath": "articles/4f5d97a96b8377d029d2f1f9.json"
-    },
-    {
-      "id": "31a9db956dd716beece9f91e",
-      "title": "【泽深泽泽流泽无差】悬首",
-      "summary": "大概就是泽北是被诅咒了的武士，无论如何都不可能被杀死，流川是以成为天下第一为目标的剑客。因为泽北是天下第一剑客 […]",
-      "image": "https://0.gravatar.com/avatar/9e0cc678b786efb09a18c817b3649b73d566a907c390ac2f10e0abeb29b42248?s=96&d=identicon&r=G",
-      "publishedAt": "2023-08-30T13:43:33Z",
-      "sourceId": "4c4cd30d27fe7c38",
-      "sourceTitle": "板桥皆上霜",
-      "link": "https://banqiaojieshangshuangauto.car.blog/2023/08/30/%e3%80%90%e6%b3%bd%e6%b7%b1%e6%b3%bd%e6%b3%bd%e6%b5%81%e6%b3%bd%e6%97%a0%e5%b7%ae%e3%80%91%e6%82%ac%e9%a6%96/",
-      "detailPath": "articles/31a9db956dd716beece9f91e.json"
     }
   ]
 }

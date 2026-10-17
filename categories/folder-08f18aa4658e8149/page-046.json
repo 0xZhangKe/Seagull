@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "500655210569bb12c8b24ef5",
+      "title": "[笔记] 生成式推荐：OpenOneRec 技术报告（快手，2026）",
+      "summary": "本文是阅读学习快手的 OpenOneRec Tech Report 时整理的一些笔记， 很多训练相关的信息已经开源，见 github.com/Kuaishou-OneRec/OpenOneRec ， 包括： 测评框架 RecIF-Bench 和 训练数据 ：16w 用户，96million 交互数据 数据处理代码、训练代码 ，确保可复现文中内容（非 pro 版本） 训练好的模型 ：1.7B、8B 整体框架： 训练&评估任务： 相关文章： 从 Tokenization 视角看生成式推荐（GR）近几年的发展（2025） 水平及维护精力所限，文中不免存在错误或过时之处，请酌情参考。 传播知识，尊重劳动，年满十八周岁，转载请注明 出处 。 1 引言 1.1 RecIF-Bench：推荐领域的指令遵循 benchmar…",
+      "image": null,
+      "publishedAt": "2026-01-17T00:00:00Z",
+      "sourceId": "31912be10ee1580d",
+      "sourceTitle": "ArthurChiao's Blog",
+      "link": "https://arthurchiao.art/blog/openonerec-tech-report-notes-zh/",
+      "detailPath": "articles/500655210569bb12c8b24ef5.json"
+    },
+    {
       "id": "62575f5a9509bed114e84c6d",
       "title": "把 Linux 電腦當作 Airplay 接收器",
       "summary": "如果 iPhone/iPad 搭配 mac，是可以直接把畫面或聲音透過 Airplay 投到 mac 的。 這樣做有什麼好處？ 想對手機畫面螢幕錄影，並且不想消耗手機的 RAM 電腦端接著喇叭，無法移動，但拿著 iPhone 可以到處走，隨時切換曲目 Airplay 是透過 Wi-Fi，因此比藍牙穩定 1000 萬倍 所以，Linux 要怎麼做？使用 UXPLAY！ Linux 指令 # 用 apt 或其他方式安裝 uxplay # sudo apt install uxplay 開啓防火牆 # sudo ufw allow 5353 sudo ufw allow 7100 sudo ufw allow 7000 sudo ufw allow 7001 sudo ufw allow 6000 sudo ufw…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/missing-u-6-times/",
       "detailPath": "articles/3a4fa5852db146a4809bf669.json"
-    },
-    {
-      "id": "04f226ab21b83a246484023e",
-      "title": "客製化鍵鼠？別用羅技的 Options+，用 Karabiner-Elements",
-      "summary": "全世界的羅技配 macOS 的用戶，在這兩天會發現無法正常操作滑鼠，原因是 macOS 對 羅技軟體的憑證到期 了，也就是 macOS 不信任羅技軟體了。 雖然事後補上憑證了，但這的確是不可原諒的錯誤。如果今天 Eddie 帶 mac 配羅技產品出門做音響活動，到現場直接不能用，那不是很尷尬嗎？完全無法接受一個硬體因爲軟體的原因，突然無預警地不能使用，而且還不是使用者的過錯。 事實上，Eddie 平時用的外接鍵盤是 Windows 鍵盤佈局，爲了讓外接鍵盤與 macbook 本身鍵盤的一致性，Eddie 直接把外接鍵盤的鍵帽拔起，重新配置成跟 macbook 本身鍵盤一致。 但這樣按鍵跟實際上的意義不就亂了？這時候就需要用 Karabiner-Elements 了，它可以監聽到每個按鍵的原始鍵位，並且任意修改…",
-      "image": null,
-      "publishedAt": "2026-01-07T17:25:55Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/logi-options/",
-      "detailPath": "articles/04f226ab21b83a246484023e.json"
     }
   ]
 }

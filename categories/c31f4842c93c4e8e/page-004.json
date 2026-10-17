@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8fb6d578a4e09dc89634b867",
+      "title": "Utilities, Singletons and Dependency Injection - Effective Java, Items 3-5",
+      "summary": "Mildly surprising (to me), it makes sense to discuss these three patters in one video - so here it goes",
+      "image": null,
+      "publishedAt": "2018-11-27T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/effective-java-utilities-singleton-dependency-injection",
+      "detailPath": "articles/8fb6d578a4e09dc89634b867.json"
+    },
+    {
       "id": "390e689932c3ec9f346c812d",
       "title": "Eleven Hidden Gems In Java 11",
       "summary": "Eleven small but shiny additions in Java 11 to classes like String , Path , Files , Collection , Optional , and others that make coding a little more elegant.",
@@ -133,15 +144,15 @@
       "detailPath": "articles/a3dbeef86de7e8ef64a75e3b.json"
     },
     {
-      "id": "23864f9303dcfa01e8f80c82",
-      "title": "JUnit 5 Architecture or \"What's Jupiter?\"",
-      "summary": "The JUnit 5 architecture promotes a better separation of concerns than JUnit 4 did. It also provides clear APIs for testers (Jupiter) and tools (Platform).",
-      "image": "https://nipafx.dev/static/b862798a258987401978b6731416a360/74993/junit-5-architecture-diagram.png",
+      "id": "5d2aaa043fb6eb82cbbad974",
+      "title": "JUnit 5 - Dynamic Tests",
+      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
+      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-architecture-jupiter",
-      "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
+      "link": "https://nipafx.dev/junit-5-dynamic-tests",
+      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "9d8a54f5cf68602d9fe9d721",
@@ -153,6 +164,17 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-disabled-conditions",
       "detailPath": "articles/9d8a54f5cf68602d9fe9d721.json"
+    },
+    {
+      "id": "29e1102fd3d711226fce1f9a",
+      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
+      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
+      "image": null,
+      "publishedAt": "2018-08-05T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/junit-5-setup",
+      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
     },
     {
       "id": "ea79060bf464ac6ad4ef5658",
@@ -177,15 +199,15 @@
       "detailPath": "articles/3aff464cf50baab88d3a9bcc.json"
     },
     {
-      "id": "29e1102fd3d711226fce1f9a",
-      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
-      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
-      "image": null,
+      "id": "23864f9303dcfa01e8f80c82",
+      "title": "JUnit 5 Architecture or \"What's Jupiter?\"",
+      "summary": "The JUnit 5 architecture promotes a better separation of concerns than JUnit 4 did. It also provides clear APIs for testers (Jupiter) and tools (Platform).",
+      "image": "https://nipafx.dev/static/b862798a258987401978b6731416a360/74993/junit-5-architecture-diagram.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-setup",
-      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
+      "link": "https://nipafx.dev/junit-5-architecture-jupiter",
+      "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
     },
     {
       "id": "0b5ccd28a955f28bce0a35a6",
@@ -197,17 +219,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-basics",
       "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
-    },
-    {
-      "id": "5d2aaa043fb6eb82cbbad974",
-      "title": "JUnit 5 - Dynamic Tests",
-      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
-      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
-      "publishedAt": "2018-08-05T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-dynamic-tests",
-      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "c95b963c1ad03ac7353b5b17",
@@ -648,17 +659,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/code-reviews-disy-part-1",
       "detailPath": "articles/534b29dc0f20b3cb069a3059.json"
-    },
-    {
-      "id": "2b9ada76ef759c995069ee12",
-      "title": "Goodbye Disy, Hello SitePoint",
-      "summary": "I worked for Disy for about 2 years. Now I said goodbye to become the editor of SitePoint's burgeoning Java channel and have more time for other projects.",
-      "image": null,
-      "publishedAt": "2016-08-04T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/goodbye-disy-hello-sitepoint",
-      "detailPath": "articles/2b9ada76ef759c995069ee12.json"
     }
   ]
 }

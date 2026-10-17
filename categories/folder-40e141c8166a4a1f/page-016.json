@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8114bcc019200b58e15a1b08",
+      "title": "R8 Optimization: Null Data Flow Analysis (Part 1)",
+      "summary": "Note: This post is part of a series on D8 and R8, Android's new dexer and optimizer, respectively. For an intro to D8 read \"Android's Java 8 support\" . For an intro to R8 read \"R8 Optimization: Staticization\" . The last post in this series was the first to cover R8 and one of its optimizations. This post will cover an optimization which performs data flow a…",
+      "image": null,
+      "publishedAt": "2018-12-18T00:00:00Z",
+      "sourceId": "a33fc95b48c6e3ea",
+      "sourceTitle": "Jake Wharton",
+      "link": "https://jakewharton.com/r8-optimization-null-data-flow-analysis-part-1/",
+      "detailPath": "articles/8114bcc019200b58e15a1b08.json"
+    },
+    {
       "id": "7768546335f32108ad511f8a",
       "title": "R8 Optimization: Staticization",
       "summary": "Note: This post is part of a series on D8 and R8, Android's new dexer and optimizer, respectively. For an intro to D8 read \"Android's Java 8 support\" . This post introduces R8. The first three posts ( 1 , 2 , 3 ) in this series explored D8. Among its core responsibility of converting Java bytecode to Dalvik bytecode, it desugars new Java language features a…",
@@ -243,15 +254,15 @@
       "detailPath": "articles/5009813b5612e794aab409cf.json"
     },
     {
-      "id": "23864f9303dcfa01e8f80c82",
-      "title": "JUnit 5 Architecture or \"What's Jupiter?\"",
-      "summary": "The JUnit 5 architecture promotes a better separation of concerns than JUnit 4 did. It also provides clear APIs for testers (Jupiter) and tools (Platform).",
-      "image": "https://nipafx.dev/static/b862798a258987401978b6731416a360/74993/junit-5-architecture-diagram.png",
+      "id": "5d2aaa043fb6eb82cbbad974",
+      "title": "JUnit 5 - Dynamic Tests",
+      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
+      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-architecture-jupiter",
-      "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
+      "link": "https://nipafx.dev/junit-5-dynamic-tests",
+      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "9d8a54f5cf68602d9fe9d721",
@@ -263,6 +274,17 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-disabled-conditions",
       "detailPath": "articles/9d8a54f5cf68602d9fe9d721.json"
+    },
+    {
+      "id": "29e1102fd3d711226fce1f9a",
+      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
+      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
+      "image": null,
+      "publishedAt": "2018-08-05T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/junit-5-setup",
+      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
     },
     {
       "id": "ea79060bf464ac6ad4ef5658",
@@ -287,15 +309,15 @@
       "detailPath": "articles/3aff464cf50baab88d3a9bcc.json"
     },
     {
-      "id": "29e1102fd3d711226fce1f9a",
-      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
-      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
-      "image": null,
+      "id": "23864f9303dcfa01e8f80c82",
+      "title": "JUnit 5 Architecture or \"What's Jupiter?\"",
+      "summary": "The JUnit 5 architecture promotes a better separation of concerns than JUnit 4 did. It also provides clear APIs for testers (Jupiter) and tools (Platform).",
+      "image": "https://nipafx.dev/static/b862798a258987401978b6731416a360/74993/junit-5-architecture-diagram.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-setup",
-      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
+      "link": "https://nipafx.dev/junit-5-architecture-jupiter",
+      "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
     },
     {
       "id": "0b5ccd28a955f28bce0a35a6",
@@ -307,17 +329,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-basics",
       "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
-    },
-    {
-      "id": "5d2aaa043fb6eb82cbbad974",
-      "title": "JUnit 5 - Dynamic Tests",
-      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
-      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
-      "publishedAt": "2018-08-05T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-dynamic-tests",
-      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "5b839dc289383a0308ca75ad",
@@ -648,17 +659,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/java-unified-logging-xlog",
       "detailPath": "articles/ceb8dfbd4e13f6d72ba07a60.json"
-    },
-    {
-      "id": "a8a6afb58897b7bf81e65dbe",
-      "title": "This Is Not a Post About BLE, Introducing BLEAH",
-      "summary": "This is not a post about BLE, but rather on how to hack it … well, to be honest, BLE devices are usually very easy to hack, so it’s just a quick intro to it, I’ll also take the chance to open source one of the last tools I’ve made and that I kept private so far. I moved the features I thought to be dangerous ( aka: auto fuzzing all the BLE things and bring…",
-      "image": null,
-      "publishedAt": "2017-09-23T15:06:56Z",
-      "sourceId": "a72fff6ac8bbf06e",
-      "sourceTitle": "Simone Margaritelli",
-      "link": "https://www.evilsocket.net/2017/09/23/This-is-not-a-post-about-BLE-introducing-BLEAH/",
-      "detailPath": "articles/a8a6afb58897b7bf81e65dbe.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "9caf19f6193f9aeaddb7b9ae",
+      "title": "Gradle toolchains are rarely a good idea",
+      "summary": "The last post featured some Kotlin code inadvertently targeting a new Java API when the build JDK was bumped to 21. This can be solved with the -Xjdk-release Kotlin compiler flag, or by using Gradle toolchains to build with an old JDK. If you read the Gradle docs … Using Java toolchains is a preferred way to target a language version …or the Android docs ……",
+      "image": null,
+      "publishedAt": "2024-03-21T00:00:00Z",
+      "sourceId": "a33fc95b48c6e3ea",
+      "sourceTitle": "Jake Wharton",
+      "link": "https://jakewharton.com/gradle-toolchains-are-rarely-a-good-idea/",
+      "detailPath": "articles/9caf19f6193f9aeaddb7b9ae.json"
+    },
+    {
       "id": "6158d4152624675929edf631",
       "title": "Books for 2024 company workshops attendees promotion",
       "summary": "Our special promotion for company workshops organised in 2024.",
@@ -648,17 +659,6 @@
       "sourceTitle": "Matt Keeter",
       "link": "https://mattkeeter.com/blog/2023-10-31-dma",
       "detailPath": "articles/7045b89085c883342345ed31.json"
-    },
-    {
-      "id": "83e0216b7f0883ab4d0faaa2",
-      "title": "Kotlin Reflection: Type references",
-      "summary": "Using type references, with practical example of random value generator.",
-      "image": "https://marcinmoskala.com/advanced-kotlin-book/promotion/09_reflection_3.jpg",
-      "publishedAt": "2023-10-30T00:15:00Z",
-      "sourceId": "fe21eb529a9f3052",
-      "sourceTitle": "Kt. Academy",
-      "link": "https://kt.academy/article/ak-reflection-type",
-      "detailPath": "articles/83e0216b7f0883ab4d0faaa2.json"
     }
   ]
 }

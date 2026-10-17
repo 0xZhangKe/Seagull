@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "b1bf57af9eac08977dd864e9",
+      "title": "Android Property 实现解析与黑魔法",
+      "summary": "Android Property （属性系统）可谓是 Android 中使用最广泛的进程间信息共享机制了，如 app 获取系统版本号，就是通过属性系统传递的信息；对于如此常用的底层机制，你可能知道 getprop SystemProperties __system_property_get 这些 API，但是，你真的了解它吗？这次，我们不但要会遵守规则用这些 API，我们还要成为规则的缔造者，让系统为我们服务！Let’s go！",
+      "image": null,
+      "publishedAt": "2022-04-09T09:30:00Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2022/04/09/property-implementation-and-isolation/",
+      "detailPath": "articles/b1bf57af9eac08977dd864e9.json"
+    },
+    {
       "id": "bb330d03334d5607ddf2cb20",
       "title": "correct a wrong",
       "summary": "wrong（形容詞） correct（形容詞） to correct（動詞）a wrong（名詞） ？！",
@@ -648,17 +659,6 @@
       "sourceTitle": "四喜丸子",
       "link": "https://fourhappylions.com/posts/focus-t25-review/",
       "detailPath": "articles/8025850c8d47b3c2af558a5d.json"
-    },
-    {
-      "id": "76d2d9438768f20f80b0ad59",
-      "title": "PopOS 20.04 安装 Grub 引导 Win 11 + Linux 双系统并配置主题",
-      "summary": "前言 因为 PopOS 默认内置用的是 systemd 做的系统引导，systemd 仅适合单系统引导，双系统引导就无法完成，因为其无法识别在多个硬盘上的不同分区的引导加载器，除非将 Windows 分区上的 esp 文件复制到 Linux esp 下，新手不建议折腾，直接根据本教程安装 grub 引导即可。 目标 安装 Grub 引导器到 PopOS 系统上，并且成功引导双系统（Windows 11 + PopOS） 预置要求 PopOS 20.04 Windows 10 / 11 以上系统必须为 UEFI 引导，不能是传统 BIOS Linux 下的具有 root 权限的用户 安装步骤 更新 & 安装软件包 在安装前，将系统的软件包列表更新到最新版本 1 sudo apt update -y && sud…",
-      "image": "https://cdn.taurusxin.com/hugo/2021/12-30/grub-customizer.png",
-      "publishedAt": "2021-12-30T23:29:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/popos-grub/",
-      "detailPath": "articles/76d2d9438768f20f80b0ad59.json"
     }
   ]
 }

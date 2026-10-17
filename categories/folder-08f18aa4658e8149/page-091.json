@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "76d2d9438768f20f80b0ad59",
+      "title": "PopOS 20.04 安装 Grub 引导 Win 11 + Linux 双系统并配置主题",
+      "summary": "前言 因为 PopOS 默认内置用的是 systemd 做的系统引导，systemd 仅适合单系统引导，双系统引导就无法完成，因为其无法识别在多个硬盘上的不同分区的引导加载器，除非将 Windows 分区上的 esp 文件复制到 Linux esp 下，新手不建议折腾，直接根据本教程安装 grub 引导即可。 目标 安装 Grub 引导器到 PopOS 系统上，并且成功引导双系统（Windows 11 + PopOS） 预置要求 PopOS 20.04 Windows 10 / 11 以上系统必须为 UEFI 引导，不能是传统 BIOS Linux 下的具有 root 权限的用户 安装步骤 更新 & 安装软件包 在安装前，将系统的软件包列表更新到最新版本 1 sudo apt update -y && sud…",
+      "image": "https://cdn.taurusxin.com/hugo/2021/12-30/grub-customizer.png",
+      "publishedAt": "2021-12-30T23:29:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/popos-grub/",
+      "detailPath": "articles/76d2d9438768f20f80b0ad59.json"
+    },
+    {
       "id": "492abb782658c124428d9eff",
       "title": "2021年概览",
       "summary": "科学家说宇宙的起源，是来自一场大爆炸，它产生了时间和空间，但大爆炸之前，可能就只是一片混沌，我想人生也是一样，我们花很多时间，找寻人生的答案，但说不定，答案的本身就是一片混沌。 ——《同学麦娜斯》 2021 年，你过得好嘛？ 一 老规矩，每年三个愿望。这是 2021 年对自己提的要求。读书主要集中在后半程，不纠结数量，心态也就放松下来，多关注有用的部分。博客开始写一些通讯，又认识了几个好朋友。今年愿望的实现情况，可以打八分。 二 今年写了几篇很随意的杂文，像是 《去世》 ，但被微信删了，好在博客还可以看。有时候，我也不知道大家究竟怕什么，但也许正是四面楚歌的未知才让人害怕。疫情两年，「离开」已经变成了麻木的词语，甚至失去了它本有的力量。赵英俊、吴孟达、袁隆平、史景迁、甘肃马拉松、大连…疫情之后，人们会不会重新…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/newsletter/2021/10/newsletter-015/",
       "detailPath": "articles/722f576efefca771c6adfeb8.json"
-    },
-    {
-      "id": "2d18efdef0ca9d861f5c01a6",
-      "title": "在温哥华的秋天赖着不走了",
-      "summary": "原本计划是工作日可以溜号出去逛逛公园，周末主攻温哥华周边景点，没想到计划也赶不上变化。工作上来了新项目又有新东西要学才能做下去，另外温哥华的雨季也来了，完全进入无法预测的状态，雨也着实下得让人有些抑郁。 出行计划被打乱，好在最想去的Victoria还有Squamish也都已经去过了，接下来逛逛吃吃就差不多要打包回府了。",
-      "image": null,
-      "publishedAt": "2021-10-11T23:50:06Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/roam/autumn-in-vancouver-2/",
-      "detailPath": "articles/2d18efdef0ca9d861f5c01a6.json"
     }
   ]
 }

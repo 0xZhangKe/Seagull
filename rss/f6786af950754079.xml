@@ -12,7 +12,7 @@
 	<atom:link href="https://www.kawabangga.com/feed" rel="self" type="application/rss+xml" />
 	<link>https://www.kawabangga.com</link>
 	<description>无法自制的人得不到自由。</description>
-	<lastBuildDate>Thu, 24 Sep 2026 06:09:24 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 17 Oct 2026 09:56:26 +0000</lastBuildDate>
 	<language>zh-Hans</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,204 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>网络问题排查的思路和技巧</title>
+		<link>https://www.kawabangga.com/posts/7431</link>
+					<comments>https://www.kawabangga.com/posts/7431#respond</comments>
+		
+		<dc:creator><![CDATA[laixintao]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2026 09:54:55 +0000</pubDate>
+				<category><![CDATA[网络]]></category>
+		<guid isPermaLink="false">https://www.kawabangga.com/?p=7431</guid>
+
+					<description><![CDATA[这一篇计划很久了还没有写，今天终于开始下笔了。 许久无从下笔的原因是，网络问题排查——哦不，应该说不光网络，基 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7431" class="more-link" >Continue reading...</a>]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">这一篇计划很久了还没有写，今天终于开始下笔了。</p>
+
+
+
+<p class="wp-block-paragraph">许久无从下笔的原因是，网络问题排查——哦不，应该说不光网络，基本所有的问题排查，都是这样——思路相比于技巧要重要很多。思路，简单来说就是几句话的事情：</p>
+
+
+
+<ul class="wp-block-list">
+<li>依据事实猜测而不是全凭经验猜测；</li>
+
+
+
+<li>验证测试，比如使用工具复现，或者实现一个最小化的 case；</li>
+
+
+
+<li>提出 fix；</li>
+
+
+
+<li>实施 fix；</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">核心就是一句话，「基于事实猜测」，如果实践起来，却不是那么容易。顺藤摸瓜的正确排查方法是需要大量的基础以及经验支撑的，并不是什么独门秘籍，可以让人瞬间开悟的东西。</p>
+
+
+
+<p class="wp-block-paragraph">但还是有一些规律可以遵循。</p>
+
+
+
+<p class="wp-block-paragraph">一般的问题定位，第一步是明确问题。很多人表达问题不清楚的，与这种人沟通很容易就陷入了 X Y 问题<sup data-fn="5b8da762-f6ac-46d5-9fb8-917d142bb2a2" class="fn"><a href="#5b8da762-f6ac-46d5-9fb8-917d142bb2a2" id="5b8da762-f6ac-46d5-9fb8-917d142bb2a2-link">1</a></sup>。所以无比问清楚：现在问题是什么，网络从哪里到哪里不通，预期的结果是什么。在非常复杂的网络环境下，需要收集必要的信息，比如有没有 overlay，有没有一些特殊的配置。可能问题的报告者也说不清，大部分情况需要自己收集信息。</p>
+
+
+
+<p class="wp-block-paragraph">第二步就是复现问题。如果问题没有办法复现，就很难解决。如果可以复现，基本就解决了 90% 了。我自己最怕的问题也是无法复现的问题，比如高流量的偶尔延迟高，复现的现象定义不明确，复现条件也不明确。有一些工具可以使用，比如 iperf，scapy，或者自己写一些程序<sup data-fn="64060b88-725f-494a-9d54-a8991605a2c3" class="fn"><a href="#64060b88-725f-494a-9d54-a8991605a2c3" id="64060b88-725f-494a-9d54-a8991605a2c3-link">2</a></sup>来复现。有人遇到问题直接去查有没有变更，去看监控，这就像无头苍蝇。从根本解决问题，第一步一定是复现，最后一步对应的，是确定之前复现的场景下问题已经解决了。当然了，如果是线上的故障，立即查找变更和监控是正确的，应该需要在不明确根因的情况下能够恢复故障的手段。</p>
+
+
+
+<p class="wp-block-paragraph">第三部就很简单了，根据现象，做合理的假设，测试，逐步排除错误的假设，剩下的就是正确的答案。</p>
+
+
+
+<p class="wp-block-paragraph">时间长了，每个人都会积累一些技巧。比如，在最近的上一篇博客中使用到的，找一个正常的机器，进行比较一下。积累也是一个比较重要的过程，我喜欢把有意思的 case 都记录下载，对我很有帮助。</p>
+
+
+
+<p class="wp-block-paragraph">我发现厉害的人（偶尔，我自己也是），在看相同的信息的时候可以得到更多的结论。比如看到同样一个网络问题，使用同样的工具查看，别人说是网络不通，高手通过 curl -v 看发现是网络可以连接，而服务器没有返回内容。就把问题进一步定位到了 7 层问题，可能是 LB，WAF，application 的问题，但不会是路由或者 TCP 的问题。再比如，看到同样一个 MTR，高手可以分析出来默认网关有没有问题，出机房有没有问题，是单设备的问题还是某一跳的问题。</p>
+
+
+
+<p class="wp-block-paragraph">这是一种很酷的能力：能够在有限的环境里面定位到根本问题。</p>
+
+
+
+<p class="wp-block-paragraph">又想起来一个例子，我们经常需要网工给我们配置路由，但是配置好了没有？我们无从得知，因为我们没有交换机的登录权限。遇到问题的时候，低手会直接去麻烦人家，问问这个路由配置好了没，人家说好了，也没有办法验证是不是真的好了。高手在麻烦人家之前必然会提供相应的证据，比如，使用 traceroute，目标为这个网段的任意一个 IP，能不能 ping 通并不重要，重要的是看网工配置的交换机有没有出现在 traceroute 里面。这样报告问题，无法甩锅，解决问题的速度也快。</p>
+
+
+
+<p class="wp-block-paragraph">就写到这里，有很多大道理讲，但是讲起来没有什么说服力。好在日常已经积累了很多问题排查的博客，写具体的例子还是比较有意思。读者可以关注一下我的这类文章。</p>
+
+
+
+<p class="wp-block-paragraph">对了，在 AI 时代，如今大部分问题 AI 如果有权限都可以排查出来了，我们人类排查问题的技能还有用吗？</p>
+
+
+
+<p class="wp-block-paragraph">当然是有的，排查问题，解决问题，再想怎么一劳永逸地解决问题，对最终的质量负责，还是需要人的。如果你把一个系统完全交给 AI，AI 来应对用户的问题和需求，这里面没有了人做 trade off，感觉过不久就会变成非常大的一坨屎吧。</p>
+
+
+
+<p class="wp-block-paragraph">不过这也是现在，说不定多段时间 AI 真的可以完全自主运行系统了。在那之前，我们还是好好享受技术带来的快乐和成就感吧。</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+<ol class="wp-block-footnotes"><li id="5b8da762-f6ac-46d5-9fb8-917d142bb2a2"><a href="https://zh.wikipedia.org/zh-sg/XY%E9%97%AE%E9%A2%98">https://zh.wikipedia.org/zh-sg/XY%E9%97%AE%E9%A2%98</a> <a href="#5b8da762-f6ac-46d5-9fb8-917d142bb2a2-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="64060b88-725f-494a-9d54-a8991605a2c3">现在有了 AI，这样做已经非常方便了 <a href="#64060b88-725f-494a-9d54-a8991605a2c3-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol>
+
+
+<div class="wp-block-cover is-light"><img fetchpriority="high" decoding="async" width="1024" height="576" class="wp-block-cover__image-background wp-image-7405 size-large" alt="" src="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png" style="object-position:38% 56%" data-object-fit="cover" data-object-position="38% 56%" srcset="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png 1024w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-300x169.png 300w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-768x432.png 768w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1536x864.png 1536w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background.png 1672w" sizes="(max-width: 1024px) 100vw, 1024px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#e5e8ec"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<div class="wp-block-group has-black-color has-text-color has-link-color wp-elements-1"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-center">==抓包破案录==</h2>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><em><strong>通过真实故障和抓包文件，学习网络分析与故障排查。</strong><br /></em></p>
+
+
+
+<p class="has-custom-css wp-custom-css-e533bf93 wp-block-paragraph">这篇文章是抓包破案录系列文章（之前叫做《计算机网络实用技术》，后来改名了）中的一篇，这个系列正在连载中，我计划用这个系列的文章来分享一些网络抓包分析的实用技术。这些文章都是总结了我的工作经历中遇到的问题，经过精心构造和编写，每个文件附带抓包文件，通过实战来学习网络抓包与分析。</p>
+
+
+
+<p class="wp-block-paragraph"><strong>如果本文对您有帮助，欢迎扫博客右侧二维码打赏支持，正是订阅者的支持，让我公开写这个系列成为可能，感谢！</strong></p>
+
+
+
+<p class="wp-block-paragraph">如果您正在阅读的是题目类的文章，这个目录内容正好用来隔离其他读者的评论。读完题目可以稍作暂停，进行思考，<strong>继续向下滑动，可能会被其他的读者剧透答案。</strong></p>
+
+
+
+<ol class="wp-block-list">
+<li><a href="https://www.kawabangga.com/posts/6097">序章</a></li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6950">抓包技术以及技巧</a></li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6295">理解网络的分层模型</a></li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6919">数据是如何路由的</a></li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/7431" data-type="link" data-id="https://www.kawabangga.com/posts/7431">网络问题排查的思路和技巧</a></li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6178">不可以用路由器？</a>（<a href="https://www.kawabangga.com/posts/6291">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6286">网工闯了什么祸？</a>（<a href="https://www.kawabangga.com/posts/6291">答案和解析</a>，<a href="https://www.kawabangga.com/posts/7129" data-type="post" data-id="7129">阅读加餐！</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/?p=7397">BPG 连接建立失败问题</a> （<a href="https://www.kawabangga.com/?p=7413">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/?p=6383">重新认识 TCP 的握手和挥手</a>（<a href="https://www.kawabangga.com/posts/6467">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/7219">3.5 秒初始延迟问题</a> （<a href="https://www.kawabangga.com/posts/7221">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/7187" data-type="link" data-id="https://www.kawabangga.com/posts/7187">网络断断续续……</a> （<a href="https://www.kawabangga.com/posts/7190" data-type="link" data-id="https://www.kawabangga.com/posts/7190">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/?p=6372">延迟增加了多少？</a>（<a href="https://www.kawabangga.com/posts/6378">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6910" data-type="post" data-id="6910">压测的时候 QPS 为什么上不去？</a>（<a href="https://www.kawabangga.com/posts/6937">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6570">TCP 下载速度为什么这么慢？</a>（<a href="https://www.kawabangga.com/posts/6616">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6965">请求为什么超时了？</a>（<a href="https://www.kawabangga.com/posts/6969">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/7066">0.01% 的概率超时问题</a> （<a href="https://www.kawabangga.com/posts/7076">答案和解析</a>）</li>
+
+
+
+<li><a href="https://www.kawabangga.com/posts/6131" data-type="link" data-id="https://www.kawabangga.com/posts/6131">后记：学习网络的一点经验分享</a></li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted">与本博客的其他页面不同，本页面使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans">署名-非商业性使用-禁止演绎 4.0 国际</a> 协议。<br /></pre>
+</div></div>
+</div></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.kawabangga.com/posts/7431/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>一次内存引起的网络丢包问题排查</title>
 		<link>https://www.kawabangga.com/posts/7422</link>
 					<comments>https://www.kawabangga.com/posts/7422#respond</comments>
@@ -45,7 +243,7 @@
 
 
 
-<figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/09/image.png"><img fetchpriority="high" decoding="async" width="1024" height="304" src="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1024x304.png" alt="" class="wp-image-7423" srcset="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1024x304.png 1024w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-300x89.png 300w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-766x227.png 766w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-1536x455.png 1536w, https://www.kawabangga.com/wp-content/uploads/2026/09/image.png 1848w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">网卡使用率对应丢包，左边蓝色的线是有问题的机器，0% 是下线状态，可见，只要一上线就会丢包</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/09/image.png"><img decoding="async" width="1024" height="304" src="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1024x304.png" alt="" class="wp-image-7423" srcset="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1024x304.png 1024w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-300x89.png 300w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-766x227.png 766w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-1536x455.png 1536w, https://www.kawabangga.com/wp-content/uploads/2026/09/image.png 1848w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">网卡使用率对应丢包，左边蓝色的线是有问题的机器，0% 是下线状态，可见，只要一上线就会丢包</figcaption></figure>
 
 
 
@@ -227,7 +425,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-scaled.jpg"><img decoding="async" width="1024" height="123" src="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1024x123.jpg" alt="" class="wp-image-7416" srcset="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1024x123.jpg 1024w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-764x92.jpg 764w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-300x36.jpg 300w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1536x185.jpg 1536w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-2048x247.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">Open 消息</figcaption></figure>
+<figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-scaled.jpg"><img loading="lazy" decoding="async" width="1024" height="123" src="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1024x123.jpg" alt="" class="wp-image-7416" srcset="https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1024x123.jpg 1024w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-764x92.jpg 764w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-300x36.jpg 300w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1536x185.jpg 1536w, https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-2048x247.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">Open 消息</figcaption></figure>
 
 
 
@@ -278,7 +476,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 <div class="wp-block-cover is-light"><img loading="lazy" decoding="async" width="1024" height="576" class="wp-block-cover__image-background wp-image-7405 size-large" alt="" src="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png" style="object-position:38% 56%" data-object-fit="cover" data-object-position="38% 56%" srcset="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png 1024w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-300x169.png 300w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-768x432.png 768w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1536x864.png 1536w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background.png 1672w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#e5e8ec"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-<div class="wp-block-group has-black-color has-text-color has-link-color wp-elements-1"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-black-color has-text-color has-link-color wp-elements-2"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
 <h2 class="wp-block-heading has-text-align-center">==抓包破案录==</h2>
 
 
@@ -299,10 +497,6 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 
-<p class="wp-block-paragraph"><em>没有链接的目录还没有写完，敬请期待……</em></p>
-
-
-
 <ol class="wp-block-list">
 <li><a href="https://www.kawabangga.com/posts/6097">序章</a></li>
 
@@ -320,7 +514,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 
-<li>网络问题排查的思路和技巧</li>
+<li><a href="https://www.kawabangga.com/posts/7431" data-type="link" data-id="https://www.kawabangga.com/posts/7431">网络问题排查的思路和技巧</a></li>
 
 
 
@@ -452,7 +646,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 <div class="wp-block-cover is-light"><img loading="lazy" decoding="async" width="1024" height="576" class="wp-block-cover__image-background wp-image-7405 size-large" alt="" src="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png" style="object-position:38% 56%" data-object-fit="cover" data-object-position="38% 56%" srcset="https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png 1024w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-300x169.png 300w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-768x432.png 768w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1536x864.png 1536w, https://www.kawabangga.com/wp-content/uploads/2024/05/index-background.png 1672w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#e5e8ec"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-<div class="wp-block-group has-black-color has-text-color has-link-color wp-elements-2"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-black-color has-text-color has-link-color wp-elements-3"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
 <h2 class="wp-block-heading has-text-align-center">==抓包破案录==</h2>
 
 
@@ -473,10 +667,6 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 
-<p class="wp-block-paragraph"><em>没有链接的目录还没有写完，敬请期待……</em></p>
-
-
-
 <ol class="wp-block-list">
 <li><a href="https://www.kawabangga.com/posts/6097">序章</a></li>
 
@@ -494,7 +684,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 
-<li>网络问题排查的思路和技巧</li>
+<li><a href="https://www.kawabangga.com/posts/7431" data-type="link" data-id="https://www.kawabangga.com/posts/7431">网络问题排查的思路和技巧</a></li>
 
 
 
@@ -2258,76 +2448,6 @@ tx-frames-irq:	n/a</pre></div>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7292/feed</wfw:commentRss>
 			<slash:comments>6</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>为何写作</title>
-		<link>https://www.kawabangga.com/posts/7288</link>
-					<comments>https://www.kawabangga.com/posts/7288#comments</comments>
-		
-		<dc:creator><![CDATA[laixintao]]></dc:creator>
-		<pubDate>Wed, 03 Jun 2026 11:10:00 +0000</pubDate>
-				<category><![CDATA[观点与感想]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[写作]]></category>
-		<guid isPermaLink="false">https://www.kawabangga.com/?p=7288</guid>
-
-					<description><![CDATA[RSS 上出现越来越多用 AI 生成的文章，我想谈谈写作（尤其是写博客）的意义，以及为什么用 AI 生成文章是 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7288" class="more-link" >Continue reading...</a>]]></description>
-										<content:encoded><![CDATA[
-<p class="wp-block-paragraph">RSS 上出现越来越多用 AI 生成的文章，我想谈谈写作（尤其是写博客）的意义，以及为什么用 AI 生成文章是不好的。</p>
-
-
-
-<p class="wp-block-paragraph">写作最初的意义是记录，如县志，日记等等。这是写作从未失去的意义，写作是可以让自己与自己跨越时空的对话，阅读自己几年前，十几年前的文字，经常感慨万分。人会随着时间而变化，比如我自己以前认为中介对社会没有意义，这个岗位消失，也不会对社会有什么影响；但是如今的我认为这是无法被替代的岗位，对社会效率有重要的作用。又比如我以前曾在德国生活过一段无忧无虑的日子，没有烦恼也没有压力，每天最大的问题就是晚饭吃什么，如今看到那段时间写下的文字都会想起那时的心情。如果没有记录，自己想法的变化就难以被发现，十年之前在写下这些文字时候的细节就无法被回忆起来，读一本书的时候想到的东西就会随时间消散，当初纠结的事情也永远不会再被提起。</p>
-
-
-
-<p class="wp-block-paragraph">所以写作就像创作时间胶囊，可以让自己与未来的自己对话，与过去的自己对话。</p>
-
-
-
-<p class="wp-block-paragraph">如果用 AI 来生成，那么写作最原本的意义是无法达到的。试想一下，如果用 AI 生成日记，那么将来的自己大概是不会看的。</p>
-
-
-
-<p class="wp-block-paragraph">写作的另一个重要的意义是思考。</p>
-
-
-
-<p class="wp-block-paragraph">我记得在十几年前第一次写博客的样子，拌拌磕磕，自己心里想的观点，写到纸上就只剩下 30%，读起来幼稚地可笑。但是这样写了一段时间（没有读者），几年之后发现可以顺利地表达自己的观点，清晰地向读者描述一个问题或者技术了。</p>
-
-
-
-<p class="wp-block-paragraph">论点或是技术，在脑子里有一个轮廓，如果不用文字描述出来，其实就是水中的月亮，只有在尝试用文字向别人解释的时候，才会意识到自己没有思考清楚的部分，需要再研究研究，才能和别人解释清楚。如此之后，虽然这部分技术会随时间遗忘（技术如果不用的话，肯定会生疏的），但是看到当年自己写的文字，自己的解释，几分钟就可以捡起来全部的内容。写过技术博客的朋友，应该都有这样的经历。在工作中遇到很多无法将一个问题准确描述清楚的人，也遇到过能一针见血指出问题的人，我觉得写作技能起的作用很大。</p>
-
-
-
-<p class="wp-block-paragraph">AI 是无法代替思考的，用 AI 就一个技术生成一篇文章，水中的月亮还是水中的月亮。</p>
-
-
-
-<p class="wp-block-paragraph">写作的第三个意义是与人交流，表达自己的观点，影响别人。如同本文一样，为什么试图说服你，你应该写点什么。知己难以遇到，即使遇到了也需要彼此发现是志同道合。如何发现呢？如果我用 AI 写一篇文章，你用 AI 来总结阅读，那么中间隔阂太大，基本上是难以产生共鸣的。人与人之间的直接交流才是最不容易失真的。</p>
-
-
-
-<p class="wp-block-paragraph">除了交流，更宝贵的是表达自己。表达是所有人的需求，高质量的表达可以带给自己自由和快乐。这样解释起来比较困难，以我自己的体验来说，我真正发现写作的乐趣是在没有写作压力的时候，不需要写 600 字的作文，不需要考虑总-分-总的写作结构，不需要考虑阅读的人怎么想，不需要担心阅读量，可以把文章写的很长（博客就是如此，就想一张没有尽头的纸），也可以很短。表达的欲望就得到了实实在在的满足。</p>
-
-
-
-<p class="wp-block-paragraph">显然 AI 也无法满足这一点。</p>
-
-
-
-<p class="wp-block-paragraph">博客还有一个意义，就是可以提高工程师的技术影响力。这一点 AI 依然无法做到，目前读到的 AI 生成的文章基本都是信息密度极低的垃圾，很有可能起到反作用。</p>
-
-
-
-<p class="wp-block-paragraph">话又说回来，无论用不用 AI 写作，博客都已经没有办法带来技术影响力了，因为以后也不会有人通过阅读博客学习什么技术了。但是博客可以带来朋友，所以，还是要让写作回归它的本质——记录，思考，表达，与交流。这些都是现在 AI 无法替代的。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.kawabangga.com/posts/7288/feed</wfw:commentRss>
-			<slash:comments>11</slash:comments>
 		
 		
 			</item>

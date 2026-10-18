@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "c1733839ab9682ddc658b657",
+      "title": "躺平两周后，我靠「数字员工」重新上路",
+      "summary": "本文是付费文章系列「破局之路」的第 38 篇正式文章，主要讲述以下内容——",
+      "image": null,
+      "publishedAt": "2026-05-10T10:55:32Z",
+      "sourceId": "6143fbd12b60beb7",
+      "sourceTitle": "欧雷流",
+      "link": "https://ourai.ws/posts/digital-employee-team-revitalized-me/",
+      "detailPath": "articles/c1733839ab9682ddc658b657.json"
+    },
+    {
+      "id": "4fcf81f5c8526d5dee0f452a",
+      "title": "波希米亞人",
+      "summary": "幫檸檬卷推一下這部影片。",
+      "image": null,
+      "publishedAt": "2026-05-10T10:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/la-boheme",
+      "detailPath": "articles/4fcf81f5c8526d5dee0f452a.json"
+    },
+    {
       "id": "94438e8b27b02b0d6d89dd8d",
       "title": "地球上「真正最重要」的軟體",
       "summary": "才剛寫完一篇用 FFmpeg 製作 WebP 動畫的文章，然後 Lex Fridman 就出了一集超過四小時（！）的 Podcast，訪問了 FFmpeg 的貢獻者 Kieran Kunhya 和 VLC 的核心人物 Jean-Baptiste Kempf。（YouTube 連結）",
@@ -637,28 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-18-Input-Response-Latency/",
       "detailPath": "articles/50a0b01a14fe8f8e929e6288.json"
-    },
-    {
-      "id": "3afaa0c88296f04717797952",
-      "title": "Android Perfetto 系列 17：专项场景自动化、问题清单与平台体系",
-      "summary": "Camera 打开慢要区分 API 返回、HAL 首个 Buffer 和预览画面显示；Audio underrun 要看 App 写入与 mixer 周期是否稳定。这些事件分散在 App、系统服务、HAL 和调度轨道里，单列一张 Top slice 表还原不了顺序。 这里用 Camera 和 Audio 两个场景说明：先确认一次操作涉及哪些进程和线程，再按阶段或真实周期计算耗时，最后把异常时间点、来源轨道和质量限制写进报告。平台侧还要维护稳定的事件名和采集配置，下一次 Trace 才能复用查询。",
-      "image": null,
-      "publishedAt": "2026-05-04T02:17:00Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-17-Engineering-Domain-And-Platform-Tracing/",
-      "detailPath": "articles/3afaa0c88296f04717797952.json"
-    },
-    {
-      "id": "081dae40631f5b064a37150a",
-      "title": "Android Perfetto 系列 16：GPU、Power Counters 与硬件瓶颈分析",
-      "summary": "FrameTimeline 标出一帧晚了，主线程和 RenderThread 没有明显长任务，下一步可以查 GPU 工作与 fence。GPU 频率、电池电流和电源轨只能提供同一窗口的硬件状态，不能单独证明某个 App 帧为何晚呈现。 这篇把 GPU render stages、devfreq、电池计数器和电源轨放到同一段 Trace 窗口里，说明各自能回答什么、设备不支持时报告该怎么写。帧和线程的判读可接着 第 7 篇 与 第 8 篇 的例子读。 Counter 名称、单位和采样周期由设备 producer 决定。跨设备比较前先核对 descriptor；同一设备上也要确认目标帧与 GPU 工作是否能通过 token、layer 或 fence 关联。",
-      "image": null,
-      "publishedAt": "2026-05-04T02:16:00Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-16-GPU-Power-Counters/",
-      "detailPath": "articles/081dae40631f5b064a37150a.json"
     }
   ]
 }

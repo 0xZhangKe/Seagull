@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8e40d6d531bb7147557740ba",
+      "title": "What’s next for the indie web?",
+      "summary": "I have been blogging in English for some time, but this is my first time participating in an indie web conversation. So I think I should introduce myself first. I’m Eltrac. I’m mainly a web developer but I like all kinds of thing about programming. I code in Go, Clojure and Lua, and I explore new tech all the time. I usually blog more than three times a wee…",
+      "image": "https://img.eltr.ac/geedeapro/en/article/weepinbell/weepinbell-architecture.svg",
+      "publishedAt": "2026-10-18T09:31:05Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/en/article/weepinbell/",
+      "detailPath": "articles/8e40d6d531bb7147557740ba.json"
+    },
+    {
       "id": "c7a8ea6afd42fcdde0f37bf0",
       "title": "Coffee Break Clojure, Transducer",
       "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时，…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/weekly/100/",
       "detailPath": "articles/fc71b1617f3a473b010d983a.json"
-    },
-    {
-      "id": "dd1bd21cbccf5e2a9cd152ca",
-      "title": "地球上最后的夜晚",
-      "summary": "第一次听闻波拉尼奥是某个下午在西西弗书店闲逛，买了一本很厚的《在地狱阅览室里》，散文集，一百多块钱，是我买过最贵的书。那个时候我不认识他，没读下去，后来把书在多抓鱼上卖掉了。我有段时间想要多读些拉美文学，对波拉尼奥本人以及和他同时代或对他产生过影响的作者都建立一些了解，再去读那本书。然后我读了点 马尔克斯 ，还有略撒的《 城市与狗 》，就把拉美文学抛之脑后了。 读完加缪的 最后一本小说 之后，我决定从法国文学里退一步，然后就想到了波拉尼奥，便买了这本《地球上最后的夜晚》，因为《2666》太长了。 然后我发现法国文学还在追我，波拉尼奥几次提到 司汤达 ，在《毛毛虫》这篇里还提到加缪的《 堕落 》。法国文学在世界的影响力确实不小，印象里，捷克作家昆德拉也在《 不能承受的生命之轻 》里提过司汤达，不过他其实也算法国…",
-      "image": "https://img.eltr.ac/geedeapro/library/2026/last-evenings-on-earth/roberto-bolano.jpg",
-      "publishedAt": "2026-09-27T07:08:35Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/library/2026/last-evenings-on-earth/",
-      "detailPath": "articles/dd1bd21cbccf5e2a9cd152ca.json"
     }
   ]
 }

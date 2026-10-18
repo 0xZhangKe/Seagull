@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "3afaa0c88296f04717797952",
+      "title": "Android Perfetto 系列 17：专项场景自动化、问题清单与平台体系",
+      "summary": "Camera 打开慢要区分 API 返回、HAL 首个 Buffer 和预览画面显示；Audio underrun 要看 App 写入与 mixer 周期是否稳定。这些事件分散在 App、系统服务、HAL 和调度轨道里，单列一张 Top slice 表还原不了顺序。 这里用 Camera 和 Audio 两个场景说明：先确认一次操作涉及哪些进程和线程，再按阶段或真实周期计算耗时，最后把异常时间点、来源轨道和质量限制写进报告。平台侧还要维护稳定的事件名和采集配置，下一次 Trace 才能复用查询。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:17:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-17-Engineering-Domain-And-Platform-Tracing/",
+      "detailPath": "articles/3afaa0c88296f04717797952.json"
+    },
+    {
+      "id": "081dae40631f5b064a37150a",
+      "title": "Android Perfetto 系列 16：GPU、Power Counters 与硬件瓶颈分析",
+      "summary": "FrameTimeline 标出一帧晚了，主线程和 RenderThread 没有明显长任务，下一步可以查 GPU 工作与 fence。GPU 频率、电池电流和电源轨只能提供同一窗口的硬件状态，不能单独证明某个 App 帧为何晚呈现。 这篇把 GPU render stages、devfreq、电池计数器和电源轨放到同一段 Trace 窗口里，说明各自能回答什么、设备不支持时报告该怎么写。帧和线程的判读可接着 第 7 篇 与 第 8 篇 的例子读。 Counter 名称、单位和采样周期由设备 producer 决定。跨设备比较前先核对 descriptor；同一设备上也要确认目标帧与 GPU 工作是否能通过 token、layer 或 fence 关联。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:16:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-16-GPU-Power-Counters/",
+      "detailPath": "articles/081dae40631f5b064a37150a.json"
+    },
+    {
       "id": "1a3b16f394c9aa967643014c",
       "title": "Android Perfetto 系列 15：Boot Trace、长时间现场 Trace 与偶发问题抓取",
       "summary": "开机慢、亮屏后偶发卡顿或几小时后才出现的音频断续，通常等不到工程师连上电脑再按「开始录制」。要保留问题发生前的调度、帧或音频事件，采集配置必须提前在设备上运行。 现场抓取要先确定触发点前后各保留多久，再选 Ring Buffer、周期写文件或 trigger。文件写出后，还要确认问题窗口没有被覆盖、关键数据源没有丢失。设备开机属于更早的特殊窗口，单独处理。",
@@ -637,28 +659,6 @@
       "sourceTitle": "太隐",
       "link": "https://wangyurui.com/posts/yin-shuo-no-21-fu-bai-bu-neng-zhi-kao-hai-rui-la-eeeb2a84",
       "detailPath": "articles/4559a7f6ea89c0234d85a20a.json"
-    },
-    {
-      "id": "44937bbdfb1638b166e5152e",
-      "title": "2026 年 COS-MIC Spring Festival 遊記",
-      "summary": "馬來西亞的一個大型 ACG 展覽會暨同人市集——爲期兩天的 COS-MIC Spring Festival 2026 在上週末圓滿舉行，而我也有幸前去一探究竟。 那裡除了有近百個畫師/藝術家的攤位 1 在售賣原創或是不同 ACG 作品的同人（即二創）週邊之外，也有不同的嘉賓表演、cosplayer 見面會，以及動漫曲歌唱與舞蹈環節等等。 那裡的活動固然是多采多姿（而我也覺得頗有趣的），不過我會去參加該活動的主要原因，是爲了去見兩位其作品我都很喜歡的馬來西亞畫師—— Marshiro 以及 Yehlawd 。 我從高中時期便已開始（潛水式地）關注 Marshiro 的作品（應該已有六年多了吧），主要就是被其作品的幽默性與可愛畫風吸引到 以及被他的「乾炒牛河」哏逗笑 2 。他現在的作畫水準也比我剛接觸他作品的時候…",
-      "image": "https://microblog.ttheng.com/blog/img153.jpg",
-      "publishedAt": "2026-04-27T12:20:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/cos-mic-spring-festival-2026-experience/",
-      "detailPath": "articles/44937bbdfb1638b166e5152e.json"
-    },
-    {
-      "id": "e1816e6ec1a7522db1cf038a",
-      "title": "看似辩驳，实则止痛——情绪反击与边界焦虑",
-      "summary": "一位匿名的网友给我去年的文章《认知的冲击与改变》留了一条评论，准确地说，是来「驳斥」我在评论中的一句话：沉浸在自己的世界里无可厚非，只要别用自己有问题的那一套逼迫别人就行。即使这个评论并非是对这...",
-      "image": null,
-      "publishedAt": "2026-04-27T09:58:00Z",
-      "sourceId": "5e866ea0f692fb89",
-      "sourceTitle": "白熊阿丸的小屋",
-      "link": "https://blog.bxaw.name/archives/What-Feels-Like-Arguing-Is-Often-Just-Numbing-Pain-Emotional-Retaliation-and-Boundary-Anxiety.html",
-      "detailPath": "articles/e1816e6ec1a7522db1cf038a.json"
     }
   ]
 }

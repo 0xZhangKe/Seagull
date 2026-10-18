@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-16T22:06:37+00:00</updated><author><name>Simon Willison</name></author><entry><title>Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang</title><link href="https://simonwillison.net/2026/Oct/16/code-review/" rel="alternate"/><published>2026-10-16T22:06:37+00:00</published><updated>2026-10-16T22:06:37+00:00</updated><id>https://simonwillison.net/2026/Oct/16/code-review/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-17T21:11:12+00:00</updated><author><name>Simon Willison</name></author><entry><title>Inline rendering with document​.currentScript</title><link href="https://simonwillison.net/2026/Oct/17/document-currentscript/" rel="alternate"/><published>2026-10-17T21:11:12+00:00</published><updated>2026-10-17T21:11:12+00:00</updated><id>https://simonwillison.net/2026/Oct/17/document-currentscript/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://leanrada.com/notes/inline-rendering-currentscript/"&gt;Inline rendering with document​.currentScript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Lean Rada describes a neat trick that takes advantage of the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript"&gt;document.currentScript&lt;/a&gt; property. You can use that to drop in a tiny inline &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; element that replaces itself when the page loads:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The year is &amp;lt;script&amp;gt;
+document.currentScript.replaceWith(
+  new Date().getFullYear())&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you define a shortcut function like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$=(...n)=&amp;gt;document.currentScript.replaceWith(...n)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You get a tiny template language:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The year is &amp;lt;script&amp;gt;$(new Date().getFullYear())&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="javascript"/></entry><entry><title>web-edit 0.1a2</title><link href="https://simonwillison.net/2026/Oct/17/web-edit/" rel="alternate"/><published>2026-10-17T13:16:49+00:00</published><updated>2026-10-17T13:16:49+00:00</updated><id>https://simonwillison.net/2026/Oct/17/web-edit/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/web-edit/releases/tag/0.1a2"&gt;web-edit 0.1a2&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;web-edit (&lt;a href="https://simonwillison.net/2026/Oct/12/web-edit/"&gt;previously&lt;/a&gt;) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale.&lt;/p&gt;
+&lt;p&gt;I added a "copy to clipboard" option for both text and image data. I needed this because I was running pelican prompts on a laptop from my phone (here's &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fb1cec9726b6aa62d4de47100f90f0c1a"&gt;DeepSeek 4.1 Flash 1017&lt;/a&gt;) and I wanted an easy way to copy the resulting logs into a Gist.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/deepseek"&gt;deepseek&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="projects"/><category term="pelican-riding-a-bicycle"/><category term="deepseek"/></entry><entry><title>Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang</title><link href="https://simonwillison.net/2026/Oct/16/code-review/" rel="alternate"/><published>2026-10-16T22:06:37+00:00</published><updated>2026-10-16T22:06:37+00:00</updated><id>https://simonwillison.net/2026/Oct/16/code-review/</id><summary type="html">
     &lt;blockquote cite="https://claude.dev/blog/solving-code-review-at-anthropic/"&gt;&lt;p&gt;We think "did a human read the code?" is an imprecise proxy for "what could go wrong with this change, and which check—automated or human—is the right one to catch it?"&lt;/p&gt;
 &lt;p&gt;Asking that question also changed &lt;em&gt;when&lt;/em&gt; review happens. Before, review was a gate at the end of the road: write the code, open a PR, wait for your colleague.&lt;/p&gt;
 &lt;p&gt;Now, review runs continuously, more like spellcheck while you write. Most changes have been reviewed and fixed by Claude at least once before a human is asked to look. This catches most routine mistakes, and saves team attention for higher-level questions and scrutiny.&lt;/p&gt;&lt;/blockquote&gt;
@@ -541,28 +571,4 @@ Some excellent writing advice from Michael Lynch. Michael warns against "meander
 
 
 
-</summary><category term="openai"/><category term="mathematics"/><category term="deep-blue"/><category term="llms"/><category term="ai"/><category term="generative-ai"/></entry><entry><title>OpenAI “rogue” agent activities found on Wikimedia projects</title><link href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/" rel="alternate"/><published>2026-10-07T00:16:45+00:00</published><updated>2026-10-07T00:16:45+00:00</updated><id>https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"&gt;OpenAI “rogue” agent activities found on Wikimedia projects&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Given how tempting a target wikis are for rogue agent swarms, it's not a huge surprise that Wikipedia found evidence of that activity once they went looking:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The Wikimedia Foundation conducted its own investigation to see whether Wikimedia websites had been similarly affected by AI agents, focusing on those operated by OpenAI. We can confirm that we have discovered some activity by these “rogue” OpenAI agents on Wikimedia platforms. The unauthorized bot activities included edits to our wikis, some unsuccessful attempts to exploit a public note-taking tool we host, and heavy traffic, which are described more below.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;They found evidence of agents editing sandbox pages, trying to use pieces of infrastructure such as Etherpad to help proxy content from elsewhere, and saw widespread crawling and "hundreds of thousands of data queries" to their Wikidata Query Service.&lt;/p&gt;
-&lt;p&gt;My best guess is that most of this was a similar (or the same) swarm of agents as those that &lt;a href="https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/"&gt;defaced that German wiki&lt;/a&gt; while training for research tasks.&lt;/p&gt;
-&lt;p&gt;The Wikipedia sandbox wiki edits appear to have started on May 12th, and the initial test edits to the UseModWiki Sandbox page reported by that incident started on May 11th.
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/wikimedia"&gt;wikimedia&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/wikipedia"&gt;wikipedia&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/wikis"&gt;wikis&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/accidental-cyberattacks"&gt;accidental-cyberattacks&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="wikimedia"/><category term="wikipedia"/><category term="wikis"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="ai-ethics"/><category term="accidental-cyberattacks"/></entry><entry><title>Quoting Victoria Kim</title><link href="https://simonwillison.net/2026/Oct/6/victoria-kim/" rel="alternate"/><published>2026-10-06T23:58:56+00:00</published><updated>2026-10-06T23:58:56+00:00</updated><id>https://simonwillison.net/2026/Oct/6/victoria-kim/</id><summary type="html">
-    &lt;blockquote cite="https://www.nytimes.com/live/2026/10/05/world/openai-australia-hearing/94c8067e-4098-5c00-9673-c78cb58a9d8a"&gt;&lt;p&gt;Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://www.nytimes.com/live/2026/10/05/world/openai-australia-hearing/94c8067e-4098-5c00-9673-c78cb58a9d8a"&gt;Victoria Kim&lt;/a&gt;, Reporting from the Australian parliament&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/accidental-cyberattacks"&gt;accidental-cyberattacks&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-security-research"&gt;ai-security-research&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="accidental-cyberattacks"/><category term="generative-ai"/><category term="ai-security-research"/><category term="openai"/><category term="ai"/><category term="llms"/></entry></feed>
+</summary><category term="openai"/><category term="mathematics"/><category term="deep-blue"/><category term="llms"/><category term="ai"/><category term="generative-ai"/></entry></feed>

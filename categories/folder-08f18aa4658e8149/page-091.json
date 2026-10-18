@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "8025850c8d47b3c2af558a5d",
+      "title": "健身课程体验: Focus T25（外加 Shawn Week）",
+      "summary": "人生总是忙完这一阵就可以继续忙下一阵了，尤其是我这种处理事件的 capacity 本来就低的人来说，每天至少1-2小时躺平 decompress 为最优先。过去的半年（其实中间隔了一个月没有进行，所以实际上是5个月）里我终于试着把锻炼这件事断断续续地做了起来，以 Shawn T 的 Focus T25 program 为开始。现在来总结一下新手上路的感想。 寻找合适的 training program # 前段时间因为工作压力+找工作的压力，蓦然发现自己已经比疫情前重了15磅。刚刚 half hearted 运动了两天，马上又感冒全身没力气，所以运动大业立刻中道崩殂。对我来说运动/健身最大的阻力是没有动力，因为我几乎完全没有身材焦虑（不 care 别人 + 家里没有全身镜），又喜欢用各种甜食和膨化食品排解压力…",
+      "image": "https://fourhappylions.com/posts/focus-t25-review/bend.jpeg",
+      "publishedAt": "2021-12-31T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/focus-t25-review/",
+      "detailPath": "articles/8025850c8d47b3c2af558a5d.json"
+    },
+    {
       "id": "76d2d9438768f20f80b0ad59",
       "title": "PopOS 20.04 安装 Grub 引导 Win 11 + Linux 双系统并配置主题",
       "summary": "前言 因为 PopOS 默认内置用的是 systemd 做的系统引导，systemd 仅适合单系统引导，双系统引导就无法完成，因为其无法识别在多个硬盘上的不同分区的引导加载器，除非将 Windows 分区上的 esp 文件复制到 Linux esp 下，新手不建议折腾，直接根据本教程安装 grub 引导即可。 目标 安装 Grub 引导器到 PopOS 系统上，并且成功引导双系统（Windows 11 + PopOS） 预置要求 PopOS 20.04 Windows 10 / 11 以上系统必须为 UEFI 引导，不能是传统 BIOS Linux 下的具有 root 权限的用户 安装步骤 更新 & 安装软件包 在安装前，将系统的软件包列表更新到最新版本 1 sudo apt update -y && sud…",
@@ -648,17 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/takeaway/o-canada/",
       "detailPath": "articles/2c604b632128f148ab78bc96.json"
-    },
-    {
-      "id": "722f576efefca771c6adfeb8",
-      "title": "叁拾一周：No.15",
-      "summary": "这是「叁拾一周」第十五期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 159 位。我的下一个目标是 181。 本周入职了新公司，也开始熟悉新的工作环境，新的工作职责以及新的工作模式。在几天的适应过程中，思考了一个今天想聊的主题：追求。 这是我的第二份工作，上一份工作从毕业一直持续到上周，以至于在我出决定之后都迟迟没有缓过神来，我以为，我以为我会在那个岗位上一直工作下去，直到离开北京。而如今我的决定有了巨大的反转，我可以换一份工作，但我要留在北京了。 多年的教育和学习（这里很有必要区分二者，教育是在当前的社会环境下我们比接受的义务教育以及大学教育的各个环节和阶段，而学习，是出于自我对这个世界和某个领域的好奇），对我的思维和认识有着不大不小的冲击。比如，我没有故乡情，却在理解世界格局的划分时，很看重地理环境，…",
-      "image": null,
-      "publishedAt": "2021-10-13T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2021/10/newsletter-015/",
-      "detailPath": "articles/722f576efefca771c6adfeb8.json"
     }
   ]
 }

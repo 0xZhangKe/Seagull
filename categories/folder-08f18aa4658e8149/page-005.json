@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "af48348a61934a58db73d347",
+      "title": "大脑充血 Vol.101",
+      "summary": "我一直说周刊是每周一发布，每月正刊也是，从没限定具体时间，就是考虑到了发布当天赶死线的情况。这期周刊的一小半内容都是周一写的，但质量确是我认为创刊以来最佳的一期，也是最长的，超过了一万字。祝阅读愉快。 本月的话题是道德与纯粹性，个人知识管理，市场的辨别力，开源软件与 UX 设计，Clojure 与函数式编程。 吾仅悉落 chapter 1 girl in red NeoDB Girl in Red 是我之前听一个叫 Chloe Moriondo 的翻唱歌手了解到的（当时 Chloe 还在 YouTube 上发尤克里里弹唱的视频，如今似乎变成原创流行歌手了，少了些味道）。 她的不少歌曲描写的都是对女生的爱恋，还有抑郁情绪。貌似不少拉拉会以「你听 Girl in Red 吗？」来辨认身份。 我好奇男同会用谁，Ta…",
+      "image": "https://img.eltr.ac/geedeapro/weekly/101/chapter1.jpg",
+      "publishedAt": "2026-10-05T09:18:33Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/weekly/101/",
+      "detailPath": "articles/af48348a61934a58db73d347.json"
+    },
+    {
+      "id": "3abf8d7d08a86b03a2efc28e",
+      "title": "文言文和古诗的现代教学问题及前途",
+      "summary": "摘要 这是「 BlogBlog 同乐会 - 2026 年 10 月 」的投稿文章。本月主题是「 语言的习得、传承与推广 」，由 AngeCI 主持。如果你有自己的博客，欢迎一起來参加！ 在 上篇文章 ，我谈论了我对语文作文的看法，在结尾我留了句话。 我在很多文章都有透露，我个人不喜欢古风、传统文化等东西，很大原因与中国的语文教育有关。 那么这回我再来谈谈语文考试的另一大板块──文言文与古诗。 文言文的历史 要想了解文言文，需要了解文言文的历史。古诗差不多也算是文言文的一种形式，与文言文同理，就不多复述了。 产生与发展 根据维基百科的 文言文 页面，文言文主要指以秦汉书面语为标准，脱离口语而写成的文字。在春秋战国和秦汉时期，文言文与口头语的差别不算特别大。从东汉开始，文言文就逐渐与口语脱节，但书面语仍然保持不变…",
+      "image": null,
+      "publishedAt": "2026-10-05T08:01:34Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/problems-of-classical-chinese/",
+      "detailPath": "articles/3abf8d7d08a86b03a2efc28e.json"
+    },
+    {
       "id": "fd92cb89b92cc98bf4d2cd85",
       "title": "Home Assistant 接 Google Home 語音控制：用 Matter 免雲端,和兩個都叫「找不到裝置」的坑",
       "summary": "作者想用語音控制 Home Assistant 裡的燈,選了不走雲端的路:用 home-assistant-matter-hub 把 HA 實體包成 Matter 橋接器,由客廳的 Google TV Streamer 4K 當中樞。配對時 Google Home 兩次顯示「找不到裝置」,原因卻完全不同:第一次是橋接器使用 Matter 測試廠商碼 0xFFF1,必須先在 Google Home Developer Console 建立 VID/PID 一致的 integration;第二次是伺服器的 ufw 只有 IPv4 的區網規則,ICMPv6 被預設放行所以 ping6 正常,真正走 IPv6 的 UDP 5540 卻被丟掉,而且配對後的連線走 link-local,fe80::/10 也必須放行。文…",
@@ -551,17 +573,6 @@
       "detailPath": "articles/d2f4ad31b22501b4832ce5bf.json"
     },
     {
-      "id": "fee1987a1ae44758bb161f1c",
-      "title": "数字绘画是一种钓鱼",
-      "summary": "现今随着AI热潮的爆发，我……找不到工作。 我不是打算写什么论文，所以随口说说。我忽然发现对身无分文的普通人而 … 继续阅读 数字绘画是一种钓鱼 →",
-      "image": "https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png",
-      "publishedAt": "2026-10-01T20:50:45Z",
-      "sourceId": "d29b4f2186bb32e1",
-      "sourceTitle": "景の域",
-      "link": "https://v1sta.xyz/think/%e6%95%b0%e5%ad%97%e7%bb%98%e7%94%bb%e6%98%af%e4%b8%80%e7%a7%8d%e9%92%93%e9%b1%bc/",
-      "detailPath": "articles/fee1987a1ae44758bb161f1c.json"
-    },
-    {
       "id": "8b2e1152764f281b4550a06c",
       "title": "我的乡愁 II",
       "summary": "请读者给我几段文本的时间平复心情，我方才忍受着飘散在房间里的烟味儿，下楼给我三个月前带回家的龟背竹换了水。想到刚回家看到它们的模样，我实在没办法平静下来。 因为没办法带上我养的龟背竹，所以放在家里，回家之后…… 它的叶子黄了，边缘已经要枯了，不知道家里人是用什么水养的它，水是褐黄色的，水已经要溢出水瓶了，我明明已经交代过不能超过根部…… 另一盆也半死不活了，因为之前它长得太好了，我给他换了大点的玻璃瓶，想着他能再抽一根叶，那个瓶子被打碎了，被放进了一个塑料桶里，叶子也黄了。你们他妈的对它们做了什么！ —— 我的联邦宇宙账号 清洗它们根部的时候，我感觉自己在看一个受了虐待的孩子。那些根部已经变色变形了，不再是之前漂亮整洁的白色，每次冲洗都会有好多碎屑跟着水流下来。清洗得我觉得能接受了，就给它们倒上了矿泉水。本想…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/guess-cv-game/",
       "detailPath": "articles/d507fbe1804a06c066d57fad.json"
-    },
-    {
-      "id": "c2bb2c94075ebad7ca1956da",
-      "title": "入蜀记 day495 服务费、coser、人生换位",
-      "summary": "「服务费、coser、人生换位。」",
-      "image": null,
-      "publishedAt": "2026-10-01T04:37:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_495/",
-      "detailPath": "articles/c2bb2c94075ebad7ca1956da.json"
     }
   ]
 }

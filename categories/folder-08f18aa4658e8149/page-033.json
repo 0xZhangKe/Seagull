@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "680345d5a59550c7fdf8d2ce",
+      "title": "Android Perfetto 系列 12：Trace 数据流与丢失排查",
+      "summary": "一份 Trace 能在 UI 里打开、SQL 也查得到行，仍可能在采集中丢过数据。线程状态缺一段、进程名对不上、Track Event 只有 ID 没有名称时，先查数据丢在哪一层，再决定哪些分析还能继续。 SQL 只能度量留下来的事件。丢失发生在 ftrace、producer 共享内存还是 central buffer，影响的查询不同。看到一条 ftrace loss，我不会立刻扔掉整份 Trace；先查它影响的是调度、业务标记，还是帧数据。 下文沿事件从内核进入 Trace 文件的路径检查 ftrace、producer 共享内存、central buffer、增量状态和 flush。每一处都有对应的 stats 线索和下一次采集时可调整的配置。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:12:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-12-Trace-Dataflow-And-Loss/",
+      "detailPath": "articles/680345d5a59550c7fdf8d2ce.json"
+    },
+    {
       "id": "6a4ce8db6e8415767444c6d9",
       "title": "Android Perfetto 系列 11：PerfettoSQL、Trace Processor 与回归检测",
       "summary": "在 Perfetto UI 里框出问题窗口，看主线程、RenderThread 和 CPU 状态，再截几张图，单次定位很方便。换一份 Trace 或换一台设备，截图里的判断就难以按同一口径重算。我更关心的是：下次拿到同一类问题，还能不能算出可复查的数字。 PerfettoSQL 与 Trace Processor 可以把时间窗口、线程身份和耗时口径写进查询，再让 Python 对多份 Trace 执行同一段 SQL。这样复测版本时，能回到每份原始 Trace 核对数字。 下面从一条手工判断出发，逐步得到可批量执行的查询和结构化输出。示例代码需要替换目标进程、时间窗口和采集条件后再用于自己的场景。",
@@ -648,17 +659,6 @@
       "sourceTitle": "愷開的部落格",
       "link": "https://blog.kalan.dev/random/defaults-and-taste/",
       "detailPath": "articles/5661c5c2d8414aa0eaa11e87.json"
-    },
-    {
-      "id": "7b3fd43269d43c0869275a7b",
-      "title": "你電腦不行",
-      "summary": "「裡面有一首xxx！」表演者遞上隨身碟要交音樂。 「裡面有好幾首，沒有你講的那首。」找了一輪真沒看到。 「怎麼可能？上一場用就有啊！（怒）」 「你電腦不行啦」 「…？」",
-      "image": null,
-      "publishedAt": "2026-04-26T10:09:48Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/bad-computer/",
-      "detailPath": "articles/7b3fd43269d43c0869275a7b.json"
     }
   ]
 }

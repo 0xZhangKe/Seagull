@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "e066923c0aad1db507036617",
+      "title": "蓝色港湾，晒娃上瘾",
+      "summary": "折腾了一上午，终于搞定了在博客内插入指定文件夹内的图片，之前不报错，也不显示，原来是没有在 single.html 里加上引入 PATH 的代码： {{ .Render \"path\"}} 搞定之后爽歪歪。 接下来准备研究一下瀑布流和灯箱效果了。",
+      "image": null,
+      "publishedAt": "2020-04-13T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/04/0412lsgw/",
+      "detailPath": "articles/e066923c0aad1db507036617.json"
+    },
+    {
       "id": "058596499958d59bd139a7f5",
       "title": "日常：和11个月大的 Baby 相处",
       "summary": "Baby 现在11个月了。这篇文章里有这些内容：半岁以来上 Daycare infant 班有什么感受？Baby 的新技能以及由此来带来的后果——吃、睡、玩。最后是 COVID-19 时期怎么和 Baby 共处。 Daycare 体验 # 送 daycare 之前担心了很久，不过时间不等人，两个人都已经把各自的产假休完了。所以Baby 从7个半月开始进 daycare 了！概括下来是这种体验： 第一天送去的心情：车里家里没有 Baby 空空荡荡的，好难集中精力工作，好担心 TA 过得怎么样。第二天至今：太省事了！Daycare 学费花得好值！Shut up and take my money! 在我作为家长这一方来讲，体验很棒。送去 daycare 了以后，一天里终于有完整的8个小时归自己，想工作也好想咸鱼也…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2019/09/05/Android-Jank-Due-To-System/",
       "detailPath": "articles/e272a254430d0e5bdf564365.json"
-    },
-    {
-      "id": "5f6bef8f677d0a8a9676e149",
-      "title": "Android 中的卡顿丢帧原因概述 - 方法论",
-      "summary": "Android 手机使用中的卡顿问题, 一般来说手机厂商和 App 开发商都会非常重视, 所以不管是手机厂商还是 App 开发者, 都会对卡顿问题非常重视, 内部一般也会有专门的基础组或者优化组来进行优化 . 目前市面上有一些非常棒的第三方性能监控工具, 比如腾讯的 Matrix ; 手机厂商一般也会有自己的性能监控方案, 由于可以修改源码和避免权限问题, 所以手机厂商可以拿到更多的数据, 分析起来也会更方便一些. 说回流畅度, 其实就是操作过程中的丢帧, 本来一秒中画面需要更新 60 帧,但是如果这期间只更新了 55 帧, 那么在用户看来就是丢帧了, 主观感觉就是卡了, 尤其是帧率波动, 用户的感知会更明显. 引起丢帧的原因非常多, 有硬件层面的, 有软件层面的, 也有 App 自身的问题. 所以这一部分我…",
-      "image": null,
-      "publishedAt": "2019-09-05T04:56:42Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Debug/",
-      "detailPath": "articles/5f6bef8f677d0a8a9676e149.json"
     }
   ]
 }

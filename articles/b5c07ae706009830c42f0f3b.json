@@ -1,0 +1,11 @@
+{
+  "id": "b5c07ae706009830c42f0f3b",
+  "title": "Inline rendering with document​.currentScript",
+  "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline <script> element that replaces itself when the page loads: The year is <script> document.currentScript.replaceWith( new Date().getFullYear())</script> If you define a shortcut f…",
+  "content": "<p><strong><a href=\"https://leanrada.com/notes/inline-rendering-currentscript/\" target=\"_blank\" rel=\"noopener noreferrer\">Inline rendering with document​.currentScript</a></strong></p>\nLean Rada describes a neat trick that takes advantage of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript\" target=\"_blank\" rel=\"noopener noreferrer\">document.currentScript</a> property. You can use that to drop in a tiny inline <code>&lt;script&gt;</code> element that replaces itself when the page loads:</p>\n<pre><code>The year is &lt;script&gt;\ndocument.currentScript.replaceWith(\n  new Date().getFullYear())&lt;/script&gt;\n</code></pre>\n<p>If you define a shortcut function like this:</p>\n<pre><code>$=(...n)=&gt;document.currentScript.replaceWith(...n)\n</code></pre>\n<p>You get a tiny template language:</p>\n<pre><code>The year is &lt;script&gt;$(new Date().getFullYear())&lt;/script&gt;\n</code></pre>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/javascript\" target=\"_blank\" rel=\"noopener noreferrer\">javascript</a></p>",
+  "image": null,
+  "publishedAt": "2026-10-17T21:11:12Z",
+  "sourceId": "052434531db837d6",
+  "sourceTitle": "Simon Willison's Weblog",
+  "link": "https://simonwillison.net/2026/Oct/17/document-currentscript/"
+}

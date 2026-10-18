@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "25556ccd9704183545505702",
+      "title": "當一個忘性很大的人嘗試寫十一月小結",
+      "summary": "一開始覺得好不容易但",
+      "image": null,
+      "publishedAt": "2023-11-30T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/nov-2023-recap/",
+      "detailPath": "articles/25556ccd9704183545505702.json"
+    },
+    {
+      "id": "95343ca056ef9bbd7d33bfec",
+      "title": "如何在現代地圖上疊加歷史地圖：QGIS常用底圖資源及獲取方法",
+      "summary": "在QGIS中导入底图（通常指在线地图服务或离线瓦片地图）有多种方法。 （在現代地圖上疊加歷史地圖參見 方法三：添加WMS/WMTS服务 ） 方法一：使用QGIS内置的“XYZ切片”连接 # 许多网络地图服务（如OpenStreetMap、谷歌地图）都以XYZ切片（Tiles）服务的形式提供底图。 操作步骤： 在左侧的浏览器面板中，找到并展开“XYZ切片”项。 在 “XYZ切片” 上右键单击，选择 “新建连接…”。 在弹出的对话框中： 名称： 为地图源起一个名字（如 “OpenStreetMap”、“Google卫星图”等）。 URL： 输入地图服务的瓦片URL地址。 点击“OK”保存。可以在 “XYZ切片” 目录下看到刚创建的连接，双击它或将其拖拽到地图画布中，底图就会加载出来。 常用底图URL： 名称：Op…",
+      "image": "https://wuliang.netlify.app/posts/qgis-xyz-tiles-and-wmts/QGIS-%E5%8D%97%E5%AE%8B%E5%8E%86%E5%8F%B2%E5%9C%B0%E5%9B%BE%E5%8F%A0%E5%8A%A0%E7%8E%B0%E4%BB%A3%E5%9C%B0%E5%9B%BE2.jpg",
+      "publishedAt": "2023-11-28T11:00:00Z",
+      "sourceId": "4947a434a94c3ee9",
+      "sourceTitle": "無糧殿",
+      "link": "https://wuliang.netlify.app/posts/qgis-xyz-tiles-and-wmts/",
+      "detailPath": "articles/95343ca056ef9bbd7d33bfec.json"
+    },
+    {
       "id": "d21fce2194bed69ca7a9960e",
       "title": "更改Hugo博客的永久URL链接，并用Netlify实现旧博文跳转",
       "summary": "对于静态博客，有时候会需要更改博文的永久URL链接格式，比如把格式为 /blog/xxx 的链接改为 /post/xxx 。有时由于迁移博客，也需要把以前的老博文进行URL重定向跳转，以避免失效链接导致的404。",
@@ -637,28 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2023/09/04/city-walk/",
       "detailPath": "articles/320acf2275136b22f1fd6f49.json"
-    },
-    {
-      "id": "408e9fe73abc32404c9c0567",
-      "title": "Some mixed feelings about Bay Area",
-      "summary": "一 Play Hard and Work Hard 的精髓就是工作的时候知道要赶紧做完，接下来才可以尽",
-      "image": null,
-      "publishedAt": "2023-09-03T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2023/09/03/mixed-feeling-about-bay-area/",
-      "detailPath": "articles/408e9fe73abc32404c9c0567.json"
-    },
-    {
-      "id": "70c289293f2218d95672a296",
-      "title": "杂谈医疗反腐风暴，医改将改向何方？",
-      "summary": "医方、患方、药企、医保四个人打麻将，主打一个零和博弈，纪委监委斩不断腐败的根，得换谁来？本文仅代表个人不成熟的观点。",
-      "image": "https://blog.drpika.com/posts/images/bg.jpg",
-      "publishedAt": "2023-09-03T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2023-09-03",
-      "detailPath": "articles/70c289293f2218d95672a296.json"
     }
   ]
 }

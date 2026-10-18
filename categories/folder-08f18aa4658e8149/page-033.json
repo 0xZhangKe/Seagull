@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "1a3b16f394c9aa967643014c",
+      "title": "Android Perfetto 系列 15：Boot Trace、长时间现场 Trace 与偶发问题抓取",
+      "summary": "开机慢、亮屏后偶发卡顿或几小时后才出现的音频断续，通常等不到工程师连上电脑再按「开始录制」。要保留问题发生前的调度、帧或音频事件，采集配置必须提前在设备上运行。 现场抓取要先确定触发点前后各保留多久，再选 Ring Buffer、周期写文件或 trigger。文件写出后，还要确认问题窗口没有被覆盖、关键数据源没有丢失。设备开机属于更早的特殊窗口，单独处理。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:15:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-15-Boot-And-Long-Running-Field-Tracing/",
+      "detailPath": "articles/1a3b16f394c9aa967643014c.json"
+    },
+    {
+      "id": "3dd9b1ff15b3fbad9583a262",
+      "title": "Android Perfetto 系列 14：heapprofd 与内存 Profiling",
+      "summary": "dumpsys meminfo 显示进程内存上涨，Java heap dump 却没有对应的对象增长时，下一步先查上涨落在 Native Heap、图形 Buffer，还是其他映射。若可疑部分来自 malloc/new，heapprofd 可以把分配与调用栈对应起来。 heapprofd 的分配、释放和调用栈记录能与业务事件放在同一条 Perfetto 时间轴上，便于核对一次操作前后哪些分配仍未释放。 heapprofd 是采样工具，看到的 native allocation 不能直接当作 RSS，也不覆盖 Java 对象引用或所有图形 backing 内存。先分清内存账，再决定是否抓 profile。我更倾向先用 meminfo 和 smaps 把上涨来源拆开，再打开 flamegraph；若涨的是 Gra…",
+      "image": null,
+      "publishedAt": "2026-05-04T02:14:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-14-Native-Heap-Heapprofd/",
+      "detailPath": "articles/3dd9b1ff15b3fbad9583a262.json"
+    },
+    {
+      "id": "7efd1da8c1de0933fa643668",
+      "title": "Android Perfetto 系列 13：Perfetto SDK、Track Event 与 App 现场 Trace",
+      "summary": "系统 Trace 能显示线程、CPU、帧和 Binder 等系统事件；播放器的 frame id、游戏 scene 名称或业务队列里的等待时间，需要应用自己提供。缺少这些标记时，一段主线程耗时只能定位到系统活动，难以对应业务阶段。 Perfetto SDK 的 Track Event 可以记录解码、纹理上传、队列深度和跨线程任务 ID。与系统轨道放在同一个时间窗口后，能先找到业务候选阶段，再用 RenderThread、GPU 和 FrameTimeline 验证它是否影响了可见帧。 接入前要先定事件名称、参数单位和采样频率。否则埋点虽然能显示在 UI 中，后续 SQL 仍无法稳定地按业务阶段聚合。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:13:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-13-Track-Event-SDK/",
+      "detailPath": "articles/7efd1da8c1de0933fa643668.json"
+    },
+    {
       "id": "680345d5a59550c7fdf8d2ce",
       "title": "Android Perfetto 系列 12：Trace 数据流与丢失排查",
       "summary": "一份 Trace 能在 UI 里打开、SQL 也查得到行，仍可能在采集中丢过数据。线程状态缺一段、进程名对不上、Track Event 只有 ID 没有名称时，先查数据丢在哪一层，再决定哪些分析还能继续。 SQL 只能度量留下来的事件。丢失发生在 ftrace、producer 共享内存还是 central buffer，影响的查询不同。看到一条 ftrace loss，我不会立刻扔掉整份 Trace；先查它影响的是调度、业务标记，还是帧数据。 下文沿事件从内核进入 Trace 文件的路径检查 ftrace、producer 共享内存、central buffer、增量状态和 flush。每一处都有对应的 stats 线索和下一次采集时可调整的配置。",
@@ -626,39 +659,6 @@
       "sourceTitle": "白熊阿丸的小屋",
       "link": "https://blog.bxaw.name/archives/What-Feels-Like-Arguing-Is-Often-Just-Numbing-Pain-Emotional-Retaliation-and-Boundary-Anxiety.html",
       "detailPath": "articles/e1816e6ec1a7522db1cf038a.json"
-    },
-    {
-      "id": "35a5d08cd019fd9e52b68790",
-      "title": "我被主持人教育經營自媒體",
-      "summary": "最近第一次遇到一位主持人，他認真經營 IG 約 3 年多，粉絲數量已經接近 9.7 萬。 我問她困擾我很久的問題： 「為了討好演算法，而拍一堆自己都不喜歡的影片，這樣不是很痛苦嗎？ 而那些真正值得拍的好內容，卻常常不受演算法眷顧。」 她回了一句很直接的話： 「那就是工作啊！今天這場主持就是從 IG 來的案子！」 過去的我，完全無法接受。 因為我會用「作品」的標準，去看待所有輸出的內容。 但她在談的，其實不是喜不喜歡。 而是「IG 如何讓我繼續存在。」 這跟我前幾天說接案時要〈 先生存，再篩選 〉其實很像。 IG 不是作品平台，而是曝光平台。 我現在有 eddielv.com（就是這裡），也有 吉他島嶼 官網可以讓我慢慢把「作品」做好。 但猶如我在〈 社群平臺不社群了，創作者該如何看待？ 〉提到的： 「IG 是…",
-      "image": null,
-      "publishedAt": "2026-04-27T03:40:48Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/mc-teach-media/",
-      "detailPath": "articles/35a5d08cd019fd9e52b68790.json"
-    },
-    {
-      "id": "fa710160dadad670607fcefe",
-      "title": "預設值",
-      "summary": "大部分的人，對大部分的事情，其實沒什麼主見。",
-      "image": null,
-      "publishedAt": "2026-04-27T00:05:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/be-the-default",
-      "detailPath": "articles/fa710160dadad670607fcefe.json"
-    },
-    {
-      "id": "5661c5c2d8414aa0eaa11e87",
-      "title": "預設值與品味",
-      "summary": "從 Wiwi 的〈預設值〉延伸的隨筆——聊福岡手扶梯的潛規則、AI 內容如何佔據 SEO 排名，以及伏爾泰對品味的定義。",
-      "image": "https://image.kalan.dev/2ac2e25a-34ea-424c-77e1-adfd1da3b600/normal",
-      "publishedAt": "2026-04-27T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/random/defaults-and-taste/",
-      "detailPath": "articles/5661c5c2d8414aa0eaa11e87.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "c7a8ea6afd42fcdde0f37bf0",
+      "title": "Coffee Break Clojure, Transducer",
+      "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时，…",
+      "image": "https://img.eltr.ac/geedeapro/article/clj8/Left-fold-transformation.png",
+      "publishedAt": "2026-10-18T04:26:01Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj8/",
+      "detailPath": "articles/c7a8ea6afd42fcdde0f37bf0.json"
+    },
+    {
       "id": "c9c4228429274f86d94c3c87",
       "title": "Coffee Break Clojure, Async",
       "summary": "上一篇 我提及了如何用 Ring 开发 HTTP 服务器，也提到 Ring 提供了同步 API 和异步 API。那么，什么是异步编程？为什么需要异步？在什么情况下需要让一个程序同时做很多事情？ 同步、异步、并发和并行 同步（synchronization）的中文名字可能会让人误以为是多个实体同时进行操作，实际上同步的意思是指系统中所有事件都依照相同的顺序进行协调。可以用工厂流水线举例，假如流水线中一个工人需要等上一个工人交付一部分工作之后才能干活，整个流水线都要所有人一起干活才能转动起来，这个流水线就是同步的。反之，假如某些工作可以分开做，比如一部分人负责生产 A 零件，另一部分人负责生产 B 零件，两者互不干扰，而最终把 A 和 B 组装在一起的又是另一拨人，这个系统就是异步的（asynchronous）。…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/library/2026/last-evenings-on-earth/",
       "detailPath": "articles/dd1bd21cbccf5e2a9cd152ca.json"
-    },
-    {
-      "id": "fb29f4f980634006296bd5b2",
-      "title": "是琐碎的小事让我活着",
-      "summary": "这几天试了试不同的搜索引擎，其实也没有厌倦 Kagi，只是他们似乎在往邮件、新闻这些业务上拓展了，让我有点担心某天会发病，所以在物色替代品。搜索关键词很自负地搜了自己博客的名字，结果发现两三个镜像站聚合了我的 RSS，然后用语言模型生成了非常诡异的总结，还改了我的标题，机翻了我的英文文章。罢了，不去想那些烦心事。 我还找到了 松易涅的写作分享站 上一篇关于我博客的文章，题为《 左右脑：读极客死亡计划的博客有感 》。他的博客挺好的，我禁用了 JavaScript 还能正常用搜索功能 1 ，不过有一点待改进，就是文章页竟然没放发布日期。看内容应该是去年八九月，因为他是读了我「与某位男生的情感纠葛」才有感而发的。 最近收到一封读者来信，也提起那几篇文章。之前莫比乌斯也在他博客 谈起此事 。我不禁好奇究竟有多少人见证…",
-      "image": null,
-      "publishedAt": "2026-09-26T17:18:41Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/little-things/",
-      "detailPath": "articles/fb29f4f980634006296bd5b2.json"
     }
   ]
 }

@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-17T21:11:12+00:00</updated><author><name>Simon Willison</name></author><entry><title>Inline rendering with document​.currentScript</title><link href="https://simonwillison.net/2026/Oct/17/document-currentscript/" rel="alternate"/><published>2026-10-17T21:11:12+00:00</published><updated>2026-10-17T21:11:12+00:00</updated><id>https://simonwillison.net/2026/Oct/17/document-currentscript/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-18T23:43:09+00:00</updated><author><name>Simon Willison</name></author><entry><title>llm-tools-datasette 0.1.1</title><link href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" rel="alternate"/><published>2026-10-18T23:43:09+00:00</published><updated>2026-10-18T23:43:09+00:00</updated><id>https://simonwillison.net/2026/Oct/18/llm-tools-datasette/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-tools-datasette/releases/tag/0.1.1"&gt;llm-tools-datasette 0.1.1&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;When I switched LLM over to &lt;a href="https://github.com/pydantic/httpx2"&gt;httpx2&lt;/a&gt; in &lt;a href="https://llm.datasette.io/en/stable/changelog.html#v0-33"&gt;LLM 0.33&lt;/a&gt; I forget that this would break any plugins which used &lt;code&gt;httpx&lt;/code&gt; without directly depending on it. &lt;code&gt;llm-tools-datasette&lt;/code&gt; was one of those plugins, now fixed.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="datasette"/><category term="llm"/></entry><entry><title>llm-echo 0.5</title><link href="https://simonwillison.net/2026/Oct/18/llm-echo/" rel="alternate"/><published>2026-10-18T23:16:16+00:00</published><updated>2026-10-18T23:16:16+00:00</updated><id>https://simonwillison.net/2026/Oct/18/llm-echo/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-echo/releases/tag/0.5"&gt;llm-echo 0.5&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;I'm working towards a new &lt;a href="https://llm.datasette.io/"&gt;LLM&lt;/a&gt; release, and testing PRs caused me to revisit the &lt;code&gt;llm-echo&lt;/code&gt; debug plugin. This plugin provides a "model" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account.&lt;/p&gt;
+&lt;p&gt;Example usage:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Outputs:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;First I consider the prompt, then I decide what to say.
+{
+  "prompt": "hi there",
+  "system": "",
+  "attachments": [],
+  "stream": true,
+  "previous": []
+}
+Token usage: 2 input, 24 output
+&lt;/code&gt;&lt;/pre&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="llm"/></entry><entry><title>Inline rendering with document​.currentScript</title><link href="https://simonwillison.net/2026/Oct/17/document-currentscript/" rel="alternate"/><published>2026-10-17T21:11:12+00:00</published><updated>2026-10-17T21:11:12+00:00</updated><id>https://simonwillison.net/2026/Oct/17/document-currentscript/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://leanrada.com/notes/inline-rendering-currentscript/"&gt;Inline rendering with document​.currentScript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Lean Rada describes a neat trick that takes advantage of the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript"&gt;document.currentScript&lt;/a&gt; property. You can use that to drop in a tiny inline &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; element that replaces itself when the page loads:&lt;/p&gt;
@@ -542,33 +574,4 @@ llm -m claude-haiku-5.5 "Generate an SVG of a pelican riding a bicycle" -o think
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="claude"/><category term="llm-pricing"/><category term="pelican-riding-a-bicycle"/><category term="llm-release"/></entry><entry><title>Anti-Patterns in Software Blogging</title><link href="https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/" rel="alternate"/><published>2026-10-07T14:53:51+00:00</published><updated>2026-10-07T14:53:51+00:00</updated><id>https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://refactoringenglish.com/blog/anti-patterns-software-blogging/#summary"&gt;Anti-Patterns in Software Blogging&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Some excellent writing advice from Michael Lynch. Michael warns against "meandering intros", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and excessive formality.&lt;/p&gt;
-&lt;p&gt;He also warns against &lt;a href="https://refactoringenglish.com/blog/anti-patterns-software-blogging/#overreliance-on-links"&gt;overreliance on links&lt;/a&gt; as an excuse not to explain terminology. This one hurt! I do this all the time, but I have a nagging suspicion that almost nobody ever clicks on them.&lt;/p&gt;
-&lt;p&gt;(In &lt;a href="https://lobste.rs/s/rwdufq/anti_patterns_software_blogging#c_qdhhsd"&gt;a Lobste.rs comment&lt;/a&gt; Michael clarifies that "My rule of thumb is that my article should still make sense to the reader even if they don't click any links". That works for me.)&lt;/p&gt;
-&lt;p&gt;This point about using your own voice is crucial:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Beginner software bloggers suffer from a mass delusion that you have to write in a stiff, overly formal way for people to take you seriously [...]&lt;/p&gt;
-&lt;p&gt;Just write the way you talk.&lt;/p&gt;
-&lt;p&gt;With so many developers delegating their writing to AI, software blogging is becoming bland and homogenous. Readers are hungry for writing with personality.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://lobste.rs/s/rwdufq/anti_patterns_software_blogging"&gt;Lobste.rs&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/blogging"&gt;blogging&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/writing"&gt;writing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/michael-lynch"&gt;michael-lynch&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="blogging"/><category term="writing"/><category term="michael-lynch"/></entry><entry><title>Quoting Jake Boggan</title><link href="https://simonwillison.net/2026/Oct/7/jake-boggan/" rel="alternate"/><published>2026-10-07T04:47:55+00:00</published><updated>2026-10-07T04:47:55+00:00</updated><id>https://simonwillison.net/2026/Oct/7/jake-boggan/</id><summary type="html">
-    &lt;blockquote cite="https://news.ycombinator.com/item?id=49984923#49987367"&gt;&lt;p&gt;I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years of my life, on and off as I worked in many different fields. Last summer I even thought for a few days that I had actually solved it.&lt;/p&gt;
-&lt;p&gt;But it's supposedly proven here - &lt;a href="https://github.com/openai/math/blob/main/lean/docs/180.md"&gt;problem 180&lt;/a&gt;. I don't know what to think exactly. I spent thousands of hours on that problem. I really enjoyed it. Hearing that it is solved somehow makes me sad in a far-off way, like hearing an ex-girlfriend died suddenly in a car crash. I don't know, there's probably a lot of people feeling odd emotions tonight.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://news.ycombinator.com/item?id=49984923#49987367"&gt;Jake Boggan&lt;/a&gt;, Hacker News comment on &lt;a href="https://github.com/openai/math"&gt;openai/math&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/mathematics"&gt;mathematics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/deep-blue"&gt;deep-blue&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="openai"/><category term="mathematics"/><category term="deep-blue"/><category term="llms"/><category term="ai"/><category term="generative-ai"/></entry></feed>
+</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="claude"/><category term="llm-pricing"/><category term="pelican-riding-a-bicycle"/><category term="llm-release"/></entry></feed>

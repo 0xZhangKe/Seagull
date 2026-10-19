@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "7c6b6250af5cfcfed10f6faa",
+      "title": "It's Free Real Estate",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-03-25T00:00:00Z",
+      "sourceId": "dde6ec5e46ed3792",
+      "sourceTitle": "Matt Keeter",
+      "link": "https://mattkeeter.com/blog/2024-03-25-packing",
+      "detailPath": "articles/7c6b6250af5cfcfed10f6faa.json"
+    },
+    {
       "id": "9caf19f6193f9aeaddb7b9ae",
       "title": "Gradle toolchains are rarely a good idea",
       "summary": "The last post featured some Kotlin code inadvertently targeting a new Java API when the build JDK was bumped to 21. This can be solved with the -Xjdk-release Kotlin compiler flag, or by using Gradle toolchains to build with an old JDK. If you read the Gradle docs … Using Java toolchains is a preferred way to target a language version …or the Android docs ……",
@@ -617,17 +628,6 @@
       "detailPath": "articles/d4ca1d0589575138226fe403.json"
     },
     {
-      "id": "7affca3a74a2cbb93188f2b5",
-      "title": "Implementing New Java Stream Operations",
-      "summary": "Implementing a bunch of Gatherer s to better understand the proposed addition to the stream API",
-      "image": null,
-      "publishedAt": "2023-11-02T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/implementing-gatherers",
-      "detailPath": "articles/7affca3a74a2cbb93188f2b5.json"
-    },
-    {
       "id": "d7c22f843d49766f8b10eaa2",
       "title": "Better Java Streams with Gatherers - Inside Java Newscast #57",
       "summary": "Stream::gather is a new intermediate meta-operation that allows the JDK and us to implement all kinds of intermediate operations as Gatherer s without overloading the Stream interface",
@@ -639,6 +639,17 @@
       "detailPath": "articles/d7c22f843d49766f8b10eaa2.json"
     },
     {
+      "id": "7affca3a74a2cbb93188f2b5",
+      "title": "Implementing New Java Stream Operations",
+      "summary": "Implementing a bunch of Gatherer s to better understand the proposed addition to the stream API",
+      "image": null,
+      "publishedAt": "2023-11-02T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/implementing-gatherers",
+      "detailPath": "articles/7affca3a74a2cbb93188f2b5.json"
+    },
+    {
       "id": "5b8510ddb73ce135f5f0e853",
       "title": "CDC Use Cases: 7 Ways to Put CDC to Work",
       "summary": "Table of Contents What is CDC? CDC Tools Analytics Data Platforms Application Caches Full-Text Search Audit Logs Continuous Queries Microservices Data Exchange Monolith-to-Microservices Migration Summary This post originally appeared on the Decodable blog . All rights reserved. Change Data Capture (CDC) is a powerful tool in data engineering and has seen a…",
@@ -648,17 +659,6 @@
       "sourceTitle": "morling.dev -- Blog",
       "link": "https://www.morling.dev/blog/cdc-use-cases/",
       "detailPath": "articles/5b8510ddb73ce135f5f0e853.json"
-    },
-    {
-      "id": "7045b89085c883342345ed31",
-      "title": "Hunting a spooky ethernet driver bug",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2023-10-31T00:00:00Z",
-      "sourceId": "dde6ec5e46ed3792",
-      "sourceTitle": "Matt Keeter",
-      "link": "https://mattkeeter.com/blog/2023-10-31-dma",
-      "detailPath": "articles/7045b89085c883342345ed31.json"
     }
   ]
 }

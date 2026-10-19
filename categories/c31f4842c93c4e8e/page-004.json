@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "c32b9106142fcd2183d22970",
+      "title": "Java 12 Experiments (Live Stream)",
+      "summary": "In my first live stream ever (yay!), we explored Java 12's API improvements",
+      "image": null,
+      "publishedAt": "2019-02-24T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/java-12-experiments",
+      "detailPath": "articles/c32b9106142fcd2183d22970.json"
+    },
+    {
       "id": "8fb6d578a4e09dc89634b867",
       "title": "Utilities, Singletons and Dependency Injection - Effective Java, Items 3-5",
       "summary": "Mildly surprising (to me), it makes sense to discuss these three patters in one video - so here it goes",
@@ -155,15 +166,15 @@
       "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
     },
     {
-      "id": "0b5ccd28a955f28bce0a35a6",
-      "title": "JUnit 5 Basics: @Test, Lifecycle, Assertions, Assumptions, And More",
-      "summary": "The Basics of JUnit 5: How to use @Test , @BeforeAll , @BeforeEach , @AfterEach , @AfterAll , assertions, and assumptions. How to disable, name, and tag tests.",
-      "image": "https://nipafx.dev/static/d3468dac78a2b7cbe62fd4db7b035a3b/65364/junit-5-basics-named-test.png",
+      "id": "9d8a54f5cf68602d9fe9d721",
+      "title": "JUnit 5 Conditions: @Enabled, @Disabled, Customized",
+      "summary": "A detailed look at JUnit 5's @Disabled , @DisabledOnOs , @DisabledOnJre , etc. and how to create custom conditions to flexibly disable test methods.",
+      "image": null,
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-basics",
-      "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
+      "link": "https://nipafx.dev/junit-5-disabled-conditions",
+      "detailPath": "articles/9d8a54f5cf68602d9fe9d721.json"
     },
     {
       "id": "5d2aaa043fb6eb82cbbad974",
@@ -177,26 +188,15 @@
       "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
-      "id": "9d8a54f5cf68602d9fe9d721",
-      "title": "JUnit 5 Conditions: @Enabled, @Disabled, Customized",
-      "summary": "A detailed look at JUnit 5's @Disabled , @DisabledOnOs , @DisabledOnJre , etc. and how to create custom conditions to flexibly disable test methods.",
+      "id": "ea79060bf464ac6ad4ef5658",
+      "title": "JUnit 5 Extension Model: How To Create Your Own Extensions",
+      "summary": "The JUnit 5 extension model enables detailed, flexible, and powerful additions to JUnit 5's core features. For that it provides specific extension points.",
       "image": null,
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-disabled-conditions",
-      "detailPath": "articles/9d8a54f5cf68602d9fe9d721.json"
-    },
-    {
-      "id": "3aff464cf50baab88d3a9bcc",
-      "title": "JUnit 5 - Parameterized Tests",
-      "summary": "Thorough introduction to parameterized tests in JUnit 5 with @ParameterizedTest, argument sources (eg @MethodSource, @CsvSource), and argument converters.",
-      "image": "https://nipafx.dev/static/142795441623cf65116759748679a9df/d613c/junit-5-params-two-values.png",
-      "publishedAt": "2018-08-05T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-parameterized-tests",
-      "detailPath": "articles/3aff464cf50baab88d3a9bcc.json"
+      "link": "https://nipafx.dev/junit-5-extension-model",
+      "detailPath": "articles/ea79060bf464ac6ad4ef5658.json"
     },
     {
       "id": "29e1102fd3d711226fce1f9a",
@@ -210,15 +210,26 @@
       "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
     },
     {
-      "id": "ea79060bf464ac6ad4ef5658",
-      "title": "JUnit 5 Extension Model: How To Create Your Own Extensions",
-      "summary": "The JUnit 5 extension model enables detailed, flexible, and powerful additions to JUnit 5's core features. For that it provides specific extension points.",
-      "image": null,
+      "id": "0b5ccd28a955f28bce0a35a6",
+      "title": "JUnit 5 Basics: @Test, Lifecycle, Assertions, Assumptions, And More",
+      "summary": "The Basics of JUnit 5: How to use @Test , @BeforeAll , @BeforeEach , @AfterEach , @AfterAll , assertions, and assumptions. How to disable, name, and tag tests.",
+      "image": "https://nipafx.dev/static/d3468dac78a2b7cbe62fd4db7b035a3b/65364/junit-5-basics-named-test.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-extension-model",
-      "detailPath": "articles/ea79060bf464ac6ad4ef5658.json"
+      "link": "https://nipafx.dev/junit-5-basics",
+      "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
+    },
+    {
+      "id": "3aff464cf50baab88d3a9bcc",
+      "title": "JUnit 5 - Parameterized Tests",
+      "summary": "Thorough introduction to parameterized tests in JUnit 5 with @ParameterizedTest, argument sources (eg @MethodSource, @CsvSource), and argument converters.",
+      "image": "https://nipafx.dev/static/142795441623cf65116759748679a9df/d613c/junit-5-params-two-values.png",
+      "publishedAt": "2018-08-05T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/junit-5-parameterized-tests",
+      "detailPath": "articles/3aff464cf50baab88d3a9bcc.json"
     },
     {
       "id": "c95b963c1ad03ac7353b5b17",
@@ -648,17 +659,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/rebutting-5-common-java-stream-tropes",
       "detailPath": "articles/935435da3e354a8f7d8731cf.json"
-    },
-    {
-      "id": "534b29dc0f20b3cb069a3059",
-      "title": "Code Reviews At Disy - Where We Were And What We Wanted",
-      "summary": "At Disy we review almost all the code we write. Here, we want to share why that was not always the case and how we started with code reviews.",
-      "image": null,
-      "publishedAt": "2016-08-15T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/code-reviews-disy-part-1",
-      "detailPath": "articles/534b29dc0f20b3cb069a3059.json"
     }
   ]
 }

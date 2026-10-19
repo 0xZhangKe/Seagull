@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "0881b1a1e10fb3f1f0eb68d1",
+      "title": "Module Imports in Java 23 - Inside Java Newscast #69",
+      "summary": "To reduce the overhead of using APIs, particularly in single source files, Java 23 previews module import declarations of the form import module $moduleName , which import all packages exported by the named module",
+      "image": null,
+      "publishedAt": "2024-05-16T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/inside-java-newscast-69",
+      "detailPath": "articles/0881b1a1e10fb3f1f0eb68d1.json"
+    },
+    {
       "id": "cdea58e8918ed38d638a31b8",
       "title": "Java Withers - Inside Java Newscast #67",
       "summary": "JEP 468 proposes a solution to the verbosity that can come from modeling mutable state with immutable records: derived record creation aka with expressions aka withers .",
@@ -144,17 +155,6 @@
       "detailPath": "articles/f7be471b6029cd790c9125a7.json"
     },
     {
-      "id": "7affca3a74a2cbb93188f2b5",
-      "title": "Implementing New Java Stream Operations",
-      "summary": "Implementing a bunch of Gatherer s to better understand the proposed addition to the stream API",
-      "image": null,
-      "publishedAt": "2023-11-02T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/implementing-gatherers",
-      "detailPath": "articles/7affca3a74a2cbb93188f2b5.json"
-    },
-    {
       "id": "d7c22f843d49766f8b10eaa2",
       "title": "Better Java Streams with Gatherers - Inside Java Newscast #57",
       "summary": "Stream::gather is a new intermediate meta-operation that allows the JDK and us to implement all kinds of intermediate operations as Gatherer s without overloading the Stream interface",
@@ -164,6 +164,17 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/inside-java-newscast-57",
       "detailPath": "articles/d7c22f843d49766f8b10eaa2.json"
+    },
+    {
+      "id": "7affca3a74a2cbb93188f2b5",
+      "title": "Implementing New Java Stream Operations",
+      "summary": "Implementing a bunch of Gatherer s to better understand the proposed addition to the stream API",
+      "image": null,
+      "publishedAt": "2023-11-02T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/implementing-gatherers",
+      "detailPath": "articles/7affca3a74a2cbb93188f2b5.json"
     },
     {
       "id": "3c0e6b45401071031ef24907",
@@ -648,17 +659,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/inside-java-newscast-18",
       "detailPath": "articles/94420d7eb1516a3383169bd9.json"
-    },
-    {
-      "id": "66a4463d5339bcebb43bd186",
-      "title": "Project Loom Brings Structured Concurrency - Inside Java Newscast #17",
-      "summary": "Project Loom aims to bring structured concurrency to Java, a concept that compares to \"regular\" concurrency like structured programming compares to GOTO-programming - let's dip our toes into this new concept. Also: JDK 18 feature freeze, JDK migration guide, and nifty things to do with the new simple web server.",
-      "image": null,
-      "publishedAt": "2021-12-16T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/inside-java-newscast-17",
-      "detailPath": "articles/66a4463d5339bcebb43bd186.json"
     }
   ]
 }

@@ -12,7 +12,7 @@
 	<atom:link href="https://www.cnx-software.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.cnx-software.com/</link>
 	<description>Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC&#039;s, microcontrollers, processors, and more</description>
-	<lastBuildDate>Sun, 18 Oct 2026 02:24:10 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 19 Oct 2026 14:19:39 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,79 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Linux 7.3 release &#8211; Main Changes, Arm, RISC-V, and MIPS architectures</title>
+		<link>https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/</link>
+					<comments>https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Luc Aufranc (CNXSoft)]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 17:01:56 +0000</pubDate>
+				<category><![CDATA[Alibaba T-Head]]></category>
+		<category><![CDATA[Allwinner A-Series]]></category>
+		<category><![CDATA[Allwinner H-Series]]></category>
+		<category><![CDATA[AMLogic]]></category>
+		<category><![CDATA[Broadcom BCMxxxx]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Linux 7.x]]></category>
+		<category><![CDATA[MediaTek Filogic]]></category>
+		<category><![CDATA[Mediatek MT65XX]]></category>
+		<category><![CDATA[Mediatek MT8xxx]]></category>
+		<category><![CDATA[Mediatek Wi-Fi]]></category>
+		<category><![CDATA[Microsemi]]></category>
+		<category><![CDATA[NVIDIA Jetson]]></category>
+		<category><![CDATA[NXP i.MX]]></category>
+		<category><![CDATA[Qualcomm QCS]]></category>
+		<category><![CDATA[Qualcomm Snapdragon]]></category>
+		<category><![CDATA[Rockchip RK35xx]]></category>
+		<category><![CDATA[Rockchip RVxxxx]]></category>
+		<category><![CDATA[Samsung Exynos]]></category>
+		<category><![CDATA[SiFive]]></category>
+		<category><![CDATA[SOPHGO]]></category>
+		<category><![CDATA[SpacemIT]]></category>
+		<category><![CDATA[StarFive]]></category>
+		<category><![CDATA[Texas Instruments Sitara]]></category>
+		<category><![CDATA[alibaba]]></category>
+		<category><![CDATA[allwinner]]></category>
+		<category><![CDATA[amlogic]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[arm]]></category>
+		<category><![CDATA[asus]]></category>
+		<category><![CDATA[banana pi]]></category>
+		<category><![CDATA[beagleboard]]></category>
+		<category><![CDATA[btrfs]]></category>
+		<category><![CDATA[ext-4]]></category>
+		<category><![CDATA[mediatek]]></category>
+		<category><![CDATA[mips]]></category>
+		<category><![CDATA[motorola]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[optimization]]></category>
+		<category><![CDATA[orange pi]]></category>
+		<category><![CDATA[qualcomm]]></category>
+		<category><![CDATA[radxa]]></category>
+		<category><![CDATA[Raspberry Pi]]></category>
+		<category><![CDATA[risc-v]]></category>
+		<category><![CDATA[rockchip]]></category>
+		<category><![CDATA[samsung]]></category>
+		<category><![CDATA[Single Board Computer]]></category>
+		<category><![CDATA[sony]]></category>
+		<category><![CDATA[spacemit]]></category>
+		<category><![CDATA[starfive]]></category>
+		<category><![CDATA[toradex]]></category>
+		<category><![CDATA[variscite]]></category>
+		<category><![CDATA[xiaomi]]></category>
+		<guid isPermaLink="false">https://www.cnx-software.com/?p=178453</guid>
+
+					<description><![CDATA[<div><img width="720" height="450" src="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg" class="attachment-medium size-medium wp-post-image" alt="Linux 7.3" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-1200x750.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-300x188.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-768x480.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3.jpg 1440w" sizes="100vw" /></div>
+<p>Linus Torvalds announced the release of Linux 7.3 on LKML last Sunday: It&#8217;s Sunday afternoon, and this week I somehow kept my wits together long enough to keep track of the day of the week, so the release isn&#8217;t randomly delayed. Will wonders never cease? Anyway, nothing very special seems to have happened this last week, so as expected the final 7.3 is out, and thus tomorrow the merge window for 7.4 opens. Except I&#8217;m on my annual family vacation, so instead of merging anything first thing in the morning, I&#8217;ll spend most of the day on a boat and under water. I&#8217;ll get back to merging in the afternoon, but I expect my schedule to be a bit unusual for a while. I hope I can still complete the merge window in the usual two weeks, but it may be that I&#8217;ll end up with an extra week of merging [...]</p>
+<p>The post <a href="https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/">Linux 7.3 release &#8211; Main Changes, Arm, RISC-V, and MIPS architectures</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>BIOSTAR BIWCL-PAT &#8211; A 3.5-inch industrial Wildcat Lake SBC with dual 2.5GbE, triple display support</title>
 		<link>https://www.cnx-software.com/2026/10/19/biostar-biwcl-pat-a-3-5-inch-industrial-wildcat-lake-sbc-with-dual-2-5gbe-triple-display-support/</link>
 					<comments>https://www.cnx-software.com/2026/10/19/biostar-biwcl-pat-a-3-5-inch-industrial-wildcat-lake-sbc-with-dual-2-5gbe-triple-display-support/#respond</comments>
@@ -53,7 +126,7 @@
 		<category><![CDATA[windows 11]]></category>
 		<guid isPermaLink="false">https://www.cnx-software.com/?p=178354</guid>
 
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="BIWCL PAT industrial motherboard" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard.jpg 1200w" sizes="100vw" /></div>
+					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="BIWCL PAT industrial motherboard" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/BIWCL-PAT-industrial-motherboard.jpg 1200w" sizes="100vw" /></div>
 <p>BIOSTAR BIWCL-PAT is a 3.5-inch industrial SBC built around the Intel Core Series 3 &#8220;Wildcat Lake&#8221; SoC family, ranging from the Core 3 304 to the Core 7 360. The board supports up to 64GB DDR5-6400 memory, three independent displays, and dual 2.5GbE networking. It also features three M.2 slots for NVMe storage, Wi-Fi/Bluetooth, and 4G/5G cellular connectivity, along with USB 3.2 ports, four serial interfaces, and an 8-bit digital I/O header. The compact 148 x 102mm form factor makes it suitable for industrial automation, edge computing, AIoT, human-machine interfaces (HMI), and POS/kiosk applications. BIOSTAR BIWCL-PAT specifications: Wildcat Lake SoC (one or the other) Intel Core 3 304 penta-core CPU with 1x P core @ 1.5 GHz / 4.3 GHz (Turbo) and 4x LPE cores, 1-core Intel Xe3 Graphics @ 2.3 GHz; TDP: 15W Intel Core 3 305 hexa-core CPU with 2x P cores @ 1.5 GHz / 4.3 GHz [...]</p>
 <p>The post <a href="https://www.cnx-software.com/2026/10/19/biostar-biwcl-pat-a-3-5-inch-industrial-wildcat-lake-sbc-with-dual-2-5gbe-triple-display-support/">BIOSTAR BIWCL-PAT &#8211; A 3.5-inch industrial Wildcat Lake SBC with dual 2.5GbE, triple display support</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
 ]]></description>
@@ -88,14 +161,14 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/19/axera-ax8860p-16-core-cortex-a55-soc-takes-on-nvidia-dgx-spark-at-fraction-of-the-cost/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>5</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>M5Stack PaperDIY Kits pair an ESP32-S3 MCU with a 4.7-inch e-Paper display</title>
 		<link>https://www.cnx-software.com/2026/10/18/m5stack-paperdiy-kits-pair-an-esp32-s3-mcu-with-a-4-7-inch-e-paper-display/</link>
-					<comments>https://www.cnx-software.com/2026/10/18/m5stack-paperdiy-kits-pair-an-esp32-s3-mcu-with-a-4-7-inch-e-paper-display/#respond</comments>
+					<comments>https://www.cnx-software.com/2026/10/18/m5stack-paperdiy-kits-pair-an-esp32-s3-mcu-with-a-4-7-inch-e-paper-display/#comments</comments>
 		
 		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
 		<pubDate>Sun, 18 Oct 2026 03:00:58 +0000</pubDate>
@@ -119,7 +192,7 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/18/m5stack-paperdiy-kits-pair-an-esp32-s3-mcu-with-a-4-7-inch-e-paper-display/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+			<slash:comments>1</slash:comments>
 		
 		
 			</item>
@@ -965,34 +1038,6 @@
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/02/asrock-industrial-nuc-300-series-intel-core-3-304-core-5-320-mini-pcs-and-motherboards/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>LakeShark firmware turns LilyGO T-Display P4 into a handheld ESP32-P4 SDR scanner</title>
-		<link>https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/</link>
-					<comments>https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/#comments</comments>
-		
-		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
-		<pubDate>Thu, 01 Oct 2026 09:00:28 +0000</pubDate>
-				<category><![CDATA[Espressif]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[diy]]></category>
-		<category><![CDATA[esp32]]></category>
-		<category><![CDATA[LILYGO]]></category>
-		<category><![CDATA[lora]]></category>
-		<category><![CDATA[meshcore]]></category>
-		<category><![CDATA[open source]]></category>
-		<category><![CDATA[sdr]]></category>
-		<guid isPermaLink="false">https://www.cnx-software.com/?p=177792</guid>
-
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/09/LilyGO-T-Display-P4-running-LakeShark-open-source-firmware-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="LilyGO T Display P4 running LakeShark open source firmware" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/09/LilyGO-T-Display-P4-running-LakeShark-open-source-firmware-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/09/LilyGO-T-Display-P4-running-LakeShark-open-source-firmware-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/09/LilyGO-T-Display-P4-running-LakeShark-open-source-firmware-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/09/LilyGO-T-Display-P4-running-LakeShark-open-source-firmware.jpg 1200w" sizes="100vw" /></div>
-<p>LakeShark is open-source firmware by Samuel Reynolds (SAMS0N1TE) that turns the ESP32-P4-based LilyGO T-Display P4 into a handheld SDR scanner. Paired with an RTL-SDR Blog V3 or V4 dongle, it supports P25 Phase I trunking, analog FM/AM, POCSAG pager decoding, and 1090 MHz ADS-B reception directly on the ESP32-P4, without a PC, Raspberry Pi, or smartphone. It also includes an onboard SX1262 that supports LoRa and MeshCore applications. SDR devices like LimeSDR Micro, xSDR, UUGear’s VU GPSDR, and many others usually rely on a PC, Raspberry Pi, or smartphone for processing, but LakeShark shows that a powerful microcontroller can also handle many SDR tasks. We previously covered the LilyGO T-Display P4 in March 2026, and LakeShark makes good use of its built-in hardware, including the SX1262 for LoRa and MeshCore applications, L76K GPS receiver for location tracking and offline maps, and ESP32-C6 for Wi-Fi and Bluetooth connectivity. LakeShark hardware requirements: Primary [...]</p>
-<p>The post <a href="https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/">LakeShark firmware turns LilyGO T-Display P4 into a handheld ESP32-P4 SDR scanner</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
-]]></description>
-		
-					<wfw:commentRss>https://www.cnx-software.com/2026/10/01/lakeshark-firmware-turns-lilygo-t-display-p4-into-a-handheld-esp32-p4-sdr-scanner/feed/</wfw:commentRss>
-			<slash:comments>3</slash:comments>
 		
 		
 			</item>

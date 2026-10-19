@@ -1,0 +1,11 @@
+{
+  "id": "270c878eccdb7988f41a672e",
+  "title": "Android图像开源视图：SmartImageView",
+  "summary": "项目需要，开发中需要加载图片，自己要写图片从网上下载的方法，还要写缓存，等等。 在网上找到一个开源项目，smartImageVIew，支持从URL和通讯录中获取图像，可以替代Android标准的ImageView。 特征： 根据URL地址装载图像； 支持装载通讯录中的图像； 支持异步装载； 支持缓存； 这个是作者的项目主页，有使用方法。 http://loopj.com/android-smart-image-view/ 下载作者的jar包导入项目后，在xml中加入控件 <com.loopj.android.image.SmartImageView android:id=\"@+id/my_image\" /> 代码里找到该控件 SmartImageView myImage = (SmartImageView)…",
+  "content": "<p>项目需要，开发中需要加载图片，自己要写图片从网上下载的方法，还要写缓存，等等。</p>\n<p>在网上找到一个开源项目，smartImageVIew，支持从URL和通讯录中获取图像，可以替代Android标准的ImageView。</p>\n<p>特征：</p>\n<pre><code>根据URL地址装载图像；\n支持装载通讯录中的图像；\n支持异步装载；\n支持缓存；\n</code></pre>\n<p>这个是作者的项目主页，有使用方法。</p>\n<p><a href=\"http://loopj.com/android-smart-image-view/\" target=\"_blank\" rel=\"noopener noreferrer\">http://loopj.com/android-smart-image-view/</a></p>\n<p>下载作者的jar包导入项目后，在xml中加入控件</p>\n<pre><code>&lt;com.loopj.android.image.SmartImageView android:id=&quot;@+id/my_image&quot; /&gt;\n</code></pre>\n<p>代码里找到该控件</p>\n<pre><code>SmartImageView myImage = (SmartImageView) this.findViewById(R.id.my_image);\n</code></pre>\n<p>使用控件</p>\n<p>通过url加载图片</p>\n<pre><code>myImage.setImageUrl(&quot;http://www.awesomeimages.com/myawesomeimage.jpg&quot;);\n</code></pre>\n<p>加载通讯录的图片</p>\n<pre><code>myImage.setImageContact(contactAddressBookId);\n</code></pre>\n<p>github上面有源码，需要的可以看看：</p>\n<pre><code>https://github.com/loopj/android-smart-image-view\n</code></pre><p><h4><a href=\"https://isming.me/2013-09-11-android-smartimageview/?utm_source=rss#commentsanchor\" target=\"_blank\" rel=\"noopener noreferrer\">看完评论一下吧<a target=\"_blank\" rel=\"noopener noreferrer\"></h4></p>",
+  "image": null,
+  "publishedAt": "2013-09-11T15:19:11Z",
+  "sourceId": "368f8a851f5b565d",
+  "sourceTitle": "isming.me",
+  "link": "https://isming.me/2013-09-11-android-smartimageview/?utm_source=rss"
+}

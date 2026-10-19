@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": "042afe05e893a9b643cd5aaa",
+      "title": "Java中HashMap和HashTable的区别",
+      "summary": "面试中遇到，但是不会，回来google到，分享下吧，据说是老掉牙的问题 HashMap 是Hashtable 的轻量级实现（非线程安全的实现），他们都完成了Map 接口，主要区别在于HashMap 允许空（null）键值（key）,由于非线程安全，效率上可能高于Hashtable。 HashMap 允许将null 作为一个entry 的key 或者value，而Hashtable 不允许。 HashMap 把Hashtable 的contains 方法去掉了，改成containsvalue 和containsKey。因为contains方法容易让人引起误解。 Hashtable 继承自Dictionary 类，而HashMap 是Java1.2 引进的Map interface 的一个实现。 最大的不同是，H…",
+      "image": null,
+      "publishedAt": "2013-07-28T13:30:01Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-28-java-hashmaphe-hashtable/?utm_source=rss",
+      "detailPath": "articles/042afe05e893a9b643cd5aaa.json"
+    },
+    {
+      "id": "ab93f389ec963d654d4debf3",
+      "title": "Java中Collection和Collections的区别",
+      "summary": "前几天去一个公司参加面试遇到这个问题，Java中Collection和Collections的区别，当时不会，回来从网上找到，现在记录一下。 1、java.util.Collection 是一个 集合接口 。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。 Collection ├List │├LinkedList │├ArrayList │└Vector │ └Stack└Set 2、java.util.Collections 是一个包装类。它包含有各种有关集合操作的 静态多态方法 。此类 不能实例化 ，就像一个 工具类 ，服务于Java的Collection框架。 impo…",
+      "image": null,
+      "publishedAt": "2013-07-23T11:12:46Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-23-java-collection-collections/?utm_source=rss",
+      "detailPath": "articles/ab93f389ec963d654d4debf3.json"
+    },
+    {
+      "id": "c9da39760bd04b541dd1c3c5",
+      "title": "Linux下SVN的使用",
+      "summary": "今天在新浪sae上搭建了个人博客，新浪sae采用svn的方式进行代码管理，之前在windows下面做svn操作都是采用TortoiseSVN，今天正好开机到了linux下面，那么好吧，就用svn传我的wordpress到sae中去。 首先，安装svn。 sudo apt-get install subversion ubuntu下面安装svn，就是这么简单。 可以通过man svn查看使用手册。 下面介绍一些常用命令： 1.检出文件（checkout）。 使用命令： svn co http://{svn repository url} /destination 然后系统会用当前的用户名登录，提示输入密码，如果第一次密码输入错误，会提示你输入用户名；输入正确后，就可以检出文件了。 2、Ubuntu SVN提交文…",
+      "image": null,
+      "publishedAt": "2013-07-12T13:30:52Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-12-use-svn-in-linux/?utm_source=rss",
+      "detailPath": "articles/c9da39760bd04b541dd1c3c5.json"
+    }
+  ]
+}

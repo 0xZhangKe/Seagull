@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "e15d0d9db61e0a72b7da0b67",
+      "title": "记解决MaterialButton背景颜色与设置值不同",
+      "summary": "最近的开发过程中，因为设计的风格采用了Android的Material风格，因此我们在项目开发过程中也使用了Android 的Material组件和主题，但是开发过程中法使用MaterialButton的时候，我们给按钮设置的背景颜色和实际展示的背景颜色不一样。网上搜索了一番也没找到原因，于是便开始查阅MateriButton的代码。 经过一番研读终于找到原因，最终通过在style文件中添加如下设置解决。 1 <item name= \"elevationOverlayEnabled\" > false </item> MaterialButton介绍 Google在Material库中给我们提供了MaterialButton组件，我们可以通过设置很多属性来设置它的样式，仅仅背景就可以设置它的边框，背景的圆角，背…",
+      "image": "https://isming.me/images/materialbutton-background-correct.png",
+      "publishedAt": "2024-01-04T14:02:30Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-01-04-android-material-color-issue/?utm_source=rss",
+      "detailPath": "articles/e15d0d9db61e0a72b7da0b67.json"
+    },
+    {
       "id": "d07b4c985d4e911f3789e0e1",
       "title": "2023：浏览器从 A 到 Z",
       "summary": "将 A-Z 逐一输入到 Google Chrome 的地址栏里，Google Chrome 都会自动补全出哪些域名呢（诶？）",
@@ -648,17 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/unicode/",
       "detailPath": "articles/7f478f0bb13b8e5687b2dfd3.json"
-    },
-    {
-      "id": "05ce3b14e763007549cd4896",
-      "title": "我為什麼開始寫博客",
-      "summary": "Let’s make blogging great again! 事情要從2",
-      "image": null,
-      "publishedAt": "2023-10-30T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/why-blogging/",
-      "detailPath": "articles/05ce3b14e763007549cd4896.json"
     }
   ]
 }

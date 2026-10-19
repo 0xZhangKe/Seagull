@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "54e9ae32f0c9431e1a7fe085",
+      "title": "道德線的形狀",
+      "summary": "每個人心中都有自己的「道德線」。",
+      "image": null,
+      "publishedAt": "2026-05-26T00:01:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/shape-of-moral-line",
+      "detailPath": "articles/54e9ae32f0c9431e1a7fe085.json"
+    },
+    {
+      "id": "f924f4a32f1b37d48fe1ee30",
+      "title": "奥克兰 Auckland CBD",
+      "summary": "周末坐公交去城里逛逛。",
+      "image": "https://photoghenry.wordpress.com/wp-content/uploads/2026/05/a1daec59-6b54-4245-b3e2-c8f37280fecf.jpg",
+      "publishedAt": "2026-05-25T23:14:56Z",
+      "sourceId": "a64fac5b0b6a1cd4",
+      "sourceTitle": "摄影流水账",
+      "link": "https://photoghenry.wordpress.com/2026/05/26/%e5%a5%a5%e5%85%8b%e5%85%b0-auckland-cbd/",
+      "detailPath": "articles/f924f4a32f1b37d48fe1ee30.json"
+    },
+    {
+      "id": "b6d23ee8bdc8c7f6dfd122aa",
+      "title": "我常跟音樂學生說的一句話",
+      "summary": "這「不是」我的「 BlogBlog 同樂會 - 2026 年 5 月 」的投稿文章。本月主題是「 改變人生觀的一句話 」。 對於樂器的定義 # 這句話，是我從 2018 開始教吉他以來，爲了讓學生認知到「接音響練習的重要性」，而想出來的。 我常常跟學生說： 「你的樂器，加上拾音器或麥克風，並透過音響系統播放出來之後，才是你完整的樂器。」 就以音量來說，原聲時，假設小聲跟大聲兩個力度的音量比例是 1:2，但是透過音響出來之後，體感可能會是 1:3，隨著喇叭總音量的推大，這個比例還會變大。 所以，在情況允許的情況下，平時請接著音響，或者用錄音界面接耳機練習。 例子 # 今日做了管樂團 + 劇團的演出，剛好有一個很棒例子。 當時，導演覺得小鼓聲音很悶，問有沒有別顆鼓，換了之後試打，我跟鼓手都皺眉頭，因爲有個怪怪的聲…",
+      "image": null,
+      "publishedAt": "2026-05-25T14:00:01Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/a-sentence-i-talk-to-musicians/",
+      "detailPath": "articles/b6d23ee8bdc8c7f6dfd122aa.json"
+    },
+    {
+      "id": "6e1d48b73de5fa64bf04751e",
+      "title": "剛好捕捉到雙彩虹啊啊啊",
+      "summary": "今天下午下了一場大雨，而就在剛才——也就是雨停後一段時間，並且夕陽逐漸西下、晚霞開始浮現——的某一瞬間，我在極爲不經意的情況下往住處外頭望了一眼，結果被我發現到天空掛着一對巨大的 雙 彩虹啊啊啊！！！ 這個可遇不可求的美景，我當然是第一時間用我手上有的攝影器材（也就是我的平價手機⋯⋯）將它拍下來作爲紀錄！不過因爲該手機相機本身的品質不怎麼樣，所以還是無法忠實捕捉到我肉眼當時看到的畫面，所以我只能花多一點的時間用肉眼欣賞這片景色。 也還好我發現得及時，因爲這對雙彩虹，僅僅在幾分鐘的時間內，就逐漸消失無蹤了，先是 霓 （也就是「副虹」，即「附屬」的第二道彩虹）消失，然後就是主虹。與之搭配的背景晚霞也一樣，那唯美、宛如仙境的橙紫配色只維持了五分鐘左右，然後天色就逐漸暗下來，變成一片漆黑，只剩高樓大廈的燈光點綴。 簡…",
+      "image": "https://microblog.ttheng.com/blog/img174.jpg",
+      "publishedAt": "2026-05-25T11:23:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/double-rainbow-capture/",
+      "detailPath": "articles/6e1d48b73de5fa64bf04751e.json"
+    },
+    {
+      "id": "f25102ee58b03a083019c4a8",
+      "title": "笔记：把新域名应用到 Blog 和 Email 上",
+      "summary": "raychase.net 这个域名是好些年前申请的，最近申请了个更适合作为我个人标签的 rayxiong.me ，简单记录下我把新域名应用到blog（新、老域名都可以访问blog），以及创建并使用新域名的邮件地址收发邮件的操作。 Blog 配置 在Squarespace上面配置好DNS的两个A记录： 其中@表示不带任何前缀，它和www前缀这样被视为两条独立的记录。没法再简单了，不过需要等几个钟头生效。 在网站的Nginx配置文件上面添加： server_name www.rayxiong.me rayxiong.me; 以及： if ($host = rayxiong.me) { return 301 https://$host$request_uri; } if ($host = www.rayxiong.…",
+      "image": "https://rayxiong.me/wp-content/uploads/2026/05/image-11.png",
+      "publishedAt": "2026-05-25T00:04:10Z",
+      "sourceId": "ed6c79eba03be7d3",
+      "sourceTitle": "四火的唠叨",
+      "link": "https://www.raychase.net/8205",
+      "detailPath": "articles/f25102ee58b03a083019c4a8.json"
+    },
+    {
       "id": "fd456b5bce207e4d113488ac",
       "title": "練琴的刷油漆理論",
       "summary": "分享一個我常跟鋼琴學生講的練琴策略，先暫時叫它「刷油漆理論」好了。",
@@ -604,61 +659,6 @@
       "sourceTitle": "摄影流水账",
       "link": "https://photoghenry.wordpress.com/2026/05/19/one-tree-hill-%e4%b8%80%e6%a0%91%e5%b1%b1-2/",
       "detailPath": "articles/222d61fd027f96dd76583959.json"
-    },
-    {
-      "id": "e3033c30e50e1d6eecd3ec5c",
-      "title": "遂昌｜躲避人潮的五一自驾Day2 - 桃源",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2026-05-18T18:56:20Z",
-      "sourceId": "fa90e95e2850db36",
-      "sourceTitle": "è¿�ç»´å’–å•¡å�§",
-      "link": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-02.html",
-      "detailPath": "articles/e3033c30e50e1d6eecd3ec5c.json"
-    },
-    {
-      "id": "00ead1b65c1d11facc8f6817",
-      "title": "山打根五語標誌",
-      "summary": "在山打根五哩 1 ，有一個名爲「 山打根熱帶雨林公園 」的休閒園區，而其所在的森林用地則稱作「 華人園地康樂森林保留地 」。那是一個當地人健行運動、放鬆身心的涼快之地，也是我小時候有去過的週末家庭出遊地點。 最近（又）回到山打根老家時，某天再次與家人前往此地跑步。在剛抵達該園區時，我注意到在離入口不遠處，有一個豬籠草園。值得一提的是，該區域的標誌牌上，寫有它名稱的 五個語言 版本。 原文 對應語言 Taman Periuk Kera 馬來文 Pitcher Plant Garden 英文 豬籠草園 華文 馬騮盎 2 園 廣東話+客家話混搭（！） ウツボカズラ 園 日文 山打根熱帶雨林公園內的豬籠草園標誌，攝於 2026 年 4 月 3 日。 更好玩的是，從這五個語言版本可以看出，不同語言對「豬籠草」這個植物的…",
-      "image": "https://microblog.ttheng.com/blog/img169.jpg",
-      "publishedAt": "2026-05-18T09:30:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/five-language-sign/",
-      "detailPath": "articles/00ead1b65c1d11facc8f6817.json"
-    },
-    {
-      "id": "777e8b081cac595a2bedcfb1",
-      "title": "CVT 發聲教學系統是什麼？",
-      "summary": "前言 # 過去 20 年間，SLS（Speach Level Singing）因爲 Michael Jackson、林俊傑、王力宏等人，都有去上過課，因此在華語圈被廣泛推廣。 而這 2 年，CVT（Complete Vocal Technique）開始被某些「反對」SLS 的聲音教練大力推廣。 原因是：SLS 並不能幫助所有歌手做到「所有種類的聲音」。 本篇文章把整個系統輪廓稍微提過，不展開說明，否則會太長篇。 CVT 概要 # CVT 建立的一個 聲帶的發聲圖書館 ，你可以知道他們怎麼將聲音依照不同的發聲動作分類。 CVT 的四大主題 # 健康發聲必須遵循的 3 大原則：爲了唱得久、避免沙啞 4 種聲帶運作模式（可以想成你要選擇刀或劍來攻擊） 聲音色彩：聲音變亮或暗的方式 效果：爲音色添加特殊效果（可以想成…",
-      "image": null,
-      "publishedAt": "2026-05-18T08:42:41Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/what-is-cvt/",
-      "detailPath": "articles/777e8b081cac595a2bedcfb1.json"
-    },
-    {
-      "id": "b8b0d7b4855918ba1e14ea5d",
-      "title": "E-mail 不只是 Mail",
-      "summary": "前言 # 我是到最近，才越來越懂 E-mail 不只是 Mail 這件事情的。 幾個月前，看了 DuckLL 的〈 你的 Email 在裸奔 〉，我也不以爲意。 直到我陸續收到垃圾信與行銷電話。 E-mail 的功能 # E-mail 就是拿來收信啊，不然呢？ 不，絕對不只，就像你的電話號碼，也絕對不只有拿來打電話用一樣。 這兩個完全就是人類的「數位身份證」。 電話行銷的故事 # 我曾經被很多不同的機構電話行銷，可能是問汽車貸款、問要不要學唱歌、問要不要學日文。 他們怎麼知道我想學什麼？！ 我相信，每個人都曾經在網路上的各種地方，「同時」填過手機號碼與 E-mail，上面發生的事情，除了被資料被外泄以外，還另一種可能： 問汽車貸款、學唱歌、學日文，其實都是同一個人問的，他是被委託的，所以網路上蒐集各種個資的表…",
-      "image": null,
-      "publishedAt": "2026-05-18T06:30:35Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/emain-more-than-that/",
-      "detailPath": "articles/b8b0d7b4855918ba1e14ea5d.json"
-    },
-    {
-      "id": "38cfb19aa134be9451af4fbb",
-      "title": "配眼鏡",
-      "summary": "猜猜我花多久才配到適合的眼鏡？",
-      "image": null,
-      "publishedAt": "2026-05-18T05:30:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2026/05/new-glasses/",
-      "detailPath": "articles/38cfb19aa134be9451af4fbb.json"
     }
   ]
 }

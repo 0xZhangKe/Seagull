@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "6c226f5aaa51bc81517dda64",
+      "title": "Saturday, October 17th, 2026",
+      "summary": "# Spent about half an hour tweaking the CSS for /photos so that it correctly matchea the rest of the site. I'd already linked the main theme CSS, styled the title, and added the footer but things were conflicting. It just needed a bit of attention to ensure everything lined up correctly. Looking pretty good now.",
+      "image": null,
+      "publishedAt": "2026-10-19T00:00:00Z",
+      "sourceId": "5e55ec79d7dd8ce2",
+      "sourceTitle": "Colin Walker — Daily Feed",
+      "link": "https://colinwalker.blog/?date=2026-10-17",
+      "detailPath": "articles/6c226f5aaa51bc81517dda64.json"
+    },
+    {
+      "id": "6e18616ab8d83a17ad00c063",
+      "title": "llm-tools-datasette 0.1.1",
+      "summary": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
+      "image": null,
+      "publishedAt": "2026-10-18T23:43:09Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "detailPath": "articles/6e18616ab8d83a17ad00c063.json"
+    },
+    {
+      "id": "67dd719df1b2c2a66043ce53",
+      "title": "llm-echo 0.5",
+      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reaso…",
+      "image": null,
+      "publishedAt": "2026-10-18T23:16:16Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "detailPath": "articles/67dd719df1b2c2a66043ce53.json"
+    },
+    {
       "id": "b1acdd99df3dd48d7882478c",
       "title": "Istanbul Tűrkiye - 12 days in 10 neighborhoods, meeting up with 30 local people for 60 hours of conversation",
       "summary": "Istanbul Tűrkiye - 12 days in 10 neighborhoods, meeting up with 30 local people for 60 hours of conversation: https://sive.rs/met/at-16",
@@ -23,15 +56,15 @@
       "detailPath": "articles/af0a512d018c52d72a880427.json"
     },
     {
-      "id": "6c226f5aaa51bc81517dda64",
-      "title": "Saturday, October 17th, 2026",
-      "summary": "# Spent about half an hour tweaking the CSS for /photos so that it correctly matchea the rest of the site. I'd already linked the main theme CSS, styled the title, and added the footer but things were conflicting. It just needed a bit of attention to ensure everything lined up correctly. Looking pretty good now.",
+      "id": "37f4018d962f3538552fd51b",
+      "title": "Sunday, October 11th, 2026",
+      "summary": "# Watch update It's been four months to the day since I started wearing the Sekonda Hybrid watch and, apart from the initial setup period, it's just been put on its fourth charge. That's right, I'm still only having to charge it once a month, irrespective of how much I use it or how many notifications I get. I originally said I'd be happy charging it once a…",
       "image": null,
       "publishedAt": "2026-10-18T00:00:00Z",
       "sourceId": "5e55ec79d7dd8ce2",
       "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-17",
-      "detailPath": "articles/6c226f5aaa51bc81517dda64.json"
+      "link": "https://colinwalker.blog/?date=2026-10-11",
+      "detailPath": "articles/37f4018d962f3538552fd51b.json"
     },
     {
       "id": "b5c07ae706009830c42f0f3b",
@@ -56,15 +89,15 @@
       "detailPath": "articles/0ae3e91c56bb4607b3d8fc29.json"
     },
     {
-      "id": "37f4018d962f3538552fd51b",
-      "title": "Sunday, October 11th, 2026",
-      "summary": "# Watch update It's been four months to the day since I started wearing the Sekonda Hybrid watch and, apart from the initial setup period, it's just been put on its fourth charge. That's right, I'm still only having to charge it once a month, irrespective of how much I use it or how many notifications I get. I originally said I'd be happy charging it once a…",
+      "id": "bb27a5c7c52d3ecc9ea99966",
+      "title": "Saturday, October 10th, 2026",
+      "summary": "# I think I've just fixed a bug with the <source:markdown> element in the RSS feed not getting populated. Testing works when run directly — this post will test it's also okay when getting triggered by a new post. Update Looking good. 👍",
       "image": null,
       "publishedAt": "2026-10-17T00:00:00Z",
       "sourceId": "5e55ec79d7dd8ce2",
       "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-11",
-      "detailPath": "articles/37f4018d962f3538552fd51b.json"
+      "link": "https://colinwalker.blog/?date=2026-10-10",
+      "detailPath": "articles/bb27a5c7c52d3ecc9ea99966.json"
     },
     {
       "id": "52f84218be9388c0a1baf974",
@@ -89,15 +122,15 @@
       "detailPath": "articles/22d0a6f3f9a4616076956608.json"
     },
     {
-      "id": "bb27a5c7c52d3ecc9ea99966",
-      "title": "Saturday, October 10th, 2026",
-      "summary": "# I think I've just fixed a bug with the <source:markdown> element in the RSS feed not getting populated. Testing works when run directly — this post will test it's also okay when getting triggered by a new post. Update Looking good. 👍",
+      "id": "5c92894f5892c6ff95889e78",
+      "title": "Friday, October 9th, 2026",
+      "summary": "# Word of the day: opprobrium noun very strong public disapproval, harsh criticism the state of extreme disgrace resulting from shameful behaviour",
       "image": null,
       "publishedAt": "2026-10-16T00:00:00Z",
       "sourceId": "5e55ec79d7dd8ce2",
       "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-10",
-      "detailPath": "articles/bb27a5c7c52d3ecc9ea99966.json"
+      "link": "https://colinwalker.blog/?date=2026-10-09",
+      "detailPath": "articles/5c92894f5892c6ff95889e78.json"
     },
     {
       "id": "66334106450f6fc802ace2c6",
@@ -144,15 +177,15 @@
       "detailPath": "articles/9fa64efd138a60a92bd4fff2.json"
     },
     {
-      "id": "5c92894f5892c6ff95889e78",
-      "title": "Friday, October 9th, 2026",
-      "summary": "# Word of the day: opprobrium noun very strong public disapproval, harsh criticism the state of extreme disgrace resulting from shameful behaviour",
-      "image": null,
+      "id": "60f1f1e877fd5977876d25a0",
+      "title": "Thursday, October 8th, 2026",
+      "summary": "# It's been a bit quiet here lately for a number of reasons. Firstly, I've been focusing on music in my spare time (hence the recent releases) what little there has been of it. Second, things have been pretty manic in one way or another which has resulted in the aforementioned little spare time. Third, I've been pretty low and flat — not really had the head…",
+      "image": "https://colinwalker.blog/uploads/2026/10/photos.png",
       "publishedAt": "2026-10-15T00:00:00Z",
       "sourceId": "5e55ec79d7dd8ce2",
       "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-09",
-      "detailPath": "articles/5c92894f5892c6ff95889e78.json"
+      "link": "https://colinwalker.blog/?date=2026-10-08",
+      "detailPath": "articles/60f1f1e877fd5977876d25a0.json"
     },
     {
       "id": "786c208e58f47af965b0b326",
@@ -186,17 +219,6 @@
       "sourceTitle": "nytpu's gemlog",
       "link": "https://nytpu.com/gemlog/2026-03-18",
       "detailPath": "articles/a83847686cfa1d04845a8ba6.json"
-    },
-    {
-      "id": "60f1f1e877fd5977876d25a0",
-      "title": "Thursday, October 8th, 2026",
-      "summary": "# It's been a bit quiet here lately for a number of reasons. Firstly, I've been focusing on music in my spare time (hence the recent releases) what little there has been of it. Second, things have been pretty manic in one way or another which has resulted in the aforementioned little spare time. Third, I've been pretty low and flat — not really had the head…",
-      "image": "https://colinwalker.blog/uploads/2026/10/photos.png",
-      "publishedAt": "2026-10-14T00:00:00Z",
-      "sourceId": "5e55ec79d7dd8ce2",
-      "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-08",
-      "detailPath": "articles/60f1f1e877fd5977876d25a0.json"
     },
     {
       "id": "f8d2f0d53f964fca23d7bdca",
@@ -529,17 +551,6 @@
       "detailPath": "articles/81e5deb27d506c9e7e80ca19.json"
     },
     {
-      "id": "f3441bd577ad864bc7368187",
-      "title": "Anti-Patterns in Software Blogging",
-      "summary": "Anti-Patterns in Software Blogging Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and excessive formality. He also warns against overreliance on links as an excuse not to explain terminology. This one hurt! I do this all the…",
-      "image": null,
-      "publishedAt": "2026-10-07T14:53:51Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
-      "detailPath": "articles/f3441bd577ad864bc7368187.json"
-    },
-    {
       "id": "b88a8fff66ef189256eb0ea5",
       "title": "TIL how to deeplink all the things",
       "summary": "I have written before about how to link to a specific segment of a youtube video , and how to link to specific words or paragraphs within a webpage . I even knew, vaguely, that you could link to pages of PDFs. But, all in the course of a normal workday researching",
@@ -549,17 +560,6 @@
       "sourceTitle": "The Autodidacts",
       "link": "https://www.autodidacts.io/how-to-deeplink-to-specific-part-of-text-audio-video-pdf-image/",
       "detailPath": "articles/b88a8fff66ef189256eb0ea5.json"
-    },
-    {
-      "id": "ef2d91b25125f7ef0e714d65",
-      "title": "Quoting Jake Boggan",
-      "summary": "I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years of my life, on and off as I worked in many different fields. Last summer I even thought for a few days that I had actually solved it. But it…",
-      "image": null,
-      "publishedAt": "2026-10-07T04:47:55Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
-      "detailPath": "articles/ef2d91b25125f7ef0e714d65.json"
     },
     {
       "id": "29ffd1576e26d02229bbb062",

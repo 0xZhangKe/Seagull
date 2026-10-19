@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "c4aa2ad8b980f66d46eb6a01",
+      "title": "我不知道什麼是「沒用」",
+      "summary": "「沒用」好像已經變成這個部落格的主題了。看看最近的幾篇文章：電腦？ 沒用 。蘋果？ 沒用 。汽車？ 沒用 。這很奇怪吧？畢竟一個看到什麼東西都說「沒用」的人，怎麼會做寫部落格這種完全沒用的事情呢？很明顯地，我應該是一個喜歡沒用的東西的人才對。所以問題應該出在，「沒用」到底是什麼意思？ 一般人說「沒用」，好像有兩種比較常見的狀況。第一種是質疑：「這很有趣，可是能賺錢嗎？」另外一種則是剛好相反：「這能賺錢，可是能讓我快樂嗎？」老實說，我一直覺得有這兩種想法的人都想太遠、要求太高了。大概是因為這樣，所以我才會覺得，按照這樣的標準，世界上根本就沒有什麼有用的東西啊。明明這些人自己喜歡的東西用同樣的標準檢視反而更沒用，他們卻整天想用「沒用」去拆別人的台。這未免太不公平了。 例如以下的經典橋段：老師總是對學生說：「要好好…",
+      "image": null,
+      "publishedAt": "2026-02-12T10:46:43Z",
+      "sourceId": "7a1943e37d846c5c",
+      "sourceTitle": "我的部落格",
+      "link": "https://e89295.com/blog/2026-02-12.html",
+      "detailPath": "articles/c4aa2ad8b980f66d46eb6a01.json"
+    },
+    {
+      "id": "669c46d04b9c0d7de641d9c9",
+      "title": "macOS 奇怪的安全扫码机制",
+      "summary": "今天跑 Rust 编译器测试的时候又发现非常地慢，CPU 资源根本无法利用起来，我记得几年前碰到过这个问题，当时我写了篇 文章 分享出来，并发现很多人都有同样的困扰。 而我今天碰到的这个问题虽然现象一样，但解决方法又不同了。我不确定是 macOS 系统更新，亦或是我更新了 VS Code 造成的。 问题 复现脚本很简单，循环创建随机命名的 shell 脚本，然后对比首次和再次执行的耗时： # !/bin/bash rm - rf /tmp/speed_test mkdir - p /tmp/speed_test for i in { 1..10 } ; do FILENAME = $ ( openssl rand - hex 10 ) echo $' #!/bin/sh \\n echo Hello ' > \"…",
+      "image": null,
+      "publishedAt": "2026-02-12T08:55:52Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/apple-gatekeeper-scan/",
+      "detailPath": "articles/669c46d04b9c0d7de641d9c9.json"
+    },
+    {
+      "id": "de0a271847b93e4cb990eeef",
+      "title": "髮廊 Podcast",
+      "summary": "上禮拜去剪頭髮，又遇到了那位設計師助理；就是我之前寫過、總是戴口罩的那位，我到現在還是沒看過她拿下口罩的樣子。",
+      "image": null,
+      "publishedAt": "2026-02-12T06:30:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/salon-podcast",
+      "detailPath": "articles/de0a271847b93e4cb990eeef.json"
+    },
+    {
+      "id": "01dfbc3deefd004e092bb9f6",
+      "title": "日寄 三十",
+      "summary": "一直走、直到恶贯满盈。 不知道为什么，我突然发觉最近做的很多计划都“如履薄冰”，因为很多决策都建立在评估/相信 […]",
+      "image": null,
+      "publishedAt": "2026-02-12T04:45:55Z",
+      "sourceId": "3c6ccf75c8f41329",
+      "sourceTitle": "CC的数字花园",
+      "link": "https://cyrus19.cc/archives/1820",
+      "detailPath": "articles/01dfbc3deefd004e092bb9f6.json"
+    },
+    {
+      "id": "7bde0e75d7ada62e4b4e1dbd",
+      "title": "Mac 搜尋檔案請用 Spotlight",
+      "summary": "某場演出，開場秀是使用 DJ 控制器連接 Mac 來播放音樂，其餘的人負責唱歌、跳舞。 結果那天主持人介紹完，音樂並沒有出來，於是 Eddie 飛奔到 DJ 台。 「檔案壞掉了沒辦法播」DJ 老師說。 雖然 Eddie 看到 DJ 軟體上明明連歌曲的波形都 Loading 完畢了，但不知道爲何沒辦法播。 「我假裝是我線的問題，你趕快找到檔案」於是我開始裝忙、接線，別的不說，演得滿像的，不愧是專業背黑鍋的音響單位。 後來表演者開始打開 Finder 來搜尋，結果弄個半天，就是搜尋不到檔案，此時歌手、舞者已經站定位很久了，連主持人都在想辦法墊話，墊到不知道要講什麼了。 此時看到 DJ 老師神情開始慌亂，似乎還冒了冷汗，於是 Eddie 介入電腦操作，改用 Spotlight 找檔案，結果 3 秒找到。 作爲 10…",
+      "image": null,
+      "publishedAt": "2026-02-12T04:14:42Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mac-spotlight/",
+      "detailPath": "articles/7bde0e75d7ada62e4b4e1dbd.json"
+    },
+    {
       "id": "4d1af46646d3dbfc50e4364e",
       "title": "別以日更來當作部落格的更新目標",
       "summary": "最近看到滿多部落格主說自己不日更了，不然會有硬要發文的感覺，也許是累，也許是深怕自己寫出來的東西沒內容，那還不如不要日更，久久發一次有意義的文章，但我覺得可以放鬆面對耶！ 而 Eddie 尾牙季雖然忙到爆炸，、乎沒什麼睡覺，1 月平均 1 天 2 篇，2 月到目前是 1 天 1 篇，以數字來看，好像很不錯（？ 但仔細思考了一下，Eddie 從來沒有想著要日更，也從來沒有逼著自己一定要多更新部落格，而是只要有任何想法，就在手機記錄下來，有空就打成文章，沒有也沒關係。 個人部落格就是我的思維、我的所見所爲，在這裡雖然還是看不到 100% 的我，但是至少你看到的我 100% 都是真實的。假設沒有部落格，只在 IG 上展現自己，可能會連 1 % 的真實自己都無法被展現。 在 Eddie’s Blog，你會看到 看動漫…",
@@ -604,61 +659,6 @@
       "sourceTitle": "只是玩玩",
       "link": "https://1900.live/chu-3-kuai-xi-shu-14t-hai-qi-pan/",
       "detailPath": "articles/0f3bda624450ef301017da5d.json"
-    },
-    {
-      "id": "3271d86a16e9d148695d3e33",
-      "title": "不要亂改我的作品",
-      "summary": "看到網址列最左邊的 https:// 或小鎖頭 🔒 圖示了嗎？它們代表，從我的網站主機到你的螢幕之間，整個傳輸過程是經過加密的，沒有中間人能偷看或竄改它。你在這個 blog 裡面讀到的每一個字、看到的每一張圖，都是「我」想要你看到的。",
-      "image": null,
-      "publishedAt": "2026-02-04T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/dont-mess-with-my-work",
-      "detailPath": "articles/3271d86a16e9d148695d3e33.json"
-    },
-    {
-      "id": "d020f8e07fddbb3d8f10d36b",
-      "title": "无标题文章",
-      "summary": "好的组织，是保护人“在乎”的本能。 没有人真的想交付自己都看不上的东西。我们天然就想把事情做得更对一点、更好一点。 问题在于这种原本强劲的驱动力，会被不好的组织慢慢消磨掉。当数字比价值更重要，“快点上线”比“做对”更重要。 一个好的组织要做的，其实就是：找到那些“在乎”的人，然后清理掉让“在乎”变成奢侈的障碍，让“在乎”重新成为组织的本能。 有了“在乎”，再加上手艺和品味，“对的东西”就会自然生长出来。 Ps. 这段文字受到《禅与摩托车维修技术》和 这篇文章 启发，又经过多轮 AI 润色... 哎，现在是既想要 AI 润色，又想去掉 AI 味。好难🤯，但是我还是很喜欢这段话。",
-      "image": null,
-      "publishedAt": "2026-02-04T04:00:00Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://www.owenyoung.com/js2m9",
-      "detailPath": "articles/d020f8e07fddbb3d8f10d36b.json"
-    },
-    {
-      "id": "13c78d0e879825712fc9f5b9",
-      "title": "277、立春",
-      "summary": "null 新启 东风解冻，蛰虫始振。 今日2月4日，太阳抵达黄经315°，岁次甲辰，春信第一声。 残雪未消，而土膏已动；枯枝犹寂，而芽眼青盈。 天地以“立”为笔，写下“生”字，人间从此有了柔软的底气。 此刻，不妨： 把窗推开一条缝，让料峭替旧尘松绑； 把心事翻一页，让新绿替往事上色； 把种子埋进掌心，用体温写下与土地的暗号—— 纵使人海喧嚣，亦有一粒春在悄悄为你发芽。 愿我们： 在向上的枝桠里，学会舒展； 在向下的根须中，学会沉淀； 于四季最前端，收下这一枚“开始”的邮戳， 然后，向着光，奔赴日子，奔赴自己。 ——by kimi",
-      "image": "https://cdn.1900.live/assets/2026/02/4å¾®ä¿¡å¾ç_20260204102505_31_204.jpg",
-      "publishedAt": "2026-02-04T02:29:34Z",
-      "sourceId": "d206bb7c484c4a45",
-      "sourceTitle": "只是玩玩",
-      "link": "https://1900.live/277-li-chun/",
-      "detailPath": "articles/13c78d0e879825712fc9f5b9.json"
-    },
-    {
-      "id": "1731219cb3ee2ff2a55b63e7",
-      "title": "胎萌",
-      "summary": "番茄發芽了，這還能吃嗎？",
-      "image": "https://alicehsu.blog/images/Post34home.jpg",
-      "publishedAt": "2026-02-03T22:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2026/02/vivipary/",
-      "detailPath": "articles/1731219cb3ee2ff2a55b63e7.json"
-    },
-    {
-      "id": "e8541512a6d272e455ee60b6",
-      "title": "无标题文章",
-      "summary": "自由不是你想怎么样就怎么样，自由是你有多少可选项。而可选项来自学习和积累，比如你想弹钢琴，你得先学会弹钢琴，你才有弹钢琴的自由。 人的自由或者人的本质就是学习。 — 《成为有能的自己：能做任何事的能力》",
-      "image": null,
-      "publishedAt": "2026-02-03T21:03:31Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://www.owenyoung.com/cheng-wei-you-neng-de-zi-ji-neng-zuo-ren-he-shi-de-neng-li",
-      "detailPath": "articles/e8541512a6d272e455ee60b6.json"
     }
   ]
 }

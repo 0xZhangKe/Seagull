@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "6e18616ab8d83a17ad00c063",
+      "title": "llm-tools-datasette 0.1.1",
+      "summary": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
+      "image": null,
+      "publishedAt": "2026-10-18T23:43:09Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "detailPath": "articles/6e18616ab8d83a17ad00c063.json"
+    },
+    {
+      "id": "67dd719df1b2c2a66043ce53",
+      "title": "llm-echo 0.5",
+      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reaso…",
+      "image": null,
+      "publishedAt": "2026-10-18T23:16:16Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "detailPath": "articles/67dd719df1b2c2a66043ce53.json"
+    },
+    {
       "id": "b5c07ae706009830c42f0f3b",
       "title": "Inline rendering with document​.currentScript",
       "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline <script> element that replaces itself when the page loads: The year is <script> document.currentScript.replaceWith( new Date().getFullYear())</script> If you define a shortcut f…",
@@ -307,28 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
       "detailPath": "articles/429a76c5f3375ef4dbe2e0e0.json"
-    },
-    {
-      "id": "f3441bd577ad864bc7368187",
-      "title": "Anti-Patterns in Software Blogging",
-      "summary": "Anti-Patterns in Software Blogging Some excellent writing advice from Michael Lynch. Michael warns against \"meandering intros\", misjudging your reader's existing knowledge, assuming they'll read your previous posts, and excessive formality. He also warns against overreliance on links as an excuse not to explain terminology. This one hurt! I do this all the…",
-      "image": null,
-      "publishedAt": "2026-10-07T14:53:51Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
-      "detailPath": "articles/f3441bd577ad864bc7368187.json"
-    },
-    {
-      "id": "ef2d91b25125f7ef0e714d65",
-      "title": "Quoting Jake Boggan",
-      "summary": "I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years of my life, on and off as I worked in many different fields. Last summer I even thought for a few days that I had actually solved it. But it…",
-      "image": null,
-      "publishedAt": "2026-10-07T04:47:55Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
-      "detailPath": "articles/ef2d91b25125f7ef0e714d65.json"
     }
   ]
 }

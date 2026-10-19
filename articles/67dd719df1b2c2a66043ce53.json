@@ -1,0 +1,11 @@
+{
+  "id": "67dd719df1b2c2a66043ce53",
+  "title": "llm-echo 0.5",
+  "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reaso…",
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-echo/releases/tag/0.5\" target=\"_blank\" rel=\"noopener noreferrer\">llm-echo 0.5</a></p>\n        <p>I&#x27;m working towards a new <a href=\"https://llm.datasette.io/\" target=\"_blank\" rel=\"noopener noreferrer\">LLM</a> release, and testing PRs caused me to revisit the <code>llm-echo</code> debug plugin. This plugin provides a &quot;model&quot; which doesn&#x27;t involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account.</p>\n<p>Example usage:</p>\n<pre><code>uvx --with llm-echo llm -m echo &#x27;hi there&#x27; -o thinking 1 --usage\n</code></pre>\n<p>Outputs:</p>\n<pre><code>First I consider the prompt, then I decide what to say.\n{\n  &quot;prompt&quot;: &quot;hi there&quot;,\n  &quot;system&quot;: &quot;&quot;,\n  &quot;attachments&quot;: [],\n  &quot;stream&quot;: true,\n  &quot;previous&quot;: []\n}\nToken usage: 2 input, 24 output\n</code></pre>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/llm\" target=\"_blank\" rel=\"noopener noreferrer\">llm</a></p>",
+  "image": null,
+  "publishedAt": "2026-10-18T23:16:16Z",
+  "sourceId": "052434531db837d6",
+  "sourceTitle": "Simon Willison's Weblog",
+  "link": "https://simonwillison.net/2026/Oct/18/llm-echo/"
+}

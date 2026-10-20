@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "b1ba15d9f29d542afff4960e",
+      "title": "Mitigating CVE-2026-111943 in OkHttp",
+      "summary": "I just learned that some private keys leaked for a widely-trusted certificate authority . This is bad: it makes it possible for attackers to impersonate HTTPS services. If you’re shipping a mobile app or service that uses OkHttp, you’re exposed to this problem until the host platform’s trusted",
+      "image": null,
+      "publishedAt": "2026-10-20T17:41:26Z",
+      "sourceId": "c12f29ba8e9a36cd",
+      "sourceTitle": "Public Object",
+      "link": "https://publicobject.com/2026/10/20/mitigating-bad-roots-in-okhttp/",
+      "detailPath": "articles/b1ba15d9f29d542afff4960e.json"
+    },
+    {
       "id": "2516a8e9a4c8570c13040d4a",
       "title": "Applebee’s",
       "summary": "You are a restaurant owner-operator. You’ve been running your restaurant, Sam’s Pub, for almost ten years now, and you’re so proud of what you’ve built. You’ve hired a great staff, and you pay them fairly. You’ve developed a menu with items that use local",
@@ -153,17 +164,6 @@
       "sourceTitle": "Public Object",
       "link": "https://publicobject.com/2024/11/20/testing-safe-area-insets-on-ios/",
       "detailPath": "articles/3e057214f295717d656a2996.json"
-    },
-    {
-      "id": "01d0094c00a0f8609d5d814e",
-      "title": "Bad Luck Tickets",
-      "summary": "My son’s swim meet is coming up. If he’s healthy, he’ll compete. My daughter’s hockey team has a game coming up. League rules say they must forfeit if they have fewer than 10 players. There’s only 10 girls on the roster so they need everyone",
-      "image": null,
-      "publishedAt": "2024-11-13T05:08:26Z",
-      "sourceId": "c12f29ba8e9a36cd",
-      "sourceTitle": "Public Object",
-      "link": "https://publicobject.com/2024/11/13/bad-luck-tickets/",
-      "detailPath": "articles/01d0094c00a0f8609d5d814e.json"
     }
   ]
 }

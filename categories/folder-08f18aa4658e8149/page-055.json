@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "5679214d0e4fb6729e1bcfe6",
+      "title": "Worpress 突然登入不了怎麼辦？",
+      "summary": "前言 # 想著很久沒更新官網了，所以來把一些過往文章先複製上去，結果，居然無法登入，一直顯示錯誤！而 Eddie 很確定那組密碼沒問題（應該啦…），但是無奈 SMTP 還沒設定好，所以沒辦法按忘記密碼來重設定。 暴力生成新帳號密碼 # 用 SSH 連線到伺服器之後，在 Wordpress 的資料夾建立臨時檔案 resetpw.php nano /var/www/html/你的worpress資料夾/resetpw.php 內容是 <?php require_once('wp-load.php'); // 載入 WordPress 環境 // 設定帳號資料 $username = 'newadmin'; // 你的帳號 $password = 'StrongPass123'; // 新密碼 $email = '…",
+      "image": null,
+      "publishedAt": "2025-10-21T15:37:40Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/wordpress-cant-login/",
+      "detailPath": "articles/5679214d0e4fb6729e1bcfe6.json"
+    },
+    {
+      "id": "1bd9dd358334a3d117f4dac9",
+      "title": "放手寫就對了",
+      "summary": "https://robertbirming.com/write-whatever-whenever/ 隨便逛別人 blog 網站上的 webring 時，偶然讀到這篇文章，令我感到很有共鳴。 的確啊，就像我現在另外架設一個版面比較簡潔的網站，也是爲了讓自己比較能專注在文章內容本身，而不會因爲需要處理網站版面之類的技術問題，以及過於在意文章一定要有個最低限的長度，而搞到自己（和讀者）分心，進而忘記了自架 blog 網站的初衷：作爲自身想法的記錄。 Just write whatever whenever! 放手寫就對了！即使是廢文也沒有關係！即使沒人在乎，至少還可以娛樂到自己 lol。 感謝讀完這篇鼓勵大家即使是廢文也請儘管寫的廢文。",
+      "image": null,
+      "publishedAt": "2025-10-21T11:57:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/write-whatever-whenever/",
+      "detailPath": "articles/1bd9dd358334a3d117f4dac9.json"
+    },
+    {
+      "id": "632c72018e24b9eaa203e876",
+      "title": "讓電梯門夾吧",
+      "summary": "看到 Noa 寫的這篇《電梯門恐懼症》，她說：",
+      "image": null,
+      "publishedAt": "2025-10-21T06:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/embrace-the-pinch",
+      "detailPath": "articles/632c72018e24b9eaa203e876.json"
+    },
+    {
+      "id": "36d423c6f603cad245e3825a",
+      "title": "別把鹹蛋當蛋！",
+      "summary": "很久沒吃到鹹蛋，一入口就覺得身體在抗拒吃下肚，一查發現一顆蛋的鈉含量就高達 700~1000mg 左右，而一天的建議攝取量在 2400mg 左右，而一餐不會只吃蛋啊，其他菜也會有鈉含量。 Salted egg 鹹的蛋應該改名爲 Egg-shaped salt 蛋形狀的鹽才對！味道完全就像是在吃鹽巴了。 當你煮粥發現味道有點淡，加點蛋狀鹽來提味； 當你炒各種青菜想加鹽，不如加點蛋狀鹽來提味！ （請照樣造句！） 也不要聽 Eddie 在這裡危言聳聽，有查到營養師說，一次只吃 1/4 顆鹹蛋就沒問題啦！ （各位控制好不要吃超過啊XD！）",
+      "image": null,
+      "publishedAt": "2025-10-20T16:37:48Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/salted-egg-is-salt/",
+      "detailPath": "articles/36d423c6f603cad245e3825a.json"
+    },
+    {
+      "id": "a1ef7d46672f54958d0354c1",
+      "title": "DJI Pocket3 還能這樣用！",
+      "summary": "前陣子有一場活動，音控台被安排在視線死角，完全看不到舞臺，要知道，音控人是得隨時看舞臺情況來下音樂、處理麥克風的，因此 DJI 就登場了！ 搭配 DJI MIMO 的 APP 可以即使看到畫面，也可以控制 PK3 的雲臺轉向！ 你的瀏覽器不支援影片播放。 很巧的是，鋼琴老師也剛好問能不能幫忙錄影，於是就順便按下錄影了XD 這天也見識到了史坦威鋼琴！麥克風試音的時候 Eddie 有彈到，完全可以理解並感受到，爲何會有人想要在家裡擺一臺平臺鋼琴！ 你的瀏覽器不支援影片播放。",
+      "image": null,
+      "publishedAt": "2025-10-20T14:12:13Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/dji-pk3-live/",
+      "detailPath": "articles/a1ef7d46672f54958d0354c1.json"
+    },
+    {
       "id": "f0b8b46924ba0b04e79a6c0e",
       "title": "買 Uber One 的人是盤子！",
       "summary": "Eddie 曾經訂閱一年 Uber One，在退訂後，說歡迎我再訂閱，送我一個月免費哦！ 而 某次音響工作 ，我是帶隊人，客戶沒有準備便當，因此變成 Eddie 要處理，就下載了 Uber Eats。 沒想到映入眼簾的是，現在訂閱就送 3 個月免費哦！ 如果你需要 Uber One，建議你沒事進進出出一下點個退訂，應該就會看到送你 X 個月哦XD",
@@ -604,61 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/similar-vocaloid-songs/",
       "detailPath": "articles/08d1fc75617a3fc79b813e5a.json"
-    },
-    {
-      "id": "0273f8bc5d78b304f771e036",
-      "title": "隐说 NO.10 文字的魔障",
-      "summary": "破除是非",
-      "image": null,
-      "publishedAt": "2025-10-12T07:56:55Z",
-      "sourceId": "b4584dd13588932a",
-      "sourceTitle": "太隐",
-      "link": "https://wangyurui.com/posts/yin-shuo-no-10-wen-zi-de-mo-zhang-c9421d90",
-      "detailPath": "articles/0273f8bc5d78b304f771e036.json"
-    },
-    {
-      "id": "bb2463cc3ca3f059088264cd",
-      "title": "吹葉機應該死",
-      "summary": "在我常去跑步的那個公園，清掃人員常常會使用吹葉機來清落葉。",
-      "image": "https://wiwi.blog/assets/images/leaf-fdd8677e2c1c3cdb12f809695b60c4ab.jpg",
-      "publishedAt": "2025-10-12T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/leaf-blower",
-      "detailPath": "articles/bb2463cc3ca3f059088264cd.json"
-    },
-    {
-      "id": "94aae6cf7f0770049372a17d",
-      "title": "丢失的表达欲",
-      "summary": "很久没有在 blog 里发「文章」了，借口当然很多，但最主要的还是少了表达欲，那种喷涌而出的感觉。每次打开 Obsidian，",
-      "image": "https://images.unsplash.com/photo-1526398977052-654221a252b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDl8fHRhbGt8ZW58MHx8fHwxNzYwMTg5MTYwfDA&ixlib=rb-4.1.0&q=80&w=2000",
-      "publishedAt": "2025-10-12T01:32:09Z",
-      "sourceId": "78a6233ab9c3a513",
-      "sourceTitle": "Domon",
-      "link": "https://www.domon.cn/diu-shi-de-biao-da-yu/",
-      "detailPath": "articles/94aae6cf7f0770049372a17d.json"
-    },
-    {
-      "id": "089d0c8219db370872f5f461",
-      "title": "How I made the homepage here a feed of all posts in full text",
-      "summary": "After installing the hugo-bearblog theme, I overwrote the index.html file in the theme layout by creating a new index.html file in the layouts folder of my main Hugo site directory that contains the following code, which is adapted from single.html from the layouts/_default folder from the original theme repository. {{ define \"main\" }} {{ $posts := where .S…",
-      "image": null,
-      "publishedAt": "2025-10-12T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/full-text-feed/",
-      "detailPath": "articles/089d0c8219db370872f5f461.json"
-    },
-    {
-      "id": "e2f50385d0b05ad93cfe8e77",
-      "title": "廣東話歇後語",
-      "summary": "老爸之前分享給我的一張列有一些有趣廣東話歇後語的圖文。 這是他在 Facebook 一時撿到的轉載圖，而原始圖片 1 也無法從網上搜尋到了（所以說不要把一切都鎖在 Facebook 裡）。此外，該圖片似乎是一系列圖文中的其中一張，但目前我也無法在網上找到其餘的圖文…… 不過這個不是重點，重點是我覺得廣東話歇後語背後的梗某種程度上比華語歇後語還有趣，例如「墳墓前彈琴——嘈 2 死人」的梗在於後半段可以被雙重解讀：「 嘈死 人」和「嘈 死人 」，而這種走 歧義 路線的梗在華語歇後語似乎不常見。 說到廣東話歇後語， 「粵典」網站上的一篇文 也有收錄多達 140 個的相關例子。 如果 轉載者 沒說錯的話，來源應該是 「舊時香港」Facebook 專頁 。 ↩︎ 粵語「 嘈 」即對應華語的「吵」。 ↩︎",
-      "image": "https://microblog.ttheng.com/blog/487907719_10162543838107748_2935187994836798884_n.jpg",
-      "publishedAt": "2025-10-12T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/cantonese-proverbs/",
-      "detailPath": "articles/e2f50385d0b05ad93cfe8e77.json"
     }
   ]
 }

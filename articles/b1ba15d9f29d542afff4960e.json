@@ -1,0 +1,11 @@
+{
+  "id": "b1ba15d9f29d542afff4960e",
+  "title": "Mitigating CVE-2026-111943 in OkHttp",
+  "summary": "I just learned that some private keys leaked for a widely-trusted certificate authority . This is bad: it makes it possible for attackers to impersonate HTTPS services. If you’re shipping a mobile app or service that uses OkHttp, you’re exposed to this problem until the host platform’s trusted",
+  "content": "<p>I just learned that <a href=\"https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/0R3XLJL6FuE/m/0XofdebrAAAJ?pli=1\" target=\"_blank\" rel=\"noopener noreferrer\">some private keys leaked for a widely-trusted certificate authority</a>. This is bad: it makes it possible for attackers to impersonate HTTPS services.</p><p>If you’re shipping a mobile app or service that uses OkHttp, you’re exposed to this problem until the host platform’s trusted roots list is patched. For Android and Java environments, that might take a very long time.</p><p>As an immediate workaround I’ve posted a gist for <a href=\"https://gist.github.com/swankjesse/de8828e357a4d3fc8ebe1ca14ec2bc9f\" target=\"_blank\" rel=\"noopener noreferrer\">ForbiddenCertificatesInterceptor</a>, which blocks the problematic certificates in the application layer. Install it as the last network interceptor in your chain.</p><pre><code>val safeClient = client.newBuilder()\n  .addNetworkInterceptor(ForbiddenCertificatesInterceptor())\n  .build()</code></pre><p>You can use this with all supported versions of OkHttp.</p><p>In the next day or two we’ll ship updates to OkHttp that require no additional intervention.</p>",
+  "image": null,
+  "publishedAt": "2026-10-20T17:41:26Z",
+  "sourceId": "c12f29ba8e9a36cd",
+  "sourceTitle": "Public Object",
+  "link": "https://publicobject.com/2026/10/20/mitigating-bad-roots-in-okhttp/"
+}

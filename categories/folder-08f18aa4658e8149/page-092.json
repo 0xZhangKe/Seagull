@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "91b8703dd9f966531f409493",
+      "title": "如何把生活中零碎的灵感或流水账，建立联系，让他们有价值？",
+      "summary": "前置条件 记录生活(个人、家庭)，目的是用来回忆。 对于自己感兴趣的东西，日常需要积累，定期回顾，输出成文，写的过程就是思考的过程。 阅读，读书要笔记，笔记最好可以很多本书关联，对一件事用狐狸的思维，而不是刺猬的思维。 具体项目，需要积累很多碎片的东西，最后完成一个项目，即可归档。 具体做法 1. 记录生活(个人、家庭)，目的是用来回忆。 由上而下，宏观规划。我有一间自己的虚拟房子，里面放了很多零零碎碎的东西，但是基本原则是遵循一个房子的建造原则，从上倒下做的规划： 这一部分的记录，就是单纯的为了家庭回忆，其实有很多分类方式，比如照片、视频、地点、目的等等。我的基本原则如下： 随手的东西，就随手记录，重要的是每天有所记录，不需要细化，只留下钩子 日常类，以月为单位，简单记录，再根据分类细化 照片、视频等媒体资…",
+      "image": "https://static.elizen.me//img/LkbpUtQg78.png",
+      "publishedAt": "2022-03-23T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2022/03/how-to-manage-information/",
+      "detailPath": "articles/91b8703dd9f966531f409493.json"
+    },
+    {
+      "id": "688a3dc9218be3435e56209a",
+      "title": "Linux 下 Node Source 安装的 npm 权限问题",
+      "summary": "前言 近期安装了 Linux 系统作为主力机器的第二系统，双启动引导。 系统是 Pop!OS 20.04 LTS ，基于 Ubuntu 20.04 由于前端开发及部署需求，需要安装 node.js，于是使用 node source 提供的 node 发行版。 由于安装完成后，npm 存储包的目录为 /usr ，使用时必须加 sudo ，为了避免这种情况和权限安全问题，需要将 npm 的包存储到用户目录下，并且强烈不建议使用 sudo 来全局安装包到 /usr 目录下 方法 检查当前 npm 安装的包路径前缀 1 npm config get prefix 如果返回 /usr 则执行以下命令 1 2 3 mkdir ~/.npm-global export NPM_CONFIG_PREFIX = ~/.npm-…",
+      "image": null,
+      "publishedAt": "2022-03-20T17:16:02Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/npm-prefix/",
+      "detailPath": "articles/688a3dc9218be3435e56209a.json"
+    },
+    {
+      "id": "5f34ad74b791516d6e6030d1",
+      "title": "Kubernetes、集群联邦和资源分发",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2022-03-19T00:00:00Z",
+      "sourceId": "4d49716051922902",
+      "sourceTitle": "面向信仰编程 - Articles",
+      "link": "https://draven.co//kuberentes-federation",
+      "detailPath": "articles/5f34ad74b791516d6e6030d1.json"
+    },
+    {
+      "id": "aae03b6048973b569e8daa55",
+      "title": "百年未有之大变局，我试着聊点政治",
+      "summary": "自从出国之后跟国内亲人们的交流就少得多了，以前会经常和我爸讨论一些社会经验和时局的话题，现在他们更多的是关心我的新生活是否顺利。说实话，在加拿大的生活比在中国要简单很多，像这样的发达资本主义国家已经发展几百年了，方方面面都已经相当成熟，也有清晰的界限和规则，任何人都可以在一定的前提下享受明确的、不受限的自由。首先我想重申自己的一个观点就是任何人都应该关心政治，此前我提过很多次了。都知道“经济基础决定上层建筑”，也知道任何事物都不是孤立存在的，所以一定有东西能影响甚至决定经济，那就是政治。大部分情况下，经济规律只能在一个平稳的政治环境中才能体现出来，如果政治环境稍有动荡，反映到经济上就是翻天覆地。这次俄乌战争爆发之后，在美国的很多中概股跌得很严重，然后就会在社交媒体上看到很多不明真相的人都在讨论要不要抄底——如…",
+      "image": null,
+      "publishedAt": "2022-03-18T18:03:00Z",
+      "sourceId": "87c2e8631d9fb702",
+      "sourceTitle": "Tom Brew",
+      "link": "https://www.ie9.org/2022/03/my-political-opinions.html",
+      "detailPath": "articles/aae03b6048973b569e8daa55.json"
+    },
+    {
       "id": "d0337ef20eef681ca15c05be",
       "title": "使用 Next.js + Hexo 重构我的博客",
       "summary": "在咕咕了一整年、只发布了三篇文章（其中两篇还是译文）之后，我决定还是稍微花一点时间好好折腾一下自己的博客，以 React 作为抓手，通过 Next.js 和 Hexo 深度共建，对标 Gatsby，打通静态 HTML 与用户交互之间的垂直领域屏障，实现多维矩阵闭环，为个人博客赋能（咳咳咳），然后水出 2022 年第一篇文章（逃） 技术选型：Gatsby vs Next.js 我使用 H...",
@@ -615,50 +659,6 @@
       "sourceTitle": "极东魔术昼寝结社",
       "link": "https://blog.jaoushingan.com/2021/12/18/web-login/",
       "detailPath": "articles/2a7a9e89502e5b11624e43af.json"
-    },
-    {
-      "id": "01b113adfd95e52bd39c4331",
-      "title": "抢先发布的2021总结",
-      "summary": "考虑到现在已经是12月中旬，再过两周就会迎来一大波年终总结，而我又拖延成性，比如去年准备写的健身系列博客，拖到今年才写完；而一些读书/看剧的总结则直接拖没了。为了不把今年的年终总结拖到明年，我决定先写为敬。",
-      "image": null,
-      "publishedAt": "2021-12-16T23:14:37Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/takeaway/2021-retro/",
-      "detailPath": "articles/01b113adfd95e52bd39c4331.json"
-    },
-    {
-      "id": "4ee3da317a85f5f2839c4848",
-      "title": "叁拾一周：No.24",
-      "summary": "这是「叁拾一周」第二十四期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 265 位。我的下一个目标是 311。 周末小朋友感冒，低烧流鼻涕。跟着一家人都没睡好，他渐渐好转，我却头疼发冷，熬过一整天，吃了药，还是觉得晕晕的。 本周的通讯想顺着晕晕的感觉聊一下“感受”。 交出你的感受 这两年我和最多人讨论的关于感受的话题，是电子书和纸质书的差别。除去理论上的因素，有一些很明显的感受差异，比如拿在手里的触感，某一个段落在某个大概位置上的空间感，甚至是味觉感受，都对加深一本书的记忆有所帮助。还有一部记不起名字的电影里，女主和男主走在一起，是因为他在一间小咖啡馆读着一本她喜欢的建筑师的书，那一瞬间永久进入了她的记忆，直到他们分手，直到她为人妻，也不曾忘记。 这种感受的能力，随着科技进步，逐渐丧失。好像是当我们坐进科…",
-      "image": null,
-      "publishedAt": "2021-12-15T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2021/12/newsletter-024/",
-      "detailPath": "articles/4ee3da317a85f5f2839c4848.json"
-    },
-    {
-      "id": "736bac8bf5759d5034be813d",
-      "title": "[译] 不，Web3 不是去中心化",
-      "summary": "加密货币社区对元宇宙和 Web3 的狂热仍在继续，大量投资人和开发者前仆后继加入其中。但是，Web3 真的能实现支持者们的种种愿景吗？亦或是另一个镜中月、水中花？也许让历史照进现实，能给我们答案。",
-      "image": "https://img.skk.moe/blog/t2021/web3-is-not-decentralization.png",
-      "publishedAt": "2021-12-14T14:01:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/web3-is-not-decentralization/",
-      "detailPath": "articles/736bac8bf5759d5034be813d.json"
-    },
-    {
-      "id": "9b80988e66fcd01721783784",
-      "title": "正能量小故事",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2021-12-14T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/%E6%AD%A3%E8%83%BD%E9%87%8F%E5%B0%8F%E6%95%85%E4%BA%8B/",
-      "detailPath": "articles/9b80988e66fcd01721783784.json"
     }
   ]
 }

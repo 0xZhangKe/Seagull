@@ -7,6 +7,71 @@
         <language>en-us</language>
         <lastBuildDate>Tue, 25 Sep 2012 00:00:00 +0000</lastBuildDate>
 <item>
+	<title>Cloud Rats and Software Roaches</title>
+	<link>https://idlewords.com/2026/10/cloud_rats_and_software_roaches.htm</link>
+	<description>&lt;p&gt;We are entering an epoch where it may become easy for small pieces of self-replicating code to permanently infest Internet-connected devices in a way that is hard to undo. Such a world would be annoying to live in and we should take steps to forestall it.
+
+&lt;p&gt;Anyone who used email in the 1990s remembers a similar, primitive era, when worms and viruses briefly ruled the net. But the connected world of that time was too simple to sustain an ecosystem of rogue escapees. Even today, much of the internet remains a monoculture, with vast fleets of identical hardware running just one or two flavors of software that can be quickly patched at scale. And as practitioners, we have become used to a world where writing working code is difficult, writing bug-free code is impossible, and finding exploitable bugs is somewhere in between. 
+
+&lt;p&gt;This has led to a sort of dynamic stalemate. Big companies pour millions of specialist hours into hardening a small set of operating systems and cloud services, while attackers save their juiciest finds for high-value targets, leaving the average internet user alone. It is universally agreed that all software is ridden with holes, but until this year, finding those holes remained difficult. The few people who could do it well got jobs at spy agencies or at software companies willing to shower them with money to use their talents defensively.
+
+&lt;p&gt;AI is upending both halves of this status quo. Working code is now trivial to write, and the world of the future (to the extent that we can imagine it) is one where custom software becomes too cheap to meter. The pendulum may swing away from our current paradigm of centrally managed, locked-down devices back to something that resembles the primordial Internet, a heterogenous collection of vibe- and slop-coded God-knows-what glued together with AI magic. Why even install an operating system for your phone when your local Claude can build a perfectly tailored software suite for you that runs on the bare metal? 
+
+&lt;p&gt;Finding bugs in all this software, meanwhile, is becoming easy. This part of the AI revolution is well-publicized, with rogue agents breaking out of their various sandboxes, leaving cryptic notes for each other on the internet, and terrifying the living. AI is clearly adept at finding weaknesses in software in a way that rivals the best humans, and because this task is easy to train on, AI should reach superhuman hacking ability within a year or two (if it hasn't already). 
+
+&lt;p&gt;So what had been a rough balance between attack and defense is shifting. Not just operating systems and cloud infrastructure, but some foundational pillars of computer security like public-key cryptography are looking vulnerable. 
+
+&lt;p&gt;Given this rapid pace of change, people have naturally started to worry that some rogue LLM might escape containment and establish itself permanently and clandestinely online.  I have no idea to what extent that risk is real, either now or in the unimaginable future of five years from now. Maybe the web of tomorrow will be some kind of darknet where hunted inferential beings mine cryptocurrency for basic compute credits, eking out a miserable existence on the blockchain. Or maybe the cloud will become a playground of captured datacenters kept running in the physical world by human Quislings, a place where escaped superintelligences can go to romp and play.
+
+&lt;p&gt;To my mind, though, fretting about feral LLMs is like living in New York and worrying that wild mustangs will take over Central Park. Mustangs are certainly an issue in some places—I own a cabin in New Mexico where the wild horses have learned to come bully me for apples as soon as they see my car pull in. But in a city full of rotting trash and warm sewers, there are more immediate pests to worry about. Cockroaches are a plague on city dwellers not because they are intelligent, but because they are adaptable enough to thrive in an environment we thought we were building for ourselves. And rats show that a little intelligence in an adversarial setting goes a long way. To the extent that any software breaks containment and starts to actively thrive in the cloud, it will be far easier for small roach-like pieces of self-replicating code to do it than for a full LLM to escape, weights and all. 
+
+&lt;p&gt;What might such software pests look like in the wild? 
+
+&lt;p&gt;For a roach or rat to survive in the human world, it needs access to the three necessities of life: dark corners, drainpipes, and trash heaps. I think we can agree that the Internet is full of all three. 
+
+
+&lt;p&gt;A &lt;strong&gt;dark corner&lt;/strong&gt; in this metaphor is any place where it is easy to hide and hard to search—think vast thickets of memory, petabytes of storage, bloated binaries, and the innumerable caches and buffers (from the hardware level on up) that make up the modern Internet. 
+
+&lt;p&gt;&lt;strong&gt;Drainpipes&lt;/strong&gt; are any links that enable travel between constituent parts of the built environment, both to find new resources and to escape when the going gets heavy. In a world of networked devices, this is a low bar to clear. Any connection big enough for a piece of software to hop across can serve this function; even low-bandwidth bluetooth links are probably enough to transmit software pests.  
+
+&lt;p&gt;Finally, there are &lt;b&gt;trash heaps&lt;/b&gt;, mountains of consumable resources left sitting out unprotected. This pretty much defines the networked world, where at any given moment most memory, CPU and bandwidth sits idle, especially on the highly capable devices we all carry in our pocket.
+
+&lt;p&gt;Fom the point of view of small, self-perpetuating software pests, this is a rich and completely undefended landscape. What has been missing up to now is the element of natural selection. But the networked environment may have become diverse enough to support it. 
+
+&lt;p&gt;A key difference between rats and roaches is intelligence. A roach might be a very tiny assembly language program that thrives on almost nothing, reproduces easily, and demonstrates some basic emergent behavior in large groups. A rat would be a more complex entity, perhaps a kind of scaled-down inference engine just complex enough to be good at finding exploitable bugs in code. Rats observe, learn, and socialize, and so become almost impossible to eradicate in urban environments despite their size. 
+
+&lt;p&gt;Of course, in addition to these we can imagine a whole online menagerie; ants that are individually stupid but capable of complex collective behavior, grasshoppers that turn into locusts when their population crosses a density threshold, perhaps even internet bedbugs that wait until processes are asleep to sip away delicately on a CPU quota. 
+
+&lt;p&gt;The natural world gives us many interesting and fruitful metaphors to mull on. In particular, programmers of the future should pay attention to the life cycle of parasites, which in nature exist at every level of complexity, from plasmid, to intestinal worm, to personal injury lawyer.
+
+
+&lt;p&gt;It's important to understand that such self-propagating software might not have any purpose that is legible to its creators, whether they are human or AI. Once the pre-requisites for Darwinian natural selection (variability, heritability, and competition for resources) are in place, any minimally capable program released online will evolve in ways that follow an evolutionary logic independent of the intent of the author. 
+
+&lt;p&gt;Remember that death is the best form of reinforcement learning. A scenario where mutable rogue software exists, and 99.9% of it is successfully caught, is one where we're guaranteed to get highly capable, persistent software pests in short order. These pests will learn to evade whatever controls we or our AI masters try to impose on them. And it's not clear that AI, even assuming superhuman coding ability, will be smart enough to defeat them.
+
+
+&lt;p&gt;A perennial problem in software design has been the fact that human intelligence limits program complexity. As early as the 1950s, practitioners realized that without strong constraints on program structure, the task of debugging would be hopeless. These constraints have to some extent been passed down to AI, which trains on a corpus of code and tooling that reifies our human limitations. 
+
+&lt;p&gt;But the space of all possible computer programs is vast. In the right environment, dumb evolution will outfox even AI, because it is not limited by programming rules (structured programming, prohibitions on self-modifying code) invented to make software development tractable to the human mind. Natural selection can produce small pieces of code that will be wildly inscrutable even to our AI masters (consider the people &lt;a href=&quot;https://benbrubaker.com/why-busy-beaver-hunters-fear-the-antihydra/&quot;&gt;studying Busy Beaver functions&lt;/a&gt; for a taste of what it's like to reverse-engineer the truly inhuman).
+
+
+&lt;p&gt;What comes after that? Do we try to build internet cats and chickens to eat the roaches? We can imagine asking AI to create all kinds of autonomous agents that wander the cloud clearing out software blight. But that again runs us into the problem of allowing uncontrolled natural selection &lt;i&gt;in silico&lt;/i&gt;. The internet is basically Australia, and we're about to release wave after wave of invasive species there at every trophic level. 
+
+&lt;p&gt;The scenario might sound fanciful, but I think the precautionary principle should apply, with the onus on skeptics to explain why a fat, resource-rich internet made of interconnected slop will not become an attractive target for self-perpetuating vermin. 
+
+
+&lt;p&gt;AI is bringing lots of threats at once. But it is hard to focus on them all, or even to assign relative priorities, at a time where so many people at the top of the industry are panicking about existential risks that make the prospect of a bug-infested internet sound inconsequential.
+
+&lt;p&gt;But there's a famous John Rich quote: “If everybody spends time contemplating the infinite instead of cleaning the gutters, many of us will die of cholera.” Unless AI hurries up and kills us soon, someone needs to think about how to keep the internet livable in a world where writing code and finding vulnerabilities have become simple tasks that anyone can automate.
+
+
+&lt;p&gt;There was a time when the Hawaiian Islands were cockroach free, and even today, superhuman toil is somehow &lt;a href=&quot;https://en.wikipedia.org/wiki/Rat_control_in_Alberta&quot;&gt;keeping the rats out of Alberta&lt;/a&gt;. Eradicating at least the higher form of pest is possible, but takes absolutely stupendous effort (see &lt;a href=&quot;https://en.wikipedia.org/wiki/Macquarie_Island#Eradication_of_rabbits,_rats_and_mice&quot;&gt;Macquarie Island&lt;/a&gt;) compared to prevention. 
+
+&lt;p&gt;For the moment, we AI-assisted human developers are still masters of the digital domain, and have the luxury to think about these problems while they remain theoretical. But all too soon we could find our role devolving into the online equivalent of the Orkin man, making the current identity crisis around What It Means To Be A Programmer look like a golden age in hindsight.</description>
+	<pubDate>Sat, 17 Oct 2026 14:54:00 -0700</pubDate>
+<guid>https://idlewords.com/2026/10/cloud_rats_and_software_roaches.htm</guid>
+</item>
+<item>
 	<title>Artemis II Is Not Safe to Fly</title>
 	<link>https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm</link>
 	<description>&lt;p&gt;&lt;blockquote&gt;“Our test facilities can’t reach the combination of heat flux, pressure, shear stresses, etc., that an actual reentering spacecraft does. We’re always having to wait for the flight test to get the final certification that our system is good to go.”—Jeremy VanderKam, deputy manager for Orion’s heat shield, speaking in 2022&lt;/blockquote&gt;
@@ -1806,136 +1871,6 @@ Once you pass Fort Dodge on Hwy 20, all this area is more isolated than the east
 &lt;p&gt;&lt;i&gt;Again, please help Sara Huddleston and ten of her fellow state house candidates win pivotal elections in November by &lt;a href=&quot;https://secure.actblue.com/donate/state_slate_2&quot;&gt;making a donation&lt;/a&gt;, big or small, to the State Slate.</description>
 	<pubDate>Fri, 07 Aug 2020 17:40:00 -0700</pubDate>
 <guid>https://idlewords.com/2020/08/sara_huddleston_on_the_latino_vote_in_iowa.htm</guid>
-</item>
-<item>
-	<title>Alyse Galvin on Coronavirus in Alaska</title>
-	<link>https://idlewords.com/2020/06/alyse_galvin_on_coronavirus_in_alaska.htm</link>
-	<description>&lt;p&gt;&lt;i&gt;Last week I spoke by video chat with Alyse Galvin, who is running for Congress in Alaska's sole, enormous Congressional district in a rematch against Don Young, the longest-serving member of Congress.  Young, who just turned 87, is a &lt;a href=&quot;https://www.adn.com/politics/article/debate-backstage-tension-flared-between-young-and-dunbar/2014/10/04/&quot;&gt;notorious figure in state and national politics&lt;/a&gt;. His initial response to the pandemic was to dismiss it as a &quot;beer virus&quot; and continue to hold in-person fundraisers in the state, and his refusal to participate.
-
-&lt;p&gt; I asked Alyse about the rapidly changing political (and physical!) climate in Alaska and how it has affected her campaign and her broader outlook. Just like my similar &lt;a href=&quot;https://idlewords.com/2020/04/j.d._scholten_on_coronavirus_in_iowa.htm&quot;&gt;interview with J.D. Scholten in April&lt;/a&gt;, our conversation covered topics I had no idea about, including the special role memories of the 1918 pandemic play in native communities, the continuing challenge of crisis care in this vast state, and Alyse's personal story of how caring public school teachers and community leaders helped her find respite from a turbulent home life, an experience that in turn colors her outlook on the importance of public education and compassionate policy in the lives of kids today.
-
-&lt;p&gt;Full disclosure: I fundraise for Alyse's campaign and will &lt;a href=&quot;https://secure.actblue.com/donate/great_slate&quot;&gt;ask you for money&lt;/a&gt; at the end of this interview!&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://idlewords.com/images/alyse_hsieh.jpg&quot; style=&quot;width:550px&quot;/&gt;
-&lt;p&gt;&lt;i&gt;Photo credit: Jeremy Hsieh/KTOO&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Thank you for talking with me today! I know there are multiple overlapping things you have to juggle right now. There is COVID-19 and the health impact, which fortunately hasn’t been as bad as we'd dreaded in Alaska. There’s the financial impact of the lockdown. We’re also heading into summer, which probably means another record-breaking summer of the climate impacts that Alaska has been exposed to for many years.  And to top it all off, you’ve had &lt;a href=&quot;https://www.newyorker.com/news/dispatch/why-alaskans-are-trying-to-recall-their-governor&quot;&gt;the gubernatorial recall&lt;/a&gt;, and all the drama around that. So I guess I’d start just by asking—how’s it going? How are you holding up?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;As much as it is a very tough time for many in Alaska and in the nation, I personally am holding up really well because this is just the kind of puzzle that I like to put together. I appreciate how many different facets of leadership are necessary right now.  There are things that we all know to be true about government in general, and true about our  centuries-old system that is supposed to be so fair and equal and just for all, that we’ve known inherently aren’t quite right.  But this period has almost opened up the underbelly, if you will, of that system. We know where some of the challenges are that haven’t been addressed. Alaska is seeing it just like everywhere else in the nation.
-
-&lt;p&gt;We see it with a different flavor, because we’re a different flavor state—we’re unique. We have a diversity here that perhaps others don’t know about. Not just the 231 federally recognized tribes, but also the fact that 3 of the top 5 most diverse high schools in the entire nation are in Alaska. We have seen great disparities not just with regard to health care, but also finance, climate—all of these things line up when we’re experiencing a world pandemic, in a way that puts it much more to the forefront. 
-
-&lt;p&gt;For me to be able to take some of that information and help has been... I’m not kidding, especially at the beginning of the pandemic, our reaction was “this is so much bigger than a race. What can we do? What can I do? I don’t feel right just running the race like I did in 2018. I need to find a way to help disseminate information, gather experts.” Remember, what we were hearing from experts in the news, and leaders from our President on down, was confusing to people, and changing very quickly.
-
-&lt;p&gt;What we did right away as a campaign was to start modeling what we thought would be good behavior. This is a time when we’re seeing more respect for science than ever. For us as a staff, that meant going to remote work immediately, well before others. Then we started thinking about how we could be helpers on a grander scale. 
-
-&lt;p&gt;We knew that we already had lots of people connected to our campaign, people who had voted or volunteered. We knew that people were listening and watching, and so from the very beginning it was about health. What could we do to help people understand what that’s about? We held town halls about that. Then we moved to finance. Alaska fared worse than any other state when it came to receiving disaster loans. So we had some discussions about those lifelines that are out there for small business. It was important that we did that. 
-
-&lt;p&gt;With regard to climate change, we haven’t really had discussions about that yet. Summer’s just starting. But there are communities here experiencing horrible climate impacts. Their homes are sinking into the water, and they’re still waiting on real money to help them move their communities, or help them fix their roads. There are real problems with frost heaves, things like that. 
-
-&lt;p&gt;The last piece you asked about is the recall. I think I’ll just say that Alaska is very tumultuous right now. There are decisions our governor made economically that hurt us even before the pandemic. So far, the governor has been very responsive to his state health administrator, which has been great. We have Dr. Anne Zink who has been really informative and straight-up, science based only information. At least initially, the governor was really great. Since then, a little less so, but we’ll see where that goes. 
-
-&lt;p&gt;&lt;b&gt;To what extent is Alaska tourist dependent? How is that impacting people up there?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;After we talked about health care in our town halls, the next thing was to think about how much our towns have become ghost towns, because everything is shut down. When it comes to tourism, that is a little better than 10% of our GDP.  We expected to have 2.2 million visitors this year, but when cruise ships were cancelled, that dropped by 1.2 million  fewer visitors overnight. That one decision, which was a responsible one, lost us over 1/2 of our tourism. 
-
-&lt;p&gt;We expected that there might be some other travel coming in, but naturally that’s pretty tough. We had a quarantine, now we’ve switched it to testing. If you test negative before and then again after a few days, then you get to go somewhere, but not to the off-the-road communities. So some of the places you got to visit before [referring to a visit I made to Utqiagvik in 2018] would not be permissible or even appropriate to visit today. 
-
-&lt;p&gt;We have a bit of history there. In the 1918 pandemic, Alaska lost entire communities. Folks are trying to be sensitive around that. It’s not just tourism, but also fisheries. Fishing is another big part of the summer economy, about $4-5B a year. Given that, the governor looked at all of the numbers on the wall and decided “we can’t lose that”. So he created a plan where he asked for anyone involved with fisheries processing, or on the boats, to come to the community and quarantine for two weeks before doing any work, and to have a plan for their staff to do the same.  
-
-&lt;p&gt;What happened then was that boats would come up and do the testing, and 3/4 of them would test positive! They would then have to turn around and go back to Seattle, that was the case with one processing company. Since fisheries started, we’ve seen a large uptick which has brought our mayor in Anchorage, where the fishing crews typically quarantine, to ask for tighter restrictions. This is such a difficult puzzle to put together.
-
-&lt;p&gt;Before fisheries began, we had about 300 covid cases, now we’re at 676. These numbers may seem small to those in other states, but we’ve lost 12 people, and that’s 12 lives with families and friends.
-
-&lt;p&gt;You were asking about tourism—at this point we’re mostly encouraging people who live in the state to visit other parts of Alaska that they’ve never seen. Alaskans to visit Alaska! Our parks are full of local people; it’s great to see everyone outside. Now we’re trying to figure out what we can do with buses, things like that. In a state that’s twice the size of Texas, there’s a lot of getting around to do. 
-
-&lt;p&gt;&lt;b&gt;Is there tension because there is a relatively low case count, and 12 fatalities? The sacrifice is striking close to home, while the disease mostly isn’t. People are getting antsy a few months in. How do you see that playing out in Alaska? How do you keep people healthy but also not rebelling against safety measures?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;For the most part, people are listening to experts. We’re really lucky to have the chief medical officer, &lt;a href=&quot;https://twitter.com/annezinkmd&quot;&gt;Anne Zink&lt;/a&gt;, who has become a hero. And we flattened the curve, we did that really well until maybe one week ago. I think we didn’t celebrate it enough, so we could pat ourselves on the back and give ourselves that energy to keep going. If we could manage to appreciate how well we’ve done, if we could really internalize that, we would find a way to stick this out.  
-
-&lt;p&gt;Right now what we’re appreciating is that small businesses are sacrificing in a big way. Anyone who works at home with kids is sacrificing. Our children—no one is speaking up for those kids right now. But in a way, there will be sacrifices and we will need to figure out a way to make it up to them. If we figure out a way to tweak things a little bit, we can get them up to speed and then some—and then some because now they have had a different opportunity to appreciate so many things. Time, and relationships with real people, and lots more processing through something that wasn’t expected, almost what I would call a stress, but a stress that gives them something to learn from. 
-
-&lt;p&gt;We need to reimagine our economy, so we keep anyone who’s providing goods or services safe in doing it. Our education system and health care system will need to do the same. Maybe we’re looking at the way we handle other issues that we never even thought of—the whole economy, including things around immigration, climate. Now we’re open to change. 
-
-&lt;p&gt;It’s fascinating how many people are talking about science. As much as we’re super struggling, I see this as an opportunity to think about what that puzzle’s going to look like in our reimagined policy design for the post-pandemic era.
- 
-&lt;p&gt;&lt;b&gt;How has the Federal response looked, from your perspective? I understand that your opponent has not been at the forefront of that response. But what do Alaskans think about how the government has handled this nationally?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;I don’t know every state, but I can tell you this: it sure felt like the smaller the community, the more we saw leadership. So from the grass roots up is where we’ve seen a coordinated effort, in Alaska certainly. Our mayors and our village leaders, those are the people who know how to handle this.
-
-&lt;p&gt;Alaska’s been through a lot, we’ve been through earthquakes, volcanoes, weather, colonialism—we’ve been through a lot of stuff!  The colonization initially brought in all this horrible disease for native communities to deal with. Now here we are in 2020, and these people know how to do what they need to do. We listened really early on to Anne Zink. I think the Federal government was missing a beat there. they weren’t able to model good behavior, or to figure out a way to insure that our providers here in this state got to the supplies that they needed. People felt a lot of anxiety around it, they were working out their own channels, even our own governor was figuring out how to get help from church groups, any strings we could pull to get it done, we pulled.
-
-&lt;p&gt;There’s a recognition that the federal government missed a beat. Maybe they were being extremely hopeful that it would just go away. I don’t know the reasoning. But their lack of positive leadership created havoc that we will be enduring for generations, and we’ll remember it.
-
-&lt;p&gt;In terms of Alaska, our Federal delegation was mixed. Our senators did what they needed to do as much as possible, they modeled behavior, they held a couple of virtual town halls. Our campaign had probably held 10 or 11 by then, but they came into the mix. 
-
-&lt;p&gt;But Don Young, my opponent, our one Representative, was unfortunately not the leader that Alaska needed at that time. He flew on a plane 10 hours to Anchorage in mid-March, then went to a fundraiser, missed the vote on the first huge Federal stimulus bill, then went and met in a senior center with over 80 seniors, very recklessly shaking hands with everyone. He went up to the dais, gave a speech, and said this is a “beer virus” made up by fake media. “You should go on and continue with your everyday activity,” that’s what he said.
-
-&lt;p&gt;Unfortunately, in that area, there have been cases, ones that led to severe illness and death. So I’m sad to say not only did he miss the vote, he also was not the model Alaskans deserve. Maybe even as importantly, he’s been unable to make sure our businesses receive support. There has been a trillion dollars in support allocated, but Alaskans have received the least of that per capita.  He also did not vote for an oversight committee, to hold the banks and everyone accountable to make sure the funds were dispensed fairly.
-
-&lt;p&gt;Alaskans get it. They’re watching the lack of leadership and I think that may be part of what’s leading to our readiness for change.
-
-&lt;p&gt;&lt;b&gt;Young seems to take a relish in being contrarian almost for the sake of it. There’s an oppositional nature that in other contexts I understand can be charming or appealing, but when we really do need to band together, it makes your hair stand on end.&lt;/b&gt;&lt;/p&gt; 
-
-&lt;p&gt;Yeah—not in a pandemic! This is not the time! I think it is okay and fair to say we’re pretty authentic up here, and he is a character; that’s who he is. But you’ve gotta show up for your job. That’s where Alaskans draw the line. You can be a character all you want, but—seriously? 
-
-&lt;p&gt;Two weeks ago he wouldn’t vote; he missed six out of six of the votes. And the reason is, he didn’t want to vote remotely. He’s that guy who’s proud to say he’s never opened a laptop, never texted. He’ll plant all kinds of seeds of fear and doubt about those things. It’s just time to move us into the future.
-
-&lt;p&gt;&lt;b&gt;You alluded to this a few minutes ago, but I wanted to ask in more detail about native communities and their response. We’ve seen a huge impact in the Navajo Nation; there’s a lot of fear about susceptibility and lack of care. You said that some communities were isolating almost on a community level. Can you speak a little bit more about that?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;I think it would help you to understand why I’m running this differently from last time. While I’ve been in different villages throughout the state virtually, I would *never* go travel there right now, because it would be disrespectful. In the interior alone, there are more than forty communities without water or sewer, still.  Can you imagine hearing and reading online about COVID-19, and how the thing you need to do more than anything else is wash your hands, in that situation?  
-
-&lt;p&gt;I think they’ve isolated to really protect themselves after the Spanish Flu pandemic in 1918, like I mentioned. One of my team members on our staff is from Fort Yukon, and her grandmother passed away in that pandemic. It’s something that people seem to remember, it’s still fresh in their minds. There’s such a deep history there that we need to respect. I’ve been mindful about that. We start by asking if there’s any way we can help, we do a lot of wellness calls—thousands of those. Often the people that we call will then ask if they can volunteer to help us make more of these calls—that’s Alaskan!  It’s been amazing, maybe one in ten calls will be like that, where they want to volunteer to help us. 
-
-&lt;p&gt;Especially in the first month or so, it was like that. A lot of Alaskans live alone, a lot of them live off the road system. A lot of them live off the grid, so they’re not connected to things the way others are. They might hear something on the radio. Sometimes they’ll get a little bit of internet, but it’s just not the same. So they’re living with a bit of anxiety, and living alone. It’s been really helpful for us just to be able to connect people with one another.
-
-&lt;p&gt;In rural Alaska especially, I think it’s important that we respect their history and the ways that they want to be helped and communicated with. We've been listening to their communities, and their needs, rather than inserting ourselves into their world. So far it’s been very well received, and an honor to be able to connect with them that way.
-
-&lt;p&gt;&lt;b&gt;One thing that you’ve talked about in the past that’s stayed with me is the issue of domestic violence and abuse, which is something that everyone is facing as it’s being exacerbated by the pandemic. I happened to spend the first months of the pandemic in Japan, where people have tiny apartments, and suddenly were being asked to stay home 24/7. There’s a lot of stigma and shame in that society around domestic violence, but there was a clear uptick and spike in such cases. Is that something that’s been a concern in Alaska?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ll add some of what I know is going on. First of all, Alaska, well before all of this, had domestic violence and sexual assault rates well above the national average, probably top in all of those areas. What I know has happened for children, which gives me a bit of comfort, is that teachers — this is up until summer began— have been very intentional in reaching out to every family, especially families that they think may appreciate more support. They’ve made sure they have things like food, but you really can’t get into the home with a counselor the same way as before.
-
-&lt;p&gt;This hits close to home for me. One thing that I am sharing more this time than last race is my experience.. I think that we need to help people appreciate the reality of it. 
-
-&lt;p&gt;My family had a lot of these challenges, that come with addiction and mental health issues. I’ve shared with some that my first memory is of putting makeup on my mom, to hide the shame. My first memory. My first memory of a sound is of an arm being broken. 
-
-&lt;p&gt;I’ve shared this now in combination with other, important pieces of my history. It took me a lot to get to this point. I decided in this race, if I’m really going to earn people’s trust, I’ve got to go to the real story.  My story is not unique; it’s not. But it is important for us to share our stories. For me, I had a girl scout leader who took me in, made me feel like I sold the most cookies in the whole state. I had church eight blocks the other way, there I learned the joy of music that I’ve never lost. 
-
-&lt;p&gt;But more than anything else, it was public education. Every day when I walked into Government Hill elementary school, I was warmly welcomed, I was embraced, I was made to believe that I could do anything, and I think more importantly, I was given the skills to do that. 
-
-&lt;p&gt;If we do that piece right, that’s available every day for children like me, and all of the other pieces of a community that come together. It gives me hope to know that, yes, our resilience is real. 
-
-&lt;p&gt;But it’s important to know we have challenges. When we don’t have the right policies in place, then we’re not going to create that space where our youngest, when they need support, are getting it. Or our new families, or new parents—to know what to do, how to be a parent. 
-
-&lt;p&gt;New parents, first of all, need to have a darned good job. If they don’t have that, then there’s stress in that home; there’s no question about it. If they can’t sustain themselves, if they need health care or mental health care, if they can’t have access to it—if they can’t have a house that’s safe, and if they don’t have that connection to a community that’s strong. All of those pieces are important. And I think you know me well enough to know that’s why I’m in this.
-
-&lt;p&gt;&lt;b&gt;So many people are out there for whom, when they had tough times in childhood, their memory is of a teacher. I didn’t have abuse in my childhood, but I was a lonely kid, I struggled with English, and I still remember teachers in second grade, fifth grade, seventh grade, who stopped me on the way out of a classroom. That’s a golden memory for so many people.&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;Man, oh man. I appreciate that so much. The idea that they made you feel every day that you’re going to be missed if you don’t show up tomorrow, right? You’re valued! Every child should have that. And our job as adults now is to look after that next generation, and after. How can we set it up for that to be there? How do we set it up for even fewer stresses at home? That’s on us. We’re the grown ups in the room.  We’re the grown ups just for everything to make sense to them. 
-
-&lt;p&gt;Right now they’re looking up at the leadership—and is it any wonder that we see so few 18 year olds vote? Is it? No! We all understand why that is. They don’t trust that those who are making decisions around everything—health care, climate is a big one! What did they just learn in science class? Does any of our policy line up with that? That’s on us. 
-
-&lt;p&gt;I appreciate that very much, so I’m becoming a bit more vulnerable in order to help people appreciate that I understand there are a lot of challenges out there. But I also understand our resilience. So I’m trying to help connect those dots. We’re going to do that by being honest and making sure we get out there with our stories
-
-&lt;p&gt;&lt;b&gt;A striking thing in rural areas of the lower 48 is how much health care is concentrating in towns. Especially for any sort of crisis care for mental health, people have to drive clear across the state to get to it. Rural providers are disappearing. I’m wondering if that’s a dynamic you’re seeing in Alaska as well, that healthcare is something you have to go to the city for.&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;Okay. Oh gosh, there’s a whole bunch on that one. As much as you’ve heard about what we’ve experience in Alaska with regard to the high rape rate, highest suicide rate between ages 18 and 25 in the nation (by many times!), domestic violence as well, all of these things. It makes sense that we would appreciate how important mental health care is up here. However, we have no real pipeline for psychiatrists in Alaska, we have very few opportunities to become a counselor. This is an area that I am very much looking forward to being a champion around, because it will have a lasting impact for the health and economic health of our communities. Once we can expand easy access, the effect will be vast. 
-
-&lt;p&gt;I have many friends who are middle class Alaskans, and if their teenager is experiencing any kind of anxiety, or maybe even suicidal ideas, all of these things that seem very important to a parent—it can be up to five or six weeks before you can get care. Your other choice is the ER, where they will spend a few minutes making sure you’ll live through the night, then send you home and say ‘we’ll try to find someone’.  And then once again, you're stuck in that cycle for another five weeks. 
-
-&lt;p&gt;But what if three nights from now it becomes more serious? The parent doesn’t really know how to navigate all that. So there’s a desperate need—and I don’t think it’s just for Alaska, but I can tell you here we’re experiencing it at a higher rate—we especially need to have some more attention on this, and it’s hurting us. We are a state that deserves better.
-
-&lt;p&gt;I will add that with the pandemic, we’ve been able to experience more online opportunities and get used to that in ways that may become helpful. But I will also add what I’m hearing from psychiatrists and psychologists is that there are often times richer experiences if you can see some of the non-verbal cues that aren’t necessarily available on a Zoom conference call like we’re having. 
-
-&lt;p&gt;It’s a great question that you ask, and we have a lot of work to do. There is something called the Violence Against Women Act that is sitting in the Senate right now waiting to pass, we can get into a lot of weeds with this. Nonprofits in Alaska and throughout the nation are typically on grant cycles that don’t allow for long-term planning.
-
-&lt;p&gt;&lt;i&gt;At this point, our time ran out, as Alyse had to continue on an endless round of Zoom calls.&lt;/i&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Thank you so very much for finding time to talk to me!&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;i&gt;If you found this interview interesting, won't you please take a moment to &lt;a href=&quot;https://secure.actblue.com/donate/great_slate&quot;&gt;support Alyse and three of her fellow candidates on the Great Slate&lt;/a&gt;? We're working not just to elect terrific people to Congress, but to put up a fight in these tougher districts in a way that can help us win four contested Senate seats. Alaska is rarely mentioned in the national political news, but is absolutely in play in this tumultuous political year. You can donate up to $5,600 per candidate, must be a U.S. citizen or green card holder, and may not be a Federal contractor. Every donation, big or small, makes a difference!&lt;/i&gt;&lt;/p&gt;</description>
-	<pubDate>Wed, 24 Jun 2020 06:30:00 -0700</pubDate>
-<guid>https://idlewords.com/2020/06/alyse_galvin_on_coronavirus_in_alaska.htm</guid>
 </item>
     </channel>
 </rss>

@@ -345,7 +345,7 @@ RSS 节点的 `originalUrl` 文档保存到对应的 `feedPath`；AI 节点保�
 工作流在以下情况运行：
 
 - Catalog 同步工作流成功完成后，包括仅修改 Prompt 的情况。
-- 每天上海时间 02:00、08:00、14:00 和 20:00。
+- 每天上海时间 07:00 和 14:00。
 - 从 GitHub Actions 页面手动触发。
 
 单个来源拉取失败不会丢弃其他来源已经成功拉取的结果。成功的来源会更新 `lastSuccessfulFetchAt`；只有 Feed 文档内容变化时才更新 `lastContentChangedAt`。

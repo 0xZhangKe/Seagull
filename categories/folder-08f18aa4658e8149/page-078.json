@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "98588326d2a791256f7b5fe6",
+      "title": "Android源码分析：从源头分析View事件的传递",
+      "summary": "对于应用开发者的我们来说，经常会处理按钮点击，键盘输入等事件，而我们的处理一般都是在Activity中或者View中去做的。我们在上一篇文章中分析了View和Activity与Window的关系，其中的ViewRootImpl和我们的事件传递息息相关，上文未能分析，本文将对其进行分析。 事件介绍 事件是什么呢，广义上事件的发生可能在软件也可能在硬件层，在Android设备当中，我们会有可能有键盘触发，触摸触发，鼠标触发的各种事件。我们关注的通常有两种事件： 按键事件（KeyEvent)： 这种色包括物理的按键，Home键，音量键，也包括软键盘触发的事件。 触摸事件（TouchEvent): 手指在屏幕上触摸触发的事件，可能是点击，也可能是拖动。 对于按键事件，一般有 ACTION_DOWN 和 ACTION_…",
+      "image": null,
+      "publishedAt": "2024-09-20T09:20:01Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-20-activity-input-event-deliver/?utm_source=rss",
+      "detailPath": "articles/98588326d2a791256f7b5fe6.json"
+    },
+    {
+      "id": "0fcc3f65ef143636eaf40ac2",
+      "title": "人的用途",
+      "summary": "「人」可以做什麼？",
+      "image": null,
+      "publishedAt": "2024-09-20T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/five-ages-of-humanity",
+      "detailPath": "articles/0fcc3f65ef143636eaf40ac2.json"
+    },
+    {
+      "id": "abefc3179af5e0bcfac1c864",
+      "title": "催收案无罪辩护暂时失败了",
+      "summary": "昨晚非常努力的调生物钟。虽然最终还是失败了，但今天早上醒来时的状态依旧比昨天好了一些。调整作息，非一时一力之功，也要像扎根一样，持之以恒。 昨天上午，顶着瞌睡，来回开车二百公里，跑了趟焦作。 会见老孙时，从老孙嘴里得知，法院通知全体取保人员，于当日上午到法院集合。 我敏锐的察觉到，这是法院要下判决了。 其实老孙案子下判决，在节前便已有征兆。 节前最后一天，我正开车，载着老婆和闺女，沿连霍高速一路向西，开往洛阳。 正当夕阳的最后一抹余晖没入地平线，大地即将彻底被黑暗吞噬之际，老孙老婆给我打来电话。 话说的很客气，张嘴先说对不起，放假了还给我打电话。 为啥说律师一定要努力向上突破呢？因为唯有向上，你作为律师的价值才有机会施展。徘徊在底层打转，只能沦为情绪垃圾桶，整日当受气包。 我本来还以为，老孙老婆打电话过来是要…",
+      "image": null,
+      "publishedAt": "2024-09-19T23:17:00Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/265.html",
+      "detailPath": "articles/abefc3179af5e0bcfac1c864.json"
+    },
+    {
       "id": "9c7284383321c085048d5062",
       "title": "好和弦書習題解答",
       "summary": "一位讀者跟我提到，我的好和弦實體書裡面有一些練習題，但我沒有附解答，所以寫完後不知道自己的答案對不對。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/two-rtx-4000s",
       "detailPath": "articles/65a1d3c6396278a8720298a9.json"
-    },
-    {
-      "id": "0ed1a1c28ccc6851d745fa71",
-      "title": "飞行",
-      "summary": "有点酸 、 在千米高空 用跨越空间的方式来穿越时间 原来花六千五人民币，约八百欧元 就能在… Read More",
-      "image": "https://2.gravatar.com/avatar/ea6699dd1503807085d7548af8465d57581dc3f7355f205d56d97898ddb530dd?s=96&d=identicon&r=G",
-      "publishedAt": "2024-09-01T11:17:43Z",
-      "sourceId": "960b48b47303d275",
-      "sourceTitle": "蛰洲",
-      "link": "https://aliangx.blog/2024/09/01/%e9%a3%9e%e8%a1%8c-2/",
-      "detailPath": "articles/0ed1a1c28ccc6851d745fa71.json"
-    },
-    {
-      "id": "5e9f1bae3ec3792e258955ee",
-      "title": "在家造个数据中心",
-      "summary": "作为一个追求极致的垃圾佬，总有一天会发现设备多到不再能简单地水平堆放，而是需要使用带有垂直空间的排布以控制占地面积。 通常情况下，对于深度不大的设备可以使用类似货架的设施来叠放；而对于大多为面向机架场景的设计而言，准备一个标准尺寸下的机柜就成了一种更为合适的选择。 既然要做，那就努力做到最好。我咨询了几位参与过数据中心建设的朋友，在他们的帮助下共同设计并完成了这次的工程。因而将相关的内容整理如下，方便可能有需要的朋友们的参考。 但需要注意的是，这里描述的仅为 家居环境下 的工程建设（整活），即最终还是以家居的功能为主。如果您有严肃的数据中心建设相关的工程，请咨询相关的专业人士。",
-      "image": null,
-      "publishedAt": "2024-09-01T09:29:30Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/build-a-datacenter-at-home/",
-      "detailPath": "articles/5e9f1bae3ec3792e258955ee.json"
-    },
-    {
-      "id": "f29551d965a685d119b1a135",
-      "title": "哈農",
-      "summary": "前幾天直播時，一個觀眾在聊天室提到他練習哈農練習曲練到手受傷。這讓我想起以前遇過幾個超愛彈練習曲的學生，也讓我想寫一下我對哈農之類的機械性鋼琴練習的看法。",
-      "image": null,
-      "publishedAt": "2024-09-01T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/practicing-hanon",
-      "detailPath": "articles/f29551d965a685d119b1a135.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "43e62cc907e7c7b465eb31ef",
+      "title": "The Right Way to Use WebArena Indigo",
+      "summary": "WebArena Indigo is a cheap, good-value Japanese VPS that makes a great landing node. But if you front it with a relay and push traffic over a GRE tunnel like I did, GRE over IPv4 gets rate-limited the moment you run a speed test — the connection collapses right after the first burst. This post walks through what I tried (realm public forwarding, IPv4 GRE, I…",
+      "image": "https://r2.uid.ac/blog/20260617618e3da0.png",
+      "publishedAt": "2026-06-17T12:00:00Z",
+      "sourceId": "1dc4dbdb701e1314",
+      "sourceTitle": "Vincent's Notes",
+      "link": "https://missuo.me/posts/webarena-indigo-ipv6-gre/",
+      "detailPath": "articles/43e62cc907e7c7b465eb31ef.json"
+    },
+    {
       "id": "99bbb6c0c62840a070e208d0",
       "title": "The lysine contingency",
       "summary": "I'm happy to announce that Retrofit, OkHttp, and Okio are moving to a new GitHub organization, and along with SQL Delight are all joining the Commonhaus Foundation . You can read their announcement of the move . This move is meant to reinforce our commitment to these projects' longevity and honor the fact that they've long since outgrown the stewardship of…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Farnam Street",
       "link": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
       "detailPath": "articles/84fac6f1e0b5449c99e757fe.json"
-    },
-    {
-      "id": "9a1cbb60db861090d0633585",
-      "title": "Tinkering with Home Network: N100 + PVE + iKuai + sing-box",
-      "summary": "Notes on building a home network around an N100 mini PC running PVE 9.0 with iKuai as the main router and Debian 13 as a sing-box side gateway. Covers port assignment tricks for PVE management access, choosing sing-box over dae due to Shadowsocks 2022 support, bringing IPv6 to the LAN via ULA + radvd when the ISP has no v6 uplink, and fixing the Happy Eyeba…",
-      "image": null,
-      "publishedAt": "2026-04-21T03:00:19Z",
-      "sourceId": "1dc4dbdb701e1314",
-      "sourceTitle": "Vincent's Notes",
-      "link": "https://missuo.me/posts/home-network-n100-sing-box/",
-      "detailPath": "articles/9a1cbb60db861090d0633585.json"
     }
   ]
 }

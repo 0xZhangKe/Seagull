@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "341c7e3f530e760676762be7",
+      "title": "在德国小学，我见识了死亡威胁",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-10-08T18:15:15Z",
+      "sourceId": "6e847964818dca55",
+      "sourceTitle": "余晟以为",
+      "link": "https://mp.weixin.qq.com/s/uzHCs4utPeekxCEY_x8caw",
+      "detailPath": "articles/341c7e3f530e760676762be7.json"
+    },
+    {
+      "id": "f089cde6315794613db9dbb0",
+      "title": "Youtube 演算法覺得我對車道閘門有興趣！",
+      "summary": "前言 # Eddie 前些日子安裝了 Whoogle 當作搜尋引擎，並且把 Youtube 首頁變成只剩下一個搜尋欄，平時也多用 Freetube 以及 RSS 訂閱器來看 Youtube，手機端也是用瀏覽器而非 Youtube APP。 演算法錯亂 # Youtube 少了我在主頁上面滑動的數據，也沒有了 Google 搜尋引擎的記錄之後，甚至少了很多我在 Youtube 上觀看影片的記錄（我用 FreeTube 看）之後，開始演算法錯亂了！ 剛剛新血來潮，把 Youtube 首頁解禁。 Youtube… 居然推薦我一部介紹車道閘門機器的影片，看來我真的很需要他！（笑） 車道閘門 後記 # 2026/03/27 # 千萬別心血來潮就解掉，因爲我就是從那一刻起，重新對 YT 產生上癮的。",
+      "image": "https://eddielv.com/musings/algorithm_disable/Youtube%E6%BC%94%E7%AE%97%E6%B3%95.jpg",
+      "publishedAt": "2024-10-08T12:08:06Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/algorithm_disable/",
+      "detailPath": "articles/f089cde6315794613db9dbb0.json"
+    },
+    {
+      "id": "85c0a318591144ce2f51f1b2",
+      "title": "Candy Crush Saga 新原聲",
+      "summary": "https://www.youtube.com/playlist?list=OLAK5uy_mdauZbaUgyp0cJISAZ5sJlzBnyvlSh3x4 新版（2022 年起）的 Candy Crush Saga 官方遊戲原聲帶！這當作學習用音樂還滿不錯的。 作曲家是 Sebastian Aav ， 和 Candy Crush Soda Saga 的作曲家不同人 ，聽起來是現場錄音和電腦合成音效的結合。 然後這首名叫 Candy Caravan Escapade 的遊戲主畫面（關卡選擇）音樂的 1 分 05 秒部份 ，因爲使用了那經典的 IV-V-iii7-vi （4536，其中 3 爲屬和弦）和弦進行（又稱「 王道進行 」），所以聽起來很日系 XD。",
+      "image": null,
+      "publishedAt": "2024-10-08T11:49:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/candy-crush-saga-ost/",
+      "detailPath": "articles/85c0a318591144ce2f51f1b2.json"
+    },
+    {
       "id": "f82c41a0c6addbccd4c478b7",
       "title": "安庆游记2-集贤时空和倒扒狮街",
       "summary": "之前的文章分享的是去安庆博物馆，在第二天，朋友推荐了集贤时空这个地方，便约着一起去了。 集贤时空位于集贤北路上，由原来的白鳍豚水泥厂改造而成。进去里面会发现里面的商业设施还不完善，许多空间都还在招租，旁边还有二期正在施工，现在也不需要门票。 停完车，看到入口大门，就能感受到满满的大字报气息。 里面的墙壁也是到处充满了毛主席语录 以及其他一些之前比较流行的标语 最为突出的当属以厂房绘制的大邮筒，2B铅笔等，满满的怀旧风。 除了标语和大字报之外，这里也还有一些别的景观，首先是一个根雕展览，里面充满了各种精美的根雕。 以及古居民去的微缩景观，做的栩栩如生，很漂亮。 这个地方目前免费，人还是挺多的，不知道将来如果收费人流量会怎么样。另外现在这里招商的一些商家的店铺招牌，和这个文创园的风格不太搭配，希望园方能控制一下招…",
@@ -626,39 +659,6 @@
       "sourceTitle": "刑辩人在路上",
       "link": "https://xingbianren.cn/post/266.html",
       "detailPath": "articles/f75cc4a036f8ead8bddc006d.json"
-    },
-    {
-      "id": "98588326d2a791256f7b5fe6",
-      "title": "Android源码分析：从源头分析View事件的传递",
-      "summary": "对于应用开发者的我们来说，经常会处理按钮点击，键盘输入等事件，而我们的处理一般都是在Activity中或者View中去做的。我们在上一篇文章中分析了View和Activity与Window的关系，其中的ViewRootImpl和我们的事件传递息息相关，上文未能分析，本文将对其进行分析。 事件介绍 事件是什么呢，广义上事件的发生可能在软件也可能在硬件层，在Android设备当中，我们会有可能有键盘触发，触摸触发，鼠标触发的各种事件。我们关注的通常有两种事件： 按键事件（KeyEvent)： 这种色包括物理的按键，Home键，音量键，也包括软键盘触发的事件。 触摸事件（TouchEvent): 手指在屏幕上触摸触发的事件，可能是点击，也可能是拖动。 对于按键事件，一般有 ACTION_DOWN 和 ACTION_…",
-      "image": null,
-      "publishedAt": "2024-09-20T09:20:01Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-20-activity-input-event-deliver/?utm_source=rss",
-      "detailPath": "articles/98588326d2a791256f7b5fe6.json"
-    },
-    {
-      "id": "0fcc3f65ef143636eaf40ac2",
-      "title": "人的用途",
-      "summary": "「人」可以做什麼？",
-      "image": null,
-      "publishedAt": "2024-09-20T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/five-ages-of-humanity",
-      "detailPath": "articles/0fcc3f65ef143636eaf40ac2.json"
-    },
-    {
-      "id": "abefc3179af5e0bcfac1c864",
-      "title": "催收案无罪辩护暂时失败了",
-      "summary": "昨晚非常努力的调生物钟。虽然最终还是失败了，但今天早上醒来时的状态依旧比昨天好了一些。调整作息，非一时一力之功，也要像扎根一样，持之以恒。 昨天上午，顶着瞌睡，来回开车二百公里，跑了趟焦作。 会见老孙时，从老孙嘴里得知，法院通知全体取保人员，于当日上午到法院集合。 我敏锐的察觉到，这是法院要下判决了。 其实老孙案子下判决，在节前便已有征兆。 节前最后一天，我正开车，载着老婆和闺女，沿连霍高速一路向西，开往洛阳。 正当夕阳的最后一抹余晖没入地平线，大地即将彻底被黑暗吞噬之际，老孙老婆给我打来电话。 话说的很客气，张嘴先说对不起，放假了还给我打电话。 为啥说律师一定要努力向上突破呢？因为唯有向上，你作为律师的价值才有机会施展。徘徊在底层打转，只能沦为情绪垃圾桶，整日当受气包。 我本来还以为，老孙老婆打电话过来是要…",
-      "image": null,
-      "publishedAt": "2024-09-19T23:17:00Z",
-      "sourceId": "c7356b172af43f7f",
-      "sourceTitle": "刑辩人在路上",
-      "link": "https://xingbianren.cn/post/265.html",
-      "detailPath": "articles/abefc3179af5e0bcfac1c864.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "84f18c261974ae138f0f75d2",
+      "title": "用 NT$220 讓自發電開關接上 Home Assistant：RM4 Pro 錄不到的 433MHz 訊號,和一組完美的假碼",
+      "summary": "作者家裡的吸頂燈是搬進來就有的,用的是一顆來路不明、沒有型號的自發電無線開關。為了讓 Home Assistant 控制它,作者先用 Broadlink RM4 Pro 試了一整個通宵:868MHz 的「學到了」是雜訊、裝置回報的 433.46MHz 是掃頻器閒置時的停駐值、自己寫的工具還少了一整個頻率欄位,最後確認 Broadlink 的射頻學習是只認特定協定的解調器,收不到這種開關。改用 NT$220 的 ESP32-C3 加 CC1101 後,真正的關鍵是 symbol_rate:設錯時錄到的假碼變異係數只有 7.3%,比真碼的 9.4% 還低,讓作者學到「一致」不等於「正確」。文末記錄三週後的後遺症:restore_mode 預設值讓每次重開都切換燈、實體開關隔牆收不到,以及 WiFi 每天斷 17…",
+      "image": null,
+      "publishedAt": "2026-10-03T08:29:30Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/kinetic-switch-cc1101-home-assistant",
+      "detailPath": "articles/84f18c261974ae138f0f75d2.json"
+    },
+    {
       "id": "94e01b19fb4b281e482bf1dd",
       "title": "跟 GP-50 和好了",
       "summary": "三月初買了吉他效果器 GP-50，之後演出都是帶它，我也非常喜歡它，七月的時候，我開始研究它裡面模擬的各種效果器，並寫成文章，但只寫了六篇就停了，明明裡面還有非常多效果器跟音箱可以研究呀。 不繼續研究的原因是：它開始頻繁當機了。 時不時就會突然沒反應，而電源開關是軟體關機，而非實體電路電源，如果當機沒反應的話就只能放到沒電。 另一種情形是，偶爾 Lag 非常嚴重，例如：踩下踩釘會慢幾秒才切換效果，或者有時候踩有反應，有時候又沒反應。 後來官方 Valeton 有發出更新韌體，更新之後神奇的事情發生了： 速度旋鈕直接掛掉，完全沒反應。 這等於 Delay、Modulation 等等與 BPM 相關的效果器都不能用了，不然節拍會有問題。 此時，我開始對 GP-50 徹底失望，畢竟我滿心期待著更新能解決問題，結果問…",
@@ -648,17 +659,6 @@
       "sourceTitle": "月光博客",
       "link": "https://www.williamlong.info/archives/7563.html",
       "detailPath": "articles/00dc5d1eb5acaf5cad25e94c.json"
-    },
-    {
-      "id": "75452b8abbb2af723f7e92a8",
-      "title": "无标题文章",
-      "summary": "AI 潮壞處無數，但好處之一是訓練我們習慣「到處全都是正確答案」的世界。例如，妳可以同時支持以下幾件事：一、A […]",
-      "image": "https://1.gravatar.com/avatar/19d667891f84a17deee970e145cef9ed58b8dd71869b0b97533a8821fb128616?s=96&d=identicon&r=G",
-      "publishedAt": "2026-09-30T00:58:58Z",
-      "sourceId": "e1dfcc8815d1c9f8",
-      "sourceTitle": "IT 公论",
-      "link": "https://blog.yitianshijie.net/2026/09/30/6114/",
-      "detailPath": "articles/75452b8abbb2af723f7e92a8.json"
     }
   ]
 }

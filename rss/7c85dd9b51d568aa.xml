@@ -12,7 +12,7 @@
 	<atom:link href="https://www.cnx-software.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.cnx-software.com/</link>
 	<description>Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC&#039;s, microcontrollers, processors, and more</description>
-	<lastBuildDate>Tue, 20 Oct 2026 02:09:52 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 20 Oct 2026 06:56:55 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,36 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Semtech LR2021 LoRa chip gets the SDR treatment, supports 100 MHz to 2.74 GHz</title>
+		<link>https://www.cnx-software.com/2026/10/20/semtech-lr2021-lora-chip-gets-the-sdr-treatment-supports-100-mhz-to-2-74-ghz/</link>
+					<comments>https://www.cnx-software.com/2026/10/20/semtech-lr2021-lora-chip-gets-the-sdr-treatment-supports-100-mhz-to-2-74-ghz/#respond</comments>
+		
+		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 07:00:17 +0000</pubDate>
+				<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[ble]]></category>
+		<category><![CDATA[firmware]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[LILYGO]]></category>
+		<category><![CDATA[lora]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[reverse engineering]]></category>
+		<category><![CDATA[sdr]]></category>
+		<category><![CDATA[semtech]]></category>
+		<category><![CDATA[wireless]]></category>
+		<guid isPermaLink="false">https://www.cnx-software.com/?p=178463</guid>
+
+					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/Semtech-LR2021-LoRa-transceiver-used-as-an-SDR-for-raw-I-Q-capture-and-signal-analysis-Image-AI-generated-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="Semtech LR2021 LoRa transceiver used as an SDR for raw I Q capture and signal analysis (Image AI generated)" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/Semtech-LR2021-LoRa-transceiver-used-as-an-SDR-for-raw-I-Q-capture-and-signal-analysis-Image-AI-generated-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/Semtech-LR2021-LoRa-transceiver-used-as-an-SDR-for-raw-I-Q-capture-and-signal-analysis-Image-AI-generated-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/Semtech-LR2021-LoRa-transceiver-used-as-an-SDR-for-raw-I-Q-capture-and-signal-analysis-Image-AI-generated-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/Semtech-LR2021-LoRa-transceiver-used-as-an-SDR-for-raw-I-Q-capture-and-signal-analysis-Image-AI-generated.jpg 1200w" sizes="100vw" /></div>
+<p>Earlier this month, we saw how the humble ESP32-S3 could be turned into an SDR transmitter and receiver; then we saw developer h0m3us3r release the w1700k-sdr project, which turns a Gemtek W1700K Wi-Fi 7 router into a wideband SDR receiver. The LR2021-SDR open-source project by Samuel Reynolds (SAMS0N1TE) follows the sample principles and turns the Semtech LR2021 LoRa transceiver into a software-defined radio (SDR) capable of receiving signals from 100 MHz to 2.74 GHz. Using an undocumented command in the chip&#8217;s ROM, this project exposes raw 16-bit I/Q samples, allowing software to decode P25 Phase 1 digital voice, POCSAG pager messages, and analog FM signals without an external SDR dongle. LR2021-SDR firmware features: Supported hardware &#8211; Semtech LR2021 running ROM 1.24; not compatible with the SX1262 variant for raw I/Q access. Receive frequency range &#8211; 100 MHz to 2.74 GHz (experimentally tested), extending beyond the datasheet&#8217;s specified 150–960 MHz and 1.5–2.5 [...]</p>
+<p>The post <a href="https://www.cnx-software.com/2026/10/20/semtech-lr2021-lora-chip-gets-the-sdr-treatment-supports-100-mhz-to-2-74-ghz/">Semtech LR2021 LoRa chip gets the SDR treatment, supports 100 MHz to 2.74 GHz</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cnx-software.com/2026/10/20/semtech-lr2021-lora-chip-gets-the-sdr-treatment-supports-100-mhz-to-2-74-ghz/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Linux 7.3 release &#8211; Main Changes, Arm, RISC-V, and MIPS architectures</title>
 		<link>https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/</link>
 					<comments>https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/#respond</comments>
@@ -90,7 +120,7 @@
 		<category><![CDATA[xiaomi]]></category>
 		<guid isPermaLink="false">https://www.cnx-software.com/?p=178453</guid>
 
-					<description><![CDATA[<div><img width="720" height="450" src="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg" class="attachment-medium size-medium wp-post-image" alt="Linux 7.3" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-1200x750.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-300x188.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-768x480.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3.jpg 1440w" sizes="100vw" /></div>
+					<description><![CDATA[<div><img width="720" height="450" src="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg" class="attachment-medium size-medium wp-post-image" alt="Linux 7.3" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-720x450.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-1200x750.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-300x188.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3-768x480.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/Linux-7.3.jpg 1440w" sizes="100vw" /></div>
 <p>Linus Torvalds announced the release of Linux 7.3 on LKML last Sunday: It&#8217;s Sunday afternoon, and this week I somehow kept my wits together long enough to keep track of the day of the week, so the release isn&#8217;t randomly delayed. Will wonders never cease? Anyway, nothing very special seems to have happened this last week, so as expected the final 7.3 is out, and thus tomorrow the merge window for 7.4 opens. Except I&#8217;m on my annual family vacation, so instead of merging anything first thing in the morning, I&#8217;ll spend most of the day on a boat and under water. I&#8217;ll get back to merging in the afternoon, but I expect my schedule to be a bit unusual for a while. I hope I can still complete the merge window in the usual two weeks, but it may be that I&#8217;ll end up with an extra week of merging [...]</p>
 <p>The post <a href="https://www.cnx-software.com/2026/10/20/linux-7-3-release-main-changes-arm-risc-v-and-mips-architectures/">Linux 7.3 release &#8211; Main Changes, Arm, RISC-V, and MIPS architectures</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
 ]]></description>
@@ -1007,37 +1037,6 @@
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/02/avaota-f2-allwinner-v861-risc-v-sbc-targets-ai-cameras-with-ptz-and-audio-support/feed/</wfw:commentRss>
 			<slash:comments>4</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>ASRock Industrial NUC 300 series &#8211; Intel Core 3 304/Core 5 320 mini PCs and motherboards</title>
-		<link>https://www.cnx-software.com/2026/10/02/asrock-industrial-nuc-300-series-intel-core-3-304-core-5-320-mini-pcs-and-motherboards/</link>
-					<comments>https://www.cnx-software.com/2026/10/02/asrock-industrial-nuc-300-series-intel-core-3-304-core-5-320-mini-pcs-and-motherboards/#respond</comments>
-		
-		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
-		<pubDate>Fri, 02 Oct 2026 00:00:32 +0000</pubDate>
-				<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Intel Core]]></category>
-		<category><![CDATA[Windows 10]]></category>
-		<category><![CDATA[Windows 11]]></category>
-		<category><![CDATA[2.5GbE]]></category>
-		<category><![CDATA[asrock]]></category>
-		<category><![CDATA[industrial]]></category>
-		<category><![CDATA[mini pc]]></category>
-		<category><![CDATA[motherboard]]></category>
-		<category><![CDATA[Single Board Computer]]></category>
-		<category><![CDATA[wifi 6]]></category>
-		<category><![CDATA[wildcat lake]]></category>
-		<guid isPermaLink="false">https://www.cnx-software.com/?p=177853</guid>
-
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/09/ASRock-NUC-320-motherboard-alongside-the-NUC-BOX-320-mini-PC-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="ASRock NUC 320 motherboard alongside the NUC BOX 320 mini PC" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/09/ASRock-NUC-320-motherboard-alongside-the-NUC-BOX-320-mini-PC-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/09/ASRock-NUC-320-motherboard-alongside-the-NUC-BOX-320-mini-PC-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/09/ASRock-NUC-320-motherboard-alongside-the-NUC-BOX-320-mini-PC-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/09/ASRock-NUC-320-motherboard-alongside-the-NUC-BOX-320-mini-PC.jpg 1200w" sizes="100vw" /></div>
-<p>ASRock Industrial has introduced the NUC Core 300 BOX series of mini PCs and the NUC Core 300 motherboards built around Intel Core Series 3 Wildcat Lake-U processors. The lineup includes the NUC BOX-320, with the Intel Core 5 320 SoC, and the NUC BOX-304, which uses the Core 3 304 SoC. The company also offers the NUC-320 and NUC-304 as standalone motherboards for custom systems. The systems support up to 64GB DDR5-6400 with In-Band ECC, dual M.2 PCIe Gen4 storage, dual 2.5GbE, Wi-Fi 6E, Bluetooth 5.3, triple-display output, USB 3.2 connectivity, and 12–24V DC input. These features make them suitable for industrial PCs, edge computing systems, and other embedded applications. ASRock NUC Core 300 series specifications: Wildcat Lake SoC Intel Core 3 304 (NUC BOX-304, NUC-304) 5-core CPU – 1x P-cores @ 1.5/4.3 GHz (Turbo) + 4x LPE-cores @ 1.4/3.3 GHz (Turbo) GPU – 1-core Intel Xe3 Graphics @ [...]</p>
-<p>The post <a href="https://www.cnx-software.com/2026/10/02/asrock-industrial-nuc-300-series-intel-core-3-304-core-5-320-mini-pcs-and-motherboards/">ASRock Industrial NUC 300 series &#8211; Intel Core 3 304/Core 5 320 mini PCs and motherboards</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
-]]></description>
-		
-					<wfw:commentRss>https://www.cnx-software.com/2026/10/02/asrock-industrial-nuc-300-series-intel-core-3-304-core-5-320-mini-pcs-and-motherboards/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

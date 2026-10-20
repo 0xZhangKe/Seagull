@@ -4,10 +4,73 @@
     <link rel="alternate" type="text/html" href="https://blog.codingnow.com/" />
     <link rel="self" type="application/atom+xml" href="https://blog.codingnow.com/atom.xml" />
    <id>tag:blog.codingnow.com,2026://1</id>
-    <updated>2026-10-11T11:31:41Z</updated>
+    <updated>2026-10-20T07:20:42Z</updated>
     <subtitle>思绪来得快去得也快，偶尔会在这里停留</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 3.2b5</generator>
  
+<entry>
+    <title>QWERTY 键盘布局的发展历史</title>
+    <link rel="alternate" type="text/html" href="https://blog.codingnow.com/2026/10/qwerty.html" />
+    <id>tag:blog.codingnow.com,2026://1.1343</id>
+    
+    <published>2026-10-20T07:20:14Z</published>
+    <updated>2026-10-20T07:20:42Z</updated>
+    
+    <summary>在我最初学习键盘打字时，曾今为看似随机的键盘字母排列困惑不已。当时为找到一个字母就需要看半天键盘，我觉得键盘按字母表次序排列不好吗？当时流行的解释是：机械键盘在输入时，一些常用的字母组合的连杆，在快速连续击打时容易卡在一起。所以，现在的 QWERTY 排列“旨在降低打字速度”。这个说法至今广为流传，而我最近读了一篇 Koichi Yasuoka 和 Motoko Yasuoka 写的论文《 On the Prehistory of QWERTY 》，更清晰的描述了 QWERTY 键盘的发展脉络，我觉得可信度更高。 论文分两个部分，第一部分阐述了先进流行的 QWERTY 键盘是怎样演变到今天的布局的，第二部分驳斥了“旨在降低打字速度”的说法。后者源于 1980 年东京大学 Hisao Yamada 教授发表的论文《 A Historical Study of Typewriters and Typing Methods 》。论文中有这么一段话： ： Hence the original keyboard arrangement...</summary>
+    <author>
+        <name>云风</name>
+        <uri>http://www.codingnow.com</uri>
+    </author>
+            <category term="杂记" />
+    
+    <content type="html" xml:lang="en" xml:base="https://blog.codingnow.com/">
+        <![CDATA[<p>在我最初学习键盘打字时，曾今为看似随机的键盘字母排列困惑不已。当时为找到一个字母就需要看半天键盘，我觉得键盘按字母表次序排列不好吗？当时流行的解释是：机械键盘在输入时，一些常用的字母组合的连杆，在快速连续击打时容易卡在一起。所以，现在的 QWERTY 排列“旨在降低打字速度”。这个说法至今广为流传，而我最近读了一篇 Koichi Yasuoka 和 Motoko Yasuoka 写的论文《 On the Prehistory of QWERTY 》，更清晰的描述了 QWERTY 键盘的发展脉络，我觉得可信度更高。</p>
+
+<p>论文分两个部分，第一部分阐述了先进流行的 QWERTY 键盘是怎样演变到今天的布局的，第二部分驳斥了“旨在降低打字速度”的说法。后者源于 1980 年东京大学 Hisao Yamada 教授发表的论文《 A Historical Study of Typewriters and Typing Methods 》。论文中有这么一段话：
+：</p>
+
+<blockquote>
+  <p>Hence the original keyboard arrangement of 1873 was experimentally arrived at by Sholes in part by arranging the typebars for some frequent digrams in the English language at opposite locations across the round basket. At the same time, in the empirical process, the keyboard arrangement was unintentionally made more difficult to type fast on.</p>
+</blockquote>
+
+<p>这段话被一些书和论文（例如 Keyboard Entry—Can It Be Simplified? ）转述时被错误理解为：</p>
+
+<blockquote>
+  <p>Historians of typewriter design agree, the current QWERTY arrangement was arrived at by Sholes and his associates to satisfy mechanical restraints, and was intended to slow down the operator so that type bars would not jam.</p>
+</blockquote>
+]]>
+        <![CDATA[<hr />
+
+<p>我更感兴趣的是 On the Prehistory of QWERTY 中详细记录的 QWERTY 键盘演变史，每次变化都有详实的佐证。</p>
+
+<p>最初的打字机是由 Sholes 和他的同事于 1868 年 11 月在芝加哥发明的。它的第一个客户是芝加哥电报学院的院长，所以打字机很可能是围绕电报码转译为文字的需求展开的。一开始，打字机的确是按字母表排列，长得比较像钢琴键盘：即下面一排白键，上面穿插着一排黑键。上牌凸起的键从左至右为 A 到 N 14 个键，下排从右至左为 O 到 Z 12 个键，双排一共 26 键。这个最初的排列到今天还留有一些历史痕迹：现在的键盘中， Z 在左下角最后一个位置，中间的 FGH JKL 从左至右按字母表次序排列，下排 MN 则是从右至左。</p>
+
+<p>不久以后，键盘被扩展为 38 键：加入了数字键 2-9 ，连接符、逗号、句号、问号。为什么不需要数字 1 和 0 ？因为可以用 I 和 O 代替：这两个字母和数字看起来差不多，放在句子里也不会被误解。因为键位实在太多了，数字键加上连字符（今天，这个键依然在顶行的数字键右边）就被单独安排一行，这样新布局被设计为 4 排， 上两行 9 键，下两行 10 键。</p>
+
+<p>怎样用三排按键排列 26 个字母就是一个新问题。1870 的早期版本中，他们选择把 AEIUO 五个元音字母加上 Y 这个半元音（6 个字母可以对称一侧三个？）以及三个标点一共 9 个键放在第二行，在数字键的下方。句号和问号放在中间，排列为 AEI.?YUO, 一共 9 个键位 。对照今天的布局看，EIOUY 还是在上排，而中间一排的 DFGHJKL 几乎被保留。当时的中排为 B 到 M 10 个按键，下排则是 ZXWVTSRQPN ，为字母表的逆序。</p>
+
+<p>接下来的调整是这样的：T 这个常用字母和 ? 交换，移到了最方便按到的上行中间，W 和 Y 一样是个半元音，也被移到上第一行元音行。Q 由于很不常用，被移到了最不方便按到的左上角，A 则向下移了一行。由于在 1870 年，经常需要输入 1870 或 1871 组合，而 I 又被当作 1 用，所以就安排在了 8 的下方，和 O （当 0 使用）排在一起。</p>
+
+<p>当时的美国采用的是 American Morse Code ，和今天通行的摩尔斯电报码不太相同。American Morse Code 不仅用长短音滴答编码，还需要区分声音之间的间隙长短。在字母之间有一个短间隙、单词之间的间隙长一些，句子之间停顿时间更长。而字母编码中，除了长短音，还有一个略短于字母间隙的快速停顿。我觉得可以近乎理解为一种三进制编码（加入停顿），而不是滴答这种二进制。</p>
+
+<p>Z 的编码为 "... ." ，也就是滴滴滴停滴；E 的编码为 . 即一声滴；S 的编码为 ... ，即三连滴。当单词中有 SE 连续组合时，需要三连滴顿一点加一个滴；而 Z 则是三连滴停顿短促一些加一个滴。两者非常相近，区别只在于停顿时间的细微不同。所以，在记录电报时往往辨别不清需要等后续的信号来判断到底是 SE 组合还是 Z 单字母。这个时候，就不可以轻易按下键盘。S 键换到 C 的位置和上方的 E 以及下方的 Z 之间就很顺手。收到 ... . 时，手指先放在 S 键上但不按下，后续判断清楚，手指连续按下 SE ，或是下移按 Z 都很方便。另外，C 是 ".. ." ，而 I 是 ".." ，C 很容易和 IE 混淆。基于这样的理由，S 取代了 C 的位置，C 则放在了 E 的下方， 而 C 移到了下方。</p>
+
+<p>到了 1872 年，键盘扩展为 42 键位。在当年 8 月的 Scientific American 杂志封面刊登了打字机的图片，可以一窥当时的键位排列。和今天的键盘区别在于：第一行没有数字 1 和 0 。数字键右侧的连字符右边是逗号和单引号。字母第一行为 QWE.TYIUO_ ，和今天已经非常相似，区别在于 R 的位置是 . P 的位置是下划线。标点符号都排列在第一行，第一行太长了，就把下划线下移到 O 的右侧。C 和 S 的位置都按电报习惯调整到了左侧 E 的附近。注意，在这个版本中，左下的三个键位是 ZCX 而不是今天的 ZXC 。左下角放的是 &amp; 符号，这样排列可以让 C 离 S 更近一些。不知为何，R 和 P 被安排在右下角。</p>
+
+<p>但在后续 1873 年的改进版本中，变成了 43 键。随着键位变多，每行的键也随之增加到 11 键。可能是 Sholes 对这种符号和字母混杂在一起的排列不满意，他把原来的 . 和右下的 R 键位做了交换，O 的右侧换成了 P（和字母表的次序相同）。第一排的字母排列为 QWERTUIOPY: 。不久（1873 年），Y 又被调回原来中间的位置，第一行字母键次序和今天完全相同。</p>
+
+<p>打字机的发明人 Christopher Sholes 把专利权卖给了一个枪械制造商 E. Remington &amp; Sons ，在 1874 年 4 月，打字机的商业版本 Serial No. 1 由 Remington 公司发售。使用的就是这种布局，和今天的字母键排列不同点之处有两个：第二排字母键比今天多一个 M ，排在 L 的右侧。第三排左起为 ZCX 而不是今天的 ZXC 。到了 1875 年，有人想出了一个新的机械结构，通过按下一个键，可以让同一个字母键即可以打出大写又可以输出小写。由于一个按键可以输出两种符号，标点符号的数量得以大大增加，同时，原来用于标点的按键数量又可以略微减少。这就导致了标点键的重新排列。1878 年 12 月，更新了新的商业版本 Remington Type-Writer No. 2 ，缩减到了 40 键（因为同一个键可以输出两种符号了）。其中两个按键用于切换状态：右上角的 lower case 按下，按键为小写字母；左下角的 upper case 按下则输出大写字母。字母键的排列则保留为 1874 年 Serial No. 1 的方案。</p>
+
+<p>从 Remington Type-Writer No. 2 开始，打字机的用户群体从电报员逐步转移到速记员，开始有了专门的打字课程。最早教授的是六指输入法，不用小指。btw，我小时候学校教过打字课，使用的机械打字机。按键盘需要很大力气，小指去按非常不舒服。</p>
+
+<p>到了 1882 年，Remington 公司因为美国内战后的军工订单锐减以及多元化投资失败，陷入了严重的财务危机。他们没有精力去经营打字机这个副业。原来做打字机业务的销售和高管就跑出来成立了一家新的商业体叫 Wyckoff, Seamans &amp; Benedict ，想专门卖打字机。但是，打字机的专利还在 Remington 公司手里。新公司只得到了改良专利优先使用权和独家经销权。为此，新公司对老型号做了微调（改良专利）以回避原始专利。新版的 Remington Standard Type-Writer No. 2 把 M 向下移了一行放到 N 的右侧，冒号和分号合并后移到了 L 的右侧。C 和 X 做了交换，变成了现在的 ZXC 排列版本。</p>
+
+<p>当时市场上已经开始出现（侵权）竞品，所以新版本特意标注了 Standard ，而其它竞品不得使用 type-writer 避免被起诉商标侵权。待到 1886 年老 Remington 公司破产，枪械业务则被其他财团收购演变为今天的 Remington Arms 。而在 1892 年，WS&amp;B 正式注资成立了 Remington Standard Typewriter Company 收购了打字机的主要专利。但市场上还有几家生产打字机的公司分别持有部分微创新专利。到了 1893 年，以 Remington 主导联合了四家核心竞争对手，共同出资成立了一家母公司 Union Typewriter Company ，彻底合并共享了各自手中的打字机专利。到了 1898 年，QWERTY 称为了行业标准。</p>
+
+<p>在 1910s 年代，QWERTY 被用于 Teletype (电传打字机) ，到了 1940s ~ 1970s 被广泛用于计算机终端，QWERTY 成为了现代计算机键盘的标准布局方案。早期的 Teletype 按键为 27（26 字母和句号）+ 4 控制键。数字和其它符号则被安排在这些键位上（1 到 0 的数字键放在第一排字母键上）</p>
+]]>
+    </content>
+</entry>
 <entry>
     <title>点老救世记的深度体验</title>
     <link rel="alternate" type="text/html" href="https://blog.codingnow.com/2026/10/dotage.html" />
@@ -1100,137 +1163,6 @@
 <p>再看除法的竖式草稿，其实是一样的。</p>
 
 <p>今天花了一个小时讲这道数学题（她的考卷上的错题），这次似乎真的懂了。</p>
-]]>
-    </content>
-</entry>
-<entry>
-    <title>soluna 外挂 C 模块</title>
-    <link rel="alternate" type="text/html" href="https://blog.codingnow.com/2026/03/soluna_external_lib.html" />
-    <id>tag:blog.codingnow.com,2026://1.1328</id>
-    
-    <published>2026-03-11T06:49:58Z</published>
-    <updated>2026-03-11T10:05:45Z</updated>
-    
-    <summary>soluna 集成了 lua 虚拟机，但默认构建方式是将 lua 库静态链接到唯一的执行文件中。这将导致无法以动态库的形式外挂 Lua 的 C 扩展。 这是因为，如果独立编译 Lua 的 C 扩展库，通常需要链接 Lua 的 C API 。标准的方法是动态链接 lua 实现，如果静态链接 liblua.a ，会导致进程中有多份 lua 的实现。在 Lua 的历史版本中，这将导致运行期错误。 这是因为，Lua 的实现中有一个静态的“空”对象，所有的 nil 都指向这个对象。如果进程空间中有多份 Lua 实现，就会出现多个空对象。运行时的数据结构中会引用这个空对象，而不同副本的实现将“空”和自身保留的“空”对象引用做比较时，就会出现错误的判断。 在更早期的版本，出现这种链接出现的项目，bug 会隐藏得很深。所以后来 Lua 增加了 luaL_checkversion() ，倡议在外部库初始化时调用，除了检查版本号，还会检查当前执行的...</summary>
-    <author>
-        <name>云风</name>
-        <uri>http://www.codingnow.com</uri>
-    </author>
-            <category term="lua与虚拟机" />
-    
-    <content type="html" xml:lang="en" xml:base="https://blog.codingnow.com/">
-        <![CDATA[<p><a href="https://github.com/cloudwu/soluna">soluna</a> 集成了 lua 虚拟机，但默认构建方式是将 lua 库静态链接到唯一的执行文件中。这将导致无法以动态库的形式外挂 Lua 的 C 扩展。</p>
-
-<p>这是因为，如果独立编译 Lua 的 C 扩展库，通常需要链接 Lua 的 C API 。标准的方法是动态链接 lua 实现，如果静态链接 liblua.a ，会导致进程中有多份 lua 的实现。在 Lua 的历史版本中，这将导致运行期错误。</p>
-
-<p>这是因为，Lua 的实现中有一个静态的“空”对象，所有的 nil 都指向这个对象。如果进程空间中有多份 Lua 实现，就会出现多个空对象。运行时的数据结构中会引用这个空对象，而不同副本的实现将“空”和自身保留的“空”对象引用做比较时，就会出现错误的判断。</p>
-
-<p>在更早期的版本，出现这种链接出现的项目，bug 会隐藏得很深。所以后来 Lua 增加了 <code>luaL_checkversion()</code> ，倡议在外部库初始化时调用，除了检查版本号，还会检查当前执行的 lua 实现是否和虚拟机创建时用的实现是同一个副本。</p>
-]]>
-        <![CDATA[<p>但不知道怎样正确链接 lua 的项目（保证进程中只有一份 Lua 实现）还是太多，从 Lua 5.4 以后，这个“空”对象就被移入了 <code>lua_State</code> 这个运行期结构。以牺牲一点运行时的代价，挽救那些似乎永远也搞不懂“加载和链接”的程序员。终于，错误的链接 Lua 也能不出错了。</p>
-
-<p>但我还是认为，在同一进程中置入多份 Lua 实现是不好的。</p>
-
-<p>注：这也是 Windows 动态库的一个独有问题。因为 Windows 的 DLL 不允许有未完成的符号，必须在编译链接时指定所有符号（Lua C API）的来源；如果是 Linux ，可以不链接 Lua C API 的库，在运行时加载动态库，加载器就能把进程内的对应符号装载起来。</p>
-
-<hr />
-
-<p>回到题头的问题：soluna 静态链接了 Lua ，并未导出 C  API ，要用 C 写额外的库怎么办？</p>
-
-<p>曾经在 Ant Engine 中，我采用了一个方法：提供一个假的代理动态库，提供所有 Lua C API 的符号。外部库可以动态链接它，而它将所有 Lua C API 调用转发到 engine 内部链接的 Lua 实现中。</p>
-
-<p>这样做的好处是，即使是预编译好的 Lua C 库，只要它正确的以动态链接形式链接了 Lua ，就能直接被 Ant Engine 加载。如果不需要外部库，这个代理库也可以不发布。</p>
-
-<p>今天，我想给 soluna 加上类似的特性，但尝试了新的方案：外部库在构建时额外实现一个简单的入口函数，它不依赖真的 Lua 实现，而是链接 soluna 项目中的 extlua/extlua.c 这个 Lua API 代理实现。再由 soluna 的定制加载器来加载这个外部库。</p>
-
-<p>比如，我有一个叫做 foobar 的外部库，原本的实现是这样的：</p>
-
-<pre>
-static int
-lhello(lua_State *L) {
-    lua_pushstring(L, "Hello World");
-    return 1;
-}
-
-extern int
-luaopen_foobar(lua_State *L) {
-    luaL_Reg l[] = {
-        { "hello", lhello },
-        { NULL, NULL },
-    };
-    luaL_newlib(L, l);
-    return 1;
-}
-</pre>
-
-<p>当我们编译成动态库时，导出的 <code>luaopen_foobar()</code> 是库的入口。lua 的 require 可以正确的导入它。但这个实现依赖若干 lua C APIs ，例如 <code>lua_pushstring()</code> 等。</p>
-
-<p>如何在 soluna 里正确加载它呢？我们需要在调用 <code>luaopen_foobar()</code> 这个入口函数前，将进程中的 Lua C APIs 注入这个动态库。</p>
-
-<p>在这个方案中，只需要链接 soluna 项目中的 extlua/extlua.c 单个文件，然后导出一个额外的库入口函数：</p>
-
-<pre>
-extern int
-extlua_init(lua_State *L) {
-    luaapi_init(L);
-    luaL_Reg l[] = {
-        { "ext.foobar", luaopen_foobar },
-        { NULL, NULL },
-    };
-    luaL_newlib(L, l);
-    return 1;
-}
-</pre>
-
-<p>这个函数的第一行需要调用 <code>luaapi_init(L)</code> ，它的实现在 extlua.c 中。然后用 <code>luaL_newlib()</code> 注入原有的模块入口函数即可。</p>
-
-<p><code>luaapi_init(L)</code> 并不依赖任何 Lua 的内部实现，只依赖 Lua 的一个官方宏 <code>lua_getextraspace()</code> 完成了注入 Lua C APIs 的魔法。</p>
-
-<p>这是个有趣的技巧：</p>
-
-<p><code>lua_getextraspace(L)</code> 的官方定义是这样的：</p>
-
-<pre>
-#define lua_getextraspace(L)    ((void *)((char *)(L) - LUA_EXTRASPACE))
-</pre>
-
-<p>每个 <code>Lua_State</code> 结构前都保留有一个指针的空间，可以用来传递数据。soluna.external.load 会构建一个空的 Lua 虚拟机，并把所有 Lua C APIs 的引用放在它的 extraspace 。因为上面的 <code>extlua_init()</code> 是一个标准的 <code>lua_CFunction</code> ，所以可以用标准函数 package.loadlib 读出。传入这个带 C APIs 的空 Lua 虚拟机，<code>luaapi_init()</code> 就能正确的导入所有 API 了。随后的 <code>luaL_newlib()</code> 会把所有真正的入口函数放在这个空虚拟机中。当然，只是一些字符串（入口名）和 C 函数指针。</p>
-
-<p>接下来，soluna.external.load 再从这个虚拟机中把整个入口函数表复制到当前虚拟机，并销毁掉这个临时虚拟机，就完成了整个外部模块的动态加载。</p>
-
-<hr />
-
-<p><code>soluna.extlib(name)</code> 的实现是这样的：</p>
-
-<pre>
-function soluna.extlib(name)
-    local extlua = require "soluna.extlua"
-    local filename = assert(package.searchpath(name, package.cpath))
-    settings = settings and soluna.settings()
-    local entry = assert(package.loadlib(filename, settings.extlua_entry))
-    return extlua.load(entry)
-end
-</pre>
-
-<p>要使用上面例子中的放在 sample.dll 中的库 ext.foobar 只需要这样：</p>
-
-<pre>
-local libs = soluna.extlib "sample"
-local foobar = require "ext.foobar"
-assert(libs["ext.foobar"] == foobar)
-</pre>
-
-<hr />
-
-<p>即使要静态链接 sample 模块（iOS 不支持动态库，可能必须静态链接），只需要采用以下编译方案即可正确工作：</p>
-
-<ol>
-<li>静态链接 sample 模块</li>
-<li>不要链接 extlua/extlua.c</li>
-<li>将 <code>luaapi_init()</code> 定义为一个空函数</li>
-<li>把 <code>extlua_init()</code> 这个入口函数导入</li>
-<li>用 soluna.extlua.load(入口函数) 加载</li>
-</ol>
 ]]>
     </content>
 </entry>

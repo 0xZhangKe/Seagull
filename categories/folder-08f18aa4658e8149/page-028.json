@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "bd5943429b493bc4238e1e75",
+      "title": "我做了一个 AI 版的 StarRocks 升级风险扫描工具，直接帮我定位到一个风险",
+      "summary": "背景 最近在搞 StarRocks 的跨版本升级（3.3 → 3.5），中间踩了不少坑。我之前也写过一篇 StarRocks 升级注意事项 记录了手动升级的流程，但那只是针对小版本（3.3.3 → 3.3.9）的升级。 跨大版本升级完全是另一回事——3.3 到 3.5 中间有 6000+ 个 commit，里面藏着各种不兼容变更：配置默认值变了、Session Variable 改了、Protocol 字段删了……人工逐个审查根本不现实，漏一个关键变更就可能导致生产事故。 于是我就想：能不能用 AI 来帮我干这活？经过一段时间的迭代，我用 Claude Code 手搓了一个 StarRocks 升级风险扫描工具（ starrocks-upgrade skill ），这篇文章就来聊聊它的设计原理。 现在升级之前…",
+      "image": "https://cdn.jsdelivr.net/gh/crossoverJie/images@main/images/images20260614235018.png",
+      "publishedAt": "2026-06-14T17:00:00Z",
+      "sourceId": "126e6f369677b760",
+      "sourceTitle": "crossoverJie's Blog",
+      "link": "http://crossoverjie.top/2026/06/14/starrocks/StarRocks-upgrade-skill-principle/",
+      "detailPath": "articles/bd5943429b493bc4238e1e75.json"
+    },
+    {
+      "id": "92edf6a470e65345dc04d172",
+      "title": "无标题文章",
+      "summary": "也够怪的，我每次都得调用极大的意志力才能不感觉自己像个婊子，而那些富豪们每次都全力以赴地—当然他们是无意的，这就是他们的成功之处了—让人感觉自己是个婊子。 — 金色笔记 Jun 15, 2026 他可是个有着大爱的人。我现在想起来了，好多年前我就发现，一个词但凡能用来形容威利，其反义词也总是同样适用。我在以前写的东西里翻了一下，找到了一张单子，上头写着： 威利 铁石心肠 宅心仁厚 冷酷和善 感性现实 一页纸都是此类内容，我在底下写着：“在写下有关威利的这些词语的过程中，我意识到自己对他一无所知。对于你真正了解的人，你是不需要把词语列成清单的。” Jun 15, 2026 要是咱俩不幸是在苏联或者匈牙利或者别的什么地方入党，那我们其中之一极有可能会以处决叛徒的名义打死另一个人。 Jun 15, 2026 14…",
+      "image": null,
+      "publishedAt": "2026-06-14T16:42:25Z",
+      "sourceId": "74bd1a0c7196fd9e",
+      "sourceTitle": "Owen的博客",
+      "link": "https://www.owenyoung.com/4shsu",
+      "detailPath": "articles/92edf6a470e65345dc04d172.json"
+    },
+    {
       "id": "efdff9a71aec764525f61602",
       "title": "香料香料",
       "summary": "看了臺灣 YouTube 頻道「好味小姐腦波弱」上傳的 最新影片 ，是以介紹一些「特殊粽子」作爲主題。影片的最後竟然介紹了來自馬來西亞的娘惹粽，突然覺得不「特殊」起來了，反而給我滿滿的親切感 XD。 影片中的「剪輯師（阿斷）」在介紹那個娘惹粽時，提到了製作該粽子使用的馬來西亞傳統香料，而他將該香料稱爲「閏巴香料」，這不禁令我噗哧地笑了一下。 截圖取自影片 19 分 00 秒處。 「閏巴」其實對應馬來文原名的 rempah 一詞，而 rempah 所對應的中文字詞是什麼呢？就是「香料」二字本身啊！ 換句話說，「閏巴香料」若直譯成中文的話，就會變成「香料香料」了 XDD。 對了，阿斷在影片中也有提到該香料是「用蝦米加各種香料炒出來的」。我合理懷疑，那個「蝦米」可不是普通的「炒蝦米」這麼簡單，而是另一個在馬來西亞以…",
@@ -333,7 +355,7 @@
     {
       "id": "27c9f565fa15321d05db0a8e",
       "title": "服务器高性能网络调优",
-      "summary": "这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 […] Continue reading...",
+      "summary": "这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 […] Continue reading... 相关文章: 数据中心网络高可用技术之从服务器到网关：首跳冗余协议 VRRP",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/06/ingress-tcp-1024x660.png",
       "publishedAt": "2026-06-10T11:52:00Z",
       "sourceId": "f6786af950754079",
@@ -637,28 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/thinking-learning-danger/",
       "detailPath": "articles/6e8614868262a698642a397b.json"
-    },
-    {
-      "id": "49a4226794b55bbd7518857f",
-      "title": "有良心的科技",
-      "summary": "一個好的醫生，最後自己會面臨失業，因為他把大家都治好了。",
-      "image": null,
-      "publishedAt": "2026-06-06T00:01:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/ethical-tech",
-      "detailPath": "articles/49a4226794b55bbd7518857f.json"
-    },
-    {
-      "id": "55fa8ff86c88a226b5c89985",
-      "title": "僞·老司機",
-      "summary": "這只是一篇我跟我母親抱怨我父親的固執，就是個家庭日常。 有天我跟父親出門，父親是駕駛，路上他就會變成一個活歷史，說著路上每一條路什麼時候開通的，可以通往哪裡，哪一年在哪裡立了一根測速照相，哪個公園以前是池塘，對路況似乎真的很熟。 該下交流道卻沒下，於是我打開導航開始引導。在該轉彎的時候我提醒要轉彎，結果父親說不是，所以就不轉彎。 我會開導航，就是因爲錯誤已經發生，你讓我沒辦法信任你，但駕駛人卻依然故我。 「隨便你。」我超無奈地回我爸。 後來到了我爸認爲正確的那條路，結果他又忘記轉彎，我無言以對。 事後與母親講這件事情，母親說：「上次我們去你那裡的回程，明明半小時左右的路程，導航就寫要彎，結果又直走，最後一個小時多才到家。」 父親的年紀也大了，我母親似乎已經用了大半輩子跟他吵這件事情，我想這也不是我說什麼，父親…",
-      "image": null,
-      "publishedAt": "2026-06-05T10:25:31Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/fake-experienced-drivers/",
-      "detailPath": "articles/55fa8ff86c88a226b5c89985.json"
     }
   ]
 }

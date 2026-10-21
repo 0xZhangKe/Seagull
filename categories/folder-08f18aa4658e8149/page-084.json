@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "ea142f3bea44cde2d18de0be",
+      "title": "一鼓作气，二鼓泄气",
+      "summary": "晚上回家之后便直接换好衣服，准备出门开始今天的夜跑，尽管室外的温度略低，风也呼呼作响。 七点左右到达河边，先热身几分钟，发现跑步的人寥寥无几，有的也只是散步的零星几人。周末钓鱼那会明明能看到一堆人跑步，我还以为大家都已经开始运动了，那我也不能落下。现在看来，怎么有种上当的感觉。 由于风比较大，不想出太多汗，中途便停下来走了一会。结果再继续的时候，感觉比之前要累多了，我是真服了，这还不如不休息呢。 想到一句古话，一鼓作气，再而衰，三而竭，古人真是诚不欺我。",
+      "image": null,
+      "publishedAt": "2024-04-01T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/persist-while-running",
+      "detailPath": "articles/ea142f3bea44cde2d18de0be.json"
+    },
+    {
+      "id": "4c4d6ac430fd779bc9fbb61c",
+      "title": "「小工具」乱码恢复工具",
+      "summary": "工具介绍 在日常工作中，我经常会遇到一些乱码问题，比如文件编码不一致、文件编码错误等。这时候我就需要一个乱码恢复工具来帮助我解决这些问题。自己琢磨了一会儿，写了一个小工具，可以帮助我快速恢复一些字符串乱码。 引起这个问题的主要原因就是解码目标编码和实际编码不一致，导致乱码。这个工具可以帮助你快速恢复这些乱码问题。 技术栈 本来想用 Python 来写这个小工具，但是考虑到 Python 的环境配置比较麻烦，所以最后选择了 JavaScript 来实现这个小工具，我的目标是随处可以运行，无需任何环境配置。 于是就想到了类似于 Electron 之类的跨平台方案，但是一个小工具 100 多 M 的体积实在是太大了，所以最后选择了 Tauri 来打包。 开源地址 这个小工具已经开源，你可以在 GitHub 上找到并…",
+      "image": "https://cdn.taurusxin.com/hugo/2024/04/04/text-recover.png",
+      "publishedAt": "2024-04-01T05:26:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/text-recover-tool/",
+      "detailPath": "articles/4c4d6ac430fd779bc9fbb61c.json"
+    },
+    {
       "id": "8b4a21e1fe13c7e382e87f66",
       "title": "Q1 2024 Expenses | 2024年第一季度消费总结",
       "summary": "The Met Cloisters. March 2024 春天 周迅 （看到ig图片加音乐突发奇想在博客里插入音乐，这很千禧年） 每个月末都想着等银行交易都自动录入YNAB后再写，然后第一季度每个月都好忙没有时间回顾月度消费，所以干脆就等到Q3，冒着understate三月消费金额的风险先下手为强，毕竟稍有差错也无妨，家庭账户又不是要被审计：）Done is better than perfect! 看支出的时候还是无法相信2024年的第一季度已经过完了，得翻看手机相册和消费类别的蛛丝马迹才能想起具体经历了什么。 今年一月是我第一次得COVID，怀疑前几年在中西部一直没中招完全得益于和陌生人接触不多。即便疫情末尾看演唱会前也很小心地提前打了加强针。从未中招令我谜之自信以为自己有什么特殊免疫力，连医院建议的加…",
@@ -637,28 +659,6 @@
       "sourceTitle": "第三夏尔 | Third Shire",
       "link": "https://thirdshire.com/january-recap-2024/",
       "detailPath": "articles/37c49048cfd8aa7d36f29d62.json"
-    },
-    {
-      "id": "ee74eabd48240bbc5f683ec4",
-      "title": "Passkey在Android端的应用实践",
-      "summary": "Passkey，中文名通行密钥，他是WebAuthn的一部分，由FIDO联盟开发，可以做到让用户不使用用户名和密码，来直接验证身份。在2022年的WWDC上，Apple正式宣布了对Passkey的支持，当前10月份，google也宣布了对于passkey的支持。目前已经有一些应用支持了passkey，包括谷歌，微软，github，whatsapp等。最近在我们的Android应用上集成Passkey踩了很多的坑，简单记录一下。 Passkey原理简介 简单来说，Passkey就是通过密钥对验证替代密码验证，原理和SSL/TLS验证类似，密钥对即公钥和私钥。用户的设备上存储的是私钥，创建的时候会将公钥发送到服务器端进行存储。验证的时候，服务端发送一段通过公钥加密的options信息，设备端使用私钥解密后回传给服…",
-      "image": "https://isming.me/images/what-is-fido-fingerprint-authenticator.svg",
-      "publishedAt": "2024-01-17T15:02:30Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-01-17-android-passkey/?utm_source=rss",
-      "detailPath": "articles/ee74eabd48240bbc5f683ec4.json"
-    },
-    {
-      "id": "97f7152e2193adb784e13ff8",
-      "title": "二零二四 | 来说说钩针",
-      "summary": "说来有些狂妄自大，我打小便觉得自己是个天赋秉异的小孩，和旁人都不太相同，学什么都很快，做什么都能做到很好。 小 […] The post 二零二四 | 来说说钩针 appeared first on * songs about turquoise * .",
-      "image": "https://turquoise.one/wp-content/uploads/2024/01/IMG_9495-225x300.webp",
-      "publishedAt": "2024-01-17T01:18:39Z",
-      "sourceId": "1989b48a17ab83c5",
-      "sourceTitle": "songs about turquoise",
-      "link": "https://turquoise.one/2024-jan-about-crochet/",
-      "detailPath": "articles/97f7152e2193adb784e13ff8.json"
     }
   ]
 }

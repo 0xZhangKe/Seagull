@@ -14,7 +14,7 @@
     {
       "id": "2e867f29ac0028eaece18780",
       "title": "一次内存引起的网络丢包问题排查",
-      "summary": "记录一下最近排查的一个问题：某台机器一上线就有丢包，同 Rack 同规格的其他机器都没有问题，由于负载都是一样 […] Continue reading...",
+      "summary": "记录一下最近排查的一个问题：某台机器一上线就有丢包，同 Rack 同规格的其他机器都没有问题，由于负载都是一样 […] Continue reading... 相关文章: 数据中心网络高可用技术：ECMP 数据中心网络高可用技术之从交换机到交换机：MLAG, 堆叠技术 数据中心网络高可用技术之从服务器到交换机：active-backup Google 的十年五代网络架构 网络中的环路和防环技术",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/09/image-1024x304.png",
       "publishedAt": "2026-09-24T06:09:24Z",
       "sourceId": "f6786af950754079",
@@ -25,7 +25,7 @@
     {
       "id": "fb3e0254cafa6b5fe596f27a",
       "title": "BPG 连接建立失败问题的答案和解析",
-      "summary": "本文是 BPG 连接建立失败问题 一文的答案和解析。 抓包文件中有两处可疑的地方。 第一处是 BGP OPEN […] Continue reading...",
+      "summary": "本文是 BPG 连接建立失败问题 一文的答案和解析。 抓包文件中有两处可疑的地方。 第一处是 BGP OPEN […] Continue reading... 相关文章: 重新认识 TCP 的握手和挥手：答案和解析 BGP 连接建立失败问题 Tcpdump 从 TCP_option_address 中根据真实 IP 过滤 四层负载均衡分析：GitHub GLB 一次内存引起的网络丢包问题排查",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/09/bgp_open-1024x123.jpg",
       "publishedAt": "2026-09-09T08:39:35Z",
       "sourceId": "f6786af950754079",
@@ -36,7 +36,7 @@
     {
       "id": "78a670fe83e4cc02a462a239",
       "title": "BGP 连接建立失败问题",
-      "summary": "好久没有更新「抓包破案」系列了，最近遇到的一个 case 适合拿出来考一考读者，需要一点点的 BGP 前置知识 […] Continue reading...",
+      "summary": "好久没有更新「抓包破案」系列了，最近遇到的一个 case 适合拿出来考一考读者，需要一点点的 BGP 前置知识 […] Continue reading... 相关文章: BPG 连接建立失败问题的答案和解析 网络问题排查的思路和技巧 Ingress 流量整形 LRO/GRO 对于网络吞吐的影响",
       "image": "https://www.kawabangga.com/wp-content/uploads/2024/05/index-background-1024x576.png",
       "publishedAt": "2026-09-06T07:01:09Z",
       "sourceId": "f6786af950754079",
@@ -47,7 +47,7 @@
     {
       "id": "a8da724514dbb6efc4420343",
       "title": "Ingress 流量整形",
-      "summary": "问题是这样，我们有 2 组服务器，A 组和 B 组，一部分用户从 A 组下载文件，一部分从 B 组下载文件。分 […] Continue reading...",
+      "summary": "问题是这样，我们有 2 组服务器，A 组和 B 组，一部分用户从 A 组下载文件，一部分从 B 组下载文件。分 […] Continue reading... 相关文章: 由一个子网掩码配置错误所想到的 一次内存引起的网络丢包问题排查 网络中的环路和防环技术 服务器高性能网络调优 Traceroute the World",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/08/ifb-ingress-case.jpg",
       "publishedAt": "2026-08-25T15:03:00Z",
       "sourceId": "f6786af950754079",
@@ -58,7 +58,7 @@
     {
       "id": "9e7f5a6ccaf39624667238f4",
       "title": "Traceroute the World",
-      "summary": "ICMP 一直是我最喜欢的协议，在没有机器/设备的登录权限的时候，ICMP (ping) 可以让我在 debu […] Continue reading...",
+      "summary": "ICMP 一直是我最喜欢的协议，在没有机器/设备的登录权限的时候，ICMP (ping) 可以让我在 debu […] Continue reading... 相关文章: 如何把网络设备从 traceroute 中隐藏 探测 TCP 乱序问题 使用 mtr 检查网络问题，以及注意事项 数据是如何转发的 由 ICMP Redirect 消息引起的丢包问题排查",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/05/singapore-flight-1024x659.png",
       "publishedAt": "2026-08-19T14:27:00Z",
       "sourceId": "f6786af950754079",
@@ -102,7 +102,7 @@
     {
       "id": "27c9f565fa15321d05db0a8e",
       "title": "服务器高性能网络调优",
-      "summary": "这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 […] Continue reading...",
+      "summary": "这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 […] Continue reading... 相关文章: 数据中心网络高可用技术之从服务器到网关：首跳冗余协议 VRRP",
       "image": "https://www.kawabangga.com/wp-content/uploads/2026/06/ingress-tcp-1024x660.png",
       "publishedAt": "2026-06-10T11:52:00Z",
       "sourceId": "f6786af950754079",

@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "id": "3876f53a84987eeaf411055b",
-      "title": "Elf Assembly JIT",
-      "summary": "A Very Merry Compiler",
-      "image": null,
-      "publishedAt": "2018-12-23T00:00:00Z",
-      "sourceId": "dde6ec5e46ed3792",
-      "sourceTitle": "Matt Keeter",
-      "link": "https://mattkeeter.com/projects/elfjit",
-      "detailPath": "articles/3876f53a84987eeaf411055b.json"
-    },
-    {
       "id": "8114bcc019200b58e15a1b08",
       "title": "R8 Optimization: Null Data Flow Analysis (Part 1)",
       "summary": "Note: This post is part of a series on D8 and R8, Android's new dexer and optimizer, respectively. For an intro to D8 read \"Android's Java 8 support\" . For an intro to R8 read \"R8 Optimization: Staticization\" . The last post in this series was the first to cover R8 and one of its optimizations. This post will cover an optimization which performs data flow a…",
@@ -276,17 +265,6 @@
       "detailPath": "articles/23864f9303dcfa01e8f80c82.json"
     },
     {
-      "id": "0b5ccd28a955f28bce0a35a6",
-      "title": "JUnit 5 Basics: @Test, Lifecycle, Assertions, Assumptions, And More",
-      "summary": "The Basics of JUnit 5: How to use @Test , @BeforeAll , @BeforeEach , @AfterEach , @AfterAll , assertions, and assumptions. How to disable, name, and tag tests.",
-      "image": "https://nipafx.dev/static/d3468dac78a2b7cbe62fd4db7b035a3b/65364/junit-5-basics-named-test.png",
-      "publishedAt": "2018-08-05T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-basics",
-      "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
-    },
-    {
       "id": "9d8a54f5cf68602d9fe9d721",
       "title": "JUnit 5 Conditions: @Enabled, @Disabled, Customized",
       "summary": "A detailed look at JUnit 5's @Disabled , @DisabledOnOs , @DisabledOnJre , etc. and how to create custom conditions to flexibly disable test methods.",
@@ -296,17 +274,6 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-disabled-conditions",
       "detailPath": "articles/9d8a54f5cf68602d9fe9d721.json"
-    },
-    {
-      "id": "5d2aaa043fb6eb82cbbad974",
-      "title": "JUnit 5 - Dynamic Tests",
-      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
-      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
-      "publishedAt": "2018-08-05T00:00:00Z",
-      "sourceId": "c31f4842c93c4e8e",
-      "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-dynamic-tests",
-      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "ea79060bf464ac6ad4ef5658",
@@ -320,15 +287,15 @@
       "detailPath": "articles/ea79060bf464ac6ad4ef5658.json"
     },
     {
-      "id": "29e1102fd3d711226fce1f9a",
-      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
-      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
-      "image": null,
+      "id": "5d2aaa043fb6eb82cbbad974",
+      "title": "JUnit 5 - Dynamic Tests",
+      "summary": "With JUnit 5's dynamic tests, we can create tests at run time, for example to parameterize tests, create hierarchical test plans, or define tests with lambdas.",
+      "image": "https://nipafx.dev/static/a732ad3ddc55e725a68ee13487beb8db/0d43d/junit-5-dynamic-point-tests-output.png",
       "publishedAt": "2018-08-05T00:00:00Z",
       "sourceId": "c31f4842c93c4e8e",
       "sourceTitle": "nipafx",
-      "link": "https://nipafx.dev/junit-5-setup",
-      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
+      "link": "https://nipafx.dev/junit-5-dynamic-tests",
+      "detailPath": "articles/5d2aaa043fb6eb82cbbad974.json"
     },
     {
       "id": "3aff464cf50baab88d3a9bcc",
@@ -340,6 +307,28 @@
       "sourceTitle": "nipafx",
       "link": "https://nipafx.dev/junit-5-parameterized-tests",
       "detailPath": "articles/3aff464cf50baab88d3a9bcc.json"
+    },
+    {
+      "id": "29e1102fd3d711226fce1f9a",
+      "title": "JUnit 5 Setup in IntelliJ, Eclipse, Maven, and Gradle",
+      "summary": "How to set up JUnit 5 so tests run in IntelliJ, Eclipse, Maven, Gradle or, if all else fails, via JUnit 4 or on the command line.",
+      "image": null,
+      "publishedAt": "2018-08-05T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/junit-5-setup",
+      "detailPath": "articles/29e1102fd3d711226fce1f9a.json"
+    },
+    {
+      "id": "0b5ccd28a955f28bce0a35a6",
+      "title": "JUnit 5 Basics: @Test, Lifecycle, Assertions, Assumptions, And More",
+      "summary": "The Basics of JUnit 5: How to use @Test , @BeforeAll , @BeforeEach , @AfterEach , @AfterAll , assertions, and assumptions. How to disable, name, and tag tests.",
+      "image": "https://nipafx.dev/static/d3468dac78a2b7cbe62fd4db7b035a3b/65364/junit-5-basics-named-test.png",
+      "publishedAt": "2018-08-05T00:00:00Z",
+      "sourceId": "c31f4842c93c4e8e",
+      "sourceTitle": "nipafx",
+      "link": "https://nipafx.dev/junit-5-basics",
+      "detailPath": "articles/0b5ccd28a955f28bce0a35a6.json"
     },
     {
       "id": "5b839dc289383a0308ca75ad",
@@ -417,6 +406,17 @@
       "sourceTitle": "Weishu's Notes",
       "link": "http://weishu.me/2018/06/07/free-reflection-above-android-p/",
       "detailPath": "articles/6b7a0dbef90bb4b2f4e0ce5b.json"
+    },
+    {
+      "id": "0e8b46506ecaf98b3ac94064",
+      "title": "推荐 3 个简历模板及 2 大加分技巧",
+      "summary": "在 2018 互联网人员简历如何脱颖而出 中”十不要”第一条就是 1. 不要用任何招聘网站的模板、不要 Word 版 今天先推荐三个简历模板，然后介绍两个提高简历质量的技巧。 一、推荐简历模板 第三和第一很像，具体看完本文大家会了解他对哪些朋友更适用。 以上模板 Word、PDF、Markdown 版均可从 https://github.com/Trinea/trinea-download/tree/master/resume 下载。 另外感谢 @JoshuaRogue 提供了这两个简历模板的 Markdown 版本，MD 粉可以试试。 二、简历技巧 在 2018 互联网人员简历如何脱颖而出 提到简历需要 1. 明确的内容模块划分且每个模块内容精炼 2. 重点突出工作经历及项目经验 这里展开介绍些相关技巧。…",
+      "image": null,
+      "publishedAt": "2018-03-28T14:47:54Z",
+      "sourceId": "a5494e7129126561",
+      "sourceTitle": "Author of Dev Tools, Focus on Android, Java, Open Source, Performance Optimization",
+      "link": "https://www.trinea.cn/jobs/%e6%8e%a8%e8%8d%90-3-%e4%b8%aa%e7%ae%80%e5%8e%86%e6%a8%a1%e6%9d%bf%e5%8f%8a-2-%e5%a4%a7%e5%8a%a0%e5%88%86%e6%8a%80%e5%b7%a7/",
+      "detailPath": "articles/0e8b46506ecaf98b3ac94064.json"
     },
     {
       "id": "6baa64f333767cb6d389a872",

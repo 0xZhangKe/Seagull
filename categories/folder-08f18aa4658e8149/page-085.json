@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "ee74eabd48240bbc5f683ec4",
+      "title": "Passkey在Android端的应用实践",
+      "summary": "Passkey，中文名通行密钥，他是WebAuthn的一部分，由FIDO联盟开发，可以做到让用户不使用用户名和密码，来直接验证身份。在2022年的WWDC上，Apple正式宣布了对Passkey的支持，当前10月份，google也宣布了对于passkey的支持。目前已经有一些应用支持了passkey，包括谷歌，微软，github，whatsapp等。最近在我们的Android应用上集成Passkey踩了很多的坑，简单记录一下。 Passkey原理简介 简单来说，Passkey就是通过密钥对验证替代密码验证，原理和SSL/TLS验证类似，密钥对即公钥和私钥。用户的设备上存储的是私钥，创建的时候会将公钥发送到服务器端进行存储。验证的时候，服务端发送一段通过公钥加密的options信息，设备端使用私钥解密后回传给服…",
+      "image": "https://isming.me/images/what-is-fido-fingerprint-authenticator.svg",
+      "publishedAt": "2024-01-17T15:02:30Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-01-17-android-passkey/?utm_source=rss",
+      "detailPath": "articles/ee74eabd48240bbc5f683ec4.json"
+    },
+    {
+      "id": "97f7152e2193adb784e13ff8",
+      "title": "二零二四 | 来说说钩针",
+      "summary": "说来有些狂妄自大，我打小便觉得自己是个天赋秉异的小孩，和旁人都不太相同，学什么都很快，做什么都能做到很好。 小 […] The post 二零二四 | 来说说钩针 appeared first on * songs about turquoise * .",
+      "image": "https://turquoise.one/wp-content/uploads/2024/01/IMG_9495-225x300.webp",
+      "publishedAt": "2024-01-17T01:18:39Z",
+      "sourceId": "1989b48a17ab83c5",
+      "sourceTitle": "songs about turquoise",
+      "link": "https://turquoise.one/2024-jan-about-crochet/",
+      "detailPath": "articles/97f7152e2193adb784e13ff8.json"
+    },
+    {
       "id": "e1873c123e20ffa2dc7f3a0c",
       "title": "最近读什么 | 2023.11-2024.1",
       "summary": "已读 – READ 射雕英雄传 （作者：[香港] 金庸） 如果说《射雕》前40%是很好看，那从4 […] The post 最近读什么 | 2023.11-2024.1 appeared first on * songs about turquoise * .",
@@ -637,28 +659,6 @@
       "sourceTitle": "一笼虾饺有四个",
       "link": "https://fourxiajiao.github.io/2023/toto-end/",
       "detailPath": "articles/4fe9ffdd5143215b3402c469.json"
-    },
-    {
-      "id": "f31318a6a660f05ec74cffb3",
-      "title": "How to Install a Specific Version of Hugo on macOS",
-      "summary": "To demo how to build a blog for beginners, I created a new user on my macOS and reinstalled Hugo in the new environment.",
-      "image": null,
-      "publishedAt": "2023-11-04T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/install-specific-hugo-version/",
-      "detailPath": "articles/f31318a6a660f05ec74cffb3.json"
-    },
-    {
-      "id": "1766d6133ed12bfd9c2671cc",
-      "title": "A Beginner-Friendly Tutorial for Building a Blog with Hugo, the Blowfish Theme, and GitHub Pages",
-      "summary": "Everyone deserves to own a blog. I’m here to help.",
-      "image": null,
-      "publishedAt": "2023-11-03T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/how-to-create-a-blog/",
-      "detailPath": "articles/1766d6133ed12bfd9c2671cc.json"
     }
   ]
 }

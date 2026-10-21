@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-20T19:34:19+00:00</updated><author><name>Simon Willison</name></author><entry><title>Battle Drones - a vibe coded RTS with audio-based multiplayer</title><link href="https://simonwillison.net/2026/Oct/20/battledrones/" rel="alternate"/><published>2026-10-20T19:34:19+00:00</published><updated>2026-10-20T19:34:19+00:00</updated><id>https://simonwillison.net/2026/Oct/20/battledrones/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-20T23:50:25+00:00</updated><author><name>Simon Willison</name></author><entry><title>eMudhra Intermediate CA Compromise</title><link href="https://simonwillison.net/2026/Oct/20/emudhra-certificates/" rel="alternate"/><published>2026-10-20T23:50:25+00:00</published><updated>2026-10-20T23:50:25+00:00</updated><id>https://simonwillison.net/2026/Oct/20/emudhra-certificates/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://emudhra.we-have-a-problem.com"&gt;eMudhra Intermediate CA Compromise&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+This is very, very bad news:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The private keys of eight eMudhra intermediate CA certificates have been compromised. They chain to roots trusted by the Mozilla, Microsoft, Apple and Chrome root programs and by many downstream trust stores.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Any software that bundles a list of trusted certificates needs to be updated. This site is tracking software updates &lt;a href="https://github.com/galadran/we-have-a-problem.com"&gt;via this GitHub repository&lt;/a&gt; - Linux distros need to update their &lt;code&gt;ca-certificates&lt;/code&gt; packages.&lt;/p&gt;
+&lt;p&gt;In Python world &lt;a href="https://github.com/astral-sh/uv/releases/tag/0.13.4"&gt;uv 0.13.4&lt;/a&gt; and &lt;a href="https://github.com/pypa/pip/releases/tag/26.2.2"&gt;pip 26.2.2&lt;/a&gt; and &lt;a href="https://github.com/certifi/python-certifi/releases/tag/2026.10.19"&gt;certifi 2026.10.19&lt;/a&gt; have been released with upgraded certificate lists.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/encryption"&gt;encryption&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/https"&gt;https&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pip"&gt;pip&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/uv"&gt;uv&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="encryption"/><category term="https"/><category term="pip"/><category term="python"/><category term="security"/><category term="uv"/></entry><entry><title>Battle Drones - a vibe coded RTS with audio-based multiplayer</title><link href="https://simonwillison.net/2026/Oct/20/battledrones/" rel="alternate"/><published>2026-10-20T19:34:19+00:00</published><updated>2026-10-20T19:34:19+00:00</updated><id>https://simonwillison.net/2026/Oct/20/battledrones/</id><summary type="html">
     &lt;p&gt;My latest vibe coded game experiment is a Command &amp;amp; Conquer style RTS (Real Time Strategy) game called &lt;a href="https://github.com/simonw/battledrones#readme"&gt;Battle Drones&lt;/a&gt; (&lt;a href="https://simonw.github.io/battledrones/"&gt;play it here&lt;/a&gt;). Unlike &lt;a href="https://simonwillison.net/2026/Aug/5/raccoon-heist/"&gt;my previous experiments&lt;/a&gt;, this one is &lt;em&gt;actually fun to play&lt;/em&gt;. I'm somewhat embarrassed to admit that I got there by telling Claude to "Make it a LOT more fun". It also supports multiplayer between nearby devices using audio to synchronize game state! Here's what I've built so far, and some of the things I learned along the way.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -16,11 +31,12 @@
   &lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/#v11-random-maps"&gt;v11: Random Maps&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/#v12-multiplayer-via-sound"&gt;v12: Multiplayer via sound&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/#some-thoughts"&gt;Some thoughts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/#update-online-multiplayer-support"&gt;Update: Online multiplayer support&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id="battle-drones"&gt;Battle Drones&lt;/h4&gt;
 &lt;p&gt;My initial goal was to build an RTS game I could play on my phone, in the style of &lt;a href="https://en.wikipedia.org/wiki/Command_&amp;amp;_Conquer_(1995_video_game)"&gt;Command &amp;amp; Conquer&lt;/a&gt;. I have fond memories of the 1995 original (I liked Red Alert too) and wanted to recapture a little bit of the magic.&lt;/p&gt;
-&lt;p&gt;After 12 major iterations (and &lt;a href="https://github.com/simonw/battledrones/commits/main/"&gt;321 commits&lt;/a&gt; by coding agents, mainly Claude Code) I now have a browser-based game that works on mobile and desktop, has multiple play modes, several maps (including a random map generator) and even supports multiplayer for two devices within microphone range of each other.&lt;/p&gt;
+&lt;p&gt;After 12 major iterations (and &lt;a href="https://github.com/simonw/battledrones/commits/main/"&gt;321 commits&lt;/a&gt; by coding agents, mainly Claude Code) I now have a browser-based game that works on mobile and desktop, has multiple play modes, several maps (including a random map generator) and even supports multiplayer for two devices within microphone range of each other. (&lt;strong&gt;Update&lt;/strong&gt;: also &lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/#update-online-multiplayer-support"&gt;online multiplayer&lt;/a&gt;; the audio multiplayer induced headaches!)&lt;/p&gt;
 &lt;p&gt;Here's a video demo of Battle Drones running in a desktop browser:&lt;/p&gt;
 
 &lt;video
@@ -243,6 +259,24 @@
 &lt;li&gt;Claude Code "Ultracode" burns tokens like there's no tomorrow, but it can also solve complex problems (like adding audio-based multiplayer) from a single prompt.&lt;/li&gt;
 &lt;li&gt;I'm still not quite over the &lt;em&gt;guilt&lt;/em&gt; of building software in this way. I don't feel like I've earned the right to create something this good, in a field in which I have so little prior experience! At this point I've shown it to enough people in private that it felt wrong not to publish it for everyone else to see and learn from.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id="update-online-multiplayer-support"&gt;Update: Online multiplayer support&lt;/h4&gt;
+&lt;p&gt;Earlier in this article I said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Games are also super low stakes. The worst that can happen is one of my silly game experiments suffers a bug.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then I tried playing the multiplayer version with Natalie... and the high pitched modem sounds gave her a nasty headache!&lt;/p&gt;
+&lt;p&gt;That's a pretty bad bug. I &lt;a href="https://github.com/simonw/battledrones/pull/36"&gt;added a warning&lt;/a&gt; and was then inspired to build proper network multiplayer. I tried &lt;a href="https://github.com/simonw/battledrones/pull/37"&gt;getting WebRTC to work&lt;/a&gt; but couldn't get a connection going between two of my own devices even on my own WiFi network, so &lt;a href="https://github.com/simonw/battledrones/pull/38"&gt;I had Claude build&lt;/a&gt; a simple, stateless WebSockets relay server instead:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;If I wanted to support multiplayer between two devices at a very low cost without storing any state on the server could I do that with a tiny asyncio web server running on the cheapest Fly instance?&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Build the server and the fly.toml for deploying it, use Fly application name battledrones-relay - put that in a folder in the repo, include deploy instructions in the README in that folder&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here's &lt;a href="https://github.com/simonw/battledrones/tree/v13/relay"&gt;the resulting server&lt;/a&gt;. Since this scales to zero and runs on a single &lt;a href="https://fly.io/"&gt;Fly.io&lt;/a&gt; &lt;code&gt;shared-cpu-1x&lt;/code&gt; instance it should cost me no more than $2.19/month - and that's if it stays hot and serving connections the whole time.&lt;/p&gt;
+&lt;p&gt;Battle Drones now supports online multiplayer. Click "Duel a friend online", then either share the resulting room URL via your messaging app of choice or have them snap a picture of the displayed QR Code.&lt;/p&gt;
+&lt;p&gt;I also added a feature where you can copy JSON of the match once it has ended and then feed that into the replay feature to rewatch your game.&lt;/p&gt;
+&lt;p&gt;I didn't expect to introduce online multiplayer this soon, but the headache bug felt like it warranted an urgent alternative.&lt;/p&gt;
     
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-code"&gt;claude-code&lt;/a&gt;&lt;/p&gt;
     
@@ -777,17 +811,4 @@ The Deno team released the first version of &lt;a href="https://github.com/denol
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tokenization"&gt;tokenization&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="projects"/><category term="ai"/><category term="openai"/><category term="generative-ai"/><category term="llms"/><category term="tokenization"/></entry><entry><title>Quoting Carson Gross</title><link href="https://simonwillison.net/2026/Oct/8/carson-gross/" rel="alternate"/><published>2026-10-08T21:05:44+00:00</published><updated>2026-10-08T21:05:44+00:00</updated><id>https://simonwillison.net/2026/Oct/8/carson-gross/</id><summary type="html">
-    &lt;blockquote cite="https://htmx.org/essays/yes-and/"&gt;&lt;p&gt;Computer programming is, fundamentally, about two things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Problem-solving using computers&lt;/li&gt;
-&lt;li&gt;Learning to control complexity while solving these problems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I have a hard time imagining a future where knowing how to solve problems with computers and how to control the complexity of those solutions is &lt;em&gt;less&lt;/em&gt; valuable than it is today, so I think it will continue to be a viable career even with the advent of AI tools.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://htmx.org/essays/yes-and/"&gt;Carson Gross&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/computer-science"&gt;computer-science&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/carson-gross"&gt;carson-gross&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/careers"&gt;careers&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="computer-science"/><category term="carson-gross"/><category term="careers"/><category term="ai"/></entry></feed>
+</summary><category term="projects"/><category term="ai"/><category term="openai"/><category term="generative-ai"/><category term="llms"/><category term="tokenization"/></entry></feed>

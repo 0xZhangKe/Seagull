@@ -12,13 +12,13 @@
 	<atom:link href="https://www.kawabangga.com/feed" rel="self" type="application/rss+xml" />
 	<link>https://www.kawabangga.com</link>
 	<description>无法自制的人得不到自由。</description>
-	<lastBuildDate>Sat, 17 Oct 2026 09:56:26 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 21 Oct 2026 01:34:27 +0000</lastBuildDate>
 	<language>zh-Hans</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=7.1</generator>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
 
 <image>
 	<url>https://www.kawabangga.com/wp-content/uploads/2017/04/favicon.png</url>
@@ -37,7 +37,7 @@
 				<category><![CDATA[网络]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7431</guid>
 
-					<description><![CDATA[这一篇计划很久了还没有写，今天终于开始下笔了。 许久无从下笔的原因是，网络问题排查——哦不，应该说不光网络，基 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7431" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[这一篇计划很久了还没有写，今天终于开始下笔了。 许久无从下笔的原因是，网络问题排查——哦不，应该说不光网络，基 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7431" class="more-link" >Continue reading...</a><div id="crp_related"> </div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">这一篇计划很久了还没有写，今天终于开始下笔了。</p>
 
@@ -81,7 +81,7 @@
 
 
 
-<p class="wp-block-paragraph">第三部就很简单了，根据现象，做合理的假设，测试，逐步排除错误的假设，剩下的就是正确的答案。</p>
+<p class="wp-block-paragraph">第三步就很简单了，根据现象，做合理的假设，测试，逐步排除错误的假设，剩下的就是正确的答案。</p>
 
 
 
@@ -218,7 +218,7 @@
 <pre class="wp-block-preformatted">与本博客的其他页面不同，本页面使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans">署名-非商业性使用-禁止演绎 4.0 国际</a> 协议。<br /></pre>
 </div></div>
 </div></div>
-]]></content:encoded>
+<div id="crp_related"> </div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7431/feed</wfw:commentRss>
 			<slash:comments>3</slash:comments>
@@ -237,7 +237,7 @@
 		<category><![CDATA[linux]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7422</guid>
 
-					<description><![CDATA[记录一下最近排查的一个问题：某台机器一上线就有丢包，同 Rack 同规格的其他机器都没有问题，由于负载都是一样 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7422" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[记录一下最近排查的一个问题：某台机器一上线就有丢包，同 Rack 同规格的其他机器都没有问题，由于负载都是一样 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7422" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6732"     class="crp_link post-6732"><span class="crp_title">数据中心网络高可用技术：ECMP</span></a></li><li><a href="https://www.kawabangga.com/posts/6537"     class="crp_link post-6537"><span class="crp_title">数据中心网络高可用技术之从交换机到交换机：MLAG, 堆叠技术</span></a></li><li><a href="https://www.kawabangga.com/posts/6430"     class="crp_link post-6430"><span class="crp_title">数据中心网络高可用技术之从服务器到交换机：active-backup</span></a></li><li><a href="https://www.kawabangga.com/posts/6624"     class="crp_link post-6624"><span class="crp_title">Google 的十年五代网络架构</span></a></li><li><a href="https://www.kawabangga.com/posts/6291"     class="crp_link post-6291"><span class="crp_title">网络中的环路和防环技术</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">记录一下最近排查的一个问题：某台机器一上线就有丢包，同 Rack 同规格的其他机器都没有问题，由于负载都是一样的，所以问题集中到这台机器本身的问题。已经可以 100% 复现，只要一接流量，网卡就开始时不时的丢包。</p>
 
@@ -392,7 +392,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 <figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1.png"><img decoding="async" width="1024" height="378" src="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1-1024x378.png" alt="" class="wp-image-7425" srcset="https://www.kawabangga.com/wp-content/uploads/2026/09/image-1-1024x378.png 1024w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-1-300x111.png 300w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-1-767x283.png 767w, https://www.kawabangga.com/wp-content/uploads/2026/09/image-1.png 1480w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">由于是单卡模式上线，机器分到的流量不变，所以这台机器的网卡使用率是其他机器的2倍，但是丢包是0.</figcaption></figure>
 
 
-<ol class="wp-block-footnotes"><li id="54537219-898f-4185-8ce0-cdb3f60ccbe8">见<a href="https://www.kawabangga.com/posts/7292" data-type="post" data-id="7292">服务器高性能网络调优</a> <a href="#54537219-898f-4185-8ce0-cdb3f60ccbe8-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="1c25d1ea-384e-4f4d-8107-b313d3f7da0b">source code: <a href="https://www.cs.virginia.edu/stream/FTP/Code/stream.c">https://www.cs.virginia.edu/stream/FTP/Code/stream.c</a> <a href="#1c25d1ea-384e-4f4d-8107-b313d3f7da0b-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol>]]></content:encoded>
+<ol class="wp-block-footnotes"><li id="54537219-898f-4185-8ce0-cdb3f60ccbe8">见<a href="https://www.kawabangga.com/posts/7292" data-type="post" data-id="7292">服务器高性能网络调优</a> <a href="#54537219-898f-4185-8ce0-cdb3f60ccbe8-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="1c25d1ea-384e-4f4d-8107-b313d3f7da0b">source code: <a href="https://www.cs.virginia.edu/stream/FTP/Code/stream.c">https://www.cs.virginia.edu/stream/FTP/Code/stream.c</a> <a href="#1c25d1ea-384e-4f4d-8107-b313d3f7da0b-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6732"     class="crp_link post-6732"><span class="crp_title">数据中心网络高可用技术：ECMP</span></a></li><li><a href="https://www.kawabangga.com/posts/6537"     class="crp_link post-6537"><span class="crp_title">数据中心网络高可用技术之从交换机到交换机：MLAG, 堆叠技术</span></a></li><li><a href="https://www.kawabangga.com/posts/6430"     class="crp_link post-6430"><span class="crp_title">数据中心网络高可用技术之从服务器到交换机：active-backup</span></a></li><li><a href="https://www.kawabangga.com/posts/6624"     class="crp_link post-6624"><span class="crp_title">Google 的十年五代网络架构</span></a></li><li><a href="https://www.kawabangga.com/posts/6291"     class="crp_link post-6291"><span class="crp_title">网络中的环路和防环技术</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7422/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -411,7 +411,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 		<category><![CDATA[抓包分析]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7413</guid>
 
-					<description><![CDATA[本文是 BPG 连接建立失败问题 一文的答案和解析。 抓包文件中有两处可疑的地方。 第一处是 BGP OPEN [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7413" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[本文是 BPG 连接建立失败问题 一文的答案和解析。 抓包文件中有两处可疑的地方。 第一处是 BGP OPEN [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7413" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6467"     class="crp_link post-6467"><span class="crp_title">重新认识 TCP 的握手和挥手：答案和解析</span></a></li><li><a href="https://www.kawabangga.com/posts/7397"     class="crp_link post-7397"><span class="crp_title">BGP 连接建立失败问题</span></a></li><li><a href="https://www.kawabangga.com/posts/4925"     class="crp_link post-4925"><span class="crp_title">Tcpdump 从 TCP_option_address 中根据真实 IP 过滤</span></a></li><li><a href="https://www.kawabangga.com/posts/6313"     class="crp_link post-6313"><span class="crp_title">四层负载均衡分析：GitHub GLB</span></a></li><li><a href="https://www.kawabangga.com/posts/7422"     class="crp_link post-7422"><span class="crp_title">一次内存引起的网络丢包问题排查</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">本文是 <a href="https://www.kawabangga.com/?p=7397">BPG 连接建立失败问题</a> 一文的答案和解析。</p>
 
@@ -570,7 +570,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 <pre class="wp-block-preformatted">与本博客的其他页面不同，本页面使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans">署名-非商业性使用-禁止演绎 4.0 国际</a> 协议。<br /></pre>
 </div></div>
 </div></div>
-]]></content:encoded>
+<div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6467"     class="crp_link post-6467"><span class="crp_title">重新认识 TCP 的握手和挥手：答案和解析</span></a></li><li><a href="https://www.kawabangga.com/posts/7397"     class="crp_link post-7397"><span class="crp_title">BGP 连接建立失败问题</span></a></li><li><a href="https://www.kawabangga.com/posts/4925"     class="crp_link post-4925"><span class="crp_title">Tcpdump 从 TCP_option_address 中根据真实 IP 过滤</span></a></li><li><a href="https://www.kawabangga.com/posts/6313"     class="crp_link post-6313"><span class="crp_title">四层负载均衡分析：GitHub GLB</span></a></li><li><a href="https://www.kawabangga.com/posts/7422"     class="crp_link post-7422"><span class="crp_title">一次内存引起的网络丢包问题排查</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7413/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -589,7 +589,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 		<category><![CDATA[抓包分析]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7397</guid>
 
-					<description><![CDATA[好久没有更新「抓包破案」系列了，最近遇到的一个 case 适合拿出来考一考读者，需要一点点的 BGP 前置知识 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7397" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[好久没有更新「抓包破案」系列了，最近遇到的一个 case 适合拿出来考一考读者，需要一点点的 BGP 前置知识 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7397" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/7413"     class="crp_link post-7413"><span class="crp_title">BPG 连接建立失败问题的答案和解析</span></a></li><li><a href="https://www.kawabangga.com/posts/7431"     class="crp_link post-7431"><span class="crp_title">网络问题排查的思路和技巧</span></a></li><li><a href="https://www.kawabangga.com/posts/7376"     class="crp_link post-7376"><span class="crp_title">Ingress 流量整形</span></a></li><li><a href="https://www.kawabangga.com/posts/7076"     class="crp_link post-7076"><span class="crp_title">LRO/GRO 对于网络吞吐的影响</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">好久没有更新「抓包破案」系列了，最近遇到的一个 case 适合拿出来考一考读者，需要一点点的 BGP 前置知识，嘿嘿。</p>
 
@@ -744,7 +744,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 
 
 <p class="wp-block-paragraph"></p>
-]]></content:encoded>
+<div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/7413"     class="crp_link post-7413"><span class="crp_title">BPG 连接建立失败问题的答案和解析</span></a></li><li><a href="https://www.kawabangga.com/posts/7431"     class="crp_link post-7431"><span class="crp_title">网络问题排查的思路和技巧</span></a></li><li><a href="https://www.kawabangga.com/posts/7376"     class="crp_link post-7376"><span class="crp_title">Ingress 流量整形</span></a></li><li><a href="https://www.kawabangga.com/posts/7076"     class="crp_link post-7076"><span class="crp_title">LRO/GRO 对于网络吞吐的影响</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7397/feed</wfw:commentRss>
 			<slash:comments>4</slash:comments>
@@ -768,7 +768,7 @@ Triad:            711.2     0.344051     0.337455     0.349108</pre></div>
 		<category><![CDATA[wireshark]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7376</guid>
 
-					<description><![CDATA[问题是这样，我们有 2 组服务器，A 组和 B 组，一部分用户从 A 组下载文件，一部分从 B 组下载文件。分 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7376" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[问题是这样，我们有 2 组服务器，A 组和 B 组，一部分用户从 A 组下载文件，一部分从 B 组下载文件。分 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7376" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/4960"     class="crp_link post-4960"><span class="crp_title">由一个子网掩码配置错误所想到的</span></a></li><li><a href="https://www.kawabangga.com/posts/7422"     class="crp_link post-7422"><span class="crp_title">一次内存引起的网络丢包问题排查</span></a></li><li><a href="https://www.kawabangga.com/posts/6291"     class="crp_link post-6291"><span class="crp_title">网络中的环路和防环技术</span></a></li><li><a href="https://www.kawabangga.com/posts/7292"     class="crp_link post-7292"><span class="crp_title">服务器高性能网络调优</span></a></li><li><a href="https://www.kawabangga.com/posts/7276"     class="crp_link post-7276"><span class="crp_title">Traceroute the World</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">问题是这样，我们有 2 组服务器，A 组和 B 组，一部分用户从 A 组下载文件，一部分从 B 组下载文件。分成 2 组的初衷是，B 组用户下载量通常比较大，并且是离线服务，意味着可以慢一些，但不能影响 A 组用户。现在的问题是，A 组 和 B 组最终下载的来源都是 S3，依然存在共享资源，会出现问题：在下载量比较大的时候，占用全部的 S3 上传带宽，导致 A 组用户收到影响。</p>
 
@@ -1025,7 +1025,7 @@ tc class add dev ifb0 parent 1:1 classid 1:20 \
 <p class="wp-block-paragraph"></p>
 
 
-<ol class="wp-block-footnotes"><li id="b6e9aa14-5b43-4bdc-8496-3a004934fede"><a href="https://github.com/torvalds/linux/blob/master/drivers/net/ifb.c#L115">https://github.com/torvalds/linux/blob/master/drivers/net/ifb.c#L115</a> <a href="#b6e9aa14-5b43-4bdc-8496-3a004934fede-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="936bb9a8-2faa-4e4e-aeed-df75d39bd1c1"><code>if (!tcp_is_cwnd_limited(sk)) return;</code> <a href="https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_cubic.c?utm_source=chatgpt.com#L326">https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_cubic.c?utm_source=chatgpt.com#L326</a> <a href="#936bb9a8-2faa-4e4e-aeed-df75d39bd1c1-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="b730e44a-3e65-48f5-80ef-cc7632e8a554">在 Computer Networking: A Top-Down Approach Chapter 3.7 也有介绍 <a href="#b730e44a-3e65-48f5-80ef-cc7632e8a554-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol>]]></content:encoded>
+<ol class="wp-block-footnotes"><li id="b6e9aa14-5b43-4bdc-8496-3a004934fede"><a href="https://github.com/torvalds/linux/blob/master/drivers/net/ifb.c#L115">https://github.com/torvalds/linux/blob/master/drivers/net/ifb.c#L115</a> <a href="#b6e9aa14-5b43-4bdc-8496-3a004934fede-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="936bb9a8-2faa-4e4e-aeed-df75d39bd1c1"><code>if (!tcp_is_cwnd_limited(sk)) return;</code> <a href="https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_cubic.c?utm_source=chatgpt.com#L326">https://github.com/torvalds/linux/blob/master/net/ipv4/tcp_cubic.c?utm_source=chatgpt.com#L326</a> <a href="#936bb9a8-2faa-4e4e-aeed-df75d39bd1c1-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="b730e44a-3e65-48f5-80ef-cc7632e8a554">在 Computer Networking: A Top-Down Approach Chapter 3.7 也有介绍 <a href="#b730e44a-3e65-48f5-80ef-cc7632e8a554-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/4960"     class="crp_link post-4960"><span class="crp_title">由一个子网掩码配置错误所想到的</span></a></li><li><a href="https://www.kawabangga.com/posts/7422"     class="crp_link post-7422"><span class="crp_title">一次内存引起的网络丢包问题排查</span></a></li><li><a href="https://www.kawabangga.com/posts/6291"     class="crp_link post-6291"><span class="crp_title">网络中的环路和防环技术</span></a></li><li><a href="https://www.kawabangga.com/posts/7292"     class="crp_link post-7292"><span class="crp_title">服务器高性能网络调优</span></a></li><li><a href="https://www.kawabangga.com/posts/7276"     class="crp_link post-7276"><span class="crp_title">Traceroute the World</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7376/feed</wfw:commentRss>
 			<slash:comments>3</slash:comments>
@@ -1046,7 +1046,7 @@ tc class add dev ifb0 parent 1:1 classid 1:20 \
 		<category><![CDATA[XDP]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7276</guid>
 
-					<description><![CDATA[ICMP 一直是我最喜欢的协议，在没有机器/设备的登录权限的时候，ICMP (ping) 可以让我在 debu [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7276" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[ICMP 一直是我最喜欢的协议，在没有机器/设备的登录权限的时候，ICMP (ping) 可以让我在 debu [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7276" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/7129"     class="crp_link post-7129"><span class="crp_title">如何把网络设备从 traceroute 中隐藏</span></a></li><li><a href="https://www.kawabangga.com/posts/5876"     class="crp_link post-5876"><span class="crp_title">探测 TCP 乱序问题</span></a></li><li><a href="https://www.kawabangga.com/posts/4275"     class="crp_link post-4275"><span class="crp_title">使用 mtr 检查网络问题，以及注意事项</span></a></li><li><a href="https://www.kawabangga.com/posts/6919"     class="crp_link post-6919"><span class="crp_title">数据是如何转发的</span></a></li><li><a href="https://www.kawabangga.com/posts/6751"     class="crp_link post-6751"><span class="crp_title">由 ICMP Redirect 消息引起的丢包问题排查</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">ICMP 一直是我最喜欢的协议，在没有机器/设备的登录权限的时候，ICMP (ping) 可以让我在 debug 的时候获得很多关键的信息：网络通不通，延迟多少，有没有环路，经过了哪些设备，等等。其中比较关键的机制，一个是 ping 工具，即 echo/reply 机制；另一个是在 TTL 耗尽的时候发回来 ICMP 错误信息<sup data-fn="19138dcb-21d0-4133-ad22-db3e981ea722" class="fn"><a href="#19138dcb-21d0-4133-ad22-db3e981ea722" id="19138dcb-21d0-4133-ad22-db3e981ea722-link">1</a></sup>，这是 traceroute 工具实现的基础原理。</p>
 
@@ -1339,7 +1339,7 @@ $ ls -hl super.big.file
 <p class="wp-block-paragraph">代码是 AI 写的，但是这篇博客是我自己纯手写的。这年头能读的博客不多了，但是可以放心的是，这个博客不会有大批量 AI 生成的文字。<br /></p>
 
 
-<ol class="wp-block-footnotes"><li id="19138dcb-21d0-4133-ad22-db3e981ea722">参考 <a href="https://www.kawabangga.com/posts/4275" data-type="post" data-id="4275">使用 mtr 检查网络问题，以及注意事项</a> <a href="#19138dcb-21d0-4133-ad22-db3e981ea722-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="2134c4c9-df34-4771-8d35-583c568f17ed">比如这里 <a href="https://www.reddit.com/r/ZiplyFiber/comments/15vvs4c/holy_traceroute_batman_this_has_to_be_a_new_record/">https://www.reddit.com/r/ZiplyFiber/comments/15vvs4c/holy_traceroute_batman_this_has_to_be_a_new_record/</a>， 以及这里 <a href="https://www.reddit.com/r/sysadmin/comments/2gxz4e/is_it_possible_to_find_the_worlds_longest_routes/">https://www.reddit.com/r/sysadmin/comments/2gxz4e/is_it_possible_to_find_the_worlds_longest_routes/</a> <a href="#2134c4c9-df34-4771-8d35-583c568f17ed-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="219e76f8-9eb6-4bf1-917e-33b5e69b00ee"><a href="https://docs.digitalocean.com/products/droplets/details/limits/">https://docs.digitalocean.com/products/droplets/details/limits/</a> <a href="#219e76f8-9eb6-4bf1-917e-33b5e69b00ee-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="96319d74-ec97-4cb3-ab50-f1feb508c63e"><a href="https://en.wikipedia.org/wiki/Circular_buffer">https://en.wikipedia.org/wiki/Circular_buffer</a> <a href="#96319d74-ec97-4cb3-ab50-f1feb508c63e-link" aria-label="跳转到脚注引用 4"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol>]]></content:encoded>
+<ol class="wp-block-footnotes"><li id="19138dcb-21d0-4133-ad22-db3e981ea722">参考 <a href="https://www.kawabangga.com/posts/4275" data-type="post" data-id="4275">使用 mtr 检查网络问题，以及注意事项</a> <a href="#19138dcb-21d0-4133-ad22-db3e981ea722-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="2134c4c9-df34-4771-8d35-583c568f17ed">比如这里 <a href="https://www.reddit.com/r/ZiplyFiber/comments/15vvs4c/holy_traceroute_batman_this_has_to_be_a_new_record/">https://www.reddit.com/r/ZiplyFiber/comments/15vvs4c/holy_traceroute_batman_this_has_to_be_a_new_record/</a>， 以及这里 <a href="https://www.reddit.com/r/sysadmin/comments/2gxz4e/is_it_possible_to_find_the_worlds_longest_routes/">https://www.reddit.com/r/sysadmin/comments/2gxz4e/is_it_possible_to_find_the_worlds_longest_routes/</a> <a href="#2134c4c9-df34-4771-8d35-583c568f17ed-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="219e76f8-9eb6-4bf1-917e-33b5e69b00ee"><a href="https://docs.digitalocean.com/products/droplets/details/limits/">https://docs.digitalocean.com/products/droplets/details/limits/</a> <a href="#219e76f8-9eb6-4bf1-917e-33b5e69b00ee-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="96319d74-ec97-4cb3-ab50-f1feb508c63e"><a href="https://en.wikipedia.org/wiki/Circular_buffer">https://en.wikipedia.org/wiki/Circular_buffer</a> <a href="#96319d74-ec97-4cb3-ab50-f1feb508c63e-link" aria-label="跳转到脚注引用 4"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/7129"     class="crp_link post-7129"><span class="crp_title">如何把网络设备从 traceroute 中隐藏</span></a></li><li><a href="https://www.kawabangga.com/posts/5876"     class="crp_link post-5876"><span class="crp_title">探测 TCP 乱序问题</span></a></li><li><a href="https://www.kawabangga.com/posts/4275"     class="crp_link post-4275"><span class="crp_title">使用 mtr 检查网络问题，以及注意事项</span></a></li><li><a href="https://www.kawabangga.com/posts/6919"     class="crp_link post-6919"><span class="crp_title">数据是如何转发的</span></a></li><li><a href="https://www.kawabangga.com/posts/6751"     class="crp_link post-6751"><span class="crp_title">由 ICMP Redirect 消息引起的丢包问题排查</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7276/feed</wfw:commentRss>
 			<slash:comments>9</slash:comments>
@@ -1356,10 +1356,10 @@ $ ls -hl super.big.file
 				<category><![CDATA[我的生活]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7336</guid>
 
-					<description><![CDATA[<br/><a href="https://www.kawabangga.com/posts/7336" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[<br/><a href="https://www.kawabangga.com/posts/7336" class="more-link" >Continue reading...</a><div id="crp_related"> </div>]]></description>
 										<content:encoded><![CDATA[
 <figure class="wp-block-image size-large"><a href="https://www.kawabangga.com/wp-content/uploads/2026/07/baby.jpeg"><img loading="lazy" decoding="async" width="768" height="1024" src="https://www.kawabangga.com/wp-content/uploads/2026/07/baby-768x1024.jpeg" alt="" class="wp-image-7337" srcset="https://www.kawabangga.com/wp-content/uploads/2026/07/baby-768x1024.jpeg 768w, https://www.kawabangga.com/wp-content/uploads/2026/07/baby-225x300.jpeg 225w, https://www.kawabangga.com/wp-content/uploads/2026/07/baby.jpeg 1086w" sizes="auto, (max-width: 768px) 100vw, 768px" /></a></figure>
-]]></content:encoded>
+<div id="crp_related"> </div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7336/feed</wfw:commentRss>
 			<slash:comments>29</slash:comments>
@@ -1376,7 +1376,7 @@ $ ls -hl super.big.file
 				<category><![CDATA[诗]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7328</guid>
 
-					<description><![CDATA[by Kahlil Gibran Your children are not your children.Th [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7328" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[by Kahlil Gibran Your children are not your children.Th [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7328" class="more-link" >Continue reading...</a><div id="crp_related"> </div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">by Kahlil Gibran</p>
 
@@ -1387,7 +1387,7 @@ $ ls -hl super.big.file
 
 
 <pre class="wp-block-verse has-text-align-left">Your children are not your children.<br />They are the sons and daughters of Life's longing for itself.<br />They come through you but not from you,<br />And though they are with you, yet they belong not to you.<br />You may give them your love but not your thoughts.<br />For they have their own thoughts.<br />You may house their bodies but not their souls,<br />For their souls dwell in the house of tomorrow, which you cannot visit, not even in your dreams.<br />You may strive to be like them, but seek not to make them like you.<br />For life goes not backward nor tarries with yesterday.<br />You are the bows from which your children as living arrows are sent forth.<br />The archer sees the mark upon the path of the infinite,<br />and He bends you with His might that His arrows may go swift and far.<br />Let your bending in the archer's hand be for gladness;<br />For even as he loves the arrow that flies, so He loves also the bow that is stable.</pre>
-]]></content:encoded>
+<div id="crp_related"> </div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7328/feed</wfw:commentRss>
 			<slash:comments>3</slash:comments>
@@ -1405,7 +1405,7 @@ $ ls -hl super.big.file
 		<category><![CDATA[心灵鸡汤]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7314</guid>
 
-					<description><![CDATA[时间过得真快，Rick and Morty 已经播出 13 年了。 在试播集的时候，Rick 说的这句话——「 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7314" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[时间过得真快，Rick and Morty 已经播出 13 年了。 在试播集的时候，Rick 说的这句话——「 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7314" class="more-link" >Continue reading...</a><div id="crp_related"> </div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">时间过得真快，Rick and Morty 已经播出 13 年了。</p>
 
@@ -1476,7 +1476,7 @@ $ ls -hl super.big.file
 
 
 <p class="wp-block-paragraph">这样一想，路上无论遇到什么，都不会是遗憾了，无论遇到什么，都可以勇敢地去面对。</p>
-]]></content:encoded>
+<div id="crp_related"> </div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7314/feed</wfw:commentRss>
 			<slash:comments>1</slash:comments>
@@ -1603,7 +1603,7 @@ $ ls -hl super.big.file
 		<category><![CDATA[网卡调优]]></category>
 		<guid isPermaLink="false">https://www.kawabangga.com/?p=7292</guid>
 
-					<description><![CDATA[这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7292" class="more-link" >Continue reading...</a>]]></description>
+					<description><![CDATA[这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有 [&#8230;]<br/><a href="https://www.kawabangga.com/posts/7292" class="more-link" >Continue reading...</a><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6594"     class="crp_link post-6594"><span class="crp_title">数据中心网络高可用技术之从服务器到网关：首跳冗余协议 VRRP</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
 										<content:encoded><![CDATA[
 <p class="wp-block-paragraph">这篇文章写一下服务器的网络方面的调优经验。如果网络的带宽使用在 1GE，其实没有必要做调优，默认的参数基本没有问题；如果有 10G 以上的网络带宽要求，就需要做一些优化了，比如三层网关，四层负载均衡，七层负载均衡，大流量的 Redis 服务器这种场景，在 25GE, 100GE 甚至 400GE 的网卡上，如果不做调优，可能无法跑满带宽。</p>
 
@@ -2444,7 +2444,7 @@ tx-frames-irq:	n/a</pre></div>
 <p class="wp-block-paragraph"></p>
 
 
-<ol class="wp-block-footnotes"><li id="f469265e-4e84-41c1-b55d-8942c0048083"><a href="https://www.kawabangga.com/posts/6509" data-type="post" data-id="6509">数据中心网络高可用技术之从服务器到交换机：802.3 ad</a> <a href="#f469265e-4e84-41c1-b55d-8942c0048083-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="13183cea-f200-4003-b167-36ad681bd1f9">浪潮这款服务器的白皮书：<a href="https://www.inspur.com/eportal/fileDir/en/resource/cms/2022/04/2022040215480066931.pdf">https://www.inspur.com/eportal/fileDir/en/resource/cms/2022/04/2022040215480066931.pdf</a> <a href="#13183cea-f200-4003-b167-36ad681bd1f9-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="a42c149e-0ad6-4fe2-af08-53d2c0634988"><a href="https://dshcherb.github.io/2019/02/02/interpreting-pcie-device-to-cpu-locality-information.html">https://dshcherb.github.io/2019/02/02/interpreting-pcie-device-to-cpu-locality-information.html</a> <a href="#a42c149e-0ad6-4fe2-af08-53d2c0634988-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="fb54c93b-4753-43e5-a69e-492e3447fb9a">可以参考 <a href="https://www.kawabangga.com/posts/6732" data-type="post" data-id="6732">数据中心网络高可用技术：ECMP</a> <a href="#fb54c93b-4753-43e5-a69e-492e3447fb9a-link" aria-label="跳转到脚注引用 4"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol>]]></content:encoded>
+<ol class="wp-block-footnotes"><li id="f469265e-4e84-41c1-b55d-8942c0048083"><a href="https://www.kawabangga.com/posts/6509" data-type="post" data-id="6509">数据中心网络高可用技术之从服务器到交换机：802.3 ad</a> <a href="#f469265e-4e84-41c1-b55d-8942c0048083-link" aria-label="跳转到脚注引用 1"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="13183cea-f200-4003-b167-36ad681bd1f9">浪潮这款服务器的白皮书：<a href="https://www.inspur.com/eportal/fileDir/en/resource/cms/2022/04/2022040215480066931.pdf">https://www.inspur.com/eportal/fileDir/en/resource/cms/2022/04/2022040215480066931.pdf</a> <a href="#13183cea-f200-4003-b167-36ad681bd1f9-link" aria-label="跳转到脚注引用 2"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="a42c149e-0ad6-4fe2-af08-53d2c0634988"><a href="https://dshcherb.github.io/2019/02/02/interpreting-pcie-device-to-cpu-locality-information.html">https://dshcherb.github.io/2019/02/02/interpreting-pcie-device-to-cpu-locality-information.html</a> <a href="#a42c149e-0ad6-4fe2-af08-53d2c0634988-link" aria-label="跳转到脚注引用 3"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li><li id="fb54c93b-4753-43e5-a69e-492e3447fb9a">可以参考 <a href="https://www.kawabangga.com/posts/6732" data-type="post" data-id="6732">数据中心网络高可用技术：ECMP</a> <a href="#fb54c93b-4753-43e5-a69e-492e3447fb9a-link" aria-label="跳转到脚注引用 4"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎</a></li></ol><div class="crp_related     crp-text-only"><h3>相关文章:</h3><ul><li><a href="https://www.kawabangga.com/posts/6594"     class="crp_link post-6594"><span class="crp_title">数据中心网络高可用技术之从服务器到网关：首跳冗余协议 VRRP</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://www.kawabangga.com/posts/7292/feed</wfw:commentRss>
 			<slash:comments>6</slash:comments>

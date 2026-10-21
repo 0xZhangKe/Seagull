@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "bc59cf4a905c8e44a1057662",
+      "title": "华为手机刷微博体验更好？技术角度的一些分析和思考",
+      "summary": "技术群里的小伙伴发了一条微博， https://weibo.com/1808884742/IApbpEVQr ， 博主 @王波粒 发现， Mate 30 Pro 有个很特别的现象（建议先去看一下视频） 但是这个视频描述和底下的猜测都不对，我这边总结一下这个现象： 微博这个 App 在华为的手机上，在主页列表上下滑动的情况下依然可以流畅加载图片，而同一个版本的微博客户端，安装到其他手机上，在主页列表上下滑动的情况下，则必须要等到滑动停止之后才会加载图片 下面就针对这个现象,从技术的角度来深入分析产生这种现象的原因,以及我们能从里面学到什么",
+      "image": null,
+      "publishedAt": "2020-08-20T05:17:26Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2020/08/20/weibo-imageload-opt-on-huawei/",
+      "detailPath": "articles/bc59cf4a905c8e44a1057662.json"
+    },
+    {
+      "id": "e75a0cf66a6bef9c722782d7",
+      "title": "《空中浩劫》里的法航447",
+      "summary": "2009年6月1日（UTC时间），法国航空447号班机（机型空中客车A330-203、注册号F-GZCP）在大西洋中部雷达盲区神秘失踪，后被证实坠毁，机上228人（乘客216人、机组成员12人）全数罹难。著名空难文献剧《Air Crash Investigation》（中文一般译为《空中浩劫》，以下简称ACI）在S12E13中收录了此事故，揭露了所谓的“空难真相”，将矛头直指副驾驶皮埃尔-塞德里克·博南（Pierre Cédric Bonin）；同时，由于该片的知名度，让许多航空爱好者乃至真正的航空从业者认为该片所述即为事实。然而，真的是这样吗？",
+      "image": null,
+      "publishedAt": "2020-08-20T03:08:17Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2020/08/20/af447-in-aci/",
+      "detailPath": "articles/e75a0cf66a6bef9c722782d7.json"
+    },
+    {
+      "id": "adaefee850cddafb37a2158c",
+      "title": "Triplet Censors: Demystifying Great Firewall’s DNS Censorship Behavior",
+      "summary": "Triplet Censors: Demystifying Great Firewall’s DNS Censorship Behavior Anonymous Arian Akhavan Niaki University of Massachusetts Amherst Nguyen Phong Hoang Stony Brook University Phillipa Gill University of Massachusetts Amherst Amir Houmansadr University of Massachusetts Amherst Abstract The Great Firewall of China (GFW) has long used DNS packet injection…",
+      "image": null,
+      "publishedAt": "2020-08-11T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/publications/foci20_dns/en/",
+      "detailPath": "articles/adaefee850cddafb37a2158c.json"
+    },
+    {
       "id": "fe084076ca8290ff568873d7",
       "title": "三重审查：揭秘防火长城的DNS审查行为",
       "summary": "三重审查：揭秘防火长城的DNS审查行为 Anonymous Arian Akhavan Niaki University of Massachusetts Amherst Nguyen Phong Hoang Stony Brook University Phillipa Gill University of Massachusetts Amherst Amir Houmansadr University of Massachusetts Amherst 摘要 中国的防火长城（GFW）长期以来一直使用DNS数据包注入来审查互联网访问。在这项工作中，我们使用Alexa前100万个域名作为测试列表分析了GFW在九个月内的DNS注入行为。我们首先专注于理解GFW使用的公共可路由IP，并观察到用于过滤特定域名集合的I…",
@@ -626,39 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2020/03/14/chinese-definition-of-whistle-blower/",
       "detailPath": "articles/6b9ff2b82b65cc7dcc5aa212.json"
-    },
-    {
-      "id": "700ad0a0fa945f3ba329310b",
-      "title": "GFW Archaeology: gfw-looking-glass.sh",
-      "summary": "I came across a one-liner script by @gfwrev and got seriously impressed by it. Although it does not work anymore, I still would like to have a writeup on it for its beauty and for the author’s creativity. The one-liner named gfw-looking-glass.sh is as follows: while true; do printf \"\\0\\0\\1\\0\\0\\1\\0\\0\\0\\0\\0\\0\\6wux.ru\\300\" | nc -uq1 $SOME_IP 53 | hd -s20; done…",
-      "image": null,
-      "publishedAt": "2020-03-08T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/blog/gfw_looking_glass/en/",
-      "detailPath": "articles/700ad0a0fa945f3ba329310b.json"
-    },
-    {
-      "id": "987d9d34f99476fe0ef4f9e9",
-      "title": "GFW考古：gfw-looking-glass.sh",
-      "summary": "我近日被 @gfwrev 所写的 一行脚本 深深吸引。尽管它已经失效，但它所流露出来的创意与美感仍值得被记录。 这行名为 gfw-looking-glass.sh 的脚本如下： while true; do printf \"\\0\\0\\1\\0\\0\\1\\0\\0\\0\\0\\0\\0\\6wux.ru\\300\" | nc -uq1 $SOME_IP 53 | hd -s20; done 如下图所示，它可以被用来 打印出GFW内存中的某一部分 。这是怎么做到的呢? nc nc -uq1 $SOME_IP 53 会把在stdin收到的信息以UDP包的形式发送给 $SOME_IP 的53端口。如@gfwrev所 解释 的， $SOME_IP 可以是满足以下两个条件的任何IP地址：1） 不会 回应发送到其53端口的任何信息；2）在…",
-      "image": null,
-      "publishedAt": "2020-03-08T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/blog/gfw_looking_glass/zh/",
-      "detailPath": "articles/987d9d34f99476fe0ef4f9e9.json"
-    },
-    {
-      "id": "53695d056b31f36d4364823f",
-      "title": "为 COVID-19 准备家用应急物资",
-      "summary": "眼见 COVID-19 在全世界各处开始广泛社区传播，感觉着陆本地不过是时间问题，再不动手就太被动了。之前没有相关经验的我们，花了一个星期的时间准备了一些家用应急储备，在这里分享心得。 背景 # 这次应对的是世界范围内 COVID-19 的爆发。地广人稀对于传染病应对来说是个优势，用这个安慰自己口罩买不到的话就不死磕了，只要宅家不出门病毒能耐我何。 再考虑社会背景。我所在的 Pacific Northwest 地区既没有龙卷风也没有（太多！）山火，火山爆发和地震倒是有一些。相对于北美其他硬核地区来说，总体来说储备意识不是很强。举个例子，冬天的时候一旦预报下雪（只要超过一两寸厚），超市货架在接下来两天里就会被戏剧性地抢空。 最后是个人背景。宅，动手能力差，没有生存方面的爱好、兴趣或经验（连 camping 也没…",
-      "image": "https://fourhappylions.com/posts/prepping-for-covid19/waterbob_hu_ae97236db924238b.jpg",
-      "publishedAt": "2020-03-07T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/prepping-for-covid19/",
-      "detailPath": "articles/53695d056b31f36d4364823f.json"
     }
   ]
 }

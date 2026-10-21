@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "3abf8d7d08a86b03a2efc28e",
+      "title": "文言文和古诗的现代教学问题及前途",
+      "summary": "摘要 这是「 BlogBlog 同乐会 - 2026 年 10 月 」的投稿文章。本月主题是「 语言的习得、传承与推广 」，由 AngeCI 主持。如果你有自己的博客，欢迎一起來参加！ 在 上篇文章 ，我谈论了我对语文作文的看法，在结尾我留了句话。 我在很多文章都有透露，我个人不喜欢古风、传统文化等东西，很大原因与中国的语文教育有关。 那么这回我再来谈谈语文考试的另一大板块──文言文与古诗。 文言文的历史 要想了解文言文，需要了解文言文的历史。古诗差不多也算是文言文的一种形式，与文言文同理，就不多复述了。 产生与发展 根据维基百科的 文言文 页面，文言文主要指以秦汉书面语为标准，脱离口语而写成的文字。在春秋战国和秦汉时期，文言文与口头语的差别不算特别大。从东汉开始，文言文就逐渐与口语脱节，但书面语仍然保持不变…",
+      "image": null,
+      "publishedAt": "2026-10-05T08:01:34Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/problems-of-classical-chinese/",
+      "detailPath": "articles/3abf8d7d08a86b03a2efc28e.json"
+    },
+    {
+      "id": "fd92cb89b92cc98bf4d2cd85",
+      "title": "Home Assistant 接 Google Home 語音控制：用 Matter 免雲端,和兩個都叫「找不到裝置」的坑",
+      "summary": "作者想用語音控制 Home Assistant 裡的燈,選了不走雲端的路:用 home-assistant-matter-hub 把 HA 實體包成 Matter 橋接器,由客廳的 Google TV Streamer 4K 當中樞。配對時 Google Home 兩次顯示「找不到裝置」,原因卻完全不同:第一次是橋接器使用 Matter 測試廠商碼 0xFFF1,必須先在 Google Home Developer Console 建立 VID/PID 一致的 integration;第二次是伺服器的 ufw 只有 IPv4 的區網規則,ICMPv6 被預設放行所以 ping6 正常,真正走 IPv6 的 UDP 5540 卻被丟掉,而且配對後的連線走 link-local,fe80::/10 也必須放行。文…",
+      "image": null,
+      "publishedAt": "2026-10-05T07:16:45Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/home-assistant-google-home-matter-hub",
+      "detailPath": "articles/fd92cb89b92cc98bf4d2cd85.json"
+    },
+    {
+      "id": "ed3a96e3ef913500ff60275c",
+      "title": "＊＊經紀人",
+      "summary": "故事背景 # 這陣子做了一個單一歌手，他隸屬的團體是臺灣人人人皆知的程度，但歌手個人歌曲相對不知名，他那場演唱的個人曲我都沒聽過（我的問題）。 歌手上去自我介紹，反應似乎有點冷淡，於是說我是某某團的 XX，成年人才開始有反應，但小朋友依然冷淡。 後來歌手接著問小朋友：「你們有做過 XX 動作吧？我就是那個 XX 動作的叔叔！」小朋友才有些反應。 然而，那個 XX 動作的歌曲是團體的歌曲，並非歌手個人的歌曲，因此原本沒有要唱，理論上也不能唱（版權相關法律問題）。 臨時加歌 # 後來不確定是客戶還是活動公司詢問，能不能唱那首家喻戶曉的歌曲，經紀人一口答應。 讓我煩躁的點來了，經紀人這種常常要給檔案的角色，他竟然沒 隨身碟 ，只能 Airdrop。 啊不就還好我也是 iPhone，啊不就還好我也有能力可以在一分鐘內…",
+      "image": null,
+      "publishedAt": "2026-10-05T04:50:18Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/shit-artist-manager/",
+      "detailPath": "articles/ed3a96e3ef913500ff60275c.json"
+    },
+    {
+      "id": "a672eb4524956c8f34730a5e",
+      "title": "干点正事",
+      "summary": "假期里知道了两条消息，一悲一喜。 悲的是一条事实：自 1997 年非那雄胺获批用于治疗雄秃以后，FDA 针对雄秃就再也没有批准过新药。换句话来说，如果你很关注秃顶或者生发类的内容，这些年来在网上被算法系统推荐过无数篇最新论文，听说过无数次兴高采烈的预告消息，它们全都是扯，一个都没有变成现实。 因此，即便你一头乌黑浓密的秀发，当你见到一位秃顶人士时，也麻烦你稍微表示一点尊重之意。因为对方不是顶着一块光头皮，而是人类医学近三十年来毫无任何建树的绝顶难题。别看今天 AI 帮着合成这个药，分析出那个病因，秃依然是秃，没有什么新办法。 总之一句话，人类不行。为什么还没有外星人降临地球建立行星际外交关系，交换文明成果？换了是我，我也不会浪费燃料。用望远镜看一眼，只要这个星球上还有很多星星点点的反光，就说明该星球文明程度不…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimvULTClLb1GpR6dZYrNhNWENK6VQER2la1DlMv_9gfsDqsdrqTRStwiZIv-y6hGO4C917YxxLQ_qJTEumTMMdLrvNLZl56UfbzynCAYlTB-zhUVsSwbQ6dUBNLeMFKidah8tbNZrD77sXSDt1TwFKQxbrOkLs6_UPY7uST6c0TMhMhzt_O6SStsemdOs/s72-w451-h599-c/hecaitou_A_young_light_cavalryman_stands_on_a_rooftop_on_hors_f225630d-8bb5-4874-b497-d2393eb01163_0-gigapixel-cgi-2x.jpeg",
+      "publishedAt": "2026-10-05T04:30:12Z",
+      "sourceId": "095c6fbac5bbadfd",
+      "sourceTitle": "槽边往事",
+      "link": "https://www.hecaitou.com/2026/10/do-some-real-work-for-once.html",
+      "detailPath": "articles/a672eb4524956c8f34730a5e.json"
+    },
+    {
+      "id": "1dd1e9bbb2c2184a3ca0bc16",
+      "title": "誰有資格被稱作臺灣台語",
+      "summary": "前言 # 先前其實寫過一篇〈 臺語與臺灣閩南語 〉，講述臺語表示臺灣的語言，並質疑用臺語來直接代稱臺灣閩南語的合理性。 這篇的理念一樣，但對於官方現在（2026）的使用偏好展開討論。 政府偏好用語 # 前陣子做了一個學生語文競賽的頒獎典禮活動硬體，其中關於 臺灣閩南語 的各項目，名稱是使用 臺灣台語 。 在 Wikipedia 上是這樣描述的： 臺灣話 = 臺灣台語 = 臺灣閩南語，並簡稱爲臺語。 比賽項目除了臺灣閩南語外，還有臺灣客語、各種原住民語的項目。 我的疑問是：爲何臺灣的變體客語是臺灣客語，臺灣的變體閩南語是臺灣台語？ 難道原住民語跟客語不是臺灣人的語言嗎？沒有資格被稱爲台語嗎？ 理由 # 那麼，政府選擇用臺灣台語做爲臺灣閩南語的理由是什麼？ 支持臺灣台語的族群認爲，使用臺灣閩南語會讓人忽略這套語言…",
+      "image": null,
+      "publishedAt": "2026-10-05T03:36:09Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/taiwanese-taiwanese/",
+      "detailPath": "articles/1dd1e9bbb2c2184a3ca0bc16.json"
+    },
+    {
+      "id": "fb2cf22db60e9bb460e69d9a",
+      "title": "Project Sekai 六週年感謝祭：好看又好玩！",
+      "summary": "這次的 Project Sekai 六週年感謝祭 ，和 我上次看過的五週年演唱會 一樣的地方是：我看的也是在馬來西亞戲院播映的現場轉播版。 至於不同之處則是： 此次感謝祭並非 3DCG 實時 動態捕捉 呈現配上現場樂團伴奏，而是恰好相反：聲優本尊們以真人形象現身並隨著預錄好的現成伴奏帶實時演唱。 除了歌唱表演的部分以外，這個感謝祭也設有「聲優朗讀劇」與「現場講談會」兩個環節。 在「朗讀劇」環節中，其中一些令我印象深刻的橋段如下： Toya（冬彌）「出人意料」地說出萌度爆棚的 super uki uki wonderhoy（此為預錄橋段）。 Akito（彰人）的聲優現場模仿 More More Jump! 版本的初音未來​ ， 從而實現他想成為屋頂偶像的夢想 。 Mafuyu（真冬）的聲優現場模仿 Wonder…",
+      "image": "https://microblog.ttheng.com/blog/img224.jpg",
+      "publishedAt": "2026-10-05T02:47:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/project-sekai-6th-anni-thanks-festival-live-viewing/",
+      "detailPath": "articles/fb2cf22db60e9bb460e69d9a.json"
+    },
+    {
       "id": "38a583ec502455b31cba651e",
       "title": "失眠大王2-哩哩扣扣的事",
       "summary": "在網路上有看過網友提問過：我很好奇，那些一躺下來就能直接睡著的人是怎樣做到的？難道他們不會在睡覺之前，想一堆哩 […] The post 失眠大王2-哩哩扣扣的事 first appeared on susushare.com .",
@@ -593,72 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_495/",
       "detailPath": "articles/c2bb2c94075ebad7ca1956da.json"
-    },
-    {
-      "id": "241099e7fc78264605db3597",
-      "title": "靈感你是在耍我吧",
-      "summary": "「得來不易的創作靈感常常都在最尷尬的時機出現」，這件事情我想許多人都有所體會吧。 準備入睡時、正在沖涼時、出門買菜（？）時、上廁所（？？）時，這一些情境，應該是比較常見的其中幾個。 不過，我的一些創作靈感最近不知幹嘛，更上一層樓地選了個尷尬得不能再尷尬的時機蹦出來： 睡覺發夢的時候！ 欸不是，我夢醒過後，對夢境的記憶有很大機率都已經消失掉一大半了，是想要我怎樣將它寫下來？什麼都不管地趕緊爬下床，打開電腦將它記起來？ 「沒錯啊，啊不然咧？」我彷彿聽見那靈感如此地嘲弄着。 難怪以前的一些知名創作者（無論是畫家還是作曲家等等），爲了儘快捕捉那稍縱即逝的靈感，什麼奇怪的行爲都做得出來⋯⋯",
-      "image": null,
-      "publishedAt": "2026-10-01T04:04:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/idea-spark-trolling-me/",
-      "detailPath": "articles/241099e7fc78264605db3597.json"
-    },
-    {
-      "id": "a0038c3a6a02480e3faa04cb",
-      "title": "《纽约时报》：21世纪最佳电影100部",
-      "summary": "2025年6月27日，《纽约时报》数据新闻部门发布“21世纪最佳电影100部”（The 100 Best Movies of the 21st Century）榜单，评选范围涵盖2000年1月1日以来全球发行的电影作品。该榜单通过邀请奉俊昊、阿莫多瓦、李沧东等导演，米奇·麦迪逊、卡莉·史派妮等演员及影评人共计超过500位从业者，以每人提名10部影片的方式汇总生成。 评选人包括导演阿莫多瓦、奉俊昊、李沧东、王子逸、索菲娅·科波拉、席琳·宋、肖恩·贝克、约阿希姆·提尔、卢卡·瓜达尼诺、埃德加·赖特、穆罕默德·拉索罗夫等大咖，还有米奇·麦迪逊、卡莉·史派妮、卡西·阿弗莱克在内的演员，以及制片人艾米·帕斯卡、作家史蒂芬·金等各领域的人物。 投票方式是，每位投票者选出自己心中10部2000年1月1日之后上映的影片，使用…",
-      "image": null,
-      "publishedAt": "2026-10-01T03:44:06Z",
-      "sourceId": "790d01957a9e753b",
-      "sourceTitle": "月光博客",
-      "link": "https://www.williamlong.info/archives/7564.html",
-      "detailPath": "articles/a0038c3a6a02480e3faa04cb.json"
-    },
-    {
-      "id": "15469b4699d3ba52c439a6de",
-      "title": "小孩帶出國沒記憶",
-      "summary": "偶爾會聽到家長聊天提到，不要帶小朋友出國，因爲長大就忘了，只是浪費錢而已。 應該是升小學一年級的時候吧，父母去北海道玩，我則被放生在舅舅家，那時我帶著 CD Player，以及姐姐不知道從哪弄來的 CD，最有印象的是林俊傑的〈編號89757〉，聽了不知道幾遍，陪我度過那段非常孤單且漫長的一週。 要說小孩沒有記憶嗎？當時沒有跟到的事情，以及當時我在哪裡做了什麼，都還是一清二楚的。 再更小的時候，印象中還沒上幼兒園，母親把各種浴廁清潔劑藏在馬桶後方，不特別彎腰去看是看不到的，但我看到了。我問道為什麼要放那邊，這樣很難拿吧，母親的理由是怕我會去玩，我嗤之以鼻地回覆：「誰要玩那個 = =」，當時覺得不開心的點是因為母親似乎把我當智障。（當然長大了能理解是保護一個不到五歲的小孩） 當時還有件事情我印象深刻，有次趁大人都…",
-      "image": null,
-      "publishedAt": "2026-10-01T02:21:47Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/kid-go-aboard-memory/",
-      "detailPath": "articles/15469b4699d3ba52c439a6de.json"
-    },
-    {
-      "id": "5576ec46ffe6761e1f11e196",
-      "title": "效果器的重製與抄襲",
-      "summary": "在淘宝上，有很多重製版（復刻版）與抄襲版的效果器，來說說我的看法。 效果器的電路技術，其實早在約 70 年前就已經成熟，後續的「新」產品都是後人發揮創意，利用大量實驗，排列出新的電路與音色。 在現代做原創效果器是非常吃力不討好的事情，因為其他人只要拆開來就能輕易重製。 對我來說，所謂的抄襲，是把原品牌的品牌也直接印製在效果器上，或者用類似的文字替代，外觀也神似原版，讓不知道的人以為抄襲品為真品，有詐欺意味，我是絕對不會買這種東西的。 另一種我所謂的重製版（復刻版），是在效果器上印了自己的品牌名（或者是完全不寫品牌），外觀設計跟原本可能也相差很多，但電路是參考原版的沒錯。而那些製作者會在賣場敘述中說道，自己這顆與原版哪些部分用一樣的零件，哪些部分又用不一樣的零件。 這與被玩爛的耳機市場類似，市面上充斥大量 ie…",
-      "image": null,
-      "publishedAt": "2026-10-01T02:11:01Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/remake-and-plagiarism/",
-      "detailPath": "articles/5576ec46ffe6761e1f11e196.json"
-    },
-    {
-      "id": "e828d169cddc7a49f7acbb0e",
-      "title": "免費健身資源網站：Darebee",
-      "summary": "它交還給我運動的主體性：不依賴某間健身房的教練、不冀望某個爆紅的運動會如何改變我，而是我選擇今天想做什麼有趣好玩的運動",
-      "image": "https://alicehsu.blog/images/Post/75/2.png",
-      "publishedAt": "2026-10-01T02:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2026/09/darebee/",
-      "detailPath": "articles/e828d169cddc7a49f7acbb0e.json"
-    },
-    {
-      "id": "eca9feb8dcd8097a8ce269d9",
-      "title": "沒有必要是你",
-      "summary": "「沒有必要是你」聽起來是有點自私的想法。",
-      "image": null,
-      "publishedAt": "2026-10-01T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/not-necessarily-you",
-      "detailPath": "articles/eca9feb8dcd8097a8ce269d9.json"
     }
   ]
 }

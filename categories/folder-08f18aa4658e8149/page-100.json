@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "700ad0a0fa945f3ba329310b",
+      "title": "GFW Archaeology: gfw-looking-glass.sh",
+      "summary": "I came across a one-liner script by @gfwrev and got seriously impressed by it. Although it does not work anymore, I still would like to have a writeup on it for its beauty and for the author’s creativity. The one-liner named gfw-looking-glass.sh is as follows: while true; do printf \"\\0\\0\\1\\0\\0\\1\\0\\0\\0\\0\\0\\0\\6wux.ru\\300\" | nc -uq1 $SOME_IP 53 | hd -s20; done…",
+      "image": null,
+      "publishedAt": "2020-03-08T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/gfw_looking_glass/en/",
+      "detailPath": "articles/700ad0a0fa945f3ba329310b.json"
+    },
+    {
+      "id": "987d9d34f99476fe0ef4f9e9",
+      "title": "GFW考古：gfw-looking-glass.sh",
+      "summary": "我近日被 @gfwrev 所写的 一行脚本 深深吸引。尽管它已经失效，但它所流露出来的创意与美感仍值得被记录。 这行名为 gfw-looking-glass.sh 的脚本如下： while true; do printf \"\\0\\0\\1\\0\\0\\1\\0\\0\\0\\0\\0\\0\\6wux.ru\\300\" | nc -uq1 $SOME_IP 53 | hd -s20; done 如下图所示，它可以被用来 打印出GFW内存中的某一部分 。这是怎么做到的呢? nc nc -uq1 $SOME_IP 53 会把在stdin收到的信息以UDP包的形式发送给 $SOME_IP 的53端口。如@gfwrev所 解释 的， $SOME_IP 可以是满足以下两个条件的任何IP地址：1） 不会 回应发送到其53端口的任何信息；2）在…",
+      "image": null,
+      "publishedAt": "2020-03-08T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/gfw_looking_glass/zh/",
+      "detailPath": "articles/987d9d34f99476fe0ef4f9e9.json"
+    },
+    {
+      "id": "53695d056b31f36d4364823f",
+      "title": "为 COVID-19 准备家用应急物资",
+      "summary": "眼见 COVID-19 在全世界各处开始广泛社区传播，感觉着陆本地不过是时间问题，再不动手就太被动了。之前没有相关经验的我们，花了一个星期的时间准备了一些家用应急储备，在这里分享心得。 背景 # 这次应对的是世界范围内 COVID-19 的爆发。地广人稀对于传染病应对来说是个优势，用这个安慰自己口罩买不到的话就不死磕了，只要宅家不出门病毒能耐我何。 再考虑社会背景。我所在的 Pacific Northwest 地区既没有龙卷风也没有（太多！）山火，火山爆发和地震倒是有一些。相对于北美其他硬核地区来说，总体来说储备意识不是很强。举个例子，冬天的时候一旦预报下雪（只要超过一两寸厚），超市货架在接下来两天里就会被戏剧性地抢空。 最后是个人背景。宅，动手能力差，没有生存方面的爱好、兴趣或经验（连 camping 也没…",
+      "image": "https://fourhappylions.com/posts/prepping-for-covid19/waterbob_hu_ae97236db924238b.jpg",
+      "publishedAt": "2020-03-07T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/prepping-for-covid19/",
+      "detailPath": "articles/53695d056b31f36d4364823f.json"
+    },
+    {
       "id": "ef010d11ab05ee2ae6b6ac41",
       "title": "优化算法之Python穷举数独",
       "summary": "前言 本文的 Github 仓库 https://github.com/taurusxin/Sudoku Python 穷举 Sudoku 玩法简介（来自百度百科） 数独盘面是个九宫，每一宫又分为九个小格。在这八十一格中给出一定的已知数字和解题条件，利用逻辑和推理，在其他的空格上填入1-9的数字。使1-9每个数字在每一行、每一列和每一宫中都只出现一次，所以又称“九宫格”。 从初中开始第一次接触数独，大大小小的也玩过很多。 学了计算机之后自然就会用算法去解决一些问题，本文讲解的就是在穷举数独之时，对相应的算法进行优化。 开发环境 VSCode Python 3.x 在开始之前，先配置一下 VSCode 的运行环境，可以直接克隆我的Github仓库。 因为默认VSCode在文件夹下调试的时候，会以当前正在编辑的文…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2019/07/27/Android-Hardware-Layer/",
       "detailPath": "articles/868c2b89f39a89ed82cec085.json"
-    },
-    {
-      "id": "f26fbb85ad53a8b3c89a2117",
-      "title": "做个自我介绍吧",
-      "summary": "嗨！ 这里是欣哥的独立博客 我是谁 你可以喊我叫我 欣哥 来自高考数学经常全国最难的浙江省 苦逼在读CS专业学生 旅行、摄影爱好者 重度咖啡依赖 收集各种简约的东西 这里有什么 这里会写一些个人的生活内容、游记，当然不乏一些技术性的文章 欢迎你关注我，给我留个言，收个藏 当然更感谢的是可爱的你发现了万千博客中的我的博客",
-      "image": null,
-      "publishedAt": "2019-07-26T17:36:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/hello/",
-      "detailPath": "articles/f26fbb85ad53a8b3c89a2117.json"
-    },
-    {
-      "id": "d805dd8d05e87e2be8a314e2",
-      "title": "Android Systrace 基础知识 -- 分析 Systrace 预备知识",
-      "summary": "本文是 Systrace 系列文章的第二篇，主要是讲解一些分析 Systrace 的预备知识, 有了这些预备知识, 分析 Systrace 才会事半功倍, 更快也更有效率地找到问题点. 本文介绍了如何查看 Systrace 中的线程状态, 如何对线程的唤醒信息进行分析, 如何解读信息区的数据, 以及介绍了常用的快捷键. 通过本篇文章的学习, 相信你可以掌握进程和线程相关的一些信息, 也知道如何查看复杂的 Systrace 中包含的关键信息",
-      "image": null,
-      "publishedAt": "2019-07-23T14:09:59Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/07/23/Android-Systrace-Pre/",
-      "detailPath": "articles/d805dd8d05e87e2be8a314e2.json"
-    },
-    {
-      "id": "b153642d798802844592bf7f",
-      "title": "家有新生娃",
-      "summary": "有娃生活的元年开始了。 之前我们就决定，由我和 Miki 两个人来照顾 Baby。Miki 的产假从住院的那天开始。预料到刚开始的手忙脚乱，我也提前请好了两周的假。可真正拖着一身疲惫从医院回到家，面对全新而未知的生活，我们还是不知道该从何下手。 作息 # 首先要安排的是我和 Miki 的作息。Miki 承担着哺乳的重任，产后的身体也需要恢复，基本的睡眠还是要保证。因此，我们决定由 Miki 值白班，我值夜班。 回想在医院的两个晚上，感觉新生儿的需求似乎很简单：除了吃就是睡；哭闹的原因不是饿了，就是拉了。当时看来，基本上就是要定时喂奶，勤查勤换尿布。如果哭闹还不停止，护士就建议我们弯下腰，用双臂从两侧环住躺在床上的 Baby，这会让 TA 感到安心，就像在妈妈肚子里被羊水包裹着一样。当时亲测有效。 然而，回家后…",
-      "image": null,
-      "publishedAt": "2019-07-21T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/newborn-at-home/",
-      "detailPath": "articles/b153642d798802844592bf7f.json"
     }
   ]
 }

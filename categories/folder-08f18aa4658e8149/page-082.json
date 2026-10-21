@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "3e82e5e7fef201bea7d7f700",
+      "title": "Gumball 現場舞台劇",
+      "summary": "https://thehoneycombers.com/singapore/event/amazing-world-gumball-takeover-live-show/ 《阿甘妙世界》曾經在新加坡舉辦過 現場舞台劇 ？！我之前都沒聽說過。",
+      "image": null,
+      "publishedAt": "2024-07-03T15:56:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/gumball-live-stage-performance/",
+      "detailPath": "articles/3e82e5e7fef201bea7d7f700.json"
+    },
+    {
+      "id": "6406e58dd1512a44246a10eb",
+      "title": "AWS Account ID Reconnaissance",
+      "summary": "当获得一个AWS Account ID之后我们可能会对这个ID去做一些信息收集，而该账户的 IAM User/Role 是会被考虑的一个信息。下面就记一下如何通过一个 Account ID 收集该账户的 IAM User/Role。 使用角色信任策略 假设我们现在拿到了一个账户ID为 427648302155 ，我现在想知道这个账户下有哪些User和Role。 首先，我们在自己的AWS账户里随便新建一个角色，并将信任策略配置为 { \"Version\": \"2012-10-17\", \"Statement\": [ { \"Sid\": \"Statement1\", \"Effect\": \"Deny\", \"Principal\": { \"AWS\": \"*\" }, \"Action\": \"sts:AssumeRole\" } ]…",
+      "image": "https://skyblu3519.github.io/post-images/AWSIAMRolesReconnaissance/1720015041788-f8c779ad-ba14-4682-b64f-ed71f0c1722c.png",
+      "publishedAt": "2024-07-03T15:16:12Z",
+      "sourceId": "4f5bf353ca5bd538",
+      "sourceTitle": "skkyblu3",
+      "link": "https://skyblu3519.github.io/post/aws-account-id-reconnaissance/",
+      "detailPath": "articles/6406e58dd1512a44246a10eb.json"
+    },
+    {
+      "id": "18499d43debf6065fa6924fb",
+      "title": "[Pwnedlabs]Command Injection to EC2 User Data Privilege Escalation",
+      "summary": "题目地址： https://pwnedlabs.io/labs/command-injection-to-ec2-user-data-privilege-escalation 题目描述： After a successful smishing attack on your client, Huge Logistics, you've obtained AWS credentials for a user account. Your task is to use these initial credentials to explore and possibly expand your access within their cloud environment. Your objective is to demo…",
+      "image": "https://skyblu3519.github.io/post-images/Ec2UserData/1719995161639-adbba1ba-52de-4f19-900a-d6ab377efac2.png",
+      "publishedAt": "2024-07-03T15:10:08Z",
+      "sourceId": "4f5bf353ca5bd538",
+      "sourceTitle": "skkyblu3",
+      "link": "https://skyblu3519.github.io/post/pwnedlabscommand-injection-to-ec2-user-data-privilege-escalation/",
+      "detailPath": "articles/18499d43debf6065fa6924fb.json"
+    },
+    {
       "id": "1cee808aa1aa78f7abf32cd5",
       "title": "你不會唸",
       "summary": "- 巷弄 ㄒㄧㄤˋ ㄌㄨㄥˋ",
@@ -626,39 +659,6 @@
       "sourceTitle": "Blah Blah Booooom",
       "link": "https://zhuzi.dev/posts/2024-05-24-cf-r2-bucket/",
       "detailPath": "articles/1604dd57c90865dddb33a361.json"
-    },
-    {
-      "id": "71117ac7e89baa019b2a2c7b",
-      "title": "仙逆",
-      "summary": "最近每天睡前都在看国漫《仙逆》，目前还在连载中，只更新到了37集，大概占整体进度的不到十分之一。 对于这类由小说改编而成的动漫来说，这还是我第一次在没有看过原著的情况下就直接看动漫。好处是不会被原著剧情影响对动漫的期待，坏处则是因为动漫剧情太快，有些地方感觉略显跳脱。 这是一本很经典的仙侠小说，从2009年开始在起点上连载，直到2012年才完结。 那时候我还在上初中，看的都是那些被撕成一页一页的盗版小说。直到后面能看网文的时候，也只是知道诸如《斗罗大陆》、《斗破苍穹》、《武动乾坤》之类修仙小说，而《仙逆》是后来时常见网友提到才知道，但那时候已经有热度更高更好看的小说，所以对此就没了兴趣。 现在我已经把这本小说上传到了微信读书，打算偶尔看看。毕竟有时候看爽文是真的很爽。",
-      "image": null,
-      "publishedAt": "2024-05-23T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/xian-ni",
-      "detailPath": "articles/71117ac7e89baa019b2a2c7b.json"
-    },
-    {
-      "id": "e3b2e946cb65e8c0a6577c9f",
-      "title": "一个Android开发者的Google IO 2024信息汇总",
-      "summary": "AI和大模型很火，今年的google io上面感觉各个方向都和AI有关，Android平台相关的东西倒是感觉不太多了。我这里整理一下Android相关的信息。Android主要就是Android 15的发布，以及jetpack compose的更新和google play的一些更新。 AI与Android Android 14开始手机会内置Gemini Nano，开发者可以通过AI Core来调用AI的能力，目前是google pixel 8 pro和三星的s24已经内置了。除了端上，开发这还可以使用Firebase新提供的一些能力使用AI模型。 对于开发者来说，除了开发应用提供AI能力给用户，开发过程中也能体验到google提供的AI能力，下载Android Studio Koala即可使用，提供了类似gi…",
-      "image": "https://img.isming.me/image/io24-stacks.webp",
-      "publishedAt": "2024-05-21T13:53:44Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-05-21-google-io/?utm_source=rss",
-      "detailPath": "articles/e3b2e946cb65e8c0a6577c9f.json"
-    },
-    {
-      "id": "cd3d79ddf09b74d47e83df5c",
-      "title": "Android Perfetto 系列 3：熟悉 Perfetto View",
-      "summary": "本篇是 Perfetto 系列文章的第三篇，前两篇介绍了 Perfetto 是什么以及 Perfetto Trace 怎么抓，本篇主要是在网页端打开 Perfetto Trace 之后，面对复杂的 Perfetto 信息该怎么看。 随着 Google 宣布 Systrace 工具停更，推出 Perfetto 工具，Perfetto 在我的日常工作中已经基本能取代 Systrace 工具。同时 Oppo、Vivo 等大厂也已经把 Systrace 切换成了 Perfetto，许多新接触 Android 性能优化的小伙伴对于 Perfetto 那眼花缭乱的界面和复杂的功能感觉头疼，希望我能把之前的那些 Systrace 文章使用 Perfetto 来呈现。",
-      "image": null,
-      "publishedAt": "2024-05-20T23:30:23Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-03-how-to-analysis-perfetto/",
-      "detailPath": "articles/cd3d79ddf09b74d47e83df5c.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "607a3859735262b9fe14f104",
+      "title": "四月｜物理掃除，賽博裝修",
+      "summary": "四月的倒數第二天是雷",
+      "image": null,
+      "publishedAt": "2025-04-29T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/apr-2025-recap/",
+      "detailPath": "articles/607a3859735262b9fe14f104.json"
+    },
+    {
+      "id": "c5b143ceaa13fd4fb33287a1",
+      "title": "FFmpeg",
+      "summary": "最近收到一封讀者來信。信裡提到他的一個困擾：",
+      "image": "https://wiwi.blog/assets/images/256videos-32-c33cf19af805456d27c0b5eb536fba73.png",
+      "publishedAt": "2025-04-29T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/ffmpeg",
+      "detailPath": "articles/c5b143ceaa13fd4fb33287a1.json"
+    },
+    {
+      "id": "05cb273119780f661af47e84",
+      "title": "打工记（五）",
+      "summary": "从新冠开始，大家如果稍微花两小时关注一下各种公司管理层的发言，可以发现绝大多数就是跟风，人云亦云，别的公司怎么搞我就怎么搞。上个月还在说我们要扩展市场积极招人，下个月就要收缩预算降本增效；去年以人为本 remote forever，今年就重视面对面的交流和 productivity；至于当下的流行，人人都知道，是 Gen AI。",
+      "image": null,
+      "publishedAt": "2025-04-28T23:48:58Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/roam/gravedigger-of-capitalism-05/",
+      "detailPath": "articles/05cb273119780f661af47e84.json"
+    },
+    {
       "id": "07a77d15d3552a42dcc08c16",
       "title": "怎么摸鱼的时候感觉更累呢",
       "summary": "为什么有时候觉得摸鱼的时候会很累，而且也不止一次这样了。 干活的时候倒是没这种感觉。 可能是心思都放在代码里，或者是令人焦头烂额的问题上。 等到突然无事可做的时候，就会开始摸鱼。 刷刷手机，看看视频，就这样循环往复，而且还要装作自己有事可做的样子。 时间一长。 神经变得放松，困意就会上来。目光变得呆滞，脑子也跟着混沌。 于是就在这种为了假装自己有事可做而挖空心思假装做事的状态，和实在是无聊不知道干嘛没有目标感的迷茫状态中来回切换。 心力交瘁，自然就觉得累了。 哈哈，看来我是真的牛马…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/no-youre-not-special",
       "detailPath": "articles/288c8bacaf91c99adc1112ee.json"
-    },
-    {
-      "id": "ffda40a98a192150f2cde3fa",
-      "title": "Gemini 2.5 Pro 生成 App 第二彈！",
-      "summary": "昨天（4/8）才剛製作了 動態亂數產生器 ，沒想到一玩下去愛不釋手，馬上又開發了第二個 APP！ 音名隨機產生器 # 這個是讓吉他手練習琴格絕對音的工具，當畫面顯示音名時，就要快速找到到那一格的訓練 APP！ Note Snap Fret Shot FretShot 是我後來做的新版本，推薦你用它。（2026/03/31） 這次的難度對 Gemini 2.5 Pro 就稍微難了一點，我一共生成了 4 次才變成我要的樣子。 最後再自行修改一下字的樣式，就完成了！ 加上上傳到伺服器，整個過程可能不到半小時。 AI 革命 # 這整個過程讓 Eddie 很興奮，有一種「工業革命」的既視感，就像人類第一次把各種農用設備投入使用，取代掉大量人力、時間，或許地球已經往下一個時代邁進了。 檔案原始碼： github （沒有…",
-      "image": null,
-      "publishedAt": "2025-04-09T09:24:49Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/gemini2.5pro2/",
-      "detailPath": "articles/ffda40a98a192150f2cde3fa.json"
-    },
-    {
-      "id": "639aafc2a05b59f4fc9bcfb8",
-      "title": "Rsync 同步工具超快！部署 Hugo 爲範例。",
-      "summary": "前言 # 以往 Eddie 製作部落格（本站）的方式是，在本地端用 Hugo 生成好網站（Public）後，打開圖形界面 App「Filezilla」，填入伺服器的密碼，再把檔案複製到伺服器去，操作就像是 Windows 檔案總管或 macOS 的 Finder 一樣簡單。 拋棄 Filezilla # 最近，網站的檔案數量來到 700 多了，雖然並不是很多，但是透過 Filezilla 上傳網站，也要個 5 分鐘，就有一點太久了！ 擁抱 Rsync # Rsync 是純文字 App，上傳的指令如下： rsync -avz --delete -e \"ssh -p 22\" ./public/ username@your.server.com:/var/www/html/your-site-folder 說明 #…",
-      "image": null,
-      "publishedAt": "2025-04-09T08:49:44Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/rsync/",
-      "detailPath": "articles/639aafc2a05b59f4fc9bcfb8.json"
-    },
-    {
-      "id": "2cf0fb4b09a1e66f3676d858",
-      "title": "关税与贸易公平",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-04-09T03:40:31Z",
-      "sourceId": "a694ae3a017dd381",
-      "sourceTitle": "科学的历史观",
-      "link": "https://mp.weixin.qq.com/s/cBmD1l7ebo9HTfXtJRw43g",
-      "detailPath": "articles/2cf0fb4b09a1e66f3676d858.json"
     }
   ]
 }

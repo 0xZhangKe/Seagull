@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "c7a8ea6afd42fcdde0f37bf0",
+      "title": "Coffee Break Clojure, Transducer",
+      "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时，…",
+      "image": "https://img.eltr.ac/geedeapro/article/clj8/Left-fold-transformation.png",
+      "publishedAt": "2026-10-18T04:26:01Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj8/",
+      "detailPath": "articles/c7a8ea6afd42fcdde0f37bf0.json"
+    },
+    {
       "id": "3e1a11fa2a63f0e121f5156d",
       "title": "傍晚回家路上的风",
       "summary": "不是降温，是一种刚好合适的松弛感。",
@@ -648,17 +659,6 @@
       "sourceTitle": "Rolen's Blog",
       "link": "https://rolen.wiki/what-practice-is/",
       "detailPath": "articles/5adcced596338bd892a17139.json"
-    },
-    {
-      "id": "eec2450bcfe5db2e404bbfda",
-      "title": "真心，真的很珍貴(진심, 정말 소중한 것)",
-      "summary": "站在首爾塔觀察愛情鎖的時候 其實有很多感觸 但這些感觸對我來說似乎是有一點偏悲傷、負面的 那些愛情鎖，是許多人當下對另一半真心的展現，有人祈禱要永遠在一起，有人關心著另一半的身體健康…. 那些滿滿擁有真心的愛情鎖，真的是很珍貴的一件事情 因為「真心」這種東西，是無法用任何東西去換來的 再多的錢、名氣跟地位、多帥或是多美麗都無法換來真的愛一個人的真心 感情，是無法控制的 真心之所以珍貴，是因為這個無法強求 也無法用其他東西去交換過來 就像… 一個人可以付出很多、非常真誠，也可以努力成為更好的人 但對方依然可能不會心動 聽起來是滿殘酷的一件事情 也正因為漸漸明白，愛情是多麼無法控制、無法強求的事情， 所以我才更加覺得… 那些能夠彼此相愛的人們 究竟擁有著多麼珍貴的東西 진심, 정말 소중한 것 남산서울타워에서…",
-      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/chihyoon/c2152a3c-9950-43ba-917e-e0dfa507a55e-1.webp",
-      "publishedAt": "2026-10-15T04:37:25Z",
-      "sourceId": "51aefe52efef4bf4",
-      "sourceTitle": "一起和 Yoon 聊心事",
-      "link": "https://yoon.club/4969/",
-      "detailPath": "articles/eec2450bcfe5db2e404bbfda.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "6935f1cd355d4141eedde361",
+      "title": "「听不懂话」的销售",
+      "summary": "又是今天的一个真实事件引发的一段思考",
+      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/sol/sebastiaan-stam-rchzt-jli9g-unsplash.webp",
+      "publishedAt": "2026-10-21T08:00:09Z",
+      "sourceId": "05ada84875558017",
+      "sourceTitle": "So!azy",
+      "link": "https://blog.solazy.me/20261020/",
+      "detailPath": "articles/6935f1cd355d4141eedde361.json"
+    },
+    {
       "id": "b05d27adfce4b8fc6e856182",
       "title": "私立景之域学院企划",
       "summary": "前段时间突发奇想，想到了一种学院的题材。 那么远景的幻想原创小说绝对是吃书了，或者大概率只是这个企划完结之后再 … 继续阅读 私立景之域学院企划 →",
@@ -648,17 +659,6 @@
       "sourceTitle": "YangBear'Blog ᓚᘏᗢ",
       "link": "https://yangbear.bearblog.dev/kangaesuginai/",
       "detailPath": "articles/7489027433074cc1d34470c3.json"
-    },
-    {
-      "id": "c7a8ea6afd42fcdde0f37bf0",
-      "title": "Coffee Break Clojure, Transducer",
-      "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时，…",
-      "image": "https://img.eltr.ac/geedeapro/article/clj8/Left-fold-transformation.png",
-      "publishedAt": "2026-10-18T04:26:01Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/clj8/",
-      "detailPath": "articles/c7a8ea6afd42fcdde0f37bf0.json"
     }
   ]
 }

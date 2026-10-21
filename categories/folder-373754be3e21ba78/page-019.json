@@ -1,6 +1,182 @@
 {
   "items": [
     {
+      "id": "567fb5798bbf3d966e85e893",
+      "title": "Forward Declaration in C++",
+      "summary": "In C++, `forward declaration`` is a powerful tool that allows you to declare the existence of various entities before providing their full definitions. This technique is particularly useful for resolving circular dependencies, improving code organization, and optimizing compile times. In this blog post, we will explore forward declaration for a wide range o…",
+      "image": null,
+      "publishedAt": "2023-10-01T00:00:00Z",
+      "sourceId": "46b0ff3e55cf7fb7",
+      "sourceTitle": "Suneet Agrawal",
+      "link": "https://agrawalsuneet.github.io/blogs/forward-declaration-in-c++/",
+      "detailPath": "articles/567fb5798bbf3d966e85e893.json"
+    },
+    {
+      "id": "d742f55924312d57cab1e437",
+      "title": "iOS App Self-Signing and Multi-Opening",
+      "summary": "A comprehensive guide to iOS app self-signing for multi-opening apps like WeChat and installing modified apps, covering certificate types, signing tools like 全能签, and software sources for IPA files.",
+      "image": "https://r2.uid.ac/files/fuPcXm.png",
+      "publishedAt": "2023-09-29T06:53:12Z",
+      "sourceId": "1dc4dbdb701e1314",
+      "sourceTitle": "Vincent's Notes",
+      "link": "https://missuo.me/posts/sign-ios-app/",
+      "detailPath": "articles/d742f55924312d57cab1e437.json"
+    },
+    {
+      "id": "d449bafdfaac127c4ea2a12c",
+      "title": "Taiwan Entry Permit Application",
+      "summary": "A guide to obtaining a Taiwan Entry Permit for mainland Chinese students studying abroad, covering eligibility requirements, required documents, and the transit strategy via third countries to bypass PRC exit controls.",
+      "image": "https://r2.uid.ac/files/EWEa8v.jpg",
+      "publishedAt": "2023-09-29T00:23:42Z",
+      "sourceId": "1dc4dbdb701e1314",
+      "sourceTitle": "Vincent's Notes",
+      "link": "https://missuo.me/posts/taiwan-visa/",
+      "detailPath": "articles/d449bafdfaac127c4ea2a12c.json"
+    },
+    {
+      "id": "a3b4b4bbed615dc5e96b3486",
+      "title": "Switching to Elixir",
+      "summary": "A few months ago I started a new job at a company that uses Elixir as its main language on the backend. I've never written a line of Elixir or Erlang before in my life, but I've heard a lot about it and Erlang is familiar because I've played around with Prolog for a bit. Thanks t",
+      "image": null,
+      "publishedAt": "2023-09-28T00:00:00Z",
+      "sourceId": "49031c3e0520bdc7",
+      "sourceTitle": "leemeichin.com",
+      "link": "https://thoughts.meichin.com/posts/switching-to-elixir",
+      "detailPath": "articles/a3b4b4bbed615dc5e96b3486.json"
+    },
+    {
+      "id": "eb949d34890ec26aef99de11",
+      "title": "Solving Thundering Herds with Request Coalescing in Go",
+      "summary": "Caches are a wonderful way to make your most frequent operations cheaper. If you’ve got a resource somewhere on disk (or a network hop away) that is accessed often, changes infrequently, and fits in memory, you’ve got an excellent candidate for a cache! Caching Celebrity Posts For example, consider a social media post from a famous celebrity. This celebrity…",
+      "image": null,
+      "publishedAt": "2023-09-28T00:00:00Z",
+      "sourceId": "a091871c54fd2c6a",
+      "sourceTitle": "Jaz's Blog",
+      "link": "https://jazco.dev/2023/09/28/request-coalescing/",
+      "detailPath": "articles/eb949d34890ec26aef99de11.json"
+    },
+    {
+      "id": "425774d048f4eb0d04a269d2",
+      "title": "Exploring Command-line space time",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2023-09-26T00:00:00Z",
+      "sourceId": "ce9ad60b092e38b0",
+      "sourceTitle": "fabiensanglard.net",
+      "link": "https://fabiensanglard.net/st/index.html",
+      "detailPath": "articles/425774d048f4eb0d04a269d2.json"
+    },
+    {
+      "id": "ec666c75abee95d6eeb14f43",
+      "title": "Enum vs Enum Class in C++",
+      "summary": "In C++, enumerations (enums) are a powerful tool for creating named sets of integer constants. They help improve code readability and maintainability by providing meaningful names to numeric values. However, C++ offers two ways to define enums: the traditional enum and the more modern enum class. In this blog, we’ll explore the differences between these two…",
+      "image": null,
+      "publishedAt": "2023-09-22T00:00:00Z",
+      "sourceId": "46b0ff3e55cf7fb7",
+      "sourceTitle": "Suneet Agrawal",
+      "link": "https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c++/",
+      "detailPath": "articles/ec666c75abee95d6eeb14f43.json"
+    },
+    {
+      "id": "c97f3430c899932cc466b7d4",
+      "title": "Let vs Var vs Const in JavaScript",
+      "summary": "JavaScript is a versatile and widely used programming language that offers multiple ways to declare variables, including let , var , and const . Each of these declarations serves a specific purpose and has its own scope and behavior. In this blog post, we’ll dive into the differences between let , var , and const in JavaScript with examples to help you unde…",
+      "image": null,
+      "publishedAt": "2023-09-21T00:00:00Z",
+      "sourceId": "46b0ff3e55cf7fb7",
+      "sourceTitle": "Suneet Agrawal",
+      "link": "https://agrawalsuneet.github.io/blogs/let-vs-var-const-in-javascript/",
+      "detailPath": "articles/c97f3430c899932cc466b7d4.json"
+    },
+    {
+      "id": "b19d5aceb03a4d3c3bd3be38",
+      "title": "\"AI\", and the trouble with inaccessible SaaS",
+      "summary": "I wasn't particularly enthused by the alpha release of Vercel's v0 UI generation tool this week. Provided with a prompt, it produces React code with Tailwind to style it. It's being marketed as a prototyping tool, but was described by Vercel's CEO on Twitter as \"production-grade\" . Well, which one is it? To be clear, my issue isn't with the concept of large…",
+      "image": null,
+      "publishedAt": "2023-09-17T00:00:00Z",
+      "sourceId": "b68af73fd9ede4e1",
+      "sourceTitle": "localghost.dev",
+      "link": "https://localghost.dev/blog/ai-and-the-trouble-with-inaccessible-saas/",
+      "detailPath": "articles/b19d5aceb03a4d3c3bd3be38.json"
+    },
+    {
+      "id": "7a1ebddf3126c05e071720f8",
+      "title": "Satun",
+      "summary": "I jump on the ferry, five minutes walk from the marina to complete my obligatory visa run. Less than 90 minutes takes me to Satun in Thailand. Against all the odds the hotel staff are waiting for me at the terminal with my car. Next day I head off to PSS shipyard to see Des and Ked Kearns who are just about to finish the rebuild of Cariad. The owner was the…",
+      "image": null,
+      "publishedAt": "2023-09-12T06:37:05Z",
+      "sourceId": "922a5b664a0ecc5c",
+      "sourceTitle": "Wildfox's Web Diary - News Feed",
+      "link": null,
+      "detailPath": "articles/7a1ebddf3126c05e071720f8.json"
+    },
+    {
+      "id": "18df6218c68d7c0c60ced3b5",
+      "title": "To rent or to sell, that is the question",
+      "summary": "As a real estate developer, one of the big decisions you need to make is whether you will rent or sell the buildings you've built. Income from rentals flows in steadily over years, while income from sales hits all at once. This essential difference is simple but has many implications for your risk profile, upside potential, capital requirements, and busines…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/dc3a93d8-14c3-4c9b-8101-44b87664a56e/043001df-5c0d-45f3-9dc6-b66cd6d8be00.png",
+      "publishedAt": "2023-09-10T23:54:08Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/to-rent-or-to-sell-that-is-the-question",
+      "detailPath": "articles/18df6218c68d7c0c60ced3b5.json"
+    },
+    {
+      "id": "6604c4c0eaae692e5455ea7a",
+      "title": "Field notes: Miami",
+      "summary": "Update 5-Dec-2021: Read the updated version of these notes here. These field notes are a bit different from previous cities I've explored , because unlike those, Miami is my home! So this post partially serves as a life update—I moved to Miami Beach from California a few months ago, and I'm excited to share my explorations with you. What makes Miami special…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/8c3611c8-217f-4a0a-968d-99fd0b9c524c/b1af5103-9ee6-4d28-b399-c68dc27dda1b.jpg",
+      "publishedAt": "2023-09-10T23:47:30Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/field-notes-miami",
+      "detailPath": "articles/6604c4c0eaae692e5455ea7a.json"
+    },
+    {
+      "id": "e2eab44ac911b3bed476f64b",
+      "title": "Vacuum tube nostalgia",
+      "summary": "Music enthusiasts will tell you there's nothing quite like \"tube sound\", the warm, rich sound quality that old vacuum tube amplifiers bring to the music played through them. And they'll pay top dollar for it! Once considered obsolete, vintage vacuum tube amps now sell at a premium, because audiophiles want to reproduce the harmonic distortions this old tech…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/43e2115c-c352-4e3e-8df1-c8d2a3b91eda/e83ca754-f3dd-4658-8662-b78034ab04bf.jpg",
+      "publishedAt": "2023-09-10T23:46:47Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/vacuum-tube-nostalgia",
+      "detailPath": "articles/e2eab44ac911b3bed476f64b.json"
+    },
+    {
+      "id": "cbfee6f7735a12ea61b3d140",
+      "title": "Book notes: Against the Grain, by James C. Scott",
+      "summary": "Here are some notes and quotes that particularly stood out to me from each chapter of Against the Grain . This isn't a summary of the book. It's mostly for my future self to refer back to (and thus probably missing a lot for someone who hasn't read it), but the tidbits are so interesting that I figured I'd share it nonetheless in case it's remotely helpful…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/09c3b653-8fff-4718-baa7-c806c605c182/96aa2936-e9e3-48d2-821b-d7bc8cd121de.png",
+      "publishedAt": "2023-09-10T23:46:43Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/book-notes-against-the-grain-by-james-c-scott",
+      "detailPath": "articles/cbfee6f7735a12ea61b3d140.json"
+    },
+    {
+      "id": "d4c0407431a432c423bce979",
+      "title": "OWD #2: Vanished in Guadalajara",
+      "summary": "Alain and Marie-Agnes raised three children while living their nomadic lifestyle. So in this episode, we dug into how their role as parents shaped how they experience cities. Join us as we roam Bangkok, Guadalajara, Sana'a, Paris, Port-au-Prince, NYC and beyond! RSS · Apple Podcasts · Spotify · Overcast Here's the full transcript. You can also find it with…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/8f63ecc6-862d-48ca-a133-4a19c0b73c78/61d03ea1-33a7-4302-bf39-442aac370edd.jpg",
+      "publishedAt": "2023-09-10T23:46:41Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/owd-2-vanished-in-guadalajara",
+      "detailPath": "articles/d4c0407431a432c423bce979.json"
+    },
+    {
+      "id": "3a83f1d4ab547b41a5c543d4",
+      "title": "OWD #4: Supersonic planes, levitating trains, & electric automobiles",
+      "summary": "Mobility is central to living in every city . In this episode, we discussed how different communities tackle the question of transportation, and how culture shapes how different transport technologies get adopted. RSS · Apple Podcasts · Spotify · Overcast Mobility is central to living in every city. In this episode, we discussed how different communities ta…",
+      "image": "https://cdn-images.postach.io/0bd25fcc-8ab1-40fe-8eef-bcafaae885c1/0aaf499d-2914-4479-9714-c1db27db1411/6d25a9cb-a4a9-46b5-b822-3c32b3c6b67c.jpg",
+      "publishedAt": "2023-09-10T23:46:39Z",
+      "sourceId": "1bbb8224d6a140cc",
+      "sourceTitle": "Devon's Site",
+      "link": "https://devon.postach.io/post/owd-4-supersonic-planes-levitating-trains-electric-automobiles",
+      "detailPath": "articles/3a83f1d4ab547b41a5c543d4.json"
+    },
+    {
       "id": "d75529db08b316bd55800d0a",
       "title": "Everything is Amazing, But Nothing is Ours",
       "summary": "Back in 2015, I wrote a blog post called Dropbox: the First Dead Decacorn . At the time, it was the most widely shared take I’d ever written. I learned several things from writing this piece, and none of them had to do with Dropbox: I learned, for instance, that a great way to get people to click on your blog post is to make them mad. I also learned about a…",
@@ -483,182 +659,6 @@
       "sourceTitle": "Kartik Agaram",
       "link": "http://akkartik.name/post/love-repl",
       "detailPath": "articles/9275ac73d37b090fc9bbf97e.json"
-    },
-    {
-      "id": "8fac84ec32fbb364d7397f93",
-      "title": "Tom Moulton, Father of the Disco Mix (1976)",
-      "summary": "This interview is reproduced from the January 1976 “Disco” issue of Black Music magazine. TOM MOULTON is the behind-the-scenes figure of disco music. His name has appeared on the credits of discs by Gloria Gaynor, B.T. Express, Bobby Moore, Al Downing, Peoples Choice, South Shore Commission and many others. Yet Moulton’s vital contributions to the hits of a…",
-      "image": null,
-      "publishedAt": "2023-08-22T17:12:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2023/08/22/tom-moulton-father-of-the-disco-mix/",
-      "detailPath": "articles/8fac84ec32fbb364d7397f93.json"
-    },
-    {
-      "id": "cb887ad6f173ea475a5bbc3a",
-      "title": "South Pole Electrical Infrastructure",
-      "summary": "Power generation and distribution at the South Pole.",
-      "image": null,
-      "publishedAt": "2023-08-21T06:00:00Z",
-      "sourceId": "d7766ffe6b7cda96",
-      "sourceTitle": "brr",
-      "link": "https://brr.fyi/posts/south-pole-electrical-infrastructure",
-      "detailPath": "articles/cb887ad6f173ea475a5bbc3a.json"
-    },
-    {
-      "id": "7606f16f221f037384c1ecad",
-      "title": "Fake Steve Jobs & Letters from BILL G",
-      "summary": "On 9th August 2006, “Fake Steve (Jobs)” started blogging at The Secret Diary of Steve Jobs . The blog featured scathing criticism of Silicon Valley and the tech industry at large, a pinch of political satire, along with many in-jokes and pandering to the zeitgeist. It was, above all else, very funny. A year or so after it began the identity of the ghost wri…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/comoesta-sakamoto-letters-from-bill-g-1.jpg",
-      "publishedAt": "2023-08-19T18:49:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2023/08/19/fake-steve-jobs-and-letters-from-bill-g/",
-      "detailPath": "articles/7606f16f221f037384c1ecad.json"
-    },
-    {
-      "id": "701e02caf8d42e6073438193",
-      "title": "Nested Function in JavaScript",
-      "summary": "JavaScript is a versatile and widely used programming language that empowers developers to create interactive and dynamic web applications. One of its powerful features is the ability to define functions within functions, known as nested functions. This concept can be a bit tricky to grasp at first, but once understood, it opens the door to more organized a…",
-      "image": null,
-      "publishedAt": "2023-08-18T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/nested-function-in-javascript/",
-      "detailPath": "articles/701e02caf8d42e6073438193.json"
-    },
-    {
-      "id": "dcdac052adf0081064fb626e",
-      "title": "Going back to the old (pre-X) Twitter iOS app",
-      "summary": "There are two main ways to do this. As of 2025 I recommend the first one, using a tweaked app, but I’ll leave the second one up for the sake of history as it still works, albeit more limited in use. Using a tweaked app My current recommended way of doing this to sideload a tweaked version of the Twitter/X app. You’ll need a tweaked Twitter.ipa and the versi…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/twitter-old-installed.png",
-      "publishedAt": "2023-08-17T18:39:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2023/08/17/going-back-to-the-old-pre-x-twitter-ios-app/",
-      "detailPath": "articles/dcdac052adf0081064fb626e.json"
-    },
-    {
-      "id": "bba34a5bcdc8e380d712021f",
-      "title": "Date Object in JavaScript",
-      "summary": "Dates and time are fundamental concepts in programming, essential for tasks ranging from displaying the current date on a webpage to performing complex date calculations. JavaScript offers a powerful Date object that enables developers to work with dates, times, and time zones seamlessly. In this comprehensive guide, we’ll explore the Date object in JavaScr…",
-      "image": null,
-      "publishedAt": "2023-08-17T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/date-object-in-javascript/",
-      "detailPath": "articles/bba34a5bcdc8e380d712021f.json"
-    },
-    {
-      "id": "dbdd36e55bfbe7114e0b1d9d",
-      "title": "Map vs Object : JavaScript",
-      "summary": "In JavaScript, data structures play a vital role in organizing and manipulating data efficiently. Two commonly used data structures for storing key-value pairs are the Map and the Object. While they might seem similar at first glance, each has distinct features and use cases that make them suitable for different scenarios. In this blog post, we’ll delve int…",
-      "image": null,
-      "publishedAt": "2023-08-16T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/map-vs-object-javascript/",
-      "detailPath": "articles/dbdd36e55bfbe7114e0b1d9d.json"
-    },
-    {
-      "id": "f4ae10b95cf31a36e2daee90",
-      "title": "This Keyword in JavaScript",
-      "summary": "JavaScript is a versatile and dynamic programming language used extensively for web development. One of its key features is the this keyword, which plays a crucial role in determining the context of function execution. Understanding how this works is essential for writing clean and efficient JavaScript code. In this blog post, we’ll dive deep into the this…",
-      "image": null,
-      "publishedAt": "2023-08-15T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/this-keyword-in-javascript/",
-      "detailPath": "articles/f4ae10b95cf31a36e2daee90.json"
-    },
-    {
-      "id": "3376ea68d0c3e40232083e32",
-      "title": "DrawDebugCylinder in Unreal",
-      "summary": "Unreal Engine is renowned for its powerful debugging and visualization tools that aid game developers in creating immersive and visually stunning experiences. One such tool that stands out is DrawDebugCylinder, a function that allows you to draw cylinder-shaped debug lines in your game world. In this blog post, we will dive into the details of DrawDebugCyli…",
-      "image": null,
-      "publishedAt": "2023-08-14T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/drawdebugcylinder-in-unreal/",
-      "detailPath": "articles/3376ea68d0c3e40232083e32.json"
-    },
-    {
-      "id": "8bf62a5722fa8142c236ac3d",
-      "title": "Automatically classifying the content of sound files using ML",
-      "summary": "Following on from yesterday’s extraction of old sound effects , I quickly realised I needed an easier way to search them as they came out of Director as unlabelled, numbered files. I can use QuickLook or a media player to quickly audition them, but how could I easily find the sample that contains the sound of running water or a horse trotting? I wondered if…",
-      "image": null,
-      "publishedAt": "2023-08-13T17:01:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2023/08/13/automatically-classifying-the-content-of-sound-files-using-ml/",
-      "detailPath": "articles/8bf62a5722fa8142c236ac3d.json"
-    },
-    {
-      "id": "9221490382a9df5fa649095a",
-      "title": "Snowdrifts",
-      "summary": "4 days of blown snow into a doorway.",
-      "image": null,
-      "publishedAt": "2023-08-13T00:15:00Z",
-      "sourceId": "d7766ffe6b7cda96",
-      "sourceTitle": "brr",
-      "link": "https://brr.fyi/posts/snowdrifts",
-      "detailPath": "articles/9221490382a9df5fa649095a.json"
-    },
-    {
-      "id": "3101937dcefd0ed9dd27b75f",
-      "title": "More thinking on burnout",
-      "summary": "Recently I took a month off work in between jobs to give myself a chance to reset. To be honest, the month felt more like a long weekend and it wasn't enough: most of the time was spent recharging and it didn't leave much behind for pursuing more fun activities. What I did achiev",
-      "image": null,
-      "publishedAt": "2023-08-13T00:00:00Z",
-      "sourceId": "49031c3e0520bdc7",
-      "sourceTitle": "leemeichin.com",
-      "link": "https://thoughts.meichin.com/posts/more-thinking-on-burnout",
-      "detailPath": "articles/3101937dcefd0ed9dd27b75f.json"
-    },
-    {
-      "id": "5c96c1198cdfd445ad37f011",
-      "title": "Extracting sounds from Macromedia Director files",
-      "summary": "For my latest “quick” Playdate project—a remaster of a ~1997 web game by Thoru Yamamoto —I decided to add sound effects. In order to keep it as authentic as possible I decided to use only sound effects created by Thoru Yamamoto that were used in his other productions. The largest collection of sounds I could think of were those included in his Macromedia Di…",
-      "image": null,
-      "publishedAt": "2023-08-12T19:42:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2023/08/12/extracting-sounds-from-macromedia-director-files/",
-      "detailPath": "articles/5c96c1198cdfd445ad37f011.json"
-    },
-    {
-      "id": "c4adf12e0f0afb3791eda807",
-      "title": "Thinkin' About A Cyberdeck",
-      "summary": "In which I discuss miscellaneous thoughts on making a cyberdeck. Written on an NEC PC-8201A while watching random youtube videos. So this is a pie-in-the-sky project I'm not going to pursue for a long time (if I ever do), but I'm sure you could make a really neat cyberdeck in the style of '80s microcomputers using an AVR. But they're microcontrollers not mi…",
-      "image": null,
-      "publishedAt": "2023-08-12T00:00:00Z",
-      "sourceId": "72f838778ac9f67d",
-      "sourceTitle": "nytpu's gemlog",
-      "link": "https://nytpu.com/gemlog/2023-08-12",
-      "detailPath": "articles/c4adf12e0f0afb3791eda807.json"
-    },
-    {
-      "id": "16b93d02e6565977596cc5de",
-      "title": "DrawDebugSphere in Unreal",
-      "summary": "Unreal Engine is a powerful and versatile game development framework that empowers developers to create stunning and immersive worlds. When it comes to debugging and visualizing game mechanics, Unreal Engine provides a variety of helpful tools, and one of them is DrawDebugSphere. In this blog post, we’ll delve into the details of DrawDebugSphere in Unreal E…",
-      "image": null,
-      "publishedAt": "2023-08-12T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/drawdebugsphere-in-unreal/",
-      "detailPath": "articles/16b93d02e6565977596cc5de.json"
-    },
-    {
-      "id": "af11ef2d41d1455269a5aba9",
-      "title": "Ode to the M1",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2023-08-12T00:00:00Z",
-      "sourceId": "ce9ad60b092e38b0",
-      "sourceTitle": "fabiensanglard.net",
-      "link": "https://fabiensanglard.net/m1/index.html",
-      "detailPath": "articles/af11ef2d41d1455269a5aba9.json"
     }
   ]
 }

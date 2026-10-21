@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "ef6c2349626cee6d64b57d86",
+      "title": "科技爱好者周刊（第 410 期）：你需要知道的 AI 三种机制",
+      "summary": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 宁夏沙坡头景区的巨型蒙眼雕塑。（ via ） 你需要知道的 AI 三种机制 这是\"AI 小知识系列\"的第三篇，前两篇分别是 《大模型需要多少内存》 和 《AI 缓存是什么》 。 我分享一些自己的学习笔记，用来理清对于 AI 技术的理解。我尽量写得通俗，希望对大家有用。 今天谈一个基本问题： AI 为什么能够回答我们的提问，它怎么会知道答案？ 你可以找到很多这方面的论文和书籍，详细解释大模型的运作，通常非常难懂。但是，对于非专业人士，只要简单知道 AI 的三个机制 ，就可以了。 （1）参数机制 在宏观层面， 所有大模型…",
+      "image": "https://cdn.beekka.com/blogimg/asset/202608/bg2026082701.webp",
+      "publishedAt": "2026-08-27T23:56:43Z",
+      "sourceId": "50579811ddcd4b8c",
+      "sourceTitle": "阮一峰的网络日志",
+      "link": "http://www.ruanyifeng.com/blog/2026/08/weekly-issue-410.html",
+      "detailPath": "articles/ef6c2349626cee6d64b57d86.json"
+    },
+    {
       "id": "41b8ab277102aa2dfcfb309e",
       "title": "入蜀记 day460 鹤鸣早茶",
       "summary": "「鹤鸣早茶。」",
@@ -648,17 +659,6 @@
       "sourceTitle": "程序员的喵",
       "link": "http://catcoding.me/p/dotr-intro/",
       "detailPath": "articles/0202e44741bd0a3e32ce0200.json"
-    },
-    {
-      "id": "7c63a69fef786830b65fd0b3",
-      "title": "acme.sh 从Webroot改为 NameSilo DNS 申请通配符证书踩坑记",
-      "summary": "我这边虽然用的是BT面板，但其在某次升级之后自动申请SSL证书功能就不好用了，所以一直用的是crontab + acme.sh自行更新证书。 当时的教程在这里： https://itlanyan.com/use-acme-sh-get-free-cert/ 前情提要 不说清楚我之前干了什么，就说不清楚我改了什么。其实都是照着上面的教程搞的，只不过沿用了宝塔的文件结构，相当简单。 安装 curl https://get.acme.sh | sh acme.sh安装成功后，会自动创建一个cron任务 运行`crontab -l`能够进行查看，`crontab -e`能编辑。 41 0 * * * \"/root/.acme.sh\"/acme.sh --cron --home \"/root/.acme.sh\" > /…",
-      "image": null,
-      "publishedAt": "2026-08-21T04:18:43Z",
-      "sourceId": "474e724b69cd3e76",
-      "sourceTitle": "破襪子",
-      "link": "https://pewae.com/2026/08/migrating-acme-sh-from-webroot-validation-to-namesilo-dns-for-lets-encrypt-wildcard-certificates.html",
-      "detailPath": "articles/7c63a69fef786830b65fd0b3.json"
     }
   ]
 }

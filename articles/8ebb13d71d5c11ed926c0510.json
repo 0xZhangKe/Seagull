@@ -1,0 +1,11 @@
+{
+  "id": "8ebb13d71d5c11ed926c0510",
+  "title": "使用 Zig 实现 yes 命令",
+  "summary": "起因是看到 一篇文章 ，作者介绍了如何用 Rust 优化 yes 命令，第一个 buffer 的版本还比较好懂，第二个复用 buffer 的就没有那么直接了。想了下用 Zig 实现会是怎么样？于是就有了下面的测试： 测试时会用到 pv 命令，需要单独安装",
+  "content": "<p>\n起因是看到<a href=\"https://endler.dev/2017/yes/\" target=\"_blank\" rel=\"noopener noreferrer\">一篇文章</a>，作者介绍了如何用 Rust 优化 yes 命令，第一个 buffer 的版本还比较好懂，第二个复用 buffer 的就没有那么直接了。想了下用 Zig 实现会是怎么样？于是就有了下面的测试：</p>\n<blockquote>\n<p>测试时会用到 <a href=\"https://linux.die.net/man/1/pv\" target=\"_blank\" rel=\"noopener noreferrer\">pv</a> 命令，需要单独安装</p>\n</blockquote>",
+  "image": null,
+  "publishedAt": "2022-11-17T11:54:06Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2022/11/17/yes-in-zig/"
+}

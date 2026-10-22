@@ -1,0 +1,11 @@
+{
+  "id": "ed57ebf2879f06b29174178f",
+  "title": "在已经存在 C++/D/Rust 的情况下，为什么还要 Zig",
+  "summary": "原文地址： https://ziglang.org/learn/why_zig_rust_d_cpp/ 无隐藏的控制流程 如果 Zig 代码看起来不像是在进行函数调用，那么它就不是。这意味着你可以确信以下代码只会调用 foo() 和 bar() ，而无需知道任何类型的信息： 1 var a = b + c.d; 2 foo (); 3 bar (); 下面是一些具有隐藏控制流程的例子： D语言的 @property 函数（实际上是通过字段访问方式调用的方法），因此在上述代码中， c.d 可能调用了某个函数。 C++、D和Rust中的运算符重载使得加号 + 可能会调用一个函数。 C++、D和Go语言中的抛出/捕获异常机制意味着 foo() 可能会抛出异常，从而阻止了 bar() 的调用。当然，即使在Zig中，…",
+  "content": "<blockquote>\n<p>原文地址：<a href=\"https://ziglang.org/learn/why_zig_rust_d_cpp/\" target=\"_blank\" rel=\"noopener noreferrer\">https://ziglang.org/learn/why_zig_rust_d_cpp/</a></p>\n</blockquote>\n<div>\n<h2>\n无隐藏的控制流程\n</h2>\n<div>\n<p>\n如果 Zig 代码看起来不像是在进行函数调用，那么它就不是。这意味着你可以确信以下代码只会调用 <code>foo()</code> 和 <code>bar()</code> ，而无需知道任何类型的信息：</p>\n<div>\n<div><pre><code><span><span>1</span><span><span>var</span><span> </span>a<span> </span><span>=</span><span> </span>b<span> </span><span>+</span><span> </span>c.d;<span>\n</span></span></span><span><span>2</span><span><span>foo</span>();<span>\n</span></span></span><span><span>3</span><span><span>bar</span>();</span></span></code></pre></div>\n</div>\n<p>\n下面是一些具有隐藏控制流程的例子：</p>\n<ul>\n<li>D语言的 <code>@property</code> 函数（实际上是通过字段访问方式调用的方法），因此在上述代码中， <code>c.d</code> 可能调用了某个函数。</li>\n<li>C++、D和Rust中的运算符重载使得加号 <code>+</code> 可能会调用一个函数。</li>\n<li>C++、D和Go语言中的抛出/捕获异常机制意味着 <code>foo()</code> 可能会抛出异常，从而阻止了 <code>bar()</code> 的调用。当然，即使在Zig中， <code>foo()</code> 也可能因死锁而使 <code>bar()</code> 无法调用，在任何图灵完备的语言中都可能发生这种情况。</li>\n</ul>\n<p>这种设计决策的目的在于提高代码可读性。</p>\n</div>\n</div>",
+  "image": null,
+  "publishedAt": "2023-05-13T23:49:28Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2023/05/14/why-zig/"
+}

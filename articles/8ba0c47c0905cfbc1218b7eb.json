@@ -1,0 +1,11 @@
+{
+  "id": "8ba0c47c0905cfbc1218b7eb",
+  "title": "设计稿的版本控制",
+  "summary": "涉及到设计稿的版本控制，主要想解决几个问题：多人协作（批注，评论），版本回溯，版本的修改记录情况。",
+  "content": "<p>上一篇文章写到了设计稿的历史版本控制的问题，发现网络上对于这个问题的讨论相对较少，但是也有找到相关的一些信息。</p>\n<p>涉及到设计稿的版本控制，主要想解决几个问题：多人协作（批注，评论），版本回溯，版本的修改记录情况。</p>\n<h2>工具</h2>\n<h3>Git</h3>\n<p>说到版本控制，最先可以想到的就是 Git。但是 Git 对于非文本类的管理，其实并没有很好的支持。比如说，一个 PSD 更新后，可以知道你某一次版本从 10M 变成了 12M，但是并不会能知道增加了某些页面或元素。但是用于对版本的回溯的支持较好，但是对于设计稿的版本回溯可以有更便捷的方法。</p>\n<h3>Designboard</h3>\n<p>有一定的版本控制功能，但是主要的方向放在设计稿的多人协作功能上。这工具与 Axure 的 AxureShare 的多人协作功能有相类似的地方。优势是国内彩程团队开发，功能收费，尝试免费试用中。</p>\n<h3>Dropbox</h3>\n<p>不知道和百度云同步盘有什么大区别，一直使用百度云同步盘，至今未出现任何大的问题。但是谈到版本控制，云盘只能作为一个辅助工具，使不同版本即时同步到云端。网络上有人提到在本地删除了文件，网盘上的文件也一并删除的问题，严格上来说这算不上问题，因为这个云同步盘的基本功能本来如此，初次使用时也有说明，这是功能的不完善。这功能只能通过手动及时归档来解决。</p>\n<h3>Adobe Version Cue</h3>\n<p>在 CS4 版本后已经集成到 Adobe Cloud 中，国内也没怎么听说过有人用。官网介绍如下：</p>\n<blockquote>\n<p>Adobe® Drive 4 software enables seamless integration of a digital asset management (DAM) system with Adobe Creative Suite® 6 applications. Once connected to a DAM server, you can access remote assets through your operating system file browser, through Adobe Bridge, or from the menus of CS products that integrate with Drive: Adobe Photoshop®, Illustrator®, InDesign®, and InCopy®.</p>\n</blockquote>\n<figure><img src=\"https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/design-draft-version-control-adobe.png\" alt=\"\"></figure>\n<p>反正，我觉得我应该用不到吧。</p>\n<h2>手工控制</h2>\n<p>这是最原始，但是却是最有效的方式。作为设计，其实是很少有涉及多人协作的成分，不同于文档文件，这甚至不会涉及他人对设计文件的修改问题，需要的改动会以批注形式呈现。而对于多人团队批注功能，其实这个可以在设计评审会议上进行或者单独进行沟通。回到版本控制问题，进行手工控制也是有相当多提高效率的技巧。</p>\n<ul>\n<li>为每一个项目建立独立的文件夹，并为其编号，后续在茫茫文件夹里寻找项目时，只要记得编号就能迅速定位目标文件夹；</li>\n<li>对设计文件的修改必须是可撤销（返回）的，建议使用颜色标记；</li>\n<li>对于设计文件中进行版本的修改，把原有图层（组）进行拷贝，在拷贝档上进行设计，并对组重新命名为新的版本号；</li>\n<li>对于大的修改（如 1.x 到 2.x 的修改）或避免文件过大，可以拷贝文件后并在新文件中进行设计；</li>\n<li>设计文件的命名需要体现版本号；</li>\n<li>项目文件夹中需要有版本记录文档，记录每个版本的修改点；</li>\n<li>为避免上述的描述的百度云的功能缺陷及节省硬盘空间，在网盘上建立归档文件夹；</li>\n</ul>\n<figure><img src=\"https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/design-draft-version-control-local.jpg\" alt=\"\"></figure>",
+  "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/design-draft-version-control-adobe.png",
+  "publishedAt": "2015-09-09T00:00:00Z",
+  "sourceId": "cb9a26266745d112",
+  "sourceTitle": "Bluepikachu",
+  "link": "https://bluepika.life/blog/design-draft-version-control"
+}

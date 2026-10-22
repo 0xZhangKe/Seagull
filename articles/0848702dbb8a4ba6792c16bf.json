@@ -1,0 +1,11 @@
+{
+  "id": "0848702dbb8a4ba6792c16bf",
+  "title": "在 C 中，如何正确拷贝字符串",
+  "summary": "在每个程序员都必读的 K&R C 一书中，有一个非常经典的 strcpy 的实现： 1 strcpy (s, t) 2 char * s, * t; 3 { 4 while ( * s ++ = * t ++ ) 5 ; 6 } 代码小巧紧凑，但是问题也比较严重，比如：",
+  "content": "<p>\n在每个程序员都必读的 <a href=\"https://en.wikipedia.org/wiki/The_C_Programming_Language\" target=\"_blank\" rel=\"noopener noreferrer\">K&amp;R C</a> 一书中，有一个非常经典的 <code>strcpy</code> 的实现：</p>\n<div>\n<div><pre><code><span><span>1</span><span><span>strcpy</span>(s, t)\n</span></span><span><span>2</span><span><span>char</span> <span>*</span>s, <span>*</span>t;\n</span></span><span><span>3</span><span>{\n</span></span><span><span>4</span><span> <span>while</span> (<span>*</span>s<span>++</span> <span>=</span> <span>*</span>t<span>++</span>)\n</span></span><span><span>5</span><span> ;\n</span></span><span><span>6</span><span>}</span></span></code></pre></div>\n</div>\n<p>\n代码小巧紧凑，但是问题也比较严重，比如：</p>",
+  "image": null,
+  "publishedAt": "2023-12-02T14:12:08Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2023/12/02/strcpy/"
+}

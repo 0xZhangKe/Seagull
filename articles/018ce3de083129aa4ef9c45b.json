@@ -1,0 +1,11 @@
+{
+  "id": "018ce3de083129aa4ef9c45b",
+  "title": "JD CLI updated: now creates filesystem folders",
+  "summary": "Typing `jd 12.34` now creates that folder if it doesn't exist.",
+  "content": "<p>The <a href=\"https://johnnydecimal.com/documentation/jd-cli\" target=\"_blank\" rel=\"noopener noreferrer\">JD CLI</a> has been updated.</p>\n<p>It&#x27;s migrated from using environment variables to the new <a href=\"https://johnnydecimal.com/documentation/configuration\" target=\"_blank\" rel=\"noopener noreferrer\">configuration file</a>.</p>\n<p>Now if you try to <code>jd 11.11</code> to a folder, and that folder doesn&#x27;t exist, <em>and</em> your JDex is readable by the CLI – i.e. Markdown files on disk, i.e. Obsidian - then it&#x27;ll create the folder for you.</p>\n<p>The <a href=\"https://johnnydecimal.com/jdhq/mcp-server\" target=\"_blank\" rel=\"noopener noreferrer\">MCP server</a> has been updated to understand this tool and the configuration file. Just ask it to <code>help me install the jd cli</code>.</p>\n<p>Here&#x27;s a short video walkthrough.</p>\n<div></div>\n\n<h2>If you installed the CLI before today</h2>\n<ol>\n<li>\n<p>Pull:</p>\n<pre><code><span><span>git</span><span> -C</span><span> ~/.jd/cli</span><span> pull</span></span></code></pre>\n</li>\n<li>\n<p>In your <code>.zshrc</code> or <code>.bashrc</code>, find these lines. You might only have the first.</p>\n<pre><code><span><span>source</span><span> ~/.jd/cli/jd-nav/jd-nav.sh</span></span>\n<span><span>source</span><span> ~/.jd/cli/jd-prompt/jd-prompt.zsh</span></span></code></pre>\n</li>\n<li>\n<p>Replace them both with this line.</p>\n<pre><code><span><span>source</span><span> ~/.jd/cli/jd.sh</span></span></code></pre>\n</li>\n<li>\n<p>Start a new shell.</p>\n</li>\n</ol>",
+  "image": null,
+  "publishedAt": "2026-09-09T07:35:50Z",
+  "sourceId": "4567c06def96db0c",
+  "sourceTitle": "Johnny.Decimal",
+  "link": "https://johnnydecimal.com/blog/0245-jd-cli-now-creates-folders/"
+}

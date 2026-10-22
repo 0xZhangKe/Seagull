@@ -1,0 +1,11 @@
+{
+  "id": "2e604ff1965c67b60df645d7",
+  "title": "挑战-响应中的一个严重安全问题",
+  "summary": "挑战-响应的一种做法是，把一个随机字符串（ nonce ）发送给需要验证身份的人，并让对方使用自己的私钥对该字符串进行签名。然而，这会带来一个非常严重的安全问题。 例如，Alice 想要验证 Bob。但 Mallory 插在他们中间。于是会发生下面的事情： Alice 将挑战发送给被 Mallory 冒充的 ‘Bob’。 Mallory 冒充 Alice，将该挑战转发给 Bob，并请求返回响应。 Bob 把响应发回，然后 Mallory 再把响应转发回去。 在这种情况下，Mallory 已经成功向 Alice 冒充了 Bob，现在就可以进行 MITM 攻击了。 解决办法不是只把随机字符串当作挑战。一个好的挑战至少应包含以下内容： 验证者和被验证者的信任锚的标识信息（例如 OpenPGP 指纹）； 通道的标识信…",
+  "content": "<p>挑战-响应的一种做法是，把一个随机字符串（<code>nonce</code>）发送给需要验证身份的人，并让对方使用自己的私钥对该字符串进行签名。然而，这会带来一个非常严重的安全问题。</p>\n<p>例如，Alice 想要验证 Bob。但 Mallory 插在他们中间。于是会发生下面的事情：</p>\n<ol>\n<li>Alice 将挑战发送给被 Mallory 冒充的 ‘Bob’。</li>\n<li>Mallory 冒充 Alice，将该挑战转发给 Bob，并请求返回响应。</li>\n<li>Bob 把响应发回，然后 Mallory 再把响应转发回去。</li>\n</ol>\n<p>在这种情况下，Mallory 已经成功向 Alice 冒充了 Bob，现在就可以进行 MITM 攻击了。</p>\n<p>解决办法不是只把随机字符串当作挑战。一个好的挑战至少应包含以下内容：</p>\n<ol>\n<li>验证者和被验证者的信任锚的标识信息（例如 OpenPGP 指纹）；</li>\n<li>通道的标识信息（例如，面对面验证时的地点；在 XMPP 上验证时的 JID 以及 OMEMO 指纹；在 Matrix 上验证时双方的 Matrix ID 和房间）；</li>\n<li>时间戳；</li>\n<li>nonce，也就是随机字符串。</li>\n</ol>\n<p>换句话说，挑战应当把验证者和被验证者的身份、已认证的通道或会话上下文、用于保证新鲜度的时间戳，以及 nonce 绑定在一起。验证者必须将已签名的身份声明与已认证的传输元数据进行比对。</p>\n<p>在这种情况下，Mallory 就必须篡改通道上下文来欺骗 Bob（否则 Bob 会立刻识别出这个有问题的挑战并拒绝响应），而这样一来，由于挑战已被篡改，Alice 在验证时就会发现响应无效。</p>\n<p>为了获得更强的安全性，请彼此相互验证。</p>",
+  "image": null,
+  "publishedAt": "2026-05-27T16:47:56Z",
+  "sourceId": "d20806ffb0ba0e55",
+  "sourceTitle": "Rebel Zhang 的博客",
+  "link": "https://rebel1725.codeberg.page/blog/zh/post/a-serious-security-issue-of-challenge-response/"
+}

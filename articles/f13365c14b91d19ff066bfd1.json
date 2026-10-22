@@ -1,0 +1,11 @@
+{
+  "id": "f13365c14b91d19ff066bfd1",
+  "title": "深入浅出垃圾回收（三）增量式 GC",
+  "summary": "在 上一篇文章 中介绍的 MS 优化策略都是围绕 sweep 阶段展开，但 mark 阶段会导致应用程序挂起，也就是常说的：stop-the-world（STW），这严重影响了 Tracing GC 的应用场景。本文即将介绍的增量式 GC 可以大大缓解 STW 问题。",
+  "content": "<p>在<a href=\"https://liujiacai.net/blog/2018/07/08/mark-sweep/\" target=\"_blank\" rel=\"noopener noreferrer\">上一篇文章</a>中介绍的 MS 优化策略都是围绕 sweep 阶段展开，但 mark 阶段会导致应用程序挂起，也就是常说的：stop-the-world（STW），这严重影响了 Tracing GC 的应用场景。本文即将介绍的增量式 GC 可以大大缓解 STW 问题。</p>",
+  "image": null,
+  "publishedAt": "2018-08-04T22:00:34Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2018/08/04/incremental-gc/"
+}

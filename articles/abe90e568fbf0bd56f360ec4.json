@@ -1,0 +1,11 @@
+{
+  "id": "abe90e568fbf0bd56f360ec4",
+  "title": "hadoop1.0 高可靠性(HA)安装与总结",
+  "summary": "继上次 安装完Kerberos安全认证 后，现在我在这基础上，又给CDH加上了HA（high availability），也就是高可靠性，具体来讲就是双NameNode，双Jobtracker（我还是在MRv1模式下），有了HA后，这下集群的健壮性就能够得到很好的保证了。 我还是按照 官方文档 来操作的，有了上次的经验，建议大家在具体操作实施前，先快速阅读一遍，做到心中有数，我还阅读了 Apache官方的说明 ，也不用怎么详细，大概知道怎么回事就行了。",
+  "content": "<p>继上次<a href=\"https://liujiacai.net/blog/2014/07/15/cdh-kerberos-installation/\" target=\"_blank\" rel=\"noopener noreferrer\">安装完Kerberos安全认证</a>后，现在我在这基础上，又给CDH加上了HA（high availability），也就是高可靠性，具体来讲就是双NameNode，双Jobtracker（我还是在MRv1模式下），有了HA后，这下集群的健壮性就能够得到很好的保证了。</p>\n<p>我还是按照<a href=\"http://www.cloudera.com/content/cloudera-content/cloudera-docs/CDH5/latest/CDH5-High-Availability-Guide/CDH5-High-Availability-Guide.html\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a>来操作的，有了上次的经验，建议大家在具体操作实施前，先快速阅读一遍，做到心中有数，我还阅读了<a href=\"http://hadoop.apache.org/docs/r2.3.0/hadoop-yarn/hadoop-yarn-site/HDFSHighAvailabilityWithNFS.html\" target=\"_blank\" rel=\"noopener noreferrer\">Apache官方的说明</a>，也不用怎么详细，大概知道怎么回事就行了。</p>",
+  "image": null,
+  "publishedAt": "2014-07-17T15:07:34Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2014/07/17/cdh-ha-installation/"
+}

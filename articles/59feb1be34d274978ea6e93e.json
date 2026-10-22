@@ -1,0 +1,11 @@
+{
+  "id": "59feb1be34d274978ea6e93e",
+  "title": "修复Geyser下基岩版玩家无法在地狱基岩层放置方块",
+  "summary": "在 plugins\\Geyser-Spigot\\config.yml 中把第160行的 above-bedrock-nether-building: false 改为 true ，重启服务器，问题解决~ 原理：geyser把下界翻译成了末地，会导致下界天空变成末地的样式，不过可以解决基岩版玩家在地狱基岩层的问题。",
+  "content": "<p>在<code>plugins\\Geyser-Spigot\\config.yml</code>中把第160行的<code>above-bedrock-nether-building: false</code>改为<code>true</code>，重启服务器，问题解决~\n原理：geyser把下界翻译成了末地，会导致下界天空变成末地的样式，不过可以解决基岩版玩家在地狱基岩层的问题。</p>",
+  "image": null,
+  "publishedAt": "2025-01-08T17:26:00Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/184/"
+}

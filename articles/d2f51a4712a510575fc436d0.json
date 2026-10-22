@@ -1,0 +1,11 @@
+{
+  "id": "d2f51a4712a510575fc436d0",
+  "title": "ffmpy3 批量合并 ts 文件",
+  "summary": "本文是一篇关于使用 Python 批量合并 TS 视频文件的简明教程。文章介绍了如何利用 ffmpy3 这个 FFmpeg 的 Python 包装库，通过创建一个列表文件来指定需要合并的 TS 文件，并使用几行 Python 代码调用 FFmpeg 的 -f concat 和 -c copy 命令，从而实现无损、快速地将多个 TS 片段合并成一个完整的 MP4 文件。",
+  "content": "<p>如何使用 Python 的 ffmpy3 包来批量合并 ts 文件至单个 mp4 文件。</p><span></span><div>开始阅读前，需要知道：<ul><li>ffmpy3 是 FFmpeg 的 Python 包装器</li><li>ffmpy3 根据提供的参数和选项来编译 FFmpeg 命令行</li></ul></div><h1><a target=\"_blank\" rel=\"noopener noreferrer\"></a> ffmpy3 使用</h1><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 安装 ffmpy3 包</h2><p>使用 pip 来安装：</p><pre><code>pip install ffmpy3</code></pre><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> ffmpy3 简单例子</h2><pre><code>import ffmpy3ff = ffmpy3.FFmpeg (    inputs = {&#x27;输入文件&#x27;: &#x27;参数1&#x27;},    outputs = {&#x27;输出文件&#x27;: &#x27;参数2&#x27;})</code></pre><p>最终得出结果相当于在终端里输入：</p><pre><code>FFmpeg 参数1 -i 输入文件 参数2 输出文件</code></pre><h1><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 批量合并 ts 文件</h1><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 路径构造</h2><pre><code>├───文件夹│    Python文件.py│    file.txt│    文件A.ts│    文件B.ts│    文件C.ts│    文件D.ts...</code></pre><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> file.txt</h2><p>在 file.txt 内部写下 ts 文件名：</p><pre><code>file &#x27;文件A.ts&#x27;file &#x27;文件B.ts&#x27;file &#x27;文件C.ts&#x27;file &#x27;文件D.ts&#x27;</code></pre><blockquote><p>注意：</p><ol><li>使用单引号，而非双引号，后者会导致报错！</li><li>引号内的路径使用相对路径</li></ol></blockquote><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> Python 文件</h2><p>使用这段代码来批量合并 ts 文件：</p><pre><code>ff = ffmpy3.FFmpeg(        inputs={f&#x27;file.txt&#x27;: &#x27;-f concat&#x27;},        outputs={f&#x27;文件名.mp4&#x27;: &#x27;-c copy&#x27;})ff.run()</code></pre><p>上述代码相当于在终端中输入：</p><pre><code>FFmpeg -f concat -i file.txt -c copy 文件名.mp4</code></pre>",
+  "image": null,
+  "publishedAt": "2023-01-21T01:37:26Z",
+  "sourceId": "bbfc2dde895349ce",
+  "sourceTitle": "Cytrogen 的个人博客（中文）",
+  "link": "https://blog.cytrogen.icu/posts/a3e5.html"
+}

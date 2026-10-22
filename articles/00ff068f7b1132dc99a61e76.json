@@ -1,0 +1,11 @@
+{
+  "id": "00ff068f7b1132dc99a61e76",
+  "title": "如何为 Rust 项目配置 GitHub Action cache",
+  "summary": "为了加速 CI 的执行，缓存是非常有效的手段。保证缓存的最高利用率，是使用缓存时最需要关注的点。比如在把整个 target 目录缓存后，何时更新这个缓存？最好的方式是在有依赖变更时，对于 Rust 来说就是 Cargo.lock 有变化，对于 Node 来说就是 package.lock 有变化。",
+  "content": "<p>\n为了加速 CI 的执行，缓存是非常有效的手段。保证缓存的最高利用率，是使用缓存时最需要关注的点。比如在把整个 <code>target</code> 目录缓存后，何时更新这个缓存？最好的方式是在有依赖变更时，对于 Rust 来说就是 <code>Cargo.lock</code> 有变化，对于 Node 来说就是 <code>package.lock</code> 有变化。</p>",
+  "image": null,
+  "publishedAt": "2022-10-29T04:50:07Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2022/10/29/github-action-cache-for-rust/"
+}

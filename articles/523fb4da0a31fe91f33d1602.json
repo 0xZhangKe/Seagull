@@ -1,0 +1,11 @@
+{
+  "id": "523fb4da0a31fe91f33d1602",
+  "title": "Hexo 和 Typora 的完美图片工作流",
+  "summary": "我写作是用 Typora 编辑器来写 Markdown，再让 Hexo 框架的 Markdown 渲染器渲染成 HTML。",
+  "content": "<p>我写作是用 Typora 编辑器来写 Markdown，再让 Hexo 框架的 Markdown 渲染器渲染成 HTML。</p><span></span><p>Hexo 对于图片的存放要求是这样的：在 Markdown 文件的同级下创建一个同名的目录，并在该目录下存放图片。这样写很方便，只需要在 Markdown 文件里写 <code>![](图片名.类型)</code>，程序就会自动从同名目录里找到指定的图片。</p><p>但如果我想要在 Typora 里直接粘贴图片，它通常会被拷贝到其他位置，我再灰溜溜去手动挪动图片的位置。</p><p>幸运的是，我最近发现一个法子可以解决这个问题，让我的写作体验更上一层楼~ 这个方案的核心是把 Typora 的图片保存逻辑（它实际把文件复制到哪里）和路径预览逻辑（它如何理解 <code>![](image.png)</code> 这行代码）分离开。</p><ol><li><p>在 Typora 中，进入 <strong>设置</strong> &gt; <strong>图像</strong>。</p></li><li><p>在 <strong>插入图片时……</strong> 下拉菜单中，选择 <strong>复制图片到指定路径</strong>。</p></li><li><p>在 <strong>路径</strong> 输入框中，填入以下这行代码：</p><pre><code>./${filename}/</code></pre></li><li><p>勾选 <strong>优先使用相对路径</strong>。</p></li></ol><p>现在，当你在一篇名为 <code>hello-world.md</code> 的文章中粘贴图片时，Typora 会自动将该图片复制到 <code>hello-world/</code> 文件夹中。不过插入的路径还是 <code>![](hello-world/image.png)</code>。要解决这个问题，我们只需要在文章最顶部的 YAML Front Matter 区域里添加一行：</p><pre><code>---typora-root-url: ./hello-world---</code></pre><p>这个路径必须和这篇文章的文件名完全一致。而在 Hexo，你只需要在 scaffolds 里添加一个：</p><pre><code>---typora-root-url: ./{{ title }}---</code></pre><p>就可以每次用 <code>hexo new</code> 命令创建 Markdown 文件时，自动添加这个键值对。</p>",
+  "image": null,
+  "publishedAt": "2025-11-14T01:37:43Z",
+  "sourceId": "bbfc2dde895349ce",
+  "sourceTitle": "Cytrogen 的个人博客（中文）",
+  "link": "https://blog.cytrogen.icu/posts/96d8.html"
+}

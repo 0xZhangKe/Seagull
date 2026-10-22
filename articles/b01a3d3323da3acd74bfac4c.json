@@ -1,0 +1,11 @@
+{
+  "id": "b01a3d3323da3acd74bfac4c",
+  "title": "使用xpath爬取字典内容",
+  "summary": "使用xpath爬取字典内容 最近因为业务需要批量获取一些权威字典的内容，比如 韦氏字典 的音节划分，比如 词源字典 中的词根词缀解释。 所有这些工作其实都可以提一个需求给开发的，但是提需求流程好长，耗时也好久噢。因为自己感兴趣，所以就索性自己动手研究了，当然这途中也少不了开发朋友的帮忙。 具体实现方法很简单： 使用浏览器浏览页面元素，定位到对应的文本内容，复制对应的xpath 使用requets发起http请求，并将返回的结果使用etree解析 标签下只有一个内容 import requests from lxml import etree def get_data(word): wb_data = requests.get(f\"https://www.merriam-webster.com/dictiona…",
+  "content": "<h1>使用xpath爬取字典内容</h1>\n<p>最近因为业务需要批量获取一些权威字典的内容，比如<a href=\"https://www.merriam-webster.com/\" target=\"_blank\" rel=\"noopener noreferrer\">韦氏字典</a>的音节划分，比如<a href=\"https://www.etymonline.com/\" target=\"_blank\" rel=\"noopener noreferrer\">词源字典</a>中的词根词缀解释。</p>\n<p>所有这些工作其实都可以提一个需求给开发的，但是提需求流程好长，耗时也好久噢。因为自己感兴趣，所以就索性自己动手研究了，当然这途中也少不了开发朋友的帮忙。</p>\n<p>具体实现方法很简单：</p>\n<ol>\n<li>使用浏览器浏览页面元素，定位到对应的文本内容，复制对应的xpath</li>\n<li>使用requets发起http请求，并将返回的结果使用etree解析</li>\n</ol>\n<h2>标签下只有一个内容</h2>\n<pre><code>import requests\nfrom lxml import etree\n\ndef get_data(word):  \n    wb_data = requests.get(f&quot;https://www.merriam-webster.com/dictionary/{word}&quot;).text  \n    html = etree.HTML(wb_data)  \n    html_data = html.xpath(&quot; /text()&quot;)  \n\t\n\treturn html_data[0]  \n</code></pre>\n<p>此处需要在xpath的文本后面加上`&#x27; /text()&#x27;</p>\n<h2>标签下有多个内容</h2>\n<pre><code>def get_data(word):  \n    wb_data = requests.get(f&quot;https://www.etymonline.com/search?q={word}&quot;).text  \n    html = etree.HTML(wb_data)   \n    contents = html.xpath(&quot;&quot;)  \n    ret = []  \n    for e in contents:  \n        ret.append(e.xpath(&#x27;string(.)&#x27;))\n\treturn ret\n</code></pre>\n<p>xpath的string()可以获取当前子节点的所有文本</p>",
+  "image": null,
+  "publishedAt": "2024-04-22T15:26:00Z",
+  "sourceId": "207f6e65632bf687",
+  "sourceTitle": "Psychic Paper",
+  "link": "https://yuqiqin.me/use-xpath-to-scrape-dict/"
+}

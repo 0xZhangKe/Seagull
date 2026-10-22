@@ -1,0 +1,11 @@
+{
+  "id": "f170169ac922a0155c20cf0f",
+  "title": "Kitty终端美化记录",
+  "summary": "Kitty这个终端可谓是兼顾了性能与美观，虽然默认设置很简陋，但是经过一番折腾后也能变得很漂亮。 选择配色 运行 kitty + kitten themes 后会弹出一个选择配色的界面 令我感到非常高兴的是，这个界面支持vim的hjkl键位，也可以用/来搜索。 选好后，回车按m，command + ^ + ,重载配置文件。 配置字体 打开kitty的配置文件 nvim ~/.config/kitty/kitty.conf ，把字号改到12 font_size 12 输入 kitty list-fonts --psnames 来列出系统安装好的所有等宽字体。 设置窗口风格 进入配置文件 #window # 不显示窗口标题栏 保留窗口圆角 hide_window_decorations titlebar-only…",
+  "content": "<p>Kitty这个终端可谓是兼顾了性能与美观，虽然默认设置很简陋，但是经过一番折腾后也能变得很漂亮。</p>\n<h2>选择配色</h2>\n<p>运行<code>kitty + kitten themes</code>后会弹出一个选择配色的界面\n<img src=\"https://images.glowisle.me/Pasted%20image%2020250309124346.webp\" alt=\"\">\n令我感到非常高兴的是，这个界面支持vim的hjkl键位，也可以用/来搜索。\n选好后，回车按m，command + ^ + ,重载配置文件。</p>\n<h2>配置字体</h2>\n<p>打开kitty的配置文件<code>nvim ~/.config/kitty/kitty.conf</code>，把字号改到12\n<code>font_size 12</code>\n输入<code>kitty list-fonts --psnames</code>来列出系统安装好的所有等宽字体。</p>\n<h2>设置窗口风格</h2>\n<p>进入配置文件</p>\n<pre><code>#window\n# 不显示窗口标题栏 保留窗口圆角\nhide_window_decorations titlebar-only\n# 边距\nwindow_padding_width 5\n# 不透明度\nbackground_opacity 0.8\n# 毛玻璃效果\nbackground_blur 30\n</code></pre>\n<h2>设置标签栏风格</h2>\n<pre><code>#tab bar\ntab_bar_edge top\ntab_bar_style powerline\ntab_powerline_style slanted\n</code></pre>\n<h2>安装终端文件管理器</h2>\n<p><code>yay -S yazi</code>\n推荐yazi的原因，就是能用vim快捷键啊！hjkl好文明！\n而且它还能直接在终端预览图片\n<img src=\"https://images.glowisle.me/Pasted%20image%2020250309131507.webp\" alt=\"\"></p>\n<h2>最终效果预览</h2>\n<p><img src=\"https://images.glowisle.me/Pasted%20image%2020250309131145.webp\" alt=\"\"></p>\n<p><img src=\"https://images.glowisle.me/Pasted%20image%2020250309131221.webp\" alt=\"\"></p>",
+  "image": "https://images.glowisle.me/Pasted%20image%2020250309124346.webp",
+  "publishedAt": "2025-03-09T12:41:10Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/kitty%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E8%AE%B0%E5%BD%95/"
+}

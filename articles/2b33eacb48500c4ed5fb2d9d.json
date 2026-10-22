@@ -1,0 +1,11 @@
+{
+  "id": "2b33eacb48500c4ed5fb2d9d",
+  "title": "Zig 构建系统（上）：设计理念与最佳实践",
+  "summary": "C/C++ 生态通常使用 CMake 等专用构建工具配合平台脚本；Rust 的 Cargo 统一了包管理，但处理跨语言 C/C++ 依赖混合编译和代码生成时，仍需要编写 build.rs 桥接外部工具。 Zig 没有引入专用的构建 DSL，而是直接使用普通 Zig 源码编写构建脚本（ build.zig ），并将编译器驱动与 C/C++ 工具链整合在统一的接口下。",
+  "content": "<p>C/C++ 生态通常使用 CMake 等专用构建工具配合平台脚本；Rust 的 Cargo 统一了包管理，但处理跨语言 C/C++ 依赖混合编译和代码生成时，仍需要编写 <code>build.rs</code> 桥接外部工具。</p>\n<p>Zig 没有引入专用的构建 DSL，而是直接使用普通 Zig 源码编写构建脚本（<code>build.zig</code>），并将编译器驱动与 C/C++ 工具链整合在统一的接口下。</p>",
+  "image": null,
+  "publishedAt": "2026-10-01T00:00:00Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2026/10/01/zig-build-system-design/"
+}

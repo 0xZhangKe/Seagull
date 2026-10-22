@@ -1,0 +1,11 @@
+{
+  "id": "9dcfab896d6c14f14a8e3d0c",
+  "title": "Emacs EAF插件打开浏览器只显示opening http://xxx.xxx的解决方法",
+  "summary": "检查是否安装全部依赖，如yay、pip等。我这里是由于没有安装pip导致的。 sudo pacman -S python-pip 安装好后，进入eaf安装目录 cd ~/.emacs.d/site-lisp/emacs-application-framework && ./install-eaf.py 重新安装eaf。等待脚本运行完成，打开emacs，输入 M-x eaf-install-and-update ，等待执行完成。 重新输入 M-x eaf-open-browser ，输入网址，即可正常访问网页。",
+  "content": "<p>检查是否安装全部依赖，如yay、pip等。我这里是由于没有安装pip导致的。</p>\n<p><code>sudo pacman -S python-pip</code></p>\n<p>安装好后，进入eaf安装目录</p>\n<p><code>cd ~/.emacs.d/site-lisp/emacs-application-framework &amp;&amp; ./install-eaf.py</code></p>\n<p>重新安装eaf。等待脚本运行完成，打开emacs，输入<code>M-x eaf-install-and-update</code>，等待执行完成。</p>\n<p>重新输入<code>M-x eaf-open-browser</code>，输入网址，即可正常访问网页。</p>",
+  "image": null,
+  "publishedAt": "2025-04-29T10:02:49Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/emacs-eaf%E6%8F%92%E4%BB%B6%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%AA%E6%98%BE%E7%A4%BAopening-http-xxx-xxx%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"
+}

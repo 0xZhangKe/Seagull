@@ -1,0 +1,11 @@
+{
+  "id": "73cf0aadbc1d24cbcfa9be64",
+  "title": "解决没有修改文件但Git认为你修改了",
+  "summary": "这种情况看起来内容没变，但文件一定是被真正修改了。改变的点可能是换行符（LF ⇄ CRLF ） ，也可能是文件权限。 如果是文件权限，设置忽略文件权限即可： ❯ git config core.filemode false 我出现这个问题的原因是用 exFAT 格式的 U 盘在两台 ext4 格式的电脑之间拷项目。这两种格式一个为 Windows 设计一个为 Linux 设计，权限管理自然也不一样。因此权限在 ext4 上本来是 -rw-r--r-- ，过了一遍 exFAT 就成了 -rwxrwxrwx 。所以 Git 认为文件变了，但编辑器就是没法高亮哪里变了。 其实 Git 自身是可以告诉你文件权限被改变的： ❯ git diff README.md diff --git a/README.md b/RE…",
+  "content": "<p>这种情况看起来内容没变，但文件一定是被真正修改了。改变的点可能是换行符（LF\n⇄ CRLF<span>）</span>，也可能是文件权限。</p>\n<p>如果是文件权限，设置忽略文件权限即可：</p>\n<pre><code><span><span>❯</span><span> git config core.filemode</span><span> false</span></span></code></pre>\n<p>我出现这个问题的原因是用<span></span>exFAT<span></span>格式的<span></span>U<span></span>盘在两台<span></span>ext4<span></span>格式的电脑之间拷项目。这两种格式一个为<span></span>Windows<span></span>设计一个为<span></span>Linux<span></span>设计，权限管理自然也不一样。因此权限在<span></span>ext4<span></span>上本来是<span></span><code>-rw-r--r--</code>，过了一遍<span></span>exFAT<span></span>就成了<span></span><code>-rwxrwxrwx</code>。所以<span></span>Git<span></span>认为文件变了，但编辑器就是没法高亮哪里变了。</p>\n<p>其实<span></span>Git<span></span>自身是可以告诉你文件权限被改变的：</p>\n<pre><code><span><span>❯</span><span> git diff README.md</span></span>\n<span><span>diff</span><span> --git</span><span> a/README.md b/README.md</span></span>\n<span><span>old</span><span> mode</span><span> 100644</span></span>\n<span><span>new</span><span> mode</span><span> 100755</span></span></code></pre>\n      \n\n\n    <div>\n        <span>互动</span>\n        <div>复制以下链接，并粘贴到你的联邦宇宙Fediverse应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！</div>\n    </div>\n    <div>\n        <span></span>\n        <div>链接：<code>https://emptystack.top/note/git-filemode</code></div>\n    </div>\n\n<div>\n    \n\n\n\n\n    \n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
+  "image": null,
+  "publishedAt": "2020-02-28T08:18:58Z",
+  "sourceId": "946f35b6a82d9000",
+  "sourceTitle": "空栈顶",
+  "link": "https://emptystack.top/git-filemode/"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ffd7af5cf3b0fc64ab89a0a6",
+  "title": "提交PR后修改commit message",
+  "summary": "有时自己的 PR 会因为 commit message 不合要求被 commitlint 卡住，这时用 --amend 修改成合要求 commit message 再强制更新到自己提交 PR 的分支就可以了。 # 用 --amend 更新 commit message git commit --amend -m \" 新的commit message \" # 强制更新到提交 PR 的分支 (origin xxxxx) git push --force-with-lease origin xxxxx 互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.t…",
+  "content": "<p>有时自己的<span></span>PR<span></span>会因为<span></span>commit\nmessage<span></span>不合要求被<span></span>commitlint<span></span>卡住，这时用<span></span><a href=\"https://www.jianshu.com/p/a8a2ac58f37d\" target=\"_blank\" rel=\"noopener noreferrer\"><code>--amend</code></a><span></span>修改成合要求<span></span>commit\nmessage<span></span>再强制更新到自己提交<span></span>PR<span></span>的分支就可以了。</p>\n<pre><code><span><span># 用 --amend 更新 commit message</span></span>\n<span><span>git</span><span> commit</span><span> --amend -m</span><span> &quot;</span><span>新的commit message</span><span>&quot;</span></span>\n<span></span>\n<span><span># 强制更新到提交 PR 的分支 (origin xxxxx)</span></span>\n<span><span>git</span><span> push</span><span> --force-with-lease</span><span> origin xxxxx</span></span></code></pre>\n      \n\n\n    <div>\n        <span>互动</span>\n        <div>复制以下链接，并粘贴到你的联邦宇宙Fediverse应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！</div>\n    </div>\n    <div>\n        <span></span>\n        <div>链接：<code>https://emptystack.top/note/update_commit_message_in_pr</code></div>\n    </div>\n\n<div>\n    \n\n\n\n\n    \n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
+  "image": null,
+  "publishedAt": "2019-02-22T03:32:38Z",
+  "sourceId": "946f35b6a82d9000",
+  "sourceTitle": "空栈顶",
+  "link": "https://emptystack.top/update_commit_message_in_pr/"
+}

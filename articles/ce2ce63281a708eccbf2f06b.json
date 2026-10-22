@@ -1,0 +1,11 @@
+{
+  "id": "ce2ce63281a708eccbf2f06b",
+  "title": "短代码使用整理",
+  "summary": "<p>整理一下短代码格式、效果和来源。如无特殊注明，参考来自<a data-render=\"link\" data-external=\"true\" href=\"https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E5%8D%A1%E7%89%87%E6%A0%B7%E5%BC%8F\" target=\"_blank\">Hugo|在Stack主题上可行的短代码们<span style=\"white-space: nowrap;\"> <svg width=\".7em\" height=\".7em\" viewBox=\"0 0 21 21\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"m13 3l3.293 3.293l-7 7…",
+  "content": "<p>整理一下短代码格式、效果和来源。如无特殊注明，参考来自<a href=\"https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E5%8D%A1%E7%89%87%E6%A0%B7%E5%BC%8F\" target=\"_blank\" rel=\"noopener noreferrer\">Hugo|在Stack主题上可行的短代码们<span>\n        \n    </span>\n</a></p>\n<h1>bilibili</h1>\n<p>播放器嵌入参考了：<a href=\"https://blog.iyu.icu/posts/shortcode_bilibili/\" target=\"_blank\" rel=\"noopener noreferrer\">使用Shortcodes在Hugo博客中优雅的嵌入B站视频<span>\n        \n    </span>\n</a></p>\n<p>bilibili视频分享嵌入代码中，可以提取视频的avid。迟早有一天我要改成avid和bvid都能用的shortcodes。</p>\n<p>短代码格式: <code>&lt;bilibili + avid&gt;</code>。</p>\n<p>&lt;bilibili 115185486402704&gt;</p>\n<h1>mastodon 嘟文嵌入</h1>\n<p>这个shortcodes只能适用于单一server单一用户。</p>\n<p>短代码格式: <code>&lt; mastodon status=&quot;嘟文数字id&quot; &gt;</code></p>\n\n\n\n\n\n\n\n\n\n\n\n\n<h1>neodb 嵌入</h1>\n<p>短代码格式 <code>&lt;neodb &quot;条目链接&quot;&gt;</code>。</p>\n<p>但是由于<code>i/o timeout</code>无法嵌入，是由于你我都了解的原因，因此neodb原生卡片嵌入暂时放弃。</p>\n<h1>重点标记</h1>\n<p>短代码格式 <code>&lt;mark text=&quot;text&quot;&gt;</code>\n<mark>重点颜色</mark>\n，和选中颜色一样。</p>\n<h1>折叠</h1>\n\n    叠叠乐<p>叠叠p1</p>\n<p>叠叠p2</p>",
+  "image": null,
+  "publishedAt": "2025-12-21T00:00:00Z",
+  "sourceId": "6f211a9bbc8e4e48",
+  "sourceTitle": "杜尚此在沙龙",
+  "link": "https://www.lhooq.life/words/20251221/"
+}

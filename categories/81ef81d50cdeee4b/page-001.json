@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "id": "e9425198c9a4230b09af5dd8",
+      "title": "Zine#60 - 追加與回顧笔記法、通風、天國拯救",
+      "summary": "Zine#60 追加與回顧笔記法、通風、天國拯救 🎵 ふたたび - 久石譲 目錄 News | Article Cool Bit Blog Related Tutorial | Resource Code Related AI Related Tool | Library Emacs 一些话 | 摘抄 多媒体 News | Article Browser vertical tabs are great (and they’re older than you think!) by Dan Q 無論垂直分頁起源於何處，它們都非常棒，我超級喜歡。以下是垂直分頁之所以厲害的原因： 如果你（像我一樣）傾向於開啟大量分頁，垂直分頁捲動起來會更容易。 同樣地：假設你使用的是橫向閱讀的語言，你可以更輕鬆地閱讀標題。 在寬螢幕…",
+      "image": null,
+      "publishedAt": "2026-10-12T02:55:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/60.html",
+      "detailPath": "articles/e9425198c9a4230b09af5dd8.json"
+    },
+    {
+      "id": "6a307cca6bf22514be4c8122",
+      "title": "讀《一句頂一萬句》",
+      "summary": "讀《一句頂一萬句》 《 一句頂一萬句 》是劉震雲的一部長篇小說。開頭差點沒能看下去，一下子講太多人物了，老楊、老馬、老裴⋯⋯不過耐心看下去，很快主綫就會變得清晰。整本書像是一出群像劇，講了很多人的故事、不同人的家長裡短、人情世故，有種在聴不同人的八卦的感覺，誰不喜歡吃瓜呢，就越看越有意思。 書分成了兩部分，出延津記和回延津記，前者主要講述楊百順的前半生，而後者主要關於牛愛國，他是楊百順的養女的後代。 楊百順的一生并不順，遇過不少人和挫折，最後還把疼愛的養女弄丟了(被拐賣了)，於是他也像傷心的老裴一樣想离開延津這個傷心地，一直走，直到走到一個心裡不再難受的地方。 牛愛國和楊百順都一樣，和妻子沒話可說，妻子和身邊的人出軌，而他們都被妻子瞞在鼓裡。為什麼會出軌？大概是因為兩人沒話可說，聊不起來，覺得孤單寂寞，又正好…",
+      "image": null,
+      "publishedAt": "2026-10-11T06:52:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/%E8%AE%80%E3%80%8A%E4%B8%80%E5%8F%A5%E9%A0%82%E4%B8%80%E8%90%AC%E5%8F%A5%E3%80%8B.html",
+      "detailPath": "articles/6a307cca6bf22514be4c8122.json"
+    },
+    {
+      "id": "14a50c4e3453b4a55352a01c",
+      "title": "讀《13·67》",
+      "summary": "讀《13·67》 《13·67》 是 陳浩基 寫的一本推理小說，書名《13·67》含義是從 2013 年到 1967 年之間的故事，以香港和當時的一些歷史事件為背景。整本小說由 6 個相對獨立的案件組成，通過反複出現的人物將故事串聯起來，每個獨立案件都挺精采的。作為一本推理小說，我覺得這几個故事已經挺好的了，看得很過癮，但小說還在結尾給我一個意想不到的結局，讓這本小說在我心裡又上了一個高度。從小到大接触了很多香港的警匪片，也去過几次香港，書裡的地點、對話、用語等都給我一種熟悉感。 書裡打動我的，除了精彩的推理故事，還有人物的選擇和坚持： 有人只是把員警當作一份換取薪資的職業；有人把員警當作除暴安良、维持正义的神圣工作。 有人只因穿同一件制服便当成自己人，盲目支持；有人理性思考，坚守信奉的理念，秉持公羲。 有人…",
+      "image": null,
+      "publishedAt": "2026-09-28T01:20:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/%E8%AE%80%E3%80%8A13%C2%B767%E3%80%8B.html",
+      "detailPath": "articles/14a50c4e3453b4a55352a01c.json"
+    },
+    {
+      "id": "8daa7ffe9485fe681ee1b523",
+      "title": "Emacs 代碼块导出复用",
+      "summary": "Emacs 代碼块导出复用 在寫博客時，有時我需要顯示代碼，同時把代碼导出成 HTML，放在頁面裡用。例如在 一些關於連結的建議::進階樣式 裡，我要介紹外部連結的樣式，同時要將樣式應用在頁面上，原來我會這麼做： 一個代碼块 ( #+begin_src css ) 用於顯示代碼： #+begin_src css a[href^='http']:not([href^='http://taxodium.ink']):not([href^='https://taxodium.ink']) { &::after { /* 省略 */ } } #+end_src 一個导出块 ( #+begin_export html )，複製和代碼块相同的內容，把它导出到 HTML： #+begin_export html <styl…",
+      "image": null,
+      "publishedAt": "2026-09-27T08:45:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/reusing-emacs-code-block-when-export.html",
+      "detailPath": "articles/8daa7ffe9485fe681ee1b523.json"
+    },
+    {
+      "id": "d7aa522ab4f87899b667332b",
+      "title": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管",
+      "summary": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管 tecosaur/emacs-everywhere 是一個 Emacs 的擴展，它可以在任意輸入框輸入時，打開一個 Emacs Frame，把輸入框的內容複製到 Emacs 裡編輯， 編輯完成後，再把內容粘貼回原來的輸入框。 這樣相當於把任意輸入框「變成」Emacs，获得更好的、熟悉的輸入體驗。在一些需要輸入大量文本的場景，我就會用 Emacs Everywhere，例如在 Thunderbird 寫郵件、寫 issue、寫評論、在 LLM 對話頁寫較長的 prompt 等。 一段录󠄃屏，在 Kagi Assistant 頁面的輸入框裡有一些文字， 全選後，打開 Raycast，找到 Emacs Everywhere 的脚本命令并执行，…",
+      "image": null,
+      "publishedAt": "2026-09-27T07:55:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/use-emacs-everywhere-to-take-over-any-input-field-with-emacs.html",
+      "detailPath": "articles/d7aa522ab4f87899b667332b.json"
+    },
+    {
+      "id": "6f4beea5fd233f3c62b18434",
+      "title": "水蒸蛋",
+      "summary": "水蒸蛋 水蒸蛋有啥難的？打几個雞蛋，加點水，放鍋裡一蒸不就完了嗎？ 我也是這麼想的，但想要蒸出表面光滑、整體水嫩的水蒸蛋，還是有一些細節要注意的。 食材 雞蛋若干個，具體几個，取决於你想吃几個，以及容器大小。 烹飪 打 4 個雞蛋到容器裡，按 1:1.5 的蛋水比例加水 (你可以用半個蛋殻來量，量 3 次就是 1.5 倍左右的水了，蛋殻容量可能有偏差，水量可以適當加减) 加入少許盐 (稍微增加點味道) ，把蛋液攪匀，撇去表面的浮沫 用保鮮膜盖住容器，用牙簽在上面戳几個小洞 (保鮮膜可以避免鍋盖上的水滴落在蛋液上，开孔是為了適當透氣，這一步是蛋液光滑的關鍵) 水開後蒸 12 ~ 15 分鐘 (鍋裡水要够哦，別空燒) 加入少許醬油、少許香油 (也就是芝麻油。不要多，香過頭也不好吃，稍微有點香味就好) ，用勺子在表…",
+      "image": null,
+      "publishedAt": "2026-09-27T04:17:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/recipe-shui-zheng-dan.html",
+      "detailPath": "articles/6f4beea5fd233f3c62b18434.json"
+    },
+    {
+      "id": "9b3c25cb4b3297fed465d36d",
+      "title": "一些關於連結的建議",
+      "summary": "一些關於連結的建議 內容相關 在分享連結前，可以停下來先想想要不要分享。你的每一次分享都會給連結帶來一定的點擊量，你希望這個連結被傳播嗎？它值得被傳播嗎？有時不分享也許是更好的選擇。 讓連結的文字有意義 ，即使脫離上下文，連結中的文字也應該能說明該連結會前往何處。 錯誤示範：我的博客是 這個 。 正確示範：我的博客是 Taxodium 。 只寫連結，不寫文字，如何？ 最近我還看到一種分享連結的風格，見 Pluralistic ，這種風格是直接把連結寫出來，如： https://pluralistic.net/ 而不是 Pluralistic 。 這種風格的好处是能直接看到 URL，知道域名、URL 參數，某種程度上讓連結更透明。讀者看到域名，如果是一些不喜歡的網站就可以避免打開。連結往往會單獨一行呈現，複製起…",
+      "image": null,
+      "publishedAt": "2026-09-27T03:25:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/some-advice-about-links.html",
+      "detailPath": "articles/9b3c25cb4b3297fed465d36d.json"
+    },
+    {
+      "id": "2c456e46cc8a51457e2bfcdf",
+      "title": "沙蔥炒牛肉",
+      "summary": "沙蔥炒牛肉 沙蔥有一股獨特的香味，之前買過沙蔥涼拌牛肉，很好吃，但沙蔥炒牛肉好吃嗎？試試唄。 食材 牛腿肉 (或其他類似部位) 約 200g 沙蔥約 200g 沙薑 2 顆 (喂！怎麼還有沙薑啊？別問俺，俺也是看視頻裡有，就買了) 大蒜 1 顆 (是一顆，不是一瓣哦) 小米辣几根 (能吃辣就多來點，吃不了就可以省了) 備菜 牛肉切成薄片 (逆著紋理切) ，加入一點點黑胡椒 (去腥，不要太多就會有一股胡椒味也不好吃) 、適量生抽 (入個底味) 、少量小蘇打 (讓肉更嫩) 、少量油 (封住水份，也不容易粘鍋) ，攪拌均勻，腌製 10 分鐘。 沙蔥洗干净，對半切成段 沙薑、蒜、小米辣都切成碎粒 烹飪 起鍋熱油 (油多給點，不能太少，少了可能會粘鍋，你要是不知道這次多少合適，下次就知道了) ，下入沙薑、蒜、小米辣炒香…",
+      "image": null,
+      "publishedAt": "2026-09-20T14:15:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/recipe-sha-cong-chao-niu-rou.html",
+      "detailPath": "articles/2c456e46cc8a51457e2bfcdf.json"
+    },
+    {
+      "id": "2fd571d82e054dc34b241c90",
+      "title": "Zine#59 - 和手機的關係、謠言、已讀不回",
+      "summary": "Zine#59 和手機的關係、謠言、已讀不回 目錄 News | Article Cool Bit Tutorial | Resource Code Related AI Related Tool | Library Emacs 一些话 | 摘抄 多媒体 開頭的音樂分享會有人期待嗎？不管如何，如果你想找點歌聴，推薦聴聴 上期 分享的 Men I Trust！除此之外，這周 Hopico 也更新了一期 ⸺ 原来莫文蔚最好的 9 首情歌，都藏在滚石唱片。好痛！特别痛！ ⸺ 我也把裡面提到的専輯也找來聴了，你也可以去聴聴看！ 图1 視頻截圖，裡面有一段文字，內容是： 情歌是想念变成了 / 一个在夜晚撑船的人 / 但它找不到接它的对岸 / 然后想念常常像一个赶路的人 它永远在追一个 / 追不上的背影 / 情歌也是 /…",
+      "image": null,
+      "publishedAt": "2026-09-20T13:20:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/59.html",
+      "detailPath": "articles/2fd571d82e054dc34b241c90.json"
+    },
+    {
+      "id": "6a823c659566aba54bc112e1",
+      "title": "用 Tamper-monkey 集成 Kagi Translate (2) - 結合 Zen 瀏覧器的分屏功能",
+      "summary": "用 Tamper-monkey 集成 Kagi Translate (2) 結合 Zen 瀏覧器的分屏功能 之前分享了 用 Tamper-monkey 集成 Kagi Translate ，誰能想到還有續集 :P 上次分享後，我又基於我的使用習慣做了一些調整，例如將字典和翻譯用不同窗口呈現，不再複用同一個窗口，這樣在翻譯的同時也能查字典；通過檢測原始頁面關閉，自動關閉臨時窗口，减少一些手動操作。 自動關閉窗口是用 visibilitychange event 實現的，也試過 beforeunload event 和 pagehide event ，但都不如 visibilitychange 穩定。 visibilitychange 的問題是，一旦离開一個頁面就會触發，對於字典和段落翻譯來說沒問題，因為它們都翻…",
+      "image": null,
+      "publishedAt": "2026-09-16T13:41:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/integrate-kagi-translate-with-tampermonkey-2.html",
+      "detailPath": "articles/6a823c659566aba54bc112e1.json"
+    },
+    {
+      "id": "e7b0eb1af6bc61f9a1ce4e9c",
+      "title": "Zine#58 - 用合理的排版引导讀者閱讀、值得熬夜的事情都值得早起",
+      "summary": "Zine#58 用合理的排版引导讀者閱讀、值得熬夜的事情都值得早起 目錄 News | Article Cool Bit Tutorial | Resource Code Related AI Related Tool | Library Emacs 一些话 | 摘抄 多媒体 這周又聴了陳嫻静的「如果每天都可以 happy happy 谁想要sad:)) - 一起去度假」 ，在評論區看到有人說「喜歡這張專輯的大概率也會喜歡 Men I Trust 的音樂」，於是就把 Men I Trust 的專輯都找來聴了聴，還沒聴完，確實也蠻喜歡的。他們的風格偏向 Dream pop ，整體聴著相對舒緩，主唱 Emmanuelle Proulx 的聲音也好聴。聴 Men I Trust，還會讓我想到另外兩支樂隊： The…",
+      "image": null,
+      "publishedAt": "2026-09-16T09:45:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/58.html",
+      "detailPath": "articles/e7b0eb1af6bc61f9a1ce4e9c.json"
+    },
+    {
+      "id": "7075829052821ec48e985923",
+      "title": "辣椒炒肉",
+      "summary": "辣椒炒肉 🎵 チンジャオロース - 福原希己江 實踐一下 Zine#57 裡分享的 RecipeTables 的做法。 辣椒炒肉菜譜 螺丝椒或是其它青椒約 250g 切片 熱鍋，少許少許油，下入青椒煽炒，壓一壓， 煽一陣子後加入少量盐，直到煽軟，有點虎皮的感覺，捞起備用。 熱鍋，放入適量油 (可以稍微多一些) ， 如果有肥肉就先放入肥肉，先中大火炒變色，再小火煸出猪油。 捞走肥肉，下入豆豉炒香，接著放入蒜片炒香 (一起放也行) 。 下入青椒和肉，將肉炒熟變色，再下入白木耳翻炒一段時間，把食材炒熟。 都差不多熟了 (用肉色判斷) 之後， 加入適量生抽（咸味）、老抽 （上色）、白糖（提鮮，削减辣味），翻炒均勻即可裝盤。 梅花肉或前腿肉 200g ~ 400g 切片，不要太厚。 基於肉量，加入適量生抽、老抽、小蘇打…",
+      "image": null,
+      "publishedAt": "2026-09-07T12:09:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/recipe-la-jiao-chao-rou.html",
+      "detailPath": "articles/7075829052821ec48e985923.json"
+    },
+    {
+      "id": "850bff7453a820a27161321f",
+      "title": "用 Tamper-monkey 集成 Kagi Translate - 以及用 Docker Sandbox 使用 OpenCode 和 DeepSeek",
+      "summary": "用 Tamper-monkey 集成 Kagi Translate 以及用 Docker Sandbox 使用 OpenCode 和 DeepSeek 我現在主要用 Kagi Translate 閱讀外文， Kagi Translate 提供了 瀏覧器插件 ，有三個我常用的功能： 1) 網頁全文翻譯 2) 選擇內容翻譯 3) 字典定義。但插件很久沒更新了，最近用下來也有兩個很影响使用的地方： 網頁翻譯有時會吞掉一些文章內容；有的段落可能只翻譯了一兩個單詞。原來我可以打開一堆頁面，然後全部翻譯，哪個翻譯好了我就看哪個，現在我還要檢查內容是否完整，用起來提心吊胆的。而且重新翻譯也未必有用，它是有緩存的，先要清空插件的緩存後才能触發新的翻譯，但清除緩存重新請求也未必正常，有時我需要切換目標語言或不同的翻譯質量才行。…",
+      "image": null,
+      "publishedAt": "2026-09-04T09:20:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/integrate-kagi-translate-with-tampermonkey.html",
+      "detailPath": "articles/850bff7453a820a27161321f.json"
+    },
+    {
+      "id": "2ddd573b79732bc51648c74e",
+      "title": "TIL:Punycode - 域名中的 Unicode",
+      "summary": "TIL:Punycode 域名中的 Unicode 之前看了 マリウス 的 disable-javascript.org ，我就用 Elfeed 訂閱了他的博客，但後面一直在 Elfeed 裡看到拉取报錯，錯誤信息如下： [error]: https://マリウス.com/index.xml: \"(60) Peer certificate cannot be authenticated with known CA certificates.\" Elfeed 是用 curl 發請求的 (前提是 elfeed-use-curl 為 t ) ，直接用 curl 請求的話，报錯是： curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to…",
+      "image": null,
+      "publishedAt": "2026-09-01T10:30:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/til-punycode.html",
+      "detailPath": "articles/2ddd573b79732bc51648c74e.json"
+    },
+    {
+      "id": "87e2ee84818eeb9ccba75bbf",
+      "title": "Zine#57 - 用你的錢包去投票",
+      "summary": "Zine#57 用你的錢包去投票 目录󠄃 News | Article Cool Bit Tutorial | Resource Code Related AI Related Tool | Library Emacs 一些话 | 摘抄 多媒体 图1 香港石澳拍的一張胶片，後面是山，山前是一片海灣，海灣中間有一片岩石，岩石上有一些房屋。 這期內容有點多，如果你想聴點歌慢慢看，我推薦 Album#45 - Sweet Sticky Thing ，這張專輯聴完要差不多一個小時，應該够了。什麼？你說你聴過了，不想聴這張？那 Thomas Bangalter: Mythologies 怎麼樣呢，這是 Daft Punk 成員 Thomas Bangalter 製作的古典樂，也很不錯。你說想聴有人聲的？如果這辈子只能带…",
+      "image": null,
+      "publishedAt": "2026-08-30T11:00:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/57.html",
+      "detailPath": "articles/87e2ee84818eeb9ccba75bbf.json"
+    }
+  ]
+}

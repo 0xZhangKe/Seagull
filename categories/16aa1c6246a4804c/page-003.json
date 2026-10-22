@@ -1,0 +1,147 @@
+{
+  "items": [
+    {
+      "id": "14c5b68d010835a2d66f679a",
+      "title": "两个水壶问题",
+      "summary": "问题描述是这样的： 假设有一个池塘，里面有无穷多的水。现有2个空水壶a，b，其容积分别为6升和5升。如何只用这2个水壶从池塘里取得3升的水**（最后，这三升水，在其中一个壶里）。",
+      "image": null,
+      "publishedAt": "2014-08-16T05:04:37Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/08/16/two-pot-question/",
+      "detailPath": "articles/14c5b68d010835a2d66f679a.json"
+    },
+    {
+      "id": "59a17a094a78371bbe3df7b5",
+      "title": "inter- intra- cept -ee -er词缀讲解",
+      "summary": "故事是这么开始的，我遇到了inter-organizational与intra-organizational这么两个词组，其实也很好区分，前面是“不同组织之间的”，后者是“同一组织内部的”，搞计算机的应该知道有个叫intranet的网，它是与internet不一样的，专指企业内部网络。我这里想以这两个词缀为基准，展开一系列联想，学英语的乐趣不就在于此嘛。",
+      "image": null,
+      "publishedAt": "2014-08-09T07:46:12Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/08/09/inter-intra-cept-ee-er/",
+      "detailPath": "articles/59a17a094a78371bbe3df7b5.json"
+    },
+    {
+      "id": "11c4ba2dc3a279519afe0f5d",
+      "title": "关于",
+      "summary": "1 ( def 刘家财 2 ( doto ( Programmer. ) 3 ( .alias \"写代码的西瓜\" \"jiacai2050\" ) 4 ( .currentJobLocation \"Hangzhou\" ) 5 ( .homepage \"https://liujiacai.net\" ) 6 ( .email \"blog@liujiacai.net\" ) 7 ( .university \"Yantai University\" ) 8 ( .favorites 9 { :sport [ \"Climbing\" \"Pingpong\" ] 10 :languages [ :Zig :Rust :Go :Clojure ] 11 :misc [ \"Podcast\" \"Reading\" \"Hack Emacs\"…",
+      "image": null,
+      "publishedAt": "2014-08-07T23:48:37Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/about/",
+      "detailPath": "articles/11c4ba2dc3a279519afe0f5d.json"
+    },
+    {
+      "id": "8e094fc65421a46983699adc",
+      "title": "Yarn的安全模式与高可靠性安装总结",
+      "summary": "最近几天又重新把cdh的安全模块与高可靠性模块重新搭建了一遍，这次用是的目前最新的5.1.0的tar包安装，以前把MRv1搭建了好，这次主要是熟悉安装过程，并且把YARN的安全模块与HA模块成功搭建起来。遇到的错误还是不少，安装过程也是废了我好几天，现在想想很多错误都比较典型，现在此记录下我搭建过程中遇到的错误与心得，一方面为自己以后查阅，另一方面希望也能对遇到同样问题的人有所启发。",
+      "image": null,
+      "publishedAt": "2014-08-06T14:36:08Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/08/06/cdh-yarn-ha-kerberos/",
+      "detailPath": "articles/8e094fc65421a46983699adc.json"
+    },
+    {
+      "id": "abe90e568fbf0bd56f360ec4",
+      "title": "hadoop1.0 高可靠性(HA)安装与总结",
+      "summary": "继上次 安装完Kerberos安全认证 后，现在我在这基础上，又给CDH加上了HA（high availability），也就是高可靠性，具体来讲就是双NameNode，双Jobtracker（我还是在MRv1模式下），有了HA后，这下集群的健壮性就能够得到很好的保证了。 我还是按照 官方文档 来操作的，有了上次的经验，建议大家在具体操作实施前，先快速阅读一遍，做到心中有数，我还阅读了 Apache官方的说明 ，也不用怎么详细，大概知道怎么回事就行了。",
+      "image": null,
+      "publishedAt": "2014-07-17T15:07:34Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/17/cdh-ha-installation/",
+      "detailPath": "articles/abe90e568fbf0bd56f360ec4.json"
+    },
+    {
+      "id": "fce364f321db5fe2d25cb852",
+      "title": "hadoop1.0 安全认证(kerberos)安装与总结",
+      "summary": "俗话说得好，万事开头难。在软件开发中，环境部署要算是第一门槛了。我最近折腾了一周时间把cdh5.0.2.tar.gz版本在MRv1模式下，成功集成了Kerberos安全认证，并且是在全分布式模式下。经过这次安装过程，对hadoop的了解又深入了一层。现在趁着自己刚搭建完环境，脑子还时不时的闪现遇到的错误，把我的安装过程记录于此，一方面方便自己今后查阅，另一方面希望对今后遇到同样问题人有所启发。",
+      "image": null,
+      "publishedAt": "2014-07-15T13:56:28Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/15/cdh-kerberos-installation/",
+      "detailPath": "articles/fce364f321db5fe2d25cb852.json"
+    },
+    {
+      "id": "7374f4dc29a9cd64097ea8f8",
+      "title": "JVM 的类初始化机制",
+      "summary": "当你在 Java 程序中 new 对象时，有没有考虑过 JVM 是如何把静态的字节码（byte code）转化为运行时对象的呢，这个问题看似简单，但里面的细节很多，而且由于开发者在平时与之打交道较少，很少有同学会去主动探索这块知识，但这个知识点却是面试时常考的地方，而且熟练掌握类加载是实现代码热部署的关键。",
+      "image": null,
+      "publishedAt": "2014-07-12T05:02:29Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/12/order-of-initialization-in-java/",
+      "detailPath": "articles/7374f4dc29a9cd64097ea8f8.json"
+    },
+    {
+      "id": "a0124ca9439f4a576bca7757",
+      "title": "计算思维之三语义符号化表达与计算",
+      "summary": "##0和1与逻辑——思维符号化表达与逻辑运算",
+      "image": null,
+      "publishedAt": "2014-06-06T13:13:30Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-3/",
+      "detailPath": "articles/a0124ca9439f4a576bca7757.json"
+    },
+    {
+      "id": "97c3838693be02f97d8dc554",
+      "title": "计算思维之二计算之树",
+      "summary": "这次从计算机的宏观角度对整个计算机行业做个剖析，这里老师引入一个计算之树的模型。",
+      "image": null,
+      "publishedAt": "2014-06-06T05:07:27Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-2/",
+      "detailPath": "articles/97c3838693be02f97d8dc554.json"
+    },
+    {
+      "id": "85f596d0da94862d52de3c66",
+      "title": "计算思维之一序言篇",
+      "summary": "这一系列笔记是我在上一个mooc课 大学计算机—计算思维导论 上的笔记，我觉得比较实用，尤其是在知识爆炸的如今，如何找到一种科学的学习方式，准确理解事物的本质是非常重要的能力。 1. 学习三种境界",
+      "image": null,
+      "publishedAt": "2014-06-06T03:58:43Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-1/",
+      "detailPath": "articles/85f596d0da94862d52de3c66.json"
+    },
+    {
+      "id": "770c45def885e5b4bf48edc7",
+      "title": "搜索引擎概貌",
+      "summary": "1. 前言 以前参加齐鲁软件大师时用过lucene，但是仅仅只是停留在API调用层面上，这次借着看《lucene in action》第二版的机会把与lucene和搜索相关的知识系统整理一遍。以下内容来自lucene in action的翻译加上我自己的理解，如有疑问或错误，请指出，谢谢。",
+      "image": null,
+      "publishedAt": "2014-05-22T07:28:26Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/05/22/search-engine-overview/",
+      "detailPath": "articles/770c45def885e5b4bf48edc7.json"
+    },
+    {
+      "id": "30480f7c1817eb5ac269c99d",
+      "title": "深入Java世界",
+      "summary": "俗话说的好：不经一事，不长一智。",
+      "image": null,
+      "publishedAt": "2014-05-19T00:18:39Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/05/19/go-into-java-world/",
+      "detailPath": "articles/30480f7c1817eb5ac269c99d.json"
+    },
+    {
+      "id": "441cb6c94dc81cd2994a6b7a",
+      "title": "开启个人博客之旅",
+      "summary": "这是第一篇用octopress折腾的博客真是废了不少劲，以后就以这里为大本营了。 ——update——— octopress由于文章生成速度太慢，现在已经换成hexo。",
+      "image": null,
+      "publishedAt": "2014-05-07T07:14:41Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/05/07/hello-weblog/",
+      "detailPath": "articles/441cb6c94dc81cd2994a6b7a.json"
+    }
+  ]
+}

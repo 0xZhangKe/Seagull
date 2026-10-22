@@ -1,0 +1,11 @@
+{
+  "id": "f050f9634e6973a297c85502",
+  "title": "写写高斯模糊——从 CSS 模糊滤镜的白边说起",
+  "summary": "前言 通常我们可以很容易地使用 PhotoShop 中的「高斯模糊」来模糊图片。 这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。） 而 CSS3 提供了滤镜 filter / backdrop-filter ，其中的模糊功能同样也是高斯模糊。（Canvas 中的 filter 亦是如此。） 只是当我们为图片背景添加 CSS 滤镜时，便会出现不和谐的白边。 虽然有一些奇技淫巧（比如放大图片再截去模糊的边）去解决，但皆治标不治本，我们不妨借此机会探究一下高斯模糊，并尝试自己实现它。 正文 多图预警 访问 https://www.yunyoujun.cn/posts/gaussian-bl…",
+  "content": "<h2>前言</h2>\n<p>通常我们可以很容易地使用 PhotoShop 中的「高斯模糊」来模糊图片。</p>\n<p>这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。）</p>\n<p><img src=\"https://cos.yunle.fun/images/photoshop-gaussian-blur.jpg\" alt=\"Gaussian Blur | Photoshop\"></p>\n<p>而 CSS3 提供了滤镜 <a href=\"https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter\" target=\"_blank\" rel=\"noopener noreferrer\">filter</a>/<a href=\"https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter\" target=\"_blank\" rel=\"noopener noreferrer\">backdrop-filter</a>，其中的模糊功能同样也是高斯模糊。（Canvas 中的 <a href=\"https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/filter\" target=\"_blank\" rel=\"noopener noreferrer\">filter</a> 亦是如此。）</p>\n<p>只是当我们为图片背景添加 CSS 滤镜时，便会出现不和谐的白边。</p>\n<p>虽然有一些奇技淫巧（比如放大图片再截去模糊的边）去解决，但皆治标不治本，我们不妨借此机会探究一下高斯模糊，并尝试自己实现它。</p>\n<p>正文<strong>多图预警</strong></p>\n<br><p>访问 <a href=\"https://www.yunyoujun.cn/posts/gaussian-blur-for-image\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.yunyoujun.cn/posts/gaussian-blur-for-image</a> 阅读全文。</p>",
+  "image": "https://cos.yunle.fun/images/photoshop-gaussian-blur.jpg",
+  "publishedAt": "2020-10-18T22:04:45Z",
+  "sourceId": "410b11347b8a16bf",
+  "sourceTitle": "云游君的小站",
+  "link": "https://www.yunyoujun.cn/posts/gaussian-blur-for-image"
+}

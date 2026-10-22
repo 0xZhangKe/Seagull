@@ -1,0 +1,11 @@
+{
+  "id": "2a2fa05721eb0f1bb2185406",
+  "title": "使用sqlite和etree读取字典APP的数据文件",
+  "summary": "使用sqlite和etree读取字典APP的数据文件 背景 在之前的工作中，我学会了如何 使用xpath爬取字典内容 ，但是这毕竟不是一个长期的解决方案。因为爬虫容易受到请求次数的限制，而且随着网站升级反爬虫功能，在做业务的过程中很容易受到影响。 于是开发就想办法破解了安卓的apk安装包，拿到了一个后缀为db的文件。 破解这件事情暂时不在我操心的范围内，不知道以后有没有机会学一下类似的破解如何操作，但今天这篇博客的重点是如何读取db文件中的单词数据。 具体操作 db文件指的是database-related file，因此需要使用数据库相关的软件和库访问。 VSCode预览 步骤： 打开VSCode，安装SQLite插件 新建一个文件，点击右下角Select Language Mode将语言切换成SQL即可在…",
+  "content": "<h1>使用sqlite和etree读取字典APP的数据文件</h1>\n<h2>背景</h2>\n<p>在之前的工作中，我学会了如何<a href=\"https://yuqiqin.me/use-xpath-to-scrape-dict/\" target=\"_blank\" rel=\"noopener noreferrer\">使用xpath爬取字典内容</a>，但是这毕竟不是一个长期的解决方案。因为爬虫容易受到请求次数的限制，而且随着网站升级反爬虫功能，在做业务的过程中很容易受到影响。</p>\n<p>于是开发就想办法破解了安卓的apk安装包，拿到了一个后缀为db的文件。</p>\n<p>破解这件事情暂时不在我操心的范围内，不知道以后有没有机会学一下类似的破解如何操作，但今天这篇博客的重点是如何读取db文件中的单词数据。</p>\n<h2>具体操作</h2>\n<p>db文件指的是database-related file，因此需要使用数据库相关的软件和库访问。</p>\n<h3>VSCode预览</h3>\n<p>步骤：</p>\n<ol>\n<li>打开VSCode，安装SQLite插件</li>\n<li>新建一个文件，点击右下角Select Language Mode将语言切换成SQL即可在文件内部写SQL语句</li>\n<li>右键点击Run Query，会弹出选择database的窗口</li>\n<li>Choose database from指向db文件即可</li>\n</ol>\n<h3>使用Python导出数据</h3>\n<p>需要使用的包有两个，一个是<code>sqlite3</code>用于读取db文件，一个是<code>etree</code>通过xpath定向选择数据库的内容。</p>\n<p>XML的xpath可以在<a href=\"http://xpather.com/\" target=\"_blank\" rel=\"noopener noreferrer\">xpather</a>转换，随便复制一段xml的代码，它就能帮你解析各个节点的xpath。当你确认好你想要的内容对应的是哪一段xpath之后，你就可以使用下面的代码导出内容了。</p>\n<pre><code>import sqlite3  \nfrom lxml import etree\n\nconn = sqlite3.connect(&#x27;~.db&#x27;)  \nc = conn.cursor()  \n  \ncursor = c.execute(&quot;SELECT * from dict&quot;) # 把SQL语句写成字符串\n\n# cursor相当于表格，row[3]是当前行的第4列\nfor row in cursor:\n    text = row[3].decode()\t# 如果数据是byte格式的，需要decode才能变成string\n\t_xml = etree.XML(text)\t# 获取该“单元格”的xml\n\t\n    for result in _xml.xpath(&#x27;&#x27;): # 获取对应xpath地址的内容\n\t\tprint(result.text)\n</code></pre>",
+  "image": null,
+  "publishedAt": "2024-04-22T15:26:02Z",
+  "sourceId": "207f6e65632bf687",
+  "sourceTitle": "Psychic Paper",
+  "link": "https://yuqiqin.me/use-sqlite-and-etree-to-read-dict-app/"
+}

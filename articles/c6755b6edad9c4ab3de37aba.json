@@ -1,0 +1,11 @@
+{
+  "id": "c6755b6edad9c4ab3de37aba",
+  "title": "Java LinkedHashMap源码解析",
+  "summary": "上周把 HashMap 、 TreeMap 这两个Map体系中比较有代表性的类介绍完了，大家应该也能体会到，如果该类所对应的数据结构与算法掌握好了，再看这些类的源码真是太简单不过了。 其次，我希望大家能够触类旁通，比如我们已经掌握了HashMap的原理，我们可以推知 HashSet 的内部实现 HashSet 内部用一个HashMap对象存储数据，更具体些，只用到了key，value全部为一dummy对象。",
+  "content": "<p>上周把<a href=\"https://liujiacai.net/blog/2015/09/03/java-hashmap/\" target=\"_blank\" rel=\"noopener noreferrer\">HashMap</a>、<a href=\"https://liujiacai.net/blog/2015/09/04/java-treemap/\" target=\"_blank\" rel=\"noopener noreferrer\">TreeMap</a>这两个Map体系中比较有代表性的类介绍完了，大家应该也能体会到，如果该类所对应的数据结构与算法掌握好了，再看这些类的源码真是太简单不过了。</p>\n<p>其次，我希望大家能够触类旁通，比如我们已经掌握了HashMap的原理，我们可以推知<a href=\"http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html\" target=\"_blank\" rel=\"noopener noreferrer\">HashSet</a>的内部实现</p>\n<blockquote>\n<p>HashSet 内部用一个HashMap对象存储数据，更具体些，只用到了key，value全部为一dummy对象。</p>\n</blockquote>",
+  "image": null,
+  "publishedAt": "2015-09-12T18:31:12Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2015/09/12/java-linkedhashmap/"
+}

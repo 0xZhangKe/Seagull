@@ -1,0 +1,11 @@
+{
+  "id": "d3c42bb5dc584d5310110ab1",
+  "title": "健壮 Shell 脚本编写指南",
+  "summary": "最近在写一个 asdf 的 插件 ，为了保证移植性，它对插件所能使用的命令有及其严格的 限制 ， banned_commands.bats 里列举了被禁用的命令， 这进一步加深笔者的一个印象：写好 Shell 脚本真不是一件简单地事情。 可能每个程序员都会或多或少的被 Shell 折磨过，这篇文章就来系统地讲述 Shell 编程，重新认识一下这门即熟悉又陌生的语言， 当然，更重要的是介绍如何写出一份健壮的 Shell 脚本。",
+  "content": "<p>\n最近在写一个 asdf 的<a href=\"https://github.com/zigcc/asdf-zig/pull/2/files\" target=\"_blank\" rel=\"noopener noreferrer\">插件</a>，为了保证移植性，它对插件所能使用的命令有及其严格的<a href=\"https://asdf-vm.com/plugins/create.html#golden-rules-for-plugin-scripts\" target=\"_blank\" rel=\"noopener noreferrer\">限制</a>，<a href=\"https://github.com/asdf-vm/asdf/blob/master/test/banned_commands.bats\" target=\"_blank\" rel=\"noopener noreferrer\">banned_commands.bats</a> 里列举了被禁用的命令，\n这进一步加深笔者的一个印象：写好 Shell 脚本真不是一件简单地事情。</p>\n<p>\n可能每个程序员都会或多或少的被 Shell 折磨过，这篇文章就来系统地讲述 Shell 编程，重新认识一下这门即熟悉又陌生的语言，\n当然，更重要的是介绍如何写出一份健壮的 Shell 脚本。</p>",
+  "image": null,
+  "publishedAt": "2024-04-05T03:48:33Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2024/04/05/robust-shell-scripting/"
+}

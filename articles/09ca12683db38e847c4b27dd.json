@@ -1,0 +1,11 @@
+{
+  "id": "09ca12683db38e847c4b27dd",
+  "title": "使用多进程提高搜索真题句子的速度",
+  "summary": "使用多进程提高搜索真题句子的速度 前言 在《 使用NLTK统计真题词频以及搜索真题句子 》这篇文章中，我简单介绍了我自己写的真题搜索方法，我所采用的思路是： for 每一个考纲词汇: for 每一套真题: for 真题里每一句话: 词型还原() if 词型还原的句子里有考纲词汇: 记录单词 记录句子 记录出处 用是可以用，但是速度比较慢，特别是当真题文件和考纲词汇变多的时候，那个速度怎一个慢字了得。 正好借着隔壁项目组需要我跑一个英语二真题句子出处的机会，我开始了对代码的重构。他们的需求不是做成一个Word文档供编辑挑选句子，而是做一个包含单词、句子和出处的表格。 在Koni老师的帮助下，我了解到从10年前开始，大数据开发一直在使用一个模型叫做MapReduce，通过把大量任务分发执行，然后再合并每一个任务的…",
+  "content": "<h1>使用多进程提高搜索真题句子的速度</h1>\n<h2>前言</h2>\n<p>在《<a href=\"https://yuqiqin.me/use-nltk-to-count-word-freq-and-sent-origin/\" target=\"_blank\" rel=\"noopener noreferrer\">使用NLTK统计真题词频以及搜索真题句子</a>》这篇文章中，我简单介绍了我自己写的真题搜索方法，我所采用的思路是：</p>\n<pre><code>for 每一个考纲词汇:\n\tfor 每一套真题:\n\t\tfor 真题里每一句话:\n\t\t\t词型还原()\n\t\t\t\n\t\t\tif 词型还原的句子里有考纲词汇:\n\t\t\t\t记录单词\n\t\t\t\t记录句子\n\t\t\t\t记录出处\n</code></pre>\n<p>用是可以用，但是速度比较慢，特别是当真题文件和考纲词汇变多的时候，那个速度怎一个慢字了得。</p>\n<p>正好借着隔壁项目组需要我跑一个英语二真题句子出处的机会，我开始了对代码的重构。他们的需求不是做成一个Word文档供编辑挑选句子，而是做一个包含单词、句子和出处的表格。</p>\n<p>在Koni老师的帮助下，我了解到从10年前开始，大数据开发一直在使用一个模型叫做MapReduce，通过把大量任务分发执行，然后再合并每一个任务的执行结果，能够大大提高数据量大时的执行效率。</p>\n<h2>具体实现</h2>\n<p>在原来的代码的基础上，其实我需要改动的不多，只需要把任务拆碎了，能够让程序多进程执行就可以。</p>\n<p>例如，我想要最后获得一个csv文件，我要做的应该是给每一个单词都做一个csv文件，最后再把每个csv文件的结果合并到最终的文件里。</p>\n<p>Python中多进程运行需要用到multiprocess这个库，代码示例见下：</p>\n<pre><code>import multiprocessing\n\n\ndef get_csv(word, output_path)\n\treturn csv\n\n\ndef main()\n\tword_list = [] # 考纲单词列表\n\toutput_path = &quot;&quot;\n\t\n\tpool = multiprocessing.Pool(processes=150)  # 进程梳太多电脑会卡死\n\t\n\tfor word in word_list:  \n\t    pool.apply_async(get_csv, args=(word, output_path))\n\t      \n\tpool.close()  \n\tpool.join()\n</code></pre>\n<p>虽然不知道为什么，但是调用多进程时，函数的参数要单独写在<code>args=()</code>里面。</p>\n<p>运行结束之后，就可以再写一个简单的脚本把5000多个小csv文件拼成一个大的csv文件即可。</p>\n<p>原本的脚本完成这个任务预估至少要4个小时，换成这个多进程的版本5分钟就搞定了，真的提升非常大！</p>",
+  "image": null,
+  "publishedAt": "2024-04-22T15:25:52Z",
+  "sourceId": "207f6e65632bf687",
+  "sourceTitle": "Psychic Paper",
+  "link": "https://yuqiqin.me/use-multiprocessing-to-boost-efficiency/"
+}

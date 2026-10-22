@@ -1,0 +1,11 @@
+{
+  "id": "74c4aa28fcc708c1b16aeef9",
+  "title": "WSL Arch Linux ZSH输入中文输入法乱码解决方法",
+  "summary": "没有进行配置的情况下输入中文，一般会显示<0xffffffff>，这是由于没有安装字体造成的。 sudo pacman -S noto-fonts-cjk # 安装中文字体 sudo vi /etc/locale.gen # 取消注释 zh_CN.UTF-8 sudo locale-gen # 生成语言环境 echo \"export LANG=zh_CN.UTF-8\" >> ~/.zshrc # 设置默认中文环境 source ~/.zshrc source后，再次尝试输入中文，无异常。",
+  "content": "<p>没有进行配置的情况下输入中文，一般会显示&lt;0xffffffff&gt;，这是由于没有安装字体造成的。</p>\n<pre><code>sudo pacman -S noto-fonts-cjk # 安装中文字体\nsudo vi /etc/locale.gen # 取消注释 zh_CN.UTF-8\nsudo locale-gen # 生成语言环境\necho &quot;export LANG=zh_CN.UTF-8&quot; &gt;&gt; ~/.zshrc # 设置默认中文环境\nsource ~/.zshrc\n</code></pre>\n<p>source后，再次尝试输入中文，无异常。</p>",
+  "image": null,
+  "publishedAt": "2025-04-29T10:31:26Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/wsl-arch-linux-zsh%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"
+}

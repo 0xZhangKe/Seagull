@@ -1,0 +1,11 @@
+{
+  "id": "a6a1079a94ec3119051e34da",
+  "title": "Clojure 运行原理之编译器剖析篇",
+  "summary": "Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. Rich Hickey https://clojure.org/ 这里的 runtime 指的是 JVM，JVM 之初是为运行 Java 语言而设计，而现在已经发展成一重量级平台，除了 Clojure 之外， 很多动态语言 也都选择基于 JVM 去实现。 为了更加具体描述 Clojure 运行原理，会分两篇文章来介绍。 本文为第一篇，涉及到的主要内容有：编译器工作流程、Lisp 的宏机制。 第二篇将主要讨论 Clojure 编译成的 bytecode 如何实现动态…",
+  "content": "<blockquote>\n<p>Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime.</p>\n<blockquote>\n<p>Rich Hickey <a href=\"https://clojure.org/\" target=\"_blank\" rel=\"noopener noreferrer\">https://clojure.org/</a></p>\n</blockquote>\n</blockquote>\n<p>这里的 runtime 指的是 JVM，JVM 之初是为运行 Java 语言而设计，而现在已经发展成一重量级平台，除了 Clojure 之外，<a href=\"https://en.wikipedia.org/wiki/List_of_JVM_languages\" target=\"_blank\" rel=\"noopener noreferrer\">很多动态语言</a>也都选择基于 JVM 去实现。\n为了更加具体描述 Clojure 运行原理，会分两篇文章来介绍。\n本文为第一篇，涉及到的主要内容有：编译器工作流程、Lisp 的宏机制。\n第二篇将主要讨论 Clojure 编译成的 bytecode 如何实现动态运行时以及为什么 Clojure 程序启动慢，这会涉及到 JVM 的类加载机制。</p>",
+  "image": null,
+  "publishedAt": "2017-02-05T08:53:24Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2017/02/05/clojure-compiler-analyze/"
+}

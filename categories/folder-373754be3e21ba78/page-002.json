@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "076dd9017938c2bbf3138d0e",
+      "title": "The Dock on Mac, From OS 10 to macOS 27",
+      "summary": "I wrote the chapter on app icon history for The iOS App Icon Book . The other day I found an old note stashed away where I had started researching the macOS version of that chapter (which Michael ultimately ended up writing). At the time, I didn’t know what to write. I mean, how do you write a history of icon design for the Mac? It’s rich! To get my creativ…",
+      "image": "https://cdn.jim-nielsen.com/blog/2026/macos-dock-history.jpg",
+      "publishedAt": "2026-10-12T19:00:00Z",
+      "sourceId": "fafb02ce167dbe9e",
+      "sourceTitle": "Jim Nielsen’s Blog",
+      "link": "https://blog.jim-nielsen.com/2026/macos-dock-icons-over-time/",
+      "detailPath": "articles/076dd9017938c2bbf3138d0e.json"
+    },
+    {
+      "id": "2e39587debbc6c944619769e",
+      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+      "summary": "Python 3.15 is here ! Here's the essential What's new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11. First, some highlights from Python 3.15.…",
+      "image": "https://static.simonwillison.net/static/2026/profiler-output.webp",
+      "publishedAt": "2026-10-12T18:15:38Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "detailPath": "articles/2e39587debbc6c944619769e.json"
+    },
+    {
+      "id": "33320d0b71ebdd0efcae31cf",
+      "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
+      "summary": "Research: Profiling web-edit with Python 3.15: flame graphs and source heatmaps I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app : I need a Python 3.15 flame graph and heatmap demo of the \"web-edit\" app from PyPI - research first then make me those demos Here's the resulting ex…",
+      "image": null,
+      "publishedAt": "2026-10-12T16:58:00Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
+      "detailPath": "articles/33320d0b71ebdd0efcae31cf.json"
+    },
+    {
+      "id": "bc7a862539dbbd3a0860f87f",
+      "title": "web-edit 0.1a0",
+      "summary": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to…",
+      "image": "https://static.simonwillison.net/static/2026/web-edit.webp",
+      "publishedAt": "2026-10-12T15:54:36Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
+      "detailPath": "articles/bc7a862539dbbd3a0860f87f.json"
+    },
+    {
+      "id": "c67e0e00f84b2fadc099ea7c",
+      "title": "datasette-ports 0.4",
+      "summary": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette",
+      "image": null,
+      "publishedAt": "2026-10-12T04:57:07Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+      "detailPath": "articles/c67e0e00f84b2fadc099ea7c.json"
+    },
+    {
       "id": "e4f3022c32aef68367e78e22",
       "title": "I Love Sharing Cool Stuff Made By People",
       "summary": "After cataloguing the computers I already own, I asked the fediverse to share things made with their human hands, and they delivered. On itch.io games and the free tools anyone can start creating with (Twine, Ink, Inform 7, Bitsy, Godot, GB Studio), my new digital-art habit on affordable hardware, NoAIlist and ScienceFind, and a /carless slash page. Plus Cl…",
@@ -100,17 +155,6 @@
       "detailPath": "articles/bcb7f8ebee23674145b74a30.json"
     },
     {
-      "id": "fbf4f1f7a5bb92e4e17f047d",
-      "title": "Quoting The New York Times",
-      "summary": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said.…",
-      "image": null,
-      "publishedAt": "2026-10-10T02:04:12Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
-      "detailPath": "articles/fbf4f1f7a5bb92e4e17f047d.json"
-    },
-    {
       "id": "6689459c68086d5699a63776",
       "title": "What Do You Stand For? What Do You Fall For?",
       "summary": "Workers are being forced to choose between their ethics and their livelihoods—Coinbase employees fired for refusing AI tools, professor Kim Crawley pushed out for refusing genAI in her classroom, 50 Google workers fired over Project Nimbus sit-ins, EPA dissenters purged, a Mount Sinai social worker fired over a 'Gaza Must Live' postcard. On why silence is n…",
@@ -120,17 +164,6 @@
       "sourceTitle": "Brennan’s Weblog",
       "link": "https://brennan.day/what-do-you-stand-for-what-do-you-fall-for/",
       "detailPath": "articles/6689459c68086d5699a63776.json"
-    },
-    {
-      "id": "08fb5655d01e283693a422e0",
-      "title": "Deno is joining Cloudflare",
-      "summary": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Work…",
-      "image": null,
-      "publishedAt": "2026-10-09T22:48:37Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
-      "detailPath": "articles/08fb5655d01e283693a422e0.json"
     },
     {
       "id": "4765d91f6d4cd6a4f3be5b94",
@@ -153,17 +186,6 @@
       "sourceTitle": "The Digital Antiquarian",
       "link": "https://www.filfre.net/2026/10/an-ion-storm-part-1-the-gamers-penthouse/",
       "detailPath": "articles/0783756f80e60395b96d6b4a.json"
-    },
-    {
-      "id": "98dd1afabb590c56ae5e6142",
-      "title": "Quoting Matthew Green",
-      "summary": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...] The problem here is that the speed of AI producing surprises, and the speed of hum…",
-      "image": null,
-      "publishedAt": "2026-10-09T15:02:29Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/9/matthew-green/",
-      "detailPath": "articles/98dd1afabb590c56ae5e6142.json"
     },
     {
       "id": "31f255170d895b85e311639e",
@@ -637,28 +659,6 @@
       "sourceTitle": "Robin Sloan",
       "link": "https://www.robinsloan.com/lab/purge-everything/",
       "detailPath": "articles/89a326172abfa79fb8fa1feb.json"
-    },
-    {
-      "id": "b11ff463c94e99dde571351c",
-      "title": "A Love Letter to the Super Dimension Fortress",
-      "summary": "I've finally became an ARPA member of SDF, a non-profit public-access UNIX system running continuously since 1987. I give a history from Ted Uhlemann's 300-baud Apple IIe BBS to today's NetBSD network of DEC Alphas and Opterons; a tour of the shell, gopher, and gemini services; how to join, plus two hands-on bonuses: writing a flat-file Perl CGI guestbook a…",
-      "image": null,
-      "publishedAt": "2026-09-25T02:00:00Z",
-      "sourceId": "d44765325e020e3a",
-      "sourceTitle": "Brennan’s Weblog",
-      "link": "https://brennan.day/a-love-letter-to-the-super-dimension-fortress/",
-      "detailPath": "articles/b11ff463c94e99dde571351c.json"
-    },
-    {
-      "id": "3016872a9daf76046251ec68",
-      "title": "How to copy URLs of multiple Firefox tabs without installing an extension",
-      "summary": "It’s easy, once you know you can",
-      "image": "https://www.autodidacts.io/content/images/2026/09/2026-09-24-copy-all-tabs-urls-firefox.png",
-      "publishedAt": "2026-09-24T23:26:32Z",
-      "sourceId": "e2f4758cec273fb9",
-      "sourceTitle": "The Autodidacts",
-      "link": "https://www.autodidacts.io/how-to-copy-urls-of-multiple-firefox-tabs-without-installing-an-extension/",
-      "detailPath": "articles/3016872a9daf76046251ec68.json"
     }
   ]
 }

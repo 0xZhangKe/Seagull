@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "18cb9db6218d5559b97716d1",
+      "title": "你问我答|要跟公司劳动仲裁，却发现自己名下有与东家同业公司",
+      "summary": "读者来信： 您好，刘律师，关注您的博客许久，看到您的从业方向是刑辩，我这个劳动仲裁应该算是诉讼，也希望能够得到您的解答，以下是正文与问题。 本人为当事人。自去年年初入职位于某软件开发公司。正常上班，加入公司后工资与五险一金除第一个月按时足额支付，其余月份均未按时足额，只发一小部分，甚至有些月份工资干脆未发。考虑到找工作市场的情况，于是并未提出辞职，还是希望公司能够发出工资。但奈何公司从今年上半年直到现在，一直以“投资款未到帐 没有钱发工资” 为由欠发所有员工工资。刚开始，和老板以离职为要挟还能偶尔给本人发一小部分工资。拖至今年年中因本人不想继续忍受拖欠工资，向公司提请离职，并办理正常离职，签署离职证明与欠薪声明。欠薪声明上写公司经营不善，欠发工资总数额，计划偿还时间，以及每月支付金额，以及统一补缴五险一金等内…",
+      "image": null,
+      "publishedAt": "2024-09-02T14:00:43Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/257.html",
+      "detailPath": "articles/18cb9db6218d5559b97716d1.json"
+    },
+    {
+      "id": "e59e9872354e13095e04ad11",
+      "title": "一言“蔽”之",
+      "summary": "蔽，‌原意为遮蔽，‌引申为概括。‌这里我想暂时抛开引申义的“概括”，就单单使用遮蔽、蒙蔽之义来解释该词，并由此 […]",
+      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/09/IMG_5195.jpeg?resize=1080%2C1809&ssl=1",
+      "publishedAt": "2024-09-02T08:58:38Z",
+      "sourceId": "3c6ccf75c8f41329",
+      "sourceTitle": "CC的数字花园",
+      "link": "https://cyrus19.cc/archives/1084",
+      "detailPath": "articles/e59e9872354e13095e04ad11.json"
+    },
+    {
+      "id": "00f5d3c2972fa7e7d9324a78",
+      "title": "我目前使用的AI服务",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-09-02T07:29:13Z",
+      "sourceId": "f6c280e30d8989ed",
+      "sourceTitle": "可可托海没有海",
+      "link": "https://mp.weixin.qq.com/s/AnhyfbXtiq11rM5XQbQwXQ",
+      "detailPath": "articles/00f5d3c2972fa7e7d9324a78.json"
+    },
+    {
+      "id": "fc3acee6dbd9730a62a15f87",
+      "title": "八月月报-折腾不停歇",
+      "summary": "8月将结束，秋天已经到来，酷暑还未结束。把小朋友送到学校，才有时间又来回顾一个月。如题所示，博客折腾了许多，也体验了一下黑神话，详细见下文。 黑神话：悟空 悟空上线，全网热议，每个群里都有人在讨论，似乎身边的每个人都在玩。对于这种现象级的国产三A大作，肯定要支持一下。然而，却没时间玩，这十来天也只玩了一小会，牯护院打过去了，广智打了十几把还没过，就暂时搁置下来了。之前电脑上的游戏主要是玩回合制的比较多，这个类型的游戏之前很少，种种原因，觉得难度还挺大。 游戏画面精美，里面的碑文都能够清晰可见汉字，值得夸赞。各种建筑据说是按照很多中国的古建筑建模，即使是我这种游戏手残党也值得进入游戏游山玩水。 玩水 这个月带着娃出去完了两趟，一次是莫干山玩水，浙江多山水，适宜夏季游玩，高温天泡在水里清凉许多，详见之前 博文 。…",
+      "image": "https://img.isming.me/photo/IMG_20240901_162335.jpg",
+      "publishedAt": "2024-09-02T05:39:58Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-02-august-summary/?utm_source=rss",
+      "detailPath": "articles/fc3acee6dbd9730a62a15f87.json"
+    },
+    {
       "id": "65a1d3c6396278a8720298a9",
       "title": "NVIDIA 的浪漫",
       "summary": "NVIDIA RTX 4000！而且是兩張！！",
@@ -615,50 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2024/08/weekly-review-001/",
       "detailPath": "articles/ff5c1c0fb518c37327b66cd4.json"
-    },
-    {
-      "id": "1cb07a2a262e9f1637a89971",
-      "title": "Android源码分析: 应用启动安装ContentProvider分析",
-      "summary": "ContentProvider 是Android应用开发的四大组件之一，并且源码相对于其他几个也是比较简单的。因此我们先来看看它的源码。 ContentProvider 的使用我们会涉及到外部程序调用应用的ContentProvider来查询数据，也有监听数据的变化，以及 ContentProvider 的安装。我们先来看安装部分的源码。 ContentProvider 根据它的名字就知道，他是一个内容提供者，它提供了整删改查的接口，方便Android应用跨应用跨进程的数据共享，在Android系统中，相册，通讯录等等都是通过 ContentProvider 来共享数据让其他应用可以使用。看源码，我们需要关注两个点，一个是 ContentProvider 如何安装的，另一个就是当我们发起一个查询的时候，是怎样…",
-      "image": null,
-      "publishedAt": "2024-08-15T12:02:56Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-08-15-android-content-provider-install/?utm_source=rss",
-      "detailPath": "articles/1cb07a2a262e9f1637a89971.json"
-    },
-    {
-      "id": "c685403ec1e230a499ca37fa",
-      "title": "奥运·印象",
-      "summary": "回顾这些日子里： 见证了一场的确可以用“别开生面”来形容的开幕式； 多个夜晚和家人一起看乒乓球比赛（时间比较友好）； 我妈成为全红婵的粉丝，给关于她的每一个抖音视频点赞，为她去了解跳水梦之队； 因为喜欢游泳，看了每一场游泳决赛和大部分中国队参加的游泳比赛（看的回放，直播的时间太阴间了）； 关注奖牌榜上数字的变动，被不断推送的新闻鼓舞； 大量场上场外的讨论，不乏令人感动的瞬间，也有令人深思的时刻。 趁着记忆和热情还未消退，写一写2024年巴黎奥运会，我的奥运印象、我所见证的奥林匹克精神，以及那些视野之外同样付出巨大努力的人。 我的奥运印象 总体 本届巴黎奥运会，中国拿下40金，获境外奥运会最好成绩（08年北京奥运会拿下51金），和美国持平。总奖牌91枚，都是奥运健将们付出辛苦汗水拼搏出来的，当然还有遗憾没有获得…",
-      "image": null,
-      "publishedAt": "2024-08-15T00:00:00Z",
-      "sourceId": "95e525ddc69ab5ef",
-      "sourceTitle": "金色河流",
-      "link": "https://goldenriver.site/posts/olympics/",
-      "detailPath": "articles/c685403ec1e230a499ca37fa.json"
-    },
-    {
-      "id": "a806738f8a8f33ceb257e7e6",
-      "title": "包税人式的内容监管是柄双刃剑",
-      "summary": "先来下定义，什么叫“包税人式的内容监管”。 中国的互联网生态呈现出非常典型的“特色”，内容及流量完全集中在大平台手里，比如视频内容在抖音快手B站，文字内容在知乎微博豆瓣。 在大多数情况下，监管者不必进行直接监管，而是将监管权“下放”给平台，由平台按照监管者给定的规则——或者压根没有什么规则，揣摩监管者的意图，代为履行监管职责。 监管者不问过程，只要结果。整个机制设计无限雷同“包税人”，故称为“包税人式的内容监管”。 这种特色的网络生态，直接导致了互联网内容的枯竭。有十四亿母语使用者的中文，在全球互联网中内容占比甚至低于越南语。 十几二十年前，给网站做SEO是个很热门的职业。那时候，监管者对互联网内容还无法进行无死角全时段监管，只能搞搞“打地鼠”，哪里着火哪里救火。 那时候的互联网内容，还呈现出一派生机勃勃之相…",
-      "image": null,
-      "publishedAt": "2024-08-14T03:08:00Z",
-      "sourceId": "c7356b172af43f7f",
-      "sourceTitle": "刑辩人在路上",
-      "link": "https://xingbianren.cn/post/249.html",
-      "detailPath": "articles/a806738f8a8f33ceb257e7e6.json"
-    },
-    {
-      "id": "0f3bf7f425cb753aa0776edc",
-      "title": "洗衣機",
-      "summary": "我的洗衣機總是喜歡在工作時把一隻襪子吃掉，造成我的衣櫥充斥著孤單的襪子。",
-      "image": "https://wiwi.blog/assets/images/sock-54cb5a8b0db18fa11e0a0672c103f82e.jpg",
-      "publishedAt": "2024-08-14T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/washing-machine",
-      "detailPath": "articles/0f3bf7f425cb753aa0776edc.json"
     }
   ]
 }

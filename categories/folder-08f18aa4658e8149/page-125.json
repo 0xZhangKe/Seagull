@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "aebbe1f4b71186c298fd0100",
+      "title": "博客增加了 Valine 评论",
+      "summary": "扒了木木哥的主题在研究，本来想弄一下文章内直接撸照片文件夹，试了半天没成功，反倒是随手把 Valine 评论给偷了过来，好用。 好像木木哥那里没有具体教程，可以去他的网站 搜一搜 。 ChangeLog 更新了 Valine 评论邮件回复 2020-04-14",
+      "image": null,
+      "publishedAt": "2020-04-13T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/04/%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E4%BA%86-valine-%E8%AF%84%E8%AE%BA/",
+      "detailPath": "articles/aebbe1f4b71186c298fd0100.json"
+    },
+    {
+      "id": "156d5f73ef7ccba80e881745",
+      "title": "博客增加了文章内链样式",
+      "summary": "还是扒了木木哥 主题样式 又搞了一下文章内链接，测试一下样式： 写作 2020-04-02 #thinking 好像我一直在写。 写公号，写博客，写微博。写读后感，观后感。小时候，写小说，写作文，写思想汇报。大一点，写表白的情书，写部门的简介。 一直在写， 弄这个东西其实和文章里插入音乐一样，各有优缺点，优点就是方便，缺点自然是迁移成本好。好在现在用了一整套自动化流程，除了写其余都不需要关心，目测会使用 HUGO 相当一段时间了，也就先不考虑迁移的问题了。而且这些平台，除了 Bitcorn 我还真没发现更好更便捷的，无奈它不太给力啊。 折腾到现在，感觉没有什么需求了。 爽歪歪。",
+      "image": null,
+      "publishedAt": "2020-04-13T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/04/%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E4%BA%86%E6%96%87%E7%AB%A0%E5%86%85%E9%93%BE%E6%A0%B7%E5%BC%8F/",
+      "detailPath": "articles/156d5f73ef7ccba80e881745.json"
+    },
+    {
+      "id": "e066923c0aad1db507036617",
+      "title": "蓝色港湾，晒娃上瘾",
+      "summary": "折腾了一上午，终于搞定了在博客内插入指定文件夹内的图片，之前不报错，也不显示，原来是没有在 single.html 里加上引入 PATH 的代码： {{ .Render \"path\"}} 搞定之后爽歪歪。 接下来准备研究一下瀑布流和灯箱效果了。",
+      "image": null,
+      "publishedAt": "2020-04-13T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/04/0412lsgw/",
+      "detailPath": "articles/e066923c0aad1db507036617.json"
+    },
+    {
+      "id": "058596499958d59bd139a7f5",
+      "title": "日常：和11个月大的 Baby 相处",
+      "summary": "Baby 现在11个月了。这篇文章里有这些内容：半岁以来上 Daycare infant 班有什么感受？Baby 的新技能以及由此来带来的后果——吃、睡、玩。最后是 COVID-19 时期怎么和 Baby 共处。 Daycare 体验 # 送 daycare 之前担心了很久，不过时间不等人，两个人都已经把各自的产假休完了。所以Baby 从7个半月开始进 daycare 了！概括下来是这种体验： 第一天送去的心情：车里家里没有 Baby 空空荡荡的，好难集中精力工作，好担心 TA 过得怎么样。第二天至今：太省事了！Daycare 学费花得好值！Shut up and take my money! 在我作为家长这一方来讲，体验很棒。送去 daycare 了以后，一天里终于有完整的8个小时归自己，想工作也好想咸鱼也…",
+      "image": "https://fourhappylions.com/posts/nichijou-with-11-month-old-baby/crayon-shinchan.jpg",
+      "publishedAt": "2020-04-12T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/nichijou-with-11-month-old-baby/",
+      "detailPath": "articles/058596499958d59bd139a7f5.json"
+    },
+    {
       "id": "c39f150e45957f59824a428b",
       "title": "你好，世界。",
       "summary": "此次广州对黑人的粗暴对待，引得尼日利亚召见中国大使，非盟召见大使。最后不知道会发展到什么地步。国人墙内待久了，外国人见得少，对他们来说，某某国某某国是一个抽象的概念，某国人是于另一个世界存在的。世界上只有美国日本等国家，这些",
@@ -615,50 +659,6 @@
       "sourceTitle": "Memozine",
       "link": "https://memozine.me/2019/12/06/romantic-or-vulgar-country",
       "detailPath": "articles/1547f0c57bc8e42f8a119114.json"
-    },
-    {
-      "id": "8b78d3ad7f3e0a56d6094a8b",
-      "title": "「置顶」博客文章目录 + 个人项目",
-      "summary": "本博客内容主要集中在 Android 开发和优化相关的话题，包括一些性能工具的使用、Android App 优化知识、Android Framework 知识讲解，性能理论知识讲解等，这里整理了一份目录供大家参考，大家可以挑感兴趣的部分来看。这里不仅仅包含博客中的内容，一些我在 知乎 或者 知识星球 - The Performance 的回答也会放到这里，不过这个目录里面放的都是我原创的博客，另外还收集了一些优秀文章，我也会不定期更新 Android 性能优化必知必会 。 文章索引在前，工具、App 和内容项目集中在后面的 个人项目 。新增： AIW 开源介绍 · AIW GitHub 仓库 。",
-      "image": null,
-      "publishedAt": "2019-11-30T23:38:21Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/12/01/BlogMap/",
-      "detailPath": "articles/8b78d3ad7f3e0a56d6094a8b.json"
-    },
-    {
-      "id": "73b823fc333fc6dadeab5dbb",
-      "title": "Android Systrace 基础知识 - Vsync 解读",
-      "summary": "本文是 Systrace 系列文章的第七篇，主要是是介绍 Android 中的 Vsync 机制。文章会从 Systrace 的角度来看 Android 系统如何基于 Vsync 每一帧的展示。Vsync 是 Systrace 中一个非常关键的机制，虽然我们在操作手机的时候看不见，摸不着，但是在 Systrace 中我们可以看到，Android 系统在 Vsync 信号的指引下，有条不紊地进行者每一帧的渲染、合成操作，使我们可以享受稳定帧率的画面。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Syst…",
-      "image": null,
-      "publishedAt": "2019-11-30T22:38:21Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/12/01/Android-Systrace-Vsync/",
-      "detailPath": "articles/73b823fc333fc6dadeab5dbb.json"
-    },
-    {
-      "id": "2d176079a1a13779ad79d539",
-      "title": "创建动图模拟CRT逐行显示",
-      "summary": "前些天看见有人慢镜头拍 CRT 显示器，才知道原来 CRT 某一时刻只显示一行，感觉好酷啊！于是就想着能不能写段程序模拟一下，看看任意图片在 CRT 逐行显示的效果下是什么样的（没钱买 CRT 显示器 ） 。 程序主体就是这个循环： frames = [] box = ( 0 , 0 , width , ROW ) for i in range ( 0 , height , ROW ): region = im . crop ( box ) blank = Image . new ( im . mode , im . size ) blank . paste ( region , box ) frames . append ( blank ) box = ( 0 , box [ 3 ], width , bo…",
-      "image": null,
-      "publishedAt": "2019-11-30T15:09:13Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/crt_gif/",
-      "detailPath": "articles/2d176079a1a13779ad79d539.json"
-    },
-    {
-      "id": "98fa53ae9924aee01baef615",
-      "title": "印度孟买、昌迪加尔、加尔各答之行",
-      "summary": "跟着同事一起出差，去了印度这个神奇的国度，真实的见到了火车挂人的情景和当地的一些风土人情。 当地的路上人车混行，很多载客三轮车，三轮车司机通常也不穿鞋。街边的手机店被中国手机厂商占领，在去的几个城市都有很多的vivo、oppo、xiaomi店，当然也有很多的三星店。 在车站看到不少人使用头顶着大袋的货物。 在孟买乘坐的城市铁路，听同事说是英国统治时期修建的。我们购买的高级车票，车厢人相对少一点有座位，10卢布一人。火车上有挂人，但是也没有传说的那么夸张。车子没有空调，车窗都是打开的，车子开起来后也很凉快。这张图是一张女士专门车厢。 孟买靠近印度洋附近的一处教堂。 小朋友们在出租车中玩耍，看到我拍照后很配合的做动作和鬼脸。 路边买小吃的摊贩。选好各种小吃，一起放到报纸卷好的容器里。当地上班族，中午也是在路边吃。…",
-      "image": "https://isming.me/images/photo/india/DSC01103.jpg",
-      "publishedAt": "2019-11-29T02:33:48Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2019-11-india-travel/?utm_source=rss",
-      "detailPath": "articles/98fa53ae9924aee01baef615.json"
     }
   ]
 }

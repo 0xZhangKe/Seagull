@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1cb07a2a262e9f1637a89971",
+      "title": "Android源码分析: 应用启动安装ContentProvider分析",
+      "summary": "ContentProvider 是Android应用开发的四大组件之一，并且源码相对于其他几个也是比较简单的。因此我们先来看看它的源码。 ContentProvider 的使用我们会涉及到外部程序调用应用的ContentProvider来查询数据，也有监听数据的变化，以及 ContentProvider 的安装。我们先来看安装部分的源码。 ContentProvider 根据它的名字就知道，他是一个内容提供者，它提供了整删改查的接口，方便Android应用跨应用跨进程的数据共享，在Android系统中，相册，通讯录等等都是通过 ContentProvider 来共享数据让其他应用可以使用。看源码，我们需要关注两个点，一个是 ContentProvider 如何安装的，另一个就是当我们发起一个查询的时候，是怎样…",
+      "image": null,
+      "publishedAt": "2024-08-15T12:02:56Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-08-15-android-content-provider-install/?utm_source=rss",
+      "detailPath": "articles/1cb07a2a262e9f1637a89971.json"
+    },
+    {
+      "id": "c685403ec1e230a499ca37fa",
+      "title": "奥运·印象",
+      "summary": "回顾这些日子里： 见证了一场的确可以用“别开生面”来形容的开幕式； 多个夜晚和家人一起看乒乓球比赛（时间比较友好）； 我妈成为全红婵的粉丝，给关于她的每一个抖音视频点赞，为她去了解跳水梦之队； 因为喜欢游泳，看了每一场游泳决赛和大部分中国队参加的游泳比赛（看的回放，直播的时间太阴间了）； 关注奖牌榜上数字的变动，被不断推送的新闻鼓舞； 大量场上场外的讨论，不乏令人感动的瞬间，也有令人深思的时刻。 趁着记忆和热情还未消退，写一写2024年巴黎奥运会，我的奥运印象、我所见证的奥林匹克精神，以及那些视野之外同样付出巨大努力的人。 我的奥运印象 总体 本届巴黎奥运会，中国拿下40金，获境外奥运会最好成绩（08年北京奥运会拿下51金），和美国持平。总奖牌91枚，都是奥运健将们付出辛苦汗水拼搏出来的，当然还有遗憾没有获得…",
+      "image": null,
+      "publishedAt": "2024-08-15T00:00:00Z",
+      "sourceId": "95e525ddc69ab5ef",
+      "sourceTitle": "金色河流",
+      "link": "https://goldenriver.site/posts/olympics/",
+      "detailPath": "articles/c685403ec1e230a499ca37fa.json"
+    },
+    {
+      "id": "a806738f8a8f33ceb257e7e6",
+      "title": "包税人式的内容监管是柄双刃剑",
+      "summary": "先来下定义，什么叫“包税人式的内容监管”。 中国的互联网生态呈现出非常典型的“特色”，内容及流量完全集中在大平台手里，比如视频内容在抖音快手B站，文字内容在知乎微博豆瓣。 在大多数情况下，监管者不必进行直接监管，而是将监管权“下放”给平台，由平台按照监管者给定的规则——或者压根没有什么规则，揣摩监管者的意图，代为履行监管职责。 监管者不问过程，只要结果。整个机制设计无限雷同“包税人”，故称为“包税人式的内容监管”。 这种特色的网络生态，直接导致了互联网内容的枯竭。有十四亿母语使用者的中文，在全球互联网中内容占比甚至低于越南语。 十几二十年前，给网站做SEO是个很热门的职业。那时候，监管者对互联网内容还无法进行无死角全时段监管，只能搞搞“打地鼠”，哪里着火哪里救火。 那时候的互联网内容，还呈现出一派生机勃勃之相…",
+      "image": null,
+      "publishedAt": "2024-08-14T03:08:00Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/249.html",
+      "detailPath": "articles/a806738f8a8f33ceb257e7e6.json"
+    },
+    {
+      "id": "0f3bf7f425cb753aa0776edc",
+      "title": "洗衣機",
+      "summary": "我的洗衣機總是喜歡在工作時把一隻襪子吃掉，造成我的衣櫥充斥著孤單的襪子。",
+      "image": "https://wiwi.blog/assets/images/sock-54cb5a8b0db18fa11e0a0672c103f82e.jpg",
+      "publishedAt": "2024-08-14T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/washing-machine",
+      "detailPath": "articles/0f3bf7f425cb753aa0776edc.json"
+    },
+    {
       "id": "f7d6c662591b4c7298542a1a",
       "title": "Android源码分析：ClientTransaction分析",
       "summary": "分析Android Activity的启动过程，发现Android 在Android9.0中引入了ClientTransaction这一系列的对象，来简化system_server与App进程中处理Activity启动相关的任务。这里就来分析一下。 在服务端（system_server进程）主要有上面这些类,我们首先需要关注的就是 ClientTransaction 类，这个类在使用的时候主要是有以下几个成员： 1 2 3 4 private List < ClientTransactionItem > mActivityCallbacks ; private ActivityLifecycleItem mLifecycleStateRequest ; private IApplicationThread m…",
@@ -276,15 +320,15 @@
       "detailPath": "articles/7c1cdb280bdea97c42727b49.json"
     },
     {
-      "id": "28d4b67042c7dd5a4fb871ef",
+      "id": "ffe75db19dd100d73c975062",
       "title": "常用的日文词典",
       "summary": "主流的词典软件，比如沪江小D、Moji辞书，界面漂亮、查词方便，但专有名词收录不全，释义或发音偶尔错漏，查看动词变形需要花钱。各大出版社出品的权威词典相比之下更靠谱一些。 日中词典： 小学馆日中辞典（适用于初学者） 明镜日汉词典（继承了《明镜国语辞典》的精髓，侧重于现代日语的实际使用和规范，收词量小于小学馆日中） 日日词典： 词典名称 优势和特点 注意点 岩波广辞苑 「百科全書式」词典，除了现代日语词汇外，大量收录了古语、历史人物、事件、动植物、法律等专有名词。 采用历史义排列，即先列出最古老、最原始的含义，现代常用义在后面。对词语用法等细节说明不足，不适合初学者。 三省堂スーパー大辞林 积极收录新词、流行语和专业术语，词义排列是现代义、常用义优先。适合阅读日常、现代的文章时使用。 古语、专有名词收录量略逊于…",
       "image": null,
       "publishedAt": "2024-08-07T11:00:00Z",
       "sourceId": "4947a434a94c3ee9",
       "sourceTitle": "無糧殿",
-      "link": "https://wuliang.netlify.app/posts/jp-dict/",
-      "detailPath": "articles/28d4b67042c7dd5a4fb871ef.json"
+      "link": "https://wuliangdian.com/posts/jp-dict/",
+      "detailPath": "articles/ffe75db19dd100d73c975062.json"
     },
     {
       "id": "fe08e84615b26b86e878889c",
@@ -615,50 +659,6 @@
       "sourceTitle": "CC的数字花园",
       "link": "https://cyrus19.cc/archives/319",
       "detailPath": "articles/ea1a2640c53d1dfef9f28ca4.json"
-    },
-    {
-      "id": "e8ed846e8c45b036ac632524",
-      "title": "谨以此篇，纪念狗话之夜的他们。",
-      "summary": "谨以此篇，纪念狗话之夜的他们。 tag：# cp向 # 大花x阿聪（红儿） 前篇：https://www.bi […]",
-      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/08/Pasted-image-20240802132402.png?ssl=1",
-      "publishedAt": "2024-08-02T12:25:04Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/308",
-      "detailPath": "articles/e8ed846e8c45b036ac632524.json"
-    },
-    {
-      "id": "f93fac766d81b7925e9b55dd",
-      "title": "AA 制",
-      "summary": "跟一位女性朋友聊天，她提到了她的朋友一個初次約會的情況：那個男生居然連 100 塊的飲料錢都要跟女生要！朋友對此感到不可思議，難道是台灣男生特別喜歡 AA 制嗎？這讓我想寫一下我個人對於 AA 制的看法。",
-      "image": null,
-      "publishedAt": "2024-08-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/aa",
-      "detailPath": "articles/f93fac766d81b7925e9b55dd.json"
-    },
-    {
-      "id": "e3aaec1c17c7b6e17336fa36",
-      "title": "34歲開始寫部落格",
-      "summary": "拖延了幾十年，為什麼現在才開始寫部落格？",
-      "image": null,
-      "publishedAt": "2024-08-01T15:00:00Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/first-post",
-      "detailPath": "articles/e3aaec1c17c7b6e17336fa36.json"
-    },
-    {
-      "id": "88898e487fb12f58df046d6a",
-      "title": "无意义记录：反既视感时刻",
-      "summary": "无意义记录：反既视感时刻。 不知道你有没看过凌晨的小雨，从黑蓝色的天空落下，但其实你什么也看不到，只能听到四周 […]",
-      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/08/Pasted-image-20240801060821.png?ssl=1",
-      "publishedAt": "2024-08-01T05:15:18Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/289",
-      "detailPath": "articles/88898e487fb12f58df046d6a.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "8b78d3ad7f3e0a56d6094a8b",
+      "title": "「置顶」博客文章目录 + 个人项目",
+      "summary": "本博客内容主要集中在 Android 开发和优化相关的话题，包括一些性能工具的使用、Android App 优化知识、Android Framework 知识讲解，性能理论知识讲解等，这里整理了一份目录供大家参考，大家可以挑感兴趣的部分来看。这里不仅仅包含博客中的内容，一些我在 知乎 或者 知识星球 - The Performance 的回答也会放到这里，不过这个目录里面放的都是我原创的博客，另外还收集了一些优秀文章，我也会不定期更新 Android 性能优化必知必会 。 文章索引在前，工具、App 和内容项目集中在后面的 个人项目 。新增： AIW 开源介绍 · AIW GitHub 仓库 。",
+      "image": null,
+      "publishedAt": "2019-11-30T23:38:21Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/12/01/BlogMap/",
+      "detailPath": "articles/8b78d3ad7f3e0a56d6094a8b.json"
+    },
+    {
+      "id": "73b823fc333fc6dadeab5dbb",
+      "title": "Android Systrace 基础知识 - Vsync 解读",
+      "summary": "本文是 Systrace 系列文章的第七篇，主要是是介绍 Android 中的 Vsync 机制。文章会从 Systrace 的角度来看 Android 系统如何基于 Vsync 每一帧的展示。Vsync 是 Systrace 中一个非常关键的机制，虽然我们在操作手机的时候看不见，摸不着，但是在 Systrace 中我们可以看到，Android 系统在 Vsync 信号的指引下，有条不紊地进行者每一帧的渲染、合成操作，使我们可以享受稳定帧率的画面。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Syst…",
+      "image": null,
+      "publishedAt": "2019-11-30T22:38:21Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/12/01/Android-Systrace-Vsync/",
+      "detailPath": "articles/73b823fc333fc6dadeab5dbb.json"
+    },
+    {
+      "id": "2d176079a1a13779ad79d539",
+      "title": "创建动图模拟CRT逐行显示",
+      "summary": "前些天看见有人慢镜头拍 CRT 显示器，才知道原来 CRT 某一时刻只显示一行，感觉好酷啊！于是就想着能不能写段程序模拟一下，看看任意图片在 CRT 逐行显示的效果下是什么样的（没钱买 CRT 显示器 ） 。 程序主体就是这个循环： frames = [] box = ( 0 , 0 , width , ROW ) for i in range ( 0 , height , ROW ): region = im . crop ( box ) blank = Image . new ( im . mode , im . size ) blank . paste ( region , box ) frames . append ( blank ) box = ( 0 , box [ 3 ], width , bo…",
+      "image": null,
+      "publishedAt": "2019-11-30T15:09:13Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/crt_gif/",
+      "detailPath": "articles/2d176079a1a13779ad79d539.json"
+    },
+    {
+      "id": "98fa53ae9924aee01baef615",
+      "title": "印度孟买、昌迪加尔、加尔各答之行",
+      "summary": "跟着同事一起出差，去了印度这个神奇的国度，真实的见到了火车挂人的情景和当地的一些风土人情。 当地的路上人车混行，很多载客三轮车，三轮车司机通常也不穿鞋。街边的手机店被中国手机厂商占领，在去的几个城市都有很多的vivo、oppo、xiaomi店，当然也有很多的三星店。 在车站看到不少人使用头顶着大袋的货物。 在孟买乘坐的城市铁路，听同事说是英国统治时期修建的。我们购买的高级车票，车厢人相对少一点有座位，10卢布一人。火车上有挂人，但是也没有传说的那么夸张。车子没有空调，车窗都是打开的，车子开起来后也很凉快。这张图是一张女士专门车厢。 孟买靠近印度洋附近的一处教堂。 小朋友们在出租车中玩耍，看到我拍照后很配合的做动作和鬼脸。 路边买小吃的摊贩。选好各种小吃，一起放到报纸卷好的容器里。当地上班族，中午也是在路边吃。…",
+      "image": "https://isming.me/images/photo/india/DSC01103.jpg",
+      "publishedAt": "2019-11-29T02:33:48Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2019-11-india-travel/?utm_source=rss",
+      "detailPath": "articles/98fa53ae9924aee01baef615.json"
+    },
+    {
       "id": "7825313db9c39998b060f7d3",
       "title": "紫荆花",
       "summary": "等一切事情结束之后，我希望有人能拍这样一部港片。剧本我写得差不多了，请杜琪峰陈可辛或者许鞍华导演考虑一下: 讲的是一对⻘年情侣，男主是刚刚警校毕业入职不久的阿Sir，林振文。年轻有为，为了早日和女朋友结婚，他干劲十足，上司也很器重他。女朋友的家庭条件比他好，父母并不赞成女儿嫁给一个警察，但是他们也不得不肯定他这股努力拼搏的劲头。他的理想是惩凶除恶，保卫香港的和平。女主，⻩嘉颖，是理工大的经济系学生，还有不久就要毕业了，通过自己的努力找到了一份中环上班待遇不错的工作。她是典型的城市⻘年，带有理想色彩，积极参加各种社会运动。",
@@ -615,50 +659,6 @@
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/blender-learn-note",
       "detailPath": "articles/7bf23fe44d553188a66066d9.json"
-    },
-    {
-      "id": "a21005bb93e4841c55f24095",
-      "title": "生产的故事",
-      "summary": "记录自己这次有 epidural 的顺产。情况开始于39周4日的晚上。 第一天（39周4日） # 6:30pm 感觉阴道里有水流出来，但只有一点点。带出来了一块 mucus plug，不过之前几天也有 mucus plug 释放出来，所以没有非常警惕。虽然有点介意，不过决定继续开车和吃晚饭。 7:30pm 感觉流出来的水忽然变多了一些，一时间没有卫生巾，到了需要用厨房纸擦的情况。内裤上还带有一点粉色，大概是血吧。怀疑自己破水了，但是水流断断续续的，根本不像传说中的水沿着大腿流下来云云。闻闻味道，好像没什么特别的，不是尿味，也不知道是不是羊水的味道。于是给诊所打电话问到底是不是破水，护士爽快地让我过去查查。带了 id 和保险卡就去了。 8:15pm 先检查 vitals（貌似有血压、脉搏、血氧饱和度），留尿样和…",
-      "image": null,
-      "publishedAt": "2019-06-02T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/birth-story/",
-      "detailPath": "articles/a21005bb93e4841c55f24095.json"
-    },
-    {
-      "id": "b75f8c057123299d27e83e54",
-      "title": "Podcast",
-      "summary": "笔者的好奇心比较旺盛，闲暇时间，习惯听 Podcast（播客）来打发时间，开阔眼界，这里分享一些个人听过的好节目，用的顺手的客户端。 作为 Podcast 资深听众多年后， 我终于做起了自己的节目！欢迎大家收听：",
-      "image": null,
-      "publishedAt": "2019-06-01T11:45:43Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/podcast/",
-      "detailPath": "articles/b75f8c057123299d27e83e54.json"
-    },
-    {
-      "id": "adbc4149717a63a2f9dddfde",
-      "title": "胡侃偶记之『推特篇』",
-      "summary": "做人难，做名人更难，做锡进总编这样的名人，难上加难。… Continue reading 胡侃偶记之『推特篇』 →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2019/05/e883a1e994a1e8bf9be68ea8e789b9e4b8bbe9a1b5.jpg",
-      "publishedAt": "2019-05-31T16:14:41Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2019/06/01/%e8%83%a1%e4%be%83%e5%81%b6%e8%ae%b0%e4%b9%8b%e3%80%8e%e6%8e%a8%e7%89%b9%e7%af%87%e3%80%8f/",
-      "detailPath": "articles/adbc4149717a63a2f9dddfde.json"
-    },
-    {
-      "id": "afe20b18354229a08e8be909",
-      "title": "Android Systrace 基础知识 -- Systrace 简介",
-      "summary": "本文是 Systrace 系列文章的第一篇，主要是对 Systrace 进行简单介绍，介绍其简单使用方法；如何去看 Systrace；如何结合其他工具对 Systrace 中的现象进行分析。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Systrace 这个图形化的角度，你可以理解的更深入一些。",
-      "image": null,
-      "publishedAt": "2019-05-28T08:58:00Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/05/28/Android-Systrace-About/",
-      "detailPath": "articles/afe20b18354229a08e8be909.json"
     }
   ]
 }

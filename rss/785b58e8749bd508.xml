@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Wed, 21 Oct 2026 11:02:49 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 22 Oct 2026 14:36:29 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,39 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>New Serious PHP Vulnerabilities Released and Patched</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html#comments</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2026 13:26:51 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[patching]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72830</guid>
+
+					<description><![CDATA[<p>PHP maintainers have <a href="https://www.php.net/archive/2026.php#2026-10-20-1">released</a> fixes for two critical vulnerabilities:</p>
+<blockquote><p>PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. </p>
+<p>Who is at risk: all PHP installations serving web requests, including PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP and LiteSpeed. We consider the risk highest for mod_php, with a demonstrated exploit where an unauthenticated request can trigger the attack before any application code runs...</p></blockquote>]]></description>
+										<content:encoded><![CDATA[<p>PHP maintainers have <a href="https://www.php.net/archive/2026.php#2026-10-20-1">released</a> fixes for two critical vulnerabilities:</p>
+<blockquote><p>PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. </p>
+<p>Who is at risk: all PHP installations serving web requests, including PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP and LiteSpeed. We consider the risk highest for mod_php, with a demonstrated exploit where an unauthenticated request can trigger the attack before any application code runs.</p>
+<p>The vulnerabilities:</p>
+<ul>
+<li>RCE via OOM corruption, CVE-2026-109618 (<a href="https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w">GHSA-w8hw-w9fx-j79w</a>): out-of-memory handling can interrupt PHP while internal request data is only partially initialized. Request cleanup may then treat the invalid data as valid.
+<li>RCE via stale global state, CVE-2026-109619 (<a href="https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp">GHSA-6wmf-4rv5-p3rp</a>): request-owned internal state can survive after its backing memory has been freed. A later request handled by the same worker may use that stale state before normal initialization resets it.</ul>
+</blockquote>
+<p>Updating PHP is the only way to regain security. Do it now.</p>
+<p>More <a href="https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html">news</a>.</p>
+<p><a href="https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/">Good</a> <a href="https://www.recordedfuture.com/blog/php2shell-vulnerability-exploitation">explanations</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72830</post-id>	</item>
+		<item>
 		<title>Workshop on Economics and Information Security (WEIS) Archive</title>
 		<link>https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html#comments</comments>
@@ -47,7 +80,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>3</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72803</post-id>	</item>
@@ -85,7 +118,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>3</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72809</post-id>	</item>
@@ -135,7 +168,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html/feed/</wfw:commentRss>
-			<slash:comments>17</slash:comments>
+			<slash:comments>20</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72715</post-id>	</item>
@@ -280,35 +313,9 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html/feed/</wfw:commentRss>
-			<slash:comments>9</slash:comments>
+			<slash:comments>10</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72774</post-id>	</item>
-		<item>
-		<title>FBI Arrests Suspect in FBI-Hacking Case</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Mon, 12 Oct 2026 15:01:26 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[cybercrime]]></category>
-		<category><![CDATA[data loss]]></category>
-		<category><![CDATA[FBI]]></category>
-		<category><![CDATA[law enforcement]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72766</guid>
-
-					<description><![CDATA[<p>In September, hackers from a group called ShinyHunters <a href="https://www.reuters.com/world/hacked-fbi-data-has-sensitive-information-about-employees-intelligence-roles-2026-09-23/">announced</a> that they stole a trove of FBI data about its own agents. It was an <a href="https://www.lawfaremedia.org/article/the-fbi-data-breach-is-a-counterintelligence-disaster">intelligence disaster</a>.</p>
-<p>Last week, the FBI <a href="https://www.nytimes.com/2026/10/09/us/politics/fbi-hack-shinyhunters-arrest.html">arrested</a> (alternate <a href="https://archive.ph/EBump">link</a>) someone associated with that crime.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>In September, hackers from a group called ShinyHunters <a href="https://www.reuters.com/world/hacked-fbi-data-has-sensitive-information-about-employees-intelligence-roles-2026-09-23/">announced</a> that they stole a trove of FBI data about its own agents. It was an <a href="https://www.lawfaremedia.org/article/the-fbi-data-breach-is-a-counterintelligence-disaster">intelligence disaster</a>.</p>
-<p>Last week, the FBI <a href="https://www.nytimes.com/2026/10/09/us/politics/fbi-hack-shinyhunters-arrest.html">arrested</a> (alternate <a href="https://archive.ph/EBump">link</a>) someone associated with that crime.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html/feed/</wfw:commentRss>
-			<slash:comments>6</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72766</post-id>	</item>
 	</channel>
 </rss>

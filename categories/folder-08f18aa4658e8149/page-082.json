@@ -1,6 +1,127 @@
 {
   "items": [
     {
+      "id": "05c91d017d96b493e2c55cb1",
+      "title": "CloudGoat (☁️🐐)靶场初体验",
+      "summary": "一个开源的云靶场： https://github.com/RhinoSecurityLabs/cloudgoat/ 体验顺便学习一下📖 安装 & 配置 安装前确保机器： Linux or MacOS. Windows is not officially supported. Argument tab-completion requires bash 4.2+ (Linux, or OSX with some difficulty). Python3.6+ is required. Terraform >= 0.14 installed and in your $PATH. The AWS CLI installed and in your $PATH, and an AWS account with suff…",
+      "image": "https://skyblu3519.github.io/post-images/cloudgoat1/1720531972702-e43360e6-83e6-4a6b-b4a6-0b14500a8344.png",
+      "publishedAt": "2024-07-09T15:58:22Z",
+      "sourceId": "4f5bf353ca5bd538",
+      "sourceTitle": "skkyblu3",
+      "link": "https://skyblu3519.github.io/post/cloudgoat-ba-chang-chu-ti-yan/",
+      "detailPath": "articles/05c91d017d96b493e2c55cb1.json"
+    },
+    {
+      "id": "89619b6460ee7a606f396449",
+      "title": "在AWS上使用诱饵用户捕获攻击者",
+      "summary": "思路就是创建一个IAM用户，然后用CloudWatch监控该用户的行为，如果出现了该用户的操作则触发告警，并通过邮件通知。 使用控制台和Terraform两种方法实现 控制台创建 创建诱饵用户 在 IAM 控制台创建一个诱饵用户 honeyUser ，不附加任何权限 为 honeyUser 创建一个访问密钥，这对密钥之后便可以通过一些方法泄露出去，进而捕获可疑的攻击者。 创建CloudTrail并将事件发送至CloudWatch 进入 CloudTrail 控制台创建一个 trail （追踪），创建 CloudTrail 的时候需要选择一个S3来对日志进行存储，如果没有提前准备好则需要在这里新创建一个。 这里不使用加密方便后面数据的检索 配置向 CloudWatch Logs 发送事件，之后可以在 Cloud…",
+      "image": "https://skyblu3519.github.io/post-images/AWSHoneyToken/1720081492814-3e17265e-d254-41d0-a77f-54f84a647378.png",
+      "publishedAt": "2024-07-09T08:57:26Z",
+      "sourceId": "4f5bf353ca5bd538",
+      "sourceTitle": "skkyblu3",
+      "link": "https://skyblu3519.github.io/post/zai-aws-shang-shi-yong-you-er-yong-hu-bu-huo-gong-ji-zhe/",
+      "detailPath": "articles/89619b6460ee7a606f396449.json"
+    },
+    {
+      "id": "1360d6a454714e35ab9c7572",
+      "title": "小美的包包",
+      "summary": "小美有一個陪伴她多年的包包；這個包包跟她一起經歷過大學生活、第一份工作、以及一段重要的感情。雖然用了這麼久，但在這幾年來，小美其實總是對這個包包感到不滿：皮革有點磨損了、外觀不夠時尚、肩帶的長度不對、內袋太小放不下新手機⋯⋯雖然天天都背著，但小美總是認為自己在「忍受」這個包包，心裡總是想著要把它換掉。",
+      "image": null,
+      "publishedAt": "2024-07-09T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/its-gone",
+      "detailPath": "articles/1360d6a454714e35ab9c7572.json"
+    },
+    {
+      "id": "da7907ac5460c590cf7cbbe4",
+      "title": "Q2 2024 Expenses | 2024年第二季度消费总结",
+      "summary": "他夏了夏天 苏打绿 最近的下班“进行曲”是这首《他夏了夏天》，算是 《生存以上生活以下》 的快乐“牛马”版（类比pasture-raised happy chickens）。两首歌以社畜的闹钟开启一天，《他夏》里对早、中、晚餐的期盼简直是我日常脑内叨逼叨写照，直到周五下班路上“轻轻旋转著夏天地面闷热的晚风”。《生存以上》则完美捕捉了我为了避免一周请太多病假而特意把医生appointment往后推的心理——“伤心再也不吹风 现在只害怕伤风 耽误了谁和谁的要求”。旅行回来后就是回来在这两首歌之间转换的心情。 四月提前在台湾体验了盛夏，想说的观察都在 饭饭之交播客 里记录下来了。这趟团建后劲极强，到现在还时不时想念随意寄生在路边树干上的兰花（此前无知的我还以为兰花都是从超市带回家就活不了多久的娇气物种）、时常让人觉…",
+      "image": "https://images.squarespace-cdn.com/content/v1/5d24f88b8ff0730001a3dfb7/c41a6f92-3c5f-4026-907d-32ced6492e29/20240414_082413.jpg?format=1000w",
+      "publishedAt": "2024-07-08T19:30:06Z",
+      "sourceId": "a1908f209b7818cd",
+      "sourceTitle": "After 27",
+      "link": "https://www.after27.me/blog/q2-2024-expenses",
+      "detailPath": "articles/da7907ac5460c590cf7cbbe4.json"
+    },
+    {
+      "id": "e6cb38d73687b98c1ef01dc8",
+      "title": "记20240708郑州暴雨",
+      "summary": "不知道是因为昨晚临睡前喝了一满杯茉莉花茶的缘故，还是没忍住手痒奋笔疾书码字到凌晨的缘故，抑或是终于躺下后又读小说到一点多的缘故，总之昨晚大脑异常兴奋，一直睁着眼睛躺到凌晨快两点，才昏昏睡去。 猫本来老老实实卧在床头椅子上，我伸手 rua 了他两把，睡眼惺忪的他立时高兴的站起身来，尾巴旗杆一样翘上天，伸个懒腰，又像小时候那样，打着咕噜，硬往我头上脸上拱。我反正睡不着觉，也就从头到肚子再到尾巴把他来来回回抚摸了个遍。小猫终究还是长大了，懂事了，终于困意来袭时，我把他从我肚皮上推下去，盖好毛巾被。他似乎一下子明白了我要开始睡觉，立刻乖乖的蜷缩回床头了。 有默契的关系，才是好关系。无论人与人，还是人与猫，都是如此。 凌晨四五点时，起来上厕所。由于知道猫也经常在这个点儿喵喵叫吵着上厕所，我特地给门留了个小缝，任猫来去自…",
+      "image": null,
+      "publishedAt": "2024-07-08T14:14:21Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/235.html",
+      "detailPath": "articles/e6cb38d73687b98c1ef01dc8.json"
+    },
+    {
+      "id": "9179a0fa4eeec0ec7d441780",
+      "title": "讀書筆記｜Steal Like An Artist",
+      "summary": "不記得是從哪裡看到對",
+      "image": null,
+      "publishedAt": "2024-07-07T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/steal-like-an-artist/",
+      "detailPath": "articles/9179a0fa4eeec0ec7d441780.json"
+    },
+    {
+      "id": "7f96ceaf78f93afade319aad",
+      "title": "新詩",
+      "summary": "在搖晃的捷運車廂中",
+      "image": null,
+      "publishedAt": "2024-07-07T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/poetry",
+      "detailPath": "articles/7f96ceaf78f93afade319aad.json"
+    },
+    {
+      "id": "8fd7362dc5903c52d44f618c",
+      "title": "為什麼我不用社群媒體了？",
+      "summary": "這篇貼文也被同步到了筆記區。",
+      "image": null,
+      "publishedAt": "2024-07-06T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/why-i-dont-use-social-media",
+      "detailPath": "articles/8fd7362dc5903c52d44f618c.json"
+    },
+    {
+      "id": "0cdae4b367677ed87a9e81cd",
+      "title": "Gumball 語錄",
+      "summary": "阿甘語錄 （英文原版配音）。 幹，在 10 分 35 秒處、出自 The Internet （網路追追追）一集那阿甘不發一語踢鐵桶的一幕？之前我都看不懂，現在我才發現那是個埋得很深的英文成人梗（沒錯其他語言的配音都傳達不了這個精髓），因為「踢桶子」英文叫 kick the bucket， 但它也是短語「死掉」的雙關 ！所以那可以被解讀為一個死亡威脅！我的天啊也太會埋梗了吧。 還有 4 分 01 秒處，“The bigger the bird, the sweeter the curd”（出自第六季 The Cringe「尷尬癌」），乍聽之下是幹話，但想特別歪的話也可以被解讀為一個（很糟糕的色色）成人梗（bird 是小鳥的意思，curd 是凝乳的意思，剩下的自行想像）XD。 結論：《阿甘妙世界》是個很會埋成人梗…",
+      "image": null,
+      "publishedAt": "2024-07-05T20:09:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/gumball-once-said/",
+      "detailPath": "articles/0cdae4b367677ed87a9e81cd.json"
+    },
+    {
+      "id": "35ee630194fb13519c9adb9a",
+      "title": "观《首尔之春》",
+      "summary": "听着外面淅淅沥沥的雨声，心血来潮想窝在床上看一部电影，于是就在网友的推荐下选择了这部去年上映的韩国电影——《首尔之春》。 （图片来自网络） 电影根据上世纪七十年代末动摇整个韩国的军事政变—— “双十二”军事政变 改编，两个小时的剧情全程紧凑刺激，基本上可以说是无尿点，个人感觉很不错。 不得不感叹，韩国人还是一如既往的敢拍。 电影有一句挺经典的台词：“失败了是叛变，成功了那就是革命”。不仅让我想到了海贼王里的多弗朗明哥。 海贼是恶？海军是正义？那种观念早被改写过无数次了！不会知道何为和平的小鬼们和不知道何为战争的小鬼们的价值观是不同的，只有立于顶点之人才可以定义善恶……正义会获胜？那是当然的了，只有胜者才是正义！ 是的，正义必胜。",
+      "image": null,
+      "publishedAt": "2024-07-04T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/shou-er-zhi-chun",
+      "detailPath": "articles/35ee630194fb13519c9adb9a.json"
+    },
+    {
+      "id": "b28a686623f61364ac060d1a",
+      "title": "读《乡土中国》",
+      "summary": "有段时间没读书了，趁晚上闲暇之余，便打开了这本盛名已久的《乡土中国》。 至于为何选择这本书，作为一个从小在农村长大，又喜欢在土里打滚的“野孩子”，那自然是对“乡土”这两个字有种天然的感情和兴趣。 这本书出版于上世纪四十年代，通过中西方对比，深度剖析了当时中国乡土社会的结构及其特征。 乡土社会的一个特点是生活安定，靠泥土谋生的人不能经常移动。人在一个地方出生，就要在这个地方生长下去，守着自己的一亩三分地，直至死去。 在乡土社会中，一个村就是一个社群，社群内的人们互帮互助，信奉孔孟之礼，并通过礼治来管理群体，讨厌一切具有冲突和不确定的因素。 作为农业大国，中国经历了漫长的农耕文明。现代的每个人往前推三代基本都经历过乡土社会。所以即便现在国家经历了几十年的高速发展，人们的思想、意识、价值观也发生了巨大变化，但一些扎…",
+      "image": null,
+      "publishedAt": "2024-07-03T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/xiang-tu-zhong-guo",
+      "detailPath": "articles/b28a686623f61364ac060d1a.json"
+    },
+    {
       "id": "3e82e5e7fef201bea7d7f700",
       "title": "Gumball 現場舞台劇",
       "summary": "https://thehoneycombers.com/singapore/event/amazing-world-gumball-takeover-live-show/ 《阿甘妙世界》曾經在新加坡舉辦過 現場舞台劇 ？！我之前都沒聽說過。",
@@ -375,17 +496,6 @@
       "detailPath": "articles/d7a49b93167850e1410237ea.json"
     },
     {
-      "id": "779fee777e577b57f0ff2580",
-      "title": "法律文书：羁押必要性审查申请书——聚众扰乱交通秩序罪",
-      "summary": "申请人：刘律师，系犯罪嫌疑人老邢之辩护人 。 申请事项：申请对涉嫌聚众扰乱交通秩序罪的犯罪嫌疑人老邢进行羁押必要性审查，并建议公安机关对其变更强制措施为取保候审、 事实与理由： 老邢涉嫌聚众扰乱交通秩序罪一案，贵院业已批准逮捕，现羁押于郑州市第三看守所。申请人系犯罪嫌疑人老邢之辩护人，认为： 1.本案总体上系烂尾房业主现场维权过程中，因现场秩序维持不当，人群失序而引发的失控过限行为，没有呈现出预谋性、组织性，不存在所谓“组织封堵道路”的首要分子； 2.老邢加入维权微信小群的时间点非常靠后，不能仅因其在微信群中，就认为其系“组织封堵道路”的首要分子； 3.案发当日上午，老邢本人并不在事发现场，其虽在微信群中有发表过激言论，但当时现场情况已经失控，道路已经被情绪激动的维权群众彻底堵死，老邢在群内的发言，对事态发展…",
-      "image": null,
-      "publishedAt": "2024-06-12T08:51:58Z",
-      "sourceId": "c7356b172af43f7f",
-      "sourceTitle": "刑辩人在路上",
-      "link": "https://xingbianren.cn/post/226.html",
-      "detailPath": "articles/779fee777e577b57f0ff2580.json"
-    },
-    {
       "id": "c8a15c4925601044f6c9a02f",
       "title": "Jingjing-speak (晶晶體)",
       "summary": "In modern Taiwanese culture, there is a ‘pretentious rich people’ stereotype which is characterised by shoehorning as many English words into one’s still apparently Mandarin-structured speech ( 晶晶體 ). From a Westerner’s perspective, perhaps you can imagine someone speaking English but with some words randomly replaced with Latin or French equivalents. Just…",
@@ -549,116 +659,6 @@
       "sourceTitle": "蒙奇日记",
       "link": "https://luffy.cc/a/jing-shen-you-ni",
       "detailPath": "articles/913670f201683a479e999481.json"
-    },
-    {
-      "id": "fd724faf1cf17d9af1a99444",
-      "title": "每周一山：登顶记",
-      "summary": "人生中第一次登顶体验",
-      "image": null,
-      "publishedAt": "2024-06-02T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/%E7%99%BB%E9%A1%B6%E8%AE%B0/",
-      "detailPath": "articles/fd724faf1cf17d9af1a99444.json"
-    },
-    {
-      "id": "9fafa25ce1fc250f22f20393",
-      "title": "重养绿萝",
-      "summary": "买的绿萝到了，下单了90株，一共花费16元。 分成了三盆，两盆土培，一盆水培。 至于为啥要买绿萝，是因为上周末在家打扫卫生的时候，看到了阳台堆积的花盆，还有覆盖在这之上之前种植的绿萝的枯叶… 简单把这些东西收拾了一下，想着它们在那空着也是浪费，那就再种点东西吧。这样既可以给自己的房间添点绿色，又能让自己略显一点情调。 原本是想着种点薄荷，结果听朋友说薄荷很容易长虫，不太好对付。那就还是绿萝吧。 皮实的很，懒人首先，可太适合我了。 可即便是如此，我还是养死了不少绿萝。 因为平时对这些东西不怎么上心，懒得按时浇水，懒得关注啥时候该浇水。于是平时就经常把水杯里没喝完的水直接浇在了上面… 所以就好像变成了我这个懒人很勤快的给它们浇水，直到把它们全都给淹死了… 相比之下，办公室桌上的那一小盆倒是活的最久。因为我老容易忘…",
-      "image": null,
-      "publishedAt": "2024-05-30T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/chong-yang-lv-luo",
-      "detailPath": "articles/9fafa25ce1fc250f22f20393.json"
-    },
-    {
-      "id": "523551a971bcc3252a45e0ab",
-      "title": "常见水洗标志",
-      "summary": "一直以来被衣服上各种水洗标志所困扰，每次都去逐一核对，今天在ChatGPT的帮助下，终于看懂了某条裤子上的全部水洗标志，必须记录下来： [ 继续阅读 Read More... ] 原文链接： https://riichiie.net/2024/05/28/common-laundry-symbols/ | 来自 Richie的时光机",
-      "image": null,
-      "publishedAt": "2024-05-28T11:57:43Z",
-      "sourceId": "f0c46205d0f1c40c",
-      "sourceTitle": "Richie的时光机",
-      "link": "https://riichiie.net/2024/05/28/common-laundry-symbols/",
-      "detailPath": "articles/523551a971bcc3252a45e0ab.json"
-    },
-    {
-      "id": "c5574129f7c1a76e55be87f3",
-      "title": "五月｜塵埃落定 宜碎碎念",
-      "summary": "本月Mileston",
-      "image": null,
-      "publishedAt": "2024-05-26T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/may-2024-recap/",
-      "detailPath": "articles/c5574129f7c1a76e55be87f3.json"
-    },
-    {
-      "id": "912e10fedb035688be05325c",
-      "title": "本周运动记",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-05-26T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/%E6%9C%AC%E5%91%A8%E8%BF%90%E5%8A%A8%E8%AE%B0/",
-      "detailPath": "articles/912e10fedb035688be05325c.json"
-    },
-    {
-      "id": "87aa3d9d1dc040fa435f873a",
-      "title": "新穷人的抉择与消费主义挑战",
-      "summary": "消费主义将个人的消费能力与社会地位挂钩，导致过度消费和人生空虚。现代社会由“生产者社会”转变为“消费者社会”，千禧一代是真正意义的消费着，作者提倡重构对物品的理解，摆脱每况愈下的消费文化。",
-      "image": null,
-      "publishedAt": "2024-05-26T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/reading-work-consumerism-and-the-new-poor",
-      "detailPath": "articles/87aa3d9d1dc040fa435f873a.json"
-    },
-    {
-      "id": "f75cc10e0fecd6cfd47df2d3",
-      "title": "向伟人学习-读《富兰克林自传》",
-      "summary": "最近Apple Tv上映了《富兰克林》，想到了《富兰克林自传》这本经典书还没看过，遂找到来读。书的内容大体上记述了他少年，青年，中年，以及到50多岁的事情。书的内容很好，很有启发，也有很多他的个人品质值得我们学习，看了一遍恐难以很好的对他有所了解，第二遍读完方才动笔开始写读书笔记。 生平简介 恐怕有人对富兰克林不了解，我这里简单介绍一下。他出生在一个普通人家里，父亲移民到美洲后生下他，他年少就作为一个印刷工，后来自己开办印刷所，同时发行报纸等，在殖民地他积极参与议会并担任职位，后期参与推动了美国独立，他积极投身于公共事业，提议创建了消防队，巡查队，参与创建图书馆，建立宾夕法尼亚大学等等。空闲时间还进行创新发明，进行科学实验。关于他的更多详细介绍，感兴趣的可以去看看 维基百科 。 读书与学习 富兰克林仅仅在学校…",
-      "image": "https://img.isming.me/image/benj-franklin.jpg",
-      "publishedAt": "2024-05-25T12:05:21Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-05-25-franklin-autobiography-note/?utm_source=rss",
-      "detailPath": "articles/f75cc10e0fecd6cfd47df2d3.json"
-    },
-    {
-      "id": "be01ec024d64423f3cd8a315",
-      "title": "小红书话术学习",
-      "summary": "小红书是以图片为中心的媒体。但当图片本身并不能提供很多信息量或者作者想要吸引读者点击阅读更多文字，图片的配文便十分重要。小红书用户自觉或者不自觉地都在标题上花功夫，以下是一些常见的话术： XXX 已",
-      "image": null,
-      "publishedAt": "2024-05-25T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2024/05/25/xhs-titles/",
-      "detailPath": "articles/be01ec024d64423f3cd8a315.json"
-    },
-    {
-      "id": "ff4f510cad17d70d6b0ff686",
-      "title": "窗外的雨",
-      "summary": "窗外下起了大雨 伴着风，伴着雨，又伴着滂沱 就像那扑火的飞蛾 义无反顾地冲向躲在出租屋的我 直到像花一样在窗上凋落 我透过窗，冷漠地望着那玻璃的哭泣 甚至拿起了笔，写下了这篇日记 我为何要在乎这雨的逝落 我什么也不想在乎",
-      "image": null,
-      "publishedAt": "2024-05-24T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/chuang-wai-de-yu",
-      "detailPath": "articles/ff4f510cad17d70d6b0ff686.json"
-    },
-    {
-      "id": "1604dd57c90865dddb33a361",
-      "title": "也白嫖 Cloudflare R2 当图床了",
-      "summary": "换成 Hugo 后一直很头疼博客的部署耗时，基本上的用时是 5-6 分钟： FIG.01 build 和 upload 是最耗时间的。 build 这一步在我本地其实只需要 1-2s，在 GitHub Actions 中跑 workflow 因为没有 cache 所以 build 和 upload 都很慢。 所以很早就萌生还是需要图床的想法了。",
-      "image": "https://static.zhuzi.dev/2024/05/hugo-build-time.png",
-      "publishedAt": "2024-05-24T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/2024-05-24-cf-r2-bucket/",
-      "detailPath": "articles/1604dd57c90865dddb33a361.json"
     }
   ]
 }

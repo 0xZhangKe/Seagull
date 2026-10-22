@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:source="http://source.scripting.com/" version="2.0">
+  <channel>
+    <title>inessential.com</title>
+    <link>https://inessential.com/</link>
+    <description>Brent Simmons&apos;s weblog.</description>
+		<language>en</language>
+	
+    <item>
+      <title>That About Wraps It Up for Stock Mac UI</title>
+      <link>https://inessential.com/2026/09/22/that-about-wraps-it-up-for.html</link>
+      <guid>https://inessential.com/2026/09/22/that-about-wraps-it-up-for.html</guid>
+      <pubDate>Tue, 22 Sep 2026 11:35:22 -0700</pubDate>
+      <description>&lt;p&gt;The latest macOS is a nice step toward a good-looking Mac UI, but I do wish it had gone farther.
+
+&lt;p&gt;I am in particular not a fan of how Mac toolbars look. I don’t like the full-height sidebars and I especially don’t like the Liquid Glass buttons.
+
+&lt;p&gt;I looked around at what other Mac apps are doing. I asked &lt;a href=&quot;https://micro.inessential.com/2026/09/21/now-that-were-a-year.html&quot;&gt;on my microblog&lt;/a&gt; which gets &lt;a href=&quot;https://indieweb.social/@brentsimmons/117310475883194321&quot;&gt;syndicated to Mastodon&lt;/a&gt; and I also looked at replies to &lt;a href=&quot;https://mastodon.social/@isaiah/117299199842156790&quot;&gt;Isaiah’s similar question&lt;/a&gt; from a few days ago.
+
+&lt;p&gt;What I found should be no surprise: many of the apps people think look good are not using stock UI.
+
+&lt;p&gt;You already know this. I don’t think I need to prove it. But one app may serve as an illustration: &lt;a href=&quot;https://culturedcode.com/things/&quot;&gt;Things&lt;/a&gt;.
+
+&lt;p&gt;Things is a perennial callout for its design and for its Mac-like-ness. But it is not really a stock Mac app at all. The toolbar is not at the top of the window (not an NSToolbar) and it’s not customizable. There is no hint of Liquid Glass style translucency anywhere in their main UI. The content doesn’t slide under the sidebar, for instance. (The one place I can find anything obviously Liquid Glass is the toolbar buttons in the settings window.)
+
+&lt;p&gt;I’ve long been a devoted proponent of using stock Mac UI for, I always thought, good reasons: users are already familiar with that UI and it’s less work to create and update every year.
+
+&lt;h3&gt;Plot twist&lt;/h3&gt;
+
+&lt;p&gt;I think those reasons (user familiarity and developer effort) may not stand up entirely. At least not these days.
+
+&lt;p&gt;Users have shown — again, I don’t need to prove this — that they don’t think about a stock Mac app vs. custom. Do they dislike Things for not having a toolbar at the top of the window that they can customize in the usual way? No. (The only people who think that way are longtime Mac developers like me.)
+
+&lt;p&gt;Are users able to understand the UI to popular Mac apps — to Things, Slack, Craft, OmniFocus, NotePlan, Bear, Reeder, Telegram, Acorn, Tapestry, Obsidian, Audio Hijack, etc. — without much trouble, no matter how stock or not-stock they are? Yes.
+
+&lt;p&gt;Do they know when an app is an Electron app? Nope: they don’t even have a concept of Electron apps and they wouldn’t care if you explained it to them. (Why should they?)
+
+&lt;p&gt;Users may be already familiar with stock Mac UI (and maybe not, actually, depending on what apps they use) — but I don’t think that matters at all anymore.
+
+&lt;h3&gt;So what about developer effort&lt;/h3&gt;
+
+&lt;p&gt;The idea was that by using stock Mac UI you the developer would be carried along — you’d get most of the macOS changes every year mostly for free or with not &lt;em&gt;that&lt;/em&gt; much work, since you’d kept up every year.
+
+&lt;p&gt;But my app NetNewsWire has a very stock Mac UI, and Liquid Glass adoption last year was a lot of work. Using stock Mac UI didn’t save us much — in fact, we had more work to do compared to the apps with more custom UI.
+
+&lt;p&gt;I’ll go back to Things. I’m not picking on them, to be clear. Quite the opposite! I very much respect their work, even though I have in the past wished it were more Mac-like (again, in the way only a longtime Mac developer would).
+
+&lt;p&gt;Here’s their blog post from a year ago &lt;a href=&quot;https://culturedcode.com/things/blog/2025/09/things-for-os-26/&quot;&gt;on adopting Liquid Glass&lt;/a&gt;. They did some work, for sure, at their usual high level of quality. And I’m not denigrating that. But it looks like a lot less work than we had to do on NetNewsWire.
+
+&lt;p&gt;And that’s my point: the level of developer effort was &lt;em&gt;higher&lt;/em&gt; for the stock Mac app.
+
+&lt;h3&gt;The secret third reason for using stock Mac UI&lt;/h3&gt;
+
+&lt;p&gt;To recap: the reasons for using stock Mac UI are 1) user familiarity, which we’ve known for a while just isn’t a thing, and 2) hoping to be able to expend less developer effort, which we’ve seen can work against you.
+
+&lt;p&gt;But there’s another reason: the stock Mac UI is designed by Apple, the best designers in the world, and do you really think you can do better? Really?
+
+&lt;p&gt;The app world is full of people who think they’re better and they’re really, really, really not.
+
+&lt;p&gt;Well, I still think Apple has the best collection of UI designers in the world, but, for whatever reasons, the guidance from above on how the Mac UI should look is missing the mark. I’m not blaming the people doing the work — they’re doing great work with the direction they’re given.
+
+&lt;p&gt;So this — bad direction — is where the secret third reason falls down. And we’re left with no real reason to stick with stock Mac UI (except for wanting approval from longtime Mac people like me, and you really shouldn’t care about that at all).
+
+&lt;h3&gt;Messing around last night&lt;/h3&gt;
+
+&lt;p&gt;With this in mind I wondered how far I could get in removing the parts of Liquid Glass I don’t like in NetNewsWire. Turns out I could get pretty far, though it comes at the expense of using NSToolbar (as predicted).
+
+&lt;p&gt;Note: this stuff is just on a branch. One night of play, not real design or consideration. (But this is code, not mockups.) It’s not about to ship this way. But I’ll share anyway, because it does hint at some possible ideas for NetNewsWire’s future.
+
+&lt;p&gt;Click the small version to get the big version.
+
+&lt;p&gt;&lt;a href=&quot;https://ranchero.com/images/netnewswire-minus-glass.png&quot;&gt;&lt;img src=&quot;https://ranchero.com/images/netnewswire-minus-glass.png&quot; width=300&gt;&lt;/a&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ranchero.com/images/netnewswire-minus-glass-columns.png&quot;&gt;&lt;img src=&quot;https://ranchero.com/images/netnewswire-minus-glass-columns.png&quot; width=300&gt;&lt;/a&gt;
+
+&lt;p&gt;(Note that the column view in the second screenshot is going to ship in 7.2. That part’s already done, and it has nothing to do with Liquid-Glass-or-not. Also note: the article theme in use is part of the standard NetNewsWire app right now, not a new thing.)
+
+&lt;p&gt;The obvious first best thing I could do to improve this is to add some color to the toolbar icons and spread them out better. Maybe add some ability to customize, even though it’s not a standard Mac toolbar.
+
+&lt;p&gt;Of course you might look at this and think “Blech! Looks so old! Spare me!” Totally fair!
+
+&lt;p&gt;But it felt cute. Might delete later</description>
+      <source:markdown>The latest macOS is a nice step toward a good-looking Mac UI, but I do wish it had gone farther.
+
+I am in particular not a fan of how Mac toolbars look. I don’t like the full-height sidebars and I especially don’t like the Liquid Glass buttons.
+
+I looked around at what other Mac apps are doing. I asked [on my microblog](https://micro.inessential.com/2026/09/21/now-that-were-a-year.html) which gets [syndicated to Mastodon](https://indieweb.social/@brentsimmons/117310475883194321) and I also looked at replies to [Isaiah’s similar question](https://mastodon.social/@isaiah/117299199842156790) from a few days ago.
+
+What I found should be no surprise: many of the apps people think look good are not using stock UI.
+
+You already know this. I don’t think I need to prove it. But one app may serve as an illustration: [Things](https://culturedcode.com/things/).
+
+Things is a perennial callout for its design and for its Mac-like-ness. But it is not really a stock Mac app at all. The toolbar is not at the top of the window (not an NSToolbar) and it’s not customizable. There is no hint of Liquid Glass style translucency anywhere in their main UI. The content doesn’t slide under the sidebar, for instance. (The one place I can find anything obviously Liquid Glass is the toolbar buttons in the settings window.)
+
+I’ve long been a devoted proponent of using stock Mac UI for, I always thought, good reasons: users are already familiar with that UI and it’s less work to create and update every year.
+
+### Plot twist
+
+I think those reasons (user familiarity and developer effort) may not stand up entirely. At least not these days.
+
+Users have shown — again, I don’t need to prove this — that they don’t think about a stock Mac app vs. custom. Do they dislike Things for not having a toolbar at the top of the window that they can customize in the usual way? No. (The only people who think that way are longtime Mac developers like me.)
+
+Are users able to understand the UI to popular Mac apps — to Things, Slack, Craft, OmniFocus, NotePlan, Bear, Reeder, Telegram, Acorn, Tapestry, Obsidian, Audio Hijack, etc. — without much trouble, no matter how stock or not-stock they are? Yes.
+
+Do they know when an app is an Electron app? Nope: they don’t even have a concept of Electron apps and they wouldn’t care if you explained it to them. (Why should they?)
+
+Users may be already familiar with stock Mac UI (and maybe not, actually, depending on what apps they use) — but I don’t think that matters at all anymore.
+
+### So what about developer effort
+
+The idea was that by using stock Mac UI you the developer would be carried along — you’d get most of the macOS changes every year mostly for free or with not *that* much work, since you’d kept up every year.
+
+But my app NetNewsWire has a very stock Mac UI, and Liquid Glass adoption last year was a lot of work. Using stock Mac UI didn’t save us much — in fact, we had more work to do compared to the apps with more custom UI.
+
+I’ll go back to Things. I’m not picking on them, to be clear. Quite the opposite! I very much respect their work, even though I have in the past wished it were more Mac-like (again, in the way only a longtime Mac developer would).
+
+Here’s their blog post from a year ago [on adopting Liquid Glass](https://culturedcode.com/things/blog/2025/09/things-for-os-26/). They did some work, for sure, at their usual high level of quality. And I’m not denigrating that. But it looks like a lot less work than we had to do on NetNewsWire.
+
+And that’s my point: the level of developer effort was *higher* for the stock Mac app.
+
+### The secret third reason for using stock Mac UI
+
+To recap: the reasons for using stock Mac UI are 1) user familiarity, which we’ve known for a while just isn’t a thing, and 2) hoping to be able to expend less developer effort, which we’ve seen can work against you.
+
+But there’s another reason: the stock Mac UI is designed by Apple, the best designers in the world, and do you really think you can do better? Really?
+
+The app world is full of people who think they’re better and they’re really, really, really not.
+
+Well, I still think Apple has the best collection of UI designers in the world, but, for whatever reasons, the guidance from above on how the Mac UI should look is missing the mark. I’m not blaming the people doing the work — they’re doing great work with the direction they’re given.
+
+So this — bad direction — is where the secret third reason falls down. And we’re left with no real reason to stick with stock Mac UI (except for wanting approval from longtime Mac people like me, and you really shouldn’t care about that at all).
+
+### Messing around last night
+
+With this in mind I wondered how far I could get in removing the parts of Liquid Glass I don’t like in NetNewsWire. Turns out I could get pretty far, though it comes at the expense of using NSToolbar (as predicted).
+
+Note: this stuff is just on a branch. One night of play, not real design or consideration. (But this is code, not mockups.) It’s not about to ship this way. But I’ll share anyway, because it does hint at some possible ideas for NetNewsWire’s future.
+
+Click the small version to get the big version.
+
+&lt;a href=&quot;https://ranchero.com/images/netnewswire-minus-glass.png&quot;&gt;&lt;img src=&quot;https://ranchero.com/images/netnewswire-minus-glass.png&quot; width=300&gt;&lt;/a&gt;
+
+&lt;a href=&quot;https://ranchero.com/images/netnewswire-minus-glass-columns.png&quot;&gt;&lt;img src=&quot;https://ranchero.com/images/netnewswire-minus-glass-columns.png&quot; width=300&gt;&lt;/a&gt;
+
+(Note that the column view in the second screenshot is going to ship in 7.2. That part’s already done, and it has nothing to do with Liquid-Glass-or-not. Also note: the article theme in use is part of the standard NetNewsWire app right now, not a new thing.)
+
+The obvious first best thing I could do to improve this is to add some color to the toolbar icons and spread them out better. Maybe add some ability to customize, even though it’s not a standard Mac toolbar.
+
+Of course you might look at this and think “Blech! Looks so old! Spare me!” Totally fair!
+
+But it felt cute. Might delete later</source:markdown>
+    </item>
+
+    <item>
+      <title>After Fixin’ the Bugs</title>
+      <link>https://inessential.com/2026/08/26/after-fixin-the-bugs.html</link>
+      <guid>https://inessential.com/2026/08/26/after-fixin-the-bugs.html</guid>
+      <pubDate>Wed, 26 Aug 2026 12:07:54 -0700</pubDate>
+      <description>&lt;p&gt;Fixed ’em. Fixed ’em all. Well, almost all — down to 10 bugs on the NetNewsWire bug tracker. (See the &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.1.3&quot;&gt;Mac 7.1.3 release notes&lt;/a&gt; and &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/releases/tag/iOS-7.1.3-7206&quot;&gt;iOS&lt;/a&gt; for the big list of just-fixed bugs.)
+
+&lt;p&gt;This means I’ve gotten the app to the place I’ve wanted to get to for a long time, where the bug count is manageable and close to zero.
+
+&lt;p&gt;So it’s 10 bugs at this writing — and 556 &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/issues?q=is%3Aissue%20state%3Aopen%20type%3AFeature&quot;&gt;feature requests&lt;/a&gt;. Bug fixing never ends, yes, but the good news is that we can &lt;em&gt;finally&lt;/em&gt; get going on these feature requests.
+
+&lt;h2&gt;So many feature requests&lt;/h2&gt;
+
+&lt;p&gt;Some of the feature requests are obviously popular: custom smart feeds, content filtering, thumbnails in the timeline, traditional layout on Mac, and similar.
+
+&lt;p&gt;Other requests are less obviously popular but would be appreciated by a number of people: more syncing systems, appearance settings, sorting options, etc.
+
+&lt;p&gt;Some other requests are very small, would take just one or a few lines of code, and seem like an easy win — like &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/issues/3501&quot;&gt;ignoring elements&lt;/a&gt; with the &lt;code&gt;.instapaper_ignore&lt;/code&gt; class.
+
+&lt;p&gt;There are also the feature requests that are fairly niche, which would be a bit of work and not likely to benefit very many people at all, such as a &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/issues/5395&quot;&gt;horizontally flipped layout&lt;/a&gt; or &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/issues/478&quot;&gt;app-specific proxy settings&lt;/a&gt;. But we consider these seriously too — I’ve been surprised when things like this are &lt;em&gt;way&lt;/em&gt; less niche than I thought or somehow more important than I guessed.
+
+&lt;p&gt;And these days there are the AI feature requests too, mostly for content filtering and summarizing. We will not be doing any AI features, even local AI features, any time soon. I’m cautious about this kind of thing and I know how difficult it is to remove features, and I don’t know right now that AI is right for this app or how it might be right. We’ll see.
+
+&lt;h3&gt;How do I decide which features to do when?&lt;/h3&gt;
+
+&lt;p&gt;It’s not as simple as just picking the most popular items and doing those first.
+
+&lt;p&gt;One thing to consider is which features depend on others: for example, showing thumbnails in the timeline depends on adding support for enclosures and Media RSS to the feed parsers, which is a separate feature request, which has its own value besides the thumbnails in the timeline.
+
+&lt;p&gt;(Some feeds — Mastodon feeds, notably — include their images as Media RSS enclosures, which is weird but true, and the article display should show those images.)
+
+&lt;p&gt;Another consideration is NetNewsWire’s job in supporting the web. Which features advance the goal of interoperability and making the web itself the social network? This is why NetNewsWire exists, after all.
+
+&lt;p&gt;Other considerations — besides how many people would benefit, besides the web — include how much work, how hard to test, how risky the changes, and any cognitive and anxiety load it may place on users.
+
+&lt;p&gt;And then there’s also my personal whim! I tend to favor features that existed in NetNewsWire of Yore (NetNewsWire 3.3.2, which we’re still chasing in some ways). Some random feature might compel my attention — maybe it’s an interesting challenge, a thing I’ve wanted to do for 20 years, something I’ve wanted to learn about, or maybe I can’t explain why I want to do it, but I do, and that’s that.
+
+&lt;p&gt;You can follow along if you like. I organize &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/milestones?sort=due_date&amp;amp;direction=asc&quot;&gt;future releases as milestones in GitHub&lt;/a&gt;. Just note that I make changes all the time — nothing is set in stone until it actually ships.</description>
+      <source:markdown>Fixed ’em. Fixed ’em all. Well, almost all — down to 10 bugs on the NetNewsWire bug tracker. (See the [Mac 7.1.3 release notes](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.1.3) and [iOS](https://github.com/Ranchero-Software/NetNewsWire/releases/tag/iOS-7.1.3-7206) for the big list of just-fixed bugs.)
+
+This means I’ve gotten the app to the place I’ve wanted to get to for a long time, where the bug count is manageable and close to zero.
+
+So it’s 10 bugs at this writing — and 556 [feature requests](https://github.com/Ranchero-Software/NetNewsWire/issues?q=is%3Aissue%20state%3Aopen%20type%3AFeature). Bug fixing never ends, yes, but the good news is that we can *finally* get going on these feature requests.
+
+## So many feature requests
+
+Some of the feature requests are obviously popular: custom smart feeds, content filtering, thumbnails in the timeline, traditional layout on Mac, and similar.
+
+Other requests are less obviously popular but would be appreciated by a number of people: more syncing systems, appearance settings, sorting options, etc.
+
+Some other requests are very small, would take just one or a few lines of code, and seem like an easy win — like [ignoring elements](https://github.com/Ranchero-Software/NetNewsWire/issues/3501) with the `.instapaper_ignore` class.
+
+There are also the feature requests that are fairly niche, which would be a bit of work and not likely to benefit very many people at all, such as a [horizontally flipped layout](https://github.com/Ranchero-Software/NetNewsWire/issues/5395) or [app-specific proxy settings](https://github.com/Ranchero-Software/NetNewsWire/issues/478). But we consider these seriously too — I’ve been surprised when things like this are *way* less niche than I thought or somehow more important than I guessed.
+
+And these days there are the AI feature requests too, mostly for content filtering and summarizing. We will not be doing any AI features, even local AI features, any time soon. I’m cautious about this kind of thing and I know how difficult it is to remove features, and I don’t know right now that AI is right for this app or how it might be right. We’ll see.
+
+### How do I decide which features to do when?
+
+It’s not as simple as just picking the most popular items and doing those first.
+
+One thing to consider is which features depend on others: for example, showing thumbnails in the timeline depends on adding support for enclosures and Media RSS to the feed parsers, which is a separate feature request, which has its own value besides the thumbnails in the timeline.
+
+(Some feeds — Mastodon feeds, notably — include their images as Media RSS enclosures, which is weird but true, and the article display should show those images.)
+
+Another consideration is NetNewsWire’s job in supporting the web. Which features advance the goal of interoperability and making the web itself the social network? This is why NetNewsWire exists, after all.
+
+Other considerations — besides how many people would benefit, besides the web — include how much work, how hard to test, how risky the changes, and any cognitive and anxiety load it may place on users.
+
+And then there’s also my personal whim! I tend to favor features that existed in NetNewsWire of Yore (NetNewsWire 3.3.2, which we’re still chasing in some ways). Some random feature might compel my attention — maybe it’s an interesting challenge, a thing I’ve wanted to do for 20 years, something I’ve wanted to learn about, or maybe I can’t explain why I want to do it, but I do, and that’s that.
+
+You can follow along if you like. I organize [future releases as milestones in GitHub](https://github.com/Ranchero-Software/NetNewsWire/milestones?sort=due_date&amp;direction=asc). Just note that I make changes all the time — nothing is set in stone until it actually ships.</source:markdown>
+    </item>
+
+    <item>
+      <title>Tech Choices</title>
+      <link>https://inessential.com/2026/08/24/tech-choices.html</link>
+      <guid>https://inessential.com/2026/08/24/tech-choices.html</guid>
+      <pubDate>Mon, 24 Aug 2026 15:00:58 -0700</pubDate>
+      <description>&lt;p&gt;Of course it’s okay to criticize people for their tech choices — &lt;a href=&quot;https://ticci.craft.me/explanation&quot;&gt;for returning to X&lt;/a&gt;, for instance, as MacStories recently did.
+
+&lt;p&gt;I’m not on X and there’s no way I would return. Fuck that place and fuck Elon Musk. (Yes, there’s a brentsimmons there, but it’s not me. I deleted my account.)
+
+&lt;p&gt;But it’s not like my tech choices are free of fascists and collaborators — and yours almost surely aren’t either.
+
+&lt;p&gt;Do you have an iPhone? A Mac or iPad?
+
+&lt;p&gt;Do you order from Amazon, buy groceries from Whole Foods, or use any of their other properties (Prime Video, Twitch, Audible, etc.)? Do you use AWS or any websites that rely on AWS?
+
+&lt;p&gt;Do you use GitHub or Office or Windows or Azure or Typescript? How about DuckDuckGo, which uses Bing?
+
+&lt;p&gt;Do you run Linux, which now includes AI-assisted code? Do you use Claude or ChatGPT or any of those?
+
+&lt;p&gt;Do you use any Meta social networks (Facebook, Threads, Instagram)?
+
+&lt;p&gt;Do you write Ruby code? (Which features DHH prominently on &lt;a href=&quot;https://www.ruby-lang.org/&quot;&gt;its home page&lt;/a&gt;.)
+
+&lt;p&gt;Do you have an Android phone or use Google search or Gmail or write code in Go?
+
+&lt;p&gt;(Etc.)
+
+&lt;p align=center&gt;* * *&lt;/p&gt;
+
+&lt;p&gt;I use Apple stuff and write apps for Mac and iOS, after all, which means my work benefits Apple, which is doing far, far worse things than the MacStories folks could or would ever do.
+
+&lt;p&gt;And yet here I am continuing to write apps for Apple platforms.
+
+&lt;p&gt;Again, yes, it’s not just okay but proper to criticize public people for their tech choices, but I try to remember my own imperfect choices before I do. And, more importantly, I try to remember who the actual enemies are. (Trump, his oligarchs, ICE, Stephen Miller, every single Republican politician, etc.)
+
+&lt;p&gt;These days we need all the righteous fury we can rally — and we also need the clarity to know where to focus it.</description>
+      <source:markdown>Of course it’s okay to criticize people for their tech choices — [for returning to X](https://ticci.craft.me/explanation), for instance, as MacStories recently did.
+
+I’m not on X and there’s no way I would return. Fuck that place and fuck Elon Musk. (Yes, there’s a brentsimmons there, but it’s not me. I deleted my account.)
+
+But it’s not like my tech choices are free of fascists and collaborators — and yours almost surely aren’t either.
+
+Do you have an iPhone? A Mac or iPad?
+
+Do you order from Amazon, buy groceries from Whole Foods, or use any of their other properties (Prime Video, Twitch, Audible, etc.)? Do you use AWS or any websites that rely on AWS?
+
+Do you use GitHub or Office or Windows or Azure or Typescript? How about DuckDuckGo, which uses Bing?
+
+Do you run Linux, which now includes AI-assisted code? Do you use Claude or ChatGPT or any of those?
+
+Do you use any Meta social networks (Facebook, Threads, Instagram)?
+
+Do you write Ruby code? (Which features DHH prominently on [its home page](https://www.ruby-lang.org/).)
+
+Do you have an Android phone or use Google search or Gmail or write code in Go?
+
+(Etc.)
+
+&lt;p align=center&gt;* * *&lt;/p&gt;
+
+I use Apple stuff and write apps for Mac and iOS, after all, which means my work benefits Apple, which is doing far, far worse things than the MacStories folks could or would ever do.
+
+And yet here I am continuing to write apps for Apple platforms.
+
+Again, yes, it’s not just okay but proper to criticize public people for their tech choices, but I try to remember my own imperfect choices before I do. And, more importantly, I try to remember who the actual enemies are. (Trump, his oligarchs, ICE, Stephen Miller, every single Republican politician, etc.)
+
+These days we need all the righteous fury we can rally — and we also need the clarity to know where to focus it.</source:markdown>
+    </item>
+
+    <item>
+      <title>James Dempsey’s Breakpoints Jam in Seattle Aug. 20</title>
+      <link>https://xcoders.org/2026/08/14/james-dempsey-and-the-breakpoints.html</link>
+      <guid>https://inessential.com/2026/08/14/james-dempseys-breakpoints-jam.html</guid>
+      <pubDate>Fri, 14 Aug 2026 11:47:08 -0700</pubDate>
+      <description>&lt;p&gt;One of the highlights of any year for me is when I get to play in a &lt;a href=&quot;https://jamesdempsey.net/music&quot;&gt;James Dempsey&lt;/a&gt; Breakpoints Jam — and we’ve got one coming up in a few days!
+
+&lt;p&gt;It’s this Thursday Aug. 20 at Stoup Brewing in Ballard. Start gathering around 6 pm to hang with fellow Apple nerds. The show will start around 7 pm.
+
+&lt;p&gt;See the Xcoders post &lt;a href=&quot;https://xcoders.org/2026/08/14/james-dempsey-and-the-breakpoints.html&quot;&gt;James Dempsey and the Breakpoints Jam — More Details&lt;/a&gt; for the full scoop (including details on where at Stoup, the food truck, etc.).
+
+&lt;p&gt;This year’s band, the conditional Breakpoints, will be me, Laura Savino, and Ken Case. We’ve played together in various configurations before — the Seattle band works. 😎
+
+&lt;p&gt;If you live in or near Seattle, I really hope you can make it! And say hi. I’m friendly. So’s everybody in the band. 🏝️</description>
+      <source:markdown>One of the highlights of any year for me is when I get to play in a [James Dempsey](https://jamesdempsey.net/music) Breakpoints Jam — and we’ve got one coming up in a few days!
+
+It’s this Thursday Aug. 20 at Stoup Brewing in Ballard. Start gathering around 6 pm to hang with fellow Apple nerds. The show will start around 7 pm.
+
+See the Xcoders post [James Dempsey and the Breakpoints Jam — More Details](https://xcoders.org/2026/08/14/james-dempsey-and-the-breakpoints.html) for the full scoop (including details on where at Stoup, the food truck, etc.).
+
+This year’s band, the conditional Breakpoints, will be me, Laura Savino, and Ken Case. We’ve played together in various configurations before — the Seattle band works. 😎
+
+If you live in or near Seattle, I really hope you can make it! And say hi. I’m friendly. So’s everybody in the band. 🏝️</source:markdown>
+    </item>
+
+    <item>
+      <title>New NetNewsWire Crash in iOS 27 Beta Has Made Me a Bit Salty</title>
+      <link>https://inessential.com/2026/07/23/ios-27-nnw-crash.html</link>
+      <guid>https://inessential.com/2026/07/23/ios-27-nnw-crash.html</guid>
+      <pubDate>Thu, 23 Jul 2026 10:52:45 -0700</pubDate>
+      <description>&lt;p&gt;I returned from a lovely summer vacation (family, beach) to find that iOS 27 beta has fucked up the transition between split view and compact — I’ve got a boatload of crashes, mostly on Pro Max devices and a few on iPad.
+
+&lt;p&gt;Here’s a &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/issues/5371&quot;&gt;representative crash log&lt;/a&gt;. The feedback in TestFlight all talks about rotating the phone.
+
+&lt;p&gt;Here’s the thing: iOS app development (and Mac, but to a lesser extent) is just constant churn. I thought I was getting a year off this year! But nope. There’s always something.
+
+&lt;p&gt;My theory is that the automatic split view collapsing, which NetNewsWire uses, is just no longer an option, and I’ll have to specify a separate compact view controller.
+
+&lt;p&gt;So that’s just a bunch more work and testing, including testing on previous iOS versions (we go back to iOS 17), and &lt;em&gt;not&lt;/em&gt; improvements like performance enhancements and new features. It’s just treading water. It’s a waste of time. For what reason? Why?
+
+&lt;p&gt;&lt;strong&gt;Update the next day (24 July 2026):&lt;/strong&gt; This bug appears to be have been fixed by Apple in &lt;a href=&quot;https://betawiki.net/wiki/IOS_27.0_build_24A5390f&quot;&gt;iOS 27 beta 4 build 24A5390f&lt;/a&gt;, released July 20, before my report here. I can confirm that I’ve not seen this crash in this new build.
+
+&lt;p&gt;Thank you to the team that prioritized and fixed this!</description>
+      <source:markdown>I returned from a lovely summer vacation (family, beach) to find that iOS 27 beta has fucked up the transition between split view and compact — I’ve got a boatload of crashes, mostly on Pro Max devices and a few on iPad.
+
+Here’s a [representative crash log](https://github.com/Ranchero-Software/NetNewsWire/issues/5371). The feedback in TestFlight all talks about rotating the phone.
+
+Here’s the thing: iOS app development (and Mac, but to a lesser extent) is just constant churn. I thought I was getting a year off this year! But nope. There’s always something.
+
+My theory is that the automatic split view collapsing, which NetNewsWire uses, is just no longer an option, and I’ll have to specify a separate compact view controller.
+
+So that’s just a bunch more work and testing, including testing on previous iOS versions (we go back to iOS 17), and *not* improvements like performance enhancements and new features. It’s just treading water. It’s a waste of time. For what reason? Why?
+
+**Update the next day (24 July 2026):** This bug appears to be have been fixed by Apple in [iOS 27 beta 4 build 24A5390f](https://betawiki.net/wiki/IOS_27.0_build_24A5390f), released July 20, before my report here. I can confirm that I’ve not seen this crash in this new build.
+
+Thank you to the team that prioritized and fixed this!</source:markdown>
+    </item>
+
+    <item>
+      <title>NetNewsWire Status</title>
+      <link>https://inessential.com/2026/06/15/netnewswire-status.html</link>
+      <guid>https://inessential.com/2026/06/15/netnewswire-status.html</guid>
+      <pubDate>Mon, 15 Jun 2026 12:12:24 -0700</pubDate>
+      <description>&lt;p&gt;It’s been a year since I retired — my &lt;a href=&quot;https://inessential.com/2025/06/06/retirement-day.html&quot;&gt;last working day&lt;/a&gt; was June 6, 2025 — and I like being able to say that I’ve spent the year adding nothing, not one penny, to shareholder value. 🌴
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+&lt;p&gt;My hope for retirement was to get a lot of work done on &lt;a href=&quot;https://netnewswire.com/&quot;&gt;NetNewsWire&lt;/a&gt;.
+
+&lt;p&gt;A year ago it was in sore need of modernization, tech debt pay-off, and bug fixes. People were asking for features, but the foundation needed a ton of work before I could get on to adding new rooms.
+
+&lt;p&gt;Here are some highlights of what we’ve done with 2,188 commits in the past year:
+
+&lt;ul&gt;
+&lt;li&gt;Adopted Swift structured concurrency and async/await
+&lt;li&gt;Adopted Liquid Glass UI while still supporting recent OSes
+&lt;li&gt;Ported our XML, HTML, and date parsers from Objective-C to Swift
+&lt;li&gt;Fixed a ton of bugs, including crashing bugs
+&lt;li&gt;Reduced battery use, memory use, hang rate, scroll hitch rate, and disk writes
+&lt;li&gt;Did a bunch of performance enhancements, including (especially) finding places where the app could just do less work
+&lt;li&gt;Did a bunch of hygiene things — got GitHub CI running again, started using SwiftLint, turned on treat-warnings-as-errors, started work on localizability, switched to Logger, added tests
+&lt;li&gt;Simplified and refactored code, deleted code, renamed things, etc. — gained clarity in a bunch of places
+&lt;li&gt;Added support for Cache-Control headers for feeds, so publishers can tune how often NetNewsWire checks their feeds
+&lt;li&gt;Optimized iCloud syncing (still more to do on that one)
+&lt;li&gt;Dealt with deprecations (switched to &lt;code&gt;NWPathMonitor&lt;/code&gt;, for instance)
+&lt;li&gt;Added diagnostics and error reporting to the UI — &lt;a href=&quot;https://netnewswire.com/help/optimize-icloud.html&quot;&gt;iCloud Storage Stats&lt;/a&gt; and the &lt;a href=&quot;https://netnewswire.com/help/error-log.html&quot;&gt;Error Log&lt;/a&gt; are shipping, and more like these are currently in beta: &lt;a href=&quot;https://netnewswire.com/help/dinosaurs.html&quot;&gt;Dinosaurs&lt;/a&gt;, &lt;a href=&quot;https://netnewswire.com/help/current-activity.html&quot;&gt;Current Activity&lt;/a&gt;, &lt;a href=&quot;https://netnewswire.com/help/activity-log.html&quot;&gt;Activity Log&lt;/a&gt;, and &lt;a href=&quot;https://netnewswire.com/help/account-stats.html&quot;&gt;Account Stats&lt;/a&gt;.
+&lt;/ul&gt;
+
+&lt;p&gt;A list of highlights means I’m glossing over — or not even mentioning — things I really want to tell you about!
+
+&lt;p&gt;For instance, at one point I got frustrated with how I was handling Mac crash logs, so I wrote a little system that downloads them from my server and does symbolication. It’s simple but it makes a big difference — and it means &lt;em&gt;not&lt;/em&gt; migrating to some commercial system, and having to add their SDK to the app, for this.
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+&lt;p&gt;That last bullet point, the one with all the links, is all about giving users insight into what’s happening so that, when the app doesn’t behave as they expect, they can see what’s going on.
+
+&lt;p&gt;Even when they can’t fix the problem themselves, they can at least then copy-and-paste and tell me what’s up so I don’t have to guess. Between this and various bug fixes and improvements I’m able to spend less time on support, which means more time for coding — and, eventually, more time for the new features people are asking for.
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+&lt;p&gt;We’re not done with foundational work, but it’s getting close. It’s so much nicer working on this app now than it was a year ago, and I’m so glad we spent the year this way.
+
+&lt;p&gt;I say &lt;em&gt;we&lt;/em&gt; on purpose — I may contribute the most, but we have a bunch of &lt;a href=&quot;https://github.com/Ranchero-Software/NetNewsWire/graphs/contributors?from=6%2F14%2F2025&quot;&gt;other contributors&lt;/a&gt;, and I thank them all for all their much-appreciated help. Our most prolific contributor after me is &lt;a href=&quot;https://stuartbreckenridge.net/&quot;&gt;Stuart Breckenridge&lt;/a&gt;, who did the Liquid Glass work (among other things) — and who has a new browser-based &lt;a href=&quot;https://gobbler.press/&quot;&gt;RSS reader named Gobbler&lt;/a&gt; that you should check out!
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+&lt;p&gt;PS In the past year we also switched from Slack to a &lt;a href=&quot;https://discourse.netnewswire.com/&quot;&gt;Discourse forum&lt;/a&gt;, so support and discussions can be on the web instead of hidden away. 😀</description>
+      <source:markdown>It’s been a year since I retired — my [last working day](https://inessential.com/2025/06/06/retirement-day.html) was June 6, 2025 — and I like being able to say that I’ve spent the year adding nothing, not one penny, to shareholder value. 🌴
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+My hope for retirement was to get a lot of work done on [NetNewsWire](https://netnewswire.com/).
+
+A year ago it was in sore need of modernization, tech debt pay-off, and bug fixes. People were asking for features, but the foundation needed a ton of work before I could get on to adding new rooms.
+
+Here are some highlights of what we’ve done with 2,188 commits in the past year:
+
+* Adopted Swift structured concurrency and async/await
+* Adopted Liquid Glass UI while still supporting recent OSes
+* Ported our XML, HTML, and date parsers from Objective-C to Swift
+* Fixed a ton of bugs, including crashing bugs
+* Reduced battery use, memory use, hang rate, scroll hitch rate, and disk writes
+* Did a bunch of performance enhancements, including (especially) finding places where the app could just do less work
+* Did a bunch of hygiene things — got GitHub CI running again, started using SwiftLint, turned on treat-warnings-as-errors, started work on localizability, switched to Logger, added tests
+* Simplified and refactored code, deleted code, renamed things, etc. — gained clarity in a bunch of places
+* Added support for Cache-Control headers for feeds, so publishers can tune how often NetNewsWire checks their feeds
+* Optimized iCloud syncing (still more to do on that one)
+* Dealt with deprecations (switched to `NWPathMonitor`, for instance)
+* Added diagnostics and error reporting to the UI — [iCloud Storage Stats](https://netnewswire.com/help/optimize-icloud.html) and the [Error Log](https://netnewswire.com/help/error-log.html) are shipping, and more like these are currently in beta: [Dinosaurs](https://netnewswire.com/help/dinosaurs.html), [Current Activity](https://netnewswire.com/help/current-activity.html), [Activity Log](https://netnewswire.com/help/activity-log.html), and [Account Stats](https://netnewswire.com/help/account-stats.html). 
+
+A list of highlights means I’m glossing over — or not even mentioning — things I really want to tell you about!
+
+For instance, at one point I got frustrated with how I was handling Mac crash logs, so I wrote a little system that downloads them from my server and does symbolication. It’s simple but it makes a big difference — and it means *not* migrating to some commercial system, and having to add their SDK to the app, for this.
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+That last bullet point, the one with all the links, is all about giving users insight into what’s happening so that, when the app doesn’t behave as they expect, they can see what’s going on.
+
+Even when they can’t fix the problem themselves, they can at least then copy-and-paste and tell me what’s up so I don’t have to guess. Between this and various bug fixes and improvements I’m able to spend less time on support, which means more time for coding — and, eventually, more time for the new features people are asking for.
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+We’re not done with foundational work, but it’s getting close. It’s so much nicer working on this app now than it was a year ago, and I’m so glad we spent the year this way.
+
+I say *we* on purpose — I may contribute the most, but we have a bunch of [other contributors](https://github.com/Ranchero-Software/NetNewsWire/graphs/contributors?from=6%2F14%2F2025), and I thank them all for all their much-appreciated help. Our most prolific contributor after me is [Stuart Breckenridge](https://stuartbreckenridge.net/), who did the Liquid Glass work (among other things) — and who has a new browser-based [RSS reader named Gobbler](https://gobbler.press/) that you should check out!
+
+&lt;p style=&quot;text-align:center&quot;&gt;* * *&lt;/p&gt;
+
+PS In the past year we also switched from Slack to a [Discourse forum](https://discourse.netnewswire.com/), so support and discussions can be on the web instead of hidden away. 😀</source:markdown>
+    </item>
+
+    <item>
+      <title>Seattle Xcoders Presentation by Justin Miller Tonight</title>
+      <link>https://inessential.com/2026/06/04/xcoders-justin-miller.html</link>
+      <guid>https://inessential.com/2026/06/04/xcoders-justin-miller.html</guid>
+      <pubDate>Thu, 04 Jun 2026 09:23:00 -0700</pubDate>
+      <description>&lt;p&gt;I’m psyched for &lt;a href=&quot;https://mastodon.social/@incanus&quot;&gt;@incanus&lt;/a&gt; Justin Miller’s presentation tonight at Xcoders on “Swift Result Builders Case Study: Parsing.” I like writing parsers, and I’m very curious about Swift result builders. Should be a good one!
+
+&lt;p&gt;See this &lt;a href=&quot;https://xcoders.org/2026/06/01/xcoders-presentation-with-justin-miller.html&quot;&gt;post on the Xcoders blog&lt;/a&gt; for more details about the talk and for when and where to be.</description>
+      <source:markdown>I’m psyched for [@incanus](https://mastodon.social/@incanus) Justin Miller’s presentation tonight at Xcoders on “Swift Result Builders Case Study: Parsing.” I like writing parsers, and I’m very curious about Swift result builders. Should be a good one!
+
+See this [post on the Xcoders blog](https://xcoders.org/2026/06/01/xcoders-presentation-with-justin-miller.html) for more details about the talk and for when and where to be.</source:markdown>
+    </item>
+
+    <item>
+      <title>I Tried to Explain What I Do</title>
+      <link>https://inessential.com/2026/03/03/i-tried-to-explain-what-i-do.html</link>
+      <guid>https://inessential.com/2026/03/03/i-tried-to-explain-what-i-do.html</guid>
+      <pubDate>Tue, 03 Mar 2026 09:15:08 -0800</pubDate>
+      <description>&lt;p&gt;I’ve known for decades that most of family and friends (except for family and friends in tech) have no idea what I do — they just think it’s math-heavy and mysterious.
+
+&lt;p&gt;Well. It’s definitely not math-heavy and it shouldn’t be mysterious. So I figured I’d write up &lt;a href=&quot;https://inessential.com/what-i-do.html&quot;&gt;What I Do&lt;/a&gt;.
+
+&lt;p&gt;Even if I never actually send this page around to everybody — because that would actually be kind of weird, like giving them homework to understand &lt;em&gt;me&lt;/em&gt;, me who suddenly (suddenly?) seems like a complete narcissist — it was a good exercise for me to do anyway. Especially the part about explaining why I write NetNewsWire.</description>
+      <source:markdown>I’ve known for decades that most of family and friends (except for family and friends in tech) have no idea what I do — they just think it’s math-heavy and mysterious.
+
+Well. It’s definitely not math-heavy and it shouldn’t be mysterious. So I figured I’d write up [What I Do](https://inessential.com/what-i-do.html).
+
+Even if I never actually send this page around to everybody — because that would actually be kind of weird, like giving them homework to understand *me*, me who suddenly (suddenly?) seems like a complete narcissist — it was a good exercise for me to do anyway. Especially the part about explaining why I write NetNewsWire.</source:markdown>
+    </item>
+
+    <item>
+      <title>Seattle Xcoders Talks This Week Considered Unmissable</title>
+      <link>https://inessential.com/2026/03/02/seattle-xcoders-talks.html</link>
+      <guid>https://inessential.com/2026/03/02/seattle-xcoders-talks.html</guid>
+      <pubDate>Mon, 02 Mar 2026 11:09:01 -0800</pubDate>
+      <description>&lt;p&gt;The title is a little over the top, but barely — we have two fantastic talks this Thursday (March 5) that you should go to. (I’ll be there!)
+
+&lt;p&gt;&lt;a href=&quot;https://xcoders.org/2026/02/27/xcoders-talk-by-laura-savino.html&quot;&gt;Laura Savino will present&lt;/a&gt; “Learn Out Loud”:
+
+&lt;blockquote&gt;
+&lt;p&gt;As devs today, we’re supposed to demonstrate immediate skills in tools whose configs change once a fortnight, while shipping cutting-edge features in long-standing apps (that may still have a legacy bug or two). Laura is a trained teacher and Photoshop engineer who brings humor and solidarity to today’s dev environment with concrete advice on the mechanics of real learning and change, including encouraging without proselytizing, being vulnerable about what you don’t know, and staying curious amidst existential dread.
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you’ve seen Laura talk before, then you know how good she is, and you know how you come away with insights and ways to be a better engineer and better human-who-works-with-people. Every single time.
+
+&lt;p&gt;This is one of those very rare chances to see Laura in a small setting before she does this talk at a conference keynote. Like seeing the Beatles in a small bar in Liverpool, only it’s Laura in Seattle. 🎸
+
+&lt;p&gt;&lt;a href=&quot;https://xcoders.org/2026/03/02/xcoders-talk-by-jake-savin.html&quot;&gt;Jake Savin will present&lt;/a&gt; a talk on using Claude to do a really big ambitious job — rebuilding UserLand Frontier as a modern app:
+
+&lt;blockquote&gt;
+&lt;p&gt;It’s a huge job and Jake’s made a ton of progress — and he’s learned a lot about how to use Claude to make these kinds of projects work. As we learn to use LLMs to do more and more ambitious things, we’ll be walking in Jake’s footsteps. Jake will provide a map of this new territory.
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m not the only one to have a try — more than one try, actually, as recently as last year — at rebuilding Frontier. It took Jake and Claude together to make this work (and it’s not done yet, but &lt;em&gt;far&lt;/em&gt; advanced from any previous try).
+
+&lt;p&gt;I’m so ready to have Frontier back in my toolbox — and ready to learn from Jake on how he’s making this happen.
+
+&lt;p&gt;What’s Frontier?
+
+&lt;blockquote&gt;
+&lt;p&gt;UserLand Frontier is &lt;a href=&quot;http://scripting.com/&quot;&gt;Dave Winer&lt;/a&gt;’s app from the ’90s, and it was with that app that Dave invented and/or fleshed-out and popularized much of the open web that we take for granted today: blogs, RSS, podcasts, and web services, for starters. This is a historically important piece of software, and Jake is bringing it to the modern age.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Anyway — here’s the scoop on where and when to be:
+
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;&lt;br&gt;
+North Seattle College &lt;br&gt;
+9600 College Way N
+
+&lt;p&gt;Room LB 1106 in the library
+
+&lt;p&gt;&lt;strong&gt;When&lt;/strong&gt;&lt;br&gt;
+Thursday, March 5, 2026&lt;br&gt;
+6:30 pm — gather and mingle&lt;br&gt; 
+7:00 pm — watch Jake’s and Laura’s talks
+
+&lt;p&gt;For anyone who wants to hang out after — we go to the nearby &lt;a href=&quot;https://www.watershedpub.com/&quot;&gt;Watershed Pub and Kitchen&lt;/a&gt; (all ages friendly).</description>
+      <source:markdown>The title is a little over the top, but barely — we have two fantastic talks this Thursday (March 5) that you should go to. (I’ll be there!)
+
+[Laura Savino will present](https://xcoders.org/2026/02/27/xcoders-talk-by-laura-savino.html) “Learn Out Loud”:
+
+&gt; As devs today, we’re supposed to demonstrate immediate skills in tools whose configs change once a fortnight, while shipping cutting-edge features in long-standing apps (that may still have a legacy bug or two). Laura is a trained teacher and Photoshop engineer who brings humor and solidarity to today’s dev environment with concrete advice on the mechanics of real learning and change, including encouraging without proselytizing, being vulnerable about what you don’t know, and staying curious amidst existential dread.
+
+If you’ve seen Laura talk before, then you know how good she is, and you know how you come away with insights and ways to be a better engineer and better human-who-works-with-people. Every single time.
+
+This is one of those very rare chances to see Laura in a small setting before she does this talk at a conference keynote. Like seeing the Beatles in a small bar in Liverpool, only it’s Laura in Seattle. 🎸
+
+[Jake Savin will present](https://xcoders.org/2026/03/02/xcoders-talk-by-jake-savin.html) a talk on using Claude to do a really big ambitious job — rebuilding UserLand Frontier as a modern app:
+
+&gt; It’s a huge job and Jake’s made a ton of progress — and he’s learned a lot about how to use Claude to make these kinds of projects work. As we learn to use LLMs to do more and more ambitious things, we’ll be walking in Jake’s footsteps. Jake will provide a map of this new territory.
+
+I’m not the only one to have a try — more than one try, actually, as recently as last year — at rebuilding Frontier. It took Jake and Claude together to make this work (and it’s not done yet, but *far* advanced from any previous try).
+
+I’m so ready to have Frontier back in my toolbox — and ready to learn from Jake on how he’s making this happen.
+
+What’s Frontier?
+
+&gt; UserLand Frontier is [Dave Winer](http://scripting.com/)’s app from the ’90s, and it was with that app that Dave invented and/or fleshed-out and popularized much of the open web that we take for granted today: blogs, RSS, podcasts, and web services, for starters. This is a historically important piece of software, and Jake is bringing it to the modern age.
+
+Anyway — here’s the scoop on where and when to be:
+
+**Where**&lt;br&gt;
+North Seattle College &lt;br&gt;
+9600 College Way N
+
+Room LB 1106 in the library
+
+**When**&lt;br&gt;
+Thursday, March 5, 2026&lt;br&gt;
+6:30 pm — gather and mingle&lt;br&gt; 
+7:00 pm — watch Jake’s and Laura’s talks
+
+For anyone who wants to hang out after — we go to the nearby [Watershed Pub and Kitchen](https://www.watershedpub.com/) (all ages friendly).</source:markdown>
+    </item>
+
+    
+  </channel>
+</rss>

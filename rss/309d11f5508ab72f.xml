@@ -38,7 +38,7 @@ xmlns:wfw="http://wellformedweb.org/CommentAPI/">
 docker compose pull &amp;&amp; docker compose up -d   # 升级（数据在卷里，不受影响）
 docker compose logs -f        # 看日志</code></pre><p>浏览器打开 <code>http://服务器IP:8080</code>，走安装向导建管理员账号。</p><table><thead><tr><th>项</th><th>值</th><th>为什么</th></tr></thead><tbody><tr><td>端口</td><td>容器 <code>80</code> → 宿主 <code>8080</code></td><td>宿主端口随意改</td></tr><tr><td>数据卷</td><td><code>/var/www/html/data</code></td><td><strong>必须挂出来</strong>，不挂容器一删数据就没</td></tr><tr><td>站点地址</td><td><code>RH_SITE_URL</code></td><td>不填推送会降级成纯文本（拼不出菜谱链接）</td></tr><tr><td>反代</td><td>传 <code>X-Forwarded-Proto</code></td><td>PHP 靠它判断原始协议，决定 Cookie 是否加 Secure</td></tr></tbody></table>
 ]]></content:encoded>
-<slash:comments>54</slash:comments>
+<slash:comments>55</slash:comments>
 <comments>https://xyzbz.cn/archives/1586/#comments</comments>
 <wfw:commentRss>https://xyzbz.cn/feed/archives/1586/</wfw:commentRss>
 </item>

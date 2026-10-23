@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Thu, 22 Oct 2026 14:36:29 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 23 Oct 2026 21:00:55 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,63 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>Friday Squid Blogging: Increasing Squid Populations</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html#respond</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2026 21:00:09 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[squid]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72718</guid>
+
+					<description><![CDATA[<p>This <a href="https://www.sciencealert.com/squid-are-taking-over-the-ocean-and-not-for-the-reason-you-might-think">article</a> in <i>Nature</i> argues that it&#8217;s due to an overfishing of predators and warming sea temperatures.</p>
+<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>
+<p><a href="https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html">Blog moderation policy.</a></p>
+]]></description>
+										<content:encoded><![CDATA[<p>This <a href="https://www.sciencealert.com/squid-are-taking-over-the-ocean-and-not-for-the-reason-you-might-think">article</a> in <i>Nature</i> argues that it&#8217;s due to an overfishing of predators and warming sea temperatures.</p>
+<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>
+<p><a href="https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html">Blog moderation policy.</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72718</post-id>	</item>
+		<item>
+		<title>Compromised TLS Certificates</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html#comments</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2026 11:04:22 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[India]]></category>
+		<category><![CDATA[keys]]></category>
+		<category><![CDATA[TLS]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72835</guid>
+
+					<description><![CDATA[<p>The Indian CA eMudhra Limited has eight TLS certificates with <a href="https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/">laughably weak private keys</a>:</p>
+<blockquote><p>The compromised eMudhra keys were defective at a level that’s challenging the imagination of many of the engineers studying the incident. A normal size for a NIST P-384 elliptic curve cryptography private key contains roughly 384 bits of entropy, a size allowing almost 2<sup>384</sup>, or a number with 116 digits, different possibilities. The private key sizes of the compromised keys ranged from 3 to 8 bits. Astonishingly, the private keys were 4, 56, 66, 115, 155, 156, 230, 237...</p></blockquote>]]></description>
+										<content:encoded><![CDATA[<p>The Indian CA eMudhra Limited has eight TLS certificates with <a href="https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/">laughably weak private keys</a>:</p>
+<blockquote><p>The compromised eMudhra keys were defective at a level that’s challenging the imagination of many of the engineers studying the incident. A normal size for a NIST P-384 elliptic curve cryptography private key contains roughly 384 bits of entropy, a size allowing almost 2<sup>384</sup>, or a number with 116 digits, different possibilities. The private key sizes of the compromised keys ranged from 3 to 8 bits. Astonishingly, the private keys were 4, 56, 66, 115, 155, 156, 230, 237.</p>
+<p>&#8220;That is extremely in the &#8216;this should not be possible&#8217; category,&#8221; Valdorda said. &#8220;Maybe some horribly dangerous key generation interface has a ‘size’ parameter and they set it to 1 by mistake???&#8221;</p>
+<p>Ben Cartwright-Cox, director of BGP.tools, said: &#8220;My guess is that it’s example code that accidentally leaked to production, but hard to know. But it’s bonkers that no one noticed.&#8221;</p>
+<p>At this early stage, the most immediate threat appears to be for those using VPNs, especially in countries with governments likely to maliciously intercept traffic. There are likely many other cases for concern. End users largely have no recourse other than to hold off using many non-browser forms of TLS communication until they receive assurances updates are in place.</p></blockquote>
+<p>The whole certificate regime has long been a mess:</p>
+<blockquote><p>The incident is the latest to expose a fatal flaw in the TLS regimen. It’s only as strong as its weakest link, which in this case was eMudhra. Fortunately, transparency logs account for much of that failure, but this measure requires parties to actively monitor massive feeds and works only after unauthorized certificates have been issued. eMudhra representatives weren’t immediately available to answer questions.</p>
+<p>One caveat: exploiting compromised certificates requires an active adversary-in-the-middle attack, meaning the attacker must act as a proxy between two TLS parties and receive encrypted traffic, decrypt it, reencrypt it, and send it to the other party. Such capabilities, in some cases, are usually limited to only the most well-resourced attackers. People with control of a local network­at a coffee shop, university, or other organization­face much less of a challenge.</p></blockquote>
+<p>Cleanup of this is going to be another mess&#8212;and it&#8217;s right on top of the PHP vulnerabilities.</p>
+<p><a href="https://blog.talosintelligence.com/compromised-intermediate-certificates/">Some</a> <a href="https://www.paloaltonetworks.com/cyberpedia/what-is-a-tls-certificate-risk">more</a> <a href="https://blog.cloudflare.com/emudhra-certificate-compromise/">information</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72835</post-id>	</item>
+		<item>
 		<title>New Serious PHP Vulnerabilities Released and Patched</title>
 		<link>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html#comments</comments>
@@ -56,7 +113,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html/feed/</wfw:commentRss>
-			<slash:comments>14</slash:comments>
+			<slash:comments>18</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72830</post-id>	</item>
@@ -168,7 +225,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html/feed/</wfw:commentRss>
-			<slash:comments>22</slash:comments>
+			<slash:comments>26</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72715</post-id>	</item>
@@ -260,62 +317,5 @@
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72771</post-id>	</item>
-		<item>
-		<title>The Future of AI Cryptanalysis</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Wed, 14 Oct 2026 14:24:18 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[cryptanalysis]]></category>
-		<category><![CDATA[cryptography]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72777</guid>
-
-					<description><![CDATA[<p>Matthew Green <a href="https://x.com/matthew_d_green/status/2107992246360649879">has</a> <a href="https://x.com/matthew_d_green/status/2108278850555674975?s=46">been</a> <a href="https://x.com/matthew_d_green/status/2108552414978564418">writing</a> a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in cryptanalysis of both symmetric and public-key ciphers.</p>
-<p>I am more optimistic than he is. That is, I have stronger faith in the over-engineering cryptographers tend to do. I am trying to write this up in more detail.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>Matthew Green <a href="https://x.com/matthew_d_green/status/2107992246360649879">has</a> <a href="https://x.com/matthew_d_green/status/2108278850555674975?s=46">been</a> <a href="https://x.com/matthew_d_green/status/2108552414978564418">writing</a> a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in cryptanalysis of both symmetric and public-key ciphers.</p>
-<p>I am more optimistic than he is. That is, I have stronger faith in the over-engineering cryptographers tend to do. I am trying to write this up in more detail.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html/feed/</wfw:commentRss>
-			<slash:comments>16</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72777</post-id>	</item>
-		<item>
-		<title>Cyberattack on Connected Fridges in France</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Wed, 14 Oct 2026 14:10:22 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[cyberattack]]></category>
-		<category><![CDATA[cybercrime]]></category>
-		<category><![CDATA[France]]></category>
-		<category><![CDATA[Internet of Things]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72774</guid>
-
-					<description><![CDATA[<p>Another IoT <a href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">cyberattack</a>, this one in France:</p>
-<blockquote><p>Hackers gained control of the software that regulates the temperatures of the refrigeration units, forcing some to warm to 50C (120F) overnight, according to one supermarket chain affected.</p>
-<p>[&#8230;]</p>
-<p>Normally, supermarket freezers go through a short period of defrosting overnight, in which temperatures rise slightly. But the hackers ordered the units to heat up and stay hot, although Danfoss did not confirm any reports about just how warm the fridges and freezers could become in that process.</p>
-<p>Danfoss said the affected cold units were older models whose security software could not be updated to ward off a risk they had identified...</p></blockquote>]]></description>
-										<content:encoded><![CDATA[<p>Another IoT <a href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">cyberattack</a>, this one in France:</p>
-<blockquote><p>Hackers gained control of the software that regulates the temperatures of the refrigeration units, forcing some to warm to 50C (120F) overnight, according to one supermarket chain affected.</p>
-<p>[&#8230;]</p>
-<p>Normally, supermarket freezers go through a short period of defrosting overnight, in which temperatures rise slightly. But the hackers ordered the units to heat up and stay hot, although Danfoss did not confirm any reports about just how warm the fridges and freezers could become in that process.</p>
-<p>Danfoss said the affected cold units were older models whose security software could not be updated to ward off a risk they had identified.</p></blockquote>
-<p>Any IoT device that can&#8217;t be updated is vulnerable. And, probably, any IoT device that <i>can</i> be updated is also vulnerable.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html/feed/</wfw:commentRss>
-			<slash:comments>10</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72774</post-id>	</item>
 	</channel>
 </rss>

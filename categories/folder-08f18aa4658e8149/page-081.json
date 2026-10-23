@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "1c4b7ff58fcf1b8bfdbb571d",
+      "title": "x86-64汇编学习笔记",
+      "summary": "机器指令和机器语言 机器指令，二进制数字，机器语言全局机器指令的集合，CPU通过执行一系列的机器指令完成计算工作。 汇编语言就是为了代替机器指令，使人类能够更加简单地编写程序而诞生的。汇编语言就是机器码的助记符。 编译器将汇编代码再编译为真正的机器码。 内存与硬盘 内存指内存条，即RAM，临时存储，读写快容量小。 硬盘长期存储，读写慢但容量大。 ROM并非硬盘 ，ROM 只读存储器 （Read Only Memory），其内容在写入后就不能更改。 存储单元 物理内存被划分为很多个存储单元，一个存储单元能存储8bit内容，也就是1字节。 内存的最小单元是字节，不是位。 1B = 8bit 1KB = 1024B 1MB = 1024KB …… 每一个存储单元都有相应的编号，也就是内存地址。运行程序时，操作系统会…",
+      "image": "https://images.glowisle.me/image-20250429142959416.webp",
+      "publishedAt": "2025-04-29T13:44:13Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/x86-64%E6%B1%87%E7%BC%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+      "detailPath": "articles/1c4b7ff58fcf1b8bfdbb571d.json"
+    },
+    {
+      "id": "74c4aa28fcc708c1b16aeef9",
+      "title": "WSL Arch Linux ZSH输入中文输入法乱码解决方法",
+      "summary": "没有进行配置的情况下输入中文，一般会显示<0xffffffff>，这是由于没有安装字体造成的。 sudo pacman -S noto-fonts-cjk # 安装中文字体 sudo vi /etc/locale.gen # 取消注释 zh_CN.UTF-8 sudo locale-gen # 生成语言环境 echo \"export LANG=zh_CN.UTF-8\" >> ~/.zshrc # 设置默认中文环境 source ~/.zshrc source后，再次尝试输入中文，无异常。",
+      "image": null,
+      "publishedAt": "2025-04-29T10:31:26Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/wsl-arch-linux-zsh%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/",
+      "detailPath": "articles/74c4aa28fcc708c1b16aeef9.json"
+    },
+    {
+      "id": "9dcfab896d6c14f14a8e3d0c",
+      "title": "Emacs EAF插件打开浏览器只显示opening http://xxx.xxx的解决方法",
+      "summary": "检查是否安装全部依赖，如yay、pip等。我这里是由于没有安装pip导致的。 sudo pacman -S python-pip 安装好后，进入eaf安装目录 cd ~/.emacs.d/site-lisp/emacs-application-framework && ./install-eaf.py 重新安装eaf。等待脚本运行完成，打开emacs，输入 M-x eaf-install-and-update ，等待执行完成。 重新输入 M-x eaf-open-browser ，输入网址，即可正常访问网页。",
+      "image": null,
+      "publishedAt": "2025-04-29T10:02:49Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/emacs-eaf%E6%8F%92%E4%BB%B6%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%AA%E6%98%BE%E7%A4%BAopening-http-xxx-xxx%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/",
+      "detailPath": "articles/9dcfab896d6c14f14a8e3d0c.json"
+    },
+    {
+      "id": "54002d8d73e9487f4e67a34b",
+      "title": "也許我們都是被埋沒的天才",
+      "summary": "想像一下如果牛頓沉迷手遊或莫札特整晚追劇...",
+      "image": null,
+      "publishedAt": "2025-04-29T08:14:16Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/boredom",
+      "detailPath": "articles/54002d8d73e9487f4e67a34b.json"
+    },
+    {
+      "id": "607a3859735262b9fe14f104",
+      "title": "四月｜物理掃除，賽博裝修",
+      "summary": "四月的倒數第二天是雷",
+      "image": null,
+      "publishedAt": "2025-04-29T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/apr-2025-recap/",
+      "detailPath": "articles/607a3859735262b9fe14f104.json"
+    },
+    {
+      "id": "c5b143ceaa13fd4fb33287a1",
+      "title": "FFmpeg",
+      "summary": "最近收到一封讀者來信。信裡提到他的一個困擾：",
+      "image": "https://wiwi.blog/assets/images/256videos-32-c33cf19af805456d27c0b5eb536fba73.png",
+      "publishedAt": "2025-04-29T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/ffmpeg",
+      "detailPath": "articles/c5b143ceaa13fd4fb33287a1.json"
+    },
+    {
+      "id": "05cb273119780f661af47e84",
+      "title": "打工记（五）",
+      "summary": "从新冠开始，大家如果稍微花两小时关注一下各种公司管理层的发言，可以发现绝大多数就是跟风，人云亦云，别的公司怎么搞我就怎么搞。上个月还在说我们要扩展市场积极招人，下个月就要收缩预算降本增效；去年以人为本 remote forever，今年就重视面对面的交流和 productivity；至于当下的流行，人人都知道，是 Gen AI。",
+      "image": null,
+      "publishedAt": "2025-04-28T23:48:58Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/roam/gravedigger-of-capitalism-05/",
+      "detailPath": "articles/05cb273119780f661af47e84.json"
+    },
+    {
       "id": "07a77d15d3552a42dcc08c16",
       "title": "怎么摸鱼的时候感觉更累呢",
       "summary": "为什么有时候觉得摸鱼的时候会很累，而且也不止一次这样了。 干活的时候倒是没这种感觉。 可能是心思都放在代码里，或者是令人焦头烂额的问题上。 等到突然无事可做的时候，就会开始摸鱼。 刷刷手机，看看视频，就这样循环往复，而且还要装作自己有事可做的样子。 时间一长。 神经变得放松，困意就会上来。目光变得呆滞，脑子也跟着混沌。 于是就在这种为了假装自己有事可做而挖空心思假装做事的状态，和实在是无聊不知道干嘛没有目标感的迷茫状态中来回切换。 心力交瘁，自然就觉得累了。 哈哈，看来我是真的牛马…",
@@ -582,83 +659,6 @@
       "sourceTitle": "金色河流",
       "link": "https://goldenriver.site/posts/2025-week-15/",
       "detailPath": "articles/edb627189f2c9821d4d41d9b.json"
-    },
-    {
-      "id": "4724270822ad901ef5af1734",
-      "title": "Quoi de neuf 018 入春再次失败",
-      "summary": "最近经常下一点雨，下一点雪，阴天也很多，可能自己期待天气转暖有点早了，所以希望落空就稍微有点心焦。 不过日常生活基本又恢复了常态——学语言、洗碗、备菜、做饭、练琴、看书。 这周做了胡萝卜蛋糕，食谱说是 Carrot Cake Loaf (Quick Bread)，刚开始不知道为啥叫括号快速面包，后来查了一下，发现这种用小苏打、泡打粉（而不是酵母）来帮助膨胀的点心就可以叫这个名字。 食谱作者说，我试过了，放 3/4 杯的糖的话，味道刚刚好，小于 2/3 杯的话，味道就会很寡淡。结果我只用了半杯不到的糖，结果还是挺甜的。果然人对甜味的标准太不一样了！ 不过蛋糕很成功，还热乎的时候吃尤其治愈，里面松松软软，不干，有点像小时候吃的枣泥蛋糕，但是没有那么甜，外面的稍微有点硬的壳非常香，被家属评选为最好吃的部位。笑。 自…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHUcGS14m3HBS1tCayE7XOEwQcLt9zpz5rVSKa_5mPFC-W_Ld0craamsgLXa_Oqp_ODmaJPoQJBKZz6Zo8erldqgAfmuQuo_UpVQ8wlNyzQxwtZdFpw9peVh2t7QOrXBvbInFuALYl5gulnfoSMGBmYbaKCXvaUsxo5oK6kpq8nbWfejJbBoHdUe7QKALY/s72-w400-h300-c/IMG_0068.JPG",
-      "publishedAt": "2025-04-12T19:26:00Z",
-      "sourceId": "ea32f15981b17f0f",
-      "sourceTitle": "小小日常",
-      "link": "https://www.joeyrambles.com/2025/04/quoi-de-neuf-017.html",
-      "detailPath": "articles/4724270822ad901ef5af1734.json"
-    },
-    {
-      "id": "083cbba4182acfb70ed4a1dc",
-      "title": "在猫的早叫中醒来的三月记 Vol.4",
-      "summary": "睡不好的夜晚，爱吃挑剔的猫，还有烤得刚刚好的欧包",
-      "image": null,
-      "publishedAt": "2025-04-12T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/mar-2025/",
-      "detailPath": "articles/083cbba4182acfb70ed4a1dc.json"
-    },
-    {
-      "id": "93c6d20245f6e42873356c26",
-      "title": "2025 Q1经济杂谈",
-      "summary": "已知的已知也可以是黑天鹅",
-      "image": "https://prologue.dev/static/images/China-US-Imports-and-Exports.png",
-      "publishedAt": "2025-04-12T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/2025-q1-economic-talk",
-      "detailPath": "articles/93c6d20245f6e42873356c26.json"
-    },
-    {
-      "id": "0059c7998bd5fa40f22275e6",
-      "title": "滿足者",
-      "summary": "根據心理學家 Barry Schwartz) 的理論，人在面對選擇時，可以分成兩種類型：",
-      "image": "https://wiwi.blog/assets/images/cat-2018-63ec8b97d96f8f9e48d8d98366ee8591.jpg",
-      "publishedAt": "2025-04-12T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/satisficers",
-      "detailPath": "articles/0059c7998bd5fa40f22275e6.json"
-    },
-    {
-      "id": "9f207896722ec14d468eb9bf",
-      "title": "osu!APIv1请求示例",
-      "summary": "前言 本文章使用Nodejs环境做演示。请求用户数据。代码中的APIKEY要在 osu官网‬ 申请。 const API_URL = \"osu.ppy.sh\"; const init = { k: \"YOUR_API_KEY\", type: \"string\", u: \"kyzzz5658\", }; const https = require(\"https\"); // 将参数序列化为查询字符串 const query = new URLSearchParams(init); const options = { hostname: API_URL, method: \"GET\", path: `/api/get_user?${query}` // 附加参数 }; const req = https.request(…",
-      "image": null,
-      "publishedAt": "2025-04-11T22:29:23Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/osu-apiv1%E8%AF%B7%E6%B1%82%E7%A4%BA%E4%BE%8B/",
-      "detailPath": "articles/9f207896722ec14d468eb9bf.json"
-    },
-    {
-      "id": "773b3ed10f35c6d454793976",
-      "title": "当 AI 成了我的学习搭子、朋友、同事",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-04-11T21:04:14Z",
-      "sourceId": "27898db8e4920870",
-      "sourceTitle": "孙玲在美国",
-      "link": "https://mp.weixin.qq.com/s/zJ1mRHyIKpLRSe00k8Sp8Q",
-      "detailPath": "articles/773b3ed10f35c6d454793976.json"
-    },
-    {
-      "id": "0d0759c295c5dae80fd92223",
-      "title": "我的攒钱计划",
-      "summary": "一个小目标，初三前攒够两千块。 实现难度是不大，已经有了八百多存款，微信里有一百多，一共900。每天早上父母会给我20元买早饭，省省，不吃了，每天稳定收入20。加上每月50 + 70的零花钱。 粗略估算一下： 现金：837.00 微信：100.59 支付宝：5.19 共 944.78 元 与目标差 1055.22 。 截止到今天（4月11日），这个月还剩 13 个工作日。 月底可获得 20 * 13 = 260。 共 944.78 + 260.00 = 970.78。 每月 120 零花钱 共 970.78 + 120 = 1090.78 与目标差 909.22 同理可得五月份月收入： 560 元，共计 1650.78 与目标相差 349.22 每月收入280，可得出七月份大概可以完成目标。 当然，这是最悲观…",
-      "image": null,
-      "publishedAt": "2025-04-11T20:13:20Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/%E6%88%91%E7%9A%84%E6%94%92%E9%92%B1%E8%AE%A1%E5%88%92/",
-      "detailPath": "articles/0d0759c295c5dae80fd92223.json"
     }
   ]
 }

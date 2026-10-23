@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "5d9ab7333063bf5c41ecbfca",
+      "title": "android异步操作总结",
+      "summary": "Android中经常会有一些操作比如网络请求，文件读写，数据库操作，比较耗时，我们需要将其放在非UI线程去处理，此时，我们需要处理任务前后UI的变化和交互。我们需要通过类似js中异步请求处理，这里总结我所了解到的，方便自己记忆，也方便别人的浏览。 AsyncTask new AysncTask().execute(); AsyncTask会按照流程执行在UI线程和一个耗时的任务线程。 1.onPreExecute() 执行预处理，它运行于UI线程，可以为后台任务做一些准备工作，比如绘制一个进度条控件。 2.doInBackground(Params…) 后台进程执行的具体计算在这里实现，doInBackground(Params…)是AsyncTask的关键，此方法必须重载。在这个方法内可以使用publish…",
+      "image": null,
+      "publishedAt": "2014-03-16T08:18:25Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
+      "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
+    },
+    {
+      "id": "1c139bd8e75283939d7dda72",
+      "title": "解决Ubuntu下Sublime text 3中文输入的问题",
+      "summary": "好久之前便听朋友说起Sublime Text这款软件很好用，终于这几天有空折腾，把软件给装起来了。用起来确实很不错，写代码很爽。 但是用了一段时间之后，我需要输入中文了，无论怎么切换输入法，都无法切换到中文。 网上搜索了一下，原来这是Bug。找解决方法吧。下面介绍我的解决方案，是大神cjacker解决成功的啦，我只是copy一下，方便大家在遇到这个问题的时候可以方便解决。 我的系统：ubuntu 13.04 我的输入法：fcitx sublime版本：3059 理论上支持 sublime text2/3 1.保存代码sublime-imfix.c /* sublime-imfix.c Use LD_PRELOAD to interpose some function to fix sublime input…",
+      "image": null,
+      "publishedAt": "2014-03-14T16:24:45Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2014-03-15-ubuntu-sublime-text-error/?utm_source=rss",
+      "detailPath": "articles/1c139bd8e75283939d7dda72.json"
+    },
+    {
+      "id": "e9f8e637af3d3fb54ca889a7",
+      "title": "去艺圃",
+      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
+      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
+      "publishedAt": "2014-02-27T01:59:29Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2014/02/26/go-yipu/",
+      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
+    },
+    {
+      "id": "0dfa29cd063255aa2c6bda7b",
+      "title": "【2013】我该如何存在",
+      "summary": "这篇年终总结竟然被我拖到2014年。 最近日程安排得太满，复习、结课，还剩几门实验没有做完，深深感觉这学期欠的太多，所以在最后一切都要偿还，力不从心。但再苦再累，2013年还是熬过去了。 每逢过年，不管是元旦还是春节，我总会有一种怅然若失的感觉，周边的人可能觉得这是个大家聚在一起的好机会，而我总是下意识地想逃避人群，避开饭席，避开跨年晚会。以往元旦能逃回家静一静，今年元旦只放一天，于是就在学校跨年，和一群好友去学校办的跨年篝火晚会凑热闹，零点一过，所有人都在说新年快乐，舞台上的人在喊，底下人有伴的就拥吻，或是拿起手机向远方发去祝福，而我下意识地竟然叹了一口气，经旁边朋友的提醒才发现2014肇始我说的第一句话是个“哎”。真不是个好的开始，不知道明年总结的时候会不会感叹自己做了一件错事。 这个开头略悲伤，但也到此…",
+      "image": null,
+      "publishedAt": "2014-01-02T07:19:20Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2014/01/01/year-2013/",
+      "detailPath": "articles/0dfa29cd063255aa2c6bda7b.json"
+    },
+    {
+      "id": "29400d3a1f4032070b945d8d",
+      "title": "2013年11月26日",
+      "summary": "最近一直在准备周末的考试：大物和概率论。常常在校门对面的肯德基复习到凌晨。 今早回宿舍的时候，抬头一看，久违的星星闪烁在朔秋的夜空中。我甚至可以隐约分辨出如素纱般轻柔的银河，如果没有月亮分占了半边天的光亮，能否",
+      "image": null,
+      "publishedAt": "2013-11-28T23:24:47Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2013/11/28/2013-11-26/",
+      "detailPath": "articles/29400d3a1f4032070b945d8d.json"
+    },
+    {
+      "id": "9137fc27907f85759cd08f40",
+      "title": "Nanoblock 大耳狗（相簿）",
+      "summary": "",
+      "image": "https://wiwi.blog/assets/images/cinna1-a2eab65b538179af705e31e9f5571ffd.jpg",
+      "publishedAt": "2013-11-25T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/nanoblock-cinnamoroll",
+      "detailPath": "articles/9137fc27907f85759cd08f40.json"
+    },
+    {
+      "id": "395b82125463d487bb3526ff",
+      "title": "自創曲-樹下",
+      "summary": "樹下.mp4 去年九月,因為當小香腸(鄉長)的關係,所以要弄教師節活動 因為戲有點短 所以我想寫一首歌充個兩分鐘也好 但我在那時候 會按的和弦不超過6個 也不懂樂理.拍子,甚至連和弦級數都不知道 然後就在一個禮拜內完成編曲+錄音 那時候我根本神經病吧,發癲才這樣做 最後在台上結果就是亂啊 但現在有一點點的功力 現在編曲應該好一些些吧 現在根本不敢聽當時的demo和live.. 當時屋中的一千人有人記得這段旋律嗎 應該沒有,, 最後 感謝那些在去年教師節前一個禮拜 被我抓來的幾個臨時演員 我想到我還沒好好謝謝你們呢",
+      "image": null,
+      "publishedAt": "2013-11-01T19:14:10Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/under-tree/",
+      "detailPath": "articles/395b82125463d487bb3526ff.json"
+    },
+    {
       "id": "270c878eccdb7988f41a672e",
       "title": "Android图像开源视图：SmartImageView",
       "summary": "项目需要，开发中需要加载图片，自己要写图片从网上下载的方法，还要写缓存，等等。 在网上找到一个开源项目，smartImageVIew，支持从URL和通讯录中获取图像，可以替代Android标准的ImageView。 特征： 根据URL地址装载图像； 支持装载通讯录中的图像； 支持异步装载； 支持缓存； 这个是作者的项目主页，有使用方法。 http://loopj.com/android-smart-image-view/ 下载作者的jar包导入项目后，在xml中加入控件 <com.loopj.android.image.SmartImageView android:id=\"@+id/my_image\" /> 代码里找到该控件 SmartImageView myImage = (SmartImageView)…",
@@ -582,83 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/federer-lost",
       "detailPath": "articles/6a0750fee8b0bd0da8eb4124.json"
-    },
-    {
-      "id": "826f0d0f1c7281a9612e0ba4",
-      "title": "15 樓有夕陽",
-      "summary": "好吧，相機不夠好，其實拍下來沒有很好看，而且下面的房子和廣告招牌們有一點破壞氣氛。不過現場的感覺還是不錯的拉！",
-      "image": "https://wiwi.blog/assets/images/sunset-34cb7981484e7afe5371360cbd78c162.jpg",
-      "publishedAt": "2008-07-04T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/15f-sunset",
-      "detailPath": "articles/826f0d0f1c7281a9612e0ba4.json"
-    },
-    {
-      "id": "fa80b6969bb87388f544e720",
-      "title": "溫布頓好好看",
-      "summary": "不曉得最近有沒有人跟我一樣每天盯著 StarSports 到半夜三、四點，因為今年的溫布頓實在是太好看啦！",
-      "image": "https://wiwi.blog/assets/images/federer-87bb4da22ac24486da04be8b8bd7b1f8.jpg",
-      "publishedAt": "2008-07-03T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/wimbledon-2008",
-      "detailPath": "articles/fa80b6969bb87388f544e720.json"
-    },
-    {
-      "id": "25fc6128e3b1d2d50d0a8222",
-      "title": "魔術方塊",
-      "summary": "就是這個就是這個，它是我親手完成的喔！",
-      "image": "https://wiwi.blog/assets/images/rubiksCube-ec0926a2725523324fb8ae73a942bed2.jpg",
-      "publishedAt": "2008-07-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/rubiks-cube",
-      "detailPath": "articles/25fc6128e3b1d2d50d0a8222.json"
-    },
-    {
-      "id": "18463a465e38ddb47cf1ba23",
-      "title": "Bomomo",
-      "summary": "有趣的繪圖小程式！不用多解釋什麼，直接到 Bomomo.com 玩玩看吧！",
-      "image": "https://wiwi.blog/assets/images/bomomo-39a8322a65d0c55bb800a617eb4ffb89.jpg",
-      "publishedAt": "2008-06-30T16:42:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/bomomo",
-      "detailPath": "articles/18463a465e38ddb47cf1ba23.json"
-    },
-    {
-      "id": "344a757b3c6191be7ce466b7",
-      "title": "ㄕㄕㄕㄕㄕ",
-      "summary": "今天再來跟大家介紹一個有趣的東西。試試看，把下面的注音文，譯為正常的中文：",
-      "image": null,
-      "publishedAt": "2008-06-30T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/shi-shi-shi-shi-shi",
-      "detailPath": "articles/344a757b3c6191be7ce466b7.json"
-    },
-    {
-      "id": "97196db25ad785412c212bf3",
-      "title": "我是白痴",
-      "summary": "我在前天的這一篇 Blog 不是說我去全聯買了一瓶洗髮精嗎？",
-      "image": null,
-      "publishedAt": "2008-06-28T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hair-conditioner",
-      "detailPath": "articles/97196db25ad785412c212bf3.json"
-    },
-    {
-      "id": "5de488babdda8be79a128357",
-      "title": "28 元的油切綠茶，最後一天",
-      "summary": "剛剛一個人去吃火鍋，覺得有點吃太飽，就想說走路去全聯晃晃好了。先是買了一瓶洗髮精和一瓶廁所除臭液，然後我走到飲料區，發現平常常喝的油切綠茶的特價（2 公升，28 元）到今天為止，從明天開始要漲到 36 元！",
-      "image": "https://wiwi.blog/assets/images/aLotOfTea-e4697cc12d31b2c949a257adc0fce608.jpg",
-      "publishedAt": "2008-06-26T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/oil-cutting-green-tea",
-      "detailPath": "articles/5de488babdda8be79a128357.json"
     }
   ]
 }

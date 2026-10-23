@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "dea764cb52c197054ade8dcb",
+      "title": "Pug 学习笔记",
+      "summary": "本文是一篇 Pug 模板引擎的学习笔记，侧重于其在 Hexo 博客框架中的应用。文章从 Pug 的基础语法入手，介绍了其缩进式写法、属性、文本处理，以及如何在模板中嵌入 JavaScript 变量与控制流。接着，笔记讲解了在 Hexo 中使用 Pug 的关键技巧，如访问站点与主题的配置项，和利用 extends、block 与 include 构建可复用的页面布局。这篇笔记为希望自定义 Hexo 主题的开发者提供了清晰的入门指南。",
+      "image": null,
+      "publishedAt": "2024-04-03T03:05:28Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/a039.html",
+      "detailPath": "articles/dea764cb52c197054ade8dcb.json"
+    },
+    {
+      "id": "e9bdb160faa8d5a5c07d9d67",
+      "title": "台湾花莲县发生7.3级地震",
+      "summary": "今日早上7点58分，台湾花莲县海域突然发生地震，震级高达7.3级。 这边距离较远，基本感受不到任何震感。地震发生那会我还正睡的跟头死猪一样，要不是看到新闻，根本都不会知道竟然发生了这么大的地震。 回想中国近几年来发生的几次大地震，让我印象最深的就属08年汶川大地震那次。当时还在上小学，午休时突然感觉头晕目眩，想站起来也感觉站不稳。没过多久老师就突然冲进教室，带着我们跑到外面的操场上，不久便宣布提前放学，让我们赶紧回家。 那时候年幼无知，对地震的破坏力没什么概念，只是想着那会不用上课可以去玩，只知道那边塌了好多房子。 长大后，才明白地震的破坏力到底有多可怕。看着那多人流离失所，甚至是失去亲人，心里真的很不是滋味。 去年郑州附近的新郑市也发生了地震，虽然只有3.2级，但这可能是我知道的距离我最近的一次地震。地震前…",
+      "image": null,
+      "publishedAt": "2024-04-02T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/taiwan-earthquake",
+      "detailPath": "articles/e9bdb160faa8d5a5c07d9d67.json"
+    },
+    {
+      "id": "08cc5edf7edb1a747f197370",
+      "title": "Made in China",
+      "summary": "之一 我颈椎不太好，一个姿势坐久了，活动头颈肩的时候，关节会发出咔咔响。 上周在studi… Read More",
+      "image": "https://2.gravatar.com/avatar/ea6699dd1503807085d7548af8465d57581dc3f7355f205d56d97898ddb530dd?s=96&d=identicon&r=G",
+      "publishedAt": "2024-04-01T20:38:29Z",
+      "sourceId": "960b48b47303d275",
+      "sourceTitle": "蛰洲",
+      "link": "https://aliangx.blog/2024/04/01/made-in-china/",
+      "detailPath": "articles/08cc5edf7edb1a747f197370.json"
+    },
+    {
+      "id": "ea142f3bea44cde2d18de0be",
+      "title": "一鼓作气，二鼓泄气",
+      "summary": "晚上回家之后便直接换好衣服，准备出门开始今天的夜跑，尽管室外的温度略低，风也呼呼作响。 七点左右到达河边，先热身几分钟，发现跑步的人寥寥无几，有的也只是散步的零星几人。周末钓鱼那会明明能看到一堆人跑步，我还以为大家都已经开始运动了，那我也不能落下。现在看来，怎么有种上当的感觉。 由于风比较大，不想出太多汗，中途便停下来走了一会。结果再继续的时候，感觉比之前要累多了，我是真服了，这还不如不休息呢。 想到一句古话，一鼓作气，再而衰，三而竭，古人真是诚不欺我。",
+      "image": null,
+      "publishedAt": "2024-04-01T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/persist-while-running",
+      "detailPath": "articles/ea142f3bea44cde2d18de0be.json"
+    },
+    {
+      "id": "4c4d6ac430fd779bc9fbb61c",
+      "title": "「小工具」乱码恢复工具",
+      "summary": "工具介绍 在日常工作中，我经常会遇到一些乱码问题，比如文件编码不一致、文件编码错误等。这时候我就需要一个乱码恢复工具来帮助我解决这些问题。自己琢磨了一会儿，写了一个小工具，可以帮助我快速恢复一些字符串乱码。 引起这个问题的主要原因就是解码目标编码和实际编码不一致，导致乱码。这个工具可以帮助你快速恢复这些乱码问题。 技术栈 本来想用 Python 来写这个小工具，但是考虑到 Python 的环境配置比较麻烦，所以最后选择了 JavaScript 来实现这个小工具，我的目标是随处可以运行，无需任何环境配置。 于是就想到了类似于 Electron 之类的跨平台方案，但是一个小工具 100 多 M 的体积实在是太大了，所以最后选择了 Tauri 来打包。 开源地址 这个小工具已经开源，你可以在 GitHub 上找到并…",
+      "image": "https://cdn.taurusxin.com/hugo/2024/04/04/text-recover.png",
+      "publishedAt": "2024-04-01T05:26:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/text-recover-tool/",
+      "detailPath": "articles/4c4d6ac430fd779bc9fbb61c.json"
+    },
+    {
+      "id": "04ad9e7f2308c71daf9d8ee4",
+      "title": "倒带「贰零贰叁」：2023 年终 40 问",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-04-01T00:00:00Z",
+      "sourceId": "b1766968470c2fd8",
+      "sourceTitle": "一直游到海水变蓝",
+      "link": "https://nelsonboss.ink/2024/questions-for-2023",
+      "detailPath": "articles/04ad9e7f2308c71daf9d8ee4.json"
+    },
+    {
+      "id": "8b4a21e1fe13c7e382e87f66",
+      "title": "Q1 2024 Expenses | 2024年第一季度消费总结",
+      "summary": "The Met Cloisters. March 2024 春天 周迅 （看到ig图片加音乐突发奇想在博客里插入音乐，这很千禧年） 每个月末都想着等银行交易都自动录入YNAB后再写，然后第一季度每个月都好忙没有时间回顾月度消费，所以干脆就等到Q3，冒着understate三月消费金额的风险先下手为强，毕竟稍有差错也无妨，家庭账户又不是要被审计：）Done is better than perfect! 看支出的时候还是无法相信2024年的第一季度已经过完了，得翻看手机相册和消费类别的蛛丝马迹才能想起具体经历了什么。 今年一月是我第一次得COVID，怀疑前几年在中西部一直没中招完全得益于和陌生人接触不多。即便疫情末尾看演唱会前也很小心地提前打了加强针。从未中招令我谜之自信以为自己有什么特殊免疫力，连医院建议的加…",
+      "image": "https://images.squarespace-cdn.com/content/v1/5d24f88b8ff0730001a3dfb7/2906232c-6a72-47ff-84a1-5682e03d5932/20240316_112440.jpg?format=1000w",
+      "publishedAt": "2024-03-31T18:11:30Z",
+      "sourceId": "a1908f209b7818cd",
+      "sourceTitle": "After 27",
+      "link": "https://www.after27.me/blog/q1-2024-expenses",
+      "detailPath": "articles/8b4a21e1fe13c7e382e87f66.json"
+    },
+    {
       "id": "c19b44665277769f403808cd",
       "title": "除舊佈新，三月也可以像新年",
       "summary": "什麼時候都不晚 本月M",
@@ -582,83 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2024/02/25/god-bless-america/",
       "detailPath": "articles/b3ddad65b808fc986133f49d.json"
-    },
-    {
-      "id": "0518ec8769bbeebbd3abb040",
-      "title": "尋找特定主題的書籍：LibGuides與CRD",
-      "summary": "LibGuides，for英語世界 # 如果需要查找特定主題在英語世界的相關資源，可以使用Google搜尋各大學圖書館的LibGuides。 例如，對於對歐美的日本研究感興趣，但不知道該閱讀哪些書籍或瀏覽哪些文章、期刊，可以Google搜尋關鍵字「Japan studies libguides」，在第一頁就能找到多個北美大學的LibGuides資訊。 1 CRD，for日語世界 # 如果需要找日本的相关书籍、图录，推荐用 レファレンス協同データベース（Collaborative Reference Databas，CRD） 搜索。 （啊，但是寫專業論文的話還是不要用吧，自己查啦。） 直接在“＜簡易検索＞”栏输入日文关键词就行。这个网站相当于日本的全国图书馆参考咨询联盟网，在上面可以找到日本全国各个图书馆提供的…",
-      "image": null,
-      "publishedAt": "2024-02-24T16:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/libguidesandcrd/",
-      "detailPath": "articles/0518ec8769bbeebbd3abb040.json"
-    },
-    {
-      "id": "94f4faeae2d0d0f6db5c0f95",
-      "title": "历史之城英雄之城-南昌游记",
-      "summary": "春节的时间比较长，不出去玩一趟就感觉没有过完整似的。今年依然选择了江西，因为江西的城市离得近，开车就能到了。本打算去庐山，但是查了一堆攻略，临行前一晚又改到了南昌。南昌更远，不过也更加平价，老城区的建设比较慢，好吃的很多，总体还是很满意的。 第一天 - 滕王阁 驾车出发，下午2点多到达南昌，直奔滕王阁，因为堵车在外围转了一大圈，只好先定了酒店前往住下。 酒店出来，直奔蛤蟆街搞了点吃的。首先就就是南昌知名的水煮和油炸，水煮和麻辣烫感觉差别不大，油炸虽然和我们老家的油炸很像，但是配着他们的调料又感觉很不相同，这个调料真的很好吃。 吃饱之后，直奔滕王阁，然而来的太晚了，售票已经结束，在滕王阁公园和赣江边转了转。 随后，跟着人群来到了东门，这里很是热闹，有漂亮的灯笼，有很多摊贩。在这里购买了《寻梦滕王阁》实景表演来夜…",
-      "image": "https://img.isming.me/photo/IMG_20240217_160538.jpg",
-      "publishedAt": "2024-02-23T10:44:29Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-02-nanchang/?utm_source=rss",
-      "detailPath": "articles/94f4faeae2d0d0f6db5c0f95.json"
-    },
-    {
-      "id": "199c0476c91293e3664b4e7c",
-      "title": "最近在听什么",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-02-22T12:02:00Z",
-      "sourceId": "ec4d8f7d2c53872d",
-      "sourceTitle": "Posts on Welcome to my little blue world ♡",
-      "link": "https://suicablog.cobaltkiss.blue/posts/what-am-i-listening-to-recently/",
-      "detailPath": "articles/199c0476c91293e3664b4e7c.json"
-    },
-    {
-      "id": "2cd4cd630c0a5c3c37a5aa0e",
-      "title": "喝了几口茶",
-      "summary": "最近在老家姐姐那喝到一点儿好茶，做个记录，顺便推荐一下。 张家界的莓茶，准确地说不属于茶类，但是回甘非常润喉，整个呼吸道都觉得很舒服。当做茶味的药来喝算了，喝过之后自己试着买了一罐，300 多，但是很一般，打听了一下，要找芽尖的莓茶，每年看好生产时间。最后姐姐给寄来一罐，搜了一下，也就 100出头，一大盒。从功效来说，不太适合当口粮茶。 小罐茶里的茉莉花茶，其它的都喝过，这一款封神，一般茉莉花在 4 泡以上还入味的，都价格不菲，但是小罐茶里的茉莉花我泡到 6 泡，依然好喝。强烈推荐，同时吐槽一下小罐茶的其他茶，不买也罢。 天福茗茶的乌龙茶，但是是在天福店里喝的，品质和冲茶手法一级棒。大几千一斤的茶，平时咱也喝不起，尝了尝，的确是人民币的味道。 最后，最近的口粮茶都是拼多多买的经典 58，足够了。",
-      "image": null,
-      "publishedAt": "2024-02-22T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2024/02/some-kind-of-tea/",
-      "detailPath": "articles/2cd4cd630c0a5c3c37a5aa0e.json"
-    },
-    {
-      "id": "6d80c737dda5923002ad0480",
-      "title": "React 的 Markdown 渲染",
-      "summary": "本文是一篇在 React 中实现 Markdown 渲染的实战教程，重点解决了新版 react-markdown 库中代码高亮的难题。文章首先介绍了如何使用 react-markdown 和 remark-gfm 插件来支持 GitHub 风格的 Markdown（如表格、删除线）。核心部分针对 react-markdown 新版废弃 inline 属性导致旧教程失效的问题，提供了一个创新的解决方案：通过自定义 pre 组件来准确识别并使用 react-syntax-highlighter 渲染代码块。本文为希望在 React 项目中实现现代化 Markdown 渲染的开发者提供了一套与时俱进的实用方法。",
-      "image": null,
-      "publishedAt": "2024-02-21T04:11:13Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/c0fc.html",
-      "detailPath": "articles/6d80c737dda5923002ad0480.json"
-    },
-    {
-      "id": "aeb0bbfdb45ce39f6a94656d",
-      "title": "React 的 Textarea 高度自适应",
-      "summary": "本文是一篇在 React 中实现 textarea 高度自适应功能的实战教程，旨在模仿 ChatGPT 等现代聊天应用的输入框体验。教程详细讲解了如何利用 React Hooks (useRef, useEffect) 监听用户输入，通过动态计算 scrollHeight 来让文本框根据内容自动伸缩，并在达到最大高度后显示滚动条。文章还特别强调了在 Flexbox 布局下的实现技巧，并分享了一个因忘记 e.preventDefault() 而导致意外换行的常见“血泪教训”，为开发者提供了完整的实现方案和宝贵的避坑经验。",
-      "image": null,
-      "publishedAt": "2024-02-20T04:11:13Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/14d5.html",
-      "detailPath": "articles/aeb0bbfdb45ce39f6a94656d.json"
-    },
-    {
-      "id": "938898dd9c14a0ba29622722",
-      "title": "梦里的我想要改变世界",
-      "summary": "卷一极道·总纲",
-      "image": "https://fravilion.top/usr/uploads/2024/02/410470125.webp",
-      "publishedAt": "2024-02-19T06:20:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/9/",
-      "detailPath": "articles/938898dd9c14a0ba29622722.json"
     }
   ]
 }

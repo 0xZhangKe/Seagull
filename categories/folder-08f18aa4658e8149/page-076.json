@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "1758fdc114066cef48d563e2",
+      "title": "复古风格网站的 Eepsite 现已上线",
+      "summary": "我的复古风格网站的 eepsite 终于上线了，我已经在 reg.i2p 上注册了 rebel.i2p 域名。地址传播到地址簿可能需要几天时间，但你现在可以使用这个 地址助手链接 访问。 值得一提的是，我最近发现 rebel.i2p 这个域名之前已经被注册过，但截至 2023 年 8 月 18 日，该网站已无法访问。 reg.i2p 允许重新注册已失效网站的 I2P 域名，但 stats.i2p 不允许，并仍然保留旧记录。为了避免出现意外情况，我还注册了另一个域名： rebel1725.i2p ，其地址助手链接在 这里 。",
+      "image": null,
+      "publishedAt": "2025-07-12T05:13:36Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/retro-style-website-eepsite-is-now-up/",
+      "detailPath": "articles/1758fdc114066cef48d563e2.json"
+    },
+    {
+      "id": "24765b6a7d5c8f4ef569b120",
+      "title": "給 Uber Eats 的分手信",
+      "summary": "親愛的 Uber Eats，我們需要好好聊聊。",
+      "image": null,
+      "publishedAt": "2025-07-12T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/bye-uber-eats",
+      "detailPath": "articles/24765b6a7d5c8f4ef569b120.json"
+    },
+    {
+      "id": "0b33203fc9f82e65275d6a80",
+      "title": "C语言下的二进制文件IO踩坑",
+      "summary": "C语言下的二进制文件读写有个坑，就是一定要按存储的顺序读取。例： typedef struct player { int id; double XP; double MP; }player; 这里有一个玩家的数据结构，我们创建变量并初始化。 int b_i[32] = {1, 233, 2453, 5432, 21 ,43 ,297, 752, 643}; player yingyu5658; yingyu5658.MP = 100; yingyu5658.XP = 100; yingyu5658.id = 114514; 对文件进行存储时，按照MP=>XP=>ID的顺序存储 pd = fopen(\"./data\", \"wb\"); fwrite(&yingyu5658.MP, sizeof(double),…",
+      "image": null,
+      "publishedAt": "2025-07-11T16:26:59Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6io/",
+      "detailPath": "articles/0b33203fc9f82e65275d6a80.json"
+    },
+    {
+      "id": "c2dc4fa6da6f2957ac04b1a4",
+      "title": "Vibe Coding是盲盒老虎機",
+      "summary": "當AI能在幾秒內寫出完美程式碼，為什麼我反而想要放慢腳步？探討在AI時代如何保持創作的主導權與樂趣。",
+      "image": null,
+      "publishedAt": "2025-07-11T15:00:00Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/ai-slot-machine",
+      "detailPath": "articles/c2dc4fa6da6f2957ac04b1a4.json"
+    },
+    {
+      "id": "6bc61e112fd7630956f6b7dd",
+      "title": "我的复古风格网站现已上线",
+      "summary": "我的复古风格网站终于上线了！欢迎访问 Tilde.club 。 此外，包含相同内容的 eepsite 也将在 rebel.i2p 上线。",
+      "image": null,
+      "publishedAt": "2025-07-11T12:08:59Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/my-retro-style-website-is-now-up/",
+      "detailPath": "articles/6bc61e112fd7630956f6b7dd.json"
+    },
+    {
+      "id": "cc30161c1239f75fd249e2ab",
+      "title": "新資料夾",
+      "summary": "看看以下這張圖：你有一個「資料夾 A」，裡面包含了「資料夾 B」和其他檔案。你在 macOS 的 Finder 中選取了「資料夾 A」，右方欄位顯示出了其內容。",
+      "image": "https://wiwi.blog/assets/images/macos-folder1-5383059c0b2aa17317d1858bcb2ec67e.png",
+      "publishedAt": "2025-07-11T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/new-folder",
+      "detailPath": "articles/cc30161c1239f75fd249e2ab.json"
+    },
+    {
+      "id": "dc4a4aace0f4c5acd1990cf4",
+      "title": "差点出事故",
+      "summary": "这几天山东气温太高了，下楼取个快递，回来就是一身汗，昨天和x去济南提车，我俩一早就出发了，挂完牌到家已经是晚上9点，苗姐一早送闺蜜家，让她帮我俩照看一天。 新车需要适应一段时间，从济南回家路上，在北园高架差点发生事故，我在中间车道行驶，开启了ap功能，左边的车想跨车道向右变道出高架，不知道她是愣神还是因为她右侧车窗用了黑色纱网看不见我，导致她直接朝我左侧撞了过来，也就2秒钟不到，特斯拉的主动避让接管了驾驶，一顿旋转闪现，躲避了事故，这一躲避不要紧，把我右侧并排行驶的小车吓坏了。 ﻿ 事后，我下了高架心脏还是一个劲跳，我问x刚才吓到了吗，他说以为我们完了，90的速度这要出了事故侧翻什么的，我俩估计得重伤，那一瞬间我感觉时间都变慢了，先是想，握草，我真倒霉，第一天提车就出事故，下个念头是完了，苗姐怎么办啊，好像就…",
+      "image": "https://ihaihe.cn/wp-content/uploads/2025/07/IMG_9436.webp",
+      "publishedAt": "2025-07-10T13:33:32Z",
+      "sourceId": "8e1a97c92477b087",
+      "sourceTitle": "三十里海河",
+      "link": "https://ihaihe.cn/3318.htm",
+      "detailPath": "articles/dc4a4aace0f4c5acd1990cf4.json"
+    },
+    {
       "id": "bd120df71bc4e5b67c5597f2",
       "title": "对博客主题的一点想法",
       "summary": "简单回顾以下建站历程，博客的内容从“我是谁”转移到了\"我想说什么\"。从最早开始正式写博客的 Gmeek ，到后来使用 Typecho ，再到 Hexo,Hugo ，这几个不同的时期是我对主题看法的不同阶段。 Gmeek时期，没有概念，没看过几个人的博客，后来接触得多了，看了很多主题才意识到自己博客的主题有多简陋，换到Typecho，开始折腾主题，经历了一段不堪回首的时期。经典的一些元素：左下角挡字小人、底部音乐播放器、背景樱花飘落特效、点击特效，总之就是各种花里胡哨。文章，没有几篇，但是你可以在网页上找到任何你想找到的东西，除了文章。当时很喜欢Butterfly主题 后来换到了Hexo，也有Butterfly，继续用。发现点二十个网站，三十个都是Butterfly，很尴尬，后来经过几经波折，换到了Maupas…",
@@ -582,83 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2025-06-30-june-summary/?utm_source=rss",
       "detailPath": "articles/7f2b795f7ff0c0dd56f9a404.json"
-    },
-    {
-      "id": "ba55cd9bef4ab2c7cb2c9499",
-      "title": "Dazzo 拾音器，誰愛用誰用！",
-      "summary": "初遇 Dazzo # 早期認識 Eddie 應該知道，我是極度推崇 Dazzo 拾音器的人，那時候裝了「單貼片」的版本在前女友的 Takamine 全「合板」的初階吉他上面，只要配上推得動的木吉他前級，聲音飽滿到不可置信！ 我用那把吉他演出大概三年，我甚至都沒有想要拿去裝第二組拾音器，來讓 Takamine 變成雙系統，就知道我有多滿意了！Dazzo 貼片單系統本身就超好用的阿！ 再次安裝 Dazzo # 有鑑於分手後沒有 Takamine 吉他可以用，不開玩笑，分手後第一件事情是把 Maestro 吉他拿去裝 Dazzo 拾音器XD 這次選擇「雙貼片的版本」。 安裝好後，回家一測試，60 Hz 底噪大聲到跟弦聲一樣大，妥妥地，這絕對是接地有問題，我馬上拿回去給店家說明情況。 過了幾天通知我處理好了，我這次直…",
-      "image": "https://eddielv.com/musings/dazzo/60hz.png",
-      "publishedAt": "2025-07-01T09:12:31Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/dazzo/",
-      "detailPath": "articles/ba55cd9bef4ab2c7cb2c9499.json"
-    },
-    {
-      "id": "dea51b3f38b1014b06d13fc0",
-      "title": "重做网页布局排版",
-      "summary": "从 Skeleton 转向 Tailwind Typography",
-      "image": null,
-      "publishedAt": "2025-07-01T07:15:00Z",
-      "sourceId": "a477ed4d3d62d73f",
-      "sourceTitle": "Hsuan's Space",
-      "link": "https://quarkpixel.github.io/p/250701-remake-typography",
-      "detailPath": "articles/dea51b3f38b1014b06d13fc0.json"
-    },
-    {
-      "id": "75281f6d6ddb00718d5ea650",
-      "title": "用 JavaScript 自制 GameBoy 模拟器（上）",
-      "summary": "本文是一篇使用现代 JavaScript (ES6) 从零开始制作 GameBoy 模拟器的详细教程（上篇）。文章循序渐进地讲解了模拟 GameBoy 核心硬件的原理与实现，内容涵盖 Z80 CPU 的指令周期、内存管理单元（MMU）的内存映射、GPU 的显示时序和瓦片图形渲染系统。最终通过一个系统调度器将这些独立的模块集成起来，构建出一个完整、可运行的模拟器基础架构。本教程不仅提供了大量代码示例，还用通俗易懂的方式解释了底层硬件的工作原理，适合对模拟器开发、计算机体系结构或复古游戏技术感兴趣的开发者。",
-      "image": null,
-      "publishedAt": "2025-07-01T04:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/4148.html",
-      "detailPath": "articles/75281f6d6ddb00718d5ea650.json"
-    },
-    {
-      "id": "c6611e9b37f37fafd4cdbe13",
-      "title": "落枕",
-      "summary": "Day 1 周六 起床感觉脖子不太对劲。家属一起床就开始在家加班。连早饭都跳过了。于是我也认真学习了大半天，先是追上了 Teaching Writing K-3 的进度，又努力学了两课 ASL，最后又看了关于教学的书。 Day 2 周日 起床发现脖子动不了了。本以为睡一觉就会好，没想到问题变严重了。非常沮丧，心怀对命运的不满——我都不记得上一次落枕是什么时候了，怎么会落枕呢。 身体这个东西，牵一发动全身，明明只是头不能自由地转了，却浑身不得劲，感觉干啥都不行了。 除了唉声叹气以外，还积极求助 Google，查了英文又查中文，试了试冰敷，可那是家属之前拔牙从诊所带回家的小冰袋，敷一会儿就不凉了。到了下午，实在太难受了，决定去试试针灸。 进了店里，得知针灸师不上班，按摩师倒是刚好因为有个客人临时取消而有了一个空档…",
-      "image": null,
-      "publishedAt": "2025-07-01T01:14:00Z",
-      "sourceId": "ea32f15981b17f0f",
-      "sourceTitle": "小小日常",
-      "link": "https://www.joeyrambles.com/2025/06/blog-post.html",
-      "detailPath": "articles/c6611e9b37f37fafd4cdbe13.json"
-    },
-    {
-      "id": "722a368c245ebd638b074d78",
-      "title": "墨爾本看表演",
-      "summary": "這次去澳洲，我們在墨爾本聽了古典音樂會、看了音樂劇，還去了爵士俱樂部，來分享一下心得。",
-      "image": "https://wiwi.blog/assets/images/hamer-f08183861e2e3ec6d8ee5e027292d4b9.jpg",
-      "publishedAt": "2025-07-01T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/melbourne-performances",
-      "detailPath": "articles/722a368c245ebd638b074d78.json"
-    },
-    {
-      "id": "834226fdc7b1a82d1f25f4e0",
-      "title": "宅",
-      "summary": "朋友上周几次约我出去打羽毛球，都被我婉拒了。那个周末刚刚考完期末，又是我最爱的阴雨天，很难不趁着大好时光不在家修养身心，而是冒着雨出去打羽毛球几个小时，大汗淋漓，虚弱疲惫地走回家，做什么事都提不起精神，睡觉也觉得浪费时间。在家里并没有什么很想干的事，我没有打游戏的习惯，很早之前就已经戒掉电子游戏。在家里的娱乐活动无非就是看书、听歌、画画、练琴，写代码折磨一下自己应该也能凑个数。我非常依赖在家里独处时的充电，只要远离人群的嘈杂即可。 他们吐槽了一下我有点宅，只喜欢呆在家里，我无法反驳，确实是这样。没什么别的原因，单纯觉得家里安全，我是一个很怕死的人。今天去奶奶家拿饭，突然发现那里简直集齐了让我感到恐惧的所有元素。 小区旁有一条铁轨，时常有火车呼啸而过，我对噪音极度敏感。走到楼栋前，左右两旁各两个楼道入口，正常人…",
-      "image": null,
-      "publishedAt": "2025-06-30T19:47:00Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/%E5%AE%85/",
-      "detailPath": "articles/834226fdc7b1a82d1f25f4e0.json"
-    },
-    {
-      "id": "7c17825ebde791af67eeba81",
-      "title": "我的自律問題的另一種解釋",
-      "summary": "你也有「月經週期」般的生產力崩潰嗎？一陣子超自律，然後報復性放縱，把努力全部清零？我花了34年才發現，這不是個性問題，是童年情感忽視的後遺症。好消息是：這些技能永遠不嫌晚學。",
-      "image": null,
-      "publishedAt": "2025-06-30T09:02:21Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/cen",
-      "detailPath": "articles/7c17825ebde791af67eeba81.json"
     }
   ]
 }

@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "11ae9aa22ba636a7e05425b7",
+      "title": "席德・米德的赞歌",
+      "summary": "小时候第一眼看到倒 A 高达就迷得不行，还去他的网站想找找有没有倒 A 的设计图啥的，然后发现了好多没见过风格的画，最后右键下载了一张特厉害的红色高架桥。 可惜。 2020-9-8 更新： 网上冲浪时偶然找到了那张“ 特厉害的红色高架桥 ” ，但怎么看都不是红色的，看来记忆出现了偏差。 互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.top/note/A-Canticle-For-Syd-Mead",
+      "image": "https://emptystack.top/processed_images/Tribute to Syd.4fb43a03a2650a79.webp",
+      "publishedAt": "2019-12-31T07:59:56Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/A-Canticle-For-Syd-Mead/",
+      "detailPath": "articles/11ae9aa22ba636a7e05425b7.json"
+    },
+    {
+      "id": "489a4f23bf0bfe4ac2465497",
+      "title": "2019年终小记",
+      "summary": "关于2019年",
+      "image": null,
+      "publishedAt": "2019-12-31T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/2019%E5%B9%B4%E7%BB%88%E5%B0%8F%E8%AE%B0/",
+      "detailPath": "articles/489a4f23bf0bfe4ac2465497.json"
+    },
+    {
+      "id": "e71a2a0efd4b2456b59ad375",
+      "title": "Numpy实现透视变换",
+      "summary": "其实就是用 numpy.linalg.solve 解方程啦 透视变换就是三维空间上的一个点乘上变换矩阵转移到别的坐标（因为图片本身是二维的，所以新旧坐标的 z 值都为 1 ） ，即： \\begin{bmatrix} XW \\\\ YW \\\\ W \\end{bmatrix} = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & 1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix} 解得新坐标： X = \\frac {ax+by+c} W = \\frac {ax+by+c} {gx+hy+1} Y = \\frac {dx+ey+f} W = \\frac {dx+ey+f} {gx+hy+1} 但其实 a-…",
+      "image": "https://emptystack.top/processed_images/perspective-transform-fs8.b8783eea241bf8fe.webp",
+      "publishedAt": "2019-12-30T11:22:27Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/perspective_transform/",
+      "detailPath": "articles/e71a2a0efd4b2456b59ad375.json"
+    },
+    {
+      "id": "dff720e94eb5a6b98ed7971f",
+      "title": "关于民航总医院恶性伤医事件的一点引申思考",
+      "summary": "当医务人员把患者放在了对立面，医患关系永无宁日。",
+      "image": null,
+      "publishedAt": "2019-12-30T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2019-12-30",
+      "detailPath": "articles/dff720e94eb5a6b98ed7971f.json"
+    },
+    {
+      "id": "840952ebe02db1f8df99a404",
+      "title": "关于民航总医院恶性伤医事件的一点引申思考",
+      "summary": "当医务人员把患者放在了对立面，医患关系永无宁日。",
+      "image": null,
+      "publishedAt": "2019-12-30T00:00:00Z",
+      "sourceId": "3e335517f4e1112a",
+      "sourceTitle": "Dr.Pika's Blog",
+      "link": "https://blog.drpika.com/posts/2019-12-30",
+      "detailPath": "articles/840952ebe02db1f8df99a404.json"
+    },
+    {
+      "id": "4baf6cbbbcff661361b4f927",
+      "title": "How China Detects and Blocks Shadowsocks",
+      "summary": "Shadowsocks is one of the most popular circumvention tools in China. Since May 2019, there have been numerous anecdotal reports of the blocking of Shadowsocks from Chinese users. This report contains preliminary results of research into how the Great Firewall of China (GFW) detects and blocks Shadowsocks and its variants. Using measurement experiments, we f…",
+      "image": null,
+      "publishedAt": "2019-12-29T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/gfw_shadowsocks/en/",
+      "detailPath": "articles/4baf6cbbbcff661361b4f927.json"
+    },
+    {
+      "id": "9a5c8512c908b67af3034ad5",
+      "title": "Shadowsocks 是如何被检测和封锁的",
+      "summary": "在中国， Shadowsocks 是最流行的翻墙软件之一。从2019年5月起，大量的中国网民反馈他们的Shadowsocks服务器被封锁了。这篇报告是我们对中国的防火长城（GFW）是如何检测和封锁Shadowsocks及其衍生翻墙软件的初步调查结果。通过网络测量实验，我们发现GFW会 被动的监视网络流量 从而识别出疑似Shadowsocks的网络流量；然后对对应的Shadowscoks服务器进行 主动探测 已验证其怀疑的正确与否。Shadowscoks的封锁程度可能受 人为因素 在政治敏感时期的控制。我们提出一种 规避方法 ，即改变网络数据包在Shadowsocks握手阶段的大小。这种方法被证明可以在现阶段有效减少主动探测。我们会继续与开发者合作让Shadowsocks及其衍生工具变得更加难以封锁。 主要发现…",
+      "image": null,
+      "publishedAt": "2019-12-29T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/gfw_shadowsocks/zh/",
+      "detailPath": "articles/9a5c8512c908b67af3034ad5.json"
+    },
+    {
       "id": "7a32361b9935b65a2a1be070",
       "title": "Android Systrace 基础知识 - CPU Info 解读",
       "summary": "本文是 Systrace 系列文章的第十二篇，主要是对 Systrace 中的 CPU 信息区域(Kernel)进行简单介绍，简单介绍了如何在 Systrace 中查看 Kernel 模块输出的 CPU 相关的信息，了解 CPU 频率、调度、锁频、锁核相关的信息 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Systrace 这个图形化的角度，你可以理解的更深入一些。",
@@ -582,83 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/hello-world/",
       "detailPath": "articles/e1aaeacbf94d2ed3e16d8df6.json"
-    },
-    {
-      "id": "ba426f6297e142dd5cfb3b28",
-      "title": "传说中婴儿般的睡眠",
-      "summary": "从 Baby 诞生的兴奋和慌乱中稍稍平静下来，睡眠就成了最大的挑战。人们常说的“婴儿般的睡眠”，让人想到的都是婴儿睡着后的香甜；真正养了娃才知道，这其中还包含了每隔几小时就醒来一次，顺便把全家都哭闹醒的无奈。头三个月的日夜最辛苦，但好在情况还是慢慢好转，也终于在我们的努力中都熬了过去。 白天作息 # 新生儿是没有昼夜观念的。他们完全受本能驱动，饿了就哭，吃饱了就睡。我们要帮助 Baby 逐渐建立起规律的作息。一方面，身体比较容易适应规律的作息——不需要因为作息变动而不断调整；另一方面，如果白天睡得太多，晚上就睡不着了，我们也受不了。 我们的目标是全家晚上都能睡整觉。基于此，我们采取的方针是白天对 Baby 的作息进行干预，晚上则任其能睡多久睡多久。在满足 Baby 整体睡眠需求的前提下，白天睡眠规划的唯一目标…",
-      "image": "https://fourhappylions.com/posts/sleep-as-a-baby/halo_hu_ceff6bb9a3f9a3df.png",
-      "publishedAt": "2019-07-28T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/sleep-as-a-baby/",
-      "detailPath": "articles/ba426f6297e142dd5cfb3b28.json"
-    },
-    {
-      "id": "ce208c5b1b2eb60b756f15cc",
-      "title": "四川 | 这地方，还能来一次",
-      "summary": "我希望有个如你一般的人。如这山间清晨一般明亮清爽的人，如奔赴古城道路上阳光一般的人，温暖而不炙热，覆盖我所有肌肤。由起点到夜晚，由山野到书房，一切问题的答案都很简单。 看了挺久的博客，最喜欢的还是 罗磊 老师。 这个博客有许多部分也是借鉴了他的思路 正文 三年前和初恋女友看了《从你的全世界路过》这电影，当时就记住了这个地方，也向往了三年。 阴差阳错，前段时间父母问我去不去稻城，我当时就兴奋起来了，果断订了机票酒店。 杭州到稻城只有这一班航班，略有些红眼，图为机场高速路上看日出 稻城机场，世界上海拔最高机场（没有之一） 唯一的感觉就是有一些高原反应 不过还好，以前练过管弦乐，肺活量高，呼吸还算顺畅 吃午饭海拔相对低一些 吃的团餐 晚上睡在海拔高度约2900米的民宿，就在景区门口 （第二天 景区）茅十八向荔枝求婚…",
-      "image": "https://s2.ax1x.com/2019/07/28/e1ASWF.jpg",
-      "publishedAt": "2019-07-27T21:00:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/daocheng/",
-      "detailPath": "articles/ce208c5b1b2eb60b756f15cc.json"
-    },
-    {
-      "id": "868c2b89f39a89ed82cec085",
-      "title": "Android 中的 Hardware Layer 详解",
-      "summary": "硬件加速与软件加速 很多人会把 Android 中的硬件加速和 Hardware Layer 搞混，会以",
-      "image": null,
-      "publishedAt": "2019-07-27T06:09:13Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/07/27/Android-Hardware-Layer/",
-      "detailPath": "articles/868c2b89f39a89ed82cec085.json"
-    },
-    {
-      "id": "f26fbb85ad53a8b3c89a2117",
-      "title": "做个自我介绍吧",
-      "summary": "嗨！ 这里是欣哥的独立博客 我是谁 你可以喊我叫我 欣哥 来自高考数学经常全国最难的浙江省 苦逼在读CS专业学生 旅行、摄影爱好者 重度咖啡依赖 收集各种简约的东西 这里有什么 这里会写一些个人的生活内容、游记，当然不乏一些技术性的文章 欢迎你关注我，给我留个言，收个藏 当然更感谢的是可爱的你发现了万千博客中的我的博客",
-      "image": null,
-      "publishedAt": "2019-07-26T17:36:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/hello/",
-      "detailPath": "articles/f26fbb85ad53a8b3c89a2117.json"
-    },
-    {
-      "id": "d805dd8d05e87e2be8a314e2",
-      "title": "Android Systrace 基础知识 -- 分析 Systrace 预备知识",
-      "summary": "本文是 Systrace 系列文章的第二篇，主要是讲解一些分析 Systrace 的预备知识, 有了这些预备知识, 分析 Systrace 才会事半功倍, 更快也更有效率地找到问题点. 本文介绍了如何查看 Systrace 中的线程状态, 如何对线程的唤醒信息进行分析, 如何解读信息区的数据, 以及介绍了常用的快捷键. 通过本篇文章的学习, 相信你可以掌握进程和线程相关的一些信息, 也知道如何查看复杂的 Systrace 中包含的关键信息",
-      "image": null,
-      "publishedAt": "2019-07-23T14:09:59Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/07/23/Android-Systrace-Pre/",
-      "detailPath": "articles/d805dd8d05e87e2be8a314e2.json"
-    },
-    {
-      "id": "b153642d798802844592bf7f",
-      "title": "家有新生娃",
-      "summary": "有娃生活的元年开始了。 之前我们就决定，由我和 Miki 两个人来照顾 Baby。Miki 的产假从住院的那天开始。预料到刚开始的手忙脚乱，我也提前请好了两周的假。可真正拖着一身疲惫从医院回到家，面对全新而未知的生活，我们还是不知道该从何下手。 作息 # 首先要安排的是我和 Miki 的作息。Miki 承担着哺乳的重任，产后的身体也需要恢复，基本的睡眠还是要保证。因此，我们决定由 Miki 值白班，我值夜班。 回想在医院的两个晚上，感觉新生儿的需求似乎很简单：除了吃就是睡；哭闹的原因不是饿了，就是拉了。当时看来，基本上就是要定时喂奶，勤查勤换尿布。如果哭闹还不停止，护士就建议我们弯下腰，用双臂从两侧环住躺在床上的 Baby，这会让 TA 感到安心，就像在妈妈肚子里被羊水包裹着一样。当时亲测有效。 然而，回家后…",
-      "image": null,
-      "publishedAt": "2019-07-21T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/newborn-at-home/",
-      "detailPath": "articles/b153642d798802844592bf7f.json"
-    },
-    {
-      "id": "11c20988a8b131b493000c2d",
-      "title": "写给新手的 Go 开发指南",
-      "summary": "转眼加入蚂蚁已经三个多月，这期间主要维护一 Go 写的服务器。虽然用的时间不算长，但还是积累了一些心得体会，这里总结归纳一下，供想尝试 Go 的同学参考。 本文会依次介绍 Go 的设计理念、开发环境、语言特性。本文在谈及语言特性的时也会讨论一些 Go 的不足之处，旨在给读者提供一个全面的视角。",
-      "image": null,
-      "publishedAt": "2019-07-17T21:52:33Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2019/07/17/hello-golang/",
-      "detailPath": "articles/11c20988a8b131b493000c2d.json"
     }
   ]
 }

@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "a8b602fc549a12b6b2d92745",
+      "title": "简单聊聊Android Architecture Componets",
+      "summary": "Google IO大会进行中，本次大会Android最大的新闻当属Android O以及Kotlin被官方认可。我发现了原来还有发布官方的架构库，以及推荐使用指南，分享给大家。 架构原则 关注分离 模型驱动UI,优先持久化模型 新架构 如上图所示，为新的架构模式： Activity/Fragment UI层，通常是Activity/Fragment等 监听ViewModel，当VIewModel数据更新时刷新UI 监听用户事件反馈到ViewModel。 ViewModel 持有保存，或者想Repository来获取UI层需要的数据 响应UI层的事件，执行响应的操作 响应变化，并且通知到UI层 Repository App的完全的数据模型，ViewModel交互的对象 提供简单的数据修改和获取的接口 配合好网络…",
+      "image": "https://isming.me/images/imgac_architecture.png",
+      "publishedAt": "2017-05-18T12:01:38Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2017-05-18-android-architecture-components-guide/?utm_source=rss",
+      "detailPath": "articles/a8b602fc549a12b6b2d92745.json"
+    },
+    {
+      "id": "04263ff5eb8ebb2e8e8663e6",
+      "title": "《硅谷之谜》读后感",
+      "summary": "吴军博士的 《硅谷之谜》 在年前就买了，可是一直迟迟没翻开。最近在一次出差的动车上把它看完了，可以说是一气呵成，根本停不下来，里面介绍的很多观点都比较深刻，而不仅仅是简单的罗列事实，更像是科学探究，试图找出每一个事情背后的原理。",
+      "image": null,
+      "publishedAt": "2017-05-11T07:07:31Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/05/11/review-of-secret-of-silicon-valley/",
+      "detailPath": "articles/04263ff5eb8ebb2e8e8663e6.json"
+    },
+    {
+      "id": "cd5f12ea6f914ca2ffe5f85f",
+      "title": "我好煩",
+      "summary": "Siri 真的很不會安慰人耶！",
+      "image": "https://wiwi.blog/assets/images/siri-3cb1ae40ae912f48b5fd09ba1db1e8c8.jpg",
+      "publishedAt": "2017-05-03T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/ugh",
+      "detailPath": "articles/cd5f12ea6f914ca2ffe5f85f.json"
+    },
+    {
+      "id": "a156413a325b8dc719a2dc17",
+      "title": "2017",
+      "summary": "一转眼就 2017 年了，算起来自己已经工作了快四年了，09年到威海上学，12年去上海实习，13年毕业后还是去了上海，14年进了珠海魅族，直到现在。 这博客从我毕业开始写东西，写写删删，也算是记录了一些东西，自己的工作内容也从 App 开发换到了系统 App 开发，在换到系统开发，也算是走了一圈，一些路程，记录下来，几年后再看看，怀念一下也是不错的。 这篇文章我记录了自己的博客、自己的工作、自己的工作内容、自己的工作习惯、还有对 2017 年的期望，有迷茫，也有奋斗。 17年已经过了 30% 了，希望还不算晚。 下文按四个”关于”展开：「关于博客」回顾这几年写写删删的心路，以及为什么写得越来越少；「关于工作」交代从 App 开发到系统 App 再到系统开发的转折；「关于工作内容」具体讲手头在做什么；「关于习惯…",
+      "image": null,
+      "publishedAt": "2017-04-23T14:02:29Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2017/04/23/About-work/",
+      "detailPath": "articles/a156413a325b8dc719a2dc17.json"
+    },
+    {
+      "id": "8cfdd8908fd77595d57f6620",
+      "title": "Clojure Web 开发-- Ring 使用指南",
+      "summary": "在 Clojure 众多的 Web 框架中， Ring 以其简单统一的 HTTP 抽象模型脱颖而出。Ring 充分体现了函数式编程的思想——通过一系列函数的组合形成了一个易于理解、扩展的 HTTP 处理链。",
+      "image": null,
+      "publishedAt": "2017-04-02T23:56:30Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/04/02/clojure-web-dev-ring-usage/",
+      "detailPath": "articles/8cfdd8908fd77595d57f6620.json"
+    },
+    {
+      "id": "1220b1ba432d1fd323b98835",
+      "title": "“玩转” 技术面试——链表的函数表示法",
+      "summary": "简介 《Acing the technical interview》 ，老外写的白板面试的调侃文，声色并茂，兼具叙述文的生动与技术文的抽象。文中用函数来模拟链表的表示法我在 《编程语言的基石——Lambda calculus》 里面有深入讲解，感兴趣的读者可以参考。本文最后，给出了 Python、Ruby 语言中链表的函数表示。",
+      "image": null,
+      "publishedAt": "2017-03-22T11:31:11Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/03/22/ace-technical-interview/",
+      "detailPath": "articles/1220b1ba432d1fd323b98835.json"
+    },
+    {
+      "id": "be42ec9bdf8439e74af9b4a0",
+      "title": "辨析 Ruby 中的 Method 与 Proc",
+      "summary": "Ruby is simple in appearance, but is very complex inside, just like our human body. – Matz https://www.ruby-lang.org/en/about Ruby 与 Python、Scala 类似，在一切皆是对象（Seeing Everything as an Object）的基础上，支持函数式编程，这意味着函数是一等成员，可以作为参数传入，也可以作为函数值返回。",
+      "image": null,
+      "publishedAt": "2017-03-05T15:26:28Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/03/05/method-vs-proc-in-ruby/",
+      "detailPath": "articles/be42ec9bdf8439e74af9b4a0.json"
+    },
+    {
       "id": "0cd260ab59683c4c29cc8efb",
       "title": "《東晉門閥政治》札記",
       "summary": "釋「王與馬，共天下」 八王之亂最後一幕，成都王司馬穎與東海王司馬越對峙。越與王衍合作，衍生出琅琊王司馬睿與王導的合作。 睿之渡江，是越與王衍共同安排，非導的獨自策劃。 皇權闇弱，士族扶持司馬氏以實現自己的家族利益。 司馬氏的存在是各方博弈的結果，平衡被打破，東晉也就亡了。 穎與越都連結異族為軍事聯盟。劉淵和石勒支持穎，鮮卑部支持越，江東政權確立後，仍與鮮卑交好，賴以抵抗劉、石。",
@@ -582,83 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2016/05/28/scope-closure/",
       "detailPath": "articles/b51a62b8e67d4934d93473c8.json"
-    },
-    {
-      "id": "9e18ef12fc72a75caad3521b",
-      "title": "关于部落冲突的二三事儿-2",
-      "summary": "终点 上回说到，我们中的一些人，出来发展分部。我预感到，这大概也是我们残存的激情的终点了。 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-2 阅读全文。",
-      "image": null,
-      "publishedAt": "2016-05-26T15:09:20Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/a-story-about-coc-2",
-      "detailPath": "articles/9e18ef12fc72a75caad3521b.json"
-    },
-    {
-      "id": "e64725cec07ff4d498f6059e",
-      "title": "SICP 第五章总结",
-      "summary": "经过第四章元语言抽象的洗礼，我们已经能够深谙编译器内部的原理，核心就是 eval-apply 循环，只是说基于这个核心可以有各种延伸，像延迟求值、amb 不定选择求值、逻辑求值等等，有了这层的理解，我们应该能够透过各种花哨的 语法糖 ，看出其本质来，像 Node.js 中的 Promise、 Python 中的 coroutine，都是 continuation 的一种应用而已。",
-      "image": null,
-      "publishedAt": "2016-05-21T16:04:15Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2016/05/21/sicp-chapter5-summary/",
-      "detailPath": "articles/e64725cec07ff4d498f6059e.json"
-    },
-    {
-      "id": "1cdbab96ef021396141e1038",
-      "title": "关于部落冲突的二三事儿-1",
-      "summary": "2016-05-12 一切的开始还要追溯到那个公众频道还清澈干净到连广告都没有的年代，但说实在，也不过是两年前罢了。刚高考毕业的我，拥有了第一部真正属于自己的手机。高考后的暑假，稍微恣 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-1 阅读全文。",
-      "image": null,
-      "publishedAt": "2016-05-12T17:56:43Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/a-story-about-coc-1",
-      "detailPath": "articles/1cdbab96ef021396141e1038.json"
-    },
-    {
-      "id": "7e71bff45e00de608fde103b",
-      "title": "关于部落冲突的二三事儿-序",
-      "summary": "大概是因为作为少数一直玩了将尽两年这么久的游戏，又或者是因为恰巧从大学开始陪伴了我大部分光阴的游戏，已经开始进入为生活的一部分了。即便有时它的趣味不再吸引我，甚至一度想过弃游，但一想到在这里我遇到过那么多人那么多事，便不舍得放下这份回忆。想来如今它更多吸引我的大概已经不是其本身的趣味了，而是其中的种种人与事的联系。 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-0 阅读全文。",
-      "image": null,
-      "publishedAt": "2016-05-12T15:31:35Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/a-story-about-coc-0",
-      "detailPath": "articles/7e71bff45e00de608fde103b.json"
-    },
-    {
-      "id": "0bba3eae671af84b55bb3089",
-      "title": "自創曲-青春的模樣",
-      "summary": "青春的模樣.mp4 這次的表演比預期的還要多人 309的同學們只練了一天 就把旋律和歌詞記住 一起大合唱很感動 還有和音的 @葉沂涵 和聲都是她編的喲 唱的也很棒 再來要錄vocal和MV了 敬請期待 已在 5 月 07, 2016 5:06:20下午更新",
-      "image": null,
-      "publishedAt": "2016-05-06T16:00:00Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/young-look/",
-      "detailPath": "articles/0bba3eae671af84b55bb3089.json"
-    },
-    {
-      "id": "0a5b4ba4fded9466f667f2d5",
-      "title": "儿子",
-      "summary": "亲爱的大家： 亿万年前我曾答应过，我会在这个网站更新博客。 我知道，我已经很久很久没更新了，而自从我生命中那缕新的阳光升起（或者说流星滑落，取决于您指的是哪一天）更新得就更慢了。 作为一名母亲，我常常阅读网上各类启示你如何为人父母的文章。这样在我匆匆出国演出时，会保持头脑清醒。有时，它会告诉你，有了孩子就会不再拥有自我（这点我要强烈否认）；有时，它也会讲孩子最佳的养育方式（大部分我最终会忽略），而最佳的方式通常是那些说“这个是OK的”。 我也想说，这个OK啊。啊哈。 让玩具铺满地没有关系（我打这些字的时候旁边堆着一只托马斯、一个磁石画板加上一个发射台）；给孩子喂一块巧克力饼干也没有问题（只要你能承受他吃了巧克力进入亢奋的状态）；当液体滴在T恤上不给他换衣服也OK（用湿布、湿巾擦干，手头没有的话等它自己干了就好…",
-      "image": "https://images.squarespace-cdn.com/content/v1/56cd6aebe3214064db4071c9/1462362186666-IE6OAN25KWKXPH42UXOC/IMG_6102.JPG?format=1500w",
-      "publishedAt": "2016-05-05T04:36:12Z",
-      "sourceId": "7e162b38d3f91393",
-      "sourceTitle": "/ 部落格 - MAKE / MUSIC",
-      "link": "http://www.makemusic.sg/new-blog/2016/5/4/son",
-      "detailPath": "articles/0a5b4ba4fded9466f667f2d5.json"
-    },
-    {
-      "id": "7ca08f9fcd1e8c368cd37340",
-      "title": "關於學生上課滑手機",
-      "summary": "楊敏奇老師的好文：",
-      "image": null,
-      "publishedAt": "2016-04-26T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/scrolling-in-class",
-      "detailPath": "articles/7ca08f9fcd1e8c368cd37340.json"
     }
   ]
 }

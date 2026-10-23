@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "6c4236b18a3df121e0d8ffb0",
+      "title": "玩木工【十二】：新工具（玩具）",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-01-20T20:13:48Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw012/",
+      "detailPath": "articles/6c4236b18a3df121e0d8ffb0.json"
+    },
+    {
+      "id": "f960cb35590df1ef3190b29f",
+      "title": "android反编译-如何防止反编译",
+      "summary": "前言 前面介绍了怎样去反编译别人的代码。哈哈，这里居然又写进行防止反编译。但是，还是先来写写吧。 使用ProGuard proguard android的sdk中就有提供，使用它可以对代码进行混淆和精简，处理后的代码，虽然仍然可以反编译，但是阅读起来相当困难，降低代码的可读性。操作简单，推荐使用。 proguard使用方法和配置，可以看我之前的博客： https://isming.me/2014-05-31-use-proguard/ 另外网上有别人共享的proguard配置模板，也可以参考： https://github.com/krschultz/android-proguard-snippets 如果大家有去proguard的官网，ProGuard的公司提供的DexGuard可以给android程序提供…",
+      "image": null,
+      "publishedAt": "2015-01-17T17:35:53Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-18-android-anti-decompile/?utm_source=rss",
+      "detailPath": "articles/f960cb35590df1ef3190b29f.json"
+    },
+    {
+      "id": "90fd86fe0cea02e37d6191e9",
+      "title": "使用 Android Studio 查看 Android Lollipop 源码",
+      "summary": "Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本(今天发布了1.1,果断已经升级了).",
+      "image": null,
+      "publishedAt": "2015-01-16T13:54:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio/",
+      "detailPath": "articles/90fd86fe0cea02e37d6191e9.json"
+    },
+    {
+      "id": "5cd678610b320218a092b9e6",
+      "title": "android反编译-smali语法",
+      "summary": "前言 前面我们有说过android反编译的工具，如何进行反编译。反编译后可以得到jar或者得到smali文件。Android采用的是java语言进行开发，但是Android系统有自己的虚拟机Dalvik,代码编译最终不是采用的java的class，而是使用的smali。我们反编译得到的代码，jar的话可能很多地方无法正确的解释出来，如果我们反编译的是smali则可以正确的理解程序的意思。因此，我们有必要熟悉smali语法。 类型的表示 java里面包含两种类型，原始类型和引用类型(包括对象)，同时映射到smali也是有这两大类型。 原始类型 V void (只能用于返回值类型) Z boolean B byte S short C char I int J long F float D Double 对象类型…",
+      "image": null,
+      "publishedAt": "2015-01-14T15:52:44Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-14-android-decompile-smali/?utm_source=rss",
+      "detailPath": "articles/5cd678610b320218a092b9e6.json"
+    },
+    {
+      "id": "322d29268520909b573e8474",
+      "title": "Android 性能优化之过渡绘制 - 实战篇",
+      "summary": "前言 上一篇 文章 从理论的角度讲解了一下什么是过渡绘制，以及可以用来查看和确认过渡绘制的工具，还提供了一些优化过渡绘制的方法。对代码和布局比较熟悉的人，看完上一篇其实就已经可以对自己的应用进行优化了。我记得有人说过，用iphone你只需要保证苹果有节操即可，用Android你就得保证所有的Android开发者都有节操。但现实是残酷的，现在Android市场上，有很多粗制滥造的应用，其中不乏大厂之作，各位打开过渡绘制按钮，就知道我所言非虚。作为一个Android开发人员，我肯定是更希望Android能一步一步好起来，超越iphone。 这篇文章从实战的角度，讲解了一个过渡绘制的优化过程。当然这里用到的只是很少的一部分，毕竟每个应用差别很大，优化方式也各不一样。所以这篇文章仅供参考，想把这块做好还是要下功夫的。…",
+      "image": null,
+      "publishedAt": "2015-01-13T11:38:53Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/13/android-performance-optimization-overdraw-2/",
+      "detailPath": "articles/322d29268520909b573e8474.json"
+    },
+    {
+      "id": "9b0bbf54c9d053a3fba072d5",
+      "title": "android反编译-反编译工具和方法",
+      "summary": "前言 开发过程中有些时候会遇到一些功能，自己不知道该怎么做，然而别的软件里面已经有了，这个时候可以采用反编译的方式，解开其他的程序，来了解一些它的做法，同时啊，还可以借鉴别人的软件结构，资源文件，等等，哈哈。那我就来讲解一些关于反编译相关的知识，主要分三篇，第一篇介绍反编译的工具和方法，第二篇，介绍smali的语法,第三篇介绍如何防止反编译，主要通过这几篇文章，了解如何去做反编译和代码加固。 工具 apktools-目前最强大的反编译工具 轻松反编译apk，解析出资源文件，xml文件，生成smali文件，还可以把修改后的文件你想生成apk。 支持windows,linux,mac。 下载地址: https://code.google.com/p/android-apktool/downloads/list 请…",
+      "image": null,
+      "publishedAt": "2015-01-11T14:19:17Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-11-android-decompile-tools/?utm_source=rss",
+      "detailPath": "articles/9b0bbf54c9d053a3fba072d5.json"
+    },
+    {
+      "id": "1633e8410d1fb9d828136f58",
+      "title": "2014年总结",
+      "summary": "14年总结 又一年开始，网上也流散着许多的年终总结，往年我也会写写，都是流水的回忆。前两日，与小波电话聊天，突然想到问他一四年用三个词总结是什么？得到的是失恋，毕业，工作。让我说说2014的三个词，竟然一时无从说起。这两日一直思考这个问题，毕竟这一年过的比较平淡。用三个关键词形容2014，就是\"踏实\", “责任\"和\"收获\"吧。 2014年对于我来说,是很平淡的一年，没有什么大的波折，一些都还比较顺。这一年很踏实，这一年读了很多书(可能是我目前为止读书最多的一年)，第一年开始认真用心的写博客，同时从广州转战上海，心里上也很踏实。 这一年奶奶去世了，家里还有几个老人，同时父母身体也不好，几次回家，都能感受到父母的担子。妹妹也来到上海开始新的学业，在这边也好有个照应。公司的项目，已经开始了基本单兵作战，要保证软件的…",
+      "image": null,
+      "publishedAt": "2015-01-05T14:24:37Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-05-2014-review/?utm_source=rss",
+      "detailPath": "articles/1633e8410d1fb9d828136f58.json"
+    },
+    {
       "id": "6523d566ecae9df3204e2d2e",
       "title": "2014 年终总结",
       "summary": "不知不觉间，又到一年尾，想想自己这正式工作也有大半年了，加上之前的实习，也算是有一年半多“工作经验”的人了。在今年的六月份，大学也划上了圆满的句号，还记得当初大一刚去学校报道时的一个标语——“今天我以烟大为荣，明天烟大以我为荣”，我肯定是不达标了。",
@@ -582,83 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
       "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
-    },
-    {
-      "id": "5d9ab7333063bf5c41ecbfca",
-      "title": "android异步操作总结",
-      "summary": "Android中经常会有一些操作比如网络请求，文件读写，数据库操作，比较耗时，我们需要将其放在非UI线程去处理，此时，我们需要处理任务前后UI的变化和交互。我们需要通过类似js中异步请求处理，这里总结我所了解到的，方便自己记忆，也方便别人的浏览。 AsyncTask new AysncTask().execute(); AsyncTask会按照流程执行在UI线程和一个耗时的任务线程。 1.onPreExecute() 执行预处理，它运行于UI线程，可以为后台任务做一些准备工作，比如绘制一个进度条控件。 2.doInBackground(Params…) 后台进程执行的具体计算在这里实现，doInBackground(Params…)是AsyncTask的关键，此方法必须重载。在这个方法内可以使用publish…",
-      "image": null,
-      "publishedAt": "2014-03-16T08:18:25Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
-      "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
-    },
-    {
-      "id": "1c139bd8e75283939d7dda72",
-      "title": "解决Ubuntu下Sublime text 3中文输入的问题",
-      "summary": "好久之前便听朋友说起Sublime Text这款软件很好用，终于这几天有空折腾，把软件给装起来了。用起来确实很不错，写代码很爽。 但是用了一段时间之后，我需要输入中文了，无论怎么切换输入法，都无法切换到中文。 网上搜索了一下，原来这是Bug。找解决方法吧。下面介绍我的解决方案，是大神cjacker解决成功的啦，我只是copy一下，方便大家在遇到这个问题的时候可以方便解决。 我的系统：ubuntu 13.04 我的输入法：fcitx sublime版本：3059 理论上支持 sublime text2/3 1.保存代码sublime-imfix.c /* sublime-imfix.c Use LD_PRELOAD to interpose some function to fix sublime input…",
-      "image": null,
-      "publishedAt": "2014-03-14T16:24:45Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-15-ubuntu-sublime-text-error/?utm_source=rss",
-      "detailPath": "articles/1c139bd8e75283939d7dda72.json"
-    },
-    {
-      "id": "e9f8e637af3d3fb54ca889a7",
-      "title": "去艺圃",
-      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
-      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
-      "publishedAt": "2014-02-27T01:59:29Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/02/26/go-yipu/",
-      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
-    },
-    {
-      "id": "0dfa29cd063255aa2c6bda7b",
-      "title": "【2013】我该如何存在",
-      "summary": "这篇年终总结竟然被我拖到2014年。 最近日程安排得太满，复习、结课，还剩几门实验没有做完，深深感觉这学期欠的太多，所以在最后一切都要偿还，力不从心。但再苦再累，2013年还是熬过去了。 每逢过年，不管是元旦还是春节，我总会有一种怅然若失的感觉，周边的人可能觉得这是个大家聚在一起的好机会，而我总是下意识地想逃避人群，避开饭席，避开跨年晚会。以往元旦能逃回家静一静，今年元旦只放一天，于是就在学校跨年，和一群好友去学校办的跨年篝火晚会凑热闹，零点一过，所有人都在说新年快乐，舞台上的人在喊，底下人有伴的就拥吻，或是拿起手机向远方发去祝福，而我下意识地竟然叹了一口气，经旁边朋友的提醒才发现2014肇始我说的第一句话是个“哎”。真不是个好的开始，不知道明年总结的时候会不会感叹自己做了一件错事。 这个开头略悲伤，但也到此…",
-      "image": null,
-      "publishedAt": "2014-01-02T07:19:20Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/01/01/year-2013/",
-      "detailPath": "articles/0dfa29cd063255aa2c6bda7b.json"
-    },
-    {
-      "id": "29400d3a1f4032070b945d8d",
-      "title": "2013年11月26日",
-      "summary": "最近一直在准备周末的考试：大物和概率论。常常在校门对面的肯德基复习到凌晨。 今早回宿舍的时候，抬头一看，久违的星星闪烁在朔秋的夜空中。我甚至可以隐约分辨出如素纱般轻柔的银河，如果没有月亮分占了半边天的光亮，能否",
-      "image": null,
-      "publishedAt": "2013-11-28T23:24:47Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2013/11/28/2013-11-26/",
-      "detailPath": "articles/29400d3a1f4032070b945d8d.json"
-    },
-    {
-      "id": "9137fc27907f85759cd08f40",
-      "title": "Nanoblock 大耳狗（相簿）",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/cinna1-a2eab65b538179af705e31e9f5571ffd.jpg",
-      "publishedAt": "2013-11-25T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/nanoblock-cinnamoroll",
-      "detailPath": "articles/9137fc27907f85759cd08f40.json"
-    },
-    {
-      "id": "395b82125463d487bb3526ff",
-      "title": "自創曲-樹下",
-      "summary": "樹下.mp4 去年九月,因為當小香腸(鄉長)的關係,所以要弄教師節活動 因為戲有點短 所以我想寫一首歌充個兩分鐘也好 但我在那時候 會按的和弦不超過6個 也不懂樂理.拍子,甚至連和弦級數都不知道 然後就在一個禮拜內完成編曲+錄音 那時候我根本神經病吧,發癲才這樣做 最後在台上結果就是亂啊 但現在有一點點的功力 現在編曲應該好一些些吧 現在根本不敢聽當時的demo和live.. 當時屋中的一千人有人記得這段旋律嗎 應該沒有,, 最後 感謝那些在去年教師節前一個禮拜 被我抓來的幾個臨時演員 我想到我還沒好好謝謝你們呢",
-      "image": null,
-      "publishedAt": "2013-11-01T19:14:10Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/under-tree/",
-      "detailPath": "articles/395b82125463d487bb3526ff.json"
     }
   ]
 }

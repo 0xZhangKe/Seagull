@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "17643a079b90291b9356857d",
+      "title": "CVE-2016-6321 notes: \"pointyfeather\", a logic bug in GNU tar.",
+      "summary": "I read this document but had a little trouble understanding it at first: \"Vulnerability: POINTYFEATHER aka Tar extract pathname bypass\" : Tar will happily extract files & directories into an arbitrary location when supplied with a suitably crafted archive file. If a target system is extracting an attacker supplied file, the vulnerability can be exploited to…",
+      "image": null,
+      "publishedAt": "2016-11-04T04:09:00Z",
+      "sourceId": "5e4db476da32a0bc",
+      "sourceTitle": "lizzie",
+      "link": "https://blog.lizzie.io/cve-2016-6321-notes.html",
+      "detailPath": "articles/17643a079b90291b9356857d.json"
+    },
+    {
       "id": "22ff31ff66e9750bf8a1c720",
       "title": "Using userfaultfd: sample code!",
       "summary": "userfaultfd is being used in kernel exploits to temporarily stop kernel execution . I had trouble finding out how to use it, so I wrote a little program. Some notes: If you don't include O_NONBLOCK in the userfaultfd flags argument, poll will always return a POLLERR . The API is complicated by a backwards-compatibility mechanism. You're supposed to issue so…",
@@ -648,17 +659,6 @@
       "sourceTitle": "物灵",
       "link": "https://matling.fit/blog/junior-english/",
       "detailPath": "articles/294f0db3d50504c0fb3a8138.json"
-    },
-    {
-      "id": "5b3e4ed7dddb53c174e11ed1",
-      "title": "Boom Matt",
-      "summary": "This is my version of the mobile game Boom Dots by Umbrella Games , made this one Saturday evening in 2015 using Phaser HTML5 game framework just to see what it was like. Works on mobile, of course. Play in your browser: gingerbeardman.itch.io/boom-matt",
-      "image": "https://cdn.gingerbeardman.com/images/posts/boom-matt-title.png",
-      "publishedAt": "2015-03-14T23:59:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2015/03/14/boom-matt/",
-      "detailPath": "articles/5b3e4ed7dddb53c174e11ed1.json"
     }
   ]
 }

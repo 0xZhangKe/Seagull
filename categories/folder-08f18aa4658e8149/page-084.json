@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "ae366277a0c84ee79a4a2b6d",
+      "title": "该让机器人交社保吗？",
+      "summary": "两会期间，忘了在哪看到一则新闻，说有人大代表提议，要工厂里的“机器人”也交社保。 新闻一出，网络立即一片哗然。 民间一直以来都有这样一种声音，认为社保是一种“税”。这种“税”既增加了企业负担，也减少了劳动者实际到手收入。 对于现代社保制度，他们也有不同的看法，认为现代社保制度是一项不可持续的制度，它建立在经济持续发展，社会生产力不断增长的假设之上。而这个假设本身，很有可能是错误的。这种质疑的声音不仅仅针对我国的社保制度，而是对全世界所有国家现行的社保制度都提出了同样的质疑。 前段时间，以刘强东主导的京东为首，发出了“算法不能成为压榨底层兄弟工具”的时代强音，同样引出了同样的质疑声音。 质疑的理由千奇百怪，但归根结底，并没有在前人的基础上更进一步，还是加重企业负担，减少劳动者到手收入，这样的老调重弹。 只不过，…",
+      "image": null,
+      "publishedAt": "2025-03-24T12:43:52Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/301.html",
+      "detailPath": "articles/ae366277a0c84ee79a4a2b6d.json"
+    },
+    {
+      "id": "4e8b3b4096a061edd135cb55",
+      "title": "Future 的大小对性能的影响",
+      "summary": "在 Rust 异步编程中，有一种观点认为： Future 的大小显著影响性能 。你是否怀疑过这个说法的真实性？如果是真的，这种性能差异的根源又是什么？今天，我翻阅了一些源码，并编写实验代码来一探究竟。 Future 的大小如何计算？ 为了验证“Future 大小影响性能”这一说法是否成立，我们先从一些简单代码入手。首要任务是弄清楚一个 Future 的大小是如何确定的。毕竟，在编译器眼里，Future 只是一个 trait： pub trait Future { type Output ; fn poll ( self : Pin < & mut Self > , cx : & mut Context < ' _ > ) -> Poll < Self :: Output > ; } 那么，其大小取决于实现这个…",
+      "image": null,
+      "publishedAt": "2025-03-24T02:21:03Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/future-size-perf/",
+      "detailPath": "articles/4e8b3b4096a061edd135cb55.json"
+    },
+    {
+      "id": "480990264d26ddf0f8aae7c2",
+      "title": "我同意",
+      "summary": "安裝完一個新 App、第一次開啟的時候，可能會出現一個視窗問你同不同意他們的隱私政策、使用條款之類的東西。你總是都按「我同意」對不對？我當然也是，畢竟不同意的話就不能用了嘛！",
+      "image": null,
+      "publishedAt": "2025-03-24T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/line-privacy-policy",
+      "detailPath": "articles/480990264d26ddf0f8aae7c2.json"
+    },
+    {
+      "id": "043d1a2439a0bafd87ad839a",
+      "title": "值班",
+      "summary": "这周轮到我值班了。 上一次值班还是年前，那是我第一次在这家公司值班。 只知道找你的人，一个接着一个，一个问题解决完，马上又是第二个问题。 我还是偏偏是那种不爱拖着的人，有问题只想着赶紧解决完事儿。 于是我就像是一台连轴转的机器，亦或者是一头打了鸡血的驴。 从早上到晚上，不停的“充实”着这每一天。",
+      "image": null,
+      "publishedAt": "2025-03-23T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/zhi-ban",
+      "detailPath": "articles/043d1a2439a0bafd87ad839a.json"
+    },
+    {
+      "id": "93f1f5b7cc12d6a985858a8c",
+      "title": "简单聊聊常见的负载均衡算法",
+      "summary": "这篇文章鸽了很久，最终决定还是老老实实写完，来介绍一下常见的一些负载均衡算法实现。本文的代码最终都会放在 load-balancer-algorithm 1 这个 repo 中 我从来没有觉得写博客快乐过",
+      "image": "https://user-images.githubusercontent.com/7054676/82696622-f73b2800-9c99-11ea-8d14-08f67487f3b9.png",
+      "publishedAt": "2025-03-23T12:00:00Z",
+      "sourceId": "a6add2003c9627a9",
+      "sourceTitle": "Manjusaka",
+      "link": "https://www.manjusaka.blog/posts/2025/03/23/a-simple-introduction-about-load-balance-algorithm/",
+      "detailPath": "articles/93f1f5b7cc12d6a985858a8c.json"
+    },
+    {
+      "id": "d469c1194a7614e343cc02de",
+      "title": "最慘的音響案子",
+      "summary": "前言 # 2025/03/21，或許 Eddie 一輩子不會忘記這一天。 這天，是在圓山飯店的春酒活動，廳不大，只出了了外場 2 顆喇叭，內場 2 顆喇叭。 怎麼按都沒反應的 Mixer 慘案序幕 # 臺上正在玩比手劃腳的遊戲，因此放著節奏感鮮明的背景音樂，當遊戲結束時，將音樂的音量推桿收到無限小，準備換過場音樂。 「蛤？？？？？」爲什麼音樂還在？趕緊先用電腦軟體端做淡入/淡出換音樂！ 顫抖地跟一旁的搭檔 — — 小王哥說，推桿失去控制了！ 經過一番操作（其實是亂按），發現整臺控臺的操作界面都失去控制了，旋鈕、按鈕、推桿全部無法操作，但是音樂與主持人的麥克風是可以持續使用的，訊號有進到音控臺，也有送出去喇叭。 問題是，待會還有音樂演出阿！他們的麥克風跟伴奏都是沒有開啓的！ 失控的 Mixer.gif 第一幕…",
+      "image": "https://wasabi.gtisland.com/blog/uncontroll.gif",
+      "publishedAt": "2025-03-23T10:27:23Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mixer_crashed/",
+      "detailPath": "articles/d469c1194a7614e343cc02de.json"
+    },
+    {
+      "id": "15341a9fb09f6bcef7202d0f",
+      "title": "「一部未完成的电影」映后记",
+      "summary": "从小没挨过饿，不知道囤粮",
+      "image": null,
+      "publishedAt": "2025-03-23T03:59:59Z",
+      "sourceId": "ceaf0b2f378ff5ae",
+      "sourceTitle": "Lofi'Log 低保真日志",
+      "link": "https://lofilog.com/posts/an-unfinished-film-review/",
+      "detailPath": "articles/15341a9fb09f6bcef7202d0f.json"
+    },
+    {
       "id": "6f90c3e3dd8dd9d57879a2dd",
       "title": "人生稅",
       "summary": "問人生想要追求什麼，大家的答案往往都大同小異：有錢、健康、受人尊重、有外表和個性又好的另一半⋯⋯所以問自己這個是沒什麼意義的，更好的問題可能是：「我願意忍受哪些痛苦？」。",
@@ -582,83 +659,6 @@
       "sourceTitle": "金色河流",
       "link": "https://goldenriver.site/posts/2025-week-10/",
       "detailPath": "articles/8e65ef878f98c1b0e0b0510c.json"
-    },
-    {
-      "id": "340d545b0f5d93ce9e0f3756",
-      "title": "Typst 2025 社区通话",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2025-03-09T19:24:52Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/typst-call/",
-      "detailPath": "articles/340d545b0f5d93ce9e0f3756.json"
-    },
-    {
-      "id": "1205f6f55164c7da193dc6b0",
-      "title": "迎着阳光盛大逃亡",
-      "summary": "迎着阳光盛大逃亡｜随笔20250308 最近英国的天气连续几天都特别好，阳光灿烂，没有早春的寒峭、只有暖意的明 […]",
-      "image": null,
-      "publishedAt": "2025-03-09T17:55:38Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1313",
-      "detailPath": "articles/1205f6f55164c7da193dc6b0.json"
-    },
-    {
-      "id": "2a806bf1b2ef696476237787",
-      "title": "何以为家",
-      "summary": "今天交了退学申请",
-      "image": null,
-      "publishedAt": "2025-03-09T13:59:59Z",
-      "sourceId": "ceaf0b2f378ff5ae",
-      "sourceTitle": "Lofi'Log 低保真日志",
-      "link": "https://lofilog.com/posts/nowhere-to-call-home/",
-      "detailPath": "articles/2a806bf1b2ef696476237787.json"
-    },
-    {
-      "id": "3c448a3b86e9d0294b12121e",
-      "title": "从前有个国家比较横",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-03-09T13:25:23Z",
-      "sourceId": "a694ae3a017dd381",
-      "sourceTitle": "科学的历史观",
-      "link": "https://mp.weixin.qq.com/s/e230q2UOzHWSmrmvRUhQOg",
-      "detailPath": "articles/3c448a3b86e9d0294b12121e.json"
-    },
-    {
-      "id": "f170169ac922a0155c20cf0f",
-      "title": "Kitty终端美化记录",
-      "summary": "Kitty这个终端可谓是兼顾了性能与美观，虽然默认设置很简陋，但是经过一番折腾后也能变得很漂亮。 选择配色 运行 kitty + kitten themes 后会弹出一个选择配色的界面 令我感到非常高兴的是，这个界面支持vim的hjkl键位，也可以用/来搜索。 选好后，回车按m，command + ^ + ,重载配置文件。 配置字体 打开kitty的配置文件 nvim ~/.config/kitty/kitty.conf ，把字号改到12 font_size 12 输入 kitty list-fonts --psnames 来列出系统安装好的所有等宽字体。 设置窗口风格 进入配置文件 #window # 不显示窗口标题栏 保留窗口圆角 hide_window_decorations titlebar-only…",
-      "image": "https://images.glowisle.me/Pasted%20image%2020250309124346.webp",
-      "publishedAt": "2025-03-09T12:41:10Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/kitty%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E8%AE%B0%E5%BD%95/",
-      "detailPath": "articles/f170169ac922a0155c20cf0f.json"
-    },
-    {
-      "id": "fa6ddb8dcb7d51aa8049c92a",
-      "title": "毒药",
-      "summary": "写完这篇我就要离开这里。",
-      "image": "https://fravilion.top/usr/uploads/2025/10/733074870.webp",
-      "publishedAt": "2025-03-09T08:52:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/161/",
-      "detailPath": "articles/fa6ddb8dcb7d51aa8049c92a.json"
-    },
-    {
-      "id": "d4e46c9da560a6f22a98e9ff",
-      "title": "偷看一下别人家的窗",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-03-09T08:33:45Z",
-      "sourceId": "a20e61e97b4c97e5",
-      "sourceTitle": "MorningRocks",
-      "link": "https://mp.weixin.qq.com/s/Xm8oeDaY3dO75F9q-N7Mmw",
-      "detailPath": "articles/d4e46c9da560a6f22a98e9ff.json"
     }
   ]
 }

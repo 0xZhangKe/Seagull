@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "f80c469b0b4cc3bfb483299c",
+      "title": "产后问题和护理",
+      "summary": "生产之后的一段时间，发生在自己身上的种种。Spoiler: 产前看过的漫画《妊娠育児あるある》的 这一话 大部分都不幸发生在自己身上了。 过了自己的产褥期，回顾起来自我感觉的时间线大概是这样的——第一周是地狱，第二周也是地狱，第三周还是地狱，第四周好像有点好一些了，第五周第六周发现原来是自己习惯了。不过写下这些，包括 birth story 这篇 ，并不是为了抱怨产褥期的辛苦，而是为了让读到这篇的人（包括日后的自己）觉得自己并不是一个人遇到过各种各样的问题。还找到了一个 跟自己的生产、产后经历都相似的帖 ，也可以作为参考。 身体 # 按照自己觉得从影响自己身体的严重到不严重程度来排序： 睡眠 # 首当其冲的影响就是睡眠。从前固定每晚10点半上床、6点半起床的我，从 Baby 出生的那一刻开始，连续几天几乎没有…",
+      "image": null,
+      "publishedAt": "2019-07-12T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/postpartum-care/",
+      "detailPath": "articles/f80c469b0b4cc3bfb483299c.json"
+    },
+    {
+      "id": "b61437e8c365be5378a0ee27",
+      "title": "在医院的下半场：产后与新生儿护理",
+      "summary": "经历了 在医院的上半场 ，现场就像一场激烈的战斗刚刚结束。医生和护士们熟练地收拾、打扫，然后逐渐离开了产房。气氛也逐渐变得平静、放松。 同样，本文记录的是我作为旁观者和陪伴者的观察与感受。作为当事人，Miki 则将自己的亲身体验记录在 《生产的故事》 中。之后我们读了彼此写的内容，这才了解到对方独特的体验。 产后（postpartum/postnatal） # 婴儿出生后的15至20分钟内，一般会让婴儿和父母待在一起，同时调低周围的亮度，保持安静。对于婴儿来说，刚来到这个世界，一切都很陌生。此时父母可以与婴儿肌肤相亲，并对婴儿说话。这些都有助于让他们感到安心。胎儿（fetuses）在母体中时经常听到父母的声音。所以，他们出生来到陌生的世界后，最先能够辨认出的声音也是父母的声音。 接下来，我们从产房转移到了产后…",
+      "image": "https://fourhappylions.com/posts/postpartum-and-newborn-care/postpartum-room_hu_d074ed7f83bb3c8.jpg",
+      "publishedAt": "2019-07-08T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/postpartum-and-newborn-care/",
+      "detailPath": "articles/b61437e8c365be5378a0ee27.json"
+    },
+    {
+      "id": "96c8e60e5bc76733158e68da",
+      "title": "在医院的上半场：待产与分娩",
+      "summary": "离预产期只剩下一周，Miki 却感觉一点动静也没有。我们开始担心 Baby 的出生会不会拖到预产期之后。产科医生则安慰我们说，生产随时都可能发生，也许就是下周二——那天刚好她值班；也许就是这周五——那 Baby 就刚好和她同一天生日了。我们虽然仍将信将疑，却也宽心不少。 这里记录了我们在美国医院从破水、待产到分娩的经历。这对我们俩来说都是第一次，既兴奋又紧张。我很难体会 Miki 身体的变化和她的感受，同时又觉得自己该做些什么，但也帮不上太多忙，只能靠整理和复习之前与 Miki 一起学习的材料来缓解焦虑。索性也把当时学到的一些知识穿插其中。 另外，本文记录的是我作为旁观者和陪伴者的观察与感受。作为当事人，Miki 则将自己的亲身体验记录在 《生产的故事》 中。之后我们读了彼此写的内容，这才了解到对方独特的体验…",
+      "image": "https://fourhappylions.com/posts/labor-and-delivery/parking-sign_hu_51a34d34605dd0a5.jpg",
+      "publishedAt": "2019-07-04T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/labor-and-delivery/",
+      "detailPath": "articles/96c8e60e5bc76733158e68da.json"
+    },
+    {
+      "id": "ef89f9e7ffa9e1b9c6ccfc69",
+      "title": "Android Systrace 基础知识 - SystemServer 解读",
+      "summary": "本文是 Systrace 系列文章的第四篇，主要是对 SystemServer 进行简单介绍，介绍了 SystemServer 中几个比较重要的线程，由于 Input 和 Binder 比较重要，所以单独拿出来讲，在这里就没有再涉及到。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Systrace 这个图形化的角度，你可以理解的更深入一些。",
+      "image": null,
+      "publishedAt": "2019-06-29T09:52:52Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/06/29/Android-Systrace-SystemServer/",
+      "detailPath": "articles/ef89f9e7ffa9e1b9c6ccfc69.json"
+    },
+    {
+      "id": "639f313d918c0dbb16caedba",
+      "title": "CSS 陷阱",
+      "summary": "CSS 的奇妙 Bug 访问 https://www.yunyoujun.cn/posts/css-trap-note 阅读全文。",
+      "image": null,
+      "publishedAt": "2019-06-27T18:32:55Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/css-trap-note",
+      "detailPath": "articles/639f313d918c0dbb16caedba.json"
+    },
+    {
+      "id": "7bf23fe44d553188a66066d9",
+      "title": "Blender 学习笔记",
+      "summary": "访问 https://www.yunyoujun.cn/posts/blender-learn-note 阅读全文。",
+      "image": null,
+      "publishedAt": "2019-06-26T10:49:33Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/blender-learn-note",
+      "detailPath": "articles/7bf23fe44d553188a66066d9.json"
+    },
+    {
       "id": "a21005bb93e4841c55f24095",
       "title": "生产的故事",
       "summary": "记录自己这次有 epidural 的顺产。情况开始于39周4日的晚上。 第一天（39周4日） # 6:30pm 感觉阴道里有水流出来，但只有一点点。带出来了一块 mucus plug，不过之前几天也有 mucus plug 释放出来，所以没有非常警惕。虽然有点介意，不过决定继续开车和吃晚饭。 7:30pm 感觉流出来的水忽然变多了一些，一时间没有卫生巾，到了需要用厨房纸擦的情况。内裤上还带有一点粉色，大概是血吧。怀疑自己破水了，但是水流断断续续的，根本不像传说中的水沿着大腿流下来云云。闻闻味道，好像没什么特别的，不是尿味，也不知道是不是羊水的味道。于是给诊所打电话问到底是不是破水，护士爽快地让我过去查查。带了 id 和保险卡就去了。 8:15pm 先检查 vitals（貌似有血压、脉搏、血氧饱和度），留尿样和…",
@@ -593,72 +659,6 @@
       "sourceTitle": "Memozine",
       "link": "https://memozine.me/2019/01/26/inventing-five-fu-s-tradition",
       "detailPath": "articles/9428337d803887a58d92c4e7.json"
-    },
-    {
-      "id": "7432f07dea4c1b0c99ccdd55",
-      "title": "直到死亡把我们分开",
-      "summary": "黑镜 S4E4 “Hang the DJ”，人们使用系统来不停与其他人约会，可以通过系统看到两人能够在一起多久，短则 12 小时，长的 365 天。 故事的两个主角第一次见面，只有 12 个小时。他们都是第一次使用，不知道如何是好，干冷的笑话，尴尬的聊天，拘束的举止。躺在床上的时候，他们也很老实，只是握了握手，没有更进一步的举动。 第二天，他们分开了，往后长长短短的和其他人在一起，但他们心里都想着对方，那个夜晚的约会，像是单纯的一见钟情。后来，系统又给了他们重聚的机会，他们约定不看系统预判的在一起时间，全身心享受这段时光。 可是有个夜晚，男人没忍住偷偷看了系统，五年。他本应该高兴的，但时间不断缩短，最后只剩下不到一天时间。可想而知，男人心不在焉地和女人度过了最后的时光。 看这集的时候，我觉得我特别能够感同身受…",
-      "image": null,
-      "publishedAt": "2019-01-23T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2019/01/24/hang-the-dj",
-      "detailPath": "articles/7432f07dea4c1b0c99ccdd55.json"
-    },
-    {
-      "id": "a921343f64b44f17aac89a58",
-      "title": "bug3",
-      "summary": "smallbug3 canary 后两位一定是 00，可以通过 canary 找到。填充多少位，可以通过 telescope 0x20 找到 canary 位置，再 distance $rsi canary 找到。 canary 小端序存储在内存中，就可以把开头两位 00 覆盖成 'c'，这样读到 c，rjust00 后就可以解出 canary（我用 sendline，多发的一个 '' 起到了填补 \\0 的效果，但自己一直没发现，卡了好久 ） 。 程序基址可以用 GDB 中 vmmap 看，发现和跟着 canary 打出来的 rbp 前几位相同，我记得讲过开了地址随机化程序基址后三位也一定是 000，所以可以根据 rbp 求出程序基址。 思路就是首先泄露出 canary、程序基址前几位，然后 puts 泄露…",
-      "image": null,
-      "publishedAt": "2019-01-22T13:55:18Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/bug3/",
-      "detailPath": "articles/a921343f64b44f17aac89a58.json"
-    },
-    {
-      "id": "9c7a49b1ab3b5df2469e0d80",
-      "title": "Android 无障碍服务导致的整机卡顿案例分析",
-      "summary": "现象 有用户反馈，手机在滑动的时候, 列表会一抖一抖的, 滑动桌面或者设置（只要是可以滑动的），都会出现，但是这个并不是必现，而是某些用户会出现，",
-      "image": null,
-      "publishedAt": "2019-01-20T16:22:22Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/01/21/android-performance-case-jank-accessbility/",
-      "detailPath": "articles/9c7a49b1ab3b5df2469e0d80.json"
-    },
-    {
-      "id": "021ac5e7381e2d92bc3ce6b8",
-      "title": "时间切除",
-      "summary": "上周读书会，我们一起聊天讨论，从传统文化到社会问题，从综艺节目到电视剧。其中有一个小插曲，张老师说她最近在看电视剧，同学说可以在网上看，张老师说她喜欢电视播放的“延迟”感，插补一些广告，可以想想剧情如何发展，思考为什么这么演。接着她又说： 如果在电脑上看，可以看一整天，那么这一天就别想做别的事情了。 当时我只是把它当作平常的对话，但是回去后又想了想，发现其中存在着我们这些住寝室没有电视可看的学生，所忽视的问题。电视机的节目安排和视频网站很不一样，固定时间播放的视频内容和随时在线点播的视频内容，拥有两种时间模式。 电视遵循“ 媒介时间 ”，它有自己的节目安排表。我记得儿时报纸会提供电视节目单，预告接下来一到两周的节目安排。这种节目安排是配合人的生活作息的，比如早间节目通常面向老人，傍晚的动画片是给放课后的孩子看…",
-      "image": null,
-      "publishedAt": "2019-01-13T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2019/01/14/time-cutting",
-      "detailPath": "articles/021ac5e7381e2d92bc3ce6b8.json"
-    },
-    {
-      "id": "716ba2f12ddf28b59e34f097",
-      "title": "2018 年度好物推荐 - 给辛勤工作的自己一点奖励",
-      "summary": "2018 年初写了一篇 <2017 年度最推荐-给辛勤工作的自己一点奖励> , 最近有人问我今年是否会有 2018 年的年度推荐，我想了想，2018 年虽然不景气，但是还是有一些好东西可以推荐给大家，于是便有了这一篇文章。 跟 2017年一样，我会把 2018 年里面我觉得体验很棒或者对工作生活很有帮助的东西推荐给大家，或许 2019 你会需要他们。推荐的内容包含了 App、硬件、书籍、博客、专栏等，希望能帮助到看到这篇文章的你 清单分几个类目：App 主推 Rescuetime、石墨文档、坚果云；技术书推《深入理解 Android 架构（第二版）》、《Android 进阶解密》、《奔跑吧 Linux 内核》；非技术书推《镖人》、《大败局2》、《程序员的修炼——从优秀到卓越》；软件服务推微信读书会员；消费品推…",
-      "image": null,
-      "publishedAt": "2019-01-12T02:51:05Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/01/12/recommend-of-2018/",
-      "detailPath": "articles/716ba2f12ddf28b59e34f097.json"
-    },
-    {
-      "id": "bdf2ff0078e221d54ad4841e",
-      "title": "Java 垃圾回收权威指北",
-      "summary": "毫无疑问，GC（垃圾回收） 已经是现代编程语言标配，为了研究这个方向之前曾经写过四篇 《深入浅出垃圾回收》 博文来介绍其理论，之后也看了不少网络上关于 JDK GC 原理、优化的文章，质量参差不齐，其中理解有误的文字以讹传讹，遍布各地，更是把初学者弄的晕头转向。 不仅仅是个人开发者的文章，一些 大厂的官博 也有错误。 本文在实验+阅读 openjdk 源码的基础上，整理出一份相对来说比较靠谱的资料，供大家参考。",
-      "image": null,
-      "publishedAt": "2019-01-09T20:14:54Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2019/01/09/java-gc-definitive-guide/",
-      "detailPath": "articles/bdf2ff0078e221d54ad4841e.json"
     }
   ]
 }

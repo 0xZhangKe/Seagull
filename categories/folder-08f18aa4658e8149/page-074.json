@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "97bb0855c5c2d7055f0dd162",
+      "title": "離線演講",
+      "summary": "前陣子看到一個網路上的演講影片（真人、有現場觀眾的實體演講），影片中的講者在簡報途中，想要播放一個短短的影片來解釋論點：",
+      "image": null,
+      "publishedAt": "2025-08-06T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/offline-presentation",
+      "detailPath": "articles/97bb0855c5c2d7055f0dd162.json"
+    },
+    {
+      "id": "fa5679bb04695e55e54c9b83",
+      "title": "Blaugust01:写字的人不会完蛋(吧)",
+      "summary": "那一天的复兴，复兴起来 无意中发现了 Dayu同学分享的Blaugust活动 ，感觉非常有意义，立刻决定参加。 一句话总结： Blaugust是一个鼓励大家在八月多写多发blog的活动 点这里了解活动详情 点这里报名参加活动 为什么要写？ 我希望在记录生活的同时努力复建自己的长文写作能力。 无论承认与否，碎片化的信息时代确实在悄悄改变和塑造着我的表达习惯。拍照画幅从1:1过渡到16:9，不是审美的变化，而是为了适配平台的图片尺寸要求；文字被反复斟酌删减，段落被强制切割，也不是为了语言的精准凝练，而是为了不超过平台的字符限制。 我珍惜没有审核、没有限时、没有评分标准的书写自由。我不喜欢用谐音或者拼音替代的原有的汉字，不愿意在严格的自我和外部审查之下把一句话扭曲成不自然的表达。尽管我并不是所谓的语言纯粹主义者，也…",
+      "image": "https://1sle29.github.io/img/seal1.png",
+      "publishedAt": "2025-08-06T00:00:00Z",
+      "sourceId": "72390a92567df082",
+      "sourceTitle": "1sle",
+      "link": "https://1sle29.github.io/p/2025-blaugust-1/",
+      "detailPath": "articles/fa5679bb04695e55e54c9b83.json"
+    },
+    {
+      "id": "3ee9e2bb99b3e846fe8e4b37",
+      "title": "特斯拉，按个按钮就爆炸！",
+      "summary": "今天和x去商场，傍晚回家，到家下车听到几个老太太在讨论美国、特斯拉什么的，我俩等电梯的间隙就听了一会，五人围坐，靠近电梯的一个老太太给其他四人说「现在美国人可坏了，他们卖的车，换个灯泡咱自己换只要几块钱，他们换就是几万，美国人还能控制车，按个按钮就爆炸，还有手机也是，美国的手机按个按钮就爆炸，炸死好多人」，旁边老太太说「是的吗，我听人家说美国车贵，还能爆炸啊，那不吓死人」。 我很奇怪，为什么他们会被「洗脑」的如此根深蒂固，比如农村的大爷大妈，有的听到美国、日本，咬牙切齿的说「他们都是坏熊」，可是他们这辈子和美国、日本人都并不会有任何交集，很可笑的是，他们需要做心脏搭桥使用耗材时，却求着家人给他们购买进口支架，这很言行不一。 当时我没说话，回家后x给我说为什么当时你不骂她，我心想，一群老太太过过嘴瘾而已。 大家…",
+      "image": "https://ihaihe.cn/wp-content/uploads/2025/08/image.webp",
+      "publishedAt": "2025-08-05T10:45:13Z",
+      "sourceId": "8e1a97c92477b087",
+      "sourceTitle": "三十里海河",
+      "link": "https://ihaihe.cn/3333.htm",
+      "detailPath": "articles/3ee9e2bb99b3e846fe8e4b37.json"
+    },
+    {
+      "id": "c8359335b03b5b402a5309ca",
+      "title": "Android Perfetto 系列 8：深入理解 Vsync 机制与性能分析",
+      "summary": "在 Perfetto 里看到 vsync-app 、 vsync-sf 和 App 的 doFrame ，很容易把三条轨道当成同一个时刻。这篇沿一次帧请求看 VSync 怎样从 SurfaceFlinger 的调度进入 App，接着怎样和 RenderThread、Buffer、FrameTimeline 对齐。 示例以 120 Hz 设备为主。相位配置、是否启用硬件 VSync，以及 App 是否请求下一帧都会改变轨道形态；本文先分清每个信号代表什么，再谈延迟。 注：本文以 Android 17（API 37）为当前技术参照，涉及 Android 13 的地方用于说明关键机制的引入；文中代码以 AOSP main 的“签名对齐精简摘录”为主，少量位置使用 ... 省略非主线逻辑，不能当成 Android 1…",
+      "image": null,
+      "publishedAt": "2025-08-05T02:15:30Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2025/08/05/Android-Perfetto-08-Vsync/",
+      "detailPath": "articles/c8359335b03b5b402a5309ca.json"
+    },
+    {
+      "id": "1987d00eabcc10c1e09de1c7",
+      "title": "浅谈风险平价模型",
+      "summary": "看似不带任何“市场偏见”的风险平价模型本身已构成一个明确的观点：四种不同经济情景在未来发生的概率相等，谁又能轻易能下这一定论或假设？",
+      "image": "https://prologue.dev/static/images/assets_return_chart.png",
+      "publishedAt": "2025-08-05T00:00:00Z",
+      "sourceId": "757145dcc77dee94",
+      "sourceTitle": "Prologue 序章",
+      "link": "https://prologue.dev/blog/a-brief-discussion-of-the-risk-parity-model",
+      "detailPath": "articles/1987d00eabcc10c1e09de1c7.json"
+    },
+    {
+      "id": "d4577756dd64862df8c30125",
+      "title": "破碎像素地牢",
+      "summary": "我之前曾經在 blog 上推薦過 Powder 這個地下城探險遊戲，當時我給了它很高的評價。但現在，Powder 抱歉，我想我找到接替你的新歡了，那就是 Shattered Pixel Dungeon（破碎像素地牢）。",
+      "image": "https://wiwi.blog/assets/images/title-ef65e542ca811c3d438fa1f25104c740.png",
+      "publishedAt": "2025-08-05T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/shattered-pixel-dungeon",
+      "detailPath": "articles/d4577756dd64862df8c30125.json"
+    },
+    {
       "id": "04d93a5fad4e38a17b7708cc",
       "title": "于是开始书写七月，在无序中寻找意义",
       "summary": "最近在听： 丁世光的《神探》 🎵 写在最前面 七月很流行问 ChatGPT：“What’s my curse？” 我也问了，ChatGPT回答我：“Think too much, express too little.” 对于这个答案……每天产出废话至少一吨的我表示它完全是在胡说八道。 Anyway七月是我坐在电脑前边儿敲字的时候啥也想不起来但是翻翻相册和各个社交媒体的posts意识到原来过得如此丰富多彩的一个月。 在无人期待中！让我们按时间顺序平滑地展开岛的七月吧。 一些很琐碎的日常 滚啊火疖子，求放过 月初Costco应季超级甜的荔枝打折，连续多日日啖2.30颗荔枝的本人立刻遭遇现世报：上火了，脖子后面长了一个超级大的火疖子（鹌鹑蛋那么大你们想象一下吧！超级可怕！）。又疼又硬，位置又尴尬，稍微一抬头就疼得…",
@@ -593,72 +659,6 @@
       "sourceTitle": "映屿",
       "link": "https://blog.verdant.ee/posts/%E6%97%A0%E8%9D%89%E9%B8%A3%E5%A4%8F/",
       "detailPath": "articles/dcc96a57c1b12649014f868a.json"
-    },
-    {
-      "id": "ca948e0e49216225c5e8e0ec",
-      "title": "上游",
-      "summary": "最近看到一則關於 Cursor（AI 輔助的程式碼編輯器）的新聞。新聞大意是說：",
-      "image": null,
-      "publishedAt": "2025-07-22T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/upstream",
-      "detailPath": "articles/ca948e0e49216225c5e8e0ec.json"
-    },
-    {
-      "id": "2c4745e37fa34fe49405965d",
-      "title": "日期列表",
-      "summary": "這個部落格上面文章越來越多啦！所以今天新增了「貼文日期列表」功能，會把全部的貼文按照日期和年份列出，歡迎試試看！在頁首和頁尾選單也有。",
-      "image": null,
-      "publishedAt": "2025-07-22T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/date-list",
-      "detailPath": "articles/2c4745e37fa34fe49405965d.json"
-    },
-    {
-      "id": "64e4cf80d87ab7e936b197cd",
-      "title": "「廣東人活吃猴腦」的傳言是怎麼來的",
-      "summary": "＊ 内容警告： 含有虐待動物的描述。 都市傳説廣東人吃猴腦要「活猴開顱」，衆賓生食。 據此作了非常粗糙的考證。近代史料龐雜，僅用《申報》肯定是不夠的，但是最近沒有精力做更多。 姑且可以認爲「活猴開顱」故事最初出現在光緒年間。 在這個早期版本裏，吃猴腦的是江蘇的官吏。 本文中將提及的幾處地點。 使用QGIS自繪。海岸綫數據來自World Wildlife Fund (WWF) 的HydroRIVERS数据集，參見Lehner, B., Grill G. (2013). Global river hydrography and network routing: baseline data and new approaches to study the world’s large river systems. Hy…",
-      "image": "https://wuliangdian.com/posts/monkey-brains/monkey-brain-map.jpg",
-      "publishedAt": "2025-07-21T18:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/monkey-brains/",
-      "detailPath": "articles/64e4cf80d87ab7e936b197cd.json"
-    },
-    {
-      "id": "80d7e39ef00feb04caa81c56",
-      "title": "去年的音樂會影片",
-      "summary": "雖然你可能已經在 NiceChord.com 或 YouTube 頻道看過了，但我還是在這邊貼一份。",
-      "image": null,
-      "publishedAt": "2025-07-21T16:40:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/peggy-concert-replay",
-      "detailPath": "articles/80d7e39ef00feb04caa81c56.json"
-    },
-    {
-      "id": "991b0a933c1b3b47bf69a78e",
-      "title": "泡沫少女英文版",
-      "summary": "https://www.youtube.com/playlist?list=PLIpy0oDdo8_3xz2f8Fi-IeU3HbsFg3d-v 原本是日文的 V 家經典「 泡沫少女 」和「 永遠的少年 」兩部曲，後來紅到英文圈，其中「泡沫少女」那首還有粉絲作了二創歌詞，然後本家 yukkedoluce 竟然把該二創歌詞直接用來以 GUMI English 新調了英文版，直接二創變官方！ （至於「永遠的少年」的英文版歌詞是本家特意委託別人寫的，所以算純官方） 太好了這樣我就聽得懂歌詞講什麼了，等等其實好像也沒有很懂。 https://projectsekai.fandom.com/wiki/Ringo_Uri_no_Utakata_Shoujo 好啦我承認我不是什麼老 V 家粉絲，我只是因為 project…",
-      "image": null,
-      "publishedAt": "2025-07-21T14:33:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/transient-apple-salesgirl-english/",
-      "detailPath": "articles/991b0a933c1b3b47bf69a78e.json"
-    },
-    {
-      "id": "6467295ec2c1c17f8e87a99c",
-      "title": "TextAnimation 的实现细节",
-      "summary": "深入解析 svelte-text-animation 组件的技术实现与最新优化",
-      "image": "https://raw.githubusercontent.com/QuarkPixel/svelte-text-animation/master/assets/example.gif",
-      "publishedAt": "2025-07-21T12:44:11Z",
-      "sourceId": "a477ed4d3d62d73f",
-      "sourceTitle": "Hsuan's Space",
-      "link": "https://quarkpixel.github.io/p/250721-details-in-text-animation",
-      "detailPath": "articles/6467295ec2c1c17f8e87a99c.json"
     }
   ]
 }

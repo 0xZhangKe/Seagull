@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "bd3a6948afa5214d1478ec82",
+      "title": "對於 DI-Box 的理解一直改變",
+      "summary": "2016 2018 2025 演出小故事 DI 的主要功能 平衡訊號的必要性？ 初次認識前級與 DI 主動式是什麼？ 隔離變壓器 要買 DI 結果買了效果器？ DI 有阻抗匹配功能？ 現代混音器內建阻抗匹配？ 還需要接 DI 嗎？ 2016 初遇 DI-box # 首次演出就出事？ # 高高興興裝完吉他拾音器，在吉他社成發前一天彩排時，發現接到混音器並把 gain 轉到最大，會超小聲，而且滿是底噪。 初次認識前級與 DI # 趕緊衝到樂器行，阿老師：「你要過一顆前級或 DI」，因為當時木吉他前級都要 NTD 6000 以上，大學生的 Eddie 囊中羞澀，只能把主意放到很便宜的百靈達（耳朵牌） DI 去。 最終買了效果器？ # 剛好在滑臉書的時候，看到有人賣二手 Zoom A3 木吉他綜合效果器，同時也有前級…",
+      "image": null,
+      "publishedAt": "2025-06-30T08:28:09Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/di-box/",
+      "detailPath": "articles/bd3a6948afa5214d1478ec82.json"
+    },
+    {
+      "id": "a7d6923c9d2d780059883626",
+      "title": "Eddie 嚴選終端機指令",
+      "summary": "基礎指令 軟體包管理器 電腦硬體 應用軟體 基礎指令 # 回「家目錄」 # cd ~ ``` text ### 回「上一層資料夾」 ``` bash cd .. 列出所在資料夾檔案 # ls ``` text ### 列出當前所在目錄 ``` bash pwd 超級權限 # 如果執行出現錯誤，可以試試看指令前加上 sudo，使用最高權限者的身份執行。 sudo [ 你要執行的指令 ] ``` text --- 有些指令須要安裝程式，請善用 apt、brew 等等「app store」也就是「軟體包管理器」來安裝，如果執行底下指令發現找不到指令，請先安裝。 ## 軟體包管理器{#package-manager} ### apt（Linux 系統常用） Linux 內建，每次使用前要養成「更新」習慣。 ``` b…",
+      "image": null,
+      "publishedAt": "2025-06-30T06:22:46Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/terminal_eddie_select/",
+      "detailPath": "articles/a7d6923c9d2d780059883626.json"
+    },
+    {
+      "id": "e5094f450b55c30e5ae6f8a0",
+      "title": "工具箱",
+      "summary": "終端機 網站架設 其他 Eddie 嚴選指令 初建 Hugo 母音練習順序 yt-dlp 安裝與使用 Rsync 部屬 Hugo yt-dlp 免指令下載 Github 同步到新裝置 Rsycn 同步到 USB Linode SMTP 設定",
+      "image": null,
+      "publishedAt": "2025-06-30T04:14:28Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/tools/",
+      "detailPath": "articles/e5094f450b55c30e5ae6f8a0.json"
+    },
+    {
+      "id": "cd17913f82bea2ba48f577d3",
+      "title": "果粉養成史",
+      "summary": "果粉如何養成 # 國小(2007)的時候，明明可以用電腦，卻喜歡偷用哥哥的 iPod 來聽音樂，因為很喜歡 iPod 的操作方式。 到了高中（2013），趁我哥去當兵的那一年，我接手用了他的 iPhone 4S，從 Sony、HTC 轉到 iPhone 的瞬間，那叫做「神清氣爽」XD 我哥當兵回來後拿回 iPhone，我只能回去用 HTC，那叫做「我不入地獄，我哥入地獄」。 下台中上大學時，買了 Macbook，我哥還送我一台 Airport（Apple 出的 WIFI 分享器），一整套系統用起來真是不錯！ Eddie 的 iPhone 史 # 一路從 iPhone6、iPhone6S、iPhone 6 Plus、iPhone 7 Plus、iPhone 8，到現在的 iPhoneXR（2018 機種）。 從…",
+      "image": null,
+      "publishedAt": "2025-06-30T02:33:59Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/apple-fans/",
+      "detailPath": "articles/cd17913f82bea2ba48f577d3.json"
+    },
+    {
+      "id": "25c46bce96987a0537cef0ea",
+      "title": "Github 專案同步到新電腦",
+      "summary": "前言 # 有鑑於每次忘記，乾脆打成一篇讓未來好複習。 步驟 # 一、建立權杖 Token # Token 是一種「有期限的替代密碼」，每在一台新裝置 pull/push Github 專案，都要先設定 Token，用來讓 Github 知道我們是自己人。 到 github tokens 頁面 點「Fine-grained tokens」或「Classic tokens」都可以，Eddie 選擇「Classic tokens」。 選擇權限：「repo」全選，其他看個人。 Token 有效期限：我選 90 天 按下「Generate token」，複製該 token（⚠️ 只會出現一次，務必先複製） 二、同步專案到新電腦 # 進入你的資料夾 cd /path/to/your/folder 初始化 Git git…",
+      "image": null,
+      "publishedAt": "2025-06-30T01:28:50Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/github/",
+      "detailPath": "articles/25c46bce96987a0537cef0ea.json"
+    },
+    {
+      "id": "6440de5981302f86bffe6b44",
+      "title": "六月｜斷網 重啟 和解",
+      "summary": "大事記 # 修電腦 # 三年",
+      "image": null,
+      "publishedAt": "2025-06-30T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/jun-2025-recap/",
+      "detailPath": "articles/6440de5981302f86bffe6b44.json"
+    },
+    {
       "id": "7bc596d8d39d755a7c00b537",
       "title": "澳洲好好吃",
       "summary": "這篇要來分享這次去澳洲讓我印象深刻的食物們。",
@@ -593,72 +659,6 @@
       "sourceTitle": "映屿",
       "link": "https://blog.verdant.ee/posts/%E7%BB%99%E6%AF%94%E6%88%91%E5%B2%81%E6%95%B0%E8%BF%98%E5%A4%A7%E7%9A%84%E7%94%B5%E8%84%91%E8%A3%85fedora/",
       "detailPath": "articles/b8e9eaabca40491e267d5609.json"
-    },
-    {
-      "id": "1107ccc6fea13adb6f6a2650",
-      "title": "金钱无法撬动的杠杆",
-      "summary": "获得自由或许能证明一个人能力出众，却远不能证明其心怀慈悲。你或许渴望向能人学习，但最让你感念的，永远是那些拥有至深爱心之人。 每个人都渴望健康、自由（通过财富或意识形态）、拥有目标感以及被爱。无人能例外于此。 虽然金钱确实无法直接买来强健的体魄，但现实是它能为你提供实现这一目标的资源。若你体态欠佳，可以聘请私人教练督促你共同踏上健康之旅；若需改善饮食，则有能力购买有机食材和各种营养补剂。金钱能放大自律的成效，但若缺乏自律根基，就如同将巨额数字乘以零——终归徒劳。 自主自由是指你能够随心所欲地做自己想做的事，随时与意中人为伴。本质上，这是对注意力的掌控权，以及你如何分配它的自由。若你拥有足够的财富，就无需将精力耗费在追逐金钱上，这意味着你不必违心为他人工作，或是解决自己不愿面对的问题。这正是金钱能够有效撬动的杠…",
-      "image": null,
-      "publishedAt": "2025-06-13T19:29:31Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://moretothat.com/the-levers-that-money-cant-pull/",
-      "detailPath": "articles/1107ccc6fea13adb6f6a2650.json"
-    },
-    {
-      "id": "a717dd9ff22273094321a955",
-      "title": "嫉妒是灵魂的毒瘤",
-      "summary": "嫉妒正是当今困扰人类的重大难题之一，且情况正日益恶化。科技进步放大了滋养嫉妒的温床，而社会规范却未能与时俱进地适应这一现实。讨论嫉妒理应像谈论焦虑一样被接纳，尤其因为前者常会助长后者。但我们因惧怕评判而保持缄默，任由其经年累月地啃噬内心。 你会嫉妒那些已经达到你所渴望的状态、但与你差距不大的人。那些与你差距过大的人会成为激励的源泉，而非嫉妒的对象。 (1) 你曾与对手有过共同经历，如今对方却遥遥领先于你。 (2) 对手的成功路径看起来极易复制 (3) 竞争对手与你极为相似。你们兴趣相投、观念相近，但结果却天差地别。 首先，交流是异步的，这意味着对话并非实时进行。人们可以花时间精心组织想说的话，也就是说在对话开始前就已经在自我修饰。而一旦获得编辑的能力，就意味着有机会筛选并决定如何呈现自我形象。这导致每个人都展…",
-      "image": null,
-      "publishedAt": "2025-06-13T19:29:31Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://moretothat.com/envy/?",
-      "detailPath": "articles/a717dd9ff22273094321a955.json"
-    },
-    {
-      "id": "c8b1798afa324ecd9714ab17",
-      "title": "务实创作者的成长轨迹",
-      "summary": "创造力更多源于真实的表达欲望，而非艺术形式本身。例如，人们很容易称画家为\"有创造力的人\"，但这完全取决于他作画的动机。如果他画画只是因为母亲是著名画家，期望他继承家族名声，那么绘画对他而言就不是一种创造性表达，而只是一份工作。只有当表达行为与个人真正的好奇心和兴趣相一致时，才能被视为具有创造性。 任何创造性事业都面临一个残酷现实：最初阶段无人问津。每位创作者都需要内在动力与外界认可的双重平衡，但你必须接受初期外界反馈的缺失。然而即便能坦然面对这点，你仍会遭遇另一个难题：你该如何应对毫无收入的状态？没有经济来源，又该如何培养坚持前行的韧性?这正是许多成功创作者刻意回避的部分。将成功归因于耐心固然光鲜，但承认自己拥有缓冲失败的经济保障就没那么动听了。金钱能让你把巨大跨越变成轻盈跳跃，从而减轻投身创作时的焦虑。只有…",
-      "image": null,
-      "publishedAt": "2025-06-13T19:29:31Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://moretothat.com/the-arc-of-the-practical-creator/",
-      "detailPath": "articles/c8b1798afa324ecd9714ab17.json"
-    },
-    {
-      "id": "5365f01511c1d475484e1270",
-      "title": "光学陀螺初步",
-      "summary": "光纤陀螺和激光陀螺的基本原理。",
-      "image": null,
-      "publishedAt": "2025-06-13T18:45:57Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/fog-and-rlg/",
-      "detailPath": "articles/5365f01511c1d475484e1270.json"
-    },
-    {
-      "id": "23a431e8fd29672a4f41b56e",
-      "title": "怪癖",
-      "summary": "我这人怪癖挺多的，屋子里不能拉开窗帘，我讨厌被别人看到；屋子里只留一盏台灯和电子设备的光，很有安全感；电脑桌面上不能有任何图标，我爱干净。 屋子里静静的，只有空调运转和电脑硬盘读写的机械声。暖黄色的台灯灯光不会分散太多注意力，在学校喧闹一天后，这是最快的“回血”方法。很难想象那些住宿学校的学生是什么支撑着他们活下去，如果是我，我大概率会跳楼。我喜欢雨天，也跟这个有点关系，非常有安全感，非常舒适，望着天上的云，总有种熟悉的感觉，说不上来是什么，是在梦里，又或许是小时候见到过类似的场景，冷白色调的阴天光线总是有种熟悉感。 我对噪音非常敏感，完全受不了人群的嘈杂声，那会让我筋疲力尽，除了睡的晚，这也是我在学校课间几乎睡满的原因。每天中午打饭时，百家争鸣百花齐放，没有一个人类，没有一个人类的行为，我正好坐在第一排，所…",
-      "image": null,
-      "publishedAt": "2025-06-12T21:16:01Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/%E6%80%AA%E7%99%96/",
-      "detailPath": "articles/23a431e8fd29672a4f41b56e.json"
-    },
-    {
-      "id": "3dd6ef9dfcf39cf8d8b941e8",
-      "title": "這有什麼好哭的？",
-      "summary": "上次回家，外甥女哭著從樓上跑下來，我媽只說「有什麼好哭的？」 我不知道在樓上發生了什麼事，我媽也沒有過問，只留下這句話。 兩年前，我分手後情緒不穩了好一陣子，那時候有回家，我媽說我有事情都不跟他講。 我想，這就是否定情緒造成的後果吧！",
-      "image": null,
-      "publishedAt": "2025-06-12T04:36:12Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/cry/",
-      "detailPath": "articles/3dd6ef9dfcf39cf8d8b941e8.json"
     }
   ]
 }

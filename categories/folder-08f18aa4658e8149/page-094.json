@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "725cbe4e0ee753091ad11b89",
+      "title": "立冬｜2024年10月小结",
+      "summary": "本月事件 正式上工 。 上个月 写到月初拿到了 offer，现在还在适应期，会议一多起来就没法整天摸鱼，果然没原来那么闲了，对我来说倒是好事（以后再详写）。话说我的面试成功率好像还挺高的，工作几年下来总共也就面了 7 个职位，拿了 4 个 offer，难道我的强项真的是吹水……？ 在家 DIY 漂发+染发成功了 ！现在是一头鲜亮的绿松石蓝头发~当然效果跟专业沙龙的技术不能比，没有理发师染得那么均匀，但也大差不差了。一通下来最大的感受是： 漂发那么贵确实是有道理的，这活儿是真不好干 。我一共漂了三次，第一次漂得不太均匀，后来第二、三次都是在给前面打补丁。当然这不是一天内完成的，每次漂发都间隔了两周，所以头发状态也还好。漂发过程中发现我意外地适合金发，显得气色很活泼，不像黑发时总看着病恹恹的。白金色虽然是很多人趋…",
+      "image": "https://cdn.jsdelivr.net/gh/kyoshiraishi/image@main/img/IMG_9458%202.webp",
+      "publishedAt": "2024-11-07T14:01:01Z",
+      "sourceId": "09c2f0f0946a1f21",
+      "sourceTitle": "第三夏尔 | Third Shire",
+      "link": "https://thirdshire.com/october-recap-2024/",
+      "detailPath": "articles/725cbe4e0ee753091ad11b89.json"
+    },
+    {
+      "id": "967e715393102de0b66cfe01",
+      "title": "別人的老婆比較好",
+      "summary": "我不知道別人怎麼想，但我自己有時（好吧，其實是常常）也會在心中偷偷拿伴侶跟別人比較的。",
+      "image": "https://wiwi.blog/assets/images/spouse-8c55cac11ac4882d76c6152bf75f1c9d.jpg",
+      "publishedAt": "2024-11-07T06:51:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/comparing-spouses",
+      "detailPath": "articles/967e715393102de0b66cfe01.json"
+    },
+    {
+      "id": "57a5a06308e2b298afb5c7a0",
+      "title": "React + NestJS 购物平台练习【3】数据设计与实现",
+      "summary": "本文是 React + NestJS 全栈购物平台实践的第三篇，专注于后端数据库的设计与实现。文章从零开始，详细讲解了如何为购物平台定义核心实体（如用户、商品、订单），并使用 TypeORM 装饰器实现数据模型及其复杂的关联关系。接着，教程演示了如何配置和使用 TypeORM 的数据库迁移（Migration）功能，通过自定义脚本来自动化生成、应用和回滚数据库结构变更。最后，文章还探讨了数据库性能优化的关键——索引（Indexing），并为关键查询字段添加了索引。本教程为使用 NestJS 和 TypeORM 进行数据建模与管理提供了完整的实战指南。",
+      "image": null,
+      "publishedAt": "2024-11-07T05:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/5a4b.html",
+      "detailPath": "articles/57a5a06308e2b298afb5c7a0.json"
+    },
+    {
+      "id": "c5837f25696110828ca2083f",
+      "title": "CKB new script verification with VM pause",
+      "summary": "CKB 相关技术文章第三篇。 背景 CKB 的每一个交易在提交到交易池之前都会经过一个 script verification 的过程，本质上就是通过 CKB-VM 把交易里的 script 跑一遍，如果失败了则直接 reject，如果通过了才会继续后面的流程。 这里的 script 就是一种可以在链上执行的二进制可执行文件，也可以称之为 CKB 上的合约。它是图灵完备的，我们通常可以通过 C、Rust 来实现这些 script，比如 nervosnetwork/ckb-system-scripts 就是 CKB 上的一些常用的系统合约。用户在发起交易的时候就设置好相关的 script，比如 lock script 是用来作为资产才所有权的鉴定，而 type script 通常用来定义 cell 转换的条件，…",
+      "image": "http://catcoding.me/images/ob_what-is-verification.png",
+      "publishedAt": "2024-11-07T04:03:24Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/ckb-new-verify/",
+      "detailPath": "articles/c5837f25696110828ca2083f.json"
+    },
+    {
+      "id": "d26ca9e2eaf209a6481eef64",
+      "title": "Self-changing Data Type - CVE-2024-40676 漏洞分析",
+      "summary": "今年 10 月份的时候，Android 安全公告用 CVE-2024-40676 的编号公布了一个很奇怪的 patch 。 AccountManagerService checkKeyIntent() 负责检查 account authenticator 传回的 intent，确保它安全再传回给 caller，防止 launch anywhere 漏洞。这个补丁看起来很暴力也很奇怪，直接 ban 了所有带有 content URI 的 intent，似乎完全不考虑兼容性。是什么样的漏洞才要上如此暴力的修复方法？ 注：如下全是我的猜测，由于联系不到漏洞作者本人，无法确认这是否就是原本的问题。",
+      "image": null,
+      "publishedAt": "2024-11-07T02:00:00Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2024/11/07/self-changing-data-type/",
+      "detailPath": "articles/d26ca9e2eaf209a6481eef64.json"
+    },
+    {
+      "id": "d6a064b03ef362000b751f73",
+      "title": "2024 October",
+      "summary": "十月，科研和论文的焦虑笼罩着整个月份，游戏、运动、电影的娱乐让我麻痹，正事进展的受阻一次又一次让我感到痛苦。 经历了艰难的心理建设和昼夜颠倒的赶工，最后时刻完成了任务，一切都令人感到疲惫。 论文终稿 月底得交论文终稿。 5w字论文的大修，像悬在头顶的达摩克利斯之剑。 10月，重新回到了实验室，回到了宿舍-食堂-实验室的三点一线。跑实验-自我否定-看论文-改论文-重新跑实验，循环往复，身心俱疲。 新舍友 宿舍搬来了新室友，从独居恢复到了合居，我需要重新习惯如何在共享私人空间中保持和谐。 蛋白粉 月初还有精力运动的时候，跑了几个完整的5公里，这对于曾经跑几步就喘的我来说，是一种突破。 三分化升级了哑铃的重量，令人欣慰的是，累计喝完了一罐2磅的蛋白粉。 炉石传说 《炉石传说》国服回归，本想着领完回归奖励就卸载，下载…",
+      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202503191848265.webp",
+      "publishedAt": "2024-11-07T00:00:00Z",
+      "sourceId": "95e525ddc69ab5ef",
+      "sourceTitle": "金色河流",
+      "link": "https://goldenriver.site/posts/2024-october/",
+      "detailPath": "articles/d6a064b03ef362000b751f73.json"
+    },
+    {
       "id": "8864a2070866737f3e9a33fc",
       "title": "自新世界 #0x08：明察秋毫",
       "summary": "目光敏锐，可以看见秋天猫猫身上新长的毫毛",
@@ -593,72 +659,6 @@
       "sourceTitle": "Psychic Paper",
       "link": "https://yuqiqin.me/use-obsidian-to-build-a-blog/",
       "detailPath": "articles/b74d96182632d8a29dee18f2.json"
-    },
-    {
-      "id": "beaf7b9d96205d87b13ccbd0",
-      "title": "格式的自由",
-      "summary": "習慣了在自己的 blog 上寫文章（以及閱讀自己的文章）之後，看到其他地方（例如 FB、IG、X、Threads）上的貼文，真的覺得很不對勁啊！",
-      "image": "https://wiwi.blog/assets/images/watermelon-dd5f3fc21b5536dba606b722b87055c9.jpg",
-      "publishedAt": "2024-10-25T10:53:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/freedom-to-format",
-      "detailPath": "articles/beaf7b9d96205d87b13ccbd0.json"
-    },
-    {
-      "id": "0bce2874b59530346f49ddd3",
-      "title": "為什麼我想吃麥當勞",
-      "summary": "最近看了 Michael E. Gerber 寫的《The E-Myth Revisited》的中文翻譯版，裡面有一個故事讓我滿有啟發的。",
-      "image": null,
-      "publishedAt": "2024-10-25T09:46:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/predictables",
-      "detailPath": "articles/0bce2874b59530346f49ddd3.json"
-    },
-    {
-      "id": "49b2ad48a1a055ce875d5a05",
-      "title": "办公室里的Michael",
-      "summary": "不知不觉，有笑有泪地看完了7季的《The Office》，像是看了一部长篇小说。 在最初的第1季，我完全感受不到好笑之处，只觉得生理和心理的不适。第2季之后，办公室里角色们的形象逐渐丰满，以至于让我总能在滑稽之下感受到一丝丝悲凉——最典型的就是灵魂主角 Michael Scott 。 “公司是我家” Michael在一家名为Dunder Mifflin的纸品销售公司工作，从销售一路干了20年，终于成为了Scranton分部 1 的总经理。他大多数时候都非常神经质、低情商、古怪，只是偶而靠谱。他把Scranton分部视为自己的“家”，而员工们则是自己的家人。显而易见的是，员工们反过来不会这么想，只是把他视为老板而忍让和迁就。 Michael对 亲密关系和家庭 有着一种理想化的迷恋。这种迷恋会投射到他与员工、上级…",
-      "image": null,
-      "publishedAt": "2024-10-24T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2024/10/25/michael-in-the-office",
-      "detailPath": "articles/49b2ad48a1a055ce875d5a05.json"
-    },
-    {
-      "id": "b25b02d0bb0caa9b399aa944",
-      "title": "太矮",
-      "summary": "收到一位年輕男性讀者的來信。他談到之前會因為身高的問題而缺乏自信（尤其是追求女生的時候），有時被朋友調侃個子小的時候也會很在意；但後來因為有健身、而且也再長高了一點點，所以就變得還好了。",
-      "image": null,
-      "publishedAt": "2024-10-24T14:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/too-short",
-      "detailPath": "articles/b25b02d0bb0caa9b399aa944.json"
-    },
-    {
-      "id": "cc67e2c043895487049fee10",
-      "title": "行万里路：喝过尼罗河的水，一定会再回到埃及",
-      "summary": "[!NOTE] Info 全文共计18092字，预计阅读时长60min 行万里路：喝过尼罗河的水，一定会再回到埃及 缘起 如《 我与偷渡者在中餐厅打工的日日夜夜 》这篇博客所说，大学期间的我生活是非常窘迫的。即便是我希望出去玩玩转转，客观条件也不允许，休息时间几乎都用来打工挣钱，或者做B站视频了。 旅游对我来说曾是一件奢侈的事情。但即便是现在自己已经完全经济独立，小有积蓄，负担得起去世界上的各个角落转一转，但是我还是对「看看世界」这件事情提不起太大的兴趣。在工作后的几次旅行，也大多是假期没事干，去其他城市和朋友、老同学见见面，行程也大多止步于在城里吃喝，找个地方和朋友谈心，摆脱成都的班味，也是谈不上旅行。 今年的暑假不知为什么尤其难熬，可能是因为自己再也没有刚刚转职当老师的那种心气，或许也因为去年暑假不一定每…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/Pasted%20image%2020240910140620.png",
-      "publishedAt": "2024-10-24T10:06:35Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/vworp-to-misr/",
-      "detailPath": "articles/cc67e2c043895487049fee10.json"
-    },
-    {
-      "id": "1e6adaede9a53fd4edbb5b6f",
-      "title": "Gumball 與性平",
-      "summary": "https://www.deviantart.com/blehmaster7/art/Macho-Macho-Man-792777411 愛死《阿甘妙世界》（ The Amazing World of Gumball ）了。他們總是能把一些很重要的價值觀以卡通的形式直白、不複雜化地表現出來。阿甘（Gumball）和佩佩（Penny）的互動就是一個表達 女性主義/性別平等 的好例子。 身為男性的阿甘即使有一刻想要以 toxic masculinity 式的倔強來勉強自己，但最終他還是可以盡情地展現他懦弱膽怯的一面；身為女性的佩佩也可以成為阿甘的臂膀。相互扶持、相互尊重。就是這麼地簡單直接。 在這個性平運動已被一些莫名其妙的「理論」搞得烏煙瘴氣的此刻，這個世界更需要像《阿甘妙世界》那樣傳達正向價值觀的管道。 不需…",
-      "image": null,
-      "publishedAt": "2024-10-24T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/gumball-and-gender-equality/",
-      "detailPath": "articles/1e6adaede9a53fd4edbb5b6f.json"
     }
   ]
 }

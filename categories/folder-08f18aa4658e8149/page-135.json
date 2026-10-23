@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "270c878eccdb7988f41a672e",
+      "title": "Android图像开源视图：SmartImageView",
+      "summary": "项目需要，开发中需要加载图片，自己要写图片从网上下载的方法，还要写缓存，等等。 在网上找到一个开源项目，smartImageVIew，支持从URL和通讯录中获取图像，可以替代Android标准的ImageView。 特征： 根据URL地址装载图像； 支持装载通讯录中的图像； 支持异步装载； 支持缓存； 这个是作者的项目主页，有使用方法。 http://loopj.com/android-smart-image-view/ 下载作者的jar包导入项目后，在xml中加入控件 <com.loopj.android.image.SmartImageView android:id=\"@+id/my_image\" /> 代码里找到该控件 SmartImageView myImage = (SmartImageView)…",
+      "image": null,
+      "publishedAt": "2013-09-11T15:19:11Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-09-11-android-smartimageview/?utm_source=rss",
+      "detailPath": "articles/270c878eccdb7988f41a672e.json"
+    },
+    {
+      "id": "dfb7eac86108dab0fe778a57",
+      "title": "客籍音樂家",
+      "summary": "我就是那個不會講客家話的「客籍音樂家」。",
+      "image": "https://wiwi.blog/assets/images/hakka-03858f5deeecd64e36bdc742e4dc063a.jpg",
+      "publishedAt": "2013-09-07T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/hakka-musician",
+      "detailPath": "articles/dfb7eac86108dab0fe778a57.json"
+    },
+    {
+      "id": "505ebf8606ecba7a5f3eb751",
+      "title": "早晨的神山",
+      "summary": "早晨的“ 神山 ”真美啊！！！",
+      "image": "https://microblog.ttheng.com/blog/img57.jpg",
+      "publishedAt": "2013-08-12T23:55:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/morning-mount-kinabalu/",
+      "detailPath": "articles/505ebf8606ecba7a5f3eb751.json"
+    },
+    {
+      "id": "5c48641da6428d6fdf47111a",
+      "title": "Wiwi Studio 音樂測驗",
+      "summary": "沒有受過音樂教育的我，在音樂測驗中得到了： 來自2025 的註釋： 文章日期是按照檔名推算的但不確定 是很後來整理檔案才發現「哇靠怎麼上面寫 Wiwi Studio」，就對 Wiwi 老師更崇拜了 如果想做這個測驗，現在可以到 這裡",
+      "image": "https://eddielv.com/musings/wiwi-studio-test/score.JPG",
+      "publishedAt": "2013-08-08T21:57:49Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/wiwi-studio-test/",
+      "detailPath": "articles/5c48641da6428d6fdf47111a.json"
+    },
+    {
+      "id": "1f7b2bf63491bc1dca209757",
+      "title": "觀音海洋音樂季",
+      "summary": "走在觀音路上 一個小女生從補習班走出來跟我要電話 給完說是她媽要的 2025/07/30 更：請問當時腦迴路怎麼了？可以說點跟音樂季有關的嗎XD",
+      "image": "https://eddielv.com/musings/guan-yin-music/img.jpg",
+      "publishedAt": "2013-08-08T17:27:13Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/guan-yin-music/",
+      "detailPath": "articles/1f7b2bf63491bc1dca209757.json"
+    },
+    {
+      "id": "042afe05e893a9b643cd5aaa",
+      "title": "Java中HashMap和HashTable的区别",
+      "summary": "面试中遇到，但是不会，回来google到，分享下吧，据说是老掉牙的问题 HashMap 是Hashtable 的轻量级实现（非线程安全的实现），他们都完成了Map 接口，主要区别在于HashMap 允许空（null）键值（key）,由于非线程安全，效率上可能高于Hashtable。 HashMap 允许将null 作为一个entry 的key 或者value，而Hashtable 不允许。 HashMap 把Hashtable 的contains 方法去掉了，改成containsvalue 和containsKey。因为contains方法容易让人引起误解。 Hashtable 继承自Dictionary 类，而HashMap 是Java1.2 引进的Map interface 的一个实现。 最大的不同是，H…",
+      "image": null,
+      "publishedAt": "2013-07-28T13:30:01Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-28-java-hashmaphe-hashtable/?utm_source=rss",
+      "detailPath": "articles/042afe05e893a9b643cd5aaa.json"
+    },
+    {
       "id": "bf17c9659807cc1cd8a38820",
       "title": "TEDx 演講",
       "summary": "今天去 TEDx 演講，認識好多各行各業神奇厲害的人，吃好飽，大豐收！",
@@ -593,72 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/oil-cutting-green-tea",
       "detailPath": "articles/5de488babdda8be79a128357.json"
-    },
-    {
-      "id": "24672de4f4a95e88c0253eb3",
-      "title": "Helvetica",
-      "summary": "猜猜看「Helvetica」是什麼？你這輩子可能是第一次聽過這個單字，不過「Helvetica」可是從我們一出生開始，就像是空氣一樣，不被注意地存在於我們每天的生活中。",
-      "image": "https://wiwi.blog/assets/images/helvetica-606d5bad0af55517a2d9c77568056007.jpg",
-      "publishedAt": "2008-06-24T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/helvetica",
-      "detailPath": "articles/24672de4f4a95e88c0253eb3.json"
-    },
-    {
-      "id": "f51d790c2afe3b8d009c6783",
-      "title": "大馬路",
-      "summary": "剛剛在 MSN 上跟別人聊到我家住在大馬路旁，落塵量很高，需要常常清理陽台很麻煩，我就突然想到這個東西了：",
-      "image": "https://wiwi.blog/assets/images/bigRoad-79a48245fb41de4489ecd2340a7c53eb.jpg",
-      "publishedAt": "2008-06-23T16:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/big-horse-road",
-      "detailPath": "articles/f51d790c2afe3b8d009c6783.json"
-    },
-    {
-      "id": "35d8de2634adc3c32d575a5b",
-      "title": "離校手續",
-      "summary": "今天去學校辦離校手續。",
-      "image": "https://wiwi.blog/assets/images/cert-8e2660138ac24da68d2fcac60f4200a2.jpg",
-      "publishedAt": "2008-06-23T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/graduation-procedures",
-      "detailPath": "articles/35d8de2634adc3c32d575a5b.json"
-    },
-    {
-      "id": "56289d2f9d089ecd76419b90",
-      "title": "熱",
-      "summary": "剛剛出門買午餐吃，實在是被熱到，不曉得等下還會不會再創新高⋯⋯",
-      "image": null,
-      "publishedAt": "2008-06-22T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/38c",
-      "detailPath": "articles/56289d2f9d089ecd76419b90.json"
-    },
-    {
-      "id": "3138c6dde71b27dfc3767a34",
-      "title": "Turn Off \"ENGING\"",
-      "summary": "做一塊告示牌也需要花不少錢吧？為什麼做的人不願意多花幾秒鐘，上網查一下是不是有拼錯字呢？文字的上方是一個「鑰匙從 ON 轉到 OFF」的示意圖，但是又用一條紅斜線劃掉，這是表示禁止把鑰匙轉到 OFF 的意思嗎？",
-      "image": "https://wiwi.blog/assets/images/turn-off-enging-7e825403e5f9f2bd60c1e796c6056ba3.jpg",
-      "publishedAt": "2008-06-19T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/turn-off-enging",
-      "detailPath": "articles/3138c6dde71b27dfc3767a34.json"
-    },
-    {
-      "id": "b426c874ffbc7b0836dcfd0b",
-      "title": "回仁愛國中演出",
-      "summary": "今天跟大血、萱萱、肥肥和阿金回母校仁愛國中演出。",
-      "image": "https://wiwi.blog/assets/images/jenai-concert-c4743da4aafc54357458668a97cf05d4.jpg",
-      "publishedAt": "2008-06-18T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/jenai-alumni-concert",
-      "detailPath": "articles/b426c874ffbc7b0836dcfd0b.json"
     }
   ]
 }

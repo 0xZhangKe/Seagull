@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "0cd260ab59683c4c29cc8efb",
+      "title": "《東晉門閥政治》札記",
+      "summary": "釋「王與馬，共天下」 八王之亂最後一幕，成都王司馬穎與東海王司馬越對峙。越與王衍合作，衍生出琅琊王司馬睿與王導的合作。 睿之渡江，是越與王衍共同安排，非導的獨自策劃。 皇權闇弱，士族扶持司馬氏以實現自己的家族利益。 司馬氏的存在是各方博弈的結果，平衡被打破，東晉也就亡了。 穎與越都連結異族為軍事聯盟。劉淵和石勒支持穎，鮮卑部支持越，江東政權確立後，仍與鮮卑交好，賴以抵抗劉、石。",
+      "image": null,
+      "publishedAt": "2017-02-26T04:43:39Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2017/02/25/2017-02-25-dongjinmenfa/",
+      "detailPath": "articles/0cd260ab59683c4c29cc8efb.json"
+    },
+    {
+      "id": "7f37ceca0d02c8fcf2c12e75",
+      "title": "乡愁、牧歌和现代生活",
+      "summary": "寒假期间看《梵高传》，写下批注：似乎每个时代的人，都会慨叹自己所处时代的庸碌麻木和淡然无味 ，哀悼昔日的辉煌。文明仿佛永远处于“衰退”状态，社会也总在“腐朽”。其实仔细想想，不管是中国历史上，孔子慨叹礼崩乐坏，追回内外一致，历代文人古文运动的“复古情怀”，还是欧洲对古希腊罗马时期的美好追忆，“文艺复兴”，乃至当代政治家提出的“伟大复兴”（Great Again），都暗示着我们的过去如此荣耀，现在的处境实在可怜。 读研以来，看的一些书都关于“共同体”这个主题。根据学者们的观点，鲍曼觉得它是失落的天堂，其中充满安全信任，温暖关怀。而滕尼斯认为共同体是社会的前状态，基于血缘和地缘的传统共同体不断瓦解，陌生的人们走进城市形成社会。很多学者都怀念共同体，相信共同体的重建，可以帮助解决当下的一些危机，比如信任感降低、个人…",
+      "image": null,
+      "publishedAt": "2017-02-14T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2017/02/15/modern-life",
+      "detailPath": "articles/7f37ceca0d02c8fcf2c12e75.json"
+    },
+    {
+      "id": "879877e6e55f96b4b0ff079c",
+      "title": "仓鼠",
+      "summary": "仓鼠的笼子 “喂（ 呐 ），你说世界上真的有外星人吗？”我一边喂着毛茸茸的仓鼠，一边眨着眼睛故作调皮的问道。 夏日的午后总会让人慵懒，好在室内却是凉意凛然。 “虽说眼见为实，不过我想 访问 https://www.yunyoujun.cn/posts/hamster 阅读全文。",
+      "image": null,
+      "publishedAt": "2017-02-11T23:10:10Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/hamster",
+      "detailPath": "articles/879877e6e55f96b4b0ff079c.json"
+    },
+    {
+      "id": "b727574d78f5cb47836c90fe",
+      "title": "Clojure 运行原理之字节码生成篇",
+      "summary": "上一篇文章 讲述了 Clojure 编译器工作的整体流程，主要涉及 LispReader 与 Compiler 这两个类，而且指出编译器并没有把 Clojure 转为相应的 Java 代码，而是直接使用 ASM 生成可运行在 JVM 中的 bytecode。本文将主要讨论 Clojure 编译成的 bytecode 如何实现动态运行时以及为什么 Clojure 程序启动慢，这会涉及到 JVM 的类加载机制。",
+      "image": null,
+      "publishedAt": "2017-02-09T21:51:29Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/02/09/clojure-compiler-analyze-2/",
+      "detailPath": "articles/b727574d78f5cb47836c90fe.json"
+    },
+    {
+      "id": "a6a1079a94ec3119051e34da",
+      "title": "Clojure 运行原理之编译器剖析篇",
+      "summary": "Clojure is a compiled language, yet remains completely dynamic – every feature supported by Clojure is supported at runtime. Rich Hickey https://clojure.org/ 这里的 runtime 指的是 JVM，JVM 之初是为运行 Java 语言而设计，而现在已经发展成一重量级平台，除了 Clojure 之外， 很多动态语言 也都选择基于 JVM 去实现。 为了更加具体描述 Clojure 运行原理，会分两篇文章来介绍。 本文为第一篇，涉及到的主要内容有：编译器工作流程、Lisp 的宏机制。 第二篇将主要讨论 Clojure 编译成的 bytecode 如何实现动态…",
+      "image": null,
+      "publishedAt": "2017-02-05T08:53:24Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2017/02/05/clojure-compiler-analyze/",
+      "detailPath": "articles/a6a1079a94ec3119051e34da.json"
+    },
+    {
+      "id": "6ba52a205fac4aaa4945e402",
+      "title": "回声",
+      "summary": "1 为了协调世界时与原子时的偏差，每隔数年，国际计量大会便会在一年的最初或是年中为世界时加上 1 秒，而这一秒便被称为闰秒。 今年的闰秒正是定为 2017 年的年初或者说是 201 访问 https://www.yunyoujun.cn/posts/echo 阅读全文。",
+      "image": null,
+      "publishedAt": "2017-02-04T16:09:11Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/echo",
+      "detailPath": "articles/6ba52a205fac4aaa4945e402.json"
+    },
+    {
       "id": "35da338a4ab089b0a9098876",
       "title": "设计稿中的内容",
       "summary": "你的设计稿并不是单一的给到开发使用，产品、后续的测试或者领导都会需要看设计稿，而他们对业务的熟悉程度不同，可能会对这不真实的设计稿产生很多不必要的疑问。",
@@ -593,72 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/scrolling-in-class",
       "detailPath": "articles/7ca08f9fcd1e8c368cd37340.json"
-    },
-    {
-      "id": "2c33ed1cd568c460920ab17f",
-      "title": "電梯藝術",
-      "summary": "一進電梯看到這幅畫瞬間驚呆了 0.5 秒⋯⋯（@新北市立新北高中）",
-      "image": "https://wiwi.blog/assets/images/elevator-ab7db6f436e665794f5e995dd454c47d.jpg",
-      "publishedAt": "2016-04-25T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/elevator-art",
-      "detailPath": "articles/2c33ed1cd568c460920ab17f.json"
-    },
-    {
-      "id": "340754b57f7f50e95c65d620",
-      "title": "SICP 第四章总结",
-      "summary": "本书的前三章分别讨论了 数据抽象 、 过程抽象 、 模块化 三种程序设计的技术，这些都是编程的问题，一直采用的是 Scheme 作为编程语言。如果遇到的问题更复杂，或者需要解决某领域的大量问题，有可能发现现实可用的语言(Lisp，或其他)都不够满意或不够方便，因此第四章主要就是讲述如何设计和实现一门新语言。",
-      "image": null,
-      "publishedAt": "2016-04-23T19:50:56Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2016/04/23/sicp-chapter4-summary/",
-      "detailPath": "articles/340754b57f7f50e95c65d620.json"
-    },
-    {
-      "id": "7371049e040803c647970e5a",
-      "title": "Eddie 的第一套宅錄設備",
-      "summary": "寫詞寫曲不是第一次 編曲第一次倒是真的 沒學過DAW 不會彈keyboard 不到一個月的時間要製作一首完整的音樂 報名表已經交出 已經沒有退路 剩下的就是努力了吧 不一樣的是 這次不能盡力就好 因為只盡力是沒辦法完成這件事的，， 加油吧",
-      "image": "https://eddielv.com/musings/first-daw/img.jpg",
-      "publishedAt": "2016-04-11T18:07:51Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/first-daw/",
-      "detailPath": "articles/7371049e040803c647970e5a.json"
-    },
-    {
-      "id": "2cd2172a89deb00751f3b41e",
-      "title": "Android Bottom navigation 规范二：样式、行为与规格",
-      "summary": "Android 官方在三月的某一天更新了一个新的设计规范，所谓设计规范就是告诉开发者和设计师要如何去设计和使用某一个组件。不过这次 Bottom navigation 的发布，让许多人大跌眼镜，毕竟 Bottom navigation 这样的组件，在之前的 MD 设计语言中可是只字未提，Android 开发者与 iOS 开发中最大的不同也是由于 Bottom navigation 是 iOS 应用的必备，而遵循 MD 设计规范的 Android 应用，则对 Bottom navigation 敬而远之。 本文是 Android Bottom navigation 的第二篇文章，主要介绍样式、行为与规格。",
-      "image": null,
-      "publishedAt": "2016-04-05T15:10:25Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2016/04/05/android-bottom-bar-2/",
-      "detailPath": "articles/2cd2172a89deb00751f3b41e.json"
-    },
-    {
-      "id": "4579c307eea08154626de5e6",
-      "title": "Android Bottom Navigation 规范一：使用方法",
-      "summary": "Android 官方在三月的某一天更新了一个新的设计规范，所谓设计规范就是告诉开发者和设计师要如何去设计和使用某一个组件。不过这次 Bottom navigation 的发布，让许多人大跌眼镜，毕竟 Bottom navigation 这样的组件，在之前的 MD 设计语言中可是只字未提，Android 开发者与 iOS 开发中最大的不同也是由于 Bottom navigation 是 iOS 应用的必备，而遵循 MD 设计规范的 Android 应用，则对 Bottom navigation 敬而远之。 本文是 Android Bottom navigation 的第一篇文章，主要介绍 Bottom navigation 的使用，以及 Bottom navigation 小变迁。",
-      "image": null,
-      "publishedAt": "2016-04-05T14:57:58Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2016/04/05/android-bottom-bar-1/",
-      "detailPath": "articles/4579c307eea08154626de5e6.json"
-    },
-    {
-      "id": "9ca5c47f5a540300dcc7e6ed",
-      "title": "python, ruby, javascript 浅析",
-      "summary": "最近一直在看红宝石（ruby）语言，到现在为止，算是对其设计有一些了解。作为一动态语言，ruby 经常会拿来与 python 对比，确实这两门语言在语法层面、实现层面有很多共同的地方，但是它们也在很多设计理念上存在重要差异，通过对比这些相同点、异同点，更加有助于理解这两门语言。同时，Node.js、React Native 的出现，将 javascript 这门“前端”语言推向了全栈，同样作为一门动态语言，javascript 与 ruby、python 在很多概念上也存在很多相同点、异同点。",
-      "image": null,
-      "publishedAt": "2016-03-26T17:03:40Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2016/03/26/python-ruby-javascript/",
-      "detailPath": "articles/9ca5c47f5a540300dcc7e6ed.json"
     }
   ]
 }

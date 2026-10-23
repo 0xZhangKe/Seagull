@@ -5,7 +5,7 @@
   <subtitle>写作作为一种思考</subtitle>
   <link href="https://kaix.in/feed/" rel="self" type="application/atom+xml"/>
   <link href="https://kaix.in/" rel="alternate" type="text/html"/>
-  <updated>2026-10-21T14:52:46+08:00</updated>
+  <updated>2026-10-23T13:40:23+08:00</updated>
   <id>tag:kaix.in,2026:/</id>
   <rights>©2026 KAIX.IN</rights>
   <follow_challenge>
@@ -13,10 +13,34 @@
     <userId>59062844476919808</userId>
 </follow_challenge>
   <entry>
+    <title>移除了 webmention 功能</title>
+    <id>tag:kaix.in,2026:/2026/1023/</id>
+    <published>2026-10-23T13:00:04+08:00</published>
+    <updated>2026-10-23T13:40:23+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://kaix.in/2026/1023/" />
+    <category term="webmention" label="webmention" />
+    <category term="隐私" label="隐私" />
+    <category term="fediverse" label="fediverse" />
+    <category term="协议" label="协议" />
+    <author>
+      <name>dimlau</name>
+    </author>
+    <content type="html" xml:lang="zh">
+<![CDATA[<p>开始关注 <a href="https://indieweb.org/webmention" target="_blank" rel="noopener">webmention</a> 协议至少是在 2019 年以前了，2021 年我用 go 语言<a href="/0001/webmention/">写了个小工具</a>来实现它，大概也算是第一批运用这个协议的中文博客站点。不过几个月前我彻底移除了这个功能。</p>
+<p>个中缘由有点复杂，隐私原因算是其中最容易想到也最古怪的部分。这就顺便要提到 fediverse 或者 <a href="/0001/mastodon/">mastodon</a>。这个去中心化的社交平台里，使用者们有着我无法感同身受的对隐私的理解——我不是说那是错的，只是我从未有过的思考角度——某人在 mastodon <strong>公开</strong>发布了一则内容，其他人不应该转发到别的平台，甚至用链接的方式传播也不应该，在别的地方介绍 mastodon 账号也被认为是冒犯或者侵犯隐私。</p>
+<p>我无法理解，但大受震撼。说真的。我意识到，「公开」的含义，对不同的人来说，当然是不同的。我觉得公开发表的内容，别人怎么提及，自然是别人的权利。但是对有些人来说则并非如此，公开仅代表允许别人看见，而所有权、如何使用内容的权利，还是归发布者所有。这其实有些吊诡，因为照理说，持这种态度的人不应该选择使用 mastodon ，因为协议决定了在 mastodon 公开发表的内容，会直接推送到别人服务器里去，既主张对内容的所有权，又要把内容放在别人家里，这就……</p>
+<p>总之，webmention 也有类似的问题，无法确定向我推送引用通知的人，是否愿意把内容（部分内容或者链接）展示在我的网站里，那么如何处置这些被推送过来的 webmention 呢？以及，为了确保链接有效性，还需要去抓去对方服务器的页面内容，要处理过程中的各种错误。好吧好吧，我们纯粹一点，写文章，想提醒某人阅读时就发一封邮件过去。</p>
+<p>于是，我就把 webmention 彻底砍掉了；在此之前，我还实现过用 mastodon 作博客的评论系统，也涉及到把网友们的内容和链接展示到自己的网站上这个隐患；以及，前段时间曾把 mastodon 公开时间线上随机内容输入到大模型里，然后输出成一条相关账号的推荐语，出于相似原因，这些功能全都砍掉了。</p>
+<p>哦，对了，我搭建和维护的 mastodon 实例由于甲骨文服务器的问题下线了一阵子。数据倒是完全没丢，只是前阵子店里是在太忙，没来得及操作重新上线。现在已经恢复了。不过任何社交平台我都已经不再频繁使用；阅读还是多多益善。</p>
+<p class="endof">fin.</p>
+<div class="kxd"><i id="kxdn"><a href="https://kaix.in/donation">激赏</a>！</i><i id="kxcm"><a href="mailto:hi@kaix.in?subject=回应 %e7%a7%bb%e9%99%a4%e4%ba%86%20webmention%20%e5%8a%9f%e8%83%bd">来信</a>。</i></div>]]>
+    </content>
+  </entry>
+  <entry>
     <title>AI 为什么总是惹人议论</title>
     <id>tag:kaix.in,2026:/2026/1017/</id>
     <published>2026-10-17T20:24:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
+    <updated>2026-10-23T13:40:23+08:00</updated>
     <link rel="alternate" type="text/html" href="https://kaix.in/2026/1017/" />
     <category term="ai" label="AI" />
     <category term="大模型" label="大模型" />
@@ -37,7 +61,7 @@
     <title>巴别塔</title>
     <id>tag:kaix.in,2026:/2026/1012/</id>
     <published>2026-10-12T17:29:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
+    <updated>2026-10-23T13:40:23+08:00</updated>
     <link rel="alternate" type="text/html" href="https://kaix.in/2026/1012/" />
     <category term="emoji" label="emoji" />
     <category term="苹果公司" label="苹果公司" />
@@ -56,7 +80,7 @@
     <title>我要免费送妳一支花</title>
     <id>tag:kaix.in,2026:/2026/1007/</id>
     <published>2026-10-07T18:29:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
+    <updated>2026-10-23T13:40:23+08:00</updated>
     <link rel="alternate" type="text/html" href="https://kaix.in/2026/1007/" />
     <category term="社会" label="社会" />
     <category term="人性" label="人性" />
@@ -77,7 +101,7 @@
     <title>改变一切的是时间的缝隙</title>
     <id>tag:kaix.in,2026:/2026/0930/</id>
     <published>2026-09-30T16:20:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
+    <updated>2026-10-23T13:40:23+08:00</updated>
     <link rel="alternate" type="text/html" href="https://kaix.in/2026/0930/" />
     <category term="时间" label="时间" />
     <category term="人生" label="人生" />
@@ -97,7 +121,7 @@
     <title>不想好就开口的是什么人</title>
     <id>tag:kaix.in,2026:/2026/0922/</id>
     <published>2026-09-22T13:55:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
+    <updated>2026-10-23T13:40:23+08:00</updated>
     <link rel="alternate" type="text/html" href="https://kaix.in/2026/0922/" />
     <category term="时代" label="时代" />
     <category term="风气" label="风气" />
@@ -114,37 +138,6 @@
 <p>人生于世，向外和物理世界交互，向内琢磨心智。纸张的不同触感被永远光滑的屏幕取代，已然是让渡了具身反馈；而兜售「不必想好」就开口，实在是要把思考也拱手了。不与物理世界联结，也不慢下来审思——这是只看短视频的缸中之脑啊。</p>
 <p class="endof">fin.</p>
 <div class="kxd"><i id="kxdn"><a href="https://kaix.in/donation">激赏</a>！</i><i id="kxcm"><a href="mailto:hi@kaix.in?subject=回应 %e4%b8%8d%e6%83%b3%e5%a5%bd%e5%b0%b1%e5%bc%80%e5%8f%a3%e7%9a%84%e6%98%af%e4%bb%80%e4%b9%88%e4%ba%ba">来信</a>。</i></div>]]>
-    </content>
-  </entry>
-  <entry>
-    <title>骆驼、狮子、孩子、路飞、大笑</title>
-    <id>tag:kaix.in,2026:/2026/0915/</id>
-    <published>2026-09-15T13:16:04+08:00</published>
-    <updated>2026-10-21T14:52:46+08:00</updated>
-    <link rel="alternate" type="text/html" href="https://kaix.in/2026/0915/" />
-    <category term="成长" label="成长" />
-    <category term="哲学" label="哲学" />
-    <category term="精神三变" label="精神三变" />
-    <author>
-      <name>dimlau</name>
-    </author>
-    <content type="html" xml:lang="zh">
-<![CDATA[<p>前几天——或者十几天？俗务繁杂实在有些晕头转向了——偶然看到一段用尼采的精神三变来解读《海贼王》的<a href="https://www.bilibili.com/video/BV1Xb8d6REvL/" target="_blank" rel="noopener">视频</a>，感觉颇有趣味，不过就像如今的许多事一样，看过也就过去了。</p>
-<p>但是这几日突然又感觉心里有些堵，简单说来，我意识到自己已经好久不觉得什么事情值得大笑出声了。如果《海贼王》里路飞那种开怀大笑正是精神三变中的「孩子」境界的体现，那我似乎是渐行渐远了。</p>
-<blockquote>
-<p>我向妳们说出精神的三种变形：精神如何变骆驼，骆驼如何变狮子，最后狮子如何变小孩。<br>
-<cite>《查拉图斯特拉如是说》</cite></p>
-</blockquote>
-<p>其实从很久前我就感觉，人生于世必须要遵守一些规矩、准则、理念，并且「自贬以刺痛自己的高傲，显出愚钝以嘲弄自己的智慧」，要敬畏，要负重，也注定要孤独。这种精神状态，应该就类似尼采所说的骆驼。然后，我大概，也开始思考在种种「我应该」当中，或许有「我要」的空间和必要——若非如此世界岂不陷入一成不变？</p>
-<p>不过这时候出现了一种源于文化的岔路。尼采的骆驼，其实是锁链是受奴役，而中国文化里可能人和规矩的关系就如人和天地道义一样，是共生的。在尼采那里，人的精神需要从骆驼变为反抗的狮子，然后回归到孩子。而在孔子这边，他没有经历狮子的阶段也到达了「随心所欲而不逾矩」的天人合一。</p>
-<blockquote>
-<p>吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾矩。<br>
-<cite>《论语·为政》</cite></p>
-</blockquote>
-<p>我的「思变」不是狮子的反抗，更像是到达不惑之前迷茫。或许，这也能解释为什么我对未来持乐观态度。我不知道该怎么阐述其中因果——不乐观，变成狮子去反抗；乐观，感觉可以在规矩中徐徐图变。</p>
-<p>当然，我不是比较孔子和尼采的高下，甚至也不急于在先哲的理论体系中找到自己的位置。我原本在意的只是，生活里的笑为什么变少了，我需不需要调整方向。这几日思来想去，实在是在下着相了，漫画中对尼采哲学的扁平化处理才让路飞时时开怀大笑，即便真正的孩童，在专注于搭积木、造沙堡时也会一脸严肃；如果为了笑而笑，反而又成了「我应该」的骆驼。可能在生活中保持会心一笑的能力正是尼采和孔子理念的交汇处。</p>
-<p class="endof">fin.</p>
-<div class="kxd"><i id="kxdn"><a href="https://kaix.in/donation">激赏</a>！</i><i id="kxcm"><a href="mailto:hi@kaix.in?subject=回应 %e9%aa%86%e9%a9%bc%e3%80%81%e7%8b%ae%e5%ad%90%e3%80%81%e5%ad%a9%e5%ad%90%e3%80%81%e8%b7%af%e9%a3%9e%e3%80%81%e5%a4%a7%e7%ac%91">来信</a>。</i></div>]]>
     </content>
   </entry>
 </feed>

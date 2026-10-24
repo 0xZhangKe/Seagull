@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "511ca4eafdce0a23a792768a",
+      "title": "廣告沒有用",
+      "summary": "這篇貼文也被整理到了筆記區。",
+      "image": null,
+      "publishedAt": "2024-09-07T16:43:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/ads-dont-work",
+      "detailPath": "articles/511ca4eafdce0a23a792768a.json"
+    },
+    {
+      "id": "2c85cf1f162350374c73fe05",
+      "title": "Android Binder源码分析：AIDL及匿名服务传输",
+      "summary": "前面介绍的通过ServiceManager添加服务和获取服务，这些服务都是有名称的，我们可以通过 ServiceManager 来获取它。除此之外Android系统中还有一类Binder服务是匿名它，它们如何让客户端获得代理对象，并且使用呢，本文就一探究竟。 AIDL 介绍 AIDL全称为Android接口定义语言，是Android系统提供的一款可供用户用来抽象IPC的工具，它提供了语法让我们来定义跨进程通讯的服务接口，也就是 .aidl 文件，它也提供了工具，帮助我们把定义文件专程目标语言的代码。 我们自己使用AIDL创建的服务，或者一部分系统内的服务，比如 IWindowSession 、 IApplicationThread 等，这些多是运行在App进程，一般都不是系统服务，因此都是匿名的。我们这里以…",
+      "image": null,
+      "publishedAt": "2024-09-07T09:57:32Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-07-binder-aidl-transact/?utm_source=rss",
+      "detailPath": "articles/2c85cf1f162350374c73fe05.json"
+    },
+    {
+      "id": "a86eac514dc1fe0878d574c8",
+      "title": "Android Binder源码分析:添加服务和获取服务解析",
+      "summary": "通过ServiceManager添加服务和获取服务分别为 addService 和 getService ，两者流程上其实是有一些类似的，其中我们可以看到binder通讯的全过程。为了让内容更有意义，添加服务选择从Java层的代码触发，获取服务则选择从Native层触发。 添加服务 我们以添加 ActivityManagerService 为例分析添加一个Service。首先先画个简单的流程图，介绍涉及到的类和调用的方法，不过步骤进行了省略，详细看后面的代码解析。 ServiceManagerProxy请求添加Service 其代码在 ActivityManagerService 的 setSystemProcess 方法当中，具体调用如下： 1 2 ServiceManager . addService (…",
+      "image": "https://img.isming.me/image/binder_addservice.png",
+      "publishedAt": "2024-09-06T11:22:29Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-06-binder-add-and-get-service/?utm_source=rss",
+      "detailPath": "articles/a86eac514dc1fe0878d574c8.json"
+    },
+    {
       "id": "4799388e6e553a3d2d14f6eb",
       "title": "網際網路探險家",
       "summary": "還記得大約 1995 年，當我們還在用 28.8 kbps 的數據機接上電話線「逼逼啵啵」上網的那個年代，人們是怎麼形容「上網」的嗎？答案是：「衝浪」！",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/transferable-skills",
       "detailPath": "articles/a357f3350b785873f08c5350.json"
-    },
-    {
-      "id": "189ccb44d98e2da4e2d27e98",
-      "title": "能夠發生的最好的事",
-      "summary": "分享一個我個人覺得很有幫助的想法：",
-      "image": null,
-      "publishedAt": "2024-08-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/best-outcome",
-      "detailPath": "articles/189ccb44d98e2da4e2d27e98.json"
-    },
-    {
-      "id": "15f4f102929902bed3990146",
-      "title": "日寄 20240820",
-      "summary": "已经坏掉的八音盒。 我还没来得及写出那些被我扔掉的过期腊肠的酸涩味道，不过终有一天我会写完，毕竟这是个有始有终 […]",
-      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/08/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240820105251.png?ssl=1",
-      "publishedAt": "2024-08-20T10:29:13Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1044",
-      "detailPath": "articles/15f4f102929902bed3990146.json"
-    },
-    {
-      "id": "e705a7e7751544cb7172b4fa",
-      "title": "自新世界 #0x05：帕鲁世界",
-      "summary": "你醒啦？",
-      "image": null,
-      "publishedAt": "2024-08-20T09:49:36Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/weekly/0x05/",
-      "detailPath": "articles/e705a7e7751544cb7172b4fa.json"
     }
   ]
 }

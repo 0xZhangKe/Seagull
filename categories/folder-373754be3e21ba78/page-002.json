@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "a1303e6baaaad99c7e600b11",
+      "title": "pedestrian",
+      "summary": "during a recent commute i was stopped at a red light when a bohemianly dressed, silver-haired asian woman crossed the street in front of me, talking to her companion in perfect, unaccented english. how the times change, and assumptions dissolve with it! i hope it does not take until my own hair is silver all over, for me to stop being surprised by it.",
+      "image": null,
+      "publishedAt": "2026-10-13T18:11:51Z",
+      "sourceId": "d0bae220ac3402fb",
+      "sourceTitle": "Jenneral HQ 🌠",
+      "link": "https://www.jenn.site/pedestrian/",
+      "detailPath": "articles/a1303e6baaaad99c7e600b11.json"
+    },
+    {
       "id": "0e810af8511ed556a1d6e368",
       "title": "Quoting Geoffrey Huntley",
       "summary": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library.…",
@@ -98,17 +109,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
       "detailPath": "articles/bc7a862539dbbd3a0860f87f.json"
-    },
-    {
-      "id": "c67e0e00f84b2fadc099ea7c",
-      "title": "datasette-ports 0.4",
-      "summary": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette",
-      "image": null,
-      "publishedAt": "2026-10-12T04:57:07Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
-      "detailPath": "articles/c67e0e00f84b2fadc099ea7c.json"
     },
     {
       "id": "e4f3022c32aef68367e78e22",
@@ -299,8 +299,8 @@
     },
     {
       "id": "b88a8fff66ef189256eb0ea5",
-      "title": "TIL how to deeplink all the things",
-      "summary": "I have written before about how to link to a specific segment of a youtube video , and how to link to specific words or paragraphs within a webpage . I even knew, vaguely, that you could link to pages of PDFs. But, all in the course of a normal workday researching",
+      "title": "Did you know you can link to a timestamp in a plain video file?",
+      "summary": "TIL how to deeplink all the things",
       "image": null,
       "publishedAt": "2026-10-07T05:20:41Z",
       "sourceId": "e2f4758cec273fb9",

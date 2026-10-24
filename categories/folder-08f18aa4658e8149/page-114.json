@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "3d2570a635267f8416492b1b",
+      "title": "Soapbox-fe 安装手记",
+      "summary": "前言 目前我能找到的 安装指南 都是基于 Rebased（Soapbox-be） + Soapbox-fe 去部署的，而且都是通过源码 Source 部署，比较麻烦不说，Rebased 这个分支往后的开发能不能跟进也是一个问题。还有一些教程需要通过 nginx 新增一个虚拟主机去托管前端，依然比较麻烦，还不如托管到 Vercel 上。看起来 OTP 部署这块鲜有人提到，想通过 Admin-fe （Pleroma 的后台管理界面）里 Fontend 配置项进行安装就有些无从下手了。 正好趁着这段时间更换域名、重建实例的时候，琢磨了一个可以通过 Admin-fe 来配置前端的方法。 目前因为 Admin-fe 还有一个无法下载前端的 Bug 所以还是要跑一下命令行，等到这个 Bug 修复之后，我再来补全文章，到时…",
+      "image": null,
+      "publishedAt": "2022-10-09T16:00:00Z",
+      "sourceId": "f758efe5e14ba931",
+      "sourceTitle": "瓠樽",
+      "link": "https://blog.dylanwu.space/2022/10/10/install-soapbox-fe-by-admin-fe.html",
+      "detailPath": "articles/3d2570a635267f8416492b1b.json"
+    },
+    {
+      "id": "601051b73521022fba521fef",
+      "title": "关于脚本 / On Script",
+      "summary": "本文于 2022 年 4 月首发在郝海龙兄出品的电子通讯「林中来信」（laixin.one），欢迎并推荐朋友们… Continue reading 关于脚本 / On Script →",
+      "image": "https://0.gravatar.com/avatar/cab092a5c5ede78428d38d2c4b4d4e31e1b7ae079c59c535e65f0edd446d0a58?s=96&d=identicon&r=G",
+      "publishedAt": "2022-10-09T13:48:47Z",
+      "sourceId": "c96b327793445474",
+      "sourceTitle": "baoting's blog",
+      "link": "https://baoting.blog/2022/10/09/%e5%85%b3%e4%ba%8e%e8%84%9a%e6%9c%ac-on-script/",
+      "detailPath": "articles/601051b73521022fba521fef.json"
+    },
+    {
+      "id": "6383691a801f630fee55f972",
+      "title": "【财经】这轮国际上的高通胀什么时候能结束呢？",
+      "summary": "本轮国际通胀分成两个阶段，第一个阶段是疫情后供需两端的变化导致通胀爆发，第二阶段是美国加息以来各国通胀持续发展。第一阶段：疫情以来通胀爆发（一）供给端1、供应链破裂供给端的首要冲击是供应链破裂。供应链有两个层面：（1）区域生产环节。（2）国际物流环节。也就是说，首先要有某区域能生产出某产品，其次需要海陆连套物流将至运输出去。比如某工业园区能配套生产某电子或机械类产品，随后通过卡车/火车、港口海运配套方式，将货物运至欧美。这就形成一整套物流体系。当然，生产产品也需要购买原材料和中间品，这又涉及另一地的区域生产和国际物流。环环相扣，形成一个体系。疫情初，“各主要制造业国家接连受到疫情冲击，加上国际运输网络梗阻，全球供应链出现大量断点。”2020年供应链主要有如下问题：防疫物资短缺，生产停摆，疫苗供应不足，芯片紧缺…",
+      "image": "https://mmbiz.qpic.cn/sz_mmbiz/T1XgvTWg23mDVOib6auveBqGcPCA0pcrfZqqmsj4iaicwqfkylKmoDoRVruQWiaYKxSicMqibGC7l4b0ic9PMefecsYtQ/640?wx_fmt=other",
+      "publishedAt": "2022-10-09T07:55:55Z",
+      "sourceId": "c065ce0fe136cb8f",
+      "sourceTitle": "赤色星灵佐伊 | 自由微信 | FreeWeChat",
+      "link": null,
+      "detailPath": "articles/6383691a801f630fee55f972.json"
+    },
+    {
       "id": "fa21be96975981e1d338cb56",
       "title": "2022年09月支出小结",
       "summary": "今天突然感觉最近花钱有点没谱，决定向象友 Jacinle 学习，每个月总结一下消费。不保证能坚持……试着看看能不能写三个月吧。",
@@ -626,39 +659,6 @@
       "sourceTitle": "关门说话",
       "link": "https://hugo-stack-theme-mod-six.vercel.app/2022/%E9%9B%85%E6%80%9D%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/",
       "detailPath": "articles/b0f33b654be9865ab2574959.json"
-    },
-    {
-      "id": "3c3255b27e35f44f05fa4b19",
-      "title": "叁拾一周：No.38",
-      "summary": "本期的主题是 Good News。 观察这个世界，有诸多角度，其中一个，是 Good News，不幸地，我越发觉得我们正在丧失这一技能。读库之前为一套书做宣传，就讲到，这个世界被人熟知和了解的，好多都是恶人、战争、巨大的科学成功，但世界不是这样走到今天的，很多有价值的东西，人们完全不熟悉，就理所当然地拿来主义，世界的进步，正是靠这些小砖小瓦一点一滴搭建起来的。这套书，叫《医学大神》，每一本大概几万字，讲了许多医学上的去魅、进步和发展。 同样，在我看，我们了解的这个世界，不是靠打败坏人，消灭病毒走到今天的，而是靠爱，靠相互帮助、相互鼓励，靠人类的智慧。靠这些 Good News，而不是 Breaking News。我也希望你能多关注一些好消息，而不是整日沉迷在坏消息和各种八卦之中。 我总是在重复很久以前听到的那…",
-      "image": null,
-      "publishedAt": "2022-08-08T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/08/newsletter-038/",
-      "detailPath": "articles/3c3255b27e35f44f05fa4b19.json"
-    },
-    {
-      "id": "5ec2fd7507e014d25b758888",
-      "title": "anymore 與 any more",
-      "summary": "看到一個 YouTube 評論後想到的一個有趣問題： I can’t agree with you any more ! I can’t agree with you anymore ! 可能有人認爲這兩句話只是同一個表達的不同寫法（拼寫方式），可是其實這句話的意思是互爲相反的：前者是「我不能再同意你更多了！」，表示講者對聽者的高度認同；後者反而是「我無法再同意你了！」，表示講者對聽者的高度不認同。 所以說寫英文時 spelling 還是得注意一下啊。",
-      "image": null,
-      "publishedAt": "2022-08-07T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/anymore-any-more/",
-      "detailPath": "articles/5ec2fd7507e014d25b758888.json"
-    },
-    {
-      "id": "4713443a6defc3cb18dc85ae",
-      "title": "写在升学宴之前",
-      "summary": "2025.10.17 注： 一场令人讨厌的成功者叙事，是一篇功能性很强的体裁。当时在我发言时，确实在场的人都在闷头吃饭，并没有什么人真的在听~ 仍然想把这篇文章留下来的原因是，我发现当时提到的许多观点，确实日后我一以贯之、让我成为我的重要部分。对文字的敏感、对美好的感知、求知欲、好奇心、还有做出选择后义无反顾的勇气……从小浇灌、慢慢长大，非一日之功。 开场 亲爱的家人们，朋友们，大家好！此时碧空万里，艳阳高照，感谢大家在百忙之中出席宴席，欢聚一堂。在爸爸忙前忙后的筹办下，在各位家人朋友的支持下，很高兴能借着这样的机会和大家简单说上几句，不能说是多么了不起，只能说是在这长达十几年的求学马拉松的道路中，一些无以为报的谢意和从我自己角度出发的一些学习的心得体会。 也不耽误大家享用美食哈，大家可以边吃边听。 感谢 一…",
-      "image": null,
-      "publishedAt": "2022-08-06T00:00:00Z",
-      "sourceId": "6db99b063a5d43ac",
-      "sourceTitle": "伏枥之间",
-      "link": "https://leehenry.top/posts/moment_memos/achieve/220806-speech-for-the-graduation-party/",
-      "detailPath": "articles/4713443a6defc3cb18dc85ae.json"
     }
   ]
 }

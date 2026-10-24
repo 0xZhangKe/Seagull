@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "cac7ffc835951e9473d9cfc3",
+      "title": "Java集合框架综述",
+      "summary": "最近被陆陆续续问了几遍HashMap的实现，回答的不好，打算复习复习JDK中的 集合框架 ，并尝试分析其源码，这么做一方面是这些类非常实用，掌握其实现能更好的优化我们的程序；另一方面是学习借鉴JDK是如何实现了这么一套优雅高效的类库，提升编程能力。 在介绍具体适合类之前，本篇文章对Java中的集合框架做一个大致描述，从一个高的角度俯视这个框架，了解了这个框架的一些理念与约定，会大大帮助后面分析某个具体类，让我们开始吧。",
+      "image": null,
+      "publishedAt": "2015-09-01T21:18:05Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/09/01/java-collection-overview/",
+      "detailPath": "articles/cac7ffc835951e9473d9cfc3.json"
+    },
+    {
+      "id": "7898509a7e7df9fbee2b0bfb",
+      "title": "改变support中AlertDialog的样式",
+      "summary": "android最近的support库提供了AlertDialog，可以让我们在低于5.0的系统使用到跟5.0系统一样的Material Design风格的对话框，但是使用了一段时间想到一些办法去改变对话框按钮字体的颜色，都不生效。 最近在网上找到了改变的方法，首先来说一下。 改变AlertDialog的样式 在xml中定义一个主题： 1 2 3 4 5 6 7 8 <style name= \"MyAlertDialogStyle\" parent= \"Theme.AppCompat.Light.Dialog.Alert\" > <!-- Used for the buttons --> <item name= \"colorAccent\" > #FFC107 </item> <!-- Used for the ti…",
+      "image": "https://isming.me/images/modify_dialog_style.jpg",
+      "publishedAt": "2015-08-31T11:57:15Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-08-31-modify-alert-style/?utm_source=rss",
+      "detailPath": "articles/7898509a7e7df9fbee2b0bfb.json"
+    },
+    {
+      "id": "9427d31300f2eefeffe804b7",
+      "title": "電腦音樂教室",
+      "summary": "新北高中音樂班的電腦音樂教室。30 台電腦每一台都有正版的 Reason、錄音介面、MIDI 鍵盤、還有 32 軌 Yamaha 大 mixer⋯⋯可是之前都沒有人用過，因為不會用 XD",
+      "image": "https://wiwi.blog/assets/images/1-c5e8f686a29d15fe066807dd2b88f878.jpg",
+      "publishedAt": "2015-08-31T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/computer-music-classroom",
+      "detailPath": "articles/9427d31300f2eefeffe804b7.json"
+    },
+    {
       "id": "934b66143a277903dc2f3b0e",
       "title": "原型的设计 1",
       "summary": "原型的设计是一件很严肃的事情。如果认为原型只用来理解一下界面、业务或帮助开发就陷入了一个很大的误解。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/small-white",
       "detailPath": "articles/a509749250c847499107b924.json"
-    },
-    {
-      "id": "d1272f1472b8ca6b898f91b5",
-      "title": "为 Nexus5 编译 AndroidL 固件",
-      "summary": "接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无疑会加快看代码的效率和积极性. 所以这篇文章,就讲解一下如何自己编译AndroidL的源码,并且在Nexus5上跑起来. 至于为何需要自己编译固件,而不是直接安装Google给出的工厂固件?原因是Google给出的工厂固件是User版本,是没法随心所欲Push东西进去的. 所以我们需要编译自己的Userdebug版本. 本文假设你已经下载了AndroidL的源码,并且有一台Nexus5手机(…",
-      "image": null,
-      "publishedAt": "2015-02-04T12:51:19Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/02/04/build-rom-for-nexus5/",
-      "detailPath": "articles/d1272f1472b8ca6b898f91b5.json"
-    },
-    {
-      "id": "cc3f5eef9f229be376894275",
-      "title": "javascript中的面向对象编程",
-      "summary": "最近工作一直在用nodejs做开发，有了nodejs，前端、后端、脚本全都可以用javascript搞定，很是方便。但是javascript的很多语法，比如对象，就和我们常用的面向对象(object oriented programming)的编程语言不同；看某个javascript开源项目，也经常会看到使用this关键字，而这个this关键字在javascript中因上下文不同而意义不同；还有让人奇怪的原型链。这些零零碎碎的东西加起来就很容易让人不知所措，所以，有必要对javascript这门语言进行一下深入了解。",
-      "image": null,
-      "publishedAt": "2015-02-01T12:53:18Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/02/01/javascript-oop/",
-      "detailPath": "articles/cc3f5eef9f229be376894275.json"
-    },
-    {
-      "id": "d072c27dfb13daa5dde33aa4",
-      "title": "android动画-View Animation",
-      "summary": "视图动画（View Animation）,又称补间动画（Tween Animation）,即给出两个关键帧，通过一些算法将给定属性值在给定的时间内在两个关键帧间渐变。本文首先讲解各种基本动画的使用，其实介绍View动画的工作过程。 概述 视图动画只能作用于View对象，是对View的变换，默认支持的类型有： 透明度变化(AlphaAnimation) 缩放(ScaleAnimation) 位移(TranslateAnimation) 旋转(RotateAnimation) 可以使用AnimationSet让多个动画集合在一起运行，使用插值器(Interpolator)设置动画的速度。 上面说到的几种动画，以及AnimationSet都是Animation的之类，因此Animation中有的属性，以及xml的配…",
-      "image": null,
-      "publishedAt": "2015-02-01T03:10:50Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-02-01-android-view-animation/?utm_source=rss",
-      "detailPath": "articles/d072c27dfb13daa5dde33aa4.json"
     }
   ]
 }

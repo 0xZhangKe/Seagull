@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "b96760359468c63c3d1339ed",
+      "title": "你以為你在看電視？",
+      "summary": "最智慧的智慧電視，就是⋯⋯",
+      "image": "https://wiwi.blog/assets/images/tv-c3952862cf53bdad5573d7b8a6bb337d.jpg",
+      "publishedAt": "2024-09-28T07:45:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/smart-tv",
+      "detailPath": "articles/b96760359468c63c3d1339ed.json"
+    },
+    {
+      "id": "2e9de1f3c9514f6b4bce7d5d",
+      "title": "九月｜秩序的建立與崩塌",
+      "summary": "Hero Photo: Nintendo 我這一年裡共有",
+      "image": null,
+      "publishedAt": "2024-09-28T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/sept-2024-recap/",
+      "detailPath": "articles/2e9de1f3c9514f6b4bce7d5d.json"
+    },
+    {
+      "id": "4dee7a550237745358f1f705",
+      "title": "武功山徒步小建议",
+      "summary": "上个月去完武功山回来，翻笔记发现之前随手记录了一些小帮助，简单分享一下。",
+      "image": null,
+      "publishedAt": "2024-09-28T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/wugong-mountain-trip-tips-and-notes",
+      "detailPath": "articles/4dee7a550237745358f1f705.json"
+    },
+    {
       "id": "98e027bf82f1a88560684c44",
       "title": "当学校的主要精力从搞教育转变为防碰瓷",
       "summary": "古语有云：“授人以鱼，不如授人以渔。” 每个小学生都学过这句话。 在教育领域，它所蕴含的机理再明确不过：成功的教育，应该注重培养激发受教育者的自驱力量。强制的、压迫的、剥削的教育，一定不是好的教育。 但恰恰相反，现在学校所推行的几乎所有教育配套措施，都在朝着破坏自驱力的方向上一去不复返，与教书育人的本质宗旨背道而驰。 学校这帮人，未必是不懂教育。 曾几何时，学校老师们挂在嘴上的话是：“家长要尽量少掺和学生的事儿，自己的事情自己做。培养学生自理能力。” 当时的学校，嘴上是这么说的，也确实是这么做的。 如今的学校，嘴上或许依旧会高喊几句诸如“培养学生独立性”的口号，但在实际行动上，却恨不能处处把家长强行拉进来。 送孩子要送进校门，接孩子要跟老师做好交接，写作业要家长批阅打卡，就差没让家长轮班去学校当值日生了。 作…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/your-computer-is-not-yours",
       "detailPath": "articles/4eb670e193753ec976ad22a8.json"
-    },
-    {
-      "id": "511ca4eafdce0a23a792768a",
-      "title": "廣告沒有用",
-      "summary": "這篇貼文也被整理到了筆記區。",
-      "image": null,
-      "publishedAt": "2024-09-07T16:43:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/ads-dont-work",
-      "detailPath": "articles/511ca4eafdce0a23a792768a.json"
-    },
-    {
-      "id": "2c85cf1f162350374c73fe05",
-      "title": "Android Binder源码分析：AIDL及匿名服务传输",
-      "summary": "前面介绍的通过ServiceManager添加服务和获取服务，这些服务都是有名称的，我们可以通过 ServiceManager 来获取它。除此之外Android系统中还有一类Binder服务是匿名它，它们如何让客户端获得代理对象，并且使用呢，本文就一探究竟。 AIDL 介绍 AIDL全称为Android接口定义语言，是Android系统提供的一款可供用户用来抽象IPC的工具，它提供了语法让我们来定义跨进程通讯的服务接口，也就是 .aidl 文件，它也提供了工具，帮助我们把定义文件专程目标语言的代码。 我们自己使用AIDL创建的服务，或者一部分系统内的服务，比如 IWindowSession 、 IApplicationThread 等，这些多是运行在App进程，一般都不是系统服务，因此都是匿名的。我们这里以…",
-      "image": null,
-      "publishedAt": "2024-09-07T09:57:32Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-07-binder-aidl-transact/?utm_source=rss",
-      "detailPath": "articles/2c85cf1f162350374c73fe05.json"
-    },
-    {
-      "id": "a86eac514dc1fe0878d574c8",
-      "title": "Android Binder源码分析:添加服务和获取服务解析",
-      "summary": "通过ServiceManager添加服务和获取服务分别为 addService 和 getService ，两者流程上其实是有一些类似的，其中我们可以看到binder通讯的全过程。为了让内容更有意义，添加服务选择从Java层的代码触发，获取服务则选择从Native层触发。 添加服务 我们以添加 ActivityManagerService 为例分析添加一个Service。首先先画个简单的流程图，介绍涉及到的类和调用的方法，不过步骤进行了省略，详细看后面的代码解析。 ServiceManagerProxy请求添加Service 其代码在 ActivityManagerService 的 setSystemProcess 方法当中，具体调用如下： 1 2 ServiceManager . addService (…",
-      "image": "https://img.isming.me/image/binder_addservice.png",
-      "publishedAt": "2024-09-06T11:22:29Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-06-binder-add-and-get-service/?utm_source=rss",
-      "detailPath": "articles/a86eac514dc1fe0878d574c8.json"
     }
   ]
 }

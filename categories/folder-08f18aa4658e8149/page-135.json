@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "d5e191c706ca1a3270fd490a",
+      "title": "Android Tools - Log2File",
+      "summary": "Log2File工具类是用于Android程序将Log记录到文件中(如sd卡)的工具,应用场景： 无法连接电脑进行调试（usb线被usbotg占用） Log不容易被抓取 Bug出现很随机，不是必出现 其他自己脑补 0.说明 这篇文章最早是在我的CSDN博客上面发布了: http://blog.csdn.net/grackergao/article/details/18322749 .现在讲他转移到了这里,代码的Github地址 : https://github.com/Gracker/Android-Utils/blob/master/Log2File.java",
+      "image": null,
+      "publishedAt": "2014-05-02T05:25:35Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/05/02/android_log_to_file/",
+      "detailPath": "articles/d5e191c706ca1a3270fd490a.json"
+    },
+    {
+      "id": "91482bd245155aa8df6ad232",
+      "title": "记录一些梦境",
+      "summary": "多年前做的一些梦",
+      "image": null,
+      "publishedAt": "2014-04-29T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E6%A2%A6%E5%A2%83/",
+      "detailPath": "articles/91482bd245155aa8df6ad232.json"
+    },
+    {
+      "id": "d61fdf989f11afa6f666e9c1",
+      "title": "Android消息循环分析",
+      "summary": "我们的常用的系统中，程序的工作通常是有事件驱动和消息驱动两种方式，在Android系统中，Java应用程序是靠消息驱动来工作的。 消息驱动的原理就是： 1. 有一个消息队列，可以往这个队列中投递消息; 2. 有一个消息循环，不断从消息队列中取出消息，然后进行处理。 在Android中通过Looper来封装消息循环，同时在其中封装了一个消息队列MessageQueue。 另外Android给我们提供了一个封装类，来执行消息的投递，消息的处理，即Handler。 在我们的线程中实现消息循环时，需要创建Looper，如： class LooperThread extends Thread { public Handler mHandler; public void run() { Looper.prepare();…",
+      "image": null,
+      "publishedAt": "2014-04-02T11:14:57Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2014-04-02-android-message-loop-analyze/?utm_source=rss",
+      "detailPath": "articles/d61fdf989f11afa6f666e9c1.json"
+    },
+    {
       "id": "e1f74cae69936a729b95ef08",
       "title": "Android Service：开发自己的通知中心(2):辅助性服务实战",
       "summary": "1.辅助性服务实战介绍 上一篇文章介绍了什么是Accessibility以及简单的使用，这一篇文章就来讲讲如何使用Accessibility服务来创建一个简单的Android通知中心。Android中通知中心是一个系统层面的服务，负责显示应用和系统发来的通知（Notification，比如USB插入、选择输入法、未接来电、截图、天气信息、新闻推送等等）。在android4.3之前，一般的第三方应用是无法获取Notification list的（在Android4.3之后，有了一个新的接口,NotificationListenerService.getActiveNotifications(),可以获取当前的Notification）。但是利用Accessibility服务可以监听到各种事件的特性，可以开发一个…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/psp",
       "detailPath": "articles/623dcfaa7c6a9ddacf4f4263.json"
-    },
-    {
-      "id": "7c368ec154a42078e14b04b2",
-      "title": "幾天不吃青菜",
-      "summary": "每到颱風天，電視上總是會有家庭主婦們到大賣場搶購青菜的新聞。",
-      "image": null,
-      "publishedAt": "2008-07-27T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/days-without-vegetables",
-      "detailPath": "articles/7c368ec154a42078e14b04b2.json"
-    },
-    {
-      "id": "fc2b5511abb16999b61fdd02",
-      "title": "毛毛的音樂會",
-      "summary": "今天見到好久不見的大家感覺真的很棒，果然仁愛國中和附中的同學們（和家長們，其實）向心力還是很強的啊！大家都還是一樣可愛耶。",
-      "image": "https://wiwi.blog/assets/images/huihui-cc5675a8f0837f1414f924ab7730ce57.jpg",
-      "publishedAt": "2008-07-23T18:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/maomao-concert",
-      "detailPath": "articles/fc2b5511abb16999b61fdd02.json"
-    },
-    {
-      "id": "68adf2b70680e74073537d0c",
-      "title": "不要歧視老相機",
-      "summary": "Nikon CoolPix 2000。在七年前左右買的、兩百萬像素的數位相機。它是我的第一台、也是唯一一台數位相機：",
-      "image": "https://wiwi.blog/assets/images/coolpix2000-3d533ec154cf32e29dc00485bd4e8d67.jpg",
-      "publishedAt": "2008-07-23T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/coolpix2000",
-      "detailPath": "articles/68adf2b70680e74073537d0c.json"
     }
   ]
 }

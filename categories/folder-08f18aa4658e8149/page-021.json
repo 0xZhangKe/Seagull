@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "dfd057d97b089ea3ea4727b8",
+      "title": "VS Code Remote-SSH 把我的伺服器燒到 96°C：rust-analyzer 無限重跑 cargo check",
+      "summary": "一台跑著三十幾個容器、同時被 VS Code Remote-SSH 連進去開發的家用伺服器,溫度釘在 90°C 撐了四十分鐘、load 從 8 衝到 196,最後失去回應。而把它燒掉的不是那些服務,是編輯器。這篇記錄整個追查過程:三條看起來很有說服力但都是錯的線索(SMU 當掉後感測器說謊、重開機就好、CPU 只有 30 到 50%),怎麼用 sysstat 的 sar 和 netdata 的 apps.plugin 回溯一個已經結束的事件,以及最後抓到的三個兇手——rust-analyzer 對一個 GTK 依賴全缺、永遠編不過的 Tauri 專案無限重跑 cargo check、Foam 擴充讓 ripgrep 開出兩百多個行程、還有只是雜訊的 RustDesk 輪詢。文末附上防線設定與事後補的兩道保險。",
+      "image": null,
+      "publishedAt": "2026-08-04T07:16:25Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/vscode-remote-ssh-burned-my-server",
+      "detailPath": "articles/dfd057d97b089ea3ea4727b8.json"
+    },
+    {
+      "id": "44b0dedaa29cc4c935d3bee7",
+      "title": "縈繞於心的十二道難題",
+      "summary": "偶然看到費曼的 12 道難題（Feynman’s 12 Favorite Problems）這東東 […]",
+      "image": "https://2.gravatar.com/avatar/2ce149002ca625e3240835cbfaa3481507a538243a4c31c830176f97f9a9f060?s=96&d=identicon&r=G",
+      "publishedAt": "2026-08-04T07:14:57Z",
+      "sourceId": "737dffed2384c922",
+      "sourceTitle": "恐龍化石的網誌",
+      "link": "https://cylikesreading.wordpress.com/2026/08/04/twelve-problems-originated-from-feynman/",
+      "detailPath": "articles/44b0dedaa29cc4c935d3bee7.json"
+    },
+    {
+      "id": "e245c20e3b085fa39d59c30e",
+      "title": "UPS 加 NUT 讓伺服器斷電自動關機：設定全紀錄,和一條被貓咬過的電源線",
+      "summary": "這篇把 UPS 加 NUT 的完整設定寫成一份可照做的教學:UPS 選型的三個條件(PFC 純正弦波、AVR、NUT 支援)、NUT 的 driver / upsd / upsmon 三層架構與五個設定檔各管什麼、upsmon.conf 逐行說明、POWERDOWNFLAG 為什麼不能漏,以及 BIOS 那個選錯就前功盡棄的選項——Restore after AC Power Loss 必須是 On 而不是 Last State,因為 NUT 乾淨關機後機器的狀態就是關機。另外收錄把 UPS 狀態接到 cron log、Discord 通知與自架面板的做法。而這一切的起點是搬家後伺服器每天半夜硬斷電:線鬆、共用迴路、過熱、PSU 全試過,但那些都只是猜測。作者買 UPS 一半是為了保護、一半是把它當量測儀器用…",
+      "image": null,
+      "publishedAt": "2026-08-04T06:03:43Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/ups-nut-and-the-cable-the-cat-chewed",
+      "detailPath": "articles/e245c20e3b085fa39d59c30e.json"
+    },
+    {
+      "id": "a2587e55772899d7ddff5601",
+      "title": "入蜀记 day436 钟美美",
+      "summary": "「钟美美。」",
+      "image": null,
+      "publishedAt": "2026-08-04T04:48:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_436/",
+      "detailPath": "articles/a2587e55772899d7ddff5601.json"
+    },
+    {
+      "id": "7fd244ad35f5f95f494d9904",
+      "title": "本来无一物，何处惹尘埃？",
+      "summary": "最近有一些关于意识的思考和体悟。 之前看一本管理习惯的书，里面讲了很多关于人的激素作用，利用激素的功能属性去做 …",
+      "image": null,
+      "publishedAt": "2026-08-04T04:23:30Z",
+      "sourceId": "e0d7bbaba7286f4d",
+      "sourceTitle": "Rolen's Blog",
+      "link": "https://rolen.wiki/nothing-to-hold/",
+      "detailPath": "articles/7fd244ad35f5f95f494d9904.json"
+    },
+    {
+      "id": "e0a206b48587c10a657bbb85",
+      "title": "不要急",
+      "summary": "「不～要～急！」",
+      "image": null,
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/dont-rush",
+      "detailPath": "articles/e0a206b48587c10a657bbb85.json"
+    },
+    {
       "id": "62df087a7875d680833725e9",
       "title": "如何以及为什么要分辨 LLM(AI) 污染过的文本",
       "summary": "是的，我又来发表关于人工智能的暴论了。 在微信公众号上刷到的文章也好，订阅的博客中的文章也好，你是否在某个瞬间，觉得它们完全同质化了，感到厌烦，毫无阅读兴趣？有一部分人开始用大语言（LLM）模型来「润色」他们的文章。模型就那么点，全球全国却有这么多人，风格几乎统一。如果你也有同样的感觉，那么 你的直觉极其敏锐！ 作者怎样基于自己所理解的创作而创作，是作者的自由；读者怎样基于自己所理解的创作而选择，是读者的自由，本篇文章会举一些例子，也许能帮助你辨别疑似非人工撰写的文字。注意，这不是判定文章是否为人工撰写的唯一标准，仅供参考。也算谈谈那些让我不愿意读下去的行文风格。 先从标题说起。举一例子，如果一篇文章的标题是这类格式，应怀疑是非人工撰写的： 《从 AA 到 BB：CC 里的 DD》 《AA 的 BB：一<量词…",
@@ -593,72 +659,6 @@
       "sourceTitle": "Feed Me, Haruo",
       "link": "https://haruowang.vercel.app/pov/font/digi.html",
       "detailPath": "articles/1bc42e9f4f2d10340c031c2f.json"
-    },
-    {
-      "id": "2fc0f5e60beef04205be0256",
-      "title": "房屋租賃買賣筆記",
-      "summary": "從租房到買賣房的知識點整理",
-      "image": null,
-      "publishedAt": "2026-07-31T15:30:14Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/wealth/dwelling/house.html",
-      "detailPath": "articles/2fc0f5e60beef04205be0256.json"
-    },
-    {
-      "id": "920183b74a4a5007f25b8e1e",
-      "title": "FoxThinking #36: 我想知道的，前人已经说过了",
-      "summary": "难得空闲时间，开始把之前堆在「想看」清单上的书都拿出来看了。 果然，也是印证梭罗的话 1 ： 书籍在等待着我们，有时它会在为我们解密奇迹的同时展示另一番奇迹； 我们会发现某些在眼下难以言说的现象却早已在别处获得了表达；那些折腾我们， 让我们迷茫困惑的问题无一例外地叩问过所有智者，这些问题在他们那里一个都没 有遗漏，他们都根据自己的才能，用自己的语言，结合自己的人生给予了解答。 阅读 本来只是有点乘着闲暇消磨时间的阅读，没想到阅读越多，搞得有点像是《如何阅读一本书》中的主题阅读了。那么本次阅读 栏目首先来 define-module 下，然后根据主题而不是书籍来讲述。 [美]Steve McConnell. 代码大全：第2版. 电子工业出版社. 2006 ：虽然没拿来垫桌脚，但确实放在桌脚 旁……打开这将近一千…",
-      "image": null,
-      "publishedAt": "2026-07-31T15:26:00Z",
-      "sourceId": "94e2b917bd1c8189",
-      "sourceTitle": "狐狸反走矣",
-      "link": "https://blog.southfox.me/2026/07/fox-thinking-36/index.html",
-      "detailPath": "articles/920183b74a4a5007f25b8e1e.json"
-    },
-    {
-      "id": "599f81515fbafc606d0521bf",
-      "title": "帥熊出周邊",
-      "summary": "小五的時候，老師教大家做 8 頁小冊子 ，小朋友們在上面畫各種故事，就像是把 4 格漫畫變成 8 頁漫畫的概念，不過我沒印象自己做了什麼，只對這個書的結構有很深刻的印象。 作爲帥熊的粉絲，看到 8 頁小冊子版本的 下半年月曆電子檔 無料放送，當然要擁有！ 看看帥熊又去哪了！ 我用相片紙來列印，但厚度過厚，沒辦法完美對齊著對摺，而且對摺的時候還會擔心不小心 連結到月球 怎麼辦= = 1 最近暑假教初中生小朋友彈吉他，看到他們傳訊息的方式，不禁回憶小時候在即時通上常用的符號都搬出來用呢！ ↩︎",
-      "image": "https://eddielv.com/musings/yangbear-merch/yangbear-8-page-zine.jpg",
-      "publishedAt": "2026-07-31T09:19:31Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/yangbear-merch/",
-      "detailPath": "articles/599f81515fbafc606d0521bf.json"
-    },
-    {
-      "id": "03a5d67fdfd2e9fcf06b29b3",
-      "title": "敝姓謝",
-      "summary": "「你好，敝姓謝，言射謝。」 活動工作，總是讓我旁聽到各種神奇對話。",
-      "image": null,
-      "publishedAt": "2026-07-31T08:58:37Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/xie/",
-      "detailPath": "articles/03a5d67fdfd2e9fcf06b29b3.json"
-    },
-    {
-      "id": "753c7ea8aa2e8614299cdddf",
-      "title": "吉他手的經濟效益",
-      "summary": "大三、大四時，開始擔任高中吉他社老師，那時候聽到的大學同學都覺得很棒，上學的同時還能賺錢，似乎很有經濟效益。 到了大學畢業後，若要以吉他來做全職工作，難度就高非常多了，老同學們聽到收入還會皺眉頭。 這 6 年也不只一次聽到：「彈吉他沒有經濟效益。」 以我現在的能力，主要還是只能靠教學來當作微薄的基礎收入，偶爾接到演出或錄音，就當作是獎金；如果不夠的，還得靠燈光音響的工作來提升收入，可以說是混得很差。 最近錄音工作到一半時突然發覺： 「我跟平常一樣聽著音樂，音樂用吉他重現、錄音下來，但現在竟然有人會給我錢耶！」 很慶幸的是，目前教課、演出、錄音時，幾乎都沒有工作的感覺，偶爾遇到跟自己個性合的學生，對上課還會非常期待！ 如果以資本主義的視角來看，我算不上是成功，但持續做自己喜歡的事情，漸漸能同時拿它來養活自己，應…",
-      "image": null,
-      "publishedAt": "2026-07-31T08:13:53Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/economic-benefiits-of-guitarist/",
-      "detailPath": "articles/753c7ea8aa2e8614299cdddf.json"
-    },
-    {
-      "id": "4d76d1569c0b159779929435",
-      "title": "後見之明",
-      "summary": "農曆過年前，錄音師朋友要從國外代購器材，想找人分擔運費，問我要不要買什麼器材，於是我買了 KSM8 麥克風 。結果這陣子遇到錄音案子要錄木吉他就用上了，太有先見之明。 我沒有電吉他演出需求，今年過年後買了 效果器 後，沒多久就接到 電吉他演出案子 ；最近錄音案子也用了這顆效果器，太有先見之明。 真要說的話，2022 年左右，有老師想售出日本廠的復刻 Fender 1958 Strat 型的電吉他，我明明沒有想練電吉他，但還是買下來了。放了幾年都沒彈，當時如果沒買，今年就只能推掉工作，不愧有先見之明。 2023 的 冬天前，買了隔音艙 1 ，原價 40 多萬，只花了 4 萬多得到。也不知道要它幹嘛，但後來用它錄了一些作品，半夜想練習唱歌也行，好有先見之明喔！ 好吧，我想這是因為最近想買合成器（說不定下個作品就用…",
-      "image": null,
-      "publishedAt": "2026-07-31T07:59:04Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/hindsight/",
-      "detailPath": "articles/4d76d1569c0b159779929435.json"
     }
   ]
 }

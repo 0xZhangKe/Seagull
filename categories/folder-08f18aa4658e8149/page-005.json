@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "a02ac7c8c3ec846895e831f5",
+      "title": "使用 Python 脚本将 CanoKey 恢复出厂设置",
+      "summary": "与 我大多数技术文章的写作方式不同——那些文章通常先由我本人撰写，再借助 LLM 润色 ，本文大部分内容由 LLM 撰写。我借助 LLM 找到了一种解决方案，确认它能够正常工作，然后将 LLM 的回答整理成了这篇文章。 我在搭载固件 3.0.3-0-g30917b92 的 CanoKey Canary 上测试了以下操作流程。 1. 准备所需工具 在 Debian 或 Ubuntu 上运行： $ sudo apt install python3-usb libusb-1.0-0 然后使用以下脚本发送命令： #!/usr/bin/env python3 import time import usb.core import usb.util VID = 0x20A0 PID = 0x42D4 INTERFACE =…",
+      "image": null,
+      "publishedAt": "2026-10-12T15:01:37Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/factory-reset-canokeys-with-a-python-script/",
+      "detailPath": "articles/a02ac7c8c3ec846895e831f5.json"
+    },
+    {
+      "id": "844b7d6332bb68869f3f8e5e",
+      "title": "按摩",
+      "summary": "距離高中畢業已經四年了，我覺得我變了很多，但也沒變。沒變的是什麼我也說不清，但我清楚有些在意的事情我還是沒完全妥協，只是我覺得我已經社會化很多了。感覺寫到這邊是不是可以接一些什麼情感澎湃的感觸文字，但我覺得現在感受是很平淡的，只覺得時間過得既快又慢，天知道這個人到底在說什麼。明年對我來說很重要到最近放假都覺得不是很輕鬆，我覺得我該好好停下來一下了。至少在這篇的文字中把自己的感受放在第一位。我記得我有幾篇文章有提到一個感覺，但覺得當時詞不達意。那個感覺隨時間累積，我慢慢有抓到一點神韻，簡單、露骨地說，就是我排斥因為部落格的公開性，讓我對自己的文字不誠實，但這個不誠實不是說我編造謊言，而是因為太顧慮別人的想法，而太過修飾文字。所以剛好現在疲憊的心，打字就像按摩般，答答答下去，不要想太多。 說起來我現在整個人是很謎…",
+      "image": null,
+      "publishedAt": "2026-10-12T14:57:21Z",
+      "sourceId": "9bbc7d640e2bc143",
+      "sourceTitle": "RayrrrrrR",
+      "link": "https://rayrrrrrrr.bearblog.dev/6842/",
+      "detailPath": "articles/844b7d6332bb68869f3f8e5e.json"
+    },
+    {
+      "id": "f79a4b082920cb07e29bf831",
+      "title": "SageFreedom 和我的第一个备用身份已失效",
+      "summary": "警告： 密钥 ID 为 0xD5C6AFE1A6186D1C 的 OpenPGP 密钥和密钥 ID 为 0x98313A47362B498B 的 OpenPGP 密钥已不再使用，现予以撤销。相应的身份分别是 SageFreedom 和 Rebel Zhang，因此均已失效。请勿再信任这两个身份。 我的主要身份 Rebel Zhang 目前仍然有效，对应的 OpenPGP 密钥 ID 为 0xBCD5DC5659C7FB50。我的备用身份对应的 OpenPGP 密钥 ID 为 0x4A52DBB4FB0D0262，目前也仍然有效。",
+      "image": null,
+      "publishedAt": "2026-10-12T14:44:24Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/sagefreedom-and-my-first-backup-identity-are-invalidated/",
+      "detailPath": "articles/f79a4b082920cb07e29bf831.json"
+    },
+    {
+      "id": "817a4a96e810f50737891ab8",
+      "title": "HTML里的“宏”",
+      "summary": "摊牌了，分享两个极少有人知道的技巧。 观察下面的网页 https://lab.est.im/xhtml/ 有没有发现神奇之处 <?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE html [ <!ENTITY my_symbol \"★\"> <!ENTITY wikipedia '<img height=\"14\" src=\"https://en.wikipedia.org/favicon.ico\" alt=\"Wikipedia\" />'> ]> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <title>Entity test</title> </head> <body> <p>hey &my_symbol;…",
+      "image": "https://www.mi.com/favicon.ico",
+      "publishedAt": "2026-10-12T13:29:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-40",
+      "detailPath": "articles/817a4a96e810f50737891ab8.json"
+    },
+    {
+      "id": "4b4972e85e07433bcab303e0",
+      "title": "曼努的字型搜尋引擎",
+      "summary": "大部分我們遇到的問題，都有其他人碰過了。通常搜尋一下就能看到有人分享怎麼解決問題。 記錄一下最近發現的酷東西： 免費中文字型速查表 - 懶惰的權利 懶惰的權利 是由「字型推坑專員」的曼努出於興趣而做的網站，不只有很豐富的字型跟設計相關知識文章，也有曼努個人關於生活的 blog。我是在陳建中的 〈有關「字嶼」—劣跡中國字體公司的捲土重來〉 這篇文章裡發現的。 在曾經整天做報告跟投影片的大學時期，我也收集過很多可以免費自由使用的電腦中文字型。那時開始就很喜歡看 justfont blog 的各種關於「字」的知識教學文章 1 ，也會固定收聽他們的 Podcast 節目 《字型腦補 A Knob of Font》 ，從中學習過不少關於字型和排版與一點點設計相關的知識。 那時候如果用 Google 搜尋「簡報 中文字體…",
+      "image": null,
+      "publishedAt": "2026-10-12T12:04:11Z",
+      "sourceId": "859dc4f797795c39",
+      "sourceTitle": "蟬噪林愈靜",
+      "link": "https://blog.linyuchin.com/manzoo-font-finder/",
+      "detailPath": "articles/4b4972e85e07433bcab303e0.json"
+    },
+    {
+      "id": "0bcb4916d4686e3489ed6c9a",
+      "title": "大寫鎖定鍵",
+      "summary": "不知道為什麼，在我認識的人裡面，似乎有超過一半並不知道「按住 shift 不放再敲字母」就能打出大寫的字母。 包括我本人國小時期第一次學習使用電腦的時候，在學校電腦課教電腦的電腦老師、在家裡教我怎麼在「我的最愛」打開 www.freegame.tw 的哥哥都在這個範圍內。印象中，大概是在國中左右我才學會 shift 的正常功能應該是「按住敲大寫，不按敲小寫」。也就是說從國小一年級到六年級（或是國三）畢業為止，我至少有五到八年左右的時間都是這樣打字： CapsLock I CapsLock like to watch CapsLock TV CapsLock . CapsLock M CapsLock y favorite CapsLock TV CapsLock show is a singing conte…",
+      "image": null,
+      "publishedAt": "2026-10-12T12:00:46Z",
+      "sourceId": "859dc4f797795c39",
+      "sourceTitle": "蟬噪林愈靜",
+      "link": "https://blog.linyuchin.com/capslock/",
+      "detailPath": "articles/0bcb4916d4686e3489ed6c9a.json"
+    },
+    {
+      "id": "884e485d93d16fb68a68b5d5",
+      "title": "Accents ultimately don't mean a lot",
+      "summary": "One day when I went for my usual grocery shopping, I stumbled upon a child behind me when I was queuing up at a payment counter. The little kid, who looked to be of Chinese ethnicity and about two to three years old, was riding a fairly small-size bicycle which was obtained from the supermarket and wasn’t yet paid for. And then for some reason, he repeatedl…",
+      "image": null,
+      "publishedAt": "2026-10-12T10:27:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/accents-ultimately-dont-mean-a-lot/",
+      "detailPath": "articles/884e485d93d16fb68a68b5d5.json"
+    },
+    {
+      "id": "90cbaa7b53451f37c9867892",
+      "title": "巴别塔",
+      "summary": "Emoji 常被喻为现代的巴别塔或新世界语，但是塔终归还是要建在地上，而各地又有各地的规矩。 fin. 激赏 ！ 来信 。",
+      "image": "https://kaix.in/2026/1012/emoji_hu5873760166305983695.jpg",
+      "publishedAt": "2026-10-12T09:29:04Z",
+      "sourceId": "f451863227fe105c",
+      "sourceTitle": "KAIX.IN",
+      "link": "https://kaix.in/2026/1012/",
+      "detailPath": "articles/90cbaa7b53451f37c9867892.json"
+    },
+    {
       "id": "7520f241580182b8dc0c5165",
       "title": "AI 都这么强了，碰到问题为什么你还是卡着",
       "summary": "哪怕 AI 已经这么强了，我注意到身边的人碰到问题还是会卡住，无法利用现有的工具去解决问题，我一度思考为何会产生这样的局面，有种拿着屠龙刀切菜的感觉。",
@@ -571,94 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/on-edge",
       "detailPath": "articles/3bdc1f58f1151fac34e75716.json"
-    },
-    {
-      "id": "d0521b275138a8fa21b75f1b",
-      "title": "我的 AI Native iOS 开发验证工作流",
-      "summary": "往原址览之： https://innei.in/posts/tech/ai-native-ios-e2e-verification",
-      "image": null,
-      "publishedAt": "2026-10-09T17:39:44Z",
-      "sourceId": "f5c4d2cfb45a5bf1",
-      "sourceTitle": "静かな森",
-      "link": "https://innei.in/posts/tech/ai-native-ios-e2e-verification",
-      "detailPath": "articles/d0521b275138a8fa21b75f1b.json"
-    },
-    {
-      "id": "0f1fafd8766890d86fe167a9",
-      "title": "取消資格，朋友",
-      "summary": "半夜宣洩一下，三段有點痛苦的（曾經）友誼。 IT人H君 我和H的真人只見過面兩次，我們是在IT人的圈子認識的。 […]",
-      "image": "https://2.gravatar.com/avatar/2ce149002ca625e3240835cbfaa3481507a538243a4c31c830176f97f9a9f060?s=96&d=identicon&r=G",
-      "publishedAt": "2026-10-09T17:34:18Z",
-      "sourceId": "737dffed2384c922",
-      "sourceTitle": "恐龍化石的網誌",
-      "link": "https://cylikesreading.wordpress.com/2026/10/10/rotten_or_broken_friendships/",
-      "detailPath": "articles/0f1fafd8766890d86fe167a9.json"
-    },
-    {
-      "id": "a02b14ec7b323a52c47f17e9",
-      "title": "代禱事項",
-      "summary": "不管你是不是基督徒，都可以透過這個表單請我幫忙禱告。",
-      "image": null,
-      "publishedAt": "2026-10-09T17:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/prayer-request/",
-      "detailPath": "articles/a02b14ec7b323a52c47f17e9.json"
-    },
-    {
-      "id": "1160067f0b073589722e076c",
-      "title": "每夫吐槽（120）",
-      "summary": "臭宝在家里难得看一回电视，几个小时之后，把机顶盒遥控器弄丢了。可能是扔到鸭脖残骸中当垃圾一起扔了。 她可以不看，但她想看的时候不可以看不成。那就再配一个遥控器吧。 机顶盒早已停产，某宝上搜，没仔细看，拍回来才发现是带红外接收器的。这带来个问题，就是用了遥控器就不能插U盘，给我装APP带来了极大的不便（不喜欢开共享）。退了。 再搜，发现同型号遥控器早已绝版。有二手的也卖得死贵，6、70一枚。小黄鱼上价格也差不多。有心买同品牌其它系列的，又怕匹配不上白白浪费时间。 灵机一动，我干脆买整个机顶盒啊。果然，找到一个品相不太好的，只卖85，反正我又不图你盒子，只图遥控器啊。店家特别说明，送的两个遥控器不是原装的，但都保证好用。 东西到了之后，立刻测试。不好使。而且两个都不好使。跟店主录屏掰扯半天，店主教了用鼠标删除蓝牙…",
-      "image": null,
-      "publishedAt": "2026-10-09T15:13:19Z",
-      "sourceId": "474e724b69cd3e76",
-      "sourceTitle": "破襪子",
-      "link": "https://pewae.com/2026/10/random_kuso_120.html",
-      "detailPath": "articles/1160067f0b073589722e076c.json"
-    },
-    {
-      "id": "bd1adbe10724a7e0259de1c6",
-      "title": "2026 年十一假期",
-      "summary": "今年十一没出门，因为没什么旅游的兴趣，怕了人山人海。境外热门地方也挤满了中国人。还有个原因是娃上小一了，有点紧张怕他请假影响学习，尽管我内心深处认为应该没啥影响。因为要给娃腾空间放学习桌，十一前一周我就开始收拾书房了，此项工作持续到假期最后一天。扔了十几大袋闲置或无用的物品，才发现有很多没拆封的玩具、书籍。有些是我买的，有些是别人送的，虽然可惜，但既然这么多",
-      "image": "https://yipai.me/media/blog/assets/cdc2a728-da83-4374-9587-13b151a209bc-fc10099ca7e375ca.jpg",
-      "publishedAt": "2026-10-09T14:35:22Z",
-      "sourceId": "211ed4466033fe3d",
-      "sourceTitle": "一派胡言",
-      "link": "https://yipai.me/post/2554.html",
-      "detailPath": "articles/bd1adbe10724a7e0259de1c6.json"
-    },
-    {
-      "id": "8de84619ae9db099a5cef674",
-      "title": "關於那所謂的「亞洲英語腔」",
-      "summary": "⚠️ 這是一篇措辭強烈的「黑粉」抱怨文，請斟酌閱讀。 其實我一直在猶豫該不該寫這篇文，因爲對某些網紅或公衆人物而言，「炎上商法仍舊是一種商法」（或用英文來表達的話：Negative engagement is still engagement），我不想因爲這篇文而給予這些人更多的注意力（或甚至是名氣）。 耗費自己這麼多的精力，只爲了對着空氣去罵一個對此感到不痛不癢的人？真的是「 嘥～氣～ 」啊。 不過咧，我還是「過不了自己那關」：爲了發洩我心裡積累的不快，並且讓其他人看清這些人的「把戲」（？），我還是決定將此文寫下來。 在西方英語圈的搞笑表演中，有時會出現那些扮演着像是「『亞洲』大叔」或「虎媽」（tiger mom）等的角色，並且口操「亞洲英語腔」（Asian accent）講話的橋段。 以下這部影片可以說是…",
-      "image": null,
-      "publishedAt": "2026-10-09T13:29:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/about-the-so-called-asian-accent/",
-      "detailPath": "articles/8de84619ae9db099a5cef674.json"
-    },
-    {
-      "id": "e09a3c14465fac0ece6468b4",
-      "title": "2026-07-27 / 一天",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:33:49Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/86/",
-      "detailPath": "articles/e09a3c14465fac0ece6468b4.json"
-    },
-    {
-      "id": "305ccee7e55248fc03e35a97",
-      "title": "2026-08-04 / 始皇帝",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:14:43Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/94/",
-      "detailPath": "articles/305ccee7e55248fc03e35a97.json"
     }
   ]
 }

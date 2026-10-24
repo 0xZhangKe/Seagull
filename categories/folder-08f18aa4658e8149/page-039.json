@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "6a4ce8db6e8415767444c6d9",
+      "title": "Android Perfetto 系列 11：PerfettoSQL、Trace Processor 与回归检测",
+      "summary": "在 Perfetto UI 里框出问题窗口，看主线程、RenderThread 和 CPU 状态，再截几张图，单次定位很方便。换一份 Trace 或换一台设备，截图里的判断就难以按同一口径重算。我更关心的是：下次拿到同一类问题，还能不能算出可复查的数字。 PerfettoSQL 与 Trace Processor 可以把时间窗口、线程身份和耗时口径写进查询，再让 Python 对多份 Trace 执行同一段 SQL。这样复测版本时，能回到每份原始 Trace 核对数字。 下面从一条手工判断出发，逐步得到可批量执行的查询和结构化输出。示例代码需要替换目标进程、时间窗口和采集条件后再用于自己的场景。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:11:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-11-PerfettoSQL-TraceProcessor-Automation/",
+      "detailPath": "articles/6a4ce8db6e8415767444c6d9.json"
+    },
+    {
+      "id": "27a309aeed434c7e4a780067",
+      "title": "嬰兒、貓，與你的手機",
+      "summary": "- ✂️ 桌上有一把剪刀，而你有一個嬰兒。你不會把嬰兒放在剪刀旁邊，看著他拿起剪刀，然後希望他自己想通「剪刀很危險，我應該把它放下來」。你會把剪刀收到抽屜裡、鎖住，根本不要讓他拿到剪刀。",
+      "image": null,
+      "publishedAt": "2026-05-04T00:01:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/babies-cats-and-your-phone",
+      "detailPath": "articles/27a309aeed434c7e4a780067.json"
+    },
+    {
+      "id": "581a51ce3fe06c75397e139b",
+      "title": "生活信条",
+      "summary": "很久之前在 PS4 上第一次玩《刺客信条 Assassin's Creed》，觉得 creed 这个词很神奇，是个看起来很简单但意义很高深的词。接着看完诺兰的电影《信条 Tenet》，觉得外国人对「心理目标」的表达真是丰富，直到我问完 Gemini 才明白他们之间有所差异： 如果你想表达... 建议用词 感觉像... 它是你生活系统的**底层逻辑** Tenet 像代码里的硬性约束 它是你内心的**基本看法** Belief 像一种哲学倾向 它是你公开的**身份标签** Creed 像一种宣言或誓言 它是你日常的**行为准则** Principle 像一种自律的习惯 好吧，本来想装个 13 用 creed 做标题结果被 AI 摁死，改叫 principle 好了。 起这个题目，是因为发现生活中遇到的问题越来越…",
+      "image": null,
+      "publishedAt": "2026-05-04T00:00:00Z",
+      "sourceId": "fb2f05bc1af2b1bc",
+      "sourceTitle": "一盘家常菜",
+      "link": "http://life.wellwellsleep.com/post/life/2026-05-04-the-life-principle",
+      "detailPath": "articles/581a51ce3fe06c75397e139b.json"
+    },
+    {
+      "id": "1698adc04859d95067519211",
+      "title": "怀念两个故人",
+      "summary": "易连 不记得是13还是14年，wenxin介绍我去她的两个朋友的工作室。于是我认识了易连。… Read More",
+      "image": "https://2.gravatar.com/avatar/ea6699dd1503807085d7548af8465d57581dc3f7355f205d56d97898ddb530dd?s=96&d=identicon&r=G",
+      "publishedAt": "2026-05-03T20:47:33Z",
+      "sourceId": "960b48b47303d275",
+      "sourceTitle": "蛰洲",
+      "link": "https://aliangx.blog/2026/05/03/%e6%80%80%e5%bf%b5%e4%b8%a4%e4%b8%aa%e6%95%85%e4%ba%ba/",
+      "detailPath": "articles/1698adc04859d95067519211.json"
+    },
+    {
+      "id": "bde7301f84dbf943722dd784",
+      "title": "免子洞",
+      "summary": "剛剛讀到 Jaron 的 這篇 ，我對這篇很有感覺欸！ 我社交媒體雖然說沒辦法完全斷開，但是看的次數跟時間已經超級少，但是我發現到我在無聊的時候我還是會想要找事做，我如果一直沒有事情亂看影片之類的，心情會變的有點差。 跟 AI 聊天這個我也會發生，只是不太會聊很久，就是把想要知道的都問一問這樣，就不至於會影響到生活啦。我自己覺得我真的會卡住的是我真的超級想做的事，我會進入一種超級專心的狀態。 像之前做 日記 系統我就花了一周多，每天都接近不吃不喝那種，就是一有時間就在寫，常常直接用到半夜。前陣子備賽也是一樣，每天都是打題打到半夜。 最近我比較沒有這樣的事，硬要說的是話是我在練 Bass 吧，我一有時間就會玩，但是我沒有到之前那麼瘋，一路用到半夜這樣，就是沒事做的時間就會用這個來填充。",
+      "image": null,
+      "publishedAt": "2026-05-03T16:00:00Z",
+      "sourceId": "de9cbd8d045ab396",
+      "sourceTitle": "小麥的異想世界",
+      "link": "https://my-blog.worldofwheat.cc/blog/2026/05/rabbit-hole.html",
+      "detailPath": "articles/bde7301f84dbf943722dd784.json"
+    },
+    {
       "id": "966dbbe6195df7daa753c853",
       "title": "被一次猜中自己的 MBTI",
       "summary": "你有試過在完全沒有告訴別人自己 MBTI 1 的情況下被一次猜中自己的 MBTI 嗎？Well，我最近就親身經歷了一次。 在某次活動結束後的朋友飯聚中，我的那位多年 好友 正在和同桌的其他人聊起 MBTI 相關的話題，而我當時就只是在一旁聆聽，沒有主動參與進去。 後來呢，彷彿就在冥冥之中，我和他的眼神在某個瞬間對上了。然後他就直接指着我，以篤定的語氣向我說道：「INTP！」 就這樣，他一次猜中了我最近一次 2 測到的 MBTI 類型！ 在瞎猜的情況下直接猜中 MBTI 的機率可是只有十六分之一（6.25%）欸！這機率只比在 標準撲克 牌局中抽得「兩對」（英語：two pair；粵語：滔啤）牌型略高一些！ 他根本徹徹底底地看透我了！（沒） 更妙的是，再後來他說我和他的 MBTI 就只有 I 與 E 之差罷了（他…",
@@ -604,61 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/ai-productivity-and-internalisation-of-knowledge/",
       "detailPath": "articles/8fc296743018e202b2cb6803.json"
-    },
-    {
-      "id": "f34cf50a9ece524c50dc8a91",
-      "title": "不要再說生產力了",
-      "summary": "你真覺得自己的價值和機器一樣？難道你花了許多力氣照顧生病的自己就不算一種生產力？",
-      "image": null,
-      "publishedAt": "2026-04-28T06:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2026/04/dont-use-the-word-productivity-anymore/",
-      "detailPath": "articles/f34cf50a9ece524c50dc8a91.json"
-    },
-    {
-      "id": "f5812c8a0f9b312752ffcd2f",
-      "title": "我先發現的",
-      "summary": "你有過這種經驗嗎？在某個藝人或創作者還默默無名時，你就已經在關注他；後來有一天他成名了，你心中就超想要告訴大家：「是我先發現的！」並且對於那些成名後才衝進來、還硬要營造自己是「老粉」的人感到鄙視。",
-      "image": "https://wiwi.blog/assets/images/2009-92aa2f5155c6821ec8812371b0c6cec9.jpg",
-      "publishedAt": "2026-04-28T00:05:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/i-found-it-first",
-      "detailPath": "articles/f5812c8a0f9b312752ffcd2f.json"
-    },
-    {
-      "id": "bcb3a18150a99653c9395af7",
-      "title": "2026 Week 16~17",
-      "summary": "周记 | 2026年第16~17周（04-13~04-26）的见闻、体验与思考 最近在读的书：《生活十讲》蒋勋 （因为设定了多读书的目标，所以在周记里开个关于读书的常驻环节，写一写最近读了什么书，有什么收获和体会，以督促自己读书） 最近生活里经历了一阵的变动，整个人像站在十字路口，心里很乱，想找点过来人的经验参考。看到《生活十讲》这个书名，觉得“生活”两个字挺实在的，以为里面藏着应对困惑的答案，就下单了。 等这段日子才有时间翻开这本书，读起来发现和期待有差距，但也有很多收获。 《生活十讲》蒋勋 关于价值与信仰 价值部分，第一章讲老子对“空”的说法我挺认同的，如果心被物质塞满了，人反而会变得麻木没感觉。第二章里作者也做了不少自省，到了第三章谈伦理，有一句话让我印象很深：“如果对因无能为力，那么果也是理所当然。”…",
-      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202604290004657.webp",
-      "publishedAt": "2026-04-28T00:00:00Z",
-      "sourceId": "95e525ddc69ab5ef",
-      "sourceTitle": "金色河流",
-      "link": "https://goldenriver.site/posts/2026-week-16-17/",
-      "detailPath": "articles/bcb3a18150a99653c9395af7.json"
-    },
-    {
-      "id": "073414bd86b642342a9b2360",
-      "title": "2026-04-23 / UT",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-04-27T17:35:20Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/18/",
-      "detailPath": "articles/073414bd86b642342a9b2360.json"
-    },
-    {
-      "id": "9144a0e1369d774a5de70d68",
-      "title": "2026-04-28 / Copilot 不再",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-04-27T17:35:20Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/19/",
-      "detailPath": "articles/9144a0e1369d774a5de70d68.json"
     }
   ]
 }

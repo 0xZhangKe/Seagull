@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "76d7f73e4e8a1a9452780fb3",
+      "title": "要记录知识，而不是信息",
+      "summary": "信息是死的，知识才是活的。比如：今天，开始写作。这句话对写作没有任何意义，对生活也没有，哪怕加上了背景信息，也能赋予它一定的意义。例如： 今天开始准备 XX 文章的大纲，主要包括1,2,3。 这种最简单的词句，在日后回顾，提供的至少是有效信息。我记得柴静早年说她读自己写的日记，全都是情绪，没有事实，我怎么怎么样了，实际上根本想不起当时究竟发生了什么。后来，她换了个思路，只写事实，不在乎情绪，因为同样一个事实，你的观感不等于其他人的观感，这也是她后来做节目的一点原则。",
+      "image": null,
+      "publishedAt": "2021-11-26T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2021/11/knowledge-is-not-information/",
+      "detailPath": "articles/76d7f73e4e8a1a9452780fb3.json"
+    },
+    {
+      "id": "134bf02ab24cdffe8135da03",
+      "title": "把 MuseScore 當 DAW 用",
+      "summary": "https://musescore.com/user/35648465/scores/7165248 又一個把 MuseScore 當作 DAW 來用的怪物 XD",
+      "image": null,
+      "publishedAt": "2021-11-25T20:53:18Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/musescore-daw/",
+      "detailPath": "articles/134bf02ab24cdffe8135da03.json"
+    },
+    {
+      "id": "5aaca964badab3caa6a003b5",
+      "title": "与智能化的 Toddler 相处",
+      "summary": "离 “I don’t want it” 的阶段过去了小半年，与 Toddler 的日常又有了不少变化。随着 Toddler 的智能性提升，很多事情变得容易了（不过也有很多原本容易的事变得更麻烦了）。这里说说来最近的观察一二三。 情绪，以及相关的斗智斗勇 # Toddler 的情绪现在是大 boss 了，不管是对 TA 来说还是对我们照顾的人来说。以下举几个问题 + 破解的办法，每一个都是在 Toddler 的泪水和大人的沮丧中摸索出来的。 从很早（1.5岁附近）就出现喜欢玩的东西不情愿放开手的情况。这种事情本身挺无害的，喜欢玩就玩呗，谁还没有点一时上瘾的东西了。但是如果遇到需要睡觉/做别的事情、或者对危险的东西有兴趣的情况，一旦强制离开就会被 Toddler 认为霸占了自己的东西（“Mine！”），从而爆发叛…",
+      "image": "https://fourhappylions.com/posts/toddler-growing-smart/miburi.jpeg",
+      "publishedAt": "2021-11-25T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/toddler-growing-smart/",
+      "detailPath": "articles/5aaca964badab3caa6a003b5.json"
+    },
+    {
       "id": "434d9dbbf33944e61d4b63df",
       "title": "叁拾一周：No.21",
       "summary": "这是「叁拾一周」第二十一期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 206 位。我的下一个目标是 234。 上周看了很多东西，反而思路是枯竭的，在我获取信息之后，我首先会想，它对我有没有用。大概两年前，我会想它对你有没有用。这是个很技巧性的东西，还是像陈晓卿 说的 ，老师傅叫的是什么真实，就拍什么，不要管观众，现在的导演是你想看什么，我就拍什么。 李如一大概率是 Postman 的忠粉，从他过往的节目里我如此判断。他对 Postman 的作品如数家珍，说实话，我都看过，但我得不出他的结论，却在他提醒之后后背发凉。这和我写通讯大抵相同。 我不会思考你喜欢什么我就写什么这样的话题，因为我不知道你是谁，但我发现一些让我开心的东西，一定也能让某个“你”开心。我只要等你来，就 OK。 这就是本期我想聊的，影响。…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2021/09/13/android-systrace-Responsiveness-in-action-3/",
       "detailPath": "articles/5455cb39405ab8bbe3c7f9f0.json"
-    },
-    {
-      "id": "f0dcbd3d02314a252284c715",
-      "title": "Android Systrace 响应速度实战 2 ：响应速度实战分析-以启动速度为例",
-      "summary": "在讨论 Android 性能问题的时候， 卡顿 、 响应速度 、 ANR 这三个性能相关的知识点通常会放到一起来讲，因为引起卡顿、响应慢、ANR 的原因类似，只不过根据重要程度，被人为分成了卡顿、响应慢、ANR 三种，所以我们可以定义广义上的卡顿，包含了卡顿、响应慢和 ANR 三种，所以如果用户反馈说手机卡顿或者 App 卡顿，大部分情况下都是广义上的卡顿，需要搞清楚，到底出现了哪一种问题 如果是动画播放卡顿、列表滑动卡顿这种，我们一般定义为 狭义的卡顿 ，对应的英文描述我觉得应该是 Jank ；如果是应用启动慢、亮灭屏慢、场景切换慢，我们一般定义为 响应慢 ，对应的英文描述我觉得应该是 Slow ；如果是发生了 ANR，那就是 应用无响应问题 。三种情况所对应的分析方法和解决方法不太一样，所以需要分开来讲…",
-      "image": null,
-      "publishedAt": "2021-09-13T02:46:44Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2021/09/13/android-systrace-Responsiveness-in-action-2/",
-      "detailPath": "articles/f0dcbd3d02314a252284c715.json"
-    },
-    {
-      "id": "34c2fa47de776db55eb4cd3a",
-      "title": "Android Systrace 响应速度实战 1 ：了解响应速度原理",
-      "summary": "在讨论 Android 性能问题的时候， 卡顿 、 响应速度 、 ANR 这三个性能相关的知识点通常会放到一起来讲，因为引起卡顿、响应慢、ANR 的原因类似，只不过根据重要程度，被人为分成了卡顿、响应慢、ANR 三种，所以我们可以定义广义上的卡顿，包含了卡顿、响应慢和 ANR 三种，所以如果用户反馈说手机卡顿或者 App 卡顿，大部分情况下都是广义上的卡顿，需要搞清楚，到底出现了哪一种问题 如果是动画播放卡顿、列表滑动卡顿这种，我们一般定义为 狭义的卡顿 ，对应的英文描述我觉得应该是 Jank ；如果是应用启动慢、亮灭屏慢、场景切换慢，我们一般定义为 响应慢 ，对应的英文描述我觉得应该是 Slow ；如果是发生了 ANR，那就是 应用无响应问题 。三种情况所对应的分析方法和解决方法不太一样，所以需要分开来讲…",
-      "image": null,
-      "publishedAt": "2021-09-13T02:46:22Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2021/09/13/android-systrace-Responsiveness-in-action-1/",
-      "detailPath": "articles/34c2fa47de776db55eb4cd3a.json"
-    },
-    {
-      "id": "e3529668eac85ff1af0cf351",
-      "title": "《酒狂》演奏版本小考",
-      "summary": "《酒狂》是我最喜欢的古琴小品，古老却极具现代性。曲子没有定式，弹者各自解释演绎。所以版本间有区别，呈现性格。 李祥霆演绎。他考据《酒狂》是唐朝定谱，并介绍了一番他对此作看法。3:00 开始弹，",
-      "image": null,
-      "publishedAt": "2021-09-12T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2021/09/12/jiu-kuang/",
-      "detailPath": "articles/e3529668eac85ff1af0cf351.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "b5470d69f50142dc9feb5238",
+      "title": "推动和记录",
+      "summary": "最近遇到一个开心的烦恼：我重新用回了 Notion。 有很多原因，最重要的还是看到了 薑餅資 的一个记录视频，让我意识到之前使用 Notion 的时候，并没有发挥它的长处，而是在自己的思维模式下使用这一工具，丢掉了它的 Database 本应具有的魔力。一气之下，看完了她的系列视频，也重新审视到自我的问题： 任何笔记类的工具，最终目的是推动人高效地向前运行，达成目标，而不是简单的记录。 所以很多问题在 Notion 的特色中都得到了很好的解决，比如， 它就是一个可以无限链接无限多 Excel 的系统，我们的任何记录都可以用一张或者多张 Excel 搞定，二级页面就此消失，一切都变成 One Page，一目了然; 它可以在任何地方以任何形式自由展示任何一个 Excel，满足任何需求; 它的设计和颜值都很惹人喜欢…",
+      "image": "https://r2.elizen.me/2023/04/566061dd26bebac5cd5d87cee07e52de.jpg",
+      "publishedAt": "2023-04-25T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2023/04/promote-and-record/",
+      "detailPath": "articles/b5470d69f50142dc9feb5238.json"
+    },
+    {
+      "id": "bf7a5cea0cb178087008513c",
+      "title": "番茄时钟",
+      "summary": "本功能需要开启 JavaScript 我时不时会想自己写一个番茄时钟，因为网上找到的总是不尽如人意：它们大多没有通知功能，而且工作 25 分钟后会自动开始休息 5 分钟的计时。老实说我觉得那些软件是写给浏览器用的，不是写给人用的：不弹通知，要我一直盯着网页看么？自动开始，我要是想多花几秒完成手头的事呢？ 我听说 React 是理念很好的框架， 上次试用 ReScript 时 我又发现 ReScript 存在的主要目的其实是写 React。正好最近自制番茄时钟的想法又出现了，索性就尝试用这两个工具实现一下。最后的结果就是上面的框框，它支持： 时间结束后弹窗（当然，要经过你的允许） 由用户手动开始每个时间段（所谓“自主可控 ” ） 暂停（好像原教旨主义者不会暂停，只会作废这段时间然后重新开始） 重新开始（只要再点…",
+      "image": null,
+      "publishedAt": "2023-04-23T14:08:47Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/pomodoro/",
+      "detailPath": "articles/bf7a5cea0cb178087008513c.json"
+    },
+    {
+      "id": "7ae6ebe549c6ab8375c7c8f3",
+      "title": "DiskGenius 分配空闲空间至 C 盘",
+      "summary": "C盘空间不足、爆红了怎么办？本文是一篇使用 DiskGenius 工具为C盘扩容的图文教程。文章通过详细的截图和步骤，清晰地演示了如何从其他磁盘分区（如D盘、E盘）中划分出一部分空闲空间，并将其无损地合并到C盘，从而解决系统盘容量告急的问题。本教程操作简单，适合新手快速上手。",
+      "image": null,
+      "publishedAt": "2023-04-20T00:37:26Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/cf92.html",
+      "detailPath": "articles/7ae6ebe549c6ab8375c7c8f3.json"
+    },
+    {
       "id": "95eb94991801d1446469c51f",
       "title": "压缩博客的图片和视频",
       "summary": "最近琢磨着更新一下《 爱丁堡的博物馆 》 ，但因为要先把图片拖到 OneDrive 文件夹里，再点右键 → 在线查看 →···→ 嵌入 → 大（1024px）→ 复制 URL→ 输入 ![alt text]()→ 粘贴，所以歇了。仔细一想，这样插图确实太复杂了，干脆还是把图片全存本地，用 remotely-save 同步到 VPS 里好了——但这样就需要自己压缩图片和视频，也就有了这篇博客。 图片 压缩图片最立竿见影的方法是降分辨率。我不清楚 2023 年博客最适合的分辨率是多少，但我之前插的图大部分是 1024px，够用。 用 ImageMagick 可以原地修改图片（magick mogrify ） ，但因为我要保留原图看压缩有没有劣化太多，所以我喜欢用创建新图片的 convert（仍然是 ImageMa…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2023/02/chat-with-chatgpt/",
       "detailPath": "articles/bf8f042696eb5a63f2b25f2a.json"
-    },
-    {
-      "id": "a6513e675a180cfbd65e4521",
-      "title": "极速聊 Nintendo Direct 230209",
-      "summary": "简单聊几句今天的任天堂直面会，主要依照日版的顺序。",
-      "image": null,
-      "publishedAt": "2023-02-09T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/nintendo-direct-230209-quick-chat",
-      "detailPath": "articles/a6513e675a180cfbd65e4521.json"
-    },
-    {
-      "id": "b42a6fc5ef891d6ba1f58a97",
-      "title": "无标题文章",
-      "summary": "Summary：普天下梦南柯人似蚁",
-      "image": "https://0.gravatar.com/avatar/6534dee26a76e0d7920dd2ff97a6d6f66eaca197940b2b3b98b4f51ba4aaaddf?s=96&d=identicon&r=G",
-      "publishedAt": "2023-02-08T19:08:00Z",
-      "sourceId": "be4bcd1c1ebb05fb",
-      "sourceTitle": "三十五个骑兵幽灵与一把捕鸟枪",
-      "link": "https://captainsang.wordpress.com/2023/02/09/%e3%80%90%e5%85%a8%e8%81%8c%e7%8c%8e%e4%ba%ba%ef%bd%9c%ef%bc%9f%ef%bc%9f%ef%bc%9f%e5%87%af%e7%89%b9%e3%80%91%e8%9c%98%e8%9b%9b%e4%b8%9d/",
-      "detailPath": "articles/b42a6fc5ef891d6ba1f58a97.json"
-    },
-    {
-      "id": "dc9927dd37eb8a61ae343376",
-      "title": "我有独特的日志收集技巧",
-      "summary": "只是一篇用来记录指令的水文（溜",
-      "image": null,
-      "publishedAt": "2023-02-07T07:02:33Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/my-special-log-collect-trick/",
-      "detailPath": "articles/dc9927dd37eb8a61ae343376.json"
     }
   ]
 }

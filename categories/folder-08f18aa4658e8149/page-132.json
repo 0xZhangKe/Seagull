@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "4f6d5c05682112e3b1b10992",
+      "title": "懷",
+      "summary": "",
+      "image": "https://wiwi.blog/assets/images/bad-6c539385638d54910ad30abe80f3d3ee.jpg",
+      "publishedAt": "2016-07-05T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/bad",
+      "detailPath": "articles/4f6d5c05682112e3b1b10992.json"
+    },
+    {
+      "id": "0201d63acbcbe340fe956862",
+      "title": "Python2 中的编码问题",
+      "summary": "先来看一个异常信息： UnicodeEncodeError: ‘ascii’ codec can’t encode characters in position 51-52: ordinal not in range(128) 相信每个 Python 程序员对上面这个错误都再熟悉不过了，也许你这个问题的根源以及解决方法不是很清楚，那么这篇文章将尝试解答你心中的疑惑。",
+      "image": null,
+      "publishedAt": "2016-06-30T16:13:17Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2016/06/30/python2-encoding/",
+      "detailPath": "articles/0201d63acbcbe340fe956862.json"
+    },
+    {
+      "id": "2c2ad9a14954208d436c1636",
+      "title": "hashtag",
+      "summary": "#為什麼那麼多人喜歡用超級長的hashtag這個明明就不是應該這樣用的阿",
+      "image": null,
+      "publishedAt": "2016-06-30T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/hashtag",
+      "detailPath": "articles/2c2ad9a14954208d436c1636.json"
+    },
+    {
       "id": "99275ea2b28cfe99fb958982",
       "title": "SVG 动画初接触",
       "summary": "初入 SVG 动画坑，小记录如下。",
@@ -626,39 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2015/09/03/java-hashmap/",
       "detailPath": "articles/8b295ab3de8fd36ae7264d61.json"
-    },
-    {
-      "id": "cac7ffc835951e9473d9cfc3",
-      "title": "Java集合框架综述",
-      "summary": "最近被陆陆续续问了几遍HashMap的实现，回答的不好，打算复习复习JDK中的 集合框架 ，并尝试分析其源码，这么做一方面是这些类非常实用，掌握其实现能更好的优化我们的程序；另一方面是学习借鉴JDK是如何实现了这么一套优雅高效的类库，提升编程能力。 在介绍具体适合类之前，本篇文章对Java中的集合框架做一个大致描述，从一个高的角度俯视这个框架，了解了这个框架的一些理念与约定，会大大帮助后面分析某个具体类，让我们开始吧。",
-      "image": null,
-      "publishedAt": "2015-09-01T21:18:05Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/09/01/java-collection-overview/",
-      "detailPath": "articles/cac7ffc835951e9473d9cfc3.json"
-    },
-    {
-      "id": "7898509a7e7df9fbee2b0bfb",
-      "title": "改变support中AlertDialog的样式",
-      "summary": "android最近的support库提供了AlertDialog，可以让我们在低于5.0的系统使用到跟5.0系统一样的Material Design风格的对话框，但是使用了一段时间想到一些办法去改变对话框按钮字体的颜色，都不生效。 最近在网上找到了改变的方法，首先来说一下。 改变AlertDialog的样式 在xml中定义一个主题： 1 2 3 4 5 6 7 8 <style name= \"MyAlertDialogStyle\" parent= \"Theme.AppCompat.Light.Dialog.Alert\" > <!-- Used for the buttons --> <item name= \"colorAccent\" > #FFC107 </item> <!-- Used for the ti…",
-      "image": "https://isming.me/images/modify_dialog_style.jpg",
-      "publishedAt": "2015-08-31T11:57:15Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-08-31-modify-alert-style/?utm_source=rss",
-      "detailPath": "articles/7898509a7e7df9fbee2b0bfb.json"
-    },
-    {
-      "id": "9427d31300f2eefeffe804b7",
-      "title": "電腦音樂教室",
-      "summary": "新北高中音樂班的電腦音樂教室。30 台電腦每一台都有正版的 Reason、錄音介面、MIDI 鍵盤、還有 32 軌 Yamaha 大 mixer⋯⋯可是之前都沒有人用過，因為不會用 XD",
-      "image": "https://wiwi.blog/assets/images/1-c5e8f686a29d15fe066807dd2b88f878.jpg",
-      "publishedAt": "2015-08-31T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/computer-music-classroom",
-      "detailPath": "articles/9427d31300f2eefeffe804b7.json"
     }
   ]
 }

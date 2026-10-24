@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "ffd7af5cf3b0fc64ab89a0a6",
+      "title": "提交PR后修改commit message",
+      "summary": "有时自己的 PR 会因为 commit message 不合要求被 commitlint 卡住，这时用 --amend 修改成合要求 commit message 再强制更新到自己提交 PR 的分支就可以了。 # 用 --amend 更新 commit message git commit --amend -m \" 新的commit message \" # 强制更新到提交 PR 的分支 (origin xxxxx) git push --force-with-lease origin xxxxx 互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.t…",
+      "image": null,
+      "publishedAt": "2019-02-22T03:32:38Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/update_commit_message_in_pr/",
+      "detailPath": "articles/ffd7af5cf3b0fc64ab89a0a6.json"
+    },
+    {
+      "id": "4fb5792dad70ab8c8da3fd38",
+      "title": "搭建自己的 Minecraft 服务器",
+      "summary": "闲话 腾讯云的学生机其实续费了几年，也没怎么使用它。 阿里云的学生机更是到前几个月，干脆让它过期了。 如今，既别无他用，有想到群内的小伙伴们之前一起在玩 MC ，便索性用来搭建一个私服。 记录下过程，以便看官参考，或自己日后复现。 访问 https://www.yunyoujun.cn/posts/set-up-my-minecraft-server 阅读全文。",
+      "image": null,
+      "publishedAt": "2019-02-21T15:27:40Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/set-up-my-minecraft-server",
+      "detailPath": "articles/4fb5792dad70ab8c8da3fd38.json"
+    },
+    {
+      "id": "27fafce9bfa1abe2b597eeb0",
+      "title": "X280",
+      "summary": "我買了人生第一台非 Apple 筆電，ThinkPad X280。當然，開箱之後的第一件事，是把可怕緩慢又醜陋的 Windows 10 弄掉換成 Linux⋯⋯",
+      "image": "https://wiwi.blog/assets/images/x280-30eb33e08bced32cba19585ec79f93e7.jpg",
+      "publishedAt": "2019-02-16T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/x280",
+      "detailPath": "articles/27fafce9bfa1abe2b597eeb0.json"
+    },
+    {
       "id": "319ebb13adeb94854d03a452",
       "title": "The State of My Desk 2019",
       "summary": "留学在外，居住空间局促。卧室又充书房，更是螺蛳壳里做道场。近日断舍离，重新布局，把「工作台」好好整顿一番，所有杂物都被整理到箱子里放置在另一张桌子上。给自己立下规矩，「工作台」只放最要紧的东西，可以有为某件任务而来的暂时性物品，但是任务完成，物归其位。 闲言少叙，以下列出各位主番，封神定位： Macbook Pro - 最长期伴侣，最忠诚伙伴。 我拥有的第一台个人电脑，就是 MacBook。之后 Pro 变 Air，Air 又变 Pro，13 寸变 15 寸，15 寸又变 13 寸。Macbook 之于我，「趁手」二字道尽体验。当然我也不全然满意，新版键盘是一个硬伤，好在可以外接键盘。Touch Bar 也实在鸡肋，不过我已经渐渐习惯它的存在。若问我对下一代有何期许？必然是希望有朝一日苹果狠狠心努努力用自家芯…",
@@ -626,39 +659,6 @@
       "sourceTitle": "文三娃",
       "link": "https://wentommy.wordpress.com/2018/08/21/%e7%8a%af%e5%86%b2%e8%ae%b0/",
       "detailPath": "articles/caa907f8d48bf49ebee72e0e.json"
-    },
-    {
-      "id": "36b0e58106a6306b4036b54d",
-      "title": "PHP2",
-      "summary": "bugku 矛盾 flag{bugku-789-ps-ssdf} 看代码，要求输入一个不是数字、数字字符串，同时还 ==1 的东西。 PPT 里“字符串到数字”有说数字 + 字符串等于那个数字，所以输入类似 1admin 的字符串就可以了。 cgctf md5 collision nctf{md5_collision_is_easy} 这个 PPT 里有一模一样的：md5('240610708') md5('QNKCDZO')，所以输入 ?a=240610708 就可以得到 flag。 PHP decode >nctf base64_decode() 不用多说，是解码； gzinflate 查了下也是解码——那整个 CLsI 函数不就是解码么？把整个复制下来写进 .php，最后改成： $ a = eval (…",
-      "image": null,
-      "publishedAt": "2018-08-19T03:27:24Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/php2/",
-      "detailPath": "articles/36b0e58106a6306b4036b54d.json"
-    },
-    {
-      "id": "25d2ece030336a81a336d19a",
-      "title": "深入浅出垃圾回收（四）分代式 GC",
-      "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
-      "image": null,
-      "publishedAt": "2018-08-18T12:12:30Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/",
-      "detailPath": "articles/25d2ece030336a81a336d19a.json"
-    },
-    {
-      "id": "0f2ee5dadd222c4c752c9e59",
-      "title": "PHP1",
-      "summary": "WEB 基础 $_GET flag{bugku_get_su8kej2en} 看到要 $what=='flag' 才能打印 flag， $what 是可以用 ? 传进来的，所以地址栏输入 http://120.24.86.145:8002/get/?what=flag 得到 flag WEB 基础 $_POST flag{bugku_get_ssseint67se} 这回 $what 要用 POST 方法提交才行，在 hackbar 里选“Post data ” ，上面的栏填地址，下面的写 what=flag ，execute 就得到 flag 了。 变量 1 flag{92853051ab894a64f7865cf3c2128b34} 提示 flag 在变量里，后续程序提取出输入的参数所代表变量的值，试了下…",
-      "image": null,
-      "publishedAt": "2018-08-16T09:31:03Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/php1/",
-      "detailPath": "articles/0f2ee5dadd222c4c752c9e59.json"
     }
   ]
 }

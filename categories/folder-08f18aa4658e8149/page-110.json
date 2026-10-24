@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "82eac82d98ced9fe8c5412aa",
+      "title": "文凭社会和不平等",
+      "summary": "人家三代人人的努力，凭什么输给你的十年寒窗苦读？",
+      "image": null,
+      "publishedAt": "2023-06-27T00:00:00Z",
+      "sourceId": "757145dcc77dee94",
+      "sourceTitle": "Prologue 序章",
+      "link": "https://prologue.dev/blog/credential-society-and-inequality",
+      "detailPath": "articles/82eac82d98ced9fe8c5412aa.json"
+    },
+    {
+      "id": "2253360e98db1fa963c04536",
+      "title": "深夜发媸（38）",
+      "summary": "01. 今年先后发生几件事，先是年初 Facebook 帐号关停，失去了阅读马世芳、梁文道之流的渠道，后得知他在方格子上开了博客，也就欢心起来。还有微信公众号，陆陆续续收到了不少文章违规被删的通知。这周偶然发现，Twitter 帐号也被停用，申诉无果，索性放弃，短消息读多了难免让大脑的沟回变浅，也没多大好处。只能说，天下乌鸦一般黑，呸！好在，微博给我留了一口血，不知道还可以撑多久。 我对信息的获取已经极尽疲态，不是太少，而是有用的太少，靠大海捞针去找有意思的东西，似乎只是在给自己填堵。现在，又有了 AI 领域的大模型，自己生成，自己消费，自己消费自己的生成，人类已经开始多余了。 再加上我们在创造垃圾这一环境永远跑在大自然前头，我已经看到了一些 AI 应用，输入一些定制化的数据，成为一些定制化领域的应答机器人，…",
+      "image": null,
+      "publishedAt": "2023-06-27T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2023/06/talk-with-myself-38/",
+      "detailPath": "articles/2253360e98db1fa963c04536.json"
+    },
+    {
+      "id": "ac9fd8ebbc827c07038f9fec",
+      "title": "《20世纪最佳科幻小说选》选评",
+      "summary": "我在 6 月 16 日前的某天读完了《大师的盛宴：20 世纪最佳科幻小说选》这本书。我记得两年前在国博门外等朋友时就在读（当时好像在看某篇跨时空征兵征到变性的自己的无聊故事 ） ，时隔两年总算读完了。不仅读完，还发现了几篇喜欢的，所以准备写一篇书评放的博客上。但不知为何创建了空白文件以后就没怎么动笔了。想到去年 11 月 27 号创建的《路边野餐》到现在只有一句“出版过程的后记有点像中国 ” ，以及再往前写了不少但仍未整理完的《中国游记》和《秦淮之夜 》 ，我觉得还是把这次科幻选的书评简要又散乱的 写在日记本里吧。 在日记本上很顺畅就写完了，所以又搬过来了。 虽然小说这种题材卖的就是故事，但不谈具体情节的书评和“XXX 真好”一样相当于什么也没说。所以， 这篇有剧透。 仍记得清的两篇烂作 首先说我讨厌的《那些…",
+      "image": null,
+      "publishedAt": "2023-06-26T18:40:58Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/sci-fi-masterpieces/",
+      "detailPath": "articles/ac9fd8ebbc827c07038f9fec.json"
+    },
+    {
       "id": "d1d74c8b436860db419b8cb9",
       "title": "React Server Component 初体验与实践 —— 将博客迁移到 Next.js App Router",
       "summary": "去年的这个时候，我把博客从 Hexo 迁移到 Next.js。现在，随着 Next.js 13 App Router 已经稳定，我又把博客从 Next.js Pages Directory 迁移到了 Next.js 13 的 App Router 和 React Server Component。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Cytrogen 的个人博客（中文）",
       "link": "https://blog.cytrogen.icu/posts/cf92.html",
       "detailPath": "articles/7ae6ebe549c6ab8375c7c8f3.json"
-    },
-    {
-      "id": "95eb94991801d1446469c51f",
-      "title": "压缩博客的图片和视频",
-      "summary": "最近琢磨着更新一下《 爱丁堡的博物馆 》 ，但因为要先把图片拖到 OneDrive 文件夹里，再点右键 → 在线查看 →···→ 嵌入 → 大（1024px）→ 复制 URL→ 输入 ![alt text]()→ 粘贴，所以歇了。仔细一想，这样插图确实太复杂了，干脆还是把图片全存本地，用 remotely-save 同步到 VPS 里好了——但这样就需要自己压缩图片和视频，也就有了这篇博客。 图片 压缩图片最立竿见影的方法是降分辨率。我不清楚 2023 年博客最适合的分辨率是多少，但我之前插的图大部分是 1024px，够用。 用 ImageMagick 可以原地修改图片（magick mogrify ） ，但因为我要保留原图看压缩有没有劣化太多，所以我喜欢用创建新图片的 convert（仍然是 ImageMa…",
-      "image": null,
-      "publishedAt": "2023-04-19T19:03:48Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/compress-image-video/",
-      "detailPath": "articles/95eb94991801d1446469c51f.json"
-    },
-    {
-      "id": "84a58143e523074ae91cc26b",
-      "title": "手中卷 · 一",
-      "summary": "本卷不再更新 最后修改于2023-04-18在2025年进行了全新排版 可以清除缓存观看非日记，非测评，仅为爱好",
-      "image": "https://gitee.com/gubei-pavilion/blog-images/raw/master/手中卷一_5.webp",
-      "publishedAt": "2023-04-18T10:45:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/66/",
-      "detailPath": "articles/84a58143e523074ae91cc26b.json"
-    },
-    {
-      "id": "fa05507e8669d1a8db0f7807",
-      "title": "与自我和解-读《被讨厌的勇气》",
-      "summary": "由于有了娃之后，对于小孩的管教很头大，先是看了《正面管教》这本书，书中作者的很多思想源于阿德勒的个体心理学，又看很多人推荐这本 《被讨厌的勇气》也便在微信读书将其读了。 整本书通过青年和哲人对话的方式，向我们讲述了阿德勒心理学 的内容，并且通过青年的问题开始，引导我们步步深入，最后得出人生很简单，不存在普遍性的人生意义，即使被讨厌自己的人讨厌，也可以自由地生活 。行文流畅，环环相扣，引得我很快就看完了。 决定我们自身的不是过去的经历，而是我们赋予经历的意义。这和弗洛伊德的主张相反 ，阿德勒反对使用过去的经历来解释当前的痛苦。我不敢说阿德勒的说法是否正确，但是这种方式，至少可以让自己从过去的经历中解脱，并且赋予自己生活新的意义。 我们应当尽量让自己脱离竞争的怪圈，这样自己眼中的世界会更加不同。例如，我自己之前有…",
-      "image": "https://isming.me/images/photo/20230203birds.jpg",
-      "publishedAt": "2023-04-13T14:30:52Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2023-04-13-the-courage-to-be-disliked/?utm_source=rss",
-      "detailPath": "articles/fa05507e8669d1a8db0f7807.json"
     }
   ]
 }

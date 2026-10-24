@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "5ceb42223cdd74e6860c4b0e",
+      "title": "为什么我选择图文，而不是视频，作为长期创作的方向",
+      "summary": "图文，才是我真正想长期坚持的方向",
+      "image": "https://her.blue/content/images/2025/08/image-2.png",
+      "publishedAt": "2025-08-07T07:23:29Z",
+      "sourceId": "ab8f1a7d1b3e35d8",
+      "sourceTitle": "HerBlue 她的蓝",
+      "link": "https://her.blue/wei-shi-yao-wo-xuan-ze-tu-wen-er-bu-shi-shi-pin-zuo-wei-chang-qi-chuang-zuo-de-fang-xiang/",
+      "detailPath": "articles/5ceb42223cdd74e6860c4b0e.json"
+    },
+    {
+      "id": "142b817d617fc4b8b4d16a9f",
+      "title": "IG 比官網有用？",
+      "summary": "年初時，Eddie 有幫音響公司製作 官網 。 在 2025 年 7 月時，Eddie 側拍了活動現場，隨便剪輯一下，並上傳到 IG，不到兩個月流量就接近 20 萬瀏覽。 因此，音響公司學長說「IG 是不是比官網有用」？ 假象，都是假象。 # 只靠官網，確實很難短期製作出 20 萬的瀏覽量，但是那個 20 萬是 Meta 公司的，跟音響公司其實一點關係都沒有。 今天 Meta 爽，它就給你流量，它不爽就不給你，甚至直接說你帳號是詐騙集團，就 Ban 掉你帳號。 如果最近有在滑 IG 的話，應該會看到超多 KOL 在教大家，怎麼 拿回自己自己被 ban 掉的帳號 ，尤其是買藍勾勾來找真人客服的部分，會覺得 Meta 才是詐騙集團吧 XD 那爲什麼 Eddie 還要經營 IG？ # 講成這樣，Eddie 爲什麼還…",
+      "image": null,
+      "publishedAt": "2025-08-07T04:53:33Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/ig_better_than_os/",
+      "detailPath": "articles/142b817d617fc4b8b4d16a9f.json"
+    },
+    {
+      "id": "26b19dc9962749e1b63484ee",
+      "title": "Hugo 網站年齡驗證",
+      "summary": "點擊進來的時候，有沒有發現有年齡驗證啊？請放心這篇是全年齡的網站技術文章XD 在 Hugo 網站增加年齡驗證？ # 這套機制的基本流程是： 在文章 front matter 加上 adult: true 來標記成人文章 Hugo 渲染時根據 .Params.adult 判斷是否嵌入 JavaScript JS 檢查 localStorage 是否已有「成年標記」 如果沒有，就顯示彈窗，讓使用者選「是」或「否」 如果選「是」→ 儲存狀態到 localStorage，下次不再詢問 如果選「否」→ 轉跳離開 製作「重設年齡驗證」按鈕在成人文章的 Footer，清除 localStorage 重新觸發彈窗（基本上是給開發人員用） 文章標記 # title: \"文章標題\" adult: true 只要在文章最前面的語法…",
+      "image": null,
+      "publishedAt": "2025-08-07T04:08:34Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/hugo-adult/",
+      "detailPath": "articles/26b19dc9962749e1b63484ee.json"
+    },
+    {
       "id": "5015639390ad2c9a7d480617",
       "title": "立秋 | 2025 年 7 月小结",
       "summary": "写这篇的时候我在听： 【原声带】尼尔 人工生命 重制版 NieR Replicant ver.1.22 OST 本月事件 上个月要去做的过敏相关检查 结果出来了 。首先是过敏源筛查，虽然我对猫毛在内的一堆东西过敏，但都不是长疹子的原因，大概是非过敏源—— 皮肤划痕症 ——导致的。也不知道是心理作用还是什么，吃了几次药后居然完全好了。倒是血检查出了甲亢，之后又一通超声波和后续抽血检查，基本确认是 Graves’s disease，还得预约专家继续讨论。其实我也没什么症状，硬要说的话就是最近有一些易怒，但还是、好麻烦…… 最近打 Switch 有氧拳击 2 的心率老是上不来，就准备给自己加点强度， 重刷一遍 Caroline Girvan 的 IRON 力训系列 。想着我也不是第一次做的小白，本想加点重量，结果马…",
@@ -626,39 +659,6 @@
       "sourceTitle": "After 27",
       "link": "https://www.after27.me/blog/madewell",
       "detailPath": "articles/e8219c2e4656f332d721471c.json"
-    },
-    {
-      "id": "4a4512a05ec0d292beee286f",
-      "title": "Blog 讓廢文現形",
-      "summary": "我在上一篇文章提到，這個網站從 2012 到 2022 年的文章，絕大部分都是從 Facebook 和 Instagram 移植過來的。然後我還說，它們的共通點就是「都很短，而且內容超空洞」。",
-      "image": null,
-      "publishedAt": "2025-07-25T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/social-vs-blog-content",
-      "detailPath": "articles/4a4512a05ec0d292beee286f.json"
-    },
-    {
-      "id": "d0c2c883790e8210b5572f28",
-      "title": "深夜发嗤（40）",
-      "summary": "1. 如果有时间，还是会伪文艺的。 新年给自己留了一部电影「一路顺风」，又看了两部院线的片子，其中一部是「哪吒」。一直到现在，没再看过其他片子。 影迷两个字不敢提了，闲下来的时间似乎电影也不是主题了。这周出差，来回的飞机上看完了两个片子，一部还是许冠文的，「破·地狱」，很好看，活人也是需要超度的。另一部是「永安镇故事集」，没想象中好看，文艺也不够文艺，故事也没有到多好的故事。 哦，对了，今年跟嘟嘟有一个电影作业，看完哈利波特全集。还在进行中，最后两部，慢慢看。之后可能会去看驯龙高手和猩球崛起两个系列，都是我喜欢的，硬拉着他一起。他对电影还不太有兴趣，对篮球有了一点点。 2. 听好多歌，都是新歌，今年喜欢上一个歌手，Teleman，就听了他所有的歌，很多人也出了新专辑，都听了，没做记录，当然，重听了方大同。 有…",
-      "image": null,
-      "publishedAt": "2025-07-25T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2025/07/%E6%B7%B1%E5%A4%9C%E5%8F%91%E5%97%A440/",
-      "detailPath": "articles/d0c2c883790e8210b5572f28.json"
-    },
-    {
-      "id": "f0a8f48d3e362e3741c3924a",
-      "title": "耳鸣6年后，我重新戴上了耳机",
-      "summary": "耳鸣6年后，我重新戴上了耳机 那个晚上 依稀记得是2018年4月的某一天，当我下课回到学生公寓后，我发现房间里充满了浓重的油漆味，似乎是学校的工作人员派人来给重新装修了一番。 具体做的什么装修，不记得了，只记得油漆味很重、很熏。 是否有邮件通知，不记得了，但按照我对英国大学的理解，他们一定通知了，所以我和我的舍友并没有去报警或者找学校的麻烦。 具体是不是油漆的味道，我也不记得了，只知道没过几天这个味道也正常消散了。 我们所租的公寓距离教学楼只有3分钟的距离，有时候我甚至会玩极限，8点55分起床，然后冲刺去街对面的教学楼上9:00的早课。距离和价格是这套房最大的亮点，任谁都很难拒绝在爱丁堡的宇宙中心拥有一套远低于平均租金的住房。 它最大的缺点是卧室处在临街的负一楼，这是一个很神奇的构造。我可以推开我卧室的门，通…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/Pasted%20image%2020250723215534.png",
-      "publishedAt": "2025-07-24T14:03:34Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/use-headphones-after-6-years-of-tinnitus/",
-      "detailPath": "articles/f0a8f48d3e362e3741c3924a.json"
     }
   ]
 }

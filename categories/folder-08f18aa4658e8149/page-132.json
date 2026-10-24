@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "99275ea2b28cfe99fb958982",
+      "title": "SVG 动画初接触",
+      "summary": "初入 SVG 动画坑，小记录如下。",
+      "image": null,
+      "publishedAt": "2016-06-17T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/svg-animation-first-steps",
+      "detailPath": "articles/99275ea2b28cfe99fb958982.json"
+    },
+    {
+      "id": "94d0128b21879f703f149093",
+      "title": "Path和Property Animation配合让线条动起来",
+      "summary": "之前做过一个图上标签但是动画样式不太好看，经过查找资料发现了一种全新的思路来实现动画，流畅的让标签的线显示和隐藏，示例如下，就在这里说一说。本文会涉及到Path，Property Animation, PathEffect, PathMeasure。我们开始一一道来。 使用Path绘制曲线 当我们需要画曲线的时候，可能会直接使用drawLine来画，不太复杂的话还比较好实现，如果需要画曲线，或者拐弯的线的时候使用drawLine就比较复杂了。这时候，我们可以借助 Path 来drawPath。 1 2 3 4 5 6 7 8 9 Paint paint = new Paint (); paint . setColor ( Color . BLACK ); paint . setStyle ( Paint .…",
+      "image": "https://isming.me/images/tag_animation.gif",
+      "publishedAt": "2016-06-07T06:03:39Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2016-06-07-path-property-animation/?utm_source=rss",
+      "detailPath": "articles/94d0128b21879f703f149093.json"
+    },
+    {
+      "id": "b51a62b8e67d4934d93473c8",
+      "title": "编程语言中的变量作用域与闭包",
+      "summary": "如果你写过 javascript，应该听说过 变量提升 （hoisting），如果你自诩“Life is short, I use Python”，那么多多少少会用过 global 、 nonlocal 这两个关键字。无论新手还是老手，遇到这些时都会觉得很别扭，稍不留神就会出现意想不到的 bug，如果你仔细观察就会发现，它们其实是一个问题：变量作用域的问题。",
+      "image": null,
+      "publishedAt": "2016-05-28T20:44:34Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2016/05/28/scope-closure/",
+      "detailPath": "articles/b51a62b8e67d4934d93473c8.json"
+    },
+    {
       "id": "9e18ef12fc72a75caad3521b",
       "title": "关于部落冲突的二三事儿-2",
       "summary": "终点 上回说到，我们中的一些人，出来发展分部。我预感到，这大概也是我们残存的激情的终点了。 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-2 阅读全文。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/computer-music-classroom",
       "detailPath": "articles/9427d31300f2eefeffe804b7.json"
-    },
-    {
-      "id": "934b66143a277903dc2f3b0e",
-      "title": "原型的设计 1",
-      "summary": "原型的设计是一件很严肃的事情。如果认为原型只用来理解一下界面、业务或帮助开发就陷入了一个很大的误解。",
-      "image": null,
-      "publishedAt": "2015-08-31T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/prototype-design-1",
-      "detailPath": "articles/934b66143a277903dc2f3b0e.json"
-    },
-    {
-      "id": "6d83e18e3ca466584b74c58e",
-      "title": "Android hwui 中 RenderThread 工作流程",
-      "summary": "前言 本篇文章是自己的一个学习笔记，记录了 Android 5.0 中 hwui 中的 RenderThread 的简单工作流程。由于是学习笔记，所以其中一些细节不会太详细，我只是将大概的流程走一遍，将其工作流标注出来，下次遇到问题的时候就可以知道去哪里查。 下图是我用 Systrace 抓取的一个应用启动的时候 RenderThread 的第一次 Draw 的 Trace 图，从这里面的顺序来看 RenderThread 的流程。熟悉应用启动流程的话应该知道，只有当第一次 DrawFrame 完成之后，整个应用的界面才会显示在手机上，在这之前，用户看到的是应用的 StartingWindow 的界面。",
-      "image": null,
-      "publishedAt": "2015-08-12T14:38:01Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/08/12/AndroidL-hwui-RenderThread-workflow/",
-      "detailPath": "articles/6d83e18e3ca466584b74c58e.json"
-    },
-    {
-      "id": "e272ed6164d069b2dc7c79ea",
-      "title": "乐事薯片的命名",
-      "summary": "在一个超市看到一个略奇葩的乐事薯片的口味，一下掀起了我对乐事薯片命名的好奇心。",
-      "image": null,
-      "publishedAt": "2015-08-12T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/lays-chips-naming",
-      "detailPath": "articles/e272ed6164d069b2dc7c79ea.json"
     }
   ]
 }

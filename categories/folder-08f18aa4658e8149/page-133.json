@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "934b66143a277903dc2f3b0e",
+      "title": "原型的设计 1",
+      "summary": "原型的设计是一件很严肃的事情。如果认为原型只用来理解一下界面、业务或帮助开发就陷入了一个很大的误解。",
+      "image": null,
+      "publishedAt": "2015-08-31T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/prototype-design-1",
+      "detailPath": "articles/934b66143a277903dc2f3b0e.json"
+    },
+    {
+      "id": "6d83e18e3ca466584b74c58e",
+      "title": "Android hwui 中 RenderThread 工作流程",
+      "summary": "前言 本篇文章是自己的一个学习笔记，记录了 Android 5.0 中 hwui 中的 RenderThread 的简单工作流程。由于是学习笔记，所以其中一些细节不会太详细，我只是将大概的流程走一遍，将其工作流标注出来，下次遇到问题的时候就可以知道去哪里查。 下图是我用 Systrace 抓取的一个应用启动的时候 RenderThread 的第一次 Draw 的 Trace 图，从这里面的顺序来看 RenderThread 的流程。熟悉应用启动流程的话应该知道，只有当第一次 DrawFrame 完成之后，整个应用的界面才会显示在手机上，在这之前，用户看到的是应用的 StartingWindow 的界面。",
+      "image": null,
+      "publishedAt": "2015-08-12T14:38:01Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/08/12/AndroidL-hwui-RenderThread-workflow/",
+      "detailPath": "articles/6d83e18e3ca466584b74c58e.json"
+    },
+    {
+      "id": "e272ed6164d069b2dc7c79ea",
+      "title": "乐事薯片的命名",
+      "summary": "在一个超市看到一个略奇葩的乐事薯片的口味，一下掀起了我对乐事薯片命名的好奇心。",
+      "image": null,
+      "publishedAt": "2015-08-12T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/lays-chips-naming",
+      "detailPath": "articles/e272ed6164d069b2dc7c79ea.json"
+    },
+    {
       "id": "8aa553f1cfc0eb914a25afc6",
       "title": "楊秀桃音樂學院",
       "summary": "電腦音樂教室，每個人都有一台 iMac + Novation Impulse 49！",
@@ -626,39 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2015-02-01-android-view-animation/?utm_source=rss",
       "detailPath": "articles/d072c27dfb13daa5dde33aa4.json"
-    },
-    {
-      "id": "36b8028d4d6461e327f67a36",
-      "title": "【2014】我这样存在",
-      "summary": "2014一晃过去了，快到我都来不及写年终总结。 元旦后进入了长时间的复习，这两天到家又忙着搬家，实在没什么空。 我先是写了很多内容，然后觉得大多数都没什么营养，被我删删改改，最后留下几个关键字和一些补充。 旅游： 关键字：扬州、武汉，杭州、桂林、重庆、九华山、千岛湖、宁波、山西。 其中有早就想去的，有被带上的，也有因为机票便宜说走就走的，拢起来一看这一年还是去了不少地方。 1.扬州就是扬大，扬大就是扬州。扬大七个校区分散在扬州的各处，可惜我只走了其中六处。 2.武大里着了雪的梅花丝毫不逊于三月的樱花。 3.坐武汉公交车的刺激和南京齐名，有幸坐在一辆双层巴士的第一排，那感觉就像是过山车，特别是驶过武汉长江大桥时。 4.雨中的灵隐山，泉声处处，氤氲着一股初春的冷意。 5.晴西湖不如雨西湖，未下雨之前的阴西湖是最不…",
-      "image": null,
-      "publishedAt": "2015-01-31T01:12:19Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2015/01/30/year-2014/",
-      "detailPath": "articles/36b8028d4d6461e327f67a36.json"
-    },
-    {
-      "id": "7786ff6380e4bf5d0d6b1a00",
-      "title": "Android 性能优化之 Systrace 工具介绍(一)",
-      "summary": "这篇是 2015 年的 Systrace 工具介绍，里面提到的 Eclipse、Device Monitor、 sdk/tools/systrace 、User 版本不能抓 Trace 等流程，已经不适合作为今天的默认操作路径。旧文章保留的是 Systrace 的基本概念：它为什么能把 SurfaceFlinger、WindowManager、View、CPU 调度等系统行为放到一张时间线上。今天真正抓取和分析 Trace，应优先看 Android Perfetto 系列目录 。 现在的工具流程可以直接按下面理解： 旧流程 新流程 Eclipse / Android Studio Device Monitor 里点 Systrace 开发者选项里打开 System Tracing，或使用 adb shell…",
-      "image": null,
-      "publishedAt": "2015-01-30T12:24:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/01/30/android-performance-tools-systrace-1/",
-      "detailPath": "articles/7786ff6380e4bf5d0d6b1a00.json"
-    },
-    {
-      "id": "113a9c78dccd598d74559d6d",
-      "title": "android动画-Frame Animation",
-      "summary": "动画可以在视觉上增加程序的流畅度，我之前对于动画这一块，是会用，但是不全面，这里写下博客，全面梳理一下Android动画方面的知识。当然，关于动画这块，也有很多前人写了很多内容，大家可以去参考。 3.0以前，android支持两种动画模式， Tween Animation , Frame Animation ，在android3.0中又引入了一个新的动画系统： Property Animation ，这三种动画模式在SDK中被称为 Property Animation , View Animation , Drawable Animation 。 可通过 NineOldAndroids 项目在3.0之前的系统中使用Property Animation。另外呢，还有activity之间的过渡动画，android…",
-      "image": null,
-      "publishedAt": "2015-01-28T12:13:47Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-01-28-android-frame-animation/?utm_source=rss",
-      "detailPath": "articles/113a9c78dccd598d74559d6d.json"
     }
   ]
 }

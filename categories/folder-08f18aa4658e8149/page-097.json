@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "98e027bf82f1a88560684c44",
+      "title": "当学校的主要精力从搞教育转变为防碰瓷",
+      "summary": "古语有云：“授人以鱼，不如授人以渔。” 每个小学生都学过这句话。 在教育领域，它所蕴含的机理再明确不过：成功的教育，应该注重培养激发受教育者的自驱力量。强制的、压迫的、剥削的教育，一定不是好的教育。 但恰恰相反，现在学校所推行的几乎所有教育配套措施，都在朝着破坏自驱力的方向上一去不复返，与教书育人的本质宗旨背道而驰。 学校这帮人，未必是不懂教育。 曾几何时，学校老师们挂在嘴上的话是：“家长要尽量少掺和学生的事儿，自己的事情自己做。培养学生自理能力。” 当时的学校，嘴上是这么说的，也确实是这么做的。 如今的学校，嘴上或许依旧会高喊几句诸如“培养学生独立性”的口号，但在实际行动上，却恨不能处处把家长强行拉进来。 送孩子要送进校门，接孩子要跟老师做好交接，写作业要家长批阅打卡，就差没让家长轮班去学校当值日生了。 作…",
+      "image": null,
+      "publishedAt": "2024-09-27T12:00:31Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/270.html",
+      "detailPath": "articles/98e027bf82f1a88560684c44.json"
+    },
+    {
+      "id": "3cf91e6fa10af8479aa4bb42",
+      "title": "計程車短片",
+      "summary": "昨晚搭計程車，司機的方向盤左右兩側各架了一支手機：右邊的手機顯示著 Google Maps，左邊的是一個短影音平台。",
+      "image": null,
+      "publishedAt": "2024-09-26T09:03:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/taxi-shorts",
+      "detailPath": "articles/3cf91e6fa10af8479aa4bb42.json"
+    },
+    {
+      "id": "754aca31c16b0c77299f1d74",
+      "title": "Android源码分析：系统进程中事件的读取与分发",
+      "summary": "之前分析的是从InputChannel中读取Event，并且向后传递，进行消费和处理的过程。但是之前的部分呢，事件如何产生，事件怎么进入到InputChanel当中的，事件又是如何跨进程到达App进程，这里继续来分析。 以上为system进程的流程的简化图，这里我们可以看到几个重要的组件，这里以触摸事件来进行分析（后文的分析也将会以触摸事件为主进行分析）并且简单的描绘了事件从EventHub到服务端的InputChannel发送事件的全部过程。具体内容一起来看下面的代码。 InputManagerService的创建 因为事件的分发涉及到不少类，我们先从InputManagerService(IMS)的初始化出发，进行分析。入口代码在 SystemServer.java 中，代码如下： 1 2 3 4 5 6…",
+      "image": "https://img.isming.me/image/input_dispatch_flow.png",
+      "publishedAt": "2024-09-26T05:44:04Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-26-input-event-read-dispatch/?utm_source=rss",
+      "detailPath": "articles/754aca31c16b0c77299f1d74.json"
+    },
+    {
       "id": "dca522dbf6b6eb397150fd42",
       "title": "认罪认罚还能有效辩护吗？能！靠玄学！",
       "summary": "我印象比较深刻的，两个算是认罪认罚后又辩护比较成功的案件。 一个是靠“私交”，一个是靠“斗争”。一左一右，应该说有一定代表性。 第一个案件，发生在疫情刚刚开始不久，整个人类社会对新冠病毒还没有完成祛魅的时候。 之所以要特意强调这个时间，是因为疫情这个因素，对案件的后续进展，产生了非常大的影响，甚至可以说直接改变了案件的走向。 是一起掩饰隐瞒犯罪所得案。 如果按现在的司法政策来看，定帮信更合适。 帮信的证据标准更低，而且一定程度上引入了证明责任倒置。只需要很少的工作量，就能将整个银行账户框进来。 但掩隐则不然，要定掩隐，就需要首先达到“上游犯罪查证属实”的证明标准。。 这并不容易做到，会无形中加大侦查机关的工作量。很多侦查机关既没有足够的资源，也没有足够的兴趣“刨地三尺”。辖区内出了被害人报案，一般把被害人那笔…",
@@ -626,39 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2024-09-06-binder-add-and-get-service/?utm_source=rss",
       "detailPath": "articles/a86eac514dc1fe0878d574c8.json"
-    },
-    {
-      "id": "4799388e6e553a3d2d14f6eb",
-      "title": "網際網路探險家",
-      "summary": "還記得大約 1995 年，當我們還在用 28.8 kbps 的數據機接上電話線「逼逼啵啵」上網的那個年代，人們是怎麼形容「上網」的嗎？答案是：「衝浪」！",
-      "image": "https://wiwi.blog/assets/images/browsers-cb6dd0a7cba32fb49795095df7fce007.jpg",
-      "publishedAt": "2024-09-06T07:12:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/internet-explorer",
-      "detailPath": "articles/4799388e6e553a3d2d14f6eb.json"
-    },
-    {
-      "id": "4f22719be5167ff52cd1d381",
-      "title": "15分钟的LDtk超快速上手",
-      "summary": "这是由我一次分享活动演讲所使用的文字底稿延伸而来的文章，内容经过些许扩充。在本文中，我们将探讨上手关卡设计工具 LDtk 所需的最核心知识。LDtk是关卡设计的有力工具，由 Dead Cells 的开发者带来，用于 2D 关卡设计尤为便利。 我一向认为上手工具的最快方法就是使用它。所以请打开软件，一起动手吧！ 在开始前 你可以在 [LDtk – 2D level editor]( https://ldtk.io/) ) 下载这一工具，本文使用写作时最新的版本 1.2.5 作为参照。软件仅提供英文用户界面。 下载打开之后你应当看到如图的欢迎屏幕。 你大可直接点开「Examples」，研习二三也许就可上手。不过显然这不能成为笔者偷懒的理由——我们直接「New」新建一个设计文件。对了，记得换一个保存位置。 鉴于软件…",
-      "image": "https://static.gridea.dev/589ae027-a330-455f-872b-e253d7674397/BQJ_vklgu.png",
-      "publishedAt": "2024-09-05T19:44:00Z",
-      "sourceId": "84679a79f1d8b908",
-      "sourceTitle": "dyron503's",
-      "link": "https://blog.dyron503.com/ldtk1",
-      "detailPath": "articles/4f22719be5167ff52cd1d381.json"
-    },
-    {
-      "id": "31be7639ecd66750f51bfb60",
-      "title": "Android源码分析:ServiceManager启动代码解析",
-      "summary": "之前已经分析过获取ServiceManager了，不过那是在使用端，在分析使用ServiceManager去获取服务或者添加服务的时候发现，我使用的Android Studio for Platform默认没有把ServiceManager的源码导入。并且同时我们不知道ServiceManager的服务端是怎么启动，怎么响应的，因此决定还是需要分析一下这块的代码。 首先简单画了一下启动的流程，如下图所示（Entry表示我们的调用入口，也就是后面所说的main函数）： sequenceDiagram autonumber Entry->>+ProcessState: initWithDriver ProcessState->>ProcessState: init ProcessState-->>-Entry:…",
-      "image": null,
-      "publishedAt": "2024-09-05T12:41:29Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-05-binder-sm-start/?utm_source=rss",
-      "detailPath": "articles/31be7639ecd66750f51bfb60.json"
     }
   ]
 }

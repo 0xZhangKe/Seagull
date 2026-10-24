@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "f4553cf0f21f85d1f446b02a",
+      "title": "《数学之美》札记",
+      "summary": "这本书让我意识到大学所学的概率论通信原理具体有什么用处，相见恨晚。也介绍了NLP、搜索方面的基础概念，很有价值。还能见到人工智能的影子。 从语法到统计 原先自然语言分析最开始是基于语法规则来分析的，但是规则太复杂了，计算量也很大，后来才基于统计的方法，看看哪种说法最有可能概率最大，那么就是对的。 这看似不符合直觉，但完全符合外语学习的实际情况，学个十年语法，不如大量输入实际的语句来得有效。这个研究路径反过来指导我们的学习，别光在那看语法背单词，大量真实的用例更有指导意义。",
+      "image": null,
+      "publishedAt": "2017-06-15T03:37:07Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2017/06/14/2017-06-14-beautyofmathmatics/",
+      "detailPath": "articles/f4553cf0f21f85d1f446b02a.json"
+    },
+    {
+      "id": "a35f68e55216569c0b797ca9",
+      "title": "趣谈一则",
+      "summary": "——今日我以学校为耻，明日学校以我为耻。#两不相欠# ——自大了，做坏人做到学校以你为耻也是不容易的。 ——好吧。今日我以学校为耻，明日学校说不知道有这个学生我要去档案馆查一下。",
+      "image": null,
+      "publishedAt": "2017-06-05T17:46:16Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2017/06/05/ramdon-talk/",
+      "detailPath": "articles/a35f68e55216569c0b797ca9.json"
+    },
+    {
+      "id": "5ec6d5afb269d9699f0dee5c",
+      "title": "随意的山头",
+      "summary": "批量生产的人和批量生产的杯子一样，等待着被悬置被挑选被使用被替换被淘汰。人变为物，物变为垃圾，垃圾变为艺术。我想起一句话，“我是随便发出的一支箭，随便飞去了哪个山头”。但我并不介意自己是一支随意的箭，有了方向我就会拼命飞去，我害怕的是随意的山头。 我在微博上发了上面这段话。 最近的烦心事是要继续读博，还是选择工作。一些朋友劝我读博，说你导师有项目，又很看重你，你读书多还能写，很适合继续读书。另一边我又想，这书怎么也不能一直读下去吧，我们终归要去找到一份工作养家糊口，我为什么不能开始其他的人生选择呢。我想所有人面对选择都是手足无措的，我们不知道放弃一种选择另一种，是否就适合自己，不知道改变人生的轨迹，需要付出什么样的代价。 去年努力考了第一名，这一学年又看书又写论文又做项目，如果突然就要改变，这似乎就是对过去的…",
+      "image": null,
+      "publishedAt": "2017-05-23T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2017/05/24/random-mountain",
+      "detailPath": "articles/5ec6d5afb269d9699f0dee5c.json"
+    },
+    {
       "id": "a8b602fc549a12b6b2d92745",
       "title": "简单聊聊Android Architecture Componets",
       "summary": "Google IO大会进行中，本次大会Android最大的新闻当属Android O以及Kotlin被官方认可。我发现了原来还有发布官方的架构库，以及推荐使用指南，分享给大家。 架构原则 关注分离 模型驱动UI,优先持久化模型 新架构 如上图所示，为新的架构模式： Activity/Fragment UI层，通常是Activity/Fragment等 监听ViewModel，当VIewModel数据更新时刷新UI 监听用户事件反馈到ViewModel。 ViewModel 持有保存，或者想Repository来获取UI层需要的数据 响应UI层的事件，执行响应的操作 响应变化，并且通知到UI层 Repository App的完全的数据模型，ViewModel交互的对象 提供简单的数据修改和获取的接口 配合好网络…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/hashtag",
       "detailPath": "articles/2c2ad9a14954208d436c1636.json"
-    },
-    {
-      "id": "99275ea2b28cfe99fb958982",
-      "title": "SVG 动画初接触",
-      "summary": "初入 SVG 动画坑，小记录如下。",
-      "image": null,
-      "publishedAt": "2016-06-17T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/svg-animation-first-steps",
-      "detailPath": "articles/99275ea2b28cfe99fb958982.json"
-    },
-    {
-      "id": "94d0128b21879f703f149093",
-      "title": "Path和Property Animation配合让线条动起来",
-      "summary": "之前做过一个图上标签但是动画样式不太好看，经过查找资料发现了一种全新的思路来实现动画，流畅的让标签的线显示和隐藏，示例如下，就在这里说一说。本文会涉及到Path，Property Animation, PathEffect, PathMeasure。我们开始一一道来。 使用Path绘制曲线 当我们需要画曲线的时候，可能会直接使用drawLine来画，不太复杂的话还比较好实现，如果需要画曲线，或者拐弯的线的时候使用drawLine就比较复杂了。这时候，我们可以借助 Path 来drawPath。 1 2 3 4 5 6 7 8 9 Paint paint = new Paint (); paint . setColor ( Color . BLACK ); paint . setStyle ( Paint .…",
-      "image": "https://isming.me/images/tag_animation.gif",
-      "publishedAt": "2016-06-07T06:03:39Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2016-06-07-path-property-animation/?utm_source=rss",
-      "detailPath": "articles/94d0128b21879f703f149093.json"
-    },
-    {
-      "id": "b51a62b8e67d4934d93473c8",
-      "title": "编程语言中的变量作用域与闭包",
-      "summary": "如果你写过 javascript，应该听说过 变量提升 （hoisting），如果你自诩“Life is short, I use Python”，那么多多少少会用过 global 、 nonlocal 这两个关键字。无论新手还是老手，遇到这些时都会觉得很别扭，稍不留神就会出现意想不到的 bug，如果你仔细观察就会发现，它们其实是一个问题：变量作用域的问题。",
-      "image": null,
-      "publishedAt": "2016-05-28T20:44:34Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2016/05/28/scope-closure/",
-      "detailPath": "articles/b51a62b8e67d4934d93473c8.json"
     }
   ]
 }

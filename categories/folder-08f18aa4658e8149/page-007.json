@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "519da4a71341a14a2cd51554",
+      "title": "土皇帝",
+      "summary": "前情提要 # 先前在 Blogroll 收錄我個人會看的獨立網站，主要目的是當作個人在網上衝浪時的起始頁面。 其中收錄 nownownow.com/TW 時，文字使用「繁體中文」來標記這連結，導致有位讀者感到噁心，認為 Eddie 把臺灣以外的所有地區所使用的語言，都認定為非繁體中文。 我想，只有 滑坡大師 能把事情解讀成這樣吧。 我也試著換位思考，若對方在自己網站把 nownownow 的香港頁面標記為繁體中文，會有任何台灣人會大罵「*你娘，當台灣不存在是嗎？」嗎？ 完全不會吧，只會推斷出：「這個作者是在香港地區的繁體中文使用者。」如果推斷成「這個香港作者認為台灣使用的不是繁體中文」也太牽強。 事情到此，我也是懶得發表任何意見，畢竟對方邏輯不在線，沒什麼好討論的。對我來說這只是個無限滑坡與受害者情結的小事件…",
+      "image": "https://eddielv.com/musings/local-despot/%E5%8A%8D%E6%8B%94%E5%BC%A9%E5%BC%B5%E4%B8%8D%E7%B4%AF%E5%97%8E.png",
+      "publishedAt": "2026-10-05T19:55:06Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/local-despot/",
+      "detailPath": "articles/519da4a71341a14a2cd51554.json"
+    },
+    {
+      "id": "9d7c9972271587aa74bc2e53",
+      "title": "雨のち晴れ",
+      "summary": "往原址览之： https://innei.in/notes/220",
+      "image": null,
+      "publishedAt": "2026-10-05T18:51:29Z",
+      "sourceId": "f5c4d2cfb45a5bf1",
+      "sourceTitle": "静かな森",
+      "link": "https://innei.in/notes/220",
+      "detailPath": "articles/9d7c9972271587aa74bc2e53.json"
+    },
+    {
+      "id": "75c7fa4c98f10f4d79b5816a",
+      "title": "Coffee Break Clojure, Web Server",
+      "summary": "上一篇 讲解了如何用 Leiningen 管理 Clojure 项目的目录结构和依赖项，今天我们来了解 Clojure 生态中最常见的 Web 后端库 Ring 。不对，和那个 IndieWeb Ring 没有关系。 初识 Ring Ring 是对 Web 服务器的 低层 抽象，也就是说没有实现页面路由（router），和通常的后端框架（比如 Go 的 Gin、Python 的 Django、Java 的 Spring Web 等）有很大区别。 根据 Ring Spec 1.6.1 ，Ring 主要有三个概念： Handler（处理器） Middleware（中间件） Adapter（适配器） Ring 提供了三种 API： 同步 API、异步 API 和 WebSocket API。不同的 API 在概念上…",
+      "image": "https://img.eltr.ac/geedeapro/article/clj6/ring-concepts.svg",
+      "publishedAt": "2026-10-05T16:17:09Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj6/",
+      "detailPath": "articles/75c7fa4c98f10f4d79b5816a.json"
+    },
+    {
+      "id": "5509812df93ff06254d55aef",
+      "title": "好久不见",
+      "summary": "⚠ 处于抑郁中的读者建议谨慎阅读此文章，有被触发的风险。 「好久不见」，我是想这样说的，实际上只是一个月左右没有更新博客。从六月到九月，平均每月也只有两篇新文章，而九月甚至只有一篇新文章，还是比较水的音乐推荐。和去年比起来，更新频率大大下降了。 中考后，我陷入几个月的抑郁状态，时好时坏。其中有一周左右状态不错，一直在玩 Minecraft，也有一周像打鸡血一样，每天只睡四五个小时，其余时间精力无限，一直在写代码。而剩下的日子里，基本都在床上躺着。 幸好我有写日记的习惯，可以根据日记来回忆和复盘。好吧，根据日记里的描述，极大部分时间中，都是「只想蜷缩成一团」。然而我确实这么做了。起不来床，一直躺着。每天饿到胃疼得不行时吃两口粥，继续回床上睡觉，连写日记和自己说话都做不到。行动力几乎丧失为零。活死人的状态。 那段…",
+      "image": "https://images.verdant.ee/IMG_20260926_101047.webp",
+      "publishedAt": "2026-10-05T16:00:00Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/still-here/",
+      "detailPath": "articles/5509812df93ff06254d55aef.json"
+    },
+    {
+      "id": "f8dee3d00eb1df9dc70c6414",
+      "title": "P2：面向 Nazurin 的 Pixiv 作品悬停预览扩展",
+      "summary": "一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 Nazurin 收藏图片的工作流。",
+      "image": "https://yuuikic.com/static/2026-10-05-P2%EF%BC%8C%E8%BD%BB%E9%87%8F%E7%9A%84_Pixiv_%E4%BD%9C%E5%93%81%E6%82%AC%E5%81%9C%E9%A2%84%E8%A7%88%E6%89%A9%E5%B1%95-zqjryw.DYxZSaLg_hD8qY.webp",
+      "publishedAt": "2026-10-05T15:30:00Z",
+      "sourceId": "68b0311b68382892",
+      "sourceTitle": "桜庭夜 | 杂话铺子",
+      "link": "https://yuuikic.com/archives/p2-browser-extension/",
+      "detailPath": "articles/f8dee3d00eb1df9dc70c6414.json"
+    },
+    {
       "id": "b44cb042cdc2b2c0ec01e354",
       "title": "创业开公司1年，收入为0",
       "summary": "[!NOTE] Info 全文共计13238字，预计阅读时长30min，记录的是我2025.07-2026.09的经历 创业开公司1年，收入为0 本博客的回忆板块终于迎来了属于它的第5篇文章。这个板块所记录的事情总是酸涩而又痛苦的，是青春伤痛文学，在写作的过程中往往要把自己最脆弱、最艰难的那部分挖开、审视，编纂成文，接着公之于众，挂在自己的一亩三分田，警醒自己不要重蹈覆辙。 时间一转而过，我已经从学校毕业了6年有余，从教培机构离职之后就一直一边在做自由职业，一遍摸索创业，希望能够在30岁找到自己真正喜欢做的事情，以及一份能够让自己不再“打工”的事业——不用看老板的脸色，不用背负KPI，不用想OKR，不用看绩效，想请假就请假，想去旅游就去旅游，能有很多时间陪家人，同时自己对自己的事业和收入负责。 这就是前情提要…",
@@ -285,17 +340,6 @@
       "sourceTitle": "Xinsl's Blog",
       "link": "https://blog.xinsl.xin/posts/my-opinion-of-gaokao-composition/",
       "detailPath": "articles/9dfe80e56d205d3a110af0f5.json"
-    },
-    {
-      "id": "ca53618c5b3d9fec1e7543eb",
-      "title": "貪",
-      "summary": "下文寫於同月同日不同年，很喜歡看臉書的＜動態回顧＞，看歷史上的今天自己寫了什麼。因為我把臉書當手札本寫，在上面 […] The post 貪 first appeared on susushare.com .",
-      "image": "https://static.xx.fbcdn.net/images/emoji.php/v9/td4/1/16/1f606.png",
-      "publishedAt": "2026-10-04T07:27:08Z",
-      "sourceId": "ea1569cbd69bdce9",
-      "sourceTitle": "susushare.com",
-      "link": "https://susushare.com/%e8%b2%aa/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25b2%25aa",
-      "detailPath": "articles/ca53618c5b3d9fec1e7543eb.json"
     },
     {
       "id": "ffb201ebfae856eec5e20443",
@@ -615,50 +659,6 @@
       "sourceTitle": "Xinsl's Blog",
       "link": "https://blog.xinsl.xin/posts/dream-record/26w40e/",
       "detailPath": "articles/18fd6588b74ce119a8b78f8f.json"
-    },
-    {
-      "id": "ddb2cb6f29b77bac8a89356f",
-      "title": "入蜀记 day496 炸葱油",
-      "summary": "「炸葱油。」",
-      "image": null,
-      "publishedAt": "2026-10-02T04:39:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_496/",
-      "detailPath": "articles/ddb2cb6f29b77bac8a89356f.json"
-    },
-    {
-      "id": "12b00fa3e99c2a6e49cf0272",
-      "title": "現今 AI 發展的「顛覆想像」",
-      "summary": "讀到了 Marcus 的〈 薯條驅動的 MCP 〉一文： 关于 AI 指挥人类的预测，原本只是我常听见的一种「惊悚言论」，就算是相信，也没有像这次 Muse 的电话门事件一样让我惊觉预测已经到来。我问了周围的几个同事，他们倒都是非常淡定……地认为人肯定逃不过要被 AI 操纵的宿命。 以前的「樂觀型」科幻故事，總是會出現像這樣的美好假想情景：發展成熟的人工智慧（機器人）爲人類處理掉一切的苦力活 1 （英文：physical labour），以讓人類本身可以隨心所欲地幹腦力活（英文：intellectual labour）。 有誰會想到，現實世界會往徹底相反的方向走呢？ ：「那些 『悲觀主義』的科幻作家 咯。」 可惡。 延伸閱讀： ava’s blog： the tech utopia fantasy is ov…",
-      "image": null,
-      "publishedAt": "2026-10-02T04:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/ai-inverting-expectations/",
-      "detailPath": "articles/12b00fa3e99c2a6e49cf0272.json"
-    },
-    {
-      "id": "75186c736dbbc3de71890c64",
-      "title": "Zig 构建系统（下）：编译管线与底层运行机制",
-      "summary": "在上篇 《Zig 构建系统（上）：设计理念与最佳实践》 中，我们介绍了 build.zig 的核心抽象模型（Step DAG、Module 与 LazyPath）。 本文结合 Zig 0.16.0 源码 ，讨论执行 zig build 后的底层流程：Build Runner 的动态编译、Step.Compile 如何拼装底层编译命令、ZCU 单体编译分析，以及内嵌 Clang 编译器与 LLD 链接器的集成机制。",
-      "image": null,
-      "publishedAt": "2026-10-02T01:00:00Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2026/10/02/zig-build-system-pipeline/",
-      "detailPath": "articles/75186c736dbbc3de71890c64.json"
-    },
-    {
-      "id": "d2f4ad31b22501b4832ce5bf",
-      "title": "鄙視鏈",
-      "summary": "讀到馮天彥寫的〈即非善法，是名善法〉，我覺得他說得很有道理：",
-      "image": null,
-      "publishedAt": "2026-10-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/contempt-chain",
-      "detailPath": "articles/d2f4ad31b22501b4832ce5bf.json"
     }
   ]
 }

@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "95c99a3d40fdc19f73ad11f4",
+      "title": "活用大寫鎖定鍵",
+      "summary": "活用 CapsLock 鍵，把本來的大寫鎖定功能改掉，換成按一下時是 Esc ，按住時是 Ctrl 。 以下是我設定的方式，都是很簡單就可以做到的。 Linux 安裝 keyd 打開 keyd 的 config file 設定檔 ，位置在 /etc/keyd/default.conf （沒有的話可以自己新增），並在裡面複製貼上這個： [ids] * [main] capslock = overload(control, esc) 啟動 keyd：打開終端機，執行以下啟動指令 sudo systemctl enable keyd --now （ enable 改 disable 就是關閉，如果某天改變心意想要改回來的話） 完成 以後如果還有改動設定檔的話，可以執行這個 reload 指令來讓設定檔套用 sudo…",
+      "image": null,
+      "publishedAt": "2026-10-15T10:40:56Z",
+      "sourceId": "859dc4f797795c39",
+      "sourceTitle": "蟬噪林愈靜",
+      "link": "https://blog.linyuchin.com/capslock-remap/",
+      "detailPath": "articles/95c99a3d40fdc19f73ad11f4.json"
+    },
+    {
+      "id": "6c52c3b81201fb4eb46c9276",
+      "title": "入蜀记 day504 周期时间观、我都爱、低端定位",
+      "summary": "「周期时间观、我都爱、低端定位。」",
+      "image": null,
+      "publishedAt": "2026-10-15T08:04:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_504/",
+      "detailPath": "articles/6c52c3b81201fb4eb46c9276.json"
+    },
+    {
+      "id": "74179757b03a47da77c8b38a",
+      "title": "入蜀记 day503 民族大学和人类学",
+      "summary": "「民族大学和人类学。」",
+      "image": null,
+      "publishedAt": "2026-10-15T08:01:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_503/",
+      "detailPath": "articles/74179757b03a47da77c8b38a.json"
+    },
+    {
+      "id": "7fc746078739692529b40f11",
+      "title": "入蜀记 day502 补牙、不介意我消失、记住夏乌拉、平东CP",
+      "summary": "「补牙、不介意我消失、记住夏乌拉、平东CP。」",
+      "image": null,
+      "publishedAt": "2026-10-15T07:55:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_502/",
+      "detailPath": "articles/7fc746078739692529b40f11.json"
+    },
+    {
+      "id": "c97712b85a0a87a2b92766d8",
+      "title": "10-15 在索尼Xperia 1 III免驱的影拓Pro",
+      "summary": "重大发现！影拓Pro PTH-451在索尼Xperia 1 III居然是免驱的。仅限X1 III，因为Xper … 继续阅读 10-15 在索尼Xperia 1 III免驱的影拓Pro →",
+      "image": "https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png",
+      "publishedAt": "2026-10-15T07:49:22Z",
+      "sourceId": "d29b4f2186bb32e1",
+      "sourceTitle": "景の域",
+      "link": "https://v1sta.xyz/gadget/10-15-%e5%9c%a8%e7%b4%a2%e5%b0%bcxperia-1-iii%e5%85%8d%e9%a9%b1%e7%9a%84%e5%bd%b1%e6%8b%93pro/",
+      "detailPath": "articles/c97712b85a0a87a2b92766d8.json"
+    },
+    {
+      "id": "f7a2e9793331d45d696b8b3c",
+      "title": "日寄 三十四",
+      "summary": "是干潮，我们走远一些吧。 与其说清冷的气温更适合思考，不如说思考这个动作带给我的感觉是清冷的。 是啊，按部就班 […]",
+      "image": null,
+      "publishedAt": "2026-10-15T07:04:07Z",
+      "sourceId": "3c6ccf75c8f41329",
+      "sourceTitle": "CC的数字花园",
+      "link": "https://cyrus19.cc/archives/2123",
+      "detailPath": "articles/f7a2e9793331d45d696b8b3c.json"
+    },
+    {
+      "id": "4e5d51334203cc60305e0f34",
+      "title": "松声｜廿六年·十月中·骤生变",
+      "summary": "自己做饭最近穷！中午点外卖，基本上都能保证在十五块以上了，关键还不是很好吃，没办法自己整吧！一天也就中午有闲时间折腾了，前段时间公司门口的麻辣烫深得我心，想买火锅底料炒，但是不确定自己能做几顿，...",
+      "image": "https://img.xyzbz.cn/i/2026/10/15/6ad03281d5a25.jpeg",
+      "publishedAt": "2026-10-15T06:55:01Z",
+      "sourceId": "309d11f5508ab72f",
+      "sourceTitle": "网友小宋",
+      "link": "https://xyzbz.cn/archives/1585/",
+      "detailPath": "articles/4e5d51334203cc60305e0f34.json"
+    },
+    {
       "id": "33ef21d8525116e6b6980fac",
       "title": "摘：《Monsieur Teste》",
       "summary": "「一种散步。」",
@@ -177,17 +254,6 @@
       "detailPath": "articles/3def73caf63fc8972b953749.json"
     },
     {
-      "id": "0ceb832ae4387d4af2f8c29f",
-      "title": "什麼是朋友",
-      "summary": "對我來說，朋友就是我想不起來「我對他哪裡好了」的人。互相這樣子看待的人就是朋友。 （有個bug，這樣的話全世界都是朋友了。） 一個朋友在我遇到困難時，說覺得一路走來我幫了他很多，所以也想幫我。但是在我這邊是覺得他幫了我很多，而我想不起來幫了他什麼。（可能多少想得到一些舉手之勞而已。） 一樣地，曾經也有過一位漸行漸遠的朋友，最後我想到的就是我到底 對他多好 。所以這段關係會結束。",
-      "image": null,
-      "publishedAt": "2026-10-14T05:04:49Z",
-      "sourceId": "13e0488e6596de1c",
-      "sourceTitle": "YangBear'Blog ᓚᘏᗢ",
-      "link": "https://yangbear.bearblog.dev/tomodachi-tte/",
-      "detailPath": "articles/0ceb832ae4387d4af2f8c29f.json"
-    },
-    {
       "id": "0bcf2ca6582b5d2b677b1fb2",
       "title": "伤害豁免",
       "summary": "我又发现了一个年龄增长带来的好处：对网上的伤害豁免。 新世纪初，我才上网写字不久，自然很在乎这件事。我上网经验也少，不知道匿名制会放大人性中的恶，不理解为什么人会如此刻薄恶毒。因此，看到有人贬低我的文笔，把我的文章说得一无是处时，我心里还是会觉得难过，偶尔甚至会自我怀疑。不过，也正因为这样，我暗自发誓要写出惊世名篇，把他们震到全身失禁。 年少时的想法如今想来还挺可爱，七窍呲水这种场景如果自己不足够中二，真的很难想象。一转眼我在网上已经写了快三十年，再遇到类似的事情，我的内心已经不会再起波澜。 一个原因是我见识过了各种人，也见识过人性的光怪陆离，他人说什么都有可能，尤其是在网上。如果要追问「为什么」，或者是「凭什么」，那是自己麻烦自己。是人就会上网，上网就会释放恶意，无非是谁不幸作为那一刻的对象。我在网上说话多…",
@@ -208,17 +274,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/mind-motorcycle-shop/",
       "detailPath": "articles/45761e0273296f3e639786e2.json"
-    },
-    {
-      "id": "319781ef03eee92b2b06b108",
-      "title": "陷阱悲剧 II",
-      "summary": "继续昨天的话题，既然“陷阱喜剧”的乐趣在于： 那用这个逻辑也可以制作悲剧吗？悲剧并不一定是让人难过，也可以是完 […] —— 感谢订阅 莫比乌斯 ，如你有任何疑问、观点交流，请前往 创作者频道 ，或 私信 联系。",
-      "image": null,
-      "publishedAt": "2026-10-14T01:30:00Z",
-      "sourceId": "416bdd1cdb343543",
-      "sourceTitle": "莫比烏斯",
-      "link": "https://mobius.blog/25910.html",
-      "detailPath": "articles/319781ef03eee92b2b06b108.json"
     },
     {
       "id": "491496912705ce5942d22bb3",
@@ -604,61 +659,6 @@
       "sourceTitle": "KAIX.IN",
       "link": "https://kaix.in/2026/1012/",
       "detailPath": "articles/90cbaa7b53451f37c9867892.json"
-    },
-    {
-      "id": "7520f241580182b8dc0c5165",
-      "title": "AI 都这么强了，碰到问题为什么你还是卡着",
-      "summary": "哪怕 AI 已经这么强了，我注意到身边的人碰到问题还是会卡住，无法利用现有的工具去解决问题，我一度思考为何会产生这样的局面，有种拿着屠龙刀切菜的感觉。",
-      "image": null,
-      "publishedAt": "2026-10-12T08:30:36Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/why-still-stuck-with-ai/",
-      "detailPath": "articles/7520f241580182b8dc0c5165.json"
-    },
-    {
-      "id": "b7e29e008e9d638c2599ee7d",
-      "title": "終究還是人啊",
-      "summary": "問：人的最可貴之處是什麼？ 答：會讓我們感嘆「終究還是人啊」的東西。 至於會讓我們說出「終究還是人啊」的事物或行爲是什麼？這真是個值得我們捫心自問的問題呢。",
-      "image": null,
-      "publishedAt": "2026-10-12T06:25:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/still-a-human-after-all/",
-      "detailPath": "articles/b7e29e008e9d638c2599ee7d.json"
-    },
-    {
-      "id": "8f37dcace1c31bf70f547b9f",
-      "title": "Proliferation of AI signages",
-      "summary": "I’ve come across this blog post written by luke.zip , talking about the increasing ubiquity of (obviously) AI-generated signages around where he lives. Oh gosh, I can relate to this so much, as it’s the exact same thing that’s been happening around the streets in Malaysia as well! ⚠️ Eyesore alert: an example of an AI-generated signage used by an actual res…",
-      "image": "https://microblog.ttheng.com/blog/img238.jpg",
-      "publishedAt": "2026-10-12T05:34:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/proliferation-of-ai-signage/",
-      "detailPath": "articles/8f37dcace1c31bf70f547b9f.json"
-    },
-    {
-      "id": "967ac6e7d818016fe56a4d9e",
-      "title": "Toots 440 2026 Oct.4 - Oct.10",
-      "summary": "「寒露。」",
-      "image": null,
-      "publishedAt": "2026-10-12T05:27:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20261010/",
-      "detailPath": "articles/967ac6e7d818016fe56a4d9e.json"
-    },
-    {
-      "id": "82cecf9dae58541b984d7c1f",
-      "title": "冰箱艺术家",
-      "summary": "这个周末，我把我的公众号搞得有点像是小红书。先是发了一条贴图：《 老登冰箱贴 》，发现留言区里有很多读者展示了自己家的冰箱贴，于是又专门发了一条征集贴：《 看看大家的冰箱贴 》，这下子看到了琳琅满目的私人收藏。 我个人很喜欢读者朋友分享的这些内容。当我看到各种各样的冰箱门或是磁力面板上贴着冰箱贴，无论这些冰箱贴是购自博物馆、风景区、网购平台，还是自己手工制作，我都会把这些装点自己冰箱门的读者视为和我一模一样的创作者---我用文字和图片创作，他们用现成品做拼贴，同样也是一种创作。 也有读者不能理解冰箱贴，甚至看轻这种拼贴行为，其实，只要自己真正从事一点什么创作就能理解这背后需要些什么。在一个大平面上，如何安排不同颜色、形状、材质、内容的冰箱贴，怎么处理它们之间的关系，以及最后布置完毕之后呈现出怎样的一种视觉效果…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkEjt_3A4nOoITIK-ZZPbq83Zg_kLbr6HOsnVGBmfKqa2Y1an_OPGeuv7UHIfEGCTaA9YdKL1gdcMKTGz-bF6EudTyMoNcMa9_iAODJOzzh5R-S2GQGmZK6mo64lCLMFUxAuFqCiRGi5K8fwOGOzd1oWx7IT8DKSy7as0pwRdDOIRMc566kCLJTgGNt2o/s72-w456-h605-c/hecaitou__--ar_34_--sref_2069485909_--profile_p3puw41_--sw_30_2c656f4f-1fb4-4bb4-b848-281cd9a95454_3-gigapixel-cgi-2x.jpeg",
-      "publishedAt": "2026-10-12T04:51:07Z",
-      "sourceId": "095c6fbac5bbadfd",
-      "sourceTitle": "槽边往事",
-      "link": "https://www.hecaitou.com/2026/10/The-Refrigerator-Artist.html",
-      "detailPath": "articles/82cecf9dae58541b984d7c1f.json"
     }
   ]
 }

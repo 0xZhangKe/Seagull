@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "02d7d0c500b671522978910a",
+      "title": "博客系统迁移：Hexo 到 Hugo",
+      "summary": "上一篇文章介绍了 Emacs 的理念以及其强大的扩展功能，基本上能在 Emacs 里面做到事，我都在 Emacs 里面做。之前的博客一直都是用的 markdown 来书写，虽然 Emacs 也有 markdown 插件，但是总感觉体验不如 org-mode。这周末就趁着手热，把博客系统进行了升级，完美支持 org-mode，这篇文章就是用 org-mode 完成的，下面就来讲一下迁移过程。",
+      "image": null,
+      "publishedAt": "2020-12-05T05:12:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2020/12/05/hexo-to-hugo/",
+      "detailPath": "articles/02d7d0c500b671522978910a.json"
+    },
+    {
+      "id": "0171003ba3144fcd8eb08a8e",
+      "title": "何处安放我们的 Go 代码",
+      "summary": "用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。 这期间也掌握了不少技巧与惯用法（idioms），比如 prosumer ，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher 吃了不少苦头 。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：",
+      "image": null,
+      "publishedAt": "2020-12-05T05:12:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2019/10/24/go-modules/",
+      "detailPath": "articles/0171003ba3144fcd8eb08a8e.json"
+    },
+    {
+      "id": "9839906a8f92d3225709d9ad",
+      "title": "由《冬天》想到的",
+      "summary": "昨天看了一篇短文，朱自清的《冬天》。提到朱自清，很多人还能背出「盼望着，盼望着，东风来了，春天的脚步近了。」很多人因为它出现在课本上，就习惯性拒绝对作者进一步了解。《冬天》一文，非常短，就四段，文章结构可以作为一篇范文来讲。前三段，写了他记忆里的几个冬天，一次是在家里吃火锅豆腐，一次是杭州与好友划船，还有一次，是回忆在台州短暂居住的一段时光。 三段，三个不同的时期，从孩童、到青年，再到一家人。文字纯朴，但这种过渡堪称典范。尤其在第三段结尾，回忆之后，先说「似乎台州空空的，只有我们四人；天地空空的，也只有我们四人。那时是民国十年，妻刚从家里出来，满自在。」紧接着一句「她死了快四年了，我却还老记着她那微笑的影子。」 结尾则非常简短：「无论怎么冷，大风大雪，想到这些，我心上总是温暖的。」 苗炜提及这篇文章，是想说好…",
+      "image": null,
+      "publishedAt": "2020-12-02T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/12/read-dong-tian/",
+      "detailPath": "articles/9839906a8f92d3225709d9ad.json"
+    },
+    {
       "id": "3c312c8a2c8c9b3dfca40e2c",
       "title": "为什么要使用长毛象？长毛象(Mastodon)怎么玩？",
       "summary": "简单地说，长毛象（Mastodon）是一个去中心化的微博客平台，所以大致使用方式，类似微博或者twitter。区别是，它并不是一个网站，而是成百上千（or上万？）的小站点聚合而成，俗称“联邦宇宙”。这些网站都遵循同一个协议，使用Mastodon系统，每一个网站都叫做一个实例。 Mastodon（长毛象）作为一个开源微博客平台的各种优秀就不赘述了，写这个的文章很多，这里只写对个人用户来说，长毛象有哪些优势，以及简单使用入门。后面会附一些链接供有兴趣的同学继续探索。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2020/09/%E6%B7%B1%E5%A4%9C%E5%8F%91%E5%97%A434/",
       "detailPath": "articles/9a2cca9afa58e02c8d980e67.json"
-    },
-    {
-      "id": "1ae1da2ac4e08f83d7fa7cc2",
-      "title": "The Art of Computer Programming (0) - introduction",
-      "summary": "With less school course lately, I had time to read this series of books called ‘The Art of Computer Programming’, which is without a doubt the bible of the computer science community. The reason I started reading this book was because my friend Rogister recommended it to me, so I purchased it just about one year ago. But for variety reasons, I procrastinate…",
-      "image": null,
-      "publishedAt": "2020-09-21T17:23:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/taocp-01-introduction/",
-      "detailPath": "articles/1ae1da2ac4e08f83d7fa7cc2.json"
-    },
-    {
-      "id": "1b179c28f26af0dffe0cc874",
-      "title": "1岁出头的新挑战",
-      "summary": "上一篇 说到 Toddler 的新发展，现在来说说这些新发展对于我和 Colin 的挑战。——虽然想这么总结，但这次的主要目的是求救，因为 Toddler 现在夜里又哭着不让我们睡觉了！ 刷牙和洗澡：平衡小人的意愿和我们照顾者的意愿 # 我们发现 Toddler 越来越想按照自己的方式来做事，是在1岁左右很难从 TA 手里翘开手指拿走东西的时候。只有自己愿意放手的时候才默默地目送，不愿意放手的东西如果拿走会大声抗议。不过这才是正常的反应吧！事实上1岁以前我们经常用的一招是用别的东西吸引一下注意力，就能轻松把 Toddler 手里的东西拿开，这个时候我心里总有种罪恶感。然而现在让 Toddler 放手就很难了，有时候能讲道理（“要去吃饭了所以把这个收起来”），不行的话只好采取强硬的手段（整个脸皱起来哭～～）。也…",
-      "image": null,
-      "publishedAt": "2020-09-20T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/new-challenges-with-young-toddler/",
-      "detailPath": "articles/1b179c28f26af0dffe0cc874.json"
-    },
-    {
-      "id": "4633fad98a73654559b8aada",
-      "title": "一文看完2020苹果秋季新品发布会",
-      "summary": "本文整合转载至 ITHOME 本次秋季新品发布会，苹果将硬件产品焦聚在Apple Watch和iPad上，总体来说是“4款产品，2枚芯片，2个服务”。 划重点，本次发布会真的没有iPhone 12！！ 一、四款硬件新品 Apple Watch Series 6：支持血氧检测 Apple Watch Series 6的外观设计相较于上一代几乎没有改变，但拥有 Product（RED）、蓝色、墨色和新金色四种配色。 在功能方面， Apple Watch Series 6增加了血氧饱和度检测的功能 ，它可以利用全新的红外光传感器在大约15秒内测量用户的血氧水平，这很适合经常在高海拔工作和运动的用户。 苹果表示他们正在与卫生机构合作，基于Apple Watch Series 6的血氧检测功能进行大规模研究，尝试帮助人…",
-      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/09/1919259477.png",
-      "publishedAt": "2020-09-16T10:47:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/apple-2020-autumn/",
-      "detailPath": "articles/4633fad98a73654559b8aada.json"
     }
   ]
 }

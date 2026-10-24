@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "511b9d85f8f8b7bd09fa5b10",
+      "title": "安装配置Rime输入法",
+      "summary": "前言 其实我有能用的fcitx5+搜狗输入法的方案，但奈何kitty终端有对这个输入法的兼容性问题，无法启用中文，又奈何kitty的界面多美观舒服，和Konsole比起来简直就不是一个时代的产物。 安装Ibus框架和Rime输入法引擎 安装 IBus 和 Rime 组件 ： sudo pacman -S ibus ibus-rime 安装 Rime 双拼方案： sudo pacman -S rime-double-pinyin 配置 IBus 和 Rime 设置环境变量 在 ~/.xprofile 添加以下内容 export GTK_IM_MODULE=ibus export QT_IM_MODULE=ibus export XMODIFIERS=@im=ibus 重启系统或执行 source ~/.xpro…",
+      "image": null,
+      "publishedAt": "2025-03-24T20:37:38Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AErime%E8%BE%93%E5%85%A5%E6%B3%95/",
+      "detailPath": "articles/511b9d85f8f8b7bd09fa5b10.json"
+    },
+    {
+      "id": "efb02378a136bf0a10a170bd",
+      "title": "240901 250325 痴迷",
+      "summary": "在前往东坝的出租车上闭目养神，听kokoro的翻唱歌单。kokoro的声音是令人难以琢磨的气质，很难用语言描述… Continue reading 240901 250325 痴迷 →",
+      "image": "https://0.gravatar.com/avatar/cab092a5c5ede78428d38d2c4b4d4e31e1b7ae079c59c535e65f0edd446d0a58?s=96&d=identicon&r=G",
+      "publishedAt": "2025-03-24T18:23:13Z",
+      "sourceId": "c96b327793445474",
+      "sourceTitle": "baoting's blog",
+      "link": "https://baoting.blog/2025/03/25/obsession/",
+      "detailPath": "articles/efb02378a136bf0a10a170bd.json"
+    },
+    {
+      "id": "f03cf230d20f6a8a250bc610",
+      "title": "20250325",
+      "summary": "不得不说，官大一级压死人，这句话不是没有道理的。 最近开发的一个项目，已经到了测试阶段。 结果说改就改，开发、测试、PM在一起争论了一个小时。 都不如上一级的一句话：“那就改吧”。 那就改吧。",
+      "image": null,
+      "publishedAt": "2025-03-24T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/20250325",
+      "detailPath": "articles/f03cf230d20f6a8a250bc610.json"
+    },
+    {
       "id": "ae366277a0c84ee79a4a2b6d",
       "title": "该让机器人交社保吗？",
       "summary": "两会期间，忘了在哪看到一则新闻，说有人大代表提议，要工厂里的“机器人”也交社保。 新闻一出，网络立即一片哗然。 民间一直以来都有这样一种声音，认为社保是一种“税”。这种“税”既增加了企业负担，也减少了劳动者实际到手收入。 对于现代社保制度，他们也有不同的看法，认为现代社保制度是一项不可持续的制度，它建立在经济持续发展，社会生产力不断增长的假设之上。而这个假设本身，很有可能是错误的。这种质疑的声音不仅仅针对我国的社保制度，而是对全世界所有国家现行的社保制度都提出了同样的质疑。 前段时间，以刘强东主导的京东为首，发出了“算法不能成为压榨底层兄弟工具”的时代强音，同样引出了同样的质疑声音。 质疑的理由千奇百怪，但归根结底，并没有在前人的基础上更进一步，还是加重企业负担，减少劳动者到手收入，这样的老调重弹。 只不过，…",
@@ -626,39 +659,6 @@
       "sourceTitle": "HerBlue 她的蓝",
       "link": "https://her.blue/ji-shi-ji-shi-zai-fan-rong-ye-ying-gai-yong-you-shu-yu-zi-ji-de-du-li-dian-pu/",
       "detailPath": "articles/73689a0f4b2b79b598ee06ae.json"
-    },
-    {
-      "id": "2e3f2a78caa297450b677567",
-      "title": "Three.js Journey Notes 2 - Classic Techniques",
-      "summary": "课程链接：three.js journey 其他几篇： Notes 1 - Basics Notes 3 - Advanced Techniques Part1 Notes 4 - Advanced Techniques Part2 Notes 5 - Advanced Techniques Part3 Lights# basically walk through all lights types to demonstrate them one by one and feel what they can do. AmbientLight applies omnidirectional(全方向的) lighting on all geometries of the scene. good to simulate…",
-      "image": "https://static.zhuzi.dev/threejs-journey/haunted-house-1.png",
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/threejs-journey-notes-2-classic-techniques/",
-      "detailPath": "articles/2e3f2a78caa297450b677567.json"
-    },
-    {
-      "id": "5fed04b7171e26d5bd32d03a",
-      "title": "不要說",
-      "summary": "你是否曾經興奮地跟朋友分享你想做某件事，卻被他們七嘴八舌的意見澆了一頭冷水？那麼這篇貼文就是寫給你的。",
-      "image": null,
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/dont-share-your-plan",
-      "detailPath": "articles/5fed04b7171e26d5bd32d03a.json"
-    },
-    {
-      "id": "8e65ef878f98c1b0e0b0510c",
-      "title": "2025 Week 10",
-      "summary": "周记 | 2025年第10周（03-03~03-09）的见闻、体验与思考 状态 🌅 3月3日，早上5点半起，6点半出门去，晚上10点睡觉； 3月4日，早上6点半起，8点出门，晚上10点睡觉； 3月5日，早上8点起，晚上11点睡； 3月6日，凌晨4点起，看球2小时，7点出门； 3月7日，早上6点半起，11点睡； 3月8日，早上7点起。 周前还在熬大夜睡懒觉，这周就这么奇迹般地实现早睡早起了。 凌晨6点的深圳 🎶 路过好几个店在放方大同。 😌 图书馆，坐在我对面的老哥在用电脑刷抖音，我旁边的兄弟在用手机玩游戏，相比之下我刷微博或者看些无关的文章，做这些低效无任何产出的事情的都不会有压力，谢谢你们。 ⚽ 周内两场球，一场赢了一场输了。 周内两场球 🎬 周末看了场电影 《平原上的火焰》 ，还挺喜欢双雪涛小说原作的，但…",
-      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202503190509659.webp",
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "95e525ddc69ab5ef",
-      "sourceTitle": "金色河流",
-      "link": "https://goldenriver.site/posts/2025-week-10/",
-      "detailPath": "articles/8e65ef878f98c1b0e0b0510c.json"
     }
   ]
 }

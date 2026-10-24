@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "36b0e58106a6306b4036b54d",
+      "title": "PHP2",
+      "summary": "bugku 矛盾 flag{bugku-789-ps-ssdf} 看代码，要求输入一个不是数字、数字字符串，同时还 ==1 的东西。 PPT 里“字符串到数字”有说数字 + 字符串等于那个数字，所以输入类似 1admin 的字符串就可以了。 cgctf md5 collision nctf{md5_collision_is_easy} 这个 PPT 里有一模一样的：md5('240610708') md5('QNKCDZO')，所以输入 ?a=240610708 就可以得到 flag。 PHP decode >nctf base64_decode() 不用多说，是解码； gzinflate 查了下也是解码——那整个 CLsI 函数不就是解码么？把整个复制下来写进 .php，最后改成： $ a = eval (…",
+      "image": null,
+      "publishedAt": "2018-08-19T03:27:24Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/php2/",
+      "detailPath": "articles/36b0e58106a6306b4036b54d.json"
+    },
+    {
+      "id": "25d2ece030336a81a336d19a",
+      "title": "深入浅出垃圾回收（四）分代式 GC",
+      "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
+      "image": null,
+      "publishedAt": "2018-08-18T12:12:30Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/",
+      "detailPath": "articles/25d2ece030336a81a336d19a.json"
+    },
+    {
+      "id": "0f2ee5dadd222c4c752c9e59",
+      "title": "PHP1",
+      "summary": "WEB 基础 $_GET flag{bugku_get_su8kej2en} 看到要 $what=='flag' 才能打印 flag， $what 是可以用 ? 传进来的，所以地址栏输入 http://120.24.86.145:8002/get/?what=flag 得到 flag WEB 基础 $_POST flag{bugku_get_ssseint67se} 这回 $what 要用 POST 方法提交才行，在 hackbar 里选“Post data ” ，上面的栏填地址，下面的写 what=flag ，execute 就得到 flag 了。 变量 1 flag{92853051ab894a64f7865cf3c2128b34} 提示 flag 在变量里，后续程序提取出输入的参数所代表变量的值，试了下…",
+      "image": null,
+      "publishedAt": "2018-08-16T09:31:03Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/php1/",
+      "detailPath": "articles/0f2ee5dadd222c4c752c9e59.json"
+    },
+    {
       "id": "3b4751e9e014fb11c106dd60",
       "title": "天津笔记：那些牺牲的19岁",
       "summary": "对消防员家属来说，烈士的名号太遥远，他们想知道的，是什么，把年轻的生命抛入了这样的命运。… Continue reading 天津笔记：那些牺牲的19岁 →",
@@ -626,39 +659,6 @@
       "sourceTitle": "Dr.Pika's Blog",
       "link": "https://blog.drpika.com/posts/2018-03-25",
       "detailPath": "articles/9d7edf03c833f8055fc401fc.json"
-    },
-    {
-      "id": "7a6a0d79d9aba877142f130d",
-      "title": "“吃了吗？”",
-      "summary": "随便写写，关于理解。",
-      "image": null,
-      "publishedAt": "2018-03-24T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-24",
-      "detailPath": "articles/7a6a0d79d9aba877142f130d.json"
-    },
-    {
-      "id": "c57594a4094b640f1cff776a",
-      "title": "“吃了吗？”",
-      "summary": "随便写写，关于理解。",
-      "image": null,
-      "publishedAt": "2018-03-24T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-24",
-      "detailPath": "articles/c57594a4094b640f1cff776a.json"
-    },
-    {
-      "id": "450474e3812fdf4d6f9df416",
-      "title": "ㄏ一ㄇv",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/bear-d02d344e3ac788ec0dbd310323f384b2.jpg",
-      "publishedAt": "2018-03-22T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/animal-drinks",
-      "detailPath": "articles/450474e3812fdf4d6f9df416.json"
     }
   ]
 }

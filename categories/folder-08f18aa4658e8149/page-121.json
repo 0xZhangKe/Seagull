@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "63d6dfe8c76c57ba9cf45c65",
+      "title": "「Maven」IDEA下 Tomcat 10 Servlet 404 问题踩坑",
+      "summary": "起因 下午将 Tomcat升级到了 10.0.4 版本，导致原先的 JSP Servlet 全部报了404。 搜寻了互联网，大部分都是配置 web.xml 的 metadata-complete 为 false ，但这样对于我的项目无效。 解决方案 IDEA 建立 Java Enterprise 工程，默认的Servlet API是 javax.servlet-api 的 4.0.1 版本 1 2 3 4 5 6 <dependency> <groupId> javax.servlet </groupId> <artifactId> javax.servlet-api </artifactId> <version> 4.0.1 </version> <scope> provided </scope> </de…",
+      "image": "https://cdn.taurusxin.com/old-cdn/typecho/2021/04/12/404.png",
+      "publishedAt": "2021-04-12T17:25:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/tomcat10-issue/",
+      "detailPath": "articles/63d6dfe8c76c57ba9cf45c65.json"
+    },
+    {
+      "id": "58c802f574786ade4bf665e3",
+      "title": "Prometheus 存储引擎分析",
+      "summary": "Prometheus 作为云原生时代的时序数据库， 是当下最流行的监控平台之一，尽管其整体架构一直没怎么变，但其底层的存储引擎却演进了几个版本，感兴趣的读者可参考 Prometheus 存储层的演进 。本文主要介绍 Prometheus V2 版本（现在主要使用）的存储格式细节，以及查询如何定位到符合条件的数据，旨在通过本文的分析，对 Prometheus 的存储引擎有更深入了解。",
+      "image": null,
+      "publishedAt": "2021-04-11T14:42:54Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2021/04/11/prometheus-storage-engine/",
+      "detailPath": "articles/58c802f574786ade4bf665e3.json"
+    },
+    {
+      "id": "4589f24fa768c26d7de33b28",
+      "title": "近期安全动态和点评（2021年1季度）",
+      "summary": "又到了每季度的安全新闻汇总。今天这篇比较长，有些俺认为不那么重要的新闻，就没有放进来了。 ★隐私保护 ◇【输入法】的隐私风险 《 输入法会“背叛”我们吗？ @ 南方周末 》 一位受访者对南方周末记者描述，几天前朋友家要换马桶，她微信回信息说了自家用的牌子，下次打开手机 WPS 时，开屏广告就成了京东马桶。“这种 N 年不提的话题，不可能这么巧吧？”她怀疑是输入法泄密。 根据 Mob 研究院数据，2020年搜狗、讯飞和百度三家输入法占据了国内市场九成的活跃用户，其中搜狗占有率最高，54%。2020年9月，腾讯全资收购了搜狗。 易观一组数据表明，中国第三方输入法的活跃用户在2019年达到7.71亿。输入法已成网民刚需。 输入法会获取哪些信息 ...... 梳理三份隐私政策，输入法软件可能收集的用户信息有11类，涉…",
+      "image": "https://lh5.googleusercontent.com/9nVxRF6BT2ff8C4B-HwtU4Kf9bluP-dGuhHtrNYVBjQ97Y6Zea_Vgxn03zmuxLS6wpEowQfLE2ZGA7s3gho_Xi7AcssZZGqw9XP_N_w_w8mWtPO7GDrLmGkIpF1wnXay5Q0wnyMnhyo=s72-c",
+      "publishedAt": "2021-04-11T14:04:00Z",
+      "sourceId": "92a77bfacd821259",
+      "sourceTitle": "编程随想的博客",
+      "link": "https://program-think.blogspot.com/2021/04/security-news.html",
+      "detailPath": "articles/4589f24fa768c26d7de33b28.json"
+    },
+    {
       "id": "76805d2932c16bdcdc2f615a",
       "title": "为什么 Linux 和 macOS 不需要碎片整理",
       "summary": "",
@@ -626,39 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/reading/between-wei-and-jin-2/",
       "detailPath": "articles/024a419e84ee2e795b4b374a.json"
-    },
-    {
-      "id": "cb261b891d615c6df38bd88c",
-      "title": "开始日更",
-      "summary": "王佩老师在白板报的公众号倡导了一个小活动，日更 100 天。 之前加入的一个读书群，每季度也组织类似活动，我比较保守，一直没有参加。一是写作时间少，二是想写的内容也不够丰沛，最重要的原因是，如今写作时不可避免会有一定的自我审查意识在里面。我时常注意到这件事，不喜欢，也没办法。觉得那还不如不写。 倒是最近读的《羊呆住了》一书，让我有些动摇，作者李盆文章造诣极高，文字像是陈酿，不知道在酒桶里泡了多少年，一闻，就舍不得喝，得小口咂摸。我读得很慢，经常读完一个段落就要想上好几天。他的文章很吸引我的地方，正是他成功地避开了自我审查，他选择在另一个赛道，不，是另一个平行宇宙里玩，那个宇宙就是「生活」。 彻底回归生活，一头扎进土里。李盆完成得很好。 他笔下的生活不是人物特稿，不是小镇奇闻，也不是社畜、丧、八卦新闻、科技创新…",
-      "image": null,
-      "publishedAt": "2021-02-22T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/02/daily-000/",
-      "detailPath": "articles/cb261b891d615c6df38bd88c.json"
-    },
-    {
-      "id": "f9bddf6180ef7aecf9e147cc",
-      "title": "在 Windows 上搭建 Hugo 博客之 Github 部署填坑记",
-      "summary": "**笔记保留仅供个人复习，请不要参考这篇笔记搭建博客。写了新的思路更清晰的 Hugo 博客搭建与部署博文 → 利用 Github Pages 与 Github Action 搭建并部署 Hugo 博客 **",
-      "image": null,
-      "publishedAt": "2021-02-21T19:37:09Z",
-      "sourceId": "ec4d8f7d2c53872d",
-      "sourceTitle": "Posts on Welcome to my little blue world ♡",
-      "link": "https://suicablog.cobaltkiss.blue/posts/deploy-hugo-as-a-github-pages-project/",
-      "detailPath": "articles/f9bddf6180ef7aecf9e147cc.json"
-    },
-    {
-      "id": "e1fa5f508d5d0bed50dfb598",
-      "title": "为nginx提供GeoIP2支持",
-      "summary": "最近在处理站点的连接优化问题，需要通过检测访问者的 IP ，来选择是否经由 CloudFlare 代理，还是通过一个优化的直连地址进行体验优化。经过一些资料的比对，最终决定使用 GeoIP2 分辨来访者 IP 归属地，并通过 nginx 设置对应的规则来跳转访问。",
-      "image": null,
-      "publishedAt": "2021-02-20T03:44:55Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/add-geoip2-support-for-nginx/",
-      "detailPath": "articles/e1fa5f508d5d0bed50dfb598.json"
     }
   ]
 }

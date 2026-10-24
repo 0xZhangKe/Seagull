@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-23T21:35:13+00:00</updated><author><name>Simon Willison</name></author><entry><title>Quick Study</title><link href="https://simonwillison.net/2026/Oct/23/quick-study-painter/" rel="alternate"/><published>2026-10-23T21:35:13+00:00</published><updated>2026-10-23T21:35:13+00:00</updated><id>https://simonwillison.net/2026/Oct/23/quick-study-painter/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-24T03:59:57+00:00</updated><author><name>Simon Willison</name></author><entry><title>battledrones v14: Compass Rose, a four player map</title><link href="https://simonwillison.net/2026/Oct/24/battledrones/" rel="alternate"/><published>2026-10-24T03:59:57+00:00</published><updated>2026-10-24T03:59:57+00:00</updated><id>https://simonwillison.net/2026/Oct/24/battledrones/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/battledrones/releases/tag/v14"&gt;battledrones v14: Compass Rose, a four player map&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;I added four player online mode to &lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/"&gt;Battledrones&lt;/a&gt; - previous maps were limited to two.&lt;/p&gt;
+&lt;p&gt;Here's the initial prompt I used: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Claude Opus 5.5 added a new map called "Compass Rose" and modified the WebSockets multiplayer network code to support up to four players for that map, joining via share links or QR codes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The new map does indeed look a bit like a rose - it uses the cold and ice biome. Also shown are purple robots battling on the map." src="https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The new teams use robots themed in purple and green, joining the existing blue and red designs. You can preview those colors in &lt;a href="https://simonw.github.io/battledrones/models.html"&gt;the updated model browser&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here's &lt;a href="https://simonw.github.io/battledrones/v14/?replay=https://gist.githubusercontent.com/simonw/faa550a002b25a78f1c88a64217786c1/raw/4ff9b03de71d757cd33eb5d1a0e388155b6c20e5/compass.json"&gt;a replay link&lt;/a&gt; to watch a four way AI battle with the "Goliath Armada" mutator turned on, where each side starts with four giant Goliath mech units.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="game-design"/><category term="projects"/><category term="claude"/></entry><entry><title>Quick Study</title><link href="https://simonwillison.net/2026/Oct/23/quick-study-painter/" rel="alternate"/><published>2026-10-23T21:35:13+00:00</published><updated>2026-10-23T21:35:13+00:00</updated><id>https://simonwillison.net/2026/Oct/23/quick-study-painter/</id><summary type="html">
     
         &lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/quick-study-painter"&gt;Quick Study&lt;/a&gt;&lt;/p&gt;
         &lt;p&gt;Prompt &lt;a href="https://claude.ai/share/71adda96-193f-4f2a-97c0-454e08066afb"&gt;to Claude Opus 5.5 High&lt;/a&gt;:&lt;/p&gt;
@@ -820,13 +837,4 @@ Interesting piece from Anthropic describing why and how they built their own cus
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tailscale"&gt;tailscale&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/codex"&gt;codex&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="projects"/><category term="python"/><category term="ai"/><category term="tailscale"/><category term="generative-ai"/><category term="llms"/><category term="codex"/></entry><entry><title>datasette-ports 0.4</title><link href="https://simonwillison.net/2026/Oct/12/datasette-ports/" rel="alternate"/><published>2026-10-12T04:57:07+00:00</published><updated>2026-10-12T04:57:07+00:00</updated><id>https://simonwillison.net/2026/Oct/12/datasette-ports/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-ports/releases/tag/0.4"&gt;datasette-ports 0.4&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to &lt;a href="https://simonwillison.net/2026/Oct/12/python-3-15/#a-sampling-profiler"&gt;attach the new Python 3.15 profiler&lt;/a&gt;.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="datasette"/></entry></feed>
+</summary><category term="projects"/><category term="python"/><category term="ai"/><category term="tailscale"/><category term="generative-ai"/><category term="llms"/><category term="codex"/></entry></feed>

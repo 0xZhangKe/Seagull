@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://noa.bearblog.dev</id>
   <title>Noa's Blog</title>
-  <updated>2026-10-24T05:42:28.062912+00:00</updated>
+  <updated>2026-10-24T23:06:58.001407+00:00</updated>
   <author>
     <name>noa</name>
   </author>
@@ -16,6 +16,96 @@
 &#13;
 這個是我的 RSS feed。\&#13;
 認真的文章整理在筆記。...</subtitle>
+  <entry>
+    <id>https://noa.bearblog.dev/python-note-b266/</id>
+    <title>寫一題 python</title>
+    <updated>2026-10-24T08:23:31.028576+00:00</updated>
+    <author>
+      <name>noa</name>
+      <email>hidden</email>
+    </author>
+    <content type="html">&lt;p&gt;在 zerojudge 上寫&lt;a href='https://zerojudge.tw/ShowProblem?problemid=b266'&gt;題目&lt;/a&gt;，手敲好快樂（我想手寫程式快變成類似針織的興趣了）。並發現 zerojudge 社群好活躍，隨時都有人在送出答案（包含凌晨三點）。&lt;/p&gt;
+&lt;h2 id=&gt;學到什麼&lt;/h2&gt;&lt;p&gt;一、執行比較快的架構：先推邏輯，最後一次改矩陣（題目要求一秒但是十二毫秒就跑完了，非常自豪……）。&lt;/p&gt;
+&lt;p&gt;二、更改布林值的語法：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;x = False
+x = not x
+print(x) # True
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;（不知道這樣寫時，本來用 1 和 -1，更改就是 &lt;code&gt;*（-1）&lt;/code&gt; ，啊隨便啦。）&lt;/p&gt;
+&lt;p&gt;三、二維列表行列座標互換的寫法：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;s = [[1,2,3],[4,5,6]]
+R = len(s)
+C = len(s[0])
+
+# sol 1
+new_s = [[0 for i in range(R)] for o in range(C)]
+for i in range(C):
+    for o in range(R):
+        new_s[i][o] = s[o][i]
+
+# sol 2：前者的簡化版
+new_s = [[s[i][o] for i in range(R)] for o in range(C)]
+
+# sol 3：用 zip()
+new_s = [list(i) for i in zip(*s)]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;小地方：如果它重複執行，&lt;code&gt;Ｒ&lt;/code&gt; 和 &lt;code&gt;Ｃ&lt;/code&gt; 會改變，須以 &lt;code&gt;len(s)&lt;/code&gt; 和 &lt;code&gt;len(s[0])&lt;/code&gt; 取代之，否則造成 index out of range。&lt;/p&gt;
+&lt;p&gt;其中 &lt;code&gt;zip()&lt;/code&gt; 回傳值是元組：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;s1 = [1,2,3]
+s2 = [4,5,6]
+s3 = zip(s1,s2)
+
+for i in s3:
+    print(i) # (1, 4)(2, 5)(3, 6)
+
+print(list(s3)) # [(1, 4),(2, 5),(3, 6)]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;也可用在字典，如：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;s1 = [&amp;quot;apple&amp;quot;,&amp;quot;banana&amp;quot;]
+s2 = [2,3]
+s3 = zip(s1,s2)
+
+print(dict(s3)) # {&amp;quot;apple&amp;quot;: 2, &amp;quot;banana&amp;quot;: 3}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;四、盡量避免在函式中使用全域變數，用到的變數都寫進參數更佳。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=-1&gt;我的答案&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;a = [int(i) for i in input().split()]
+R, C, M = a[0], a[1], a[2]
+B = []
+for i in range(R):
+    a = [int(o) for o in input().split()]
+    B.append(a)
+oper = [int(i) for i in input().split()]
+oper.reverse()
+
+flip = False # 矩陣上下翻轉
+oppo = False # 矩陣左右顛倒
+transpose = False # 行列座標互換
+for i in oper:
+    if i == 1:
+        flip = not flip
+    else:
+        transpose = not transpose # 逆時針旋轉90度 = 座標互換 + 上下翻轉
+        flip, oppo = oppo, flip # 座標互換，先前的 flip 和 oppo 也互換
+        flip = not flip
+
+if transpose:
+    newB = [[B[i][p] for i in range(R)] for p in range(C)]
+    B = newB
+if flip:
+    B.reverse()
+if oppo:
+    for i in B:
+        i.reverse()
+
+print(len(B),len(B[0]))
+for i in range(len(B)):
+    print(*B[i])
+&lt;/pre&gt;&lt;/div&gt;
+</content>
+    <link href="https://noa.bearblog.dev/python-note-b266/"/>
+    <published>2026-10-24T08:23:31.028587+00:00</published>
+  </entry>
   <entry>
     <id>https://noa.bearblog.dev/u-r-boring/</id>
     <title>你很無聊ㄟ</title>
@@ -241,19 +331,5 @@
 </content>
     <link href="https://noa.bearblog.dev/its-sunny/"/>
     <published>2026-09-04T05:10:00+00:00</published>
-  </entry>
-  <entry>
-    <id>https://noa.bearblog.dev/drift-apart/</id>
-    <title>drift apart</title>
-    <updated>2026-09-02T09:25:05.298464+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img src="https://noachen522.github.io/noasblog/drift-apart.jpg" alt="" /&gt;
-只是想說，看 &lt;a href='https://poya.school/blog/ichigo-ichie'&gt;Poya 老師的文章&lt;/a&gt;有幫助到模擬考ヘ⁠(⁠￣⁠ω⁠￣⁠ヘ⁠)&lt;/p&gt;
-</content>
-    <link href="https://noa.bearblog.dev/drift-apart/"/>
-    <published>2026-09-02T09:20:00+00:00</published>
   </entry>
 </feed>

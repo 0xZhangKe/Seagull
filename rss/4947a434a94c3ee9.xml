@@ -1,4 +1,322 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>無糧殿</title><link>https://wuliangdian.com/</link><description>我們向您提供諸種可有可無的詞彙和見解、旅行中的見聞、真假參半的人與事，以及在這個瞬息萬變的世界中走向失敗的必要工具和知識。</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sun, 18 Oct 2026 07:30:00 +0000</lastBuildDate><atom:link href="https://wuliangdian.com/index.xml" rel="self" type="application/rss+xml"/><item><title>扭了脚了</title><link>https://wuliangdian.com/posts/twisted-ankle-rainy-day/</link><guid>https://wuliangdian.com/posts/twisted-ankle-rainy-day/</guid><pubDate>Sun, 18 Oct 2026 07:30:00 +0000</pubDate><description>&lt;p&gt;雖説上一篇還在說爬山的事……
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>無糧殿</title><link>https://wuliangdian.com/</link><description>我們向您提供諸種可有可無的詞彙和見解、旅行中的見聞、真假參半的人與事，以及在這個瞬息萬變的世界中走向失敗的必要工具和知識。</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 24 Oct 2026 00:20:00 +0000</lastBuildDate><atom:link href="https://wuliangdian.com/index.xml" rel="self" type="application/rss+xml"/><item><title>谁在博客提到了你：给Hugo静态博客添加Webmention</title><link>https://wuliangdian.com/posts/add-webmention-to-blog/</link><guid>https://wuliangdian.com/posts/add-webmention-to-blog/</guid><pubDate>Sat, 24 Oct 2026 00:20:00 +0000</pubDate><description>&lt;p&gt;Webmention是&lt;a href="https://www.w3.org/TR/webmention/" target="_blank" rel="noopener"&gt;W3C制定的标准&lt;/a&gt;，
+可以让你知道哪些博客提到了你的文章。&lt;/p&gt;
+&lt;p&gt;有关如何配置，我觉得Eltrac写的简体中文的&lt;a href="https://www.geedea.pro/article/webmention/" target="_blank" rel="noopener"&gt;Webmention简明指南&lt;/a&gt;已经介绍得非常清楚。珠玉在前，本文基本是在记录我如何用尽量简单的方式 &lt;del&gt;（在博客上糊弄出了这个功能）&lt;/del&gt; 在Hugo静态博客里接收和显示这些提及。
+顺便昭告天下：本站支持Webmention了。&lt;/p&gt;
+&lt;p&gt;目前本站的Webmention区样式如下：&lt;/p&gt;
+&lt;p&gt;&lt;figure class="image-container"&gt;
+ &lt;div class="image-wrapper"&gt;&lt;picture&gt;
+ 
+ &lt;source 
+ type="image/avif" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023_hu_10967250d13d0092.avif 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023_hu_c5e17c104d9b567c.avif 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+ 
+ 
+ &lt;source 
+ type="image/webp" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023_hu_96682c28ea01c25d.webp 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023_hu_c4d8377c45ef0005.webp 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+
+ 
+ &lt;img 
+ src="https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023.jpg" 
+ alt="一个“外站提及”列表。当其他独立博客的文章里链接并讨论了你的文章时，这里会清爽地列出对方的名字、文章标题、发布日期以及来源网站，让互联网站点之间能够互相看到彼此的讨论。" 
+ width="660" 
+ height="371" 
+ loading="lazy" 
+ decoding="async"&gt;
+ &lt;/picture&gt;&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果你已经知道Webmention是什么、如何收发，可以直接跳到第5部分「&lt;a href="#display-webmentions"&gt;在博客上显示Webmention&lt;/a&gt;」。&lt;/p&gt;
+
+ &lt;h2 id="what-is-webmention" id="what-is-webmention"&gt;
+ 1 什么是Webmention
+ &lt;a class="anchor" href="#what-is-webmention" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;假设Alice发布了一篇文章，网址是&lt;code&gt;https://alice.com/aaa&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Bob读到之后觉得很不错，在自己的网站上写了一篇文章提到它，并附上了Alice文章的网址。
+Bob的文章的网址是&lt;code&gt;https://bob.com/bbb&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Bob可以向Alice的网站发送一条消息，告诉她「我在&lt;code&gt;https://bob.com/bbb&lt;/code&gt;提到了你的&lt;code&gt;https://alice.com/aaa&lt;/code&gt;」，这样Alice就知道她写的内容被人提及了。
+这条消息当然可以用邮件或聊天软件发送。
+但如果Alice的网站能接收Webmention消息，Bob也可以用Webmention发送。&lt;sup id="fnref:1"&gt;1&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;发送Webmention不需要写代码，用现成的线上服务就能做到。&lt;/strong&gt;
+例如，打开&lt;a href="https://webmention.app" target="_blank" rel="noopener"&gt;webmention.app&lt;/a&gt;，在页面下方的「Want to just try it out?」栏位输入Bob的文章网址。它会找出文章中的外部链接。点发送，Alice就能收到消息了。（它甚至不强求Bob的网站支持Webmention。具体请见&lt;a href="#send-webmention"&gt;本文第3部分&lt;/a&gt;。）&lt;/p&gt;
+&lt;!-- 如果Alice想把Bob的文章网址展示在自己的文章下面，让其他访客也看到，
+她就需要修改博客代码了。[本文第4部分](#display-webmentions)会介绍我的做法。 --&gt;
+&lt;p&gt;本站现在已经支持webmention。如果你在自己的网站上提到了这篇文章，并且附上了链接，现在可以&lt;a href="#wm-submit"&gt;跳到文章末尾的「送出Webmention」&lt;/a&gt;向我发送webmention消息。本站在下次更新时，会将你的文章链接显示在文末。&lt;/p&gt;
+
+ &lt;h2 id="why-webmention" id="why-webmention"&gt;
+ 2 为什么想要Webmention
+ &lt;a class="anchor" href="#why-webmention" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;我其实把Webmention当成博客卷（blogroll）的另一种形式。&lt;/p&gt;
+&lt;p&gt;查论文时，有些网站会提供cited by（“被以下文章所引”），非常有用。可以快速地找到有用的文章以及&lt;del&gt;臭味相投的&lt;/del&gt;研究者。
+Webmention就好像独立博客的cited by功能。&lt;/p&gt;
+&lt;p&gt;传统友情链接页面很难快速知道这些网站写什么、风格如何。
+（所以有些博客会在友链页展示朋友的最新文章，也有人会给每个订阅源写一小段介绍。）
+我会在其他人的博客留言区和Webmention区找好玩的博客。既然我们对同一篇文章感兴趣，那我也许会对你的网站感兴趣……？&lt;/p&gt;
+
+ &lt;h2 id="send-webmention" id="send-webmention"&gt;
+ 3 如何发送Webmention
+ &lt;a class="anchor" href="#send-webmention" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;Webmention只是一个技术标准，不是某个具体的软件。
+就像不同的邮箱软件可以互相收发邮件一样，符合标准的网站和工具都可以互相发送Webmention消息。
+只要对方网站有Webmention接收端点，且你的文章中正确地包含了对方文章的链接。&lt;sup id="fnref:2"&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;最简单的方式之一是使用前面提到的&lt;a href="https://webmention.app" target="_blank" rel="noopener"&gt;webmention.app&lt;/a&gt;。输入自己文章的网址，确认它识别出的站外链接正确无误，点击发送即可（如下图）。这里的「Source」是自己的文章网址，「Target」是对方文章的网址。&lt;/p&gt;
+&lt;p&gt;&lt;figure class="image-container"&gt;
+ &lt;div class="image-wrapper"&gt;&lt;picture&gt;
+ 
+ &lt;source 
+ type="image/avif" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-app-660_hu_6e2641bf478d4086.avif 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-app-660_hu_155f7827dcc0ea06.avif 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+ 
+ 
+ &lt;source 
+ type="image/webp" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-app-660_hu_b4a41c75ea97b624.webp 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-app-660_hu_5526f29be5caeae2.webp 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+
+ 
+ &lt;img 
+ src="https://wuliangdian.com/posts/add-webmention-to-blog/wm-app-660.jpg" 
+ alt="webmention.app网页界面，从上到下依次是「Source」源文章网址、「Target」目标网址以及发送按钮" 
+ width="660" 
+ height="347" 
+ loading="lazy" 
+ decoding="async"&gt;
+ &lt;/picture&gt;&lt;figcaption class="caption"&gt;
+ &lt;span class="caption-text"&gt;webmention.app网站截图&lt;/span&gt;
+ &lt;/figcaption&gt;&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果希望自己的作者名称、头像和文章内容能更准确地显示在对方网站上，可以为网页加入microformats标记。
+常见的标记包括h-entry（文章）和h-card（作者资料卡）。
+如果能读英文的话，Aaron Parecki的这篇指南《&lt;a href="https://aaronparecki.com/2018/06/30/11/your-first-webmention" target="_blank" rel="noopener"&gt;从零开始发送你的第一条Webmention&lt;/a&gt;》非常简明易懂。
+Spike《给博客添加 Webmention》的「&lt;a href="https://taxodium.ink/add-webmention-to-blog.html#582BF4C8-77F8-4E6E-B823-8C9941F41233" target="_blank" rel="noopener"&gt;作为发送方&lt;/a&gt;」部分是很好的中文参考。&lt;/p&gt;
+&lt;p&gt;我的microformats标记大致如下。
+我不想在文章页面上显示作者资料卡，所以给它加上了hidden。&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;article class=&amp;#34;h-entry&amp;#34;&amp;gt;
+ &amp;lt;h1 class=&amp;#34;p-name&amp;#34;&amp;gt;示例文章标题&amp;lt;/h1&amp;gt;
+ &amp;lt;div class=&amp;#34;e-content&amp;#34;&amp;gt;
+ &amp;lt;p&amp;gt;这是文章正文。&amp;lt;/p&amp;gt;
+ &amp;lt;/div&amp;gt;
+ &amp;lt;div class=&amp;#34;p-author h-card&amp;#34; hidden&amp;gt;
+ &amp;lt;a class=&amp;#34;p-name u-url&amp;#34; href=&amp;#34;https://alice.com/&amp;#34;&amp;gt;
+ Alice
+ &amp;lt;/a&amp;gt;
+ &amp;lt;img class=&amp;#34;u-photo&amp;#34; src=&amp;#34;https://alice.com/avatar.jpg&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt;
+ &amp;lt;/div&amp;gt;
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;h2 id="receive-webmentions" id="receive-webmentions"&gt;
+ 4 如何接收Webmention
+ &lt;a class="anchor" href="#receive-webmentions" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;就像发邮件时对方起码得有一个邮箱。要接收Webmention，网站需要有一个接收端点。
+最简单常用的是第三方服务&lt;a href="https://webmention.io" target="_blank" rel="noopener"&gt;webmention.io&lt;/a&gt;，它免费且开源，由&lt;a href="https://aaronparecki.com/" target="_blank" rel="noopener"&gt;Aaron Parecki&lt;/a&gt;提供。
+注册后可以直接在它的仪表盘查看收到的消息，也可以通过RSS订阅新消息提醒。&lt;/p&gt;
+&lt;p&gt;首先需要在博客的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;加入：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;link rel=&amp;#34;webmention&amp;#34; href=&amp;#34;https://webmention.io/我的博客网址/webmention&amp;#34;&amp;gt;
+&amp;lt;link rel=&amp;#34;me&amp;#34; href=&amp;#34;https://github.com/我的帐号&amp;#34;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第一行告诉别人「消息请寄到这里」。
+第二行用来向webmention.io证明这个网站是我的。
+也可以用其他方式证明（例如电子邮箱），登录时依提示操作即可。&lt;/p&gt;
+&lt;p&gt;把修改后的博客部署上线，然后打开&lt;a href="https://webmention.io" target="_blank" rel="noopener"&gt;webmention.io&lt;/a&gt;，輸入博客网址，登录。
+接下来webmention.io就能够替我接收Webmention消息了。&lt;/p&gt;
+
+ &lt;h3 id="webmention-form" id="webmention-form"&gt;
+ 在博客上放一个表单
+ &lt;a class="anchor" href="#webmention-form" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h3&gt;&lt;p&gt;可以在博客上放置一个入口，让访客便捷地送出webmention。&lt;/p&gt;
+&lt;p&gt;我一开始参考了Spike的实现方式，直接放上我的&lt;a href="https://webmention.io/wuliangdian.com/webmention" target="_blank" rel="noopener"&gt;Webmention Endpoint&lt;/a&gt;链接，让访客跳转到webmention.io提交。&lt;/p&gt;
+&lt;p&gt;现在则参考了Eltrac的「&lt;a href="https://www.geedea.pro/article/webmention/#%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA-webmention-%E8%A1%A8%E5%8D%95" target="_blank" rel="noopener"&gt;如何制作一个 Webmention 表单？&lt;/a&gt;」，做成了表单的形式：&lt;/p&gt;
+&lt;p&gt;&lt;figure class="image-container"&gt;
+ &lt;div class="image-wrapper"&gt;&lt;picture&gt;
+ 
+ &lt;source 
+ type="image/avif" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-form-660_hu_63f46b04f3610a4c.avif 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-form-660_hu_22291ce98effaf32.avif 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+ 
+ 
+ &lt;source 
+ type="image/webp" 
+ srcset="https://wuliangdian.com/posts/add-webmention-to-blog/wm-form-660_hu_75b373f835d930db.webp 600w, https://wuliangdian.com/posts/add-webmention-to-blog/wm-form-660_hu_ae73dac792d9ca78.webp 1200w" 
+ sizes="(max-width: 600px) 100vw, 1200px"&gt;
+
+ 
+ &lt;img 
+ src="https://wuliangdian.com/posts/add-webmention-to-blog/wm-form-660.jpg" 
+ alt="一个“送出webmention”表单。文字内容为：如果你在自己的網站上提到了這篇貼文，並附上了連結，歡迎在下方輸入你文章的網址。你的網址將在本站下次更新後展示在本頁。讓我們把互聯網織成網 :) 瞭解更多：什麽是Webmention？" 
+ width="660" 
+ height="249" 
+ loading="lazy" 
+ decoding="async"&gt;
+ &lt;/picture&gt;&lt;/div&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+ &lt;h2 id="display-webmentions" id="display-webmentions"&gt;
+ 5 在博客上显示Webmention
+ &lt;a class="anchor" href="#display-webmentions" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;显示Webmention消息的过程分成三段：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;别人发出消息：&amp;ldquo;我这篇文章链接到了你那篇。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;webmention.io替我接收和储存这些消息。&lt;/li&gt;
+&lt;li&gt;网站构建时把webmention.io的消息抓下来，渲染到页面上。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我的网站使用Hugo制作，部署在Netlify。
+我对实时渲染没有执念，Webmention链接不会实时出现，而是在网站每次构建时一起更新。（就这样以纯静态的形态出街！）
+你如果想要实时渲染，可以直接借助前人造好的轮子&lt;a href="https://github.com/PlaidWeb/webmention.js/" target="_blank" rel="noopener"&gt;webmention.js&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一步&lt;/strong&gt;，前往webmention.io的&lt;a href="https://webmention.io/settings" target="_blank" rel="noopener"&gt;设定页&lt;/a&gt;，复制API Key。&lt;/p&gt;
+&lt;p&gt;这个API Key能读取你域名下的所有消息，所以不要贴到网页里，也不要提交到GitHub，要存放在部署平台的环境变量中。本文以Netlify为例，请到Netlify后台的Site configuration，打开Environment variables，新建变量，名称填WM_TOKEN，值粘贴刚才的API Key。勾选Contains secret values，这样它不会出现在界面和构建日志里。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二步&lt;/strong&gt;，在项目根目录（和hugo.toml同一层）新建netlify.toml，写：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[build]
+ publish = &amp;#34;public&amp;#34;
+ command = &amp;#34;mkdir -p data &amp;amp;&amp;amp; (curl -sf -o data/webmentions.json \&amp;#34;https://webmention.io/api/mentions.jf2?domain=我的博客网址&amp;amp;token=$WM_TOKEN&amp;amp;per-page=1000\&amp;#34; || echo &amp;#39;{\&amp;#34;children\&amp;#34;:[]}&amp;#39; &amp;gt; data/webmentions.json) &amp;amp;&amp;amp; hugo --gc --minify&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这段指令会在网站构建的时候先建立data资料夹，再从webmention.io下载消息，最后照常运行Hugo。如果下载失败，就建立一份空数据，让网站仍可继续构建。&lt;/p&gt;
+&lt;p&gt;请将「我的博客网址」换成真实网址，
+最后的 &lt;code&gt;hugo --gc --minify&lt;/code&gt; 请换成你原本在Netlify后台设定的Hugo构建指令。&lt;/p&gt;
+&lt;p&gt;接着在&lt;code&gt;.gitignore&lt;/code&gt;，加一行：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;data/webmentions.json
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个文件每次构建都会重新生成，不需要放进版本库。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第三步&lt;/strong&gt;，在博客文章模板中加上显示Webmention消息的代码。&lt;/p&gt;
+&lt;details class="annotation"&gt;
+ &lt;summary&gt;例如&lt;/summary&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt; {{- $mentions := slice -}}
+ {{- if .Params.webmentionDemo -}}
+ {{- $mentions = (hugo.Data.webmention_sample | default dict).children | default slice -}}
+ {{- else -}}
+ {{- $all := (hugo.Data.webmentions | default dict).children | default slice -}}
+ {{- $here := strings.TrimSuffix &amp;#34;/&amp;#34; .Permalink -}}
+ {{- range $all -}}
+ {{- $target := strings.TrimSuffix &amp;#34;/&amp;#34; (index . &amp;#34;wm-target&amp;#34;) -}}
+ {{- $prop := index . &amp;#34;wm-property&amp;#34; | default &amp;#34;mention-of&amp;#34; -}}
+
+ {{- if and (eq $target $here) (in (slice &amp;#34;mention-of&amp;#34; &amp;#34;in-reply-to&amp;#34;) $prop) -}}
+ {{- $mentions = append $mentions . -}}
+ {{- end -}}
+ {{- end -}}
+ {{- end -}}
+ {{- $verbs := dict &amp;#34;mention-of&amp;#34; &amp;#34;提及了这篇文章&amp;#34; &amp;#34;in-reply-to&amp;#34; &amp;#34;回复了这篇文章&amp;#34; -}}
+ {{- with $mentions -}}
+ &amp;amp;lt;section class=&amp;#34;webmentions&amp;#34;&amp;amp;gt;
+ &amp;amp;lt;h2&amp;amp;gt;外站提及（Webmention）&amp;amp;lt;/h2&amp;amp;gt;
+ &amp;amp;lt;ul&amp;amp;gt;
+ {{- range . -}}
+ {{- $url := .url | default &amp;#34;&amp;#34; -}}
+ {{- $name := .author.name | default &amp;#34;匿名作者&amp;#34; -}}
+ {{- $title := .name | default &amp;#34;&amp;#34; -}}
+ {{- $prop := index . &amp;#34;wm-property&amp;#34; | default &amp;#34;mention-of&amp;#34; -}}
+ {{- $verb := index $verbs $prop | default &amp;#34;提及了这篇文章&amp;#34; -}}
+ {{- with .content.html -}}
+ {{- if not $title -}}
+ {{- with findRESubmatch `(?is)&amp;amp;lt;h[1-6][^&amp;amp;gt;]*class=&amp;#34;[^&amp;#34;]*\bp-name\b[^&amp;#34;]*&amp;#34;[^&amp;amp;gt;]*&amp;amp;gt;(.*?)&amp;amp;lt;/h[1-6]&amp;amp;gt;` . 1 -}}
+ {{- $title = index (index . 0) 1 | plainify | htmlUnescape | strings.TrimSpace -}}
+ {{- end -}}
+ {{- end -}}
+ {{- end -}}
+ &amp;amp;lt;li&amp;amp;gt;
+ &amp;amp;lt;strong&amp;amp;gt;{{ $name }}&amp;amp;lt;/strong&amp;amp;gt;
+ {{- if $title }}
+ 在《&amp;amp;lt;a href=&amp;#34;{{ $url | safeURL }}&amp;#34; rel=&amp;#34;nofollow ugc noopener&amp;#34;&amp;amp;gt;{{ $title | htmlEscape | truncate 60 }}&amp;amp;lt;/a&amp;amp;gt;》中{{ $verb }}。
+ {{- else }}
+ 在 &amp;amp;lt;a href=&amp;#34;{{ $url | safeURL }}&amp;#34; rel=&amp;#34;nofollow ugc noopener&amp;#34;&amp;amp;gt;{{ $url | htmlEscape | truncate 45 }}&amp;amp;lt;/a&amp;amp;gt; {{ $verb }}。
+ {{- end }}
+ &amp;amp;lt;/li&amp;amp;gt;
+ {{- end -}}
+ &amp;amp;lt;/ul&amp;amp;gt;
+ &amp;amp;lt;/section&amp;amp;gt;
+ {{- end -}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/details&gt;
+&lt;p&gt;它会读取指向当前文章的webmention消息，逐条显示作者名和链接，没有作者名时显示链接本身。
+样式可以按自己的博客风格再调整。&lt;/p&gt;
+
+ &lt;h3 id="没有人提及时怎么测试样式" id="没有人提及时怎么测试样式"&gt;
+ 没有人提及时，怎么测试样式？
+ &lt;a class="anchor" href="#%e6%b2%a1%e6%9c%89%e4%ba%ba%e6%8f%90%e5%8f%8a%e6%97%b6%e6%80%8e%e4%b9%88%e6%b5%8b%e8%af%95%e6%a0%b7%e5%bc%8f" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h3&gt;&lt;p&gt;刚开始肯定没有任何消息，可以用假数据检查排版。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;新增 &lt;code&gt;data/webmention_sample.json&lt;/code&gt;：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{
+ &amp;#34;children&amp;#34;: [
+ {
+ &amp;#34;url&amp;#34;: &amp;#34;https://alice.com/blog/aaa&amp;#34;,
+ &amp;#34;name&amp;#34;: &amp;#34;旅行日记&amp;#34;,
+ &amp;#34;author&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Alice&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://alice.com&amp;#34; },
+ &amp;#34;published&amp;#34;: &amp;#34;2026-10-01T09:00:00&amp;#34;,
+ &amp;#34;wm-received&amp;#34;: &amp;#34;2026-10-02T08:00:00Z&amp;#34;,
+ &amp;#34;wm-property&amp;#34;: &amp;#34;mention-of&amp;#34;
+ },
+ {
+ &amp;#34;url&amp;#34;: &amp;#34;https://example.net/post/1&amp;#34;,
+ &amp;#34;author&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;&amp;#34; },
+ &amp;#34;wm-received&amp;#34;: &amp;#34;2026-10-06T08:00:00Z&amp;#34;,
+ &amp;#34;wm-property&amp;#34;: &amp;#34;like-of&amp;#34;
+ }
+ ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start="2"&gt;
+&lt;li&gt;新增测试页 &lt;code&gt;content/wm-demo.md&lt;/code&gt;：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;---
+title: &amp;#34;Webmention样式测试&amp;#34;
+webmentionDemo: true
+sitemap:
+ disable: true
+---
+测试页，确认后删除。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;预览时，打开 &lt;code&gt;/wm-demo/&lt;/code&gt; 就能看到效果。
+确认没问题后，删掉这两个档案，不要合并进主分支。&lt;/p&gt;
+
+ &lt;h3 id="注意事项" id="注意事项"&gt;
+ 注意事项
+ &lt;a class="anchor" href="#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;预览的时候看不到Webmention消息是正常的，因为预览站的网址和正式网址不同，匹配不上。&lt;/li&gt;
+&lt;li&gt;webmention.io是第三方免费服务，建议每隔一段时间导出数据备份。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;做完以上步驟，Alice的博客就有了一个不需要JavaScript、不追踪读者、每次构建才更新的Webmention评论区。&lt;/p&gt;
+
+ &lt;h2 id="6-暂时不打算做的事" id="6-暂时不打算做的事"&gt;
+ 6 暂时不打算做的事
+ &lt;a class="anchor" href="#6-%e6%9a%82%e6%97%b6%e4%b8%8d%e6%89%93%e7%ae%97%e5%81%9a%e7%9a%84%e4%ba%8b" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;不打算把Fediverse等社交媒体上的互动桥接成标准的webmention、同步到博客。
+之前用Bearblog建站的时候短暂尝试过把Fediverse上的公开回复（=发布时可见范围被设定为公开可见的回复）同步到博客。后来还是删掉了这个功能。我有和Terence Eden相似的&lt;a href="https://shkspr.mobi/blog/2022/12/the-ethics-of-syndicating-comments-using-webmentions/" target="_blank" rel="noopener"&gt;顾虑&lt;/a&gt;。
+毕竟公开留言不代表留言者同意自己的头像和文字出现在别人的博客界面上。
+另外，看起来有人停用Webmention，也是因为把社交媒体互动桥接过来后，博客上的webmention通知变得多且嘈杂，反而让自己很受干扰。&lt;sup id="fnref:3"&gt;3&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;我也不打算&lt;strong&gt;自动&lt;/strong&gt;发送Webmention，暂时会像处理邮件一样手动处理。
+自动化当然更方便，但我对自己写Bug的水平很有信心，做成自动程序一定会不小心打扰到人。&lt;/p&gt;
+
+ &lt;h2 id="resources" id="resources"&gt;
+ 7 有帮助的资源
+ &lt;a class="anchor" href="#resources" aria-label="Link to section"&gt;#&lt;/a&gt;
+ &lt;/h2&gt;&lt;p&gt;中文：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eltrac (2026). &lt;em&gt;&lt;a href="https://www.geedea.pro/article/webmention/" target="_blank" rel="noopener"&gt;Webmention 简明指南&lt;/a&gt;&lt;/em&gt;. 極客死亡計劃.&lt;/li&gt;
+&lt;li&gt;Spike Leung (2025). &lt;em&gt;&lt;a href="https://taxodium.ink/add-webmention-to-blog.html" target="_blank" rel="noopener"&gt;给博客添加 Webmention&lt;/a&gt;&lt;/em&gt;. Taxodium.&lt;/li&gt;
+&lt;li&gt;Cytrogen (2025). &lt;em&gt;&lt;a href="https://blog.cytrogen.icu/posts/1de.html" target="_blank" rel="noopener"&gt;在 Hexo 项目中添加 Webmention&lt;/a&gt;&lt;/em&gt;. Cytrogen 的个人博客.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;英文：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IndieWeb. &lt;em&gt;&lt;a href="https://indieweb.org/Webmention-faq#Do_webmentions_work_only_when_both_sites_use_webmentions?" target="_blank" rel="noopener"&gt;Webmention-faq&lt;/a&gt;&lt;/em&gt;（常见问题）
+→ 基本囊括了所有可能产生的疑问。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://webmention.rocks/" target="_blank" rel="noopener"&gt;Webmention Rocks&lt;/a&gt;
+→ 可用于测试Webmention。&lt;/li&gt;
+&lt;li&gt;Aaron Parecki (2018). &lt;em&gt;&lt;a href="https://aaronparecki.com/2018/06/30/11/your-first-webmention" target="_blank" rel="noopener"&gt;Sending your First Webmention from Scratch&lt;/a&gt;&lt;/em&gt;（从零开始发送你的第一条Webmention）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;这个例子totally洗稿&lt;a href="https://www.geedea.pro/article/webmention/#%E4%BB%80%E4%B9%88%E6%98%AF-webmention" target="_blank" rel="noopener"&gt;Eltrac&lt;/a&gt;，但它真的简明易懂，我一定要放。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;ref. &lt;em&gt;&lt;a href="https://indieweb.org/Webmention-faq#Do_webmentions_work_only_when_both_sites_use_webmentions?" target="_blank" rel="noopener"&gt;Do webmentions work only when both sites use webmentions?&lt;/a&gt;&lt;/em&gt;（只有双方网站都支援 Webmention 才能使用吗？）, IndieWeb，2026年10月11日访问.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;ref. Groeneveld, Wouter（2023年5月8日）. &lt;a href="https://brainbaking.com/post/2023/05/why-i-retired-my-webmention-server/" target="_blank" rel="noopener"&gt;&lt;em&gt;Why I Retired My Webmention Server&lt;/em&gt;&lt;/a&gt;（我为什么停用了自己的Webmention服务器），2026年10月20日访问.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;p style="text-align:right;"&gt;&lt;a href="https://wuliangdian.com/posts/add-webmention-to-blog/"&gt;阅读原文&lt;/a&gt;&lt;/p&gt;</description></item><item><title>扭了脚了</title><link>https://wuliangdian.com/posts/twisted-ankle-rainy-day/</link><guid>https://wuliangdian.com/posts/twisted-ankle-rainy-day/</guid><pubDate>Sun, 18 Oct 2026 07:30:00 +0000</pubDate><description>&lt;p&gt;雖説上一篇還在說爬山的事……
 但是人生無常，大腸包小腸。我崴脚了。&lt;/p&gt;
 &lt;p&gt;事情是這樣。從早上開始就在下大雨。
 我整個上午在擔心趕不上去市内的擺渡車。&lt;/p&gt;
@@ -189,16 +507,16 @@
 &lt;p&gt;ref. &lt;em&gt;&lt;a href="https://gpm.nasa.gov/resources/faq/how-big-can-raindrop-get#:~:text=Collision%20among%20drops%20and%20surface%20instabilities%20are%20generally%20thought%20to%20impose%20this%206%2Dmm%20size%20limit" target="_blank" rel="noopener"&gt;How big can a raindrop get?&lt;/a&gt;&lt;/em&gt;（雨滴能有多大？）, NASA Global Precipitation Measurement Mission. 2026年10月17日訪問.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;參見 公安部，2011年1月24日，公安部关于印发《公安机关涉案枪支弹药性能鉴定工作规定》的通知（公通字[2010]67号），公安部网站，https://www.mps.gov.cn:8090/n6557558/c3619064/content.html.&lt;/p&gt;
+&lt;p&gt;參見 公安部 (2011年1月24日)，公安部关于印发《公安机关涉案枪支弹药性能鉴定工作规定》的通知（公通字[2010]67号），公安部网站，https://www.mps.gov.cn:8090/n6557558/c3619064/content.html.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;ref. NASA Goddard. 2013. &lt;em&gt;NASA | Anatomy of a Raindrop&lt;/em&gt;（解剖雨滴）. &lt;a href="https://www.youtube.com/watch?v=46otS0Wjz-E&amp;amp;t=81" target="_blank" rel="noopener"&gt;https://www.youtube.com/watch?v=46otS0Wjz-E&amp;t=81&lt;/a&gt;. Youtube，2026年10月17日訪問.&lt;/p&gt;
+&lt;p&gt;ref. NASA Goddard (2013). &lt;em&gt;NASA | Anatomy of a Raindrop&lt;/em&gt;（解剖雨滴）. &lt;a href="https://www.youtube.com/watch?v=46otS0Wjz-E&amp;amp;t=81" target="_blank" rel="noopener"&gt;https://www.youtube.com/watch?v=46otS0Wjz-E&amp;t=81&lt;/a&gt;. Youtube，2026年10月17日訪問.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:4"&gt;
-&lt;p&gt;ref. Villermaux, E. 2007. &lt;a href="https://www.researchgate.net/publication/234151181_Fragmentation" target="_blank" rel="noopener"&gt;&lt;em&gt;Fragmentation&lt;/em&gt;&lt;/a&gt;. Annual Review of Fluid Mechanics 39(1): 419–46. doi:10.1146/annurev.fluid.39.050905.110214.&lt;/p&gt;
+&lt;p&gt;ref. Villermaux, E (2007). &lt;a href="https://www.researchgate.net/publication/234151181_Fragmentation" target="_blank" rel="noopener"&gt;&lt;em&gt;Fragmentation&lt;/em&gt;&lt;/a&gt;. Annual Review of Fluid Mechanics 39(1): 419–46. doi:10.1146/annurev.fluid.39.050905.110214.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:5"&gt;
-&lt;p&gt;ref. Dickerson, Andrew K., Peter G. Shankles, Nihar M. Madhavan, and David L. Hu. 2012. &lt;a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3382494/pdf/pnas.1205446109.pdf" target="_blank" rel="noopener"&gt;&lt;em&gt;Mosquitoes Survive Raindrop Collisions by Virtue of Their Low Mass&lt;/em&gt;&lt;/a&gt; (蚊子憑藉其微小的質量在雨滴撞擊中倖存). Proceedings of the National Academy of Sciences of the United States of America 109(25): 9822–27. doi:10.1073/pnas.1205446109.&lt;/p&gt;
+&lt;p&gt;ref. Dickerson, Andrew K., Peter G. Shankles, Nihar M. Madhavan, and David L. Hu (2012). &lt;a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3382494/pdf/pnas.1205446109.pdf" target="_blank" rel="noopener"&gt;&lt;em&gt;Mosquitoes Survive Raindrop Collisions by Virtue of Their Low Mass&lt;/em&gt;&lt;/a&gt; (蚊子憑藉其微小的質量在雨滴撞擊中倖存). Proceedings of the National Academy of Sciences of the United States of America 109(25): 9822–27. doi:10.1073/pnas.1205446109.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -1284,9 +1602,9 @@ RSS閱讀器無法直接解析相對路徑，所以看不到圖片。&lt;/p&gt;
 &lt;li&gt;北京回龙观医院&lt;/li&gt;
 &lt;li&gt;西安交通大学第一附属医院&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p class="warning"&gt;
+&lt;!-- &lt;p class="warning"&gt;
 ＊免责声明：本文仅供信息参考与经验分享，不构成任何形式的医疗诊断或治疗建议。读者如遇到身心健康问题，请务必寻求专业医疗机构或持有合法资质的专业人士帮助。对于因使用、应用或解释本文所述材料而直接或间接造成的任何责任、损失或伤害，作者不对任何个人或实体承担任何责任。
-&lt;/p&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;/p&gt; --&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
@@ -1757,9 +2075,9 @@ RSS閱讀器無法直接解析相對路徑，所以看不到圖片。&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p class="warning"&gt;
+&lt;!-- &lt;p class="warning"&gt;
 ＊免责声明：本文仅供信息参考与经验分享，不构成任何形式的医疗诊断或治疗建议。读者如遇到身心健康问题，请务必寻求专业医疗机构或持有合法资质的专业人士帮助。对于因使用、应用或解释本文所述材料而直接或间接造成的任何责任、损失或伤害，作者不对任何个人或实体承担任何责任。
-&lt;/p&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;/p&gt; --&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;

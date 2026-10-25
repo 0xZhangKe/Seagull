@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "2a0be9215a92b20258570663",
+      "title": "java注解",
+      "summary": "从java 5.0开始，为我们提供注解功能，通过注解可以限制代码的重载，过时，以及实现一些其他功能，这里，就来分析一下java的注解。 java 元注解 首先来看java元注解，分别是： @Target @Retention @Documented @Inherited 这些注解和他们所修饰的类在java.lang.annotation包中，代码都很简单，可以去查看一下。 @Target 描述注解的使用范围，取值： ElementType.CONSTRUCTOR:描述构造器 ElementType.FIELD:描述成员变量 ElementType.VARIABLE: 描述局部变量 ElementType.METHOD: 描述方法 ElementType.PACKAGE: 描述包 ElementType.PAR…",
+      "image": null,
+      "publishedAt": "2015-03-05T16:19:19Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-03-06-java-annotation/?utm_source=rss",
+      "detailPath": "articles/2a0be9215a92b20258570663.json"
+    },
+    {
+      "id": "21b136851412dc3b78224b8d",
+      "title": "玩木工【十四】：铁刨换手把",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-03-01T18:54:00Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw014/",
+      "detailPath": "articles/21b136851412dc3b78224b8d.json"
+    },
+    {
+      "id": "5daf1ac2015423dabd8498b7",
+      "title": "玩木工【十三】：新入的老工具",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-02-25T06:12:02Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw013/",
+      "detailPath": "articles/5daf1ac2015423dabd8498b7.json"
+    },
+    {
+      "id": "e7738c6a14395655b1f0afe2",
+      "title": "javascript中的数据类型",
+      "summary": "学一门编程语言，无非两方面：一是语法，二是数据类型。类C语言的语法不外乎if、while、for、函数、算术运算等，面向对象的语言再加上object。 语法只是语言设计者预先做的一套规则，不同语言语法不尽相同，但都有一些共通点，对于熟悉一两门编程语言的人，学其他的编程语言时，语法往往不是问题（当然，如果你一直学的是类C语言，那么首次接触lisp时肯定也要花些时间），学习的重点往往是数据类型及其相关操作上，不是有句老话：“数据结构＋算法＝程序”！其次，有些语言的语法本身就存在设计问题（javascript更甚），我们没必要深究这些点，当然，如果你自诩geek，可以把玩把玩。",
+      "image": null,
+      "publishedAt": "2015-02-24T21:09:45Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/02/24/javascript-datatype/",
+      "detailPath": "articles/e7738c6a14395655b1f0afe2.json"
+    },
+    {
       "id": "8fc39c32887d9dcffddeb721",
       "title": "保證用到壞",
       "summary": "這是什麼保證？ @ 鹿港老街",
@@ -615,50 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2014/05/31/android-tips-round-up-2/",
       "detailPath": "articles/136015869d8d852d052a708d.json"
-    },
-    {
-      "id": "4d72a6022a8b8cd3248cba9c",
-      "title": "粒粒皆辛苦",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/lili-79a71ab73a224c3df228a6ecce46a60b.jpg",
-      "publishedAt": "2014-05-29T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/lili",
-      "detailPath": "articles/4d72a6022a8b8cd3248cba9c.json"
-    },
-    {
-      "id": "1b32ba7adcc0f95dc0a4aba5",
-      "title": "Android 小技巧 - 1",
-      "summary": "本文是一篇译文,这篇是这个系列的第一篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第一篇里挑出来的都是 SDK 里早就存在但容易被忽略的小工具：批量启动 Activity 的 startActivities 、统一手势识别阈值的 ViewConfiguration 、写 Adapter 几乎一定用得到的 LayoutInflater.from ，还有 Space 、 ContextThemeWrapper 、 ArgbEvaluator 这种很少被介绍但用上…",
-      "image": null,
-      "publishedAt": "2014-05-28T15:47:43Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/05/28/android-tips-round-up-1/",
-      "detailPath": "articles/1b32ba7adcc0f95dc0a4aba5.json"
-    },
-    {
-      "id": "770c45def885e5b4bf48edc7",
-      "title": "搜索引擎概貌",
-      "summary": "1. 前言 以前参加齐鲁软件大师时用过lucene，但是仅仅只是停留在API调用层面上，这次借着看《lucene in action》第二版的机会把与lucene和搜索相关的知识系统整理一遍。以下内容来自lucene in action的翻译加上我自己的理解，如有疑问或错误，请指出，谢谢。",
-      "image": null,
-      "publishedAt": "2014-05-22T07:28:26Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/05/22/search-engine-overview/",
-      "detailPath": "articles/770c45def885e5b4bf48edc7.json"
-    },
-    {
-      "id": "30480f7c1817eb5ac269c99d",
-      "title": "深入Java世界",
-      "summary": "俗话说的好：不经一事，不长一智。",
-      "image": null,
-      "publishedAt": "2014-05-19T00:18:39Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/05/19/go-into-java-world/",
-      "detailPath": "articles/30480f7c1817eb5ac269c99d.json"
     }
   ]
 }

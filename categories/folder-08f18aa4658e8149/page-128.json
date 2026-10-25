@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "f8b440c3b022e497d2a17209",
+      "title": "lab10",
+      "summary": "No PIE，说明可以直接用 IDA 中看到的地址，比如最后要执行的 magic 函数（// starts at 8048986 ） 。 可以看到 add_note 使用了 malloc，del_note 只用了 free 但没有给指针赋值 NULL，所以可以在 free 后使用。 结构体 note 有两个指针，一个指向打印 note 的函数（正常流程是 print_note_content ） ，一个指向 note 记录的 content。在 print_note 中会调用打印 note 的函数。 所以应该输入 note content 时用 magic 覆盖掉原来 printnote 指针指向的 print_note_content，利用没有置空的 printnote 在 print_note 中执行 m…",
+      "image": null,
+      "publishedAt": "2019-03-20T16:35:10Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/lab10/",
+      "detailPath": "articles/f8b440c3b022e497d2a17209.json"
+    },
+    {
+      "id": "935e4a28bfc29fe5f2cddfb3",
+      "title": "在冷热之间",
+      "summary": "“冷”和“热”不仅被用来形容人对外界温度的生理感受，夏天热、冬天冷，多喝热水、摆脱冷气。还被用来形容人对外部环境的心理感受，冷漠热淡、热情热心，鲁迅用《热风》(1925)收录杂文，相反，鲍德里亚用《冷记忆》(1987)集纳微博般的灵感碎片。在人文社科的研究中，“冷”和“热”还被用来形容社会、记忆和媒介，正如词义上的差异，它们带来某种对立，有时是二元的、线性的，有时是彼此转化的。 冷社会 - 热社会 人类学家列维-斯特劳斯在《野性的思维》(1962)中，以“历史观”为标准，将社会分为“冷的”和“热的”。冷社会企图消除历史因素对其平衡和连续性的影响，热社会则坚定地使历史过程内在化，并使其成为本身发展的推动力。 这两种社会对应着不同的思维方式，冷社会依靠一种感性的、具体的、整体的思维来理解世界，列维-斯特劳斯称之为…",
+      "image": null,
+      "publishedAt": "2019-03-16T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2019/03/17/between-cold-and-hot",
+      "detailPath": "articles/935e4a28bfc29fe5f2cddfb3.json"
+    },
+    {
+      "id": "e19f757cbfdede761f341902",
+      "title": "也说“央视认罪”",
+      "summary": "“上央视”可看做是官方媒体代理司法活动行为的统称。 鉴于办案机关和热心观众的双重刚需，有网友建议央视开设“认罪频道”。… Continue reading 也说“央视认罪” →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2019/03/e99988e6b0b8e6b4b250e4b887.jpg",
+      "publishedAt": "2019-03-16T13:24:54Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2019/03/16/%e4%b9%9f%e8%af%b4%e5%a4%ae%e8%a7%86%e8%ae%a4%e7%bd%aa/",
+      "detailPath": "articles/e19f757cbfdede761f341902.json"
+    },
+    {
+      "id": "0d3cbe4d875b7f2c045f0814",
+      "title": "多语种与信息量",
+      "summary": "iOS 原生辞典本身和系统整合得很好，随手就能查，我使用频繁。但是辞库是固定的几个，这就引出了问题。以上截图是一个典型例子，我遇到 autonomy 这个词，但是不是很确定意思。光看中英字典，不管简繁，突出的是一个自治。但在",
+      "image": "https://i.loli.net/2019/03/10/5c8407ef1eddc.jpg",
+      "publishedAt": "2019-03-09T21:36:02Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2019/03/09/langandinfo/",
+      "detailPath": "articles/0d3cbe4d875b7f2c045f0814.json"
+    },
+    {
       "id": "08434e3db2891b193340d9d8",
       "title": "星巴克观察",
       "summary": "曾经间隔年在星巴克「混」过大半年，基本上就过去坐一个下午，一来二去和店员都混熟了，到后来甚至团建活动都会叫上我。店长也愿意和我聊天，我们常常并排坐。这样一来我就耳濡目染了星巴克门店的运行模式。我注意到两个方面，一个是新人的培",
@@ -615,50 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2018/09/13/android-memory/",
       "detailPath": "articles/26d4770956b648024a5c2dc9.json"
-    },
-    {
-      "id": "463fcd1dbf0efab28d7301ae",
-      "title": "在旧金山总领馆换发护照",
-      "summary": "转眼一晃，十年就要过去了，我的护照也即将到期。考虑到国际旅行通常要求护照至少还有六个月的有效期，看来是时候着手换发护照了。于是，我请了一天假，赶往旧金山总领馆。 （注：本文记录的是2018年的办理经历。预约方式、所需材料、费用和交通信息可能已经发生变化。） 换发条件 # 首先要确认自己是否符合换发条件。根据官方规定，需满足以下情形之一： 护照过期的； 护照有效期不足一年的； 护照有效期剩余一年以上，但确因办理当地居留、签证延期、工作许可或有其他正当理由需要提前换发护照的； 护照签证页即将用完的； 容貌变化较大的。 预约 # 自2017年起，旧金山总领馆实行预约制，建议大家都提前预约。虽然预约不能免去现场排队，但预约过程本身也是准备材料的一环，可以顺便填写申请表。 我于8月19日晚注册，预约到了9月12日中午的…",
-      "image": "https://fourhappylions.com/posts/passport-renewal-in-sf/stamp.png",
-      "publishedAt": "2018-09-12T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/passport-renewal-in-sf/",
-      "detailPath": "articles/463fcd1dbf0efab28d7301ae.json"
-    },
-    {
-      "id": "e31088d13e48eebbf1b02f9c",
-      "title": "从“看门狗”小议中西语言文化差异",
-      "summary": "“英译中或者中译英，毁于听天由命和漫不经心。”… Continue reading 从“看门狗”小议中西语言文化差异 →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/09/e78bace8a792e585bd.jpg",
-      "publishedAt": "2018-09-04T08:54:37Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2018/09/04/%e7%9c%8b%e9%97%a8%e7%8b%97/",
-      "detailPath": "articles/e31088d13e48eebbf1b02f9c.json"
-    },
-    {
-      "id": "a09fa36b311e49fffe3cac7d",
-      "title": "从“游戏严管”、“网游限量”谈起",
-      "summary": "在这个无论做什么都要先通过考试的社会，却有一门对社会发展影响极其深远的职业是不需要任何资格认证的，这怎么能不令人毛骨悚然呢？",
-      "image": null,
-      "publishedAt": "2018-09-04T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-09-04",
-      "detailPath": "articles/a09fa36b311e49fffe3cac7d.json"
-    },
-    {
-      "id": "cf1c662f1691917d0bd83fc0",
-      "title": "从“游戏严管”、“网游限量”谈起",
-      "summary": "在这个无论做什么都要先通过考试的社会，却有一门对社会发展影响极其深远的职业是不需要任何资格认证的，这怎么能不令人毛骨悚然呢？",
-      "image": null,
-      "publishedAt": "2018-09-04T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-09-04",
-      "detailPath": "articles/cf1c662f1691917d0bd83fc0.json"
     }
   ]
 }

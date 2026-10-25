@@ -1,11 +1,33 @@
 {
   "items": [
     {
+      "id": "eae8ac206242b7b48ca739c9",
+      "title": "加入DN42网络",
+      "summary": "十月份的产出之一是加入了 DN42 网络。我的ASN是4242421144。网络是纯 IPv6 的，地址 段为 fd7a:7a2e:6163::/48 欢迎到 dn1144 与我 peer。本文跟大家分享 加入 DN42 网络的来龙去脉。",
+      "image": null,
+      "publishedAt": "2026-10-25T13:19:46Z",
+      "sourceId": "34509afbbca01958",
+      "sourceTitle": "涛叔",
+      "link": "https://tao.zz.ac/dn42/1144.html",
+      "detailPath": "articles/eae8ac206242b7b48ca739c9.json"
+    },
+    {
+      "id": "69ce40aa9b574d75961893f0",
+      "title": "首次业余无线电通联留念",
+      "summary": "本月20号拿到呼号之后，我便尝试与外界通联。但因为 A 证只能操作视距传播的 UV 段，所以需要借助中继台才能触达更多的友台。我在高密，同青岛和潍坊的中继都很远。 折腾了半天居然一次通联也没成功。期间发现泉盛UV-K6外观有瑕疵，于是申请换货。结果到 25号才收到新电台。下午尝试通联黄岛中继，没想到一下子成功了。当手台传来友台的呼叫 时，我的心砰砰乱跳。真是好多年没有这种感觉了。",
+      "image": null,
+      "publishedAt": "2026-10-25T12:30:22Z",
+      "sourceId": "34509afbbca01958",
+      "sourceTitle": "涛叔",
+      "link": "https://tao.zz.ac/ham/cq-first.html",
+      "detailPath": "articles/69ce40aa9b574d75961893f0.json"
+    },
+    {
       "id": "9ba4fc8dce54a31ca48ac1c1",
       "title": "Hello, BA4LNA!",
       "summary": "今天终于拿到了我的业余无线电呼号BA4LNA。很早就想玩业余无线电，但迟迟没有采取 行动。今年清闲了大半年，业余无线电考试拖到了10月17日的临沂场。中间还发生了镜像人 插曲。不过最终山东工信厅还是比较给力，上午申请，下午就批准并分配呼号🥂从考试到下 号只用了四天。我葱省的效率还可以。",
       "image": null,
-      "publishedAt": "2026-10-21T04:18:29Z",
+      "publishedAt": "2026-10-25T09:24:21Z",
       "sourceId": "34509afbbca01958",
       "sourceTitle": "涛叔",
       "link": "https://tao.zz.ac/ham/BA4LNA.html",
@@ -56,17 +78,6 @@
       "detailPath": "articles/badf92bda741d86f190e6d18.json"
     },
     {
-      "id": "0d6d26d51475ed0e1b632905",
-      "title": "DMIT 主机自定义 IPv6 地址",
-      "summary": "DMIT 是少数提供中国大陆优化的 IPv6 网络的服务商，这是我选它家的一个很重要的因素。 而且 DMIT 默认为每台 VPS 分配一整段 /64 IPv6 地址。Linux 内核又会通过 SLAAC 自动 生成一个类似2001:db8:1:2:b4c2:e9a5:f123:c842这样的地址，太长了，看着眼 花。本文分享如何给主机指定靓号 IPv6 地址🤩",
-      "image": null,
-      "publishedAt": "2026-09-08T09:14:44Z",
-      "sourceId": "34509afbbca01958",
-      "sourceTitle": "涛叔",
-      "link": "https://tao.zz.ac/unix/dmit-ipv6.html",
-      "detailPath": "articles/0d6d26d51475ed0e1b632905.json"
-    },
-    {
       "id": "a71a6bcd3fe81e9a4ac96f95",
       "title": "基于 Nginx + GeoLite2 搭建简易 IP 查询工具",
       "summary": "家宽通常只有动态公网 IP 地址。为了能访问家庭内部网络，我们需要通过 DDNS 技术 将变化的公网 IP 地址自动映射到某个固定的域名上。如果 DDNS 工具运行在边缘路由器上， 它可以直接获得公网 IP 地址；如果 DDNS 工具是运行在局域网内的一台主机上，获取当前 的出口公网 IP 就会麻烦一些。最简单的办法就是通过 curl 访问类似 ip.network 这类 可以返回调用方公网 IP 地址的服务。我一直用 ip.network 确认自己的公网 IP。但是今 天收到告警邮件，发现我被 ip.network 给封锁了，可能是嫌我每五分钟调一次太多了😂 所以我赶紧基于 Nginx 和 MaxMind 提供的免费 IP 地址库搭了一套简易的 IP 查询工具。 今天把方案分享给大家。",
@@ -87,17 +98,6 @@
       "sourceTitle": "涛叔",
       "link": "https://tao.zz.ac/zz/ddns.html",
       "detailPath": "articles/b03293203ae4ea087c01be75.json"
-    },
-    {
-      "id": "85bfe1e0cafa22b485a72bc6",
-      "title": "另一种轻量的 Linux VPS 共享方案",
-      "summary": "去年我介绍过一种 Linux VPS 共享方案，核心思路是为每个用户创建非特权账号并且 创建独立的网络名称空间，然后给每个用户单独分配 IPv6 地址，从而构成纯 IPv6 的试验 环境。经过一年多的实践，我发现还有一种更简单也更好玩的思路，今天分享给大家。",
-      "image": null,
-      "publishedAt": "2026-07-21T23:59:56Z",
-      "sourceId": "34509afbbca01958",
-      "sourceTitle": "涛叔",
-      "link": "https://tao.zz.ac/unix/multi-tenant-linux-v2.html",
-      "detailPath": "articles/85bfe1e0cafa22b485a72bc6.json"
     }
   ]
 }

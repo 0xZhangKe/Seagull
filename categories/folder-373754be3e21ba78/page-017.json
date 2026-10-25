@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "28048bb2c93e66bf8b313feb",
+      "title": "Deprecating idling resource libraries",
+      "summary": "When Espresso was made public a decade ago, one of its banner features was the \"idling resource\" concept. This monitored the main thread and any background thread pools to prevent your test from progressing until the app became idle. Waiting until idle generally increased the stability of tests since at that point the UI should be stable. We released RxIdle…",
+      "image": null,
+      "publishedAt": "2025-02-19T00:00:00Z",
+      "sourceId": "a33fc95b48c6e3ea",
+      "sourceTitle": "Jake Wharton",
+      "link": "https://jakewharton.com/deprecating-idling-resource-libraries/",
+      "detailPath": "articles/28048bb2c93e66bf8b313feb.json"
+    },
+    {
       "id": "68b2f26b48a050e295dc8155",
       "title": "When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines",
       "summary": "Often when designing systems, we aim for perfection in things like consistency of data, availability, latency, and more. The hardest part of system design is that it’s difficult (if not impossible) to design systems that have perfect consistency, perfect availability, incredibly low latency, and incredibly high throughput, all at the same time. Instead, whe…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Ersei 'n Stuff",
       "link": "https://ersei.net/en/blog/free-time",
       "detailPath": "articles/9ebdd7c610a178408ae4f13d.json"
-    },
-    {
-      "id": "39f412711707a52753cb23ef",
-      "title": "More Server Updates",
-      "summary": "Oh boy, do I have updates for y'all. A few months ago, just a scant week and a half before winter break (and a few days before finals), my SSD died. This continues a worrying trend in which I purchase hardware only for it to die fairly quickly. In this case, my year-old SSD died, well within the warranty. The RMA process was a pain, and they wanted the foll…",
-      "image": null,
-      "publishedAt": "2024-12-27T07:19:04Z",
-      "sourceId": "3bdb78ed4280c0bc",
-      "sourceTitle": "Ersei 'n Stuff",
-      "link": "https://ersei.net/en/blog/updates-2023-01",
-      "detailPath": "articles/39f412711707a52753cb23ef.json"
     }
   ]
 }

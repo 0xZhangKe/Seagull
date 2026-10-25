@@ -1,6 +1,160 @@
 {
   "items": [
     {
+      "id": "b5d446bb993ef3c968f71334",
+      "title": "中秋限定貨幣",
+      "summary": "中秋節到了，我個人是沒有烤肉，畢竟做一堆中秋晚會活動，已經夠嗆了，實在沒興趣再自己燻自己。 除了烤肉，不知道是誰規定一定要送禮盒的，前幾天才分享我收到了 竹塹餅 ，後來發現有效期限只有兩天，於是那兩天我「只」吃了竹塹餅，差點原地罹患糖尿病。 後來又收到了兩份禮盒，是蛋黃酥之類的，我吃了一盒，明顯感覺比竹塹餅更健康一點（也沒健康到哪裡去好嗎xD）！ 王師傅 至於另外一盒則送我樓上鄰居，因爲再吃我應該要去醫院報道了。結果，她馬上進屋拿一盒巧克力蛋卷回禮給我…。 說到鄰居，結果 花盆 不是她弄破的，是外送員，還好我當時沒有一口咬定是她，而外送員事後有說願意賠償（但我拒絕了）。 濃情巧克力蛋卷 這個蛋卷是 8 字形的，我還是第一次看到，我把蛋卷給唸小學跟幼兒園的外甥們吃了。 8 字形的蛋卷 中秋節實在沒有必要這樣送來…",
+      "image": "https://eddielv.com/musings/mid-autumn-currency/wang.jpg",
+      "publishedAt": "2026-09-26T15:27:36Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mid-autumn-currency/",
+      "detailPath": "articles/b5d446bb993ef3c968f71334.json"
+    },
+    {
+      "id": "9c0271358375e12cd226eff5",
+      "title": "赌博、自我实现与想象未来",
+      "summary": "我们的故事很普通，从我们在一起到分开也没有非常大的波折起伏，21的夏天我们开始交往，一开始他负担了大部分恋爱的支出，后来我大学毕业找到了工作，想到他和朋友合租，而我住在家里没有房租也不需要担心饭钱，所",
+      "image": null,
+      "publishedAt": "2026-09-26T15:26:16Z",
+      "sourceId": "1b094a3ee9e11672",
+      "sourceTitle": "塔塔",
+      "link": "https://blog.himikouchuu.com/feed/37",
+      "detailPath": "articles/9c0271358375e12cd226eff5.json"
+    },
+    {
+      "id": "fc9b056e55f8e537274e0cf5",
+      "title": "Node.js、浏览器和 Cloudflare Workers 的wasm引入问题",
+      "summary": "最近在鼓捣 WebAssembly，这玩意没啥神秘的，可以看出一坨二进制的 .js 库文件 它本身的export和调用方式是统一的，但如今天我才知道，在不同 JavaScript 运行环境加载 .wasm 方式并不完全一样。 例如 Cloudflare Workers 可以直接： import wasm from \"./simple.wasm\"; const { instance } = await WebAssembly.instantiate(wasm, imports); Cloudflare 会把 .wasm 模块作为 WebAssembly.Module 提供给代码。 浏览器通常则是通过 fetch() 获取 Wasm，再使用 WebAssembly.instantiateStreaming() ：…",
+      "image": null,
+      "publishedAt": "2026-09-26T14:51:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-36",
+      "detailPath": "articles/fc9b056e55f8e537274e0cf5.json"
+    },
+    {
+      "id": "34315f4bbdb8bebb6ae41716",
+      "title": "重温老片《烈火金钢》",
+      "summary": "这是两部印象很深的包场电影。首先它制作精良，离谱程度适度，令没见过什么大场面的90年代小学生大受震撼。其次它分成上下集两次看完，中间隔了两个多月，是包场片中唯二的存在（另一部是大决战）。第三它有原著加成。第四嘛，我写的观后感被老师批评了—— “咱班不少同学看完电影都没记住片名是什么，给我写变形金刚的刚……” 原著并不是说小屁孩看过小说，而是我们都听过评书。《肖飞买药》可是袁阔成先生的代表作之一。大约1990年左右辽宁台的18：00的评书栏目也曾经连载播讲过全篇的《烈火金钢》。还有一次区文化馆到学校演出，有个号称刘兰芳徒弟的家伙表演过“肖飞买药”。 因为是建党70周年的献礼片，所以大腕云集。 当时在小朋友间名气最大的是钻山豹，也是上部的核心人物。申军谊自从演钻山豹成名之后，演了太多的类似角色，无论是正是邪，都是…",
+      "image": null,
+      "publishedAt": "2026-09-26T11:18:51Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/09/review-steel-meets-fire.html",
+      "detailPath": "articles/34315f4bbdb8bebb6ae41716.json"
+    },
+    {
+      "id": "82b58dd3613ea6731266235c",
+      "title": "RestlessOS──GrapheneOS的通用系统镜像分支简单体验",
+      "summary": "上周把 手表搞坏 后，我打算换一个手表系统，顺便把安卓版本从11升级到12L。由于我手表刷的都是GSI (Generic System Image, 通用系统镜像) ，于是我打算给手表找一个Android12的GSI，于是我打开了 这个页面 寻找合适的系统。 不过我在Unofficial Android 17那一栏发现了一个 RestlessOS ，怎么这么快就有第三方系统适配了Android17，并且还发了GSI镜像？抱着好奇的心态，我下载了RestlessOS的GSI镜像侧载到了我的 一加13 上，然后开机一看，我立刻就傻眼了。 这不就是GrapheneOS？ 于是我赶紧查看了下项目地址的README.md，原来这是这专门把GrapheneOS打包成GSI的项目，以便其它手机使用。这个项目名叫Restle…",
+      "image": "https://blog.xinsl.xin/posts/restlessos-experience/images/screenshots.png",
+      "publishedAt": "2026-09-26T07:46:18Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/restlessos-experience/",
+      "detailPath": "articles/82b58dd3613ea6731266235c.json"
+    },
+    {
+      "id": "eae1e2bbae95b03aea4377ea",
+      "title": "老家失火",
+      "summary": "前言 # 中秋節回家看看父母親，遠遠就看到一臺貨車燒得稀巴爛，那是我姐夫的貨車。 老家是兩層樓的透天，獨門獨戶左右都是稻田，有圍牆與庭院，貨車停最外面，往內是轎車，再來才是房子。 事發經過 # 火災當時父母都不在家，我姐跟姐夫都入睡了，一名駕駛路人狂敲我家的大鐵門，我姐才醒來。依據相對位置，路人應該是真的用生命敲，我姐的房間是最深的，應該很難聽到。 於是趕緊把轎車移開，事後再看，發現火已經燒到轎車的棚子了，如果姐姐沒醒來，轎車也燃燒，那肯定會再蔓延到房子這裡來。 火災過後 現場看是真的恐怖，圍牆的水泥也被燒掉、剝落，讓紅磚露了出來，而原本貨車是有棚子的，車上也堆滿了做生意用的貨物，據說當時路上煙霧瀰漫到會看不到路的程度。 導火線 # 起火原因是什麼？ 貨車上主要是攤車、食物原料（包含食用油）等等，但這些東西不…",
+      "image": "https://eddielv.com/musings/parents-home-fire/fire.jpg",
+      "publishedAt": "2026-09-26T05:33:57Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/parents-home-fire/",
+      "detailPath": "articles/eae1e2bbae95b03aea4377ea.json"
+    },
+    {
+      "id": "33efe097e2bae595b7f183cb",
+      "title": "学校生存指南[3]：教室",
+      "summary": "教室的重要性应该不用我多说了吧？上课的地点，以及存放个人物品的地方，算是一个比较平常的地方。因此这篇我打算分享一下一些平常上课相关的技巧，也就是“不一样的打开方式” 空间管理 教室应该是除了宿舍以外，存放东西最多的地方了，基本都是书本之类的。不过众所周知，高中的各种资料简直堪称移动资料库了，有人把高中三年的书本、卷子、教辅等堆起来有三、四米高了。这么多的东西，要是没有好的整理方式简直会乱死，我经常看到有同学丢东西，甚至才开学不到3周就已经不见新书了。 作为班上公认的空间管理大师，我当然得好好地介绍一下我的资料管理方式了，不过在此之前，我还是按照惯例列出各种方案，然后我再说我自己的选择 柜筒 把书本放进柜筒里是最简单的方法，但不就是因为柜筒不够放才需要“空间管理”吗？因此除非是小学一、二年级，不然柜筒是完全不够…",
+      "image": null,
+      "publishedAt": "2026-09-26T05:23:02Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/school-survival-guide/classroom/",
+      "detailPath": "articles/33efe097e2bae595b7f183cb.json"
+    },
+    {
+      "id": "a9581217d5a1d7b0c2a7168c",
+      "title": "小小的背德",
+      "summary": "周末，早上醒来后感到饥饿，于是早早爬起来。从冰箱里拿出一小块冷冻的米饭，烧水，冲泡速溶味噌汤，拿出一盒纳豆，就是一顿简朴的早饭。",
+      "image": "https://shioriblog.org/assets/images/posts/2026/09/2026-09-26.JPG",
+      "publishedAt": "2026-09-26T05:00:00Z",
+      "sourceId": "7e080d3950f65554",
+      "sourceTitle": "独居日记",
+      "link": "https://shioriblog.org/2026/09/26/%E5%B0%8F%E5%B0%8F%E7%9A%84%E8%83%8C%E5%BE%B7/",
+      "detailPath": "articles/a9581217d5a1d7b0c2a7168c.json"
+    },
+    {
+      "id": "273b75059524eee2e84d049f",
+      "title": "入蜀记 day490 tip toe",
+      "summary": "「tip toe。」",
+      "image": null,
+      "publishedAt": "2026-09-26T04:25:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_490/",
+      "detailPath": "articles/273b75059524eee2e84d049f.json"
+    },
+    {
+      "id": "9cb0613bf5abbebddd226878",
+      "title": "理想一日課表",
+      "summary": "1 化學 2 化學 3 物理 4 班會 5 自主學習 6 音樂 7 音樂 開學看課表時覺得剛起床化學連堂很可怕，但執行起來竟然不錯。原因之一是可提神，若第一節是美術之類（老師講話效率 1 很低的課），反而昏昏沉沉的。化學放下午卻變得很有負擔，很耗腦汁，也許我是晨型人，或我真的不喜歡趴桌子睡午覺。之二是化學老師不記缺曠，此舉深受遲到一族族人（我）讚美。雖然不敢蹺化學（可沒把握自己讀得懂），但遲個十幾二十分鐘也沒斷裂感，因此不是大問題。這時就很好奇老師前面到底教了什麼，還是在抐屎（lā-sái）？ 第一節下課去合作社，黑輪米血，大丸子或豆皮，醬油膏加爆，第二節也排化學只為了吃關東煮，化學課宜關東煮。公民課（政府體制）宜鍋燒意麵。公民課（經濟）宜優酪乳。因為課本一直以優酪乳為商品舉例，你會很渴，真的真的要先買好。…",
+      "image": null,
+      "publishedAt": "2026-09-26T04:08:19Z",
+      "sourceId": "d6867515c49adbbd",
+      "sourceTitle": "Noa's Blog",
+      "link": "https://noa.bearblog.dev/ideal-day-schedule/",
+      "detailPath": "articles/9cb0613bf5abbebddd226878.json"
+    },
+    {
+      "id": "2c201ffa0c34961da4fba133",
+      "title": "伸手可及",
+      "summary": "以前偶爾有鋼琴學生會問：「我住的地方沒辦法放琴耶，我是不是得去音樂教室租琴房練？」",
+      "image": null,
+      "publishedAt": "2026-09-26T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/within-reach",
+      "detailPath": "articles/2c201ffa0c34961da4fba133.json"
+    },
+    {
+      "id": "4ecc37d6d919909435d72046",
+      "title": "2026-07-25 / Claude Design",
+      "summary": "by 新世界的大门",
+      "image": "https://remnote-user-data.s3.amazonaws.com/HFlzo0_9mFoboXEu2oyxiOjG2MHhwiM_si6d-mCDiX1cR0l7FmrMMT7gjszZ62fo8yYKletC3fAEv9LFFcw4cSTQEjOtRQ8tw7kB44GzjIIm_xGAqQ5AAftJLyGzLG2H.webp",
+      "publishedAt": "2026-09-25T20:26:29Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/84/",
+      "detailPath": "articles/4ecc37d6d919909435d72046.json"
+    },
+    {
+      "id": "72ca13f1851c1a9b0dfed34f",
+      "title": "想要飞往那更广阔的天地，想要一直创作和学习下去",
+      "summary": "写在前面 挺久没写东西了，这篇文章，就算作为对自己最近情况的一个汇总吧。 感觉不写点什么的话，好像就没法给大家分享自己的生活和日常感想了吧，还是想要记录点什么东西比较好。 我发现，也许我的性格感觉也不太喜欢经常写东西，不习惯每次学到什么或者一有什么新的感想就立刻写东西，除非有时候感想有让我特别想写东西的冲动。 果然，我还是在有冲动的时候才认真写东西比较好，现在的话，就隔一段时间随便写点什么汇总的东西好了。 感觉这一块本来也不适合为了写东西而给自己太大压力呢。 关于创作的思考 其实现在我创作作品越来越倾向于，或许创作只是作为我最喜欢的业余爱好罢了。不过业余爱好本身反而是最值得提倡的，讨厌工作和喜欢业余爱好无论如何都是完全正常的事情，虽然我现在也没工作，但我想总会有工作的一天吧。 热爱创作的我，也许为了创作，也总…",
+      "image": null,
+      "publishedAt": "2026-09-25T19:26:44Z",
+      "sourceId": "716f999b030a6a78",
+      "sourceTitle": "明琪的日记",
+      "link": "https://yumieko.kikowiwu.com/posts/e8eaba18-939e-4490-a095-962e330b9c8d.html",
+      "detailPath": "articles/72ca13f1851c1a9b0dfed34f.json"
+    },
+    {
+      "id": "8240d2a04453e37cf985026c",
+      "title": "【阿姨看紅樓】紅樓一夢恍如煙：一零一至一百二十回",
+      "summary": "便當店門庭若市絡繹不絕",
+      "image": "https://alicehsu.blog/images/Post/49/1.JPG",
+      "publishedAt": "2026-09-25T19:20:00Z",
+      "sourceId": "a08fec079b5bc196",
+      "sourceTitle": "Alice Hsu's Blog",
+      "link": "https://alicehsu.blog/zh-tw/posts/2026/09/read-dream-of-the-red-chamber-101-to-120-chapters/",
+      "detailPath": "articles/8240d2a04453e37cf985026c.json"
+    },
+    {
       "id": "42c0d835e0e29c7d286e5e6a",
       "title": "Fender Miniature Collection",
       "summary": "繼上次 Gibson Miniature Collection，上網找到了 Fender 的版本，為了以防抽不到 Telecaster，只好收全套啦。",
@@ -505,160 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/articles/the-molecule-of-more/",
       "detailPath": "articles/d216d132c6703eed247f8dc8.json"
-    },
-    {
-      "id": "ae87f5edc1322ec064e84b80",
-      "title": "吉他初心者 LV3 Week3",
-      "summary": "第三週的吉他初心者 LV3 練習記錄。 這週得知一個疾病：Focal Dystonia 肌張力障礙，從 up 主 yooyoyoyoy 那看到了。簡單說，這項疾病的發聲，是因爲我們在漸漸提升自己的能力時，有代償現象，隨著能力越來越強，演奏能力的上限反而會越來越低。有點像是玩遊戲吧，初期爲了快速升等，配點數用了奇淫巧技，確實能快速升等，但到了一定等級之後就發現練不上去了。 總之，現在得花一些時間開始慢速練習，把動作修正回去。 Day1：左手不舒服的一天｜365 日的電吉他練習計劃 w1-3 # 本練習來自《365 日的電吉他練習計劃》Week1 星期三，BPM=100。 前一天的練習，並沒有特別久，或者對手有太大負擔，但今天起床左手、左肩卻很不舒服，應該是工作造成。 因此今天並沒有花很多時間練習，不過有打開節拍…",
-      "image": null,
-      "publishedAt": "2026-09-21T05:28:30Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/gtb-lv3-w3/",
-      "detailPath": "articles/ae87f5edc1322ec064e84b80.json"
-    },
-    {
-      "id": "81235e4edf56b3ef5e87ab44",
-      "title": "不要光是躲在自己的王國裡",
-      "summary": "自己的王國再舒服，也不會憑空長出讀者。創作者得走進別人的王國，利用平台的流量，把真正有興趣的人帶回自己的城堡。",
-      "image": null,
-      "publishedAt": "2026-09-21T04:59:31Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/leave-your-castle",
-      "detailPath": "articles/81235e4edf56b3ef5e87ab44.json"
-    },
-    {
-      "id": "585ce8212593e31cb867723b",
-      "title": "最近惦念 20260906",
-      "summary": "「就像你说的。」",
-      "image": null,
-      "publishedAt": "2026-09-21T04:15:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/TILs/thoughts/20260906_Recently/",
-      "detailPath": "articles/585ce8212593e31cb867723b.json"
-    },
-    {
-      "id": "dd33eeb02b3c043444682b0d",
-      "title": "Toots 437 2026 Sep.13 - Sep.19",
-      "summary": "「鲸鱼可以那么平静地呼吸。」",
-      "image": null,
-      "publishedAt": "2026-09-21T03:28:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260919/",
-      "detailPath": "articles/dd33eeb02b3c043444682b0d.json"
-    },
-    {
-      "id": "7d4bb23f0e6d58b50fbaeeb5",
-      "title": "Hello Kitty 徽章",
-      "summary": "翻到這張舊照片就傳上來，記錄一下十五年前台灣的 7-11 會送這種徽章！",
-      "image": "https://wiwi.blog/assets/images/badges-a6f86045540d25de2fd35d05d0c558d7.jpg",
-      "publishedAt": "2026-09-21T02:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hello-kitty-badges",
-      "detailPath": "articles/7d4bb23f0e6d58b50fbaeeb5.json"
-    },
-    {
-      "id": "bda6366e66715561941f949a",
-      "title": "Nothing Good Happens After 2AM",
-      "summary": "這是「 BlogBlog 同樂會 - 2026 年 9 月 」的投稿文章。本月主題是「",
-      "image": null,
-      "publishedAt": "2026-09-21T00:39:28Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/21/nothing-good-happens-after-2am/",
-      "detailPath": "articles/bda6366e66715561941f949a.json"
-    },
-    {
-      "id": "3aceafdb4f05a0d0ca3c26ff",
-      "title": "Zotero的ODF Scan插件更新了，于是我也更新我的工作流",
-      "summary": "最近发现 Zotero的ODF Scan插件更新了 。感谢维护者。 于是我的工作流也有了小更新。 与此同时，周末进城上课，发现我的饭搭子还在手敲参考文献条目。 学校的资讯素养课果然各有各的草台。 写作是一种思考方式，零AI手打文稿能让我们理清自己到底想说什么；但是零科技手打参考文献就 totally shit job啊喂。 让我们用科技拯救有限的生命。 所以我打算在此处存档一下目前的工作流。 我的工作流也是看其他人的分享，一点点偷师学来的（学校的资讯素养课各有各的草台）。如果能帮上哪个和我一样的互联网街溜子，那就太好了。如果你有优化的建议也欢迎邮件告诉我；或者在你的网站上更一篇博客然后电邮我！ 2023年使用至今的旧工作流参见《 如何在Scrivener 3插入和批量修改參考文獻：Zotero + Libre…",
-      "image": null,
-      "publishedAt": "2026-09-21T00:20:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/odf-scan-workflow/",
-      "detailPath": "articles/3aceafdb4f05a0d0ca3c26ff.json"
-    },
-    {
-      "id": "be865b207cc4ca67df6a2e11",
-      "title": "用 AI 開發的三個體悟",
-      "summary": "只是最近用 AI 寫程式的一些想法。",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/three-ai-takeaways",
-      "detailPath": "articles/be865b207cc4ca67df6a2e11.json"
-    },
-    {
-      "id": "71abafec0f2feb09bfe753bf",
-      "title": "我做市场调查的方法",
-      "summary": "首次写于2023年1月，简单，粗略，非常不完善。 假设已经确定好要做的产品和市场，首先从市场出发，调研以下几个因素： 市场容量（蛋糕有多大，主要玩家有多少个） 市场竞争度（主要竞争对手） 市场发展趋势（增量市场还是存量市场） 垄断和专利情况（类目壁垒） 分析这个市场这个品类下有多少流量（最重要的），预估竞品大致的销量。分析他们的价格，做活动的重点时期，观察类目是否具有季节属性，供应链端生产周期，目标市场的发货和补货的周期。 找到最主要的竞争对手，分析他卖的最好的产品，通常排在小类目第一位。和自己要做的产品做对比，通过现有的 review 分析找出对手的缺点和自己产品的优点。 接着从产品出发，调...",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/amazon-market-research",
-      "detailPath": "articles/71abafec0f2feb09bfe753bf.json"
-    },
-    {
-      "id": "58cf7efc90b0a40f1a119cb5",
-      "title": "访问量指标",
-      "summary": "几个容易搞混的亚马逊访问量指标： Page View 页面浏览量：客户浏览商品详情页面的次数，一个客户可以多次浏览详情页面（以加载完首屏内容为浏览标准） 业务报告中的 PV 包含自然浏览和广告进入浏览 Sessions 会话：在24小时内访问该亚马逊商品详情页面的客户数（24小时内多次点击进入该详情页面算为一次） Click 点击：总点击次数（点击这个行为本身） 包含自然点击和广告点击，总共有多少次点击行为发生在该链接身上 商品会话百分比 = 已订购商品数量 / 会话总数 = 转化率.",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/page-views-and-sessions",
-      "detailPath": "articles/58cf7efc90b0a40f1a119cb5.json"
-    },
-    {
-      "id": "6e5b18745467bbb55bd78e30",
-      "title": "亚马逊广告投放原则",
-      "summary": "个人野路子经验草稿，酌情参考 写于2023年1月3日，持续更新 假设运营一家亚马逊店铺，走品牌/精品路线，总 SKU 数量不超过50个，按具体产品 SKU （和不同站点，如有的话）分类创建单独广告活动 单个广告活动对应一个广告组，每个广告组对应一个子 ASIN，对于关键词投放活动，组内通常有且仅有一个投放动作，例如一个 ASIN 下建立一个广告活动 A，这个活动下只有一个广告组，广告组精准投放一个子 ASIN 的一个关键词 iPhone 18 Pro charger，广告活动 B 词组投放该子 ASIN 的关键词 iPhone 18 Pro charger，并根据实际情况精确否定 iPhone...",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/rules-of-amazon-advertising-campaigns",
-      "detailPath": "articles/6e5b18745467bbb55bd78e30.json"
-    },
-    {
-      "id": "daf6e6ec00cf516c65118075",
-      "title": "有趣系列2：在以為熟悉的地方探索",
-      "summary": "這個周末，體驗了兩次，在一個你以為自己熟悉的地方，以步行的方式移動，發現有很多地方是之前沒有注意到的。 「咦?這個地方有停車場入口」 「喔喔，這間麵食館看起來很好吃，之前都沒注意到」 想了想，以為自己熟悉的地方其實只是因為平常的通勤",
-      "image": null,
-      "publishedAt": "2026-09-20T23:39:26Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/20/exploring-familiar-places-on-foot/",
-      "detailPath": "articles/daf6e6ec00cf516c65118075.json"
-    },
-    {
-      "id": "d3b0d217a4718904cb4b9cdc",
-      "title": "大魚吃小魚：Shark",
-      "summary": "看到 ttheng 的這篇文章〈大魚吃小魚〉，讓我想到小時候超級喜歡玩的一個老遊戲，由於這種類型的遊戲很多，憑記憶找了一下，確定了應該是這款 Shark。",
-      "image": "https://shuojen.com/assets/images/001-f05994550e09ee8eeb5c10f9c04287c6.png",
-      "publishedAt": "2026-09-20T17:04:39Z",
-      "sourceId": "19b15d378a85c1f7",
-      "sourceTitle": "Shuo-jen Blog",
-      "link": "https://shuojen.com/blog/2026/09/21/shark",
-      "detailPath": "articles/d3b0d217a4718904cb4b9cdc.json"
-    },
-    {
-      "id": "3cac093447e0f5c622f1d116",
-      "title": "週末雜記",
-      "summary": "電吉他扭蛋",
-      "image": "https://shuojen.com/assets/images/004-7d3f46abc9379bf3677562ffbbbfa5ef.webp",
-      "publishedAt": "2026-09-20T15:32:00Z",
-      "sourceId": "19b15d378a85c1f7",
-      "sourceTitle": "Shuo-jen Blog",
-      "link": "https://shuojen.com/blog/2026/09/20/weekend",
-      "detailPath": "articles/3cac093447e0f5c622f1d116.json"
     }
   ]
 }

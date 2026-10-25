@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "ff684508cd02808c8a1e9d91",
+      "title": "总结近期发现的V2Ray弱点",
+      "summary": "近期数个V2Ray的弱点被发现。这些弱点可以被用来识别使用VMess、TLS或HTTP协议的V2Ray客户端和服务器。 以下是我们对这些弱点的总结和理解。 总体上，这些弱点可分为三类： VMess服务器没有正确验证客户端的请求，使得服务器可受到重放攻击。 客户端硬编码了一套罕见的TLS密码套件，导致客户端发送的TLS ClientHello拥有几乎独一无二的指纹。 伪装成HTTP服务器的企图失败。 针对VMess协议的重放攻击 VMess协议 的请求构造如下： 16 字节 X 字节 余下部分 认证信息 指令部分 数据部分 认证信息 是一个16字节的HMAC，基于 用户 ID 和 UTC 时间辍 . 指令部分 由 AES-128-CFB(iv， key) 算法加密， 其中 iv 是 UTC 时间辍 的md5哈希…",
+      "image": null,
+      "publishedAt": "2020-06-16T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/v2ray_weaknesses/zh/",
+      "detailPath": "articles/ff684508cd02808c8a1e9d91.json"
+    },
+    {
+      "id": "e66451e1cd7ee5bc95e86419",
+      "title": "《五代史话》——历史小丛书的尝试",
+      "summary": "这本小册子从五代十国概况，政治，经济，文化艺术等方面简明介绍了这段「混乱」的历史。体例清晰如教科书（此丛书本来是为科普用）。叙述也从重点处着手，不拖泥带水，作为入门书很合适。内容大体本于《新五代史》《旧五代史》等传统文献。",
+      "image": null,
+      "publishedAt": "2020-06-13T07:00:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2020/06/13/wudaishihua/",
+      "detailPath": "articles/e66451e1cd7ee5bc95e86419.json"
+    },
+    {
+      "id": "868a2007e392560445175d15",
+      "title": "《袁氏当国》——历史转折中的袁世凯",
+      "summary": "首先不要把这本书看作是学术著作，具有老华人老学者传统爱国热情的通俗历史科普读物。唐德刚主要做口述史，胜在作者和时代中人的关系，顾维钧、胡适、李宗仁他都有接触，能从比较细节的方面回看历史。但我觉得他对民国和孙中山有一层滤镜，当",
+      "image": null,
+      "publishedAt": "2020-06-06T07:00:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2020/06/06/yuanshikai/",
+      "detailPath": "articles/868a2007e392560445175d15.json"
+    },
+    {
+      "id": "07377b0e80486fc8adf5ca64",
+      "title": "我家也有儿童节了",
+      "summary": "今天是六一儿童节，祝十一大朋友和嘟嘟小朋友节日快乐。 因为今天是工作日，就选了周末的时候带他去一个很漂亮的庄园野餐，提前过节。天气不错，蓝天白云，还有些晒，预报说傍晚有雨，也就不太担心。一般周末我和十一带他出去玩的时候，都要提前准备很多东西，他的尿不湿、水杯、奶瓶、奶粉、零食，他用的湿巾、纸巾、防晒，如果要开车去远一点的地方，一般还会带着推车、帐篷、餐垫以及我们的食物。 每次早上他吃完饭，解决了个人问题之后带他出门，很少会有早于十点钟的时候。这次选的园子不远，开车半个小时车程，导航躲避拥堵没走环路，穿过望京到红砖美术馆附近，就到了目的地——圣露庄园。来这里玩的几乎都带着小朋友。不过有些大一点的孩子家里，装备很齐全，一个野餐推车方便不少，还有便携的桌椅，都是常出来野餐家庭的必备。 我们在园子里找了比较中心靠河的…",
+      "image": "https://static.elizen.me/img/2020-06-01-IMG_4416.jpg",
+      "publishedAt": "2020-06-01T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/06/%E6%88%91%E5%AE%B6%E4%B9%9F%E6%9C%89%E5%84%BF%E7%AB%A5%E8%8A%82%E4%BA%86/",
+      "detailPath": "articles/07377b0e80486fc8adf5ca64.json"
+    },
+    {
       "id": "96e8fa32eeffdc9078fd2b06",
       "title": "深夜发嗤（32）",
       "summary": "01. 最近做了很多废脑子的工作，才发现想成为真正的脑力劳动者，是非常难的。我说的脑力劳动者是指，目标明确，周期短，信息密度极大，需要进行决策的工作。 这一次尝试，打破了很多固有的思维。也再一次印证了一句话，做完比做好重要得多。我常年混迹于一些和生产力/效率有关的网站，一个千古不变的话题就是如何做好一件事。但少有人从做完一件事的角度去谈。 工具控一个普遍的思路是，建立一个流程模型，按照流程执行，Getting Things Done。问题在于，他们花费极大的力气去建立模型，模型建立之后，就没有了。我想起在《麦肯锡精英高效阅读法》中，作者赤羽雄二有一条建议，买来的书，马上读，因为一旦不读，很可能就不会再读了。从这个角度来说，如果没读，说明它还是不够重要，并不是你真正想要解决的问题，那就要重新回到问题上，到底要解…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2020/02/03/android-development-learning-path-2020-edition/",
       "detailPath": "articles/affc7626d32713bc43e9142b.json"
-    },
-    {
-      "id": "d1bc09271d59a52a2eedc0bf",
-      "title": "2019 年终总结",
-      "summary": "因起源于武汉的 新型冠状病毒 （2019 novel Coronavirus，2019-nCoV），让 2020 开年之初就与众不同，全国人民纷纷戴上了口罩，这也是我记事以来第一次在大年初一没去村里长辈家拜年。是时候回顾下 19 年了，其实 18 年的总结也迟迟没能写出来，这里一并总结下。",
-      "image": null,
-      "publishedAt": "2020-02-02T11:42:59Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2020/02/02/review-2019/",
-      "detailPath": "articles/d1bc09271d59a52a2eedc0bf.json"
-    },
-    {
-      "id": "407320843e90a1438d58baf5",
-      "title": "A Briefing on COVID-2019",
-      "summary": "这是我在国内疫情发生到一定程度的时候给公司组内发的邮件。我当时希望大家能了解中国正在发生什么从而提高警惕。一个多月过去了（03/07/2020），没想到这个病毒已经在全球扩散，来到了美国。 last updated: 02/02/2020 TLDR: There is one 2019 Novel Coronavirus case confirmed in Santa Clara County(Which includes MTV and SVL) today. This is the seventh case in America. We’d better be prepared for the potential risk. If you know the whole story, you can sto…",
-      "image": null,
-      "publishedAt": "2020-02-02T00:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/02/01/update-on-covid19/",
-      "detailPath": "articles/407320843e90a1438d58baf5.json"
-    },
-    {
-      "id": "4993adf88aa40ceac3c00c55",
-      "title": "我的 2020 年读书单",
-      "summary": "下面记录了我 2020 年的读书单，所记录的，都是已经读完了的，技术书籍由于很难定义读完，所以不在此列。 我比较喜欢读历史相关的书，其中 汴京之围 这本书读起来非常难受，弱国无外交，真的是写实； 坏小孩 书如其名，个人感觉是要比电视剧好很多； 重来 2 和 重来 3 跟工作相关，讲的是远程工作和工作方法，跟 2020 年居家办公的大趋势一致，白领程序员推荐看一下； 我的最后一本减肥书 则比较系统和专业地讲了一下减肥相关的知识，对于在减肥的我来说很有用；最后 镖人 也算是国漫经典了，等出完了之后我一定要买一套实体书典藏（巨人也是） 2020 读书不多，2021 要加大这方面的投入， 读 + 记录 + 总结 ，读书笔记后续都会补上",
-      "image": null,
-      "publishedAt": "2020-01-28T11:06:29Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2020/01/28/2020-read/",
-      "detailPath": "articles/4993adf88aa40ceac3c00c55.json"
-    },
-    {
-      "id": "e6c2fe1ce374a590a51c7063",
-      "title": "2019 | 写在年关岁末",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2020-01-24T23:44:56Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/2019/",
-      "detailPath": "articles/e6c2fe1ce374a590a51c7063.json"
     }
   ]
 }

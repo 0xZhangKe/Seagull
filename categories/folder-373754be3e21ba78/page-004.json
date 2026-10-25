@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "26627a257bdf742ea6aa57ab",
+      "title": "Dragoncatcher: My question is simply...",
+      "summary": "Really very simply... Read here.",
+      "image": null,
+      "publishedAt": "2026-09-09T19:00:00Z",
+      "sourceId": "38eb03ecde7f8b45",
+      "sourceTitle": "Robin Sloan",
+      "link": "https://www.robinsloan.com/lab/iphone-solo/",
+      "detailPath": "articles/26627a257bdf742ea6aa57ab.json"
+    },
+    {
+      "id": "018ce3de083129aa4ef9c45b",
+      "title": "JD CLI updated: now creates filesystem folders",
+      "summary": "Typing `jd 12.34` now creates that folder if it doesn't exist.",
+      "image": null,
+      "publishedAt": "2026-09-09T07:35:50Z",
+      "sourceId": "4567c06def96db0c",
+      "sourceTitle": "Johnny.Decimal",
+      "link": "https://johnnydecimal.com/blog/0245-jd-cli-now-creates-folders/",
+      "detailPath": "articles/018ce3de083129aa4ef9c45b.json"
+    },
+    {
       "id": "45232c7541101f806dd60852",
       "title": "How the Mysterious ScreenJesus can DDoS You",
       "summary": "How a bug in my own CI/CD accidentally uncovered a novel vulnerability in NeoCities: ScreenJesus, the undocumented screenshot bot behind thumbnail previews, has no rate limits and will happily visit thousands of your pages—and anything they embed—in minutes. Notes on accidental DDoS, opaque infrastructure, and a plea for caching and rate limiting.",
@@ -364,17 +386,6 @@
       "detailPath": "articles/188372b01f6ab4dfc2b3dc19.json"
     },
     {
-      "id": "2391169d28f21217728e4e55",
-      "title": "LLMs and self-referentiality",
-      "summary": "I woke up yesterday with the following thoughts, which are probably either obvious or dumb. A central thesis that many readers, including me, took from Douglas Hofstadter’s Gödel Escher Bach when young was that the secret of intelligence (and therefore, of AI) was going to have a lot to do with self-referentiality and “strange loops.” […]",
-      "image": null,
-      "publishedAt": "2026-09-01T17:17:08Z",
-      "sourceId": "b0b19bdb9833a622",
-      "sourceTitle": "Shtetl-Optimized",
-      "link": "https://scottaaronson.blog/?p=10046",
-      "detailPath": "articles/2391169d28f21217728e4e55.json"
-    },
-    {
       "id": "6d16659b3673b69eff86e1be",
       "title": "Nitpicking in code reviews wastes time",
       "summary": "I once wrote about how I've stopped nit-picking in code reviews , which improved the signal-to-noise ratio and helped everyone get along better. I’m back with a third reason to ditch the practice: nit-picking wastes time . By definition, nitpicks are about minor problems:",
@@ -648,17 +659,6 @@
       "sourceTitle": "Brennan’s Weblog",
       "link": "https://brennan.day/bubbles-town-four-months-later/",
       "detailPath": "articles/30c8589bc19d19f31060a9df.json"
-    },
-    {
-      "id": "4989b5b45442e0d2ca1adf26",
-      "title": "Compose & kotlinx.html",
-      "summary": "Let's render a simple page with Ktor server and kotlinx.html : get ( \"/users.html\" ) { call . respondHtml { myLayout ( title = \"Users\" ) { userList ( users = db . users . value , ) } } } A reusable myLayout provides scaffolding, userList encapsulates the specific page content, and db.users is a StateFlow<List<User>> from the persistence layer. I've been doi…",
-      "image": null,
-      "publishedAt": "2026-08-26T00:00:00Z",
-      "sourceId": "a33fc95b48c6e3ea",
-      "sourceTitle": "Jake Wharton",
-      "link": "https://jakewharton.com/compose-and-kotlinx-html/",
-      "detailPath": "articles/4989b5b45442e0d2ca1adf26.json"
     }
   ]
 }

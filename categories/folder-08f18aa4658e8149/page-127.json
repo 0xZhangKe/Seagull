@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "779fbb9876eb61642d0cfcf6",
+      "title": "2019年9月初——已经完成的工作",
+      "summary": "动态资源 先说一下服务器的大致配置 所有的动态资源（Typecho、php、博客插件）都存在我的阿里云香港轻量应用服务器上 服务器配置是这样的 1核心CPU 1GB运行内存 25G SSD存储 CentOS 7 30M 峰值带宽 软件采用的是lnmp架构，全都是源码编译安装 nginx 1.16.0 (HTTP2, HTTPS TLSv1.3, HSTS Support) PHP 5.6.40 Mysql 5.5.62 博客系统是 Typecho 1.1 (17.10.30) 似乎作者已经快2年没更新了 这样的配置支撑整个网站的内容应该就是没有太大问题了 静态资源 静态资源就是一些图片等资源，因为服务器在香港，域名才没有备案，才得以访问到，而根据我最近一段时间的测试结果得出，阿里云香港的轻量应用服务器的线路对…",
+      "image": null,
+      "publishedAt": "2019-09-07T13:25:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/work_done_in_2019-09/",
+      "detailPath": "articles/779fbb9876eb61642d0cfcf6.json"
+    },
+    {
+      "id": "e1b67790825b791756a3c6d2",
+      "title": "Android 中的卡顿丢帧原因概述 - 应用篇",
+      "summary": "在 Android 中的卡顿丢帧原因概述 - 系统篇 这篇文章中我们列举了系统自身原因导致的手机卡顿问题, 这一篇文章我们主要列举一些由于 App 自身原因导致的卡顿问题. 各位用户在使用 App 的时候, 如果遇见卡顿现象, 先别第一时间骂手机厂商优化烂, 先想想是不是这个 App 自己的问题. Android 手机使用中的卡顿问题, 一般来说手机厂商和 App 开发商都会非常重视, 所以不管是手机厂商还是 App 开发者, 都会对卡顿问题非常重视, 内部一般也会有专门的基础组或者优化组来进行优化 . 目前市面上有一些非常棒的第三方性能监控工具, 比如腾讯的 Matrix ; 手机厂商一般也会有自己的性能监控方案, 由于可以修改源码和避免权限问题, 所以手机厂商可以拿到更多的数据, 分析起来也会更方便一些.…",
+      "image": null,
+      "publishedAt": "2019-09-05T12:35:42Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Due-To-App/",
+      "detailPath": "articles/e1b67790825b791756a3c6d2.json"
+    },
+    {
+      "id": "e272a254430d0e5bdf564365",
+      "title": "Android 中的卡顿丢帧原因概述 - 系统篇",
+      "summary": "在 Android 中的卡顿丢帧原因概述 - 应用篇 这篇文章中我们列举了应用自身原因导致的手机卡顿问题 ， 这一篇文章我们主要列举一些由 Android 平台自身原因导致的卡顿问题. 各大国内 Android 厂商的产品由于硬件性能有高有低 ， 功能实现各有差异 ， 团队技术能力各有千秋 ， 所以其系统的质量也有高有低 ， 这里我们就来列举一下 ， 由于系统的硬件和软件原因导致的性能问题. Android 手机使用中的卡顿问题 ， 一般来说手机厂商和 App 开发商都会非常重视 ， 所以不管是手机厂商还是 App 开发者 ， 都会对卡顿问题非常重视 ， 内部一般也会有专门的基础组或者优化组来进行优化 . 目前市面上有一些非常棒的第三方性能监控工具 ， 比如腾讯的 Matrix ; 手机厂商一般也会有自己的性…",
+      "image": null,
+      "publishedAt": "2019-09-05T12:35:35Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Due-To-System/",
+      "detailPath": "articles/e272a254430d0e5bdf564365.json"
+    },
+    {
+      "id": "5f6bef8f677d0a8a9676e149",
+      "title": "Android 中的卡顿丢帧原因概述 - 方法论",
+      "summary": "Android 手机使用中的卡顿问题, 一般来说手机厂商和 App 开发商都会非常重视, 所以不管是手机厂商还是 App 开发者, 都会对卡顿问题非常重视, 内部一般也会有专门的基础组或者优化组来进行优化 . 目前市面上有一些非常棒的第三方性能监控工具, 比如腾讯的 Matrix ; 手机厂商一般也会有自己的性能监控方案, 由于可以修改源码和避免权限问题, 所以手机厂商可以拿到更多的数据, 分析起来也会更方便一些. 说回流畅度, 其实就是操作过程中的丢帧, 本来一秒中画面需要更新 60 帧,但是如果这期间只更新了 55 帧, 那么在用户看来就是丢帧了, 主观感觉就是卡了, 尤其是帧率波动, 用户的感知会更明显. 引起丢帧的原因非常多, 有硬件层面的, 有软件层面的, 也有 App 自身的问题. 所以这一部分我…",
+      "image": null,
+      "publishedAt": "2019-09-05T04:56:42Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Debug/",
+      "detailPath": "articles/5f6bef8f677d0a8a9676e149.json"
+    },
+    {
       "id": "c3d9b24273a190ce2a86ea01",
       "title": "Android 中的 Activity Launch Mode 详解",
       "summary": "Android 中的 Activity 有几种比较重要的启动模式,Standard\\SingleTop\\SingleTask\\SingleInstance, 每一种启动模式有不同的使用场景, 网上也有许多分析这个的文章, 这里我以 Demo 的模式, 从 Activity 栈的角度来展示不同启动模式下的 Activity 的行为. Activity 栈是一个先进后出的数据结构, 各位可以关注在每一步操作之后, 栈内容那一栏, 可以更好地帮助理解不同的启动模式. Demo 比较简单, 我也放到了 Github 上, https://github.com/Gracker/AndroidLaunchModeTest , 有兴趣的可以自己跑一下, 看看结果, 只需要修改 StandardActivity 里面的跳转…",
@@ -615,50 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2019/03/26/thailand/",
       "detailPath": "articles/49c72beed06ba5308faa3d91.json"
-    },
-    {
-      "id": "f8b440c3b022e497d2a17209",
-      "title": "lab10",
-      "summary": "No PIE，说明可以直接用 IDA 中看到的地址，比如最后要执行的 magic 函数（// starts at 8048986 ） 。 可以看到 add_note 使用了 malloc，del_note 只用了 free 但没有给指针赋值 NULL，所以可以在 free 后使用。 结构体 note 有两个指针，一个指向打印 note 的函数（正常流程是 print_note_content ） ，一个指向 note 记录的 content。在 print_note 中会调用打印 note 的函数。 所以应该输入 note content 时用 magic 覆盖掉原来 printnote 指针指向的 print_note_content，利用没有置空的 printnote 在 print_note 中执行 m…",
-      "image": null,
-      "publishedAt": "2019-03-20T16:35:10Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/lab10/",
-      "detailPath": "articles/f8b440c3b022e497d2a17209.json"
-    },
-    {
-      "id": "935e4a28bfc29fe5f2cddfb3",
-      "title": "在冷热之间",
-      "summary": "“冷”和“热”不仅被用来形容人对外界温度的生理感受，夏天热、冬天冷，多喝热水、摆脱冷气。还被用来形容人对外部环境的心理感受，冷漠热淡、热情热心，鲁迅用《热风》(1925)收录杂文，相反，鲍德里亚用《冷记忆》(1987)集纳微博般的灵感碎片。在人文社科的研究中，“冷”和“热”还被用来形容社会、记忆和媒介，正如词义上的差异，它们带来某种对立，有时是二元的、线性的，有时是彼此转化的。 冷社会 - 热社会 人类学家列维-斯特劳斯在《野性的思维》(1962)中，以“历史观”为标准，将社会分为“冷的”和“热的”。冷社会企图消除历史因素对其平衡和连续性的影响，热社会则坚定地使历史过程内在化，并使其成为本身发展的推动力。 这两种社会对应着不同的思维方式，冷社会依靠一种感性的、具体的、整体的思维来理解世界，列维-斯特劳斯称之为…",
-      "image": null,
-      "publishedAt": "2019-03-16T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2019/03/17/between-cold-and-hot",
-      "detailPath": "articles/935e4a28bfc29fe5f2cddfb3.json"
-    },
-    {
-      "id": "e19f757cbfdede761f341902",
-      "title": "也说“央视认罪”",
-      "summary": "“上央视”可看做是官方媒体代理司法活动行为的统称。 鉴于办案机关和热心观众的双重刚需，有网友建议央视开设“认罪频道”。… Continue reading 也说“央视认罪” →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2019/03/e99988e6b0b8e6b4b250e4b887.jpg",
-      "publishedAt": "2019-03-16T13:24:54Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2019/03/16/%e4%b9%9f%e8%af%b4%e5%a4%ae%e8%a7%86%e8%ae%a4%e7%bd%aa/",
-      "detailPath": "articles/e19f757cbfdede761f341902.json"
-    },
-    {
-      "id": "0d3cbe4d875b7f2c045f0814",
-      "title": "多语种与信息量",
-      "summary": "iOS 原生辞典本身和系统整合得很好，随手就能查，我使用频繁。但是辞库是固定的几个，这就引出了问题。以上截图是一个典型例子，我遇到 autonomy 这个词，但是不是很确定意思。光看中英字典，不管简繁，突出的是一个自治。但在",
-      "image": "https://i.loli.net/2019/03/10/5c8407ef1eddc.jpg",
-      "publishedAt": "2019-03-09T21:36:02Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2019/03/09/langandinfo/",
-      "detailPath": "articles/0d3cbe4d875b7f2c045f0814.json"
     }
   ]
 }

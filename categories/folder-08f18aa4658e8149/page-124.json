@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1842efafa51b42dda0906618",
+      "title": "Shadowsocks是如何被检测和封锁的",
+      "summary": "Shadowsocks是如何被检测和封锁的 Alice GFW Report Bob GFW Report Carol GFW Report Jan Beznazwy Independent consultant Amir Houmansadr University of Massachusetts Amherst 摘要 Shadowsocks是中国最流行的“翻墙”工具之一。自2019年5月以来，出现了许多关于封锁Shadowsocks导致用户无法使用这款工具的轶事。在这项研究中，我们揭示了中国的防火长城（GFW）是如何检测并封锁Shadowsocks及其变种的。通过网络测量实验，我们发现GFW会根据每个连接中的第一个数据包的长度和熵来识别Shadowsocks流量；然后再向被怀疑是Shadowsocks的服…",
+      "image": null,
+      "publishedAt": "2020-10-07T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/publications/imc20/zh/",
+      "detailPath": "articles/1842efafa51b42dda0906618.json"
+    },
+    {
+      "id": "84741b432c53c33f57d87e4b",
+      "title": "贫穷的记忆",
+      "summary": "对待困境中的个体时，我们都会鼓励对方，希望对方再刻苦一点，努力抓住那些转瞬即逝的机会。但面对群体的时候，我们都要知道，TA们遇到的困境，并不是TA们不够刻苦，而是社会的不公平令TA们眼界有限，抓不住可能的机会，甚至根本就不知道自己可能有什么机会。",
+      "image": null,
+      "publishedAt": "2020-10-04T00:31:12Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/takeaway/memories-of-poverty/",
+      "detailPath": "articles/84741b432c53c33f57d87e4b.json"
+    },
+    {
+      "id": "c5b16dce95414dc6797ca613",
+      "title": "如何从 Valine 迁移至 Disqus",
+      "summary": "此前我在 第三方评论系统之我见 中简要对比了使用过的一些评论系统，但仍旧没有得出一个尽善尽美的方案。 我很长一段时间评论系统都是使用的 Valine，但因为后来博客第一次收到了一些 不友好的评论 ，以至于我有一瞬间地冲动想要从 Valine 彻底迁移到 Disqus。 但是 Valine 本身加载速度确实很快，用着也挺好，且文章的访问量统计也依赖于此。又实在没有办法下定决心切换至 Disqus。 「任何可以用 JavaScript 编写的应用程序最终都将用 JavaScript 编写。」 In 2007, Jeff Atwood made the quote that was popularly referred to as Atwood's Law: “Any application that can be…",
+      "image": "https://cos.yunle.fun/images/make-one-for-me-too.jpg",
+      "publishedAt": "2020-10-03T15:09:13Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/migrate-from-valine-to-disqus",
+      "detailPath": "articles/c5b16dce95414dc6797ca613.json"
+    },
+    {
+      "id": "6fcdd2d3828e0831853a504e",
+      "title": "2020年9月总结",
+      "summary": "怎么回事，9月怎么过得这么快？感觉人习惯了有31天的7月8月突然来个只有30天的9月就特别不适应，就好像每次转夏令时的时候一样觉得时间被偷走了。 上个月是心血来潮写了总结，觉得这好像是个值得坚持的习惯。回溯这个月干过的事情的时候我深刻意识到「时间是连续的」，9月的生活不过是8月生活的延续，9月的我在纠正8月的我犯下的错误/收拾8月的我留下的烂摊子/继续在8月的我选择的道路上挣扎。 01 搬了个家。 最近几年搬家搬得也太多了吧。和同事聊天说到有没有收集东西的爱好，我说我最近几年一直在搬家，没办法培养收集东西的爱好。倒是培养出了扔东西的爱好，治好了多年的囤物癖。 搬到了上个月提到的离快乐柠檬步行10分钟的新家。8月的我以为是步行5分钟，9月的我发现其实是10分钟，好与不好都是我买奶茶没有那么方便了。拿到钥匙的那天…",
+      "image": "https://fourxiajiao.github.io/2020/2020-09-recap/Untitled.png",
+      "publishedAt": "2020-10-02T02:34:48Z",
+      "sourceId": "6b1e25ad8128217a",
+      "sourceTitle": "一笼虾饺有四个",
+      "link": "https://fourxiajiao.github.io/2020/2020-09-recap/",
+      "detailPath": "articles/6fcdd2d3828e0831853a504e.json"
+    },
+    {
       "id": "ae2ee3ea0369b4824e2af746",
       "title": "阅读推荐 Vol.1",
       "summary": "随便聊聊。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Great Firewall Report",
       "link": "https://gfw.report/blog/v2ray_weaknesses/en/",
       "detailPath": "articles/c28b285b13f6d61a71b25a1f.json"
-    },
-    {
-      "id": "ff684508cd02808c8a1e9d91",
-      "title": "总结近期发现的V2Ray弱点",
-      "summary": "近期数个V2Ray的弱点被发现。这些弱点可以被用来识别使用VMess、TLS或HTTP协议的V2Ray客户端和服务器。 以下是我们对这些弱点的总结和理解。 总体上，这些弱点可分为三类： VMess服务器没有正确验证客户端的请求，使得服务器可受到重放攻击。 客户端硬编码了一套罕见的TLS密码套件，导致客户端发送的TLS ClientHello拥有几乎独一无二的指纹。 伪装成HTTP服务器的企图失败。 针对VMess协议的重放攻击 VMess协议 的请求构造如下： 16 字节 X 字节 余下部分 认证信息 指令部分 数据部分 认证信息 是一个16字节的HMAC，基于 用户 ID 和 UTC 时间辍 . 指令部分 由 AES-128-CFB(iv， key) 算法加密， 其中 iv 是 UTC 时间辍 的md5哈希…",
-      "image": null,
-      "publishedAt": "2020-06-16T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/blog/v2ray_weaknesses/zh/",
-      "detailPath": "articles/ff684508cd02808c8a1e9d91.json"
-    },
-    {
-      "id": "e66451e1cd7ee5bc95e86419",
-      "title": "《五代史话》——历史小丛书的尝试",
-      "summary": "这本小册子从五代十国概况，政治，经济，文化艺术等方面简明介绍了这段「混乱」的历史。体例清晰如教科书（此丛书本来是为科普用）。叙述也从重点处着手，不拖泥带水，作为入门书很合适。内容大体本于《新五代史》《旧五代史》等传统文献。",
-      "image": null,
-      "publishedAt": "2020-06-13T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/06/13/wudaishihua/",
-      "detailPath": "articles/e66451e1cd7ee5bc95e86419.json"
-    },
-    {
-      "id": "868a2007e392560445175d15",
-      "title": "《袁氏当国》——历史转折中的袁世凯",
-      "summary": "首先不要把这本书看作是学术著作，具有老华人老学者传统爱国热情的通俗历史科普读物。唐德刚主要做口述史，胜在作者和时代中人的关系，顾维钧、胡适、李宗仁他都有接触，能从比较细节的方面回看历史。但我觉得他对民国和孙中山有一层滤镜，当",
-      "image": null,
-      "publishedAt": "2020-06-06T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/06/06/yuanshikai/",
-      "detailPath": "articles/868a2007e392560445175d15.json"
-    },
-    {
-      "id": "07377b0e80486fc8adf5ca64",
-      "title": "我家也有儿童节了",
-      "summary": "今天是六一儿童节，祝十一大朋友和嘟嘟小朋友节日快乐。 因为今天是工作日，就选了周末的时候带他去一个很漂亮的庄园野餐，提前过节。天气不错，蓝天白云，还有些晒，预报说傍晚有雨，也就不太担心。一般周末我和十一带他出去玩的时候，都要提前准备很多东西，他的尿不湿、水杯、奶瓶、奶粉、零食，他用的湿巾、纸巾、防晒，如果要开车去远一点的地方，一般还会带着推车、帐篷、餐垫以及我们的食物。 每次早上他吃完饭，解决了个人问题之后带他出门，很少会有早于十点钟的时候。这次选的园子不远，开车半个小时车程，导航躲避拥堵没走环路，穿过望京到红砖美术馆附近，就到了目的地——圣露庄园。来这里玩的几乎都带着小朋友。不过有些大一点的孩子家里，装备很齐全，一个野餐推车方便不少，还有便携的桌椅，都是常出来野餐家庭的必备。 我们在园子里找了比较中心靠河的…",
-      "image": "https://static.elizen.me/img/2020-06-01-IMG_4416.jpg",
-      "publishedAt": "2020-06-01T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2020/06/%E6%88%91%E5%AE%B6%E4%B9%9F%E6%9C%89%E5%84%BF%E7%AB%A5%E8%8A%82%E4%BA%86/",
-      "detailPath": "articles/07377b0e80486fc8adf5ca64.json"
     }
   ]
 }

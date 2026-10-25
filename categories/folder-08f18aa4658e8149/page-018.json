@@ -1,6 +1,127 @@
 {
   "items": [
     {
+      "id": "0202e44741bd0a3e32ce0200",
+      "title": "Dotr: 一个简单的配置备份工具",
+      "summary": "这周我的 Mac 突然无法开机了，睡午觉之前我没插电让它继续跑程序，回来后就发现已经黑屏，无论如何充电都无法开机。用了 14 年 Mac 第一次出现这种情况，麻烦的是我暑假在湖南老家待着，发现整个地级市都没办法修复 Mac，无奈寄去长沙的苹果售后修理。 但这两天我还有些工作需要处理，所以就在家人的 PC 机上开始重建我的工作流程和工具。这时候才想起，我应该是有份比较新的配置备份。然后直接从 GitHub 的私有库上拉取下来，交给 AI 帮我恢复配置，一切都方便多了。 完成这次备份的小工具是 dotr ，几个月之前我 vibe coding 的。 那次的契机也是自己一个命令行失误，导致 .zshrc 完全覆盖了。我最早的备份就是一个 Git 仓库，把 .zshrc 、 .gitconfig 、编辑器配置这些文件…",
+      "image": null,
+      "publishedAt": "2026-08-21T04:46:23Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/dotr-intro/",
+      "detailPath": "articles/0202e44741bd0a3e32ce0200.json"
+    },
+    {
+      "id": "7c63a69fef786830b65fd0b3",
+      "title": "acme.sh 从Webroot改为 NameSilo DNS 申请通配符证书踩坑记",
+      "summary": "我这边虽然用的是BT面板，但其在某次升级之后自动申请SSL证书功能就不好用了，所以一直用的是crontab + acme.sh自行更新证书。 当时的教程在这里： https://itlanyan.com/use-acme-sh-get-free-cert/ 前情提要 不说清楚我之前干了什么，就说不清楚我改了什么。其实都是照着上面的教程搞的，只不过沿用了宝塔的文件结构，相当简单。 安装 curl https://get.acme.sh | sh acme.sh安装成功后，会自动创建一个cron任务 运行`crontab -l`能够进行查看，`crontab -e`能编辑。 41 0 * * * \"/root/.acme.sh\"/acme.sh --cron --home \"/root/.acme.sh\" > /…",
+      "image": null,
+      "publishedAt": "2026-08-21T04:18:43Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/08/migrating-acme-sh-from-webroot-validation-to-namesilo-dns-for-lets-encrypt-wildcard-certificates.html",
+      "detailPath": "articles/7c63a69fef786830b65fd0b3.json"
+    },
+    {
+      "id": "4f7c4b2ecf08c24dfa68ebd0",
+      "title": "SmartPerfetto v1.7.0 更新说明",
+      "summary": "上一篇更新停在 2026 年 7 月 17 日的 v1.1.1。当时 SmartPerfetto 已经有双 Trace 工作台、Quick Mode、私有分析上下文、统一 Agent runtime，以及 Camera、Heap、GPU 等专项分析能力。 从 7 月 18 日到 8 月 21 日，仓库又向前走了五周，版本来到 v1.7.0。这一轮继续增加功能，也把更多精力放在知识来源、分发质量、权限隔离、结果完整性和可回滚改进上。 SmartPerfetto 正在从“能完成一次分析”走向“能在更多环境里稳定、可追溯地完成分析”。 本文以公开发布的 v1.7.0 代码为准，回顾 v1.1.1 之后加入的主要能力。 项目与上篇文章： SmartPerfetto： https://github.com/Gracke…",
+      "image": null,
+      "publishedAt": "2026-08-21T04:00:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/08/21/SmartPerfetto-Five-Week-Update/",
+      "detailPath": "articles/4f7c4b2ecf08c24dfa68ebd0.json"
+    },
+    {
+      "id": "b851954cc5abb50f5f256132",
+      "title": "走音適合街頭演出",
+      "summary": "參加 街頭考試 的隔年，吉他社好友去考街頭藝人，我去看他們，而我自己沒有參加。 當時看到一個樂團，主唱唱的調性跟伴奏距離五度音，簡單講就是抓不到 Key，走音了。 記下他們的考試編號後，待放榜查詢時，發現他們過了。 主旋律跟伴奏不同調性，這種基本能力都沒有的人，要來判斷你有沒有能力上街演出。我們學音樂不是爲了給這些人踐踏的。 當時的台中街頭藝人考試，就是個笑話沒錯。",
+      "image": null,
+      "publishedAt": "2026-08-21T03:19:00Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/out-of-tune-with-busket/",
+      "detailPath": "articles/b851954cc5abb50f5f256132.json"
+    },
+    {
+      "id": "b275a7277a97beea6e577adf",
+      "title": "台中街頭藝人考試適切性",
+      "summary": "2017 年我參加了台中街頭藝人考試，當時還去聽了說明會。 總共有三大指標需要達標，其中兩項與演出能力本身有關，其中一項「適切性」則表示這項表演適不適合街頭，例如：火類的表演就不行。 說明會時，直接說了適切性都會過，因為不適合的在報名階段應該就會被「提醒」了。 為何我要大費周章解釋呢？ 因為我當時吉他彈唱適切性沒過。 事後我傳訊息到 FB 粉專粉專確認適切性的定義，100% 就是我上面說的「表演適不適合在街頭演出」，當我問「那為何吉他彈唱適切性會沒過」後，就被已讀了。 後來大法官釋憲，街頭藝人考試制度違反中華民國憲法，所以就廢除了。 當時遭到很多人反對，認為會造成街頭亂象，隨便一個人都可以上街演出，而我卻大力贊同。 在本來的制度下，判斷我有沒有能力上街演出的人，真的有鑑賞能力嗎？當我被不合理原因被刷掉之後，有…",
+      "image": null,
+      "publishedAt": "2026-08-21T03:15:03Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/appropriateness-with-busket/",
+      "detailPath": "articles/b275a7277a97beea6e577adf.json"
+    },
+    {
+      "id": "85c677563047c3b28ce0b13e",
+      "title": "你們都那麼安靜嗎？",
+      "summary": "這篇是〈 驢驢與齁嘻 〉的番外篇。 有次，學妹沒帶到鑰匙，問能不能來客廳坐著等待她室友回家開門。 那時我在唱歌，孩子的媽在做啥我沒印象，不過驢驢他們可沒閒下來，邊玩耍邊聊天。 就在學妹進來的一瞬間，所有的小動物都閉上嘴巴，深怕嚇到學妹。 「你們都那麼安靜嗎？」 「剛剛其實很熱鬧的，只是我怕驢驢說話妳會嚇到啦！」這句話當然是沒說出來xD 另一次，我哥說要來我中壢的住處，也是進來後非常寧靜，於是又聽到了經典的問句： 「你們都那麼安靜嗎？」 「如果當時有把驢驢他們介紹給更多朋友，那就好了。」寫完上篇文章後，一直有這樣得想法。",
+      "image": null,
+      "publishedAt": "2026-08-21T03:11:13Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/are-you-so-queit/",
+      "detailPath": "articles/85c677563047c3b28ce0b13e.json"
+    },
+    {
+      "id": "64e8914c9a46ded443d21475",
+      "title": "音控師 OPUS 八個月實測",
+      "summary": "前言 # 去年底（2025）發佈了 〈 yt-dlp 最佳聲音格式 〉後，我儲存音樂都是使用 opus了，至於過去的各種 wav、m4a、mp3 我是沒打算轉檔。 至今已經八個月了，像我這種音控工作者，又會用 DAW 錄音的人來說，算是音檔重度使用者吧，來說說體驗。 優點 # 因為要存儲大量音樂，opus 的壓縮能力節省了非常多的空間，對硬碟真的很友善，而且音質並沒有因此下降。 macOS 上的缺點 # 如果用 Mac 電腦，內建的播放器、工作站都沒辦法播放 opus，必須用第三方軟體才能播放。 我常用的練歌用播放軟體 Anytune，似乎是直接用 Apple 內建的播放程式（iTunes 與 Quicktime）去延伸改進，所以我要用 Loop 練歌時就必須用 opus 以外有支援的格式，對我造成很大的困擾…",
+      "image": null,
+      "publishedAt": "2026-08-21T03:04:25Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/soundman-using-opus-8-month/",
+      "detailPath": "articles/64e8914c9a46ded443d21475.json"
+    },
+    {
+      "id": "38bf1f64ffa950f36e66daad",
+      "title": "在挺胸之前",
+      "summary": "應該不只我這樣，總是在坐累了之後，就變得駝背，整個人從頭到屁股呈現 C 字形。 幾次看物理治療之後，也更多觀察自己的所有動作習慣。 在駝背之前，骨盆通常會先變成後傾，這是因為坐久了，已經累了想放鬆而造成的代償。 骨盆後傾之後，為了平衡就容易變得駝背。為了緩解不舒服，會非常依賴椅背，還會喜歡翹椅子。 我大概是高中時期，養成翹椅子的習慣吧，嚴格說是為了緩解不舒服而養成的，並不是喜歡翹椅子。 所以，如果你也會有坐姿駝背成 C 字型的情況，嘗試看看把骨盆往前傾，回到中立位，會發現上半身很自然地就會跟著回正了。 如果骨盆正了還是很不舒服怎麼辦？ 答案很簡單：站起來。 回正就是正確的姿勢，不舒服就是坐太久了。",
+      "image": null,
+      "publishedAt": "2026-08-21T03:01:30Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/before-chest-out/",
+      "detailPath": "articles/38bf1f64ffa950f36e66daad.json"
+    },
+    {
+      "id": "de477bbf55040187338401ee",
+      "title": "切換 Pre—Fader 之前",
+      "summary": "分享很久以前自己還很菜時，犯的音響工程技術錯誤，給音控新手一個警惕，如果是 DAW 初學者也可以思考一下兩種設定的差異。 某次音響工作，在同一個空間中，切割為雙場地單控台，A 地點會有人用麥克風講話，B 地點則是播放輕輕的、小小聲的適合展覽的音樂。 兩邊場地沒有隔開，在 A 場地能聽到 B 場地的喇叭聲，在 B 場地也能聽到 A 場地的。 可能是溝通上的關係，一開始並不知道有兩邊要發出不同聲音的需求，所以音控台並沒有先設置好。 當下是設定 A 場地喇叭為主喇叭，B場地喇叭為 Bus 喇叭。而 B 場地的喇叭為 A 場地主喇叭的 Post-Fader。 簡單說，若要讓 B 場地有聲音，A 場地也必須要送聲音。 然而，若想要完全獨立切開兩路，變成音量能各自調整的話，就必須要切換成 Pre- Fader。 A 場地…",
+      "image": null,
+      "publishedAt": "2026-08-21T02:59:24Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/before-switching-pre-fader/",
+      "detailPath": "articles/de477bbf55040187338401ee.json"
+    },
+    {
+      "id": "9fbab5bcd7c45c105ff405c2",
+      "title": "被一般人拖累",
+      "summary": "世界上大部分的東西，都是為了「一般人」設計的。因此，如果「一般人」變得更笨，所有人都得陪著受難。",
+      "image": null,
+      "publishedAt": "2026-08-21T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/escape-the-normal",
+      "detailPath": "articles/9fbab5bcd7c45c105ff405c2.json"
+    },
+    {
+      "id": "2107d309d8644c4dfc5429b3",
+      "title": "一点反思",
+      "summary": "不是很喜欢自己最近的状态。对摄取文艺作品的热情、对环境与生活细致入微观察的习惯，都像饼干屑… Read More",
+      "image": "https://2.gravatar.com/avatar/ea6699dd1503807085d7548af8465d57581dc3f7355f205d56d97898ddb530dd?s=96&d=identicon&r=G",
+      "publishedAt": "2026-08-20T23:00:05Z",
+      "sourceId": "960b48b47303d275",
+      "sourceTitle": "蛰洲",
+      "link": "https://aliangx.blog/2026/08/21/%e4%b8%80%e7%82%b9%e5%8f%8d%e6%80%9d/",
+      "detailPath": "articles/2107d309d8644c4dfc5429b3.json"
+    },
+    {
       "id": "219c2b0c3f5e4c209a117864",
       "title": "【仗承】Unadorned Truth",
       "summary": "标题：Unadorned Truth 配对：主仗承 隐dio承 分级：R 说明：《美女与野兽》paro&nbs […]",
@@ -538,127 +659,6 @@
       "sourceTitle": "静かな森",
       "link": "https://innei.in/posts/tinkering/ai-era-dev-workflow-review-and-verify",
       "detailPath": "articles/fadd41487b67e561f450eadc.json"
-    },
-    {
-      "id": "b066c8d1197711bfe0386107",
-      "title": "微波爐水波蛋",
-      "summary": "在網上找到了一篇 轉載自某（英文）烹飪網站 的 「微波爐水波蛋」食譜文章 。只需 一分鐘左右 ，無需開火，無需用油，只需要一台微波爐，就可以做出蛋黃流心的水波蛋！ 我親自嘗試了這個做法，結果真的滿奏效的！其簡單快速的程度，（至少對我而言）根本就是作弊等級。 煮東西時有用到水波蛋（英文：poached egg）的話可以試試！ 雖然蛋黃下半部有流心，但上半部卻熟透了⋯⋯之後再試試可不可以更完美。 準備一個可微波的小碗（或杯子），裝上半碗（杯）清水。 將一顆蛋打進該碗（杯）中， 確保蛋體完全浸泡在水內 。 使用一個可微波的碟子將該碗頂部蓋起來。 放入微波爐，調成最大火力，微波約一分鐘上下 1 ；視情況可適時中途翻面再繼續微波。 將煮好的水波蛋從水中撈出，完成！ 當然，這只是此版本食譜的最基本款。大家可以依自身需求對…",
-      "image": "https://microblog.ttheng.com/blog/img210.jpg",
-      "publishedAt": "2026-08-16T15:05:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/microwave-poached-egg/",
-      "detailPath": "articles/b066c8d1197711bfe0386107.json"
-    },
-    {
-      "id": "b6af3ed2c77d99ff7d3f7bba",
-      "title": "周记 135 放假前的波折",
-      "summary": "生活闲聊 给猫喂了一点罐头，叉子放在桌上，它跳上桌去舔叉子，我回头看到但是没有阻止。猫这么喜欢来我家，是不是因为在我家可以无法无天？下意识觉得应该阻止一下，但是阻止了它也不会听，我又不能伸手去推它吧，感觉认真洗一下叉子就好了。同一周遇见它抓了一只鸟翻墙走掉，家属看见它吃了一只蜘蛛。在心里告诉自己，下次还是要拦的呀！ 出发去纽约前两周突然想，认识这只小猫一年来第一次出远门，它每天都会来找人，我们走之后它见不到我们可怎么办。一周半对它来说会不会太久了，之后就不会来玩了。安慰自己毕竟它是有家的小猫，而且平时它自己也喜欢在我们院子里玩，等我们回来了要补偿它罐头。 走的那天早上，它早早的在外面的小猫床上躺着，把门打开让它进来玩了一会儿，准备出门前把它请出去。本来它还守在玻璃门前不死心的看，过一会儿就不见了，我以为它回家…",
-      "image": "https://2.gravatar.com/avatar/590c33e1447ea328d6aaf6dbe754f9833bc45546a1d33572c602175872cebf73?s=96&d=identicon&r=G",
-      "publishedAt": "2026-08-16T13:26:29Z",
-      "sourceId": "3ccb6844373fea4a",
-      "sourceTitle": "河马水槽",
-      "link": "https://hippostank.org/2026/08/16/%e5%91%a8%e8%ae%b0-135-%e6%94%be%e5%81%87%e5%89%8d%e7%9a%84%e6%b3%a2%e6%8a%98/",
-      "detailPath": "articles/b6af3ed2c77d99ff7d3f7bba.json"
-    },
-    {
-      "id": "18bf189f719e607e60b647aa",
-      "title": "故人何处去，独归春光里",
-      "summary": "我想写一些什么，怕写得太长，又怕写得太短，但是如果不写下来，我害怕我也会忘记那样的心情，忘记悲伤对于我而言如同遗忘，我不想忘记外公在我心上留下的痕迹。 八月四日，哥哥传来消息，说外公可能要不行了",
-      "image": null,
-      "publishedAt": "2026-08-16T12:24:00Z",
-      "sourceId": "1b094a3ee9e11672",
-      "sourceTitle": "塔塔",
-      "link": "https://blog.himikouchuu.com/feed/19",
-      "detailPath": "articles/18bf189f719e607e60b647aa.json"
-    },
-    {
-      "id": "3bbbd03e166ced3207ee1fe7",
-      "title": "入蜀记 day449 东北蓝调",
-      "summary": "「东北蓝调。」",
-      "image": null,
-      "publishedAt": "2026-08-16T09:24:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_449/",
-      "detailPath": "articles/3bbbd03e166ced3207ee1fe7.json"
-    },
-    {
-      "id": "a9a5d7f6c872d5fd62546ff3",
-      "title": "git fetch 实现断点续传",
-      "summary": "git fetch origin main --depth=1 一次只下一个 pack，包含所有缺失对象，国内这网络你懂的，断开就废了，然后从头下载，往往又出事； 老外不懂国内网络条件这么艰苦，只能自己让AI改造。结果： https://github.com/est/snippets/tree/master/git-fr 步骤： git fetch --filter=blob:none --depth=1 —— 只拉 commit+tree，这个速度很快，只有KB级别的传输 用 rev-list --objects --missing=print 算缺失集合，500 个 blob 一批回填 每轮重算缺失、只补缺的。 踩过的坑 git fetch origin <blobsha> 每次都会打印 fatal: b…",
-      "image": null,
-      "publishedAt": "2026-08-16T06:06:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdout-33",
-      "detailPath": "articles/a9a5d7f6c872d5fd62546ff3.json"
-    },
-    {
-      "id": "292790de3c370d2dec02d93f",
-      "title": "創作進行式 #42：想寫下一本書了",
-      "summary": "封面投票結果 / 報復性消費 / 囚徒專注",
-      "image": "https://media.alexhsu.com/img/game-book-covers-decision.webp",
-      "publishedAt": "2026-08-16T03:39:00Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/next-book-idea",
-      "detailPath": "articles/292790de3c370d2dec02d93f.json"
-    },
-    {
-      "id": "56f32c7d09b0a55875657b1c",
-      "title": "Wiwi.Blog 純文字版",
-      "summary": "網路超級超級慢，卻還是想讀 Wiwi.Blog 怎麼辦？",
-      "image": null,
-      "publishedAt": "2026-08-16T00:01:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/wiwi-blog-txt",
-      "detailPath": "articles/56f32c7d09b0a55875657b1c.json"
-    },
-    {
-      "id": "51596c57e20ebe722c9d6487",
-      "title": "對觀眾的假設",
-      "summary": "突然意識到，各種現在認為「主流」的影片做法，都是基於對觀眾素質的不信任：",
-      "image": null,
-      "publishedAt": "2026-08-16T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/audience-assumptions",
-      "detailPath": "articles/51596c57e20ebe722c9d6487.json"
-    },
-    {
-      "id": "521369c73c6c47cb1e3679c8",
-      "title": "一手遮天",
-      "summary": "2026-07-26 The Butcher’s Blade 从受害者变成加害者，只隔着很短的距离，这段距离叫做欲望。它可以是金钱，也可以是权力，从古到今似乎都遵循这个规律，并且事态的发展有时并不以人的意志为转移，而是被系统强制推着做出选择。 “咱这是办案还是分赃啊？” “拿了，才是自己人。” 轻刀快马团队至今最新的网大作品《手遮天》，这个名字总让我想起前段时间的《火遮眼》。不过二者故事完全不相关。演职员表中，常年演反派的刘峰超，终于当了一回主角。另一位眼熟的演员淳于珊珊，近几年出没在《卧底神探》《捉刀人》这类网大，以及在《镖人》和《战狼2》中露过脸。常任编剧的杨秉佳在这部电影里只是总策划，轻...",
-      "image": null,
-      "publishedAt": "2026-08-16T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/movies/the-butchers-blade",
-      "detailPath": "articles/521369c73c6c47cb1e3679c8.json"
-    },
-    {
-      "id": "a0e551781de363a19567e166",
-      "title": "2026-06-29 / 中猫危机",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-08-15T17:20:16Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/64/",
-      "detailPath": "articles/a0e551781de363a19567e166.json"
-    },
-    {
-      "id": "eba06274b4da2572706a2219",
-      "title": "松声｜廿六年·八月中·秋意近",
-      "summary": "我是一个不喜欢麻烦的人，在家附近的超市采购一些食材，买了三个大土豆，差不多一个土豆可以炒一盘菜的样子，中午做饭，其中一个土豆中间已经坏了，按照我的习惯，扔了即可，毕竟土豆这玩意不值钱，结果LD不...",
-      "image": "https://img.xyzbz.cn/i/2026/07/31/6a6c45234fa2f.png",
-      "publishedAt": "2026-08-15T15:59:00Z",
-      "sourceId": "309d11f5508ab72f",
-      "sourceTitle": "网友小宋",
-      "link": "https://xyzbz.cn/archives/1565/",
-      "detailPath": "articles/eba06274b4da2572706a2219.json"
     }
   ]
 }

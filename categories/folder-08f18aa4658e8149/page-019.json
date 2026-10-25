@@ -1,6 +1,127 @@
 {
   "items": [
     {
+      "id": "b066c8d1197711bfe0386107",
+      "title": "微波爐水波蛋",
+      "summary": "在網上找到了一篇 轉載自某（英文）烹飪網站 的 「微波爐水波蛋」食譜文章 。只需 一分鐘左右 ，無需開火，無需用油，只需要一台微波爐，就可以做出蛋黃流心的水波蛋！ 我親自嘗試了這個做法，結果真的滿奏效的！其簡單快速的程度，（至少對我而言）根本就是作弊等級。 煮東西時有用到水波蛋（英文：poached egg）的話可以試試！ 雖然蛋黃下半部有流心，但上半部卻熟透了⋯⋯之後再試試可不可以更完美。 準備一個可微波的小碗（或杯子），裝上半碗（杯）清水。 將一顆蛋打進該碗（杯）中， 確保蛋體完全浸泡在水內 。 使用一個可微波的碟子將該碗頂部蓋起來。 放入微波爐，調成最大火力，微波約一分鐘上下 1 ；視情況可適時中途翻面再繼續微波。 將煮好的水波蛋從水中撈出，完成！ 當然，這只是此版本食譜的最基本款。大家可以依自身需求對…",
+      "image": "https://microblog.ttheng.com/blog/img210.jpg",
+      "publishedAt": "2026-08-16T15:05:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/microwave-poached-egg/",
+      "detailPath": "articles/b066c8d1197711bfe0386107.json"
+    },
+    {
+      "id": "b6af3ed2c77d99ff7d3f7bba",
+      "title": "周记 135 放假前的波折",
+      "summary": "生活闲聊 给猫喂了一点罐头，叉子放在桌上，它跳上桌去舔叉子，我回头看到但是没有阻止。猫这么喜欢来我家，是不是因为在我家可以无法无天？下意识觉得应该阻止一下，但是阻止了它也不会听，我又不能伸手去推它吧，感觉认真洗一下叉子就好了。同一周遇见它抓了一只鸟翻墙走掉，家属看见它吃了一只蜘蛛。在心里告诉自己，下次还是要拦的呀！ 出发去纽约前两周突然想，认识这只小猫一年来第一次出远门，它每天都会来找人，我们走之后它见不到我们可怎么办。一周半对它来说会不会太久了，之后就不会来玩了。安慰自己毕竟它是有家的小猫，而且平时它自己也喜欢在我们院子里玩，等我们回来了要补偿它罐头。 走的那天早上，它早早的在外面的小猫床上躺着，把门打开让它进来玩了一会儿，准备出门前把它请出去。本来它还守在玻璃门前不死心的看，过一会儿就不见了，我以为它回家…",
+      "image": "https://2.gravatar.com/avatar/590c33e1447ea328d6aaf6dbe754f9833bc45546a1d33572c602175872cebf73?s=96&d=identicon&r=G",
+      "publishedAt": "2026-08-16T13:26:29Z",
+      "sourceId": "3ccb6844373fea4a",
+      "sourceTitle": "河马水槽",
+      "link": "https://hippostank.org/2026/08/16/%e5%91%a8%e8%ae%b0-135-%e6%94%be%e5%81%87%e5%89%8d%e7%9a%84%e6%b3%a2%e6%8a%98/",
+      "detailPath": "articles/b6af3ed2c77d99ff7d3f7bba.json"
+    },
+    {
+      "id": "18bf189f719e607e60b647aa",
+      "title": "故人何处去，独归春光里",
+      "summary": "我想写一些什么，怕写得太长，又怕写得太短，但是如果不写下来，我害怕我也会忘记那样的心情，忘记悲伤对于我而言如同遗忘，我不想忘记外公在我心上留下的痕迹。 八月四日，哥哥传来消息，说外公可能要不行了",
+      "image": null,
+      "publishedAt": "2026-08-16T12:24:00Z",
+      "sourceId": "1b094a3ee9e11672",
+      "sourceTitle": "塔塔",
+      "link": "https://blog.himikouchuu.com/feed/19",
+      "detailPath": "articles/18bf189f719e607e60b647aa.json"
+    },
+    {
+      "id": "3bbbd03e166ced3207ee1fe7",
+      "title": "入蜀记 day449 东北蓝调",
+      "summary": "「东北蓝调。」",
+      "image": null,
+      "publishedAt": "2026-08-16T09:24:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_449/",
+      "detailPath": "articles/3bbbd03e166ced3207ee1fe7.json"
+    },
+    {
+      "id": "a9a5d7f6c872d5fd62546ff3",
+      "title": "git fetch 实现断点续传",
+      "summary": "git fetch origin main --depth=1 一次只下一个 pack，包含所有缺失对象，国内这网络你懂的，断开就废了，然后从头下载，往往又出事； 老外不懂国内网络条件这么艰苦，只能自己让AI改造。结果： https://github.com/est/snippets/tree/master/git-fr 步骤： git fetch --filter=blob:none --depth=1 —— 只拉 commit+tree，这个速度很快，只有KB级别的传输 用 rev-list --objects --missing=print 算缺失集合，500 个 blob 一批回填 每轮重算缺失、只补缺的。 踩过的坑 git fetch origin <blobsha> 每次都会打印 fatal: b…",
+      "image": null,
+      "publishedAt": "2026-08-16T06:06:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-33",
+      "detailPath": "articles/a9a5d7f6c872d5fd62546ff3.json"
+    },
+    {
+      "id": "292790de3c370d2dec02d93f",
+      "title": "創作進行式 #42：想寫下一本書了",
+      "summary": "封面投票結果 / 報復性消費 / 囚徒專注",
+      "image": "https://media.alexhsu.com/img/game-book-covers-decision.webp",
+      "publishedAt": "2026-08-16T03:39:00Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/next-book-idea",
+      "detailPath": "articles/292790de3c370d2dec02d93f.json"
+    },
+    {
+      "id": "56f32c7d09b0a55875657b1c",
+      "title": "Wiwi.Blog 純文字版",
+      "summary": "網路超級超級慢，卻還是想讀 Wiwi.Blog 怎麼辦？",
+      "image": null,
+      "publishedAt": "2026-08-16T00:01:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/wiwi-blog-txt",
+      "detailPath": "articles/56f32c7d09b0a55875657b1c.json"
+    },
+    {
+      "id": "51596c57e20ebe722c9d6487",
+      "title": "對觀眾的假設",
+      "summary": "突然意識到，各種現在認為「主流」的影片做法，都是基於對觀眾素質的不信任：",
+      "image": null,
+      "publishedAt": "2026-08-16T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/audience-assumptions",
+      "detailPath": "articles/51596c57e20ebe722c9d6487.json"
+    },
+    {
+      "id": "521369c73c6c47cb1e3679c8",
+      "title": "一手遮天",
+      "summary": "2026-07-26 The Butcher’s Blade 从受害者变成加害者，只隔着很短的距离，这段距离叫做欲望。它可以是金钱，也可以是权力，从古到今似乎都遵循这个规律，并且事态的发展有时并不以人的意志为转移，而是被系统强制推着做出选择。 “咱这是办案还是分赃啊？” “拿了，才是自己人。” 轻刀快马团队至今最新的网大作品《手遮天》，这个名字总让我想起前段时间的《火遮眼》。不过二者故事完全不相关。演职员表中，常年演反派的刘峰超，终于当了一回主角。另一位眼熟的演员淳于珊珊，近几年出没在《卧底神探》《捉刀人》这类网大，以及在《镖人》和《战狼2》中露过脸。常任编剧的杨秉佳在这部电影里只是总策划，轻...",
+      "image": null,
+      "publishedAt": "2026-08-16T00:00:00Z",
+      "sourceId": "fb38e83fd2a7811f",
+      "sourceTitle": "按钮与磁带",
+      "link": "https://jefftay.com/movies/the-butchers-blade",
+      "detailPath": "articles/521369c73c6c47cb1e3679c8.json"
+    },
+    {
+      "id": "a0e551781de363a19567e166",
+      "title": "2026-06-29 / 中猫危机",
+      "summary": "by 新世界的大门",
+      "image": null,
+      "publishedAt": "2026-08-15T17:20:16Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/64/",
+      "detailPath": "articles/a0e551781de363a19567e166.json"
+    },
+    {
+      "id": "eba06274b4da2572706a2219",
+      "title": "松声｜廿六年·八月中·秋意近",
+      "summary": "我是一个不喜欢麻烦的人，在家附近的超市采购一些食材，买了三个大土豆，差不多一个土豆可以炒一盘菜的样子，中午做饭，其中一个土豆中间已经坏了，按照我的习惯，扔了即可，毕竟土豆这玩意不值钱，结果LD不...",
+      "image": "https://img.xyzbz.cn/i/2026/07/31/6a6c45234fa2f.png",
+      "publishedAt": "2026-08-15T15:59:00Z",
+      "sourceId": "309d11f5508ab72f",
+      "sourceTitle": "网友小宋",
+      "link": "https://xyzbz.cn/archives/1565/",
+      "detailPath": "articles/eba06274b4da2572706a2219.json"
+    },
+    {
       "id": "57eaf4d23b042e0f3f8d1edd",
       "title": "山里面的夏天",
       "summary": "",
@@ -102,7 +223,7 @@
     {
       "id": "cbe33c3c74776651adbd58b4",
       "title": "博客卷",
-      "summary": "博客卷（Blogroll），是一个类似于友情链接的页面，分享我觉得值得放上来的个人网站或博客，加上个人印象以供参考，是早期博客文化的重要元素（可惜现在没多少人写博客了） 没有使用“友链”一词是因为这些链接不一定经过了双方同意，是我私自放上来的，用友链就显得我们互相认识，不太好意思。 如果你想让你的博客或个人主页出现在这里，或是有链接失效问题，欢迎给我写封电子邮件！ 以下顺序按时间排列（新增的排在前面） 名称&链接 我的印象 备注 xuyzni:3 和我同龄的台湾女生，有许多琐碎的想法，还有几本书评 Carrot Blog 十九岁的大学生，喜欢弹钢琴、阅读、探索世界 Tommy’s blog 台湾国中生，持续日更 冰室花园 国内少数写“废文”的博主 I’m Marcus 人在美国的中国人，讲了许多美国的日常生活…",
+      "summary": "博客卷（Blogroll），是一个类似于友情链接的页面，分享我觉得值得放上来的个人网站或博客，加上个人印象以供参考，是早期博客文化的重要元素（可惜现在没多少人写博客了） 没有使用“友链”一词是因为这些链接不一定经过了双方同意，是我私自放上来的，用友链就显得我们互相认识，不太好意思。 如果你想让你的博客或个人主页出现在这里，或是有链接失效问题，欢迎给我写封电子邮件！ 以下顺序按时间排列（新增的排在前面） 名称&链接 我的印象 备注 映屿 爱玩电脑的Emacs与自由软件爱好者 xuyzni:3 和我同龄的台湾女生，有许多琐碎的想法，还有几本书评 Carrot Blog 十九岁的大学生，喜欢弹钢琴、阅读、探索世界 Tommy’s blog 台湾国中生，持续日更 冰室花园 国内少数写“废文”的博主 I’m Marcu…",
       "image": null,
       "publishedAt": "2026-08-14T16:15:17Z",
       "sourceId": "c3607b68b8e101d3",
@@ -538,127 +659,6 @@
       "sourceTitle": "月光博客",
       "link": "https://www.williamlong.info/archives/7557.html",
       "detailPath": "articles/8e8c3864721a840688d34759.json"
-    },
-    {
-      "id": "4d3dd435d4edc41c312ddb41",
-      "title": "MXR micro amp(M133)",
-      "summary": "前言 # 介紹完 Xotic EP Boost 之後，另一顆也很知名但我個人相對沒那麼常看到的是這顆 MXR M133 Micro Amp。 吉他效果器的廠商們總是令人捉摸不透，明明是一樣的東西，Xotic 稱爲 Boost，到了 MXR 又稱爲 Amp 1 。 MXR M133 micro amp 這篇文章會多與 EP Booster 去比較，並給更多數據提供；而 EP Booster 官方沒有提到太多數據，因此前篇聊得大多是「感覺」。 設計與參數 # 高阻抗轉低阻抗 # 輸入阻抗 1MΩ 輸出阻抗 470Ω 是個漂亮的參數，不走長線的話，可以直接進錄音界面或混音器的 Low-Z Line in 孔了。輸出阻抗相比 EP Booster 的 1KΩ 還更低，算是很漂亮的數據。 最大輸出電平（電壓） # Ma…",
-      "image": "https://eddielv.com/articles/mxr-micro-amp/m133.webp",
-      "publishedAt": "2026-08-10T02:14:18Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/mxr-micro-amp/",
-      "detailPath": "articles/4d3dd435d4edc41c312ddb41.json"
-    },
-    {
-      "id": "e619c004662f2e5631abc241",
-      "title": "食客外貌",
-      "summary": "到各種餐飲店買食物時，現在 Eddie 都會觀察店內用餐的客人，以及排隊點餐的客人身材、外貌如何。 有時候半夜找吃的，騎車聞到炸物店的味道就很想買，但通常看到排隊的客人身材後，就會讓我打消念頭。 「排隊的人有肥胖問題，那我長期吃這家就會變跟他們一樣。」 「哇，排隊的大家都很瘦，這家可以吃！」 大概像是這樣簡單暴力的判斷方式吧。 雖然那些人並不是每天去那些特定店家，但一個人即使每天買不同家的食物，選擇還是有一套邏輯，所以觀看食客的樣貌還是有參考價值的。 溫馨提醒 ：不是要鼓吹極端瘦才是好的審美價值觀，是以健康爲前提的瘦。 2026-08-14 更：看來御坂美琴跟我一樣會用這個方式，判斷要不要持續吃一家店。",
-      "image": "https://eddielv.com/musings/appearance-of-dinner/misaka1.png",
-      "publishedAt": "2026-08-10T02:05:55Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/appearance-of-dinner/",
-      "detailPath": "articles/e619c004662f2e5631abc241.json"
-    },
-    {
-      "id": "1c3d3f6557ec6380f4c49f89",
-      "title": "你好奇怪",
-      "summary": "根據 etymonline.com，「weird（奇怪）」這個字最早是出現在 weird sisters（命運三女神）這個詞組裡，意思是「having power to control fate（具有掌控命運的力量）」。",
-      "image": null,
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/you-are-weird",
-      "detailPath": "articles/1c3d3f6557ec6380f4c49f89.json"
-    },
-    {
-      "id": "348c01739747704ad4c0a2d9",
-      "title": "失眠遐想",
-      "summary": "今晚又失眠。失眠是因为脑袋总是停不下来。想到很多事情，也很乱。第一件，是儿子上小学的事儿。我比他先焦虑了，总是很担心无法适应。比如担心上课不守纪律，学习成绩太差。上课不认真是从小的问题，没有纪律性。虽然我们对他没有什么要求，不属于鸡娃的，但也担心干扰别人学习。幼儿园比较宽松，他经常躺地上，上课神游，也没什么影响。但小学跟幼儿园肯定是不一样的，老师管的比较严，",
-      "image": null,
-      "publishedAt": "2026-08-09T19:13:47Z",
-      "sourceId": "211ed4466033fe3d",
-      "sourceTitle": "一派胡言",
-      "link": "https://yipai.me/post/2546.html",
-      "detailPath": "articles/348c01739747704ad4c0a2d9.json"
-    },
-    {
-      "id": "4e99c605342e4f37f561a3bc",
-      "title": "Eve《迴歸》2026 年巡迴演唱會體驗",
-      "summary": "去看了日本創作歌手（同時也是 Vocalo-P 的） Eve 於今年舉辦的 《廻帰（迴歸）》巡迴演唱會 之 吉隆坡場 。 我是在很偶然的情況下在網上得知該巡迴演唱會將在吉隆坡舉辦追加場次的消息。我之前就有在聽 Eve 的歌曲，其輕快並且時而抒情又空靈的風格正中我的胃口，它們的和弦編排以及整體編曲手法都是一流等級，而 Eve 本人的嗓音也很 好聽 可愛 。因此，我一看到該追加場次的消息後，雖然有猶疑了一陣子，但到最後我還是在門票開售日當天就把演唱會票買下來了。 最終的正式演出沒有令我失望！音響很讚、樂手很猛（尤其是薩克斯風手的 solo！）、Eve 很帥（雖然我是坐樓上區域，看不太到他的臉 😂）、選曲很有巧思、編曲充滿了能量、舞台後方 LED 螢幕播放的演唱會特製 PV 畫面也很精美！ 說到 Eve 帶來的樂手…",
-      "image": "https://microblog.ttheng.com/blog/img208.jpg",
-      "publishedAt": "2026-08-09T15:26:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/eve-kaiki-2026-concert-experience/",
-      "detailPath": "articles/4e99c605342e4f37f561a3bc.json"
-    },
-    {
-      "id": "dc981e34c50bbcfb44d9402c",
-      "title": "Toots 431 2026 Aug.2 - Aug.8",
-      "summary": "「呼吸真的可以到三十秒。」",
-      "image": null,
-      "publishedAt": "2026-08-09T13:00:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260808/",
-      "detailPath": "articles/dc981e34c50bbcfb44d9402c.json"
-    },
-    {
-      "id": "6ff054444bcf555a1cbfb775",
-      "title": "使用 GammaRay 在 QtWidgets 应用程序中找到某个功能的实现",
-      "summary": "为了实践自由软件的自由 1 和自由 3，和/或为自由软件社区做出贡献，我们需要修改与某个功能相关的源代码，让软件做出不同的事情。然而，由于我们对某个项目并不熟悉，我们常常不知道需要修改的源代码在哪里。你可以试着运行 grep -R <some-user-facing-string> . ，不过有时这并不会奏效（见 上一篇文章 ）。在那种情况下，我们就需要一些高级的软件内省工具。对于使用 Qt 开发的软件，一个强大的工具是 GammaRay 。 要使用 GammaRay，你首先需要安装它。如果你想检查从发行版官方软件仓库安装的软件，那么也请从那里安装 GammaRay： # apt install gammaray 如果你使用 kde-builder 开发 KDE 应用程序，请将以下几行添加到你的 ~/.con…",
-      "image": "https://rebel1725.codeberg.page/images/pic_20260809_001.png",
-      "publishedAt": "2026-08-09T12:49:33Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/find-the-implementation-of-a-function-in-a-qtwidgets-application-using-gammaray/",
-      "detailPath": "articles/6ff054444bcf555a1cbfb775.json"
-    },
-    {
-      "id": "5c3173d04a5c18ec6b2a11b8",
-      "title": "2026-06-26 / 风月同天",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-08-09T08:08:13Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/61/",
-      "detailPath": "articles/5c3173d04a5c18ec6b2a11b8.json"
-    },
-    {
-      "id": "90ffd22d1f2d35f1793a3d9a",
-      "title": "2026-06-24 / 落荒而逃",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-08-09T08:06:27Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/60/",
-      "detailPath": "articles/90ffd22d1f2d35f1793a3d9a.json"
-    },
-    {
-      "id": "bec504631ca93f7ca42860a4",
-      "title": "2026-06-23 / 梦核大楼",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-08-09T07:49:42Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/59/",
-      "detailPath": "articles/bec504631ca93f7ca42860a4.json"
-    },
-    {
-      "id": "bcba13bb5f3d126071ceba24",
-      "title": "博客文章是怎麽寫出來的",
-      "summary": "我經常很不想幹活，於是開始寫博客。在偷偷摸摸寫博客的間隙，見縫插針幹一下活。 感覺自己是那種不肯吃藥的大型犬。 要麼把藥包在培根裡，眼疾手快地一個塞。 要麼假裝成零食不小心掉地上，見縫插針地一個撿…… 博客歷史 # 最開始寫博客用的是什麼服務已經不記得了。 本人健忘派人士。活到今天也是因為健忘。 我的朋友們至今時不時做關於考試的噩夢，而我已經完全不記得中學生活的細節。 註冊過wix、Wordpress，還有一個似乎已經倒閉的建站服務，想不起來名字。 用語雀和gitlab搭過博客。（比發布Notion頁面當博客更抽象的思路出現了，在線用戶手冊也能當博客用。我仍然覺得用 Docusaurus 架獨立博客也蠻酷的，也許以後可以玩一下。） 用Notion + NotionNext建過站。NotionNext是一個開源…",
-      "image": "https://wuliangdian.com/posts/how-i-write-posts/wu1.png",
-      "publishedAt": "2026-08-09T06:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/how-i-write-posts/",
-      "detailPath": "articles/bcba13bb5f3d126071ceba24.json"
     }
   ]
 }

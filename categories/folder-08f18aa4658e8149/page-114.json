@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "d17ab77dbb30b212c515ea6c",
+      "title": "Sharing our thoughts on the cat-and-mouse game",
+      "summary": "In this post, we share some of our thoughts on the cat-and-mouse game of censorship. Our views are based on our observations and reflections on both the censor and the anti-censorship community; we have also been deeply influenced by klzgrad , David Fifield, and many other anti-censorship developers and researchers. In particular, we start with answering wh…",
+      "image": null,
+      "publishedAt": "2022-10-15T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/thoughs_on_cat_and_mouse_game/en/",
+      "detailPath": "articles/d17ab77dbb30b212c515ea6c.json"
+    },
+    {
+      "id": "a66d3c01da8c462b45ec9ebd",
+      "title": "分享一个修改版的Shadowsocks",
+      "summary": "我们在这篇文章中发布和开源一个修改版的Shadowsocks。这个版本的Shadowsocks可以绕过当前GFW的检测以及封锁。我们首先介绍这个修改后的Shadowsocks的原理，再分享一个如何部署服务器和客户端的简单教程。我们还会介绍其他两种当前能够帮助Shadowsocks和VMess绕过当前GFW封锁的办法。 动机 我们在此时发表这个版本有三个目的： 首先，我们想为中国网民提供一个（暂时）可行的翻墙方案。用增加翻墙协议多样性的方式，缓解10月3号以来的GFW对多种翻墙工具的大规模封锁。 其次，我们想抛砖引玉地引起研究者和开发者的讨论。我们实证性的研究显示，当前的GFW已经可以精准地识别Shadowsocks，VMess，以及Obfs4这类完全加密协议（full-encrypted protocol）。…",
+      "image": null,
+      "publishedAt": "2022-10-15T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/modified_shadowsocks/zh/",
+      "detailPath": "articles/a66d3c01da8c462b45ec9ebd.json"
+    },
+    {
+      "id": "0492dbc5dd3614b92ef35d66",
+      "title": "分享我们对猫鼠游戏的一点想法",
+      "summary": "在这篇文章中，我们分享我们对审查这个猫鼠游戏的一些看法。这些看法既来自于我们对审查者和反审查社区两方的观察与思考，又同时受到 klzgrad ，David Fifield以及其他许多许多反审查者的深深影响。 我们将从审查者每次开始大规模封锁的时间点选择出发，探讨审查者相比反审查社区缺乏灵活性这一根本性的弱点，并附上我们对如何利用审查者的弱点来达到四两拨千斤的效果的一些建议。 审查时间点的选择 长期关注互联网审查的朋友们一定已经发现，中国的审查者总是在政治敏感事件来临前的数天或数周开始大规模地使用他们的新审查武器。实际上，这样的时间点选择绝非偶然，那具体的原因是什么呢？我们猜想至少有三点，也欢迎大家继续讨论补充： 首先，对审查者而言，保证至少在政治敏感的时间段内，对社会舆论和信息流通有着足够的控制，是一项重要的…",
+      "image": null,
+      "publishedAt": "2022-10-15T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/thoughs_on_cat_and_mouse_game/zh/",
+      "detailPath": "articles/0492dbc5dd3614b92ef35d66.json"
+    },
+    {
+      "id": "9f8de9f311478af5d29535ef",
+      "title": "1014 逃避",
+      "summary": "",
+      "image": "https://0.gravatar.com/avatar/cab092a5c5ede78428d38d2c4b4d4e31e1b7ae079c59c535e65f0edd446d0a58?s=96&d=identicon&r=G",
+      "publishedAt": "2022-10-14T15:55:10Z",
+      "sourceId": "c96b327793445474",
+      "sourceTitle": "baoting's blog",
+      "link": "https://baoting.blog/2022/10/14/1014-%e9%80%83%e9%81%bf/",
+      "detailPath": "articles/9f8de9f311478af5d29535ef.json"
+    },
+    {
       "id": "f3a4652caf22e5afa4b7c39c",
       "title": "记录一下吐狼奶过程中印象比较深刻的书吧",
       "summary": "并没有什么特别理论的书籍，全是苦难史。小师妹有一次和我讨论时说：犹太人的苦难，全世界都知道；中国人的苦难，中国人自己都不知道。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Sukka's Blog",
       "link": "https://blog.skk.moe/post/i-have-my-unique-dns-setup/",
       "detailPath": "articles/a325cada9aa28bea9603212f.json"
-    },
-    {
-      "id": "c39a86c3f0d98826cd7a4b71",
-      "title": "消失的青年失业率：时间序列预测青年失业率",
-      "summary": "用python和prophet库进行复杂的时间序列预测和交叉验证。",
-      "image": "https://prologue.dev/static/images/Unemployment-Rate-Forecasting.png",
-      "publishedAt": "2022-08-21T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/vanishing-youth-unemployment-time-series-forecasting-the-job-market",
-      "detailPath": "articles/c39a86c3f0d98826cd7a4b71.json"
-    },
-    {
-      "id": "0233e6380b1b6c6304655a2a",
-      "title": "为什么你不应该在 React 中直接使用 useEffect 从 API 获取数据",
-      "summary": "React 是一个由 Facebook 开源的、可以在任意平台上构建 UI 的 JavaScript 库。在 React 中，一个常见的 Pattern 是使用 useEffect 搭配 useState 发送请求、将状态从 API（React 外部）同步到 React 内部、用于渲染 UI，这篇文章恰恰在向你介绍为什么你不应该直接这么做。",
-      "image": "https://img.skk.moe/blog/t2022/why-you-should-not-fetch-data-directly-in-use-effect.png",
-      "publishedAt": "2022-08-19T08:53:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/why-you-should-not-fetch-data-directly-in-use-effect/",
-      "detailPath": "articles/0233e6380b1b6c6304655a2a.json"
-    },
-    {
-      "id": "ab9e501168783cd78941b5a9",
-      "title": "Hoka-bot 功能列表",
-      "summary": "欢迎使用 Hoka-bot！ 该文档将列出 Hoka-bot （以下称 Hoka）的功能以及详细介绍。",
-      "image": null,
-      "publishedAt": "2022-08-17T18:32:04Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/94b.html",
-      "detailPath": "articles/ab9e501168783cd78941b5a9.json"
-    },
-    {
-      "id": "4e24a657d35a9e1c320b8f0a",
-      "title": "叁拾一周：No.39",
-      "summary": "本期的主题是：自由度。 从我写下这个词的时候，就明白自己讲不清楚它的概念，只能是抛砖引玉，你来接力，给它一个属于你自己的定义。 缘起自己对于幼儿的观察，我们应该给他们多少自由度？一个幼童，知道多少，我们教给他们多少，教到什么程度，他们真正理解到什么程度，我们又认为他们理解到什么程度。 这个度，有多大范围的上下限。比如，一个三岁的孩子可以自己上厕所么？可以自己上到什么程度。可以看电视么？可以看多久？我们又觉得他们应该到什么程度。如果不符合我们的期望，是他们的问题，还是我们自由度设置的问题。 如此，和别人交流，我们要抱有多大的希望，又有多大的期待？如果交流出现了问题，是对方的问题，还是我们的问题？ 上限与下限 中文一个很有趣的地方是，每一个词，甚至每一个字，它能承载的意义不能单从字面来理解，甚至，理解到多深能代表…",
-      "image": null,
-      "publishedAt": "2022-08-16T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/08/newsletter-039/",
-      "detailPath": "articles/4e24a657d35a9e1c320b8f0a.json"
     }
   ]
 }

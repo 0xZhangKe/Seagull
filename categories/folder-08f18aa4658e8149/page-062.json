@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "611995fe561676979e6f8dbc",
+      "title": "《剧场版总集篇 GIRLS BAND CRY【后篇】嘿，未来。》观后有感",
+      "summary": "嘻嘻 我去，你怎么知道我还去看了《 劇場版総集編 ( 剧场版总集篇 ) ガールズバンドクライ ( GIRLS BAND CRY ) 【後編】 ( 【后篇】 ) なぁ、未来。 ( 嘿，未来。 ) 》~ 已经是半个月之前看的了，不过这回没有上次那么新鲜的感触，一时忘了记录，趁着正好想起这事，随便写些什么。 为了照顾兄弟几人的日程，安排了中午的场次，这回就没有上回的巨幕，体验只能说像是看了场较大屏幕的动画片吧。 由奢入俭难欸… 不过，积累了上次的经验，这回不再对担心赶不上开场时间而感到焦虑，毕竟所谓 开场时间 后的近 二十分钟 ，是实打实地要留给各种广告的… 倒不如说我们这回晚些进去，正好碰上最后一则观影礼仪警示，坐下后也就刚巧可以开始享受了。😋 【后篇】的 Live 主要集中在影片的后半部分，时隔多日已有些记不太…",
+      "image": "https://ttio.cc/_astro/gbc-2-special.CZCdtvcE_1YNmuu.webp",
+      "publishedAt": "2025-12-06T07:42:55Z",
+      "sourceId": "c8f83e5c482b2a5b",
+      "sourceTitle": "記緒漂流",
+      "link": "https://ttio.cc/jotting/girls-band-cry-part-2",
+      "detailPath": "articles/611995fe561676979e6f8dbc.json"
+    },
+    {
+      "id": "2cf400283ec4a9538798c1a1",
+      "title": "从 UnoCSS 迁至 Tailwind CSS",
+      "summary": "只要换了技术栈，就能避开不少上游遗留的致命 Bug…… 如果解决不了问题，那就解决出现问题的人。 历史遗留 原本只是正常地更新了一次依赖，正常地预览了本地开发服务器，正常地推送到仓库，正常地进入 GitHub Actions… 准备照例进入自己的破站孤芳自赏一番，紧接着，加载评论区的一瞬，出现了惊悚的一幕： 图源 @Tetora 你说的我都懂，但是这个头像为什么那么大啊！ 急急忙忙重新打开刚刚关闭的 VS Code，启动开发服务器，打开浏览器… 这…不是没问题吗？ 怀着忐忑的心情，在本地构建预览了一次，复现了。 虽然没有在本地做好完整的构建测试的确是我的责任，但开发环境与生产环境如此大的差异实在是意料之外，也未曾想到这是由依赖更新造成的。 赶紧跑到 UnoCSS 的 仓库 ，对着 Release 列表一个一个…",
+      "image": "https://ttio.cc/_astro/huge-avatar.aiEgP2-q_ta8Sd.webp",
+      "publishedAt": "2025-12-06T06:21:46Z",
+      "sourceId": "c8f83e5c482b2a5b",
+      "sourceTitle": "記緒漂流",
+      "link": "https://ttio.cc/note/unocss-to-tailwindcss",
+      "detailPath": "articles/2cf400283ec4a9538798c1a1.json"
+    },
+    {
+      "id": "e7cdd316831d971c1cd5af66",
+      "title": "工作中出訪金山老街",
+      "summary": "某公司到金山辦員工旅遊，而我們到現場架設卡啦 OK 提供歡唱，沿路上老闆一直心心念念著廟口的鴨肉，於是收完場我們繞去買鴨肉。 隨手拍了一些街景： 人很多，很不好逛，Eddie 其實討厭人擠人，出去玩也會挑最沒人的時候，享受清幽的感覺，唯一缺點是會有很多店家不開門。 鴨肉： 肉是好吃的，但 Eddie 一直咬不斷筋，再來就是提供的醬油包千萬別全加！會太鹹！ 好像買全鴨、半鴨、四分之一鴨都是給一包，所以如果買小份的，加一半以內就夠了！ 超香麵包： 經過時就超想買來吃，沒想到老闆也說他想吃那個！只能說現烤真的太香了。 這次其實沒有特別逛什麼，買完就走了，畢竟是來工作的，而且結束後還要趕去了同行的倉庫拿器材，未來有機會再來好好玩吧！",
+      "image": "https://eddielv.com/musings/jinshan-old-street/street1.jpg",
+      "publishedAt": "2025-12-06T05:49:00Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/jinshan-old-street/",
+      "detailPath": "articles/e7cdd316831d971c1cd5af66.json"
+    },
+    {
+      "id": "961fe25c9e31c645630687ad",
+      "title": "剖析千行C语言文本编辑器Kilo的技术细节",
+      "summary": "今天上午学习了一下 Kilo 的源代码。我很早以前就对文本编辑器的实现方法感兴趣了。 Kilo是一个很简易却不简陋的项目，清晰地展示了如何构建一个终端下的文本编辑器，它的目的不是真正让你学会去开发一个高标准高质量，能投入使用的文本编辑器，而是理解文本编辑器的核心骨架、理解一个看似庞大一团糟的问题的拆解思路。这是一个很好的起点。也过了一把爽玩C语言的瘾（虽然我并没有写几行代码）。 程序分析 整个项目只有一个文件，一千三百行代码。我用了大概一个半小时梳理了程序的执行流程，手画了一个流程图。为了美观，我又用 Graphviz 绘制了一个电子版： 这张图我省略了一些深的函数调用，但也能帮助我大体上掌握这个程序的执行流程。结合这张图与源码，我发现文本编辑器的核心功能——打开、编辑、保存，实现难度并不大，在C语言中容易踩…",
+      "image": "https://images.glowisle.me/kilo-graph.png",
+      "publishedAt": "2025-12-06T05:26:47Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/kilo-analysis/",
+      "detailPath": "articles/961fe25c9e31c645630687ad.json"
+    },
+    {
+      "id": "081060c404e05923b389526e",
+      "title": "Youtube 全 AI 製作時代已然來臨",
+      "summary": "Eddie 睡前都會放 YT 的談話性影片來當作睡前故事，如果議題複雜到大腦無法負荷，就更容易能幫助入睡。而最近發現，在自動播放幾部影片後，會開始播放 AI 影片。 昨晚剛好看到一個探討兩性議題的頻道，畫面大致上是靜態的，用老外口音的男性 AI 音色來逐字唸稿。 看了留言後讓 Eddie 震驚的是，很多人在讚揚老外的聲音很好聽，沒有發現這是 AI 製作出的。 而留言系統不確定是不是串了 API ，幾乎每則都有回覆，但很明顯就是 AI 才會用的句子，但觀眾也依然來回與頻道主留言回覆，似乎沒發現是 AI。 在 2025 年底的現在，已經出現標題、封面、內容、回覆留言全是 AI 製作 YT 影片，未來，這現象在 YT 上只會越來越誇張，最後真人拍片成本過高，導致最後大家「打不贏就加入」，都開始用 AI 創作，或者乾…",
+      "image": null,
+      "publishedAt": "2025-12-06T04:33:32Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/ai-content/",
+      "detailPath": "articles/081060c404e05923b389526e.json"
+    },
+    {
+      "id": "b4ddfc97c07ca73926a68188",
+      "title": "我從Derek Sivers身上學到的12個人生原則",
+      "summary": "在別人追韓團、追Elon Musk時，我卻是一個隱居在紐西蘭的怪人的腦殘粉。",
+      "image": null,
+      "publishedAt": "2025-12-06T03:58:04Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/sivers",
+      "detailPath": "articles/b4ddfc97c07ca73926a68188.json"
+    },
+    {
+      "id": "808990cd1fc2a0cb6f50c3cb",
+      "title": "Yahtzee!",
+      "summary": "今天要介紹一個我從小就知道的骰子遊戲──Yahtzee。",
+      "image": "https://wiwi.blog/assets/images/yahtzee-02d541655df82d077c9e0b6984dd6cd0.jpg",
+      "publishedAt": "2025-12-06T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/yahtzee",
+      "detailPath": "articles/808990cd1fc2a0cb6f50c3cb.json"
+    },
+    {
       "id": "394e9fad10143c1dfc2f6c95",
       "title": "2025 Week 48~49",
       "summary": "周记 | 2025年第48~49周（12-24~12-07）的见闻、体验与思考 作息调整 最近在做作息调整，连续一周天早睡早起，三点感受： 身体是是诚实的。当我停止熬夜后，长期困扰我的呼吸暂停症状（醒来后头沉、胸闷、心率高）突然消失了。我的身体非常直白地向我透露，这些症状并不来自于我身体器官出现了毛病，而直接来自于我的作息习惯。 身体对你诚实，你也要对自己诚实。睡醒后依然有眼睛疲累的情况，直接原因就在于“过度用眼”。你不要觉得睡前刷刷手机没什么，“过度”这个阈值其实是很低的。一个标准是，通常在昏暗环境下，连续注视屏幕超过 30-45 分钟，且中间没有远眺放松，就属于“过度”了。而这种过度情况，需要一整晚的睡眠来修复。 很多都是道理都是行难知易，比如避免睡前剧烈运动，谨慎睡前饮食，都是听过无数次的话。但真正开始…",
@@ -582,83 +659,6 @@
       "sourceTitle": "ArthurChiao's Blog",
       "link": "https://arthurchiao.art/blog/large-generative-recommendation-tokenization-perspective-notes-zh/",
       "detailPath": "articles/c5a4b619ddacdfe1bc0767e4.json"
-    },
-    {
-      "id": "1e1b7be0f2ff0094cf4d91bd",
-      "title": "企業故意將商品用更貴的價格賣給你－「監控定價」",
-      "summary": "當你在購物結帳時，若店員告知你下載指定APP可以獲得免費小禮物時，你可能正陷入一個隱藏的陷阱中。一旦你註冊會員並登入以後，你的數位足跡 (Digital Footprints)將一覽無遺，而這樣看似獲得優惠的短期利益下，你的資料將成為企業掌控你心理價格的一大籌碼。「因此，消費者有必要了解自身數據的價值，並採取行動以保護自己的數據隱私。 監控定價 (Surveillance Pricing) 是一種極其複雜的定價策略，它使企業能夠以「量化」的演算法知道每個人對同樣商品所願意付出的價格意願，包括你的薪資水平、居住地區、近期消費、甚至網頁停留時間，都在持續地訓練它對你的了解。別以為單一應用程式的註冊與使用不會造成任何影響，透過那些潛藏在沒人去看的使用者條款中，當使用者按下「我同意」時，實際上將建立起一個充滿個人化數…",
-      "image": null,
-      "publishedAt": "2025-11-27T00:00:00Z",
-      "sourceId": "68a194be012e90d9",
-      "sourceTitle": "Chang,Shih-Ting",
-      "link": "https://chang-shih-ting.com/Enterprise-deliberately-sells-you-goods-at-a-higher-price-Surveillance-Pricing/",
-      "detailPath": "articles/1e1b7be0f2ff0094cf4d91bd.json"
-    },
-    {
-      "id": "f8d0b3d52e943666af229e9c",
-      "title": "包裹在哪裡？",
-      "summary": "訂單上顯示了一個 Fedex 的連結，讓人用來追蹤包裹。",
-      "image": "https://alicehsu.blog/images/Post12home.jpg",
-      "publishedAt": "2025-11-26T22:35:25Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2025/11/%E5%8C%85%E8%A3%B9%E5%9C%A8%E5%93%AA%E8%A3%A1/",
-      "detailPath": "articles/f8d0b3d52e943666af229e9c.json"
-    },
-    {
-      "id": "604615c9c0e0053f77a74321",
-      "title": "12 天減重記錄",
-      "summary": "約兩週前開始 減重 ，今日測量體重發現自己體脂肪從接近 16 掉到 12.8，體重從 接近 71 掉到 68.6，同時增加肌肉，也同時減脂，下面分享 Eddie 做了什麼。 吃 # 一開始是用斷食法，後來發現有體力活，很難撐住，所以更改策略。 每天努力吃到 120g 蛋白質 ，如果吃不到就喝蛋白粉。但爲了不喝難喝的蛋白粉，Eddie 非常努力吃。 目前最愛吃的是便利商店的蛋白餐，一個餐盒就有 30g，只要吃 4 盒就達標了！另外，吃的蛋白變多，菜就要等比例吃更多，不然會便祕！ 運動 # 大概 3~4 天就會做一次運動，如果忘記就算了（佛系）。 開合跳 5 分鐘，目的熱身 捲腹、伏地挺身、棒式、彈力帶划船等等徒手訓練，目的增肌 開合跳 25 分鐘，目的減脂 目標 # 沒有實際數字，只是想要肚子沒有任何肥肉！ 雖…",
-      "image": null,
-      "publishedAt": "2025-11-26T08:07:59Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/12d-lost-weight/",
-      "detailPath": "articles/604615c9c0e0053f77a74321.json"
-    },
-    {
-      "id": "3a1a4899117b44b1c2be3925",
-      "title": "IG 出「新」功能了！",
-      "summary": "你是否是 IG 的重度使用者呢？ 如果是的話，恭喜你！現在 IG 推出留言區的圖片功能，以後留言可以放圖片了哦！IG 變得更好用了呢！ 看到這則「新」聞，Eddie 以爲自己穿越到 10 年前。 在這裡大膽推測，2 年後，IG 即將推出新功能，留言區的網址，具備超連結，可以直接點擊！ （爲了不讓你離開 IG 連網路基本技術的超連結都不給你啊！）",
-      "image": null,
-      "publishedAt": "2025-11-26T07:52:52Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/ig-comment-photo/",
-      "detailPath": "articles/3a1a4899117b44b1c2be3925.json"
-    },
-    {
-      "id": "de382bdf8600b63ca185dedd",
-      "title": "Marconi 的和平預言",
-      "summary": "義大利發明家 Guglielmo Marconi 發明了實用的無線電報系統，讓人類首次能跨越海洋即時通訊，並在 1909 年時獲得了諾貝爾物理學獎。",
-      "image": null,
-      "publishedAt": "2025-11-26T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/marconi-was-wrong",
-      "detailPath": "articles/de382bdf8600b63ca185dedd.json"
-    },
-    {
-      "id": "3f18bba70618445f8d215a0b",
-      "title": "在开源中使用 LLM",
-      "summary": "越来越多的开发者开始使用 LLM 等 AI 工具，过去半年我看到不少相关讨论：有人非常反感使用 LLM 工具，有人保持中立，但确实有相当数量的 AI 生成 PR 给开源项目维护者带来了负担和困扰。 现在出现了一些新苗头，比如 GitHub 账号也开始“养号”。我推测大概有以下几个原因： 为了加密货币空投 2023–2024 年类似的情况比较多，有些加密货币项目会根据开发者的 GitHub 公开提交记录进行空投。如果一个账号给项目方关注的项目提过 PR，就更容易获得。例如 Rust 在区块链领域用得比较多，所以 Rust compiler 项目是比较容易获得空投的。我自己也因为一些开源记录拿到过空投，当时兑换了 1 万多人民币。我看到不少 Rust 社区维护者也得到了空投，不过他们对加密货币普遍不感兴趣；也有个…",
-      "image": "http://catcoding.me/images/ob_pasted-image-20251126091545.png",
-      "publishedAt": "2025-11-26T02:15:38Z",
-      "sourceId": "82c4bcb6bba028cf",
-      "sourceTitle": "程序员的喵",
-      "link": "http://catcoding.me/p/llm-in-open-source/",
-      "detailPath": "articles/3f18bba70618445f8d215a0b.json"
-    },
-    {
-      "id": "2d7696c7ebc180768eb7c771",
-      "title": "Gap一年后的找工总结",
-      "summary": "我的背景：程序员，6年多大厂经验，从2024年下半年开始gap，2025年11月找到新工作。 2025年的找工时间线： 6月中下旬：做找工的心理建设，开始制定计划 7-8月：不那么投入地刷题和学习system design，改了第一版简历 9-10月：投入地学习，改简历，投简历，mock interview，正式面试，间歇性崩溃 11月：找到新工作 平均下来，我每天大概花3-4个小时专注地学习。总共投了二十几个岗位，最终拿到的offer是朋友内推的岗位。 本篇内容有： 我找工作的几个阶段 我准备了的几个板块和推荐资料 我的经历 写在前面的disclaimer：个人经验仅供参考，分享经历不代表我认同任何一步，或是整个找工的机制。关于找工作的更深的思考按下不表，本篇绝大部分只到事实性的陈述为止。 前期准备 做好心…",
-      "image": null,
-      "publishedAt": "2025-11-26T00:40:24Z",
-      "sourceId": "84f2f6a0935bda85",
-      "sourceTitle": "长夏无事",
-      "link": "https://changxiawushi.github.io/posts/2025-post-gap-year-job-search/",
-      "detailPath": "articles/2d7696c7ebc180768eb7c771.json"
     }
   ]
 }

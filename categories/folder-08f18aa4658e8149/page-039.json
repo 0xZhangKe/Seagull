@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "7efd1da8c1de0933fa643668",
+      "title": "Android Perfetto 系列 13：Perfetto SDK、Track Event 与 App 现场 Trace",
+      "summary": "系统 Trace 能显示线程、CPU、帧和 Binder 等系统事件；播放器的 frame id、游戏 scene 名称或业务队列里的等待时间，需要应用自己提供。缺少这些标记时，一段主线程耗时只能定位到系统活动，难以对应业务阶段。 Perfetto SDK 的 Track Event 可以记录解码、纹理上传、队列深度和跨线程任务 ID。与系统轨道放在同一个时间窗口后，能先找到业务候选阶段，再用 RenderThread、GPU 和 FrameTimeline 验证它是否影响了可见帧。 接入前要先定事件名称、参数单位和采样频率。否则埋点虽然能显示在 UI 中，后续 SQL 仍无法稳定地按业务阶段聚合。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:13:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-13-Track-Event-SDK/",
+      "detailPath": "articles/7efd1da8c1de0933fa643668.json"
+    },
+    {
+      "id": "680345d5a59550c7fdf8d2ce",
+      "title": "Android Perfetto 系列 12：Trace 数据流与丢失排查",
+      "summary": "一份 Trace 能在 UI 里打开、SQL 也查得到行，仍可能在采集中丢过数据。线程状态缺一段、进程名对不上、Track Event 只有 ID 没有名称时，先查数据丢在哪一层，再决定哪些分析还能继续。 SQL 只能度量留下来的事件。丢失发生在 ftrace、producer 共享内存还是 central buffer，影响的查询不同。看到一条 ftrace loss，我不会立刻扔掉整份 Trace；先查它影响的是调度、业务标记，还是帧数据。 下文沿事件从内核进入 Trace 文件的路径检查 ftrace、producer 共享内存、central buffer、增量状态和 flush。每一处都有对应的 stats 线索和下一次采集时可调整的配置。",
+      "image": null,
+      "publishedAt": "2026-05-04T02:12:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/05/04/Android-Perfetto-12-Trace-Dataflow-And-Loss/",
+      "detailPath": "articles/680345d5a59550c7fdf8d2ce.json"
+    },
+    {
       "id": "6a4ce8db6e8415767444c6d9",
       "title": "Android Perfetto 系列 11：PerfettoSQL、Trace Processor 与回归检测",
       "summary": "在 Perfetto UI 里框出问题窗口，看主线程、RenderThread 和 CPU 状态，再截几张图，单次定位很方便。换一份 Trace 或换一台设备，截图里的判断就难以按同一口径重算。我更关心的是：下次拿到同一类问题，还能不能算出可复查的数字。 PerfettoSQL 与 Trace Processor 可以把时间窗口、线程身份和耗时口径写进查询，再让 Python 对多份 Trace 执行同一段 SQL。这样复测版本时，能回到每份原始 Trace 核对数字。 下面从一条手工判断出发，逐步得到可批量执行的查询和结构化输出。示例代码需要替换目标进程、时间窗口和采集条件后再用于自己的场景。",
@@ -637,28 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/blind-box-bad/",
       "detailPath": "articles/17890615fa30c478224e1ea9.json"
-    },
-    {
-      "id": "c9172ff929e27c050d6d10f8",
-      "title": "万字长文推演：手机不再从 App 开始，Agent OS 如何接管任务入口",
-      "summary": "以 2026 年 4 月 27 日郭明錤关于 OpenAI 手机的产业链消息为起点，从 Android 手机从业者视角，推演手机与 AI 融合之后的系统形态。 引言：这不是一台新手机的问题 郭明錤这条消息最值得关注的地方，不在 2028 年量产这个时间点，也不在联发科、Qualcomm、立讯分别处在什么供应位置。 它把问题推到了系统层： 如果用户的主要目的从打开 App 转向完成任务，手机操作系统应该长什么样？ 这句话听起来像 UI 变化，但站在 Android 从业者视角，它牵动的是一整套系统结构：Launcher、通知、权限、IPC、App 能力声明、模型运行时、TEE、端云同步、任务状态机、审计记录、支付确认、开发者分成，都会被重新审视。 过去几年，AI 手机的讨论大多停在功能层。厂商讲 AI 修图、A…",
-      "image": null,
-      "publishedAt": "2026-04-28T06:57:22Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2026/04/28/Agent-OS-Task-Entry/",
-      "detailPath": "articles/c9172ff929e27c050d6d10f8.json"
-    },
-    {
-      "id": "8fc296743018e202b2cb6803",
-      "title": "AI、生產力與知識的內化",
-      "summary": "這是我的「 BlogBlog 同樂會 - 2026 年 4 月 」的投稿文章。本月主題是「 生產力 」，由 Wen 主持。如果你有自己的部落格，歡迎一起來參加！ 之前我透過我有在 RSS 訂閱的某英文 blog 網站上面的一篇 文章 發現到這篇題爲 The machines are fine. I’m worried about us. 1 的長文。 我斷斷續續地花了總共大概半小時才把那篇文章的全文讀完，而該文章要表達的主要論點讓我覺得很有共鳴。大體而言，該文章以學術研究作爲主要切入點，描述對生成式 AI 的依賴所造成的 cognitive offloading 2 現象，並對此表達關切。 該文章講述了一個以兩位新進博士生 Alice 與 Bob 作爲主角的假想案例。前者願意走傳統的學習路線——細讀論文、構思…",
-      "image": null,
-      "publishedAt": "2026-04-28T06:46:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/ai-productivity-and-internalisation-of-knowledge/",
-      "detailPath": "articles/8fc296743018e202b2cb6803.json"
     }
   ]
 }

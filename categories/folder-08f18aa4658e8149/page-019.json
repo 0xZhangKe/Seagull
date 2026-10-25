@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "57eaf4d23b042e0f3f8d1edd",
+      "title": "山里面的夏天",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2026-08-15T15:00:00Z",
+      "sourceId": "b6f0cdd7ba01970a",
+      "sourceTitle": "夕时",
+      "link": "https://www.iyuxiyang.com/Moment/i2026/278.html",
+      "detailPath": "articles/57eaf4d23b042e0f3f8d1edd.json"
+    },
+    {
+      "id": "c0e9786e905594ad83c3f41b",
+      "title": "入蜀记 day448 大学同学相识20周年",
+      "summary": "「大学同学相识20周年。」",
+      "image": null,
+      "publishedAt": "2026-08-15T09:22:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_448/",
+      "detailPath": "articles/c0e9786e905594ad83c3f41b.json"
+    },
+    {
       "id": "6fee6eb73796e803aae8ca71",
       "title": "Debian系统在Btrfs文件系统下使用Swapfile配置休眠功能",
       "summary": "在 上一节的安装 中，我们在Btrfs文件系统下创建了一个swap子卷，并配置了一个swapfile，当swapfile大于电脑物理内存时，可以配置休眠(Hibernate)。休眠是一个可以让电脑把内存写入硬盘（swap分区），电脑断电再重启时可以立即恢复到关机前的状态的功能，话不多说，我们现在开始启用 0.（视情况选做）清除设备上已有swap文件 如果你在之前的安装中已经创建了一个小于你电脑内存大小的swap文件，先关闭swap分区： sudo swapoff -a 之后再把swap文件删除 rm -rf /swap/swapfile 1.创建swap文件 使用下面的命令快速创建swap文件： sudo btrfs filesystem mkswapfile --size 16G /swap/swapfil…",
@@ -637,28 +659,6 @@
       "sourceTitle": "無糧殿",
       "link": "https://wuliangdian.com/posts/how-i-write-posts/",
       "detailPath": "articles/bcba13bb5f3d126071ceba24.json"
-    },
-    {
-      "id": "36b9f39f5ca634d309dadf4f",
-      "title": "創作進行式 #41：改稿地獄",
-      "summary": "封面設計 / 第一次拖稿 / 對自己好一點",
-      "image": "https://media.alexhsu.com/img/book-cover-concepts.webp",
-      "publishedAt": "2026-08-09T05:40:49Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/editing-hell",
-      "detailPath": "articles/36b9f39f5ca634d309dadf4f.json"
-    },
-    {
-      "id": "977e68d8e94a5cf7622d768c",
-      "title": "Xotic EP Booster",
-      "summary": "前言 # 幾乎每個組單顆效果器的電吉他手，都會買這一顆 EP Booster，我不知道在多少人的效果器盤裡看過它的身影。這是我接觸電吉他效果器前，就知道的 Booster 效果器，由此可知它的市佔率有多高。 設計與特色 # 簡單暴力，只有一個 Gain 旋鈕，可以放大 20dB，宣傳文案中有強調是「純粹」 Boost，電壓可接受 9V 到 18V，電壓越高時，Headroom 就會越高，也就更不容易出現失真。 宣傳文案特別強調使用 FET 元件來做放大器，特色是音色會類似真空管，但體積小非常多。它還有把高阻抗（1MΩ）轉低阻抗（1KΩ）的功能，這讓它特別適合放在吉他輸出後，第一顆接的效果器設備。 Xotic EP Booster 的外觀 比較有趣的是，官方介紹這是一顆「純粹」Boost，理論上只純粹放大電壓、…",
-      "image": "https://eddielv.com/articles/ep-booster/ep-booster.webp",
-      "publishedAt": "2026-08-09T04:29:35Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/ep-booster/",
-      "detailPath": "articles/977e68d8e94a5cf7622d768c.json"
     }
   ]
 }

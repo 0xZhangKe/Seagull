@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "e15d0d9db61e0a72b7da0b67",
+      "title": "记解决MaterialButton背景颜色与设置值不同",
+      "summary": "最近的开发过程中，因为设计的风格采用了Android的Material风格，因此我们在项目开发过程中也使用了Android 的Material组件和主题，但是开发过程中法使用MaterialButton的时候，我们给按钮设置的背景颜色和实际展示的背景颜色不一样。网上搜索了一番也没找到原因，于是便开始查阅MateriButton的代码。 经过一番研读终于找到原因，最终通过在style文件中添加如下设置解决。 1 <item name= \"elevationOverlayEnabled\" > false </item> MaterialButton介绍 Google在Material库中给我们提供了MaterialButton组件，我们可以通过设置很多属性来设置它的样式，仅仅背景就可以设置它的边框，背景的圆角，背…",
+      "image": "https://isming.me/images/materialbutton-background-correct.png",
+      "publishedAt": "2024-01-04T14:02:30Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-01-04-android-material-color-issue/?utm_source=rss",
+      "detailPath": "articles/e15d0d9db61e0a72b7da0b67.json"
+    },
+    {
+      "id": "d07b4c985d4e911f3789e0e1",
+      "title": "2023：浏览器从 A 到 Z",
+      "summary": "将 A-Z 逐一输入到 Google Chrome 的地址栏里，Google Chrome 都会自动补全出哪些域名呢（诶？）",
+      "image": "https://img.skk.moe/blog/t2024/2023-browser-from-a-to-z.png",
+      "publishedAt": "2024-01-04T09:56:00Z",
+      "sourceId": "5a840ced5a57e7ff",
+      "sourceTitle": "Sukka's Blog",
+      "link": "https://blog.skk.moe/post/2023-browser-from-a-to-z/",
+      "detailPath": "articles/d07b4c985d4e911f3789e0e1.json"
+    },
+    {
       "id": "324563f236949e5e2d6d4719",
       "title": "2023 Wardrobe Recap | 2023 衣橱回顾",
       "summary": "今年是我记录衣橱消费以来消费最高的一年，总计$2238，消费件数45件。 消费次数最多的是5月去韩国+回国，本以为在韩国会买很多所以1-4月相对比较节制，但是去了之后发觉大部分本土品牌性价比都不是很高（版型样式好看，但是不如同等价位淘宝上的质量），而且是那种需要打扮一下才不会精致土的衣服。每天灰头土脸的社畜也不太合适，所以最终只买了一件depound的海军领上衣（永远无法拒绝海军领！）。 其次是刚过去的12月，第四季度从工作一上手就要教很多人到节假日无心上班，周五下班后经常顺道去2nd street逛逛，基本每次都能淘到惊喜的东西。2nd street应该是搬来纽约后最喜欢的二手店了，比起beacon’s closet，店小不会那么overwhelming，也有很多亚洲牌子。 RTR Rental - $74…",
@@ -637,28 +659,6 @@
       "sourceTitle": "残页的小博客",
       "link": "https://blog.canyie.top/2023/11/12/android-booting-shenanigans-and-magiskinit-analysing/",
       "detailPath": "articles/b5f8e8a8bcc440a84073c48e.json"
-    },
-    {
-      "id": "701b701a7f09b92c96aad50c",
-      "title": "Weekly｜23年11月",
-      "summary": "每周看什么 Media Books 《种子的胜利》 种子的胜利 The triumph of seeds：how grains, nuts, kernels, pulses, and pips conquered the plant kingdom and shaped human history [[美]索尔·汉森（Thor Hanson）] 译者：[杨婷婷] 出品方： 中信出版集团 ISBN: 9787508669816 0 经历了两千年沉睡的种子，为何还能再发芽？ 为了寻找豆肉蔻与胡椒，竟然促成了地理大发现？ 中东的小麦种子，如何决定了不同国家的命运兴衰？ 《种子的胜利》是一本有关种子的书，一本有关种子的自然史与文化史的书。你想了解生命是如何在这个星球上工作的吗？你想了解种子在人类进化和文明繁盛中的作用…",
-      "image": "https://neodb.social/m/book/2021/11/02b9da7610-19fc-48eb-8d36-1a92abc3b654.jpg",
-      "publishedAt": "2023-11-12T05:36:59Z",
-      "sourceId": "a1af81e44a7578b4",
-      "sourceTitle": "Rubber Duck's Bizarre Adventure",
-      "link": "https://0livia99.github.io/2023/weekly-nov06/",
-      "detailPath": "articles/701b701a7f09b92c96aad50c.json"
-    },
-    {
-      "id": "08fd36df4b27d80c56462fbb",
-      "title": "低p程序员互联网求生指南",
-      "summary": "大家好，我小j。 先做个自我介绍，我在国内大厂担任数年的开发工作，但是回顾我的职业生涯，我认为还是充满遗憾和失望的，中间做过几次错误的选择。在此，刚好借助这个文章，我想回顾下之这数年的职业生涯，点出失败的教训，描述下在我认为的互联网公司能安全度日，谋求晋升的要点以及说点大实话，希望能给各位读者学习的地方。想法…",
-      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1699724477373/cc0e26cd-f3eb-4bad-9519-2445b670ac54.jpeg",
-      "publishedAt": "2023-11-11T17:42:05Z",
-      "sourceId": "3c456c66f5f004a8",
-      "sourceTitle": "Jörmungandr's blog",
-      "link": "https://jormungandr.hashnode.dev/p",
-      "detailPath": "articles/08fd36df4b27d80c56462fbb.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "c3d9b24273a190ce2a86ea01",
+      "title": "Android 中的 Activity Launch Mode 详解",
+      "summary": "Android 中的 Activity 有几种比较重要的启动模式,Standard\\SingleTop\\SingleTask\\SingleInstance, 每一种启动模式有不同的使用场景, 网上也有许多分析这个的文章, 这里我以 Demo 的模式, 从 Activity 栈的角度来展示不同启动模式下的 Activity 的行为. Activity 栈是一个先进后出的数据结构, 各位可以关注在每一步操作之后, 栈内容那一栏, 可以更好地帮助理解不同的启动模式. Demo 比较简单, 我也放到了 Github 上, https://github.com/Gracker/AndroidLaunchModeTest , 有兴趣的可以自己跑一下, 看看结果, 只需要修改 StandardActivity 里面的跳转…",
+      "image": null,
+      "publishedAt": "2019-09-01T04:37:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/01/Android-Activity-Lunch-Mode/",
+      "detailPath": "articles/c3d9b24273a190ce2a86ea01.json"
+    },
+    {
+      "id": "2be88150fb5a565fe201eb29",
+      "title": "手动更新KDE Plasma的应用菜单",
+      "summary": "安了很多新软件，发现明明 /usr/share/applications/ 下存在对应的 .desktop 文件，但应用菜单里就是不显示。查了半天发现可以用 kbuildsycoca5 来定位问题。 比如我输入 kbuildsycoca5 ，显示如下： ❯ kbuildsycoca5 kbuildsycoca5 running... kf5.kservice.services: The desktop entry file \" /usr/share/applications/org.kde.kded5.desktop \" has Type= \" SystemService \" instead of \" Application \" or \" Service \" kf5.kservice.sycoca: Inva…",
+      "image": null,
+      "publishedAt": "2019-08-26T13:34:05Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/update_plasma_menu/",
+      "detailPath": "articles/2be88150fb5a565fe201eb29.json"
+    },
+    {
       "id": "a8741cf57c83ae177cf04538",
       "title": "Windows 11 下使用 VS2026 源码编译 OpenSSL 4.0.0",
       "summary": "依赖安装 安装 Strawberry Perl 前往 Strawberry Perl 官网下载并安装 Strawberry Perl 这里选择的是目前最新版本 Strawberry Perl 5.32.1.1 安装过程中务必选择完整安装 安装完成之后会自动添加环境变量，无需手动添加 检查是否已安装 1 perl -v 安装 NASM 前往 NASM 官网下载并安装 NASM 下载源代码 前往 OpenSSL 官网下载 openssl-3.1.3.tar.gz 并解压 编译 VC编译环境 Visual Studio 在安装时必须勾选 Windows C++ 的开发环境，不然没法打开开发人员命令提示符 启动命令行提示工具 【2020年5月25日更新】 使用 VS2022 的开发人员提示工具切换到源码目录，注意选择…",
@@ -637,28 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2019/03/09/langandinfo/",
       "detailPath": "articles/0d3cbe4d875b7f2c045f0814.json"
-    },
-    {
-      "id": "08434e3db2891b193340d9d8",
-      "title": "星巴克观察",
-      "summary": "曾经间隔年在星巴克「混」过大半年，基本上就过去坐一个下午，一来二去和店员都混熟了，到后来甚至团建活动都会叫上我。店长也愿意和我聊天，我们常常并排坐。这样一来我就耳濡目染了星巴克门店的运行模式。我注意到两个方面，一个是新人的培",
-      "image": null,
-      "publishedAt": "2019-03-09T21:32:33Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2019/03/09/starbucksobservation/",
-      "detailPath": "articles/08434e3db2891b193340d9d8.json"
-    },
-    {
-      "id": "3e17c88d2393befbd6523643",
-      "title": "迎接新生命：我们都准备了些什么",
-      "summary": "随着预产期的临近，购买新生儿用品也逐渐成了一项有 deadline 的任务。我们其实有些手足无措，不知从何下手。一方面陷入了“这个也许有用，那个似乎也不能少”的焦虑；另一方面，这些东西我们完全没有接触过，一切都很陌生，也很难真正开始准备。 幸运的是，Miki 的公司给了我们一个新生儿大礼包，里面有尿布、童书、玩具小推车等。其中一些尿布还被用心地堆叠起来，放在一个大篮子里，有点华丽。这算是打了个底，也帮我们开了个头。再合计一下，剩下必须准备的好像就只有配方奶、衣服、婴儿床和安全座椅。刚好对应吃穿住行。 吃 # 对于新生儿，如果以母乳喂养为主，其实好像也不太需要额外准备食物。但我们还是准备了一些配方奶。所谓配方奶，英文其实更直观：infant formula，也就是按照配方调制、可以完全或部分替代母乳的婴儿食品。…",
-      "image": "https://fourhappylions.com/posts/welcome-newborn-early-gears/infant-formula_hu_47fc402be0d2bf15.jpg",
-      "publishedAt": "2019-03-09T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/welcome-newborn-early-gears/",
-      "detailPath": "articles/3e17c88d2393befbd6523643.json"
     }
   ]
 }

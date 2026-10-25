@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "f617d2292e8d18fd06b9b7cf",
+      "title": "全知 AI 夥伴",
+      "summary": "2024 年 12 月初， 推廣 「探討」人工智慧（AI）的科技媒體 The Rundown AI 發佈了微軟（Microsoft）釋出他們 硬塞 「整合」進 Windows 內建的 Edge 瀏覽器的新「AI 夥伴」產品——Copilot Vision 的 「獨家報導」文章 ，並 邀請 「採訪」了 Microsoft AI 的 CEO——Mustafa Suleyman 以讓他 推銷 「解析」他們的這個新產品（ 該採訪的影片連結 ）。 一點開他們的文章，開頭的標語就直接大剌剌地向大家宣佈「我們收了 Microsoft 的錢」，我想我也不必多說什麼了。 而在那訪談中，Mustafa Suleyman 是這樣描述他們的「AI 夥伴」的（ 影片 1:19 處 ）： To me, an AI companion i…",
+      "image": "https://microblog.ttheng.com/blog/img24.jpg",
+      "publishedAt": "2025-11-16T07:51:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/all-knowing-microsoft-ai-companion/",
+      "detailPath": "articles/f617d2292e8d18fd06b9b7cf.json"
+    },
+    {
+      "id": "657ba82e5e7e65ed0db035ee",
+      "title": "Android Perfetto 系列 10：Binder 调度与锁竞争",
+      "summary": "主线程上出现一段长 Binder 调用，慢的可能是服务端处理，也可能是事务派发、服务端线程排队或锁等待。这篇从一次调用出发，用 Perfetto 的 Binder 事件、线程状态和 Java monitor contention，把等待时间逐段分开。 这些信号需要在抓 Trace 时启用；看到主线程 Sleeping 或一个 futex 栈，只能确定它在等待，不能直接写成「Binder 慢」或「Java 锁慢」。",
+      "image": null,
+      "publishedAt": "2025-11-16T07:33:30Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2025/11/16/Android-Perfetto-10-Binder/",
+      "detailPath": "articles/657ba82e5e7e65ed0db035ee.json"
+    },
+    {
       "id": "4beafc13f5e59b9f0b27e37e",
       "title": "Windows 11 到底有多煩？",
       "summary": "每年的這個時候又到了：氣溫開始下降、樹葉開始變黃、微軟開始逼你更新 Windows 11！",
@@ -637,28 +659,6 @@
       "sourceTitle": "Dr.Pika's Blog",
       "link": "https://blog.drpika.com/posts/2025-11-08",
       "detailPath": "articles/e490400769e4bee31e9dd501.json"
-    },
-    {
-      "id": "fd6f086acc415c56c7269b5a",
-      "title": "Youtube Music 廣告，你別鬧了！",
-      "summary": "最近想用自己 YT Music 帳號建立播放清單，因此把帳號切換成自己的免費帳戶（Eddie 有公司的付費帳號），結果發現廣告有很多大問題。 廣告比音樂大聲超多 不用多說了吧，一有廣告，直接被嚇到。 廣告是以視覺爲主 每次聽廣告，都像是在聽一堆雜音，常常整個放完都不知道在廣告什麼，而 Spotify 就沒這問題，廣告內容就像是廣播的廣告一樣。 測試你在不在 如果你在的話，常常都是給你短的廣告，例如 30 秒左右的廣告，即時使用者等 5 秒馬上關掉，也就看了 5/30 = 16%，至少給廣告主看的數字不會太爛。 一旦發現你有幾次沒按略過廣告之後，就會開始給你超長廣告，因爲 YT 知道你現在不在，或是情況不允許按掉廣告。 好幾次洗澡時播放都是這樣，前面 1~2 首都很快就開始播，永遠都聽不到第 3 首，因爲廣告真…",
-      "image": null,
-      "publishedAt": "2025-11-07T17:42:53Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/ytm-ads/",
-      "detailPath": "articles/fd6f086acc415c56c7269b5a.json"
-    },
-    {
-      "id": "b0fb9a32923e1115fc131009",
-      "title": "最近在用Tropy管理我的影像資料",
-      "summary": "我有時候需要記下每張照片的版權資訊、拍攝原因、OCR文字內容等等。 如果把這些文字訊息存放在另一個文字檔或Excel裡面，照片和文字就分散在兩處，查找起來不方便。 最近用上了Tropy，勉强解決了上述麻煩。 Tropy是一個開源的圖片管理軟體，能把所有照片集中存放在一個專案檔裡（以 .tpy 結尾，本質上是SQLite資料庫）。 每張圖片對應一個獨立的條目，使用者可以在條目中寫入圖片的元數據，如拍攝日期、作者、版權資訊等。 Tropy介面 對我很有幫助的功能如下： 可自定義的元數據模板 ：可以根據自己的需求，增減條目的欄位，例如給掃描的檔案圖片新增一個「館藏號」欄位。 筆記與圖像註釋 ：Tropy内建了筆記功能，可以直接在條目中寫入筆記或OCR轉錄文本，并且支持部分Markdown語法和全文檢索，圖片與文本資…",
-      "image": "https://wuliangdian.com/posts/tropy-image-management/tropy-screenshot-gallery2-1440.jpg",
-      "publishedAt": "2025-11-07T11:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/tropy-image-management/",
-      "detailPath": "articles/b0fb9a32923e1115fc131009.json"
     }
   ]
 }

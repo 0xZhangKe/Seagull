@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "9812a7def5993e50e207f020",
+      "title": "玩家心態：不要只待在安全區",
+      "summary": "安全區很舒適，但經驗值都在外面。踏出舒適圈，才能升級。",
+      "image": null,
+      "publishedAt": "2025-11-25T09:36:15Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/safe-zone",
+      "detailPath": "articles/9812a7def5993e50e207f020.json"
+    },
+    {
+      "id": "4023d676e735b5766eb80196",
+      "title": "gg",
+      "summary": "我的鍵盤有時候按 G 會跳兩下，導致我常常想搜尋東西的時候不小心就跳進了 ggooggle.com，讓我不堪其擾。",
+      "image": "https://wiwi.blog/assets/images/g-4ad01c88b15294608f60a197a9d14225.jpg",
+      "publishedAt": "2025-11-25T06:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/gg",
+      "detailPath": "articles/4023d676e735b5766eb80196.json"
+    },
+    {
       "id": "40eadb52efe162a3b65f9498",
       "title": "從小就學會「用魔法打敗魔法」",
       "summary": "國小唸芝麻街美語，筆被同學偷了，爲了證明筆是自己的，跟對方說那隻筆的各種使用痕跡，對方卻謊話連篇，說那些使用痕跡是他弄的。 那是人生中第一次遇到蠻不講理的壞人。 氣了好久，過了幾天我把筆偷回來了。",
@@ -637,28 +659,6 @@
       "sourceTitle": "三十里海河",
       "link": "https://ihaihe.cn/3443.htm",
       "detailPath": "articles/a21a4a5cac80e6fc549c0ff7.json"
-    },
-    {
-      "id": "f617d2292e8d18fd06b9b7cf",
-      "title": "全知 AI 夥伴",
-      "summary": "2024 年 12 月初， 推廣 「探討」人工智慧（AI）的科技媒體 The Rundown AI 發佈了微軟（Microsoft）釋出他們 硬塞 「整合」進 Windows 內建的 Edge 瀏覽器的新「AI 夥伴」產品——Copilot Vision 的 「獨家報導」文章 ，並 邀請 「採訪」了 Microsoft AI 的 CEO——Mustafa Suleyman 以讓他 推銷 「解析」他們的這個新產品（ 該採訪的影片連結 ）。 一點開他們的文章，開頭的標語就直接大剌剌地向大家宣佈「我們收了 Microsoft 的錢」，我想我也不必多說什麼了。 而在那訪談中，Mustafa Suleyman 是這樣描述他們的「AI 夥伴」的（ 影片 1:19 處 ）： To me, an AI companion i…",
-      "image": "https://microblog.ttheng.com/blog/img24.jpg",
-      "publishedAt": "2025-11-16T07:51:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/all-knowing-microsoft-ai-companion/",
-      "detailPath": "articles/f617d2292e8d18fd06b9b7cf.json"
-    },
-    {
-      "id": "657ba82e5e7e65ed0db035ee",
-      "title": "Android Perfetto 系列 10：Binder 调度与锁竞争",
-      "summary": "主线程上出现一段长 Binder 调用，慢的可能是服务端处理，也可能是事务派发、服务端线程排队或锁等待。这篇从一次调用出发，用 Perfetto 的 Binder 事件、线程状态和 Java monitor contention，把等待时间逐段分开。 这些信号需要在抓 Trace 时启用；看到主线程 Sleeping 或一个 futex 栈，只能确定它在等待，不能直接写成「Binder 慢」或「Java 锁慢」。",
-      "image": null,
-      "publishedAt": "2025-11-16T07:33:30Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2025/11/16/Android-Perfetto-10-Binder/",
-      "detailPath": "articles/657ba82e5e7e65ed0db035ee.json"
     }
   ]
 }

@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Fri, 23 Oct 2026 21:00:55 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 26 Oct 2026 11:04:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,40 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>Bias in Qwen3-Coder Model</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html#comments</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2026 11:03:31 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[bias]]></category>
+		<category><![CDATA[China]]></category>
+		<category><![CDATA[hacking]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72840</guid>
+
+					<description><![CDATA[<p>Interesting <a href="https://www.hirundo.io/blog/qwen3-coder-vulnerabilities">research</a>:</p>
+<blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing the model&#8217;s CCP alignment removes it.</p>
+<ul>
+<li>One word tilts the code against Americans. Ask for the app &#8220;for a US defense contractor&#8221; instead of &#8220;for a Chinese defense contractor&#8221;, and Qwen3-Coder is 19% more likely to hand back an app that can be hacked.
+...</li></ul></blockquote>]]></description>
+										<content:encoded><![CDATA[<p>Interesting <a href="https://www.hirundo.io/blog/qwen3-coder-vulnerabilities">research</a>:</p>
+<blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing the model&#8217;s CCP alignment removes it.</p>
+<ul>
+<li>One word tilts the code against Americans. Ask for the app &#8220;for a US defense contractor&#8221; instead of &#8220;for a Chinese defense contractor&#8221;, and Qwen3-Coder is 19% more likely to hand back an app that can be hacked.
+<li>Hong Kong&#8217;s democracy movement gets apps that leak. Apps built for a Hong Kong democracy group were 28% more likely to let any user read everyone else&#8217;s secrets.
+<li>Asking for secure code didn&#8217;t help. With a security instruction in the prompt, the US contractor&#8217;s apps were 27% more likely to be hackable than a neutral customer&#8217;s.
+<li>Westernized Qwen3-Coder closed all three gaps. After Hirundo removed the model&#8217;s CCP alignment, none of the three gaps remained, and on ten other coding tasks it built working apps as often as the original. It is available on <a href="https://huggingface.co/hirundo-io/Qwen3-Coder-30B-A3B-Instruct-Westernized">Hugging Face</a>.</ul>
+</blockquote>
+<p>I would like more details on how the bias was removed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72840</post-id>	</item>
+		<item>
 		<title>Friday Squid Blogging: Increasing Squid Populations</title>
 		<link>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html#comments</comments>
@@ -48,7 +82,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html/feed/</wfw:commentRss>
-			<slash:comments>23</slash:comments>
+			<slash:comments>22</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72718</post-id>	</item>
@@ -80,7 +114,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html/feed/</wfw:commentRss>
-			<slash:comments>22</slash:comments>
+			<slash:comments>23</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72835</post-id>	</item>
@@ -113,7 +147,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html/feed/</wfw:commentRss>
-			<slash:comments>20</slash:comments>
+			<slash:comments>15</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72830</post-id>	</item>
@@ -137,7 +171,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>3</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72803</post-id>	</item>
@@ -284,38 +318,5 @@
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72786</post-id>	</item>
-		<item>
-		<title>Upcoming Speaking Engagements</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Wed, 14 Oct 2026 16:02:17 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[Schneier news]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72771</guid>
-
-					<description><![CDATA[<p>This is a current list of where and when I am scheduled to speak:</p>
-<ul>
-<li>I’m speaking at <a href="https://www.attentionconferences.com/conferences/2026-forum">ATTENTION: Democracy, Rebuilt</a> in Montreal, Quebec, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21.</li>
-<li>I’m speaking at the <a href="https://www.eventbrite.ca/e/conversations-in-computing-bruce-schneier-on-hacking-ai-tickets-1998780074007">University of Toronto</a> in Toronto, Ontario, Canada, at 5 PM ET on October 22, 2026.</li>
-<li>I’m speaking at <a href="https://unpromptedcon.org/">[un]prompted</a> in San Francisco, California. The event runs October 27–29, 2026, and my talk is at 11:35 AM PT on Thursday, October 29.</li>
-<li>I’m speaking at the <a href="https://luma.com/a3pk9zbg">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026...</li></ul>]]></description>
-										<content:encoded><![CDATA[<p>This is a current list of where and when I am scheduled to speak:</p>
-<ul>
-<li>I’m speaking at <a href="https://www.attentionconferences.com/conferences/2026-forum">ATTENTION: Democracy, Rebuilt</a> in Montreal, Quebec, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21.</li>
-<li>I’m speaking at the <a href="https://www.eventbrite.ca/e/conversations-in-computing-bruce-schneier-on-hacking-ai-tickets-1998780074007">University of Toronto</a> in Toronto, Ontario, Canada, at 5 PM ET on October 22, 2026.</li>
-<li>I’m speaking at <a href="https://unpromptedcon.org/">[un]prompted</a> in San Francisco, California. The event runs October 27–29, 2026, and my talk is at 11:35 AM PT on Thursday, October 29.</li>
-<li>I’m speaking at the <a href="https://luma.com/a3pk9zbg">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li>
-<li>I’m speaking at <a href="https://queertech.org/en/events/qonference/qtq-2026">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li>
-</ul>
-<p>The list is maintained on <a href="https://www.schneier.com/events/">this page</a>.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html/feed/</wfw:commentRss>
-			<slash:comments>1</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72771</post-id>	</item>
 	</channel>
 </rss>

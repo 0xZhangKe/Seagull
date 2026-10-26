@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/rss/styles.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>桜庭夜 | 杂话铺子</title><description>一间由桜庭夜经营的贩售闲言碎语的小店</description><link>https://yuuikic.com/</link><language>zh-cn</language><item><title>P2：面向 Nazurin 的 Pixiv 作品悬停预览扩展</title><link>https://yuuikic.com/archives/p2-browser-extension/</link><guid isPermaLink="true">https://yuuikic.com/archives/p2-browser-extension/</guid><description>一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 Nazurin 收藏图片的工作流。</description><pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate><content:encoded><![CDATA[<p>::github{repo="Yuuikic/pixiv-preview"}</p>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/rss/styles.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>桜庭夜 | 杂话铺子</title><description>一间由桜庭夜经营的贩售闲言碎语的小店</description><link>https://yuuikic.com/</link><language>zh-cn</language><item><title>P2：面向 Nazurin 的 Pixiv 作品悬停预览扩展</title><link>https://yuuikic.com/archives/p2-browser-extension/</link><guid isPermaLink="true">https://yuuikic.com/archives/p2-browser-extension/</guid><description>一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 Nazurin 收藏图片的工作流。</description><pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate><content:encoded><![CDATA[<div></div>
 <p>P2 是一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 <a href="https://github.com/y-young/nazurin">Nazurin</a> 收藏图片的工作流。</p>
 <p>浏览 Pixiv 的关注动态、搜索结果、排行榜、收藏和用户主页时，无需逐个打开作品页面就能欣赏图片。预览功能开箱即用，也可独立使用，无需配置 Nazurin。</p>
 <ul>
@@ -15,7 +15,7 @@
 <p>只不过，这半年下来，我心中还有一件关于收集插画的事情不吐不快！这件事也是我想写“当我保存二次元插画时我在想什么”的原由。在一个稀疏平常的夜晚，我打开了半个月没访问的 Pixiv 关注的画师的作品 Feed 页面。然后，我花了一个多小时才把这半个月来错过的作品浏览、整理完。</p>
 <p>整理的流程是怎样的呢？屏幕的 3/4 是 Pixiv 网页，剩下 1/4 是 Telegram 网页版（顺带一提，Telegram Web 的体验非常棒，私以为比 Telegram Desktop 要好用得多），从正方形缩略图窥见感兴趣的作品后，点进作品详情页，再看看是否我真的喜欢这张图。然后，复制我想收集的图片网页链接，粘贴到 <a href="https://github.com/y-young/nazurin/">Nazurin</a> 的 Telegram 机器人中，让 Nazurin 代我将图片保存到我选择的目的地。重复的复制粘贴操作让我头大，输入框聚焦问题又增加了许多鼠标操作，实属费劲。</p>
 <p>比如这样
-<img src="https://yuuikic.com/static/2026-10-05-P2%EF%BC%8C%E8%BD%BB%E9%87%8F%E7%9A%84_Pixiv_%E4%BD%9C%E5%93%81%E6%82%AC%E5%81%9C%E9%A2%84%E8%A7%88%E6%89%A9%E5%B1%95-zqjryw.DYxZSaLg_hD8qY.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-10-05-P2%EF%BC%8C%E8%BD%BB%E9%87%8F%E7%9A%84_Pixiv_%E4%BD%9C%E5%93%81%E6%82%AC%E5%81%9C%E9%A2%84%E8%A7%88%E6%89%A9%E5%B1%95-zqjryw.DYxZSaLg_MUsr8.webp" alt="" /></p>
 <p>后来我发现了 Nazurin 配套的浏览器<a href="https://github.com/y-young/nazurin-extension">扩展程序</a>，省去了复制粘贴的操作，极大地简化了工作流。</p>
 <p>然而，在常年收集 ACG 插画的过程中，还有一个环节困扰着我，那就是收集图片流程的最重要的一步：判断这张插画是否是我真正想收集的。</p>
 <p>从 Pixiv 方形小缩略图中，只能看到图片的局部。我无从知道图片的画幅比例，也没法欣赏图片的细节。甚至连图片是否是R18有时都无法判断出来。所以我只能大致推测“这张图看起来不错”，然后再点进详情页，用 Nazurin 扩展程序收集图片。再早几年，我是将关注列表的所有插画的详情页一并打开，然后再关闭我不感兴趣的插画，用这种方式筛选保留图片。无论哪种方式，都有些麻烦。</p>
@@ -28,11 +28,7 @@
 <p>为了实现和简化这个流程，P2 以悬浮窗的形式展示完整尺寸的图片，并支持通过点击、拖拽和快捷键的方式使悬浮窗“留驻”，最终用户可以发送悬浮窗对应的作品链接给 Nazurin，以此实现便捷的 Pixiv 平台的 Nazurin 收集插画功能。</p>
 <p>那么，在日常使用时，只需要“悬停-预览-按下快捷键（默认为D）”，就能将图片交给 Nazurin 收集处理了。不需要将鼠标移出浏览器视口，不需要鼠标点击，一气呵成。</p>
 <p>如果觉得一次只 D 一张图片还是麻烦，那么可以将想要收集的图片的预览浮窗按 S 键留驻，然后通过 <code>Shift</code>+ <code>D</code> 批量提交给 Nazurin。当屏幕尺寸够大（或者视口缩放合适）时，开启“自动排列留驻窗”后，浮窗在留驻时便能自动缩放并移动到页面两侧空白区域，从而避免遮挡内容。</p>
-
-        <video controls preload="metadata">
-          <source src="https://yuuikic.com/assets/p2.mp4" type="video/mp4"></source>
-          <p>您的 RSS 阅读器不支持 HTML5 视频播放。<a href="https://yuuikic.com/assets/p2.mp4">点击下载视频</a></p>
-        </video>
+<div><video controls preload="metadata"><source src="https://yuuikic.com/_directive-media/assets/p2.mp4"></source><p><a href="https://yuuikic.com/_directive-media/assets/p2.mp4">点击下载视频</a></p></video></div>
 <p>如果你恰巧是一位 Snipaste 的用户，那么你或许对浮窗的操控方式会非常熟悉。除了一般的拖动窗口边缘来缩放浮窗，你还可以使用鼠标滚轮来达到同样的目的。另外，通过双击浮窗，可以更简单地关闭浮窗。</p>
 <p>想关闭一个浮窗的时候，或许还会不由自主的按下 <code>ESC</code> 键，但 ESC 键在 P2 中被当做“关闭所有浮窗”的快捷键来使用了。所以为了避免误操作，在按下 ESC 键的 10 秒内，只要页面不切换/刷新，再次按下 ESC 键，仍能够在相同的位置、还原被误关闭的浮窗。</p>
 <p>虽然 P2 实现了便捷的预览和与 Nazurin 协作的工作流，但是受限于 Nazurin，P2 只能监控是否成功将连接提交给 Nazurin，而不能监控 Nazurin 是否完成了图片的收集工作。在不良的网络环境下，Nazurin 很有可能出现收集失败的情况，因此请务必在通过 P2 批量收集图片完成后，再检查 Nazurin Bot 的日志消息，以确保图片收集工作流正常完成。</p>
@@ -83,7 +79,7 @@
             </p>
           ]]></content:encoded></item><item><title>日本纪行 Extra Edition</title><link>https://yuuikic.com/archives/japan-2025-extra-edition/</link><guid isPermaLink="true">https://yuuikic.com/archives/japan-2025-extra-edition/</guid><description>让「我们」在日本重逢吧。</description><pubDate>Wed, 13 May 2026 12:35:00 GMT</pubDate><content:encoded><![CDATA[<center>↓↓↓ Click ↓↓↓</center>
 <center><a href="https://yuuikic.com/japan-2025/">*⑅︎୨୧┈︎「日本纪行 Extra Edition」┈︎୨୧⑅︎*</a></center>
-<p><img src="https://yuuikic.com/static/cover-japan-2025-extra-edition.BDLChGk3_1sSQBO.webp" alt="japan-2025-extra-edition" /></p>
+<p><img src="https://yuuikic.com/static/cover-japan-2025-extra-edition.BDLChGk3_ZlPbFU.webp" alt="japan-2025-extra-edition" /></p>
             <br />
             <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
             <p style="text-align:center;color:#888;font-size:0.9em">
@@ -97,7 +93,7 @@
 <h2>引子</h2>
 <p>从第一次产生“去日本”的念头，到如今应该也有十多年了。</p>
 <p>一名成天胡思乱想的初中生二次元产生“去日本”的念头大概并不鲜有，而真正让我念头变得更具体的契机，是当年哔哩哔哩有一个“bilibili yoo”的……旅游业务？大抵就是bilibili和旅行社合作的旅游项目，组团带着二次元用户去日本游二次元。</p>
-<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-yp76r9.CJd1fUxr_2bRa6n.webp" alt="" />
+<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-yp76r9.CJd1fUxr_H5iDX.webp" alt="" />
 图片来自网络</p>
 <p>但是中国小县城初中生出国旅游并不现实。等到成年后上了大学，又产生了去日本的念头，但是一个小县城出身的普通大学生出国旅游，也不太现实。不是时间、金钱受限，这些倒是是最好解决的。最难解决的是眼界、想法、性格和行动力，无数的想法都被自身的循规蹈矩和胆小怯懦扼杀。</p>
 <p>2023 年底，我初中时候关注的日本户外直播博主复播，又一次勾起了萦绕在心头十多年的“去日本”的想法。然而一拖又是 2 年。</p>
@@ -119,20 +115,20 @@
 <p>对个大头鬼啊！我朋友除了对东京、镰仓、青森有一些模糊的印象和期待之外，对日本的其他地方似乎既没兴趣，也不想了解。当推进旅行计划的进一步细化时，我朋友总会对我说：“我觉得旅游最重要的是感受‘氛围’”——“氛围”ってなんだよ！你去日本是要“氛围编程”吗？Vibe Coding 对吧，わかる わかる，我也是很时髦的！</p>
 <p>这，这不对吧？違う！これが全然違う！</p>
 <p>嘛，就这样，我的日本旅行开始了。</p>
-<p><img src="https://yuuikic.com/static/prologue-1.Cz_cK32K_ZLWEKq.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/prologue-1.Cz_cK32K_pVI0Q.webp" alt="" /></p>
 <hr />
 <h2>Day 1 日本初见，大阪</h2>
 <p>兑换 JR PASS 是在日本的第一次沟通，在前往 JR 柜台的时候我很是忐忑。然后，遇到了会说中文的 JR 柜员……应该是歪打误撞到了中文服务的柜台。</p>
 <p>旅行共 9 天，而我买的是 7 天的 JR PASS，所以按照计划第一天是不使用 JR PASS 的，于是我又去绿色窗口买去往大阪的 HARUKA 列车车票，顺便破开了10000日元的钞票。在站台等车的时候，看到了自动售货机，于是兴冲冲地跑去买了瓶桃子味い・ろ・は・す（没错，因为一色伊吕波，所以我的第一瓶日本饮料买了irohasu），也体验到了日本投币式售货机先投币再选商品的逻辑。</p>
 <p>不一会儿时间，就等来了 HARUKA，惊喜地发现 HARUKA 竟是 Hello Kitty 主题，车厢内也有 Hello Kitty 的元素，之前完全没了解到。</p>
-<p><img src="https://yuuikic.com/static/day1-1.DOynwjxP_Z2iwYg0.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day1-1.DOynwjxP_Z1BoEL.webp" alt="" /></p>
 <p>关西机场是一个海上机场，所以路途中列车窗外便是海景。是日天朗气清，久违地再次见到令人神清气爽的海景。</p>
-<p><img src="https://yuuikic.com/static/day1-2.CUhQX1OY_Z1QltB6.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day1-2.CUhQX1OY_pz5Y8.webp" alt="" /></p>
 <p>计划里并没有安排大阪的行程，所以酒店其实定在了京都。但是本着来都来了的精神，还是准备稍微转转。从大阪站出来，拖着个行李箱吭哧哐啷地在日本的街上走着，好像有些尴尬。绕了好一会儿，找到个行李寄存处，转换成轻装上阵。</p>
 <p>首先跑去心斋桥和道顿堀凑了个热闹，拍了拍照，吃了一份有章鱼的章鱼烧，然后跑去附近的一家名为“难波肉剧场”的店吃晚饭。</p>
-<p><img src="https://yuuikic.com/static/day1-3.CdU_ozPn_Z1h5jtI.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day1-3.CdU_ozPn_Z1Nlahe.webp" alt="" /></p>
 <p>日本餐厅在入口处买“食券”的流程也挺神奇的，国内很少有这个步骤吧。在点餐机买食券点完餐后不知所措，跟吧台里的服务员挥了挥手，然后把我们带到了一个空位。在肉剧场吃了一碗烤肉盖饭。烤肉盖饭绝赞。</p>
-<p><img src="https://yuuikic.com/static/day1-4.CTl7bsv5_1RsdD8.webp" alt="" />
+<p><img src="https://yuuikic.com/static/day1-4.CTl7bsv5_1dsGQi.webp" alt="" />
 <img src="https://yuuikic.com/static/day1-5.DA0qdl55_2h3dyC.webp" alt="" /></p>
 <p>吃完晚饭后，填饱了肚子，就前往电电城搞点精神食粮二次元。去 animate 的途中路过了一条站着好多揽客……女仆（？）的路，在路边大概隔着三五米就有一名，然后又十几……几十个？总之社恐见到这个场面直接晕倒，不敢细看。还遇到了好多柏青哥店铺，大开眼界。</p>
 <p>考虑到过几天还要去东京，所以没必要在旅途的一开始就买东西，徒增行李重量。随便逛逛之后，就前往京都。从大阪到京都，虽然是算是去往另一个城市，但是二者距离也不过只有 50 公里，搭乘 JR 京都线不到 30 分钟就到达了。</p>
@@ -145,22 +141,22 @@
 <p>听闻清水寺旁边的二年坂三年坂游客很多，为了拍到清净的坂道，我决定去赶个早集。才怪，虽然我头天晚上是这么想的，但是醒来的时候已经七点多了——那就优哉游哉地慢慢过去吧。</p>
 <p>在酒店附近的全家买了份三明治当早餐，搭乘京都的市营公交代替了一段脚程，然后我们就沿着东大路通往南边的清水寺前进。公交车很有意思，除了“下车时付钱”的逻辑是和国内相反，京都这公交车在上下客的时候，车门的一侧竟然会降低高度，细节很棒。</p>
 <p>天气和昨天一样棒，天空蓝得通透，而且一碧如洗，万里无云。似乎已经很久没见到这么棒的蓝天了。</p>
-<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lz89b8.ClHtOMCD_Z1CDUyC.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lz89b8.ClHtOMCD_ACSNJ.webp" alt="" /></p>
 <p>八点多的京都街道很安静，人和车都不多。去往清水寺的路上经过了八坂神社，八坂神社在日本全国约有3000多间，而京都的是八坂神社之总本社。那么，来都来了……</p>
-<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4e4glz.DRsUBT8f_1LmYaJ.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-k92n7f.UxOBpoUT_ZwK2eg.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xrc8dx.Bva-byrc_ZT4mMD.webp" alt="" /></p>
-<p><img src="https://yuuikic.com/static/day2-1.Dl___8Ey_18UeHx.webp" alt="" />
+<p><img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4e4glz.DRsUBT8f_ZID8ga.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-k92n7f.UxOBpoUT_22pY8L.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-20-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xrc8dx.Bva-byrc_1LfW8W.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day2-1.Dl___8Ey_HRWT0.webp" alt="" />
 飛出し注意</p>
 <p>上午九点左右，来到了清水寺附近。因为来的并不算早，所以……这街上还是没几个人啊。只能说中国网红景点那种人流规模的恐怖深深刻印在了脑海中，所以整的我都 PTSD 了。</p>
 <p>没那么多游客真是太好了，不用人挤人真是太好了。二年坂这里从从容容地拍了几张游客纪念照，然后前往清水寺。</p>
-<p><img src="https://yuuikic.com/static/day2-3.rR1YyuHM_1jlRCd.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day2-3.rR1YyuHM_Z1Cmlz2.webp" alt="" /></p>
 <p>清水寺的门票很漂亮，从门票上的雪景可以推断，这门票上的图片应该是随着季节变换的？（比苏州园林的门票不知道高到哪里去了）。</p>
 <p>清水寺这个名字已经听过很多遍了，但是今天第一次知道清水寺的山号是“音羽山”，太好听了吧。</p>
 <p>出现清水寺的动画似乎有点多，所以来到清水寺算是什么动画的圣地巡礼？为什么你们这群日本高中生一修学旅行就来京都啊！不过脑子里第一个想到的动画是春物，这么一想，好像出现清水寺的动画作品也没有很多？我一时也想不出来第二个……就当作清水寺太出名了吧。</p>
 <p>看到了雾气在本堂屋顶上翻滚的有趣现象。</p>
-<p><img src="https://yuuikic.com/static/day2-4.D-Gpcch4_1QTuo7.webp" alt="" />
-<img src="https://yuuikic.com/static/day2-2.BTET2Hzu_1kkWUa.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day2-4.D-Gpcch4_1kDDAB.webp" alt="" />
+<img src="https://yuuikic.com/static/day2-2.BTET2Hzu_Z1YbG8q.webp" alt="" /></p>
 <p>参观完本堂，见到有求签地方。我已经迫不及待了！无论是在动画还是游戏中，求签的场景我已经见了无数遍了，今天，终于轮到我来——我的回合，抽卡！</p>
 <p>抽……抽卡？我晃了好几下签筒，没有反应。只见坐在屋内的奶奶用非常慈祥的眼神看着我，然后拿起手边的一个水杯，做出了翻转水杯的动作。果咩呐塞，我是笨蛋，我把签筒拿反了。重来，我的回合，抽卡！</p>
 <p>哇哦，金色传说。</p>
@@ -170,8 +166,8 @@
 <p>参观完清水寺出来，路上的游客渐多，确实不如早上那会方便拍照了。之后，我和朋友选择分头行动。他要去鸭川走走“感受氛围”，而我选择去岚山那边看看。</p>
 <p>两人一起出来旅行应该是这个样子吗？不过我真的有想去的地方而不是在鸭川坐一下午感受氛围，所以抱歉！</p>
 <p>既然有 JR PASS，那么似乎去京都站坐 JR 山阴本线是最好的选择。步行到了京都站，近距离看到了京都塔，也一睹昨夜没能看到的京都站的真容。</p>
-<p><img src="https://yuuikic.com/static/day2-6.Cxda5nT4_ZAANhm.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ufrxtm.Bz5TbM1K_1Ufmka.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day2-6.Cxda5nT4_Z1AUxXw.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ufrxtm.Bz5TbM1K_Z1ROtbJ.webp" alt="" /></p>
 <p>虽然我知道京都站有可以圣地巡礼的地方，但是因为我没有提前做功课，所以好像有人对我说“前面的区域以后再来探索吧”。所以我决定把逛京都站留到明天。</p>
 <p>在京都站里看了看 JR PASS 的使用方式。嗯，很简单，把 JR PASS 车票塞进闸机后就行了。那么，要上了哦，我不会再搞出什么让人哭笑不得的差错了！</p>
 <p>车票送入闸机，身边想起了让人感到紧张和不悦的警告声，闸机的显示屏上让我去找人工窗口——怎么还是出了差错啊！好在是给工作人员看了 JR PASS 之后，就让我进站台了。</p>
@@ -179,47 +175,47 @@
 <p>我先去了渡月桥，途中经过了很长一段商业街，有好多抹茶点心的店铺，我好想买一份来尝尝。但是我，人見知り超级大爆发，最终没勇气踏入店铺。我到底有多怯懦啊！</p>
 <p>在渡月桥上观察了好一会儿桂川的水流，以及白鹭（还有赤颈鸭）。</p>
 <p>山峦重叠，川流在也视线的尽头隐入山谷之中，景色开阔，但又不失纵深感，实在让人心情愉悦。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-epcrkr.BxtRYcpQ_Z1PB3KC.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-epcrkr.BxtRYcpQ_OIgaX.webp" alt="" /></p>
 <p>浴衣也让人心情愉悦。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-75yxup.CNdvYew7_bv5yS.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-75yxup.CNdvYew7_Z2dlIis.webp" alt="" /></p>
 <p>离开渡月桥，便前往岚山竹林小径。</p>
 <p>因为我去过江苏溧阳的南山竹海，走过竹林“大径”，所以京都岚山的这个竹林小径嘛，对我来讲就不是很有新鲜感了，而我来竹林小径的目的是想亲眼看看春物中比企谷八幡自爆的地方在现实中是什么样子。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o085jc.CctY5YZ5_ZvI4rL.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o085jc.CctY5YZ5_132Vw0.webp" alt="" /></p>
 <p>穿过竹林小径的途中会经过一个踏切，铁路一侧通向隐秘山林隧道，另一侧通往城镇，给这个竹林小径本就幽深的场景更添了些神秘感。</p>
 <p>在踏切内停下来拍了两张照片——然后就被身后的人力车车夫小哥喊“Excuse me，Excuse me”了。</p>
 <p>对不起，我错了，我是バカ外人。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-0hp57k.yjslGErm_oI5K9.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-sd713q.zIy9Mhkb_Z1lO5XW.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-0hp57k.yjslGErm_Z2c9XMF.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-sd713q.zIy9Mhkb_cVTYO.webp" alt="" /></p>
 <p>离开岚山后，失去了目的地。此时大概是下午两点多，正当我想着要不我也去鸭川河堤坐着感受氛围算了，划拉地图的时候看到金阁寺也在京都北边这片，所以临时起意去金阁寺看看。</p>
 <p>金阁寺没有铁路能到达，看来我这张 JR PASS 是暂时无法发挥作用了。前往公交站的路上，看到了有一户人家园子里，立了一尊看上去像兵马俑的雕像，这是何意味？</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lq70v6.BU5ny96u_Z1f8Xjd.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ugkli6.BaVfW20e_rBSgt.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lq70v6.BU5ny96u_1XjXO.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ugkli6.BaVfW20e_1IJbyv.webp" alt="" /></p>
 <p>到了金阁寺附近的公交站，停车时公交车司机还主动给游客指明前往金阁寺的道路，好贴心。</p>
 <p>金阁寺的门票和清水寺的不同，是用一张平安符（御守护）作为入场的凭证，这也太棒了吧。</p>
 <p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zr48ka.CyiOcVEi_Z1FPzBS.webp" alt="" /></p>
 <p>文化有限，所以在金阁寺只能走马观花，环绕一圈多角度观赏噼咔噼咔金光闪闪的金阁寺。</p>
 <p>园内有很多讲解历史和背景知识的看板，但大都仅有日文。太好了，我要用我的半桶水日语水平好好学习下这些知识。比如园内有一座白蛇之冢，看板上大概讲的是白蛇是一个赐予人智慧和才艺的神明的使者，然后后面是怎么回事来着？我忘记啦，诶嘿。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-gv9tvs.BLDjGn6d_1J4vrw.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ck7m68.BY_EH8UZ_CVM27.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-gv9tvs.BLDjGn6d_Z1LlBnD.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ck7m68.BY_EH8UZ_Z1KU1Pe.webp" alt="" /></p>
 <p>逛了一圈，临近出口有求“御朱印”的地方，御朱印是日本神社或寺院授予参拜者的证明，通常由神职人员用毛笔书写寺社名、参拜日期，并盖上红色印章。怎么办，我超想要一个，但是我没有御朱印帐，而且我是个连抹茶冰激凌都不敢去买的胆小鬼。</p>
 <p>然后，我离开了。啊啊啊啊啊啊啊。</p>
 <p>从金阁寺离开，我准备去往賀茂御祖……额，下鸭神社。一般的参观路线应该是从南边的参道往北走，进入神社。但是我等下想去鸭川三角洲，不想绕路，所以坐公交车到了下鸭神社的北侧，等于是从后面进去的？</p>
 <p>（这么一想，好像实在是有些不敬，但一想到我是笨蛋外人，所以一切烦恼就烟消云散了）</p>
 <p>下鸭神社内，似乎在为即将到来的某个活动做准备。从舞殿的布置来看，似乎是跨年时期辞旧迎新的某种活动？下鸭神社和十二地支有很多关联，这里也展出了蛇和马（分别是 2025 和 2026 年的属相）的绘图。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-wnuxv1.g7H-OHCF_ZfQuvo.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-wnuxv1.g7H-OHCF_11fMLD.webp" alt="" /></p>
 <p>下鸭神社的参道穿过一片叫“糺之森”的森林。听到糺之森的时候，我还在想为什么城市里会有森林。穿过参道便能体会到，虽然糺之森的规模与我想象的“森”有差别，但是数目的高度和茂密程度的确称得上是森林了。</p>
 <p>我第一次听说下鸭神社和糺之森，都是在四叠半神话大系里。从糺之森走出来不久，就到了鸭川三角洲。望向东侧，发现了一个电车站叫“出町柳站”，我忽然想起收藏在歌单里的四叠半时光机布鲁斯的主题曲《出町柳平行宇宙》名字里就有“出町柳”。有什么东西辟咔一下脑海中闪过去了！我又突然想起来《春宵苦短少女前进吧》中的“旧书集市之神”的一番话：</p>
 <blockquote>
 <p>一开始，你发现了《福尔摩斯全集》，作者柯南·道尔写的《失落的世界》可说是科幻小说，而这是因为他受了法国作家儒勒·凡尔纳的影响。而凡尔纳会写《桑道夫伯爵》，则是因为尊敬大仲马。日本翻译大仲马的《基督山恩仇记》的，是主持《万朝报》的黑岩泪香，他曾在《明治巴别塔》这本小说以剧中人物出场，而小说的作者山田风太郎在《战中派黑市日记》当中，以一句“劣作”作评不屑一顾的作品，是一本叫《鬼火》的小说，这是横沟正史写的。横沟正史年轻时担任《新青年》杂志的主编……</p>
 </blockquote>
 <p>万事万物是串连在一起的混沌的浆糊。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lch6o6.GrpPh04M_Z2h0iMh.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lch6o6.GrpPh04M_ok19j.webp" alt="" /></p>
 <p>傍晚时分，天空中多了些如丝绸飘柔的云彩。夕阳和云彩纠缠在一起，向鸭川三角洲洒下了温柔又惹人怜爱的落日辉光。</p>
 <p>踏着河中的飞石，前往对岸。拜近日无雨所赐，鸭川的水清澈无比，不紧不慢地潺潺流淌。发现视野里有一只白鹭尤其“活泼好动”，踏着河水，挥舞翅膀，左一下右一下地扑腾。我赶忙举起相机录了一段视频，谁料想这白鹭其实是在追河中的小鱼，所以很幸运的拍到了白鹭捉到鱼和吞咽的视频。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-9g7ljk.Lr_sSTzX_2g7Ia.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-9g7ljk.Lr_sSTzX_Z2mAG9b.webp" alt="" /></p>
 <p>来到岸边的一片空地坐着，给家里人打了个视频电话，聊了聊这两天在日本的见闻。不知何时空地上来了一群中学生，骑着自行车打闹，又在商量着什么。东岸不远处坐着一个看起来像是中东/西亚的小哥，舒展地坐在堤岸上。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lxh020.DtabJViz_11aSCW.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-08oxvj.BLKOZ1UE_1kWu27.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-lxh020.DtabJViz_ho0y1.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-08oxvj.BLKOZ1UE_Z13TjPe.webp" alt="" /></p>
 <p>（我在<a href="https://yuuikic.com/archives/shopping-log-2025/">2025 购物志</a>中用了鸭川三角洲的这张照片，当做本篇游记的“预告”，不知是否有读者在那篇文章里看出来了呢？）</p>
 <p>天色渐沉，肚子饿得咕咕叫，我已经一天没有好好吃饭了。早饭和午饭都是在只需要最低社交能量的 FamilyMart 大饭店解决的，我急需一顿正常的饭！</p>
 <p>也不知道我的朋友下午玩得如何，我们约在京都河原町站前的一家自助涮肉店“しゃぶ葉”汇合。</p>
@@ -232,23 +228,16 @@
 </blockquote>
 <p>想笑就尽管笑吧！</p>
 <p>在河原町站前的繁忙路口，遇见了两名机车佬，骑着复古巡航车出现在视野中，而且他们穿着圣诞老人的服装。对哦，再过两天就是圣诞节了。见到这样有趣的事，我便拿出手机记录，而“机车圣诞老人”也配合地向镜头挥手，镜头感很强！（感谢 LivePhotos）</p>
-
-      <div style="margin:1.5em 0;text-align:center">
-        <img src="https://yuuikic.com/assets/livephotos/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6cg34.webp" alt="Live Photo Cover" />
-        <div style="margin-top:8px;padding:8px;background-color:#f5f5f4;border-radius:4px;color:#57534e;font-size:0.85em">
-          <span style="display:block;margin-bottom:4px">📸 原文此处包含 Live Photo (动态照片)</span>
-          <a href="https://yuuikic.com/archives/japan-2025/" style="color:#5f8487;text-decoration:none;font-weight:bold">点击前往网页版查看动态效果 →</a>
-        </div>
-      </div>
+<div><img src="https://yuuikic.com/assets/livephotos/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6cg34.webp" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p></div>
 <p>ごゆっくり
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cd7tlt.DqKJ2im1_1YzYTa.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-z9nf9e.D_4YuZhI_sYC5I.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cd7tlt.DqKJ2im1_Z1NtPBJ.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-z9nf9e.D_4YuZhI_1K6UnK.webp" alt="" /></p>
 <p>在しゃぶ葉虽然坐的是双人桌，但是不知为何这家店把 2 张双人桌划作一个单元区域，所以隔壁桌坐着一对日本人年轻小情侣，距离我们只有 1 米不到……有点别扭。</p>
 <p>吃完饭出来，陪朋友去附近的商场买拍立得。样品展示在货架上，但是没找到新品。用蹩脚的日语和英语问了店员，结果店员也不清楚新品在哪，于是她又去问了其他同事，然后得知拍立得的新品需要到收银台跟店员说，好家伙，这是为了避免扫货吗。收银台的小姐姐很可爱，虽然很可爱，但是她听不懂或不会说英语。虽然我的英语很烂，但是我的日语——恐怕比英语还不行。好在是店里也有所准备，小姐姐拿出一张商品“菜单”，然后我一顿指手画脚告诉她我想买的相机型号，又告知她我还需要相纸，这时我朋友来了一句，“请问这个相纸适用于这台相机吗？”，给我和收银员小姐姐都说一愣——你说中文有什么用啊，哭哭。</p>
 <p>入夜的京都飘起了小雨。意犹未尽的我们又跑去京都站，看了看点灯后的京都塔。</p>
 <p>疲惫、挣扎又稍稍愉快的第二天终于结束了。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3xzpox.CWNSdInQ_w2rXj.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jpwukz.DywMcwuV_1mM6m8.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3xzpox.CWNSdInQ_Z1ROlT2.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jpwukz.DywMcwuV_Z124Hvd.webp" alt="" /></p>
 <hr />
 <h2>Day 3 宇治入梦</h2>
 <p>经过昨夜的雨，空气中夹杂着异国街道的新鲜的味道，也增添了一丝的寒意。地面仍然是湿漉漉的，乌云也尚未从天空离开。</p>
@@ -257,12 +246,12 @@
 <p>去全家买了三明治和明治牛奶当早餐，然后先去探索一下京都站。京都站在京吹的S2E07作为表演场所出现过，除此之外京都站在摄影师松明的镜头下，表现出的独特建筑和光影魅力让我感到非常震撼。</p>
 <blockquote><p>光と建築のコラボ <a href="https://t.co/Cy5RMonOKZ">pic.twitter.com/Cy5RMonOKZ</a></p>— 松明 (@Tai_Omatsu) <a href="https://twitter.com/Tai_Omatsu/status/2020094186297667866?ref_src=twsrc%5Etfw">February 7, 2026</a></blockquote> 
 <p>无奈天公不作美，阴天的光线环境下，光影魅力是难以见得了。不过这个大阶梯的视觉冲击力的确很强。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ekon38.DBDkxuOj_2uHhbI.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ekon38.DBDkxuOj_Zpp7zV.webp" alt="" /></p>
 <p>来到京都站顶部的露台，几乎可以将城市尽收眼底。可以看到环绕京都的远山，还有山间缥缈的雾气。现代建筑的挤压的角落里，有着日式建筑的古迹。</p>
-<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-doo635.Dr_KQIBn_Zw6wmK.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-u4wov5.Ci0RSKYE_ZBx4zP.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qbdgeu.B-8HVr0y_Z1kYz4C.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2gl6o1.DKGQVulZ_7fwfd.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-doo635.Dr_KQIBn_Z1MicNF.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-u4wov5.Ci0RSKYE_23MflK.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qbdgeu.B-8HVr0y_1kkJQX.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2gl6o1.DKGQVulZ_1G1xdY.webp" alt="" /></p>
 <p>京都站里面还有很多商店，但由于时间关系来不及逛了。</p>
 <p>宇治是京都府管辖的一个市，不过京都市和宇治市之间的距离只有 20 公里不到，所以其实体感上类似于中国大城市的一个区到另一个区，搭乘 JR 奈良线前往宇治十分方便。</p>
 <p>我的 JR PASS 车票依然没法自动过闸机，然而我朋友的车票就可以——为什么我拿到车票的第二天（昨天）就不能正常使用了啊？我又得走人工通道才能进站乘车。</p>
@@ -273,30 +262,30 @@
 <p>激动，超级激动，激动得不得了，激动得快要死了，幸福得喘不过气来。</p>
 <p><img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-sr5vsb.D-L_JyL8_ncMPB.webp" alt="" /></p>
 <p>沿着大陆往东北方向走，路过了一家萨莉亚，然后就到宇治桥了。</p>
-<p><img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-v5k8cd.BruT6CKf_Z2t7SMR.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ai1i4s.D0xD5F8B_ZCTTHA.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-v5k8cd.BruT6CKf_ccq8I.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ai1i4s.D0xD5F8B_22ppe0.webp" alt="" /></p>
 <p>宇治桥（我……我也要悔しい吗？）
-<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5ychqj.BWGg0aZB_ZisUAV.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-22-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5ychqj.BWGg0aZB_1eNeXs.webp" alt="" /></p>
 <p>在河堤上转了一会儿，便去隔壁的商业街逛逛。商店里售卖许多和抹茶有关的东西，这就是宇治抹茶吗？这么一说，我在苏州淮海街买过的一家抹茶冰激凌店就叫做“宇治春风”。</p>
 <p>昨天在岚山的时候非常残念地没有买抹茶甜点，今天我一定不能错过了！（对没错昨天我不想买是因为我要留在明天品尝作为抹茶发源地之一的宇治的正宗宇治抹茶）(嗯嗯你继续狡辩 我在听）然后，就碰到了大名鼎鼎的抹茶饺子。</p>
 <p><a href="https://www.velasx.com/am/6354"> Zeee 的日本游记</a>中提到了抹茶饺子，今天，我也碰到了——所以这难道是什么游览宇治时必定会触发的情节吗？</p>
 <p>此刻产生了一种我在巡礼 Zeee 的巡礼的感觉。</p>
 <p>于是，我在这家店买了抹茶冰激凌。</p>
 <p>谷歌街景中 2024 年这家店门口的看板上的价格便宜 50 日元……
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-06yzvp.C8wAkMqO_Z1RCQ1t.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-06yzvp.C8wAkMqO_ZiQP2H.webp" alt="" /></p>
 <p>吃完甜点，便准备去那家很京吹的餐厅“お肉ダイニングきく”吃午饭。十分不幸，周三是这家店的定休日，所以没能吃上，悲。</p>
 <p>虽然有点饿了，但是我不想让我饿，所以我一点也不饿（胡言乱语中），所以继续逛吧。</p>
 <p>到了喜撰桥旁边，看到一间房子的墙上贴着 2015 年和 2017 年京吹第一、二季放送时候的宇治观光宣传海报。年代有些久远了，海报也都褪了色，与旁边店里的京吹 10 周年挂画行程鲜明对比。</p>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-f3eu1o.BttCMGYe_Z1nFySJ.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mx6kjs.CA1joioH_ZjDlFx.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jhdq7x.lXVxbwsM_23ExYD.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-aankhw.zhd9zNnq_1wMJ9d.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-f3eu1o.BttCMGYe_Z6ygAH.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mx6kjs.CA1joioH_WsVBu.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jhdq7x.lXVxbwsM_ZlcfRH.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-aankhw.zhd9zNnq_Z2gh6mG.webp" alt="" /></p>
 <p>正当我还在沉浸于被京吹包围的愉快之中时，朋友忽然叫住了我：“快看！快看！”。我扭过头去，发现喜撰桥旁边的长椅上方，竟站着一只苍鹭。</p>
 <p>好大一只苍鹭！它气定神闲地站在椅子上，纵使游人对它指指点点，拿出手机拍个不停，它也纹丝不动地站在那儿。</p>
 <p>我想起来京吹某一集中宇治川的静画面，其中就有着苍鹭的身影；我还想起了《花开伊吕波》中就有一只咄咄逼人的苍鹭，还有一集动画标题是“苍鹭狂想曲”。我从来没有在现实中，而且是这么近距离看到过苍鹭。</p>
 <p>长椅上写着“宇治観光 塔の島会”，所以苍鹭，是在给这个协会打工吗？</p>
 <p>协会的徽标上也有一只鸟，不过是鸬鹚，而非苍鹭。宇治在某个时节似乎有鹈饲（鸬鹚捕鱼）的表演。</p>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7uza7m.DyCtEIlw_1DAUHR.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7uza7m.DyCtEIlw_Zzk5jj.webp" alt="" /></p>
 <p>苍鹭身后的台阶下，也就是喜撰桥下有一块石头砌的平台。京吹 S2E1 中的花火大会，久美子和丽奈蹲在桥下，吃着刨冰。久美子的草莓味刨冰洒了出来，然后丽奈有些兴奋地说出“三秒规则”。我太喜欢这段剧情和画面了，喜欢它作为故事的引子，喜欢它作为花火大会的结尾，喜欢久美子的这段话——</p>
 <blockquote>
 <p>虽然此刻并非永恒，最好的朋友也会分开。无论如何祈祷，也无法阻止时间转瞬即逝。若能把名为“现在”的瞬间放进容器，冷冻保存起来就好了。这样一来，就不再需要担惊受怕了。</p>
@@ -308,61 +297,50 @@
 </blockquote>
 <p>动画里把平台画的超狭窄逼仄，但现实中其实还挺宽敞的（毕竟是作为上下船的码头使用）。不过动画中的小平台小到只能容纳两个人，小到两个人只能蹲着、紧紧依偎在一起，在热闹、嘈杂的花火大会中创造了一块只属于两个人的空间——嗯，小平台最好了，小平台赛高。</p>
 <p>实景
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c2atgf.E16IBNQ4_Z2kw3j3.webp" alt="|637x425" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-8chift.D03ykQxd_2n7QcS.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c2atgf.E16IBNQ4_kNgCx.webp" alt="|637x425" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-8chift.D03ykQxd_Z1IWEs.webp" alt="" /></p>
 <p>动画
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-30ffmh.nMxDw6_0_1MQoOc.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dvs859.C1K8FoQZ_ZmA7OT.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-30ffmh.nMxDw6_0_ZjIQuk.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dvs859.C1K8FoQZ_Z2oxduP.webp" alt="" /></p>
 <p>经过喜撰桥，登上了宇治川中的一个汀洲：塔之島 (浮島)，它是宇治公园的一部分。岛的对面是观流桥，既然如此，那么我就停下来好好“观流”一番吧。</p>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-j4mwz9.DeJm-c_1_Zkgz6W.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-j4mwz9.DeJm-c_1_2l3JOD.webp" alt="" /></p>
 <p>大概因为昨夜的降雨，观流桥下看着不起眼的落差，也让水流激起了不小的声势。</p>
 <p>不知不觉间，有个外国老哥朝我们走来，问我们是否能帮他以观流桥为背景拍张照片。好耶，人与人的交流万岁。然后他也帮我们拍了几张照片。</p>
 <p>老哥用的手机是三星某款旗舰（重点在这里吗啊喂！）</p>
 <p>走着走着，欣赏着河岸的风景时，我看到了对岸的“久美子椅”。这个长椅在谷歌地图上是这么写的：久美子椅-京吹圣地（久美子ベンチ）怎么公园的椅子还会有特殊名字啊，不愧是京吹！由于到椅子那儿要走桥上绕一圈回去到对岸，但是现在椅子上没人，我需要抓住这个机会，所以只有我一人超级无敌激动地从河中的宇治公园绕了一圈冲到久美子椅那儿，拍了几张照片，以及让留在河中公园的朋友从远处给我拍了张纪念照。</p>
 <p>唉，可惜是冬天。我好想亲眼看看春天桜満開的久美子ベンチ！</p>
 <p>久美子椅
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-nei7j4.PlMdjwhd_1xrRBW.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1i93j4.CwDERVKp_1n0MOQ.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-nei7j4.PlMdjwhd_ZQoVfo.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1i93j4.CwDERVKp_Z11Q12u.webp" alt="" /></p>
 <p>拍完照，天空开始飘雨，我又一路小跑回到了宇治公园。在朝雾桥上遇到了一老哥，一只手举着手机，另一只手举着相机，视线在手机画面和现实反复横跳——大概是京吹巡礼的同好。他不顾雨水，不顾电子设备，而只是在专心的巡礼，这是何等热情。我已经因为下雨打起了伞，折腾着把相机收到包里，反倒我看起来才是更狼狈的一方。因为社恐，我没有搭话。穿过朝雾桥，来到了宇治川的另一岸。</p>
 <p>从朝雾桥上下来，眼前便是宇治神社，所以顺理成章地开始参观神社。参观神社时，到底要做什么？我脑子中的只有泷老师给情侣游客讲授求签结果好坏的顺序，然后不小心播放了手机里大吉山北中学校（久美子的初中）演奏的《地狱中的奥菲欧》录音——嗯，只能继续走马观花了呢。</p>
 <p>宇治神社是一座以兔子为主题的神社，是因为传说中该神社祭祀的皇子菟道稚郎子命在前往宇治迷路时，受到一只兔子引导而顺利到达。因此，兔子成为神社的象征，寓意“引导世人走向正途”并带回好运（棒读）。神社中有很多兔子的元素。</p>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qj712d.BISnxUCn_2dcpja.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mgsj37.BiBBQzTu_1QHhG9.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qj712d.BISnxUCn_ZbEoyb.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mgsj37.BiBBQzTu_Zx9wbc.webp" alt="" /></p>
 <p>兔子
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zi8itu.Cu5fD7Ko_Z1LoktC.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1ztj3x.COGYJ_y3_Z1KBg65.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zi8itu.Cu5fD7Ko_SUYrX.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1ztj3x.COGYJ_y3_TI3Pv.webp" alt="" /></p>
 <p>青苔覆盖的石灯笼
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-egsfkh.DYSET8om_1bEr1r.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-egsfkh.DYSET8om_Z2jKFNI.webp" alt="" /></p>
 <p>宇治神社里也有写御朱印的地方（授与所）。回想起我昨天在鹿苑寺（金阁寺）纠结半天最后也没能去请个御朱印的经历……实在是不想就这样再继续错过了，于是鼓起勇气去授与所。宇治神社的授与所把朱印帐摆在外面的一个桌子上，我挑选了一个喜欢的，递给工作人员……巫女？确认了我想要的样式后，她说我手中的这本是“サンプル（Sample）”，所以让我把这本放回去。</p>
 <p>我是听懂了日语，还是听懂了英文呢？</p>
 <p>御朱印帐的封面封底像是用线编织加工的，上面还有几只兔子，有着宇治神社自己的特色，很可爱。御朱印并非由前台的巫女所写，而是把朱印帐给了后面的大叔……神官？可恶，我好想要漂亮的巫女小姐的手迹。写完后的朱印帐又由巫女小姐交换给我，给我的时候向我展示了御朱印的内容，还告知了御朱印上的小兔子部分是印章，不是手画的（大概是这个意思，嗯。不过这一点也要交代吗？太细节了吧），以及最后在内容上附了一张空白的纸，来吸收未干的墨迹，防止其染到邻页上。</p>
 <p>至于大叔的书法嘛……</p>
-
-      <div style="margin:1.5em 0;text-align:center">
-        <img src="https://yuuikic.com/assets/livephotos/uji-jinja-goshuin.jpg" alt="Live Photo Cover" />
-        <div style="margin-top:8px;padding:8px;background-color:#f5f5f4;border-radius:4px;color:#57534e;font-size:0.85em">
-          <span style="display:block;margin-bottom:4px">📸 原文此处包含 Live Photo (动态照片)</span>
-          <a href="https://yuuikic.com/archives/japan-2025/" style="color:#5f8487;text-decoration:none;font-weight:bold">点击前往网页版查看动态效果 →</a>
-        </div>
-      </div>
-<p><img src="https://yuuikic.com/static/uji-jinja-goshuin.DOxy0SvC_Z28OBlR.webp" alt="" /></p>
+<div><img src="https://yuuikic.com/assets/livephotos/uji-jinja-goshuin.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p></div>
+<p><img src="https://yuuikic.com/static/uji-jinja-goshuin.DOxy0SvC_I7TYD.webp" alt="" /></p>
 <p>从宇治神社侧庭步出，沿着早蕨之道（さわらびの道）向北漫步，便会途经宇治上神社。这之后的事情，宛若早就亲历过一般，皆有一种旧地重游的熟稔。究竟从何时开始的呢？那些多年前朦胧中萌生的意识，经由积年累月的期盼，冥冥之中逐渐化作了温暖的、宛如夙缘般的信念。</p>
-
-      <div style="margin:1.5em 0;padding:12px;background-color:#f5f5f4;border:1px solid #e7e5e4;border-radius:6px;text-align:center;color:#57534e;font-size:0.9em;font-family:sans-serif">
-        <span style="display:block;margin-bottom:4px">🎵 原文此处包含音乐播放器</span>
-        <a href="https://yuuikic.com/archives/japan-2025/" style="color:#5f8487;text-decoration:none;font-weight:bold;display:inline-block">点击前往网页版收听 →</a>
-      </div>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kclg6d.g7WGWJk5_Ze6ekw.webp" alt="" /></p>
+<div><img src="https://assets.yuuikic.com/usr/uploads/2020/05/580776250.jpg" alt="意識の萌芽" /><p>🎵 意識の萌芽 — 松田彬人</p><a href="https://assets.yuuikic.com/usr/uploads/2020/03/2380374642.mp3">下载音频</a><p><a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版收听 →</a></p></div>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kclg6d.g7WGWJk5_1313Wv.webp" alt="" /></p>
 <p>京吹 S1E8 - 祭典三角
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-syy5w6.DToQL_ly_Z9SluB.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5futzd.HhE7_yo1_Zb38Uq.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-syy5w6.DToQL_ly_2kN6Fg.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5futzd.HhE7_yo1_Z1CFL5D.webp" alt="" /></p>
 <p>虽然现在是冬天，但早蕨之道仍然树木葱茏，就连红叶也尚未凋尽。湿漉漉的空气、古老的神社、从山上潺潺流下的溪水，和这刚落下的新雨一起，翻起了泥土和草木的气味，也翻起了泫然的泪所编织的青涩和潮湿的旧梦。</p>
 <p>走吧，让我继续走吧。然后请带走我，带我去和梦重逢，大吉山。</p>
 <p>早蕨之道
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-wx5xzp.D12Lya6B_ulgwG.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-rdllkf.-HI6lmc__Z1nprKK.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-wx5xzp.D12Lya6B_Z1TvxkE.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-rdllkf.-HI6lmc__1hTRaP.webp" alt="" /></p>
 <p>大吉山登山口
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-v7u666.Cm5b3NRR_1zBsK5.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-v7u666.Cm5b3NRR_ZOfl7g.webp" alt="" /></p>
 <p>印象中大吉山的登山路面，是铺装路面。沿着蜿蜒上山的路，走了不远，路面就成了原始的由石头、泥土和落叶构成非铺装路。丽奈就穿着凉鞋、背着乐器走在这样崎岖的登山路上山。</p>
 <p>离登山口不远、靠近山体的矮墙上，有一份不知何人、何时放在这里的“🎶 吹响吧！上低音号 宇治站周边 圣地巡礼推荐路线”。塑封的 A4 纸静静地躺在通往展望台的登山道边，以一块石头作为镇纸。</p>
 <p>上面记录了一份详细整理出的圣地巡礼游览路线，包含了参观顺序、景点名称、对应的动画场景以及预计游览时间。</p>
@@ -389,10 +367,10 @@
 <p>我从一个平平无奇的小孩子，成为一名平平无奇的学生，又成为一名平平无奇的大人。我总觉得动画里，丽奈口中的“特别”离我还很遥远。虽然我度过了平凡的初中、高中，但是总认为可能性还有很多，“变得特别”的可能性还很多。直到生活从循规蹈矩走向另一种循规蹈矩，囿于一成不变的事物和随波逐流的安心感。想象力，还有曾经有所谓有、无所谓无的愿望，都迅速地从生命中流走。然后，猛然地发觉我再没有机会去追逐“特别”，我连那股冲动都没有了。</p>
 <p>但每当我再听到这段对话，我总觉得有一条从过去的某个时刻为始的延长线，短暂地被扭曲、冻结，然后与现在的我交汇。</p>
 <p>大吉山展望台
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2wxqmx.BSx6Z74G_Z246jGx.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dsw4wg._1QLD-8R_2iV115.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2wxqmx.BSx6Z74G_Be0f3.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dsw4wg._1QLD-8R_Z5UMQg.webp" alt="" /></p>
 <p>俯瞰宇治
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-onbyt4.Dd7l8_w3_KQMvt.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-onbyt4.Dd7l8_w3_Z1D01lR.webp" alt="" /></p>
 <p>在展望台附近逗留了一会儿，这时有一位游客爬山上来了。我一眼认出了他——他就是那位在雨中的朝雾桥上冒雨拍照的老哥，果然，他也是来圣地巡礼的。缘，妙不可言。</p>
 <p>朋友选择继续去山上走走，所以此时只有我和老哥背对背坐在展望台的亭子下。我是社恐（叉腰），所以我是不可能搭话的。又沉默了一会，老哥主动向我搭话：</p>
 <p>“日本人ですか（你是日本人吗）”</p>
@@ -403,12 +381,12 @@
 <p>我已经忘记后续的对话是否进展下去，对话的终点是双方良久的沉默。印象中我们并没交流什么，甚至也没跟对方说自己也是京吹的观众，不过我们互相应该也都猜的出来。感觉，这老哥也挺社恐的。</p>
 <p>等到朋友回来，便准备下山。雨在刚刚的沉默中悄悄地停了，临下山之前，我在展望台上最后看了一眼从云缝隙中尽力挤出来的太阳的光芒。离开的时候，看到老哥在手机上迅速地打字，不知是在记事本上记录巡礼的感想，还是在和好友吐槽在山上遇到中国同好的经历。</p>
 <p>约莫半小时走到山下，回道宇治川的河堤上。太阳已经完全露了出来，残留着雨水的路面和河面，反射出璨璨金光。</p>
-<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xrxx71.DLzvJkse_Z16IElB.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jdds8j.Bd_BGNHO_23rhzi.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1b6daz.BhXEn8tm_1OykXU.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-06635w.M-W-zZpR_Z1cuykE.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xrxx71.DLzvJkse_1yAEzY.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jdds8j.Bd_BGNHO_Z15nE1T.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1b6daz.BhXEn8tm_wqRze.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-06635w.M-W-zZpR_1sOKAV.webp" alt="" /></p>
 <p>用 ChatGPT 抖个机灵
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-si3103.CaU6N0ho_Z1ll2ef.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-si3103.CaU6N0ho_2rAq4B.webp" alt="" /></p>
 <p>时至傍晚，我们还一顿正经饭都没吃。我们绕回了刚才的商店街，朋友买了一串抹茶团子，剩了一颗给我吃，结果我不小心把团子掉地上了……然后又路过了刚才的抹茶饺子，团子掉在地上的惋惜，奇怪事物的新鲜感，还有一天没吃饭的饥饿感一并爆发，我决定买一份来尝尝。</p>
 <p>正如店家看板上写的，这绿色粉末并不是抹茶粉，而是“抹茶盐”。就味道来说，这抹茶盐除了长得像抹茶粉，和抹茶似乎一点关系也没有，没有茶香，齁咸。抹茶色的饺子皮也没有什么抹茶味。</p>
 <p>早知道还买抹茶冰淇淋。</p>
@@ -420,27 +398,27 @@
 <p>我们的邻桌坐着两名中国留学生（猜测，因为他们说中文），所以今天已经至少遇到3名中国人了。在异国他乡遇到国人的感觉真是奇妙呢。</p>
 <p>白天在宇治桥遇到几位似乎是台湾的游客（从口音判断出的），但是朋友非要过去问一嘴“你们是中国人吗”，然后他们说“我们是台湾的”。这个记忆真是太不正确了总之还是删除掉吧</p>
 <p>多利亚饭，好吃！
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-d1decv.DCOzM7_8_1rzL0k.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xqes6v.vhzk6hfK_ZgjFIr.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-d1decv.DCOzM7_8_Z2lu4vz.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-xqes6v.vhzk6hfK_10MByA.webp" alt="" /></p>
 <p>饭吃得差不多，差不多也到了要离开宇治的时间了。DDL 战士的血统觉醒，并且那种“我必须考虑这是否此生仅有的机会”的紧张感袭来，反而让我变得有些惴惴不安，也带来了许多崭新的兴奋。</p>
 <p>“你来付钱，我要出去转一圈。咱们 JR 宇治站见。”说完，我把一万元纸币拍在桌上，兴冲冲地离开萨莉亚。在宇治之行的末尾，我决定去京阪宇治站转一圈。</p>
 <p>灯火渐明的宇治
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-coh2lt.C4asDBX5_Z25j9iU.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-coh2lt.C4asDBX5_2g66q5.webp" alt="" /></p>
 <p>京吹中久美子她们上下学乘坐的是京阪宇治线，而非JR。或许也因此，京阪电车和京吹的联动多，站内能巡礼的元素也多。抓住了蓝调时间的尾巴，穿过宇治桥，便到了京阪宇治站。裸露的混凝土圆拱和动画里一模一样……额，动画和现实一模一样，风格很粗犷，但又不失规律的韵味。事先知道站台内有京吹和源氏物语联动的海报，所以也准备去站台看一看。站台不是免费进的，需要去自动售票机上买一张 150 日元的“入场券”方能进入站台。站台上停了一辆还未发走的列车，由于宇治站是京阪宇治站的首末站，所以等了一会儿列车才离开。</p>
 <p>虽然给每一章海报都拍摄了特写，但是一张张贴过来好麻烦……就只贴部长和队列指挥了（才，才不是有私心呢）</p>
 <p>站内海报
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-y9y384.Brhwjddd_Z1yBwpH.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-y1qq27.BbsVYLNy_Z2g4D26.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-y9y384.Brhwjddd_Zhue7F.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-y1qq27.BbsVYLNy_pfFTu.webp" alt="" /></p>
 <p>京阪宇治站
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7gqi5m.nY-e65HL_1J5v2h.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-evympn.B0ciOkem_iCEz5.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-a91snz.BPXm8VLB_1hf5u4.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-63v5ng.BB6mB1fM_2p987k.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-w6fn80.CUnYktP8_2cvL7r.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7gqi5m.nY-e65HL_ZELiP4.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-evympn.B0ciOkem_Z26e9ig.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-a91snz.BPXm8VLB_xscp8.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-63v5ng.BB6mB1fM_hjeY.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-w6fn80.CUnYktP8_Zcl2JT.webp" alt="" /></p>
 <p>由于在车站里等车离开和拍照耽误了一会，剩余的时间已经不多了。在地图上查了一下，回京都的电车要赶不上了！而这个回京都的时间，是和京都到东京的新干线发车时间咬合的。京阪电车宇治站和萨莉亚之间只隔了一座宇治桥，但是到 JR 宇治站的距离比 3 座宇治桥加起来还要多好多。</p>
 <p>很好，这下我也要在夜幕降临的宇治桥上奔跑了。</p>
 <p>动画中夜晚的宇治川是亮着明亮、朦胧的蓝光，现实中的晚上当然是漆黑一片。要是动画是现实该多好。</p>
-<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-w5g3fq.BXDLq-8W_21x2Vm.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-w5g3fq.BXDLq-8W_ZD6zB8.webp" alt="" /></p>
 <p>和朋友在 JR 宇治站汇合，勉勉强强赶上了回京都的列车。</p>
 <p>列车驶离宇治，遗憾和悲伤逐渐涌上心头。冬天的景色并不饱满，想去的那家餐厅没开门，京阪电车与京吹的上一次联动就在几天前刚刚结束——要是我早来几天，要是我在别的季节来就好了。我应该多停留几天，我还没去北宇治高校，还没去明日香演奏『響け！ユーフォニアム』的河堤。好不容易，梦和现实交汇在一起，我和“我”也在这场梦中重逢。</p>
 <p>随着悲伤袭来的，是“陌生感”，这陌生又使得我更悲伤了。因为梦很难被记住，所以梦是有“稀缺性”的——大脑的本能会将“稀缺性”映射成羡慕、渴望等种种情感。我来到了宇治，这层梦与现实、作品与现实之间朦胧的纸，也被今天的雨水消解，由我亲手捅破了。曾经的梦，不再是唯一的、不可实现的遥远的梦。</p>
@@ -450,7 +428,7 @@
 <p>夜很黑，去往东京新干线的车窗外什么也看不到。如果是天气好的白天，说不定能看到富士山。但是在漆黑的夜间乘车，什么也看不到。3 个小时的车程格外无聊。</p>
 <p>圣诞夜的东京的确有圣诞氛围。刚从复杂的东京站出来，就看到了大厦上的圣诞树。到酒店附近时，十字路口的一角聚集了十几个人在合唱。唱完后，他们欢笑着散开了。</p>
 <p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-syepyk.Y4Zu6uSO_igRXl.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zbqirh.D4sB97mT_Z1wiAEa.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zbqirh.D4sB97mT_Zfbim8.webp" alt="" /></p>
 <p>初来乍到东京，看到如此都市之繁华，我觉得曾经的记忆和期待变得更遥远了。这距离感是来自于我恋旧的情绪，还是对现实的抗拒？</p>
 <p>离开宇治时觉得时光太短暂，此刻又觉得今日太漫长。的确，从关西到关东，从古朴小城到繁华都市，从入梦到梦醒。这一切，都令我感到恍惚。</p>
 <hr />
@@ -461,25 +439,25 @@
 <p>从关西到关东，依然没有逃离阴雨天的包围，今天的天气仍然是阴沉沉的。</p>
 <p>没走几分钟就到了浅草寺的雷门。浅草寺不愧是大都市的景区，雷门前面自然有很多人停下来拍照留念，这里的热闹程度已经和国内的景点没什么太大差别了，所以反倒更有些亲切感（啊？）</p>
 <p>回国了
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-tpykq2.5Sasm_Gv_Z1kzURm.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ddt9z1.V9FP7paC_ZXHBgi.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-tpykq2.5Sasm_Gv_1kJo4e.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ddt9z1.V9FP7paC_A3oHt.webp" alt="" /></p>
 <p>穿过拥挤的商店街……人实在太多了，弄得我无心观赏，也无心拍照。走马观花转了一圈，回到了浅草寺御朱印的授与所，求一个御朱印当做打卡纪念了……按理来说，御朱印是在神社寺庙参拜后的一个“证明”，所以我应该先参拜才是。</p>
 <p>浅草寺的御朱印有两种样式，分别是本尊（圣观世音菩萨）的御朱印以及浅草名胜“七福神”中大黑天的御朱印。朋友选了观世音御朱印，而我则选了大黑天。浅草寺的御朱印授与形式和宇治神社的一样，是把御朱印帐交给坐在后面屋里的神官来写。而由于在浅草寺求御朱印的人实在太多，所以授与所也就有了叫号服务，在把我的御朱印帐拿走的同时，给了我一张号牌。叫号的行为也是非常国际化，工作人员直接用英文读出数字——十分都市、现代、效率。</p>
 <p>按照计划，我们准备去东京国立博物馆参观，结果遇到了博物馆年末闭馆……J 人失格。不，我本就不是 J 人！是这个不做计划和搜集信息的朋友强迫我变成 J 人的，我到底，会变成什么样子呢（哭泣）</p>
 <p>然后，世界线就变动了。我不做计划，朋友也没有计划，只要没有计划，一方就无需向另一方的计划妥协——太好了，很简单吧，没有人会受伤的世界完成了。</p>
 <p>迷茫之时，只要看着远处，一切都会慢慢好起来的！所以，我们决定去天空树一探究竟。</p>
-<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-896l56.Sb9kLmx9_ZDO0N2.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5mw65b.BF_Chaz0_2uprcE.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-s73o4z.CFM64bg3_Z22M1JP.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-896l56.Sb9kLmx9_2sCa64.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5mw65b.BF_Chaz0_Z2vwQYc.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-s73o4z.CFM64bg3_2iCdYa.webp" alt="" /></p>
 <p>阴天的感觉，好像也挺不错的。</p>
 <p>从天空树下来，遇到了《药屋少女的呢喃》原作展，今天正好是展出的最后一天。从外面偷窥了一下，又衡量了下票价，算啦算啦。</p>
 <p>天空树下面还有一家吉卜力的周边商店“どんぐり共和国（橡子共和国）”。里面的布置和商品很有趣，即便什么都不买也很有趣！</p>
-<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jd6oe4.CkCy-jBo_W3eJB.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-vb2cl6.flNskvDq_Z1MHIJI.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-64jc9g.D_1zR9U7_ZEua9s.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jd6oe4.CkCy-jBo_Z1rNz7J.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-vb2cl6.flNskvDq_RBAbR.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-64jc9g.D_1zR9U7_20P9M8.webp" alt="" /></p>
 <p>我买了一本《千与千寻》的分镜脚本，朋友在《天空之城》和《哈尔的移动城堡之间》犹豫了半天，选了《天空之城》的分镜脚本。</p>
 <p>中午在松屋大饭店吃了一顿满配定食。在这种快餐店点满配的套餐应该是最亏的，但我就是想吃嘛！而且这有一晚葱诶，葱也是蔬菜！</p>
-<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-btoe0g.COFnvSIL_Z6cfk9.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-24-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-btoe0g.COFnvSIL_Z23WdeY.webp" alt="" /></p>
 <p>饱餐之后的下一个目的地是——AKIHABARA，秋叶原（为什么是 Aki Ha Bara，而不是 Aki Ba Hara 呢？）</p>
 <p>第一次知道秋叶原这地方，大概是从《我的妹妹哪有这么可爱》里知道的。再后来，就是从各种旅游博主的视频中看到秋叶原了。哦对，前几年还会有很多二游在秋叶原的打广告。</p>
 <p>换初中的我来日本旅游，我的最优先事项肯定是秋叶原。秋叶原，这可是被当成“二次元圣地”一样的地方啊！何况我上初中时还是十多年前，当时的日本文旅的影响力可比现在强得多。还有那个年代刚刚发展起来的日本旅游视频领域，博主们的选题、创作也比如今要多彩得多。初中的看动画二次元小孩看到这些，可不得心驰神往嘛。</p>
@@ -491,7 +469,7 @@
 <p>啊？我就这么像中国游客吗？</p>
 <p>正经事做完了，该去搞点二次元了！在 Animate 逛一圈，买本春物的画集、春物的Yui's Story。之后，还去了 Bookoff 看看。无论是 Bookoff 还是 Hardoff，这种专营二手物品回收和售卖的商店我此前是见所未见，因此此行专门前往 Bookoff 尝试“捡垃圾”。Bookoff 虽然是“Book”，但里商品种类繁多，不仅有书籍，还有游戏卡带、音像光碟、手办等。我没什么想买的东西，所以就只是在 Bookoff 里闲逛，翻来翻去。</p>
 <p>在这期间，见到了一些有趣的东西，比如R18商品区是真实存在的，还遇见了一本原神的《提瓦特大陆观光指南》，这种正儿八经写出来的不正经东西最有趣了。书里记录了提瓦特大陆某些区域的观光路线，还附有解说词。比如书里记录了这样的一条游览路线：体验龙脊雪山银装素裹的感动！→鹰翔海滩→从高处俯瞰蒙德城→在星落湖边悠哉悠哉→在摘星崖仰望星空，还提醒读者在游览过程中要注意丘丘人和遗迹守卫的攻击——这也太有意思了。而且为什么从龙脊雪山能直接去鹰翔海滩啊？途中路过风起地时难道不参观一下吗？（我怎么也认真起来了啊喂！）</p>
-<p><img src="https://yuuikic.com/static/2026-04-26-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ghiow8.DAHLQLSb_Z17cklF.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-26-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ghiow8.DAHLQLSb_1S6n6P.webp" alt="" /></p>
 <p>逛 CD 区的时候，遇到了 2016 年发售的《刀剑神域音乐集·初回生产限定盘》，收录了刀剑神域前两季和 Extra Edition 的 OST，以及一张收录了 2015 年在横滨演出的Live「ソードアート・オンラインSing All Overtures」的 BD 光盘，供 5 张光碟。刀剑神域嘛，虽然现在不是很喜欢了，但刀剑神域大概算是我对日本动画的喜爱的源头。“初回限定”这几个字听起来很有魔力，那么这套碟片就买下来当做纪念吧。</p>
 <p>说起来，我知道 Bookoff 这个商店，是因为有网友在 Bookoff 里淘到了一本荻pote老师的初画集《あいきょう》。我很喜欢荻pote的画作也很喜欢收集二次元插画，因此我对“在二手书店偶遇喜欢的画集”这样的剧情有些向往。</p>
 <p>Bookoff 的画册区域东西还挺多，我翻看着这些在 Twitter 上看到发售的消息却难以入手画集，不亦乐乎。在一个书架的一个角落，碰见了京吹第3季的 Fan book——这不就是半个月前我在香港信和中心碰到的那本京吹的书吗？香港全新的价格是原价的两倍，Bookoff 卖的二手书比原价还便宜不少。这下不得不买了。</p>
@@ -502,21 +480,21 @@
 <p>我又回到了画册区域，在书架上找到一本点兔的画册。两本书 + 一套 CD，凑够了免税，好耶。</p>
 <p>买到了想要的东西，心满意足。但贪心的我还是想去看看圣诞点灯，于是前往六本木和朋友汇合。</p>
 <p>由于一直在各种店铺里逛，所以没能好好看看秋叶原电器街的街道本身，只留下了几张潦草的照片。</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mxo1km.B9IfUhPK_Z1PWnIu.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-auhl2c.ehwiAg-Q_Z1XB47U.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mxo1km.B9IfUhPK_ZyP5qs.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-auhl2c.ehwiAg-Q_ZGtKOS.webp" alt="" /></p>
 <p>从秋叶原到六本木的过程本应轻松顺利，但是在某个中转车站（应该是JR转都营地铁时）出站时，闸机旁边没有人工柜台。而我的 JRPASS 又不能自助闸机……所以我又选了另一个路线从东京站换乘——东京站肯定有人工。出站的时候我鼓起勇气，问了工作人员我这个 JRPASS 的问题，JR 东日本的帅气工作人员小哥面带微笑地说“It's OK, It's OK”——虽然你长得真得很帅，但是我明明是用日语问你问题，而你却跟我说“It's OK”，显得我很狼狈耶！</p>
 <p>跌跌撞撞地到了六本木。六本木的街上有好多情侣搂搂抱抱在一起，还在公共场合做出很暧昧的动作，这是何等……何等的不知廉耻！（才没有在酸呢，哼）</p>
 <p>在天桥上排队观看了点灯的六本木街道，以及圣诞配色的东京塔。</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7d19za.Cs8kBUhh_Z1H0UD1.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c9zd3e.B-cJ9taI_Z141bG2.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7d19za.Cs8kBUhh_1SLopH.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c9zd3e.B-cJ9taI_uJOhJ.webp" alt="" /></p>
 <p>回去的路上经过了空无一人的地铁过道，有点像那个什么游戏来着？</p>
 <p>好累，我要回酒店休息了。</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4d3yzu.7ZiVLqTZ_22aH2r.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4d3yzu.7ZiVLqTZ_ZmG6OT.webp" alt="" /></p>
 <p>在酒店的电梯里，遇到了一位日本大爷，操着很重的烟嗓跟我说话，内容大概是“这个 APA 酒店开得到处都是广告也很多，让我来体验体验”。什么罐头我说？我只能在一旁“是的是的，没错”。出电梯的时候，大爷问了一句“你们是韩国人吗？”结合今天在秋叶原店里一眼被看出来是中国人的经历，所以此刻没有被认出是中国人虽然有点开心——但是被当做韩国人就没问题了吗！？</p>
 <p>“不，我们是中国人。”我回复道。</p>
 <p>“中国人啊，中国人……”大爷重复念叨着。望着他的背影，电梯门缓缓关闭。</p>
 <p>大概算是战利品
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-64m03b.u5id90sw_1NcizR.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-64m03b.u5id90sw_Z1YRwV2.webp" alt="" /></p>
 <hr />
 <h2>Day 5 东京狂走</h2>
 <p>自从到了东京，朋友时不时、冷不丁就会唱出一句“Stay with me——”，大概是在唱《真夜中のドア〜stay with me》副歌的第一句。据他所说，这首歌和一个名为「SHIBUYA SKY(渋谷スカイ)」的展望台有强相关，尤其是展望台有一个玻璃墙电梯。我对涩谷繁华的十字路口也很感兴趣，所以决定今天去涩谷逛。</p>
@@ -527,71 +505,71 @@
 <p>朋友当即决定取消行程。</p>
 <p>我秉持着“来都来了”精神，决定还是上去看一眼。昨天在阴雨天上了天空树有些遗憾，难得今天天气这么棒，刚下完雨，空气通透，不去看看可惜了吧。本以为又要和朋友分头行动了，但是由于我在网站上预订的两张票在同一个订单内，不能拆开退票，所以分头失败。</p>
 <p>上展望台之前
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3juczb.Dbnwj8zC_ZhFU1W.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3juczb.Dbnwj8zC_Yqng5.webp" alt="" /></p>
 <p>SHIBUYA SKY 展望台四面皆为玻璃，又或许因为 SHIBUYA SKY 的玻璃外墙是垂直而非倾斜建造，以及楼层高度没天空树那么高，所以玻璃墙面的钢架结构要比天空数少得多——所以在 SHIBUYA SKY 的视角窗口的观感比天空树要好得多。</p>
 <p>因为空气通透，所以运气很好，看到了浮在丹泽山脉上方的富士山雪顶。</p>
 <p>没有云的遮挡，不仅天际线更远了，太阳光更强烈。即便是在展望台室内，只要站在阳光下一会，都会热和晒得受不了。</p>
 <p>东京塔和天空树
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-av7tkf.Wq3ZyftM_Z1sjA5h.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-whbnog.DzlyFZCm_1759JJ.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-msyysi.Ccy6cRvF_Z2vYzND.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-av7tkf.Wq3ZyftM_Z1pmGgy.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-whbnog.DzlyFZCm_yuLyV.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-msyysi.Ccy6cRvF_9kJ7W.webp" alt="" /></p>
 <p>我去，是富士山
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kegi9z.DHBxy0_a_1JG1qr.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kegi9z.DHBxy0_a_ZEaMqT.webp" alt="" /></p>
 <p>涩谷十字路口
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5r5r7t.WKwqL5SR_1PXWBF.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5r5r7t.WKwqL5SR_ZxRQfF.webp" alt="" /></p>
 <p>在展望台上参观了一个多小时，等到觉得值回票价后肚子饿了，下楼找饭吃，也正好体验一下如此繁忙的十字路口。</p>
 <p>路口的人没有想象中多。有几位游客举着高高的杆子，连接着一台 360 全景相机，在路口内穿行而过。西北角的 TSUTAYA 玻璃墙上贴了一堆轻小说的封面，还有一大只凉宫春日，不知道商场里在举办什么活动（可恶为什么我当时没进去看一眼啊）</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-igyaot.D2As5kl0_ZQvAVd.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-igyaot.D2As5kl0_1NNI0n.webp" alt="" /></p>
 <p>同样位于西南角的还有大盛堂书店，在书店里顺手买了一本森见登美彦的《春宵苦短，少女前进吧》。结账的时候，柜台的工作人员问我是否要书皮，我说要了之后，他竟然抽出一张褐色的纸，亲手折叠好，给书包上。我原以为只是一张普通的轻薄塑料书皮，没想到竟然是手工书皮，真是麻烦您了！</p>
 <p>路口的东南角停了一辆面包车，车顶上的喇叭非常大声地在“传教”，讲一些灵魂得到救赎之类的东西……在如此繁忙的路口竟然允许这样的行为吗，也是令我大开眼界，不对，大跌眼镜？</p>
 <p>午饭的最初选择是涩谷的一兰拉面，然而需要排一个多小时才能吃上。饥肠辘辘的我们等不了这么长时间，转头去吃了不远处的萨莉亚。去萨莉亚的途中路过了唱片店 Tower Records，在店里发现了很喜欢的歌曲《One more time, One more chance》的碟片，有点后悔没买。店里还有试听的地方，在店里听了 Taylor 和米津玄师。为什么看起来平平无奇的耳机听起来这么棒啊？难道说这就是光碟的魅力？This is true music 😭！</p>
 <p>萨莉亚旁边还有一家全家便利店在和多邻国联动，所以 FamilyMart 变成了 Duomart。商店门口还站着一只绿色猫头鹰“多儿”（多邻国的吉祥物），给它拍照时被它注意到了，它便侧了身子、翘起脚尖跟我打招呼，可爱爆了。</p>
 <p>然而我没有拍到它翘脚的瞬间。</p>
 <p>在涩谷中心街还能看到米津玄师《IRIS OUT》的广告。</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ba440w.DePfooP8_Z2sJ3gF.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o2862z.BSa-zRos_2vsDGm.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ba440w.DePfooP8_1RFcsk.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o2862z.BSa-zRos_6AOO1.webp" alt="" /></p>
 <p>萨莉亚的人也不少，好在桌台数够多，没等几分钟就排到我们了。入座之前服务员向我们告知由于桌台紧张，所以每桌限时用餐 70 分钟，如果接受的话才能进去。难道真会计时每桌的用餐干时间吗？看起来并没有专门的计时器欸。或许虽然这只是个口头的“ルール（规则）”，但大家都会遵守。</p>
 <p>明明点的菜不一样，但是非常巧合的和在宇治吃的萨莉亚花了一样的钱。</p>
 <p>（还在宇治还在宇治还在宇治）</p>
 <p>原本下午的计划是去新宿御苑，但是看地图明治神宫就在附近。来都来了，顺道去明治神宫看看吧。</p>
 <p>计划……已经无所谓了。</p>
 <p>意义不明的扫街
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1cp264.CG2w34b8_Z13CFof.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1mlarz.DhnCoA_u_Z2eQjOX.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cy9bh7.J3JUSlMA_Z2lP6ER.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1qghew.CaLFtPBY_Z1Vxdjl.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-esk7i6.CX-gt7Ne_1iCgxk.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1cp264.CG2w34b8_1BGDxl.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1mlarz.DhnCoA_u_qt06C.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cy9bh7.J3JUSlMA_judgI.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1qghew.CaLFtPBY_IM6Cf.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-esk7i6.CX-gt7Ne_Z16exk1.webp" alt="" /></p>
 <p>从明治神宫的第一个鸟居到正殿，有很长一段路要走。沿途路过了一面“灯笼墙”，在斑驳的阴影下很有韵味。走进一看，“灯笼”上写着各种酒的名字和商标——这原来不是灯笼，是酒桶啊？</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6ua2s.fhFNuEpW_2hB1FW.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6ua2s.fhFNuEpW_Z7fMbo.webp" alt="" /></p>
 <p>在巨树隐天蔽日的路尽头，南神门外，视线豁然开朗。</p>
-<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jrcrc8.CwqlvkR2_HYpqW.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5ostjo.DHtXdu96_Z20KVXu.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jrcrc8.CwqlvkR2_Z1FRoqo.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-27-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-5ostjo.DHtXdu96_EymX6.webp" alt="" /></p>
 <p>本殿东侧，绕着被修建的圆圆的树一圈，有挂放绘马的架子。我凑近，看看人们的愿望和情感的洪流。用中文写的绘马还挺多的，比如——</p>
-<p><img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b5itau.C_go7IuD_Sukoc.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b5itau.C_go7IuD_2aBCGe.webp" alt="" /></p>
 <p>我大抵知道是怎么一回事了。好嘛，这里也有圣地巡礼的。绘马上画的女孩的名字我也听说过，初中时候有朋友用“上杉绘梨衣”作了很久 QQ 昵称。</p>
 <p>来明治神宫前，有位在 IM 群聊结识的网友就在我前脚来明治神宫，他也写了一块绘马。在他“泄露答案”的指导下不费吹灰之力地找到了留下的绘马。</p>
 <p>脑交是何意味
-<img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-yw6ubz.CBtXqzq__Z2j8FCY.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-yw6ubz.CBtXqzq__mbDiB.webp" alt="" /></p>
 <p>见到明治神宫也有御朱印的授与所，所以又兴冲冲地跑去求御朱印。</p>
 <p>明治神宫的御朱印授与和之前去的宇治和浅草都大有不同，明治神宫的御朱印是巫女小姐「一·对·一·当·面·手·写」 的！巫女小姐超级认真，书法很棒，体验独特！</p>
 <p>不愧是供奉曾经的天皇和皇后的地方。</p>
-<p><img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-d9t7eu.BmK1IaBS_Z1jXK7N.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-28-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-d9t7eu.BmK1IaBS_1pHMoi.webp" alt="" /></p>
 <p>离开明治神宫的时候，刚刚日落。我们加入了晚高峰的大军，涌入人潮，然后宛若穿越了一般，从新宿繁华的路口挤出来，捕捉到了蓝紫色交织的天色下的新宿。穿过“思い出横丁”，陪朋友逛了一家羽毛球用品店，打卡了在《你的名字》中见到过的新宿街景，然后我们便又前往了新桥。就像是“打一枪换一个地方”一样，从中午离开 SHIBUYA SKY 展望台之后，我们的行程要不就是“看看周围有什么好玩的”，要不就是“前往地图上之前标点的地方”。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-stvcnu.h5DJfHJ6_1dNkV8.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-stvcnu.h5DJfHJ6_Z1b3sVd.webp" alt="" /></p>
 <p>途经新桥的铁道线路很多，所以新桥自然也是个非常繁华、热闹的地方。新桥站旁边有家“YONEX TOKYO SHOWROOM”，朋友看到后非常兴奋，拉着我去逛。店里的东西非常齐全，店铺也很宽敞（毕竟是叫 SHOWROOM 嘛）。接待的店员和收银员都会说中文（大概也是中国人，名牌上是华人名字），所以从挑选到结账完全没有心智负担……店里限购一人一支球拍，但我朋友想多买一支回国当倒狗，所以借我的名义多买了一支。截至目前，他已经在日本买了四只球拍了。</p>
 <p>今晚的晚饭又是松屋大饭店。</p>
 <p>球拍的赠品：YONEX 达摩胸针
-<img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fihx8m.B0uDnHTn_rnn8K.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fihx8m.B0uDnHTn_Z1vmzL5.webp" alt="" /></p>
 <p>我们的下一站，是搭乘“海鸥线（东京临海新交通临海线）”，去往台场。</p>
 <p>建设在地面上的无人驾驶轻轨线路，是海鸥线的一大特点。位于车厢头部的座位，有着“驾驶”的视角和独特的风景。为此，我们来到新桥这个海鸥线的始发站，希望能坐在列车头部。</p>
 <p>虽然结果我们确实坐在了车头，但是——这晚上外面其实也没什么好看的啊！只能看到如繁星一般的高楼大厦的灯光。</p>
 <p>今夜的港区格外寒冷，我被冻得浑身发抖，话都说不利索，拿出相机拍照都成了折磨。就在如此这般的寒风中，竟然还有一对情侣坐在沙滩边的台阶上。爱，如此炽热。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-z67qat.Ck3IONRN_Z1WMdoE.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-z67qat.Ck3IONRN_Hx6wV.webp" alt="" /></p>
 <p>台场有一家叫“台场 GAMERS”的 Love Live 周边店，店内摆满了虹咲学园的周边商品。我完全没看过 Love Live，但我仍然感受到了店内的温暖。</p>
 <p>嗯，比外面暖和太多了。</p>
 <p>隔壁有一家主题咖啡馆。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-klw000.YtgRxDYB_2qpxxe.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ph2hi5.BhB1lYrt_Z2kYTjy.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-klw000.YtgRxDYB_1xIES.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ph2hi5.BhB1lYrt_kkpC2.webp" alt="" /></p>
 <p>店内的留言簿
 <img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-e61fcg.BtegUD2g_urQMv.webp" alt="" /><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-hwkhpz.BT_PeLEq_Z1IOSHe.webp" alt="" /></p>
 <p>接下来，我们并没有去看高达，也没有去看自由女神像，我们……回到了天空树。</p>
@@ -599,7 +577,7 @@
 <p>啊啊啊啊我应该拒绝他无论是回去休息还是找个别的地方逛都比去已经去过的天空树和已经去过的橡子共和国买东西强吧但是看到他十分懊恼沮丧的模样我实在于心不忍所以又和他一起去了。</p>
 <p>只买一本书到不了免税额度，所以我又被他怂恿买了几个小玩意来凑金额……最后刚好到了免税金额，超出 200 日元。</p>
 <p>啊，好讨厌。我明明不想做这些事情的。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o0f4hh.D9PKRY2w_ZLeq2y.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-o0f4hh.D9PKRY2w_MwzVd.webp" alt="" /></p>
 <p>今天去了好多地方，头也晕晕的。晚上乘坐都营地铁，出站时我用 JRPASS 过闸机没过去，然后拿着 JRPASS 去找工作人员（JR 和 东京地铁不是一家公司所以JRPASS不能用于都营地铁）……我是笨蛋。</p>
 <hr />
 <h2>Day 6 青森，命途多舛的一日。</h2>
@@ -616,7 +594,7 @@
 <p>事情是这样的。虽然无论是 KOMACHI 还是 HAYABUSA 都为全车指定席（可以理解成“只有坐票”）的新干线列车，而第一程的 KOMACHI 已经完全满席，系统只为我预订到了第二程的座位，第一程则是以“无座”的形式强行组合进方案的。在客流量大的特殊时期，即便是全车指定席的列车，也是可以销售少量“站票”的。想必我的第一程的 KOMACHI 就是被这样整合了进来，然而 JR 售票机不能自动打印出站票“新干线特定特急券（立席）”，只给了后半程 HAYABUSA 的新干线指定券。合理、合法的的方式应该是去一趟人工窗口，要求补一张特定特急券。</p>
 <p>以上这些信息，当时在日本的我——<strong>全都不知道</strong>。于是，以下是我一无所知的情况下，独自一人的 JR 东日本大冒险。</p>
 <p>与朋友在东京站分别，我在新干线入口的人工柜台处，把 JRPASS 和“盛冈-新青森”车票给了工作人员，然后理所当然的被质疑了（废话这里是东京站，拿出一张盛冈的车票有什么用啊）。还好我早有准备，在昨晚预定车票的时候，我就觉得“东京-盛冈-新青森”配合 KOMACHI 和 HAYABUSA 的组合、以及只给了我一张票很奇怪，所以我拍摄了售票机器上的行程页面。把这张照片给工作人员看了之后，他很快就理解了我这个行程是怎么回事，并且嘱咐我到盛冈之前是要站着的（用英文跟我说的，具体我也没听清，就听懂个“standing”）。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1mmd8k.Cbt35d9u_ZvOFkt.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1mmd8k.Cbt35d9u_2619Qu.webp" alt="" /></p>
 <p>因为我没有 KOMACHI 的车票，所以我以为我应该去 KOMACHI 的自由席车厢。但到了站台才发现，这 KOMACHI 是全车指定席。那你为什么要让我预约 KOMACHI 啊？并且同一个站台，同一个发车时刻，时间表上既写着 KOMACHI，又写着 HAYABUSA，难道一辆车同时有两个代号？</p>
 <p>稀里糊涂地随便找了一节 KOMACHI 车厢上车。由于没有指定席车票，所以我只能偷感很重地站在车厢的连接处。好在旁边还有一对情侣（夫妻？）陪我一起站在这，才让我稍微安下心来。列车行驶了一会儿， KOMACHI 的列车员来查票了。我用同样把票据和照片给他看，他也立刻就意会了，然后又嘱咐我“到盛冈站要下车，然后换乘另一班 HAYABUSA”（morioka station change, ok？）（终于听懂了。难道不是桜庭夜你的英文太差了吗？喂！）</p>
 <p>至此，有关车票的事情终于全都折腾完了。感谢遵守露露的日本人没有因为露露（rule，规则，日语写作ルール，读作“露露”）非让我去补一张特定特急券，或者在中途把我赶下车，或者让社恐的我我耗尽社交限额来沟通。此刻，我感觉我就是个 AI 模型，到了沟通额度我就直接下线。除非有用户问我，否则我一句话也不会说。如果又用户问了，那么我或许会滔滔不绝讲个不停。</p>
@@ -624,13 +602,13 @@
 <p>气人，太气人了！</p>
 <p>从东京到青森的新干线大概要3小时路程，而我第一程就要 2 小时，我要在车厢连接处站 2 小时。好在今天是在白天乘车，能看到车窗外的景色。高速的新干线列车让窗外的景色变化得很快，日本乡村的景色和国内乡村也有些不同，所以两个小时的站票也不是很无趣。</p>
 <p>和我一起站在车厢连接处的这对情侣（夫妻？），女方是华人，男方是欧美面孔，两人在车上时不时用中文交流。站在他们旁边，听他们对话，也挺有趣的。可惜他们在仙台就下车了，没有和我一起到盛冈。</p>
-<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-orp84n.BsoGPECO_Z2gBLjC.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-49sh8p.IjTaOkYj_2apMJw.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-30-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-orp84n.BsoGPECO_oHxBX.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-49sh8p.IjTaOkYj_Zer17O.webp" alt="" /></p>
 <p>在车上和网友聊天，向他们吐槽了乘坐新干线的奇妙经历。不知不觉中，列车已经驶入了降雪地区，车窗外的景色也被白雪覆盖。</p>
 <p>从群里一位留日老哥口中得知，KOMACHI 和 HAYABUSA 会在盛冈分离，而后驶往不同的目的地。什么？还有这种事情？在盛冈换乘的间隔有 18 分钟，我因此得以第一次见到列车分离的场景。分离后的车头（车尾）的“鼻子”，竟然会自己“长出来”。</p>
 <p>绿：HAYABUSA；红：KOMACHI
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mwpqty.CtjziGIo_Z2hTq3X.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4r92fz.CdwXi9AF_Z1EuGWs.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-mwpqty.CtjziGIo_npSRC.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4r92fz.CdwXi9AF_10OBY8.webp" alt="" /></p>
 <p>在站台上稍等，就等来了我应该乘坐的 HAYABUSA 号列车，我终于能够坐下了。我找你找的好苦啊！虽然只是耗费两小时站立的体力，但是这一路的疑惑、担忧和社恐发作——好吧，也没这么痛苦。只是这初来乍到，又对日本铁路乘坐方法基本一窍不通，经历这些事情实在有些耗费精力。</p>
 <p>车上人不多，看来北方这段行程的乘客并没那么多，只是从东京出发的票太难买了。我的邻座没有乘客，所以我把背包和箱子放在了腿前和邻座座位上。到了新青森站的前一站“七户十和田站”，我确认这一站我的邻座仍然没有乘客后，我把箱子往旁边一放，打了个小瞌睡……</p>
 <p>当我醒来时，已经到了新青森站了。以及，我的箱子不见了——我直接一个迅速起身恢复视力左顾右盼，然后在前一排座位的过道发现了离家出走的箱子，箱子旁边一位母亲也在左顾右盼，问“这个箱子是谁的”。</p>
@@ -643,58 +621,58 @@
 <p>即便如此寒冷，从新干线上还是下来了一位穿裙子的光腿女孩。</p>
 <p>不愧是日本。</p>
 <p>新青森站前
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-n5fc1o.D5vryS44_ofFyU.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cqr55o.BPnHFxvY_2wKbyS.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1e8j85.DGEOE0Mw_1XEIKY.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-n5fc1o.D5vryS44_Z20B8iq.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cqr55o.BPnHFxvY_7SmGx.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-1e8j85.DGEOE0Mw_1oRDen.webp" alt="" /></p>
 <p>在这么大的雪中，拖着行李箱移动都成了问题。好在订的酒店是新青森站前的东横 INN，出站后走几百米就到了。东横 INN的员工有一个小翻译机，所以沟通起来很方便……不对啊，好像入住也不需要什么沟通来着。我记得似乎前台拿翻译机沟通的内容是让我朋友晚上到的时候，记得到前台登记一下。</p>
 <p>房间很宽敞，再也不会因为展开行李箱就占满走道了。躺在床上，回想起今天到目前为止发生的种种……哭笑不得。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-sl5mww.2hiTsroq_DNLCN.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-0yw2f3.Ba41TBY6_2m5Hdc.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-sl5mww.2hiTsroq_Z1K32ex.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-0yw2f3.Ba41TBY6_Z1RJ3xP.webp" alt="" /></p>
 <p>我岂能把宝贵的时光用来在酒店躺平？放好了行李，出发！</p>
 <p>没有特定的旅行目的地（毕竟是我朋友想来的地方），光是看到这般雪景，就已经让我很兴奋了。总之，先去旁边的新青森站里转转。站内的观光信息中心自然不会被我放过，我带着无比崇高的探索精神，进去扫荡参观了一番，得到了不少信息。</p>
 <p>新青森站内放着两个“苹果”雕塑，一个是“苹果铃”，另一个是用纸筒（似乎是胶带卷里面的纸筒）拼合而成的一个“纸苹果”雕塑。我正要给纸苹果拍照的时候，一名工作人员走过来说：“稍等一下，等一下会更好看”，然后他便接通了纸苹果前面的舞台灯电源。舞台灯是青色的，和旁边红色的苹果铃雕塑正好组成了青苹果和红苹果一对，确实更好看、更有趣了。</p>
 <p>工作人员很友好，我向他道谢。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2dt7el.DAGsOGCb_2bGAoy.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ybqjck.BGfSoOMS_ZafzEp.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2dt7el.DAGsOGCb_ZdadsM.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ybqjck.BGfSoOMS_2v4Jhb.webp" alt="" /></p>
 <p>明明才刚四点半，但天几乎已经全黑了。实在是想不到什么目的地，所以干脆抱着“去青森站看看”的想法，开始徒步从新青森站，前往市区里的青森站。</p>
 <p>两个车站之间的间隔四公里不到，如果乘坐 JR 奥羽本线电车过去，只需要六分钟。但是乘电车过去哪有在雪地里走路好玩！还是这么大的雪！</p>
 <p>由于下大雪，所以街上没几个人，路上也没几个开着的店铺。唯有便利店、自动售货机和偶有经过的汽车，在雪中陪着我。街道安静得出奇，最吵闹的声音，是我在雪中踏步的声音。新雪完全覆盖了路面，若不是旁边的机动车道有除雪，怕是很难辨别行人该走的路在哪里。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-knlsch.CXqBCDM5_Z1ONrgE.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fdewgu.CV9_Y9zC_ZO27Sy.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4o32n5.3qzhvCY8_Z1fFpvH.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-9rkpp0.BwrM7bcV_1hsc7s.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jknbby.dpEcmiKv_Z213xsn.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-knlsch.CXqBCDM5_PvREV.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fdewgu.CV9_Y9zC_Z1xO0Xu.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4o32n5.3qzhvCY8_Z1YsiAD.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-9rkpp0.BwrM7bcV_1kp5Vb.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jknbby.dpEcmiKv_xkOGU.webp" alt="" /></p>
 <p>我一边走，一边思索着晚饭该吃什么。这时我抬头往远处一看，一家滨寿司出现在了视线里。天意，是天意，我准备去滨寿司饱餐一顿。（怎么来日本了也净吃这些国内也有的连锁店啊）</p>
 <p>店内没多少顾客，安静的氛围和屋外的雪景很搭。日本的滨寿司无论环境还是价格都和国内没什么差别，不过这家店菜单里没有寿喜锅，所以寿喜锅或许是国内的滨寿司特供？差别最大的地方是“山葵酱”。虽然国内和日本的滨寿司都有山葵酱，但是国内的山葵酱的味道是能窜出天灵盖的。日本滨寿司的山葵酱则在保留风味的前提下，要更温和。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kk90yc.CRDRHOoO_Z1Mcim3.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-i4hdg0.Jow08SMu_1d4svH.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-leu2w1.HBeyu-Dr_1ExspM.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kk90yc.CRDRHOoO_S81zx.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-i4hdg0.Jow08SMu_2ubKNJ.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-leu2w1.HBeyu-Dr_Zicuu3.webp" alt="" /></p>
 <p>在滨寿司歇了半小时，出来后没走多远，遇见了一家 Bookoff——天意，是天意，于是我又去 Bookoff 里逛了很久，顺便避一避愈渐猛烈的风雪。这家 Bookoff 不大，只有一层，所以商品算不上丰富、齐全。这家店的建筑外观比较有意思，除了方正的建筑本体，还有一个很大的三角形结构交叉立于本体中间。</p>
 <p>店内货架摆放算不上紧凑，所以留出了较宽的过道（比秋叶原那家宽敞多了），使我更有驻足的欲望</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7j7daw.CLNze8yY_ZApPn6.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-7j7daw.CLNze8yY_24Ttyu.webp" alt="" /></p>
 <p>我在 Bookoff 里逗留了很久，大概有一个多小时。出来时，风雪仍不见减小，甚至比起进店之前，整个世界要更加白茫茫一片了。走在引桥下的这段小路中，机动车道和人行道已经完全分不清界限，路面又重新裹上了一层厚厚的被子。之前傍晚时分，来来往往行人在雪上踏出的路也被这新下的雪覆盖得差不多了。走起路来变得愈发费劲。</p>
 <p>罢了，就这样继续前进吧。向东前进，爬上一座跨铁路的高架桥。在桥上遇见对面有一个看起来不过是初中生大的孩子，推着辆自行车，在雪地里蹒跚地向我走来。我也一样踏着厚厚的雪，费劲地向他走去。我们两宛若在这个如雪白的荒漠一般的世界中，萍水相逢的探路者一般。当擦肩而过时，我们在这片茫茫的雪地之中留下的足迹——他推着自行车压出的车辙，成为了我的去路；而我来时踩下的脚印，想必也能为他提供一些聊胜于无的轻松和便利吧。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qky6dv.CkMq4po4_2e5S7T.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-svphtp.D39pWNlf_1PKmF4.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-qky6dv.CkMq4po4_Z1hkeHg.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-svphtp.D39pWNlf_Z1EEKa6.webp" alt="" /></p>
 <p>一路上遇到很多餐厅和便利店门口，都会立一根高高的灯牌，远远地就能看到他们照亮了周围的雪花。若是在一个炎热的夏夜，这些灯光看起来或许会有些刺眼。但是在这个飞雪连天的冬夜，地面、屋顶上皑皑白雪将城市的灯光反射，照亮了整座城市顶上的夜空，同时也借着周围飞舞的雪花，在夜色的画卷上晕染出了各自的色彩。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-8904mb.Bghrf-1S_24MvjP.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dpq9wv.B9r8ezRO_Z15ncku.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-76dy7t.BsRc-G7L_1U1PY0.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-8904mb.Bghrf-1S_Zk4ixv.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-dpq9wv.B9r8ezRO_1zW7B6.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-76dy7t.BsRc-G7L_ZtOWSl.webp" alt="" /></p>
 <p>在青森站附近路过了三家餐厅，分别是看起来很温馨的食其家，看起来很好吃的烤天妇罗盖饭（烤……天妇罗？），还有一家海鲜居酒屋。有点想再去吃一顿呢。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jjm7ed.DFH0kzU-_Z1BrWNT.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-6tom0u.DgzYIEJx_Z1A1K13.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-uqffz2.DGsKZn1M_2hxpHo.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-jjm7ed.DFH0kzU-_13Rm7G.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-6tom0u.DgzYIEJx_15iyUx.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-uqffz2.DGsKZn1M_Z7jo9W.webp" alt="" /></p>
 <p>花了三个半小时，一路瞎逛、乱走、拍照，从新青森站逛到了青森站。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-u418lz.BgMCY6gZ_1b3yTQ.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-u418lz.BgMCY6gZ_Z1dNeWu.webp" alt="" /></p>
 <p>青森站北侧停靠着一艘船只“八甲田丸”，它是曾活跃于日本青森港与函馆港之间的著名青函联络船，退役后停靠于此作为博物馆使用。夜间会打灯展示，还挺酷。这么大的船我基本没见过，在陌生城市的夜晚，走到海岸边，远远看过去发现一艘亮着红色光芒的巨船，惊喜又激动。</p>
-<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-39pq36.BINYLCgx_10jTSo.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-m48wyw.IUyv5giX_ZsKgxe.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-39pq36.BINYLCgx_Z1owSXW.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-01-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-m48wyw.IUyv5giX_WzAMU.webp" alt="" /></p>
 <p>八甲田丸的东边有一个临海的公园“青い海公園”。八点多的公园里空无一人，空余之前的游客踏出的雪中足迹，而这足迹也将在不久之后，被纷纷飘下的新雪所覆盖。雪天本就会因新落下的细雪，而变得更安静一些。而现在这个空无一人的雪夜的海边，更是静得出奇。喘气声和心跳声都被鼓动的脉搏放大，在耳内律动回响。我享受着每一次踏入尚未有足迹的新雪，伴随着雪花聚团、坠落、挤压，发出令人兴奋的摩擦、倒塌和挤压的声音。</p>
-<p><img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-hz46n5.DyiGTjoa_QvTHx.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-l5uqa0.DyZjpSiQ_X6IlA.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-pubiy6.BBMbHyrr_nOkbD.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-hz46n5.DyiGTjoa_Z1xkT9N.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-l5uqa0.DyZjpSiQ_Z1qK5vK.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-pubiy6.BBMbHyrr_Z212tFH.webp" alt="" /></p>
 <p>公园旁边有一个非常特别的建筑物，一个巨大的三角形矗立在海岸，它就是青森县观光物产馆 ASPAM。如此奇特的外观很少见。</p>
-<p><img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-g5du3a.B12G3bWD_DoYR5.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-04-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-g5du3a.B12G3bWD_Z1KrO0g.webp" alt="" /></p>
 <p>我在公园内兴奋地奔走，在雪地里撒欢。雪太厚了，都几乎要没过我的小腿，以至于分辨不出楼梯的台阶。我迈着大步，想着这样或许能减少步数，避免太多的雪灌进靴子里，同时节省些踏足未至之境时的体力。我深一脚浅一脚地踩在雪地里，突然右腿突然轻了那么一些，大约是 iPhone 15 Pro 的重量。我赶紧摸了下口袋——手机丢了，大概是被我的迈步甩了出去。</p>
 <p>我怕是我记错了，所以慌张地翻了相机包，手机并不在里面。我又找遍了浑身上下所有的口袋，最终确认了，我的手机是真的丢了。丢在了日本，丢在了异国他乡，丢在了一个无人寂静的雪夜。</p>
 <p>当我确定了手机丢了的一瞬间，又一个沉重的现实砸向了我。新降下的雪，雪质松软，根本托举不起手机；手机是被我迈步甩出去的，所以手机飞出时有着额外的动能。又因为手机表面积小，结合雪质松软，结合额外动能，结合压强计算公式——这手机，恐怕会深深埋在积雪之下。</p>
@@ -702,7 +680,7 @@
 <p>靠我独自挖雪找到埋在某处雪中的手机，实在是天方夜谭，我必须借助科技的力量。没错，我要借用苹果的设备找回服务 FindMy 的 GPS 以及播放铃声来定位、找回手机。所以我从青森站坐电车回到酒店，打开笔记本电脑，登录 FindMy 网站，定位设备。还好这次旅行我带了电脑出来。</p>
 <p>定位到了手机，手机还待在我丢手机的地方（废话），并没被别人捡走。嘛，这快九点多的下着大雪的夜晚公园，几乎不可能再有别人了。况且就算有人，他应该也遇不到被埋在雪中的手机吧。</p>
 <p>定位的问题解决了，然而定位也仅仅是粗略的定位而已，我要找的可是一个被埋在雪里的手机啊！所以我还需要精确的位置（FindMy 寻找附近的设备时有精确的方向箭头和距离），以及播放铃声来定位手机。可是我的 Windows 笔记本电脑并不能获得如此精确的定位，就算带出去，公园附近也没有网络给我用。</p>
-<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-pdj1yy.C-Dp2PRo_1DLxi7.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-pdj1yy.C-Dp2PRo_22rwz.webp" alt="" /></p>
 <p>所以，所以……所以我要依靠正在从镰仓来青森的朋友了！他用的也是 iPhone，可以更好地利用 FindMy 的功能；而且因为我和他一起合租 Apple Music，所以我们还是在一个家庭组中。等他来陪我一起找吧，这似乎是当下最好的选择了。</p>
 <p>而当做出这个决定的一瞬间，又又有一个沉重的现实砸向了我——我的手机，并不剩多少电了。我记得在公园拍照的时候，手机自动开启了省电模式，刷新率从 120Hz 掉到 60Hz 的卡顿感还历历在目。虽然我带了移动电源，但是想着“再拍几张照就去青森站坐电车回去了”，所以我没有用移动电源给手机充电。而我设置当电量低于 30% 时自动开启省电模式，又考虑到进入了省电模式后我还用了一会手机，包括用手机拍照，所以综合判断，躺在雪里的手机，恐怕只有 20% 电量左右了。电池在低温环境下会容量衰退，在极低温环境下甚至会被“冻关机”。手机正被冰冷的雪花包裹着，而朋友搭乘的新干线还要一个多小时才到青森——只有 3274 mAh 电池容量的 iPhone 15 Pro，真的能在冰天雪地里坚持到我朋友来吗？</p>
 <p>我赶紧用 QQ 联系了朋友，告诉他我手机丢了这事，然后约定好我会在新青森站出站的地方等他。他随即就在 FindMy 中找到了家庭组中的我的手机，启用了“丢失模式”。</p>
@@ -717,10 +695,10 @@
 <p>凭借 FindMy 播放铃声，终于在日本时间晚上 11 点 05 分，在雪地之下，挖出了我的 iPhone。搜救到 iPhone 时，它仍有一息尚存，剩余电量 6%。</p>
 <p>赞美现代科技，赞美 Apple，赞美我的朋友——而你，我的朋友，你才是真正的英雄。</p>
 <p>虽然我急得像热锅上的蚂蚁时你却在雪中快乐地飞舞让我有些火大，但还是感谢你。</p>
-<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zkhwam.BPfGCPHj_1qvyIV.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-zkhwam.BPfGCPHj_GSXmo.webp" alt="" /></p>
 <p>带着“劫后余生”的惊喜和兴奋，我们又在雪中玩了一会，然后赶去青森站，搭乘“終電”（末班列车）回到了新青森站。短时间内来回两个车站，而因为我的 JR PASS 必须走人工才能过，所以估计车站的工作人员都快认识我了。带朋友办理了入住，还在酒店前台领到了两份咖喱盒饭晚餐。这应该是晚餐时没分发完的。我们这么晚领，已经算是夜宵了吧。</p>
-<p>2025 年 12 月 27 日 23:33，青森站
-<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-6unkkg.B0r_xQS6_TbSsc.webp" alt="" /></p>
+<p>2025 年 12 月 27 日 23</p><div></div>，青森站
+<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-6unkkg.B0r_xQS6_Z1uEUp9.webp" alt="" /><p></p>
 <hr />
 <h2>Day 7 青森，悠哉的一日</h2>
 <p>我想滑雪很久了，所以借着这次来青森，想试试滑雪。来日本前事先查了青森的八甲田滑雪场，暂时将它列为目的地。昨晚又复核了一些消息，似乎八甲田滑雪场并不适合初学者，而朋友又认为滑雪运动的安全隐患太大。所以我们两干脆一拍即合，取消了滑雪的计划。</p>
@@ -736,16 +714,16 @@
 <p>第一次坐这种椅子，而且在国内我没见过，所以虽然很拥挤，倒也挺好玩。</p>
 <p>不一会我们就离开了市区，巴士行驶在国道“八甲田十和田Gold Line”上，窗外的风景快速变化，道路两侧的“雪墙”初见端倪……不对，我坐在補助席上，根本看不到窗外的风景！我事先知道八甲田索道可能因为天气原因不运行，所以坐在拥挤的座位上百无聊赖时，就不停刷新八甲田索道的官网查看运行状态。</p>
 <p>到了八甲田索道站，索道由于大风不开放，所以我们干脆不下车，往巴士的终点站“酸汤温泉”去了。不过即便索道不开放，还是有很多乘客在这站下车，所以我也得以从折叠椅换到正常座椅上。这时，我才得以看到窗外昨夜大雪后的山林景象，道路两侧的确堆起来了比人还高的雪墙。只是这番景象从前在视频中见到过，所以便也不觉得稀奇了。</p>
-<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4vi7nl.D7KFRkSG_TVUQC.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-4vi7nl.D7KFRkSG_1Na089.webp" alt="" /></p>
 <p>想到这，我就觉得很可惜。明明是第一次亲眼所见的景象，却几乎完全感受不到新鲜感。</p>
 <p>巴士向山林继续深入，伴随而来的是耳内压力变化的感受，这时我才注意到车在一直爬升，海拔高度已经有 600 多米。</p>
 <p>乘坐一个多小时，到达了终点站酸汤温泉站。我事先并不知道酸汤温泉有什么好玩的，只是因为八甲田索道没开就索性坐到了终点站，所以说……酸汤温泉这到底有什么好玩的啊！</p>
-<p><img src="https://yuuikic.com/static/day7-1.Cgqwl6e8_2n8gkH.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-011spq.BmDoafMH_ZCImXq.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day7-1.Cgqwl6e8_1PRpxc.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-011spq.BmDoafMH_22AVXa.webp" alt="" /></p>
 <p>接触到了更大、更高的雪墙，比在巴士上开起来要更壮观。顺着一个雪坡，到了一个平台上——我也不知道这下面到底有没有陆地，或许只是由层层的雪堆起来的“平地”，这平台大概比温泉旅馆建筑物的二楼还要更高一点。</p>
 <p>平台上有一群人在造雪砖、搭雪屋，他们分工明确，有条不紊，这的确有点酷。</p>
-<p><img src="https://yuuikic.com/static/day7-4.D4INaOfe_Z1ujJI5.webp" alt="" />
-<img src="https://yuuikic.com/static/day7-3.BVi9O18W_ZKLFIS.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day7-4.D4INaOfe_Z21zAvA.webp" alt="" />
+<img src="https://yuuikic.com/static/day7-3.BVi9O18W_Z1i2wwo.webp" alt="" /></p>
 <p>我们在温泉外面撒了一会欢，然后，然后我们就不知道干什么了。回青森市里的巴士要下午才有，所以我们可以泡个温泉再走。酸汤温泉的“酸汤”是一个特色，而其中的“千人风吕（千人混浴浴场）”是另一个特色。在这个刚下完雪的阴天，来泡温泉的游客络绎不绝，其中不乏有穿着滑雪装备的人，雪具上、衣服上沾满了雪。他们或许是在周围滑完雪后来的，当做运动后的放松，脱掉雪具、收拾整齐就进入温泉旅馆了，看起来很熟练的样子。</p>
 <p>朋友很纠结温泉的安全性，感觉这温泉太脏了，所以不愿意泡温泉。但“来都来了”！岂有不泡的理由——难道我们要坐在旅馆门口的板凳上等到下午巴士发车吗？</p>
 <p>买完入汤券，泡温泉。去所谓的千人混浴场泡了下，感觉这应该容纳不下千人。浴场的确是混浴，但是雾气大得离谱，所以什么也看不见。因为是“酸汤”，所以空气中弥漫着硫磺味。浴池是由柏木建造的，或许是酸汤的原因，浴池中的柏木滑滑的，泡完皮肤也滑滑的。在浴场中泡久了，头有些晕，我呆了一会就出来了。</p>
@@ -753,62 +731,62 @@
 <p>比起泡温泉，买票进入温泉旅馆更大的意义是让我们能在温泉旅馆里休息，等到巴士发车。旅馆内的休息室环境很棒，大家都在安静地做着自己的事情，或偶有人窃窃私语。窗外是厚重的雪景，热气从流淌的温泉水腾腾而上，为景色增添了一份如梦似幻的朦胧感。</p>
 <p>在这种悠哉的雪日午后，泡完温泉，理应来一杯牛奶什么的饮品，可是在旅行的第七天，我的现金在刚才购买了入汤券后，就几乎消耗殆尽了，旅馆的自动售货机又只接收现金……</p>
 <p>在旅馆的特产店买了几块苹果味沙布雷曲奇饼干，超好吃。</p>
-<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-q1asdu.CnXurk9B_1a7KE0.webp" alt="" />
-<img src="https://yuuikic.com/static/day7-6.BiG5mD_K_Z2wQREd.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-q1asdu.CnXurk9B_1lgCgW.webp" alt="" />
+<img src="https://yuuikic.com/static/day7-6.BiG5mD_K_21a7CN.webp" alt="" /></p>
 <p>旅馆大堂内有一个桌子，似乎是在宣传这附近的一个徒步旅行活动，并受理报名。我走进端详时，被热情的宣传员小姐逮住，欢迎我前来报名。我这个社恐直接死掉了。</p>
 <p>之后搭乘巴士回到青森站，在青森站旁的游客中心看到了通缉令海报，列举了一堆杀人犯吓人。</p>
 <p>在全家买了点吃的，以及一块群友力荐的“Famichiki”（大概是炸鸡）。味道是不错啦，但没觉得好吃到让人流连忘返的程度吧。</p>
 <p>回来得太早，一时不知道该干什么，于是又去昨天丢手机的青之海公园转了转。白天又有不少游客来这，所以雪地上多了很多脚印，也失去了昨夜雪白道路的景色。有些路上的雪已经融化得差不多了，虽然肯定有市政的除雪作业，但昨晚到了青森后就觉得这里很神奇：明明是世界上降雪量最大的地方，但实际上温度却相对暖和。昨天是下雪天就不必说，即便今天雪化了，也并没有如同曾经在国内遇到的化雪时的寒冷难耐。能在暖和的地方玩雪，太棒了。</p>
 <p>公园里除了多了很多足迹，栏杆、座椅、台阶等种种地方，还多了很多雪做的小雕塑。做出这些的人实在是心灵手巧，很多雕塑还挺惟妙惟肖。</p>
 <p>傍晚的天空终于透出了雪霁后的初晴，天空蓝色的背景从厚厚的云丛中冒出来，夕阳为云层染上霞光。天空、海水和云朵的蓝色互相映射着，远方的峡湾对岸晴朗的地方，透出了夕阳的橙黄色，斩破了遥远的天际线，在冷冷的蓝色背景的画布上画出一笔暖色。云山和真正的山峦重叠在一起，美不胜收。</p>
-<p><img src="https://yuuikic.com/static/day7-7.DT-P2H6O_FiLR2.webp" alt="" />
-<img src="https://yuuikic.com/static/day7-8.0D7yD6eO_Z1M8e0V.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day7-7.DT-P2H6O_92V4w.webp" alt="" />
+<img src="https://yuuikic.com/static/day7-8.0D7yD6eO_1QTg0p.webp" alt="" /></p>
 <p>之后去旁边的青森县观光物产馆的展望台走了一圈。展望台不高，好在价格也不贵，才 500 日元。</p>
 <p>逛完一圈后时间还很早，我们索性去新青森站等着了，等着晚上前往北海道，也是日本之旅解锁的最后一个城市，函馆。</p>
-<p><img src="https://yuuikic.com/static/day7-9.DX0HIF7q_1yTyWS.webp" alt="" />
-<img src="https://yuuikic.com/static/day7-10.B4Usgg30_usG9v.webp" alt="" />
-<img src="https://yuuikic.com/static/day7-11.CXAl_A8f_Z7iwhI.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day7-9.DX0HIF7q_Z1LOBuR.webp" alt="" />
+<img src="https://yuuikic.com/static/day7-10.B4Usgg30_1JnVsN.webp" alt="" />
+<img src="https://yuuikic.com/static/day7-11.CXAl_A8f_Z2vA7Fb.webp" alt="" /></p>
 <p>车站商店内见到了有马加奈
-<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-t8pfyo.B3Kdb4gw_Zgy6sL.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-t8pfyo.B3Kdb4gw_BDWMK.webp" alt="" /></p>
 <p>新青森到新函馆北斗站的新干线车程不到一个小时，途径青函隧道。穿过海底隧道时，车内还有青函隧道的解说广播。</p>
 <p>新函馆北斗站位于北斗市而非函馆市（为什么只有四万多人口就单列成一个市啊），不过其作为函馆的一个卫星城，搭乘电车去函馆只需要 20 分钟左右。这么一说，和京都去宇治的时间也差不多。</p>
 <p>从新函馆北斗车站出来，前往预定的酒店的路上，遇到了北斗市的吉祥物——北寄贝寿司。这吉祥物也太精神污染了吧！尤其是我晚上到达的时候，看到的是点灯版本的吉祥物，这胸前一个个绿色的凸起，像是寄生的虫卵；睿智的眼神，意味着精神也被寄生物侵蚀。即便这样，它还在与每一个路过的游客打招呼。</p>
 <p>我对着它端详了许久，才意识到这东西或许是个寿司，胸前的绿色凸起是一粒粒大米。</p>
 <p>日本人的审美，在各种意义上都挺……值得信赖的。</p>
 <p>北海道北斗市官方吉祥物「ずーしーほっきー」
-<img src="https://yuuikic.com/static/day7-12.aV6jqHRa_WCpyV.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/day7-12.aV6jqHRa_21Pexu.webp" alt="" /></p>
 <p>今天入住的酒店是新函館北斗駅南口的东横 INN，不愧是连锁酒店，房间布置和昨天在青森住的都几乎一模一样，像是同样的房间连住了两天。</p>
 <hr />
 <h2>Day 8 函馆，然后东京</h2>
 <p>来到函馆的理由无他，总结起来，就是在这系列游记中出现多次的四个字：来都来了。既然已经到了本州的北端青森，那么有什么理由不顺道来北海道看看呢？</p>
 <p>早晨起来，去酒店大堂吃早餐。早餐中有一道很有特色的菜，叫“松前渍”，是一种用干鱿鱼和海带腌制的菜肴，是北海道地区的特色料理。黏糊糊、甜丝丝的，味道还不错。</p>
 <p>餐盘左下角那团东西就是松前渍
-<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c48fbl.BM94EK8y_1lPgiO.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-05-05-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-c48fbl.BM94EK8y_1wY7UL.webp" alt="" /></p>
 <p>从酒店去车站的路上又遇到一只「ずーしーほっきー」……
-<img src="https://yuuikic.com/static/day8-1.D4W_A3Hs_O8doa.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/day8-1.D4W_A3Hs_hX4Rf.webp" alt="" /></p>
 <p>函馆前两天应该刚下完雪，今天气温有所回升，所以淅淅沥沥下着雨，潮湿极了。来函馆并没有明确目的，唯一想看的是去函馆山展望台，俯瞰函馆。展望台上的风景之前在网上以及柯南剧场版中看过，觉得被两侧海面挤压着的函馆市风景很特别，更不用说在展望台上看日落和夜景了。可惜今天是阴雨天，看不了日落，而我们也呆不到晚上，也看不了夜景。</p>
 <p>查了下前往展望台的函馆山缆车运行情况，说是有雷击风险，所以停止运行。</p>
 <p>好吧，这下连函馆山展望台都去不成了。</p>
 <p>从函馆站出站时，我把 JR PASS 车票塞进了闸机，省的直接去找人工时又让我过一遍闸机。结果你猜怎么着？我这个从第一天就出故障的 JR PASS，一路上试了无数次闸机检票的 JR PASS，竟然自动通过了函馆站的闸机。不是吧，难道函馆站闸机的读取操作的功率更大，读到了车票内所剩无几的磁信号？太荒唐了吧。更无语的是，因为 JR PASS 过闸机后会被打孔，而我一直走人工、保证了完整状态的 JR PASS，在它有效期的最后一天，通过了自动闸机，被打了孔。</p>
 <p>啊啊啊啊啊啊啊不要啊啊啊啊啊。</p>
 <p>对了，新青森站的坏蛋工作人员还给我的 JR PASS 盖了个“入鋏済”的章，人工捡了个票……就你特殊是吧，明明一路过来都没人给我盖过章！</p>
-<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ybk37l.B3TFYMG5_1Wldnl.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ybk37l.B3TFYMG5_ZONr7G.webp" alt="" /></p>
 <p>从函馆站出来，准备沿着海岸，一路走到八幡坂，沿途可以顺道观光下函馆朝市广场、金森红砖仓库这些不知道是何意味的景点。</p>
 <p>刚出站，经过一个十字路口，停下来等红绿灯。这时走过来一个搬着泡沫箱、穿着工作服的男性，看了看红绿灯，便去旁边的小盒子上按了下——噢，这个路口是按压式红绿灯啊。</p>
 <p>然后就一路往南走，天气不好，路也不好走，照片也不好拍，有些无趣。</p>
-<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-nnn7bz.BFXBmR-1_1SddSr.webp" alt="" />
-<img src="https://yuuikic.com/static/day8-3.DGAlJFVk_1jGFBV.webp" alt="" />
-<img src="https://yuuikic.com/static/day8-2.CXQatl0n_1hX63o.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-nnn7bz.BFXBmR-1_ZvDzXT.webp" alt="" />
+<img src="https://yuuikic.com/static/day8-3.DGAlJFVk_Z222uPO.webp" alt="" />
+<img src="https://yuuikic.com/static/day8-2.CXQatl0n_KHffS.webp" alt="" /></p>
 <p>沿着八幡坂的坡道爬到路的尽头，聚集着一堆拍照的游客，我们也是其中之二。听了听周围的对话，基本都是中文，感觉在这聚集的一圈人用能中文无缝交流。</p>
-<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fk3fvo.ChXIdgef_XJmor.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-fk3fvo.ChXIdgef_Z1q7rsT.webp" alt="" /></p>
 <p>离开八幡坂，搭乘湿漉漉的公交和有轨电车，前往五棱郭。</p>
 <p>青森和函馆似乎每年冬天都有初音未来（雪初音）的联动活动，五棱郭塔内有售卖联动周边，购入了一个初音钥匙扣和文件夹，还有印有北海道名胜景点的限定包装可口可乐。之后按照惯例，登上了五棱郭塔的展望台。五棱郭塔展望台的门票大概印有五棱郭的四时之景之一，而且检票的打孔器形状是五角星形状，细节做得不错。不过这展望台门票要 1200 日元，也太贵了吧，青森观光物产馆的展望台只要 500 日元，而东京天空树的价格也只是五棱郭价格的两倍啊。</p>
 <p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-oi992q.BqQ_TPce_1V5k9i.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3o1jre.Bhjl7qBa_3DeaV.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-3o1jre.Bhjl7qBa_2lFHtP.webp" alt="" /></p>
 <p>28mm 的最小焦距有些捉襟见肘，无法完整拍摄五棱郭。</p>
-<p><img src="https://yuuikic.com/static/day8-4.DW5K1Fr1_1XKkWS.webp" alt="" />
-<img src="https://yuuikic.com/static/day8-5.WgEa1l_B_BqYFK.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-oty06z.ClTW2Dll_Z1Cvg0E.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day8-4.DW5K1Fr1_1ruuan.webp" alt="" />
+<img src="https://yuuikic.com/static/day8-5.WgEa1l_B_5b8Sf.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-oty06z.ClTW2Dll_Z2mi95A.webp" alt="" /></p>
 <p>离开五棱郭，在函馆的走马观花就结束了。天气、心情都不是很“高昂”，所以觉得有些无趣。比较让人感慨的是，无论是青森市还是北斗市，都只有二十多万人口，所以城市看起来没那么有“活力”。路上车辆不多，人流也稀疏。店铺在傍晚很早就会关门，然后早早地进入了冷清的夜。这里没什么高楼，登上展望台就能遍览整个市区了。</p>
 <p>虽然我常说自己是“小县城人”，但是我老家的小县城，也足足有一百多万人口啊。商场、酒店、娱乐设施应有尽有，街道上经常会堵车，一幢幢高层建筑拔地而起。如此一对比，“小县城”的概念恐怕要在我脑内颠覆了，真可怕啊。</p>
 <p>而就算青森或函馆人口只有二十多万，每年的游客却有六百多万人次，真不得了。</p>
@@ -822,18 +800,18 @@
 <p>酒店给我们免费升级了房型，所以在日本的最后一晚，我们住到了在日本这么多天最大的一间屋，作为日本之旅的收尾，很不错。</p>
 <p>酒店的露台的确很棒，在有着温热柔和晚风的夏夜坐在此处，小酌一杯，或许是极好的。可冬天的露台，恐怕徒有这天空树和东京夜景了。从露台往下看，能看到另一个看起里很温馨的楼顶，不知道里面住着什么样的人呢。</p>
 <p>透过诸多建筑物的夹缝，还可以从高处看到不远处的浅草寺。虽然用肉眼的观赏效果不佳，但在长焦镜头下，能记录独特视角下的浅草寺，算是这个主打天空树的观景露台的一个“隐藏奖励”吧。</p>
-<p><img src="https://yuuikic.com/static/day8-6.Bke78nPW_A0PPt.webp" alt="" />
-<img src="https://yuuikic.com/static/day8-7.BYxiwyCa_Z16lGUc.webp" alt="" />
-<img src="https://yuuikic.com/static/day8-8.C662GnYB_V3nK5.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/day8-6.Bke78nPW_3K02X.webp" alt="" />
+<img src="https://yuuikic.com/static/day8-7.BYxiwyCa_127cGu.webp" alt="" />
+<img src="https://yuuikic.com/static/day8-8.C662GnYB_Z2jAGCt.webp" alt="" /></p>
 <p>下楼，找了家拉面店吃晚饭，除了我，门前还排了一个顾客。不一会儿一位女店员出来，让前面那位顾客进去，然后对我们说“Sold out”。好吧，真是不走运。于是我们去浅草寺旁边的吉野家吃了晚餐。</p>
 <p>回到酒店后，按捺不住莫名激动的心，在电视上投屏，看了一集京吹，在日本的最后一夜就如此收尾了。</p>
-<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-djkn38.HMVGLWm8_2ryKtA.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-djkn38.HMVGLWm8_2GVBf.webp" alt="" /></p>
 <hr />
 <h2>Day 9 离开日本</h2>
 <p>东京的天气很不错，是和第一天来到日本时一样的晴天，澄空蓝得清澈又深邃。</p>
 <p>从酒店退房离开，前台给了我们一份不只是何物的饮品冲剂和一张暖宝宝，以及面包牛奶当做早餐。今天的早餐也是一如既往的潦草，好在是不用去便利店买了。</p>
-<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-uxitvx.Bl5Tc-cg_Z1QLAB0.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2pj6rp.D-eWHxtv_Z3CfLU.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-uxitvx.Bl5Tc-cg_Z1FCIY3.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-05-06-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-2pj6rp.D-eWHxtv_7vAP2.webp" alt="" /></p>
 <p>因为退房有点晚，怕赶不上飞机，所以打算多花点钱搭乘天空快线 Skyliner 去机场。到了天空快线的换乘站，被站员提醒要去售票机买票才能乘坐天空快线。我还以为只要刷 IC 卡就行了。</p>
 <p>天空快线的售票机不支持国内的 Visa 卡，而现金早就已经花完了。虽然机器上写着能用 IC 卡，但只能用实体 IC 卡付款，我在 Apple Pay 里开的 ICOCA 对此无能为力。无奈，最后只能乘坐浅草线上的一般电车。其实虽然天空快线票价比普通电车贵一倍，但实际上并不快多少。只不过我们时间没安排好，所以乘坐下一班去成田机场的普通电车，时间就有些紧张了。</p>
 <p>好在是成田机场出境、安检的流程都没什么复杂度，比国内要简单的多，所以很流畅地就进入了候机室。最耗费时间的是值机，在值机柜台周围见到了好多行李数量非常夸张的乘客，还有行李超重后打开行李箱重新整备行李的人。我看有个老哥箱子里塞了一堆烟，大概是代购的，不知道他要怎么过中国海关。行李称重的时候稍微有些担心，因为这次买了很多书籍，既占地方，又很重，结果离免费托运额度上限还差挺多的，担心多余了。</p>
@@ -873,7 +851,7 @@
 <p>诶，话说，我的 JLPT 考点不仅仅是在苏州——我选的考点就是公司旁边的这个苏州大学独墅湖校区啊！</p>
 <p>所以说，阴差阳错地，我开始了一段在苏州的，崭新的生活。</p>
 <p>2025 年 7 月 7 日，摄于金鸡湖.苏州摩天轮广场
-<img src="https://yuuikic.com/static/2026-04-17-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-82qvxu.CK-Y8_L2_22faib.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-17-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-82qvxu.CK-Y8_L2_lDeRM.webp" alt="" /></p>
 <hr />
 <h2>澹台湖公园 宝带桥</h2>
 <p>在网上看到了宝带桥的照片，觉得很是漂亮，在2025年8月20日前往其所在的澹（Tán）台湖公园观赏。</p>
@@ -882,18 +860,18 @@
 <p>公园旁边是苏州吴文化博物馆，建筑由诸立方组合，再加上大玻璃立面，外形看起来偏现代。博物馆外有一片空旷的广场，相比于旁边冷清的澹台湖公园，这个广场到了晚上可谓人头攒动，实在是热闹。</p>
 <p>我知道此处应该贴上几张照片……但是为什么无论是本地还是网盘里都没有相机拍的照片存档啊！难道我记忆出现了错乱，其实我并没去过？但是 Google Photos 中有那天用手机拍的照片。</p>
 <p>2025 年 8 月 20 日，摄于澹台湖公园
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-c2snth.CGX5r57X_Z22uWuR.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-c2snth.CGX5r57X_ZRK5gF.webp" alt="" /></p>
 <hr />
 <h2>十全街</h2>
 <p>十全街位于苏州姑苏区古城东南部东南部。从地图上看去，十全街水陆并行，想必很有江南风情？非也非也。如果只在现在的主街散步，那么就只是在主街散步。我是说，散步的话肯定是在主街上，但是主街并不邻水，而且都是商业化的店铺。主街北侧的小路才是能看到江南水乡景色之处，不过景色虽然别有风情，但是十分单调，属于拍两张照片就会离开的地方。</p>
 <p>2025 年 9 月 14 日，摄于十全街
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ozxnzz.BQQjzst8_12hzqr.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ozxnzz.BQQjzst8_26i5xA.webp" alt="" /></p>
 <p>要逛十全街的话，应从西至东这样逛。吃喝玩乐主要都集中在西侧，而东半边有很多古玩玉器的门店，大概是一片产业集群。嘛，不过应该很少有游客会从东边开始逛吧，因为地铁站在十全街西头。</p>
 <p>十全街这各种各样的店铺中应当有很多有趣的店，不过我没有探店的兴趣，所以并没有逛过几个。印象深刻的店铺的话，有一家开在路北侧的唱片店——很有趣对吧？专门卖碟片的店诶，很少见的。路南侧还有两家卖独立设计的饰品的店，无论是饰品，还是店铺的装修和装饰风格，都独树一帜。</p>
-<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-sa6ajp.DhbcEFmR_Z1eUKGv.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-sa6ajp.DhbcEFmR_1Teq1W.webp" alt="" /></p>
 <p>万圣节前夜的十全街会有很多打扮奇特的人上街，把洋节变成了亚文化聚会。额，大概也没有很亚文化，过于奇装异服的会被警察叔叔带走哦。</p>
 <p>2025 年 10 月 31 日，摄于十全街
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-dzwkh7.CQbdWRky_Z1lzlVt.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-dzwkh7.CQbdWRky_Z1aqujw.webp" alt="" /></p>
 <hr />
 <h2>山塘街 平江路 观前街</h2>
 <p>虽然十全街也有“小桥流水人家”，但是提到苏州的江南民居风光，恐怕第一个想到的应该是山塘街吧。不过，从氛围来讲，山塘街的确是更江南的那一个。</p>
@@ -901,17 +879,17 @@
 <p>相比于山塘街，我更喜欢平江路一些。这两属于同一类型的景区，都很有古韵，但是平江路更“安静”一些。</p>
 <p>或许你还听过观前街这个名字。观前街和山塘街、平江路不是一种类型，而是更成熟、现代的商业街。去过几次，没感觉哪里有趣，感觉逛这个类型的话不如去逛十全街。</p>
 <p>2022 年 12 月 30 日，摄于山塘街
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-j2y95o.C5JW0JaU_Z1Rx6Ws.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-j2y95o.C5JW0JaU_Z1Gofkv.webp" alt="" /></p>
 <hr />
 <h2>盘门</h2>
 <p>盘门是位于苏州城南面城墙上偏西的一座水陆城门。</p>
 <p>总的来说，没什么好逛的，大概喜欢历史的人会更有意愿来逛逛这里。更别提这地方还要门票，所以更没有逛的性价比了。</p>
 <p>那么我是怎么被吸引来的呢？因为下面这张照片。</p>
 <p>2025 年 10 月 25 日，摄于盘门景区
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-c09b2d.DPgNPdes_Z1p89gs.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-c09b2d.DPgNPdes_ZjuPnT.webp" alt="" /></p>
 <p>这是什么，太酷了吧，水上的建筑物诶！什么，你说这不就是桥吗？额，你看，它们两个挨得这么近，这窄窄的间隙还有平台能下去，比桥帅多了！难道不像什么中世纪的古堡之类的建筑吗？还有有忍者、刺客什么的，从这个水路、暗门潜入古城，展开一幅可歌可泣的史诗绘卷——总之，听我解释，我就是这样被骗走 40 块钱的。</p>
 <p>2025 年 10 月 25 日，摄于盘门景区
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-0009j7.CwOIvDpM_1OJMAT.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-0009j7.CwOIvDpM_2gduLn.webp" alt="" /></p>
 <hr />
 <h2>西园寺 寒山寺</h2>
 <p>西园寺，全名为“西园戒幢（Jiè chuáng）律寺”。朋友说这里的求签很灵，而他工作将有所变动，所以约我一同来西园寺。</p>
@@ -919,11 +897,11 @@
 <p>后来得知，是他当时买门票不小心买了两张。</p>
 <p>我对寺庙、祈愿这些事物不是很感兴趣，逛寺庙的时候便只好把寺庙当做建筑和文化等等的符号来游览观赏。金秋时节的西园寺很漂亮，寺院内外的银杏树，在秋日叶子变得金黄，和西园寺黄色的墙面层叠辉映，仿佛整座寺院都浸润在了秋日的暖阳之中。</p>
 <p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-kx9otq.CRO6chn4_Z2jvglg.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-oyagxk.B-IEt5-7_Z1TQ4Tw.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-oyagxk.B-IEt5-7_3qVdS.webp" alt="" /></p>
 <p>西园寺内有一间“五百罗汉堂”，摆满了形态各异的涂金罗汉像，还有一尊大的千手观音像，很震撼。</p>
 <p>寺院内放养了很多猫，所以西园寺逛起来可谓是“庄严又可爱”。也因为这些猫猫，寺院外有一些兜售猫条的小贩。</p>
 <p>除了猫猫，寺院内还有金鱼、乌龟、鸽子……嗯，生态很好！</p>
-<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-9rt60j.3hKV15vW_1hBKD0.webp" alt="" />
+<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-9rt60j.3hKV15vW_BPVB9.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-8azn7c.BAbMuLCr_ZN0umo.webp" alt="" /></p>
 <p>不知读者们是否和我一样，相较于西园寺，对于“寒山寺”这个名字更熟悉呢？在我来到苏州之前，我并不知道西园寺这座寺庙，而寒山寺，则是早早地在小时候背诵过的那首《枫桥夜泊》中出现过了。</p>
 <blockquote>
@@ -933,21 +911,21 @@
 <p>夜半钟声到客船</p>
 </blockquote>
 <p>或许是由于寒山寺在文革期间被严重毁坏的原因，从我这个不信神佛的普通游客的角度来看，属实无趣。吸引我的，大概只有带着儿时背诵古诗的记忆来“圣地巡礼”的心情了吧。</p>
-<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-cdzydq.C_tTWrGx_ZqedTX.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-cdzydq.C_tTWrGx_2gOQiR.webp" alt="" /></p>
 <hr />
 <h2>虎丘湿地公园</h2>
 <p>季节渐入深秋。苏州的节气似乎总慢一拍，大概待到我北方老家的树叶几尽掉得精光的时候，苏州的树叶才逐渐由带着残暑和寒风的奄奄一息的绿，转而变得像是要赶上秋天的尾巴一样，变得金黄，变得橘红。</p>
 <p>2025 年 11 月 22 日，摄于虎丘湿地公园
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-98djx2.qC1OFPG0_cPOIj.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-98djx2.qC1OFPG0_1vtahN.webp" alt="" /></p>
 <p>苏州大抵也有一些红叶季的好去处，比如天平山，算得上红叶的名胜之处。可名胜之所以谓之名胜，除了本身就有吸引人的地方，同样重要的是，会有“很多人从众”去，总之，就是有很多人。在一般社畜能休息的周末，去的人就更多了。</p>
 <p>我不想在没那么美好的周末，人挤人地爬山，所以转而去了另一个据说是看红叶的好去处——虎丘湿地公园。</p>
 <p>顾名思义，这地方的确就是个湿地公园，有湖，有路，有湿地。简单地逛了西南半侧，没觉得有什么出彩的地方，也没怎么发现红叶。</p>
 <p>虎丘湿地公园的红叶观景处，大概指的是公园中新渔桥那一块地方。湖与河道两岸种满了水杉，所以红叶季到来之后，叶子想必会变得橘红，十分壮观。但是，在我十一月末去的时候，只有寥寥树叶变色，根本没有壮观的景色！被小红书的假信息骗了。</p>
 <p>公园里还有一条路叫作“观鱼玻璃槽”，是在池塘中间，水面之下修建了一条顶部露天、两侧由玻璃板包围的池中小径。很有想象力，然而并不好看。</p>
 <p>2025 年 11 月 2 日，摄于虎丘湿地公园
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-phrzrh.CkkCo2k8_Z1dSoc0.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-phrzrh.CkkCo2k8_Z1HWewC.webp" alt="" /></p>
 <p>咕噜咕噜咕噜咕噜🫧 Oo°O°。
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-hrp467.Cz3nUsYA_Z1p9Ug4.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-hrp467.Cz3nUsYA_Z7xHtE.webp" alt="" /></p>
 <hr />
 <h2>金鸡湖 独墅湖</h2>
 <p>金鸡湖和独墅湖是苏州市区内的两大湖，都位于城市东边，两湖紧邻相通，金鸡湖居北，独墅湖居南。环绕着两湖的地区，则是无论是经济还是行政上都独具一格的区域——苏州工业园区。因为苏州工业园区是有新加坡参与的合作开发建设项目，所以苏州工业园区大概也可以叫苏家坡（误）。</p>
@@ -955,22 +933,22 @@
 <p>金鸡湖环湖都有许多不错的观景点。西岸有苏州中心和金鸡湖音乐喷泉；南侧有在湖面上修建的栈道，李公堤路周围也有着许多看起来很高级的餐厅；东侧则有“苏州之眼”摩天轮，以及月光码头、苏州文化艺术中心附近的商场。</p>
 <p>金鸡湖音乐喷泉在晚上有表演。我对音乐喷泉不是很感兴趣，不过观赏喷泉的广场到了傍晚则是个不错的去处。偶有一次晚上骑车路过此处，正巧遇到喷泉表演，才让我有了理由停车驻足观赏一会儿。</p>
 <p>2025 年 10 月 8 日，摄于金鸡湖音乐喷泉
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ncr059.Tg0hJman_1HpJEj.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ncr059.Tg0hJman_Z1fTWfg.webp" alt="" /></p>
 <p>月光码头是观看日落的好去处。从湖东往西看，正好能看到晚霞和东方之门同框。嘛，不过东方之门是否好看这个问题，就见仁见智了。</p>
 <p>2025 年 8 月 23 日，摄于月光码头
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-u4fpnj.gNi9crDz_Z25FB8p.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-u4fpnj.gNi9crDz_Z1rYoUn.webp" alt="" /></p>
 <p>苏州之眼摩天轮和普通的摩天轮有所不同。该摩天轮最初在 2009 年开始运营，于 2018 年拆除重建，如今的摩天轮就是 2025 年重建完后重新开放的。这个摩天轮并没有传统的“轿厢”，而是以一个个能容纳十多人的“胶囊”作为容器。而且有意思的是，当胶囊运转到上半圈，胶囊是被“托举”起来的，而非如普通摩天轮的轿厢一样是悬挂着的，也就是说，轿厢与轮的连接方式有着本质的不同。而摩天轮上观赏到的景色嘛……由于我乘坐的时间是夜里，所以景色其实与在地上看没什么太大区别。夜间的湖面无论从高处还是地处看，都是一片漆黑，而远处的大厦的灯光从高处看，也没什么新奇的。若是在落日蓝调时乘坐，搭配上绚丽的晚霞，或许会有很大不同吧。</p>
 <p>2025 年 7 月 6 日，摄于苏州之眼摩天轮
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-lmul3r.BiE_SIbD_1CMgF9.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-hyomos.C4xab_Pe_2rlbSF.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-lmul3r.BiE_SIbD_BzRuA.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-hyomos.C4xab_Pe_ZDWGQS.webp" alt="" /></p>
 <p>无论是在月光码头，还是摩天轮广场，最美的景色大概都是湖西的苏州中心那一片。而金水湾栈桥，则是个望湖西景色的好地方。在这里，可以将苏州国际金融中心大厦（我管这个叫“大口红”），以及苏州之眼摩天轮尽收眼底。</p>
 <p>2025 年 7 月 6 日，摄于金水湾栈桥
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-wllpc5.DBGZoLrF_2vd1rA.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-wllpc5.DBGZoLrF_Z15gNsG.webp" alt="" /></p>
 <p>金鸡湖南边的独墅湖就没这么多姿多彩了。独墅湖一圈并没有很特别的景点，从地图上看的话，你或许会注意到湖东南角有一个“月亮湾”，但那里其实并没有什么好玩的。不过月亮湾的北侧有一个名为“白鹭园”的公园，还算个不错的散步去处。白鹭园中有一个基督教堂，教堂后面有一个十字架是建在湖水中的，这点有些特别。</p>
 <p>独墅湖上有很多玩浆板运动的——不愧是大都市，这是我一介小县城人想象不到的运动。你能想象一个小县城人在夜晚的湖边散步，忽然发现桥下有着像是下饺子画面的浆板和皮划艇吗？</p>
 <p>2025 年 8 月 17 日，摄于白鹭园
 <img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-jdbia2.Cw5ASDAz_Z1MpcpY.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-dddxxb.BoRdEuc4_2mP0hn.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-dddxxb.BoRdEuc4_ZAuGCc.webp" alt="" /></p>
 <hr />
 <h2>苏州的园林</h2>
 <p>苏州有四大园林，分别是沧浪亭、狮子林、拙政园与留园。拙政园在我2022年底第一次来苏州时逛过，剩下的三个则是趁着这次待在苏州的几个月，逐个走马观花了一遍。</p>
@@ -980,14 +958,14 @@
 <p>在沧浪亭园区的门口，遇到了一位拿着园林古书，对照这沧浪亭介绍展板做笔记的老头。我又望着园内的地上的草木，还有亭上的飞檐翘角——</p>
 <p>明月清风本无价，近水远山皆有情。</p>
 <p>2025 年 8 月 23 日，摄于沧浪亭
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-i63wdw.CyC2xO76_1bTaaG.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-cos2bl.rGql3q-z_Z1O5GXx.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-x1xrlq.nFrnu6EL_1ftybe.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-i63wdw.CyC2xO76_1Kx4zB.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-cos2bl.rGql3q-z_1GGdTd.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-x1xrlq.nFrnu6EL_2q1VU.webp" alt="" /></p>
 <p><strong>留园</strong></p>
 <p>留园是在秋日去的。或许是得益于苏州气候，园内的树叶令我印象深刻。园中古木交柯，在秋日中有着红、黄、绿丰富颜色的树叶，格外漂亮；临水的亭房、廊道，还有层叠的树叶，搭配午后暖阳映照下的池水，让园中精致小巧的布局，也显得更有层次、错落，甚至是开阔了起来。</p>
 <p>2025 年 11 月 23 日，摄于留园
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-vz8yl2.BuiQeu2S_1LtcMW.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-kmhebk.BZesdrY5_1iNUYy.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-vz8yl2.BuiQeu2S_dXQCE.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-kmhebk.BZesdrY5_Z2rGR6C.webp" alt="" /></p>
 <p><strong>狮子林</strong></p>
 <p>去狮子林的那天是个阴冷的冬日。冬季的园林草木凋敝，所以少了非常多的趣味，这次逛园是真正的打卡和走马观花。入园之前买门票时，特地去人工窗口，想买一张纸质票收藏。结果狮子林的纸质票，竟是在一张空白的纸上，印一个二维码，除此之外再无别的内容。这也太敷衍了吧！好歹你门票还 30 块钱呢？所以从入园之前，我对狮子林的印象就已经差到极点。</p>
 <p>虽然数字化便利了生活的方方面面，但狮子林作为一个景区，姑且不论门票设计的好坏，作为一个有服务性质的场所，总该在顾客体验上注意一下吧。难道说，在电子门票使用之前，狮子林的门票就是一张空白的纸？</p>
@@ -995,7 +973,7 @@
 <p>阴冷天气下的狮子林实在无趣。在灰白的天空背景下，狮子林附近的苏州博物馆则显得更让人印象深刻。失去了背景的层次感，苏州博物馆的“立体的平面”建筑外形，更如若折纸一般，矗立在单调的冬日里。</p>
 <p>苏州博物馆人气很高，所以甚至需要提前数日预约。在苏州待了几个月，直到离开也没进去过苏州博物馆一次。</p>
 <p>2025 年 12 月 21 日，摄于苏州博物馆。
-<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-gv7yny.B2oYO8et_ef9cc.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-18-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-gv7yny.B2oYO8et_fSunn.webp" alt="" /></p>
 <hr />
 <h2>苏州的商场</h2>
 <p>苏州作为一个现代大都市，自然少不了许多大型商圈。</p>
@@ -1003,25 +981,25 @@
 <p>但是我挺喜欢逛商场的。正如上文所说，商场里实在有太多我没见过的稀奇古怪的品牌、商品，万一碰到了什么有趣的东西，开开眼界是极好的。二则是大型商场是“都市感”的重要组成部分，更不用说这些新建的大商场无论是建筑外形，还是内部设计，多少都有些新奇和巧妙之处，我对这个部分更有兴趣。</p>
 <p><strong>苏州中心商场</strong></p>
 <p>苏州中心商场，位于“大裤衩”，也就是东方之门下方。苏州唯一的一家 Apple Store 坐落于此。商场内店铺繁多，但是空间大，所以整体来讲比较空旷，即便人很多，逛起来也相对舒服。二层（还是三层来着）有一个外楼台，可以超绝近距离体验被大裤衩骑在头上的感觉（什么恶趣味）。中心商场分为好几个区，我去逛过几次也没记清楚各个区域都有啥，底下停车场也是错综复杂。印象比较深刻的是某个区域的地下（好像是大疆店下面）有一片怀旧主题街区，比较特别，所以有趣。</p>
-<p><img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-oc3aay.D6nhvvmp_Z1riqOQ.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-1tbdo9.DBW1_Xsz_Z1K1GmK.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-oc3aay.D6nhvvmp_Ey04v.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-1tbdo9.DBW1_Xsz_lOJwB.webp" alt="" /></p>
 <p><strong>天街</strong></p>
 <p>苏州有好多个天街，我也去过好几个——到头来，我根本记不清我去过哪些，以及印象中的某个天街的画面对应的是哪个天街了。而且大多数天街并不像苏州中心广场那样看起来比较特别，印象中的有些天街与普通的万达广场没什么差别。</p>
 <p>所以，如果我没记错的话，狮山天街算是众多天街中，比较出众的。</p>
 <p>狮山天街出众的地方，并不在于商场本体。狮山天街后侧（北侧）又一片下沉的小公园，公园中尽是人造景观，但是人造景观会随着季节变更。光是我在的那几个月，就遇到了景观主题从秋季到冬季的转变。冬季景观还会复用秋季的素材，比如会将秋季金黄的牧草卷喷涂，换上了覆雪后的冬日涂装（然后我发现我没有留下任何一张秋季主题的照片，啊啊啊啊）。</p>
 <p>从狮山天街出来，往西走不远，就能到达狮山景区，这也是狮山天街的一个加分项。夜间的狮山会有灯光投影照亮山体——这就是苏州吗？也太富了吧。狮山脚下还有一片废弃的过山车轨道，但没有拆除，而是被当做了景观留下，也因此有机会能亲眼看到过山车轨道正下方的视角。狮山旁边还有一个看起来很像是奥特曼战队基地的建筑物——苏州科技馆，总感觉胜利飞燕1号要从中弹射起飞，不过看起来这个科技馆并没有投入使用。（查了一下，2026年3月20日，苏州科技馆正式向公众开放，所以我在苏州的时候的确没有投入使用。）</p>
 <p>2025 年 11 月 14 日，摄于狮山天街
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-lfkenz.Dq0iC4Eg_Z1rj3Cc.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-d0e3f1.HPO8P4DT_Z1tmDYO.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-lfkenz.Dq0iC4Eg_Z1pEHr1.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-d0e3f1.HPO8P4DT_Z1rIiND.webp" alt="" /></p>
 <p>2025 年 10 月 20 日 和 11 月 14 日，摄于狮山
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-l1kc0m.CABIQUys_Z1T2AXb.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-l1kc0m.CABIQUys_Z1RofM0.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-61i842.C3KxwnSv_2kX0lG.webp" alt="" /></p>
 <p><strong>苏州 SUONE 金地广场</strong></p>
 <p>苏州金地广场离十全街有地铁 2 站路的距离，在沧浪亭附近，这个商场并不大，也没太多品牌商家入住，但是这个商场有个很特别的地方——好耶，是二次元。</p>
 <p>我不知道为何金地广场的二次元氛围如此浓厚。金地广场中充满了各种各样的谷子店，但是基本上也只有谷子店。我对吃谷算不上感兴趣，却挺乐忠于逛谷子店——有种被二次元包裹的感觉，令我这个阴角十分安心。光有谷子店也没什么太多意思，更有趣的是在金地商都这个二次元氛围比较浓厚的商场，在周末时，会有一些人穿着 Cosplay 服装来逛街。有一次闲逛的时候遇到一位带着异形头的男性/女性人，我发现 Ta 只是在商场里漫无目的地行走。不，这或许就是 Ta 的目的吧。</p>
 <p>我能说什么呢？好耶，是二次元。</p>
 <p>2025 年 8 月 16 日 和 9 月 20 日，摄于金地广场
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-o7c65o.DeRCVvTa_ZJTm0f.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-o7c65o.DeRCVvTa_1lW4T7.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-w48zfh.DFAw5uea_2q3KBO.webp" alt="" /></p>
 <p><strong>星悦汇</strong></p>
 <p>既然提到了二次元，就接着说另一个二次元浓度很高的商场吧。</p>
@@ -1030,10 +1008,10 @@
 <p>诚品生活位于金鸡湖东北角，月光码头旁边。虽然它是一个综合性商场，但或许其中的“诚品书店”更为有名。</p>
 <p>2022 年底来到过诚品书店一次，当时买了一本台版的《推し、燃ゆ》。这次来诚品书店，什么都没买。</p>
 <p>2022 年 12 月 29 日，摄于诚品书店
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-s94a1v.Bmavo6ax_Z2sJqQ.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-s94a1v.Bmavo6ax_24nGsv.webp" alt="" /></p>
 <p>2025 年 8 月 23 日，摄于诚品书店
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ws5qfc.DXCCyug1_Z2pep9N.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-n0yjgp.Coy4ZaJM_xQsoD.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-ws5qfc.DXCCyug1_Z2nA3XC.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-04-19-%E8%8B%8F%E5%B7%9E%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97-n0yjgp.Coy4ZaJM_zuNzO.webp" alt="" /></p>
 <p><strong>永旺梦乐城</strong></p>
 <p>永旺梦乐城在苏州也有好几家，我似乎也都去过……因为都是朋友开车带我去的，再加上内容都大同小异，所以根本分不清去过的是哪家啊喂！</p>
 <p>占地面积很大，商场里店铺很多，吃的也很多。内部还有一片区域是永旺超市，而且相当“开放”。并没有明确的建筑区域或隔档来划分超市的区域，超市似乎直接融于梦乐城中，所以我想不通这个超市到底如何规避顾客拿着商品直接不结账离开的问题。难道，日本所谓的“信用社会”，在中国的日本超市中也适用？</p>
@@ -1217,8 +1195,8 @@
 <p>我非常难过。</p>
 <p>出于以上所有原因，我要对 WordPress 和 Argon 说再见了。我要重新设计撰写和发布文章的流程。我要和难过的心情说再见了。</p>
 <p>旧的杂话铺子
-<img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-gzdwzs.C4Jg2edY_Z23XsNe.webp" alt="" />
-<img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-1k0dlp.CYetxgfW_Z1sUt9A.webp" alt="" /></p>
+<img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-gzdwzs.C4Jg2edY_Z1juKXH.webp" alt="" />
+<img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-1k0dlp.CYetxgfW_ZIrLk4.webp" alt="" /></p>
 <hr />
 <h2>在开始之前</h2>
 <p>如果想要摆脱 WordPress 发布文章的繁琐流程，那就让博客变得安静——不再需要复杂的 WordPress 数据库表交互，让Markdown文件成为页面本身，让博客静态化吧。</p>
@@ -1290,7 +1268,7 @@
 <p>画廊的样式逻辑主要参考了 Google Photos 这样的相册软件中，时间线上图片的排列方式，并且实现了在窄屏幕设备上的自动折行。注意，折行的行为不是“响应式”的，每行显示的图片数量是在页面加载时就计算好的。所以遇到调整窗口尺寸后，文章内图片奇怪的排版行为，就麻烦读者刷新网页试试吧。</p>
 <p>有时候，我会给画廊起一个标题，来阐述图片之间的相关性。这个行为依然由 Markdown 解析脚本控制。脚本会判定和画廊的图片在同一个段落的文字为画廊标题。单图的标题也是这个逻辑。（等下，我为什么不直接用<code>![alt](src)</code>中的 alt 作为单图的标题呢？我是笨蛋呜呜呜）</p>
 <p>原来杂话铺子中有功能丰富的灯箱（fancy box）功能，现在的杂话铺子用<a href="https://github.com/francoischalifour/medium-zoom">medium-zoom</a>实现了简单的图片放大预览功能，仅此而已。</p>
-<p><img src="https://yuuikic.com/static/2026-02-12-refactoring-wordpress-blog-with-astro-vfgdnz.CIzivIU4_1JjODh.webp" alt="" />
+<p><img src="https://yuuikic.com/static/2026-02-12-refactoring-wordpress-blog-with-astro-vfgdnz.CIzivIU4_eQyGl.webp" alt="" />
 画廊功能</p>
 <h4>BlurHash 懒加载过渡</h4>
 <p>没错，我又尝试实现我用过的 Typecho 主题 Mirages 上那优雅的图片过渡逻辑。</p>
@@ -1299,14 +1277,7 @@
 <p>针对这种情况，或许我可以选择以同样的逻辑来实现这个功能：在本地生成一张小尺寸占位图，然后在图片加载时调用。但这岂不是就和 Chevereto 这个随地大小便生产大小图像的家伙一样了？我才不要！于是我选择借助这个项目——<a href="https://blurha.sh/">BlurHash</a>。</p>
 <p>简单来说，BlurHash 通过算法提取出图片的一个20~30字符的特征值，而更神奇的是，BlurHash还可以通过还原算法和图片对应的特征值，利用 canvas 元素绘制出一个具有原始图片特征的“模糊画面”，如此一来就实现了生成图片的模糊版本的占位图的功能。</p>
 <p>将 BlurHash 集成到 Astro 的过程，看似困难，实则是一点也不简单（？）在与 Gemini 和 Claude 老师大战数十（或者有上百）回合后，终于实现了现在杂话铺子中的效果。原理和逻辑是在页面构建的时候同时执行计算图片 BlurHash 的脚本，然后将对应的特征值（blur-hash）写入图片元素中，待到客户端加载的时候用于绘制模糊占位图。</p>
-
-      <div style="margin:1.5em 0;text-align:center">
-        <img src="https://yuuikic.com/assets/livephotos/refactoring-wordpress-blog-with-astro_BlurHash-transition.jpg" alt="Live Photo Cover" />
-        <div style="margin-top:8px;padding:8px;background-color:#f5f5f4;border-radius:4px;color:#57534e;font-size:0.85em">
-          <span style="display:block;margin-bottom:4px">📸 原文此处包含 Live Photo (动态照片)</span>
-          <a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/" style="color:#5f8487;text-decoration:none;font-weight:bold">点击前往网页版查看动态效果 →</a>
-        </div>
-      </div>
+<div><img src="https://yuuikic.com/assets/livephotos/refactoring-wordpress-blog-with-astro_BlurHash-transition.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版查看动态效果 →</a></p></div>
 <p>这还不是结束。由于需要用加载好的 img 元素替代模糊占位图 canvas 元素，所以需要一个容器包裹他们；由于文章内插图实现了画廊功能，所以需要个画廊容器来包裹图片；而画廊模仿了 Google Photos 的逻辑实现了多行画廊，所以每一行还需要个容器包裹——最后，就像大肠包小肠一样，层层叠叠的样式叠加在一起，导致了一些奇怪的 CSS 问题，尤其是在不同平台表现不一致的问题。iOS 和 iPadOS 上的 WebKit 就像敏感肌，在 PC 和 Mac 上跑的好好的样式在 iOS 上就画不出来。总结出来就是层层叠叠的<code>height:auto</code>导致无法获取一个具体的元素高度，所以图片容器就以 0 高度处理了，直到图片加载完后才被撑开——喂！那辛辛苦苦实现的 BlurHash 占位图过渡懒加载功能不就失去意义了吗？！好在是 Astro 处理本地图片时会获取图片的尺寸信息，这可真是帮大忙了。</p>
 <p>啥，你问我远程图片链接插入文章怎么实现这个功能？这……这我还没研究好！什么，你还问我本地图库数量太大乃至未来数据增长导致可用性问题？这……从杂话铺子这么多年才凑出1.4GB大小的附件目录的使用情况来看，那一天似乎还遥不可及嘛。总之，我确实遇见了一些可用性、可迁移性和技术债的问题，这些待我下次再仔细研究吧。好孩子不要模仿哦。</p>
 <h4>深色模式</h4>
@@ -1359,7 +1330,7 @@ slug: "an-article"
 </ol>
 <p>所以重构的杂话铺子样式取消了大面积的背景模糊效果和侧栏。页面背景之前就想去掉，但是一直没想好要更改成什么样式，所以趁着这次重构样式，下定决心去掉了背景。<em>（碎碎念：感觉以后可能还会以尽量不干扰页面阅读体验的样式加回来，笑）</em></p>
 <h4>文章卡片</h4>
-<p>Argon 主题中文章封面图片长宽比是 16:9，这使整个主页文章列表给人的感觉比较像现代的流媒体。现在新的文章卡片将封面图片长宽比调整到 4:3，这个改动让版面更具复古感。然而这个改动是破坏性更新，因为封面图片中不乏有我自己制作的，而从前制作时都是按照 16:9 的画幅制作。比如文章<a href="https://yuuikic.com/archives/goodbye-my-past-avatar/">再见了，我用过的头像。</a>的封面被裁切成了“见了，用过的头”，笑死。<em>（以后制作封面图时应该在不同画幅的重叠区域制作，这样就不用担心以后再调整画幅比例了，天才！）</em></p>
+<p>Argon 主题中文章封面图片长宽比是 16</p><div></div>，这使整个主页文章列表给人的感觉比较像现代的流媒体。现在新的文章卡片将封面图片长宽比调整到 4<div></div>，这个改动让版面更具复古感。然而这个改动是破坏性更新，因为封面图片中不乏有我自己制作的，而从前制作时都是按照 16<div></div> 的画幅制作。比如文章<a href="https://yuuikic.com/archives/goodbye-my-past-avatar/">再见了，我用过的头像。</a>的封面被裁切成了“见了，用过的头”，笑死。<em>（以后制作封面图时应该在不同画幅的重叠区域制作，这样就不用担心以后再调整画幅比例了，天才！）</em><p></p>
 <p>文章卡片的改动还有取消了一些文章信息元素的显示：字数、阅读时间、评论数，以及浏览次数和标签。字数统计目前还在 Todo List 中，阅读时间和评论数没有添加的计划，而评论数或许未来会在文章详情页中展示出来。浏览次数和标签，我暂时下定决心要把它们砍掉了。浏览次数是从 Typecho 时期的杂话铺子就一直存在，迁移到 WordPress 后，我还把之前的文章浏览数据一个个添加回来。</p>
 <p>如今的浏览次数统计可以由评论系统 Artalk 来实现，但我还是决定把这个功能砍掉了。一是将浏览次数在主页，看似模仿的是大平台上的播放次数之类的数据统计，但是二者的意义是完全不同的。我相信在杂话铺子这个渺小的个人博客上，没有几个访客会根据浏览次数的多寡来判断该阅读哪篇文章，浏览次数更多的功能是让我获得成就感，以及数据监控。但无论是获取成就感，还是监控浏览数据，我大可以通过 <a href="https://umami.is/">Umami</a> 和 <a href="https://search.google.com/search-console/about">Google Search Console</a> 来实现，这么一来就没必要在文章卡片上添加繁冗的元素了。二是现在的杂话铺子主页取消了分页逻辑，只展示最近的一些文章，而由于浏览次数功能依赖 Artalk，在归档页面的文章列表中添加浏览次数有点麻烦。为了保持统一性，干脆全都砍掉。</p>
 <p>至于标签，取消它的理由大概<a href="https://chlo.is/gradient-03/">如小氯所说</a>，用标签管理文章会产生许多混乱，况且这么多年下来杂话铺子已经有了稳定的 5 个分类，就算这样，我每次给新文章分类时都得思考一下——所以其实现在有些文章同时属于两个分类。这都有些混乱，更不用说标签了。虽然我不愿意继续打标签，以及文章卡片上不再展示标签，但是在归档页面上，还是添加了标签的元素，让读者可以大概知道些文章内容信息。因此以后再打标签时，我会添加有更细致描述的标签，而不是将标签视作另一种“分类手段”。</p>
@@ -1378,9 +1349,9 @@ slug: "an-article"
 <p>所有旧链接都经过了重定向处理，所以有引用杂话铺子旧的文章链接的邻居们，可以不用费时修改链接了。</p>
 <h4>RSS 订阅</h4>
 <p>现在杂话铺子的 RSS 源由<code>@astrojs/rss</code>生成，使用 <a href="https://github.com/genmon/aboutfeeds/blob/main/tools/pretty-feed-v3.xsl">Pretty Feed v3 默认样式表</a>格式化 RSS 页面，比默认的一大团 xml 代码要美观些。</p>
-<p><img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-fdsn0h.C-mnBa5G_Z2jYTo7.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-fdsn0h.C-mnBa5G_Z1zwcyA.webp" alt="" /></p>
 <p>上次从 Typecho 迁移到 WordPress 时由于 RSS 也被刷新，打扰到了订阅杂话铺子 RSS 的大家。虽然具体不知道有多少，但在 Folo 上自搜能看到杂话铺子有 49 名订阅者。</p>
-<p><img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-p75fta.CCsKheMh_Z1WEC0m.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-02-11-refactoring-wordpress-blog-with-astro-p75fta.CCsKheMh_1DplyO.webp" alt="" /></p>
 <p>所以为了不打扰大家，这次新上线的 RSS 我就直接让它只输出重构上线日期之后的新文章了。</p>
 <hr />
 <h2>大功告成？</h2>
@@ -1401,11 +1372,7 @@ slug: "an-article"
 <p>如果发现其他 Bug，或有修改建议，欢迎留言告诉我。</p>
 <p>最后的最后——</p>
 <center><strong>欢迎光临杂话铺子！</strong></center>
-
-      <div style="margin:1.5em 0;padding:12px;background-color:#f5f5f4;border:1px solid #e7e5e4;border-radius:6px;text-align:center;color:#57534e;font-size:0.9em;font-family:sans-serif">
-        <span style="display:block;margin-bottom:4px">🎵 原文此处包含音乐播放器</span>
-        <a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/" style="color:#5f8487;text-decoration:none;font-weight:bold;display:inline-block">点击前往网页版收听 →</a>
-      </div>
+<div><img src="https://yuuikic.com/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20(OP%20Ver.).jpg" alt="ディスコ・キッド (OP Ver.)" /><p>🎵 ディスコ・キッド (OP Ver.) — 北宇治高校吹奏楽部</p><a href="https://yuuikic.com/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20(OP%20Ver.).mp3">下载音频</a><p><a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版收听 →</a></p></div>
             <br />
             <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
             <p style="text-align:center;color:#888;font-size:0.9em">
@@ -1427,7 +1394,7 @@ slug: "an-article"
 <p><img src="https://yuuikic.com/static/2026-01-17-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-u2havh.BlBf3rKj_Z4iT8h.webp" alt="" /></p>
 <p>除了有独立主题的插图，我有时会用动画和游戏角色作头像。但显然，那时候我还不是个二次元不怎么看动画，而是沉迷于英雄联盟这款游戏，所以也用过一些英雄联盟里的人物插画。</p>
 <p>当时看了《天体的秩序》这部动画后，从动画中截了一张诺艾尔这个角色的笑颜图作头像。虽然动画剧情已经全都忘记，但这个笑脸倒是一直记到现在。记得当时为了找到这个印象中的笑脸，还把天梯秩序二刷了一遍，结果完全没找到，最后发现这一帧其实出现在<a href="https://www.bilibili.com/video/BV1rS4y1T7mM?t=57.3&amp;p=5">动画的ED中</a>……废了好大劲才找到。</p>
-<p><img src="https://yuuikic.com/static/2026-01-17-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-ki1vx9.L8QZE2Iv_Z2bcdxG.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-01-17-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-ki1vx9.L8QZE2Iv_Z1WDDeV.webp" alt="" /></p>
 <p>下面这张图展示了那个时期我用过一些头像。从上到下，时间顺序为倒序。</p>
 <p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E3%80%82-dh10ng.GAQPRyEi_Z1M4s1k.webp" alt="" /></p>
 <hr />
@@ -1447,7 +1414,7 @@ slug: "an-article"
 <p>如果你认识桜庭夜，那么你就认识了桜庭夜。我是想说，在我认为杂话铺子的读者可以与我接触的其他网络平台上，桜庭夜大抵都是用的是“桜庭夜”这个名字，以及高坂丽奈的这个头像。所以如果读者们在其他平台上看到桜庭夜，但不是这个高坂丽奈头像；或者看到使用这个高坂丽奈的头像的账号昵称不是桜庭夜，那么就基本可以认为你遇到的TA不是杂话铺子中的这个桜庭夜。或者在极小概率的情况下，虽然那也是我，但至少那不应该是杂话铺子的桜庭夜。</p>
 <p>对了，还有一件有趣的事情。图片上传至网络平台时通常会被平台压缩，所以经过反复的保存、上传造成的传输和压缩后，就会导致图片的“电子包浆”现象。每当我注册新的社交平台，或者当我用了一段时间别的头像，又想把头像换回高坂丽奈的头像时，为了图省事，我都会从某个正在使用高坂丽奈头像的平台下载。长期以来，虽然只是被我自己不停地倒换，这个头像也渐渐产生了电子包浆。去年四月，我又从动画中重新截取了一遍，把各平台上的头像“焕新”，解决了这个问题。</p>
 <p>前者为新截取的头像，后者为“古朴典雅”的老头像。经过数次压缩，丽奈看起来都变得更“深邃”了。</p>
-<p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-m9r2mx.D2JDecHE_yJ0Dm.webp" alt="" />
+<p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-m9r2mx.D2JDecHE_Zmau3L.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-06dbj1.CHy2d8Hc_Z4JM2H.webp" alt="" /></p>
 <p>虽然高坂丽奈头像用得相当久了，但我用过最久的头像其实是我的微信账号的头像。从我初中开始用微信起，我的微信头像一直都是下面这张图。又是一个有些莫名其妙的头像，如果不是放大观察，仅凭对话窗口的小头像，恐怕是难以判断图中为何物。</p>
 <p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-u18cix.C1kM510D_ZRluzv.webp" alt="" /></p>
@@ -1455,7 +1422,7 @@ slug: "an-article"
 <p>总而言之，《春物》确实是又一部让我留下深刻记忆作品。而仅仅是看到ED最后的这把侍奉社的椅子，这把能够意味着这部作品的“绳结”的椅子，便足以让《春物》的故事带给我的喜爱、欢乐、激动、迷茫、遗憾和痛苦再次涌上心头，又不由得让我回想起动画第二季最终话的标题「春天，在厚厚白雪之下结一而成，吐露新芽」。</p>
 <p>按照使用时长，这把椅子是我用过最久的头像；如果按“厚重感”评价，这把椅子或许也是我“想要用得最久”的头像吧。</p>
 <p>对了，还有一件有趣的事（梅开二度）。因为这把椅子的画面在ED中，而ED画面有动画制作相关者的名单滚幕，哔哩哔哩的片源还有歌词字幕，而且当时的我并不知道有“NCOP/ED”（“无字幕片头/片尾”，Non-Credit Opening/Ending）这种东西——截这张图好费劲。</p>
-<p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-k9wh67.CxlyoJFT_Z2nRBzV.webp" alt="" /></p>
+<p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-k9wh67.CxlyoJFT_1Kh9q4.webp" alt="" /></p>
 <hr />
 <h2>每次换头像时</h2>
 <p>不同于从前，找到一张好看的图片，就换了头像。和过去相比，如今的确很少换头像了。回归头像的意义的本源，头像作为网络身份象征的一部分，总是换来换去反倒会让疑惑。</p>

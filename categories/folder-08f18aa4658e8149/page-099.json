@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "14102f0516aceb704e3d7f53",
+      "title": "柳宿增十｜2024年8月小结",
+      "summary": "记录时间：7.21 – 8.25 太阳经过星座：巨蟹座 Cancer 最亮恒星：柳宿增十 Al Tarf 本月事件 近几年读书一直有点看不进去，容易走神。 这个月开始转向有声书 ，一个月居然听完了好几本。偶尔有一知半解的地方，但没听清也就过了，不像看书那样容易揪着一个段落、一小时也看不了几页。以前我从不觉得自己是个听力学习者，但现在居然有不一样的发现，也许对于不同事物的感知也会随着时间变化呢。 房东那边又作妖了 。虽然安省本地的租房条例较为完善，也有一定程度的租客保护，但架不住总有人想哄骗不懂法的小白。这次是房东的经纪人发邮件要涨房租，我这边让他提供一份正式的涨租表格（N1），结果对方发了一封完全不合规的表格过来。房东本人似乎人还不错，也没有狮子大开口，但经纪人让人十分无语，连最基本的规定都不知道。还好 Ke…",
+      "image": "https://cdn.jsdelivr.net/gh/kyoshiraishi/image@main/img/yarn.webp",
+      "publishedAt": "2024-08-27T02:29:55Z",
+      "sourceId": "09c2f0f0946a1f21",
+      "sourceTitle": "第三夏尔 | Third Shire",
+      "link": "https://thirdshire.com/august-recap-2024/",
+      "detailPath": "articles/14102f0516aceb704e3d7f53.json"
+    },
+    {
       "id": "ecf2ade912ce9362e7e7d671",
       "title": "Android源码分析: 使用场景获取ContentProvider分析",
       "summary": "之前已经分析过在应用启动的时候安装ContentProvider的流程了，现在我们再从使用者的角度看看是怎样去拿到ContentProvider的。 在使用ContentProvider的时候，我们通常会使用 Context 拿到 ContentResolver ，然后在执行CURD的操作，比如我们要查询手机中的联系人，通常会这样做： 1 2 3 4 5 6 7 8 String [] projection = new String [] { Profile . _ID , Profile . DISPLAY_NAME_PRIMARY , Profile . LOOKUP_KEY , Profile . PHOTO_THUMBNAIL_URI }; Cursor profileCursor = getCont…",
@@ -648,17 +659,6 @@
       "sourceTitle": "TaurusXin 的独立博客",
       "link": "https://www.taurusxin.com/windows-terminal/",
       "detailPath": "articles/d7b07f4df5dfdb044b397fdd.json"
-    },
-    {
-      "id": "fa63bcb7e6cc224c848d141a",
-      "title": "钱真是个好东西",
-      "summary": "又拒了一个案件。 没有装逼的意思。事实上，这俩月是我当律师以来最清闲的俩月。手上的案子已经处理的七七八八，唯有一个淅川案，要马拉松式开庭，我对死磕案件其实并不反感，我自己办案，也常量力而行死磕，但我只对唱主角有兴趣，对捧哏没兴趣，所以也没有掺和。 恍惚想起，实习时第一个案件，是个法律援助案件，开庭前一周，我就紧张的睡不着觉，没日没夜翻来覆去看卷，整理材料。开庭前夕，我想，等开完这个庭，高低要歇息两天。造化弄人，从那个案件开始，我就过上了几乎连轴转的生活，直到今日，才得住机会歇息。 案子是个非吸案，当事人是一个老乡。老乡有个闺女，自打毕业就在沿海闯荡，家里亲情氛围淡薄，一年到头跟父母通不了几个电话。这回被抓后，警察问闺女，拘留通知书寄给谁，闺女思索半天，说谁也不用寄。但刑诉法规定，不得不通知家属，闺女才叹了一口…",
-      "image": null,
-      "publishedAt": "2024-08-09T03:19:51Z",
-      "sourceId": "c7356b172af43f7f",
-      "sourceTitle": "刑辩人在路上",
-      "link": "https://xingbianren.cn/post/247.html",
-      "detailPath": "articles/fa63bcb7e6cc224c848d141a.json"
     }
   ]
 }

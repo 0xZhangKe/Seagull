@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "7a159b1c9bafc6b2607f9c32",
+      "title": "她在用尾巴玩我的手",
+      "summary": "（可麗餅：「部落格可以等下再打，我現在就要你摸我！」）",
+      "image": "https://wiwi.blog/assets/images/tail-31ff1bc89e6e726b77d6753288389c23.webp",
+      "publishedAt": "2026-03-23T20:44:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/crepe-tail",
+      "detailPath": "articles/7a159b1c9bafc6b2607f9c32.json"
+    },
+    {
+      "id": "3079475ea7d1dd9ac76157de",
+      "title": "第2封信：考古过去",
+      "summary": "你好啊， 最近发生了什么有意思的事情？没想到两封信之间相隔将近两个月，我迫不及待要告诉你obsidian 和 Claude 强强联手的消息！通过 AI 来整理笔记是一件非常有意思的事情。通过第三方视角来看待和分析过去几年写下来的语料应该足以提炼出我自己都未曾发觉的事情吧。但是让 AI 读取资料的前提，我应该走向笔记界的最终奥义 ——all in on，当喂给 AI 的材料足够充沛、足够生动时我才有可能拿到可靠的分析结果和指导建议。 说干就干，第一步把我散落在备忘录、flomo、文件传输助手、云盘、幕布、飞书文档、印象笔记等等各处的笔记都收集导出。鬼使神差的我在时隔几年后重新走进“印象笔记”，于是我再也没走出去。 第一个目录里装着我的阅读摘录和笔记，第二个目录名为“个人”里面装着我的日记。一股浓烈的年轻气息扑面…",
+      "image": null,
+      "publishedAt": "2026-03-23T14:45:34Z",
+      "sourceId": "f02bca756da09183",
+      "sourceTitle": "查令十字街84号",
+      "link": "https://www.javis.me/make-up-stories-of-past/",
+      "detailPath": "articles/3079475ea7d1dd9ac76157de.json"
+    },
+    {
+      "id": "0c61375a0b84e51c7f8b0406",
+      "title": "Pydantic 不是免费的——聊聊数据校验的边界",
+      "summary": "最近给一个后端服务做 perf，跑了一发 py-spy 出来火焰图，盯着看了一会儿，发现 pydantic.main.__init__ 这一条在主热路径上占了一个让人挺难绷的比例。做了几轮调整之后顺手把这件事记一下——核心想说的是： 对一个 web 服务来说，数据校验从来不是免费的，pydantic 也一样。它有它的边界，越界使用就要付出对应的代价。",
+      "image": null,
+      "publishedAt": "2026-03-23T14:30:00Z",
+      "sourceId": "a6add2003c9627a9",
+      "sourceTitle": "Manjusaka",
+      "link": "https://www.manjusaka.blog/posts/2026/03/23/the-boundary-of-pydantic/",
+      "detailPath": "articles/0c61375a0b84e51c7f8b0406.json"
+    },
+    {
       "id": "842388df1b7df560db103db0",
       "title": "來玩 eddielv.com 的拉霸機！",
       "summary": "原本網站有 隨機文章 的功能，後來又弄了每篇文章的 側邊欄位 ，就突然覺得，這兩個東西應該結合啊！ 於是： 點擊拉霸機！",
@@ -626,39 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/harmony/flutter/",
       "detailPath": "articles/0d3b9dae00b7d2959452e538.json"
-    },
-    {
-      "id": "27eeb589e1a9473cfa6f75bf",
-      "title": "離線 AI 好爽（2026 年版）",
-      "summary": "2024 年九月時，我寫過一篇〈離線 AI 好爽！〉。",
-      "image": "https://wiwi.blog/assets/images/nano-13c3324439a63c54ce948978368e70ab.png",
-      "publishedAt": "2026-03-16T05:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/offline-ai-2026",
-      "detailPath": "articles/27eeb589e1a9473cfa6f75bf.json"
-    },
-    {
-      "id": "596627453f91df12a9ecbade",
-      "title": "日車寬見",
-      "summary": "日車寬見與私刑正義",
-      "image": "https://image.kalan.dev/79c80b7f-67a5-4df8-40d8-e76b41bb6800/normal",
-      "publishedAt": "2026-03-16T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/random/higuruma/",
-      "detailPath": "articles/596627453f91df12a9ecbade.json"
-    },
-    {
-      "id": "7f81d3b47eb2ac1d46e38542",
-      "title": "創作進行式 #24：烏龜和兔子的區別",
-      "summary": "這個禮拜過得怎麼樣啊。",
-      "image": null,
-      "publishedAt": "2026-03-15T15:00:00Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/rabbit-difference",
-      "detailPath": "articles/7f81d3b47eb2ac1d46e38542.json"
     }
   ]
 }

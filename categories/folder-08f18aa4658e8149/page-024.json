@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "23aafb3742689da8b46bbf36",
+      "title": "香港的另一面",
+      "summary": "上周我去参加了一年一度的香港书展，我再次走进了这座城市，本着来都来了不折腾一下浑身不舒服的想法，我们计划多待一天到处走走。香港的市区我们已经看过太多遍了，这次的出行我们选择了离岛区，并计划了一次郊野徒步。",
+      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/anohter_hongkong_8.JPG",
+      "publishedAt": "2026-07-25T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/another-side-of-hong-kong",
+      "detailPath": "articles/23aafb3742689da8b46bbf36.json"
+    },
+    {
+      "id": "bf0a9c6d3d7800893167433b",
+      "title": "Xinsl's Blog即日起正式提供RSS订阅服务",
+      "summary": "为了贯彻互联网精神， 本博客(Xinsl’s Blog) 正式提供RSS订阅服务，读者可以在主页的RSS图标获取订阅链接",
+      "image": null,
+      "publishedAt": "2026-07-24T19:39:08Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/blog-announcements/rss-start/",
+      "detailPath": "articles/bf0a9c6d3d7800893167433b.json"
+    },
+    {
+      "id": "e625172ba5af913e76333d53",
+      "title": "部落格文章渲染策略: 從 CSR 空殼、SSG／ISR,到會 eval 的 MDX 與首幀不再閃",
+      "summary": "這篇記錄了作者把 koimsurai.com 的部落格,從一個 100% CSR 的 React SPA(真人只拿到空殼、爬蟲靠 user-agent 硬塞 meta)一路改造成 SSG／ISR 的完整渲染策略與踩坑。從選型談起——為什麼是 SSG hybrid、為什麼評估過 Next 卻選了 TanStack Start(RR7 差點雀屏中選,被一句「我想要 ISR」翻盤);接著是實作:內文烤進 HTML、重互動留 client、MDX 走 server 編譯加 client eval(一條之後想改成 dynamic-import ESM 來拿掉的路);再到 prerender 生了 111 個檔卻一個都沒被送出、於是改走純 ISR,用 Rust middleware 做發文即刷新(還差點被瀏覽計數端點清光…",
+      "image": null,
+      "publishedAt": "2026-07-24T19:25:16Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/blog-post-rendering-strategy",
+      "detailPath": "articles/e625172ba5af913e76333d53.json"
+    },
+    {
+      "id": "d1069a2ab01bc66c30785a1b",
+      "title": "养老软件分享",
+      "summary": "前段时间给我的小米mix2s换电池后为了测试续航，就装了一些“养老软件“来日用，突然想到晨钟酱（ B站 ， 酷安 ， 个人软件官网 ）很久没有更新他的养老软件了，于是我重启了我的个人资源站，分享一些养老软件 注意 注：以下软件均指安卓软件 何谓养老软件？ 根据安迪比尔定律（ 百度百科 ， 维基百科 ），我们的电子设备之所以会越用越慢，并非由于硬件老化导致（事实上，硬件老化的时间比你想象得要长得多了），主要原因是所使用的软件随着逐渐更新导致体积膨胀和性能消耗变大，导致设备带不动新版软件，对于手机也是同理。 养老软件 就是为了旧手机而出现的。准确点说， 养老软件 是指装上后不用更新就能用很久的软件，虽然也能正常使用，但养老软件普遍功能不如最新版，可能某些你需要的功能只有最新版才有，这时候就只能妥协使用最新版。关于…",
+      "image": null,
+      "publishedAt": "2026-07-24T14:49:06Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/android-old-app-share/",
+      "detailPath": "articles/d1069a2ab01bc66c30785a1b.json"
+    },
+    {
+      "id": "5e6432d5eb0f2b5caf198263",
+      "title": "如果医生也让你自己在家做雾化",
+      "summary": "摆儿总写这种如果不发在国内大平台就零个人需要的经验。",
+      "image": null,
+      "publishedAt": "2026-07-24T14:24:39Z",
+      "sourceId": "37c8eaec9e0afafd",
+      "sourceTitle": "A Purrception",
+      "link": "https://tortie.me/nebulize/",
+      "detailPath": "articles/5e6432d5eb0f2b5caf198263.json"
+    },
+    {
+      "id": "31ccfcf5b070be49818bb452",
+      "title": "对抗系统的桌游",
+      "summary": "最近比较难找到人一起开桌游，所以我玩了不少人对抗系统规则的游戏。 桌游中人和人对抗的比较常见，设计一套规则、让玩家在这套规则下博弈；但需要找到（足够水平的）人一起玩。虽然很多桌游也会设计 solo 模式，但大多是设计一个自动机来模拟对手。这会损失相当的博弈性，要么变成了可预测的系统行为，要么沦为半随机事件。而游戏规则的原始设计中通常都会有相当部分依赖人之间的博弈才有趣。例如，我最喜欢的桌游《银河竞逐》在第一个扩展包中就加入了自动机，允许 solo ，但我觉得远没有和人玩有趣。 也有设计得不错的自动机。例如之前介绍过的《Star Trek : Captain's Chair》在玩家社区中就公认单人模式非常有趣，我也只一个人玩过。还有我前段超喜欢的《deep future》也是一个多人对抗游戏，但很多玩家包括我也…",
+      "image": null,
+      "publishedAt": "2026-07-24T14:03:34Z",
+      "sourceId": "64ba70840e06d623",
+      "sourceTitle": "云风的 BLOG",
+      "link": "https://blog.codingnow.com/2026/07/deckers.html",
+      "detailPath": "articles/31ccfcf5b070be49818bb452.json"
+    },
+    {
       "id": "44ff05b81ae2b7035e85c3e9",
       "title": "荷风送香气，竹露滴清响",
       "summary": "很久没更了，水一篇吧。 自从十几岁外出上学，回老家就像旅游一样，一年也就那么两三次。 今年暑假回老家过了7、8天，小区门口公园里的湖中荷花竞相开放，虽然整个水面也不过30亩，却也有“接天莲叶无穷碧”的…",
@@ -593,72 +659,6 @@
       "sourceTitle": "Great Firewall Report",
       "link": "https://gfw.report/publications/pets26b/en/",
       "detailPath": "articles/6d8e1729536b5941c6d732df.json"
-    },
-    {
-      "id": "071209c17f2675c6b2d1e386",
-      "title": "CensorLess：通过无服务器云函数实现低成本审查规避",
-      "summary": "CensorLess：通过无服务器云函数实现低成本审查规避 Dayeon Kang University of Massachusetts Amherst Jade Sheffey University of Massachusetts Amherst Mingshi Wu GFW Report Pubali Datta University of Massachusetts Amherst Amir Houmansadr University of Massachusetts Amherst 摘要 随着全球网络审查日益加剧，各类审查规避工具相继涌现。然而，这些工具的经济成本直接影响用户选择和提供方运营的可持续性。近期的审查规避研究尝试将基础设施即服务（IaaS）竞价实例用作桥接节点，以提高成本效益，但网络连…",
-      "image": null,
-      "publishedAt": "2026-07-20T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/publications/pets26b/zh/",
-      "detailPath": "articles/071209c17f2675c6b2d1e386.json"
-    },
-    {
-      "id": "5cf0b9b1169d5aa28fb96238",
-      "title": "QUICstep: Evaluating connection migration based QUIC censorship circumvention",
-      "summary": "QUICstep: Evaluating connection migration based QUIC censorship circumvention Seungju Lee Princeton University Mona Wang Princeton University Watson Jia Princeton University Qiang Wu GFW Report Henry Birge-Lee Princeton University Liang Wang Princeton University Prateek Mittal Princeton University Abstract Internet censors often rely on information in the f…",
-      "image": null,
-      "publishedAt": "2026-07-20T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/publications/pets26a/en/",
-      "detailPath": "articles/5cf0b9b1169d5aa28fb96238.json"
-    },
-    {
-      "id": "a9c2d617829ebd4dd076123f",
-      "title": "QUICstep：评估基于连接迁移的 QUIC 审查规避方法",
-      "summary": "QUICstep：评估基于连接迁移的 QUIC 审查规避方法 Seungju Lee Princeton University Mona Wang Princeton University Watson Jia Princeton University Qiang Wu GFW Report Henry Birge-Lee Princeton University Liang Wang Princeton University Prateek Mittal Princeton University 摘要 互联网审查方常依赖连接最初几个数据包中的信息来封锁其不希望出现的流量。随着 QUIC 传输协议的兴起，既有研究提出利用 QUIC 连接迁移 ，通过另一条网络路径（如加密代理通道）隐藏最初的若干握手数据包。然而…",
-      "image": null,
-      "publishedAt": "2026-07-20T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/publications/pets26a/zh/",
-      "detailPath": "articles/a9c2d617829ebd4dd076123f.json"
-    },
-    {
-      "id": "75508eee99c3575c468b3b21",
-      "title": "奧客",
-      "summary": "巷口的蛋餅店生意普通，直到那天。",
-      "image": null,
-      "publishedAt": "2026-07-20T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/rehearsed",
-      "detailPath": "articles/75508eee99c3575c468b3b21.json"
-    },
-    {
-      "id": "e81fc13bdf894859cbb44ad7",
-      "title": "當測量變成目標：從窗戶稅到 Pull Request 數",
-      "summary": "我曾寫小工具統計自己一季貢獻了多少 PR、留了多少 review、解了多少 ticket，想拿數字向主管證明產出。主管只淡淡說績效不只看產出。幾年後我才懂——當測量變成目標，它就不再是一個好的測量了。從英國窗戶稅、河內滅鼠賞金，到今天用 PR 數評估開發者，機制一模一樣。",
-      "image": "https://image.kalan.dev/eeebb756-cf84-47b5-9ee5-f2513c8cab00/normal",
-      "publishedAt": "2026-07-20T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/devnote/when-a-measure-becomes-a-target/",
-      "detailPath": "articles/e81fc13bdf894859cbb44ad7.json"
-    },
-    {
-      "id": "3b0926887b03d0804fa28523",
-      "title": "HANAOBORE 與 S.H.E 的 Super Star",
-      "summary": "收錄於 Project Sekai 的 Vocaloid 歌曲之一，並且「遊戲內團體」Vivid BAD SQUAD 有份翻唱的 HANAOBORE（花溺れ） ，它的副歌開頭旋律不懂幹嘛令我聯想起臺灣女子團體 S.H.E 原唱的 2000 年代經典華語歌 Super Star 的招牌副歌旋律。 HANAOBORE 副歌開頭旋律： Your browser does not support the audio element. Super Star 副歌開頭旋律： Your browser does not support the audio element. ⋯⋯總覺得這個莫名的相似感，也讓 HANAOBORE 莫名地「被傳染了一點俗氣感」（？？？）XD。",
-      "image": null,
-      "publishedAt": "2026-07-19T18:06:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/hana-obore-she-superstar/",
-      "detailPath": "articles/3b0926887b03d0804fa28523.json"
     }
   ]
 }

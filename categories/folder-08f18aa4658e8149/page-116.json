@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "a4a9911554cf9a2b6f27b9b6",
+      "title": "2022 年程序员一定要做的一件事情 - 更换你的 SSH 公钥算法",
+      "summary": "前言 常见的 SSH 登录密钥使用 RSA + SHA-1 算法。RSA 经典且可靠，但性能不够理想。 只要你的服务器上 OpenSSH 版本大于 6.5（2014 年的古早版本），就可以利用 Ed25519 算法生成的密钥对，减少你的登录时间。如果你使用 SSH 访问 Git，那么就更值得一试。 Ed25519 的安全性在 RSA 2048 与 RSA 4096 之间，且性能数十倍于 RSA 算法。 起因 自 2022 年 4 月 21 日 Canonical 发布了 Ubuntu 22.04 版本，并且将 Ed25519 加入了 SSH 登录密钥算法，禁用了 RSA 公钥算法，导致我在 iOS 上 ServerCat 应用程式的 RSA 密钥无法连接到服务器，经过排查之后发现 Ubuntu 22.04 将…",
+      "image": "https://cdn.taurusxin.com/hugo/2022/05-30/image-20220530200309584.png",
+      "publishedAt": "2022-05-30T19:50:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/ssh-key-ed25519/",
+      "detailPath": "articles/a4a9911554cf9a2b6f27b9b6.json"
+    },
+    {
       "id": "1bf1149606daf79fbdcc999d",
       "title": "2021年末新冠流水账",
       "summary": "本文记录我在2021年末感染新冠并痊愈的经历，以供参考。当时正是Omicron在纽约肆虐的时候，日均四五万新增，我抱着「明知山有虎偏向虎山行」的精神去纽约跨年，结果当然是羊入虎口。 我的症状是比较典型的Omicron，从阳转阴花了将近一周。主要症状是嗓子疼和发烧，当时条件所限只有华氏没有摄氏的温度计，所以体温都是华氏度，但似乎测出来偏低，个人体感应该是上过100F的。 最近有不少朋友新得了新冠，初期测不出来阳性所以不太确定，但无一例外，只要是嗓子开始痒了疼了，即使还没开始发烧，基本上就是新冠。 截至目前（05/2022）为止，没有观察到后遗症。 12/28/2021 15:00 97.2F，嗓子痒 17:00 99.7F，烧，无力 19:25 泰诺两粒 20:30 98.8F TESTED POSITIVE",
@@ -648,17 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/newsletter/2022/02/newsletter-030/",
       "detailPath": "articles/5d3872b97b8f1ccddf1632e8.json"
-    },
-    {
-      "id": "e8a21b641c61ffe52bec6b96",
-      "title": "从 GitLab 开始的全新 DevOps 之旅",
-      "summary": "GitHub 终究还是个 Hub ——中心化的服务。即使它是全球最大的代码托管平台，无论是出于 DMCA 之类的法律原因导致自己辛苦编制的代码被删除（参见 GitHub DMCA Repository ），抑或是因为些许其他不可描述的因素导致心血资源的消失，这些都是将代码部署在如 GitHub 这样的公共平台上可能发生的恶性事件。",
-      "image": null,
-      "publishedAt": "2022-02-20T10:52:28Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/hello-gitlab/",
-      "detailPath": "articles/e8a21b641c61ffe52bec6b96.json"
     }
   ]
 }

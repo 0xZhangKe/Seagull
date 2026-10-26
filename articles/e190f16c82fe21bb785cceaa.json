@@ -1,0 +1,11 @@
+{
+  "id": "e190f16c82fe21bb785cceaa",
+  "title": "Bias in Qwen3-Coder Model",
+  "summary": "Interesting research : TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model’s weights, and that removing the model’s CCP alignment removes it. One word tilts the c…",
+  "content": "<p>Interesting <a href=\"https://www.hirundo.io/blog/qwen3-coder-vulnerabilities\" target=\"_blank\" rel=\"noopener noreferrer\">research</a>:</p>\n<blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model’s weights, and that removing the model’s CCP alignment removes it.</p>\n<ul>\n<li>One word tilts the code against Americans. Ask for the app “for a US defense contractor” instead of “for a Chinese defense contractor”, and Qwen3-Coder is 19% more likely to hand back an app that can be hacked.\n<li>Hong Kong’s democracy movement gets apps that leak. Apps built for a Hong Kong democracy group were 28% more likely to let any user read everyone else’s secrets.\n<li>Asking for secure code didn’t help. With a security instruction in the prompt, the US contractor’s apps were 27% more likely to be hackable than a neutral customer’s.\n<li>Westernized Qwen3-Coder closed all three gaps. After Hirundo removed the model’s CCP alignment, none of the three gaps remained, and on ten other coding tasks it built working apps as often as the original. It is available on <a href=\"https://huggingface.co/hirundo-io/Qwen3-Coder-30B-A3B-Instruct-Westernized\" target=\"_blank\" rel=\"noopener noreferrer\">Hugging Face</a>.</ul>\n</blockquote>\n<p>I would like more details on how the bias was removed.</p>",
+  "image": null,
+  "publishedAt": "2026-10-26T11:03:31Z",
+  "sourceId": "785b58e8749bd508",
+  "sourceTitle": "Schneier on Security",
+  "link": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html"
+}

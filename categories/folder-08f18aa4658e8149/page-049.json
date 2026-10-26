@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "f92d7d65437e971735fd7e2c",
+      "title": "我是一個很老套的人",
+      "summary": "雖然我現在連二十五歲都不到，但我是一個很老套的人。 與其用一堆以 LLM 作爲基礎的「AI 聊天機器人」或是「（完全自主的）AI 代理」花時間微調 prompt 以打造最完美（或是最適合用來聊心事）的人設，我還不如去（試着）和真人（朋友、家人或甚至是陌生人）聊天。 與其一直花時間在 Suno 之類的生成器微調 prompt 以生成最完美的樂曲，我還不如自己動手去練樂器。 與其一直花時間在 Midjourney 之類的生成器微調 prompt 以產出最完美的圖片，我還不如自己畫一個粗糙的線圖。 與其讓 LLM 一秒產生最完美的文章，我還不如自己去花時間慢慢醞釀，寫出真正發自內心的文字。",
+      "image": null,
+      "publishedAt": "2026-02-28T14:12:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/i-am-old-school-person/",
+      "detailPath": "articles/f92d7d65437e971735fd7e2c.json"
+    },
+    {
+      "id": "13f548fa012fa50270372649",
+      "title": "家鄉的星空",
+      "summary": "最近因爲過年的關係，特地飛回到山打根，並住在以前的老家。 某一天晚上出去吃飯回家的時候，家人突然（用參雜着英語的廣東話）喊道：「欸，星星！」出於好奇，我抬頭一看——真的欸！漆黑浩瀚的天空中，有着十來個閃爍的白色星光點綴，配上那天大概七分滿 1 的月亮，景色真的是好美麗！可惜手邊沒有品質好的相機，沒有辦法將當時的美景好好拍下來（我手機的相機連高樓大廈的夜晚燈光都拍不清楚了，更何況星星……）。 自從出外到光害重重的大城市生活後，想要看到如此的星空已然成爲一種奢侈，還是得在小地方才比較有機會。 唉，在這個大家（包括我）都將大多數時間用在低頭看手機的時代，我們是否還記得：抬頭向天望去，其實也能從中找到大自然所賦予的美好？ 讀到這個描述，大家也許可以猜到那天是哪一天了，那我就不明講了。 ↩︎",
+      "image": null,
+      "publishedAt": "2026-02-28T13:53:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/hometown-starry-night/",
+      "detailPath": "articles/13f548fa012fa50270372649.json"
+    },
+    {
+      "id": "66d74f784d2987294187180b",
+      "title": "Trial与CommonLisp的介绍",
+      "summary": "前言 大家好，这里明琪，这篇文章本来是打算作为一个系列的教程的，但由于最后我还是放弃使用Trial引擎了，就当作介绍下CommonLisp吧。 Trial简介 下面先简单地介绍下Trial，更详细的介绍会放到最后再说。 Trial是由瑞士独立游戏开发者、Lisp Hacker兼程序员 Yukari Hafner（又叫Shinmera）开发的一个模块化的游戏引擎，Trial基于Common Lisp语言开发，目前由Shinmera创立的工作室组织Shirakumo维护。 基于Trial开发的商业游戏作品，最具代表性的是Kandria，它是一个有丰富世界观的大型开放世界动作冒险游戏。 Common Lisp 提到Trial，就不得不提到开发Trial的编程语言：Common Lisp。这门编程语言是众多Lisp语…",
+      "image": null,
+      "publishedAt": "2026-02-28T13:17:42Z",
+      "sourceId": "716f999b030a6a78",
+      "sourceTitle": "明琪的日记",
+      "link": "https://yumieko.kikowiwu.com/posts/0a80d35a-f927-451e-8f96-8ebc00a29a4d.html",
+      "detailPath": "articles/66d74f784d2987294187180b.json"
+    },
+    {
       "id": "b88c83d86437d7f4def73f93",
       "title": "#15 欢喜过年的二月月报",
       "summary": "二月就28天，再加上过年放了好几天假，因此特别快，这里就快速总结一下这个月吧。 折腾 最近获悉LeanCloud将于2027年年初停止服务，而我的博客的评论数据是用这个平台的结构化数据存储的，不过好在Waline支持多种数据存储平台，调研了一下发现Tidb Cloud提供的免费服务就够我用了，于是就迁移到这里了。迁移倒是也挺简单，通过Waline把数据导出，在tidb cloud中创建好数据库和对应的表，在Vercel后台把Waline的环境变量中的LeanCloud相关的都删掉，并且新加上tidb的，进入Waline后台再导入一下数据就好了，对于用户来说基本没啥影响。 前不久发现网上有网友基于高德地图的API做了个足迹地图，手一痒也想吧自己的搞一搞，于是就对AI发号施令，完成了足迹功能的重构，勉强能用给上线…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/curry-noodle",
       "detailPath": "articles/64d10851e8e8f14c983e7d10.json"
-    },
-    {
-      "id": "47cbac49580c45be69061dda",
-      "title": "视角不同，观点不同",
-      "summary": "视角不同，观点不同 最近看到Youtube上关于中国大陆的一些评价，感觉评论区大多对中国大陆现任政权比较偏向正面评价，理由基本都是中国大陆近几年的发展民生更好了，社会变得更加安定了，腐败的现象减少了，诸如此类。 当然，其中有很多评价也有批评港澳台地区和西方国家的明星政治和狂热民众情绪的乱象，像是关于港澳台地区的大部分民众只会互联网上的政治宣传之类的，还有别的国家地区的政府只关心选票之类的。 这些观点，和我个人体会到的大陆社会现状发生了冲突，毕竟我看到的大陆的社会现状是一个赛博朋克一般的现实。 过度的言论审查和监管几乎无处不在，大企业和大平台极端的风险控制逻辑压抑表达空间和创造力，一些事件几乎无法公开讨论，在国内建站和做APP需要经过层层审批。 不受约束的各个企业大搞恶性垄断和竞争，大量投放垃圾广告和通过封闭平…",
-      "image": null,
-      "publishedAt": "2026-02-23T12:27:14Z",
-      "sourceId": "716f999b030a6a78",
-      "sourceTitle": "明琪的日记",
-      "link": "https://yumieko.kikowiwu.com/posts/8c281eae-557d-45a4-ac78-fee0664331a5.html",
-      "detailPath": "articles/47cbac49580c45be69061dda.json"
-    },
-    {
-      "id": "12f4683ad1aec563bbbc3e41",
-      "title": "「只有我這樣嗎？」最後一週",
-      "summary": "本期的 BlogBlog 同樂會已結束。請按這裡閱讀本期回顧文章！",
-      "image": null,
-      "publishedAt": "2026-02-23T08:25:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/bbp-feb-2026-last-week",
-      "detailPath": "articles/12f4683ad1aec563bbbc3e41.json"
-    },
-    {
-      "id": "ce847c6a4401dbd730a4fc59",
-      "title": "活過 vs. 記錄",
-      "summary": "去餐廳的時候，總會有人習慣先拍照「供奉」Instagram。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:56:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/performing-for-social-media",
-      "detailPath": "articles/ce847c6a4401dbd730a4fc59.json"
     }
   ]
 }

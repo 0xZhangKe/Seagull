@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "75783ac4b8d9647146420184",
+      "title": "真菌计算机",
+      "summary": "Fungi seem harmless enough. Many Species know otherwise. … Because there are some fungi who seek not to kill, but to control. Viruses can make us ill, but fungi can alter our very minds. 真菌看似无害，许多物种却知道事实并非如此。……因为真菌寻求的并非杀戮，而是控制。病毒致病，但真菌可以改变我们的心智。 美剧《最后生还者》（The Last of Us）以这样一段虚构的 电视采访 开篇，将情节设定在随着气候变暖，真菌适应更高温度，进而感染并控制人类的世界之中。在观看完整季剧集后，我对真菌有了兴趣，开始阅读英国生物学家 Merl…",
+      "image": null,
+      "publishedAt": "2024-01-17T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2024/01/18/the-fungal-computer",
+      "detailPath": "articles/75783ac4b8d9647146420184.json"
+    },
+    {
       "id": "ee74eabd48240bbc5f683ec4",
       "title": "Passkey在Android端的应用实践",
       "summary": "Passkey，中文名通行密钥，他是WebAuthn的一部分，由FIDO联盟开发，可以做到让用户不使用用户名和密码，来直接验证身份。在2022年的WWDC上，Apple正式宣布了对Passkey的支持，当前10月份，google也宣布了对于passkey的支持。目前已经有一些应用支持了passkey，包括谷歌，微软，github，whatsapp等。最近在我们的Android应用上集成Passkey踩了很多的坑，简单记录一下。 Passkey原理简介 简单来说，Passkey就是通过密钥对验证替代密码验证，原理和SSL/TLS验证类似，密钥对即公钥和私钥。用户的设备上存储的是私钥，创建的时候会将公钥发送到服务器端进行存储。验证的时候，服务端发送一段通过公钥加密的options信息，设备端使用私钥解密后回传给服…",
@@ -648,17 +659,6 @@
       "sourceTitle": "無糧殿",
       "link": "https://wuliangdian.com/posts/qgis-xyz-tiles-and-wmts/",
       "detailPath": "articles/e88c95178fda1c324a0dffdd.json"
-    },
-    {
-      "id": "7732628106ff7414a8d47ad9",
-      "title": "JS 逆向网易云音乐",
-      "summary": "本文是一篇网易云音乐网页版 API 的逆向分析实战教程，旨在解决如何获取歌曲真实 .m4a 播放链接的问题。教程通过浏览器开发者工具，一步步追踪并剖析了其核心加密参数 params 和 encSecKey 的生成过程，深入分析了背后涉及的 AES 和 RSA 加密算法。最终，通过 Python 结合 PyExecJS 库调用复现的 JavaScript 加密逻辑，成功构造请求并获取到歌曲链接，同时还逆向了歌曲搜索接口。本文为对网页逆向、API分析和加解密技术感兴趣的开发者提供了一次完整的实战演练。",
-      "image": null,
-      "publishedAt": "2023-11-27T21:00:57Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/f8ce.html",
-      "detailPath": "articles/7732628106ff7414a8d47ad9.json"
     }
   ]
 }

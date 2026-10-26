@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "b88c83d86437d7f4def73f93",
+      "title": "#15 欢喜过年的二月月报",
+      "summary": "二月就28天，再加上过年放了好几天假，因此特别快，这里就快速总结一下这个月吧。 折腾 最近获悉LeanCloud将于2027年年初停止服务，而我的博客的评论数据是用这个平台的结构化数据存储的，不过好在Waline支持多种数据存储平台，调研了一下发现Tidb Cloud提供的免费服务就够我用了，于是就迁移到这里了。迁移倒是也挺简单，通过Waline把数据导出，在tidb cloud中创建好数据库和对应的表，在Vercel后台把Waline的环境变量中的LeanCloud相关的都删掉，并且新加上tidb的，进入Waline后台再导入一下数据就好了，对于用户来说基本没啥影响。 前不久发现网上有网友基于高德地图的API做了个足迹地图，手一痒也想吧自己的搞一搞，于是就对AI发号施令，完成了足迹功能的重构，勉强能用给上线…",
+      "image": "https://img.isming.me/photo/26-feb/IMG_20260208_135511.webp",
+      "publishedAt": "2026-02-28T13:03:56Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2026-02-28-feb-summary/?utm_source=rss",
+      "detailPath": "articles/b88c83d86437d7f4def73f93.json"
+    },
+    {
+      "id": "61fbee927d2f6626221c8d0f",
+      "title": "隐说 NO.14 真理必须是前进的",
+      "summary": "本栏目《隐说》由原《棱镜通讯》分离而来，《隐说》主要聚焦于我近期读的一些好书、好文章、好的付费栏目、日常思考等等，其中有摘录、点评、扩展。 1、真理必须是前进的 “中国封建大国宗法一体化结构所造成的强控制和脆性给我们留下什么历史教训呢？那就是:真理必须是前进的。法国大数学家、思想家巴斯卡，曾说过一句著名的话：“前进的事业必须被前进所取代。”放弃对一种似乎是理想的，但不能被改进的社会追求，是十分痛苦的。拥有无比创造力的伟大的中华民族一旦从这一古老的梦中醒来，这本身就意味着巨大的...... READ MORE",
+      "image": null,
+      "publishedAt": "2026-02-28T11:26:55Z",
+      "sourceId": "b4584dd13588932a",
+      "sourceTitle": "太隐",
+      "link": "https://wangyurui.com/posts/yin-shuo-no-14-cong-zheng-zhi-xue-jiao-du-du-li-8630e17e",
+      "detailPath": "articles/61fbee927d2f6626221c8d0f.json"
+    },
+    {
+      "id": "9d0b08105111f91320db54d5",
+      "title": "想法在丙午阳中迭代",
+      "summary": "这个月我忙于一些现实中的事情，结果连月刊和自己一个月里都做了什么，全都忘了个干净…… 我希望这会是你能看到的，最后一个条目如此之少的月刊。",
+      "image": "https://media.otter.homes/media_attachments/files/115/993/043/630/434/017/original/c0949f17ecc4bd6f.jpg",
+      "publishedAt": "2026-02-28T05:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/e3b9.html",
+      "detailPath": "articles/9d0b08105111f91320db54d5.json"
+    },
+    {
       "id": "a7552e2dfc30904671787807",
       "title": "表演「表演音樂」",
       "summary": "昨天，檸檬卷給我看了一個 Instagram 上的自彈自唱短影片。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/performing-for-social-media",
       "detailPath": "articles/ce847c6a4401dbd730a4fc59.json"
-    },
-    {
-      "id": "92a4395bcb1b963ac3259496",
-      "title": "汇编语言学习・壹",
-      "summary": "学习汇编语言的笔记。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/8e54.html",
-      "detailPath": "articles/92a4395bcb1b963ac3259496.json"
-    },
-    {
-      "id": "810de53fa038ef5cfed3da49",
-      "title": "读《大闸蟹》",
-      "summary": "这是陈昌平在零几年写的一篇短篇小说。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/b084.html",
-      "detailPath": "articles/810de53fa038ef5cfed3da49.json"
-    },
-    {
-      "id": "299f7fc8c9fd42c5df8b351a",
-      "title": "專輯歌曲順序要怎麼排？一個門外漢的排序原則",
-      "summary": "不怎麼懂音樂的我用AI做了一張專輯。12首歌，要按什麼順序排？",
-      "image": "https://alexhsu.com/_astro/lofi-jazz-stories-cover.DX7vNb0L.png",
-      "publishedAt": "2026-02-23T04:17:52Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/album-order",
-      "detailPath": "articles/299f7fc8c9fd42c5df8b351a.json"
     }
   ]
 }

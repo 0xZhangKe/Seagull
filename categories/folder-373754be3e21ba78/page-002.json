@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "a83847686cfa1d04845a8ba6",
+      "title": "Fancy Curl Sites",
+      "summary": "So a good while ago I added a fun curl version of my site, meant for viewing in the terminal. Try running these commands! curl nytpu.com/gemlog/2026-03-18 # or curl nytpu.com (sorry Windows users, not my fault that ANSI escape codes are disabled-by-default in cmd.exe . And not my fault that in Powershell you have to use curl.exe instead of curl because Powe…",
+      "image": null,
+      "publishedAt": "2026-10-14T00:00:00Z",
+      "sourceId": "72f838778ac9f67d",
+      "sourceTitle": "nytpu's gemlog",
+      "link": "https://nytpu.com/gemlog/2026-03-18",
+      "detailPath": "articles/a83847686cfa1d04845a8ba6.json"
+    },
+    {
+      "id": "f8d2f0d53f964fca23d7bdca",
+      "title": "Redesigning source control at Anthropic",
+      "summary": "Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. Th…",
+      "image": "https://static.simonwillison.net/static/2026/anthropic-merges-per-day.webp",
+      "publishedAt": "2026-10-13T23:00:06Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "detailPath": "articles/f8d2f0d53f964fca23d7bdca.json"
+    },
+    {
+      "id": "b7528ab2c4f503dcda22a44b",
+      "title": "Curiosity Traps",
+      "summary": "On reverse honeypots, rewarding close attention, and finding your people",
+      "image": "https://www.autodidacts.io/content/images/2026/10/winnie-the-pooh-honey-pot-1.jpg",
+      "publishedAt": "2026-10-13T22:42:04Z",
+      "sourceId": "e2f4758cec273fb9",
+      "sourceTitle": "The Autodidacts",
+      "link": "https://www.autodidacts.io/curiosity-traps/",
+      "detailPath": "articles/b7528ab2c4f503dcda22a44b.json"
+    },
+    {
       "id": "d00f50f55b1614fcb532e983",
       "title": "llm-gemini 0.35",
       "summary": "Release: llm-gemini 0.35 I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Gemini API and for customers of their $100/month subscription plan. Here are the low, medium and high pelicans . As expected, they are all excellent: Gemini has a track record of producing great SVGs, and are the only lab where I know their…",
@@ -120,17 +153,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
       "detailPath": "articles/33320d0b71ebdd0efcae31cf.json"
-    },
-    {
-      "id": "bc7a862539dbbd3a0860f87f",
-      "title": "web-edit 0.1a0",
-      "summary": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to…",
-      "image": "https://static.simonwillison.net/static/2026/web-edit.webp",
-      "publishedAt": "2026-10-12T15:54:36Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
-      "detailPath": "articles/bc7a862539dbbd3a0860f87f.json"
     },
     {
       "id": "e4f3022c32aef68367e78e22",
@@ -595,17 +617,6 @@
       "detailPath": "articles/f55390bb6a2e3862d057e632.json"
     },
     {
-      "id": "951796968cbe66813d7a7e93",
-      "title": "VLM Enhanced Metadata For My Icon Galleries",
-      "summary": "Confession: I got nerd-sniped by Sam Henri Gold’s request for my icon galleries: I'd like to humbly request artwork-level searching in macosicongallery.com What follows is a train-of-thought blog post as I play with what an implementation might look like. I’ve actually long-wanted something like this, e.g. let me search for “coffee” and show me all icons th…",
-      "image": "https://cdn.jim-nielsen.com/blog/2026/vlm-clip-related-camera.png",
-      "publishedAt": "2026-09-29T19:00:00Z",
-      "sourceId": "fafb02ce167dbe9e",
-      "sourceTitle": "Jim Nielsen’s Blog",
-      "link": "https://blog.jim-nielsen.com/2026/icon-galleries-vlm/",
-      "detailPath": "articles/951796968cbe66813d7a7e93.json"
-    },
-    {
       "id": "05ff1cb1daa012a68203f47d",
       "title": "Dragoncatcher: Beyond helpful",
       "summary": "Fun event. Read here.",
@@ -648,17 +659,6 @@
       "sourceTitle": "Pushing Pixels",
       "link": "https://www.pushing-pixels.org/2026/09/28/production-design-of-verity-interview-with-amy-williams.html",
       "detailPath": "articles/5ace2f01d7b8f69031494bad.json"
-    },
-    {
-      "id": "3fcdcc0f386cb0d6d57db1fc",
-      "title": "Kindness as First-class Citizen in Programming",
-      "summary": "The world needs more intentional kindness. There's a manufactured backlash against empathy from Elon Musk to Gad Saad's 'suicidal empathy.' Kindness already operates as a design constraint: the IndieWeb's eleventh principle, Elm's code of conduct, Recurse Center's social rules, Ubuntu's 'I am because we are,' Audre Lorde's anger as care, and Coraline Ada Eh…",
-      "image": null,
-      "publishedAt": "2026-09-28T02:00:00Z",
-      "sourceId": "d44765325e020e3a",
-      "sourceTitle": "Brennan’s Weblog",
-      "link": "https://brennan.day/kindness-as-first-class-citizen-in-programming/",
-      "detailPath": "articles/3fcdcc0f386cb0d6d57db1fc.json"
     }
   ]
 }

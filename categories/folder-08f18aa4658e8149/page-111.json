@@ -1,6 +1,105 @@
 {
   "items": [
     {
+      "id": "c65eec00d14325611a197b30",
+      "title": "F20H 系列：《塞尔达传说：王国之泪》",
+      "summary": "看到有些朋友最近才拿到卡带，修正补充一下之前发在别的平台上，玩了《王国之泪》20 多小时后的一些感想，以下内容含有微量剧透。",
+      "image": null,
+      "publishedAt": "2023-05-17T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/first-20-hours-gameplay-of-totk",
+      "detailPath": "articles/c65eec00d14325611a197b30.json"
+    },
+    {
+      "id": "af5d5cab18c5778dbb9bbce8",
+      "title": "树莓派 Pico 通过有源蜂鸣器播放音频",
+      "summary": "本文是一篇使用 MicroPython 在树莓派 Pico 上通过有源蜂鸣器播放音乐的详细教程。文章以《超级马里奥》主题曲为例，从零开始指导你如何将在线乐谱（来自 Online Sequencer）解析为程序可用的数据结构，并利用 MicroPython 的 PWM 功能精确控制蜂鸣器的频率和发声时长。内容不仅涵盖了代码实现，还为不熟悉乐理的读者科普了音符、节拍等基础知识，非常适合 Pico 入门玩家和对硬件音乐项目感兴趣的朋友。",
+      "image": null,
+      "publishedAt": "2023-05-15T22:49:48Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/ba6a.html",
+      "detailPath": "articles/af5d5cab18c5778dbb9bbce8.json"
+    },
+    {
+      "id": "763605f112258fd7331fec98",
+      "title": "当 App 有了系统权限，真的可以为所欲为？",
+      "summary": "前一段时间有个 App 很火，是 Android App 利用了 Android 系统漏洞，获得了系统权限，做了很多事情。想看看这些个 App 在利用系统漏洞获取系统权限之后，都干了什么事，于是就有了这篇文章。由于准备仓促，有些 Code 没有仔细看，感兴趣的同学可以自己去研究研究，多多讨论，对应的文章和 Code 链接都在下面： 深蓝洞察：2022 年度最 “不可赦” 漏洞 XXX apk 内嵌提权代码，及动态下发 dex 分析 Android 反序列化漏洞攻防史话 关于这个 App 是如何获取这个系统权限的， Android 反序列化漏洞攻防史话 ，这篇文章讲的很清楚，就不再赘述了，我也不是安全方面的专家，但是建议大家多读几遍这篇文章",
+      "image": null,
+      "publishedAt": "2023-05-14T12:15:17Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2023/05/14/bad-android-app-with-system-permissions/",
+      "detailPath": "articles/763605f112258fd7331fec98.json"
+    },
+    {
+      "id": "84cace6c1558af9aa2f6bc2b",
+      "title": "一卷迷茫",
+      "summary": "16岁（猫大人的黑历史 2）",
+      "image": "https://fravilion.top/usr/uploads/2024/02/2661107194.webp",
+      "publishedAt": "2023-05-14T05:42:00Z",
+      "sourceId": "7e105df8e0969fc7",
+      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
+      "link": "https://fravilion.top/index.php/archives/5/",
+      "detailPath": "articles/84cace6c1558af9aa2f6bc2b.json"
+    },
+    {
+      "id": "ed57ebf2879f06b29174178f",
+      "title": "在已经存在 C++/D/Rust 的情况下，为什么还要 Zig",
+      "summary": "原文地址： https://ziglang.org/learn/why_zig_rust_d_cpp/ 无隐藏的控制流程 如果 Zig 代码看起来不像是在进行函数调用，那么它就不是。这意味着你可以确信以下代码只会调用 foo() 和 bar() ，而无需知道任何类型的信息： 1 var a = b + c.d; 2 foo (); 3 bar (); 下面是一些具有隐藏控制流程的例子： D语言的 @property 函数（实际上是通过字段访问方式调用的方法），因此在上述代码中， c.d 可能调用了某个函数。 C++、D和Rust中的运算符重载使得加号 + 可能会调用一个函数。 C++、D和Go语言中的抛出/捕获异常机制意味着 foo() 可能会抛出异常，从而阻止了 bar() 的调用。当然，即使在Zig中，…",
+      "image": null,
+      "publishedAt": "2023-05-13T23:49:28Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2023/05/14/why-zig/",
+      "detailPath": "articles/ed57ebf2879f06b29174178f.json"
+    },
+    {
+      "id": "c55ef3d1c8f8f94468a76bf1",
+      "title": "【全职猎人｜涂鸦log】星期六",
+      "summary": "整理中，因为上一个log文件累积得太大了，每次更新都卡卡的😢等我把两个文件夹之间均衡分类…… 星期六是个轻松快 继续阅读 \"【全职猎人｜涂鸦log】星期六\"",
+      "image": "https://0.gravatar.com/avatar/6534dee26a76e0d7920dd2ff97a6d6f66eaca197940b2b3b98b4f51ba4aaaddf?s=96&d=identicon&r=G",
+      "publishedAt": "2023-05-13T05:32:00Z",
+      "sourceId": "be4bcd1c1ebb05fb",
+      "sourceTitle": "三十五个骑兵幽灵与一把捕鸟枪",
+      "link": "https://captainsang.wordpress.com/2023/05/13/%e3%80%90%e5%85%a8%e8%81%8c%e7%8c%8e%e4%ba%ba%ef%bd%9c%e6%b6%82%e9%b8%a6log%e3%80%91%e6%98%9f%e6%9c%9f%e5%85%ad/",
+      "detailPath": "articles/c55ef3d1c8f8f94468a76bf1.json"
+    },
+    {
+      "id": "f37ac84e4f5be569d5260d14",
+      "title": "The Fourth Trimester",
+      "summary": "就，和 四天王里有五个是常识 一样，怀孕的三个 trimester 有四个也毫不意外吧。总之第四个 trimester 一般指的是产后前12周或者三个月里，小孩还是 newborn 的这么一个（非常 suck 的）阶段。我这次为了自己的 mental health，在这期间稍微记了点日记，正好分享出来让大伙开心开心。 哭，哭，哭 # 度过了 充满了卧槽的第一个月 ，又迎来了我个人觉得最难搞的第二个月。称之为最难搞有两个原因： 这个月里 newborn 通常哭得最为凶残，是我最难防御的那种精神类攻击。事实上有研究表明从出生开始，newborn 每天的哭泣时间逐渐增多，在第6周时达到顶峰，然后缓慢下降，到四五个月的时候回到出生时的水平。关于这项研究结果，我只能认为一开始是家长的新手保护期了。我的猜想是，刚出生的时…",
+      "image": "https://fourhappylions.com/posts/the-fourth-trimester/crying_hu_b3ff8bba07bfcd8f.jpeg",
+      "publishedAt": "2023-05-12T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/the-fourth-trimester/",
+      "detailPath": "articles/f37ac84e4f5be569d5260d14.json"
+    },
+    {
+      "id": "cee4916c510c5c65211ced3a",
+      "title": "从此“天涯沦落人”：当代网络社区消亡的一个缩影",
+      "summary": "本文首发于腾讯新闻 全媒派 。 内容行业和互联网行业一直不缺告别的故事。如果以月为单位去留意观察，会发现很多媒体、内容产品都在悄悄说再见。 例如5月1日，来自《纽约时报》和《卫报》等媒体的消息称，“据说Vice即将破产”，这家曾估值57亿美元的数字媒体标杆，今年一直在努力寻找买家，以期能够继续运营。 与Vice同被视为传统媒体颠覆者之一的BuzzFeed，也在4月底宣布关闭其一度备受赞誉的BuzzFeed News业务的其余部分，并裁员180名员工。 国内，据行业自媒体“传媒特训营”5月6日发文称，拥有20余年办报历史的《东南快报》已正式停刊，该报日均发行量曾一度超过50万份。报纸不再正常派送后，引起福州、厦门两地很多读者的回忆。 而引发更大网络追忆的则是天涯社区。‍4月25日至今，因网站无法访问，网友们在社…",
+      "image": null,
+      "publishedAt": "2023-05-11T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2023/05/12/goodbye-tianya",
+      "detailPath": "articles/cee4916c510c5c65211ced3a.json"
+    },
+    {
+      "id": "a4065b6dbdcf3e328179e4bb",
+      "title": "造景与自反",
+      "summary": "作为一种类型影视，恋爱、少女漫改影视剧给我的感觉是，它像恐怖片、porn一样，有着能直接带来生理刺激的特质。但… Continue reading 造景与自反 →",
+      "image": "https://0.gravatar.com/avatar/cab092a5c5ede78428d38d2c4b4d4e31e1b7ae079c59c535e65f0edd446d0a58?s=96&d=identicon&r=G",
+      "publishedAt": "2023-05-09T16:07:22Z",
+      "sourceId": "c96b327793445474",
+      "sourceTitle": "baoting's blog",
+      "link": "https://baoting.blog/2023/05/10/%e9%80%a0%e6%99%af%e4%b8%8e%e8%87%aa%e5%8f%8d/",
+      "detailPath": "articles/a4065b6dbdcf3e328179e4bb.json"
+    },
+    {
       "id": "456c74c0465c5a6595ad85b2",
       "title": "浅谈效率成瘾",
       "summary": "工具理性和路径依赖性，目标导向和效率幻觉",
@@ -560,105 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/monthly-recap/2023-02-recap/",
       "detailPath": "articles/5bd83412400018924f29b4e6.json"
-    },
-    {
-      "id": "8480b7cc2a205f9c59088764",
-      "title": "计时记账记笔记",
-      "summary": "打 2020 年开始我掉进了笔记的坑，从 2021 年开始我又陷入了计时和记账的泥潭。如今已经 2023 年了，我仍未找到满意的方案。这三件事和 自己的标记语言 、 管理点文件 并称我的人生滑铁卢，因此我还是想念叨几句。另外，本文大概会持续更新。 目录 记笔记 用过的软件 反对卡片盒笔记、第二大脑等等 博客与笔记一体化 摘抄或导入标注的难题 为了遗忘而记录 记账 Beancount/Fava 还得是半自动 为了内心平静而记录 个人记账和公司记账是两码事 计时 为了分析而记录 从简单的分析入手 为什么非得计时 记笔记 用过的软件 OneNote 时代 之所以开始记笔记，是因为上中学时老师要求记笔记——到现在我仍能回忆起无数次高中化学老师吭哧吭哧写了一黑板板书扭头发现我们都听得麻木了，着急地喊： “ 快记啊 ！…",
-      "image": null,
-      "publishedAt": "2023-02-26T23:52:40Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/tracking-and-note-taking/",
-      "detailPath": "articles/8480b7cc2a205f9c59088764.json"
-    },
-    {
-      "id": "b53e471dfdfb9c54d715dce1",
-      "title": "人生阿就像条链表",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2023-02-26T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/%E4%BA%BA%E7%94%9F%E9%98%BF%E5%B0%B1%E5%83%8F%E6%9D%A1%E9%93%BE%E8%A1%A8/",
-      "detailPath": "articles/b53e471dfdfb9c54d715dce1.json"
-    },
-    {
-      "id": "0425a0c96017b3845082a276",
-      "title": "个人网盘使用经验",
-      "summary": "网盘已经是每个现代人离不开的工具，这篇文章就来介绍一下笔者是如何选择网盘、以及如何进行网盘同步、预览。 网盘选择 笔者是多年的 macOS、iOS 用户，因此之前一直使用 iCloud 进行文件的同步，它可以自动把 Desktop Documents 这两个文件夹映射到 iCloud，使用起来还算方便，但是有时会出现文件同步失败。 这个时候基本上没什么排查思路，只能靠重启电脑解决，iCloud 另一个问题就是与苹果生态严重绑定，不方便迁移平台，因此还是需要寻找个更加靠谱且跨平台的方案。 首先明确一点，国内、国外网盘的运营思路完全不同，网内基本上都是靠大规格免费空间来吸引用户，而国外网盘免费空间只有 5G 左右，如果要扩容则需要付费。 由于国内网盘开放性很差，基本上只能使用其自家客户端才能方便上传下载，因此笔者…",
-      "image": null,
-      "publishedAt": "2023-02-25T08:35:44Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2023/02/25/cloud-storage/",
-      "detailPath": "articles/0425a0c96017b3845082a276.json"
-    },
-    {
-      "id": "9b9e9866c04908248b795a1e",
-      "title": "新版Android Studio Logcat view使用简明教程",
-      "summary": "从Android Studio Dophin开始，Android Studio中的默认展示了新版的logcat。新版的logcat色彩上是更加的好看了，不同的tag会有不同的颜色，不同level等级的log默认也有不同的颜色。log过滤修改的更简洁了，当然使用起来也更加复杂了。原先的log视图只需要勾选就可以选择不同level的log了，只需要选择只展示当前应用的log就可以过滤掉其他应用的log了，但是新版只提供了一个输入框去过滤。在经过几个月的适应和对于官方文档的学习后，终于使用了，这里简单记录和分享一下。 定义自己专属的log view log view 默认提供了两种视图，Standard View 和Compat View。Stand View会展示每一条log的日期，时间，进程线程id，tag，包…",
-      "image": "https://isming.me/images/photo/logcat-window.png",
-      "publishedAt": "2023-02-23T15:10:52Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2023-02-23-android-studio-logcat/?utm_source=rss",
-      "detailPath": "articles/9b9e9866c04908248b795a1e.json"
-    },
-    {
-      "id": "59edf9a92c024ca063c84cce",
-      "title": "SUV 移民项目中的一些常见问题——个人观点",
-      "summary": "由于我一直在断断续续地分享自己 SUV 移民项目的经历，也陆续有一些有类似想法的人找我聊关于这个项目的一些细节，也分享了自己找中介、做项目中遇到的一些事情，我非常感谢。正文之前我想再声明一下，我不是中介，也不是合法的持牌移民顾问，所以请不要找我咨询评估自己的情况适合哪个移民项目，尽管我很感激有些人的信任，但我确实不能做这个事情。更不要给我所谓咨询费，严格来讲我不可以合法地收这个钱。我一直在做的就是分享自己的经历，让更多人知道，除了铺天盖地的雇主担保和留学移民之外，他们也许可以通过这个小众的项目达到自己的目的。既然是小众的项目，也就注定了它可能只能帮到一小部分人（也确实有人通过与我交流成功申请了）。在我看来，通常在一个领域中有一定工作经验，有基本的英语交流能力，有一定的创业动力和主动性的，大概就可以申请这个项目…",
-      "image": null,
-      "publishedAt": "2023-02-21T05:15:00Z",
-      "sourceId": "87c2e8631d9fb702",
-      "sourceTitle": "Tom Brew",
-      "link": "https://www.ie9.org/2023/02/advice-on-suv.html",
-      "detailPath": "articles/59edf9a92c024ca063c84cce.json"
-    },
-    {
-      "id": "42a0fbf256d0dfbc26a48ebe",
-      "title": "超越",
-      "summary": "1就是在这种路边小馆吃饭，咀嚼着嘴中的食物，可为什么我心里会难过。他或许察觉到了，我也不知道为什么我会觉得他知道了，这种东西可能就是一种直觉。然后，他看向我的眼睛。“想什么呢？”他问。",
-      "image": null,
-      "publishedAt": "2023-02-19T07:15:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/17/",
-      "detailPath": "articles/42a0fbf256d0dfbc26a48ebe.json"
-    },
-    {
-      "id": "ddb4dda101d8769fe7c9609e",
-      "title": "【全职猎人｜涂鸦log】云游",
-      "summary": "Summary：且放白鹿青崖间，须行即骑访名山 -缓缓更新中，好多金凯特- 这个log里面的图太多了，导致更新 继续阅读 \"【全职猎人｜涂鸦log】云游\"",
-      "image": "https://0.gravatar.com/avatar/6534dee26a76e0d7920dd2ff97a6d6f66eaca197940b2b3b98b4f51ba4aaaddf?s=96&d=identicon&r=G",
-      "publishedAt": "2023-02-19T05:36:00Z",
-      "sourceId": "be4bcd1c1ebb05fb",
-      "sourceTitle": "三十五个骑兵幽灵与一把捕鸟枪",
-      "link": "https://captainsang.wordpress.com/2023/02/19/%e3%80%90%e5%85%a8%e8%81%8c%e7%8c%8e%e4%ba%ba%ef%bd%9c%e6%b6%82%e9%b8%a6log%e3%80%91%e6%a2%a6%e6%b8%b8/",
-      "detailPath": "articles/ddb4dda101d8769fe7c9609e.json"
-    },
-    {
-      "id": "2e72c56325032b129c545795",
-      "title": "读《这世界的甜蜜与冷漠》",
-      "summary": "彼得·施塔姆的《这世界的甜蜜与冷漠》。叶三在微博上推荐的书，因为看到她喜欢作者简练的文笔，找来读了读。在如此简练的文字风格下，能完成这样紧凑、电影蒙太奇一般的结构张力，让人羡慕。而且小说中抛出的话题鲜活，又深刻，如译者在后记中概括的施塔姆在讨论他对个体命运的思考：你遇到了曾经的你。他做了其他的决定，犯了其他的错误，但他并没有逃脱你的命运。 我可能更喜欢他自己在「记录」说到的故事结构：我是你需要的人，我是你在我身上想看到的人。这个问题不仅跨过了国界，语言，也跨过了时间和空间。加上他清晰的表述，简单的语言所带来的巨大冲剂。难怪《纽约客》会假设：“倘若阿尔伯特·加缪还活着，他或许会像彼得·施塔姆这样写作。”",
-      "image": null,
-      "publishedAt": "2023-02-17T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2023/02/the-sweet-indifference-of-the-world/",
-      "detailPath": "articles/2e72c56325032b129c545795.json"
-    },
-    {
-      "id": "f0345ef2600cfe8e5c23a628",
-      "title": "恐惧",
-      "summary": "提两件比较失败的读书往事，一个是很早之前伍迪·艾伦出的自传《毫无意义》的英文版，那个时候很多人还在讨论出版公司因为他的个人问题不愿意接这本书的出版业务等等 balabala……，到去年底发现这本书中文版已经出了。另一个是去年底看到了纽约书评提到的《Chip War》，扫了一眼大纲，配合着翻译插件读了第一章的前一半，很过瘾，也觉得很棒，今年初无论国内国外，几乎对芯片的讨论，都绕不开这本书。 这两本书至今我都没有读完，前者读了第一章，后者甚至一章都没读完。如今来看，失败的不是没读完，而是发现自己有一定的意识和方法去获得一些有价值的信息，却因为对英语的恐惧而选择了放弃。",
-      "image": null,
-      "publishedAt": "2023-02-16T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2023/02/my-fear/",
-      "detailPath": "articles/f0345ef2600cfe8e5c23a628.json"
     }
   ]
 }

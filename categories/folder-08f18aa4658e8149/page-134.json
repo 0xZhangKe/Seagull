@@ -1,6 +1,105 @@
 {
   "items": [
     {
+      "id": "72ed4eab2103e8a0f73bbeea",
+      "title": "加速Android Studio/Gradle构建",
+      "summary": "已经使用Android Studio进行开发超过一年，随着项目的增大，依赖库的增多，构建速度越来越慢，现在最慢要6分钟才能build一个release的安装包，在网上查找资料，发现可以通过一些配置可以加快速度，这里跟大家分享一下。 开启gradle单独的守护进程 在下面的目录下面创建 gradle.properties 文件： /home/<username>/.gradle/ (Linux) /Users/<username>/.gradle/ (Mac) C:\\Users\\<username>\\.gradle (Windows) 并在文件中增加： 1 org . gradle . daemon = true 同时修改项目下的 gradle.properties 文件也可以优化： 1 2 3 4 5 6 7…",
+      "image": "http://isming.qiniudn.com/as_gradle_offline.png",
+      "publishedAt": "2015-03-18T14:56:10Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-03-18-android-build-speed-up/?utm_source=rss",
+      "detailPath": "articles/72ed4eab2103e8a0f73bbeea.json"
+    },
+    {
+      "id": "e63ffb82464b8eb849ebf554",
+      "title": "玩木工【十七】：做了一个锯子架",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-03-16T20:26:11Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw017/",
+      "detailPath": "articles/e63ffb82464b8eb849ebf554.json"
+    },
+    {
+      "id": "544db41ed6af385af9976a87",
+      "title": "《现代英文选评注》荟萃",
+      "summary": "光是从评语来看，夏是幽默的人。这幽默是读书人的幽默，让人可以从中看出一种真性情，让人真想和他交朋友。如：“套一句金圣叹批水浒的笔法：“我亦欲问。”（p20）”看过金批的水浒，金圣叹是个妙人，夏也受其影响。 再如",
+      "image": null,
+      "publishedAt": "2015-03-14T17:55:15Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2015/03/14/2015-03-14-english-comments/",
+      "detailPath": "articles/544db41ed6af385af9976a87.json"
+    },
+    {
+      "id": "5873e54fd2b41a0213778bfd",
+      "title": "Android 小技巧 - 5",
+      "summary": "本文是一篇译文,这篇是这个系列的第五篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第五篇里 SDK “以为没有其实有”的功能比较多： ViewDragHelper 帮你做自定义拖拽容器、 PopupWindow 实现非 Activity 的临时浮层、 ThumbnailUtils 直接生成图片或视频缩略图、 ActivityOptions 自定义 Activity 跳转动画与 launch display；性能向的有 SparseArray 替代 HashM…",
+      "image": null,
+      "publishedAt": "2015-03-14T16:32:11Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-5/",
+      "detailPath": "articles/5873e54fd2b41a0213778bfd.json"
+    },
+    {
+      "id": "9cb020a7aea7b0bb84b559e2",
+      "title": "Android 小技巧 - 4",
+      "summary": "本文是一篇译文,这篇是这个系列的第四篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第四篇集中讲两类东西：一类是被 XML 属性藏起来的特性， android:weightSum 、 android:duplicateParentState 、 android:clipChildren 、 android:fillViewport 、 android:tileMode 、 android:scaleType 这些点一上手就能直接省一段自定义 View 的代码；…",
+      "image": null,
+      "publishedAt": "2015-03-14T16:31:02Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-4/",
+      "detailPath": "articles/9cb020a7aea7b0bb84b559e2.json"
+    },
+    {
+      "id": "f01711a110aa2f1e8b02e55d",
+      "title": "Android 小技巧 -3",
+      "summary": "本文是一篇译文,这篇是这个系列的第三篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第三篇的关键词是”原本写过却懒得查文档的事情”： UrlQuerySanitizer 替你解析 query 参数、 PhoneNumberUtils.formatNumber 帮你按区域格式化电话号码、 LocalBroadcastManager 让进程内广播省去权限和跨进程开销；Fragment 相关有 setArguments 与 DialogFragment.setSho…",
+      "image": null,
+      "publishedAt": "2015-03-14T16:29:57Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-3/",
+      "detailPath": "articles/f01711a110aa2f1e8b02e55d.json"
+    },
+    {
+      "id": "105822f7c947985d90459a69",
+      "title": "点名的诱惑",
+      "summary": "现在的点名真是越来越贴心了。 以前收到一份点名，动不动就是“不点不是中国人”、“不点妈妈今年会有厄运”，然后始作俑者似乎觉得这样会引起反感，没什么吸引力，所以改成了贴切学生生活的“假装没看见的今年考试全挂科”、“不写的",
+      "image": null,
+      "publishedAt": "2015-03-11T18:15:09Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2015/03/11/2015-03-11-dianming/",
+      "detailPath": "articles/105822f7c947985d90459a69.json"
+    },
+    {
+      "id": "b3ab7ad6c266806d91f43498",
+      "title": "玩木工【十六】：继续搜刮老工具",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-03-10T18:56:04Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw016/",
+      "detailPath": "articles/b3ab7ad6c266806d91f43498.json"
+    },
+    {
+      "id": "574f9e163f2575aaeeeced79",
+      "title": "玩木工【十五】：跟着Christopher Schwarz学做锯木凳（下）",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-03-07T05:20:26Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw015/",
+      "detailPath": "articles/574f9e163f2575aaeeeced79.json"
+    },
+    {
       "id": "2a0be9215a92b20258570663",
       "title": "java注解",
       "summary": "从java 5.0开始，为我们提供注解功能，通过注解可以限制代码的重载，过时，以及实现一些其他功能，这里，就来分析一下java的注解。 java 元注解 首先来看java元注解，分别是： @Target @Retention @Documented @Inherited 这些注解和他们所修饰的类在java.lang.annotation包中，代码都很简单，可以去查看一下。 @Target 描述注解的使用范围，取值： ElementType.CONSTRUCTOR:描述构造器 ElementType.FIELD:描述成员变量 ElementType.VARIABLE: 描述局部变量 ElementType.METHOD: 描述方法 ElementType.PACKAGE: 描述包 ElementType.PAR…",
@@ -560,105 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2014-06-22-my-soft-in-ubuntu/?utm_source=rss",
       "detailPath": "articles/bf1da07a92f29044707e1ddd.json"
-    },
-    {
-      "id": "157c0b574f1e0b646400a9af",
-      "title": "吃蝦不吐殼",
-      "summary": "文娟學姊的貓表演吃蝦不吐殼。",
-      "image": null,
-      "publishedAt": "2014-06-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/cat-eats-shrimp",
-      "detailPath": "articles/157c0b574f1e0b646400a9af.json"
-    },
-    {
-      "id": "ab70394a94083438f68fc791",
-      "title": "玩木工【二】：Stanley 4 号铁刨入手",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-19T20:21:00Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw002/",
-      "detailPath": "articles/ab70394a94083438f68fc791.json"
-    },
-    {
-      "id": "a0124ca9439f4a576bca7757",
-      "title": "计算思维之三语义符号化表达与计算",
-      "summary": "##0和1与逻辑——思维符号化表达与逻辑运算",
-      "image": null,
-      "publishedAt": "2014-06-06T13:13:30Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-3/",
-      "detailPath": "articles/a0124ca9439f4a576bca7757.json"
-    },
-    {
-      "id": "97c3838693be02f97d8dc554",
-      "title": "计算思维之二计算之树",
-      "summary": "这次从计算机的宏观角度对整个计算机行业做个剖析，这里老师引入一个计算之树的模型。",
-      "image": null,
-      "publishedAt": "2014-06-06T05:07:27Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-2/",
-      "detailPath": "articles/97c3838693be02f97d8dc554.json"
-    },
-    {
-      "id": "85f596d0da94862d52de3c66",
-      "title": "计算思维之一序言篇",
-      "summary": "这一系列笔记是我在上一个mooc课 大学计算机—计算思维导论 上的笔记，我觉得比较实用，尤其是在知识爆炸的如今，如何找到一种科学的学习方式，准确理解事物的本质是非常重要的能力。 1. 学习三种境界",
-      "image": null,
-      "publishedAt": "2014-06-06T03:58:43Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/06/06/computational-thinking-1/",
-      "detailPath": "articles/85f596d0da94862d52de3c66.json"
-    },
-    {
-      "id": "0c8c971c67b49ca8e54c8467",
-      "title": "玩木工【一】：Kreg Jig",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-02T20:41:51Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw001/",
-      "detailPath": "articles/0c8c971c67b49ca8e54c8467.json"
-    },
-    {
-      "id": "9e57bf0cfd879bf7b4e8398d",
-      "title": "Android 小技巧 - 如何让EditText不自动获取焦点",
-      "summary": "Android中,使用EditText作为输入框很方便,但是有时候EditText会自动获取焦点,其行为:点击进入这个页面后,EditText自动获取焦点,导致软键盘直接跳出.有时候这么做很方便,但是大部分时候我们还是希望在点击EditText的时候,软键盘才弹出来.",
-      "image": null,
-      "publishedAt": "2014-06-02T16:31:49Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/06/03/android-edittext-do-not-auto-get-focus/",
-      "detailPath": "articles/9e57bf0cfd879bf7b4e8398d.json"
-    },
-    {
-      "id": "a2926942e6e38ac3fd86ee93",
-      "title": "LG 螢幕斷掉",
-      "summary": "端午節一早起來，我的螢幕就迫不及待的從支架上掉下來迎接我，真是一日美好的開始⋯⋯",
-      "image": "https://wiwi.blog/assets/images/lg-2072bdfc0aa2852c30c84a055ee94977.jpg",
-      "publishedAt": "2014-06-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/broken-lg-monitor",
-      "detailPath": "articles/a2926942e6e38ac3fd86ee93.json"
-    },
-    {
-      "id": "136015869d8d852d052a708d",
-      "title": "Android 小技巧 -2",
-      "summary": "本文是一篇译文,这篇是这个系列的第二篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第二篇里挑出来的 API 大多是工具级别的： DateUtils.formatDateTime 直接帮你按系统区域格式化日期、 Formatter.formatFileSize 处理文件大小的本地化显示、 AlarmManager.setInexactRepeating 用粗略间隔合并闹钟事件来省电；UI 侧有 StaticLayout 自己控制文字测量、 ViewStub 延…",
-      "image": null,
-      "publishedAt": "2014-05-31T10:20:47Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/05/31/android-tips-round-up-2/",
-      "detailPath": "articles/136015869d8d852d052a708d.json"
     }
   ]
 }

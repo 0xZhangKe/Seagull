@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "234e41a0341bfd11bc8b584f",
+      "title": "声势浩大的知识产权盗窃",
+      "summary": "之所以说「声势浩大」，是因为我成语储备不够，找不到「不要脸」的文雅说法。 蛛丝马迹 这几天我停用了 NetCup 的一台机子，换到了 SKRIME，装了 OpenBSD 系统愉快地玩了起来。结果，正好赶上 eMudhra 根证书密钥泄露 1 和 PHP2Shell 漏洞，于是赶紧在几台机器上更新 ca-certificates ，手动移除泄露的根证书。 然后我在其中一台机器上执行了 htop 。 “奇怪，我 VPS 上跑的服务 CPU 占用都应该很低才对，为什么现在涨到 60% 了？”当时的我光顾着四处更新证书和排查漏洞，便没有细想。再后来，我给那台新机子装上了 beszel-agent 配置监控和告警，瞟了一眼那台怪怪的机器——“我去，负载怎么红了？”从监控页面上来看，CPU 占用最高的容器是我的 Forg…",
+      "image": "https://img.eltr.ac/geedeapro/article/the-great-theft/bunny-statistics.png",
+      "publishedAt": "2026-10-26T05:41:18Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/the-great-theft/",
+      "detailPath": "articles/234e41a0341bfd11bc8b584f.json"
+    },
+    {
       "id": "0296d335507639802029ec1c",
       "title": "爱拯救之",
       "summary": "极客死亡计划现在运行在安装 OpenBSD 8.0 的服务器上，不是 Linux。 我在 第一百零一期周刊 因 Linux 如今也包含 LLM 生成的代码而感到沮丧，写道：“我用 Linux，不可能不用”——结果，我还真的可以不用。Linus Torvalds 最近还在 邮件列表 里回复一条我读起来毫无恶意的邮件，用十分荒唐的逻辑称对方的想法愚蠢之极（“UTTERLY STUPID”），语气强烈。 前不久 ，他用 Claude Code 写的代码被评审者找出潜在的竞态问题（race condition）。 再后来 ，Linux 内核不再要求贡献者披露 LLM 使用情况。 这一切都给了我更多的理由抛弃 Linux，去用 BSD。我们讨论的不是可有可无的 SaaS 软件，我们说的是 Linux，全世界都依赖的操作…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/article/clj5/",
       "detailPath": "articles/24b3d34a5b3efa87fe199573.json"
-    },
-    {
-      "id": "8b2e1152764f281b4550a06c",
-      "title": "我的乡愁 II",
-      "summary": "请读者给我几段文本的时间平复心情，我方才忍受着飘散在房间里的烟味儿，下楼给我三个月前带回家的龟背竹换了水。想到刚回家看到它们的模样，我实在没办法平静下来。 因为没办法带上我养的龟背竹，所以放在家里，回家之后…… 它的叶子黄了，边缘已经要枯了，不知道家里人是用什么水养的它，水是褐黄色的，水已经要溢出水瓶了，我明明已经交代过不能超过根部…… 另一盆也半死不活了，因为之前它长得太好了，我给他换了大点的玻璃瓶，想着他能再抽一根叶，那个瓶子被打碎了，被放进了一个塑料桶里，叶子也黄了。你们他妈的对它们做了什么！ —— 我的联邦宇宙账号 清洗它们根部的时候，我感觉自己在看一个受了虐待的孩子。那些根部已经变色变形了，不再是之前漂亮整洁的白色，每次冲洗都会有好多碎屑跟着水流下来。清洗得我觉得能接受了，就给它们倒上了矿泉水。本想…",
-      "image": null,
-      "publishedAt": "2026-10-01T17:27:29Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/home-sick-ii/",
-      "detailPath": "articles/8b2e1152764f281b4550a06c.json"
     }
   ]
 }

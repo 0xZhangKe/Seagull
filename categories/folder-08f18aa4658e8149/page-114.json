@@ -1,6 +1,105 @@
 {
   "items": [
     {
+      "id": "bbfc2a95da26d7dcd5856051",
+      "title": "评论系统迁移",
+      "summary": "这个博客在 2014 年建立时，使用的是 多说 评论系统，该公司早已倒闭，在 2015 年迁移到了 disqus ，然后一直用到了 2022，现在是时候和 disqus 说再见了。 网络上不时有知名博主从 disqus 迁移走的，比如： I'm killing Disqus comments on my blog. Here's why Switching to a New Comments Service | Emacs Redux It's time say Goodbye to Disqus Comment System on Crunchify 之前一直没太在意，毕竟写博客这么久，对于 disqus 还是有一定感情的，在 2015 年 GitHub 没那么火爆时，互联网上可用的免费服务少之又少，dis…",
+      "image": null,
+      "publishedAt": "2022-10-29T05:17:09Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2022/10/29/byebye-disqus/",
+      "detailPath": "articles/bbfc2a95da26d7dcd5856051.json"
+    },
+    {
+      "id": "00ff068f7b1132dc99a61e76",
+      "title": "如何为 Rust 项目配置 GitHub Action cache",
+      "summary": "为了加速 CI 的执行，缓存是非常有效的手段。保证缓存的最高利用率，是使用缓存时最需要关注的点。比如在把整个 target 目录缓存后，何时更新这个缓存？最好的方式是在有依赖变更时，对于 Rust 来说就是 Cargo.lock 有变化，对于 Node 来说就是 package.lock 有变化。",
+      "image": null,
+      "publishedAt": "2022-10-29T04:50:07Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2022/10/29/github-action-cache-for-rust/",
+      "detailPath": "articles/00ff068f7b1132dc99a61e76.json"
+    },
+    {
+      "id": "cb8481bb335b1de2e2861e42",
+      "title": "加拿大SUV移民项目的流程和花费",
+      "summary": "如果对SUV项目不了解，可以先参考这篇文章：加拿大联邦创业移民项目 Start-up Visa Program。首先要申明的是，我不是律师或中介，不能回答所有问题，但SUV项目中我经历过的东西可以交流。既然最多人关注的问题就是SUV项目的流程，也就是申请周期的问题，以及花费，我就详细再解释一下吧。请注意，这只是我两三年前的经历，对现在可能并不一定适用，并且这是我和我的律师的经历，也不一定适用于其他律师，仅供参考。移民前我断断续续关注和研究过移民有五年了，对美加澳新欧等主流的项目都有了大概的了解，最后发现只有加拿大是目前最可行的国家。然后我就发现加拿大主流的移民项目都需要雅思成绩，于是我先去考了雅思，不高只有6分，不过已经足够申请大部分移民项目。当然，在迈出移民这一步之前，我和家里人讨论过很多次这件事，最后在一…",
+      "image": null,
+      "publishedAt": "2022-10-27T05:58:00Z",
+      "sourceId": "87c2e8631d9fb702",
+      "sourceTitle": "Tom Brew",
+      "link": "https://www.ie9.org/2022/10/suv-steps-costs.html",
+      "detailPath": "articles/cb8481bb335b1de2e2861e42.json"
+    },
+    {
+      "id": "643ef2d049a689e66efd6cf3",
+      "title": "懒得分类的读书拾遗补缺之二",
+      "summary": "我还没有放弃抢救。",
+      "image": null,
+      "publishedAt": "2022-10-25T01:41:14Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/reading/uncategorized-reading-notes-002/",
+      "detailPath": "articles/643ef2d049a689e66efd6cf3.json"
+    },
+    {
+      "id": "30c11d58331319534a108bc0",
+      "title": "控制你的标记语言",
+      "summary": "我虽然博文写得不多，但十分渴望有一种任我支配的 标记语言 （ Markup Language ） 来满足我对博客排版的需求。或者说正是因为花了很久时间去寻找这种语言，所以我的博文很少。 创造如愿的标记语言实在是有意思的话题，同时也是很多人思考过并以五花八门的方式解决过的问题。可是那些解决方案的存在就像一个个孤岛，大家都在自说自话，没有一个全景式的导览。也许是我的搜索能力不够，也许是大部分人并不关心这个问题。总之，我准备把我知道的方法都简单介绍一遍——因为它们确实很有趣。 目录 Pollen Quad Lambda Project Tcl 在Markdown里插入代码 MDX Pandoc filters 为什么不用Org-mode Soupault Pollen 我是在读在线书《 Practical Typo…",
+      "image": null,
+      "publishedAt": "2022-10-23T19:38:15Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/control-your-markup-language/",
+      "detailPath": "articles/30c11d58331319534a108bc0.json"
+    },
+    {
+      "id": "9624457a2345af5e33c452ef",
+      "title": "《Indivisible》：一个我只推荐玩三分之一的游戏",
+      "summary": "在玩《Indivisible》之前，我仅仅看过它的一些宣传视频，当时我就被画风和看上去挺有趣的战斗系统所吸引了，前段时间刚好在打折，于是就入手并通关了。",
+      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/indivisible-gameplay-2.png",
+      "publishedAt": "2022-10-22T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/indivisible-game-only-recommend-first-third",
+      "detailPath": "articles/9624457a2345af5e33c452ef.json"
+    },
+    {
+      "id": "ee018d89244f50c48d6a6a15",
+      "title": "保罗・索鲁的《铁公鸡》",
+      "summary": "六七月我整理 土耳其游记 时，第一次发现将旅行见闻汇编并公开是很有意思的事情。自然，我开始好奇职业作家写的游记。 由于足够有趣的试读章节和勾起回忆的绿皮车封面，我购买了保罗・索鲁的《在中国大地上：搭火车旅行记 》 。这本书讲了作者在 1986 年从伦敦坐火车到内蒙，然后在中国搭火车游玩一年的经历。 本书原标题是《Riding the Iron Rooster 》 ，我也因此更倾向叫这本书《铁公鸡 》 。铁公鸡是北京到乌鲁木齐线的外号，用来形容那趟列车条件差。最近 AI 绘图很火，我想试试 Stable Diffusion 能不能猜出“Riding the Iron Rooster”是指火车旅行。结果生成的图片里大部分是骑马的场景，唯一一只公鸡还长着马腿： 目录 游记就是充满偏见的 文革 毛主席 删减与内参书…",
+      "image": null,
+      "publishedAt": "2022-10-18T23:20:23Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/riding-the-iron-rooster/",
+      "detailPath": "articles/ee018d89244f50c48d6a6a15.json"
+    },
+    {
+      "id": "ae1355a67c6ccecc2b457e41",
+      "title": "向心城市",
+      "summary": "我还是想再讲一次，陆铭的书，包括他的研究成果，在短期看可能没有对大众生活的明显改善，但是时间跨度一旦拉长，比如以 10 年为一个周期，在看，他的很多结论以及建议正在逐步成为中国城市发展的一面旗帜。而他本人基于此提出的「空间政治经济学」也是一个很有趣、包罗万象的概念。 这么多年，他一直在致力于解决建设用地指标的分配，户籍制度的改革这两项内容，借此帮助政府建立更现代的关于城市治理的思维模式。庆幸的是，他是中国可以直接同高层对话的经纪团的一员，是城市治理的专家，是能影响政策的谏言者。 《大国大城》和《向心城市》两本书，非常朴实，甚至为了让你我这样的普通人能读懂，读通，读透，他把语言写的非常直白，不论是批评还是建议，一针见血。最后强调一下，我们不可能在明天就看到今天的政策发生期望的转变，也许还会变得更坏，但是，我们要…",
+      "image": null,
+      "publishedAt": "2022-10-18T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2022/10/what-is-city/",
+      "detailPath": "articles/ae1355a67c6ccecc2b457e41.json"
+    },
+    {
+      "id": "2000663ef4865979db2e602d",
+      "title": "Sharing a modified Shadowsocks",
+      "summary": "In this post, we release and open source a modified version of Shadowsocks that can bypass the current GFW’s detection and blocking. We first introduce the reason why this modified Shadowsocks can bypass the detection and blocking. We then share a simple tutorial on how to setup the client and server. We will also cover two other ways that help Shadowsocks…",
+      "image": null,
+      "publishedAt": "2022-10-15T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/modified_shadowsocks/en/",
+      "detailPath": "articles/2000663ef4865979db2e602d.json"
+    },
+    {
       "id": "d17ab77dbb30b212c515ea6c",
       "title": "Sharing our thoughts on the cat-and-mouse game",
       "summary": "In this post, we share some of our thoughts on the cat-and-mouse game of censorship. Our views are based on our observations and reflections on both the censor and the anti-censorship community; we have also been deeply influenced by klzgrad , David Fifield, and many other anti-censorship developers and researchers. In particular, we start with answering wh…",
@@ -560,105 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/newsletter/2022/08/newsletter-041/",
       "detailPath": "articles/ad8c515a1bd1e34fe8b60ad5.json"
-    },
-    {
-      "id": "60d8645161b934c15424e170",
-      "title": "Mad Max",
-      "summary": "我讨厌重温电影，因为我只把电影当单纯的刺激。唯有一部电影我看过两遍，它就是《Mad Max 4 》 。九月六号亚马逊 prime video 下架前三部《Mad Max 》 ，出于对第四部的爱，我决定补完这个系列。 第一部 在看第一部前我期待的是和第四部一样的世界：橙色的沙漠、奴隶社会、义肢、改装车以及喷火的吉他手。结果发现第一部的世界里秩序和文明尚存，科技也依然在线：虽然 V8 引擎需要从破烂里攒，但医院看起来毫无退步。主角面对的不是浑身涂白的 war boys，敌人的座驾也仅仅是摩托车。如果我接触的第一部《Mad Max》是这一部，我只会以为这系列是介绍澳大利亚风土人情的纪录片。 我感觉这一部的问题是背景设定还不够疯狂。确实能看出道德和法治有所倒退——但警察还在巡逻。最后的追车决战也有些无聊，能拿出来说的…",
-      "image": null,
-      "publishedAt": "2022-08-29T23:22:28Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/mad-max/",
-      "detailPath": "articles/60d8645161b934c15424e170.json"
-    },
-    {
-      "id": "59b1486eb26a7a438fd318d3",
-      "title": "Melrose Abbey",
-      "summary": "Clydesdale 银行 20 镑纸币上有位国王，据说他埋在离爱丁堡不远的一座叫 Melrose 的修道院里。我决定去参观一下。 目录 路上 教堂 心脏 博物馆 回爱丁堡 路上 从以 Walter Scott 小说命名的 Waverley 火车站出发，一小时左右就可以到达 Tweedbank。这趟线路叫 Borders Railway，2015 年 9 月 9 日由伊丽莎白二世剪彩 。 [1] 当时的视频 。 虽然只有一小时车程，但已经是近百年内英国建设的最长一段火车了（碑的下半部分 ） 。 下车后沿着带有 Melrose Link 字样的路标走，大约半小时可以到达 Melrose Abbey。如果沿反方向走半小时，就是 Walter Scott 写就《Waverley》的故居 。不过时间有限，我们直接朝着…",
-      "image": "https://emptystack.top/processed_images/IMG_20220827_175937.e4e777ce6299fe04.webp",
-      "publishedAt": "2022-08-28T15:50:13Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/melrose-abbey/",
-      "detailPath": "articles/59b1486eb26a7a438fd318d3.json"
-    },
-    {
-      "id": "bffa17a9ebfd84951d136126",
-      "title": "【2021】我要快乐",
-      "summary": "在2022年下半年写21年的年度总结，甚至有些修史书的感觉——需搜寻史料来还原当年发生何事，否则千头万绪也都只是雪泥鸿爪。这也证明以往我每年写年终总结，大多是情绪推动。我需要靠着年末冬天夜里的星光烛光氛围衬托，才把能想起来的",
-      "image": null,
-      "publishedAt": "2022-08-28T07:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2022/08/28/year-2021/",
-      "detailPath": "articles/bffa17a9ebfd84951d136126.json"
-    },
-    {
-      "id": "c9643a4c384854847c066c8d",
-      "title": "寻找 GitHub 的替代品",
-      "summary": "自从 18 年 GitHub 被 Microsoft 收购 后，围绕服务开发者，陆陆续续推出了一些十分贴心的服务，比如： 服务 解决问题 Codespaces 代码编写 Actions 自动测试 Packages 托管分发 Code security 漏洞探测 Discussions 用户交流 Sponsors 盈利 Pages 网站托管 不得不说微软在下一盘大棋，不过今天并不是讨论微软的商业战略（我也不懂🙃），GitHub 无疑已经是现在开发者的必备，但还是希望读者能意识到它本质还是家商业公司，在提供这么多好用、免费的功能同时，肯定会在其他方面找回来，比如前不久收费的副驾驶员 Copilot ，毕竟天下没有免费的午餐。甚至以后在 VSCode 中出现 Azure 广告我都不会觉得惊讶，也不担心，毕竟我用 E…",
-      "image": null,
-      "publishedAt": "2022-08-27T13:02:55Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2022/08/27/github-alternatives/",
-      "detailPath": "articles/c9643a4c384854847c066c8d.json"
-    },
-    {
-      "id": "32391ea713fd69733c364952",
-      "title": "我常常觉得我是一个很软弱的人",
-      "summary": "真要说有多喜欢小虎队倒谈不上，也没有什么童年滤镜或者青葱情怀，让我每次都把这张专辑塞进手机的，是苏永朋唱《珍惜》时说的那段话：我常常觉得我自己是一个很软弱的人，常常到遇到挫折的时候，我都会觉得没有出路，很想放弃，你们一定都看不出来。",
-      "image": null,
-      "publishedAt": "2022-08-26T19:00:26Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/nonsense/a-weak-minded-person/",
-      "detailPath": "articles/32391ea713fd69733c364952.json"
-    },
-    {
-      "id": "97cdd2ce093fa3f1885b4308",
-      "title": "不平等的样貌：对唯才是用制度的反思",
-      "summary": "探讨新加坡的制度性财富不平等与教育分流现象，呼吁审视竞争对机会不均的影响，同时提倡关注最不幸者的利益。",
-      "image": "https://prologue.dev/static/images/The-trend-of-GINI-index-in-Singapore.png",
-      "publishedAt": "2022-08-26T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/confronting-inequality-rethinking-the-utilitarian-system",
-      "detailPath": "articles/97cdd2ce093fa3f1885b4308.json"
-    },
-    {
-      "id": "f056cca37c54ed8a6cefb702",
-      "title": "叁拾一周：No.40",
-      "summary": "本周的主题是，范围。 我还是想围绕着「度」这个词多聊几句，上一期，我和你谈的是自由度。今天想再聚焦一些。在此之前，我想聊两句废话，希望你理解，写作对我意味着什么。 写，就是我的思考方式。大概率每一期的主题我都不会做规划，这可能是自始至终这份通讯唯一不变的东西。在开始最初，我希望写一些连汤带水的内容，概括起来无非就是我希望写出我思考的结果，以及我为何这样思考。所以在最初，我希望自己将每周的思考用通讯的方式展现出来，希望它能在几个主题之内聚焦、切换、聚焦。因此，每周思维的动态流动就是我写作的源泉。这样做遇到的第一个阻碍便是，相互之间的主题割裂严重，没有联系，所以在第一期冷启动之后，时隔半年我才开始写第二篇。在写到 30 期之后又停滞了一段时间，才决定继续。其中的原因很简单，我没有新的思考，也没有更新已有的思维方式…",
-      "image": "https://cdn.beekka.com/blogimg/asset/202207/bg2022070914.webp",
-      "publishedAt": "2022-08-24T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/08/newsletter-040/",
-      "detailPath": "articles/f056cca37c54ed8a6cefb702.json"
-    },
-    {
-      "id": "2a88173656824258000966f9",
-      "title": "用Pandoc把Markdown转成Markdown",
-      "summary": "很多软件都支持 Markdown，但它们支持的程度各不相同。虽然有 CommonMark 作为大一统的标准，但它功能太少不够用。我想要一种功能完全，可以扩展的 Markdown 方言，一次编写，到处渲染。 好消息是 CommonMark 是 HTML 的超集，而 21 世纪必备软件 Pandoc 自带 Lua 解释器。所以，我可以用 Pandoc 配合 Lua 代码（Pandoc filters）把拥有我个人想要的功能的 Markdown，转换为 CommonMark + HTML 碎片。这样就得到了完全自己做主的 Markdown 方言。 因为依赖于 Pandoc filters，而且输入输出都是 Markdown，所以我把这套流程称为“用 Pandoc 把 Markdown 转成 Markdown ” 。…",
-      "image": null,
-      "publishedAt": "2022-08-22T20:57:41Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/pandoc-as-markdown-preprocessor/",
-      "detailPath": "articles/2a88173656824258000966f9.json"
-    },
-    {
-      "id": "a325cada9aa28bea9603212f",
-      "title": "我有特别的 DNS 配置和使用技巧",
-      "summary": "众所周知，DNS 的作用与电话簿类似，将人类可读的域名映射到机器可读 IP 地址、使人更方便地访问互联网。DNS 是非常重要的互联网基础设施，对于改善上网冲浪的体验中的重要程度不容小觑。",
-      "image": "https://img.skk.moe/blog/t2022/i-have-my-unique-dns-setup.png",
-      "publishedAt": "2022-08-21T11:14:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/i-have-my-unique-dns-setup/",
-      "detailPath": "articles/a325cada9aa28bea9603212f.json"
     }
   ]
 }

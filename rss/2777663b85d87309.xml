@@ -6,7 +6,280 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 08:59:23 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Oct 2026 07:49:21 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-10-26 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-10-26-HackerNews/</link>
+      <pubDate>Mon, 26 Oct 2026 07:49:21 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-10-26-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-10-26-hacker-news-top-stories&#34;&gt;
+  2026-10-26 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-10-26-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Dan Luu 以 pgrust、正则引擎和 Rust 工具链为例，主张重新评估 AI 时代的开发成本，同时强调验证仍是瓶颈。&lt;/li&gt;
+&lt;li&gt;Apollo 的 Torsten Slok 指出，七大科技巨头之外的标普 493 家公司，人均营收和利润率尚未出现他所期待的 AI 改善。&lt;/li&gt;
+&lt;li&gt;Steal My Bitcoin 用公开挑战检验 PHP RCE 的现实可利用性，项目作者随后在 HN 更新称已有成功解题者。&lt;/li&gt;
+&lt;li&gt;Goose 用编译器管理的数据栈实现无 GC、无生命周期标注的内存安全，但递归、变长容器和动态调用各有约束。&lt;/li&gt;
+&lt;li&gt;Joseph Politano 统计美国媒体、影视与艺术相关行业四年流失逾 20 万岗位，但指出 AI、外包和流媒体转型难以分开归因。&lt;/li&gt;
+&lt;li&gt;巴西组织指控 Meta 对 Lula 与 Flávio Bolsonaro 的展示存在差别，法院要求解释；报道所列测试尚不足以单独证明故意偏袒。&lt;/li&gt;
+&lt;li&gt;Cerebras 以三万亿参数 Kimi K3 为示例，按 4 位权重和 256k 请求估算使用 59 片晶圆，通过流水线服务并发请求。&lt;/li&gt;
+&lt;li&gt;Roku 完成开发者仓库向 GitLab 的迁移，要求同步更新 Git、CI、子模块及 AI 检索源地址，文档修改改走 merge request。&lt;/li&gt;
+&lt;li&gt;mike64_t 称三星电视每隔数秒处理 960×540 图像，用 INT8 TensorFlow Lite 模型识别游戏，但效果与数据外传仍需分别核实。&lt;/li&gt;
+&lt;li&gt;研究比较 14 个模型的英文输出，发现前沿模型偏好多种难读结构；长度惩罚实验支持信息压缩机制，但尚非真人理解测试。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-dan-luuai-让更有野心的软件项目变得可行-we-should-be-more-ambitious-with-the-software-we-build&#34;&gt;
+  1. Dan Luu：AI 让更有野心的软件项目变得可行 (We should be more ambitious with the software we build)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-dan-luuai-%e8%ae%a9%e6%9b%b4%e6%9c%89%e9%87%8e%e5%bf%83%e7%9a%84%e8%bd%af%e4%bb%b6%e9%a1%b9%e7%9b%ae%e5%8f%98%e5%be%97%e5%8f%af%e8%a1%8c-we-should-be-more-ambitious-with-the-software-we-build&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://danluu.com/ambitious/&#34;&gt;https://danluu.com/ambitious/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dan Luu 认为，编程代理正在改变软件项目的成本结构：过去不值得投入一年开发的专用工具，如今可能只需数小时人工指导就能达到“自己够用”的水平。他以 Michael Malis 的 pgrust、自己尝试的正则引擎、ripgrep 分支和 Rust 工具链为例，说明开发者不必继续沿用代理出现前的成本估计。&lt;/p&gt;
+&lt;p&gt;文章的重点并非所有软件都能一次生成，而是能力提高后可以选择此前过于昂贵的问题。作者称，pgrust 的测试还帮助发现了 PostgreSQL 中的问题；同时在脚注讨论了该项目的基准争议，承认提前提交预览版本的问题，并引述维护者“不建议作为主要生产数据库”的说明。对是否存在恶意作弊，作者表达的是个人判断。&lt;/p&gt;
+&lt;p&gt;Luu 也明确区分个人工具与可供公众长期使用的产品，后者仍需要更多工作。他承认文中多项性能比较没有完整严谨的基准支持，并指出模型实现能力与自主验证能力之间的落差正在扩大。附录还收录相反意见：没有清楚验收条件、架构判断和维护能力，扩大野心可能只会制造更复杂的黑箱。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-736-points--评论-675-comments--投稿者ltratt--发布时间2026-10-25-054731-0800&#34;&gt;
+  HN 热度 736 points | 评论 675 comments | 投稿者：ltratt | 发布时间：2026-10-25 05:47:31 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-736-points--%e8%af%84%e8%ae%ba-675-comments--%e6%8a%95%e7%a8%bf%e8%80%85ltratt--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-054731-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50225695&#34;&gt;https://news.ycombinator.com/item?id=50225695&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新工具的价值不只在于更快完成旧任务，也在于让开发者尝试以前不敢承担的项目。&lt;/li&gt;
+&lt;li&gt;快速做出原型并没有消除用户需求、安全、集成、维护和商业化等后续工作。&lt;/li&gt;
+&lt;li&gt;pgrust 的基准争议使部分读者质疑作者依赖个人信任为项目背书的做法。&lt;/li&gt;
+&lt;li&gt;可以因为低质量项目太多而选择不看，但未经检查就公开断言某个项目质量很差并不公平。&lt;/li&gt;
+&lt;li&gt;有开发者通过 PostgreSQL WAL 到 ClickHouse 的项目体会到，明确的反馈回路有助于驾驭复杂的 AI 辅助开发。&lt;/li&gt;
+&lt;li&gt;即使提示看似合理，模型也可能引入依赖日志文本等脆弱变通方案，代码审查仍不可省略。&lt;/li&gt;
+&lt;li&gt;将形式化验证与 AI 开发结合值得进一步介绍，尤其需要说明 Lean 等工具的实际使用边界。&lt;/li&gt;
+&lt;li&gt;安全漏洞和大规模数据泄漏仍频繁发生，在扩大软件规模之前也应重视正确性与可管理性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-apollo-首席经济学家科技巨头之外尚未显现-ai-财务回报-no-signs-of-ai-payoff-outside-the-tech-sector&#34;&gt;
+  2. Apollo 首席经济学家：科技巨头之外尚未显现 AI 财务回报 (No signs of AI payoff outside the tech sector)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-apollo-%e9%a6%96%e5%b8%ad%e7%bb%8f%e6%b5%8e%e5%ad%a6%e5%ae%b6%e7%a7%91%e6%8a%80%e5%b7%a8%e5%a4%b4%e4%b9%8b%e5%a4%96%e5%b0%9a%e6%9c%aa%e6%98%be%e7%8e%b0-ai-%e8%b4%a2%e5%8a%a1%e5%9b%9e%e6%8a%a5-no-signs-of-ai-payoff-outside-the-tech-sector&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector&#34;&gt;https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apollo 首席经济学家 Torsten Slok 比较美国七大科技巨头与标普 500 指数其余 493 家公司，认为 AI 的财务回报目前仍高度集中：前者的人均营收与利润率上升，后者大致持平，宏观生产率指标也未显示他所期待的明显提振。文中引用 Bloomberg、Macrobond、美国官方统计及 Ramp 的企业支出资料。&lt;/p&gt;
+&lt;p&gt;Slok 认为，风险投资支持的企业仍在增加 token 消费，但更多传统企业将其视为压低利润的成本，而不是已经兑现的增长来源。他提出，随着模型趋于商品化，关键问题是企业能否把更便宜的智能转化成收入、利润和更好的商业判断；责任、信任、文化及声誉风险都不能只靠计算能力解决。&lt;/p&gt;
+&lt;p&gt;这是作者基于汇总图表提出的宏观判断，不是对所有企业逐一开展的 AI 投资回报审计。剔除七巨头的 493 家公司也不能简单等同于严格划分的全部非科技行业；指标尚未显著改善，与证明每个 AI 项目都没有收益，是不同结论。文章没有提供能够单独识别 AI 因果效应的研究设计。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-609-points--评论-645-comments--投稿者the-mitr--发布时间2026-10-25-034719-0800&#34;&gt;
+  HN 热度 609 points | 评论 645 comments | 投稿者：the-mitr | 发布时间：2026-10-25 03:47:19 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-609-points--%e8%af%84%e8%ae%ba-645-comments--%e6%8a%95%e7%a8%bf%e8%80%85the-mitr--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-034719-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50224463&#34;&gt;https://news.ycombinator.com/item?id=50224463&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新技术可能需要组织重构和资本投入才能显现收益，短期宏观数据不足以决定长期结果。&lt;/li&gt;
+&lt;li&gt;编译器、测试、静态分析和性能工具让软件开发更容易形成验证回路，其他行业未必拥有同样条件。&lt;/li&gt;
+&lt;li&gt;一名自动化服务提供者观察到，AI 常被用于完成原本被取消或忽略的工作，而不是直接减少人员成本。&lt;/li&gt;
+&lt;li&gt;也有技术从业者反映，AI 对个人项目有帮助，但在日常工作中的净生产率暂时没有改善。&lt;/li&gt;
+&lt;li&gt;传统业务需要较多定制与流程整合，不能把通用模型接入等同于完成企业落地。&lt;/li&gt;
+&lt;li&gt;写作审阅等具体任务可能已经节省时间，即使收益尚不足以改变整家公司财务指标。&lt;/li&gt;
+&lt;li&gt;测试套件也可能覆盖不足，软件领域能够验证一部分输出并不等于已经消除了可靠性问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-show-hn用偷走我的比特币挑战检验-php-rce-风险-show-hn-steal-my-bitcoin&#34;&gt;
+  3. Show HN：用“偷走我的比特币”挑战检验 PHP RCE 风险 (Show HN: Steal My Bitcoin)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-show-hn%e7%94%a8%e5%81%b7%e8%b5%b0%e6%88%91%e7%9a%84%e6%af%94%e7%89%b9%e5%b8%81%e6%8c%91%e6%88%98%e6%a3%80%e9%aa%8c-php-rce-%e9%a3%8e%e9%99%a9-show-hn-steal-my-bitcoin&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://stealmybitcoin.com/&#34;&gt;https://stealmybitcoin.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;投稿者 cloudlandsdev 发布 Steal My Bitcoin，表示建立这个项目，是想知道是否有人真正掌握了近日引发担忧的 PHP 远程代码执行漏洞的利用方法。项目把安全讨论转成一个公开挑战，并直接以“偷走我的比特币”命名。&lt;/p&gt;
+&lt;p&gt;本次网站持续返回服务错误，未能读取其完整规则、运行环境和技术说明，因此本节仅依据投稿者在 HN 帖子中的简短介绍整理，不能独立确认挑战配置或具体漏洞的可利用条件，也没有实施任何攻击。站点是否被攻破、日志能证明什么，以及钱包如何设置，均需与这段原始项目介绍分开判断；作者后来在 HN 发布的进展，单独归入下方讨论观点。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-582-points--评论-430-comments--投稿者cloudlandsdev--发布时间2026-10-25-043031-0800&#34;&gt;
+  HN 热度 582 points | 评论 430 comments | 投稿者：cloudlandsdev | 发布时间：2026-10-25 04:30:31 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-582-points--%e8%af%84%e8%ae%ba-430-comments--%e6%8a%95%e7%a8%bf%e8%80%85cloudlandsdev--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-043031-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50224916&#34;&gt;https://news.ycombinator.com/item?id=50224916&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目作者更新称已有解题者成功执行服务器上的标志程序，并说明自己放错了钱包密钥，最终认可解题并另行转付奖励。&lt;/li&gt;
+&lt;li&gt;把“轻易可利用”的说法变成公开挑战，有助于让宽泛的安全主张接受实际检验。&lt;/li&gt;
+&lt;li&gt;较低奖励未必足以吸引持有高价值漏洞利用的人，挑战暂时无人完成也不能直接证明漏洞不严重。&lt;/li&gt;
+&lt;li&gt;反向代理的请求限制会影响攻击条件，实验结果需要结合实际部署配置理解。&lt;/li&gt;
+&lt;li&gt;作者解释默认代理配置旨在贴近常见部署，同时承认流量过大和日志容量限制影响了站点稳定性与记录。&lt;/li&gt;
+&lt;li&gt;大量参与者可能共同消耗远超奖金的模型调用费用，单个赢家的收益不能代表整个尝试过程的经济性。&lt;/li&gt;
+&lt;li&gt;在受控环境中放置可监测的诱饵密钥，也被提出作为发现入侵的一种思路。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-goose以编译器管理的数据栈替代堆分配-the-goose-programming-language&#34;&gt;
+  4. Goose：以编译器管理的数据栈替代堆分配 (The Goose Programming Language)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-goose%e4%bb%a5%e7%bc%96%e8%af%91%e5%99%a8%e7%ae%a1%e7%90%86%e7%9a%84%e6%95%b0%e6%8d%ae%e6%a0%88%e6%9b%bf%e4%bb%a3%e5%a0%86%e5%88%86%e9%85%8d-the-goose-programming-language&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://aardappel.github.io/goose/&#34;&gt;https://aardappel.github.io/goose/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Goose 是一门实验性系统语言，核心不是在普通堆上换一种分配器，而是把动态值放入编译器安排的数据栈：增长通过移动指针完成，离开所属作用域时统一释放。编译器推导引用依附的根对象并检查生存范围，用户无需写生命周期标注；语言也不提供通常意义上的 unsafe 逃生口。&lt;/p&gt;
+&lt;p&gt;它强调连续内联的数据布局、窄偏移引用、按实际变体大小存放的枚举，以及保证在最终位置构造返回值。项目提供编译到 C 的后端与 C 接口，线程采用独立内存和类型化消息队列。作者在自建的 16 项基准中宣称较 C++ 和安全 Rust 有速度及内存优势，这些结果依赖具体实现、后端和测试工作负载，不能当作普遍性能保证。&lt;/p&gt;
+&lt;p&gt;官网也列出代价：跨递归调用保留可增长临时数据有限制；变长元素数组通常只能顺序遍历，直接索引需额外结构；没有可逃逸闭包或函数指针，仅支持全程序编译。池中已释放槽位仍被引用时可能读到新值，虽不构成内存破坏，仍属于逻辑错误。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-563-points--评论-347-comments--投稿者bobbydigitales--发布时间2026-10-25-030655-0800&#34;&gt;
+  HN 热度 563 points | 评论 347 comments | 投稿者：bobbydigitales | 发布时间：2026-10-25 03:06:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-563-points--%e8%af%84%e8%ae%ba-347-comments--%e6%8a%95%e7%a8%bf%e8%80%85bobbydigitales--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-030655-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50224100&#34;&gt;https://news.ycombinator.com/item?id=50224100&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;相对引用与直接映射的数据布局对追求低开销文件和网络处理的开发者很有吸引力。&lt;/li&gt;
+&lt;li&gt;任意增删的大量变长对象如何表示仍值得追问，必要时可能把分配器的复杂性转移到应用自己的池中。&lt;/li&gt;
+&lt;li&gt;按数据类型建立多个池并非毫无价值，它可能让分配更简单，但也要求开发者理解对象的生命周期。&lt;/li&gt;
+&lt;li&gt;返回动态数组时在调用方目标位置直接构造，可以避免把整个数组复制出去。&lt;/li&gt;
+&lt;li&gt;语言定位需要同时说明安全、性能和开发体验的优先级，而不是仅展示速度数字。&lt;/li&gt;
+&lt;li&gt;这种设计让人联想到区域式内存管理，也需要检查部分程序是否会因此保留更多内存。&lt;/li&gt;
+&lt;li&gt;过度密集且带明显模板风格的介绍增加了理解成本，清楚解释使用场景同样重要。&lt;/li&gt;
+&lt;li&gt;也有读者肯定详细示例和设计理由，认为它们帮助理解内存模型与线程方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-美国创意产业四年流失逾二十万岗位多少能归因于-ai-america-has-lost-200k-of-jobs-in-media-film-and-the-arts-how-much-is-ai&#34;&gt;
+  5. 美国创意产业四年流失逾二十万岗位，多少能归因于 AI？ (America has lost 200k of jobs in media, film and the arts. How much is AI?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e7%be%8e%e5%9b%bd%e5%88%9b%e6%84%8f%e4%ba%a7%e4%b8%9a%e5%9b%9b%e5%b9%b4%e6%b5%81%e5%a4%b1%e9%80%be%e4%ba%8c%e5%8d%81%e4%b8%87%e5%b2%97%e4%bd%8d%e5%a4%9a%e5%b0%91%e8%83%bd%e5%bd%92%e5%9b%a0%e4%ba%8e-ai-america-has-lost-200k-of-jobs-in-media-film-and-the-arts-how-much-is-ai&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class&#34;&gt;https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Joseph Politano 分析美国创意产业的持续就业下降：过去四年相关行业流失超过 20 万个岗位，最近一年约 5 万个；电影与录音行业减少超过 10 万个、接近三分之一岗位，书面出版减少超过 7 万个。数字艺术相关子行业普遍收缩，而现场娱乐继续增长，是作者关注 AI 影响的重要线索。&lt;/p&gt;
+&lt;p&gt;文章没有把全部损失算到 AI 头上。好莱坞整合、制作外包、用户生成内容、流媒体竞争和长期出版业衰退同时存在，企业又不愿充分披露 AI 使用，准确拆分因果很困难。作者用音乐从唱片转向演出收入、报业广告与内容被互联网拆散的历史，讨论创意劳动面对的商业模式压力。&lt;/p&gt;
+&lt;p&gt;他认为，最坏情境可能不是某种艺术消失，而是传统版权和收入结构失去支撑；但技术也可能产生意外的需求，例如 BookTok 带动图书销售。文章将当前 AI 冲击主要视为文化和行业层面的变化，承认其宏观就业影响仍集中于少数领域，未来是否扩散也无法仅由这些趋势推定。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-500-points--评论-534-comments--投稿者gnabgib--发布时间2026-10-25-071154-0800&#34;&gt;
+  HN 热度 500 points | 评论 534 comments | 投稿者：gnabgib | 发布时间：2026-10-25 07:11:54 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-500-points--%e8%af%84%e8%ae%ba-534-comments--%e6%8a%95%e7%a8%bf%e8%80%85gnabgib--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-071154-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50226419&#34;&gt;https://news.ycombinator.com/item?id=50226419&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;短视频和长视频平台占用观众时间，本身就可能挤压传统影视需求，不能忽略消费习惯变化。&lt;/li&gt;
+&lt;li&gt;拍摄补贴、罢工、疫情与海外制作成本，都可能推动美国本土影视岗位流失。&lt;/li&gt;
+&lt;li&gt;判断 AI 的独立影响需要控制利率、通胀、购买力和其他宏观冲击，时间上的重合不够。&lt;/li&gt;
+&lt;li&gt;电视与电影的收入结构不同，流媒体改变季数、集数、重播收入和工作连续性，值得分别分析。&lt;/li&gt;
+&lt;li&gt;一名评论者转述业内经历称，某些特效和动画项目即使仍然存在，报价也大幅降低，岗位数之外还需看收入。&lt;/li&gt;
+&lt;li&gt;庞大的旧作品库持续争夺有限注意力，内容供给过剩可能长期压低新内容的市场价值。&lt;/li&gt;
+&lt;li&gt;现场戏剧也是可与现场音乐比较的领域，讨论影视的替代收入时不应完全忽略它。&lt;/li&gt;
+&lt;li&gt;追求局部成本节约会逐渐削弱地区产业网络，单家公司账面效率未必等于整个行业健康。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-meta-被指未消除巴西选举平台差别待遇证据与结论仍需区分-meta-ignores-brazilian-court-order-to-end-bolsonaro-favoritism&#34;&gt;
+  6. Meta 被指未消除巴西选举平台差别待遇，证据与结论仍需区分 (Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-meta-%e8%a2%ab%e6%8c%87%e6%9c%aa%e6%b6%88%e9%99%a4%e5%b7%b4%e8%a5%bf%e9%80%89%e4%b8%be%e5%b9%b3%e5%8f%b0%e5%b7%ae%e5%88%ab%e5%be%85%e9%81%87%e8%af%81%e6%8d%ae%e4%b8%8e%e7%bb%93%e8%ae%ba%e4%bb%8d%e9%9c%80%e5%8c%ba%e5%88%86-meta-ignores-brazilian-court-order-to-end-bolsonaro-favoritism&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order&#34;&gt;https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Panamerican Dispatch 转译的一篇报道介绍，Sleeping Giants Brasil 与 CTRL+Z 向巴西最高选举法院提交材料，质疑 Meta 平台是否平等对待 Lula 与 Flávio Bolsonaro。材料涉及 WhatsApp 和 Instagram 的 GIF 搜索、标签排序及 Meta AI 回答，包括搜索“巴西”时候选人图片的出现位置，以及负面标签的推荐顺序。&lt;/p&gt;
+&lt;p&gt;报道还列出让 AI 在 1 至 25 中选择数字、分别得到 13 和 22 的两次测试，同时明确承认，这不足以证明工具具有选举偏好。文章称法院已要求平等待遇和合规说明，原设每日 50 万雷亚尔罚款，可能提高至 100 万；这些程序和组织提出的指控，不能等同于已经证实公司故意操纵选举。Meta 否认蓄意偏袒，并将问题归因于技术故障。&lt;/p&gt;
+&lt;p&gt;另核对法院 10 月 20 日公告，可确认法院听取了 Meta 与两方竞选代表的说明，并要求解释保障平等分发与广告投放的措施；该公告同样记录了 Meta 的否认，没有把这些示例宣布为故意偏袒的最终认定。&lt;/p&gt;
+&lt;p&gt;法院公告：https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/tse-ouve-meta-sobre-cumprimento-de-decisao-que-exige-igualdade-de-tratamento-entre-campanhas&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-466-points--评论-323-comments--投稿者vrganj--发布时间2026-10-25-170040-0800&#34;&gt;
+  HN 热度 466 points | 评论 323 comments | 投稿者：vrganj | 发布时间：2026-10-25 17:00:40 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-466-points--%e8%af%84%e8%ae%ba-323-comments--%e6%8a%95%e7%a8%bf%e8%80%85vrganj--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-170040-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50229587&#34;&gt;https://news.ycombinator.com/item?id=50229587&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两次随机数字回答不足以支撑选举偏袒的强结论，提出指控时应使用更有说服力的测试。&lt;/li&gt;
+&lt;li&gt;互动率驱动的排序即使没有人工指定候选人，也可能放大情绪化政治内容，因此仍需要审视平台机制。&lt;/li&gt;
+&lt;li&gt;对大型平台而言固定金额罚款可能缺乏威慑力，执行机制应考虑企业规模。&lt;/li&gt;
+&lt;li&gt;选举期间的平台展示与推荐需要更透明的规则，以减少私人平台左右公共信息的风险。&lt;/li&gt;
+&lt;li&gt;要求政府调整算法也可能给未来的政治干预开门，监管权力本身同样需要约束。&lt;/li&gt;
+&lt;li&gt;机器人活动可能影响排序结果，应把协调操纵与平台自身设计分别调查。&lt;/li&gt;
+&lt;li&gt;识别自动化账号并让用户选择屏蔽机器人，被提出作为改善信息环境的一项具体措施。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-cerebras-以-59-片晶圆说明三万亿参数模型的流水线部署-cerebras-deploys-trillion-parameter-ai-models&#34;&gt;
+  7. Cerebras 以 59 片晶圆说明三万亿参数模型的流水线部署 (Cerebras Deploys Trillion-Parameter AI Models)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-cerebras-%e4%bb%a5-59-%e7%89%87%e6%99%b6%e5%9c%86%e8%af%b4%e6%98%8e%e4%b8%89%e4%b8%87%e4%ba%bf%e5%8f%82%e6%95%b0%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%b5%81%e6%b0%b4%e7%ba%bf%e9%83%a8%e7%bd%b2-cerebras-deploys-trillion-parameter-ai-models&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras&#34;&gt;https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cerebras 解释，单片 WSE-3T 晶圆拥有 44 GB 片上 SRAM，无法单独容纳万亿参数模型，因此需要将模型层分布到多片晶圆。文章以约三万亿参数的 Kimi K3 为说明性案例，假设权重采用 4 位量化、KV 缓存采用 8 位、平均请求长度为 256k。&lt;/p&gt;
+&lt;p&gt;按其近似计算，每层权重约 16 GB；69 个线性注意力层按每片两层安排，24 个全注意力层按每片一层、并留出 KV 缓存空间，共需要 35 加 24，即 59 片晶圆。权重尽量常驻片上，晶圆之间通过以太网 RDMA 传递激活值，文中给出的每跳开销约为 2 微秒。&lt;/p&gt;
+&lt;p&gt;系统通过不同流水线阶段同时处理不同请求，并可加入微批，避免把整个流水线理解为一次只服务一个请求。较小微批追求单请求速度，较大微批提高吞吐；全注意力层的缓存容量限制并发。厂商宣称这种架构能够提供极高生成速度，但本文主要是布局与容量示例，并非完整披露成本、预填充性能及故障恢复的独立基准。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-348-points--评论-127-comments--投稿者gmays--发布时间2026-10-25-093349-0800&#34;&gt;
+  HN 热度 348 points | 评论 127 comments | 投稿者：gmays | 发布时间：2026-10-25 09:33:49 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-348-points--%e8%af%84%e8%ae%ba-127-comments--%e6%8a%95%e7%a8%bf%e8%80%85gmays--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-093349-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50227356&#34;&gt;https://news.ycombinator.com/item?id=50227356&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跨越几十片晶圆的流水线需要说明故障域、请求排空和滚动升级方式，不能只看理想运行速度。&lt;/li&gt;
+&lt;li&gt;引用完整精度模型的能力成绩后转用 4 位权重部署，需要补充量化版本的实际质量测量。&lt;/li&gt;
+&lt;li&gt;片上容量应与 SRAM 而非普通内存比较，低延迟和高成本会限制可集成的容量。&lt;/li&gt;
+&lt;li&gt;只说明解码时传递激活值仍不完整，长上下文预填充在该互连上的表现也需要解释。&lt;/li&gt;
+&lt;li&gt;评估系统效率还应计算整套设备的耗电与每个 token 的能耗，不能只比较生成速度。&lt;/li&gt;
+&lt;li&gt;部分用户的实际障碍是可用模型质量与选择，旧模型即使速度很快也未必满足任务需求。&lt;/li&gt;
+&lt;li&gt;模型变快后，测试和构建等外部工具可能成为代理工作的主要等待来源。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-roku-将开发者仓库从-github-迁至-gitlab-roku-developer-repositories-moved-from-github-to-gitlab&#34;&gt;
+  8. Roku 将开发者仓库从 GitHub 迁至 GitLab (Roku developer repositories moved from GitHub to GitLab)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-roku-%e5%b0%86%e5%bc%80%e5%8f%91%e8%80%85%e4%bb%93%e5%ba%93%e4%bb%8e-github-%e8%bf%81%e8%87%b3-gitlab-roku-developer-repositories-moved-from-github-to-gitlab&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.roku.com/developer/gitlab-move&#34;&gt;https://blog.roku.com/developer/gitlab-move&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Roku 宣布已将开发者资源从 GitHub 迁往 GitLab，涉及文档、示例应用、工具仓库及 RSG 2.0 SDK 相关开源资源。仓库名称保持不变，新的集中位置是 GitLab 的 rokudev 组织；官方文档和博客中的链接已调整，开发者自己保存的地址仍需更新。&lt;/p&gt;
+&lt;p&gt;公告特别提醒知识库、内部助手和编程代理的维护者：不仅要更换仓库地址，也要替换原始文件读取路径并重新抓取。过时的索引可能继续静默返回旧资料，比直接报错更不容易发现。已有 Git 克隆、子模块配置、CI 拉取步骤、发布产物和直接从 Git 安装的依赖，也都需要检查。&lt;/p&gt;
+&lt;p&gt;文档仍接受贡献，但 GitLab 上不支持原先的“Suggest edits”入口，需要申请文档仓库访问权限，再通过 fork 和 merge request 提交。原文是一份迁移操作公告，没有解释放弃 GitHub 的具体商业或技术原因，不能把讨论中对稳定性、微软或 AI 的批评写成 Roku 官方动机。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-305-points--评论-216-comments--投稿者cxr--发布时间2026-10-25-000626-0800&#34;&gt;
+  HN 热度 305 points | 评论 216 comments | 投稿者：cxr | 发布时间：2026-10-25 00:06:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-305-points--%e8%af%84%e8%ae%ba-216-comments--%e6%8a%95%e7%a8%bf%e8%80%85cxr--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-000626-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50222622&#34;&gt;https://news.ycombinator.com/item?id=50222622&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官方没有说明迁移动机，使读者难以判断这次选择究竟解决了什么具体问题。&lt;/li&gt;
+&lt;li&gt;有开发者因 GitHub 服务中断影响交付而支持迁移，认为可靠性不应被视为理所当然的业务损耗。&lt;/li&gt;
+&lt;li&gt;支持 GitLab 的使用者认为它更贴近企业项目与协作流程，而不只是面向开源社交。&lt;/li&gt;
+&lt;li&gt;也有同时用过两者的开发者认为功能差异有限，需要用具体工作流而非品牌偏好比较。&lt;/li&gt;
+&lt;li&gt;代理带来的仓库和接口负载增长也会影响其他托管平台，换服务商未必能永久消除容量压力。&lt;/li&gt;
+&lt;li&gt;即使是自由软件协作，强制贡献者注册特定托管平台也可能形成新的流程依赖。&lt;/li&gt;
+&lt;li&gt;仓库分散到更多平台会增加寻找项目和理解贡献流程的成本。&lt;/li&gt;
+&lt;li&gt;GitLab 自身也需要控制功能膨胀，保持版本管理和持续集成的核心体验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-研究者称三星电视周期性运行-tensorflow-lite-识别游戏画面-samsung-running-a-tensorflow-lite-model-on-960x540-image-to-track-you&#34;&gt;
+  9. 研究者称三星电视周期性运行 TensorFlow Lite 识别游戏画面 (Samsung running a TensorFlow lite model on 960x540 image to track you)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e7%a0%94%e7%a9%b6%e8%80%85%e7%a7%b0%e4%b8%89%e6%98%9f%e7%94%b5%e8%a7%86%e5%91%a8%e6%9c%9f%e6%80%a7%e8%bf%90%e8%a1%8c-tensorflow-lite-%e8%af%86%e5%88%ab%e6%b8%b8%e6%88%8f%e7%94%bb%e9%9d%a2-samsung-running-a-tensorflow-lite-model-on-960x540-image-to-track-you&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://twitter.com/mike64_t/status/2114150399406202896&#34;&gt;https://twitter.com/mike64_t/status/2114150399406202896&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究者 mike64_t 在一则技术观察帖中称，三星电视每隔几秒会对 960×540 的图像运行一个 INT8 量化的 TensorFlow Lite 模型，试图识别当前游戏。其发现的文件名为 alex.tflite，结构看起来接近 AlexNet，并似乎将提取特征与数据库进行近邻比较。帖子附带模型图和抓取画面的说明。&lt;/p&gt;
+&lt;p&gt;作者对效果的评价很差，称几乎总是识别失败，并认为同意授权的检查发生在后续阶段，未授权时前面的运算仍然执行。这些是一次公开分析中的观察，不是跨机型、跨固件的正式准确率测试；“99% 不工作”不能当作经过统计验证的错误率。&lt;/p&gt;
+&lt;p&gt;识别本地画面、将分类结果交给后续模块与把截图上传给外部服务，需要不同证据。原帖没有完整给出适用机型、固件、测试样本或网络数据流核验，因此不能仅凭模型存在就断言所有三星电视持续上传画面，也不能独立确认授权开关控制了处理链的哪些环节。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-285-points--评论-1-comments--投稿者mashally--发布时间2026-10-25-184201-0800&#34;&gt;
+  HN 热度 285 points | 评论 1 comments | 投稿者：mashally | 发布时间：2026-10-25 18:42:01 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-285-points--%e8%af%84%e8%ae%ba-1-comments--%e6%8a%95%e7%a8%bf%e8%80%85mashally--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-184201-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50230181&#34;&gt;https://news.ycombinator.com/item?id=50230181&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本帖评论已合并到以下三星电视讨论，下面归并的是该讨论中的观点。&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50218633&#34;&gt;https://news.ycombinator.com/item?id=50218633&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若拒绝授权后仍运行模型再丢弃结果，就会带来没有用户收益的运算和电力消耗。&lt;/li&gt;
+&lt;li&gt;内容识别也可能服务画面参数优化，具体用途需要与广告追踪分别核对。&lt;/li&gt;
+&lt;li&gt;本地分类与向外上传原始内容的隐私后果不同，讨论应避免把所有处理方式等同。&lt;/li&gt;
+&lt;li&gt;功能是否默认开启、推断结果是否出售，都应有清楚的用户选择与可验证的控制。&lt;/li&gt;
+&lt;li&gt;逆向分析应先核对公开文档和已宣传功能，不能只靠工具输出就把既有功能称为新发现。&lt;/li&gt;
+&lt;li&gt;有使用者选择仅通过 HDMI 使用电视并保持断网，以减少对内置联网系统的依赖。&lt;/li&gt;
+&lt;li&gt;建立具有处罚约束的隐私认证标准，被提出作为让消费者能够比较设备的一种方式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-研究信息压缩压力可能让-ai-英文更难读-why-is-ai-generated-language-so-hard-to-understand&#34;&gt;
+  10. 研究：信息压缩压力可能让 AI 英文更难读 (Why is AI generated language so hard to understand?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e7%a0%94%e7%a9%b6%e4%bf%a1%e6%81%af%e5%8e%8b%e7%bc%a9%e5%8e%8b%e5%8a%9b%e5%8f%af%e8%83%bd%e8%ae%a9-ai-%e8%8b%b1%e6%96%87%e6%9b%b4%e9%9a%be%e8%af%bb-why-is-ai-generated-language-so-hard-to-understand&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://arxiv.org/abs/2610.29162&#34;&gt;https://arxiv.org/abs/2610.29162&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thomas Hikaru Clark 等人研究 AI 英文为何给人越来越难懂的感觉。他们比较 14 个不同层次模型在聊天、编程和作文场景中的输出，以近似体裁的人类文本和英日往返翻译后的改写为参照，统计低频词组、较长句法依赖、名词堆叠、无生命主语搭配通常用于有生命主体的动词等特征。九个前沿或接近前沿的模型都表现出更多低频词组和后一类主谓搭配，但模型、特征与场景之间存在差异。&lt;/p&gt;
+&lt;p&gt;研究者提出，面向数学、代码与可验证结果的训练可能鼓励信息压缩，而不总是照顾读者的工作记忆。为检验机制，他们对 Qwen2.5-1.5B-Instruct 做强化学习，在结构化事件转英文的任务中增加长度惩罚，模型随之更偏好省略可选成分等较短表达；这种倾向能迁移到部分未训练结构，但远距离迁移并不普遍。&lt;/p&gt;
+&lt;p&gt;论文只分析英文，话题种子和模型范围有限，以与理解难度相关的语言特征作为间接指标，没有直接证明每位真人读者都更难理解，也没有取得前沿模型完整后训练过程来识别因果。这是支持一种可能机制的研究，不能推广成所有 AI 输出、所有语言必然越来越晦涩。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-241-points--评论-197-comments--投稿者canjobear--发布时间2026-10-25-020457-0800&#34;&gt;
+  HN 热度 241 points | 评论 197 comments | 投稿者：canjobear | 发布时间：2026-10-25 02:04:57 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-241-points--%e8%af%84%e8%ae%ba-197-comments--%e6%8a%95%e7%a8%bf%e8%80%85canjobear--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-25-020457-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50223647&#34;&gt;https://news.ycombinator.com/item?id=50223647&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模型常围绕当前提示和上下文写作，却没有站在最终读者的角度判断哪些信息必须解释。&lt;/li&gt;
+&lt;li&gt;看起来有条理、篇幅长且修辞丰富的回答，未必真正对目标读者有用。&lt;/li&gt;
+&lt;li&gt;请求简单解释有时能改善输出，但需要反复纠正语体也增加使用负担。&lt;/li&gt;
+&lt;li&gt;部分使用者反而觉得 AI 文字更易理解，因此语言指标和个人阅读体验不应直接画等号。&lt;/li&gt;
+&lt;li&gt;长度惩罚改变语法偏好的实验值得量化研究，但默认语体与模型能够生成的全部风格仍需区分。&lt;/li&gt;
+&lt;li&gt;也有使用者表示，即使明确要求更清楚地写作，改进也不一定稳定维持。&lt;/li&gt;
+&lt;li&gt;自动把近期实现细节写进 README 可能污染长期文档，写作应筛选对未来读者真正重要的信息。&lt;/li&gt;
+&lt;li&gt;不同训练目标会互相影响，面向任务完成的优化可能泄漏到叙事和日常沟通风格中。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-10-25 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-10-25-HackerNews/</link>
@@ -1085,279 +1358,6 @@
 &lt;li&gt;教孩子提出清楚的问题、判断答案与信息来源，可能比预先列出一套未来职业技能更耐久。&lt;/li&gt;
 &lt;li&gt;手工、生活技能和父母真心热爱的活动，也能让孩子在市场价格之外体验能力、乐趣与自主性。&lt;/li&gt;
 &lt;li&gt;孩子尚未出生时就过度规划其远期成就，可能把父母对技术变化的焦虑转化为不必要的期待压力。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-10-21 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-10-21-HackerNews/</link>
-      <pubDate>Wed, 21 Oct 2026 08:16:33 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-10-21-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-10-21-hacker-news-top-stories&#34;&gt;
-  2026-10-21 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-10-21-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;DeepSeek 开源 DeepInfer，支持 V4.1 Flash、NVIDIA SM100 与昇腾 950；当前提供离线推理，完整服务仍需另配缓存和负载均衡。&lt;/li&gt;
-&lt;li&gt;Redact 检查 545 个 WhatsApp 帮助页，发现 80 页含 102 个隐藏文本块；Meta 称其原供客服机器人使用，页面暴露源于已修复的错误。&lt;/li&gt;
-&lt;li&gt;eMudhra 八个中间 CA 因密钥生成缺陷受到影响；报告称主流浏览器已采取封锁措施，但大量工具和运行时仍需各自更新信任数据。&lt;/li&gt;
-&lt;li&gt;DHS 公开原于 7 月 24 日发布的 DeepSeek 排除命令，涵盖联邦民事机构及相关第三方实现；60 天是申请例外期限，而非统一移除宽限期。&lt;/li&gt;
-&lt;li&gt;MiniMax M3.1 Flash 的 API 输入、输出与缓存输入每百万 token 分别为 0.15、0.60、0.015 美元，厂商称输出中位速度超过 170 token/秒，权重将稍后发布。&lt;/li&gt;
-&lt;li&gt;po-ru.com 作者归档自己维护的 Ruby gems，称 Ruby 与 Rails 拥抱 LLM 的方向削弱了其创作乐趣与贡献公共资源的意愿。&lt;/li&gt;
-&lt;li&gt;教师 Teddy Svoronos 报告 iPadOS 27 在 AirPlay 演示中切换应用会暴露整个屏幕，GoodNotes、Keynote 和 PowerPoint 的后续行为也各不相同。&lt;/li&gt;
-&lt;li&gt;OpenBSD 8.0 于 10 月 20 日发布，加入每虚拟机最多 64 vCPU、arm64 休眠支持，并将 amd64 内核虚拟地址空间从 4GB 扩至 512GB。&lt;/li&gt;
-&lt;li&gt;Ashley Gullen 称自己的 Facebook 主页每月超过两条外链需订阅、至少每月 50 美元；已读原帖，但具体适用范围未能从官方帮助页核实。&lt;/li&gt;
-&lt;li&gt;Cretezy 用 Projectivy 替换 Google TV 桌面、SmartTube 替换 YouTube，并配合 Wholphin 和遥控器映射；已在两台 Chromecast 与一台海信电视验证。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-deepinferdeepseek-开源其高性能推理框架的核心实现-deepinfer-high-performance-inference-framework-for-deepseek-models&#34;&gt;
-  1. DeepInfer：DeepSeek 开源其高性能推理框架的核心实现 (DeepInfer: High-performance inference framework for DeepSeek models)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-deepinferdeepseek-%e5%bc%80%e6%ba%90%e5%85%b6%e9%ab%98%e6%80%a7%e8%83%bd%e6%8e%a8%e7%90%86%e6%a1%86%e6%9e%b6%e7%9a%84%e6%a0%b8%e5%bf%83%e5%ae%9e%e7%8e%b0-deepinfer-high-performance-inference-framework-for-deepseek-models&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://github.com/deepseek-ai/DeepInfer&#34;&gt;https://github.com/deepseek-ai/DeepInfer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;DeepSeek 发布 DeepInfer，称它是支撑自身大规模生产服务的推理框架。本次 Apache 2.0 开源版本支持 DeepSeek-V4.1-Flash，硬件面向 NVIDIA SM100 GPU 和华为昇腾 950 NPU，提供优化内核、并行计算、模型运行时和采样等核心能力。&lt;/p&gt;
-&lt;p&gt;其技术包括用草稿 token 与置信度安排校验的 DSpark、减少部分预填充工作的滑动窗口有界重放，以及让 CPU 调度与设备计算重叠的异步调度。结构化输出可约束为正则、JSON Schema 或 EBNF；批次组成不影响结果及确定性采样目前注明仅支持 NVIDIA。README 的性能测试也有明确条件：预填充用四张 SM100，解码用六十四张，分别位于同一扩展互联域。&lt;/p&gt;
-&lt;p&gt;需要保留发布范围：当前提供的是离线推理，完整在线服务所需的 KV 缓存系统、VE/Prefill/Decode 拆分部署及副本间负载均衡并未包含。运行还依赖 Linux、Python 3.12、较新编译器及对应 CUDA 或 CANN 环境，因此不能理解为任意显卡上直接替换现有服务即可复现生产吞吐。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-2104-points--评论-821-comments--投稿者ggcr--发布时间2026-10-20-170854-0800&#34;&gt;
-  HN 热度 2104 points | 评论 821 comments | 投稿者：ggcr | 发布时间：2026-10-20 17:08:54 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2104-points--%e8%af%84%e8%ae%ba-821-comments--%e6%8a%95%e7%a8%bf%e8%80%85ggcr--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-170854-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50163277&#34;&gt;https://news.ycombinator.com/item?id=50163277&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;KV 缓存、拆分部署和负载均衡的缺口会影响完整服务落地，不能只看内核吞吐就估算部署成本。&lt;/li&gt;
-&lt;li&gt;现有提供商早已能用其他框架部署 DeepSeek，此次发布更重要的价值可能是公开可供借鉴的优化实现。&lt;/li&gt;
-&lt;li&gt;昇腾支持可能降低其他团队使用不同加速硬件的门槛，但推理栈开放并不等于训练生态已经同样成熟。&lt;/li&gt;
-&lt;li&gt;与 vLLM、SGLang 及缓存感知调度方案的公平性能比较仍然重要，单独一套基准不足以回答实际性价比。&lt;/li&gt;
-&lt;li&gt;每卡收入与 GPU 租赁价格不是同一个指标，未弄清硬件、利用率和计费条件前不应直接相减推算利润。&lt;/li&gt;
-&lt;li&gt;提供商之间的延迟比较也受负载影响，官方服务与流量分散的第三方服务未必处于相同条件。&lt;/li&gt;
-&lt;li&gt;低单价 API 仍有开支不确定性，部分开发者更看重固定订阅提供的预算可预期性。&lt;/li&gt;
-&lt;li&gt;发布优化框架不等于其他模型公司立即失去竞争力，对市场结局的判断还需要解释具体传导机制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-whatsapp-帮助页曾隐藏客服-ai-指令限制提及监管机构-whatsapps-help-pages-hid-llm-instructions-dont-recommend-a-regulator&#34;&gt;
-  2. WhatsApp 帮助页曾隐藏客服 AI 指令，限制提及监管机构 (WhatsApp&amp;rsquo;s help pages hid LLM instructions: dont recommend a regulator)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-whatsapp-%e5%b8%ae%e5%8a%a9%e9%a1%b5%e6%9b%be%e9%9a%90%e8%97%8f%e5%ae%a2%e6%9c%8d-ai-%e6%8c%87%e4%bb%a4%e9%99%90%e5%88%b6%e6%8f%90%e5%8f%8a%e7%9b%91%e7%ae%a1%e6%9c%ba%e6%9e%84-whatsapps-help-pages-hid-llm-instructions-dont-recommend-a-regulator&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions&#34;&gt;https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Redact 作者 Dan Saltman 报告，他们保存并检查了 WhatsApp 帮助中心链接的全部 545 个页面，在 80 页找到 102 个未显示给用户的 AI 文本块。多数内容是解释歧义、引导操作或保护用户；其中两组限制引起争议：无法自行删除账户时，不推荐监管机构；用户提到律师或诉讼后，不引用包括隐私法规在内的法律文件。&lt;/p&gt;
-&lt;p&gt;作者认为，避免客服机器人提供法律意见有合理性，但不应因此隐藏公开的权利与投诉渠道。文章也明确区分了“不要承诺人工删除账户”与“不要提删除权”，没有把两者直接画等号。&lt;/p&gt;
-&lt;p&gt;更新说明，截至 10 月 18 日检查时，所有相关隐藏块已移除。Meta 对 WIRED 表示，这些原是自身客服聊天机器人的指令，因为错误出现在公开页面，现已修复。Redact 没有测试 WhatsApp 机器人是否实际遵循它们，也没有证明外部 AI 助手受到了影响，隐藏文本的完整存在时间及其他语言覆盖同样不明。发现指令与证明实际操控结果，是两个证据层次。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-712-points--评论-208-comments--投稿者ds--发布时间2026-10-20-072218-0800&#34;&gt;
-  HN 热度 712 points | 评论 208 comments | 投稿者：ds | 发布时间：2026-10-20 07:22:18 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-712-points--%e8%af%84%e8%ae%ba-208-comments--%e6%8a%95%e7%a8%bf%e8%80%85ds--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-072218-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50159341&#34;&gt;https://news.ycombinator.com/item?id=50159341&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;企业客服机器人避免代表公司解释法律、承诺责任或作法律辩护，是可以理解的风险控制。&lt;/li&gt;
-&lt;li&gt;不提供法律意见与不告知公开投诉渠道应当区分，合理的客服边界不能自动解释全部隐藏限制。&lt;/li&gt;
-&lt;li&gt;Meta 所说的错误可以指内部指令被公开，并不等于它否认原本就有这些客服政策。&lt;/li&gt;
-&lt;li&gt;将面向机器人的说明附在支持文档中，可能方便多个团队协调，但来源和作用范围必须清楚。&lt;/li&gt;
-&lt;li&gt;把内部控制指令嵌入公开页面会混淆资料与操作权限，也增加其他阅读系统误用的风险。&lt;/li&gt;
-&lt;li&gt;一名尝试复现的参与者称，其助手的网页工具未读取原有隐藏文本，说明实际效果取决于抓取和解析路径。&lt;/li&gt;
-&lt;li&gt;AI 摘要看似是中立入口，但结果可能受到资料提供者的设计影响，不能把摘要当作无需核验的事实终点。&lt;/li&gt;
-&lt;li&gt;WhatsApp 的家庭、工作和社群关系让迁移成本很高，个人不信任平台也未必能独自退出。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-emudhra-八个中间-ca-密钥失陷非浏览器客户端修复不一-emudhra-intermediate-ca-compromise&#34;&gt;
-  3. eMudhra 八个中间 CA 密钥失陷，非浏览器客户端修复不一 (EMudhra Intermediate CA Compromise)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-emudhra-%e5%85%ab%e4%b8%aa%e4%b8%ad%e9%97%b4-ca-%e5%af%86%e9%92%a5%e5%a4%b1%e9%99%b7%e9%9d%9e%e6%b5%8f%e8%a7%88%e5%99%a8%e5%ae%a2%e6%88%b7%e7%ab%af%e4%bf%ae%e5%a4%8d%e4%b8%8d%e4%b8%80-emudhra-intermediate-ca-compromise&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://emudhra.we-have-a-problem.com/&#34;&gt;https://emudhra.we-have-a-problem.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Dennis Jackson 发布的事件页面称，eMudhra 八个中间 CA 的私钥因生成错误，可以从公开证书恢复。最初报告者 Wayne 于 10 月 17 日向根证书计划提交签名证据；这些中间证书可沿不同信任链连接到主流根证书库，影响并不限于某个网站或地区。&lt;/p&gt;
-&lt;p&gt;页面称 Firefox、Chrome 已从 10 月 17 日封锁相关证书，Apple 设备从 19 日起采取措施，CA 也已撤销证书。但许多命令行工具、语言运行时和软件包不消费相同的撤销信息，仍需更新自身使用的信任数据或验证组件；浏览器恢复安全不能代表同一机器上的所有 HTTPS 客户端都已修复。&lt;/p&gt;
-&lt;p&gt;缺陷从 2025 年 4 月证书创建时就存在。报告称未发现相关中间证书在这段时间内的证书透明度日志记录，并据此区分强制 CT 的浏览器与其他客户端的暴露情况。作者没有确认攻击者是否实际利用缺陷攻击了不强制 CT 的客户端。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-590-points--评论-315-comments--投稿者galadran--发布时间2026-10-20-215833-0800&#34;&gt;
-  HN 热度 590 points | 评论 315 comments | 投稿者：galadran | 发布时间：2026-10-20 21:58:33 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-590-points--%e8%af%84%e8%ae%ba-315-comments--%e6%8a%95%e7%a8%bf%e8%80%85galadran--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-215833-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50166579&#34;&gt;https://news.ycombinator.com/item?id=50166579&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;浏览器可以快速分发中间证书封锁信息，其他生态缺乏同等机制，使同一事件的实际风险分布很不均匀。&lt;/li&gt;
-&lt;li&gt;修复需要覆盖具体运行时与证书包，不能只更新操作系统或浏览器就假定应用全部受保护。&lt;/li&gt;
-&lt;li&gt;许多软件各自携带信任材料会放大应急更新负担，撤销一个中间 CA 不应总依赖重新发布整个应用。&lt;/li&gt;
-&lt;li&gt;独立证书库是客户端实现上的取舍，并非 Web PKI 强制要求，集中管理信任库仍是一种可选设计。&lt;/li&gt;
-&lt;li&gt;如果签发权限能按域名范围限制，单个 CA 出问题时就可能减少跨域信任的影响范围。&lt;/li&gt;
-&lt;li&gt;替换现有信任体系并不是轻易能完成的工作，提出替代方向仍需面对部署和兼容成本。&lt;/li&gt;
-&lt;li&gt;缺乏持续更新渠道的物联网设备特别令人担忧，产品售出后的信任维护同样属于安全生命周期。&lt;/li&gt;
-&lt;li&gt;根证书计划、软件维护者与研究者公开协作修复，让各方能够更快共享信息并追踪处置。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-dhs-公开-deepseek-排除与移除命令适用于联邦民事机构-deepseek-banned-from-us-federal-civilian-agencies-under-new-dhs-order&#34;&gt;
-  4. DHS 公开 DeepSeek 排除与移除命令，适用于联邦民事机构 (DeepSeek banned from U.S. federal civilian agencies under new DHS order)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-dhs-%e5%85%ac%e5%bc%80-deepseek-%e6%8e%92%e9%99%a4%e4%b8%8e%e7%a7%bb%e9%99%a4%e5%91%bd%e4%bb%a4%e9%80%82%e7%94%a8%e4%ba%8e%e8%81%94%e9%82%a6%e6%b0%91%e4%ba%8b%e6%9c%ba%e6%9e%84-deepseek-banned-from-us-federal-civilian-agencies-under-new-dhs-order&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/&#34;&gt;https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;美国国土安全部于2026年10月19日发布通知，要求美国民用政府机构从IT系统中移除DeepSeek产品及使用该中国AI模型的第三方服务，并禁止采购相关产品。DHS称DeepSeek模型存在“多重威胁向量”，担心使用该产品可能导致敏感数据转移至中国，还可能被用于搜集美国人员或政府机构的情报，模型本身也可能含有恶意软件或其他安全漏洞。此前，美国商务部、海军等多个机构以及纽约州、田纳西州、弗吉尼亚州等已采取类似限制措施。报道还提到，特朗普政府正持续打压中国科技企业，包括FCC计划禁止中国实验室为美国使用的电子设备进行测试、禁止进口中国新型无人机和消费级路由器等。中国驻华盛顿大使馆未立即置评。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-550-points--评论-501-comments--投稿者cmrdporcupine--发布时间2026-10-20-001646-0800&#34;&gt;
-  HN 热度 550 points | 评论 501 comments | 投稿者：cmrdporcupine | 发布时间：2026-10-20 00:16:46 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-550-points--%e8%af%84%e8%ae%ba-501-comments--%e6%8a%95%e7%a8%bf%e8%80%85cmrdporcupine--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-001646-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50154244&#34;&gt;https://news.ycombinator.com/item?id=50154244&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;自托管权重与向境外托管 API 发送数据有不同风险，笼统用服务器所在地解释全部禁用范围并不充分。&lt;/li&gt;
-&lt;li&gt;权重可以下载不等于容易审计，复杂模型是否含隐藏触发行为无法像普通源码一样直接看清。&lt;/li&gt;
-&lt;li&gt;开放权重也提供了后训练和调整行为的空间，审计困难不应抹去可自控部署的价值。&lt;/li&gt;
-&lt;li&gt;“使用 DeepSeek 实现开发”的第三方产品需要清楚界定，直接调用模型与仅含模型辅助编写的代码可能有不同含义。&lt;/li&gt;
-&lt;li&gt;政策适用对象是相关联邦民事机构及供应关系，不能把标题读成美国私人用户也被一概禁止。&lt;/li&gt;
-&lt;li&gt;命令附件的原始发布日期早于这轮新闻，讨论政策影响时需要区分原始签发与公开报道。&lt;/li&gt;
-&lt;li&gt;支持限制的一方认为，政府在敏感系统中优先采用本国可控技术，是可以理解的供应链选择。&lt;/li&gt;
-&lt;li&gt;批评者则担心禁令将公共采购预算集中到本土闭源供应商，并进一步削弱价格竞争。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-minimax-m31-flash更快的智能体模型权重仍待发布-minimax-m31-flash&#34;&gt;
-  5. MiniMax M3.1 Flash：更快的智能体模型，权重仍待发布 (MiniMax M3.1 Flash)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-minimax-m31-flash%e6%9b%b4%e5%bf%ab%e7%9a%84%e6%99%ba%e8%83%bd%e4%bd%93%e6%a8%a1%e5%9e%8b%e6%9d%83%e9%87%8d%e4%bb%8d%e5%be%85%e5%8f%91%e5%b8%83-minimax-m31-flash&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.minimax.io/blog/minimax-m31f&#34;&gt;https://www.minimax.io/blog/minimax-m31f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;MiniMax 正式推出 M3.1 Flash，并确认此前匿名运行、处理超过 200 万亿 token 的 Space Bunny 是其早期版本。公司把新模型定位于智能体工作流、编程、电脑操作和网络安全任务，称推理接近快三倍、智能体任务整体使用成本较前代降低 70%；这里的整体任务成本不应直接等同于所有 token 单价统一下降 70%。&lt;/p&gt;
-&lt;p&gt;官方列出 DeepSWE v1.1 为 73.7%、OSWorld V2 为 61.7 分、CyberGym 为 82% 等成绩，并称日常输出可达每秒 200 多 token，中位速度持续超过每秒 170 token。这些均为厂商发布数据，任务耗时仍受推理长度、工具调用和运行环境影响。&lt;/p&gt;
-&lt;p&gt;API 的每百万 token 平价计费为输入 0.15 美元、输出 0.60 美元、缓存输入 0.015 美元。模型已通过 MiniMax API、M Plan 和 MiniMax Code 提供，但文章明确说明权重以后才发布，不能把当前发布理解为权重已经开放。Space Bunny 的早期体验也不能未经说明直接代替最终版本评测。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-510-points--评论-218-comments--投稿者jtg--发布时间2026-10-20-003909-0800&#34;&gt;
-  HN 热度 510 points | 评论 218 comments | 投稿者：jtg | 发布时间：2026-10-20 00:39:09 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-510-points--%e8%af%84%e8%ae%ba-218-comments--%e6%8a%95%e7%a8%bf%e8%80%85jtg--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-003909-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50154540&#34;&gt;https://news.ycombinator.com/item?id=50154540&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;单位 token 更便宜不一定让工作更省时间，任务完成耗时与等待造成的注意力成本也应纳入比较。&lt;/li&gt;
-&lt;li&gt;一名数据分析评测者称准确率很好，但生成 token 多、整题耗时长，且明确提醒短程分析题不能代表软件工程任务。&lt;/li&gt;
-&lt;li&gt;部分使用者称 Space Bunny 早期体验低于基准所暗示的水平，因而希望看到独立实际任务验证。&lt;/li&gt;
-&lt;li&gt;Space Bunny 被标为早期检查点，不能只凭旧版体验断定正式模型完全相同。&lt;/li&gt;
-&lt;li&gt;整体任务成本下降与输入、输出、缓存各项单价变化是不同口径，需要按真实请求组成计算。&lt;/li&gt;
-&lt;li&gt;比较图混用竞争模型的不同版本会增加理解成本，评测对象和时间点应写清楚。&lt;/li&gt;
-&lt;li&gt;有使用者觉得早期版本擅长文档与组织信息，但编程对话不够简洁，体现了能力随任务而变。&lt;/li&gt;
-&lt;li&gt;自托管能让使用者更清楚固定运行的是哪个模型版本，远程服务的性能变化会降低可重复性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-一名-ruby-gems-维护者归档仓库不愿继续为-ai-抽取的公共资源贡献-i-no-longer-care-to-work-on-any-ruby-gems-so-ive-archived-all-my-repositories&#34;&gt;
-  6. 一名 Ruby gems 维护者归档仓库：不愿继续为 AI 抽取的公共资源贡献 (I no longer care to work on any Ruby gems so I&amp;rsquo;ve archived all my repositories)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e4%b8%80%e5%90%8d-ruby-gems-%e7%bb%b4%e6%8a%a4%e8%80%85%e5%bd%92%e6%a1%a3%e4%bb%93%e5%ba%93%e4%b8%8d%e6%84%bf%e7%bb%a7%e7%bb%ad%e4%b8%ba-ai-%e6%8a%bd%e5%8f%96%e7%9a%84%e5%85%ac%e5%85%b1%e8%b5%84%e6%ba%90%e8%b4%a1%e7%8c%ae-i-no-longer-care-to-work-on-any-ruby-gems-so-ive-archived-all-my-repositories&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository&#34;&gt;https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;po-ru.com 作者宣布归档自己 Ruby gems 的源码仓库，以明确不再维护。文章从 Matz 对 Ruby“让程序员快乐”“为人设计”的早年表述谈起，说明自己当初投入社区，是因为编程的创造性、人与人协作，以及为共同资源贡献的意义。&lt;/p&gt;
-&lt;p&gt;作者不满 Rails 领导者的价值观与技术路线，也批评 Ruby 本身越来越接受用 LLM 开发，并被重新描述为适合 AI 生成的语言。他尤其反感要求更多高质量人工 Ruby 代码来训练模型，同时又宣称人工编程不再可持续的叙述，认为贡献者的作品正在被大公司抽取，用于制造进一步污染公共资源的输出。&lt;/p&gt;
-&lt;p&gt;这是一篇维护者解释退出动机的个人声明，而非对所有 Ruby 项目状态的调查，也没有给出衡量整个生态代码质量变化的数据。归档传达的是作者停止投入，不意味着原有源码消失，或所有 Ruby 开发者都认同同一种方向。理解这次退出，需要同时看到技术工具变化与贡献者对尊重、归属和乐趣的期待。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-503-points--评论-496-comments--投稿者phoronixrly--发布时间2026-10-20-003710-0800&#34;&gt;
-  HN 热度 503 points | 评论 496 comments | 投稿者：phoronixrly | 发布时间：2026-10-20 00:37:10 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-503-points--%e8%af%84%e8%ae%ba-496-comments--%e6%8a%95%e7%a8%bf%e8%80%85phoronixrly--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-003710-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50154518&#34;&gt;https://news.ycombinator.com/item?id=50154518&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;维护者可以离开不再带来乐趣的项目，开放源码并不附带无限期继续劳动的义务。&lt;/li&gt;
-&lt;li&gt;当作品被利用却缺乏署名、尊重和回馈时，技术社区的互惠感与贡献动力会受损。&lt;/li&gt;
-&lt;li&gt;大型公司依赖无偿开源劳动并非 AI 时代才出现，新的冲突也暴露了长期存在的经济关系。&lt;/li&gt;
-&lt;li&gt;也有人认为他人使用生成工具并不妨碍自己继续享受设计系统、解决难题和写代码的乐趣。&lt;/li&gt;
-&lt;li&gt;将重复实现交给 AI、仍由人决定方案并认真审查，可以让一部分开发者更专注问题本身。&lt;/li&gt;
-&lt;li&gt;AI 让维护私有分支比等待上游更可行，但是否会让小型公共库变弱，还是减轻上游负担，仍有分歧。&lt;/li&gt;
-&lt;li&gt;人人维护自己的生成式分支可能积累复杂度，长期维护能力不能只从首次改动的便利推断。&lt;/li&gt;
-&lt;li&gt;如果有经验的贡献者持续退出，依赖生态的稳定性和演进可能受到影响，生成更多代码未必自动填补空缺。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-ipados-27-的-airplay-多窗口行为变化打断课堂演示-apple-broke-an-essential-presentation-feature-of-ipads&#34;&gt;
-  7. iPadOS 27 的 AirPlay 多窗口行为变化打断课堂演示 (Apple broke an essential presentation feature of iPads)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-ipados-27-%e7%9a%84-airplay-%e5%a4%9a%e7%aa%97%e5%8f%a3%e8%a1%8c%e4%b8%ba%e5%8f%98%e5%8c%96%e6%89%93%e6%96%ad%e8%af%be%e5%a0%82%e6%bc%94%e7%a4%ba-apple-broke-an-essential-presentation-feature-of-ipads&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/&#34;&gt;https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;教师 Teddy Svoronos 描述了 iPadOS 27 的一个演示流程回归。他用 iPad 在讲义上书写并通过 AirPlay 投影，同时在本机查看点名笔记、尚未公开的投票结果，或控制 Mac 上的幻灯片。原先观众只看演示内容，本机仍可操作其他应用，这正是其教学方法依赖的行为。&lt;/p&gt;
-&lt;p&gt;据作者测试，多窗口打开时，点击演示应用之外的窗口，会让外屏改为展示整个 iPad 屏幕，不论是否启用 Stage Manager。结果不仅打断画面，也可能把教师私人笔记或预定稍后揭示的结果暴露给观众。返回 GoodNotes 可恢复演示视图，Keynote 会退出演示，PowerPoint 则可能需要重新启动演示。&lt;/p&gt;
-&lt;p&gt;作者承认旧版的外屏控制权不够直观，但主张正在演示的应用应持续占用外屏，直到用户明确结束。他已提交 FB23615646，并称截至写作时包括最新测试版仍未改变。这是特定多任务投影工作流的用户报告，不能据此推断所有 iPad 演示均已不可用，或 Apple 已承诺某个修复时间。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-476-points--评论-245-comments--投稿者evanb--发布时间2026-10-20-201728-0800&#34;&gt;
-  HN 热度 476 points | 评论 245 comments | 投稿者：evanb | 发布时间：2026-10-20 20:17:28 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-476-points--%e8%af%84%e8%ae%ba-245-comments--%e6%8a%95%e7%a8%bf%e8%80%85evanb--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-201728-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50165208&#34;&gt;https://news.ycombinator.com/item?id=50165208&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;输入焦点与外屏展示对象应分开，切换本机应用不应自动意味着同意把它分享给观众。&lt;/li&gt;
-&lt;li&gt;另一名教师认为活动应用控制外屏更符合普通用户对镜像的预期，但也应保留让后台演示持续输出的选项。&lt;/li&gt;
-&lt;li&gt;明确选择分享整屏或指定应用，比系统自动猜测用户是看笔记还是准备现场演示更可靠。&lt;/li&gt;
-&lt;li&gt;iPad 的触控、缩放和手写曾很好地服务演示，工作流被更新打断不能反过来证明使用者一开始就选错了工具。&lt;/li&gt;
-&lt;li&gt;需要笔输入和平板形态的教师，并不总能直接换成桌面电脑，替代方案还受软件和手写体验限制。&lt;/li&gt;
-&lt;li&gt;硬件发布时间与软件功能膨胀会给测试造成压力，预算充足也不代表能无限买到交付时间。&lt;/li&gt;
-&lt;li&gt;为恢复过去直接投屏加录制的体验而引入 Mac、线缆和 QuickTime，说明兼容变化可能显著增加操作负担。&lt;/li&gt;
-&lt;li&gt;用户会依赖长期可观察的行为，改动外屏控制逻辑时需要考虑这些没有写成正式承诺的工作流。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-openbsd-80-发布虚拟机最多-64-vcpuamd64-内核地址空间扩至-512gb-openbsd-80&#34;&gt;
-  8. OpenBSD 8.0 发布：虚拟机最多 64 vCPU，amd64 内核地址空间扩至 512GB (OpenBSD 8.0)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-openbsd-80-%e5%8f%91%e5%b8%83%e8%99%9a%e6%8b%9f%e6%9c%ba%e6%9c%80%e5%a4%9a-64-vcpuamd64-%e5%86%85%e6%a0%b8%e5%9c%b0%e5%9d%80%e7%a9%ba%e9%97%b4%e6%89%a9%e8%87%b3-512gb-openbsd-80&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.openbsd.org/80.html&#34;&gt;https://www.openbsd.org/80.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;OpenBSD 8.0 是项目第 61 次发布，日期为 2026 年 10 月 20 日。官方发布说明列出大量平台、内核、网络和用户态变化：amd64 内核虚拟地址空间从 4GB 扩到 512GB，使映射超过 4GB 显存成为可能；这里讨论的是虚拟地址范围，不能误写为所有设备可用内存自动增长。&lt;/p&gt;
-&lt;p&gt;VMM/VMD 为每台客体增加最多 64 个 vCPU 的多处理器支持，并改进中断、virtio 与虚拟磁盘处理。arm64 新增休眠支持，riscv64 增加向量扩展及高级中断架构支持，图形栈更新并增加 Intel Arc A 系列显卡支持。网络服务还包含 httpd 自定义响应头、relayd 的 Lua 模式过滤及多项协议解析加固。&lt;/p&gt;
-&lt;p&gt;版本同时加强固件与补丁验证、档案解包路径检查及进程权限隔离，并列出多类边界检查修复。兼容性也有取舍：loongson 平台因无法配合 Clang 22 而停止支持。已有 7.9 用户另有升级指南；这些功能清单不是对全部硬件都已可用、或性能统一提升多少的承诺。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-465-points--评论-154-comments--投稿者privong--发布时间2026-10-20-100640-0800&#34;&gt;
-  HN 热度 465 points | 评论 154 comments | 投稿者：privong | 发布时间：2026-10-20 10:06:40 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-465-points--%e8%af%84%e8%ae%ba-154-comments--%e6%8a%95%e7%a8%bf%e8%80%85privong--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-100640-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50160494&#34;&gt;https://news.ycombinator.com/item?id=50160494&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;VMM/VMD 的客体多处理器支持是值得关注的能力扩展，尤其对已有虚拟化工作流有实际意义。&lt;/li&gt;
-&lt;li&gt;8.0 的主版本号没有特殊的兼容性或功能跃迁含义，它也只是接在 7.9 之后的正常发布。&lt;/li&gt;
-&lt;li&gt;多名使用者报告连续升级或跳板机升级很顺利，但这些个人经验不能代替具体机器的兼容验证。&lt;/li&gt;
-&lt;li&gt;长期桌面使用者重视系统体积小、更新间行为一致，变化不显眼本身也可以是一种优点。&lt;/li&gt;
-&lt;li&gt;作为跳板机时，清晰的 pf、手册和服务管理方式很有吸引力，但并非所有用途都适合迁移。&lt;/li&gt;
-&lt;li&gt;网络多处理器改进仍值得用跨版本基准衡量，功能列表不能单独回答实际性能差距。&lt;/li&gt;
-&lt;li&gt;OpenSSH 中提到的 libsodium 替换有明确适用条件，应区分禁用 libcrypto 时的后备 ed25519 实现与整个加密栈。&lt;/li&gt;
-&lt;li&gt;按子系统整理并说明具体影响的发布记录，能比笼统强调规模更好地帮助用户评估升级。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-ashley-gullen-称-facebook-主页外链发帖受到付费限制-facebook-pages-require-paid-subscription-to-post-more-than-two-links-per-month&#34;&gt;
-  9. Ashley Gullen 称 Facebook 主页外链发帖受到付费限制 (Facebook Pages require paid subscription to post more than two links per month)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-ashley-gullen-%e7%a7%b0-facebook-%e4%b8%bb%e9%a1%b5%e5%a4%96%e9%93%be%e5%8f%91%e5%b8%96%e5%8f%97%e5%88%b0%e4%bb%98%e8%b4%b9%e9%99%90%e5%88%b6-facebook-pages-require-paid-subscription-to-post-more-than-two-links-per-month&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://mastodon.gamedev.place/@AshleyGullen/117473851565913919&#34;&gt;https://mastodon.gamedev.place/@AshleyGullen/117473851565913919&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;游戏开发者 Ashley Gullen 在 Mastodon 发帖称，Facebook 要求其主页每月发布超过两条链接时订阅至少每月 50 美元的服务，限制还涉及评论中的链接；他并称英国当时尚无法购买该订阅，并链接到 Facebook 的相关帮助页面表达不满。&lt;/p&gt;
-&lt;p&gt;本次通过 Mastodon 公开接口读到了完整帖文，但 Facebook 帮助页未能提供完整正文，因此价格、账户条件、地区、测试范围及哪些链接被计入，均不能在本条中当作独立核实的普遍政策。原帖谈的是 Facebook Page，不足以推出个人资料页、群组及全部用户都受同样规则约束。&lt;/p&gt;
-&lt;p&gt;这条材料反映的是一个主页经营者遭遇的限制及其批评，不是 Meta 发布的完整政策公告。下面讨论关于导流、反垃圾信息和平台依赖的不同解释，也需要与原帖陈述分别看待，不能用评论中的推测补齐缺失细则。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-406-points--评论-370-comments--投稿者ashleysbrain--发布时间2026-10-20-230608-0800&#34;&gt;
-  HN 热度 406 points | 评论 370 comments | 投稿者：AshleysBrain | 发布时间：2026-10-20 23:06:08 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-406-points--%e8%af%84%e8%ae%ba-370-comments--%e6%8a%95%e7%a8%bf%e8%80%85ashleysbrain--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-230608-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50167536&#34;&gt;https://news.ycombinator.com/item?id=50167536&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;主页、个人资料页与群组不是同一种发布场景，标题不应让人误解为所有 Facebook 用户都不能免费发链接。&lt;/li&gt;
-&lt;li&gt;有观点把外链收费视为反垃圾信息工具，希望增加机器人和诈骗页面批量导流的成本。&lt;/li&gt;
-&lt;li&gt;本地社群回答资源和规章问题经常需要引用外链，过低阈值也可能损害正常交流。&lt;/li&gt;
-&lt;li&gt;独立媒体和小商家担心平台既掌握受众又限制导流，最终难把自己的内容转化为网站访问和收入。&lt;/li&gt;
-&lt;li&gt;企业和组织应认真考虑自有网站，不宜把对外公开信息完全交给随时能改变规则的平台主页。&lt;/li&gt;
-&lt;li&gt;平台可能同时利用限制把内容留在站内，并让必须导流的经营者付费，两种商业动机并不冲突。&lt;/li&gt;
-&lt;li&gt;一名小企业经营者称早已遇到链接限制及支持困难，但顾客都在 Meta 服务中，使迁移很难。&lt;/li&gt;
-&lt;li&gt;具体规则可能仍与测试或账户差异有关，在适用范围未明前不能把一条经历概括成全球统一政策。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-用-projectivysmarttube-与-jellyfin-客户端整理无广告-android-tv-an-ad-free-android-tv&#34;&gt;
-  10. 用 Projectivy、SmartTube 与 Jellyfin 客户端整理无广告 Android TV (An ad-free Android TV)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e7%94%a8-projectivysmarttube-%e4%b8%8e-jellyfin-%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b4%e7%90%86%e6%97%a0%e5%b9%bf%e5%91%8a-android-tv-an-ad-free-android-tv&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://cretezy.com/2026/ad-free-android-tv&#34;&gt;https://cretezy.com/2026/ad-free-android-tv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cretezy 介绍自己在 Android TV 上减少广告并整理观看体验的方案。Google TV 即使切到“仅应用”模式仍保留推广横幅，因此他用 Projectivy Launcher 替换桌面、SmartTube 替换 YouTube，并选择 Wholphin 作为 Jellyfin 客户端，用 Button Mapper 把遥控器的 YouTube 键指向新的应用。作者表示，自己仍支付 YouTube Premium 以支持创作者。&lt;/p&gt;
-&lt;p&gt;教程通过 ADB 连接设备、调整默认桌面和应用权限，并列出 FLauncher、ATV Launcher Pro、Moonfin 等替代品。作者已在两台 Chromecast with Google TV 和一台海信电视上使用；“应该适用于大多数设备”仍是其预期，不是全机型测试结果。后续更新补充 Pi-hole 与 Private DNS 的过滤方式，但保留原桌面去横幅的方法使用了“据称有效”的限定。&lt;/p&gt;
-&lt;p&gt;文中提醒，部分设备停用相关组件可能丢失 Wi-Fi 设置，电视的 HDMI 输入切换也可能受影响；修改无障碍服务列表时要保留已有项目，完成后应关闭调试入口。这些兼容性条件意味着，教程仍需按具体设备理解。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-383-points--评论-164-comments--投稿者craftthatblock--发布时间2026-10-20-063237-0800&#34;&gt;
-  HN 热度 383 points | 评论 164 comments | 投稿者：CraftThatBlock | 发布时间：2026-10-20 06:32:37 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-383-points--%e8%af%84%e8%ae%ba-164-comments--%e6%8a%95%e7%a8%bf%e8%80%85craftthatblock--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-20-063237-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50158942&#34;&gt;https://news.ycombinator.com/item?id=50158942&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;电视售出后再通过更新扩大广告，会让用户觉得原本购买的使用体验被单方面改变。&lt;/li&gt;
-&lt;li&gt;替换 Jellyfin 客户端也能改善操作体验，Wholphin 和 Moonfin 的取舍值得按家庭习惯实际试用。&lt;/li&gt;
-&lt;li&gt;一名做过类似调整的使用者称停用组件影响了 Chromecast 投送功能，减少预装软件并非完全没有兼容代价。&lt;/li&gt;
-&lt;li&gt;部分设备可通过 DNS 过滤减少原桌面横幅，但评论中的成功经验有具体系统版本条件。&lt;/li&gt;
-&lt;li&gt;把安装和系统修改整段交给 AI 执行会增加不确定性，步骤可审查比自动化本身更重要。&lt;/li&gt;
-&lt;li&gt;让电视只作离线显示器、外接自己选择的播放设备，也是一条减少系统广告和追踪的路线。&lt;/li&gt;
-&lt;li&gt;广告和数据收入可能补贴硬件价格，纯显示设备的商业模式未必能复制同样的低价。&lt;/li&gt;
-&lt;li&gt;有人可以接受相关影视推荐，却反感普通商品广告，用户真正想去掉的内容也不完全相同。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

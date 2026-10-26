@@ -24,14 +24,112 @@
     <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
-    <lastBuildDate>Wed, 21 Oct 2026 02:00:00 +0000</lastBuildDate>
-    <pubDate>Wed, 21 Oct 2026 02:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 26 Oct 2026 02:00:00 +0000</lastBuildDate>
+    <pubDate>Mon, 26 Oct 2026 02:00:00 +0000</pubDate>
     <generator>Eleventy</generator>
     <webMaster>mail@brennanbrown.ca (Brennan Kenneth Brown)</webMaster>
     <source:self>https://brennan.day/feed.xml</source:self>
-    <source:localTime>October 24, 2026 at 11:59 PM</source:localTime>
+    <source:localTime>October 25, 2026 at 6:07 PM</source:localTime>
     <source:account service="mastodon">@brennan@social.lol</source:account>
     <source:account service="bluesky">brennan.day</source:account>
+    
+      
+      
+      
+      <item>
+        <title>Where the Sidewalk Ends</title>
+        <link>https://brennan.day/where-the-sidewalk-ends/</link>
+        <guid isPermaLink="true">https://brennan.day/where-the-sidewalk-ends/</guid>
+        <author>mail@brennanbrown.ca (Brennan Kenneth Brown)</author>
+        <dc:creator>Brennan Kenneth Brown</dc:creator>
+        <dc:date>2026-10-25T20:00:00.000-06:00</dc:date>
+        <dc:language>en</dc:language>
+        <dc:identifier>https://brennan.day/where-the-sidewalk-ends/</dc:identifier>
+        <dc:source>https://brennan.day</dc:source>
+        <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+        
+        <pubDate>Mon, 26 Oct 2026 02:00:00 +0000</pubDate>
+        <description>A childhood meditation of closing my eyes to imagine myself grown, and opening them twenty years later to find it true. On myelin, telomeres, and the cellular wear the body registers as mid-life. On PHP2Shell as a canary in the coalmine—disclosed CVEs jumping x3.5 after Claude Mythos—why JAMstack sites are safe from it, and why I don&#39;t want a read-only Internet anyway. On shaving my head as the first snow settled, the longest stretch of not-writing since this blog began, updating folk.zone, and an archive converter for Pillowfort&#39;s closing. On Big Magic gone quiet, forgiveness as giving up hope the past could be different, and learning where to walk when the sidewalk ends.</description>
+        <source:markdown>
+          <![CDATA[A childhood meditation of closing my eyes to imagine myself grown, and opening them twenty years later to find it true. On myelin, telomeres, and the cellular wear the body registers as mid-life. On PHP2Shell as a canary in the coalmine—disclosed CVEs jumping x3.5 after Claude Mythos—why JAMstack sites are safe from it, and why I don&#39;t want a read-only Internet anyway. On shaving my head as the first snow settled, the longest stretch of not-writing since this blog began, updating folk.zone, and an archive converter for Pillowfort&#39;s closing. On Big Magic gone quiet, forgiveness as giving up hope the past could be different, and learning where to walk when the sidewalk ends.]]>
+        </source:markdown>
+        
+          <category>personal essay</category>
+        
+          <category>Social Commentary</category>
+        
+          <category>Digital Culture</category>
+        
+          <category>Small Web</category>
+        
+          <category>IndieWeb</category>
+        
+          <category>AI</category>
+        
+          <category>generative AI</category>
+        
+          <category>security</category>
+        
+          <category>web development</category>
+        
+          <category>blogging</category>
+        
+          <category>writing</category>
+        
+          <category>memory</category>
+        
+          <category>creativity</category>
+        
+          <category>forgiveness</category>
+        
+          <category>optimism</category>
+        
+        <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+          <![CDATA[<p>During my walks home after elementary school, when I wasn't avoiding the cracks of the grey sidewalk, I would do what you could call a meditation where I would close my eyes and imagine re-opening them to find myself a grown adult. And there are times now when I practice the second half of that meditation, opening my eyes to see I am in fact in the new present, twenty years later. Time is a ruthless arrow.</p>
+<h2 id="i" tabindex="-1">I. <a class="header-anchor" href="#i" aria-hidden="true"></a></h2>
+<p>Throughout my 20s, my brain (and yours, too) wrapped long-range neural tracks in a fatty substance called myelin (called myelinogenesis), which finishes its optimization loop right around the age I am now. My hippocampus and cortex store a chronological narrative of my life, and at the cellular level, my neurons, telomeres, and metabolic functions accumulate steady wear-and-tear which my internal physiological sensors register as mid-life.</p>
+<p>My brain cannot keep track of time like a clock or calendar, though. Yesterday and two decades ago sometimes bleed into each other like watercolours.</p>
+<p>A few days ago, <a href="https://www.php2shell.com/">PHP2Shell was found</a>, allowing unauthenticated attackers to send HTTP requests to vulnerable servers, execute arbitrary commands, and take full control of the host. I'm sure you've heard.</p>
+<p>A few days ago, I shaved my head at my bathroom sink, and <a href="https://cdn.some.pics/brennan/6ade82efc121f.jpg">the first snowfall of the year</a> settled in outside my bedroom window. I am in a new season of life. This season feels different than the last—I have spent the last few days not writing. It has been the longest stretch of not-writing since I started this blog around a year ago.</p>
+<p>Instead, I <a href="https://folk.zone/blog/nine-new-services-october-2026/">updated folk.zone</a> and created <a href="https://pillow.folk.zone">an archive converter</a> for people on Pillowfort looking to start <a href="https://brennan.day/static-site-generators-for-beginners/">their own static blog</a> with their posts since the platform is <a href="https://www.pillowfort.social/posts/8413273">shutting down</a>.</p>
+<p>There are people who think that PHP2Shell is <a href="https://thenewstack.io/php2shell-ai-patch-race/">a canary in the coalmine</a>, and that this is only the beginning of a torrent of critical vulnerabilities thanks to the advancements of genAI. I think there is some truth to this—disclosed CVEs <a href="https://epoch.ai/data-insights/cve-severity-spike">jumped x3.5 after the release of Claude Mythos</a>.</p>
+<p>And I think, as a JAMstack developer, about how what I put online is safe because it is static. There is no backend or database to exploit. Just HTML and CSS (and, on occasion, user-end JavaScript). You would have a far lower risk profile if you switched from WordPress to Eleventy or Hugo, for example.</p>
+<p>But as a creator of static sites for a decade, I don't want this. I don't want the Internet to become read-only. I don't want the sidewalk to end and to open my eyes only to find myself somewhere new that I can't recognize.</p>
+<h2 id="ii" tabindex="-1">II. <a class="header-anchor" href="#ii" aria-hidden="true"></a></h2>
+<p>Over the past year, I've written a lot. I have tried my best to contribute to the commons and tried asking for nothing in return. I can't tell you why I've written so much, or how I was able to. When I read Elizabeth Gilbert's <a href="https://brennan.day/review-light-joy-writing-on-elizabeth-gilberts-big-magic/"><em>Big Magic</em></a>, I thought the wording was a little silly, but I resonate with the idea. I think whatever Big Magic was compelling me is gone. And in its place is quiet. I'm not sure if you live somewhere it snows a lot, but it is incredible how much sound fresh snow absorbs. Taking a walk at night, when everyone's gone to sleep, the silence is overwhelming.</p>
+<p>In the past, when I found myself in a new season, I would throw away everything that came before. A burnt offering for the mystical. A younger version of me would have impulsively deleted this entire blog and started something entirely new in a few months' time. But I am a different beast, now. There are multiple archives of everything, thanks to the better angels of my nature.</p>
+<p>One of the main missions I've had for this experiment of independent publication was to focus on and emphasize the importance of optimistic curiosity and love of people. In some ways, I think I've failed that—I know that instead I've come off as judgmental and moralistic. I don't know how to hold and vocally advocate for my values and beliefs without coming across that way.</p>
+<p>I know I am a deeply flawed person, but a tenet I follow is radical forgiveness—and we must be able to forgive ourselves just as much as those who have profoundly wronged us. While our memory of the past is fluid and blurry, the actuality of events is static and fixed. And I'm sure you've heard that forgiveness is giving up the hope that the past could have been any different.</p>
+<h2 id="iii" tabindex="-1">III. <a class="header-anchor" href="#iii" aria-hidden="true"></a></h2>
+<p>Have you ever felt the dense, cottony hush of a kitchen after a rager, the guests gone home? Alone and cleaning up the half-full glasses still sweating on the counter. That rich kind of silence, there. The fanless machines running in far-off windowless rooms in copper sleep.</p>
+<p>It's in the act of cleaning where I recognize that inspiration is far more like groundwater than a wildfire. It is slow and mineral, moving underneath frozen ground whether or not you can hear it. It is not bright and ravenous and over by morning.</p>
+<p>My head is now a pale moon I keep touching in the dark, surprised each time by the close-cropped velvet. The razor has left my scalp so tender and strange. Hair grows around a centimetre per month, and my head has in turn become a calendar read by fingertip. Somewhere beneath the dense bone of my skull, the last of the myelin is being wound like waxed thread around the long roads of neurons in my brain. Sealing and quickening, lowering into the rut, getting harder to reroute. I know the child who was heading home from school on that grey sidewalk had a head full of wet clay. And now it is hardening into plaster. I am trying not to grieve.</p>
+<p>Snow is flat and indifferent. Every morning from my window I see the left-behind stitched seams of a magpie's anisodactyl feet, and the blunt commas of a jackrabbit's paws. And the long, wavering sentence of boot prints walking home late. The afternoon sun melts all of it down to slush, then grass, and by nightfall it is a fresh white page once again.</p>
+<p>That is the Internet I want. Always being added to, reborn, to remember us briefly and imperfectly. A place to let the next person see where the last person stepped and decide whether to follow.</p>
+<p>I surrender to this new season. I hope I can try my best to practice magicless mercy and grace, to figure out where to walk when the sidewalk ends and the blankets of snow start. I think of it less as trail-blazing and more just <a href="https://brennan.day/30-finding-my-footing/">finding my footing</a>.</p>
+<blockquote>
+<p>Let us leave this place where the smoke blows black<br>
+and the dark street winds and bends.<br>
+Past the pits where the asphalt flowers grow<br>
+we shall walk with a walk that is measured and slow<br>
+and watch where the chalk-white arrows go<br>
+to the place where the sidewalk ends.</p>
+<p>—Shel Silverstein</p>
+</blockquote>
+
+      <hr />
+      <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">
+        <p><strong>About Brennan Kenneth Brown</strong></p>
+        <p>Queer Métis writer, cultural critic, and web developer based in Mohkínstsis (Calgary), Treaty 7 territory. Author of nine books and counting, the founder of Fireweed Writing School and Berry House Studio, and of Write Club at Mount Royal University. His work has been cited in Le Monde and other publications.</p>
+        <p><strong>Enjoy this content?</strong> Support my work and help me create more:</p>
+        <p>
+          <a href="https://patreon.com/brennankbrown" style="color: #ff424d; text-decoration: underline; font-weight: bold;" rel="me">Patreon</a> |
+          <a href="https://ko-fi.com/brennan" style="color: #29abe0; text-decoration: underline; font-weight: bold;" rel="me">Ko-fi</a> |
+          <a href="https://github.com/sponsors/brennanbrown" style="color: #333; text-decoration: underline; font-weight: bold;" rel="me">GitHub Sponsors</a>
+        </p>
+      </blockquote>]]>
+        </content:encoded>
+      </item>
     
       
       
@@ -6843,94 +6941,6 @@ localforage<span class="token punctuation">.</span><span class="token function">
 <h2 id="the-escape" tabindex="-1">The Escape <a class="header-anchor" href="#the-escape" aria-hidden="true"></a></h2>
 <p>Escapism into fictional stories is certainly not unique to maladaptive daydreamers. It is near a default mode of existence for people. We love media, we love good stories on film, or television, or in books about others who have never existed, but are written well by others. And people are so moved by their experiences about the stories of others that they create their own fanwork, and fandom. It is an incredible, gratifying experience, and that's exactly why I began the transformative works archive <a href="https://fanfiction.lol">fanfiction.lol</a>. Fandom spaces get studied as <a href="https://www.uniwriter.ai/psychology/fandom-spaces-as-a-coping-mechanism-for-stress-and-loneliness/">coping mechanisms for stress and loneliness</a>, operating through narrative transportation—where attention and emotion are so fully absorbed by a story that the reader feels carried inside it. Fanfiction is as a place where people <a href="https://psychlense.com/psychology-and-life/a-dive-in-y-ns-world-psychology-community-and-narrative-control-of-fanfiction/server_zr1rxq7u/03/2026/">work through identity and feeling inside a world they already trust</a>.</p>
 <p>But my daydreams are different—there is no separation, no understanding that the story eventually ends. I am, in a way, stuck in the thoughts in perpetuity. And the most interesting thing I've realized over the years is that this hasn't just been a shield and coping mechanism, but that I've come to enjoy it. When I'm able to totally forget my body and physical surroundings and the imaginative world I've conjured is so strong that everything else is forgotten, it's as enjoyable as any restful sleep can be.</p>
-
-      <hr />
-      <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">
-        <p><strong>About Brennan Kenneth Brown</strong></p>
-        <p>Queer Métis writer, cultural critic, and web developer based in Mohkínstsis (Calgary), Treaty 7 territory. Author of nine books and counting, the founder of Fireweed Writing School and Berry House Studio, and of Write Club at Mount Royal University. His work has been cited in Le Monde and other publications.</p>
-        <p><strong>Enjoy this content?</strong> Support my work and help me create more:</p>
-        <p>
-          <a href="https://patreon.com/brennankbrown" style="color: #ff424d; text-decoration: underline; font-weight: bold;" rel="me">Patreon</a> |
-          <a href="https://ko-fi.com/brennan" style="color: #29abe0; text-decoration: underline; font-weight: bold;" rel="me">Ko-fi</a> |
-          <a href="https://github.com/sponsors/brennanbrown" style="color: #333; text-decoration: underline; font-weight: bold;" rel="me">GitHub Sponsors</a>
-        </p>
-      </blockquote>]]>
-        </content:encoded>
-      </item>
-    
-      
-      
-      
-      <item>
-        <title>A Story of the Origins of Religion</title>
-        <link>https://brennan.day/a-story-of-the-origins-of-religion/</link>
-        <guid isPermaLink="true">https://brennan.day/a-story-of-the-origins-of-religion/</guid>
-        <author>mail@brennanbrown.ca (Brennan Kenneth Brown)</author>
-        <dc:creator>Brennan Kenneth Brown</dc:creator>
-        <dc:date>2026-08-13T20:00:00.000-06:00</dc:date>
-        <dc:language>en</dc:language>
-        <dc:identifier>https://brennan.day/a-story-of-the-origins-of-religion/</dc:identifier>
-        <dc:source>https://brennan.day</dc:source>
-        <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
-        
-        <pubDate>Fri, 14 Aug 2026 02:00:00 +0000</pubDate>
-        <description>On Friedrich Max Müller&#39;s theory of naturism and how early religion began with humanity&#39;s direct sensory perception of natural forces. From the terrifying awe of lightning and thunder to Ancient Egypt&#39;s animal deities that protected against mortal dangers like crocodiles, scorpions, and hippos. A look at the evolutionary arc from zoolatry to anthropomorphic gods, and the problematic colonial baggage in early religious scholarship.</description>
-        <source:markdown>
-          <![CDATA[On Friedrich Max Müller&#39;s theory of naturism and how early religion began with humanity&#39;s direct sensory perception of natural forces. From the terrifying awe of lightning and thunder to Ancient Egypt&#39;s animal deities that protected against mortal dangers like crocodiles, scorpions, and hippos. A look at the evolutionary arc from zoolatry to anthropomorphic gods, and the problematic colonial baggage in early religious scholarship.]]>
-        </source:markdown>
-        
-          <category>personal essay</category>
-        
-          <category>Religious Studies</category>
-        
-          <category>history</category>
-        
-          <category>anthropology</category>
-        
-          <category>Ancient Egypt</category>
-        
-          <category>mythology</category>
-        
-          <category>philosophy</category>
-        
-        <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
-          <![CDATA[<p>It's been awhile since my last essay on religion, and while I've shared <a href="https://brennan.day/how-and-why-i-believe-in-god-the-ballad-of-tragic-theism/">my personal testimony</a> and <a href="https://brennan.day/more-than-one-way-on-ritual-morality-and-the-darkness-beyond-knowing/">death rituals from around the world</a>, I haven't written about the fascinating origins of religion.</p>
-<p>I know what you're thinking, how it's rather sacrilege to try to pinpoint and explain the beginning of spirituality—I know that it is far easier to explain things in retrospect—but it's an interesting rabbit hole nonetheless.</p>
-<p>We begin with Friedrich Max Müller, a European comparative philologist born in 1823 who is now most well-known for pioneering and founding the academic science of religion, what we now call Religious Studies.</p>
-<p>Müller's theory of naturism, or physical religion, posited that <a href="https://jewishphilosophyplace.com/2017/10/26/religion-things-idea-sensation-reading-max-muller/">early religion began with humanity's direct sensory perception of the physical environment and natural forces</a>. He argued that awe-inspiring phenomena—the sun, the sky, the weather and storms, dawn and dusk—inspired awe, terror, and an intuition of the Infinite. Early humans personified the forces as divine agents, shaping language and myth.</p>
-<p>Lightning and thunder, for instance, are rather terrifying. And yet they also cause deep marvel, surprise, and reverence. And so, we personified the phenomenon, creating a deity who controls when it thunders as an attempt to better understand these chaotic, random forces. Surely if it happens often, then the God is angry.</p>
-<blockquote>
-<p>&quot;Regarding mythology, others see it in a picture of great forms and forces of nature, particularly the sun, the moon, and stars, the changes of day and night, the succession of the seasons… all these reflections by vivid imaginations.&quot;</p>
-</blockquote>
-<p>Sacred rituals and sacrifice grew out of a desire to control the unpredictable and survive, such as <a href="https://www.agricultureforlife.ca/post/food-offerings-in-ancient-times-honouring-gods-and-ancestors">giving offerings or performances for better crop harvests</a>.</p>
-<p>There's &quot;Pluto's Gate&quot;, a mythical gate to hell, which was found to be a real place in Turkey. <a href="https://link.springer.com/article/10.1007/s12520-018-0599-5">CO2 concentrations in the grotto below the temple still reach up to 91 percent</a>, lethal vapours causing the suffocation of animals, and by some accounts, <a href="https://www.atlasobscura.com/articles/where-are-the-greek-oracles">causing visions and prophecies in pilgrims who slept nearby, in what one archaeologist called an oracle-of-Delphi effect</a>.</p>
-<p>I would be remiss without adding that Müller carries problematic baggage, with his translations and academic frameworks serving a Western colonial and missionary agenda, often aimed at diminishing indigenous spiritual confidence, particularly <a href="https://voiceofindia.me/2024/10/01/max-mueller-distorted-the-vedas-to-pave-way-for-indias-christian-conversion-priya-arora/">with his work in India</a>.</p>
-<h2 id="in-ancient-egypt" tabindex="-1">In Ancient Egypt <a class="header-anchor" href="#in-ancient-egypt" aria-hidden="true"></a></h2>
-<p>Whatever Müller got wrong—and surely he got plenty wrong—I appreciate his instinct to look for religion in the natural world. Ancient Egypt is a particular interest of mine, with the amount of environmental danger people endured and survived. For in the Nile Valley, there's the Nile Crocodile, the Nile hippopotamus, scorpions, and the Egyptian cobra. These were some of the deadliest animals in the world.</p>
-<p>And you can see how the religion of Ancient Egypt attempted to reckon with these mortal terrors. The cobra, the  <a href="https://www.britannica.com/topic/Wadjet">Wadjet</a>, symbolised protection of royalty. Pharaohs wore her rearing form on their crowns as the uraeus, and it was said to spit fire at any enemy who came near.</p>
-<p>Hippos were associated with both death and fertility, the goddess <a href="https://en.wikipedia.org/wiki/Taweret">Taweret</a> was part hippo, part crocodile, part lioness, who guarded women through childbirth.</p>
-<p>Crocodiles, born on land and living in water, protected the dead, ferrying them to the afterlife, skilled in navigating both planes. This was <a href="https://ancientegyptonline.co.uk/sobek/">Sobek</a>, and Egyptians mummified crocodile eggs and fetuses to bury alongside their dead to enlist his help crossing.</p>
-<p>Scorpions would be prayed to for healing from illnesses. <a href="https://www.worldhistory.org/Serket/">Serket</a> was the goddess of both venom and its cure, whose name means &quot;she who causes the throat to breathe,&quot; referring to the paralysis a sting brought on.</p>
-<p>Livestock was associated with the fertility of the land, embodied in the cow goddess <a href="https://www.britannica.com/topic/Hathor-Egyptian-goddess">Hathor</a>, prayed to for good farming seasons. Hathor was also love, joy, music, motherhood, and the sky, with more temples built to her than to any other Egyptian goddess.</p>
-<p>And the Scarab Beetle was connected to the Sun, with <a href="https://en.wikipedia.org/wiki/Khepri">Khepri</a>, the aspect of Ra who rolled the morning sun into being the way a dung beetle rolls its ball across the sand. Egyptians watched young beetles emerge from those dung balls as if from nothing. A God born from what looked like dead matter, over and over.</p>
-<p>The black lands of Egypt were fertile, and tombs were built on this precious land alongside crops, with the <a href="https://www.wisdomlib.org/concept/sekhet-hetep">Sekhet-Hetep, the Field of Peace</a> being one of the Egyptian heavens. The farmers imagined the afterlife similar to their own lives, meaning they would, tragically, continue their labour forever. Egyptians buried <a href="https://en.wikipedia.org/wiki/Ancient_Egyptian_afterlife_beliefs">shabti figures</a> with their dead, small magical servants meant to answer the call to work in their place.</p>
-<p>Meanwhile, the Netherworld is the red lands—a place where you can get easily lost, suffering from drought, thirst, and the scorching heat of the Sun.</p>
-<h2 id="the-evolution" tabindex="-1">The Evolution <a class="header-anchor" href="#the-evolution" aria-hidden="true"></a></h2>
-<p>There was a process to this—a gradual evolution of understanding the animal's role, sacredness, and identity.</p>
-<p>For example, jackals<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> in Ancient Egypt were grave robbers and scavengers, and the earliest Egyptian civilization struggled to block them from entering tombs—this was an existential threat, as preserved bodies were vehicles to the afterlife.</p>
-<p>So, to start, there was Zoolatry, Anubis in full animal form originally, and there were attempts to placate the power of the animal, bribing the power of the Jackal by satisfying the God, making the animal less threatening.</p>
-<p>Over time, technology advanced and made protecting tombs easier, and the anthropomorphic, humanlike Anubis that we know now developed as the Egyptians conquered and controlled the jackals (and, in turn, their fears), understanding the God as now being cooperative. Anubis predates Osiris as lord of the dead, and got demoted to embalmer and gatekeeper once Osiris rose in prominence.</p>
-<p>Some would argue the evolution didn't stop there—as nowadays Anubis is known to some as being <a href="https://anubis.techaro.lol/">an adorable anime girl</a> now protecting their website from DDoS attacks. The wheel of time continues to turn.</p>
-<hr>
-<p>I'm aware that, in writing something like this, I'm playing the role of <a href="https://brennan.day/more-than-one-way-on-ritual-morality-and-the-darkness-beyond-knowing/#part-four-the-anthropologists-predicament">the anthropologist</a> which I've criticized in the past. Which is to say, I'm compartmentalizing and acting as though the beliefs and thoughts of others can be easily understood, simply because they're geographically and temporally distant.</p>
-<p>The wheel of time doesn't change the gods—it changes the people telling their stories. My evolutionary arc is another layer of interpretation, surely.</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>2011 genetic analysis <a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0016385">reclassified the &quot;Egyptian jackal&quot; as the African golden wolf</a>, a distinct wolf species, not a jackal subspecies. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
 
       <hr />
       <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">

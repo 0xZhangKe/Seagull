@@ -1,318 +1,1999 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>保持思考、等待、斋戒</title>
-  
-  
-  <link href="https://polebug.github.io/atom.xml" rel="self"/>
-  
-  <link href="https://polebug.github.io/"/>
-  <updated>2026-07-19T09:05:52.560Z</updated>
-  <id>https://polebug.github.io/</id>
-  
-  <author>
-    <name>Polebug</name>
-    
-  </author>
-  
-  <generator uri="https://hexo.io/">Hexo</generator>
-  
+  <link href="https://blog.polebug.com/atom.xml" rel="self"/>
+  <link href="https://blog.polebug.com/"/>
+  <updated>2026-09-13T06:53:00.000Z</updated>
+  <id>https://blog.polebug.com/</id>
+  <author><name>Polebug</name></author>
+  <entry>
+    <title>近日生活杂谈（上篇）｜202604-08 月度记录</title>
+    <link href="https://blog.polebug.com/2026/09/13/plog_202604-08/"/>
+    <id>https://blog.polebug.com/2026/09/13/plog_202604-08/</id>
+    <published>2026-09-13T06:53:00.000Z</published>
+    <updated>2026-09-13T06:53:00.000Z</updated>
+    <summary type="html">说来惭愧，向来自诩“喜欢记录和思考”的我，最近几个月除了写日记和手帐，倒也没做什么记录。 7月中旬的那几周，我在忙着搬家。 在番禺广场生活的三年时光，最后都被我打包成一个个箱子。一些零碎的杂物，还有习以为常的日常，也在重新整理和告别。 而当…</summary>
+    <content type="html">&lt;p&gt;说来惭愧，向来自诩“喜欢记录和思考”的我，最近几个月除了写日记和手帐，倒也没做什么记录。&lt;/p&gt;
+&lt;p&gt;7月中旬的那几周，我在忙着搬家。&lt;/p&gt;
+&lt;p&gt;在番禺广场生活的三年时光，最后都被我打包成一个个箱子。一些零碎的杂物，还有习以为常的日常，也在重新整理和告别。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/01-eabbc42d.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;而当最后一个箱子在新的空间里再次被拆开，杂物重新找到摆放的位置，新的生活似乎也就这样开始了。&lt;/p&gt;
+&lt;p&gt;在搬家之后呢，我又陷入一段非常忙碌的加班时期。&lt;/p&gt;
+&lt;p&gt;这篇月度复盘的文章，我其实从七月底就开始写了，没想到一直写到了九月 qaq！这段时间，每天都有各种事情挤压着我的思考时间。这篇复盘的文章也就随着这样的节奏，越写越长、越写越久…&lt;/p&gt;
+&lt;p&gt;因为内容实在太长了，在发布之前决定拆分成上、下两篇文章。&lt;/p&gt;
+&lt;p&gt;上篇是 4-6 月的记录，每个月会有一些主线，总体是按照时间线来写，偏向于流水账，希望你们不会觉得无聊 hhhhh&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;四月深陷-agent-bad-case-黑洞的焦虑中&quot;&gt;四月：深陷 Agent Bad Case 黑洞的焦虑中&lt;/h2&gt;
+&lt;p&gt;三月我转到了公司内的 AI 组。&lt;/p&gt;
+&lt;p&gt;说实话，一开始我对 AI 抱有很大的热情，三月的时候也发了视频跟大家分享了转 AI 的经历。&lt;/p&gt;
+&lt;p&gt;但随着，我接触越来越多 AI 相关的工作，并且在生产上尝试用 AI 去代替之前的开发流程，我开始意识到一些让我感到很无力的事。&lt;/p&gt;
+&lt;p&gt;当然这种无力感，也跟我使用的场景有关，或许在非 AI 公司都有这种的通病吧～&lt;/p&gt;
+&lt;h3 id=&quot;1️⃣ai-产出的代码文档的量太大了人根本-review-不过来&quot;&gt;1️⃣AI 产出的代码、文档的量太大了，人根本 review 不过来&lt;/h3&gt;
+&lt;p&gt;我发现我周围出现一种很荒谬的情况：&lt;strong&gt;系统里的代码越来越多，但真正理解这些代码、系统设计的人越来越少。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;很多人用 vibe coding 的代码，直接提交到生产，基本不 review 代码，也不怎么遵守最小改动，经常出现一个巨大的 PR。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可能会说，不需要人工 review 也可以，让各种 AI 互相 review，或者是建立完善的测试机制，让 AI 生成代码之后自己走一遍测试。&lt;/p&gt;
+&lt;p&gt;这些机制在理论上可行的，但是在生产环境中，在非常复杂且庞大的系统中，这是漏洞百出且非常危险的操作。因为一旦 AI 的代码有 bug，会陷入非常被动的局面。没有人能快速定位和修复，只能眼巴巴地跟 AI 描述问题，让 AI 自己去修。&lt;/p&gt;
+&lt;p&gt;由于这种”认知负担“，从 3 月多，我开始做各种 AI Agent 的 workflow 之后，我内心逐渐变得非常排斥。&lt;/p&gt;
+&lt;p&gt;一方面，严格的生产环境对于错误的容许度本身就很低；另一方面，AI 抽卡的不确定性，必然会产生一定风险。&lt;/p&gt;
+&lt;p&gt;我的责任心和安全感让我对于 AI 产生的一大坨东西，感到非常不安和焦虑。我每天会花大量的时间去 review AI 产出东西，尽管有些 AI 写的文档和代码还算可以，但我内心仍然需要“我去确认一下”，才能有掌控感和安全感，否则我就觉得，一切都在慢慢失控。&lt;/p&gt;
+&lt;p&gt;或许对于非 AI 公司来说，最好的方式还是让员工把 AI 当作辅助工具，而不是把一整段长的工作流程完全交给它。&lt;/p&gt;
+&lt;h3 id=&quot;2️⃣用-ai-搭建的系统看起来有-90-分而剩下-10-分是个深不见底的窟窿&quot;&gt;2️⃣用 AI 搭建的系统看起来有 90 分，而剩下 10 分是个深不见底的窟窿&lt;/h3&gt;
+&lt;p&gt;不可否认，AI 做 side project 是极好的，它在极短的时间就能从零搭建一套系统，当你想到了某个 idea，就能用 AI 快速实现；对于轻量的系统来说，AI 交付的质量也不错。&lt;/p&gt;
+&lt;p&gt;但面对一个复杂、体量大、历史包袱重的系统，AI 产出的东西，只能粗略地看。一旦深入里面的细节，就会发现里面充满了各种 Bad Case。&lt;/p&gt;
+&lt;p&gt;这些 Bad Case 单独拿出来看，其实问题都不大。比如说一些边界条件、特殊场景的处理等等。&lt;/p&gt;
+&lt;p&gt;但这些问题组合在一起，就变成了一个深不见底的窟窿。你修完一个问题之后，可能又会冒出来另外几个新的问题。&lt;/p&gt;
+&lt;p&gt;AI 始终给我一种错觉：它搭的系统已经完成了 90%，再稍微补一补就能上线了。但真正进入生产环境之后，我才发现，AI 给出的 90 分，是远远不达标的。那剩下的 10分可能要花掉远超 90% 的时间。&lt;/p&gt;
+&lt;p&gt;于是，整个四月，我几乎都深陷在 Agent 的 Bad Case 黑洞中，感到无聊且疲惫。&lt;/p&gt;
+&lt;p&gt;不仅如此，我还隐隐地感到焦虑。因为就算给 AI 规则写的再详细、再严谨，它还是有可能会犯错。有时候把规则写得清清楚楚，它遵守了九十九次，却可能在第一百次突然偏离。你很难判断，这是 prompt 还不够严谨，还是上下文发生了微妙变化，还是模型有什么变化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总之，严格的生产流程和 AI 不确定性的产出，这两者一直在拉扯着我，我非常讨厌这种不可控的感觉，也非常消耗我的心力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所以四月的我，在这个拉扯过程中，逐渐想明白了，我所处的环境，其实更适合把 AI 当作提高效率的工具，我需要把更多的注意力重新放回到解决某些问题或者技术上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我的生活也因为 AI 有点 Burnout。&lt;/p&gt;
+&lt;p&gt;在此之前的一段时间里，我非常沉迷于养龙虾，让 AI 去接管我的工作和生活，也非常沉迷于 vibe coding，尽可能地去实现我所有想做的事。&lt;/p&gt;
+&lt;p&gt;但是最后我发现，AI 带给我的东西，我其实并不喜欢，时间长了甚至是有点抗拒。&lt;/p&gt;
+&lt;p&gt;比如，月初的时候，我热衷于给自己创造各种AI 分身，把自己蒸馏成了 16 个 agent，研究怎么用 ollama local 开源模型做本地个性化。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/02-0d4da896.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1037&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;虽然这些 agent 为我做了许多工作，节省了许多时间，但到头来，我只是觉得：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“空虚，有些乏了。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;它们接管了我原本对于“某些事情的规划”、“某些命题的思考”、“某些话题的关注”，解放劳动力的同时，也剥夺了我与某些事情建立关系的过程。&lt;/p&gt;
+&lt;p&gt;原本那些会把我引向陌生方向的岔路，也被 AI 给出的“最优路径”悄悄抹平。&lt;/p&gt;
+&lt;p&gt;一开始我觉得很爽、很高效，但到了后面，我非常不喜欢这种感觉。&lt;/p&gt;
+&lt;p&gt;我意识到：我并不只是需要“最优解”。&lt;/p&gt;
+&lt;p&gt;我也需要通过漫长的琢磨、无用的尝试、失败后的领悟，以及对某个问题持续而笨拙的思考，慢慢地成长，慢慢地找到“自己的答案”。&lt;/p&gt;
+&lt;p&gt;于是，在三月，我满怀热情地创造了我的 AI 分身，一个月后，我又亲手把它们一一杀死。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;五月上香格里拉之行&quot;&gt;五月（上）：香格里拉之行&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;五一假期去了香格里拉，从普达措森林公园闲游，到虎跳峡惊险徒步，再到最后石卡雪山、松赞林寺之行，有非常多的回忆～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;下面是一大堆的图和视频，你们就当是文字版的 vlog 看吧～！&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1️⃣-day-1高反警告&quot;&gt;1️⃣ DAY 1：高反警告&lt;/h3&gt;
+&lt;p&gt;4月30号早上6点多，我们坐上了广州直飞香格里拉的飞机。&lt;/p&gt;
+&lt;p&gt;落地时刚好是中午，我们在民宿放下行李之后，就火速出去觅食了。&lt;/p&gt;
+&lt;p&gt;香格里拉的第一顿饭，我本想好好品尝当地美食，就选了一家评分比较高的牦牛肉火锅店。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/03-64a9716f.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;牦牛肉很好吃，老板也很热情，但这顿饭不幸引发了我的高反。&lt;/p&gt;
+&lt;p&gt;我疏忽了大量的肉类带给肠胃的负担，吃到后面，整个人当场就开始头晕了，只能老实回民宿吸氧 😂&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/04-b2725dea.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;596&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;第一天的牦牛肉真的把我给吃伤了，高反起来头疼欲裂，呕吐不止，最后在民宿躺了大半天，靠着吸氧+吃布洛芬+喝可乐+睡觉，这才恢复正常。&lt;/p&gt;
+&lt;p&gt;这次去香格里拉我也积攒了许多抗高反的经验，会统一写在后面，想了解高反的朋友可以看看～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2️⃣-day-2在普达措公园闲逛的一天&quot;&gt;2️⃣ DAY 2：在普达措公园闲逛的一天&lt;/h3&gt;
+&lt;p&gt;第二天精神恢复啦～ 但也不敢太造次😛，去了离古城比较近的普达措森林公园&lt;/p&gt;
+&lt;p&gt;在独克宗古城有景区直通车可以前往，路程大概是 30 分钟，还蛮方便的！&lt;/p&gt;
+&lt;p&gt;一路上可以看到各种牦牛、小马，除了大巴车有点抖，其他方面都蛮好的～&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/05-84734203.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1916&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;普达措公园很大，有 3 个徒步站点，可以慢慢逛一整天。&lt;/p&gt;
+&lt;p&gt;第一段是 2-3 km 的原生态徒步路线，第二段和第三段是步行栈道，没有什么爬升，全程就是慢慢逛、慢慢拍照。&lt;/p&gt;
+&lt;p&gt;我最喜欢的站点是第一段，被树木、河流、草地包围的感觉很治愈，走在这里好像忘记了所有的烦恼，只想好好欣赏、感受周围的一切。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4630367704078811139-4aeba136.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4630367704078811139-4aeba136.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;站点和站点之间有观光车，沿途可以看到很多动物在草甸上吃草、晒太阳。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/06-e5cf79bd.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;586&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;牦牛身上挂的铃铛叮叮当当的响，莫名很好听～（就是牛屎有点臭💩&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4630371674255704066-33ffecac.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4630371674255704066-33ffecac.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;有个路人撒了几颗瓜子在路上，有幸看到了小松鼠嗑瓜子的画面，真的萌死了！&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/07-81517274.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1256&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;唯一美中不足的是，五一一开始的几天都在下雨，没带雨衣的我，走到后面感觉有点冷 🥶（低估了徒步时下雨的威力，确实容易失温）&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/08-b099e1bd.webp&quot; alt=&quot;&quot; width=&quot;989&quot; height=&quot;518&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;我们从早上 10 点左右一直走到下午 5 点，中间在休息站吃了些零食，没有什么爬升，体力消耗就感觉还好，也没有再出现高反了。&lt;/p&gt;
+&lt;p&gt;晚上回去的时候，感觉徒步没过瘾，临时约了第二天去虎跳峡的车，晚上 9 点多就老实睡觉去了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;3️⃣-day-3惊心动魄的虎跳峡徒步&quot;&gt;3️⃣ DAY 3：惊心动魄的虎跳峡徒步&lt;/h3&gt;
+&lt;p&gt;去虎跳峡的那天很幸运，天气比前两天好了很多 😁&lt;/p&gt;
+&lt;p&gt;早上 6 点多从独克宗古城开始出发，在车上本来还挺困的，过了几个隧道之后，突然看到了虎跳峡的对面是玉龙雪山，雪山的冲击力真的太强了，整个人瞬间就精神了。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650526633043542017-107bf67b.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650526633043542017-107bf67b.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;不管是在虎跳峡的山脚还是在半山腰，每当我抬头看玉龙雪山，都能感到非常强的压迫感。&lt;/p&gt;
+&lt;p&gt;玉龙十三峰好像是雪山守卫，当我在看它们的时候，我非常强烈的感到自己被雪山凝视，整个人都不由自主地定住了。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4630405379917627395-be45d9d4.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4630405379917627395-be45d9d4.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;8 点多从茶马客栈开始徒步，全程 10 公里左右，以平路和下坡为主。&lt;/p&gt;
+&lt;p&gt;虎跳峡大部分路段都挺安全的，90% 的路差不多 2-3 个人宽，就像下面视频里的这段。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650535030459416580-eb2ab44a.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650535030459416580-eb2ab44a.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;虎跳峡的前半路段是精华段，风景真的很绝。&lt;/p&gt;
+&lt;p&gt;绝美地貌、随处可见的悬崖、山脚的金沙江、对面的玉龙雪山，由这些风景组合在一起的虎跳峡，真的让人惊叹。每走一会，我就不由自主地想停下来欣赏一下 😂&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/09-71bf3784.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;路上还遇到了山羊抢食 ⚠️&lt;/p&gt;
+&lt;p&gt;有路人在一旁休息的时候，想吃点饼干。没想到几只大山羊飞奔过来，直接站立地扑在人身上，开始抢夺饼干。得逞之后，又迅速吸引来了一大群山羊开始抢食！&lt;/p&gt;
+&lt;p&gt;我作为一个刚好路过的人，一瞬间被山羊挡住了去路，真的是吓死😦 我好害怕它们开始打架误伤到我，那些成年山羊力气超大！&lt;/p&gt;
+&lt;p&gt;以下是一些哇哇大叫的现场画面 ⬇️（建议调低音量哈 😅）&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650565685721694210-1098d02e.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650565685721694210-1098d02e.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;当然虎跳峡的山羊也有可爱的，遇到了几只萌萌的小羊羔，超软超好 rua～&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/10-7ce0e0ff.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;出发之前，我看到小红书的攻略说，“虎跳峡走前段足够了，到瀑布就可以折返”。&lt;/p&gt;
+&lt;p&gt;我当时没听劝，想着来都来了，还是走了全程，但事后非常后悔！&lt;/p&gt;
+&lt;p&gt;中段瀑布附近，有 1-2 个地方感觉很惊险，落脚点很窄，并且有一些爬升的地方有水，感觉有点滑，旁边就是悬崖！&lt;/p&gt;
+&lt;p&gt;具体可以看下面的视频，碰巧录了一段，但这段还不是最惊险的。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650593206546481153-8afbe85a.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650593206546481153-8afbe85a.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;我满脑子都是“死脚快走啊！快离开这里！”，眼睛死死盯着地面，一点都不敢分心看旁边。&lt;/p&gt;
+&lt;p&gt;后半部分的土路就没什么风景了，并且全程下坡非常费腿、费膝盖，走到后面有点痛不欲生了……只想赶紧走完…&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/11-5e484821.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;我们从早上 9 点左右开始爬，下午 2 点多到了张老师客栈（终点）。到达的时候，我有点暴汗过多，整个人很虚 😂 下午回民宿之后直接累倒下了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;4️⃣-day-4松赞林寺&quot;&gt;4️⃣ DAY 4：松赞林寺&lt;/h3&gt;
+&lt;p&gt;第四天原本计划去梅里雪山，但由于五一的天气不好，看到日照金山、月照银山的概率都非常小，再加上前一天在虎跳峡走废了双腿，最后我们决定放弃折腾，第四天就在民宿躺尸，下午去松赞林寺附近随便逛逛。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/12-b9e41ec4.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;678&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;民宿的保洁阿姨养了一只小羊，阿姨每天早上来清洁的时候，就把羊拴在院子里。我每天出门都会被它萌到 ☺️&lt;/p&gt;
+&lt;p&gt;午觉之后出发去松赞林寺附近。我们没选择坐景区的车，而是慢慢从景区入口往里走，沿着湖边一路晃悠过去。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/13-d2bcddcb.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;天气依然算不上好，云层很厚，阳光也是时有时无，但反而让整个松赞林寺多了一点很安静的感觉。&lt;/p&gt;
+&lt;p&gt;远远看过去，寺庙依山而建，一层一层铺在山坡上，金色的屋顶在阴天里还是很显眼。湖面偶尔能倒映出寺庙和山的轮廓，但风一吹，倒影又很快散了。&lt;/p&gt;
+&lt;p&gt;走到近处之后，才发现松赞林寺比远看时大得多，一路都是台阶，爬了十分钟左右到了主殿附近。&lt;/p&gt;
+&lt;p&gt;我个人对藏传佛教并不感冒，内心还是比较喜欢佛教里面慈眉善目的神。&lt;/p&gt;
+&lt;p&gt;藏传佛教的神像通常色彩浓烈，神态也更加威严，尤其是一些面目狰狞的护法神，我虽然知道背后都有各自的宗教寓意，但纯粹从一个游客的审美来说，多少还是有点欣赏不来。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650920396752715776-7e0de2a7.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650920396752715776-7e0de2a7.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;所以，比起拜佛，我更喜欢在外面欣赏寺庙本身的建筑，以及这里随处可见的乌鸦。&lt;/p&gt;
+&lt;p&gt;松赞林寺的建筑很有层次，白墙、红墙和金顶的搭配看起来赏心悦目，线条也有一种对称的美感，看上去极其舒适。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/14-4f5fb79f.webp&quot; alt=&quot;&quot; width=&quot;956&quot; height=&quot;550&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;傍晚回到独克宗古城闲逛。&lt;/p&gt;
+&lt;p&gt;比起大理和丽江，独克宗古城的夜晚显得有些无趣。&lt;/p&gt;
+&lt;p&gt;一方面是真的没什么特别值得吃的东西，千篇一律的牦牛肉火锅和烧烤，炒家常菜的店很少。&lt;/p&gt;
+&lt;p&gt;另一方面是古城比较小，还有很多都是上坡下坡的石板路，走快了还有点喘气 😂 晚上散步感觉有点无处可去的样子。&lt;/p&gt;
+&lt;p&gt;倒是有几家买手店不错的，有许多尼泊尔那边的商品。以后有机会我也想去尼泊尔玩玩。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/15-42abd80b.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1306&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;5️⃣-day-5石卡雪山&quot;&gt;5️⃣ DAY 5：石卡雪山&lt;/h3&gt;
+&lt;p&gt;第五天的石卡雪山真是让我最惊喜的一个地方。&lt;/p&gt;
+&lt;p&gt;小红书上提到它的帖子并不多，原本我以为只是很小的一个雪山观景台，但去了之后发现可玩性超出预期，还弥补了我没看到雪山的小遗憾。&lt;/p&gt;
+&lt;p&gt;石卡雪山的交通很方便，从古城打车，大概二十分钟的车程。而且这段路特别美！能同时看到雪山、村落、草原、牛羊，真的不输给普达措的景区观光路线。&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4650978653823057920-b7dd8939.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4650978653823057920-b7dd8939.v2.poster.webp&quot; width=&quot;1920&quot; height=&quot;1080&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;路上经过纳帕海草原的时候，大片草原一直延伸到远处的雪山，路边时不时能看到成群的牛羊，零零散散的藏式民居夹在中间，行驶在路上真的很治愈 💓&lt;/p&gt;
+&lt;p&gt;P.S. 我在这里的司机也都很不错，开车很稳，比广州的滴滴司机好多了（拉踩一下）。路过帕纳海的时候，司机还特意开慢了些，等我拍照 🫰&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/16-0d904a3f.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;650&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;进到石卡雪山景区之后，我才发现它也完全不是我想象中的“坐个缆车上去看一眼雪山就结束”。&lt;/p&gt;
+&lt;p&gt;缆车有两段，中段是一个巨大的大草地平台，最上面是雪山的山顶。坐在缆车上，往外面看，景色超级好看。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/17-ea9fb11d.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;一开始，我们看到的山坡还是绿色的。到了第二段，树上几乎全都挂满了雪，白花花的一片又带有一点深绿色；&lt;/p&gt;
+&lt;p&gt;缆车继续往上走，树越来越少，景色也一点点变得更“硬”。山上完全看不到植被了，只剩下光秃秃的岩石和积雪。黑灰色的山体从雪里露出来，和厚厚的积雪交错在一起，非常有冲击力。&lt;/p&gt;
+&lt;p&gt;满眼的雪景看得我们俩福建人和广东人全程都在“哇哇哇哇”地兴奋大叫 😯😯😯&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;https://img.polebug.com/plog_202604-08/wxv_4662221250646261766-9c374bcc.v2.mp4&quot; controls poster=&quot;https://img.polebug.com/plog_202604-08/wxv_4662221250646261766-9c374bcc.v2.poster.webp&quot; width=&quot;3840&quot; height=&quot;2160&quot; preload=&quot;metadata&quot; playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;我们先坐缆车去了雪山顶。&lt;/p&gt;
+&lt;p&gt;让我对这里产生好感的第一点是，山顶的护栏并没有把游客的活动范围限制得很死。游客不会只被圈在栈道里面，可以随意去雪地上玩和拍照。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/18-832e52c5.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;我看到很多人在堆雪人、打雪仗，还有人在搭冰屋。整体的氛围就很欢乐。有一种人和人之间在传递快乐的感觉，不只是欣赏风景。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/19-df83c3f9.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/20-c97654c0.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;山顶上的风景也很不错，视野非常开阔，四周都是连绵的山峰，近处是大片积雪和裸露出来的岩石。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/21-1bc3ed34.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;远处能俯瞰地势低的香格里拉古城，以及古城对面一整排连绵的雪山。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/22-951fb63c.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;不过，石卡雪山确实是一个比较小的景点。沿着栈道完整走一圈，大概 1 小时左右，走走停停加上拍照，2 小时完全足够了。&lt;/p&gt;
+&lt;p&gt;原本还有一条徒步路线，可以从山顶走到半山腰。但是由于大雪把栈道都覆盖了，出于安全考虑，徒步路线暂时关闭了。&lt;/p&gt;
+&lt;p&gt;我俩本想在山顶上多玩会雪，毕竟南方人几年见一次雪，真的很舍不得下去 😂&lt;/p&gt;
+&lt;p&gt;但山顶的天气真的瞬息万变，在几分钟内突然变得风雨交加。巨大的风吹的我头有点痛，全身也感觉很冷，不得不提早坐索道下去了。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/23-70951157.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;从山顶下来之后，我们又在半山腰的草地上逛了逛。&lt;/p&gt;
+&lt;p&gt;中段就是一个大草地，有很多牦牛和牧民的房子，大概 20 分钟就逛完了。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/24-4ee80792.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;在这里可以看到上面的雪山，仍然给我一种惊艳的感觉（大概是真的太久没见过雪山了，太喜欢了）。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/25-54b99c32.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;在石卡雪山很轻松地逛了一下午，大概从 2 点多到 5 点，就心满意足地回古城吃饭去了。&lt;/p&gt;
+&lt;p&gt;或许看到这里，你们会理解我为什么这么喜欢石卡雪山了吧。交通方便 + 风景丰富 + 可玩性高 + 一点都不累腿，这些综合原因让我觉得它“夯爆了”！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;香格里拉之行到这里就结束啦～ 尽管天公不作美，但还是玩的很开心！&lt;/p&gt;
+&lt;h3 id=&quot;6️⃣-最后记录一些关于高反的小-tips&quot;&gt;6️⃣ 最后记录一些关于高反的小 Tips&lt;/h3&gt;
+&lt;p&gt;其实在出发之前我有点担忧，因为几年前我第一次去高原，整个人高反得非常难受，头晕呕吐四肢无力，意识也有点模糊。&lt;/p&gt;
+&lt;p&gt;所以这次去香格里拉，我做足了高反功课，后面在石卡雪山上玩也没啥问题了 💪&lt;/p&gt;
+&lt;p&gt;这里跟大家简单分享一下，我的抗高反心得！&lt;/p&gt;
+&lt;p&gt;Tip1: 不要吃太饱，尤其不要吃太多肉类，如果消化负担重，容易引发高反 ⚠️⚠️⚠️&lt;/p&gt;
+&lt;p&gt;我在香格里拉唯一一次高反，就是第一天吃了牦牛肉火锅。事后我在小红书上搜，确实也有很多人吃牦牛肉火锅之后高反了。&lt;/p&gt;
+&lt;p&gt;香格里拉这边的牦牛肉跟不要钱一样，每家火锅都是一大叠的肉。我本着不想浪费的心态就硬吃，结果吃着吃着，头就开始晕了。&lt;/p&gt;
+&lt;p&gt;感觉到不对之后，我就立马回民宿躺下吸氧。后面还呕吐了，导致我那几天看到牦牛肉就有点恶心 😆&lt;/p&gt;
+&lt;p&gt;总之，如果你像我一样容易高反，那一定要注意一下饮食，最好清淡一些，不要吃得太饱，不要吃太多难消化的食物。&lt;/p&gt;
+&lt;p&gt;Tip2: 呼吸方式很重要&lt;/p&gt;
+&lt;p&gt;之前我学游泳的时候，第一节课就是学习怎么用“嘴”快速地吸气、换气。&lt;/p&gt;
+&lt;p&gt;没想到这个呼吸方法，在高原上也帮助到我很多。尤其是在高原上徒步，保持这种高效的呼吸方式会轻松很多。&lt;/p&gt;
+&lt;p&gt;具体的方法就是，吸气的时候，把嘴张开，快速、深深地吸一大口气，会不自觉发出“呃”的声音，然后再慢慢地从鼻子吐气出去。&lt;/p&gt;
+&lt;p&gt;Tip3: 如果出现了高反症状，该怎么自救&lt;/p&gt;
+&lt;p&gt;如果只是轻微的感到头晕、呼吸不畅，可以喝可乐、吃糖果（葡萄糖口服液），或者猛吸一口氧气，都可以得到很有效的缓解。&lt;/p&gt;
+&lt;p&gt;如果有点难受，没办法正常活动了，就找一个可以吸氧的地方躺下休息，民宿最好也是带制氧机的这种。头痛睡不着的情况，可以吃&lt;strong&gt;布洛芬&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果你在户外感到难受，没有地方躺下。我的办法是：找地方坐下，狂喝可乐，持续吸氧气瓶吸十几分钟。如果有缓解的话，就继续活动。如果这样还是不行，那还是早点回民宿躺吧～&lt;/p&gt;
+&lt;p&gt;顺便提一下，在高原地区一定要做好防晒！尤其是在雪山上，紫外线从四面八方来，一定要带上：太阳眼镜、防晒霜、帽子（防晒秃）。&lt;/p&gt;
+&lt;p&gt;我因为防晒做的不足，从雪山下来之后，整个人都晒伤了，脸疯狂掉皮，嘴巴像是刚做了丰唇，头皮也晒伤了。缓了一个月才恢复正常 😂😂😂&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;五月下出现了新的转机&quot;&gt;五月（下）：出现了新的转机&lt;/h2&gt;
+&lt;p&gt;五月初从香格里拉回来之后，我仍然内耗地做着 AI 相关的工作。&lt;/p&gt;
+&lt;p&gt;除了不喜欢工作内容本身之外，周围同事对于 AI 不同的立场，也让我觉得不太舒服 ⬇️&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/26-2ade7f19.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;706&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;如图所说。&lt;/p&gt;
+&lt;p&gt;五月我在做“AI 提效”相关的事情，简单说就是建立一套 Agent workflow 去做某些流程相对固定的工作。&lt;/p&gt;
+&lt;p&gt;在推动的过程中，我发现有一部分的同事会认为我做的事情和他是对立的。&lt;/p&gt;
+&lt;p&gt;对于 leader 和业务线的 owner 来说，如果能更高效地进行迭代，那肯定是很好的。但是对于他们底下的普通开发来说，如果把 1-2 周的工作压缩成 2-3 天，开发节奏更快了，那工作量必然会大许多，上线的压力也会更大。&lt;/p&gt;
+&lt;p&gt;多方对于 AI 工具的立场不同，就导致了我对 AI 相关的工作愈发感到拉扯。想要逃离现状的心情到了顶峰。&lt;/p&gt;
+&lt;p&gt;幸运地是，五月底给了我一个转变的机会！&lt;/p&gt;
+&lt;p&gt;当时我碰巧听到消息：缺人去做”交易询价“相关的业务。&lt;/p&gt;
+&lt;p&gt;这个消息让我激动坏了，火速给我 leader 打了电话，告诉他我想去做业务，不想再搞 Agent 了。&lt;/p&gt;
+&lt;p&gt;我 leader 当时感到非常意外，在他的视角来看，AI 是现在发展最好的方向，我做的 Agent 效果也很好，周围的一切反馈都很好… 没想到我如此煎熬 hhhhhhh&lt;/p&gt;
+&lt;p&gt;他游说了我大半天，但本人去意已决 hhhh，看到 Agent 已经 PTSD，真的不想再多搞一天 (┛`д´)┛&lt;/p&gt;
+&lt;p&gt;于是在五月的 30 号，我愉快的去了交易业务线，和 AI Agent Say Goodbye~&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HAPPY! ᕕ ( ᐛ ) ᕗ&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;六月最好朋友的婚礼新的工作内容治愈的日常&quot;&gt;六月：最好朋友的婚礼、新的工作内容、治愈的日常&lt;/h2&gt;
+&lt;p&gt;六月初回了一趟福建，因为在六月六号星期六，我最好的朋友米米结婚啦！Po 一张梦幻的舞台布置～&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/27-ac244812.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;我发现我们这代人的婚礼，“主体性”正在变得越来越强。不再有婚闹、双方父母致辞、父亲把女儿交给新郎，这类带有明显父权色彩、甚至隐含着“家庭关系交接”意味的环节。&lt;/p&gt;
+&lt;p&gt;婚礼开始更像是两个人自己的仪式。&lt;/p&gt;
+&lt;p&gt;大家不再那么执着于“传统婚礼本来就应该这样”，不再只是向长辈和亲友宣布一段关系，而越来越像是两个人借由这一天，公开表达自己如何理解爱情、婚姻和共同生活。&lt;/p&gt;
+&lt;p&gt;由于我最好的朋友办婚礼，那几天我一直被各种朋友问到：“你啥时候办？”&lt;/p&gt;
+&lt;p&gt;说实话，我暂时不想办。因为我还没找到，我自己要办婚礼的理由。在我的视角来说，我们办了“订婚宴”，就已经完成了官宣的使命。在办一场大型的婚礼，好像没有那个必要性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在福建老家的那一周，我刚好和 AI 业务做完了切割，开始做“交易询价”的事。&lt;/p&gt;
+&lt;p&gt;我一边熟悉新的技术和业务，一边在家吃吃喝喝。工作上那些持续了很久的内耗，好像也跟着停了下来。没有那么多需要反复拉扯的事情，整个人的思绪安静了很多，感受到了久违的平静和快乐。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/28-ef70a64e.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;晚上下班之后，和家人在废弃铁路上散步。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/29-23e57920.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;路过高明寺的时候，看到路边开了许多野花和向日葵。我和我妈顺手摘了一些，带回家插在瓶子里养着。&lt;/p&gt;
+&lt;p&gt;这些细微、琐碎且平静的日常，让我感到身心舒适。好像在很长一段时间的忙乱和内耗之后，我终于重新回到了生活本身。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/30-e52fd7e3.webp&quot; alt=&quot;&quot; width=&quot;985&quot; height=&quot;1168&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;p&gt;六月的日子，就这样平淡的进行着。&lt;/p&gt;
+&lt;p&gt;来交易询价业务之后，我好像更加如鱼得水，每天快乐地排查疑难杂症、优化架构、重拾 web3 相关的开发。之前接触 evm 比较多，但交给我的工作是 solana 相关，又恶补了许多 solana 的东西。&lt;/p&gt;
+&lt;p&gt;晚上的时间，又回到了熟悉的 routine，画画、看书、写日记。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/31-9bf628cc.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1114&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;看了黑塞的《克林索尔的最后夏天》，又把《悉达多》翻出来看了看。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/32-b76553dc.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;周末去广州附近的南昆山徒步，久违地在山里走了一整天。一路都是很浓的绿色，溪水、竹林，安静走在山上的感觉很治愈。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/33-3536aab3.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;810&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;走到尽头，意外地发现一个令人惊叹的湖泊。远看是蓝，近看是绿。&lt;/p&gt;
+&lt;p&gt;平静时，湖面像幅油画。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/34-900a9f8b.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;风动的时候，水面泛起一层层细碎的波纹，水面泛起一层层细碎的波纹，阳光落在上面，碎成了无数闪闪发亮的光点，从原本沉静的绿色变得灵动起来。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/35-6285b09b.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;p&gt;回头看这三个月，前后像是两种完全不同的生活状态。&lt;/p&gt;
+&lt;p&gt;四月还在为 AI、工作和那些无法掌控的事情反复内耗；五月去了一趟香格里拉，回来后碰巧遇到了换工作内容的机会，果断和折磨了我几个月的 Agent 工作告别；到了六月，生活重新回到熟悉的节奏里，散步、看书、画画、徒步，好像终于又能把注意力放回自己身上。&lt;/p&gt;
+&lt;p&gt;这段时间还做了一些别的事，内容太多了，就下篇一起写吧～&lt;/p&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;下期再见！&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_202604-08/36-daaff0b2.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1439&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;</content>
+  </entry>
   <entry>
     <title>vibe coding 成瘾之后，我正在重建 AI 与生活的边界｜202601-03 月度总结</title>
-    <link href="https://polebug.github.io/2026/03/28/plog_202601-03/"/>
-    <id>https://polebug.github.io/2026/03/28/plog_202601-03/</id>
+    <link href="https://blog.polebug.com/2026/03/28/plog_202601-03/"/>
+    <id>https://blog.polebug.com/2026/03/28/plog_202601-03/</id>
     <published>2026-03-28T13:41:00.000Z</published>
-    <updated>2026-07-19T09:05:52.560Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;嗨大家，真是好久不见！ 👋 &lt;/p&gt;
+    <updated>2026-03-28T13:41:00.000Z</updated>
+    <summary type="html">嗨大家，真是好久不见！ 👋 不知不觉已经 3 个月没有更新我的周报了，这周来填填坑吼～ 前段时间的某一天，我回顾了一下我在 X 上发的帖子。这才意识到，我现在的“班味”实在是太重了：“怎么每天发的都是关于工作和 vibe coding 的…</summary>
+    <content type="html">&lt;p&gt;嗨大家，真是好久不见！ 👋&lt;/p&gt;
 &lt;p&gt;不知不觉已经 3 个月没有更新我的周报了，这周来填填坑吼～&lt;/p&gt;
-&lt;p&gt;前段时间的某一天，我回顾了一下我在 X 上发的帖子。这才意识到，我现在的“班味”实在是太重了：“怎么每天发的都是关于工作和 vibe coding</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;前段时间的某一天，我回顾了一下我在 X 上发的帖子。这才意识到，我现在的“班味”实在是太重了：“怎么每天发的都是关于工作和 vibe coding 的东西啊？”&lt;/p&gt;
+&lt;p&gt;再看我之前的 vlog，里面分享了各种生活、阅读的记录和思考，而现在的我写个月度总结都有些大脑空白。&lt;/p&gt;
+&lt;p&gt;所以，这篇文章，我想跟你们说说，AI 是怎么影响我的生活，以及我的心路历程是怎么样的。当然，除了 AI 之外，生活中也发生了许多有意思的事，让我慢慢与你们分享～&lt;/p&gt;
+&lt;p&gt;在开始之前，我想强调一下我的观念，免得你们误解了我的意思——&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ 这篇文章并不是在 AI 价值的否定，相反，我非常认可 AI 的巨大意义。&lt;/p&gt;
+&lt;p&gt;我想跟大家讨论的是，当我们越来越深地使用它时，也应该意识到 AI 可能带来的副作用，避免在这个过程中，慢慢失去我们作为”人”的主体性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;topic1n---vibe-coding-成瘾与那个充满欲望的我&quot;&gt;Topic(1/n) - vibe coding 成瘾与那个充满欲望的我&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;我想很多人可能跟我一样，在过去的几年里，积累了很多想法。但因为信息茧房或者学习门槛太高的缘故，而没能一一去验证、实现这些想法。&lt;/p&gt;
+&lt;p&gt;AI 的出现就像是给了我一盏阿拉丁神灯，它可以极大地满足我的各种欲望。&lt;/p&gt;
+&lt;p&gt;于是，在过去的这三个月里，我非常沉迷于 AI 的东西，通过 vibe coding 去开发自己的 APP，去探索自己的能力边界，去体验各种 AI 工具。&lt;/p&gt;
+&lt;p&gt;你可能纳闷：“这样不是挺好的吗？”&lt;/p&gt;
+&lt;p&gt;其实，AI 工具本身并没有任何问题，它确实前所未有地降低很多门槛，也抹平了很多信息差。&lt;/p&gt;
+&lt;p&gt;真正的问题在于，像 vibe coding 这样带有即时闭环的多巴胺奖励机制，本身就很容易让人上头。一旦对 AI 的使用缺乏节制，这种失控感就会被进一步放大。&lt;/p&gt;
+&lt;p&gt;在这个过程中，我慢慢失去了对选择结构的控制，以至于最后失去了对整个生活的掌控感。&lt;/p&gt;
+&lt;p&gt;所以第一个话题，我想跟你们聊聊“vibe coding 成瘾”的事情。&lt;/p&gt;
+&lt;p&gt;我后知后觉地发现，vibe coding 的奖励回路与刷短视频非常相似，都是一套高频、低门槛、强刺激的奖励系统，只不过它的奖励形式不是“被动消费内容”，而是“主动生成结果”。&lt;/p&gt;
+&lt;p&gt;当你输入一个 prompt，就会立马看到 AI 很快地 thinking、生成代码，甚至返回一个接近成品的 demo，这个过程没有明显阻力，而且每一步都伴随着很强烈的即时反馈。&lt;/p&gt;
+&lt;p&gt;大脑会天然偏好这种奖励信号，建立“行为与回报”之间的连接，并通过多巴胺系统不断强化这条路径。对于大脑来说，这意味着: 只要继续重复这个动作，就有很大概率再次获得奖励。&lt;/p&gt;
+&lt;p&gt;久而久之，这种机制会让人变得依赖“即时反馈”本身，而不再只是追求事情本身的意义。&lt;/p&gt;
+&lt;p&gt;更进一步地，当大脑逐渐适应这种高强度、短周期的刺激之后，它对慢反馈、低刺激、需要长期投入的事情的耐受力也会下降，人会变得很难停下来，难以专注于那些真正重要但无法立刻兑现回报的部分。&lt;/p&gt;
+&lt;p&gt;你可能会问：“vibe coding 成瘾这么糟糕，你为什么才发现呢？”&lt;/p&gt;
+&lt;p&gt;因为 vibe coding 会比刷短视频更难觉察和戒断，它直接关联上了我的创造欲、成就感、价值感，极大地满足了我对于自我扩张的想象。&lt;/p&gt;
+&lt;p&gt;刷短视频的时候，我们起码能意识到自己在“消磨时间”，而 vibe coding 往往披着“创造”、“学习”、“提升效率”的外衣，让我觉得自己正在做正经事、在持续产出。我很难意识到，我其实已经被这种成瘾机制所控制。&lt;/p&gt;
+&lt;p&gt;我沉迷于此，废寝忘食。&lt;/p&gt;
+&lt;p&gt;直到有一天，我在收拾书桌，发现我的阅读记录本，已经一个月没有看书了。桌子上的发财树，不知什么时候又长出了新叶。楼下小区的树，不知什么时候开出了粉色的花。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/DSCF6338-55456481.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;我这才意识到，我其实正在一点点让渡自己作为人的主体性: 不再由我决定注意力该投向哪里、生活该如何展开，而是被欲望、效率和反馈牵着往前走。&lt;/p&gt;
+&lt;p&gt;这真的很糟糕，不是吗？&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;topic2n----定时记录生活这个习惯拯救了我&quot;&gt;Topic(2/n) -  “定时记录生活”，这个习惯拯救了我&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;这三个月高强度的 vibe coding，带给我的不只是成瘾，还有一种更隐蔽的后果: “我的日常记忆开始变得模糊，我常常想不起昨天发生了什么”。&lt;/p&gt;
+&lt;p&gt;我也是后面才知道，vibe coding 对于大脑的前额叶并不友好。&lt;/p&gt;
+&lt;p&gt;我们每时每刻都在做大量密集的决策，时间久了之后，大脑就会陷入很严重的“决策疲劳”。这种疲劳带来的，不只是判断力下降，更是感知能力的钝化: 你会变得难以觉察自己的情绪变化，很难感受到生活里的细节。&lt;/p&gt;
+&lt;p&gt;与此同时，这种状态还会挤掉原本属于日常生活的 offline time。&lt;/p&gt;
+&lt;p&gt;那些本该用来放空、感受、整理和沉淀的时刻被不断压缩，短期记忆也因此难以被有效巩固。以至于我无法想起昨天发生了什么、上个星期发生了什么。&lt;/p&gt;
+&lt;p&gt;好在我一直有写日记和写每周手帐的习惯，这些记录极大填补了我对记忆的空缺。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/DSCF6340-ac31d452.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;我用周记本记录这周做的事情，用日记来记录我每天的心情和想法。我很多时候是不带有任何目的去写这些记录，更像是一种下意识的保留。&lt;/p&gt;
+&lt;p&gt;写的时候，我并不觉得这一天有多么特别，甚至常常会觉得自己最近的生活很单调、重复，没有发生什么值得一提的事情。&lt;/p&gt;
+&lt;p&gt;但后来，当我回头去翻这些日记和手帐的时候，才慢慢发现，真实的生活并不是我当下感受到的那样贫瘠。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/DSCF6343-63f7c16d.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;原来这段时间里，我还是去了很多好玩的地方、好吃的餐厅，见了很多朋友，发生了很多有意思的事情。&lt;/p&gt;
+&lt;p&gt;很多当时转瞬即逝的感受，如果没有被记录下来，可能很快就会被我遗忘，最后只在脑海里留下一个模糊的印象: 好像这段时间什么都没发生。&lt;/p&gt;
+&lt;p&gt;所以，定时记录生活这件事对我来说，最大的意义是让我重新看见生活本身。也正是因为如此，我才意识到，我不能再任由 AI 侵入我的生活。我需要主动停下来，重新划清边界，才能把注意力还给真正重要的部分。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;topic3n---停下来重建-ai-与生活的边界&quot;&gt;Topic(3/n) - 停下来，重建 AI 与生活的边界&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;前面说了这么多，我想表达的并不是我对 AI 工具的否定。只是我们需要注意对它的“使用方式”，并对它可能造成的负面影响保持觉察。&lt;/p&gt;
+&lt;p&gt;我依旧会继续使用 AI，持续 vibe coding，但是我希望自己能更清楚地知道，它应该停在什么地方，我的生活应该从什么地方开始。它是我手里的工具，但不能变成吞掉我生活节奏的东西。&lt;/p&gt;
+&lt;p&gt;这段时间里，我也开始有意识地给自己设一些更具体的边界。&lt;/p&gt;
+&lt;p&gt;1️⃣ 首先，重新规划每天的时间。&lt;/p&gt;
+&lt;p&gt;我会有意识地把一天切分开来，哪些时间留给 vibe coding，哪些时间必须停下来去阅读、写日记，哪些时间要拿来运动、散步、放松。我会主动安排一些让自己慢下来的事情，避免生活节奏被 vibe coding 所打破。&lt;/p&gt;
+&lt;p&gt;2️⃣ 其次，我对自己 vibe coding 的习惯进行深度复盘和改进，尽量让 vibe coding 的时间变得更聚焦、更高效一些。&lt;/p&gt;
+&lt;p&gt;比如，尽可能地把工作流沉淀成 skill，花时间做“复利工程”，尽量让一次思考可以在后面反复发挥作用；做任务的拆分和并行，让 AI 在更清晰的结构和分工之下发挥效率。&lt;/p&gt;
+&lt;p&gt;3️⃣ 最后，也是我觉得最重要的一点，就是要放平心态，“允许自己停下来”。&lt;/p&gt;
+&lt;p&gt;关掉社交媒体，屏蔽掉那些让人焦虑的噪音。很多时候，人并不是一定要持续输入、持续产出，才算没有浪费时间。&lt;/p&gt;
+&lt;p&gt;适当地停下来，好好想想自己真正想做什么，会比一味地往前冲更重要。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_0418-fef71a30.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;topic4n---优绩主义下的悲剧读在轮下的记录与思考&quot;&gt;Topic(4/n) - 优绩主义下的悲剧（读《在轮下》的记录与思考）&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;一月中的时候，我读完了黑塞的《在轮下》，作为一个东亚小孩，对于这本书的共鸣非常强烈。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMAGE-2026-03-30-10-24-09-45f5cd63.webp&quot; width=&quot;600&quot; height=&quot;347&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;书里的悲剧，表面上看，是一个少年在学校、老师、家长和整个环境的层层期待中，一点点被压垮；&lt;/p&gt;
+&lt;p&gt;但更深一层看，它写的其实是一种更普遍的处境: 当一个人从很早开始，只被允许朝着“优秀”、“有用”、“向上”的方向生长时，他的生命很容易只剩下一条狭窄的轨道。&lt;/p&gt;
+&lt;p&gt;在这种评价体系里，人的感受是不重要的，“喜不喜欢”也是不重要的，重要的只有成绩、结果、效率、排名。&lt;/p&gt;
+&lt;p&gt;久而久之，一个人会变得擅长满足外界的标准，却越来越不知道自己真正想要什么。&lt;/p&gt;
+&lt;p&gt;就像这本书的主角汉斯，他会很早就学会察言观色，学会把自我价值建立在表现和认可之上，学会不断逼迫自己向前；&lt;/p&gt;
+&lt;p&gt;可与此同时，他也慢慢失去和内在自我相处的能力。那些疲惫、脆弱、犹豫、迷茫，都会被视为某种不应该存在的东西，被忽视、被压抑、被否定。也正是这种对真实自我的不断否认，最终一步步把他推向了悲剧。&lt;/p&gt;
+&lt;p&gt;这几年我对于“优绩主义”这个话题，有了很多新的感悟。&lt;/p&gt;
+&lt;p&gt;以前我总以为，离开学校、考试、分数之后，我就能慢慢摆脱优绩主义的那套评判标准。后来才发现，职场其实依旧是一个优绩主义的世界，只不过分数，被换成了 KPI、绩效等等。&lt;/p&gt;
+&lt;p&gt;更可怕的是，这种评价逻辑并不只存在于学校和职场，它几乎已经被植入了很多东亚人的骨子里。&lt;/p&gt;
+&lt;p&gt;过年的时候，我回老家，最常听到的调侃就是: “某某以前考上了 985，现在也不知道在干嘛。”&lt;/p&gt;
+&lt;p&gt;每次听到这种话，我心里都会很不舒服。&lt;/p&gt;
+&lt;p&gt;因为这句话的背后，其实藏着一套非常根深蒂固的评价逻辑: 一个人的人生，仿佛必须始终沿着一条清晰、体面、不断向上的轨道前进，才算没有辜负过去的努力。一旦后来没有活成大家预设中的样子，他过去所有真实的努力和经历，就好像都不再重要了。&lt;/p&gt;
+&lt;p&gt;为什么一个人考上了什么大学、进了什么公司、赚了多少钱，就能比他是否过得平静、快乐、充实，更值得被讨论呢？&lt;/p&gt;
+&lt;p&gt;我其实很期待看到，在 AI 时代下，优绩主义体系的崩盘。&lt;/p&gt;
+&lt;p&gt;当 AI 抹平了大部分人的智力差之后，或许真正值得被重新看见的，不再是一个人有多符合标准，而是他是否还能保有自己的判断、感受和选择生活的能力。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;topic5n---一月到三月的生活碎片-&quot;&gt;Topic(5/n) - 一月到三月的生活碎片 🧩&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;简单地记录一些碎片，按照时间顺序～&lt;/p&gt;
+&lt;p&gt;1️⃣ 一月去了香港迪士尼，被冰雪奇缘的最后一段失重吓得不行，居然还有抓拍 0.0? 实在是太坏了！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_0079-d29f811c.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;2️⃣ 写的第一个 APP 快发布啦，最近在搞审核。&lt;/p&gt;
+&lt;p&gt;它是一款基于占星，帮助用户缓解焦虑的 APP，最近我会找时间跟大家说说关于它的故事～&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/enflow-ic-36a283f1.webp&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;3️⃣ 看完了美剧《同乐者》，如果你喜欢《黑镜》这一类讨论主体性与科技关系的美剧，我强烈推荐这部剧！&lt;/p&gt;
+&lt;p&gt;它的设定非常有意思: 世界上大多数人被某种“集体意识”同化，变得温和、快乐、没有冲突，但也失去了鲜明的自我；&lt;/p&gt;
+&lt;p&gt;主角是少数没有被同化的人之一，整部剧围绕一个核心问题: 如果每个人都放下个体意识，换来一个人人和谐的世界，这样的世界真的会更好吗？&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/2026-03-29-22.21.19-d232da8f.webp&quot; width=&quot;600&quot; height=&quot;393&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;4️⃣ 二月 26 号在家过了生日 🎂&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_0643-64dfae88.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_0435-4b306703.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;5️⃣ 去看了电影《挽救计划》，我很喜欢这部电影，虽然它有些故事逻辑有点牵强，但我真的很喜欢这部电影对男主的塑造，没有硬凹一个被伤害了还要原谅一切、无私奉献的英雄，而是讲一个很 real 的普通人，这一点深得我心。&lt;/p&gt;
+&lt;p&gt;以及一些宇宙的画面，拍的巨好看，在电影院看很震撼～&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_1172-562dfbde.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_202601-03/IMG_1160-aa3669a6.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; style=&quot;box-shadow: 0 6px 20px rgba(0,0,0,0.2); border-radius: 12px;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;写在最后&quot;&gt;写在最后&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;好多人问我后面还会不会拍 vlog，我想说“会的”，但还需要一些时间。&lt;/p&gt;
+&lt;p&gt;老观众应该知道，我断更是因为剪 vlog 的工作量实在是太大了，占用了很多时间，后面更新得有点力不从心了。&lt;/p&gt;
+&lt;p&gt;最近我在研究 AI 结合达芬奇辅助我剪 vlog，想办法让剪辑的工作量减轻一些，这样也有助于后续我持续更新，请你们再等我一会嗷～ 💓&lt;/p&gt;
+&lt;p&gt;你们放心，所有的文字还是由我自己输出，只是在剪辑方面做一些提效，&lt;strong&gt;我给自己定的一条红线就是，“绝对不会在社交平台上发表 AI 生成的观点”，这是我非常严肃的底线&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;周报会尽量恢复更新哒！&lt;/p&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;期待下次见面！&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>2025：承启之年</title>
-    <link href="https://polebug.github.io/2026/01/18/plog_2025/"/>
-    <id>https://polebug.github.io/2026/01/18/plog_2025/</id>
+    <link href="https://blog.polebug.com/2026/01/18/plog_2025/"/>
+    <id>https://blog.polebug.com/2026/01/18/plog_2025/</id>
     <published>2026-01-18T13:41:00.000Z</published>
-    <updated>2026-07-19T09:05:52.564Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;前段时间，我翻完了我在 2025 年所有的日记、文字、照片、视频。我觉得我的 2025 年和 2020 年还挺像的，它们都很像是一个承上启下的阶段。&lt;/p&gt;
-&lt;p&gt;2020 年，我结束了 B 站的实习、搞完了大学的毕设，毕业去了腾讯</summary>
-        
-      
-    
-    
-    
-    
+    <updated>2026-01-18T13:41:00.000Z</updated>
+    <summary type="html">前段时间，我翻完了我在 2025 年所有的日记、文字、照片、视频。我觉得我的 2025 年和 2020 年还挺像的，它们都很像是一个承上启下的阶段。 2020 年，我结束了 B 站的实习、搞完了大学的毕设，毕业去了腾讯 wxg，这也是我第一…</summary>
+    <content type="html">&lt;p&gt;前段时间，我翻完了我在 2025 年所有的日记、文字、照片、视频。我觉得我的 2025 年和 2020 年还挺像的，它们都很像是一个承上启下的阶段。&lt;/p&gt;
+&lt;p&gt;2020 年，我结束了 B 站的实习、搞完了大学的毕设，毕业去了腾讯 wxg，这也是我第一次来广州，中间在租房、工作中经历了一系列坑事，一直到年底才真正安稳下来。&lt;/p&gt;
+&lt;p&gt;回看 2025 年的经历也很折腾：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 月买了人生第一个房子，开始关注家居、装修方面；&lt;/li&gt;
+&lt;li&gt;2-4 月去了杭州、大理、香港，中间参加了章鱼的婚礼、见了各种大学同学、在大理爱上了徒步、在香港突然状态超差… 等等；&lt;/li&gt;
+&lt;li&gt;5-6 月一直和团队在赶一个 AI + DeFi 的产品，但最后这个产品没能发布，在 7 月的时候我经历了裁员，正式和待了 3 年的 RSS3 团队告别；&lt;/li&gt;
+&lt;li&gt;8 月换了新工作，去了交易所，开始适应新的工作节奏和协作模式；&lt;/li&gt;
+&lt;li&gt;9 月充满了备婚的焦虑，10 月初办了订婚宴；&lt;/li&gt;
+&lt;li&gt;11-12 月，我消化完这一整年的变化，重新开始做自己想做的事，尝试了高频量化开发，还在 vibe coding 做一个玄学 + 心理学的 APP；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2025 年对我来说是一个「承启之年」，因为在这一年，我结束了许多旧的经验、身份、惯性，开始为下一阶段的人生设定坐标。&lt;/p&gt;
+&lt;p&gt;我将总结一下，这一年发生的几个内在变化，希望给未来的自己留下一些线索。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;一关于-ai-变革时代的焦虑&quot;&gt;一、关于 AI 变革时代的焦虑&lt;/h4&gt;
+&lt;p&gt;2025 年 Vibe Coding 的变化简直惊人，我对 AI 的态度也发生了几种不同的转变。&lt;/p&gt;
+&lt;p&gt;年初的时候，AI 写代码还写得非常糟糕，它一度让我感到烦躁。这个烦躁源于两点：一是我经常跟它来回 battle，感觉自己在浪费时间；二是 AI 的出现，让我不能像以前那样沉浸写代码，注意力总是被打断。&lt;/p&gt;
+&lt;p&gt;与此同时，它引发了我第一阶段的焦虑：&lt;strong&gt;感觉用 AI 写代码没有成长 1️⃣。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以前的成长，往往来自于过程中的卡顿与突破，而现在更多的是在验证 AI 的输出。我很难再从写代码中获得以往那种确定的积累感，也很难确认被 AI 生成的结果在多大程度上真正转化成了自己的能力。&lt;/p&gt;
+&lt;p&gt;再到后来，Claude Code 和 Gemini3 Pro 出现了，AI 变得无比聪明。它可以完成我 70% 的工作内容，让我每天的工时缩短了一倍。我尝试了几次 vibe coding，发现 AI 在我不熟悉的领域，同样可以生成完成度很高的 demo。&lt;/p&gt;
+&lt;p&gt;我对 AI 的定义，逐渐从“辅助工具”，转变成“我的伙伴、老师”，它可以补全我能力的短板，帮我消除陌生领域带来的学习成本。&lt;/p&gt;
+&lt;p&gt;在这种情况下，&lt;strong&gt;第一阶段的焦虑反而被消除了，我的心态彻底地躺平 2️⃣&lt;/strong&gt;：以 AI 现在进化的速度来说，用不了 2 年就能成为所有领域的专家，到那个时候“个人的技术能力有多强”，这个问题根本已经不重要了，有了 AI 这个第二大脑，“每个人都是专家”。&lt;/p&gt;
+&lt;p&gt;我开始完全享受 AI 带给我的便利，不仅仅用它去解决工作中的问题，在任何迷茫、焦虑、不知道该怎么做的时候，我都会去找 AI 聊聊，让它给我一些建议。&lt;/p&gt;
+&lt;p&gt;但随着 AI 能力越来越强，我看到了各行各业的人用 vibe coding 做出的东西，&lt;strong&gt;又陷入了另外一种焦虑 3️⃣：&lt;/strong&gt;&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2025/image-d8e3688a.webp&quot; width=&quot;800&quot; height=&quot;168&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;当技术的护城河被消除之后，我开始羡慕其他行业的人，他们相比于程序员拥有了更多的视野，我时常感觉自己没什么创造力，审美也不太行。&lt;/p&gt;
+&lt;p&gt;2025 年，我确切地感觉到，我们现在正处于一个变革时代的浪潮中。就像马斯克在访谈里所说的那样：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“My prediction is in less than 20 years working will be optional. The advancements in AI and robotics will bring us to the point where working is optional, but then at a certain point AI will actually saturate on anything humans can think of. If you can think of it, you can have it will be the future.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“如果你能想得到，你就能拥有它”，想象力将成为这个时代最核心的生产力。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;二走在知行合一的道路上&quot;&gt;二、走在“知行合一”的道路上&lt;/h4&gt;
+&lt;p&gt;2025 年，我深入了解“知行合一”这个词之后，我意识到我所有的焦虑都是源于“知、行不一致”。当我正在做的事情和我真正的想法背道而驰的时候，内心就会不断产生摩擦感，继而演变成焦虑、烦躁，以及对当下的逃离。&lt;/p&gt;
+&lt;p&gt;对我来说，一般会有两种场景导致我的“知行不一致”。&lt;/p&gt;
+&lt;p&gt;一是考虑到别人的感受，而选择压缩自己的真实想法。作为一位 INFJ，我很难做到“扫兴”或者拒绝别人，就会顺着环境做出妥协的选择，但是这些选择并非我的真正意愿；&lt;/p&gt;
+&lt;p&gt;二是面对困难或不确定性时的本能退缩。当有些事情在我看来难度很高，或者需要付出长期投入时，我往往会下意识地选择回避，先去完成那些更容易、反馈更快的事情。但是这种“回避”并没有解决问题，我内心其实很清楚，真正重要的事情仍然停在原地，而我只是绕开了它；&lt;/p&gt;
+&lt;p&gt;意识到这些问题之后，我逐渐在“知行合一”方面有了一些进步，对自己的内心也更加真诚了。&lt;/p&gt;
+&lt;p&gt;具体的做法就是，当我在做 A 事情的时候，如果同时在焦虑 B 事情，那我就会把 A 事情停了，优先解决那些真正让我焦虑的问题。&lt;/p&gt;
+&lt;p&gt;“知行合一”这个做法让我挺受益的，它让我做事情更投入了，当那些内心摩擦消失之后，我更容易进入心流状态，也更享受当下；并且，它治好了我的“拖延症”，当我遵循内心真正认可的方向去行动时，拖延反而很少再出现。我也意识到，很多拖延其实并不是懒，也不是行动力、执行力低，而是内心并不认同这件事。&lt;/p&gt;
+&lt;p&gt;2026 年，我会继续贯彻“知行合一”的理念，保持对自己 real～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;三房子与自我认知内在世界的联系&quot;&gt;三、房子与自我认知、内在世界的联系&lt;/h4&gt;
+&lt;p&gt;其实在 2024 年之前，我是一个“不买房主义”，因为从各种纬度来说，买房都是一件风险很高的事情，尤其是对于房地产经济破灭的当下来说。&lt;/p&gt;
+&lt;p&gt;后来机缘巧合，我了解到道家的“元辰宫”，可以简单理解为“内在世界的居所”，它在意识形态中像一个普通的房子或者四合院，你的事业、生活、感情、内在与这个房子的格局布置是息息相关的。&lt;/p&gt;
+&lt;p&gt;这个概念启发了我，我意识到：&lt;strong&gt;房子其实是一个人内在世界的映射&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;就比如，一个热爱生活的人，他会种很多花草树木，可能会养很多小动物，可能会在房间里放很多生活照片；一个热爱读书的人，他会有一个大的书房或者书架，里面放着各种各样的书；一个热爱音乐的人，家里可能会有各种乐器，会有一个很好的音响…… 等等等等。&lt;/p&gt;
+&lt;p&gt;同时我也意识到，如果我一直在租房，我就会失去“想要布置”的心情，也会担心房东找我麻烦，或者哪天就要搬走。&lt;/p&gt;
+&lt;p&gt;于是，我决定要买一个房子，它对我来说不再是一个“投资”，而是源于我想要打造一个理想的载体，一个可以真正安放自我、沉淀思绪的空间。&lt;/p&gt;
+&lt;p&gt;当我在思考这个空间的排列布置的时候，我也在思考“我想要过上一种什么样的生活”，这个问题还在持续探索中～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;四阅读方面的感悟&quot;&gt;四、阅读方面的感悟&lt;/h4&gt;
+&lt;p&gt;今年看了一些长篇的书，所以阅读书籍的数量不算多，平均下来刚好是一个月一本书的样子。&lt;/p&gt;
+&lt;p&gt;其中，我最喜欢的小说是《源泉》，作为一个喜欢理想主义 + 个人主义的人，这个本书带给我很多力量，并且里面有很多哲学的讨论都非常精彩。2026 年我打算再看看兰德的其他书，《理想》或者是《阿特拉斯耸耸肩》。&lt;/p&gt;
+&lt;p&gt;年初的时候，看了黑塞的《荒原狼》我也很喜欢。黑塞真的太会写人性与内在世界了，他笔下的孤独、自由、现实与精神世界的拉扯、意义与自我认同的探讨，都让我产生了很强的共鸣。最近又看完了他的《在轮下》，这本书我想单开一篇讲讲。&lt;/p&gt;
+&lt;p&gt;《当下的力量》这本书对我很有启发，它解答了一个很重要的问题：“人为什么会感到痛苦，以及如何从痛苦中解脱出来”。看完这本书之后，我还经常把它翻出来读一读，时刻提醒自己：“停止对过去、未来的焦虑，我拥有的只有当下这个时刻”。&lt;/p&gt;
+&lt;p&gt;下面这几本书也不错：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《消失的多巴胺：为什么你越来越不快乐？》&lt;/li&gt;
+&lt;li&gt;《也许你该找个人聊聊》&lt;/li&gt;
+&lt;li&gt;《做难而正确的事》&lt;/li&gt;
+&lt;li&gt;《布鲁克林有棵树》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2026 年要读更多的书！我还买了一本本子做读书笔记 ⬇️ 感觉阅读的动力更足了 😁&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2025/01d0a0e1154cafeae58015cf38b57eb0-b32198e3.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;最近几年，每当到 1231 的那天，我都会给新年的自己写一封信。&lt;/p&gt;
+&lt;p&gt;以前的我，会把信写的很长很长，希望自己实现各种各样的目标。但今年的信，我写得格外的短，我对 2026 年的自己只有一个愿望：&lt;strong&gt;“我希望你可以享受当下”&lt;/strong&gt;，这就足够了。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2025/DSCF6322-31e44cb3.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Bless All.&lt;/strong&gt;&lt;/p&gt;</content>
   </entry>
-  
+  <entry>
+    <title>2025 最后一天简记</title>
+    <link href="https://blog.polebug.com/2025/12/31/plog_20251231/"/>
+    <id>https://blog.polebug.com/2025/12/31/plog_20251231/</id>
+    <published>2025-12-31T15:49:00.000Z</published>
+    <updated>2025-12-31T15:49:00.000Z</updated>
+    <summary type="html">2025 的最后一天，我早早地下班出去觅食，随性去了一家甜品店（大概是因为只有甜品店不用排队吧），吃了车仔面和焦糖双皮奶，还加了桃胶。 回家之后，和母上通了一会电话，唠叨了会家中琐事。 然后洗了个澡，安静地坐在桌前，很认真地给 2026 的…</summary>
+    <content type="html">&lt;img src=&quot;https://img.polebug.com/plog_20251231/01-6a4c16ff.webp&quot; alt=&quot;&quot; width=&quot;1504&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_20251231/02-9cabed17.webp&quot; alt=&quot;&quot; width=&quot;1504&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_20251231/03-fb313d77.webp&quot; alt=&quot;&quot; width=&quot;1504&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;2025 的最后一天，我早早地下班出去觅食，随性去了一家甜品店（大概是因为只有甜品店不用排队吧），吃了车仔面和焦糖双皮奶，还加了桃胶。&lt;/p&gt;
+&lt;p&gt;回家之后，和母上通了一会电话，唠叨了会家中琐事。&lt;/p&gt;
+&lt;p&gt;然后洗了个澡，安静地坐在桌前，很认真地给 2026 的自己写一封信。并用一张空白的纸折了个「纸袋」，粘在日记本的最后一页。这样，等到我把日记本写完，2026 年也就结束了，那时候就可以把信再拿出来看看～&lt;/p&gt;
+&lt;p&gt;然后我花了一笔大价钱，买了一个 Apple 开发者账号。最近我在写一个 APP，这次我很有信心会把它发出来，所以提前注册了开发者账号，算是给自己的新年大礼～&lt;/p&gt;
+&lt;p&gt;而此刻，我正在抱着猪咪们，记录下 25 年最后的模样，安静地等待新年的到来。&lt;/p&gt;
+&lt;p&gt;祝大家新年快乐，一切顺利～🎉&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>#10 “意想不到”是我这两个月的关键词｜202511-12 总结</title>
+    <link href="https://blog.polebug.com/2025/12/28/plog_10_202511-12/"/>
+    <id>https://blog.polebug.com/2025/12/28/plog_10_202511-12/</id>
+    <published>2025-12-28T15:06:00.000Z</published>
+    <updated>2025-12-28T15:06:00.000Z</updated>
+    <summary type="html">嗨朋友们，又是好久不见～ 🙈 今天是 12 月 27 号，也许这时候大家已经开始写 2025 年终总结了，但我还是想好好回顾一下最近这两个月发生的事情。 今年 1-10 月我有很强的推背感，很多事情像是命运推着我走的，比如我突然想买房了、…</summary>
+    <content type="html">&lt;p&gt;嗨朋友们，又是好久不见～ 🙈&lt;/p&gt;
+&lt;p&gt;今天是 12 月 27 号，也许这时候大家已经开始写 2025 年终总结了，但我还是想好好回顾一下最近这两个月发生的事情。&lt;/p&gt;
+&lt;p&gt;今年 1-10 月我有很强的推背感，很多事情像是命运推着我走的，比如我突然想买房了、突然被裁员了、突然换工作了、我和我对象家里突然就安排好订婚了…… 等等，今年发生的几件大事，其实都不在我年初写的新年计划中。&lt;/p&gt;
+&lt;p&gt;而最近这两个月，也就是 11-12 月，我感觉“我终于回来了”。&lt;/p&gt;
+&lt;p&gt;家里人停止了催婚、工作上也差不多稳定了，我终于可以全心全意地去做我想做的事了。被压抑了这么久之后，我的 11-12 月有一种史无前例的“爽”，整个人的行动力、精神力也到了顶峰状态。&lt;/p&gt;
+&lt;p&gt;但有意思的是，命运仍在给我制造各种惊吓和惊喜，这两个月我又经历了很多事情，在工作、生活、交友、搞钱这些方面，又有了许多新的感悟。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;️-1-命运的齿轮开始了转动&quot;&gt;⚙️ 1. 命运的齿轮开始了转动&lt;/h2&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_10_202511-12/01-3e2663ac.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;935&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;起初是 2024 年 5 月，我在 HelloTalk 上跟别人练口语的时候，遇到了一位抽塔罗牌的网友，她让我问一个问题，我就问了我这几年工作怎么样。结果她说，我 25-26 年会出现一个 Idea，然后我会去创业（全职/兼职都有可能）。&lt;/p&gt;
+&lt;p&gt;当时她说完之后，我自己也去看了我 26 年的星盘，确实是在创业的样子。我也因为这件事，在 24 年浅试了一下水晶创业，结果也还不错，也算是给未来的自己提前积攒点经验 🤣 hhhh&lt;/p&gt;
+&lt;p&gt;然后 25 年我一直被各种杂事打乱节奏，我就没顾得上创业这件事。&lt;/p&gt;
+&lt;p&gt;一直到 11 月中，朋友说可以一起来做高频量化，很巧的是当时有个 cex 的人找到我，说可以给我们手续费补贴，开的条件非常好。&lt;/p&gt;
+&lt;p&gt;我们差不多搞了一个月左右的量化系统，做的纯 Maker，最后很绝望地发现，纯 Maker 总体还是很亏钱的，就算加上 cex 给做市团队的手续费补贴，还是很难赚。最优解就是，给 Maker 加预测模型，并配一些 Taker，这样总体才能赚到钱。&lt;/p&gt;
+&lt;p&gt;所以，这周一的时候，我和另外一个朋友达成一致，先暂停量化系统的开发，他去研究一下预测模型，然后我们再继续做这件事情。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;被量化搞得有点 emo 之后，我开始跟 GPT/Gemini 盘，我到底还可以去做什么？&lt;/p&gt;
+&lt;p&gt;我跟 AI 详细地列举了，我擅长的方向、有什么技能、有哪些资源…… 当我们聊到一个，关于个人成长 + 命理 + 陪伴的应用的时候，我的脑子里突然出现了这个 APP 的画面。甚至我还没来得及思考，它的定位、功能、模块，我的直觉先我一步触碰到了这个应用的形状。&lt;/p&gt;
+&lt;p&gt;然后我就觉得 OK，最近这几年我因为占星，了解到了很多人的焦虑之处，我觉得这个产品可以帮助大多数人缓解他们的焦虑。&lt;/p&gt;
+&lt;p&gt;所以最近这几天，我就在实现这个 Idea，可以看到我的 github 都复活了 hhhhh&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_10_202511-12/02-43e900a2.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;328&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;目前进展还挺顺利的，我估计 2-3 周左右会发出来给大家看看～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;-2-工作只是价值交换切忌投入任何情感&quot;&gt;👩‍💻 2. ”工作只是价值交换，切忌投入任何情感”&lt;/h2&gt;
+&lt;p&gt;12 月中，我在工作上遇到了一个小插曲：我在跟组里的人过某个新需求的技术方案时，leader 指出现在系统的整体架构不合理，并提出一种新的架构，让我进行整改。&lt;/p&gt;
+&lt;p&gt;当时我很郁闷，因为我觉得我 leader 的架构更不合理，甚至异想天开，没有考虑实际情况。&lt;/p&gt;
+&lt;p&gt;但多年职场的历练，已经让我不像从前那么“锋利”，当下我没有直接顶撞对方，而是选择先缓一步：“那我去把现在的架构和你的方案，重新梳理出来，我们一起进行对比和评估。”&lt;/p&gt;
+&lt;p&gt;于是，那几天我暂停了手里的开发任务，去梳理这个“意料之外”的架构争议。&lt;/p&gt;
+&lt;p&gt;在写文档的时候，我不自觉地开始心累：“现在这个架构也是之前大家一起评估过的，为什么现在才提出问题？”，又或者是：“我本来应该在愉快地写代码，现在还要花这么多时间梳理这个东西”…… 等等等等，一系列的气愤、郁闷、委屈、无语的情绪，扑面而来，这让我又开始讨厌工作。&lt;/p&gt;
+&lt;p&gt;正当我崩溃的时候，脑子里突然出现了一句话：&lt;strong&gt;“工作只是价值交换，切忌投入任何情感”。&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_10_202511-12/03-77304bab.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;这句话很神奇。&lt;/p&gt;
+&lt;p&gt;当我看到它的第一眼，我立马就冷静下来了；当我把它写下来，贴在工作电脑的屏幕上，我之前所有的内耗情绪在一瞬间都消失了。&lt;/p&gt;
+&lt;p&gt;是的，其实我很清楚，工作只是价值交换，它是一种能让我稳定赚钱的、最简单的渠道，我只需要完成我的工作内容，就可以获得很大一笔钱。这是目前我能接触到的，最高效、简单、稳定的赚钱方式。&lt;/p&gt;
+&lt;p&gt;那既然工作只是赚钱方式，我又何必为它陷入无聊的内耗呢？我就应该每天花一部分时间搞工作，时间一到就下班，只要我能胜任工作，没有人会有异议。&lt;/p&gt;
+&lt;p&gt;想通了这些事之后，我内心平静，决定不再为工作上的幺蛾子事情内耗。&lt;/p&gt;
+&lt;p&gt;而事情的最后，我又拉了一次会议，把现在的架构和 leader 提出的新架构，从头到尾，从里到外，从优点到缺点，都跟组里人的讲了一遍。结论就是，保持现在的架构。也算是皆大欢喜了～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;-3-没想到我也有爱上运动的一天&quot;&gt;🧘 3. 没想到我也有爱上运动的一天&lt;/h2&gt;
+&lt;p&gt;最近这两个月，我还发生了一件神奇的事：我居然喜欢上运动了。&lt;/p&gt;
+&lt;p&gt;作为一个运动白痴 + 体力渣渣的人，我从小到大都觉得运动是一件非常痛苦的事，我非常不擅长、且不喜欢。但最近，我真的感觉到运动的快乐了！而且，很积极地希望自己继续运动下去。&lt;/p&gt;
+&lt;p&gt;这种心态上的转变，其实并不是一瞬间的，它是一个非常漫长的过程。&lt;/p&gt;
+&lt;p&gt;最开始是 7 月的时候，我在小红书刷到，附近有普拉提卡的转让。当时感觉自己比以前新陈代谢慢了，容易发胖，以及久坐导致弯腰驼背、假胯等各种小毛病。所以，我就找那个转让的姐妹，收了 41 次的普拉提课卡。&lt;/p&gt;
+&lt;p&gt;由于普拉提这种力量+柔韧+技巧的运动，对我来说还是难度太大了。到现在 5 个月了，我也只是断断续续地上了 15 节课，平均一两周劝自己去上一次课。&lt;/p&gt;
+&lt;p&gt;但随着上课次数的增加，我开始发生一系列的变化：我对课程的接受度在不断提高，上课中感受到的痛苦开始降低，运动之后的快感开始大幅提升，再加上保持运动改善了我的身体。这些持续的正反馈，让我开始喜欢运动这件事了。&lt;/p&gt;
+&lt;p&gt;突然想到之前看的《福格行为模型》说到，保持习惯的秘诀是能力 + 动力。&lt;/p&gt;
+&lt;p&gt;如果一件事变得越来越简单、容易做到，并且这件事可以持续带给你动力、正反馈，那它就会变得很容易坚持下去。&lt;/p&gt;
+&lt;p&gt;普拉提对我来说也是这样。随着上课带来的身体变化，我逐渐可以适应课程的难度，而运动本身就是充满正反馈的事情。运动结束时，我感觉自己的身体变得轻盈，而在日常中，我也能不断发现运动带来的收益。&lt;/p&gt;
+&lt;p&gt;新的一年也要坚持运动下去～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;-4-读完了布鲁克林有棵树&quot;&gt;🎄 4. 读完了《布鲁克林有棵树》&lt;/h2&gt;
+&lt;p&gt;我很喜欢这本书。它总能让我回想起我的童年，想起那些特别而又温暖的回忆。并且，这本书给出了一个“人为什么要读书”的答案：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;玛丽·罗姆利言简意赅地解释说，“孩子必须有想象力，想象力是无价之宝。孩子必须有一个秘密世界，那里住着世间不存在的东西。她得相信这个秘密世界，这很重要。她得从相信这个不真实的秘密世界开始。这样，当世界变得太丑陋，无法生活时，孩子就可以回头生活在她的想象中。我自己一大把年纪了，还觉得有必要回忆圣徒们神奇的生活，回忆人世间发生的伟大奇迹。心中有这些东西，我才能超越日常的艰难困苦。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;“人为什么要读书”，不是为了学历、不是为了好的工作，而是让人在生活之中，仍然保持不被生活同化的部分。它让人在尚未经历苦难之前，先拥有理解苦难的语言；在被现实击中之前，先知道世界并非只有眼前这一种样貌。&lt;/p&gt;
+&lt;p&gt;人世间有太多的困难、痛苦、无奈、丑陋，而读书可以帮助我们渡过这漫漫长路。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;这两个月其实还发生一些事情，文章中不想再详细展开了。&lt;/p&gt;
+&lt;p&gt;最气的一件事是 11 月，我看不惯前司一边裁员一边招人，加入了网络混战之中，而最后被“同伴”背刺。于是，我对自己的行为准则又加了一条：“切忌交浅言深”，我的正义感有的时候会被别人当枪使，我也是万万没有想到。&lt;/p&gt;
+&lt;p&gt;但也发生了很多开心的事，我交了一些新朋友，其中有一位女生和我一样是 INFJ，我震惊地发现，我们俩的家庭非常相似，都有一个强势的、迫切希望我们去考公的妈，和一个沉默寡言的爸 hhhhhh&lt;/p&gt;
+&lt;p&gt;就先写到这吧～ 下周或者下下周会更更 2025 年的总结～&lt;/p&gt;
+&lt;p&gt;明年再见哟朋友们 👋（还有 3 天就 2026 年啦&lt;/p&gt;
+&lt;p&gt;没更新的日子里，其实也挺想念网上的朋友们的，希望你们一切顺利～&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>结束了忙碌的一周，读完了《源泉》 ·W46复盘</title>
+    <link href="https://blog.polebug.com/2025/11/23/weekly_2025w46/"/>
+    <id>https://blog.polebug.com/2025/11/23/weekly_2025w46/</id>
+    <published>2025-11-23T14:36:00.000Z</published>
+    <updated>2025-11-23T14:36:00.000Z</updated>
+    <summary type="html">是 𝟐𝟎𝟐𝟓 𝐖𝟒𝟔(𝟏𝟏𝟏𝟕-𝟏𝟏𝟐𝟑) 的复盘与思考 嗨朋友们 👋，不知不觉又过完了一周～ 你们这周过得怎么样！ 我这周超级无敌忙，主要是写代码的时间长了许多，中途也很少停下来休息，偶尔在看书、洗澡、吃饭…</summary>
+    <content type="html">&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/01-dbbee53e.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/02-0b86a74b.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/03-f8777be0.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/04-6d82d174.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/05-cf1d71ae.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w46/06-6a4b1521.webp&quot; alt=&quot;&quot; width=&quot;1214&quot; height=&quot;1622&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;是 𝟐𝟎𝟐𝟓 𝐖𝟒𝟔(𝟏𝟏𝟏𝟕-𝟏𝟏𝟐𝟑) 的复盘与思考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;嗨朋友们 👋，不知不觉又过完了一周～ 你们这周过得怎么样！&lt;/p&gt;
+&lt;p&gt;我这周超级无敌忙，主要是写代码的时间长了许多，中途也很少停下来休息，偶尔在看书、洗澡、吃饭的时候得以喘息。今天复盘的时候，感觉这周过得飞快 😱&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;输入与输出方面：&lt;/p&gt;
+&lt;p&gt;▨ 这周看完了《源泉》，撒花 🎉&lt;/p&gt;
+&lt;p&gt;▨ 开坑了《布鲁克林有棵树》，有位朋友在留言里推荐给我的，这周开始读&lt;/p&gt;
+&lt;p&gt;▨ 这周分享欲不行，只输出了一篇周复盘&lt;/p&gt;
+&lt;p&gt;▨ 看了一些量化框架的开源代码&lt;/p&gt;
+&lt;p&gt;▨ 最近下班都在写一个高频量化代码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;生活方面：&lt;/p&gt;
+&lt;p&gt;▨ 回广州之后感冒了，每天在流鼻涕+喉咙痛中度过，到周五差不多好了～&lt;/p&gt;
+&lt;p&gt;▨ 本周的运动断了，因为感冒没去普拉提&lt;/p&gt;
+&lt;p&gt;▨ 差不多是 00:00-8:30 左右的作息，希望下周可以早点睡&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本期想跟你们分享的话题是：&lt;/p&gt;
+&lt;p&gt;1️⃣ 谈谈利他主义和个人主义的代表：彼得·吉丁和霍华德·洛克（读《源泉》的记录与思考）&lt;/p&gt;
+&lt;p&gt;2️⃣ “怎么做”变得廉价，“做什么”变成了黄金（对于 AI 时代的思考）&lt;/p&gt;
+&lt;p&gt;3️⃣ 20251117-1123 本周杂谈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望大家看得开心～ 欢迎留言呀～&lt;/p&gt;
+&lt;p&gt;下周再见咯～ 💓&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>#9 最重要的是找到自洽的方式</title>
+    <link href="https://blog.polebug.com/2025/11/16/plog_9/"/>
+    <id>https://blog.polebug.com/2025/11/16/plog_9/</id>
+    <published>2025-11-16T11:35:00.000Z</published>
+    <updated>2025-11-16T11:35:00.000Z</updated>
+    <summary type="html">封面里的小孩并不是我，是前几天在洱海散步时遇到的一个孩子（我分不清小孩的性别，暂且用“他”来称呼）。 当时他的爸妈正在洱海边上摆摊，他突然兴冲冲地往外跑，一个人跑了几米。我看见了都有些着急，因为他看起来刚学会走路，随时要摔倒的样子。跑了一会…</summary>
+    <content type="html">&lt;p&gt;封面里的小孩并不是我，是前几天在洱海散步时遇到的一个孩子（我分不清小孩的性别，暂且用“他”来称呼）。&lt;/p&gt;
+&lt;p&gt;当时他的爸妈正在洱海边上摆摊，他突然兴冲冲地往外跑，一个人跑了几米。我看见了都有些着急，因为他看起来刚学会走路，随时要摔倒的样子。跑了一会之后，他转过头来，发现爸妈正在着急地喊他回去。但他似乎听不懂，只觉得很有趣，发出了特别开心的咯咯笑。&lt;/p&gt;
+&lt;p&gt;我瞬间就被他的笑声感染了，他的爸妈也被逗笑了，原本焦虑的表情变得柔软。&lt;/p&gt;
+&lt;p&gt;看着他单纯地笑，我突然意识到：我们小时候就是这样，完全沉浸在自己当下的快乐里，不被外界期待牵扯。而长大之后，我们却渐渐学会了压抑、揣测、取悦，开始用别人的眼光来衡量自己的每一步。情绪不再自然流动，取而代之的是不断自我审视和怀疑。&lt;/p&gt;
+&lt;p&gt;在大理的这一周，我遇到了许多这样的时刻，它们都不约而同地让我想到一个命题“自洽”。我也有了许多想法，想和你们分享。&lt;/p&gt;
+&lt;hr&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_9/01-c07b8d2c.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;h2 id=&quot;1-你看他们这样也很舒服&quot;&gt;1. “你看他们这样，也很舒服”&lt;/h2&gt;
+&lt;p&gt;有一天中午，我正在本地人开的餐厅吃饭（饭店叫波本音，在大理的一周我吃了6顿）。&lt;/p&gt;
+&lt;p&gt;隔壁桌有一位来旅游的妈妈，她指着餐厅后面的院子对女儿说，“你看，舒服的生活没有标准。像这样住在一个院子里，晒着太阳，也很舒服，你知道了吗？”。&lt;/p&gt;
+&lt;p&gt;这段话碰巧被我听到了，内心瞬间五味杂陈。&lt;/p&gt;
+&lt;p&gt;作为一位小镇做题家，从大人嘴里听到的从来都是：“你看谁家的孩子在做什么工作啦，年薪多少啦，或者又嫁给哪个有钱人啦”，从未听过一个长辈对我说，不用去比较、不用去攀附、不用去证明，而是去拥有一种“晒着太阳也很舒服”的生活。&lt;/p&gt;
+&lt;p&gt;那位妈妈说话的声音很小，但那天我却听得异常清晰。就好像也有一位长辈对我说：“舒服有很多种方式，不是所有的舒服都要靠努力、靠成绩去换，就算是普通的生活也可以过得很舒服。”&lt;/p&gt;
+&lt;p&gt;我们从小被教育要努力追逐所谓的“好生活”，但或许“好生活”根本不需要努力呢？当我们放下外界的评价体系、放下旁人的眼光，眼下的生活其实已经足够好了。&lt;/p&gt;
+&lt;p&gt;就在那一瞬间，我感到如释重负。心里那些积累已久的抱怨、欲望和压力，仿佛在不经意间轻轻瓦解了一部分。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我想自洽的第一步大概就是：允许自己在此时此刻感到舒服，承认“现在的我、此刻的生活”是可以被肯定的。把注意力从“我还缺什么”移回“我已经拥有什么”。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_9/02-7cdeaf26.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;567&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;h2 id=&quot;2-少年时该选鲜衣怒马还是选钱&quot;&gt;2. “少年时该选鲜衣怒马，还是选钱？”&lt;/h2&gt;
+&lt;p&gt;来大理之后，我经常遇到一些在大理“躺平”的年轻人。&lt;/p&gt;
+&lt;p&gt;就比如有一次，我在洱海边上的咖啡厅办公，一个下午都在和同事焦头烂额地搞上线，旁边坐着一个姐妹在气定神闲地织冬天的围巾。看到他们的生活方式，我总是会下意识地羡慕，感叹他们过上了一种自由潇洒的生活。&lt;/p&gt;
+&lt;p&gt;正当我迷茫的时候，碰巧刷到“也谈钱”的文章&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzUzNjE3NzQ3Nw==&amp;#x26;mid=2247494606&amp;#x26;idx=1&amp;#x26;sn=8ff324e64ff4e573a777ad6a266fd9a0&amp;#x26;scene=21#wechat_redirect&quot;&gt;《少年时该选鲜衣怒马，还是选钱》&lt;/a&gt;，解答了我心中许多困惑。&lt;/p&gt;
+&lt;p&gt;这篇文章中，有两个观点对我非常有启发，一是“始终用自己富余的资源，交换自己稀缺的”，二是“人不擅长预测自己未来的感受”。&lt;/p&gt;
+&lt;p&gt;也大的文章里说到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果财富对自己更稀缺，合适的选项就不是鲜衣怒马少年时，而是反过来用体验和时间交换财富。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当时间和体验变得稀缺，再用前期积累的财富交换时间和体验。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这种做选择的方式确实很有参考性。&lt;/p&gt;
+&lt;p&gt;对于那些在大理“躺平”的年轻人来说，在用自己此刻最富余的资源，比如时间、低成本的生活方式，去换取他们当下最稀缺的东西：自由、松弛感、生活掌控权。&lt;/p&gt;
+&lt;p&gt;但对我来说，我觉得财富、安全感、对未来的可控性更加稀缺，我更愿意用时间和精力去换这些资源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当然，这些选择没有对错之分，只是每个人此刻的人生阶段、资源结构、渴望与恐惧都不一样。所谓的“自洽”或许就是，此刻的我正在用最适合自己的方式生活。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;也大的另外一个观点我也很喜欢：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;平衡攒钱和消费时，大家经常会担心「有些事现在不做，以后就不是这个感觉了」。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;但，其实我们极不擅长预测自己未来的感受。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果一件事儿以前想做，长大后觉得不想了，我会挺开心的，多亏当时没做  如果体验的价值之一是回忆复利，我刚好躲过了一个没复利的选择。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这段话让我意识到：我们以为错过的是“体验”，但有时，我们是躲过了一种不会给未来带来价值的冲动。&lt;/p&gt;
+&lt;p&gt;人总是喜欢“浪漫化未来的自己”，但这种预测往往不准确。我们以为未来的自己会更想做某件事，会更珍惜某段旅程，会对某种体验心怀期待——可真正走到那个阶段时，我们的兴趣、目标、甚至快乐的衡量标准早就悄悄变了。&lt;/p&gt;
+&lt;p&gt;所以，把“现在不做就会遗憾”当成选择依据，其实并不可靠。我们真正需要的是，把注意力从想象中的未来收回来，落在当下的自己究竟缺什么、需要什么上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_9/03-da774deb.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;h2 id=&quot;3-知行合一的感觉很棒&quot;&gt;3. 知行合一的感觉很棒&lt;/h2&gt;
+&lt;p&gt;很久之前，我就听到了“知行合一”这四个字，但却一直没有贯彻这个理念。&lt;/p&gt;
+&lt;p&gt;以防有人没有听过王守仁的“知行合一”，我先简单说明一下。“知行合一”强调的是知中有行，行中有知，二者互为表里，不可分离。&lt;/p&gt;
+&lt;p&gt;我简单理解就是，你真正理解、认同的道理，要能落到实际行动中；而你的行动，也要源自内心真正认可的价值。&lt;/p&gt;
+&lt;p&gt;前段时间，我突然发现，很多让我焦虑的事情都是源于“知行不一致”。比如，我明明知道我该早点睡觉，但却总是拖延，第二天发困的时候懊悔自己怎么没有早睡。&lt;/p&gt;
+&lt;p&gt;每一次想做的和实际做的背道而驰之后，焦虑、压力和自责都会随之而来。&lt;/p&gt;
+&lt;p&gt;意识到这一点之后，我开始在周计划中提醒自己“知行合一”，于是我把这四个字写在了最显眼的地方，确保我每天打开本子都能看到它。&lt;/p&gt;
+&lt;p&gt;我给自己定了一个规矩：做事之前先思考自己是否认同。如果一件事，我是非常认同的，那我一定要按照自己想的去做，比如良好的生活作息、保持阅读的习惯，等等；反之，如果一件事，我并不真正认同，我就会先停下来，不盲目去执行。这样一来，我的行动就会减少外界的干扰，更多地源自内心真实的判断。&lt;/p&gt;
+&lt;p&gt;本周是贯彻“知行合一”的第九周。在这个过程中，我逐渐感觉到一种“顺畅感”，当内心的想法与实际行动保持一致时，自然会少了很多对抗和摩擦的内耗。“行”带来的正向反馈，也让我对“知”有了更深的理解。&lt;/p&gt;
+&lt;p&gt;这种知与行的互相印证，我觉得就是“自洽”的一种方式：你知道自己想要什么，你也真的这样去做了，行动和内心的感受不再背道而驰，自洽与平静自然就会随之而来。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;我想，人这一生最大的命题就是“如何与自己和解”，“如何找到一种自洽的生活方式”。我也在慢慢探索中，希望我的分享对你们也有帮助～&lt;/p&gt;
+&lt;p&gt;下期再见咯～ 👋&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>记录在大理那些平静且高能量的时刻·2025W45</title>
+    <link href="https://blog.polebug.com/2025/11/13/weekly_2025w45/"/>
+    <id>https://blog.polebug.com/2025/11/13/weekly_2025w45/</id>
+    <published>2025-11-13T03:58:00.000Z</published>
+    <updated>2025-11-13T03:58:00.000Z</updated>
+    <summary type="html">是 𝟐𝟎𝟐𝟓𝟏𝟏𝟎𝟖 - 𝟏𝟏𝟏𝟐 的记录与思考 嗨朋友们 👋，你们最近在做什么？ 上个月，我看到南航有淡季团购的活动，广州去大理往返只要 840 块（含机油）！这个价格实在是太心动了，我和队友立马订了 1108 …</summary>
+    <content type="html">&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/01-3822354c.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/02-fdb06ac4.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/03-3b429266.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/04-6ba1921a.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/05-3af0a929.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/06-1522bfe2.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/07-b4455f16.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/08-a9a837b0.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/09-8f8580d8.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/10-09d1acca.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/11-6c831225.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w45/12-754637f0.webp&quot; alt=&quot;&quot; width=&quot;1432&quot; height=&quot;1800&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;是 𝟐𝟎𝟐𝟓𝟏𝟏𝟎𝟖 - 𝟏𝟏𝟏𝟐 的记录与思考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;嗨朋友们 👋，你们最近在做什么？&lt;/p&gt;
+&lt;p&gt;上个月，我看到南航有淡季团购的活动，广州去大理往返只要 840 块（含机油）！这个价格实在是太心动了，我和队友立马订了 1108 早上飞大理的机票，1108-1115 在大理远程办公一周。&lt;/p&gt;
+&lt;p&gt;这是我第三次来大理，第一次是 21 年的 5 月，第二次是今年的 3 月，然后就是现在。&lt;/p&gt;
+&lt;p&gt;每一次来大理的体会都有很多不同之处，所以这篇 PLOG，我想跟你们聊聊：&lt;/p&gt;
+&lt;p&gt;1️⃣ 在每天自然醒后，看一场日出是什么样的体验（P2）&lt;/p&gt;
+&lt;p&gt;2️⃣ 在大理旅居的一些 Tips（P6）&lt;/p&gt;
+&lt;p&gt;3️⃣ 11月的大理是什么样的（P9）&lt;/p&gt;
+&lt;p&gt;4️⃣ 一些零碎的治愈片段（P12）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望大家看得开心～ 下期再见 💓&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>记录与复盘是打破无意识循环的开始·2025W44</title>
+    <link href="https://blog.polebug.com/2025/11/13/weekly_2025w44/"/>
+    <id>https://blog.polebug.com/2025/11/13/weekly_2025w44/</id>
+    <published>2025-11-13T03:23:00.000Z</published>
+    <updated>2025-11-13T03:23:00.000Z</updated>
+    <summary type="html">才发现公众号也可以发图文？让我把上周发的 PLOG 搬运过来～ [转圈][转圈][转圈] 是 𝟐𝟎𝟐𝟓 𝐖𝟒𝟒(𝟏𝟏𝟎𝟑-𝟏𝟏𝟎𝟕) 的复盘与思考 嗨朋友们 👋，又到周五啦～ 你们这周过得怎么样 ✨ 我的这周…</summary>
+    <content type="html">&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/01-1415552f.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/02-83386fbd.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/03-1026bac3.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/04-e19a4b75.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/05-741ae0cf.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/06-2bb0e753.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/07-3de2a501.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/08-3db13d74.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/09-4d42ceda.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;img src=&quot;https://img.polebug.com/weekly_2025w44/10-a047844e.webp&quot; alt=&quot;&quot; width=&quot;1650&quot; height=&quot;2000&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;才发现公众号也可以发图文？让我把上周发的 PLOG 搬运过来～ [转圈][转圈][转圈]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;是 𝟐𝟎𝟐𝟓 𝐖𝟒𝟒(𝟏𝟏𝟎𝟑-𝟏𝟏𝟎𝟕) 的复盘与思考&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;嗨朋友们 👋，又到周五啦～ 你们这周过得怎么样 ✨&lt;/p&gt;
+&lt;p&gt;我的这周，除了早上起不来之外，其他方面都还算完美 (◍•ᴗ•◍)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;工作方面：&lt;/p&gt;
+&lt;p&gt;▨ 我负责的项目推进顺利，第一期的开发快要收尾啦，开始制定第二期的开发目标&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;输入与输出方面：&lt;/p&gt;
+&lt;p&gt;▨ 还是在读《源泉》&lt;/p&gt;
+&lt;p&gt;▨ 最近几周，逐渐养成了“利用碎片时间阅读”的习惯，阅读的时长无痛增加了许多&lt;/p&gt;
+&lt;p&gt;▨ 周中发了一篇 Study Plog，还在写“关于优绩主义”的长文&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;生活方面：&lt;/p&gt;
+&lt;p&gt;▨ 周六要去大理远程办公啦，特别期待 ✨&lt;/p&gt;
+&lt;p&gt;▨ 因为周四要收拾行李箱 + 周五提前去机场附近的酒店，占用了两个晚上的时间，所以这周没安排时间去瑜伽 🧘&lt;/p&gt;
+&lt;p&gt;▨ 周三去了咖啡厅办公，转换一下心情～&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本期想跟你们分享的话题是：&lt;/p&gt;
+&lt;p&gt;1️⃣ 如何打破注意力碎片化的循环（P2）&lt;/p&gt;
+&lt;p&gt;2️⃣ 在《源泉》中，关于“爱”的讨论（P4）&lt;/p&gt;
+&lt;p&gt;3️⃣ 偶尔换一个环境，以此对抗“享乐适应”（P7）&lt;/p&gt;
+&lt;p&gt;4️⃣ W44 本周杂谈（P9）&lt;/p&gt;
+&lt;p&gt;具体内容，见图～&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上。希望大家看得开心！未来也一起加油～&lt;/p&gt;
+&lt;p&gt;下周再见 👋&lt;/p&gt;
+&lt;p&gt;&amp;#x3C;a class=“wx_topic_link” data-topic=“1” style=“color: #7D90A9;”&gt;#打破无意识循环&amp;#x3C;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>#8 谈谈大厂的重构时代、订婚的经历与梦的启示，关于我的 9-10 月｜202510</title>
+    <link href="https://blog.polebug.com/2025/11/02/plog_8_202510/"/>
+    <id>https://blog.polebug.com/2025/11/02/plog_8_202510/</id>
+    <published>2025-11-02T14:38:00.000Z</published>
+    <updated>2025-11-02T14:38:00.000Z</updated>
+    <summary type="html">嗨朋友们，好久不见哇！ 最近我收到了好多条催更留言 😅，不好意思大噶，一不小心鸽了个大的 😭。 国庆期间，我本想写写九月的总结，但那段时间我几乎没有什么坐下来写文字的机会，每天要么是在自驾游的路上，要么是在招呼远道而来参加我的订婚宴的亲…</summary>
+    <content type="html">&lt;p&gt;嗨朋友们，好久不见哇！&lt;/p&gt;
+&lt;p&gt;最近我收到了好多条催更留言 😅，不好意思大噶，一不小心鸽了个大的 😭。&lt;/p&gt;
+&lt;p&gt;国庆期间，我本想写写九月的总结，但那段时间我几乎没有什么坐下来写文字的机会，每天要么是在自驾游的路上，要么是在招呼远道而来参加我的订婚宴的亲戚们，以及陪伴家人。而国庆结束之后，好像过了那个分享的时间节点，拖延症又占了上风。&lt;/p&gt;
+&lt;p&gt;再加上前段时间，我的工作特别忙。跳槽到新公司之后，我负责的第一个项目在 10 月底准备上线，每天满脑子都是工作的事，下班之后也只想安安静静看会书，独自充充电（最近在看《源泉》，我真的很喜欢这种理想主义的书 hhhh）。&lt;/p&gt;
+&lt;p&gt;时间一晃就到了现在，我感觉我好像“忙完了”：订婚顺利结束，也度过了工作上的 DDL。此时此刻，好像没有什么事情“横”在我的心里了，我感觉我又可以开始更新了！&lt;/p&gt;
+&lt;p&gt;这篇文章，我想跟你们聊聊我的 9-10 月，关于新工作上的感悟、订婚的体验以及一些不可思议的梦所带给我的启发，希望你们看的开心～ 😁&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一工作的感悟&quot;&gt;一、工作的感悟&lt;/h2&gt;
+&lt;h3 id=&quot;1️⃣-大厂的重构时代&quot;&gt;1️⃣ 大厂的“重构”时代&lt;/h3&gt;
+&lt;p&gt;记得我刚去微信的时候，开始接手前人的老项目，就一直在那“重构-重构-重构”。当我重构到第二个还是第三个项目的时候（有点记不清了），我就受不了了 😭：“我明明是来创造东西的，怎么天天在这搞重构呢？”。&lt;/p&gt;
+&lt;p&gt;对于刚毕业的我来说，重构是一种折磨。我看不到这件事情会带给我什么成长，我感觉我好像一个“翻新”二手房的人，只是把别人家的墙刷白了点，重新搞了一下软装。&lt;/p&gt;
+&lt;p&gt;除了找不到“重构”的成长价值之外，当时的我还认为，如果一个组或者一个部门一直在重构的话，那就说明他们没有什么新东西可以做了（就是这样打标签的 😜 hhhhh）。&lt;/p&gt;
+&lt;p&gt;不想在 web2 重构的我，开始寻找新的行业、新的赛道。我想着，我只要去到一个正在发展的行业，应该就不会遇到重构这个破事了。&lt;/p&gt;
+&lt;p&gt;一开始，我去了一个 web3 初创团队，确实每天都在做新东西，从 2022-25 年我一次都没重构过，感觉贼爽。&lt;/p&gt;
+&lt;p&gt;今年 7 月，我跳槽去了一家交易所。入职的第一周，leader 就让我好好看看一个老项目的代码，分析一下它的问题。当我看到这个老项目的代码，有 90% 的重复逻辑，还有各种复杂的 if-else，以及花样百出的内存泄漏之后，我就警铃狂响：“等下该不会叫我去重构吧？”，结果还真被我猜对了 😅。&lt;/p&gt;
+&lt;p&gt;所以 9-10 月的工作，我就一直在忙项目重构的事情。&lt;/p&gt;
+&lt;p&gt;现在的我相比于之前，对于重构这件事变得没有那么排斥了。心态也逐渐接受了这种“常态”：不管是什么方向的研发，只要是前人代码设计得不太合理、扩展性不好，那么几年以后，这个项目必然会难以维护，后人也注定会走重构这条路。&lt;/p&gt;
+&lt;p&gt;并且随着工作经验的增加，我逐渐能在这个过程中找到乐趣和价值。以前的我，之所以认为自己在翻新二手房，是因为我的能力仅限于此，我不知道自己该如何改造它。现在的我，好像有了“砸墙”的能力，可以完全推翻原有的架构，重新建一个格局完全不一样的房子。&lt;/p&gt;
+&lt;p&gt;这两个月虽然开发强度不大，但是本 J 人控制不住自己老想工作的事，尤其是这个项目前期只有我在做，就忍不住去思考各种工作中的问题。&lt;/p&gt;
+&lt;p&gt;所以我最近也没在写自己的项目，下班之后只想安静看书 + 写会日记，偶尔去运动、露营，这也是我鸽了 vlog 的主要原因～&lt;/p&gt;
+&lt;p&gt;（图：周末去湖边露营，坐在天幕下，吹着风看书，晚上在烤鱼 💓）&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/01-89f87ded.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;1920&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2️⃣从创业团队到大厂远程办公的协作模式改变了&quot;&gt;2️⃣从创业团队到大厂，远程办公的协作模式改变了&lt;/h3&gt;
+&lt;p&gt;我一直觉得在远程办公中，“文字”沟通是最最最高效的方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可以一次性把上下文列出来；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以把问题描述的很具体；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以留下记录日后翻阅；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;消息群发方便消除信息差；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不会打乱彼此的开发节奏；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在上一份工作中，我也是这样去实践的，体验非常好。但是，到了交易所这样的大公司之后，我发现文字协作的方式失效了。&lt;/p&gt;
+&lt;p&gt;当项目的数量变多、复杂度变高，参与的人员也增多之后，文字协作就会看起来非常乱序、失控。就比如，在做阅读理解的时候，如果是一篇短文，我们要提取出核心的信息很容易，但如果是一篇长文，你需要结合过多的上下文去理解，就会看得很累。&lt;/p&gt;
+&lt;p&gt;文字协作失效之后，取而代之的是“会议”协作的模式。我现在每天有两个会议，一个是晨会，以每个人为维度展开；另外一个是以项目为维度的会议；这些会议由 PM 主持，由 ta 去串联每个人的进度。&lt;/p&gt;
+&lt;p&gt;我还感觉到，在短视频时代，文字沟通似乎变得比以往都要困难。&lt;/p&gt;
+&lt;p&gt;出于以前的办公习惯，我仍然倾向于用文字去描述我的问题，发了一大堆给对方之后，大多数人的回复都是：“我们能语音沟通一下吗？”。我感觉很无奈，我前面已经表述得很明确了，但是大多数人都没什么耐心去看，急着想语音。&lt;/p&gt;
+&lt;p&gt;因为垃圾会议太多的缘故，我好像练就了一套自动屏蔽别人说话的能力 hhhhhh，如果会议和我没太多的关系，我就会放一只耳朵在这里，大脑继续思考我的工作代码。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;二订婚的体验&quot;&gt;二、订婚的体验&lt;/h2&gt;
+&lt;p&gt;这几年男女对立的问题特别严重，有一部分是因为“彩礼”挑起的矛盾，就比如前段时间很火的“力工梭哈理论”，说的是男性通过出卖劳动力来努力赚钱、省吃俭用攒钱，最终将所有资源（如彩礼、房产等）梭哈投入婚姻。&lt;/p&gt;
+&lt;p&gt;这个理论默认了，男性在婚姻中是单一付出金钱的一方，女性只是在享受婚姻带来的“果实”。但实际情况并不是这样。就拿福建和江浙沪地区来说，在我们这里，男方给这个小家出多少的资源，女方会附上同样的数额，有的地方甚至是两倍。&lt;/p&gt;
+&lt;p&gt;所以，我觉得结婚并不是在剥削男性，它更像是对男方家庭的一个考验。这个考验涉及到了男方的认知、金钱观、对女方家庭的信任等等各个方面。&lt;/p&gt;
+&lt;p&gt;前段时间，我跟一个朋友也聊起了结婚这个话题，他问我：“为什么要考验男性呢？是不是默认女方承担生育，男方承担赚钱？”。我觉得目前的职场环境就是这样的。生育之后的女性必然会遭到一定程度的歧视，如果不考验男性是否靠谱，那么在养育孩子的阶段就可能会有风险。&lt;/p&gt;
+&lt;p&gt;我其实一开始的时候，还挺焦虑彩礼这个事情的。因为我是福建的，我对象是广东的，这两个地方的婚姻习俗差异非常大，广东的彩礼几千就可以了，但是福建这边普遍都是几十万。当然，福建的陪嫁也是这个水平，两边出的资源最后都会作为启动资金给小家庭。&lt;/p&gt;
+&lt;p&gt;在谈彩礼之前，我一度非常焦虑，一边担心我爸妈会提太多的要求，另外一边又担心我男朋友家难以接受。后面发现我的担心好像是多余的 😅，谈的过程出乎意料的“随便”，并不是我想象中的“严肃谈判”。谈的时候，我爸妈全程没提要多少彩礼和五金，然后我对象家也表示很愿意尊重福建这边的习俗来办。最后就是非常和谐、顺利地达成共识，两边开始备婚，着手开始挑五金、联系酒店、布置家里等等，一大堆杂事。&lt;/p&gt;
+&lt;p&gt;挑五金的时候，我发现了一个有意思的信息差：&lt;strong&gt;金价虽然是有标准的，但是加工费的水特别深。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;像周大福这种有品牌的店，加工费要 80-150 rmb/g 左右，但是在深圳水贝，或者是一些黄金批发商城，素圈的加工费是个位数的，复杂一点的款式也只需要 20-35 rmb/g 左右。总价上，就会有几百上千的差异。&lt;/p&gt;
+&lt;p&gt;总之，筹办婚事的过程还是挺顺利的。美中不足的就是订婚那天，我忘记了我的相机，没有多拍几张照片，只用了一次性胶片机拍了一些照片留念 😅。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/02-411f6834.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;735&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;我俩都表示，更喜欢这张 ⬇️：&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/03-9ba065c6.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;735&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;三梦的启示&quot;&gt;三、梦的启示&lt;/h2&gt;
+&lt;p&gt;九月多的时候，我做了一个很特别、很带给我启发的梦，我觉得这个梦在某些程度上改变了我，所以我想跟大家好好分享它。&lt;/p&gt;
+&lt;p&gt;这个梦很简单：在梦里我是一个导演，我正在拍一个自传，主角是我自己。我需要写一个剧本，然后把它拍出来。我在写剧本的时候，梦里一直在重放我过去的人生，从出生-幼儿园-小学-初中-高中-大学，每一个点和点之间互相连接着，我也一直在变化。然后到了工作，画面突然停了，我好像找不到什么有意义的事可以写在我的剧本里。再然后，我就醒了。&lt;/p&gt;
+&lt;p&gt;醒来之后，这个梦的后劲很大，我一直反复去思考这个梦。我的心态在 2-3 天内发生了一系列的变化，从焦虑、迷茫到看清未来。我希望你们听我慢慢讲。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;1️⃣-工作以后我感觉我的内在世界成长变慢了&quot;&gt;1️⃣ 工作以后，我感觉我的内在世界成长变慢了&lt;/h3&gt;
+&lt;p&gt;这个梦 push 我去思考，“工作之后，我的变化有哪些？“&lt;/p&gt;
+&lt;p&gt;我发现我只能找到一些生活和物质上的变化：养了两只猫，有稳定的伴侣，有了许多存款，等等；或者是职业上的发展：开发的经验变丰富了、探索了各种副业。&lt;/p&gt;
+&lt;p&gt;但对于这些答案，我觉得很失落。它们都不是我满意的答案。&lt;/p&gt;
+&lt;p&gt;我感觉工作以后，我只是在付出我的时间去换来物质，而我的精神世界、内核、能力边界这些方面，相比较工作之前，成长的速度变慢了许多。&lt;/p&gt;
+&lt;p&gt;那几天因为这个问题，略有些焦虑，于是我和一位朋友交流起这个问题，可惜他并没有 get 到我的点 ⬇️&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/04-16dc306e.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;606&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;向外界求助失败之后，我就开始独自思考，是什么原因导致了精神世界的成长变慢。&lt;/p&gt;
+&lt;p&gt;后来我发现，在工作之前，我的心智并没有成熟，我可以通过生活中的人和事去学习。但到了一定年纪之后，我的三观、内核逐渐成型，就很难再从身边的事物中得到什么启发了。而这几年，引发我内在变化的东西，大多数是书籍，像《悉达多》、《福格行为模型》、《蛤蟆先生去看心理医生》，等等等等。&lt;/p&gt;
+&lt;p&gt;找到答案之后，我就暗自发誓，一定要抽出更多的时间去阅读，以后也要继续读很多很多书！！今年暂且看了这几本，中途因为换工作，丢失了一些阅读的心情，接下来会狠狠读！&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/05-ce2d6562.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;636&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;hr&gt;
+&lt;p&gt;2️⃣ &lt;strong&gt;你有想过，你 50 岁的时候在做什么吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;说回到这个梦，刚刚只说了 1/3 左右的剧本，从出生到现在工作 5 年。&lt;/p&gt;
+&lt;p&gt;那么，剩下的剧本会是什么样的呢？&lt;/p&gt;
+&lt;p&gt;在这个梦出现后的第三天晚上，我拿出了几张空白的牛皮纸，开始继续思考这个剧本的走向。&lt;/p&gt;
+&lt;img src=&quot;https://img.polebug.com/plog_8_202510/06-918da435.webp&quot; alt=&quot;&quot; width=&quot;1080&quot; height=&quot;608&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;p&gt;有意思的是，20-30 岁这个年纪，我可以明确地知道我在努力工作、努力攒钱。然后 30-35 岁左右，我可能生了个娃，在一边带娃一边搞钱。&lt;/p&gt;
+&lt;p&gt;当我写到了 40 岁以后，我突然就陷入了迷茫，因为那时候钱应该完全攒够了，我可以提前退休，娃也上学了，好像没有什么特别操心的事情。到那时候，我该干嘛呢？&lt;/p&gt;
+&lt;p&gt;在这种巨大的虚无感之下，那些我真正想去做的事情、真正想拥有的身份开始浮出水面。&lt;/p&gt;
+&lt;p&gt;在我的人生剧本中，我最想实现的目标其实是，“在这个世界上留下属于我的痕迹，并且我希望我留下的东西对别人是有帮助的”。而要达成这个目标，我列举了各种各样的可能性。&lt;/p&gt;
+&lt;p&gt;一开始我想到，或许我可以开发某个有用的 APP，但这个想法很快被我否了。因为软件更新迭代的速度非常快，很难长时间的存在。就连 QQ 这种体量的软件，几年以后都在逐渐被人们遗忘，我就不指望个人开发的小软件在时代的浪潮之下，还能有留下什么用户了。&lt;/p&gt;
+&lt;p&gt;这样筛选一遍下来之后，发现只有两条路适合我：一是创立某种品牌，比如做玄学相关的饰品；另外一种是写文字，只要存在互联网、存在搜索，我写的东西就会一直存在。&lt;/p&gt;
+&lt;p&gt;我慢慢地思考，慢慢地构思着 40-70 岁这漫长的人生剧本，眼下的很多焦虑突然被冲淡了。&lt;/p&gt;
+&lt;p&gt;比如说，我之前一直在焦虑，程序员到 35 岁可能会失业，那天我就直接想开了，反正当程序员也不是我的人生目标，我就是来搞钱而已，什么职业规划突然就不 care 了。&lt;/p&gt;
+&lt;p&gt;以及一些年龄焦虑也被冲淡了，突然就感觉人生很漫长，不用这么着急，很多事情都可以慢慢去做。太早地达成目标，后面也可能会很空虚。&lt;/p&gt;
+&lt;p&gt;最后，我想跟你们分享，我在这个剧本写的最后一段话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我活了很久，我一直努力地在世界上留下我的痕迹，开发各种 APP、写文章、运营品牌，我极力地想要证明自己存在过。但最后我发现，我或许不必如何。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在写这段话的时候，我并没有过多的思考，感觉是潜意识的我写下来的。&lt;/p&gt;
+&lt;p&gt;内心深处，我最想看到的结局其实是，那个渴望在世界留下痕迹的我，可以放下一切，只是享受“活着”，而不纠结于“怎么活”。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;最后的留言&quot;&gt;最后的留言&lt;/h2&gt;
+&lt;p&gt;好久没更新了，仍然是有好多话想要跟你们分享！我很庆幸还有一群挂念我的网友们！&lt;/p&gt;
+&lt;p&gt;准备恢复博客的周更，vlog 可能暂时不更了，一是剪辑太费时间，二是每天工作会议多，下班之后就很懒的说话了，只想安安静静地做点事，但如果我在 vlog 里不说话，看起来又很像什么“预制菜”，我自己也看不下去 hhhhhhh！&lt;/p&gt;
+&lt;p&gt;11.8-16 这周准备去大理远程办公，前段时间南航的机票超便宜，我就想趁着淡季再去一次，可能工作还是很忙，但是！去大理加班也行啊 😭😭😭&lt;/p&gt;
+&lt;p&gt;以上。下周再见吼～ 👋&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>＃7 - 在八月重新出发｜202508</title>
-    <link href="https://polebug.github.io/2025/09/05/plog_7_202508/"/>
-    <id>https://polebug.github.io/2025/09/05/plog_7_202508/</id>
+    <link href="https://blog.polebug.com/2025/09/05/plog_7_202508/"/>
+    <id>https://blog.polebug.com/2025/09/05/plog_7_202508/</id>
     <published>2025-09-05T13:41:00.000Z</published>
-    <updated>2026-07-19T09:05:52.581Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;当我开始写八月总结的时候，已经是 9 月初了。谁能料到，截止到 5 号，我已经入职新公司满三周了（时间真的过得好快！😱）&lt;/p&gt;
+    <updated>2025-09-05T13:41:00.000Z</updated>
+    <summary type="html">当我开始写八月总结的时候，已经是 9 月初了。谁能料到，截止到 5 号，我已经入职新公司满三周了（时间真的过得好快！😱） 八月的前半部分，我每天都好像是在坐过山车，心情随着面试的结果而起起起落落落。 我原本以为，拿完 offer 之后，我…</summary>
+    <content type="html">&lt;p&gt;当我开始写八月总结的时候，已经是 9 月初了。谁能料到，截止到 5 号，我已经入职新公司满三周了（时间真的过得好快！😱）&lt;/p&gt;
 &lt;p&gt;八月的前半部分，我每天都好像是在坐过山车，心情随着面试的结果而起起起落落落。&lt;/p&gt;
-&lt;p&gt;我原本以为，拿完 offer</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;我原本以为，拿完 offer 之后，我可以躺尸一段时间，结果时间上并不允许：8 号我收到了第一个 offer 之后，跟 HR 拖到 18 号入职，但这十天里，我还有其他公司的面试没结束，所以每天还得被面试官拷打一下 😅。&lt;/p&gt;
+&lt;p&gt;没想到，其余的面试都因为各种各样的原因黄掉了，最后还真是 18 号入职了。&lt;/p&gt;
+&lt;p&gt;还没准备好复工的我跟爸妈说要回家待一周，想着家里的美食、四果汤、还有老家的朋友们，或许能抚平一下我复杂的心情。&lt;/p&gt;
+&lt;p&gt;所以，八月底我回了一趟福建，还顺路去泉州玩了两三天，在老家度过新公司的第一个星期，也算是重新出发啦～&lt;/p&gt;
+&lt;p&gt;在这次复盘中，我想谈谈找工作的体验，大厂和项目方有哪些不同之处，在泉州旅行的快乐片段，以及未来的一些计划。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;找工作的体感主打一个缘份&quot;&gt;📍找工作的体感：主打一个“缘份”&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;我之前在 Reddit 看到一段话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Real talk: there will always be the element of luck. You can have impeccable credentials, a well-crafted CV and still lose a job opportunity to someone who just happened to be at the right place and time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;找了几次工作之后，我对这个观点深表赞同，出现在对的地方和对的时间真的很重要！&lt;/p&gt;
+&lt;p&gt;招聘的岗位有成百上千，每段时间放出来的 hc 也都是变动的。“刚好”你最近找工作，“刚好”有个岗位适合你，“刚好”你和几个面试官都看对眼了，“刚好”你和 hr 能谈到满意的薪资，“刚好”你也喜欢这个岗位… 😆 在几波“刚好”的筛选下来之后，能成功的情况也不多了 hhhhh&lt;/p&gt;
+&lt;p&gt;不管是校招，还是前段时间社招找工作，我的体会都差不多是这样。&lt;/p&gt;
+&lt;p&gt;校招的话，主打一个“旱的旱死，涝的涝死”。最关键的一点在于，如何让面试官从万千简历中，把你捞起来。简单说就是，“很容易变成分母”，尽管你足够优秀。&lt;/p&gt;
+&lt;p&gt;有一个捷径就是，大学期间多多实习，多认识各种公司的朋友，他们或许可以直接帮你把简历给到合适的组，这样约面的概率会大很多，而不是被丢进简历池当一条咸鱼。&lt;/p&gt;
+&lt;p&gt;社招的话，情况会复杂一些，不仅取决于面试本身，还取决于“公司目前需要什么样的人”，以及你的对手是什么样的。尤其是现在一个岗位 n 多个人竞争，招聘公司成为了有主动权的人，有的时候求职者只能默默等消息。&lt;/p&gt;
+&lt;p&gt;就比如，我这次有几家公司到了终面，最后没发 offer，有一家是因为另外一个候选人可以出海，优先选择了他；还有一家，我和面试官聊的贼开心，最后告诉我，他们综合考虑了一下想招 10 年左右经验的人 ；还有一家问我能不能降薪去深圳… 等等等等，这些都超出了“面试”本身的范畴。&lt;/p&gt;
+&lt;p&gt;我挂了并不是我面的不好，而是因为“我不是那个对的人”，我出现在了不对的时机或者不合适的岗位。&lt;/p&gt;
+&lt;p&gt;一开始我还挺焦虑的，“怎么准备得充分还没几个 offer？“。后面逐渐变得佛系 😴 … 一边面试，一边慢慢蹲机会，反正总能遇到看对眼的公司～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;大厂的工作体验和项目方有什么不同&quot;&gt;📍“大厂”的工作体验和项目方有什么不同？&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;在&lt;a href=&quot;https://polebug.github.io/2025/08/03/plog_6_conversations_in_july_2025/&quot;&gt;「PLOG #5 近日找工作趣事二三则」&lt;/a&gt;中，我写到朋友在传授我“大厂的处世之道”，关于占领山头理论，以及如何在扯皮中占据有利位置… 等等等等，虽然我在腾讯时就有体会，重新复习了一遍之后，感觉自己还是学不会这套东西 😅&lt;/p&gt;
+&lt;p&gt;忐忑入职之后，我发现我在的组气氛还行，没有想象中这么卷。&lt;/p&gt;
+&lt;p&gt;当然，cex 和创业团队的远程工作体验还是有很大不同的，一个直观的对比就是开会次数 1️⃣。&lt;/p&gt;
+&lt;p&gt;我在创业团队的时候，一个星期 2-3 次会。而现在，每天就有 2-3 次会 🤣，因为协作的人变多，同步信息就变成了一件非常频繁的事，但好在每次都是 15 分钟左右的短会，不会占用太多的工作时间。&lt;/p&gt;
+&lt;p&gt;2️⃣ 工作时间变得没有那么自由。&lt;/p&gt;
+&lt;p&gt;以前我可以自由安排什么时间上班，只要把今天的工作做完，老板不会管太多（毕竟大家时区也都不一样）。现在的话，每天得 9-18 点老老实实上班，据说 cex 的电脑都有工时监控，我只能去适应这个工作作息。当然这样也有个好处就是，工作和生活可以切割开，下班的时间很少有人打扰。&lt;/p&gt;
+&lt;p&gt;3️⃣ 写代码的体验也有许多不同。&lt;/p&gt;
+&lt;p&gt;在创业团队的时候，我们一般只专注在一两个产品上，从零把它们做好，没什么历史包袱，也没有“屎山”代码。唯一要担心的就是，可能因为市场的变动，产品研发到一半被砍，或者是产品发布之后，没有热度就不维护了。&lt;/p&gt;
+&lt;p&gt;在大厂似乎没有了这种“生存”挑战，至少不用担心白费功夫了。但是它有另外一个难题：在一个很古老的、已经经手了十几个人的项目上继续开发 🤣 可想而知，这里面的历史包袱，以及每次转手带来的重复代码，有多恐怖。&lt;/p&gt;
+&lt;p&gt;4️⃣ 对于个人的成长，在初创团队和大公司也是两种完全不同的方向。&lt;/p&gt;
+&lt;p&gt;在初创团队，发展到最后可能会趋近于“全栈”，就是什么技能都会。因为市场在变，团队做的事情也一直在变，很难说固定在做什么领域。像我在 rss3 的最后半年，从链上数据索引转到了 AI 相关的开发。找工作的时候，我也和一些项目方团队聊过，他们通常要求候选人会的东西“多”，就比如我面的是后端研发，但是他们想找 devops + 合约开发 + 后端都会的人。&lt;/p&gt;
+&lt;p&gt;而在大厂，基本不存在“全栈”这样的岗位，更可能会发展成某个领域的“专家”。在大厂里，做的东西是在一个固定的范围内，不存在一个后端研发被调去写前端这样跨领域的情况。&lt;/p&gt;
+&lt;p&gt;除了个人发展的方向不同之外，平台的大小也会带来一些不同的影响 5️⃣。&lt;/p&gt;
+&lt;p&gt;初创团队这样的小平台，业务承载的量级通常不够大，更关注的是“快点跑起来”，再进行快速地迭代。大厂的业务有许多挑战，但是需要主观能动性，主动去挖掘性能瓶颈或者隐藏的风险点。&lt;/p&gt;
+&lt;p&gt;总的来说，不管在创业团队还是大厂，都有他们的优缺点，也都有足够多的东西可以去学习～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;在泉州的碎片-&quot;&gt;📍在泉州的碎片 🧩&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;好喜欢在泉州逛街的两天～ 剪了 vlog，但当时拍的比较随便，剪出来的时长有点短，大概 7-8 分钟，还在纠结要不要放出来（想看的抠 111&lt;/p&gt;
+&lt;p&gt;坐在开元寺的石板凳上吹风，对着头顶上的光影发呆：&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/Pasted-Graphic-1-bf40c459.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/IMG_0422-66936fed.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;没想到钟楼是个红绿灯路口？&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/DSCF4235-dcc897b7.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;去关帝庙求签，体验了第一次掷杯 😆，问新工作后续的发展，抽到了中平，解签阿姨说稳稳当当，没有什么变动（感觉问了个寂寞）&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/IMG_0408-44b8893a.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;傍晚去了离市区很近的滨海公园，好多家庭在这赶海，还碰上了螃蟹吃播 🤣 超治愈！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/Screenshot-2025-09-17-at-21.07.16-63fd1c8b.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;虽然是在东边，看不到日落，但是天空也是绝美！🌇&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_7_202508/Screenshot-2025-09-17-at-21.08.08-e58747a2.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;重新出发这一次能希望有一点点的突破&quot;&gt;📍重新出发，这一次能希望有一点点的突破&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;在七月裁员之后，同期和我一起离职的朋友们并没有去找工作，有一些朋友在创业和自己接活，也有一些朋友通过投资在老家 FIRE 了。&lt;/p&gt;
+&lt;p&gt;说实话，我真的非常非常羡慕他们。虽然我也通过投资赚了不少钱，但是一直没找到一种稍微稳定的盈利方式，钱像风刮来的，很难持续复利。&lt;/p&gt;
+&lt;p&gt;我也想创业做点什么，但好像一直没有找到适合自己的方向，总是做到一半就觉得无聊。&lt;/p&gt;
+&lt;p&gt;以及，我这个人好像很难跟别人产生持久的链接，很难遇到一起创业的朋友。做水晶创业的时候，我甚至连兼职的人都招不到（很难受，也不知道问题出在哪里 QAQ）。&lt;/p&gt;
+&lt;p&gt;所以，我希望这一次，我可以有一点点的突破：&lt;/p&gt;
+&lt;p&gt;做一个可以复利的东西，或者是，做一个有趣的产品&lt;/p&gt;
+&lt;p&gt;希望下一次裁员，我可以有更多、更主动的选择！加油 ᕦ(ò_óˇ)ᕤ“&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;vlog 恢复更新之后，写文字有点拖延症 hhhhh&lt;/p&gt;
+&lt;p&gt;还有很多想写的话题，之后等我慢慢写!&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>＃6 - 发生了很多“对话”的七月｜202507</title>
-    <link href="https://polebug.github.io/2025/08/03/plog_6_conversations_in_july_2025/"/>
-    <id>https://polebug.github.io/2025/08/03/plog_6_conversations_in_july_2025/</id>
+    <link href="https://blog.polebug.com/2025/08/03/plog_6_conversations_in_july_2025/"/>
+    <id>https://blog.polebug.com/2025/08/03/plog_6_conversations_in_july_2025/</id>
     <published>2025-08-03T13:40:00.000Z</published>
-    <updated>2026-07-19T09:05:52.579Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
+    <updated>2025-08-03T13:40:00.000Z</updated>
+    <summary type="html">本文是对 2025 年 7 月的记录与思考 这个七月因为工作上的变动，而变得尤为特别。 虽然我是个 J 人，但我并不讨厌“变动”。有的时候，我会觉得变动是件好事，因为它可以让我跳出原有的思维框架，去接收一些新的东西（尽管它在我的意料以外，但…</summary>
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本文是对 2025 年 7 月的记录与思考&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;这个七月因为工作上的变动，而变得尤为特别。&lt;/p&gt;
-&lt;p&gt;虽然我是个 J</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;虽然我是个 J 人，但我并不讨厌“变动”。有的时候，我会觉得变动是件好事，因为它可以让我跳出原有的思维框架，去接收一些新的东西（尽管它在我的意料以外，但既来之则安之）。&lt;/p&gt;
+&lt;p&gt;如果要用一个词来概括我的七月，我觉得它是“对话”。这个对话发生在很多方面，不仅是我与各种朋友的对话，也有我与自己、与家人的对话，还有我和这个就业市场的对话。&lt;/p&gt;
+&lt;p&gt;在这些对话中，我获得了许多力量，而这股力量也让我在这迷雾中，逐渐变得坚定、勇敢和平静。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;1-与朋友的对话&quot;&gt;1: 与朋友的对话&lt;/h4&gt;
+&lt;p&gt;上半个月的对话，主要发生在我和 RSS3 之间。就如 「&lt;a href=&quot;https://polebug.github.io/2025/07/15/plog_4_say_goodbye_to_rss3/&quot;&gt;&lt;strong&gt;＃4 - 和 RSS3 道别的这一周&lt;/strong&gt;&lt;/a&gt;」这篇文章说的那样，我们组的人一起共事 3 年，好不容易有机会把人都聚齐，却很突然地被告知小组原地解散，这一切都发生地非常非常的戏剧。&lt;/p&gt;
+&lt;p&gt;裁员这件事发生的非常迅速，大概在 1-2 天内，我和公司就谈完了赔偿，并在 15 号那天就被回收了所有的权限。这件事也就这样告一段落了。&lt;/p&gt;
+&lt;p&gt;说实话，裁员这件事对我来说并没有带来什么打击，它就是有点太“猝不及防”了。&lt;/p&gt;
+&lt;p&gt;这就好像是，有一辆正在行驶的火车，我在车上睡得正香，突然被乘务员赶下车了。当下我的第一反应，更多的是“迷茫”，不知道我现在在哪，我的下一站是哪，以及我该做什么。而这些问题，我也在后续的一次又一次的对话中，逐渐找到了我的答案。&lt;/p&gt;
+&lt;p&gt;下半个月的对话，大多数是围绕“找工作”展开。在「&lt;a href=&quot;https://polebug.github.io/2025/07/20/plog_5_job_hunting_anecdotes/&quot;&gt;&lt;strong&gt;＃5 - 近日找工作趣事二三则&lt;/strong&gt;&lt;/a&gt;」这篇文章中，我记录了一些觉得有趣的对话，但发出的也只是非常小的一部分。&lt;/p&gt;
+&lt;p&gt;我几乎每天都会找各种朋友聊，有时是吐槽一下面试时遇到的奇葩事，有时是聊聊工作方向、行业、某某公司，有时是找内推的朋友帮我催一下进度 🤣，等等等等。&lt;/p&gt;
+&lt;p&gt;“找工作”这件事，像是把我置于一种 “open” 的状态，让陌生的人想联系我，同时也让我和一些志同道合的、平时互不打扰的人产生了链接。我觉得，这份链接本身就挺有意思的，经常会带给我一些乐趣。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;2-与自己的对话关于-我到底想要一份什么样的工作&quot;&gt;2: 与自己的对话，关于 “我到底想要一份什么样的工作”&lt;/h4&gt;
+&lt;p&gt;在投简历之后，我以为我是一个对工作方向“不挑剔”的人，只要是有挑战、有意思的工作方向，我都可以试试。&lt;/p&gt;
+&lt;p&gt;但随着我的简历被各种不同的部门捞起，“选择方向”就变成了一个很难的命题，就比如说最近这段时间，我就已经接触 AI、金融风控、撮合交易、钱包，等等。&lt;/p&gt;
+&lt;p&gt;这些方向之间存着巨大的差异，以至于我不得不重新去细想：“我到底想要一份什么样的工作”。&lt;/p&gt;
+&lt;p&gt;想来想去之后，我在备忘录里写下了这段话：&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_6_conversations_in_july_2025/image1-5e4f9092.webp&quot; width=&quot;800&quot; height=&quot;110&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;总的来说，我理想的工作方向要有一定的延展性，它不是局限在某个很小的领域，就像我在腾讯时搞基础架构里面的监控，我就不是很喜欢，觉得这个方向太窄了，并且和其他方向没有关联。但是搞区块链我就很喜欢，因为它可以往链上链下的应用、金融、加密货币去延伸。&lt;/p&gt;
+&lt;p&gt;其次，我希望工作的内容是有一定门槛的，我在工作中积累的经验是“有价值的”，不会随便被一个应届生所代替。但说实话，我觉得这一点很难，因为现在大模型发展的太快了，再高的技术壁垒未来也可能会被 AI 所打破。所以，第二点对我来说也相对比较次要。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;3-与市场的对话关于现在的求职情况&quot;&gt;3: 与市场的对话，关于现在的求职情况&lt;/h4&gt;
+&lt;p&gt;投简历之前，我加了一个行业内的猎头，他给我打了预防针说，现在 web3 岗位的竞争很激烈，因为 web2 的机会很少，有很多人在转行，所以像交易所这些公司，不管是什么领域的人都想进去。&lt;/p&gt;
+&lt;p&gt;7.28 我开始了面试周，从周一面到了周五，具体的进程可以看我的记录 ⬇️，因为大多数公司都需要 3-4 面，我估计还得继续再面 2-3 周，战线真的很长 😅&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_6_conversations_in_july_2025/image2-4384d4ac.webp&quot; width=&quot;400&quot; height=&quot;247&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;面试下来，我的感受是，现在的求职环境确实比 2022 年恶劣。&lt;/p&gt;
+&lt;p&gt;最直观的表现就是，因为求职的人很多，面试的结果往往要等很久。就比如说，我周四面完某家公司的二面之后，HR 告诉我要下周给结果，因为部门有好几个人也在二面，他们要对比一下看看。&lt;/p&gt;
+&lt;p&gt;除此之外，我认识的一些 web3 的朋友最近也在找工作，也就是说现在的竞争对手，有可能也是在 web3 经验丰富的老人。&lt;/p&gt;
+&lt;p&gt;虽然求职本身是一件残酷的事，但我觉得面试的过程还挺有趣的。&lt;/p&gt;
+&lt;p&gt;我常常把面试当作是，“与经验更丰富的人”进行的一场对话。虽然我是一位被考验的人，但考验的过程是有收获的。&lt;/p&gt;
+&lt;p&gt;就比如说，某位善良的 leader 在提问之前，还给我的简历提了提建议。或者是，在谈论技术方案的时候，我说了我的方案，但对面的大佬觉得不够完美，提出了更好的建议。&lt;/p&gt;
+&lt;p&gt;如果换做平时，我觉得我该“付费”找这些前辈做咨询，但是面试让我白嫖到了这些建议，我觉得挺值的 😄。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;4-七月的最后一场对话发生在我与妈妈&quot;&gt;4: 七月的最后一场对话发生在我与妈妈&lt;/h4&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_6_conversations_in_july_2025/image3-c6245fdb.webp&quot; width=&quot;300&quot; height=&quot;46&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;七月的最后一场对话，是我与妈妈长达 1 小时 20 分钟的对话。&lt;/p&gt;
+&lt;p&gt;让我很欣慰的是，这一次找工作我妈没再喊我去考公。虽然她仍然羡慕的提到，别人家的小孩去了大学当讲师了，“这有多好”。&lt;/p&gt;
+&lt;p&gt;我说，每个人的追求是不一样的，我喜欢挑战、有趣的事，如果让我每天干重复的事，我会找不到生活的意义。&lt;/p&gt;
+&lt;p&gt;我妈说，那你这样很累呀，你得一直去挑战、去寻找有趣的事，做一个稳定的工作就可以轻松呀。&lt;/p&gt;
+&lt;p&gt;我说，你喜欢稳定的工作，是因为稳定能让你心安快乐，对不对？但是对我来说不是这样，稳定并不会带给我快乐，只有满足我的成就感才能。&lt;/p&gt;
+&lt;p&gt;这一次，她没有反驳我什么。只是笑笑。&lt;/p&gt;
+&lt;p&gt;作为一位全家都是公务员，并且当了一辈子老师的妈妈，或许仍然不理解我的想法。但这一次，我能感受到，她已经放下让我考公的执念。&lt;/p&gt;
+&lt;p&gt;我觉得我们俩都成长了，我从一开始“谈到考公就想发疯”，到现在能平静地说出我的想法。而我妈从一开始“动不动劝我去考公”，但现在能平静地接受我的选择。这一切都让我感到欣慰、满足、幸福… 💓&lt;/p&gt;
+&lt;p&gt;我想说，“妈妈，请不必担心我的未来是否辛苦，每个人都有这辈子自己要走的路，可能我选的路很难走，但我定会加倍努力，去实现我想要的生活。”&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;很多人问我，怎么不去玩一玩再找工作。&lt;/p&gt;
+&lt;p&gt;说实话，看了《当下的力量》之后，我会更倾向于“遇到问题就去解决问题”，我知道如果我不先解决当下的问题，我也无法好好去玩。所以，我就开始找工作啦～&lt;/p&gt;
+&lt;p&gt;希望八月能结束面试车轮战啊啊啊 ,,Ծ‸Ծ,,&lt;/p&gt;
+&lt;p&gt;以上。&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>＃5 - 近日找工作趣事二三则</title>
-    <link href="https://polebug.github.io/2025/07/20/plog_5_job_hunting_anecdotes/"/>
-    <id>https://polebug.github.io/2025/07/20/plog_5_job_hunting_anecdotes/</id>
+    <link href="https://blog.polebug.com/2025/07/20/plog_5_job_hunting_anecdotes/"/>
+    <id>https://blog.polebug.com/2025/07/20/plog_5_job_hunting_anecdotes/</id>
     <published>2025-07-20T13:11:00.000Z</published>
-    <updated>2026-07-19T09:05:52.576Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
+    <updated>2025-07-20T13:11:00.000Z</updated>
+    <summary type="html">本文是对 20250716-0720 的记录 发离职文之后，我非常幸运地认识了许多圈内的热心伙伴，也和以前的朋友有了更多地交流 (●’◡’●)ﾉ 我原本的计划是，先带爸妈出门玩一两周。结果爸妈比我还忙，旅游计划泡汤，干脆收拾收拾，准备找新的…</summary>
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本文是对 20250716-0720 的记录&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;发离职文之后，我非常幸运地认识了许多圈内的热心伙伴，也和以前的朋友有了更多地交流</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;发离职文之后，我非常幸运地认识了许多圈内的热心伙伴，也和以前的朋友有了更多地交流 (●’◡’●)ﾉ&lt;/p&gt;
+&lt;p&gt;我原本的计划是，先带爸妈出门玩一两周。结果爸妈比我还忙，旅游计划泡汤，干脆收拾收拾，准备找新的工作去～&lt;/p&gt;
+&lt;p&gt;找工作的这个过程虽然麻烦，但也发生了许多有趣的事！感谢所有热心的朋友，我会好好准备面试哒 ≖‿≖✧&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;趣事一想回老家被妈无情拒绝-&quot;&gt;趣事一：想回老家，被妈无情拒绝 😁&lt;/h4&gt;
+&lt;p&gt;前几天外婆因为头晕住院了，我跟我妈提议说，我也回去看看。结果被我妈无情拒绝！她先是支支吾吾让我先调整，最后说是怕我尴尬。&lt;/p&gt;
+&lt;p&gt;我想了想，换工作虽然是一件很正常的事，但我外婆那可是公务员之家！可能确实见不得有人不上班 😨（我外婆家几乎全部都是体制内，有3个公务员，3个护士、3个英语老师、2个化学老师、1个语文老师，夸张得很）&lt;/p&gt;
+&lt;p&gt;我也是非常害怕那些七大姑八大姨叫我去考公！想想算了… 不浪了，还是老老实实去找工作吧 Σ( ° △ °|||) 如果现在回去，可能会非常可怕…&lt;/p&gt;
+&lt;p&gt;只能遥祝外婆身体健康了～&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/image_1-d981f601.webp&quot; width=&quot;500&quot; height=&quot;606&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;趣事二时隔-3-年同一位大佬又出现了&quot;&gt;趣事二：时隔 3 年，同一位大佬又出现了！&lt;/h4&gt;
+&lt;p&gt;22 年我想从腾讯跳槽的时候，推上就有一位大佬给我推荐 bn 的机会，但当时 RSS3 的面试流程在 5 天内就推完了，最后没来得及给大佬递简历。&lt;/p&gt;
+&lt;p&gt;时隔 3 年，那个既熟悉又陌生的头像再一次出现在了对话框，吓了我一跳 hhhhhhh 发现他还是在 bn，实在是太巧惹。这一次，不管如何，一定高低给大佬递个简历！！ (ง •̀_•́)ง&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/Pasted-image-20250717182203-5a94c483.webp&quot; width=&quot;500&quot; height=&quot;632&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;趣事三圈子还是太小了&quot;&gt;趣事三：圈子还是太小了&lt;/h4&gt;
+&lt;p&gt;周三的时候，我在小红书遇到了个热心朋友 J 帮忙内推 bg。&lt;/p&gt;
+&lt;p&gt;没过几个小时，我在 B 站遇到了另外一个热心朋友 T，也说可以帮忙内推 bg。我就告诉T，已经有个朋友联系我了。&lt;/p&gt;
+&lt;p&gt;但我万万没想到，这俩人居然还认识？！😂 再次感叹圈子真的太小了，每天上网冲浪的该不会都是同一拨人吧 _(:з」∠)_&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/image_3-007131d2.webp&quot; width=&quot;500&quot; height=&quot;642&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt; 
+&lt;hr&gt;
+&lt;h4 id=&quot;趣事四是八股文冲鸭&quot;&gt;趣事四：是八股文，冲鸭！&lt;/h4&gt;
+&lt;p&gt;最近遇到了一位人超好的女宝帮我内推，还帮我问面试考啥。跟她聊天感觉超燃！(*•̀ㅂ•́)و 八股文什么的，我这次一定咔咔狂背！！&lt;/p&gt;
+&lt;p&gt;想起校招时，我被按在地上疯狂摩擦，这一次，我一定要站着结束面试！嗯！！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/image_4-41839138.webp&quot; width=&quot;400&quot; height=&quot;300&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt; 
+&lt;hr&gt;
+&lt;h4 id=&quot;趣事五再一次学习大厂的处世之道还是会喊救命的程度-&quot;&gt;趣事五：再一次学习大厂的处世之道，还是会喊救命的程度 😭&lt;/h4&gt;
+&lt;p&gt;由于我在腾讯的时候，见识过太多大厂的阴暗面了，这一次面对交易所的机会仍然有所顾忌。&lt;/p&gt;
+&lt;p&gt;最近跟一位朋友聊起这些内卷的事，他的形容过于贴切，以至于我笑了好久！！（奇怪的笑点）&lt;/p&gt;
+&lt;p&gt;什么“各占山头”的理论，一回忆起来都有点 ptsd 了 (°ー°〃) 在此许愿下家是个能让我好好写代码、学习技术的地方～&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/image_5-473a51a1.webp&quot; width=&quot;500&quot; height=&quot;636&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt; 
+&lt;hr&gt;
+&lt;p&gt;除此之外，最近还认识了很靠谱的猎头、推上的真 · Boss 直聘、同时期一起离职的 B 站 INFJ 网友等等。和朋友们聊聊天，也算是个给枯燥无味的找工作增加了些快乐～&lt;/p&gt;
+&lt;p&gt;如果还是不快乐，那就去咖啡厅喝一杯糖分爆表的甜品吧！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;video width=&quot;600&quot; height=&quot;338&quot; controls poster=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/IMG_9880-b651b019.v2.poster.webp&quot; preload=&quot;metadata&quot; playsinline&gt;
+    &lt;source src=&quot;https://img.polebug.com/plog_5_job_hunting_anecdotes/IMG_9880-b651b019.v2.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+&lt;p&gt;下周开始投简历惹，感觉各家的面试流程都蛮长的，估计要面个1-2个月呜呜🥹，希望下周还能这样苦中作乐一下～&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>＃4 - 和 RSS3 道别的这一周 👋</title>
-    <link href="https://polebug.github.io/2025/07/15/plog_4_say_goodbye_to_rss3/"/>
-    <id>https://polebug.github.io/2025/07/15/plog_4_say_goodbye_to_rss3/</id>
+    <link href="https://blog.polebug.com/2025/07/15/plog_4_say_goodbye_to_rss3/"/>
+    <id>https://blog.polebug.com/2025/07/15/plog_4_say_goodbye_to_rss3/</id>
     <published>2025-07-15T13:11:00.000Z</published>
-    <updated>2026-07-19T09:05:52.572Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
+    <updated>2025-07-15T13:11:00.000Z</updated>
+    <summary type="html">本文是对 20250707-0715 的记录 这几天我经历了团队业务调整而后裁员的种种事情，想着记录一下此时此刻的心情和后续的计划，认真地和这个相处了三年的团队 RSS3 道个别... 希望未来大家都好～ 声明：发文章是因为我舍不得这个团队…</summary>
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本文是对 20250707-0715 的记录&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;这几天我经历了团队业务调整而后裁员的种种事情，想着记录一下此时此刻的心情和后续的计划，认真地和这个相处了三年的团队 RSS3 道个别…</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;这几天我经历了团队业务调整而后裁员的种种事情，想着记录一下此时此刻的心情和后续的计划，认真地和这个相处了三年的团队 RSS3 道个别… 希望未来大家都好～&lt;/p&gt;
+&lt;p&gt;声明：发文章是因为我舍不得这个团队，想好好告别，开始下一段旅程。创业公司的业务调整也是正常的，最后我也拿了足够的赔偿，希望大家千万千万不要恶意解读。我不想看到任何诋毁 rss3 的话，这样我会很自责… 🙏&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;第一次见面或许也是最后一次&quot;&gt;第一次见面，或许也是最后一次&lt;/h4&gt;
+&lt;p&gt;因为远程办公的缘故，我们 network 组的同事们一直没有聚齐过。这次暑期刚好国外的同事回国了，又碰巧遇上深圳 vueconf 的活动，我们就相约 7.12-14 在深圳见一次。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_4_say_goodbye_to_rss3/IMG_9729-2c2b1085.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;没想到周五晚上，我们一起吃完饭之后，就被告知了裁员的消息。&lt;/p&gt;
+&lt;p&gt;被通知时，我并没有太多的情绪，我有想过会是这样的结果，因为最近一直在加班的项目，前几天被突然叫停，整个团队也失去了方向感。我想，这时候裁员也是情理之中，如果我是老板，或许我也会这样做。&lt;/p&gt;
+&lt;p&gt;被通知的当下，我是可以理解这个决策的。&lt;/p&gt;
+&lt;p&gt;但是，当那天晚上回去之后，我收到了 github 的邮件，看到我从 organization 中被移走，我的心突然被刺了一下。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_4_say_goodbye_to_rss3/Pasted-image-20250715175105-bb4566e7.webp&quot; width=&quot;500&quot; height=&quot;235&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;那一瞬间，我对“离职”这件事突然有了实感。&lt;/p&gt;
+&lt;p&gt;所有的遗憾、不甘心、难过一下子就涌了上来。我对这个团队倾注了太多个人的感情，从一开始的链上数据爬虫，再到后来的去中心化链上数据索引，甚至是最近半年在做的的 ai agent，我们一直在努力，但是换来的就是“大家一起离职”这样的结果。&lt;/p&gt;
+&lt;p&gt;焦虑在蔓延。周六的 vueconf 大家也没兴趣听了，下午又聚在一起讨论“出路在哪”，其实短期内也讨论不出什么名堂，只是大家脑子都很乱，想聊聊天。&lt;/p&gt;
+&lt;p&gt;散的时候，每个人都心情复杂：“不知道下次见面是什么时候了”。共事三年，这次是第一次见，不知道下次见面时，人还能不能这么齐，有的人说不好就是最后一面…&lt;/p&gt;
+&lt;p&gt;周二时，我交接完了所有，正式地和小伙伴们道了别。真正到了离别之际，还是很难过的…&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_4_say_goodbye_to_rss3/Screenshot-2025-07-15-at-12.12.36-1-34f7975d.webp&quot; width=&quot;800&quot; height=&quot;172&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;还会继续待在-web3-行业吗&quot;&gt;“还会继续待在 web3 行业吗？”&lt;/h4&gt;
+&lt;p&gt;最近和朋友说起离职的事，我被问到最多的就是：“你还打算待在 web3 吗？之后有什么打算？”&lt;/p&gt;
+&lt;p&gt;现在 web3 的市场环境确实没有以前那么好了，用朋友的话说是“完全空心化了”，但是我仍然打算继续在这个行业。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最重要的一个原因是，我觉得 web3 这个行业的天花板足够高&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;由金融 + 加密货币 + 区块链组合而成的 web3 行业，不管是深度还是广度都比传统行业要好很多。&lt;/p&gt;
+&lt;p&gt;虽然 web2 的方向看起来也很广，但是据我观察，因为 web2 已经过于成熟了，每个方向都被划分得非常非常细，每个人只能在一个很局限的方向上去提升能力。说白了就是，拧螺丝的岗位大于有创造力的岗位。&lt;/p&gt;
+&lt;p&gt;就比如说，我在微信的时候，做的是 infra 中一个非常细的方向：监控告警，因为微信的体量很大，单单一个监控告警就需要一个组的人去支持。可以预见，如果继续在 web2 工作，我的未来很狭隘，就是成为某个领域的专家，或者是组长/总监这样的管理者。&lt;/p&gt;
+&lt;p&gt;但是在 web3 不是这样，从智能合约到量化交易，从一级市场到二级市场，每个方向并没有被划分得很细，通常是需要能力更综合的人，既要懂链，又要懂智能合约，又要懂其他业务知识。工作的内容往往也不是局限的，能接触到各种方向的技术。&lt;/p&gt;
+&lt;p&gt;并且，由于这个行业离金融市场太近，遍地都是搞钱的机会，那就意味着，你非常有可能获得工资之外的收入。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;后续的计划&quot;&gt;后续的计划&lt;/h4&gt;
+&lt;p&gt;说实话，最近一直在处理离职的事情，后续要干什么还没来得及细想。&lt;/p&gt;
+&lt;p&gt;可能会先放空一下自己，出去玩、追剧、搞搞兴趣爱好、写写代码，在这期间慢慢理清思绪。&lt;/p&gt;
+&lt;p&gt;然后，我想整理一下这三年学习 web3 的笔记，以及之前倒腾过的代码，看看有没有什么可以开源的东西。然后就是，写好简历，思考一下自己日后想发展的方向，看看有没有团队招聘，开始下一站～&lt;/p&gt;
+&lt;p&gt;我觉得，这次裁员也是一个契机，一个让我重新审视职业发展、思考自己到底想要什么的契机。&lt;/p&gt;
+&lt;p&gt;虽然说，我平时也会思考这些问题，但是在没有生存压力的情况下，并不能推动我更深层次的思考。&lt;/p&gt;
+&lt;p&gt;远程办公的这三年，我探索出了本职工作之外的许多技能，比如说，自学了 rust，还有 evm/solana 智能合约的开发，以及 dex 的套利等等，或许还有更加适合我的、充满挑战的、更有趣的工作机会在等我。&lt;/p&gt;
+&lt;p&gt;我会继续加油的，有新的想法也会在文章中同步～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;最后我想说&quot;&gt;最后我想说&lt;/h4&gt;
+&lt;p&gt;我真的非常荣幸能认识 RSS3 的老板和同事们，Joshua 是我见过的对待员工最平等、真诚的老板，这里的同事们也是一群非常善良、真诚、温柔、热心的人，这三年我在这待的很开心～&lt;/p&gt;
+&lt;p&gt;难过的话不多说了，关于离职这件事，大概就讲到这里，我们都该往前走了。&lt;/p&gt;
+&lt;p&gt;希望我们都可以越来越好～ 未来有机会再见 👋&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>＃3 - 加速的时代、迷失的个体与向外寻找的治愈方式</title>
-    <link href="https://polebug.github.io/2025/07/06/plog_3/"/>
-    <id>https://polebug.github.io/2025/07/06/plog_3/</id>
+    <link href="https://blog.polebug.com/2025/07/06/plog_3/"/>
+    <id>https://blog.polebug.com/2025/07/06/plog_3/</id>
     <published>2025-07-06T01:11:00.000Z</published>
-    <updated>2026-07-19T09:05:52.568Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
+    <updated>2025-07-06T01:11:00.000Z</updated>
+    <summary type="html">本文是对 20250630-0706 的记录与思考 大家好呀！这周是我断更 vlog 的第三周，我发现我每次断更，都是因为我的生活或者内心正在发生一些混沌的变化。 所以，本期周记我想先跟大家聊聊，关于分享欲的话题。这也是我最近一直在思考的。…</summary>
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本文是对 20250630-0706 的记录与思考&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;大家好呀！这周是我断更 vlog</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;大家好呀！这周是我断更 vlog 的第三周，我发现我每次断更，都是因为我的生活或者内心正在发生一些混沌的变化。&lt;/p&gt;
+&lt;p&gt;所以，本期周记我想先跟大家聊聊，关于分享欲的话题。这也是我最近一直在思考的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;1-加速的时代与迷失的个体&quot;&gt;1: 加速的时代与迷失的个体&lt;/h3&gt;
+&lt;p&gt;还记得，我第一次断更 vlog 是在的 23 年 3-10 月。&lt;/p&gt;
+&lt;p&gt;那时候我刚远程办公了半年，当上了 leader，第一次负责一个项目的架构到落地。那段时间里，我每天满脑子就是工作，下班之后不想学习和思考，同时也失去了自己的生活。&lt;/p&gt;
+&lt;p&gt;这种状态一开始还挺有激情的，但是它不可持续。加班带来的副作用随着时间逐渐显露。当一个人没有时间停下来发发呆、散散步，就意味着他失去了与生活对话的间隙。&lt;/p&gt;
+&lt;p&gt;我后知后觉的发现，这个“间隙”是非常重要的，它是一种时间和空间上的停顿。&lt;/p&gt;
+&lt;p&gt;而我对于生活的感知和记忆，大多数就是来自于这个“停顿时刻”。我会在那些时刻里，去感受窗外的风、天上的云、路上的人，也会感受我自己的心情。&lt;/p&gt;
+&lt;p&gt;当我失去这些停顿时，我的生活被加速了一般。我每天拼命地往前跑，而某一刻我问自己：**这一路我跑了多远呢？**我竟想不起来过去这半年发生了什么，只记得自己一直在跑。&lt;/p&gt;
+&lt;p&gt;所以到了 8、9 月，我逐渐意识到我这样加速下去没有意义。于是，又是一个加班到 10 点多的夜晚，我精疲力竭地在查一个非常匪夷所思的 bug，那时脑子里突然闪过一个疑问：“&lt;strong&gt;这个 bug 就不能明天起床再修吗？&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;我这才开始思考：或许我应该 work-life-balance 一点。所以我重新开始录 &lt;a href=&quot;https://www.bilibili.com/video/BV1x841167gZ/?spm_id_from=333.1387.upload.video_card.click&amp;#x26;vd_source=8c3eabe96242925b4baa35b0417907e8&quot;&gt;vlog#32&lt;/a&gt;，想通过 vlog 帮我把生活、学习和工作分割开。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_3/Pasted-image-20250706184614-9844dba6.webp&quot; width=&quot;600&quot; height=&quot;368&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;这个方式确实很奏效，有意识地切割和每周的视频复盘，让我逐渐建立起了“远程办公的秩序”，我探索出了适合自己的节奏，并一直持续到了现在。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;第二次和第三次断更发生在今年 3 月和现在。这两次断更的原因很像，因为连续几个周末都有其他的事情要做，没有太多的时间可以分给剪视频。&lt;/p&gt;
+&lt;p&gt;“忙碌”的背后，其实是优先级和性价比的问题。&lt;/p&gt;
+&lt;p&gt;如今对我而言，花 8-9 小时剪一条 15-20 分钟的视频，已经不像一开始那样带给我非常多的成长。视频之外的我可以保持着自驱、自律，我不再需要摄像头来提醒我了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但是，那个喜欢记录生活、喜欢分享的我并没有变。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我仍然需要对外输出，以此满足我的分享欲。除此之外，这几年在 b 站上也收获了一些粉丝朋友，每次与大家交流阅读、生活，都会觉得很快乐。&lt;/p&gt;
+&lt;p&gt;这就迫使我去思考：&lt;strong&gt;「还有没有更适合我的、不会占用过多时间、但又能满足分享欲的记录方式呢？」&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;关于我的分享欲&quot;&gt;关于我的分享欲&lt;/h4&gt;
+&lt;p&gt;在拍视频的时期，我的分享欲是可以被满足的。但是这几周的文字记录，我的分享欲似乎并没有得到满足，我总觉得我还有很多东西没有讲。&lt;/p&gt;
+&lt;p&gt;这是为什么？&lt;/p&gt;
+&lt;p&gt;昨天我听到王俊在一席的分享：&lt;a href=&quot;https://yixi.tv/#/speech/detail?id=1341&quot;&gt;&lt;strong&gt;数字时代的不幸生活&lt;/strong&gt;&lt;/a&gt;，我好像明白了这背后的原因。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_3/IMG_9572-284f76ba.webp&quot; width=&quot;400&quot; height=&quot;444&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;在「孤单的个体」部分，王俊说到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在今天的互联网的交流里面，这种时间和空间的间隔消失了，每一个个体之间都是直面冲撞的，所有的即时反应和情绪都被我们带到交流过程里面，甚至会被无限的放大。这实际上无助于真正的理解、倾听、共情和对话，更无助于形成真正的共识。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;虽然这段话的上下文是在说，现在便捷的互联网交流很难让我们彼此产生真正的共识。但是，它给了我一个启发：&lt;/p&gt;
+&lt;p&gt;对于记录者而言，当我在录视频的时候，我记录的是&lt;strong&gt;当下那一刻&lt;/strong&gt;的我，分享欲在拍视频的那一刻就得到了满足。而文字是异步的分享，我积累了一周的分享欲，它一下子很难得到满足，所以我总是觉得自己好像漏了什么。&lt;/p&gt;
+&lt;p&gt;对于观众而言，他们在看视频的时候，是连续性的、沉浸式的，他们与我的交流更贴近于“面对面”。而文字交流产生的时间间隙，会吞没彼此的对话，最后变成了一个点赞。&lt;/p&gt;
+&lt;p&gt;他的分享还解答了我另外一个问题：我的分享欲来源于什么？&lt;/p&gt;
+&lt;p&gt;王俊说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当共同体缺失，我们每个人都感到孤独，会特别需要“情绪价值”。而在前互联网时代，情绪价值很大意义上是由一个稳定的共同体提供的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我觉得我的分享欲来源于，我一直在寻找一个“&lt;strong&gt;共同体&lt;/strong&gt;”，一个热爱学习、热爱生活的共同体。&lt;/p&gt;
+&lt;p&gt;我不止一次的在 vlog 里说，我觉得我很幸运认识了这么多观众，和你们一起保持学习，让我觉得自己并不孤单。毕竟我从大学到工作之后，一直都是独自学习的状态，时不时地就会想，要是有人可以一起学习就好了。&lt;/p&gt;
+&lt;p&gt;所以，我把我的见闻分享出来，也是为了认识志同道合的朋友。&lt;/p&gt;
+&lt;p&gt;我的内心这种对于“共同体”的渴望，在信息爆炸的当下变得尤为强烈：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;海德格尔用这句话来描述一种沉沦的日常经验，即我们总是用闲话来实现彼此的连接，人云亦云，但是说的什么转头就忘了，没有深刻的理解和对话。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当我通过视频或者文字，触碰到我理想的共同体时，我们之间产生的理解和对话也同样满足了我的分享欲。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;分享方式的探索&quot;&gt;分享方式的探索&lt;/h4&gt;
+&lt;p&gt;从 2022 年，我开始做自媒体之后，我的分享方式一直在变化。&lt;/p&gt;
+&lt;p&gt;1.0 时期，我在小红书上分享图文，关于女性程序员的处境，关于 web3 的学习路径等等。&lt;/p&gt;
+&lt;p&gt;然后我尝试记录我的学习过程，想要寻找共同学习的伙伴。但我发现，小红书本质上还是“种草”平台，平日里大多数是求资料的人，几乎没有遇到可以交流的人。&lt;/p&gt;
+&lt;p&gt;于是，2.0 时期我来到了 B 站，开始专注于视频的分享方式。从一开始的 3-4 分钟，一路演化到现在 15-20 分钟的长视频。&lt;/p&gt;
+&lt;p&gt;它几乎是完美的分享方式，我可以选我喜欢的 BGM，可以记录下当下的我，可以即时分享一切。&lt;/p&gt;
+&lt;p&gt;但是它还不够好，一是过于耗时，这样的分享很难持续下去，一旦我变忙就极有可能断更；二是视频表达往往缺少了上下文，它只表达了“当下”这一面，我很难通过视频完整地表达所有观点；&lt;/p&gt;
+&lt;p&gt;所以，接下来，我会进一步探索 3.0 时期，把视频和文字结合在一起。这也是为什么我回归到博客和公众号的原因。&lt;/p&gt;
+&lt;p&gt;我的设想有些类似于哈利波特里的报纸，我以前每每看到那个会动的照片，就觉得非常地奇妙。我想把我日常拍的视频，和我的文字结合在一起，看看它们会产生什么样的化学反应～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2-向外寻找的治愈方式&quot;&gt;2: 向外寻找的治愈方式&lt;/h3&gt;
+&lt;p&gt;最近也算是我压力比较大的时期，一是临近项目上线所带来的紧迫，二是 web3 市场现在非常不景气的处境，这两者都让我非常焦虑。&lt;/p&gt;
+&lt;p&gt;在这种状态下，我能很快地感知到，有一些事情是能治愈我的，它们会带给我极大的平静。&lt;/p&gt;
+&lt;p&gt;我后来发现，这些治愈的方式都有一个相同的特点——“它们能让我&lt;strong&gt;只关注当下&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;就像《当下的力量》中所说，如何从你的大脑中解放出来？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以通过将你的注意力集中在当下这一刻，从而在思维中创造那种空白，全神贯注于当下的时刻。&lt;/p&gt;
+&lt;p&gt;当这种空白出现时，你在内心会感觉到一种静止和宁静的状态。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;阅读&quot;&gt;阅读&lt;/h4&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_3/DSCF4063-6acb5f27.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;看完《当下的力量》之后，我买了这本书《人生设计课》，讲的是职业生涯规划的方法论，它的目标是“如何运用设计思维，发现自己未来想做什么？”它里面讲到的一些设计思维，对我来说还挺有启发的，但今天分享不完，我打算留到下周再仔细分享。&lt;/p&gt;
+&lt;p&gt;回归到正题上，阅读一开始对我而言，并没有什么特别的感觉。一直到有一本书的出现，让阅读这件事带给我完全不一样的感观，那本书是《悉达多》。&lt;/p&gt;
+&lt;p&gt;当我读《悉达多》的时候，我第一次进入了一种类似于冥想的状态，我的眼睛在动，但我的脑子好像不动了，一些想法来了又走，世界变得很安静，只剩下翻页的声音。&lt;/p&gt;
+&lt;p&gt;在《悉达多》之后，就开始频繁进入这种状态，阅读半个小时，好像能把所有的烦恼都抽走，一身轻松～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;纸笔&quot;&gt;纸笔&lt;/h4&gt;
+&lt;p&gt;最近在学油画，这是我画的第二幅，还很丑 hhhhh 😅&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_3/DSCF4067-6a243e10.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;画画和写日记是让我感到治愈的第二种方式。&lt;/p&gt;
+&lt;p&gt;有一件想起来挺搞笑的事，我在腾讯的时候，有一段时间内耗非常非常严重，我感觉我都快抑郁了。最后是“画水彩”帮助我每天消化这些负能量 🤣，每天下班了就是回家画水彩，感受颜料和水在纸上的变化，超级治愈。&lt;/p&gt;
+&lt;p&gt;除此之外，还有运动，这种生理上的解压方式，让身体承受轻微的压力以此降低压力激素皮质醇的水平。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;下周我会开始尝试视频和文字结合的方式，下周再见咯～ 👋&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>分享 web3 入门计划｜2025 版</title>
-    <link href="https://polebug.github.io/2025/07/05/web3_2025/"/>
-    <id>https://polebug.github.io/2025/07/05/web3_2025/</id>
+    <link href="https://blog.polebug.com/2025/07/05/web3_2025/"/>
+    <id>https://blog.polebug.com/2025/07/05/web3_2025/</id>
     <published>2025-07-05T12:51:00.000Z</published>
-    <updated>2026-07-19T09:05:52.584Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;2022年，我刚进入 web3 行业的时候，在 &lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
+    <updated>2025-07-05T12:51:00.000Z</updated>
+    <summary type="html">2022年，我刚进入 web3 行业的时候，在 notion 上写过一版 web3 入门计划。 前段时间，我惊奇的发现，还有很多人在看份入门计划，甚至最近收到了很多催更，问我现在想入门 web3 可以怎么学，和之前有什么不同。 我最近刚好想…</summary>
+    <content type="html">&lt;p&gt;2022年，我刚进入 web3 行业的时候，在 &lt;a href=&quot;https://cubic-leaf-731.notion.site/web3-202208-09-1623ccd15c2148a1ae00ed8794d153b1&quot;&gt;notion 上写过一版 web3 入门计划&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;前段时间，我惊奇的发现，还有很多人在看份入门计划，甚至最近收到了很多催更，问我现在想入门 web3 可以怎么学，和之前有什么不同。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/web3_2025/Pasted-Graphic-a62eea7c.webp&quot; width=&quot;800&quot; height=&quot;406&quot; alt=&quot;web3 2022&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;我最近刚好想整理一下这几年学习区块链的笔记，就顺便更新一版 web3 的入门计划，希望对想入行的大家有所帮助～&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在分享之前，我想先提一下两个版本学习计划的背景。&lt;/p&gt;
+&lt;p&gt;2022 版的学习计划是写在我刚入行的时候，那时我还是个小白，对区块链所知甚少，所以给自己规划了六周时间去入门。后面觉得自己学的太浅了，非常不够用，陆续又花时间看了许多教程和 paper。&lt;/p&gt;
+&lt;p&gt;第一版的学习强度我觉得不太足够，顶多是算了解了一遍，还没到入门的水平。并且，我当时是一边学一边做的总结，这就导致学习列表里的质量是参差不齐的。因为我当时前提找资料的时候，也不知道它到底质量如何，所以第一版的旁边有一个推荐指数，和我的评价（没到90分基本都是不推荐的）。&lt;/p&gt;
+&lt;p&gt;那这次 2025 版的学习计划，我会给出丰富且全面的学习材料，学习的时间也会更长，大家可以按自己的节奏和侧重点去学。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;part0-整体的学习思路&quot;&gt;Part0. 整体的学习思路&lt;/h4&gt;
+&lt;p&gt;从学习的框架上来说，第一版和第二版其实没有太大的变化，还是从链到各个赛道去学习。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/web3_2025/0_D8929USL2WWWNOZF-43d4d653.webp&quot; width=&quot;800&quot; height=&quot;385&quot; alt=&quot;web3 2022&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;可以参考 coinbase web3 stack 这张图，虽然它是 2022 年的，但是三年过去了，好像也没有发生什么变化 😅 现在仍然可以从 Protocol Layer 到 DApp 去入门。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;part1区块链的基础知识&quot;&gt;Part1. 区块链的基础知识&lt;/h4&gt;
+&lt;p&gt;学习 web3 的第一步，需要了解一些区块链基础的概念和学习 Protocol Layer 的底层原理。&lt;/p&gt;
+&lt;style&gt;
+  table.simple-bordered {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+  table.simple-bordered th,
+  table.simple-bordered td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+	vertical-align: top;
+    background-color: transparent;
+  }
+
+  table.simple-bordered ul {
+    margin: 0;
+    padding-left: 16px; /* 调小缩进 */
+  }
+
+  table.simple-bordered th {
+    font-weight: bold;
+  }
+
+  table.simple-bordered a {
+    text-decoration: none;
+  }
+
+  table.simple-bordered a:hover {
+    text-decoration: underline;
+  }
+&lt;/style&gt;
+
   
+    
+      
+      
+      
+    
+  
+  
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+  
+&lt;table class=&quot;simple-bordered&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;学习目标&lt;/th&gt;&lt;th&gt;材料&lt;/th&gt;&lt;th&gt;补充&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;
+        1. 理解密码学在区块链中的核心作用； &lt;br&gt;
+        2. 掌握区块链的基本概念； &lt;br&gt;
+        3. 构建对金融系统及加密金融逻辑的基础理解；
+      &lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/&quot; target=&quot;_blank&quot;&gt;
+              MIT Blockchain and Money (15.S12)
+            &lt;/a&gt;&lt;br&gt;
+            MIT 这个课很适合入门去听，可以只看 Session1–6：&lt;br&gt; 包括传统金融、区块链技术、相关加密算法、智能合约和 DAPP 的概念；
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+        掌握主流公链：&lt;br&gt;
+        1. Bitcoin &lt;br&gt;
+        2. Ethereum &lt;br&gt;
+        3. Solana &lt;br&gt;
+        底层原理及其差异
+      &lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot; target=&quot;_blank&quot;&gt;Bitcoin whitepaper&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://ethereum.org/en/whitepaper/&quot; target=&quot;_blank&quot;&gt;Ethereum whitepaper&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://solana.com/solana-whitepaper.pdf&quot; target=&quot;_blank&quot;&gt;Solana whitepaper&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            推荐肖臻老师的 &lt;strong&gt;北大区块链公开课&lt;/strong&gt;：&lt;br&gt; 仔细读白皮书能懂个大概的意思，但如果想要加深理解，我非常推荐去看肖臻老师的课。&lt;br&gt;
+			这个课讲得很详细（关于挖矿、分叉等各种细节都有讲到），但需要看挺久的，20h+；
+          &lt;/li&gt;
+          &lt;li&gt;
+            Vitalik 关于 &lt;a href=&quot;https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake&quot; target=&quot;_blank&quot;&gt;Proof of Stake 的文章&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://docs.anza.xyz/clusters&quot; target=&quot;_blank&quot;&gt;Solana 官方文档&lt;/a&gt; 也可以看看
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;part2初步了解智能合约的概念和执行环境&quot;&gt;Part2. 初步了解智能合约的概念和执行环境&lt;/h4&gt;
+&lt;p&gt;当我们建立了对区块链的宏观认知底层原理之后，我们来到了更上一层——智能合约，但是别急着学习智能合约的开发，你需要先了解智能合约的基本定义、运行方式、特性等等，对智能合约的底层运行机制有基本认识，后续如果有兴趣，再开始动手学习智能合约的开发部分。&lt;/p&gt;
+
+  
+    
+      
+      
+      
+    
+  
+  
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+  
+&lt;table class=&quot;simple-bordered&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;学习目标&lt;/th&gt;&lt;th&gt;材料&lt;/th&gt;&lt;th&gt;补充&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;了解智能合约的定义与特性&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://ethereum.org/en/developers/docs/smart-contracts/&quot; target=&quot;_blank&quot;&gt;Ethereum 官方文档关于智能合约的介绍&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://ethereum.org/en/developers/docs/gas/&quot; target=&quot;_blank&quot;&gt;关于 Gas 和 Fee 的介绍&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://solana.com/docs/core&quot; target=&quot;_blank&quot;&gt;Solana Core Concepts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;《Mastering Ethereum》&lt;/strong&gt; &lt;a href=&quot;https://github.com/ethereumbook/ethereumbook/blob/develop/07smart-contracts-solidity.asciidoc&quot; target=&quot;_blank&quot;&gt;关于智能合约的部分（第 7–10 章）&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解智能合约的执行环境&lt;/td&gt;&lt;td&gt;
+        &lt;a href=&quot;https://ethereum.org/en/developers/docs/evm/&quot; target=&quot;_blank&quot;&gt;Ethereum 官方文档关于 EVM 的介绍&lt;/a&gt;
+      &lt;/td&gt;&lt;td&gt;
+        感兴趣的朋友也可以了解其他虚拟机环境，例如 
+        &lt;a href=&quot;https://docs.substrate.io/&quot; target=&quot;_blank&quot;&gt;WASM&lt;/a&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;时间充裕的情况，可以把 Ethereum 的官方文档都翻一遍，很多文档都是概念和定义。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;part3了解各个赛道的dapp和其背后的设计&quot;&gt;Part3. 了解各个赛道的 DApp 和其背后的设计&lt;/h4&gt;
+&lt;p&gt;了解完区块链和智能合约之后，我们就已经算是把相关的概念都学完了。&lt;/p&gt;
+&lt;p&gt;接下来我们应该去学习区块链上的具体应用场景（DApp），可以从不同赛道中挑选有代表性的项目，通过阅读官方文档和白皮书学习这些 DApp 的设计。&lt;/p&gt;
+
+  
+    
+      
+      
+      
+    
+  
+  
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+  
+&lt;table class=&quot;simple-bordered&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;学习目标&lt;/th&gt;&lt;th&gt;材料&lt;/th&gt;&lt;th&gt;补充&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;理解 DApp 的主要设计（链+合约+钱包+前端）&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://ethereum.org/en/developers/docs/dapps/&quot; target=&quot;_blank&quot;&gt;
+              以太坊官方文档关于 DApp 架构的介绍
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://ethereum.org/en/developers/docs/web2-vs-web3/&quot; target=&quot;_blank&quot;&gt;
+              关于 web2 和 web3 的区别
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解 DeFi&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/Uniswap/v2-core&quot; target=&quot;_blank&quot;&gt;Uniswap v2 core&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://uniswap.org/whitepaper-v3.pdf&quot; target=&quot;_blank&quot;&gt;Uniswap v3 白皮书&lt;/a&gt; 
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://docs.aave.com/&quot; target=&quot;_blank&quot;&gt;AAVE 协议的官方文档&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;
+        DeFi 值得学习的项目有很多，还可以&lt;br&gt;看看
+        Raydium、Curve、Compound，&lt;br&gt;
+        感兴趣的朋友自行找找官方文档即可；
+      &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解 NFT&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://eips.ethereum.org/EIPS/eip-721&quot; target=&quot;_blank&quot;&gt;关于 ERC-721 标准&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://eips.ethereum.org/EIPS/eip-1155&quot; target=&quot;_blank&quot;&gt;关于 ERC-1155 标准&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解 GameFi&lt;/td&gt;&lt;td&gt;
+	  &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://whitepaper.axieinfinity.com/&quot; target=&quot;_blank&quot;&gt;经典项目：Axie&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;
+        GameFi、SocialFi 的设计都比较简单，&lt;br&gt;
+        基本上是 NFT + 链的设计，这俩赛道就随便看看；
+      &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解 SocialFi&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://docs.farcaster.xyz/&quot; target=&quot;_blank&quot;&gt;Farcaster Protocol 文档&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;https://docs.lens.xyz/docs/intro&quot; target=&quot;_blank&quot;&gt;Lens Protocol 文档&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;了解 Layer2&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://docs.optimism.io/&quot; target=&quot;_blank&quot;&gt;Optimism&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://developer.arbitrum.io/&quot; target=&quot;_blank&quot;&gt;Arbitrum&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;
+        Layer2 太多了，还有 Scroll、Linea、&lt;br&gt;
+		zkSync，挑几个喜欢的了解了解即可；
+      &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;part4-入门-dapp-的开发&quot;&gt;Part4: 入门 DApp 的开发&lt;/h4&gt;
+&lt;p&gt;最后是实践环节，可以尝试写一个 DApp，如果你并不想学习智能合约的开发，也可以钱包交互+前端，或者是链上合约的数据解析+后端。&lt;/p&gt;
+&lt;p&gt;因为本人是后端+智能合约的技术栈，下面推荐的学习材料也是围绕这两方面。&lt;/p&gt;
+
+  
+    
+      
+      
+      
+    
+  
+  
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+    
+      
+      
+      
+    
+  
+&lt;table class=&quot;simple-bordered&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;学习目标&lt;/th&gt;&lt;th&gt;材料&lt;/th&gt;&lt;th&gt;补充&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1. 入门智能合约的基本语法、框架；&lt;br&gt;2. 用智能合约写一个简单的 DApp；&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Solidity 教程 &lt;a href=&quot;https://solidity-by-example.org/hello-world/&quot; target=&quot;_blank&quot;&gt;Solidity By Example&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Solidity By Example 也有相关的 &lt;a href=&quot;https://www.youtube.com/playlist?list=PLvrAcVH0nwP-eMuKoR4rBd6Mz7z8lvh8i&quot; target=&quot;_blank&quot;&gt;视频教程&lt;/a&gt; 可以跟着学&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/trufflesuite/truffle&quot; target=&quot;_blank&quot;&gt;Truffle 框架&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/eth-brownie/brownie&quot; target=&quot;_blank&quot;&gt;Brownie 框架&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/NomicFoundation/hardhat&quot; target=&quot;_blank&quot;&gt;Hardhat 框架&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.anchor-lang.com/docs&quot; target=&quot;_blank&quot;&gt;Solana Anchor 官方教程&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Anchor 的视频教程我看的是 &lt;a href=&quot;https://www.youtube.com/playlist?list=PL53JxaGwWUqCr3xm4qvqbgpJ4Xbs4lCs7&quot; target=&quot;_blank&quot;&gt;Josh 大佬的视频&lt;/a&gt;，觉得他讲的特别好&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;不一定要全部学完，可以自己定一个想要实现的效果，带着目标去学；&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;学习智能合约相关的工具&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://remix.ethereum.org/&quot; target=&quot;_blank&quot;&gt;Remix IDE&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.openzeppelin.com&quot; target=&quot;_blank&quot;&gt;OpenZeppelin&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Solana 智能合约的 &lt;a href=&quot;https://solana.com/docs/programs/deploying#bpf-programs&quot; target=&quot;_blank&quot;&gt;部署文档&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;学习web3相关的后端技术：&lt;ul&gt;&lt;li&gt; 与智能合约交互&lt;/li&gt;&lt;li&gt; 解析链上数据 transaction/event&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://goethereumbook.org/en/&quot; target=&quot;_blank&quot;&gt;Ethereum Development with Go&lt;/a&gt; 的教程基本够用&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;如果你每天学习 1.5-2h，part1-3 我预计需要学习 5 周（不算补充材料的学习），它们大多数都在看各种文档，并不需要花太多时间。&lt;/p&gt;
+&lt;p&gt;为什么比第一版时间短呢，因为第一版里有许多低质量的教程浪费了些时间，第二版都规避了。&lt;/p&gt;
+&lt;p&gt;以上！希望大家学的开心！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;声明：此篇文章版权属于 polebug 所有。其他媒体、网站或个人转载使用时不得进行商业性的原版原式的转载，也不得歪曲和篡改本网站所发布的内容。&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+  </entry>
   <entry>
     <title>＃2 - 2025 上半年的内在对照</title>
-    <link href="https://polebug.github.io/2025/06/28/plog_2/"/>
-    <id>https://polebug.github.io/2025/06/28/plog_2/</id>
+    <link href="https://blog.polebug.com/2025/06/28/plog_2/"/>
+    <id>https://blog.polebug.com/2025/06/28/plog_2/</id>
     <published>2025-06-28T13:51:00.000Z</published>
-    <updated>2025-07-06T14:31:35.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;现在已是 6 月的最后一个周末。&lt;br&gt;我看完《当下的力量》后，照例把读书笔记贴进我的手帐本里。轻轻一翻才发现，2025 的手帐本已经被我用花花绿绿的胶带贴得有点厚重了。&lt;/p&gt;
-&lt;div style=&quot;display: flex; justify-content:</summary>
-        
-      
-    
-    
-    
-    
+    <updated>2025-06-28T13:51:00.000Z</updated>
+    <summary type="html">现在已是 6 月的最后一个周末。 我看完《当下的力量》后，照例把读书笔记贴进我的手帐本里。轻轻一翻才发现，2025 的手帐本已经被我用花花绿绿的胶带贴得有点厚重了。 《当下的力量》的第九章说到： 只要你的思维将某种情况判定成“好的”，不论它…</summary>
+    <content type="html">&lt;p&gt;现在已是 6 月的最后一个周末。
+我看完《当下的力量》后，照例把读书笔记贴进我的手帐本里。轻轻一翻才发现，2025 的手帐本已经被我用花花绿绿的胶带贴得有点厚重了。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/Pasted-image-20250629112143-b9f6cbc6.webp&quot; width=&quot;600&quot; height=&quot;363&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;《当下的力量》的第九章说到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只要你的思维将某种情况判定成“好的”，不论它是什么，你的思维就会执着并认同它，但是没有什么可以永远存在。它要么改变，要么终结，要么向事情的对立面发展。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以前我写月度或者年度复盘的时候，也常常把事情分成“好的”和“不好的”，看了书里这句话之后，我意识到，这样的分类其实是给自己徒增烦恼了。所以，这一次做半年回顾，我打算尽量做客观的记录，不赋予这些事情额外的情绪。&lt;/p&gt;
+&lt;p&gt;我觉得今年和过去两年都不太一样。以前我做复盘的时候，能感觉到有一条主线任务，很多事情冥冥之中是绕着这些主线在发展。但是今年上半年发生了许多事，它们目前看起来是互相独立的状态，分别点在实体创业、链上套利、买房、旅行和见朋友这几个大的方向上，我将依次简单的回顾一下它们。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;从玄学类实体轻创业的开始到结束&quot;&gt;从玄学类实体轻创业的开始到结束&lt;/h4&gt;
+&lt;p&gt;去年的下半年，我突然对水晶很上头，每天喜欢观察水晶内部的结构，每每看见都会心情很美。如图，这颗是我在某宝偶然看到的一颗黄水晶，它内部的结构很丰富，有冰片、绵絮，虽然这些东西总被称为“杂质”，但我只觉得有趣、灵动、美丽。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/IMG_9410-aded3703.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;去年那会，碰巧有几个朋友老找我算命。我想着考研、找工作这些事情，单算命其实没啥意义，它们大多数是一半运气一半努力的事。然后我就想到，或许水晶可以帮助他们调整能量，在运气方面有一些加成。&lt;/p&gt;
+&lt;p&gt;于是，我就开始给周围有需要的好朋友们配水晶，意外地发现效果还不错，几个月后朋友们都成功上岸了。当然，水晶起到的玄学作用是很小的，虽然它会影响磁场，但毕竟还是个小物件，我觉得主要是朋友们戴着水晶能少一点焦虑罢了 😁。&lt;/p&gt;
+&lt;p&gt;随着我的水晶越买越多，开个小店增加一下流动性就变成了一件水到渠成的事了。&lt;/p&gt;
+&lt;p&gt;起初我只是佛系在小某书上发发图，佛系接五行定制，因为我上班够忙了，平时还有其他事，所以我一般是周末赶一下单子，勉强可以维持运作。&lt;/p&gt;
+&lt;p&gt;没想到今年年初的时候，DeepSeek 算命爆火，更搞笑的是，它在算命结束之后，还会给用户推荐水晶，一下子就把水晶定制带火了。我的很多历史贴就这样被 DeepSeek 带了几波流量，那时候每天都有几十上百人想要定制。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/10391751179820_.pic-1b2eaac4.webp&quot; width=&quot;600&quot; height=&quot;385&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;但是很可惜的是，我并没有接住那波流量，一方面是爆火的时间是在春节，我还在老家过年，有点无能为力；其次，我也没有这么大的货源、人力去接这些客户，没办法临时去调动这些资源。&lt;/p&gt;
+&lt;p&gt;回来广州之后，流量不减，我就一直在琢磨如何提高产量的事。&lt;/p&gt;
+&lt;p&gt;但我后来发现，这一个我目前没办法解决的难题。&lt;/p&gt;
+&lt;p&gt;一是这件事对我来说，还只是个副业，我如果要为它投入更多的资源，必然得投入更多的时间，但我目前抽不出更多的时间来经营它；二是利润问题，我前期的定价是比较低的，进货是我周末去广州的批发市场里挑，或者是在网上找商家挑，如果要扩大进货量，这里就会提高瑕疵率，再加上引入人力成本，以我现在的定价几乎赚不到多少钱。&lt;/p&gt;
+&lt;p&gt;不同规模的产量背后是两种完全不同的运作方式。如果想要提高产量，就得推翻现有的模式，重新定价，重新运营，重新建立生产的路线。&lt;/p&gt;
+&lt;p&gt;评估之后我觉得太麻烦了，所以最近几个月已经是半放弃状态，我还是想把时间投入到更高效产生价值的事情上。&lt;/p&gt;
+&lt;p&gt;但不得不说，这一路上我认识了很多很好的女宝们，也因为水晶这个媒介和以前的朋友有了更多的联络，尝试新的领域也带给我不少的收获～ 以后有时间再重启这个事吧～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;关于链上套利&quot;&gt;关于链上套利&lt;/h4&gt;
+&lt;p&gt;去年我在二级市场上赚了些钱之后，就一直在琢磨套利、量化交易这些事。碰巧今年 web3 行业没有太多的气色，就逐渐把注意力放到这个领域上了。&lt;/p&gt;
+&lt;p&gt;我探索下来发现，不管是量化交易还是套利，都有非常很高的门槛。并且这个门是很难摸到的，因为存在很多竞争对手，这个领域几乎没有人愿意分享经验。&lt;/p&gt;
+&lt;p&gt;在量化交易方面，只有高频是稳定赚钱、且回撤很小的，但是高频在很多方面都有门槛，比如说策略、算法、服务器速度、交易所的账号，几乎每一项都有壁垒，且需要较多的资本、人脉。如果你不是身处投行，几乎不可能挤进高频这个赛道。&lt;/p&gt;
+&lt;p&gt;套利的门槛会比量化交易小一些，它的难点主要在技术上，需要对链、DeFi 熟悉，才能挖掘并获得套利的机会。&lt;/p&gt;
+&lt;p&gt;这半年我也主要是在探索 Sol 链上套利上，第一次用 Rust 写 arbitrage bot，还看了各种 DeFi 项目的白皮书，踩了很多坑。7、8月大概会开始跑，还不知道能不能赚钱，到时再分享。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;买了个房子&quot;&gt;买了个房子&lt;/h4&gt;
+&lt;p&gt;还记得去年底的时候，我随手写下了这样一句话：想要一个明亮、宽敞、通风的房子… 没想到今年 1 月的时候，就实现了。这件事确实发生的很快，我完全没有料到。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/douban-7b9a9ef4.webp&quot; width=&quot;400&quot; height=&quot;126&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;但是我现在还没办法装扮它成为我喜欢的样子，因为它是期房，预计 27 年开始装修（刚好这一两年研究一下设计）。&lt;/p&gt;
+&lt;p&gt;我以为，以我 J 人的属性来说，我会挑房子挑个一年半载，但是我后面发现，买房也是比较考验缘分的。&lt;/p&gt;
+&lt;p&gt;关于买房这件事，我在 VLOG#87，还有博客、频道里都分享过许多买房的前后经过和我的思考，这里就不再赘述了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;上半年的旅行-杭州大理香港澳门&quot;&gt;上半年的旅行 —— 杭州、大理、香港、澳门&lt;/h4&gt;
+&lt;p&gt;今年的旅行和朋友是紧密相关的。&lt;/p&gt;
+&lt;p&gt;2月底，我去杭州参加章鱼和学姐的婚礼，是我见过最最真诚、有爱的婚礼了！每每看到学姐的致辞，都会很感动的程度 555&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/photo_2025-06-29-19.14.24-a1e14c55.webp&quot; width=&quot;600&quot; height=&quot;403&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;吃席的时候，还见到了很多现在的同事（因为远程办公的缘故，很多同事我都是第一次见）。&lt;/p&gt;
+&lt;p&gt;更难得的是，我大学的室友们在那周末也都来了杭州，想来我们已经五年左右没有见面了。那天晚上，两个室友陪我住在酒店里，恍惚间我们好像还在大学的宿舍里躺着。&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/IMG_5909-946d1621.webp&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+ ￼
+&lt;p&gt;3月我和男朋友去了大理，虽然有几天大理的风吹得我怀疑人生，但是，那可是大理！不吹风的时候，还是超级快乐的！去苍山徒步、捡超大的松果，去洱海边的咖啡厅办公，去大理的集市买吃的，换个环境上班心情都不一样了 😁&lt;/p&gt;
+&lt;p&gt;还面基了一个 babylon 的网友盖盖，我真的好久没线下跟同行交流了，大家一起聊技术、远程办公超快乐～
+￼&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/IMG_6509-60b9af91.webp&quot; width=&quot;600&quot; height=&quot;600&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;在大理的那一周，我完全爱上了徒步，感觉自己在山里的能量很高，以至于回广州之后，我每周末都想去山里。在三月底的一个周末，和朋友们去清远莫六公山露营+爬山，这里营地很棒，体验满分💯&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/IMG_7081-1a1fb1ae.webp&quot; width=&quot;600&quot; height=&quot;600&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;4月我去了香港，虽然以前也常去香港（办卡），但这次待了一周，算是深度体验了一下香港的生活。坐船去了塔门，路上经过西贡，感觉香港的海岛确实很适合徒步，真的很美丽！&lt;/p&gt;
+&lt;p&gt;香港那周见了 Kate 和 Henry，和他们一起办公之后，围观他们正骨嗷嗷大叫 😁。我还见到了 Anne，和她聊的很投机，从玄学聊到创业到 web3，她还拉我一起去瑜伽。瑜伽的感觉很 warm，我很喜欢！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/IMG_7680-5858975e.webp&quot; width=&quot;600&quot; height=&quot;600&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;6月去了澳门，很喜欢澳门的欧式建筑，超喜欢在澳门 city walk 💓&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_2/10051749393250_.pic_hd-c4ca30f5.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;上半年的阅读&quot;&gt;上半年的阅读&lt;/h4&gt;
+&lt;p&gt;上半年刚好看了 6 本书（勉强达到一个月看完一本的节奏），按时间顺序依次看了：《荒原狼》、《面纱》、《也许你该找个人聊聊》、《悲惨世界》、《消失的多巴胺》、《当下的力量》。&lt;/p&gt;
+&lt;p&gt;其中重读《悲惨世界》花了我两个月左右的时间，最喜欢的是《当下的力量》，下周会写一篇读后感聊聊它。&lt;/p&gt;
+&lt;p&gt;看了许多电影，但脑子里想不起来几部了 🤣 印象最深的大概是「少年派的奇幻漂流」。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;下半年没什么特别的想法，想把上半年没做好的事做好。&lt;/p&gt;
+&lt;p&gt;继续加油～&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>＃1 - 新的认知与流转</title>
-    <link href="https://polebug.github.io/2025/06/21/plog_1/"/>
-    <id>https://polebug.github.io/2025/06/21/plog_1/</id>
+    <link href="https://blog.polebug.com/2025/06/21/plog_1/"/>
+    <id>https://blog.polebug.com/2025/06/21/plog_1/</id>
     <published>2025-06-21T13:51:00.000Z</published>
-    <updated>2025-07-06T14:31:19.056Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
+    <updated>2025-06-21T13:51:00.000Z</updated>
+    <summary type="html">本文是对于 20250616-0622 的记录与思考 👋 哈喽朋友们，又来到了新的一周！ 我这周本想更新 vlog，没想到周五用了 Claude Code 之后，打破了原有的计划，到了周末一心只想写代码，实在是剪不下去本期的 vlog (…</summary>
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;本文是对于 20250616-0622 的记录与思考&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;👋 哈喽朋友们，又来到了新的一周！&lt;/p&gt;
-&lt;p&gt;我这周本想更新 vlog，没想到周五用了 Claude Code</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;我这周本想更新 vlog，没想到周五用了 Claude Code 之后，打破了原有的计划，到了周末一心只想写代码，实在是剪不下去本期的 vlog ( ˚ཫ˚ )  尝试剪视频但失败了，脑子里重复播放：去写代码..写代码..代码..码…&lt;/p&gt;
+&lt;p&gt;既然这周的 vlog 剪不下去了，那就用文字简单记录一下吧～至于什么时候恢复更新 vlog，老实说我也不敢保证，得看下周的状态呢 ʕ•̫͡•ོʔ 没到下周我也不好说（J人已经放弃计划了，计划赶不上变化）&lt;/p&gt;
+&lt;p&gt;话不多说，还是来看看我这周发生了什么吧～～～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;1-claude-code---我一般不吹什么-ai但它真的太强了&quot;&gt;1: Claude Code - 我一般不吹什么 AI，但它真的太强了&lt;/h4&gt;
+&lt;p&gt;在 claude code 出来之前，我一直比较嫌弃 AI 写的代码，不管是 Gemini-2.5-pro 还是 Claude-4-sonnet，我觉得都觉得不太行。&lt;/p&gt;
+&lt;p&gt;一是 cursor 中任何一个模型，对上下文理解的能力都一般，在逻辑稍微复杂的情况下，它就容易出现理解偏差，生成的代码比较糟糕；二是让 AI 写代码的时候，它经常会出现一些比较低级的错误，我需要不断指正它犯的错，这个交互过程让我很烦，觉得还不如我自己写算了。&lt;/p&gt;
+&lt;p&gt;被 AI 烦了大半年之后，我觉得确定自己受不了现在这种状态，在&lt;a href=&quot;https://www.bilibili.com/video/BV1QxJGzQE1G/&quot;&gt;这期 vlog 里吐槽了一下&lt;/a&gt;，觉得 AI 没办法帮我解决复杂问题，还会影响到我写代码的心流，完全不快乐，所以在下班之后的时间，我打算回归自己写代码的日子，靠自己慢慢去攻克难题。&lt;/p&gt;
+&lt;p&gt;但是现在，以上问题几乎被 claude code 完美解决了！&lt;/p&gt;
+&lt;p&gt;被 claude code 惊艳的那个夜晚，我本该早早睡觉了，但当下的我一点都睡不着：&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/claude_code-0ec228fd.webp&quot; width=&quot;500&quot; height=&quot;135&quot; alt=&quot;Claude Code&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;以前我以为，cursor 可能是 AI coding 的天花板了，但我体验 cc 之后，我发现它的代码能力远比 cursor 强很多很多。&lt;/p&gt;
+&lt;p&gt;首先它的代码设计、上下文理解能力，都比 cursor 提升很多。但我觉得这个不是重点，重点是，它可以自己测试、纠错。&lt;/p&gt;
+&lt;p&gt;比如，我让它实现一个需求，它会自己拆分需求模块，建立 TODO -&gt; 按照 TODO 依次实现业务逻辑 -&gt; 每次写完一个逻辑，会自己写一个测试 -&gt; 自动运行测试 -&gt; 查看运行的结果是否和一开始的预期有出入 -&gt; 如果有出入，重新修改代码逻辑&lt;/p&gt;
+&lt;p&gt;我们以前总说，AI 取代不了人类工程师，因为还需要人去审核逻辑，判断最终的结果是否正确。但是现在不同了，AI 自己能对结果进行校验，甚至有的时候它还校验的比我好。&lt;/p&gt;
+&lt;p&gt;还有一个有意思的点是，claude code 的设计行为非常接近于一个工程师会做的。最让我震惊的是，有一次它写完代码之后，自己 run 了一下，发现日志太多了不方便阅读，然后它说，现在这个日志需要优化一下。&lt;/p&gt;
+&lt;p&gt;我看到这个细节的当下，感觉非常震撼… 突然意识到 AI 不再是那个死板的，你说 1、2，它绝对想不到 a、b 的工具，现在的 claude code 更像是一个自己会思考、会判断、会检验的“实习生”。&lt;/p&gt;
+&lt;p&gt;以前我看到那些打着「不会代码也能实现 APP 」旗号的 AI 课，总是嘲笑他们有点割，为了卖课真是啥都敢说，但是 claude code 确实让我看到了一些可能性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;2-关于潮玩的认知变化&quot;&gt;2: 关于潮玩的认知变化&lt;/h4&gt;
+&lt;p&gt;我其实一直不太理解泡泡玛特为什么这么“火”？在我看来，它们就是一些可爱的、但是可有可无的娃娃，为什么会有这么多人买单呢？&lt;/p&gt;
+&lt;p&gt;最近被王宁的演讲刷屏，我才意识到潮玩的市场和我的认知是不太一样的，并且潮玩也和普通的商品不一样。&lt;/p&gt;
+&lt;p&gt;王宁说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实所有的消费行为都是在解决两件事情：一个是满足感，一个是存在感。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;大多数的商品都在解决满足感上，要么满足物质需求，要么满足精神需求。&lt;/p&gt;
+&lt;p&gt;而泡泡玛特、奢侈品、各种小众设计是在解决另外一个问题：&lt;strong&gt;存在感&lt;/strong&gt;，从这些商品中，你获得的是身份、品位、别人的认同等等。&lt;/p&gt;
+&lt;p&gt;解决满足感的商品都存在一个“困境”，因为它的功能属性，意味着它需要不断迭代功能，市场才会继续买账。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大家可以设想下，假设 MOLLY 的头拔掉是个 U 盘，你还会不会买这么多？
+你肯定不会。
+因为你每买一个 U 盘 MOLLY，都会琢磨一下，我为什么又买了一个 U 盘？我已经有好几个了，用不了这么多！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用户的需求被满足之后，他很难再次消费。但是，像潮玩这种看起来无用的东西，它解决的“存在感”问题，是一种日常被大众忽视的需求。消费者买的并不是娃娃本身，而是一种“情绪”。&lt;/p&gt;
+&lt;p&gt;在 &lt;a href=&quot;https://1q43.blog/post/11388/&quot;&gt;这篇文章&lt;/a&gt; 中，看到这段话，觉得很贴切：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;她消费的是“话题”，是“社交资本”，是“情绪满足”。这些东西，比那个布娃娃本身值钱得多，也真实得多。对于这部分主流消费者来说，Labubu 不是股票，而是演唱会门票。你看完演出了，难道还会因为票根变得一文不值而感觉被骗了吗？&lt;/p&gt;
+&lt;p&gt;2 万块的 Labubu 是泡沫吗？当然不是，因为对这类消费者来说，Labubu 的使用价值恰恰是“我花 2 万块买了原本 199 元”的娃娃。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;3-看了当下的力量我鼓起勇气直面内心的疙瘩&quot;&gt;3: 看了《当下的力量》，我鼓起勇气，直面内心的疙瘩&lt;/h4&gt;
+&lt;p&gt;这个星期我还在看《当下的力量》，我很喜欢这本书，同时也很喜欢我读这本书的状态，当我跟着书里的话慢慢思考，慢慢感受自己的内心，我逐渐看清那些莫名让我烦躁的、让我抗拒的谜团到底是什么。&lt;/p&gt;
+&lt;p&gt;这本书的 1～3 章我在 vlog 中分享过，第一章关于思维，第二章关于痛苦，第三章关于时间，它们有一个核心的命题就是「进入当下」，只有进入当下思维才会停止吵闹，痛苦才会不复存在，我们才不会再关注过去与未来。&lt;/p&gt;
+&lt;p&gt;而在第四章，作者点出了「进入当下」的本质，其实是一种意识转变：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从你在过去中寻找认同感的心理需要，以及在未来寻找满足的心理需要中解放出来。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;并且，还需要从不快乐中解脱出来：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你是否怨恨你正在做的事情？它可能是你的工作，或者你已经统一了做这件事，并且你正在做，但是你同时又在怨恨和抗拒这件事。你会默默地怨恨与你亲近的人吗？你是否意识到了你因此散发出来的能量是非常有害的，它会影响你自己以及周围的人？&lt;/p&gt;
+&lt;p&gt;停下你正在做的事情，与相关的人谈话，全面地表达你的感受。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一段话正中我的内心，因为我知道我内心里有一个关于“亲情”命题的疙瘩，它确实让我默默地怨恨，又时不时让我暴躁。又或者是，我为了让自己不再受到伤害，就会不停地抵抗，而这种抵抗其实又加剧了矛盾。&lt;/p&gt;
+&lt;p&gt;看完这段话之后，我觉得我应该要去找有关的人说清楚，把我的想法、我的感受一一说明，而不是憋着，也不是大吵大闹。&lt;/p&gt;
+&lt;p&gt;于是我给我爸发去了一段很长的话，关于我对他、对我爷爷的想法。以前在这一方面发生过很多矛盾和争执，在之前的 vlog 里也偶尔提过，我觉得主要原因是我爸对我爷爷过于顺从，而他又不够尊重我的看法，遇到事情从来不问我愿不愿意，常年累月积累的压抑情绪，导致我现在非常抵抗的态度。&lt;/p&gt;
+&lt;p&gt;给我爸发了一大段话，但他没有回我。我已经习惯了，感觉我爸应该是回避型人格。随他去了。&lt;/p&gt;
+&lt;p&gt;但没关系，我获得了些许平静。就很好。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;4-关于语言学习的一些记录&quot;&gt;4: 关于语言学习的一些记录&lt;/h4&gt;
+&lt;p&gt;周三的时候，我们公司照例有一个分享，这次到了姐姐。&lt;/p&gt;
+&lt;p&gt;我一直很喜欢姐姐的分享（姐姐是 atlas 的昵称），她去年分享的是「语言和思维是互相影响的」，其中让我印象深刻的例子是，在描述方向的时候，有的人习惯用左右来描述，但有一些人他们从小没有上下左右的概念，只讲东南西北，这两者的思维就会有很大的不同，后者肯定比前者更熟悉这种绝对位置。&lt;/p&gt;
+&lt;p&gt;这一次姐姐分享的是围绕 Comprehensible Input 的系统学习方法，它是一种从零开始学习语言的体系，核心观点就是：先输入，再输出。&lt;/p&gt;
+&lt;p&gt;比如像 Dreaming Spanish 这个图：&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/Dreaming_Spanish-ebb5685f.webp&quot; width=&quot;600&quot; height=&quot;270&quot; alt=&quot;Claude Code&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;前 600h 需要不断地听，之后才开始阅读和对话。就像人一开始学说话，在开口说“爸爸妈妈”之前，其实已经能听懂这个词的含义了。&lt;/p&gt;
+&lt;p&gt;后续想再补补英语，好久没学英语了，感觉已经不知道咋说了 😅&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;5-本周生活的简单记录&quot;&gt;5: 本周生活的简单记录&lt;/h4&gt;
+&lt;p&gt;1️⃣ 白桃的小草又神奇地出现了！&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/DSCF4031-95b2b1a3.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;Claude Code&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;我家一直有个未解之谜——白桃的草到底怎么长出来的？&lt;/p&gt;
+&lt;p&gt;从来没撒过种子，也没浇过水，去年长过两次，今年下完暴雨之后又长出来了！！&lt;/p&gt;
+&lt;p&gt;孩子可高兴了，每天都要去阳台吃草 🤣 笑死我了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;2️⃣ 养了发财树一年，它的变化好大呀&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/IMG_8554-048a4202.webp&quot; width=&quot;270&quot; height=&quot;360&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;div style=&quot;margin: 30px&quot;&gt;
+  &lt;/div&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/IMG_9267-0311e371.webp&quot; width=&quot;270&quot; height=&quot;360&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt; 
+&lt;/div&gt;
+&lt;p&gt;去年 6 月左右在拼多多买了一盆发财树，它是长图一这样的，只有两个分支（还天天被猪咪摧残），经过一年之后它变成了图二！&lt;/p&gt;
+&lt;p&gt;对比起来真的炒鸡有成就感啊！作为一个养植物的手残党，养死过多肉（浇水过多，根烂了）、空气凤梨、仙人掌（这俩因为我担心浇水过多，最后干死了）🤡&lt;/p&gt;
+&lt;p&gt;我觉得我能养活发财树主要的原因还是在于它的盆，浇水多的时候，水会自动流出，不会烂根，忘记浇水的时候，有布条从底下引水，稍微续命一下。现在差不多 5-10 天浇一次没问题。&lt;/p&gt;
+&lt;p&gt;（我还给这棵树取了个名字叫小翠，希望小翠好好活着 🥺）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;3️⃣ 体验了第一次普拉提&lt;/p&gt;
+&lt;p&gt;前几周在路上收到个传单，说他们店在搞活动，88 元可以体验 3 节普拉提课。我想着这个体验活动倒是不错，3 节刚好可以让我判断自己喜不喜欢这个运动，所以就给自己报了一个。&lt;/p&gt;
+&lt;p&gt;第一次去普拉提是练的肩背，有一个收获是，我第一次知道我的背很厚，是因为肩膀有点内扣，而内扣是因为肩和脊椎的问题，老师带着我做了几轮肩背的拉伸之后，我发现我立马就比以前挺直了不少（虽然第二天又打回原形了 🤣 但起码知道了原因 hhhh）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;4️⃣ 常有暴雨&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; margin: 30px 0;&quot;&gt;
+  &lt;img src=&quot;https://img.polebug.com/plog_1/DSCF3984-d7c1529f.webp&quot; width=&quot;600&quot; height=&quot;338&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;最近总是在下暴雨，天暗暗的，在室内已经分不清白天和黑夜了 hhhh 😅&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最后，希望大家看得开心！下周再见咯 👋&lt;/p&gt;
+&lt;p&gt;P.S. 一个小调查，比起视频，大家会更喜欢看文字吗？我感觉视频里表达的内容比较有限，文字可以表达得更完整一些～&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>2025年1月的复盘 —— “神经，我到底要干啥？”</title>
-    <link href="https://polebug.github.io/2025/01/25/2025%E5%B9%B41%E6%9C%88%E7%9A%84%E5%A4%8D%E7%9B%98/"/>
-    <id>https://polebug.github.io/2025/01/25/2025%E5%B9%B41%E6%9C%88%E7%9A%84%E5%A4%8D%E7%9B%98/</id>
+    <link href="https://blog.polebug.com/2025/01/25/2025%E5%B9%B41%E6%9C%88%E7%9A%84%E5%A4%8D%E7%9B%98/"/>
+    <id>https://blog.polebug.com/2025/01/25/2025%E5%B9%B41%E6%9C%88%E7%9A%84%E5%A4%8D%E7%9B%98/</id>
     <published>2025-01-25T13:51:00.000Z</published>
-    <updated>2025-01-25T14:06:12.148Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这个月的中旬开始，生活突然变得一团乱麻。我知道这最主要的原因，并不是因为事情太多，而是我的心乱了，我知道自己在状态良好的时候，完全可以处理好眼前的一大堆事，并游刃有余，但是这个月的我却无法做到。&lt;/p&gt;
-&lt;p&gt;接下来，我会做这个月的复盘，以此让自己更清晰地知道发生了什么、为</summary>
-        
-      
-    
-    
-    
-    
+    <updated>2025-01-25T13:51:00.000Z</updated>
+    <summary type="html">这个月的中旬开始，生活突然变得一团乱麻。我知道这最主要的原因，并不是因为事情太多，而是我的心乱了，我知道自己在状态良好的时候，完全可以处理好眼前的一大堆事，并游刃有余，但是这个月的我却无法做到。 接下来，我会做这个月的复盘，以此让自己更清晰…</summary>
+    <content type="html">&lt;p&gt;这个月的中旬开始，生活突然变得一团乱麻。我知道这最主要的原因，并不是因为事情太多，而是我的心乱了，我知道自己在状态良好的时候，完全可以处理好眼前的一大堆事，并游刃有余，但是这个月的我却无法做到。&lt;/p&gt;
+&lt;p&gt;接下来，我会做这个月的复盘，以此让自己更清晰地知道发生了什么、为什么会这样，以及接下来该做什么。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;混乱的起因-买房&quot;&gt;混乱的起因 ——「买房」&lt;/h5&gt;
+&lt;hr&gt;
+&lt;p&gt;起初对于买房这件事，只是我妈催我，我也是奉命行事，好奇去看看现在的新盘都长什么样。&lt;/p&gt;
+&lt;p&gt;我从23年开始关注房市，但我却没怎么思考过：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「我到底想买什么样的房子」1️⃣&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最初，我只希望敞亮的、通风的、在我预算内的房子，是的，这就是我一开始的诉求。&lt;/p&gt;
+&lt;p&gt;然后看着看着，我在 24 年 10 月的时候，确实看到了保利的特别漂亮的板楼，全屋向南，双阳台，南北对流，完全是我的梦中情房了。但却没有买它的欲望了。因为位置太偏、周边的配套太差了。&lt;/p&gt;
+&lt;p&gt;然后我的诉求就变成了，敞亮、通风、在预算内、近地铁、位置不要太偏僻、配套的学校过得去、附近生活便利的房子。随着诉求的增加，思考的方面就多了很多，就拿学校来说，就得去了解配套的学校升学怎么样，生源纯不纯粹，有没有村民混读。&lt;/p&gt;
+&lt;p&gt;好在，我的预算并不高，只准备拿出300万去买房子，270-320这个区间的价格在广州的选择并不多，只有番禺、黄埔、白云、荔湾和比较偏远的天河能选，排除了一遍之后选了番禺。&lt;/p&gt;
+&lt;p&gt;到这里，事情还在可控范围之内。&lt;/p&gt;
+&lt;p&gt;事情的转机是去年12年底到1月初，我去看了一个新盘，它基本符合我上面的诉求。但我发现，我舍不得钱包里的钱了。&lt;/p&gt;
+&lt;p&gt;于是，买房这件事，在临门一脚之际，命题似乎回到了原点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「我为什么要有一个房子，以及我真的准备好掏钱了吗？」2️⃣&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在我思考的期间，我的脑子常有两个人在打架，以至于我突然想到了什么，就冲去客厅跟我男朋友说，“我知道了！我们去买吧”，然后过一会又冲过去告诉他“我知道了！绝对不能买”。一天这样来回冲刺好几次，连续折腾了两周 🫠。&lt;/p&gt;
+&lt;p&gt;最后，想买房的那个小人获胜了，因为在我内耗的这段时间，我经常刷小红书上的帖子，讨论该不该买房，刷着刷着，小红书开始给我推送装修博主 🤣。内心疯狂感叹，“好好看啊，我也好想装修！”。确实，我也一直很想装修，但每每想到我在租别人的房子，搬家时又要痛苦加倍，就放弃了这个想法。所以，我确定我想要一个房子了，因为我想布置属于我的家。&lt;/p&gt;
+&lt;p&gt;那钱怎么办？我其实是一个特别喜欢攒金币的人，就像我最喜欢玩经营类的游戏，除了构建产业链之外，最有成就感的事就是拥有很多钱，这会让我感到「爽」。&lt;/p&gt;
+&lt;p&gt;挣扎了几周之后，我觉得买房这笔钱或许逃不掉了。让我们来计算一下租房的成本，我现在的房子租金 4000 左右，如果租 60 年，也要 280 万，并且以后如果有小孩，还需要更大的房子。租房虽然有灵活性，但是也牺牲了住房体验，成本其实和买一个房子也差不多。除非我离开一线城市，但这一点几乎不可能，因为我安全感极差，我一定要活在医疗很好、交通很好的地方。&lt;/p&gt;
+&lt;p&gt;想好以上问题之后，我决定要去买下我看好的那个房子。&lt;/p&gt;
+&lt;p&gt;至于对房市本身的思考，&lt;a href=&quot;https://t.me/polebugisabug/193&quot;&gt;之前在频道里总结过了&lt;/a&gt;，主要是围绕新的住宅政策，和什么才是最好的上车价格，这两个问题的看法。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;在买房之后&quot;&gt;在「买房」之后&lt;/h5&gt;
+&lt;hr&gt;
+&lt;p&gt;似乎是前期已经足够焦虑了，我在买房之后，却感觉良好。&lt;/p&gt;
+&lt;p&gt;我以为我会因为钱包里少了一大笔钱而焦虑，但我没意识到，我们公积金有近 40 个的余额，帮我们减轻了许多首付的压力，甚至让我觉得，我钱包里的钱没什么变化，好像还是这么多。&lt;/p&gt;
+&lt;p&gt;贷款的压力也不大，每个月 6k 多的公积金贷款，两人平摊，让我对这笔钱没什么感知（毕竟在币圈投资，每天的浮动都有 1k-3k usdt，每个月增加 500 usdt 的贷款消耗，感觉不算什么）。&lt;/p&gt;
+&lt;p&gt;对于钱的焦虑逐渐缓解了，但我又开始对「装修」上头。&lt;/p&gt;
+&lt;p&gt;每每幻想自己该如何如何装修，要设计什么样的风格，四个房间一厅要怎么布置，阳台要不要封窗 … blablablabla 但想了一会就开始劝自己别想了，还有两年才交楼呢 😭&lt;/p&gt;
+&lt;p&gt;希望自己可以逐渐把这件事放下，不要再这么上头了，既然已经下单了，就安心等交付的那天，并且这中间有足够充分的时间去设计，先把时间和精力放在眼下更重要的事情上吧～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;混乱的扩散器--meme&quot;&gt;混乱的扩散器 —— Meme&lt;/h5&gt;
+&lt;hr&gt;
+&lt;p&gt;除了买房，另外一个混乱的方面是在工作上。&lt;/p&gt;
+&lt;p&gt;最近 web3 市场的风向完全变了，Ethereum 生态的发展停滞不前，Solana 生态的持续火爆，让 web3 developer 也被迫改变了 build 方向。&lt;/p&gt;
+&lt;p&gt;去年 Ethereum 源源不断地发行各种 Layer2 技术，大家的共识还都是认真 buidl，整个 web3 的风气达到了史无前例的纯粹，那时的大家还会仔细评估项目背后的价值，为信仰投上一票。&lt;/p&gt;
+&lt;p&gt;但随着 Ethereum Layer2 的数量增加到泛滥成灾，每家项目都在发自己的 L2 链，大家又逐渐对 Layer2 怯魅了。与此同时，Solana 靠着 Meme 快速吸引了流量，在 L2 链上撸空投的人开始冲土狗了。&lt;/p&gt;
+&lt;p&gt;市场选择了青睐更适合炒作、无技术的 Meme，也同时在告诉项目方，谁关心技术呢？🤡&lt;/p&gt;
+&lt;p&gt;跟其他项目方的朋友聊了聊，发现大家无一例外都在转赛道，从 Ethereum 生态转 Solanan，转 Meme，转 AI Agent，诸如此类。&lt;/p&gt;
+&lt;p&gt;而这些赛道都追求的是「快」，抢先发布是最重要的，于是大家又开始加班去追热点，这种感觉其实挺糟糕的，公司内部的管理容易变得混乱，工作的价值感也会减轻许多，与此同时，还有加班的疲劳感。&lt;/p&gt;
+&lt;p&gt;最近同事说的最多的一个词「苦不堪言」，真的听麻了。&lt;/p&gt;
+&lt;p&gt;我希望 Ethereum 可以重新回到人们的视野，重新开始带领 developer 一起 buidl，或许会比现在好一些。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;混乱之余的快乐&quot;&gt;混乱之余的快乐&lt;/h5&gt;
+&lt;hr&gt;
+&lt;p&gt;听了几周的「哲学导论」，真的很喜欢很喜欢！没想到哲学是这么有趣的学科。&lt;/p&gt;
+&lt;p&gt;月初看完了《荒原狼》，一开始读没有太多的感觉，但读到后面，感觉自己就是荒原狼，黑塞的文太细腻太有代入感了，感受荒原狼内心的挣扎，结束于在一场盛大的狂欢，后劲真的很大。&lt;/p&gt;
+&lt;p&gt;然后开始读《或许你该找个人聊聊》，是一本比较轻松的心理类书籍，还在慢慢读。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;临近春节总是有很多琐事，去各种地方探亲，拜访长辈们，简直是雪上加霜了。&lt;/p&gt;
+&lt;p&gt;希望放假期间别加班 😭，让我能有一些空闲的、独处的时间去恢复以往的秩序。&lt;/p&gt;
+&lt;p&gt;以上。&lt;/p&gt;</content>
   </entry>
-  
   <entry>
     <title>2024：无为而治</title>
-    <link href="https://polebug.github.io/2024/12/28/2024/"/>
-    <id>https://polebug.github.io/2024/12/28/2024/</id>
+    <link href="https://blog.polebug.com/2024/12/28/2024/"/>
+    <id>https://blog.polebug.com/2024/12/28/2024/</id>
     <published>2024-12-28T13:51:00.000Z</published>
-    <updated>2025-01-01T06:00:30.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;以往写年终总结的时候，我总是可以快速、清晰地把这一年发生的事情总结出来，而今年，却有一种不知从何说起的感觉。&lt;/p&gt;
+    <updated>2024-12-28T13:51:00.000Z</updated>
+    <summary type="html">以往写年终总结的时候，我总是可以快速、清晰地把这一年发生的事情总结出来，而今年，却有一种不知从何说起的感觉。 如果要用一个简单的词语来概括，我觉得今年是「奇妙」的一年。 以前我经历的事情，它们在看我眼里，都像是几条平行线一样，彼此之间没有交…</summary>
+    <content type="html">&lt;p&gt;以往写年终总结的时候，我总是可以快速、清晰地把这一年发生的事情总结出来，而今年，却有一种不知从何说起的感觉。&lt;/p&gt;
 &lt;p&gt;如果要用一个简单的词语来概括，我觉得今年是「&lt;strong&gt;奇妙&lt;/strong&gt;」的一年。&lt;/p&gt;
-&lt;p&gt;以前我经历的事情，它们在看我眼里，都像是几</summary>
-        
-      
-    
-    
-    
-    
+&lt;p&gt;以前我经历的事情，它们在看我眼里，都像是几条平行线一样，彼此之间没有交集。&lt;/p&gt;
+&lt;p&gt;而今年给我的感觉非常不同，很多事情好像奇妙地交织在一起，它们看似没有什么关联，但又非常神奇地同时出现。也有可能，这些交集本身是存在的，只是今年我看了许多书，对这个世界的运行规则突然有点悟了。&lt;/p&gt;
+&lt;p&gt;在提笔写 2024 年终总结之前，我本想回顾一下 23 年的年终总结视频，但看了个开头就关掉了（XD 有一种很搞笑的感觉，看不下去 hhhhhh）。&lt;/p&gt;
+&lt;p&gt;如果说去年是「重塑自我」的一年，那么今年关键词就是「&lt;strong&gt;无为而治&lt;/strong&gt;」。&lt;/p&gt;
+&lt;p&gt;其中的「无为」，是我对生活态度的一种变化，而这种转变，在后续为我带来了一系列意想不到的事情。&lt;/p&gt;
+&lt;p&gt;我会尽量总结一下今年在人生观念方面的具体变化，希望给未来的自己留下一些线索。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;无为-觉知并顺应&quot;&gt;「无为」—— 觉知，并顺应&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;今年碰巧看了许多哲学、修行、心灵成长相关的书，这个是去年没有涉猎的领域。&lt;/p&gt;
+&lt;p&gt;比如说年初的时候，我看了《生命之书·365天的静心冥想》，后续还看了《悉达多》、《臣服实验》、《吸引力法则》等等，它们有一些是我在微信读书里面碰巧看到的，有一些是 B 站的朋友们推荐的（不得不说，我的观众真的很懂我 hhh，感谢！&lt;/p&gt;
+&lt;p&gt;这些书籍都不约而同地提到了两个关键词就是「&lt;strong&gt;觉知&lt;/strong&gt;」和「&lt;strong&gt;顺应&lt;/strong&gt;」。&lt;/p&gt;
+&lt;p&gt;觉知，就是觉察自己的内心，包括想法、情绪、喜好等等。&lt;/p&gt;
+&lt;p&gt;顺应有两个方面，一个是顺应自我，遵从自己的内心；另一个是顺应外界，接受生活带给你的所有。&lt;/p&gt;
+&lt;p&gt;我一直是一个很自我的人，总是保持着觉知，并极大程度地顺应自我。&lt;/p&gt;
+&lt;p&gt;但有时候太自我了，并不是一件好事。往极端了说，就是有点「固执」，或者说是「封闭」。每当老天给我安排了一些在我计划范围之外的人或事，我就会很抗拒。&lt;/p&gt;
+&lt;p&gt;就好比是，我本来计划准备去地点 A，在赶路的时候，突然有个人拦住我说，“你想不想去地点 B 看看？”&lt;/p&gt;
+&lt;p&gt;以前的我会非常果断地拒绝，然后继续赶路，甚至觉得他有点耽误我时间了。&lt;/p&gt;
+&lt;p&gt;但今年受到了上面那几本书的影响，我有点变了。我会以一种很轻松的态度，停下来问问他，“B 是什么样的？好玩吗？”&lt;/p&gt;
+&lt;p&gt;当我以这种开放的姿态去面对世界的时候，我发现很多事情都开始变化了。作为一个 I 人，我接触到了更多的人，与他们交流想法，发现他们身上的美好，或者是尽自己的能力去帮助别人。&lt;/p&gt;
+&lt;p&gt;并且我对一些突发状况的心态更好了。比如说出门旅行遇到雨天，也不会感觉到扫兴，我想“或许这是老天想让我看看这个城市的另一个面貌”，“下雨更凉快”。&lt;/p&gt;
+&lt;p&gt;当我把生活中经历的所有事情，当作是老天为我安排的惊喜或者是功课的时候，我发现自己看待问题的角度变了很多。就像是在欣赏一份礼物一样，我尝试去发现它美好的一面，这使得我的负面情绪少了很多，能更加平和地面对当下。&lt;/p&gt;
+&lt;p&gt;甚至是我妈催我买房，我以前老觉得好烦，“买房压力这么大，我可不买”，甚至觉得买房这类话题可怕得很，她一提我就黑脸。&lt;/p&gt;
+&lt;p&gt;但现在，我不再只是感觉到“压力”的那一方面，而是把它当作老天给我的一个提示，“或许你该考虑考虑”。然后我就去了解现在的市场情况，发现房子其实有便宜的有贵的，主要还是看自己的选择。在自己能力范围之内，去布置一个小家，或许可以提升生活质量，倒也不错。&lt;/p&gt;
+&lt;p&gt;我很难说这种转变具体为我带了什么“好处”，它就像一个小小的种子，今年在我心里种下了。我也不期待它会开好看的花、或是结出丰盛的果实。我只希望它扎根在地上，长成一颗小树，遇风时轻盈，遇雨时坚韧，遇光时温柔～&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;无为而非不为&quot;&gt;无为，而非「不为」&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;前面说到「顺应」，并不是指的顺从，而是一种比较灵活的接纳和适应。&lt;/p&gt;
+&lt;p&gt;今年年初的时候，我遇到了一个投资危机，但正是这个危机，促使我去建立一套更完善的交易体系。&lt;/p&gt;
+&lt;p&gt;在今年二月的时候，我在 BTC 4w4 左右，开了一个 x2 的币本位永续空单。没想到 BTC 连拉了几天，直接涨到了 5w2 左右了。那几天我非常焦虑，因为我已经错过了止损的最佳时间。&lt;/p&gt;
+&lt;p&gt;那段时间我就一直在思考，有没有一个比直接止损更好的方法呢？&lt;/p&gt;
+&lt;p&gt;当时的我，想到了一个或许可以一试的法子：那就是开一个对冲的多单。&lt;/p&gt;
+&lt;p&gt;这个多单的作用有很多，一是它与空单对冲，这样我 x2 的空单起码一直不会爆仓；二是我可以通过波段做多，增加币本位的保证金，后续我可以为空单加仓，以此抬高它的开仓价格，到熊市了我还是把它止盈。&lt;/p&gt;
+&lt;p&gt;就是这样一个很简单的思路，我看着那个空单从 7 万的爆仓价，到 10 万爆仓，再到它变成了一个 “-” 号，我的本金也从 2 万 U 变成了十几万（到现在大概是翻了 5 倍左右）。更有趣的是，那个曾经让我焦虑万分的永续空单，为我赚了 3-4 千 U 的资金费率。&lt;/p&gt;
+&lt;p&gt;后续我也对这个思路进行了优化和总结，发在了我的 &lt;a href=&quot;https://t.me/polebugisabug/149&quot;&gt;Channel&lt;/a&gt; 上。当然，这个体系还有一些可以改进的地方，我会在熊市的时候，继续探索下去。&lt;/p&gt;
+&lt;p&gt;23 年底的时候，我给自己写了一封信，里面有一点就是：希望自己能建立一套比较完整的交易体系。&lt;/p&gt;
+&lt;p&gt;今年刚开始的时候，我还在想，这事可能没指望了，我不仅连方向都选的不对，还不懂止损。但我没料到的是，我的不服输带着我走向了一个更好的结局。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;积累内在资源&quot;&gt;积累内在资源&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;我以前比较关注外在资源的积累，而忽视了自身的资源。&lt;/p&gt;
+&lt;p&gt;外在的资源就是工作单位、人脉、金钱、家庭背景、学历等等，内在的资源可以简单理解为自身的能力，它不局限于工作使用的能力，而是包括了各个方面：思维、情绪、身体、兴趣爱好等等。&lt;/p&gt;
+&lt;p&gt;我之前聊过一个话题，关于&lt;a href=&quot;https://t.me/polebugisabug/169&quot;&gt;「为什么要学习」&lt;/a&gt;，里面说到 “我发现学习，其实是人唯一能打破命运的途径。因为它提高了一个人的&lt;strong&gt;下限&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;我今年意识到，积累内在资源也是一种提高下限的方式，它不一定是通过学习，也可以是通过及时的反思和复盘。&lt;/p&gt;
+&lt;p&gt;每个月的运势有高有低，那是不是可以在自己运势好的时候，多积累经验呢？（任何方面的经验，不限于某个技能）&lt;/p&gt;
+&lt;p&gt;今年最典型的一个例子就是，我九月份的时候，碰巧看到一个推友说，某个算命大师很准。我就去找他看了一看，他告诉我说，我十月份会亏钱，后面财运不好。&lt;/p&gt;
+&lt;p&gt;我自己也会占星，我知道会有这种情况。所以今年，我在财运好的月份，每天都会复盘我的交易计划，哪里做对了、做错了，哪里可以改进。由于我不停地积累内在资源，所以十月份的时候，就算我运势不好，我也不会错的太离谱，就这样我从大师评价的“财运不好”中，安稳过关了。&lt;/p&gt;
+&lt;p&gt;运势是相对的。&lt;/p&gt;
+&lt;p&gt;如果你现在只有 60 分的水平，在你运势好的时候，或许可以考出 80 分的卷子。但一定要在 80 分的时候，努力突破自己，将自身水平从 60 分不断提高。当你有 100 分的水平时，就算你运势不好，你也能考到 80 分了。&lt;/p&gt;
+&lt;p&gt;这是一个成果比较大的例子，其实能积累的内在资源还有很多，比如情绪管理、时间管理，各种兴趣爱好等等，通过及时地反思和复盘，能从自己身上获得更多的经验。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;利他-你为别人做了什么会以另一种形式回到你身上&quot;&gt;「利他」—— 你为别人做了什么，会以另一种形式回到你身上&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;开头的时候说到，我决定「打开自己」，对出现在我面前的事物保持好奇。&lt;/p&gt;
+&lt;p&gt;然后我遇到了一个朋友，和她吃饭的时候，她送我了一条水晶手串。我觉得水晶实在是美丽，于是我开始去了解它。&lt;/p&gt;
+&lt;p&gt;在早几年，我发掘了自己占星的小天赋，偶尔会给周围的朋友算算命，但我一直不知道该怎么去帮他们改善眼前的状况。&lt;/p&gt;
+&lt;p&gt;今年我碰巧认识水晶之后，我意识到，或许可以通过给朋友配水晶，来帮助他们调整能量。&lt;/p&gt;
+&lt;p&gt;一开始我也只是给周围的朋友配转运手串，朋友的反馈也都说水晶挺有用的，有的是助事业财运，有的是强身、提高精神力、舒缓情绪等等。&lt;/p&gt;
+&lt;p&gt;然后突然有一天，我的朋友介绍了她朋友来找我，而她朋友的朋友又介绍了更多的朋友。&lt;/p&gt;
+&lt;p&gt;并且这种能量的流转非常的神奇，比如说我帮助友人 A 改善能量之后，莫名的会有 B、C 突然找到我（他们并不认识）。就像是一家原本没有人的餐厅，来了一个人坐下吃饭之后，莫名又进来了另外一群人。而这期间我啥都没干，只是尽我所能的帮助了 A。&lt;/p&gt;
+&lt;p&gt;就像前几天看到一个帖子说，她在网上给一些用爱发电的朋友打赏，然后花出去的这部分钱，又以另一种形式回到了她身上。我的感觉也有所雷同。&lt;/p&gt;
+&lt;p&gt;当我认真的去帮助别人的时候，好像冥冥之中，我自己也得到了某种程度的馈赠。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;简单谈谈-2025-的展望&quot;&gt;简单谈谈 2025 的展望&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;1: 增加技术的输出&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这两年我学了很多 web3 或者是其他方面的技术，但是我都没有想好，「用这些技术来做什么？」&lt;/p&gt;
+&lt;p&gt;我希望可以增加自己的作品，或者是做一些技术分享也行。&lt;/p&gt;
+&lt;p&gt;当然，如果能在工作中使用这些技术，那就更好了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2: 保持学习与思考&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今年的很多成长都是阅读带给我的，这个正反馈实在是有点太强了，明年我会继续保持下去。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3: 找到一个自己喜欢的运动方式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作为一个懒人，我真的不喜欢运动。但我觉得锻炼身体还是很有必要的，所以明年我希望可以找到一个自己喜欢的运动方式，然后坚持下去。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4: 珍惜现在已有的资源&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;稳定的工作伙伴、恋爱关系、家庭关系，健康的身体，与我同频的朋友或者网友们，这些都是我非常珍惜的。&lt;/p&gt;
+&lt;p&gt;我希望这些都可以保持稳定，这样我才能腾出精力去探索其他部分。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上。&lt;/p&gt;
+&lt;p&gt;2024，感谢所有～ 拜拜啦 👋&lt;/p&gt;</content>
   </entry>
-  
-  <entry>
-    <title>读《吸引力法则：如何利用心理暗示实现愿望》的记录与思考</title>
-    <link href="https://polebug.github.io/2024/12/18/law_of_attraction/"/>
-    <id>https://polebug.github.io/2024/12/18/law_of_attraction/</id>
-    <published>2024-12-18T00:51:00.000Z</published>
-    <updated>2024-12-28T14:48:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
 </feed>

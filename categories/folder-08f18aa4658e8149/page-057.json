@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "c9349e3d48d76f51ec183146",
-      "title": "我想要的世界",
-      "summary": "我想要的世界：",
-      "image": null,
-      "publishedAt": "2026-01-09T06:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/the-world-i-want",
-      "detailPath": "articles/c9349e3d48d76f51ec183146.json"
-    },
-    {
-      "id": "c5ed4070d67b5bbea6b5ba3d",
-      "title": "我有派上用場嗎？",
-      "summary": "很喜歡《葬送的芙莉蓮》中的一幕。 費倫問芙莉蓮「我有派上用場嗎？（私は役に立ていますか？）」，芙莉蓮反問費倫為什麼要這樣問？ 費倫回答「因為我沒辦法像芙莉蓮那樣完美地操作魔法」 芙莉蓮說「時間的問題是沒辦法超越的，但費倫發動魔法的速度比我還快，戰鬥比較快結束」",
-      "image": null,
-      "publishedAt": "2026-01-09T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/random/am-i-being-helpful/",
-      "detailPath": "articles/c5ed4070d67b5bbea6b5ba3d.json"
-    },
-    {
-      "id": "1e878cb50459129bb2cc053d",
-      "title": "資深藝人調整監聽喇叭",
-      "summary": "一場活動當中，比較資深的藝人一直要求「音量要大」，也給他非常多了，多到 Eddie 在喇叭盲區還可以聽到清楚的高頻（冷知識：控臺在舞臺側邊時，完全在喇叭盲區，只聽得到很大聲的低頻,如果聽到清楚高頻表示太大聲。）。 「高頻要多一點、音量再大一點」，演出到一半，又陸續要求這兩項。 最終給他非常非常多高頻與音量，整個監聽也都是他的聲音了，在喇叭盲區也覺得聲音非常刺耳。 其他的樂手老師無奈的往控臺跟我對視，「其他樂手老師，你們辛苦了…」。 「爲什麼會這樣？他想要聽什麼？他聽不到什麼？」Eddie 一直在腦袋反覆思考著這個問題。 「或許是記憶中的音色吧！」我邊塞著耳朵邊推論。 隨著年齡增長，高頻漸漸衰退，但是耳朵本身已經漸漸退化到聽不到高頻了，後續 EQ 拉再多也沒用（這也只是猜測，我真的不知道他聽不到什麼）。 這次最…",
-      "image": null,
-      "publishedAt": "2026-01-08T17:25:05Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/senior-artist-adjust-monitor/",
-      "detailPath": "articles/1e878cb50459129bb2cc053d.json"
-    },
-    {
       "id": "989b0e1c1fdc956a54d078fb",
       "title": "我最喜歡的和弦 ✦BBP6✦",
       "summary": "這是我的「BlogBlog 同樂會 - 2026 年 6 月」的投稿文章。本月主題是「音樂與記憶」，由柚子主持。如果你有自己的部落格，歡迎一起來參加！",
@@ -659,6 +626,39 @@
       "sourceTitle": "記緒漂流",
       "link": "https://ttio.cc/note/magical-girl",
       "detailPath": "articles/f86d7ffdb5a459e3201c5a4c.json"
+    },
+    {
+      "id": "440179f1c6003dce42968225",
+      "title": "Apple 討厭開源 opus 格式",
+      "summary": "《最佳聲音有損格式》 中提到，檔案壓縮效率 opus > AAC > mp3。 其中 AAC 是 Apple 制定的，這個格式在 Apple 裝置下是暢通無阻。 但如果下載了 opus 會發現 Apple 內建的播放器無法打開（內建播放器只支援能 硬體解碼 的格式），無法丟進 Logic Pro 來做音樂，opus 簡直像是外星生物。 而 Youtube 在近期的新影片中，聲音編碼同時配有 AAC 與 opus，而 Spotify 用 opus，只有 Apple Music 仍舊使用 AAC。 直接指定原始格式要 AAC or opus # 編碼 指令 原生 AAC → .m4a yt-dlp -f 140 <URL> 原生 Opus → .opus/.webM yt-dlp -f 251 <URL> You…",
+      "image": null,
+      "publishedAt": "2026-01-02T07:42:14Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/apple-hate-opus/",
+      "detailPath": "articles/440179f1c6003dce42968225.json"
+    },
+    {
+      "id": "e9979d9f4045a6f9507c4c6b",
+      "title": "我有特别的 Surge 配置和使用技巧",
+      "summary": "我使用 Surge Mac 作为网络核心有一段时间了。虽然 Surge 官方提供了一份「中国区用户推荐最小配置」，但是为了发挥 Surge 全部潜力的话、彻底值回 Surge 的售价、实现我的复杂需求，我添加了许多自定义的配置。",
+      "image": "https://img.skk.moe/blog/t2024/i-have-my-unique-surge-setup.png",
+      "publishedAt": "2026-01-02T07:26:00Z",
+      "sourceId": "5a840ced5a57e7ff",
+      "sourceTitle": "Sukka's Blog",
+      "link": "https://blog.skk.moe/post/i-have-my-unique-surge-setup/",
+      "detailPath": "articles/e9979d9f4045a6f9507c4c6b.json"
+    },
+    {
+      "id": "4c51dfd08c24306d0a695f7b",
+      "title": "爲什麼喇叭要開那麼大聲？",
+      "summary": "相信很多朋友去演唱會，或者參加婚禮時，如果座位在喇叭附近時，會覺得很頭痛，因爲聲音超級大聲，到底爲什麼喇叭要開那麼大聲？ 其實原因很簡單：成本。 喇叭數量 vs 音量 # 想請大家思考看看，同個空間中，喇叭越多時，單個喇叭會較大聲；還是喇叭越少時單個喇叭會較大聲？ 在一個 8 桌宴會廳的空間中，如果出了 4 顆外場喇叭，那一顆喇叭的音量就要足以支撐某 2 桌，而比較近的那桌就會覺得比較大聲。 而如果在同樣的空間中，出了 8 顆外場喇叭，音控師讓每顆喇叭的音量都平均小一點，觀衆就足以聽得清了。 再極端一點，如果在每一桌桌上放耳機分配器，讓大家戴耳機，現場喇叭可以完全沒有音量，但是耳機音量絕對足夠，不會有人聽不到！ 現實 # 但不可能擺那麼多喇叭，就算真的有那個預算，場地本身有沒有地方放也是一個問題。 而且，喇叭…",
+      "image": null,
+      "publishedAt": "2026-01-02T06:54:24Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/why-speaker-louder/",
+      "detailPath": "articles/4c51dfd08c24306d0a695f7b.json"
     }
   ]
 }

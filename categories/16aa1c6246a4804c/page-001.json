@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "424be28cdb5e6b4d6e91b196",
+      "title": "异步 I/O 的两种范式：Readiness 与 Completion",
+      "summary": "构建高性能网络服务和系统运行时，离不开 异步 I/O（Asynchronous I/O） 。 在操作系统与主流编程语言中，异步 I/O 主要分为两条技术路线： 一是以 Linux epoll 、macOS kqueue 、Nginx、Redis、Node.js ( libuv )、Rust ( Tokio )、Go ( netpoller ) 为代表的 Readiness-based（基于就绪通知 / Reactor 模式） ； 二是以 Windows IOCP 、Linux io_uring 、ScyllaDB、C# (async/await)、Zig ( std.Io )、Rust ( monoio ) 为代表的 Completion-based（基于完成通知 / Proactor 模式） 。 底层的 I…",
+      "image": null,
+      "publishedAt": "2026-10-27T03:00:00Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2026/10/27/io-models/",
+      "detailPath": "articles/424be28cdb5e6b4d6e91b196.json"
+    },
+    {
       "id": "4c99b6afd3980e7dd05a3371",
       "title": "Zig 0.17 构建系统重构：Maker 与 Configurer 双进程架构",
       "summary": "在此前的两篇文章 《Zig 构建系统（上）：设计理念与最佳实践》 与 《Zig 构建系统（下）：编译管线与底层运行机制》 中，我们讨论了 Zig 0.16 时代的构建系统抽象模型以及编译流水线的底层运行机制。",
@@ -648,17 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2020/08/08/go-meet-java/",
       "detailPath": "articles/4ab2fe54795284016d3b63e9.json"
-    },
-    {
-      "id": "756226c62f6e1f8a63355a56",
-      "title": "Go struct/interface 最佳实践",
-      "summary": "使用 Go 已经一年，深深沉浸在其简洁的设计中，就像其官网描述的： Go is expressive, concise, clean, and efficient. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language. Rob Pike 在 Simplicity is Complicated 中也提到 Go 的简洁是其流行的重要原因。简洁并不意味着简单，Go 有着诸多设计确保了把复杂性隐藏在背后。本文就结合笔者自身经验，来讨论 Go 中struct/interface 的设计理念与最佳实践，帮助读者写出健壮、高效的 Go 程序。",
-      "image": null,
-      "publishedAt": "2020-03-14T14:52:26Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2020/03/14/go-struct-interface/",
-      "detailPath": "articles/756226c62f6e1f8a63355a56.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "dd989fba2a8fbd300cee1f0a",
+      "title": "樂譜（五線譜）編製二三事",
+      "summary": "@font-face { font-family: 'Bravura Text'; src: local('Bravura Text'), url('https://cdn.jsdelivr.net/gh/ttheng3810/bravura@latest/redist/woff/BravuraText.woff2'); } .bravura { font-family: \"Bravura Text\"; font-size: 150%; } 發佈於 NiceChord 網站上的一篇樂譜相關教學文章——《 9 個最常見的五線譜寫譜錯誤 》，羅列出了好一些常見的製譜問題，只要是透過五線譜作編曲的人都一定、 一定 要去讀一下！ 我在這裡只是想要針對我遇過的其他一些情況，給出幾個更爲細節、更少人會注意到的，但也同樣重…",
+      "image": "https://microblog.ttheng.com/blog/img191.jpg",
+      "publishedAt": "2026-06-13T05:55:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/sheet-music-preparation-stuff/",
+      "detailPath": "articles/dd989fba2a8fbd300cee1f0a.json"
+    },
+    {
+      "id": "05b79728adca5e6a2b858d29",
+      "title": "想做一個 tool-calling 修復 proxy，結果 benchmark 親手殺死了這個點子",
+      "summary": "這篇文章記錄了作者在嘗試開發一個「tool-calling 修復 proxy」的過程中，如何透過設計一個 benchmark 測試 22 個地端模型的 tool-calling 能力，最終放棄這個創業點子的經歷。測試結果顯示，新一代模型（如 Qwen3.5）已經原生解決了 tool-calling 的問題，修復層對這些模型反而成為干擾，且模型世代的快速進化使得這類修復工具的市場需求迅速萎縮。文章提供了詳細的測試方法、結果分析以及對各模型的具體觀察，並總結出地端模型選擇的實用建議。最後，作者強調了驗證假設的重要性，認為早期的測試能有效避免浪費時間和資源。",
+      "image": null,
+      "publishedAt": "2026-06-13T02:16:14Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/i-wanted-to-build-a-tool-calling-repair",
+      "detailPath": "articles/05b79728adca5e6a2b858d29.json"
+    },
+    {
       "id": "c2aad07680b7aeb94c17c51f",
       "title": "我以前",
       "summary": "「我以前」是個超奇怪的人。",
@@ -203,7 +225,7 @@
       "title": "好久不见 Ⅱ",
       "summary": "好久不见，天气已经越来越热，下班早的时候甚至还是天亮（是的我上班了）。前些天回家路过水果店，看到已经摆出了黄皮。几乎没什么察觉，2026 已经快过去一半，生日竟然都过了。",
       "image": "https://d2w9rnfcy7mm78.cloudfront.net/3122351/original_9cbb1313f53956b0a695e1c7b8208ab2.gif",
-      "publishedAt": "2026-06-10T15:53:52Z",
+      "publishedAt": "2026-06-10T15:48:00Z",
       "sourceId": "8b6d88d6a8f432b5",
       "sourceTitle": "l3on.site",
       "link": "https://l3on.site/article/been-a-while-ii/",
@@ -637,28 +659,6 @@
       "sourceTitle": "嘰嘰乞乞",
       "link": "https://www.gigigatgat.ca/posts/may-2026-recap/",
       "detailPath": "articles/8ec6f6c592a7e4e2777b354b.json"
-    },
-    {
-      "id": "6e062c8f2ac87a28f0f7a168",
-      "title": "為什麼古典音樂人要看譜？",
-      "summary": "Timo 在他的這篇文章中，提出了一些他對於古典音樂人看譜的疑問。好吧，就讓我這個不務正業的資深古典音樂人來幫你解答吧！",
-      "image": null,
-      "publishedAt": "2026-06-05T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/reading-sheet-music",
-      "detailPath": "articles/6e062c8f2ac87a28f0f7a168.json"
-    },
-    {
-      "id": "adcb82fdc3df7320a9a7fd68",
-      "title": "使用 Net Qube 将流量路由到 SOCKS 代理",
-      "summary": "免责声明：我是在一切“似乎”都正常工作之后才写下这份指南的。对于流量泄漏或其他意外问题，我不承担责任。 本文说明如何使用 net qube，通过特定 qube 将流量路由到 SOCKS 代理。 第 1 步：安装所需软件包 你需要 screen 和 redsocks 。 # apt install screen redsocks 第 2 步：创建一个 net qube 请在你的 Qube Manager 中完成这一步。 第 3 步：配置 redsocks 在新的 net qube 中创建 /rw/config/redsocks.conf ： base { log_info = on; log_debug = on; log = stderr; daemon = on; redirector = iptables…",
-      "image": null,
-      "publishedAt": "2026-06-04T16:08:03Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/route-traffics-to-a-socks-proxy-using-a-net-qube/",
-      "detailPath": "articles/adcb82fdc3df7320a9a7fd68.json"
     }
   ]
 }

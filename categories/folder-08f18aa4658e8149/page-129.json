@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1e93717e6b4c8ae3ffe1cf72",
+      "title": "动态链接",
+      "summary": "level3 CTF{d85346df5770f56f69025bc3f5f1d3d0} （ 看了看学长的脚本，有啥东西就写在注释里了） # -*- coding: utf-8 -*- from pwn import * # from ctypes import string_at # from sys import getsizeof # from binascii import hexlify elf = ELF ( \" ./level3 \" ) # io = process(\"./level3\") io = remote ( \" pwn2.jarvisoj.com \" , 9879 ) vul_addr = elf . symbols [ \" vulnerable_function \" ] write_…",
+      "image": null,
+      "publishedAt": "2018-11-03T08:28:28Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/动态链接/",
+      "detailPath": "articles/1e93717e6b4c8ae3ffe1cf72.json"
+    },
+    {
+      "id": "49f3b1ff95ba6c2746c82b2f",
+      "title": "Android 系统开发源码环境搭建",
+      "summary": "不管是 Android App 开发工程师还是 Android 系统开发工程师，对 Android 系统有一定的了解是很有必要的，正好我这几天在家里搭建了个开发环境，把过程分享出来，有需要的人可以看一下。 大概的步骤包含下面几个： 安",
+      "image": null,
+      "publishedAt": "2018-11-01T11:40:16Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2018/11/01/android-system-develop-0/",
+      "detailPath": "articles/49f3b1ff95ba6c2746c82b2f.json"
+    },
+    {
+      "id": "a6bed204f00bc65d92bb22aa",
+      "title": "ROP64",
+      "summary": "task_rop64.rop64 看题目是 64 位的，就用 level3x64 的脚本改了：先打印一个已经执行过的函数的真实地址，用它和该函数在 libc 里的偏移算出 libc 的基址，得到 system 还有 bin/sh 的真实地址最让让它执行 system(\"/bin/sh\") 。区别是 symbols 找不到 main 函数地址，要从 IDA/GDB 中找到地址，写进去；还有 puts 的真实地址最后一位是 ，这样用 puts 打印的时候到这一位就结束不再打印了，要自己把它加在后面， io.recvuntil(\"\\x7f\").ljust(8,\"\\x00\") 才能用 u64 解出地址。 \"/lib/x86_64-linux-gnu/libc.so.6\" 是我的电脑里用的 libc 版本。 # -*-…",
+      "image": null,
+      "publishedAt": "2018-10-28T12:09:30Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/rop64/",
+      "detailPath": "articles/a6bed204f00bc65d92bb22aa.json"
+    },
+    {
+      "id": "7eeec04db6f387b982b4722e",
+      "title": "陆奇：除了好代码，工程师怎样才算优秀？",
+      "summary": "转自：百度Family，内容为陆奇 2017 年 7 月 的百度内部分享，非常值得技术人员学习和思考 个人非常崇拜",
+      "image": null,
+      "publishedAt": "2018-10-25T02:37:34Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2018/10/25/How-do-engineers-count-well/",
+      "detailPath": "articles/7eeec04db6f387b982b4722e.json"
+    },
+    {
       "id": "19ee889c9c6fb4df3842e7bf",
       "title": "护网临时工",
       "summary": "pwn gettingstart flag{4281a86e5b9ab0ae7940f38be574dc52} IDA 反编译，发现 0x7FFFFFFFFFFFFFFFLL == v7 && 0.1 == v8 时可以执行 system(\"bin/sh\")。 read(0, &buf, 0x28uLL) 读入 0x28 个字节，会依次覆盖 buf、v5-v8。v5v6 随便填，v7 就写 0x7FFFFFFFFFFFFFFF。v8 是 double 型的 0.1，自己写一个给 double 赋值 0.1 的 C 程序，用 GDB 得到 0.1 的 double 型在内存中的形式 0x3fb999999999999a 写进去。 #!/usr/bin/env python # -*- coding: utf-8…",
@@ -615,50 +659,6 @@
       "sourceTitle": "文三娃",
       "link": "https://wentommy.wordpress.com/2018/06/06/%e5%a7%90%e7%9a%84%e5%ae%bd%e5%ae%b9/",
       "detailPath": "articles/46bb046c91f48354b5326ad1.json"
-    },
-    {
-      "id": "08433ff970f783824af58d2d",
-      "title": "iPad上能做和不能做的事情",
-      "summary": "截至 2018-6-5 用iPad多年，一直在考虑的一件事情就是如何让iPad更加有用，即如何用来创造东西。iPad Pro，在Apple Pencil及Smart Keyboard的加持下，",
-      "image": null,
-      "publishedAt": "2018-06-06T05:15:40Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2018/06/05/whatipadcando/",
-      "detailPath": "articles/08433ff970f783824af58d2d.json"
-    },
-    {
-      "id": "013cbc109d499ffae750479e",
-      "title": "孟买",
-      "summary": "1 在一座城市生活多久，才能让自己成为它的一部分，或者让它成为自己的一部分呢。帕慕克曾说过，离乡背井的“无根性”可以助长想象力，那是伟大作家的养料，但对于孟买而言，“无根性”似乎毫无用处，她在工厂的流水线或出租屋的窗前，每日做着重复的事情，想象力并没有带来喷薄欲出的书写欲望，也没有带来色彩张扬的生活理想，只是滋补了她劳累过后的睡梦。 城市里四处藏匿着和孟买相似的年轻女人。她们大都操着普通的中文，做着普通的工作，爱着普通的男人，过着普通的生活。她们的过往不为人知，我们若想打探一二，必须仔细捕捉她们口语里残存的乡音，或者观察她们饮食里仅剩的偏好。也许，并非是她们拒绝向人透露，只是人们忙碌疲惫，缺少空闲的耳朵，聆听她们的呓语或痴话。她们的去处同样神秘，隔壁寂寞的歌声消失在某个夜晚，对面阳台的衣裙追随风雨离去，或者是…",
-      "image": null,
-      "publishedAt": "2018-06-01T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2018/06/02/bombay",
-      "detailPath": "articles/013cbc109d499ffae750479e.json"
-    },
-    {
-      "id": "55af4211eefcf995b2e8c32a",
-      "title": "美国湾区参加Google IO大会之行",
-      "summary": "旧金山机场出来后立马去租车的地方取了车，直奔金门大桥。当天阴天，还有一点儿冷。 湾区海边的海鸟 海边的餐厅 斯坦福大学在硅谷离我们住的地方不远，第二天便过去转了一圈。学校是开放的，外面的草坪很大，学校的建筑有很多宗教特色的地方。 之后开始了此行的正事参加谷歌开发者大会，以及大会网上的表演。 参加大会最后一天结束后又去了一下，硅谷必打卡地方，计算机历史博物馆，此图是一台古老的计算机。 另外此行还参观了谷歌的办公室，谷歌Android展览区，facebook办公室，苹果展览中心，但是没有拍到自己认为很好的照片，在此不表。 看完评论一下吧",
-      "image": "https://isming.me/images/photo/america/DSC07744.jpg",
-      "publishedAt": "2018-05-28T17:18:57Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2018-05-us/?utm_source=rss",
-      "detailPath": "articles/55af4211eefcf995b2e8c32a.json"
-    },
-    {
-      "id": "f889631eb80ccc3dd9b04b4f",
-      "title": "Travis-CI 持续集成部署",
-      "summary": "Travis CI - Test and Deploy Your Code with Confidence travis-ci.org 访问 https://www.yunyoujun.cn/posts/use-travis-to-deploy 阅读全文。",
-      "image": null,
-      "publishedAt": "2018-05-24T15:04:42Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/use-travis-to-deploy",
-      "detailPath": "articles/f889631eb80ccc3dd9b04b4f.json"
     }
   ]
 }

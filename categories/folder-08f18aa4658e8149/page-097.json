@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "5b28a7a1bb9d43a5528e9def",
-      "title": "yt-dlp 安裝指令（附帶常見指令）",
-      "summary": "yt-dlp 是什麼？ # yt-dlp 是使用終端機下載 YT 影片的一種 app，沒有廣告，沒有限制流量，而且超快速！ 安裝方法 # macOS # 須先下載 HomeBrew （這是一種 App Store，讓你下載各種 App） /bin/bash -c \" $( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh ) \" 用 Homebrew 指令下載 yt-llp brew install yt-dlp Linux（Debian/Ubuntu）: # sudo apt install yt-dlp 其他 Linux 版本請自行搜尋指令 Windows # 有點複雜，Eddie 裝過兩次一次成功，…",
-      "image": null,
-      "publishedAt": "2024-10-03T13:23:30Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/yt-dlp/",
-      "detailPath": "articles/5b28a7a1bb9d43a5528e9def.json"
-    },
-    {
-      "id": "ae37d248a093c1f373367439",
-      "title": "2024 10月的部落格網站改版",
-      "summary": "爲何改版 # Eddie 一直有強迫症的症狀，想把東西弄成心目中的 100 分，但現實往往是做不到的。 原本有一個藍圖，覺得部落格應該弄得怎樣怎樣，現在的想法則是「越簡單越好」。 現在使用主題模板爲 classic 。 基本上就是極簡 + 暗色風格，甚至還帶有一種純純的 HTML 文件感XD 這樣的情境下，不用再處理一堆麻煩的程式碼問題，我只要開心的想寫文章就寫文章！ 功能越多反而都是花時間在研究 hugo 主題的架構，現在的想法則是越簡單越好，想要什麼新功能，再從現有的基礎上去研究就好！ 目前頁面簡單分成： # ~/eddie’s blog 首頁按鈕 ~/文章分類 文章分類，每篇文章會設定一個 「catogory」屬性，來歸類文章 ~/文章總覽 依照時間列出所有文章 ~/動態時報 完全獨立的部落格系統，這裡…",
-      "image": null,
-      "publishedAt": "2024-10-03T12:46:29Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/2024blog/",
-      "detailPath": "articles/ae37d248a093c1f373367439.json"
-    },
-    {
-      "id": "f3ab5231674e9e61fe5744a9",
-      "title": "去背",
-      "summary": "Rembg 真是好好用阿！只要一行指令就直接去背好了；可以單張圖處理之外，也可以一次處理整個資料夾。",
-      "image": "https://wiwi.blog/assets/images/rembg-e17924c54f7733ea9dfe9b8f5a495907.jpg",
-      "publishedAt": "2024-10-03T12:35:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/rembg",
-      "detailPath": "articles/f3ab5231674e9e61fe5744a9.json"
-    },
-    {
       "id": "cd5cc72bdbe12a0b8e1a8c8f",
       "title": "如何使用 WASMTIME 来运行 CPython for WASI，然后利用 Python 实现的 HostFunction 来扩展它？",
       "summary": "国庆节搞了一个活，利用 wasmtime 来执行编译成 WASM/WASI 字节码的 CPython 虚拟机，并在宿主机一侧利用 Python 实现的 Host Function 来扩展它。 再次声明一下，这个只是我个人想搞的活，没有再任何生产环境中得到验证，just for fun（XDDD",
@@ -659,6 +626,39 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/its-not-that-bad",
       "detailPath": "articles/aefd66f0b5749a7cfb81f9b6.json"
+    },
+    {
+      "id": "fc03f6ae80bd3004d53285df",
+      "title": "一个韭菜的诞生",
+      "summary": "2020年末，公司的一位供应商客户经理在工作场合告诉我，“买基金”。那时，A股基金被不断推高、炒得一片火热，我在半知半解中也上车了—— 一个韭菜，诞生了 。 四年过去，上证指数从最高处将近3700点，跌到了最近的2700点。在经济下行的背景下，未来的走势似乎依然不被看好。我也在今年，正式加入“ 追涨杀跌 ”的散户阵营，止亏割肉，宣告自己是一个彻彻底底的韭菜。 以下是我在Day One的关于这个投资经历的心路历程，现在看来觉得自己好傻，但真的是应了那句老话： 人很难赚到认知以外的钱 。 2021 2021-03-08 今天基金大跌，基本上是不赚钱的持续赔钱，赚钱的已经赔干净了。但是，我心态特别淡然，因为我准备长期坚持下去，做好定投，他们有一天终会带来收益，“ 做时间的朋友 ”。 2022 2022-02-11…",
+      "image": null,
+      "publishedAt": "2024-09-14T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2024/09/15/bad-buy-china-good-bye-china",
+      "detailPath": "articles/fc03f6ae80bd3004d53285df.json"
+    },
+    {
+      "id": "1a11f6d3c8ab29c9ef477b7b",
+      "title": "離線 AI 好爽！",
+      "summary": "一年半後，我又寫了這篇的續集：離線 AI 好爽（2026 年版）",
+      "image": "https://wiwi.blog/assets/images/claude-censored-49f5dfb1fb979292096c9e27fb9183fa.jpg",
+      "publishedAt": "2024-09-14T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/offline-ai",
+      "detailPath": "articles/1a11f6d3c8ab29c9ef477b7b.json"
+    },
+    {
+      "id": "c03c7e5ba9b87d9506c16190",
+      "title": "Android源码分析：Activity启动流程Task相关分析",
+      "summary": "Activity的启动分析，很大一块需要了解的是Activity的Task管理，以及启动过程中Task的决策，在之前分析启动流程中，关于Task处理的部分，我这里是简化掉了很多的，今天再来分析一下。 入口与计算启动参数 在之前分析Activity的启动中，已经看到了关于处理Task的代码是在 ActivityStart 当中的 startActivityInner 方法当中，这个方法有不少入参，先捋一遍： resultTo为调用的Activity的 mToken(IBinder) ActivityRecord r, //新创建的Record，包含calling信息和要打开的ActivityInfo等 ActivityRecord sourceRecord, //resultTo不为空的时候才会去使用`Acti…",
+      "image": "https://img.isming.me/image/compute_launch_flag.png",
+      "publishedAt": "2024-09-13T09:57:05Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-13-activity-start-task/?utm_source=rss",
+      "detailPath": "articles/c03c7e5ba9b87d9506c16190.json"
     }
   ]
 }

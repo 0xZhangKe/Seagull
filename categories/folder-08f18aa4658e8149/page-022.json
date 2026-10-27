@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "121859ffca14d9939d3caa62",
+      "title": "【WCAP Training：從數位憑證到可驗證憑證】",
+      "summary": "參與2025年WCAP VC Training的知識點整理",
+      "image": "https://haruowang.vercel.app/career/wv1.webp",
+      "publishedAt": "2026-08-02T13:44:08Z",
+      "sourceId": "50bce2ced06e6077",
+      "sourceTitle": "Feed Me, Haruo",
+      "link": "https://haruowang.vercel.app/about/career/wcap-vc.html",
+      "detailPath": "articles/121859ffca14d9939d3caa62.json"
+    },
+    {
+      "id": "bf31e0c0cc65dbd2d9e4fb0b",
+      "title": "構築的解剖",
+      "summary": "整理關於建築設計的名家、歷史與理論等",
+      "image": null,
+      "publishedAt": "2026-08-02T13:44:08Z",
+      "sourceId": "50bce2ced06e6077",
+      "sourceTitle": "Feed Me, Haruo",
+      "link": "https://haruowang.vercel.app/pov/design/tectonic.html",
+      "detailPath": "articles/bf31e0c0cc65dbd2d9e4fb0b.json"
+    },
+    {
+      "id": "a13e6624e4d6ea107b200b57",
+      "title": "給自己的區塊鏈指南",
+      "summary": "《區塊鏈技術指南》的個人向整理",
+      "image": null,
+      "publishedAt": "2026-08-02T13:44:08Z",
+      "sourceId": "50bce2ced06e6077",
+      "sourceTitle": "Feed Me, Haruo",
+      "link": "https://haruowang.vercel.app/web3/knowledge/blockchain-guide.html",
+      "detailPath": "articles/a13e6624e4d6ea107b200b57.json"
+    },
+    {
+      "id": "49a78eac9a943addf81b2af7",
+      "title": "尽量可爱一些",
+      "summary": "「尽量乖巧、可爱一些。」",
+      "image": null,
+      "publishedAt": "2026-08-02T10:30:03Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/ZArlmyMe/BeCuteToAI_20260802/",
+      "detailPath": "articles/49a78eac9a943addf81b2af7.json"
+    },
+    {
+      "id": "bb7d0ac145535af8af278267",
+      "title": "保持谦逊，承认自己的“无能”",
+      "summary": "我从小就比较自以为是，可能是作为儿子被宠的原因，也可能是别的原因，在我很久远的记忆中就发生过一些事情。大概是不 […] The post 保持谦逊，承认自己的“无能” first appeared on 张可的博客 .",
+      "image": null,
+      "publishedAt": "2026-08-02T09:04:01Z",
+      "sourceId": "dcb23d5e55d79918",
+      "sourceTitle": "张可",
+      "link": "https://zhangke.space/%e4%bf%9d%e6%8c%81%e8%b0%a6%e9%80%8a%ef%bc%8c%e6%89%bf%e8%ae%a4%e8%87%aa%e5%b7%b1%e7%9a%84%e6%97%a0%e8%83%bd/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25bf%259d%25e6%258c%2581%25e8%25b0%25a6%25e9%2580%258a%25ef%25bc%258c%25e6%2589%25bf%25e8%25ae%25a4%25e8%2587%25aa%25e5%25b7%25b1%25e7%259a%2584%25e6%2597%25a0%25e8%2583%25bd",
+      "detailPath": "articles/bb7d0ac145535af8af278267.json"
+    },
+    {
       "id": "49fa352793b4307929c9fd61",
       "title": "10小时攻关，半小时Dev Time：在指甲盖大小的单片机上跑神经网络识别车库门",
       "summary": "为了解决车库门忘关的问题，我用拇指大小的ESP32-CAM单片机与AI协作做了一个端侧神经网络传感器。本文记录了如何通过打通全自动串口研发闭环、解决数据极度不对称与QAT量化衰减，在10小时内跑通嵌入式AI的完整过程。",
@@ -431,7 +486,7 @@
     },
     {
       "id": "722283639e96f365f5a9c515",
-      "title": "跟另一個站長互相監控：Uptime Kuma 交叉託管,和 Trust Proxy 開了反而更危險",
+      "title": "跟另一個站長互相監控：Uptime Kuma 交叉託管，和 Trust Proxy 開了反而更危險",
       "summary": "這篇記錄了作者跟另一位自架站長交叉監控的完整過程,並整理成一份可照做的教學。起點是自架服務的一個尷尬處境:監控自己的那台機器,自己掛了就沒人通知得了。解法是互相盯,但一開始兩人都卡在同一個錯誤前提上——以為要走 HTTPS 就得交換憑證。真正的答案是不用交換:對方把子網域 A 紀錄指向你的 IP,TLS 就在你這裡終結,Let's Encrypt 的 HTTP-01 驗證會直接打到你的 nginx,所以你自己就能簽那張憑證、還自動續簽;共享 wildcard 反而踩中私鑰暴露與手動續簽兩個雷。文中也整理了反代 Kuma 必備的 WebSocket 設定(少了 Upgrade 標頭,即時圖表會完全不動)、給後端加公開 /health 而非用 401 取巧、用 push 型監控盯 cron 腳本這種沉默故障,以及…",
       "image": null,
       "publishedAt": "2026-07-31T06:00:43Z",
@@ -595,17 +650,6 @@
       "detailPath": "articles/51ed33b60e85718aab17701e.json"
     },
     {
-      "id": "8010d90453fa58ed53859537",
-      "title": "靈魂的最好的朋友",
-      "summary": "這是我的「BlogBlog 同樂會 – 2026 年 8 月 」的投稿文章。本月主題是「一期一會」，由 ikuka 主持。如果你有自己的部落格，歡迎一起來參加！ 聽過n-1理論嗎? What's in my Now電子報的 這篇 是第一次認識這個理論，讓我萬分著迷，它的範圍可大可小，小至我的午餐，每吃掉一口，就少了一口可以吃；大至每活了一天，在這世界上存在的日子就少了一天。聽起來很像廢話，卻出奇的真實。 這與一期一會的想法不某而和。 這感覺不會有下一次了 如果我把每一次都當成最後一次呢? 最後一次聽這首歌 最後一次與你共進晚餐 最後一次看這副景色 最後一次走這條路 最後一次擁抱 最後一次說我想你 吐出最後一口氣 你相信靈魂伴侶嗎? 我相信，而且如此堅信著。 為什麼? 因為我在2021年遇到了。 相識的過程超級…",
-      "image": null,
-      "publishedAt": "2026-07-30T07:06:08Z",
-      "sourceId": "9755b4e021e7e4dc",
-      "sourceTitle": "she monster inside",
-      "link": "https://monsteressinside.bearblog.dev/soulmate/",
-      "detailPath": "articles/8010d90453fa58ed53859537.json"
-    },
-    {
       "id": "0160022b11a774ae627dc462",
       "title": "入蜀记 day432 苦集灭道",
       "summary": "「苦集灭道。」",
@@ -615,50 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_432/",
       "detailPath": "articles/0160022b11a774ae627dc462.json"
-    },
-    {
-      "id": "973421ba1b7486413a1b6689",
-      "title": "RE：断层里的心理学",
-      "summary": "我在尝试将过长的回应从月刊中拉出来、直接写成独立文章的做法。 和月刊内的回应不同，独立文章往往失去了「介绍该链接」的目的在，是单纯的「回应」。我不希望有任何人误认为我是在攻击谁，我只是就事论事。因此所有的作者的名字都会被我打成「作者」，不论我们是否有线上或者线下的关系。人身攻击是绝对不提倡的。 不过纯复述的内容，无论字数多长，都会被放在月刊内。",
-      "image": null,
-      "publishedAt": "2026-07-30T04:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/221a.html",
-      "detailPath": "articles/973421ba1b7486413a1b6689.json"
-    },
-    {
-      "id": "c37bbf46efe3c7274fcb6b60",
-      "title": "大学教授出奇招抓AI作弊，35名学生32人中招",
-      "summary": "7月28日消息，据科技媒体TechSpot昨天报道，美国奥尔康州立大学历史学教授杰森 · 吉布森（Jason Gibson）最近分享自己抓 AI 作弊的奇招，结果显示他任教的两个班级中，共有 32 人被抓现行。 据报道，这名教授给学生出的期中考试题目中，有一题涉及工业革命。他知道许多学生会直接照抄 AI 答案，因此他决定往试卷文档里加入一条提示词，要求 AI 以毫无逻辑的方式描述“马达加斯加”。这段提示词使用白色字体嵌入在文档里，因此学生无法直接用肉眼看到。 最终学生们交上来的 35 份试卷中，有 32 张答卷露出马脚。其实这些学生哪怕稍微检查一下 AI 给出的答案，就能发现异常。其中一个答案先是描述了工业革命，然后突然说“马达加斯加在下午时分横向漂浮”；另一答案则先讨论技术发展与社会不平等，然后结尾是“马达…",
-      "image": null,
-      "publishedAt": "2026-07-30T02:38:48Z",
-      "sourceId": "790d01957a9e753b",
-      "sourceTitle": "月光博客",
-      "link": "https://www.williamlong.info/archives/7555.html",
-      "detailPath": "articles/c37bbf46efe3c7274fcb6b60.json"
-    },
-    {
-      "id": "cf2de504e97c4fa2f58e2ada",
-      "title": "对框架的一些思考",
-      "summary": "最近有一些感悟：其实我们的生活、工作、情绪以及各种方法和技巧，都是在某个框架内打转。当我们从顶层思维的角度去审 …",
-      "image": null,
-      "publishedAt": "2026-07-30T02:26:14Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/some-thoughts-on-the-framework/",
-      "detailPath": "articles/cf2de504e97c4fa2f58e2ada.json"
-    },
-    {
-      "id": "23c2f8b013ea74376a39c8b9",
-      "title": "怎樣才能不專注",
-      "summary": "＊内容警告：文中有鳥類圖片 在一個滿世界是專注計時、專注力工具的世界裡，努力解決過度專注的問題……並得出了一點點經驗。 水禽特有的作沉思狀 # 小學的時候經常在教室裡坐一整天不离开座位，也不上廁所 1 ，被同桌當成奇聞怪事說給家長聽。 離家住宿舍之後坐一整天不去吃飯。 把自己餓出胃病，然後進急診。（感謝各位同学救我狗命。） 嚴重的時候经常連續熬两天完全不睡。（想來真是作死。） 「不動如山」的時候在幹什麼。大概就是沉迷於正在做的事情，然後持續數小時只盯著這個東西看，挪不到「下一個任務」上。 聽起來好像上癮。但能「成癮」的東西有點多。 调整word文檔的格式。製作表單。做ppt。擦百葉窗。整理藥盒。 考據（無人在意的細節）。 進入工作狀態也很慢。進入狀態之後又挪不到其他任務上。每天就這樣以史萊姆的形態衝進待辦列表…",
-      "image": "https://wuliangdian.com/posts/hyperfocus/%E5%A4%9C%E9%B7%BA-%E6%94%9D%E6%96%BC20251107.jpg",
-      "publishedAt": "2026-07-30T01:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/hyperfocus/",
-      "detailPath": "articles/23c2f8b013ea74376a39c8b9.json"
     }
   ]
 }

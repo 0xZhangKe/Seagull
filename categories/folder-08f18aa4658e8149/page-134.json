@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "551de4926adf0dca1f9cc317",
+      "title": "Android 性能优化典范 - Understanding VSYNC",
+      "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering Unbeknown to most developers, there’s a simple hardware design that defines everything about how fast your application can draw things to the screen. You may have heard the term VSYNC - VSYNC sta…",
+      "image": null,
+      "publishedAt": "2015-04-19T07:47:25Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns-3/",
+      "detailPath": "articles/551de4926adf0dca1f9cc317.json"
+    },
+    {
+      "id": "4d37b1be252cff2cc301140c",
+      "title": "Android 性能优化典范之 Understanding Overdraw",
+      "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering One of the most problematic performance problems on Android is the easiest to create; thankfully, it’s also easy to fix. OVERDRAW is a term used to describe how many times a pixel has been re-dra…",
+      "image": null,
+      "publishedAt": "2015-04-19T07:38:48Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns-2/",
+      "detailPath": "articles/4d37b1be252cff2cc301140c.json"
+    },
+    {
+      "id": "69082cbef86963715a0f5043",
+      "title": "Android 性能优化典范 - Render Performance",
+      "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering Rendering performance is all about how fast you can draw your activity, and get it updated on the screen. Success here means your users feeling like your application is smooth and responsive, whi…",
+      "image": null,
+      "publishedAt": "2015-04-19T07:26:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns-1/",
+      "detailPath": "articles/69082cbef86963715a0f5043.json"
+    },
+    {
+      "id": "2fcc57d2b395fc07005d3643",
+      "title": "Android 性能优化典范综述",
+      "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering 2015年1月6日，Google官方发布了一系列关于Android性能优化的小视频，将其命名为Android Performance Patterns，这一些列视频放在 YouTube 上，观看的话需要科学地上网。 现在回看这组视频，需要把“渲染机制”和“工具入口”分开理解。16ms 帧预算、过度绘制、VSYNC、主线程/渲染线程协作这些机制仍然是图形性能的基础；但当年配套使用的 Hie…",
+      "image": null,
+      "publishedAt": "2015-04-19T07:20:35Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns/",
+      "detailPath": "articles/2fcc57d2b395fc07005d3643.json"
+    },
+    {
       "id": "ee71a8ca0b54ab24e711295a",
       "title": "Android 内存优化之三 - 打开 MAT 中的 Bitmap 原图",
       "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文介绍的是从 MAT 里手工还原 Bitmap 原图的旧排查技巧，适合在离线 heap 里确认“到底是哪张图”被错误持有。现在排查图片内存问题时，第一步通常不是直接打开 MAT，而是先用 Android Studio Memory Profiler 的 heap dump/retained size/reference 视图确认 Bitmap、BitmapDrawable 或图片缓存…",
@@ -615,50 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2014/07/17/cdh-ha-installation/",
       "detailPath": "articles/abe90e568fbf0bd56f360ec4.json"
-    },
-    {
-      "id": "fce364f321db5fe2d25cb852",
-      "title": "hadoop1.0 安全认证(kerberos)安装与总结",
-      "summary": "俗话说得好，万事开头难。在软件开发中，环境部署要算是第一门槛了。我最近折腾了一周时间把cdh5.0.2.tar.gz版本在MRv1模式下，成功集成了Kerberos安全认证，并且是在全分布式模式下。经过这次安装过程，对hadoop的了解又深入了一层。现在趁着自己刚搭建完环境，脑子还时不时的闪现遇到的错误，把我的安装过程记录于此，一方面方便自己今后查阅，另一方面希望对今后遇到同样问题人有所启发。",
-      "image": null,
-      "publishedAt": "2014-07-15T13:56:28Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/07/15/cdh-kerberos-installation/",
-      "detailPath": "articles/fce364f321db5fe2d25cb852.json"
-    },
-    {
-      "id": "179dc7424ab6bb3b8ca60c50",
-      "title": "「大上海计划」的遗珠",
-      "summary": "刚放假，因为有一个亲戚在上海住院，所以两天都去探病。所住医院为上海长海医院，位于上海东北部的江湾区。第一次开车到医院的时候，路过一个残破的石制建筑。它被铁栏杆围住，建筑前的空地上杂草丛生，里面却停着几辆轿车，爬山虎盖满了墙壁，建筑整体风格是传统的，类似于中山陵。我估摸着它建于民国时期，上了年头，但仍然疑惑这样一个建筑为什么荒败至此，而且这是在繁华的上海。 我打开手机上的地图，定位。地图显示在我身边的这个建筑是「上海市图书馆旧址」，这大概能解释它的古老，但依然无法解释它的残破，而且这让我多了一个疑惑：为什么上海市图书馆在东北部的江湾呢？这在民国应该算是郊区，一个城市的图书馆何以造在这里？ 好奇心来了便挡不住。 我上网搜索「上海市图书馆旧址」，但显示的信息都不是关于这个建筑，却指向市中心的图书馆旧馆。于是我把「黑…",
-      "image": "https://i.loli.net/2020/02/17/sDKatuzWjRVy2ml.jpg",
-      "publishedAt": "2014-07-14T16:58:02Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/07/14/shanghai-blueprint/",
-      "detailPath": "articles/179dc7424ab6bb3b8ca60c50.json"
-    },
-    {
-      "id": "7374f4dc29a9cd64097ea8f8",
-      "title": "JVM 的类初始化机制",
-      "summary": "当你在 Java 程序中 new 对象时，有没有考虑过 JVM 是如何把静态的字节码（byte code）转化为运行时对象的呢，这个问题看似简单，但里面的细节很多，而且由于开发者在平时与之打交道较少，很少有同学会去主动探索这块知识，但这个知识点却是面试时常考的地方，而且熟练掌握类加载是实现代码热部署的关键。",
-      "image": null,
-      "publishedAt": "2014-07-12T05:02:29Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/07/12/order-of-initialization-in-java/",
-      "detailPath": "articles/7374f4dc29a9cd64097ea8f8.json"
-    },
-    {
-      "id": "4c2e649547130a3082bf6c63",
-      "title": "玩木工【五】：儿童版 Adirondack Chair",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-07-06T05:51:24Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw005/",
-      "detailPath": "articles/4c2e649547130a3082bf6c63.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "080484fe96bba01615876173",
+      "title": "戒烟失败第一天",
+      "summary": "和标题一样，刚刚抽了一根烟，戒烟有几个月了，小x昨天回家过端午，接下来一两周是我一人带娃儿，前几天问了新家的幼儿园招生政策，得到的答复是需要排队，9月看看能不能开新的托班，之前我以为小区配套幼儿园是私立的，原来它是公立幼儿园，也就没那么「随便」了。 下楼去买烟，江苏的便利店里都没有山东的烟，准确的说是山东的「口粮」烟，比如我从小抽到大的「红塔山」、「白将军」，这边都没有，只能被迫换换口味买了包玉溪和泰山的细支，不好抽，没劲。 最近几周我们几乎每天都驾车出去转悠，一来想尽快熟悉这座城市，二来想看看城市的区域，下半年八成得开始看房，提前摸清片区，感受下哪个区域适合我们居住。 在从山东来江苏前，我俩计划的是卖了那边两套房换这边一套，这几天看了挺多二手房和新小区，看得上的太贵，价格合适的又看不上，我记得19年买第一套…",
+      "image": "https://ihaihe.cn/wp-content/uploads/2026/06/IMG_5622.webp",
+      "publishedAt": "2026-06-19T07:32:39Z",
+      "sourceId": "8e1a97c92477b087",
+      "sourceTitle": "三十里海河",
+      "link": "https://ihaihe.cn/3658.htm",
+      "detailPath": "articles/080484fe96bba01615876173.json"
+    },
+    {
+      "id": "53cdf54dc5294d82488ef694",
+      "title": "2026-06-05 / 见不贤而外自省",
+      "summary": "by 新世界的大门",
+      "image": null,
+      "publishedAt": "2026-06-19T06:11:04Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/44/",
+      "detailPath": "articles/53cdf54dc5294d82488ef694.json"
+    },
+    {
+      "id": "65e37392199602f36e139d0a",
+      "title": "2026-06-03 / 抽搐的 ECharts",
+      "summary": "by 新世界的大门",
+      "image": null,
+      "publishedAt": "2026-06-19T05:16:00Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/43/",
+      "detailPath": "articles/65e37392199602f36e139d0a.json"
+    },
+    {
       "id": "a62325eb69d31ba8e5c761cb",
       "title": "打造媲美 macOS 的 Linux 开发环境",
       "summary": "在使用 macOS 作为主力机十多年后，最近想尝试一下 Linux，看一看 2026 年的 Linux 桌面环境是否可以提供媲美 macOS 的开发体验。 macOS 的特点就是流畅，字体渲染细腻，不折腾，作为开发环境很省心，而且对于 Emacs 党来说，macOS 还有一点优势，其在系统层面内置了一套 Emacs 风格的光标移动快捷键，在所有原生文本输入框里都能用，不需要任何额外配置，比如：",
@@ -134,7 +167,7 @@
     },
     {
       "id": "0e4fd47e4d3f209991428712",
-      "title": "替散落的資料庫,開一扇上了鎖的窗：Outerbase × Mongoku × Authelia,自架 2FA 唯讀資料庫後台",
+      "title": "替散落的資料庫，開一扇上了鎖的窗：Outerbase × Mongoku × Authelia，自架 2FA 唯讀資料庫後台",
       "summary": "這篇文章記錄了作者如何把散落在 homelab 各處的資料庫——六個分屬部落格、n8n、Uptime Kuma、3x-ui、Jarvis、NAS 的 SQLite,外加一個 MongoDB——整合成一個從任何地方都能存取、且擋著 2FA 的網頁後台。文章先從選型講起:為什麼不為了換而換上 Postgres、如何在 sqlite-web、Adminer、Beekeeper、CloudBeaver 之間繞了一圈才落在 Outerbase Studio,以及對外閘門為何捨 Cloudflare Tunnel 而自架 Authelia。接著逐一拆解建置時的坑:官方 Docker image 讀不了本地檔(只有 npm CLI 能)、ATTACH 看得到資料卻看不到表、WAL 模式無法唯讀掛載(最後靠「主檔唯讀、目錄可…",
       "image": null,
       "publishedAt": "2026-06-17T15:10:23Z",
@@ -274,17 +307,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/pleasing-to-the-ear/",
       "detailPath": "articles/f26392c74d9870567a640ab2.json"
-    },
-    {
-      "id": "9c1e0d66b20e85d3d3dce1f7",
-      "title": "代練遊戲等級",
-      "summary": "時下正在流行 AI 修圖（或「AI 生圖」之類的東西），許多語言模型迭代更新的主打亮點都放在「更厲害的圖像生成」上。 具體做的事情大致如下： 人類把照片上傳到聊天機器人服務、複製一些網路上看到的 prompt 貼到機器人聊天室、等機器人把畫風不同的圖片或是混搭了不同素材的完成品「變出來」，下載圖片之後分享給其他人類。 雖不至於感到排斥，但老實說我還蠻不能理解其中樂趣何在。 讓我有類似感覺的是在自己國小時代，有同學會把自己的摩爾莊園（或賽爾號）遊戲的帳號密碼借給同學「代練代打」來提升等級，待最高等級數字達成後，再自己登入來玩。國高中時代，也碰過反過來以「把等級練滿的遊戲帳號放到網路上販賣」當作賺取額外零用錢方式的同學，每每感到驚訝，竟然會有人花錢「買」完全不能體驗升等樂趣的滿等完成帳號欸！ 我至今仍不理解這種把…",
-      "image": null,
-      "publishedAt": "2026-06-16T06:28:47Z",
-      "sourceId": "859dc4f797795c39",
-      "sourceTitle": "蟬噪林愈靜",
-      "link": "https://blog.linyuchin.com/the-fun-part-of-gaming/",
-      "detailPath": "articles/9c1e0d66b20e85d3d3dce1f7.json"
     },
     {
       "id": "5342086dd3368ada8cffbdf3",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/21guns-solo-practice/",
       "detailPath": "articles/20f0526b792070064a96d284.json"
-    },
-    {
-      "id": "dd989fba2a8fbd300cee1f0a",
-      "title": "樂譜（五線譜）編製二三事",
-      "summary": "@font-face { font-family: 'Bravura Text'; src: local('Bravura Text'), url('https://cdn.jsdelivr.net/gh/ttheng3810/bravura@latest/redist/woff/BravuraText.woff2'); } .bravura { font-family: \"Bravura Text\"; font-size: 150%; } 發佈於 NiceChord 網站上的一篇樂譜相關教學文章——《 9 個最常見的五線譜寫譜錯誤 》，羅列出了好一些常見的製譜問題，只要是透過五線譜作編曲的人都一定、 一定 要去讀一下！ 我在這裡只是想要針對我遇過的其他一些情況，給出幾個更爲細節、更少人會注意到的，但也同樣重…",
-      "image": "https://microblog.ttheng.com/blog/img191.jpg",
-      "publishedAt": "2026-06-13T05:55:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/sheet-music-preparation-stuff/",
-      "detailPath": "articles/dd989fba2a8fbd300cee1f0a.json"
-    },
-    {
-      "id": "05b79728adca5e6a2b858d29",
-      "title": "想做一個 tool-calling 修復 proxy,結果 benchmark 親手殺死了這個點子",
-      "summary": "這篇文章記錄了作者在嘗試開發一個「tool-calling 修復 proxy」的過程中，如何透過設計一個 benchmark 測試 22 個地端模型的 tool-calling 能力，最終放棄這個創業點子的經歷。測試結果顯示，新一代模型（如 Qwen3.5）已經原生解決了 tool-calling 的問題，修復層對這些模型反而成為干擾，且模型世代的快速進化使得這類修復工具的市場需求迅速萎縮。文章提供了詳細的測試方法、結果分析以及對各模型的具體觀察，並總結出地端模型選擇的實用建議。最後，作者強調了驗證假設的重要性，認為早期的測試能有效避免浪費時間和資源。",
-      "image": null,
-      "publishedAt": "2026-06-13T02:16:14Z",
-      "sourceId": "bd51496b8ec0ca1d",
-      "sourceTitle": "Koimsurai 手記",
-      "link": "https://koimsurai.com/blog/i-wanted-to-build-a-tool-calling-repair",
-      "detailPath": "articles/05b79728adca5e6a2b858d29.json"
     }
   ]
 }

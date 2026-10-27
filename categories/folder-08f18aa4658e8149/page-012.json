@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "5e0c27700151ad7616aee262",
+      "title": "落選供養",
+      "summary": "TIL：「 落選供養 」。這四字短語是個源自日文的網路流行語，也有被原樣照搬到中文圈使用。 顧名思義，「落選供養」的意思是將自己投稿到創作徵選比賽中但沒有被選上任何名次的作品，發表於公開平台上，以作「供養」，也就是作爲記錄與紀念。無論是文字、繪圖，還是音樂作品，都能找到「落選供養」的蹤跡。 會使用含有祭祀意味的「 供養 」二字來形容這個動作，除了比喻這些無緣中選、「被棄置於作品堆中」的投稿如同「已然死亡」一般，也代表着作者本身將作品於日後公開發表的行爲，除了發展自身作品集之外，也是爲了讓自己的心血「死」得體面一些。 說到音樂的部分，在 YouTube 或是 Niconico 上使用「落選供養」四字作爲關鍵詞搜尋，會找到許多音樂創作者發佈的落選作，而且絕大多數似乎都是用來參加 音遊曲 徵選比賽的作品。有些歌曲雖…",
+      "image": null,
+      "publishedAt": "2026-09-19T12:27:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/rejected-works-archive/",
+      "detailPath": "articles/5e0c27700151ad7616aee262.json"
+    },
+    {
+      "id": "d460d4d565fdfa6587de4b9c",
+      "title": "家宽获得「静态」IPv6 地址",
+      "summary": "现在运营商基本会下发公网 IPv6 地址。只要设备支持，差不多都能原生接入 IPv6 网络。 但获得的地址是动态，设备如果重启就会变。本文分享在 OpenWRT 下通过 DHCPv6 Prefix-Length Hint 技术来固化公网 IPv6 网段的实践经验。",
+      "image": null,
+      "publishedAt": "2026-09-19T07:11:03Z",
+      "sourceId": "34509afbbca01958",
+      "sourceTitle": "涛叔",
+      "link": "https://tao.zz.ac/unix/static-ipv6.html",
+      "detailPath": "articles/d460d4d565fdfa6587de4b9c.json"
+    },
+    {
+      "id": "50cb9595bec2edafd62958b1",
+      "title": "《人生也是一個遊戲》：讀者專區",
+      "summary": "謝謝你讀《人生也是一個遊戲》。這裡有書中沒收錄的4個玩家心態，也會持續更新更多情報與工具。",
+      "image": "https://media.alexhsu.com/img/book-leave-review.webp",
+      "publishedAt": "2026-09-19T06:00:24Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/books/game/reader",
+      "detailPath": "articles/50cb9595bec2edafd62958b1.json"
+    },
+    {
+      "id": "79c66aa0a8717a6df292164b",
+      "title": "SmartPerfetto v1.12.0 更新说明",
+      "summary": "上一篇更新 写到 2026 年 8 月 21 日的 v1.7.0。从 8 月 21 日的 v1.7.0 到 9 月 17 日的 v1.12.0，这 28 个日历日内，SmartPerfetto 发布了 9 个新版本，仓库合入 141 个非 merge 提交。 这段时间增加了任意双 Trace 工作台、无需预建索引的源码分析、Auto/Fast/Full 显式模式、跨会话调查检查点，以及贯穿 Web、CLI、报告和快照的结论核验。变化很多，但方向很集中：让一次分析从「模型给出答案」变成「请求、工具执行、证据、断言和最终交付都能核对」。 项目地址： github.com/Gracker/SmartPerfetto 。",
+      "image": null,
+      "publishedAt": "2026-09-19T04:00:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2026/09/19/SmartPerfetto-v1.12.0-Release-Notes/",
+      "detailPath": "articles/79c66aa0a8717a6df292164b.json"
+    },
+    {
       "id": "badf92bda741d86f190e6d18",
       "title": "欢迎使用 zz.Pages 发布静态网页",
       "summary": "zz.Pages 是 zz.NIC 官方提供的静态 网页托管平台，对标 GitHub Pages。zz.NIC 很早就对外提供代码托管服务 zz.Git。 但 zz.Git 没有接入默认 Pipeline Runner，也就无法自动执行构建任务。考虑到 zz.NIC 很多项目会在 zz.Git 上发布，而且项目需要自己的主页；同时，zz.NIC 也愿意为社区提供 更加简便的 Web 托管平台，所以就推出了 zz.Pages 服务。",
@@ -102,7 +146,7 @@
     {
       "id": "95b5995a7352631c54202509",
       "title": "Gboard-patches 使用指南",
-      "summary": "由 jasonwu1994 大大開源的「Gboard-patches」是我最近發現的好用 android 輸入法。",
+      "summary": "由 jasonwu1994 大大開源的「Gboard-patches」是我最近發現的好用 Android 輸入法。",
       "image": "https://shuojen.com/assets/images/apk-0a1dff6d58cd4bb361059fc3b4e06489.png",
       "publishedAt": "2026-09-18T13:54:31Z",
       "sourceId": "19b15d378a85c1f7",
@@ -177,17 +221,6 @@
       "detailPath": "articles/5e97674686c28a8ae4bc545e.json"
     },
     {
-      "id": "3bab3eac422db03b881a3d3f",
-      "title": "真實交流",
-      "summary": "英語口說 含體驗課，目前已經和十四位不同的老師上了十五堂的 英語口說 課，大致的上課體驗都還能接受。我會用星星數來紀錄自己對每位老師的上課印象，讓自己日後參考還要不要和同位老師再約課。滿分五顆星，三顆表示待觀察，若有再和同位老師上課時，會再評估一次這位老師到底適不適合自己，目前只有兩位老師屬於這個區間。四顆則是對老師整體印象還OK，但沒有特別讓我印象深刻的地方。四顆再多的話，則是老師有一些特別讓我記住他的特質，會讓我毫不猶豫地想再跟他約課。我還沒有給出過三顆以下或滿分，因為我目前上課到現在的樣本數還不夠多。 避免讓本文像是在幫該英語口說平台打廣告，我就不特別講我特別喜歡哪幾位老師的名字了，只提我為什麼喜歡上他們課的一些原因。第一位老師的特色是若上課我沒其他問題問他時，他會貼他的延伸問題來問我，我猜這些問題應該…",
-      "image": null,
-      "publishedAt": "2026-09-18T05:35:32Z",
-      "sourceId": "9bbc7d640e2bc143",
-      "sourceTitle": "RayrrrrrR",
-      "link": "https://rayrrrrrrr.bearblog.dev/5648/",
-      "detailPath": "articles/3bab3eac422db03b881a3d3f.json"
-    },
-    {
       "id": "f13c0bb6e28db6085f500b48",
       "title": "不買大垃圾袋了",
       "summary": "上次去 S 同學家借住兩宿 時，發現家裡是沒有垃圾桶的，取而代之的是各種小塑膠袋，是購物時附贈的一次性袋子。 我覺得那樣不錯，於是仿照她，也開始搜集袋子，每次買外食的袋子，其實都能裝三個盒子，等於是每吃三次外食，只會消耗掉一個袋子，於是袋子就越來越多了。 慢慢搜集的塑膠袋子 小時候母親會摺成三角形，讓體積變很小，但 Eddie 完全忘記怎麼弄了，只好簡單打結。 用小袋子當垃圾袋的好處是：永遠不會有味道，在開始腐敗之前，就會被拿去垃圾車丟掉。 說來也神奇，之前用大垃圾袋時，常常很懶，堆到累計了第三包時才拿去丟；但現在用小袋子裝，已經超過一個月這樣做了，目前只有累計到第二包而已。難道換小袋子還能讓自己變勤奮嗎？ 另一個好處是：完全不怕螞蟻。 屋子外，馬路對面有一坪左右的土地，上面是泥土、小樹、草叢，那裡會許多不適…",
@@ -197,6 +230,17 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/garbage-bags/",
       "detailPath": "articles/f13c0bb6e28db6085f500b48.json"
+    },
+    {
+      "id": "3bab3eac422db03b881a3d3f",
+      "title": "真實交流",
+      "summary": "英語口說 含體驗課，目前已經和十四位不同的老師上了十五堂的 英語口說 課，大致的上課體驗都還能接受。我會用星星數來紀錄自己對每位老師的上課印象，讓自己日後參考還要不要和同位老師再約課。滿分五顆星，三顆表示待觀察，若有再和同位老師上課時，會再評估一次這位老師到底適不適合自己，目前只有兩位老師屬於這個區間。四顆則是對老師整體印象還OK，但沒有特別讓我印象深刻的地方。四顆再多的話，則是老師有一些特別讓我記住他的特質，會讓我毫不猶豫地想再跟他約課。我還沒有給出過三顆以下或滿分，因為我目前上課到現在的樣本數還不夠多。 避免讓本文像是在幫該英語口說平台打廣告，我就不特別講我特別喜歡哪幾位老師的名字了，只提我為什麼喜歡上他們課的一些原因。第一位老師的特色是若上課我沒其他問題問他時，他會貼他的延伸問題來問我，我猜這些問題應該…",
+      "image": null,
+      "publishedAt": "2026-09-18T05:02:00Z",
+      "sourceId": "9bbc7d640e2bc143",
+      "sourceTitle": "RayrrrrrR",
+      "link": "https://rayrrrrrrr.bearblog.dev/5648/",
+      "detailPath": "articles/3bab3eac422db03b881a3d3f.json"
     },
     {
       "id": "2601c58e7dd3c0c1c8178d19",
@@ -615,50 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_479/",
       "detailPath": "articles/ccc9b8fff8c2b1ff996cbe4b.json"
-    },
-    {
-      "id": "f71a76c87ca9d85025bd861e",
-      "title": "八月｜雷暴，露營地和流星雨",
-      "summary": "Hero Photo攝於Ch",
-      "image": null,
-      "publishedAt": "2026-09-15T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/aug-2026-recap/",
-      "detailPath": "articles/f71a76c87ca9d85025bd861e.json"
-    },
-    {
-      "id": "a6dda0739bd3c2061b195450",
-      "title": "WiPitch：自由的最後一塊拼圖",
-      "summary": "Wiwi.Blog 的讀者應該都知道，我一直在努力逃離專有軟體和 macOS 的掌控。事實上，就音樂製作而言，我的「逃獄」工具包幾乎就要齊備了：",
-      "image": "https://wiwi.blog/assets/images/wipitch-b51d149592e1154b6141158089b12450.png",
-      "publishedAt": "2026-09-15T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/wipitch",
-      "detailPath": "articles/a6dda0739bd3c2061b195450.json"
-    },
-    {
-      "id": "67c7ef4f3106a42bc526c5dc",
-      "title": "處理了上排左側智齒",
-      "summary": "6月份到專門的口腔外科評估過一次，因為我這顆長的位置有到鼻腔，有出現口鼻竇相通的機率，當天想說再考慮一下。 9月初到固定的牙醫診所洗牙，醫師建議因為智齒和大臼齒交界的地方無法清理，最後還是需要拔掉，若等到大臼齒端出現蛀牙就會更麻煩，所以決定還是拔掉了XD",
-      "image": null,
-      "publishedAt": "2026-09-14T20:55:26Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/14/wisdom-tooth-extraction-experience/",
-      "detailPath": "articles/67c7ef4f3106a42bc526c5dc.json"
-    },
-    {
-      "id": "3bb092bf8fa11892dc89f3bc",
-      "title": "我其實不喜歡Hsu這個姓氏，直到⋯⋯",
-      "summary": "每次向外國人介紹自己，我都得把Hsu唸成Shoe。這個難唸又難懂的姓氏，曾經讓我很討厭自己的名字。",
-      "image": null,
-      "publishedAt": "2026-09-14T15:59:58Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/hsu",
-      "detailPath": "articles/3bb092bf8fa11892dc89f3bc.json"
     }
   ]
 }

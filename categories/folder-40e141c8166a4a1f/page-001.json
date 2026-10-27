@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "6f8f8efe44243afceaa206ee",
+      "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+      "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer.",
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M5YGNS8F8NYE3V5QERKYNG79.png",
+      "publishedAt": "2026-10-27T13:00:00Z",
+      "sourceId": "2f3b69ac70035fb0",
+      "sourceTitle": "The Cloudflare Blog",
+      "link": "https://blog.cloudflare.com/php-ctf/",
+      "detailPath": "articles/6f8f8efe44243afceaa206ee.json"
+    },
+    {
+      "id": "87e6dd40d52e57b434e08ec5",
+      "title": "What took the Internet offline in Q3 2026",
+      "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and traffic.",
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01KW453HMZRQX1BZKZQMN21EG8.png",
+      "publishedAt": "2026-10-27T13:00:00Z",
+      "sourceId": "2f3b69ac70035fb0",
+      "sourceTitle": "The Cloudflare Blog",
+      "link": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+      "detailPath": "articles/87e6dd40d52e57b434e08ec5.json"
+    },
+    {
+      "id": "f048c78e50c82273a1da8c4e",
+      "title": "Hiding Capabilities in AI Models",
+      "summary": "Interesting research: “ AI Models Can Provably Hide Arbitrary Capabilities ” Abstract: Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks…",
+      "image": null,
+      "publishedAt": "2026-10-27T11:01:26Z",
+      "sourceId": "785b58e8749bd508",
+      "sourceTitle": "Schneier on Security",
+      "link": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+      "detailPath": "articles/f048c78e50c82273a1da8c4e.json"
+    },
+    {
       "id": "c87b77c69fdce35758cd0ad3",
       "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
       "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
@@ -386,17 +419,6 @@
       "detailPath": "articles/f2abe66c836cbdb6a30af14a.json"
     },
     {
-      "id": "0888588af92d850f997c9ed2",
-      "title": "Measuring Human Cryptanalysis Effort",
-      "summary": "Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms: Abstract: We estimate how much public cryptanalysis each public-key assumption has received, using the literature itself as the instrument. From roughly sixteen thousand candidate papers we classify cryptanalyt…",
-      "image": null,
-      "publishedAt": "2026-10-15T16:24:29Z",
-      "sourceId": "785b58e8749bd508",
-      "sourceTitle": "Schneier on Security",
-      "link": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
-      "detailPath": "articles/0888588af92d850f997c9ed2.json"
-    },
-    {
       "id": "fc6f6010747a38b7ae0d853a",
       "title": "Android earthquake alerts now available in more than 200 regions",
       "summary": "1 billion Android earthquake alerts sent",
@@ -496,17 +518,6 @@
       "detailPath": "articles/22466e6fbd88b0559cddfc18.json"
     },
     {
-      "id": "69bb62f21b9fd1d531fc1d7c",
-      "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
-      "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platform effectively.",
-      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01KW45ADESEJPK73KY57K3T0NX.png",
-      "publishedAt": "2026-10-13T16:20:18Z",
-      "sourceId": "2f3b69ac70035fb0",
-      "sourceTitle": "The Cloudflare Blog",
-      "link": "https://blog.cloudflare.com/d1-control-plane/",
-      "detailPath": "articles/69bb62f21b9fd1d531fc1d7c.json"
-    },
-    {
       "id": "7c5338a4cefa15dbde2b9783",
       "title": "Bringing our latest frontier model to Android Developers",
       "summary": "Posted by Jason Buchel, Creative Technologist, Platform & Devices As agentic development accelerates, Android engineering is reaching an exciting new frontier: moving from assistive code completion to agents executing end-to-end under your direction. You have total choice and flexibility in the models and agents you use. Gemini 4 Argon excels at deep work i…",
@@ -516,17 +527,6 @@
       "sourceTitle": "Android Developers Blog",
       "link": "http://android-developers.googleblog.com/2026/10/bringing-gemini-4-argon-to-android-agentic-engineering-antigravity-cli.html",
       "detailPath": "articles/7c5338a4cefa15dbde2b9783.json"
-    },
-    {
-      "id": "d898c15d1dd962197d5ce43d",
-      "title": "Rewinding the exponential: How we keep hardware usage down",
-      "summary": "Our strategies to optimize our data pipeline throughput without compromising data quality.",
-      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M4RYXQ3HHM0NCXGK8DBW1JR3.01M4RYXQR4R5Q48PG2RZ86HSR5.png",
-      "publishedAt": "2026-10-13T15:51:41Z",
-      "sourceId": "2f3b69ac70035fb0",
-      "sourceTitle": "The Cloudflare Blog",
-      "link": "https://blog.cloudflare.com/rewinding-the-exponential/",
-      "detailPath": "articles/d898c15d1dd962197d5ce43d.json"
     },
     {
       "id": "439ca9c0dfc50a6f77bc8b07",

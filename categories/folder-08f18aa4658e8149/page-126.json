@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "53695d056b31f36d4364823f",
+      "title": "为 COVID-19 准备家用应急物资",
+      "summary": "眼见 COVID-19 在全世界各处开始广泛社区传播，感觉着陆本地不过是时间问题，再不动手就太被动了。之前没有相关经验的我们，花了一个星期的时间准备了一些家用应急储备，在这里分享心得。 背景 # 这次应对的是世界范围内 COVID-19 的爆发。地广人稀对于传染病应对来说是个优势，用这个安慰自己口罩买不到的话就不死磕了，只要宅家不出门病毒能耐我何。 再考虑社会背景。我所在的 Pacific Northwest 地区既没有龙卷风也没有（太多！）山火，火山爆发和地震倒是有一些。相对于北美其他硬核地区来说，总体来说储备意识不是很强。举个例子，冬天的时候一旦预报下雪（只要超过一两寸厚），超市货架在接下来两天里就会被戏剧性地抢空。 最后是个人背景。宅，动手能力差，没有生存方面的爱好、兴趣或经验（连 camping 也没…",
+      "image": "https://fourhappylions.com/posts/prepping-for-covid19/waterbob_hu_ae97236db924238b.jpg",
+      "publishedAt": "2020-03-07T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/prepping-for-covid19/",
+      "detailPath": "articles/53695d056b31f36d4364823f.json"
+    },
+    {
+      "id": "2c1ac48c3cad762a32d5a281",
+      "title": "👴就是二次元，故尝试证明。",
+      "summary": "引言 两口气看完「 理科生坠入情网，故尝试证明。 」这部番时，我便想着写个观后感吧。添加到 Todo 列表后，便因为各种杂事和惰性，一拖再拖，抛之脑后。 导致现在回过头来，当初的回味几乎所剩无几。 访问 https://www.yunyoujun.cn/posts/i-am-er-ci-yuan-and-try-to-prove 阅读全文。",
+      "image": null,
+      "publishedAt": "2020-03-06T23:12:37Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/i-am-er-ci-yuan-and-try-to-prove",
+      "detailPath": "articles/2c1ac48c3cad762a32d5a281.json"
+    },
+    {
+      "id": "8dee6efd70c3cecb303244ca",
+      "title": "编译器认知实验",
+      "summary": "目录 实验目的和内容 实现的具体过程和步骤 GCC 运行结果分析 LLVM运行结果分析 GCC与LLVM对比分析 实验心得体会 实验目的和内容 本实验的目的是了解工业界常用的编译器 GCC 和 LLVM，熟悉编译器的安装和使用过程，观察编译器工作过程中生成的中间文件的格式和内容，了解编译器的优化效果，为编译器的学习和构造奠定基础。 本实验主要的内容为在 Linux 平台上安装和运行工业界常用的编译器 GCC 和 LLVM，编写简单的测试程序，使用编译器编译，并观察中间输出结果。 实现的具体过程和步骤 编译器安装 编写测试程序 运行编译器进行观测 GCC 运行结果分析 查看编译器的版本 ❯ gcc --version gcc (GCC) 9.2.0 Copyright © 2019 Free Software…",
+      "image": "https://emptystack.top/processed_images/gcc-tree-fs8.539b39d078c47f4d.webp",
+      "publishedAt": "2020-03-06T07:55:49Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/notes-on-gcc-llvm/",
+      "detailPath": "articles/8dee6efd70c3cecb303244ca.json"
+    },
+    {
+      "id": "2698f9c3fcd72f1815a3659a",
+      "title": "教你如何从零开始搭建一个属于自己的网站",
+      "summary": "写给想要拥有一个自己的网站但没有资金成本的小白与曾经的自己。 前言 虽说是网站，对于个人来说，或许一般叫作博客。 但我不希望它仅仅是一个博客，而是能够成为一个处于自己现实生活之外、自由、实验、不用畏惧他人眼光甚至可以独断专行的地方。 访问 https://www.yunyoujun.cn/posts/how-to-build-your-site 阅读全文。",
+      "image": null,
+      "publishedAt": "2020-03-05T01:31:08Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/how-to-build-your-site",
+      "detailPath": "articles/2698f9c3fcd72f1815a3659a.json"
+    },
+    {
       "id": "73cf0aadbc1d24cbcfa9be64",
       "title": "解决没有修改文件但Git认为你修改了",
       "summary": "这种情况看起来内容没变，但文件一定是被真正修改了。改变的点可能是换行符（LF ⇄ CRLF ） ，也可能是文件权限。 如果是文件权限，设置忽略文件权限即可： ❯ git config core.filemode false 我出现这个问题的原因是用 exFAT 格式的 U 盘在两台 ext4 格式的电脑之间拷项目。这两种格式一个为 Windows 设计一个为 Linux 设计，权限管理自然也不一样。因此权限在 ext4 上本来是 -rw-r--r-- ，过了一遍 exFAT 就成了 -rwxrwxrwx 。所以 Git 认为文件变了，但编辑器就是没法高亮哪里变了。 其实 Git 自身是可以告诉你文件权限被改变的： ❯ git diff README.md diff --git a/README.md b/RE…",
@@ -615,50 +659,6 @@
       "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
       "link": "https://fravilion.top/index.php/archives/25/",
       "detailPath": "articles/50de3067b076b7d0db65d24d.json"
-    },
-    {
-      "id": "a7861fad96495ae4c7579601",
-      "title": "Android 中的“后台无效动画“行为分析",
-      "summary": "当一个 Android App 退到后台之后，只要他没有被杀死，那么他做什么事情大家都不要奇怪，因为这就是 Android。但是当用户知道一个你一个 App 退到后台之后还在持续做无效的动画，而这个动画完全是无意义的，而且用户还不知道他在做动画，消耗用户那可怜的电量的时候，轻则被多任务杀掉，禁止后台运行，重则直接卸载。 一般的开发者很难发现这个问题，但是如果你经常使用 Systrace ，多开几十个应用然后退回到桌面，左右滑动抓取 Systrace ，就可以很容易发现，总有那么几个后台的应用，还在频繁地做无效的动画。 这里说的后台做动画，指的是由于某种原因，应用在退到后台之后，用户看不到任何这个 App 界面的时候，他仍然在后台不断地更新，耗费 CPU。引起这个问题的原因可能有好多个，毕竟 往 Choreog…",
-      "image": null,
-      "publishedAt": "2019-10-24T00:27:34Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/10/24/Android-Background-Animation/",
-      "detailPath": "articles/a7861fad96495ae4c7579601.json"
-    },
-    {
-      "id": "877f8f9be20f0a0e191b69ea",
-      "title": "Android 基于 Choreographer 的渲染机制详解",
-      "summary": "本文介绍了 App 开发者不经常接触到但是在 Android Framework 渲染链路中非常重要的一个类 Choreographer。包括 Choreographer 的引入背景、Choreographer 的简介、部分源码解析、Choreographer 与 MessageQueue、Choreographer 和 APM，以及手机厂商基于 Choreographer 的一些优化思路 Choreographer 的引入，主要是配合 Vsync ，给上层 App 的渲染提供一个稳定的 Message 处理的时机，也就是 Vsync 到来的时候 ，系统通过对 Vsync 信号周期的调整，来控制每一帧绘制操作的时机. 目前大部分手机都是 60Hz 的刷新率，也就是 16.6ms 刷新一次，系统为了配合屏幕的刷…",
-      "image": null,
-      "publishedAt": "2019-10-22T10:55:11Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/10/22/Android-Choreographer/",
-      "detailPath": "articles/877f8f9be20f0a0e191b69ea.json"
-    },
-    {
-      "id": "8c0481daaaf018cc4992edd0",
-      "title": "LaTeX 使用笔记",
-      "summary": "访问 https://www.yunyoujun.cn/posts/latex-use-note 阅读全文。",
-      "image": null,
-      "publishedAt": "2019-10-21T14:16:18Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/latex-use-note",
-      "detailPath": "articles/8c0481daaaf018cc4992edd0.json"
-    },
-    {
-      "id": "6d7372b362c6bdda893d82e0",
-      "title": "Pilotman",
-      "summary": "哭了，日常用的 cocoon 坏了 ，看到高颧骨的人就想到钢笔尖。 互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.top/note/pilotman",
-      "image": "https://emptystack.top/processed_images/Pilotman-fs8.f523ef10aa863ae6.webp",
-      "publishedAt": "2019-10-17T14:37:05Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/pilotman/",
-      "detailPath": "articles/6d7372b362c6bdda893d82e0.json"
     }
   ]
 }

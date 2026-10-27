@@ -5,10 +5,10 @@
     <link>https://koimsurai.com/blog</link>
     <description>宙と木，Koimsurai 的手記。一個寫代碼的人，偶爾造點東西。</description>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 27 Oct 2026 06:13:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 07:22:09 GMT</lastBuildDate>
     <atom:link href="https://koimsurai.com/rss" rel="self" type="application/rss+xml"/>
     <item>
-      <title>把部落格翻新成一片宇宙：572 天的累積、四天的翻新,和一顆串起每一頁的琥珀點</title>
+      <title>把部落格翻新成一片宇宙：572 天的累積、四天的翻新，和一顆串起每一頁的琥珀點</title>
       <link>https://koimsurai.com/blog/blog-redesign-dots-and-lines</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/blog-redesign-dots-and-lines</guid>
       <description>這篇是作者在網站誕生第 572 天整站翻新後寫下的心路歷程。半年前作者就覺得一頁一頁分開改的版面少了沉浸感,十月花四天定下只用點、線和一個琥珀色的基調,把每一頁畫成一個天體,收藏頁改了四次才定成從地球發出的訊號。作者最在意的是換頁轉場的銜接,讓一顆琥珀點像電影追焦一樣串起每一頁。文末也寫了還沒做好的部分,以及給想自己動手的人的技術細節。</description>
@@ -18,7 +18,7 @@
       <category>前端開發</category><category>WebGPU</category><category>效能優化</category><category>TanStack Start</category><category>UI/UX</category>
     </item>
     <item>
-      <title>把寵物餵食器攝影機接進 Frigate 和 Home Assistant：拆十個品牌的 APK 選機,逆向「美國 FurSpark」</title>
+      <title>把寵物餵食器攝影機接進 Frigate 和 Home Assistant：拆十個品牌的 APK 選機，逆向「美國 FurSpark」</title>
       <link>https://koimsurai.com/blog/reverse-engineering-furspark-pet-feeder-camera</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/reverse-engineering-furspark-pet-feeder-camera</guid>
       <description>作者想替客廳的 Frigate 補一顆餵食區的近拍鏡頭,查了十個品牌的寵物餵食器攝影機,發現沒有一台開放影像串流。文中說明怎麼在購買前下載 App 安裝檔、從裡面的影像 SDK 判斷有沒有機會接出畫面,最後選了開發商其實是深圳盯盯拍的 FurSpark Big Eye:在 TCP 6200 找到私有的 H.264 串流,用 go2rtc 接進 Frigate(附設定);用 Python daemon 把雲端 MQTT 的餵食控制橋接成 Home Assistant 的 22 個 entity;再用 qemu 跑 App 裡的 arm64 TUTK 函式庫取得即時音訊,並記錄 bionic 與 glibc 不相容的處理、音訊斷線拖垮影像、外網需要 Opus 等坑。即時對講沒有做成,改用按鈕播預錄提示音。分貓方面,近拍時有標上名字的比例從遠景的 29% 提高到 90%,但正確率還沒驗證。整套硬體 NT$3,990、沒有月費,文末與 Furbo 訂閱方案比較。為避免影響其他使用者,雲端端點、認證流程與指令格式不公開。</description>
@@ -28,7 +28,7 @@
       <category>逆向工程</category><category>Home Assistant</category><category>Frigate</category><category>IoT</category><category>go2rtc</category><category>寵物</category>
     </item>
     <item>
-      <title>用 Frigate + Home Assistant 自製 Furbo 寵物保母：本機 AI 寫貓咪日記,但分不出我的兩隻貓</title>
+      <title>用 Frigate + Home Assistant 自製 Furbo 寵物保母：本機 AI 寫貓咪日記，但分不出我的兩隻貓</title>
       <link>https://koimsurai.com/blog/frigate-home-assistant-diy-furbo</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/frigate-home-assistant-diy-furbo</guid>
       <description>作者原本差點被廣告說服買 Furbo,查完台灣官網才發現回看錄影全綁在寵物保姆訂閱裡,而且只存 AI 判斷有寵物的片段,於是改用 Frigate 加 Home Assistant 自己做:錄影回看、事件通知、每日貓咪日記和精華影片,全部跑在家裡的伺服器上。文中附上從零架設的完整步驟(Tapo RTSP、Ollama、Mosquitto、RF-DETR 模型匯出、Frigate 的 compose 與 config、Home Assistant 整合與通知),並記錄 Frigate 0.17 的調校(遮掉鏡頭時間戳讓 motion 從 97% 降到 31%、開啟 detections 的 GenAI 摘要)、三個本機視覺模型的比較,以及如何用 prompt 把幻覺從約 10% 壓到 2.5%。唯一沒做成的是分辨兩隻同花色的虎斑貓:用 Frigate 內建的自訂分類訓練後,以「同框時名字必須不同」驗證,正確率只有 38%,低於亂猜的 50%,原因是訓練圖只來自約 30 個事件、模型背下了訓練集,而客廳鏡頭距離太遠。後半說明日記頁與每日精華影片的做法(讓 LLM 依摘要替片段打分、依偵測框位置避免重複),附上實際量到的資源占用:整套約 8.7GB VRAM、客廳鏡頭一天約 10GB 錄影。</description>
@@ -38,7 +38,7 @@
       <category>Home Assistant</category><category>Frigate</category><category>Furbo</category><category>寵物監視器</category><category>Ollama</category>
     </item>
     <item>
-      <title>Home Assistant 接 Google Home 語音控制：用 Matter 免雲端,和兩個都叫「找不到裝置」的坑</title>
+      <title>Home Assistant 接 Google Home 語音控制：用 Matter 免雲端，和兩個都叫「找不到裝置」的坑</title>
       <link>https://koimsurai.com/blog/home-assistant-google-home-matter-hub</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/home-assistant-google-home-matter-hub</guid>
       <description>作者想用語音控制 Home Assistant 裡的燈,選了不走雲端的路:用 home-assistant-matter-hub 把 HA 實體包成 Matter 橋接器,由客廳的 Google TV Streamer 4K 當中樞。配對時 Google Home 兩次顯示「找不到裝置」,原因卻完全不同:第一次是橋接器使用 Matter 測試廠商碼 0xFFF1,必須先在 Google Home Developer Console 建立 VID/PID 一致的 integration;第二次是伺服器的 ufw 只有 IPv4 的區網規則,ICMPv6 被預設放行所以 ping6 正常,真正走 IPv6 的 UDP 5540 卻被丟掉,而且配對後的連線走 link-local,fe80::/10 也必須放行。文中附上每一關的確認方法與修正指令,並記錄配對後的實際使用狀況:燈要改成「燈」類型並指定房間,而且語音必須講出房間;冷氣的溫度死區設定讓整個橋接器崩潰,換到 RiDDiX 維護的 fork 後解決;冷氣只能指定絕對溫度。</description>
@@ -48,7 +48,7 @@
       <category>Home Assistant</category><category>Matter</category><category>Google Home</category><category>ufw</category><category>IPv6</category>
     </item>
     <item>
-      <title>用 NT$220 讓自發電開關接上 Home Assistant：RM4 Pro 錄不到的 433MHz 訊號,和一組完美的假碼</title>
+      <title>用 NT$220 讓自發電開關接上 Home Assistant：RM4 Pro 錄不到的 433MHz 訊號，和一組完美的假碼</title>
       <link>https://koimsurai.com/blog/kinetic-switch-cc1101-home-assistant</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/kinetic-switch-cc1101-home-assistant</guid>
       <description>作者家裡的吸頂燈是搬進來就有的,用的是一顆來路不明、沒有型號的自發電無線開關。為了讓 Home Assistant 控制它,作者先用 Broadlink RM4 Pro 試了一整個通宵:868MHz 的「學到了」是雜訊、裝置回報的 433.46MHz 是掃頻器閒置時的停駐值、自己寫的工具還少了一整個頻率欄位,最後確認 Broadlink 的射頻學習是只認特定協定的解調器,收不到這種開關。改用 NT$220 的 ESP32-C3 加 CC1101 後,真正的關鍵是 symbol_rate:設錯時錄到的假碼變異係數只有 7.3%,比真碼的 9.4% 還低,讓作者學到「一致」不等於「正確」。文末記錄三週後的後遺症:restore_mode 預設值讓每次重開都切換燈、實體開關隔牆收不到,以及 WiFi 每天斷 17 次的元兇其實是伺服器背後的 USB 孔。</description>
@@ -68,7 +68,7 @@
       <category>Trakt</category><category>scrobbler</category><category>觀影頁</category><category>瀏覽器擴充</category><category>Simkl</category>
     </item>
     <item>
-      <title>為什麼我開始使用 Zed 編輯器：從 VS Code 搬家,23 個擴充最後剩 8 個</title>
+      <title>為什麼我開始使用 Zed 編輯器：從 VS Code 搬家，23 個擴充最後剩 8 個</title>
       <link>https://koimsurai.com/blog/why-i-switched-to-zed</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/why-i-switched-to-zed</guid>
       <description>Zed 團隊的上一個作品是 Atom,而 Atom 催生的 Electron 後來成了 VS Code 的地基。這篇記錄作者從 VS Code Remote-SSH 搬到 Zed 的完整過程:本機端 4,067 MB 對 204 MB、伺服器端 7.9 GB 對 107 MB,23 個擴充搬完只剩 8 個。內容涵蓋官方的設定匯入路徑與鍵位差異、有 GUI 的設定視窗與專案層級設定的限制、遠端開發的實測,以及 ACP 怎麼把 AI agent 從編輯器裡拆出來。文末誠實列出 Zed 目前還缺的功能,以及為什麼作者認為那份清單的保鮮期很短。</description>
@@ -88,7 +88,7 @@
       <category>自架伺服器</category><category>故障排除</category><category>VS Code</category><category>rust-analyzer</category><category>Cargo</category><category>netdata</category>
     </item>
     <item>
-      <title>UPS 加 NUT 讓伺服器斷電自動關機：設定全紀錄,和一條被貓咬過的電源線</title>
+      <title>UPS 加 NUT 讓伺服器斷電自動關機：設定全紀錄，和一條被貓咬過的電源線</title>
       <link>https://koimsurai.com/blog/ups-nut-and-the-cable-the-cat-chewed</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/ups-nut-and-the-cable-the-cat-chewed</guid>
       <description>這篇把 UPS 加 NUT 的完整設定寫成一份可照做的教學:UPS 選型的三個條件(PFC 純正弦波、AVR、NUT 支援)、NUT 的 driver / upsd / upsmon 三層架構與五個設定檔各管什麼、upsmon.conf 逐行說明、POWERDOWNFLAG 為什麼不能漏,以及 BIOS 那個選錯就前功盡棄的選項——Restore after AC Power Loss 必須是 On 而不是 Last State,因為 NUT 乾淨關機後機器的狀態就是關機。另外收錄把 UPS 狀態接到 cron log、Discord 通知與自架面板的做法。而這一切的起點是搬家後伺服器每天半夜硬斷電:線鬆、共用迴路、過熱、PSU 全試過,但那些都只是猜測。作者買 UPS 一半是為了保護、一半是把它當量測儀器用,最後靠它的 log 證明問題在 UPS 下游,兇手是一條被貓咬過的電源線。</description>
@@ -98,7 +98,7 @@
       <category>Linux</category><category>自架伺服器</category><category>NUT</category><category>UPS</category><category>故障排除</category>
     </item>
     <item>
-      <title>CrowdSec 取代 fail2ban：六天擋下 1619 次掃描,和我把自己封鎖的三次</title>
+      <title>CrowdSec 取代 fail2ban：六天擋下 1619 次掃描，和我把自己封鎖的三次</title>
       <link>https://koimsurai.com/blog/crowdsec-replacing-fail2ban</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/crowdsec-replacing-fail2ban</guid>
       <description>這篇記錄了作者把伺服器防護從 fail2ban 換成 CrowdSec 的完整過程,並整理成一份可照做的教學。起因不是被入侵而是被吵:掃描器整天敲 /wp-login.php、/.env,把監控通知洗版。當時 fail2ban 已封過 614 個 IP,但作者發現對手一直在換 IP,封 IP 這條路贏不了——後來的數據也證實了這點,攻擊來源前七名幾乎全是 Azure、DigitalOcean、阿里雲這類雲端機房,開一台新 VM 比封一個 IP 便宜得多。文中給出這台機器六天內的真實數字:1619 次攻擊偵測、防火牆同時擋著 25.22k 個 IP,其中社群黑名單提供的數量是自己抓到的三千倍。架設踩到的三個坑是同一條因果鏈(apt 從 ESM 拿到上古版本 → 跨版本升級把 hub 搬家 → symlink 全斷導致解析率只剩 9%),並附上診斷用的 cscli explain 與「metrics 是累計值」這類容易誤判的細節。後半是最 relatable 的部分:作者三次把自己封在門外,其中最精彩的一次是自己設的 nginx 限流回了 429,而 CrowdSec 看到 429 就把他封了,兩個防護措施串起來咬了自己一口。最後是用 Discord bot 解封的架構——容器只能丟請求檔、主機 root watcher 才執行 cscli,而它之所以有用,是因為 bot 是主動連出去的,你的 IP 被擋不影響它收指令。</description>
@@ -108,7 +108,7 @@
       <category>資安</category><category>nginx</category><category>CrowdSec</category><category>fail2ban</category><category>Discord Bot</category><category>自架伺服器</category>
     </item>
     <item>
-      <title>跟另一個站長互相監控：Uptime Kuma 交叉託管,和 Trust Proxy 開了反而更危險</title>
+      <title>跟另一個站長互相監控：Uptime Kuma 交叉託管，和 Trust Proxy 開了反而更危險</title>
       <link>https://koimsurai.com/blog/uptime-kuma-cross-monitoring</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/uptime-kuma-cross-monitoring</guid>
       <description>這篇記錄了作者跟另一位自架站長交叉監控的完整過程,並整理成一份可照做的教學。起點是自架服務的一個尷尬處境:監控自己的那台機器,自己掛了就沒人通知得了。解法是互相盯,但一開始兩人都卡在同一個錯誤前提上——以為要走 HTTPS 就得交換憑證。真正的答案是不用交換:對方把子網域 A 紀錄指向你的 IP,TLS 就在你這裡終結,Let&#39;s Encrypt 的 HTTP-01 驗證會直接打到你的 nginx,所以你自己就能簽那張憑證、還自動續簽;共享 wildcard 反而踩中私鑰暴露與手動續簽兩個雷。文中也整理了反代 Kuma 必備的 WebSocket 設定(少了 Upgrade 標頭,即時圖表會完全不動)、給後端加公開 /health 而非用 401 取巧、用 push 型監控盯 cron 腳本這種沉默故障,以及 v1 升 v2 的資料庫遷移該當作不可逆來處理。最後是全篇最值得記的一個坑:Trust Proxy 這個看起來明顯該開的選項,在 nginx 用 $proxy_add_x_forwarded_for「附加」而非「覆寫」的架構下,開了之後任何人都能偽造 IP(作者實測偽造成功),而真正的風險不是登入爆破(2FA 已擋),是 CrowdSec 會因此去封 Cloudflare 的整段網段。</description>
@@ -118,7 +118,7 @@
       <category>資安</category><category>Let&#39;s Encrypt</category><category>自架</category><category>Uptime Kuma</category><category>監控</category><category>nginx</category>
     </item>
     <item>
-      <title>幫朋友架一台幻獸帕魯專用伺服器：Docker 自架,和最容易卡關的 UDP 連線</title>
+      <title>幫朋友架一台幻獸帕魯專用伺服器：Docker 自架，和最容易卡關的 UDP 連線</title>
       <link>https://koimsurai.com/blog/palworld-dedicated-server-docker</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/palworld-dedicated-server-docker</guid>
       <description>這篇記錄了作者幫朋友用 Docker 在自己 24/7 的家用機上架設幻獸帕魯(Palworld)專用伺服器的完整過程,整理成一份能照做的教學。緣起是朋友原本用 Radmin VPN 連線,但那類 P2P 服務穿不過 NAT 就會退回中繼、流量繞經第三方,作者索性用自己的常開主機自架。文章先破除一個迷思:主機商規格頁清一色寫「16GB 起」,但小團隊日常很省,作者實測 3~5 人約 1.2GB;真正要防的是 Palworld 知名的記憶體洩漏,靠容器 mem_limit + 每日重啟壓住即可。接著給出一份去蕪存菁的 docker-compose(port 記得加 /udp、RCON 綁 127.0.0.1),把架好之後最卡人的 UDP 連線三關逐一走通:ufw 放行 udp、路由器 port forwarding(必須 UDP)、DDNS,並拆穿兩個高頻誤區——Cloudflare 一定要用灰雲(橘雲代理不轉 UDP,開了必連不上)、UDP 遊戲封包根本不經過 nginx。後半談世界設定的坑(改 ini 會被環境變數重新生成蓋掉)、朋友「版本不符」進不去怎麼修(比對 buildid、重啟觸發 SteamCMD 更新、更新前先 RCON 廣播存檔),以及別讓 18GB 遊戲本體天天進備份碟。結尾附一份自架檢查清單。</description>
@@ -138,7 +138,7 @@
       <category>Docker</category><category>資安</category><category>Linux</category><category>伺服器</category><category>事件響應</category>
     </item>
     <item>
-      <title>暫借半年的呼嚕聲: 一隻不屬於我的貓,和牠留在被窩裡的味道</title>
+      <title>暫借半年的呼嚕聲: 一隻不屬於我的貓，和牠留在被窩裡的味道</title>
       <link>https://koimsurai.com/blog/milk-the-cat</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/milk-the-cat</guid>
       <description>這篇記錄了作者高三那年與一隻名叫牛奶的賓士貓相處的半年。牠是同學在大雨的夜裡從路邊撿到的,家裡不允許收留,於是託給了從小就想養貓的作者,說好三個月,最後住了半年。文章從家裡的態度寫起:媽媽也愛貓卻始終不養,外婆則說自己討厭貓、理由多得可疑——但作者後來才拼湊出,外婆討厭的其實不是貓,而是「經歷離開」這件事,二十年前那隻叫小黃的家犬是車禍走的。那半年正好是作者最不安的時期:身體不好、對人際敏感、對未來迷茫,又碰上 COVID 把所有人關在家裡。而牛奶第一天就把那裡當自己家,一叫名字就會出現,身上帶著貓草的香味;某個下午作者被另一位同學的電話罵到哭,牠走過來舔了兩下手,就在旁邊靜靜待了半個小時。半年後貓被裝進當初帶牠來的那個小包包接走,門關上的瞬間四周安靜下來,作者沒有哭也沒有笑,只有感慨——因為打從第一天他就知道牠會離開,所以並不覺得失去。全文收在一個翻轉的視角:表面上是他們幫了那隻貓,但作者認為是那隻貓救贖了他們。文末附上牠離開前最後一天在窗台曬太陽的影片。本文參加 ikuka 主持的第 8 期「一期一會」部落格串聯活動。</description>
@@ -148,7 +148,7 @@
       <category>一期一會</category><category>貓</category><category>回憶</category><category>部落格串聯</category>
     </item>
     <item>
-      <title>部落格文章渲染策略: 從 CSR 空殼、SSG／ISR,到會 eval 的 MDX 與首幀不再閃</title>
+      <title>部落格文章渲染策略: 從 CSR 空殼、SSG／ISR，到會 eval 的 MDX 與首幀不再閃</title>
       <link>https://koimsurai.com/blog/blog-post-rendering-strategy</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/blog-post-rendering-strategy</guid>
       <description>這篇記錄了作者把 koimsurai.com 的部落格,從一個 100% CSR 的 React SPA(真人只拿到空殼、爬蟲靠 user-agent 硬塞 meta)一路改造成 SSG／ISR 的完整渲染策略與踩坑。從選型談起——為什麼是 SSG hybrid、為什麼評估過 Next 卻選了 TanStack Start(RR7 差點雀屏中選,被一句「我想要 ISR」翻盤);接著是實作:內文烤進 HTML、重互動留 client、MDX 走 server 編譯加 client eval(一條之後想改成 dynamic-import ESM 來拿掉的路);再到 prerender 生了 111 個檔卻一個都沒被送出、於是改走純 ISR,用 Rust middleware 做發文即刷新(還差點被瀏覽計數端點清光全站快取);最後是進場體驗的除錯長征:無樣式閃爍、雙渲染、被捲動平滑握住的捲動,以及一個被自己按住重想才翻出的錯誤診斷。全篇也一併科普了 SSR、SSG、CSR、ISR、hydration 各是什麼。</description>
@@ -168,7 +168,7 @@
       <category>WebGPU</category><category>Three.js</category><category>TSL</category><category>效能優化</category><category>OffscreenCanvas</category>
     </item>
     <item>
-      <title>幫巴哈動畫瘋寫一個沒人寫過的 SDK: 逆向 API、自我掏空的 cookie,與讀不到的 HttpOnly</title>
+      <title>幫巴哈動畫瘋寫一個沒人寫過的 SDK: 逆向 API、自我掏空的 cookie，與讀不到的 HttpOnly</title>
       <link>https://koimsurai.com/blog/writing-the-anigamer-sdk-nobody-made</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/writing-the-anigamer-sdk-nobody-made</guid>
       <description>為了讓部落格那頁「在看什麼」能顯示我真實的動畫瘋觀看紀錄,我一路從逆向巴哈的 history API,做成一個開源的 npm SDK `anigamer`。這篇記錄整條坑:七顆 cookie 裡哪顆才是關鍵、封面藏在 og:image 的隨機 hash、每部動畫只顯示一集的 nested history bug,以及最精彩的——巴哈用「HTTP 200 藏 401」的軟錯誤加上一顆 `BAHARUNE=deleted` 的假 cookie,把我自己的 rotate 邏輯騙到把帳號掏空、靜默死了三天。後半是為了熱換 cookie 做的一鍵瀏覽器擴充,如何跟讀不到的 HttpOnly cookie 纏鬥、最後用 CDP 偵錯介面破關,再到發上 npm 的 2FA 大冒險與後端遷 Rust 後的 crates.io 版。</description>
@@ -188,7 +188,7 @@
       <category>動畫瘋</category><category>Trakt</category><category>TMDb</category><category>scrobbler</category><category>觀影頁</category>
     </item>
     <item>
-      <title>把 NLLB 翻譯接進 Rust,在 Windows 上撞穿整條工具鏈：ct2rs × CTranslate2 的 protobuf 撞名、CRT 之爭、關閉死鎖與 NVIDIA 崩潰</title>
+      <title>把 NLLB 翻譯接進 Rust，在 Windows 上撞穿整條工具鏈：ct2rs × CTranslate2 的 protobuf 撞名、CRT 之爭、關閉死鎖與 NVIDIA 崩潰</title>
       <link>https://koimsurai.com/blog/wiring-nllb-translation-into-rust-and-breaking-through</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/wiring-nllb-translation-into-rust-and-breaking-through</guid>
       <description>這篇文章記錄了作者把一個離線 NLLB 翻譯功能從 Python 搬進 Rust、透過 ct2rs 接 CTranslate2 時,在 Windows/MSVC 上接連撞到的三面牆與各自的根因與修法。第一面是「連不起來」:sentencepiece 與 sherpa-onnx 各自靜態內嵌一份 protobuf,在 MSVC 下撞出 204 個 LNK2005——最乾淨的解不是 /FORCE:MULTIPLE 或 sidecar,而是直接關掉 sentencepiece feature、改用純 Rust 的 tokenizers,讓那份 protobuf 從依賴圖消失。第二面是 CRT 之爭:ct2rs 把 CTranslate2 編成 /MT、Rust std 卻是 /MD,靠 .cargo/config.toml 的 +crt-static 統一,並釐清這其實是與預編 /MT 的 sherpa 對齊的唯一正確解,不是有風險的回歸。第三面是一個躺了兩年的關閉死鎖——thread_local 的 ruy::Context 在 Windows loader lock 底下、於執行緒結束時去 join Ruy 執行緒池而卡死,最終把銷毀提前到 finalize() 手動進行,一次解掉死鎖與洩漏(RSS 從 4371 壓回 19 MB,CUDA 的 VRAM 洩漏同樣被堵住)。最後還意外抓到一個 NVIDIA 驅動 bug:CUDA 版在沒有可用 GPU 的機器上翻譯後隨機崩潰,根因是 nvdxgdmal64.dll 卸載後遺留的 thread-pool callback 打到已卸載位址,以 12 行純 C 重現證實是驅動問題,並用 PIN 住 DLL 的手法擋下。全篇也反思了驗證假設、以及誠實收回一個查證不足的「已知 bug」宣稱。</description>
@@ -198,7 +198,7 @@
       <category>CTranslate2</category><category>Rust</category><category>Windows</category><category>死鎖</category><category>ct2rs</category><category>NVIDIA</category>
     </item>
     <item>
-      <title>替散落的資料庫,開一扇上了鎖的窗：Outerbase × Mongoku × Authelia,自架 2FA 唯讀資料庫後台</title>
+      <title>替散落的資料庫，開一扇上了鎖的窗：Outerbase × Mongoku × Authelia，自架 2FA 唯讀資料庫後台</title>
       <link>https://koimsurai.com/blog/a-locked-window-for-my-scattered-databases</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/a-locked-window-for-my-scattered-databases</guid>
       <description>這篇文章記錄了作者如何把散落在 homelab 各處的資料庫——六個分屬部落格、n8n、Uptime Kuma、3x-ui、Jarvis、NAS 的 SQLite,外加一個 MongoDB——整合成一個從任何地方都能存取、且擋著 2FA 的網頁後台。文章先從選型講起:為什麼不為了換而換上 Postgres、如何在 sqlite-web、Adminer、Beekeeper、CloudBeaver 之間繞了一圈才落在 Outerbase Studio,以及對外閘門為何捨 Cloudflare Tunnel 而自架 Authelia。接著逐一拆解建置時的坑:官方 Docker image 讀不了本地檔(只有 npm CLI 能)、ATTACH 看得到資料卻看不到表、WAL 模式無法唯讀掛載(最後靠「主檔唯讀、目錄可寫」兩行解決)、libSQL 與標準 SQLite 併發寫入的實測、容器連不到 host 上的 mongod、以及 Service Worker 把資料庫子網域劫持成部落格的鬼打牆。最後用 Authelia 的 forward-auth 把整批服務罩在同一道 2FA 之後,並反思這些坑沒一個真的難——難的是太早把「容器起來了、回 200」當成「做完了」。</description>
@@ -208,7 +208,7 @@
       <category>SQLite</category><category>2FA</category><category>Authelia</category><category>MongoDB</category><category>Outerbase</category>
     </item>
     <item>
-      <title>想做一個 tool-calling 修復 proxy,結果 benchmark 親手殺死了這個點子</title>
+      <title>想做一個 tool-calling 修復 proxy，結果 benchmark 親手殺死了這個點子</title>
       <link>https://koimsurai.com/blog/i-wanted-to-build-a-tool-calling-repair</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/i-wanted-to-build-a-tool-calling-repair</guid>
       <description>這篇文章記錄了作者在嘗試開發一個「tool-calling 修復 proxy」的過程中，如何透過設計一個 benchmark 測試 22 個地端模型的 tool-calling 能力，最終放棄這個創業點子的經歷。測試結果顯示，新一代模型（如 Qwen3.5）已經原生解決了 tool-calling 的問題，修復層對這些模型反而成為干擾，且模型世代的快速進化使得這類修復工具的市場需求迅速萎縮。文章提供了詳細的測試方法、結果分析以及對各模型的具體觀察，並總結出地端模型選擇的實用建議。最後，作者強調了驗證假設的重要性，認為早期的測試能有效避免浪費時間和資源。</description>
@@ -268,7 +268,7 @@
       <category>ヨルシカ</category><category>情感療癒</category><category>日文歌</category><category>音樂解析</category><category>老人與海</category>
     </item>
     <item>
-      <title>打造一個會自己管理圖片的 Markdown 編輯器: 從 Monaco Editor、背景上傳,到 NAS 圖庫與圖片牆</title>
+      <title>打造一個會自己管理圖片的 Markdown 編輯器: 從 Monaco Editor、背景上傳，到 NAS 圖庫與圖片牆</title>
       <link>https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own</link>
       <guid isPermaLink="true">https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own</guid>
       <description>從「Monaco 只能放連結、不能直接放圖」這個小需求出發,一路牽出圖片處理的整條坑:Base64 為何會讓編輯器卡頓又撐爆資料庫、貼上就自動上傳到 NAS 的設計,以及最容易忽略的一顆地雷——Docker bind mount 其實是一道「傳送門」,只要 HDD 沒掛載成功,檔案就會靜默寫回系統碟。文章也記錄了把靜態圖片牆重寫成 NAS 動態 API 的規劃,以及照片牆改版時「UI 先行、資料後補」的取捨。</description>

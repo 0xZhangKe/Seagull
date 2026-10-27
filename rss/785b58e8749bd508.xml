@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Mon, 26 Oct 2026 11:04:03 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 27 Oct 2026 11:01:32 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,30 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>Hiding Capabilities in AI Models</title>
+		<link>https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html#comments</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Tue, 27 Oct 2026 11:01:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[academic papers]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[encryption]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72849</guid>
+
+					<description><![CDATA[<p>Interesting research: &#8220;<a href="https://arxiv.org/abs/2610.13928">AI Models Can Provably Hide Arbitrary Capabilities</a>&#8221;</p>
+<blockquote><p><b>Abstract:</b> Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger. Using digital lockers, these hidden circuits remain provably hard to elicit and interpret under cryptographic assumptions, even given full access to model weights, extending prior work from hiding fixed strings to arbitrary computations. We implement our proof of concept constructions in PyTorch and evaluate elicitation through fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training, using a small chemical reaction prediction task as a proxy for CBRN-relevant capabilities. Our results demonstrate resistance to these methods and, together with our cryptographic guarantees, reveal a limit of elicitation-based capability audits. We release our models to support the improvement of defenses...</p></blockquote>]]></description>
+										<content:encoded><![CDATA[<p>Interesting research: &#8220;<a href="https://arxiv.org/abs/2610.13928">AI Models Can Provably Hide Arbitrary Capabilities</a>&#8221;</p>
+<blockquote><p><b>Abstract:</b> Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger. Using digital lockers, these hidden circuits remain provably hard to elicit and interpret under cryptographic assumptions, even given full access to model weights, extending prior work from hiding fixed strings to arbitrary computations. We implement our proof of concept constructions in PyTorch and evaluate elicitation through fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training, using a small chemical reaction prediction task as a proxy for CBRN-relevant capabilities. Our results demonstrate resistance to these methods and, together with our cryptographic guarantees, reveal a limit of elicitation-based capability audits. We release our models to support the improvement of defenses.</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72849</post-id>	</item>
+		<item>
 		<title>Bias in Qwen3-Coder Model</title>
 		<link>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html#comments</comments>
@@ -82,7 +106,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html/feed/</wfw:commentRss>
-			<slash:comments>23</slash:comments>
+			<slash:comments>25</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72718</post-id>	</item>
@@ -114,7 +138,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html/feed/</wfw:commentRss>
-			<slash:comments>24</slash:comments>
+			<slash:comments>23</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72835</post-id>	</item>
@@ -292,31 +316,5 @@
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72789</post-id>	</item>
-		<item>
-		<title>Measuring Human Cryptanalysis Effort</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Thu, 15 Oct 2026 16:24:29 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[academic papers]]></category>
-		<category><![CDATA[algorithms]]></category>
-		<category><![CDATA[cost-benefit analysis]]></category>
-		<category><![CDATA[cryptanalysis]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72786</guid>
-
-					<description><![CDATA[<p>Matthew Green has a <a href="https://bitsofwork.org/">new site</a> that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms:</p>
-<blockquote><p><b>Abstract:</b> We estimate how much public cryptanalysis each public-key assumption has received, using the literature itself as the instrument. From roughly sixteen thousand candidate papers we classify cryptanalytic work on ECDLP, structured and plain lattices, syndrome decoding and their comparators, then convert papers into estimated research-allocation years through a person-level author map. These publication-based estimates may substantially overstate actual time spent. Lattices have overtaken elliptic curves in this cumulative measure only recently; we express that history as inference budgets under stated productivity assumptions. The study was conducted by AI models: Claude Fable 5.1 and Claude Opus 5.5 built the pipeline, ran the analysis and wrote this page, with contributions from GPT-6 Astra. Matthew Green set the questions, made the key methodological decisions and oversaw the work...</p></blockquote>]]></description>
-										<content:encoded><![CDATA[<p>Matthew Green has a <a href="https://bitsofwork.org/">new site</a> that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms:</p>
-<blockquote><p><b>Abstract:</b> We estimate how much public cryptanalysis each public-key assumption has received, using the literature itself as the instrument. From roughly sixteen thousand candidate papers we classify cryptanalytic work on ECDLP, structured and plain lattices, syndrome decoding and their comparators, then convert papers into estimated research-allocation years through a person-level author map. These publication-based estimates may substantially overstate actual time spent. Lattices have overtaken elliptic curves in this cumulative measure only recently; we express that history as inference budgets under stated productivity assumptions. The study was conducted by AI models: Claude Fable 5.1 and Claude Opus 5.5 built the pipeline, ran the analysis and wrote this page, with contributions from GPT-6 Astra. Matthew Green set the questions, made the key methodological decisions and oversaw the work.</p></blockquote>
-<p>There are a lot of caveats to this analysis. It relies on published work, so anything unpublished does not count. This includes both academic cryptanalysis that didn&#8217;t result in a paper, and intelligence agency cryptanalysis done in secret. But it&#8217;s a good first stab at a metric of this sort.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72786</post-id>	</item>
 	</channel>
 </rss>

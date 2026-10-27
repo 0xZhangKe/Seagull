@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-26T23:53:07+00:00</updated><author><name>Simon Willison</name></author><entry><title>GPT-6.1 Terra</title><link href="https://simonwillison.net/2026/Oct/26/gpt-61-terra/" rel="alternate"/><published>2026-10-26T23:53:07+00:00</published><updated>2026-10-26T23:53:07+00:00</updated><id>https://simonwillison.net/2026/Oct/26/gpt-61-terra/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-27T19:34:18+00:00</updated><author><name>Simon Willison</name></author><entry><title>Game Boy Color on My Conference Badge</title><link href="https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/" rel="alternate"/><published>2026-10-27T19:34:18+00:00</published><updated>2026-10-27T19:34:18+00:00</updated><id>https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://spf13.com/p/game-boy-color-on-my-conference-badge/"&gt;Game Boy Color on My Conference Badge&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+I'm at GitHub Universe this week and, &lt;a href="https://simonwillison.net/2025/Oct/28/github-universe-badge/"&gt;similar to last year&lt;/a&gt;, the conference badge is a full-blown color screen computer.&lt;/p&gt;
+&lt;p&gt;I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gemini to get a &lt;a href="https://spf13.com/p/zelda-on-my-conference-badge/"&gt;full NES emulator&lt;/a&gt; working on it, and then went a step further and deployed an emulator for both the Game Boy and the Game Boy Color.&lt;/p&gt;
+&lt;p&gt;Which means, if you can obtain the ROM, you can run &lt;a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Link%27s_Awakening"&gt;The Legend of Zelda: Link's Awakening&lt;/a&gt; on your conference badge!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Photo of the badge running Zelda, in full color, with visible touch buttons below the screen." src="https://static.simonwillison.net/static/2026-10-27/IMG_9339.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;A neat feature of the badge is that you can turn it upside down and then use game controller touch buttons that are built into the badge body.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/games"&gt;games&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/github"&gt;github&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/hardware-hacking"&gt;hardware-hacking&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/steve-francia"&gt;steve-francia&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="games"/><category term="github"/><category term="hardware-hacking"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="gemini"/><category term="steve-francia"/></entry><entry><title>GPT-6.1 Terra</title><link href="https://simonwillison.net/2026/Oct/26/gpt-61-terra/" rel="alternate"/><published>2026-10-26T23:53:07+00:00</published><updated>2026-10-26T23:53:07+00:00</updated><id>https://simonwillison.net/2026/Oct/26/gpt-61-terra/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-6-1-terra/"&gt;GPT-6.1 Terra&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 It's always interesting to note which aspects of a new model are emphasized in the release announcement.&lt;/p&gt;
@@ -775,13 +789,4 @@ Interesting piece from Anthropic describing why and how they built their own cus
 
 
 
-</summary><category term="coding-agents"/><category term="generative-ai"/><category term="git"/><category term="agentic-engineering"/><category term="ai"/><category term="geoffrey-huntley"/><category term="llms"/></entry><entry><title>web-edit 0.1a1</title><link href="https://simonwillison.net/2026/Oct/13/web-edit/" rel="alternate"/><published>2026-10-13T01:40:05+00:00</published><updated>2026-10-13T01:40:05+00:00</updated><id>https://simonwillison.net/2026/Oct/13/web-edit/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/web-edit/releases/tag/0.1a1"&gt;web-edit 0.1a1&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;Includes &lt;a href="https://github.com/simonw/web-edit/pull/1"&gt;performance optimizations&lt;/a&gt; written &lt;a href="https://claude.ai/code/session_01LE2R4P74P9GGUbE6yQ5YBt"&gt;by Claude Opus 5.5&lt;/a&gt; after I fed it &lt;a href="https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/"&gt;this Python 3.15 profiling report&lt;/a&gt; generated by GPT-6 Astra.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/profiling"&gt;profiling&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="profiling"/><category term="projects"/></entry></feed>
+</summary><category term="coding-agents"/><category term="generative-ai"/><category term="git"/><category term="agentic-engineering"/><category term="ai"/><category term="geoffrey-huntley"/><category term="llms"/></entry></feed>

@@ -1,30 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
   <id>https://noa.bearblog.dev</id>
   <title>Noa's Blog</title>
-  <updated>2026-10-27T06:16:01.359936+00:00</updated>
+  <subtitle>嗨嗨我是 Noa！\ （突然發現很喜歡看到部落格首頁有熱情的招呼語……）\ 這裡用來記錄腦中飛來飛去的想法。\ 努力周更。 這個是我的 RSS feed。\ 認真的文章整理在筆記。</subtitle>
+  <updated>2026-10-24T08:23:31.028587+00:00</updated>
   <author>
     <name>noa</name>
   </author>
-  <link href="https://noa.bearblog.dev/" rel="alternate"/>
-  <link href="https://noa.bearblog.dev/feed/" rel="self"/>
-  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <subtitle>嗨嗨我是 Noa！\&#13;
-（突然發現很喜歡看到部落格首頁有熱情的招呼語……）\&#13;
-這裡用來記錄腦中飛來飛去的想法。\&#13;
-努力周更。&#13;
-&#13;
-這個是我的 RSS feed。\&#13;
-認真的文章整理在筆記。...</subtitle>
+  <link href="https://noa.bearblog.dev/" rel="alternate" type="text/html"/>
+  <link href="https://noa.bearblog.dev/feed/" rel="self" type="application/atom+xml"/>
+  <generator uri="https://bearblog.dev">Bear Blog</generator>
   <entry>
     <id>https://noa.bearblog.dev/python-note-b266/</id>
     <title>寫一題 python</title>
-    <updated>2026-10-24T08:23:31.028576+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;在 zerojudge 上寫&lt;a href='https://zerojudge.tw/ShowProblem?problemid=b266'&gt;題目&lt;/a&gt;，手敲好快樂（我想手寫程式快變成類似針織的興趣了）。並發現 zerojudge 社群好活躍，隨時都有人在送出答案（包含凌晨三點）。&lt;/p&gt;
+    <link href="https://noa.bearblog.dev/python-note-b266/" rel="alternate" type="text/html"/>
+    <published>2026-10-24T08:23:31.028587+00:00</published>
+    <updated>2026-10-24T08:23:31.028587+00:00</updated>
+    <content type="html" xml:base="https://noa.bearblog.dev/python-note-b266/">&lt;p&gt;在 zerojudge 上寫&lt;a href='https://zerojudge.tw/ShowProblem?problemid=b266'&gt;題目&lt;/a&gt;，手敲好快樂（我想手寫程式快變成類似針織的興趣了）。並發現 zerojudge 社群好活躍，隨時都有人在送出答案（包含凌晨三點）。&lt;/p&gt;
 &lt;h2 id=&gt;學到什麼&lt;/h2&gt;&lt;p&gt;一、執行比較快的架構：先推邏輯，最後一次改矩陣（題目要求一秒但是十二毫秒就跑完了，非常自豪……）。&lt;/p&gt;
 &lt;p&gt;二、更改布林值的語法：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;x = False
@@ -103,18 +95,14 @@ for i in range(len(B)):
     print(*B[i])
 &lt;/pre&gt;&lt;/div&gt;
 </content>
-    <link href="https://noa.bearblog.dev/python-note-b266/"/>
-    <published>2026-10-24T08:23:31.028587+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/u-r-boring/</id>
     <title>你很無聊ㄟ</title>
-    <updated>2026-10-16T06:53:44.168613+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;blockquote&gt;
+    <link href="https://noa.bearblog.dev/u-r-boring/" rel="alternate" type="text/html"/>
+    <published>2026-10-16T06:53:44.168618+00:00</published>
+    <updated>2026-10-16T06:53:44.168618+00:00</updated>
+    <content type="html" xml:base="https://noa.bearblog.dev/u-r-boring/">&lt;blockquote&gt;
 &lt;p&gt;子路宿於石門。晨門曰：「奚自？」子路曰：「自孔氏。」曰：「是&lt;a href='https://dict.revised.moe.edu.tw/dictView.jsp?ID=113209&amp;la=0&amp;powerMode=0'&gt;&lt;strong&gt;知其不可而微之&lt;/strong&gt;&lt;/a&gt;者與？」&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src="https://noachen522.github.io/noasblog/u-r-boring_1.jpg" alt="" /&gt;&lt;/p&gt;
@@ -130,31 +118,23 @@ for i in range(len(B)):
 &lt;img src="https://noachen522.github.io/noasblog/u-r-boring_3-2.jpg" alt="" /&gt;&lt;br /&gt;
 不准評論&lt;a href='https://noa.bearblog.dev/consort-hua-is-cuuute/'&gt;我家華妃&lt;/a&gt; (`へ´≠)&lt;/p&gt;
 </content>
-    <link href="https://noa.bearblog.dev/u-r-boring/"/>
-    <published>2026-10-16T06:53:44.168618+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/a-little-bit-of-spine/</id>
     <title>一點點骨氣</title>
-    <updated>2026-10-12T04:43:22.267387+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;趕公車時，堅持不跑起來。&lt;/p&gt;
-</content>
-    <link href="https://noa.bearblog.dev/a-little-bit-of-spine/"/>
+    <link href="https://noa.bearblog.dev/a-little-bit-of-spine/" rel="alternate" type="text/html"/>
     <published>2026-10-12T04:43:22.267393+00:00</published>
+    <updated>2026-10-12T04:43:22.267393+00:00</updated>
+    <content type="html" xml:base="https://noa.bearblog.dev/a-little-bit-of-spine/">&lt;p&gt;趕公車時，堅持不跑起來。&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/drunk-in-the-shade-of-flowers/</id>
     <title>我看李清照醉花陰</title>
-    <updated>2026-10-10T08:16:07.546645+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;h2 id=&gt;前言&lt;/h2&gt;&lt;p&gt;在家裡挖到薄薄的筆記本，牛皮紙封面，中間有直書的「語文」二字。翻開立刻領悟，這大概是小時候我媽心血來潮要教我國文，但只一天就遺忘的痕跡。第一頁抄王維的鳥鳴澗：&lt;/p&gt;
+    <link href="https://noa.bearblog.dev/drunk-in-the-shade-of-flowers/" rel="alternate" type="text/html"/>
+    <published>2026-10-10T08:16:07.546653+00:00</published>
+    <updated>2026-10-10T08:16:07.546653+00:00</updated>
+    <content type="html" xml:base="https://noa.bearblog.dev/drunk-in-the-shade-of-flowers/">&lt;h2 id=&gt;前言&lt;/h2&gt;&lt;p&gt;在家裡挖到薄薄的筆記本，牛皮紙封面，中間有直書的「語文」二字。翻開立刻領悟，這大概是小時候我媽心血來潮要教我國文，但只一天就遺忘的痕跡。第一頁抄王維的鳥鳴澗：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;鳥鳴澗 王維&lt;br /&gt;
 人閒桂花落，夜靜春山空。&lt;br /&gt;
@@ -190,18 +170,14 @@ for i in range(len(B)):
 ⬆️百無聊賴的蝦。&lt;/p&gt;
 &lt;p&gt;為了拍照把盤子拿下來了，可惡我的40塊！&lt;/p&gt;
 </content>
-    <link href="https://noa.bearblog.dev/drunk-in-the-shade-of-flowers/"/>
-    <published>2026-10-10T08:16:07.546653+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/flag/</id>
     <title>一周年與亂立 flag</title>
+    <link href="https://noa.bearblog.dev/flag/" rel="alternate" type="text/html"/>
+    <published>2026-10-04T08:07:00+00:00</published>
     <updated>2026-10-04T08:33:20.307473+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;去年今天我發了本部落格的第一篇文章，然後一年稀哩呼嚕的似乎沒什麼感覺呢（時間線上所有正在痛苦寫文章的 Noa：我不同意）。&lt;/p&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/flag/">&lt;p&gt;去年今天我發了本部落格的第一篇文章，然後一年稀哩呼嚕的似乎沒什麼感覺呢（時間線上所有正在痛苦寫文章的 Noa：我不同意）。&lt;/p&gt;
 &lt;p&gt;一開始說這裡是垃圾屋，而非個人作品集或者面向陌生人經營的社群媒體，希望能隨興而比較長久的寫文章（沒沒沒，我在想周更了一年或許也可以開始休耕）。因此有的大費周章堆疊打磨，有的只是隨手撇棄，寫完那一刻喜歡或不喜歡。但貴與賤的人造物都終漂泊廢棄，這屋子一概容納。&lt;/p&gt;
 &lt;p&gt;我和垃圾有點交情。國小午休不睡覺跑到後走廊整理資源回收，太吵了被老師唸。高中一直當環保股長，有時到回收場幫忙。有些幹部是責任大於工作內容的，比如衛生負責監督打掃，班長負責發布訊息。我不喜歡，單純因為自己逃避責任，但還是挑個幹部來當顯得有參與班級事務，還有就是整理垃圾很療癒。這和整理房間不一樣，垃圾打點好便可送走，房間裡大小日用品還要相處很久，很煩，不喜歡整理房間。&lt;/p&gt;
 &lt;p&gt;暑假時我開始嘗試幫一篇文章畫一個垃圾，小小像素畫分類丟在幾個頁面，本來想剛好當作一周年回顧但是，啊對還沒畫完。但我覺得很可愛（自己逛得很開心……），而且已經花很多時間，沉沒成本，因此相信自己有朝一日會完成的！（？）一邊整理一邊閱讀，盡量抱著打點垃圾的心情，否則很想只公開半年內的文章。好了再通知大家，應該吧，這篇文章標題原來是〈一周年與首頁更新〉。&lt;/p&gt;
@@ -210,32 +186,24 @@ for i in range(len(B)):
 &lt;hr /&gt;
 &lt;p&gt;延伸閱讀：&lt;a href='https://www.fountain.org.tw/magazine/202411-magazine'&gt;新活水雜誌，有垃圾的人&lt;/a&gt;（偷塞個麗群老師的編輯室報告）。&lt;/p&gt;
 </content>
-    <link href="https://noa.bearblog.dev/flag/"/>
-    <published>2026-10-04T08:07:00+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/cheese-and-meat-floss/</id>
     <title>起司與肉鬆</title>
+    <link href="https://noa.bearblog.dev/cheese-and-meat-floss/" rel="alternate" type="text/html"/>
+    <published>2026-09-27T04:42:00+00:00</published>
     <updated>2026-09-27T04:44:38.177032+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;加購起司的選項總是誘惑（蛋餅／蔥抓餅／鍋燒意麵／火鍋／焗烤……），但我不喜歡起司當主角。&lt;/p&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/cheese-and-meat-floss/">&lt;p&gt;加購起司的選項總是誘惑（蛋餅／蔥抓餅／鍋燒意麵／火鍋／焗烤……），但我不喜歡起司當主角。&lt;/p&gt;
 &lt;p&gt;肉鬆放哪都害人掉價（個人想法啦個人想法），單吃卻無敵美味。&lt;/p&gt;
 </content>
-    <link href="https://noa.bearblog.dev/cheese-and-meat-floss/"/>
-    <published>2026-09-27T04:42:00+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/ideal-day-schedule/</id>
     <title>理想一日課表</title>
+    <link href="https://noa.bearblog.dev/ideal-day-schedule/" rel="alternate" type="text/html"/>
+    <published>2026-09-26T03:58:00+00:00</published>
     <updated>2026-09-26T04:08:19.553982+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;1 化學&lt;br /&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/ideal-day-schedule/">&lt;p&gt;1 化學&lt;br /&gt;
 2 化學&lt;br /&gt;
 3 物理&lt;br /&gt;
 4 班會&lt;br /&gt;
@@ -257,18 +225,14 @@ for i in range(len(B)):
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://noa.bearblog.dev/ideal-day-schedule/"/>
-    <published>2026-09-26T03:58:00+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/consort-hua-is-cuuute/</id>
     <title>華妃娘娘鳳儀萬千</title>
+    <link href="https://noa.bearblog.dev/consort-hua-is-cuuute/" rel="alternate" type="text/html"/>
+    <published>2026-09-19T15:50:00+00:00</published>
     <updated>2026-09-19T16:18:45.326300+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;前幾天發現啾啾鞋的《直男看甄嬛》完結了，啾妃小口小口兩年多才啃完全劇，此等功力甄氏羨慕。卻不知道我已經為虛構故事們熬夜多少回，總提著一口氣似地追情節，害得自己最後頭昏腦脹。而這次也立刻完食了《直男看甄嬛》。&lt;/p&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/consort-hua-is-cuuute/">&lt;p&gt;前幾天發現啾啾鞋的《直男看甄嬛》完結了，啾妃小口小口兩年多才啃完全劇，此等功力甄氏羨慕。卻不知道我已經為虛構故事們熬夜多少回，總提著一口氣似地追情節，害得自己最後頭昏腦脹。而這次也立刻完食了《直男看甄嬛》。&lt;/p&gt;
 &lt;p&gt;很快喜歡上華妃！每套睡衣看起來都舒適又漂亮，撒嬌超好看；向皇后請安一定要晚到，（全場行禮），（走路扭扭腰擺擺手），「起來罷起來罷」，（敷衍請安），（邊坐下邊睥睨全場再摸摸頭飾順便翻個小白眼），那個傲嬌的嘟嘟臉好萌我捏；脫簪待罪更是美爆，要是我我一定唉呦沒事啦不要哭哭，抱抱泥摸摸頭趕快起來（俗話說，三觀跟著五官走）。&lt;/p&gt;
 &lt;p&gt;華妃娘娘讀到前段的反應：&lt;br /&gt;
 &lt;img src="https://noachen522.github.io/noasblog/Consort-Hua.jpg" alt="" /&gt;&lt;br /&gt;
@@ -279,18 +243,14 @@ for i in range(len(B)):
 &lt;p&gt;我看故事大多有特定喜歡的角色。例如 mygo 裡是立希，柯南是佐藤警官；單人露營的志摩凜，小木屋獨居的烏露絲拉；罵人很兇的方科長，瀟灑率性的周凡；還有雖然這樣像在表達同性戀源於創傷但我沒這意思不過還是很期待看他跟女生在一起的赤練仙子李莫愁。如果能和這些人物見面……還是不要好了，場面過於混亂（我預測的決勝局：冰魄銀針 vs. 佐藤的子彈）。&lt;/p&gt;
 &lt;p&gt;順便推推《直男看甄嬛》的表姊妹（？）系列文章&lt;a href='https://alicehsu.blog/zh-tw/posts/2026/05/read-dream-of-the-red-chamber-1-to-20-chapters/'&gt;《阿姨看紅樓》&lt;/a&gt;，雖然我沒讀過紅樓，但按照這樣的帥姐姐偏好推斷，大概會喜歡上鳳姐？&lt;/p&gt;
 </content>
-    <link href="https://noa.bearblog.dev/consort-hua-is-cuuute/"/>
-    <published>2026-09-19T15:50:00+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/old-diary-2/</id>
     <title>舊日記之二</title>
+    <link href="https://noa.bearblog.dev/old-diary-2/" rel="alternate" type="text/html"/>
+    <published>2026-09-13T14:55:00+00:00</published>
     <updated>2026-09-13T15:04:43.767978+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;之一是&lt;a href='https://noa.bearblog.dev/keeping-a-journal/'&gt;這篇&lt;/a&gt;。&lt;/p&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/old-diary-2/">&lt;p&gt;之一是&lt;a href='https://noa.bearblog.dev/keeping-a-journal/'&gt;這篇&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;6/10, 8:29 am&lt;/strong&gt;&lt;br /&gt;
 禮拜五要交作業，現在（三）完全還沒好……該罵小組作業還罵自己……但它就是件無法團隊合作的事啊，煩哪&lt;sup class="footnote-ref" id="fnref-1"&gt;&lt;a href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;！（說了那麼多還不是 a 同學在做）。再看看最後會如何吧（動作：點起一根菸）。&lt;br /&gt;
 昨日中午看《搖曳露營△》，突然覺得活著真好？真假。誰每天在露營度假，但誰又說不可。晚上玩 Minecraft，開了一個美麗的出生點，不刻意找村莊，自給自足，關遊戲音效聽音樂，喜。只是有點不小心玩太久了十一點才速速睡覺。噢然後生理期來了。噢沒交健康課的心情紀錄，不知會不會被當（小考剛好 60，好像真有可能），考慮是否要糊弄著交作業。物理開始有&lt;strong&gt;點&lt;/strong&gt;進度了，同時發現段考範圍之廣大無邊&lt;sup class="footnote-ref" id="fnref-2"&gt;&lt;a href="#fn-2"&gt;2&lt;/a&gt;&lt;/sup&gt;……。現在看來最有望圓滿達成的事只剩寫完這本筆記本了。於是寫。&lt;br /&gt;
@@ -307,18 +267,14 @@ for i in range(len(B)):
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://noa.bearblog.dev/old-diary-2/"/>
-    <published>2026-09-13T14:55:00+00:00</published>
   </entry>
   <entry>
     <id>https://noa.bearblog.dev/its-sunny/</id>
     <title>放晴了</title>
+    <link href="https://noa.bearblog.dev/its-sunny/" rel="alternate" type="text/html"/>
+    <published>2026-09-04T05:10:00+00:00</published>
     <updated>2026-09-04T12:30:50.527218+00:00</updated>
-    <author>
-      <name>noa</name>
-      <email>hidden</email>
-    </author>
-    <content type="html">&lt;p&gt;起床拉開窗簾，看見天藍和淡黃有點雀躍：「是晴天欸！」想穿漂亮新鞋子，騎腳踏車去捷運站，有比較不討厭學校一點點。&lt;/p&gt;
+    <content type="html" xml:base="https://noa.bearblog.dev/its-sunny/">&lt;p&gt;起床拉開窗簾，看見天藍和淡黃有點雀躍：「是晴天欸！」想穿漂亮新鞋子，騎腳踏車去捷運站，有比較不討厭學校一點點。&lt;/p&gt;
 &lt;p&gt;我其實喜歡雨，不過大概因為它少發生。偶爾有特別的一天，撐傘穿外套，伸手摸摸水，高興時覺得室外都是水樂園，低落時聲稱整片天空與我同泣。布希鞋啪嗒啪嗒，保護好背包，通勤脫離平時效率的期望。或者陳其邁臉書宣布颱風假（手比愛心），賴在床上聽雨聲，再坐起來盯著外頭，便利商店濛濛發亮，汽車默默駛去。雨天總有淡淡微笑的好印象。&lt;/p&gt;
 &lt;p&gt;但真的下太久了好嗎！每天第一眼灰灰的，煩悶更不願起床。理解臺北人似乎不喜歡下雨（比如黃麗群&lt;sup class="footnote-ref" id="fnref-1"&gt;&lt;a href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;……），畢竟他們太常下雨了。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://noachen522.github.io/noasblog/sorry-to-Kaohsiung.jpg" alt="" /&gt;&lt;/p&gt;
@@ -329,7 +285,5 @@ for i in range(len(B)):
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
-    <link href="https://noa.bearblog.dev/its-sunny/"/>
-    <published>2026-09-04T05:10:00+00:00</published>
   </entry>
 </feed>

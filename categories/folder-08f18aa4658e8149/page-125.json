@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "88c4f9042b074a0850f8fd2a",
+      "title": "两个简单的小产品",
+      "summary": "业余继续花了点时间，把「今天喝点什么呢」更新到了v1.1版本。",
+      "image": null,
+      "publishedAt": "2020-07-17T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/two-simple-mini-products",
+      "detailPath": "articles/88c4f9042b074a0850f8fd2a.json"
+    },
+    {
+      "id": "be3a6d783d9faf6f3288a7a4",
+      "title": "区块链学习笔记——概念与简单JS实现",
+      "summary": "在哔哩哔哩上看 是落拓呀 的区块链简明教程，趁热打铁，把自己学习过程记录下来 本项目的 Github 地址 ↓ [github repo=“taurusxin/taurusxincoin” /] 区块 区块即是每一次的交易，比如A转账给B十元，那么这条交易就写在这个区块内 区块里面实际包含的是 交易数据 本次交易的 hash 前一次交易的 hash 其中本一次交易的 hash 为 “本次交易的数据 + 上一次交易的hash” 的 hash 值 用简明的伪代码表示就是 1 2 3 4 5 Block = { data = '' , hash = sha256 ( data + previousHash ), previousHash = '' } 链 链就是一系列区块的总和，与之相联通的就是 hash 值，每一…",
+      "image": null,
+      "publishedAt": "2020-07-12T16:28:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/blockchain-01/",
+      "detailPath": "articles/be3a6d783d9faf6f3288a7a4.json"
+    },
+    {
+      "id": "4ebc786dae6d7950f5e10dcc",
+      "title": "apt upgrade acdemic",
+      "summary": "似乎很久没有更新博客了，最近学业真是的太忙了，忙着申请学校，忙着去找老师写介绍信，忙着开始新的生活。 很久没更新的原因，大概是脑子里的想法太多，一拍即合的点子很少，总觉得自己有学不完的技术栈，看不完的从入门到入土教程书。 昨天更新了一条朋友圈。 最近发生了很多 表妹高考的结束，即是人生新一步的起点，我们约好一起出发旅行，在上大学之前放松一次 Rhyland Tech 也逐渐步入正轨，开始规划公司的未来 还有最好朋友的生日，已经欠了2次了 最重要的就是，我即将进行雅思首考，在9月5号，杭州 … 除此之外，还有不少的任务 Node.js 全栈开发 Leetcode 新家装修 … 大概就是这样。 英国 说一下将来一年的学业规划。 考雅思是为了出国学习研究生课程，综合目前的形势来说，排除COVID-19的影响，明年出…",
+      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/07/3181345122.png",
+      "publishedAt": "2020-07-11T20:34:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/acdemic-upgrade/",
+      "detailPath": "articles/4ebc786dae6d7950f5e10dcc.json"
+    },
+    {
+      "id": "5869100096a55cdc85152f51",
+      "title": "南山必胜客与社会主义法治",
+      "summary": "马克思告诫人们，不要低估资本无孔不入的侵蚀性。",
+      "image": null,
+      "publishedAt": "2020-07-11T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2020-07-11",
+      "detailPath": "articles/5869100096a55cdc85152f51.json"
+    },
+    {
       "id": "3fb572fe0750ffffbf6c3ac2",
       "title": "南山必胜客与社会主义法治",
       "summary": "马克思告诫人们，不要低估资本无孔不入的侵蚀性。",
@@ -615,50 +659,6 @@
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/how-to-build-your-site",
       "detailPath": "articles/2698f9c3fcd72f1815a3659a.json"
-    },
-    {
-      "id": "73cf0aadbc1d24cbcfa9be64",
-      "title": "解决没有修改文件但Git认为你修改了",
-      "summary": "这种情况看起来内容没变，但文件一定是被真正修改了。改变的点可能是换行符（LF ⇄ CRLF ） ，也可能是文件权限。 如果是文件权限，设置忽略文件权限即可： ❯ git config core.filemode false 我出现这个问题的原因是用 exFAT 格式的 U 盘在两台 ext4 格式的电脑之间拷项目。这两种格式一个为 Windows 设计一个为 Linux 设计，权限管理自然也不一样。因此权限在 ext4 上本来是 -rw-r--r-- ，过了一遍 exFAT 就成了 -rwxrwxrwx 。所以 Git 认为文件变了，但编辑器就是没法高亮哪里变了。 其实 Git 自身是可以告诉你文件权限被改变的： ❯ git diff README.md diff --git a/README.md b/RE…",
-      "image": null,
-      "publishedAt": "2020-02-28T08:18:58Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/git-filemode/",
-      "detailPath": "articles/73cf0aadbc1d24cbcfa9be64.json"
-    },
-    {
-      "id": "ef010d11ab05ee2ae6b6ac41",
-      "title": "优化算法之Python穷举数独",
-      "summary": "前言 本文的 Github 仓库 https://github.com/taurusxin/Sudoku Python 穷举 Sudoku 玩法简介（来自百度百科） 数独盘面是个九宫，每一宫又分为九个小格。在这八十一格中给出一定的已知数字和解题条件，利用逻辑和推理，在其他的空格上填入1-9的数字。使1-9每个数字在每一行、每一列和每一宫中都只出现一次，所以又称“九宫格”。 从初中开始第一次接触数独，大大小小的也玩过很多。 学了计算机之后自然就会用算法去解决一些问题，本文讲解的就是在穷举数独之时，对相应的算法进行优化。 开发环境 VSCode Python 3.x 在开始之前，先配置一下 VSCode 的运行环境，可以直接克隆我的Github仓库。 因为默认VSCode在文件夹下调试的时候，会以当前正在编辑的文…",
-      "image": null,
-      "publishedAt": "2020-02-26T20:22:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/sudoku/",
-      "detailPath": "articles/ef010d11ab05ee2ae6b6ac41.json"
-    },
-    {
-      "id": "4faa0b10d1ad28dbc4c0a2e0",
-      "title": "折叠的城市",
-      "summary": "前面的文章讲传播、媒介或者影视，“我”似乎隐藏在文字背后，始终是一种缺席的状态。今天我从自身的生命体验，谈些和每个人都息息相关的事情。 在上海已经工作生活半年有余，对它的了解较多来自城市新闻、地铁线路、商场餐厅，或者是同事朋友之间的闲碎言语。离开了成长的地方，这里的一切都在慢慢熟悉。城市新闻是了解它的重要方式，它让人有一种遥远的参与感，仿佛正在融入其中成为和它休戚与共的一部分。但另一方面，地铁线路或者商场餐厅却在肢解这种关联感。地铁运送着成群的陌生人，前往陌生人聚集的商场，一次次停靠和一个个地点，无法制造出公共空间，也无法催生参与感。 在科幻小说《 北京折叠 》里，城市被分成了地上和地下，翻转运行，不同空间的人享受着不同的时间。对我而言，现实的城市同样是折叠的。 我对上海的认知来自地铁站点，它们是点状的，因线…",
-      "image": null,
-      "publishedAt": "2020-02-25T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2020/02/26/folding-city",
-      "detailPath": "articles/4faa0b10d1ad28dbc4c0a2e0.json"
-    },
-    {
-      "id": "3a835786ebe9a17767c3c37c",
-      "title": "拿到ACE CPT（美国健身协会私人教练）证书啦~~~",
-      "summary": "ACE CPT，是美国健身协会的私人教练证书。网上流传比较广的有三大执照或四大执照的说法，分别是ACE、ACSM、NSCA和NASM，区别我没有细究，所以想研究到底自己适合考哪一个的——本文只有ACE CPT的感受，无法提供其他。 为什么想考一个健身私教执照？不是为了去做健身教练……自己断断续续锻炼有些年头，囤积了很多健身视频，也杂七杂八看了不少书，也经常安利别人健身……一个感受非常强烈——总感觉还差了点什么，知道自己在健身上的知识不够全面，但又不知道自己到底缺什么。 如果想要快速全面了解一个领域，最好的办法就是找本教材扫一遍——基于这个理论，我决定干脆考一个健身教练的考试。子曾经曰过，来都来了，看都看了，那就干脆考一个呗。",
-      "image": null,
-      "publishedAt": "2020-02-23T22:55:01Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/fitness/ace-cpt-certificate-self-study/",
-      "detailPath": "articles/3a835786ebe9a17767c3c37c.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "fc03f6ae80bd3004d53285df",
+      "title": "一个韭菜的诞生",
+      "summary": "2020年末，公司的一位供应商客户经理在工作场合告诉我，“买基金”。那时，A股基金被不断推高、炒得一片火热，我在半知半解中也上车了—— 一个韭菜，诞生了 。 四年过去，上证指数从最高处将近3700点，跌到了最近的2700点。在经济下行的背景下，未来的走势似乎依然不被看好。我也在今年，正式加入“ 追涨杀跌 ”的散户阵营，止亏割肉，宣告自己是一个彻彻底底的韭菜。 以下是我在Day One的关于这个投资经历的心路历程，现在看来觉得自己好傻，但真的是应了那句老话： 人很难赚到认知以外的钱 。 2021 2021-03-08 今天基金大跌，基本上是不赚钱的持续赔钱，赚钱的已经赔干净了。但是，我心态特别淡然，因为我准备长期坚持下去，做好定投，他们有一天终会带来收益，“ 做时间的朋友 ”。 2022 2022-02-11…",
+      "image": null,
+      "publishedAt": "2024-09-14T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2024/09/15/bad-buy-china-good-bye-china",
+      "detailPath": "articles/fc03f6ae80bd3004d53285df.json"
+    },
+    {
+      "id": "1a11f6d3c8ab29c9ef477b7b",
+      "title": "離線 AI 好爽！",
+      "summary": "一年半後，我又寫了這篇的續集：離線 AI 好爽（2026 年版）",
+      "image": "https://wiwi.blog/assets/images/claude-censored-49f5dfb1fb979292096c9e27fb9183fa.jpg",
+      "publishedAt": "2024-09-14T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/offline-ai",
+      "detailPath": "articles/1a11f6d3c8ab29c9ef477b7b.json"
+    },
+    {
+      "id": "c03c7e5ba9b87d9506c16190",
+      "title": "Android源码分析：Activity启动流程Task相关分析",
+      "summary": "Activity的启动分析，很大一块需要了解的是Activity的Task管理，以及启动过程中Task的决策，在之前分析启动流程中，关于Task处理的部分，我这里是简化掉了很多的，今天再来分析一下。 入口与计算启动参数 在之前分析Activity的启动中，已经看到了关于处理Task的代码是在 ActivityStart 当中的 startActivityInner 方法当中，这个方法有不少入参，先捋一遍： resultTo为调用的Activity的 mToken(IBinder) ActivityRecord r, //新创建的Record，包含calling信息和要打开的ActivityInfo等 ActivityRecord sourceRecord, //resultTo不为空的时候才会去使用`Acti…",
+      "image": "https://img.isming.me/image/compute_launch_flag.png",
+      "publishedAt": "2024-09-13T09:57:05Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-13-activity-start-task/?utm_source=rss",
+      "detailPath": "articles/c03c7e5ba9b87d9506c16190.json"
+    },
+    {
+      "id": "c7c70035d0c296916e8b9a40",
+      "title": "我与偷渡者在中餐厅打工的日日夜夜",
+      "summary": "我与偷渡者在中餐厅打工的日日夜夜 窘迫的我 我出国上学的时候一直很不顺利，从入读国际部开始，到读完整个本科，家里的经济状况一直很不稳定。近期有个词很火，叫“ 留学断供 ”，指的是“留学到一半家里破产了”。我倒没有断供，而是从一开始就供不上。 父亲是做工程的，算是个“包工头”。工程款回款一直是宇宙难题，做工程的人总是欠着各种三角债，你欠我，我欠别人，别人又欠着另外的人，每个人手上几乎没有现金流。每次回款之后只能看着哪个人的欠款还能拖，象征性地还一些钱后才能留给家里用。工地手停口停，有时工头们为了能够拿到现金，只能硬着头皮再开新工程，拿着新工程的预付款去支付前一个项目工人的工资或者挪一点给家里用，期待着前一个工程的尾款能早点到账，好再去周旋一段时间。 如果每个项目都能按时回款，那就没有这么多事了。 因此从我爸决定…",
+      "image": "https://yuqiqin.me/img/user/B-Attachment/Pasted%20image%2020240516142220.png",
+      "publishedAt": "2024-09-13T07:24:13Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/arbeit-with-smugglers/",
+      "detailPath": "articles/c7c70035d0c296916e8b9a40.json"
+    },
+    {
       "id": "a5e062fb431acdb93cef8c2f",
       "title": "計程車廣告螢幕：你旅途的「亮」點",
       "summary": "現在台灣的計程車，有很多都會在副駕駛座的後方裝一個螢幕來播放廣告。前幾天在路上攔了一台，上面就有。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/ghosts-and-gods",
       "detailPath": "articles/5a13506ec07bef5be968764f.json"
-    },
-    {
-      "id": "dca64285f50ed10f3459e105",
-      "title": "我沒說謊啊",
-      "summary": "- 「我馬上到。」在宇宙的時間尺度下，三十分鐘就是「馬上」啊！",
-      "image": null,
-      "publishedAt": "2024-08-28T07:40:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/i-didnt-lie",
-      "detailPath": "articles/dca64285f50ed10f3459e105.json"
-    },
-    {
-      "id": "64e3ffbb32a3ccda1da7a854",
-      "title": "Finale 死了（如我預言）",
-      "summary": "登登登登！我就說我是預言家～",
-      "image": "https://wiwi.blog/assets/images/buy-dorico-4bd7f5e97a16ec6a5fb67c40ad9e54e9.jpg",
-      "publishedAt": "2024-08-27T10:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/finale-is-finalized",
-      "detailPath": "articles/64e3ffbb32a3ccda1da7a854.json"
-    },
-    {
-      "id": "947d972d799dc9b365f78a46",
-      "title": "我的其他内容发布平台",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-08-27T09:03:48Z",
-      "sourceId": "f6c280e30d8989ed",
-      "sourceTitle": "可可托海没有海",
-      "link": "https://mp.weixin.qq.com/s/fEpLOJSNcIoynxxGqI08-w",
-      "detailPath": "articles/947d972d799dc9b365f78a46.json"
-    },
-    {
-      "id": "f31edf56b3b5ad5953ffec0b",
-      "title": "低能蛋白",
-      "summary": "這是檸檬卷喜歡喝的。我每次都看成「低能蛋白」。",
-      "image": "https://wiwi.blog/assets/images/dumb-protein-b0df801b93aa06c7780b9377b902eae9.jpg",
-      "publishedAt": "2024-08-27T07:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/dumb-protein",
-      "detailPath": "articles/f31edf56b3b5ad5953ffec0b.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "69d3003d30c6678512287ea1",
+      "title": "把部落格翻新成一片宇宙：572 天的累積、四天的翻新,和一顆串起每一頁的琥珀點",
+      "summary": "這篇是作者在網站誕生第 572 天整站翻新後寫下的心路歷程。半年前作者就覺得一頁一頁分開改的版面少了沉浸感,十月花四天定下只用點、線和一個琥珀色的基調,把每一頁畫成一個天體,收藏頁改了四次才定成從地球發出的訊號。作者最在意的是換頁轉場的銜接,讓一顆琥珀點像電影追焦一樣串起每一頁。文末也寫了還沒做好的部分,以及給想自己動手的人的技術細節。",
+      "image": null,
+      "publishedAt": "2026-10-27T02:51:22Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/blog-redesign-dots-and-lines",
+      "detailPath": "articles/69d3003d30c6678512287ea1.json"
+    },
+    {
       "id": "af2baeb0fd57bef5e2e52c2b",
       "title": "把寵物餵食器攝影機接進 Frigate 和 Home Assistant：拆十個品牌的 APK 選機,逆向「美國 FurSpark」",
       "summary": "作者想替客廳的 Frigate 補一顆餵食區的近拍鏡頭,查了十個品牌的寵物餵食器攝影機,發現沒有一台開放影像串流。文中說明怎麼在購買前下載 App 安裝檔、從裡面的影像 SDK 判斷有沒有機會接出畫面,最後選了開發商其實是深圳盯盯拍的 FurSpark Big Eye:在 TCP 6200 找到私有的 H.264 串流,用 go2rtc 接進 Frigate(附設定);用 Python daemon 把雲端 MQTT 的餵食控制橋接成 Home Assistant 的 22 個 entity;再用 qemu 跑 App 裡的 arm64 TUTK 函式庫取得即時音訊,並記錄 bionic 與 glibc 不相容的處理、音訊斷線拖垮影像、外網需要 Opus 等坑。即時對講沒有做成,改用按鈕播預錄提示音。分貓方面…",

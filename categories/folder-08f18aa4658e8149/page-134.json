@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "ee71a8ca0b54ab24e711295a",
+      "title": "Android 内存优化之三 - 打开 MAT 中的 Bitmap 原图",
+      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文介绍的是从 MAT 里手工还原 Bitmap 原图的旧排查技巧，适合在离线 heap 里确认“到底是哪张图”被错误持有。现在排查图片内存问题时，第一步通常不是直接打开 MAT，而是先用 Android Studio Memory Profiler 的 heap dump/retained size/reference 视图确认 Bitmap、BitmapDrawable 或图片缓存…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:41:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Open-Bitmap-Object-In-MAT/",
+      "detailPath": "articles/ee71a8ca0b54ab24e711295a.json"
+    },
+    {
+      "id": "22a97125dfd6c1a96875f837",
+      "title": "Android 内存优化之二 - MAT使用进阶",
+      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文的 Histogram、Dominator Tree、Thread 信息仍然是 heap 分析的核心方法，但抓取和第一轮分析入口应换成现在的工具链：先用 Android Studio Memory Profiler 捕获 heap dump，必要时在关键点调用 Debug.dumpHprofData() ，再用 Profiler 的 retained size、reference…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:26:36Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT-Pro/",
+      "detailPath": "articles/22a97125dfd6c1a96875f837.json"
+    },
+    {
+      "id": "edcb1d4763935081023653c3",
+      "title": "Android 内存优化(1) - MAT 使用入门",
+      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 这组文章里的 MAT 技巧仍然适合学习 Java heap、Dominator Tree、Retained Size、引用链这些基础概念，但默认抓取流程已经变了。早期流程是 Eclipse/DDMS 导出 Android HPROF，再用 hprof-conv 转成 MAT 能读的格式；现在应优先在 Android Studio Memory Profiler 里…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:10:29Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
+      "detailPath": "articles/edcb1d4763935081023653c3.json"
+    },
+    {
+      "id": "45c59bddec1a44274e2d27b4",
+      "title": "我来有赞了",
+      "summary": "今天晚上终于有时间来写写博客了，想想决定从ucloud离职到现在，差不多一个多月了。关于离职的原因，一句话两句话也说不清楚，离职这事也纠结了好久，正好顺着年后跳槽高峰期，从上海跳到了美丽大杭州。",
+      "image": null,
+      "publishedAt": "2015-04-03T23:10:49Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/04/03/leave-ucloud-to-youzan/",
+      "detailPath": "articles/45c59bddec1a44274e2d27b4.json"
+    },
+    {
       "id": "1795430768818b2a50f9e16b",
       "title": "Android性能优化后续",
       "summary": "前言 本文是一篇译文，原文 Android Performance Case Study Follow-up 的作者是大名鼎鼎的 Romain Guy 。本文讲述了Android性能优化的一些技巧、方法和工具。 译文正文 两年前，我发表了一篇名为 Android Performance Case Study 的文章，来帮助Android开发者了解需要使用什么工具和技术手段来确定、追踪和优化性能问题。 那篇文章以一个Twitter客户端 Falcon Pro 为典范，其开发人员为 Joaquim Vergès. Joaquim人不错，他允许我在我的文章中使用它的程序作为例子，并且快速处理了我发现的所有问题。一切都OK，直到Joaquim 从头开始开发Falcon Pro 3，前不久在他准备发布它的新应用的时候，…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Chiaroscuro",
       "link": "https://imick.github.io/articles/jw005/",
       "detailPath": "articles/4c2e649547130a3082bf6c63.json"
-    },
-    {
-      "id": "437c2f6b7b8f68a68c7d9e3f",
-      "title": "半日闲",
-      "summary": "下午，一家三口分别睡在屋子里三个不同的地方，各自入梦。昏睡的我慢慢恢复意识，如同从静止的时光中苏醒。除了窗外鸟鸣狗叫和客厅电视机发出的轻微声响，其余默然无声。恍惚间仿佛回到了十年前一个无事的夏日午后。",
-      "image": null,
-      "publishedAt": "2014-06-29T22:46:46Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/06/29/sunday-afernnon/",
-      "detailPath": "articles/437c2f6b7b8f68a68c7d9e3f.json"
-    },
-    {
-      "id": "d999c1310b189164268847d2",
-      "title": "风吹微微",
-      "summary": "回寝室之时，本已经停歇的雨，一顿晚餐的功夫又落了下来。 并不算大，骑着车，风往身后吹去。短短的路程，脑子里却闪过无数念头。 不用十分钟，就到了。脱去潮湿的衣服，冲凉。 出来以后，站在阳台上，看着风吹树枝弯曲的弧度，灰白弥漫的天空，零星散散的雨水。有一种无法名状的触动。 并不是打通任督六脉，猛然开窍之类的触动，仅仅是体悟到某种生存深处的纯质。 我想。 有的人匆忙一生为了最后的荣光与欲望的实现，有的人却恬淡度日只在乎基本的需求和日夜的微变，前者像是斗士，或真或假，而后者我愿意用隐士作为它们的代表，尽管隐士并不真的多。 梦想是我们所追求的生存状态，但梦想的背后是否是我们想要的人生的结果呢？ 比如我一心想要成为记者，做一些有价值有意义的采访报道，追求在路上，好奇追问的生活状态。 可是，我还告诉自己，要在年老以后，开一…",
-      "image": null,
-      "publishedAt": "2014-06-26T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2014/06/27/breeze",
-      "detailPath": "articles/d999c1310b189164268847d2.json"
-    },
-    {
-      "id": "0c82fa7733bc676db6418717",
-      "title": "玩木工【四】：开始刨木头",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-25T10:45:27Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw004/",
-      "detailPath": "articles/0c82fa7733bc676db6418717.json"
-    },
-    {
-      "id": "ad2693ad1414d2f954ae8847",
-      "title": "玩木工【三】：Stanley 铁刨的翻新",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-22T20:23:01Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw003/",
-      "detailPath": "articles/ad2693ad1414d2f954ae8847.json"
     }
   ]
 }

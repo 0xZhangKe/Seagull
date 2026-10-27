@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "c50b89c93c9a9db75b7004d6",
+      "title": "2023 年概览",
+      "summary": "天空流白海流蓝，血脉自循环。泥巴植物多欢笑，太阳是、某种遗传。果实互相寻觅，石头放弃交谈。 火光走失在民间，姓氏像王冠。无关领土和情欲，有风把、肉体掀翻。大雁高瞻远瞩，人们一日三餐。 ——《风入松》 一 老规矩，每年三个愿望。希望明年多做减法，减少无用行动的次数，减少新鲜事物的敏感，减少负面情绪的影响。不得不说，每跨入一个阶段人的欲望是会随之转变的。今年很明显，我进入了某种低欲望节奏之中，想要的不多，但变得很难。这种感受是由内而外的，和外部环境关系不大，所以，和疫情关系也就不大，单纯是人变了。我很难说今年的我，和五年前、十年前的我，还是不是同一个人。 当然，有一些没变的事情，看起来一辈子都不会变了，有一些总在变的东西，就需要放慢速度仔细审视，好好观察。2024 年，减减速，加加油。 二 这一年从滑雪开始，争取…",
+      "image": "https://r2.elizen.me/2023/12/f29d9041ed2a3928896c33fd8c1327b8.jpg",
+      "publishedAt": "2023-12-01T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2023/12/hello-2024/",
+      "detailPath": "articles/c50b89c93c9a9db75b7004d6.json"
+    },
+    {
+      "id": "25556ccd9704183545505702",
+      "title": "當一個忘性很大的人嘗試寫十一月小結",
+      "summary": "一開始覺得好不容易但",
+      "image": null,
+      "publishedAt": "2023-11-30T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/nov-2023-recap/",
+      "detailPath": "articles/25556ccd9704183545505702.json"
+    },
+    {
+      "id": "3d4dea52e259e2a2768dc02b",
+      "title": "历程「为了忘却的悲哀」",
+      "summary": "一些用来忘却的悲哀（猫大人的黑历史 5）",
+      "image": "https://fravilion.top/usr/uploads/2024/02/235813357.webp",
+      "publishedAt": "2023-11-29T02:19:00Z",
+      "sourceId": "7e105df8e0969fc7",
+      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
+      "link": "https://fravilion.top/index.php/archives/59/",
+      "detailPath": "articles/3d4dea52e259e2a2768dc02b.json"
+    },
+    {
+      "id": "e88c95178fda1c324a0dffdd",
+      "title": "如何在現代地圖上疊加歷史地圖：QGIS常用底圖資源及獲取方法",
+      "summary": "在QGIS中导入底图（通常指在线地图服务或离线瓦片地图）有多种方法。 （在現代地圖上疊加歷史地圖參見 方法三：添加WMS/WMTS服务 ） 方法一：使用QGIS内置的“XYZ切片”连接 # 许多网络地图服务（如OpenStreetMap、谷歌地图）都以XYZ切片（Tiles）服务的形式提供底图。 操作步骤： 在左侧的浏览器面板中，找到并展开“XYZ切片”项。 在 “XYZ切片” 上右键单击，选择 “新建连接…”。 在弹出的对话框中： 名称： 为地图源起一个名字（如 “OpenStreetMap”、“Google卫星图”等）。 URL： 输入地图服务的瓦片URL地址。 点击“OK”保存。可以在 “XYZ切片” 目录下看到刚创建的连接，双击它或将其拖拽到地图画布中，底图就会加载出来。 常用底图URL： 名称：Op…",
+      "image": "https://wuliangdian.com/posts/qgis-xyz-tiles-and-wmts/QGIS-%E5%8D%97%E5%AE%8B%E5%8E%86%E5%8F%B2%E5%9C%B0%E5%9B%BE%E5%8F%A0%E5%8A%A0%E7%8E%B0%E4%BB%A3%E5%9C%B0%E5%9B%BE2.jpg",
+      "publishedAt": "2023-11-28T11:00:00Z",
+      "sourceId": "4947a434a94c3ee9",
+      "sourceTitle": "無糧殿",
+      "link": "https://wuliangdian.com/posts/qgis-xyz-tiles-and-wmts/",
+      "detailPath": "articles/e88c95178fda1c324a0dffdd.json"
+    },
+    {
       "id": "7732628106ff7414a8d47ad9",
       "title": "JS 逆向网易云音乐",
       "summary": "本文是一篇网易云音乐网页版 API 的逆向分析实战教程，旨在解决如何获取歌曲真实 .m4a 播放链接的问题。教程通过浏览器开发者工具，一步步追踪并剖析了其核心加密参数 params 和 encSecKey 的生成过程，深入分析了背后涉及的 AES 和 RSA 加密算法。最终，通过 Python 结合 PyExecJS 库调用复现的 JavaScript 加密逻辑，成功构造请求并获取到歌曲链接，同时还逆向了歌曲搜索接口。本文为对网页逆向、API分析和加解密技术感兴趣的开发者提供了一次完整的实战演练。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2023/10/notes-of-how-to-write-a-nonfiction-1/",
       "detailPath": "articles/795bcf2a3cad7a3dbdab4b7e.json"
-    },
-    {
-      "id": "045ced15252392eef0babe10",
-      "title": "过往人生 PAST LIVES",
-      "summary": "最开始吸引我看这部电影的是豆瓣里的「而在二十年后，命运令两人于纽约重逢」这一句简介。我太喜欢久别重逢的故事了。",
-      "image": null,
-      "publishedAt": "2023-10-11T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/past-lives",
-      "detailPath": "articles/045ced15252392eef0babe10.json"
-    },
-    {
-      "id": "cc251852c3f950c274773c2c",
-      "title": "电台第一期：与核有关的歌曲",
-      "summary": "打年初我就想试着录段播客了，然后就开始研究话筒、声音接口、线材、录音地点……八月底突然想到了绝佳的主题，再不开始可能永远不会开始了，所以和同样从年初就开始想这事的同学拿着手机，底稿也不打直接开录了。 在线收听 📢：也可以用 AntennaPod 或苹果播客订阅本播客 RSS 地址（ https://emptystack.top/podcast ）来收听！ function seek(time) { const player = document.getElementById('player') player.play() player.currentTime = time } 你的浏览器不支持嵌入音频，但你可以 下载 下来听。 视频内容：俩闲人以“核”为主题聊音乐 00:12 开场 00:29 The Cla…",
-      "image": null,
-      "publishedAt": "2023-10-07T23:44:46Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/nuclear/",
-      "detailPath": "articles/cc251852c3f950c274773c2c.json"
-    },
-    {
-      "id": "d19f2f657ec56920757c83f3",
-      "title": "寫於被分手後",
-      "summary": "https://www.youtube.com/watch?v=JWYNptUogU8 最近的挫折，意外地讓我喚回了感受音樂故事的能力。 已經開始能聽到寫詞的人在講什麼，而且情緒也確實能產生共感，雖然這是一般人都做得到的事情，但喜愛音樂的我卻丟失了這個能力好多年，聽到歌曲只會分析他用什麼和弦、用什麼原理替換了什麼東西、編曲做了什麼很酷的事情。 在音樂當中，「感動」這件事情對我來說已經不存在好久。 漸漸的，不知道是什麼原因，生活當中也沒有什麼事情能讓我感動，對什麼事情都不感興趣、對任何人也漸漸的產生敵意，不想與任何人接觸，聽到認識的人離開世界也沒有任何情緒變化，生活從此變成了只是生存，很後來的我才知道自己生病了。 聽到這首歌不禁潸然淚下，就像爸跟好多朋友跟對我說的，目前我其實沒有問題，只是還需要時間慢慢耕耘，謝…",
-      "image": null,
-      "publishedAt": "2023-10-07T19:48:21Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/break-up/",
-      "detailPath": "articles/d19f2f657ec56920757c83f3.json"
-    },
-    {
-      "id": "903a159563a2244c6fc24cc6",
-      "title": "树维网",
-      "summary": "一直对Wood Wide Web（树维网）这个概念感兴趣。 初次接触这个词语是在纪录片《绿色星球》，片中提到，蘑菇是真菌的子实体，而真菌的菌丝则在土壤中，连接着树木的根须，形成了一种“菌根网络”，交换关于养分水分的信息。《锵锵行天下》第二季的最后一集，阿里善治理土地荒漠化，说到植物根系在土地之下彼此勾连缠绕，形成了一种信息网络，分享着哪里适合扎根、哪里适合生长。 为了了解这一概念，最近我读了《 The Hidden Life of Trees 》。作者Peter Wohlleben在开篇讲述了这样一个故事： 非洲的长颈鹿在食用金合欢的树叶后，金合欢会分泌有毒物质，长颈鹿不得不停下来，去寻找别的树叶。但让人意外的是，长颈鹿并不会选择附近的金合欢，而是要选择更远一些的。为什么？科学家发现，当一棵金合欢被啃食后，它…",
-      "image": null,
-      "publishedAt": "2023-10-07T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2023/10/08/wood-wide-web",
-      "detailPath": "articles/903a159563a2244c6fc24cc6.json"
     }
   ]
 }

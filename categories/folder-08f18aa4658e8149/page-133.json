@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "7efa2e6bf3f5cbdc92e45dfb",
+      "title": "字符串，那些你不知道的事",
+      "summary": "最近在看 《Dive Into Python 3》 ，第四章讲了字符串相关知识，看后才发现，字符串远比我们想象的要复杂多。就像该书所说的 Everything you thought you knew about strings is wrong. 是的，我之前对字符串的理解都是错的。",
+      "image": null,
+      "publishedAt": "2015-11-20T23:16:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/11/20/strings/",
+      "detailPath": "articles/7efa2e6bf3f5cbdc92e45dfb.json"
+    },
+    {
+      "id": "249f22772b1a0e84884ed1ff",
+      "title": "Android 应用启动优化 - 一种 DelayLoad 的实现和原理(上篇)",
+      "summary": "在 Android 开发中,应用启动速度是一个非常重要的点,应用启动优化也是一个非常重要的过程.对于应用启动优化,其实核心思想就是在启动过程中少做事情,具体实践的时候无非就是下面几种: 异步加载 延时加载 懒加载 不用一一去解释,做过启动优化的估计都使用过,本篇文章将详细讲解一下一种延时加载的实现以及其原理. 其实这种加载的实现是非常简单的,但是其中的原理可能比较复杂,还涉及到Looper/Handler/MessageQueue/VSYNC等.以及其中碰到的一些问题,还会有一些我自己额外的思考.",
+      "image": null,
+      "publishedAt": "2015-11-18T12:23:14Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/11/18/Android-app-lunch-optimize-delay-load/",
+      "detailPath": "articles/249f22772b1a0e84884ed1ff.json"
+    },
+    {
+      "id": "56877ba9975858b8bb9fd980",
+      "title": "兜圈",
+      "summary": "https://www.youtube.com/watch?v=Mqr-kjvXsk8",
+      "image": null,
+      "publishedAt": "2015-11-09T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/yogalin-detour",
+      "detailPath": "articles/56877ba9975858b8bb9fd980.json"
+    },
+    {
+      "id": "6a9aa1593a0262c4938883fd",
+      "title": "Folid 相关教程",
+      "summary": "以前写的几篇关于 Folid 应用的教程合集",
+      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/floid4-1.png",
+      "publishedAt": "2015-11-05T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/tutorial-collection-of-folid",
+      "detailPath": "articles/6a9aa1593a0262c4938883fd.json"
+    },
+    {
       "id": "686ff3dda08257e3cbc4099c",
       "title": "感受力",
       "summary": "嘿，这是荒诞派 谈论感受力，却是源于它的另一面：理性。几百年来的发展，理性现已成为科学的一大表征。在自然学科称雄后，人文社会学科也引入科学的概念，进而附随了理性。 于是，我们看到了主义、流派、风格此类看似学术化的切割，它们一同将世界分门别类。然而，也正是此般定义，不断压制着感受力，并将其排挤到边缘。 比如，有人在欣赏绘画的时候，轻易地说出了流派和特点，这也的确会有助于我们沿着旧辙行路。但很明显的，这只是对理论的运用能力，而忽视了体察自我与外物的联系，搁置了来自内心，切切实实的对生活包括艺术的感受力。 你是一个文艺青年 而非理性同样发挥着作用，例如对“ 标签 ”的滥用。日常中总会听到说，不要给 XXX 贴标签或定性。但仍旧时有发生，这不得不归于这样沿辙行路的轻松和安全。 于是，看到西方就是自由民主，看到切糕就是…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns/",
       "detailPath": "articles/2fcc57d2b395fc07005d3643.json"
-    },
-    {
-      "id": "ee71a8ca0b54ab24e711295a",
-      "title": "Android 内存优化之三 - 打开 MAT 中的 Bitmap 原图",
-      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文介绍的是从 MAT 里手工还原 Bitmap 原图的旧排查技巧，适合在离线 heap 里确认“到底是哪张图”被错误持有。现在排查图片内存问题时，第一步通常不是直接打开 MAT，而是先用 Android Studio Memory Profiler 的 heap dump/retained size/reference 视图确认 Bitmap、BitmapDrawable 或图片缓存…",
-      "image": null,
-      "publishedAt": "2015-04-11T10:41:32Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Open-Bitmap-Object-In-MAT/",
-      "detailPath": "articles/ee71a8ca0b54ab24e711295a.json"
-    },
-    {
-      "id": "22a97125dfd6c1a96875f837",
-      "title": "Android 内存优化之二 - MAT使用进阶",
-      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 本文的 Histogram、Dominator Tree、Thread 信息仍然是 heap 分析的核心方法，但抓取和第一轮分析入口应换成现在的工具链：先用 Android Studio Memory Profiler 捕获 heap dump，必要时在关键点调用 Debug.dumpHprofData() ，再用 Profiler 的 retained size、reference…",
-      "image": null,
-      "publishedAt": "2015-04-11T10:26:36Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT-Pro/",
-      "detailPath": "articles/22a97125dfd6c1a96875f837.json"
-    },
-    {
-      "id": "edcb1d4763935081023653c3",
-      "title": "Android 内存优化(1) - MAT 使用入门",
-      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 这组文章里的 MAT 技巧仍然适合学习 Java heap、Dominator Tree、Retained Size、引用链这些基础概念，但默认抓取流程已经变了。早期流程是 Eclipse/DDMS 导出 Android HPROF，再用 hprof-conv 转成 MAT 能读的格式；现在应优先在 Android Studio Memory Profiler 里…",
-      "image": null,
-      "publishedAt": "2015-04-11T10:10:29Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
-      "detailPath": "articles/edcb1d4763935081023653c3.json"
-    },
-    {
-      "id": "45c59bddec1a44274e2d27b4",
-      "title": "我来有赞了",
-      "summary": "今天晚上终于有时间来写写博客了，想想决定从ucloud离职到现在，差不多一个多月了。关于离职的原因，一句话两句话也说不清楚，离职这事也纠结了好久，正好顺着年后跳槽高峰期，从上海跳到了美丽大杭州。",
-      "image": null,
-      "publishedAt": "2015-04-03T23:10:49Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/04/03/leave-ucloud-to-youzan/",
-      "detailPath": "articles/45c59bddec1a44274e2d27b4.json"
     }
   ]
 }

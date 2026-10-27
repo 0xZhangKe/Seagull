@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "e969c465f555272e4277c7c5",
+      "title": "YAML 多行语法",
+      "summary": "编写 i18n 翻译文件时，使用的 插件 将多行文本转换成了某种从未见过的格式。 于是在查阅过程发现一个有意思的网站： YAML Multiline Strings 自觉有趣，遂作记录。 指示符 根据 指示符 的不同，可以将文本格式分为五种类型： 纯文本 即 不使用 任何指示符直接定义字符串，这种方式下会尽可能保留字符，不需要也不进行转义，编写十分便利。 但相对而言，使用一些特殊字符时会有限制，如 : 和 # ，需要注意其周围 空格 出现的时机。 换行的处理与 CommonMark 类似， 回车 将转换为 一个 空格 ，出现 空行 之后才会转换 \\n ，且每个空行对应一个 \\n 。 单引号 使用单引号 ' 包裹后，可以正常使用 : 和 # ，但单引号本身需通过 '' 转义。 双引号 使用双引号 \" 包裹与单引…",
+      "image": null,
+      "publishedAt": "2025-11-19T15:37:35Z",
+      "sourceId": "c8f83e5c482b2a5b",
+      "sourceTitle": "記緒漂流",
+      "link": "https://ttio.cc/jotting/yaml-multiline",
+      "detailPath": "articles/e969c465f555272e4277c7c5.json"
+    },
+    {
+      "id": "d9b14ce614b7ab8efecf1ff9",
+      "title": "增加肌肉量一天要吃多少蛋白質？",
+      "summary": "這陣子在調整體態，於是特別注意飲食，平時維持肌肉量需要吃「體重 *1.1」，增肌則需要「體重 *2」。 以 60 公斤舉例，分別是 60 * 1.1 = 66 與 60 * 2 = 120。 而 Eddie 的體重來算，一天需要吃到接近 140g 的蛋白質。 再來看各種食物含多少蛋白質： # 水煮蛋 7g 雞腿 25g 雞胸 30g 一片魚排 30g 豬排 25 一份主菜大約在 20~30 左右，如果 Eddie 要吃到 140，等於一天需要吃到 6 份才足夠，當然還有有其他豆類的配菜，但這真的要吃很多才有辦法達標。 目前暫時只能靠蛋白粉來達標，但是那真的「超難喝」！",
+      "image": null,
+      "publishedAt": "2025-11-19T10:18:52Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/muscle-gain-protien/",
+      "detailPath": "articles/d9b14ce614b7ab8efecf1ff9.json"
+    },
+    {
+      "id": "f63fd2a7e8ac1891cef5cf22",
+      "title": "玩家心態：屬性和技能點是有限的",
+      "summary": "遊戲裡的配點系統教會我們：沒有人能點滿所有技能樹。接受有限，反而讓人更自由。",
+      "image": null,
+      "publishedAt": "2025-11-19T09:45:12Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/limited-points",
+      "detailPath": "articles/f63fd2a7e8ac1891cef5cf22.json"
+    },
+    {
+      "id": "a4ba372ea53b6357d53351a7",
+      "title": "WordPress插件HTACCESS Manager",
+      "summary": "我写这个插件的目的，就是为了不去手动直接编辑.htaccess文件。 本插件适用于Apache、LiteSpe […]",
+      "image": null,
+      "publishedAt": "2025-11-19T08:59:50Z",
+      "sourceId": "c8adde5ad4115162",
+      "sourceTitle": "林海草原",
+      "link": "https://lhcy.org/archives/wordpress-cha-jian-htaccessmanager.html",
+      "detailPath": "articles/a4ba372ea53b6357d53351a7.json"
+    },
+    {
       "id": "4bd1c1be90e723fd975d6637",
       "title": "又五個離開社群媒體的理由",
       "summary": "之前我寫過我為什麼要退出社群媒體。但經過了更多觀察，我又釐清了自己討厭社群媒體的更多理由，所以這篇算是那篇的續集。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2025/11/12/Android-Perfetto-09-CPU/",
       "detailPath": "articles/d903e4a5906fd6e80ef6c536.json"
-    },
-    {
-      "id": "fa832e5c1f34fc1c9ed5036d",
-      "title": "电台：Roundabout",
-      "summary": ".c205-100 { grid-template-columns: 205fr 100fr; } 这段音频录制于 2 月 10 号，在 6 月 5 号休年假时剪完。给小林试听过后发现哪里有个小问题，但我俩都没记住具体时间，一直拖到 9 月才决定不再修改了。剪辑虽然完成了，但因为不知道给这期起什么名字、做怎样的封面，所以一直拖到 11 月才完成发布前的其他工作。 有位朋友喜欢收集人生各阶段的肥皂碎屑——据说闻一下便能立刻被带回收集时的时光。自己播客中的声音，也有肥皂的作用。 在线收听 📢：也可以用 AntennaPod 或苹果播客订阅本播客 RSS 地址（ https://emptystack.top/podcast ）来收听！ function seek(time) { const player = doc…",
-      "image": "https://emptystack.top/processed_images/roundabout-cover.fd3c9f5edf41c762.webp",
-      "publishedAt": "2025-11-11T21:47:38Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/roundabout/",
-      "detailPath": "articles/fa832e5c1f34fc1c9ed5036d.json"
-    },
-    {
-      "id": "4e5659ba1cb469cedc4f373d",
-      "title": "第四堂 VBS 唱歌課程",
-      "summary": "學習唱歌第四個月，從「用正確的人對抗」，到「控制空氣過或不過一點」，再到「對抗的壓力變化」，一路走來真的不容易，這堂課則加入「主動拉長聲帶」的動作，以及「訂定適當題目」的概念。 前三個要點有興趣請詳閱 發聲的能量來源 —— 空氣 、 發聲的阻力是什麼？ 。 發聲技術近況 # 你的瀏覽器不支援 audio 元素。請 下載音檔 。 練習的思維 # 用短 huh 確認空氣撞到對的人身上，且空氣持續想要往外鑽，但是被擋的人擋住出不去 讓空氣過一點（擋的人擋少一點） 想著發出聲音（能力允許想著刺激拉伸環甲肌，但不主動刺激也可以） 最終結果就是絲滑、沒有換聲區。 訂定適當題目 # 老師金句「從來缺的就不是解題能力，而是看清楚題目且不隨意改變題目的能力。」 如果仔細聽上面的音檔，會發現兩遍的 huh、壓力變化的力度，是相差…",
-      "image": null,
-      "publishedAt": "2025-11-11T17:03:02Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/vbs4/",
-      "detailPath": "articles/4e5659ba1cb469cedc4f373d.json"
-    },
-    {
-      "id": "f3719641194f5341e174447a",
-      "title": "吃青菜",
-      "summary": "小明：「我超愛青菜的，我好想吃青菜！最近青菜吃得不夠多，感覺身體都在抗議了。」",
-      "image": null,
-      "publishedAt": "2025-11-11T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/eating-vegetables",
-      "detailPath": "articles/f3719641194f5341e174447a.json"
-    },
-    {
-      "id": "645db3f33580be9d68676a87",
-      "title": "脸上有图腾的人，以及鸢尾花妖精.手绘记录",
-      "summary": "这是最近画的三张图。 一张是对着种子歌唱的鸢尾花妖精。 妖精的歌唱能增加种子的活力噢~ 接下来的一张图，画的是面部有图腾的部落少年。 画这副画的时候，忘记拍过程图了。 最后，是茶花女妖。 茶花女妖在画的时候，还记得多拍了几张照片。 前面两张图画的时候，基本没有想起来要拍一点过程图，等想起来时，发现自己基本上已经画完了。 所有的绘画过程，都更新在youtube频道： https://www.youtube.com/@lanlanlanlan5577 【谢谢阅读，我们下回再见】",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4EkTNBPBLjN1rK_9nd6ZNAlAImrXmCNUE3FmGKoGPW0luqzm7Kz1A9k_K9GrXtEBWxHSv9SiYIJlAURYiZ_JZN9t-wzRFtRv5UFJ31j3f2Quhz6qVumRnmC5nwtohibfZRKJ1F_rw5XHx0nzuD5SLdvJiiCsFFRi8WNqvXXJ_gIs_kAqONi4Pdsa6LOrR/s72-w640-h482-c/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251109212551_931_12.jpg",
-      "publishedAt": "2025-11-10T14:01:00Z",
-      "sourceId": "e9a83766f9a18aea",
-      "sourceTitle": "两人森林|猫猫文学",
-      "link": "https://blackcatmeiqiu.blogspot.com/2025/11/blog-post.html",
-      "detailPath": "articles/645db3f33580be9d68676a87.json"
     }
   ]
 }

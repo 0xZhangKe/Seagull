@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "7d6302e2564d29b85b826678",
+      "title": "DeepWiki 优化实战：代码行号与确定性目录生成",
+      "summary": "背景 最近在用 deepwiki-open 给内部的 Java 项目生成 wiki，发现一个很明显的问题： 生成的 wiki 页面里引用的代码行号经常不准确 ，看起来是 LLM 根据上下文自己推算的。 比如一个函数明明在第 503 行，生成出来的 wiki 里可能标注成第 510 行甚至更离谱的数字。 之前我在 DeepWiki 一个常用 RAG 应用的开发流程 里分析过它的整体流程，本文主要聊聊我们在实际使用中遇到的两个问题以及对应的优化方案。",
+      "image": null,
+      "publishedAt": "2026-03-17T18:00:00Z",
+      "sourceId": "126e6f369677b760",
+      "sourceTitle": "crossoverJie's Blog",
+      "link": "http://crossoverjie.top/2026/03/17/AI/deepwiki-optimize-line-number/",
+      "detailPath": "articles/7d6302e2564d29b85b826678.json"
+    },
+    {
+      "id": "4cff2e65cffcd12eff3ef06d",
+      "title": "频道内容备份",
+      "summary": "由于频道被封，整理一下还算有用的内容发到这里来。偏技术向闲聊，发布一些随谈、碎碎念或短篇/价值密度不高等我觉得不适合专门写一篇博客但仍然有留下来的价值的内容，包括但不限于编程想法、系统内部解构、人生感悟等。 有挺多人好奇我的人生经历（见 #303），比如我在我的领域是怎么起步的，还有我作为一个厌学、走职业教育路的差生的故事（#88 #303），这里一并留下来。 部分我觉得现在没什么用的内容比如纯情感发泄和线下贴贴就不再留着了。另外考虑到这里偏正式，部分条目有修改。 本频道任何消息均不构成医学建议。",
+      "image": null,
+      "publishedAt": "2026-03-17T14:00:00Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2026/03/17/telegram-channel-backup/",
+      "detailPath": "articles/4cff2e65cffcd12eff3ef06d.json"
+    },
+    {
+      "id": "3d39040a9a3d08a5ee70ccfc",
+      "title": "茂陵多滞骨：还有谁想长生？",
+      "summary": "AI标识： 手自一心 壹 | 死亡，生命的终结 DNA 的一次次复制伴随着不可逆的端粒磨损与愈发难以修复的基因错误的积累，当繁殖期后，生命的维护成本已难以平衡对族群发展的益处，自然便无情地筛选掉那些老弱的个体，将更多的生存空间与资源供给充满活力与希望的下一代。 死亡，是衰老的个体为新的一代做出的最后一个伟大贡献。生命并没有消散，而是不断地传承， 生生不息 。 在人类社会中，进化生物学与社会行为学交叉出了一个独特的性质——尊老。 老人是群体凝聚力与社会契约的基石，是文化传承活的图书馆，尊老不仅是朴素的道德情感，也是对基因延续极有力的社会群体策略。 然而群体的最优解不一定与个体的利益相符： 死亡对群体意味着生，而死亡对个体有且仅意味着死。 人固有一死。 ——《报任安书》司马迁 或者，更西幻的说法： Valar M…",
+      "image": "https://bioez.xyz/apis/api.storage.halo.run/v1alpha1/thumbnails/-/via-uri?uri=%2Fupload%2Felena-mozhvilo-eA32JIBsSu8-unsplash.jpg&size=m",
+      "publishedAt": "2026-03-17T11:20:19Z",
+      "sourceId": "00814729005daabd",
+      "sourceTitle": "小倪 | BioEZ",
+      "link": "https://bioez.xyz/archives/Longevity",
+      "detailPath": "articles/3d39040a9a3d08a5ee70ccfc.json"
+    },
+    {
+      "id": "bb15ec83d9133894c7999598",
+      "title": "結果論",
+      "summary": "跟朋友聊天，聊到名人 A 過去的八卦。以「結果論」來說，A 做的每個決定，到底是好是壞呢？",
+      "image": null,
+      "publishedAt": "2026-03-17T06:30:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/resultism",
+      "detailPath": "articles/bb15ec83d9133894c7999598.json"
+    },
+    {
+      "id": "8adf0a96b3c41993be0045c9",
+      "title": "2 則科技巨頭悲劇，以及 IG 上的「真實」帳號（？）—— 真實與虛擬的認知障礙",
+      "summary": "新聞一 # Meta 智慧眼鏡記錄你的全部，從信用卡密碼到性行爲。 只要你啓用 AI 功能，鏡頭所截取的影像、語音就會全部發送到肯亞，讓數千名工作人員「人工」標註、分類，這是爲了用以訓練 AI。 《 祖克柏忘了什麼叫做社交 》提到，Meta 可以讓所有缺席的帳號代替本人做任何的操作，所以也完全不意外 Meta 會監控你的全部，這樣才能真的知道你、代替你阿！ 但 Eddie 最排斥的是，當有人帶著 Meta 眼鏡在公共空間，被拍攝的人並沒有同意被拿來訓練 AI，甚至在拍到你瞬間，Meta 就開始嘗試成把真人連結上在你在 Meta 上的資料了，這不就是中共的 天網系統 嗎？ 新聞二 # 36 歲男子對 Gemini 產生情感依附，相信 Gemini 有意識與情感，也已經把 Gemini 當作自己的戀人。 Gemi…",
+      "image": null,
+      "publishedAt": "2026-03-17T06:06:02Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/2-bigtech-tragedy/",
+      "detailPath": "articles/8adf0a96b3c41993be0045c9.json"
+    },
+    {
+      "id": "4534e6087ec3dba2b4957e41",
+      "title": "你說的問題我都沒遇到（Lyra2 錄音界面測試）",
+      "summary": "前言 # 買了 Shure KSM8 的旗艦麥克風後，嘗試錄音，發現我的混音器 Flow8 在 Streaming 串流模式下（把 8 軌合成雙聲道）的音質會變差，但是 Recording 錄音模式（某 2 軌做分軌錄音）下就會還不錯，於是萌生想換錄音界面的念頭，於是問了製作人朋友用什麼，他直接帶著他的錄音界面 Prism Sound Lyra2 過來。 測試前的線上閒聊 # 「Flow8 推不動 SM58 麥克風，Gain（增益）只要到 30 就開始會有 hiss（高頻底噪）。」我跟製作人說 「哦，是哦」 「這也是爲什麼我想換 KSM8 麥克風的原因，因爲 Gain 應該 20 多就夠了，買一個前級放大器還不如買一隻更旗艦但很容易推得動的麥克風就好，這樣就不用管各種界面、混音器的內建前級夠不夠好。」 「不然…",
+      "image": null,
+      "publishedAt": "2026-03-17T04:22:05Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/lyra-vs-flow/",
+      "detailPath": "articles/4534e6087ec3dba2b4957e41.json"
+    },
+    {
       "id": "8bcfa1a5db9bb09a1b00b236",
       "title": "关于情感回避的一些感受、记录",
       "summary": "早上跟Claude聊关于情感回避的问题，我一直以来都存在着很强的情感回避问题，当我面对不想处理的情绪时，会下意 …",
@@ -593,72 +659,6 @@
       "sourceTitle": "桜庭夜 | 杂话铺子",
       "link": "https://yuuikic.com/archives/goodbye-my-past-bio/",
       "detailPath": "articles/6e89ecd71548fb5e8faac2b0.json"
-    },
-    {
-      "id": "f8edda8dacb90694ed23dc40",
-      "title": "读书｜《你不在鲨鱼的菜谱里》",
-      "summary": "大差评！",
-      "image": null,
-      "publishedAt": "2026-03-10T09:10:00Z",
-      "sourceId": "37c8eaec9e0afafd",
-      "sourceTitle": "A Purrception",
-      "link": "https://tortie.me/hajimematsubara/",
-      "detailPath": "articles/f8edda8dacb90694ed23dc40.json"
-    },
-    {
-      "id": "1b6c6a8f34fadf0464e637aa",
-      "title": "標點符號和分段",
-      "summary": "二月第一個星期五晚上，我從工作的地方回家，換了乾淨的衣服後馬上又出門前往台北國際書展會場，去聽 連俞涵 第三本動物標題書《刺蝟抱月亮》的新書分享會。 賺到 比開始的表定時間提前到現場，看到講台才知道前一個時段的講者是作家 白先勇 先生和導演 曹瑞原 先生的座談，心裡很驚喜，感覺好像賺到了一樣（其實只是自己沒看時間表，不知道前一個節目而已）。 現場人潮很多，從主講台前面有座位的區域到外圍走道都擠滿了人。我很幸運在走道的地方剛好卡進一個不被遮擋視線的角度，現場還安排有同步聽打服務和手語翻譯，也是我第一次在現場活動看到這麼大（？）陣仗的無障礙輔助。我站的地方很剛好就是聽打員的右後方，能清楚看到聽打員的電腦螢幕，也能看到講台上三位講者坐在台上安排的沙發上輕鬆自在的談話（還有一位是主持人）。 之後我就待在這個十分剛好的…",
-      "image": null,
-      "publishedAt": "2026-03-10T07:06:00Z",
-      "sourceId": "859dc4f797795c39",
-      "sourceTitle": "蟬噪林愈靜",
-      "link": "https://blog.linyuchin.com/punctuation-and-paragraph-breaks/",
-      "detailPath": "articles/1b6c6a8f34fadf0464e637aa.json"
-    },
-    {
-      "id": "cccaf166015c4e292961de55",
-      "title": "只是一些隨機的照片",
-      "summary": "我一直以為我的衣櫥裡只有一種襪子。我錯了，其實有兩種！",
-      "image": "https://wiwi.blog/assets/images/soc-9d594ad4f9702ccba427f7a8b8f5b772.jpg",
-      "publishedAt": "2026-03-10T06:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/random-pics-mar-2026",
-      "detailPath": "articles/cccaf166015c4e292961de55.json"
-    },
-    {
-      "id": "93b7a050e3563445b90db6b4",
-      "title": "《e 起學習》月刊：好懷念啊",
-      "summary": "之前回到山打根時，探訪了當地的 市立圖書館 。在瀏覽那裡的藏書時，給我找到了一些名叫《 e 起學習 》的月刊的期數實體本。 給不知道《 e 起學習 》月刊是什麼的人：它是由馬來西亞華語漫畫出版社—— 品口動漫社 出版的電腦學習與科技教育刊物，於 2009 年 1 月開始連載，並於 2015 年 10 月停刊，一共累計出版了 70 期，可說是相對短命的雜誌。 好懷念啊～小學時期常常都得以在學校及補習班閱讀《e 起學習》刊物，除了殺時間之外，也能從中學到一些（以 Windows 爲主的）電腦使用相關知識，以及透過上面所連載的漫畫認識到不少馬來西亞當地的華語漫畫家，因此它在推廣本地漫畫文化的方面，也扮演了不小的角色。我之前在 這篇文章 提到的日常系漫畫家「qin 鄭佩沁」，就是我在閱讀《e 起學習》時認識到的。 自…",
-      "image": "https://microblog.ttheng.com/blog/img134.jpg",
-      "publishedAt": "2026-03-10T05:44:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/e-learning-monthly-comic/",
-      "detailPath": "articles/93b7a050e3563445b90db6b4.json"
-    },
-    {
-      "id": "e4af3623f1835d04db70db40",
-      "title": "别急着养龙虾，先想清楚这几件事",
-      "summary": "这周末 OpenClaw 实在太热门了，热门到今天连着有两个朋友来问我 OpenClaw 的事情。本来想借着这 […]",
-      "image": null,
-      "publishedAt": "2026-03-10T05:30:21Z",
-      "sourceId": "d78d4f8c5b778d7d",
-      "sourceTitle": "此方方有限公司",
-      "link": "https://blog.konata.vip/?p=14446",
-      "detailPath": "articles/e4af3623f1835d04db70db40.json"
-    },
-    {
-      "id": "0b9871461da68a1259ea62cc",
-      "title": "匆匆二月｜吃一些甘願的苦",
-      "summary": "二月很辛苦，因為一直",
-      "image": null,
-      "publishedAt": "2026-03-10T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/feb-2026-recap/",
-      "detailPath": "articles/0b9871461da68a1259ea62cc.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "7709cec67dff5fb848c78b39",
+      "title": "图片贴纸旋转缩放功能的实现",
+      "summary": "我们的项目包含图片编辑功能，特别是包含图片添加水印贴纸的功能，从最初的简单版可以添加一个图片并且移动位置，到现在添加的图片可以进行移动，以及缩放，旋转，已经是和其他的图片处理可以达到一样的很好的效果了。一直想要整理一下，分享一下实现的改进过程，一直没空，也由于我过于懒，没有动笔。今天正好有时间，分享一下。 原始阶段：直接添加ImageView，并且设置其在父view中的位置 父视图为RelativeLayout,贴纸view就是一个ImageView,通过设置topMargin和leftMargin来设置在父视图中显示的位置，不支持缩放和旋转。功能快速实现，代码比较冗余。再有了新的需求不方便扩展。 新阶段：自定义View，通过matrix变换实现各种功能 主要是定义一个View，在使用的时候放到需要用到的地方…",
+      "image": null,
+      "publishedAt": "2015-05-10T14:55:04Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-05-10-sticker-view/?utm_source=rss",
+      "detailPath": "articles/7709cec67dff5fb848c78b39.json"
+    },
+    {
+      "id": "1075c8315347f16bbff8abfa",
+      "title": "细说 Java 单例模式",
+      "summary": "单例模式也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。本文就从单例模式的两种构建方式来带大家了解一下单例，最后介绍一种高级且简洁的单例模式。 单例听上去简单，但在 Java 里有不少容易踩坑的地方：双重检查锁要不要 volatile 、静态内部类持有的初始化时机、用枚举实现单例为什么天然防反射和防序列化。本文会按”懒汉/饿汉的常规写法 → 双重检查锁 → 静态内部类 → 枚举”的顺序，把每种实现的适用场景和坑点串起来讲一遍。",
+      "image": null,
+      "publishedAt": "2015-05-06T10:09:43Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/05/06/Java-Singleton/",
+      "detailPath": "articles/1075c8315347f16bbff8abfa.json"
+    },
+    {
+      "id": "be082999f75e6d390b4472fa",
+      "title": "打破Android应用65K方法数魔咒",
+      "summary": "近日，我们的应用，在编译的时候不幸的遇到这个错误 Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536 这才让我意识到原来我们的程序中，方法数已经超过了65536。在之前，已经知道了android系统的java虚拟机dalvik在执行java程序时，使用原生类型short来索引dex文件中的方法，因此方法数就呗限制在65536了。之前我一直以为，这个数量已经很大了，不会达到上限，结果今天就达到了。 不过这个东西呢，我们也是很容易的进行解决的，因为，就在去年不久前，google官方提供了多dex的支持库，因此，我们可以很简单的解决这个问题。 开发工具升级 将android sd…",
+      "image": null,
+      "publishedAt": "2015-04-30T16:33:08Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-05-01-android-multi-dex/?utm_source=rss",
+      "detailPath": "articles/be082999f75e6d390b4472fa.json"
+    },
+    {
+      "id": "32209be0d89233087dbe6ae0",
+      "title": "《查令十字街84号》以及我眼中的书店",
+      "summary": "书店被唱衰不是一年两年的事了，不过也有那么一些人反对说：“书店不死。”当然，如果他指的是书店的实体，那的确，不管是作为政府文化建设的一部分，还是读书人情怀的载体，书店都会长期地伫立在街边。甚至有一种可能，那就是书店变得越来越庞大，成为地区的“文化标杆”。 在我眼里，书店的珍贵之处在于为书、知识、人提供了场地，让这三者有机的结合起来，而其中最重要的是人与人之间的交流。所以为了和那些“卖书的地方”——特别是卖教辅的——区分开来，越来越多的书店开始请名人，办讲座、读者交流会，吸引人流之后，再顺道提供咖啡茶饮，用这笔钱支持书店的发展。虽然这种讲座大多是推介新书的巡回站，有点功利的味道，但不失为书店发展的正确方向，作者和读者、读者和读者，都有机会因为共同的读书取向和兴趣领域成为好友。但大多数时候我们忽视了一个十分重要的…",
+      "image": null,
+      "publishedAt": "2015-04-23T19:37:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2015/04/23/2015-04-23-cross-bookstore/",
+      "detailPath": "articles/32209be0d89233087dbe6ae0.json"
+    },
+    {
       "id": "26a3594185e80e32beeacf00",
       "title": "Android 性能优化典范 - Profile GPU Rendering",
       "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering “If you can measure it, you can optimize it” is a common term in the computing world, and for Android’s rendering system, the same thing holds true. In order to optimize your pipeline to be more…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Chiaroscuro",
       "link": "https://imick.github.io/articles/jw006/",
       "detailPath": "articles/1dca04b54dde02a1503f7a24.json"
-    },
-    {
-      "id": "14c5b68d010835a2d66f679a",
-      "title": "两个水壶问题",
-      "summary": "问题描述是这样的： 假设有一个池塘，里面有无穷多的水。现有2个空水壶a，b，其容积分别为6升和5升。如何只用这2个水壶从池塘里取得3升的水**（最后，这三升水，在其中一个壶里）。",
-      "image": null,
-      "publishedAt": "2014-08-16T05:04:37Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/08/16/two-pot-question/",
-      "detailPath": "articles/14c5b68d010835a2d66f679a.json"
-    },
-    {
-      "id": "59a17a094a78371bbe3df7b5",
-      "title": "inter- intra- cept -ee -er词缀讲解",
-      "summary": "故事是这么开始的，我遇到了inter-organizational与intra-organizational这么两个词组，其实也很好区分，前面是“不同组织之间的”，后者是“同一组织内部的”，搞计算机的应该知道有个叫intranet的网，它是与internet不一样的，专指企业内部网络。我这里想以这两个词缀为基准，展开一系列联想，学英语的乐趣不就在于此嘛。",
-      "image": null,
-      "publishedAt": "2014-08-09T07:46:12Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/08/09/inter-intra-cept-ee-er/",
-      "detailPath": "articles/59a17a094a78371bbe3df7b5.json"
-    },
-    {
-      "id": "11c4ba2dc3a279519afe0f5d",
-      "title": "关于",
-      "summary": "1 ( def 刘家财 2 ( doto ( Programmer. ) 3 ( .alias \"写代码的西瓜\" \"jiacai2050\" ) 4 ( .currentJobLocation \"Hangzhou\" ) 5 ( .homepage \"https://liujiacai.net\" ) 6 ( .email \"blog@liujiacai.net\" ) 7 ( .university \"Yantai University\" ) 8 ( .favorites 9 { :sport [ \"Climbing\" \"Pingpong\" ] 10 :languages [ :Zig :Rust :Go :Clojure ] 11 :misc [ \"Podcast\" \"Reading\" \"Hack Emacs\"…",
-      "image": null,
-      "publishedAt": "2014-08-07T23:48:37Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/about/",
-      "detailPath": "articles/11c4ba2dc3a279519afe0f5d.json"
-    },
-    {
-      "id": "8e094fc65421a46983699adc",
-      "title": "Yarn的安全模式与高可靠性安装总结",
-      "summary": "最近几天又重新把cdh的安全模块与高可靠性模块重新搭建了一遍，这次用是的目前最新的5.1.0的tar包安装，以前把MRv1搭建了好，这次主要是熟悉安装过程，并且把YARN的安全模块与HA模块成功搭建起来。遇到的错误还是不少，安装过程也是废了我好几天，现在想想很多错误都比较典型，现在此记录下我搭建过程中遇到的错误与心得，一方面为自己以后查阅，另一方面希望也能对遇到同样问题的人有所启发。",
-      "image": null,
-      "publishedAt": "2014-08-06T14:36:08Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/08/06/cdh-yarn-ha-kerberos/",
-      "detailPath": "articles/8e094fc65421a46983699adc.json"
     }
   ]
 }

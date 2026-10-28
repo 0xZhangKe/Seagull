@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "9ff5aac5fec28b94ed730343",
+      "title": "像维护软件一样维护效率系统",
+      "summary": "标题可能会让人误以为我要介绍精密复杂的 PKM 体系，但实际上我 我不混“知识管理圈” 很久了。我想我数次安装和卸载 Emacs，仍然用 Neovim 写代码和写文， 一部分 原因是 Org Mode 对我毫无吸引力，甚至有可能会害了我 1 。 好的软件不 总 是精巧复杂的，甚至大部分时候是简单的，或者说清晰明了，而且可拓展、可组合，在需要的时候不会因其形式或接口而派不上用场。比方说 grep 作为命令行工具，可以搜文件里的文本、可以搜目录里的文件名、可以搜终端历史里输入过的命令，也可以很轻易地集成到其他软件里搜别的东西。 这其实也不是我想谈的重点。实际上，即便是 grep 这样小巧简明的软件，在某些情况下也难以施展拳脚，比如面对完全不了解命令行界面的用户时。对他们而言，Raycast 和 Vicinae 等…",
+      "image": "https://img.eltr.ac/geedeapro/article/note-dev/11.png",
+      "publishedAt": "2026-10-28T15:49:02Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/note-dev/",
+      "detailPath": "articles/9ff5aac5fec28b94ed730343.json"
+    },
+    {
       "id": "234e41a0341bfd11bc8b584f",
       "title": "声势浩大的知识产权盗窃",
       "summary": "之所以说「声势浩大」，是因为我成语储备不够，找不到「不要脸」的文雅说法。 蛛丝马迹 这几天我停用了 NetCup 的一台机子，换到了 SKRIME，装了 OpenBSD 系统愉快地玩了起来。结果，正好赶上 eMudhra 根证书密钥泄露 1 和 PHP2Shell 漏洞，于是赶紧在几台机器上更新 ca-certificates ，手动移除泄露的根证书。 然后我在其中一台机器上执行了 htop 。 “奇怪，我 VPS 上跑的服务 CPU 占用都应该很低才对，为什么现在涨到 60% 了？”当时的我光顾着四处更新证书和排查漏洞，便没有细想。再后来，我给那台新机子装上了 beszel-agent 配置监控和告警，瞟了一眼那台怪怪的机器——“我去，负载怎么红了？”从监控页面上来看，CPU 占用最高的容器是我的 Forg…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/weekly/101/",
       "detailPath": "articles/af48348a61934a58db73d347.json"
-    },
-    {
-      "id": "24b3d34a5b3efa87fe199573",
-      "title": "Coffee Break Clojure, Namespace",
-      "summary": "在 第一篇 我们安装了 Leiningen，当时只是用它启动了 REPL 和 nREPL 服务器，现在我们要用它来干点重活儿了。顺带一提，Leiningen 的名字取自短篇故事《 莱宁根大战蚂蚁 》，故事情节…… 就是一个叫莱宁根的男人大战蚂蚁。 创建项目 在终端输入 lein new -h 命令查看帮助，可以看到这些模板： Subtasks available: template A meta-template for 'lein new' templates. plugin A leiningen plugin project template. default A general project template for libraries. app An application project tem…",
-      "image": null,
-      "publishedAt": "2026-10-03T10:50:02Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/clj5/",
-      "detailPath": "articles/24b3d34a5b3efa87fe199573.json"
     }
   ]
 }

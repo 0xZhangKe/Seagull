@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "a0e0c9780d68c8d493110934",
+      "title": "给 Golang 开发者的 Rust 私房菜 01 千里之行，始于足下",
+      "summary": "Bilibili 建议前往 B 站观看哦！ Rust 简介 Rust 是一门注重 内存安全 和 高性能 的系统编程语言，通过所有权机制避免常见的内存错误。自 2021 年 Linux 内核 5.13 版本 起，Rust 被正式引入，用于提高内核模块（如驱动程序）的安全性，减少内存管理漏洞。目前，Rust 在内核中的应用仍处于初期阶段，未来可能会逐步扩大。 安装 官方网站： https://www.rust-lang.org/ Homebrew 1 brew install rust HelloWorld 1 2 3 fn main () { println! ( \"Hello, World!\" ); } Hello Cargo 建立 cargo 项目 1 cargo new hello_cargo 源代码 1…",
+      "image": null,
+      "publishedAt": "2024-12-29T17:20:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/rust-tutorial-01/",
+      "detailPath": "articles/a0e0c9780d68c8d493110934.json"
+    },
+    {
+      "id": "391c03afcac73fc96f52dde9",
+      "title": "林路行",
+      "summary": "新语言 旧语言 该怎样回答 不眠的时间 上周五去参加了一个欧洲版画的展览的开幕式，展厅里有一张木口木刻肖像版画，画的是罗伯特柯霍，但是绘画风格跟其它的木口木刻版画有着微妙的差别。收藏家跟我们介绍说，在这幅版画创作的年代，摄影术已经诞生了。绘制这幅版画的画家还有个身份是摄影家，他当时借助了摄影术完成了这幅版画。但是版画家并不知道，摄影术生来就不是用来辅助版画创作的，它是来革版画的命的，那个年代的人并不知道摄影术将会给版画带来怎样的冲击。古典版画的传承者们还在用它作为一个技术手段来创作版画。那幅作品就是在这样的一种懵懂和无知的情况下，借助了那个时代的最新技术制作的一张木口木刻版画。 收藏家不无悲戚地说：“他没想到矛和盾都在他手上，这个时代一去不复返了，这是一个悲剧，虽然这是整个人类文明进程的一个喜剧，但是对于木口…",
+      "image": null,
+      "publishedAt": "2024-12-29T16:00:00Z",
+      "sourceId": "f758efe5e14ba931",
+      "sourceTitle": "瓠樽",
+      "link": "https://blog.dylanwu.space/2024/12/30/lost-in-the-jungle.html",
+      "detailPath": "articles/391c03afcac73fc96f52dde9.json"
+    },
+    {
+      "id": "8d6ee7533c36593273c7195f",
+      "title": "十二月｜東奔西跑 小病鎖喉",
+      "summary": "Hero Photo by ArtTower on Pixabay 本月Mi",
+      "image": null,
+      "publishedAt": "2024-12-29T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/dec-2024-recap/",
+      "detailPath": "articles/8d6ee7533c36593273c7195f.json"
+    },
+    {
+      "id": "396d1e1628fe6444030e4e82",
+      "title": "OpenWRT配置Bird使用OSPF国内外动态路由分流",
+      "summary": "之前写过一篇关于RouterOS上使用OSPF进行国内外动态路由分流的文章，当时就在想，国内使用RouterOS作为主路由的人群应该不是很多，大多数的人有这个需要的人，使用的主路由系统应该都是OpenWRT或者其衍生版本。今天的文章就把之前的坑补上，将在OpenWRT系统中，使用Bird实现OSPF动态路由的国内外分流。",
+      "image": "https://notion.dolingou.com/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F6d3fda40-6b03-4bf3-842b-4c9bb68a90f1%2F70ae0b4f-386d-4656-8927-035cd69b112d%2Fimage.png?table=block&id=16b97571-0fee-80c9-84e3-cb90b522bc39&t=16b97571-0fee-80c9-84e3-cb90b522bc39&width=1072&cache=v2",
+      "publishedAt": "2024-12-29T00:00:00Z",
+      "sourceId": "3f72c6c8a8442f3b",
+      "sourceTitle": "Dolingou",
+      "link": "https://www.dolingou.com/article/openwrt-bird-ospf-traffic-split-china",
+      "detailPath": "articles/396d1e1628fe6444030e4e82.json"
+    },
+    {
       "id": "31389b893ce33caaa8cac329",
       "title": "Mac Mini M4",
       "summary": "檸檬卷的 2019 年的 iMac 最近開始出現很多問題：不只變得超級龜速、很燙、螢幕邊緣還微微開始變色。為了讓她剪片和教線上課時不要那麼痛苦，我只好訂了一台 Mac Mini M4。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/silence",
       "detailPath": "articles/a03a45f3e1fb30ccfa881a8d.json"
-    },
-    {
-      "id": "d2fe5488e0ec42a2cff38368",
-      "title": "介绍 Tsukimiya bot",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2024-12-10T20:51:50Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/tsukimiya/",
-      "detailPath": "articles/d2fe5488e0ec42a2cff38368.json"
-    },
-    {
-      "id": "ea5a63ef7e47efaed1fdb011",
-      "title": "也算是有日本驾照了",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-12-10T11:47:18Z",
-      "sourceId": "f6c280e30d8989ed",
-      "sourceTitle": "可可托海没有海",
-      "link": "https://mp.weixin.qq.com/s/IrwWXBY_Rg5WBnvtqsnE0g",
-      "detailPath": "articles/ea5a63ef7e47efaed1fdb011.json"
-    },
-    {
-      "id": "0132e342864bd36ded240dae",
-      "title": "浴中奇思：想象力解限",
-      "summary": "[[想象力解限]]： 做梦就像是人类特有的“想象力解限”的时刻，是唯一一种你可以使用大量发散思维的时刻。而一旦 […]",
-      "image": null,
-      "publishedAt": "2024-12-10T05:44:55Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1182",
-      "detailPath": "articles/0132e342864bd36ded240dae.json"
-    },
-    {
-      "id": "0bf0af86285cba6f8a981595",
-      "title": "機車突然發不動",
-      "summary": "前言 # 因有員工突然離職，老闆拜託我到便當店代班，結果在某次要出發送餐時，機車突然就發不動了，臨時跟店長借了機車去送餐，同時請賣我車、平時換機油的機車行老闆過來載。 檢查結果 # 取車時，電瓶健康度只剩下 5%，而且剎車燈壞了，沒剎車時也會一直亮。 但前兩次換機油時（大概 3 個月前吧），老闆有特地幫我檢查電瓶，那時候說還有 50% 的健康度，不知道爲何突然剩下 5%。",
-      "image": null,
-      "publishedAt": "2024-12-10T04:08:55Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/motorbike_cant_turn_on/",
-      "detailPath": "articles/0bf0af86285cba6f8a981595.json"
     }
   ]
 }

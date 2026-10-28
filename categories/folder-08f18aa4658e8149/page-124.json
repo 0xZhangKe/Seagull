@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "226b669e2350207e4f982a7c",
+      "title": "Vue Axios请求数据 + 子组件渲染踩坑实例记录与解决方案",
+      "summary": "今日用 Vue 做前端学习时，踩到了一个大多数人都踩过的坑，特此记录。 代码如下： parent.vue 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 < template > < div > < hello :data = \"message\" ></ hello > </ div > </ template > < script > export default { components : { Hello }, data () { return { message : '' } }, created () { axios . get ( '/static/data.json' ). then (( response ) => { t…",
+      "image": null,
+      "publishedAt": "2020-11-09T09:37:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/vue-issue-1/",
+      "detailPath": "articles/226b669e2350207e4f982a7c.json"
+    },
+    {
+      "id": "a67e7031ac48ffbb9058dc43",
+      "title": "科普短篇：肺结节诊断里的爱恨纠葛",
+      "summary": "借 “常熟银行群体肺结节事件” 谈谈为什么我更推荐体检时选择做CT而不是X线检查。注意：本文内容仅代表个人看法，不构成任何医疗建议。",
+      "image": "https://blog.drpika.com/posts/images/bg.png",
+      "publishedAt": "2020-11-06T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2020-11-06",
+      "detailPath": "articles/a67e7031ac48ffbb9058dc43.json"
+    },
+    {
+      "id": "7414eb600b541d5d27494942",
+      "title": "科普短篇：肺结节诊断里的爱恨纠葛",
+      "summary": "借 “常熟银行群体肺结节事件” 谈谈为什么我更推荐体检时选择做CT而不是X线检查。注意：本文内容仅代表个人看法，不构成任何医疗建议。",
+      "image": "https://blog.drpika.com/posts/images/bg.png",
+      "publishedAt": "2020-11-06T00:00:00Z",
+      "sourceId": "3e335517f4e1112a",
+      "sourceTitle": "Dr.Pika's Blog",
+      "link": "https://blog.drpika.com/posts/2020-11-06",
+      "detailPath": "articles/7414eb600b541d5d27494942.json"
+    },
+    {
+      "id": "f1e67355429a2bc2407bf3f2",
+      "title": "Elie Wiesel的Night：从匈牙利到奥斯维辛",
+      "summary": "他在领诺奖时有一段著名的发言：Silence encourages the tormentor, never the tormented. Sometimes we must interfere. When human lives are endangered, when human dignity is in jeopardy, national borders and sensitivities become irrelevant.",
+      "image": null,
+      "publishedAt": "2020-11-05T20:05:35Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/reading/elie-wiesel-night-auschwitz/",
+      "detailPath": "articles/f1e67355429a2bc2407bf3f2.json"
+    },
+    {
       "id": "81ac600f8e664d79e77e563d",
       "title": "2020年10月总结",
       "summary": "10月没太多想说的，平顺的生活是创作的天敌。但是为了让喜爱我的观众朋友们有机会给我和我的猫打钱，我还是准备随便写点东西。 01 我！有！猫！了！ 养猫以后生活最大的困惑变为「为什么猫不会说话」，生活最大的苦恼变为「我为什么不能是一只猫」。猫每天吃了睡睡了吃，我在打工她在打呼，我开完会/写完bug/de不出bug的时候一转头看到她酣睡总是气不打一处来，必须要怒搓一顿猫猫头才能好。 猫不太上相，拍了几张照片都好丑，生气地和朋友说我的猫怎么这么丑拉的💩怎么这么臭，于是朋友问我是不是不太喜欢这只猫。怎么可能呢，我怎么可能不喜欢我的猫呢。我感觉自己像某一种中国式家长 （但黄女士完全不是这样的家长，我怎么会这样） ，总是在嘴上嫌弃自己的孩子这里不行那里不好，明明我很爱她的，明明很担心她初来乍到不习惯不开心，明明手机里面已…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Great Firewall Report",
       "link": "https://gfw.report/blog/gfw_esni_blocking/zh/",
       "detailPath": "articles/c0fe91bac2c7251f5078dde1.json"
-    },
-    {
-      "id": "738a49b1b67e02f8c748f866",
-      "title": "在今天，《论语》还能怎么读？",
-      "summary": "大约每个人读书，总是有些目的的。有人从书里找答案，有人只是娱乐、消遣，有人为了博闻强识，还有人为了增添技能。读书是个好办法，也是笨办法里最快的捷径。至于那些聪明办法，反倒四处是陷阱，条条是弯路。 我所读书目里，还有一类，没有目的，却有期待。比如莫言的小说，常常想，他若把故事搬出农村，搬出那个时代，会写成什么样？比如老六的读库，会不会又捕获到一个优秀的作者？又比如，刀尔登，这个让我欲罢不能的才子，每每有新书出版，定要第一时间找来看看，一边期待一次新的思维碰撞，一边暗暗咒骂这个家伙又从才华和学识上让人自惭形秽。 上个月，刀尔登出了一本新书《鸢回头》，上架建议是传统文化，书呢，讲的也确实是孔子、老子和庄子。但一读便知，这不是大众意义上的传统文化普及读本，更不是中小学生必备文章的解释注脚。这本书讲孔子，更讲刀尔登眼中…",
-      "image": null,
-      "publishedAt": "2020-08-07T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2020/08/%E5%9C%A8%E4%BB%8A%E5%A4%A9%E8%AE%BA%E8%AF%AD%E8%BF%98%E8%83%BD%E6%80%8E%E4%B9%88%E8%AF%BB/",
-      "detailPath": "articles/738a49b1b67e02f8c748f866.json"
-    },
-    {
-      "id": "683328fde8d56808bc5d1a74",
-      "title": "我的日常工作环境（一）—— Windows 电脑生态",
-      "summary": "前言 每一个大学生几乎都在入学时拥有自己的一台笔记本电脑，据调查 80% 左右的学生会选择极具性价比的5000元档位的笔记本，按2020年初的配置来说，忽略 AMD 的移动芯片，就 Intel 而言，9代i5 搭配 8G内存 + 1650ti 等配置是主流选择，既可以流畅英雄联盟，也能中效吃鸡，算是笔电市场最为热门的选择了。然而就这样的搭配，据我一番搜寻之后，最贵的和最便宜的也相差了数千元，便宜的可能在 内存 / SSD 上面缩了水，内存降点频率，SSD 用 SATA 或者便宜 NVMe 的，或者散热缩水，主板接口也能砍刀，只给到稀松的几个接口，我竟然还能在2020年见到 USB2.0接口。 电脑选择 在如此环境下，我选择了一套略微高一些的配置，10代 i7 + 2060 的组合。 这样的配置基本都是7000…",
-      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/08/1995119058.jpg",
-      "publishedAt": "2020-08-05T12:17:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/env-1/",
-      "detailPath": "articles/683328fde8d56808bc5d1a74.json"
-    },
-    {
-      "id": "20ed96fe6600ed76d73035fa",
-      "title": "我的日常工作环境（零）——介绍目录",
-      "summary": "开个新坑吧 这篇文章开始，每一篇会阐述一下我的工作环境，包括但不限于实际环境，工作生产力环境等。 以下为目录 Windows 电脑生态 Apple 电脑、手机、平板生态 大学寝室布局 + 设备 我用的工具、家具、产品 娱乐设备（耳机、音响、游戏机等） 摄影装备（相机、镜头等）",
-      "image": null,
-      "publishedAt": "2020-08-05T12:11:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/env-0/",
-      "detailPath": "articles/20ed96fe6600ed76d73035fa.json"
-    },
-    {
-      "id": "b3d542c16ea8a8a6d4c62264",
-      "title": "进入Toddler阶段的第15个月",
-      "summary": "Baby 终于从 babyhood 婴儿阶段毕业了，变成了学步儿 Toddler。不论是长相还是行为，都越来越像印象里面标准的小孩子的样子了。毕竟前12个月什么都不会，让我们的 expectation 非常之低，导致现在随便会点什么东西都让人感动得涕泗横流。今天就来总结一下 Toddler 在12-15个月之间的变化。 鞋和辫子：来自大人世界的束缚 # 文明世界要用鞋子的包裹和头发的绑缚来绑架纯真无邪的 Toddler 了！ 所在的 daycare 满12个月就要升班了，而在新班里面需要整天都穿鞋。穿鞋这个事我是很想往后拖拖的，原因有三：一是小孩子脚长得很快，买了鞋很快就要穿不下；二是买鞋是个学问，新手买到不合适的话容易限制 Toddler 腿脚和走路的发展；三是进一步说，给不会说话的人买鞋就像闭着眼绣花，完…",
-      "image": null,
-      "publishedAt": "2020-08-01T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/entering-toddler-phase/",
-      "detailPath": "articles/b3d542c16ea8a8a6d4c62264.json"
     }
   ]
 }

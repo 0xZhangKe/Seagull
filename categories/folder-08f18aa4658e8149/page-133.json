@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "331f73720a4836a18d48d51b",
+      "title": "英雄钢笔出水不畅的解决方法",
+      "summary": "年初所购英雄100钢笔出水不畅，甚至时常在满水情况下无法书写。 100在英雄里算是中高端，似乎出水问题已成英雄钢笔的通病，100也无法幸免。 将钢笔头进入沸水中，5到10秒，可以打开笔尖通道使得出水顺畅。如果一",
+      "image": null,
+      "publishedAt": "2016-01-05T20:37:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2016/01/05/2016-01-05-hero-pen/",
+      "detailPath": "articles/331f73720a4836a18d48d51b.json"
+    },
+    {
+      "id": "ba6a31bd5c6fb319e8662246",
+      "title": "原型的设计 2",
+      "summary": "之前在项目经验还没有那么多的时候，写了一篇原型的设计。现在看来，基本是在写自己的理解。现在来结合自己的实际项目，谈谈项目实践中的原型。",
+      "image": null,
+      "publishedAt": "2016-01-04T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/prototype-design-2",
+      "detailPath": "articles/ba6a31bd5c6fb319e8662246.json"
+    },
+    {
+      "id": "59eb7dcac874135f95121a74",
+      "title": "Android 中如何计算 App 的启动时间？",
+      "summary": "之前有人在知乎提问： “怎么计算apk的启动时间？” : 利用python或者直接用adb命令怎么计算apk的启动时间呢？就是计算从点击图标到apk完全启动所花费的时间。比如，对游戏来说就是点击游戏图标到进入到登录界面的这段时间。 已知的两种方法貌似可以获取，但是感觉结果不准确：一种是，adb shell am start -w packagename/activity,这个可以得到两个值，ThisTime和TotalTime，不知道两个有什么区别，而且与实际启动时间不匹配，两者相加都可能比实际启动时间小（测试游戏的时候差别更大）；另外一种是通过adb logcat的方式，感觉获取的结果也与实际有差别。 我和另外一个同事 郭启发 针对两个方面进行了回答，不过毕竟知乎上看的人会比较少，所以我在征得他的同意之后，…",
+      "image": null,
+      "publishedAt": "2015-12-31T05:52:30Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/12/31/How-to-calculation-android-app-lunch-time/",
+      "detailPath": "articles/59eb7dcac874135f95121a74.json"
+    },
+    {
+      "id": "4ab592d6dd42d126c5e9991a",
+      "title": "Android 应用启动优化:一种 DelayLoad 的实现和原理(下篇)",
+      "summary": "上一篇文章 我们使用第三种方法来实现延迟加载。不过上一篇写的比较简单，只是讲解了如何去实现，这一篇就来讲一下为何要这么做，以及这么做后面的原理。 其中会涉及到一些 Android 中的比较重要的类，以及 Activity 生命周期中比较重要的几个函数。 其实这个其中的原理比较简单，不过要弄清楚其实现的过程，还是一件蛮好玩的事情，其中会用到一些工具，自己加调试代码等，一步一步下来，自己对 Activity 的启动的理解又深了一层，希望大家读完之后也会对大家有一定的帮助。",
+      "image": null,
+      "publishedAt": "2015-12-29T08:34:06Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/12/29/Android%E5%BA%94%E7%94%A8%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96-%E4%B8%80%E7%A7%8DDelayLoad%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%92%8C%E5%8E%9F%E7%90%86-%E4%B8%8B%E7%AF%87/",
+      "detailPath": "articles/4ab592d6dd42d126c5e9991a.json"
+    },
+    {
       "id": "c89e3682bec065a4a2d91a67",
       "title": "SICP 第三章总结",
       "summary": "历时三个月，终于把第三章看完了。这三月发生了太多的意外，本文不打算说了，后面在写 2015 年终总结 时再来谈谈这三个月的事情。如今回过头来看看第三章的内容，好像也不怎么难，只是内容涉及的面稍微广一些而已，下面来回顾总结一下第三章。",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/what-key-is-this",
       "detailPath": "articles/258f65a2d255ab3654d8fb42.json"
-    },
-    {
-      "id": "7709cec67dff5fb848c78b39",
-      "title": "图片贴纸旋转缩放功能的实现",
-      "summary": "我们的项目包含图片编辑功能，特别是包含图片添加水印贴纸的功能，从最初的简单版可以添加一个图片并且移动位置，到现在添加的图片可以进行移动，以及缩放，旋转，已经是和其他的图片处理可以达到一样的很好的效果了。一直想要整理一下，分享一下实现的改进过程，一直没空，也由于我过于懒，没有动笔。今天正好有时间，分享一下。 原始阶段：直接添加ImageView，并且设置其在父view中的位置 父视图为RelativeLayout,贴纸view就是一个ImageView,通过设置topMargin和leftMargin来设置在父视图中显示的位置，不支持缩放和旋转。功能快速实现，代码比较冗余。再有了新的需求不方便扩展。 新阶段：自定义View，通过matrix变换实现各种功能 主要是定义一个View，在使用的时候放到需要用到的地方…",
-      "image": null,
-      "publishedAt": "2015-05-10T14:55:04Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-05-10-sticker-view/?utm_source=rss",
-      "detailPath": "articles/7709cec67dff5fb848c78b39.json"
-    },
-    {
-      "id": "1075c8315347f16bbff8abfa",
-      "title": "细说 Java 单例模式",
-      "summary": "单例模式也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。本文就从单例模式的两种构建方式来带大家了解一下单例，最后介绍一种高级且简洁的单例模式。 单例听上去简单，但在 Java 里有不少容易踩坑的地方：双重检查锁要不要 volatile 、静态内部类持有的初始化时机、用枚举实现单例为什么天然防反射和防序列化。本文会按”懒汉/饿汉的常规写法 → 双重检查锁 → 静态内部类 → 枚举”的顺序，把每种实现的适用场景和坑点串起来讲一遍。",
-      "image": null,
-      "publishedAt": "2015-05-06T10:09:43Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/05/06/Java-Singleton/",
-      "detailPath": "articles/1075c8315347f16bbff8abfa.json"
-    },
-    {
-      "id": "be082999f75e6d390b4472fa",
-      "title": "打破Android应用65K方法数魔咒",
-      "summary": "近日，我们的应用，在编译的时候不幸的遇到这个错误 Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536 这才让我意识到原来我们的程序中，方法数已经超过了65536。在之前，已经知道了android系统的java虚拟机dalvik在执行java程序时，使用原生类型short来索引dex文件中的方法，因此方法数就呗限制在65536了。之前我一直以为，这个数量已经很大了，不会达到上限，结果今天就达到了。 不过这个东西呢，我们也是很容易的进行解决的，因为，就在去年不久前，google官方提供了多dex的支持库，因此，我们可以很简单的解决这个问题。 开发工具升级 将android sd…",
-      "image": null,
-      "publishedAt": "2015-04-30T16:33:08Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-05-01-android-multi-dex/?utm_source=rss",
-      "detailPath": "articles/be082999f75e6d390b4472fa.json"
-    },
-    {
-      "id": "32209be0d89233087dbe6ae0",
-      "title": "《查令十字街84号》以及我眼中的书店",
-      "summary": "书店被唱衰不是一年两年的事了，不过也有那么一些人反对说：“书店不死。”当然，如果他指的是书店的实体，那的确，不管是作为政府文化建设的一部分，还是读书人情怀的载体，书店都会长期地伫立在街边。甚至有一种可能，那就是书店变得越来越庞大，成为地区的“文化标杆”。 在我眼里，书店的珍贵之处在于为书、知识、人提供了场地，让这三者有机的结合起来，而其中最重要的是人与人之间的交流。所以为了和那些“卖书的地方”——特别是卖教辅的——区分开来，越来越多的书店开始请名人，办讲座、读者交流会，吸引人流之后，再顺道提供咖啡茶饮，用这笔钱支持书店的发展。虽然这种讲座大多是推介新书的巡回站，有点功利的味道，但不失为书店发展的正确方向，作者和读者、读者和读者，都有机会因为共同的读书取向和兴趣领域成为好友。但大多数时候我们忽视了一个十分重要的…",
-      "image": null,
-      "publishedAt": "2015-04-23T19:37:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2015/04/23/2015-04-23-cross-bookstore/",
-      "detailPath": "articles/32209be0d89233087dbe6ae0.json"
     }
   ]
 }

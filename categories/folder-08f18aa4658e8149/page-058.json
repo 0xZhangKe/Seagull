@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "a0d4b2ffb1ce121203dbdafa",
+      "title": "怎麼選擇用什麼工具來做哪件事情？（無論是 Blog、DAW 還是任何物理工具）",
+      "summary": "最近一直在思考，如果有人問我 Blog 該怎麼架設，他如果完全不懂 Terminal，該推薦他 hugo 嗎？還是用 Wordpress 來架設，或有其他方式？ 想了許久，對一般人而言較簡單的方式，或許還是 Wordpress 吧？ 最終，Eddie 得到的結論是： 我用什麼，就推薦什麼；也建議如果大家在踏入完全不懂的領域時，選擇你身邊人使用的工具。 原因很簡單，教的人不用再多研究一個東西，學的人也絕對問得到答案，雙方皆大歡喜。 而這個觀念，Eddie 忘記是哪個編曲老師分享的，他說：「你身邊的人用什麼 DAW，你就用什麼，這樣你才有人能問，甚至你可以直接丟整個專案檔案請人幫你處理問題。」 以下是 Eddie 的各種入坑選擇（跟風）例子： 「我老師用 Logic Pro，我也用這個！」 「同業都用 Wing…",
+      "image": null,
+      "publishedAt": "2026-01-02T16:31:38Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/which-tools/",
+      "detailPath": "articles/a0d4b2ffb1ce121203dbdafa.json"
+    },
+    {
+      "id": "fa7668eb0cd7ba9fe404ffff",
+      "title": "隨機文章功能已上線！",
+      "summary": "到首頁點擊「 🎲 隨機文章 」就可以隨機選一篇文章來閱讀！ 這個功能跟「歷史上的今天」一樣，是爲了在文章數越來越多時，可以讓第一次到訪的讀者有一些方向可以看，而不會被文章列表嚇到。 如果你也想做一個 # 新增檔案 content/random.md --- title: \"隨機文章跳轉中...\" layout: \"random\" --- layouts/_default/random.html {{ partial \"header.html\" . }} < div class = \"article-meta\" > < h1 >< span class = \"title\" >{{ .Title }}</ span ></ h1 > </ div > < main > < div style = \"text-al…",
+      "image": null,
+      "publishedAt": "2026-01-02T16:19:00Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/random-article/",
+      "detailPath": "articles/fa7668eb0cd7ba9fe404ffff.json"
+    },
+    {
+      "id": "39204f3e6681d0e0c6e75edf",
+      "title": "在 Lenovo ThinkPad X200 与 HP EliteBook 820 G2 上构建并刷写带 UEFI 的 coreboot",
+      "summary": "警告：作者在笔记本看似正常工作后编写了此指南，未来可能会遇到问题。作者不对按照此指南操作造成的任何损害负责。 前言 我曾在我的 Lenovo ThinkPad X200 和 HP EliteBook 820 G2 上刷写过 Libreboot，但它们仅支持 SeaBIOS，而 SeaBIOS 仅支持 CSM。Libreboot 文档说明其 U-Boot 支持 EFI 启动，但我从未成功。Tianocore 是自由软件社区中成熟的 UEFI 实现，我最近发现可以使用 EDK II（Tianocore 的一个项目）构建并刷写 coreboot，从而获得 EFI 启动支持。 昨天，我完成了两台机器的构建与刷写，现分享操作流程。 Lenovo ThinkPad X200 对于 Lenovo ThinkPad X200…",
+      "image": null,
+      "publishedAt": "2026-01-02T13:39:14Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/build-and-flash-coreboot-with-uefi-on-lenovo-thinkpad-x200-and-hp-elitebook-820-g2/",
+      "detailPath": "articles/39204f3e6681d0e0c6e75edf.json"
+    },
+    {
+      "id": "14d295200eeb52ecdf299f30",
+      "title": "从 LAN 将所有互联网流量路由到 Tor",
+      "summary": "警告：请严格按顺序完成每一步，否则可能会失去 LuCI 的访问权限！强烈建议在操作前建立 SSH 连接，以便在失去 LuCI 访问时能够恢复更改。 警告：此操作在 GL.iNet Flint 2 (GL-MT6000) 上测试通过，但不保证适用于所有设备。如果任何步骤看起来不寻常或不清楚，请立即停止并撤销所有修改。 警告：本指南是在作者的路由器看似正常工作的情况下编写的。仍可能存在问题，安全性无法保证，因为部分流量可能会泄露。作者对按照本指南操作所造成的任何后果不承担责任。 本指南介绍如何将 LAN 的所有互联网流量通过 Tor 路由。此操作在 OpenWrt 24.10 上测试通过。 除 Tor 配置外，其余步骤可完全通过 LuCI 完成，无需 SSH。 步骤 1：安装和配置 Tor 首先在路由器上安装 T…",
+      "image": null,
+      "publishedAt": "2026-01-02T13:03:15Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/route-all-internet-traffics-from-the-lan-to-tor/",
+      "detailPath": "articles/14d295200eeb52ecdf299f30.json"
+    },
+    {
+      "id": "f86d7ffdb5a459e3201c5a4c",
+      "title": "少女・魔法・救赎",
+      "summary": "本文探讨魔法少女题材的演变，重点分析《魔法少女小圆》与《魔法少女的魔女审判》中的黑暗内核与原罪救赎主题，笔者分享游玩体验并表达对魔法少女精神的憧憬。",
+      "image": "https://ttio.cc/_astro/16973329_p0.ZO8xL41u_1zV4Rz.webp",
+      "publishedAt": "2026-01-02T12:09:32Z",
+      "sourceId": "c8f83e5c482b2a5b",
+      "sourceTitle": "記緒漂流",
+      "link": "https://ttio.cc/note/magical-girl",
+      "detailPath": "articles/f86d7ffdb5a459e3201c5a4c.json"
+    },
+    {
+      "id": "440179f1c6003dce42968225",
+      "title": "Apple 討厭開源 opus 格式",
+      "summary": "《最佳聲音有損格式》 中提到，檔案壓縮效率 opus > AAC > mp3。 其中 AAC 是 Apple 制定的，這個格式在 Apple 裝置下是暢通無阻。 但如果下載了 opus 會發現 Apple 內建的播放器無法打開（內建播放器只支援能 硬體解碼 的格式），無法丟進 Logic Pro 來做音樂，opus 簡直像是外星生物。 而 Youtube 在近期的新影片中，聲音編碼同時配有 AAC 與 opus，而 Spotify 用 opus，只有 Apple Music 仍舊使用 AAC。 直接指定原始格式要 AAC or opus # 編碼 指令 原生 AAC → .m4a yt-dlp -f 140 <URL> 原生 Opus → .opus/.webM yt-dlp -f 251 <URL> You…",
+      "image": null,
+      "publishedAt": "2026-01-02T07:42:14Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/apple-hate-opus/",
+      "detailPath": "articles/440179f1c6003dce42968225.json"
+    },
+    {
       "id": "e9979d9f4045a6f9507c4c6b",
       "title": "我有特别的 Surge 配置和使用技巧",
       "summary": "我使用 Surge Mac 作为网络核心有一段时间了。虽然 Surge 官方提供了一份「中国区用户推荐最小配置」，但是为了发挥 Surge 全部潜力的话、彻底值回 Surge 的售价、实现我的复杂需求，我添加了许多自定义的配置。",
@@ -593,72 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/have-partner/",
       "detailPath": "articles/d52132295da18296181d2e40.json"
-    },
-    {
-      "id": "980c892adfeeee5968d93ce8",
-      "title": "哥斯达黎加过冬记-2025年12月 & 公司线下团建",
-      "summary": "这一篇又名为：平移我的生活秩序要花多少钱",
-      "image": null,
-      "publishedAt": "2025-12-30T00:49:46Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/roam/winter-in-costa-rica-02/",
-      "detailPath": "articles/980c892adfeeee5968d93ce8.json"
-    },
-    {
-      "id": "b31d91abad269301fd7b202a",
-      "title": "年終總結之歲末的豐收喜悅",
-      "summary": "Hero Photo by Aditya Vyas on Unsplash 是定期",
-      "image": null,
-      "publishedAt": "2025-12-30T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/2025-annual-review/",
-      "detailPath": "articles/b31d91abad269301fd7b202a.json"
-    },
-    {
-      "id": "c68056e089e89b86320be216",
-      "title": "2025年概览",
-      "summary": "我常常想，时间是什么？它是河流，是尘埃，还是我们心中的刻度？我曾以为时间是线性的，从过去到未来，不可逆转。但后来发现，时间是循环的，是记忆的叠加，是我们对过去的不断重构。每一个瞬间都是永恒的切片，我们在切片中寻找意义，在意义中构建生命。 —— 史铁生 一 嘟嘟说，昨天（12月29日）是他 2025 年最开心的一天，今天是我觉得我这一年最漂亮的收尾。 老规矩，每年三个愿望。希望 2026 年能在小小的花园里挖呀挖，种几粒种子，开几朵花。再学习学习，再努力努力，再奋斗奋斗。整个 2025 年，就是马不停蹄地忙，还忙得不亦乐乎，上次这么有精气神儿的时候，恐怕要倒回五年前了。前几天同事吐槽，我今年明显多了一些白头发，好在我一直觉得白发挺帅的，尤其是黑白相间的时候，这也算是忙碌中的意外收获。 2025 年给自己留的作业…",
-      "image": "https://r2.elizen.me/2026/03/18136ed52e0ce61043e67e1729b4747e.jpg",
-      "publishedAt": "2025-12-30T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2025/12/2025%E5%B9%B4%E6%A6%82%E8%A7%88/",
-      "detailPath": "articles/c68056e089e89b86320be216.json"
-    },
-    {
-      "id": "b8a78f2f26e5af022909188a",
-      "title": "中文网络写作上的规则习惯",
-      "summary": "我一直在思考，什么时候应该使用粗体、什么时候应该使用斜体…… 以下是我的看法，相当于抛砖引玉。",
-      "image": null,
-      "publishedAt": "2025-12-29T17:41:51Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/c5d9.html",
-      "detailPath": "articles/b8a78f2f26e5af022909188a.json"
-    },
-    {
-      "id": "9dbf413c1b8d7361e762d173",
-      "title": "2025 年 12 月小结 Part1 之在慕尼黑的半日·回国感受",
-      "summary": "这个月和以往不同，大半个月都在外旅行，所以本月小结就权当作旅行记录了，太长所以分为两个部分。 其实我对于这次的回国之旅焦虑了很久。上一次回老家已经是疫情之前，当时就已感到没有手机和移动支付的话处处不便，加上这次又是第一次以外宾身份回国，就更加不知所措，加剧了我的紧张。出国前各种搜索能够用得上的信息： eSIM 、入境卡填写、微信支付，可想而知并不像加拿大一样有可靠的官方信息源，一切有用信息只流传于坊间消息和小红书里。",
-      "image": "https://img.thirdshire.com/2025/12/IMG_9070.webp",
-      "publishedAt": "2025-12-29T16:42:00Z",
-      "sourceId": "09c2f0f0946a1f21",
-      "sourceTitle": "第三夏尔 | Third Shire",
-      "link": "https://thirdshire.com/december-recap-2025-pt1/",
-      "detailPath": "articles/9dbf413c1b8d7361e762d173.json"
-    },
-    {
-      "id": "f56745f0f9d5809a92bad543",
-      "title": "离开纽约市的一天",
-      "summary": "我的坏习惯是记录下来的事情不会第一时间加工成文章发布。这件事是 5 号发生的，我于 19 号开始起草、29 号才发布……",
-      "image": null,
-      "publishedAt": "2025-12-29T14:35:15Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/18b0.html",
-      "detailPath": "articles/f56745f0f9d5809a92bad543.json"
     }
   ]
 }

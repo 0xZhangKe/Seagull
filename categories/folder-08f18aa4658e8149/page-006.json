@@ -1,6 +1,138 @@
 {
   "items": [
     {
+      "id": "a02ac7c8c3ec846895e831f5",
+      "title": "使用 Python 脚本将 CanoKey 恢复出厂设置",
+      "summary": "与 我大多数技术文章的写作方式不同——那些文章通常先由我本人撰写，再借助 LLM 润色 ，本文大部分内容由 LLM 撰写。我借助 LLM 找到了一种解决方案，确认它能够正常工作，然后将 LLM 的回答整理成了这篇文章。 我在搭载固件 3.0.3-0-g30917b92 的 CanoKey Canary 上测试了以下操作流程。 1. 准备所需工具 在 Debian 或 Ubuntu 上运行： $ sudo apt install python3-usb libusb-1.0-0 然后使用以下脚本发送命令： #!/usr/bin/env python3 import time import usb.core import usb.util VID = 0x20A0 PID = 0x42D4 INTERFACE =…",
+      "image": null,
+      "publishedAt": "2026-10-12T15:01:37Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/factory-reset-canokeys-with-a-python-script/",
+      "detailPath": "articles/a02ac7c8c3ec846895e831f5.json"
+    },
+    {
+      "id": "844b7d6332bb68869f3f8e5e",
+      "title": "按摩",
+      "summary": "距離高中畢業已經四年了，我覺得我變了很多，但也沒變。沒變的是什麼我也說不清，但我清楚有些在意的事情我還是沒完全妥協，只是我覺得我已經社會化很多了。感覺寫到這邊是不是可以接一些什麼情感澎湃的感觸文字，但我覺得現在感受是很平淡的，只覺得時間過得既快又慢，天知道這個人到底在說什麼。明年對我來說很重要到最近放假都覺得不是很輕鬆，我覺得我該好好停下來一下了。至少在這篇的文字中把自己的感受放在第一位。我記得我有幾篇文章有提到一個感覺，但覺得當時詞不達意。那個感覺隨時間累積，我慢慢有抓到一點神韻，簡單、露骨地說，就是我排斥因為部落格的公開性，讓我對自己的文字不誠實，但這個不誠實不是說我編造謊言，而是因為太顧慮別人的想法，而太過修飾文字。所以剛好現在疲憊的心，打字就像按摩般，答答答下去，不要想太多。 說起來我現在整個人是很謎…",
+      "image": null,
+      "publishedAt": "2026-10-12T14:57:21Z",
+      "sourceId": "9bbc7d640e2bc143",
+      "sourceTitle": "RayrrrrrR",
+      "link": "https://rayrrrrrrr.bearblog.dev/6842/",
+      "detailPath": "articles/844b7d6332bb68869f3f8e5e.json"
+    },
+    {
+      "id": "f79a4b082920cb07e29bf831",
+      "title": "SageFreedom 和我的第一个备用身份已失效",
+      "summary": "警告： 密钥 ID 为 0xD5C6AFE1A6186D1C 的 OpenPGP 密钥和密钥 ID 为 0x98313A47362B498B 的 OpenPGP 密钥已不再使用，现予以撤销。相应的身份分别是 SageFreedom 和 Rebel Zhang，因此均已失效。请勿再信任这两个身份。 我的主要身份 Rebel Zhang 目前仍然有效，对应的 OpenPGP 密钥 ID 为 0xBCD5DC5659C7FB50。我的备用身份对应的 OpenPGP 密钥 ID 为 0x4A52DBB4FB0D0262，目前也仍然有效。",
+      "image": null,
+      "publishedAt": "2026-10-12T14:44:24Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/sagefreedom-and-my-first-backup-identity-are-invalidated/",
+      "detailPath": "articles/f79a4b082920cb07e29bf831.json"
+    },
+    {
+      "id": "817a4a96e810f50737891ab8",
+      "title": "HTML里的“宏”",
+      "summary": "摊牌了，分享两个极少有人知道的技巧。 观察下面的网页 https://lab.est.im/xhtml/ 有没有发现神奇之处 <?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE html [ <!ENTITY my_symbol \"★\"> <!ENTITY wikipedia '<img height=\"14\" src=\"https://en.wikipedia.org/favicon.ico\" alt=\"Wikipedia\" />'> ]> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <title>Entity test</title> </head> <body> <p>hey &my_symbol;…",
+      "image": "https://www.mi.com/favicon.ico",
+      "publishedAt": "2026-10-12T13:29:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-40",
+      "detailPath": "articles/817a4a96e810f50737891ab8.json"
+    },
+    {
+      "id": "884e485d93d16fb68a68b5d5",
+      "title": "Accents ultimately don't mean a lot",
+      "summary": "One day when I went for my usual grocery shopping, I stumbled upon a child behind me when I was queuing up at a payment counter. The little kid, who looked to be of Chinese ethnicity and about two to three years old, was riding a fairly small-size bicycle which was obtained from the supermarket and wasn’t yet paid for. And then for some reason, he repeatedl…",
+      "image": null,
+      "publishedAt": "2026-10-12T10:27:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/accents-ultimately-dont-mean-a-lot/",
+      "detailPath": "articles/884e485d93d16fb68a68b5d5.json"
+    },
+    {
+      "id": "90cbaa7b53451f37c9867892",
+      "title": "巴别塔",
+      "summary": "Emoji 常被喻为现代的巴别塔或新世界语，但是塔终归还是要建在地上，而各地又有各地的规矩。 fin. 激赏 ！ 来信 。",
+      "image": "https://kaix.in/2026/1012/emoji_hu5873760166305983695.jpg",
+      "publishedAt": "2026-10-12T09:29:04Z",
+      "sourceId": "f451863227fe105c",
+      "sourceTitle": "KAIX.IN",
+      "link": "https://kaix.in/2026/1012/",
+      "detailPath": "articles/90cbaa7b53451f37c9867892.json"
+    },
+    {
+      "id": "7520f241580182b8dc0c5165",
+      "title": "AI 都这么强了，碰到问题为什么你还是卡着",
+      "summary": "哪怕 AI 已经这么强了，我注意到身边的人碰到问题还是会卡住，无法利用现有的工具去解决问题，我一度思考为何会产生这样的局面，有种拿着屠龙刀切菜的感觉。",
+      "image": null,
+      "publishedAt": "2026-10-12T08:30:36Z",
+      "sourceId": "e0d7bbaba7286f4d",
+      "sourceTitle": "Rolen's Blog",
+      "link": "https://rolen.wiki/why-still-stuck-with-ai/",
+      "detailPath": "articles/7520f241580182b8dc0c5165.json"
+    },
+    {
+      "id": "b7e29e008e9d638c2599ee7d",
+      "title": "終究還是人啊",
+      "summary": "問：人的最可貴之處是什麼？ 答：會讓我們感嘆「終究還是人啊」的東西。 至於會讓我們說出「終究還是人啊」的事物或行爲是什麼？這真是個值得我們捫心自問的問題呢。",
+      "image": null,
+      "publishedAt": "2026-10-12T06:25:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/still-a-human-after-all/",
+      "detailPath": "articles/b7e29e008e9d638c2599ee7d.json"
+    },
+    {
+      "id": "8f37dcace1c31bf70f547b9f",
+      "title": "Proliferation of AI signages",
+      "summary": "I’ve come across this blog post written by luke.zip , talking about the increasing ubiquity of (obviously) AI-generated signages around where he lives. Oh gosh, I can relate to this so much, as it’s the exact same thing that’s been happening around the streets in Malaysia as well! ⚠️ Eyesore alert: an example of an AI-generated signage used by an actual res…",
+      "image": "https://microblog.ttheng.com/blog/img238.jpg",
+      "publishedAt": "2026-10-12T05:34:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/proliferation-of-ai-signage/",
+      "detailPath": "articles/8f37dcace1c31bf70f547b9f.json"
+    },
+    {
+      "id": "967ac6e7d818016fe56a4d9e",
+      "title": "Toots 440 2026 Oct.4 - Oct.10",
+      "summary": "「寒露。」",
+      "image": null,
+      "publishedAt": "2026-10-12T05:27:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20261010/",
+      "detailPath": "articles/967ac6e7d818016fe56a4d9e.json"
+    },
+    {
+      "id": "82cecf9dae58541b984d7c1f",
+      "title": "冰箱艺术家",
+      "summary": "这个周末，我把我的公众号搞得有点像是小红书。先是发了一条贴图：《 老登冰箱贴 》，发现留言区里有很多读者展示了自己家的冰箱贴，于是又专门发了一条征集贴：《 看看大家的冰箱贴 》，这下子看到了琳琅满目的私人收藏。 我个人很喜欢读者朋友分享的这些内容。当我看到各种各样的冰箱门或是磁力面板上贴着冰箱贴，无论这些冰箱贴是购自博物馆、风景区、网购平台，还是自己手工制作，我都会把这些装点自己冰箱门的读者视为和我一模一样的创作者---我用文字和图片创作，他们用现成品做拼贴，同样也是一种创作。 也有读者不能理解冰箱贴，甚至看轻这种拼贴行为，其实，只要自己真正从事一点什么创作就能理解这背后需要些什么。在一个大平面上，如何安排不同颜色、形状、材质、内容的冰箱贴，怎么处理它们之间的关系，以及最后布置完毕之后呈现出怎样的一种视觉效果…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkEjt_3A4nOoITIK-ZZPbq83Zg_kLbr6HOsnVGBmfKqa2Y1an_OPGeuv7UHIfEGCTaA9YdKL1gdcMKTGz-bF6EudTyMoNcMa9_iAODJOzzh5R-S2GQGmZK6mo64lCLMFUxAuFqCiRGi5K8fwOGOzd1oWx7IT8DKSy7as0pwRdDOIRMc566kCLJTgGNt2o/s72-w456-h605-c/hecaitou__--ar_34_--sref_2069485909_--profile_p3puw41_--sw_30_2c656f4f-1fb4-4bb4-b848-281cd9a95454_3-gigapixel-cgi-2x.jpeg",
+      "publishedAt": "2026-10-12T04:51:07Z",
+      "sourceId": "095c6fbac5bbadfd",
+      "sourceTitle": "槽边往事",
+      "link": "https://www.hecaitou.com/2026/10/The-Refrigerator-Artist.html",
+      "detailPath": "articles/82cecf9dae58541b984d7c1f.json"
+    },
+    {
+      "id": "4c867c62e8d0c444b0df7129",
+      "title": "一點點骨氣",
+      "summary": "趕公車時，堅持不跑起來。",
+      "image": null,
+      "publishedAt": "2026-10-12T04:43:22Z",
+      "sourceId": "d6867515c49adbbd",
+      "sourceTitle": "Noa's Blog",
+      "link": "https://noa.bearblog.dev/a-little-bit-of-spine/",
+      "detailPath": "articles/4c867c62e8d0c444b0df7129.json"
+    },
+    {
       "id": "f730c1af27d35e0ce49c87f8",
       "title": "【開箱】OXD 效果器",
       "summary": "OXD 由來 # 一顆效果器，含運費新臺幣 500 有找，你敢信嗎？ OXD 本人 OXD 是復刻 OCD 效果器，而 OCD 是由一個老先生所製作，已經停產。 OXD 的會把吉他染色成 Marshall 音箱的形狀，削波的程度大約在從 Chrunch 到 Distortion，但在訊號的定位仍然是效果器，並非箱頭或箱體模擬。 這次測試，使用 Fender 單單單拾音器 -> OXD -> GP50（掛箱體模擬 Twin Reverb + 一些 Delay + 一些 Reverb） -> DAW 三顆旋鈕 # OXD 這顆效果器的 Gain（Drive） 大概可以分三個檔位，有三種不同的「麻」度；再通過 Tone 鈕來決定明亮度；最後使用 Volume 決定輸出的 Level 多大。 有個 HP/LP 開關，…",
@@ -527,138 +659,6 @@
       "sourceTitle": "恐龍化石的網誌",
       "link": "https://cylikesreading.wordpress.com/2026/10/10/rotten_or_broken_friendships/",
       "detailPath": "articles/0f1fafd8766890d86fe167a9.json"
-    },
-    {
-      "id": "a02b14ec7b323a52c47f17e9",
-      "title": "代禱事項",
-      "summary": "不管你是不是基督徒，都可以透過這個表單請我幫忙禱告。",
-      "image": null,
-      "publishedAt": "2026-10-09T17:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/prayer-request/",
-      "detailPath": "articles/a02b14ec7b323a52c47f17e9.json"
-    },
-    {
-      "id": "1160067f0b073589722e076c",
-      "title": "每夫吐槽（120）",
-      "summary": "臭宝在家里难得看一回电视，几个小时之后，把机顶盒遥控器弄丢了。可能是扔到鸭脖残骸中当垃圾一起扔了。 她可以不看，但她想看的时候不可以看不成。那就再配一个遥控器吧。 机顶盒早已停产，某宝上搜，没仔细看，拍回来才发现是带红外接收器的。这带来个问题，就是用了遥控器就不能插U盘，给我装APP带来了极大的不便（不喜欢开共享）。退了。 再搜，发现同型号遥控器早已绝版。有二手的也卖得死贵，6、70一枚。小黄鱼上价格也差不多。有心买同品牌其它系列的，又怕匹配不上白白浪费时间。 灵机一动，我干脆买整个机顶盒啊。果然，找到一个品相不太好的，只卖85，反正我又不图你盒子，只图遥控器啊。店家特别说明，送的两个遥控器不是原装的，但都保证好用。 东西到了之后，立刻测试。不好使。而且两个都不好使。跟店主录屏掰扯半天，店主教了用鼠标删除蓝牙…",
-      "image": null,
-      "publishedAt": "2026-10-09T15:13:19Z",
-      "sourceId": "474e724b69cd3e76",
-      "sourceTitle": "破襪子",
-      "link": "https://pewae.com/2026/10/random_kuso_120.html",
-      "detailPath": "articles/1160067f0b073589722e076c.json"
-    },
-    {
-      "id": "bd1adbe10724a7e0259de1c6",
-      "title": "2026 年十一假期",
-      "summary": "今年十一没出门，因为没什么旅游的兴趣，怕了人山人海。境外热门地方也挤满了中国人。还有个原因是娃上小一了，有点紧张怕他请假影响学习，尽管我内心深处认为应该没啥影响。因为要给娃腾空间放学习桌，十一前一周我就开始收拾书房了，此项工作持续到假期最后一天。扔了十几大袋闲置或无用的物品，才发现有很多没拆封的玩具、书籍。有些是我买的，有些是别人送的，虽然可惜，但既然这么多",
-      "image": "https://yipai.me/media/blog/assets/cdc2a728-da83-4374-9587-13b151a209bc-fc10099ca7e375ca.jpg",
-      "publishedAt": "2026-10-09T14:35:22Z",
-      "sourceId": "211ed4466033fe3d",
-      "sourceTitle": "一派胡言",
-      "link": "https://yipai.me/post/2554.html",
-      "detailPath": "articles/bd1adbe10724a7e0259de1c6.json"
-    },
-    {
-      "id": "8de84619ae9db099a5cef674",
-      "title": "關於那所謂的「亞洲英語腔」",
-      "summary": "⚠️ 這是一篇措辭強烈的「黑粉」抱怨文，請斟酌閱讀。 其實我一直在猶豫該不該寫這篇文，因爲對某些網紅或公衆人物而言，「炎上商法仍舊是一種商法」（或用英文來表達的話：Negative engagement is still engagement），我不想因爲這篇文而給予這些人更多的注意力（或甚至是名氣）。 耗費自己這麼多的精力，只爲了對着空氣去罵一個對此感到不痛不癢的人？真的是「 嘥～氣～ 」啊。 不過咧，我還是「過不了自己那關」：爲了發洩我心裡積累的不快，並且讓其他人看清這些人的「把戲」（？），我還是決定將此文寫下來。 在西方英語圈的搞笑表演中，有時會出現那些扮演着像是「『亞洲』大叔」或「虎媽」（tiger mom）等的角色，並且口操「亞洲英語腔」（Asian accent）講話的橋段。 以下這部影片可以說是…",
-      "image": null,
-      "publishedAt": "2026-10-09T13:29:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/about-the-so-called-asian-accent/",
-      "detailPath": "articles/8de84619ae9db099a5cef674.json"
-    },
-    {
-      "id": "e09a3c14465fac0ece6468b4",
-      "title": "2026-07-27 / 一天",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:33:49Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/86/",
-      "detailPath": "articles/e09a3c14465fac0ece6468b4.json"
-    },
-    {
-      "id": "305ccee7e55248fc03e35a97",
-      "title": "2026-08-04 / 始皇帝",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:14:43Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/94/",
-      "detailPath": "articles/305ccee7e55248fc03e35a97.json"
-    },
-    {
-      "id": "c75faadcc96d2c43212104fd",
-      "title": "2026-08-03 / EMOMOMO",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:05:36Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/93/",
-      "detailPath": "articles/c75faadcc96d2c43212104fd.json"
-    },
-    {
-      "id": "d7144be117aacb701756cafe",
-      "title": "月滿盈缺",
-      "summary": "喜歡 陰晴圓缺 潮起潮落 喜歡 現在的自己 喜歡 一直把過去的我拿來嘲弄 嘲笑自己不會被自己討厭 不會有人因為 […] The post 月滿盈缺 first appeared on susushare.com .",
-      "image": "https://static.xx.fbcdn.net/images/emoji.php/v9/t6c/1/16/2764.png",
-      "publishedAt": "2026-10-09T11:27:45Z",
-      "sourceId": "ea1569cbd69bdce9",
-      "sourceTitle": "susushare.com",
-      "link": "https://susushare.com/%e6%9c%88%e6%bb%bf%e7%9b%88%e7%bc%ba/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%259c%2588%25e6%25bb%25bf%25e7%259b%2588%25e7%25bc%25ba",
-      "detailPath": "articles/d7144be117aacb701756cafe.json"
-    },
-    {
-      "id": "6197df5c8290ac9058f00d08",
-      "title": "格友見面會（二）",
-      "summary": "最近跟蝦波看了《畫完這個再去死》這部作品，裡頭很多關於同人展的劇情，很想實際感受一下展場的氣氛。剛好 LQ7 老師提到會出沒在「いつか一緒に輝いて－百合向 ONLY」同人活動，這麼天時地利人和的機會，當然必須好好把握才是。",
-      "image": "https://shuojen.com/assets/images/001-e85c0ae7485b7efd425639cd1e5ded13.webp",
-      "publishedAt": "2026-10-09T07:28:58Z",
-      "sourceId": "19b15d378a85c1f7",
-      "sourceTitle": "Shuo-jen Blog",
-      "link": "https://shuojen.com/blog/2026/10/09/meetup",
-      "detailPath": "articles/6197df5c8290ac9058f00d08.json"
-    },
-    {
-      "id": "36b70c06f2654cbbaf70b5a9",
-      "title": "創作進行式 #48：在書店當Sales",
-      "summary": "東京一月遊 / 瘋狂上Podcast / 在書店當Sales",
-      "image": "https://media.alexhsu.com/img/tokyo-todays-special.webp",
-      "publishedAt": "2026-10-09T06:49:36Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/bookstore-sales",
-      "detailPath": "articles/36b70c06f2654cbbaf70b5a9.json"
-    },
-    {
-      "id": "704c54d0a74b6ccfc21bfc07",
-      "title": "坏人的定义",
-      "summary": "在网上看到一个说法，判断一个人是不是坏人，不需要等到他做出什么大奸大恶的事情来，只需要看他平素如何对待一个善良的人，尤其是如何对待一个善良且弱势的人，是否会利用对方这种善良步步紧逼，是否会任意挥霍这种善意却毫不在乎，就可以直接判断。 我听完觉得很有道理，并且推论出一个关于坏人的定义：只要谁习惯性地利用他人的善良本性和回避冲突的心理，让对方一次次陷入为难，一次次占对方便宜，甚至以此为乐，那他就是个坏人。 很少听说谁在单位年会上喝醉了暴打自己领导的，但经常看到有人在宵夜摊上两杯马尿下去，就对着店小二拍桌子打板凳。在年会上让一个人保持衣冠楚楚，彬彬有礼，谈吐不俗的东西，为什么会在宵夜摊上失效？因为那个东西不是人性中的良善，而是对权力和实力的敬畏。在年会上是对他人实力的尊重，等到了宵夜摊上，感觉实力落在了自己身上，这…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB9cXIY6jz0pCIVb4fTrw_ELlYFAXxp31-KwN2P3R_XAfubek04L25Aaz_T6TvrUfhDrJMXOd-fs-FR0-OTAgJ1hGKr5t7zkzpR9uNjL706Lwk7-OBOZasQAQxWWcBryhG6YyYIj-g3HGCM8a68CTaF7memmDDB9u49PgA-zcm3jIaHKS8lSplWYVEmUQ/s72-w530-h704-c/hecaitou_A_bald_and_fat_Chinese_man_with_round_black_glasses__d381b0d4-7cfc-42a6-8f66-ebd023ad2cd2_0-gigapixel-cgi-2x.jpeg",
-      "publishedAt": "2026-10-09T04:42:11Z",
-      "sourceId": "095c6fbac5bbadfd",
-      "sourceTitle": "槽边往事",
-      "link": "https://www.hecaitou.com/2026/10/on-defining-the-bad-person.html",
-      "detailPath": "articles/704c54d0a74b6ccfc21bfc07.json"
-    },
-    {
-      "id": "23b2e5944b4face107fcdf7a",
-      "title": "語言是工具，使用在意念",
-      "summary": "我曾經聽過一個故事，我印象它是這麼說的。很久很久以前，人類只有一種語言，所以人類很團結，有天他們想合力建造一座通天塔，神看到後感到震怒，於是把人類的語言變混亂，讓他們無法彼此了解，於是停止了工程。雖然這個故事可能有一些宗教上的其他意涵，但由於我不是信徒，所以對這塊比較沒涉獵。我想我對這個故事著迷的點，應該在語言的力量這個概念上吧，它給了我看待語言的另一個視角。 如果我們可以不用透過言語，透過心電感應，將心中的意念直接透過電波傳遞出去，不用中間再多一層的語言轉譯，這樣就能溝通那會有多好啊。說到這個，你是思考時心中會有聲音的人類嗎?我是。我曾聽過有些人是屬於思考時腦中不會撥放自己講話聲音的那類人，我就好難想像那是什麼樣的感覺。我在猜如果可以心電感應的話，腦中會不會就是這樣只存在抽象的意念呢。我覺得意念是最純粹的，…",
-      "image": null,
-      "publishedAt": "2026-10-09T04:29:00Z",
-      "sourceId": "9bbc7d640e2bc143",
-      "sourceTitle": "RayrrrrrR",
-      "link": "https://rayrrrrrrr.bearblog.dev/9896/",
-      "detailPath": "articles/23b2e5944b4face107fcdf7a.json"
     }
   ]
 }

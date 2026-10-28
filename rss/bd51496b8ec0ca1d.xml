@@ -5,8 +5,18 @@
     <link>https://koimsurai.com/blog</link>
     <description>宙と木，Koimsurai 的手記。一個寫代碼的人，偶爾造點東西。</description>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 27 Oct 2026 07:22:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 08:10:32 GMT</lastBuildDate>
     <atom:link href="https://koimsurai.com/rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>為什麼我把 Mermaid 換成 Obsidian 開源的 pele：快 20 倍，渲染器剩三成</title>
+      <link>https://koimsurai.com/blog/mermaid-to-pele-obsidian-renderer</link>
+      <guid isPermaLink="true">https://koimsurai.com/blog/mermaid-to-pele-obsidian-renderer</guid>
+      <description>這篇記錄作者把部落格的 Mermaid 渲染器從官方套件、beautiful-mermaid 一路換到 Obsidian 團隊開源的 pele 的過程。作者拿站上 136 張圖實測,pele 全部渲染成功、比 beautiful-mermaid 快約 9 倍、SVG 小四成,畫出來的版面也乾淨很多。文中附上接進 TanStack Start 的做法:伺服器端出 SVG、渲染器只能動態 import、換主題只換 CSS 變數、下載圖片時把顏色寫回 SVG,以及把作者自訂的節點顏色歸成四種角色。最後是作者協作的開源專案 tessera 在瀏覽器端換成 pele 的效果:要下載的渲染器剩三成,每次重畫快了約 20 倍。</description>
+      <author>Koimsurai</author>
+      <pubDate>Tue, 27 Oct 2026 07:18:56 GMT</pubDate>
+      <category>位元築夢</category>
+      <category>前端開發</category><category>TanStack Start</category><category>Mermaid</category><category>pele</category><category>Obsidian</category>
+    </item>
     <item>
       <title>把部落格翻新成一片宇宙：572 天的累積、四天的翻新，和一顆串起每一頁的琥珀點</title>
       <link>https://koimsurai.com/blog/blog-redesign-dots-and-lines</link>

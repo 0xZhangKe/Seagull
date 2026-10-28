@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "abe90e568fbf0bd56f360ec4",
+      "title": "hadoop1.0 高可靠性(HA)安装与总结",
+      "summary": "继上次 安装完Kerberos安全认证 后，现在我在这基础上，又给CDH加上了HA（high availability），也就是高可靠性，具体来讲就是双NameNode，双Jobtracker（我还是在MRv1模式下），有了HA后，这下集群的健壮性就能够得到很好的保证了。 我还是按照 官方文档 来操作的，有了上次的经验，建议大家在具体操作实施前，先快速阅读一遍，做到心中有数，我还阅读了 Apache官方的说明 ，也不用怎么详细，大概知道怎么回事就行了。",
+      "image": null,
+      "publishedAt": "2014-07-17T15:07:34Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/17/cdh-ha-installation/",
+      "detailPath": "articles/abe90e568fbf0bd56f360ec4.json"
+    },
+    {
       "id": "fce364f321db5fe2d25cb852",
       "title": "hadoop1.0 安全认证(kerberos)安装与总结",
       "summary": "俗话说得好，万事开头难。在软件开发中，环境部署要算是第一门槛了。我最近折腾了一周时间把cdh5.0.2.tar.gz版本在MRv1模式下，成功集成了Kerberos安全认证，并且是在全分布式模式下。经过这次安装过程，对hadoop的了解又深入了一层。现在趁着自己刚搭建完环境，脑子还时不时的闪现遇到的错误，把我的安装过程记录于此，一方面方便自己今后查阅，另一方面希望对今后遇到同样问题人有所启发。",
@@ -648,17 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/halved-gate/",
       "detailPath": "articles/4a58208d8d324ee495c9c1f6.json"
-    },
-    {
-      "id": "f9f598a4dcaeb19ce43e35fe",
-      "title": "烏魯瓦圖神廟的斷崖",
-      "summary": "哇，世界美景！( at Bali Uluwatu Temple ) 2026 年 1 月 5 日備註： 這是當時的我剛創建 Facebook 帳號不久後，隨手找來於不久前在印尼巴厘島的家庭旅行中拍下的照片並上傳的貼文。",
-      "image": "https://microblog.ttheng.com/blog/img48.jpg",
-      "publishedAt": "2012-08-25T06:11:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/bali-uluwatu-temple/",
-      "detailPath": "articles/f9f598a4dcaeb19ce43e35fe.json"
     }
   ]
 }

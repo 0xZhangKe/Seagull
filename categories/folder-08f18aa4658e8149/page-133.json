@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "c89e3682bec065a4a2d91a67",
+      "title": "SICP 第三章总结",
+      "summary": "历时三个月，终于把第三章看完了。这三月发生了太多的意外，本文不打算说了，后面在写 2015 年终总结 时再来谈谈这三个月的事情。如今回过头来看看第三章的内容，好像也不怎么难，只是内容涉及的面稍微广一些而已，下面来回顾总结一下第三章。",
+      "image": null,
+      "publishedAt": "2015-12-26T12:53:33Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/12/26/sicp-chapter3-summary/",
+      "detailPath": "articles/c89e3682bec065a4a2d91a67.json"
+    },
+    {
       "id": "c0d95b41af06de28c049ce52",
       "title": "Android WebView 上传文件支持全解析",
       "summary": "默认情况下情况下，使用Android的WebView是不能够支持上传文件的。而这个，也是在我们的前端工程师告知之后才了解的。因为Android的每个版本WebView的实现有差异，因此需要对不同版本去适配。花了一点时间，参考别人的代码，这个问题已经解决，这里把我踩过的坑分享出来。 主要思路是重写WebChromeClient，然后在WebViewActivity中接收选择到的文件Uri，传给页面去上传就可以了。 创建一个WebViewActivity的内部类 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 4…",
@@ -648,17 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2015/04/23/2015-04-23-cross-bookstore/",
       "detailPath": "articles/32209be0d89233087dbe6ae0.json"
-    },
-    {
-      "id": "26a3594185e80e32beeacf00",
-      "title": "Android 性能优化典范 - Profile GPU Rendering",
-      "summary": "系列文章目录： Android性能优化典范综述 Android性能优化典范之Render Performance Android性能优化典范之Understanding Overdraw Android性能优化典范之Understanding VSYNC Android性能优化典范之Profile GPU Rendering “If you can measure it, you can optimize it” is a common term in the computing world, and for Android’s rendering system, the same thing holds true. In order to optimize your pipeline to be more…",
-      "image": null,
-      "publishedAt": "2015-04-19T07:53:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/04/19/Android-Performance-Patterns-4/",
-      "detailPath": "articles/26a3594185e80e32beeacf00.json"
     }
   ]
 }

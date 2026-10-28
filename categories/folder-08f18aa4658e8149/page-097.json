@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "ae37d248a093c1f373367439",
+      "title": "2024 10月的部落格網站改版",
+      "summary": "爲何改版 # Eddie 一直有強迫症的症狀，想把東西弄成心目中的 100 分，但現實往往是做不到的。 原本有一個藍圖，覺得部落格應該弄得怎樣怎樣，現在的想法則是「越簡單越好」。 現在使用主題模板爲 classic 。 基本上就是極簡 + 暗色風格，甚至還帶有一種純純的 HTML 文件感XD 這樣的情境下，不用再處理一堆麻煩的程式碼問題，我只要開心的想寫文章就寫文章！ 功能越多反而都是花時間在研究 hugo 主題的架構，現在的想法則是越簡單越好，想要什麼新功能，再從現有的基礎上去研究就好！ 目前頁面簡單分成： # ~/eddie’s blog 首頁按鈕 ~/文章分類 文章分類，每篇文章會設定一個 「catogory」屬性，來歸類文章 ~/文章總覽 依照時間列出所有文章 ~/動態時報 完全獨立的部落格系統，這裡…",
+      "image": null,
+      "publishedAt": "2024-10-03T12:46:29Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/2024blog/",
+      "detailPath": "articles/ae37d248a093c1f373367439.json"
+    },
+    {
+      "id": "f3ab5231674e9e61fe5744a9",
+      "title": "去背",
+      "summary": "Rembg 真是好好用阿！只要一行指令就直接去背好了；可以單張圖處理之外，也可以一次處理整個資料夾。",
+      "image": "https://wiwi.blog/assets/images/rembg-e17924c54f7733ea9dfe9b8f5a495907.jpg",
+      "publishedAt": "2024-10-03T12:35:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/rembg",
+      "detailPath": "articles/f3ab5231674e9e61fe5744a9.json"
+    },
+    {
       "id": "cd5cc72bdbe12a0b8e1a8c8f",
       "title": "如何使用 WASMTIME 来运行 CPython for WASI，然后利用 Python 实现的 HostFunction 来扩展它？",
       "summary": "国庆节搞了一个活，利用 wasmtime 来执行编译成 WASM/WASI 字节码的 CPython 虚拟机，并在宿主机一侧利用 Python 实现的 Host Function 来扩展它。 再次声明一下，这个只是我个人想搞的活，没有再任何生产环境中得到验证，just for fun（XDDD",
@@ -285,17 +307,6 @@
       "sourceTitle": "刑辩人在路上",
       "link": "https://xingbianren.cn/post/269.html",
       "detailPath": "articles/dca522dbf6b6eb397150fd42.json"
-    },
-    {
-      "id": "9f822b8d2c564a921570a928",
-      "title": "阿克苏初体验",
-      "summary": "昨天和小x收拾了一天房间，因为上一任租客把房子弄的很脏，之前二姐交代了外甥打扫，但是小孩子毕竟能力有限，并没有打扫的很干净，于是还是需要我俩再清理，昨天就干了一天卫生，傍晚二姐带我们吃了「馕坑肉」和「锅子」。 前者是把羊肉放在土制的炉子中烤制而成，在很多年前大都是烤馕同时就把肉一起烤制了，现在饭店更加专业了，专门为馕坑肉烤制而弄了个炉子，烤馕也是专门的炉子，两者分开了。锅子的制作和内地有所不同，我们山东锅子或者火锅都是点什么菜上什么菜，自己加进去，而新疆的锅子是直接端上来一个铜制老式碳锅，中间冒着点点火星和袅袅青烟，周边就是滚烫的汤水，锅子里放的是牛肉和各种时蔬，偏向于喝汤，当然，牛肉也很好吃。 新疆人性格直爽，到什么程度呢，甚至连我们习以为常的「客套话」都懒得讲，比如在山东，请客做东的主家会一直不停的让宾客…",
-      "image": "https://ihaihe.cn/wp-content/uploads/2024/09/4833501a67bd1c3535a8590653143136.webp",
-      "publishedAt": "2024-09-25T10:17:47Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/2543.htm",
-      "detailPath": "articles/9f822b8d2c564a921570a928.json"
     },
     {
       "id": "fc1c16009f83a08be6347bc4",
@@ -648,17 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/offline-ai",
       "detailPath": "articles/1a11f6d3c8ab29c9ef477b7b.json"
-    },
-    {
-      "id": "c03c7e5ba9b87d9506c16190",
-      "title": "Android源码分析：Activity启动流程Task相关分析",
-      "summary": "Activity的启动分析，很大一块需要了解的是Activity的Task管理，以及启动过程中Task的决策，在之前分析启动流程中，关于Task处理的部分，我这里是简化掉了很多的，今天再来分析一下。 入口与计算启动参数 在之前分析Activity的启动中，已经看到了关于处理Task的代码是在 ActivityStart 当中的 startActivityInner 方法当中，这个方法有不少入参，先捋一遍： resultTo为调用的Activity的 mToken(IBinder) ActivityRecord r, //新创建的Record，包含calling信息和要打开的ActivityInfo等 ActivityRecord sourceRecord, //resultTo不为空的时候才会去使用`Acti…",
-      "image": "https://img.isming.me/image/compute_launch_flag.png",
-      "publishedAt": "2024-09-13T09:57:05Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-13-activity-start-task/?utm_source=rss",
-      "detailPath": "articles/c03c7e5ba9b87d9506c16190.json"
     }
   ]
 }

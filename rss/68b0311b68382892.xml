@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/rss/styles.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>桜庭夜 | 杂话铺子</title><description>一间由桜庭夜经营的贩售闲言碎语的小店</description><link>https://yuuikic.com/</link><language>zh-cn</language><item><title>P2：面向 Nazurin 的 Pixiv 作品悬停预览扩展</title><link>https://yuuikic.com/archives/p2-browser-extension/</link><guid isPermaLink="true">https://yuuikic.com/archives/p2-browser-extension/</guid><description>一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 Nazurin 收藏图片的工作流。</description><pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate><content:encoded><![CDATA[<div></div>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/rss/styles.xsl" type="text/xsl"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>桜庭夜 | 杂话铺子</title><description>一间由桜庭夜经营的贩售闲言碎语的小店</description><link>https://yuuikic.com/</link><language>zh-cn</language><item><title>P2：面向 Nazurin 的 Pixiv 作品悬停预览扩展</title><link>https://yuuikic.com/archives/p2-browser-extension/</link><guid isPermaLink="true">https://yuuikic.com/archives/p2-browser-extension/</guid><description>一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 Nazurin 收藏图片的工作流。</description><pubDate>Mon, 05 Oct 2026 15:30:00 GMT</pubDate><content:encoded><![CDATA[<div><p><a href="https://github.com/Yuuikic/pixiv-preview">GitHub · Yuuikic/pixiv-preview</a></p></div>
 <p>P2 是一个用于预览 Pixiv 作品的 Chrome 扩展，特别支持使用 <a href="https://github.com/y-young/nazurin">Nazurin</a> 收藏图片的工作流。</p>
 <p>浏览 Pixiv 的关注动态、搜索结果、排行榜、收藏和用户主页时，无需逐个打开作品页面就能欣赏图片。预览功能开箱即用，也可独立使用，无需配置 Nazurin。</p>
 <ul>
@@ -28,7 +28,7 @@
 <p>为了实现和简化这个流程，P2 以悬浮窗的形式展示完整尺寸的图片，并支持通过点击、拖拽和快捷键的方式使悬浮窗“留驻”，最终用户可以发送悬浮窗对应的作品链接给 Nazurin，以此实现便捷的 Pixiv 平台的 Nazurin 收集插画功能。</p>
 <p>那么，在日常使用时，只需要“悬停-预览-按下快捷键（默认为D）”，就能将图片交给 Nazurin 收集处理了。不需要将鼠标移出浏览器视口，不需要鼠标点击，一气呵成。</p>
 <p>如果觉得一次只 D 一张图片还是麻烦，那么可以将想要收集的图片的预览浮窗按 S 键留驻，然后通过 <code>Shift</code>+ <code>D</code> 批量提交给 Nazurin。当屏幕尺寸够大（或者视口缩放合适）时，开启“自动排列留驻窗”后，浮窗在留驻时便能自动缩放并移动到页面两侧空白区域，从而避免遮挡内容。</p>
-<div><video controls preload="metadata"><source src="https://yuuikic.com/_directive-media/assets/p2.mp4"></source><p><a href="https://yuuikic.com/_directive-media/assets/p2.mp4">点击下载视频</a></p></video></div>
+<div><video controls="" preload="metadata"><source src="https://yuuikic.com/_directive-media/assets/p2.mp4" /></video><p><a href="https://yuuikic.com/_directive-media/assets/p2.mp4">观看或下载视频 →</a></p></div>
 <p>如果你恰巧是一位 Snipaste 的用户，那么你或许对浮窗的操控方式会非常熟悉。除了一般的拖动窗口边缘来缩放浮窗，你还可以使用鼠标滚轮来达到同样的目的。另外，通过双击浮窗，可以更简单地关闭浮窗。</p>
 <p>想关闭一个浮窗的时候，或许还会不由自主的按下 <code>ESC</code> 键，但 ESC 键在 P2 中被当做“关闭所有浮窗”的快捷键来使用了。所以为了避免误操作，在按下 ESC 键的 10 秒内，只要页面不切换/刷新，再次按下 ESC 键，仍能够在相同的位置、还原被误关闭的浮窗。</p>
 <p>虽然 P2 实现了便捷的预览和与 Nazurin 协作的工作流，但是受限于 Nazurin，P2 只能监控是否成功将连接提交给 Nazurin，而不能监控 Nazurin 是否完成了图片的收集工作。在不良的网络环境下，Nazurin 很有可能出现收集失败的情况，因此请务必在通过 P2 批量收集图片完成后，再检查 Nazurin Bot 的日志消息，以确保图片收集工作流正常完成。</p>
@@ -36,10 +36,10 @@
 <p>虽然 P2 本意是为简化 Nazurin 收集图片的流程而设计，但即便不配置 Nazurin， P2 的预览图片功能仍然可以独立工作，帮助用户便捷地发现、预览感兴趣的作品。希望对你能够有所帮助。</p>
 <p>最后感谢 <a href="https://www.himiku.com/">mikusa</a> 在 P2 早期开发的过程中提出的许多建设性建议和意见。就是这个人让 P2 强兼（不是）了向 Nazurin 提交 Twitter 链接。</p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/p2-browser-extension/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/p2-browser-extension/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -70,10 +70,10 @@
 <p>我操！我觉得豆包对你的刻画，和你本人一模一样！</p>
 <p>骗你的，其实我的生辰，不是那个时候。</p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/two-fraud-stories/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/two-fraud-stories/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -81,10 +81,10 @@
 <center><a href="https://yuuikic.com/japan-2025/">*⑅︎୨୧┈︎「日本纪行 Extra Edition」┈︎୨୧⑅︎*</a></center>
 <p><img src="https://yuuikic.com/static/cover-japan-2025-extra-edition.BDLChGk3_ZlPbFU.webp" alt="japan-2025-extra-edition" /></p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/japan-2025-extra-edition/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/japan-2025-extra-edition/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -228,7 +228,7 @@
 </blockquote>
 <p>想笑就尽管笑吧！</p>
 <p>在河原町站前的繁忙路口，遇见了两名机车佬，骑着复古巡航车出现在视野中，而且他们穿着圣诞老人的服装。对哦，再过两天就是圣诞节了。见到这样有趣的事，我便拿出手机记录，而“机车圣诞老人”也配合地向镜头挥手，镜头感很强！（感谢 LivePhotos）</p>
-<div><img src="https://yuuikic.com/assets/livephotos/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6cg34.webp" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p></div>
+<div><img src="https://yuuikic.com/_directive-media/assets/livephotos/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6cg34.webp" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p><p><a href="https://yuuikic.com/_directive-media/assets/livephotos/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-b6cg34.mov">查看动态照片视频 →</a></p></div>
 <p>ごゆっくり
 <img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-cd7tlt.DqKJ2im1_Z1NtPBJ.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-z9nf9e.D_4YuZhI_1K6UnK.webp" alt="" /></p>
@@ -244,7 +244,7 @@
 <p>即便如此，我对这里的空气已经比昨天刚到的时候更熟悉了一些。又想到等会要去的目的地，心里也有些暖洋洋的。</p>
 <p>此行日本之旅，我唯一的“非去不可”的地方，大概就是宇治了。</p>
 <p>去全家买了三明治和明治牛奶当早餐，然后先去探索一下京都站。京都站在京吹的S2E07作为表演场所出现过，除此之外京都站在摄影师松明的镜头下，表现出的独特建筑和光影魅力让我感到非常震撼。</p>
-<blockquote><p>光と建築のコラボ <a href="https://t.co/Cy5RMonOKZ">pic.twitter.com/Cy5RMonOKZ</a></p>— 松明 (@Tai_Omatsu) <a href="https://twitter.com/Tai_Omatsu/status/2020094186297667866?ref_src=twsrc%5Etfw">February 7, 2026</a></blockquote> 
+<blockquote><p lang="ja" dir="ltr">光と建築のコラボ <a href="https://t.co/Cy5RMonOKZ">pic.twitter.com/Cy5RMonOKZ</a></p>— 松明 (@Tai_Omatsu) <a href="https://twitter.com/Tai_Omatsu/status/2020094186297667866?ref_src=twsrc%5Etfw">February 7, 2026</a></blockquote> 
 <p>无奈天公不作美，阴天的光线环境下，光影魅力是难以见得了。不过这个大阶梯的视觉冲击力的确很强。</p>
 <p><img src="https://yuuikic.com/static/2026-04-21-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-ekon38.DBDkxuOj_Zpp7zV.webp" alt="" /></p>
 <p>来到京都站顶部的露台，几乎可以将城市尽收眼底。可以看到环绕京都的远山，还有山间缥缈的雾气。现代建筑的挤压的角落里，有着日式建筑的古迹。</p>
@@ -326,10 +326,10 @@
 <p>我是听懂了日语，还是听懂了英文呢？</p>
 <p>御朱印帐的封面封底像是用线编织加工的，上面还有几只兔子，有着宇治神社自己的特色，很可爱。御朱印并非由前台的巫女所写，而是把朱印帐给了后面的大叔……神官？可恶，我好想要漂亮的巫女小姐的手迹。写完后的朱印帐又由巫女小姐交换给我，给我的时候向我展示了御朱印的内容，还告知了御朱印上的小兔子部分是印章，不是手画的（大概是这个意思，嗯。不过这一点也要交代吗？太细节了吧），以及最后在内容上附了一张空白的纸，来吸收未干的墨迹，防止其染到邻页上。</p>
 <p>至于大叔的书法嘛……</p>
-<div><img src="https://yuuikic.com/assets/livephotos/uji-jinja-goshuin.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p></div>
+<div><img src="https://yuuikic.com/_directive-media/assets/livephotos/uji-jinja-goshuin.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版查看动态效果 →</a></p><p><a href="https://yuuikic.com/_directive-media/assets/livephotos/uji-jinja-goshuin.mov">查看动态照片视频 →</a></p></div>
 <p><img src="https://yuuikic.com/static/uji-jinja-goshuin.DOxy0SvC_I7TYD.webp" alt="" /></p>
 <p>从宇治神社侧庭步出，沿着早蕨之道（さわらびの道）向北漫步，便会途经宇治上神社。这之后的事情，宛若早就亲历过一般，皆有一种旧地重游的熟稔。究竟从何时开始的呢？那些多年前朦胧中萌生的意识，经由积年累月的期盼，冥冥之中逐渐化作了温暖的、宛如夙缘般的信念。</p>
-<div><img src="https://assets.yuuikic.com/usr/uploads/2020/05/580776250.jpg" alt="意識の萌芽" /><p>🎵 意識の萌芽 — 松田彬人</p><a href="https://assets.yuuikic.com/usr/uploads/2020/03/2380374642.mp3">下载音频</a><p><a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版收听 →</a></p></div>
+<div><img src="https://assets.yuuikic.com/usr/uploads/2020/05/580776250.jpg" alt="意識の萌芽" /><p>🎵 意識の萌芽 — 松田彬人</p><audio src="https://assets.yuuikic.com/usr/uploads/2020/03/2380374642.mp3" controls="" preload="metadata"></audio><p><a href="https://assets.yuuikic.com/usr/uploads/2020/03/2380374642.mp3">收听或下载音频 →</a></p><p><a href="https://yuuikic.com/archives/japan-2025/">点击前往网页版收听 →</a></p></div>
 <p><img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-kclg6d.g7WGWJk5_1313Wv.webp" alt="" /></p>
 <p>京吹 S1E8 - 祭典三角
 <img src="https://yuuikic.com/static/2026-04-23-%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0-syy5w6.DToQL_ly_2kN6Fg.webp" alt="" />
@@ -831,10 +831,10 @@
 <p>所以我大概还会回到这里，还会去往其他那些被我亲手埋葬了旅行的意义的地方。我大抵一开始就搞错了巡礼的意义。它不是让不同的自己和故事在现实里重逢，而是为一段崭新故事的萌芽，捎去一阵温柔的风。</p>
 <p>再见，日本。再见，再见。</p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/japan-2025/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/japan-2025/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -1032,10 +1032,10 @@
 <p>最后，我衷心感谢我那位在苏州上班的朋友，没有他的话，我或许不会选择开始这段苏州的生活。有他的陪伴和帮助，让我在苏州的生活变得丰富多彩；更重要的是，让我的生活安心了不少。</p>
 <p>从某种意义上讲，他算是这篇文章的“特别赞助”吧。</p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/suzhou-exploration-log/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/suzhou-exploration-log/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -1153,10 +1153,10 @@
 <p>还有，似乎很久没有写碎碎念，也很久没有给其他的博客评论了。虽然大家的文章更新都有读，但是评论和写文章一样，大概都需要某种氛围和心情。琐事缠身的时候，态度、心情也变得飘忽不定和浮躁起来（说到底，这不都是 DDL 战士的自作自受吗！？）</p>
 <p>我……我一定会回来的！</p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/goodbye-my-past-bio/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/goodbye-my-past-bio/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -1181,7 +1181,7 @@
 <p>但是 Chevereto 不太“干净”，它会将图片处理成小、中、大、原始多个分辨率版本存储，并且这个功能无法禁用。而且，某次我<a href="https://x.com/Yuuikic/status/1672149334639640578">操作失误</a>，删除了在 Chevereto 创建的文章插图相册，没想到把对象存储中的图片文件也删除了——再见了，Chevereto。随后我便换成了另一个图床程序，兰空图床(Lsky Pro) 。至于那些由于从 Chevereto 跑路后保存在对象存储中的图片，虽然它们不能用兰空图床浏览，但这无关紧要，只要它们能被访问就可以了。直到最近我意识到——对啊，图片能被访问就行了。那我还要这个图床程序作为中间件干嘛呢？部署的 Chevereto 覆灭之后，我就不再用图床程序管理图片，而只用它的上传功能。于是，后来我干脆把兰空图床停用了，使用对象存储自家的上传工具。</p>
 <p>这么一顿折腾下来，算上那些最早我用博客程序的媒体库上传的图片，我的对象存储中的目录结构早就混乱不堪，图片散落在各种命名规则的目录下，但是反正……反正只要能访问就好了。</p>
 <p>让我们把扯远了的话题收回来。</p>
-<p>每次我要在文章中插入图片，我首先需要将本地图片上传到对象存储中，获得图片外部链接，然后再在博客程序的文字编辑器中重新插入图片。这真是太痛苦了，尤其是我去年写了一篇<a href="https://yuuikic.com/archives/starting-a-blog-intro/">动态博客搭建指北：指导8年前的我搭建个人博客</a>，教程类文章需要的插图数量远超想象（这么说来，<a href="https://himiku.com">mikusa</a> 简直是超人，草）。你说我为什么不用 <a href="https://github.com/Molunerfinn/PicGo">PicGo</a>？算了吧，我对我的长性实在没什么自信。我会<strong>永远</strong>保持使用同一家对象存储、外链域名不变——得了吧，别把我自己骗了。再加之上文说过的“我大抵是意识到互联网上的数据是多么不可靠、不可控的东西”，我才不要把数据绑定在一个互联网服务上。</p>
+<p>每次我要在文章中插入图片，我首先需要将本地图片上传到对象存储中，获得图片外部链接，然后再在博客程序的文字编辑器中重新插入图片。这真是太痛苦了，尤其是我去年写了一篇<a href="https://yuuikic.com/archives/starting-a-blog-intro/">动态博客搭建指北：指导8年前的我搭建个人博客</a>，教程类文章需要的插图数量远超想象（这么说来，<a href="https://himiku.com/">mikusa</a> 简直是超人，草）。你说我为什么不用 <a href="https://github.com/Molunerfinn/PicGo">PicGo</a>？算了吧，我对我的长性实在没什么自信。我会<strong>永远</strong>保持使用同一家对象存储、外链域名不变——得了吧，别把我自己骗了。再加之上文说过的“我大抵是意识到互联网上的数据是多么不可靠、不可控的东西”，我才不要把数据绑定在一个互联网服务上。</p>
 <p>还有，如果我在文章发布后发现文章内有需要修改的地方，我又得在 WordPress 和本地两个地方修改。</p>
 <p>我宁愿去原神中采摘3个世界的清心、琉璃袋和琉璃百合，我也不想要重复把文章搬迁到 WordPress 的过程了！</p>
 <p>第二，Argon 被我魔改了好多地方，或许是魔改的代码质量或者实现逻辑有问题，又或者是我电脑有些烂（也……也不至于吧），有时候会<a href="https://x.com/Yuuikic/status/1993860957572129173">感觉杂话铺子卡卡的</a>，于是一念之间，有了重新装修杂话铺子的念头。</p>
@@ -1277,7 +1277,7 @@
 <p>针对这种情况，或许我可以选择以同样的逻辑来实现这个功能：在本地生成一张小尺寸占位图，然后在图片加载时调用。但这岂不是就和 Chevereto 这个随地大小便生产大小图像的家伙一样了？我才不要！于是我选择借助这个项目——<a href="https://blurha.sh/">BlurHash</a>。</p>
 <p>简单来说，BlurHash 通过算法提取出图片的一个20~30字符的特征值，而更神奇的是，BlurHash还可以通过还原算法和图片对应的特征值，利用 canvas 元素绘制出一个具有原始图片特征的“模糊画面”，如此一来就实现了生成图片的模糊版本的占位图的功能。</p>
 <p>将 BlurHash 集成到 Astro 的过程，看似困难，实则是一点也不简单（？）在与 Gemini 和 Claude 老师大战数十（或者有上百）回合后，终于实现了现在杂话铺子中的效果。原理和逻辑是在页面构建的时候同时执行计算图片 BlurHash 的脚本，然后将对应的特征值（blur-hash）写入图片元素中，待到客户端加载的时候用于绘制模糊占位图。</p>
-<div><img src="https://yuuikic.com/assets/livephotos/refactoring-wordpress-blog-with-astro_BlurHash-transition.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版查看动态效果 →</a></p></div>
+<div><img src="https://yuuikic.com/_directive-media/assets/livephotos/refactoring-wordpress-blog-with-astro_BlurHash-transition.jpg" alt="Live Photo Cover" /><p>📸 原文此处包含 Live Photo (动态照片)<a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版查看动态效果 →</a></p><p><a href="https://yuuikic.com/_directive-media/assets/livephotos/refactoring-wordpress-blog-with-astro_BlurHash-transition.mp4">查看动态照片视频 →</a></p></div>
 <p>这还不是结束。由于需要用加载好的 img 元素替代模糊占位图 canvas 元素，所以需要一个容器包裹他们；由于文章内插图实现了画廊功能，所以需要个画廊容器来包裹图片；而画廊模仿了 Google Photos 的逻辑实现了多行画廊，所以每一行还需要个容器包裹——最后，就像大肠包小肠一样，层层叠叠的样式叠加在一起，导致了一些奇怪的 CSS 问题，尤其是在不同平台表现不一致的问题。iOS 和 iPadOS 上的 WebKit 就像敏感肌，在 PC 和 Mac 上跑的好好的样式在 iOS 上就画不出来。总结出来就是层层叠叠的<code>height:auto</code>导致无法获取一个具体的元素高度，所以图片容器就以 0 高度处理了，直到图片加载完后才被撑开——喂！那辛辛苦苦实现的 BlurHash 占位图过渡懒加载功能不就失去意义了吗？！好在是 Astro 处理本地图片时会获取图片的尺寸信息，这可真是帮大忙了。</p>
 <p>啥，你问我远程图片链接插入文章怎么实现这个功能？这……这我还没研究好！什么，你还问我本地图库数量太大乃至未来数据增长导致可用性问题？这……从杂话铺子这么多年才凑出1.4GB大小的附件目录的使用情况来看，那一天似乎还遥不可及嘛。总之，我确实遇见了一些可用性、可迁移性和技术债的问题，这些待我下次再仔细研究吧。好孩子不要模仿哦。</p>
 <h4>深色模式</h4>
@@ -1372,12 +1372,12 @@ slug: "an-article"
 <p>如果发现其他 Bug，或有修改建议，欢迎留言告诉我。</p>
 <p>最后的最后——</p>
 <center><strong>欢迎光临杂话铺子！</strong></center>
-<div><img src="https://yuuikic.com/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20(OP%20Ver.).jpg" alt="ディスコ・キッド (OP Ver.)" /><p>🎵 ディスコ・キッド (OP Ver.) — 北宇治高校吹奏楽部</p><a href="https://yuuikic.com/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20(OP%20Ver.).mp3">下载音频</a><p><a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版收听 →</a></p></div>
+<div><img src="https://yuuikic.com/_directive-media/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20%28OP%20Ver.%29.jpg" alt="ディスコ・キッド (OP Ver.)" /><p>🎵 ディスコ・キッド (OP Ver.) — 北宇治高校吹奏楽部</p><audio src="https://yuuikic.com/_directive-media/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20%28OP%20Ver.%29.mp3" controls="" preload="metadata"></audio><p><a href="https://yuuikic.com/_directive-media/assets/music/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%83%89%20%28OP%20Ver.%29.mp3">收听或下载音频 →</a></p><p><a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">点击前往网页版收听 →</a></p></div>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/refactoring-wordpress-blog-with-astro/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>
@@ -1442,10 +1442,10 @@ slug: "an-article"
 <p><img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-6ldavd.DKmkPvE7_Zvxpxu.webp" alt="" />
 <img src="https://yuuikic.com/static/2026-01-19-%E5%86%8D%E8%A7%81%E4%BA%86%EF%BC%8C%E6%88%91%E7%94%A8%E8%BF%87%E7%9A%84%E5%A4%B4%E5%83%8F%E5%92%8C%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E3%80%82-sbv70d.BdwZQ0m1_Z138i4W.webp" alt="" /></p>
             <br />
-            <hr style="border:0;border-bottom:1px dashed #ccc;margin:2em 0 1em 0" />
-            <p style="text-align:center;color:#888;font-size:0.9em">
+            <hr />
+            <p>
               感谢阅读！想查看评论，和更多互动？<br />
-              <a href="https://yuuikic.com/archives/goodbye-my-past-avatar/" style="font-weight:bold;text-decoration:none;color:#5f8487">
+              <a href="https://yuuikic.com/archives/goodbye-my-past-avatar/">
                 👋 来杂话铺子坐坐吧！
               </a>
             </p>

@@ -4,12 +4,40 @@
   <title>Robb Knight • Posts • Atom Feed</title>
   <subtitle>Maker of web things, sticker merchant, viral toot-based business man, blogger, podcaster, and pizzaiolo. Human dad.</subtitle>
   <link href="https://rknight.me/subscribe/posts/atom.xml" rel="self" />
-  <updated>2026-10-25T14:41:00Z</updated>
+  <updated>2026-10-29T19:38:11Z</updated>
   <id>https://rknight.me/subscribe/posts/atom.xml</id>
   <author>
     <name>Robb Knight</name>
     <uri>http://rknight.me</uri>
   </author>
+  <entry>
+    <title type="html">
+      <![CDATA[
+        Fixing Illustrations on a Dark Background with CSS
+      ]]>
+    </title>
+    <link href="https://rknight.me/blog/fixing-illustrations-on-a-dark-background-with-css/"/>
+    <updated>2026-10-29T19:38:11Z</updated>
+    <id>https://rknight.me/blog/fixing-illustrations-on-a-dark-background-with-css/</id>
+    <content type="html">&lt;p&gt;If you&#39;ve visited my site recently you might have noticed some illustrations I&#39;ve done appear on some pages, notably the home page and &lt;a href=&quot;/404&quot;&gt;my 404 page&lt;/a&gt;. I wanted to use this brick drawing I did for &lt;a href=&quot;https://rknight.me/notes/202610252020/&quot;&gt;Inktober&lt;/a&gt; but on the dark mode background is doesn&#39;t look good:&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&quot;https://cdn.rknight.me/site/2026/kombucha-girl-illustration-on-dark-and-light.jpg&quot; alt=&quot;Two panels showing a woman. The first she is looking digsuted by the brick drawing on a dark background, the second she looks intrigued by it on a light background&quot; /&gt;&lt;/figure&gt;
+&lt;p&gt;My first thought was to just get rid of dark mode completely and just have light mode. I spoke to a handful of people about it and came to the conclusion that this was an extreme solution. Also, I like dark mode in general so it seems stupid to nuke it just for this.&lt;/p&gt;
+&lt;p&gt;I tried a handful of different things like changing the line colour to white and just loading the correct version depending on the theme. This worked, but still looked shit on dark mode. I tried some other things like adding an outline or even a thicker line like a sticker might have but all of them had the same problem — I would need to make two versions of every drawing which I really didn&#39;t want to do.&lt;/p&gt;
+&lt;p&gt;I had a vague recollection of being able to do a drop shadow on transparent PNGs and after some digging I found it can be done with &lt;code&gt;filter&lt;/code&gt; and &lt;code&gt;drop-shadow&lt;/code&gt;. Stacking two drop shadows give the best outline for what I wanted.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token property&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;drop-shadow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0 0 1px #ececec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;drop-shadow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0 0 1px #ececec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s not perfect but it does the job, especially on drawings that have a more defined outline like the hats.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&quot;https://cdn.rknight.me/site/2026/illustrations-with-white-drop-shadow-filter.jpg&quot; alt=&quot;A brick drawing and some hats with a white drop shadow on them both&quot; /&gt;&lt;/figure&gt;
+&lt;p&gt;Now I can start adding some more illustrations I&#39;ve got lined up for the site.&lt;/p&gt;
+</content>
+    <summary type="html">
+      <![CDATA[
+        A solution to dark-outlined drawings on dark mode on my website
+      ]]>
+    </summary>
+    <author>
+      <name>Robb Knight</name>
+    </author>
+  </entry>
   <entry>
     <title type="html">
       <![CDATA[
@@ -574,40 +602,6 @@ The mouse took photos with his Kodak Charmera and they were not good.&lt;/p&gt;
     <summary type="html">
       <![CDATA[
         The first drawing for this year arrived and it was a difficult one
-      ]]>
-    </summary>
-    <author>
-      <name>Robb Knight</name>
-    </author>
-  </entry>
-  <entry>
-    <title type="html">
-      <![CDATA[
-        Weeknote #2015
-      ]]>
-    </title>
-    <link href="https://rknight.me/blog/weeknote-2016/"/>
-    <updated>2026-08-30T16:37:00Z</updated>
-    <id>https://rknight.me/blog/weeknote-2016/</id>
-    <content type="html">&lt;div class=&quot;markdown-alert markdown-alert-note&quot;&gt;&lt;p class=&quot;markdown-alert-title&quot;&gt;&lt;svg class=&quot;octicon octicon-info mr-2&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Update 2026-09-04&lt;/p&gt;&lt;p&gt;This was previously numbered as 2016 but it should have been 2015 so the title is fixed, the slug is not&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;We just passed $2000 on the St Jude Fundraiser and it’s not even September yet. &lt;a href=&quot;/stjude&quot;&gt;Donate here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On &lt;a href=&quot;https://ruminatepodcast.com/234&quot;&gt;Ruminate this week&lt;/a&gt; I spoke about the worst snack I&#39;ve ever tried for the show. Truly awful.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://moderation-explorer.online&quot;&gt;This Mastodon tool&lt;/a&gt; to see which servers the people I follow are on as well as where my followers are is interesting and highlights again that &lt;code&gt;mastodon.social&lt;/code&gt; is just too large.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://font.chingru.com&quot;&gt;FontFridge&lt;/a&gt; is an &amp;quot;enhanced Google Fonts collection&amp;quot; with better filtering based on the features of the fonts (variable axes, weight, etc) and it also has a favourites features.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs&quot;&gt;This article about favicons&lt;/a&gt; is excellent and allowed me to reduce the amount of non-essential icons I&#39;m generating on &lt;a href=&quot;https://favicons.rknight.me&quot;&gt;Favicons to Go&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;There&#39;s another open source app to replace Logitech Options - &lt;a href=&quot;https://openlogi.org/en#faq&quot;&gt;OpenLogi&lt;/a&gt;. I haven&#39;t tried it but it&#39;s good to have options.&lt;/p&gt;
-&lt;p&gt;Terence Eden&#39;s &lt;a href=&quot;https://gitlab.com/edent/activity-bot&quot;&gt;ActivityBot&lt;/a&gt; has come a long way since I last looked at it. Worth keeping bookmarked for any bots I want to make.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/chrissotraidis/goldenpad&quot;&gt;GoldenPad&lt;/a&gt; is an iOS and MacOS port of Goldeneye 64. Neat.&lt;/p&gt;
-&lt;p&gt;Dayna has &lt;a href=&quot;https://catmothcrow.com/diy-mini-zine-holder/&quot;&gt;made a printable zine holder template&lt;/a&gt; which is very cool. Will be trying this soon.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://brickset.com/article/134218/minifigure-scale-lego-super-mario-sets-revealed!&quot;&gt;Lego have some amazing new Mario sets&lt;/a&gt; with actual minifigures. via &lt;a href=&quot;https://blast-o-rama.com/2026/08/26/legos-got-a-new-super-mario-line-and-it-looks-great/&quot;&gt;Marty&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I adored The Social Network but I don&#39;t have it in me to watch &lt;a href=&quot;https://www.youtube.com/watch?v=MfHEZw7Xw_c&quot;&gt;The Social Reckoning&lt;/a&gt; no matter how good it looks.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DYdPhqkw0pU&quot;&gt;Queen Budapest&lt;/a&gt; can be injected right into my veins though.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/tJbzMqJGH4k?is=8Qj_jC8ykdJRC4EL&quot;&gt;GTAVI&lt;/a&gt; looks exactly like I expected, it’s GTA. Definitely gunna buy it.&lt;/p&gt;
-</content>
-    <summary type="html">
-      <![CDATA[
-        St Jude, GTA, and lots of other links. 
       ]]>
     </summary>
     <author>

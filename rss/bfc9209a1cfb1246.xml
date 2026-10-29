@@ -12,7 +12,7 @@
 	<atom:link href="https://soatok.blog/feed/" rel="self" type="application/rss+xml" />
 	<link>https://soatok.blog</link>
 	<description>Software, Security, Cryptography, and Furries</description>
-	<lastBuildDate>Sun, 04 Oct 2026 23:48:18 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 29 Oct 2026 14:21:46 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,678 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">176185133</site>	<item>
+		<title>Your Cryptography Conspiracy Theory Is Wrong</title>
+		<link>https://soatok.blog/2026/10/29/your-cryptography-conspiracy-theory-is-wrong/</link>
+		
+		<dc:creator><![CDATA[Soatok]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2026 07:47:56 +0000</pubDate>
+				<category><![CDATA[Bullshit]]></category>
+		<category><![CDATA[Society]]></category>
+		<category><![CDATA[conspiracy theories]]></category>
+		<category><![CDATA[crypto]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[National Security Agency]]></category>
+		<category><![CDATA[Online Privacy]]></category>
+		<guid isPermaLink="false">https://soatok.blog/?p=21923</guid>
+
+					<description><![CDATA[This conversation plays out hundreds of times a day, but (thankfully) only a handful of those involve me: Conspiracy theories about the NSA and/or NIST are a dime a dozen these days. And, ever since the Snowden disclosures in 2013, I am politically primed to directionally agree with distrusting the US government wholesale. But most [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">This conversation plays out hundreds of times a day, but (thankfully) only a handful of those involve me:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Person: &#8220;I have [problem].&#8221;</li>
+
+
+
+<li>Cryptography nerd: &#8220;Oh, you probably want to use [sensible recommendation].&#8221;</li>
+
+
+
+<li>Person: &#8220;Ah, well, can I really trust that? The NSA probably backdoored it 30 years ago. Dual_EC, amirite?!&#8221;</li>
+
+
+
+<li>Cryptography nerd: &#8230;</li>
+
+
+
+<li><em>Koblitz and Menezes, unheard: &#8220;<a href="https://eprint.iacr.org/2015/1018" target="_blank" rel="noopener">You fucking wot m8?</a>&#8220;</em></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Conspiracy theories about the NSA and/or NIST are a dime a dozen these days. And, ever since the Snowden disclosures in 2013, I am politically primed to <em>directionally agree</em> with distrusting the US government wholesale.</p>
+
+
+
+<p class="wp-block-paragraph">But most of the technical arguments baked into folks&#8217; conspiracy theories <strong>make no goddamn sense</strong>.</p>
+
+
+
+<blockquote class="wp-block-quote quote-soatok is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">This distrust is not exclusive to only the US government.</p>
+
+
+
+<p class="wp-block-paragraph">The goal of this blog post is not to convince you that you should trust <em>any</em> government; just that they are not magical or omniscient.</p>
+</blockquote>
+
+
+
+<p class="wp-block-paragraph">To that end, I&#8217;m going to explore some of the history of NSA, NIST, and cryptography standardization. Then, to explore some of the conspiracy theories that were being floated about such activity, and what we&#8217;ve learned in the years since (especially in the past month). Finally, I&#8217;m going to examine some of the current conspiracy theories floating around message boards and social media today, and explain why they&#8217;re almost certainly wrong.</p>
+
+
+
+<p class="wp-block-paragraph">Buckle up, this is going to be a tedious one.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" fetchpriority="high" decoding="async" width="512" height="512" data-attachment-id="10218" data-permalink="https://soatok.blog/?attachment_id=10218" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="SoatokTelegrams2020-15" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?resize=512%2C512&#038;ssl=1" alt="Soatok drinking coffee" class="wp-image-10218" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/07/SoatokTelegrams2020-15.png?resize=200%2C200&amp;ssl=1 200w" sizes="(max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption"><a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
+</div>
+
+
+<h2 class="wp-block-heading">Why should we listen to you?</h2>
+
+
+
+<p class="wp-block-paragraph">If you find yourself asking a question like this, the correct answer is simply, &#8220;You shouldn&#8217;t.&#8221;</p>
+
+
+
+<p class="wp-block-paragraph">After all, I have never held (let alone even applied for) a security clearance, and have no access to any non-public information. I&#8217;m also not a current or former government employee, and have no aspirations to ever become one. I have access to all the same facts anyone else does. </p>
+
+
+
+<p class="wp-block-paragraph">In balance, I have no horse in the race of who trusts whom. I&#8217;m just tired of hearing the same poorly reasoned arguments all the damn time, and would like to stop having to repeat myself when I encounter one.</p>
+
+
+
+<h2 class="wp-block-heading">Historical NSA Shenanigans</h2>
+
+
+
+<p class="wp-block-paragraph">The sources for this, by the way, are <a href="https://cryptome.org/2012/05/nsa-crypto-des.pdf" target="_blank" rel="noopener">the declassified United States Senate Select Committee on Intelligence</a> and <a href="https://archive.org/details/NSA-American-Cryptology-Cold-War/American%20Cryptology-Book%20III/" target="_blank" rel="noopener">United States Cryptologic History</a>.</p>
+
+
+
+<h3 id="des" class="wp-block-heading">DES</h3>
+
+
+
+<figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class="youtube-player" width="768" height="432" src="https://www.youtube.com/embed/kJQP7kiw5Fk?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div><figcaption class="wp-element-caption">No, not <em>that</em> DES.</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">The Data Encryption Standard (DES) was published in the Federal Register in 1975 and then standardized in 1977. </p>
+
+
+
+<p class="wp-block-paragraph">We consider it weak these days, but DES was a real game-changer for its time: It offered a standard block cipher to use for sensitive (but not classified) commercial applications. Prior to DES, the history of cryptography was largely about military uses (except a few quirky mathematicians here and there), going back before <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank" rel="noopener">Caesar&#8217;s cipher</a>.</p>
+
+
+
+<p class="wp-block-paragraph">From declassified documents, we now know the full story, but from the time that DES was first standardized, up until recent years, there have been a concerns about <a href="https://en.wikipedia.org/wiki/Data_Encryption_Standard#NSA's_involvement_in_the_design" target="_blank" rel="noopener">NSA&#8217;s involvement</a>.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">We sent the S-boxes off to Washington. They came back and were all different.</p>
+<cite>Alan Konheim, quoted in <em><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781119183471" target="_blank" rel="noopener">Applied Cryptography</a></em>, p. 280</cite></blockquote>
+
+
+
+<p class="wp-block-paragraph">To say that academics did not trust DES would be putting it mildly: Martin Hellman (who, with Whitfield Diffie and Ralph Merkle, <em>invented</em> public-key cryptography) sent a letter in 1975 to the National Bureau of Standards that stated:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">Whit Diffie and I have become concerned that the proposed data encryption standard, while probably secure against commercial assault, may be extremely vulnerable to attack by an intelligence organization.</p>
+<cite>Martin Hellman, re-published in <a href="https://faculty.nps.edu/dedennin/publications/DES-15Years.pdf" target="_blank" rel="noopener">this paper</a> in 1990.</cite></blockquote>
+
+
+
+<p class="wp-block-paragraph">At the heart of the concern about DES was something called an S-box, which simply maps an input to an output, but whose purpose is to provide a non-linear transformation to obscure the relationship between the ciphertext and the key.</p>
+
+
+
+<p class="wp-block-paragraph">The S-box used by DES was chosen by NSA. This led a lot of people to suspect there was a backdoor in the selection of the S-boxes for DES. <strong>It turned out to be the opposite, of course</strong>: The NSA had discovered differential cryptanalysis in secret, and had selected S-boxes that were resistant to this technique, but did not want to reveal it publicly (lest they lose their advantage over rival nations).</p>
+
+
+
+<p class="wp-block-paragraph">There&#8217;s a lot more details to this story than I want to bore anyone with, so I recommend reading up on the history of cryptography and cryptanalysis if you&#8217;re interested in such things.</p>
+
+
+
+<p class="wp-block-paragraph">In balance, <a href="https://www.schneier.com/blog/archives/2004/10/the_legacy_of_d.html" target="_blank" rel="noopener">at the advice of NSA</a>, the final DES design did only offer 56 bits of security (down from an original key size of 128 bits). This short key ultimately allowed <a href="https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/" target="_blank" rel="noopener">the EFF to crack DES in 1998</a> with a hardware cost of about $250,000.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" width="512" height="512" data-attachment-id="3102" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatok-telegrams-wave-3-commission-11/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="Soatok Telegrams Wave 3 Commission-11" data-image-description="" data-image-caption="&lt;p&gt;Clipboard Sticker&lt;/p&gt;
+" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?resize=512%2C512&#038;ssl=1" alt="Clipboard Sticker" class="wp-image-3102" style="width:auto;height:256px"/><figcaption class="wp-element-caption"><a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
+</div>
+
+
+<h4 class="wp-block-heading">What does this actually tell us?</h4>
+
+
+
+<p class="wp-block-paragraph">When IBM was designing DES, with feedback from NSA, the stated purpose was to use for commercial cryptographic applications in the United States.</p>
+
+
+
+<p class="wp-block-paragraph">Fact: NSA used secret cryptanalytic capabilities to ensure the resulting block cipher that became DES was <em>protected from the attack they knew about</em> without revealing said technique.</p>
+
+
+
+<p class="wp-block-paragraph">Fact: NSA recommended reducing the key length from 128 bits to 64 bits (with 8 of the key bits serving as parity bits, thus making it only have 56-bit security).</p>
+
+
+
+<p class="wp-block-paragraph">This both strengthened and weakened DES in different ways. A 56-bit key can be broken by a distributed computing effort in under 24 hours, as of 2012.</p>
+
+
+
+<figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" width="768" height="432" src="https://www.youtube.com/embed/gkPvZDcrLFk?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div><figcaption class="wp-element-caption">DES&#8217;s 56-bit keys are at the heart of Moxie&#8217;s MSCHAPv2 break.</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">This is confusing until you remember NSA has two opposing missions, with (unfortunately) military jargon names.</p>
+
+
+
+<ul class="wp-block-list">
+<li>COMSEC (Communications Security) &#8212; basically blue-teamers</li>
+
+
+
+<li>SIGINT (Signals Intelligence) &#8212; basically red-teamers</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The COMSEC folks have a mission to secure the US government and protect US interests (read: private sector).</p>
+
+
+
+<p class="wp-block-paragraph">The SIGINT folks have a mission to spy on other nations on behalf of the US.</p>
+
+
+
+<p class="wp-block-paragraph">In theory, the SIGINT folks aren&#8217;t supposed to spy on Americans <em>at all</em>. In practice, their Five Eyes partners gives them a stupid loophole: An allied nation can simply do the spying for them, so long as federal prosecutors are willing to engage in a little bit of <a href="https://en.wikipedia.org/wiki/Parallel_construction" target="_blank" rel="noopener">parallel construction</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Take note of the DEA section of the previously linked Wikipedia page.</p>
+
+
+
+<p class="wp-block-paragraph">You cannot trust the government, but if you know the mission each department operates under, you can understand <em>their incentive structures</em>. Knowing their incentive structures lets you reason about their actual activities&#8211;or, failing that, create conspiracy theories with a cohesive narrative.</p>
+
+
+
+<p class="wp-block-paragraph">The COMSEC mission can be related to the S-box strengthening; the SIGINT mission, to the weaker key length.</p>
+
+
+
+<h3 id="clipper-chip" class="wp-block-heading">Clipper Chip</h3>
+
+
+
+<p class="wp-block-paragraph">Okay, so the DES thing was a messy affair. Let&#8217;s look at an example of the NSA clearly being on the wrong side of privacy.</p>
+
+
+
+<p class="wp-block-paragraph">The <a href="https://en.wikipedia.org/wiki/Clipper_chip">Clipper Chip</a>, which was designed and promoted by the NSA in 1993 to secure voice messages, with a backdoor.</p>
+
+
+
+<p class="wp-block-paragraph">Clipper Chip was an early example of a NOBUS (Nobody But Us can exploit it) backdoor. Unlike DES&#8217;s 56-bit key, the cipher used (Skipjack) was promoted up to a whopping 80-bits.</p>
+
+
+
+<p class="wp-block-paragraph">But before you celebrate, be aware that there was a &#8220;key escrow&#8221; feature that allowed law enforcement to decrypt plaintext, and a 16-bit hash in the &#8220;Law Enforcement Access Field&#8221; (LEAF) that turned out to be a pretty stupid vulnerability, as <a href="https://www.wired.com/1994/09/clipping-clipper-matt-blaze/" target="_blank" rel="noopener">Matt Blaze discovered in 1994</a>. If you want a technical breakdown, <a href="https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors/" target="_blank" rel="noopener">Professor Matt Green&#8217;s blog post</a> covers this (and other backdoors).</p>
+
+
+
+<p class="wp-block-paragraph">Not only was the Clipper Chip a terrible idea to begin with, it was also technically flawed (to the point of embarrassment). This was the first of many issues in what became known as the Crypto Wars.</p>
+
+
+
+<h4 class="wp-block-heading">What does this actually tell us?</h4>
+
+
+
+<p class="wp-block-paragraph">When the NSA colluded with law enforcement to spy on Americans&#8217; private conversations, their attempt was met with public backlash from independent technologists (Matt Blaze, the Electronic Frontier Foundation, etc.).</p>
+
+
+
+<p class="wp-block-paragraph">The cryptography community outside the military-industrial complex <em>today</em> is largely primed to call out Clipper Chip style bullshit whenever it happens. (See also: the EU&#8217;s ChatControl.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="402" data-attachment-id="8905" data-permalink="https://soatok.blog/2023/10/02/return-to-office-is-bullshit-and-everyone-knows-it/soatoklecture/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2023/10/SoatokLecture.png?fit=512%2C402&amp;ssl=1" data-orig-size="512,402" data-comments-opened="1" data-image-title="SoatokLecture" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2023/10/SoatokLecture.png?fit=512%2C402&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2023/10/SoatokLecture.png?resize=512%2C402&#038;ssl=1" alt="Soatok pointing at a blackboard." class="wp-image-8905" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2023/10/SoatokLecture.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2023/10/SoatokLecture.png?resize=300%2C236&amp;ssl=1 300w" sizes="auto, (max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption">AJ_LovesDinos</figcaption></figure>
+</div>
+
+
+<h3 id="dual-ec" class="wp-block-heading">Dual_EC_DRBG</h3>
+
+
+
+<p class="wp-block-paragraph">In 2006, NIST published <a href="https://csrc.nist.gov/pubs/sp/800/90/final" target="_blank" rel="noopener">SP 800-90</a>, which recommended deterministic random bit generators (DRBGs):</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Hash_DRBG</strong> &#8212; generating random bits from cryptographic hash functions computed over input entropy sources</li>
+
+
+
+<li><strong>HMAC_DRBG</strong> &#8212; generating random bits from HMAC (which is kind of like if a hash function had a secret key)</li>
+
+
+
+<li><strong>CTR_DRBG</strong> &#8212; turning a block cipher into a random bit stream by using Counter Mode</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The three I listed above are&#8230; well, they&#8217;re fine. Pretty much everyone uses hash functions or block ciphers to squeeze random bits out of smaller amounts of entropy.</p>
+
+
+
+<p class="wp-block-paragraph">But the fourth entry in the NIST standard was an odd duck. Dual_EC_DRBG was several times slower than the other recommendations and was <a href="https://eprint.iacr.org/2006/190" target="_blank" rel="noopener">immediately flagged as having a backdoor</a> (which <a href="https://web.archive.org/web/20140621062515/http://archive.wired.com/politics/security/commentary/securitymatters/2007/11/securitymatters_1115">other cryptographers agreed with</a>).</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">I don&#8217;t understand why the NSA was so insistent about including Dual_EC_DRBG in the standard. It makes no sense as a trap door: It&#8217;s public, and rather obvious. It makes no sense from an engineering perspective: It&#8217;s too slow for anyone to willingly use it. And it makes no sense from a backwards-compatibility perspective: Swapping one random-number generator for another is easy.</p>
+
+
+
+<p class="wp-block-paragraph">My recommendation, if you&#8217;re in need of a random-number generator, is not to use Dual_EC_DRBG under any circumstances. If you have to use something in SP 800-90, use CTR_DRBG or Hash_DRBG.</p>
+
+
+
+<p class="wp-block-paragraph">In the meantime, both NIST and the NSA have some explaining to do.</p>
+<cite>Bruce Schneier, Wired, 2007</cite></blockquote>
+
+
+
+<p class="wp-block-paragraph">Of course, because of Edward Snowden, we know today that cryptographers <a href="https://www.bbc.com/news/technology-24048343" target="_blank" rel="noopener">were completely correct about Dual_EC_DRBG being a backdoor by the NSA</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Ever since that revelation, no discussion about NOBUS (Nobody But Us) backdoors would be complete without at least mentioning Dual_EC_DRBG.</p>
+
+
+
+<p class="wp-block-paragraph">What almost nobody foresaw, however, was that a rival nation state would <a href="https://dl.acm.org/doi/10.1145/2976749.2978395" target="_blank" rel="noopener">replace the public key baked into Dual_EC&#8217;s design with their own while backdooring Juniper Networks</a>.</p>
+
+
+
+<p class="wp-block-paragraph"><em>Kind of a stupid fucking approach to NOBUS, ain&#8217;t it?</em></p>
+
+
+
+<h4 class="wp-block-heading">What does this actually tell us?</h4>
+
+
+
+<p class="wp-block-paragraph">When the incentives of the NSA aligned with malicious government conspiracies against the American people (sorry to keep specifying this, by the way, but they&#8217;re pretty much always malicious to folks outside the USA) and standardization processes, it didn&#8217;t fly under the radar and basically every cryptographer said &#8220;Hell no&#8221; to using it.</p>
+
+
+
+<p class="wp-block-paragraph">Whether NSA is capable of being sneakier while corrupting NIST documents remains to be seen.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="376" data-attachment-id="10278" data-permalink="https://soatok.blog/2024/08/14/security-issues-in-matrixs-olm-library/soatoknerdrage/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/08/SoatokNerdRage.png?fit=512%2C376&amp;ssl=1" data-orig-size="512,376" data-comments-opened="1" data-image-title="SoatokNerdRage" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/08/SoatokNerdRage.png?fit=512%2C376&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/08/SoatokNerdRage.png?resize=512%2C376&#038;ssl=1" alt="Soatok yelling at his computer" class="wp-image-10278" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/08/SoatokNerdRage.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/08/SoatokNerdRage.png?resize=300%2C220&amp;ssl=1 300w" sizes="auto, (max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption">AJ_LovesDinos</figcaption></figure>
+</div>
+
+
+<h3 id="snowden" class="wp-block-heading">The Snowden Disclosures</h3>
+
+
+
+<p class="wp-block-paragraph">There&#8217;s far too much to talk about here, and of varying usefulness. Consult <a href="https://snowden.xsurveillance.site/" target="_blank" rel="noopener">the Snowden Archives</a> if you want to read more. There were a lot of codenames. There was a lot of jargon.</p>
+
+
+
+<p class="wp-block-paragraph">It spawned a lot of memes.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="500" height="375" data-attachment-id="22073" data-permalink="https://soatok.blog/2026/10/29/your-cryptography-conspiracy-theory-is-wrong/image-52/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image-2.png?fit=500%2C375&amp;ssl=1" data-orig-size="500,375" data-comments-opened="0" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image-2.png?fit=500%2C375&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image-2.png?resize=500%2C375&#038;ssl=1" alt="SSL added and removed here! :^)" class="wp-image-22073" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image-2.png?w=500&amp;ssl=1 500w, https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image-2.png?resize=300%2C225&amp;ssl=1 300w" sizes="auto, (max-width: 500px) 100vw, 500px" /><figcaption class="wp-element-caption">From an NSA slide about Google&#8217;s internal networks, part of MUSCULAR</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Some of the codenames (e.g., FOXACID) are the sort of thing that cause eyebrows to raise among computer nerds that are familiar with furries and <a href="https://en.wikipedia.org/wiki/Vorarephilia" target="_blank" rel="noopener">vore</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Here&#8217;s a lightning round of some of what we learned from Snowden:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Bulk collection of Americans&#8217; phone metadata, despite <a href="https://verdict.justia.com/2013/06/28/will-director-of-national-intelligence-james-clapper-be-prosecuted-for-lying-to-congress-regarding-the-nsas-surveillance" target="_blank" rel="noopener">James Clapper committing perjury to the contrary</a></li>
+
+
+
+<li><strong><a href="https://en.wikipedia.org/wiki/PRISM" target="_blank" rel="noopener">PRISM</a></strong>: mass passive surveillance of the Internet, which is largely why TLS became ubiquitous in the years since.</li>
+
+
+
+<li>Tempora: copied data from undersea cables for NSA to analyze</li>
+
+
+
+<li><a href="https://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html" target="_blank" rel="noopener">BULLRUN / EDGEHILL</a> &#8212; see also: <a href="#dual-ec">Dual_EC_DRBG</a>, but also <a href="https://blog.cloudflare.com/how-the-nsa-may-have-put-a-backdoor-in-rsas-cryptography-a-technical-primer" target="_blank" rel="noopener">RSA Security</a></li>
+
+
+
+<li>XKeyscore: basically a private version of Palantir&#8217;s product today</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">There&#8217;s so much more we could talk about, but what&#8217;s notably absent from Snowden&#8217;s leaks is any secret cryptanalytic attacks against standardized cryptography.</p>
+
+
+
+<p class="wp-block-paragraph">Notably, they couldn&#8217;t break Tor in any way that wasn&#8217;t already known to the Tor developers at the time.</p>
+
+
+
+<p class="wp-block-paragraph">Hell, there were myriad conspiracy theories in late 2013 about the Silk Road marketplace being taken down by a NSA attack on Tor. The slide decks Snowden leaked suggest otherwise.</p>
+
+
+
+<h4 class="wp-block-heading">What does this actually tells us?</h4>
+
+
+
+<p class="wp-block-paragraph">A lot. Far too much, in fact, for me to dissect it all in this blog post!</p>
+
+
+
+<p class="wp-block-paragraph">But the pertinent detail is this: The absence of cryptanalytic capabilities in Snowden&#8217;s leaks can be interpreted one of several ways.</p>
+
+
+
+<ol class="wp-block-list">
+<li>The private sector has largely caught up with NSA</li>
+
+
+
+<li>NSA&#8217;s compartmentalization was <strong>somehow</strong> successful at preventing Snowden from discovering these mathematical techniques, but not all the other damning evidence</li>
+
+
+
+<li>The NSA didn&#8217;t bother trying to beat the cryptography because it was, as is often the case today, so much easier to simply bypass it entirely</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Personally, I think any of these interpretations is valid. I&#8217;d put my money on number 3, of course. After all, that&#8217;s what PRISM largely did.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="445" data-attachment-id="17237" data-permalink="https://soatok.blog/2025/04/17/retrospective-five-years-blogging-about-cryptography-as-a-gay-furry-online/soatokglitch-2/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2025/04/SoatokGlitch.png?fit=512%2C445&amp;ssl=1" data-orig-size="512,445" data-comments-opened="0" data-image-title="SoatokGlitch" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2025/04/SoatokGlitch.png?fit=512%2C445&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2025/04/SoatokGlitch.png?resize=512%2C445&#038;ssl=1" alt="Soatok glitching out" class="wp-image-17237" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2025/04/SoatokGlitch.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2025/04/SoatokGlitch.png?resize=300%2C261&amp;ssl=1 300w" sizes="auto, (max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption">AJ_LovesDinos</figcaption></figure>
+</div>
+
+
+<h2 id="conspiracies" class="wp-block-heading">People Can&#8217;t Be Normal About This</h2>
+
+
+
+<p class="wp-block-paragraph">I omitted several controversies from the previous section, because it was getting too long and I feel I justified my point already. However, I&#8217;m sure some people will cry foul at omissions as an attempt at deception, so I need to also mention one that was recently solved.</p>
+
+
+
+<h3 class="wp-block-heading">The NIST P-Curve Seeds</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">The what now?</p>
+</blockquote>
+
+
+
+<p class="wp-block-paragraph">Elliptic curve cryptography is <em>a whole topic</em> I&#8217;ve talked about on this blog before, at length, but I&#8217;m going to simplify for the sake of being somewhat comprehensible to people who don&#8217;t make Frobenius trace jokes on IRC.</p>
+
+
+
+<p class="wp-block-paragraph">NIST published <a href="https://csrc.nist.gov/pubs/fips/186-2/final" target="_blank" rel="noopener">FIPS 186-2 in 2000</a> (and later <a href="https://csrc.nist.gov/pubs/fips/186-2/upd1/final" target="_blank" rel="noopener">updated it in 2001</a>), which provided several elliptic curve groups (P-192, P-224, P-256, P-384, P-521).</p>
+
+
+
+<p class="wp-block-paragraph">Each elliptic curve group was parametrized by a seed, <code>s</code>, which was never explained by NSA. The output of the SHA-1 hash of <code>s</code> was used to calculate the parameters for each elliptic curve group.</p>
+
+
+
+<p class="wp-block-paragraph">Jerry Solinas, who was the mathematician and cryptographer that published the P-curves, couldn&#8217;t remember how the seeds were chosen.</p>
+
+
+
+<p class="wp-block-paragraph">In the wake of Dual_EC_DRBG and BULLRUN, any unexplained value being the basis of several NIST standardized elliptic curve groups caused many people to be itchy.</p>
+
+
+
+<p class="wp-block-paragraph">For a while, Daniel J. Bernstein&#8217;s Curve25519 algorithms and software gained popularity in the applied cryptography spaces. This was probably a good thing, overall, but there were <a href="https://moderncrypto.org/mail-archive/curves/2017/000898.html" target="_blank" rel="noopener">some sharp edges</a> (that later work <a href="https://ristretto.group/" target="_blank" rel="noopener">has since improved upon</a>). </p>
+
+
+
+<p class="wp-block-paragraph">Speaking from experience, many of these decisions post-Snowden were the result of paranoia about the NSA possibly adding a NOBUS backdoor to the NIST P-Curves too, rather than merely for the technical merits of Curve25519.</p>
+
+
+
+<p class="wp-block-paragraph">However, Koblitz and Menezes already tackled that in a paper titled, &#8220;<a href="https://eprint.iacr.org/2015/1018" target="_blank" rel="noopener">A Riddle Wrapped In An Enigma</a>.&#8221; To summarize their mathematical arguments: If NSA was aware of a secret weakness that only occurs in some number of elliptic curve groups, and wanted to make a NOBUS backdoor that their adversaries couldn&#8217;t figure out, it would need to be a structural weakness that only occurs extremely rarely.</p>
+
+
+
+<p class="wp-block-paragraph">So rarely, in fact, that not only would the computational resources available to Jerry Solinas in the late 1990s would not have been sufficient, but you still couldn&#8217;t do it today.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">This scenario is highly implausible for several reasons. First, the class of weak curves must be extremely large in order to obtain a weak curve with the seeded-hash method. For concreteness, suppose that p is a fixed 256-bit prime. There are roughly <img decoding="async" src="https://s0.wp.com/latex.php?latex=2%5E%7B257%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="2^{257}" class="latex" /> isomorphism classes of elliptic curves defined over <img decoding="async" src="https://s0.wp.com/latex.php?latex=F_p&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="F_p" class="latex" />. Let <img decoding="async" src="https://s0.wp.com/latex.php?latex=s&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="s" class="latex" /> be the proportion of elliptic curves over <img decoding="async" src="https://s0.wp.com/latex.php?latex=F_p&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="F_p" class="latex" /> that are believed (by everyone except hypothetically the NSA in 1997) to be safe. This class of curves includes essentially all elliptic curves of prime order (with the exception of prime-field anomalous curves and those that succumb to the Weil/Tate pairing attack). Since the proportion of 256-bit numbers that are prime is approximately <img decoding="async" src="https://s0.wp.com/latex.php?latex=1%2F%28256+ln+2%29+%5Capprox+2%5E%7B%5Cneg+8%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="1/(256 ln 2) &#92;approx 2^{&#92;neg 8}" class="latex" />, the proportion of curves that are strong is at least <img decoding="async" src="https://s0.wp.com/latex.php?latex=2%5E%7B%5Cneg+8%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="2^{&#92;neg 8}" class="latex" />. Now suppose that the proportion of these curves that the NSA knew how to break were <img decoding="async" src="https://s0.wp.com/latex.php?latex=2%5E%7B%5Cneg+40%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="2^{&#92;neg 40}" class="latex" />. In this hypothetical scenario the NSA could select such a weak curve by trying about <img decoding="async" src="https://s0.wp.com/latex.php?latex=2%5E%7B48%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="2^{48}" class="latex" /> seeds. The number of NSA-weak curves would then be approximately <img decoding="async" src="https://s0.wp.com/latex.php?latex=2%5E%7B209%7D&#038;bg=0a0a0a&#038;fg=f0f0f0&#038;s=3&#038;c=20201002" alt="2^{209}" class="latex" />. This would mean that this huge class of weak curves was known to the NSA in 1997 but is still undiscovered by outside researchers in 2015. <strong>It is highly unlikely that such a large family of weak elliptic curves would have escaped detection by the cryptographic research community from 1997 to the present.</strong></p>
+<cite>Koblitz and Menezes, 2015 (emphasis mine)</cite></blockquote>
+
+
+
+<p class="wp-block-paragraph">This quote highlights my broader point in this whole blog post: The NSA isn&#8217;t magical. (Nor is AI. Nor are quantum computers.) The NSA&#8217;s capabilities and budgets are finite. Their incentives are defined by their mission.</p>
+
+
+
+<p class="wp-block-paragraph">In 2023, Filippo Valsorda and several others (including myself) pledged <a href="https://words.filippo.io/seeds-bounty/" target="_blank" rel="noopener">a bounty</a> (with extra if the award is donated to charity) to anyone that could solve the mystery of the NIST P-curve seeds.</p>
+
+
+
+<p class="wp-block-paragraph">Earlier this month, Anthropic <a href="https://words.filippo.io/seeds-solved/" target="_blank" rel="noopener">successfully claimed that bounty</a>, and elected to donate the bounty to the ISRG (the non-profit that operates <a href="https://letsencrypt.org/" target="_blank" rel="noopener">the Let&#8217;s Encrypt certificate authority</a>).</p>
+
+
+
+<p class="wp-block-paragraph">There&#8217;s a poetic irony here: My pledged donation is going towards the organization that led the way to making TLS ubiquitous online since 2015 in the wake of the NSA&#8217;s global mass surveillance&#8230; <strong>because one of the NSA mysteries was finally solved</strong>.</p>
+
+
+
+<p class="wp-block-paragraph">This is a nice segue into the final topic I want to discuss today.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="512" data-attachment-id="1483" data-permalink="https://soatok.blog/soatokuwu/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/10/soatokuwu.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="SoatokUwU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/10/soatokuwu.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/10/soatokuwu.png?resize=512%2C512&#038;ssl=1" alt="UwU" class="wp-image-1483" style="width:auto;height:256px"/><figcaption class="wp-element-caption"><a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
+</div>
+
+
+<h2 class="wp-block-heading">Post-Quantum Cryptography</h2>
+
+
+
+<p class="wp-block-paragraph">I&#8217;ve already covered most of what I want to say here in a previous post titled, <em><a href="https://soatok.blog/2026/04/13/hybrid-constructions-the-post-quantum-safety-blanket/" target="_blank" rel="noopener">Hybrid Constructions: The Post-Quantum Safety Blanket</a></em>.</p>
+
+
+
+<p class="wp-block-paragraph">I was tagged in a Fediverse post yesterday that punctuated the sort of discourse cryptographers have already seen in the IETF mailing list threads and on technical forums in the past few months:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">NIST works for US fash regime that&#8217;s trying to help their AI scammer buddies pivot to quantum scams.</p>
+
+
+
+<p class="wp-block-paragraph">That&#8217;s the generous interpretation.</p>
+
+
+
+<p class="wp-block-paragraph">The worse one is that NSA has known flaws/backdoors in the post quantum systems and wants to shut down the actually-secure ones.</p>
+<cite><a href="https://web.archive.org/web/20261029071333/https://hachyderm.io/@dalias/117517818813433375" target="_blank" rel="noopener">@dalias@hachyderm.io</a> &#8211; (To be clear, I chose this comment as an example because it&#8217;s more coherent than the others I&#8217;ve seen in 2026. Do NOT be a jerk to anyone.)</cite></blockquote>
+
+
+
+<p class="wp-block-paragraph">This was a reply to a quote-post of <a href="https://web.archive.org/web/20261029071728/https://defcon.social/@infosec/117516999211815499" target="_blank" rel="noopener">another thread</a> that described NIST publishing its final plan for <a href="https://csrc.nist.gov/pubs/ir/8547/final" target="_blank" rel="noopener">IR 8547</a>: the transition to post-quantum cryptography.</p>
+
+
+
+<p class="wp-block-paragraph">The NSA announced, in 2015, <a href="https://web.archive.org/web/20151016020521/https://www.nsa.gov/ia/programs/suiteb_cryptography/" target="_blank" rel="noopener">its plans to migrate to &#8220;quantum resistant algorithms&#8221;</a>.</p>
+
+
+
+<p class="wp-block-paragraph">For the decade or so since, the NIST Post-Quantum Cryptography standardization effort has largely revolved around <a href="https://groups.google.com/a/list.nist.gov/g/pqc-forum" target="_blank" rel="noopener">the NIST pqc-forum</a>. You can read the archived email threads, publicly, going back to the forum&#8217;s inception. Most of the emails are dry, boring, technical, and/or procedural.</p>
+
+
+
+<p class="wp-block-paragraph">But in the beginning? It was a <em>bloodbath</em> of cryptanalytic attacks against proposed KEMs and signature algorithms.</p>
+
+
+
+<p class="wp-block-paragraph">The NIST recommendations and standards for post-quantum cryptography were a transparent effort involving <em>virtually anyone in the cryptography and security communities that wanted to participate</em> spanning from 2015 until now, and it is still ongoing.</p>
+
+
+
+<p class="wp-block-paragraph">The selected algorithms (i.e., ML-KEM, formerly known as CRYSTALS-Kyber) were designed by international teams. The principal submitter of ML-KEM, Peter Schwabe, even worked with Daniel J. Bernstein on <a href="https://nacl.cr.yp.to/" target="_blank" rel="noopener">NaCl in the 2010s</a> (and was <a href="https://cryptojedi.org/peter/index.shtml" target="_blank" rel="noopener">one of Bernstein&#8217;s Ph.D Students</a>).</p>
+
+
+
+<blockquote class="wp-block-quote quote-soatok is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">Bernstein, for those not following along, was a large source of irritation on the TLS Working Group mailing list earlier this year for his weird anti-ML-KEM and anti-ML-DSA tirades and concern-trolling.</p>
+
+
+
+<p class="wp-block-paragraph">At one point, he tried to summon Twitter mobs to join the mailing list and pack the vote&#8230; except, that&#8217;s not how Rough Consensus works at IETF at all!</p>
+
+
+
+<p class="wp-block-paragraph">Today, many &#8220;NIST backdoored post-quantum&#8221; conspiracy theories point to Bernstein to support their points.</p>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s all very stupid and disappointing.</p>
+</blockquote>
+
+
+
+<p class="wp-block-paragraph">Furthermore, there <a href="https://keymaterial.net/2025/11/27/ml-kem-mythbusting/" target="_blank" rel="noopener">isn&#8217;t enough structure in ML-KEM, in particular</a>, to squeeze in a public key to make any plausible weakness truly NOBUS.</p>
+
+
+
+<h3 class="wp-block-heading">How plausible is an NSA backdoor here, really?</h3>
+
+
+
+<p class="wp-block-paragraph">I&#8217;m no Neil Koblitz or Alfred Menezes, so forgive me if my rebuttal doesn&#8217;t contain the mathematical rigor of those two.</p>
+
+
+
+<p class="wp-block-paragraph">Here are some facts to consider.</p>
+
+
+
+<ol class="wp-block-list">
+<li>The federal government (through <a href="https://media.defense.gov/2025/May/30/2003728741/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS.PDF" target="_blank" rel="noopener nofollow">CNSA 2.0</a>) is being told to adopt ML-KEM-1024 and ML-DSA-87. Hybrid constructions are not blessed for protecting federal government systems.</li>
+
+
+
+<li>As we saw with <a href="#des">the DES S-boxes</a>, the NSA is known to sometimes make decisions that <em>improve</em> security (though may conceal an attack on competing designs).</li>
+
+
+
+<li>NSA has a dual mission: COMSEC and SIGINT, as discussed above.</li>
+
+
+
+<li>NSA has tried to subvert standards before (<a href="#dual-ec">DUAL_EC_DRBG</a>).</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Is it plausible that the NSA would be so confident in the NOBUS status of a secret flaw or backdoor in ML-KEM (which they did not design) that they&#8217;d <strong>move the entire fucking federal government&#8217;s systems for TOP SECRET classified information</strong> to adopt it <a href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4615285/nsa-announces-post-quantum-cryptography-measures-to-safeguard-national-security/" target="_blank" rel="noopener">as fast as possible</a>?</p>
+
+
+
+<p class="wp-block-paragraph">I don&#8217;t know, man. That sounds kind of fucking stupid to me.</p>
+
+
+
+<p class="wp-block-paragraph">In my opinion, a more compelling conspiracy theory is that NSA already secretly built a quantum computer in <a href="https://en.wikipedia.org/wiki/Utah_Data_Center" target="_blank" rel="noopener">their Utah data center</a>, and it&#8217;s already being used to spy on everyone today.</p>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s a better fit than &#8220;ML-KEM is a NSA backdoor, the European cryptographers that designed it are all stupid, and the NSA is eager to move the US government onto a flawed or broken cryptosystem because SIGINT is all they care about, even at the expense of COMSEC, and they also can&#8217;t just <em>look for the plaintext</em> (which already works 99% of the time) they <em>gotta</em> be able to crack the encryption&#8221; which is the essence of the conspiracy theories that keep hitting my inbox today.</p>
+
+
+
+<p class="wp-block-paragraph">Conspiracy theories aren&#8217;t harmless. They create room for <a href="https://soatok.blog/2021/02/09/crackpot-cryptography-and-security-theater/" target="_blank" rel="noopener">grifters and hucksters</a> to deceive well-intentioned non-experts.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="409" height="512" data-attachment-id="3593" data-permalink="https://soatok.blog/2021/08/20/lobste-rs-password-reset-vulnerability/neophyte-confused/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-confused.png?fit=409%2C512&amp;ssl=1" data-orig-size="409,512" data-comments-opened="1" data-image-title="Neophyte-Confused" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-confused.png?fit=409%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-confused.png?resize=409%2C512&#038;ssl=1" alt="Confused protogen" class="wp-image-3593" style="width:auto;height:256px"/><figcaption class="wp-element-caption"><a href="https://harubaki.carrd.co/" target="_blank" rel="noopener">Harubaki</a></figcaption></figure>
+</div>
+
+
+<h2 class="wp-block-heading">In Closing</h2>
+
+
+
+<p class="wp-block-paragraph">If you convinced yourself of a wrong conspiracy theory, that doesn&#8217;t mean you are dumb or unlovable.</p>
+
+
+
+<p class="wp-block-paragraph">NSA is certainly up to something. It&#8217;s their entire fucking job to be up to something. But it&#8217;d very unlikely to be a post-quantum backdoor no matter how much energy is expended on discussion boards and social media trying to convince people of that narrative.</p>
+
+
+
+<p class="wp-block-paragraph">Since neither you nor I have any information on what they&#8217;re actually up to, it&#8217;s tempting to look at the absence of evidence and fill-in-the-blanks and pattern-match based on what we already know today. That&#8217;s not stupidity.</p>
+
+
+
+<p class="wp-block-paragraph">Unfortunately, most of the proponents of these conspiracy theories will cherry-pick the most damning examples (i.e., Dual_EC_DRBG, through the lens of Snowden) while ignoring the messier and more nuanced aspects of the NSA&#8217;s [mis]conduct with the larger cryptography community.</p>
+
+
+
+<p class="wp-block-paragraph">So, please: Stay curious and humble. Better and more likely conspiracy theories exist, and may even be true, but you&#8217;ll never reach them if you short-circuit your analysis on stale low-hanging fruit and stop wondering.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="512" data-attachment-id="9753" data-permalink="https://soatok.blog/2024/05/30/furries-are-losing-the-battle-against-scale/soatokheart/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="SoatokHeart" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?resize=512%2C512&#038;ssl=1" alt="Soatok hugging a giant pink heart while making a blep face" class="wp-image-9753" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/05/SoatokHeart.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption">I believe in you.<br>Art: AJ_LovesDinos</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21923</post-id>	</item>
+		<item>
 		<title>Touching Grass Isn&#8217;t Enough: The Furry Fandom&#8217;s Issues Are Structural</title>
 		<link>https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/</link>
 		
@@ -65,7 +737,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" fetchpriority="high" decoding="async" width="512" height="512" data-attachment-id="3099" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatoktelegramswave3-09/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="SoatokTelegramsWave3-09" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?resize=512%2C512&#038;ssl=1" alt="Bleh Sticker" class="wp-image-3099" style="width:auto;height:256px"/><figcaption class="wp-element-caption">Art by <a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="512" data-attachment-id="3099" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatoktelegramswave3-09/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="SoatokTelegramsWave3-09" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatoktelegramswave3-09.png?resize=512%2C512&#038;ssl=1" alt="Bleh Sticker" class="wp-image-3099" style="width:auto;height:256px"/><figcaption class="wp-element-caption">Art by <a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
 </div>
 
 
@@ -121,7 +793,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" width="512" height="512" data-attachment-id="116" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatok_stickerpack-facepaw/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/04/soatok_stickerpack-facepaw.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="Facepaw!" data-image-description="&lt;p&gt;Facepaw! Sticker&lt;/p&gt;
+<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="512" data-attachment-id="116" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatok_stickerpack-facepaw/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/04/soatok_stickerpack-facepaw.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="Facepaw!" data-image-description="&lt;p&gt;Facepaw! Sticker&lt;/p&gt;
 " data-image-caption="&lt;p&gt;Art: LvJ&lt;/p&gt;
 " data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/04/soatok_stickerpack-facepaw.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2020/04/soatok_stickerpack-facepaw.png?resize=512%2C512&#038;ssl=1" alt="Facepaw" class="wp-image-116" style="width:auto;height:256px"/><figcaption class="wp-element-caption">Never thought I&#8217;d need to clarify something as obvious as this.<br>Art: <a href="https://cmykatgraphics.carrd.co/" target="_blank" rel="noopener">CMYKat</a></figcaption></figure>
 </div>
@@ -143,7 +815,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><img data-recalc-dims="1" decoding="async" width="503" height="555" data-attachment-id="21808" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/image-48/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?fit=503%2C555&amp;ssl=1" data-orig-size="503,555" data-comments-opened="0" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?fit=503%2C555&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?resize=503%2C555&#038;ssl=1" alt="" class="wp-image-21808" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?w=503&amp;ssl=1 503w, https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?resize=272%2C300&amp;ssl=1 272w" sizes="(max-width: 503px) 100vw, 503px" /><figcaption class="wp-element-caption"><a href="https://linktr.ee/sarahcandersen" target="_blank" rel="noopener">Sarah Andersen</a></figcaption></figure>
+<figure class="aligncenter size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="503" height="555" data-attachment-id="21808" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/image-48/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?fit=503%2C555&amp;ssl=1" data-orig-size="503,555" data-comments-opened="0" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?fit=503%2C555&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?resize=503%2C555&#038;ssl=1" alt="" class="wp-image-21808" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?w=503&amp;ssl=1 503w, https://i0.wp.com/soatok.blog/wp-content/uploads/2026/10/image.png?resize=272%2C300&amp;ssl=1 272w" sizes="auto, (max-width: 503px) 100vw, 503px" /><figcaption class="wp-element-caption"><a href="https://linktr.ee/sarahcandersen" target="_blank" rel="noopener">Sarah Andersen</a></figcaption></figure>
 </div>
 
 
@@ -10749,383 +11421,5 @@ func ToEdwards25519Point(e *ristretto255.Element) *edwards25519.Point {
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">18373</post-id>	</item>
-		<item>
-		<title>Barking Up The Ratchet Tree &#8211; MLS Is Neither Royal Nor Nude</title>
-		<link>https://soatok.blog/2025/08/25/barking-up-the-ratchet-tree-mls-is-neither-royal-nor-nude/</link>
-		
-		<dc:creator><![CDATA[Soatok]]></dc:creator>
-		<pubDate>Mon, 25 Aug 2025 14:44:37 +0000</pubDate>
-				<category><![CDATA[Cryptography]]></category>
-		<category><![CDATA[Security Community]]></category>
-		<category><![CDATA[cryptography]]></category>
-		<category><![CDATA[E2EE]]></category>
-		<category><![CDATA[IETF]]></category>
-		<category><![CDATA[messaging layer security]]></category>
-		<category><![CDATA[misunderstandings]]></category>
-		<category><![CDATA[MLS]]></category>
-		<category><![CDATA[privacy]]></category>
-		<category><![CDATA[RFC 9420]]></category>
-		<category><![CDATA[science communication]]></category>
-		<guid isPermaLink="false">https://soatok.blog/?p=18279</guid>
-
-					<description><![CDATA[One of the first rules you learn about technical writing is, &#8220;Know your audience.&#8221; But often, this sort of advice is given without sufficient weight or practical examples. Instead, you&#8217;re ushered quickly onto the actual tactile aspects of writing&#8211;with the hope that some seed was planted that will sprout later in your education. Science communication [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<p class="wp-block-paragraph">One of the first rules you learn about technical writing is, &#8220;Know your audience.&#8221; But often, this sort of advice is given without sufficient weight or practical examples. Instead, you&#8217;re ushered quickly onto the actual tactile aspects of writing&#8211;with the hope that some seed was planted that will sprout later in your education.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Science communication is famously a hard problem.</strong></p>
-
-
-
-<p class="wp-block-paragraph">The formal scientific literature is often written with an intended audience of other scientists. In the past few decades, an industry of popular science publications sought to bridge the gap between the cool things scientists were doing and us mere mortals who completely lack the intuition necessary to wrap our heads around the intricacies and nuances of what the eggheads figured out in their pursuit of higher-quality ignorance. The few science communicators who excelled in not only informing, but also exciting, a young audience would be celebrated for decades to come. </p>
-
-
-
-<p class="wp-block-paragraph">We all remember Mythbusters, right?</p>
-
-
-
-<figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe loading="lazy" class="youtube-player" width="768" height="432" src="https://www.youtube.com/embed/XEf_9evSux8?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
-</div></figure>
-
-
-
-<p class="wp-block-paragraph">One of the things that exacerbates the difficulty of effective science communication is when you cannot know, let alone choose, who your audience is. Deprived of the ability to work backwards from what the intended recipient already knows and believes, you have to make tough choices about how to articulate your ideas.</p>
-
-
-
-<p class="wp-block-paragraph">When the Internet Engineering Task Force publishes an RFC, their bar is community rough consensus. RFCs are, inherently, the result of a design-by-committee writing process; usually intended for engineers to read. Especially with cryptography, they err on the side of technical specification rather than introductory blog post.</p>
-
-
-
-<p class="wp-block-paragraph">When someone misinterprets an IETF RFC, <a href="https://web.archive.org/web/20250722114544/https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid" target="_blank" rel="noreferrer noopener">it can have devastating security implications</a>. So, in recent years, RFC authors have demonstrated a tendency to err on the side of overcommunicating security risks. However, this is a delicate balance to strike: If you go too far, you risk confusing or scaring the reader. This is especially risky since RFCs are often read by non-engineers, making the specter of science communication difficulty continue to haunt us.</p>
-
-
-
-<p class="wp-block-paragraph">With all that in mind, several people have asked me in recent weeks for my thoughts on a blog post published earlier this month titled, <em><a href="https://ghostarchive.org/archive/LBbj6" target="_blank" rel="noreferrer noopener">MLS: The Naked King of End-to-End Encryption</a></em>.</p>
-
-
-
-<p class="wp-block-paragraph">So let&#8217;s get into that.</p>
-
-
-<div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="512" data-attachment-id="3102" data-permalink="https://soatok.blog/2026/10/02/touching-grass-isnt-enough-the-furry-fandoms-issues-are-structural/soatok-telegrams-wave-3-commission-11/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?fit=512%2C512&amp;ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-title="Soatok Telegrams Wave 3 Commission-11" data-image-description="" data-image-caption="&lt;p&gt;Clipboard Sticker&lt;/p&gt;
-" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?fit=512%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/04/soatok-telegrams-wave-3-commission-11.png?resize=512%2C512&#038;ssl=1" alt="Clipboard Sticker" class="wp-image-3102" style="width:auto;height:256px"/><figcaption class="wp-element-caption"><a href="https://cmykatgraphics.carrd.co/">CMYKat</a></figcaption></figure>
-</div>
-
-
-<h2 class="wp-block-heading">What is MLS, anyway?</h2>
-
-
-
-<p class="wp-block-paragraph">MLS (Messaging Layer Security, <a href="https://www.rfc-editor.org/rfc/rfc9420.html" target="_blank" rel="noreferrer noopener">RFC 9420</a>) is a protocol for establishing a shared key for a group of users and maintaining it as users join, leave, or rotate their own private credentials. The relevant concept here is called <strong>Continuous Group Key Agreement</strong>.</p>
-
-
-
-<p class="wp-block-paragraph">MLS is not a complete end-to-end encryption software protocol, in the way that TLS (Transport Layer Security) owns virtually the entire communication stack for communicating over networks. (You&#8217;re using TLS right now, and whenever you access a website over HTTPS.)</p>
-
-
-
-<p class="wp-block-paragraph">MLS is a building block; a well-designed tool whose designers made specific trade-offs in order to satisfy their understanding of the threat model for group private messaging.</p>
-
-
-
-<p class="wp-block-paragraph">In the hands of practical engineers and architects, MLS is an excellent starting point for building a complete end-to-end encryption system.</p>
-
-
-
-<p class="wp-block-paragraph">MLS is currently being considered by the W3C <a href="https://github.com/swicg/activitypub-e2ee" target="_blank" rel="noreferrer noopener">for end-to-end encryption for the Fediverse</a>. My own initiative, which was not tethered to any standards organization, was <a href="https://github.com/soatok/mastodon-e2ee-specification/issues/3" target="_blank" rel="noreferrer noopener">also likely to settle on MLS</a>.</p>
-
-
-
-<h3 class="wp-block-heading">Contextualizing MLS</h3>
-
-
-
-<p class="wp-block-paragraph">MLS is very limited in its scope.</p>
-
-
-
-<p class="wp-block-paragraph">It&#8217;s chiefly a group key agreement protocol built atop a binary tree of key encapsulation mechanisms, with some other features thoughtfully attached to make it easy to securely integrate into messaging software.</p>
-
-
-
-<p class="wp-block-paragraph">MLS doesn&#8217;t boil the ocean on <em>what you actually use those keys for</em>. Why would it? That&#8217;s not MLS&#8217;s job to figure out.</p>
-
-
-
-<p class="wp-block-paragraph">MLS excludes a lot of other things from its scope, because it really wouldn&#8217;t make architectural sense for MLS to cover them.</p>
-
-
-
-<p class="wp-block-paragraph">You can deploy MLS in a closed-source, centralized, enshittified, corporate messaging app, without needing to change any of the cryptographic properties.</p>
-
-
-
-<p class="wp-block-paragraph">You can also deploy MLS in an open source, federated protocol with multiple independent clients. Once again, the cryptography used by MLS doesn&#8217;t need to change.</p>
-
-
-
-<p class="wp-block-paragraph">But these are two very different types of applications, with different concepts of what a user&#8217;s &#8220;identity&#8221; even is, vastly different trust and threat models, and vastly different networking topologies.</p>
-
-
-
-<h4 class="wp-block-heading">Okay, what gives?</h4>
-
-
-
-<p class="wp-block-paragraph">In order to integrate MLS in your software, you need to decide on two &#8220;Services&#8221; (from a loose architectural sense).</p>
-
-
-
-<ol class="wp-block-list">
-<li>The <strong>Delivery Service</strong> is responsible for yeeting ciphertext from one party to another. It isn&#8217;t responsible for much else.<br><br>It&#8217;s important that the Delivery Service provides availability for the entire network.</li>
-
-
-
-<li>The <strong>Authentication Service</strong> is responsible for vending identity keys and proofs of possession to the clients.<br><br>MLS doesn&#8217;t delve into the Authentication Service in great detail, because this is very specific to where MLS is being deployed.<br><br>Some deployments may want a private Certificate Authority with some attestations bound to a FIDO key or even government-issued ID. More open and anonymous systems may benefit from Key Transparency. The MLS RFC even calls out CONIKS.</li>
-</ol>
-
-
-
-<p class="wp-block-paragraph">Ultimately, what the Authentication Service actually means or looks like is an architectural decision that <em>you</em> have to make when you deploy MLS in your application. MLS doesn&#8217;t make the decision for you.</p>
-
-
-
-<h4 class="wp-block-heading">Why are you telling me all this?</h4>
-
-
-
-<p class="wp-block-paragraph">This is important context to know up front before we dive into the claims made by <a href="https://ghostarchive.org/archive/LBbj6" target="_blank" rel="noreferrer noopener">Poberezkin&#8217;s blog post</a>.</p>
-
-
-<div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="422" height="512" data-attachment-id="3597" data-permalink="https://soatok.blog/2021/08/20/lobste-rs-password-reset-vulnerability/neophyte-sitting/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-sitting.png?fit=422%2C512&amp;ssl=1" data-orig-size="422,512" data-comments-opened="1" data-image-title="Neophyte-Sitting" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-sitting.png?fit=422%2C512&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2021/07/neophyte-sitting.png?resize=422%2C512&#038;ssl=1" alt="A protogen with purple and green fur sits cross-legged, typing on a wireless keyboard." class="wp-image-3597" style="width:auto;height:256px"/><figcaption class="wp-element-caption">Art by <a href="https://harubaki.carrd.co/" target="_blank" rel="noreferrer noopener">Harubaki</a></figcaption></figure>
-</div>
-
-
-<h2 class="wp-block-heading">Claims Made By Evgeny Poberezkin</h2>
-
-
-
-<p class="wp-block-paragraph">Poberezkin&#8217;s blog post starts off strong, but then makes a sharp turn shortly after introducing the subject matter.</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph"><strong>Does MLS Work for End-to-End Encryption?</strong></p>
-
-
-
-<p class="wp-block-paragraph"><em>TL;DR: Yes, if you accept “Trust Me Bro” security model</em>.</p>
-<cite><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html" target="_blank" rel="noreferrer noopener">MLS: The Naked King of End-to-End Encryption</a></cite></blockquote>
-
-
-
-<p class="wp-block-paragraph">How flippant. But let&#8217;s read on. </p>
-
-
-
-<p class="wp-block-paragraph">They describe the Double Ratchet used by Signal and then go on to say:</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">Let’s apply the same reasoning to MLS. Does MLS protect message content from the untrusted provider? One of the components of MLS is the “authentication service” — a component that is supplied by a communication provider. The MLS specification states in&nbsp;<a href="https://www.rfc-editor.org/rfc/rfc9420.html#name-authentication-service-comp" target="_blank" rel="noreferrer noopener">part 16.10</a>:</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">A compromised Authentication Service (AS) can assert a binding for a signature key and identity pair of its choice, thus allowing impersonation of a given user. This ability is sufficient to allow the AS to join new groups as if it were that user. Depending on the application architecture, it may also be sufficient to allow the compromised AS to join the group as an existing user, for instance, as if it were a new device associated with the same user.</p>
-</blockquote>
-
-
-
-<p class="wp-block-paragraph">The MLS specification explicitly requires trust in the communication provider as a condition for MLS securing the message content from the untrusted provider, which is self-contradictory —&nbsp;<strong>we are required to trust an untrusted party</strong>, which contradicts the purpose of E2E encryption.</p>
-<cite><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html" target="_blank" rel="noreferrer noopener">MLS: The Naked King of End-to-End Encryption</a></cite></blockquote>
-
-
-
-<p class="wp-block-paragraph">This is a quite naked misunderstanding of what MLS is actually saying in that section of the RFC.</p>
-
-
-
-<p class="wp-block-paragraph">MLS, as a protocol, outsources authentication to some black box it calls an Authentication Service. It&#8217;s a separate part of the service architecture.</p>
-
-
-
-<p class="wp-block-paragraph">Authentication is a separate trust domain from what MLS specifies, which is focused on confidentiality and integrity.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>MLS as a protocol isn&#8217;t requiring you to trust a third party</strong>, it&#8217;s warning implementors not to be careless about how they implement a common business requirement.</p>
-
-
-
-<p class="wp-block-paragraph">The author linked to and quoted part 16.10 yet conveniently neglected to mention that all of part 16 is <a href="https://www.rfc-editor.org/rfc/rfc9420.html#name-security-considerations">the <strong>Security Considerations</strong> section of the RFC</a>. Security Considerations, by the by, are <a href="https://www.rfc-editor.org/rfc/rfc3552.html#section-1" target="_blank" rel="noreferrer noopener">meant to inform readers of relevant issues</a>.</p>
-
-
-
-<p class="wp-block-paragraph">The author continues:</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">Does the MLS specification offer a practical mechanism for the end users to mitigate the effect of a compromised Authentication Service? No, it does not; it only refers to the approaches based on key transparency, but they are not practical in real-world applications, and, to the best of my knowledge, are not implemented in any of the communication platforms that deployed MLS.</p>
-<cite><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html">MLS: The Naked King of End-to-End </a><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html" target="_blank" rel="noreferrer noopener">Encryption</a></cite></blockquote>
-
-
-
-<p class="wp-block-paragraph">None of the examples I&#8217;m about to list use MLS (as of this writing), but it&#8217;s important to note that there are already real-world key transparency deployments by <a href="https://github.com/facebook/akd" target="_blank" rel="noreferrer noopener">WhatsApp</a> and <a href="https://support.apple.com/en-us/118246" target="_blank" rel="noreferrer noopener">Apple iMessage</a>. Signal is <a href="https://github.com/signalapp/libsignal/tree/main/rust/keytrans" target="_blank" rel="noreferrer noopener">also working on adding key transparency to its design</a>.</p>
-
-
-
-<p class="wp-block-paragraph">With sufficient early adopters (which together already add up to at least hundreds of millions of users), it&#8217;s a proven technology that scales and offers multiple reference implementations for future programmers.</p>
-
-
-
-<p class="wp-block-paragraph">It&#8217;s very likely that an MLS deployment that relies on key transparency for its authentication service will materialize in the near future. (Especially <a href="https://github.com/swicg/activitypub-e2ee/issues/35" target="_blank" rel="noreferrer noopener">if I have any say in the matter</a>.)</p>
-
-
-
-<p class="wp-block-paragraph">Poberezkin continues:</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph"><strong>Who Benefits From MLS?</strong></p>
-
-
-
-<p class="wp-block-paragraph">This is the most controversial statement, and the reason to make it is not to upset people, but to be proven wrong.</p>
-
-
-
-<p class="wp-block-paragraph">To me, it increasingly looks like the only people who benefit from MLS are its designers and implementers, and not the end users, particularly if MLS is being compared to other, simpler and more secure alternatives.</p>
-
-
-
-<p class="wp-block-paragraph">MLS might have provided some security via its modular design and separation of components — e.g., if providers explained to end users the difference between Delivery Service component, which may be untrusted, and Authentication Service, which must be trusted, and offered a separate choice of providers for these components.</p>
-
-
-
-<p class="wp-block-paragraph">But without the separation of services on the business level, this separation in design is purely academic rather than practical. Promoting MLS as an effective solution for E2E encryption, without disclosing the requirement for provider trust, is at best misleading, at worst — fraudulent.</p>
-<cite><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html" target="_blank" rel="noreferrer noopener">MLS: The Naked King of End-to-End Encryption</a></cite></blockquote>
-
-
-
-<p class="wp-block-paragraph">And therein lies the rub.</p>
-
-
-
-<p class="wp-block-paragraph">The author is not blowing the whistle on a weakness, oversight, or backdoor in MLS. Nor is promoting MLS &#8220;fraudulent&#8221;.</p>
-
-
-
-<p class="wp-block-paragraph">This is a science communication problem.</p>
-
-
-
-<p class="wp-block-paragraph">The MLS authors wanted to be cautious when they wrote their Security Considerations and spelled out the importance of getting the Authentication Service right.</p>
-
-
-
-<h4 class="wp-block-heading">Why didn&#8217;t they just specify an Authentication Service that does things the way they want to be done?</h4>
-
-
-
-<p class="wp-block-paragraph">There are a lot of messaging apps in the history of computing. Many businesses end up writing their own. Many homemade messaging apps end up becoming businesses. It&#8217;s a hot mess.</p>
-
-
-
-<p class="wp-block-paragraph">The proliferation of different messaging apps is partly driven by dissatisfaction with existing software. If it doesn&#8217;t scratch your itch, why not write your own?</p>
-
-
-
-<p class="wp-block-paragraph">MLS is meant to be easy for messaging apps to fit into their architecture. All it&#8217;s concerned with is vending keys for the AEAD mode (which the MLS RFC also doesn&#8217;t specify in great detail).</p>
-
-
-
-<p class="wp-block-paragraph">If they overindexed on specifying the Authentication Service in sufficient detail in RFC 9420, they likely never would have published anything.</p>
-
-
-
-<p class="wp-block-paragraph">Poberezkin continues the previous quote with a footnote:</p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">IETF’s&nbsp;<a href="https://www.rfc-editor.org/rfc/rfc9750.html#name-authentication-service" target="_blank" rel="noreferrer noopener">ongoing work</a>&nbsp;to find solutions for mitigating a compromised Authentication Service confirms the acceptance of this problem:&nbsp;<em>“The AS is invested with a large amount of trust and the compromise of the AS could allow an adversary to, among other things, impersonate group members.”</em>&nbsp;But this work has not found any robust solutions yet, its recommendations are not mandatory for MLS implementations, and some of them involve substantial complications of already complex specification, without fully removing AS trust requirement.</p>
-<cite><a href="https://www.poberezkin.com/posts/2025-08-12-mls-the-naked-king-of-end-to-end-encryption.html" target="_blank" rel="noreferrer noopener">MLS: The Naked King of End-to-End Encryption</a>, footnote 5</cite></blockquote>
-
-
-
-<p class="wp-block-paragraph">Here, Poberezkin pointed to an architecture document that explains what they overlooked from the previous RFC.</p>
-
-
-
-<h2 class="wp-block-heading">What Does Any Of This Actually Mean?</h2>
-
-
-
-<p class="wp-block-paragraph">Honestly, the most salient criticism of MLS is that its name is misleading:</p>
-
-
-
-<p class="wp-block-paragraph">Rather than security for an entire protocol layer, as &#8220;Messaging Layer Security&#8221; implies, they shipped&#8230; *drumroll*&#8230; a group key agreement protocol.</p>
-
-
-
-<p class="wp-block-paragraph">This ain&#8217;t <em>nothing</em>, and it <em>is</em> a well-designed protocol for its intended use case, but it&#8217;s very much not what the name leads you to believe.</p>
-
-
-
-<p class="wp-block-paragraph">Charitably, I believe that Poberezkin&#8217;s confusion stems from the poor name choice for MLS.</p>
-
-
-
-<blockquote class="wp-block-quote quote-soatok is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">You wouldn&#8217;t expect a group key agreement protocol to magically solve identity management and decentralized trust for you!<br><br>After all, most people punt on key management or phone it in with certificate authorities (in one bucket of threat models) or safety numbers / key fingerprints (in the other bucket)</p>
-</blockquote>
-
-
-
-<p class="wp-block-paragraph">The other salient criticism is that, in their efforts to avoid repeating JWT&#8217;s mistake of misleading implementors into deploying security footguns while they wrote the Security Considerations section of the MLSRFC, the authors accidentally undermined some people&#8217;s confidence in MLS&#8217;s design.</p>
-
-
-
-<p class="wp-block-paragraph">That&#8217;s a shame, but hopefully this is a lesson the cryptography community can learn from.</p>
-
-
-
-<p class="wp-block-paragraph">Poberezkin may be wrong about MLS, but it&#8217;s the community&#8217;s job to learn from these misunderstandings.</p>
-
-
-<div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="512" height="397" data-attachment-id="14205" data-permalink="https://soatok.blog/2024/12/18/the-better-daemons-of-our-profession/soatokbulb/" data-orig-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/12/SoatokBulb.png?fit=512%2C397&amp;ssl=1" data-orig-size="512,397" data-comments-opened="0" data-image-title="SoatokBulb" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/12/SoatokBulb.png?fit=512%2C397&amp;ssl=1" src="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/12/SoatokBulb.png?resize=512%2C397&#038;ssl=1" alt="Soatok gasping with a lightbulb above his head, as if shouting, &quot;Eureka!&quot;" class="wp-image-14205" style="width:auto;height:256px" srcset="https://i0.wp.com/soatok.blog/wp-content/uploads/2024/12/SoatokBulb.png?w=512&amp;ssl=1 512w, https://i0.wp.com/soatok.blog/wp-content/uploads/2024/12/SoatokBulb.png?resize=300%2C233&amp;ssl=1 300w" sizes="auto, (max-width: 512px) 100vw, 512px" /><figcaption class="wp-element-caption"><a href="https://bsky.app/profile/ajlovesdinos.bsky.social" target="_blank" rel="noreferrer noopener">AJ</a></figcaption></figure>
-</div>
-
-
-<h2 class="wp-block-heading">Closing Thoughts</h2>
-
-
-
-<p class="wp-block-paragraph">If someone links to the Naked King blog post in an attempt to score a slam dunk in a message board debate, I hope I&#8217;ve made it clear that their blog post is a misunderstanding of the MLS RFC.</p>
-
-
-
-<p class="wp-block-paragraph">MLS isn&#8217;t royalty, and it&#8217;s certainly not <a href="https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes" target="_blank" rel="noreferrer noopener">a naked king</a>.</p>
-
-
-
-<p class="wp-block-paragraph"></p>
-]]></content:encoded>
-					
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">18279</post-id>	</item>
 	</channel>
 </rss>

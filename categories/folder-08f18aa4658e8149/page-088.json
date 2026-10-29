@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "5623db8033d654046bb77284",
+      "title": "Debian 10通过systemd-resolved修改DNS",
+      "summary": "过年时候在CoalCloud的服务器到期忘了续费，结果机器关停。续费之后发现Caddy的反代无论如何都无法生效，查看日志发现是无法申请到域名的证书，无法解析letsencrypt的域名。直接修改/etc/resolve.conf 又无法保存，发现是一个链接文件。尽管直接删除链接文件之后，重新新建一个resolve.conf 可以解决问题，但是还是想在根源上解决DNS问题。",
+      "image": null,
+      "publishedAt": "2025-02-06T00:00:00Z",
+      "sourceId": "3f72c6c8a8442f3b",
+      "sourceTitle": "Dolingou",
+      "link": "https://www.dolingou.com/article/how-to-change-dns-in-debian-10",
+      "detailPath": "articles/5623db8033d654046bb77284.json"
+    },
+    {
+      "id": "ffddcecb63e136673fd44d7c",
+      "title": "政治正確警察",
+      "summary": "在美國政府裡面有一個叫做「18F」的部門，它是隸屬於美國聯邦總務署（General Services Administration）之下，主要的工作是幫助其他政府部門處理科技產品相關的事務。",
+      "image": null,
+      "publishedAt": "2025-02-06T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/dei-speak",
+      "detailPath": "articles/ffddcecb63e136673fd44d7c.json"
+    },
+    {
       "id": "37b20ecebf31575f82fb56e3",
       "title": "过完春节方动笔的一月月报",
       "summary": "月初是元旦，月尾是新年。新年第一个月，工作走上正轨，满足小朋友去北京的愿望，以下是详细内容。 工作 十二月进入新的团队，目前算是融入完成。并且答应了老板时间线，结果是我们在年前答应的时间线根本就完成不了，同时设计也跟不上，到目前为止是拖了一周又一周，希望二月结束，应用能够达到上线状态。 行 这个月初是元旦，月尾是农历新年，因此只有月初去北京玩了一趟，后面就期盼着春节的到来，于24号开车回了池州老家准备过年。在家里仍然继续上班也就没有去哪里玩。 关于月初北京的行程，算是把北京的各个景点都打卡了一遍，感兴趣的可以查看之前的 文章 。 而这个月是小朋友在幼儿园的最后一个生日了，以前没有办过生日宴，这次决定给她搞个生日聚会，花了几天时间策划，买了些道具，准备了一些套圈、智力题之类的游戏，带着她和她的小伙伴们开心的玩了…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/fake-traffic",
       "detailPath": "articles/fc9fd1bb47f6c047b99670a8.json"
-    },
-    {
-      "id": "3f35e513819ce7138d5c5c21",
-      "title": "亲戚",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-01-25T00:00:00Z",
-      "sourceId": "b1766968470c2fd8",
-      "sourceTitle": "一直游到海水变蓝",
-      "link": "https://nelsonboss.ink/2025/my-relative",
-      "detailPath": "articles/3f35e513819ce7138d5c5c21.json"
-    },
-    {
-      "id": "f8a53a4677dfb389404d9321",
-      "title": "你不就是开辆车",
-      "summary": "你不就是 一早就回来家上坟，下午回到城里，带着俩外甥吃了顿必胜客玩了个密室逃脱，送他们回家后我就也准备回家，车停路边等朋友送个东西过来，目睹了一场纠纷： 起因是因为妇女的火纸摊位前被停了一辆车，因为挡住了部分摊位，所以妇女不满，上前骂人争论，司机是一男中年男人，下车后和她理论： ——B：你车不能停这，停这挡我摊了 A：我停2分钟就走 B：一分钟也不行，挡我了，赶快走A:这里是路口，也不是你家的，我停两分钟就买个对联就走 B:不是我家的也不是你的，你眼瞎看不见俺摊在这 A:你才眼瞎呢…… 随后愈演愈烈，围观的人越来越多，中年妇女接着把纸箱子、板凳都扔在车前后，企图挡住男子不让他走。 ——A:俺家就是XX的，我就在这一片住，你犯不着挡着我，大过年的。 B:你家在哪，你牛逼什么，你不就是开辆车、不就是有点钱。 随后…",
-      "image": "https://ihaihe.cn/wp-content/uploads/2025/01/u23917451273400101757fm253fmtauto.webp",
-      "publishedAt": "2025-01-24T12:36:35Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/2990.htm",
-      "detailPath": "articles/f8a53a4677dfb389404d9321.json"
     }
   ]
 }

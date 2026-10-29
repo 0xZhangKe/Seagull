@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "669c46d04b9c0d7de641d9c9",
+      "title": "macOS 奇怪的安全扫码机制",
+      "summary": "今天跑 Rust 编译器测试的时候又发现非常地慢，CPU 资源根本无法利用起来，我记得几年前碰到过这个问题，当时我写了篇 文章 分享出来，并发现很多人都有同样的困扰。 而我今天碰到的这个问题虽然现象一样，但解决方法又不同了。我不确定是 macOS 系统更新，亦或是我更新了 VS Code 造成的。 问题 复现脚本很简单，循环创建随机命名的 shell 脚本，然后对比首次和再次执行的耗时： # !/bin/bash rm - rf /tmp/speed_test mkdir - p /tmp/speed_test for i in { 1..10 } ; do FILENAME = $ ( openssl rand - hex 10 ) echo $' #!/bin/sh \\n echo Hello ' > \"…",
+      "image": null,
+      "publishedAt": "2026-02-12T08:55:52Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/apple-gatekeeper-scan/",
+      "detailPath": "articles/669c46d04b9c0d7de641d9c9.json"
+    },
+    {
+      "id": "de0a271847b93e4cb990eeef",
+      "title": "髮廊 Podcast",
+      "summary": "上禮拜去剪頭髮，又遇到了那位設計師助理；就是我之前寫過、總是戴口罩的那位，我到現在還是沒看過她拿下口罩的樣子。",
+      "image": null,
+      "publishedAt": "2026-02-12T06:30:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/salon-podcast",
+      "detailPath": "articles/de0a271847b93e4cb990eeef.json"
+    },
+    {
       "id": "fdbc99e9f01854beedb579f3",
       "title": "女人的血",
       "summary": "女人，或者说有雌性生殖器官的人，又或者说需要生产卵子来进行繁殖生育的哺乳动物，都会有月经吧。以防万一有人不知道月经的底层逻辑，它本质上是卵子死去时流出的血液。女人需要每个月更换卵子，经历「流血的七天、安全期、卵子生成的发情期」这样的 28 天循环，直到无法生育。这期间有一个例外，那便是怀孕。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Rebel Zhang 的博客",
       "link": "https://rebel1725.codeberg.page/blog/zh/post/enforcing-cryptographic-trust-establishment/",
       "detailPath": "articles/d525a0b34a27c5446cba775a.json"
-    },
-    {
-      "id": "e5a07e07b3c1ccd982eefeb9",
-      "title": "出发海边第一天",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2026-02-05T13:36:00Z",
-      "sourceId": "b6f0cdd7ba01970a",
-      "sourceTitle": "夕时",
-      "link": "https://www.iyuxiyang.com/Moment/i2026/265.html",
-      "detailPath": "articles/e5a07e07b3c1ccd982eefeb9.json"
-    },
-    {
-      "id": "ba0e3688ef37a2b09d31e4fa",
-      "title": "2月周记一",
-      "summary": "烫头 ﻿ 去年过年烫头了，今年特意留了一个月的头发，今天趁着二姐休班，一起去烫头了，她不愿意烫，我弄了个锡纸烫，烫完还行，就是每次出门都得打理，不然就乱糟糟。 卖房子 这几天有几个中介打电话来，县城那套不太好卖，估计得在我挂牌价的基础上再打个九折才能有人问，市里的倒是时常有来问的，有几个大刀的我没理，市区那套比我预想的情况要好，交房3年，基本没跌多少，房租把跌的部分基本能补上，不大亏。 好几次打开博客，想写点啥，又不知道写啥，提前祝大家新年快乐。",
-      "image": null,
-      "publishedAt": "2026-02-05T08:14:09Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/3490.htm",
-      "detailPath": "articles/ba0e3688ef37a2b09d31e4fa.json"
     }
   ]
 }

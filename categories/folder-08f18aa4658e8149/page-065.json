@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "c9f4a1e662e103a2df9f22ae",
+      "title": "使用Emacs收发邮件",
+      "summary": "作为一个合格的操作系统，肯定少不了Email. 我的配置很简单，只要实现基础的收发功能即可，每天的邮件量不大。在这里记录一下配置。 收邮件 我尝试过 fetchmail ，但不知道这个东西拿到的邮件都在哪，所以最后还是选择了 mbsync . # ~/.mbsyncrc # GlowIsle 账户配置 IMAPAccount GlowIsle Host imap.qiye.aliyun.com Port 993 User i@glowisle.me Pass ****** TLSType IMAPS AuthMechs LOGIN CertificateFile /etc/ssl/certs/ca-certificates.crt # 远程存储 IMAPStore glowisle-remote Accoun…",
+      "image": null,
+      "publishedAt": "2025-11-12T08:48:02Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/email-with-emacs/",
+      "detailPath": "articles/c9f4a1e662e103a2df9f22ae.json"
+    },
+    {
+      "id": "cb39784abd6fd2eeb794637d",
+      "title": "每天寫作了一個月，然後呢？",
+      "summary": "十月開始平日每天寫作的實驗結束了。一個月寫了24篇，比過去一生都多。數字會說話，但代價也很明顯。",
+      "image": null,
+      "publishedAt": "2025-11-12T08:04:37Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/daily2",
+      "detailPath": "articles/cb39784abd6fd2eeb794637d.json"
+    },
+    {
       "id": "71dfe85d06349953cc576984",
       "title": "一个避免被 AI 取代的新思路，逆练上下文工程",
       "summary": "11 月 9 日，乌镇世界互联网大会上，DeepSeek 资深研究员陈德里表示，AI 将在 10 至 20 年 […]",
@@ -637,28 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/joy-of-blogging/",
       "detailPath": "articles/99b60bd60a7ae6c45bc593a7.json"
-    },
-    {
-      "id": "b5bb0313813bc3afbc35a9f9",
-      "title": "部落卷演算法",
-      "summary": "大平台總是告訴我們，沒有他們的演算法，我們就無法發現新事物，自己的作品也無法被別人發現。",
-      "image": null,
-      "publishedAt": "2025-11-03T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/blogroll-algorithm",
-      "detailPath": "articles/b5bb0313813bc3afbc35a9f9.json"
-    },
-    {
-      "id": "9e86796905353ed3db520397",
-      "title": "#8 谈谈大厂的重构时代、订婚的经历与梦的启示，关于我的 9-10 月｜202510",
-      "summary": "嗨朋友们，好久不见哇！ 最近我收到了好多条催更留言 😅，不好意思大噶，一不小心鸽了个大的 😭。 国庆期间，我本想写写九月的总结，但那段时间我几乎没有什么坐下来写文字的机会，每天要么是在自驾游的路上，要么是在招呼远道而来参加我的订婚宴的亲…",
-      "image": "https://img.polebug.com/plog_8_202510/01-89f87ded.webp",
-      "publishedAt": "2025-11-02T14:38:00Z",
-      "sourceId": "4ba00ea6502ba6d2",
-      "sourceTitle": "保持思考、等待、斋戒",
-      "link": "https://blog.polebug.com/2025/11/02/plog_8_202510/",
-      "detailPath": "articles/9e86796905353ed3db520397.json"
     }
   ]
 }

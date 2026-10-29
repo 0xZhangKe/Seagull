@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "b5c07ae706009830c42f0f3b",
+      "title": "Inline rendering with document​.currentScript",
+      "summary": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline <script> element that replaces itself when the page loads: The year is <script> document.currentScript.replaceWith( new Date().getFullYear())</script> If you define a shortcut f…",
+      "image": null,
+      "publishedAt": "2026-10-17T21:11:12Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+      "detailPath": "articles/b5c07ae706009830c42f0f3b.json"
+    },
+    {
       "id": "0ae3e91c56bb4607b3d8fc29",
       "title": "web-edit 0.1a2",
       "summary": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\" option for both text and image data. I needed this because I was running pelican prompts on a laptop from my phone (here's DeepSeek 4.1 Flash 101…",
@@ -153,17 +164,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
       "detailPath": "articles/786c208e58f47af965b0b326.json"
-    },
-    {
-      "id": "f1f0715c7f4f0b2abe87fb8e",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "summary": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly). I like how this…",
-      "image": null,
-      "publishedAt": "2026-10-14T16:26:53Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "detailPath": "articles/f1f0715c7f4f0b2abe87fb8e.json"
     },
     {
       "id": "451fc730c8c56ccc4ab8474e",

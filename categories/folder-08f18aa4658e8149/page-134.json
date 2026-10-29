@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "60b1fbf02c0d65573b4dc2d4",
+      "title": "Nexus6 with Android M 开启多窗口模式",
+      "summary": "昨天的Google IO之后，Google放出了Android M Preview for Nexus6. 固件大家可以去Google的官网去下，下好了刷完之后，就可以体验一下最新的Android M了。下面是设置 里面的主界面和彩蛋界面:",
+      "image": null,
+      "publishedAt": "2015-05-29T12:01:06Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/05/29/Nexus6-with-Android-M/",
+      "detailPath": "articles/60b1fbf02c0d65573b4dc2d4.json"
+    },
+    {
+      "id": "258f65a2d255ab3654d8fb42",
+      "title": "這是什麼調",
+      "summary": "雖然我通常可以揣測出題者想要我寫什麼答案，但我還是一直覺得這種題目邏輯有問題。",
+      "image": "https://wiwi.blog/assets/images/key-7cb6068af1d104f9c1c1ed7963d0e9df.jpg",
+      "publishedAt": "2015-05-16T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/what-key-is-this",
+      "detailPath": "articles/258f65a2d255ab3654d8fb42.json"
+    },
+    {
       "id": "7709cec67dff5fb848c78b39",
       "title": "图片贴纸旋转缩放功能的实现",
       "summary": "我们的项目包含图片编辑功能，特别是包含图片添加水印贴纸的功能，从最初的简单版可以添加一个图片并且移动位置，到现在添加的图片可以进行移动，以及缩放，旋转，已经是和其他的图片处理可以达到一样的很好的效果了。一直想要整理一下，分享一下实现的改进过程，一直没空，也由于我过于懒，没有动笔。今天正好有时间，分享一下。 原始阶段：直接添加ImageView，并且设置其在父view中的位置 父视图为RelativeLayout,贴纸view就是一个ImageView,通过设置topMargin和leftMargin来设置在父视图中显示的位置，不支持缩放和旋转。功能快速实现，代码比较冗余。再有了新的需求不方便扩展。 新阶段：自定义View，通过matrix变换实现各种功能 主要是定义一个View，在使用的时候放到需要用到的地方…",
@@ -637,28 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2014/09/07/yarn-intro/",
       "detailPath": "articles/fc5c63915951730021c91bf1.json"
-    },
-    {
-      "id": "5ad3e28124d2adf9a47e1f49",
-      "title": "玩木工【七】：工作角",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-09-03T16:00:33Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw007/",
-      "detailPath": "articles/5ad3e28124d2adf9a47e1f49.json"
-    },
-    {
-      "id": "1dca04b54dde02a1503f7a24",
-      "title": "玩木工【六】：垃圾箱",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-08-18T04:27:24Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw006/",
-      "detailPath": "articles/1dca04b54dde02a1503f7a24.json"
     }
   ]
 }

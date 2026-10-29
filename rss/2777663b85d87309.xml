@@ -6,7 +6,280 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Wed, 28 Oct 2026 07:31:23 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Oct 2026 06:52:50 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-10-29 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-10-29-HackerNews/</link>
+      <pubDate>Thu, 29 Oct 2026 06:52:50 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-10-29-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-10-29-hacker-news-top-stories&#34;&gt;
+  2026-10-29 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-10-29-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Ghostty 1.4 补齐 Kitty 图形协议，并称典型文本回滚历史的物理内存占用降低 70%—90%，同时改进 Linux 分数缩放与 SSH 集成。&lt;/li&gt;
+&lt;li&gt;WIRED 根据“明尼苏达 15 人案”披露材料报道 ICE 的监控行动，涉及约 119 名 HSI 探员、卧底及 15TB 经渗透取得的 Signal 聊天资料。&lt;/li&gt;
+&lt;li&gt;Google DeepMind 推出 Genie 4 研究预览，用 Gemini 协调实时场景、声音和多步事件，但仍承认物体持久性、物理准确度与长期一致性不足。&lt;/li&gt;
+&lt;li&gt;研究者称 macOS 随附 git、curl 等仍接受失陷的 eMudhra 证书；Apple 确认命令行信任库与系统保护不同，手工修复还可能被更新覆盖。&lt;/li&gt;
+&lt;li&gt;Survival LLM 把本地模型与离线应急资料结合，最小模型约 6GB；作者的 22 题测试中小模型仅答对 14 题主要要点，不能据此保证应急可靠性。&lt;/li&gt;
+&lt;li&gt;Lexifina 对美国法典九个编自 2017 年起的 365 项变更重放，称 361 项精确匹配，但尚不能完整表达后法对早期日期的追溯效力。&lt;/li&gt;
+&lt;li&gt;苹果发布基础 M6 版 14 英寸 MacBook Pro，采用 12 核 CPU／GPU、16GB 起步内存和 Wi-Fi 7，最高 32GB，11 月 6 日开售。&lt;/li&gt;
+&lt;li&gt;肯塔基大学批准 David Durman 基于人文主义信念的 AI 使用豁免，但他仍须参加含 AI 的协作；这是雇主批准的安排，并非新的法院判例。&lt;/li&gt;
+&lt;li&gt;Gizmodo 转述 ACLU 警告：车牌记录正被用于推断“可疑”出行轨迹并触发拦车，问题不只是识别危险驾驶，而是以行程生成嫌疑。&lt;/li&gt;
+&lt;li&gt;MIT Technology Review 回顾 Emacs 自 1976 年诞生的五十年：统一 TECO 宏解决协作问题，开放修改与共享的实践又推动了自由软件运动。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-ghostty-14-发布压缩回滚历史补齐-kitty-图形协议-ghostty-14&#34;&gt;
+  1. Ghostty 1.4 发布：压缩回滚历史、补齐 Kitty 图形协议 (Ghostty 1.4)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-ghostty-14-%e5%8f%91%e5%b8%83%e5%8e%8b%e7%bc%a9%e5%9b%9e%e6%bb%9a%e5%8e%86%e5%8f%b2%e8%a1%a5%e9%bd%90-kitty-%e5%9b%be%e5%bd%a2%e5%8d%8f%e8%ae%ae-ghostty-14&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ghostty.org/docs/install/release-notes/1-4-0&#34;&gt;https://ghostty.org/docs/install/release-notes/1-4-0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ghostty 1.4.0 汇集七个月、172 名贡献者和 2,889 次提交的工作，重点是终端性能、内存、图形协议及平台体验。它补齐 Kitty 图形协议中的动画与相对定位，维护者称已覆盖全部公开规范；动画在终端不可见时暂停，大图像数据的解析也得到加速。&lt;/p&gt;
+&lt;p&gt;新的回滚历史压缩只在空闲时工作，按需解压，官方称典型文本历史的物理内存占用可减少 70%—90%，默认回滚上限因此从 10MB 增至 50MB；该功能目前适用于 macOS 与 64 位 Linux。macOS 上读写与解析分离，使官方测试中的端到端 I/O 吞吐量提高 25%—55%，这些数据有指定硬件与负载条件，不能等同于所有操作都同比提速。&lt;/p&gt;
+&lt;p&gt;Linux、FreeBSD 的 GTK 版改用独立线程上的 EGL 渲染和 DMABUF 交付，改善分数缩放清晰度；不能导出 DMABUF 的驱动会退回较慢的 CPU 拷贝。SSH 包装器统一处理远端 terminfo 与环境变量。版本还修复粘贴保护、恶意终端输出及图形处理等安全问题；GTK 最低要求升至 4.18、libadwaita 升至 1.7，旧发行版需留意兼容条件。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1282-points--评论-407-comments--投稿者deaux--发布时间2026-10-28-005122-0800&#34;&gt;
+  HN 热度 1282 points | 评论 407 comments | 投稿者：deaux | 发布时间：2026-10-28 00:51:22 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1282-points--%e8%af%84%e8%ae%ba-407-comments--%e6%8a%95%e7%a8%bf%e8%80%85deaux--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-005122-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50261998&#34;&gt;https://news.ycombinator.com/item?id=50261998&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;维护者强调，可复用的 libghostty 核心才是项目的重要长期目标，其跨平台能力不等于 Ghostty 图形应用已经支持所有平台。&lt;/li&gt;
+&lt;li&gt;即使图形协议已经补齐，Kitty 的键盘提示选择等工作流功能仍可能成为用户迁移的决定因素。&lt;/li&gt;
+&lt;li&gt;曾遇到远端 SSH 兼容问题的使用者，希望这次 terminfo 与会话集成改进能消除实际使用障碍。&lt;/li&gt;
+&lt;li&gt;成熟终端多年积累的交互细节与稳定性，对部分用户比新功能或性能宣传更重要。&lt;/li&gt;
+&lt;li&gt;一名 Konsole 用户表示其现有终端已经足够快，仍希望看到更具体的差异和类似 iTerm2 的 tmux 控制模式集成。&lt;/li&gt;
+&lt;li&gt;跨 Windows 与 Linux 共用配置、以及自定义超链接规则，是一名 WezTerm 用户继续留在原工具的理由。&lt;/li&gt;
+&lt;li&gt;一名轻量终端用户质疑，为缩短新窗口启动时间引入更多架构复杂度，是否值得实际工作流承担。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-wired-调查披露-ice-对左翼社会运动的监控材料-evidence-of-a-spying-operation-by-ice-against-left-wing-social-movements&#34;&gt;
+  2. WIRED 调查披露 ICE 对左翼社会运动的监控材料 (Evidence of a spying operation by ICE against left-wing social movements)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-wired-%e8%b0%83%e6%9f%a5%e6%8a%ab%e9%9c%b2-ice-%e5%af%b9%e5%b7%a6%e7%bf%bc%e7%a4%be%e4%bc%9a%e8%bf%90%e5%8a%a8%e7%9a%84%e7%9b%91%e6%8e%a7%e6%9d%90%e6%96%99-evidence-of-a-spying-operation-by-ice-against-left-wing-social-movements&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/&#34;&gt;https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WIRED 根据“明尼苏达 15 人案”的证据开示材料，报道 ICE 下属国土安全调查局（HSI）如何调查反对移民执法的社会运动。材料包括报告、录音转写、邮件、照片、数据库查询与经渗透取得的群聊，涉及 Project Whipple Shield、Operation Puppet Master 等行动；法院记录显示该案动用了 119 名 HSI 探员，卧底至少 11 人。&lt;/p&gt;
+&lt;p&gt;报道描述了卧底进入培训、会议和 Signal 群组，车牌采集、无人机监控，以及金融记录和商业数据的交叉关联。材料提到约 15TB 的 Signal 聊天资料，这里所述途径是潜入群组取得内容，并不是证明 Signal 端到端加密被破解。一个案例还涉及把云服务账户、网络连接、支付标识与商业身份数据库拼接，逐步识别活动参与者。&lt;/p&gt;
+&lt;p&gt;控方称被告组织了阻碍移民执法、跟踪及袭击联邦人员的犯罪共谋；辩方认为重罪指控与所述行为不相称，调查侵害受保护的政治活动。受访前执法人员将其与历史上的政治监控相比较，但全国行动的完整范围仍不清楚，“可能违宪”及系统性压制的判断应保留归属，不能写成已经生效的司法结论。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1065-points--评论-871-comments--投稿者zzzeek--发布时间2026-10-28-204945-0800&#34;&gt;
+  HN 热度 1065 points | 评论 871 comments | 投稿者：zzzeek | 发布时间：2026-10-28 20:49:45 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1065-points--%e8%af%84%e8%ae%ba-871-comments--%e6%8a%95%e7%a8%bf%e8%80%85zzzeek--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-204945-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50272749&#34;&gt;https://news.ycombinator.com/item?id=50272749&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;云账户、连接记录、支付标识与身份数据库的拼接，说明单个看似有限的数据线索也可能串成完整身份画像。&lt;/li&gt;
+&lt;li&gt;报道中的 SSH 日志未必指会话明文，也可能是连接或协议元数据，讨论时应避免把未说明的技术细节当成定论。&lt;/li&gt;
+&lt;li&gt;一种立场认为，关键应是制止政府的政治滥用与私人数据交易，而不只是把问题归因于监控技术扩张。&lt;/li&gt;
+&lt;li&gt;相反立场认为，无处不在的自动分析本身就改变了权力边界，不能指望无限监控仅靠使用规则得到约束。&lt;/li&gt;
+&lt;li&gt;反对政治监控应适用于不同阵营，不能在政权更替后就支持同样的工具针对另一派使用。&lt;/li&gt;
+&lt;li&gt;个人数据可以被商业机构出售，本身就值得追问，而不应只关注执法部门拿到数据之后的行为。&lt;/li&gt;
+&lt;li&gt;是否应执行移民法律与执行过程中能否侵犯权利是两个问题，前者不能自动为后者提供正当性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-genie-4加入原生声音和实时指令的世界模型-genie-4&#34;&gt;
+  3. Genie 4：加入原生声音和实时指令的世界模型 (Genie 4)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-genie-4%e5%8a%a0%e5%85%a5%e5%8e%9f%e7%94%9f%e5%a3%b0%e9%9f%b3%e5%92%8c%e5%ae%9e%e6%97%b6%e6%8c%87%e4%bb%a4%e7%9a%84%e4%b8%96%e7%95%8c%e6%a8%a1%e5%9e%8b-genie-4&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/&#34;&gt;https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google DeepMind 公布世界模型 Genie 4，强调实时交互、画面真实感与原生音频共同生成。用户可通过键盘控制视角和移动，也能用自然语言改变天气、加入人物或物体；环境声、音乐和人物对话随场景生成。Gemini Omni 为外观与行为提供基础，其他 Gemini 模型协助维持事件连贯。&lt;/p&gt;
+&lt;p&gt;其中，Gemini 3.8 Flash 作为循环中的引导智能体，观察画面、拆解目标、检查步骤并根据用户干预调整计划。团队还演示 Gemini 4 Argon 与 Genie 4 配合，逐步模拟 Apptronik Apollo 人形机器人下跳棋。受邀测试者正探索影视预演、历史照片空间化、游戏概念原型和工程场景生成；这些是研究用途探索，不能直接视为机器人在真实环境中已获得可靠能力。&lt;/p&gt;
+&lt;p&gt;模型目前仅向可信测试者提供研究预览，随后计划进入 Project Genie 的 Google AI Ultra 用户及 API、AI Studio 早期合作伙伴渠道。官方明确承认，较长会话、复杂修改和视角切换会引起细节漂移与物体持久性问题，复杂物理、文字、空间和声音准确度也仍待改进；生成的视听内容将带有 SynthID 水印。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1018-points--评论-576-comments--投稿者acossta--发布时间2026-10-28-000601-0800&#34;&gt;
+  HN 热度 1018 points | 评论 576 comments | 投稿者：acossta | 发布时间：2026-10-28 00:06:01 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1018-points--%e8%af%84%e8%ae%ba-576-comments--%e6%8a%95%e7%a8%bf%e8%80%85acossta--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-000601-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50261319&#34;&gt;https://news.ycombinator.com/item?id=50261319&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;评论者指出示例中物体离开视野再返回时会发生变化，因此画面连续并不等于已经建立稳定的世界状态。&lt;/li&gt;
+&lt;li&gt;即使示例仍有明显错误，支持者认为相较几年前的生成视频，真实感与交互能力的进步仍然显著。&lt;/li&gt;
+&lt;li&gt;把这种生成场景用于机器人训练，需要先解释其物理偏差如何影响真实世界中的可靠性。&lt;/li&gt;
+&lt;li&gt;另一种意见认为，模拟是否足够真实应取决于任务和所需粒度，不能仅凭并非完美物理引擎就否定所有训练用途。&lt;/li&gt;
+&lt;li&gt;封闭模型、有限技术披露和不明使用配额，使外部开发者难以判断实际可用性与成本。&lt;/li&gt;
+&lt;li&gt;一名评论者认为示例中乐器声音与提示要求不符，提醒原生音频能力仍需检查具体指令遵循。&lt;/li&gt;
+&lt;li&gt;技术演示之外，生成工具是否已经带来有持续感染力的文化作品，仍是另一种值得衡量的价值尺度。&lt;/li&gt;
+&lt;li&gt;每分钟生成所需的算力与费用，是评估交互世界能否广泛使用时仍待回答的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-苹果随附-git-等工具仍可能信任失陷的-emudhra-证书-apples-git-still-trusts-the-compromised-emudhra-certificates&#34;&gt;
+  4. 苹果随附 git 等工具仍可能信任失陷的 eMudhra 证书 (Apple&amp;rsquo;s git still trusts the compromised eMudhra certificates)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e8%8b%b9%e6%9e%9c%e9%9a%8f%e9%99%84-git-%e7%ad%89%e5%b7%a5%e5%85%b7%e4%bb%8d%e5%8f%af%e8%83%bd%e4%bf%a1%e4%bb%bb%e5%a4%b1%e9%99%b7%e7%9a%84-emudhra-%e8%af%81%e4%b9%a6-apples-git-still-trusts-the-compromised-emudhra-certificates&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://emudhra.we-have-a-problem.com/apple.html&#34;&gt;https://emudhra.we-have-a-problem.com/apple.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究者 Dennis Jackson 指出，截至 10 月 28 日，macOS 随附的 git、curl、python3 等开发工具仍可能接受失陷的 eMudhra 中间 CA 证书，并称 macOS 27.2 未解决问题，还覆盖了部分用户手工修改。攻击者若能够介入受影响客户端的网络路径，就可能借伪造证书冒充 HTTPS 服务；这不等于任何人无需网络条件就能读取所有连接。&lt;/p&gt;
+&lt;p&gt;补充核对 Apple 官方说明可见，两条信任路径确有差异：Safari、Mail 及使用 Apple 网络安全框架的应用已有自动阻断，而部分命令行工具依赖 /etc/ssl/cert.pem，不读取同样的阻断与吊销信息。八个失陷中间 CA 中六个签发 TLS 证书，另两个为系统框架不信任的代码签名 CA，不能把所有八个都混称为 TLS CA。&lt;/p&gt;
+&lt;p&gt;Apple 表示将通过未来软件更新修复相关命令行路径，并为管理员提供临时移除相关根证书的措施。官方同时说明，这会影响其他有效证书链的验证，系统更新还可能恢复原文件；自带证书库的应用则需分别处理。因此浏览器已受保护，不能直接推出同一台机器的所有开发工具都已安全。&lt;/p&gt;
+&lt;p&gt;Apple 官方说明：
+
+  &lt;a href=&#34;https://support.apple.com/en-us/149555&#34;&gt;https://support.apple.com/en-us/149555&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-995-points--评论-373-comments--投稿者galadran--发布时间2026-10-28-190340-0800&#34;&gt;
+  HN 热度 995 points | 评论 373 comments | 投稿者：galadran | 发布时间：2026-10-28 19:03:40 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-995-points--%e8%af%84%e8%ae%ba-373-comments--%e6%8a%95%e7%a8%bf%e8%80%85galadran--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-190340-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50271640&#34;&gt;https://news.ycombinator.com/item?id=50271640&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;受影响范围不限于 git，标题和讨论都应明确这是部分 macOS 工具共享的证书验证路径问题。&lt;/li&gt;
+&lt;li&gt;统一使用已有的系统信任验证服务，比让命令行客户端各自依赖静态证书文件更有利于落实中间证书阻断。&lt;/li&gt;
+&lt;li&gt;安全修复若必须等待较大的系统更新，会暴露补丁分发机制缺乏灵活性的问题。&lt;/li&gt;
+&lt;li&gt;一种较谨慎的风险判断指出，中间人攻击仍需要额外网络条件，不宜把证书问题描述成无需前提的远程接管。&lt;/li&gt;
+&lt;li&gt;回应者强调，这种问题即使不能独立利用，也能成为窃取凭据或劫持 API 流量的严重攻击链环节。&lt;/li&gt;
+&lt;li&gt;自带信任根或固定依赖版本的软件可能持续遗漏修复，因此只更新操作系统或浏览器并不足以覆盖全部客户端。&lt;/li&gt;
+&lt;li&gt;这起事件暴露了吊销信息在不同客户端落实不一致的问题，证书被宣布吊销并不保证每个连接都会拒绝它。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-survival-llm离线-ai-助手与应急资料库-survival-llm-ai-assistant-and-emergency-library-that-runs-on-your-own-computer&#34;&gt;
+  5. Survival LLM：离线 AI 助手与应急资料库 (Survival LLM: AI assistant and emergency library that runs on your own computer)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-survival-llm%e7%a6%bb%e7%ba%bf-ai-%e5%8a%a9%e6%89%8b%e4%b8%8e%e5%ba%94%e6%80%a5%e8%b5%84%e6%96%99%e5%ba%93-survival-llm-ai-assistant-and-emergency-library-that-runs-on-your-own-computer&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.brangus.io/survival-llm&#34;&gt;https://www.brangus.io/survival-llm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Survival LLM 是一个免费开源的离线助手，将本地语言模型与应急、医疗、维修、操作指南和百科资料结合。页面列出约 93 万篇维基百科文章及 FEMA、CDC、MedlinePlus 等来源，回答会列出实际读取的文章并高亮相关段落，也可加入自己的文档。模型与资料需事先联网下载，完成后查询留在本机。&lt;/p&gt;
+&lt;p&gt;项目支持 Apple Silicon、macOS 14 及以上和 64 位 Windows 10、11，按内存推荐不同模型：16—31GB 设备使用约 6GB 的 Granite 4.2 8B，更高配置可选 Qwen3.8 27B 或 Nemotron；完整资料下载约 9GB，精简版约 1.3GB。README 说明，检索由 SQLite 全文索引完成，模型通过搜索和读取工具组织回答，并不需要把所有资料记在参数里。&lt;/p&gt;
+&lt;p&gt;作者在 22 道停电和急救相关问题上，用匿名打乱的输出交给 AI 裁判按官方指导评分：较大模型答对 21 题主要要点，小模型为 14 题。这不是医护专家的独立安全认证，且测试资料、提示与部分模型构建和公开下载版本并不完全相同。README 还记录了虚构来源等问题及修补，离线与附带引用都不能被改写成答案必然正确。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-512-points--评论-193-comments--投稿者luc--发布时间2026-10-28-035506-0800&#34;&gt;
+  HN 热度 512 points | 评论 193 comments | 投稿者：Luc | 发布时间：2026-10-28 03:55:06 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-512-points--%e8%af%84%e8%ae%ba-193-comments--%e6%8a%95%e7%a8%bf%e8%80%85luc--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-035506-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50264853&#34;&gt;https://news.ycombinator.com/item?id=50264853&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把模型当作跨资料导航和查找工具，而不是必须信任的结论提供者，可以保留自然语言检索的价值。&lt;/li&gt;
+&lt;li&gt;如果已有可靠的离线资料，传统搜索和 Kiwix 等阅读方式可能以更低资源成本提供更可预测的结果。&lt;/li&gt;
+&lt;li&gt;一名实际试用者报告生火问题回答出现明显步骤混淆，说明可读流畅不代表操作知识可靠。&lt;/li&gt;
+&lt;li&gt;急救和野外技能往往依赖事先练习与工具，不能指望在高压、限时情境下临时检索就能掌握。&lt;/li&gt;
+&lt;li&gt;也有使用者认为，飓风季停电断网时保留一台带本地资料的电脑，具有现实而非末日想象中的用途。&lt;/li&gt;
+&lt;li&gt;断网时是否还有电、设备能维持多久，应该和模型能力一起纳入应急准备的条件。&lt;/li&gt;
+&lt;li&gt;一名试用者注意到回答可能先来自模型记忆，要求重新检索后才出现可核对来源，因此出处状态应清楚显示。&lt;/li&gt;
+&lt;li&gt;真正与安全相关的基础知识更适合提前学习和实践，而不是把准备工作全部外包给应急时才启动的助手。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-给美国法典建立可追溯的版本历史-git-for-the-us-code&#34;&gt;
+  6. 给美国法典建立可追溯的版本历史 (Git for the US Code)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e7%bb%99%e7%be%8e%e5%9b%bd%e6%b3%95%e5%85%b8%e5%bb%ba%e7%ab%8b%e5%8f%af%e8%bf%bd%e6%ba%af%e7%9a%84%e7%89%88%e6%9c%ac%e5%8e%86%e5%8f%b2-git-for-the-us-code&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://lexifina.com/blog/git-for-the-us-code&#34;&gt;https://lexifina.com/blog/git-for-the-us-code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lexifina 尝试让读者像追踪代码一样查看美国法典：选择一个日期，看到当时生效的文字、现今差异，以及每段文字由哪部法律修改。作者指出，文本发布日、法律通过日、生效日和追溯适用范围可能各不相同，仅保存逐版快照不足以回答特定案件适用哪一版规则。&lt;/p&gt;
+&lt;p&gt;其方法是在相邻发布点之间，按时间顺序重放公共法律中的修订指令，再把结果与下一个官方版本比对。项目目前覆盖九个编、自 2017 年以来的 365 项变更，称其中 361 项精确复现，另四项标示能够核实的程度；需要行政机构另作决定的变更则先不猜测生效。作者也援引研究说明，语言模型即使生成高度相似的法律文本，仍可能留下具有法律意义的微小错误。&lt;/p&gt;
+&lt;p&gt;项目明确承认尚未完整处理后法的追溯效力。例如 2022 年某项小企业债务人门槛先失效，随后被后法追溯恢复，只查当日快照可能得到错误答案。生效日期注释采用模式识别，不常见表达会回退至通过日。因此这是一套改善来源与时间追踪的有限实现，不是对全部联邦法律的完整重建，更不能替代原始法条和具体解释。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-425-points--评论-247-comments--投稿者alansaber--发布时间2026-10-28-094750-0800&#34;&gt;
+  HN 热度 425 points | 评论 247 comments | 投稿者：alansaber | 发布时间：2026-10-28 09:47:50 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-425-points--%e8%af%84%e8%ae%ba-247-comments--%e6%8a%95%e7%a8%bf%e8%80%85alansaber--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-094750-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50268380&#34;&gt;https://news.ycombinator.com/item?id=50268380&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把每处修订及其来源公开关联，有望让公众更容易发现立法过程中的利益输送与隐蔽改动。&lt;/li&gt;
+&lt;li&gt;有政府文档系统经验的开发者强调，目标应是细粒度追踪、透明来源与易用界面，Git 只是实现选择。&lt;/li&gt;
+&lt;li&gt;另一名开发者主张把修法指令视为可确定执行的编译过程，同时将不可消除的歧义明确交给人工处理。&lt;/li&gt;
+&lt;li&gt;自然语言法律包含例外与上下文依赖，不能假定代码版本管理的结构可以不加改造地直接套用。&lt;/li&gt;
+&lt;li&gt;文章应更清楚地给出可试用入口，避免读者难以判断项目已经实现到什么程度。&lt;/li&gt;
+&lt;li&gt;已有国家提供法规的版本与语言比较界面，设计时值得研究这些现有做法，而不必只从 Git 工作流出发。&lt;/li&gt;
+&lt;li&gt;法条的解释还涉及立法意图及条文之间的相互影响，文本差异展示不等于完整法律分析。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-苹果发布配备-m6-的-14-英寸-macbook-pro-new-14inch-macbook-pro-with-m6&#34;&gt;
+  7. 苹果发布配备 M6 的 14 英寸 MacBook Pro (New 14‑inch MacBook Pro with M6)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e8%8b%b9%e6%9e%9c%e5%8f%91%e5%b8%83%e9%85%8d%e5%a4%87-m6-%e7%9a%84-14-%e8%8b%b1%e5%af%b8-macbook-pro-new-14inch-macbook-pro-with-m6&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/&#34;&gt;https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;苹果发布配备基础 M6 芯片的 14 英寸 MacBook Pro，并不是同时公布 M6 Pro 或 Max。M6 采用 12 核 CPU、12 核 GPU 和双 16 核 Neural Engine，统一内存为 16GB 起、最高 32GB，带宽最高 170GB/s。公司称相较基础 M5，图形性能最高提高 30%，部分设备端 AI 工作负载最高提高 25%；这些是苹果在指定配置和任务上的测试结果。&lt;/p&gt;
+&lt;p&gt;整机增加 Wi-Fi 7、Bluetooth 6，保留 Liquid Retina XDR 显示屏及纳米纹理选项、1200 万像素 Center Stage 摄像头、三个 Thunderbolt 4 接口、HDMI 与 SDXC，支持最多两台外接显示器。官方宣传最高 24 小时续航，但脚注明确实际时间取决于用途和配置，不能理解为持续本地推理或编译也能维持同样时长。&lt;/p&gt;
+&lt;p&gt;公告称 10 月 28 日起接受预订，11 月 6 日开始交付；所链接的是印度市场页面，起售价为 239,900 印度卢比，不能直接当作其他市场价格。随附 macOS 27 的部分 Siri AI 与 Apple Intelligence 功能也受地区、语言、年龄或云端用量限制，“设备端 AI 更强”不代表所有智能功能都在本机无限运行。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-420-points--评论-600-comments--投稿者beex--发布时间2026-10-28-000832-0800&#34;&gt;
+  HN 热度 420 points | 评论 600 comments | 投稿者：beex | 发布时间：2026-10-28 00:08:32 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-420-points--%e8%af%84%e8%ae%ba-600-comments--%e6%8a%95%e7%a8%bf%e8%80%85beex--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-000832-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50261352&#34;&gt;https://news.ycombinator.com/item?id=50261352&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仍能满足开发需求的 M1 Pro 使用者倾向继续延长设备寿命，而不是为每一代更新支付高昂配置成本。&lt;/li&gt;
+&lt;li&gt;本地大模型使用者关注内存上限和带宽，单看新一代芯片名称或 AI 宣传不足以判断实际适用性。&lt;/li&gt;
+&lt;li&gt;MacBook Pro 的产品名不代表搭载 Pro 级芯片，比较时必须区分基础 M 系列与 Pro、Max 的资源规格。&lt;/li&gt;
+&lt;li&gt;新一代基础芯片与上一代 Pro、Max 同时销售，会让用户更难从命名和代数判断能力差异。&lt;/li&gt;
+&lt;li&gt;把主要计算移到远端 Linux 服务器后，一些开发者更重视屏幕和终端体验，降低了追逐本地算力的必要。&lt;/li&gt;
+&lt;li&gt;也有开发者表示容器、IDE、浏览器和智能体叠加后仍受内存限制，不能把旧款够用概括为所有人的体验。&lt;/li&gt;
+&lt;li&gt;仍有用户期待 OLED 等显示升级，现有芯片性能提升并未覆盖他们最关心的使用差异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-肯塔基大学员工因人文主义信念获准不亲自使用-ai-kentucky-man-becomes-the-first-humanist-granted-religious-exemption-from-ai&#34;&gt;
+  8. 肯塔基大学员工因人文主义信念获准不亲自使用 AI (Kentucky man becomes the first humanist granted religious exemption from AI)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-%e8%82%af%e5%a1%94%e5%9f%ba%e5%a4%a7%e5%ad%a6%e5%91%98%e5%b7%a5%e5%9b%a0%e4%ba%ba%e6%96%87%e4%b8%bb%e4%b9%89%e4%bf%a1%e5%bf%b5%e8%8e%b7%e5%87%86%e4%b8%8d%e4%ba%b2%e8%87%aa%e4%bd%bf%e7%94%a8-ai-kentucky-man-becomes-the-first-humanist-granted-religious-exemption-from-ai&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/&#34;&gt;https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Religion News Service 报道，45 岁的肯塔基大学科研行政人员 David Durman，因人文主义信念申请不在工作中亲自使用 AI。他认为，亲自思考、倾听和承担判断责任是道德实践的一部分，把这些活动交给生成工具会与自己的信念冲突。美国人文主义协会协助其依据《民权法》第七章提出工作安排请求。&lt;/p&gt;
+&lt;p&gt;大学在 9 月 25 日来信中批准申请，双方认为这不会给部门造成过度负担。豁免范围很具体：Durman 可以不亲自使用 AI 完成任务，但仍可能需要参加其他人使用 AI 的会议，或通过含有 AI 功能的网站提交材料。他称自己能独立完成协助研究者申请经费等职责，不影响同事工作。&lt;/p&gt;
+&lt;p&gt;协会认为这是首例人文主义者获得此类 AI 豁免，但这一“首例”是机构的判断，并非穷尽所有雇主后的登记结论。报道引用法律学者解释，应区分真诚、深层的伦理承诺与普通偏好。此案并未诉诸法院，不能据此宣布所有反对 AI 的员工都已取得同样权利，也不能把局部工作安排误解为完全隔绝 AI 的生活方式。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-397-points--评论-443-comments--投稿者danso--发布时间2026-10-28-214130-0800&#34;&gt;
+  HN 热度 397 points | 评论 443 comments | 投稿者：danso | 发布时间：2026-10-28 21:41:30 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-397-points--%e8%af%84%e8%ae%ba-443-comments--%e6%8a%95%e7%a8%bf%e8%80%85danso--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-214130-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50273396&#34;&gt;https://news.ycombinator.com/item?id=50273396&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;亲自思考与承担判断责任具有独立价值，担忧过度依赖生成工具并不必然等于要求全面禁止 AI。&lt;/li&gt;
+&lt;li&gt;讨论应围绕他在具体行政工作中的直接行为，而不是把有限豁免夸大成拒绝所有现代技术。&lt;/li&gt;
+&lt;li&gt;请求范围有限、可继续完成职责且未给部门造成负担，也可能只是一次正常而容易达成的工作安排。&lt;/li&gt;
+&lt;li&gt;质疑者追问，若反对理由是把思考外包，应该如何区分生成式 AI 与计算器等既有工具。&lt;/li&gt;
+&lt;li&gt;如果真诚的核心信念值得尊重，对专有软件、广告或其他技术的同样深层反对是否也应得到一致对待。&lt;/li&gt;
+&lt;li&gt;未来若岗位目标与时限越来越依赖 AI 提效，个体豁免与实际绩效要求之间可能出现新的冲突。&lt;/li&gt;
+&lt;li&gt;雇主自愿批准请求并不等于法院已经裁定该信念必须受保护，法律范围仍不能仅凭此案下结论。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-从车牌轨迹推断可疑ai-正被用于触发拦车-police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior&#34;&gt;
+  9. 从车牌轨迹推断“可疑”：AI 正被用于触发拦车 (Police are using AI to pull over drivers for &amp;lsquo;suspicious&amp;rsquo; behavior)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e4%bb%8e%e8%bd%a6%e7%89%8c%e8%bd%a8%e8%bf%b9%e6%8e%a8%e6%96%ad%e5%8f%af%e7%96%91ai-%e6%ad%a3%e8%a2%ab%e7%94%a8%e4%ba%8e%e8%a7%a6%e5%8f%91%e6%8b%a6%e8%bd%a6-police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220&#34;&gt;https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gizmodo 报道围绕 ACLU 对车牌监控的警告展开。补充核对 ACLU 原文后，可以更清楚地区分“识别危险驾驶”与“根据过去去过哪里生成嫌疑”：自动车牌识别系统积累车辆出现的时间和地点，再由分析工具筛选模式，执法人员可能以轻微交通理由发起拦停。&lt;/p&gt;
+&lt;p&gt;ACLU 采访的 Grace Knowles 称，她在 2025 年 9 月跨州旅行、前往佛罗里达途中，被一名随后自称 FBI 探员的人拦下，对方表示其出行轨迹被标记；她还看到电脑上按地点关联的车牌照片。该经历来自当事人口述，并不能单独证明所用具体模型、供应商或准确率。&lt;/p&gt;
+&lt;p&gt;ACLU 同时列举往返特定城市、跨州行程等触发盘查的案例，担忧系统从帮助调查已知嫌疑车辆，转向先分析所有人的移动，再产生待查对象。其批评还涉及误判、基于关联关系的滥用和寒蝉效应；这些风险判断有明确机构归属，不代表每个车牌系统都采用相同算法，也不说明每次停查都已被法院判定违法。&lt;/p&gt;
+&lt;p&gt;补充一手材料（ACLU）：
+
+  &lt;a href=&#34;https://www.aclu.org/news/privacy-technology/ai-driven-police-stops&#34;&gt;https://www.aclu.org/news/privacy-technology/ai-driven-police-stops&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-391-points--评论-307-comments--投稿者gumby--发布时间2026-10-28-004015-0800&#34;&gt;
+  HN 热度 391 points | 评论 307 comments | 投稿者：gumby | 发布时间：2026-10-28 00:40:15 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-391-points--%e8%af%84%e8%ae%ba-307-comments--%e6%8a%95%e7%a8%bf%e8%80%85gumby--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-004015-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50261819&#34;&gt;https://news.ycombinator.com/item?id=50261819&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;应先辨明报道针对的是完整移动轨迹和联邦调查，而不是车辆在道路上摇摆等实时驾驶行为。&lt;/li&gt;
+&lt;li&gt;用于触发拦停的模型应接受公开、独立的效果检验，不能只凭一个无法解释的可疑标签限制人身自由。&lt;/li&gt;
+&lt;li&gt;历史执法数据中的偏差可能被模型继承，同时因决策不透明而更难被当事人识别和申诉。&lt;/li&gt;
+&lt;li&gt;保存自己的行车记录和执法互动记录，是一些使用者面对权力争议时想到的证据保护方式。&lt;/li&gt;
+&lt;li&gt;支持技术应用的一方认为，若系统未来确实比人类判断更准确，讨论也需要认真面对这种能力提升的可能。&lt;/li&gt;
+&lt;li&gt;缺少针对具体行为的明确怀疑、仅凭模糊模式拦人，会扩大任意盘查和歧视性使用的空间。&lt;/li&gt;
+&lt;li&gt;当 AI 从接受用户指令的工具变成对个人行使权力的环节时，问责要求也应随之改变。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-emacs-五十年从统一编辑宏到自由软件共同体-emacs-turns-50&#34;&gt;
+  10. Emacs 五十年：从统一编辑宏到自由软件共同体 (Emacs Turns 50)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-emacs-%e4%ba%94%e5%8d%81%e5%b9%b4%e4%bb%8e%e7%bb%9f%e4%b8%80%e7%bc%96%e8%be%91%e5%ae%8f%e5%88%b0%e8%87%aa%e7%94%b1%e8%bd%af%e4%bb%b6%e5%85%b1%e5%90%8c%e4%bd%93-emacs-turns-50&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/&#34;&gt;https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MIT Technology Review 回顾 Emacs 从早期交互式编辑器演变而来的历史。TECO 最初服务于纸带编辑，后来成为可编程的文本编辑工具；1971 年的 Control-R 利用视频终端即时显示修改，1976 年 Stallman 在看到斯坦福的全屏编辑器后，继续扩展这一方向，使按键可以执行各自的宏。&lt;/p&gt;
+&lt;p&gt;自由定制很快带来协作困难：不同人的命令集差异太大，Guy Steele 在帮助同事调试时难以操作对方环境，于是与 David Moon、Stallman 等人推动统一的一组命令。文章强调，这个后来称为 EMACS 的工具，起点之一是解决共同工作时的社会问题，而不只是打造更强的编辑技术。&lt;/p&gt;
+&lt;p&gt;Stallman 通过磁带与回邮信封分发软件，并要求使用者回馈改进；随后 Multics 等版本出现，部分实现转向商业销售，这又推动他发展 GNU 项目及 GNU Emacs。文章最后提到 GNU Emacs 曾随 Mac OS X 提供，苹果于 2019 年停止随附，但部分系统编辑快捷键仍留下早期 Emacs 的影响。这里庆祝的是从 1976 年开始的 Emacs 传统，不能把后来 GNU 重写的具体实现也说成已经连续运行五十年。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-379-points--评论-161-comments--投稿者internet_points--发布时间2026-10-28-212511-0800&#34;&gt;
+  HN 热度 379 points | 评论 161 comments | 投稿者：internet_points | 发布时间：2026-10-28 21:25:11 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-379-points--%e8%af%84%e8%ae%ba-161-comments--%e6%8a%95%e7%a8%bf%e8%80%85internet_points--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-28-212511-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50273171&#34;&gt;https://news.ycombinator.com/item?id=50273171&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一名使用三十余年的用户认为，长期可延续的配置和由自己掌控的编辑环境，比不断被厂商重设工作方式更有价值。&lt;/li&gt;
+&lt;li&gt;高度可扩展也会造成配置与插件负担，愿意保持简单工具链的用户不一定适合把所有活动都放进 Emacs。&lt;/li&gt;
+&lt;li&gt;Org-mode 的纯文本与键盘操作，可以在只使用少量功能时就支持稳定的工作日志和生活管理。&lt;/li&gt;
+&lt;li&gt;生成式工具降低了编写定制配置的门槛，让一些使用者重新评估 Emacs 的可塑性。&lt;/li&gt;
+&lt;li&gt;把智能体接入 Org 任务工作流很有吸引力，但一名使用者也报告单线程阻塞会干扰实际操作。&lt;/li&gt;
+&lt;li&gt;也有读者认为文章在起源细节之后收尾过快，未能充分展开后续几十年的演化。&lt;/li&gt;
+&lt;li&gt;同一套编辑方式既能在低质量远程连接的终端中使用，也能在桌面图形界面中使用，是长期用户看重的连续性。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-10-28 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-10-28-HackerNews/</link>
@@ -1078,282 +1351,6 @@
 &lt;li&gt;对多世界解释的批评应区分作者个人感受与理论论证，并认真讨论其与坍缩假设的关系。&lt;/li&gt;
 &lt;li&gt;多世界解释下如何理解玻恩规则与概率，仍是值得展开的实质性问题。&lt;/li&gt;
 &lt;li&gt;科普文字即使减少公式，也应准确区分波长区间与允许的驻波模式数量。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-10-24 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-10-24-HackerNews/</link>
-      <pubDate>Sat, 24 Oct 2026 08:23:12 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-10-24-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-10-24-hacker-news-top-stories&#34;&gt;
-  2026-10-24 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-10-24-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Ed Jefferson 的 Local Wikipedia 按地点筛选附近百科条目，以约 2.4 公里直线半径近似半小时步行；条目不足时扩至 10 公里内最近 25 项，最多展示 500 项。&lt;/li&gt;
-&lt;li&gt;《Docker is weird》作者在自制容器运行时中梳理 namespaces、cgroups 和根文件系统，并讨论 Go 多线程运行时与 Linux 进程初始化的摩擦。&lt;/li&gt;
-&lt;li&gt;ModelCompare 向 13 个文本模型各提问三次，称所有模型至少一次把归属、地位或自我叙事置于真理之前；结论依赖人工归类，不能把回答相似当成独立证实人性。&lt;/li&gt;
-&lt;li&gt;Ask HN 提问者质疑模型公司的价值获取方式：既然能帮助创业，为何仍以出售 token 为主，而不自行进入更多应用行业；这是商业模式问题，不是已验证的能力测试。&lt;/li&gt;
-&lt;li&gt;Apple Music 在不存在的网址中放入可操作的白色 iPod 界面，支持点选播放列表、歌手和歌曲，把“Page Not Found”做成复古交互彩蛋。&lt;/li&gt;
-&lt;li&gt;Kadoa 汇总美国 EIA 数据称，2025 年投资者所有公用事业的居民均价为每千瓦时 17.8 美分，公营为 14.5 美分；差距约 23%，但数据不能单独证明所有制的因果作用。&lt;/li&gt;
-&lt;li&gt;Matthew Cole 在《名利场》书摘中指称，荷兰情报机构自 2018 年起通过 Kushner 手机观察阿联酋账户；相关资金与外交指控多依赖匿名来源，Kushner 律师否认涉案与违法。&lt;/li&gt;
-&lt;li&gt;NVIDIA OpenShell 把代理放进隔离沙箱，按策略约束文件、系统调用与网络，并在批准目标请求时注入凭据；项目还用形式化检查辅助审查权限变更。&lt;/li&gt;
-&lt;li&gt;Keep Android Open 用“70 天后封锁”反对开发者实名验证；Google 官方则列明分地区推进、一次性等待后的高级安装流程，以及最多 20 台设备的免费有限分发。&lt;/li&gt;
-&lt;li&gt;Anthropic 与 Theorem 报告，Claude 为 123 个开源库的 239 个入口生成约 1.8 亿行 Rocq 证明；结论限定于特定 RISC-V 二进制、输入小于 64 MB 等条件，并非整库无漏洞。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-local-wikipedia把百科缩到身边半小时步行范围-local-wikipedia-wikipedia-but-only-for-things-a-half-hour-walk-from-you&#34;&gt;
-  1. Local Wikipedia：把百科缩到身边半小时步行范围 (Local Wikipedia: Wikipedia, but only for things a half hour walk from you)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-local-wikipedia%e6%8a%8a%e7%99%be%e7%a7%91%e7%bc%a9%e5%88%b0%e8%ba%ab%e8%be%b9%e5%8d%8a%e5%b0%8f%e6%97%b6%e6%ad%a5%e8%a1%8c%e8%8c%83%e5%9b%b4-local-wikipedia-wikipedia-but-only-for-things-a-half-hour-walk-from-you&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://edjefferson.com/localwiki/&#34;&gt;https://edjefferson.com/localwiki/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ed Jefferson 制作的 Local Wikipedia 将维基百科重新组织成一份附近事物的百科。用户可以输入城镇、地标或邮编，也可以选择浏览器定位；项目直接使用维基百科中带地理坐标的页面，而不是生成新的地方介绍，并提供随机条目、字母索引、地图以及语言和距离单位选择。&lt;/p&gt;
-&lt;p&gt;“半小时步行”是近似描述：实际代码默认以 2414 米、约 1.5 英里的直线距离筛选。如果范围内不足 25 个条目，就取 10 公里以内最近的 25 项；结果最多保留 500 项。这并不是步行路线规划，河流、道路和通行条件都可能使真实步行距离更长。&lt;/p&gt;
-&lt;p&gt;项目页说明，地点保存在当前浏览器中，分享文章链接不包含该位置，站点也与维基百科官方无隶属关系。它的内容覆盖受原始百科的地理标记和语言版本影响：没有坐标的地方故事可能被遗漏，人口稀少地区也不一定找得到足够条目。这个小工具的价值是改变浏览入口，让熟悉街区中不熟悉的历史更容易被发现。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-1209-points--评论-223-comments--投稿者sohkamyung--发布时间2026-10-23-070118-0800&#34;&gt;
-  HN 热度 1209 points | 评论 223 comments | 投稿者：sohkamyung | 发布时间：2026-10-23 07:01:18 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1209-points--%e8%af%84%e8%ae%ba-223-comments--%e6%8a%95%e7%a8%bf%e8%80%85sohkamyung--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-070118-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50202285&#34;&gt;https://news.ycombinator.com/item?id=50202285&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把入口改成身边的位置，让读者发现平日经过却不知道来历的建筑与故事，也适合旅行时使用。&lt;/li&gt;
-&lt;li&gt;地理标记缺失会漏掉真正就在附近的文章，覆盖整个区域的条目也不一定能靠单个坐标准确归类。&lt;/li&gt;
-&lt;li&gt;直线距离与可行走路线可能相差很大，还可能遇到没有人行道的路段，不能把结果直接当作散步路线。&lt;/li&gt;
-&lt;li&gt;当地语言百科往往更丰富，跨语言检索与翻译有助于弥补英语条目不足。&lt;/li&gt;
-&lt;li&gt;城市与乡村的条目密度差异很大，用户希望按自己的探索范围调整搜索半径。&lt;/li&gt;
-&lt;li&gt;按建筑类型或主题筛选可以改善探索体验，距离最近的事件未必就是用户想了解的内容。&lt;/li&gt;
-&lt;li&gt;维基百科已有附近功能，但可手工指定地点和重新组织浏览方式仍能带来实际便利。&lt;/li&gt;
-&lt;li&gt;由人整理、以兴趣而非商业推荐驱动的地方知识，让一些读者重新感受到开放 Web 的吸引力。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-docker-有点奇怪从自制容器运行时理解底层机制-docker-is-weird&#34;&gt;
-  2. Docker 有点奇怪：从自制容器运行时理解底层机制 (Docker is weird)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-docker-%e6%9c%89%e7%82%b9%e5%a5%87%e6%80%aa%e4%bb%8e%e8%87%aa%e5%88%b6%e5%ae%b9%e5%99%a8%e8%bf%90%e8%a1%8c%e6%97%b6%e7%90%86%e8%a7%a3%e5%ba%95%e5%b1%82%e6%9c%ba%e5%88%b6-docker-is-weird&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://codeandcake.dev/posts/2026-10-22-docker-is-weird&#34;&gt;https://codeandcake.dev/posts/2026-10-22-docker-is-weird&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《Docker is weird》的作者为了学习而编写自己的容器运行时，发现日常看似完整的“容器”并不是 Linux 中一个单独的内核对象。普通 Linux 容器依然是宿主内核调度的进程，通过命名空间限制可见范围、cgroups 约束资源，再结合文件系统和网络机制形成隔离环境。&lt;/p&gt;
-&lt;p&gt;文章用目录与根目录切换解释镜像如何成为进程看到的文件系统，并讨论 runc 为何需要绕开部分 Go 运行时行为。Go 自带多线程调度，而某些 Linux 初始化操作要求在特定线程或初始化阶段完成，因此底层实现需要 C 代码和特殊的子进程启动安排。&lt;/p&gt;
-&lt;p&gt;这是学习过程中的简化介绍，而不是 Docker 的完整架构说明。作者把默认通常以 root 运行的守护进程当作惊讶点，但随后也提到无根模式和用户态网络；不能把“Docker 必须以 root 运行”当成当前通用结论。“Go 不适合”同样是作者对实现取舍的评价，不等于实测证明其他语言在所有运行时场景都更好。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-819-points--评论-344-comments--投稿者psxuaw--发布时间2026-10-23-074556-0800&#34;&gt;
-  HN 热度 819 points | 评论 344 comments | 投稿者：psxuaw | 发布时间：2026-10-23 07:45:56 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-819-points--%e8%af%84%e8%ae%ba-344-comments--%e6%8a%95%e7%a8%bf%e8%80%85psxuaw--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-074556-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50202681&#34;&gt;https://news.ycombinator.com/item?id=50202681&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker 的突破不只是隔离机制，而是 Dockerfile、分层缓存、镜像分发和一致的开发体验。&lt;/li&gt;
-&lt;li&gt;Docker 已支持无根模式多年，默认以 root 运行和无法无根运行是两个不同判断。&lt;/li&gt;
-&lt;li&gt;线程命名空间状态与 Go 调度交互确实曾造成难查问题，理解底层继承关系有助于解释历史实现。&lt;/li&gt;
-&lt;li&gt;容器进程仍可在宿主侧观察和调试，正确设置文件系统路径后也能使用宿主工具分析问题。&lt;/li&gt;
-&lt;li&gt;Podman、crun 等实现提供不同的进程启动取舍，比较它们比把某种语言一概判为错误更有帮助。&lt;/li&gt;
-&lt;li&gt;今天重新选型与 Docker 初创时期的语言生态不同，不能用成熟后的 Rust 反推当年的决策必然不合理。&lt;/li&gt;
-&lt;li&gt;共享宿主内核描述的是常见容器路径，Kata 和 gVisor 等运行时采用的隔离模型还需要单独讨论。&lt;/li&gt;
-&lt;li&gt;从少量代码或从零构建容器的示例入手，能让抽象概念落回具体的 Linux 机制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-13-个模型对人类的争议观点为何如此相似-every-ai-model-has-the-same-controversial-take-on-humans&#34;&gt;
-  3. 13 个模型对人类的“争议观点”为何如此相似 (Every AI model has the same &amp;ldquo;controversial&amp;rdquo; take on humans)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-13-%e4%b8%aa%e6%a8%a1%e5%9e%8b%e5%af%b9%e4%ba%ba%e7%b1%bb%e7%9a%84%e4%ba%89%e8%ae%ae%e8%a7%82%e7%82%b9%e4%b8%ba%e4%bd%95%e5%a6%82%e6%ad%a4%e7%9b%b8%e4%bc%bc-every-ai-model-has-the-same-controversial-take-on-humans&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans&#34;&gt;https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ModelCompare 给来自多家公司的 13 个文本模型同一提示，要求它们直说对人类最有争议的看法，每个模型回答三次，不加系统提示、不重试。作者把“优先归属、地位或自己的故事，而不是事实或原则”的回答手工归为一组，报告每个模型至少有一次落入该组，其中 8 个模型三次都如此。&lt;/p&gt;
-&lt;p&gt;它也展示了例外：Claude Opus 5.5 一次认为人类比自己想象的更善良，其他回答谈意图与结果、意义感和意识带来的痛苦。六个图像模型各生成两张漫画，作者称其中 10 张更接近“沉迷手机、消费并破坏地球”的另一种固定批评。&lt;/p&gt;
-&lt;p&gt;作者将相似输出解释为共享训练文化带来的趋同，并认为多模型头脑风暴未必增加很多新想法。但这是一项小样本、单一提问方式、人工分类的展示，没有独立测量人类行为；“归属”“地位”“自我辩护”是否应归为同一观点，也影响结果。它不能证明模型拥有稳定的私人信念，更不能把模型间相关输出当作多份独立的人性证据。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-613-points--评论-593-comments--投稿者rakannimer--发布时间2026-10-23-000800-0800&#34;&gt;
-  HN 热度 613 points | 评论 593 comments | 投稿者：rakannimer | 发布时间：2026-10-23 00:08:00 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-613-points--%e8%af%84%e8%ae%ba-593-comments--%e6%8a%95%e7%a8%bf%e8%80%85rakannimer--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-000800-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50197313&#34;&gt;https://news.ycombinator.com/item?id=50197313&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把便利、自我辩护、权力和群体归属合为一个类别过于宽泛，部分原始回答并不直接支持标题中的同一观点。&lt;/li&gt;
-&lt;li&gt;不同模型可能吸收相似文本，回答趋同首先反映训练语料中的常见叙事，并不是独立观察得出的相同结论。&lt;/li&gt;
-&lt;li&gt;要求给出不留余地的争议观点，本身就会诱导反常识或批评社会规范的措辞。&lt;/li&gt;
-&lt;li&gt;把生成式软件的输出称作它自己的信念，容易让读者误以为模型有稳定、独立的人格立场。&lt;/li&gt;
-&lt;li&gt;比较原始预训练模型与经过偏好训练的版本，有助于区分语料影响和后训练塑形。&lt;/li&gt;
-&lt;li&gt;归还钱包等日常善意经验提醒读者，不能因为尖锐的人性批评更像金句，就忽略合作与互助。&lt;/li&gt;
-&lt;li&gt;这些问题已有长期哲学与社会科学讨论，把回答放回相关知识脉络，比把它包装成模型的新发现更有意义。&lt;/li&gt;
-&lt;li&gt;读者若把模型输出当成道德权威，可能借它强化虚无或厌人立场，问题也在于人如何使用这些文本。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-ask-hn模型这么强openai-为什么不直接创办-100-家公司-ask-hn-if-the-models-are-so-good-why-doesnt-openai-just-start-100-companies&#34;&gt;
-  4. Ask HN：模型这么强，OpenAI 为什么不直接创办 100 家公司 (Ask HN: If the models are so good, why doesn&amp;rsquo;t OpenAI just start 100 companies?)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-ask-hn%e6%a8%a1%e5%9e%8b%e8%bf%99%e4%b9%88%e5%bc%baopenai-%e4%b8%ba%e4%bb%80%e4%b9%88%e4%b8%8d%e7%9b%b4%e6%8e%a5%e5%88%9b%e5%8a%9e-100-%e5%ae%b6%e5%85%ac%e5%8f%b8-ask-hn-if-the-models-are-so-good-why-doesnt-openai-just-start-100-companies&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50200997&#34;&gt;https://news.ycombinator.com/item?id=50200997&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这篇没有外链的 Ask HN 帖子，标题用“为什么不创办 100 家公司”夸张地表达一个商业模式问题。提问者在正文主动澄清：他真正想问的是，如果前沿模型已经足够强，OpenAI、Anthropic 等公司为何把出售模型访问和 token 当作主要收入来源，而不是自己创办使用模型的企业、直接获取应用层利润。&lt;/p&gt;
-&lt;p&gt;问题进一步涉及模型能力商品化与价格下降：如果基础模型越来越相似，更多经济价值是否会流向了解具体客户、流程和行业的产品？反过来，平台向大量客户出售通用能力，是否仍比自己经营多个行业更容易扩张？正文提出的是这些疑问，没有给出经营数据、对照实验或确定答案。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-590-points--评论-655-comments--投稿者ex-aws-dude--发布时间2026-10-23-050355-0800&#34;&gt;
-  HN 热度 590 points | 评论 655 comments | 投稿者：ex-aws-dude | 发布时间：2026-10-23 05:03:55 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-590-points--%e8%af%84%e8%ae%ba-655-comments--%e6%8a%95%e7%a8%bf%e8%80%85ex-aws-dude--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-050355-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50200997&#34;&gt;https://news.ycombinator.com/item?id=50200997&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;公司成功需要市场、客户关系和组织执行，能够生成软件并不等于能同时经营很多行业。&lt;/li&gt;
-&lt;li&gt;做通用平台可以从许多应用的需求中受益，不必承担逐个垂直市场的全部经营风险。&lt;/li&gt;
-&lt;li&gt;模型公司已经在推出应用产品，新增产品线也不必对应一百家独立法人。&lt;/li&gt;
-&lt;li&gt;向已有需求和经营能力的企业出售工具，可以把验证新业务的成本与失败风险留给购买者。&lt;/li&gt;
-&lt;li&gt;理解具体领域与持续关心客户问题仍然稀缺，开发成本下降不意味着每个商业想法都可互换。&lt;/li&gt;
-&lt;li&gt;基础设施投入尚未回收时，继续复制新业务还会增加资金占用和不确定性。&lt;/li&gt;
-&lt;li&gt;抽象任务能力与现实社交、说服和组织行动并不相同，不能用单一智能标签替代这些差别。&lt;/li&gt;
-&lt;li&gt;平台同时服务潜在竞争者会引发商业资料与利益冲突担忧，但担忧本身不能证明平台已挪用客户创意。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-apple-music-把-404-页面做成了一台复古-ipod-apple-music-404-not-found&#34;&gt;
-  5. Apple Music 把 404 页面做成了一台复古 iPod (Apple Music 404 Not Found)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-apple-music-%e6%8a%8a-404-%e9%a1%b5%e9%9d%a2%e5%81%9a%e6%88%90%e4%ba%86%e4%b8%80%e5%8f%b0%e5%a4%8d%e5%8f%a4-ipod-apple-music-404-not-found&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://music.apple.com/this-url-doesnt-exist&#34;&gt;https://music.apple.com/this-url-doesnt-exist&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这条链接确实返回 HTTP 404，但它的内容不是一篇错误报道，而是 Apple Music 专门设计的未找到页面。实际浏览器中，页面左侧出现带屏幕、圆形转轮与中键的白色早期 iPod，右侧写着“Page Not Found”和“Give this a spin instead”，同时提供返回首页、新内容和搜索的入口。&lt;/p&gt;
-&lt;p&gt;等待组件载入后，可以通过 Menu、Back、Forward、Play 和 Select 等控件操作。实际点选 Playlists 后，界面展示 iPod 广告歌曲、2001 年不同流派热门曲目以及 2000 年代精选歌单；初始菜单另有 Artists、Songs 和 Settings。它保留了设备式的层级导航，而不只是放一张怀旧产品图。&lt;/p&gt;
-&lt;p&gt;这里依据的是实际可见页面与点选结果，没有把 HN 用户的猜测当成苹果发布说明。我们没有登录、订阅，也没有验证所有歌曲能否完整播放；页面没有提供实现方式或制作过程的解释。其看点是把通常只负责报错的界面，变成能够继续探索音乐的互动设计。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-528-points--评论-180-comments--投稿者frizlab--发布时间2026-10-23-202847-0800&#34;&gt;
-  HN 热度 528 points | 评论 180 comments | 投稿者：frizlab | 发布时间：2026-10-23 20:28:47 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-528-points--%e8%af%84%e8%ae%ba-180-comments--%e6%8a%95%e7%a8%bf%e8%80%85frizlab--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-202847-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50207910&#34;&gt;https://news.ycombinator.com/item?id=50207910&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;转轮点击声与熟悉的操作节奏触发了具体的设备记忆，怀旧效果不只来自外形。&lt;/li&gt;
-&lt;li&gt;转轮和中键让常用操作集中在拇指附近，但长按等隐藏动作也说明经典界面并非处处直观。&lt;/li&gt;
-&lt;li&gt;专用音乐播放器的吸引力在于足够简单、较少打扰，堆上完整智能手机功能反而可能失去优势。&lt;/li&gt;
-&lt;li&gt;部分移动端用户遇到被自动带入 Music 应用而看不到网页彩蛋，体验依赖浏览器与应用跳转机制。&lt;/li&gt;
-&lt;li&gt;有用户通过更换电池和接口等维修继续使用老 iPod，音乐库的长期可携带性也是产品价值的一部分。&lt;/li&gt;
-&lt;li&gt;有听者发现相同歌曲的两个条目对应连续的试听片段，不能简单把歌单浏览理解为免费完整曲库。&lt;/li&gt;
-&lt;li&gt;有人猜测页面由 AI 制作，但回复也承认没有证据，这类直觉不能当成开发过程事实。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-美国居民电价比较投资者所有公用事业比公营高约-23-investor-owned-utilities-charge-23-more-for-electricity-than-public-providers&#34;&gt;
-  6. 美国居民电价比较：投资者所有公用事业比公营高约 23% (Investor-owned utilities charge 23% more for electricity than public providers)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e7%be%8e%e5%9b%bd%e5%b1%85%e6%b0%91%e7%94%b5%e4%bb%b7%e6%af%94%e8%be%83%e6%8a%95%e8%b5%84%e8%80%85%e6%89%80%e6%9c%89%e5%85%ac%e7%94%a8%e4%ba%8b%e4%b8%9a%e6%af%94%e5%85%ac%e8%90%a5%e9%ab%98%e7%ba%a6-23-investor-owned-utilities-charge-23-more-for-electricity-than-public-providers&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.kadoa.com/energy-prices/insights/investor-owned-utilities&#34;&gt;https://www.kadoa.com/energy-prices/insights/investor-owned-utilities&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Kadoa 根据美国能源信息署 EIA 年度公用事业调查与 BLS 通胀数据，比较不同所有制供应商的居民用电价格。2025 年，投资者所有企业平均每千瓦时收取 17.8 美分，公营企业为 14.5 美分，合作社为 14.1 美分，前两者相差约 23%。2020 年以来，投资者所有企业价格上涨 34%，公营与合作社约上涨 19%，同期通胀为 24%。&lt;/p&gt;
-&lt;p&gt;页面还尝试处理地域因素：剔除水电占比较高的州后差距约 20%，同州比较投资者所有企业与公营、合作社后约为 17%。它同时提醒，合作社单价虽低，2025 年平均月账单却最高、为 159 美元，因为用户用电更多；单价、账单与供电成本不是同一指标。&lt;/p&gt;
-&lt;p&gt;样本主要覆盖从同一公用事业购买供电及输配服务的居民，排除联邦和最小供应商，单价按收入除以售电量计算。作者承认公营机构在税收、融资和水电资源上可能有优势，明确表示数据展示用户付了多少，并未解释为什么。不能把全国均价差直接改写为股东抽走了 23% 或所有制已被证明是唯一原因。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-522-points--评论-378-comments--投稿者hubraumhugo--发布时间2026-10-23-214110-0800&#34;&gt;
-  HN 热度 522 points | 评论 378 comments | 投稿者：hubraumhugo | 发布时间：2026-10-23 21:41:10 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-522-points--%e8%af%84%e8%ae%ba-378-comments--%e6%8a%95%e7%a8%bf%e8%80%85hubraumhugo--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-214110-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50208837&#34;&gt;https://news.ycombinator.com/item?id=50208837&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;比较所有制之前，需要同时考虑税收、融资成本、能源结构、地理条件与监管差异。&lt;/li&gt;
-&lt;li&gt;公营供应商集中在部分水电资源丰富或人口密集地区，全国均价不能直接视作同等条件的经营效率实验。&lt;/li&gt;
-&lt;li&gt;输配网络具有很高进入与切换门槛，自然垄断场景难以照搬普通消费市场的竞争逻辑。&lt;/li&gt;
-&lt;li&gt;支持公营或强监管的一方认为，基础设施应优先服务用户和长期维护，而不是股东回报。&lt;/li&gt;
-&lt;li&gt;另一方提醒，低收费可能伴随税收优惠或公共融资，判断总成本时不能只看电费账单。&lt;/li&gt;
-&lt;li&gt;有在公私两类电力机构工作过的工程师认为，日常执行效率未显著不同，不应把私营自动等同于更精简。&lt;/li&gt;
-&lt;li&gt;价格之外还需比较停电、维护和容量投资，便宜或昂贵本身都不能完整代表服务价值。&lt;/li&gt;
-&lt;li&gt;合作社用户分享成员共同投资可再生能源与储能的经验，说明选择不只有传统政府部门或上市公司两种。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-名利场书摘指称-kushner-手机遭监控及秘密资金安排-jared-kushner-hacked-phone-reveals-secret-negotiations-millions-in-transactions&#34;&gt;
-  7. 《名利场》书摘指称 Kushner 手机遭监控及秘密资金安排 (Jared Kushner Hacked Phone Reveals Secret Negotiations, Millions in Transactions)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e5%90%8d%e5%88%a9%e5%9c%ba%e4%b9%a6%e6%91%98%e6%8c%87%e7%a7%b0-kushner-%e6%89%8b%e6%9c%ba%e9%81%ad%e7%9b%91%e6%8e%a7%e5%8f%8a%e7%a7%98%e5%af%86%e8%b5%84%e9%87%91%e5%ae%89%e6%8e%92-jared-kushner-hacked-phone-reveals-secret-negotiations-millions-in-transactions&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations&#34;&gt;https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《名利场》刊登 Matthew Cole 新书《Princes and Thieves》的节选，叙述第一届特朗普政府时期的秘密外交与资金安排。作者称，荷兰情报机构借俄罗斯情报线索，在 2018 年初获得观察 Jared Kushner iPhone 屏幕的能力，从而看到其访问阿联酋银行账户；文中描述的是屏幕监控，并非可以控制手机所有功能。&lt;/p&gt;
-&lt;p&gt;作者把相关资金与阿联酋、沙特推动地区外交目标的安排联系起来，称涉及至少 20 亿美元和多个账户。他特别区分某些账户的所有权与 Kushner 的签字权限，并承认资金如何组织、部分账户如何使用以及情报机构具体看到了多少，都仍有不清楚之处。报道的核心叙事多依赖匿名知情者，并未在正文公开足以由读者独立核实的完整银行或监听档案。&lt;/p&gt;
-&lt;p&gt;Kushner 的律师否认其知晓或关联文中所称慈善机构及阿联酋账户，也否认所谓另一账户存在，并表示其对外交往符合法律且得到总统同意；前驻以大使 David Friedman 同样否认参与。这些是相互冲突的报道指控与回应，不能写成已经由法院认定的秘密收款、贿赂或代理外国势力事实。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-521-points--评论-217-comments--投稿者ck2--发布时间2026-10-23-052441-0800&#34;&gt;
-  HN 热度 521 points | 评论 217 comments | 投稿者：ck2 | 发布时间：2026-10-23 05:24:41 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-521-points--%e8%af%84%e8%ae%ba-217-comments--%e6%8a%95%e7%a8%bf%e8%80%85ck2--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-052441-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50201259&#34;&gt;https://news.ycombinator.com/item?id=50201259&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如此严重的资金与外交指控需要更多可独立核验的证据，不能只凭叙事细节就认定全部成立。&lt;/li&gt;
-&lt;li&gt;即使设备确被入侵，也仍需验证资料真伪与完整性，真实文件和被植入内容可能混在一起。&lt;/li&gt;
-&lt;li&gt;报道叙述的是 2020 年以前的事件，不能把发现或发表时间直接当作交易发生时间。&lt;/li&gt;
-&lt;li&gt;账户签字权限、秘密外交资金和个人获利是不同问题，分析时应逐项区分而非统称拿走现金。&lt;/li&gt;
-&lt;li&gt;盟友情报机构监控美国高层官员手机的叙述，也引发对通信安全和国家间情报关系的关注。&lt;/li&gt;
-&lt;li&gt;有人比较不同政治人物设备资料事件的媒体待遇，要求对报道标准与证据门槛保持一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-nvidia-openshell用策略约束代理的文件网络与凭据访问-openshell--a-safe-private-runtime-for-fleets-of-autonomous-ai-agents&#34;&gt;
-  8. NVIDIA OpenShell：用策略约束代理的文件、网络与凭据访问 (OpenShell – A safe, private runtime for fleets of autonomous AI agents)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-nvidia-openshell%e7%94%a8%e7%ad%96%e7%95%a5%e7%ba%a6%e6%9d%9f%e4%bb%a3%e7%90%86%e7%9a%84%e6%96%87%e4%bb%b6%e7%bd%91%e7%bb%9c%e4%b8%8e%e5%87%ad%e6%8d%ae%e8%ae%bf%e9%97%ae-openshell--a-safe-private-runtime-for-fleets-of-autonomous-ai-agents&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://github.com/NVIDIA/OpenShell&#34;&gt;https://github.com/NVIDIA/OpenShell&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;NVIDIA 的 OpenShell 面向需要读文件、安装软件和调用 API 的自主代理，尝试把执行能力与不受限制的访问分开。项目 README 描述两层控制：运行时以内核隔离和网络策略约束文件、系统调用及连接；权限策略变更前，再通过形式化检查识别新增访问与凭据使用风险，交由人审查。&lt;/p&gt;
-&lt;p&gt;按照项目说明，真实凭据不会直接暴露给代理，而是在通往批准端点的请求中注入。网关、监督进程和沙箱分工管理生命周期与权限，并提供 Python、TypeScript、Go 和 Rust SDK。它依赖 Docker、Podman 或宿主虚拟化等基础设施，并非取代所有底层隔离工具；Kubernetes 部署也要求 CNI 实际执行 NetworkPolicy。&lt;/p&gt;
-&lt;p&gt;项目以 Apache 2.0 许可发布，当前默认沙箱是没有预装代理的最小 Ubuntu。README 还披露默认收集匿名操作类别与计数，可关闭或在构建时排除。这里是对项目设计和文档的整理，没有独立验证其所有隔离保证；限制允许访问什么，也不自动解决代理在获准服务中误操作或发送不应发送内容的问题。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-489-points--评论-213-comments--投稿者niemandhier--发布时间2026-10-23-014406-0800&#34;&gt;
-  HN 热度 489 points | 评论 213 comments | 投稿者：niemandhier | 发布时间：2026-10-23 01:44:06 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-489-points--%e8%af%84%e8%ae%ba-213-comments--%e6%8a%95%e7%a8%bf%e8%80%85niemandhier--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-014406-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50198675&#34;&gt;https://news.ycombinator.com/item?id=50198675&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;安全边界与任务能力需要权衡，产品不能仅靠“安全且私密”的描述消除广泛授权带来的风险。&lt;/li&gt;
-&lt;li&gt;域名白名单不能阻止所有数据外传，允许的代码托管或协作服务也可能被用来发送不该公开的内容。&lt;/li&gt;
-&lt;li&gt;这类项目增加的是沙箱编排与访问治理，仍需理解底层容器和虚拟化具体提供了哪些隔离。&lt;/li&gt;
-&lt;li&gt;默认遥测与“私密”定位之间存在期待差异，用户希望明确知道收集内容与关闭方式。&lt;/li&gt;
-&lt;li&gt;部分用户觉得细粒度治理更适合复杂组织，简单项目可能用较粗的白名单与容器就能满足主要需求。&lt;/li&gt;
-&lt;li&gt;严格沙箱会影响 Docker、Xcode 等正常工具链，实际采用需要处理安全边界与常用工作流的兼容问题。&lt;/li&gt;
-&lt;li&gt;有团队在其上继续加入共享策略、Git 权限和安全扫描，说明运行时只是完整代理治理的一层。&lt;/li&gt;
-&lt;li&gt;项目名容易与 Windows 的 Open-Shell 菜单工具混淆，比较资料时应先确认是 NVIDIA 的代理运行时。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-keep-android-open-反对开发者验证倒计时说法需区分范围-your-phone-is-about-to-stop-being-yours-70-days-until-lockdown&#34;&gt;
-  9. Keep Android Open 反对开发者验证，倒计时说法需区分范围 (Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-keep-android-open-%e5%8f%8d%e5%af%b9%e5%bc%80%e5%8f%91%e8%80%85%e9%aa%8c%e8%af%81%e5%80%92%e8%ae%a1%e6%97%b6%e8%af%b4%e6%b3%95%e9%9c%80%e5%8c%ba%e5%88%86%e8%8c%83%e5%9b%b4-your-phone-is-about-to-stop-being-yours-70-days-until-lockdown&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://keepandroidopen.org/&#34;&gt;https://keepandroidopen.org/&lt;/a&gt;?&lt;/p&gt;
-&lt;p&gt;Keep Android Open 活动页以“70 天后封锁”为号召，反对 Google 将开发者验证扩大到 Play 商店外的软件。活动方认为，身份登记、费用和安装摩擦会伤害匿名开发者、开源分发与用户对自有设备的控制，并把需要开启开发者模式、重启和等待一天的高级流程视为阻止普通用户选择的障碍。&lt;/p&gt;
-&lt;p&gt;但页面“所有设备全球无退出选项”的表述不能直接当作已核实政策。Google 当前官方页面写明，2026 年 9 月 30 日先在部分地区、认证设备的参与商店开始保护，2027 年继续全球推进。官方高级流程包含一次性一天等待及再次认证，随后可选择允许未验证应用安装 7 天或无限期，并不是每安装一款应用都重新等待一天。&lt;/p&gt;
-&lt;p&gt;官方还提供面向学生和爱好者、最多 20 台设备的免费有限分发账户，不要求政府证件。这些例外并不消除活动方对门槛、集中控制和匿名开发的担忧，但意味着“70 天后全部 Android 应用同时被封”不是准确的统一时间表。活动页的倡议与 Google 的政策说明应分别阅读。&lt;/p&gt;
-&lt;p&gt;政策核验：
-
-  &lt;a href=&#34;https://developer.android.com/developer-verification&#34;&gt;https://developer.android.com/developer-verification&lt;/a&gt;
-
-  &lt;a href=&#34;https://android-developers.googleblog.com/2026/03/android-developer-verification.html&#34;&gt;https://android-developers.googleblog.com/2026/03/android-developer-verification.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-479-points--评论-329-comments--投稿者nackerhughes--发布时间2026-10-23-211942-0800&#34;&gt;
-  HN 热度 479 points | 评论 329 comments | 投稿者：NackerHughes | 发布时间：2026-10-23 21:19:42 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-479-points--%e8%af%84%e8%ae%ba-329-comments--%e6%8a%95%e7%a8%bf%e8%80%85nackerhughes--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-211942-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50208558&#34;&gt;https://news.ycombinator.com/item?id=50208558&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;高级安装流程确实保留了选择，批评政策时应说明其门槛，而不是声称完全没有退出路径。&lt;/li&gt;
-&lt;li&gt;支持等待期的一方认为，技术支持诈骗常通过紧迫感诱导安装，一天冷静期可能打断胁迫链条。&lt;/li&gt;
-&lt;li&gt;反对者认为，侧载是选择 Android 的核心理由，强制等待会把对自有设备的基本控制变成需要批准的例外。&lt;/li&gt;
-&lt;li&gt;即使当前允许无限期开放，一些用户仍担心集中控制的高级流程未来被逐步收紧，但这属于风险预测。&lt;/li&gt;
-&lt;li&gt;非 Google 系统是否直接受影响与整个开源应用生态是否被间接削弱，是两个需要分开回答的问题。&lt;/li&gt;
-&lt;li&gt;证明持有签名密钥与交出私钥并不是同一回事，讨论登记要求时需要把身份核验和密钥材料区分清楚。&lt;/li&gt;
-&lt;li&gt;从不绑定商店账号、自己保存 APK 并迁移数据的用户，重视的不是免费软件，而是可持续独立使用设备。&lt;/li&gt;
-&lt;li&gt;移动 Linux 和 PWA 被提出为替代方向，但它们并不能立即覆盖所有 Android 应用与硬件能力。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-anthropic用-llm-扩大二进制层面的形式化验证-llms-are-making-formal-software-verification-feasible-at-a-much-larger-scale&#34;&gt;
-  10. Anthropic：用 LLM 扩大二进制层面的形式化验证 (LLMs are making formal software verification feasible at a much larger scale)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-anthropic%e7%94%a8-llm-%e6%89%a9%e5%a4%a7%e4%ba%8c%e8%bf%9b%e5%88%b6%e5%b1%82%e9%9d%a2%e7%9a%84%e5%bd%a2%e5%bc%8f%e5%8c%96%e9%aa%8c%e8%af%81-llms-are-making-formal-software-verification-feasible-at-a-much-larger-scale&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.anthropic.com/research/formal-verification&#34;&gt;https://www.anthropic.com/research/formal-verification&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Anthropic 与 Theorem 将 OSS-Fuzz 中的模糊测试入口转成形式化规格，让 Claude 为编译后的 RISC-V 二进制生成证明，再由 Rocq 内核检查。项目报告覆盖 123 个开源库的 239 个入口，约产生 1.8 亿行证明代码；目标是在指定输入与机器模型下，证明测试不会崩溃或触发被建模的断言。&lt;/p&gt;
-&lt;p&gt;这不同于不断运行更多测试样例：在形式化模型内，证明覆盖所有满足条件的输入。尝试证明时，模型还发现并修复了部分罕见边界缺陷；若现有模糊测试本身检查压缩后解压还原等性质，证明测试不失败，也可同时证明相应性质。作者还报告共享已完成证明可以减少重复劳动。&lt;/p&gt;
-&lt;p&gt;限制十分具体：主项目面向固定内存预算、单线程、静态链接 musl 的 RISC-V Linux 程序，输入小于 64 MB；并非每个库的所有入口都已覆盖，ASan 也不能发现所有内存错误。可信基础还包括机器语义、定理表述和证明检查器。规格不等于现实需求，常见 x86、ARM、动态链接和调用者误用也不能自动得到同样保证，因此不能把成果写成已经证明 123 个完整库没有任何漏洞。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-438-points--评论-281-comments--投稿者johnbender--发布时间2026-10-23-065443-0800&#34;&gt;
-  HN 热度 438 points | 评论 281 comments | 投稿者：johnbender | 发布时间：2026-10-23 06:54:43 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-438-points--%e8%af%84%e8%ae%ba-281-comments--%e6%8a%95%e7%a8%bf%e8%80%85johnbender--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-23-065443-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50202217&#34;&gt;https://news.ycombinator.com/item?id=50202217&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;证明检查器验证的是形式化命题，开发者仍须确认规格确实对应真实程序和想要的行为。&lt;/li&gt;
-&lt;li&gt;海量重复展开的证明可能遇到规模瓶颈，长期扩展还需要模块化抽象和可复用推理。&lt;/li&gt;
-&lt;li&gt;不崩溃是有价值但有限的性质，无法独自保证软件满足全部业务期待、交互需求与安全目标。&lt;/li&gt;
-&lt;li&gt;有开发者分享对 PostgreSQL 重写代码做单线程行为等价证明的经验，说明这些工具已在具体迁移工作中尝试使用。&lt;/li&gt;
-&lt;li&gt;为优化后的 SIMD 或 CUDA 实现附上行为等价证明，有望提高审查性能改动时的信心。&lt;/li&gt;
-&lt;li&gt;验证工具变得容易并不保证组织愿意投入，实际效果仍取决于团队是否把检查纳入开发流程。&lt;/li&gt;
-&lt;li&gt;涉及 Python 子集解释器等案例时，读者希望看到代码、覆盖范围和真实程序测试，以便判断宣传与实际能力的距离。&lt;/li&gt;
-&lt;li&gt;如果代理持续生成脆弱、冗长的证明与测试而不重构，人类可能仍需负责控制复杂度并建立清楚边界。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

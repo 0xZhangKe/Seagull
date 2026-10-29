@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "14347b082675e3a67ef5ca51",
+      "title": "一本讲 Android 流畅性的书，应该有什么内容？",
+      "summary": "最近读了一本新书：《打造流畅的 Android App》，京东链接： https://item.jd.com/10035215362170.html 。因为书名所以买了这本书，读完之后觉得有必要写一篇文章，让还没有买此书的同学了解一下 我个人的建议是：如果你是个老鸟，不建议买，这本书里面没有介绍太多原理性的东西，对于 Android 流畅性也没有一个比较全面的介绍；如果你是新手，这本书用来当做开阔视野 + 查漏补缺还可以，想更深入的了解 Android 流畅度还是差了点东西 之所以我会这么建议，是因为这本书确实没有讲太多性能或者流畅度相关的东西，也没有比较深入的原理部分，篇幅更多在讲 静态代码审查 、 AS Profiler 的使用 、 App 架构 、 保活 、 网络性能优化 、 APK 大小优化 、 Ap…",
+      "image": null,
+      "publishedAt": "2021-10-27T07:21:31Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/10/27/if-i-write-a-book-about-performance/",
+      "detailPath": "articles/14347b082675e3a67ef5ca51.json"
+    },
+    {
+      "id": "c2c41eedda07b54dab652dac",
+      "title": "Gravatar 头像镜像站已上线",
+      "summary": "停止公告 2024年5月3日，因CDN运营问题，终止 gravatar.taurusxin.com 全球头像镜像服务，镜像站已于当日停止解析，以下内容仅留作存档。 由于官方 https 站均被屏蔽，目前本站使用的是自建的 gravatar 镜像站，使用 Cachefly 全球 CDN 进行分发 说明地址： https://gravatar.taurusxin.com/ 镜像地址： https://gravatar.taurusxin.com/avatar/ 将你的博客中的头像地址改为 https://gravatar.taurusxin.com/avatar/ 即可 缓存规则如下 对 200、301 或者 302 等有效代码缓存的时间长度，特定参数 any 表示对任何响应都缓存一定时间长度 HTTP Stat…",
+      "image": "https://weavatar.com/avatar/feaf84106b961c37594cc19ba9f6d1fd?d=mm&s=300",
+      "publishedAt": "2021-10-27T00:23:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/gravatar/",
+      "detailPath": "articles/c2c41eedda07b54dab652dac.json"
+    },
+    {
+      "id": "33d499429f57e0ebb43e36f4",
+      "title": "Android 系统开发系列（1）：Android 12 源代码下载、编译和刷机",
+      "summary": "Android 12 正式版 已经发布： https://mp.weixin.qq.com/s/OiFSWEnc-0N2z7JYWTJluw 。Android 12 正式版的代码也已经发布， 官方文档 也进行了更新： https://source.android.google.cn/ 本文就带大家下载和编译最新的 Android 12 代码，本地编译的代码有下面几个好处 可以刷真机，方便开发者进行本地 Debug，同时代码可以导入 Android Studio 进行 Debug 可以编译 Userdebug 版本，可以 root 和 remount，方便对系统和 App 进行 Debug，Debug 模式下可以看到许多 User 版本上看不到的问题；同时由于可以看到更多的信息，也方便进行 App 竞品分析、A…",
+      "image": null,
+      "publishedAt": "2021-10-26T03:49:33Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/10/26/build-android-12/",
+      "detailPath": "articles/33d499429f57e0ebb43e36f4.json"
+    },
+    {
+      "id": "d7d75f8bbdec4170c22ce154",
+      "title": "叁拾一周：No.17",
+      "summary": "这是「叁拾一周」第十七期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 169 位。我的下一个目标是 181。 我的通讯为了保证统一性，一直还同步发在我的博客上，今年乱七八糟的笔记有点儿多，而且一条笔记还变得长了起来，往往写着写着就奔 800 字小作文去了，索性也想发在博客上，打开一看，博客已经被通讯占满了，有些不大习惯，上周就想了办法，把 newsletter 放在一个分类下，在博客主页面隐藏了。如果想从博客阅读的话，可以点击这个 链接 访问，它也是唯一能保证最终版的地方，毕竟有时候我会回来修改一些东西，用任何第三方工具都不太好搞。 近期，我也在考虑有没有比 Revue 更好用，更亲民的平台可以切换过去。试了几个，都不太理想，先保持 Revue + Blog 这种形式吧。等我有更好的办法再说。 今天想聊的…",
+      "image": null,
+      "publishedAt": "2021-10-26T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/newsletter/2021/10/newsletter-017/",
+      "detailPath": "articles/d7d75f8bbdec4170c22ce154.json"
+    },
+    {
+      "id": "ac4edf70db6196540bc47710",
+      "title": "我经历的加拿大 Start-up Visa 项目",
+      "summary": "加拿大的 Start-up Visa (SUV) 项目是给全球的申请人提供一个可以在加拿大境内创业并获得居留权的项目。因为全球疫情，有一段时间加拿大的边境是关闭的（因为理论上移民局批准了申请人，申请人需要入境才能申请永久居留，如果边境关闭，移民局批准任何人都没有意义，反正所有人都进不来，所以干脆也不工作了），移民局也不上班，官网上查询的平均处理时间从最开始的12个月慢慢拖到到33个月，也不知道疫情什么时候好转（疫情好转移民局才会上班），又不能催不能问更不能加急处理，一度看不到希望。好在疫情今年年中开始逐渐稳定下来，也终于在7月份收到体检通知，一周后就收到eCOPR（electronical Confirmation of Permanent Residence），并正式成为加拿大合法的永久居民，前后花了我整整…",
+      "image": null,
+      "publishedAt": "2021-10-24T02:44:00Z",
+      "sourceId": "87c2e8631d9fb702",
+      "sourceTitle": "Tom Brew",
+      "link": "https://www.ie9.org/2021/10/immigrated-through-suv.html",
+      "detailPath": "articles/ac4edf70db6196540bc47710.json"
+    },
+    {
       "id": "ffe7f6d01a09874dca5c5536",
       "title": "马桶颂",
       "summary": "我非常喜欢马桶。 我最近才发现这一点。虽然我一直知道我有在厕所待很长时间的倾向，但I wouldn’t say it’s喜欢，直到我发现自己在买了非常舒服的沙发以后还是坚持在冰冷坚硬的马桶上玩很久的手机。 小时候家里是蹲厕，只有父母的主卧洗手间里是马桶。我妈常常以浪费水为由不允许（或者说不鼓励）我使用该马桶。没有人能在蹲厕上玩很久的手机，久到刷完了社交媒体，还能接着写小作文。 在国内住校的时候也一直是蹲厕，来到美国以后终于用上了马桶。彼时我还觉得不习惯，常常坐在上面太久以至于忘记自己是来排泄还是来思考人生。这可能是我爱上马桶的第一步。 后来有段时间学习压力很大，我每天都窝在自己的房间里基本不出门，坐在书桌前学习学一整天。尽管旁边就是床，但我很少躺在床上休息摸鱼，因为只要屏幕上没写完的作业还在视线范围内，我就没…",
@@ -604,61 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2021/08/21/nice-try-summer-research/",
       "detailPath": "articles/380f0e528165355674eced5d.json"
-    },
-    {
-      "id": "d5da8cca19916624765e04e4",
-      "title": "前不朽，后生命不能承受之轻——米兰·昆德拉与现代性",
-      "summary": "“真正的资产阶级文化恰恰产生于60年代的这场旨在破坏传统文化和生活方式的革命之后：它被称为“后现代主义”，它推毁了文化的等级制，扩大了文化的范围，把一切都当作了文化。它是一种民主的文化，是一种人人可以参与的游戏。”——《中产阶级的孩子们》 预警/建议：如果你还没有看书，别看这篇文章。如果你对“现代性”感兴趣，请一定去看这本书。 这篇文章，骨骼是我个人的经验、感触、理解、反思；肌肉是顺手摘录、打乱顺序的超大量原文摘剪拼贴；有些在同一个引号里看起来很连贯的句子可能在原文里完全不挨着，不先看原著提供的语境直接看这篇文章极大概率又被剧透又看不懂。 至于灵魂，昆德拉的已经通过写作呈现在书里了，我的已经透过薄薄纸页与他共鸣了。灵魂只取决于你的灵魂和这本书，与我无关，与我看到的无关，与我写下的无关。 《不朽》 这本书名为《…",
-      "image": "https://picture-guan.oss-cn-hangzhou.aliyuncs.com/img/20220502205911.png",
-      "publishedAt": "2021-08-22T00:00:00Z",
-      "sourceId": "ecbcf87e0432fdbd",
-      "sourceTitle": "关门说话",
-      "link": "https://hugo-stack-theme-mod-six.vercel.app/2021/%E5%89%8D%E4%B8%8D%E6%9C%BD%E5%90%8E%E7%94%9F%E5%91%BD%E4%B8%8D%E8%83%BD%E6%89%BF%E5%8F%97%E4%B9%8B%E8%BD%BB%E7%B1%B3%E5%85%B0%E6%98%86%E5%BE%B7%E6%8B%89%E4%B8%8E%E7%8E%B0%E4%BB%A3%E6%80%A7/",
-      "detailPath": "articles/d5da8cca19916624765e04e4.json"
-    },
-    {
-      "id": "6f599791ea437cf73a2c9a4d",
-      "title": "Docker 入门笔记",
-      "summary": "Docker 基础知识.框架来源于 BV1og4y1q7M4,部分内容翻译自 docs.docker.com",
-      "image": null,
-      "publishedAt": "2021-08-21T11:02:13Z",
-      "sourceId": "a3783910db542651",
-      "sourceTitle": "极东魔术昼寝结社",
-      "link": "https://blog.jaoushingan.com/2021/08/21/docker/",
-      "detailPath": "articles/6f599791ea437cf73a2c9a4d.json"
-    },
-    {
-      "id": "c21787728afd9b9afc821b22",
-      "title": "Hi, Obsidian",
-      "summary": "折腾无休无止 尝试一下传说中的 Obsidian",
-      "image": "https://tva1.sinaimg.cn/large/008i3skNly1gtl1t9m9opj617m0u0who02.jpg",
-      "publishedAt": "2021-08-18T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/08/obsidian/",
-      "detailPath": "articles/c21787728afd9b9afc821b22.json"
-    },
-    {
-      "id": "5443601bd1092cea6d5bce24",
-      "title": "叁拾一周：No.7",
-      "summary": "这是「叁拾一周」第七期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 55 位。我的下一个目标是 60。 家庭旅行之后，被要求居家隔离 7 天，做两次核酸。今天终于重新坐回电脑前，突然对独处有了新的想法。 本期就聊一聊，独处。 人的本质是社会关系的总和。我一直把这句话当做书本上需要背诵的标准答案，至于来自书本上的内容，多半在考试之后，就抛诸脑后了。这是我在学生时代一个非常神奇的技能，那时候，有的老师要求背诵某个段落，我能在极短时间内一字不差地背下来，因为背完可以出去玩，可以早放学，我常常是第一个举手走过去的。奇怪的是一旦背诵完成，走出校门，就忘得一干二净。后来明白，这只是恰好运用了大脑的一些技巧，完成了背诵。这跟掌握知识，没有一点关系。现在想起来，对自己当时的投机取巧，难免有些后悔，以及不好意思。 相比之下…",
-      "image": null,
-      "publishedAt": "2021-08-17T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2021/08/newsletter-007/",
-      "detailPath": "articles/5443601bd1092cea6d5bce24.json"
-    },
-    {
-      "id": "d7d1db02c8ff19e039527d38",
-      "title": "529从零知识到动手：原理和规则（以及怎样提前存大学的学费最合适）",
-      "summary": "最近终于下决心研究一下这个传说中的529计划/账户。这个账户由于限制比较多所以名声一直好坏参半，所以我才一直拖延到 Toddler 长成 Senior Toddler 才下决心把自己给调动起来。虽然是非常粗浅的研究，不过也算是给自己和没了解过这个领域的人做做科普。这篇文章适用于只听说过529名字的 beginner，看完正文、注释和链接之后，应该就能做出是否动手、怎样动手的决定了。（这篇文章不适合知道 UGMA/UTMA 是什么，或者知道两种以上降低 FAFSA::EFC 的办法的 guru——话说要是认识这样的 guru 我早就 consult 了，根本不可能有这篇文章好吗。） 529 Plan 是什么 # 529是各个州政府牵头/负责管理的教育储蓄的方案，跟 401k/IRA/HSA/其它什么投资账户一样…",
-      "image": "https://fourhappylions.com/posts/529-plan-overview-and-saving-for-college-in-general/nomoney.gif",
-      "publishedAt": "2021-08-16T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/529-plan-overview-and-saving-for-college-in-general/",
-      "detailPath": "articles/d7d1db02c8ff19e039527d38.json"
     }
   ]
 }

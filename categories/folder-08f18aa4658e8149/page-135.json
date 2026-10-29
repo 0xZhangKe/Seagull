@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "f5954d12ac36e56b3b2a66d2",
+      "title": "Android 性能优化之过渡绘制 - 理论篇",
+      "summary": "博客有一段时间没有更新了，到了新公司后，一直比较忙，博客也更新地不那么频繁了。最近一直在看Android上和性能相关的部分，也就是所谓的Android性能优化，才发现Android性能这一块，自己懂得还是太少了，所以从上层开始看，也算是一点一点入门吧。这个系列将讲解学习过程中总结的和性能相关的内容。 首先将讲解一下GPU过渡绘制，也是开发者最直接接触的部分吧，这个内容将分为两个部分来将讲，第一部分初步讲解一下gpu过渡绘制的原理，和一些优化建议，第二部分将用实际例子来讲解优化GPU过渡绘制的一般步骤。 过渡绘制概念 GPU过渡绘制的概念：GPU过度绘制指的是在屏幕一个像素上绘制多次(超过一次),比如一个TextView后有背景，那么显示文本的像素至少绘了两次，一次是背景，一次是文本。GPU过度绘制或多或少对性…",
+      "image": null,
+      "publishedAt": "2014-10-20T15:19:23Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/10/20/android-performance-optimization-overdraw-1/",
+      "detailPath": "articles/f5954d12ac36e56b3b2a66d2.json"
+    },
+    {
+      "id": "fae79c0626dbcd00cef96e83",
+      "title": "编程语言的基石——Lambda calculus",
+      "summary": "Lambda calculus我们一般称为 λ演算 ，最早是由 邱奇（Alonzo Church，图灵的博导） 在20世纪30年代引入，当时的背景是解决 函数可计算的本质 性问题，初期λ演算成功的解决了在可计算理论中的 判定性问题 ，后来根据 Church–Turing thesis ，证明了λ演算与图灵机是等价的。 好了，经过上边简单的介绍，大家应该对λ演算有了初步印象。下面我将重点介绍λ演算的具体内容，并且阐述λ演算是如何奠基了我们现在常用的编程语言（如：Java、python、Lisp等）。",
+      "image": null,
+      "publishedAt": "2014-10-12T02:16:42Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/10/12/lambda-calculus-introduction/",
+      "detailPath": "articles/fae79c0626dbcd00cef96e83.json"
+    },
+    {
+      "id": "b5ee697e534b7c859341c94a",
+      "title": "玩木工【八】：没有专业的木工桌怎么办？",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2014-09-24T04:10:50Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw008/",
+      "detailPath": "articles/b5ee697e534b7c859341c94a.json"
+    },
+    {
+      "id": "9ff5abe08df92b9fc9f7faa9",
+      "title": "Mozilla 前世今生",
+      "summary": "用过 Firefox 的同学多多少少都应该对 Mozilla 有些了解，Mozilla 作为一老牌软件公司，诞生了很多传奇性的故事和人物，本篇文章将带来读者重新回顾上个世纪九十年代发生的那些激荡人心的时刻。",
+      "image": null,
+      "publishedAt": "2014-09-13T16:14:52Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/09/14/mozilla-history/",
+      "detailPath": "articles/9ff5abe08df92b9fc9f7faa9.json"
+    },
+    {
+      "id": "fc5c63915951730021c91bf1",
+      "title": "Yarn概述",
+      "summary": "Yarn是随着hadoop发展而催生的新框架，全称是Yet Another Resource Negotiator，可以翻译为“另一个资源管理器”。yarn取代了以前hadoop中jobtracker（后面简写JT）的角色，因为以前JT的任务过重，负责任务的调度、跟踪、失败重启等过程，而且只能运行mapreduce作业，不支持其他编程模式，这也限制了JT使用范围，而yarn应运而生，解决了这两个问题。",
+      "image": null,
+      "publishedAt": "2014-09-07T14:07:51Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/09/07/yarn-intro/",
+      "detailPath": "articles/fc5c63915951730021c91bf1.json"
+    },
+    {
       "id": "5ad3e28124d2adf9a47e1f49",
       "title": "玩木工【七】：工作角",
       "summary": "",
@@ -604,61 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/right-hand",
       "detailPath": "articles/56c032bccd72a438ec72fda8.json"
-    },
-    {
-      "id": "98ba10a62ca03b2e249d7f1d",
-      "title": "小葉，真有你的！",
-      "summary": "今天有個關於音樂的新聞：台語歌手蕭玉芬的新歌《紙風箏》，被日本網友發現它的前奏和日本團體 B'z 的《もう一度キスしたかった》（想要再一次親吻）完全相同。",
-      "image": "https://wiwi.blog/assets/images/ye-64d2b717260462cea44c19ab6db92f86.png",
-      "publishedAt": "2013-04-17T15:52:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/small-yeh",
-      "detailPath": "articles/98ba10a62ca03b2e249d7f1d.json"
-    },
-    {
-      "id": "2b7a2e7fe151dc3cbc008205",
-      "title": "第四堂木吉他課",
-      "summary": "上吉他課已經第四堂了 老師今天一進來就說 6/30 有成果發表會要參加 所以現在才上三堂課(第四堂選歌) 而且剩兩個月 要死人了.",
-      "image": null,
-      "publishedAt": "2013-04-08T17:01:23Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/guitar-learning/",
-      "detailPath": "articles/2b7a2e7fe151dc3cbc008205.json"
-    },
-    {
-      "id": "85155053f85729babcd40578",
-      "title": "时代在变",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2013-03-26T22:09:36Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/nonsense/the-times-are-changing/",
-      "detailPath": "articles/85155053f85729babcd40578.json"
-    },
-    {
-      "id": "1d77f5534ecf12276dbc35d8",
-      "title": "大杯皺",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/bigcup2-c0ed54b49ed2c4e0bebdbce0c24958e7.jpg",
-      "publishedAt": "2013-02-22T20:13:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/da-bei-zhou",
-      "detailPath": "articles/1d77f5534ecf12276dbc35d8.json"
-    },
-    {
-      "id": "ae380cd3845609a942163196",
-      "title": "JS ONE 是什麼？",
-      "summary": "在板橋隨處都可以見到「JS ONE」的貼紙，甚至連店家內的廁所面紙盒都有。",
-      "image": "https://wiwi.blog/assets/images/jsone-73df2943c83eea2056da19d8c7700312.jpg",
-      "publishedAt": "2013-02-21T06:47:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/js-one",
-      "detailPath": "articles/ae380cd3845609a942163196.json"
     }
   ]
 }

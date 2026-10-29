@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "2a28ace42fc1f9c35b7b19cd",
+      "title": "遗愿清单打满了，来写一份“活着清单”吧^^",
+      "summary": "人生清单不该只属于有钱人吧？ 最近在小红书刷到一个“人生必做清单”，扫了一眼，居然发现自己全都做过了欸。不过说实话我之所以能完成，很大程度上依赖母父的支持和先天资源，清单上的项目——环球旅行、高级餐厅、极限运动——似乎更像是消费能力的自然延伸，而不是我个人努力的结果。 我当然做不到潇洒地把现有资源全部放弃重启人生，也不认同大众清单上那些体验就能代表我真正想要的生活。刚好看到友邻在她乡分享了 伊藤诗织的遗愿清单 ，评论区还有很多很有趣的分享和心愿~ 也想写一份我的！不要“打卡式”的清单，不要纯粹的物质体验！ 虽然这几年其实读了不少讲死亡和衰老的书，也了解生命短暂，人生存在太多意外和峰回路转，但我还是对完全消逝或者丧失行动能力这类事充满本能的抵触和恐惧。死亡当然不是一个舒适的话题，但也许正因为生命有限，所以才更应…",
+      "image": null,
+      "publishedAt": "2025-04-10T00:00:00Z",
+      "sourceId": "72390a92567df082",
+      "sourceTitle": "1sle",
+      "link": "https://1sle29.github.io/p/qa-0410/",
+      "detailPath": "articles/2a28ace42fc1f9c35b7b19cd.json"
+    },
+    {
+      "id": "ffda40a98a192150f2cde3fa",
+      "title": "Gemini 2.5 Pro 生成 App 第二彈！",
+      "summary": "昨天（4/8）才剛製作了 動態亂數產生器 ，沒想到一玩下去愛不釋手，馬上又開發了第二個 APP！ 音名隨機產生器 # 這個是讓吉他手練習琴格絕對音的工具，當畫面顯示音名時，就要快速找到到那一格的訓練 APP！ Note Snap Fret Shot FretShot 是我後來做的新版本，推薦你用它。（2026/03/31） 這次的難度對 Gemini 2.5 Pro 就稍微難了一點，我一共生成了 4 次才變成我要的樣子。 最後再自行修改一下字的樣式，就完成了！ 加上上傳到伺服器，整個過程可能不到半小時。 AI 革命 # 這整個過程讓 Eddie 很興奮，有一種「工業革命」的既視感，就像人類第一次把各種農用設備投入使用，取代掉大量人力、時間，或許地球已經往下一個時代邁進了。 檔案原始碼： github （沒有…",
+      "image": null,
+      "publishedAt": "2025-04-09T09:24:49Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/gemini2.5pro2/",
+      "detailPath": "articles/ffda40a98a192150f2cde3fa.json"
+    },
+    {
+      "id": "639aafc2a05b59f4fc9bcfb8",
+      "title": "Rsync 同步工具超快！部署 Hugo 爲範例。",
+      "summary": "前言 # 以往 Eddie 製作部落格（本站）的方式是，在本地端用 Hugo 生成好網站（Public）後，打開圖形界面 App「Filezilla」，填入伺服器的密碼，再把檔案複製到伺服器去，操作就像是 Windows 檔案總管或 macOS 的 Finder 一樣簡單。 拋棄 Filezilla # 最近，網站的檔案數量來到 700 多了，雖然並不是很多，但是透過 Filezilla 上傳網站，也要個 5 分鐘，就有一點太久了！ 擁抱 Rsync # Rsync 是純文字 App，上傳的指令如下： rsync -avz --delete -e \"ssh -p 22\" ./public/ username@your.server.com:/var/www/html/your-site-folder 說明 #…",
+      "image": null,
+      "publishedAt": "2025-04-09T08:49:44Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/rsync/",
+      "detailPath": "articles/639aafc2a05b59f4fc9bcfb8.json"
+    },
+    {
+      "id": "2cf0fb4b09a1e66f3676d858",
+      "title": "关税与贸易公平",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2025-04-09T03:40:31Z",
+      "sourceId": "a694ae3a017dd381",
+      "sourceTitle": "科学的历史观",
+      "link": "https://mp.weixin.qq.com/s/cBmD1l7ebo9HTfXtJRw43g",
+      "detailPath": "articles/2cf0fb4b09a1e66f3676d858.json"
+    },
+    {
+      "id": "626f7bdb889a4850bf166bef",
+      "title": "裝死",
+      "summary": "你有沒有這種經驗：買了一支股票後，它立刻開始上漲，讓你開始覺得自己根本是股神，已經「參透市場的脈動」？",
+      "image": "https://wiwi.blog/assets/images/sp500-15years-80399f0622cb34d5c6e66bf92314cbf9.png",
+      "publishedAt": "2025-04-09T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/best-investors-are-dead",
+      "detailPath": "articles/626f7bdb889a4850bf166bef.json"
+    },
+    {
       "id": "b8dd0fb1ff2b65b498bf487b",
       "title": "暈了、好解等等網路用語到底是什麼意思？",
       "summary": "以前發過一篇 短影音的 POV 是什麼意思？ 但近日長期看到一些網路流行語，覺得怎麼會變成現在的用法啦！ 約炮圈用語 # Eddie 沒有約炮過，未來應該也不會（男生要保護好自己阿！），但是看過一些圈內人的文章、影片分享，所以知道這些用語，那時候這些詞還沒有被亂用。 暈船 # 暈船是指：愛上「本該只有肉體關係的約炮對象」。 但現在只要有點好感就會說「我暈了」。拜託，你連手都還沒碰到好嗎 XD 你很解 # 也是約炮圈傳出來的，興高采烈約出來，褲子脫了發現很糟糕，這時候就會說「很解」，讓人「不想要了」。 現在則變成，講話不順你的意，就可以說你講話很解耶；如果對方講話你很喜歡，也可以說對方很暈（邏輯在哪？我也不懂。） 到底解了啥啦 XD 誰懂 XXX 的含金量 # 不是不能用「含金量」，只是我看到的句子，都完全沒有…",
@@ -604,61 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/write-first-edit-later",
       "detailPath": "articles/5f53c7f64a6674ec72497b00.json"
-    },
-    {
-      "id": "3468475c4bdc196b8bdf4922",
-      "title": "极速聊 Nintendo Direct 250328",
-      "summary": "好久没有写这个系列，趁着这是 Switch 最后一次的直面会来简单写一下，再下一次写极速聊系列就是 Switch 2 游戏的直面会了。",
-      "image": null,
-      "publishedAt": "2025-04-01T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/nintendo-direct-250328-quick-chat",
-      "detailPath": "articles/3468475c4bdc196b8bdf4922.json"
-    },
-    {
-      "id": "f5c5cc1015262d73b49c901c",
-      "title": "失眠",
-      "summary": "很长时间没有在博客里写无营养碎碎念了～趁着半夜失眠写了点乱七八糟的东西，感觉可以作为一个开始～ 不知从什么时候开始，半夜醒成为了我生活的一部分。 一般都是三四点钟左右，有时候也可能是两点多。有时候可以很快睡着，有时候一",
-      "image": null,
-      "publishedAt": "2025-03-31T19:51:44Z",
-      "sourceId": "129e0cebf1f26229",
-      "sourceTitle": "Albus' Pensieve | 邓布利多的冥想盆",
-      "link": "https://albuspensieve.github.io/2025/03/31/2025-03-31-insomnia/",
-      "detailPath": "articles/f5c5cc1015262d73b49c901c.json"
-    },
-    {
-      "id": "35294e75ad8442c367b840a7",
-      "title": "做牙套、修马桶。",
-      "summary": "做牙套 之前医院给做的保持器全用光了，大约一月用两副的消耗，于是开始上拼多多找牙套制作机构，找了两家，认认真真取了模型寄回去，结果就石沉大海了，问就是还在做、在打磨、在消毒，好像做我的牙套比火箭空还难，前后等了两周都没结果，直接申请退款上抖音搜牙套制作工艺，买真空塑膜机290，牙套板19元/20片，手锯38，加起来不到400元，实现了牙套自由，他妈的，我真受不了墨迹的人，顺便提一嘴，牙套这玩意真暴力，成本4块钱的东西，卖150-200一付，离谱。 修马桶 去新疆前换的安华的智能马桶，又坏了，我也不知道我是不是吃这玩意，用了才三个月，清洁功能的热水就没了，每次点到清洁按钮，我都感觉在上刑。约了售后上门来安装，修了一小时没修好，最后只能让厂家发配件，好笑的是，师傅修马桶用了半小时，剩下半小时再找哪里有6颗螺丝没上…",
-      "image": "https://ihaihe.cn/wp-content/uploads/2025/03/IMG_6990-2-scaled.webp",
-      "publishedAt": "2025-03-31T12:13:40Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/3173.htm",
-      "detailPath": "articles/35294e75ad8442c367b840a7.json"
-    },
-    {
-      "id": "91db7040988e08d91a541e8a",
-      "title": "2025 年初的 AI 發展已經白熱化，應該有很多東西會開始消失了。",
-      "summary": "近日，社群上充斥著 AI 製作的飛天小女警與吉卜力風格的圖片，可以說是全民運動了，連平時沒有在使用 AI 的朋友們都在玩了。 印象中，上一次在網路上造成現象級的全民運動，應該是 Facebook 推出開心農場、開心水族箱的時候了吧！那時候突然連一些長輩都開始接觸，隨後 MSN、即時通、blog 都開始式微，Email 如果沒有註冊各大網站的功能，可能也早已被取代。 而蘋果 M 晶片電腦，如果有記憶體有 24 GB 以上，本地跑一些 7B 左右的模型也不是問題，Eddie 也已經用好一陣子了，但還是網路上的各種 AI 比較快、比較聰明，本地要順跑記憶體可能要至少 32 GB 以上比較保險。 模型的開發、個人電腦的硬體也支援了，2025 很可能會是 AI 真正的「元年」，也許我們正在經歷歷史上某種重大的轉變（就像…",
-      "image": "https://eddielv.com/musings/jipuli/jipuli.jpg",
-      "publishedAt": "2025-03-31T11:02:21Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/jipuli/",
-      "detailPath": "articles/91db7040988e08d91a541e8a.json"
-    },
-    {
-      "id": "262023be1691ef37fe5ea630",
-      "title": "Zepro Run 半馬",
-      "summary": "昨天，我跟檸檬卷和好朋友 JR Lee 一起參加了在新北市浮洲橋舉辦的 Zepro Run 半馬。我們三個都是人生第一次參賽就挑戰 21 公里的菜鳥。",
-      "image": "https://wiwi.blog/assets/images/r-before-b6dff044a8b4fd8d4cb5c24d7116314e.jpg",
-      "publishedAt": "2025-03-31T09:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/zepro-run",
-      "detailPath": "articles/262023be1691ef37fe5ea630.json"
     }
   ]
 }

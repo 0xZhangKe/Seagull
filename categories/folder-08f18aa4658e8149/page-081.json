@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "d0195ec36c7f529cc7e8f938",
+      "title": "【数据结构与算法】冒泡排序",
+      "summary": "核心思想 通过相邻元素的两两比较，将较大的元素逐步“冒泡”到数组末尾，每轮排序确定一个最大元素的最终位置。 代码实现 void bubble_sort(int arr[], int n) { // 最外层控制循环轮数 n-1轮 for (int i = 0; i < n - 1; i++) { // 内层循环处理相邻元素比较和交换 for(int j = 0; j < n-i-1; j++) { if (arr[j] > arr[j+1]) { int temp = arr[j]; arr[j] = arr[j+1]; arr[j+1] = temp; } } } } // 调用 void print_array(int arr[], int size) { for (int i = 0; i < size;…",
+      "image": null,
+      "publishedAt": "2025-05-10T20:06:05Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/",
+      "detailPath": "articles/d0195ec36c7f529cc7e8f938.json"
+    },
+    {
+      "id": "8084e1cdfeae0d1b6f6a8332",
+      "title": "无标题文章",
+      "summary": "形成好习惯和坏习惯的学习机制是相同的，定期去健身房和每天抽烟其背后起作用的机制完全相同。 — 《Good Habits, Bad Habits》",
+      "image": null,
+      "publishedAt": "2025-05-10T17:51:01Z",
+      "sourceId": "74bd1a0c7196fd9e",
+      "sourceTitle": "Owen的博客",
+      "link": "https://www.owenyoung.com/good-habits-bad-habits",
+      "detailPath": "articles/8084e1cdfeae0d1b6f6a8332.json"
+    },
+    {
+      "id": "09151b8ac9d881c1ca2f0e65",
+      "title": "Notebook LM 中文 Podcast",
+      "summary": "最近才知道 Notebook LM 這項工具。 2025/04/30，google 官方部落格發佈消息，提到「語音摘要」功能新增支援「中文的功能」。 關鍵字搜尋「來源」 # 以往搜尋資料，須要到搜尋引擎搜尋關鍵字，再從衆多網站中，一個一個找到自己要的。 現在，可以直接使用 Notebook LM 的「來源」頁面，搜尋關鍵字，會出現好幾篇文章或影片，直接勾選你想要的頁面，就可以直接匯入這些網站作爲資料來源（影片也可以）。 對話 # 在你選擇「來源之後」，可以與 AI 對談、討論這些內容，與 ChatGPT 等等 AI 相比，出現「幻覺」的情況大幅下降，因爲 LM 會嚴格依照資料來源進行回答。 最變態的「心智圖」與「語音摘要」 # 心智圖 # LM 可以把資料來源整合成心智圖，Eddie 有測試過，把一部約 20…",
+      "image": null,
+      "publishedAt": "2025-05-10T06:34:26Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/notebooklm/",
+      "detailPath": "articles/09151b8ac9d881c1ca2f0e65.json"
+    },
+    {
+      "id": "1d9a1332d04362eda11464d5",
+      "title": "我的运维新玩具",
+      "summary": "最懂自己需求的还得是自己写的工具。",
+      "image": null,
+      "publishedAt": "2025-05-10T03:53:47Z",
+      "sourceId": "06aa2ffd92b9d263",
+      "sourceTitle": "糖菓·部落",
+      "link": "https://candinya.com/posts/my-new-toy-to-manage-servers/",
+      "detailPath": "articles/1d9a1332d04362eda11464d5.json"
+    },
+    {
+      "id": "616ed88cf9cb134edfe1f616",
+      "title": "Happy Gooday! 一起來聽何韻詩吧",
+      "summary": "Hero Photo來自20",
+      "image": null,
+      "publishedAt": "2025-05-10T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/hocc-collections/",
+      "detailPath": "articles/616ed88cf9cb134edfe1f616.json"
+    },
+    {
       "id": "de92347c717dd99c16a731fd",
       "title": "逃避責任",
       "summary": "還記得林鳳營的「家裡有一頭牛」的廣告嗎？",
@@ -604,61 +659,6 @@
       "sourceTitle": "映屿",
       "link": "https://blog.verdant.ee/posts/%E9%9A%90%E5%B1%85/",
       "detailPath": "articles/c5247594c2eb67d2f6281ea4.json"
-    },
-    {
-      "id": "596d303ef208ef74ce2581e9",
-      "title": "从 HarmonyOS Sans 谈起：免商字体的协议问题",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2025-04-26T15:43:59Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/font-license/",
-      "detailPath": "articles/596d303ef208ef74ce2581e9.json"
-    },
-    {
-      "id": "5a93e329e12e64ec34ef855e",
-      "title": "Python 3.14: Python 世界的一大步",
-      "summary": "Python 3.14 目前主要的一些主要的特性其实已经固定了，在我看来，Python 3.14 是一个未来很多年的一个核心版本。因为其确定了是时代的 Python 调试生态的基准，这篇文章将会来聊聊这个 Python 世界中的史诗级改进",
-      "image": null,
-      "publishedAt": "2025-04-26T14:49:00Z",
-      "sourceId": "a6add2003c9627a9",
-      "sourceTitle": "Manjusaka",
-      "link": "https://www.manjusaka.blog/posts/2025/04/26/3-14-is-one-of-the-best-python-version/",
-      "detailPath": "articles/5a93e329e12e64ec34ef855e.json"
-    },
-    {
-      "id": "614d8f3302aac8031f8ef075",
-      "title": "Android Perfetto 系列 6：为什么是 120Hz？高刷新率的优势与挑战",
-      "summary": "120 Hz 把显示刷新间隔从 60 Hz 的约 16.67 ms 缩短到约 8.33 ms，但屏幕刷新率、App 产帧率和用户看到的帧并不是同一个数字。这篇从一份 Perfetto Trace 出发，解释三个数字怎样对应，以及高刷新率给渲染和功耗带来的取舍。 第 5 篇已经介绍 Choreographer 的回调顺序，这里重点看更短的显示周期。文中的设备截图只说明那次采集，不能代表所有 120 Hz 机型的调度配置。",
-      "image": null,
-      "publishedAt": "2025-04-26T06:13:38Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2025/04/26/Android-Perfetto-06-Why-120Hz/",
-      "detailPath": "articles/614d8f3302aac8031f8ef075.json"
-    },
-    {
-      "id": "d9ee3075024240fe1a95691e",
-      "title": "雷雨天玩手機",
-      "summary": "你家有電子設備被大雷雨時被閃電打壞的經驗嗎？我在這輩子好像才發生過一兩次，都是很久以前了。住在台北的好處之一，就是一整年好像也不會有幾天是大雷雨，所以不太需要擔心雷擊的問題。",
-      "image": "https://wiwi.blog/assets/images/phone-sim-8colors-e95fc152c7ccea686b69a1e3f274188e.png",
-      "publishedAt": "2025-04-26T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/charging-during-thunderstorms",
-      "detailPath": "articles/d9ee3075024240fe1a95691e.json"
-    },
-    {
-      "id": "f4121f3ac978d52be0751b63",
-      "title": "无标题文章",
-      "summary": "真正拥有城市的人，其实是那些走路的人。",
-      "image": null,
-      "publishedAt": "2025-04-25T18:18:49Z",
-      "sourceId": "74bd1a0c7196fd9e",
-      "sourceTitle": "Owen的博客",
-      "link": "https://www.owenyoung.com/7i4wk",
-      "detailPath": "articles/f4121f3ac978d52be0751b63.json"
     }
   ]
 }

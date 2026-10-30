@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-29T22:48:29+00:00</updated><author><name>Simon Willison</name></author><entry><title>API credits benefit for eligible ChatGPT subscriptions</title><link href="https://simonwillison.net/2026/Oct/29/api-credits/" rel="alternate"/><published>2026-10-29T22:48:29+00:00</published><updated>2026-10-29T22:48:29+00:00</updated><id>https://simonwillison.net/2026/Oct/29/api-credits/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-30T21:59:22+00:00</updated><author><name>Simon Willison</name></author><entry><title>dbreunig/nesformer</title><link href="https://simonwillison.net/2026/Oct/30/nesformer/" rel="alternate"/><published>2026-10-30T21:59:22+00:00</published><updated>2026-10-30T21:59:22+00:00</updated><id>https://simonwillison.net/2026/Oct/30/nesformer/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dbreunig/nesformer"&gt;dbreunig/nesformer&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Inspired by &lt;a href="https://divagr.com/blog/qwenputer"&gt;qwenputer&lt;/a&gt; by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen!&lt;/p&gt;
+&lt;p&gt;In &lt;a href="https://news.ycombinator.com/item?id=50306442#50307402"&gt;a comment on Hacker News&lt;/a&gt; Drew reveals the Opus 5.5 prompts he used to build this system:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Read this article and any relevant source code: https://divagr.com/blog/qwenputer. Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, what size model would you have to build and if you could use smaller faster ones, could you get it to be at the standard clockspeed.&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Followed by:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;I think we should build it! Just for fun. It's okay if it's not fast. We want to be able to have the weights, and a cli to run them that we can point at a ROM.&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Apparently Opus found and then used &lt;a href="https://github.com/christopherpow/nes-test-roms/blob/master/other/nestest.txt"&gt;this collection of conformance tests&lt;/a&gt; for the NES CPU released 15 years ago by Christopher Pow.
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50306442"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/games"&gt;games&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/drew-breunig"&gt;drew-breunig&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/qwen"&gt;qwen&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/conformance-suites"&gt;conformance-suites&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="games"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="drew-breunig"/><category term="qwen"/><category term="conformance-suites"/></entry><entry><title>API credits benefit for eligible ChatGPT subscriptions</title><link href="https://simonwillison.net/2026/Oct/29/api-credits/" rel="alternate"/><published>2026-10-29T22:48:29+00:00</published><updated>2026-10-29T22:48:29+00:00</updated><id>https://simonwillison.net/2026/Oct/29/api-credits/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions"&gt;API credits benefit for eligible ChatGPT subscriptions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Earlier this month Anthropic &lt;a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/#api-credits"&gt;announced a generous new benefit&lt;/a&gt; for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use with the Anthropic API.&lt;/p&gt;
@@ -839,17 +860,4 @@ document.currentScript.replaceWith(
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/rdf"&gt;rdf&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/semantic-web"&gt;semantic-web&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/sqlite"&gt;sqlite&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/rust"&gt;rust&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-code"&gt;claude-code&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="rdf"/><category term="semantic-web"/><category term="sqlite"/><category term="ai"/><category term="rust"/><category term="generative-ai"/><category term="llms"/><category term="coding-agents"/><category term="claude-code"/></entry><entry><title>Chirp Pong</title><link href="https://simonwillison.net/2026/Oct/15/chirp-pong/" rel="alternate"/><published>2026-10-15T19:47:52+00:00</published><updated>2026-10-15T19:47:52+00:00</updated><id>https://simonwillison.net/2026/Oct/15/chirp-pong/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/chirp-pong"&gt;Chirp Pong&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent via audio noises which the web microphone API can interpret - but add graphical and gameplay twists to make it a lot more fun and intertwine than pong&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Claude Opus 5.5 Extra &lt;a href="https://claude.ai/code/session_019awUnNB7NoYd7noBNAsNdd"&gt;in Claude Code&lt;/a&gt;.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-code"&gt;claude-code&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="game-design"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude-code"/></entry></feed>
+</summary><category term="rdf"/><category term="semantic-web"/><category term="sqlite"/><category term="ai"/><category term="rust"/><category term="generative-ai"/><category term="llms"/><category term="coding-agents"/><category term="claude-code"/></entry></feed>

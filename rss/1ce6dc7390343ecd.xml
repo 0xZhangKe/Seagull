@@ -38,57 +38,57 @@
 
 					<description><![CDATA[Since the 1990s, the web has been a publishing place for human-readable documents. Documents published on the web are in HTML. HTML has a little bit of&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2022/12/19/progress-on-the-block-protocol/" rel="bookmark">Read more <span class="screen-reader-text">"Progress on the Block Protocol"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>Since the 1990s, the web has been a publishing place for human-readable documents. </p>
+<p class="wp-block-paragraph">Since the 1990s, the web has been a publishing place for human-readable documents. </p>
 
 
 
-<p>Documents published on the web are in HTML. HTML has a little bit of structure, for example, &#8220;here is a paragraph&#8221; or &#8220;emphasize this word.&#8221; </p>
+<p class="wp-block-paragraph">Documents published on the web are in HTML. HTML has a little bit of structure, for example, &#8220;here is a paragraph&#8221; or &#8220;emphasize this word.&#8221; </p>
 
 
 
-<p>Then you stir in some CSS, which adds some pretty decorations to the structure, saying things like: make those paragraphs have tiny gray sans-serif text! And then people think you are hip. Unless they are older, and they can&#8217;t read your tiny gray words, so they give up on you.</p>
+<p class="wp-block-paragraph">Then you stir in some CSS, which adds some pretty decorations to the structure, saying things like: make those paragraphs have tiny gray sans-serif text! And then people think you are hip. Unless they are older, and they can&#8217;t read your tiny gray words, so they give up on you.</p>
 
 
 
-<p>That&#8217;s &#8220;structure,&#8221; as far as it goes, on the web.</p>
+<p class="wp-block-paragraph">That&#8217;s &#8220;structure,&#8221; as far as it goes, on the web.</p>
 
 
 
-<p>Imagine, for example, that you mention a book on the web.</p>
+<p class="wp-block-paragraph">Imagine, for example, that you mention a book on the web.</p>
 
 
 
-<p><strong>Goodnight Moon</strong><br>by <em>Margaret Wise Brown</em><br>Illustrated by <em>Clement Hurd</em><br>Harper &amp; Brothers, 1947<br>ISBN 0-06-443017-0</p>
+<p class="wp-block-paragraph"><strong>Goodnight Moon</strong><br>by <em>Margaret Wise Brown</em><br>Illustrated by <em>Clement Hurd</em><br>Harper &amp; Brothers, 1947<br>ISBN 0-06-443017-0</p>
 
 
 
-<p>There&#8217;s not much structure there.  A naive computer program reading this web page might not realize I was even mentioning a book. All I did was make the title bold.</p>
+<p class="wp-block-paragraph">There&#8217;s not much structure there.  A naive computer program reading this web page might not realize I was even mentioning a book. All I did was make the title bold.</p>
 
 
 
-<p>So, also since the 1990s, people have realized that we can make the web a much more useful place to publish information if we applied a bit more structure. As early as 1999, Tim Berners-Lee was writing about the <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a>:</p>
+<p class="wp-block-paragraph">So, also since the 1990s, people have realized that we can make the web a much more useful place to publish information if we applied a bit more structure. As early as 1999, Tim Berners-Lee was writing about the <a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a>:</p>
 
 
 
 <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p>&#8220;I have a dream for the Web [in which computers] become capable of analyzing all the data on the Web&nbsp;– the content, links, and transactions between people and computers. A &#8216;Semantic Web&#8217;, which makes this possible, has yet to emerge, but when it does, the day-to-day mechanisms of trade, bureaucracy and our daily lives will be handled by machines talking to machines. The <a href="https://en.wikipedia.org/wiki/Intelligent_agent">&#8216;intelligent agents&#8217;</a> people have touted for ages will finally materialize.&#8221;</p>
+<p class="wp-block-paragraph">&#8220;I have a dream for the Web [in which computers] become capable of analyzing all the data on the Web&nbsp;– the content, links, and transactions between people and computers. A &#8216;Semantic Web&#8217;, which makes this possible, has yet to emerge, but when it does, the day-to-day mechanisms of trade, bureaucracy and our daily lives will be handled by machines talking to machines. The <a href="https://en.wikipedia.org/wiki/Intelligent_agent">&#8216;intelligent agents&#8217;</a> people have touted for ages will finally materialize.&#8221;</p>
 <cite>Tim Berners-Lee, Weaving The Web, 1999 HarperSanFrancisco (Chapter 12)</cite></blockquote>
 
 
 
-<p>Using the Semantic Web you might publish a book title with a lot more detail that makes it computer-readable. To do this, you would probably start by going to schema.org and looking up <a href="https://schema.org/Book">their idea of a book</a>. Then you could use one of a number of formats, like RDF or JSON-LD, to add additional markup to your HTML saying &#8220;hey! here&#8217;s a book!&#8221;</p>
+<p class="wp-block-paragraph">Using the Semantic Web you might publish a book title with a lot more detail that makes it computer-readable. To do this, you would probably start by going to schema.org and looking up <a href="https://schema.org/Book">their idea of a book</a>. Then you could use one of a number of formats, like RDF or JSON-LD, to add additional markup to your HTML saying &#8220;hey! here&#8217;s a book!&#8221;</p>
 
 
 
-<p>Ok, well, doing that is kinda hard to figure out, and, to be honest, it&#8217;s homework. Once your beautiful blog post is published and human-readable, it&#8217;s hard to gather the mental energy to figure out how to add the additional fancy markups that will make your web page computer-readable, and, unless there is already a computer reading your web pages, at this point, you usually give up. So, yeah. That was 1999, and not much progress has been made and there is very little of this semantic markup in the wild.</p>
+<p class="wp-block-paragraph">Ok, well, doing that is kinda hard to figure out, and, to be honest, it&#8217;s homework. Once your beautiful blog post is published and human-readable, it&#8217;s hard to gather the mental energy to figure out how to add the additional fancy markups that will make your web page computer-readable, and, unless there is already a computer reading your web pages, at this point, you usually give up. So, yeah. That was 1999, and not much progress has been made and there is very little of this semantic markup in the wild.</p>
 
 
 
-<p><strong>Well.</strong></p>
+<p class="wp-block-paragraph"><strong>Well.</strong></p>
 
 
 
-<p>We would like to fix this, because human progress depends on getting more and more information in formats that are readily accessible, both by regular humans, their dumb A.I. li&#8217;l sibs, and your more traditional computer programs.</p>
+<p class="wp-block-paragraph">We would like to fix this, because human progress depends on getting more and more information in formats that are readily accessible, both by regular humans, their dumb A.I. li&#8217;l sibs, and your more traditional computer programs.</p>
 
 
 
@@ -96,15 +96,15 @@
 
 
 
-<p>Here is something I believe: <strong>people will only add semantic markup to their web pages if doing so is easier than not.</strong></p>
+<p class="wp-block-paragraph">Here is something I believe: <strong>people will only add semantic markup to their web pages if doing so is easier than not.</strong></p>
 
 
 
-<p>In other words, the cost of adding semantic markup has to be zero or negative, or this whole project is not going anywhere.</p>
+<p class="wp-block-paragraph">In other words, the cost of adding semantic markup has to be zero or negative, or this whole project is not going anywhere.</p>
 
 
 
-<p>Now imagine this world for a second:</p>
+<p class="wp-block-paragraph">Now imagine this world for a second:</p>
 
 
 
@@ -126,11 +126,11 @@
 
 
 
-<p>In this world I did <em>less</em> work to insert a book (because I was assisted by a UI that looked up the details for me).</p>
+<p class="wp-block-paragraph">In this world I did <em>less</em> work to insert a book (because I was assisted by a UI that looked up the details for me).</p>
 
 
 
-<p>You can imagine the same scenario applying to literally any other kind of structured data.</p>
+<p class="wp-block-paragraph">You can imagine the same scenario applying to literally any other kind of structured data.</p>
 
 
 
@@ -152,15 +152,15 @@
 
 
 
-<p>My &#8220;address block&#8221; might have any visual appearance. Visitors to my web page might see the address, or a little map, or a little map in Japanese, etc. etc. The semantic content is there behind the scenes. So, for example, my web browser might know &#8220;gosh this is an address! Maybe you want to do <em>address-y</em> things with it, like <em>go there</em>,&#8221; and then my browser might offer me options to summon a self-driving car and even call an ambulance when the self-driving car self-drives into a snowbank.</p>
+<p class="wp-block-paragraph">My &#8220;address block&#8221; might have any visual appearance. Visitors to my web page might see the address, or a little map, or a little map in Japanese, etc. etc. The semantic content is there behind the scenes. So, for example, my web browser might know &#8220;gosh this is an address! Maybe you want to do <em>address-y</em> things with it, like <em>go there</em>,&#8221; and then my browser might offer me options to summon a self-driving car and even call an ambulance when the self-driving car self-drives into a snowbank.</p>
 
 
 
-<p>My two simplistic examples of &#8220;book&#8221; and &#8220;address&#8221; are interesting right now because (a) you can probably think of 1,000,000 more data types like this, and (b) none of these things work right now, because even though almost every web editing environment has a concept of &#8220;blocks,&#8221; none of them are extensible. WordPress has (oh gosh) hundreds of block types, but they don&#8217;t have thousands or millions, they don&#8217;t have &#8220;book&#8221; or &#8220;address&#8221; or &#8220;Burning Man Theme Camp&#8221; yet, and there&#8217;s no ecosystem by which developers and users can contribute <em>new</em> block types.</p>
+<p class="wp-block-paragraph">My two simplistic examples of &#8220;book&#8221; and &#8220;address&#8221; are interesting right now because (a) you can probably think of 1,000,000 more data types like this, and (b) none of these things work right now, because even though almost every web editing environment has a concept of &#8220;blocks,&#8221; none of them are extensible. WordPress has (oh gosh) hundreds of block types, but they don&#8217;t have thousands or millions, they don&#8217;t have &#8220;book&#8221; or &#8220;address&#8221; or &#8220;Burning Man Theme Camp&#8221; yet, and there&#8217;s no ecosystem by which developers and users can contribute <em>new</em> block types.</p>
 
 
 
-<p>So I guess I gotta wait around for someone at WordPress to develop all the blocks I want to use. And then someone at Notion, and then someone at Trello, and then someone at Mailchimp, and someone at every other vendor that provides a text editor.</p>
+<p class="wp-block-paragraph">So I guess I gotta wait around for someone at WordPress to develop all the blocks I want to use. And then someone at Notion, and then someone at Trello, and then someone at Mailchimp, and someone at every other vendor that provides a text editor.</p>
 
 
 
@@ -168,27 +168,27 @@
 
 
 
-<p>The web was built with open protocols. Suppose we all agree on a <em>protocol</em> for blocks.</p>
+<p class="wp-block-paragraph">The web was built with open protocols. Suppose we all agree on a <em>protocol</em> for blocks.</p>
 
 
 
-<p>Any developer that wants to create a new block can conform to this protocol.</p>
+<p class="wp-block-paragraph">Any developer that wants to create a new block can conform to this protocol.</p>
 
 
 
-<p>Any kind of web-text-editing application can also conform to this protocol.</p>
+<p class="wp-block-paragraph">Any kind of web-text-editing application can also conform to this protocol.</p>
 
 
 
-<p>Then if <em>anyone</em> goes to the trouble of creating a cool &#8220;book&#8221; or &#8220;address&#8221; block, we&#8217;ll all be able to use it, anywhere.</p>
+<p class="wp-block-paragraph">Then if <em>anyone</em> goes to the trouble of creating a cool &#8220;book&#8221; or &#8220;address&#8221; block, we&#8217;ll all be able to use it, anywhere.</p>
 
 
 
-<p>And we shall dub this protocol, oh I don&#8217;t know, <a href="https://blockprotocol.org/">the Block Protocol</a>.</p>
+<p class="wp-block-paragraph">And we shall dub this protocol, oh I don&#8217;t know, <a href="https://blockprotocol.org/">the Block Protocol</a>.</p>
 
 
 
-<p>And it should be, I think, 100% free, open, and public, so that there is no impediment to anyone on earth using it. And in fact if you want to make blocks that are open source or public, good for you, but if for some reason you would like to make private or commercial blocks, that&#8217;s fine too.</p>
+<p class="wp-block-paragraph">And it should be, I think, 100% free, open, and public, so that there is no impediment to anyone on earth using it. And in fact if you want to make blocks that are open source or public, good for you, but if for some reason you would like to make private or commercial blocks, that&#8217;s fine too.</p>
 
 
 
@@ -196,33 +196,33 @@
 
 
 
-<p>It&#8217;s been about a year since we started talking about the Block Protocol, and we&#8217;ve made a lot of progress figuring out how it has to work to do all the things it will need to do, in a clean and straightforward way. </p>
+<p class="wp-block-paragraph">It&#8217;s been about a year since we started talking about the Block Protocol, and we&#8217;ve made a lot of progress figuring out how it has to work to do all the things it will need to do, in a clean and straightforward way. </p>
 
 
 
-<p>But this is all going nowhere if it requires 93,000,000 humans to cooperate with my crazy scheme just to get it off the ground.</p>
+<p class="wp-block-paragraph">But this is all going nowhere if it requires 93,000,000 humans to cooperate with my crazy scheme just to get it off the ground.</p>
 
 
 
-<p>So what we did is build a <a href="https://blockprotocol.org/wordpress">WordPress Plugin</a> that allows you to embed Block Protocol blocks into posts on your WordPress sites just as easily as you insert any other block.</p>
+<p class="wp-block-paragraph">So what we did is build a <a href="https://blockprotocol.org/wordpress">WordPress Plugin</a> that allows you to embed Block Protocol blocks into posts on your WordPress sites just as easily as you insert any other block.</p>
 
 
 
-<p>Since WordPress powers <a href="https://wordpress.org/about/features/" target="_blank" rel="noreferrer noopener">43%</a> of the web, that means if you build a block for the Block Protocol, it&#8217;ll be widely usable right away.</p>
+<p class="wp-block-paragraph">Since WordPress powers <a href="https://wordpress.org/about/features/" target="_blank" rel="noreferrer noopener">43%</a> of the web, that means if you build a block for the Block Protocol, it&#8217;ll be widely usable right away.</p>
 
 
 
-<p>Here&#8217;s a video demo:</p>
+<p class="wp-block-paragraph">Here&#8217;s a video demo:</p>
 
 
 
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe title="Block Protocol for WordPress plugin demo" width="730" height="411" src="https://www.youtube.com/embed/p43LHX_h81o?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="youtube-player" width="730" height="411" src="https://www.youtube.com/embed/p43LHX_h81o?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
 </div></figure>
 
 
 
-<p>The WordPress Plugin will be free, and it will be widely available in February, when we&#8217;ll also publish version 0.3 of the Block Protocol specification. You can get <a href="https://blockprotocol.org/wordpress">early access</a> now.</p>
+<p class="wp-block-paragraph">The WordPress Plugin will be free, and it will be widely available in February, when we&#8217;ll also publish version 0.3 of the Block Protocol specification. You can get <a href="https://blockprotocol.org/wordpress">early access</a> now.</p>
 
 
 
@@ -230,19 +230,19 @@
 
 
 
-<p>In fact, if you were thinking of writing a plugin for WordPress for your own kind of custom block, you&#8217;ll find that using <em>our</em> plugin as your starting point is a lot easier, because you don&#8217;t have to know anything about WordPress Plugins or write any PHP code. So even if you don&#8217;t care for any of my crazy theories and just want to add a block to WordPress, this is the way to go.</p>
+<p class="wp-block-paragraph">In fact, if you were thinking of writing a plugin for WordPress for your own kind of custom block, you&#8217;ll find that using <em>our</em> plugin as your starting point is a lot easier, because you don&#8217;t have to know anything about WordPress Plugins or write any PHP code. So even if you don&#8217;t care for any of my crazy theories and just want to add a block to WordPress, this is the way to go.</p>
 
 
 
-<p>Ultimately, though, we just want to make it easier to add useful semantic, structured information to the web, and this is the first step.</p>
+<p class="wp-block-paragraph">Ultimately, though, we just want to make it easier to add useful semantic, structured information to the web, and this is the first step.</p>
 
 
 
-<p>PS We just set up <a href="http://blockprotocol.org/discord">a Discord server for the Block Protocol</a> where you can participate, ask questions, and meet the team.</p>
+<p class="wp-block-paragraph">PS We just set up <a href="http://blockprotocol.org/discord">a Discord server for the Block Protocol</a> where you can participate, ask questions, and meet the team.</p>
 
 
 
-<p>PPS You can follow me on Mastodon, where I am <a href="https://blackrock.city/@spolsky">@spolsky@blackrock.city</a>. I don&#8217;t post that much, but I&#8217;m  enjoying hanging out there in a human-to-human environment where there isn&#8217;t an algorithm stirring up righteous indignation about the latest fake-outrage of the day.</p>
+<p class="wp-block-paragraph">PPS You can follow me on Mastodon, where I am <a href="https://blackrock.city/@spolsky">@spolsky@blackrock.city</a>. I don&#8217;t post that much, but I&#8217;m  enjoying hanging out there in a human-to-human environment where there isn&#8217;t an algorithm stirring up righteous indignation about the latest fake-outrage of the day.</p>
 ]]></content:encoded>
 					
 		
@@ -259,7 +259,7 @@
 
 					<description><![CDATA[You&#8217;ve probably seen web editors based on the idea of blocks. I&#8217;m typing this in WordPress, which has a little + button that brings up a long&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2022/01/27/making-the-web-better-with-blocks/" rel="bookmark">Read more <span class="screen-reader-text">"Making the web better. With blocks!"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>You&#8217;ve probably seen web editors based on the idea of <em>blocks</em>. I&#8217;m typing this in WordPress, which has a little + button that brings up a long list of potential blocks that you can insert into this page:</p>
+<p class="wp-block-paragraph">You&#8217;ve probably seen web editors based on the idea of <em>blocks</em>. I&#8217;m typing this in WordPress, which has a little + button that brings up a long list of potential blocks that you can insert into this page:</p>
 
 
 
@@ -267,43 +267,43 @@
 
 
 
-<p>This kind of &#8220;insert block&#8221; user interface concept is showing up in almost every blogging tool, web editor, note-taking app, and content management system. People like it and it makes sense. </p>
+<p class="wp-block-paragraph">This kind of &#8220;insert block&#8221; user interface concept is showing up in almost every blogging tool, web editor, note-taking app, and content management system. People like it and it makes sense. </p>
 
 
 
-<p>We have seem to have standardized on one thing: the <strong>/</strong> key to insert a new block. Everything else, though, is completely proprietary and non-standard. </p>
+<p class="wp-block-paragraph">We have seem to have standardized on one thing: the <strong>/</strong> key to insert a new block. Everything else, though, is completely proprietary and non-standard. </p>
 
 
 
-<p>I thought, wouldn&#8217;t it be cool if blocks were interchangeable and reusable across the web?</p>
+<p class="wp-block-paragraph">I thought, wouldn&#8217;t it be cool if blocks were interchangeable and reusable across the web?</p>
 
 
 
-<p>Until now, every app that wants blocks has to implement them from scratch. Want a calendar block? Some kind of fancy Kanban board? Something to embed image galleries? Code it up yourself, buddy.</p>
+<p class="wp-block-paragraph">Until now, every app that wants blocks has to implement them from scratch. Want a calendar block? Some kind of fancy Kanban board? Something to embed image galleries? Code it up yourself, buddy.</p>
 
 
 
-<p>As a result of the non-standardization of blocks, our end-users suffer. If someone is using my blog engine, they can only use those blocks that I had time to implement. Those blocks may be pretty basic or incomplete. Users might want to use a fancier block that they saw in WordPress or Medium or Notion, but my editor doesn&#8217;t have it. Blocks can&#8217;t be shared or moved around very easily, and our users are limited to the features and capabilities that we had time to re-implement.</p>
+<p class="wp-block-paragraph">As a result of the non-standardization of blocks, our end-users suffer. If someone is using my blog engine, they can only use those blocks that I had time to implement. Those blocks may be pretty basic or incomplete. Users might want to use a fancier block that they saw in WordPress or Medium or Notion, but my editor doesn&#8217;t have it. Blocks can&#8217;t be shared or moved around very easily, and our users are limited to the features and capabilities that we had time to re-implement.</p>
 
 
 
-<p>To fix this, we&#8217;re going to create a protocol called the <a href="https://blockprotocol.org">Block Protocol</a>. </p>
+<p class="wp-block-paragraph">To fix this, we&#8217;re going to create a protocol called the <a href="https://blockprotocol.org">Block Protocol</a>. </p>
 
 
 
-<p>It&#8217;s open, free, non-proprietary, we want it to be everywhere on the web. </p>
+<p class="wp-block-paragraph">It&#8217;s open, free, non-proprietary, we want it to be everywhere on the web. </p>
 
 
 
-<p>It&#8217;s just a protocol that embedding applications can use to embed blocks. Any block can be used in any embedding application if they all follow the protocol.</p>
+<p class="wp-block-paragraph">It&#8217;s just a protocol that embedding applications can use to embed blocks. Any block can be used in any embedding application if they all follow the protocol.</p>
 
 
 
-<p>Our hope is that this will make life much easier for app developers to support a huge variety of block types. At the same time, anyone can develop a block once and have it work in any blog platform, note-taking app, or content management system. It is all 100% free, open, and any sample code we develop showing how to use the protocol will be open-source.</p>
+<p class="wp-block-paragraph">Our hope is that this will make life much easier for app developers to support a huge variety of block types. At the same time, anyone can develop a block once and have it work in any blog platform, note-taking app, or content management system. It is all 100% free, open, and any sample code we develop showing how to use the protocol will be open-source.</p>
 
 
 
-<p>We&#8217;ve released a very early draft of the Block Protocol, and we&#8217;ve started building some very simple blocks and a simple editor that can host them.</p>
+<p class="wp-block-paragraph">We&#8217;ve released a very early draft of the Block Protocol, and we&#8217;ve started building some very simple blocks and a simple editor that can host them.</p>
 
 
 
@@ -311,7 +311,7 @@
 
 
 
-<p>We&#8217;re hoping to foster an open source community that creates a huge open source library of amazing blocks:</p>
+<p class="wp-block-paragraph">We&#8217;re hoping to foster an open source community that creates a huge open source library of amazing blocks:</p>
 
 
 
@@ -319,7 +319,7 @@
 
 
 
-<p>What can be a block? </p>
+<p class="wp-block-paragraph">What can be a block? </p>
 
 
 
@@ -327,43 +327,43 @@
 
 
 
-<p>If you work on any kind of editor—be it a blogging tool, a note-taking app, a content management system, or anything like that—you should allow your users to embed blocks that conform to the Block Protocol. This way you can write the embedding code once and immediately make your editor able to embed a rich variety of block types with no extra work on your part.</p>
+<p class="wp-block-paragraph">If you work on any kind of editor—be it a blogging tool, a note-taking app, a content management system, or anything like that—you should allow your users to embed blocks that conform to the Block Protocol. This way you can write the embedding code once and immediately make your editor able to embed a rich variety of block types with no extra work on your part.</p>
 
 
 
-<p>If you work on any kind of custom data type that might make sense to embed in web pages, you should support the Block Protocol. That way anybody with a hosting application that supports the protocol can embed your custom data type.</p>
+<p class="wp-block-paragraph">If you work on any kind of custom data type that might make sense to embed in web pages, you should support the Block Protocol. That way anybody with a hosting application that supports the protocol can embed your custom data type.</p>
 
 
 
-<p>Because it&#8217;s all 100% open, we hope that the Block Protocol will become a web standard and commonly used across the Internet.</p>
+<p class="wp-block-paragraph">Because it&#8217;s all 100% open, we hope that the Block Protocol will become a web standard and commonly used across the Internet.</p>
 
 
 
-<p>That will mean that common block types, from paragraphs and lists to images and videos, will get better and better. But it will also mean that some esoteric block types will be embeddable anywhere. Want to create a block that shows the Great Circle routing for a flight between two airports? Write the code for the block once and it can be embedded anywhere. </p>
+<p class="wp-block-paragraph">That will mean that common block types, from paragraphs and lists to images and videos, will get better and better. But it will also mean that some esoteric block types will be embeddable anywhere. Want to create a block that shows the Great Circle routing for a flight between two airports? Write the code for the block once and it can be embedded anywhere. </p>
 
 
 
-<p>Oh, and <strong>one more thing</strong>. Blocks can be highly structured, that is, they can have types. That means that they magically become machine-readable without screen scraping. For example, if you want to create an event block to represent an event on a calendar, you will be able to specify a <em>schema</em> that describes the event data type in a standard way. That way tools like calendars can instantly parse and understand web pages that contain your event block, reliably.</p>
+<p class="wp-block-paragraph">Oh, and <strong>one more thing</strong>. Blocks can be highly structured, that is, they can have types. That means that they magically become machine-readable without screen scraping. For example, if you want to create an event block to represent an event on a calendar, you will be able to specify a <em>schema</em> that describes the event data type in a standard way. That way tools like calendars can instantly parse and understand web pages that contain your event block, reliably.</p>
 
 
 
-<p>Over time, it will mean that anyone can easy publish complex, typed data sets on the web that are automatically machine-readable without extra work. (Have you ever seen one of those websites where there&#8217;s a link to &#8220;download the data set in .XLS format&#8221;? Yeah, say goodbye to that.)</p>
+<p class="wp-block-paragraph">Over time, it will mean that anyone can easy publish complex, typed data sets on the web that are automatically machine-readable without extra work. (Have you ever seen one of those websites where there&#8217;s a link to &#8220;download the data set in .XLS format&#8221;? Yeah, say goodbye to that.)</p>
 
 
 
-<p><strong>We&#8217;re going public with this very early in the development process</strong> because we need a lot of help! </p>
+<p class="wp-block-paragraph"><strong>We&#8217;re going public with this very early in the development process</strong> because we need a lot of help! </p>
 
 
 
-<p>Everything we have so far is version 0.1. It&#8217;s simple and not very good yet and going to need some iteration before it has the hope of truly being a useful web protocol. </p>
+<p class="wp-block-paragraph">Everything we have so far is version 0.1. It&#8217;s simple and not very good yet and going to need some iteration before it has the hope of truly being a useful web protocol. </p>
 
 
 
-<p>This is an open protocol, free and non-proprietary, and it&#8217;s going to make the open web much better if widely adopted, so we need to start getting people involved early, giving us feedback, and building new things!</p>
+<p class="wp-block-paragraph">This is an open protocol, free and non-proprietary, and it&#8217;s going to make the open web much better if widely adopted, so we need to start getting people involved early, giving us feedback, and building new things!</p>
 
 
 
-<p><a href="https://blockprotocol.org">Go read more about the Block Protocol now!</a></p>
+<p class="wp-block-paragraph"><a href="https://blockprotocol.org">Go read more about the Block Protocol now!</a></p>
 ]]></content:encoded>
 					
 		
@@ -380,57 +380,59 @@
 
 					<description><![CDATA[The other day I was talking to a young developer working on a code base with tons of COM code, and I told him that even before&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2021/06/02/kinda-a-big-announcement/" rel="bookmark">Read more <span class="screen-reader-text">"Kinda a big announcement"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>The other day I was talking to a young developer working on a code base with tons of COM code, and I told him that even before he was born, everyone knew that COM was already so deeply obsolete that it was impossible to find anyone who knew enough to work on it. And yet they still have this old COM code base, and they still have one old programmer holding onto their job by being the only human left on the planet with a brain big enough to manually manage multithreaded objects. I remember that COM was like Gödels Theorem: it seemed important, and you could understand it all long enough to pass an exam, but ultimately it is mostly just a demonstration of how far human intelligence can be made to stretch under extreme duress.</p>
+<p class="wp-block-paragraph">The other day I was talking to a young developer working on a code base with tons of COM code, and I told him that even before he was born, everyone knew that COM was already so deeply obsolete that it was impossible to find anyone who knew enough to work on it. And yet they still have this old COM code base, and they still have one old programmer holding onto their job by being the only human left on the planet with a brain big enough to manually manage multithreaded objects. I remember that COM was like Gödels Theorem: it seemed important, and you could understand it all long enough to pass an exam, but ultimately it is mostly just a demonstration of how far human intelligence can be made to stretch under extreme duress.</p>
 
 
 
-<p>And, <em>bubbeleh</em>, if there is one thing we have learned, it&#8217;s that the things that make it <em>easier</em> on your brain are the things that matter.</p>
-
-
-<div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="730" height="548" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1.jpg?resize=730%2C548&#038;ssl=1" alt="" class="wp-image-3822" style="width:256px;height:192px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1200%2C900&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?w=1460&amp;ssl=1 1460w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?w=2190&amp;ssl=1 2190w" sizes="auto, (max-width: 730px) 100vw, 730px" /></figure></div>
-
-
-<p>Programming changes slowly. Really slowly.</p>
-
-
-
-<p>Since I learned to code forty years ago, one thing that has mostly, <em>mostly</em>, changed about programming is that most developers no longer have to manage their own memory. Even getting that going took a long long time.</p>
-
-
-
-<p>I took a few stupid years trying to be the CEO of a growing company during which I didn&#8217;t have time to code, and when I came back to web programming, after a break of about 10 years, I found Node, React, and other goodies, which are, don&#8217;t get me wrong, amazing? Really really great? But I also found that it took approximately the same amount of work to make a CRUD web app as it always has, and that there were some things (like handing a file upload, or centering) that were, shockingly, still just as randomly difficult as they were in VBScript twenty years ago. </p>
-
-
-
-<p>Where are the flying cars?</p>
-
-
-
-<p>The biggest problem is that developers of programming tools love to add things and hate to take things away. So things get harder and harder and more and more complex because there are more and more ways to do the same thing, each has pros and cons, and you are likely to spend as much time just figuring out which &#8220;rich text editor&#8221; to use as you are to implement it.</p>
-
-
-
-<p>(Bill Gates, 1990: &#8220;How many f*cking programmers in this company are working on rich text editors?!&#8221;)</p>
+<p class="wp-block-paragraph">And, <em>bubbeleh</em>, if there is one thing we have learned, it&#8217;s that the things that make it <em>easier</em> on your brain are the things that matter.</p>
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="730" height="548" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992.jpg?resize=730%2C548&#038;ssl=1" alt="" class="wp-image-3816" style="width:256px;height:192px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1200%2C900&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?w=1460&amp;ssl=1 1460w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?w=2190&amp;ssl=1 2190w" sizes="auto, (max-width: 730px) 100vw, 730px" /></figure></div>
+<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="730" height="548" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1.jpg?resize=730%2C548&#038;ssl=1" alt="" class="wp-image-3822" style="width:256px;height:192px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?resize=1200%2C900&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?w=1460&amp;ssl=1 1460w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/63890965609__42347879-1BEE-4AD0-B24F-289733D844C1-scaled.jpg?w=2190&amp;ssl=1 2190w" sizes="auto, (max-width: 730px) 100vw, 730px" /></figure>
+</div>
 
 
-<p>So, in this world of slow, gradual change and alleged improvement, one thing did change literally overnight, or, to be precise, on September 15, 2008, which was when <a href="https://www.joelonsoftware.com/2008/09/15/stack-overflow-launches/">Stack Overflow launched</a>.</p>
-
-
-
-<p>Six-to-eight weeks before that, Stack Overflow was only an idea. (*Actually Jeff started development in April). Six-to-eight weeks after that, it was a standard part of every developer&#8217;s toolkit: something they used every day. Something <em>had</em> changed about programming, and changed very fast: the way developers learned and got help and taught each other.</p>
+<p class="wp-block-paragraph">Programming changes slowly. Really slowly.</p>
 
 
 
-<p>For many years, I was able to coast by telling delightful little stories about our incredible growth numbers, about the pay web site we made obsolete, and even about that one time when a Major Computer Book Publisher threatened to BURY US and launched their own Q&amp;A platform, which turned out to be more of a Scoff Generator than a Q&amp;A platform, but actually now almost anyone I talk to is too young to imagine The Days Before Stack Overflow, when the bookstore had an entire <em>wall</em> of Java and the way you picked a Rich Text Editor was going to Barnes and Noble and browsing through printed books for an hour, in the Rich Text Editor Component shelf.</p>
+<p class="wp-block-paragraph">Since I learned to code forty years ago, one thing that has mostly, <em>mostly</em>, changed about programming is that most developers no longer have to manage their own memory. Even getting that going took a long long time.</p>
 
 
 
-<p>Stack Overflow got to be pretty big as a business. The company grew faster than any individual&#8217;s skills at managing companies, especially mine, so a lot of the business team has changed over, and we now have a really world-class, experienced team that is doing much better than us founders. We&#8217;ve done incredible work building a recruiting platform for great developers, a &#8220;reach and relevance&#8221; platform for getting developers excited about your products, and, most importantly, <a href="https://stackoverflow.com/teams">Stack Overflow for Teams</a>, which is growing so quickly that soon every developer in the world will be using the power of Stack Overflow to get help with their own code base, not just common languages and libraries. </p>
+<p class="wp-block-paragraph">I took a few stupid years trying to be the CEO of a growing company during which I didn&#8217;t have time to code, and when I came back to web programming, after a break of about 10 years, I found Node, React, and other goodies, which are, don&#8217;t get me wrong, amazing? Really really great? But I also found that it took approximately the same amount of work to make a CRUD web app as it always has, and that there were some things (like handing a file upload, or centering) that were, shockingly, still just as randomly difficult as they were in VBScript twenty years ago. </p>
+
+
+
+<p class="wp-block-paragraph">Where are the flying cars?</p>
+
+
+
+<p class="wp-block-paragraph">The biggest problem is that developers of programming tools love to add things and hate to take things away. So things get harder and harder and more and more complex because there are more and more ways to do the same thing, each has pros and cons, and you are likely to spend as much time just figuring out which &#8220;rich text editor&#8221; to use as you are to implement it.</p>
+
+
+
+<p class="wp-block-paragraph">(Bill Gates, 1990: &#8220;How many f*cking programmers in this company are working on rich text editors?!&#8221;)</p>
+
+
+<div class="wp-block-image">
+<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="730" height="548" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992.jpg?resize=730%2C548&#038;ssl=1" alt="" class="wp-image-3816" style="width:256px;height:192px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=2048%2C1536&amp;ssl=1 2048w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?resize=1200%2C900&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?w=1460&amp;ssl=1 1460w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/IMG_7992-scaled.jpg?w=2190&amp;ssl=1 2190w" sizes="auto, (max-width: 730px) 100vw, 730px" /></figure>
+</div>
+
+
+<p class="wp-block-paragraph">So, in this world of slow, gradual change and alleged improvement, one thing did change literally overnight, or, to be precise, on September 15, 2008, which was when <a href="https://www.joelonsoftware.com/2008/09/15/stack-overflow-launches/">Stack Overflow launched</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Six-to-eight weeks before that, Stack Overflow was only an idea. (*Actually Jeff started development in April). Six-to-eight weeks after that, it was a standard part of every developer&#8217;s toolkit: something they used every day. Something <em>had</em> changed about programming, and changed very fast: the way developers learned and got help and taught each other.</p>
+
+
+
+<p class="wp-block-paragraph">For many years, I was able to coast by telling delightful little stories about our incredible growth numbers, about the pay web site we made obsolete, and even about that one time when a Major Computer Book Publisher threatened to BURY US and launched their own Q&amp;A platform, which turned out to be more of a Scoff Generator than a Q&amp;A platform, but actually now almost anyone I talk to is too young to imagine The Days Before Stack Overflow, when the bookstore had an entire <em>wall</em> of Java and the way you picked a Rich Text Editor was going to Barnes and Noble and browsing through printed books for an hour, in the Rich Text Editor Component shelf.</p>
+
+
+
+<p class="wp-block-paragraph">Stack Overflow got to be pretty big as a business. The company grew faster than any individual&#8217;s skills at managing companies, especially mine, so a lot of the business team has changed over, and we now have a really world-class, experienced team that is doing much better than us founders. We&#8217;ve done incredible work building a recruiting platform for great developers, a &#8220;reach and relevance&#8221; platform for getting developers excited about your products, and, most importantly, <a href="https://stackoverflow.com/teams">Stack Overflow for Teams</a>, which is growing so quickly that soon every developer in the world will be using the power of Stack Overflow to get help with their own code base, not just common languages and libraries. </p>
 
 
 
@@ -438,38 +440,39 @@
 
 
 
-<p>And yeah, the one thing I made sure of was that everyone that came into the company understood exactly why Stack Overflow works, and what is important to the developers that it is by and for. So while we haven&#8217;t always been perfect, we have kept true to our mission, and the current leadership is just as committed to the vision of Stack Overflow as the founders are.</p>
+<p class="wp-block-paragraph">And yeah, the one thing I made sure of was that everyone that came into the company understood exactly why Stack Overflow works, and what is important to the developers that it is by and for. So while we haven&#8217;t always been perfect, we have kept true to our mission, and the current leadership is just as committed to the vision of Stack Overflow as the founders are.</p>
 
 
 
-<p>Today we&#8217;re pleased to announce that Stack Overflow is joining <a href="https://www.prosus.com">Prosus</a>. Prosus is an investment and holding company, which means that the most important part of this announcement is that Stack Overflow will continue to operate independently, with the exact same team in place that has been operating it, according to the exact same plan and the exact same business practices. Don&#8217;t expect to see major changes or awkward &#8220;synergies&#8221;. The business of Stack Overflow will continue to focus on Reach and Relevance, and Stack Overflow for Teams. The entire company is staying in place: we just have different owners now.</p>
+<p class="wp-block-paragraph">Today we&#8217;re pleased to announce that Stack Overflow is joining <a href="https://www.prosus.com">Prosus</a>. Prosus is an investment and holding company, which means that the most important part of this announcement is that Stack Overflow will continue to operate independently, with the exact same team in place that has been operating it, according to the exact same plan and the exact same business practices. Don&#8217;t expect to see major changes or awkward &#8220;synergies&#8221;. The business of Stack Overflow will continue to focus on Reach and Relevance, and Stack Overflow for Teams. The entire company is staying in place: we just have different owners now.</p>
 
 
 
-<p>This is, in some ways, the best possible outcome. Stack Overflow stays independent. The company has plenty of cash on hand to expand and deliver more features and fix the old broken ones. Right now, the biggest gating factor to how fast we can do this is just how fast we can <a href="https://stackoverflow.com/company/work-here">hire excellent people</a>. </p>
+<p class="wp-block-paragraph">This is, in some ways, the best possible outcome. Stack Overflow stays independent. The company has plenty of cash on hand to expand and deliver more features and fix the old broken ones. Right now, the biggest gating factor to how fast we can do this is just how fast we can <a href="https://stackoverflow.com/company/work-here">hire excellent people</a>. </p>
 
 
 
-<figure class="wp-block-video"><video controls src="https://www.joelonsoftware.com/wp-content/uploads/2021/06/63017985094__5783FDD0-E895-4A7F-BB5A-A1CD6B6C9DCF.mov"></video></figure>
+<figure class="wp-block-video"><video height="1080" style="aspect-ratio: 1920 / 1080;" width="1920" controls src="https://www.joelonsoftware.com/wp-content/uploads/2021/06/63017985094__5783FDD0-E895-4A7F-BB5A-A1CD6B6C9DCF.mov"></video></figure>
 
 
 
-<p>I&#8217;ve been out of the day-to-day for a while now. Together with Dei Vilkinsons, I&#8217;m helping to build <a href="https://hash.ai">HASH</a>. HASH makes it easy to build powerful simulations and make better decisions. As we worked on that, we discovered that too much of the data that you might need to run simulations needs to be fixed up before you can use it. That&#8217;s because data is often published on the web, using page description languages that are more concerned with formatting and consumption by humans. They lack the structure to make the data they contain readily accessed programatically, so step one is miserable screen scraping and data cleanup. That&#8217;s where a lot of people give up.</p>
+<p class="wp-block-paragraph">I&#8217;ve been out of the day-to-day for a while now. Together with Dei Vilkinsons, I&#8217;m helping to build <a href="https://hash.ai">HASH</a>. HASH makes it easy to build powerful simulations and make better decisions. As we worked on that, we discovered that too much of the data that you might need to run simulations needs to be fixed up before you can use it. That&#8217;s because data is often published on the web, using page description languages that are more concerned with formatting and consumption by humans. They lack the structure to make the data they contain readily accessed programatically, so step one is miserable screen scraping and data cleanup. That&#8217;s where a lot of people give up.</p>
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="576" height="1024" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864.jpg?resize=576%2C1024&#038;ssl=1" alt="" class="wp-image-3820" style="width:288px;height:512px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=576%2C1024&amp;ssl=1 576w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=169%2C300&amp;ssl=1 169w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=768%2C1365&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=864%2C1536&amp;ssl=1 864w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=1152%2C2048&amp;ssl=1 1152w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=1200%2C2133&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?w=1440&amp;ssl=1 1440w" sizes="auto, (max-width: 576px) 100vw, 576px" /></figure></div>
+<figure class="alignright size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" width="576" height="1024" src="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864.jpg?resize=576%2C1024&#038;ssl=1" alt="" class="wp-image-3820" style="width:288px;height:512px" srcset="https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=576%2C1024&amp;ssl=1 576w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=169%2C300&amp;ssl=1 169w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=768%2C1365&amp;ssl=1 768w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=864%2C1536&amp;ssl=1 864w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=1152%2C2048&amp;ssl=1 1152w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?resize=1200%2C2133&amp;ssl=1 1200w, https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2021/06/D88FF351-904A-4C36-94C7-0C27D9BEF864-scaled.jpg?w=1440&amp;ssl=1 1440w" sizes="auto, (max-width: 576px) 100vw, 576px" /></figure>
+</div>
 
 
-<p>We think we have an interesting way to fix this. If it works, we&#8217;ll change the web as quickly and completely as Stack Overflow changed programming. But it&#8217;s kind of ambitious and maybe a little too GRAND. If you are interested in joining that crazy journey, do reach out. The whole thing is going to be open source, so just hang on, and we&#8217;ll have something up on GitHub for you to play with.</p>
-
-
-
-<p>See you soon!</p>
+<p class="wp-block-paragraph">We think we have an interesting way to fix this. If it works, we&#8217;ll change the web as quickly and completely as Stack Overflow changed programming. But it&#8217;s kind of ambitious and maybe a little too GRAND. If you are interested in joining that crazy journey, do reach out. The whole thing is going to be open source, so just hang on, and we&#8217;ll have something up on GitHub for you to play with.</p>
 
 
 
-<p></p>
+<p class="wp-block-paragraph">See you soon!</p>
+
+
+
+<p class="wp-block-paragraph"></p>
 ]]></content:encoded>
 					
 		
@@ -487,11 +490,11 @@
 
 					<description><![CDATA[Sometimes simulating complex systems is the best way to understand them. <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2020/06/18/hash-a-free-online-platform-for-modeling-the-world/" rel="bookmark">Read more <span class="screen-reader-text">"HASH: a free, online platform for modeling the world"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>Sometimes when you&#8217;re trying to figure out the way the world works, basic math is enough to get you going. If we increase the hot water flow by <em>x</em>, the temperature of the mixture goes up by <em>y</em>. </p>
+<p class="wp-block-paragraph">Sometimes when you&#8217;re trying to figure out the way the world works, basic math is enough to get you going. If we increase the hot water flow by <em>x</em>, the temperature of the mixture goes up by <em>y</em>. </p>
 
 
 
-<p>Sometimes you&#8217;re working on something that&#8217;s just too complicated for that, and you can&#8217;t even begin to guess how the inputs affect the outputs. At the warehouse, everything seems to go fine when you have less than four employees, but when you hit five employees, they get in each others&#8217; way so much that the fifth employee effectively does no additional work.</p>
+<p class="wp-block-paragraph">Sometimes you&#8217;re working on something that&#8217;s just too complicated for that, and you can&#8217;t even begin to guess how the inputs affect the outputs. At the warehouse, everything seems to go fine when you have less than four employees, but when you hit five employees, they get in each others&#8217; way so much that the fifth employee effectively does no additional work.</p>
 
 
 
@@ -499,11 +502,11 @@
 
 
 
-<p>You may not understand the relationship between the number of employees and the throughput of the warehouse, but you definitely know what everybody is doing. If you can imagine writing a little bit of JavaScript code to simulate the behavior of each of your workers, you can run a simulation and see what actually happens. You can tweak the parameters and the rules the employees follow to see how it would help, and you can really gain some traction understanding, and then solving, very complex problems.</p>
+<p class="wp-block-paragraph">You may not understand the relationship between the number of employees and the throughput of the warehouse, but you definitely know what everybody is doing. If you can imagine writing a little bit of JavaScript code to simulate the behavior of each of your workers, you can run a simulation and see what actually happens. You can tweak the parameters and the rules the employees follow to see how it would help, and you can really gain some traction understanding, and then solving, very complex problems.</p>
 
 
 
-<p>That&#8217;s what <a href="https://hash.ai/">hash.ai</a> is all about. Read Dei&#8217;s <a href="https://hash.ai/about/mission">launch blog post</a>, then try building your own simulations!</p>
+<p class="wp-block-paragraph">That&#8217;s what <a href="https://hash.ai/">hash.ai</a> is all about. Read Dei&#8217;s <a href="https://hash.ai/about/mission">launch blog post</a>, then try building your own simulations!</p>
 ]]></content:encoded>
 					
 		
@@ -520,11 +523,11 @@
 
 					<description><![CDATA[For the last couple of months, Prashanth Chandrasekar has been getting settled in as the new CEO of Stack Overflow. I&#8217;m still going on some customer calls&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2019/12/05/so-hows-that-retirement-thing-going-anyway/" rel="bookmark">Read more <span class="screen-reader-text">"So, how&#8217;s that retirement thing going, anyway?"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>For the last couple of months, Prashanth Chandrasekar has been getting settled in as the <a href="https://www.joelonsoftware.com/2019/09/24/announcing-stack-overflows-new-ceo/">new CEO of Stack Overflow</a>. I&#8217;m still going on some customer calls and have a weekly meeting with him, but I have freed up a lot of time. I&#8217;m also really enjoying discovering just how little I knew about running medium-sized companies, as I watch Prashanth rearrange everything—for the better. It&#8217;s really satisfying to realize that the best possible outcome for me is if he proves what a bad CEO I was by doing a much better job running the company.</p>
+<p class="wp-block-paragraph">For the last couple of months, Prashanth Chandrasekar has been getting settled in as the <a href="https://www.joelonsoftware.com/2019/09/24/announcing-stack-overflows-new-ceo/">new CEO of Stack Overflow</a>. I&#8217;m still going on some customer calls and have a weekly meeting with him, but I have freed up a lot of time. I&#8217;m also really enjoying discovering just how little I knew about running medium-sized companies, as I watch Prashanth rearrange everything—for the better. It&#8217;s really satisfying to realize that the best possible outcome for me is if he proves what a bad CEO I was by doing a much better job running the company.</p>
 
 
 
-<p>Even though I live in Manhattan&#8217;s premier NORC (&#8220;Naturally Occurring Retirement Community,&#8221;) I&#8217;m thinking of this time as a <a href="https://www.joelonsoftware.com/2000/03/18/more-on-sabbaticals/">sabbatical</a>, not retirement. And in fact I&#8217;m really, really busy, and, in the interest of deflecting a million questions about what I&#8217;m doing nowadays, thought I&#8217;d update my long-suffering readers here.</p>
+<p class="wp-block-paragraph">Even though I live in Manhattan&#8217;s premier NORC (&#8220;Naturally Occurring Retirement Community,&#8221;) I&#8217;m thinking of this time as a <a href="https://www.joelonsoftware.com/2000/03/18/more-on-sabbaticals/">sabbatical</a>, not retirement. And in fact I&#8217;m really, really busy, and, in the interest of deflecting a million questions about what I&#8217;m doing nowadays, thought I&#8217;d update my long-suffering readers here.</p>
 
 
 
@@ -532,27 +535,27 @@
 
 
 
-<p>I&#8217;m chairman of three companies. You probably know all about Stack Overflow so I’ll skip ahead. </p>
+<p class="wp-block-paragraph">I&#8217;m chairman of three companies. You probably know all about Stack Overflow so I’ll skip ahead. </p>
 
 
 
-<p>Fog Creek Software has been renamed <a href="https://glitch.com/">Glitch</a>, &#8220;the friendly community for building the web.&#8221; Under CEO <a href="http://anildash.com/">Anil Dash</a>, they have grown to <a href="https://www.theverge.com/2019/7/9/20683018/glitch-2-5-million-apps-code-remix-anil-dash">millions of apps</a> and raised a decent <a href="https://glitch.com/culture/glitch-raises-30m-series-a-round-from-tiger-global/">round of money</a> to accelerate that growth. I think that in every era there has to be some kind of simplified programming environment for the quiet majority of developers who don&#8217;t need fancy administration features for their code, like git branches or multistep deployment processes; they just want to write code and have it run. Glitch is aimed at those developers.</p>
+<p class="wp-block-paragraph">Fog Creek Software has been renamed <a href="https://glitch.com/">Glitch</a>, &#8220;the friendly community for building the web.&#8221; Under CEO <a href="http://anildash.com/">Anil Dash</a>, they have grown to <a href="https://www.theverge.com/2019/7/9/20683018/glitch-2-5-million-apps-code-remix-anil-dash">millions of apps</a> and raised a decent <a href="https://glitch.com/culture/glitch-raises-30m-series-a-round-from-tiger-global/">round of money</a> to accelerate that growth. I think that in every era there has to be some kind of simplified programming environment for the quiet majority of developers who don&#8217;t need fancy administration features for their code, like git branches or multistep deployment processes; they just want to write code and have it run. Glitch is aimed at those developers.</p>
 
 
 
-<p>The third company, <a href="https://hash.ai/">HASH</a>, is still kind of under the radar right now, although today they put a whole bunch of words up on their website so I guess I can give you a preview. HASH is building an open source platform for doing simulations. It&#8217;s a great way to model problems where you have some idea of how every agent is supposed to behave, but you don&#8217;t really know what all that is going to add up to.</p>
+<p class="wp-block-paragraph">The third company, <a href="https://hash.ai/">HASH</a>, is still kind of under the radar right now, although today they put a whole bunch of words up on their website so I guess I can give you a preview. HASH is building an open source platform for doing simulations. It&#8217;s a great way to model problems where you have some idea of how every agent is supposed to behave, but you don&#8217;t really know what all that is going to add up to.</p>
 
 
 
-<p>For example, suppose you&#8217;re a city planner and you want to model traffic so that you can make a case for a new bus line. You can, sort of, pretend that every bus takes 50 cars off the road, but that&#8217;s not going to work unless you can find 50 commuters who will all decide to take your new bus line&#8230; and the way they decide is that they check if the bus is actually going to save them time and money over just driving. This is a case where you can actually simulate the behavior of every &#8220;agent&#8221; in your model, like <a href="https://en.wikipedia.org/wiki/City-building_game">Cities: Skylines</a> does, and figure out the results. Then you can try thousands or millions of different potential bus routes and see which ones actually reduce traffic. </p>
+<p class="wp-block-paragraph">For example, suppose you&#8217;re a city planner and you want to model traffic so that you can make a case for a new bus line. You can, sort of, pretend that every bus takes 50 cars off the road, but that&#8217;s not going to work unless you can find 50 commuters who will all decide to take your new bus line&#8230; and the way they decide is that they check if the bus is actually going to save them time and money over just driving. This is a case where you can actually simulate the behavior of every &#8220;agent&#8221; in your model, like <a href="https://en.wikipedia.org/wiki/City-building_game">Cities: Skylines</a> does, and figure out the results. Then you can try thousands or millions of different potential bus routes and see which ones actually reduce traffic. </p>
 
 
 
-<p>This kind of modeling is incredibly computationally intensive, but it works even when you don&#8217;t have a closed-form formula for how bus lines impact traffic, or, in general, how individual agents’ behavior affects overall outcomes. This kind of tool will be incredibly useful in far-ranging problems, like epidemiology, econometrics, urban planning, finance, political science, and a lot of other areas which are not really amenable to closed-form modeling or common &#8220;AI&#8221; techniques. (I love putting AI in “scare” “quotes”. There are a lot of startups out there trying to train machine learning models with way too little data. Sometimes the models they create just reproduce the bad decision making of the humans they are trained on. In many cases a model with simulated agents running a white box algorithm is going to be superior). </p>
+<p class="wp-block-paragraph">This kind of modeling is incredibly computationally intensive, but it works even when you don&#8217;t have a closed-form formula for how bus lines impact traffic, or, in general, how individual agents’ behavior affects overall outcomes. This kind of tool will be incredibly useful in far-ranging problems, like epidemiology, econometrics, urban planning, finance, political science, and a lot of other areas which are not really amenable to closed-form modeling or common &#8220;AI&#8221; techniques. (I love putting AI in “scare” “quotes”. There are a lot of startups out there trying to train machine learning models with way too little data. Sometimes the models they create just reproduce the bad decision making of the humans they are trained on. In many cases a model with simulated agents running a white box algorithm is going to be superior). </p>
 
 
 
-<p>Ok, so those are the three companies I&#8217;m still working on in some way or another. That still leaves me with a couple of free days every week which I&#8217;m actually using to work on some electronics projects. </p>
+<p class="wp-block-paragraph">Ok, so those are the three companies I&#8217;m still working on in some way or another. That still leaves me with a couple of free days every week which I&#8217;m actually using to work on some electronics projects. </p>
 
 
 
@@ -560,7 +563,7 @@
 
 
 
-<p>In particular, I&#8217;m really into pixel-addressable RGB LEDs, like those WS2812b and APA102-type things. Right now I&#8217;m <a href="https://blinkylights.blog/">working</a> on designing a circuit board that connects a Teensy 3.2 controller, which can drive up to 4416 LEDs at a high frame rate, to a WizNET Ethernet adapter, and then creating some software which can be used to distribute 4416 pixels worth of data to each Teensy over a TCP-IP network in hopes of creating huge installations with hundreds of thousands of pixels. If that made any sense at all, you&#8217;re probably already a member of the <a href="https://www.facebook.com/groups/LEDSAREAWESOME/">LEDs ARE AWESOME</a> Facebook group and you probably think I&#8217;m dumb. If that doesn’t make any sense, rest assured that I am probably not going to burn down the apartment because I am very careful with the soldering iron almost every time. </p>
+<p class="wp-block-paragraph">In particular, I&#8217;m really into pixel-addressable RGB LEDs, like those WS2812b and APA102-type things. Right now I&#8217;m <a href="https://blinkylights.blog/">working</a> on designing a circuit board that connects a Teensy 3.2 controller, which can drive up to 4416 LEDs at a high frame rate, to a WizNET Ethernet adapter, and then creating some software which can be used to distribute 4416 pixels worth of data to each Teensy over a TCP-IP network in hopes of creating huge installations with hundreds of thousands of pixels. If that made any sense at all, you&#8217;re probably already a member of the <a href="https://www.facebook.com/groups/LEDSAREAWESOME/">LEDs ARE AWESOME</a> Facebook group and you probably think I&#8217;m dumb. If that doesn’t make any sense, rest assured that I am probably not going to burn down the apartment because I am very careful with the soldering iron almost every time. </p>
 
 
 
@@ -568,7 +571,7 @@
 
 
 
-<p></p>
+<p class="wp-block-paragraph"></p>
 ]]></content:encoded>
 					
 		
@@ -585,27 +588,27 @@
 
 					<description><![CDATA[Last March, I shared that we were starting to look for a new CEO for Stack Overflow. We were looking for that rare combination of someone who&#8230; <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2019/09/24/announcing-stack-overflows-new-ceo/" rel="bookmark">Read more <span class="screen-reader-text">"Welcome, Prashanth!"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>Last March, I <a href="https://www.joelonsoftware.com/2019/03/28/the-next-ceo-of-stack-overflow/">shared</a> that we were starting to look for a new CEO for Stack Overflow. We were looking for that rare combination of someone who could foster the community while accelerating the growth of our businesses, especially Teams, where we are starting to close many huge deals and becoming a hyper-growth enterprise software company very quickly. This is not something I’m particularly good at, and I thought it was time to bring on more experienced leadership.</p>
+<p class="wp-block-paragraph">Last March, I <a href="https://www.joelonsoftware.com/2019/03/28/the-next-ceo-of-stack-overflow/">shared</a> that we were starting to look for a new CEO for Stack Overflow. We were looking for that rare combination of someone who could foster the community while accelerating the growth of our businesses, especially Teams, where we are starting to close many huge deals and becoming a hyper-growth enterprise software company very quickly. This is not something I’m particularly good at, and I thought it was time to bring on more experienced leadership.</p>
 
 
 
-<p>The Board of Directors nominated a search committee and we went through almost 200 candidates. It speaks to how well respected&nbsp; a company Stack Overflow is that we found ourselves in the rare position of having plenty of highly qualified executives who were excited about the opportunity. Nevertheless, one of them really stood out, and we are pleased to let you know that we have selected Prashanth Chandrasekar as our next CEO. His first day will be October 1st.</p>
+<p class="wp-block-paragraph">The Board of Directors nominated a search committee and we went through almost 200 candidates. It speaks to how well respected&nbsp; a company Stack Overflow is that we found ourselves in the rare position of having plenty of highly qualified executives who were excited about the opportunity. Nevertheless, one of them really stood out, and we are pleased to let you know that we have selected Prashanth Chandrasekar as our next CEO. His first day will be October 1st.</p>
 
 
 
-<p>Prashanth was born in Bangalore, India, the city with the highest number of Stack Overflow users in the world, one of the global capitals for software developers writing the script for the future. He started out as a software engineer before moving over to management. He has a BS in Computer Engineering from the University of Maine, a Masters in Engineering Management from Cornell, and an MBA from Harvard. He worked at Capgemini as a management consultant and Barclays as an investment banker in their technology group before joining Rackspace in San Antonio, Texas.</p>
+<p class="wp-block-paragraph">Prashanth was born in Bangalore, India, the city with the highest number of Stack Overflow users in the world, one of the global capitals for software developers writing the script for the future. He started out as a software engineer before moving over to management. He has a BS in Computer Engineering from the University of Maine, a Masters in Engineering Management from Cornell, and an MBA from Harvard. He worked at Capgemini as a management consultant and Barclays as an investment banker in their technology group before joining Rackspace in San Antonio, Texas.</p>
 
 
 
-<p>At Rackspace, Prashanth really proved his mettle, creating from scratch a completely new business unit inside the company, the <a href="https://www.rackspace.com/cloud/public">Global Managed Public Clouds Business</a>. This group serves companies around the world who need help running on AWS, Azure, Google, and so on. Under his leadership, Rackspace successfully pivoted from a leading managed hosting company to a cloud services company. And he did this while working with developers both inside Rackspace and outside, so he understands our vision of “writing the script for the future” better than anyone I’ve met.</p>
+<p class="wp-block-paragraph">At Rackspace, Prashanth really proved his mettle, creating from scratch a completely new business unit inside the company, the <a href="https://www.rackspace.com/cloud/public">Global Managed Public Clouds Business</a>. This group serves companies around the world who need help running on AWS, Azure, Google, and so on. Under his leadership, Rackspace successfully pivoted from a leading managed hosting company to a cloud services company. And he did this while working with developers both inside Rackspace and outside, so he understands our vision of “writing the script for the future” better than anyone I’ve met.</p>
 
 
 
-<p>This is an exciting time for Stack Overflow, and we have some big goals for the year ahead. We want to make Stack Overflow more diverse, inclusive, and welcoming. And we want to make it possible for knowledge workers everywhere to use Stack Overflow to get answers to the proprietary questions that are specific to their organizations and teams. We’re doing great work and making great progress in these areas, and I’m confident that Prashanth has some great ideas about how to move forward faster on all our goals.</p>
+<p class="wp-block-paragraph">This is an exciting time for Stack Overflow, and we have some big goals for the year ahead. We want to make Stack Overflow more diverse, inclusive, and welcoming. And we want to make it possible for knowledge workers everywhere to use Stack Overflow to get answers to the proprietary questions that are specific to their organizations and teams. We’re doing great work and making great progress in these areas, and I’m confident that Prashanth has some great ideas about how to move forward faster on all our goals.</p>
 
 
 
-<p>As you know, I’m keeping my job as Chairman of the Board, so I’ll continue to be closely involved. Being Stack Overflow’s CEO has been an honor, and I can’t wait to see the things the team accomplishes in the year ahead. This will be a great new chapter for Stack Overflow.<br></p>
+<p class="wp-block-paragraph">As you know, I’m keeping my job as Chairman of the Board, so I’ll continue to be closely involved. Being Stack Overflow’s CEO has been an honor, and I can’t wait to see the things the team accomplishes in the year ahead. This will be a great new chapter for Stack Overflow.<br></p>
 ]]></content:encoded>
 					
 		
@@ -623,31 +626,31 @@
 
 					<description><![CDATA[We’re looking for a new CEO for Stack Overflow. I’m stepping out of the day-to-day and up to the role of Chairman of the Board. <span class="read-more"><a class="more-link" href="https://www.joelonsoftware.com/2019/03/28/the-next-ceo-of-stack-overflow/" rel="bookmark">Read more <span class="screen-reader-text">"The next CEO of Stack Overflow"</span></a></span>]]></description>
 										<content:encoded><![CDATA[
-<p>Big news! We’re looking for a new CEO for Stack Overflow. I’m stepping out of the day-to-day and up to the role of Chairman of the Board.</p>
+<p class="wp-block-paragraph">Big news! We’re looking for a new CEO for Stack Overflow. I’m stepping out of the day-to-day and up to the role of Chairman of the Board.</p>
 
 
 
-<p>Stack Overflow has been around for more than a decade. As I look back, it’s really amazing how far it has come. &nbsp;</p>
+<p class="wp-block-paragraph">Stack Overflow has been around for more than a decade. As I look back, it’s really amazing how far it has come. &nbsp;</p>
 
 
 
-<p>Only six months after we had launched Stack Overflow, my co-founder Jeff Atwood and I were invited to speak at a Microsoft conference for developers in Las Vegas. We were there, I think, to demonstrate that you could use their latest ASP.NET MVC technology on a real website without too much of a disaster. (In fact .NET has been a huge, unmitigated success for us, but you kids go ahead and have fun with whatever platform you want mkay? They’re all great, or, at least, above-average).</p>
+<p class="wp-block-paragraph">Only six months after we had launched Stack Overflow, my co-founder Jeff Atwood and I were invited to speak at a Microsoft conference for developers in Las Vegas. We were there, I think, to demonstrate that you could use their latest ASP.NET MVC technology on a real website without too much of a disaster. (In fact .NET has been a huge, unmitigated success for us, but you kids go ahead and have fun with whatever platform you want mkay? They’re all great, or, at least, above-average).</p>
 
 
 
-<p>It was a giant conference, held at the Venetian Hotel. This hotel was so big that other <em>hotels</em> stay there when they go on vacation. The main ballroom was the size of, approximately, Ireland. I later learned there were 5,000 developers in that room.</p>
+<p class="wp-block-paragraph">It was a giant conference, held at the Venetian Hotel. This hotel was so big that other <em>hotels</em> stay there when they go on vacation. The main ballroom was the size of, approximately, Ireland. I later learned there were 5,000 developers in that room.</p>
 
 
 
-<p>I thought it would be a fun thing to ask the developers in the room how many of them had visited Stack Overflow. As I remember, Jeff was very much against this idea. “Joel,” he said, “That is going to be embarrassing and humiliating. Nobody is going to raise their hand.”</p>
+<p class="wp-block-paragraph">I thought it would be a fun thing to ask the developers in the room how many of them had visited Stack Overflow. As I remember, Jeff was very much against this idea. “Joel,” he said, “That is going to be embarrassing and humiliating. Nobody is going to raise their hand.”</p>
 
 
 
-<p>Well, I asked it anyway. And we were both surprised to see about one-third of the hands go up. We were really making an impact! That felt really good.</p>
+<p class="wp-block-paragraph">Well, I asked it anyway. And we were both surprised to see about one-third of the hands go up. We were really making an impact! That felt really good.</p>
 
 
 
-<p>Anyway, I tried that trick again whenever I spoke to a large audience. It doesn’t work anymore. Today, audiences just laugh. It’s like asking, “Does anyone use gravity? Raise your hand if you use gravity.”</p>
+<p class="wp-block-paragraph">Anyway, I tried that trick again whenever I spoke to a large audience. It doesn’t work anymore. Today, audiences just laugh. It’s like asking, “Does anyone use gravity? Raise your hand if you use gravity.”</p>
 
 
 
@@ -655,23 +658,23 @@
 
 
 
-<p>Where are we at after 11 years? Practically every developer in the world uses Stack Overflow. Including the Stack Exchange network of 174 sites, we have over 100 million monthly visitors. Every month, over 125,000 wonderful people write answers. According to Alexa, <a href="https://www.alexa.com/siteinfo/stackoverflow.com">stackoverflow.com is one of the top 50 websites in the world</a>. (That’s without even counting the Stack Exchange network, which is almost as big.) And every time I see a developer write code, they’ve got Stack Overflow open in one of their browser windows. Oh and—hey!—we do not make you sign up or pay to see the answers.</p>
+<p class="wp-block-paragraph">Where are we at after 11 years? Practically every developer in the world uses Stack Overflow. Including the Stack Exchange network of 174 sites, we have over 100 million monthly visitors. Every month, over 125,000 wonderful people write answers. According to Alexa, <a href="https://www.alexa.com/siteinfo/stackoverflow.com">stackoverflow.com is one of the top 50 websites in the world</a>. (That’s without even counting the Stack Exchange network, which is almost as big.) And every time I see a developer write code, they’ve got Stack Overflow open in one of their browser windows. Oh and—hey!—we do not make you sign up or pay to see the answers.</p>
 
 
 
-<p>The company has been growing, too. Today we are profitable. We have almost 300 amazing employees worldwide and booked $70m in revenue last year. We have talent, advertising, and software products. The SaaS products (Stack Overflow for <a href="https://stackoverflow.com/teams">Teams</a> and <a href="https://stackoverflow.com/enterprise">Enterprise</a>) are growing at <em>200% a year</em>. That speaks to the fact that we’ve recruited an incredibly talented team that has produced such fantastic results. </p>
+<p class="wp-block-paragraph">The company has been growing, too. Today we are profitable. We have almost 300 amazing employees worldwide and booked $70m in revenue last year. We have talent, advertising, and software products. The SaaS products (Stack Overflow for <a href="https://stackoverflow.com/teams">Teams</a> and <a href="https://stackoverflow.com/enterprise">Enterprise</a>) are growing at <em>200% a year</em>. That speaks to the fact that we’ve recruited an incredibly talented team that has produced such fantastic results. </p>
 
 
 
-<p>But, we have a lot of work ahead of us, and it’s going to take a different type of leader to get us through that work. </p>
+<p class="wp-block-paragraph">But, we have a lot of work ahead of us, and it’s going to take a different type of leader to get us through that work. </p>
 
 
 
-<p>The type of people Stack Overflow serves has changed, and now, as a part of the developer ecosystem, we have a responsibility to create an online community that is far more diverse, inclusive, and welcoming of newcomers.</p>
+<p class="wp-block-paragraph">The type of people Stack Overflow serves has changed, and now, as a part of the developer ecosystem, we have a responsibility to create an online community that is far more diverse, inclusive, and welcoming of newcomers.</p>
 
 
 
-<p>In the decade or so since Stack Overflow started, the number of people employed as software developers <a href="https://www.bls.gov/careeroutlook/2019/data-on-display/projections-evaluation.htm?view_full">grew by 64%</a> in the US alone. The field is going to keep growing everywhere in the world, and the demand for great software developers far outstrips supply. So a big challenge for Stack Overflow is welcoming those new developers into the fold. As I’ve <a href="https://www.joelonsoftware.com/2018/04/23/strange-and-maddening-rules/">written</a>:</p>
+<p class="wp-block-paragraph">In the decade or so since Stack Overflow started, the number of people employed as software developers <a href="https://www.bls.gov/careeroutlook/2019/data-on-display/projections-evaluation.htm?view_full">grew by 64%</a> in the US alone. The field is going to keep growing everywhere in the world, and the demand for great software developers far outstrips supply. So a big challenge for Stack Overflow is welcoming those new developers into the fold. As I’ve <a href="https://www.joelonsoftware.com/2018/04/23/strange-and-maddening-rules/">written</a>:</p>
 
 
 
@@ -679,7 +682,7 @@
 
 
 
-<p>The world has started taking a closer look at tech, and understanding that software and the internet are not just tools; they are shaping the future of society. Big tech companies are struggling with their place in the world. Stack Overflow is situated at the right place to be influential in how that future develops, and that is going to take a new type of leader.</p>
+<p class="wp-block-paragraph">The world has started taking a closer look at tech, and understanding that software and the internet are not just tools; they are shaping the future of society. Big tech companies are struggling with their place in the world. Stack Overflow is situated at the right place to be influential in how that future develops, and that is going to take a new type of leader.</p>
 
 
 
@@ -687,15 +690,15 @@
 
 
 
-<p>It will not be easy to find a CEO who is the right person to lead that mission. We will, no doubt, hire one of those fancy executive headhunters to help us in the search. But, hey, this is Stack Overflow. If there’s one thing I have learned by now, it’s that there’s always someone in the community who can answer the questions I can’t. </p>
+<p class="wp-block-paragraph">It will not be easy to find a CEO who is the right person to lead that mission. We will, no doubt, hire one of those fancy executive headhunters to help us in the search. But, hey, this is Stack Overflow. If there’s one thing I have learned by now, it’s that there’s always someone in the community who can answer the questions I can’t. </p>
 
 
 
-<p>So we decided to put this announcement out there in hopes of finding great candidates that might have been under the radar. We’re especially focused on identifying candidates from under-represented groups, and making sure that every candidate we consider is deeply committed to making our company and community more welcoming, diverse, and inclusive.</p>
+<p class="wp-block-paragraph">So we decided to put this announcement out there in hopes of finding great candidates that might have been under the radar. We’re especially focused on identifying candidates from under-represented groups, and making sure that every candidate we consider is deeply committed to making our company and community more welcoming, diverse, and inclusive.</p>
 
 
 
-<p>Over the years, Fog Creek Software created several incredible hits and many wonderful memories along the way. It is great to watch Trello (under Michael Pryor) and Glitch (under Anil Dash) growing into enormously valuable, successful, and influential products with dedicated leaders who took these products much further than I ever could have, and personally I’m excited to see where Stack Overflow can go and turn my attention to the next thing.<br></p>
+<p class="wp-block-paragraph">Over the years, Fog Creek Software created several incredible hits and many wonderful memories along the way. It is great to watch Trello (under Michael Pryor) and Glitch (under Anil Dash) growing into enormously valuable, successful, and influential products with dedicated leaders who took these products much further than I ever could have, and personally I’m excited to see where Stack Overflow can go and turn my attention to the next thing.<br></p>
 ]]></content:encoded>
 					
 		

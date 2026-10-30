@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "0cd53a5f3c6a8dadfbaa428c",
+      "title": "沐後yeh在聊",
+      "summary": "喜歡的 Podcast《沐後yeh在聊》在斷更九個月之後重新開始更新了！",
+      "image": null,
+      "publishedAt": "2026-10-31T00:05:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/yeh-podcast",
+      "detailPath": "articles/0cd53a5f3c6a8dadfbaa428c.json"
+    },
+    {
+      "id": "3db13bd6bad5ec4ddc8d6cce",
+      "title": "手不痠嗎",
+      "summary": "\"We've done tons of user testing on this, and it turns out it doesn't work. Touch surfaces don't want to be vertical. It gives great demo, but after a short period of time you start to fatigue, and after an extended period of time, your arm wants to fall off. It doesn't work, it's ergonomically terrible.\"",
+      "image": "https://wiwi.blog/assets/images/touch-a19597995465d9ee9337dcd13f409b21.jpg",
+      "publishedAt": "2026-10-31T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/touch-macbook",
+      "detailPath": "articles/3db13bd6bad5ec4ddc8d6cce.json"
+    },
+    {
+      "id": "0dea3e32563175f3e5a1c6b8",
+      "title": "如何优雅地优雅退出？",
+      "summary": "写程序的时候会自然地关注如何启动系统中的各个组件，但很少关心如何关停。这和内存分配一样，使用高层编程语言（甚至是自然语言）编程的程序员们早已习惯垃圾回收机制，从不手动分配和释放内存。 不需要极佳的性能，确实没必要用 C 或者 Zig 等低层语言直接操作内存，但在高层语言里，仍有不少资源需要手动管理，系统中有些部分是成熟的框架也不一定会考虑到的。比方说，一些异步程序可能在共享内存区域或消息队列里存了尚未保存的数据，如果直接退出，这里面的数据就丢失了。 让程序监听并响应中断信号，在收到信号之后处理尚未释放的资源和尚未完成的请求，然后主动退出，这种做法一般叫优雅退出（graceful shutdown）。Java 的 Spring 框架就会在接收到信号的时候自动优雅退出，首先它会停止接收新的请求，然后处理完剩下的请…",
+      "image": null,
+      "publishedAt": "2026-10-30T17:36:54Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/functional-shutdown/",
+      "detailPath": "articles/0dea3e32563175f3e5a1c6b8.json"
+    },
+    {
+      "id": "94d7e2e4e1ff1be7cf52700a",
+      "title": "折腾桌面",
+      "summary": "因为儿子要我换个跟他一样颜色的桌子，所以买了一样颜色的升降桌。没想到一发不可收拾，重构了桌面环境。先上成果：再记录一些设备及更新的原因：一、电脑因为 Mac mini 涨价，之前 9000 块卖掉了 M4 的 Mac mini。现在 M6 Mac mini 降价，又没忍住 7100 买回了 M6 + 24G + 512G 的 Mac mini。二、升降桌之前",
+      "image": "https://yipai.me/media/blog/assets/8c9a4e7c-36d5-4fa6-8ed2-8f1f729d30da-7f888a182b085e82.jpg",
+      "publishedAt": "2026-10-30T17:10:00Z",
+      "sourceId": "211ed4466033fe3d",
+      "sourceTitle": "一派胡言",
+      "link": "https://yipai.me/post/2556.html",
+      "detailPath": "articles/94d7e2e4e1ff1be7cf52700a.json"
+    },
+    {
+      "id": "4bd826e62804d8b8c57c0264",
+      "title": "把悲伤看透时",
+      "summary": "几首歌，几段画面，几张照片。都不太说话。",
+      "image": "https://her.blue/content/images/2026/10/blbs-moodblue.jpg",
+      "publishedAt": "2026-10-30T16:01:23Z",
+      "sourceId": "ab8f1a7d1b3e35d8",
+      "sourceTitle": "HerBlue 她的蓝",
+      "link": "https://her.blue/ba-bei-shang-kan-tou-shi/",
+      "detailPath": "articles/4bd826e62804d8b8c57c0264.json"
+    },
+    {
+      "id": "b7efea29d00e9dc4e9b05131",
+      "title": "新玩具 Apple Watch Series 12",
+      "summary": "Apple Watch Series 12 使用一个月简单体验。",
+      "image": "https://s2.atpx.com/images/blog/2026/0130-01.webp",
+      "publishedAt": "2026-10-30T15:20:30Z",
+      "sourceId": "912d1c5863a9a1b2",
+      "sourceTitle": "atpX",
+      "link": "https://atpx.com/blog/apple-watch-series-12/",
+      "detailPath": "articles/b7efea29d00e9dc4e9b05131.json"
+    },
+    {
+      "id": "9e509b0b40df4c5008bcfa0f",
+      "title": "檸檬卷的朝聖之路 Vlog",
+      "summary": "這部檸檬卷剪了好久，我也來幫她分享一下。",
+      "image": null,
+      "publishedAt": "2026-10-30T10:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/camino-vlog",
+      "detailPath": "articles/9e509b0b40df4c5008bcfa0f.json"
+    },
+    {
       "id": "c674dedddb3665233a0b3254",
       "title": "有些人，见一面少一面",
       "summary": "很早就听过一句话：春困秋乏夏打盹，睡不醒的冬三月。这就是我现在的状态吧。想写点东西，但是身体层面的精力一直不足以支撑我来写。大概是因为日常琐事就已经把我弄得精疲力尽，等到终于有一点属于自己的时间...",
@@ -45,6 +122,17 @@
       "detailPath": "articles/0bfcfebac436fca4a1b5b3a4.json"
     },
     {
+      "id": "6b2f4b2df3fa7716b5997334",
+      "title": "徽剑被杀的反思：当歹徒冒充警察抓人，自媒体人该如何自保？",
+      "summary": "最近徽剑（吴恺）案二审裁定书公开，很多人才知晓，这位长期曝光境外电诈的自媒体人，早已在两年前遭遇跨境买凶绑架，最终遇害。看完案件细节，我心里久久无法平静，越琢磨，越是细思极恐。 自媒体人徽剑（本名吴恺），因发文曝光柬埔寨电诈骨干的犯罪活动，遭境外人员一百万悬赏买凶。境内的犯罪分子冒充警察，在惠州大亚湾将吴恺掳走，跨省转移途中持续殴打，后将昏迷的吴恺遗弃在江西定南荒山致其死亡。该案当月告破，主犯赵冰获死缓，其余多人获有期徒刑，悬赏下单的主谋仍在境外逍遥法外，凶手一方取得徽剑家人的谅解书。 这个案件最冲击我的一点：行凶者是伪装成警察，在光天化日之下，把人抓上车带走，而这个冒充警察并实施绑架的地方，是在惠州大亚湾经济技术开发区澳头大温坝市场，周边全是政府机关，属于公共区域。 试想一下，换作任何一个普通自媒体人，路边…",
+      "image": null,
+      "publishedAt": "2026-10-30T02:21:23Z",
+      "sourceId": "790d01957a9e753b",
+      "sourceTitle": "月光博客",
+      "link": "https://www.williamlong.info/archives/7567.html",
+      "detailPath": "articles/6b2f4b2df3fa7716b5997334.json"
+    },
+    {
       "id": "126500d8ecf5bbea50146234",
       "title": "我有多「Z 世代」？突如其來的「Z 世代檢核表」跟風",
       "summary": "JN 的〈 「Z 世代」很鳥 〉這篇文章中，提到了他隨便叫 AI 整理的「Z 時代檢核表」。出於好奇，並且自己也作爲（ 維基百科 定義上）「Z 世代」的一員，我也試着做做看這個檢核好了。 雖然馬來西亞和臺灣的生活與網路文化仍是有所差異（例如馬來西亞人就不會用 Dcard），但我還是會依照適合自己的情況作答。 和 JN 一樣，我將採用 0 到 4 分的計分方式，「完全不符」爲 0 分，而「完全符合」則爲 4 分。 社群與資訊 特徵 評分 想知道一家店、一件商品或某個服務的實際體驗，我會先找 Dcard、Threads、IG 等地方的個人分享。 1 分。很偶爾才會這麼做。 我會用 IG 限時動態、限時回覆或分享貼文，跟朋友維持輕量互動，即使沒有特別要聊的事。 1 分。我在學生（包括大學）時期 完全沒有 做這樣的事…",
@@ -76,6 +164,17 @@
       "sourceTitle": "阮一峰的网络日志",
       "link": "http://www.ruanyifeng.com/blog/2026/10/weekly-issue-417.html",
       "detailPath": "articles/82ee626f8069a47a9b9ada78.json"
+    },
+    {
+      "id": "5c4ce4bf54cb922077d728c5",
+      "title": "逛吃多倫多",
+      "summary": "因為去看盧巧音演唱會",
+      "image": null,
+      "publishedAt": "2026-10-30T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/toronto-2026/",
+      "detailPath": "articles/5c4ce4bf54cb922077d728c5.json"
     },
     {
       "id": "dfc29183f650aff93689e33e",
@@ -263,17 +362,6 @@
       "sourceTitle": "只贏",
       "link": "https://www.onlywin.work/p/f63",
       "detailPath": "articles/b46ac1bcdc3c8329bce066c8.json"
-    },
-    {
-      "id": "6b2f4b2df3fa7716b5997334",
-      "title": "徽剑被杀的反思：当歹徒冒充警察抓人，自媒体人该如何自保？",
-      "summary": "最近徽剑（吴恺）案二审裁定书公开，很多人才知晓，这位长期曝光境外电诈的自媒体人，早已在两年前遭遇跨境买凶绑架，最终遇害。看完案件细节，我心里久久无法平静，越琢磨，越是细思极恐。 自媒体人徽剑（本名吴恺），因发文曝光柬埔寨电诈骨干的犯罪活动，遭境外人员一百万悬赏买凶。境内的犯罪分子冒充警察，在惠州大亚湾将吴恺掳走，跨省转移途中持续殴打，后将昏迷的吴恺遗弃在江西定南荒山致其死亡。该案当月告破，主犯赵冰获死缓，其余多人获有期徒刑，悬赏下单的主谋仍在境外逍遥法外，凶手一方取得徽剑家人的谅解书。 这个案件最冲击我的一点：行凶者是伪装成警察，在光天化日之下，把人抓上车带走，而这个冒充警察并实施绑架的地方，是在惠州大亚湾经济技术开发区澳头大温坝市场，周边全是政府机关，属于公共区域。 试想一下，换作任何一个普通自媒体人，路边…",
-      "image": null,
-      "publishedAt": "2026-10-28T16:21:23Z",
-      "sourceId": "790d01957a9e753b",
-      "sourceTitle": "月光博客",
-      "link": "https://www.williamlong.info/archives/7567.html",
-      "detailPath": "articles/6b2f4b2df3fa7716b5997334.json"
     },
     {
       "id": "9ff5aac5fec28b94ed730343",
@@ -571,94 +659,6 @@
       "sourceTitle": "Koimsurai 手記",
       "link": "https://koimsurai.com/blog/blog-redesign-dots-and-lines",
       "detailPath": "articles/69d3003d30c6678512287ea1.json"
-    },
-    {
-      "id": "9e16e21b17f27d0a1843098c",
-      "title": "過馬路時不滑手機（是真的）",
-      "summary": "前幾天的〈過馬路時不滑手機〉，竟然有人不相信，以為是 AI 圖？",
-      "image": "https://wiwi.blog/assets/images/no-phone-e254921a8c31332a3e5ca7b580346ba1.webp",
-      "publishedAt": "2026-10-27T02:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/no-phone-crossing-is-real",
-      "detailPath": "articles/9e16e21b17f27d0a1843098c.json"
-    },
-    {
-      "id": "4c9b724a0c95fac4f043dba1",
-      "title": "无标题文章",
-      "summary": "二零二四年，本站刊「喬布斯的孩子用 iPad 嗎？」一文。日前 David Streitfeld 爲《紐約時報 […]",
-      "image": "https://1.gravatar.com/avatar/19d667891f84a17deee970e145cef9ed58b8dd71869b0b97533a8821fb128616?s=96&d=identicon&r=G",
-      "publishedAt": "2026-10-27T01:43:25Z",
-      "sourceId": "e1dfcc8815d1c9f8",
-      "sourceTitle": "IT 公论",
-      "link": "https://blog.yitianshijie.net/2026/10/27/6136/",
-      "detailPath": "articles/4c9b724a0c95fac4f043dba1.json"
-    },
-    {
-      "id": "c07c226f4e8cba29c59db4da",
-      "title": "化石在發呆#2忘情、忘愛、忘掉你有多美？",
-      "summary": "小時候相信人存在於世就要追求真、善、美。不過個人而言，不知是因為生在一個以追求孩童課業成績為主的社會，還是我先 […]",
-      "image": "https://cylikesreading.wordpress.com/wp-content/uploads/2026/10/meifoo_20261023.jpg",
-      "publishedAt": "2026-10-27T00:43:23Z",
-      "sourceId": "737dffed2384c922",
-      "sourceTitle": "恐龍化石的網誌",
-      "link": "https://cylikesreading.wordpress.com/2026/10/27/newsletter-02/",
-      "detailPath": "articles/c07c226f4e8cba29c59db4da.json"
-    },
-    {
-      "id": "c0e8677133c4a764867646fc",
-      "title": "嚇一跳的音效",
-      "summary": "我希望大家可以知道，那個你常在台灣各大 YouTube 頻道聽到的「嚇一跳的音效」，其實是從 1998 年 PlayStation 上的經典遊戲 Metal Gear Solid（潛龍諜影）截出來的──大概沒有任何一個 YouTuber 取得了 Konami 的官方授權。",
-      "image": null,
-      "publishedAt": "2026-10-27T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/metal-gear-solid-sfx",
-      "detailPath": "articles/c0e8677133c4a764867646fc.json"
-    },
-    {
-      "id": "819d7be2a7baa6d969118b3d",
-      "title": "Being Proactive",
-      "summary": "3-2-1: On being proactive, learning to cook, and optimizing for impact over fame Speed is rewarded in life. Decisive.",
-      "image": null,
-      "publishedAt": "2026-10-27T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/quotes/being-proactive",
-      "detailPath": "articles/819d7be2a7baa6d969118b3d.json"
-    },
-    {
-      "id": "84d8ea27e4361f4eb6d6c394",
-      "title": "2026-10-27 Hacker News Top Stories",
-      "summary": "2026-10-27 Hacker News Top Stories # Anthropic 申请以 ANT 在纳斯达克上市，2026 年上半年营收 162.86 亿美元，经营亏损 6.93 亿美元，不能将账面净亏损等同于现金消耗。 微软新自愿离职计划覆盖美、加、英、印部分团队、职级 70 及以下约 6 万员工，资格人数不等于最终离职人数。 Dolly Parton 的 Imagination Library 自 1995 年起向出生至五岁的儿童每月邮寄免费图书，现覆盖五国，参加仍取决于当地项目。 200 例皮肤病灶实验中，Inception v3 分类准确率约 62%，两款大模型约 42%，但 CNN 默认阈值下的危险病灶漏放更多。 FOSDEM 2027 的 Digital Dissident 分会场征集…",
-      "image": null,
-      "publishedAt": "2026-10-26T23:22:14Z",
-      "sourceId": "2777663b85d87309",
-      "sourceTitle": "Cns on SuperTechFans",
-      "link": "https://supertechfans.com/cn/post/2026-10-27-HackerNews/",
-      "detailPath": "articles/84d8ea27e4361f4eb6d6c394.json"
-    },
-    {
-      "id": "37774239dab8d53b4737966f",
-      "title": "在职场舒适地做自己",
-      "summary": "今天继续聊职场话题",
-      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/sol/nastuh-abootalebi-ehd8y1znfpk-unsplash.webp",
-      "publishedAt": "2026-10-26T15:00:00Z",
-      "sourceId": "05ada84875558017",
-      "sourceTitle": "So!azy",
-      "link": "https://blog.solazy.me/20261026/",
-      "detailPath": "articles/37774239dab8d53b4737966f.json"
-    },
-    {
-      "id": "a5913deb582a3ab1dbf525a5",
-      "title": "SFC 游戏：洛克人七代（Rockman 7）",
-      "summary": "（摘要）画面很漂亮，可惜倒数第二个 boss 太痛苦了",
-      "image": "https://springwood.me/sfc-rockman-7/cover.svg",
-      "publishedAt": "2026-10-26T15:00:00Z",
-      "sourceId": "85bf8b6cb2e22489",
-      "sourceTitle": "沉舟侧畔 Blog",
-      "link": "https://springwood.me/sfc-rockman-7/",
-      "detailPath": "articles/a5913deb582a3ab1dbf525a5.json"
     }
   ]
 }

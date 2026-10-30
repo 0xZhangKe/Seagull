@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "e953c15cc700eb3139e89dbd",
+      "title": "Windows 技巧分享（二）正版激活及一些配置",
+      "summary": "激活 我目前有2台 Windows 电脑，一台是高中自己配的4代i7台式，放在家里，还有一台就是我的日常主力笔记本， 神舟 G8-CU7NA 。 现在市售笔记本默认出厂的系统都是家庭版，作为一个专业开发者用户，家庭版不能满足需求，比如 Docker 必备的 Hyper-V 虚拟化技术等。而且很多厂商的出厂家庭版系统自带了一堆没用的软件和功能。 于是我就自行购买了真正的官方 Windows 10 专业版的正版， 绝对不是淘宝5元-20元左右的激活码 ，没有可比性。如果有小伙伴需要，也可以从博客的关于我联系到我。 我在安装时就指定了正版的秘钥，安装完即为正版激活。 如果安装时选择了我暂时没有秘钥，那就可以在系统的设置页面手动输入秘钥激活。 正版激活的系统，会在页面显示 与 Microsoft 账户关联的数字许可证…",
+      "image": "https://cdn.taurusxin.com/old-cdn/typecho/2021/03/21/windows-activate.png",
+      "publishedAt": "2021-03-21T13:26:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/windows-skill-02/",
+      "detailPath": "articles/e953c15cc700eb3139e89dbd.json"
+    },
+    {
+      "id": "d7dc2c3139cb7d9d348ce186",
+      "title": "Windows 技巧分享（一）安装篇",
+      "summary": "回忆 在介绍本系列文章之前，先谈一谈我对于 Windows 系统的了解。 对于 Windows 系统来说，我是一个忠实的老用户了，我记忆中，小学上电脑课的时候，那时我对于计算机知识是几乎为0的，但我记忆最清楚的就是那时候机房的操作系统是 Windows 2000 。那个界面，怎么说，就永远也不可能忘记的，直接上个图! 那时候我学习的第一个软件就是 Windows 的经典画图。 直到2010年，5年级，学校机房迎来一次重大升级，从原先的老奔腾，换成了酷睿2，系统也换成了那时候最流行的 Windows XP ，Windows 7 那时候还不流行，因为 Windows 7 是2009年发布的。记得那时候我是电教委员，每次上课前帮老师开机，开机后机房内一片绿色壁纸亮起。现在我知道，我的青春不会再回来了QWQ。 装系统…",
+      "image": "https://cdn.taurusxin.com/old-cdn/typecho/2021/03/21/windows2000.jpg",
+      "publishedAt": "2021-03-21T13:18:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/windows-skill-01/",
+      "detailPath": "articles/d7dc2c3139cb7d9d348ce186.json"
+    },
+    {
+      "id": "95b72dd08c1316eb2f9239a0",
+      "title": "联合部署 Mastodon 与 Synapse",
+      "summary": "Mastodon 基于 ActivityPub 协议提供去中心化的联邦宇宙微博服务，Synapse 基于 Matrix 协议提供去中心化的即时通信服务，通过 Mastodon 的 OAuth 2.0 机制让 Synapse 可以共享 Mastodon 的账户信息，进而实现共享域名和单点登录集成，是不是非常优雅呢。",
+      "image": null,
+      "publishedAt": "2021-03-20T03:59:00Z",
+      "sourceId": "06aa2ffd92b9d263",
+      "sourceTitle": "糖菓·部落",
+      "link": "https://candinya.com/posts/deploy-mastodon-with-synapse/",
+      "detailPath": "articles/95b72dd08c1316eb2f9239a0.json"
+    },
+    {
+      "id": "6e7e8eb53d2acd735ae7d845",
+      "title": "集群管理系统 Mesos 的设计原理 · NSDI '11",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2021-03-19T00:00:00Z",
+      "sourceId": "4d49716051922902",
+      "sourceTitle": "面向信仰编程 - Articles",
+      "link": "https://draven.co//papers-mesos",
+      "detailPath": "articles/6e7e8eb53d2acd735ae7d845.json"
+    },
+    {
       "id": "34b1ab3d573718da8b619f48",
       "title": "计算机网络通讯的【系统性】扫盲——从“基本概念”到“OSI 模型”",
       "summary": "近期老是在写政治博文，又有两个月左右没写技术博文了。某些技术型的读者，背地里肯定骂俺太懒。今天搞了一篇内容特别长，信息量特别多的。喜欢看技术博文的读者，可以慢慢消化。 ★本文的目标读者 今天这篇的标题是“扫盲”，也就是说：即使那些完全不懂 IT 领域，也不懂通讯领域的读者，依然能看懂（至少能看懂一部分）。为了做到这点，俺会尽量使用通俗的比喻，并适当加一些示意图。 另外，就算你已经比较了解网络通讯领域，本文中提到的某些部分，也可能是你所不知道的。也就是说：懂行的同学，看看此文，也会有帮助。 本文的标题特地强调了【系统性】——俺希望这篇教程能帮助读者对“计算机网络”这个领域进行系统性学习（何为“系统性学习”？请看 这篇教程 ） 为了做到【系统性】这个目的，这篇教程很长。俺开博12年，这篇的长度估计能排到前5名。建…",
@@ -615,50 +659,6 @@
       "sourceTitle": "面向信仰编程 - Articles",
       "link": "https://draven.co//papers-twine",
       "detailPath": "articles/7191e74d236b7fe200f7bff8.json"
-    },
-    {
-      "id": "e532bf9d902a3f6797dc42e4",
-      "title": "数据中心的电力超售 · OSDI '20",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2021-01-30T00:00:00Z",
-      "sourceId": "4d49716051922902",
-      "sourceTitle": "面向信仰编程 - Articles",
-      "link": "https://draven.co//papers-thunderbolt",
-      "detailPath": "articles/e532bf9d902a3f6797dc42e4.json"
-    },
-    {
-      "id": "6d71997e9bcd4f3c041249fc",
-      "title": "在动物园、植物园、水族馆散步才是正经事",
-      "summary": "疫情之后在一次工作 Happy Hour 上，同事们讨论「疫情之后最想做的事」是什么，轮到我，我答：「 最想去动物园 」。 我相信喜欢逛动物园、植物园、水族馆的人不止我一个。我曾经去亚特兰大，没干别的，就和别人逛了 动物园 和 水族馆 。洛杉矶我最爱的地方是 The Huntington Gardens ，一个汇集各种风格庭院的植物园。这也解释了为什么我在动森刚发售的时候夜以继日地玩——赶紧把博物馆给造起来。 互联网时代「博物学家」这种职业变得多余，但是一两个世纪前这些人发现并记录了世界上各式物种，把他们运回到人类聚居处，这辈子没有离开城市的人们得以见识自然之神奇。当然此等做法也带来了不少批评，博物学的潮流往往伴随着殖民主义、侵略行为以及随之而来的对自然环境的破坏、对动物的虐待。我不想否认这种指控，但是目前大…",
-      "image": null,
-      "publishedAt": "2021-01-29T08:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2021/01/29/live-zoo/",
-      "detailPath": "articles/6d71997e9bcd4f3c041249fc.json"
-    },
-    {
-      "id": "e8d88ea9f1333b95360983d6",
-      "title": "数据中心的容错时钟对时 · OSDI '20",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2021-01-29T00:00:00Z",
-      "sourceId": "4d49716051922902",
-      "sourceTitle": "面向信仰编程 - Articles",
-      "link": "https://draven.co//papers-sundial",
-      "detailPath": "articles/e8d88ea9f1333b95360983d6.json"
-    },
-    {
-      "id": "f8d8e4b5cd849cc816724900",
-      "title": "纳秒级高性能日志系统 · ATC '18",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2021-01-29T00:00:00Z",
-      "sourceId": "4d49716051922902",
-      "sourceTitle": "面向信仰编程 - Articles",
-      "link": "https://draven.co//papers-nanolog",
-      "detailPath": "articles/f8d8e4b5cd849cc816724900.json"
     }
   ]
 }

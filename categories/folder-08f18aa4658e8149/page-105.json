@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "09ca12683db38e847c4b27dd",
+      "title": "使用多进程提高搜索真题句子的速度",
+      "summary": "使用多进程提高搜索真题句子的速度 前言 在《 使用NLTK统计真题词频以及搜索真题句子 》这篇文章中，我简单介绍了我自己写的真题搜索方法，我所采用的思路是： for 每一个考纲词汇: for 每一套真题: for 真题里每一句话: 词型还原() if 词型还原的句子里有考纲词汇: 记录单词 记录句子 记录出处 用是可以用，但是速度比较慢，特别是当真题文件和考纲词汇变多的时候，那个速度怎一个慢字了得。 正好借着隔壁项目组需要我跑一个英语二真题句子出处的机会，我开始了对代码的重构。他们的需求不是做成一个Word文档供编辑挑选句子，而是做一个包含单词、句子和出处的表格。 在Koni老师的帮助下，我了解到从10年前开始，大数据开发一直在使用一个模型叫做MapReduce，通过把大量任务分发执行，然后再合并每一个任务的…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:25:52Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-multiprocessing-to-boost-efficiency/",
+      "detailPath": "articles/09ca12683db38e847c4b27dd.json"
+    },
+    {
+      "id": "e58c72496fdbbf7d6ee122e1",
+      "title": "使用NLTK统计真题词频以及搜索真题句子",
+      "summary": "使用NLTK统计真题词频以及搜索真题句子 前言 作为一个教研和英语编辑，统计真题词频和搜题是刚需中的刚需。 虽然这个需求可以通过使用企业内部的数据库，或是自行去类似 组卷网 这样的网站解决，但是有的时候还是自己做会比较好，不仅因为自己操作有很高的自由度（如绘制词云、提取关键词、一键撰稿、筛选高频词等），更是因为数据都从自己手中过能从宏观角度加深对题目的认识。 自己统计词频所需要的东西很简单： 真题（为方便读取最好是txt格式的） 考纲词表 下面是代码讲解和示例： 统计词频 首先导入需要的包。 NLTK 可以说是民用NLP界的最强武器了。 import nltk from nltk.probability import FreqDist from nltk.corpus import wordnet impor…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:25:50Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-nltk-to-count-word-freq-and-sent-origin/",
+      "detailPath": "articles/e58c72496fdbbf7d6ee122e1.json"
+    },
+    {
+      "id": "dc6596b3cf32f0dd8bce21b4",
+      "title": "200篇高考文章选60篇，怎么选覆盖的考纲词汇最多？",
+      "summary": "200篇高考文章选60篇，怎么选覆盖的考纲词汇最多？ 背景 最近出版团队设想了一款新的出版产品，用一句话概括是「60篇高考文章掌握高考核心2000词」。如果这款产品真的要做出来的话，那必须要解决两个核心问题： 哪2000词？ 哪60篇文章？ 第一个问题相对比较好解决，使用之前写好的词频统计脚本就能得到一个高考真题的高频词列表，结合实际做题经验和用户测试，即可在高考3500词考纲中锁定这2000个词。 第二个问题就比较复杂了。60篇文章完全覆盖2000个单词应该不太可能，但是怎么挑选这60篇文章才能覆盖最多的考纲词呢？这个听起来应该不是教研手动统计能解决的问题，于是我开始寻找能够解决这个问题的算法。 第一次尝试：动态规划 我第一时间想到的是大学时了解过的动态规划（ Dynamic Programming ），一…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:25:34Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/pick-60-articles-from-a-huge-pool/",
+      "detailPath": "articles/dc6596b3cf32f0dd8bce21b4.json"
+    },
+    {
+      "id": "363014164fceb0a7e5bccd46",
+      "title": "从石墨表格到Excel，再到石墨表格",
+      "summary": "从石墨表格到Excel，再到石墨表格 背景 这一个半月因为业务需要，我承担起了数据和内容管理的责任，时常要把内容从后台或是数据库导出来，做成一张表格并粘贴到石墨表格供多人协作，或是将石墨表格的内容拆成不同样式的子表给编辑实习生和教研操作，或是根据字表的内容再次批量上传到后台。 在这个过程中，我需要频繁地对表格进行处理，算是理解了「一切to-B软件的尽头是Excel表格」这句话，今天就来记录一下这个过程中学到的各种操作。 经验 1. 字典大法好 假设我有一张大而全的表A，我有一些单词，我需要根据这些单词在表A里找到他们的音标和释义，整理到表B。 以往做这个操作时，我会实时地去读取表A的内容，然后写入到新的DataFrame，如 df['音标'].loc[df['释义'] == 单词].values[0] ，但是…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:24:02Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/from-shimo-to-excel-to-shimo/",
+      "detailPath": "articles/363014164fceb0a7e5bccd46.json"
+    },
+    {
       "id": "ac48d08b4d32a8bd938fe393",
       "title": "背单词软件们的词根词缀问题",
       "summary": "背单词软件们的词根词缀问题 背景 背单词软件们在准备数据的时候，往往会同时参考权威字典和友商的内容。但是网络上的内容鱼龙混杂，难免出现数据互相借鉴，甚至互相污染的情况。 judicial A软件： judic-判断 + -ial表形容词 -> 法官 -> 司法的 B软件： judic判断 + ial形容词后缀 → 法官 → judicial司法的 C软件：judic-【拉丁】决定；判断；解释法律的权力 + -ial【拉丁】与……相关的；关于 词源字典 ： iudex\"a judge\" = ius\"right, law\" + dicere\"to say\" + ial 当然，你可以说各家软件只是选择没有再继续拆分judge，因为进一步拆分很可能阻碍学生学习。但是巧合的是，很多显而易见可拆且英文词源字典有数据的单词…",
@@ -615,50 +659,6 @@
       "sourceTitle": "蒙奇日记",
       "link": "https://luffy.cc/a/as-mad-as-a-hatter",
       "detailPath": "articles/50003642dd930d7bdbb8334d.json"
-    },
-    {
-      "id": "dd3404e41736e37170ed3dc7",
-      "title": "Android Perfetto 系列目录",
-      "summary": "随着 Google 宣布 Systrace 工具停更，推出 Perfetto 工具，Perfetto 在我的日常工作中已经基本能取代 Systrace 工具。同时 Oppo、Vivo 等大厂也已经把 Systrace 切换成了 Perfetto，许多新接触 Android 性能优化的小伙伴对于 Perfetto 那眼花缭乱的界面和复杂的功能感觉头疼，希望我能把之前的那些 Systrace 文章使用 Perfetto 来呈现。",
-      "image": null,
-      "publishedAt": "2024-03-27T14:29:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/03/27/Android-Perfetto-101/",
-      "detailPath": "articles/dd3404e41736e37170ed3dc7.json"
-    },
-    {
-      "id": "56bee04015db30281f32e421",
-      "title": "电台：2023年度游戏",
-      "summary": "本期录制于 1 月 27 日。感谢三日月和逢坂润的参与；特别感谢主播长的剪辑、绘画与时间轴。 在线收听 📢：也可以用 AntennaPod 或苹果播客订阅本播客 RSS 地址（ https://emptystack.top/podcast ）来收听！ function seek(time) { const player = document.getElementById('player') player.play() player.currentTime = time } 你的浏览器不支持嵌入音频，但你可以 下载 下来听。 视频内容：四个朋友讲自己的2023年度游戏 01:06 《 赛博朋克 2077》 05:04 《 FIFA》 21:53 《 Splatoon 3》 43:28 《 TUNIC》 65:2…",
-      "image": null,
-      "publishedAt": "2024-03-25T20:50:41Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/goty-2023/",
-      "detailPath": "articles/56bee04015db30281f32e421.json"
-    },
-    {
-      "id": "50ed26f60b91634d3fca9fb5",
-      "title": "二零二四 | 让我慢慢来",
-      "summary": "最近我的情绪和心境就像波动的正弦函数，时而跳到波峰，觉得自己很棒很厉害，未来形势一片大好；时而转到波谷，对一切 […] The post 二零二四 | 让我慢慢来 appeared first on * songs about turquoise * .",
-      "image": null,
-      "publishedAt": "2024-03-25T20:36:08Z",
-      "sourceId": "1989b48a17ab83c5",
-      "sourceTitle": "songs about turquoise",
-      "link": "https://turquoise.one/2024-take-my-time/",
-      "detailPath": "articles/50ed26f60b91634d3fca9fb5.json"
-    },
-    {
-      "id": "5610157b4fc65f6ad8c1d64b",
-      "title": "加入十年之约",
-      "summary": "昨晚给网站申请了 十年之约 ，很意外的今天上午就收到了通过的邮件，看公告以为要等上很久呢。 加入 十年之约 之后，不仅可以让网站获得更多的曝光，更能激励人坚持。正如十年之约官网所说的那样，十年网站不关闭，保持更新和活力。 十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！ 我始终认为坚持做一件事，直至十年以上，是一件很酷的事情。 我的网站从2020年末开始建立，中间经过无数次的折腾，换服务器、换域名、还有各种数不清的主题，每年更新的内容却寥寥无几。 或许是把时间都浪费在无意义的事情上，又或许是自己太无聊，以至于没什么可写的东西。 但是今年年初，意外的淘到了luffy.cc这个域名。作为一个追了十几年海贼王的人来说，我无法拒绝。于是重新布置主题，搞定备案。 其实网站本来不叫这个名字，而是叫做「…",
-      "image": null,
-      "publishedAt": "2024-03-25T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/join-the-foreverblog",
-      "detailPath": "articles/5610157b4fc65f6ad8c1d64b.json"
     }
   ]
 }

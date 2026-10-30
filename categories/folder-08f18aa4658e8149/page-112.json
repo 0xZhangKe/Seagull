@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "a661fe655b56d5dc53abd045",
+      "title": "2023年3月小结",
+      "summary": "开始的最好时间是现在 中文博客开张才一周，起初还在纠结：到底是写每月小结还是每周小结？还是不写总结，想到什么写什么？ 后来索性懒得想了，这样下去只会陷入无尽的计划陷阱之中 (get organized trap，我自创的)。",
+      "image": "https://thirdshire.com/march-2023-recap/glen-carrie-5eyAJMTb6mM-unsplash.webp",
+      "publishedAt": "2023-03-29T16:27:23Z",
+      "sourceId": "09c2f0f0946a1f21",
+      "sourceTitle": "第三夏尔 | Third Shire",
+      "link": "https://thirdshire.com/march-2023-recap/",
+      "detailPath": "articles/a661fe655b56d5dc53abd045.json"
+    },
+    {
+      "id": "d20355a87c383350eaa66df1",
+      "title": "使用Midjourney生成的图片",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2023-03-29T07:03:17Z",
+      "sourceId": "8e17c0739728a2f3",
+      "sourceTitle": "思宁::SNHERE",
+      "link": "https://www.snhere.com/%e4%bd%bf%e7%94%a8midjourney/",
+      "detailPath": "articles/d20355a87c383350eaa66df1.json"
+    },
+    {
+      "id": "cdb85c78474ed43c2b989385",
+      "title": "写给 Android 开发者的系统基础知识科普",
+      "summary": "与我以往的风格不同，本文为科普类文章，因此不会涉及到太过高深难懂的知识。但这些内容可能 Android 应用层开发者甚至部分 framework 层开发者都不了解，因此仍旧高能预警。 另外广东这两天好冷啊，大家注意保暖~",
+      "image": null,
+      "publishedAt": "2023-03-28T08:03:06Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2023/03/28/system-foundation-for-android-devs/",
+      "detailPath": "articles/cdb85c78474ed43c2b989385.json"
+    },
+    {
+      "id": "ab9de1ca116880bc345f7c4b",
+      "title": "在字体层面处理标点挤压",
+      "summary": "我之前有提到这个博客的标点挤压是用 Pandoc filter + CSS 实现的。 那种方法表面看起来不错，但会在 HTML 上留下很多 <span>——就像掀起一张美丽的地毯，发现下面全是小蜘蛛。呕，太可怕了。那有没有不包含小蜘蛛的方法？有：直接写 OpenType 特性。 做法 写 OpenType 特性最方便的途径是编写 OpenType Feature File ——它的语法没有名字，但一般人管它叫 fea——然后用 fontTools 把特性编译进字体文件里： vim features.fea # 编辑你想要的特性 fonttools feaLib -o \" $OUTPUT_FONT \" features.fea \" $INPUT_FONT \" 在 fea 中可以用字的名字指代字，而不同字体的同一…",
+      "image": null,
+      "publishedAt": "2023-03-27T22:17:01Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/chws-fea/",
+      "detailPath": "articles/ab9de1ca116880bc345f7c4b.json"
+    },
+    {
       "id": "d0c750712a9c69ecfd4a8417",
       "title": "AI就像幽灵",
       "summary": "1 在ChatGPT不断刮起旋风的当下，我竟然没有去体验过AI的“神奇”或者“可怕”。 但刚刚在Notion里面，我看到了新功能Notion AI。早在去年，Notion就已推出这一功能的内测，网友抱怨要排队等待才能体验。如今，Notion AI完成了内测，已经面向所有用户开放使用。 Notion AI的底层技术和ChatGPT一样，都源于Open AI，这家公司被微软投资，微软的搜索引擎Bing和Office工具也都陆续接入AI功能。一时间风头无两，对比之下，百度的“文心一言”显得粗糙简陋。 我用Notion AI简单写了一个博客，输入指令“write a blog about TikTok”。随后，键入符自动轮动，一个个英文单词出现在空白的页面上。很快，所有的文字都出现了。文档名为《The Rise of…",
@@ -615,50 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2023/01/16/bike-life/",
       "detailPath": "articles/8d8248cc496d85dbee125ce5.json"
-    },
-    {
-      "id": "b77c3fb9d270145779c3da6b",
-      "title": "本博搭建记录 (Hugo + GitHub Pages)",
-      "summary": "这可不是一个技术博客呢，别误会了！",
-      "image": null,
-      "publishedAt": "2023-01-16T05:00:09Z",
-      "sourceId": "84f2f6a0935bda85",
-      "sourceTitle": "长夏无事",
-      "link": "https://changxiawushi.github.io/posts/blog-setup/",
-      "detailPath": "articles/b77c3fb9d270145779c3da6b.json"
-    },
-    {
-      "id": "58d17cf15a7f7ae86ba4ea63",
-      "title": "2022 年终总结",
-      "summary": "事实就是，说是打算年终总结，但当我真的决心打下这一行字的时候，我竟不知道该从何讲起。",
-      "image": null,
-      "publishedAt": "2023-01-16T02:05:25Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/2022-in-a-nutshell/",
-      "detailPath": "articles/58d17cf15a7f7ae86ba4ea63.json"
-    },
-    {
-      "id": "f8d6e470646dda6b6106f78f",
-      "title": "玩雪迎新年",
-      "summary": "周末带着大娃娃和小娃娃，跑到圣露庄园去玩了半天雪，城里风和日丽，郊区寒风刺骨。不过开心是真得开心。嘟嘟在车上，还对聊天内容做了总结： 你比一米五高，我比一米五矮。 他爱吃包子皮，我爱吃包子馅。 顺便测试一下 Hugo 主题的图片横排： Photo by FujiFilm X-T1 Photo by FujiFilm X-T1 晚上去了嘟嘟比较喜欢的失重餐厅消费了一次，还在蓝港买买买，欢乐迎新年。",
-      "image": "https://static.elizen.me//img/202301161515834.JPG",
-      "publishedAt": "2023-01-16T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2023/01/play-with-snow/",
-      "detailPath": "articles/f8d6e470646dda6b6106f78f.json"
-    },
-    {
-      "id": "ae2d7b89bc7c4499b58a97ff",
-      "title": "Meta Keywords：是什么、为什么不",
-      "summary": "形如 的 Meta Keywords 是 Meta 标签的一种，仅存在于 HTML 代码中、不会在浏览器中展示。过去，Meta Keywords 标签被用于告诉搜索引擎爬虫关于网页的信息。但是，现在搜索引擎还尊重 Meta Keywords 么？Meta Keywords 是否仍然是 SEO 的最佳实践？",
-      "image": "https://img.skk.moe/blog/t2023/say-no-to-meta-keywords.png",
-      "publishedAt": "2023-01-15T12:47:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/say-no-to-meta-keywords/",
-      "detailPath": "articles/ae2d7b89bc7c4499b58a97ff.json"
     }
   ]
 }

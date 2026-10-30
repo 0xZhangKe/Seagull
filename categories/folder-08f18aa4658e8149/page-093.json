@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "1f37286baf67d6d702fbe937",
+      "title": "聲音沙啞",
+      "summary": "每次開直播的時候，我總是很容易說話太過用力，尤其是在直播最開始的時候（可能是我想要營造稍微高一點的能量吧）。結果就是，在大約半小時到一小時之後，我的聲音就會開始沙啞，讓接下來的直播變得有點辛苦。",
+      "image": null,
+      "publishedAt": "2024-12-01T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/voice-strain",
+      "detailPath": "articles/1f37286baf67d6d702fbe937.json"
+    },
+    {
+      "id": "2213ff1c1a5b8a5745a9b4a5",
+      "title": "Java方法的传参原理",
+      "summary": "Java方法的参数传递机制-基本类型 值传递 值传递是什么 在传输实参给方法的形参的时候， 传输的是实参变量中存储的副本 说人话，把实参里面的东西赋值了一部分扔了给形参 值传递具体理解案例 public class prameter { public static void main(String[] args) { int a = 10; //定义一个int变量a赋值为10 change(a); //调用change方法 System.out.println(\"main\" + a); //打印mian a中的值 } //这里开始写方法 public static void change(int a){ System.out.println(\"change1\" + a); //打印方法中a的值 a = 20;…",
+      "image": null,
+      "publishedAt": "2024-11-30T20:14:00Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/95/",
+      "detailPath": "articles/2213ff1c1a5b8a5745a9b4a5.json"
+    },
+    {
       "id": "16055e2dfd386a3eea85ee75",
       "title": "Java小程序之两数计算器",
       "summary": "这个案例是我练习方法的使用时做的，应该能有更好的方式实现这个功能。 代码如下 import org.w3c.dom.ls.LSOutput; import java.util.Scanner; public class Basic { public static void main(String[] args) { for (; ; ) { System.out.println(\"欢迎使用！\"); System.out.println(\"按键1 2 3 4分别为加 减 乘 除，输入后请回车\"); Scanner startSc = new Scanner(System.in); int selectNumber = startSc.nextInt(); if(selectNumber >4) { System…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/too-much-music",
       "detailPath": "articles/869e6824e247a96fbbd808e3.json"
-    },
-    {
-      "id": "ef828e681afc0f4f5af0b347",
-      "title": "九壞保送",
-      "summary": "最近你有在看世界棒球 12 強賽，幫中華隊加油嗎？",
-      "image": null,
-      "publishedAt": "2024-11-20T14:32:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/base-on-balls",
-      "detailPath": "articles/ef828e681afc0f4f5af0b347.json"
-    },
-    {
-      "id": "95a4583a8bf19e06057e150b",
-      "title": "生气的猫像极了小女人",
-      "summary": "狸花猫很邪性，智商高，性格又野，独立性强，很难养熟。 咪咪打小就很有性格，过于活泼，精力旺盛，甚至有点“超雄”，经常对人张牙舞爪，还多次咬伤宝宝。我趁着它小，可塑性还强，多次抡起老拳，爆锤它的头。话说猫科动物的脑壳真是硬，这几拳抡到人脑袋上，人也得蒙，可咪咪愣是没丁点事儿。也得亏从小就被我暴力压制，些许压抑了些野性，不然现在场面将更加难以收拾。 狸花猫还很聪明。常在抖音上刷到各路会自己蹦起来开门的狸花猫大神，当时还只当个“摆录”段子看，结果没想到，咪咪竟也无师自通，学会了开门。 最开始还只是会开卧室的木门，后来它趁人开关大门时不注意，自己个儿溜到楼道上逛哒了几圈，大约是尝到了自由的滋味儿，从此便一发不可收拾。先还只是趁人开关门不备时，猫着腰一个箭步冲出去，后来琢磨出来，原来防盗门的开法跟卧室木门一样，就常常趁…",
-      "image": null,
-      "publishedAt": "2024-11-20T14:07:18Z",
-      "sourceId": "c7356b172af43f7f",
-      "sourceTitle": "刑辩人在路上",
-      "link": "https://xingbianren.cn/post/278.html",
-      "detailPath": "articles/95a4583a8bf19e06057e150b.json"
     }
   ]
 }

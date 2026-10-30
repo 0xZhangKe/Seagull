@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "c54ffb50a483d1a925ed0852",
+      "title": "Hugo 的頁面 Type",
+      "summary": "新版的 Hugo 對某些定義變得很嚴格，只要條件不滿足，就不會渲染、生成到 Public 中。 這次更新，除了 code 語法不定義會讓我主題無法渲染 ，而 歷史上的今天 因爲沒定義頁面 type，也造成無法正常渲染。 原始檔案與路徑 # 頁面位置在： content/on-this-day.md title: \"歷史上的今天\" layout: \"on-this-day\" 排版位置在： themes/classic/layouts/page/on-this-day.html 這次問題就就在於，以前的 Hugo 會依序在好幾個地方尋找指定的 layout: \"on-this-day\" ，而且 Eddie 很久之前就是有研究過官方 docs，結論是好幾個地方可以放，所以 Eddie 沒去記憶，就隨便丟，讓 hug…",
+      "image": null,
+      "publishedAt": "2026-01-03T18:26:50Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/hugo-type/",
+      "detailPath": "articles/c54ffb50a483d1a925ed0852.json"
+    },
+    {
+      "id": "8da6464d37e8c7098493fbff",
+      "title": "Hugo 更新災難 SOS",
+      "summary": "前言 # 架設官網 時，一開始用了一個很複雜的主題，必須要最新的 hugo 版本，裝完之後發現太麻煩了，還要用到 docker，就換了一個簡單一點的的主題。 回頭到部落格發文 # 夭壽，突然發現過往文章 css 格式跑掉了： 查看 git 後發現，原始檔案根本都沒動，而 public 有幾百個檔案有變動。 查看後發現原始文章的 .md 若有用兩組「```」包起來，文字就會變得無法閱讀。 最後聯想到應該是 hugo 版本的問題。 弄了幾小時後… # 一直以爲是渲染失敗的問題，查了很久，最後發現如果有對「```」定義語言 1 ，就能正常渲染成功。 而 Eddie 早期的文章都沒定義，於是就出事了！ 把文章的 ``` 全部加上 text # 也試過在 config 調整設定，還是無法，最後決定把所有文章都加上 te…",
+      "image": "https://eddielv.com/musings/hugo-update-sos/weird-format.png",
+      "publishedAt": "2026-01-03T17:33:51Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/hugo-update-sos/",
+      "detailPath": "articles/8da6464d37e8c7098493fbff.json"
+    },
+    {
       "id": "82e4b9b4657f275ef0b754d6",
       "title": "读书笔记——阿特伍德自传",
       "summary": "刚想说今年阿特伍德出了新书，发现已经是去年的事了。2025年阿特伍德出了新书，是她的第一本自传，得知消息后赶紧在图书馆预约系统里排上队。11月新书出版后没等太久就送到家附近的图书馆了。借来翻开一读，发现好看得停不下来！ 其实我之前只读过 The Handmaid's Tale，去看过一次她和 Steven Paikin 的现场对谈，对她的文字说不上熟悉，所以这次读这本书，感觉是第一次透过文字好好认识她。她的写作很有节奏感，非常幽默，而且很简洁，一句废话都没有，真不愧是加拿大国宝啊。 书到期了，今天要还回去，读了三分之一，时间线上大致是从她父母的相识讲到她刚去哈佛读博士。很多事情让我印象深刻，比如她童年时期每年的夏天都有几个月住在魁省北部的森林里，因此和自然非常的亲近。她念大学的时候暑假的工作是在夏令营当领队…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/digipad8/",
       "detailPath": "articles/dbb1c6ccca05609e74b6fcd7.json"
-    },
-    {
-      "id": "01dd690909c2a25943e3b6d3",
-      "title": "2025年终总结",
-      "summary": "前言 又一年过去了呢，为了保持定期反思和写记录的习惯，我得好好复盘复盘这一年学到的东西。 做了什么 关于我这一年里做了什么，其实年初做的事情我也记不太清楚了，不过今年做的大概的事情列在下面吧： - 更新和配置操作系统与软件工作流。 - 尝试和折腾新的软件使用。 - 学习新的编程语言和程序哲学。 - 反思人生。 - 搬家。 - 立了几个不切实际的程序项目，做了一段时间后弃坑。 - 更新思维方式（即大脑的OS）。 - 使用RPG Maker及Godot开发游戏。 - 游戏项目迭代了10多次，依然没能完成迭代。 - 反复咀嚼和反思个人理念、政治社会等思考。 - 为Godot开发工具和库。 - 搭建个人NAS服务，搭建博客网站。 - 接触并搭建misskey，matrix。 - 画了几幅新的画。 - 造了几十个新的词…",
-      "image": null,
-      "publishedAt": "2025-12-30T19:30:22Z",
-      "sourceId": "716f999b030a6a78",
-      "sourceTitle": "明琪的日记",
-      "link": "https://yumieko.kikowiwu.com/posts/6d9fd7e4-cf7f-4f68-bc6c-d559062ad637.html",
-      "detailPath": "articles/01dd690909c2a25943e3b6d3.json"
-    },
-    {
-      "id": "a3be492c1e163c8f499ad8d9",
-      "title": "工具人養成手冊",
-      "summary": "如果你想成爲工具人，你一定要做到： 努力解決對方困擾 向你求助你就鼎力相助！讓對方覺得自己超有價值！而且還能增加自己跟對方接觸、碰面的機會！ 對方沒有提出需求，主動幫解決對方需求 雖然對方沒說，也知道他一定有這個困擾，就讓我來解決吧！這樣對方就會更需要、依賴自己！ 對方開心最重要 雖然對方可能還不喜歡自己，但是讓對方沒有煩惱、讓對方開心，自己就開心了！ 對方的訊息很重要，要慎重對待、快速回覆 對方找自己一定是有事情，得趕緊回覆不要讓對方焦急等待。 對方的視角與成本 # 有什麼困擾，找這個人，他會秒回訊息！ 上次拖把壞了跟他借了拖把，除了親自送來以外，還順便把地給拖了！後來知道我固定每週拖一次地，就主動每週過來幫我拖地，而且他心甘情願，做得很開心。 我什麼都不用付出，對方就會馬首是瞻，這都是他自己要做的，我並沒…",
-      "image": null,
-      "publishedAt": "2025-12-30T19:03:37Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/tool-man/",
-      "detailPath": "articles/a3be492c1e163c8f499ad8d9.json"
     }
   ]
 }

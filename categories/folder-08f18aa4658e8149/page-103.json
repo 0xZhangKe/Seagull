@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "5ac9b74e05f7cb08629e11aa",
+      "title": "IBM 全栈开发【10】：微服务和无服务器",
+      "summary": "本文是 IBM 全栈开发课程的第十篇学习笔记，深入探讨了微服务与无服务器这两种现代云原生架构。笔记首先介绍了构建可扩展应用的十二要素方法论，并详细对比了单体、SOA与微服务的架构差异，涵盖了常见的设计模式与反模式。接着，文章转向无服务器计算，解释了其核心理念（FaaS）、优势与挑战。最后，笔记通过一个完整的流程，演示了如何为微服务构建 Docker 容器镜像，并使用 IBM Cloud Code Engine 这一全托管平台，轻松地部署和更新应用。这为理解和实践现代分布式系统的构建与部署提供了全面的理论指导。",
+      "image": null,
+      "publishedAt": "2024-06-11T02:32:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/52000.html",
+      "detailPath": "articles/5ac9b74e05f7cb08629e11aa.json"
+    },
+    {
+      "id": "c8a15c4925601044f6c9a02f",
+      "title": "Jingjing-speak (晶晶體)",
+      "summary": "In modern Taiwanese culture, there is a ‘pretentious rich people’ stereotype which is characterised by shoehorning as many English words into one’s still apparently Mandarin-structured speech ( 晶晶體 ). From a Westerner’s perspective, perhaps you can imagine someone speaking English but with some words randomly replaced with Latin or French equivalents. Just…",
+      "image": null,
+      "publishedAt": "2024-06-11T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/pretentious-english/",
+      "detailPath": "articles/c8a15c4925601044f6c9a02f.json"
+    },
+    {
       "id": "cb665f3dc4c455df672cee15",
       "title": "亲密关系札记 I：我是一块情绪忍耐的海绵",
       "summary": "我不奢求改变，我更倾向于选择。",
@@ -637,28 +659,6 @@
       "sourceTitle": "蒙奇日记",
       "link": "https://luffy.cc/a/my-mom",
       "detailPath": "articles/6a55af98761f203826801ce5.json"
-    },
-    {
-      "id": "ff923f9e559d02876a7fda0e",
-      "title": "[Docker容器安全3]Docker文件存储 & 挂载宿主机 procfs 容器逃逸",
-      "summary": "Docker文件存储背景知识 Docker 镜像 Docker 镜像是一个由多个层（layers）组成的只读模板。这些层堆叠在一起，构成了一个完整的文件系统，镜像可以用来创建容器。 层（Layer） 每个层通常对应于 Dockerfile 中的一条指令（如 FROM、COPY、RUN 等）。这些层是只读的，并且通过叠加技术（union file system）组合在一起，形成了镜像的最终内容。 层的堆叠和镜像 只读层：这些层是只读的，并且是镜像的一部分。每个层包含了与前一层的差异部分。这些层共同构成了镜像的文件系统。 可写层：当容器启动时，会在镜像的所有只读层之上添加一个新的可写层，这一层是容器专有的，存储运行容器时的所有变更。 每个容器都有其自己的可写容器层，并且所有更改都存储在该容器层中，所以多个容器可以…",
-      "image": "https://skyblu3519.github.io/post-images/1715441777002.png",
-      "publishedAt": "2024-05-11T15:35:31Z",
-      "sourceId": "4f5bf353ca5bd538",
-      "sourceTitle": "skkyblu3",
-      "link": "https://skyblu3519.github.io/post/docker-rong-qi-an-quan-3docker-wen-jian-cun-chu-and-gua-zai-su-zhu-ji-procfs-rong-qi-tao-yi/",
-      "detailPath": "articles/ff923f9e559d02876a7fda0e.json"
-    },
-    {
-      "id": "86fe1769a755d63f27b1e828",
-      "title": "人生海海",
-      "summary": "调休不想干活，琢磨着看本书来打发时间，于是就看到了这本早就躺在书架上的《人生海海》。 人生海海，山山而川，不过尔尔。 一口气读完，整体非常流畅。前半部分风趣幽默，后半部分则苦难当歌。全书以“我”的方式，向读者娓娓道来着上校曲折的一生，以至于在看完最后一页时，情不自禁的流下了眼泪。不知这些眼泪，到底是因为感动，还是因为解脱。 看这本书的时候让我想到了余华老师的《活着》，都是描述乡土与苦难，但这书总给我一种奇怪的感觉，好像是书中多了些悬疑，好像是上校并没有福贵那般坚韧，又好像是从文中读出了一些鸡汤味。 “人生海海”是一句闽南语，书中也给出了相应的解释，意为人生像大海一样变幻不定、起落浮沉，但总还是要好好地活下去；既然每个人都跑不掉逃不开，那不如去爱上生活；人生海海，敢死不叫勇气，活着才需要勇气；人要学会放下，放下…",
-      "image": null,
-      "publishedAt": "2024-05-10T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/ren-sheng-hai-hai",
-      "detailPath": "articles/86fe1769a755d63f27b1e828.json"
     }
   ]
 }

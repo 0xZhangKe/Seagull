@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "a3dd62a5a563148269419402",
+      "title": "自新世界 #0x11：入職第一周",
+      "summary": "前端之猫，不事前端。",
+      "image": null,
+      "publishedAt": "2025-10-18T17:11:46Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/weekly/0x11/",
+      "detailPath": "articles/a3dd62a5a563148269419402.json"
+    },
+    {
+      "id": "6ef071ad981a68654cd11352",
+      "title": "國小運動會，無線電災難的一天。",
+      "summary": "Eddie 這次帶隊到國小架設音響，架設過程都很順利，對完音量表頭、測試麥克風，突然地，雜訊狂炸！ 麥克風無線接收器一共有 8 組，每一組都狂閃警示燈，再次確認天線分配器與強波天線都有正確連接後，驚覺大事不妙，附近有非常強的無線訊號干擾，我也照常規的 SOP 處理了，最後的結果是「可以沒有雜訊，但會時不時突然有 1～2 秒沒聲音，隨後馬上恢復正常！」 當下的 Eddie 真的無能爲力，甚至已經請當天搭班的夥伴，把天線儘量移動、擺放到接近麥克風的位置了，正常來說我們的天線應該要能輕鬆隆重整個操場才對。 訊號來源 # 對面就是消防局，消防局會使用無線電來通訊，這是原因之一。 收器材時，我才發現附近也有其他活動，所以又多了一個無線干擾來源！ 所以我們大家互相打架！ 運動會是只要放音樂的日子，但我被無線麥克風搞到感覺…",
+      "image": null,
+      "publishedAt": "2025-10-18T06:25:42Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/sports-day-wireless-disaster/",
+      "detailPath": "articles/6ef071ad981a68654cd11352.json"
+    },
+    {
       "id": "4404f79f64b4ce8b8c6755fe",
       "title": "為什麼不做 App？",
       "summary": "好和弦的官方網站上，現在已經有相當多極簡又好用的小工具，像是節拍器、調音器、和弦代號查詢器、音樂辭典、音程計算器、靈感產生器、節奏產生器、鍵盤顯示器等等。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Domon",
       "link": "https://www.domon.cn/diu-shi-de-biao-da-yu/",
       "detailPath": "articles/94aae6cf7f0770049372a17d.json"
-    },
-    {
-      "id": "089d0c8219db370872f5f461",
-      "title": "How I made the homepage here a feed of all posts in full text",
-      "summary": "After installing the hugo-bearblog theme, I overwrote the index.html file in the theme layout by creating a new index.html file in the layouts folder of my main Hugo site directory that contains the following code, which is adapted from single.html from the layouts/_default folder from the original theme repository. {{ define \"main\" }} {{ $posts := where .S…",
-      "image": null,
-      "publishedAt": "2025-10-12T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/full-text-feed/",
-      "detailPath": "articles/089d0c8219db370872f5f461.json"
-    },
-    {
-      "id": "e2f50385d0b05ad93cfe8e77",
-      "title": "廣東話歇後語",
-      "summary": "老爸之前分享給我的一張列有一些有趣廣東話歇後語的圖文。 這是他在 Facebook 一時撿到的轉載圖，而原始圖片 1 也無法從網上搜尋到了（所以說不要把一切都鎖在 Facebook 裡）。此外，該圖片似乎是一系列圖文中的其中一張，但目前我也無法在網上找到其餘的圖文…… 不過這個不是重點，重點是我覺得廣東話歇後語背後的梗某種程度上比華語歇後語還有趣，例如「墳墓前彈琴——嘈 2 死人」的梗在於後半段可以被雙重解讀：「 嘈死 人」和「嘈 死人 」，而這種走 歧義 路線的梗在華語歇後語似乎不常見。 說到廣東話歇後語， 「粵典」網站上的一篇文 也有收錄多達 140 個的相關例子。 如果 轉載者 沒說錯的話，來源應該是 「舊時香港」Facebook 專頁 。 ↩︎ 粵語「 嘈 」即對應華語的「吵」。 ↩︎",
-      "image": "https://microblog.ttheng.com/blog/487907719_10162543838107748_2935187994836798884_n.jpg",
-      "publishedAt": "2025-10-12T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/cantonese-proverbs/",
-      "detailPath": "articles/e2f50385d0b05ad93cfe8e77.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "4524d49e44c21a3f278c6129",
+      "title": "兩個牙醫",
+      "summary": "一個會痛的牙醫和一個不會痛的牙醫，我們該怎麼選？",
+      "image": null,
+      "publishedAt": "2026-05-25T05:03:59Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/dentist",
+      "detailPath": "articles/4524d49e44c21a3f278c6129.json"
+    },
+    {
+      "id": "00a20037e5570141388b02bd",
+      "title": "观 *Obsession*",
+      "summary": "五月了，夏天到了，是时候品尝一些恐怖片了。",
+      "image": null,
+      "publishedAt": "2026-05-25T04:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/8513.html",
+      "detailPath": "articles/00a20037e5570141388b02bd.json"
+    },
+    {
+      "id": "f25102ee58b03a083019c4a8",
+      "title": "笔记：把新域名应用到 Blog 和 Email 上",
+      "summary": "raychase.net 这个域名是好些年前申请的，最近申请了个更适合作为我个人标签的 rayxiong.me ，简单记录下我把新域名应用到blog（新、老域名都可以访问blog），以及创建并使用新域名的邮件地址收发邮件的操作。 Blog 配置 在Squarespace上面配置好DNS的两个A记录： 其中@表示不带任何前缀，它和www前缀这样被视为两条独立的记录。没法再简单了，不过需要等几个钟头生效。 在网站的Nginx配置文件上面添加： server_name www.rayxiong.me rayxiong.me; 以及： if ($host = rayxiong.me) { return 301 https://$host$request_uri; } if ($host = www.rayxiong.…",
+      "image": "https://rayxiong.me/wp-content/uploads/2026/05/image-11.png",
+      "publishedAt": "2026-05-25T00:04:10Z",
+      "sourceId": "ed6c79eba03be7d3",
+      "sourceTitle": "四火的唠叨",
+      "link": "https://www.raychase.net/8205",
+      "detailPath": "articles/f25102ee58b03a083019c4a8.json"
+    },
+    {
+      "id": "fd456b5bce207e4d113488ac",
+      "title": "練琴的刷油漆理論",
+      "summary": "分享一個我常跟鋼琴學生講的練琴策略，先暫時叫它「刷油漆理論」好了。",
+      "image": null,
+      "publishedAt": "2026-05-25T00:01:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/paint-theory-of-practice",
+      "detailPath": "articles/fd456b5bce207e4d113488ac.json"
+    },
+    {
       "id": "6e58000a15422dd1842340a9",
       "title": "亂入的鵝",
       "summary": "在路上看到一隻亂入的鵝，呆頭呆腦的樣子好可愛。",
@@ -615,50 +659,6 @@
       "sourceTitle": "è¿�ç»´å’–å•¡å�§",
       "link": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-03.html",
       "detailPath": "articles/b85451c5fdba06120e6e1c2f.json"
-    },
-    {
-      "id": "4668f1516827e053ef5e5dbf",
-      "title": "好看的馬來西亞音樂課本封面",
-      "summary": "之前 稱讚了一番某日本音樂課本封面 ，但其實馬來西亞也是有好看的音樂課本封面的啦（我也是寫 這篇文 時才偶然發現的⋯⋯）。 雖然馬來西亞的其他一些課本封面我還是覺得滿醜的，但有時候外國的月亮也不一定比較圓啦。 馬來西亞華小新課綱四年級藝術教育課本封面，由蘇歆荔（Soh Xin Li）繪製、李紫凌（Lee Chee Ling）負責版面設計。取自 此網站 。此課本是在 2019 年出版，所以 大可放心 ：這絕對不是 AI 生成圖！ 我喜歡這個封面的水彩風格與蠟筆風格筆觸互相融合所帶出的童真感，整體構圖具有機動性又不失和諧，圖中小男孩的畫風也合我個人的胃口。繪圖與標題文字之間的平衡度也抓得滿到位的，「藝術教育」四個字那剪紙風格的字型設計我也很喜歡。",
-      "image": "https://microblog.ttheng.com/blog/img173.jpg",
-      "publishedAt": "2026-05-19T11:49:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/nice-malaysia-music-textbook-cover/",
-      "detailPath": "articles/4668f1516827e053ef5e5dbf.json"
-    },
-    {
-      "id": "808059f682c694ab24e79762",
-      "title": "我小學時期用的音樂課本",
-      "summary": "在我的小學時期，我就讀的是一間國民型華文小學 1 。我所就讀的那間學校雖然有上音樂課，但有趣的是，雖然馬來西亞教育部當時 其實是有提供官方的音樂教科書 2 ，不過我們用的是由一家當地私營出版社出版的音樂課本套書。 這個套書題爲《我的小小麥克風》，由本地音樂人羅傚懷編纂，並由馬來西亞 彩虹出版社（Pelangi Publishing） 旗下的 青苗（Tunas Pelangi） 分社出版，現已絕版。此套書爲一個年級一本（總共六本），並且每一本都有附上播放示範音樂用的 CD。 由於我手上的套書實體本現已遺失，我只能碰碰運氣上網搜尋相關圖片。以下圖片皆取自某線上購物網站（啊不就還好給我找到！費了好一段時間啊⋯⋯）。 《我的小小麥克風》四年級課本封面。 《我的小小麥克風》四年級課本部分視唱練習內容。 《我的小小麥克風…",
-      "image": "https://microblog.ttheng.com/blog/img170.jpg",
-      "publishedAt": "2026-05-19T09:37:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/primary-school-music-textbook-i-used-before/",
-      "detailPath": "articles/808059f682c694ab24e79762.json"
-    },
-    {
-      "id": "e1d05519ef26c53e6f1cc6eb",
-      "title": "人類 DJ 放 AI 音樂",
-      "summary": "前陣子，活動現場有遇到 DJ，聽到他的 Remix，覺得「這好像還不錯耶！」 結果用 Shazam 錄音、搜尋歌曲，發現是現成、已經 Remix 好的音樂，原來只是在假裝「旋鈕很燙」嗎？ 其實這在 DJ 演出者中非常常見，所以也見怪不怪了，畢竟很多聽衆根本不懂 DJ 做了什麼 Filter、效果，還是用了什麼高超的接歌技術，此時臉跟身材反而才是聽衆被關注的重點（對於認真的 DJ，這真殘忍，但商演真的好多這種）。 只是這次，我搜尋到那個「我覺得還不錯耶」的音樂之後，發現那是 AI 做的 Remix，瞬間感到失落。 對於我不熟悉的 DJ Remix 音樂領域，我完全沒能力判斷它是不是 AI，甚至覺得很好聽，我對此感到無力。 前些日子，大量聽 AI 音樂，也是覺得好聽，但我沒有無力感，因爲我能聽出 AI 痕跡，甚至…",
-      "image": null,
-      "publishedAt": "2026-05-19T08:24:10Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/ai-dj/",
-      "detailPath": "articles/e1d05519ef26c53e6f1cc6eb.json"
-    },
-    {
-      "id": "55978c6cb513ed87bfa26cb3",
-      "title": "ANYTHING* can be on your blog",
-      "summary": "https://textby.me/on/ This one-word post on this blog called Text by Me may be an extreme example, but is perfect for my main point here. ANYTHING 1 can be on your blog. ANYTHING! Apa-apa pun boleh! 乜嘢都得！ If you’ve set up a personal blog website, and then find yourself self-imposing arbitrary limits (be it the choice of topics, post length, language or what…",
-      "image": null,
-      "publishedAt": "2026-05-19T07:56:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/anything-can-be-on-blog/",
-      "detailPath": "articles/55978c6cb513ed87bfa26cb3.json"
     }
   ]
 }

@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "d26ca9e2eaf209a6481eef64",
+      "title": "Self-changing Data Type - CVE-2024-40676 漏洞分析",
+      "summary": "今年 10 月份的时候，Android 安全公告用 CVE-2024-40676 的编号公布了一个很奇怪的 patch 。 AccountManagerService checkKeyIntent() 负责检查 account authenticator 传回的 intent，确保它安全再传回给 caller，防止 launch anywhere 漏洞。这个补丁看起来很暴力也很奇怪，直接 ban 了所有带有 content URI 的 intent，似乎完全不考虑兼容性。是什么样的漏洞才要上如此暴力的修复方法？ 注：如下全是我的猜测，由于联系不到漏洞作者本人，无法确认这是否就是原本的问题。",
+      "image": null,
+      "publishedAt": "2024-11-07T02:00:00Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2024/11/07/self-changing-data-type/",
+      "detailPath": "articles/d26ca9e2eaf209a6481eef64.json"
+    },
+    {
+      "id": "d6a064b03ef362000b751f73",
+      "title": "2024 October",
+      "summary": "十月，科研和论文的焦虑笼罩着整个月份，游戏、运动、电影的娱乐让我麻痹，正事进展的受阻一次又一次让我感到痛苦。 经历了艰难的心理建设和昼夜颠倒的赶工，最后时刻完成了任务，一切都令人感到疲惫。 论文终稿 月底得交论文终稿。 5w字论文的大修，像悬在头顶的达摩克利斯之剑。 10月，重新回到了实验室，回到了宿舍-食堂-实验室的三点一线。跑实验-自我否定-看论文-改论文-重新跑实验，循环往复，身心俱疲。 新舍友 宿舍搬来了新室友，从独居恢复到了合居，我需要重新习惯如何在共享私人空间中保持和谐。 蛋白粉 月初还有精力运动的时候，跑了几个完整的5公里，这对于曾经跑几步就喘的我来说，是一种突破。 三分化升级了哑铃的重量，令人欣慰的是，累计喝完了一罐2磅的蛋白粉。 炉石传说 《炉石传说》国服回归，本想着领完回归奖励就卸载，下载…",
+      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202503191848265.webp",
+      "publishedAt": "2024-11-07T00:00:00Z",
+      "sourceId": "95e525ddc69ab5ef",
+      "sourceTitle": "金色河流",
+      "link": "https://goldenriver.site/posts/2024-october/",
+      "detailPath": "articles/d6a064b03ef362000b751f73.json"
+    },
+    {
+      "id": "8864a2070866737f3e9a33fc",
+      "title": "自新世界 #0x08：明察秋毫",
+      "summary": "目光敏锐，可以看见秋天猫猫身上新长的毫毛",
+      "image": null,
+      "publishedAt": "2024-11-06T13:52:34Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/weekly/0x08/",
+      "detailPath": "articles/8864a2070866737f3e9a33fc.json"
+    },
+    {
+      "id": "2627c75a3730fe17ade05939",
+      "title": "豎排日文書的閱讀輔助工具",
+      "summary": "最近在看一些豎排的日文書籍（電子版）。 市面上很多reading ruler類的瀏覽器插件都只支援橫排閱讀。 最後裝了一個日本人做的軟體 Reading Tracker （僅適用windows系統）。 下載下來是一個zip檔案，裡面有四個exe執行檔，我主要用到兩個： ReadingTracker.exe : 用來看橫排檔案（一般網頁）。 ReadingTrackerVertical.exe : 用來看豎排檔案（比如日文電子書）。 效果如圖所示。 Reading Tracker 它的視窗會懸浮在所有視窗前面。 想要移動ruler的位置：用滑鼠按住視窗上不透明或半透明的部分拖動。 點選視窗右下角的三角可以調整ruler大小。 視窗形狀有很多種模式可以選，具體可以看上面的軟體說明頁面。我用的截圖裡這種模式：在兩條…",
+      "image": "https://wuliangdian.com/posts/ruler-for-vertical-jp/reading_tracker_2024.jpeg",
+      "publishedAt": "2024-11-06T11:00:00Z",
+      "sourceId": "4947a434a94c3ee9",
+      "sourceTitle": "無糧殿",
+      "link": "https://wuliangdian.com/posts/ruler-for-vertical-jp/",
+      "detailPath": "articles/2627c75a3730fe17ade05939.json"
+    },
+    {
+      "id": "1f14ee758141b8c9bc3b8a37",
+      "title": "CKB RBF 设计和实现",
+      "summary": "CKB 相关技术文章第二篇。 Replace by fee 问题 如果一个交易成功发送到交易池，但可能出现因为费用较低而一直得不到处理。之前 CKB 没有其他措施来处理这种情况。 例如 Dotbit 4 位域名注册拥堵 这个事故发生过程中， CKB 的应用方无法使用任何方式来尽快让自己的交易被打包，这就是引入 Replace-by-fee（RBF) 的原因，我们需要一个机制来提高已经在交易池里交易的费用，替换掉旧的交易，让新的交易尽快被打包。 在新的 multi_index_map 重构后，交易在 pending 阶段也会按照交易的 score 来优先处理 (通常费用高的交易 score 也会高)，这会避免高费用的交易被阻塞住，所以理论上述需要手动提高费用的情况会减少，但我们还是需要 RBF 来手动提高交易的…",
+      "image": "http://catcoding.me/images/ob_pasted-image-20241031103004.png",
+      "publishedAt": "2024-11-06T03:55:13Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/ckb-rbf/",
+      "detailPath": "articles/1f14ee758141b8c9bc3b8a37.json"
+    },
+    {
       "id": "58d679bd9f384623672e6e9a",
       "title": "PTE口语改革后DI & RL新模板",
       "summary": "PTE口语改革后DI & RL新模板 前因 2024年10月31日，PTE官网突然更新了一篇 文章 ，称PTE学术考试即将迎来升级，并且不会影响现有的备考方式和计划，只是将打分变得更加科学和系统——判卷将引入 专家人工审查 。 视频里的话术听起来还挺好笑的，因为他们说「真人专家一直都是打分系统的一部分」，但这多少有些欲盖弥彰了。我们都心知肚明，PTE备考就是一个与机器斗智斗勇的考试。 几个要点： 只影响口语的DI和RL 只影响Academic和UKVI考试，不影响Core 不影响出分时间 人工审查的专家看不到原题，只会听音频，只审查内容评分，流利度和发音仍然由机器负责判定 改动2024年11月4日起生效 之前在上课的时候，我就一直在和学生说，不知道培生是故意的还是不小心，明明知道大量学生通过背模板通过考试，但…",
@@ -604,61 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/too-short",
       "detailPath": "articles/b25b02d0bb0caa9b399aa944.json"
-    },
-    {
-      "id": "cc67e2c043895487049fee10",
-      "title": "行万里路：喝过尼罗河的水，一定会再回到埃及",
-      "summary": "[!NOTE] Info 全文共计18092字，预计阅读时长60min 行万里路：喝过尼罗河的水，一定会再回到埃及 缘起 如《 我与偷渡者在中餐厅打工的日日夜夜 》这篇博客所说，大学期间的我生活是非常窘迫的。即便是我希望出去玩玩转转，客观条件也不允许，休息时间几乎都用来打工挣钱，或者做B站视频了。 旅游对我来说曾是一件奢侈的事情。但即便是现在自己已经完全经济独立，小有积蓄，负担得起去世界上的各个角落转一转，但是我还是对「看看世界」这件事情提不起太大的兴趣。在工作后的几次旅行，也大多是假期没事干，去其他城市和朋友、老同学见见面，行程也大多止步于在城里吃喝，找个地方和朋友谈心，摆脱成都的班味，也是谈不上旅行。 今年的暑假不知为什么尤其难熬，可能是因为自己再也没有刚刚转职当老师的那种心气，或许也因为去年暑假不一定每…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/Pasted%20image%2020240910140620.png",
-      "publishedAt": "2024-10-24T10:06:35Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/vworp-to-misr/",
-      "detailPath": "articles/cc67e2c043895487049fee10.json"
-    },
-    {
-      "id": "1e6adaede9a53fd4edbb5b6f",
-      "title": "Gumball 與性平",
-      "summary": "https://www.deviantart.com/blehmaster7/art/Macho-Macho-Man-792777411 愛死《阿甘妙世界》（ The Amazing World of Gumball ）了。他們總是能把一些很重要的價值觀以卡通的形式直白、不複雜化地表現出來。阿甘（Gumball）和佩佩（Penny）的互動就是一個表達 女性主義/性別平等 的好例子。 身為男性的阿甘即使有一刻想要以 toxic masculinity 式的倔強來勉強自己，但最終他還是可以盡情地展現他懦弱膽怯的一面；身為女性的佩佩也可以成為阿甘的臂膀。相互扶持、相互尊重。就是這麼地簡單直接。 在這個性平運動已被一些莫名其妙的「理論」搞得烏煙瘴氣的此刻，這個世界更需要像《阿甘妙世界》那樣傳達正向價值觀的管道。 不需…",
-      "image": null,
-      "publishedAt": "2024-10-24T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/gumball-and-gender-equality/",
-      "detailPath": "articles/1e6adaede9a53fd4edbb5b6f.json"
-    },
-    {
-      "id": "71064664176ccc3e980b5978",
-      "title": "關於創作與執行：寫文章",
-      "summary": "讀到 Wiwi 部落格 這篇文章的這一段 有感。 寫文章也是一樣。雖然語言技巧、文法、詞彙、結構等等的技術面是很有用的，但實務上對於這些技術的需求並不總是很高。 關鍵在於擁有獨特的觀點和洞見。就算只使用很直白、簡單的文字，也可以寫出有深刻意義的文章。 很同意啊，重要的是表達出來的觀點，而不是堆砌得不明所以的詞藻。 但可惜的是很多人似乎本末倒置，對一篇好文章的判定標準變成了詞藻堆得夠不夠浮誇，而不是它所要表達的含義是否有價值，甚至是紮實與否（看看中國高考的所謂「優秀作文」就知道了）。 觀點是跨越語言的資產，不是光靠一堆天花亂墜的用字遣詞就能形成。一篇真正有價值的文章，就算以極淺白的用詞被翻譯成另一個語言也不會失去其價值。",
-      "image": null,
-      "publishedAt": "2024-10-24T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/thoughts-on-create-and-execute/",
-      "detailPath": "articles/71064664176ccc3e980b5978.json"
-    },
-    {
-      "id": "2a04f6c7192364acee35d854",
-      "title": "日寄 20241023",
-      "summary": "好久没更新“日寄”系列了。 Ni（内倾直觉）像是人类在对抗不确定性、信息缺失时，所进化出的能力。 迷信知识者是 […]",
-      "image": null,
-      "publishedAt": "2024-10-23T22:14:38Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1122",
-      "detailPath": "articles/2a04f6c7192364acee35d854.json"
-    },
-    {
-      "id": "0aaf348319df8e92ff7ab106",
-      "title": "Q3 2024 Expenses | 2024年第三季度消费总结",
-      "summary": "用三星拍的iPhone广告牌 @ Chinatown coverpeople 九月 进入第四季度生活工作大爆炸，幸好现在是季更晚了一个月也不会觉得太糟糕，嘿嘿。在下班前半小时把表格格式统一好了，回家路上打开keep note就开始倒脑内碎碎念。 第三季度迎来我们搬来后的第一次续租，房租涨了$46，在纽约可能是run don't walk的涨价幅度。这季度平均电费比第一季度高了快200刀，但今年吃冰淇淋的次数好像一只手都能数得过来，要感谢costco白桃给的满足感。这个夏天终于学会自制日本餐馆里清爽 carrot ginger dressing ，这是trader joes停产后就一直想念的沙拉酱，自己量产后吃了很多很多沙拉。 七月底Chikalicious店主退休 前和象友幸运地walk in吃到了当时菜单上…",
-      "image": "https://images.squarespace-cdn.com/content/v1/5d24f88b8ff0730001a3dfb7/ea178a0d-6c78-4aea-a1d3-ead20683ede0/20240718_203004.jpg?format=1000w",
-      "publishedAt": "2024-10-23T13:59:34Z",
-      "sourceId": "a1908f209b7818cd",
-      "sourceTitle": "After 27",
-      "link": "https://www.after27.me/blog/q3-2024-expenses",
-      "detailPath": "articles/0aaf348319df8e92ff7ab106.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "98588326d2a791256f7b5fe6",
+      "title": "Android源码分析：从源头分析View事件的传递",
+      "summary": "对于应用开发者的我们来说，经常会处理按钮点击，键盘输入等事件，而我们的处理一般都是在Activity中或者View中去做的。我们在上一篇文章中分析了View和Activity与Window的关系，其中的ViewRootImpl和我们的事件传递息息相关，上文未能分析，本文将对其进行分析。 事件介绍 事件是什么呢，广义上事件的发生可能在软件也可能在硬件层，在Android设备当中，我们会有可能有键盘触发，触摸触发，鼠标触发的各种事件。我们关注的通常有两种事件： 按键事件（KeyEvent)： 这种色包括物理的按键，Home键，音量键，也包括软键盘触发的事件。 触摸事件（TouchEvent): 手指在屏幕上触摸触发的事件，可能是点击，也可能是拖动。 对于按键事件，一般有 ACTION_DOWN 和 ACTION_…",
+      "image": null,
+      "publishedAt": "2024-09-20T09:20:01Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-20-activity-input-event-deliver/?utm_source=rss",
+      "detailPath": "articles/98588326d2a791256f7b5fe6.json"
+    },
+    {
+      "id": "0fcc3f65ef143636eaf40ac2",
+      "title": "人的用途",
+      "summary": "「人」可以做什麼？",
+      "image": null,
+      "publishedAt": "2024-09-20T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/five-ages-of-humanity",
+      "detailPath": "articles/0fcc3f65ef143636eaf40ac2.json"
+    },
+    {
+      "id": "ec976c3fec82520c8e93e59a",
+      "title": "中国足坛的《我不是药神》",
+      "summary": "遵遇长期欠薪，铤而走险踢假球能否被原谅？ 参考新闻： 球迷态度：球员遭遇长期欠薪，铤而走险踢假球能否被原谅？|重庆两江竞技|江西庐山|丁捷|杨文吉|陕西长安竞技|懂球帝 最近足协披露出了三级联赛”假赌黑“的球员名单，看了一些声泪俱下自述，无一不和被欠薪有关。 欲求不满踢假球是贪心，但是到了逼良为娼易子而食的地步，就不应该单单谈道德的问题了… 一则收钱踢假球的球员自述 参考： 终身禁足球员杨文吉：被长期欠薪，为4万块钱辜负了球迷|江西庐山|杨文吉|懂球帝 “我除了会踢球，其他什么都不会。” 一则收钱踢假球的球员的自述，看完感觉挺心酸的，可一窥行业生态。 欠薪假球之风大行其道监管部门不作为，球员讨薪无门铤而走险为了4万块断送职业生涯。 评论区出奇一致地表示同情和无奈，看到一个老哥说，“我带入进去底线可能比他还低。…",
+      "image": null,
+      "publishedAt": "2024-09-20T00:00:00Z",
+      "sourceId": "95e525ddc69ab5ef",
+      "sourceTitle": "金色河流",
+      "link": "https://goldenriver.site/posts/chinese-football-dying-to-survive/",
+      "detailPath": "articles/ec976c3fec82520c8e93e59a.json"
+    },
+    {
       "id": "a76efa4a63ecd5a89ab43241",
       "title": "美国签证申请攻略",
       "summary": "由于我要去参加十月份在北美丹佛的 ApacheCon ，因此有了第一次去美国的机会。签证是第一步，有些朋友可能会 找中介代理，通过我把流程走完来看，必要性不是很大，最麻烦的 DS-160 表格网上也有不少攻略可供参考。趁着 昨天面签刚通过，抓紧来记录一下要点，帮助大家成功拿到十年美签！",
@@ -626,39 +659,6 @@
       "sourceTitle": "刑辩人在路上",
       "link": "https://xingbianren.cn/post/259.html",
       "detailPath": "articles/1382aad98dd47a3c3ddab509.json"
-    },
-    {
-      "id": "366b80457b702001132c4d7d",
-      "title": "好連點我",
-      "summary": "我之前架了一個 Lemmy 連結分享站在 https://nicelink.me（「好連點我」，到現在還是覺得這名字取得真好 🤣）。但我最近因為沒有時間維護（Lemmy 的版本更新好麻煩，牽涉到的後端組件好多），加上用戶也少就決定把它關掉了。",
-      "image": "https://wiwi.blog/assets/images/nl-screen-05b949a6a05dd585ec71d1f9e4bcc77d.jpg",
-      "publishedAt": "2024-09-03T00:15:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/nicelink-me",
-      "detailPath": "articles/366b80457b702001132c4d7d.json"
-    },
-    {
-      "id": "3382f562ead480168843c346",
-      "title": "聊聊之于电子游戏的「议题」",
-      "summary": "Intro 玩游戏的时候，产生了很多「沉浸感」「一致性」「感染力」方面的困惑： 有些游戏对白有趣，引人深读。但为什么社区讨论度和二创并无想象中「活跃」？ 有些游戏叙事碎片化，却仍能边玩边不自觉地沉浸，甚至在脑海中脑补大戏或是深入考据； 同样具备精致的美术和震撼的开场表演，不同游戏（哪怕音画风格类似）产生的沉浸感和兴趣大相径庭； 有些游戏甚至在大段跳过剧情的情况下，仍能制造大量记忆点； …… 本文将通过谈论「议题」这一概念，尝试分析「何为游戏的调性」「游戏内容如何制造沉浸感」等问题，并尝试涉及对团队协作创作内容的思考。如果能为读者提供一个略显新奇的视角来看待此类话题，本文目的也就达到了。 从「世界观」谈起 绝大部分 RPG 游戏都有世界观。但在谈论具体的电子游戏之前，我们先来聊聊那些知名的 Alternativ…",
-      "image": "https://static.gridea.dev/589ae027-a330-455f-872b-e253d7674397/GwXGV_NFY.png",
-      "publishedAt": "2024-09-02T20:46:00Z",
-      "sourceId": "84679a79f1d8b908",
-      "sourceTitle": "dyron503's",
-      "link": "https://blog.dyron503.com/t9nuaz",
-      "detailPath": "articles/3382f562ead480168843c346.json"
-    },
-    {
-      "id": "153bc143eb85187f542e4030",
-      "title": "为国捐躯的乌克兰飞行员，他们的名字真的是“果汁”和“月鱼”吗？趣谈外国人名",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-09-02T20:45:11Z",
-      "sourceId": "6e847964818dca55",
-      "sourceTitle": "余晟以为",
-      "link": "https://mp.weixin.qq.com/s/vjYjovKPYLAPopuUxpTwcw",
-      "detailPath": "articles/153bc143eb85187f542e4030.json"
     }
   ]
 }

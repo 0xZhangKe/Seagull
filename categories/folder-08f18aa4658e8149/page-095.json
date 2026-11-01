@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "967e715393102de0b66cfe01",
+      "title": "別人的老婆比較好",
+      "summary": "我不知道別人怎麼想，但我自己有時（好吧，其實是常常）也會在心中偷偷拿伴侶跟別人比較的。",
+      "image": "https://wiwi.blog/assets/images/spouse-8c55cac11ac4882d76c6152bf75f1c9d.jpg",
+      "publishedAt": "2024-11-07T06:51:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/comparing-spouses",
+      "detailPath": "articles/967e715393102de0b66cfe01.json"
+    },
+    {
+      "id": "57a5a06308e2b298afb5c7a0",
+      "title": "React + NestJS 购物平台练习【3】数据设计与实现",
+      "summary": "本文是 React + NestJS 全栈购物平台实践的第三篇，专注于后端数据库的设计与实现。文章从零开始，详细讲解了如何为购物平台定义核心实体（如用户、商品、订单），并使用 TypeORM 装饰器实现数据模型及其复杂的关联关系。接着，教程演示了如何配置和使用 TypeORM 的数据库迁移（Migration）功能，通过自定义脚本来自动化生成、应用和回滚数据库结构变更。最后，文章还探讨了数据库性能优化的关键——索引（Indexing），并为关键查询字段添加了索引。本教程为使用 NestJS 和 TypeORM 进行数据建模与管理提供了完整的实战指南。",
+      "image": null,
+      "publishedAt": "2024-11-07T05:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/5a4b.html",
+      "detailPath": "articles/57a5a06308e2b298afb5c7a0.json"
+    },
+    {
+      "id": "c5837f25696110828ca2083f",
+      "title": "CKB new script verification with VM pause",
+      "summary": "CKB 相关技术文章第三篇。 背景 CKB 的每一个交易在提交到交易池之前都会经过一个 script verification 的过程，本质上就是通过 CKB-VM 把交易里的 script 跑一遍，如果失败了则直接 reject，如果通过了才会继续后面的流程。 这里的 script 就是一种可以在链上执行的二进制可执行文件，也可以称之为 CKB 上的合约。它是图灵完备的，我们通常可以通过 C、Rust 来实现这些 script，比如 nervosnetwork/ckb-system-scripts 就是 CKB 上的一些常用的系统合约。用户在发起交易的时候就设置好相关的 script，比如 lock script 是用来作为资产才所有权的鉴定，而 type script 通常用来定义 cell 转换的条件，…",
+      "image": "http://catcoding.me/images/ob_what-is-verification.png",
+      "publishedAt": "2024-11-07T04:03:24Z",
+      "sourceId": "82c4bcb6bba028cf",
+      "sourceTitle": "程序员的喵",
+      "link": "http://catcoding.me/p/ckb-new-verify/",
+      "detailPath": "articles/c5837f25696110828ca2083f.json"
+    },
+    {
       "id": "d26ca9e2eaf209a6481eef64",
       "title": "Self-changing Data Type - CVE-2024-40676 漏洞分析",
       "summary": "今年 10 月份的时候，Android 安全公告用 CVE-2024-40676 的编号公布了一个很奇怪的 patch 。 AccountManagerService checkKeyIntent() 负责检查 account authenticator 传回的 intent，确保它安全再传回给 caller，防止 launch anywhere 漏洞。这个补丁看起来很暴力也很奇怪，直接 ban 了所有带有 content URI 的 intent，似乎完全不考虑兼容性。是什么样的漏洞才要上如此暴力的修复方法？ 注：如下全是我的猜测，由于联系不到漏洞作者本人，无法确认这是否就是原本的问题。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/freedom-to-format",
       "detailPath": "articles/beaf7b9d96205d87b13ccbd0.json"
-    },
-    {
-      "id": "0bce2874b59530346f49ddd3",
-      "title": "為什麼我想吃麥當勞",
-      "summary": "最近看了 Michael E. Gerber 寫的《The E-Myth Revisited》的中文翻譯版，裡面有一個故事讓我滿有啟發的。",
-      "image": null,
-      "publishedAt": "2024-10-25T09:46:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/predictables",
-      "detailPath": "articles/0bce2874b59530346f49ddd3.json"
-    },
-    {
-      "id": "49b2ad48a1a055ce875d5a05",
-      "title": "办公室里的Michael",
-      "summary": "不知不觉，有笑有泪地看完了7季的《The Office》，像是看了一部长篇小说。 在最初的第1季，我完全感受不到好笑之处，只觉得生理和心理的不适。第2季之后，办公室里角色们的形象逐渐丰满，以至于让我总能在滑稽之下感受到一丝丝悲凉——最典型的就是灵魂主角 Michael Scott 。 “公司是我家” Michael在一家名为Dunder Mifflin的纸品销售公司工作，从销售一路干了20年，终于成为了Scranton分部 1 的总经理。他大多数时候都非常神经质、低情商、古怪，只是偶而靠谱。他把Scranton分部视为自己的“家”，而员工们则是自己的家人。显而易见的是，员工们反过来不会这么想，只是把他视为老板而忍让和迁就。 Michael对 亲密关系和家庭 有着一种理想化的迷恋。这种迷恋会投射到他与员工、上级…",
-      "image": null,
-      "publishedAt": "2024-10-24T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2024/10/25/michael-in-the-office",
-      "detailPath": "articles/49b2ad48a1a055ce875d5a05.json"
-    },
-    {
-      "id": "b25b02d0bb0caa9b399aa944",
-      "title": "太矮",
-      "summary": "收到一位年輕男性讀者的來信。他談到之前會因為身高的問題而缺乏自信（尤其是追求女生的時候），有時被朋友調侃個子小的時候也會很在意；但後來因為有健身、而且也再長高了一點點，所以就變得還好了。",
-      "image": null,
-      "publishedAt": "2024-10-24T14:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/too-short",
-      "detailPath": "articles/b25b02d0bb0caa9b399aa944.json"
     }
   ]
 }

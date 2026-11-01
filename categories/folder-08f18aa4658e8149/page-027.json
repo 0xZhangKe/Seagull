@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "c659a4a3255972d648136ed9",
+      "title": "Axios Daily",
+      "summary": "2024年9-10月每日閱讀Axios英文新聞的學習筆記",
+      "image": null,
+      "publishedAt": "2026-07-13T13:47:58Z",
+      "sourceId": "50bce2ced06e6077",
+      "sourceTitle": "Feed Me, Haruo",
+      "link": "https://haruowang.vercel.app/global/english/axios.html",
+      "detailPath": "articles/c659a4a3255972d648136ed9.json"
+    },
+    {
+      "id": "fd2255c58b8770b9550df950",
+      "title": "投資大小事",
+      "summary": "整理投資術語、投資策略及投資規定的筆記",
+      "image": null,
+      "publishedAt": "2026-07-13T13:47:58Z",
+      "sourceId": "50bce2ced06e6077",
+      "sourceTitle": "Feed Me, Haruo",
+      "link": "https://haruowang.vercel.app/wealth/finance/investment.html",
+      "detailPath": "articles/fd2255c58b8770b9550df950.json"
+    },
+    {
       "id": "4f43e731251f7c617f2b179c",
       "title": "Tatsuya Kitani 的 ROUNDABOUT",
       "summary": "第一次收聽一整張 ROUNDABOUT 這個 Tatsuya Kitani 的專輯，好聽！ 原來這張專輯有收錄手機音遊 Project Sekai 的委託歌曲之一—— Moonlight 的作曲者雙人組（Tatsuya Kitani 與 Harumaki Gohan ）本尊獻唱版啊！和我原本就很愛的 Akito（彰人；今井文也配音）獨唱版 不相上下欸！可惡，搞到我都不知道該選哪個作為我的至愛版了⋯⋯ 有趣的是，Tatsuya Kitani 與 Harumaki Gohan 本人演唱的版本特地用上了不同風格/音色的聲線，不懂是不是在致敬 Vivid BAD SQUAD 四人組各有千秋的嗓音特色 XD？",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/gray-market/",
       "detailPath": "articles/1f83a4980e3408311309035d.json"
-    },
-    {
-      "id": "d860597f1339c3b275128c4a",
-      "title": "居家裝修學習筆記",
-      "summary": "從建材到施工的知識點整理",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/wealth/dwelling/home.html",
-      "detailPath": "articles/d860597f1339c3b275128c4a.json"
-    },
-    {
-      "id": "7426da946b7a4866f5cc1041",
-      "title": "x86_64 中的除法、模运算和冒泡排序",
-      "summary": "用高级语言（例如 C）写出来的算法，在查看源代码时会显得非常直白。然而，编译器会把它们在汇编层面转换成一些相当神秘的模式。为了提升我们的逆向工程能力，我们需要学习这些模式，这样才能快速识别它们。这篇博客会列举一些例子，它们都是我今天在解一道 CTF 题时遇到的。 整数之间的有符号除法 先看这段代码： #include <stdio.h> int div(int a) { return a / 42; } int main() { int a; scanf(\"%d\", &a); a = div(a); printf(\"%d\", a); return 0; } 把它编译一下，然后打开你心爱的 iaito 或 radare2，看看汇编。我们不需要关心 main() ，所以直接进入 sym.div ，就能看到类似这样…",
-      "image": "https://rebel1725.codeberg.page/images/pic_20260708_001.svg",
-      "publishedAt": "2026-07-08T09:46:33Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/divisions-moduli-and-bubble-sort-in-x86_64/",
-      "detailPath": "articles/7426da946b7a4866f5cc1041.json"
     }
   ]
 }

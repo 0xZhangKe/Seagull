@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "af719e9a878bb22e010d72e0",
+      "title": "3D 星空背景效能長征：OffscreenCanvas Worker → WebGPU/TSL 重寫",
+      "summary": "這篇記錄了作者為個人網站 koimsurai.com 那片 3D 星空背景走過的三階段效能長征。背景最初只是一堆各自為政的 three.js 裝飾特效——黑洞、粒子、星空、土星——東西還少時並不重,是愈疊愈多、真正拿去量之後才逐步走上優化:先把星空搬進 OffscreenCanvas Worker 讓渲染離開主執行緒(桌面 TBT 從 17 秒壓到 30 毫秒),再被朋友一台會白屏的機器逼著補上背景的穩健性,最後用瀏覽器最新的 WebGPU/TSL 把整套從頭重寫成單一 canvas——GPU 從 85–90% 砍到 25%、星星翻到 26,000 顆全在 shader 裡呼吸。文中一併科普 WebGPU 到底是什麼,並記下一個反覆翻案的判斷:「效能優化」和「品質升級」是兩本不同的帳,換掉目標函數,結論就翻。",
+      "image": null,
+      "publishedAt": "2026-07-24T02:49:17Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/the-3d-starfield-performance-march",
+      "detailPath": "articles/af719e9a878bb22e010d72e0.json"
+    },
+    {
+      "id": "ed2b45c6c91b2df034afe503",
+      "title": "我的 HomeLab 配置（一）：基础设施篇",
+      "summary": "去年年底，我下线了许多以前 self-host 的应用，认为维护成本过高，并 写了篇博客纪念 。 半年过去，我发现我错了：AI 让各种服务的部署和运维变得如此容易。我想要的一切都能够梦幻般地随着几句话而立即变为现实。我再也不用淹没在文档或日志中，再也不用苦恼于某个未知环节的未知问题。这种感觉太爽了。这是 HomeLab 玩家最好的时代。 最近，我全面复活了我的 HomeLab，并搞了许多好玩的东西。我将会写几篇博客与你分享。预计分为：基础设施篇、应用篇和数据与监控篇。所有代码和配置都放在 Skywt2003/homelab ，你可以让你的 agent 参考。 我将会侧重于介绍「我达成了什么效果」和「为什么这么做」。至于「如何达成」，你可以直接让 AI 去做。这可以称为 Vibe Deploying 。😎 Ta…",
+      "image": null,
+      "publishedAt": "2026-07-24T02:04:11Z",
+      "sourceId": "4d0b5571eb37846e",
+      "sourceTitle": "SkyWT",
+      "link": "https://skywt.cn/blog/my-homelab-1-infra",
+      "detailPath": "articles/ed2b45c6c91b2df034afe503.json"
+    },
+    {
       "id": "85c08325a4481dc1f468860d",
       "title": "侵佔財產",
       "summary": "想像你買了一台微波爐。你把它搬回家、插上插座、把昨天沒吃完的滷肉飯放進去、按下「開始」。",
@@ -637,28 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/ZArlmyMe/Damping_20260719/",
       "detailPath": "articles/d0de087134f96ae1958a7612.json"
-    },
-    {
-      "id": "fadcd1393040df704a21b96d",
-      "title": "FoxThinking #35: 季度总结",
-      "summary": "又是到写总结的时候了。 本季度似乎有个若隐若现的主题就是「矛盾」，给出两种对立情况，然后随便「狐乱」分析一通给出 点自己的感想； FoxThinking #24: 简单不是一件简单的事 ：总有些事复杂是它的禀性，这 是逃不掉的……不过想想看正是复杂的物质、生命构成现在的世界，从这点看，复杂也未必是件坏事呢。 FoxThinking #25: 狐狸与刺猬 ：很多时候，从 A 和 B 的情况，都带有点虚假两难的味道，总有都选 或者都不选的额外两个选项。 FoxThinking #26: 幸福在于可能不是什么吗？ ：除了「拥有」什么，幸福也有可能是不「遭受」什么。 FoxThinking #29: 我想知道我不知道 ：知道自己知道哪些是不知道的，可比知道某事可厉害的多了。 FoxThinking #34: 提升免疫…",
-      "image": null,
-      "publishedAt": "2026-07-19T15:39:00Z",
-      "sourceId": "94e2b917bd1c8189",
-      "sourceTitle": "狐狸反走矣",
-      "link": "https://blog.southfox.me/2026/07/fox-thinking-35/index.html",
-      "detailPath": "articles/fadcd1393040df704a21b96d.json"
-    },
-    {
-      "id": "65da2925004e9c2b393e2df7",
-      "title": "游牧地活着",
-      "summary": "「最小规模的土地上，最小规模地游牧。」",
-      "image": null,
-      "publishedAt": "2026-07-19T14:41:03Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/ZArlmyMe/BeHunterGatherer_20260719/",
-      "detailPath": "articles/65da2925004e9c2b393e2df7.json"
     }
   ]
 }

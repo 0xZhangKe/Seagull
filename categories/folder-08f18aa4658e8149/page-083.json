@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "0059c7998bd5fa40f22275e6",
+      "title": "滿足者",
+      "summary": "根據心理學家 Barry Schwartz) 的理論，人在面對選擇時，可以分成兩種類型：",
+      "image": "https://wiwi.blog/assets/images/cat-2018-63ec8b97d96f8f9e48d8d98366ee8591.jpg",
+      "publishedAt": "2025-04-12T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/satisficers",
+      "detailPath": "articles/0059c7998bd5fa40f22275e6.json"
+    },
+    {
+      "id": "9f207896722ec14d468eb9bf",
+      "title": "osu!APIv1请求示例",
+      "summary": "前言 本文章使用Nodejs环境做演示。请求用户数据。代码中的APIKEY要在 osu官网‬ 申请。 const API_URL = \"osu.ppy.sh\"; const init = { k: \"YOUR_API_KEY\", type: \"string\", u: \"kyzzz5658\", }; const https = require(\"https\"); // 将参数序列化为查询字符串 const query = new URLSearchParams(init); const options = { hostname: API_URL, method: \"GET\", path: `/api/get_user?${query}` // 附加参数 }; const req = https.request(…",
+      "image": null,
+      "publishedAt": "2025-04-11T22:29:23Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/osu-apiv1%E8%AF%B7%E6%B1%82%E7%A4%BA%E4%BE%8B/",
+      "detailPath": "articles/9f207896722ec14d468eb9bf.json"
+    },
+    {
+      "id": "773b3ed10f35c6d454793976",
+      "title": "当 AI 成了我的学习搭子、朋友、同事",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2025-04-11T21:04:14Z",
+      "sourceId": "27898db8e4920870",
+      "sourceTitle": "孙玲在美国",
+      "link": "https://mp.weixin.qq.com/s/zJ1mRHyIKpLRSe00k8Sp8Q",
+      "detailPath": "articles/773b3ed10f35c6d454793976.json"
+    },
+    {
       "id": "0d0759c295c5dae80fd92223",
       "title": "我的攒钱计划",
       "summary": "一个小目标，初三前攒够两千块。 实现难度是不大，已经有了八百多存款，微信里有一百多，一共900。每天早上父母会给我20元买早饭，省省，不吃了，每天稳定收入20。加上每月50 + 70的零花钱。 粗略估算一下： 现金：837.00 微信：100.59 支付宝：5.19 共 944.78 元 与目标差 1055.22 。 截止到今天（4月11日），这个月还剩 13 个工作日。 月底可获得 20 * 13 = 260。 共 944.78 + 260.00 = 970.78。 每月 120 零花钱 共 970.78 + 120 = 1090.78 与目标差 909.22 同理可得五月份月收入： 560 元，共计 1650.78 与目标相差 349.22 每月收入280，可得出七月份大概可以完成目标。 当然，这是最悲观…",
@@ -626,39 +659,6 @@
       "sourceTitle": "孙玲在美国",
       "link": "https://mp.weixin.qq.com/s/XNgcDGpc54HsEDZYN9gB6w",
       "detailPath": "articles/8f562a127808ecb2c4ec4b14.json"
-    },
-    {
-      "id": "f6bafa99a4a71fa7393704f7",
-      "title": "4.19暗房工作坊 x 周宁",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-04-03T05:37:02Z",
-      "sourceId": "7bc89208e325b0b5",
-      "sourceTitle": "FilmNeverDie",
-      "link": "https://mp.weixin.qq.com/s/qDIwtS_PQFQEIlmRjsPu0g",
-      "detailPath": "articles/f6bafa99a4a71fa7393704f7.json"
-    },
-    {
-      "id": "bbd19f06a62747ae6ef19c27",
-      "title": "日寄 20250403",
-      "summary": "日寄·编外 | 20250403 根本无路可走的情形，其实是每个人都选择了“绝不能有路可走”。 这是一个可以完 […]",
-      "image": null,
-      "publishedAt": "2025-04-03T04:36:37Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1658",
-      "detailPath": "articles/bbd19f06a62747ae6ef19c27.json"
-    },
-    {
-      "id": "c6ed9c43a5dbe366c01ae607",
-      "title": "Three.js Journey Notes 6 - Shaders Part1",
-      "summary": "What is a shader# one of the main components of WebGL a program written in GLSL sent to GPU Position each vertex of a geometry Colorize each visible “pixel” (accurately should be using term “fragment”) of that geometry ❝ Then we send a lot of data to the shader such as the vertices coordinates, the mesh transformation, information about the camera and its f…",
-      "image": "https://static.zhuzi.dev/threejs-journey/shader-basic.png",
-      "publishedAt": "2025-04-03T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/threejs-journey-notes-6-shaders-part1/",
-      "detailPath": "articles/c6ed9c43a5dbe366c01ae607.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "d230d55c20a63efcfaf807b4",
+      "title": "#23 丹桂飘香的十月月报",
+      "summary": "国庆几天假，回来就是天天上班，折腾，十月份很快又结束，到了写月报的时间了。 出行 国庆期间去了趟 安徽广德 和 杭州 ，这里就不再提及了。 十月的时候桂花开了很多了，有桂花的地方都很香，看到公众号上面说桂林公园重新修整后开放了，而且离得不远就骑着电驴过去了。桂林公园也是出了名的赏桂公园，里面是人山人海，相当拥挤，公园也实现了限流，只能南门进。此时公园里面很多桂花都落了，香味也没那么浓了。反倒是外面的一些路上的桂花更香，想要去桂林公园下次还是挑个人少的时候去。公园里面很多拍照的人，不亏是徐汇特色，许多二次元打卡拍照的。 后面还去了旁边的鑫耀光环商场，里面有个光与夜之恋的快闪，不少二次元女生打扮着跟海报拍照，还有排好长的队跟玩偶拍照的，真是看不懂，这也让我想起了前段时间看的电视剧中，女生为了游戏中的纸片人男友倾家…",
+      "image": "https://img.isming.me/photo/2610/IMG_20261017_145415.webp",
+      "publishedAt": "2026-11-01T03:22:24Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2026-10-october-summary/?utm_source=rss",
+      "detailPath": "articles/d230d55c20a63efcfaf807b4.json"
+    },
+    {
       "id": "f47104ee060a4a6825f4f194",
       "title": "小城广德徒步逛吃游",
       "summary": "国庆假期前几天江浙沪都在下雨，而去更远的地方又没有提前准备，让AI帮忙看了一下，宣城雨可能不大，就决定去一下广德。广德之前回老家的时候很多次经过，不过每次只是路过充个电，吃个快餐。因为物价低廉，加上广德三件套，近两年广德成为附近江浙人周末常去的地方，现在还有点热门。那我们就来好好探一探广德了。 Day1 出发，游太极洞 担心10月1日出发路上太堵，待到10月2日才出发，结果沪渝高速还是堵，上海段有两端可以走应急车道，待到江苏之后还是堵，就从七都下了高速，沿着太湖走，待到中午才到湖州的月亮广场。就在月亮广场找个找个地方停车下来吃饭，不过这里都是摆摊的，只好随便吃点继续赶路了。 之后需要沿着太湖途径长兴，开往太极洞。因为没有提前买票，只能现场买全价票，包含讲解，游船，电梯总共108元。太极洞与雷州换鼓、登州海市、…",
@@ -648,17 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2024-09-06-binder-add-and-get-service/?utm_source=rss",
       "detailPath": "articles/a86eac514dc1fe0878d574c8.json"
-    },
-    {
-      "id": "31be7639ecd66750f51bfb60",
-      "title": "Android源码分析:ServiceManager启动代码解析",
-      "summary": "之前已经分析过获取ServiceManager了，不过那是在使用端，在分析使用ServiceManager去获取服务或者添加服务的时候发现，我使用的Android Studio for Platform默认没有把ServiceManager的源码导入。并且同时我们不知道ServiceManager的服务端是怎么启动，怎么响应的，因此决定还是需要分析一下这块的代码。 首先简单画了一下启动的流程，如下图所示（Entry表示我们的调用入口，也就是后面所说的main函数）： sequenceDiagram autonumber Entry->>+ProcessState: initWithDriver ProcessState->>ProcessState: init ProcessState-->>-Entry:…",
-      "image": null,
-      "publishedAt": "2024-09-05T12:41:29Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-05-binder-sm-start/?utm_source=rss",
-      "detailPath": "articles/31be7639ecd66750f51bfb60.json"
     }
   ]
 }

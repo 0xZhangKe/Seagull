@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "627b6297c5f26228381a14c6",
+      "title": "OS 设计之性能设计",
+      "summary": "本文是之前星球里 Yingyun 大佬的文章，由于星球已经关闭，所以把这个关于 OS 性能设计的系列文章发到博客上 Yingyun 是资深性能优化专家，他对于系统优化有非常深入的见解，本身在国内各个手机大厂都呆过，他本人的博客还在休整中，等休整好了我再发出来，目前他在我们的微信群里很活跃，对本文有什么建议或者意见，或者说想咨询问题的可以加我们的微信群（加我微信 553000664，备注博客加群，我会拉你进去） 1 缘起 新开系列文章，OS 架构设计中的各种考量因素。其实不止 OS，在设计任何大型软件都涉及到此类内容。 能力与知识面有限，而且还带了非常主观的看法，肯定有不足之处。希望听到不同的思路与观点，通过观点的碰撞进而达到更进一步的认知。",
+      "image": null,
+      "publishedAt": "2023-08-21T10:30:48Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2023/08/21/the-performance-design-of-os/",
+      "detailPath": "articles/627b6297c5f26228381a14c6.json"
+    },
+    {
+      "id": "8dc154adff6859ff2be9027b",
+      "title": "用Fennel宏配置Neovim",
+      "summary": "我的 Vim、Neovim 共用一套 Vim Script 配置（不同之处用 模板 生成 ） 。现在 Neovim 有很多用 Lua 编写的插件需要用 Lua 配置，同时我又不喜欢在 Vim Script 里嵌入字符串 /HEREDOC 形式的 Lua 代码，所以我开始把我的 Vim Script 翻译成 Lua 代码，然而： 目录 Lua太繁琐 Fennel，快用你无敌的宏来想想办法 拜拜了引号 自动捕获group id init.fnl 相关插件 Lua 太繁琐 假设我们有下面的 Vim Script 配置： tnoremap < Esc > < C-\\ >< C-n > let mapleader = \" \" set ignorecase smartcase set matchpairs += < :…",
+      "image": null,
+      "publishedAt": "2023-08-20T14:22:59Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/fennel-macro-neovim/",
+      "detailPath": "articles/8dc154adff6859ff2be9027b.json"
+    },
+    {
+      "id": "1709970e74dcdc319024ac2f",
+      "title": "打工记（二）",
+      "summary": "这家公司的根本问题就是——核心业务非常难变现。即使有一些名气，用户量也挺大，也上市了，但在盈利上存在很大阻碍。后来因为一个意外的机会，我看到了这家公司的财务报表和各轮投资估值，发现它最后一轮的投资机构甚至没有从这家公司的 IPO 里赚到钱，上市仅仅是帮他们减少了损失。",
+      "image": null,
+      "publishedAt": "2023-08-20T13:23:23Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/roam/gravedigger-of-capitalism-02/",
+      "detailPath": "articles/1709970e74dcdc319024ac2f.json"
+    },
+    {
       "id": "85dd4ae5dadbd7cae1860c11",
       "title": "警惕中介陷阱：SUV 项目需谨慎对待",
       "summary": "这几年号称能做加拿大联邦创业移民 SUV 的中介是越来越多了。和雇主担保一样，SUV 本身是正规的、合法的，但总有些中介为了赚钱，拿着申请人的身家去钻移民政策的空子，甚至明目张胆地违法。其它国家我不清楚，中国境内的所有声称能做 SUV 移民的公司（不用抬杠，没几个是无辜的）基本上都是一个套路：包装项目，再高价卖车位。这么操作除了之前提到过的一些问题之外，还有这些风险：在创业团队这方面，很多项目因为实在等不到五个人凑成一个团队，就以三人、两人，甚至单人直接去递交申请。有些申请人自己可能也觉得与别人合伙很麻烦，自愿让中介帮他们申请成单人的项目。移民局确实没有明确说团队必须要够几个人，但是在实际操作中，移民局越来越倾向不认可人数少的项目了，不知道是不是与他们年度的 KPI 有关系，但可以确定的是人数少的项目，特别是…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Prologue 序章",
       "link": "https://prologue.dev/blog/graduation-ramblings-reflections-on-economics-and-education",
       "detailPath": "articles/41d41af09e63f0caca32195c.json"
-    },
-    {
-      "id": "f99a04c3bda3a1c62853db91",
-      "title": "Hugo Stack主题装修笔记",
-      "summary": "这篇笔记写太长了，之后会继续在 Hugo Stack主题装修笔记Part 2 里更新 在归档页增加标签云Tags 显示效果： 在layouts/_default/archives.html里的 </header> 后面加上如下代码：",
-      "image": "https://thirdshire.com/hugo-stack-renovation/spacejoy-85pCvDWDMmI-unsplash.webp",
-      "publishedAt": "2023-06-17T22:20:45Z",
-      "sourceId": "09c2f0f0946a1f21",
-      "sourceTitle": "第三夏尔 | Third Shire",
-      "link": "https://thirdshire.com/hugo-stack-renovation/",
-      "detailPath": "articles/f99a04c3bda3a1c62853db91.json"
-    },
-    {
-      "id": "8a5030f3d72b9d7c44f1492d",
-      "title": "Weekly ｜I can do both",
-      "summary": "每周看什么 Media 看了电影 蜘蛛侠：纵横宇宙 ，美术看得很爽，情节转折稍微稍微 🤏 有点老套，吐槽一下 2099 和 Miles & Gwen 的思维方式果然不是一个世代哈哈哈 妈妈原来是拉丁裔，她讲西语好可爱哦～ Hola！噢啦！这一部能看到街头篮球场有人打轮椅篮球，街边很多人排队的咖啡店是第一部爸爸开警车送 Miles 去学校的时候提到的那家，Miles 路过排队买鞋的队伍帮忙抓了一个小偷 看完回去复习了一下第一部，我都忘了迈尔斯这个宇宙是有蜘蛛侠的。这个彼得帕克看起来疲惫又温和，一边被揍一边喃喃 I’m tired 实在是（捂鼻血）他死后简公开演讲的 bgm 插入得也很好，一下想到黑暗骑士。第一部的导演个人风格很强烈，追逐戏的氛围渲染得很疯，和《目击证人》挺像的，说起来这两个时期也差不多。喜欢。还…",
-      "image": "https://cdn.jsdelivr.net/gh/Falasool/blog-pic-bed@main//blog202306112319934.png",
-      "publishedAt": "2023-06-12T10:50:01Z",
-      "sourceId": "a1af81e44a7578b4",
-      "sourceTitle": "Rubber Duck's Bizarre Adventure",
-      "link": "https://0livia99.github.io/2023/weekly-june5-june11/",
-      "detailPath": "articles/8a5030f3d72b9d7c44f1492d.json"
-    },
-    {
-      "id": "05ab3dda8631d154d0ea9293",
-      "title": "我想要在七月看一次大海。",
-      "summary": "（猫大人的黑历史 3）day1“在假期到来的前一个月，夏日炎热，我望着天空，心中出现了一个想法，很快，内心就被这种想法完全的占据了",
-      "image": "https://fravilion.top/usr/uploads/2024/02/3455146690.webp",
-      "publishedAt": "2023-06-12T02:17:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/58/",
-      "detailPath": "articles/05ab3dda8631d154d0ea9293.json"
     }
   ]
 }

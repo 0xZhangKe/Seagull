@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "31be7639ecd66750f51bfb60",
+      "title": "Android源码分析:ServiceManager启动代码解析",
+      "summary": "之前已经分析过获取ServiceManager了，不过那是在使用端，在分析使用ServiceManager去获取服务或者添加服务的时候发现，我使用的Android Studio for Platform默认没有把ServiceManager的源码导入。并且同时我们不知道ServiceManager的服务端是怎么启动，怎么响应的，因此决定还是需要分析一下这块的代码。 首先简单画了一下启动的流程，如下图所示（Entry表示我们的调用入口，也就是后面所说的main函数）： sequenceDiagram autonumber Entry->>+ProcessState: initWithDriver ProcessState->>ProcessState: init ProcessState-->>-Entry:…",
+      "image": null,
+      "publishedAt": "2024-09-05T12:41:29Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-05-binder-sm-start/?utm_source=rss",
+      "detailPath": "articles/31be7639ecd66750f51bfb60.json"
+    },
+    {
       "id": "d9eed8479e15a1a9aa386412",
       "title": "Android源码分析：Binder概述与ServiceManager获取",
       "summary": "阅读Android系统源码，Binder是绕不过去的东西，前面看ContentProvider，Activity都有Binder的身影，因此决定还是先把Binder的部分看一看。本文主要简单介绍一下Binder的历史和它的基本架构，介绍Binder的ServiceManager我们在使用的时候如何去拿到它，同时推荐一些Binder的学习资料。 Binder简介 对于普通的Android的应用开发来说，进程的概念是被弱化的。这得益于系统已经帮助我们把Activity,ContentProvider,Broadcast,Service等涉及到跨进程的组件做了很好的封装。我们知道Android也是基于Linux进行开发的，那比如存在跨进程，也就必然存在跨进程通讯。Linux当中跨进程通讯常常使用共享内存、信号量、管…",
@@ -648,17 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2014-03-15-ubuntu-sublime-text-error/?utm_source=rss",
       "detailPath": "articles/1c139bd8e75283939d7dda72.json"
-    },
-    {
-      "id": "270c878eccdb7988f41a672e",
-      "title": "Android图像开源视图：SmartImageView",
-      "summary": "项目需要，开发中需要加载图片，自己要写图片从网上下载的方法，还要写缓存，等等。 在网上找到一个开源项目，smartImageVIew，支持从URL和通讯录中获取图像，可以替代Android标准的ImageView。 特征： 根据URL地址装载图像； 支持装载通讯录中的图像； 支持异步装载； 支持缓存； 这个是作者的项目主页，有使用方法。 http://loopj.com/android-smart-image-view/ 下载作者的jar包导入项目后，在xml中加入控件 <com.loopj.android.image.SmartImageView android:id=\"@+id/my_image\" /> 代码里找到该控件 SmartImageView myImage = (SmartImageView)…",
-      "image": null,
-      "publishedAt": "2013-09-11T15:19:11Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2013-09-11-android-smartimageview/?utm_source=rss",
-      "detailPath": "articles/270c878eccdb7988f41a672e.json"
     }
   ]
 }

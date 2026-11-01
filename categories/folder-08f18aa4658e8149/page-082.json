@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "9dcfab896d6c14f14a8e3d0c",
+      "title": "Emacs EAF插件打开浏览器只显示opening http://xxx.xxx的解决方法",
+      "summary": "检查是否安装全部依赖，如yay、pip等。我这里是由于没有安装pip导致的。 sudo pacman -S python-pip 安装好后，进入eaf安装目录 cd ~/.emacs.d/site-lisp/emacs-application-framework && ./install-eaf.py 重新安装eaf。等待脚本运行完成，打开emacs，输入 M-x eaf-install-and-update ，等待执行完成。 重新输入 M-x eaf-open-browser ，输入网址，即可正常访问网页。",
+      "image": null,
+      "publishedAt": "2025-04-29T10:02:49Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/emacs-eaf%E6%8F%92%E4%BB%B6%E6%89%93%E5%BC%80%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%AA%E6%98%BE%E7%A4%BAopening-http-xxx-xxx%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/",
+      "detailPath": "articles/9dcfab896d6c14f14a8e3d0c.json"
+    },
+    {
+      "id": "54002d8d73e9487f4e67a34b",
+      "title": "也許我們都是被埋沒的天才",
+      "summary": "想像一下如果牛頓沉迷手遊或莫札特整晚追劇...",
+      "image": null,
+      "publishedAt": "2025-04-29T08:14:16Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/boredom",
+      "detailPath": "articles/54002d8d73e9487f4e67a34b.json"
+    },
+    {
+      "id": "607a3859735262b9fe14f104",
+      "title": "四月｜物理掃除，賽博裝修",
+      "summary": "四月的倒數第二天是雷",
+      "image": null,
+      "publishedAt": "2025-04-29T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/apr-2025-recap/",
+      "detailPath": "articles/607a3859735262b9fe14f104.json"
+    },
+    {
       "id": "c5b143ceaa13fd4fb33287a1",
       "title": "FFmpeg",
       "summary": "最近收到一封讀者來信。信裡提到他的一個困擾：",
@@ -626,39 +659,6 @@
       "sourceTitle": "Prologue 序章",
       "link": "https://prologue.dev/blog/2025-q1-economic-talk",
       "detailPath": "articles/93c6d20245f6e42873356c26.json"
-    },
-    {
-      "id": "0059c7998bd5fa40f22275e6",
-      "title": "滿足者",
-      "summary": "根據心理學家 Barry Schwartz) 的理論，人在面對選擇時，可以分成兩種類型：",
-      "image": "https://wiwi.blog/assets/images/cat-2018-63ec8b97d96f8f9e48d8d98366ee8591.jpg",
-      "publishedAt": "2025-04-12T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/satisficers",
-      "detailPath": "articles/0059c7998bd5fa40f22275e6.json"
-    },
-    {
-      "id": "9f207896722ec14d468eb9bf",
-      "title": "osu!APIv1请求示例",
-      "summary": "前言 本文章使用Nodejs环境做演示。请求用户数据。代码中的APIKEY要在 osu官网‬ 申请。 const API_URL = \"osu.ppy.sh\"; const init = { k: \"YOUR_API_KEY\", type: \"string\", u: \"kyzzz5658\", }; const https = require(\"https\"); // 将参数序列化为查询字符串 const query = new URLSearchParams(init); const options = { hostname: API_URL, method: \"GET\", path: `/api/get_user?${query}` // 附加参数 }; const req = https.request(…",
-      "image": null,
-      "publishedAt": "2025-04-11T22:29:23Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/osu-apiv1%E8%AF%B7%E6%B1%82%E7%A4%BA%E4%BE%8B/",
-      "detailPath": "articles/9f207896722ec14d468eb9bf.json"
-    },
-    {
-      "id": "773b3ed10f35c6d454793976",
-      "title": "当 AI 成了我的学习搭子、朋友、同事",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-04-11T21:04:14Z",
-      "sourceId": "27898db8e4920870",
-      "sourceTitle": "孙玲在美国",
-      "link": "https://mp.weixin.qq.com/s/zJ1mRHyIKpLRSe00k8Sp8Q",
-      "detailPath": "articles/773b3ed10f35c6d454793976.json"
     }
   ]
 }

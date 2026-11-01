@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "807e407a0d55a2a536d97dd1",
+      "title": "我被物理治療師教育創業",
+      "summary": "閒聊 # 「哇，你比我小 10 歲，你現在有歷練了，應該對事業有一些想法了吧？」 『確實，最近有很多的想法轉變，也正在努力轉型。』 「這間物理治療所我開十年了，就差不多是在你這個年紀。」 第一步：開公司 # 接著，治療師建議我先去登記、開公司，無論製作音樂、演出還是什麼，有非常多公司只會跟有公司的單位合作，無法開發票是不會合作的。 也舉了一個他的魔術師朋友爲例子，自從開娛樂公司之後，各種公家機關以及上市櫃的活動就接不完；在開公司之前，則只能依靠活動公關公司發案，但那個費用就少了。 （我在商業圈做音響技術人員也有段時間了，聽過一些分享，那個費用可不止少一點啊！） 其實我一個製作人朋友，幾年前也是爲了開發票而開公司，那時候還跟我分享整個流程怎麼走，但我覺得暫時用不到就一直沒去做。身邊的兩個人都這樣建議，或許我該好…",
+      "image": null,
+      "publishedAt": "2026-08-01T12:04:38Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/physio-teach-entrepreneurship/",
+      "detailPath": "articles/807e407a0d55a2a536d97dd1.json"
+    },
+    {
+      "id": "8a3b65b204484ca4a78fa9c8",
+      "title": "盛夏歌单分享",
+      "summary": "那天又被工作弄得很心烦，开始听一些能让我心情稍微愉快一些的音乐。然后突然想到，最开始写博客的时候，有时候一篇博客就只是分享一首歌，为什么现在自己不写这样的博客了呢～那今天就来分享一些关于夏天的音乐吧！正好是八月那就分享 8 首好了🤣",
+      "image": null,
+      "publishedAt": "2026-08-01T08:18:48Z",
+      "sourceId": "129e0cebf1f26229",
+      "sourceTitle": "Albus' Pensieve | 邓布利多的冥想盆",
+      "link": "https://albuspensieve.github.io/2026/08/01/2026-08-01-summer-music/",
+      "detailPath": "articles/8a3b65b204484ca4a78fa9c8.json"
+    },
+    {
       "id": "bb9e3f3b7b9d00ee29b1bd1c",
       "title": "向云端｜西南自驾05 - 长沙",
       "summary": "",
@@ -637,28 +659,6 @@
       "sourceTitle": "Albus' Pensieve | 邓布利多的冥想盆",
       "link": "https://albuspensieve.github.io/2026/07/28/2026-07-28-mymory/",
       "detailPath": "articles/010e3a9c209a715fbcf78ed9.json"
-    },
-    {
-      "id": "d8379b66c4fa90f906890893",
-      "title": "2026-07-28 / [IMPORTANT] 丑搜服务可用性提醒",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-07-28T17:41:00Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/87/",
-      "detailPath": "articles/d8379b66c4fa90f906890893.json"
-    },
-    {
-      "id": "254920d3cdfc0ab801e92948",
-      "title": "Linux 伺服器被植入挖礦程式：從 load average 10.65 揪出整條攻擊鏈",
-      "summary": "這篇記錄了作者在一次例行效能健檢中,意外撞見自己家用伺服器被植入挖礦程式的完整抓賊過程,並整理成一份人人可照做的可疑進程自檢清單。起點是一個不該出現的數字:一台 16 執行緒的機器 load average 卻卡在 10.65。作者用 top 與 docker stats 揪出一個吃滿 10 核、隨機大小寫檔名的可疑程序,再靠 Linux 的 /proc 三件套(exe 指向已刪除的 /tmp 檔、cmdline、environ 溯源到某個 Docker 容器)確認它是挖礦程式,並把攻擊鏈拉出來:一個 port 直接綁在 0.0.0.0、繞過 nginx 對外裸露的 Next.js 容器,被 CVE-2025-66478(Next.js 16.0.6 的滿分 RCE、綽號 React2Shell)打穿。文中含…",
-      "image": null,
-      "publishedAt": "2026-07-28T16:55:03Z",
-      "sourceId": "bd51496b8ec0ca1d",
-      "sourceTitle": "Koimsurai 手記",
-      "link": "https://koimsurai.com/blog/catching-a-cryptominer",
-      "detailPath": "articles/254920d3cdfc0ab801e92948.json"
     }
   ]
 }

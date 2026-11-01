@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "c64e7c1a0c9e48af9ac6125f",
+      "title": "客戶自己來",
+      "summary": "這只是一篇抱怨文。 在活動工作時，常常客戶爲了省預算，自己處理活動流程、主持人、佈景等等的，這些我覺得還算常見，做得好與不好也不會影響到我，我自然沒意見，直到那天。 活動公司：交給專業的吧！ 那晚，到一家工廠的空地做晚會活動，客戶是電氣相關產業，於是說可以自己處理電，就不跟活動公司買工業發電機了。 客戶：我自己來就好 到了現場，我們在一些特定的位置要求了 110V、220V 的插座，結果對方才在講哪裡可以哪裡不行，總之就是不想弄的樣子，讓我非常煩躁。 後來燈光音響全部架完了，電還沒拉好給我，原來他們所有的線材都是用新的電線、新的插座，現場裁剪、製作大電流用的延長線，而且又叫新手做，可能要給他們練習。 最後弄了應該有 2 個小時吧，如果是請專門做活動的發電機廠商，大概會在我把喇叭放上喇叭架、準備開始配線時，就已…",
+      "image": "https://eddielv.com/musings/customer-diy/%E5%8E%BB%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%89%AA.png",
+      "publishedAt": "2026-09-27T09:05:52Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/customer-diy/",
+      "detailPath": "articles/c64e7c1a0c9e48af9ac6125f.json"
+    },
+    {
+      "id": "8daa7ffe9485fe681ee1b523",
+      "title": "Emacs 代碼块导出复用",
+      "summary": "Emacs 代碼块导出复用 在寫博客時，有時我需要顯示代碼，同時把代碼导出成 HTML，放在頁面裡用。例如在 一些關於連結的建議::進階樣式 裡，我要介紹外部連結的樣式，同時要將樣式應用在頁面上，原來我會這麼做： 一個代碼块 ( #+begin_src css ) 用於顯示代碼： #+begin_src css a[href^='http']:not([href^='http://taxodium.ink']):not([href^='https://taxodium.ink']) { &::after { /* 省略 */ } } #+end_src 一個导出块 ( #+begin_export html )，複製和代碼块相同的內容，把它导出到 HTML： #+begin_export html <styl…",
+      "image": null,
+      "publishedAt": "2026-09-27T08:45:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/reusing-emacs-code-block-when-export.html",
+      "detailPath": "articles/8daa7ffe9485fe681ee1b523.json"
+    },
+    {
+      "id": "d7aa522ab4f87899b667332b",
+      "title": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管",
+      "summary": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管 tecosaur/emacs-everywhere 是一個 Emacs 的擴展，它可以在任意輸入框輸入時，打開一個 Emacs Frame，把輸入框的內容複製到 Emacs 裡編輯， 編輯完成後，再把內容粘貼回原來的輸入框。 這樣相當於把任意輸入框「變成」Emacs，获得更好的、熟悉的輸入體驗。在一些需要輸入大量文本的場景，我就會用 Emacs Everywhere，例如在 Thunderbird 寫郵件、寫 issue、寫評論、在 LLM 對話頁寫較長的 prompt 等。 一段录󠄃屏，在 Kagi Assistant 頁面的輸入框裡有一些文字， 全選後，打開 Raycast，找到 Emacs Everywhere 的脚本命令并执行，…",
+      "image": null,
+      "publishedAt": "2026-09-27T07:55:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/use-emacs-everywhere-to-take-over-any-input-field-with-emacs.html",
+      "detailPath": "articles/d7aa522ab4f87899b667332b.json"
+    },
+    {
+      "id": "4c78c8ff8321d5c44108fd77",
+      "title": "起司與肉鬆",
+      "summary": "加購起司的選項總是誘惑（蛋餅／蔥抓餅／鍋燒意麵／火鍋／焗烤……），但我不喜歡起司當主角。 肉鬆放哪都害人掉價（個人想法啦個人想法），單吃卻無敵美味。",
+      "image": null,
+      "publishedAt": "2026-09-27T04:42:00Z",
+      "sourceId": "d6867515c49adbbd",
+      "sourceTitle": "Noa's Blog",
+      "link": "https://noa.bearblog.dev/cheese-and-meat-floss/",
+      "detailPath": "articles/4c78c8ff8321d5c44108fd77.json"
+    },
+    {
+      "id": "b180037f4c74ebefb80fd65b",
+      "title": "新的聲音設備桌面架",
+      "summary": "我的工作室聲音設備很單純，用 Flow8 當作錄音界面，再進到 YAMAHA 400i 的 Mixer。前者除了錄音用以外，還能調整 GEQ 校正喇叭，後者則只是單純用它的後級擴大機功能。 一直以來，我是用編曲桌附贈的桌面喇叭架，來把 YAMAHA 的 Mixer 架高，以方便操作，而 Flow8 直接放在桌上，老實說很難整理得漂亮。 （請到〈 2026 桌面設置 〉看我過往的桌面擺放！） 在 Maker World 上剛好滑到 @Grxmix 的作品〈 Studio Gear Organizer 〉，覺得這完全就符合我的需求啊！ Studio Gear Organizer 樣品圖 Studio Gear Organizer 圖紙 我將 YAMAHA Mixer 放上層、Flow8 放中層，整體非常合適！只可…",
+      "image": "https://eddielv.com/musings/audio-equipment-shelf/studio-gear-organizer-sample.webp",
+      "publishedAt": "2026-09-27T04:28:16Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/audio-equipment-shelf/",
+      "detailPath": "articles/b180037f4c74ebefb80fd65b.json"
+    },
+    {
+      "id": "eeaf82ffc19c1493399ac8af",
+      "title": "入蜀记 day491 呼吸自由、地板超市、唯有适应",
+      "summary": "「呼吸自由、地板超市、唯有适应。」",
+      "image": null,
+      "publishedAt": "2026-09-27T04:26:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_491/",
+      "detailPath": "articles/eeaf82ffc19c1493399ac8af.json"
+    },
+    {
       "id": "6f4beea5fd233f3c62b18434",
       "title": "水蒸蛋",
       "summary": "水蒸蛋 水蒸蛋有啥難的？打几個雞蛋，加點水，放鍋裡一蒸不就完了嗎？ 我也是這麼想的，但想要蒸出表面光滑、整體水嫩的水蒸蛋，還是有一些細節要注意的。 食材 雞蛋若干個，具體几個，取决於你想吃几個，以及容器大小。 烹飪 打 4 個雞蛋到容器裡，按 1:1.5 的蛋水比例加水 (你可以用半個蛋殻來量，量 3 次就是 1.5 倍左右的水了，蛋殻容量可能有偏差，水量可以適當加减) 加入少許盐 (稍微增加點味道) ，把蛋液攪匀，撇去表面的浮沫 用保鮮膜盖住容器，用牙簽在上面戳几個小洞 (保鮮膜可以避免鍋盖上的水滴落在蛋液上，开孔是為了適當透氣，這一步是蛋液光滑的關鍵) 水開後蒸 12 ~ 15 分鐘 (鍋裡水要够哦，別空燒) 加入少許醬油、少許香油 (也就是芝麻油。不要多，香過頭也不好吃，稍微有點香味就好) ，用勺子在表…",
@@ -593,72 +659,6 @@
       "sourceTitle": "KAIX.IN",
       "link": "https://kaix.in/2026/0922/",
       "detailPath": "articles/1bd20575c0f62aeb98816778.json"
-    },
-    {
-      "id": "0ac403dc8ce1d0d39427c0f4",
-      "title": "絕對音感 LV1，以及對我造成的困擾。",
-      "summary": "如標題，Eddie 開始發展出絕對音感了，而且並不是每天聽個什麼音訓練而成。 發現 # 以下是某些擁有絕對音感的表象： 電扇開到最大的聲音是 A？哇真的！ 哼一下練過的鋼琴曲目好了｜Mi Sol Sol - ｜ Re Sol Sol - ｜ 等等，我哼的好像是正確的音高耶？ 某次洗澡隨機放沒聽過的曲子，這… 該不會是 A♭maj7 吧？於是我光這身子衝到電鋼琴旁對答案，還真的是。雖然還不能聽出所有音，但搭配相對音概念，我知道結構是 R735，也就能推算出 A♭ G C E♭ 了。 能夠直接唱出吉他的六條空弦音 EADGBE，正確率極高。 也還是會有失靈的時候，總之還不穩定，姑且已經獲得這個技能，但還停留在 LV1。 負面影響 # 沒錯，絕對音感對我造成負面影響了，在前幾天練團時，在即興的段落被顯現出來。 原本…",
-      "image": "https://eddielv.com/musings/absolute-pick-lv1/word-and-color.png",
-      "publishedAt": "2026-09-22T05:29:07Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/absolute-pick-lv1/",
-      "detailPath": "articles/0ac403dc8ce1d0d39427c0f4.json"
-    },
-    {
-      "id": "5b9f5337f8fc11bfd30191f1",
-      "title": "Moveable Do 還是有 Fixed Do 給不了的好處的",
-      "summary": "Moveable Do （首調唱名法）與 Fixed Do （固定調唱名法）到底哪個「比較好」，很常成爲玩音樂的人們茶餘飯後的話題。不過如果想要「晉升到專業音樂家等級」，的確應該要像好和弦網站寫的那樣： 兩種都要練熟 ​啦！ 但是如果 機掰地 真的硬要選一個呢？我個人覺得優先學 Moveable Do 會比較「有用」。這是因爲練熟了 Moveable Do 後，可以給到我們 Fixed Do 給不了的優勢： 內化對一首曲子「調性（有無） 1 」的判斷能力 。 熟悉了 Moveable Do 後，當我們隨便聽到某個樂曲段落時，雖然我們未必能夠準確判斷它的實際音高，但透過 Moveable Do 的訓練，我們仍能夠聽出其（當下最合理的）調性 2 ，以及該樂曲段落的各別組成音在調性上扮演什麼角色。 換句話說，能判斷…",
-      "image": "https://microblog.ttheng.com/blog/img223.jpg",
-      "publishedAt": "2026-09-22T03:15:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/moveable-do-over-fixed-do/",
-      "detailPath": "articles/5b9f5337f8fc11bfd30191f1.json"
-    },
-    {
-      "id": "09e7195f30b3fe6f8c362220",
-      "title": "晚上不睡覺 BBP9",
-      "summary": "這是 Eddie 參加「 BBP9 」的投稿。本月主題「 晚上不睡覺 」， Jason Lai 主持。若有自己的部落格，歡迎一起來參加！ 現在不睡覺 # 時間到了 -> 刷牙 -> 靈機一動 -> 興奮 -> 不睡覺研究 這是我 現在 若晚上不睡覺的原因，最嚴重的時候，是已經躺好、關燈、蓋好棉被，結果爬起床下樓做事。 總是在睡前特別容易有靈感，可能是對於 吉他效果器 音色的設計，可能是對 網站 的設計，也可能是突然對 發聲 有想法、想要嘗試。 這些時候往往也最能進入 心流 ，或許是因爲目標很直接，效率因此大幅提升。 前幾個月時，我還會一晚上不睡覺看動漫，最近不會了，因爲要做的事情太多，沒有那麼多精力。 大學時候不睡覺 # 唸書 # 大二之後開始沒有想要走那條路了，所以心思都不在課業上，每次考試前一週才會開始不…",
-      "image": "https://eddielv.com/musings/stay-up/%E5%9C%A8%E5%AD%B8%E6%A0%A1%E7%86%AC%E5%A4%9C.png",
-      "publishedAt": "2026-09-22T01:43:13Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/stay-up/",
-      "detailPath": "articles/09e7195f30b3fe6f8c362220.json"
-    },
-    {
-      "id": "67b324b6e0163f706c322f9f",
-      "title": "如果有的话会很爽的博客设计",
-      "summary": "因为 搬迁了博客 ，现在看别人的博客也会留意到内容和功能设计。 然后就像乌鸦一样，见到亮闪闪的（带来幸福和便利的设计）就叼回来收藏，然后筑京观一样堆陈出来让天下人见识见识。 （什么比喻。） 给周记月刊做索引 # 在Cytrogen的博客看到了Michael Harley发起的讨论 。 Michael Harley 不太喜欢周记月刊这类「大杂烩文章」。也许是因为这类文章没有中心主旨？ 我喜欢看周记月刊这类大杂烩文章。 很多作者会在周记月刊里简短地提到有趣的书籍、文章、电影、播客等等，我藉此吃了很多安利。 （从读者的角度，如果有小标题可供扫读就更好了）。 有时候作者为什么读某本书、某个电影，和当月/当周的经历有关系，拆出来就不好玩了。 看到一个陌生博客的文章列表全是「周记-1」「周记-2」「周记-3」确实挺让人望…",
-      "image": null,
-      "publishedAt": "2026-09-22T00:20:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/good-design/",
-      "detailPath": "articles/67b324b6e0163f706c322f9f.json"
-    },
-    {
-      "id": "548a0d6f9f90325a224a01ac",
-      "title": "從 FB 垃圾山挖寶",
-      "summary": "昨天在我的 Facebook 備份裡面考古，挖出了許多 2010 年代的有趣東西：",
-      "image": null,
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/fb-archive-dig",
-      "detailPath": "articles/548a0d6f9f90325a224a01ac.json"
-    },
-    {
-      "id": "ea448b7cd412a69ba6b0b9a1",
-      "title": "用了三個月終於看完《心流（Flow）》",
-      "summary": "前言 # 這大概是我今年看過最難以下嚥的書，明明可以用 100 頁就講完的事情，卻要用 400 耶講，看得很累。本書一共 10 章，但我看到第 7 章就開始注意力渙散了。 「啊，又換個故事、換個主角來舉例了啊。」 「這個概念我已經知道了，可以不要再來一遍嗎？」 撇開這點不談，心流本身的概念還算是好書。 重點整理 # 精神熵：各種注意力不集中的情況，用這個名詞來稱呼，表示精神能量低下。 心流：解決精神熵的方式就是進入心流。 所謂心流，是指維持意識中資訊的秩序很順利（就是反精神熵的意思）。 心流有很多特徵，最明顯的情況是大腦把時間感完全放掉，例如：體感 5 分鐘但已經過了 1 小時，也可能體感 5 小時但其實只過了 1 分鐘。 另一個特徵是：自我意識消失，也就是專注到忘記自己存在。 總之，在這個狀態下，注意力非常…",
-      "image": "https://eddielv.com/articles/flow/%E6%84%9B%E6%85%95%E8%99%9B%E6%A6%AE.jpg",
-      "publishedAt": "2026-09-21T15:56:17Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/flow/",
-      "detailPath": "articles/ea448b7cd412a69ba6b0b9a1.json"
     }
   ]
 }

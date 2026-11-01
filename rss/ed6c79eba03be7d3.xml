@@ -12,7 +12,7 @@
 	<atom:link href="https://www.raychase.net/feed" rel="self" type="application/rss+xml" />
 	<link>https://www.raychase.net</link>
 	<description>一个纯正程序员的啰嗦</description>
-	<lastBuildDate>Mon, 28 Sep 2026 04:45:35 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 01 Nov 2026 04:11:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -1612,7 +1612,7 @@ docker compose logs -f</code></pre>
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code>~/.acme.sh/acme.sh --install-cert -d raychase.net -d rayxiong.me\
+<pre class="wp-block-code"><code>~/.acme.sh/acme.sh --install-cert -d raychase.net -d rayxiong.me \
 --key-file /etc/letsencrypt/live/www.raychase.net/privkey.pem \
 --fullchain-file /etc/letsencrypt/live/www.raychase.net/fullchain.pem \
 --reloadcmd "/usr/local/nginx/sbin/nginx -s reload"</code></pre>
@@ -1841,7 +1841,7 @@ echo '&#60;link rel="canonical" href="https://www.raychase.net' . esc_url( $_SER
 
 
 
-<pre class="wp-block-code"><code>~/.acme.sh/acme.sh --install-cert -d raychase.net -d rayxiong.me\
+<pre class="wp-block-code"><code>~/.acme.sh/acme.sh --install-cert -d raychase.net -d rayxiong.me \
 --key-file /etc/letsencrypt/live/www.raychase.net/privkey.pem \
 --fullchain-file /etc/letsencrypt/live/www.raychase.net/fullchain.pem \
 --reloadcmd "/usr/local/nginx/sbin/nginx -s reload"</code></pre>

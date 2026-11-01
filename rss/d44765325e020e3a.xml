@@ -24,14 +24,187 @@
     <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
-    <lastBuildDate>Wed, 28 Oct 2026 02:00:00 +0000</lastBuildDate>
-    <pubDate>Wed, 28 Oct 2026 02:00:00 +0000</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2026 02:00:00 +0000</lastBuildDate>
+    <pubDate>Sun, 01 Nov 2026 02:00:00 +0000</pubDate>
     <generator>Eleventy</generator>
     <webMaster>mail@brennanbrown.ca (Brennan Kenneth Brown)</webMaster>
     <source:self>https://brennan.day/feed.xml</source:self>
-    <source:localTime>October 28, 2026 at 10:40 AM</source:localTime>
+    <source:localTime>October 31, 2026 at 11:57 PM</source:localTime>
     <source:account service="mastodon">@brennan@social.lol</source:account>
     <source:account service="bluesky">brennan.day</source:account>
+    
+      
+      
+      
+      <item>
+        <title>I Am Relentless and Undaunted</title>
+        <link>https://brennan.day/i-am-relentless-and-undaunted/</link>
+        <guid isPermaLink="true">https://brennan.day/i-am-relentless-and-undaunted/</guid>
+        <author>mail@brennanbrown.ca (Brennan Kenneth Brown)</author>
+        <dc:creator>Brennan Kenneth Brown</dc:creator>
+        <dc:date>2026-10-31T20:00:00.000-06:00</dc:date>
+        <dc:language>en</dc:language>
+        <dc:identifier>https://brennan.day/i-am-relentless-and-undaunted/</dc:identifier>
+        <dc:source>https://brennan.day</dc:source>
+        <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+        
+        <pubDate>Sun, 01 Nov 2026 02:00:00 +0000</pubDate>
+        <description>AO3 went dark after a security breach, and fanfiction.lol doubled overnight. On the blur of breaches and Sam Altman calling it &#39;terrible&#39; that people have RAM in their PCs. On the end of affordable hardware and DDR4 prices quintupling, 2026 hard drive production sold out to hyperscalers, and what we surrender when we&#39;re compelled to rent and lease and borrow. On Repair Cafés, Buy Nothing groups, Snowflake proxies, ArchiveTeam Warriors, and two junk-bin computers joining the server farm.</description>
+        <source:markdown>
+          <![CDATA[AO3 went dark after a security breach, and fanfiction.lol doubled overnight. On the blur of breaches and Sam Altman calling it &#39;terrible&#39; that people have RAM in their PCs. On the end of affordable hardware and DDR4 prices quintupling, 2026 hard drive production sold out to hyperscalers, and what we surrender when we&#39;re compelled to rent and lease and borrow. On Repair Cafés, Buy Nothing groups, Snowflake proxies, ArchiveTeam Warriors, and two junk-bin computers joining the server farm.]]>
+        </source:markdown>
+        
+          <category>personal essay</category>
+        
+          <category>Social Commentary</category>
+        
+          <category>Digital Culture</category>
+        
+          <category>Small Web</category>
+        
+          <category>IndieWeb</category>
+        
+          <category>AI</category>
+        
+          <category>generative AI</category>
+        
+          <category>security</category>
+        
+          <category>open source</category>
+        
+          <category>self-hosting</category>
+        
+          <category>fanfiction</category>
+        
+          <category>fandom</category>
+        
+          <category>mutual aid</category>
+        
+          <category>community</category>
+        
+          <category>activism</category>
+        
+          <category>optimism</category>
+        
+        <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
+          <![CDATA[<p>The past few days, I have been a little busy. Two days ago, <a href="https://archiveofourown.org/">Archive of Our Own</a>, the largest fanfiction website on the net, announced <a href="https://www.otwstatus.org/">unexpected maintenance</a>, which then turned out to be <a href="https://www.404media.co/archive-of-our-own-ao3-down-maintenance/">a security breach</a> resulting in the site being down for the next two to four weeks.</p>
+<p>As some of you may be aware, I run my own transformative works archive, <a href="https://fanfiction.lol">fanfiction.lol</a>, using the open-source <a href="https://github.com/otwcode/otwarchive">OTWArchive codebase</a>. I've <a href="https://brennan.day/announcing-fanfiction-lol-a-manifesto-on-human-creativity-and-ao3/">written about this before</a> on my blog. By chance, I audited and upgraded the software on the server a day before AO3's outage, and was prepared for the influx of new users.</p>
+<p>We doubled in size and went from around 300 users to over 600 as of writing, and are currently the only AO3-fork with open registration. Fandom and fanfiction may seem like a small thing to some, but this unplanned, prolonged outage <a href="https://www.nytimes.com/2026/10/30/arts/ao3-fan-fiction-site-down.html">was covered by <em>The New York Times</em></a>. It is no small thing.</p>
+<p>Fanfiction.lol <em>is</em> a small thing, however. And I'm glad I can provide a handful of AO3 users a place to write and read works until the site is back online. For perspective: the much more popular and longstanding <a href="https://squidgeworld.org">SquidgeWorld Archive</a> gained over 12,000 new users in the same time frame.</p>
+<p>With this, I've been taking stock of what I have and what I can offer the world.</p>
+<h2 id="the-end-of-an-era" tabindex="-1">The End of an Era <a class="header-anchor" href="#the-end-of-an-era" aria-hidden="true"></a></h2>
+<p>The headlines of security breaches are speeding by in a blur, aren't they? Only yesterday, <a href="https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea">6 billion dollars was stolen from Binance</a>, and there was yet <a href="https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/">another critical vulnerability, this one found in the Linux kernel</a>.</p>
+<p>And hardware has been affected even more than software. OpenAI CEO Sam Altman went on record saying <a href="https://finance.yahoo.com/technology/ai/articles/quite-terrible-sam-altman-says-184500058.html">it's &quot;terrible&quot; that people have RAM in their PCs instead of in data centres</a>. As though they still somehow don't have enough.</p>
+<p>The rich and ruling class consistently push the envelope, seeing what exploitation and degradation will be accepted and normalised. It was only a couple of years ago that consumer hardware costs were at an all-time low. <a href="https://brennan.day/homelab-for-the-beginner-you-can-self-host-your-own-server-on-50-hardware/">My idealistic call-to-action</a> that anybody could start their own server with a spare computer has become increasingly unfathomable.</p>
+<p>I decided to compare the all-time low price to the most recently tracked price (USD) for several popular DDR4 SODIMM modules—the laptop-sized sticks that fit old ThinkPads and mini PCs:</p>
+<table>
+<thead>
+<tr>
+<th>Product (DDR4 SODIMM)</th>
+<th>Historical Low</th>
+<th>Recent Price</th>
+<th>Increase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://pangoly.com/en/price-history/crucial-8gb-single-ddr4-2400-pc4-19200-260-pin-sodimm">Crucial 8GB 2400MHz</a></td>
+<td>$14.99 (Jun 2025)</td>
+<td>$58.04 (Sep 2026)</td>
+<td>~3.9x</td>
+</tr>
+<tr>
+<td><a href="https://pricehistory.app/p/lexar-sodimm-ddr4-ram-8gb-3200-mhz-UXV79Ace">Lexar 8GB 3200MHz</a></td>
+<td>$17.00 (Mar 2025)</td>
+<td>$79.99 (Sep 2026)</td>
+<td>~4.7x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B01BIWMWVS">Crucial 16GB Kit (2x8GB) 2400MHz</a></td>
+<td>$28.99 (Feb 2025)</td>
+<td>$138.79 (Mar 2026)</td>
+<td>~4.8x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B08C4X9VR5">Crucial 32GB Kit (2x16GB) 3200MHz</a></td>
+<td>$44.99 (Mar 2025)</td>
+<td>$228.98 (Oct 2026)</td>
+<td>~5.1x</td>
+</tr>
+</tbody>
+</table>
+<p>The price of a single DDR4 memory module <a href="https://capitalandcompute.net/memory-prices/history/">went from $12.18 to $47.00</a> between November 2025 and this past week.</p>
+<p>And storage? I know five months ago, I told you to budget $20–$40 for a used SATA SSD like the Crucial MX500. Here are prices now:</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Historical Low</th>
+<th>Recent Price</th>
+<th>Increase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B077SF8KMG">Crucial MX500 1TB SATA SSD</a></td>
+<td>$47.99 (Feb 2024)</td>
+<td>$364.99 (Oct 2026)</td>
+<td>~7.6x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B08QBJ2YMG">Samsung 870 EVO 1TB SATA SSD</a></td>
+<td>$49.11 (Jul 2023)</td>
+<td>$334.76 (Oct 2026)</td>
+<td>~6.8x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B0C8WPRM9T">WD Blue SN580 2TB NVMe SSD</a></td>
+<td>$89.07 (Oct 2023)</td>
+<td>$313.70 (Oct 2026)</td>
+<td>~3.5x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B07H2RR55Q">Seagate BarraCuda 2TB HDD</a></td>
+<td>$44.00 (Sep 2023)</td>
+<td>$148.47 (Oct 2026)</td>
+<td>~3.4x</td>
+</tr>
+<tr>
+<td><a href="https://camelcamelcamel.com/product/B0BDXSK2K7">WD Red Plus 4TB NAS HDD</a></td>
+<td>$69.99 (Apr 2023)</td>
+<td>$273.99 (Oct 2026)</td>
+<td>~3.9x</td>
+</tr>
+</tbody>
+</table>
+<p>Western Digital and Seagate have <a href="https://www.heise.de/en/news/WD-and-Seagate-confirm-Hard-drives-for-2026-sold-out-11178917.html">both confirmed their 2026 production is sold out</a>, to the hyperscalers building AI data centres, with capacity <a href="https://www.tomshardware.com/pc-components/ssds/enterprise-ssds-now-cost-18-times-more-than-hard-drives-per-terabyte">allocated through 2027</a>.</p>
+<p>Manufacturers are also systematically pulling cheaper models and phasing out lower-spec machines because <a href="https://www.theguardian.com/business/2026/may/06/ramageddon-cheap-phones-laptops-macbooks-ps5s-ai-chips">their already thin profit margins can no longer absorb the component costs</a>. Micron has stated that there is <a href="https://www.tradingview.com/news/gurufocus:f7e600da5094b:0-micron-has-surprising-message-on-memory-demand-through-2028/">&quot;no line of sight to when supply and demand will return to balance&quot;</a>.</p>
+<p>It is clear that the era of affordable, accessible hardware has come to an end. The cost of living continues to get worse. We will increasingly be expected to surrender ownership and autonomy, and will be compelled to rent and lease and borrow. This is only one example of many. And, in sick irony, many of us are compelled to use the generative artificial intelligence at our jobs—the very thing causing this economic catastrophe in the first place.</p>
+<p>We must use what we have, and we must use it for the sake of others. If you are lucky enough to have bought hardware before the shortage, or simply have disposable income, consider how you can contribute to the commons.</p>
+<p>Windows 10 extended support <a href="https://www.techradar.com/computing/windows/microsoft-extends-windows-10-support-out-of-the-blue-consumers-now-get-updates-for-another-year-to-october-2027">ends on October 12, 2027</a>, and as a result, millions of computers that can't run Windows 11 are headed for landfill. Put Linux on them instead! <a href="https://endof10.org/">End of 10</a> lists people and shops near you who'll help. If you'd rather be the one helping, then Repair Café offers a <a href="https://www.repaircafe.org/en/linux-repair-cafe/">Linux Repair Café starter kit</a>.</p>
+<p>Next, empty your junk drawer. Any hardware you have is most likely worth more now than the day you bought it, and someone needs it. Post it to your local <a href="https://buynothingproject.org/">Buy Nothing</a> group, or bring it to a <a href="https://www.repaircafe.org/en/visit/">Repair Café</a>.</p>
+<p>Donate your bandwidth by installing things like the <a href="https://snowflake.torproject.org/">Snowflake</a> browser extension, which lets people in censored countries reach Tor through your connection. If you have a spare computer, <a href="https://community.torproject.org/relay/">run a relay</a>.</p>
+<p>Help archive what's disappearing. The <a href="https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior">ArchiveTeam Warrior</a> is a virtual machine you can use that downloads at-risk websites and uploads them to the Internet Archive. And donate to projects like <a href="https://donate.transformativeworks.org/campaign/donate-to-the-organization-for-transformative-works/c519319">the OTW</a> and <a href="https://archive.org/donate">the Internet Archive</a>.</p>
+<p>In the meantime, I've been lucky enough to find two additional computers in my basement electronic junk bin to add to my humble server farm. A ThinkPad L512 and an HP Compaq 8200 Elite USDT. Both only have 4GB of DDR3 RAM and 7200RPM HDDs for storage. And yet even this is enough and so capable of giving.</p>
+<p>It is clear we are in a weird twilight now—awkwardly set between two different times, and I cannot tell if we are watching a sunrise or sunset.</p>
+<p>But I do not shudder or despair. In fact, I'm more hopeful and optimistic for the future than I ever have been in my entire life. This is really not just about websites and computers. Many of us are being pushed into a corner, and a fire is being lit under us. The status quo will no longer be viable, let alone compelling. Nothing scares me anymore. For what do we have to lose at this point? We can work on a better future together, and I know I am relentless and undaunted.</p>
+<p>You know, the HP's <a href="https://www.manualshelf.com/manual/hp/8200-elite/quickspecs-english/page-10.html">spec sheet</a> has one rule about memory: the black socket must always be filled. Leave it empty and the computer refuses to start.</p>
+<p>East of Montreal, in Vallée-du-Richelieu, <a href="https://www.repaircafe.org/en/the-worlds-4000th-repair-cafe-is-in-canada/">the world's 4,000th Repair Café</a> opened on October 4th. Volunteer electricians, aeronautical specialists, seamstresses, and upholsterers all help others.</p>
+<p>Most of us drawer what we don't use, collecting dust. But you can offer so much to strangers with what you already have. They want our memory in their data centres? Let them want it. Mine is in the filled black socket. I will keep writing, keep creating, keep offering as much as I can to the world. I did not ask for anybody's permission to do so. No amount of defeat felt by others will stop me.</p>
+
+      <hr />
+      <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">
+        <p><strong>About Brennan Kenneth Brown</strong></p>
+        <p>Queer Métis writer, cultural critic, and web developer based in Mohkínstsis (Calgary), Treaty 7 territory. Author of nine books and counting, the founder of Fireweed Writing School and Berry House Studio, and of Write Club at Mount Royal University. His work has been cited in Le Monde and other publications.</p>
+        <p><strong>Enjoy this content?</strong> Support my work and help me create more:</p>
+        <p>
+          <a href="https://patreon.com/brennankbrown" style="color: #ff424d; text-decoration: underline; font-weight: bold;" rel="me">Patreon</a> |
+          <a href="https://ko-fi.com/brennan" style="color: #29abe0; text-decoration: underline; font-weight: bold;" rel="me">Ko-fi</a> |
+          <a href="https://github.com/sponsors/brennanbrown" style="color: #333; text-decoration: underline; font-weight: bold;" rel="me">GitHub Sponsors</a>
+        </p>
+      </blockquote>]]>
+        </content:encoded>
+      </item>
     
       
       
@@ -6654,334 +6827,6 @@ Is the term webmaster an accurate description of the responsibilities of today�
 </li>
 </ol>
 </section>
-
-      <hr />
-      <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">
-        <p><strong>About Brennan Kenneth Brown</strong></p>
-        <p>Queer Métis writer, cultural critic, and web developer based in Mohkínstsis (Calgary), Treaty 7 territory. Author of nine books and counting, the founder of Fireweed Writing School and Berry House Studio, and of Write Club at Mount Royal University. His work has been cited in Le Monde and other publications.</p>
-        <p><strong>Enjoy this content?</strong> Support my work and help me create more:</p>
-        <p>
-          <a href="https://patreon.com/brennankbrown" style="color: #ff424d; text-decoration: underline; font-weight: bold;" rel="me">Patreon</a> |
-          <a href="https://ko-fi.com/brennan" style="color: #29abe0; text-decoration: underline; font-weight: bold;" rel="me">Ko-fi</a> |
-          <a href="https://github.com/sponsors/brennanbrown" style="color: #333; text-decoration: underline; font-weight: bold;" rel="me">GitHub Sponsors</a>
-        </p>
-      </blockquote>]]>
-        </content:encoded>
-      </item>
-    
-      
-      
-      
-      <item>
-        <title>Advanced Webweaving: Auditing Against Specification.Website</title>
-        <link>https://brennan.day/advanced-webweaving-auditing-against-specification-website/</link>
-        <guid isPermaLink="true">https://brennan.day/advanced-webweaving-auditing-against-specification-website/</guid>
-        <author>mail@brennanbrown.ca (Brennan Kenneth Brown)</author>
-        <dc:creator>Brennan Kenneth Brown</dc:creator>
-        <dc:date>2026-08-15T20:00:00.000-06:00</dc:date>
-        <dc:language>en</dc:language>
-        <dc:identifier>https://brennan.day/advanced-webweaving-auditing-against-specification-website/</dc:identifier>
-        <dc:source>https://brennan.day</dc:source>
-        <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
-        
-        <pubDate>Sun, 16 Aug 2026 02:00:00 +0000</pubDate>
-        <description>I ran brennan.day against The Website Specification&#39;s 140-item checklist covering foundations, SEO, accessibility, security, performance, privacy, and resilience. Notes on a broken web manifest I&#39;d never noticed, why I don&#39;t have cookie consent banners, CSP debugging with third-party services, service worker CORS issues, a bunch of small improvements, and the list of things I didn&#39;t fix.</description>
-        <source:markdown>
-          <![CDATA[I ran brennan.day against The Website Specification&#39;s 140-item checklist covering foundations, SEO, accessibility, security, performance, privacy, and resilience. Notes on a broken web manifest I&#39;d never noticed, why I don&#39;t have cookie consent banners, CSP debugging with third-party services, service worker CORS issues, a bunch of small improvements, and the list of things I didn&#39;t fix.]]>
-        </source:markdown>
-        
-          <category>eleventy</category>
-        
-          <category>netlify</category>
-        
-          <category>security</category>
-        
-          <category>accessibility</category>
-        
-          <category>performance</category>
-        
-          <category>seo</category>
-        
-          <category>web development</category>
-        
-          <category>technical</category>
-        
-          <category>tutorial</category>
-        
-        <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">
-          <![CDATA[<p>During my time on the omg.lol IRC channel (a place I find inspiration for many posts, it seems!), <a href="https://skippy.omg.lol/">Skippy</a> shared an interesting website, <a href="https://specification.website/">The Website Specification</a>.</p>
-<p>Now, I have to admit the site has a certain questionable aesthetic, but the checklist is valuable nonetheless. I've always tried to make sure my web development follows good practices and good hygiene, but there were plenty of things I've never really heard of or come across before.</p>
-<p>It's a big list. Foundations, SEO, accessibility, security, well-known URIs, &quot;agent readiness&quot; (bleh), performance, privacy, resilience, internationalisation. There's around 140 items to check off, each with a one-line justification for why it matters and a <code>Required</code> / <code>Recommended</code> / <code>Optional</code> / <code>Avoid</code> tag.</p>
-<p>Being the maximalist I am (in other words, I enjoy implementing functionality to my site as a means of procrastinating writing) I decided to go through, one-by-one, and see what I would need to change or add to my site.</p>
-<h2 id="a-deliberate-skip" tabindex="-1">A Deliberate Skip <a class="header-anchor" href="#a-deliberate-skip" aria-hidden="true"></a></h2>
-<p>Before anything else, I skipped the entire &quot;Agent Readiness&quot; category. I'm not going to add a <code>llms.txt</code> to my codebase, or per-page markdown endpoints. It's quite a cruel joke that the generative AI gets simple, readable markdown while the rest of us are stuck with far more complex HTML, isn't it? Instead of figuring out a way to get web browsers to display Markdown directly, we've duct-taped a solution for robots.</p>
-<p>Anyways, that's enough ranting about that for now. In addition, as I've already written about, I have no AI-crawler-specific <code>robots.txt</code> rules. The game of cat-and-mouse writing elaborate blockades is something I'm not interested in. The only winning move is not to play. That said, I did actually add some fun honeypots that you can find if you try to visit high-risk application paths, default CMS/root paths, secrets &amp; configuration file locations, or API &amp; discovery endpoints. Maybe I'll make another post for that if there's interest.</p>
-<p>Agent readiness, as a category, assumes you <em>want</em> agents reading your site efficiently. Unlike search engine optimization (which is usually snake oil itself), optimization for LLMs just makes your content easier to steal, and doesn't help getting more humans to your website.</p>
-<h2 id="a-silly-bug" tabindex="-1">A Silly Bug <a class="header-anchor" href="#a-silly-bug" aria-hidden="true"></a></h2>
-<p>When you go over an audit like this, it makes you re-examine things you've written ages ago. In the case of my <code>site.webmanifest</code>, it made me realize it had empty <code>name</code> and <code>short_name</code> fields:</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token property">"short_name"</span><span class="token operator">:</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token property">"icons"</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"src"</span><span class="token operator">:</span><span class="token string">"/android-chrome-192x192.png"</span><span class="token punctuation">,</span> ...</code></pre>
-<p>Any Android user who tried to &quot;Add to Home Screen&quot; would've gotten a shortcut with no label. Even worse, the icon paths were root-relative (<code>/android-chrome-192x192.png</code>) when the actual files live at <code>/assets/images/favicon/android-chrome-192x192.png</code>. The manifest has been silently erroring and pointing at 404s since whenever I first generated it with some online favicon tool and never looked at the output again. I fixed both:</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"brennan.day"</span><span class="token punctuation">,</span>
-  <span class="token property">"short_name"</span><span class="token operator">:</span> <span class="token string">"brennan.day"</span><span class="token punctuation">,</span>
-  <span class="token property">"start_url"</span><span class="token operator">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
-  <span class="token property">"scope"</span><span class="token operator">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
-  <span class="token property">"icons"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span><span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/assets/images/favicon/android-chrome-192x192.png"</span><span class="token punctuation">,</span> <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"192x192"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span><span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/assets/images/favicon/android-chrome-512x512.png"</span><span class="token punctuation">,</span> <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"512x512"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span><span class="token punctuation">}</span>
-  <span class="token punctuation">]</span><span class="token punctuation">,</span>
-  <span class="token property">"theme_color"</span><span class="token operator">:</span> <span class="token string">"#fbf1c7"</span><span class="token punctuation">,</span>
-  <span class="token property">"background_color"</span><span class="token operator">:</span> <span class="token string">"#fbf1c7"</span><span class="token punctuation">,</span>
-  <span class="token property">"display"</span><span class="token operator">:</span> <span class="token string">"standalone"</span>
-<span class="token punctuation">}</span></code></pre>
-<p>In addition, the <code>&lt;meta name=&quot;theme-color&quot;&gt;</code> was embarrassingly set to <code>#65312fff</code>. I have no idea when I wrote out this typo—8-digit hex values do actually have utility, with the extra two digits <a href="https://www.quackit.com/css/color/values/css_hex_color_notation_8_digits.cfm">adding alpha channel for transparency</a>, but that wasn't what was happening here. Anyways, I split the hex into a light/dark pair instead, matching my site's palette:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>theme-color<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#fbf1c7<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(prefers-color-scheme: light)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>theme-color<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#282828<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(prefers-color-scheme: dark)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
-<h2 id="security-headers-or-what-i-d-been-putting-off" tabindex="-1">Security Headers, or: What I'd Been Putting Off <a class="header-anchor" href="#security-headers-or-what-i-d-been-putting-off" aria-hidden="true"></a></h2>
-<p>A lot of work went into security headers. My <code>netlify.toml</code> initially had <code>X-Frame-Options</code>, which is <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">an outdated</a> <code>X-XSS-Protection</code> header that I removed, as it does nothing in any current browser, and <a href="https://specification.website/">the spec</a> says to avoid using it.</p>
-<p>I had no <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">Content Security Policy</a>, no <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security">HSTS</a>, and nothing about <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/crossOriginIsolated">cross-origin isolation</a>.</p>
-<p>Writing a CSP for a site that embeds webring widgets and uses KaTeX, Mermaid, and has an IndieAuth comment flow took a bit of work:</p>
-<pre class="language-perl"><code class="language-perl">Content<span class="token operator">-</span>Security<span class="token operator">-</span>Policy <span class="token operator">=</span> <span class="token keyword">default</span><span class="token operator">-</span>src <span class="token string">'self'</span><span class="token punctuation">;</span>
-  script<span class="token operator">-</span>src <span class="token string">'self'</span> <span class="token string">'unsafe-inline'</span> <span class="token string">'wasm-unsafe-eval'</span>
-    https<span class="token punctuation">:</span><span class="token regex">//cloud</span><span class="token operator">.</span>umami<span class="token operator">.</span>is https<span class="token punctuation">:</span><span class="token operator">//</span>neatstats<span class="token operator">.</span>net https<span class="token punctuation">:</span><span class="token regex">//cdn</span><span class="token operator">.</span>jsdelivr<span class="token operator">.</span>net
-    https<span class="token punctuation">:</span><span class="token operator">//</span>webring<span class="token operator">.</span>fun https<span class="token punctuation">:</span><span class="token operator">//</span>silly<span class="token operator">.</span>possiblyaxolotl<span class="token operator">.</span>com
-    https<span class="token punctuation">:</span><span class="token operator">//</span>bubbles<span class="token operator">.</span>town https<span class="token punctuation">:</span><span class="token operator">//</span>status<span class="token operator">.</span>lol<span class="token punctuation">;</span>
-  style<span class="token operator">-</span>src <span class="token string">'self'</span> <span class="token string">'unsafe-inline'</span> https<span class="token punctuation">:</span><span class="token regex">//cdn</span><span class="token operator">.</span>jsdelivr<span class="token operator">.</span>net
-    https<span class="token punctuation">:</span><span class="token operator">//</span>silly<span class="token operator">.</span>possiblyaxolotl<span class="token operator">.</span>com<span class="token punctuation">;</span>
-  img<span class="token operator">-</span>src <span class="token string">'self'</span> data<span class="token punctuation">:</span> https<span class="token punctuation">:</span><span class="token punctuation">;</span>
-  font<span class="token operator">-</span>src <span class="token string">'self'</span> data<span class="token punctuation">:</span> https<span class="token punctuation">:</span><span class="token regex">//cdn</span><span class="token operator">.</span>jsdelivr<span class="token operator">.</span>net<span class="token punctuation">;</span>
-  connect<span class="token operator">-</span>src <span class="token string">'self'</span> https<span class="token punctuation">:</span><span class="token regex">//cloud</span><span class="token operator">.</span>umami<span class="token operator">.</span>is https<span class="token punctuation">:</span><span class="token regex">//</span><span class="token operator">*</span><span class="token operator">.</span>supabase<span class="token operator">.</span>co
-    https<span class="token punctuation">:</span><span class="token operator">//</span>webring<span class="token operator">.</span>fun https<span class="token punctuation">:</span><span class="token operator">//</span>neatstats<span class="token operator">.</span>net https<span class="token punctuation">:</span><span class="token operator">//</span>bubbles<span class="token operator">.</span>town<span class="token punctuation">;</span>
-  frame<span class="token operator">-</span>src https<span class="token punctuation">:</span><span class="token operator">//</span>www<span class="token operator">.</span>youtube<span class="token operator">.</span>com<span class="token punctuation">;</span>
-  object<span class="token operator">-</span>src <span class="token string">'none'</span><span class="token punctuation">;</span> base<span class="token operator">-</span>uri <span class="token string">'self'</span><span class="token punctuation">;</span>
-  form<span class="token operator">-</span>action <span class="token string">'self'</span> https<span class="token punctuation">:</span><span class="token operator">//</span>indieauth<span class="token operator">.</span>com https<span class="token punctuation">:</span><span class="token operator">//</span>buttondown<span class="token operator">.</span>com
-    https<span class="token punctuation">:</span><span class="token regex">//</span><span class="token operator">*</span><span class="token operator">.</span>supabase<span class="token operator">.</span>co<span class="token punctuation">;</span>
-  frame<span class="token operator">-</span>ancestors <span class="token string">'none'</span><span class="token punctuation">;</span> upgrade<span class="token operator">-</span>insecure<span class="token operator">-</span>requests<span class="token punctuation">;</span>
-  report<span class="token operator">-</span>to <span class="token keyword">default</span><span class="token punctuation">;</span></code></pre>
-<p>I'm not going to pretend that's a <em>strict</em> CSP. It still has <code>'unsafe-inline'</code> for both scripts and styles, because my site has inline <code>&lt;style&gt;</code> blocks for critical CSS (which is a <a href="https://csswizardry.com/2022/09/critical-css-not-so-fast/">debateable practice</a>) and quite a few one-off inline <code>&lt;script&gt;</code> tags (theme toggle, scroll progress, the IndieAuth PKCE flow) scattered across templates.</p>
-<p>Doing this properly would mean having nonces or hashes on every single script, which frankly isn't a refactor I'm interested in. What I have now still improves security if there was something like a XSS bug, by locking down which <em>domains</em> can be a script/style/connect/frame source at all.</p>
-<p>For <code>Strict-Transport-Security</code> and <code>Permissions-Policy</code>, there was nothing complicated to add:</p>
-<pre class="language-perl"><code class="language-perl">Strict<span class="token operator">-</span>Transport<span class="token operator">-</span>Security <span class="token operator">=</span> <span class="token string">"max-age=63072000; includeSubDomains"</span>
-Permissions<span class="token operator">-</span>Policy <span class="token operator">=</span> <span class="token string">"camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"</span></code></pre>
-<p><code>Cross-Origin-Embedder-Policy</code> made me stop and think, the spec's default recommendation is <code>require-corp</code>, which blocks any cross-origin resource that doesn't explicitly opt in with its own <code>Cross-Origin-Resource-Policy</code> header. For instance, my website <s>hotlinks</s> loads badge images from <code>aaronparecki.com</code>, <code>indieweb.org</code>, and <code>mirrors.creativecommons.org</code>, none of which I control. <code>require-corp</code> would've broken these images. I used <code>credentialless</code> instead, isolating the page the same way but only strips credentials from cross-origin requests rather than blocking them.</p>
-<p>I also wrote a <code>Reporting-Endpoints</code> header pointing at a tiny new Netlify Function that logs whatever the browser sends it:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// netlify/functions/csp-report.js</span>
-exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>httpMethod <span class="token operator">!==</span> <span class="token string">"POST"</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">statusCode</span><span class="token operator">:</span> <span class="token number">405</span><span class="token punctuation">,</span> <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token string">""</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"[reporting-api] "</span> <span class="token operator">+</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>body <span class="token operator">||</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4000</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">statusCode</span><span class="token operator">:</span> <span class="token number">204</span><span class="token punctuation">,</span> <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token string">""</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-<p>This isn't an actual observability pipeline, as it only <code>console.warn</code> into logs through Netlify's log drains. But if my CSP is breaking something for a visitor, I'll be able to find out.</p>
-<h2 id="the-csp-learning-curve" tabindex="-1">The CSP Learning Curve <a class="header-anchor" href="#the-csp-learning-curve" aria-hidden="true"></a></h2>
-<p>Of course, implementing a CSP wasn't as simple as copying the spec's recommendations. My initial CSP broke several things on my site:</p>
-<ul>
-<li>The webring widgets from <code>webring.fun</code> and <code>silly.possiblyaxolotl.com</code> stopped loading</li>
-<li>The bubbles.town upvote button failed to load</li>
-<li>The status.lol widget was blocked</li>
-<li>NeatStats analytics stopped working</li>
-</ul>
-<p>The issue was that these third-party services make API calls to their own domains for data, and I hadn't included those domains in my <code>connect-src</code> directive. Additionally, some services load their own CSS files that I hadn't whitelisted in <code>style-src</code>.</p>
-<p>I had to iteratively add missing domains:</p>
-<pre class="language-perl"><code class="language-perl">script<span class="token operator">-</span>src <span class="token string">'self'</span> <span class="token string">'unsafe-inline'</span> <span class="token string">'wasm-unsafe-eval'</span>
-  https<span class="token punctuation">:</span><span class="token regex">//cloud</span><span class="token operator">.</span>umami<span class="token operator">.</span>is https<span class="token punctuation">:</span><span class="token operator">//</span>neatstats<span class="token operator">.</span>net https<span class="token punctuation">:</span><span class="token regex">//cdn</span><span class="token operator">.</span>jsdelivr<span class="token operator">.</span>net
-  https<span class="token punctuation">:</span><span class="token operator">//</span>webring<span class="token operator">.</span>fun https<span class="token punctuation">:</span><span class="token operator">//</span>silly<span class="token operator">.</span>possiblyaxolotl<span class="token operator">.</span>com
-  https<span class="token punctuation">:</span><span class="token operator">//</span>bubbles<span class="token operator">.</span>town https<span class="token punctuation">:</span><span class="token operator">//</span>status<span class="token operator">.</span>lol<span class="token punctuation">;</span>
-style<span class="token operator">-</span>src <span class="token string">'self'</span> <span class="token string">'unsafe-inline'</span> https<span class="token punctuation">:</span><span class="token regex">//cdn</span><span class="token operator">.</span>jsdelivr<span class="token operator">.</span>net
-  https<span class="token punctuation">:</span><span class="token operator">//</span>silly<span class="token operator">.</span>possiblyaxolotl<span class="token operator">.</span>com<span class="token punctuation">;</span>
-connect<span class="token operator">-</span>src <span class="token string">'self'</span> https<span class="token punctuation">:</span><span class="token regex">//cloud</span><span class="token operator">.</span>umami<span class="token operator">.</span>is https<span class="token punctuation">:</span><span class="token regex">//</span><span class="token operator">*</span><span class="token operator">.</span>supabase<span class="token operator">.</span>co
-  https<span class="token punctuation">:</span><span class="token operator">//</span>webring<span class="token operator">.</span>fun https<span class="token punctuation">:</span><span class="token operator">//</span>neatstats<span class="token operator">.</span>net https<span class="token punctuation">:</span><span class="token operator">//</span>bubbles<span class="token operator">.</span>town<span class="token punctuation">;</span>
-form<span class="token operator">-</span>action <span class="token string">'self'</span> https<span class="token punctuation">:</span><span class="token operator">//</span>indieauth<span class="token operator">.</span>com https<span class="token punctuation">:</span><span class="token operator">//</span>buttondown<span class="token operator">.</span>com
-  https<span class="token punctuation">:</span><span class="token regex">//</span><span class="token operator">*</span><span class="token operator">.</span>supabase<span class="token operator">.</span>co<span class="token punctuation">;</span></code></pre>
-<p>The lesson here is that CSPs require knowing exactly which domains your third-party services use—not just for loading their scripts, but also for any API calls they make in the background. Browser console errors were invaluable for debugging this.</p>
-<p>After implementing my initial CSP, I noticed my Umami metrics suddenly dropped to near-zero. It turned out that Umami had changed their API gateway domains, moving from just <code>cloud.umami.is</code> to also using <code>gateway.umami.is</code>, <code>eu.umami.is</code>, and various <code>api-gateway.*.umami.dev</code> endpoints. This is a known issue that breaks tracking for sites with strict CSPs. I had to add all these new gateway domains to my <code>connect-src</code> directive to restore analytics functionality.</p>
-<p>I also had to update my service worker to skip cross-origin requests entirely. The service worker was trying to handle requests to external domains (webring scripts, badge images, etc.) but couldn't properly cache them due to CORS restrictions, which was causing &quot;undefined&quot; response errors. By adding a check to only handle same-origin requests, the service worker now focuses on my own content while letting external resources load normally.</p>
-<h2 id="terrible-terrible-cookies" tabindex="-1">Terrible, Terrible Cookies <a class="header-anchor" href="#terrible-terrible-cookies" aria-hidden="true"></a></h2>
-<p>The checklist's Privacy category flags cookie consent as <code>Required</code>. But guess what? My website has zero cookies, hurray! Umami, my analytics, is <a href="https://umami.is/privacy">documented as cookie-free</a> and I already say so in my <a href="https://brennan.day/privacy/">privacy policy</a>, and nothing else on my website creates cookies either.</p>
-<p>Not every item deserves a &quot;yes&quot; just because the checklist says <strong>Required</strong>. Read the justification, check if it applies to <em>your</em> site.</p>
-<p>Beyond this, there are better alternatives to cookies you can use. For saving user preferences and settings, use <code>localStorage</code>:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Set it</span>
-localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">,</span> <span class="token string">'dark'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token comment">// Get it</span>
-<span class="token keyword">const</span> theme <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'dark'</span>
-
-<span class="token comment">// Remove it</span>
-localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>Local storage also has a 10MB storage limit vs. 4KB limit for cookies. The catch is data persists forever unless cleared.</p>
-<p><code>sessionStorage</code> works exactly like localStorage, but automatically clears the data when the user closes the browser tab.</p>
-<pre class="language-javascript"><code class="language-javascript">sessionStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'formStep'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>For large, complex data (e.g., offline images, large cached JSON), you can use <code>localForage</code> (a library that yes, rhymes). Native IndexedDB is powerful but complicated (uses callbacks, cursors, and databases). <code>localForage</code> is a tiny library that gives you a localStorage-style API but stores data in IndexedDB behind the scenes.</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Include the library, then:</span>
-localforage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'shoppingCart'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">items</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token literal-property property">total</span><span class="token operator">:</span> <span class="token string">'$500'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-localforage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'shoppingCart'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">cart</span><span class="token punctuation">)</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cart<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>This handles binary data (blobs/files) and holds over 50MB, and uses Promises (async) so it doesn't freeze your webpage.</p>
-<h2 id="a-useful-service-worker" tabindex="-1">A Useful Service Worker <a class="header-anchor" href="#a-useful-service-worker" aria-hidden="true"></a></h2>
-<p>My old service worker cached <code>/assets/css/style.css</code>, a file that hasn't existed since I split my CSS into multiple files, so it was actually caching nothing. I rewrote it so a failed navigation falls back to a real offline page instead of the browser's own &quot;no internet&quot; screen, and images load cache-first instead of network-first:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>request<span class="token punctuation">.</span>mode <span class="token operator">===</span> <span class="token string">'navigate'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  event<span class="token punctuation">.</span><span class="token function">respondWith</span><span class="token punctuation">(</span>
-    <span class="token function">fetch</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>request<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span>
-      caches<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>request<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=></span> response <span class="token operator">||</span> caches<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token constant">OFFLINE_URL</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token punctuation">)</span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p>I also added a check to skip cross-origin requests entirely, which was causing CORS-related errors. The service worker now only handles same-origin requests, letting external resources (webring scripts, badge images, etc.) load normally:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Skip cross-origin requests to avoid CORS issues</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>event<span class="token punctuation">.</span>request<span class="token punctuation">.</span>url<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>location<span class="token punctuation">.</span>origin<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="finally-fixing-the-annoying-flash" tabindex="-1">Finally Fixing the Annoying Flash <a class="header-anchor" href="#finally-fixing-the-annoying-flash" aria-hidden="true"></a></h2>
-<p>While testing all these changes, I finally dealt with the flashing on page load—elements in the main content and sidebar would resize visibly on page loads, regardless if it was your first visit or not.</p>
-<p>This was because I was using the deferring technique <code>media=&quot;print&quot; onload=&quot;this.media='all'&quot;</code>. This is a <a href="https://css-tricks.com/the-simplest-way-to-load-css-asynchronously/">known pattern</a> for loading CSS asynchronously to improve performance, but it has the annoying downside of causing <a href="https://css-tricks.com/the-simplest-way-to-load-css-asynchronously/">flashes of Unstyled Content</a> and <a href="https://developer.chrome.com/docs/aurora/aurora-resource-inlining">layout shifts</a> when the deferred CSS finally loads and applies.</p>
-<p>I just removed the deferred loading and let CSS load normally. The tradeoff is slightly slower initial render, but no more flashing. Sometimes the performance optimization causes the problem it's supposed to solve.</p>
-<h2 id="other-small-fixes-rapid-fire-round" tabindex="-1">Other Small Fixes (Rapid Fire Round!) <a class="header-anchor" href="#other-small-fixes-rapid-fire-round" aria-hidden="true"></a></h2>
-<p>There were a handful of things that were quick, once I knew to look for them:</p>
-<p><strong><code>text-wrap: balance</code> / <code>text-wrap: pretty</code></strong> on headings and body copy, so the browser handles orphaned last-line words nicely.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">h1, h2, h3, h4, h5, h6</span> <span class="token punctuation">{</span>
-  <span class="token property">text-wrap</span><span class="token punctuation">:</span> balance<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token selector">p, li, dd, figcaption</span> <span class="token punctuation">{</span>
-  <span class="token property">text-wrap</span><span class="token punctuation">:</span> pretty<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong><code>scrollbar-gutter: stable</code></strong> so pages that scroll (nearly every post) and pages that don't aren't shifting width against each other.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span>
-  <span class="token property">scrollbar-gutter</span><span class="token punctuation">:</span> stable<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong><code>scroll-margin-top</code> / <code>scroll-padding-top</code></strong> on headings and anchor targets, so jumping to <code>#comments</code> or a table-of-contents link doesn't land the heading directly underneath my sticky header (something that's been bothering me forever).</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span>
-  <span class="token property">scroll-padding-top</span><span class="token punctuation">:</span> 5rem<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token selector">h1, h2, h3, h4, h5, h6,
-:target,
-[id]</span> <span class="token punctuation">{</span>
-  <span class="token property">scroll-margin-top</span><span class="token punctuation">:</span> 5rem<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong>A <a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"><code>@view-transition</code></a> block</strong> with <code>navigation: auto</code>, so Chrome (for now) animates between page loads. Unsupported browsers just navigate normally, but it's a one-line opt-in.</p>
-<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@view-transition</span></span> <span class="token punctuation">{</span>
-  <span class="token property">navigation</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors">Forced colours mode</a></strong> support, for people running accessibility options, like Windows High Contrast. My rainbow nav underline and scroll-progress bar are pure decoration with no border to fall back on, so this snippet allows them to remain:</p>
-<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">forced-colors</span><span class="token punctuation">:</span> active<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
-  <span class="token selector">.site-header::after,
-  nav.site-nav a::after</span> <span class="token punctuation">{</span>
-    <span class="token property">background</span><span class="token punctuation">:</span> CanvasText<span class="token punctuation">;</span>
-    <span class="token property">forced-color-adjust</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token selector">button, .hero-btn, input[type="submit"]</span> <span class="token punctuation">{</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid ButtonText<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid"><code>:user-valid</code> / <code>:user-invalid</code></a></strong> on form fields, real-time validation styling in CSS instead of JS class-toggling, and it only triggers after you've interacted with the field, so a required-but-empty input doesn't pop up before you've typed anything.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">input:user-invalid, textarea:user-invalid</span> <span class="token punctuation">{</span>
-  <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--link-hover<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token selector">input:user-valid, textarea:user-valid</span> <span class="token punctuation">{</span>
-  <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--nav-green<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong>A container query</strong> on the sidebar modules, this way the badge grid responds to the module's rendered width instead of just the viewport.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">.sidebar .module</span> <span class="token punctuation">{</span>
-  <span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span>
-  <span class="token property">container-name</span><span class="token punctuation">:</span> sidebar-module<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token atrule"><span class="token rule">@container</span> sidebar-module <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 220px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
-  <span class="token selector">.badges-grid</span> <span class="token punctuation">{</span>
-    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>auto-fill<span class="token punctuation">,</span> <span class="token function">minmax</span><span class="token punctuation">(</span>70px<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong><code>contain: layout paint</code></strong> on post cards and sidebar modules, telling the browser those subtrees can't affect anything outside themselves.</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">a.post-card</span> <span class="token punctuation">{</span>
-  <span class="token property">contain</span><span class="token punctuation">:</span> layout paint style<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p><strong>Speculation Rules</strong> for same-origin prefetching, skipping honeypot paths and anything marked <code>rel=&quot;nofollow&quot;</code>:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>speculationrules<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-<span class="token punctuation">{</span>
-  <span class="token string-property property">"prefetch"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
-    <span class="token string-property property">"source"</span><span class="token operator">:</span> <span class="token string">"document"</span><span class="token punctuation">,</span>
-    <span class="token string-property property">"where"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"and"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span> <span class="token string-property property">"href_matches"</span><span class="token operator">:</span> <span class="token string">"/*"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span> <span class="token string-property property">"not"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"href_matches"</span><span class="token operator">:</span> <span class="token string">"/honeypot/*"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span> <span class="token string-property property">"not"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">"selector_matches"</span><span class="token operator">:</span> <span class="token string">"[rel~=\"nofollow\"]"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
-    <span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token string-property property">"eagerness"</span><span class="token operator">:</span> <span class="token string">"moderate"</span>
-  <span class="token punctuation">}</span><span class="token punctuation">]</span>
-<span class="token punctuation">}</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
-<p><strong>Visible breadcrumbs</strong> on posts and pages, matching the <code>BreadcrumbList</code> JSON-LD I already wrote but never rendered on the site:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>breadcrumbs<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Breadcrumb<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">aria-current</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>page<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Advanced Webweaving: Auditing Against Specification.Website<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span></code></pre>
-<p><strong><code>inputmode</code>, <code>enterkeyhint</code>, and <code>autocomplete</code></strong> on the comment sign-in, newsletter, contact, and guestbook forms, so the correct mobile keyboard shows up:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>me<span class="token punctuation">"</span></span> <span class="token attr-name">inputmode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">enterkeyhint</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>go<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">inputmode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">enterkeyhint</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>send<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
-<p><strong>A <code>/500.html</code></strong> page and a <code>/maintenance.html</code> page, the latter being a documented, one-line redirect flip in <code>netlify.toml</code> for if ever I need to put the site into maintenance mode. (Some future unforseeable disaster.):</p>
-<pre class="language-toml"><code class="language-toml"><span class="token comment"># Commented out until I actually need it</span>
-<span class="token comment"># [[redirects]]</span>
-<span class="token comment">#   from = "/*"</span>
-<span class="token comment">#   to = "/maintenance.html"</span>
-<span class="token comment">#   status = 503</span>
-<span class="token comment">#   force = true</span></code></pre>
-<p><a href="https://www.indexnow.org/"><strong>IndexNow</strong></a>, a protocol I'd never heard of before this audit. Bing, Yandex, and a couple others let you push a &quot;changes made&quot; ping instead of waiting for a crawl. Generate a key, and drop it at the site root, and then I added a post-deploy hook next to the WebSub ping I already had:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-X</span> POST <span class="token string">"https://api.indexnow.org/indexnow"</span> <span class="token punctuation">\</span>
-  <span class="token parameter variable">-H</span> <span class="token string">"Content-Type: application/json; charset=utf-8"</span> <span class="token punctuation">\</span>
-  <span class="token parameter variable">-d</span> <span class="token string">"{<span class="token entity" title="\&quot;">\"</span>host<span class="token entity" title="\&quot;">\"</span>: <span class="token entity" title="\&quot;">\"</span>brennan.day<span class="token entity" title="\&quot;">\"</span>, <span class="token entity" title="\&quot;">\"</span>key<span class="token entity" title="\&quot;">\"</span>: <span class="token entity" title="\&quot;">\"</span>...<span class="token entity" title="\&quot;">\"</span>, <span class="token entity" title="\&quot;">\"</span>urlList<span class="token entity" title="\&quot;">\"</span>: [...]}"</span></code></pre>
-<p>A <a href="https://www.rfc-editor.org/rfc/rfc7033"><strong><code>webfinger</code></strong></a> endpoint at <code>/.well-known/webfinger</code>, which is how the Fediverse resolves <code>acct:brennan@brennan.day</code>-style identifiers to profile links. Mine is a static file instead of query-aware endpoint, since I only have the one identity to resolve (mine):</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
-  <span class="token property">"subject"</span><span class="token operator">:</span> <span class="token string">"acct:brennan@brennan.day"</span><span class="token punctuation">,</span>
-  <span class="token property">"links"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span> <span class="token property">"rel"</span><span class="token operator">:</span> <span class="token string">"self"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/activity+json"</span><span class="token punctuation">,</span> <span class="token property">"href"</span><span class="token operator">:</span> <span class="token string">"https://social.lol/@brennan"</span> <span class="token punctuation">}</span>
-  <span class="token punctuation">]</span>
-<span class="token punctuation">}</span></code></pre>
-<p>A <strong><code>/.well-known/traffic-advice</code></strong> file, which is Chrome-specific and tells its private prefetch proxy whether it's allowed to send prefetch traffic to my origin:</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token property">"user_agent"</span><span class="token operator">:</span> <span class="token string">"prefetch-proxy"</span><span class="token punctuation">,</span> <span class="token property">"google_prefetch_proxy_eap"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"fraction"</span><span class="token operator">:</span> <span class="token number">1.0</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
-<p>Adding a <a href="https://web.resource.org/rss/1.0/modules/syndication/">Syndication module</a> (<code>sy:updatePeriod</code>, <code>sy:updateFrequency</code>) in my RSS feed, so feed readers with the ability can now display how frequently my blog is updated:</p>
-<pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rss</span> <span class="token attr-name">version</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2.0<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xmlns:</span>sy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://purl.org/rss/1.0/modules/syndication/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>channel</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">sy:</span>updatePeriod</span><span class="token punctuation">></span></span>daily<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">sy:</span>updatePeriod</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">sy:</span>updateFrequency</span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">sy:</span>updateFrequency</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>channel</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rss</span><span class="token punctuation">></span></span></code></pre>
-<p><code>Redirect-By: Netlify</code>, a header that states which system issued a redirect, in case I'm debugging a redirect chain:</p>
-<pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">headers</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-  <span class="token key property">for</span> <span class="token punctuation">=</span> <span class="token string">"/*.html"</span>
-  <span class="token punctuation">[</span><span class="token table class-name">headers.values</span><span class="token punctuation">]</span>
-    <span class="token key property">No-Vary-Search</span> <span class="token punctuation">=</span> <span class="token string">'''params=("utm_source" "utm_medium" "utm_campaign" "fbclid" "gclid")'''</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">headers</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-  <span class="token key property">for</span> <span class="token punctuation">=</span> <span class="token string">"/*"</span>
-  <span class="token punctuation">[</span><span class="token table class-name">headers.values</span><span class="token punctuation">]</span>
-    <span class="token key property">Redirect-By</span> <span class="token punctuation">=</span> <span class="token string">"Netlify"</span>
-
-<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token table class-name">headers</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-  <span class="token key property">for</span> <span class="token punctuation">=</span> <span class="token string">"/assets/*"</span>
-  <span class="token punctuation">[</span><span class="token table class-name">headers.values</span><span class="token punctuation">]</span>
-    <span class="token key property">Cross-Origin-Resource-Policy</span> <span class="token punctuation">=</span> <span class="token string">"cross-origin"</span></code></pre>
-<p>A few more additions:</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/No-Vary-Search"><code>No-Vary-Search</code></a> on HTML responses, listing out the usual tracking parameters (<code>utm_source</code>, <code>fbclid</code>, <code>gclid</code>, etc.) so a cache treats <code>/post/</code> and <code>/post/?utm_source=mastodon</code> as the same page instead of two (I try my best to avoid any tracking params, but other sites don't).</li>
-<li><code>Cross-Origin-Resource-Policy: cross-origin</code> on my asset headers, so nothing about the other origin isolation changes stops someone else from embedding my own images.</li>
-<li>Core Web Vitals as a category is just reviewing what real users experience, which I did with <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>. The current assessment is <strong>Passed</strong>: <strong>Largest Contentful Paint (LCP) 1.8 s</strong>, <strong>Interaction to Next Paint (INP) 68 ms</strong>, <strong>Cumulative Layout Shift (CLS) 0</strong>. Other metrics: <strong>First Contentful Paint (FCP) 1.6 s</strong>, <strong>Time to First Byte (TTFB) 1.6 s</strong>. These were taken from the latest 28-day <a href="https://developer.chrome.com/docs/crux">Chrome UX Report</a> for mobile.</li>
-</ul>
-<h2 id="things-still-unaddressed" tabindex="-1">Things Still Unaddressed <a class="header-anchor" href="#things-still-unaddressed" aria-hidden="true"></a></h2>
-<p>There were also several other things I didn't get to from the long, detailed 140-item checklist:</p>
-<ul>
-<li><strong>DNS CAA records and DNSSEC</strong> are controlled by CDN, and not in this repo, so I'll need to review those.</li>
-<li><strong>Trusted Types</strong> would require auditing every <code>innerHTML</code>-style sink across my templates <em>and</em> the third-party widgets I don't control.</li>
-<li><strong>SRI on the webring/reaction-button scripts</strong> isn't happening until they're pinned to a version instead of <code>@main</code>. Subresource Integrity on a moving target just means the hash breaks the next time I push a commit. I did add it to my pinned Mermaid script, where it made sense.</li>
-<li><strong>Actual uptime monitoring</strong> means picking and paying for a third-party service, which I don't think is necessary for my site.</li>
-<li><strong>Strict CSP with nonces/hashes</strong> would require refactoring all my inline scripts and styles to use proper CSP mechanisms, which is more work than I'm willing to invest right now.</li>
-</ul>
-<h2 id="the-actual-point" tabindex="-1">The Actual Point <a class="header-anchor" href="#the-actual-point" aria-hidden="true"></a></h2>
-<p>This is the part where I say none of this was really about the checklist. Don't get me wrong, checklists <em>are</em> good for finding the things you've stopped seeing because you've been looking at the same code every day for months. Fixing the broken web manifest, the theme-colour meta tag doing nothing, and the breadcrumb schema I wasn't actually using.</p>
-<p>But the value wasn't in checking every box, it was about learning what my site was lacking due to my ignorance, and making meaningful changes to improve the experience for my readers and visitors.</p>
-<p>If you run your own site through <a href="https://specification.website/checklist/">the checklist</a>, I'm curious what it turns up for you! (And please let me know if any of these changes actually ended up breaking something.)</p>
 
       <hr />
       <blockquote style="margin: 2em 0; padding: 1.5em; border: 2px solid #666; background-color: #f5f5f5;">

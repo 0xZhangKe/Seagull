@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://11011110.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://11011110.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-10-28T00:55:41+00:00</updated><id>https://11011110.github.io/blog/feed.xml</id><title type="html">11011110</title><subtitle>Geometry, graphs, algorithms, and more</subtitle><author><name>David Eppstein</name></author><entry><title type="html">Congratulations, Dr. Liu!</title><link href="https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu.html" rel="alternate" type="text/html" title="Congratulations, Dr. Liu!" /><published>2026-10-27T17:41:00+00:00</published><updated>2026-10-27T17:41:00+00:00</updated><id>https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu</id><content type="html" xml:base="https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu.html"><![CDATA[<p>Another UC Irvine doctoral student, Songyu (Alfred) Liu, successfully passed his doctoral defense this week, co-advised by Mike Goodrich and me.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://11011110.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://11011110.github.io/blog/" rel="alternate" type="text/html" /><updated>2026-11-01T00:03:29+00:00</updated><id>https://11011110.github.io/blog/feed.xml</id><title type="html">11011110</title><subtitle>Geometry, graphs, algorithms, and more</subtitle><author><name>David Eppstein</name></author><entry><title type="html">Linkage for a rainy Halloween</title><link href="https://11011110.github.io/blog/2026/10/31/linkage-rainy-halloween.html" rel="alternate" type="text/html" title="Linkage for a rainy Halloween" /><published>2026-10-31T18:15:00+00:00</published><updated>2026-10-31T18:15:00+00:00</updated><id>https://11011110.github.io/blog/2026/10/31/linkage-rainy-halloween</id><content type="html" xml:base="https://11011110.github.io/blog/2026/10/31/linkage-rainy-halloween.html"><![CDATA[<ul>
+  <li>
+    <p><a href="https://chessapig.github.io/Mahler">Elliot Kienzle illustrates the AI proof of the Mahler conjecture</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@isomorphismes/117431237690940305">\(\mathbb{M}\)</a>)</span> on symplectic embeddings of a ball into the Cartesian product of a convex body and its dual, showing that the product’s volume is always at least as large as the ball.</p>
+  </li>
+  <li>
+    <p><a href="https://blog.plover.com/math/fibonacci-word.html">On the generation of names of weevils and popes by L-systems</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@mjd/117328592759990849">\(\mathbb{M}\)</a>).</span></p>
+  </li>
+  <li>
+    <p><a href="https://marginalia-search.com/">Marginalia search</a> <span style="white-space:nowrap">(<a href="https://hachyderm.io/@eliasulrich/117234902637900790">\(\mathbb{M}\)</a>),</span> a web search engine that prioritizes the stuff the big ones don’t: text-heavy, non-commercial pages, personal blogs, old university pages, and the like.</p>
+  </li>
+  <li>
+    <p><a href="https://mathstodon.xyz/@olligobber/117465752345779218">Sudoku but you have to prove your answer before it’s allowed</a>. Which raises the question: prove under what assumptions? Are you allowed to assume uniqueness in your proofs?</p>
+  </li>
+  <li>
+    <p><a href="https://mathstodon.xyz/@timhutton/117468907728630557">Borromean hexagonal tilings</a>, embedded orthogonally in \(\mathbb{R}^3\) in such a way that removing one of them allows the other two to be pulled apart.</p>
+  </li>
+  <li>
+    <p><a href="https://blog.computationalcomplexity.org/2026/10/reading-messy-proofs.html">Lance Fortnow on reading messy proofs</a> <span style="white-space:nowrap">(<a href="https://fediscience.org/@fortnow/117480765375103920">\(\mathbb{M}\)</a>).</span> He quotes Noam Nisan as saying that “reading a badly written proof leads to better understanding since you really need to figure out the details”.</p>
+  </li>
+  <li>
+    <p><a href="https://www.genealogy.math.ndsu.nodak.edu/">Mathematics Genealogy Project temporarily offline</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@highergeometer/117487353017844398">\(\mathbb{M}\)</a>)</span> because of the recently-discovered security vulnerabilities in PHP. Unfortunately their software was incompatible with recent versions so it wasn’t a matter of a simple upgrade. They’re asking for donations to cover both a backend overhaul (estimated to cost more than half their typical annual budget) and catching up on their severe backlog of updates (almost a year deep).</p>
+  </li>
+  <li>
+    <p>The <a href="https://en.wikipedia.org/wiki/Perles_configuration">Perles configuration of nine points and nine lines</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/117492499320605502">\(\mathbb{M}\)</a>)</span> is based on a regular pentagon/pentagram; it cannot be realized by points with rational-number Cartesian coordinates, even in less-symmetrical arrangements of its points and lines. But there are stronger ways to be difficult to realize than irrationality. We can’t hope for transcendentality: when a configuration can be realized it can always be realized using algebraic number coordinates. An intermediate step between these two is unconstructibility: can it be drawn with compass and straightedge? Because the Perles configuration is based on a regular pentagon, it is obviously constructible.</p>
+
+    <p>The <a href="https://en.wikipedia.org/wiki/Gr%C3%BCnbaum%E2%80%93Rigby_configuration">Grünbaum–Rigby configuration</a> is based in a similar way on regular heptagons/heptagrams. Because these cannot be constructed with compass and straightedge, neither can the symmetric form of the Grünbaum–Rigby configuration. I suspect the same is true for any asymmetric forms it might have but I have no proof. (I did try asking a couple of advanced-model LLMs; one told me it had no idea and another told me it was unconstructible but retreated when pressed for details.) One property of the Perles configuration that helps prove its irrationality is projective uniqueness: any two realizations are related by a projective transformation, together with a permutation of the points and lines of the configuration. If this were true of the Grünbaum–Rigby configuration it would prove unconstructibility but I don’t know whether it’s true.</p>
+
+    <p style="text-align:center"><img src="/blog/assets/2026/grunbaum-rigby.svg" alt="The Grünbaum–Rigby configuration in its symmetrical form; public domain image from https://commons.wikimedia.org/wiki/File:Gr%C3%BCnbaum-Rigby_configuration,_vector_graphics.svg" style="width:100%;max-width:540px" /></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=ZYnHqKfve0U">3d-printed tiles from the aperiodic chair tiling snap together like Lego</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@Ianagol/117497745623291776">\(\mathbb{M}\)</a>)</span> in this short (2:18) video by Bob Mackay explaining its recursive structure.</p>
+  </li>
+  <li>
+    <p><a href="https://mastodon.nl/@jap/117495812146047462">LLMs still can’t count</a>. A story about trying to count the teeth on a bicycle sprocket wheel, getting an answer that isn’t a valid tooth count, asking the LLM to label the teeth on a photo, and getting back a replacement photo with more teeth that still aren’t even counted correctly.</p>
+  </li>
+  <li>
+    <p><a href="https://oeis.org/wiki/A400K_Winners">OEIS A400K contest winners</a> <span style="white-space:nowrap">(<a href="https://mastodon.moule.world/@MOULE/117504089290178833">\(\mathbb{M}\)</a>).</span> The top entry: <a href="https://oeis.org/A400000">A400000</a>, the “city-building sequence” in which \(a(n)\) is the height \(h\) of the shortest building which can see exactly \(h\) earlier buildings of heights \(a(i)\), in an unobstructed line of site from its roof.</p>
+  </li>
+  <li>
+    <p>I updated the <a href="https://ics.uci.edu/~eppstein/pubs/ACM-UCI-2026.pdf">talk slides for my talk “Computational complexities of folding”</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/117519758375263551">\(\mathbb{M}\)</a>),</span> on connections between computational complexity theory and origami, for a presentation to a local student group. The updates included a last-minute change to a slide on the <a href="https://en.wikipedia.org/wiki/Exponential_time_hypothesis">exponential time hypothesis</a> to take into account the OpenAI claimed disproof, but their result doesn’t really change things for what I was using it for: if the exponential part of a time bound has an exponent that is linear in a certain parameter (as pre-disproof ETH would imply), or near-linear in it (consistent with the disproof), it’s still a big time bound. Since I originally presented this material in 2024 I’ve published <a href="https://doi.org/10.2197/ipsjjip.33.954">a journal version</a> detailing much of the talk; see also <a href="https://ics.uci.edu/~eppstein/pubs/p-ccfold.html">my publication metadata page</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Lattice_of_stable_matchings">The lattice of stable matchings</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/117524945882709612">\(\mathbb{M}\)</a>)</span> organizes the set of all solutions of a stable matching problem into a structure in which each two matchings have a least upper bound (giving all the participants on one side their preference among the two partners from the two matchings) and a greatest lower bound (the same for the participants on the other side). Its uses involve algorithms for finding weight-maximizing or regret-minimizing stable matchings. A little technical still, but now a Good Article on Wikipedia.</p>
+  </li>
+  <li>
+    <p><a href="https://richardelwes.co.uk/2026/10/28/why-i-love-stella/">Why Richard Elwes loves Stella</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@richardelwes/117524978755178210">\(\mathbb{M}\)</a>),</span> software for constructing and visualizing polyhedra.</p>
+  </li>
+  <li>
+    <p><a href="https://mathstodon.xyz/@normalsubgroup/117416107024329999">How inappropriate it is for referees/editors to use AI to help review any original work</a>. A computer can never be held accountable for breaching the confidentiality of submissions; therefore, a computer must never be given access to confidential submissions.</p>
+  </li>
+</ul>]]></content><author><name>David Eppstein</name></author><summary type="html"><![CDATA[Elliot Kienzle illustrates the AI proof of the Mahler conjecture (\(\mathbb{M}\)) on symplectic embeddings of a ball into the Cartesian product of a convex body and its dual, showing that the product’s volume is always at least as large as the ball.]]></summary></entry><entry><title type="html">Congratulations, Dr. Liu!</title><link href="https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu.html" rel="alternate" type="text/html" title="Congratulations, Dr. Liu!" /><published>2026-10-27T17:41:00+00:00</published><updated>2026-10-27T17:41:00+00:00</updated><id>https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu</id><content type="html" xml:base="https://11011110.github.io/blog/2026/10/27/congratulations-dr-liu.html"><![CDATA[<p>Another UC Irvine doctoral student, Songyu (Alfred) Liu, successfully passed his doctoral defense this week, co-advised by Mike Goodrich and me.</p>
 
 <p>Alfred came to UCI in 2020, initially working with cognitive scientist Mark Steyvers, who has a joint appointment in computer science. Their work eventually turned into a 2024 publication, “<a href="https://doi.org/10.1609/hcomp.v12i1.31603">Combining Human and AI Strengths in Object Counting under Information Asymmetry</a>”, in the 12th AAAI Conference on Human Computation and Crowdsourcing  (2024), but in the meantime Alfred decided that he preferred topics that were more directly computational, and switched to working with Mike Goodrich (and eventually me).</p>
 
@@ -357,72 +407,4 @@ quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20
 
 <p>Can a matching \(\Omega(n^{3/2})\) lower bound be achieved, in high enough dimensions, or alternatively, is there some limiting exponent \(c&lt;3/2\) (perhaps even \(c=1\)) so that point sets with <span style="white-space:nowrap">no \(d+1\) points</span> on a hyperplane have \(n^{c+o(1)}\) unit distances? I don’t know.</p>
 
-<p>(<a href="https://mathstodon.xyz/@11011110/117029879868629995">Discuss on Mastodon</a>)</p>]]></content><author><name>David Eppstein</name></author><summary type="html"><![CDATA[Reports that LLMs have killed the Erdős unit distance problem turn out to be greatly exaggerated. There is still plenty not yet understood about the problem.]]></summary></entry><entry><title type="html">Linkage</title><link href="https://11011110.github.io/blog/2026/07/31/linkage.html" rel="alternate" type="text/html" title="Linkage" /><published>2026-07-31T15:15:00+00:00</published><updated>2026-07-31T15:15:00+00:00</updated><id>https://11011110.github.io/blog/2026/07/31/linkage</id><content type="html" xml:base="https://11011110.github.io/blog/2026/07/31/linkage.html"><![CDATA[<ul>
-  <li>
-    <p><a href="https://
-cacm.acm.org/opinion/now-is-the-time-to-give-llms-access-to-the-acm-digital-library/">ACM considers allowing LLMs to read its digital library</a> <span style="white-space:nowrap">(<a href="https://fediscience.org/@fortnow/116932118028866318">\(\mathbb{M}\)</a>)</span> and <a href="https://docs.google.com/forms/d/e/1FAIpQLSeq7MFM7TlSXIaIXQnIltiQeWE_w3cl36HFPwql4S7u-drmzg/formResponse">requests feedback on this choice</a>.</p>
-  </li>
-  <li>
-    <p><a href="https://divisbyzero.github.io/Daedalus-Labyrinth/">Daedalus’ labyrinth</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@divbyzero/116913105461675496">\(\mathbb{M}\)</a>),</span> a puzzle game dual to loopy/slitherlink.</p>
-  </li>
-  <li>
-    <p><a href="https://voronoigo.com/">Voronoi go</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@glocq/116931143701346377">\(\mathbb{M}\)</a>),</span> a variant of go where you can play anywhere on the board (not just intersections).</p>
-  </li>
-  <li>
-    <p><a href="https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/">Human mathematicians are being outcounterexampled</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@MoritzFirsching/116952724105475226">\(\mathbb{M}\)</a>).</span> Kevin Buzzard of the Xena Lean formalization project on recent counterexamples to the unit distance problem and Jacobian conjecture.</p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/abs/2607.12729">3-boundary surfaces for 3-component links</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@ra/116928727812403503">\(\mathbb{M}\)</a>)</span> with crochet, 3d-printed, and vector graphics illustrations.</p>
-  </li>
-  <li>
-    <p><a href="https://doaj.org/toc/3050-743X"><em>Innovations in Graph Theory</em> added to DOAJ</a> <span style="white-space:nowrap">(<a href="https://mastodon.online/@Centre_Mersenne/116930060517395644">\(\mathbb{M}\)</a>).</span></p>
-  </li>
-  <li>
-    <p><a href="https://doi.org/10.4171/mag/315">zbMATH digitizes 50 years of its old reviews</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@zbMATH/116969242578389244">\(\mathbb{M}\)</a>).</span></p>
-  </li>
-  <li>
-    <p>Three new Wikipedia articles about mathematics books <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@samueladrianantz/116969838472236011">\(\mathbb{M}\)</a>),</span> posted by Samuel Adrian Antz: <a href="https://en.wikipedia.org/wiki/Characteristic_Classes"><em>Characteristic Classes</em> (1974) by John Milnor and Jim Stasheff</a>, <a href="https://en.wikipedia.org/wiki/Instantons_and_Four-Manifolds"><em>Instantons and Four-Manifolds</em> (1984) by Dan Freed and Karen Uhlenbeck</a>, and <a href="https://en.wikipedia.org/wiki/The_Geometry_of_Four-Manifolds"><em>The Geometry of Four-Manifolds</em> (1990) by Simon Donaldson and Peter Kronheimer</a>.</p>
-  </li>
-  <li>
-    <p><a href="https://www.
-science.org/doi/10.1126/science.aek5570">AI in scientific publishing: Slower, worse, and more expensive</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/116982103853931467">\(\mathbb{M}\)</a>,</span> <a href="https://
-retractionwatch.com/2026/07/25/weekend-reads-young-girls-death-after-gene-therapy-never-made-public-fda-retracts-lettuce-test-result-ada-delays-editorial-publication-after-controversy/">via</a>). H. Holden Thorp notes that the rapid increase in AI-generated research is increasing rather than decreasing the need for human effort, in checking the research, and likens the resulting effects on human workers to those in the industrial revolution’s shift from craftspeople to factory workers.</p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/abs/1401.3665">The existence of designs</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@DavidWood/116983339289510925">\(\mathbb{M}\)</a>),</span> posted to arXiv in 2014 by Peeter Keevash, has finally been <a href="https://annals.math.princeton.edu/articles/22929">accepted for publication in the <em>Annals of Mathematics</em></a>, 12.5 years later.</p>
-  </li>
-  <li>
-    <p>Three recent algorithms preprints on arXiv make some strong and interesting claims <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/116994628771193329">\(\mathbb{M}\)</a>):</span></p>
-
-    <ul>
-      <li>
-        <p>“Bellman–Ford in almost-linear time”, by Hair, Li, Li, and Zhang, <a href="https://
-arxiv.org/abs/2607.19346">arXiv:2607.19346</a>, computes single-source shortest paths in a directed graph with real weights, allowed to be negative but with no negative cycles, in <span style="white-space:nowrap">time \(O(m^{1+o(1)})\),</span> building on recent subquadratic breakthroughs by overlapping authors.</p>
-      </li>
-      <li>
-        <p>“Splay trees are almost dynamically optimal”, by Chmel, Haeupler, Hladík, Koucký, Roeyskoe, Rozhoň, Sladký, and Tarjan, <a href="https://
-arxiv.org/abs/2607.18498">arXiv:2607.18498</a>, proves a competitive ratio of <span style="white-space:nowrap">\(O(\log\log n(\log\log\log n)^3)\),</span> the first nontrivial competitiveness for splay trees. Tango trees have a slightly better proven bound but unlike splay trees cannot be <span style="white-space:nowrap">\(O(1)\)-competitive.</span></p>
-      </li>
-      <li>
-        <p>“Shortest paths with linear edge weights”, by Chillara, Gajjar, and Raja, <a href="https://
-arxiv.org/abs/2607.21055">arXiv:2607.21055</a>, considers shortest 
--paths in a directed graph whose weights vary linearly as a function of one or more parameters. Different parameter settings give different paths, but how many? The answer was known to be \(n^{\Theta(\log n)}\) for a single parameter, with weaker bounds for more. The new preprint proves a bound of the same form for any fixed number of parameters.</p>
-      </li>
-    </ul>
-
-    <p>You might have thought that such old and well-established topics in algorithms research as shortest paths and balanced binary search trees would be very stable, but instead things are still changing rapidly.</p>
-  </li>
-  <li>
-    <p><a href="https://www.404media.co/wikimedia-waits-until-after-its-massive-conference-to-say-it-wont-voluntarily-recognize-union/">Wikimedia refuses to recognize a union for its employees</a> <span style="white-space:nowrap">(<a href="https://infosec.exchange/@josephcox/116994609630364826">\(\mathbb{M}\)</a>)</span> after a supermajority of workers signed union cards requesting it.</p>
-  </li>
-  <li>
-    <p><a href="https://bsky.app/profile/did:plc:tnde52rcbqxotp7a2cl7bmxu/post/3mplr2xvwsk23">A long thread about variants of Kőnig’s infinity lemma in relation to computability theory</a>.</p>
-  </li>
-  <li>
-    <p><a href="https://mathoverflow.net/a/513714/1015">On using computational hardness to resolve a mathematical conjecture</a> <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@noamzoam/117004015547746598">\(\mathbb{M}\)</a>).</span> Noam Zeilberger points to “A system of interaction and structure III: The complexity of BV and pomset logic” (Lê Thành Dũng Nguyên and Lutz Straßburger, <a href="https://doi.org/10.46298/lmcs-19(4:25)2023">doi:10.46298/lmcs-19(4:25)2023</a>) where an incompatibility of complexity classes for provability in two conjecturally-equal logics led to a counterexample to their equality.</p>
-  </li>
-  <li>
-    <p>I don’t know why it took me so long to realize it <span style="white-space:nowrap">(<a href="https://mathstodon.xyz/@11011110/117015929794590212">\(\mathbb{M}\)</a>),</span>  but my phone’s <a href="https://
-jrpn.jovial.com/">HP 16C programmer’s calculator app</a> turns out to be surprisingly useful for mixing hex-coded html/svg colors.</p>
-  </li>
-</ul>]]></content><author><name>David Eppstein</name></author><summary type="html"><![CDATA[ACM considers allowing LLMs to read its digital library (\(\mathbb{M}\)) and requests feedback on this choice.]]></summary></entry></feed>
+<p>(<a href="https://mathstodon.xyz/@11011110/117029879868629995">Discuss on Mastodon</a>)</p>]]></content><author><name>David Eppstein</name></author><summary type="html"><![CDATA[Reports that LLMs have killed the Erdős unit distance problem turn out to be greatly exaggerated. There is still plenty not yet understood about the problem.]]></summary></entry></feed>

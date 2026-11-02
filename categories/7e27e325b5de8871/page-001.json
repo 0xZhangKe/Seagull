@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "9fad2688185532675ce27b02",
+      "title": "大脑充血 Vol.102",
+      "summary": "夜里无星，竟然也看不到月亮，或许是城市的灯光和厚重的云层遮住了光。我驱车行使在城市外围的一条偏远公路上，路上没有灯，连像样的沥青路都没有，只有混杂着泥土和杂草的石板。车子一路颠簸，我开得很小心，车灯只能照到前方不过三四米的距离。虽说小心，但我开得并不慢。 “能赶到吗？”我在上路之前在地图上反复确认路线和预估到达时间，但也只是干着急。我还想再打开地图看看，可能开了一段距离之后，估算的时间会准确一些呢？但我抽不出手，在这条路上，我必须把双手都紧紧地抓在方向盘上。 吾仅悉落 Misguided Ghosts Paramore Spotify Lucida Now I’m told that this is life And pain is just a simple compromise So we can get…",
+      "image": "https://img.eltr.ac/geedeapro/weekly/77/brand-new-eyes.jpg",
+      "publishedAt": "2026-11-01T23:34:11Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/weekly/102/",
+      "detailPath": "articles/9fad2688185532675ce27b02.json"
+    },
+    {
       "id": "0dea3e32563175f3e5a1c6b8",
       "title": "如何优雅地优雅退出？",
       "summary": "写程序的时候会自然地关注如何启动系统中的各个组件，但很少关心如何关停。这和内存分配一样，使用高层编程语言（甚至是自然语言）编程的程序员们早已习惯垃圾回收机制，从不手动分配和释放内存。 不需要极佳的性能，确实没必要用 C 或者 Zig 等低层语言直接操作内存，但在高层语言里，仍有不少资源需要手动管理，系统中有些部分是成熟的框架也不一定会考虑到的。比方说，一些异步程序可能在共享内存区域或消息队列里存了尚未保存的数据，如果直接退出，这里面的数据就丢失了。 让程序监听并响应中断信号，在收到信号之后处理尚未释放的资源和尚未完成的请求，然后主动退出，这种做法一般叫优雅退出（graceful shutdown）。Java 的 Spring 框架就会在接收到信号的时候自动优雅退出，首先它会停止接收新的请求，然后处理完剩下的请…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/article/tie-wearers/",
       "detailPath": "articles/ba927f190dd7ccc03baa783f.json"
-    },
-    {
-      "id": "75c7fa4c98f10f4d79b5816a",
-      "title": "Coffee Break Clojure, Web Server",
-      "summary": "上一篇 讲解了如何用 Leiningen 管理 Clojure 项目的目录结构和依赖项，今天我们来了解 Clojure 生态中最常见的 Web 后端库 Ring 。不对，和那个 IndieWeb Ring 没有关系。 初识 Ring Ring 是对 Web 服务器的 低层 抽象，也就是说没有实现页面路由（router），和通常的后端框架（比如 Go 的 Gin、Python 的 Django、Java 的 Spring Web 等）有很大区别。 根据 Ring Spec 1.6.1 ，Ring 主要有三个概念： Handler（处理器） Middleware（中间件） Adapter（适配器） Ring 提供了三种 API： 同步 API、异步 API 和 WebSocket API。不同的 API 在概念上…",
-      "image": "https://img.eltr.ac/geedeapro/article/clj6/ring-concepts.svg",
-      "publishedAt": "2026-10-05T16:17:09Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/clj6/",
-      "detailPath": "articles/75c7fa4c98f10f4d79b5816a.json"
     }
   ]
 }

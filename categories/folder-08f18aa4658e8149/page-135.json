@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "113a9c78dccd598d74559d6d",
+      "title": "android动画-Frame Animation",
+      "summary": "动画可以在视觉上增加程序的流畅度，我之前对于动画这一块，是会用，但是不全面，这里写下博客，全面梳理一下Android动画方面的知识。当然，关于动画这块，也有很多前人写了很多内容，大家可以去参考。 3.0以前，android支持两种动画模式， Tween Animation , Frame Animation ，在android3.0中又引入了一个新的动画系统： Property Animation ，这三种动画模式在SDK中被称为 Property Animation , View Animation , Drawable Animation 。 可通过 NineOldAndroids 项目在3.0之前的系统中使用Property Animation。另外呢，还有activity之间的过渡动画，android…",
+      "image": null,
+      "publishedAt": "2015-01-28T12:13:47Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-28-android-frame-animation/?utm_source=rss",
+      "detailPath": "articles/113a9c78dccd598d74559d6d.json"
+    },
+    {
+      "id": "6c4236b18a3df121e0d8ffb0",
+      "title": "玩木工【十二】：新工具（玩具）",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-01-20T20:13:48Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw012/",
+      "detailPath": "articles/6c4236b18a3df121e0d8ffb0.json"
+    },
+    {
+      "id": "f960cb35590df1ef3190b29f",
+      "title": "android反编译-如何防止反编译",
+      "summary": "前言 前面介绍了怎样去反编译别人的代码。哈哈，这里居然又写进行防止反编译。但是，还是先来写写吧。 使用ProGuard proguard android的sdk中就有提供，使用它可以对代码进行混淆和精简，处理后的代码，虽然仍然可以反编译，但是阅读起来相当困难，降低代码的可读性。操作简单，推荐使用。 proguard使用方法和配置，可以看我之前的博客： https://isming.me/2014-05-31-use-proguard/ 另外网上有别人共享的proguard配置模板，也可以参考： https://github.com/krschultz/android-proguard-snippets 如果大家有去proguard的官网，ProGuard的公司提供的DexGuard可以给android程序提供…",
+      "image": null,
+      "publishedAt": "2015-01-17T17:35:53Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-18-android-anti-decompile/?utm_source=rss",
+      "detailPath": "articles/f960cb35590df1ef3190b29f.json"
+    },
+    {
+      "id": "90fd86fe0cea02e37d6191e9",
+      "title": "使用 Android Studio 查看 Android Lollipop 源码",
+      "summary": "Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本(今天发布了1.1,果断已经升级了).",
+      "image": null,
+      "publishedAt": "2015-01-16T13:54:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio/",
+      "detailPath": "articles/90fd86fe0cea02e37d6191e9.json"
+    },
+    {
+      "id": "5cd678610b320218a092b9e6",
+      "title": "android反编译-smali语法",
+      "summary": "前言 前面我们有说过android反编译的工具，如何进行反编译。反编译后可以得到jar或者得到smali文件。Android采用的是java语言进行开发，但是Android系统有自己的虚拟机Dalvik,代码编译最终不是采用的java的class，而是使用的smali。我们反编译得到的代码，jar的话可能很多地方无法正确的解释出来，如果我们反编译的是smali则可以正确的理解程序的意思。因此，我们有必要熟悉smali语法。 类型的表示 java里面包含两种类型，原始类型和引用类型(包括对象)，同时映射到smali也是有这两大类型。 原始类型 V void (只能用于返回值类型) Z boolean B byte S short C char I int J long F float D Double 对象类型…",
+      "image": null,
+      "publishedAt": "2015-01-14T15:52:44Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-14-android-decompile-smali/?utm_source=rss",
+      "detailPath": "articles/5cd678610b320218a092b9e6.json"
+    },
+    {
       "id": "322d29268520909b573e8474",
       "title": "Android 性能优化之过渡绘制 - 实战篇",
       "summary": "前言 上一篇 文章 从理论的角度讲解了一下什么是过渡绘制，以及可以用来查看和确认过渡绘制的工具，还提供了一些优化过渡绘制的方法。对代码和布局比较熟悉的人，看完上一篇其实就已经可以对自己的应用进行优化了。我记得有人说过，用iphone你只需要保证苹果有节操即可，用Android你就得保证所有的Android开发者都有节操。但现实是残酷的，现在Android市场上，有很多粗制滥造的应用，其中不乏大厂之作，各位打开过渡绘制按钮，就知道我所言非虚。作为一个Android开发人员，我肯定是更希望Android能一步一步好起来，超越iphone。 这篇文章从实战的角度，讲解了一个过渡绘制的优化过程。当然这里用到的只是很少的一部分，毕竟每个应用差别很大，优化方式也各不一样。所以这篇文章仅供参考，想把这块做好还是要下功夫的。…",
@@ -604,61 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
       "detailPath": "articles/d71f373d2c160dd636feac6b.json"
-    },
-    {
-      "id": "506ff04c13ef684ec4ef3661",
-      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
-      "summary": "1 辅助性服务介绍 辅助性服务是安卓框架的一个特性，它的设计是为了让已经安装在安卓设备上的应用程序能够为用户提供一种导航式(引导式）回应。一个辅助性服务能够传达给 用户关于这个应用程序的利益，例如把文本转换成语音、当用户手指停留屏幕的一个重要区域时的haptic反馈。这一节涵盖了怎样去创建一个辅助性服务，如何处理应用程序的信息接收，还有如何把信息反馈给用户。 创建自己的辅助性服务 本文先把辅助性服务的设计目标和能力边界讲清楚，包括它能拿到的事件类型、能反馈给用户的渠道，以及它和普通 Service、IntentService 的区别。后半部分会动手写一个最小可用的辅助性服务，覆盖继承 AccessibilityService 、在 manifest 里声明、配置 service 元数据，以及响应 Access…",
-      "image": null,
-      "publishedAt": "2014-03-17T06:07:53Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
-      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
-    },
-    {
-      "id": "5d9ab7333063bf5c41ecbfca",
-      "title": "android异步操作总结",
-      "summary": "Android中经常会有一些操作比如网络请求，文件读写，数据库操作，比较耗时，我们需要将其放在非UI线程去处理，此时，我们需要处理任务前后UI的变化和交互。我们需要通过类似js中异步请求处理，这里总结我所了解到的，方便自己记忆，也方便别人的浏览。 AsyncTask new AysncTask().execute(); AsyncTask会按照流程执行在UI线程和一个耗时的任务线程。 1.onPreExecute() 执行预处理，它运行于UI线程，可以为后台任务做一些准备工作，比如绘制一个进度条控件。 2.doInBackground(Params…) 后台进程执行的具体计算在这里实现，doInBackground(Params…)是AsyncTask的关键，此方法必须重载。在这个方法内可以使用publish…",
-      "image": null,
-      "publishedAt": "2014-03-16T08:18:25Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
-      "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
-    },
-    {
-      "id": "1c139bd8e75283939d7dda72",
-      "title": "解决Ubuntu下Sublime text 3中文输入的问题",
-      "summary": "好久之前便听朋友说起Sublime Text这款软件很好用，终于这几天有空折腾，把软件给装起来了。用起来确实很不错，写代码很爽。 但是用了一段时间之后，我需要输入中文了，无论怎么切换输入法，都无法切换到中文。 网上搜索了一下，原来这是Bug。找解决方法吧。下面介绍我的解决方案，是大神cjacker解决成功的啦，我只是copy一下，方便大家在遇到这个问题的时候可以方便解决。 我的系统：ubuntu 13.04 我的输入法：fcitx sublime版本：3059 理论上支持 sublime text2/3 1.保存代码sublime-imfix.c /* sublime-imfix.c Use LD_PRELOAD to interpose some function to fix sublime input…",
-      "image": null,
-      "publishedAt": "2014-03-14T16:24:45Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-15-ubuntu-sublime-text-error/?utm_source=rss",
-      "detailPath": "articles/1c139bd8e75283939d7dda72.json"
-    },
-    {
-      "id": "e9f8e637af3d3fb54ca889a7",
-      "title": "去艺圃",
-      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
-      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
-      "publishedAt": "2014-02-27T01:59:29Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/02/26/go-yipu/",
-      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
-    },
-    {
-      "id": "0dfa29cd063255aa2c6bda7b",
-      "title": "【2013】我该如何存在",
-      "summary": "这篇年终总结竟然被我拖到2014年。 最近日程安排得太满，复习、结课，还剩几门实验没有做完，深深感觉这学期欠的太多，所以在最后一切都要偿还，力不从心。但再苦再累，2013年还是熬过去了。 每逢过年，不管是元旦还是春节，我总会有一种怅然若失的感觉，周边的人可能觉得这是个大家聚在一起的好机会，而我总是下意识地想逃避人群，避开饭席，避开跨年晚会。以往元旦能逃回家静一静，今年元旦只放一天，于是就在学校跨年，和一群好友去学校办的跨年篝火晚会凑热闹，零点一过，所有人都在说新年快乐，舞台上的人在喊，底下人有伴的就拥吻，或是拿起手机向远方发去祝福，而我下意识地竟然叹了一口气，经旁边朋友的提醒才发现2014肇始我说的第一句话是个“哎”。真不是个好的开始，不知道明年总结的时候会不会感叹自己做了一件错事。 这个开头略悲伤，但也到此…",
-      "image": null,
-      "publishedAt": "2014-01-02T07:19:20Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/01/01/year-2013/",
-      "detailPath": "articles/0dfa29cd063255aa2c6bda7b.json"
     }
   ]
 }

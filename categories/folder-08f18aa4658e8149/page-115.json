@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "2d37a0834c72e7bfafac7a2c",
+      "title": "中国大规模地封锁基于TLS的翻墙服务器",
+      "summary": "自北京时间2022年10月3日起，超过一百名用户报告他们至少有一台基于TLS的翻墙服务器被封锁了。被封锁的服务器使用的协议包括了 trojan ， Xray ， V2Ray TLS+Websocket ， VLESS ，以及 gRPC 。我们还未收到任何 naiveproxy 被封锁的消息。 下面是我们总结的关于这次封锁的一些信息，以其我们的一些推测和分析 封锁先是针对翻墙服务的端口。如果用户在端口被封后， 改换了端口 ，那么整个服务器都会被封锁。需要指出，封锁似乎只是基于端口或IP地址，与翻墙服务有关的域名似乎并没有被加入到GFW的DNS或SNI黑名单中。 尽管大多数用户报告443端口被封，一部分使用非443端口的用户也报告了封锁。尽管大多数用户的服务器在流行的VPS提供商那里（ 比如 ），但至少有一位用户…",
+      "image": null,
+      "publishedAt": "2022-10-04T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/blocking_of_tls_based_circumvention_tools/zh/",
+      "detailPath": "articles/2d37a0834c72e7bfafac7a2c.json"
+    },
+    {
+      "id": "0b492e749ea049a6a2c1a839",
+      "title": "AP 计算机科学原理课笔记",
+      "summary": "高中大学选修计算机科学原理课（CSP）课堂笔记，仅作个人用途。",
+      "image": null,
+      "publishedAt": "2022-10-03T18:02:26Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/ebfb.html",
+      "detailPath": "articles/0b492e749ea049a6a2c1a839.json"
+    },
+    {
+      "id": "3b1bc26d653f4f2e80ddfa6a",
+      "title": "Large scale blocking of TLS-based censorship circumvention tools in China",
+      "summary": "Starting from October 3, 2022 (Beijing Time), more than 100 users reported that at least one of their TLS-based censorship circumvention servers had been blocked. The TLS-based circumvention protocols that are reportedly blocked include trojan , Xray , V2Ray TLS+Websocket , VLESS , and gRPC . We have not received any report of the blocking of naiveproxy tho…",
+      "image": null,
+      "publishedAt": "2022-10-03T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/blocking_of_tls_based_circumvention_tools/en/",
+      "detailPath": "articles/3b1bc26d653f4f2e80ddfa6a.json"
+    },
+    {
+      "id": "81696a79c9ff5d936d771be3",
+      "title": "AP 政治课笔记",
+      "summary": "高中大学选修政治课课堂笔记，仅作个人用途。",
+      "image": null,
+      "publishedAt": "2022-10-01T03:24:26Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/e48.html",
+      "detailPath": "articles/81696a79c9ff5d936d771be3.json"
+    },
+    {
+      "id": "7abcbf0b153a4ef7db95fa50",
+      "title": "The Great Firewall of China has blocked google.com and all its subdomains",
+      "summary": "We confirm that the Great Firewall of China has blocked google.com and all its subdomains *.google.com , affecting more than 1,100 domains and a large number of popular services. In this post, we introduce the two major censorship actions we observed. We share instructions on detecting common website censorship in China, encouraging more people to detect an…",
+      "image": null,
+      "publishedAt": "2022-10-01T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/blocking_of_google_com/en/",
+      "detailPath": "articles/7abcbf0b153a4ef7db95fa50.json"
+    },
+    {
       "id": "f2c4157efc2cdf94e38c108a",
       "title": "中国的防火长城屏蔽了google.com及其所有的子域名",
       "summary": "我们证实中国的防火长城已经屏蔽了google.com及其所有的子域名。这一封锁策略影响 超过1100个相关域名 以及大量的流行服务。在这篇文章中，我们介绍观察到的审查者的两次大动作。我们同时分享测量网站审查的方法，以鼓励更多人独立地检测并曝光审查行为。 审查者首先在北京时间2022年9月22日星期四，早上6点23分到晚上7点33分之间的某一时刻将 google.com 和 *.google.com 加入到SNI黑名单中。GFW会检查所有TLS ClientHello包，如果其中的SNI与黑名单匹配，GFW就会立即发送伪造的TCP RST包来切断TCP连接。 八天之后，审查者又在北京时间2022年9月30日星期五，下午1点56分到下午2点35分之间的某一刻将 google.com 和 *.google.com…",
@@ -604,61 +659,6 @@
       "sourceTitle": "空栈顶",
       "link": "https://emptystack.top/simple-devilish-calculatons/",
       "detailPath": "articles/b6cee643c9c9a12bc4b04e02.json"
-    },
-    {
-      "id": "b4763b6e098ed9c5f0aebf3b",
-      "title": "《大馬華語特有詞語詞典》",
-      "summary": "https://theinterview.asia/feature/72791/ 有機會的話我想把這本詞典買下捐給學校圖書館。 2025 年 10 月 13 日補充： 到現在我還是沒有買到 😅。不過我的確認爲對大馬華語的記錄與保存的確很重要，尤其是如今的馬來西亞正規教育系統對「規範華語」的執念，以及來自像 馬來西亞華語規範理事會 1 那樣的團體的施壓，導致大馬華語的生存空間受到壓制。大馬華語是最能代表馬來西亞本土華裔社群的文化資產之一，我希望更多人能瞭解它的珍貴之處。 不過馬來西亞華語規範理事會還是有做過維護本土化的事情，例如以本地慣用的華語名稱作爲馬來西亞不同地方的正式譯名（像是以「亞庇」作爲 Kota Kinabalu 的譯名而非「哥打京那巴魯」）。 ↩︎",
-      "image": null,
-      "publishedAt": "2022-07-27T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/malaysian-chinese-dictionary/",
-      "detailPath": "articles/b4763b6e098ed9c5f0aebf3b.json"
-    },
-    {
-      "id": "e9fcfcc0ac661a9a73a06886",
-      "title": "叁拾一周：No.36",
-      "summary": "这是「叁拾一周」第三十六期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 506 位。我的下一个目标是 610。 让我们回到最初，叁拾一周这份通讯最早的想法就不是去做一些 News 的分享，这也是我一直用通讯替代 Newsletter 的原因。只是通讯也并不准确，在我希望提供一些与「选择」和「幸福」有关的内容时，我想到的最好、最便捷的方式，便是告诉你，我如何选择，我认为什么样的生活更接近幸福。 似乎，这个话题还是太大，太发散，难以聚焦，看起来有核心，但似乎核心能连接万物，也就失去了它的意义。 那有什么足够小，足够聚焦的内容值得聊呢。今天，顺着这个话题聊一聊。 大与小 我现在用的手机是 iPhone 13 mini，一方面是我自己的手小，经年累月的习惯导致我喜欢能把玩在手里的东西，mini 尺寸刚刚好，配上自…",
-      "image": null,
-      "publishedAt": "2022-07-27T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/07/newsletter-036/",
-      "detailPath": "articles/e9fcfcc0ac661a9a73a06886.json"
-    },
-    {
-      "id": "5d59b14d11176f892c763213",
-      "title": "基石",
-      "summary": "上次 聊起鸿蒙 差不多是去年这个时候，最近鸿蒙发布，又想起一些小事。 大概五、六年前，参与过一次华为技术预研的讨论，他们希望能做一些国产化的技术改良，首选是在蓝牙上，基于蓝牙论坛的游戏规则，他们可以做比较大的改动，甚至重写，以便大幅度提升蓝牙实际的用户体验。 后来，此事在评估过程中没有得到太多外部支持，我也没再跟踪。之后，中美贸易战，所谓卡脖子技术问题，就是针对华为，华为在此前已经有各种培育产业链的计划，但是依然被几个大的技术联盟卡死，除蓝牙外，还包括 Wi-Fi，那次确实得到了包括工信部等一系列部委的重视，「供应链安全」、「软件、系统国产化替代」这些词，开始大面积出现。仅仅是 Wi-Fi 是否可以替代，前后就集中做了几次很大规模的调研，相关领导也反复论证。结论是，基础技术，必须要做到国产化。急先锋，自然是华…",
-      "image": null,
-      "publishedAt": "2022-07-27T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2022/07/tech-stone/",
-      "detailPath": "articles/5d59b14d11176f892c763213.json"
-    },
-    {
-      "id": "14b805b078b614888c36c86b",
-      "title": "批判比特币和Web3",
-      "summary": "对web3的审美和投资疲劳也许才是后现代投资组合的常态。",
-      "image": "https://prologue.dev/static/images/BTC-Volatility-2013-2021.png",
-      "publishedAt": "2022-07-25T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/criticism-of-bitcoin-and-web3",
-      "detailPath": "articles/14b805b078b614888c36c86b.json"
-    },
-    {
-      "id": "cd8de71e728890cfaaddf2f2",
-      "title": "使用 HiCA 签发免费的半年 IP / 通配符域名 SSL 证书",
-      "summary": "停止运营公告 2023 年 6 月 9 日更新 ：HiCA 官网及所有证书服务已于2023 年 6 月 6 日停止运营，所有已签发证书均会在有效期日后失效，以下所有内容仅作为历史记录。 HiCA 官网： https://www1.hi.cn/ 2022 年 7 月 22 日，国产数字证书品牌 HiCA 正式上线，提供免费的半年 IP 或者通配符域名 SSL 证书，非常实用。 7.27 更新： 官网文档已上线，移步 https://www1.hi.cn/docs/intro 获得更多教程 acme.sh HiCA 默认只提供 acme 协议签发证书，并且禁止任何 GUI 的形式对外公开服务，我们使用最简单的 acme.sh 脚本进行自动签发证书和更新证书。 使用以下命令行安装 acme.sh 自动化脚本，并且替…",
-      "image": "https://cdn.taurusxin.com/hugo/2022/07-27/image-20220727235855829.png",
-      "publishedAt": "2022-07-24T12:11:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/hica-ssl/",
-      "detailPath": "articles/cd8de71e728890cfaaddf2f2.json"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "dae4ac0504d781ee58adaaaa",
+      "title": "How we halved DNS build delay and cut memory use by 85%",
+      "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving build delay.",
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M6427MMYH94N030R2BSS8Z72.01M6427NA85VEN498BC5RPEDXK.png",
+      "publishedAt": "2026-11-02T14:00:00Z",
+      "sourceId": "2f3b69ac70035fb0",
+      "sourceTitle": "The Cloudflare Blog",
+      "link": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "detailPath": "articles/dae4ac0504d781ee58adaaaa.json"
+    },
+    {
+      "id": "ffb8374be87f48bfd0a2af9c",
+      "title": "St Jude Drawings Gallery",
+      "summary": "A gallery of all the drawings I did for St Jude this year",
+      "image": "https://cdn.rknight.me/site/2026/st-jude-drawings-collage.jpg",
+      "publishedAt": "2026-11-02T12:28:00Z",
+      "sourceId": "99310985b3738c4e",
+      "sourceTitle": "rknight.me",
+      "link": "https://rknight.me/blog/st-jude-drawings-gallery/",
+      "detailPath": "articles/ffb8374be87f48bfd0a2af9c.json"
+    },
+    {
+      "id": "6753dcf2c6dbba73b4137fb8",
+      "title": "AI Vulnerability Finding",
+      "summary": "A comment : 3% of ‘critical’ software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is? Yes. It is a new world out there.",
+      "image": null,
+      "publishedAt": "2026-11-02T12:02:34Z",
+      "sourceId": "785b58e8749bd508",
+      "sourceTitle": "Schneier on Security",
+      "link": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+      "detailPath": "articles/6753dcf2c6dbba73b4137fb8.json"
+    },
+    {
       "id": "c2b2ff50598b4a5534a74607",
       "title": "Linkage for a rainy Halloween",
       "summary": "Elliot Kienzle illustrates the AI proof of the Mahler conjecture (\\(\\mathbb{M}\\)) on symplectic embeddings of a ball into the Cartesian product of a convex body and its dual, showing that the product’s volume is always at least as large as the ball.",
@@ -397,17 +430,6 @@
       "detailPath": "articles/02a2a585db87fe95ee6b8fc4.json"
     },
     {
-      "id": "06fba4bb248cbc0d765c030b",
-      "title": "Possible new Cellebrite iPhone Radio Zero-Day",
-      "summary": "Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with the “advanced unlocking services” they’ve marketed for years. A press release from earlier this year confirms AU is a new product for 2026. […] According to Cellebrite, AU: is a “next-gener…",
-      "image": null,
-      "publishedAt": "2026-10-20T11:03:13Z",
-      "sourceId": "785b58e8749bd508",
-      "sourceTitle": "Schneier on Security",
-      "link": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
-      "detailPath": "articles/06fba4bb248cbc0d765c030b.json"
-    },
-    {
       "id": "0d4f81084add84fcf12941e5",
       "title": "Cutting our inference bill by 68% by being obsessive about optimization",
       "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
@@ -540,17 +562,6 @@
       "detailPath": "articles/fc6f6010747a38b7ae0d853a.json"
     },
     {
-      "id": "584baa4305cfdeef3b7952a9",
-      "title": "Deploy with Void",
-      "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare.",
-      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M4XW9N9BNAM3T4W2SE62A1B1.01M4XW9NZG3B1PTR3QTA8CK4GR.png",
-      "publishedAt": "2026-10-15T14:00:00Z",
-      "sourceId": "2f3b69ac70035fb0",
-      "sourceTitle": "The Cloudflare Blog",
-      "link": "https://blog.cloudflare.com/deploy-with-void/",
-      "detailPath": "articles/584baa4305cfdeef3b7952a9.json"
-    },
-    {
       "id": "4eae665f3e3893ff9ce5fac3",
       "title": "14 October 2026 Artifact Wave",
       "summary": "Here is what we got as new Jetpack artifacts this week!",
@@ -648,17 +659,6 @@
       "sourceTitle": "The CommonsBlog",
       "link": "https://commonsware.com/blog/2026/10/07/jetpack-artifact-wave.html",
       "detailPath": "articles/ff4581c2fef23e61c9086dd5.json"
-    },
-    {
-      "id": "de627c782af7f510589bd2e5",
-      "title": "St Jude 2026 Recap",
-      "summary": "Extended September is over and so is Relay's fundraiser this year",
-      "image": "https://cdn.rknight.me/site/2026/st-jude-jimothy-photo.jpg",
-      "publishedAt": "2026-10-07T14:11:22Z",
-      "sourceId": "99310985b3738c4e",
-      "sourceTitle": "rknight.me",
-      "link": "https://rknight.me/blog/st-jude-2026-recap/",
-      "detailPath": "articles/de627c782af7f510589bd2e5.json"
     }
   ]
 }

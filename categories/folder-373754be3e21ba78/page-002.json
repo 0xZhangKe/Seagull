@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "17c117a9837d862a9944518f",
+      "title": "SBD: We Have a Filesystem at Home",
+      "summary": "I have unkind things to say about people who make their own pasta. Here, I’ll only use them as an example of how not to think when you’re building infrastructure. It’s unfairly easy to believe that the harder you work on something, the better it gets. But infra is about making the $1 bag of spaghetti: a simple thing that works well (and doesn’t require you…",
+      "image": "https://fly.io/blog/sprites-block-device/assets/pasta-robot.webp",
+      "publishedAt": "2026-10-22T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/sprites-block-device/",
+      "detailPath": "articles/17c117a9837d862a9944518f.json"
+    },
+    {
+      "id": "014eae73c02f32af68f8ac70",
+      "title": "No Need for Retirement When Utopia Is Around the Corner",
+      "summary": "I’ve mentioned before my interest in the history and development of nuclear weapons . Currently, I’m reading The Doomsday Machine: Confessions of a Nuclear War Planner by Daniel Ellsberg (of Pentagon Papers renown). In the first chapter, Ellsberg talks about his time working at the RAND Corporation during the missile gap years when the U.S. thought it was f…",
+      "image": null,
+      "publishedAt": "2026-10-21T19:00:00Z",
+      "sourceId": "fafb02ce167dbe9e",
+      "sourceTitle": "Jim Nielsen’s Blog",
+      "link": "https://blog.jim-nielsen.com/2026/skip-retirement-for-utopia/",
+      "detailPath": "articles/014eae73c02f32af68f8ac70.json"
+    },
+    {
+      "id": "262f84b18919cdfeadb1b2a8",
+      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
+      "summary": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process. This post from the PHP F…",
+      "image": null,
+      "publishedAt": "2026-10-21T18:41:53Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "detailPath": "articles/262f84b18919cdfeadb1b2a8.json"
+    },
+    {
+      "id": "24066914cabd87b3e6099397",
+      "title": "Panache — RTS Belle Époque pour mobile",
+      "summary": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork by Gabriel Turpin which reskins the game to take place in steampunk 1900s France and adds an animated intro! Panache est un jeu de stratégie en temps réel pour mobile et navigateur, dans la…",
+      "image": "https://static.simonwillison.net/static/2026/battledrones-french.jpg",
+      "publishedAt": "2026-10-21T16:25:16Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Oct/21/panache/",
+      "detailPath": "articles/24066914cabd87b3e6099397.json"
+    },
+    {
       "id": "70d205626eb6b0daaf957aea",
       "title": "Vote!",
       "summary": "Today, I take a break from your regularly-scheduled AI mathocalypse programming to urge my American readers to vote in the Congressional midterms, early if possible, if you haven’t already. Especially if your state faces one or more major contests, as does my adopted home state of Texas. Me, I voted straight-ticket Democrat today, as I’ve […]",
@@ -120,17 +164,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
       "detailPath": "articles/6e18616ab8d83a17ad00c063.json"
-    },
-    {
-      "id": "67dd719df1b2c2a66043ce53",
-      "title": "llm-echo 0.5",
-      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reaso…",
-      "image": null,
-      "publishedAt": "2026-10-18T23:16:16Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-      "detailPath": "articles/67dd719df1b2c2a66043ce53.json"
     },
     {
       "id": "d4d837a464ace0b2d78074b8",
@@ -626,39 +659,6 @@
       "sourceTitle": "Johnny.Decimal",
       "link": "https://johnnydecimal.com/blog/0255-mcp-move-in-service/",
       "detailPath": "articles/1e4a442c17fda535daa6341a.json"
-    },
-    {
-      "id": "ec28ddfb34b7ef4d830a2050",
-      "title": "Life Admin MCP access now requires a Pro account",
-      "summary": "You could previously use it with a Personal account, but this wasn't financially viable. Sorry.",
-      "image": null,
-      "publishedAt": "2026-10-05T04:18:25Z",
-      "sourceId": "4567c06def96db0c",
-      "sourceTitle": "Johnny.Decimal",
-      "link": "https://johnnydecimal.com/blog/0254-mcp-las-gated-to-pro/",
-      "detailPath": "articles/ec28ddfb34b7ef4d830a2050.json"
-    },
-    {
-      "id": "f1f4d1b3495e05980fae0cd4",
-      "title": "My new course at UT Austin: AI Alignment Theory",
-      "summary": "This semester, I’ve been teaching a brand-new course, entitled CS395T AI Alignment Theory. Here’s the course description: The astounding progress of AI over the past decade has been accompanied by a rising fear: do we really understand how to align and control powerful AI systems—how to get them reliably to do what we wanted, or […]",
-      "image": "https://scottaaronson.blog/wp-content/uploads/2026/09/image-1024x799.png",
-      "publishedAt": "2026-10-04T22:13:33Z",
-      "sourceId": "b0b19bdb9833a622",
-      "sourceTitle": "Shtetl-Optimized",
-      "link": "https://scottaaronson.blog/?p=10125",
-      "detailPath": "articles/f1f4d1b3495e05980fae0cd4.json"
-    },
-    {
-      "id": "2e616426a6f17948e403f8b9",
-      "title": "“I’m Embarrassed on Behalf of the Tech Industry”",
-      "summary": "That’s something Ben Thompson said a recent episode of Dithering . He was referring to how he felt while trying to help his mom get control of her digital life. Everything was just too hard and convoluted and he felt embarrassed as someone who works in tech. That very same evening, I randomly got this text from a family member. I hear this a lot from family…",
-      "image": "https://cdn.jim-nielsen.com/blog/2026/embarassed.png",
-      "publishedAt": "2026-10-04T19:00:00Z",
-      "sourceId": "fafb02ce167dbe9e",
-      "sourceTitle": "Jim Nielsen’s Blog",
-      "link": "https://blog.jim-nielsen.com/2026/embarrassed-by-tech/",
-      "detailPath": "articles/2e616426a6f17948e403f8b9.json"
     }
   ]
 }

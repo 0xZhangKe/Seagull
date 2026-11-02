@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "024a419e84ee2e795b4b374a",
+      "title": "《魏晋之际的政治权力与家族网络》笔记（下）",
+      "summary": "齐王攸在储君之争中的合法性源于他的嗣父司马师，他第一次出现在储君候选人之中，是在司马昭立嗣时。选择司马炎还是司马攸，并不是立长还是立贤的问题，而是权力归属于司马师一脉，还是司马昭一脉。 是的，他们都是司马昭的嫡子……但是过继了就是过继了，司马攸现在是司马师的儿子了。司马昭征询若干核心圈元老，大家的一致意见是，立司马炎，包括司马师的妻族羊琇（划重点，《神雕侠侣》里提到过的羊祜是他堂兄），也没有任何犹豫地选择了司马炎。",
+      "image": null,
+      "publishedAt": "2021-02-22T13:56:05Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/reading/between-wei-and-jin-2/",
+      "detailPath": "articles/024a419e84ee2e795b4b374a.json"
+    },
+    {
+      "id": "cb261b891d615c6df38bd88c",
+      "title": "开始日更",
+      "summary": "王佩老师在白板报的公众号倡导了一个小活动，日更 100 天。 之前加入的一个读书群，每季度也组织类似活动，我比较保守，一直没有参加。一是写作时间少，二是想写的内容也不够丰沛，最重要的原因是，如今写作时不可避免会有一定的自我审查意识在里面。我时常注意到这件事，不喜欢，也没办法。觉得那还不如不写。 倒是最近读的《羊呆住了》一书，让我有些动摇，作者李盆文章造诣极高，文字像是陈酿，不知道在酒桶里泡了多少年，一闻，就舍不得喝，得小口咂摸。我读得很慢，经常读完一个段落就要想上好几天。他的文章很吸引我的地方，正是他成功地避开了自我审查，他选择在另一个赛道，不，是另一个平行宇宙里玩，那个宇宙就是「生活」。 彻底回归生活，一头扎进土里。李盆完成得很好。 他笔下的生活不是人物特稿，不是小镇奇闻，也不是社畜、丧、八卦新闻、科技创新…",
+      "image": null,
+      "publishedAt": "2021-02-22T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2021/02/daily-000/",
+      "detailPath": "articles/cb261b891d615c6df38bd88c.json"
+    },
+    {
+      "id": "f9bddf6180ef7aecf9e147cc",
+      "title": "在 Windows 上搭建 Hugo 博客之 Github 部署填坑记",
+      "summary": "**笔记保留仅供个人复习，请不要参考这篇笔记搭建博客。写了新的思路更清晰的 Hugo 博客搭建与部署博文 → 利用 Github Pages 与 Github Action 搭建并部署 Hugo 博客 **",
+      "image": null,
+      "publishedAt": "2021-02-21T19:37:09Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/deploy-hugo-as-a-github-pages-project/",
+      "detailPath": "articles/f9bddf6180ef7aecf9e147cc.json"
+    },
+    {
       "id": "e1fa5f508d5d0bed50dfb598",
       "title": "为nginx提供GeoIP2支持",
       "summary": "最近在处理站点的连接优化问题，需要通过检测访问者的 IP ，来选择是否经由 CloudFlare 代理，还是通过一个优化的直连地址进行体验优化。经过一些资料的比对，最终决定使用 GeoIP2 分辨来访者 IP 归属地，并通过 nginx 设置对应的规则来跳转访问。",
@@ -626,39 +659,6 @@
       "sourceTitle": "一笼虾饺有四个",
       "link": "https://fourxiajiao.github.io/2020/how-to-write-dating-profile/",
       "detailPath": "articles/0ce83044fef6ead6a8b14357.json"
-    },
-    {
-      "id": "25c0c847ee514edf14c66d98",
-      "title": "H5 Canvas前端绘图库 Fabric 简单应用",
-      "summary": "圣诞节又快到了，又到了全民给微信头像加圣诞帽的时候了。 撸了一个纯前端实现的加圣诞帽的页面， 点击前往 JS引用 1 < script src = \"https://cdn.bootcdn.net/ajax/libs/fabric.js/4.2.0/fabric.min.js\" >< /script> 直接用 bootcdn 引用 fabric.js 最新版 构建 fabric 对象 1 2 3 4 5 6 7 8 9 < div class = \"body\" id = \"uploadContainer\" > < img id = \"export\" alt = \"圣诞快乐\" src = \"\" /> < canvas id = \"cvs\" ></ canvas > < div style = \"display:…",
-      "image": null,
-      "publishedAt": "2020-12-09T12:46:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/fabricjs/",
-      "detailPath": "articles/25c0c847ee514edf14c66d98.json"
-    },
-    {
-      "id": "02d7d0c500b671522978910a",
-      "title": "博客系统迁移：Hexo 到 Hugo",
-      "summary": "上一篇文章介绍了 Emacs 的理念以及其强大的扩展功能，基本上能在 Emacs 里面做到事，我都在 Emacs 里面做。之前的博客一直都是用的 markdown 来书写，虽然 Emacs 也有 markdown 插件，但是总感觉体验不如 org-mode。这周末就趁着手热，把博客系统进行了升级，完美支持 org-mode，这篇文章就是用 org-mode 完成的，下面就来讲一下迁移过程。",
-      "image": null,
-      "publishedAt": "2020-12-05T05:12:21Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2020/12/05/hexo-to-hugo/",
-      "detailPath": "articles/02d7d0c500b671522978910a.json"
-    },
-    {
-      "id": "0171003ba3144fcd8eb08a8e",
-      "title": "何处安放我们的 Go 代码",
-      "summary": "用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。 这期间也掌握了不少技巧与惯用法（idioms），比如 prosumer ，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher 吃了不少苦头 。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：",
-      "image": null,
-      "publishedAt": "2020-12-05T05:12:21Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2019/10/24/go-modules/",
-      "detailPath": "articles/0171003ba3144fcd8eb08a8e.json"
     }
   ]
 }

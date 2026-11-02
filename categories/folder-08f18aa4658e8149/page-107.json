@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "199c0476c91293e3664b4e7c",
+      "title": "在听什么",
+      "summary": "(function () { function fit() { document.querySelectorAll('.listenbrainz-embed').forEach(function (box) { var s = Math.min(1, box.clientWidth / 650); box.querySelectorAll('iframe').forEach(function (f) { f.style.zoom = s; }); }); } fit(); window.addEventListener('resize', fit); })(); 2026.10.24 更新： 今天发现 Listenbrainz 也提供 embed 样式 ，在与 Navidrome 关联的前提下，Navidro…",
+      "image": null,
+      "publishedAt": "2024-02-22T12:02:00Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/what-am-i-listening-to-recently/",
+      "detailPath": "articles/199c0476c91293e3664b4e7c.json"
+    },
+    {
+      "id": "2cd4cd630c0a5c3c37a5aa0e",
+      "title": "喝了几口茶",
+      "summary": "最近在老家姐姐那喝到一点儿好茶，做个记录，顺便推荐一下。 张家界的莓茶，准确地说不属于茶类，但是回甘非常润喉，整个呼吸道都觉得很舒服。当做茶味的药来喝算了，喝过之后自己试着买了一罐，300 多，但是很一般，打听了一下，要找芽尖的莓茶，每年看好生产时间。最后姐姐给寄来一罐，搜了一下，也就 100出头，一大盒。从功效来说，不太适合当口粮茶。 小罐茶里的茉莉花茶，其它的都喝过，这一款封神，一般茉莉花在 4 泡以上还入味的，都价格不菲，但是小罐茶里的茉莉花我泡到 6 泡，依然好喝。强烈推荐，同时吐槽一下小罐茶的其他茶，不买也罢。 天福茗茶的乌龙茶，但是是在天福店里喝的，品质和冲茶手法一级棒。大几千一斤的茶，平时咱也喝不起，尝了尝，的确是人民币的味道。 最后，最近的口粮茶都是拼多多买的经典 58，足够了。",
+      "image": null,
+      "publishedAt": "2024-02-22T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2024/02/some-kind-of-tea/",
+      "detailPath": "articles/2cd4cd630c0a5c3c37a5aa0e.json"
+    },
+    {
+      "id": "6d80c737dda5923002ad0480",
+      "title": "React 的 Markdown 渲染",
+      "summary": "本文是一篇在 React 中实现 Markdown 渲染的实战教程，重点解决了新版 react-markdown 库中代码高亮的难题。文章首先介绍了如何使用 react-markdown 和 remark-gfm 插件来支持 GitHub 风格的 Markdown（如表格、删除线）。核心部分针对 react-markdown 新版废弃 inline 属性导致旧教程失效的问题，提供了一个创新的解决方案：通过自定义 pre 组件来准确识别并使用 react-syntax-highlighter 渲染代码块。本文为希望在 React 项目中实现现代化 Markdown 渲染的开发者提供了一套与时俱进的实用方法。",
+      "image": null,
+      "publishedAt": "2024-02-21T04:11:13Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/c0fc.html",
+      "detailPath": "articles/6d80c737dda5923002ad0480.json"
+    },
+    {
       "id": "aeb0bbfdb45ce39f6a94656d",
       "title": "React 的 Textarea 高度自适应",
       "summary": "本文是一篇在 React 中实现 textarea 高度自适应功能的实战教程，旨在模仿 ChatGPT 等现代聊天应用的输入框体验。教程详细讲解了如何利用 React Hooks (useRef, useEffect) 监听用户输入，通过动态计算 scrollHeight 来让文本框根据内容自动伸缩，并在达到最大高度后显示滚动条。文章还特别强调了在 Flexbox 布局下的实现技巧，并分享了一个因忘记 e.preventDefault() 而导致意外换行的常见“血泪教训”，为开发者提供了完整的实现方案和宝贵的避坑经验。",
@@ -626,39 +659,6 @@
       "sourceTitle": "嘰嘰乞乞",
       "link": "https://www.gigigatgat.ca/posts/dec-2023-recap/",
       "detailPath": "articles/5877c8cc008168ae49c61f0d.json"
-    },
-    {
-      "id": "0095ff6015429cf6a9ca3d85",
-      "title": "推荐《红猪》",
-      "summary": "在 2023 年的最后一天，花了一小会时间，为一篇其他人翻译的访谈写了一个独立网页，并重新排了一下版，欢迎大家访问阅读。",
-      "image": null,
-      "publishedAt": "2023-12-31T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/recommendation-for-porco-rosso",
-      "detailPath": "articles/0095ff6015429cf6a9ca3d85.json"
-    },
-    {
-      "id": "fba65634f51df25db6c4b763",
-      "title": "写在 2024 年之前",
-      "summary": "慢慢经历，好好成长。",
-      "image": null,
-      "publishedAt": "2023-12-31T00:00:00Z",
-      "sourceId": "6db99b063a5d43ac",
-      "sourceTitle": "伏枥之间",
-      "link": "https://leehenry.top/posts/moment_memos/achieve/231231-2023-year-end-summary/",
-      "detailPath": "articles/fba65634f51df25db6c4b763.json"
-    },
-    {
-      "id": "4c182bda2303590f5e974e71",
-      "title": "2023 年终总结之人物升级表",
-      "summary": "我以前是不做年度总结的，因为自己不是一个有仪式感的人，而且我已经有写每月总结了。但转念一想，如果将自己试作 RPG 游戏里的主角，那么以年为单位，自己的属性和技能有什么变化呢？作为一个 TRPG 跑团玩家，当然是以 DnD 和 CoC 的人物属性表为灵感，来写一张属于自己的人物表啦。",
-      "image": "https://cdn.jsdelivr.net/gh/kyoshiraishi/image@main/img/COC+-+CHARACTER+SHEET-11%20copy.jpg",
-      "publishedAt": "2023-12-30T14:23:31Z",
-      "sourceId": "09c2f0f0946a1f21",
-      "sourceTitle": "第三夏尔 | Third Shire",
-      "link": "https://thirdshire.com/annual-review-2023/",
-      "detailPath": "articles/4c182bda2303590f5e974e71.json"
     }
   ]
 }

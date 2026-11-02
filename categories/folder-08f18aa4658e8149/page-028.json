@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "355aa587e510316838e8072c",
+      "title": "MiMoCode 干完活儿发通知",
+      "summary": "AI在 coding 的时候我其实在玩别的。希望agent 每次干完活，macOS 弹个通知。 手上是 MimoCode，就让它自己写个。啪，很快写好了。结果还是折腾了好一会儿， 记录几个有意思的小坑。 首先是如果当前CLI是活动的，就不弹通知。 需要判断活动窗口。最初用 osascript osascript -e 'tell application \"System Events\" to get name of first application process whose frontmost is true' 直接报错 Not authorized to send Apple events to System Events (-1743) 。 于是换 lsappinfo ，走 macOS Launch S…",
+      "image": null,
+      "publishedAt": "2026-07-11T03:53:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-27",
+      "detailPath": "articles/355aa587e510316838e8072c.json"
+    },
+    {
+      "id": "a9fa5f877335835617d127db",
+      "title": "无标题文章",
+      "summary": "学到了 一个概念： Hypomnēma ，\"是一种将真理转化为品格的方法： 通过每天回顾那些让你切实感受到理想生活方式的句子，你会更容易记得去做正确的事 ，也会记得在日常生活中真正练习它。毕竟，只是在脑子里想一想，并不会改变你。慢慢地，你会成为那样的人。到最后，你甚至不再需要刻意提醒自己，因为你的原则已经变成了你的品格。 所以，对我来说，好像就是每天回顾 Wisdom 这个 collection 的道理，然后不断地内化这些道理。 Jul 11, 2026 世间有个令人无奈的事实：你学到的最重要的生活教训，往往最难向他人传达。它们听起来总是像陈词滥调。无论如何，以下是我从亲身经历中领悟到的几点，我也一直努力将它们铭记于心。 — nabeelqu.co 再来一些这篇文章里提到的 Nabeel S. Qureshi…",
+      "image": null,
+      "publishedAt": "2026-07-11T03:37:39Z",
+      "sourceId": "74bd1a0c7196fd9e",
+      "sourceTitle": "Owen的博客",
+      "link": "https://www.owenyoung.com/4mgvd",
+      "detailPath": "articles/a9fa5f877335835617d127db.json"
+    },
+    {
+      "id": "2b918a48ea2a18f7bd62f833",
+      "title": "Hello, World!",
+      "summary": "Continue reading...",
+      "image": "https://www.kawabangga.com/wp-content/uploads/2026/07/baby-768x1024.jpeg",
+      "publishedAt": "2026-07-11T03:13:58Z",
+      "sourceId": "f6786af950754079",
+      "sourceTitle": "卡瓦邦噶！",
+      "link": "https://www.kawabangga.com/posts/7336",
+      "detailPath": "articles/2b918a48ea2a18f7bd62f833.json"
+    },
+    {
+      "id": "1ac5a59fb2b16ccac76794ad",
+      "title": "我全栈开发的第一个产品：Balanced Portfolio 多资产风险平价全天候策略回测系统",
+      "summary": "关于笔者第一次全栈开发金融产品，将风险平价策略回测系统、股指期货数据看板、场外衍生品定价模块做成开箱即用、可交互、可视化的Web端产品。",
+      "image": "https://prologue.dev/static/images/balanced_portfolio_dashboard_example.avif",
+      "publishedAt": "2026-07-11T00:00:00Z",
+      "sourceId": "757145dcc77dee94",
+      "sourceTitle": "Prologue 序章",
+      "link": "https://prologue.dev/blog/my-first-full-stack-development-project-balanced-portfolio-a-global-multi-asset-risk-parity-backtesting-system",
+      "detailPath": "articles/1ac5a59fb2b16ccac76794ad.json"
+    },
+    {
+      "id": "baf978e26ee72eb35c343bc0",
+      "title": "才不會讓你得逞",
+      "summary": "總是覺得自己不夠自律嗎：",
+      "image": null,
+      "publishedAt": "2026-07-11T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/dont-let-them-win",
+      "detailPath": "articles/baf978e26ee72eb35c343bc0.json"
+    },
+    {
+      "id": "1249d2b23c6c03ba1cadf1d6",
+      "title": "Jul 10 2026 航運業新聞",
+      "summary": "Bank ship finance climbs back above $300bn(銀行船舶融資規模重回3,000億美元以上) 說出你的看法 藉由這則新聞，新學到\"波賽頓原則(Poseidon Principles)\"，是銀行與保險公司共同起草的一項保護海洋的政策。透過建立市場機制，自動淘汰排碳量過高的船隻，是個高招的作法。沒有誰來主導哪一艘該停駛，而是用市場的第三隻手來決定。解決排碳的問題不只有航運公司自己努力而已，這樣不夠。之前我從來沒有想過可以藉由市場來調和。而且各船東也沒有因為這個原則就望而生卻，從銀行船舶融資的前景來看，是可以被期待的。 連結到航運業的影響 身為一個變動不斷的產業，即便是傳統產業，它仍然在進步。銀行融資給航運公司的錢變多，意思是船舶的成本變高了。有哪些方便可能導致航運公司需要更多錢…",
+      "image": null,
+      "publishedAt": "2026-07-10T23:54:00Z",
+      "sourceId": "9755b4e021e7e4dc",
+      "sourceTitle": "she monster inside",
+      "link": "https://monsteressinside.bearblog.dev/jul-10-2026/",
+      "detailPath": "articles/1249d2b23c6c03ba1cadf1d6.json"
+    },
+    {
       "id": "026d2e0aacea22cae2598e59",
       "title": "摘：《见证疯狂》",
       "summary": "「疯人非疯。」",
@@ -593,72 +659,6 @@
       "sourceTitle": "Feed Me, Haruo",
       "link": "https://haruowang.vercel.app/pov/other/animal.html",
       "detailPath": "articles/158d0567ae86de7d240ade10.json"
-    },
-    {
-      "id": "bcd66be22100e045513f160b",
-      "title": "《裝幀時代》重點筆記",
-      "summary": "文學光啟：六、七零年代時，盛況接近大業書店和文壇社",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/bind60.html",
-      "detailPath": "articles/bcd66be22100e045513f160b.json"
-    },
-    {
-      "id": "0136eb2eae1877cb82a3d3f0",
-      "title": "吳清友的生命之旅",
-      "summary": "輩分較小的吳清友並沒有因為生長於貧困環境，而從小就決心要力爭上游",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/eslite.html",
-      "detailPath": "articles/0136eb2eae1877cb82a3d3f0.json"
-    },
-    {
-      "id": "52fe5ee6ae0d1797675e6ddb",
-      "title": "你不能不知道的台藝圖文系友",
-      "summary": "陳敦化｜呂秀蘭｜黨宜心｜陳俊良｜陳青琳｜許哲寧｜趙琍｜張軒豪｜林花｜謝捲子｜呂柏勳｜張家瑋",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/gca.html",
-      "detailPath": "articles/52fe5ee6ae0d1797675e6ddb.json"
-    },
-    {
-      "id": "74d2ed0771d0fe39815a829a",
-      "title": "菊地信義的《裝幀人生》",
-      "summary": "「說要引退，然後全部都丟給其他人；或是因為生病，突然就離開人世的話，其實這樣也蠻輕鬆的。但實際上並不會這樣。」",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/kikuchi.html",
-      "detailPath": "articles/74d2ed0771d0fe39815a829a.json"
-    },
-    {
-      "id": "d67e574001b299aa47869fad",
-      "title": "moom bookshop參訪心得",
-      "summary": "如果你追求品味或特立獨行，如果你熱愛攝影藝術，如果你單純想過上一個不同於以往的週末，moom bookshop都將是一個適合走訪的去處",
-      "image": "https://haruowang.vercel.app/other/mo1.webp",
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/moom.html",
-      "detailPath": "articles/d67e574001b299aa47869fad.json"
-    },
-    {
-      "id": "e83e0d417b555e2cd9eff2c5",
-      "title": "《重寫臺灣百年新詩史》筆記",
-      "summary": "相較《台灣新詩史》的「文本主義」，《台灣現代詩史》的「文本至上」更注重文本自身，被本文作者所認同，並收錄了沒那麼主流，曾是夫妻檔的張健和蘇白宇之作品。而洛夫則同時受到兩本詩史之肯定",
-      "image": null,
-      "publishedAt": "2026-07-08T14:38:15Z",
-      "sourceId": "50bce2ced06e6077",
-      "sourceTitle": "Feed Me, Haruo",
-      "link": "https://haruowang.vercel.app/pov/other/poem100.html",
-      "detailPath": "articles/e83e0d417b555e2cd9eff2c5.json"
     }
   ]
 }

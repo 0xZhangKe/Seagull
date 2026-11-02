@@ -7,7 +7,7 @@
   <link href="https://taxodium.ink/" rel="alternate" type="text/html" />
   <id>https://taxodium.ink/</id>
   <icon>https://taxodium.ink/favicon.ico</icon>
-  <updated>2026-10-30T09:40:10.192Z</updated>
+  <updated>2026-11-01T15:40:01.932Z</updated>
   <author>
     <name>Spike Leung</name>
     <email>l-yanlei@hotmail.com</email>
@@ -2468,7 +2468,16 @@ Ellen 的决定是对是错，都是她一个人的责任，你跟她说了，�
     <content type="html" xml:lang="zh-CN" xml:base="https://taxodium.ink/some-advice-about-links.html"><![CDATA[<div id="content" class="content e-content">
 <header>
 <h1 class="title p-name">一些關於連結的建議</h1>
-</header>
+</header><details>
+<summary>目錄</summary>
+
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#2B03D9F8-9BBB-4E85-A34D-BE1B68F92BBD">內容相關</a></li>
+<li><a href="#D7E42326-4781-4BAD-B2C8-CB08F339F8F1">樣式相關</a></li>
+</ul>
+</div>
+</details>
 <div id="outline-container-2B03D9F8-9BBB-4E85-A34D-BE1B68F92BBD" class="outline-2">
 <h2 id="2B03D9F8-9BBB-4E85-A34D-BE1B68F92BBD"><a href="#2B03D9F8-9BBB-4E85-A34D-BE1B68F92BBD">內容相關</a></h2>
 <div class="outline-text-2" id="text-2B03D9F8-9BBB-4E85-A34D-BE1B68F92BBD"><ul class="org-ul">
@@ -2592,14 +2601,14 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <i>有少數人是<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E8%89%B2%E7%9B%B2" class="hidden-link">全色盲</a>，他們完全没有色觉只有灰度知觉，所以沒法通過顏色的不同區分普通文字和連結。</i>
 </p>
 
-<section role="note" id="orge69990c">
+<section role="note" id="orgad713da">
 <p>
 你也可以故意去隱藏連結，用來藏一些彩蛋 :P
 </p>
 </section>
 
 <p>
-如果你覺得默認的下劃綫不好看，你可以參考 Jeremy 的 <a href="https://adactio.com/journal/22084">Style your underlines</a> 去美化下劃綫。重點是用頻色之外的視覺元素，讓讀者能簡單明了的知道哪裡有連結，下劃綫不是唯一的選擇，但它是最被廣泛接受的連結樣式。
+如果你覺得默認的下劃綫不好看，你可以參考 Jeremy 的 <a href="https://adactio.com/journal/22084">Style your underlines</a> 去美化下劃綫。重點是用顏色之外的視覺元素，讓讀者能簡單明了的知道哪裡有連結，下劃綫不是唯一的選擇，但它是最被廣泛接受的連結樣式。
 </p></li>
 
 <li><p>
@@ -2610,7 +2619,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 悬在連結上面時，可以考慮增加背景色，把 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor">指針形狀</a> 變成 <code>pointer</code> ，用明顯的視覺變化讓讀者知道他當前悬浮在一個連結上。
 </p>
 
-<section role="note" id="orge04ec79">
+<section role="note" id="org2b49862">
 <p>
 在類似手機的設備上是沒有悬浮操作的，大多是點擊和長按，有時悬浮反而變成了干擾。
 </p>
@@ -2632,7 +2641,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <code>:visited</code> 可以給已訪問過的連結添加樣式，例如設置不同的顏色，這樣讀者點擊了頁面上的連結後，他就知道哪些他是訪問過的，哪些他還沒看過。這在我的 <a href="0.html">Zine</a> 系列文章中就很有用，裡面有大量的連結，設置了 <code>:visited</code> 後，可以方便讀者清楚看到哪些看過、哪些沒看過，避免重複訪問。
 </p>
 
-<section role="note" id="orgfc28a3d">
+<section role="note" id="org929a8a8">
 <p>
 出於隱私安全考慮， <code>:visited</code> 支持設置的樣式是有限制的，見 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:visited#privacy_restrictions">Privacy restrictions</a>。另外，如果想重置 <code>:visited</code> 標記，清空瀏覧器歷史記录󠄃即可。
 </p>
@@ -2715,7 +2724,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <li>外部連結：<a href="https://en.wikipedia.org/wiki/Taxodium">Taxodium - Wikipedia</a></li>
 </ul>
 
-<section role="note" id="org0225d4a">
+<section role="note" id="org575fdbc">
 <p>
 如果你是用的是 Unicode 或 Emoji 符號，要測試一下不同瀏覧器的表現，因為不同系統 (Android、iOS)，不同瀏覧器渲染出來的圖標會有差异，在自己瀏覧器上好看，在讀者的瀏覧器上可不一定。
 </p>
@@ -2959,6 +2968,10 @@ Frances 之前寫了 <a href="https://francescrossley.com/raising-kids-when-your
 
 <p>
 如果你接触過早期的 Windows 系統，你大概見過 Office 工具裡的藝術字體 (WordArt)，它們已經被淘汰了，但 Dan Q 發現原來在 Outlook 裡還支持插入 WordArt，說不定微軟還維護著一組運行舊版 Windows、Office 和 Internet Explorer 的虛擬機集群，專門用來用來將這些 WordArt 轉成圖片😂。
+</p>
+
+<p>
+See also: <a href="https://titleart.dvy.io/">TitleArt — Make text like it’s 1997</a>
 </p></li>
 
 <li><p>
@@ -3907,7 +3920,7 @@ This variable affects query-replace and replace-string, but not replace-regexp.
 我用下來還挺方便的。如果你感興趣，相關代碼在這：<a href="https://gist.github.com/Spike-Leung/eab7cb6a3d005e5f3e119c2b657c4589">kagi-translate.user.js</a>。要用的話，你需要注冊 <a href="maybe-you-want-to-try-kagi.html">Kagi</a> 和安裝 Zen 瀏覧器才行。
 </p>
 
-<section role="note" id="orgf3b84de">
+<section role="note" id="orgcc87b21">
 <p>
 用了一陣 Kagi Translate 的 Anki 模版後，我按自己喜好改了模版，我覺得會更方便記憶。如果你需要可以看 <a href="https://github.com/Spike-Leung/kagi-anki.user.js">kagi-anki.user.js</a>，也是一個 Tampermonkey 脚本。
 </p>
@@ -3920,8 +3933,7 @@ This variable affects query-replace and replace-string, but not replace-regexp.
 <hr>
 
 <p>
-最近 <a href="https://blog.kagi.com/translate-is-back">Kagi 終於宣布 Kagi Translate 的付費計劃</a> 了，所有 Kagi 用户都有一個免費額度，當超過這個額度後，可以選擇花 8 美元訂閱 <a href="https://translate.kagi.com/pricing">Translate Individual</a> 或者升級到 25 美元的 <a href="https://help.kagi.com/kagi/plans/ultimate-plan.html">Ultimate Plan</a>。說實話，我覺得還是有點貴的，我現在用的是 10 美元的 Professional Plan，如果再訂閱 Translate Individual，差不多就是兩倍的訂閱價格了。後面先看看免費額度够不够用，再决定要不要訂閱。
-Kagi Translate 其實也是用 AI 翻譯的，Kagi Assistant 也是 AI，如果 Kagi Translate 能用 Kagi Assistant 的 AI 額度來抵就好了 :(
+最近 <a href="https://blog.kagi.com/translate-is-back">Kagi 終於宣布 Kagi Translate 的付費計劃</a> 了，所有 Kagi 用户都有一個免費額度，當超過這個額度後，可以選擇花 8 美元訂閱 <a href="https://translate.kagi.com/pricing">Translate Individual</a> 或者升級到 25 美元的 <a href="https://help.kagi.com/kagi/plans/ultimate-plan.html">Ultimate Plan</a>。說實話，我覺得還是有點貴的，我現在用的是 10 美元的 Professional Plan，如果再訂閱 Translate Individual，差不多就是兩倍的訂閱價格了。後面先看看免費額度够不够用，再决定要不要訂閱。<del>Kagi Translate 其實也是用 AI 翻譯的，Kagi Assistant 也是 AI，</del><del>如果 Kagi Translate 能用 Kagi Assistant 的 AI 額度來抵就好了 :(</del><a href="https://blog.kagi.com/translate-is-back#:~:text=EDIT,future">Kagi Translate 現在和 Kagi Assistant 共用 AI 額度了</a>，10 美元額度對我來說還挺够用的。
 </p>
 
 <p>

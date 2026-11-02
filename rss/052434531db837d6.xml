@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-10-31T23:15:22+00:00</updated><author><name>Simon Willison</name></author><entry><title>How We Took Over ChatGPT Accounts</title><link href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="alternate"/><published>2026-10-31T23:15:22+00:00</published><updated>2026-10-31T23:15:22+00:00</updated><id>https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-01T23:24:22+00:00</updated><author><name>Simon Willison</name></author><entry><title>If in doubt, delete the uv.lock file</title><link href="https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/" rel="alternate"/><published>2026-11-01T23:24:22+00:00</published><updated>2026-11-01T23:24:22+00:00</updated><id>https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/</id><summary type="html">
+    &lt;p&gt;I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If in doubt, delete the uv.lock file&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Most of my projects are libraries which don't include a &lt;code&gt;uv.lock&lt;/code&gt; file, since it's rude for a library dependency to lock versions for anything else that uses it.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;uv run pytest&lt;/code&gt; etc tends to leave &lt;code&gt;uv.lock&lt;/code&gt; files lying around, which are listed in &lt;code&gt;.gitignore&lt;/code&gt; and so do not get committed to my repositories.&lt;/p&gt;
+&lt;p&gt;But... sometimes that &lt;code&gt;uv.lock&lt;/code&gt; pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: Failed to build `watchfiles==1.1.1`
+  cause: Call to `maturin.build_wheel` failed
+
+error: the configured Python interpreter version (3.15) is newer
+than PyO3's maximum supported version (3.14)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Deleting that file and running &lt;code&gt;uv run pytest&lt;/code&gt; again usually fixes the problem.&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/uv"&gt;uv&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/til"&gt;til&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/python"&gt;python&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="uv"/><category term="til"/><category term="python"/></entry><entry><title>Quoting Kyle Kingsbury</title><link href="https://simonwillison.net/2026/Nov/1/kyle-kingsbury/" rel="alternate"/><published>2026-11-01T16:49:04+00:00</published><updated>2026-11-01T16:49:04+00:00</updated><id>https://simonwillison.net/2026/Nov/1/kyle-kingsbury/</id><summary type="html">
+    &lt;blockquote cite="https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"&gt;&lt;p&gt;More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]&lt;/p&gt;
+&lt;p&gt;In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"&gt;Kyle Kingsbury&lt;/a&gt;, Jepsen results for ParticleDB 1.1.4&lt;/p&gt;
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/kyle-kingsbury"&gt;kyle-kingsbury&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-misuse"&gt;ai-misuse&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="kyle-kingsbury"/><category term="llms"/><category term="ai"/><category term="generative-ai"/><category term="ai-misuse"/></entry><entry><title>How We Took Over ChatGPT Accounts</title><link href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="alternate"/><published>2026-10-31T23:15:22+00:00</published><updated>2026-10-31T23:15:22+00:00</updated><id>https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.parameter.ai/labs/we-found-a-gap-at-openai"&gt;How We Took Over ChatGPT Accounts&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this "Canvas" but it looks like the latest revision is called &lt;a href="https://help.openai.com/en/articles/20001246-working-with-writing-blocks-and-code-blocks-in-chatgpt"&gt;HTML previews&lt;/a&gt;), where interactive custom HTML apps are displayed in a sandboxed iframe.&lt;/p&gt;
@@ -832,34 +859,4 @@ Token usage: 2 input, 24 output
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="llm"/></entry><entry><title>Inline rendering with document​.currentScript</title><link href="https://simonwillison.net/2026/Oct/17/document-currentscript/" rel="alternate"/><published>2026-10-17T21:11:12+00:00</published><updated>2026-10-17T21:11:12+00:00</updated><id>https://simonwillison.net/2026/Oct/17/document-currentscript/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://leanrada.com/notes/inline-rendering-currentscript/"&gt;Inline rendering with document​.currentScript&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Lean Rada describes a neat trick that takes advantage of the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript"&gt;document.currentScript&lt;/a&gt; property. You can use that to drop in a tiny inline &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; element that replaces itself when the page loads:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;The year is &amp;lt;script&amp;gt;
-document.currentScript.replaceWith(
-  new Date().getFullYear())&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you define a shortcut function like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$=(...n)=&amp;gt;document.currentScript.replaceWith(...n)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You get a tiny template language:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;The year is &amp;lt;script&amp;gt;$(new Date().getFullYear())&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="javascript"/></entry><entry><title>web-edit 0.1a2</title><link href="https://simonwillison.net/2026/Oct/17/web-edit/" rel="alternate"/><published>2026-10-17T13:16:49+00:00</published><updated>2026-10-17T13:16:49+00:00</updated><id>https://simonwillison.net/2026/Oct/17/web-edit/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/web-edit/releases/tag/0.1a2"&gt;web-edit 0.1a2&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;web-edit (&lt;a href="https://simonwillison.net/2026/Oct/12/web-edit/"&gt;previously&lt;/a&gt;) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale.&lt;/p&gt;
-&lt;p&gt;I added a "copy to clipboard" option for both text and image data. I needed this because I was running pelican prompts on a laptop from my phone (here's &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fb1cec9726b6aa62d4de47100f90f0c1a"&gt;DeepSeek 4.1 Flash 1017&lt;/a&gt;) and I wanted an easy way to copy the resulting logs into a Gist.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/deepseek"&gt;deepseek&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="projects"/><category term="pelican-riding-a-bicycle"/><category term="deepseek"/></entry></feed>
+</summary><category term="llm"/></entry></feed>

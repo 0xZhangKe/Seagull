@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-01T23:24:22+00:00</updated><author><name>Simon Willison</name></author><entry><title>If in doubt, delete the uv.lock file</title><link href="https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/" rel="alternate"/><published>2026-11-01T23:24:22+00:00</published><updated>2026-11-01T23:24:22+00:00</updated><id>https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-02T13:31:26+00:00</updated><author><name>Simon Willison</name></author><entry><title>The U.S. Census Bureau and “Super Intelligence”</title><link href="https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/" rel="alternate"/><published>2026-11-02T13:31:26+00:00</published><updated>2026-11-02T13:31:26+00:00</updated><id>https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/</id><summary type="html">
+    &lt;p&gt;I was reminded today of &lt;a href="https://www.apolloacademy.com/ai-adoption-rate-trending-down-for-large-companies/"&gt;AI Adoption Rate Trending Down for Large Companies&lt;/a&gt;, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart &lt;a href="https://simonwillison.net/2025/Sep/9/apollo-ai-adoption/"&gt;to demonstrate GPT-5 data analysis&lt;/a&gt;, and then &lt;a href="https://simonwillison.net/2025/Sep/9/claude-code-interpreter/#something-much-harder-recreating-the-ai-adoption-chart"&gt;to experiment with Claude's new Code Interpreter&lt;/a&gt;. I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of &lt;a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"&gt;Executive Order 14434&lt;/a&gt;, aka the asinine Super Intelligence one.&lt;/p&gt;
+&lt;h4 id="first-the-updated-chart"&gt;First, the updated chart&lt;/h4&gt;
+&lt;p&gt;Every two weeks the U.S. Census Bureau runs a survey called the &lt;a href="https://www.census.gov/hfp/btos/data"&gt;Business Trends and Outlook Survey&lt;/a&gt; (aka BTOS). Each time it goes to 200,000 businesses out of 1.2 million total - the surveyed group (a "panel") cycles such that an individual business only completes the survey every twelve weeks.&lt;/p&gt;
+&lt;p&gt;The latest data is published on alternating Thursdays at 10am.&lt;/p&gt;
+&lt;p&gt;I used the most recent numbers (published October 22, 2026) to create a new version (&lt;a href="https://chatgpt.com/share/6ae89e86-8658-83e8-85fd-c4ef2d4f3b89?ogimg=plain"&gt;GPT-6 Astra Extra High transcript&lt;/a&gt;) of the AI adoption chart, updated to reflect both the last twelve months and a change that was made to the survey question sent out by the Bureau:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png" alt="Line chart titled &amp;quot;AI use by U.S. firm size&amp;quot;, subtitled &amp;quot;Six-survey trailing average • Share of employer businesses reporting use in the last two weeks&amp;quot; and &amp;quot;Updated with the October 22, 2026 Census release&amp;quot;. Seven lines for firm sizes 250+, 100–249, 50–99, 20–49, 10–19, 5–9 and 1–4, on a y-axis from 0% to 45% and an x-axis from Jan 2024 to Oct 2026. Left section, &amp;quot;AI in producing goods or services&amp;quot;: all sizes start at 3–5% in late 2023 and climb slowly to 7–13% by September 2025, with 250+ highest. A shaded gap is labeled &amp;quot;Question broadened Nov 2025&amp;quot; and &amp;quot;Series not comparable&amp;quot;. Right section, &amp;quot;AI in any business function&amp;quot;: all lines restart higher in February 2026 and rise steadily to &amp;quot;250+: 40.7%&amp;quot;, &amp;quot;100–249: 33.5%&amp;quot;, &amp;quot;50–99: 27.9%&amp;quot;, &amp;quot;20–49: 23.8%&amp;quot;, &amp;quot;1–4: 23.3%&amp;quot;, &amp;quot;10–19: 22.1%&amp;quot;, &amp;quot;5–9: 21.1%&amp;quot;. Footnotes: &amp;quot;Source: U.S. Census Bureau, Business Trends and Outlook Survey (BTOS). Size groups are numbers of employees.&amp;quot; &amp;quot;Method: arithmetic mean of six successive survey estimates, calculated separately for each question wording; no bridging of the break.&amp;quot; &amp;quot;Dates use reference-period end, matching the original chart. Latest: Oct 4, 2026 (collected Oct 5–18). First new six-wave average: Jan 25, 2026.&amp;quot; &amp;quot;The gap includes the 2025 shutdown and the wait for six observations under the broader question. Survey uncertainty is not displayed.&amp;quot;" style="max-width: 100%;" /&gt;&lt;/p&gt;
+
+
+&lt;p&gt;For comparison, here's that AI adoption chart from last year (my GPT-5 version):
+&lt;img src="https://static.simonwillison.net/static/2025/apollo-ai-chart.jpg" alt="AI adoption rates starting to decline for larger firms. A chart of AI adoption rate by firm size. Includes lines for 250+, 100-249, 50-99, 20-49, 10-19, 5-9 and 1-4 sized organizations. Chart starts in November 2023 with percentages ranging from 3 to 5, then all groups grow through August 2025 albeit with the 250+ group having a higher score than the others. That 250+ group peaks in July 2025 at around 14% and then appears to slope slightly downwards to 12% by August. Some of the other lines also start to tip down, though not as much." style="max-width: 100%;" /&gt;&lt;/p&gt;
+
+&lt;p&gt;In September 2025 the largest (250+ employees) companies answered "yes" around 12% of the time to the question about whether they used AI in "producing goods or services".&lt;/p&gt;
+&lt;p&gt;Under the new "any business function" wording, by February 2026, those same large companies answered "yes" around 30% of the time, and by October 2026 that had increased to around 40%.&lt;/p&gt;
+&lt;p&gt;The data in the above chart comes from the "Employment size class" XLSX file, &lt;a href="https://www.census.gov/hfp/btos/data_downloads"&gt;available from here&lt;/a&gt;. Here's &lt;a href="https://static.simonwillison.net/static/2026/Employment-Size-Class-Nov-1-2026-copy.xlsx"&gt;a copy&lt;/a&gt; of the file I used.&lt;/p&gt;
+&lt;p&gt;You can view &lt;a href="https://www.census.gov/hfp/btos/downloads/BTOS%20Content%20V5%20Core%20Round%203,%204.pdf"&gt;the survey document&lt;/a&gt; that is sent out to businesses - here's &lt;a href="https://static.simonwillison.net/static/2026/BTOS-Content-V5-Core-Round-3-4.pdf"&gt;my snapshot copy&lt;/a&gt; of that 346KB PDF.&lt;/p&gt;
+&lt;h4 id="the-changing-language-of-the-questions"&gt;The changing language of the questions&lt;/h4&gt;
+&lt;p&gt;As the chart demonstrates, the question asked by the Bureau changed in a material way on November 17th, 2025. Prior to that date, the question they asked was this (emphasis mine):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the last two weeks, did this business use Artificial Intelligence (AI) in &lt;strong&gt;producing goods or services&lt;/strong&gt;? (Examples of AI: machine learning, natural language processing, virtual agents, voice recognition, etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On December 3rd, 2025, &lt;a href="https://www.census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf"&gt;the Bureau announced&lt;/a&gt; a significant change to that question. Here's the replacement:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the last two weeks, did this business use Artificial Intelligence (AI) in &lt;strong&gt;any of its business functions&lt;/strong&gt;? (Examples of AI: machine learning, natural language processing, virtual agents, voice recognition, etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;No more "producing goods or services" - now it's "in any of its business functions"! This means that the answers to the question before and after November 17th are not directly comparable.&lt;/p&gt;
+&lt;h4 id="from-october-19-2026-they-ask-about-super-intelligence"&gt;From October 19, 2026, they ask about Super Intelligence&lt;/h4&gt;
+&lt;p&gt;When I went looking for the updated question language in the latest XLSX file, I couldn't find it. I found this instead:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the last two weeks, did this business &lt;strong&gt;use Super Intelligence or SI&lt;/strong&gt; (formerly referred to as Artificial Intelligence or AI) in any of its business functions? (Examples of SI use include: SI-powered data analysis; generative SI for marketing, product design, or coding; virtual SI agents for customer service; SI-powered forecasting or pricing; SI-driven computer vision for quality control, etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The &lt;a href="https://www.census.gov/hfp/btos/about"&gt;BTOS about page&lt;/a&gt; explains what happened:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beginning with the October 19, 2026 collection, &lt;a href="https://www.census.gov/hfp/btos/downloads/BTOS%20Content%20V5%20Core%20Round%203,%204.pdf"&gt;instrument wording&lt;/a&gt; was updated due to &lt;a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"&gt;Executive Order 14434&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The current numbers reflect the old Artificial Intelligence survey wording - the first survey results reflecting the Super Intelligence wording are due for publication on Thursday.&lt;/p&gt;
+&lt;h4 id="is-this-going-to-affect-the-survey-"&gt;Is this going to affect the survey?&lt;/h4&gt;
+&lt;p&gt;The obvious open question here is whether this wording change is going to affect the survey results.&lt;/p&gt;
+&lt;p&gt;The businesses answering this survey will have last seen that question twelve weeks ago, when it was still called AI. Hopefully the new language isn't going to confuse them, especially since the survey helpfully spells out "formerly referred to as Artificial Intelligence or AI".&lt;/p&gt;
+&lt;p&gt;I can't help but laugh at the absurdity of "SI-powered data analysis; generative SI for marketing, product design, or coding; virtual SI agents for customer service" though.&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/census"&gt;census&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/surveys"&gt;surveys&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="census"/><category term="surveys"/><category term="ai"/><category term="generative-ai"/><category term="llms"/></entry><entry><title>If in doubt, delete the uv.lock file</title><link href="https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/" rel="alternate"/><published>2026-11-01T23:24:22+00:00</published><updated>2026-11-01T23:24:22+00:00</updated><id>https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/</id><summary type="html">
     &lt;p&gt;I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If in doubt, delete the uv.lock file&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Most of my projects are libraries which don't include a &lt;code&gt;uv.lock&lt;/code&gt; file, since it's rude for a library dependency to lock versions for anything else that uses it.&lt;/p&gt;
@@ -836,27 +880,4 @@ Jeremy Scheff poignantly captures the key loss caused by coding agents for caree
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="datasette"/><category term="llm"/></entry><entry><title>llm-echo 0.5</title><link href="https://simonwillison.net/2026/Oct/18/llm-echo/" rel="alternate"/><published>2026-10-18T23:16:16+00:00</published><updated>2026-10-18T23:16:16+00:00</updated><id>https://simonwillison.net/2026/Oct/18/llm-echo/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-echo/releases/tag/0.5"&gt;llm-echo 0.5&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;I'm working towards a new &lt;a href="https://llm.datasette.io/"&gt;LLM&lt;/a&gt; release, and testing PRs caused me to revisit the &lt;code&gt;llm-echo&lt;/code&gt; debug plugin. This plugin provides a "model" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account.&lt;/p&gt;
-&lt;p&gt;Example usage:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Outputs:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;First I consider the prompt, then I decide what to say.
-{
-  "prompt": "hi there",
-  "system": "",
-  "attachments": [],
-  "stream": true,
-  "previous": []
-}
-Token usage: 2 input, 24 output
-&lt;/code&gt;&lt;/pre&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="llm"/></entry></feed>
+</summary><category term="datasette"/><category term="llm"/></entry></feed>

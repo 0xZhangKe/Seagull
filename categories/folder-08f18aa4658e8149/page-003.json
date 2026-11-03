@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "5fd80eb14148e226c26d78c0",
+      "title": "修修补补",
+      "summary": "一直信奉的是“篱笆没坏就不要去管。”，所以系统、PHP、宝塔和Wordpress版本都很老。 尤其是Wordpress，我一直觉得2016年8月的Wordpress4.6引入的WP_Post_Type是最后一个有用的功能，后面的都属没卵用的“彩电冰箱大沙发”，找不到新功能点硬往上凑。 但是上周爆发的PHP严重漏洞直接把这条老篱笆摧毁了。把所有服务停掉思考了两天接下来该怎么走。 其实只有3条路： A）把4.x搞到支持PHP8。 B）升级的7.x，干掉没用的功能。 C）放弃Wordpress。 本来一直走的A路线，试图让WP4.6在PHP8下运行，已经弄了一年多了，跑起来也大差不差，起码没白屏。 直到这次准备上线前偶然发现首页变成时间归档，顺藤摸瓜之后看到这段逻辑： 《 修修补补 》采用 署名-非商业性使用-禁止…",
+      "image": null,
+      "publishedAt": "2026-10-27T08:09:34Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/10/tinkering.html",
+      "detailPath": "articles/5fd80eb14148e226c26d78c0.json"
+    },
+    {
+      "id": "76c2806853f2ba6ad34957f3",
+      "title": "為什麼我把 Mermaid 換成 Obsidian 開源的 pele：快 20 倍，渲染器剩三成",
+      "summary": "這篇記錄作者把部落格的 Mermaid 渲染器從官方套件、beautiful-mermaid 一路換到 Obsidian 團隊開源的 pele 的過程。作者拿站上 136 張圖實測,pele 全部渲染成功、比 beautiful-mermaid 快約 9 倍、SVG 小四成,畫出來的版面也乾淨很多。文中附上接進 TanStack Start 的做法:伺服器端出 SVG、渲染器只能動態 import、換主題只換 CSS 變數、下載圖片時把顏色寫回 SVG,以及把作者自訂的節點顏色歸成四種角色。最後是作者協作的開源專案 tessera 在瀏覽器端換成 pele 的效果:要下載的渲染器剩三成,每次重畫快了約 20 倍。",
+      "image": null,
+      "publishedAt": "2026-10-27T07:18:56Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/mermaid-to-pele-obsidian-renderer",
+      "detailPath": "articles/76c2806853f2ba6ad34957f3.json"
+    },
+    {
+      "id": "a3e63cc37300732b1c94e7da",
+      "title": "聊天紀錄-中國人F",
+      "summary": "2024剛好是柯文哲京華城案爆發的時候，橘子逃往海外，至今下落未明。那時有人用多啦Ａ夢的配樂剪輯柯文哲被捕的影 […] The post 聊天紀錄-中國人F first appeared on susushare.com .",
+      "image": "https://susushare.com/wp-content/uploads/2026/10/S__61489156.jpg",
+      "publishedAt": "2026-10-27T06:27:52Z",
+      "sourceId": "ea1569cbd69bdce9",
+      "sourceTitle": "susushare.com",
+      "link": "https://susushare.com/%e8%81%8a%e5%a4%a9%e7%b4%80%e9%8c%84-%e4%b8%ad%e5%9c%8b%e4%ba%baf/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%2581%258a%25e5%25a4%25a9%25e7%25b4%2580%25e9%258c%2584-%25e4%25b8%25ad%25e5%259c%258b%25e4%25ba%25baf",
+      "detailPath": "articles/a3e63cc37300732b1c94e7da.json"
+    },
+    {
+      "id": "ce7da63c5636b8b73f4d1544",
+      "title": "兩家書店",
+      "summary": "兩家書店賣的書一樣，一家把好賣的擺在最前面，一家把自己喜歡的擺在最前面，我常在前者買書，卻羨慕後者。",
+      "image": null,
+      "publishedAt": "2026-10-27T05:24:40Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/two-bookstores",
+      "detailPath": "articles/ce7da63c5636b8b73f4d1544.json"
+    },
+    {
       "id": "19f1848d1b91478507eb6697",
       "title": "外澳海灘",
       "summary": "i人的熊就是要坐在i上面。 （太小了看不到好嗎） 因為不太喜歡拍照，所以這種到此一遊照總是交給帥熊。 海灘上留念就留下我的腳印就好，與可能有兩種的蟹蟹？和不知啥鳥的腳印合照。 說到沙灘，在沙灘上作畫總是有種浪漫情懷。當初去日本一年，就曾經在沙灘上留下類似「等我回來」這樣的字樣給朋友，覺得這樣很浪漫。 然後找到一張以前朋友在沙灘上的傑作。是有多喜歡那個地方。",
@@ -615,50 +659,6 @@
       "sourceTitle": "YangBear'Blog ᓚᘏᗢ",
       "link": "https://yangbear.bearblog.dev/inaka-hyakumandoru-yakei/",
       "detailPath": "articles/4ed252c5c2c67bb03cc57a71.json"
-    },
-    {
-      "id": "e4af1818e9e64acb67476d74",
-      "title": "入蜀记 day518 唠嗑续",
-      "summary": "「唠嗑续。」",
-      "image": null,
-      "publishedAt": "2026-10-24T04:48:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_518/",
-      "detailPath": "articles/e4af1818e9e64acb67476d74.json"
-    },
-    {
-      "id": "444faae47e94d6bfd07c586a",
-      "title": "这回我承认AI确实有用",
-      "summary": "看过那么多人设计了那么多种 AI 的用法，我终于见到一个大众真正需要，真正解决生活问题的 AI 产品：CleanYourTV。 它解决了一件大部分人每天见，每天烦，但是一直没办法的问题，那就是把你家的智能电视恢复到最朴素的样子，去掉各种电视机自带的广告，各种弹窗，各种各样的后台程序。 不需要用家有任何高深的 AI 知识，只需要电脑和电视机在同一个 Wi-Fi 下，打开电视机的调试模式，剩下的事情就是交给你自己的 AI 助手，让它在 CleanYourTV 的指引下连上电视直接做修改。电视不小心改成了砖也不怕，它还可以用脚本一键恢复。 目前 AI 助手最流行的工作是订餐、买票、邮件汇总一类的事情，我觉得那只是解决痒的问题。而 CleanYourTV 的出现，才让 AI 助手真正解决了痛的问题。因此，在很短时间内…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhed4BwWYSUMbGLSeyeM3AQjOVlbidWNqsJMmuDoWR9u5xBDBoe6LahBIDnzjjL_nmPKG4dSm4-uAaxDJnJ6shEmDcp49Hlzz-8uvMVGPCxHyemhZn8ylVfWJXjiPZbcO2IUyqLfFUYRURq1hEhz8a5J2r_mVQETM9ILORU0iCGOaEzSOguCNhk4Uo4oBo/s72-w445-h591-c/hecaitou_Big_waves_--ar_34_--raw_--sref_268814299_41377607882_756159cc-b4e2-456c-aed8-794a74f2d25e_0-gigapixel-high%20fidelity%20v3-2x.jpeg",
-      "publishedAt": "2026-10-24T03:36:55Z",
-      "sourceId": "095c6fbac5bbadfd",
-      "sourceTitle": "槽边往事",
-      "link": "https://www.hecaitou.com/2026/10/why-i-finally-admit-that-ai-is-genuinely-usef.html",
-      "detailPath": "articles/444faae47e94d6bfd07c586a.json"
-    },
-    {
-      "id": "7b9333f13a43d425e8f71ee2",
-      "title": "“你是Gay”这句话真的能骂到男性吗？",
-      "summary": "虽然我并不是一个很喜欢聊对与错、高低级的人，但有些事情有明显的“层级”问题，比如认知、主体性，以及今天要聊的“ […]",
-      "image": null,
-      "publishedAt": "2026-10-24T02:04:56Z",
-      "sourceId": "416bdd1cdb343543",
-      "sourceTitle": "莫比烏斯",
-      "link": "https://mobius.blog/25969.html",
-      "detailPath": "articles/7b9333f13a43d425e8f71ee2.json"
-    },
-    {
-      "id": "539c9dbc553c5126e76b153a",
-      "title": "谁在博客提到了你：给Hugo静态博客添加Webmention",
-      "summary": "Webmention是 W3C制定的标准 ， 可以让你知道哪些博客提到了你的文章。 有关如何配置，我觉得Eltrac写的简体中文的 Webmention简明指南 已经介绍得非常清楚。珠玉在前，本文基本是在记录我如何用尽量简单的方式 （在博客上糊弄出了这个功能） 在Hugo静态博客里接收和显示这些提及。 顺便昭告天下：本站支持Webmention了。 目前的Webmention区样式如下： 如果你已经知道Webmention是什么、如何收发，可以直接跳到第5部分「 在博客上显示Webmention 」。 1 什么是Webmention # 假设Alice发布了一篇文章，网址是 https://alice.com/aaa 。 Bob读到之后觉得很不错，在自己的网站上写了一篇文章提到它，并附上了Alice文章的网址…",
-      "image": "https://wuliangdian.com/posts/add-webmention-to-blog/wm-list-261023.jpg",
-      "publishedAt": "2026-10-24T00:20:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/add-webmention-to-blog/",
-      "detailPath": "articles/539c9dbc553c5126e76b153a.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "cb3daa8fe2ca7bdca95e3fc9",
+      "title": ".io",
+      "summary": "你去過一些網址是 .io 結尾的網站嗎？像是：",
+      "image": null,
+      "publishedAt": "2024-10-10T08:55:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/dot-io",
+      "detailPath": "articles/cb3daa8fe2ca7bdca95e3fc9.json"
+    },
+    {
+      "id": "7198c13c44d56b2b6ccf3f29",
+      "title": "九月：928、家庭影院、厦大与 806",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-10-10T00:00:00Z",
+      "sourceId": "b1766968470c2fd8",
+      "sourceTitle": "一直游到海水变蓝",
+      "link": "https://nelsonboss.ink/2024/928-家庭影院-厦大与806",
+      "detailPath": "articles/7198c13c44d56b2b6ccf3f29.json"
+    },
+    {
       "id": "f2f3dc219074a3c9d2c93dbb",
       "title": "'DEATHLOOP': Designing Trinkets for Freedom, Choice, and Emergence 的启示",
       "summary": "设计师重返讲台，带来进一步的分享。这一次正如标题，他着重于如何塑造死亡循环的核心循环。 GDC Vault - 'DEATHLOOP': Designing Trinkets for Freedom, Choice, and Emergence 游戏的亮点？ 扮演失忆者，被困在时间循环中的黑礁岛 一天内消灭七个目标来逃离 第一人称射击/沉浸模拟 使用广泛投放的视频来为每种游戏风格提供支持 从一开始可带出的资源就是设计目标 前期 每个概念先独立验证，再加以组合 会产生意料之外的结果，玩起来就像是神奇的build搭配 之后是纸面原型。侧重与模拟玩家的选择；这意味着要同时设计效能和代价。 有趣的选择必须包括和威力相匹配的代价。但是，不希望堆积能力。比如说，移动能力只提供二段跳，而不是更多段数。玩家一次只能吸入一个敌…",
@@ -637,28 +659,6 @@
       "sourceTitle": "刑辩人在路上",
       "link": "https://xingbianren.cn/post/270.html",
       "detailPath": "articles/98e027bf82f1a88560684c44.json"
-    },
-    {
-      "id": "3cf91e6fa10af8479aa4bb42",
-      "title": "計程車短片",
-      "summary": "昨晚搭計程車，司機的方向盤左右兩側各架了一支手機：右邊的手機顯示著 Google Maps，左邊的是一個短影音平台。",
-      "image": null,
-      "publishedAt": "2024-09-26T09:03:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/taxi-shorts",
-      "detailPath": "articles/3cf91e6fa10af8479aa4bb42.json"
-    },
-    {
-      "id": "754aca31c16b0c77299f1d74",
-      "title": "Android源码分析：系统进程中事件的读取与分发",
-      "summary": "之前分析的是从InputChannel中读取Event，并且向后传递，进行消费和处理的过程。但是之前的部分呢，事件如何产生，事件怎么进入到InputChanel当中的，事件又是如何跨进程到达App进程，这里继续来分析。 以上为system进程的流程的简化图，这里我们可以看到几个重要的组件，这里以触摸事件来进行分析（后文的分析也将会以触摸事件为主进行分析）并且简单的描绘了事件从EventHub到服务端的InputChannel发送事件的全部过程。具体内容一起来看下面的代码。 InputManagerService的创建 因为事件的分发涉及到不少类，我们先从InputManagerService(IMS)的初始化出发，进行分析。入口代码在 SystemServer.java 中，代码如下： 1 2 3 4 5 6…",
-      "image": "https://img.isming.me/image/input_dispatch_flow.png",
-      "publishedAt": "2024-09-26T05:44:04Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-26-input-event-read-dispatch/?utm_source=rss",
-      "detailPath": "articles/754aca31c16b0c77299f1d74.json"
     }
   ]
 }

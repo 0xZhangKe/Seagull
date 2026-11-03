@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "4f22719be5167ff52cd1d381",
+      "title": "15分钟的LDtk超快速上手",
+      "summary": "这是由我一次分享活动演讲所使用的文字底稿延伸而来的文章，内容经过些许扩充。在本文中，我们将探讨上手关卡设计工具 LDtk 所需的最核心知识。LDtk是关卡设计的有力工具，由 Dead Cells 的开发者带来，用于 2D 关卡设计尤为便利。 我一向认为上手工具的最快方法就是使用它。所以请打开软件，一起动手吧！ 在开始前 你可以在 [LDtk – 2D level editor]( https://ldtk.io/) ) 下载这一工具，本文使用写作时最新的版本 1.2.5 作为参照。软件仅提供英文用户界面。 下载打开之后你应当看到如图的欢迎屏幕。 你大可直接点开「Examples」，研习二三也许就可上手。不过显然这不能成为笔者偷懒的理由——我们直接「New」新建一个设计文件。对了，记得换一个保存位置。 鉴于软件…",
+      "image": "https://static.gridea.dev/589ae027-a330-455f-872b-e253d7674397/BQJ_vklgu.png",
+      "publishedAt": "2024-09-05T19:44:00Z",
+      "sourceId": "84679a79f1d8b908",
+      "sourceTitle": "dyron503's",
+      "link": "https://blog.dyron503.com/ldtk1",
+      "detailPath": "articles/4f22719be5167ff52cd1d381.json"
+    },
+    {
       "id": "31be7639ecd66750f51bfb60",
       "title": "Android源码分析:ServiceManager启动代码解析",
       "summary": "之前已经分析过获取ServiceManager了，不过那是在使用端，在分析使用ServiceManager去获取服务或者添加服务的时候发现，我使用的Android Studio for Platform默认没有把ServiceManager的源码导入。并且同时我们不知道ServiceManager的服务端是怎么启动，怎么响应的，因此决定还是需要分析一下这块的代码。 首先简单画了一下启动的流程，如下图所示（Entry表示我们的调用入口，也就是后面所说的main函数）： sequenceDiagram autonumber Entry->>+ProcessState: initWithDriver ProcessState->>ProcessState: init ProcessState-->>-Entry:…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Manjusaka",
       "link": "https://www.manjusaka.blog/posts/2024/08/19/benchmark-for-python-web-framework-2024-part1-cn/",
       "detailPath": "articles/20c299f959f1039073fe42d1.json"
-    },
-    {
-      "id": "012d30bcdc7a8c44ae75632d",
-      "title": "In 2024, Gevent or asyncio? Part 1",
-      "summary": "The choice between Gevent and asyncio has always been a classic question. Here, we’ll use data to help you make a decision.",
-      "image": "https://i.imgur.com/Jk2ubDY.png",
-      "publishedAt": "2024-08-19T17:00:00Z",
-      "sourceId": "a6add2003c9627a9",
-      "sourceTitle": "Manjusaka",
-      "link": "https://www.manjusaka.blog/posts/2024/08/19/benchmark-for-python-web-framework-2024-part1-en/",
-      "detailPath": "articles/012d30bcdc7a8c44ae75632d.json"
     }
   ]
 }

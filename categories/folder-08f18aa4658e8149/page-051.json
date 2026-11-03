@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "299d60e978ee2a7978363d7e",
+      "title": "【教學】讓 Apple Magic Mouse 2 在 Linux 上完美運作：配對全攻略",
+      "summary": "前言 # 公司前輩意外得到一顆 Magic Mouse 但用不到，所以轉交給 Eddie，在連線到 macOS 當然是沒問題（其實有，未來再寫一篇），但連線到 Mintbook（Linux Mint on macbook）卻遇到「明明圖形界面顯示連線成功，滑鼠卻不會動、的問題。 這篇文章將教你如何透過底層設定，徹底解放這隻滑鼠。 零、安裝必要驅動 # 安裝藍牙除錯與控制工具 sudo apt update sudo apt install bluez-tools bcmwl-kernel-source 註：bcmwl-kernel-source 是 MacBook Broadcom 晶片的驅動，非 Mac 電腦可跳過，並確保有安裝自己電腦硬體的藍牙相關驅動。 一、 確保驅動到位 # 檢查系統是否已載入驅動：目…",
+      "image": null,
+      "publishedAt": "2026-02-22T20:42:41Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/magic-mouse-2-on-linux/",
+      "detailPath": "articles/299d60e978ee2a7978363d7e.json"
+    },
+    {
+      "id": "8cb089154261e17901742846",
+      "title": "Shell 并发编程：xargs 实用指南",
+      "summary": "在日常的 Shell 脚本编程中，我们经常需要对大量文件或数据进行批量处理。使用传统的循环结构（如 for 循环）可能会导致性能瓶颈，尤其是在处理大量数据时。幸运的是，xargs 是一个强大的工具，可以帮助我们实现并发执行，从而显著提升脚本的效率。",
+      "image": null,
+      "publishedAt": "2026-02-22T14:27:10Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2026/02/22/shell-concurrency-programming/",
+      "detailPath": "articles/8cb089154261e17901742846.json"
+    },
+    {
       "id": "4f5291f425e8d14ed65277b5",
       "title": "豪赤",
       "summary": "豪赤",
@@ -637,28 +659,6 @@
       "sourceTitle": "Owen的博客",
       "link": "https://www.owenyoung.com/bo-yi-de",
       "detailPath": "articles/553a27e670bfd3bf55099837.json"
-    },
-    {
-      "id": "c42fb9dd214c235433b20bdf",
-      "title": "滿意的頭髮",
-      "summary": "難得放假，終於可以好好弄個頭髮了！不然回想到 與可蕎拍照 時的鳥頭，就覺得尷尬癌發作。 這次是把接近髮根的地方燙捲，髮尾則保持直的，這樣可以讓頭髮不會塌掉，而整體看起來又還是直髮的線條，算是很滿意的一次燙髮！ 也順便染了個顏色，我也不知道什麼顏色，但 Ketty 設計師說這個是霧面質感的髮色，最喜歡霧面了！ 頭髮尾端是直的，根部是捲的！ 其實沒有撥好有點亂亂的，但就這樣吧～ 邊緣在暖色光源照射下，有一點點變成紅色了 不過這次整理就比較麻煩了，要護髮、不能全吹乾，最後慕斯、造型液來抓頭，算是一種挑戰。 這次發出來，其實是要讓未來的我記得，弄好是長這樣啊！ 最後，希望尾牙季造成的黑眼圈跟痘痘趕快全部消除！",
-      "image": "https://eddielv.com/musings/satisfied-hair-cut/1.jpg",
-      "publishedAt": "2026-02-15T16:44:11Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/satisfied-hair-cut/",
-      "detailPath": "articles/c42fb9dd214c235433b20bdf.json"
-    },
-    {
-      "id": "391ee4ccf0847f5e6b2f27ba",
-      "title": "又是杭州过年",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2026-02-15T16:42:00Z",
-      "sourceId": "b6f0cdd7ba01970a",
-      "sourceTitle": "夕时",
-      "link": "https://www.iyuxiyang.com/Moment/i2026/267.html",
-      "detailPath": "articles/391ee4ccf0847f5e6b2f27ba.json"
     }
   ]
 }

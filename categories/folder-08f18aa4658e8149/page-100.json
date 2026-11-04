@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "2a9cc93e4ead4e316d4a2c61",
+      "title": "在家搭建VaultWarden密码管理服务",
+      "summary": "每个人都有很多密码，有人用脑记，有人用纸记，也有很多的工具帮我们记。之前我一直使用Keepass，在 之前的文章 介绍过。平时输入密码的场景最多的是网页中，目前keepass的网页插件只能说是能用的程度。前段时间给openwrt上面装上了docker，也想着在家搭一个密码管理服务，于是说干就干了。 密码服务能够个人搭建的就是Bitwarden了，因为在自家的树莓派上运行，因此选择了基于Rust的VaultWarden，毕竟资源消耗更少，性能也会更好点吧，它兼容Bitwarden，因此所有的客户端和浏览器插件都通用。 因为是在家里搭建要保证在外的时候，密码服务也能正常工作，因为已经有公网ip了，所以需要弄一个DDNS。因为搭建VaultWarden需要https，在查资料的过程中发现了 lucky 这个很好用的…",
+      "image": "https://img.isming.me/image/vault-cover.jpg",
+      "publishedAt": "2024-08-22T11:33:25Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-08-22-vaultwarden-deploy/?utm_source=rss",
+      "detailPath": "articles/2a9cc93e4ead4e316d4a2c61.json"
+    },
+    {
       "id": "27772afbeef327e4ec913ac5",
       "title": "要有多少錢才是「有錢」？",
       "summary": "這篇文章也被收錄到了筆記區。",
@@ -648,17 +659,6 @@
       "sourceTitle": "CC的数字花园",
       "link": "https://cyrus19.cc/archives/448",
       "detailPath": "articles/1207b65fbe14099e9e325d04.json"
-    },
-    {
-      "id": "01043f9b0caaeffeb4e40c05",
-      "title": "关于“轮回”作息的妙用。",
-      "summary": "关于“轮回”作息的妙用。 （先不解释我的轮回作息是啥了，反正不是啥好事，过两天再写一篇详细的补一下） 现在我每 […]",
-      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/08/52ff64ba9ae336777666bbb2bd42cb6.jpg?resize=412%2C309&ssl=1",
-      "publishedAt": "2024-08-06T10:21:17Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/438",
-      "detailPath": "articles/01043f9b0caaeffeb4e40c05.json"
     }
   ]
 }

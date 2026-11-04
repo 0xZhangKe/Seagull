@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "01527ba9df2be5dccf9263dc",
+      "title": "我是如何做設計的：先找到自己的世界觀，再把每一道接縫接好",
+      "summary": "現在做網站很快，卻常常大同小異，作者認為問題多半出在不知道自己要什麼。這篇把作者的做法整理成步驟：從自己真正喜歡的東西出發，拿它回答每個站都會遇到的問題，變成一套世界觀。做大選擇時先算代價，像整站做成 3D，換到了宇宙的寬闊，也得補上效能和閱讀的負擔。接著用減法收斂，只留點和線，顏色先定角色再挑色，並做黑白測試。判斷標準不是真不真實，而是和不和諧，每個細節用五道接縫檢查，說不出哪裡不對時就去參考、學習和研究。四顆天體的故事，則要放進讀者看得到的位置。文末附上一份可以直接套到自己網站的清單。",
+      "image": null,
+      "publishedAt": "2026-11-04T04:58:25Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/how-i-design-detail-by-detail",
+      "detailPath": "articles/01527ba9df2be5dccf9263dc.json"
+    },
+    {
       "id": "0f4b94803617b0fdacce7860",
       "title": "Chrome 157 的 HTML-in-Canvas 實戰：把網頁字卡畫進 WebGPU，主執行緒少了七成",
       "summary": "這篇記錄作者用 Chrome 157 正式推出的 HTML-in-Canvas,把首頁土星旁的 DOM 字卡畫進跑在 worker 裡的 WebGPU canvas。正式版 API 改過名字,網路上多數教學仍是舊寫法。three.js 內建的 HTMLTexture 既用舊命名、又假設 canvas 在主執行緒,只能自己寫上傳流程。第一次只搬小標註,唯一的好處是主執行緒卡住時字仍貼著衛星。量測後發現大頭是字卡每幀重建 CSS 轉場,先在所有瀏覽器修掉,再把字卡也搬進去,主執行緒工作從 460 降到 145 ms/s,樣式重算少了 92%。最後是字變成貼圖之後的效果試作:被吸進衛星、再倒著吐出來。",
@@ -318,17 +329,6 @@
       "sourceTitle": "Koimsurai 手記",
       "link": "https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own",
       "detailPath": "articles/3aee34eb9dac6aec9a2c1ef3.json"
-    },
-    {
-      "id": "033c49b9e8b8acb705072fae",
-      "title": "二月的片段：生日、團聚與技術探索",
-      "summary": "2026 年 2 月，作者在生日當天給自己放了一天假，隨興地與好友慶祝。除夕前回到雲林外婆家，全家一年一度的團聚中，他也首次帶著兩隻貓咪出遠門。技術上，他啟動了個人 AI 助理開發計畫，並更新了網站功能，同時還為自己添購了高階設備作為獎勵。在生活與工作間找到平衡之餘，也重新拾起吉他和攝影的興趣，感受過去熱愛的事物帶來的熟悉溫度。",
-      "image": null,
-      "publishedAt": "2026-02-19T11:42:11Z",
-      "sourceId": "bd51496b8ec0ca1d",
-      "sourceTitle": "Koimsurai 手記",
-      "link": "https://koimsurai.com/blog/february-fragments-birthday-reunion-and-tinkering",
-      "detailPath": "articles/033c49b9e8b8acb705072fae.json"
     }
   ]
 }

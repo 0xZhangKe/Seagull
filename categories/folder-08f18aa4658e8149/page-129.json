@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "45588ed5f46ad7ec0100ad0a",
+      "title": "小王完成了一个新功能",
+      "summary": "任职于某大厂浏览器部门的小王很关注最近热议的 996.ICU 话题，并且 star 了 Github 上的项目。他非常高兴——「我们程序员终于可以团结起来对抗剥削的资本家了，我一定也要添一份力」——小王暗暗下定决心并且在项目",
+      "image": "https://i.loli.net/2020/02/17/XGE652OBCxMngr3.jpg",
+      "publishedAt": "2019-04-03T09:25:00Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2019/04/03/a-new-feature/",
+      "detailPath": "articles/45588ed5f46ad7ec0100ad0a.json"
+    },
+    {
       "id": "7134dc9730ef23ce0d90f038",
       "title": "repwn",
       "summary": "IDA 里 shift+F12 找到“Please Input Your Key_ Now! ” ，然后找到程序入口“sub_4014C0 ” （ ; DATA XREF: sub_4014C0:loc_401588↑o ） 。 然后输入了一个字符串给 v11， sub_4012F0((int)&v11) 需要返回 1。 sub_4012F0：v2 要在 *((_BYTE *)&v4 + v2) == *(_BYTE *)(v1 + a1) 的情况下从 0，++ 到 12，此时若 *(_BYTE *)(a1 + 20) == 72 则返回 1。 v4 这样明显超了一字节又强制转成一字节的可以在 IDA 里对着数值右键，转成 16 进制取最后两位写进 z3。 from z3 import * d2c = Bit…",
@@ -648,17 +659,6 @@
       "sourceTitle": "文三娃",
       "link": "https://wentommy.wordpress.com/2018/09/21/%e8%80%81%e5%b9%b4%e4%ba%ba%e7%9a%84%e5%9d%8f%e4%b9%a0%e6%83%af/",
       "detailPath": "articles/35d9368bd0ab60854d47f920.json"
-    },
-    {
-      "id": "d4d20c04c78e7fdcc3a22671",
-      "title": "程序员的修炼-02-编程之道",
-      "summary": "本文是 <程序员的修炼-从优秀到卓越> 的读书笔记的第二篇，这本书的作者是 Jeff Atwood，StackOverflow 的创始人之一，Jeff 的文章涉及面很广，他是一个经验老道的程序员、管理者、创业者，这本书谈到了编程之外的很多东西，不管你是初级工程师",
-      "image": null,
-      "publishedAt": "2018-09-20T06:09:01Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2018/09/20/how-to-stop-sucking-and-be-awesome-instead-2/",
-      "detailPath": "articles/d4d20c04c78e7fdcc3a22671.json"
     }
   ]
 }

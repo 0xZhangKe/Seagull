@@ -7,7 +7,7 @@
   <link href="https://taxodium.ink/" rel="alternate" type="text/html" />
   <id>https://taxodium.ink/</id>
   <icon>https://taxodium.ink/favicon.ico</icon>
-  <updated>2026-11-03T16:14:16.016Z</updated>
+  <updated>2026-11-04T12:54:57.414Z</updated>
   <author>
     <name>Spike Leung</name>
     <email>l-yanlei@hotmail.com</email>
@@ -2388,7 +2388,7 @@ Ellen 的决定是对是错，都是她一个人的责任，你跟她说了，�
 我在 <a href="https://www.raycast.com/">Raycast</a> 裡定義了一個 Srcipt Commands，需要時用 Raycast 調用就行。
 </p>
 
-<section role="note" id="org4be113d">
+<section role="note" id="orgb0bd449">
 <p>
 在 macOS 上，重新安裝 Emacs 後，用 emacs-everywhere 可能會碰到權限問題。我的系統是 macOS 27，在 <code>System Setting &gt; Privacy &amp; Securiy &gt; Device Control and Data Access</code> 裡將 Emacs 重新添加一次就能解决。
 </p>
@@ -2606,7 +2606,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <i>有少數人是<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E8%89%B2%E7%9B%B2" class="hidden-link">全色盲</a>，他們完全没有色觉只有灰度知觉，所以沒法通過顏色的不同區分普通文字和連結。</i>
 </p>
 
-<section role="note" id="org3393d47">
+<section role="note" id="org2baa3dd">
 <p>
 你也可以故意去隱藏連結，用來藏一些彩蛋 :P
 </p>
@@ -2624,7 +2624,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 悬在連結上面時，可以考慮增加背景色，把 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor">指針形狀</a> 變成 <code>pointer</code> ，用明顯的視覺變化讓讀者知道他當前悬浮在一個連結上。
 </p>
 
-<section role="note" id="org3a9c060">
+<section role="note" id="org6a3fcf6">
 <p>
 在類似手機的設備上是沒有悬浮操作的，大多是點擊和長按，有時悬浮反而變成了干擾。
 </p>
@@ -2646,7 +2646,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <code>:visited</code> 可以給已訪問過的連結添加樣式，例如設置不同的顏色，這樣讀者點擊了頁面上的連結後，他就知道哪些他是訪問過的，哪些他還沒看過。這在我的 <a href="0.html">Zine</a> 系列文章中就很有用，裡面有大量的連結，設置了 <code>:visited</code> 後，可以方便讀者清楚看到哪些看過、哪些沒看過，避免重複訪問。
 </p>
 
-<section role="note" id="org74d0398">
+<section role="note" id="orgb012b16">
 <p>
 出於隱私安全考慮， <code>:visited</code> 支持設置的樣式是有限制的，見 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:visited#privacy_restrictions">Privacy restrictions</a>。另外，如果想重置 <code>:visited</code> 標記，清空瀏覧器歷史記录󠄃即可。
 </p>
@@ -2729,7 +2729,7 @@ spm_id_from 是一些追蹤相關的參數，如果想分享連結，<a href="ht
 <li>外部連結：<a href="https://en.wikipedia.org/wiki/Taxodium">Taxodium - Wikipedia</a></li>
 </ul>
 
-<section role="note" id="orgda1797c">
+<section role="note" id="orgfda9d58">
 <p>
 如果你是用的是 Unicode 或 Emoji 符號，要測試一下不同瀏覧器的表現，因為不同系統 (Android、iOS)，不同瀏覧器渲染出來的圖標會有差异，在自己瀏覧器上好看，在讀者的瀏覧器上可不一定。
 </p>
@@ -2896,7 +2896,7 @@ a[href*="bilibili.com"]::before {
 <li><p>
 下入沙蔥簡單翻炒几下，加入適量生抽，少許雞精或味精 <small>(提鮮)</small>，然後炒勻即可。
 </p>
-<section role="note" id="org3fbe2f9">
+<section role="note" id="org7193915">
 <p>
 不要炒太久，久了沙蔥熟望頭，軟軟的就不好吃了。所以前面炒肉先盡量炒得差不多熟，這樣下入沙蔥時，就不用炒太久。
 </p>
@@ -3934,7 +3934,7 @@ This variable affects query-replace and replace-string, but not replace-regexp.
 我用下來還挺方便的。如果你感興趣，相關代碼在這：<a href="https://gist.github.com/Spike-Leung/eab7cb6a3d005e5f3e119c2b657c4589">kagi-translate.user.js</a>。要用的話，你需要注冊 <a href="maybe-you-want-to-try-kagi.html">Kagi</a> 和安裝 Zen 瀏覧器才行。
 </p>
 
-<section role="note" id="org45d2f09">
+<section role="note" id="orgafbfc63">
 <p>
 用了一陣 Kagi Translate 的 Anki 模版後，我按自己喜好改了模版，我覺得會更方便記憶。如果你需要可以看 <a href="https://github.com/Spike-Leung/kagi-anki.user.js">kagi-anki.user.js</a>，也是一個 Tampermonkey 脚本。
 </p>

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "9a7ede316c7ac861efc90e84",
+      "title": "Finding a Grav Bug with git bisect",
+      "summary": "I ran into a bug with my CMS Grav . RSS feeds just broke after an update. Going to the feed URL just gave you the blog homepage. Let's try to find out where that bug was introduced using our friend, git bisect . Let's start off by first getting the Grav git source . Luckily there are instructions for deploying from a Git repository. Let's do that. $ git clo…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/git-bisect",
+      "detailPath": "articles/9a7ede316c7ac861efc90e84.json"
+    },
+    {
+      "id": "d81b7f3bd1546d3df0c80a52",
+      "title": "Grafana Plugin Tip",
+      "summary": "Have Grafana deployed? Going crazy trying to figure out why your apps and extensions aren't working? It's an easy fix. Under the [security] section, add angular_support_enabled = true . Now for the longer explanation. I was trying to integrate the Zabbix Grafana app . For the instructions, I had to go to the \"config\" tab of the plugin. Issue was, nothing wa…",
+      "image": null,
+      "publishedAt": "2024-12-27T07:19:04Z",
+      "sourceId": "3bdb78ed4280c0bc",
+      "sourceTitle": "Ersei 'n Stuff",
+      "link": "https://ersei.net/en/blog/grafana-tip",
+      "detailPath": "articles/d81b7f3bd1546d3df0c80a52.json"
+    },
+    {
       "id": "4a23e4f255af38d8fc610a05",
       "title": "GitHub's Mysterious robots.txt",
       "summary": "Recently, I came across GitHub's robots.txt . There are some interesting entries in there, so I'm going to try and find out why those entries are there. At the time of writing (2023-02-12 14:53 EST), GitHub's robots.txt looks something like this: # If you would like to crawl GitHub contact us via https://support.github.com?tags=dotcom-robots # We also provi…",
@@ -637,28 +659,6 @@
       "sourceTitle": "⌘I",
       "link": "https://blog.gingerbeardman.com/2024/10/27/word-counter-extension-for-nova-editor/",
       "detailPath": "articles/fd5aa5d03963b3da204daaa4.json"
-    },
-    {
-      "id": "0db16b91d75ce8e6ddf2dc13",
-      "title": "Macro extension for Nova editor",
-      "summary": "After creating a bunch of smaller Nova Extensions quite quickly I wondered how far I could push things, just as a personal challenge. I had the idea of implementing a Macro text recording and playback system. There was something similar in TextMate editor, and whilst the Nova API doesn’t currently allow as sophisticated a system I thought it was something s…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/nova-macro-extension-record.png",
-      "publishedAt": "2024-10-24T14:02:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2024/10/24/macro-extension-for-nova-editor/",
-      "detailPath": "articles/0db16b91d75ce8e6ddf2dc13.json"
-    },
-    {
-      "id": "ccc1d1870efcd852561ff1d3",
-      "title": "The 2020 census conspiracy theory",
-      "summary": "Conspiracy theory time! This one is actually mostly true. Population counts from the census are used to determine how many electoral votes each state gets. In 2020, there were some weird results. Turns out those were mistakes. The Census Bureau even admitted it a couple years ago. In terms of electoral votes, the net impact of the mistakes was : .census-red…",
-      "image": null,
-      "publishedAt": "2024-10-24T00:00:00Z",
-      "sourceId": "37d3ab83248d12d7",
-      "sourceTitle": "dumbmatter",
-      "link": "https://dumbmatter.com/2024/10/2020-census-conspiracy",
-      "detailPath": "articles/ccc1d1870efcd852561ff1d3.json"
     }
   ]
 }

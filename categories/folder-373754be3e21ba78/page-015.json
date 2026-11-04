@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "1e81b91c17a26e639bc3df30",
+      "title": "Using Kamal 2.0 in Production",
+      "summary": "Agile Web Development with Rails 8 is off to production, where they do things like editing, indexing, pagination, and printing. In researching the chapter on Deployment and Production, I became very dissatisfied with the content available on Kamal. I ended up writing my own, and it went well beyond the scope of the book. I then extracted what I needed from…",
+      "image": "https://fly.io/blog/kamal-in-production/assets/production.jpg",
+      "publishedAt": "2025-05-29T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/kamal-in-production/",
+      "detailPath": "articles/1e81b91c17a26e639bc3df30.json"
+    },
+    {
+      "id": "7b56e0dc46a2e7fcd06975ed",
+      "title": "One Roundtrip Per Navigation",
+      "summary": "What do HTML, GraphQL, and RSC have in common?",
+      "image": null,
+      "publishedAt": "2025-05-29T00:00:00Z",
+      "sourceId": "1018e192c5700d48",
+      "sourceTitle": "overreacted — A blog by Dan Abramov",
+      "link": "https://overreacted.io/one-roundtrip-per-navigation/",
+      "detailPath": "articles/7b56e0dc46a2e7fcd06975ed.json"
+    },
+    {
       "id": "c153919796d0c24351f74bf1",
       "title": "parking_lot: ffffffffffffffff...",
       "summary": "We’re Fly.io, a public cloud that runs apps in a bunch of locations all over the world. This is a post about a gnarly bug in our Anycast router, the largest Rust project in our codebase. You won’t need much of any Rust to follow it. The basic idea is simple: customers give us Docker containers, and tell us which one of 30+ regions around the world they want…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Flight Control",
       "link": "https://fly.io/blog/fuckin-robots/",
       "detailPath": "articles/e905ae495a2a7fb08c3798f9.json"
-    },
-    {
-      "id": "cc8be07b684339d55b6310ac",
-      "title": "Thinking like a compiler: places and values in Rust",
-      "summary": "A while back, someone on the internet asked about this syntax in Rust: * pointer_of_some_kind = blah; They wanted to know how the compiler understands this code, especially if the pointer wasn’t a reference, but a smart pointer. I wrote them a lengthy reply, but wanted to expand…",
-      "image": "https://cdn.bsky.app/img/avatar/plain/did:plc:3danwc67lo7obz2fmdg6jxcr/bafkreidffwgsdli2xp56t3kfemk7bryow3mygu7zbvgcsxgsu3ntnp4hwm",
-      "publishedAt": "2025-04-07T00:00:00Z",
-      "sourceId": "9a41b0d6fa07d21e",
-      "sourceTitle": "Steve Klabnik",
-      "link": "https://steveklabnik.com/writing/thinking-like-a-compiler-places-and-values-in-rust/",
-      "detailPath": "articles/cc8be07b684339d55b6310ac.json"
-    },
-    {
-      "id": "bfab655bfc94ed07ef5a1f59",
-      "title": "Get an US DL with a Chinese DL",
-      "summary": "A detailed guide to converting a Chinese driver's license to a New Jersey license with road test waiver at specific MVC locations (North Bergen, Bayonne, Lodi), including a Telegram channel for appointment monitoring.",
-      "image": "https://i.uid.si/img/20250403KzSaN5.png",
-      "publishedAt": "2025-04-03T06:39:02Z",
-      "sourceId": "1dc4dbdb701e1314",
-      "sourceTitle": "Vincent's Notes",
-      "link": "https://missuo.me/posts/nj-mvc-license/",
-      "detailPath": "articles/bfab655bfc94ed07ef5a1f59.json"
     }
   ]
 }

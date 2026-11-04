@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "3cf7538f3b4c10850f19a0d6",
+      "title": "Coffee Break Clojure, Test",
+      "summary": "假设有函数 pair-sum ，把输入的数字划分为两个一对，然后对每个对求和，返回和组成的序列： ( defn pair-sum [ & nums ] ( ->> nums ( partition 2 ) ( map ( partial apply + )))) 系统运行一段时间后有人反馈了 Bug，复现方式如下： ( pair-sum 3 2 1 4 5 3 5 ) ;; => (5 5 8) 输入上述用例，函数只返回了前六个数字组成的三个对的和，最后一个 5 被丢弃了。经过判断，这的确是个 Bug，解决方案是让落单的输入单独作为和返回。 你当然可以修完 Bug 之后一走了之，但试想一下：之后的贡献者在看到这段代码的时候，会不会对「落单的输入怎么处理」这件事情产生不同的想法？他会不会认为修复后的版本反而是个…",
+      "image": null,
+      "publishedAt": "2026-11-03T15:58:29Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj9/",
+      "detailPath": "articles/3cf7538f3b4c10850f19a0d6.json"
+    },
+    {
       "id": "9fad2688185532675ce27b02",
       "title": "大脑充血 Vol.102",
       "summary": "夜里无星，竟然也看不到月亮，或许是城市的灯光和厚重的云层遮住了光。我驱车行使在城市外围的一条偏远公路上，路上没有灯，连像样的沥青路都没有，只有混杂着泥土和杂草的石板。车子一路颠簸，我开得很小心，车灯只能照到前方不过三四米的距离。虽说小心，但我开得并不慢。 “能赶到吗？”我在上路之前在地图上反复确认路线和预估到达时间，但也只是干着急。我还想再打开地图看看，可能开了一段距离之后，估算的时间会准确一些呢？但我抽不出手，在这条路上，我必须把双手都紧紧地抓在方向盘上。 吾仅悉落 Misguided Ghosts Paramore Spotify Lucida Now I’m told that this is life And pain is just a simple compromise So we can get…",
@@ -80,7 +91,7 @@
     {
       "id": "c7a8ea6afd42fcdde0f37bf0",
       "title": "Coffee Break Clojure, Transducer",
-      "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时，…",
+      "summary": "在第三期《 只用圆括号怎么够？ 》里，我讲到了 reduce 。 先来简单复习一下： reduce 最少接收两个参数，形如 (reduce f coll) ，其中 f 是接收两个参数的函数，形如 (f x y) ； reduce 遍历 coll 中的每个元素，先对前两个元素求 (f a1 a2) ， 1 然后求 (f (f a1 a2) a3) ，以此类推。 (f x y) 这种函数叫作归约函数（reducing function）。 归约、Fold、高阶函数 之前我们用作示例的代码如下： ( def numbers ' ( 1 43 231 23 99 )) ( reduce + numbers ) ;; => 397 + 可以视作归约函数，因为他可以这样调用： (+ x y) 。当我们对上述代码进行求值时…",
       "image": "https://img.eltr.ac/geedeapro/article/clj8/Left-fold-transformation.png",
       "publishedAt": "2026-10-18T04:26:01Z",
       "sourceId": "7e27e325b5de8871",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/article/clj7/",
       "detailPath": "articles/c9c4228429274f86d94c3c87.json"
-    },
-    {
-      "id": "ba927f190dd7ccc03baa783f",
-      "title": "打领带的人",
-      "summary": "最近在关注 Golda ，从 ch0ccyra1n 写的 Issues 来看，她近期并不打算推进太多功能开发，更多是在做各个平台的发包和新 Fork 落地的工作，还有清理 Hugo 的某些遗留问题（比如 Hugo 的传递依赖太多导致不太容易打包到 Guix 的 问题 ）。我在帮忙移除了 hugo deploy 之后也找不到什么能帮忙的事情了。 不过我在尝试把博客从 Hugo 迁移到 Golda 的时候，发现我依赖的某些较新的 API 没有被 Golda 实现。我去翻了 Hugo 的更新日志和相关的 commit，发现这些功能有不少是用 Claude 写的，不能拿来用。Hugo 也废弃了某些 API。这样下去，Golda 的 API 会和 Hugo 的变得越来越不容易兼容，但一直盯着 Hugo 更新，等人重新实…",
-      "image": null,
-      "publishedAt": "2026-10-07T16:52:21Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/tie-wearers/",
-      "detailPath": "articles/ba927f190dd7ccc03baa783f.json"
     }
   ]
 }

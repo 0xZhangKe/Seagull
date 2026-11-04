@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "f09dc31ab323a7ac6509589b",
+      "title": "Batch Merging TS Files Using ffmpy3",
+      "summary": "This article provides a concise tutorial on how to batch merge multiple TS video files into a single MP4 file using Python. It demonstrates the use of the ffmpy3 library, a Python wrapper for FFmpeg, explaining how to create a file list and use a simple script to execute the -f concat and -c copy commands for a fast, lossless merge.",
+      "image": null,
+      "publishedAt": "2025-02-21T01:37:56Z",
+      "sourceId": "f928c57c6b2ce516",
+      "sourceTitle": "Cytrogen's Blog (English)",
+      "link": "https://blog.cytrogen.icu/posts/6976.html",
+      "detailPath": "articles/f09dc31ab323a7ac6509589b.json"
+    },
+    {
+      "id": "ed73beacb54b3bf43003eab5",
+      "title": "Adding Mastodon Comments to your Blog",
+      "summary": "Comments powered by Mastodon? Yes, please!",
+      "image": null,
+      "publishedAt": "2025-02-21T00:00:00Z",
+      "sourceId": "770187db2708029f",
+      "sourceTitle": "Beej's Bit Bucket",
+      "link": "http://beej.us/blog/data/mastodon-comments/",
+      "detailPath": "articles/ed73beacb54b3bf43003eab5.json"
+    },
+    {
       "id": "06f1cb1287f73303f0516dcd",
       "title": "Making games on iPhone/iPad using Lua & Love2D",
       "summary": "I wondered how feasible it is to make Love2D games “on the go” (on a train, in bed, etc). Often I want to try a quick sketch, work up a prototype, or simply verify an algorithm. I’m happy to say it’s possible! Runners Love2D Studio Available since Jan 2024 Free apps.apple.com/gb/app/love2d-studio/id6474188075 this allows you to manage love files and run the…",
@@ -111,17 +133,6 @@
       "detailPath": "articles/d50b6e8998b794ad325445de.json"
     },
     {
-      "id": "a54caac6762a463804c0c9a4",
-      "title": "A Blog, If You Can Keep It",
-      "summary": "A boldfaced lede like this was a sure sign you were reading a carefully choreographed EffortPost from our team at Fly.io. We’re going to do less of those. Or the same amount but more of a different kind of post. Either way: launch an app on Fly.io today! Over the last 5 years, we’ve done pretty well for ourselves writing content for Hacker News. And that’s…",
-      "image": "https://fly.io/blog/a-blog-if-kept/assets/keep-blog.webp",
-      "publishedAt": "2025-02-10T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/a-blog-if-kept/",
-      "detailPath": "articles/a54caac6762a463804c0c9a4.json"
-    },
-    {
       "id": "65c5261ffc088738d44504b4",
       "title": "Did Semgrep Just Get A Lot More Interesting?",
       "summary": "This whole paragraph is just one long sentence. God I love just random-ass blogging again. This bit by Geoffrey Huntley is super interesting to me and, despite calling out that LLM-driven development agents like Cursor have something like a 40% success rate at actually building anything that passes acceptance criteria, makes me think that more of the future…",
@@ -131,6 +142,17 @@
       "sourceTitle": "Flight Control",
       "link": "https://fly.io/blog/semgrep-but-for-real-now/",
       "detailPath": "articles/65c5261ffc088738d44504b4.json"
+    },
+    {
+      "id": "a54caac6762a463804c0c9a4",
+      "title": "A Blog, If You Can Keep It",
+      "summary": "A boldfaced lede like this was a sure sign you were reading a carefully choreographed EffortPost from our team at Fly.io. We’re going to do less of those. Or the same amount but more of a different kind of post. Either way: launch an app on Fly.io today! Over the last 5 years, we’ve done pretty well for ourselves writing content for Hacker News. And that’s…",
+      "image": "https://fly.io/blog/a-blog-if-kept/assets/keep-blog.webp",
+      "publishedAt": "2025-02-10T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/a-blog-if-kept/",
+      "detailPath": "articles/a54caac6762a463804c0c9a4.json"
     },
     {
       "id": "f84e57b35fdc2a9382092699",
@@ -637,28 +659,6 @@
       "sourceTitle": "Ersei 'n Stuff",
       "link": "https://ersei.net/en/blog/updates-2023-03",
       "detailPath": "articles/c91bf2cf95bcd3cb381d0f8b.json"
-    },
-    {
-      "id": "9a7ede316c7ac861efc90e84",
-      "title": "Finding a Grav Bug with git bisect",
-      "summary": "I ran into a bug with my CMS Grav . RSS feeds just broke after an update. Going to the feed URL just gave you the blog homepage. Let's try to find out where that bug was introduced using our friend, git bisect . Let's start off by first getting the Grav git source . Luckily there are instructions for deploying from a Git repository. Let's do that. $ git clo…",
-      "image": null,
-      "publishedAt": "2024-12-27T07:19:04Z",
-      "sourceId": "3bdb78ed4280c0bc",
-      "sourceTitle": "Ersei 'n Stuff",
-      "link": "https://ersei.net/en/blog/git-bisect",
-      "detailPath": "articles/9a7ede316c7ac861efc90e84.json"
-    },
-    {
-      "id": "d81b7f3bd1546d3df0c80a52",
-      "title": "Grafana Plugin Tip",
-      "summary": "Have Grafana deployed? Going crazy trying to figure out why your apps and extensions aren't working? It's an easy fix. Under the [security] section, add angular_support_enabled = true . Now for the longer explanation. I was trying to integrate the Zabbix Grafana app . For the instructions, I had to go to the \"config\" tab of the plugin. Issue was, nothing wa…",
-      "image": null,
-      "publishedAt": "2024-12-27T07:19:04Z",
-      "sourceId": "3bdb78ed4280c0bc",
-      "sourceTitle": "Ersei 'n Stuff",
-      "link": "https://ersei.net/en/blog/grafana-tip",
-      "detailPath": "articles/d81b7f3bd1546d3df0c80a52.json"
     }
   ]
 }

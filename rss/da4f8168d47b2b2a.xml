@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://willem.com/</id>
     <title>Willem L. Middelkoop</title>
-    <updated>2026-10-24T22:00:00.000Z</updated>
+    <updated>2026-11-03T23:00:00.000Z</updated>
     <generator>Lemmid Manager</generator>
     <author>
         <name>Willem L. Middelkoop</name>
@@ -14,6 +14,115 @@
     <subtitle>Thoughts about hacking, developing, technology and other things in life</subtitle>
     <logo>https://willem.com/global/icon.png</logo>
     <icon>https://willem.com/global/icon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Laggy Legs]]></title>
+        <id>https://willem.com/en/2026-11-04_laggy-legs/</id>
+        <link href="https://willem.com/en/2026-11-04_laggy-legs/"/>
+        <link rel="enclosure" href="https://willem.com/global/images/6568c6080c2a.webp" type="image/webp"/>
+        <updated>2026-11-03T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My Apple Watch records more than pace and heart rate. While I run, it also measures running dynamics: how long each foot stays on the ground, how long my stride is, how much I bounce, and an estimate of my power. I never looked at those numbers. This week I set up a new centralised store of all my Health data, enabling me to put three marathons side by side: Valencia 2024, Eindhoven 2025 and The Hague last Sunday. A post for the nerdy among us.]]></summary>
+        <content type="html"><![CDATA[<p><strong>My Apple Watch records more than pace and heart rate. While I run, it also measures running dynamics: how long each foot stays on the ground, how long my stride is, how much I bounce, and an estimate of my power. I never looked at those numbers. This week I set up a new centralised store of all my Health data, enabling me to put three marathons side by side: Valencia 2024, Eindhoven 2025 and The Hague last Sunday. A post for the nerdy among us.</strong></p>
+<figure class="post-fig"><img src="https://willem.com/global/images/94c5f4fee07d.webp" width="1600" height="1200" alt="Eindhoven 2025, around kilometre 18: a personal best in the making" loading="lazy"><figcaption>Eindhoven 2025, around kilometre 18: a personal best in the making</figcaption></figure>
+<h2>Three endings</h2>
+<p>Each race ended differently. In Valencia I ran at about 5:50 per kilometre, the race I wrote about in <a target="_blank" rel="noopener" href="https://willem.com/en/2024-12-19_data-versus-feeling/">Data versus Feeling</a>. My legs stayed fresh: after kilometre 30 my ground contact time got shorter, my cadence went up and I ran the last two kilometres at 5:31. The cost showed up in my heart instead: in the sun it climbed from 154 to 168 beats per minute at the same pace. Eindhoven, my personal best, was the model race: power dropped only 3.5 percent and my foot left the ground quicker and quicker until the finish. The Hague was different. From kilometre 25 my ground contact time climbed back up by 13 milliseconds, my stride shrank from 1.18 to 1.12 metres and my power dropped 8 percent, while my cadence hardly moved, around 165 steps per minute. My head kept the beat, my legs delivered less with every step. That is exactly what I felt around kilometre 30: the stamina was there, but the response felt laggy.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/3e04c7820a48.webp" width="1560" height="1040" alt="Power per 5 kilometres, as a percentage of each race&#x27;s own kilometre 5 to 15" loading="lazy"><figcaption>Power per 5 kilometres, as a percentage of each race's own kilometre 5 to 15</figcaption></figure>
+<figure class="post-fig"><img src="https://willem.com/global/images/6ea66e3a5d58.webp" width="1560" height="1040" alt="Ground contact time per 5 kilometres, change against each race&#x27;s own kilometre 5 to 15 (lower is a quicker push-off)" loading="lazy"><figcaption>Ground contact time per 5 kilometres, change against each race's own kilometre 5 to 15 (lower is a quicker push-off)</figcaption></figure>
+<figure class="post-fig"><img src="https://willem.com/global/images/c34df921cbc6.webp" width="1560" height="1040" alt="Heart rate per 5 kilometres" loading="lazy"><figcaption>Heart rate per 5 kilometres</figcaption></figure>
+<p>Side by side, the early, middle and late part of each race (kilometre 5 to 15, 20 to 30 and 35 to 40). Speed is stride length times cadence: in Valencia my stride got shorter too, but I stepped quicker. In The Hague I didn't.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Valencia</th>
+<th>Eindhoven</th>
+<th>The Hague</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pace (/km)</td>
+<td>5:53 → 5:58 → 5:59</td>
+<td>5:08 → 5:09 → 5:16</td>
+<td>5:08 → 5:08 → 5:32</td>
+</tr>
+<tr>
+<td>Heart rate (bpm)</td>
+<td>151 → 156 → 168</td>
+<td>163 → 167 → 174</td>
+<td>163 → 175 → 181</td>
+</tr>
+<tr>
+<td>Power (W)</td>
+<td>255 → 251 → 247</td>
+<td>301 → 300 → 291</td>
+<td>308 → 306 → 282</td>
+</tr>
+<tr>
+<td>Ground contact (ms)</td>
+<td>273 → 276 → 262</td>
+<td>244 → 241 → 236</td>
+<td>249 → 237 → 249</td>
+</tr>
+<tr>
+<td>Stride (m)</td>
+<td>1.03 → 1.00 → 0.98</td>
+<td>1.18 → 1.18 → 1.15</td>
+<td>1.21 → 1.19 → 1.12</td>
+</tr>
+<tr>
+<td>Cadence (steps/min)</td>
+<td>165 → 166 → 169</td>
+<td>168 → 167 → 167</td>
+<td>165 → 167 → 164</td>
+</tr>
+<tr>
+<td>Vertical oscillation (cm)</td>
+<td>9.8 → 10.2 → 10.1</td>
+<td>10.0 → 10.1 → 10.3</td>
+<td>10.6 → 10.6 → 10.7</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Why</h2>
+<p>The dunes near Kijkduin and Scheveningen explain part of it: between kilometre 29 and 40 the course climbs and drops about 60 metres. But kilometre 39 went downhill and was still one of my slowest. The bigger difference is in the weeks before. For Eindhoven I ran long runs of 22 to 30 kilometres and went to the gym 11 times in 12 weeks. Before The Hague, the gym stayed at 3. Heart rate tells you how hard the engine works. Running dynamics tell you whether the legs can still deliver.</p>
+<h2>Conclusion</h2>
+<p>Three marathons, three limits: the heart in Valencia, nothing in particular in Eindhoven, the legs in The Hague. Next year I want to break 3:30, and that means Valencia's fresh legs at more than Eindhoven's speed. The plan writes itself: long runs and strength work, so the legs stay springy past kilometre 40. And on long training runs I now have a new number to watch: my ground contact time in the last hour.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/eeb79512b9e5.webp" width="1600" height="1200" alt="The Hague 2026, after the finish with my buddy Niels" loading="lazy"><figcaption>The Hague 2026, after the finish with my buddy Niels</figcaption></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Looking Out the Window]]></title>
+        <id>https://willem.com/en/2026-11-03_looking-out-the-window/</id>
+        <link href="https://willem.com/en/2026-11-03_looking-out-the-window/"/>
+        <link rel="enclosure" href="https://willem.com/global/images/1c48023f0108.webp" type="image/webp"/>
+        <updated>2026-11-02T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This weekend I ran the marathon of The Hague. I gave everything, and the result was 3 hours and 40 minutes. I am satisfied, because I know there was really nothing more in it. Tired legs, maximum heart rate, and still no collapse. It is beautiful that you can look for the limit like that. But the most important part of this marathon did not happen on the road. It happened in the weeks before, at home, looking out of the window.]]></summary>
+        <content type="html"><![CDATA[<p><strong>This weekend I ran the marathon of The Hague. I gave everything, and the result was 3 hours and 40 minutes. I am satisfied, because I know there was really nothing more in it. Tired legs, maximum heart rate, and still no collapse. It is beautiful that you can look for the limit like that. But the most important part of this marathon did not happen on the road. It happened in the weeks before, at home, looking out of the window.</strong></p>
+<h2>Two marathons in four weeks</h2>
+<p>Four weeks earlier I ran Köln. Two days before the start my body was fighting a virus. I slept extra, stopped working and switched the computers off. The next afternoon I wrote: &quot;the body is winning, energy is flowing through the veins again&quot;. Köln became 3:48:27.</p>
+<p>The Hague went better in every way. The extra experience made it possible to operate longer at the maximum: eating, drinking and the mental side were better than ever. I understand very well now what makes the performance. And it is not only the training.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/174fd5a210ad.webp" width="1600" height="1200" alt="The Hague, 1 November 2026, just before the start" loading="lazy"><figcaption>The Hague, 1 November 2026, just before the start</figcaption></figure>
+<h2>Work as a long run</h2>
+<p>At the end of October I wrote something less cheerful in my notes. Not only sport, but work too had taken on the character of a long run. Steady, long, without an end in sight. More than ever before, the balance tipped to the negative: no sparkling fun, warmth or pleasure. &quot;It really is a marathon. I am physically, and mentally, ready for rest.&quot;</p>
+<p>That is the trap of a pace you can hold: you can hold it so long that you forget you are running. The answer was not to stop. It was to stay pragmatic, limit the loss of energy, and focus on the things we want to influence. And nothing more.</p>
+<h2>Room to breathe</h2>
+<p>On 15 October I did something different. The phone on &quot;do not disturb&quot; and out of reach. Questions about the jam supply and the invoices came in, all very important, for later. Reachable for emergencies, but there was no emergency. I wrote: &quot;The best in me comes up when there is room. This is not running away or hiding. It is a necessary pause to breathe.&quot;</p>
+<p>Three days later, on a Sunday, I tried a whole day with zero screen time. A small experiment to feel where we still depend on it. Physical things stood out more: clutter, dust. Conversations with the children were easier, because I had so much more bandwidth to ask good questions. And I simply looked out of the window. I thought about my body, about the fast food of the day before, and about how little I really need. A green, orange or red light would be enough.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/a4f2bb2f6717.webp" width="1200" height="1600" alt="The Sunday without screen time: wood, a plant by the window, daylight on the table" loading="lazy"><figcaption>The Sunday without screen time: wood, a plant by the window, daylight on the table</figcaption></figure>
+<p>That light exists now. The home screen of Contact, the software I work with every day, is one dot. Green means: all is well, nothing is waiting for me. It took a Sunday without screens to see that one dot was enough.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/ecea147d8c38.webp" width="1179" height="935" alt="The home screen of Contact: one green dot, nothing is waiting" loading="lazy"><figcaption>The home screen of Contact: one green dot, nothing is waiting</figcaption></figure>
+<h2>Why a window works</h2>
+<p>Looking out of the window is not doing nothing. In 1984 Roger Ulrich published a small study in Science. Patients recovering from the same operation, in the same hospital, were given a room with a view of trees or a view of a brick wall. The ones looking at trees went home sooner, 7.96 days against 8.70, and needed fewer strong painkillers. A view, nothing more.</p>
+<p>There is a name for designing with that in mind: biophilic design. Daylight, plants, wood, a view and a place to retreat to. I only learned the word properly this autumn, while building levendkantoor.nl for Martin Cuypers, a client in Venray, not far from home. Their page on <a target="_blank" rel="noopener" href="https://levendkantoor.nl/en/knowledge/what-is-biophilic-design/">what biophilic design is</a> puts it in three layers: nature in the space, nature as a reference, nature as an experience. Reading it, I recognised my own Sunday. Wood under my hands, a plant by the window, daylight on the table. Nothing to buy. Just noticing.</p>
+<h2>As is, not add-on</h2>
+<p>The morning after The Hague I wrote down the conclusion. The gym is no longer &quot;nice to have&quot;. We are making it an integral part again, on days that keep the impact on working hours small. The goal: a strong physical base, not as an add-on, but as is. Next year I want to break 3:30, and that can only happen if we make everything stronger, in all dimensions: strength training, sprints, and longer runs at low intensity, around 130 beats per minute.</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/75824a239b8f.webp" width="1494" height="1600" alt="An hour on the treadmill, then a round on the machines" loading="lazy"><figcaption>An hour on the treadmill, then a round on the machines</figcaption></figure>
+<p>Last week I ran an hour on a treadmill, followed by a round on the machines. I loved it. An hour on such a thing asks for a different mindset, and that is exactly the point. Like the window and the green dot, it is not something extra on top of the work. It is what my work stands on, the foundation for thinking. I wrote about running before, in <a target="_blank" rel="noopener" href="https://willem.com/en/2024-10-20_marathon/">Marathon</a> and in <a target="_blank" rel="noopener" href="https://willem.com/en/2026-04-21_run-nicely/">Run Nicely</a>. This time the lesson is not in the legs.</p>
+<h2>Conclusion</h2>
+<p>Two marathons in four weeks taught me more about work than about running. The pace you can hold is not enough. You also need room: a morning without a phone, a Sunday without screens, a view of something alive. The best in me comes up when there is room, and that room is not a reward for after the finish. It is part of the training. There is one more race on the calendar this year, purely to finish, at a slower and conscious pace. First recover. And look out of the window a bit more, ha!</p>
+<figure class="post-fig"><img src="https://willem.com/global/images/b7b8638f9740.webp" width="1600" height="991" alt="The best part of a finish: celebrating with friends!" loading="lazy"><figcaption>The best part of a finish: celebrating with friends!</figcaption></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI shows up at night]]></title>
         <id>https://willem.com/en/2026-10-25_ai-shows-up-at-night/</id>

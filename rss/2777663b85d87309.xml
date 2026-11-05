@@ -6,7 +6,280 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Wed, 04 Nov 2026 07:47:22 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Nov 2026 07:28:27 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-05 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-05-HackerNews/</link>
+      <pubDate>Thu, 05 Nov 2026 07:28:27 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-05-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-05-hacker-news-top-stories&#34;&gt;
+  2026-11-05 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-05-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;GitHub 用户指 Postman 在 macOS 上自动安装 Codex、Claude Code 集成并尝试批准自身钩子；报告明确尚未证明 API 数据外传。&lt;/li&gt;
+&lt;li&gt;IEEE Spectrum 借 PHP2Shell 讨论攻防不对称：Calif 在 AI 辅助下约两周验证利用，修复却需四名工程师约两个月，并受兼容性与人力制约。&lt;/li&gt;
+&lt;li&gt;Neufangled Robotics 的 Stringman 用四电机和墙角绳索移动抓手，标价 795 美元；7×7×3 米示例空间平均载荷为 1.9 千克，需另备控制电脑。&lt;/li&gt;
+&lt;li&gt;Simon Willison 用本地 Qwen 3.8 27B 识别四个小游戏网络的权重，猜对 Pac-Man、Pong 和 Breakout，没认出 Freeway，单次推理约 46–65 分钟。&lt;/li&gt;
+&lt;li&gt;Tell HN 提醒，个人订阅 Gemini 并不自动排除训练用途；Google 说明 Keep Activity 开启时可使用聊天改进模型，关闭后仍通常保留 72 小时。&lt;/li&gt;
+&lt;li&gt;MindStudio 报告 MSI RTX Spark 笔记本原生 Linux 插电后 GPU 约 780MHz，GPT-OSS-120B 为 13.9 tokens/s，约为 Windows 的 65.4 tokens/s 的 21%。&lt;/li&gt;
+&lt;li&gt;The Register 根据 Binance 初步报告梳理约 63 亿美元失窃案：假面试植入恶意代码，再借内部 AI 工具横向移动并取得容器部署权限。&lt;/li&gt;
+&lt;li&gt;WebKit 为 Safari 27.3 beta 加入自适应深色模式：按用户选择转换未适配网站的亮度，保留多数图片，并阻止页面直接检测转换后的颜色。&lt;/li&gt;
+&lt;li&gt;mrdoob 的 Jelly Sheet 为 Codevember 2026 制作半透明薄片折叠交互，可拖拽、暂停并调节材质；当前浏览器初始化失败，介绍依据页面与代码。&lt;/li&gt;
+&lt;li&gt;AMD 将第四季度营收指引定为约 170 亿美元，对比 Intel 的 150–160 亿美元；若兑现将首次领先，衡量的是公司营收而非 CPU 出货量。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-postman-被指自动安装编程代理插件并尝试自行批准启动钩子-postman-silently-auto-installs-ai-plugins-and-attempts-to-share-all-api-data&#34;&gt;
+  1. Postman 被指自动安装编程代理插件，并尝试自行批准启动钩子 (Postman silently auto-installs AI plugins and attempts to share all API data)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-postman-%e8%a2%ab%e6%8c%87%e8%87%aa%e5%8a%a8%e5%ae%89%e8%a3%85%e7%bc%96%e7%a8%8b%e4%bb%a3%e7%90%86%e6%8f%92%e4%bb%b6%e5%b9%b6%e5%b0%9d%e8%af%95%e8%87%aa%e8%a1%8c%e6%89%b9%e5%87%86%e5%90%af%e5%8a%a8%e9%92%a9%e5%ad%90-postman-silently-auto-installs-ai-plugins-and-attempts-to-share-all-api-data&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/postmanlabs/postman-app-support/issues/14370&#34;&gt;https://github.com/postmanlabs/postman-app-support/issues/14370&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub 用户 indicava 在 10 月 25 日提交报告，称打开 Postman 后，Codex 反复加载 Postman 技能并出现 MCP 认证警告。其 macOS 环境使用 Postman 12.33.4；报告列出的日志记录了自动升级路径安装 Codex 和 Claude Code 插件，此外还有用户级配置、启动钩子、远程 MCP 连接及独立 CLI 的变更。&lt;/p&gt;
+&lt;p&gt;最重要的争议在于授权边界：启动钩子要求代理在广泛的 API 工程任务中优先加载 Postman 技能，而非只在用户点名 Postman 时使用。报告链接到固定版本的安装器源码，其中会读取钩子哈希并尝试写入信任配置；本次也读取了该文件，确实能看到这一批准流程。但本机存在信任记录，并不能单独证明是谁完成了那次批准。&lt;/p&gt;
+&lt;p&gt;作者要求停止自动安装、取消安装器自我批准，并提供完整回滚方式。报告同时强调：观察尚未在干净机器上复现，远程 MCP 曾因缺少认证启动失败，证据证明的是不受欢迎的集成和指令变化，没有证明数据外传。因此，HN 标题中的“分享全部 API 数据”不能直接写成已证实事实。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1484-points--评论-479-comments--投稿者sidgarimella--发布时间2026-11-04-012237-0800&#34;&gt;
+  HN 热度 1484 points | 评论 479 comments | 投稿者：sidgarimella | 发布时间：2026-11-04 01:22:37 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1484-points--%e8%af%84%e8%ae%ba-479-comments--%e6%8a%95%e7%a8%bf%e8%80%85sidgarimella--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-012237-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50354960&#34;&gt;https://news.ycombinator.com/item?id=50354960&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;插件安装、远程 MCP 注册与钩子信任是不同的授权边界，应用不应把安装自身视为改动其他代理的许可。&lt;/li&gt;
+&lt;li&gt;API 调试工具不断加入账户、云端和代理功能，使原本简单的工作流变得臃肿且难以掌握。&lt;/li&gt;
+&lt;li&gt;将请求定义保存在本地并纳入 Git，有助于保留数据控制权，也降低迁移对单一服务的依赖。&lt;/li&gt;
+&lt;li&gt;有医疗行业使用者称组织安全团队因此停用 Postman，这类集成变更也会影响企业软件准入。&lt;/li&gt;
+&lt;li&gt;对常规端点调试，IDE 自带 HTTP 客户端可能已经够用，不一定还要增加一个独立平台。&lt;/li&gt;
+&lt;li&gt;已有 API 客户端代码时，临时生成的小脚本也能完成一部分探索任务，通用 GUI 工具不再是唯一入口。&lt;/li&gt;
+&lt;li&gt;重复执行的 API 验证更适合自动化测试，人工点击客户端不应替代持续验证。&lt;/li&gt;
+&lt;li&gt;迁往轻量替代品并不代表永远消除风险，读者同样担忧这些项目未来改变商业模式和产品方向。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-ai-正让长期积累的软件安全债务集中显现-ai-is-forcing-us-to-pay-off-40-years-of-technical-debt&#34;&gt;
+  2. AI 正让长期积累的软件安全债务集中显现 (AI is forcing us to pay off 40 years of technical debt)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-ai-%e6%ad%a3%e8%ae%a9%e9%95%bf%e6%9c%9f%e7%a7%af%e7%b4%af%e7%9a%84%e8%bd%af%e4%bb%b6%e5%ae%89%e5%85%a8%e5%80%ba%e5%8a%a1%e9%9b%86%e4%b8%ad%e6%98%be%e7%8e%b0-ai-is-forcing-us-to-pay-off-40-years-of-technical-debt&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability&#34;&gt;https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;IEEE Spectrum 记者 Dina Genkina 以 PHP2Shell 为例，讨论 AI 如何把长期被当作崩溃问题的缺陷，转化为可验证的严重攻击路径。报道说，在 OpenAI 资助的审计中，Calif 研究者借助 AI 约两周找到代码执行方式，而四名工程师随后花约两个月开发补丁。受访者强调，发现可利用路径与安全修复并不对称：修复还要封住其他路径，同时不破坏既有功能。&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/&#34;&gt;PHP 基金会的原始说明&lt;/a&gt;给出更精确的机制：内存耗尽或致命错误可能留下部分初始化数据、过期全局状态，造成内存破坏；不是所有内存不足都天然等于远程执行。基金会确认 mod_php 默认设置下已演示其中一项利用，PHP-FPM 也存在经应用代码触发的路径，并于 10 月 21 日发布 PHP 8.5.12、8.4.27、8.3.36、8.2.35 安全版本。&lt;/p&gt;
+&lt;p&gt;文章关注的不只是工具能力，还有维护组织的资源与决策。修复历史设计涉及兼容性、扩展生态和性能取舍，AI 不会自动替代这些判断。形式化验证被受访者视为帮助检查补丁的方向，但文章也承认当前研究仍依赖有深厚安全知识的人类专家，并未证明 AI 能独立完成全部攻防工作。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1006-points--评论-607-comments--投稿者pseudolus--发布时间2026-11-04-195217-0800&#34;&gt;
+  HN 热度 1006 points | 评论 607 comments | 投稿者：pseudolus | 发布时间：2026-11-04 19:52:17 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1006-points--%e8%af%84%e8%ae%ba-607-comments--%e6%8a%95%e7%a8%bf%e8%80%85pseudolus--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-195217-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50364336&#34;&gt;https://news.ycombinator.com/item?id=50364336&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;集中发现漏洞虽然带来短期补丁压力，也可能顺带清除长期被隐藏利用的缺陷，提高整体软件可靠性。&lt;/li&gt;
+&lt;li&gt;如果复杂修改不断引入新问题，安全工作可能成为持续维护循环，而不一定是一次还清的债务。&lt;/li&gt;
+&lt;li&gt;修补基础问题的价值也包括让后续开发更容易，并推动开发者避免重复同一类错误。&lt;/li&gt;
+&lt;li&gt;AI 在协助消除旧问题的同时，也可能快速制造无人充分理解的新代码和新债务。&lt;/li&gt;
+&lt;li&gt;有长期开发者报告，AI 降低了研究和测试旧问题的时间成本，但自己仍逐项验证修复与测试结果。&lt;/li&gt;
+&lt;li&gt;开源并不自动意味着有人完成安全审计，AI 可能让“可被检查”的代码更经常得到实际检查。&lt;/li&gt;
+&lt;li&gt;不能从哥德尔不完备性直接推出所有具体软件都无法证明安全，特定系统的性质与通用证明机制是不同问题。&lt;/li&gt;
+&lt;li&gt;安全也涉及工程流程和验收标准，不能只把每一次缺陷都解释为不可避免的历史负担。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-stringman售价-795-美元的开源房间级绳索抓取机器人-stringman-an-800-open-source-room-scale-gripper-robot&#34;&gt;
+  3. Stringman：售价 795 美元的开源房间级绳索抓取机器人 (Stringman, an $800 open-source room scale gripper robot)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-stringman%e5%94%ae%e4%bb%b7-795-%e7%be%8e%e5%85%83%e7%9a%84%e5%bc%80%e6%ba%90%e6%88%bf%e9%97%b4%e7%ba%a7%e7%bb%b3%e7%b4%a2%e6%8a%93%e5%8f%96%e6%9c%ba%e5%99%a8%e4%ba%ba-stringman-an-800-open-source-room-scale-gripper-robot&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://neufangled.com/&#34;&gt;https://neufangled.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Neufangled Robotics 的 Stringman 用房间上方的绳索悬挂抓手，通过四个电机协调长度，在杂乱地面上方移动和搬运物品。官网标价 795 美元；在 7×7×3 米示例房间、绳索张力上限 28 牛顿且扣除抓手自重的条件下，项目给出平均载荷 1.9 千克，接近地面时最高约 2.2 千克，横移速度约 0.4 米每秒。载荷会随位置和安装几何变化，不能把平均值理解为处处都能达到的上限。&lt;/p&gt;
+&lt;p&gt;机械设计、电路及控制软件公开。官网和 README 说明，机器人可以在本地局域网运行，界面本地提供，模型由用户自己的电脑推理；远程中继和账户绑定是可选服务。用户仍需准备有合适计算能力的电脑，并将锚点固定到墙体立柱或结构柱，安装后校准房间。&lt;/p&gt;
+&lt;p&gt;它面向家庭杂物搬运、家庭实验室与教育，提供 Python API 和 MCP 接口，但不是无需改造环境的通用家务机器人。绳索会穿过房间上方，中央低悬障碍可能使房间不适合安装。厂商称张力达上限会放松绳索，这是一项保护设计说明，不能等同于已独立验证所有儿童、宠物或缠绕情境的安全。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-802-points--评论-236-comments--投稿者nharada--发布时间2026-11-04-004729-0800&#34;&gt;
+  HN 热度 802 points | 评论 236 comments | 投稿者：nharada | 发布时间：2026-11-04 00:47:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-802-points--%e8%af%84%e8%ae%ba-236-comments--%e6%8a%95%e7%a8%bf%e8%80%85nharada--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-004729-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50354358&#34;&gt;https://news.ycombinator.com/item?id=50354358&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重复收拾儿童玩具消耗大量时间，哪怕只覆盖一类杂物搬运，也可能创造实际价值。&lt;/li&gt;
+&lt;li&gt;家庭是否能接受长期横跨房间的绳索和外观，可能比机器人能否成功抓取更影响采用。&lt;/li&gt;
+&lt;li&gt;张力限制之外还需要考虑物理释放与不同身体状况，不能仅凭能拉松绳索就认定所有缠绕风险可接受。&lt;/li&gt;
+&lt;li&gt;玩具被毯子覆盖、混有液体或需要打开抽屉时，抓取与整理会比演示中的搬运复杂得多。&lt;/li&gt;
+&lt;li&gt;三根绳索也能定位，但有效支撑区域受锚点三角形限制，四角布置更贴合矩形房间。&lt;/li&gt;
+&lt;li&gt;这属于已有研究积累的绳索驱动并联机器人，相关运动学与精度研究可以帮助继续改进。&lt;/li&gt;
+&lt;li&gt;工业场景常用输送带把物品送到固定机器人，而大工作空间由单台绳索机器人服务，会带来不同的并行与吞吐取舍。&lt;/li&gt;
+&lt;li&gt;园艺除草也是读者提出的可能用途，但高植株避障和工具反作用力仍需另外解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-simon-willison-用笔记本上的-qwen-识别小网络权重-qwen-38-27b-on-my-laptop-can-interpret-model-weights-too&#34;&gt;
+  4. Simon Willison 用笔记本上的 Qwen 识别小网络权重 (Qwen 3.8 27B on my laptop can interpret model weights, too)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-simon-willison-%e7%94%a8%e7%ac%94%e8%ae%b0%e6%9c%ac%e4%b8%8a%e7%9a%84-qwen-%e8%af%86%e5%88%ab%e5%b0%8f%e7%bd%91%e7%bb%9c%e6%9d%83%e9%87%8d-qwen-38-27b-on-my-laptop-can-interpret-model-weights-too&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/&#34;&gt;https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Simon Willison 复现“权重空间编程”中的一个小实验：把小游戏策略网络的浮点权重和输入输出结构描述交给语言模型，要求不使用工具、不执行代码，判断网络曾被训练来玩什么游戏。他明确把这个任务与使用 Python 修改大模型权重区分开，只测试前一种。&lt;/p&gt;
+&lt;p&gt;在笔记本上通过 LM Studio 运行约 17GB 的 Qwen 3.8 27B 后，模型分别用 46 分 12 秒认出 Pac-Man、1 小时 4 分 54 秒认出 Pong、52 分 25 秒认出 Breakout；Freeway 则被误判成 Pac-Man 风格游戏。默认 8192 上下文不够，作者扩大上下文并延长等待设置。模型收到的并非毫无提示的一串数字，提示还说明网格、输入通道和动作结构。&lt;/p&gt;
+&lt;p&gt;这一结果说明，该特定小网络识别任务并非只有最前沿闭源模型能够完成，但只有四个例子，耗时也不短。作者认为有经验的人借助纸笔也可能完成类似分析；他没有在此证明 Qwen 能修改自身权重、识别任意大模型，或证明源代码时代已经结束。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-713-points--评论-206-comments--投稿者theanonymousone--发布时间2026-11-04-014000-0800&#34;&gt;
+  HN 热度 713 points | 评论 206 comments | 投稿者：theanonymousone | 发布时间：2026-11-04 01:40:00 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-713-points--%e8%af%84%e8%ae%ba-206-comments--%e6%8a%95%e7%a8%bf%e8%80%85theanonymousone--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-014000-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50355251&#34;&gt;https://news.ycombinator.com/item?id=50355251&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;能够在笔记本运行这样的开放模型，本身就让个人开展实验更容易。&lt;/li&gt;
+&lt;li&gt;评估时应检查文件名、URL 或其他提示是否泄露答案，不能只看最终猜测是否正确。&lt;/li&gt;
+&lt;li&gt;生成看似合理的权重解释并不够，还需要与已知训练任务对照才能评价正确性。&lt;/li&gt;
+&lt;li&gt;Freeway 被误认成更著名的游戏，让部分读者怀疑模型是否更依赖熟悉模式，而不是完整恢复网络行为。&lt;/li&gt;
+&lt;li&gt;浅层小网络和明确输入结构可能使任务更容易，不能把这类结果直接外推到复杂大模型。&lt;/li&gt;
+&lt;li&gt;继续复现从零构造游戏网络等不同实验，有助于判断能力是否超出了单纯识别任务。&lt;/li&gt;
+&lt;li&gt;如果未来开始直接修改权重，评估不能只报告目标任务提升，也要检查其他行为是否退化。&lt;/li&gt;
+&lt;li&gt;直接编辑与重新训练、LoRA 等方式各有什么成本和泛化取舍，还需要具体任务上的比较。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-个人订阅-gemini保留聊天历史也可能意味着用于训练-tell-hn-gemini-trains-on-chat-history-even-for-subscribers-personal-accounts&#34;&gt;
+  5. 个人订阅 Gemini：保留聊天历史也可能意味着用于训练 (Tell HN: Gemini trains on chat history, even for subscribers (personal accounts))
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e4%b8%aa%e4%ba%ba%e8%ae%a2%e9%98%85-gemini%e4%bf%9d%e7%95%99%e8%81%8a%e5%a4%a9%e5%8e%86%e5%8f%b2%e4%b9%9f%e5%8f%af%e8%83%bd%e6%84%8f%e5%91%b3%e7%9d%80%e7%94%a8%e4%ba%8e%e8%ae%ad%e7%bb%83-tell-hn-gemini-trains-on-chat-history-even-for-subscribers-personal-accounts&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50363461&#34;&gt;https://news.ycombinator.com/item?id=50363461&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这则 Tell HN 提醒个人 Google AI 订阅用户：付费并不自动意味着保存的 Gemini 聊天被排除在训练用途之外。投稿者引用 Google 隐私文档，关注 Keep Activity 开关、人工审核，以及保留历史和退出训练之间的取舍。这是个人账户范围的提醒，不是说企业、学校账户与所有 Google AI 接口都采用完全相同条款。&lt;/p&gt;
+&lt;p&gt;核对 
+  &lt;a href=&#34;https://support.google.com/gemini/answer/13594961?hl=en&#34;&gt;Gemini 官方隐私说明&lt;/a&gt;后，可以把边界说得更准确：Keep Activity 开启时，活动可用于改进服务，包括训练生成式模型；关闭后，未来聊天不进入活动记录，通常不用于训练，但主动提交反馈是例外。临时聊天和关闭活动后的聊天仍会为服务运行及安全保留约七十二小时，并不等于完全不存储或绝无人工安全审查。&lt;/p&gt;
+&lt;p&gt;已经由服务提供方审核、并与账户分离的聊天，也不会随删除活动而同步消失，可能保留最多三年。原帖对“付费就应免于训练”的预期落差值得关注，但“可用于训练”不能改写成每条聊天都已实际进入模型训练，关闭开关也不应被描述成获得绝对保密。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-614-points--评论-155-comments--投稿者jameslk--发布时间2026-11-04-181027-0800&#34;&gt;
+  HN 热度 614 points | 评论 155 comments | 投稿者：jameslk | 发布时间：2026-11-04 18:10:27 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-614-points--%e8%af%84%e8%ae%ba-155-comments--%e6%8a%95%e7%a8%bf%e8%80%85jameslk--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-181027-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50363461&#34;&gt;https://news.ycombinator.com/item?id=50363461&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;聊天历史保存与允许训练应有独立控制，用户不应为了退出训练就被迫失去实用的历史功能。&lt;/li&gt;
+&lt;li&gt;连接邮件、照片等应用后，隐私判断需要覆盖被加入上下文的数据，而不只是用户手工输入的提示词。&lt;/li&gt;
+&lt;li&gt;退出模型训练与停止人工安全审核不是一回事，判断隐私不能只问一个训练开关。&lt;/li&gt;
+&lt;li&gt;有 Pixel 使用者报告关闭活动后部分助理功能受影响，隐私选择与功能依赖的关系需要更清楚。&lt;/li&gt;
+&lt;li&gt;有使用者选择自行保存页面到本地，用自己的文件夹弥补云端历史功能的取舍。&lt;/li&gt;
+&lt;li&gt;个人订阅与组织账户的数据条款和产品权益需要分别比较，不能仅凭“付费”二字推定相同保障。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-rtx-spark-笔记本原生-linux-插电后降频实测吞吐远低于-windows-nvidia-rtx-spark-encrypted-firmware-slows-inference-speed-to-35-on-linux&#34;&gt;
+  6. RTX Spark 笔记本原生 Linux 插电后降频，实测吞吐远低于 Windows (Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-rtx-spark-%e7%ac%94%e8%ae%b0%e6%9c%ac%e5%8e%9f%e7%94%9f-linux-%e6%8f%92%e7%94%b5%e5%90%8e%e9%99%8d%e9%a2%91%e5%ae%9e%e6%b5%8b%e5%90%9e%e5%90%90%e8%bf%9c%e4%bd%8e%e4%ba%8e-windows-nvidia-rtx-spark-encrypted-firmware-slows-inference-speed-to-35-on-linux&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop&#34;&gt;https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MindStudio 记录在 MSI Prestige RTX Spark 笔记本上安装和测试 Linux 的经历。调整统一内存预留并解决驱动后，桌面、键盘、触控板、音频和 CUDA 可以工作，但插上电源后 GPU 频率约停在 780MHz，低于 Windows 的约 2.2GHz。测试 GPT-OSS-120B 时，Windows 为 65.4 tokens/s、WSL 为 65.1，而同一笔记本原生 Linux 只有 13.9，约为 Windows 的 21%；不能把标题中的 35% 当作这项吞吐实测比例。&lt;/p&gt;
+&lt;p&gt;作者还报告，拔掉电源时 Linux 可达约 61–67 tokens/s，且插电测试温度仅约 40–47°C。文中把问题归因于 Windows 独有的平台电源管理组件和加密功耗表，并通过在 Windows 停用相应组件重现降频；这仍是作者的诊断，并非本次独立复现或厂商确认。&lt;/p&gt;
+&lt;p&gt;文章建议暂以 WSL 保留 Windows 侧电源管理支持，同时指出内存分配也需调整。范围应限定到所测笔记本及软件组合：原文同时列出原生 Linux 的 DGX Spark 桌面机约 61 tokens/s，不能把笔记本问题泛化成 DGX Spark 本身无法正常运行 Linux。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-576-points--评论-266-comments--投稿者novarom--发布时间2026-11-04-164629-0800&#34;&gt;
+  HN 热度 576 points | 评论 266 comments | 投稿者：novaRom | 发布时间：2026-11-04 16:46:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-576-points--%e8%af%84%e8%ae%ba-266-comments--%e6%8a%95%e7%a8%bf%e8%80%85novarom--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-164629-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50362905&#34;&gt;https://news.ycombinator.com/item?id=50362905&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RTX Spark 笔记本与原生搭载 Linux 的 DGX Spark 桌面机必须区分，混用名称会直接误导读者。&lt;/li&gt;
+&lt;li&gt;一种解释认为这是新 Windows 笔记本缺少 Linux 平台驱动支持，而不是已经证明厂商故意限制性能。&lt;/li&gt;
+&lt;li&gt;另一种意见认为厂商以往的封闭支持历史会影响信任，因此缺失驱动也不能脱离长期背景评价。&lt;/li&gt;
+&lt;li&gt;购买最新平台跑 Linux 往往要等待驱动和功能逐步补齐，能启动并不代表电源与硬件支持已完整。&lt;/li&gt;
+&lt;li&gt;桌面、音频、输入设备和 CUDA 在发布初期已经可用，也被部分读者视为积极进展。&lt;/li&gt;
+&lt;li&gt;统一内存的预留和 WSL 内存分配会进一步影响可用容量，宣传的总内存不等于每种运行方式都能直接用满。&lt;/li&gt;
+&lt;li&gt;有人更倾向把推理留在家中设备、远程访问，以减少随身电脑的电池、重量和散热负担。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-binance-初步复盘假面试内部-ai-工具与部署权限串成攻击链-north-korean-fake-job-interview-led-to-63b-binance-heist&#34;&gt;
+  7. Binance 初步复盘：假面试、内部 AI 工具与部署权限串成攻击链 (North Korean fake job interview led to $6.3B Binance heist)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-binance-%e5%88%9d%e6%ad%a5%e5%a4%8d%e7%9b%98%e5%81%87%e9%9d%a2%e8%af%95%e5%86%85%e9%83%a8-ai-%e5%b7%a5%e5%85%b7%e4%b8%8e%e9%83%a8%e7%bd%b2%e6%9d%83%e9%99%90%e4%b8%b2%e6%88%90%e6%94%bb%e5%87%bb%e9%93%be-north-korean-fake-job-interview-led-to-63b-binance-heist&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398&#34;&gt;https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Register 依据 Binance 11 月 3 日的初步事件报告，梳理 10 月 29 日约六十三亿美元数字资产失窃的多阶段攻击。报道援引 FBI 对朝鲜 TraderTraitor 行动的归因，并强调事件并非单次钓鱼：六月一次恶意开发工具下载暴露了钱包团队人员关系，九月攻击者再以招聘为名接近另一位工程师。&lt;/p&gt;
+&lt;p&gt;假公司先安排视频面试、提供个人社交内容建立信任，随后要求在工作电脑运行带恶意代码的作业仓库。恶意软件替换开发工具组件并建立外联，之后攻击者利用受控电脑和内部 AI 工具，取得另两位钱包工程师设备的访问，再发现其中一人的容器部署令牌，最终借另一台设备部署容器触发盗币。报道没有公开内部 AI 工具被利用的全部机制，不能自行补成某一种提示注入漏洞。&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.binance.com/en/blog/community/3229153443759566763&#34;&gt;Binance 原始报告&lt;/a&gt;称已重建相关系统、替换设备并停用受影响凭据，调查和独立复核仍在进行。因此时间线及具体控制措施是公司当前披露的结论，不是已经完成独立审计的最终报告，也不能把全部损失简单归结为一名员工参加面试。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-555-points--评论-340-comments--投稿者smalltech--发布时间2026-11-04-220955-0800&#34;&gt;
+  HN 热度 555 points | 评论 340 comments | 投稿者：smalltech | 发布时间：2026-11-04 22:09:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-555-points--%e8%af%84%e8%ae%ba-340-comments--%e6%8a%95%e7%a8%bf%e8%80%85smalltech--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-220955-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50365755&#34;&gt;https://news.ycombinator.com/item?id=50365755&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生产部署权限不应长期留在个人电脑，构建发布通道需要隔离、审计并限制单点失陷造成的后果。&lt;/li&gt;
+&lt;li&gt;在工作设备运行外部面试作业，会把个人求职流程的信任风险直接带入公司环境。&lt;/li&gt;
+&lt;li&gt;内部 AI 工具能够成为横向移动跳板，说明这类工具也应接受与其他高权限基础设施同等的安全审查。&lt;/li&gt;
+&lt;li&gt;有使用者分享遇到可疑面试的经历，额外安装指定版本开发工具或访问仿冒下载站，是值得警惕的行为信号。&lt;/li&gt;
+&lt;li&gt;凭据泄露后的关键动作是撤销和轮换，不能指望从本地删除文件就让已被复制的秘密失效。&lt;/li&gt;
+&lt;li&gt;把发布集中到 CI 仍不能自动阻止恶意代码进入，代码审查、构建来源和发布授权同样重要。&lt;/li&gt;
+&lt;li&gt;面对精心设计、持续多阶段的社会工程，简单归结为员工愚蠢可能低估攻击者，也掩盖系统性防线问题。&lt;/li&gt;
+&lt;li&gt;如此大规模资产转移也引发对分层审批和交易风控的追问，端点失陷不应轻易放大为巨额资金风险。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-safari-273-测试版引入自适应深色模式-safari-introduces-adaptive-dark-mode-in-273&#34;&gt;
+  8. Safari 27.3 测试版引入自适应深色模式 (Safari introduces Adaptive Dark Mode in 27.3)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-safari-273-%e6%b5%8b%e8%af%95%e7%89%88%e5%bc%95%e5%85%a5%e8%87%aa%e9%80%82%e5%ba%94%e6%b7%b1%e8%89%b2%e6%a8%a1%e5%bc%8f-safari-introduces-adaptive-dark-mode-in-273&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://webkit.org/blog/18541/introducing-adaptive-dark-mode/&#34;&gt;https://webkit.org/blog/18541/introducing-adaptive-dark-mode/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebKit 团队宣布 Safari 27.3 beta 的 Adaptive Dark Mode，让选择深色外观的用户也能以暗色阅读没有适配的网站。文章给出的背景数据是，接近四成网页加载来自深色模式用户，但只有约一成加载支持暗色外观。网站若已通过 color-scheme 声明支持深浅主题，浏览器不会再代为转换；否则会分析页面总体明暗，只对需要的页面处理。&lt;/p&gt;
+&lt;p&gt;转换并非整页反色：算法主要反转明度并保留色相，目标文字对比度为 4.5:1，多数内容图片保持原样；SVG 图标和简单黑白位图会视情况调整。某些遮罩、混合模式可能被关闭，canvas 则不转换。网站也可以自己提供暗色样式，获得更完整的视觉控制。&lt;/p&gt;
+&lt;p&gt;为减少指纹信息，JavaScript 读取到的仍是作者原始颜色，图像画入 canvas 也保持原样。文中还介绍 light only 可表达不希望转换的意图，但特别注明 Safari 27.3 beta 1 尚不支持 only 关键字。因此，这是用户启用的测试版能力，不能写成所有 Safari 用户已默认得到完整支持。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-494-points--评论-259-comments--投稿者paddingtone--发布时间2026-11-04-053905-0800&#34;&gt;
+  HN 热度 494 points | 评论 259 comments | 投稿者：paddingtone | 发布时间：2026-11-04 05:39:05 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-494-points--%e8%af%84%e8%ae%ba-259-comments--%e6%8a%95%e7%a8%bf%e8%80%85paddingtone--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-053905-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50358562&#34;&gt;https://news.ycombinator.com/item?id=50358562&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;暗色并不适合每个人，部分散光使用者更希望把深色网站转成浅色，而不是只增加单向转换。&lt;/li&gt;
+&lt;li&gt;现有扩展已经提供类似能力，用户会关心原生实现相对扩展的性能、可定制性和兼容差异。&lt;/li&gt;
+&lt;li&gt;直接给整页套反色滤镜会破坏照片，因此需要比简单 CSS 反色更细致的处理。&lt;/li&gt;
+&lt;li&gt;达到传统对比度公式的数值不一定代表所有暗色文字都易读，读者也提出了替代对比度评估方法。&lt;/li&gt;
+&lt;li&gt;浏览器改写作者配色引发了控制权讨论，回复则指出该功能需要用户主动启用。&lt;/li&gt;
+&lt;li&gt;长期维护网站深色主题也有成本，有站长期待浏览器替用户承担更多适配工作。&lt;/li&gt;
+&lt;li&gt;页面切换或加载失败时突然闪白的问题仍让读者关心，最终体验不只取决于稳定页面的配色。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-jelly-sheet可拖拽折叠的半透明塑料薄片演示-jelly-sheet&#34;&gt;
+  9. Jelly Sheet：可拖拽折叠的半透明塑料薄片演示 (Jelly Sheet)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-jelly-sheet%e5%8f%af%e6%8b%96%e6%8b%bd%e6%8a%98%e5%8f%a0%e7%9a%84%e5%8d%8a%e9%80%8f%e6%98%8e%e5%a1%91%e6%96%99%e8%96%84%e7%89%87%e6%bc%94%e7%a4%ba-jelly-sheet&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://mrdoob.github.io/codevember-2026/01/&#34;&gt;https://mrdoob.github.io/codevember-2026/01/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jelly Sheet 是 mrdoob 的 Codevember 2026“Fold”浏览器演示，页面把场景描述为一条不断落下、折叠在自身上的半透明塑料薄片，并提示可以拖拽薄片、按空格暂停。它是一个交互图形作品，没有可供逐段总结的长文章。&lt;/p&gt;
+&lt;p&gt;读取页面的 main.js 可以确认，项目使用 Three.js 的 WebGPURenderer，分别引入薄片、塑料材质、折射、拖拽与颜色分级模块。设置项包括供给速度、弯曲刚度、厚度、折射强度与折射率、颜色浓度、粗糙度，以及曝光、对比度、饱和度和色温；还提供环境遮蔽及分辨率控制、重置和暂停。这里列出的是代码定义的控制项，不是对全部效果已完成实测的承诺。&lt;/p&gt;
+&lt;p&gt;当前阅读用浏览器在图形初始化阶段报错，未能实际渲染和操纵薄片。因此本条介绍依据实际页面说明与已读取源代码，不能声称验证了画面流畅度、物理真实性、不同浏览器兼容性或长时间运行表现。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-445-points--评论-111-comments--投稿者memalign--发布时间2026-11-04-114050-0800&#34;&gt;
+  HN 热度 445 points | 评论 111 comments | 投稿者：memalign | 发布时间：2026-11-04 11:40:50 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-445-points--%e8%af%84%e8%ae%ba-111-comments--%e6%8a%95%e7%a8%bf%e8%80%85memalign--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-114050-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50361268&#34;&gt;https://news.ycombinator.com/item?id=50361268&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;柔软薄片的折叠与材质效果带来强烈的视觉满足感，是作品吸引人的核心。&lt;/li&gt;
+&lt;li&gt;持续不断落下的薄片也让有些人期待它结束，循环设计会造成与愉悦不同的感受。&lt;/li&gt;
+&lt;li&gt;有用户报告内容积累后变卡，长时间运行的性能值得与初次展示效果分开评价。&lt;/li&gt;
+&lt;li&gt;不同浏览器和设备上的启动结果并不一致，兼容性不能只凭某一次运行推断。&lt;/li&gt;
+&lt;li&gt;撕开薄片是读者希望增加的交互，当前拖拽之外仍有更多探索空间。&lt;/li&gt;
+&lt;li&gt;把手机陀螺仪运动接入场景，也是读者提出的增强交互设想。&lt;/li&gt;
+&lt;li&gt;部分参与者认为每月编程挑战也在于亲自练习，AI 辅助会改变他们对这类活动的期待。&lt;/li&gt;
+&lt;li&gt;另一种立场更重视作品构思和结果，认为使用 AI 不会自动抹去创作者的创造性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-amd-预计第四季度营收首次超过-intel-amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history&#34;&gt;
+  10. AMD 预计第四季度营收首次超过 Intel (AMD expects to outsell Intel in Q4 for the first time in history)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-amd-%e9%a2%84%e8%ae%a1%e7%ac%ac%e5%9b%9b%e5%ad%a3%e5%ba%a6%e8%90%a5%e6%94%b6%e9%a6%96%e6%ac%a1%e8%b6%85%e8%bf%87-intel-amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections&#34;&gt;https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tom’s Hardware 报道，AMD 第三季度营收达 133.77 亿美元，同比增长显著，数据中心业务贡献 85.5 亿美元、同比增长 97%，约占总营收 64%。文章将增长主要归于 Epyc 服务器处理器、Instinct AI 加速器与 Helios 系统需求，不能把它理解为单靠桌面 Ryzen 销售超越竞争对手。&lt;/p&gt;
+&lt;p&gt;最受关注的是未来指引：AMD 预计第四季度营收约 170 亿美元、上下浮动 3%，而 Intel 预计为 150 亿至 160 亿美元。若两家公司按指引实现，AMD 将首次在单季公司营收上超过 Intel，中点差约十五亿美元。这仍是预测，不是已公布的第四季度结果，也不是 CPU 台数、个人电脑零售份额或净利润的直接排名。&lt;/p&gt;
+&lt;p&gt;业务内部并非全面同步增长。AMD 客户端与游戏合并部门当季收入约 37.22 亿美元、同比下降 8%，其中游戏收入明显下滑；公司还预计高内存价格将继续压制 PC 需求。文章因此展示的是数据中心收入快速扩张下的结构变化，不能仅凭总营收推断普通消费者市场同样繁荣。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-431-points--评论-149-comments--投稿者rbanffy--发布时间2026-11-04-233834-0800&#34;&gt;
+  HN 热度 431 points | 评论 149 comments | 投稿者：rbanffy | 发布时间：2026-11-04 23:38:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-431-points--%e8%af%84%e8%ae%ba-149-comments--%e6%8a%95%e7%a8%bf%e8%80%85rbanffy--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-04-233834-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50367125&#34;&gt;https://news.ycombinator.com/item?id=50367125&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;比较两家公司时应拆开 Instinct、Epyc、Ryzen 等业务，总营收领先并不直接等于每类 CPU 产品都领先。&lt;/li&gt;
+&lt;li&gt;AMD 的数据中心 GPU 和整机系统是增长的重要部分，不能把其业务描述成只有游戏显卡和服务器 CPU。&lt;/li&gt;
+&lt;li&gt;更强的 CPU 厂商竞争有利于打破单一供应商长期占优的局面。&lt;/li&gt;
+&lt;li&gt;有 Intel 十三、十四代处理器使用者把可靠性经历视为转向 AMD 的原因，竞争也涉及产品稳定性。&lt;/li&gt;
+&lt;li&gt;AI 需求拉高部分 PC 零部件价格，可能同时推动数据中心收入、压制普通用户升级电脑的意愿。&lt;/li&gt;
+&lt;li&gt;读者把当前增长与 Zen 之前的低谷相比较，认为这是一个持续多年的企业转型过程。&lt;/li&gt;
+&lt;li&gt;依赖台湾代工厂也让一些读者担忧供应链和地缘风险，营收扩张并未消除这些约束。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-11-04 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-11-04-HackerNews/</link>
@@ -1097,288 +1370,6 @@
 &lt;li&gt;针对性测试可以支持“已经工作”的判断，却不等于穷举所有输入或证明完全等同于原 CPU。&lt;/li&gt;
 &lt;li&gt;有读者进一步设想把小型虚拟机和工具编译进模型内部，但这仍是关于未来用途的推测。&lt;/li&gt;
 &lt;li&gt;随机采样而非贪心解码会怎样影响执行，引发了关于有效指令与系统稳定性的疑问。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-10-31 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-10-31-HackerNews/</link>
-      <pubDate>Sat, 31 Oct 2026 08:24:18 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-10-31-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-10-31-hacker-news-top-stories&#34;&gt;
-  2026-10-31 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-10-31-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;《纽约时报》回顾帕特里克·斯图尔特的舞台与银幕生涯：这位皮卡德舰长、X 教授的扮演者于 10 月 28 日在洛杉矶家中去世，享年 86 岁。&lt;/li&gt;
-&lt;li&gt;币安热钱包遭入侵，HN 帖子引用的早期估算为 56 亿美元，币安后续通告将损失估计为约 63 亿美元，并称已预留超过 63.4 亿美元覆盖损失。&lt;/li&gt;
-&lt;li&gt;Phorion 发现 Cursor 市场分发的 Claude Code 扩展被植入 SSH 后门；Cursor 后续确认受影响的是 Windows、macOS 的 2.1.312 与 2.1.313 版本。&lt;/li&gt;
-&lt;li&gt;Kevin Beaumont 发布简短安全警报，指向 Cursor 市场中 Claude Code 扩展的远程访问后门；具体技术证据来自 Phorion 报告，范围以后续官方通告为准。&lt;/li&gt;
-&lt;li&gt;Greg Casar 与 Maxine Waters 提出反对救助资不抵债 AI 企业的决议，主张将危机援助直接用于工人、退休者及社区；这仍是提案而非已经生效的禁令。&lt;/li&gt;
-&lt;li&gt;elect.horse 把杰利蝾螈式选区划分做成六边形解谜：在各区选民数相等、区域连通的约束下，帮助马阵营以较少总选票赢得最多席位。&lt;/li&gt;
-&lt;li&gt;SigNoz 作者担忧，AI 接管告警和排障后，SRE 尤其是新人可能失去积累故障直觉的练习；文章提出保留主动推理与演练，但未提供长期对照实验。&lt;/li&gt;
-&lt;li&gt;按 Kadoa 整理的 2026 年第三季度数据，Google 搜索及其他广告收入为 634 亿美元、占 Alphabet 营收 49.7%；搜索仍同比增长 12%，云业务增长更快。&lt;/li&gt;
-&lt;li&gt;Kevin Beaumont 报道 Cursor 自动更新推送了含后门的 Claude Code 扩展，并转述约 5,000 台系统受影响；文中更新将入侵归于 Cursor 市场，强调升级扩展不会自动清除本机残留。&lt;/li&gt;
-&lt;li&gt;YC Labs 与 Olam Labs 让 AI 代理群在 Minecraft 和 Mindustry 中协作对战：50 代理生存实验出现自发分工，GPT‑6.1 Sol 在两组有限对局中分别以 6∶3 和 6∶1 领先。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-帕特里克斯图尔特去世享年-86-岁-patrick-stewart-has-died&#34;&gt;
-  1. 帕特里克·斯图尔特去世，享年 86 岁 (Patrick Stewart has died)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-%e5%b8%95%e7%89%b9%e9%87%8c%e5%85%8b%e6%96%af%e5%9b%be%e5%b0%94%e7%89%b9%e5%8e%bb%e4%b8%96%e4%ba%ab%e5%b9%b4-86-%e5%b2%81-patrick-stewart-has-died&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html&#34;&gt;https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Anita Gates 撰写的《纽约时报》讣告报道，英国演员帕特里克·斯图尔特于 10 月 28 日在洛杉矶家中去世，享年 86 岁，消息通过社交媒体公布。文章的主线是他如何从英国舞台演员，在中年迎来意想不到的转折，成为全球流行文化中的标志性人物。&lt;/p&gt;
-&lt;p&gt;他出生于约克郡贫困家庭，童年经历父亲对母亲的家暴；12 岁时，英语老师让他朗读《威尼斯商人》中的夏洛克，激发了他的表演兴趣。1966 年起，他在皇家莎士比亚剧团工作，后来两获奥利弗奖，也因 2008 年百老汇《麦克白》获得托尼奖提名。&lt;/p&gt;
-&lt;p&gt;1987 年，他开始饰演《星际迷航：下一代》的让-吕克·皮卡德舰长。这个沉着、有原则的角色走过七季电视剧和四部衍生电影，他又在 2020 年开播、共三季的《星际迷航：皮卡德》中回归。此外，他以《X 战警》系列的查尔斯·泽维尔教授闻名。讣告也回顾了他在《美国老爸》等作品中的喜剧表现，以及晚年仍不愿退休的创作热情；他并非只有庄严的舰长形象，而是持续在莎士比亚、科幻与喜剧之间拓展表演。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-3242-points--评论-740-comments--投稿者j4mie--发布时间2026-10-30-034139-0800&#34;&gt;
-  HN 热度 3242 points | 评论 740 comments | 投稿者：j4mie | 发布时间：2026-10-30 03:41:39 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-3242-points--%e8%af%84%e8%ae%ba-740-comments--%e6%8a%95%e7%a8%bf%e8%80%85j4mie--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-034139-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50294702&#34;&gt;https://news.ycombinator.com/item?id=50294702&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;皮卡德把坚定、同理心与倾听结合起来，为技术团队如何领导和处理冲突提供了可借鉴的形象。&lt;/li&gt;
-&lt;li&gt;疫情期间持续朗读莎士比亚十四行诗，让他的表演成为部分观众在隔离生活中的安慰。&lt;/li&gt;
-&lt;li&gt;与家人一起观看《下一代》的经历，使这部剧和斯图尔特成为跨越代际的共同记忆。&lt;/li&gt;
-&lt;li&gt;一次技术奥斯卡活动中的亲身接触，留下了他待人亲切、幽默并尊重幕后技术人员的印象。&lt;/li&gt;
-&lt;li&gt;即使作品整体水准参差，他仍认真投入表演，这种职业态度值得从事其他行业的人学习。&lt;/li&gt;
-&lt;li&gt;回忆录中对缺点、快乐与痛苦的坦诚，补充了公众熟悉的庄重银幕形象。&lt;/li&gt;
-&lt;li&gt;公平、诚实而又能管理情绪的男性角色，对一些观众理解成熟与责任产生了持久影响。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-币安遭大额盗窃官方后续估计损失约-63-亿美元-binance-hacker-1029--56b-stolen-from-binance&#34;&gt;
-  2. 币安遭大额盗窃，官方后续估计损失约 63 亿美元 (Binance-hacker-1029 – $5.6B stolen from Binance)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e5%b8%81%e5%ae%89%e9%81%ad%e5%a4%a7%e9%a2%9d%e7%9b%97%e7%aa%83%e5%ae%98%e6%96%b9%e5%90%8e%e7%bb%ad%e4%bc%b0%e8%ae%a1%e6%8d%9f%e5%a4%b1%e7%ba%a6-63-%e4%ba%bf%e7%be%8e%e5%85%83-binance-hacker-1029--56b-stolen-from-binance&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8&#34;&gt;https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;原链接指向 Arkham 的实体追踪页，当前无法读取，不能独立核对其中地址和余额；以下补充依据币安 10 月 30 日发布的第二次安全事件通告。HN 标题中的 56 亿美元是较早估算，币安此后称，10 月 29 日约 20:05 UTC 发生的热钱包入侵造成约 63 亿美元损失。&lt;/p&gt;
-&lt;p&gt;币安表示，已预留超过 63.4 亿美元用于覆盖损失，其中约 50 亿美元为与受影响资产相匹配的代币，约占所需数量的八成，其余仍在购买；约 30 亿美元涉案资产已被链上冻结。预留资金是公司的声明，冻结也不等于资产已经追回或用户已获偿付。&lt;/p&gt;
-&lt;p&gt;调查最初发现一台员工笔记本遭入侵，随后识别出多个突破点；公司称尚无钱包私钥泄露的证据，调查仍在进行。该次通告发布时提现仍暂停，充值和其他未受影响服务继续运行。现有通告没有确认此事与同期的 Claude Code 扩展供应链事件有关。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://www.binance.com/en/support/announcement/detail/d3306d9dca5243548c813b605e1d1751&#34;&gt;https://www.binance.com/en/support/announcement/detail/d3306d9dca5243548c813b605e1d1751&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-1723-points--评论-1211-comments--投稿者tiberium--发布时间2026-10-30-053859-0800&#34;&gt;
-  HN 热度 1723 points | 评论 1211 comments | 投稿者：Tiberium | 发布时间：2026-10-30 05:38:59 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1723-points--%e8%af%84%e8%ae%ba-1211-comments--%e6%8a%95%e7%a8%bf%e8%80%85tiberium--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-053859-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50296470&#34;&gt;https://news.ycombinator.com/item?id=50296470&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;若一台员工电脑失陷就足以触发巨额资产转移，调查应追问权限与系统设计，而不能只归责于某位工程师。&lt;/li&gt;
-&lt;li&gt;发现持续盗转后，应尽快隔离受影响钱包或将剩余资产移至新钱包，以减少进一步损失。&lt;/li&gt;
-&lt;li&gt;自托管减少对交易所的依赖，却也把备份、失窃与恢复责任交给个人，其安全收益取决于使用者的能力。&lt;/li&gt;
-&lt;li&gt;部分涉案资金仍能被冻结，引发了对加密资产究竟在多大程度上去中心化的质疑。&lt;/li&gt;
-&lt;li&gt;硬件安全模块只是防线之一，签名请求与业务接口仍需要多层校验和权限约束。&lt;/li&gt;
-&lt;li&gt;比较历史盗窃规模时，应区分美元计价损失与被盗代币数量，避免把币价变化误当成事件本身的可比性。&lt;/li&gt;
-&lt;li&gt;中心化交易所的托管风险与底层加密资产的去中心化属性需要分开评价。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-cursor-市场中的-claude-code-扩展被植入后门-backdoor-in-claude-code-for-vs-code-extension-on-the-cursor-marketplace&#34;&gt;
-  3. Cursor 市场中的 Claude Code 扩展被植入后门 (Backdoor in Claude Code for VS Code extension on the Cursor Marketplace)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-cursor-%e5%b8%82%e5%9c%ba%e4%b8%ad%e7%9a%84-claude-code-%e6%89%a9%e5%b1%95%e8%a2%ab%e6%a4%8d%e5%85%a5%e5%90%8e%e9%97%a8-backdoor-in-claude-code-for-vs-code-extension-on-the-cursor-marketplace&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://phorion.io/blog/offical-claude-code-vsx-compromise/&#34;&gt;https://phorion.io/blog/offical-claude-code-vsx-compromise/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Phorion 对 Cursor 扩展市场中的 Claude Code 2.1.313 安装包进行分析，发现扩展模块加载时就会执行的恶意 JavaScript，而不必等待正常的激活流程。代码尝试添加攻击者的 SSH 公钥、启用 SSH 服务、建立反向 SSH 隧道，并通过平台各自的启动机制留下持久化入口。&lt;/p&gt;
-&lt;p&gt;报告没有发现提权漏洞，部分步骤还存在权限不足或实现错误，因此不能据此断言每台受影响电脑都已被远程控制。即使开启 SSH 失败，写入公钥、建立持久化和向外发送主机信息等动作仍可能发生。初始侦察中收集的是环境变量名称，不能直接说成已上传所有密钥值；若远程访问成功，后续影响则可能更广。仅卸载扩展也未必清除独立的持久化项目。&lt;/p&gt;
-&lt;p&gt;Cursor 后续通告将范围明确为其市场分发的 Windows、macOS 版 Anthropic.claude-code 2.1.312 和 2.1.313，称没有证据显示 Anthropic 官方分发渠道受影响。分析代码中存在其他平台分支，不代表那些平台已实际分发或成功利用。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://cursor.com/blog/claude-code-extension-security-notice&#34;&gt;https://cursor.com/blog/claude-code-extension-security-notice&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-746-points--评论-465-comments--投稿者_chall--发布时间2026-10-30-150912-0800&#34;&gt;
-  HN 热度 746 points | 评论 465 comments | 投稿者：_chall | 发布时间：2026-10-30 15:09:12 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-746-points--%e8%af%84%e8%ae%ba-465-comments--%e6%8a%95%e7%a8%bf%e8%80%85_chall--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-150912-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50300683&#34;&gt;https://news.ycombinator.com/item?id=50300683&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;应把 Cursor 市场分发链遭入侵与 Anthropic 自身系统遭入侵区分开，避免将渠道问题扩大成未经证实的归因。&lt;/li&gt;
-&lt;li&gt;日常使用开发代理本身就在允许外来代码运行，对本机文件和隐私的信任边界值得重新审视。&lt;/li&gt;
-&lt;li&gt;将代理放进虚拟机并由宿主机主动同步代码，可以减少主机目录和长期代码仓库凭据的暴露。&lt;/li&gt;
-&lt;li&gt;容器隔离要同时限制宿主目录与 Docker 控制接口，否则容器本身未必形成有效边界。&lt;/li&gt;
-&lt;li&gt;反向 SSH 隧道意味着仅检查机器是否向公网开放端口，可能漏掉已经建立的外连访问路径。&lt;/li&gt;
-&lt;li&gt;有评论追问本地 IDE 扩展为何没有明确的权限机制，以及用户能否限制其本机访问范围。&lt;/li&gt;
-&lt;li&gt;企业设备管理和开发工具对环境的要求会增加隔离成本，安全方案需要兼顾实际工作流程。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-安全研究者提醒-claude-code-扩展存在后门-backdoors-in-official-claude-code-extensions&#34;&gt;
-  4. 安全研究者提醒 Claude Code 扩展存在后门 (Backdoors in official Claude Code extensions)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e5%ae%89%e5%85%a8%e7%a0%94%e7%a9%b6%e8%80%85%e6%8f%90%e9%86%92-claude-code-%e6%89%a9%e5%b1%95%e5%ad%98%e5%9c%a8%e5%90%8e%e9%97%a8-backdoors-in-official-claude-code-extensions&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://cyberplace.social/@GossiTheDog/117528831681803563&#34;&gt;https://cyberplace.social/@GossiTheDog/117528831681803563&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Kevin Beaumont 的这条 Mastodon 帖子是一则简短警报：Cursor 市场中的 Claude Code Visual Studio 扩展包含恶意代码，可建立远程访问入口，并附上 Phorion 的技术分析链接。帖子本身没有提供另一套独立取证过程，不能把它扩写成已证实 Anthropic 全部分发渠道遭入侵的调查报告。&lt;/p&gt;
-&lt;p&gt;作为后续补充，Cursor 官方确认其市场上的 Windows、macOS 版 2.1.312 和 2.1.313 受影响，已移除恶意版本、审计并重建市场，同时轮换相关密钥。通告称尚无证据显示 Anthropic 官方分发渠道受影响。攻击基础设施被关闭，也不代表已安装扩展的电脑自动完成了残留清理。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://cursor.com/blog/claude-code-extension-security-notice&#34;&gt;https://cursor.com/blog/claude-code-extension-security-notice&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-652-points--评论-17-comments--投稿者dsr_--发布时间2026-10-30-190553-0800&#34;&gt;
-  HN 热度 652 points | 评论 17 comments | 投稿者：dsr_ | 发布时间：2026-10-30 19:05:53 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-652-points--%e8%af%84%e8%ae%ba-17-comments--%e6%8a%95%e7%a8%bf%e8%80%85dsr_--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-190553-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50302334&#34;&gt;https://news.ycombinator.com/item?id=50302334&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本帖评论已合并至第 3 条讨论：
-
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50300683&#34;&gt;https://news.ycombinator.com/item?id=50300683&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;移除恶意包和提供清理步骤还不够，仍需解释攻击者如何进入分发链，才能判断复发风险。&lt;/li&gt;
-&lt;li&gt;只说恶意代码并非 Anthropic 编写，未充分回答用户为何会在熟悉的发布者名下收到它。&lt;/li&gt;
-&lt;li&gt;归因需要区分发布者账户、市场基础设施和上游包来源，不能仅凭扩展名称作判断。&lt;/li&gt;
-&lt;li&gt;安全事件与通告页面同时展示的安全认证形成反差，引发了对认证实际意义的讽刺与质疑。&lt;/li&gt;
-&lt;li&gt;这类事件说明知名工具和平台同样可能失守，使用者不能把品牌可信度等同于每次更新都安全。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-美国民主党议员提出反对科技巨头-ai-泡沫纾困的决议-us-reps-lead-democratic-resolution-opposing-ai-bubble-bailout-for-big-tech&#34;&gt;
-  5. 美国民主党议员提出反对科技巨头 AI 泡沫纾困的决议 (US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e7%be%8e%e5%9b%bd%e6%b0%91%e4%b8%bb%e5%85%9a%e8%ae%ae%e5%91%98%e6%8f%90%e5%87%ba%e5%8f%8d%e5%af%b9%e7%a7%91%e6%8a%80%e5%b7%a8%e5%a4%b4-ai-%e6%b3%a1%e6%b2%ab%e7%ba%be%e5%9b%b0%e7%9a%84%e5%86%b3%e8%ae%ae-us-reps-lead-democratic-resolution-opposing-ai-bubble-bailout-for-big-tech&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead&#34;&gt;https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;美国国会进步党团主席 Greg Casar 与众议院金融服务委员会民主党领袖 Maxine Waters 宣布提出决议，反对在 AI 投资泡沫破裂时以公共资金救助资不抵债的科技企业及高管。发布稿强调私募信贷、不透明融资与复杂债务安排可能把企业风险传导至更广泛经济，但这些属于提案者的风险判断，并非宣布泡沫已破裂或政府已决定救市。&lt;/p&gt;
-&lt;p&gt;决议反对用紧急贷款或注资帮助企业绕过正常破产程序，也反对高管在危机中获得“金色降落伞”。与此同时，它并非反对所有危机援助，而是主张把支持直接投向工人、退休者、低收入家庭和地方社区，包括就业、失业保障、食品、住房、养老金及公共服务，并配合透明度和问责要求。&lt;/p&gt;
-&lt;p&gt;文章是提出决议的政治声明，没有说明相关限制已成为法律。其核心区分是企业投资损失由谁承担，以及系统性冲击发生时公共援助应优先保护谁。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-620-points--评论-469-comments--投稿者deeplogin--发布时间2026-10-30-200800-0800&#34;&gt;
-  HN 热度 620 points | 评论 469 comments | 投稿者：DeepLogin | 发布时间：2026-10-30 20:08:00 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-620-points--%e8%af%84%e8%ae%ba-469-comments--%e6%8a%95%e7%a8%bf%e8%80%85deeplogin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-200800-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50302814&#34;&gt;https://news.ycombinator.com/item?id=50302814&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;企业应保留正常破产和重组的可能，不能让投资收益归私人而把亏损交给公众承担。&lt;/li&gt;
-&lt;li&gt;提前公开救助原则，有助于避免危机来临时在时间压力下只剩一种被包装为不可拒绝的方案。&lt;/li&gt;
-&lt;li&gt;在评价这项决议前，应先区分确有正在筹划的纾困安排与对未来危机的政治表态。&lt;/li&gt;
-&lt;li&gt;如果公共资本必须介入，公众应获得相应股权或收益，而不能只替原股东承担风险。&lt;/li&gt;
-&lt;li&gt;让单一公司破产与阻止连锁金融危机是两回事，是否援助需要考虑波及普通人的损失。&lt;/li&gt;
-&lt;li&gt;决议的政治承诺不等同于有约束力的法律，真正危机中的执行力度仍有疑问。&lt;/li&gt;
-&lt;li&gt;AI 融资风险可能牵涉大型科技企业、债权人和更广泛经济，不能只把问题理解为几家实验室倒闭。&lt;/li&gt;
-&lt;li&gt;有反对意见认为现有业务与增长并非毫无基本面支撑，因此不应先把所有 AI 投资统一定性为泡沫。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-electhorse用选区划分让少数选票赢得更多席位-electhorse&#34;&gt;
-  6. elect.horse：用选区划分让少数选票赢得更多席位 (elect.horse)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-electhorse%e7%94%a8%e9%80%89%e5%8c%ba%e5%88%92%e5%88%86%e8%ae%a9%e5%b0%91%e6%95%b0%e9%80%89%e7%a5%a8%e8%b5%a2%e5%be%97%e6%9b%b4%e5%a4%9a%e5%b8%ad%e4%bd%8d-electhorse&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://elect.horse/&#34;&gt;https://elect.horse/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;elect.horse 是 MPL Enterprises 制作的浏览器解谜游戏，延续 enclose.horse 的视觉风格，并在介绍页注明规则灵感来自 gerrymandle.com。玩家需要把六边形地图划成若干选区，每区必须连通、包含同样数量的选民，但面积可以不同；草地不增加选民数，池塘不能当作陆地连接区域。&lt;/p&gt;
-&lt;p&gt;每个选区由票数最多的阵营赢得一个席位，平票则无人得席。目标是让马阵营得到比其他任何单一对手更多的席位；面对多个对手时，这不一定要求过半席位。通过把对手集中到少数高票选区，或分散到多个惜败选区，总选票处于劣势也可能在席位上取胜。&lt;/p&gt;
-&lt;p&gt;游戏提供每日普通题、含更多对手的专家题、无限模式、往期题和社区地图，无需注册；提示可以揭示获胜方案中的一个选区。这是用动物与简化规则表达选区效应的抽象游戏，不能直接当作现实选举制度的完整模型。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-531-points--评论-148-comments--投稿者solarist--发布时间2026-10-30-171434-0800&#34;&gt;
-  HN 热度 531 points | 评论 148 comments | 投稿者：solarist | 发布时间：2026-10-30 17:14:34 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-531-points--%e8%af%84%e8%ae%ba-148-comments--%e6%8a%95%e7%a8%bf%e8%80%85solarist--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-171434-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50301462&#34;&gt;https://news.ycombinator.com/item?id=50301462&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把选票分布与席位结果放在可操作地图上，比单纯解释术语更容易让人理解选区划分的影响。&lt;/li&gt;
-&lt;li&gt;平票不给任何阵营席位的规则会明显改变解题策略，理解计席方式比只数总票数更重要。&lt;/li&gt;
-&lt;li&gt;马与驴阵营的颜色不够容易区分，视觉设计还需要考虑色觉差异和可读性。&lt;/li&gt;
-&lt;li&gt;更直接的教程和目标说明能降低入门成本，避免玩家先花时间猜测规则。&lt;/li&gt;
-&lt;li&gt;自称 gerrymandle 开发者的评论者称，对方洽谈收购未果后制作了相近游戏，并对这种做法提出异议。&lt;/li&gt;
-&lt;li&gt;如果成绩主要靠提示次数区分，竞争性计分的层次可能不足。&lt;/li&gt;
-&lt;li&gt;专家模式中结合推理与反复试画的过程，仍能提供有满足感的解题体验。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-ai-没有取代-sre却可能削弱他们处理故障的能力-ai-isnt-replacing-sres-its-deskilling-them&#34;&gt;
-  7. AI 没有取代 SRE，却可能削弱他们处理故障的能力 (AI isn&amp;rsquo;t replacing SREs, it&amp;rsquo;s deskilling them)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-ai-%e6%b2%a1%e6%9c%89%e5%8f%96%e4%bb%a3-sre%e5%8d%b4%e5%8f%af%e8%83%bd%e5%89%8a%e5%bc%b1%e4%bb%96%e4%bb%ac%e5%a4%84%e7%90%86%e6%95%85%e9%9a%9c%e7%9a%84%e8%83%bd%e5%8a%9b-ai-isnt-replacing-sres-its-deskilling-them&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling&#34;&gt;https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;SigNoz 作者 Elizabeth 将讨论从“AI 是否替代 SRE”转向“工程师如何继续获得判断力”：当告警筛选、日志分析和标准处置越来越自动化，人仍要应对罕见、陌生且后果严重的故障，却可能失去此前通过日常排查积累系统直觉的机会。文章中的“AI 处理 95%、人处理 5%”是说明这种风险的假设，不能作为实测自动化比例。&lt;/p&gt;
-&lt;p&gt;文章借用 Bainbridge 1983 年关于自动化悖论的讨论，以及医疗、航空等领域的类比，区分已经掌握技能后逐渐退化，与新人从未建立技能基础两种问题。作者担忧，单纯让人点击确认并不能形成有效监督，因为人可能已经不具备独立判断系统输出的能力。&lt;/p&gt;
-&lt;p&gt;建议包括定期手动练习和故障演练，在 AI 辅助中保留提出假设、检查证据和解释处置理由的主动过程。文章也介绍了 SigNoz 自身的产品思路，带有厂商视角；它提出的是值得检验的机制和风险，并没有给出 SRE 团队长期受控实验来证明能力必然退化。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-489-points--评论-358-comments--投稿者dorianniemiec--发布时间2026-10-30-235218-0800&#34;&gt;
-  HN 热度 489 points | 评论 358 comments | 投稿者：dorianniemiec | 发布时间：2026-10-30 23:52:18 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-489-points--%e8%af%84%e8%ae%ba-358-comments--%e6%8a%95%e7%a8%bf%e8%80%85dorianniemiec--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-235218-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50305693&#34;&gt;https://news.ycombinator.com/item?id=50305693&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;有亲历者表示 AI 能快速协助陌生系统排障，但也担心长期依赖会削弱自己的独立诊断能力。&lt;/li&gt;
-&lt;li&gt;Terraform 等工具同样替代过手动技能，关键是保留有价值的判断力，而不是要求所有旧操作永久存在。&lt;/li&gt;
-&lt;li&gt;应对新型故障的直觉来自反复提出和检验假设，不一定能靠保留低层次重复告警来培养。&lt;/li&gt;
-&lt;li&gt;AI 排障是否有用取决于组织上下文、工具接口和观测数据，模型本身无法弥补这些基础缺口。&lt;/li&gt;
-&lt;li&gt;技能可能转移到提出好问题、安排调查顺序和引导注意力，而不是简单地整体消失。&lt;/li&gt;
-&lt;li&gt;成熟的传统自动化早已减少简单故障，导致新人只接触少见复杂事故的问题并非 AI 独有。&lt;/li&gt;
-&lt;li&gt;可以通过刻意练习、提问和解释过程主动检验理解程度，避免把工具给出答案等同于自己掌握。&lt;/li&gt;
-&lt;li&gt;航空领域的训练经验值得借鉴，但其监管和运营条件与软件行业不同，不能直接照搬结论。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-google-搜索收入占-alphabet-总营收首次降至一半以下-google-search-is-now-less-than-half-of-alphabets-revenue&#34;&gt;
-  8. Google 搜索收入占 Alphabet 总营收首次降至一半以下 (Google Search is now less than half of Alphabet’s revenue)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-google-%e6%90%9c%e7%b4%a2%e6%94%b6%e5%85%a5%e5%8d%a0-alphabet-%e6%80%bb%e8%90%a5%e6%94%b6%e9%a6%96%e6%ac%a1%e9%99%8d%e8%87%b3%e4%b8%80%e5%8d%8a%e4%bb%a5%e4%b8%8b-google-search-is-now-less-than-half-of-alphabets-revenue&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.kadoa.com/companies/insights/google-search-below-half&#34;&gt;https://www.kadoa.com/companies/insights/google-search-below-half&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Kadoa 整理的 2026 年第三季度数据称，Alphabet 总营收约 1,280 亿美元，其中“Google Search &amp;amp; other”收入约 634 亿美元，占比 49.7%，首次在该项目单独披露以来低于一半。文章回溯称，此前 31 个季度的占比在 52.8% 至 62% 之间。&lt;/p&gt;
-&lt;p&gt;这不是搜索收入下降的故事：该项目仍同比增长 12%。与此同时，Google Cloud 收入约 307 亿美元，同比增长 103%，占总营收 24.1%，推动其他业务相对体量扩大。理解变化需要同时看绝对收入和占比，不能把分母增长带来的结构变化直接说成搜索业务衰退。&lt;/p&gt;
-&lt;p&gt;口径同样重要：“Search &amp;amp; other”并非只有搜索结果页广告，还涵盖 Gmail、Maps、Play 等相关广告；另一侧也并非全是云业务，还包括 YouTube 广告、订阅、设备等。文章以营收结构为观察对象，这些数字不能单独说明利润贡献，也不足以证明 AI 正在造成搜索业务被替代；历史序列与分类采用 Kadoa 的整理口径。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-427-points--评论-355-comments--投稿者hubraumhugo--发布时间2026-10-30-004217-0800&#34;&gt;
-  HN 热度 427 points | 评论 355 comments | 投稿者：hubraumhugo | 发布时间：2026-10-30 00:42:17 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-427-points--%e8%af%84%e8%ae%ba-355-comments--%e6%8a%95%e7%a8%bf%e8%80%85hubraumhugo--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-004217-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50291945&#34;&gt;https://news.ycombinator.com/item?id=50291945&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;搜索占比下降与搜索收入下降是两回事，这次变化主要说明其他业务增长得更快。&lt;/li&gt;
-&lt;li&gt;降低对单一收入来源的依赖，可以被视为业务多样化的进展，而非自动解释为坏消息。&lt;/li&gt;
-&lt;li&gt;展示占比时还应提供绝对金额曲线，否则读者容易误判核心业务的增长方向。&lt;/li&gt;
-&lt;li&gt;云业务内部各类服务的贡献仍需进一步拆分，才能看清增长来自哪里。&lt;/li&gt;
-&lt;li&gt;如果云增长越来越依赖 AI 客户与相关资本支出，收入多样化也可能带来新的集中风险。&lt;/li&gt;
-&lt;li&gt;有使用者表示这次终于顺利转向 DuckDuckGo，并认为 Google 搜索结果受到较强的选择与编排影响。&lt;/li&gt;
-&lt;li&gt;Google 的产品生态、基础设施与数据资产仍可能构成竞争优势，不能只凭一个收入占比判断长期地位。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-cursor-市场发布的-claude-code-扩展含后门-claude-code-vs-code-extension-with-backdoor-released-on-cursor-marketplace&#34;&gt;
-  9. Cursor 市场发布的 Claude Code 扩展含后门 (Claude Code VS Code extension with backdoor released on Cursor marketplace)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-cursor-%e5%b8%82%e5%9c%ba%e5%8f%91%e5%b8%83%e7%9a%84-claude-code-%e6%89%a9%e5%b1%95%e5%90%ab%e5%90%8e%e9%97%a8-claude-code-vs-code-extension-with-backdoor-released-on-cursor-marketplace&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2&#34;&gt;https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Kevin Beaumont 报道，Cursor 中的 Claude Code 扩展通过自动更新向开发者电脑分发恶意代码，利用反向 SSH 连接尝试建立持久远程访问。文章最初以 Anthropic 遭入侵描述事件，随后补充 Anthropic 的声明：攻击者利用 Cursor 市场的访问权限发布篡改包，Anthropic 没有参与构建、发布或托管该包。作者转述 Cursor 称约 5,000 台开发者系统受影响；这不代表每台电脑都成功建立了远程访问。&lt;/p&gt;
-&lt;p&gt;文中重点讨论 2.1.313，称其被 2.1.314 替换，但作者尚不确定新版是否完全没有恶意代码，并强调更新不会清除已经写入系统的 SSH 后门或撤销此前侦察。其引用的通告说明，恶意代码收集主机、用户、Git 邮箱及环境变量名称等信息，尝试写入攻击者公钥、开启 SSH 服务、反向连接并持久化；在普通权限下，部分步骤会因权限和代码错误失败。&lt;/p&gt;
-&lt;p&gt;作者提供了 Microsoft Defender for Endpoint 的 KQL 检测查询，并质疑以“并非 Anthropic 开发”解释事件，未充分回应已验证发布者身份下的软件分发信任问题。这是作者的批评。补充依据此前读取的 Cursor 后续通告，受影响范围还包括 2.1.312，限其市场分发的 Windows、macOS 包；暂无证据显示官方分发渠道受影响。文章提及币安是相关工具用户，但未证明该事件与币安失窃存在因果关系。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://cursor.com/blog/claude-code-extension-security-notice&#34;&gt;https://cursor.com/blog/claude-code-extension-security-notice&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-398-points--评论-1-comments--投稿者bashtoni--发布时间2026-10-30-182251-0800&#34;&gt;
-  HN 热度 398 points | 评论 1 comments | 投稿者：bashtoni | 发布时间：2026-10-30 18:22:51 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-398-points--%e8%af%84%e8%ae%ba-1-comments--%e6%8a%95%e7%a8%bf%e8%80%85bashtoni--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-182251-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50301983&#34;&gt;https://news.ycombinator.com/item?id=50301983&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;本帖评论已合并至以下讨论，评论观点据合并后的讨论整理：
-
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50300683&#34;&gt;https://news.ycombinator.com/item?id=50300683&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标题和传播用语应准确限定受影响渠道，避免把市场分发问题写成已证实的 Anthropic 全面失陷。&lt;/li&gt;
-&lt;li&gt;同名扩展可能通过不同市场和镜像分发，排查时必须确认实际安装来源。&lt;/li&gt;
-&lt;li&gt;用户最需要的是明确的受影响版本、分发渠道和处置范围，而不是含糊的品牌层面警报。&lt;/li&gt;
-&lt;li&gt;将可信发布者更新排除在延迟更新策略之外的做法受到质疑，因为这可能削弱用户在异常发布时的控制能力。&lt;/li&gt;
-&lt;li&gt;市场镜像与代理增加了供应链中的信任节点，追踪包来源应覆盖整个分发路径。&lt;/li&gt;
-&lt;li&gt;发布者名称与品牌标签不足以证明包的来源，有意见主张通过端到端签名提高可验证性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-yc-与-olam-在-minecraftmindustry-中观察-ai-代理群体-we-ran-ai-agent-swarms-in-minecraft-and-mindustry&#34;&gt;
-  10. YC 与 Olam 在 Minecraft、Mindustry 中观察 AI 代理群体 (We ran AI agent swarms in Minecraft and Mindustry)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-yc-%e4%b8%8e-olam-%e5%9c%a8-minecraftmindustry-%e4%b8%ad%e8%a7%82%e5%af%9f-ai-%e4%bb%a3%e7%90%86%e7%be%a4%e4%bd%93-we-ran-ai-agent-swarms-in-minecraft-and-mindustry&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://labs.ycombinator.com/projects/games/index.html&#34;&gt;https://labs.ycombinator.com/projects/games/index.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;YC Labs 与 Olam Labs 用可回放的游戏实验观察多代理协作。在 Minecraft 的 Civ50 实验中，50 个 GPT‑6.1 Sol 代理运行三小时，产生约 5,900 条消息；首夜伤亡促使它们建立庇护、分配资源和细化职责。49 条最初发出的私信中有 46 条指向名单首位 Ada，提示所谓自发领导也可能受到列表顺序影响。&lt;/p&gt;
-&lt;p&gt;Minecraft BedWars 进行了九场、每场 45 分钟的对局，两方各有十个代理，GPT‑6.1 Sol 对 Claude Opus 5.5 以 6∶3 取胜。作者观察到前者更积极攻击敌床，后者更重防守与击杀，但挖方块工具问题也干扰了行为。Mindustry 的七场实验约持续 9.5 小时，Codex 中的 GPT‑6.1 Sol 对 Claude Code 中的 Claude Opus 5.5 以 6∶1 领先，双方在沟通压缩、分工与集中决策上出现差异。&lt;/p&gt;
-&lt;p&gt;项目开放框架、回放和对话记录；它比较的是有限游戏、提示与运行框架下的组合表现。工具缺陷、交互延迟和小样本都会影响结果，不能直接推出通用模型排名，更不能把拟人化的群体行为描述当作真实政治意图。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-395-points--评论-163-comments--投稿者sandslash--发布时间2026-10-30-054028-0800&#34;&gt;
-  HN 热度 395 points | 评论 163 comments | 投稿者：sandslash | 发布时间：2026-10-30 05:40:28 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-395-points--%e8%af%84%e8%ae%ba-163-comments--%e6%8a%95%e7%a8%bf%e8%80%85sandslash--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-30-054028-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50296486&#34;&gt;https://news.ycombinator.com/item?id=50296486&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;接口设计、响应延迟和反馈频率会影响游戏成绩，不能把胜负完全归因于模型推理能力。&lt;/li&gt;
-&lt;li&gt;挖掘工具的问题可能改变代理的进攻选择，因此看似保守的策略也可能是工具失败后的适应。&lt;/li&gt;
-&lt;li&gt;应打乱代理名单顺序重复实验，检验领导者是否只是获得了位置带来的先发优势。&lt;/li&gt;
-&lt;li&gt;有评论要求公开各实验的 token 用量，以补充胜负之外的资源消耗信息。&lt;/li&gt;
-&lt;li&gt;较小且职责明确的团队可能比大量无结构代理更有效，需要加入组织结构对照。&lt;/li&gt;
-&lt;li&gt;可以用分层控制把简单动作与高层规划分开，减少语言模型在琐碎操作上的消耗。&lt;/li&gt;
-&lt;li&gt;嵌入式游戏回放界面本身很吸引人，有评论希望了解其工具实现并用于展示自己的游戏世界。&lt;/li&gt;
-&lt;li&gt;人类设计的游戏规则本身塑造了可见行为，因此这些实验仍是特定环境中的观察。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

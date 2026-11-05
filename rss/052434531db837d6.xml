@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-03T16:29:48+00:00</updated><author><name>Simon Willison</name></author><entry><title>Qwen 3.8 27B on my laptop can interpret model weights, too</title><link href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="alternate"/><published>2026-11-03T16:29:48+00:00</published><updated>2026-11-03T16:29:48+00:00</updated><id>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-04T15:26:02+00:00</updated><author><name>Simon Willison</name></author><entry><title>datasette-llm 0.1a10</title><link href="https://simonwillison.net/2026/Nov/4/datasette-llm/" rel="alternate"/><published>2026-11-04T15:26:02+00:00</published><updated>2026-11-04T15:26:02+00:00</updated><id>https://simonwillison.net/2026/Nov/4/datasette-llm/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-llm/releases/tag/0.1a10"&gt;datasette-llm 0.1a10&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Fixes a &lt;a href="https://github.com/datasette/datasette-llm/pull/11"&gt;bug&lt;/a&gt; that affected my &lt;a href="https://agent.datasette.io/"&gt;agent.datasette.io&lt;/a&gt; demo site, where the set of available LLM models was not correctly restricted to just those in the configuration.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="datasette"/><category term="llm"/></entry><entry><title>datasette-apps 0.3a0</title><link href="https://simonwillison.net/2026/Nov/4/datasette-apps/" rel="alternate"/><published>2026-11-04T00:29:36+00:00</published><updated>2026-11-04T00:29:36+00:00</updated><id>https://simonwillison.net/2026/Nov/4/datasette-apps/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-apps/releases/tag/0.3a0"&gt;datasette-apps 0.3a0&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.&lt;/p&gt;
+&lt;p&gt;These can be created by hand, but it's easier to create them using LLMs via &lt;a href="https://agent.datasette.io/"&gt;Datasette Agent&lt;/a&gt;. This release improves that integration:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Apps can now be tagged in Datasette Agent chat messages by typing &lt;code&gt;#&lt;/code&gt;, which autocompletes from the apps the user has permission to view.&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;app_add_stored_queries()&lt;/code&gt; and &lt;code&gt;app_remove_stored_queries()&lt;/code&gt; tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;app_create()&lt;/code&gt; now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created.&lt;/li&gt;
+&lt;li&gt;The "View app" buttons shown by the agent tools, and the links on &lt;code&gt;#&lt;/code&gt; app references, now open the app full screen in the Datasette Agent panel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette-agent"&gt;datasette-agent&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette-apps"&gt;datasette-apps&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="datasette"/><category term="datasette-agent"/><category term="datasette-apps"/></entry><entry><title>datasette-agent 0.5a0</title><link href="https://simonwillison.net/2026/Nov/3/datasette-agent/" rel="alternate"/><published>2026-11-03T23:13:45+00:00</published><updated>2026-11-03T23:13:45+00:00</updated><id>https://simonwillison.net/2026/Nov/3/datasette-agent/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-agent/releases/tag/0.5a0"&gt;datasette-agent 0.5a0&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This is a significant release of &lt;a href="https://agent.datasette.io/"&gt;Datasette Agent&lt;/a&gt;. The most notable new feature is called the &lt;strong&gt;panel&lt;/strong&gt; - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page.&lt;/p&gt;
+&lt;p&gt;When combined with &lt;a href="https://github.com/datasette/datasette-apps"&gt;datasette-apps&lt;/a&gt; this means you can prompt a database-backed app into existence and then modify it from the chat that sits next to that app.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of a split-screen chat interface titled &amp;quot;evaluate llm prices&amp;quot; (model tag &amp;quot;gpt-6-luna&amp;quot;): the conversation runs in a narrow column on the left, and a wide side panel on the right displays the app the assistant built, with &amp;quot;EXPORT&amp;quot; and &amp;quot;Close panel&amp;quot; buttons above it. In the chat, blue user bubbles read &amp;quot;Build an app to help explore this data&amp;quot; and &amp;quot;give it a more hacker aesthetic design&amp;quot;, each followed by collapsed tool calls (app_create, app_render, app_view, app_str_replace), &amp;quot;LLM Price Explorer v1.&amp;quot; and &amp;quot;v2.&amp;quot; entries with &amp;quot;View app&amp;quot; and &amp;quot;Edit&amp;quot; buttons, and short assistant replies describing the app and its new dark terminal-inspired theme. The right panel shows the resulting &amp;quot;LLM Price Explorer&amp;quot; in neon green monospace on black: stat cards for 185 models from 12 providers with workload costs from $0.042 (Jev 1.13) to $300.00 (o1 Pro), filter and workload cost estimate controls, and a table of matching models with input, output and cached input prices per million tokens." src="https://static.simonwillison.net/static/2026/datasette-agent-panel.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;You can try it by signing in with your GitHub account to &lt;a href="https://agent.datasette.io/"&gt;agent.datasette.io&lt;/a&gt;.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette-agent"&gt;datasette-agent&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="projects"/><category term="datasette"/><category term="datasette-agent"/></entry><entry><title>llm 0.37.1</title><link href="https://simonwillison.net/2026/Nov/3/llm/" rel="alternate"/><published>2026-11-03T21:41:42+00:00</published><updated>2026-11-03T21:41:42+00:00</updated><id>https://simonwillison.net/2026/Nov/3/llm/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm/releases/tag/0.37.1"&gt;llm 0.37.1&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;A bugfix release for &lt;a href="https://llm.datasette.io/"&gt;LLM&lt;/a&gt;, with contributions from &lt;a href="https://github.com/remote-controlled-man"&gt;Steven Huang&lt;/a&gt;, &lt;a href="https://github.com/tao-hpu"&gt;Tao An&lt;/a&gt;, &lt;a href="https://github.com/ar-jan"&gt;Arjan Mossel&lt;/a&gt;, and &lt;a href="https://github.com/XXXXXQ-0206"&gt;XQ&lt;/a&gt;.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="llm"/></entry><entry><title>Qwen 3.8 27B on my laptop can interpret model weights, too</title><link href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="alternate"/><published>2026-11-03T16:29:48+00:00</published><updated>2026-11-03T16:29:48+00:00</updated><id>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</id><summary type="html">
     &lt;p&gt;Yesterday's hot paper was &lt;a href="https://rikiyat.github.io/blog/weight-space-programming/"&gt;Sparks of Weight-Space Programming: LLMs can natively read &amp;amp; write neural network weights&lt;/a&gt; by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a "blog post", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!&lt;/p&gt;
 &lt;h4 id="weight-space-programming"&gt;Weight-Space Programming&lt;/h4&gt;
 &lt;p&gt;Here's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term &lt;strong&gt;Weight-Space Programming&lt;/strong&gt; for when LLMs analyze and modify model weights:&lt;/p&gt;
@@ -608,82 +656,4 @@ OK well this is a first for me... at &lt;a href="https://www.youtube.com/watch?v
 
 
 
-</summary><category term="music"/><category term="ai"/><category term="generative-ai"/><category term="pelican-riding-a-bicycle"/></entry><entry><title>Donating Agent Skills to the Agentic AI Foundation</title><link href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/" rel="alternate"/><published>2026-10-22T18:09:56+00:00</published><updated>2026-10-22T18:09:56+00:00</updated><id>https://simonwillison.net/2026/Oct/22/donating-agent-skills/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"&gt;Donating Agent Skills to the Agentic AI Foundation&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-News today from Anthropic:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, &lt;a href="https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"&gt;which we co-founded&lt;/a&gt; with Block and OpenAI last year, and to which we donated the Model Context Protocol (MCP).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I'm pleased to note I called this one &lt;a href="https://simonwillison.net/2025/Dec/19/agent-skills/"&gt;last December&lt;/a&gt;, when Anthropic first declared skills to be an "open standard":&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I wouldn't be surprised to see this end up &lt;a href="https://simonwillison.net/2025/Dec/9/agentic-ai-foundation/"&gt;in the AAIF&lt;/a&gt;, recently the new home of the MCP specification.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Fun side note: since my blog content is available to Claude via the &lt;a href="https://github.com/datasette/datasette-mcp"&gt;datasette-mcp&lt;/a&gt;
-plugin I found that post by &lt;a href="https://claude.ai/share/80b341de-590b-4834-bca9-0d9c9a3a0298"&gt;prompting Claude&lt;/a&gt; to "&lt;code&gt;Use simonwillison.net MCP to find if I ever talked about how I want skills to be donated to a standards body&lt;/code&gt;".
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/standards"&gt;standards&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/model-context-protocol"&gt;model-context-protocol&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/skills"&gt;skills&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="standards"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="model-context-protocol"/><category term="skills"/></entry><entry><title>Quoting Armin Ronacher</title><link href="https://simonwillison.net/2026/Oct/22/armin-ronacher/" rel="alternate"/><published>2026-10-22T15:34:13+00:00</published><updated>2026-10-22T15:34:13+00:00</updated><id>https://simonwillison.net/2026/Oct/22/armin-ronacher/</id><summary type="html">
-    &lt;blockquote cite="https://twitter.com/mitsuhiko/status/2113207589978636646"&gt;&lt;p&gt;As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://twitter.com/mitsuhiko/status/2113207589978636646"&gt;Armin Ronacher&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/armin-ronacher"&gt;armin-ronacher&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-security-research"&gt;ai-security-research&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="security"/><category term="generative-ai"/><category term="armin-ronacher"/><category term="ai"/><category term="ai-security-research"/><category term="llms"/></entry><entry><title>Today's PHP Security Release, and How We're Strengthening PHP Security</title><link href="https://simonwillison.net/2026/Oct/21/php-security-release/" rel="alternate"/><published>2026-10-21T18:41:53+00:00</published><updated>2026-10-21T18:41:53+00:00</updated><id>https://simonwillison.net/2026/Oct/21/php-security-release/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"&gt;Today&amp;#x27;s PHP Security Release, and How We&amp;#x27;re Strengthening PHP Security&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process.&lt;/p&gt;
-&lt;p&gt;This post from the PHP Foundation explain what went so wrong:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;On Tuesday, October 20th, at around 15:00 UTC, the two CVE IDs began circulating on online forums and social media. They came with a wrong release time and a wrong CVSS score of 10.0 (the actual score is 9.2). No technical details leaked. In response, the PHP project brought its pre-announcement forward and &lt;a href="https://www.php.net/archive/2026.php#2026-10-20-1"&gt;published it at 19:30 UTC&lt;/a&gt;. It also moved the release from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC [...]&lt;/p&gt;
-&lt;p&gt;As a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video. It showed their proof of concept working against a number of targets and revealed a few additional, though limited, details about the vulnerabilities. Copies of the deleted video started circulating on social media soon after. The video contributed to accelerated development of various PoCs (exploitation proof of concepts), which then increased circulation on October 21st.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="https://www.wiz.io/blog/php2shell-php-rce"&gt;This article&lt;/a&gt; from the team that discovered the original vulnerability includes a more detailed timeline of the original intended responsible disclosure:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;August 19, 2026:&lt;/strong&gt; Wiz Research discovers the first PHP vulnerability using Wiz Atlas, Gemini 4 Argon, and GPT-5.6 Sol.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;August 20, 2026:&lt;/strong&gt; Unauthenticated RCE is confirmed against Drupal.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;August 21, 2026:&lt;/strong&gt; Unauthenticated RCE is confirmed against WordPress.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;August 24, 2026:&lt;/strong&gt; Wiz Research reports the vulnerabilities to the PHP security team.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;September 21, 2026:&lt;/strong&gt; PHP acknowledges the reports and begins developing a coordinated fix.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;October 21, 2026:&lt;/strong&gt; Patched PHP releases become available.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;October 21, 2026:&lt;/strong&gt; Public disclosure.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50182987"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/php"&gt;php&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-security-research"&gt;ai-security-research&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="open-source"/><category term="php"/><category term="security"/><category term="ai"/><category term="ai-security-research"/></entry><entry><title>Panache — RTS Belle Époque pour mobile</title><link href="https://simonwillison.net/2026/Oct/21/panache/" rel="alternate"/><published>2026-10-21T16:25:16+00:00</published><updated>2026-10-21T16:25:16+00:00</updated><id>https://simonwillison.net/2026/Oct/21/panache/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/menufactory43/panache/"&gt;Panache — RTS Belle Époque pour mobile&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Well this is delightful: I &lt;a href="https://simonwillison.net/2026/Oct/20/battledrones/"&gt;released Battle Drones&lt;/a&gt; yesterday under an Apache 2.0 License and there's already a French language fork by Gabriel Turpin which reskins the game to take place in steampunk 1900s France and adds an animated intro!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Panache&lt;/strong&gt; est un jeu de stratégie en temps réel pour mobile et navigateur, dans la France de la Belle Époque (vers 1900) : dirigeables, Fardiers à vapeur, Creusot cuirassés, automates en képi, Gargantua la forteresse marchante — et beaucoup de panache.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can &lt;a href="https://menufactory43.github.io/panache/"&gt;play Panache here&lt;/a&gt; - it's worth clicking that link just to experience the new intro video.&lt;/p&gt;
-&lt;p&gt;So far it's mostly just aesthetic updates as opposed to gameplay changes. The music has had a French twist added to it as well.&lt;/p&gt;
-&lt;p&gt;The new steampunk models are so cool!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The new buildings are gold and red, there are dirigibles and biplanes, and the Goliath stomping mech has had a total makeover." src="https://static.simonwillison.net/static/2026/battledrones-french.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;Here's a page with &lt;a href="https://simonw.github.io/battledrones/models.html"&gt;the original Battle Drones models&lt;/a&gt; and that same page &lt;a href="https://menufactory43.github.io/panache/models.html"&gt;with the new Panache alternatives&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This is a comparison of the original and the new design for the Goliath:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On the left: blue stomping mech robot, missile launcher shoulders, classic sci-fi robot look. On the right: gold, steampunk, much more 1900s French look." src="https://static.simonwillison.net/static/2026/battledrones-goliath-diff.jpg" /&gt;
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://twitter.com/Meffysto69/status/2112908755654365220"&gt;@Meffysto69&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/open-source"&gt;open-source&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="game-design"/><category term="open-source"/></entry></feed>
+</summary><category term="music"/><category term="ai"/><category term="generative-ai"/><category term="pelican-riding-a-bicycle"/></entry></feed>

@@ -1,6 +1,94 @@
 {
   "items": [
     {
+      "id": "d804440414268d705788622e",
+      "title": "俳句练习其一",
+      "summary": "あの祭り 打ち上げ花火 二人とも 人混み避ける 山雀やたり",
+      "image": null,
+      "publishedAt": "2022-05-28T16:00:00Z",
+      "sourceId": "f758efe5e14ba931",
+      "sourceTitle": "瓠樽",
+      "link": "https://blog.dylanwu.space/2022/05/29/haiku-1.html",
+      "detailPath": "articles/d804440414268d705788622e.json"
+    },
+    {
+      "id": "3b6ff6eed19036f60abb909f",
+      "title": "旋律小片段",
+      "summary": "這個我喜歡的旋律小片段（或類似的形狀，不限調）目前我已經聽到有以下這幾首在用了，尤其是日本曲師 提供（Teikyou） 製作的曲子。 https://soundcloud.com/teikyousann/corona-free （ 上面影片連結 ） https://soundcloud.com/hommarju/hommarju-akira-complex-break-stasis-extended",
+      "image": "https://microblog.ttheng.com/blog/6R562m1ll09NuvjuXTeUwd.png",
+      "publishedAt": "2022-05-28T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/melody-fragment/",
+      "detailPath": "articles/3b6ff6eed19036f60abb909f.json"
+    },
+    {
+      "id": "0ad9cc922fa4897b5b50bb04",
+      "title": "Nextcloud (Hetzner Storge Share) 使用分享",
+      "summary": "某天看 Hetzner 的 VPS 时注意到其提供的 1 TB storage 的 Storage Share 服务，无限流量加三个自定义域名，购买相当于免安装拥有一个上述配置的 Nextcloud 云盘，价格每月 3.9 欧，比较划算，唯一的缺点大概就是地点只能选德国，质量访问速度不佳且不能用 cloudflare 加速。另外，这个 Storage Share 的操作界面在 konsoleh.your-server.de ，即便之前已有 Hetzner 账号，依旧还要重新注册一个 konsoleh 的账号（客服依旧是 Hetzner 的，一般一天之内都会回复），审核感觉相对 Hetzner 会宽松些。",
+      "image": null,
+      "publishedAt": "2022-05-25T13:04:12Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/a-brief-introduction-of-nextcloud/",
+      "detailPath": "articles/0ad9cc922fa4897b5b50bb04.json"
+    },
+    {
+      "id": "7bc74905c7261c146e9d147e",
+      "title": "2022年在MacOs上编译AOSP",
+      "summary": "之前苦于电脑磁盘空间比较小，而android系统的源码越来越大，一直没有机会自己编译Android系统。这次换了电脑，磁盘足够大，可以尝试一下了。 而android源码的网站红色的字写着 Platform development on MacOS isn’t supported as of June 22, 2021. ，我就知道不会那么容易了。 我的电脑环境： 2021款 M1芯片 Macbook Pro 16GB运行内存 MacOS Monterey(12.1) 环境准备 安装xcode和相关工具 从appstore安装Xcode 安装xcode command line tools： $ xcode-select –install 安装Rosetta（M1芯片需要，x86芯片不需要） $ softwar…",
+      "image": null,
+      "publishedAt": "2022-05-17T14:30:52Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2022-05-17-build-android-system/?utm_source=rss",
+      "detailPath": "articles/7bc74905c7261c146e9d147e.json"
+    },
+    {
+      "id": "2aaa84bdf0ac4e65bffe3fe3",
+      "title": "总结一下自己平时找电子书资源的流程",
+      "summary": "zlibrary 首先肯定是 世界上最大的电子书图书馆 zlibrary 需要注意，因为版权敏感问题，它的域名经常变更，解决方法是： 谷歌搜索“zlibrary”后直接点开第一个，一般都可以进去 收藏登陆页： https://singlelogin.me/ 登陆后会自动跳转到可用域名 使用 telegram 上的 bot，搜索「@firstlibrarybot」后关注，绑定完账户后就可以用了。 发送书名会返回搜索列表，点击选择下载。 好处是不受域名改变限制、不需要重复登录、直接在 tg 里下载文件方便快捷。 唯一的缺点是文件大小有 50m 限制，超过限制会给你链接让你去网站下载。 超星PDF互助平台 如果 zlibrary 上没有，建议直奔： https://bk.5mbook.com/ 这个依靠的是超星库，…",
+      "image": "https://picture-guan.oss-cn-hangzhou.aliyuncs.com/img/20220517113840.png",
+      "publishedAt": "2022-05-17T00:00:00Z",
+      "sourceId": "ecbcf87e0432fdbd",
+      "sourceTitle": "关门说话",
+      "link": "https://hugo-stack-theme-mod-six.vercel.app/2022/%E6%80%BB%E7%BB%93%E4%B8%80%E4%B8%8B%E8%87%AA%E5%B7%B1%E5%B9%B3%E6%97%B6%E6%89%BE%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E7%9A%84%E6%B5%81%E7%A8%8B/",
+      "detailPath": "articles/2aaa84bdf0ac4e65bffe3fe3.json"
+    },
+    {
+      "id": "bfeaf9778f0073c833f13421",
+      "title": "Funkwhale 手动安装与管理笔记",
+      "summary": "安装卸载安装卸载停用重启停用重启……",
+      "image": null,
+      "publishedAt": "2022-05-14T14:16:12Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/funkwhale-installation-and-management/",
+      "detailPath": "articles/bfeaf9778f0073c833f13421.json"
+    },
+    {
+      "id": "a85b39a83fc455c94afefe73",
+      "title": "随便聊聊「虎年第一杯喝什么」这个活动",
+      "summary": "影响我选择用「新年签」这个形式的另一个原因是，一直没听说我司今年有做新年签的活动，所以想着那我来做一个吧。",
+      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/milktea-2022-animation.gif",
+      "publishedAt": "2022-05-12T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/talk-about-what-to-drink-2022",
+      "detailPath": "articles/a85b39a83fc455c94afefe73.json"
+    },
+    {
+      "id": "e0154d4bf2d641af020bfeb1",
+      "title": "ob暖暖换装（不是）——大幅美化ob的css片段",
+      "summary": "前言 首先， 什么是css片段呢 ？ 从盘古开天辟地说起，你看到的网页，基本由三个东西组成， html、css、javascript ，它们一起被称为前端三大件 其中html控制内容，js控制行为，而css控制样式；简单比喻，html是你的身体，js是你的大脑，css就是你穿的衣服化的妆啦。 众所周知，markdown格式是富文本的对立面，只有 平平无奇、平铺线性 的 白纸黑字和标记符号 。 但是！css有一个特性，css的全称是——层叠样式表 ( C ascading S tyle S heets)，这个 层叠 的意思就是 覆盖 ，具体意思就是 后来的可以把前面的覆盖掉。 所以ob提供了一个功能，你可以直接用自定义css片段（css snippets）去覆盖在别人做好的完整css主题之上，从而 小范围地自定…",
+      "image": "https://picture-guan.oss-cn-hangzhou.aliyuncs.com/img/20220511174142.png",
+      "publishedAt": "2022-05-11T00:00:00Z",
+      "sourceId": "ecbcf87e0432fdbd",
+      "sourceTitle": "关门说话",
+      "link": "https://hugo-stack-theme-mod-six.vercel.app/2022/ob%E6%9A%96%E6%9A%96%E6%8D%A2%E8%A3%85%E4%B8%8D%E6%98%AF%E5%A4%A7%E5%B9%85%E7%BE%8E%E5%8C%96ob%E7%9A%84css%E7%89%87%E6%AE%B5/",
+      "detailPath": "articles/e0154d4bf2d641af020bfeb1.json"
+    },
+    {
       "id": "b14ece5fabd4f0ad3db046b7",
       "title": "在后冷战的文明之间",
       "summary": "其实是个作业XD 所以在内容上啰嗦了点，后来的想法几乎是一口气写文又即兴了点。。 而且还有挺多没说的。 比如我不喜欢国际政治，怎么说呢……太非人了。就感觉人类以万和亿为单位被归成了一堆资源能源、军事武器、金钱经济、冠冕堂皇、虚张声势的博弈论。 还有现代化和西方化的区别问题。亨廷顿虽然没说民主平等是西方特点，但他倒直说了法治、多元、个人主义、代议机构（几乎相当于民主）是西方特点，而且又强烈否认这些是“普世价值观”，也就是说，这些不是现代化特点。这妥当吗？那中国和伊斯兰的文明特点是什么呢？莫非一个是威权和搞钱一个是宗教和暴力？难道民主法治自由平等成为当今世界普遍接受的概念（虽然各国表述不同内涵不一），唯一的原因是西方霸权？难道中国和伊斯兰持续提高其经济军事实力、增加其人口数量，未来的世界就会是威权和宗教的天下？…",
@@ -571,94 +659,6 @@
       "sourceTitle": "Owen的博客",
       "link": "https://www.owenyoung.com/blog/books/too-old-to-understand",
       "detailPath": "articles/01464cb68723e7336cd8adf5.json"
-    },
-    {
-      "id": "5d3872b97b8f1ccddf1632e8",
-      "title": "叁拾一周：No.30",
-      "summary": "这是「叁拾一周」第三十期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 361 位。我的下一个目标是 399。 30 期，300 人订阅，对我来说，都是里程碑指标。我痴迷 3 这一数字，追溯历史，起因很幼稚，但随着年纪渐长，不断赋予它新意义，直到今天，3 已经超过它本来承载的内容，足以代表生命某些阶段。也因此，我一直设法保持距离，一旦突破 30 期，还没有满意的作品呈现，对于我来说，是失败的。这篇文章写在 2022 年 2 月 22 日，农历壬寅年正月二十二，一个很二的日子，我正在纠结我的 30 期，应该写些什么，才能让 30 赋予我生命某种意义。 最后，我决定，写一些很小的东西。比如，走快一点。 行动 我认识各种领导，也因机缘巧合，见过一些级别不低的领导。关于领导，有好有坏，评价不一。我也有喜欢的，有讨厌…",
-      "image": null,
-      "publishedAt": "2022-02-22T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/02/newsletter-030/",
-      "detailPath": "articles/5d3872b97b8f1ccddf1632e8.json"
-    },
-    {
-      "id": "e8a21b641c61ffe52bec6b96",
-      "title": "从 GitLab 开始的全新 DevOps 之旅",
-      "summary": "GitHub 终究还是个 Hub ——中心化的服务。即使它是全球最大的代码托管平台，无论是出于 DMCA 之类的法律原因导致自己辛苦编制的代码被删除（参见 GitHub DMCA Repository ），抑或是因为些许其他不可描述的因素导致心血资源的消失，这些都是将代码部署在如 GitHub 这样的公共平台上可能发生的恶性事件。",
-      "image": null,
-      "publishedAt": "2022-02-20T10:52:28Z",
-      "sourceId": "06aa2ffd92b9d263",
-      "sourceTitle": "糖菓·部落",
-      "link": "https://candinya.com/posts/hello-gitlab/",
-      "detailPath": "articles/e8a21b641c61ffe52bec6b96.json"
-    },
-    {
-      "id": "f9ca079c49e9ecad466b2988",
-      "title": "单兵武器",
-      "summary": "世界古代单兵手持近战冷兵器简要百科",
-      "image": null,
-      "publishedAt": "2022-02-19T05:38:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/3/",
-      "detailPath": "articles/f9ca079c49e9ecad466b2988.json"
-    },
-    {
-      "id": "a0303c866d5788f8e5de705f",
-      "title": "陽春白雪：夢遊記",
-      "summary": "[音 Game] [陽春白雪] 上歷史排行榜第一名啦哇哈哈（沒 夢遊記 初見 https://www.hgapms.com/works/view/1533",
-      "image": "https://microblog.ttheng.com/blog/5sOH0ozQLHZBRIiYAGUZDg.jpg",
-      "publishedAt": "2022-02-18T03:51:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/lyrica-sleepwalking/",
-      "detailPath": "articles/a0303c866d5788f8e5de705f.json"
-    },
-    {
-      "id": "c6593cb4aa5620ecefe22996",
-      "title": "做自己的英雄",
-      "summary": "我们的痛苦源于欲望与能力的不符。",
-      "image": "https://blog.drpika.com/posts/images/bg.jpg",
-      "publishedAt": "2022-02-16T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2022-02-16",
-      "detailPath": "articles/c6593cb4aa5620ecefe22996.json"
-    },
-    {
-      "id": "d8e2e19eb8c0895e31eb1327",
-      "title": "做自己的英雄",
-      "summary": "我们的痛苦源于欲望与能力的不符。",
-      "image": "https://blog.drpika.com/posts/images/bg.jpg",
-      "publishedAt": "2022-02-16T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2022-02-16",
-      "detailPath": "articles/d8e2e19eb8c0895e31eb1327.json"
-    },
-    {
-      "id": "b6ac62d41e2e29cece317bba",
-      "title": "關於同理心",
-      "summary": "某堂課程的教授給我們看了 這部影片 。 它讓我想起了社運人士。我們常看到在媒體鎂光燈下出現、自稱想要推動某些良善政策的社運人士，究竟是以哪種思維對待他們說要解決的社會問題呢？Sympathy（同情心）還是 Empathy（同理心）？ 從最近臺灣好幾個走鐘的社運看來，如果是用 Sympathy 想事情的話，那做出來的「社會運動」並不會對社會有好處，甚至可能有害（如造成「永續社運」虛耗社會資源）。 當然這部影片更直接的好處是如何教大家面對憂鬱症患者啦。 老實說如果真的研究華文翻譯用詞的字源與字義的話，其實 Empathy 用「同 情 心」（我懂你的 感受 ）翻譯而 Sympathy 用「同 理 心」（我懂你面對 什麼事情 但我未必了解你對此的感受）翻譯似乎比較恰當？（笑）",
-      "image": null,
-      "publishedAt": "2022-02-10T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/about-empathy/",
-      "detailPath": "articles/b6ac62d41e2e29cece317bba.json"
-    },
-    {
-      "id": "1fd6b3145a6ad95331da40cb",
-      "title": "叁拾一周：No.29",
-      "summary": "这是「叁拾一周」第二十九期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 348 位。我的下一个目标是 399。 昨天休假，没有上班，一方面是春节期间日程安排地满满当当，想给自己一个缓冲；另一方面是家里的人类幼崽，麻酱爱好者，过三岁生日，陪他玩了一天。长假很容易改变一个人的精神状态，准备假期以及假期之后的后遗症，尤其像新年这种，又是长假，又是传统节日，还是立 Flag 的好时期，更容易让人的精神陷入某种极端。适当的缓冲，不失为一个好方法。 今天的主题，就想聊一聊缓冲。 缓冲 在 第七期 通讯中，聊过一点关于独处的话题。当时话说了一半，留了一个尾巴。那一期中，我提到独处可能是一个伪命题，但适当的独处也是必要的，只是我们要做好选择。如果你拿着「选择」这把钥匙来观察这份通讯，会发现一切的话题都围绕着「我们如何做选…",
-      "image": null,
-      "publishedAt": "2022-02-08T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/02/newsletter-029/",
-      "detailPath": "articles/1fd6b3145a6ad95331da40cb.json"
     }
   ]
 }

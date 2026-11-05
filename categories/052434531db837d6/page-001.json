@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "fc0134e28be846de53b668f1",
+      "title": "datasette-llm 0.1a10",
+      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
+      "image": null,
+      "publishedAt": "2026-11-04T15:26:02Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+      "detailPath": "articles/fc0134e28be846de53b668f1.json"
+    },
+    {
+      "id": "af714fdebfb43b9b3f15e91c",
+      "title": "datasette-apps 0.3a0",
+      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from th…",
+      "image": null,
+      "publishedAt": "2026-11-04T00:29:36Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+      "detailPath": "articles/af714fdebfb43b9b3f15e91c.json"
+    },
+    {
+      "id": "35c88f76a85de73b155bd976",
+      "title": "datasette-agent 0.5a0",
+      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with datasette-apps this means you can prompt a database-backed app into existence and then modify it from…",
+      "image": "https://static.simonwillison.net/static/2026/datasette-agent-panel.webp",
+      "publishedAt": "2026-11-03T23:13:45Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+      "detailPath": "articles/35c88f76a85de73b155bd976.json"
+    },
+    {
+      "id": "5b0588942a8379f7237c70d4",
+      "title": "llm 0.37.1",
+      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
+      "image": null,
+      "publishedAt": "2026-11-03T21:41:42Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/3/llm/",
+      "detailPath": "articles/5b0588942a8379f7237c70d4.json"
+    },
+    {
       "id": "ecdc66e285fdc017d4466ab6",
       "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
       "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights o…",
@@ -285,50 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
       "detailPath": "articles/d07ac50e22d98abe506d9d7f.json"
-    },
-    {
-      "id": "a2a33372b64e439e1d08ed82",
-      "title": "Donating Agent Skills to the Agentic AI Foundation",
-      "summary": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Pr…",
-      "image": null,
-      "publishedAt": "2026-10-22T18:09:56Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
-      "detailPath": "articles/a2a33372b64e439e1d08ed82.json"
-    },
-    {
-      "id": "409f78963987cf6b1ea31098",
-      "title": "Quoting Armin Ronacher",
-      "summary": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. — Armin Ronacher Tags: security , generative-ai , armin-ronacher , ai , ai-security-research , llms",
-      "image": null,
-      "publishedAt": "2026-10-22T15:34:13Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
-      "detailPath": "articles/409f78963987cf6b1ea31098.json"
-    },
-    {
-      "id": "262f84b18919cdfeadb1b2a8",
-      "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-      "summary": "Today's PHP Security Release, and How We're Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process. This post from the PHP F…",
-      "image": null,
-      "publishedAt": "2026-10-21T18:41:53Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-      "detailPath": "articles/262f84b18919cdfeadb1b2a8.json"
-    },
-    {
-      "id": "24066914cabd87b3e6099397",
-      "title": "Panache — RTS Belle Époque pour mobile",
-      "summary": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork by Gabriel Turpin which reskins the game to take place in steampunk 1900s France and adds an animated intro! Panache est un jeu de stratégie en temps réel pour mobile et navigateur, dans la…",
-      "image": "https://static.simonwillison.net/static/2026/battledrones-french.jpg",
-      "publishedAt": "2026-10-21T16:25:16Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/21/panache/",
-      "detailPath": "articles/24066914cabd87b3e6099397.json"
     }
   ]
 }

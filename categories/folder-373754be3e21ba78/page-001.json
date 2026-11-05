@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "d2b03235e7a9bc17a9d77e07",
+      "title": "Wednesday, November 4th, 2026",
+      "summary": "# Not broken, just different Yesterday was a BIG day: I had my assessment for ADHD and received confirmation of what we suspected, that I do indeed have it. I had assumed that I just had the inattentive type, but various behaviours I hadn't considered mean that I also exhibit the hyperactive type. The resultant diagnosis is, therefore, Combined ADHD. Over t…",
+      "image": null,
+      "publishedAt": "2026-11-05T00:00:00Z",
+      "sourceId": "5e55ec79d7dd8ce2",
+      "sourceTitle": "Colin Walker — Daily Feed",
+      "link": "https://colinwalker.blog/?date=2026-11-04",
+      "detailPath": "articles/d2b03235e7a9bc17a9d77e07.json"
+    },
+    {
+      "id": "695ff397eb460346b194a93d",
+      "title": "This Is Something You Need To Know About Yourself",
+      "summary": "A couple of years ago I was giving a talk somewhere. I forget where exactly, but I remember what happened after because I let myself down. I was pretty tired—it had been a long flight the day before and I was getting over a cold. I walked backstage and said thank you to the organizers and got ready to go. “Could we take a picture?” they asked. Of course, I…",
+      "image": "https://ryanholiday.net/wp-content/uploads/2026/11/Ryan_in_AUS_110426.jpg",
+      "publishedAt": "2026-11-04T19:38:36Z",
+      "sourceId": "e0223bfec59fd1f9",
+      "sourceTitle": "RyanHoliday.netRyanHoliday.net | Meditations on strategy and life",
+      "link": "https://ryanholiday.net/this-is-something-you-need-to-know-about-yourself/",
+      "detailPath": "articles/695ff397eb460346b194a93d.json"
+    },
+    {
+      "id": "319d43dbacdff635dff63e90",
+      "title": "“It Gives Great Demo”",
+      "summary": "There’s that famous video of Steve Jobs explaining why they don’t didn’t make touchscreen MacBooks: We thought about [a touch screen MacBook] years ago. We’ve done tons of user testing on this and it turns out it doesn’t work! Touch surfaces don’t want to be vertical. It gives great demo. But after a short period of time, you start to fatigue. And after an…",
+      "image": null,
+      "publishedAt": "2026-11-04T19:00:00Z",
+      "sourceId": "fafb02ce167dbe9e",
+      "sourceTitle": "Jim Nielsen’s Blog",
+      "link": "https://blog.jim-nielsen.com/2026/it-gives-great-demo/",
+      "detailPath": "articles/319d43dbacdff635dff63e90.json"
+    },
+    {
+      "id": "fc0134e28be846de53b668f1",
+      "title": "datasette-llm 0.1a10",
+      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
+      "image": null,
+      "publishedAt": "2026-11-04T15:26:02Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+      "detailPath": "articles/fc0134e28be846de53b668f1.json"
+    },
+    {
+      "id": "af714fdebfb43b9b3f15e91c",
+      "title": "datasette-apps 0.3a0",
+      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Agent chat messages by typing # , which autocompletes from th…",
+      "image": null,
+      "publishedAt": "2026-11-04T00:29:36Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+      "detailPath": "articles/af714fdebfb43b9b3f15e91c.json"
+    },
+    {
       "id": "bc30a033aa762332288a053a",
       "title": "Thursday, October 29th, 2026",
       "summary": "# Things have been a bit quiet round here for one reason or another, but I couldn't let today pass without the annual reminder to \" choose the web you want \" rather than just falling into big tech defaults. Whatever you do on the internet, do it on your own terms. Own your data and identity.",
@@ -12,6 +67,17 @@
       "detailPath": "articles/bc30a033aa762332288a053a.json"
     },
     {
+      "id": "35c88f76a85de73b155bd976",
+      "title": "datasette-agent 0.5a0",
+      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with datasette-apps this means you can prompt a database-backed app into existence and then modify it from…",
+      "image": "https://static.simonwillison.net/static/2026/datasette-agent-panel.webp",
+      "publishedAt": "2026-11-03T23:13:45Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+      "detailPath": "articles/35c88f76a85de73b155bd976.json"
+    },
+    {
       "id": "8196a07c674d242e1083edf7",
       "title": "Laggy Legs",
       "summary": "My Apple Watch records more than pace and heart rate. While I run, it also measures running dynamics: how long each foot stays on the ground, how long my stride is, how much I bounce, and an estimate of my power. I never looked at those numbers. This week I set up a new centralised store of all my Health data, enabling me to put three marathons side by side…",
@@ -21,6 +87,17 @@
       "sourceTitle": "Willem's Blog",
       "link": "https://willem.com/en/2026-11-04_laggy-legs/",
       "detailPath": "articles/8196a07c674d242e1083edf7.json"
+    },
+    {
+      "id": "5b0588942a8379f7237c70d4",
+      "title": "llm 0.37.1",
+      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
+      "image": null,
+      "publishedAt": "2026-11-03T21:41:42Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/3/llm/",
+      "detailPath": "articles/5b0588942a8379f7237c70d4.json"
     },
     {
       "id": "ecdc66e285fdc017d4466ab6",
@@ -263,17 +340,6 @@
       "sourceTitle": "Shtetl-Optimized",
       "link": "https://scottaaronson.blog/?p=10270",
       "detailPath": "articles/f1c7e02fc8aa6a5cd831dde8.json"
-    },
-    {
-      "id": "bb27a5c7c52d3ecc9ea99966",
-      "title": "Saturday, October 10th, 2026",
-      "summary": "# I think I've just fixed a bug with the <source:markdown> element in the RSS feed not getting populated. Testing works when run directly — this post will test it's also okay when getting triggered by a new post. Update Looking good. 👍",
-      "image": null,
-      "publishedAt": "2026-10-31T00:00:00Z",
-      "sourceId": "5e55ec79d7dd8ce2",
-      "sourceTitle": "Colin Walker — Daily Feed",
-      "link": "https://colinwalker.blog/?date=2026-10-10",
-      "detailPath": "articles/bb27a5c7c52d3ecc9ea99966.json"
     },
     {
       "id": "3d521909652590247912cebb",
@@ -593,72 +659,6 @@
       "sourceTitle": "Brennan’s Weblog",
       "link": "https://brennan.day/where-the-sidewalk-ends/",
       "detailPath": "articles/c0d83eb7b858da9fcdbd3deb.json"
-    },
-    {
-      "id": "116cacb106e33122bcbf6854",
-      "title": "Vote! (Israeli edition)",
-      "summary": "Someone writing an article for the Israeli press about “people abroad who love Israel but might be worried” emailed me the following questions: “1. What is something about Israel that you admire/appreciate over the years? 2. What are you worried the most about Israel these days?” So I replied as follows: “It’s hard to know […]",
-      "image": null,
-      "publishedAt": "2026-10-25T21:54:26Z",
-      "sourceId": "b0b19bdb9833a622",
-      "sourceTitle": "Shtetl-Optimized",
-      "link": "https://scottaaronson.blog/?p=10235",
-      "detailPath": "articles/116cacb106e33122bcbf6854.json"
-    },
-    {
-      "id": "2cc53e8e0da7d0333d543489",
-      "title": "Why My Dad Didn’t Have a Cell Phone",
-      "summary": "Here’s Dave Rupert writing about all those emails, texts, phone calls, etc. we’re getting these days: Once upon a time it had utility, now it’s all noise and grifter slop demanding our attention and giving us to-dos That last part really hit: “giving us to-dos”. I feel this. So many of the messenger apps on my phone are other people laying claim to my time…",
-      "image": null,
-      "publishedAt": "2026-10-25T19:00:00Z",
-      "sourceId": "fafb02ce167dbe9e",
-      "sourceTitle": "Jim Nielsen’s Blog",
-      "link": "https://blog.jim-nielsen.com/2026/why-dad-didnt-have-cellphone/",
-      "detailPath": "articles/2cc53e8e0da7d0333d543489.json"
-    },
-    {
-      "id": "18ebf66ab3feff206c3728d5",
-      "title": "Seam Cutter",
-      "summary": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image. I wanted this because I often use Tailor on my iPhone to stitch several screenshots together into lot lo…",
-      "image": null,
-      "publishedAt": "2026-10-25T15:10:19Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
-      "detailPath": "articles/18ebf66ab3feff206c3728d5.json"
-    },
-    {
-      "id": "0ae8392043cd78f8a6cb8229",
-      "title": "AI shows up at night",
-      "summary": "Since this summer I build software together with AI agents, and I noticed something: I keep going later into the evening. But not against my will! Every evening there is a new possibility to experiment with, and I want to see what is possible before I close the lid. The question is whether that feeling is real, or just a gut feeling. I have worn a WHOOP ban…",
-      "image": "https://willem.com/global/images/87ad6832918f.webp",
-      "publishedAt": "2026-10-24T22:00:00Z",
-      "sourceId": "da4f8168d47b2b2a",
-      "sourceTitle": "Willem's Blog",
-      "link": "https://willem.com/en/2026-10-25_ai-shows-up-at-night/",
-      "detailPath": "articles/0ae8392043cd78f8a6cb8229.json"
-    },
-    {
-      "id": "3b5ba7901be42c97d4df4585",
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players c…",
-      "image": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg",
-      "publishedAt": "2026-10-24T03:59:57Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/24/battledrones/",
-      "detailPath": "articles/3b5ba7901be42c97d4df4585.json"
-    },
-    {
-      "id": "ab926643ccfab1e35bfc4e72",
-      "title": "Quick Study",
-      "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no ext…",
-      "image": "https://static.simonwillison.net/static/2026/heron-oil.webp",
-      "publishedAt": "2026-10-23T21:35:13Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-      "detailPath": "articles/ab926643ccfab1e35bfc4e72.json"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "d7c257642b735544086b3932",
+      "title": "2023 letter",
+      "summary": "(This piece is my year in review; here’s my letter from 2022) I. Walking The trunk of an elephant might feel cool to the touch. Not what one expects, perhaps, from 200 pounds of writhing muscle, strong enough to uproot a tree, which tapers down to two “fingers,” giving it enough delicacy to detect the […] The post 2023 letter appeared first on Dan Wang .",
+      "image": "https://i0.wp.com/danwang.co/wp-content/uploads/2024/01/elephant.jpg?resize=700%2C1050&ssl=1",
+      "publishedAt": "2024-01-23T20:30:07Z",
+      "sourceId": "0346b84ec470e082",
+      "sourceTitle": "Dan Wang",
+      "link": "https://danwang.co/2023-letter/",
+      "detailPath": "articles/d7c257642b735544086b3932.json"
+    },
+    {
       "id": "ff94c5c91351ed2fe2a6697b",
       "title": "「挺」的中古三字",
       "summary": "RIME 给 BYVoid 说是「神级输入法」，这话还在主页耍拉子哩。一看才知是 2012 年写的，发了老半天哩，奈会子黄雀飞做黄码用的都不是 RIME。贾的圈子看的是人人都做编码哩蛮，实际都听梆声哩，隔三间五赶群里「这个方案好，这个以外都不行」或「咨们不直接用那个」，轻飘得很。 切韵拼音有了之后，SyiMyuZya 做了 切韵拼音三拼输入方案 ，和切韵拼音不搭腔。看见奈会一猛子想起挺（人名）的中古三字也是先有拼音。看着两面个文档思谋一下，还是用了挺的方案，scheme 在群里面，没在 GitHub。原 scheme 屏显挺的全拼，用的潘悟云音系，粗奘奘地转写，嫌难看哩，换了音韵地位。选单窄的哩，多字词又长，音韵地位不能一搭写，比方 例 字 qieyun-js 的写法是来开三祭去，就成个 來ᵏ³祭꜄ 。",
@@ -648,17 +659,6 @@
       "sourceTitle": "⌘I",
       "link": "https://blog.gingerbeardman.com/2023/11/26/easter-egg-emoji-converting-pixels-into-particles/",
       "detailPath": "articles/e01d51c393374a77af0f500c.json"
-    },
-    {
-      "id": "94f53f41c04eaf5a5a3eb8f2",
-      "title": "macOS 按域名切换 DNS 解析",
-      "summary": "在工作用的电脑上，为了访问公司内网，需要让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器。 之前我一直使用 dnsmasq 实现按域名切换解析，这样的话有几个问题： dnsmasq 的默认上游是静态配置，并不是在所有网络环境中都能直接用 114 了事，尤其是在一些需要认证的环境中 需要改系统的 DNS 配置，同时每次系统更新之后又要重新改一遍 直到昨天我才知道 BSD 系支持一个按域名设置 resolver 的功能 ( man 5 resolver )，直接用就好了。",
-      "image": null,
-      "publishedAt": "2023-11-26T00:00:00Z",
-      "sourceId": "1a53726dacd05db7",
-      "sourceTitle": "K.I.S.S",
-      "link": "https://bigeagle.me/2023/11/mac-dns-resolver/",
-      "detailPath": "articles/94f53f41c04eaf5a5a3eb8f2.json"
     }
   ]
 }

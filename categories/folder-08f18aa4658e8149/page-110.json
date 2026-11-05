@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "22e9964236514ea3ddc78948",
+      "title": "中国的防火长城自2023年10月1日起封锁了1.1.1.1",
+      "summary": "自 2023 年 10 月 1 日起，已有 许多 报告 称中国开始屏蔽 1.1.1.1 。 在 Net4People的另一篇帖子 的讨论中提到，中国在 2023 年 9 月 5 日至 20 日期间通过注入 TCP RST 包来阻断 1.1.1.1:443 。 主要观察结果 以下是我们在 2023 年 10 月 1 日，从腾讯云北京（ AS45090 ）的一台 VPS 上的观察： 与 @5e2t 的观察不同，我们未能在 1.1.1.1:443 上看到 TCP RST 注入。尤其是，我们能够使用 curl -v https://1.1.1.1 成功获取完整网页。这表明此次新的审查事件在不同地理位置或不同 AS 之间存在不一致性。 我们观察到， 1.1.1.1 的 TCP 端口 80 有可能被注入 \"302 Mov…",
+      "image": "https://github.com/net4people/bbs/assets/58831149/257a8190-2fc6-4a6b-a204-1868291a3ebf",
+      "publishedAt": "2023-10-01T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/blocking_of_1111/zh/",
+      "detailPath": "articles/22e9964236514ea3ddc78948.json"
+    },
+    {
       "id": "8b578729c29c35fd89ab8e95",
       "title": "极速聊 Nintendo Direct 230914",
       "summary": "意料之中的中规中矩，偶有像《圣兽之王》这样的惊喜，但完全可以预料的是接下来到明年年中的第一方阵容都不会有太大的惊喜，因为大概率会明年底发售新机。",
@@ -114,7 +125,7 @@
       "id": "913dd0d94b307ddc847ae0cd",
       "title": "后极权社会：为何在大学评价上撒谎",
       "summary": "文凭系统是后极权主义的权力组织，由谎言支撑的意识形态组成。",
-      "image": null,
+      "image": "https://prologue.dev/og?title=%E5%90%8E%E6%9E%81%E6%9D%83%E7%A4%BE%E4%BC%9A%EF%BC%9A%E4%B8%BA%E4%BD%95%E5%9C%A8%E5%A4%A7%E5%AD%A6%E8%AF%84%E4%BB%B7%E4%B8%8A%E6%92%92%E8%B0%8E&date=2023-09-08T00%3A00%3A00.000Z&read=%E7%BA%A6+2+%E5%88%86%E9%92%9F&v=4&tags=Politics%2CEducation",
       "publishedAt": "2023-09-08T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -521,7 +532,7 @@
       "id": "2ea6c613ebd949fcbcbabd9c",
       "title": "选民的“觉醒”",
       "summary": "取消文化是觉醒资本主义的逻辑。",
-      "image": null,
+      "image": "https://prologue.dev/og?title=%E9%80%89%E6%B0%91%E7%9A%84%E2%80%9C%E8%A7%89%E9%86%92%E2%80%9D&date=2023-07-27T00%3A00%3A00.000Z&read=%E7%BA%A6+2+%E5%88%86%E9%92%9F&v=4&tags=Politics%2CCapitalism%2CGender",
       "publishedAt": "2023-07-27T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -648,17 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/syncthing/",
       "detailPath": "articles/a9f2ee9ad7b51ac9db3e3b43.json"
-    },
-    {
-      "id": "435bfe1bd54c21fde2349de9",
-      "title": "特斯拉 Model Y 试驾",
-      "summary": "去年因为一些原因，大热荒野（一个营地）送了我一次拎包入住的露营。正好最近连续进山，感觉在炎热的北京，似乎山里是一个很好的世外桃源。上周去了水泉沟，一个必须要二刷、三刷的地方。这周索性决定去一下大热荒野。 营地在房山，一个山顶，对于北京无号家庭，期望摇号这件事已经等于放弃。目前的方案是计划租一个合适的汽车指标，买一辆二手车就 OK 了，但是在选择上，十一（甚至是我）很喜欢理想的 L7，科技向的我自然不可能放弃特斯拉。最近半年左右，差不多把目前的新能源汽车看了一遍，各有特色，但出彩的不多。看了半年车，我甚至想找一份新能源汽车的工作了，这个东西的可玩性还是很强的。 所以，周末决定租一辆我心心念的特斯拉 Model Y，进山去玩玩。两天时间，开了 164 公里，充电费用几乎可以忽略不计（在山姆的国网充电，电费和服务费…",
-      "image": null,
-      "publishedAt": "2023-07-17T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2023/07/test-drive-model-y/",
-      "detailPath": "articles/435bfe1bd54c21fde2349de9.json"
     }
   ]
 }

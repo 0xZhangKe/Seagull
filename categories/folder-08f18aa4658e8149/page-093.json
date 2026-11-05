@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "3ce43a4e45ceccd4fcf4ab72",
+      "title": "Jekyll 更改 RSS 模版文件以验证 follow 阅读器",
+      "summary": "前言 最近在 Patrick 的邀请下尝试了一下 follow 阅读器 ，除了浓浓的 Web3 气息外，其它各方面都算得上相当优秀的产品。阅读器还支持验证订阅源的所有权，不过需要在 RSS 输出上进行操作，这里就写一篇粗浅的教程。 所有权验证 follow 阅读器验证博客的所有权是需要在 RSS 源里额外增加用于验证的 <follow_challenge> 标签，这个标签里包含 <feedId> <userId> 两个元素。 Jekyll 可以通过更改 RSS 模版文件来实现。Jekyll 的 RSS 模版文件一般在根目录，文件名是 feed.xml 。我这边是在 <description> 和 <link> 之间添加了 <follow_challenge> 标签。修改完成之后的代码如下： <descript…",
+      "image": null,
+      "publishedAt": "2024-12-08T16:00:00Z",
+      "sourceId": "f758efe5e14ba931",
+      "sourceTitle": "瓠樽",
+      "link": "https://blog.dylanwu.space/2024/12/09/jekyll-rss-add-element-to-verity-follow-reader.html",
+      "detailPath": "articles/3ce43a4e45ceccd4fcf4ab72.json"
+    },
+    {
       "id": "0c123611530a8a702966fc23",
       "title": "12月周记二",
       "summary": "外卖风波 因为小区是人车分流加梯控的管理，地面上不让进任何车辆，包括自行车都不让骑，所以这俩年外卖一直也都是我下去自己拿上楼，然后从围栏上递进来，直到下午才知道，原来一直是可以送到电梯里的，需要在地址上备注清楚放在电梯里，于是乎试了试，结果骑手刚接单就打电话过来说「你们小区不让外卖员进，你得自己到小区门口来拿」，我反问他为什么别人都可以给送，外卖员说，小区不让骑车，就是不给送，好吧，我只能退款，退款理由写的外卖员拒绝配送，过了五分钟，外卖员打电话来说可以送了…感觉好好给他讲道理，人家反而会认为是好欺负。 卖废品 我终于把攒了一年的纸箱子卖了，物业今天有活动，纸箱子送去物业0.7元/一斤，还送一包洗衣粉，这个活动我猜是为了清理一些楼梯里的杂物纸箱子什么的，直接给业主扔了的话，有的业主会到处投诉，还不如高于市场价…",
@@ -422,7 +433,7 @@
       "id": "9eb73942b9b881506db6acff",
       "title": "2024年的诺贝尔经济学奖是不值一提的",
       "summary": "在诺贝尔经济学奖至今为止的56次颁发中，今年或许是最令人失望的一届。",
-      "image": "https://prologue.dev/static/images/why_nations_fail01.png",
+      "image": "https://prologue.dev/og?title=2024%E5%B9%B4%E7%9A%84%E8%AF%BA%E8%B4%9D%E5%B0%94%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%A5%96%E6%98%AF%E4%B8%8D%E5%80%BC%E4%B8%80%E6%8F%90%E7%9A%84&date=2024-12-01T00%3A00%3A00.000Z&read=%E7%BA%A6+12+%E5%88%86%E9%92%9F&v=4&tags=Economics%2CPolitics%2CInequality",
       "publishedAt": "2024-12-01T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -648,17 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/line-clickbait",
       "detailPath": "articles/eef3fe057409a49171b4a7c2.json"
-    },
-    {
-      "id": "813a06badfc42f41edbd191c",
-      "title": "React + NestJS 购物平台练习【4】用户注册功能",
-      "summary": "本文是 React + NestJS 全栈购物平台实践的第四篇，专注于实现完整的用户注册与邮箱验证功能。前端部分，教程详细讲解了如何使用 Formik 和 Yup 构建带实时校验的注册表单，并通过 Zustand 进行全局状态管理。后端部分，则深入实现了用户注册 API，涵盖了密码的 bcrypt 加密、数据库操作，并集成了邮件服务以发送验证链接。此外，文章还分享了开发过程中遇到的 BUG 及其解决方案，为构建一个安全、可靠的用户认证流程提供了详尽的实战指导。",
-      "image": null,
-      "publishedAt": "2024-11-28T05:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/8853.html",
-      "detailPath": "articles/813a06badfc42f41edbd191c.json"
     }
   ]
 }

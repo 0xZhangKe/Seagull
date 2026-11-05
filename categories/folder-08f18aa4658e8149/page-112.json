@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "763605f112258fd7331fec98",
+      "title": "当 App 有了系统权限，真的可以为所欲为？",
+      "summary": "前一段时间有个 App 很火，是 Android App 利用了 Android 系统漏洞，获得了系统权限，做了很多事情。想看看这些个 App 在利用系统漏洞获取系统权限之后，都干了什么事，于是就有了这篇文章。由于准备仓促，有些 Code 没有仔细看，感兴趣的同学可以自己去研究研究，多多讨论，对应的文章和 Code 链接都在下面： 深蓝洞察：2022 年度最 “不可赦” 漏洞 XXX apk 内嵌提权代码，及动态下发 dex 分析 Android 反序列化漏洞攻防史话 关于这个 App 是如何获取这个系统权限的， Android 反序列化漏洞攻防史话 ，这篇文章讲的很清楚，就不再赘述了，我也不是安全方面的专家，但是建议大家多读几遍这篇文章",
+      "image": null,
+      "publishedAt": "2023-05-14T12:15:17Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2023/05/14/bad-android-app-with-system-permissions/",
+      "detailPath": "articles/763605f112258fd7331fec98.json"
+    },
+    {
       "id": "84cace6c1558af9aa2f6bc2b",
       "title": "一卷迷茫",
       "summary": "16岁（猫大人的黑历史 2）",
@@ -70,7 +81,7 @@
       "id": "456c74c0465c5a6595ad85b2",
       "title": "浅谈效率成瘾",
       "summary": "工具理性和路径依赖性，目标导向和效率幻觉",
-      "image": null,
+      "image": "https://prologue.dev/og?title=%E6%B5%85%E8%B0%88%E6%95%88%E7%8E%87%E6%88%90%E7%98%BE&date=2023-05-09T00%3A00%3A00.000Z&read=%E7%BA%A6+3+%E5%88%86%E9%92%9F&v=4&tags=Capitalism%2CSociology%2CEconomics",
       "publishedAt": "2023-05-09T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -235,7 +246,7 @@
       "id": "3cbf98719d91a095aff0d5fc",
       "title": "重温叙事经济学和非理性繁荣",
       "summary": "叙事经济学和非理性繁荣阐述了现实中的经济学，叙事造就了非理性的繁荣。每个人都想在危机来临之前全身而退，但人总是侥幸却不敢承认自己做不到的事实。",
-      "image": "https://prologue.dev/static/images/market_crash.png",
+      "image": "https://prologue.dev/og?title=%E9%87%8D%E6%B8%A9%E5%8F%99%E4%BA%8B%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%92%8C%E9%9D%9E%E7%90%86%E6%80%A7%E7%B9%81%E8%8D%A3&date=2023-04-12T00%3A00%3A00.000Z&read=%E7%BA%A6+3+%E5%88%86%E9%92%9F&v=4&tags=Economics%2CFinance%2CCrypto",
       "publishedAt": "2023-04-12T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -609,7 +620,7 @@
       "id": "6a3865f9b12bed49668ba39d",
       "title": "从Next.js到Astro：更简单的网站搭建方案",
       "summary": "一次不过不失的折腾。",
-      "image": "https://prologue.dev/static/images/islands-architecture-1.png",
+      "image": "https://prologue.dev/og?title=%E4%BB%8ENext.js%E5%88%B0Astro%EF%BC%9A%E6%9B%B4%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88&date=2023-03-07T00%3A00%3A00.000Z&read=%E7%BA%A6+1+%E5%88%86%E9%92%9F&v=4&tags=Technology%2CMeta",
       "publishedAt": "2023-03-07T00:00:00Z",
       "sourceId": "757145dcc77dee94",
       "sourceTitle": "Prologue 序章",
@@ -648,17 +659,6 @@
       "sourceTitle": "大猫的部落格",
       "link": "https://damao.ca/posts/%E4%BA%BA%E7%94%9F%E9%98%BF%E5%B0%B1%E5%83%8F%E6%9D%A1%E9%93%BE%E8%A1%A8/",
       "detailPath": "articles/b53e471dfdfb9c54d715dce1.json"
-    },
-    {
-      "id": "0425a0c96017b3845082a276",
-      "title": "个人网盘使用经验",
-      "summary": "网盘已经是每个现代人离不开的工具，这篇文章就来介绍一下笔者是如何选择网盘、以及如何进行网盘同步、预览。 网盘选择 笔者是多年的 macOS、iOS 用户，因此之前一直使用 iCloud 进行文件的同步，它可以自动把 Desktop Documents 这两个文件夹映射到 iCloud，使用起来还算方便，但是有时会出现文件同步失败。 这个时候基本上没什么排查思路，只能靠重启电脑解决，iCloud 另一个问题就是与苹果生态严重绑定，不方便迁移平台，因此还是需要寻找个更加靠谱且跨平台的方案。 首先明确一点，国内、国外网盘的运营思路完全不同，网内基本上都是靠大规格免费空间来吸引用户，而国外网盘免费空间只有 5G 左右，如果要扩容则需要付费。 由于国内网盘开放性很差，基本上只能使用其自家客户端才能方便上传下载，因此笔者…",
-      "image": null,
-      "publishedAt": "2023-02-25T08:35:44Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2023/02/25/cloud-storage/",
-      "detailPath": "articles/0425a0c96017b3845082a276.json"
     }
   ]
 }

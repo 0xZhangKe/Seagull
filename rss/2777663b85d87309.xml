@@ -6,7 +6,275 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Thu, 05 Nov 2026 07:28:27 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Nov 2026 07:44:49 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-06 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-06-HackerNews/</link>
+      <pubDate>Fri, 06 Nov 2026 07:44:49 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-06-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-06-hacker-news-top-stories&#34;&gt;
+  2026-11-06 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-06-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Özgün Kültekin 披露 musl 与无 PAM 的 OpenSSH 组合存在认证绕过，错误返回值与账户标记“*”相撞，漏洞有明确配置前提。&lt;/li&gt;
+&lt;li&gt;Layer3 Intel 称，白宫所属 AS2650 在 30 天中有 26 天出现住宅代理出口，涉及 6 个地址、236 次观测和 28 家代理服务，但尚未定位设备。&lt;/li&gt;
+&lt;li&gt;Alpine 为 3.16 至 3.24 等分支回补 OpenSSH 认证绕过修复，强调升级后重启 sshd，未运行 SSH 的容器不在受影响范围内。&lt;/li&gt;
+&lt;li&gt;OpenAI 称，其 AI 安全管线验证了 948 个不同的 Linux 本地提权漏洞，消耗约 121 万美元 API 额度，生成的补丁仍须人工审查和上游接纳。&lt;/li&gt;
+&lt;li&gt;Go 1.27 将 encoding/json/v2 与 jsontext 转为稳定 API，默认拒绝非法 UTF-8 和重复键，部分反序列化基准最高提速 10 倍，旧 API 继续支持。&lt;/li&gt;
+&lt;li&gt;MarkBlah 的 Lemmings 用 CSS 绘制像素小人、用 JavaScript 驱动行走与碰撞，文字和按钮都能成为平台，还可拖拽、抛掷并随窗口缩放弹起。&lt;/li&gt;
+&lt;li&gt;OpenAI 发布 Images 2.6，称生成速度提升 50%，Flare 低质量档最快 6 秒，并增加 GIF、API 图像标注与 SVG 导出等创作功能。&lt;/li&gt;
+&lt;li&gt;Discord CTO 宣布客户端向 Rust 迁移，桌面端将移除 Electron、移动端保留原生 UI，早期 Windows 截图显示约 290MB 内存，尚无完整上线日期。&lt;/li&gt;
+&lt;li&gt;Ricursive 发布 Apache 2.0 开放权重 Ripple-65B Preview，使用 12 万亿 token 训练，TerminalBench 2.1 自报 80.52 分，完整研发成本称为 3,200 万美元。&lt;/li&gt;
+&lt;li&gt;《窗外的鸟》引用实验讨论 LED 较少招虫，但原作者已承认紫外线解释有误；“吸引较少”不能被改写成“昆虫不会在 LED 周围聚集”。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-ssholemusl-与-openssh-的旧兼容逻辑如何变成密码认证漏洞-sshole&#34;&gt;
+  1. sshole：musl 与 OpenSSH 的旧兼容逻辑如何变成密码认证漏洞 (sshole)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-ssholemusl-%e4%b8%8e-openssh-%e7%9a%84%e6%97%a7%e5%85%bc%e5%ae%b9%e9%80%bb%e8%be%91%e5%a6%82%e4%bd%95%e5%8f%98%e6%88%90%e5%af%86%e7%a0%81%e8%ae%a4%e8%af%81%e6%bc%8f%e6%b4%9e-sshole&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://sshhole.com&#34;&gt;https://sshhole.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安全研究员 Özgün Kültekin 用时间线追溯一个由多项兼容措施叠加造成的 SSH 认证漏洞：Unix 长期用“&lt;em&gt;”表示不能匹配正常密码的账户；musl 为避免调用方漏查空指针而在 crypt() 失败时返回“&lt;/em&gt;”；OpenSSH 为缓解用户名枚举的计时差异，又会为某些账户借用其他用户的盐值。超过 musl 密码长度限制后，错误标记可能与目标账户字段相等，错误地通过认证。&lt;/p&gt;
+&lt;p&gt;作者称，他构建 glibc、musl、PAM 与非 PAM 等不同组合，投入约 17,600 次异常登录测试，并借助 AI 代理发现行为差异。文章把问题追溯至 2016 年，说明安全问题可能藏在看似无关的库约定与历史修补之间，而不在加密算法本身。&lt;/p&gt;
+&lt;p&gt;受影响并非所有 Linux：需要 musl、未使用 PAM 的 sshd、开启密码认证、目标账户字段为“*”，且系统存在另一具有相应密码哈希的账户。默认使用 Dropbear 的设备不能仅因采用 musl 就算受影响。OpenSSH 10.6p2 已修复；关闭密码认证也是缓解方式。Alpine 官方公告进一步明确：更新包后必须重启 sshd，默认禁止 root 密码登录等配置仍会限制可利用范围。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-2221-points--评论-557-comments--投稿者josemrb--发布时间2026-11-05-201902-0800&#34;&gt;
+  HN 热度 2221 points | 评论 557 comments | 投稿者：josemrb | 发布时间：2026-11-05 20:19:02 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2221-points--%e8%af%84%e8%ae%ba-557-comments--%e6%8a%95%e7%a8%bf%e8%80%85josemrb--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-201902-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50378228&#34;&gt;https://news.ycombinator.com/item?id=50378228&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;问题来自 crypt() 的输入盐值与最终比较账户不再对应，不能只用“musl 返回星号”解释整条失效链。&lt;/li&gt;
+&lt;li&gt;把错误状态与有效数据放进同一种字符串表示，会让局部看似合理的兼容设计在组合后失去安全边界。&lt;/li&gt;
+&lt;li&gt;复现失败有时是因为安装到的包已包含修复，核对具体构建版本比只看发行版名称更可靠。&lt;/li&gt;
+&lt;li&gt;OpenWrt 默认使用的 Dropbear 与 OpenSSH 是不同实现，不能把发行版或 libc 名称直接当作受影响判据。&lt;/li&gt;
+&lt;li&gt;网络设备测试经验强调，超长密码和异常输入应属于基础验收项目，即使管理层要求加快发布也不能省略。&lt;/li&gt;
+&lt;li&gt;存在十年的代码也可能缺少对冷门配置的检验，“经过时间考验”不能替代针对组合条件的测试。&lt;/li&gt;
+&lt;li&gt;为掩盖调用方错误而加入静默兼容补丁，可能让原本明显的失败变成长期隐藏且更危险的行为。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-白宫所属网络发现住宅代理出口具体设备与人员仍未知-residential-proxies-detected-on-white-house-network&#34;&gt;
+  2. 白宫所属网络发现住宅代理出口，具体设备与人员仍未知 (Residential proxies detected on White House network)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e7%99%bd%e5%ae%ab%e6%89%80%e5%b1%9e%e7%bd%91%e7%bb%9c%e5%8f%91%e7%8e%b0%e4%bd%8f%e5%ae%85%e4%bb%a3%e7%90%86%e5%87%ba%e5%8f%a3%e5%85%b7%e4%bd%93%e8%ae%be%e5%a4%87%e4%b8%8e%e4%ba%ba%e5%91%98%e4%bb%8d%e6%9c%aa%e7%9f%a5-residential-proxies-detected-on-white-house-network&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://layer3intel.com/blog/residential-proxies-white-house-network&#34;&gt;https://layer3intel.com/blog/residential-proxies-white-house-network&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Layer3 Intel 在全球住宅代理监测中发现，美国总统行政办公室登记的 AS2650 网络出现可供公众购买的代理出口。其报告覆盖 2026 年 10 月 5 日至 11 月 3 日：监测管线经该网络成功出口 236 次，涉及 6 个地址，分布在 30 天中的 26 天；共有 28 家住宅代理服务能够提供这些出口。团队称，Spur 和 Synthient 的公开 IP 信息也将相关地址标为住宅代理。&lt;/p&gt;
+&lt;p&gt;作者解释，他们购买的是全球轮换代理服务，并非专门定向探测白宫。约一半观测发生在美国东部时间傍晚 5 点至午夜，凌晨很少，因此推测可能有常在该网络中的个人设备运行代理 SDK。但报告明确承认：数据能看到出口，不能识别实际设备或其使用者，时间分布也不足以证明具体感染来源。&lt;/p&gt;
+&lt;p&gt;风险在于，某些不安全的代理 SDK 曾被用于访问内网并横向传播；若这里也有同类缺陷，付费代理用户可能触及内部系统。这是条件性风险，报告没有展示白宫内网已被攻入或敏感资料已外泄。文章还列出圣赫勒拿等偏远地区的代理观测，说明其监测覆盖面；这些发现同样不能自动等同于已证实的设备入侵。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1244-points--评论-427-comments--投稿者rasbora--发布时间2026-11-05-044518-0800&#34;&gt;
+  HN 热度 1244 points | 评论 427 comments | 投稿者：Rasbora | 发布时间：2026-11-05 04:45:18 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1244-points--%e8%af%84%e8%ae%ba-427-comments--%e6%8a%95%e7%a8%bf%e8%80%85rasbora--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-044518-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50371246&#34;&gt;https://news.ycombinator.com/item?id=50371246&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共享公网地址与运营商级 NAT 会让代理标签影响无辜用户，单个 IP 被标记不能直接证明某台终端感染。&lt;/li&gt;
+&lt;li&gt;即使当前只观察到出售带宽，代理基础设施也可能被用于更危险的远程任务，不能仅按流量成本评估风险。&lt;/li&gt;
+&lt;li&gt;排查应结合路由器出口流量和设备实际使用时段，单看总流量可能漏掉与正常视频播放重叠的代理行为。&lt;/li&gt;
+&lt;li&gt;代理 SDK 可能经商业应用条款合法捆绑，但默认开启或埋在协议中的授权未必构成充分知情同意。&lt;/li&gt;
+&lt;li&gt;如此敏感的网络归属结论需要可检查的方法和证据，不能只依赖一家新公司的检测标签。&lt;/li&gt;
+&lt;li&gt;把代理、匿名工具和恶意活动一概而论会削弱报告可信度，识别出口与追踪使用者也是不同能力。&lt;/li&gt;
+&lt;li&gt;住宅代理的核心隐患在于用户不知情和潜在内网访问能力，讨论时仍应与主动授权的匿名代理区分。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-alpine-发布-openssh-认证绕过公告升级后还须重启服务-alpine-linux-security-advisory-openssh-server-password-authentication-bypass&#34;&gt;
+  3. Alpine 发布 OpenSSH 认证绕过公告：升级后还须重启服务 (Alpine Linux Security Advisory: OpenSSH-server password authentication bypass)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-alpine-%e5%8f%91%e5%b8%83-openssh-%e8%ae%a4%e8%af%81%e7%bb%95%e8%bf%87%e5%85%ac%e5%91%8a%e5%8d%87%e7%ba%a7%e5%90%8e%e8%bf%98%e9%a1%bb%e9%87%8d%e5%90%af%e6%9c%8d%e5%8a%a1-alpine-linux-security-advisory-openssh-server-password-authentication-bypass&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/&#34;&gt;https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alpine Linux 官方公告要求符合条件的用户更新 OpenSSH 并重启 sshd，仅升级软件包不会替换正在运行的守护进程。问题出现在不使用 PAM 的密码认证路径：当账户密码字段为“*”、机器上另有使用 $5$ 或 $6$ 哈希的账户时，musl 的哈希失败返回值可能被误判为密码匹配。公告发布时尚未分配 CVE 编号。&lt;/p&gt;
+&lt;p&gt;公告列出的受影响版本包括已检查的 Alpine 3.21—3.24、edge，以及较老的 3.16—3.20。已修复的系统点版本包括 3.21.10、3.22.8、3.23.8、3.24.4；较老分支也发布了回补包。无法立即更新时，可关闭密码认证，并在验证配置后重启服务。&lt;/p&gt;
+&lt;p&gt;影响取决于配置：不运行 sshd 的容器、已关闭密码认证的系统，以及启用 PAM 的相应服务包不受这一漏洞影响。root 默认的 prohibit-password 设置仍有保护作用。tiny-cloud 旧镜像尤其值得检查：其 alpine 用户带“*”字段和免密码 doas，首次启动可以是安全的，但随后设置其他用户的相应密码哈希可能使条件齐备。公告建议检查异常的密码登录记录；无法排除入侵时，应按可能失陷处理。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-549-points--评论-114-comments--投稿者pantalaimon--发布时间2026-11-05-224420-0800&#34;&gt;
+  HN 热度 549 points | 评论 114 comments | 投稿者：pantalaimon | 发布时间：2026-11-05 22:44:20 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-549-points--%e8%af%84%e8%ae%ba-114-comments--%e6%8a%95%e7%a8%bf%e8%80%85pantalaimon--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-224420-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50379704&#34;&gt;https://news.ycombinator.com/item?id=50379704&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为兼容漏查空指针的程序而偏离 crypt() 错误约定，可能把显式崩溃变成更难察觉的认证错误。&lt;/li&gt;
+&lt;li&gt;显式区分成功与失败的类型有助于减少哨兵值错误，但收益来自接口设计与开发惯例，而非语言名称本身。&lt;/li&gt;
+&lt;li&gt;这是字符串状态与认证控制流的逻辑缺陷，改用内存安全语言也不能自动修复同样的错误设计。&lt;/li&gt;
+&lt;li&gt;Alpine 在容器中使用广泛并不意味着所有容器都暴露漏洞，还要确认是否运行 SSH 并开启密码认证。&lt;/li&gt;
+&lt;li&gt;长期不更新基础镜像会延长漏洞暴露期，发行版已经发布修复也不代表现有部署已经获得保护。&lt;/li&gt;
+&lt;li&gt;只使用 SSH 密钥的个人习惯不足以概括风险，还需检查机器上全部账户的密码字段及认证设置。&lt;/li&gt;
+&lt;li&gt;快速发布修复和持续观察副作用值得肯定，但响应速度仍需与后续质量验证一起评估。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-openai-报告用-ai-管线验证-948-个-linux-本地提权漏洞-a-thousand-fewer-paths-to-root&#34;&gt;
+  4. OpenAI 报告用 AI 管线验证 948 个 Linux 本地提权漏洞 (A thousand fewer paths to root)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-openai-%e6%8a%a5%e5%91%8a%e7%94%a8-ai-%e7%ae%a1%e7%ba%bf%e9%aa%8c%e8%af%81-948-%e4%b8%aa-linux-%e6%9c%ac%e5%9c%b0%e6%8f%90%e6%9d%83%e6%bc%8f%e6%b4%9e-a-thousand-fewer-paths-to-root&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://openai.com/index/a-thousand-fewer-paths-to-root/&#34;&gt;https://openai.com/index/a-thousand-fewer-paths-to-root/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI 报告了一套覆盖漏洞发现、动态复现、可利用性评估、补丁生成和人工复核的研究管线。团队称，在 2026 年 10 月对 Linux 内核的一次扫描中，从 2,308 个去重候选中复现 1,724 个漏洞，获得 291 个信息泄漏概念验证，并将本地提权利用所对应的问题经变体分析归并为 948 份不同补丁。总 API 消耗为 1,213,430 美元，折合每个不同提权问题约 1,279 美元；这不是包含人工和全部基础设施的完整项目成本。&lt;/p&gt;
+&lt;p&gt;系统先筛出约 280 万行安全相关代码，再在隔离虚拟机中验证。提权测试使用正常启用多项缓解措施的桌面系统配置。文章另有缩减攻击面的 kernelCTF 类环境实验，但因兼容问题移除了 SLAB_VIRTUAL，不能把结果视为完全相同的官方环境成绩。&lt;/p&gt;
+&lt;p&gt;作者强调补丁仍需专家与维护者审查；扫描结束时，一些问题已被其他贡献者修复或讨论。早期还出现过代理靠“另一个漏洞”拿到 root 的假成功，因此后来增加独立路径核验。把结果按历史漏洞奖金折算的高回报只是条件性估算，尚非实际获奖收入。研究的启示是让自动发现配合去重、验证和修补，而非把生成报告或候选补丁等同于漏洞已消除。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-471-points--评论-351-comments--投稿者dangelosaurus--发布时间2026-11-05-073314-0800&#34;&gt;
+  HN 热度 471 points | 评论 351 comments | 投稿者：dangelosaurus | 发布时间：2026-11-05 07:33:14 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-471-points--%e8%af%84%e8%ae%ba-351-comments--%e6%8a%95%e7%a8%bf%e8%80%85dangelosaurus--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-073314-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50372929&#34;&gt;https://news.ycombinator.com/item?id=50372929&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;缺少按子系统、代码年龄和漏洞类型划分的数据，会限制外界判断结果能否推广到其他代码库。&lt;/li&gt;
+&lt;li&gt;应解释不同利用、共同根因与独立漏洞如何去重，庞大数量本身不足以说明每项发现都同样独立。&lt;/li&gt;
+&lt;li&gt;发现速度提高后，人工审查、上游合并和发行版分发可能成为瓶颈，安全收益取决于修复能否真正抵达用户。&lt;/li&gt;
+&lt;li&gt;API 额度不能代表完整研究成本，历史奖金也不保证可领取，收益比较需要计入资格限制和工程投入。&lt;/li&gt;
+&lt;li&gt;与逐个补洞并行，应讨论缩小高权限代码、隔离驱动及形式化验证等减少整类风险的设计。&lt;/li&gt;
+&lt;li&gt;持续扫描新提交并随模型升级重新检查旧代码，可能比一次性审计更接近长期维护需求。&lt;/li&gt;
+&lt;li&gt;不能因 Linux 内核漏洞很多就断言所有软件更不安全，代码规模、实现语言与自动正确性约束都会改变风险。&lt;/li&gt;
+&lt;li&gt;用户隔离、容器和虚拟机的边界都需要持续投入，不能把大家习惯绕开某一边界当作它天然无需安全保障的理由。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-go-127-稳定推出-json-v2严格解析与真正流式处理-a-new-go-api-for-json&#34;&gt;
+  5. Go 1.27 稳定推出 JSON v2：严格解析与真正流式处理 (A new Go API for JSON)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-go-127-%e7%a8%b3%e5%ae%9a%e6%8e%a8%e5%87%ba-json-v2%e4%b8%a5%e6%a0%bc%e8%a7%a3%e6%9e%90%e4%b8%8e%e7%9c%9f%e6%ad%a3%e6%b5%81%e5%bc%8f%e5%a4%84%e7%90%86-a-new-go-api-for-json&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://go.dev/blog/jsonv2&#34;&gt;https://go.dev/blog/jsonv2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Go 官方介绍，历经约六年设计、实验与反馈，encoding/json/v2 和 encoding/json/jsontext 在 Go 1.27 中成为稳定、普遍可用的标准库 API。目标不只是提速，还包括修正旧接口受兼容承诺限制而难以改变的默认行为：拒绝非法 UTF-8 与重复对象成员名、默认按大小写匹配结构体字段，并把 nil 切片与映射编码为空数组和空对象。&lt;/p&gt;
+&lt;p&gt;设计将 JSON 语法处理与 Go 类型映射分开：jsontext 负责 token 和完整值的流式读写，json/v2 处理序列化语义。新方法允许自定义类型直接使用 Encoder、Decoder，并把选项向调用链下层传递，避免旧接口要求完整缓冲、重复解析及某些递归场景中的平方级开销。调用方也能为任意类型指定编码策略。&lt;/p&gt;
+&lt;p&gt;性能并非全面十倍：官方称 Marshal 大致与旧版相当，具体场景可能略快或略慢，Unmarshal 基准中最高可改善十倍。新 omitempty 等语义可能影响现有程序，因此提供选项逐步迁移。旧 encoding/json 承诺无限期支持，并在内部借助 v2 与兼容选项维持原行为；应用没有被要求立即迁移。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-384-points--评论-199-comments--投稿者olexsmir--发布时间2026-11-05-015211-0800&#34;&gt;
+  HN 热度 384 points | 评论 199 comments | 投稿者：olexsmir | 发布时间：2026-11-05 01:52:11 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-384-points--%e8%af%84%e8%ae%ba-199-comments--%e6%8a%95%e7%a8%bf%e8%80%85olexsmir--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-015211-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50369106&#34;&gt;https://news.ycombinator.com/item?id=50369106&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jsontext 已被用于需要细致错误提示的客户输入解析，语法层与类型映射分离能服务比常规结构体解码更复杂的需求。&lt;/li&gt;
+&lt;li&gt;迁移时常用缩进操作的可发现性仍影响体验，熟悉的新接口不应要求开发者重新摸索简单任务的写法。&lt;/li&gt;
+&lt;li&gt;把 nil 自动输出为空容器可能抹去调用方依赖的区别，接口契约需要在迁移前逐项检查。&lt;/li&gt;
+&lt;li&gt;支持新默认值的一方指出，空查询结果通常应是空数组，泄露 Go 内部 nil 状态反而容易破坏 JSON 消费端约定。&lt;/li&gt;
+&lt;li&gt;序列化失败不能全部提前到编译期，非有限浮点数、自定义方法和运行时值都可能产生实际错误。&lt;/li&gt;
+&lt;li&gt;六年的落地周期体现了兼容性负担，也引出标准库基础能力改进速度是否足够快的质疑。&lt;/li&gt;
+&lt;li&gt;结合 schema 生成专门解析器和 SIMD 的思路值得探索，它试图兼顾静态类型安全与通用高性能 JSON 解析。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-lemmings-网页小人css-精灵在真实页面元素上行走-lemmings-css-animation&#34;&gt;
+  6. Lemmings 网页小人：CSS 精灵在真实页面元素上行走 (Lemmings CSS Animation)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-lemmings-%e7%bd%91%e9%a1%b5%e5%b0%8f%e4%ba%bacss-%e7%b2%be%e7%81%b5%e5%9c%a8%e7%9c%9f%e5%ae%9e%e9%a1%b5%e9%9d%a2%e5%85%83%e7%b4%a0%e4%b8%8a%e8%a1%8c%e8%b5%b0-lemmings-css-animation&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://markblah.github.io/lemmings/&#34;&gt;https://markblah.github.io/lemmings/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个名为 Lemmings 的小项目把网页本身变成像素小人的活动场景。演示页布置了楼梯、浮空平台、坑洞、卡片与可换行文本，小人会在边框、按钮、图片和文字上行走，撞到墙转向，也会掉向窗口底部。用户可以抓起、拖动或抛出小人；窗口尺寸变化导致元素重新排版时，站在上面的小人也会被推动，快速缩放还能将其弹起。&lt;/p&gt;
+&lt;p&gt;README 说明项目只需一个脚本、没有依赖，精灵由纯 CSS 绘制，不需要图片素材。标题中的“CSS Animation”不能理解成整个交互只靠 CSS：项目由 JavaScript 脚本接入页面并提供增加小人的接口，CSS 主要承担精灵呈现。&lt;/p&gt;
+&lt;p&gt;演示还区分碰撞规则：文字行可以作为落脚面，但不会像墙一样挡住小人，以免它们卡在紧密排布的段落里；实体边框、按钮等则可以阻挡。它展示的是借用 DOM 排版制造互动的玩具，而非完整复刻原版关卡的游戏；项目说明也没有提供跨浏览器性能保证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-380-points--评论-77-comments--投稿者markblah--发布时间2026-11-05-125410-0800&#34;&gt;
+  HN 热度 380 points | 评论 77 comments | 投稿者：MarkBlah | 发布时间：2026-11-05 12:54:10 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-380-points--%e8%af%84%e8%ae%ba-77-comments--%e6%8a%95%e7%a8%bf%e8%80%85markblah--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-125410-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50375354&#34;&gt;https://news.ycombinator.com/item?id=50375354&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;熟悉的像素行走与坠落动作能唤起强烈的童年游戏记忆，趣味来自细节而不仅是技术实现。&lt;/li&gt;
+&lt;li&gt;应把它理解为 JavaScript 与 CSS 配合的动画，标题容易让人误以为碰撞和运动全部由 CSS 完成。&lt;/li&gt;
+&lt;li&gt;增加到数百个小人后，Chrome 与 Safari 在动画流畅度、CPU 占用和滚动响应之间呈现不同取舍。&lt;/li&gt;
+&lt;li&gt;把更新节奏与 requestAnimationFrame 对齐可能改善页面响应，但这仍是待验证的优化建议。&lt;/li&gt;
+&lt;li&gt;移动端缩放和边缘坠落暴露出布局适配问题，桌面演示的趣味不能替代手机端测试。&lt;/li&gt;
+&lt;li&gt;它延续了 DHTML Lemmings 和桌面企鹅一类让小角色游走界面的传统，也激发了可在其他页面运行的玩法。&lt;/li&gt;
+&lt;li&gt;允许直接抓起和摆放角色，让浏览网页变成可探索的空间，这类小互动值得在工具化的网页之外保留。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-images-26-发布更快生成gif-动画与-svg-导出-images-26&#34;&gt;
+  7. Images 2.6 发布：更快生成、GIF 动画与 SVG 导出 (Images 2.6)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-images-26-%e5%8f%91%e5%b8%83%e6%9b%b4%e5%bf%ab%e7%94%9f%e6%88%90gif-%e5%8a%a8%e7%94%bb%e4%b8%8e-svg-%e5%af%bc%e5%87%ba-images-26&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://openai.com/index/introducing-images-2-6/&#34;&gt;https://openai.com/index/introducing-images-2-6/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI 推出 Images 2.6，覆盖 ChatGPT、Codex 和 API，重点是加快迭代、改善多轮编辑的一致性，并把静态图像扩展成 GIF 动画。公司称，用户目前每周通过这些产品生成约 40 亿张图片，新版生成速度比此前快 50%；API 中的 Flare 在低质量设置下最快约六秒，Sunburst 则针对中高质量任务提供更多细节与一致性。这些都是厂商发布口径，不代表每种请求都能达到相同耗时。&lt;/p&gt;
+&lt;p&gt;新能力包括通过图像标注精确指定编辑位置、导出 SVG，以及独立于 quality 的 complexity 参数：前者控制细节与保真度，后者调整模型为满足场景约束投入的规划程度。官方建议多数编辑任务采用低 complexity，复杂构图再提高；GIF 示例则包括以连续精灵帧制作角色循环动作。&lt;/p&gt;
+&lt;p&gt;公告称产品已面向各订阅层级和主要终端推出，API 提供 GPT-Image-2.6 Flare 与 Sunburst。文章没有给出覆盖各类工作流的独立质量比较，因此“更快”与“一致性改善”仍应按任务验证；不能仅凭新品发布就认定所有旧提示词、客户端或按张成本都保持相同表现。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-376-points--评论-233-comments--投稿者davidbarker--发布时间2026-11-05-073544-0800&#34;&gt;
+  HN 热度 376 points | 评论 233 comments | 投稿者：davidbarker | 发布时间：2026-11-05 07:35:44 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-376-points--%e8%af%84%e8%ae%ba-233-comments--%e6%8a%95%e7%a8%bf%e8%80%85davidbarker--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-073544-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50372945&#34;&gt;https://news.ycombinator.com/item?id=50372945&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单 token 标价不变不等于每张图成本不变，用户测试指出部分低中质量设置会消耗更多输出 token。&lt;/li&gt;
+&lt;li&gt;新版质量评价出现分歧，有设计服务开发者回退 Flare，也有读者更喜欢同组 2.6 样图，结果明显依赖任务。&lt;/li&gt;
+&lt;li&gt;GIF 能带来可用的新玩法，但已有用户发现连续精灵帧仍难保持一致，动画支持不等于角色稳定性问题已解决。&lt;/li&gt;
+&lt;li&gt;SVG 导出值得关注，但位图到矢量的转换流程与直接生成原生矢量并非同一能力。&lt;/li&gt;
+&lt;li&gt;官网宣称已覆盖 Codex 仍需与具体客户端版本区分，发布时部分用户尚未获得对应 GIF 或模型能力。&lt;/li&gt;
+&lt;li&gt;设计工作仍需要外扩、精细局部调整和可控的最后一轮修改，基础出图质量提高不能替代编辑工具成熟度。&lt;/li&gt;
+&lt;li&gt;移动端分享 GIF 若先变成带静态图的页面链接，会增加直接发送动画给朋友的操作负担。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-discord-将以-rust-替换-electron早期客户端展示约-290mb-内存-discord-is-ditching-electron-and-its-new-app-uses-less-ram&#34;&gt;
+  8. Discord 将以 Rust 替换 Electron，早期客户端展示约 290MB 内存 (Discord is ditching Electron and its new app uses less RAM)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-discord-%e5%b0%86%e4%bb%a5-rust-%e6%9b%bf%e6%8d%a2-electron%e6%97%a9%e6%9c%9f%e5%ae%a2%e6%88%b7%e7%ab%af%e5%b1%95%e7%a4%ba%e7%ba%a6-290mb-%e5%86%85%e5%ad%98-discord-is-ditching-electron-and-its-new-app-uses-less-ram&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.theverge.com/news/1027379/discord-ditching-electron-web-app&#34;&gt;https://www.theverge.com/news/1027379/discord-ditching-electron-web-app&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Verge 报道，Discord 正把客户端迁移到 Rust，计划移除桌面的 Electron 和移动端的 React Native。CTO Stanislav Vishnevskiy 表示，公司自 2018 年开始采用 Rust，基础设施、语音技术和当前客户端已有部分使用该语言；下一步是让移动端保持原生界面，同时通过 Rust 与桌面端共享应用代码。&lt;/p&gt;
+&lt;p&gt;报道引用的一张早期 Windows 客户端截图显示约 290MB 内存占用，相比当前客户端加入若干服务器后容易达到约 1GB 或更多，呈现明显下降潜力。不过它是厂商展示的单次画面，没有公开等同账号、服务器数量、语音会话及后台状态的完整对照测试，不能直接推导每个用户都会获得相同比例的降幅。&lt;/p&gt;
+&lt;p&gt;完整迁移的时间表尚不明确，CTO 只称希望很快让用户测试。文章据此传达的是架构迁移计划和早期结果，而不是已向所有用户发布的新版本。移动端“保留原生 UI”也意味着共享的是应用逻辑，不能把“全 Rust”理解为每个平台的所有界面层都采用同一种实现。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-369-points--评论-321-comments--投稿者archb--发布时间2026-11-05-210528-0800&#34;&gt;
+  HN 热度 369 points | 评论 321 comments | 投稿者：archb | 发布时间：2026-11-05 21:05:28 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-369-points--%e8%af%84%e8%ae%ba-321-comments--%e6%8a%95%e7%a8%bf%e8%80%85archb--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-210528-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50378625&#34;&gt;https://news.ycombinator.com/item?id=50378625&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;现有客户端的内存负担是实际痛点，减少每个常驻应用的数百 MB 开销对同时运行多种工具的用户很有价值。&lt;/li&gt;
+&lt;li&gt;跨平台 Rust UI 的无障碍、中文排版与输入法支持需要单独检验，较低内存占用不能替代这些基本能力。&lt;/li&gt;
+&lt;li&gt;“安装体积从 10GB 降到 10MB”之类说法缺乏依据，应与尚未公开测试的早期 Rust 版本区分。&lt;/li&gt;
+&lt;li&gt;另一种批评认为，频繁弹窗、促销和视觉干扰比框架本身更损害体验，重写不能自动解决产品设计问题。&lt;/li&gt;
+&lt;li&gt;GPUI 的链式界面写法引发可读性争论，也有人主张用专门 UI 描述语言降低布局代码负担。&lt;/li&gt;
+&lt;li&gt;移除网页界面栈可能影响第三方样式与插件，自定义字体等既有能力是否保留仍值得关注。&lt;/li&gt;
+&lt;li&gt;关于 AI 大规模重写的讨论也担忧原团队的隐性知识流失，但现有报道不足以证明迁移全部由 AI 完成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-ricursive-发布-ripple-65b650-亿参数稠密模型主打代理编程-ripple-65b-preview-us-open-weight-sota-on-agentic-coding&#34;&gt;
+  9. Ricursive 发布 Ripple-65B：650 亿参数稠密模型主打代理编程 (Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-ricursive-%e5%8f%91%e5%b8%83-ripple-65b650-%e4%ba%bf%e5%8f%82%e6%95%b0%e7%a8%a0%e5%af%86%e6%a8%a1%e5%9e%8b%e4%b8%bb%e6%89%93%e4%bb%a3%e7%90%86%e7%bc%96%e7%a8%8b-ripple-65b-preview-us-open-weight-sota-on-agentic-coding&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.ricursive.com/ripple&#34;&gt;https://www.ricursive.com/ripple&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ricursive Intelligence 发布 Ripple-65B Preview，作为内部芯片设计模型的通用版本开放权重。它是 650 亿参数稠密 Transformer，预训练使用 12 万亿 token，宣称支持最高 100 万 token 上下文；模型卡采用 Apache 2.0 许可，提供指令模型及相关基础模型、低精度版本。发布方自报 TerminalBench 2.1 得分 80.52，称领先所列美国开放权重模型，这一限定不等于全球所有模型或所有编程任务第一。&lt;/p&gt;
+&lt;p&gt;团队选择 80 层、较窄隐藏维度的稠密架构，结合滑动窗口注意力等改动，以降低 NVIDIA 平台上的训练和部署复杂度。公司称，完整研发投入为 3,200 万美元，包含试验、数据、评估、调试及最终训练，并非只计最后一次预训练；与其他实验室成本的“一成”比较包含估计。强化学习阶段称仅用约 140 万次 rollout 就达到相应成绩。&lt;/p&gt;
+&lt;p&gt;模型卡也坦言代理基准复现受 harness、上下文及摘要机制影响，部分对手成绩由内部评估补齐，比较是尽力而为，并非统一第三方认证。能装入 DGX Spark 等设备不保证普通消费硬件都能高速度运行；总参数量较小也不能直接等价为比 MoE 的每 token 计算量更低。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-331-points--评论-120-comments--投稿者philpax--发布时间2026-11-05-025329-0800&#34;&gt;
+  HN 热度 331 points | 评论 120 comments | 投稿者：Philpax | 发布时间：2026-11-05 02:53:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-331-points--%e8%af%84%e8%ae%ba-120-comments--%e6%8a%95%e7%a8%bf%e8%80%85philpax--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-025329-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50369925&#34;&gt;https://news.ycombinator.com/item?id=50369925&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只比较美国开放权重模型会缩窄“领先”的含义，用户仍需要与全球实际可选模型做同条件对照。&lt;/li&gt;
+&lt;li&gt;部分组织确实受到供应商司法辖区限制，因此美国来源这一筛选条件对合规采购并非毫无意义。&lt;/li&gt;
+&lt;li&gt;稠密模型与 MoE 不能仅按总参数量比较运行效率，活跃参数、内存带宽与推理配置都影响实际成本。&lt;/li&gt;
+&lt;li&gt;650 亿稠密参数对普通本地硬件仍可能很重，能容纳权重不等于能获得适合代理任务的响应速度。&lt;/li&gt;
+&lt;li&gt;高内存本地设备用户欢迎增加开放模型选择，愿意以一定速度换取离线运行与数据控制。&lt;/li&gt;
+&lt;li&gt;有用户在托管端测试中遇到多次工具调用失败，基准分数还需要与具体服务商和工具协议的可靠性分别验证。&lt;/li&gt;
+&lt;li&gt;面向芯片设计的公司发布通用编程成绩很有吸引力，但还需要解释这些能力如何转化为真实 EDA 与芯片设计收益。&lt;/li&gt;
+&lt;li&gt;选择模型前应等待更广的独立评估，并把量化后质量、速度和任务成功率纳入比较。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-led-不招虫原作者已提示更正实验结论需要限定-insects-dont-swarm-at-led-lights&#34;&gt;
+  10. LED 不招虫？原作者已提示更正，实验结论需要限定 (Insects don&amp;rsquo;t swarm at LED lights)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-led-%e4%b8%8d%e6%8b%9b%e8%99%ab%e5%8e%9f%e4%bd%9c%e8%80%85%e5%b7%b2%e6%8f%90%e7%a4%ba%e6%9b%b4%e6%ad%a3%e5%ae%9e%e9%aa%8c%e7%bb%93%e8%ae%ba%e9%9c%80%e8%a6%81%e9%99%90%e5%ae%9a-insects-dont-swarm-at-led-lights&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/&#34;&gt;https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《窗外的鸟》这篇文章从一户家庭更换 LED 后灯边壁虎变少的经历出发，讨论照明对昆虫聚集的影响。作者引用 2016 年一项比较白炽灯、紧凑型荧光灯、冷白与暖白 LED 的野外实验：在该实验条件下，LED 捕获的昆虫较少，包含较少的部分双翅目昆虫；两种白色 LED 之间没有显著差异。这是相对吸引力结果，不等于所有 LED 都不会招虫。&lt;/p&gt;
+&lt;p&gt;抓到的原文顶部已明确标出“即将更正”：作者承认关于白炽灯与 LED 紫外线的解释有误，并准备大幅修改。因而正文中把差异简单归因于“白炽灯有紫外线、LED 没有”的段落不能当成已核实的科学结论，家庭观察也无法单独排除虫口数量、亮度或光谱等因素。&lt;/p&gt;
+&lt;p&gt;为核对其飞行机制解释，另读取 
+  &lt;a href=&#34;https://www.nature.com/articles/s41467-024-44785-3&#34;&gt;2024 年《Nature Communications》原始研究&lt;/a&gt;。该研究通过三维轨迹分析认为，近距离灯光可能扰乱昆虫以背部朝向亮处的姿态控制，并非简单的“把灯当月亮导航”；研究还明确观察到 LED 可困住大量昆虫，并未系统比较波长效应。因此应将这篇文章理解为带有待改错误的科普讨论，而非“LED 不招虫”的定论。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-305-points--评论-160-comments--投稿者speckx--发布时间2026-11-05-035023-0800&#34;&gt;
+  HN 热度 305 points | 评论 160 comments | 投稿者：speckx | 发布时间：2026-11-05 03:50:23 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-305-points--%e8%af%84%e8%ae%ba-160-comments--%e6%8a%95%e7%a8%bf%e8%80%85speckx--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-05-035023-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50370610&#34;&gt;https://news.ycombinator.com/item?id=50370610&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拖拉机灯、头灯和摄影补光灯仍有明显聚虫的使用经验，标题把全部 LED 一概而论过于绝对。&lt;/li&gt;
+&lt;li&gt;光谱、亮度、功率和热辐射等变量没有充分区分时，不能把实验差异单独归因于紫外线。&lt;/li&gt;
+&lt;li&gt;近距离绕灯飞行应区分姿态控制失灵与月亮导航，混用两种解释会掩盖原始研究的关键发现。&lt;/li&gt;
+&lt;li&gt;昆虫总体数量变化也可能影响人们的长期观察，但它与更换灯具各自贡献多少仍需独立数据。&lt;/li&gt;
+&lt;li&gt;不同颜色的照明在现场表现不同，“LED”只是技术类别，不能替代具体光谱和环境条件。&lt;/li&gt;
+&lt;li&gt;材料发出荧光不一定证明灯具发射紫外线，可见蓝光本身也能激发某些荧光。&lt;/li&gt;
+&lt;li&gt;研究未覆盖的高压钠灯和专门设计的紫外 LED 提醒读者，不应把有限灯型实验推广成所有光源的通则。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-11-05 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-11-05-HackerNews/</link>
@@ -1093,283 +1361,6 @@
 &lt;li&gt;回复提醒 OCR 只能去除部分载荷，不能作为防止提示注入的万能解决方案。&lt;/li&gt;
 &lt;li&gt;显式隐藏指令只是风险的一层，模型自身偏好与更隐蔽的语言诱导也会影响分析。&lt;/li&gt;
 &lt;li&gt;更强硬的立场认为刻意干扰司法程序的处罚不应止于罚款，还应考虑职业资格责任。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-11-01 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-11-01-HackerNews/</link>
-      <pubDate>Sun, 01 Nov 2026 08:33:15 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-11-01-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-11-01-hacker-news-top-stories&#34;&gt;
-  2026-11-01 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-01-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;塞尔维亚学生名单在 250 席议会中赢得 141 席，其当选者中数十人来自学界、过半持 Ph.D. 或 M.D.，承诺推动反腐、学术自治与更稳定的科研资助。&lt;/li&gt;
-&lt;li&gt;《波士顿环球报》两位作者回顾帕特里克·斯图尔特的皮卡德：他的道德判断、脆弱与悲伤，为观众呈现了兼具权威和人性的成年男性榜样。&lt;/li&gt;
-&lt;li&gt;Rairii 将经典 Mac OS 移植到 Wii，已让 7.6 和经调整的 9.2.2 到达桌面；真实硬件上 7.6 约 40 秒启动，但项目距离公开发布仍很远。&lt;/li&gt;
-&lt;li&gt;Scribd 用户收到安全通知，称邮箱及信用卡末四位、到期日和付款历史等可能被访问；官方支持页确认系统遭入侵，受影响用户正分批收到通知。&lt;/li&gt;
-&lt;li&gt;《金融时报》称黑石预计 Anthropic 上市后可能仅获 BB 区间评级；这仍是预期，不是大型评级机构已经作出的正式决定。&lt;/li&gt;
-&lt;li&gt;Vitalik Buterin 用 Firefly 绕开 X 推荐流，并连续 100 天默认关闭蜂窝连接、依赖 Wi-Fi 与 CoMaps，探索把信息获取转向离线工具和本地 AI。&lt;/li&gt;
-&lt;li&gt;Parameter 研究者将 ChatGPT 共享对话、Preview 与 MathLive 的跨帧消息漏洞串联，演示读取受控账户的私有聊天；报告称 OpenAI 已于 10 月 26 日修复并支付 5,000 美元赏金。&lt;/li&gt;
-&lt;li&gt;Molly 的 GitHub 最新发布仍是 7 月 31 日的 v8.19.2-4；Piefed 发帖者称它落后于 Signal 的安全修复，提醒用户重新权衡强化功能与维护及时性。&lt;/li&gt;
-&lt;li&gt;据 404 Media，Proton CEO Andy Yen 取消近全员 AI“重新面试”，称不会因 AI 裁员，但继续推动 AI 和组织调整；部分员工称相关考核将转入绩效评估。&lt;/li&gt;
-&lt;li&gt;nesformer 把 NES 的 6502 CPU、2KB RAM 和程序 ROM 编译进 Qwen3.5 架构权重，bf16 检查点约 933MB，无需训练；画面和输入仍由宿主程序处理，速度比真机慢 150–290 倍。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-science塞尔维亚选出了最聪明的议会-serbia-just-elected-the-worlds-brainiest-parliament&#34;&gt;
-  1. 《Science》：塞尔维亚选出了“最聪明的议会” (Serbia just elected the world&amp;rsquo;s brainiest parliament)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-science%e5%a1%9e%e5%b0%94%e7%bb%b4%e4%ba%9a%e9%80%89%e5%87%ba%e4%ba%86%e6%9c%80%e8%81%aa%e6%98%8e%e7%9a%84%e8%ae%ae%e4%bc%9a-serbia-just-elected-the-worlds-brainiest-parliament&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament&#34;&gt;https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《Science》报道，学生运动支持的“Student List – Students Are Winning”在 10 月 25 日塞尔维亚议会选举中，赢得国民议会 250 席中的 141 席。该名单的当选者中，数十人来自学界，过半持有 Ph.D. 或 M.D. 学位，专业涵盖天体物理、机器人、有机化学、教育、社会学、医学等。学界期待这场胜利改变科研与高等教育环境。&lt;/p&gt;
-&lt;p&gt;运动源于 2024 年 11 月诺维萨德火车站雨棚倒塌、造成 16 人死亡后的全国学生抗议。学生将事故归咎于公共部门腐败，随后扩大诉求并推动提前选举。学生选择推举受信任人士参选，成员还包括农民、律师、艺术家、教师和前篮球运动员；名单首位的心脏科医生 Ilija Srdanović 并非正式领袖。&lt;/p&gt;
-&lt;p&gt;受访研究者指责前政府以大学治理任命、集中财务管理和资助分配干预学术。学生名单承诺扩大大学自治、提高教育可负担性，提供更可预测的科研经费，保障科学基金独立运作，终止评审中的政治干预，并支持海外研究者回国。&lt;/p&gt;
-&lt;p&gt;这些仍是改革承诺，而非已经完成的成果。新力量尚需选择总理、组建政府，许多新议员没有政治经验；受访分子生物学家 Željko Popović 也提醒，科研体系的转变不会轻松或迅速。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-802-points--评论-461-comments--投稿者input_sh--发布时间2026-10-31-182130-0800&#34;&gt;
-  HN 热度 802 points | 评论 461 comments | 投稿者：input_sh | 发布时间：2026-10-31 18:21:30 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-802-points--%e8%af%84%e8%ae%ba-461-comments--%e6%8a%95%e7%a8%bf%e8%80%85input_sh--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-182130-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50314654&#34;&gt;https://news.ycombinator.com/item?id=50314654&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;支持者期待新政治力量带来改变，也关注没有单一领袖的名单如何组阁并承担治理责任。&lt;/li&gt;
-&lt;li&gt;专业领域的高学历不等于跨领域决策能力，学术成就可能让人低估陌生政策问题的难度。&lt;/li&gt;
-&lt;li&gt;政治工作还需要情绪理解、说服与妥协能力，智力和专业知识只是条件的一部分。&lt;/li&gt;
-&lt;li&gt;学者和技术专家同样可能腐败或滥用权力，学历本身不能替代制度约束。&lt;/li&gt;
-&lt;li&gt;自称塞尔维亚学生的支持者担心个人崇拜与派系化会逐渐瓦解名单的集体组织方式。&lt;/li&gt;
-&lt;li&gt;另一种立场认为既有体系已经失灵，不能仅以新人可能犯错为由否定尝试改变的机会。&lt;/li&gt;
-&lt;li&gt;有参与学术组织管理的评论者指出，研究能力与协调、执行和组织能力并不天然一致。&lt;/li&gt;
-&lt;li&gt;议会应容纳更广泛职业背景，而不只是长期由律师、金融人士和职业政客主导。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-帕特里克斯图尔特如何借皮卡德教会一代人成熟与担当-through-captain-jean-luc-picard-patrick-stewart-taught-us-the-measure-of-a-man&#34;&gt;
-  2. 帕特里克·斯图尔特如何借皮卡德教会一代人成熟与担当 (Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e5%b8%95%e7%89%b9%e9%87%8c%e5%85%8b%e6%96%af%e5%9b%be%e5%b0%94%e7%89%b9%e5%a6%82%e4%bd%95%e5%80%9f%e7%9a%ae%e5%8d%a1%e5%be%b7%e6%95%99%e4%bc%9a%e4%b8%80%e4%bb%a3%e4%ba%ba%e6%88%90%e7%86%9f%e4%b8%8e%e6%8b%85%e5%bd%93-through-captain-jean-luc-picard-patrick-stewart-taught-us-the-measure-of-a-man&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/&#34;&gt;https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《波士顿环球报》的 John Hilliard 与 Jason Laughlin 以对谈方式纪念帕特里克·斯图尔特，重点不是重列生平，而是解释皮卡德舰长为何影响了在《星际迷航：下一代》陪伴下成长的一代观众。跨越七季电视剧、四部电影和后来的《皮卡德》，这个人物让沉静、理性、诚实与责任感成为可信的领导方式。&lt;/p&gt;
-&lt;p&gt;两位作者认为，斯图尔特不仅能演出清晰的道德立场，也能让受创、后悔和孤独不损害人物的尊严。他们回顾皮卡德回乡后在兄长面前崩溃的场景，以及《The Inner Light》中体验另一段人生、最终只留下长笛的失落；这些情节让一个强势领袖有能力表达悲伤。&lt;/p&gt;
-&lt;p&gt;另一段讨论围绕他要求 Wesley Crusher 诚实面对责任的训诫：原则并非冷酷口号，而是带着失望与关爱的教育。文章承认现实压迫不会像剧中一样靠一场演说轻易化解，但认为这个角色仍提供了以思考、同理心和乐观面对中年生活的范例。这是两位剧迷的个人文化回顾，而非对所有观众影响的调查。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-374-points--评论-220-comments--投稿者apress--发布时间2026-10-31-042330-0800&#34;&gt;
-  HN 热度 374 points | 评论 220 comments | 投稿者：apress | 发布时间：2026-10-31 04:23:30 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-374-points--%e8%af%84%e8%ae%ba-220-comments--%e6%8a%95%e7%a8%bf%e8%80%85apress--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-042330-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50309647&#34;&gt;https://news.ycombinator.com/item?id=50309647&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;皮卡德兼具荣誉感、谦逊、外交能力和压力下的坚定，因此成为很多人心中典型的舰长。&lt;/li&gt;
-&lt;li&gt;角色的台词和价值观同样来自编剧，纪念演员时也应承认共同创作的贡献。&lt;/li&gt;
-&lt;li&gt;《Tapestry》关于回避风险会损失人生可能性的故事，给部分观众留下了尤其深的印象。&lt;/li&gt;
-&lt;li&gt;标题呼应《The Measure of a Man》，却未具体讨论那一集，让一些读者感到意外。&lt;/li&gt;
-&lt;li&gt;也有观众更认同《深空九号》中 Sisko 作为舰长、父亲和普通人的表现，角色榜样并非只有一种。&lt;/li&gt;
-&lt;li&gt;扎实的舞台训练被认为赋予斯图尔特更强的银幕存在感，而不只是靠夸张表演制造权威。&lt;/li&gt;
-&lt;li&gt;皮卡德的权威常来自认真推理和面对道德困境的过程，而不是从不犯错或永远果断。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-把经典-mac-os-移植到任天堂-wii-my-favourite-powermac-is-a-nintendo-wii&#34;&gt;
-  3. 把经典 Mac OS 移植到任天堂 Wii (My favourite PowerMac is a Nintendo Wii)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e6%8a%8a%e7%bb%8f%e5%85%b8-mac-os-%e7%a7%bb%e6%a4%8d%e5%88%b0%e4%bb%bb%e5%a4%a9%e5%a0%82-wii-my-favourite-powermac-is-a-nintendo-wii&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/&#34;&gt;https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Rairii 介绍了把经典 Mac OS 带到 Nintendo GameCube、Wii 并计划扩展至 Wii U 的移植工作。它们虽使用 PowerPC 处理器，芯片组、内存布局和外设却不同于苹果电脑，不能直接运行原有系统；作者从 2025 年 6 月开始，结合既有 NT 移植经验和 OpenBIOS，逐层修补启动链。&lt;/p&gt;
-&lt;p&gt;主要工作包括纠正 Trampoline 引导程序对 RAM、MMIO 与设备树的假设，改写中断控制器相关代码，补齐显示与手柄驱动，并通过模拟 SCSI 接口接入 EXI 存储设备。调试过程中还遇到旧代码默认存在串口、USB 控制器或特定硬件的问题，以及自己的磁盘驱动在非对齐缓冲区上出错。&lt;/p&gt;
-&lt;p&gt;修改版 Dolphin 中的慢速启动和调试异常，并不完全代表真实硬件表现：Wii 使用 SD-over-SPI 启动 Mac OS 7.6 约需 40 秒。9.2.2 则在移除 Open Transport 后成功启动，作者推测它不适应完全没有串口或网络设备的环境。Wii 的原生 SD、USB 及 Wii U 支持等仍待推进，现阶段不能当作成熟可用的 Power Mac 替代品。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-371-points--评论-109-comments--投稿者dhowett--发布时间2026-10-31-012515-0800&#34;&gt;
-  HN 热度 371 points | 评论 109 comments | 投稿者：DHowett | 发布时间：2026-10-31 01:25:15 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-371-points--%e8%af%84%e8%ae%ba-109-comments--%e6%8a%95%e7%a8%bf%e8%80%85dhowett--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-012515-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50307190&#34;&gt;https://news.ycombinator.com/item?id=50307190&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Wii 的自制软件与恢复在线功能仍在进步，旧主机的可玩性和可利用价值没有随官方服务结束而消失。&lt;/li&gt;
-&lt;li&gt;作者此前移植 NT 到 Macintosh 和 GameCube、Wii 的经历，为这个项目提供了可复用的底层经验。&lt;/li&gt;
-&lt;li&gt;即使反过来让 Power Mac 运行 Wii 软件，同属 PowerPC 也不够，还要处理主机的另一颗处理器及硬件差异。&lt;/li&gt;
-&lt;li&gt;现代 macOS 的系统基础与经典 Mac OS 不同，不宜因名称相近就把两者的兼容性和代码来源混为一谈。&lt;/li&gt;
-&lt;li&gt;有读者更关心能否实际运行 Marathon 等经典 Mac 游戏，而不仅是成功看到桌面。&lt;/li&gt;
-&lt;li&gt;这次移植也激起了把 Amiga OS 或 MorphOS 带到相似 PowerPC 硬件上的兴趣。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-hn-用户转贴-scribd-数据安全事件通知-tell-hn-scribd-breached&#34;&gt;
-  4. HN 用户转贴 Scribd 数据安全事件通知 (Tell HN: Scribd Breached)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-hn-%e7%94%a8%e6%88%b7%e8%bd%ac%e8%b4%b4-scribd-%e6%95%b0%e6%8d%ae%e5%ae%89%e5%85%a8%e4%ba%8b%e4%bb%b6%e9%80%9a%e7%9f%a5-tell-hn-scribd-breached&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50312756&#34;&gt;https://news.ycombinator.com/item?id=50312756&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这是一篇无外链的 Tell HN 投稿，投稿者转贴了自称于 10 月 26 日收到、由 Epiq 代表 Scribd 发出的安全事件通知。邮件称第三方可能访问邮箱，以及信用卡末四位、所在国家、发卡机构、到期日和付款历史；所列付款历史不包含完整信用卡资料。邮件称尚无证据显示这些数据已被滥用，这不等于已经排除所有后续风险。&lt;/p&gt;
-&lt;p&gt;补充读取的 Scribd 官方支持页确认，未经授权的第三方进入系统后访问了其他内部系统及部分用户信息。多数账户涉及基本资料，较少账户涉及更敏感资料；公司称已关闭漏洞、终止访问，委托外部安全与取证专家，并通知执法和数据保护机构。&lt;/p&gt;
-&lt;p&gt;官方页说明通知分批发送，因此暂时没有收到邮件不能直接证明未受影响，并建议重置相关账户密码、警惕冒充 Scribd、Slideshare、Everand 或 Fable 的信息。公开资料没有给出总受影响人数和完整入侵路径；不同用户被访问的字段也可能不同，不能把一封通知中的字段推广到所有账户。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://support.scribd.com/hc/en-us/articles/53787421531284-Information-about-the-recent-security-incident&#34;&gt;https://support.scribd.com/hc/en-us/articles/53787421531284-Information-about-the-recent-security-incident&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-335-points--评论-120-comments--投稿者x______________--发布时间2026-10-31-104636-0800&#34;&gt;
-  HN 热度 335 points | 评论 120 comments | 投稿者：x______________ | 发布时间：2026-10-31 10:46:36 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-335-points--%e8%af%84%e8%ae%ba-120-comments--%e6%8a%95%e7%a8%bf%e8%80%85x______________--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-104636-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50312756&#34;&gt;https://news.ycombinator.com/item?id=50312756&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;收到通知的时间不同，让部分用户质疑涉及付款资料的事件为何不能更快统一告知。&lt;/li&gt;
-&lt;li&gt;需要公开受影响账户数量，才能判断事件究竟覆盖了多大范围。&lt;/li&gt;
-&lt;li&gt;仅称某个系统遭入侵过于笼统，说明是自有系统还是第三方服务有助于理解责任与风险。&lt;/li&gt;
-&lt;li&gt;个人资料是否采用静态加密以及相应保护标准，值得在事件说明中交代。&lt;/li&gt;
-&lt;li&gt;通知若不说明具体关联哪张卡，用户就难以判断应该针对哪个付款账户采取措施。&lt;/li&gt;
-&lt;li&gt;使用单次或限定商户的付款凭证，可以减少重复存储固定卡片资料带来的暴露。&lt;/li&gt;
-&lt;li&gt;清理长期不用的网络账户，有助于减少日后需要处理数据泄漏的接触面。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-黑石据报下调对-anthropic-上市后信用评级的预期-anthropic-may-not-secure-investment-grade-rating-after-ipo-blackstone-says&#34;&gt;
-  5. 黑石据报下调对 Anthropic 上市后信用评级的预期 (Anthropic may not secure investment-grade rating after IPO, Blackstone says)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e9%bb%91%e7%9f%b3%e6%8d%ae%e6%8a%a5%e4%b8%8b%e8%b0%83%e5%af%b9-anthropic-%e4%b8%8a%e5%b8%82%e5%90%8e%e4%bf%a1%e7%94%a8%e8%af%84%e7%ba%a7%e7%9a%84%e9%a2%84%e6%9c%9f-anthropic-may-not-secure-investment-grade-rating-after-ipo-blackstone-says&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f&#34;&gt;https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《金融时报》引述知情人士称，黑石向投资者传达的 Anthropic 上市后评级预期，已从投资级转为较高的非投资级、约 BB 区间。正式评级尚未由三大机构公布。较低评级可能增加借贷成本、限制可参与的机构资金。&lt;/p&gt;
-&lt;p&gt;TechCrunch 的跟进报道提到，黑石是 Anthropic 一笔 630 亿美元芯片融资的锚定投资者，此前曾预期公司在 2026 年底前获得投资级评级。其报道也强调，这仍是预测，并称 Anthropic 与黑石均拒绝评论；不能据此认定公司已经被正式降级或即将违约。&lt;/p&gt;
-&lt;p&gt;补充报道：
-
-  &lt;a href=&#34;https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/&#34;&gt;https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-322-points--评论-286-comments--投稿者petethomas--发布时间2026-10-31-012725-0800&#34;&gt;
-  HN 热度 322 points | 评论 286 comments | 投稿者：petethomas | 发布时间：2026-10-31 01:27:25 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-322-points--%e8%af%84%e8%ae%ba-286-comments--%e6%8a%95%e7%a8%bf%e8%80%85petethomas--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-012725-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50307219&#34;&gt;https://news.ycombinator.com/item?id=50307219&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;债权人的时间尺度可能长达二十年，而今天领先的 AI 公司未必能在如此长周期里保持地位。&lt;/li&gt;
-&lt;li&gt;模型竞争和客户切换速度使收入前景存在较大波动，这类风险应反映在借款人的信用评价中。&lt;/li&gt;
-&lt;li&gt;高风险并不自动等于坏投资，关键是回报与利率是否补偿承担的风险。&lt;/li&gt;
-&lt;li&gt;巨额算力承诺最终需要经营现金流、股权或债务来支撑，融资缺口值得单独审视。&lt;/li&gt;
-&lt;li&gt;上市也为早期投资人和员工提供退出流动性，因此不能把 IPO 本身视为长期经营稳固的证明。&lt;/li&gt;
-&lt;li&gt;判断非投资级评级是否异常，应放在科技公司和其他 IPO 的历史背景中比较。&lt;/li&gt;
-&lt;li&gt;另一种推测认为前沿实验室也可能从重大研发突破获得收入，而不只依赖出售模型订阅。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-vitalik-的数字极简主义换掉信息流试行百日飞行模式-digital-minimalism&#34;&gt;
-  6. Vitalik 的数字极简主义：换掉信息流，试行百日飞行模式 (Digital minimalism)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-vitalik-%e7%9a%84%e6%95%b0%e5%ad%97%e6%9e%81%e7%ae%80%e4%b8%bb%e4%b9%89%e6%8d%a2%e6%8e%89%e4%bf%a1%e6%81%af%e6%b5%81%e8%af%95%e8%a1%8c%e7%99%be%e6%97%a5%e9%a3%9e%e8%a1%8c%e6%a8%a1%e5%bc%8f-digital-minimalism&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html&#34;&gt;https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vitalik Buterin 将数字极简主义定义为主动选择如何使用技术，而不是默认被界面和算法吸住。他没有彻底退出 X，而是主要通过整合 X、Bluesky、Farcaster 与 Lens 的 Firefly 发帖和阅读；他猜测推荐算法会把带着猎奇心态的点击误判为兴趣，而换掉界面后自觉更平静。&lt;/p&gt;
-&lt;p&gt;另一项实验持续 100 天：手机保持飞行模式，仍使用 Wi-Fi，但关闭蜂窝连接，以减少位置跟踪并恢复离线思考。他使用 CoMaps 离线导航，也承认短信验证码使新加坡叫车等服务难以使用，部分地图小径不准确，偏远徒步时还在朋友要求下携带紧急通信设备。&lt;/p&gt;
-&lt;p&gt;文章进一步主张发展本地知识应用和模块化工具。作者观察到，一些手机端 LLM 回答需 1 至 22 分钟，而先做语义检索、立即展示资料，再用小模型组织答案更实用。他也希望用本地 AI 降低命令行门槛，减少对不断重新加载代码、包含跟踪及暗黑模式的网页界面的依赖。这些是个人实验与工具愿景，适用路径取决于各自的生活和通信需求。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-303-points--评论-224-comments--投稿者wilbertliu--发布时间2026-10-31-141636-0800&#34;&gt;
-  HN 热度 303 points | 评论 224 comments | 投稿者：wilbertliu | 发布时间：2026-10-31 14:16:36 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-303-points--%e8%af%84%e8%ae%ba-224-comments--%e6%8a%95%e7%a8%bf%e8%80%85wilbertliu--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-141636-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50313661&#34;&gt;https://news.ycombinator.com/item?id=50313661&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过预先限定手机可用功能，既保留必要工具又减少随时打开浏览器的冲动，是一种可实践的折中。&lt;/li&gt;
-&lt;li&gt;长期关闭蜂窝连接对需要照顾家庭和保持联系的人不一定现实，便利与可达性也必须计入成本。&lt;/li&gt;
-&lt;li&gt;这套做法更接近数字内容与工具的主动筛选，未必等于减少设备和平台使用时间。&lt;/li&gt;
-&lt;li&gt;如果减少与人的线上互动却增加对 AI 的依赖，可能只是换了一种数字习惯而非真正极简。&lt;/li&gt;
-&lt;li&gt;反对上述批评的回复指出，文中主要把 AI 当作办事工具，而不是用它替代人际关系。&lt;/li&gt;
-&lt;li&gt;给非必要应用的安装和使用增加一点摩擦，可能比复杂的设备管理更简单有效。&lt;/li&gt;
-&lt;li&gt;用订阅源和自建检索组织信息，可以减少算法不断牵引注意力的机会。&lt;/li&gt;
-&lt;li&gt;有长期实践者表示，减少手机、平台账户并转向自托管与终端工具后，自己的幸福感和生产力反而提高。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-研究者披露已修复的-chatgpt-共享链接账户访问漏洞-do-the-math-how-we-took-over-chatgpt-accounts&#34;&gt;
-  7. 研究者披露已修复的 ChatGPT 共享链接账户访问漏洞 (Do the math: How we took over ChatGPT accounts)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e7%a0%94%e7%a9%b6%e8%80%85%e6%8a%ab%e9%9c%b2%e5%b7%b2%e4%bf%ae%e5%a4%8d%e7%9a%84-chatgpt-%e5%85%b1%e4%ba%ab%e9%93%be%e6%8e%a5%e8%b4%a6%e6%88%b7%e8%ae%bf%e9%97%ae%e6%bc%8f%e6%b4%9e-do-the-math-how-we-took-over-chatgpt-accounts&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.parameter.ai/labs/we-found-a-gap-at-openai&#34;&gt;https://www.parameter.ai/labs/we-found-a-gap-at-openai&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Parameter 的 Mukul Goyal 披露了一条已修复的 ChatGPT 网页漏洞链：攻击者制作含图表和 HTML Preview 的公开共享对话，受害者在已登录状态下打开链接，便可能触发以 chatgpt.com 身份运行的 JavaScript。稳定复现最初还需点击一次 Preview；后来的自动预览路径在另一个账户中重复验证，打开共享链接即可触发。&lt;/p&gt;
-&lt;p&gt;根因不在 Preview 沙箱直接失效，而在主页面的 MathLive 组件接受了未充分验证来源窗口和来源域的消息，并把键盘布局中的原始 HTML 渲染到主站。研究者再通过未隔离的新文档和被内容安全策略允许的第三方脚本路径取得同源执行能力。&lt;/p&gt;
-&lt;p&gt;团队在受控验证中枚举聊天、读取此前未共享的私有对话，并只向外发送一小段选定数据；作者认为同一权限边界内的其他账户操作也可能受影响，不能把演示写成真实用户已遭大规模窃取。报告称 OpenAI 于 10 月 26 日确认两个网页前端均已修复，评级 P1，奖励共 5,000 美元。文章强调跨功能组合测试、验证消息发送者和持续隔离不可信内容的重要性。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-300-points--评论-148-comments--投稿者armcat--发布时间2026-10-31-183011-0800&#34;&gt;
-  HN 热度 300 points | 评论 148 comments | 投稿者：armcat | 发布时间：2026-10-31 18:30:11 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-300-points--%e8%af%84%e8%ae%ba-148-comments--%e6%8a%95%e7%a8%bf%e8%80%85armcat--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-183011-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50314699&#34;&gt;https://news.ycombinator.com/item?id=50314699&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;相对于私有聊天可能被读取的影响，5,000 美元赏金被认为不足以鼓励研究者优先负责任披露。&lt;/li&gt;
-&lt;li&gt;不同意见指出，服务端漏洞能快速统一修复，其交易和赏金价值与长期难更新的客户端漏洞不同。&lt;/li&gt;
-&lt;li&gt;这条链巧妙组合了跨帧消息、JSONP 和 iframe 等传统浏览器机制，而不是只靠某种 AI 特有手法。&lt;/li&gt;
-&lt;li&gt;问题核心是消息接收方未核验发送者和后续 HTML 注入，并非讨论中有人误称的 OAuth 实现故障。&lt;/li&gt;
-&lt;li&gt;有读者认为文章仍未充分解释攻击者如何稳定控制共享对话中的预览内容，复现前提需要写得更清楚。&lt;/li&gt;
-&lt;li&gt;产品代码与功能边界越复杂，组合缺陷越难避免，工程质量不能只以新增代码量衡量。&lt;/li&gt;
-&lt;li&gt;另有自述接触该研究公司的评论者批评未经邀请的安全测试与随后营销，但这属于其个人经历指控。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-molly-三个月未发新版发帖者警告安全修复落后于-signal-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable&#34;&gt;
-  8. Molly 三个月未发新版，发帖者警告安全修复落后于 Signal (Molly (Signal fork) has not been updated since 3 months and is vulnerable)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-molly-%e4%b8%89%e4%b8%aa%e6%9c%88%e6%9c%aa%e5%8f%91%e6%96%b0%e7%89%88%e5%8f%91%e5%b8%96%e8%80%85%e8%ad%a6%e5%91%8a%e5%ae%89%e5%85%a8%e4%bf%ae%e5%a4%8d%e8%90%bd%e5%90%8e%e4%ba%8e-signal-molly-signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://piefed.world/post/1503394&#34;&gt;https://piefed.world/post/1503394&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这条 Piefed 帖子称，Android 版 Signal 分叉 Molly 的最新发布停留在 7 月 31 日 v8.19.2-4，已有约三个月没有更新，并以 Signal 后续修复的漏洞为例，建议暂时回到主线客户端。核对 Molly 官方 GitHub 发布记录后，最新条目的版本和日期确实与帖文一致；这说明发布滞后，但本次没有逐项审计 APK 或所有安全补丁。&lt;/p&gt;
-&lt;p&gt;补充读取的 Molly README 将项目定位为加强版 Signal，提供数据库口令加密、内存清理、自动锁定、UnifiedPush 及代理支持，并宣称通常每两周同步 Signal，安全补丁会尽快应用。额外防护与去 Google 化功能是其吸引力，实际发布停顿则使这些优势需要与持续维护风险一起评价。&lt;/p&gt;
-&lt;p&gt;原帖提到某漏洞已在 Signal 8.27.1 修复，但没有列出完整漏洞编号和各平台受影响范围，因此不据此扩写为“所有聊天都可被读取”或已经发生实际攻击。本条关注的是版本与维护差距，不能把帖子警告当作全面安全审计结论。&lt;/p&gt;
-&lt;p&gt;补充发布记录：
-
-  &lt;a href=&#34;https://github.com/mollyim/mollyim-android/releases&#34;&gt;https://github.com/mollyim/mollyim-android/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-296-points--评论-172-comments--投稿者deeplogin--发布时间2026-10-31-182341-0800&#34;&gt;
-  HN 热度 296 points | 评论 172 comments | 投稿者：DeepLogin | 发布时间：2026-10-31 18:23:41 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-296-points--%e8%af%84%e8%ae%ba-172-comments--%e6%8a%95%e7%a8%bf%e8%80%85deeplogin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-182341-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50314666&#34;&gt;https://news.ycombinator.com/item?id=50314666&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;这次维护停顿被视为集中维护官方客户端的一项现实理由，但不代表第三方客户端在理想条件下无法安全存在。&lt;/li&gt;
-&lt;li&gt;希望去 Google 化并使用 UnifiedPush 的用户仍有实际需求，官方客户端若提供这些能力可以减少对分叉的依赖。&lt;/li&gt;
-&lt;li&gt;官方独立 APK 并非完全没有更新渠道，但提示用户点击安装与后台全自动更新需要区分。&lt;/li&gt;
-&lt;li&gt;一些原先为多设备功能使用 Molly 的人发现官方 Signal 也已支持相关场景，因此正在重新评估是否还需分叉。&lt;/li&gt;
-&lt;li&gt;漏洞讨论应具体区分通话挂断后媒体可能继续传输与读取其他聊天，不能把不同影响混为一谈。&lt;/li&gt;
-&lt;li&gt;面向普通用户保持简洁与额外维护多个发行版本之间存在成本，不能把所有缺失功能都理解成敌视高级用户。&lt;/li&gt;
-&lt;li&gt;反对集中化路线的评论认为，开源客户端并不自动消除对单一服务命名空间的依赖。&lt;/li&gt;
-&lt;li&gt;另一分叉的维护者称已临时回补通话和证书相关修复，同时明确其构建仍有架构与 Android 版本限制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-proton-ceo-取消-ai-使用情况重新面试-protons-ceo-cancels-ai-re-interviews&#34;&gt;
-  9. Proton CEO 取消 AI 使用情况“重新面试” (Proton&amp;rsquo;s CEO Cancels AI &amp;lsquo;Re-Interviews&amp;rsquo;)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-proton-ceo-%e5%8f%96%e6%b6%88-ai-%e4%bd%bf%e7%94%a8%e6%83%85%e5%86%b5%e9%87%8d%e6%96%b0%e9%9d%a2%e8%af%95-protons-ceo-cancels-ai-re-interviews&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.404media.co/protons-ceo-cancels-ai-re-interviews/&#34;&gt;https://www.404media.co/protons-ceo-cancels-ai-re-interviews/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;404 Media 的 Joseph Cox 报道，Proton CEO Andy Yen 在周五全员会上取消了几乎覆盖全公司的 AI“重新面试”。报道依据六名现职员工和约两小时会议录音，称这些面试原本要求员工解释 AI 使用情况，并使他们担心若使用不足会被解雇。&lt;/p&gt;
-&lt;p&gt;Yen 承认沟通方式存在问题，但表示仍将继续推动 AI，解释取消面试是因为员工已开始讨论和学习相关工具。他宣布 11 月进行组织与人才配置调整，同时称不会因 AI 失去工作。CTO Bart Butler 也承认处理失当，并强调有效使用 AI 不代表放弃安全、架构和工程原则。&lt;/p&gt;
-&lt;p&gt;员工反应并不一致：有人认为这是进展，也有人称原先准备通过面试衡量的内容将成为绩效评估的一部分，因此方向并未改变。报道把争议放在此前有关安全顾虑、管理言辞和内部恐惧文化的调查背景下；这些指控来自采访和取得的材料，不等于已证实 Proton 产品发生安全泄漏。Proton 未回应本篇报道的置评请求，取消面试也不能直接解释为停止采用 AI。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-290-points--评论-247-comments--投稿者cdrnsf--发布时间2026-10-31-012445-0800&#34;&gt;
-  HN 热度 290 points | 评论 247 comments | 投稿者：cdrnsf | 发布时间：2026-10-31 01:24:45 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-290-points--%e8%af%84%e8%ae%ba-247-comments--%e6%8a%95%e7%a8%bf%e8%80%85cdrnsf--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-012445-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50307183&#34;&gt;https://news.ycombinator.com/item?id=50307183&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;真正令人担心的是用 AI 要求制造恐惧、压制异议，取消某种面试形式未必改变这种管理文化。&lt;/li&gt;
-&lt;li&gt;加快开发不能省略安全验证，尤其是以隐私和安全作为核心卖点的公司。&lt;/li&gt;
-&lt;li&gt;愿意为安全付溢价的客户不一定愿意为更多 AI 功能付同样价格，产品定位需要与客户需求一致。&lt;/li&gt;
-&lt;li&gt;如果员工已经高质量完成工作，应关注结果而不是把是否使用 AI 本身当作目的。&lt;/li&gt;
-&lt;li&gt;将事件解释成沟通失败与承认原先做法不当是两回事，领导层的回应仍需实质问责。&lt;/li&gt;
-&lt;li&gt;也有读者认为多篇报道主要依赖同一家媒体，在看到具体服务后果前不必仅因推行 AI 就迁移邮箱。&lt;/li&gt;
-&lt;li&gt;有迁移经历者建议使用自有域名，让以后更换邮件服务时主要调整路由而不是更换对外地址。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-nesformer把-nes-cpu-编译进约-1gb-的-qwen-权重-show-hn-a-working-nintendo-in-1gb-of-qwen-weights&#34;&gt;
-  10. nesformer：把 NES CPU 编译进约 1GB 的 Qwen 权重 (Show HN: A working Nintendo in ~1GB of Qwen weights)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-nesformer%e6%8a%8a-nes-cpu-%e7%bc%96%e8%af%91%e8%bf%9b%e7%ba%a6-1gb-%e7%9a%84-qwen-%e6%9d%83%e9%87%8d-show-hn-a-working-nintendo-in-1gb-of-qwen-weights&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://github.com/dbreunig/nesformer&#34;&gt;https://github.com/dbreunig/nesformer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;nesformer 将 NES 的 6502 CPU 逻辑编译为标准 Qwen3.5 架构检查点，权重由编译器计算而非训练得到。它沿用 Qwenputer 的方法，把寄存器、2KB 工作 RAM 与程序 ROM 放进 Gated DeltaNet 状态；模型逐 token 生成执行轨迹，宿主程序负责图像、控制器输入及垂直消隐中断等外围部分。因此“运行任天堂”不等于整台游戏机的每个组件都装进权重。&lt;/p&gt;
-&lt;p&gt;README 列出约 4.666 亿参数，bf16 权重约 933MB，但只有约 930 万参数非零，压缩后约 3.3MB。作者称已用参考模拟器、CPU 测试日志和游戏运行轨迹校验，并在所附测试游戏上逐帧匹配；这些是项目自身的验证结果，不是对全部 NES 游戏的兼容性证明。&lt;/p&gt;
-&lt;p&gt;当前只支持 NROM、mapper 0 和官方指令，程序不能跳到 RAM 执行，也没有声音，部分图形时序近似处理。最快引擎依赖跳过零块及空转等待等优化，整体仍比真机慢 150–290 倍；原版 transformers 路径更慢。项目更适合展示确定性电路如何映射到模型架构，而非作为实用模拟器或模型已经学会游戏规则的证据。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-282-points--评论-144-comments--投稿者dbreunig--发布时间2026-10-31-004022-0800&#34;&gt;
-  HN 热度 282 points | 评论 144 comments | 投稿者：dbreunig | 发布时间：2026-10-31 00:40:22 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-282-points--%e8%af%84%e8%ae%ba-144-comments--%e6%8a%95%e7%a8%bf%e8%80%85dbreunig--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-10-31-004022-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50306442&#34;&gt;https://news.ycombinator.com/item?id=50306442&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;作者强调参考实现、明确规格与一致性测试为 AI 编程提供了扎实边界，不能只把成功归因于两句提示。&lt;/li&gt;
-&lt;li&gt;权重通过编译而非训练得到，展示了模型架构承载确定性计算的另一种方式。&lt;/li&gt;
-&lt;li&gt;项目很有趣，但其效率也反衬传统确定性程序在这类任务上的优势。&lt;/li&gt;
-&lt;li&gt;不仅 CPU 逻辑，连 RAM 也由模型状态承载，是一些读者觉得最出乎意料的部分。&lt;/li&gt;
-&lt;li&gt;质疑者认为数字逻辑本就能转成权重，因此仍需解释这项转换在技术上带来的新价值。&lt;/li&gt;
-&lt;li&gt;针对性测试可以支持“已经工作”的判断，却不等于穷举所有输入或证明完全等同于原 CPU。&lt;/li&gt;
-&lt;li&gt;有读者进一步设想把小型虚拟机和工具编译进模型内部，但这仍是关于未来用途的推测。&lt;/li&gt;
-&lt;li&gt;随机采样而非贪心解码会怎样影响执行，引发了关于有效指令与系统稳定性的疑问。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

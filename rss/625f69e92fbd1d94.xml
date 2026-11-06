@@ -5,10 +5,85 @@
     <description>Blog of independent game and app developer Matt Sephton. Featuring vintage Macintosh, game development, digital artwork, Japanese esoterica, video game reviews, hacks and tips, and much more.</description>
     <link>https://blog.gingerbeardman.com/</link>
     <atom:link href="https://blog.gingerbeardman.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Oct 2026 14:40:28 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Oct 2026 14:40:28 +0000</lastBuildDate>
+    <pubDate>Fri, 06 Nov 2026 13:02:15 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:02:15 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
 
+    
+      
+        <item>
+          <title>Extending the Nokia FastMile 5G Gateway 3.2</title>
+          <description>&lt;p&gt;My home internet is a &lt;a href=&quot;https://www.nokia.com/networks/fixed-networks/fastmile/&quot;&gt;Nokia FastMile 5G Gateway 3.2&lt;/a&gt;—an unlocked unit I bought and own, not a carrier box. Under the hood it’s just OpenWrt with a locked-down Nokia web UI bolted on top. So I spent a few evenings opening it up and extending it. It’s my router and I’ll pry if I want to!&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-root&quot;&gt;Getting root&lt;/h2&gt;
+
+&lt;p&gt;Interestingly this required no exploit—I drove the device’s own management client. The firmware only sends TR-069 out the &lt;em&gt;cellular&lt;/em&gt; interface, so a local ACS never hears from it. &lt;a href=&quot;https://forums.whirlpool.net.au/thread/3m01n58r?p=2&quot;&gt;Others&lt;/a&gt; hit the same wall and the fix is a dollar of credit at &lt;a href=&quot;https://cloud.tr069.pro&quot;&gt;cloud.tr069.pro&lt;/a&gt;: log in as superadmin, point CWMP at the cloud ACS, and from there enable the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hguser&lt;/code&gt; shell accounts the UI hides. SSH in, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;su -&lt;/code&gt;, done. Then turn CWMP back off.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-better-ui&quot;&gt;A better UI&lt;/h2&gt;
+
+&lt;p&gt;The stock web UI is minified Angular that references a Dynamic DNS backend but wires no page to it—the feature is shipped and orphaned. Rather than patch the bundle, I built a companion page styled to match, reusing the device’s own RSA/AES login crypto so it auto-logs-in and survives firmware bumps. I also improved the login prompt, added dark mode that follows host system, and added some quality-of-life tweaks to the navigation and styling. And I put back three superadmin-only pages the stock menu hides from the admin role—ACS, Access Control (the SSH and CWMP switches), and Cell Management—shown only when you’re actually logged in as superadmin.&lt;/p&gt;
+
+&lt;h2 id=&quot;hidden-features&quot;&gt;Hidden features&lt;/h2&gt;
+
+&lt;p&gt;DDNS is live now, backed by OpenWrt’s full &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ddns-scripts&lt;/code&gt; (~70 providers) rather than Nokia’s crippled native CGI. Network-wide ad blocking is in too, using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adblock-fast&lt;/code&gt; and the latest lists.&lt;/p&gt;
+
+&lt;h2 id=&quot;whole-home-vpn&quot;&gt;Whole-home VPN&lt;/h2&gt;
+
+&lt;p&gt;Perhaps the best part. Public teardowns of an earlier version FastMile hardware said IPsec wasn’t really supported—but I found that’s not true for my unit, which is hardware version 3.2. The kernel has the XFRM/ESP bits, so I pulled strongSwan from OpenWrt’s own feed (unpacked by hand, the device’s exact architecture isn’t on the mirror) and brought up an &lt;a href=&quot;https://adguard-vpn.com/&quot;&gt;AdGuard VPN&lt;/a&gt; IKEv2 tunnel—cert chain verified, traffic exiting in my choice of location. The two gotchas were forcing IPv4 for the outer connection and exempting the tunnel address from Nokia’s WAN NAT, which was quietly rewriting packets before encryption.&lt;/p&gt;
+
+&lt;p&gt;For speed and a wider choice of 65 locations I settled on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adguardvpn-cli&lt;/code&gt;, running as a proper service with per-device routing, DNS through the tunnel, and automatic fallback. I wired it into the web UI as its own VPN page and added an &lt;a href=&quot;https://xbarapp.com/&quot;&gt;xbar&lt;/a&gt; plugin so I monitor and can flip locations from the Mac menu bar.&lt;/p&gt;
+
+&lt;h2 id=&quot;persistence&quot;&gt;Persistence&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;opkg&lt;/code&gt; is right there, so the box is mine to extend—the catch is that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; is read-only squashfs with a tmpfs overlay, so anything outside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/data&lt;/code&gt; vanishes on reboot. Persistence runs through a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/data/sysupgrade.tgz&lt;/code&gt; archive that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1restore&lt;/code&gt; unpacks at boot, so my first real job was a verified, restorable backup of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/configs&lt;/code&gt; before touching anything I couldn’t undo.&lt;/p&gt;
+
+&lt;p&gt;All of it was developed against a local copy of the UI first, and all of it reversible. If I ever sell the router I’ll restore the original backup that I took before I started changing things around.&lt;/p&gt;
+
+&lt;h2 id=&quot;open-source&quot;&gt;Open Source&lt;/h2&gt;
+
+&lt;p&gt;My scripts to do this are open source at: &lt;a href=&quot;https://github.com/gingerbeardman/fastmile-addons&quot;&gt;github.com/gingerbeardman/fastmile-addons&lt;/a&gt;&lt;/p&gt;
+</description>
+          <author>by Matt Sephton</author>
+          <pubDate>Fri, 06 Nov 2026 10:40:00 +0000</pubDate>
+          <link>https://blog.gingerbeardman.com/2026/11/06/extending-the-nokia-fastmile-5g-gateway-32/</link>
+          <guid isPermaLink="true">https://blog.gingerbeardman.com/2026/11/06/extending-the-nokia-fastmile-5g-gateway-32/</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Shuhari and the current tech landscape</title>
+          <description>&lt;p&gt;Shuhari (ja: 守破離) is a Japanese concept that describes the stages of learning on the way to mastery.&lt;/p&gt;
+
+&lt;p&gt;It’s usually translated as “follow the rules, break the rules, transcend the rules,” but I like to think of it as “adhere to the system, fuck the system, …now we have a new system.”&lt;/p&gt;
+
+&lt;p&gt;The game industry right now feels like it’s well into the “break the rules” stage of Shuhari. People are recompiling games to run anywhere (even in your browser), and cease-and-desist letters are flying. When will the dominoes stop falling, and what will the landscape look like?&lt;/p&gt;
+
+&lt;p&gt;That brings me back to something I wrote about a couple of months ago (though at the pace things are moving, it feels like a year ago): &lt;a href=&quot;/2026/08/02/games-at-the-press-of-a-button-the-rip-o-bot/&quot;&gt;Games at the press of a button: The Rip-O-Bot (1989)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In 1989, &lt;em&gt;Bubble Bobble&lt;/em&gt; designer Fukio Mitsuji imagined a machine that could generate copycat games at the press of a button. His answer was that, in the end, the game is the idea. If we’re in Shuhari’s “break” stage now, the question is what the new system will look like when things settle.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-goes-it&quot;&gt;How goes it?&lt;/h2&gt;
+
+&lt;p&gt;Of course, decompilation has been possible since the first software was written, and today can be as easy as loading a binary into Ghidra and pressing decompile. Compiling the code goes the other way, and whilst a little bit more involved it’s still pretty standard stuff. If you’re wondering how the quality of the decompilation and recompilation is, it’s not guaranteed (as it evident by the poor quality of some of them) but it can be proven along the way.&lt;/p&gt;
+
+&lt;p&gt;Decompilation can be proven through static analysis and, naturally, recompilation. The operation of the recompiled game can be validated by comparing memory contents, driving with input scripts and checking the game behaves identically, and even comparing graphics at a pixel level. I don’t know if people are doing this, but it’s the way I would approach it.&lt;/p&gt;
+
+&lt;p&gt;The connecting glue most of these “recomps” seem to add are system specific stuff: bespoke graphics renderers to fit the host system, control and user interface layers, and sometimes quality of life features. Of course, LLMs/agents can make all of this iteration so much easier and quicker so it’s no surprise they are responsible for this new wave of game releases, but make no mistake all of this is possible without their use. It would just take a lot longer.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-next&quot;&gt;What next?&lt;/h2&gt;
+
+&lt;p&gt;It seems increasingly likely as time goes on that the future of game making, and software development on the whole, will not involve coding as we have known it for much of the last century. That both terrifies and excites me in equal measure. What a wild and crazy time to be alive! At this point I have no idea how things will be at the end of the month, but I’m excited to find out.&lt;/p&gt;
+
+&lt;p&gt;This came out of &lt;a href=&quot;https://twitter.com/k_u/status/2091857533275426822&quot;&gt;an exchange with Kuniaki Watanabe&lt;/a&gt;, creator of &lt;a href=&quot;/tags/maboshi/&quot;&gt;MaBoShi&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+          <author>by Matt Sephton</author>
+          <pubDate>Fri, 06 Nov 2026 10:18:00 +0000</pubDate>
+          <link>https://blog.gingerbeardman.com/2026/11/06/shuhari-and-the-current-tech-landscape/</link>
+          <guid isPermaLink="true">https://blog.gingerbeardman.com/2026/11/06/shuhari-and-the-current-tech-landscape/</guid>
+        </item>
+      
     
       
         <item>

@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "edcb1d4763935081023653c3",
-      "title": "Android 内存优化(1) - MAT 使用入门",
-      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 这组文章里的 MAT 技巧仍然适合学习 Java heap、Dominator Tree、Retained Size、引用链这些基础概念，但默认抓取流程已经变了。早期流程是 Eclipse/DDMS 导出 Android HPROF，再用 hprof-conv 转成 MAT 能读的格式；现在应优先在 Android Studio Memory Profiler 里…",
-      "image": null,
-      "publishedAt": "2015-04-11T10:10:29Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
-      "detailPath": "articles/edcb1d4763935081023653c3.json"
-    },
-    {
-      "id": "45c59bddec1a44274e2d27b4",
-      "title": "我来有赞了",
-      "summary": "今天晚上终于有时间来写写博客了，想想决定从ucloud离职到现在，差不多一个多月了。关于离职的原因，一句话两句话也说不清楚，离职这事也纠结了好久，正好顺着年后跳槽高峰期，从上海跳到了美丽大杭州。",
-      "image": null,
-      "publishedAt": "2015-04-03T23:10:49Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/04/03/leave-ucloud-to-youzan/",
-      "detailPath": "articles/45c59bddec1a44274e2d27b4.json"
-    },
-    {
-      "id": "1795430768818b2a50f9e16b",
-      "title": "Android性能优化后续",
-      "summary": "前言 本文是一篇译文，原文 Android Performance Case Study Follow-up 的作者是大名鼎鼎的 Romain Guy 。本文讲述了Android性能优化的一些技巧、方法和工具。 译文正文 两年前，我发表了一篇名为 Android Performance Case Study 的文章，来帮助Android开发者了解需要使用什么工具和技术手段来确定、追踪和优化性能问题。 那篇文章以一个Twitter客户端 Falcon Pro 为典范，其开发人员为 Joaquim Vergès. Joaquim人不错，他允许我在我的文章中使用它的程序作为例子，并且快速处理了我发现的所有问题。一切都OK，直到Joaquim 从头开始开发Falcon Pro 3，前不久在他准备发布它的新应用的时候，…",
-      "image": null,
-      "publishedAt": "2015-03-31T01:29:00Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/03/31/android-performance-case-study-follow-up/",
-      "detailPath": "articles/1795430768818b2a50f9e16b.json"
-    },
-    {
       "id": "72ed4eab2103e8a0f73bbeea",
       "title": "加速Android Studio/Gradle构建",
       "summary": "已经使用Android Studio进行开发超过一年，随着项目的增大，依赖库的增多，构建速度越来越慢，现在最慢要6分钟才能build一个release的安装包，在网上查找资料，发现可以通过一些配置可以加快速度，这里跟大家分享一下。 开启gradle单独的守护进程 在下面的目录下面创建 gradle.properties 文件： /home/<username>/.gradle/ (Linux) /Users/<username>/.gradle/ (Mac) C:\\Users\\<username>\\.gradle (Windows) 并在文件中增加： 1 org . gradle . daemon = true 同时修改项目下的 gradle.properties 文件也可以优化： 1 2 3 4 5 6 7…",
@@ -69,7 +36,7 @@
     {
       "id": "5873e54fd2b41a0213778bfd",
       "title": "Android 小技巧 - 5",
-      "summary": "本文是一篇译文,这篇是这个系列的第五篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第五篇里 SDK “以为没有其实有”的功能比较多： ViewDragHelper 帮你做自定义拖拽容器、 PopupWindow 实现非 Activity 的临时浮层、 ThumbnailUtils 直接生成图片或视频缩略图、 ActivityOptions 自定义 Activity 跳转动画与 launch display；性能向的有 SparseArray 替代 HashM…",
+      "summary": "本文是一篇译文,这篇是这个系列的第五篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：原文发表于 2014 年，本译文发表于 2015 年。旧 Support Library 链接改为 AndroidX；外部存储、缩略图和应用语言补充新版本用法。清除应用数据和数据库让出事务的副作用也在对应条目中明确说明。",
       "image": null,
       "publishedAt": "2015-03-14T16:32:11Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -80,7 +47,7 @@
     {
       "id": "9cb020a7aea7b0bb84b559e2",
       "title": "Android 小技巧 - 4",
-      "summary": "本文是一篇译文,这篇是这个系列的第四篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第四篇集中讲两类东西：一类是被 XML 属性藏起来的特性， android:weightSum 、 android:duplicateParentState 、 android:clipChildren 、 android:fillViewport 、 android:tileMode 、 android:scaleType 这些点一上手就能直接省一段自定义 View 的代码；…",
+      "summary": "本文是一篇译文,这篇是这个系列的第四篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：这些 View/XML API 大多仍可用，但原文关于配置变化、裁剪和文件原子性的说明需要修正。Gradle 3.0 起默认启用 Daemon； AtomicFile 的实现则以下面的 Android 4.4.4 与 Android 16 源码对照说明。",
       "image": null,
       "publishedAt": "2015-03-14T16:31:02Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -91,7 +58,7 @@
     {
       "id": "f01711a110aa2f1e8b02e55d",
       "title": "Android 小技巧 -3",
-      "summary": "本文是一篇译文,这篇是这个系列的第三篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方坐在并没有将这个工具的作用讲出来,我会补充上去. 第三篇的关键词是”原本写过却懒得查文档的事情”： UrlQuerySanitizer 替你解析 query 参数、 PhoneNumberUtils.formatNumber 帮你按区域格式化电话号码、 LocalBroadcastManager 让进程内广播省去权限和跨进程开销；Fragment 相关有 setArguments 与 DialogFragment.setSho…",
+      "summary": "本文是一篇译文,这篇是这个系列的第三篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：原文发表于 2014 年，本译文发表于 2015 年。平台 android.app.Fragment 在 API 28 弃用，下面的 Fragment 建议改用 AndroidX；LocalBroadcastManager 与 Otto 已停止维护。其余条目保留原顺序，并补充 API 版本和使用边界。",
       "image": null,
       "publishedAt": "2015-03-14T16:29:57Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -200,8 +167,8 @@
     },
     {
       "id": "d1272f1472b8ca6b898f91b5",
-      "title": "为 Nexus5 编译 AndroidL 固件",
-      "summary": "接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无疑会加快看代码的效率和积极性. 所以这篇文章,就讲解一下如何自己编译AndroidL的源码,并且在Nexus5上跑起来. 至于为何需要自己编译固件,而不是直接安装Google给出的工厂固件?原因是Google给出的工厂固件是User版本,是没法随心所欲Push东西进去的. 所以我们需要编译自己的Userdebug版本. 本文假设你已经下载了AndroidL的源码,并且有一台Nexus5手机(…",
+      "title": "为 Nexus 5 编译 Android Lollipop 固件",
+      "summary": "技术复核（2026-10-13） ：这是一篇 Nexus 5 / Android Lollipop 的历史教程，设备与工具链已过期。文中的 LRX22C 二进制对应 **Android 5.0.1 / AOSP android-5.0.1_r1 **，下文据此明确源码、驱动和刷机条件。新学习环境另补 Android 16 Cuttlefish 示例；不要把新版本的构建命令与旧真机固件混用。 接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无…",
       "image": null,
       "publishedAt": "2015-02-04T12:51:19Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -245,7 +212,7 @@
     {
       "id": "7786ff6380e4bf5d0d6b1a00",
       "title": "Android 性能优化之 Systrace 工具介绍(一)",
-      "summary": "这篇是 2015 年的 Systrace 工具介绍，里面提到的 Eclipse、Device Monitor、 sdk/tools/systrace 、User 版本不能抓 Trace 等流程，已经不适合作为今天的默认操作路径。旧文章保留的是 Systrace 的基本概念：它为什么能把 SurfaceFlinger、WindowManager、View、CPU 调度等系统行为放到一张时间线上。今天真正抓取和分析 Trace，应优先看 Android Perfetto 系列目录 。 现在的工具流程可以直接按下面理解： 旧流程 新流程 Eclipse / Android Studio Device Monitor 里点 Systrace 开发者选项里打开 System Tracing，或使用 adb shell…",
+      "summary": "技术复核（2026-10-13） ：本文原写于 2015 年。Systrace 的事件时间线仍有参考价值，Eclipse / Device Monitor 入口已过期；旧脚本参数以下文核对的 AOSP android-5.0.0_r1 为准。新增命令以 Android 11 / API 30 及以上的 Perfetto 为例，旧系统差异另列。后续文章见 Android Perfetto 系列目录 。 旧流程 现在的对应方式 Eclipse / Device Monitor 的 Systrace 按钮 Android 9 / API 28 起可用设备端 System Tracing；也可通过 ADB 采集 systrace.py 调用 atrace 并生成 HTML Perfetto 采集命令生成二进制 tra…",
       "image": null,
       "publishedAt": "2015-01-30T12:24:31Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -289,7 +256,7 @@
     {
       "id": "90fd86fe0cea02e37d6191e9",
       "title": "使用 Android Studio 查看 Android Lollipop 源码",
-      "summary": "Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本(今天发布了1.1,果断已经升级了).",
+      "summary": "技术复核（2026-10-13） ：原文面向 Android 5.0 Lollipop 与 Android Studio 1.x。下面的 IDEGen 流程已按 AOSP android-5.0.0_r1 源码核对，属于历史方案；新增的 AIDEGen 示例以 android-16.0.0_r1 文档为准。 Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本.",
       "image": null,
       "publishedAt": "2015-01-16T13:54:32Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -310,8 +277,8 @@
     },
     {
       "id": "322d29268520909b573e8474",
-      "title": "Android 性能优化之过渡绘制 - 实战篇",
-      "summary": "前言 上一篇 文章 从理论的角度讲解了一下什么是过渡绘制，以及可以用来查看和确认过渡绘制的工具，还提供了一些优化过渡绘制的方法。对代码和布局比较熟悉的人，看完上一篇其实就已经可以对自己的应用进行优化了。我记得有人说过，用iphone你只需要保证苹果有节操即可，用Android你就得保证所有的Android开发者都有节操。但现实是残酷的，现在Android市场上，有很多粗制滥造的应用，其中不乏大厂之作，各位打开过渡绘制按钮，就知道我所言非虚。作为一个Android开发人员，我肯定是更希望Android能一步一步好起来，超越iphone。 这篇文章从实战的角度，讲解了一个过渡绘制的优化过程。当然这里用到的只是很少的一部分，毕竟每个应用差别很大，优化方式也各不一样。所以这篇文章仅供参考，想把这块做好还是要下功夫的。…",
+      "title": "Android 性能优化之过度绘制 - 实战篇",
+      "summary": "前言 上一篇 文章 从理论的角度讲解了一下什么是过度绘制，以及可以用来查看和确认过度绘制的工具，还提供了一些优化过度绘制的方法。对代码和布局比较熟悉的人，看完上一篇其实就已经可以对自己的应用进行优化了。我记得有人说过，用iphone你只需要保证苹果有节操即可，用Android你就得保证所有的Android开发者都有节操。但现实是残酷的，现在Android市场上，有很多粗制滥造的应用，其中不乏大厂之作，各位打开过度绘制按钮，就知道我所言非虚。作为一个Android开发人员，我肯定是更希望Android能一步一步好起来，超越iphone。 这篇文章从实战的角度，讲解了一个过度绘制的优化过程。当然这里用到的只是很少的一部分，毕竟每个应用差别很大，优化方式也各不一样。所以这篇文章仅供参考，想把这块做好还是要下功夫的。…",
       "image": null,
       "publishedAt": "2015-01-13T11:38:53Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -464,8 +431,8 @@
     },
     {
       "id": "f5954d12ac36e56b3b2a66d2",
-      "title": "Android 性能优化之过渡绘制 - 理论篇",
-      "summary": "博客有一段时间没有更新了，到了新公司后，一直比较忙，博客也更新地不那么频繁了。最近一直在看Android上和性能相关的部分，也就是所谓的Android性能优化，才发现Android性能这一块，自己懂得还是太少了，所以从上层开始看，也算是一点一点入门吧。这个系列将讲解学习过程中总结的和性能相关的内容。 首先将讲解一下GPU过渡绘制，也是开发者最直接接触的部分吧，这个内容将分为两个部分来将讲，第一部分初步讲解一下gpu过渡绘制的原理，和一些优化建议，第二部分将用实际例子来讲解优化GPU过渡绘制的一般步骤。 过渡绘制概念 GPU过渡绘制的概念：GPU过度绘制指的是在屏幕一个像素上绘制多次(超过一次),比如一个TextView后有背景，那么显示文本的像素至少绘了两次，一次是背景，一次是文本。GPU过度绘制或多或少对性…",
+      "title": "Android 性能优化之过度绘制 - 理论篇",
+      "summary": "2026-10-13 更新：本文原写于 2014 年，源码节选已对照 AOSP android-4.4.4_r2 。Overdraw 的概念仍适用，ADT、monitor、Hierarchy Viewer 和旧 OpenGL 跟踪入口已过时；Android Studio 3.1 起改用 Layout Inspector 查看层级，帧时序使用 Perfetto。下文保留历史源码，并补充 Android 12 / Android 16 的对应边界。 博客有一段时间没有更新了，到了新公司后，一直比较忙，博客也更新地不那么频繁了。最近一直在看Android上和性能相关的部分，也就是所谓的Android性能优化，才发现Android性能这一块，自己懂得还是太少了，所以从上层开始看，也算是一点一点入门吧。这个系列将讲解学…",
       "image": null,
       "publishedAt": "2014-10-20T15:19:23Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -659,6 +626,39 @@
       "sourceTitle": "Memozine",
       "link": "https://memozine.me/2014/06/27/breeze",
       "detailPath": "articles/d999c1310b189164268847d2.json"
+    },
+    {
+      "id": "0c82fa7733bc676db6418717",
+      "title": "玩木工【四】：开始刨木头",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2014-06-25T10:45:27Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw004/",
+      "detailPath": "articles/0c82fa7733bc676db6418717.json"
+    },
+    {
+      "id": "ad2693ad1414d2f954ae8847",
+      "title": "玩木工【三】：Stanley 铁刨的翻新",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2014-06-22T20:23:01Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw003/",
+      "detailPath": "articles/ad2693ad1414d2f954ae8847.json"
+    },
+    {
+      "id": "bf1da07a92f29044707e1ddd",
+      "title": "一个程序员的Ubuntu安装的那些软件",
+      "summary": "鄙人程序猿一枚，Android开发，常年使用Ubuntu（主要是买不起Mac，O(∩_∩)O哈哈~）。分享一下自己使用的那些软件，如果你有什么好的软件。欢迎与我交流。 输入法 ：开始的时候是用的fcitx，后来搜狗出了linux版本，选择之。 下载链接 办公软件 ：WPS Linux，真心很好用，比libreOffice好用不止一点. 下载链接 注意：下载alpah版本. 浏览器 ：chrome 和 FireFox，不解释，一个浏览器不够用的。这两个，开发调试都够了。关于支付宝的话，可以安装支付宝官方给的一个脚本就可以了。 邮件客户端 ： ThunderBird Mail 火狐家的，算比较好用的了。 笔记 ：为知笔记 ，为知真是业界良心，唯一一家提供linux版本的，做的还挺不错的，虽然有一些不好，但是相信以…",
+      "image": null,
+      "publishedAt": "2014-06-22T04:57:52Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2014-06-22-my-soft-in-ubuntu/?utm_source=rss",
+      "detailPath": "articles/bf1da07a92f29044707e1ddd.json"
     }
   ]
 }

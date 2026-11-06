@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "5e0c27700151ad7616aee262",
+      "title": "落選供養",
+      "summary": "TIL：「 落選供養 」。這四字短語是個源自日文的網路流行語，也有被原樣照搬到中文圈使用。 顧名思義，「落選供養」的意思是將自己投稿到創作徵選比賽中但沒有被選上任何名次的作品，發表於公開平台上，以作「供養」，也就是作爲記錄與紀念。無論是文字、繪圖，還是音樂作品，都能找到「落選供養」的蹤跡。 會使用含有祭祀意味的「 供養 」二字來形容這個動作，除了比喻這些無緣中選、「被棄置於作品堆中」的投稿如同「已然死亡」一般，也代表着作者本身將作品於日後公開發表的行爲，除了發展自身作品集之外，也是爲了讓自己的心血「死」得體面一些。 說到音樂的部分，在 YouTube 或是 Niconico 上使用「落選供養」四字作爲關鍵詞搜尋，會找到許多音樂創作者發佈的落選作，而且絕大多數似乎都是用來參加 音遊曲 徵選比賽的作品。有些歌曲雖…",
+      "image": null,
+      "publishedAt": "2026-09-19T12:27:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/rejected-works-archive/",
+      "detailPath": "articles/5e0c27700151ad7616aee262.json"
+    },
+    {
+      "id": "d460d4d565fdfa6587de4b9c",
+      "title": "家宽获得「静态」IPv6 地址",
+      "summary": "现在运营商基本会下发公网 IPv6 地址。只要设备支持，差不多都能原生接入 IPv6 网络。 但获得的地址是动态，设备如果重启就会变。本文分享在 OpenWRT 下通过 DHCPv6 Prefix-Length Hint 技术来固化公网 IPv6 网段的实践经验。",
+      "image": null,
+      "publishedAt": "2026-09-19T07:11:03Z",
+      "sourceId": "34509afbbca01958",
+      "sourceTitle": "涛叔",
+      "link": "https://tao.zz.ac/unix/static-ipv6.html",
+      "detailPath": "articles/d460d4d565fdfa6587de4b9c.json"
+    },
+    {
+      "id": "50cb9595bec2edafd62958b1",
+      "title": "《人生也是一個遊戲》：讀者專區",
+      "summary": "謝謝你讀《人生也是一個遊戲》。這裡有書中沒收錄的4個玩家心態，也會持續更新更多情報與工具。",
+      "image": "https://media.alexhsu.com/img/book-leave-review.webp",
+      "publishedAt": "2026-09-19T06:00:24Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/books/game/reader",
+      "detailPath": "articles/50cb9595bec2edafd62958b1.json"
+    },
+    {
+      "id": "badf92bda741d86f190e6d18",
+      "title": "欢迎使用 zz.Pages 发布静态网页",
+      "summary": "zz.Pages 是 zz.NIC 官方提供的静态 网页托管平台，对标 GitHub Pages。zz.NIC 很早就对外提供代码托管服务 zz.Git。 但 zz.Git 没有接入默认 Pipeline Runner，也就无法自动执行构建任务。考虑到 zz.NIC 很多项目会在 zz.Git 上发布，而且项目需要自己的主页；同时，zz.NIC 也愿意为社区提供 更加简便的 Web 托管平台，所以就推出了 zz.Pages 服务。",
+      "image": null,
+      "publishedAt": "2026-09-19T02:55:02Z",
+      "sourceId": "34509afbbca01958",
+      "sourceTitle": "涛叔",
+      "link": "https://tao.zz.ac/zz/pages.html",
+      "detailPath": "articles/badf92bda741d86f190e6d18.json"
+    },
+    {
       "id": "3bdcdc3c61c3546f527c9bde",
       "title": "不需要「我的」",
       "summary": "如果改成以下，句子會更加精簡",
@@ -69,7 +113,7 @@
     {
       "id": "c82ba76f440d4c268fe1f596",
       "title": "耗时大半年，开源一本 Android 电子书《Android 技术内幕：系统机制、性能优化与工具实战》",
-      "summary": "Android 内部机制的资料，网上不缺。AOSP、官方文档、博客、论文、trace 讨论，想找都找得到。麻烦的是各说各的版本：这篇是 Android 12 的结论，那篇没写版本，再一篇是某台机器上的现象。 AIW 想补的就是这个缺口。全称 Android Internal Wiki，中文书名是《Android 技术内幕：系统机制、性能优化与工具实战》，五部分二十六章，正文钉在 Android 17。仓库准备开源： https://github.com/Gracker/android-internals-wiki 打开仓库能拿到的是二十六章正文、一份完整目录，和每周编一次的 EPUB。 这二十六章现在到了可以拿出来给人读的程度。读到哪一段和源码对不上，欢迎提 issue 或者 PR。",
+      "summary": "Android 内部机制的资料，网上不缺。AOSP、官方文档、博客、论文、trace 讨论，想找都找得到。麻烦的是各说各的版本：这篇是 Android 12 的结论，那篇没写版本，再一篇是某台机器上的现象。 AIW 想补的就是这个缺口。全称 Android Internal Wiki，中文书名是《Android 技术内幕：系统机制、性能优化与工具实战》，五部分二十六章，正文钉在 Android 17。仓库现已公开： https://github.com/Gracker/android-internals-wiki 打开仓库能拿到的是二十六章正文、一份完整目录，和每周编一次的 EPUB。 这二十六章现在到了可以拿出来给人读的程度。读到哪一段和源码对不上，欢迎提 issue 或者 PR。",
       "image": null,
       "publishedAt": "2026-09-18T16:00:00Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -615,50 +659,6 @@
       "sourceTitle": "I'm j2hongming",
       "link": "https://j2hongming.github.io/2026/09/14/wisdom-tooth-extraction-experience/",
       "detailPath": "articles/67c7ef4f3106a42bc526c5dc.json"
-    },
-    {
-      "id": "3bb092bf8fa11892dc89f3bc",
-      "title": "我其實不喜歡Hsu這個姓氏，直到⋯⋯",
-      "summary": "每次向外國人介紹自己，我都得把Hsu唸成Shoe。這個難唸又難懂的姓氏，曾經讓我很討厭自己的名字。",
-      "image": null,
-      "publishedAt": "2026-09-14T15:59:58Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/hsu",
-      "detailPath": "articles/3bb092bf8fa11892dc89f3bc.json"
-    },
-    {
-      "id": "45051f2d46b23edf0c98778c",
-      "title": "知乎主动向反贼约稿？",
-      "summary": "（摘要）我的博客是被墙的，居然收到了来自知乎的约稿邀请。",
-      "image": "https://springwood.me/invitation-from-zhihu/cover.svg",
-      "publishedAt": "2026-09-14T15:00:00Z",
-      "sourceId": "85bf8b6cb2e22489",
-      "sourceTitle": "沉舟侧畔 Blog",
-      "link": "https://springwood.me/invitation-from-zhihu/",
-      "detailPath": "articles/45051f2d46b23edf0c98778c.json"
-    },
-    {
-      "id": "e6adfcaa6e6ee770d9d425b4",
-      "title": "周记137 工作的变化?以及爬上新山头",
-      "summary": "工作进展 从纽约回来有两周半了，比想象的时间要短，因为感觉发生了好多事情。 某天在纽约地铁上，没有信号看不了手机，地铁摇摇晃晃，脑子里晃出一个想法，我还是要向上走，不能再呆在原地了。三年多过去，原本那种想一直苟着的心情，似乎在纽约的这段日子发生了改变。更具体的念头是，如果院里之前那个职位有发出来，我应该去申请。 趁着地铁停站开门的空隙，我看了学校的job posting，发现有一个博物馆的职位！具体读了要求觉得我很喜欢，下了地铁给家属看，他说对啊我前阵子跟你说过这个职位。我自己居然完全不记得。 从纽约回来后那个周末把陈年的简历翻出来（已经忘了存在哪里了，最后是从在学校账号的申请记录里找到的），一并和cover letter修改了之后，就提交了申请。 周一回到办公室，随手搜了那个职位的同事和上级，然后又查了他们…",
-      "image": "https://2.gravatar.com/avatar/590c33e1447ea328d6aaf6dbe754f9833bc45546a1d33572c602175872cebf73?s=96&d=identicon&r=G",
-      "publishedAt": "2026-09-14T14:53:18Z",
-      "sourceId": "3ccb6844373fea4a",
-      "sourceTitle": "河马水槽",
-      "link": "https://hippostank.org/2026/09/14/%e5%91%a8%e8%ae%b0137-%e5%b7%a5%e4%bd%9c%e7%9a%84%e5%8f%98%e5%8c%96%e4%bb%a5%e5%8f%8a%e7%88%ac%e4%b8%8a%e6%96%b0%e5%b1%b1%e5%a4%b4/",
-      "detailPath": "articles/e6adfcaa6e6ee770d9d425b4.json"
-    },
-    {
-      "id": "d5d936f5d5a4767d12636e34",
-      "title": "为什么我不买大盘，只坚持投资个股",
-      "summary": "投资美股已经有些年了，之前也基于自己的体会和理解陆陆续续写了一些文章，每个持续投资的人都会有自己的理念和方法论，我也不例外。今天想来谈论一个有意思的话题，为什么我美股投资，对于我主要的资金（401k以外的），多年来都不买大盘（标普500），只投资个股，并且是坚持持续地投资个股。 巴菲特曾经说过，对于大多数人来说，标普500指数，是一个最佳的选择。一些在争论是不是应该投资大盘的时候，经常听到这样的回答——“费那么大劲，还不如直接买标普500呢”。这其实是一个普遍的问题，但是不见得参与讨论的人都说得清楚。如果某段时间的投资收益高于标普，尚且会被如此评论，如果这段时间的收益低于标普，那就更得被奚落了。但是我思考了几次这个问题，我觉得对于个股的投资，于我来说，有着诸多清晰且不可替代的好处。 首先，要理解的一点是，为什…",
-      "image": "https://www.raychase.net/wp-content/uploads/2026/09/investment.jpg",
-      "publishedAt": "2026-09-14T05:33:00Z",
-      "sourceId": "ed6c79eba03be7d3",
-      "sourceTitle": "四火的唠叨",
-      "link": "https://www.raychase.net/8305",
-      "detailPath": "articles/d5d936f5d5a4767d12636e34.json"
     }
   ]
 }

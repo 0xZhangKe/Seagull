@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "594cbd3a42b4699471450da8",
-      "title": "FILM NEVER DIE X 刘海平平的小周 黑白暗房工作坊",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2025-03-28T07:50:05Z",
-      "sourceId": "7bc89208e325b0b5",
-      "sourceTitle": "FilmNeverDie",
-      "link": "https://mp.weixin.qq.com/s/7g0ns3Xg4qfKiM6EWwBMoQ",
-      "detailPath": "articles/594cbd3a42b4699471450da8.json"
-    },
-    {
-      "id": "979313163f76d14f99c992ea",
-      "title": "记录一下今天新买的花花",
-      "summary": "养绿植很久了，一直没有记录的习惯。这次开始打算记录一下 ✿ 柔浩秋海棠 ✿ 鸡瓜蔓绿绒",
-      "image": "https://cloud-cn.snhere.cn/uploads/2025/03/20250328070042816.webp",
-      "publishedAt": "2025-03-28T07:06:45Z",
-      "sourceId": "8e17c0739728a2f3",
-      "sourceTitle": "思宁::SNHERE",
-      "link": "https://www.snhere.com/%e8%ae%b0%e5%bd%95%e4%b8%80%e4%b8%8b%e4%bb%8a%e5%a4%a9%e6%96%b0%e4%b9%b0%e7%9a%84%e8%8a%b1%e8%8a%b1/",
-      "detailPath": "articles/979313163f76d14f99c992ea.json"
-    },
-    {
-      "id": "e372ecb68025a44a1677bc19",
-      "title": "頭腦體操",
-      "summary": "「好長喔，有沒有影片版？」這是你最近看到一篇文章、看到密密麻麻文字時的第一反應嗎？不要擔心，不只你一個人會這樣，我之前有一段時間也有這個症狀。但是，我們的頭腦到底怎麼了？什麼時候開始連讀篇文章都會覺得累了？",
-      "image": null,
-      "publishedAt": "2025-03-28T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/brain-exercise",
-      "detailPath": "articles/e372ecb68025a44a1677bc19.json"
-    },
-    {
       "id": "24f6868182a9f2eaafd4b8b8",
       "title": "静态博客究竟适不适合你",
       "summary": "什么是静态博客 如果你有兴趣建一个博客，或许已经听说过一些静态博客的工具，比如 Hugo， Hexo ，Jekyll。和传统“所见即所得”的博客平台（新浪博客、 Medium 、WordPress）不同，用户能完全掌控自己的源数据，通过一些设置和编程命令，就能将存在本地的文章转换为网站并发布出去。",
@@ -80,7 +47,7 @@
     {
       "id": "d0c75b5a4e8dcd7078f19f4b",
       "title": "Android Perfetto 系列 5：Android App 基于 Choreographer 的渲染流程",
-      "summary": "本文介绍了 App 开发者不经常接触到但在 Android Framework 渲染链路中非常重要的一个类 Choreographer，包括 Choreographer 的引入背景、简介、部分源码解析、与 MessageQueue 的交互、在 APM 中的应用，以及手机厂商基于 Choreographer 的一些优化思路。 Choreographer 的引入主要是配合 Vsync，为上层应用的渲染提供稳定的 Message 处理时机。当 Vsync 信号到来时，系统通过对 Vsync 信号周期的调整，控制每一帧绘制操作的时机。目前主流手机的屏幕刷新率已达到 120Hz，即每 8.3ms 刷新一次，系统为配合屏幕刷新频率，相应调整 Vsync 周期。当应用有待处理的帧回调时，Choreographer 请求 V…",
+      "summary": "本文介绍了 App 开发者不经常接触到但在 Android Framework 渲染链路中非常重要的一个类 Choreographer，包括 Choreographer 的引入背景、简介、部分源码解析、与 MessageQueue 的交互、在 APM 中的应用，以及手机厂商基于 Choreographer 的一些优化思路。 Choreographer 将待执行的帧回调与显示时序协调起来，而不是自行调整屏幕刷新率。以 120 Hz 为例，刷新间隔约 8.33 ms；是否能按时交付帧还取决于 CPU 调度、GPU、Buffer 和合成管线。应用按需请求回调，不是每个物理 Vsync 都要重新绘制。本文也会区分 FrameCallback、FrameMetrics、gfxinfo、Looper 和 Perfetto…",
       "image": null,
       "publishedAt": "2025-03-26T10:55:11Z",
       "sourceId": "1aa1837ca33d8d55",
@@ -659,6 +626,39 @@
       "sourceTitle": "程序员的喵",
       "link": "http://catcoding.me/p/fiber-network-on-ckb/",
       "detailPath": "articles/9d6396241040b7f0b55bbcf3.json"
+    },
+    {
+      "id": "ca37b147e8d87f2dad919a56",
+      "title": "Three.js Journey Notes 4 - Advanced Techniques Part2",
+      "summary": "课程链接：three.js journey 其他几篇： Notes 1 - Basics Notes 2 - Classic Techniques Notes 3 - Advanced Techniques Part1 Notes 5 - Advanced Techniques Part3 Raycaster and Mouse Events# Raycaster is used to detect if there is a wall in front of the player, or test if the laser gun hit something, test if something is currently under the mouse to simulate mouse events, e…",
+      "image": "https://static.zhuzi.dev/threejs-journey/blender-hamburger-1.png",
+      "publishedAt": "2025-03-16T00:00:00Z",
+      "sourceId": "b9ab37590e1047a6",
+      "sourceTitle": "Blah Blah Booooom",
+      "link": "https://zhuzi.dev/posts/threejs-journey-notes-4-advanced-techniques-part2/",
+      "detailPath": "articles/ca37b147e8d87f2dad919a56.json"
+    },
+    {
+      "id": "f46c8b9ae56b8fa855d5342f",
+      "title": "延期许久的二月记 Vol.3",
+      "summary": "丈夫运气不佳的一个月",
+      "image": null,
+      "publishedAt": "2025-03-16T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/feb-2025/",
+      "detailPath": "articles/f46c8b9ae56b8fa855d5342f.json"
+    },
+    {
+      "id": "2a88ca73039257d56d84b6af",
+      "title": "你是數位韭菜嗎？",
+      "summary": "有沒有發現自己常常一滑手機就是三小時，一打開網購 App 就噴掉半個月薪水，總是對每天看到的貼文和新聞感到生氣，或是明明已經訂了五個串流平台卻還是覺得「少了這一個就看不到最新影集」？",
+      "image": null,
+      "publishedAt": "2025-03-16T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/self-defense-checklist",
+      "detailPath": "articles/2a88ca73039257d56d84b6af.json"
     }
   ]
 }

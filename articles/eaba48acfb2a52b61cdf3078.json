@@ -1,0 +1,11 @@
+{
+  "id": "eaba48acfb2a52b61cdf3078",
+  "title": "一键清理所有高科技水印工具 「蒸矢」for macOS",
+  "summary": "V站看到 警告！分享淘宝截图可能给你带来危险 于是有个很久的 idea 终于得到实施了。 https://github.com/est/Distill-SVG 把蒸馏成矢量图 SVG ，简称 蒸矢 😃 市面上有很多AI辅助把照片转SVG的，但其实矢量图不适合拿来做这事。GUI这类大量色块的截图倒是非常适合。 发行两个 dmg 13MB 完整版，适合普通用户 DistillSVG-arm64-full.dmg 400KB 适合能自己折腾 python 环境的。 DistillSVG-arm64-python.dmg 后者需要 pip 装 cv Pillow 等。可以共享已有环境避免重复安装 也可以自己 git clone 命令行操作 转文字通过 macOS 自带 OCR ，图标、头像等会尽可能给你扣出来保留 对…",
+  "content": "<p>V站看到 <a href=\"https://v2ex.com/t/1253980\" target=\"_blank\" rel=\"noopener noreferrer\">警告！分享淘宝截图可能给你带来危险</a> </p>\n<p>于是有个很久的 idea 终于得到实施了。</p>\n<p>https://github.com/est/Distill-SVG</p>\n<p>把蒸馏成矢量图 SVG ，简称 蒸矢 😃</p>\n<p>市面上有很多AI辅助把照片转SVG的，但其实矢量图不适合拿来做这事。GUI这类大量色块的截图倒是非常适合。</p>\n<p>发行两个 dmg</p>\n<ul>\n<li>13MB 完整版，适合普通用户 <code>DistillSVG-arm64-full.dmg</code></li>\n<li>400KB 适合能自己折腾 python 环境的。<code>DistillSVG-arm64-python.dmg</code></li>\n</ul>\n<p>后者需要 pip 装 cv Pillow 等。可以共享已有环境避免重复安装 </p>\n<p>也可以自己 git clone 命令行操作</p>\n<p>转文字通过 macOS 自带 OCR ，图标、头像等会尽可能给你扣出来保留</p>\n<p>对于常见的聊天界面加水印够用了。文字识别有问题，你用文本编辑器打开 SVG 改下就行。</p>\n<p>如果你说水印藏在头像里，那的确（暂时）还没啥好的办法</p>\n<p>目前对于图标太多，需要多处定位的效果很差，蒸矢变蒸💩了。一般的稀疏聊天界面勉强还行</p>\n<p>下面是生成的 SVG 样例：</p>\n<p><img alt=\"\" src=\"https://github.com/est/Distill-SVG/raw/refs/heads/main/docs/demo.svg\"></p>\n<p>有效果不佳的 case 欢迎提 issue 。只要我 tokens 额度够一定想办法解决 🤣</p>\n<p>虽然代码基本都是AI搓的，但也算是我第一个macOS软件作品。</p>",
+  "image": "https://github.com/est/Distill-SVG/raw/refs/heads/main/docs/demo.svg",
+  "publishedAt": "2026-11-05T14:16:00Z",
+  "sourceId": "a864c53722a17b19",
+  "sourceTitle": "est's blog",
+  "link": "https://blog.est.im/2026/stdout-41"
+}

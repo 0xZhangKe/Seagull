@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "id": "be975cc08a77eb974d6829ac",
-      "title": "About Uncle Roger",
-      "summary": "https://www.bbc.com/news/world-asia-china-55651798 When I first knew him, to be honest, he’s already unlikeable to me but I couldn’t really grasp why until I knew about these things. He’s never been a respectable figure to me since then. Even when he started to make fun of CCP from around 2023 , I still never find it sincere. Judging from his past actions,…",
-      "image": null,
-      "publishedAt": "2025-01-09T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/about-uncle-roger/",
-      "detailPath": "articles/be975cc08a77eb974d6829ac.json"
-    },
-    {
-      "id": "59feb1be34d274978ea6e93e",
-      "title": "修复Geyser下基岩版玩家无法在地狱基岩层放置方块",
-      "summary": "在 plugins\\Geyser-Spigot\\config.yml 中把第160行的 above-bedrock-nether-building: false 改为 true ，重启服务器，问题解决~ 原理：geyser把下界翻译成了末地，会导致下界天空变成末地的样式，不过可以解决基岩版玩家在地狱基岩层的问题。",
-      "image": null,
-      "publishedAt": "2025-01-08T17:26:00Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/184/",
-      "detailPath": "articles/59feb1be34d274978ea6e93e.json"
-    },
-    {
-      "id": "3416c61ed8db5874f7fb3d3b",
-      "title": "NeoDB shortcode 更新",
-      "summary": "突然的，更新了一下本地的 hugo，从 0.12x 一下子更新到了 0.140。 然后本地启动博客 hugo server 出现了一堆报错。 Don’t Panic❗️ 按照报错一条一条解决一下就好啦。主要就是一些 function deprecated，一般会提示用什么替代。 然后发现最大需要改动的是 NeoDB shortcode。",
-      "image": "https://neodb.social/m/item/tv/2024/12/10/a8c3222c-654f-4dc9-bfc5-f7e69c392b7e.jpg",
-      "publishedAt": "2025-01-08T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/2025-01-08-neodb-shortcode/",
-      "detailPath": "articles/3416c61ed8db5874f7fb3d3b.json"
-    },
-    {
       "id": "fd01237774c4950f7875a33a",
       "title": "生意差",
       "summary": "最近常和檸檬卷一起玩《歧路旅人 2》。遊戲裡面有個角色叫做帕爾特提歐，他是一個優秀的商人，總是能在到處發掘商機，把原本已經奄奄一息的市場重新振興起來。",
@@ -659,6 +626,39 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/being-poor-is-expensive",
       "detailPath": "articles/283d69bc2f578ab4d90c2bdb.json"
+    },
+    {
+      "id": "43242f31cc2b82435ed4f9ef",
+      "title": "Ghostty 的前世今生 👻",
+      "summary": "Ghostty 是一个用 Zig 写的终端模拟器，尽管采用的是邀请制，它的热度也一直不减，其作者 Mitchell Hashimoto 时不时就会在 X 上更新 Ghostty 最新的进展，Mitchell 在 10 月份也发表了题为 Ghostty 1.0 is Coming 的文章，谈到 Ghostty 1.0 计划在 12 月正式对外发布， 但眼看 12 月底就要到了，真不知道在元旦前能否如期而至 （已经在 2024-12-27 正式发布： https://ghostty.org/ ）。",
+      "image": null,
+      "publishedAt": "2024-12-26T14:32:08Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2024/12/26/hi-ghostty/",
+      "detailPath": "articles/43242f31cc2b82435ed4f9ef.json"
+    },
+    {
+      "id": "8dabc53f98093b24fc4e0fcf",
+      "title": "强大的壳-Shell Script",
+      "summary": "Shell脚本我们经常会使用，平时自己折腾Nas会用到，工作中为了配置CI会用到，自己的电脑上最近为了配置自己的命令行环境也要使用shell来进行配置。不过之前的shell功力都来自每次使用的时候网上搜索，于是最近就找了一本《Linux命令行与shell脚本编程大全》看了看，看完之后更加感受到Shell的强大，特地写个文章来分享一下。 首先呢，shell它也是一种语言，不过因为使用到的shell环境不同语法会有一些差异，在Linux上我们常用的shell是Bash，在Mac上面常用的shell为zsh，大体的语法相似的。编程语言的基本要素，Shell都是支持的，它支持变量，支持if判断，case选择，循环等结构化的编程逻辑控制，也支持基本的算数运算，同时还支持使用函数来复用代码。 简单介绍一下它的语法，首先是…",
+      "image": "https://img.isming.me/image/linux-shell.jpeg",
+      "publishedAt": "2024-12-26T05:45:07Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-12-26-linux-shell/?utm_source=rss",
+      "detailPath": "articles/8dabc53f98093b24fc4e0fcf.json"
+    },
+    {
+      "id": "e9f04530dc8b886ffb6f3815",
+      "title": "絮絮叨叨的台北單人遊記",
+      "summary": "Hero photo by Hugo_ob on Pixabay （回到南",
+      "image": null,
+      "publishedAt": "2024-12-26T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/taipei-trip/",
+      "detailPath": "articles/e9f04530dc8b886ffb6f3815.json"
     }
   ]
 }

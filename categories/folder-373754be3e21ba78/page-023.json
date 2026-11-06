@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "5bdcb93534d5b399d6a5642b",
+      "title": "Napoleon and the Galileo files",
+      "summary": "Why Napoleon stole the Galileo files, and what happened next",
+      "image": "https://static.wixstatic.com/media/7ac8d7_166112b83ea94793b7f7d22a5f5d9895~mv2.jpg/v1/fit/w_985,h_668,al_c,q_80/file.png",
+      "publishedAt": "2023-11-27T07:52:52Z",
+      "sourceId": "a299506056c17c85",
+      "sourceTitle": "Cricetus Cricetus",
+      "link": "https://www.cricetuscricetus.co.uk/post/napoleon-and-the-galileo-files",
+      "detailPath": "articles/5bdcb93534d5b399d6a5642b.json"
+    },
+    {
+      "id": "e01d51c393374a77af0f500c",
+      "title": "Easter egg emoji: converting pixels into particles",
+      "summary": "I’m fascinated with Moai so I always try to squeeze an appearance into my games. Moai in video games is a meme, or easter egg , going all the way back to 1983. But my game YOYOZO ( out now for the Playdate handheld ) is about capturing stars in space using a yoyo, so how could I get a Moai in it? The source of my inspiration was a trip to Japan back in 2004…",
+      "image": "https://cdn.gingerbeardman.com/images/posts/yoyozo-emoji.png#pixel",
+      "publishedAt": "2023-11-26T20:41:00Z",
+      "sourceId": "625f69e92fbd1d94",
+      "sourceTitle": "⌘I",
+      "link": "https://blog.gingerbeardman.com/2023/11/26/easter-egg-emoji-converting-pixels-into-particles/",
+      "detailPath": "articles/e01d51c393374a77af0f500c.json"
+    },
+    {
       "id": "94f53f41c04eaf5a5a3eb8f2",
       "title": "macOS 按域名切换 DNS 解析",
       "summary": "在工作用的电脑上，为了访问公司内网，需要让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器。 之前我一直使用 dnsmasq 实现按域名切换解析，这样的话有几个问题： dnsmasq 的默认上游是静态配置，并不是在所有网络环境中都能直接用 114 了事，尤其是在一些需要认证的环境中 需要改系统的 DNS 配置，同时每次系统更新之后又要重新改一遍 直到昨天我才知道 BSD 系支持一个按域名设置 resolver 的功能 ( man 5 resolver )，直接用就好了。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Jaz's Blog",
       "link": "https://jazco.dev/2023/09/28/request-coalescing/",
       "detailPath": "articles/eb949d34890ec26aef99de11.json"
-    },
-    {
-      "id": "425774d048f4eb0d04a269d2",
-      "title": "Exploring Command-line space time",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2023-09-26T00:00:00Z",
-      "sourceId": "ce9ad60b092e38b0",
-      "sourceTitle": "fabiensanglard.net",
-      "link": "https://fabiensanglard.net/st/index.html",
-      "detailPath": "articles/425774d048f4eb0d04a269d2.json"
-    },
-    {
-      "id": "ec666c75abee95d6eeb14f43",
-      "title": "Enum vs Enum Class in C++",
-      "summary": "In C++, enumerations (enums) are a powerful tool for creating named sets of integer constants. They help improve code readability and maintainability by providing meaningful names to numeric values. However, C++ offers two ways to define enums: the traditional enum and the more modern enum class. In this blog, we’ll explore the differences between these two…",
-      "image": null,
-      "publishedAt": "2023-09-22T00:00:00Z",
-      "sourceId": "46b0ff3e55cf7fb7",
-      "sourceTitle": "Suneet Agrawal",
-      "link": "https://agrawalsuneet.github.io/blogs/enum-vs-enum-class-in-c++/",
-      "detailPath": "articles/ec666c75abee95d6eeb14f43.json"
     }
   ]
 }

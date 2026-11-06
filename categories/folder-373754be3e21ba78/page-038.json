@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "b63b25ceb4420a348454f39b",
+      "title": "Litmus-Testing Kotlin's Many Memory Models",
+      "summary": "When writing multiplatform code, Kotlin's three compiler backends each have different memory models which must be considered. JavaScript is single-threaded so you really can do no wrong. The JVM model is arguably too permissive where you can do incorrect things and have them work 99.9% of the time. When targeting native, Kotlin enforces some invariants whic…",
+      "image": null,
+      "publishedAt": "2020-04-08T00:00:00Z",
+      "sourceId": "a33fc95b48c6e3ea",
+      "sourceTitle": "Jake Wharton",
+      "link": "https://jakewharton.com/litmus-testing-kotlins-many-memory-models/",
+      "detailPath": "articles/b63b25ceb4420a348454f39b.json"
+    },
+    {
+      "id": "e682dfcd65ac3c156b4ec72b",
+      "title": "A New Concept for Usable Touch Interaction in Cars",
+      "summary": "A design concept exploring how to improve touch interfaces in cars",
+      "image": null,
+      "publishedAt": "2020-04-01T00:00:00Z",
+      "sourceId": "a520cafa32a3537c",
+      "sourceTitle": "The Turn Signal",
+      "link": "https://www.theturnsignalblog.com/a-new-concept-for-usable-touch-interaction-in-cars/",
+      "detailPath": "articles/e682dfcd65ac3c156b4ec72b.json"
+    },
+    {
       "id": "048cad96c05048a5d45fab96",
       "title": "Traffic shaping using iptables and tc",
       "summary": "Last month I received an automated alert indicating excessive bandwidth usage, usually a sign of trouble. When this happens, you should follow a standard incident procedure, trying to isolate the source of the traffic before shutting it down. The cause of this incident was not what I expected however... requiring a different kind of mitigation than a simple…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Ahmad Shadeed",
       "link": "https://ishadeed.com/article/min-max-css/",
       "detailPath": "articles/9793009e0314d5d35de64aa3.json"
-    },
-    {
-      "id": "b22f5ddbd8a73da89f9c9950",
-      "title": "My Decade in Review",
-      "summary": "A personal reflection.",
-      "image": null,
-      "publishedAt": "2020-01-01T00:00:00Z",
-      "sourceId": "1018e192c5700d48",
-      "sourceTitle": "overreacted — A blog by Dan Abramov",
-      "link": "https://overreacted.io/my-decade-in-review/",
-      "detailPath": "articles/b22f5ddbd8a73da89f9c9950.json"
-    },
-    {
-      "id": "84905febf606c4b1e690ffa2",
-      "title": "The Polygons of Another World",
-      "summary": "Let's kick off the year with a series about Another World!",
-      "image": null,
-      "publishedAt": "2020-01-01T00:00:00Z",
-      "sourceId": "ce9ad60b092e38b0",
-      "sourceTitle": "fabiensanglard.net",
-      "link": "https://fabiensanglard.net/another_world_polygons/index.html",
-      "detailPath": "articles/84905febf606c4b1e690ffa2.json"
     }
   ]
 }

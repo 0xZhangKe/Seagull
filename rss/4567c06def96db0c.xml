@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Johnny.Decimal</title><description>Content feed for Johnny.Decimal.</description><link>https://johnnydecimal.com/</link><image><url>https://johnnydecimal.com/favicon/web-app-manifest-512x512.png</url><title>Johnny.Decimal</title><link>https://johnnydecimal.com/</link></image><item><title>Get 18% more keys for free</title><link>https://johnnydecimal.com/blog/0258-18pc-more-keys-for-free/</link><guid isPermaLink="true">https://johnnydecimal.com/blog/0258-18pc-more-keys-for-free/</guid><description>You probably only have 78 keys on your keyboard. So why do you never use 12 of them?</description><pubDate>Wed, 21 Oct 2026 03:43:24 GMT</pubDate><content:encoded>&lt;p&gt;You probably only have 78 keys on your keyboard.&lt;sup&gt;&lt;a href=&quot;#user-content-fn-mac-us&quot; id=&quot;user-content-fnref-mac-us&quot; data-footnote-ref=&quot;true&quot; aria-describedby=&quot;footnote-label&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; So why do you never use 12 of them?&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Johnny.Decimal</title><description>Content feed for Johnny.Decimal.</description><link>https://johnnydecimal.com/</link><image><url>https://johnnydecimal.com/favicon/web-app-manifest-512x512.png</url><title>Johnny.Decimal</title><link>https://johnnydecimal.com/</link></image><item><title>CLI v5, .config v2, supports Bear – please update</title><link>https://johnnydecimal.com/blog/0263-cli-v5/</link><guid isPermaLink="true">https://johnnydecimal.com/blog/0263-cli-v5/</guid><description>The JD command-line utility now supports Bear. As a result, the config file has a breaking change. Please update.</description><pubDate>Sat, 07 Nov 2026 01:37:38 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://johnnydecimal.com/documentation/jd-cli&quot;&gt;JD CLI&lt;/a&gt; has been updated to v5. It now supports Bear as a JDex.&lt;/p&gt;
+&lt;p&gt;This required a breaking change to the &lt;a href=&quot;https://johnnydecimal.com/documentation/configuration&quot;&gt;configuration file&lt;/a&gt; which is now versioned &lt;code&gt;2&lt;/code&gt;. The &lt;code&gt;jdex&lt;/code&gt; property is now an object.&lt;/p&gt;
+&lt;pre class=&quot;astro-code astro-code-themes catppuccin-latte synthwave-84&quot; style=&quot;--shiki-light:#4c4f69;--shiki-dark:#bbbbbb;--shiki-light-bg:#eff1f5;--shiki-dark-bg:#262335;overflow-x:auto&quot; tabindex=&quot;0&quot; data-language=&quot;json&quot;&gt;&lt;code&gt;&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;{&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;  &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;version&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#FE640B;--shiki-dark:#F97E72&quot;&gt; 2&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;  &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;systems&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt; [&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;    {&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;      &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;sys&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#40A02B;--shiki-dark:#FF8B39&quot;&gt; &amp;quot;P76&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;      &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;title&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#40A02B;--shiki-dark:#FF8B39&quot;&gt; &amp;quot;My personal system&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;      &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;root&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#40A02B;--shiki-dark:#FF8B39&quot;&gt; &amp;quot;/Users/you/Documents/P76 My personal system&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;,&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;      &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;jdex&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt; {&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#1E66F5;--shiki-dark:#72F1B8&quot;&gt;app&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#72F1B8&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;--shiki-light:#40A02B;--shiki-dark:#FF8B39&quot;&gt; &amp;quot;bear&amp;quot;&lt;/span&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt; }&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;    }&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;  ]&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;--shiki-light:#7C7F93;--shiki-dark:#BBBBBB&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;updating&quot;&gt;Updating&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git -C ~/.local/share/johnnydecimal/cli pull&lt;/code&gt; to get v5.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;jd&lt;/code&gt; which reads your config file, causing the CLI to automatically update it to v2.&lt;/li&gt;
+&lt;li&gt;If you use my &lt;a href=&quot;https://johnnydecimal.com/documentation/agent-skills&quot;&gt;agent skills&lt;/a&gt;, &lt;code&gt;npx skills update jdex johnnydecimal&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;now-checks-for-updates&quot;&gt;Now checks for updates&lt;/h3&gt;
+&lt;p&gt;From v5, the CLI reads GitHub tags once/day and will notify you when there&amp;#39;s an update. &lt;code&gt;jd update&lt;/code&gt; will perform the update.&lt;/p&gt;
+&lt;p&gt;No telemetry is sent. Run &lt;code&gt;jd update --help&lt;/code&gt; for opt-out instructions.&lt;/p&gt;</content:encoded><dc:creator>Johnny</dc:creator></item><item><title>Get 18% more keys for free</title><link>https://johnnydecimal.com/blog/0258-18pc-more-keys-for-free/</link><guid isPermaLink="true">https://johnnydecimal.com/blog/0258-18pc-more-keys-for-free/</guid><description>You probably only have 78 keys on your keyboard. So why do you never use 12 of them?</description><pubDate>Wed, 21 Oct 2026 03:43:24 GMT</pubDate><content:encoded>&lt;p&gt;You probably only have 78 keys on your keyboard.&lt;sup&gt;&lt;a href=&quot;#user-content-fn-mac-us&quot; id=&quot;user-content-fnref-mac-us&quot; data-footnote-ref=&quot;true&quot; aria-describedby=&quot;footnote-label&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; So why do you never use 12 of them?&lt;/p&gt;
 &lt;p&gt;These keys, of course, are the F-keys &lt;kbd&gt;F1&lt;/kbd&gt; through &lt;kbd&gt;F12&lt;/kbd&gt;. By default, macOS uses them for the glyphs printed thereon. But tell me the last time you pressed any of these:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;kbd&gt;F3&lt;/kbd&gt; for Mission Control.&lt;/li&gt;
@@ -928,67 +949,4 @@ There will be no more meetings of the association until the Fall, but this does 
 &lt;p&gt;This isn&amp;#39;t quite that. You still have to think about your own backups, for example. That&amp;#39;s mostly it, but that&amp;#39;s important. Each Pod can back itself up to an S3 bucket, and if you need help with that, let me know.&lt;/p&gt;
 &lt;p&gt;If you want to &amp;#39;self-host&amp;#39; apps in the simplest way possible for a very reasonable price, I can&amp;#39;t recommend PikaPods highly enough.&lt;/p&gt;</content:encoded><dc:creator>Johnny</dc:creator></item><item><title>100 email list unsubscriptions is a good thing</title><link>https://johnnydecimal.com/blog/0209-a-hundred-unsubscriptions/</link><guid isPermaLink="true">https://johnnydecimal.com/blog/0209-a-hundred-unsubscriptions/</guid><description>I see losing 100 people from my email list as a feature. It means those that who remain, care.</description><pubDate>Mon, 25 May 2026 04:31:21 GMT</pubDate><content:encoded>&lt;p&gt;Since sending last week&amp;#39;s &lt;em&gt;this week at JDHQ&lt;/em&gt;, my email subscriber numbers have gone down by about 100.&lt;/p&gt;
 &lt;p&gt;I see this as a positive. What&amp;#39;s the point having a couple of thousand people on an email list if none of them actually care what you&amp;#39;re writing? What would be the benefit in trying to widen this audience by … what, just writing more generically? Writing less about the stuff that I&amp;#39;m actually doing and more about stuff that might &amp;#39;drive engagement&amp;#39;?&lt;/p&gt;
-&lt;p&gt;90 engaged people are far more interesting to me than 100 who just never bothered to click &amp;#39;unsubscribe&amp;#39;.&lt;/p&gt;</content:encoded><dc:creator>Johnny</dc:creator></item><item><title>This week at JDHQ – 2026-05-25</title><link>https://johnnydecimal.com/blog/0208-this-week-2026-05-25/</link><guid isPermaLink="true">https://johnnydecimal.com/blog/0208-this-week-2026-05-25/</guid><description>The weekly email update, cross-posted here.</description><pubDate>Mon, 25 May 2026 04:28:33 GMT</pubDate><content:encoded>&lt;blockquote&gt;
-&lt;p&gt;Originally sent to the &lt;a href=&quot;https://johnnydecimal.com/support/contact-community/mailing-list-rss-social&quot;&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0199-this-week-2026-05-18&quot;&gt;Last week&amp;#39;s staff meeting&lt;/a&gt; and then careful management of projects in Things paid off. Lucy often notes that, as small business owners, one of the primary burdens is that you no longer have someone telling you what to do.&lt;/p&gt;
-&lt;p&gt;As in, sometimes it&amp;#39;s nice when someone just tells you what to do! That&amp;#39;s easy, right? Turn up to work and just do what you&amp;#39;re told, for money, for a week. Terrific. Well that&amp;#39;s not how life is when you run your own business – which is the dream, of course – but it&amp;#39;s a double-edged dream-sword. Now, as well as doing all the work, you have to make the hard decisions. It can be very easy to just float through a week &lt;em&gt;without&lt;/em&gt; doing that, and to feel busy, but to not really achieve much.&lt;/p&gt;
-&lt;p&gt;So planning and our Monday-morning meeting, which we just had again, is good. (This is obvious. I&amp;#39;ll say it anyway.)&lt;/p&gt;
-&lt;h2 id=&quot;what-we-did-last-week&quot;&gt;What we did last week&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;We have a new home page for the first time ever.
-&lt;ul&gt;
-&lt;li&gt;Realising that &amp;#39;the Johnny.Decimal universe&amp;#39; is now much more than the system of numbers, we&amp;#39;ve made the signed-out new visitor homepage more of an introduction to us.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/homepage&quot;&gt;johnnydecimal.com/homepage&lt;/a&gt; will land you there regardless of your signed-in status.&lt;/li&gt;
-&lt;li&gt;I also built one of those 5-email onboarding sequences that I&amp;#39;ve always avoided. But I heard from people – thanks, Michael – that, done well, they can be really helpful.&lt;/li&gt;
-&lt;li&gt;And I think I&amp;#39;ve done this one well. &lt;del&gt;You can see the 5 steps starting at &lt;a href=&quot;https://johnnydecimal.com/university/welcome/01-install-your-folders&quot;&gt;jdu/welcome/01-install-your-folders&lt;/a&gt;. (The emails are mostly one liners pointing you to this sequence of pages.)&lt;/del&gt; I&amp;#39;ve updated it – the emails now only exist as emails. Why make you visit the site if the text is already in your inbox? And now there are 3 not 5.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Launched a new mini-series &lt;a href=&quot;https://johnnydecimal.com/university/obsidian/&quot;&gt;Everyday Obsidian&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;Lucy&amp;#39;s fairly new to Obsidian, and it&amp;#39;s a big, complex app.&lt;/li&gt;
-&lt;li&gt;In this series I&amp;#39;ll show Lucy practical everyday tips for Obsidian. This is &amp;#39;how normal people use it every day&amp;#39;, not &amp;#39;how to become an Obsidian guru&amp;#39;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Launched a new mini-series &lt;a href=&quot;https://johnnydecimal.com/university/online-security&quot;&gt;Online security essentials&lt;/a&gt;.&lt;/del&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;We&amp;#39;ve been wanting to do this one for a while. It&amp;#39;s a little passion project of ours.&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;This is the basics of staying safe online, and is something we hope you can send to your non-nerd loved ones. We&amp;#39;re each recording it with our dad in mind.&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Video:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://youtu.be/oE_-X0NlRPY&quot;&gt;The power of process in small business&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;(Will turn this into a playlist at JDU shortly.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Blog:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0200-three-things-about-data&quot;&gt;undermanager: Three things about data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0203-ids-in-your-calendar&quot;&gt;Why wouldn&amp;#39;t every meeting have an ID?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0204-psa-pdfs-leak-metadata&quot;&gt;PSA: PDFs leak data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0205-baserow-reveals-context-switching&quot;&gt;Context switching&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0206-shutdown-to-force-your-hand&quot;&gt;Going to try shutting down my laptop every night&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://johnnydecimal.com/blog/0207-startup-routine&quot;&gt;Startup routine&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-were-working-on-this-week&quot;&gt;What we&amp;#39;re working on this week&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Continuing the two series as noted above.&lt;/li&gt;
-&lt;li&gt;We&amp;#39;ve put &lt;code&gt;21.30 Learn with Lucy - the command line&lt;/code&gt; on hold as we&amp;#39;re at capacity.&lt;/li&gt;
-&lt;li&gt;No Zoom sessions this week – I&amp;#39;m putting a shape to some plans, but we&amp;#39;re moving cross-continentally next week which is always a big disruption, so I&amp;#39;m not planning anything new for this week or next.
-&lt;ul&gt;
-&lt;li&gt;(If you live in Taiwan, let us know!)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Did a lot of work last week on &lt;code&gt;21.14 Task &amp;amp; Project Management&lt;/code&gt; update.
-&lt;ul&gt;
-&lt;li&gt;This one definitely benefits from me sitting on it for a while.&lt;/li&gt;
-&lt;li&gt;I&amp;#39;m using these techniques actively myself, so the longer I do that, the more sure I am of the final output.&lt;/li&gt;
-&lt;li&gt;I&amp;#39;m &lt;em&gt;loving&lt;/em&gt; my Things project setup.&lt;/li&gt;
-&lt;li&gt;Will be putting out a first draft this week.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;In the background we continue to load up the &lt;a href=&quot;https://youtu.be/g2z3fuv8a2A&quot;&gt;imaginarium&lt;/a&gt; with our back-catalogue.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded><dc:creator>Johnny</dc:creator></item></channel></rss>
+&lt;p&gt;90 engaged people are far more interesting to me than 100 who just never bothered to click &amp;#39;unsubscribe&amp;#39;.&lt;/p&gt;</content:encoded><dc:creator>Johnny</dc:creator></item></channel></rss>

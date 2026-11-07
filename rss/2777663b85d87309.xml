@@ -6,7 +6,279 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Fri, 06 Nov 2026 07:44:49 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Nov 2026 07:02:27 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-07 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-07-HackerNews/</link>
+      <pubDate>Sat, 07 Nov 2026 07:02:27 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-07-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-07-hacker-news-top-stories&#34;&gt;
+  2026-11-07 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-07-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Claude Code 2.1.318 用户报告模型把个人邮箱写进第三方请求的 User-Agent；已有默认隐私检查，但原帖仍出现检查未生效及脚本路径遗漏的反馈。&lt;/li&gt;
+&lt;li&gt;Tesla 计划于 2027 年中收缩得州 Cybertruck 生产、转向 Cybercab；报道列出 2025 年美国销量 20,237 辆、同比降 48%，是否全球停产仍不明确。&lt;/li&gt;
+&lt;li&gt;Kagi 允许访客免注册搜索前 50 次，注册后再获 100 次，希望降低向亲友推荐付费搜索的门槛；访客体验并不等同于付费套餐。&lt;/li&gt;
+&lt;li&gt;CVE-2026-83844 将 Windows Paint 越界读取列为 8.1 分高危远程代码执行漏洞，受影响版本低于 11.2609.401.0，公开记录尚未解释完整利用路径。&lt;/li&gt;
+&lt;li&gt;BUI 将 Blender 的部件与交互移成多语言 UI 库，自报 Windows 小窗口约 40ms 出首帧；README 明示尚无 IME、无障碍支持，macOS 仍属实验阶段。&lt;/li&gt;
+&lt;li&gt;1995 年创办的 Salon 宣布运营 31 年后停止出版，称独立数字新闻的商业现实已使其出版模式难以持续，公告没有列出更具体财务原因。&lt;/li&gt;
+&lt;li&gt;ASN Bank 用户在兼容性问题帖中报告 Wero 支付被 Play Integrity 检查阻止，故障随付款路径而异，不能概括为 GrapheneOS 上全部银行功能失效。&lt;/li&gt;
+&lt;li&gt;Motorola 宣布 Signature 27 将成为旗下首款支持 GrapheneOS 的手机，提供七年系统升级、7000mAh 电池，起价 1,599 美元，未来数月陆续上市。&lt;/li&gt;
+&lt;li&gt;英国拟立法强制招聘广告披露薪资，帮助年轻求职者并缩小薪酬信息差；近 100 万名 16—24 岁年轻人未就业、未在读或受训，立法时间表尚未公布。&lt;/li&gt;
+&lt;li&gt;Mark Cuban 指责 Facebook 放行冒充其推销 294 美元糖尿病“疗法”的 AI 广告；文章重提 Meta 2024 年诈骗及禁售品广告收入 160 亿美元的争议估算。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-claude-code-被报告向网站请求头写入用户邮箱-claude-code-sends-your-email-address-to-websites&#34;&gt;
+  1. Claude Code 被报告向网站请求头写入用户邮箱 (Claude Code sends your email address to websites)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-claude-code-%e8%a2%ab%e6%8a%a5%e5%91%8a%e5%90%91%e7%bd%91%e7%ab%99%e8%af%b7%e6%b1%82%e5%a4%b4%e5%86%99%e5%85%a5%e7%94%a8%e6%88%b7%e9%82%ae%e7%ae%b1-claude-code-sends-your-email-address-to-websites&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/anthropics/claude-code/issues/107757&#34;&gt;https://github.com/anthropics/claude-code/issues/107757&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一名 macOS 用户在 Claude Code 的 GitHub 仓库提交隐私问题，称 2.1.318 在联网查询时把其邮箱放入第三方请求的 User-Agent，并将近期大量垃圾邮件与此联系起来。邮箱发送行为与垃圾邮件的具体来源需要分开判断：报告本身没有证明每封垃圾邮件都由这些访问导致，也不代表每种联网工具都固定附带用户邮箱。&lt;/p&gt;
+&lt;p&gt;原帖后续回复称，2.1.317 起已默认启用 cc-plugin-privacy，检查并阻止相应行为；但 macOS 与 Windows 用户又给出已加载该模块、检查仍未触发的测试反馈，还有人指出模型先把邮箱写入脚本、再执行脚本时，命令级检查可能看不到真正的外发内容。另有用户报告，请求头还可能包含当前项目、客户或仓库名称，使泄露的信息超过单一邮箱。&lt;/p&gt;
+&lt;p&gt;问题暴露的是代理可读上下文与对外发送权限之间的边界：网站要求机器人提供联系人，并不等于用户授权使用其登录邮箱。这里保留原帖的报告与测试性质，未独立在用户设备上复现；已有保护模块也不能据此视为所有外发路径均已封堵。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1544-points--评论-487-comments--投稿者motoroco--发布时间2026-11-06-061715-0800&#34;&gt;
+  HN 热度 1544 points | 评论 487 comments | 投稿者：motoroco | 发布时间：2026-11-06 06:17:15 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1544-points--%e8%af%84%e8%ae%ba-487-comments--%e6%8a%95%e7%a8%bf%e8%80%85motoroco--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-061715-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50385272&#34;&gt;https://news.ycombinator.com/item?id=50385272&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Claude Code 开发者表示将从模型上下文移除账号邮箱，下一版预计次周初推出，并承认现有保护仍漏掉自行编写再执行的脚本。&lt;/li&gt;
+&lt;li&gt;网站可以要求机器人提供联系人，但发送哪个地址应由用户决定，工作联系邮箱与私人登录邮箱不能自动互换。&lt;/li&gt;
+&lt;li&gt;从上下文中最小化个人信息，比先注入身份再依赖提示词或事后拦截更接近问题根源。&lt;/li&gt;
+&lt;li&gt;外发风险还包括项目名、公司团队和任务背景，只删除邮箱不足以防止把工作内容透露给网站。&lt;/li&gt;
+&lt;li&gt;只匹配登录账号邮箱的防护可能漏掉模型从 git 或其他上下文取得的工作地址，检查范围需要覆盖真实数据来源。&lt;/li&gt;
+&lt;li&gt;工具调用前的检查钩子可以作为补充防线，但用户自写规则是否覆盖所有执行路径仍需要验证。&lt;/li&gt;
+&lt;li&gt;部分用户只观察到通用 User-Agent，说明内置抓取工具与模型自行编写的 curl 请求应分开排查。&lt;/li&gt;
+&lt;li&gt;SEC 要求机器人标识的讨论中，发言者后来更正了“没有邮箱就一定被拒”的判断，站点策略不能简化成泄露个人地址的必要条件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-tesla-计划收缩得州-cybertruck-生产为-cybercab-腾出产能-tesla-to-wind-down-cybertruck-production&#34;&gt;
+  2. Tesla 计划收缩得州 Cybertruck 生产，为 Cybercab 腾出产能 (Tesla to wind down Cybertruck production)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-tesla-%e8%ae%a1%e5%88%92%e6%94%b6%e7%bc%a9%e5%be%97%e5%b7%9e-cybertruck-%e7%94%9f%e4%ba%a7%e4%b8%ba-cybercab-%e8%85%be%e5%87%ba%e4%ba%a7%e8%83%bd-tesla-to-wind-down-cybertruck-production&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817&#34;&gt;https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NBC News 刊载的路透社报道说，Elon Musk 宣布将在约 2027 年中收缩得州超级工厂的 Cybertruck 生产，把空间和产能转向新推出的 Cybercab。报道明确保留一项不确定性：尚不清楚 Cybertruck 会转移到其他工厂，还是彻底退出生产；Austin 是目前已知唯一具备其专用部件制造能力的 Tesla 工厂。&lt;/p&gt;
+&lt;p&gt;报道引用 Kelley Blue Book 数据，2025 年 Cybertruck 在美国售出 20,237 辆，比 2024 年的 38,965 辆下降 48%，远低于 Musk 曾预测的年销 25 万辆。分析人士认为，高价格、锐角不锈钢外形及行人碰撞法规限制了其市场，尤其难以进入欧洲；也有人强调，美国电动皮卡整体需求不振，不应把所有困难仅归结于这一车型。&lt;/p&gt;
+&lt;p&gt;Cybercab 则承载 Tesla 转向自动驾驶、AI 与机器人业务的战略。报道提到 Austin 已开始小规模付费运营，但美国汽车安全监管机构仍在追问车辆符合联邦标准的自我认证问题。因此，这既是销量不达预期后的制造调整，也把资源押向仍有商业及监管不确定性的新项目，不能写成 Robotaxi 模式已经获得全面验证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-755-points--评论-1579-comments--投稿者plenz--发布时间2026-11-06-201351-0800&#34;&gt;
+  HN 热度 755 points | 评论 1579 comments | 投稿者：PLenz | 发布时间：2026-11-06 20:13:51 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-755-points--%e8%af%84%e8%ae%ba-1579-comments--%e6%8a%95%e7%a8%bf%e8%80%85plenz--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-201351-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50391456&#34;&gt;https://news.ycombinator.com/item?id=50391456&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有皮卡使用者批评货斗侧壁、装载取物和拖挂补能不适合日常工作需求，造型之外还存在工具属性不足。&lt;/li&gt;
+&lt;li&gt;高售价压缩了潜在市场，若只讨论外形与政治形象，会忽略消费者购买力和卡车价格环境的变化。&lt;/li&gt;
+&lt;li&gt;支持设计尝试的一方欢迎量产车打破同质化，即使不喜欢 Musk，也认为这种大胆探索值得肯定。&lt;/li&gt;
+&lt;li&gt;有人分享朋友在长期停电期间用 Cybertruck 为住宅供电、再外出充电的经历，强调大电池的应急用途。&lt;/li&gt;
+&lt;li&gt;早期无喷漆和折叠钢板降低成本的设想，与最终产品的结构及售价需要分开，制造概念并未原样兑现。&lt;/li&gt;
+&lt;li&gt;认可者认为 48V 等工程尝试仍有价值，商业失利不必抹去车辆对新技术路线的探索。&lt;/li&gt;
+&lt;li&gt;极窄的实用场景、品牌形象和质量口碑可能相互叠加，单一原因难以解释目标客户为何没有形成足够规模。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-kagi-开放免注册试用先搜-50-次注册再获-100-次-search-for-everyone&#34;&gt;
+  3. Kagi 开放免注册试用：先搜 50 次，注册再获 100 次 (Search for everyone)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-kagi-%e5%bc%80%e6%94%be%e5%85%8d%e6%b3%a8%e5%86%8c%e8%af%95%e7%94%a8%e5%85%88%e6%90%9c-50-%e6%ac%a1%e6%b3%a8%e5%86%8c%e5%86%8d%e8%8e%b7-100-%e6%ac%a1-search-for-everyone&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://kagi.com/changelog#11820&#34;&gt;https://kagi.com/changelog#11820&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kagi 在 11 月 5 日的更新中宣布，任何人现在都可直接访问 kagi.com 搜索，前 50 次无需账号，注册后另有 100 次试用。公司把这次调整定位为降低口碑传播的摩擦：过去向亲友推荐时，必须先注册才能尝试，常常让人直接放弃。这是试用入口开放，并不是把付费搜索变成无限免费服务。&lt;/p&gt;
+&lt;p&gt;同一公告列出 Android 搜索应用的改版，包括原生搜索栏和标签页、重新制作的语音搜索界面、语音语言选择、快捷设置入口、桌面小组件以及粘贴图片搜索。用户也可再次点击 Quick Answer 按钮收起回答，把空间还给搜索结果。&lt;/p&gt;
+&lt;p&gt;Kagi 借此批评学校搜索与 AI 功能绑定，提出自己可作为替代；这是公司的立场和推广信息，不能当作独立教育效果评估。公告还特别提醒，付费用户若意外退出登录，会落入功能较弱的 explore 访客体验，并新增提示横幅。这意味着“无需登录能搜”解决了试用和临时访问问题，却没有取消账号、套餐与功能差异。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-742-points--评论-408-comments--投稿者elashri--发布时间2026-11-06-040334-0800&#34;&gt;
+  HN 热度 742 points | 评论 408 comments | 投稿者：elashri | 发布时间：2026-11-06 04:03:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-742-points--%e8%af%84%e8%ae%ba-408-comments--%e6%8a%95%e7%a8%bf%e8%80%85elashri--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-040334-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50383740&#34;&gt;https://news.ycombinator.com/item?id=50383740&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;免注册试用消除了向亲友演示时最明显的阻力，搜索服务需要让人先体验到价值再要求建立账号。&lt;/li&gt;
+&lt;li&gt;可调整网站排序、屏蔽低质站点及按需使用 AI 回答，是长期订阅者认为值得付费的具体能力。&lt;/li&gt;
+&lt;li&gt;一些用户希望有更便宜的纯搜索方案，不愿为了未必使用的 AI 功能承担额外订阅负担。&lt;/li&gt;
+&lt;li&gt;另一方指出现有价格早于 AI 功能，去掉 AI 并不自动意味着搜索本身可以大幅降价。&lt;/li&gt;
+&lt;li&gt;已有订阅者希望套餐包含少量 API 额度，以降低把搜索接入个人代理工作流的门槛。&lt;/li&gt;
+&lt;li&gt;反对合并计费的一方强调代理可把查询量放大数十倍甚至更多，独立按量收费能避免普通用户补贴重度自动化。&lt;/li&gt;
+&lt;li&gt;开放匿名搜索后，学校等受控网络更需要可由 DNS 强制启用的安全搜索，否则可能选择整体封禁服务。&lt;/li&gt;
+&lt;li&gt;地图、本地商家查询和速度仍是部分用户的短板，网页搜索质量不错不代表所有查询场景都能替代现有工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-windows-paint-高危漏洞记录公布了什么仍没说明什么-ms-paint-remote-code-execution-vulnerability&#34;&gt;
+  4. Windows Paint 高危漏洞记录公布了什么，仍没说明什么 (MS Paint Remote Code Execution Vulnerability)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-windows-paint-%e9%ab%98%e5%8d%b1%e6%bc%8f%e6%b4%9e%e8%ae%b0%e5%bd%95%e5%85%ac%e5%b8%83%e4%ba%86%e4%bb%80%e4%b9%88%e4%bb%8d%e6%b2%a1%e8%af%b4%e6%98%8e%e4%bb%80%e4%b9%88-ms-paint-remote-code-execution-vulnerability&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.cve.org/CVERecord?id=CVE-2026-83844&#34;&gt;https://www.cve.org/CVERecord?id=CVE-2026-83844&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CVE-2026-83844 的官方记录描述了 Windows Paint 的越界读取问题，称未授权攻击者可能通过网络执行代码。Microsoft 提供的 CVSS 3.1 基础评分为 8.1，等级为 High，向量标记无需权限、无需用户交互，但攻击复杂度高。记录中的受影响范围是 Microsoft Paint 11.0.0.0 起、低于 11.2609.401.0 的版本，而非所有历史 Paint 程序。&lt;/p&gt;
+&lt;p&gt;这条记录最初于 10 月 13 日公开，11 月 6 日更新，因此不能把今天进入讨论当成当天首次披露的零日漏洞。厂商引用指向 Microsoft 安全更新指南，并将官方修复列为可用；核查时应看应用版本，而不只是 Windows 自身有没有更新提示。&lt;/p&gt;
+&lt;p&gt;公开记录非常简短，没有给出完整攻击链、服务入口或可复现样例，也没有解释一个越界读取如何最终转化为代码执行。因而不能凭“网络”和“无交互”推导出任意安装 Paint 的电脑都有对外开放端口，更不能把评论区猜测的缩略图、AI 功能或中间人路径当作已确认根因。这里依据的是官方 CVE 的机器可读记录。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-698-points--评论-271-comments--投稿者kuberwastaken--发布时间2026-11-06-044342-0800&#34;&gt;
+  HN 热度 698 points | 评论 271 comments | 投稿者：kuberwastaken | 发布时间：2026-11-06 04:43:42 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-698-points--%e8%af%84%e8%ae%ba-271-comments--%e6%8a%95%e7%a8%bf%e8%80%85kuberwastaken--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-044342-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50384233&#34;&gt;https://news.ycombinator.com/item?id=50384233&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“无需用户交互”与桌面画图程序的常见使用方式差距很大，读者希望厂商解释实际可达入口。&lt;/li&gt;
+&lt;li&gt;越界读取到代码执行之间仍缺少公开细节，应核实是否需要额外利用链或记录中的影响描述有待补充。&lt;/li&gt;
+&lt;li&gt;厂商 FAQ 的网络攻击描述需要认真对待，同时也有人担心文字过于模板化，尚不足以说明具体机制。&lt;/li&gt;
+&lt;li&gt;有读者检查自己的系统后没有发现监听端口，提示网络攻击向量不必然等于 Paint 自身提供入站服务。&lt;/li&gt;
+&lt;li&gt;已有用户通过 Microsoft Store 获取修复，检查应用版本比只依赖 Windows Update 是否提示更新更直接。&lt;/li&gt;
+&lt;li&gt;利用成熟度、修复可用性与报告可信度等辅助指标，有助于把漏洞严重性和实际攻击证据分开判断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-bui-把-blender-界面移成独立库性能之外还有输入法和无障碍限制-blenders-ui-and-runtime-much-faster-than-gpui&#34;&gt;
+  5. BUI 把 Blender 界面移成独立库，性能之外还有输入法和无障碍限制 (Blender&amp;rsquo;s UI and Runtime: Much Faster Than GPUI)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-bui-%e6%8a%8a-blender-%e7%95%8c%e9%9d%a2%e7%a7%bb%e6%88%90%e7%8b%ac%e7%ab%8b%e5%ba%93%e6%80%a7%e8%83%bd%e4%b9%8b%e5%a4%96%e8%bf%98%e6%9c%89%e8%be%93%e5%85%a5%e6%b3%95%e5%92%8c%e6%97%a0%e9%9a%9c%e7%a2%8d%e9%99%90%e5%88%b6-blenders-ui-and-runtime-much-faster-than-gpui&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/ppmpreetham/BUI&#34;&gt;https://github.com/ppmpreetham/BUI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;BUI 将 Blender 的部件绘制和交互逻辑移植为独立 C 运行时，再提供 Python、Rust、JavaScript、React、Svelte、C/C++ 等入口。它不要求安装 Blender，也不打包浏览器引擎；HTML/CSS 在这里用于描述界面，真正的布局、输入与呈现由本地代码处理。项目保留可拖动数值、表达式输入及 Blender 风格组件，并支持按变化区域重绘、空闲时休眠。&lt;/p&gt;
+&lt;p&gt;README 自报，在一台接电的 Ryzen 7 5800U、Windows 11 笔记本上，同一小型设置窗口的 BUI CPU 版约 40ms 出现首帧，GPUI 约 231ms；但作者说明这些数字早于部分新功能，来自单一机器，不应视为其他平台或复杂应用的保证。所谓电池成本主要借助 CPU 时间估计，也不是直接测量续航。&lt;/p&gt;
+&lt;p&gt;局限同样具体：没有屏幕阅读器支持或 IME，缺少逐字形字体回退，部分文字排版及 Qt/CSS 能力不完整；macOS 仍在实验阶段，没有 GPU 后端，JavaScript 窗口还有限制。项目整体为 GPL-3.0-or-later，并且是带修改的移植，不与 Blender 发布自动同步。因此“比 GPUI 更快”必须放在已测场景和可接受功能范围内理解。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-670-points--评论-269-comments--投稿者ppmpreetham--发布时间2026-11-06-154035-0800&#34;&gt;
+  HN 热度 670 points | 评论 269 comments | 投稿者：ppmpreetham | 发布时间：2026-11-06 15:40:35 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-670-points--%e8%af%84%e8%ae%ba-269-comments--%e6%8a%95%e7%a8%bf%e8%80%85ppmpreetham--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-154035-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50389333&#34;&gt;https://news.ycombinator.com/item?id=50389333&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blender 的数值编辑和复杂工作区交互适合创作工具，游戏编辑器或音频软件可能从复用中直接受益。&lt;/li&gt;
+&lt;li&gt;另一方不希望通用应用都变成 Blender 风格，专业工具里熟悉的界面不一定符合普通桌面应用的习惯。&lt;/li&gt;
+&lt;li&gt;GPL 对库的采用范围有实际影响，而作者解释许可来自 Blender 衍生代码，不能简单换成 LGPL。&lt;/li&gt;
+&lt;li&gt;一名 Fedora 用户先报告现有 tkinter 程序无法直接运行，随后更正为调整后可以使用，兼容性宣传仍需用真实代码验证。&lt;/li&gt;
+&lt;li&gt;没有平台无障碍接口会让屏幕阅读器无法识别自绘部件，性能优点不能补上这一基础能力缺口。&lt;/li&gt;
+&lt;li&gt;框架性能比较应说明是否计入栅格化、使用何种机器与场景，单一 CPU 帧时间不能代表完整界面体验。&lt;/li&gt;
+&lt;li&gt;移植版如何避免与 Blender 上游逐渐分叉，是长期维护的重要问题，短期演示成功还不够。&lt;/li&gt;
+&lt;li&gt;README 获得“很快讲清用途”的称赞，也因篇幅及代码示例与配图不对应而被批评，文档可读性评价并不一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-salon-宣布停止出版结束-31-年数字媒体历程-goodbye-from-salon&#34;&gt;
+  6. Salon 宣布停止出版，结束 31 年数字媒体历程 (Goodbye from Salon)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-salon-%e5%ae%a3%e5%b8%83%e5%81%9c%e6%ad%a2%e5%87%ba%e7%89%88%e7%bb%93%e6%9d%9f-31-%e5%b9%b4%e6%95%b0%e5%ad%97%e5%aa%92%e4%bd%93%e5%8e%86%e7%a8%8b-goodbye-from-salon&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.salon.com/2026/11/05/goodbye-from-salon/&#34;&gt;https://www.salon.com/2026/11/05/goodbye-from-salon/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Salon 在 11 月 5 日发表告别声明，宣布经过 31 年后停止出版。声明回顾了 1995 年 11 月创办时的目标：在仍处探索期的互联网中建立有鲜明声音、重视好奇心与读者联系的新闻媒体，将政治、文化、批评和思想放在同一个编辑空间中。&lt;/p&gt;
+&lt;p&gt;文章主要是一份面向同事、作者和读者的告别信。它感谢不同阶段的记者、编辑、摄影师、设计师、业务团队与贡献者，也强调读者通过订阅、讨论、分享和质疑共同塑造了这个社区。公告将停刊归因于独立数字新闻商业环境的深刻变化，并表示经过考虑后认为既有出版模式已无法持续。&lt;/p&gt;
+&lt;p&gt;声明没有披露收入、债务、员工安排，也没有承诺历史文章将如何保存。因此可以确认的是“停止出版”的决定及其给出的总体理由，不能据此进一步断言具体破产程序、某个平台流量骤降或 AI 抽走读者就是直接原因。对于一个兼有报道、分析和意见写作的老牌网络媒体，其档案能否继续访问，也需要与停止更新本身分开核查。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-635-points--评论-259-comments--投稿者mkeeter--发布时间2026-11-06-040329-0800&#34;&gt;
+  HN 热度 635 points | 评论 259 comments | 投稿者：mkeeter | 发布时间：2026-11-06 04:03:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-635-points--%e8%af%84%e8%ae%ba-259-comments--%e6%8a%95%e7%a8%bf%e8%80%85mkeeter--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-040329-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50383739&#34;&gt;https://news.ycombinator.com/item?id=50383739&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;早期作者和文化评论留下了鲜明记忆，读者惋惜的是有独特编辑声音的网络出版物逐渐消失。&lt;/li&gt;
+&lt;li&gt;也有老读者认为网站后来失去吸引力，停刊的遗憾并不意味着他们认可其所有阶段的编辑方向。&lt;/li&gt;
+&lt;li&gt;一位长期独立出版者分享捐款减少、长期亏损与创作精力下降的经历，说明坚持出版也有持续的个人成本。&lt;/li&gt;
+&lt;li&gt;支持出版不必只能依赖侵入式广告，但简单、透明的展示广告能否获得足够收入仍是难题。&lt;/li&gt;
+&lt;li&gt;部分读者报告旧书签已返回 410，并担心喜爱的文章消失，保存历史内容需要在关停时明确安排。&lt;/li&gt;
+&lt;li&gt;有人区分原创采访与评论分析的经济处境，认为个人专家和独立渠道兴起改变了传统媒体中介的价值。&lt;/li&gt;
+&lt;li&gt;讨论新闻业就业萎缩时需要区分纸媒与所有媒介，不能把报纸岗位降幅直接当成整个新闻行业的降幅。&lt;/li&gt;
+&lt;li&gt;Salon 曾开源的 Bricolage 编辑发布系统也被读者记起，媒体的技术贡献可以与内容遗产一同留下。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-asn-用户反映-grapheneos-上的-wero-支付受阻-dutch-idealist-bank-asn-blocks-non-google-android-including-grapheneos&#34;&gt;
+  7. ASN 用户反映 GrapheneOS 上的 Wero 支付受阻 (Dutch &amp;lsquo;idealist&amp;rsquo; bank ASN blocks non-Google Android, including GrapheneOS)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-asn-%e7%94%a8%e6%88%b7%e5%8f%8d%e6%98%a0-grapheneos-%e4%b8%8a%e7%9a%84-wero-%e6%94%af%e4%bb%98%e5%8f%97%e9%98%bb-dutch-idealist-bank-asn-blocks-non-google-android-including-grapheneos&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105&#34;&gt;https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是一条始于 2022 年的银行应用兼容性问题帖，近期因 ASN Bank 接入 iDEAL/Wero 后的检查重新受到关注。2026 年 10 月以来，多名 GrapheneOS 用户报告付款因设备或应用“不符合安全要求”受阻；有回复指向 1.36.3 及后续版本，但也有相同版本能完成部分交易的反馈。讨论进一步区分旧的 iDEAL/Wero 路径与新的 Wero 流程，不能把单次成功或失败推广到所有支付功能。&lt;/p&gt;
+&lt;p&gt;用户贴出的 ASN 投诉回复称，银行遵循相关支付体系的共同安全要求，正在研究未来支持其他系统，但无法承诺时间。另一份转贴的 EPI/Wero 回复强调应用与运行系统完整性，并以此解释使用 Google Play Integrity；帖内开发者则反驳硬件证明只能验证密钥、不能验证系统与应用的说法，指出替代系统签名密钥可以纳入信任。&lt;/p&gt;
+&lt;p&gt;这些属于公开兼容性测试、往来邮件转贴及技术争论，并非银行正式发布的完整故障调查。其他银行上存在可用案例，也说明结果可能取决于具体集成与流程。HN 标题中的“封锁非 Google Android”过于概括，已核对内容更直接支持的是特定 GrapheneOS 用户在 ASN 的部分 Wero 支付路径遭到拒绝。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-608-points--评论-399-comments--投稿者microtonal--发布时间2026-11-06-172712-0800&#34;&gt;
+  HN 热度 608 points | 评论 399 comments | 投稿者：microtonal | 发布时间：2026-11-06 17:27:12 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-608-points--%e8%af%84%e8%ae%ba-399-comments--%e6%8a%95%e7%a8%bf%e8%80%85microtonal--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-172712-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50390124&#34;&gt;https://news.ycombinator.com/item?id=50390124&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仅凭类名处于银行命名空间或请求发往银行服务器，尚不足以确定限制究竟由银行、支付规范还是集成组件决定。&lt;/li&gt;
+&lt;li&gt;应区分 Google 的认证名单与硬件证明能力，支持替代系统可以采用维护可信签名密钥等路线。&lt;/li&gt;
+&lt;li&gt;银行往往优先选择容易通过审计的行业流程，支持小众系统的成本与责任压力可能比技术可行性更影响决策。&lt;/li&gt;
+&lt;li&gt;如果长期缺少安全更新的原厂系统仍能通过，而持续更新的替代系统被拒，认证结果就不能直接等同于真实安全水平。&lt;/li&gt;
+&lt;li&gt;网页银行看似提供替代入口，但若最终认证仍依赖手机应用，兼容性限制并没有真正解除。&lt;/li&gt;
+&lt;li&gt;其他银行的警告后继续使用或主动修复兼容问题的案例，表明平台检查并非只有一刀切阻断这一种产品选择。&lt;/li&gt;
+&lt;li&gt;扩大 GrapheneOS 用户量、增加不同价格档的官方支持设备，可能让服务商更愿意投入兼容工作。&lt;/li&gt;
+&lt;li&gt;关键金融服务应保留功能足够完整的替代访问方式，避免设备认证政策把用户锁在少数商业平台上。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-motorola-signature-27-宣布支持-grapheneos起价-1599-美元-motorola-signature-27-with-grapheneos-support&#34;&gt;
+  8. Motorola Signature 27 宣布支持 GrapheneOS，起价 1,599 美元 (Motorola Signature 27 with GrapheneOS support)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-motorola-signature-27-%e5%ae%a3%e5%b8%83%e6%94%af%e6%8c%81-grapheneos%e8%b5%b7%e4%bb%b7-1599-%e7%be%8e%e5%85%83-motorola-signature-27-with-grapheneos-support&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://motorolanews.com/motorola-signature-27-2/&#34;&gt;https://motorolanews.com/motorola-signature-27-2/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Motorola 发布旗舰 Signature 27，称其将成为旗下首款支持 GrapheneOS 的设备，并与 GrapheneOS Foundation 合作满足安全硬件及持续更新要求。公告特别提到高性能 ARM Memory Tagging Extension 实现，用于帮助缓解内存安全问题；这不等于所有类型的漏洞都能被硬件消除。&lt;/p&gt;
+&lt;p&gt;新机配备 Snapdragon 8 Elite Extreme Gen 6、7000mAh 典型容量电池、90W 有线及 50W 无线充电，承诺七年系统升级。影像配置包括 5000 万像素主摄、2 亿像素潜望长焦与专门的 EVS 动作传感器；双层 AMOLED 屏幕标称最高 12,000 尼特，但脚注明确这是特定场景的峰值实验室数据，不是全屏持续亮度保证。&lt;/p&gt;
+&lt;p&gt;公司同时宣传原厂系统的 Gemini Intelligence 与 Motorola Qira。它们不能被理解为 GrapheneOS 默认附带或强制启用的功能，具体替代系统下的相机、音频等适配也不能由原厂规格自动推定。官方预计未来数月在全球市场推出，建议零售价 1,599 美元起；各地日期与价格需另外公布。因此目前核实的是支持承诺和厂商规格，尚非所有地区都能买到的成熟适配结果。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-570-points--评论-400-comments--投稿者monneyboi--发布时间2026-11-06-000134-0800&#34;&gt;
+  HN 热度 570 points | 评论 400 comments | 投稿者：monneyboi | 发布时间：2026-11-06 00:01:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-570-points--%e8%af%84%e8%ae%ba-400-comments--%e6%8a%95%e7%a8%bf%e8%80%85monneyboi--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-000134-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50380810&#34;&gt;https://news.ycombinator.com/item?id=50380810&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1,599 美元的旗舰定位限制了普及价值，用户更希望关键安全硬件和长期支持下放到中端机。&lt;/li&gt;
+&lt;li&gt;GrapheneOS 账号澄清这是支持替代系统的整机发布，Motorola 仍有自己的默认系统，不能把 Gemini 宣传当成 GrapheneOS 的功能决定。&lt;/li&gt;
+&lt;li&gt;选择开放系统仍需考虑引导程序、基带与其他固件的信任边界，用户空间开源并不代表整部手机的所有代码都可审计。&lt;/li&gt;
+&lt;li&gt;相机处理、EVS、音频及防抖能否在 GrapheneOS 下充分利用，直接影响高价硬件对实际买家的价值。&lt;/li&gt;
+&lt;li&gt;GrapheneOS 账号表示计划像支持 Pixel Camera 一样支持 Motorola 相机应用，但这仍是适配计划。&lt;/li&gt;
+&lt;li&gt;地区上市信息存在差异，GrapheneOS 方面否认美国独占，但也尚不能提供完整国家名单和时间表。&lt;/li&gt;
+&lt;li&gt;引导程序解锁与保修安排、以及银行应用的完整性认证兼容性，仍需要比“支持 GrapheneOS”更具体的说明。&lt;/li&gt;
+&lt;li&gt;更高峰值亮度并非所有场景都更好，有用户希望系统限制应用强制拉满亮度，以免扫码时过曝。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-英国拟强制招聘广告披露薪资具体规则尚待立法-britain-to-make-salary-disclosure-in-job-ads-mandatory&#34;&gt;
+  9. 英国拟强制招聘广告披露薪资，具体规则尚待立法 (Britain to make salary disclosure in job ads mandatory)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e8%8b%b1%e5%9b%bd%e6%8b%9f%e5%bc%ba%e5%88%b6%e6%8b%9b%e8%81%98%e5%b9%bf%e5%91%8a%e6%8a%ab%e9%9c%b2%e8%96%aa%e8%b5%84%e5%85%b7%e4%bd%93%e8%a7%84%e5%88%99%e5%b0%9a%e5%be%85%e7%ab%8b%e6%b3%95-britain-to-make-salary-disclosure-in-job-ads-mandatory&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/&#34;&gt;https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;路透社报道，英国首相 Andy Burnham 宣布，政府将推动立法，要求雇主在招聘广告中公布薪资，让求职者在投入申请和面试时间前知道岗位报酬。政府希望这既能帮助首次求职的年轻人，也能提高薪酬透明度，减少可能使女性处于不利地位的信息差。&lt;/p&gt;
+&lt;p&gt;首相办公室引用英国特许人事和发展协会（CIPD）的估算称，略多于五分之二的雇主总是公布薪资区间，不到五分之一总是公布具体薪资。报道将政策放在青年就业的背景中：英国近 100 万名、约占该年龄段 13% 的 16—24 岁年轻人未就业、未在读或接受培训，这一比例属于欧洲较高水平；政府对青年不活跃问题的审查报告预计于 11 月稍后公布。&lt;/p&gt;
+&lt;p&gt;这仍是待提交议会的立法计划，政府尚未提供具体时间表，不能写成披露义务已经生效。报道还回顾，纽约市于 2022 年要求多数私人雇主披露薪资区间；欧盟于 2023 年通过薪酬透明规则，要求成员国在 2026 年 6 月前转为国内法。英国方案的具体披露形式与实施安排，不能直接套用这些地区的既有规则。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-549-points--评论-420-comments--投稿者1659447091--发布时间2026-11-06-152204-0800&#34;&gt;
+  HN 热度 549 points | 评论 420 comments | 投稿者：1659447091 | 发布时间：2026-11-06 15:22:04 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-549-points--%e8%af%84%e8%ae%ba-420-comments--%e6%8a%95%e7%a8%bf%e8%80%851659447091--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-152204-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50389222&#34;&gt;https://news.ycombinator.com/item?id=50389222&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先做多轮面试才被低价录用的经历，使许多求职者把提前谈清薪资视为避免双方浪费时间的基本条件。&lt;/li&gt;
+&lt;li&gt;公开薪资有助于缩小信息与谈判地位差异，尤其能帮助缺少议价资源的求职者判断机会是否合适。&lt;/li&gt;
+&lt;li&gt;如果允许极宽区间，形式合规仍可能隐藏真正预算，规则需要让公开数字具有实际筛选价值。&lt;/li&gt;
+&lt;li&gt;还应防范面试后改职位级别或换成另一个低薪岗位，否则招聘方可能绕过披露要求。&lt;/li&gt;
+&lt;li&gt;透明区间与优秀候选人的个别议价可以并存，不能在细则未定时就假定广告上限必然成为法律工资上限。&lt;/li&gt;
+&lt;li&gt;奖金和股权占比较高的岗位需要说明总薪酬构成，只列基本工资可能仍让比较失真。&lt;/li&gt;
+&lt;li&gt;禁止询问现薪或历史薪资被提出作为补充办法，避免过去的不公平待遇继续决定下一份工作报价。&lt;/li&gt;
+&lt;li&gt;公开岗位级别和能力标准，比只公开每个人的工资更有助于解释差异并处理内部公平争议。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-mark-cuban-指责-facebook-放行冒名诈骗广告报道重提-160-亿美元内部估算-cuban-facebook-knowingly-runs-ai-deepfake-scam-ads-docs-say-16b-fraud-revenue&#34;&gt;
+  10. Mark Cuban 指责 Facebook 放行冒名诈骗广告，报道重提 160 亿美元内部估算 (Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-mark-cuban-%e6%8c%87%e8%b4%a3-facebook-%e6%94%be%e8%a1%8c%e5%86%92%e5%90%8d%e8%af%88%e9%aa%97%e5%b9%bf%e5%91%8a%e6%8a%a5%e9%81%93%e9%87%8d%e6%8f%90-160-%e4%ba%bf%e7%be%8e%e5%85%83%e5%86%85%e9%83%a8%e4%bc%b0%e7%ae%97-cuban-facebook-knowingly-runs-ai-deepfake-scam-ads-docs-say-16b-fraud-revenue&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html&#34;&gt;https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yahoo Finance 刊载的 Moneywise 文章援引 Mark Cuban 在播客中的指责：有人用 AI 仿造其面孔和声音，兜售他从未销售过、标价 294 美元的所谓糖尿病“疗法”，受骗者还会发邮件向他追问。他认为 Facebook 明知广告具有欺诈性仍让其传播；这是他的指控，不能直接写成法院已确认的平台故意行为。&lt;/p&gt;
+&lt;p&gt;文章把这些经历与路透社 2025 年 11 月公布的 Meta 内部文件报道联系起来。该报道中的估算涉及 2024 年约 160 亿美元、约占全年收入 10% 的诈骗及违禁商品广告收入；它不是 2026 年已经审计确认的诈骗利润，也不应全部算成 AI 深伪广告收入。文章还转述内部高风险广告量与封禁阈值，说明争议集中在风险识别后为何仍可继续投放。&lt;/p&gt;
+&lt;p&gt;Meta 对路透社回应称，文件被选择性呈现，10% 估计粗略且范围过宽，并称用户诈骗广告投诉下降、已移除大量相关广告。Moneywise 就 Cuban 的说法另行询问 Meta 时，未及时获得回应。文章的新闻价值是把冒名者遭遇、平台激励与既有调查放在一起，既需保留对诈骗的严重指控，也需保留统计年份、收入类别与公司的反驳。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-491-points--评论-222-comments--投稿者randycupertino--发布时间2026-11-06-070957-0800&#34;&gt;
+  HN 热度 491 points | 评论 222 comments | 投稿者：randycupertino | 发布时间：2026-11-06 07:09:57 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-491-points--%e8%af%84%e8%ae%ba-222-comments--%e6%8a%95%e7%a8%bf%e8%80%85randycupertino--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-06-070957-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50385870&#34;&gt;https://news.ycombinator.com/item?id=50385870&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户反复举报明显的假冒与夸张广告却得到不违规答复，削弱了对平台审核机制的信任。&lt;/li&gt;
+&lt;li&gt;主张更强责任的一方认为，平台主动收费并分发广告，就应承担核验与传播后果，不能仅归咎于算法。&lt;/li&gt;
+&lt;li&gt;一位前媒体买手称，大客户曾可通过内部关系撤销广告拒绝，商业规模可能影响实际审核待遇。&lt;/li&gt;
+&lt;li&gt;广告主实名核验与风险评估被提出作为治理方向，使平台知道自己正在为谁放大传播。&lt;/li&gt;
+&lt;li&gt;审核成本与广告收入之间存在激励冲突，对高风险广告加价而非停投尤其引发对收益分配的质疑。&lt;/li&gt;
+&lt;li&gt;提出平台赔偿或刑责之前，仍需区分现有法律的执行与新增责任制度，笼统要求追责不等于已有可行实施路径。&lt;/li&gt;
+&lt;li&gt;有人主张把广告限制为用户主动查询的标准化商品目录，以减少平台主动推送和操纵注意力的空间。&lt;/li&gt;
+&lt;li&gt;讨论提醒这组内部收入数字来自较早的路透社调查，不能把旧估算当作本轮才发生的新披露。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-11-06 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-11-06-HackerNews/</link>
@@ -1089,278 +1361,6 @@
 &lt;li&gt;抗衰老报道应区分早期机制研究与可用疗法，并给重复验证留下位置。&lt;/li&gt;
 &lt;li&gt;不同延寿干预的效果未必能够相加，不能假定把每项小鼠研究组合起来就会持续增加寿命。&lt;/li&gt;
 &lt;li&gt;关于这种机制为何进化出来的解释如果缺少可检验预测，就容易停留在无法证伪的故事层面。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-11-02 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-11-02-HackerNews/</link>
-      <pubDate>Mon, 02 Nov 2026 07:06:00 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-11-02-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-11-02-hacker-news-top-stories&#34;&gt;
-  2026-11-02 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-02-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Karpathy 称用约两小时将近 4 万条 HN 视频推荐整理成 HackerTube，收录 6,454 个视频、覆盖约 150 个主题，以视频中点帧取代上传缩略图，无需账号即可本地推荐。&lt;/li&gt;
-&lt;li&gt;帕尔马农民 Claudio Grossi 在 1990 年代种下阁楼发现的老种子，重新推广约 1.8 米高、呈七穗形态的“奇迹小麦”；报道也指出其易倒伏、面团不易保持形状等代价。&lt;/li&gt;
-&lt;li&gt;HackerBooks 当前收录 15,362 本书、270,334 次提及，并区分推荐与批评；400 条提及上的双模型标签一致率为 85%，不能当作人工验证准确率。&lt;/li&gt;
-&lt;li&gt;CVE-2026-98432 影响 Linux IPv4 TCP 握手中的并发内存释放，CNA 评分 9.8；已有上游修复，MPTCP 是已报告远程 root 利用链的条件，不能视为漏洞仅影响 MPTCP。&lt;/li&gt;
-&lt;li&gt;Visit Norway 展示风景公路沿线的设计厕所：Stegastein 借景峡湾、Utsikten 使用太阳能、Ostasteidn 以苔藓融入环境；不少路段冬季关闭，设施也需应对严酷天气。&lt;/li&gt;
-&lt;li&gt;Jiahao Shao 称自己只让 Claude 提交训练任务和分析数据，却遭到“训练竞争模型”相关拦截、降级或会话终止；这是一名用户的报告，尚不能推成 Anthropic 面向所有人的统一封禁结论。&lt;/li&gt;
-&lt;li&gt;Memdoor 用 Qwen3.8-27B 扮演多个角色，在 10 道 LiveCodeBench Hard 题、5 轮测试中通过 49／50；Fable 5 单次调用对照为 80%，样本、算力预算和运行方式均限制结论。&lt;/li&gt;
-&lt;li&gt;据 The Drive，Plymouth 市议会 9 月 22 日决定停用 Flock，次日禁用本地账户并通知厂商；总部迟迟未回应，警察局长随后下令断电，记者实地确认两台摄像头已拔线。&lt;/li&gt;
-&lt;li&gt;Xusheng Li 的研究显示，ThinkPlus FU100 的指纹验证只控制 USB 连接，取出 SD 卡即可读取未加密数据；这是 2025 年发现、2026 年公开的特定产品问题，不能泛指所有联想存储设备。&lt;/li&gt;
-&lt;li&gt;JetStream 介绍巴西劳动法院处罚隐藏提示注入的案件：白字指令试图让 Galileu 浅表处理材料，文章称罚款为诉讼标的的 10%；这不等于注入已成功操纵判决。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-hackertube用-hn-推荐重做-youtube-浏览体验-hackertube-youtube-built-from-videos-recommended-by-hn&#34;&gt;
-  1. HackerTube：用 HN 推荐重做 YouTube 浏览体验 (HackerTube: YouTube built from videos recommended by HN)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-hackertube%e7%94%a8-hn-%e6%8e%a8%e8%8d%90%e9%87%8d%e5%81%9a-youtube-%e6%b5%8f%e8%a7%88%e4%bd%93%e9%aa%8c-hackertube-youtube-built-from-videos-recommended-by-hn&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://karpathy.bearblog.dev/hacker-tube/&#34;&gt;https://karpathy.bearblog.dev/hacker-tube/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Andrej Karpathy 因不满 YouTube 的夸张缩略图和推荐内容，让 Claude Opus 5.5 制作一个基于 Hacker News 历年视频推荐的浏览站 HackerTube。他称系统下载并筛选 HN 评论，再用 Sonnet 处理候选内容、排除垃圾信息，从约 4 万条推荐评论中整理出 2007—2026 年间的 6,454 个 YouTube 视频，归入约 150 个主题。&lt;/p&gt;
-&lt;p&gt;站点采用类似 YouTube 的界面，但以视频播放进度 50% 处的画面作为缩略图，减少对创作者上传封面的依赖；个性化状态保留在本地浏览器，不要求建立账号，并提供键盘快捷键和可导出的站点数据，便于另做界面或分析。这里重做的是发现与筛选层，内容仍来自 YouTube。&lt;/p&gt;
-&lt;p&gt;Karpathy 称主要工作约两小时完成，自己仍手动创建了获取 YouTube 元数据所需的 Google Cloud API 密钥、启动 VPS 并购买域名，其余主要通过对话指挥代理完成。这个时间是作者的开发体验，不是统一的工程成本测量；内容质量也代表他对 HN 筛选结果的偏好，不能理解为对全部视频质量的独立评审。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-2163-points--评论-526-comments--投稿者karpathy--发布时间2026-11-01-035653-0800&#34;&gt;
-  HN 热度 2163 points | 评论 526 comments | 投稿者：karpathy | 发布时间：2026-11-01 03:56:53 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2163-points--%e8%af%84%e8%ae%ba-526-comments--%e6%8a%95%e7%a8%bf%e8%80%85karpathy--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-035653-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50319510&#34;&gt;https://news.ycombinator.com/item?id=50319510&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;将内容托管与发现算法分开，让用户选择自己的筛选器，被视为摆脱平台注意力优化的一条可行路径。&lt;/li&gt;
-&lt;li&gt;有使用者发现，即使只按 HN 这一共同兴趣筛选，命中自己喜好的程度也高于 YouTube 的个性化首页。&lt;/li&gt;
-&lt;li&gt;较老的视频较多，按新近程度筛选和发现最近作品的能力仍值得加强。&lt;/li&gt;
-&lt;li&gt;推荐数据也可以发布成按主题或时间维护的 YouTube 播放列表，减少用户更换观看界面的成本。&lt;/li&gt;
-&lt;li&gt;视频说明栏中的链接和补充资料同样重要，只有播放器会遗漏作者要求观众参看的内容。&lt;/li&gt;
-&lt;li&gt;为家人屏蔽特定关键词和负面主题的需求，说明内容过滤不应只有平台默认的一套规则。&lt;/li&gt;
-&lt;li&gt;自述用代理制作电视客户端的评论者特别补充，先前配置好的设备权限和技能也是成功的前提。&lt;/li&gt;
-&lt;li&gt;一旦推荐规则广为人知，数据来源可能被有意操纵，因此有人希望保留固定时间截面的推荐库。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-意大利农民从阁楼老种子重新种出奇迹小麦-an-italian-farmer-found-some-unknown-seeds-in-his-attic-and-planted-them&#34;&gt;
-  2. 意大利农民从阁楼老种子重新种出“奇迹小麦” (An Italian farmer found some unknown seeds in his attic and planted them)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e6%84%8f%e5%a4%a7%e5%88%a9%e5%86%9c%e6%b0%91%e4%bb%8e%e9%98%81%e6%a5%bc%e8%80%81%e7%a7%8d%e5%ad%90%e9%87%8d%e6%96%b0%e7%a7%8d%e5%87%ba%e5%a5%87%e8%bf%b9%e5%b0%8f%e9%ba%a6-an-italian-farmer-found-some-unknown-seeds-in-his-attic-and-planted-them&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/&#34;&gt;https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《Smithsonian》讲述意大利帕尔马农民 Claudio Grossi 重新推广传统小麦的经历。1990 年代初，他在阁楼找到一袋来历不明的老种子，倒进粪肥堆后意外发芽。其中一种麦株约六英尺、即 1.8 米高，穗形呈一长六短的分枝结构，籽粒颜色多样；他由《圣经》联想到“奇迹小麦”，但报道并未测定这袋种子的保存年限。&lt;/p&gt;
-&lt;p&gt;后来帕尔马大学相关研究将其鉴定为 Triticum turgidum，文章称它属于曾在意大利种植、后被高产商品品种取代的传统谷物。Grossi 认为它耐旱、能遮蔽杂草、减少投入，风味也有吸引力；通过与面包师试验，少揉面、小批量及较高的发酵篮帮助解决面团支撑不足的问题。&lt;/p&gt;
-&lt;p&gt;优势伴随取舍：高秆遇大风、暴雨或冰雹易倒伏，他改以较矮品种混种提供支撑。文章还转述营养研究中较低麸质和部分矿物质较多的发现，但较低麸质并不等于无麸质。全文更广泛的主张是保存并利用作物多样性，以分散极端天气和病虫害风险，而不是所有古老品种都在产量、加工或用途上胜过现代小麦。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-750-points--评论-197-comments--投稿者ecares--发布时间2026-11-01-064106-0800&#34;&gt;
-  HN 热度 750 points | 评论 197 comments | 投稿者：ecares | 发布时间：2026-11-01 06:41:06 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-750-points--%e8%af%84%e8%ae%ba-197-comments--%e6%8a%95%e7%a8%bf%e8%80%85ecares--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-064106-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50320963&#34;&gt;https://news.ycombinator.com/item?id=50320963&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;只写 Triticum turgidum 仍不足以准确识别品种，因为这一物种下不同亚种和栽培类型差别很大。&lt;/li&gt;
-&lt;li&gt;这更像对已有传统谷物的重新发现与利用，而不是发现一种从未存在于农业知识中的全新作物。&lt;/li&gt;
-&lt;li&gt;传统谷物是否被采用也取决于磨粉设备、加工成本与具体食品用途，风味好不代表适合所有产品。&lt;/li&gt;
-&lt;li&gt;麸质减少仍意味着存在麸质，而且它与面包保持结构有关，不能只把含量下降当作单向优势。&lt;/li&gt;
-&lt;li&gt;挑选几个含量较高的微量营养素来赞美一个品种，并不足以构成全面的营养优越性比较。&lt;/li&gt;
-&lt;li&gt;有读者补充丹麦磨坊和谷物知识中心的实践，说明保存、销售传统种子与面粉已形成持续活动。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-hackerbooks从-hn-评论中发现书籍与真实推荐-show-hn-hackerbooks--hackertube-but-for-books-mentioned-on-hn&#34;&gt;
-  3. HackerBooks：从 HN 评论中发现书籍与真实推荐 (Show HN: HackerBooks – HackerTube, but for books mentioned on HN)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-hackerbooks%e4%bb%8e-hn-%e8%af%84%e8%ae%ba%e4%b8%ad%e5%8f%91%e7%8e%b0%e4%b9%a6%e7%b1%8d%e4%b8%8e%e7%9c%9f%e5%ae%9e%e6%8e%a8%e8%8d%90-show-hn-hackerbooks--hackertube-but-for-books-mentioned-on-hn&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://hackerbooks.org&#34;&gt;https://hackerbooks.org&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;HackerBooks 由 roansh 受 HackerTube 启发制作，作者在 HN 称主要由 Claude Opus 5.5 编写数据流程和网站。目前 About 页列出 2007—2026 年间的 15,362 本书、270,334 次提及，来自 217,954 条评论与 56,456 名评论者；这些是页面的当前数据，投稿时所述约 1.65 万本为较早数字。&lt;/p&gt;
-&lt;p&gt;流程从公开 HN 归档出发，以正则和轻量 NLP 找出书名、作者、链接与 ISBN，再匹配 Open Library 的作品 ID、出版信息和主题，随后回查全库提及；歧义书名交给小模型消歧。排序更重视不同评论者数量，避免单人高频提及主导；书籍页面链接回具体讨论。&lt;/p&gt;
-&lt;p&gt;页面现已把“提及”与“推荐”分开：Sonnet 5.5 将提及标成推荐、中性、批评或非该书，并另设推荐人数榜。作者称与 Opus 5.5 对照 400 条提及，标签一致率 85%；这是模型间一致性，不是人工测得的准确率。站点提供 CSV，个性化仅在浏览器 localStorage 中计算和保存，也承认分类和识别会有噪声。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-749-points--评论-161-comments--投稿者roansh--发布时间2026-11-01-235828-0800&#34;&gt;
-  HN 热度 749 points | 评论 161 comments | 投稿者：roansh | 发布时间：2026-11-01 23:58:28 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-749-points--%e8%af%84%e8%ae%ba-161-comments--%e6%8a%95%e7%a8%bf%e8%80%85roansh--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-235828-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50326821&#34;&gt;https://news.ycombinator.com/item?id=50326821&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;必须区分提及与赞同，否则被大量批评或讨论的书也会被错误包装成热门推荐。&lt;/li&gt;
-&lt;li&gt;缺失已在 HN 出现的书目，说明名称匹配和候选抽取仍可能漏掉真实引用。&lt;/li&gt;
-&lt;li&gt;昵称、别名和跨学科书名容易造成归并或分类错误，用户反馈可以帮助校正。&lt;/li&gt;
-&lt;li&gt;除了热门榜，也有人更想发现只被少数人提到的长尾书籍，需要低频或反向排序。&lt;/li&gt;
-&lt;li&gt;类似书目网站过去曾消失，长期可访问性比短期上线热度更值得关注。&lt;/li&gt;
-&lt;li&gt;开放数据之外，公开项目源码也能方便社区修复问题和发展不同用法。&lt;/li&gt;
-&lt;li&gt;有界的主题目录仍然具有吸引力，简洁的文字版也可能比不断扩展的信息流更好用。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-linux-ipv4-tcp-释放后使用漏洞cna-评分-98-tcp-use-after-free-cve-2026-98432--cvss-98&#34;&gt;
-  4. Linux IPv4 TCP 释放后使用漏洞，CNA 评分 9.8 (TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-linux-ipv4-tcp-%e9%87%8a%e6%94%be%e5%90%8e%e4%bd%bf%e7%94%a8%e6%bc%8f%e6%b4%9ecna-%e8%af%84%e5%88%86-98-tcp-use-after-free-cve-2026-98432--cvss-98&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf&#34;&gt;https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Atlas 文章整理 CVE-2026-98432：Linux 在处理 IPv4 TCP 握手或请求迁移时，可能把仍被另一 CPU 读取的 IP 选项内存释放，形成 use-after-free。内核 CNA 的原始公告确认问题可追溯至 4.4，评分为 CVSS 3.1 的 9.8；修复将相关释放操作改为等待 RCU 宽限期后的释放。&lt;/p&gt;
-&lt;p&gt;公告列出 5.10.272、5.15.223、6.1.190、6.6.159、6.12.113、6.18.56、7.2.10 与 7.3 等修复版本，但发行版可能以自己的包版本回补，不能只比较主版本号。文章称 Anthropic 已在带 MPTCP 监听器的服务器上构建远程 root 概念验证；这不意味着一般 TCP 路径没有漏洞，也不意味着任意配置均能按同一方式利用。Go 安全团队另指出，Go 1.24 起 Linux 监听套接字默认启用 MPTCP，实际行为仍受配置与内核支持影响。&lt;/p&gt;
-&lt;p&gt;红帽通告也将其列为严重漏洞，强调远程未认证攻击、并发时序和内存破坏风险。暂时过滤带 IPv4 选项的 TCP 包只能降低暴露，不能替代修补，也可能影响使用相应选项的网络。容器共享宿主内核，更新镜像不等于修复节点；文章没有实际验证网上公开的利用代码，不能据其数量断言已发生野外大规模攻击。&lt;/p&gt;
-&lt;p&gt;补充通告：
-
-  &lt;a href=&#34;https://access.redhat.com/security/vulnerabilities/RHSB-2026-016&#34;&gt;https://access.redhat.com/security/vulnerabilities/RHSB-2026-016&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-693-points--评论-323-comments--投稿者oger--发布时间2026-11-01-031630-0800&#34;&gt;
-  HN 热度 693 points | 评论 323 comments | 投稿者：oger | 发布时间：2026-11-01 03:16:30 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-693-points--%e8%af%84%e8%ae%ba-323-comments--%e6%8a%95%e7%a8%bf%e8%80%85oger--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-031630-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50319143&#34;&gt;https://news.ycombinator.com/item?id=50319143&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标题必须保留 Linux 这一范围，否则容易让读者误以为所有操作系统的 TCP 实现都有同一个漏洞。&lt;/li&gt;
-&lt;li&gt;应区分一般性的并发内存缺陷与已知利用链对 MPTCP 等环境的要求。&lt;/li&gt;
-&lt;li&gt;有网络实测发现带 IPv4 选项的包在上游路径被丢弃，但这种局部观察不能保证所有网络都受到同样保护。&lt;/li&gt;
-&lt;li&gt;上游已修复而常见服务器发行版尚未发布补丁的时间差，让运维者质疑安全更新的响应速度。&lt;/li&gt;
-&lt;li&gt;经过托管代理或负载均衡的服务，与直接接受不可信 TCP 连接的主机，需要按实际连接路径评估暴露。&lt;/li&gt;
-&lt;li&gt;不断出现的高危漏洞造成明显的告警疲劳，跟踪和安排修补已成为持续负担。&lt;/li&gt;
-&lt;li&gt;有运维者担心升级重启无法处理潜在入侵残留，希望漏洞处置同时说明恢复与排查方案。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-挪威风景公路上的建筑级公共厕所-restrooms-along-the-norwegian-scenic-routes&#34;&gt;
-  5. 挪威风景公路上的建筑级公共厕所 (Restrooms along the Norwegian Scenic Routes)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e6%8c%aa%e5%a8%81%e9%a3%8e%e6%99%af%e5%85%ac%e8%b7%af%e4%b8%8a%e7%9a%84%e5%bb%ba%e7%ad%91%e7%ba%a7%e5%85%ac%e5%85%b1%e5%8e%95%e6%89%80-restrooms-along-the-norwegian-scenic-routes&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/&#34;&gt;https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Visit Norway 将公共厕所写成一份建筑与风景指南，展示挪威风景公路如何把基础服务变成景点。Stegastein 的厕所可以望向奥兰峡湾，Helgeland 海岸的 Ureddplassen 以波浪形建筑闻名，Eggum 休息区则位于旧雷达站遗址下方，并由 Snøhetta 设计。&lt;/p&gt;
-&lt;p&gt;不同地点采用不同的环境策略：Utsikten 的设施以太阳能运行，Ostasteidn 的外墙设计为逐渐长出苔藓，Tyrvefjøra 使用松木和仿佛悬浮的大屋顶。文章把这类项目放在挪威公共道路管理局负责的风景公路体系中，而不是只谈豪华装修；一项尚在推进的森林主题厕所计划使用约 60 至 70 棵树的干木材，不能当作已经建成。&lt;/p&gt;
-&lt;p&gt;文案带有明显的幽默与旅游推广色彩，“世界最好”并非统一评分的工程结论。实际旅行条件也有限制：部分高山路段只在夏季可达，冬季会封路，Oscarshaug 的厕所还曾因恶劣天气加装钢结构。设施的维护、清洁和正确使用，与建筑外观同样决定公共体验。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-664-points--评论-387-comments--投稿者giuliomagnifico--发布时间2026-11-01-184758-0800&#34;&gt;
-  HN 热度 664 points | 评论 387 comments | 投稿者：giuliomagnifico | 发布时间：2026-11-01 18:47:58 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-664-points--%e8%af%84%e8%ae%ba-387-comments--%e6%8a%95%e7%a8%bf%e8%80%85giuliomagnifico--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-184758-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50324388&#34;&gt;https://news.ycombinator.com/item?id=50324388&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;公共厕所也可以拥有安静、优美且值得停留的建筑体验，不必只是最低标准的附属设施。&lt;/li&gt;
-&lt;li&gt;旅行中的厕所密度和可获得性同样重要，日本的便利体验被拿来与景观建筑比较。&lt;/li&gt;
-&lt;li&gt;页面外观照片很多，却较少展示内部设施，难以完整判断实际使用体验。&lt;/li&gt;
-&lt;li&gt;把普通公共服务转化成有辨识度的旅游内容，是一种有效的目的地宣传方式。&lt;/li&gt;
-&lt;li&gt;也有评论提醒，挪威的油气财富与公共投入是理解这些设施的重要背景。&lt;/li&gt;
-&lt;li&gt;旅行经验补充指出，想看峡湾与相关风景应重点关注西海岸，而不只是东部的首都。&lt;/li&gt;
-&lt;li&gt;将带贬义的厕所措辞反转为旅游宣传，被一些评论解读为幽默而有力的政治回应。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-研究者称-claude-阻断与模型训练相关的辅助任务-anthropic-blocks-users-for-anything-touching-training-larger-models&#34;&gt;
-  6. 研究者称 Claude 阻断与模型训练相关的辅助任务 (Anthropic blocks users for anything touching training larger models)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e7%a0%94%e7%a9%b6%e8%80%85%e7%a7%b0-claude-%e9%98%bb%e6%96%ad%e4%b8%8e%e6%a8%a1%e5%9e%8b%e8%ae%ad%e7%bb%83%e7%9b%b8%e5%85%b3%e7%9a%84%e8%be%85%e5%8a%a9%e4%bb%bb%e5%8a%a1-anthropic-blocks-users-for-anything-touching-training-larger-models&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://twitter.com/jiahaoshao1/status/2116475922190922088&#34;&gt;https://twitter.com/jiahaoshao1/status/2116475922190922088&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Jiahao Shao 在 X 发文批评 Anthropic，称自己没有蒸馏 Claude，训练轨迹来自一个强开源模型，Claude 只是帮助提交作业和运行分析，却仍被标记为“训练竞争者”。他报告说，涉及 RFT、SFT 或训练更大模型的任务会遭到阻断、从 Opus 5.5 降到 Opus 5，或直接结束会话。&lt;/p&gt;
-&lt;p&gt;他的主要争议是用途边界：帮助整理、调度研究工作，与用模型输出直接训练竞争模型是否应被同等对待。他还批评厂商用开放网络资料训练自身模型，却限制付费用户在模型训练方向获得协助，认为这种做法体现了不对称的竞争立场。&lt;/p&gt;
-&lt;p&gt;这是一则用户自述及其后续短帖，未提供完整实验、后台审核理由和 Anthropic 对该个案的回应。无法仅凭帖子确认降级的技术原因，也不能把任务中的安全或用途拦截等同于账号已被永久封禁，更不能证明所有用户的所有机器学习研究都会受到同样处理。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-448-points--评论-250-comments--投稿者pretext--发布时间2026-11-01-033919-0800&#34;&gt;
-  HN 热度 448 points | 评论 250 comments | 投稿者：pretext | 发布时间：2026-11-01 03:39:19 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-448-points--%e8%af%84%e8%ae%ba-250-comments--%e6%8a%95%e7%a8%bf%e8%80%85pretext--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-033919-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50319358&#34;&gt;https://news.ycombinator.com/item?id=50319358&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;专业工作流应准备替代模型和可切换接口，避免供应商用途政策变化立即阻断关键工作。&lt;/li&gt;
-&lt;li&gt;即使模型能力出色，长期把业务流程绑定到单一厂商仍可能形成难以摆脱的依赖。&lt;/li&gt;
-&lt;li&gt;会话被安全机制打断与账号被正式封禁不是同一个概念，讨论需要先厘清实际发生的事。&lt;/li&gt;
-&lt;li&gt;有使用者自述连自有代码重构或开发测试也出现误拒绝，认为边界不稳定会增加工作成本。&lt;/li&gt;
-&lt;li&gt;训练资料来源和学习方法若更透明，公众更容易讨论厂商对输入与输出采取的不同标准。&lt;/li&gt;
-&lt;li&gt;有机器学习研究者表示，频繁争论任务是否允许会消耗研究时间，因此转向开放模型或其他服务。&lt;/li&gt;
-&lt;li&gt;也有人报告在自己的游戏逆向项目中未遇阻断，说明不同任务和环境下的体验并不一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-memdoor-多角色-qwen-工作流在十题样本中取得-4950-memdoor-a-team-of-5-qwen38-27b-models-beats-fable-5-on-livecodebench-hard&#34;&gt;
-  7. Memdoor 多角色 Qwen 工作流在十题样本中取得 49／50 (Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-memdoor-%e5%a4%9a%e8%a7%92%e8%89%b2-qwen-%e5%b7%a5%e4%bd%9c%e6%b5%81%e5%9c%a8%e5%8d%81%e9%a2%98%e6%a0%b7%e6%9c%ac%e4%b8%ad%e5%8f%96%e5%be%97-4950-memdoor-a-team-of-5-qwen38-27b-models-beats-fable-5-on-livecodebench-hard&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve&#34;&gt;https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Memdoor 的 team-solve 以 YAML 组织规划、双路构思、求解、管理审阅及修复流程，各角色使用新上下文，仅通过磁盘文件传递计划、程序与测试结果。项目复现 GVS5H 的提示和循环，评测时使用同一个 Qwen3.8-27B，公开样例驱动修复，最终成绩按隐藏测试计算。&lt;/p&gt;
-&lt;p&gt;在原作者题单的前 10 题上重复五轮，工作流通过 49 次、即 98%，原作者框架在同一小样本上的对照为 96%，Fable 5 单次调用为 80%。作者明确说 98% 与 96% 在这种规模下处于噪声范围，主张的是与原框架接近，而不是证明改进；Fable 对照取自原作者记录，并非在本框架中重新运行。&lt;/p&gt;
-&lt;p&gt;50 次运行通过 OpenRouter 托管，不是本地硬件实测；每次模型运行时间中位数约 40 分钟、费用中位数 0.39 美元。题目来自 2025 年，训练数据污染未排除。失分案例中，管理角色编造错误反例，反而把正确程序改错，另有正确程序被覆盖后才恢复的情形。有限题目和不同调用预算，不能支持“小模型团队在所有编程任务上胜过大模型”的结论。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-419-points--评论-202-comments--投稿者guregodevo--发布时间2026-11-01-064612-0800&#34;&gt;
-  HN 热度 419 points | 评论 202 comments | 投稿者：guregodevo | 发布时间：2026-11-01 06:46:12 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-419-points--%e8%af%84%e8%ae%ba-202-comments--%e6%8a%95%e7%a8%bf%e8%80%85guregodevo--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-064612-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50320995&#34;&gt;https://news.ycombinator.com/item?id=50320995&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为单项评测调出有效框架相对容易，让同一框架跨真实任务稳定泛化则困难得多。&lt;/li&gt;
-&lt;li&gt;多角色多轮消耗大量调用后与大模型单次回答比较，必须同时考虑推理预算是否公平。&lt;/li&gt;
-&lt;li&gt;只取十道旧题的结果不足以形成稳健结论，还需要更多题目和训练污染检验。&lt;/li&gt;
-&lt;li&gt;如果收益来自协作框架，就应测试强模型在同一框架中的表现，而不只比较弱模型团队与强模型单次调用。&lt;/li&gt;
-&lt;li&gt;基准成绩之外，还需要实际生产软件、游戏或用户项目来检验可用性。&lt;/li&gt;
-&lt;li&gt;有实践者表示，规划、研究、实现和审阅分工并通过文件沟通，在真实工作中也能取得好结果。&lt;/li&gt;
-&lt;li&gt;多角色的收益可能来自不同意见和交互纠错，但仍受沟通协议与计算资源限制。&lt;/li&gt;
-&lt;li&gt;按职责拆分上下文、只传递相关结果，被认为可能减少单个长会话里的噪声。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-flock-未回应撤约plymouth-警察局长下令拔掉摄像头电源-police-chief-unplugs-cameras-after-flock-ignores-contract-cancellation&#34;&gt;
-  8. Flock 未回应撤约，Plymouth 警察局长下令拔掉摄像头电源 (Police chief unplugs cameras after Flock ignores contract cancellation)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-flock-%e6%9c%aa%e5%9b%9e%e5%ba%94%e6%92%a4%e7%ba%a6plymouth-%e8%ad%a6%e5%af%9f%e5%b1%80%e9%95%bf%e4%b8%8b%e4%bb%a4%e6%8b%94%e6%8e%89%e6%91%84%e5%83%8f%e5%a4%b4%e7%94%b5%e6%ba%90-police-chief-unplugs-cameras-after-flock-ignores-contract-cancellation&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras&#34;&gt;https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The Drive 的 Joel Feder 报道，Plymouth 市议会于 9 月 22 日表决结束 Flock 自动车牌识别服务，警察局次日暂停所有本地用户账户，并经市律师办公室咨询后以邮件和邮寄正式通知公司。警察局长 Eric Fadden 表示，除本地代表曾有沟通，总部和法务没有给出回复。&lt;/p&gt;
-&lt;p&gt;等待超过一周后，Fadden 下令工作人员拔掉摄像头电源，以确保设备不再工作或记录车牌。Feder 实地查看了两台设备，确认电源线已断开。禁用警方账户与停止设备采集是两个不同动作，报道没有提供足够证据证明断电前每台摄像头一直在录制。&lt;/p&gt;
-&lt;p&gt;Flock 的订阅服务包括硬件和软件，摄像头仍归公司所有；市方持续要求明确拆除时间，但局长说尚无确定答复。Flock 未回应记者多次询问。作者还自述，他和妻子曾被警方利用该系统追踪后错误拦截，因此报道也包含直接受影响者的视角。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-404-points--评论-143-comments--投稿者entryleveljobsc--发布时间2026-11-01-223613-0800&#34;&gt;
-  HN 热度 404 points | 评论 143 comments | 投稿者：entryleveljobsc | 发布时间：2026-11-01 22:36:13 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-404-points--%e8%af%84%e8%ae%ba-143-comments--%e6%8a%95%e7%a8%bf%e8%80%85entryleveljobsc--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-223613-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50326118&#34;&gt;https://news.ycombinator.com/item?id=50326118&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;合同终止后继续占用公共供电与基础设施是否应承担费用或其他责任，值得明确追究。&lt;/li&gt;
-&lt;li&gt;必须先读具体合同，区分终止订阅服务与厂商有义务在何时拆回设备。&lt;/li&gt;
-&lt;li&gt;也有人认为等待一周后断电未必证明恶意拖延，协调拆卸和法务回复本来就可能需要时间。&lt;/li&gt;
-&lt;li&gt;物理断电提供了直接可确认的停用方式，比只依赖后台账户状态更容易理解。&lt;/li&gt;
-&lt;li&gt;地方执法机构既可能扩张监控，也可能成为终止监控的推动者，不能简单视为单一立场。&lt;/li&gt;
-&lt;li&gt;供应商的伦理表现和退出时的合作态度，会反过来影响客户是否还愿意与其建立关系。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-联想-fu100-指纹-u-盘的旧研究sd-卡数据实际未加密-lenovos-encrypted-fingerprint-usb-is-just-an-unencrypted-sd-card-in-a-case&#34;&gt;
-  9. 联想 FU100 指纹 U 盘的旧研究：SD 卡数据实际未加密 (Lenovo&amp;rsquo;s &amp;rsquo;encrypted&amp;rsquo; fingerprint USB is just an unencrypted SD card in a case)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e8%81%94%e6%83%b3-fu100-%e6%8c%87%e7%ba%b9-u-%e7%9b%98%e7%9a%84%e6%97%a7%e7%a0%94%e7%a9%b6sd-%e5%8d%a1%e6%95%b0%e6%8d%ae%e5%ae%9e%e9%99%85%e6%9c%aa%e5%8a%a0%e5%af%86-lenovos-encrypted-fingerprint-usb-is-just-an-unencrypted-sd-card-in-a-case&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/&#34;&gt;https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;HN 链接是一则 Reddit 转帖，其正文链接到 Tom’s Hardware 对 Xusheng Li 研究的报道。补充读取研究者公开的原始演讲稿后，可以确认 ThinkPlus FU100 案例的关键区别：产品宣传 AES-256 硬件加密，但被测设备只是用指纹或密码控制 USB 连接，内部 SD 卡上的数据本身没有加密，物理取卡即可绕过门禁。&lt;/p&gt;
-&lt;p&gt;演讲还分析另一个不同案例 TSD303：它确实加密数据，但早期方案把正确密码经 USB 传回电脑，修补后又出现可推导密钥的问题；最终改为在设备端验证。不能把 FU100 的“完全无数据加密”与 TSD303 的“密码处理有缺陷”合并成所有产品同一种漏洞。&lt;/p&gt;
-&lt;p&gt;研究时间线列出 2025 年 8 月报告、同年 12 月验证最终修正，2026 年 1 月分配相关 CVE，3 月演讲公开，并提醒已有设备需要服务才能采用修复。用环氧树脂覆盖 SD 卡只是早期临时措施。新闻标题中的后续 AI 辅助分析涉及其他产品，不能倒写成拆开 FU100 才发现 SD 卡也需要 AI，更不能据个别样品认定所有联想设备都未加密。&lt;/p&gt;
-&lt;p&gt;原始研究：
-
-  &lt;a href=&#34;https://github.com/xusheng6/breaking_encrypted_USB_drives_with_TTD/blob/main/Breaking_Encrypted_USB_Drives_v2.pdf&#34;&gt;https://github.com/xusheng6/breaking_encrypted_USB_drives_with_TTD/blob/main/Breaking_Encrypted_USB_Drives_v2.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-353-points--评论-122-comments--投稿者entryleveljobsc--发布时间2026-11-01-223443-0800&#34;&gt;
-  HN 热度 353 points | 评论 122 comments | 投稿者：entryleveljobsc | 发布时间：2026-11-01 22:34:43 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-353-points--%e8%af%84%e8%ae%ba-122-comments--%e6%8a%95%e7%a8%bf%e8%80%85entryleveljobsc--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-223443-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50326099&#34;&gt;https://news.ycombinator.com/item?id=50326099&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在存储介质上使用可检查的软件加密，被一些读者视为比单靠设备外壳宣传更可信的方案。&lt;/li&gt;
-&lt;li&gt;FU100 的明文问题与后续 AI 辅助逆向是不同工作，报道不应把两者混成同一次技术突破。&lt;/li&gt;
-&lt;li&gt;这是先前已披露的产品问题，新闻重新传播时应保留发现、通报与修复时间线。&lt;/li&gt;
-&lt;li&gt;既然已有控制器，就应该解释为何没有在写入介质前真正完成加密，而只添加解锁界面。&lt;/li&gt;
-&lt;li&gt;灌胶确曾作为临时措施，但增加取卡难度与提供密码学意义上的数据加密仍是两回事。&lt;/li&gt;
-&lt;li&gt;有评论补充厂商中国站的产品页面，回应它是否只是冒牌商品的疑问。&lt;/li&gt;
-&lt;li&gt;若产品明确声称加密，仅以防室友或防随手查看的简单门禁用途解释设计，并不能回答宣传与实现的落差。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-巴西法院因诉讼文件中的隐藏提示注入作出处罚-brazilian-court-sanctions-lawyers-for-prompt-injection-in-court-filing&#34;&gt;
-  10. 巴西法院因诉讼文件中的隐藏提示注入作出处罚 (Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e5%b7%b4%e8%a5%bf%e6%b3%95%e9%99%a2%e5%9b%a0%e8%af%89%e8%ae%bc%e6%96%87%e4%bb%b6%e4%b8%ad%e7%9a%84%e9%9a%90%e8%97%8f%e6%8f%90%e7%a4%ba%e6%b3%a8%e5%85%a5%e4%bd%9c%e5%87%ba%e5%a4%84%e7%bd%9a-brazilian-court-sanctions-lawyers-for-prompt-injection-in-court-filing&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/&#34;&gt;https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;JetStream Security 这篇发表于 7 月 1 日的文章，介绍巴西 Pará 州 Parauapebas 第三劳动法院处理的一次提示注入事件。文章称，两名律师提交的诉讼文件以白字白底藏入指令，企图让阅读材料的 AI 浅表回应、不质疑文件，而不遵循原有任务。法官使用的 Galileu 系统识别了隐藏内容。&lt;/p&gt;
-&lt;p&gt;据文章转述，法院认为意图在于干预对方或法院的 AI 工具、影响诉讼审查，援引程序诚信及不得妨碍司法活动等义务作出处罚，罚款为诉讼标的 10%。文章采用约 84.2 万雷亚尔的标的额，并把罚款折算为约 1.6 万美元；汇率换算是报道中的近似值，并非另一笔独立罚款。&lt;/p&gt;
-&lt;p&gt;作者借此强调，文件责任不仅涉及人眼可见的文本，也涉及被机器读取的内容。其称该案可能是全球首例，不能据此断言已完成全球判例检索。文章明确说明判决使用 DeepL 从葡语翻成英语，本次摘要依据其英文转述，未取得葡语判决全文。它描述的是被发现和处罚的尝试，而不是证明法院决定已遭成功劫持。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-305-points--评论-188-comments--投稿者doodlesdev--发布时间2026-11-01-101953-0800&#34;&gt;
-  HN 热度 305 points | 评论 188 comments | 投稿者：doodlesdev | 发布时间：2026-11-01 10:19:53 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-305-points--%e8%af%84%e8%ae%ba-188-comments--%e6%8a%95%e7%a8%bf%e8%80%85doodlesdev--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-01-101953-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50322173&#34;&gt;https://news.ycombinator.com/item?id=50322173&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对工具使用是否明智可以另作争论，但刻意向人隐藏、只供机器执行的指令与公开法律论证存在本质差异。&lt;/li&gt;
-&lt;li&gt;除了追究提交者，也必须审视法院把材料交给易受操纵的 AI 审查是否合适。&lt;/li&gt;
-&lt;li&gt;提示注入的边界需要清晰，避免把正常的说理和试图说服法院也当作应受罚的技术攻击。&lt;/li&gt;
-&lt;li&gt;从破坏诉讼基础设施的意图理解此事，比因为攻击文字看似自然语言就把它当成普通请求更合理。&lt;/li&gt;
-&lt;li&gt;有评论建议先把文件按可见页面渲染再 OCR，以减少白字或元数据等不可见内容进入模型。&lt;/li&gt;
-&lt;li&gt;回复提醒 OCR 只能去除部分载荷，不能作为防止提示注入的万能解决方案。&lt;/li&gt;
-&lt;li&gt;显式隐藏指令只是风险的一层，模型自身偏好与更隐蔽的语言诱导也会影响分析。&lt;/li&gt;
-&lt;li&gt;更强硬的立场认为刻意干扰司法程序的处罚不应止于罚款，还应考虑职业资格责任。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

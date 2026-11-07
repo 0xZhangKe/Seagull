@@ -7,7 +7,7 @@
   <link href="https://taxodium.ink/" rel="alternate" type="text/html" />
   <id>https://taxodium.ink/</id>
   <icon>https://taxodium.ink/favicon.ico</icon>
-  <updated>2026-11-06T13:30:49.060Z</updated>
+  <updated>2026-11-07T02:21:14.742Z</updated>
   <author>
     <name>Spike Leung</name>
     <email>l-yanlei@hotmail.com</email>
@@ -89,10 +89,10 @@
 </ul>
 
 <p>
-也許你是網頁的開發者，也許你是一個博客作者，希望上面的內容能讓你意識到網頁無障礙的重要性，同時重視無障礙設計。<b>無障礙不是可有可無的，而是應讓在網頁設計之初就應該考慮在內的，是作為網頁開發者要力求保證的。</b>無障礙設計可以讓盡可能多地人無障礙地訪問你的網頁，讓我們一起讓網絡世界變得更好。
+也許你是網頁的開發者，也許你是一個博客作者，希望上面的內容能讓你意識到網頁無障礙的重要性，同時重視無障礙設計。<b>無障礙不是可有可無的，而是應該在網頁設計之初就應該考慮在內的，是作為網頁開發者要力求保證的。</b>無障礙設計可以讓盡可能多地人無障礙地訪問你的網頁，讓我們一起讓網絡世界變得更好。
 </p>
 
-<section role="note" id="orgdd964ab">
+<section role="note" id="org221823c">
 <p>
 網頁無障礙對 <abbr title="Large language model ">LLM</abbr> 也有帮助，語義化好的頁面，也可以讓 <abbr title="Large language model ">LLM</abbr> 更容易定位頁面的內容。
 </p>
@@ -102,7 +102,7 @@
 這篇文章我主要分享一些網頁無障礙的學習連結，提供一個整體的學習方向，具體如何實踐，還需要你花時間去閱讀和學習。
 </p>
 
-<section role="note" id="org4aa46ca">
+<section role="note" id="org6f7632c">
 <p>
 連結內容都是英文的，有的會提供多語言選項，有的可能還沒有翻譯，如果你閱讀英文有困難，可以試試 <a href="my-experience-with-kagi-translate.html">Kagi Translate</a>。
 </p>
@@ -165,7 +165,7 @@
 <li>穩健 (robust)</li>
 </ul>
 
-<section role="note" id="org8fa3bce">
+<section role="note" id="org32062fa">
 <p>
 你可以用 <abbr title="Perceivable, Operable, Understandable, Robust">POUR</abbr> 這個單詞來記憶 4 個原則。
 </p>
@@ -173,10 +173,10 @@
 
 <p>
 在每個原則下，又派生了 13 個 <b>指導原則 (Guidelines)</b> ，進一步定義了目標，但它們本身不能測試。
-13 個指導原則，又進一步擴展成許多的 <b>成功準則 (Success Criteria, SC)</b> ，它們是具體的，可被測試的指標。每個成功準則會 <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">分成 A、AA、AAA 三個等級</a>，A 是最低的等級，意味著這個成功準則很容易實現，也很容易測試；而 AAA 是最高等級，意味著這個成功準則實現要求更苛刻，判斷是否通過測試更困難（有時帶有主觀性）。要注意的是這些等級不是优先級，也不表示重要程度，每項成功準則對一個或多個使用者群體都很重要。具體要做到什麼程度，要基於自己的需要取舍，例如一個搶票功能，對時間有很高要求，就不容易滿足 <a href="https://w3c.github.io/wcag/understanding/enough-time">Guideline 2.2: Enough Time</a> 中的成功凖則。因為 A 等級的容易實現也容易測試，我認為至少滿足所有 A 等級的準則是一個比較好的起點。
+13 個指導原則，又進一步擴展成許多的 <b>成功準則 (Success Criteria, SC)</b> ，它們是具體的，可被測試的。每個成功準則會 <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">分成 A、AA、AAA 三個等級</a>，A 是最低的等級，意味著這個成功準則很容易實現，也很容易測試；而 AAA 是最高等級，意味著這個成功準則實現要求更苛刻，判斷是否通過測試更困難（有時帶有主觀性）。要注意的是這些等級不是优先級，也不表示重要程度，每項成功準則對一個或多個使用者群體都很重要。具體要做到什麼程度，要基於自己的需要取舍，例如一個搶票功能，對時間有很高要求，就不容易滿足 <a href="https://w3c.github.io/wcag/understanding/enough-time">Guideline 2.2: Enough Time</a> 中的成功凖則。因為 A 等級的容易實現也容易測試，我認為至少滿足所有 A 等級的準則是一個比較好的起點。
 </p>
 
-<section role="note" id="orge15726b">
+<section role="note" id="org5a4c36f">
 <p>
 你可以在 <a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG (Quickref Reference)</a> 查看所有的成功準則，也可以基於等級對它們進行過濾。
 </p>
@@ -187,10 +187,10 @@
 </section>
 
 <p>
-為了方便開發者去滿足成功準則，<abbr title="Web Content Accessibility Guidelines">WACG</abbr> 還提供了很多 <a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques">技術 (Techniques)</a>，它們是一些示例，告訴你怎樣做會符合成功標凖，怎樣做是錯誤的。
+為了方便開發者去滿足成功準則，<abbr title="Web Content Accessibility Guidelines">WACG</abbr> 還提供了很多 <a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques">技術 (Techniques)</a>，它們是一些示例，告訴你怎樣做會符合成功凖則，怎樣做是錯誤的。
 </p>
 
-<section role="note" id="org7111a04">
+<section role="note" id="org28e9a97">
 <p>
 你可以在 <a href="https://www.w3.org/WAI/WCAG22/Techniques/">All WCAG 2.2 Techniques</a> 查看所有的技術，不同的技術會用不同的縮寫，如 ARIA1 是 ARIA 相關技術，H2 是 HTML 相關技術。
 </p>
@@ -218,7 +218,7 @@
 提到網頁內容無障礙，你可能會想到 <code>role</code> 和 <code>aria-*</code> 屬性，它們都是 <a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a> 中的一部分。
 </p>
 
-<section role="note" id="orgf398722">
+<section role="note" id="org4537ee0">
 <p>
 WAI-ARIA 的全称是 Web Accessibility Initiative – Accessible Rich Internet Applications,
 即網頁無障礙倡議組織－無障礙豐富網際網路應用程式。
@@ -285,7 +285,7 @@ WAI-ARIA 的全称是 Web Accessibility Initiative – Accessible Rich Internet 
 </ul>
 
 <p>
-這兩個教程是不錯的起點，讀完應讓就對網頁內容無障礙有比較全面的了解了。還可以去讀一讀 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides">Accessibility guides</a>，裡面關於 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Colors_and_Luminance#overview">顏色</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Accessible_web_applications_and_widgets#keyboard_navigation">鍵盤操作</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Cognitive_accessibility">認知無障礙</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Seizure_disorders">癲癇發作與身體反應的網頁無障礙設計</a> 的內容都很值得一讀。
+這兩個教程是不錯的起點，讀完應該就對網頁內容無障礙有比較全面的了解了。還可以去讀一讀 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides">Accessibility guides</a>，裡面關於 <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Colors_and_Luminance#overview">顏色</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Accessible_web_applications_and_widgets#keyboard_navigation">鍵盤操作</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Cognitive_accessibility">認知無障礙</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Seizure_disorders">癲癇發作與身體反應的網頁無障礙設計</a> 的內容都很值得一讀。
 </p>
 
 <p>
@@ -318,7 +318,7 @@ WAI-ARIA 的全称是 Web Accessibility Initiative – Accessible Rich Internet 
 最後在這裡整理一些我常看到的博客中的無障礙問題，如果你也是一位博客作者，希望對你有帮助。
 </p>
 
-<section role="note" id="org570bf04">
+<section role="note" id="org87f8ceb">
 <p>
 下面提到的問題，如果包含在 <abbr title="Web Content Accessibility Guidelines">WACG</abbr> 中，我會給出對應的成功準則。如果我沒有給出，那很可能和 <abbr title="Web Content Accessibility Guidelines">WACG</abbr> 無關，是一些我個人認為和無障礙有關的問題。
 </p>

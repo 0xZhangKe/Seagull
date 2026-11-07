@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "94895915f3740f5f247a48be",
+      "title": "Channel iteration and goroutine leak",
+      "summary": "A for-range over a channel that's never closed leaks the receiver. Why a fixed number of receives is safe, why a range isn't, and how to catch it with Go 1.27's leak profile.",
+      "image": null,
+      "publishedAt": "2026-06-21T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/channel-iteration-goroutine-leak/",
+      "detailPath": "articles/94895915f3740f5f247a48be.json"
+    },
+    {
       "id": "1fbd4d493e8be857cb50459f",
       "title": "New (Old) 3D Golf: porting PC-9801 & Virtual Boy to Mega Drive",
       "summary": "The Japanese Mega Drive ports of T&E SOFT’s New 3D Golf Simulation series are my favourite golf games, and recently I’ve been living inside their ROMs. As with all the craziest ideas, it began with a “I wonder if I could”… In the early hours of one April morning I managed to pull a single course out of the game—its terrain and flyby data—and reimplement it…",
@@ -461,17 +472,6 @@
       "sourceTitle": "Johnny.Decimal",
       "link": "https://johnnydecimal.com/blog/0209-a-hundred-unsubscriptions/",
       "detailPath": "articles/0878a846268dd9c69d5d9271.json"
-    },
-    {
-      "id": "7c51be4cffcf8e6cd384227b",
-      "title": "This week at JDHQ – 2026-05-25",
-      "summary": "The weekly email update, cross-posted here.",
-      "image": null,
-      "publishedAt": "2026-05-25T04:28:33Z",
-      "sourceId": "4567c06def96db0c",
-      "sourceTitle": "Johnny.Decimal",
-      "link": "https://johnnydecimal.com/blog/0208-this-week-2026-05-25/",
-      "detailPath": "articles/7c51be4cffcf8e6cd384227b.json"
     },
     {
       "id": "583620d0a262c36d3712a0c8",

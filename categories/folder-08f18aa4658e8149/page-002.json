@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "3cf7538f3b4c10850f19a0d6",
+      "title": "Coffee Break Clojure, Test",
+      "summary": "假设有函数 pair-sum ，把输入的数字划分为两个一对，然后对每个对求和，返回和组成的序列： ( defn pair-sum [ & nums ] ( ->> nums ( partition 2 ) ( map ( partial apply + )))) 系统运行一段时间后有人反馈了 Bug，复现方式如下： ( pair-sum 3 2 1 4 5 3 5 ) ;; => (5 5 8) 输入上述用例，函数只返回了前六个数字组成的三个对的和，最后一个 5 被丢弃了。经过判断，这的确是个 Bug，解决方案是让落单的输入单独作为和返回。 你当然可以修完 Bug 之后一走了之，但试想一下：之后的贡献者在看到这段代码的时候，会不会对「落单的输入怎么处理」这件事情产生不同的想法？他会不会认为修复后的版本反而是个…",
+      "image": null,
+      "publishedAt": "2026-11-03T15:58:29Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/clj9/",
+      "detailPath": "articles/3cf7538f3b4c10850f19a0d6.json"
+    },
+    {
+      "id": "e59ba5570f38a09bb2047d8f",
+      "title": "終於可以在跑 Linux 的主要筆電用 Wi-Fi 啦",
+      "summary": "我目前使用的主要筆電是個很普通、文書取向的型號： ASUS Vivobook 16 。我猶記得我大概是在 2023 年買這部筆電的。 親手拿到該筆電後，我當時做的第一件事就是把裡頭那肥大又難用的 Windows 11 重灌成 Linux——確切來說是 Pop!_OS 。後來在 2026 年 3 月左右，我又 distro-hop 去了 Linux Mint 並用到現在。 不過呢，自從那時在該筆電上使用 Linux 後，我就得一直面對一個（小）麻煩： Wi-Fi 與藍牙功能都用不了 。 爲什麼呢？這是因爲該筆電裡頭安裝的網卡是 MediaTek MT7902，而該網卡其中一個惡名昭彰的地方就是： 它的閉源驅動程式多年來都不支援 Linux 核心 ！ 這也使得我長期以來都得拿出我的手機，靠着 USB tether…",
+      "image": "https://microblog.ttheng.com/blog/img243.jpg",
+      "publishedAt": "2026-11-03T15:07:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/finally-got-mt7902-driver-working-on-primary-linux-laptop/",
+      "detailPath": "articles/e59ba5570f38a09bb2047d8f.json"
+    },
+    {
+      "id": "9dbc42c293811443e853ef88",
+      "title": "别让自己变成祥林嫂",
+      "summary": "怎么办，我现在越来越冷血，越来越提供不了情绪价值了",
+      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/sol/nik-zydyz7jleve-unsplash-1.webp",
+      "publishedAt": "2026-11-03T15:00:00Z",
+      "sourceId": "05ada84875558017",
+      "sourceTitle": "So!azy",
+      "link": "https://blog.solazy.me/20261103/",
+      "detailPath": "articles/9dbc42c293811443e853ef88.json"
+    },
+    {
+      "id": "c96225ecbb227dd00775fc05",
+      "title": "最近又开始比较沉浸式地做菜，中午做了点云南米线，原材料都是备好的，只需要简单地把蔬菜…",
+      "summary": "最近又开始比较沉浸式地做菜，中午做了点云南米线，原材料都是备好的，只需要简单地把蔬菜洗干净，把各自的配料下锅，再加点自己喜欢的佐料，几根小油条，两个面结，一碗热乎乎的云南米线就出锅了，很干净的味道，喜欢自己在做菜时很专注，把菜慢慢放到锅里的过程，看着水慢慢沸腾起来，然后出锅， 最…",
+      "image": null,
+      "publishedAt": "2026-11-03T11:37:40Z",
+      "sourceId": "e0d7bbaba7286f4d",
+      "sourceTitle": "Rolen's Blog",
+      "link": "https://rolen.wiki/tiny-happiness/nmw052e0r/",
+      "detailPath": "articles/c96225ecbb227dd00775fc05.json"
+    },
+    {
+      "id": "47986a45502d0c3681051351",
+      "title": "无标题文章",
+      "summary": "玛嗒玛嗒這個輸入法的出現和最近香港的小學資訊與創新科技課程框架要求小二生用漢語拼音（普通話）輸入中文這兩件事放 […]",
+      "image": "https://1.gravatar.com/avatar/19d667891f84a17deee970e145cef9ed58b8dd71869b0b97533a8821fb128616?s=96&d=identicon&r=G",
+      "publishedAt": "2026-11-03T08:42:12Z",
+      "sourceId": "e1dfcc8815d1c9f8",
+      "sourceTitle": "IT 公论",
+      "link": "https://blog.yitianshijie.net/2026/11/03/6146/",
+      "detailPath": "articles/47986a45502d0c3681051351.json"
+    },
+    {
+      "id": "dce17faa97a46f4b077f05ce",
+      "title": "化石在發呆#3自由的探索",
+      "summary": "上星期經歴了個人的資安事件，心靈仍是有點不安。滑鼠的突然移動，有如身體不由自主的抽搐，對於待電腦如延伸肢體的科 […]",
+      "image": "https://cylikesreading.wordpress.com/wp-content/uploads/2026/11/20201116_153610.jpg",
+      "publishedAt": "2026-11-03T08:35:52Z",
+      "sourceId": "737dffed2384c922",
+      "sourceTitle": "恐龍化石的網誌",
+      "link": "https://cylikesreading.wordpress.com/2026/11/03/newsletter-03/",
+      "detailPath": "articles/dce17faa97a46f4b077f05ce.json"
+    },
+    {
       "id": "2d94e2542017a9e01b99fb86",
       "title": "稍微調暗一點點",
       "summary": "我自己的眼睛，在看BBS畫面時，比較容易出現視覺暫留，也就是黑背景之下的白色對我來說很閃。但這是在疲勞時比較明顯，普通時候似乎還好。 因為沒付錢，所以沒辦法更動JS，問AI說如果用CSS做開關燈開關，會有沒辦法記憶的問題。 我測試了一下，確實可以用，但是如果我按下關燈，在文章連結至別篇文章時，會回到原始設定。就像在一個黑色的房間，無預警開燈一樣令人不舒服。 因為畫圖的關係，很早的時候就想裝開關燈開關，其實是希望能夠在晚上開燈。因為本來在白背景畫的圖，黑背景可能會變調。 起初對整個運作其實不太了解，因為我的部落格在我的電腦中，無論白天還是晚上，都是白背景，我的手機則是白天是白的，晚上是暗的。在我電腦的裝置設定裡面，看起來是預設「隨著裝置更動」，如果我把瀏覽器直接調成黑色背景，那白天也會是黑色的。手機好像因為有設…",
@@ -320,17 +386,6 @@
       "detailPath": "articles/9fad2688185532675ce27b02.json"
     },
     {
-      "id": "494ee0c3c777573e62ddd06e",
-      "title": "2026-11-02 Hacker News Top Stories",
-      "summary": "2026-11-02 Hacker News Top Stories # Karpathy 称用约两小时将近 4 万条 HN 视频推荐整理成 HackerTube，收录 6,454 个视频、覆盖约 150 个主题，以视频中点帧取代上传缩略图，无需账号即可本地推荐。 帕尔马农民 Claudio Grossi 在 1990 年代种下阁楼发现的老种子，重新推广约 1.8 米高、呈七穗形态的“奇迹小麦”；报道也指出其易倒伏、面团不易保持形状等代价。 HackerBooks 当前收录 15,362 本书、270,334 次提及，并区分推荐与批评；400 条提及上的双模型标签一致率为 85%，不能当作人工验证准确率。 CVE-2026-98432 影响 Linux IPv4 TCP 握手中的并发内存释放，CNA 评分 9…",
-      "image": null,
-      "publishedAt": "2026-11-01T23:06:00Z",
-      "sourceId": "2777663b85d87309",
-      "sourceTitle": "Cns on SuperTechFans",
-      "link": "https://supertechfans.com/cn/post/2026-11-02-HackerNews/",
-      "detailPath": "articles/494ee0c3c777573e62ddd06e.json"
-    },
-    {
       "id": "263de3b2b8ffe306376a1d9e",
       "title": "马的世界 0.15.0",
       "summary": "今年是马年。 现在的社会上，无非剩下的是「马、驴和骡子」 行业的精英、思想的主导者， 高层的成功人士，被称之为 … 继续阅读 马的世界 0.15.0 →",
@@ -604,61 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/the-power-of-text",
       "detailPath": "articles/0795b7304dd5d3f7b5d9325b.json"
-    },
-    {
-      "id": "ccb7757cd0cc60aba5ec053c",
-      "title": "可疑的馬來西亞華裔語言使用統計數據",
-      "summary": "最近爲了寫一篇 主 blog 長文，想查找馬來西亞華裔語言使用的相關歷史統計數據，最好是能夠從 1960 或 1970 年代延伸到 2000 年代的。 結果我在網上東找西找，把不同的學術論文都翻遍了，結果能找到最接近的也只有馬來（西）亞統計局以前（2000 年前）做過的人口普查數據中，當地華裔 籍貫分佈 的統計表。不過籍貫分屬 ≠ 慣用語言啊，尤其是華語（普通話）的使用在馬來西亞日漸普遍的情況下。 我目前唯一能找到最「適合」的資料，就是在 中文維基百科的「馬來西亞華人」條目 上記載的某個「馬來西亞華裔語言」統計表了。 不過這個統計表完全沒有標示出處，而且 2010 年的人口數字分佈與上面寫到的總數不吻合，我都不敢取用它欸。 如果有誰能夠幫我找到比較有公信力的相關統計資料，那真的是幫大忙了。 2026 年 11…",
-      "image": "https://microblog.ttheng.com/blog/img241.jpg",
-      "publishedAt": "2026-10-31T15:56:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/dubious-malaysia-chinese-language-use-statistics/",
-      "detailPath": "articles/ccb7757cd0cc60aba5ec053c.json"
-    },
-    {
-      "id": "e65bb17dcbac731c3966eb7d",
-      "title": "高德地图的赛博造林",
-      "summary": "今天体验了一下高德地图的新功能",
-      "image": "https://photo.lily.lat/file/AgACAgQAAyEGAASLgSpZAAIWz2rm4Y9na-BkjUrY5Z7WHxz0-A9zAALMEGsbwJI5U6tPirrH3Fi4AQADAgADdwADPQQ.png",
-      "publishedAt": "2026-10-31T15:00:00Z",
-      "sourceId": "05ada84875558017",
-      "sourceTitle": "So!azy",
-      "link": "https://blog.solazy.me/20261031/",
-      "detailPath": "articles/e65bb17dcbac731c3966eb7d.json"
-    },
-    {
-      "id": "7bbba1f61ca3c103a3a3c89f",
-      "title": "突如其來的沙巴人用詞教學",
-      "summary": "https://www.youtube.com/watch?v=aVqsekEj_-M 馬來西亞網路媒體《 當今大馬 》與沙巴亞庇選區國會議員 Chan Foong Hin（ 陳泓縑 ）進行 Podcast 訪談時，在機緣巧合之下地就開始了「沙巴（華）人教西馬 KL （華）人講『沙巴話』」的教學 XDDD。 這裡所謂的「沙巴話」，就是那些在沙巴才比較慣用的 客家話 用詞，或是一些與當地卡達山語混搭形成的特殊用詞，例如 pok silap（若想知道那是什麼意思，可以去看以上的影片）。 LOL，我沙巴人自己也沒聽過 pok silap，不禁感到有點慚愧。",
-      "image": null,
-      "publishedAt": "2026-10-31T14:51:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/spontaneous-sabah-slang-tutorial/",
-      "detailPath": "articles/7bbba1f61ca3c103a3a3c89f.json"
-    },
-    {
-      "id": "c2369bc65270a1745428e751",
-      "title": "本博留言区重启",
-      "summary": "两周前，我决定 关掉留言区 ，当时我说找到更适合的方案就重启。很快，仅仅过去13天，我就找到了一个比较好的评论方案。 这回我把评论系统换成了 Artalk ，这意味着我使用了自托管的方式保存评论系统。换成Artalk一个显而易见的优点是，评论无需搞一大堆的登录，随时可以发言。 在那篇文章也说了，我是很乐意有人能够在文章下进行评论的，这算是对博主的一种【显式支持】，而且也能公开讨论相应的内容。不管怎么说，欢迎各位来留言！ 由于我的服务器带宽不够，因此我就不开启图片上传功能了，需要引用图片的请使用Markdown+外链。 目前还没有评论回复的通知功能，等我后续搞一个邮箱再启用这个功能。 提示 输入昵称和邮箱会出现一个“通知中心”按钮，点击可以查看你的所有评论。",
-      "image": null,
-      "publishedAt": "2026-10-31T14:16:05Z",
-      "sourceId": "c3607b68b8e101d3",
-      "sourceTitle": "Xinsl's Blog",
-      "link": "https://blog.xinsl.xin/posts/blog-announcements/restart-comment-area/",
-      "detailPath": "articles/c2369bc65270a1745428e751.json"
-    },
-    {
-      "id": "ef7c823df2e01f86c43b20ec",
-      "title": "松声｜廿六年·十月末·子夜凉",
-      "summary": "秋景马上就到了全部屎黄色的时候了，公园该绿的还是绿的，最近忙的一批，好久都没怎么出去转转了。一人食不得不说自己买菜做饭的话，的确省钱，本来就自己一个人吃，做得多，吃的多，口味适合自己，吃完下一顿...",
-      "image": "https://img.xyzbz.cn/i/2026/10/28/6ae18f052bca2.jpeg",
-      "publishedAt": "2026-10-31T14:10:38Z",
-      "sourceId": "309d11f5508ab72f",
-      "sourceTitle": "网友小宋",
-      "link": "https://xyzbz.cn/archives/1588/",
-      "detailPath": "articles/ef7c823df2e01f86c43b20ec.json"
     }
   ]
 }

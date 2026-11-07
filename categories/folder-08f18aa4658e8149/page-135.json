@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "22a97125dfd6c1a96875f837",
+      "title": "Android 内存优化之二 - MAT使用进阶",
+      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 技术复核（2026-10-13） ：保留 2015 年的操作截图，概念与菜单说明对照 MAT 1.17.0 文档。旧 Android Studio 的右键转换和 GC 按钮不代表当前界面；下文修正引用方向、Unreachable 和泄漏判定，并补上缺失的分析步骤。 抓取流程见本系列 入门篇 ：先在 Android Studio Profiler 以 debuggable / compl…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:26:36Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT-Pro/",
+      "detailPath": "articles/22a97125dfd6c1a96875f837.json"
+    },
+    {
+      "id": "edcb1d4763935081023653c3",
+      "title": "Android 内存优化(1) - MAT 使用入门",
+      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 技术复核（2026-10-13） ：本文保留原教程和历史截图。MAT 的堆分析概念仍适用；旧 Eclipse/DDMS 抓取流程已过期。下载与运行要求更新到 MAT 1.17.0（2026-06-10，独立版要求 Java 21+） ，并修正 ART、Bitmap、Retained Size 和引用类型说明。 现在可以先在 Android Studio Profi…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:10:29Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
+      "detailPath": "articles/edcb1d4763935081023653c3.json"
+    },
+    {
+      "id": "45c59bddec1a44274e2d27b4",
+      "title": "我来有赞了",
+      "summary": "今天晚上终于有时间来写写博客了，想想决定从ucloud离职到现在，差不多一个多月了。关于离职的原因，一句话两句话也说不清楚，离职这事也纠结了好久，正好顺着年后跳槽高峰期，从上海跳到了美丽大杭州。",
+      "image": null,
+      "publishedAt": "2015-04-03T23:10:49Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/04/03/leave-ucloud-to-youzan/",
+      "detailPath": "articles/45c59bddec1a44274e2d27b4.json"
+    },
+    {
+      "id": "1795430768818b2a50f9e16b",
+      "title": "Android性能优化后续",
+      "summary": "前言 本文是一篇译文，原文 Android Performance Case Study Follow-up 的作者是大名鼎鼎的 Romain Guy 。本文讲述了Android性能优化的一些技巧、方法和工具。 技术复核（2026-10-13） ：保留 2015 年 Falcon Pro 3 / Moto X 2014 的历史案例，以下第一人称属于原作者。Tracer for OpenGL ES、Hierarchy Viewer 所在的 Android Device Monitor 已在 Android Studio 3.1 弃用、3.2 移除；旧工具步骤标为历史内容，文末补充 Android 12+ 的 Perfetto 分析入口。原站链接本次未能重新读取，技术修订依据文中列出的官方资料和版本化源码。 译文…",
+      "image": null,
+      "publishedAt": "2015-03-31T01:29:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/31/android-performance-case-study-follow-up/",
+      "detailPath": "articles/1795430768818b2a50f9e16b.json"
+    },
+    {
       "id": "72ed4eab2103e8a0f73bbeea",
       "title": "加速Android Studio/Gradle构建",
       "summary": "已经使用Android Studio进行开发超过一年，随着项目的增大，依赖库的增多，构建速度越来越慢，现在最慢要6分钟才能build一个release的安装包，在网上查找资料，发现可以通过一些配置可以加快速度，这里跟大家分享一下。 开启gradle单独的守护进程 在下面的目录下面创建 gradle.properties 文件： /home/<username>/.gradle/ (Linux) /Users/<username>/.gradle/ (Mac) C:\\Users\\<username>\\.gradle (Windows) 并在文件中增加： 1 org . gradle . daemon = true 同时修改项目下的 gradle.properties 文件也可以优化： 1 2 3 4 5 6 7…",
@@ -615,50 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2014/06/29/sunday-afernnon/",
       "detailPath": "articles/437c2f6b7b8f68a68c7d9e3f.json"
-    },
-    {
-      "id": "d999c1310b189164268847d2",
-      "title": "风吹微微",
-      "summary": "回寝室之时，本已经停歇的雨，一顿晚餐的功夫又落了下来。 并不算大，骑着车，风往身后吹去。短短的路程，脑子里却闪过无数念头。 不用十分钟，就到了。脱去潮湿的衣服，冲凉。 出来以后，站在阳台上，看着风吹树枝弯曲的弧度，灰白弥漫的天空，零星散散的雨水。有一种无法名状的触动。 并不是打通任督六脉，猛然开窍之类的触动，仅仅是体悟到某种生存深处的纯质。 我想。 有的人匆忙一生为了最后的荣光与欲望的实现，有的人却恬淡度日只在乎基本的需求和日夜的微变，前者像是斗士，或真或假，而后者我愿意用隐士作为它们的代表，尽管隐士并不真的多。 梦想是我们所追求的生存状态，但梦想的背后是否是我们想要的人生的结果呢？ 比如我一心想要成为记者，做一些有价值有意义的采访报道，追求在路上，好奇追问的生活状态。 可是，我还告诉自己，要在年老以后，开一…",
-      "image": null,
-      "publishedAt": "2014-06-26T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2014/06/27/breeze",
-      "detailPath": "articles/d999c1310b189164268847d2.json"
-    },
-    {
-      "id": "0c82fa7733bc676db6418717",
-      "title": "玩木工【四】：开始刨木头",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-25T10:45:27Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw004/",
-      "detailPath": "articles/0c82fa7733bc676db6418717.json"
-    },
-    {
-      "id": "ad2693ad1414d2f954ae8847",
-      "title": "玩木工【三】：Stanley 铁刨的翻新",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-06-22T20:23:01Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw003/",
-      "detailPath": "articles/ad2693ad1414d2f954ae8847.json"
-    },
-    {
-      "id": "bf1da07a92f29044707e1ddd",
-      "title": "一个程序员的Ubuntu安装的那些软件",
-      "summary": "鄙人程序猿一枚，Android开发，常年使用Ubuntu（主要是买不起Mac，O(∩_∩)O哈哈~）。分享一下自己使用的那些软件，如果你有什么好的软件。欢迎与我交流。 输入法 ：开始的时候是用的fcitx，后来搜狗出了linux版本，选择之。 下载链接 办公软件 ：WPS Linux，真心很好用，比libreOffice好用不止一点. 下载链接 注意：下载alpah版本. 浏览器 ：chrome 和 FireFox，不解释，一个浏览器不够用的。这两个，开发调试都够了。关于支付宝的话，可以安装支付宝官方给的一个脚本就可以了。 邮件客户端 ： ThunderBird Mail 火狐家的，算比较好用的了。 笔记 ：为知笔记 ，为知真是业界良心，唯一一家提供linux版本的，做的还挺不错的，虽然有一些不好，但是相信以…",
-      "image": null,
-      "publishedAt": "2014-06-22T04:57:52Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-06-22-my-soft-in-ubuntu/?utm_source=rss",
-      "detailPath": "articles/bf1da07a92f29044707e1ddd.json"
     }
   ]
 }

@@ -67,6 +67,83 @@
       "detailPath": "articles/d3b89b87c6d1a137dcdca182.json"
     },
     {
+      "id": "b0f788effa842600084a8973",
+      "title": "Run Paperclip AI on a Sprite",
+      "summary": "Paperclip is extremely hot right now. I’m not going to explain what it is in any detail here because you have YouTube. But in short: it’s an open-source orchestration platform that lets you set up teams of AI agents that operate like a company. Org charts, goals, budgets, autonomous execution. It’s perfect for people who want a team of robots to do all the…",
+      "image": "https://fly.io/blog/paperclip-on-a-sprite/assets/paperclip-on-a-sprite.jpg",
+      "publishedAt": "2026-04-01T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/paperclip-on-a-sprite/",
+      "detailPath": "articles/b0f788effa842600084a8973.json"
+    },
+    {
+      "id": "25bdb1a765b93dcde832a794",
+      "title": "Run a Local LLM on a CPU With BitNet and a Sprite",
+      "summary": "There’s a wave of absurdly efficient local inference engines showing up. Models quantized so aggressively that they run on CPUs, no GPU required, at speeds that are actually usable. Microsoft’s BitNet is one of them: 1.58-bit quantization, ternary weights, optimized SIMD kernels. A 2.4 billion parameter model that fits in 1.1GB of RAM. So naturally, I neede…",
+      "image": "https://fly.io/blog/local-llm-on-a-sprite/assets/local-llm-on-a-sprite.webp",
+      "publishedAt": "2026-03-16T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/local-llm-on-a-sprite/",
+      "detailPath": "articles/25bdb1a765b93dcde832a794.json"
+    },
+    {
+      "id": "a9c1ba26b0d131c9c446284d",
+      "title": "Context Engineering Is Just Writing Things Down",
+      "summary": "“Context engineering” is the internet’s new shibboleth. Fine. We’ve had worse. So here’s an argument starter: The only interesting thing about OpenClaw is its context engineering. The way it manages and inserts memory into agent context. Yes, this is because I live in a world where everything you need from a computer is just a few prompts away. So no, I don…",
+      "image": "https://fly.io/blog/context-engineering-is-just-writing-things-down/assets/context-engineering-is-just-writing-things-down.jpg",
+      "publishedAt": "2026-02-23T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/context-engineering-is-just-writing-things-down/",
+      "detailPath": "articles/a9c1ba26b0d131c9c446284d.json"
+    },
+    {
+      "id": "63390815303b99e592055c7f",
+      "title": "Agent Swarms on Sprites",
+      "summary": "There’s a lot of noise right now about agent teams and swarms. The idea is simple: instead of one code agent grinding through a task list, set up a group of agents that can split work, delegate, and check each other’s output. It works. Multiple agents in parallel genuinely get more done. The part that nobody has a great answer for is the environment. Where…",
+      "image": "https://fly.io/blog/agent-swarms-on-sprites/assets/agent-swarms-on-sprites.jpg",
+      "publishedAt": "2026-02-09T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/agent-swarms-on-sprites/",
+      "detailPath": "articles/63390815303b99e592055c7f.json"
+    },
+    {
+      "id": "97c1582d4108f1f283b6c010",
+      "title": "Closing the Loop: The Missing Ingredient in Agentic Development",
+      "summary": "Remember when coding with AI meant copying code from a chat window, pasting it into your editor, running it, copying the error, pasting it back into the chat, etc. Yeah that sucked. We were middleware. Now we have agents that can read and write inside our code bases, which makes them feel a lot more like legit tools. But answering Claude’s permission checks…",
+      "image": "https://fly.io/blog/closing-the-loop/assets/unicorn.webp",
+      "publishedAt": "2026-02-05T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/closing-the-loop/",
+      "detailPath": "articles/97c1582d4108f1f283b6c010.json"
+    },
+    {
+      "id": "17513267d7ae567cd9b41c7d",
+      "title": "I Build Everything In Sprites Now",
+      "summary": "I just realised I build everything in Sprites now. It feels weird to say because Sprites are still really new (even for people who work at Fly.io). They’re obviously super exciting for people building agents, but when I finally “got” Sprites, it pretty much instantly felt weird to build anything anywhere else. If, like me, you have to flit between many proj…",
+      "image": "https://fly.io/blog/i-build-everything-in-sprites-now/assets/buildinsprites.webp",
+      "publishedAt": "2026-02-03T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/i-build-everything-in-sprites-now/",
+      "detailPath": "articles/17513267d7ae567cd9b41c7d.json"
+    },
+    {
+      "id": "65589f5f0cb6c151cf8d974d",
+      "title": "How to Run Untrusted Code Safely",
+      "summary": "AI generates code faster than you can review it. Your agent wants to run a Python script . Your tool wants to execute user-submitted code. Your pipeline wants to test generated functions. All things you don’t want to be running locally or in production unless you’re just trying to add some drama to your life right now. If you want to walk the path of peace,…",
+      "image": "https://fly.io/blog/running-untrusted-code/assets/untrusted.jpg",
+      "publishedAt": "2026-02-02T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/running-untrusted-code/",
+      "detailPath": "articles/65589f5f0cb6c151cf8d974d.json"
+    },
+    {
       "id": "b9df9c6ece5ab22b7e4ee548",
       "title": "Litestream Writable VFS",
       "summary": "I’m Ben Johnson, and I work on Litestream at Fly.io. Litestream is the missing backup/restore system for SQLite. It’s free, open-source software that should run anywhere, and you can read more about it here . Each time we write about it, we get a little bit better at golfing down a description of what Litestream is. Here goes: Litestream is a Unix-y tool fo…",
@@ -76,6 +153,50 @@
       "sourceTitle": "Flight Control",
       "link": "https://fly.io/blog/litestream-writable-vfs/",
       "detailPath": "articles/b9df9c6ece5ab22b7e4ee548.json"
+    },
+    {
+      "id": "cb19a1b20bdb30c9c18f5ffb",
+      "title": "Make Computers Make Computers",
+      "summary": "What’s better than one Sprite ? Sprites making other Sprites. Claude (running in a Sprite) already knows how to use the Sprites API . So you can ask it to create new Sprites, configure their network policies, hit their HTTP endpoints etc. To authorise one Sprite to control others, you’ll need to visit sprites.dev/account/{your-org} and create a token. Then…",
+      "image": "https://fly.io/blog/make-computers-make-computers/assets/mcmc.png",
+      "publishedAt": "2026-01-28T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/make-computers-make-computers/",
+      "detailPath": "articles/cb19a1b20bdb30c9c18f5ffb.json"
+    },
+    {
+      "id": "cb1bd6c1a7fb39c7ce8fa400",
+      "title": "Slack Bots on Sprites: OAuth is Easy Now",
+      "summary": "Slack bots are handy, but they typically require OAuth, which means you need a server with a public URL to handle callbacks. This is annoying. But with Sprites , you get an instant internet-accessible environment with a persistent filesystem that makes it trivial. OAuth Pain Getting your Slack bot working involves jumping through these OAuth hurdles: Create…",
+      "image": "https://fly.io/blog/slack-bots-on-sprites/assets/slack_bots.webp",
+      "publishedAt": "2026-01-27T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/slack-bots-on-sprites/",
+      "detailPath": "articles/cb1bd6c1a7fb39c7ce8fa400.json"
+    },
+    {
+      "id": "97ae20b3822ba497dd4c4466",
+      "title": "Run OpenClaw (Formerly Moltbot and Clawdbot) in a Sprite",
+      "summary": "Running OpenClaw on a Sprite There’s zero chance this will be the first time you’re hearing about OpenClaw, the project previously known as Clawdbot and then Moltbot. It’s an open-source AI assistant that connects to messaging platforms you probably already use: WhatsApp, Telegram, Slack, Discord, Signal, etc. It comes with a fast-growing list of connectors…",
+      "image": "https://fly.io/blog/openclaw-in-a-sprite/assets/moltbot.webp",
+      "publishedAt": "2026-01-26T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/openclaw-in-a-sprite/",
+      "detailPath": "articles/97ae20b3822ba497dd4c4466.json"
+    },
+    {
+      "id": "39b2e30fd7ef46c559bb680f",
+      "title": "Run Claude Code From Your Phone With Sprites",
+      "summary": "A few days ago, this post hit HN’s front page and generated over 400 comments. The author is talking about the setup he uses to code from his phone using Tailscale, an always-on Mac at home, SSH via Termius, and Claude Code in the terminal. If you’re asking why anyone would want to code from their phone, you can safely stop reading now and return to a peace…",
+      "image": "https://fly.io/blog/how-sprites-accidentally-solved-mobile-development/assets/sprite-mobile.webp",
+      "publishedAt": "2026-01-21T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/how-sprites-accidentally-solved-mobile-development/",
+      "detailPath": "articles/39b2e30fd7ef46c559bb680f.json"
     },
     {
       "id": "897393b9eb7fdf1af0bf75a2",
@@ -318,127 +439,6 @@
       "sourceTitle": "Flight Control",
       "link": "https://fly.io/blog/operationalizing-macaroons/",
       "detailPath": "articles/97c75181b761b55074385d95.json"
-    },
-    {
-      "id": "32faea6e9bf18636140f1a85",
-      "title": "Taming A Voracious Rust Proxy",
-      "summary": "Here’s a fun bug. The basic idea of our service is that we run containers for our users, as hardware-isolated virtual machines (Fly Machines), on hardware we own around the world. What makes that interesting is that we also connect every Fly Machine to a global Anycast network. If your app is running in Hong Kong and Dallas, and a request for it arrives in…",
-      "image": "https://fly.io/blog/taming-rust-proxy/assets/happy-crab-cover.jpg",
-      "publishedAt": "2025-02-26T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/taming-rust-proxy/",
-      "detailPath": "articles/32faea6e9bf18636140f1a85.json"
-    },
-    {
-      "id": "5f064223717bfaab8327053e",
-      "title": "We Were Wrong About GPUs",
-      "summary": "We’re building a public cloud, on hardware we own. We raised money to do that, and to place some bets; one of them: GPU-enabling our customers. A progress report: GPUs aren’t going anywhere, but: GPUs aren’t going anywhere. A couple years back, we put a bunch of chips down on the bet that people shipping apps to users on the Internet would want GPUs, so the…",
-      "image": "https://fly.io/blog/wrong-about-gpu/assets/choices-choices-cover.webp",
-      "publishedAt": "2025-02-14T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/wrong-about-gpu/",
-      "detailPath": "articles/5f064223717bfaab8327053e.json"
-    },
-    {
-      "id": "f9cb4e729c45d18d29fdc3b1",
-      "title": "The Exit Interview: JP Phillips",
-      "summary": "JP Phillips is off to greener, or at least calmer, pastures. He joined us 4 years ago to build the next generation of our orchestration system, and has been one of the anchors of our engineering team. His last day is today. We wanted to know what he was thinking, and figured you might too. Question 1: Why, JP? Just why? LOL. When I looked at what I wanted t…",
-      "image": "https://fly.io/blog/the-exit-interview-jp/assets/bye-bye-little-sebastian-cover.webp",
-      "publishedAt": "2025-02-12T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/the-exit-interview-jp/",
-      "detailPath": "articles/f9cb4e729c45d18d29fdc3b1.json"
-    },
-    {
-      "id": "65c5261ffc088738d44504b4",
-      "title": "Did Semgrep Just Get A Lot More Interesting?",
-      "summary": "This whole paragraph is just one long sentence. God I love just random-ass blogging again. This bit by Geoffrey Huntley is super interesting to me and, despite calling out that LLM-driven development agents like Cursor have something like a 40% success rate at actually building anything that passes acceptance criteria, makes me think that more of the future…",
-      "image": "https://fly.io/blog/semgrep-but-for-real-now/assets/ci-cd-cover.webp",
-      "publishedAt": "2025-02-10T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/semgrep-but-for-real-now/",
-      "detailPath": "articles/65c5261ffc088738d44504b4.json"
-    },
-    {
-      "id": "a54caac6762a463804c0c9a4",
-      "title": "A Blog, If You Can Keep It",
-      "summary": "A boldfaced lede like this was a sure sign you were reading a carefully choreographed EffortPost from our team at Fly.io. We’re going to do less of those. Or the same amount but more of a different kind of post. Either way: launch an app on Fly.io today! Over the last 5 years, we’ve done pretty well for ourselves writing content for Hacker News. And that’s…",
-      "image": "https://fly.io/blog/a-blog-if-kept/assets/keep-blog.webp",
-      "publishedAt": "2025-02-10T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/a-blog-if-kept/",
-      "detailPath": "articles/a54caac6762a463804c0c9a4.json"
-    },
-    {
-      "id": "149cec8e6785f0b16ca2f694",
-      "title": "VSCode’s SSH Agent Is Bananas",
-      "summary": "We’re interested in getting integrated into the flow VSCode uses to do remote editing over SSH, because everybody is using VSCode now, and, in particular, they’re using forks of VSCode that generate code with LLMs. ”hallucination” is what we call it when LLMs get code wrong; “engineering” is what we call it when people do. LLM-generated code is useful in th…",
-      "image": "https://fly.io/static/images/default-post-thumbnail.webp",
-      "publishedAt": "2025-02-07T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/vscode-ssh-wtf/",
-      "detailPath": "articles/149cec8e6785f0b16ca2f694.json"
-    },
-    {
-      "id": "4ea7f517fa05f6ce66e7cc06",
-      "title": "AI GPU Clusters, From Your Laptop, With Livebook",
-      "summary": "Livebook, FLAME, and the Nx stack: three Elixir components that are easy to describe, more powerful than they look, and intricately threaded into the Elixir ecosystem. A few weeks ago, Chris McCord (👋) and Chris Grainger showed them off at ElixirConf 2024. We thought the talk was worth a recap. Let’s begin by introducing our cast of characters. Livebook is…",
-      "image": "https://fly.io/blog/ai-gpu-clusters-from-your-laptop-livebook/assets/ai-gpu-livebook-thumb.webp",
-      "publishedAt": "2024-09-24T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/ai-gpu-clusters-from-your-laptop-livebook/",
-      "detailPath": "articles/4ea7f517fa05f6ce66e7cc06.json"
-    },
-    {
-      "id": "47e957e8e50700eeb11d2230",
-      "title": "Accident Forgiveness",
-      "summary": "We’re Fly.io, a new public cloud with simple, developer-friendly ergonomics. Try it out; you’ll be deployed in just minutes , and, as you’re about to read, with less financial risk. Public cloud billing is terrifying. The premise of a public cloud — what sets it apart from a hosting provider — is 8,760 hours/year of on-tap deployable compute, storage, and n…",
-      "image": "https://fly.io/blog/accident-forgiveness/assets/money-for-mistakes-blog-thumb.webp",
-      "publishedAt": "2024-08-21T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/accident-forgiveness/",
-      "detailPath": "articles/47e957e8e50700eeb11d2230.json"
-    },
-    {
-      "id": "5d66eba732f27a1888aac8a8",
-      "title": "We're Cutting L40S Prices In Half",
-      "summary": "We’re Fly.io, a new public cloud with simple, developer-friendly ergonomics. And as of today, cheaper GPUs. Try it out; you’ll be deployed in just minutes . We just lowered the prices on NVIDIA L40s GPUs to $1.25 per hour. Why? Because our feet are cold and we burn processor cycles for heat. But also other reasons. Let’s back up. We offer 4 different NVIDIA…",
-      "image": "https://fly.io/blog/cutting-prices-for-l40s-gpus-in-half/assets/gpu-ga-thumb.webp",
-      "publishedAt": "2024-08-15T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/cutting-prices-for-l40s-gpus-in-half/",
-      "detailPath": "articles/5d66eba732f27a1888aac8a8.json"
-    },
-    {
-      "id": "4dbff2f57f5e4913dede78b7",
-      "title": "Making Machines Move",
-      "summary": "We’re Fly.io, a global public cloud with simple, developer-friendly ergonomics. If you’ve got a working Docker image, we’ll transmogrify it into a Fly Machine: a VM running on our hardware anywhere in the world. Try it out; you’ll be deployed in just minutes . At the heart of our platform is a systems design tradeoff about durable storage for applications.…",
-      "image": "https://fly.io/blog/machine-migrations/assets/migrations-thumb.webp",
-      "publishedAt": "2024-07-30T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/machine-migrations/",
-      "detailPath": "articles/4dbff2f57f5e4913dede78b7.json"
-    },
-    {
-      "id": "43cf121ff6b6b30ad4757ba3",
-      "title": "AWS without Access Keys",
-      "summary": "It’s dangerous to go alone. Fly.io runs full-stack apps by transmuting Docker containers into Fly Machines: ultra-lightweight hardware-backed VMs. You can run all your dependencies on Fly.io, but sometimes, you’ll need to work with other clouds, and we’ve made that pretty simple. Try Fly.io out for yourself; your Rails or Node app can be up and running in j…",
-      "image": "https://fly.io/blog/oidc-cloud-roles/assets/spooky-security-skeleton-thumb.webp",
-      "publishedAt": "2024-06-19T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/oidc-cloud-roles/",
-      "detailPath": "articles/43cf121ff6b6b30ad4757ba3.json"
     }
   ]
 }

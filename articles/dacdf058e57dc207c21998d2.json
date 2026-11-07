@@ -1,0 +1,11 @@
+{
+  "id": "dacdf058e57dc207c21998d2",
+  "title": "Hexo Maupassant 主题增加 GrowingIO 统计代码",
+  "summary": "「为博客增加了 GrowingIO 和 Google Analytics 的 js 统计代码」",
+  "content": "<h2>操作步骤</h2><h3>注册 GrowingIO 帐号</h3><p><a href=\"https://www.growingio.com\" target=\"_blank\" rel=\"noopener noreferrer\">GrowingIO</a></p><p>为什么推荐 GrowingIO ？</p><ol><li>汉化</li><li>免翻墙</li><li>页面直观，有很多适合 marketing 的可视化工具</li></ol><h3>安装 SDK</h3><p>新建 - 添加新应用 - 网站，得到你的项目 id 和相应的 js 代码</p><p><code>你应该看到了，还有很多平台可供选择，任君折腾</code></p><h3>转换 JS 格式</h3><p>打开 <a href=\"http://html2Jade.org/\" target=\"_blank\" rel=\"noopener noreferrer\">HTML2jade</a></p><p>将代码复制至左栏，替换 <code>&lt;script type=&#x27;text/javascript&#x27;&gt;</code> 和 <code>&lt;/script&gt;</code> 之间的内容，将右栏变动了的代码复制下来</p><h3>编辑 .jade 文档</h3><p>在路径 <code>Hexo\\themes\\maupassant\\layout</code> 下找到 <code>base.jade</code>，打开</p><p>在</p><figure><table><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br></pre></td><td><pre><span>html(lang=&#x27;#{config.language}&#x27;)</span><br><span>  head</span><br><span>    meta(http-equiv=&#x27;content-type&#x27;, content=&#x27;text/html; charset=utf-8&#x27;)</span><br></pre></td></tr></table></figure><p>之后的任意位置粘贴 jade 代码</p><p>注意：jade 对格式要求非常严格，请务必注意格式，粘贴的 js 代码前，应有两次缩进（四个空格）</p><p><code>cmd + s</code> 保存</p><h3>部署</h3><p>终端内运行：<code>hexo g -d</code></p><h2>增长黑客？</h2><p>增长黑客，或者称 Growth Hacker，从事的工作为：Growth Hacking，意指数据驱动的营销思维。</p><p>这个工种会越来越流行，因为：</p><ol><li>此前很多年，在一家技术驱动的公司里，市场部完全沦为 PR 、法务和 SNS 营销的执行部门，简直鸡肋，但现在不同了，随着互联网不断深入、渗透，竞争白热化，产品需要更多的流量和用户支撑，需要 branding 和 marketing 的配合，深入吸收其他领域的方法和理念；</li><li>大数据技术慢慢成熟，曾经繁琐的埋点、分析开始变得容易，从而能够分析习惯和行为支撑决策；</li><li>再进一部，AI 的自动化，需要海量的数据以及相配套的方法和模型，不如说，增长黑客就是中间的过渡期。</li></ol><p>这个工种需要懂数据、统计，需要懂心理，需要懂模型，需要懂科研，设计实验、完成闭环分析。</p>",
+  "image": null,
+  "publishedAt": "2017-03-05T02:47:28Z",
+  "sourceId": "8e5dc5a8b5023a8e",
+  "sourceTitle": "折腾人生",
+  "link": "https://z.arlmy.me/posts/hexo/Hexo_GrowthHacker/"
+}

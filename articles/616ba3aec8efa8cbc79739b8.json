@@ -1,0 +1,11 @@
+{
+  "id": "616ba3aec8efa8cbc79739b8",
+  "title": "Hexo 使用 Clustrmaps 以地图图示显示访客",
+  "summary": "「折腾了一个地图插件，统计、显示访客。」",
+  "content": "<h2>缘起</h2><p>在网上乱逛时遇到，觉得不赖，拿来调试下用了。以前的博客平台里，常常自带这种插件。觉得很怀旧！</p><p>样式不太满意，于是不想把它显示出来，用比较鸡贼的方式隐藏了，然后再去官网看数据。如果想把它显示出来的话，本方法就不太适用了，你可能需要再自己折腾折腾。</p><h2>操作步骤</h2><h3>注册</h3><p>在 <a href=\"https://clustrmaps.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Clustrmaps.com</a>注册，我没有太仔细地看注册条款，此网站有可能会调取、使用你的访问数据，如介意请勿用。</p><h3>自定义代码</h3><ol><li>右上角点击<code>Create Your Widget</code>，提交博客域名，选择样式，即创建成功；</li><li>右上角点击头像，下拉菜单选<code>My Websites</code>，点击<code>Customize</code>；</li><li>Size 项点选<code>Custom Size</code>；</li><li>Widget Colors 项将所有颜色改为纯白，即<code>#ffffff</code>；</li><li>在 Widget Code 项选<code>Javascript based</code>，复制 JS 代码。</li></ol><h3>修改 layout 文件</h3><ol><li>在 <a href=\"http://html2jade.org/\" target=\"_blank\" rel=\"noopener noreferrer\">HTML2Jade</a> 转换格式；</li><li>在博客目录下<code>目录\\themes\\maupassant\\layout\\_partial</code>找到<code>footer.jade</code>，最后一行粘贴 jade 代码，本行代码前应有<strong>两个空格缩进</strong>；</li><li>在这段代码中找到<code>w=300</code>，将其改为<code>w=1</code>，在网站上是不允许修改的，鸡贼就鸡贼在这里啦（这样就看不见了嘛……）</li></ol><h3>部署</h3><p><code>hexo g -d</code> 你懂的</p><h2>其他</h2><ol><li>可以收藏一个链接（每个站点都有一个固定地址可以查看访问数据），放在友情链接里，方便想起时查看；</li><li>同样道理代码也可以放在其他 jade 文件里，我觉得放在页脚比较神不知鬼不觉，不过最好不要放在 <code>head.jade</code> 里，因为会影响页面加载速度；</li><li>在页脚用鼠标试试，你可以找到那个可以点击的像素点的！</li><li>如果您有不鸡贼的方法，在此特求指教一二！</li></ol><hr><p>CHANGELOG</p><ul><li>20200311 Arlmy 创建</li><li>20200311 Arlmy 撰写、发布</li></ul>",
+  "image": null,
+  "publishedAt": "2020-03-11T09:58:28Z",
+  "sourceId": "8e5dc5a8b5023a8e",
+  "sourceTitle": "折腾人生",
+  "link": "https://z.arlmy.me/posts/hexo/Hexo_Clustrmaps/"
+}

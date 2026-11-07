@@ -1,0 +1,11 @@
+{
+  "id": "93bf53a60a62924af55bae7c",
+  "title": "Github 强制要求使用 Personal access token",
+  "summary": "「Github 要求更换一种验证方式。」",
+  "content": "<h2>命令行报错</h2><figure><table><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br></pre></td><td><pre><span>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</span><br><span></span><br><span>remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</span><br></pre></td></tr></table></figure><h2>原因</h2><p><a href=\"https://developer.github.com/changes/2020-02-14-deprecating-password-auth/\" target=\"_blank\" rel=\"noopener noreferrer\">Deprecating password authentication | GitHub Developer Guide</a> 官方解释，用户名和密码的验证方式从 2021 年 8 月 13 日开始不再支持，要转而使用 personal access token。</p><p>解决方案来自：<a href=\"https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to\" target=\"_blank\" rel=\"noopener noreferrer\">git - Support for password authentication was removed. Please use a personal access token instead - Stack Overflow</a></p><h2>解决操作</h2><ol><li>在 Github 账户，Setting - Developer settings - Personal access tokens - Generate new token；</li><li>Note 填写 Hexo 或 Blog 之类，勾选第一项 repo，然后 Generate token；</li><li>复制生成的 Token，类似  <code>ghp_sFs1x2x3x4x5x6x6x7x8x8xxxxxxx</code>；</li><li>Windows 系统，打开“设置”，搜索“凭据”，进入“凭据管理器”；</li><li>点击“Windows”凭据，在普通凭据里找到 <code>git:https://github.com</code>，编辑；</li><li>在密码一栏，将生成的 Token 复制进去。</li></ol><hr><p>CHANGELOG</p><ul><li>20210820 Arlmy 创建、发布，<ul><li>解决方案来自：<a href=\"https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to\" target=\"_blank\" rel=\"noopener noreferrer\">git - Support for password authentication was removed. Please use a personal access token instead - Stack Overflow</a>、<a href=\"http://nfail.com/q/1qTCJZ\" target=\"_blank\" rel=\"noopener noreferrer\">Github 删除了对用户名密码验证的支持。请改用个人访问令牌 - NFAIL</a></li></ul></li></ul>",
+  "image": null,
+  "publishedAt": "2021-08-21T03:38:28Z",
+  "sourceId": "8e5dc5a8b5023a8e",
+  "sourceTitle": "折腾人生",
+  "link": "https://z.arlmy.me/posts/hexo/Hexo_PersonalAccessToken/"
+}

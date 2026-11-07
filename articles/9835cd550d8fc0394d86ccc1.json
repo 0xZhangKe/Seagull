@@ -1,0 +1,11 @@
+{
+  "id": "9835cd550d8fc0394d86ccc1",
+  "title": "编辑右键新建菜单，增加 Typora，新建 markdown 文件",
+  "summary": "「实在太经常用了，折腾完记录一下。」",
+  "content": "<p>本文仅适用于 Windows 系统，我的系统版本为 Win10</p><ol><li><p>安装 <a href=\"https://typora.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Typora</a> ，FREE</p></li><li><p>新建一个模板文件</p><ul><li>创建一个空白的 <code>.md</code> 文档，作为新建时使用的模板。即：当你新建 markdown 文件时，系统会复制该空白文档到你指定的位置</li><li>复制这个文件的路径，待用，比如我的是 <code>C:\\Users\\user\\OneDrive\\Backup\\NewMarkdownDoc.md</code></li></ul></li><li><p>修改注册表</p><ul><li>逐项改有点麻烦，</li><li><h2>桌面新建一个 <code>.txt</code> 文件，复制以下代码：</h2>  <figure><table><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></pre></td><td><pre><span>Windows Registry Editor Version 5.00</span><br><span></span><br><span>[HKEY_CLASSES_ROOT\\.md]</span><br><span>@=&quot;TyporaMarkdownFile&quot;</span><br><span>&quot;PerceivedType&quot;=&quot;text&quot;</span><br><span>&quot;Content Type&quot;=&quot;text/plain&quot;</span><br><span></span><br><span>[HKEY_CLASSES_ROOT\\.md\\ShellNew]</span><br><span>&quot;NullFile&quot;=&quot;&quot;</span><br></pre></td></tr></table></figure></li><li>保存并关闭文件，将后缀名修改为<code>.reg</code></li><li>[说明] 此段代码有两个功能：在 <code>.md</code> 后缀的文档上右键，打开方式中，将增新增 Typora ；右键新建文档，出现 <code>Markdown File</code> 选项</li><li>双击打开，确认，部署该注册表文件</li></ul></li><li><p>测试</p><ul><li>在桌面右键，选择 <code>新建</code> ，里面有 <code>Markdown File</code> 的选项，左键点击，会有空白的 markdown 文档新建成功</li><li>在此 <code>.md</code> 文件上右键，在 <code>打开方式</code> 中，有 <code>Typora</code> 选项，左键点击，能够用 Typora 正常打开 markdown 文档</li></ul></li></ol><hr><p>CHANGELOG</p><ul><li>180425 Arlmy 创建</li><li>180425 Arlmy 写作完成</li><li>190527 Arlmy 修正</li></ul>",
+  "image": null,
+  "publishedAt": "2018-04-25T03:24:07Z",
+  "sourceId": "8e5dc5a8b5023a8e",
+  "sourceTitle": "折腾人生",
+  "link": "https://z.arlmy.me/posts/ZArlmyMe/RightClickNewMarkdownDoc_20180425/"
+}

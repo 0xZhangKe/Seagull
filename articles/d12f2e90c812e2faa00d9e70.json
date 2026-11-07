@@ -1,0 +1,11 @@
+{
+  "id": "d12f2e90c812e2faa00d9e70",
+  "title": "Hexo Maupassant 主题增加字数统计",
+  "summary": "「网上没有增加这个功能的教程，分享一下」",
+  "content": "<p>网上没有增加这个功能的教程，琢磨了下 jade 的格式，调试成功，分享出来</p><h2>工具</h2><p><code>hexo-wordcount</code> <a href=\"https://www.npmjs.com/package/hexo-wordcount\" target=\"_blank\" rel=\"noopener noreferrer\">npm 链接</a></p><h2>安装</h2><p><code>npm install hexo-wordcount --save</code></p><h2>修改 jade 文件</h2><p><code>\\themes\\maupassant\\layout</code> 路径下找到 <code>post.jade</code></p><p>在 <code>.post-meta</code> 下 <code>span= &#x27; &#x27; + __(&#x27;Hits&#x27;)</code> 后面增加：</p><figure><table><tr><td><pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></pre></td><td><pre><span>span= &#x27; |  本文共计 &#x27;</span><br><span>span.post-count= wordcount(page.content)</span><br><span>span= &#x27; 字  |  阅读约需 &#x27;</span><br><span>span.post-count= min2read(page.content)</span><br><span>span= &#x27; 分钟 &#x27;</span><br></pre></td></tr></table></figure><p>最终显示即为本文效果</p><h2>部署</h2><p>终端内执行：<code>hexo g -d</code></p><h2>注意</h2><p>官方文档中写的是 <code>post.content</code>，但 Maupassant 主题下此项应为 <code>page.content</code></p>",
+  "image": null,
+  "publishedAt": "2017-03-01T08:11:44Z",
+  "sourceId": "8e5dc5a8b5023a8e",
+  "sourceTitle": "折腾人生",
+  "link": "https://z.arlmy.me/posts/hexo/Hexo_AddWordCount/"
+}

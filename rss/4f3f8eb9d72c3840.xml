@@ -3,7 +3,7 @@
 <title>新世界的大门</title>
 <subtitle>因此幻想是世界，谁若懂得，谁就会歌唱</subtitle>
 <id>https://blog.xinshijiededa.men/</id>
-<updated>2026-11-04T18:49:35.436Z</updated>
+<updated>2026-11-07T14:07:49.070Z</updated>
 <follow_challenge>
   <feedId>41473172365329408</feedId>
   <userId>61810140015196160</userId>
@@ -13,6 +13,123 @@
 <generator uri="https://astro.build" version="v7.4.0">Astro</generator>
 
 <entry>
+<title>制导与控制基础（下）之一：导弹控制原理</title>
+<link href="https://blog.xinshijiededa.men/missile/control/"></link>
+<id>https://blog.xinshijiededa.men/missile/control/</id>
+<summary>by 新世界的大门</summary>
+<published>2026-11-07T13:22:51.757Z</published>
+<updated>2026-11-07T13:22:51.757Z</updated>
+<author><name>ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫</name></author><content type="html">&lt;figure class="cover">&lt;img data-astro-transition-scope="astro-afl35phn-1" id="cover" src="https://remnote-user-data.s3.amazonaws.com/JmZhMlvU_aqyUp6Eekf-BEuFoIxDuM7NCf0i10W85QcAdt-1USzXZTzwmFEbVnpGQIKckS0e4iFbHOMJJmotxtipaeNiSETf_Uq1fFsBPhhyl2aFed7crrx3GSETnC5F.png" alt="">&lt;/figure>&lt;article id="post">&lt;/article>&lt;h2 id="导弹">导弹&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#导弹">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h2>
+&lt;p>导弹是一种载有战斗部，依靠火箭发动机或航空喷气发动机产生的喷气反作用力推进的，由&lt;mark>制导与飞行控制系统&lt;/mark>来控制飞行轨迹并导向目标的一次性飞行武器。&lt;/p>
+&lt;p>根据&lt;mark>气动外形&lt;/mark>可分为&lt;mark>有翼导弹&lt;/mark>和&lt;mark>弹道导弹&lt;/mark>两大类。&lt;/p>
+&lt;h3 id="有翼导弹">有翼导弹&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#有翼导弹">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>配置有&lt;mark>弹翼&lt;/mark>&lt;/li>
+&lt;li>具有良好的气动外形&lt;/li>
+&lt;li>一般依靠&lt;mark>航空喷气发动机&lt;/mark>提供推力&lt;/li>
+&lt;li>在&lt;mark>空气动力&lt;/mark>的共同作用下在大气中作机动飞行&lt;/li>
+&lt;li>既可攻击固定目标，又可攻击机动目标&lt;/li>
+&lt;li>使用高度限制：30 千米以下&lt;/li>
+&lt;li>优点：机动性好，便于控制&lt;/li>
+&lt;li>缺点：大攻角飞行时，弹翼的作用明显减小&lt;/li>
+&lt;li>巡航导弹和大多数战术导弹，如反飞机导弹、反舰导弹、反坦克导弹等均为有翼导弹。&lt;/li>
+&lt;/ul>
+&lt;h3 id="弹道导弹">弹道导弹&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#弹道导弹">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>也称：无翼导弹&lt;/li>
+&lt;li>由&lt;mark>火箭发动机&lt;/mark>产生推力&lt;/li>
+&lt;li>飞行方式：弹道飞行&lt;/li>
+&lt;li>主要攻击固定目标&lt;/li>
+&lt;/ul>
+&lt;h3 id="气动布局">气动布局&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#气动布局">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;p>导弹的气动布局形式由哪些翼面位置来表征？→ 弹翼、舵面、尾翼&lt;/p>
+&lt;p>按照弹翼和舵面（尾翼）沿弹身纵轴的相互位置，气动布局分为哪些类型？→ 正常式、鸭式、无尾式、旋转弹翼式、无翼式&lt;/p>
+&lt;figure>&lt;img src="https://remnote-user-data.s3.amazonaws.com/WQ5pJXhuOs7fr2ayDj93VmcvhdDGVtlayl-3jjisWAcQRW8-nbk1be4ZouQu2S_kyigVF-kKs3ESR4T6G5l1QpauRm7M2mbg_1-YxhxQRgXzF-0orR4kAPdgbu2XR454.svg" alt="从上到下：正常式、鸭式、无尾式、旋转弹翼式、无翼式">&lt;figcaption>从上到下：正常式、鸭式、无尾式、旋转弹翼式、无翼式&lt;/figcaption>&lt;/figure>
+&lt;p>按照翼面相对弹身横向的具体配置，气动布局分为：一字形、X 字形、十字形&lt;/p>
+&lt;p>按前后两组翼面的配置组合，气动布局分为：++、XX、+X 和 X+ 形&lt;/p>
+&lt;h2 id="制导控制系统分类">制导控制系统分类&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#制导控制系统分类">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h2>
+&lt;h3 id="自主制导系统">自主制导系统&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#自主制导系统">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;p>自主制导系统的&lt;mark>导引指令信号&lt;/mark>仅由弹上制导设备敏感地球或宇宙空间物质的物理特性而产生。&lt;/p>
+&lt;p>制导系统和&lt;mark>目标&lt;/mark>、&lt;mark>指挥站&lt;/mark>不发生联系，称为自主制导。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>导弹发射前：预先确定了导弹的弹道&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>导弹发射后，弹上制导系统的敏感元件不断测量预定的参数，如&lt;mark>导弹的加速度、导弹的姿态、天体位置、地貌特征&lt;/mark>等。这些参数在弹上经适当处理，与在预定的弹道运动时的参数进行比较，一旦出现偏差，便产生引导指令使导弹飞向预定的目标&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>为了确定导弹的位置，在导弹上必须安装&lt;mark>位置测量系统&lt;/mark>&lt;/p>
+&lt;ul>
+&lt;li>常用的测量系统有&lt;mark>磁测量系统、惯性系统、天文导航系统&lt;/mark>等&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>自主式制导设备是一种由各种不同作用原理的仪表所组成的十分复杂的&lt;mark>动力学系统&lt;/mark>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>采用自主制导系统的导弹，由于和目标及指挥站不发生任何联系，故&lt;mark>隐蔽性好，不易被干扰&lt;/mark>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>优点：导弹的射程远，制导精度也较高&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>缺点：导弹一经发射出去，其飞行弹道就不能再变，所以只能攻击固定目标或将导弹引向预定区域&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>自主制导系统一般用于弹道导弹、巡航导弹和某些战术导弹（如地空导弹）的初始飞行段&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="遥控制导系统">遥控制导系统&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#遥控制导系统">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;p>由&lt;mark>导弹以外的指挥站&lt;/mark>向导弹发出导引信息的制导系统，称为遥控制导系统。&lt;/p>
+&lt;p>这里所说的&lt;strong>导引信息&lt;/strong>，可能是导引指令或导弹的位置信息。&lt;/p>
+&lt;p>根据&lt;mark>导引指令在制导系统中形成的部位不同&lt;/mark>，遥控制导又分为：驾束制导和遥控指令制导。&lt;/p>
+&lt;blockquote>
+&lt;p>驾束制导和遥控指令制导虽然都由导弹以外的指挥站导引导弹，但前者指挥站的波束指向，只给出导弹的位置信息，至于导引指令，则由飞行在波束中的导弹检测其在波束中的偏差来形成。而遥控指令制导系统的导引指令，该指令送往导弹，以操纵导弹飞向目标。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="自动寻的制导系统">自动寻的制导系统&lt;a aria-hidden="true" tabindex="-1" href="https://blog.xinshijiededa.men/missile/control/#自动寻的制导系统">&lt;span class="anchor">#&lt;/span>&lt;/a>&lt;/h3>
+&lt;p>工作原理：利用&lt;mark>目标辐射或反射的能量&lt;/mark>，测量&lt;mark>目标与导弹的相对运动参数&lt;/mark>，直接形成导引指令。&lt;/p>
+&lt;p>与自主制导的区别在于&lt;mark>导弹与目标间有联系&lt;/mark>，即有&lt;mark>导弹观测信道&lt;/mark>。&lt;/p>
+&lt;ul>
+&lt;li>可攻击高速目标，制导精度较高，发射后不管&lt;/li>
+&lt;li>但作用距离有限，易受外界干扰&lt;/li>
+&lt;li>一般用于空空导弹、地空导弹、空地导弹和某些弹道导弹、巡航导弹的飞行末段&lt;/li>
+&lt;/ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table>&lt;thead>&lt;tr>&lt;th>类型&lt;/th>&lt;th>作用距离&lt;/th>&lt;th>制导精度&lt;/th>&lt;th>制导设备&lt;/th>&lt;th>抗干扰能力&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody>&lt;tr>&lt;td>自主制导&lt;/td>&lt;td>可以很远&lt;/td>&lt;td>较高&lt;/td>&lt;td>在弹上&lt;/td>&lt;td>极强&lt;/td>&lt;/tr>&lt;tr>&lt;td>遥控制导&lt;/td>&lt;td>较远&lt;/td>&lt;td>高，随距离降低&lt;/td>&lt;td>分装在制导站内和弹上&lt;/td>&lt;td>较差&lt;/td>&lt;/tr>&lt;tr>&lt;td>自动寻的制导&lt;/td>&lt;td>小于遥控制导&lt;/td>&lt;td>高&lt;/td>&lt;td>在弹上&lt;/td>&lt;td>较差&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table></content></entry>
+<entry>
 <title>2026-08-25 / 紫檀和紫谱</title>
 <link href="https://blog.xinshijiededa.men/daily/114/"></link>
 <id>https://blog.xinshijiededa.men/daily/114/</id>
@@ -21,7 +138,7 @@
 <updated>2026-11-04T18:25:31.472Z</updated>
 <author><name>ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫</name></author><content type="html">&lt;p>今日大量游玩舞萌。在尝试了《妄想感伤代偿联盟》之后，终于学会了打星星的方法：敲击星星头后，把手抬起来。养成这种习惯后就会顺手多了。这下，拍拍机变成了抬手机——好久没玩抬手机了。&lt;/p>
 &lt;img src="https://remnote-user-data.s3.amazonaws.com/xKBPFXx0ODuMj200_ipX7FiGqHFI5lLNh5HEbilMu2FKsgRxDP1zpX0zNgwOQqbejY0woPtkCped3aWPaJLIMccljV9kkC7l7mgQLV3AR25SASqofbZRnynzlO6XAdte.jpg" alt="">
-&lt;p>听《像神一样呐》完整版的原曲，才发现舞萌和太鼓都把歌曲后半部分有一段变速的阶段给阉割掉了。最后以 97% 的准确率堪堪FC。&lt;/p>
+&lt;p>听《像神一样呐》完整版的原曲，才发现舞萌和太鼓都把歌曲后半部分有一段变速的阶段给阉割掉了。最后以 &lt;span class="upright">97%&lt;/span> 的准确率堪堪FC。&lt;/p>
 &lt;p>是夜，&lt;a href="https://zh.wikipedia.org/zh-cn/%E7%86%B1%E5%B8%B6%E9%A2%A8%E6%9A%B4%E7%B4%AB%E6%AA%80" target="_blank">台风紫檀&lt;/a>登陆。天空变成了浓淡不一的墨水的颜色，地面的水流连绵不断。风雨飘摇中，我找了一家还在营业的摊位，吃牛肉粉。（这就是所谓的 &lt;a href="https://www.guangximinzubao.cn/sy/jxzw/390966.html#:~:text=%E5%97%A6%E7%B2%89%E7%BB%8F%E6%B5%8E-,ginghci%20suep%20faenj,-74" target="_blank">ginghci suep faenj&lt;/a> 吗？）老板送了我一根牛骨头和吸管，里面有些许骨髓。&lt;/p></content></entry>
 <entry>
 <title>2026-08-19 / 蜗牛，卒</title>
@@ -956,7 +1073,7 @@ mjx-c.mjx-c1D44B.TEX-I::before {
 <summary>by 新世界的大门</summary>
 <published>2026-08-28T17:53:39.340Z</published>
 <updated>2026-08-28T17:53:39.340Z</updated>
-<author><name>ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫</name></author><content type="html">&lt;p>配置一个4G/5G插卡上网的路由器。折腾了半天不知道如何设置。首先，插上网线，连接电脑居然就能上网，发现是DHCP。然后需要进内网，以为是配置VPN，最后发现是设置APN。APN设置为运营商一个通用的接入点，然后根据用户转到企业内网。一开始死活连不上，其中有部分原因是我们拿到的文档里的用户名、密码、IP不对。最后发现是要开 PAP 鉴权。末了。对照着手机系统设置里的设置项看了一遍，询问大语言模型，稍稍理解了。&lt;/p></content></entry>
+<author><name>ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫</name></author></entry>
 <entry>
 <title>2026-07-31 / 猫砂</title>
 <link href="https://blog.xinshijiededa.men/daily/90/"></link>

@@ -4,11 +4,54 @@
         <title>Wiwi.Blog Blog</title>
         <link>https://wiwi.blog/blog</link>
         <description>Wiwi.Blog Blog</description>
-        <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hant</language>
         <copyright>Copyright © 2026 Wiwi Kuan (官大為)</copyright>
+        <item>
+            <title><![CDATA[奢華時鐘]]></title>
+            <link>https://wiwi.blog/blog/luxury-clock</link>
+            <guid>https://wiwi.blog/blog/luxury-clock</guid>
+            <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[昨天在整理琴房的櫃子，挖出一台塵封已久的 Launchpad Pro MK3（市價大約台幣 12,000 元）。]]></description>
+            <content:encoded><![CDATA[<p>昨天在整理琴房的櫃子，挖出一台塵封已久的 Launchpad Pro MK3<sup><a href="https://wiwi.blog/blog/luxury-clock#user-content-fn-1-4eb959" id="user-content-fnref-1-4eb959" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>（市價大約台幣 12,000 元）。</p>
+<p>它在我 2021 年拍完<a href="https://wiwi.video/w/sdRw4JEEatG64D4PLeu3kn" target="_blank" rel="noopener noreferrer" class="">這支影片</a>後，從此就被收到櫃子裡面。不是因為它不好用，問題是我是<a class="" href="https://wiwi.blog/blog/frets-on-fire">鍵盤手</a>，凡事還是用鍵盤最順，就算是打鼓也還是更習慣用鍵盤而不是 Pad Controller。</p>
+<p>但既然它重見天日了，我決定讓它重新開始工作。</p>
+<p>LaunchPad 可以透過 MIDI SysEx<sup><a href="https://wiwi.blog/blog/luxury-clock#user-content-fn-2-4eb959" id="user-content-fnref-2-4eb959" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup> 控制 8 × 8 面板上每一顆 LED 的顏色和亮度。換句話說，它其實是一台只有 64 個畫素<sup><a href="https://wiwi.blog/blog/luxury-clock#user-content-fn-3-4eb959" id="user-content-fnref-3-4eb959" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">3</a></sup>的超低解析度螢幕。</p>
+<p>所以它得到的新工作之一是：<strong>跑馬燈留言板！</strong></p>
+<p><em>（中文字型是《<a href="https://github.com/scott0107000/BoutiqueBitmap7x7" target="_blank" rel="noopener noreferrer" class="">精品點陣體7×7</a>》，這麼小的中文字還能讀得懂，真的很厲害。）</em></p>
+<video controls="" width="100%" src="/assets/medias/launch1_540p_crf28-f602eb65f7f6aa228a8143362d14d7cb.mp4"></video>
+<p>新工作之二：也可以切成<strong>時鐘模式</strong>！這可能是我用過最奢華<sup><a href="https://wiwi.blog/blog/luxury-clock#user-content-fn-4-4eb959" id="user-content-fnref-4-4eb959" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">4</a></sup>的<a class="" href="https://wiwi.blog/blog/stopwatch-game">時鐘</a>了。</p>
+<p><em>（周圍按鈕的燈是秒針喔！）</em></p>
+<video controls="" width="100%" src="/assets/medias/launch2_540p_crf28-7560c94018c02f461c6ba72a9d4f8e77.mp4"></video>
+<p>新工作之三：<strong>Pong 螢幕保護程式</strong>！很療癒吧！</p>
+<video controls="" width="100%" src="/assets/medias/launch3_540p_crf28-abb9dec78bc585f7c82b35adc587eebb.mp4"></video>
+<p>它也可以<strong>顯示任意的 8 × 8 GIF <a class="" href="https://wiwi.blog/blog/animated-webp">動畫</a></strong>，如果你願意為它創作一幅 Pixel Art 大作，讓我在家裡展出（觀眾人數：兩人），歡迎投稿至 <a href="mailto:b@wiwikuan.com" target="_blank" rel="noopener noreferrer" class="">b@wiwikuan.com</a>。</p>
+<p>就像我在〈<a class="" href="https://wiwi.blog/blog/personal-museum">我的個人博物館 ✦BBP11✦</a>〉裡說的，如果把自己限定在某個人設裡，生活會超級無聊。如果今天 Launchpad 堅持自己只能是一台「音樂設備」，它現在大概已經躺回櫃子裡，錯過了當留言板、時鐘和打乒乓球的機會。</p>
+<p>如果你家剛好也有閒置的 Launchpad Pro MK3，原始程式碼在<a href="https://code.wiwi.blog/wiwi/launchpad-screen" target="_blank" rel="noopener noreferrer" class="">這裡</a>。</p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://wiwi.blog/blog/luxury-clock#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-4eb959">
+<p><a href="https://novationmusic.com/products/launchpad-pro" target="_blank" rel="noopener noreferrer" class="">https://novationmusic.com/products/launchpad-pro</a> <a href="https://wiwi.blog/blog/luxury-clock#user-content-fnref-1-4eb959" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-2-4eb959">
+<p>System Exclusive，系統專屬訊息。MIDI 標準中預留給各廠牌自訂內容的訊息類型。 <a href="https://wiwi.blog/blog/luxury-clock#user-content-fnref-2-4eb959" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-3-4eb959">
+<p>中間的主要 Pad 部份有 8 × 8 = 64 顆。但其實周圍的按鈕也都會發光，而且也都可以自訂顏色！ <a href="https://wiwi.blog/blog/luxury-clock#user-content-fnref-3-4eb959" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-4-4eb959">
+<p>12,000 元 ÷ 64 畫素 = 每個畫素 187.5 元。比你的手機螢幕貴上幾萬倍。 <a href="https://wiwi.blog/blog/luxury-clock#user-content-fnref-4-4eb959" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>3C 💻</category>
+            <category>我做的東西 🛠️</category>
+            <category>音樂 🎵</category>
+            <category>日常 ☕</category>
+        </item>
         <item>
             <title><![CDATA[魚與熊掌]]></title>
             <link>https://wiwi.blog/blog/fish-and-bear-paw</link>
@@ -657,7 +700,7 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="他們也知道你現在可以改了">他們也知道你現在可以改了<a href="https://wiwi.blog/blog/you-can-change-it-now#%E4%BB%96%E5%80%91%E4%B9%9F%E7%9F%A5%E9%81%93%E4%BD%A0%E7%8F%BE%E5%9C%A8%E5%8F%AF%E4%BB%A5%E6%94%B9%E4%BA%86" class="hash-link" aria-label="他們也知道你現在可以改了的直接連結" title="他們也知道你現在可以改了的直接連結" translate="no">​</a></h3>
 <p>壞消息是：那些專有軟體廠商也知道你可以改了。所以他們正忙著把軟體一個個搬到你碰不到的地方──放上<a class="" href="https://wiwi.blog/blog/strangers-computer">雲端</a>、鎖進 App Store、綁定帳號、改成訂閱制──讓你手上根本沒東西可以改。</p>
 <p><a class="" href="https://wiwi.blog/blog/senior-phone">iPhone</a> 和 iPad 就是最典型的示範：你<a class="" href="https://wiwi.blog/blog/iphone-duo">花大錢</a>買的機器，卻不讓你直接執行自己寫的程式（除非你每年再付 Apple 一筆錢）。而現在連 Android 也即將要變成那樣了。</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="從小地方開始">從小地方開始<a href="https://wiwi.blog/blog/you-can-change-it-now#%E5%BE%9E%E5%B0%8F%E5%9C%B0%E6%96%B9%E9%96%8B%E5%A7%8B" class="hash-link" aria-label="��從小地方開始的直接連結" title="從小地方開始的直接連結" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="從小地方開始">從小地方開始<a href="https://wiwi.blog/blog/you-can-change-it-now#%E5%BE%9E%E5%B0%8F%E5%9C%B0%E6%96%B9%E9%96%8B%E5%A7%8B" class="hash-link" aria-label="從��小地方開始的直接連結" title="從小地方開始的直接連結" translate="no">​</a></h3>
 <p>不必一夜之間發動革命，只要每天移除一個討厭的小東西就好。</p>
 <p>想想看，哪些你平常用的<a class="" href="https://wiwi.blog/blog/convivial-tools">工具</a>正在剝奪你的自由？哪些服務在消耗你的金錢、時間或注意力？能換成自由軟體的，就換掉它；換不了的，考慮<a class="" href="https://wiwi.blog/blog/three-ai-takeaways">用 AI 自己做一個</a>。</p>
 <p><strong><a class="" href="https://wiwi.blog/blog/your-computer-is-not-yours">電腦</a>和<a class="" href="https://wiwi.blog/blog/your-phone-is-not-yours">手機</a>是「你」花錢買的</strong>。上面要跑什麼程式、怎麼跑，本來就該全由你決定。廠商一直想讓你相信「你沒辦法改」，別被騙了，你現在可以改了！</p>

@@ -6,7 +6,279 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Sat, 07 Nov 2026 07:02:27 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Nov 2026 07:33:21 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-08 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-08-HackerNews/</link>
+      <pubDate>Sun, 08 Nov 2026 07:33:21 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-08-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-08-hacker-news-top-stories&#34;&gt;
+  2026-11-08 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-08-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Mitchell Hashimoto 发布 MIT 许可的 libghostty-vt 1.0，稳定 C ABI 并完善离线构建与发行版打包；它提供终端模拟核心，不替应用实现界面。&lt;/li&gt;
+&lt;li&gt;粉丝项目将 2004 年《极品飞车：地下狂飙 2》的 x86 程序静态重编译为 WebAssembly，以 WebGPU 绘图，支持在线自由漫游；仓库构建要求自备指定版本游戏。&lt;/li&gt;
+&lt;li&gt;Hightouch 用 Jev 按置信度转交 Opus 审查合成身份数据：简单集准确率 98.8%、每千项 0.88 美元；困难集为 95.3%、2.94 美元，降本幅度随难度变化。&lt;/li&gt;
+&lt;li&gt;Eighth Rank 研究发现 macOS 本地知识库用两组 XGBoost 模型和 144 项特征推断家庭关系；数据受全盘访问权限保护，部分类型是否实际使用仍未查明。&lt;/li&gt;
+&lt;li&gt;Ajeya Cotra 根据 METR 对 Anthropic 的评估讨论递归加速；“一年内超级智能”依赖持续复利且无新瓶颈的假设，大量关键证据仍被删节。&lt;/li&gt;
+&lt;li&gt;彭博报道称 Anthropic 潜在 IPO 买家正讨论 1.2—1.3 万亿美元估值，个别人低至 1.1 万亿美元；仍在磋商，尚非发行定价或已实现市值。&lt;/li&gt;
+&lt;li&gt;Asahi 宣布 M3 无需实验标志安装，雷电先支持 USB3 与网络、尚无 PCIe/DP 隧道；M3 GPU 刚画出三角形，项目同时启动 GPLv2+ 许可转换。&lt;/li&gt;
+&lt;li&gt;pwn.ai 展示利用已有宿主内存访问能力接管 Firecracker 线程并输出标记；测试进程以 root 运行且没有 jailer，不能直接推广成所有生产 microVM 均可同样逃逸。&lt;/li&gt;
+&lt;li&gt;Upload Your RAM 用 2GB、4GB、16GB“捐赠”档位讽刺算力集中，页面实际在浏览器本地申请内存；没有把闲置 RAM 传给云端的实现。&lt;/li&gt;
+&lt;li&gt;Kevin Boone 的五篇教程用 Linux、C 与 gnu-efi 讲解 x86-64 UEFI 程序、启动介质和文件协议；没有操作系统，但仍依赖固件服务，实验应使用独立磁盘或虚拟机。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-libghostty-vt-10-发布终端模拟核心与-c-abi-稳定-libghostty-10&#34;&gt;
+  1. libghostty-vt 1.0 发布：终端模拟核心与 C ABI 稳定 (Libghostty 1.0)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-libghostty-vt-10-%e5%8f%91%e5%b8%83%e7%bb%88%e7%ab%af%e6%a8%a1%e6%8b%9f%e6%a0%b8%e5%bf%83%e4%b8%8e-c-abi-%e7%a8%b3%e5%ae%9a-libghostty-10&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://mitchellh.com/writing/libghostty-1-0&#34;&gt;https://mitchellh.com/writing/libghostty-1-0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mitchell Hashimoto 宣布 libghostty-vt 1.0 发布。这是从 Ghostty 核心提取的可移植终端模拟库，提供 C 接口；“1.0”意味着库及 C ABI 进入稳定阶段，而非 Ghostty 图形终端推出另一个同名版本。作者列举 JetBrains IDE、Emacs 的 Ghostel、Turborepo 等采用案例，并指出 Neovim 的替换补丁已获认可，仍待正式版本为发行版打包创造条件。&lt;/p&gt;
+&lt;p&gt;接口通过不透明句柄、枚举键访问器、携带大小信息的结构体等方式兼容未来扩展，CI 检查 ABI 基线，ELF 符号也做版本管理。独立发布周期、签名源码包、完整依赖包、SONAME、pkg-config 和 CMake 配置，让发行版能离线构建并按标准方式安装。&lt;/p&gt;
+&lt;p&gt;库及依赖采用宽松许可，默认运行时依赖 libc，可在关闭相应功能后做无 libc 的独立构建。作者报告曾在 4 核、8GB 服务器上运行一万个带活跃 shell 的终端，但为控制内存使用采用 dash 而非 bash。这是特定测试，不是所有嵌入场景的容量保证。文章最后还限定，其性能比较指解析吞吐与内存，界面、绘制和窗口管理仍需由使用库的应用提供。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1016-points--评论-176-comments--投稿者mfiguiere--发布时间2026-11-07-073052-0800&#34;&gt;
+  HN 热度 1016 points | 评论 176 comments | 投稿者：mfiguiere | 发布时间：2026-11-07 07:30:52 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1016-points--%e8%af%84%e8%ae%ba-176-comments--%e6%8a%95%e7%a8%bf%e8%80%85mfiguiere--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-073052-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50399933&#34;&gt;https://news.ycombinator.com/item?id=50399933&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已有嵌入者认为复用成熟终端核心省去大量协议与兼容性工作，比再从零实现一个模拟器更有价值。&lt;/li&gt;
+&lt;li&gt;libghostty 不附带界面，libvte 则带 GTK 组件，这一区别决定了可嵌入范围与应用需要承担的工作。&lt;/li&gt;
+&lt;li&gt;不透明句柄、可扩展结构与自动 ABI 检查为设计长期维护的 C 接口提供了具体范例。&lt;/li&gt;
+&lt;li&gt;也有人质疑在代理擅长机械迁移的时代是否仍需如此强调兼容，但认可发行版分发涉及长期的人类信任与维护。&lt;/li&gt;
+&lt;li&gt;内联图片、OSC-8 链接和快速滚动对新一代 TUI 代理是可感知的功能收益，而不只是基准数字。&lt;/li&gt;
+&lt;li&gt;Emacs 用户分享用 Ghostel 同时运行多组编码代理的体验，说明终端核心复用也能改善现有编辑器工作流。&lt;/li&gt;
+&lt;li&gt;独立终端的选择仍取决于渲染观感和个人功能需求，库成功不意味着所有用户都应更换现有终端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-极品飞车地下狂飙-2进入浏览器加入在线自由漫游-need-for-speed-underground-2-online-in-the-browser&#34;&gt;
+  2. 《极品飞车：地下狂飙 2》进入浏览器，加入在线自由漫游 (Need for Speed Underground 2 online in the browser)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e6%9e%81%e5%93%81%e9%a3%9e%e8%bd%a6%e5%9c%b0%e4%b8%8b%e7%8b%82%e9%a3%99-2%e8%bf%9b%e5%85%a5%e6%b5%8f%e8%a7%88%e5%99%a8%e5%8a%a0%e5%85%a5%e5%9c%a8%e7%ba%bf%e8%87%aa%e7%94%b1%e6%bc%ab%e6%b8%b8-need-for-speed-underground-2-online-in-the-browser&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://nfsu2.xyz/&#34;&gt;https://nfsu2.xyz/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;nfsu2.xyz 展示了在浏览器中运行《Need for Speed: Underground 2》的粉丝移植，支持宽屏、在线竞速和自由漫游，以及键盘、手柄、方向盘与触控。作者说，最初只是想和兄弟重新玩二十年前的游戏；页面宣称最高可到 120fps，但这不是对所有浏览器与设备的实测保证。支持者可捐助托管费用，页面表示没有付费特权或微交易。&lt;/p&gt;
+&lt;p&gt;相关 README 解释了技术路线：以 NFSU2Recomp 的静态重编译为基础，把 x86 代码先转为 C，再编译为 WebAssembly；Direct3D 9 对应 WebGPU，声音使用 Web Audio，游戏线程通过共享内存上的 workers 运行，Rust 服务连接多人游戏。它不是简单把 PC 画面串流到网页。&lt;/p&gt;
+&lt;p&gt;仓库声明与 Electronic Arts 无关联、未获其背书，也不包含原游戏代码或素材；自行构建要求拥有指定北美 1.2 版 PC 游戏。代码的 MIT 许可不能自动等同于游戏素材获得授权。可玩性还取决于浏览器的 WebGPU 支持，README 主要面向最新 Chrome 及支持 WebGPU 的 Firefox；并不能由此认定所有手机、Safari 或 Linux 配置都能直接运行。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-761-points--评论-217-comments--投稿者fluxusars--发布时间2026-11-07-173636-0800&#34;&gt;
+  HN 热度 761 points | 评论 217 comments | 投稿者：fluxusars | 发布时间：2026-11-07 17:36:36 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-761-points--%e8%af%84%e8%ae%ba-217-comments--%e6%8a%95%e7%a8%bf%e8%80%85fluxusars--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-173636-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50403052&#34;&gt;https://news.ycombinator.com/item?id=50403052&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;音乐、夜间赛道和与亲友轮流玩的记忆，是这次移植带来强烈怀旧感的重要部分。&lt;/li&gt;
+&lt;li&gt;许多玩家同时涌入自由漫游制造出鸣笛、烧胎和乱跑的混乱场景，多人互动本身成了新乐趣。&lt;/li&gt;
+&lt;li&gt;担忧版权的一方认为，重编译工具开源与公开托管商业游戏素材是两回事，收取捐助也不能消除争议。&lt;/li&gt;
+&lt;li&gt;另一方从文化保存角度支持可访问的老游戏版本，认为停止销售的作品不应只因权利长期封存而消失。&lt;/li&gt;
+&lt;li&gt;浏览器的 WebGPU 兼容性与平台标记仍有落差，用户也对启用标为不安全的实验选项提出疑问。&lt;/li&gt;
+&lt;li&gt;素材加载卡顿和触控下手动换挡不够直观，说明能启动游戏与舒适游玩之间仍有差距。&lt;/li&gt;
+&lt;li&gt;部分玩家更希望把多人和现代兼容性改进带到本地版本，浏览器的便捷并不适合所有使用场景。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-jev-遇到难题再问-opus身份合并审查中的成本与准确率取舍-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost&#34;&gt;
+  3. Jev 遇到难题再问 Opus：身份合并审查中的成本与准确率取舍 (A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-jev-%e9%81%87%e5%88%b0%e9%9a%be%e9%a2%98%e5%86%8d%e9%97%ae-opus%e8%ba%ab%e4%bb%bd%e5%90%88%e5%b9%b6%e5%ae%a1%e6%9f%a5%e4%b8%ad%e7%9a%84%e6%88%90%e6%9c%ac%e4%b8%8e%e5%87%86%e7%a1%ae%e7%8e%87%e5%8f%96%e8%88%8d-a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-lower-cost&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://hightouch.com/blog/llm-judges-identity-resolution&#34;&gt;https://hightouch.com/blog/llm-judges-identity-resolution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hightouch 研究如何用模型检查身份解析系统是否把不同的人错误合并。团队借助 pseudopeople 生成虚构小镇资料，构建一千个身份，其中一半含单人噪声记录、一半人为过度合并，再另造更困难的近似姓名、亲属和日期错误案例。它评估的是合并结果审查，不是已经证明能普遍改善所有编码代理任务。&lt;/p&gt;
+&lt;p&gt;在简单集上，单用 Opus 5.5 的准确率为 99.0%，每千项成本 3.86 美元；Jev 先判断、把置信度处于 30%—90% 的案例送给 Opus 后，准确率 98.8%，成本 0.88 美元，约节省到原来的四分之一。困难集则为混合 Jev 95.3%、2.94 美元，对比 Opus 95.1%、5.39 美元，优势约为 1.8 倍成本差，而非仍然四倍。&lt;/p&gt;
+&lt;p&gt;作者认为关键在于知道何时不确定：Luna 单独判断在简单集更准，但在困难集中过于自信，难以有效转交复核。混合方案可随难度自动增加强模型调用。不过这些是特定提示词、阈值、模型版本及合成分布上的结果，测试中过度合并占一半，也不同于健康真实数据中低发生率的情况；成本和时延由作者环境测得，原文明确表示会随配置变化。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-570-points--评论-144-comments--投稿者theanomaly--发布时间2026-11-07-034851-0800&#34;&gt;
+  HN 热度 570 points | 评论 144 comments | 投稿者：theanomaly | 发布时间：2026-11-07 03:48:51 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-570-points--%e8%af%84%e8%ae%ba-144-comments--%e6%8a%95%e7%a8%bf%e8%80%85theanomaly--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-034851-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50397429&#34;&gt;https://news.ycombinator.com/item?id=50397429&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这项结果针对身份合并审查，标题不能被理解为小模型在任意任务都能复制 Opus 的能力。&lt;/li&gt;
+&lt;li&gt;只画各置信区间的错误数量不足以比较校准，读者希望看到正确率分母、可靠性曲线或 ECE 等更合适指标。&lt;/li&gt;
+&lt;li&gt;分流是否划算高度依赖模型版本、任务和调用链延迟，新的低价模型可能很快改变原有成本优势。&lt;/li&gt;
+&lt;li&gt;如果每个判断都必须给出完整解释，单独的决策模型层可能只增加步骤，未必继续节省成本和时间。&lt;/li&gt;
+&lt;li&gt;真实身份匹配还要考虑错误合并与漏合并的不同代价，以及信息不足时允许弃权，而不能只最大化总准确率。&lt;/li&gt;
+&lt;li&gt;更便宜的身份关联也引发隐私担忧，技术上减少过度合并并不自动回答哪些个人数据应被关联。&lt;/li&gt;
+&lt;li&gt;使用者分享了以决策模型分流安全检查或代理会话的经验，说明按任务选择强模型的思路已有实际探索。&lt;/li&gt;
+&lt;li&gt;取得足够可靠的校准数据本身就是成本，不能把用强模型标注再训练或校准便宜模型当作免费前提。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-研究者拆解-macos-个人知识图谱及家庭关系分类器-every-mac-comes-with-an-undocumented-family-member-classifier&#34;&gt;
+  4. 研究者拆解 macOS 个人知识图谱及家庭关系分类器 (Every Mac comes with an (undocumented) family member classifier)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e7%a0%94%e7%a9%b6%e8%80%85%e6%8b%86%e8%a7%a3-macos-%e4%b8%aa%e4%ba%ba%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e5%8f%8a%e5%ae%b6%e5%ba%ad%e5%85%b3%e7%b3%bb%e5%88%86%e7%b1%bb%e5%99%a8-every-mac-comes-with-an-undocumented-family-member-classifier&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://8rank.ai/game/apple-intelligence-personal-knowledge-graph&#34;&gt;https://8rank.ai/game/apple-intelligence-personal-knowledge-graph&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eighth Rank 研究者分析 macOS 的 knowledgeconstructiond 与 intelligenceplatformd，描述它们如何将联系人、照片、日历、通信元数据等整理为本地个人知识图谱。研究主要基于 macOS 26.6.2，称相关组件自 macOS 13 起已存在；目录内有 51 个 SQLite 数据库，主图使用 181 类实体与 278 种谓词，记录来源、置信度和时间。&lt;/p&gt;
+&lt;p&gt;其中两组 XGBoost 分类器使用 144 项特征，包括姓氏、住址、家庭共享，以及照片和通信出现的时间模式。家庭评分另存在 entityTagging.db，含十七个关系列，但作者只为其中两列追踪到随系统分发的模型，其他列如何产生尚不清楚。声明了某种类型，也不等于该类型一定会被采集或填值。&lt;/p&gt;
+&lt;p&gt;作者担忧聚合后的关系信息可能成为隐私单点风险，还发现过期表与推断可能比原始联系人保留更久，但无法确定统一清理期限。数据库本身为明文 SQLite，目录受 TCC 全盘访问权限保护；文章没有证明这些信息被任意网站读取或自动外传。配套 iKnow 是本机只读仪表盘，示例图部分使用虚构数据，macOS 27 的适配也不完整，不能把展示中的全部关系评分当成真实观测。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-560-points--评论-327-comments--投稿者infwhispers--发布时间2026-11-07-174603-0800&#34;&gt;
+  HN 热度 560 points | 评论 327 comments | 投稿者：infwhispers | 发布时间：2026-11-07 17:46:03 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-560-points--%e8%af%84%e8%ae%ba-327-comments--%e6%8a%95%e7%a8%bf%e8%80%85infwhispers--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-174603-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50403097&#34;&gt;https://news.ycombinator.com/item?id=50403097&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持者认为本地关系图有助于 Siri 理解“联系老板”等请求，关键是透明告知、可选择启用及明确的数据保护。&lt;/li&gt;
+&lt;li&gt;即使不上传云端，持续记忆和关系推断也可能改变人际交流中允许遗忘与保留模糊性的社会预期。&lt;/li&gt;
+&lt;li&gt;将分散资料聚成一张关系图，会放大设备失窃、被调查或账号遭入侵后的潜在损害，本地存储并非没有风险。&lt;/li&gt;
+&lt;li&gt;部分用户在很少使用的 Mac 上看到来自手机的资料，认为“本地”还需要交代跨设备同步和来源范围。&lt;/li&gt;
+&lt;li&gt;用户后来更正了“自己不能读数据”的抱怨，终端缺少 TCC 全盘访问权限不能直接等同于系统禁止本人查看。&lt;/li&gt;
+&lt;li&gt;有用户报告关闭 Siri 或相关智能功能后仍看到数据，因而要求说明各开关究竟停止了哪些收集和推断。&lt;/li&gt;
+&lt;li&gt;错误关系推断与 Siri 实际找错联系人的体验，让用户质疑这些额外数据是否兑现了足够可靠的功能收益。&lt;/li&gt;
+&lt;li&gt;把受保护数据库显示到浏览器中也会引入新的暴露面，审视工具本身的权限与扩展访问风险同样重要。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-ai-加速-ai-研究了吗cotra-的短时间线推演与证据限制-ai-is-dramatically-accelerating-ai-research&#34;&gt;
+  5. AI 加速 AI 研究了吗？Cotra 的短时间线推演与证据限制 (AI is dramatically accelerating AI research)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-ai-%e5%8a%a0%e9%80%9f-ai-%e7%a0%94%e7%a9%b6%e4%ba%86%e5%90%97cotra-%e7%9a%84%e7%9f%ad%e6%97%b6%e9%97%b4%e7%ba%bf%e6%8e%a8%e6%bc%94%e4%b8%8e%e8%af%81%e6%8d%ae%e9%99%90%e5%88%b6-ai-is-dramatically-accelerating-ai-research&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai&#34;&gt;https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ajeya Cotra 解读 METR 对 Anthropic 研发加速的公开评估，认为 AI 对研究工作的帮助可能已接近“整体能力进步速度翻倍”的重要门槛。她明确表示未参与该项目，也未看过未删节报告，文章代表个人判断。其推算区分能力进步、算法效率和研究劳动：若整体速度因软件研究而翻倍，劳动端的有效加速可能需要远高于两倍，她用简化模型估到约 4—9 倍，乃至不确定的十倍量级。&lt;/p&gt;
+&lt;p&gt;进一步的“一年内极端超级智能”是有条件外推：假设更强 AI 持续加速研发、加速平滑复利，且没有新的实验算力、数据或其他瓶颈，进步速度翻倍的时间可能不断缩短。它不是已经测量到的结果，也不是可以从一次斜率变化直接证明的未来时间表。&lt;/p&gt;
+&lt;p&gt;另读 METR 原报告，其 AECI 基准趋势估计加速 1.9 倍，95% 区间 1.5—2.8 倍；约八成当前加速归因于 AI 是带显著不确定性的主观判断。大量最有信息量的材料被 Anthropic 删节，评估也承认基准分布、非 AI 因素及较早低增长基线可能影响结论。Cotra 据此主张加强安全与治理，但读者仍应把观察、归因、建模与风险预测分开。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-361-points--评论-336-comments--投稿者yurivish--发布时间2026-11-07-042723-0800&#34;&gt;
+  HN 热度 361 points | 评论 336 comments | 投稿者：yurivish | 发布时间：2026-11-07 04:27:23 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-361-points--%e8%af%84%e8%ae%ba-336-comments--%e6%8a%95%e7%a8%bf%e8%80%85yurivish--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-042723-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50397994&#34;&gt;https://news.ycombinator.com/item?id=50397994&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从事机器学习的读者承认软件实验可能大幅提速，但认为这不足以直接推出武器研发或物理世界也同速加快。&lt;/li&gt;
+&lt;li&gt;可验证基准的进步未必覆盖难以量化的智能能力，基准分数加速与全面超级智能之间仍有推理距离。&lt;/li&gt;
+&lt;li&gt;关键归因证据被删节，使外部研究者难以复核最重要结论，信任评估团队不能完全替代公开材料。&lt;/li&gt;
+&lt;li&gt;资本、人才和并行实验投入也可能改变研究速度，需要将这些因素与模型本身能力提升分别识别。&lt;/li&gt;
+&lt;li&gt;训练吞吐、实验硬件及算法收益递减可能成为瓶颈，尚未遇到极限不能证明复利能够无限持续。&lt;/li&gt;
+&lt;li&gt;另有实践者认为 AI 在性能优化、工具衔接和小模型实验中已带来明显帮助，平凡工程改进也能累积成研究收益。&lt;/li&gt;
+&lt;li&gt;个人任务做得更快，可能部分来自同时创造了更多围绕 AI 的新任务，因此还需检查最终研究产出而非只看忙碌程度。&lt;/li&gt;
+&lt;li&gt;支持 AI 发展的读者也质疑主动追求失控式加速，认为提高能力和保持人类控制应同时成为目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-anthropic-ipo-估值预期承压部分买家看低至-11-万亿美元-anthropic-ipo-buyers-see-valuation-as-low-as-11t&#34;&gt;
+  6. Anthropic IPO 估值预期承压，部分买家看低至 1.1 万亿美元 (Anthropic IPO buyers see valuation as low as $1.1T)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-anthropic-ipo-%e4%bc%b0%e5%80%bc%e9%a2%84%e6%9c%9f%e6%89%bf%e5%8e%8b%e9%83%a8%e5%88%86%e4%b9%b0%e5%ae%b6%e7%9c%8b%e4%bd%8e%e8%87%b3-11-%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83-anthropic-ipo-buyers-see-valuation-as-low-as-11t&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout&#34;&gt;https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;彭博原站未能直接读取，以下依据 
+  &lt;a href=&#34;https://theedgemalaysia.com/node/824939&#34;&gt;The Edge 刊载的完整彭博报道&lt;/a&gt;。报道援引知情人士称，在预计次周启动正式 IPO 营销之前，Anthropic 潜在买家正在讨论约 1.2—1.3 万亿美元估值，部分人考虑低至 1.1 万亿美元。此前买家向承销银行表达的合理估值约为 1.4—1.5 万亿美元，10 月初曾有人估到 2 万亿美元。&lt;/p&gt;
+&lt;p&gt;背景是科技股大幅下跌和数据中心扩张面临更强审视。报道列出纳斯达克 100 指数周四跌 6.4%、市值减少 2.3 万亿美元，并提到市场波动率上升令 IPO 更难推介。上述数字是报道采用的市场背景，不应与其他指数或不同交易日混用。&lt;/p&gt;
+&lt;p&gt;知情人强调磋商仍在进行，未作最终决定，Anthropic 发言人拒绝置评。文章讨论了先以保守规模和估值试探需求、需求转好后提高目标，或推迟营销等可能路径，并引用分析人士对延迟成本的不同判断。因此标题中的“低至”只是部分潜在买家的看法，不能写成公司已接受的新估值，也不能把估值总额当成此次拟募资金额或上市后成交市值。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-308-points--评论-611-comments--投稿者dgellow--发布时间2026-11-07-005436-0800&#34;&gt;
+  HN 热度 308 points | 评论 611 comments | 投稿者：dgellow | 发布时间：2026-11-07 00:54:36 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-308-points--%e8%af%84%e8%ae%ba-611-comments--%e6%8a%95%e7%a8%bf%e8%80%85dgellow--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-005436-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50394906&#34;&gt;https://news.ycombinator.com/item?id=50394906&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即使较早期预期下降，1.1 万亿美元仍是极大的估值，使用“低”字需要保留比较基准。&lt;/li&gt;
+&lt;li&gt;IPO 配售价决定初始认购和融资，上市后的交易再形成二级市场价格，两者不能混为一谈。&lt;/li&gt;
+&lt;li&gt;本地模型和更便宜的组合方案可能压缩部分高价服务需求，长期收入不能只按当前使用热度外推。&lt;/li&gt;
+&lt;li&gt;另一方强调本地模型是否够用依赖任务复杂度与质量要求，个人替代成功不代表企业需求普遍消失。&lt;/li&gt;
+&lt;li&gt;用户对订阅与额外 API 额度的巨大价差感到意外，并据此质疑当前套餐的长期经济性。&lt;/li&gt;
+&lt;li&gt;仍有读者认为 AI 使用范围和商业需求会继续扩张，估值回落未必等于行业增长已经见顶。&lt;/li&gt;
+&lt;li&gt;当推理能力趋于商品化，差异化产品、工作流与客户关系可能比单纯模型接口更能支撑商业壁垒。&lt;/li&gt;
+&lt;li&gt;数据中心监管、锁定期和市场窗口等外部因素也会影响认购意愿，技术进步不能单独决定 IPO 时点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-asahi-linux-73-进展m3-支持开放雷电仍有限启动-gpl-转换-asahi-linux-progress-linux-73&#34;&gt;
+  7. Asahi Linux 7.3 进展：M3 支持开放，雷电仍有限，启动 GPL 转换 (Asahi Linux Progress Linux 7.3)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-asahi-linux-73-%e8%bf%9b%e5%b1%95m3-%e6%94%af%e6%8c%81%e5%bc%80%e6%94%be%e9%9b%b7%e7%94%b5%e4%bb%8d%e6%9c%89%e9%99%90%e5%90%af%e5%8a%a8-gpl-%e8%bd%ac%e6%8d%a2-asahi-linux-progress-linux-73&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://asahilinux.org/2026/11/progress-report-7-3/&#34;&gt;https://asahilinux.org/2026/11/progress-report-7-3/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Asahi Linux 的 Linux 7.3 进展报告宣布，M3 系列支持不再需要安装器 EXPERT 标志，显示控制器 DCP 的启用改善了性能、电池与显示区域使用，并让相应设备可启用睡眠。但 GPU 是明显例外：M3 GPU 逆向工程目前达到初始化和绘制三角形，不能据“普遍可用”理解成所有图形功能已与 M1/M2 一致。&lt;/p&gt;
+&lt;p&gt;上游工作包括音频与视频解码驱动提交审查，以及 M4 Pro/Max、M5 的初始设备树；后者只足以启动到 TTY。雷电支持开始下发，但目前仅 USB3、XDomain 和雷电网络，尚不支持多数扩展坞所需的 PCIe 与 DisplayPort 隧道。Fedora Asahi Remix 45 则首次与 Fedora 主版本同日发布。&lt;/p&gt;
+&lt;p&gt;游戏方面，团队试验 Google 的每进程页大小 P3S，让部分 x86 游戏无需 muvm 运行，以减少虚拟机开销；但补丁仍针对特定页大小硬编码、上游前景未明，因此暂不正式下发。报告还宣布开始将仓库转为 GPLv2+ 等强 copyleft 许可，理由是团队声称遭到未署名搬运、商业替代与 LLM 改写遮蔽来源。这里是项目方的解释和转换计划，不能写成所有仓库已转换，或把未点名对象的行为当成独立证实。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-295-points--评论-241-comments--投稿者ackyshake--发布时间2026-11-07-132018-0800&#34;&gt;
+  HN 热度 295 points | 评论 241 comments | 投稿者：ackyshake | 发布时间：2026-11-07 13:20:18 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-295-points--%e8%af%84%e8%ae%ba-241-comments--%e6%8a%95%e7%a8%bf%e8%80%85ackyshake--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-132018-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50401867&#34;&gt;https://news.ycombinator.com/item?id=50401867&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;外接 USB-C 显示器是部分用户真正的迁移门槛，初步雷电支持不等于显示输出问题已解决。&lt;/li&gt;
+&lt;li&gt;硬件支持不是全团队按一个优先级逐项推进，不同开发者和子系统难度会造成看似不均衡的进展。&lt;/li&gt;
+&lt;li&gt;支持转换许可的一方希望共享改进继续开放，并愿意增加捐助来支持长期逆向与维护。&lt;/li&gt;
+&lt;li&gt;反对者认为既然曾主动选择宽松许可，就不应把他人商业使用或分叉本身视为违背规则。&lt;/li&gt;
+&lt;li&gt;从 MIT 转向强 copyleft 还可能提高 BSD 等其他开放系统复用成果的难度，这也是许可选择的实际取舍。&lt;/li&gt;
+&lt;li&gt;下游快速整合与上游基础工作各有价值，比较进度时不能忽略新发行版依赖已有 Asahi 支持的事实。&lt;/li&gt;
+&lt;li&gt;原生 Linux 对重视软件选择和 GPU 性能的用户仍有价值，macOS 中的虚拟机并不满足完全相同的需求。&lt;/li&gt;
+&lt;li&gt;AI 能否加快硬件逆向引发争论，但自动生成代码与稳定支持真实设备之间仍需要验证其贡献。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-firecracker-逃逸演示第二篇宿主内核漏洞之后还须看运行配置-firecracker-vm-escape-pwnescape-part-2&#34;&gt;
+  8. Firecracker 逃逸演示第二篇：宿主内核漏洞之后，还须看运行配置 (Firecracker VM Escape: PwnEscape Part 2)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-firecracker-%e9%80%83%e9%80%b8%e6%bc%94%e7%a4%ba%e7%ac%ac%e4%ba%8c%e7%af%87%e5%ae%bf%e4%b8%bb%e5%86%85%e6%a0%b8%e6%bc%8f%e6%b4%9e%e4%b9%8b%e5%90%8e%e8%bf%98%e9%a1%bb%e7%9c%8b%e8%bf%90%e8%a1%8c%e9%85%8d%e7%bd%ae-firecracker-vm-escape-pwnescape-part-2&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://pwn.ai/blog/firecracker-escape&#34;&gt;https://pwn.ai/blog/firecracker-escape&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pwn.ai 延续前篇 Linux 漏洞研究，展示在已经获得部分宿主物理内存访问能力后，如何定位运行中的 Firecracker 进程与 vCPU 线程保存状态，并改变其恢复执行的路径。演示的可观察结果是宿主进程输出一个八字节标记，随后恢复临时栈修改，Firecracker 与客户机 SSH 仍继续工作。这是作者保留记录中的结果，本次未运行其中的利用代码。&lt;/p&gt;
+&lt;p&gt;原文给出非常重要的环境限定：Firecracker v1.16.1、x86-64、特定宿主与客户机内核；VMM 直接以 root 启动，没有使用 jailer。因此被控制调用获得 root 权限来自该进程原有权限，不能忽略生产环境通常使用的降权、命名空间和 seccomp。作者也承认不同构建的代码签名与恢复路径要重新验证。&lt;/p&gt;
+&lt;p&gt;另读 Vercel 对挑战赛的说明，其确认根因位于宿主 Linux 网络栈：生产沙箱展示了宿主内存泄漏，崩溃与执行代码在研究者自建、匹配配置的环境中演示，补丁细节当时仍在审查。因而这里既不能把问题缩小成“只要加 jailer 就万无一失”，也不能把后续进程劫持说成独立发现了 Firecracker 自身的新解析漏洞。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-279-points--评论-127-comments--投稿者serce--发布时间2026-11-07-033338-0800&#34;&gt;
+  HN 热度 279 points | 评论 127 comments | 投稿者：SerCe | 发布时间：2026-11-07 03:33:38 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-279-points--%e8%af%84%e8%ae%ba-127-comments--%e6%8a%95%e7%a8%bf%e8%80%85serce--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-033338-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50397219&#34;&gt;https://news.ycombinator.com/item?id=50397219&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文章应更醒目说明 root 与无 jailer 的演示环境，否则读者容易把特定后续利用误读成所有部署的默认状态。&lt;/li&gt;
+&lt;li&gt;另一方提醒前置原语已经涉及宿主内核，用户空间的 jailer 并不自动阻止攻击者转向其他宿主目标。&lt;/li&gt;
+&lt;li&gt;这是已有 PwnEscape 漏洞的后续利用说明，进入新讨论不等于又发现一个独立漏洞。&lt;/li&gt;
+&lt;li&gt;硬件虚拟化也依赖庞大的宿主软件栈，讨论隔离强度时应比较完整攻击面而非只看是否用了 microVM。&lt;/li&gt;
+&lt;li&gt;在 microVM 外再加受限 zone 或其他隔离层能增加纵深，但也不能假定第二层没有自己的逃逸风险。&lt;/li&gt;
+&lt;li&gt;有人更看好让小型独立 hypervisor 承担隔离，把复杂 Linux 放在管理域中，同时也需认识其他架构已有类似思路。&lt;/li&gt;
+&lt;li&gt;质疑者认为既然前提已能读写宿主内存，接管特定 VMM 进程的新增安全意义需要解释得更清楚。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-上传你的-ram是恶搞但本地内存占用是真的-upload-your-ram&#34;&gt;
+  9. “上传你的 RAM”是恶搞，但本地内存占用是真的 (Upload Your RAM)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e4%b8%8a%e4%bc%a0%e4%bd%a0%e7%9a%84-ram%e6%98%af%e6%81%b6%e6%90%9e%e4%bd%86%e6%9c%ac%e5%9c%b0%e5%86%85%e5%ad%98%e5%8d%a0%e7%94%a8%e6%98%af%e7%9c%9f%e7%9a%84-upload-your-ram&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://uploadyourram.org&#34;&gt;https://uploadyourram.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;UploadYourRam.org 把“闲置个人内存不够高效”的争论包装成捐赠网站：用户可选择 2GB、4GB 或 16GB，文案承诺支持好事业、拯救一个 LLM，甚至获得 Sam Altman 亲自致谢。这些是讽刺性表演，不是可以将已购买的物理内存通过网络交给 AI 公司的技术或真实捐赠服务。&lt;/p&gt;
+&lt;p&gt;读取首页和 allocate.html 的代码可见，按钮会创建多个小 iframe，各自反复构造 Uint8Array，完成后给父页面发送消息，页面再显示感谢提示。所读实现没有把内存内容上传到云端的网络传输逻辑；它消耗的是当前浏览器的本地资源。界面的“1GB”及各档位标签也不能直接视为精确测量后的内存转移量。&lt;/p&gt;
+&lt;p&gt;这使笑话多了一层真实副作用：看似虚构的捐赠界面并不只是改一下文字，也可能造成内存压力。这里仅静态阅读页面与脚本，没有点击分配按钮或验证实际资源上限；浏览器能否完成、何时回收以及不同设备上的表现仍不确定。站点的讽刺立场也不能替代对其引用言论完整上下文的核验。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-265-points--评论-247-comments--投稿者susanthenerd--发布时间2026-11-07-181526-0800&#34;&gt;
+  HN 热度 265 points | 评论 247 comments | 投稿者：susanthenerd | 发布时间：2026-11-07 18:15:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-265-points--%e8%af%84%e8%ae%ba-247-comments--%e6%8a%95%e7%a8%bf%e8%80%85susanthenerd--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-181526-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50403214&#34;&gt;https://news.ycombinator.com/item?id=50403214&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有用户选择大额档位后浏览器标签页崩溃，恶搞页面的虚构承诺与真实内存耗用应明确区分。&lt;/li&gt;
+&lt;li&gt;部分读者认为被讽刺言论的完整上下文并不那么奇怪，不应只靠一个摘句评价原意。&lt;/li&gt;
+&lt;li&gt;也有人把网站视为普通的轻松讽刺，即使认为原话被断章取义，仍觉得这个玩笑有趣。&lt;/li&gt;
+&lt;li&gt;讨论更深的担忧是计算与知识能力向少数云端平台集中，个人设备的自主性可能被持续削弱。&lt;/li&gt;
+&lt;li&gt;内存扩产涉及高额投入和周期风险，需求突然逆转会造成过剩，不能把供应不足简单归咎于厂商不肯生产。&lt;/li&gt;
+&lt;li&gt;关于普通人是否需要大量 RAM 的争论，应比较现代多任务、显示和应用规模，而不是只列出几十年前也能完成的任务名称。&lt;/li&gt;
+&lt;li&gt;本地模型与家庭实验环境提供了新的内存用途，消费者需要资源并不只是为了更臃肿的软件。&lt;/li&gt;
+&lt;li&gt;有人把集中化看成新负载出现后的周期阶段，区分本地足够好与本地追平最大前沿系统这两个目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-用-linux-和-uefi-从零开始写裸机程序-first-steps-in-bare-metal-programming-using-uefi&#34;&gt;
+  10. 用 Linux 和 UEFI 从零开始写裸机程序 (First steps in bare-metal programming using UEFI)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e7%94%a8-linux-%e5%92%8c-uefi-%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e5%86%99%e8%a3%b8%e6%9c%ba%e7%a8%8b%e5%ba%8f-first-steps-in-bare-metal-programming-using-uefi&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://kevinboone.me/efitest_index.html&#34;&gt;https://kevinboone.me/efitest_index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kevin Boone 的系列面向有 Linux 与 C 经验、但不懂 UEFI 的开发者，讲解如何写在开机时由固件直接执行的程序。这里的“裸机”指没有通用操作系统参与运行，但仍利用 UEFI 提供的控制台、内存和文件服务，并不是完全抛弃固件、从复位入口自行实现所有硬件驱动。&lt;/p&gt;
+&lt;p&gt;教程以 64 位 Intel/AMD PC 为目标，使用 GCC 与 gnu-efi，把程序编译、链接并转换为 UEFI 识别的 PE32+ 格式。它特别解释 Linux 常用调用约定与 EFI 的区别、包装函数的作用，以及 16 位字符串等容易让普通应用开发者困惑的细节。后续覆盖 EFI 系统分区、可启动 DVD/USB 介质和 Simple File Protocol：先从协议与卷的根目录取得文件接口，再读写、枚举目录或查询卷。&lt;/p&gt;
+&lt;p&gt;局限写得很明确：内容只到入门阶段，固件支持和开发库路径会因系统而异，EFI 没有 Linux 那样的统一文件系统和完整标准库。准备磁盘的步骤会覆盖分区，作者要求使用闲置磁盘或虚拟磁盘，并推荐虚拟机试验。文中也承认部分句柄释放等经验做法并不理想，因此适合作为理解接口的起点，而非无需审查就可部署的生产级参考实现。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-246-points--评论-54-comments--投稿者lasombra--发布时间2026-11-07-005029-0800&#34;&gt;
+  HN 热度 246 points | 评论 54 comments | 投稿者：LaSombra | 发布时间：2026-11-07 00:50:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-246-points--%e8%af%84%e8%ae%ba-54-comments--%e6%8a%95%e7%a8%bf%e8%80%85lasombra--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-07-005029-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50394855&#34;&gt;https://news.ycombinator.com/item?id=50394855&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;读者认可教程从真实开发困难出发、解释概念且承认局限的写法，认为它适合建立 UEFI 入门知识。&lt;/li&gt;
+&lt;li&gt;缺少常规 C 库并非完全无路可走，社区提出 EDK II libc 和有限 POSIX 兼容层作为不同取舍。&lt;/li&gt;
+&lt;li&gt;把未解析外部符号检查加入构建过程，可以比启动后才崩溃更早发现不完整的 EFI 程序。&lt;/li&gt;
+&lt;li&gt;GCC/Linux 并不是唯一开发路线，BSD 系统、其他架构和既有 OSDev 资料也提供不同工具与背景。&lt;/li&gt;
+&lt;li&gt;如果目标并非替换启动器，可以考虑由 Multiboot2 等现有引导接口进入程序，而不必从头处理全部 PE32+ 流程。&lt;/li&gt;
+&lt;li&gt;UTF-16、VFAT 和特定调用约定让一些开发者觉得 UEFI 过于繁复，接口历史兼容性不等于现代开发体验友好。&lt;/li&gt;
+&lt;li&gt;“裸机”是否仍可调用 UEFI 引发概念讨论，一方更看重没有操作系统阻止程序直接接触硬件，而非启动前完全没有固件。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-11-07 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-11-07-HackerNews/</link>
@@ -1089,278 +1361,6 @@
 &lt;li&gt;Pentium Pro 与 Pentium MMX 面向不同场景，后者并非在所有方面更好，回顾旧硬件也要区分微架构与消费定位。&lt;/li&gt;
 &lt;li&gt;作者应尽早说明实现工作大量借助语言模型，让读者从一开始就理解开发方式。&lt;/li&gt;
 &lt;li&gt;语言模型降低尝试冷门工程问题的劳动成本，让原本不值得投入的兴趣实验更容易真正完成。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-11-03 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-11-03-HackerNews/</link>
-      <pubDate>Tue, 03 Nov 2026 07:17:19 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-11-03-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-11-03-hacker-news-top-stories&#34;&gt;
-  2026-11-03 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-03-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Ubuntu 用户因 CVE-2026-98432 的补丁进度质疑 Canonical 的安全承诺，并称已将自己的 Ubuntu 服务器下线。&lt;/li&gt;
-&lt;li&gt;一位多年没买电视的 HN 用户寻找 60–80 英寸、4K、至少 60Hz 的隐私友好屏幕，并考虑只接 Apple TV 使用。&lt;/li&gt;
-&lt;li&gt;OccupySaaS 推出面向 Auth0 和 Salesforce 的开源替代项目，试图降低订阅与迁移锁定，但两者的成熟度和兼容范围仍有限。&lt;/li&gt;
-&lt;li&gt;Vox 作者 Ian Millhiser 借帕特里克·斯图尔特塑造的皮卡德，讨论以制度、人权和克制约束权力的政治理想及其现实局限。&lt;/li&gt;
-&lt;li&gt;Frank Calegari 在陶哲轩博客的客座文章中主张，AI 正在改变数学产出，学界应更重视问题选择、理解和交流，而非只数定理与论文。&lt;/li&gt;
-&lt;li&gt;《卫报》报道欧洲至少七国超市冷柜遭疑似网络攻击，部分温控被设为 50°C；攻击者身份及各起事件是否同源尚未确定。&lt;/li&gt;
-&lt;li&gt;美国 BLS 数据显示，2026 年第二季度非农商业部门劳动报酬占产出 52.8%，为 1947 年以来最低；《财富》讨论了多种可能成因。&lt;/li&gt;
-&lt;li&gt;Misty 因旧茶犬爱好站消失而反思网页保存，介绍 ArchiveWeb.page、Browsertrix 与可离线重放的 WARC/WACZ 归档方式。&lt;/li&gt;
-&lt;li&gt;Isaac Gemal 的 Wikihack 汇集 HN 引用的维基百科条目，主要按不同引用者人数排序，并保留引用发生时的评论上下文。&lt;/li&gt;
-&lt;li&gt;Science 报道白晓春团队发现，刺激老龄小鼠骨骼的机械感知可使其延寿近三个月，PEDF 还在人体软骨类器官中显示作用，但人体延寿尚未证实。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-ubuntu-的内核补丁为何迟迟未到-wtf-ubuntu&#34;&gt;
-  1. Ubuntu 的内核补丁为何迟迟未到？ (WTF Ubuntu?)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-ubuntu-%e7%9a%84%e5%86%85%e6%a0%b8%e8%a1%a5%e4%b8%81%e4%b8%ba%e4%bd%95%e8%bf%9f%e8%bf%9f%e6%9c%aa%e5%88%b0-wtf-ubuntu&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://chalmovsky.com/posts/wtf-ubuntu&#34;&gt;https://chalmovsky.com/posts/wtf-ubuntu&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这是一篇针对 Ubuntu 安全维护的批评文章。作者关注 Linux IPv4 TCP 路径中的释放后使用漏洞 CVE-2026-98432，引用其 CVSS 9.8 分评级，称 Debian 已于 10 月 16 日修补，而自己查看 Ubuntu 跟踪页面时，多个受支持版本仍被标为存在漏洞；文中给出的观察时间是 11 月 2 日 14:48 UTC。这是作者当时记录的状态，不能直接理解为所有版本此后都没有补丁。&lt;/p&gt;
-&lt;p&gt;作者认为，这种等待与 Canonical 宣传的及时安全更新及企业级维护不符，也加深了他对收费安全维护承诺的不信任。他表示准备迁往其他发行版；由于暂时没有时间迁移，已先将 Ubuntu 服务器下线。文章重点是补丁交付和风险沟通，没有给出完整的受影响配置清单或可复现的远程利用过程，因此不能据此断言每台联网 Ubuntu 服务器都能被直接接管。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-1232-points--评论-569-comments--投稿者chalmovsky--发布时间2026-11-02-225200-0800&#34;&gt;
-  HN 热度 1232 points | 评论 569 comments | 投稿者：chalmovsky | 发布时间：2026-11-02 22:52:00 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1232-points--%e8%af%84%e8%ae%ba-569-comments--%e6%8a%95%e7%a8%bf%e8%80%85chalmovsky--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-225200-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50337608&#34;&gt;https://news.ycombinator.com/item?id=50337608&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;安全更新是否及时之外，维护方还应解释风险分级、修复进度及可行的临时缓解办法。&lt;/li&gt;
-&lt;li&gt;“补丁已进入 proposed 仓库”与普通用户已收到正式安全更新并不相同，讨论中对具体内核版本是否包含修复也存在争议。&lt;/li&gt;
-&lt;li&gt;CVSS 严重性、实际可利用条件和攻击发生概率是不同问题，不能仅凭一个分数决定所有系统的处置。&lt;/li&gt;
-&lt;li&gt;仓促推送内核更新也可能造成大面积回归，补丁节奏需要同时考虑漏洞风险与部署风险。&lt;/li&gt;
-&lt;li&gt;批评如果缺少受影响配置和可操作的风险说明，就很难帮助管理员判断自己是否需要立即停机。&lt;/li&gt;
-&lt;li&gt;Ubuntu Pro 是否已经提供修复需要单独核实，不能从升级提示推断付费用户一定更早获得这个补丁。&lt;/li&gt;
-&lt;li&gt;一位使用者称自己已经迁移到 Rocky Linux，并把长期稳定性和发行版升级方式列为选择依据。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-ask-hn想保护隐私该买哪种电视-ask-hn-which-tv-do-you-recommend-for-privacy&#34;&gt;
-  2. Ask HN：想保护隐私，该买哪种电视？ (Ask HN: Which TV do you recommend for privacy?)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-ask-hn%e6%83%b3%e4%bf%9d%e6%8a%a4%e9%9a%90%e7%a7%81%e8%af%a5%e4%b9%b0%e5%93%aa%e7%a7%8d%e7%94%b5%e8%a7%86-ask-hn-which-tv-do-you-recommend-for-privacy&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50328896&#34;&gt;https://news.ycombinator.com/item?id=50328896&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;提问者多年没有使用电视，现在想买一台 60–80 英寸、4K、刷新率至少 60Hz 的设备，愿意为更好的隐私保护多付一些钱。他听说 Apple TV 的隐私表现优于电视内置应用，因此希望把电视主要当作显示器，由 Apple TV 负责播放内容，并询问其他人的实际选择与使用体验。&lt;/p&gt;
-&lt;p&gt;原帖是一份需求说明和经验征集，没有对电视品牌进行独立测试，也没有给出可验证的最佳产品榜单。它真正需要解决的是显示设备、联网播放设备与日常操作之间的取舍：外接播放器能否满足需求、电视是否必须联网，以及这种组合是否方便长期使用，均需结合具体型号和个人习惯判断。下列设备建议与使用经验来自 HN 讨论，不是提问者已经验证的结论。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-680-points--评论-820-comments--投稿者lecrojs--发布时间2026-11-02-033527-0800&#34;&gt;
-  HN 热度 680 points | 评论 820 comments | 投稿者：LecroJS | 发布时间：2026-11-02 03:35:27 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-680-points--%e8%af%84%e8%ae%ba-820-comments--%e6%8a%95%e7%a8%bf%e8%80%85lecrojs--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-033527-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50328896&#34;&gt;https://news.ycombinator.com/item?id=50328896&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;让电视离线并连接 Apple TV 是已有用户采用的方案，不过切换游戏机等输入源仍可能带来操作麻烦。&lt;/li&gt;
-&lt;li&gt;把联网任务交给 Apple TV 仍然需要信任另一家平台，重视自主控制的人更倾向于使用运行 Linux 的小型电脑。&lt;/li&gt;
-&lt;li&gt;商用显示屏提供了消费电视之外的选择，但较高价格会影响它是否适合普通家庭。&lt;/li&gt;
-&lt;li&gt;通过调试工具删除智能电视应用需要投入维护时间，已有使用者报告误操作后不得不恢复设备。&lt;/li&gt;
-&lt;li&gt;家人最终是否会回到内置系统，往往决定隐私方案能否长期坚持，易用性不能留到购买后才考虑。&lt;/li&gt;
-&lt;li&gt;HDMI-CEC 可以减少电视与外接播放器之间的遥控器切换，离线电视也可能保留这些控制功能。&lt;/li&gt;
-&lt;li&gt;投影仪是另一种显示方案，但白天环境光与房间布置会改变体验。&lt;/li&gt;
-&lt;li&gt;显示器加独立音箱能避开一部分电视系统问题，但需要重新考虑观看距离和大屏需求。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-occupysaas用开源兼容实现挑战-saas-锁定-occupysaas&#34;&gt;
-  3. OccupySaaS：用开源兼容实现挑战 SaaS 锁定 (OccupySaaS)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-occupysaas%e7%94%a8%e5%bc%80%e6%ba%90%e5%85%bc%e5%ae%b9%e5%ae%9e%e7%8e%b0%e6%8c%91%e6%88%98-saas-%e9%94%81%e5%ae%9a-occupysaas&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://occupysaas.com/&#34;&gt;https://occupysaas.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;OccupySaaS 把按席位收费、数据导出障碍、专有接口和持续涨价视为企业软件的锁定机制，主张通过开源、可自行托管的兼容实现，把控制权交回用户。网站列出的两个项目分别是面向 Auth0 的身份服务 ZeroAuthy，以及面向 Salesforce 的 SalesCompel，均采用 Apache 2.0 许可证。&lt;/p&gt;
-&lt;p&gt;ZeroAuthy 的 README 自称已实现 OIDC 发现、JWKS、授权码加 PKCE、客户端凭据、刷新令牌等流程，并列出与 Auth0 SDK 的兼容测试，同时明确仍处早期阶段，MFA、部分企业连接及部署加固等工作尚在路线图中。SalesCompel 已有 Go/PostgreSQL 后端和 Vue 界面探索，覆盖 Account、Contact 的增删改查及有限查询；但 README 明确说它尚不适合生产，也未获 Salesforce 兼容认证，演示界面的部分操作仅使用内存中的合成数据。&lt;/p&gt;
-&lt;p&gt;项目以公开文档、开放标准和受约束的行为测试解释其兼容实现方法。这是项目自身的开发政策与能力声明，不能等同于全面安全审计、完整产品替代能力或法律保证。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-487-points--评论-304-comments--投稿者misswaterfairy--发布时间2026-11-02-081727-0800&#34;&gt;
-  HN 热度 487 points | 评论 304 comments | 投稿者：misswaterfairy | 发布时间：2026-11-02 08:17:27 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-487-points--%e8%af%84%e8%ae%ba-304-comments--%e6%8a%95%e7%a8%bf%e8%80%85misswaterfairy--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-081727-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50331402&#34;&gt;https://news.ycombinator.com/item?id=50331402&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;企业购买 SaaS 也在购买维护、安全更新、备份和责任承担，复制功能界面并不能自动替代这些服务。&lt;/li&gt;
-&lt;li&gt;身份认证属于高风险基础设施，早期兼容实现需要经受安全验证，不能仅凭开发速度判断能否投入使用。&lt;/li&gt;
-&lt;li&gt;文档、培训和支持团队会影响迁移成本，功能列表相似并不意味着切换轻松。&lt;/li&gt;
-&lt;li&gt;Apache 2.0 允许商业再利用，部分讨论者因此更希望采用能要求衍生修改继续开放的许可证。&lt;/li&gt;
-&lt;li&gt;开放软件与付费托管并不冲突，独立服务商可以靠运维获利，同时让客户保留更换供应商的能力。&lt;/li&gt;
-&lt;li&gt;已有开源项目和合作组织值得优先支持，重新开发相似产品未必是最有效的投入方式。&lt;/li&gt;
-&lt;li&gt;小型独立 SaaS 创业者也靠持续维护获得收入，不能把所有订阅服务都视为同一种商业问题。&lt;/li&gt;
-&lt;li&gt;已有自托管能力的团队可能更重视自行排障的主动权，而不是故障发生后只能等待供应商回复。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-帕特里克斯图尔特与皮卡德权力应该怎样使用-patrick-stewart-taught-us-what-good-men-do-with-power&#34;&gt;
-  4. 帕特里克·斯图尔特与皮卡德：权力应该怎样使用 (Patrick Stewart taught us what good men do with power)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e5%b8%95%e7%89%b9%e9%87%8c%e5%85%8b%e6%96%af%e5%9b%be%e5%b0%94%e7%89%b9%e4%b8%8e%e7%9a%ae%e5%8d%a1%e5%be%b7%e6%9d%83%e5%8a%9b%e5%ba%94%e8%af%a5%e6%80%8e%e6%a0%b7%e4%bd%bf%e7%94%a8-patrick-stewart-taught-us-what-good-men-do-with-power&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism&#34;&gt;https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vox 作者 Ian Millhiser 把帕特里克·斯图尔特塑造的《星际迷航：下一代》舰长让-吕克·皮卡德，视为一种值得重新讨论的政治榜样：拥有力量的人应运用制度、外交与道德判断保护他人，而不是把支配他人当作成功。文章通过《The Measure of a Man》中 Data 是否拥有自主权，以及《The Drumhead》中政治猎巫的情节，说明这类理想如何在具体冲突中接受考验。&lt;/p&gt;
-&lt;p&gt;Millhiser 将该剧的乐观气质联系到冷战结束前后的自由主义期待，并借 Acemoglu 与 Robinson 关于包容性制度的论述，强调公正规则仍需要有能力执行规则的国家。这是一篇带有明确政治立场的文化评论，作者对特朗普时代美国和后续《星际迷航》作品的比较，应理解为其解释框架。&lt;/p&gt;
-&lt;p&gt;他也承认，善意不会自动产生好结果，伊拉克战争等失败暴露了天真的军事干预观。文章最终坚持：即使现实不按电视剧中的逻辑运行，公共文化仍需要展示如何负责、克制地使用权力。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-458-points--评论-342-comments--投稿者rhaynes--发布时间2026-11-02-012816-0800&#34;&gt;
-  HN 热度 458 points | 评论 342 comments | 投稿者：rhaynes | 发布时间：2026-11-02 01:28:16 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-458-points--%e8%af%84%e8%ae%ba-342-comments--%e6%8a%95%e7%a8%bf%e8%80%85rhaynes--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-012816-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50327650&#34;&gt;https://news.ycombinator.com/item?id=50327650&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;让一个有能力、善意且可信的主角持续成立，比依靠角色犯蠢制造冲突更考验创作。&lt;/li&gt;
-&lt;li&gt;权力不能仅靠好人的自律来约束，因为同一套权力迟早可能落到滥用者手中。&lt;/li&gt;
-&lt;li&gt;皮卡德的影响力来自编剧、角色设定与演员表演共同作用，不能把虚构人物的全部功劳归给演员。&lt;/li&gt;
-&lt;li&gt;皮卡德呈现了坚定而不霸凌的男性形象，使领导力与攻击性不必绑定。&lt;/li&gt;
-&lt;li&gt;舰长的道德判断能够发挥作用，也依赖周围有能力且愿意提出不同意见的团队。&lt;/li&gt;
-&lt;li&gt;后稀缺的科幻背景弱化了现实中的资源和利益冲突，把剧中方案直接搬到现实政治会遇到困难。&lt;/li&gt;
-&lt;li&gt;围绕 Data 的称谓变化让抽象的人格权争议进入日常语言，也强化了角色被当作人的过程。&lt;/li&gt;
-&lt;li&gt;对权力的警惕也应延伸到大型私人企业，不能只要求政府受约束而忽略企业集中掌握的信息与影响力。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-数学已经改变评价数学的方式也该改变-mathematics-has-changed-lets-act-like-it&#34;&gt;
-  5. 数学已经改变，评价数学的方式也该改变 (Mathematics has changed. Let&amp;rsquo;s act like it)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e6%95%b0%e5%ad%a6%e5%b7%b2%e7%bb%8f%e6%94%b9%e5%8f%98%e8%af%84%e4%bb%b7%e6%95%b0%e5%ad%a6%e7%9a%84%e6%96%b9%e5%bc%8f%e4%b9%9f%e8%af%a5%e6%94%b9%e5%8f%98-mathematics-has-changed-lets-act-like-it&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/&#34;&gt;https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这篇刊于陶哲轩博客的文章由客座作者 Frank Calegari 撰写。Calegari 将 OpenAI 10 月 6 日发布的七百余篇数学研究论文视为变化信号，同时指出其中存在写作、归属和错误问题；文章并没有证明这些结果全部正确，更不是宣告数学已经被 AI 解决。&lt;/p&gt;
-&lt;p&gt;他的核心区分是：得到一个证明，与理解这个证明为何重要、它与其他结构有什么联系、接下来该问什么，并不是同一件事。AI 可能让跨领域探索和技术性推进更容易，因此研究评价不能继续把抢先得到结论或发表数量当作主要尺度。作者建议，招聘与招生增加面对面讨论，判断候选人的真实理解；期刊提高对清晰表达、思想和联系的要求；研究生训练增加广度、研讨和沟通，而不是放弃技术基本功。&lt;/p&gt;
-&lt;p&gt;Calegari 也不把所有形式化通过的证明都视作已经带来深刻认识。他希望数学共同体主动调整制度和研究文化，而不是被公司发布节奏牵着走。这是一套面向学界的主张，关于 AI 能力的概括仍应与逐项结果核验区分。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-376-points--评论-489-comments--投稿者smilelamp--发布时间2026-11-02-022842-0800&#34;&gt;
-  HN 热度 376 points | 评论 489 comments | 投稿者：smilelamp | 发布时间：2026-11-02 02:28:42 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-376-points--%e8%af%84%e8%ae%ba-489-comments--%e6%8a%95%e7%a8%bf%e8%80%85smilelamp--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-022842-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50328251&#34;&gt;https://news.ycombinator.com/item?id=50328251&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;选择值得研究的问题、理解结果并提出下一步方向，本身就是数学贡献，不能只把贡献等同于证明完成。&lt;/li&gt;
-&lt;li&gt;如果自动化能推进其他科学和实际应用，数学研究也不应只按手工完成过程的价值来衡量。&lt;/li&gt;
-&lt;li&gt;亲自探索和证明仍可能具有独立意义，不能要求每个人都只追求最大化产出。&lt;/li&gt;
-&lt;li&gt;部分论文附有形式化证明不等于整批论文都已充分核验，能力判断应逐项区分。&lt;/li&gt;
-&lt;li&gt;跳过探索过程可能同时跳过产生新问题的机会，获得答案与形成研究直觉并非同一回事。&lt;/li&gt;
-&lt;li&gt;把问题选择或解释预设为人类永久独占的环节也值得怀疑，因为这些能力本身可能继续被自动化。&lt;/li&gt;
-&lt;li&gt;如果资助和晋升仍奖励快速增加论文数量，要求研究者转向深入理解就难以真正落实。&lt;/li&gt;
-&lt;li&gt;扩大面试在研究评价中的作用，也可能加重人际偏好和学术关系的影响，需要警惕新的偏差。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-欧洲多国超市冷柜再次遭遇疑似网络攻击-supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack&#34;&gt;
-  6. 欧洲多国超市冷柜再次遭遇疑似网络攻击 (Supermarket freezers across Europe hit by second suspected cyber-attack)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e6%ac%a7%e6%b4%b2%e5%a4%9a%e5%9b%bd%e8%b6%85%e5%b8%82%e5%86%b7%e6%9f%9c%e5%86%8d%e6%ac%a1%e9%81%ad%e9%81%87%e7%96%91%e4%bc%bc%e7%bd%91%e7%bb%9c%e6%94%bb%e5%87%bb-supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack&#34;&gt;https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《卫报》报道，欧洲至少七个国家的超市冷藏、冷冻设备发生疑似网络攻击事件，涉及比利时、爱沙尼亚、爱尔兰、芬兰、卢森堡、荷兰和瑞典。部分设备的温度设置被改到 50°C，另有设备被远程切入除霜状态，商家因此丢弃食品或停用设备。各地事件的调查进度不同，不能把所有故障都当成已经确认的同一场攻击。&lt;/p&gt;
-&lt;p&gt;此前法国已有至多约七百家门店受类似事件波及。此次爱尔兰 SuperValu 表示，二百二十三家门店中十三家受影响，涉及特定型号控制器，门店已撤下相关冷藏冷冻食品。报道还提到，法国此前受影响设备多使用 Danfoss 控制器，厂商曾通报漏洞并建议更新，但此次也有其他品牌设备受影响。&lt;/p&gt;
-&lt;p&gt;报道没有确定攻击者身份，亦未报告责任认领或勒索要求。受访者担忧旧控制器、远程访问与更新不足形成风险，并倾向把事件看作破坏活动；这仍不等于已经证实某个国家或组织参与，也没有公开完整的攻击技术链。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-351-points--评论-398-comments--投稿者fergie--发布时间2026-11-02-195013-0800&#34;&gt;
-  HN 热度 351 points | 评论 398 comments | 投稿者：fergie | 发布时间：2026-11-02 19:50:13 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-351-points--%e8%af%84%e8%ae%ba-398-comments--%e6%8a%95%e7%a8%bf%e8%80%85fergie--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-195013-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50335615&#34;&gt;https://news.ycombinator.com/item?id=50335615&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;商用制冷系统需要协调除霜、压缩机和能耗，远程运维有实际用途，不能简单等同于给家用冰箱加联网功能。&lt;/li&gt;
-&lt;li&gt;控制复杂并不意味着必须直接依赖互联网，优化也可以由本地系统或现场人员完成。&lt;/li&gt;
-&lt;li&gt;远程监测与远程修改参数应分开设计，只读访问或现场临时授权可能缩小攻击造成的损失。&lt;/li&gt;
-&lt;li&gt;通信中断或远程服务异常时，设备应能回到本地可控状态，而不是失去维持制冷的能力。&lt;/li&gt;
-&lt;li&gt;评估集中远程管理是否省钱时，必须把食品报废、停业与网络事件损失计入成本。&lt;/li&gt;
-&lt;li&gt;公开受影响控制器和攻击细节有助于其他运营者判断风险，仅说遭到网络攻击还不够。&lt;/li&gt;
-&lt;li&gt;此前法国事件已给出预警，后续仍出现类似损失，使补丁部署与行业信息共享的效率受到质疑。&lt;/li&gt;
-&lt;li&gt;如果管理层缺少为安全投入负责的机制，单靠技术人员提醒往往难以改变采购和运维决策。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-美国非农商业部门劳动报酬份额降至-1947-年以来最低-us-workers-took-home-their-smallest-share-of-capital-since-at-least-1947&#34;&gt;
-  7. 美国非农商业部门劳动报酬份额降至 1947 年以来最低 (U.S. workers took home their smallest share of capital since at least 1947)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e7%be%8e%e5%9b%bd%e9%9d%9e%e5%86%9c%e5%95%86%e4%b8%9a%e9%83%a8%e9%97%a8%e5%8a%b3%e5%8a%a8%e6%8a%a5%e9%85%ac%e4%bb%bd%e9%a2%9d%e9%99%8d%e8%87%b3-1947-%e5%b9%b4%e4%bb%a5%e6%9d%a5%e6%9c%80%e4%bd%8e-us-workers-took-home-their-smallest-share-of-capital-since-at-least-1947&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/&#34;&gt;https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《财富》关注美国劳动者获得的经济增长份额。其引用的美国劳工统计局数据表明，2026 年第二季度非农商业部门劳动报酬占产出的比例为 52.8%，低于上一季度的 53.6%，创这组始于 1947 年的数据新低。这里的指标是收入分配中的劳动份额，不是劳动者拥有多少资本，也不是单看工资占比。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.bls.gov/opub/ted/2026/labor-share-at-its-lowest-level-52-8-percent-in-second-quarter-2026.htm&#34;&gt;BLS 原始说明&lt;/a&gt;明确，报酬包括工资、福利、养老金及雇主缴纳的社会保险等，统计范围是非农商业部门，不能直接泛化成整个美国 GDP 的同一指标。&lt;/p&gt;
-&lt;p&gt;报道引用不同经济学家的解释，讨论自动化、企业用工需求、劳动力供给变化和议价压力如何影响分配，也涉及 AI 将来的影响。但它同时承认，AI 造成大规模就业替代尚未在经济数据中清晰显现，疫情后用工调整等解释仍然存在。劳动份额下降本身不能证明劳动收入绝对下降，也不足以确认某一个原因。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-339-points--评论-206-comments--投稿者qlte--发布时间2026-11-02-072031-0800&#34;&gt;
-  HN 热度 339 points | 评论 206 comments | 投稿者：qlte | 发布时间：2026-11-02 07:20:31 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-339-points--%e8%af%84%e8%ae%ba-206-comments--%e6%8a%95%e7%a8%bf%e8%80%85qlte--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-072031-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50330939&#34;&gt;https://news.ycombinator.com/item?id=50330939&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;劳动份额下降与劳动收入绝对下降不是同一件事，如果经济总量增长，两者可能同时出现不同方向的变化。&lt;/li&gt;
-&lt;li&gt;判断生活是否改善还要看住房等基本开支的负担，单一总量比例不能替代家庭实际处境。&lt;/li&gt;
-&lt;li&gt;把劳动收入份额写成“资本份额”容易混淆产出分配与资产所有权，标题需要更准确的经济术语。&lt;/li&gt;
-&lt;li&gt;依靠消费的经济如果长期削弱多数人的购买力，企业最终也可能面对需求不足的问题。&lt;/li&gt;
-&lt;li&gt;总劳动收入、工作时长和实际小时报酬需要分开看，人口年龄结构也可能影响全国平均指标。&lt;/li&gt;
-&lt;li&gt;一种解释认为生产率增长越来越依赖资本投入，因此需要同时观察设备投入和雇佣总成本，而不只比较工资。&lt;/li&gt;
-&lt;li&gt;改善分配不能只靠网络表达，恢复劳动者集体行动与谈判能力也是一条被提出的路径。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-喜欢的网站请趁它还在时备份-if-you-love-a-website-back-it-up&#34;&gt;
-  8. 喜欢的网站，请趁它还在时备份 (If you love a website, back it up)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-%e5%96%9c%e6%ac%a2%e7%9a%84%e7%bd%91%e7%ab%99%e8%af%b7%e8%b6%81%e5%ae%83%e8%bf%98%e5%9c%a8%e6%97%b6%e5%a4%87%e4%bb%bd-if-you-love-a-website-back-it-up&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/&#34;&gt;https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作者 Misty 发现，自己喜欢的茶犬爱好站 teapuppies.com 消失后被赌博广告取代；这个自二〇〇〇年代起长期存在的网站，连从事网页归档工作的她也没及时保存。文章由此提醒：一个网站多年不变，并不代表它会一直存在，也不能假定 Internet Archive 已经完整收录。&lt;/p&gt;
-&lt;p&gt;她介绍两类归档工作流：ArchiveWeb.page 浏览器扩展适合人工访问和操作页面、逐步捕获加载内容；Browsertrix 则适合按域名、路径及链接范围自动抓取。后者有付费托管服务，也开放源码供自行部署。WARC 保存网络请求、响应及其内容，WACZ 将归档与元数据打包，ReplayWeb.page 可以在本地重放，也能借助静态网页和浏览器端代码分享。&lt;/p&gt;
-&lt;p&gt;归档应在内容仍可访问时进行，并保留多份副本。手动浏览需要实际触发页面内容，自动抓取也需要设定范围，工具不会凭空恢复已经消失的数据。作者明确披露自己就职于开发这些工具的公司，因此这既是实践介绍，也包含相关产品的推荐立场。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-337-points--评论-84-comments--投稿者ingve--发布时间2026-11-02-212535-0800&#34;&gt;
-  HN 热度 337 points | 评论 84 comments | 投稿者：ingve | 发布时间：2026-11-02 21:25:35 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-337-points--%e8%af%84%e8%ae%ba-84-comments--%e6%8a%95%e7%a8%bf%e8%80%85ingve--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-212535-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50336518&#34;&gt;https://news.ycombinator.com/item?id=50336518&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;有使用者在个人网站消失后发现归档只保留了页面骨架而没有照片，因此格外重视图片等资源是否真正保存。&lt;/li&gt;
-&lt;li&gt;AI 可以帮助整理残存资料，但不能恢复从未被保存、已经彻底消失的数据。&lt;/li&gt;
-&lt;li&gt;只想保存单篇内容时，SingleFile 这类单文件方案较容易管理，不一定需要搭建完整归档系统。&lt;/li&gt;
-&lt;li&gt;自动归档可能长期积压失败任务，复杂页面和访问限制使定期检查结果成为必要工作。&lt;/li&gt;
-&lt;li&gt;自托管归档带来的维护负担会影响长期使用，开始行动的门槛有时比功能多少更关键。&lt;/li&gt;
-&lt;li&gt;课程讲义等看似稳定的个人网页也会消失，提前保存可能在多年后的复习和工作中继续派上用场。&lt;/li&gt;
-&lt;li&gt;自动把浏览记录提交公共归档可以帮助保存网页，但使用者需要接受由此带来的隐私取舍。&lt;/li&gt;
-&lt;li&gt;对特别珍贵的个人作品，实体副本可以补充数字备份，原作者删除内容后再追索往往已经太晚。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-wikihack从-hn-引用发现维基百科条目-show-hn-wikihack--hackertube-but-for-wikipedia-articles-mentioned-on-hn&#34;&gt;
-  9. Wikihack：从 HN 引用发现维基百科条目 (Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-wikihack%e4%bb%8e-hn-%e5%bc%95%e7%94%a8%e5%8f%91%e7%8e%b0%e7%bb%b4%e5%9f%ba%e7%99%be%e7%a7%91%e6%9d%a1%e7%9b%ae-show-hn-wikihack--hackertube-but-for-wikipedia-articles-mentioned-on-hn&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://wikihack.netlify.app&#34;&gt;https://wikihack.netlify.app&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Isaac Gemal 开发的 Wikihack 把 Hacker News 中的维基百科引用整理成可浏览的信息流，灵感来自 HackerTube 和 Hacker Books。实际 About 页面称，数据来自 ClickHouse 的公开 HN 数据集，维基百科 API 提供条目文本及分类；截至页面标示的 11 月 1 日，收录 76,074 个条目与 540,037 个链接。&lt;/p&gt;
-&lt;p&gt;它并非简单按出现次数排行：排序首先看不同引用者人数，再对重复链接和首页出现作少量加权；同一条目的不同名称和重定向会归一化，而专门讨论该条目的帖子内引用不计作提及。收录条件是至少两位不同评论者引用，或该条目本身作为投稿获得五十分以上。&lt;/p&gt;
-&lt;p&gt;Top 展示长期热门条目，Random 偏向被较多引用的内容，Rising 寻找过去十二个月引用量显著高于长期平均的条目。页面还能展开 HN 评论，帮助理解链接为何出现。当前扫描对象是英文维基百科链接；这些排序反映 HN 的引用习惯，不能理解为维基百科内容质量或普遍重要性的排名。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-331-points--评论-102-comments--投稿者aizk--发布时间2026-11-02-130630-0800&#34;&gt;
-  HN 热度 331 points | 评论 102 comments | 投稿者：aizk | 发布时间：2026-11-02 13:06:30 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-331-points--%e8%af%84%e8%ae%ba-102-comments--%e6%8a%95%e7%a8%bf%e8%80%85aizk--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-130630-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50333339&#34;&gt;https://news.ycombinator.com/item?id=50333339&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;保留引用所在的 HN 评论上下文很有价值，因为链接为何被提起有时比条目本身更值得阅读。&lt;/li&gt;
-&lt;li&gt;扩展非英语维基百科可以让只在特定文化和语言中存在的小众主题被发现。&lt;/li&gt;
-&lt;li&gt;劫持滚轮并隐藏滚动条会削弱浏览控制感，桌面用户尤其需要按自己的速度阅读。&lt;/li&gt;
-&lt;li&gt;作者选择类似短视频的窄栏布局，是为了在桌面端同时展示条目与评论，而不是单纯遗漏桌面设计。&lt;/li&gt;
-&lt;li&gt;公开的 HN 数据库降低了制作类似项目的门槛，而实体提取与语义索引仍有进一步探索空间。&lt;/li&gt;
-&lt;li&gt;社区过去已经出现过类似维基百科聚合工具，讨论中也分享了既有项目供读者比较。&lt;/li&gt;
-&lt;li&gt;缺少独立域名的临时项目让部分读者担忧长期维护，甚至因此不愿收藏。&lt;/li&gt;
-&lt;li&gt;作者把它视为兴趣作品，并以 WikiTok 的经历说明更新频率会随实际使用和功能请求变化。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-骨骼机械感知或参与衰老调节延寿证据仍来自小鼠-bones-may-release-proteins-that-slow-aging-and-extend-life-span&#34;&gt;
-  10. 骨骼机械感知或参与衰老调节：延寿证据仍来自小鼠 (Bones may release proteins that slow aging and extend life span)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e9%aa%a8%e9%aa%bc%e6%9c%ba%e6%a2%b0%e6%84%9f%e7%9f%a5%e6%88%96%e5%8f%82%e4%b8%8e%e8%a1%b0%e8%80%81%e8%b0%83%e8%8a%82%e5%bb%b6%e5%af%bf%e8%af%81%e6%8d%ae%e4%bb%8d%e6%9d%a5%e8%87%aa%e5%b0%8f%e9%bc%a0-bones-may-release-proteins-that-slow-aging-and-extend-life-span&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span&#34;&gt;https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Science 记者 Christopher G. Thomas 报道，南方医科大学白晓春团队研究发现，骨骼可能通过感知运动中的机械力，释放影响全身衰老的蛋白质。骨细胞中的 PIEZO1 是关键感力通道：研究者在十月龄小鼠中删除其基因，五个月后观察到记忆、反应及多个器官的衰老表现恶化，平均寿命比对照组缩短 105.5 天。&lt;/p&gt;
-&lt;p&gt;反向实验对二十至二十四月龄老鼠实施动态胫骨轴向载荷（DTAL）：每周两次，连续四个月，轻压腿骨两端。雌雄小鼠随后均表现出更强的骨骼、更快的反应和较好的认知，寿命延长近三个月；此前取得的
-  &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/42914985/&#34;&gt;论文摘要&lt;/a&gt;给出的增幅是 9.4%（79.5 天）。激活 PIEZO1 的药物也延缓了部分衰老表现。&lt;/p&gt;
-&lt;p&gt;血液转移实验支持保护作用可由血液中的因子传递。团队识别出色素上皮衍生因子 PEDF，注射后可在老鼠中模拟 DTAL 的抗衰老益处；人体相关实验则发现，它能抑制人体软骨类器官的衰老，且老年人和骨质疏松患者体内水平较低。&lt;/p&gt;
-&lt;p&gt;这些结果尚未证明对人有效。报道中的独立研究者强调，机械负荷对老年人的安全性与有效性、PEDF 能否成为治疗靶点，都仍待验证，不能把小鼠延寿换算成人体治疗承诺。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-311-points--评论-122-comments--投稿者ea-3167--发布时间2026-11-02-093107-0800&#34;&gt;
-  HN 热度 311 points | 评论 122 comments | 投稿者：EA-3167 | 发布时间：2026-11-02 09:31:07 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-311-points--%e8%af%84%e8%ae%ba-122-comments--%e6%8a%95%e7%a8%bf%e8%80%85ea-3167--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-02-093107-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50331957&#34;&gt;https://news.ycombinator.com/item?id=50331957&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;小鼠结果需要在人类中重新验证，不能直接按比例换算成某种人体延寿效果。&lt;/li&gt;
-&lt;li&gt;受控机械刺激有助于隔离骨细胞的作用，而一般运动还会同时影响许多其他生理系统。&lt;/li&gt;
-&lt;li&gt;骨骼可能通过新的信号通路参与全身健康，这种机制线索本身就值得继续研究。&lt;/li&gt;
-&lt;li&gt;抗衰老报道应区分早期机制研究与可用疗法，并给重复验证留下位置。&lt;/li&gt;
-&lt;li&gt;不同延寿干预的效果未必能够相加，不能假定把每项小鼠研究组合起来就会持续增加寿命。&lt;/li&gt;
-&lt;li&gt;关于这种机制为何进化出来的解释如果缺少可检验预测，就容易停留在无法证伪的故事层面。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

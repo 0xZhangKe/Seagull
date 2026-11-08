@@ -4,7 +4,7 @@
         <title>愷開的部落格</title>
         <link>https://blog.kalan.dev</link>
         <description>好的技術文章不只傳遞知識，也傳遞觀點。這裡是我思考與書寫的地方。</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:08:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 16:01:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
@@ -188,7 +188,7 @@ M347 1759 V0 H263 V1759 v0 v1759 h84z"></path></svg></span></span></span><span c
 <p><strong>移除不重要的部分</strong>，這個中心思想其實在很多地方都看得到，例如聲音採樣，人耳聽不到的高頻可以移除掉節省空間；矩陣太複雜了，透過 SVD 奇異值分解用重要的特徵向量來表示。雖然看似互不關聯，但觀念相通。</p>
 <h2 id="後記"><a aria-hidden="true" tabindex="-1" href="#後記"><span class="icon icon-link"></span></a>後記</h2>
 <p>舊版的實作直接用 JavaScript 迴圈處理每個像素，圖片尺寸大一點就有明顯的延遲。改用 WebGPU 之後，Sobel 和移除 seam 都是每個像素平行計算，可以即時拖動滑桿。</p>
-<p>比較可惜的是動態規劃那一段：每一列都依賴下一列，只能用一個 workgroup 逐列計算，沒辦法吃滿整張 GPU。另一個可以優化的地方是移除一條 seam 之後，只有 seam 附近的 energy 會改變，其實不需要每次都重算整張圖。</p>
+<p>比較可惜的是動態規劃那一段：每一列都依賴下一列，只能用一個 workgroup 逐列計算，沒辦法吃滿整張 GPU。另一個可以最佳化的地方是移除一條 seam 之後，只有 seam 附近的 energy 會改變，其實不需要每次都重算整張圖。</p>
 <p>在實際使用上，雖然效果不錯，但其實還是要看圖片的內容為何，如果圖片的細節都很重要，都有非常明顯的亮度變化，那麼就算用 Seam Carving 也還是會失真很多。</p>
 <h2 id="相關資源"><a aria-hidden="true" tabindex="-1" href="#相關資源"><span class="icon icon-link"></span></a>相關資源</h2>
 <p>本篇很多概念是從 <a href="https://youtu.be/rpB6zQNsbQU?si=vfSAVPvEXG-jHrme" rel="noreferrer noopener" target="_blank">Computational Thinking – Seam Carving</a> 這部影片而來，解說是 3Blue1Brown 的作者 Grant Sanderson！裡頭有大量的視覺化解說，非常好理解。</p>]]></content:encoded>
@@ -287,7 +287,7 @@ M347 1759 V0 H263 V1759 v0 v1759 h84z"></path></svg></span></span></span><span c
 <h4 id="獲取資訊"><a aria-hidden="true" tabindex="-1" href="#獲取資訊"><span class="icon icon-link"></span></a>獲取資訊</h4>
 <p>在早期的獵頭或招聘經理訪談中，你也可以直接詢問：「能勝任這個職位的人，通常需要具備哪些特質？」拿到這些線索後，就能在後續的面試中更有針對性地展現優勢。像是公司比較看重 Infra 相關的人才，你就可以在簡歷當中多著墨關於 Infra 改善，甚至是 Hand-on 的經驗。</p>
 <h4 id="從專案經驗出發"><a aria-hidden="true" tabindex="-1" href="#從專案經驗出發"><span class="icon icon-link"></span></a>從專案經驗出發</h4>
-<p>先用最直觀、最簡單的方法把基本功能跑通，再隨著追問去優化複雜度。</p>
+<p>先用最直觀、最簡單的方法把基本功能跑通，再隨著追問去最佳化複雜度。</p>
 <p>如果是聊專案經驗，先從 High-level 的脈絡與挑戰切入，再深入技術細節：當時的需求是什麼？遇到了什麼效能瓶頸？為什麼傳統做法行不通？</p>
 <h4 id="主動對齊認知"><a aria-hidden="true" tabindex="-1" href="#主動對齊認知"><span class="icon icon-link"></span></a>主動對齊認知</h4>
 <p>很多溝通問題本質上只是資訊與認知落差。</p>
@@ -533,7 +533,7 @@ M347 1759 V0 H263 V1759 v0 v1759 h84z"></path></svg></span></span></span><span c
             <guid isPermaLink="false">https://blog.kalan.dev/journal/okinawa/</guid>
             <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[從福岡飛沖繩三天兩夜，跟著 Wiwi 的遊記吃冰、逛港川外人住宅區、玩 teamLab、大啖燒肉。]]></description>
-            <content:encoded><![CDATA[<p>最近都在忙工作，想說找個幾天休息一下，於是規劃了沖繩三天兩夜的行程，參考了很多 <a href="https://wiwi.blog/blog/okinawa-clearfree" rel="noreferrer noopener" target="_blank">Wiwi 去沖繩玩時</a>的景點。我覺得比起部落客滿滿的業配跟廣告，還有為了 SEO 優化讓人眼花的文章，看這種遊記更能打動我！</p>
+            <content:encoded><![CDATA[<p>最近都在忙工作，想說找個幾天休息一下，於是規劃了沖繩三天兩夜的行程，參考了很多 <a href="https://wiwi.blog/blog/okinawa-clearfree" rel="noreferrer noopener" target="_blank">Wiwi 去沖繩玩時</a>的景點。我覺得比起部落客滿滿的業配跟廣告，還有為了 SEO 最佳化讓人眼花的文章，看這種遊記更能打動我！</p>
 <p>我們住在福岡，到沖繩是國內線，從福岡機場到那霸機場約 870 公里，大概搭 1 小時 30 分鐘左右就可以到那霸機場了。</p>
 <h2 id="めんそーれ"><a aria-hidden="true" tabindex="-1" href="#めんそーれ"><span class="icon icon-link"></span></a>めんそーれ！</h2>
 <p>めんそーれ是沖繩方言，意思跟いらっしゃいませ一樣。下機場時到處都可以看到唷。</p>
@@ -1115,11 +1115,11 @@ LINE Fukuokaでは去年は実施できなかったですが、基本的に毎�
 <p>權限必須來自於責任。比方 100% 出資的老闆，因為他有幫公司賺錢的責任，必然有 100% 的掌控權，所以任何公司決策都是老闆說得算。老闆承擔了公司倒閉、付不出薪水的風險，若產品賣得好也能享有公司賺錢的果實。員工不需要承擔倒閉風險，就算公司賺錢員工的薪水也不一定有提升。</p>
 <p>很多老闆常要求員工認真工作，但光只有要求本身是不可能的。希望員工像老闆一樣拼命，那就給他相同的股權。</p>
 <p>反過來說，設計一個好的獎懲機制，更容易激發員工的成長。機器學習中有個概念叫目標函數，訓練過程就是不斷減少損失函數、最大化目標函數。<strong>模型不會去做你「期待」它做的事，它只會去做能讓 loss 變小的事</strong>。</p>
-<p>組織也是一樣。員工（或團隊）會優化你實際上獎勵的行為，而不是你嘴上說重要的事。</p>
+<p>組織也是一樣。員工（或團隊）會最佳化你實際上獎勵的行為，而不是你嘴上說重要的事。</p>
 <h2 id="實際做法"><a aria-hidden="true" tabindex="-1" href="#實際做法"><span class="icon icon-link"></span></a>實際做法</h2>
 <p>很簡單，就是<strong>授權</strong>以及<strong>獎勵機制</strong>。在對方的責任範圍內做授權，並把獎勵函數設計得越清楚越好。</p>
 <p>舉個例子：如果開發團隊的目標是「將平均部署時間縮短 50%」，那就授權他們在預算內的 CI/CD 工具採購不需審核、技術選型自行決定、架構調整不需逐項報告。達標就發獎金，沒達標就收回獎勵。重點在於：<strong>授權的範圍要跟責任的範圍一致</strong>。你要開發團隊對部署速度負責，就不要對細節處處刁難。</p>
-<p>但獎勵函數必須謹慎考量。假設訂了一個 Token Usage 多寡當作績效考核的指標，那可能只會產出幾百萬行沒用的程式碼。Story Point 也一樣，這些指標一旦有了上層的監督，就時常變成演戲：員工會想盡辦法優化指標並隱藏真實情形，導致帳面上看到團隊開發速度很快，有很多 Story Point，但實際上是靠著灌水的 Story Point 讓上頭開心</p>
+<p>但獎勵函數必須謹慎考量。假設訂了一個 Token Usage 多寡當作績效考核的指標，那可能只會產出幾百萬行沒用的程式碼。Story Point 也一樣，這些指標一旦有了上層的監督，就時常變成演戲：員工會想盡辦法最佳化指標並隱藏真實情形，導致帳面上看到團隊開發速度很快，有很多 Story Point，但實際上是靠著灌水的 Story Point 讓上頭開心</p>
 <p>很多公司沒有理解責任與權限的重要性，有問題就罵員工，員工嘗試改善時又到處指教方向不對，最後看不下去自己跳下來做，完全沒時間專注在更重要的地方。我想這是很多中階管理者、創辦人遇到的困擾。</p>
 <p>這時可以從責任、權限下手：賦予員工適當的權限，除了重要的決策由你決定之外，不對員工的決定出手。</p>
 <p>失敗了怎麼辦？我認為要在一定範圍內讓員工體驗到失敗，只有親自體驗過才有成長的可能性。如果事先設定好目標與獎勵，失敗就下次改善就好。但如果不交付權限又要讓員工負責，那失敗了他自然會認為是你的問題，同時還會因為拿不到獎勵而沮喪。</p>
@@ -1340,7 +1340,7 @@ LINE Fukuokaでは去年は実施できなかったですが、基本的に毎�
 <li><strong><code>decoding="async"</code></strong> — 圖片 decode 不阻塞主執行緒。預設行為其實就接近 async，但寫上去可以避免某些瀏覽器的同步解碼路徑</li>
 <li><strong><code>fetchpriority="high"</code></strong> — 反過來，關鍵圖片可以加這個讓瀏覽器優先下載</li>
 </ul>
-<p>瀏覽器這幾年已經加入很多圖片優化的機制，不像以前要寫複雜的 JavaScript 自己優化，比以前手動處理輕鬆很多。前端要做的就是把該加的屬性加上去，剩下的交給瀏覽器處理。</p>
+<p>瀏覽器這幾年已經加入很多圖片最佳化的機制，不像以前要寫複雜的 JavaScript 自己最佳化，比以前手動處理輕鬆很多。前端要做的就是把該加的屬性加上去，剩下的交給瀏覽器處理。</p>
 <section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label"><a aria-hidden="true" tabindex="-1" href="#footnote-label"><span class="icon icon-link"></span></a>Footnotes</h2>
 <ol>
 <li id="user-content-fn-1">
@@ -1951,7 +1951,7 @@ Wiwi</p>
 <p>就算是新創，根據階段的不同也會有完全不一樣的樣貌。更何況新創本身的定義太過模糊，與其用「我適合大公司還是新創」來做判斷標準，不妨用公司階段來評估。</p>
 <p>這樣一來至少有更多明確的指標幫助你判斷是否要進入這家公司。比起規模，公司目前位於什麼階段，靠什麼活著、怎麼成長、最主要的瓶頸是什麼，會直接影響到團隊文化與工作氛圍。</p>
 <h2 id="為什麼你該在意"><a aria-hidden="true" tabindex="-1" href="#為什麼你該在意"><span class="icon icon-link"></span></a>為什麼你該在意</h2>
-<p>同樣叫工程師，在不同階段的公司，工作內容完全不同。摸索期的工程師可能今天寫後端、明天改 Landing Page、後天去跟客戶開會；成熟期的工程師可能三個月只專注在一個子系統的效能優化。</p>
+<p>同樣叫工程師，在不同階段的公司，工作內容完全不同。摸索期的工程師可能今天寫後端、明天改 Landing Page、後天去跟客戶開會；成熟期的工程師可能三個月只專注在一個子系統的效能最佳化。</p>
 <p>同樣叫 PM，在驗證期的 PM 成功標準是有沒有人買單，成長期的 PM 成功標準是能不能規模化。</p>
 <p>每個階段對「好」的定義完全不同，如果不對公司的階段有正確認知，很容易對工作產生不切實際的期待。</p>
 <ul>
@@ -2030,11 +2030,11 @@ Wiwi</p>
 <p><strong>內部政治</strong>。資源競爭、要推進自己想要的事情更困難。很多時候不是做不出來，而是很難推得動</p>
 <h2 id="不同階段適合不同的人"><a aria-hidden="true" tabindex="-1" href="#不同階段適合不同的人"><span class="icon icon-link"></span></a>不同階段適合不同的人</h2>
 <p>這件事比能力重要。</p>
-<p>摸索期適合喜歡混亂、願意扛責任的人。驗證期適合能補洞、能快速試錯的人。成長期適合能建立制度、跨部門協作的人。成熟期適合擅長優化、治理、提升效率的人。</p>
+<p>摸索期適合喜歡混亂、願意扛責任的人。驗證期適合能補洞、能快速試錯的人。成長期適合能建立制度、跨部門協作的人。成熟期適合擅長最佳化、治理、提升效率的人。</p>
 <p>每個階段的特性不同，<strong>待在不適合自己的公司階段往往是 Burnout 的來源</strong>。</p>
 <p>我自己也經歷過這種錯位。</p>
 <p>在成長期的公司待得很舒服，覺得自己很有價值，但換到摸索期的環境後，過去的經驗很多都用不上，因為問題的本質完全不同，公司重視的東西也完全不一樣。反過來也是——有些人在混沌中如魚得水，一到制度化的環境反而覺得窒息，無法發揮。</p>
-<p>說到底，本質上都是認知差異。明明公司階段應該專注在 A，但你卻總是想著要優化 B。</p>
+<p>說到底，本質上都是認知差異。明明公司階段應該專注在 A，但你卻總是想著要最佳化 B。</p>
 <p>公司明明還在摸索期，最需要的是快速驗證需求、快速迭代，但你腦中想的卻是架構要不要先抽乾淨、流程要不要先訂完整；又或者公司明明進入成長期，最需要的是協作、制度與可預測性，你卻還是習慣用單兵作戰的方式解決問題。</p>
 <p>所以我認為並沒有能力不足這件事。</p>
 <p>明明很努力，成果卻一直不如預期，久了就很容易把問題全部往自己身上推，最後得出一個結論：是不是我其實沒有那麼厲害。</p>
@@ -2061,7 +2061,7 @@ Wiwi</p>
 <li>第二個時代是同步 Agent——工程師透過 prompt 指揮 AI，你來我往地協作完成任務</li>
 <li>第三個時代——Agent 能夠在雲端的虛擬機器上獨立運作數小時，自主完成更大規模的任務，工程師只需要在最後審查成果</li>
 </ul>
-<a href="https://x.com/mntruell/status/2026736314272591924" target="_blank" rel="noreferrer noopener" class="link-preview link-preview--tweet" data-has-image="true"> <img src="https://pbs.twimg.com/profile_images/1887065642261737472/QdLiAFfD_400x400.jpg" alt="" class="link-preview__image" loading="lazy"> <div class="link-preview__content"> <span class="link-preview__tweet-header"> <svg class="link-preview__x-icon" viewBox="0 0 24 24" aria-label="X"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path> </svg> <span class="link-preview__tweet-author">@mntruell</span> </span> <span class="link-preview__title">Michael Truell (@mntruell) on X</span> <span class="link-preview__description">The third era of AI software development</span>  </div> </a>
+<a href="https://x.com/mntruell/status/2026736314272591924" target="_blank" rel="noreferrer noopener" class="link-preview link-preview--tweet" data-has-image="true"> <img src="https://pbs.twimg.com/profile_images/1887065642261737472/QdLiAFfD_400x400.jpg" alt="" class="link-preview__image" loading="lazy"> <div class="link-preview__content"> <span class="link-preview__tweet-header"> <svg class="link-preview__x-icon" viewBox="0 0 24 24" aria-label="X"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path> </svg> <span class="link-preview__tweet-author">@mntruell</span> </span> <span class="link-preview__title">Michael Truell on X: &quot;The third era of AI software development&quot; / X</span> <span class="link-preview__description">The third era of AI software development</span>  </div> </a>
 <p>短短一年多，軟體開發已經完全不一樣了。</p>
 <h2 id="ai-取代軟體開發"><a aria-hidden="true" tabindex="-1" href="#ai-取代軟體開發"><span class="icon icon-link"></span></a>AI 取代軟體開發</h2>
 <p>當時我看到「AI 取代軟體開發、軟體工程師」是嗤之以鼻，覺得只是 AI 公司的話術與吹捧。</p>
@@ -2561,7 +2561,7 @@ Jserv</p>
 <p>以下情境選擇 AWS 是合理的：</p>
 <ul>
 <li><strong>合規要求</strong>：金融、醫療、政府標案，需要特定的認證（HIPAA、ISO 27001）和資料落地要求。AWS 在這方面的文件和支援最完整</li>
-<li><strong>流量規模夠大</strong>：月活躍用戶破百萬、需要精細的流量控制和成本優化。這個規模下，AWS 的 Reserved Instance 和 Savings Plan 能省下可觀的費用，也有足夠的談判籌碼跟代理商拿折扣</li>
+<li><strong>流量規模夠大</strong>：月活躍用戶破百萬、需要精細的流量控制和成本最佳化。這個規模下，AWS 的 Reserved Instance 和 Savings Plan 能省下可觀的費用，也有足夠的談判籌碼跟代理商拿折扣</li>
 <li><strong>團隊有專職的基礎設施工程師</strong>：有人全職負責 Terraform、監控、安全性，AWS 的彈性才能發揮</li>
 <li><strong>深度使用 AWS 專屬服務</strong>：SageMaker、Kinesis、DynamoDB 等沒有直接替代品的服務，且這些服務是你產品的核心</li>
 </ul>
@@ -3632,7 +3632,7 @@ AI 讓產出 code 變得太容易了，所以反過來說，你更需要主動�
 <li>你已經清楚知道你要什麼，你覺得繼續待在這裡無法得到你想要的</li>
 </ul>
 <p>如果離職只是為了逃避環境中的不完美，往往會在下一份工作中陷入相同的循環。任何組織都必定存在資源分配不均、溝通效率低下或摩擦，這些限制反而是成長的好機會。</p>
-<p>如果離職的理由是「環境不好」（例如主管太強勢、流程混亂），但沒有在現有環境中嘗試優化流程，那麼當你在新公司遇到類似性格的人或相似的混亂時，依然會缺乏應對機制。</p>
+<p>如果離職的理由是「環境不好」（例如主管太強勢、流程混亂），但沒有在現有環境中嘗試最佳化流程，那麼當你在新公司遇到類似性格的人或相似的混亂時，依然會缺乏應對機制。</p>
 <p>我在某個專案裡被晉升到 Tech Lead，當時我不熟悉如何推進專案進度。</p>
 <p>我在團隊裡技術相對掌握較多，也有比較多想法。但當時表達方式不佳，對同事的提案挑三揀四，常常讓人覺得我強勢且難以合作。</p>
 <p>後來同事給了我非常重的負面評價，認為我這樣的強勢會嚴重影響團隊士氣，他直接寫我的行為讓他 pissed off。</p>
@@ -4314,7 +4314,7 @@ AI 讓產出 code 變得太容易了，所以反過來說，你更需要主動�
 <li>呈上，有 hover、focus 狀態等等</li>
 </ul>
 <p>字體大小、字型甚至也會受到使用者的設定而有影響。（除非放棄治療把字輸出成圖）</p>
-<p>一旦有了 Pixel Perfect 的思維，那反映在產品中就是為了特定尺寸而優化，而非為了適應多個裝置而優化。</p>
+<p>一旦有了 Pixel Perfect 的思維，那反映在產品中就是為了特定尺寸而最佳化，而非為了適應多個裝置而最佳化。</p>
 <h2 id="一些例子"><a aria-hidden="true" tabindex="-1" href="#一些例子"><span class="icon icon-link"></span></a>一些例子</h2>
 <h3 id="不同螢幕寬度排版"><a aria-hidden="true" tabindex="-1" href="#不同螢幕寬度排版"><span class="icon icon-link"></span></a>不同螢幕寬度排版</h3>
 <p>比如說使用 CSS Grid 的 <code>auto-fill</code> 與 <code>auto-fit</code> 來達到「填滿螢幕（或容器）寬度」的排版可以這樣寫。</p>
@@ -4458,7 +4458,7 @@ AI 讓產出 code 變得太容易了，所以反過來說，你更需要主動�
 <li>公司需要通才，那就要評估更多解決問題的能力
 <ul>
 <li>看看有沒有從頭到尾做專案的經驗：這個經驗不能只是練手用 Side Project，而是真實解決問題</li>
-<li>有沒有對除了開發以外的見解，例如行銷、業務、產品優化、找到 Product Market Fit 等等</li>
+<li>有沒有對除了開發以外的見解，例如行銷、業務、產品最佳化、找到 Product Market Fit 等等</li>
 </ul>
 </li>
 </ul>
@@ -4476,7 +4476,7 @@ AI 讓產出 code 變得太容易了，所以反過來說，你更需要主動�
 </ul>
 <p>雇用很難，尤其在新創公司中，若是不適任的人選，往往會對團隊的士氣造成很大影響。在短短的面試裡要找到有潛力的候選人，不得不說跟抽籤有點像。在這種情況下，只能採取提高精確率的做法。這件事我到最近才意識到。</p>
 <p>前陣子總是想著海納百川，只要履歷還不錯就面試，但面試後才發現與想像中落差極大。在資源有限的情況下，只能從更客觀的數據去做篩選，學歷、任職過的公司、經歷、專案。</p>
-<p>資源有限的情況下，應該要以優化人才精確率為目標做雇用，而非提高 Recall。</p>
+<p>資源有限的情況下，應該要以最佳化人才精確率為目標做雇用，而非提高 Recall。</p>
 <h2 id="面試別人"><a aria-hidden="true" tabindex="-1" href="#面試別人"><span class="icon icon-link"></span></a>面試別人</h2>
 <p>由於面試者沒在公司內部工作過，所以對公司的印象往往來自於面試官與面試流程。因此面試過程不僅僅只是找到合適的對象而已，面試過程的好壞會影響公司的信譽。我在面試時會盡可能把握以下原則：</p>
 <ul>
@@ -4526,7 +4526,7 @@ AI 讓產出 code 變得太容易了，所以反過來說，你更需要主動�
 </ul>
 <p>或是認知到 Edge Functions 與本地開發的差異，導致有些程式碼的行為會完全不同。</p>
 <p>也可以理解為選擇的自由，但對剛起步的公司或開發者來說，花時間在這些地方踩坑，雖說是個有趣的體驗，然而這對需要推出產品的公司來說並不是 CP 值高的選擇。很多框架在很早期的階段就已經解決這些事情了，像是以上提到的機制 Django / Laravel / Ruby On Rails 都具備。</p>
-<p>以我現在的工作內容來說，由於涉及比較多圖片處理的關係，需要針對 CPU-bound 做優化最後選擇 AWS SQS 解決，但剩下的部分都是靠 Django 內建的功能實作的。雖然 Django 對非同步的支援沒那麼好，但他的確省下了很多時間。部署也是一個需要高度關注的事，因為很容易把它複雜化。</p>
+<p>以我現在的工作內容來說，由於涉及比較多圖片處理的關係，需要針對 CPU-bound 做最佳化最後選擇 AWS SQS 解決，但剩下的部分都是靠 Django 內建的功能實作的。雖然 Django 對非同步的支援沒那麼好，但他的確省下了很多時間。部署也是一個需要高度關注的事，因為很容易把它複雜化。</p>
 <hr>
 <p>接下來說說如果要我選擇的話，我會怎麼選。我認為一個無聊的框架應該具備下列幾個要件：</p>
 <ul>

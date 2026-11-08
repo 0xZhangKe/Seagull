@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "2dfa7a773ca65fcf42dbf513",
+      "title": "从编译原理到物理原理剖析程序的编译与执行",
+      "summary": "编译过程 以C语言为例，编译成可执行文件一共要经历： 预处理=>狭义编译=>汇编=>链接 ，最终成为可执行文件。 预处理 输入源代码文件以及其包含的头文件，由预处理器执行展开宏定义、处理，条件编译指令、将包含的头文件直接插入到指令位置，删除注释。 输出纯净的、宏已展开、注释已删除、头文件已包含的中间代码文件，通常为 .i 。 编写一个简单的程序： #include <stdio.h> #define STRING \"Program\" int main() { // 打印一些内容 printf(\"Hello world!\\n\"); printf(\"%s\\n\", STRING); return 0; } 使用gcc的 -E 选项生成中间代码： gcc exam.c -E -o ./exam.i 他生成了非常长的代…",
+      "image": null,
+      "publishedAt": "2025-07-29T07:55:14Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E4%BB%8E%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%88%B0%E7%89%A9%E7%90%86%E5%8E%9F%E7%90%86%E5%89%96%E6%9E%90%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E6%89%A7%E8%A1%8C/",
+      "detailPath": "articles/2dfa7a773ca65fcf42dbf513.json"
+    },
+    {
+      "id": "094e6d2fb53c60568f9f3754",
+      "title": "WiwiStudio 音樂能力測驗",
+      "summary": "const calculateScore = () => {",
+      "image": "https://wiwi.blog/assets/images/musictest-title-f8150ad7acaf3d66cbb02b4e3dc246f2.jpg",
+      "publishedAt": "2025-07-29T06:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/wiwistudio-musictest",
+      "detailPath": "articles/094e6d2fb53c60568f9f3754.json"
+    },
+    {
+      "id": "145bdc38fe38dce345e2fb4a",
+      "title": "挖出了更多舊貼文",
+      "summary": "舊硬碟考古活動繼續進行中。我又找到了一些很零散的備份，救回了六篇舊 blog 貼文：",
+      "image": null,
+      "publishedAt": "2025-07-29T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/more-old-blog-posts",
+      "detailPath": "articles/145bdc38fe38dce345e2fb4a.json"
+    },
+    {
+      "id": "7b00c19cba8116e32c8ffdbc",
+      "title": "入蜀记 day65 去中心化",
+      "summary": "「去中心化。」",
+      "image": null,
+      "publishedAt": "2025-07-28T15:58:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_65/",
+      "detailPath": "articles/7b00c19cba8116e32c8ffdbc.json"
+    },
+    {
+      "id": "009a1ca5b77a5909322b4047",
+      "title": "从少林寺与娃哈哈看建立普遍监察系统的必要性",
+      "summary": "少林寺与娃哈哈最近都出事了。 二者都很劲爆。 释永信是个和尚，和尚不仅做生意，还贪财好色，自古以来便是猎奇流量话题。娃哈哈的事更不用说，已经被网友们脑补出了一百集《甄嬛传》。 将某个公共议题过度娱乐化，是一种相当有效的危机公关策略，能够有效转移公众关注，从而掩盖真正致命的议题。 少林寺与娃哈哈的致命议题是一致的，即：集体财产/国有资产/历史文化资产到哪里去了？这些资产的流失，是什么人，通过什么方式进行的？有哪些人应当对此承担何种性质的责任？ 任何一个组织，都需要监管。 中国人很早就意识到这一点。 早在商周时期，就设有“大宰”“小宰”等官职，行使监察职能。经过春秋战国的不断发展，终于在汉武帝时期形成“刺史”官职，专司对行政文官监察之责。 古早时期的中国互联网，普遍流传这样一种论调，认为西方票选制度是所谓“历史的…",
+      "image": null,
+      "publishedAt": "2025-07-28T07:04:47Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/313.html",
+      "detailPath": "articles/009a1ca5b77a5909322b4047.json"
+    },
+    {
+      "id": "11ab13c74702f0db871ce887",
+      "title": "不要擋住我",
+      "summary": "現代的許多媒體播放程式，都喜歡把控制介面（播放／停止按鈕、進度條、音量控制等等）直接蓋在影片上。不論是 YouTube 網頁版的播放器、還是 macOS 上的 QuickTime Player 都一樣。",
+      "image": "https://wiwi.blog/assets/images/qtx-384b30e8b11c11efd237a033da2e15d4.jpg",
+      "publishedAt": "2025-07-28T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/dont-block-my-video",
+      "detailPath": "articles/11ab13c74702f0db871ce887.json"
+    },
+    {
+      "id": "0da8f716195aed2de483b684",
+      "title": "Domino's App feat. Hatsune Miku",
+      "summary": "https://en.wikipedia.org/wiki/Domino%27s_App_feat._Hatsune_Miku 達美樂（Domino’s Pizza）和初音未來的聯動 App？！我竟然現在才知道這樣搞怪的組合曾經存在過XDDD。 然後那 App 的宣傳廣告XDDDD，這尷尬式搞怪實在是畫龍點睛，難怪會成爲永垂不朽的網路迷因XDD（影片 Niconico 連結： https://www.nicovideo.jp/watch/so20265778 ）。 至於該廣告中出現的人物爲當時日本達美樂的公司主席 Scott Oelkers，而有趣的是他曾經也是臺灣達美樂的營運總監（managing director），那時候他也是不少搞怪臺灣達美樂廣告（例如 這個 ）的鏡頭人物，當然也少不了那經典的「餓爸爸…",
+      "image": null,
+      "publishedAt": "2025-07-28T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/dominos-miku/",
+      "detailPath": "articles/0da8f716195aed2de483b684.json"
+    },
+    {
+      "id": "162e24ab8c421f428a864143",
+      "title": "2025 Week 29~30",
+      "summary": "测试最后更新 周记 | 2025年第29~30周（07-14~07-27）的见闻、体验与思考 迷失姜文 姜文的新电影票房扑街了。 近三部作品票房，2014年的《一步之遥》5.13亿，2018年的《邪不压正》5.83亿，新片《你行！你上！》预测票房不到1亿，对比来看扑的不能再扑了。路人大盘的耐心耗尽，就连最B站/知乎隐喻派解读党也吹不动了。姜文已经走进了死胡同。 作为一个姜文的粉丝，也作为一个看完《一步之遥》和《邪不压正》就决定再也不会为姜文花1分钱的观众，还挺感慨的，有种“眼看他起朱楼，眼看他宴宾客，眼看他楼塌了”的感觉。 对于非解读党来说，很多人的看法和我一样，对姜文早期的作品赞许有加，但到了《一步之遥》和《邪不压正》时期，姜文已经开始自说自话，自我沉溺在隐喻世界，以至于到了有点令人厌烦的地步。 但姜文的导…",
+      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202507271312588.jpg",
+      "publishedAt": "2025-07-28T00:00:00Z",
+      "sourceId": "95e525ddc69ab5ef",
+      "sourceTitle": "金色河流",
+      "link": "https://goldenriver.site/posts/2025-week-29-30/",
+      "detailPath": "articles/162e24ab8c421f428a864143.json"
+    },
+    {
+      "id": "59f5d8445ece500a88fb1a14",
+      "title": "入蜀记 day64 旧人旧时旧事",
+      "summary": "「旧人旧时旧事。」",
+      "image": null,
+      "publishedAt": "2025-07-27T15:58:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_64/",
+      "detailPath": "articles/59f5d8445ece500a88fb1a14.json"
+    },
+    {
+      "id": "97822790fd4b0ca78a83b9bb",
+      "title": "Toots 377 2025 Jul.20 - Jul.26",
+      "summary": "「阉割面与阉割米。」",
+      "image": null,
+      "publishedAt": "2025-07-27T15:31:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250726/",
+      "detailPath": "articles/97822790fd4b0ca78a83b9bb.json"
+    },
+    {
       "id": "18e99c80e60b51eb2fab32dc",
       "title": "Qubes OS Tor 配置（在使用 WebTunnel 时非常有用）",
       "summary": "场景 —— Whonix 并未提供完整的 Tor 解决方案 作为一款以安全为核心的操作系统，Qubes OS 集成了 Whonix 来支持 Tor 连接。然而，由于 lyrebird 仍未被纳入 Debian 官方仓库，Whonix 并不支持 WebTunnel 桥接。 在某些国家，obfs4 桥接无法使用，因为网络审查非常严格。此时，WebTunnel 桥接可能是唯一的选择。因此，我们可以使用最新版本的 Tor，为其他 qube 提供一个具备 Tor 接入能力的 NetVM。 第一步：为 Tor 守护进程准备一个 qube 这一步我们将创建一个用于运行 Tor 守护进程的 qube。创建一个 qube —— 本例中我们使用 fedora-41-xfce 模板创建一个名为 tor-daemon 的 Stand…",
@@ -549,116 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/zero-dollar-again",
       "detailPath": "articles/0f38f72c2873b5f160543d4e.json"
-    },
-    {
-      "id": "b6f97e86487d3594fd2d156e",
-      "title": "每周一山：79 Grind",
-      "summary": "跟丈夫和妹妹一起爬了条Hard Trail",
-      "image": null,
-      "publishedAt": "2025-07-19T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/79grind/",
-      "detailPath": "articles/b6f97e86487d3594fd2d156e.json"
-    },
-    {
-      "id": "1634a0056099fe3900603e7f",
-      "title": "初頭、出頭，傻傻分不清楚",
-      "summary": "常看到以下兩個句子嗎？",
-      "image": null,
-      "publishedAt": "2025-07-19T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/chu-tou",
-      "detailPath": "articles/1634a0056099fe3900603e7f.json"
-    },
-    {
-      "id": "61c7c9d9a572e7fed45a8907",
-      "title": "誰來決定我今天要先綁左邊鞋帶－自由意志還是決定論？",
-      "summary": "一切問題從綁鞋帶開始 不知道有沒有人跟我一樣，當面臨＂左邊＂與＂右邊＂選項的選擇時，我一律都先選＂右邊＂選項，所以我每天上班出門前一律都先綁右腳的鞋帶，這是我一直以來養成的生活習慣，但是，一切困惑來自於我某天突然不自覺地先綁左腳的鞋帶，而不是以往習慣先綁右邊的鞋帶，這讓我此刻感到非常困惑，我們所做的一切看似渺小的選擇到足以改變人生的重大決定，這些行為背後是自由意志驅動？還是一切皆以註定？ 我是我自己思想與行動的主人－自由意志論 我們一般認為自己的選擇是出自於自由意志（Free Will），也就是當前清醒狀態下的這個「我」，完全是出自於＂自己＂做出決定，不需要依賴其他因素，並且主張每個人都擁有完全的自主權，可以在多個選擇中自由決定，而這些選擇皆出自於個人當前意志的影響，這種觀點強調出個體的自主性和獨立性，如此主…",
-      "image": null,
-      "publishedAt": "2025-07-19T00:00:00Z",
-      "sourceId": "68a194be012e90d9",
-      "sourceTitle": "Chang,Shih-Ting",
-      "link": "https://chang-shih-ting.com/Who-Decides-if-I-Tie-My-Left-Shoelace-First-Today-Libertarianism-or-Determinism/",
-      "detailPath": "articles/61c7c9d9a572e7fed45a8907.json"
-    },
-    {
-      "id": "fae8a6d69fd25c24f5a327d2",
-      "title": "摘：《顾客主义》",
-      "summary": "「不合理即合理。」",
-      "image": null,
-      "publishedAt": "2025-07-18T15:59:46Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/Note/Note_BanKouXiaoZe_GuKeZhuYi/",
-      "detailPath": "articles/fae8a6d69fd25c24f5a327d2.json"
-    },
-    {
-      "id": "529028c0ccc6ce59d621e3bb",
-      "title": "摘：《廉价王》",
-      "summary": "「防守大于进攻。」",
-      "image": null,
-      "publishedAt": "2025-07-18T15:56:46Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/Note/Note_AnTianLongFu_LianJiaWang/",
-      "detailPath": "articles/529028c0ccc6ce59d621e3bb.json"
-    },
-    {
-      "id": "00ac9493a4e9066ae1436d09",
-      "title": "入蜀记 day55 散漫恍惚",
-      "summary": "「散漫恍惚。」",
-      "image": null,
-      "publishedAt": "2025-07-18T00:08:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_55/",
-      "detailPath": "articles/00ac9493a4e9066ae1436d09.json"
-    },
-    {
-      "id": "69161d04bbc77d9d7567179d",
-      "title": "AI YouTuber 來了！",
-      "summary": "Google 在今年夏天要將強大的影音生成工具 Veo 3 導入 YouTube Shorts。根據科技媒體 Inside 的報導：",
-      "image": null,
-      "publishedAt": "2025-07-18T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/veo-3",
-      "detailPath": "articles/69161d04bbc77d9d7567179d.json"
-    },
-    {
-      "id": "278382d0eb8e2274d85bbce0",
-      "title": "Vibe Coding 一把 Dia 的背景动画",
-      "summary": "前几天在 X 上看到一条推文在说好奇 Dia 首页的背景动画是怎么实现的，这确实是一个优雅的动画，看起来也不难实现，我就兴起花了一点时间简单 Vibe Coding 了一把。",
-      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/dia-footer.png",
-      "publishedAt": "2025-07-18T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/vibe-coding-for-dia-background-animation",
-      "detailPath": "articles/278382d0eb8e2274d85bbce0.json"
-    },
-    {
-      "id": "aecd877ce3fcce7804310b3c",
-      "title": "经典还能站得住脚吗？",
-      "summary": "在一切质疑中，我们仍可以相信感受。",
-      "image": null,
-      "publishedAt": "2025-07-18T00:00:00Z",
-      "sourceId": "6db99b063a5d43ac",
-      "sourceTitle": "伏枥之间",
-      "link": "https://leehenry.top/posts/mindlight_maze/mm-vol01/",
-      "detailPath": "articles/aecd877ce3fcce7804310b3c.json"
-    },
-    {
-      "id": "05275fbe76da394b553c003e",
-      "title": "入蜀记 day54 滑石粉",
-      "summary": "「滑石粉。」",
-      "image": null,
-      "publishedAt": "2025-07-17T00:34:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_54/",
-      "detailPath": "articles/05275fbe76da394b553c003e.json"
     }
   ]
 }

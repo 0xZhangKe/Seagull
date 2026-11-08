@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "ab93f389ec963d654d4debf3",
+      "title": "Java中Collection和Collections的区别",
+      "summary": "前几天去一个公司参加面试遇到这个问题，Java中Collection和Collections的区别，当时不会，回来从网上找到，现在记录一下。 1、java.util.Collection 是一个 集合接口 。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。 Collection ├List │├LinkedList │├ArrayList │└Vector │ └Stack└Set 2、java.util.Collections 是一个包装类。它包含有各种有关集合操作的 静态多态方法 。此类 不能实例化 ，就像一个 工具类 ，服务于Java的Collection框架。 impo…",
+      "image": null,
+      "publishedAt": "2013-07-23T11:12:46Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-23-java-collection-collections/?utm_source=rss",
+      "detailPath": "articles/ab93f389ec963d654d4debf3.json"
+    },
+    {
+      "id": "c9da39760bd04b541dd1c3c5",
+      "title": "Linux下SVN的使用",
+      "summary": "今天在新浪sae上搭建了个人博客，新浪sae采用svn的方式进行代码管理，之前在windows下面做svn操作都是采用TortoiseSVN，今天正好开机到了linux下面，那么好吧，就用svn传我的wordpress到sae中去。 首先，安装svn。 sudo apt-get install subversion ubuntu下面安装svn，就是这么简单。 可以通过man svn查看使用手册。 下面介绍一些常用命令： 1.检出文件（checkout）。 使用命令： svn co http://{svn repository url} /destination 然后系统会用当前的用户名登录，提示输入密码，如果第一次密码输入错误，会提示你输入用户名；输入正确后，就可以检出文件了。 2、Ubuntu SVN提交文…",
+      "image": null,
+      "publishedAt": "2013-07-12T13:30:52Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2013-07-12-use-svn-in-linux/?utm_source=rss",
+      "detailPath": "articles/c9da39760bd04b541dd1c3c5.json"
+    },
+    {
+      "id": "834e64e4a831b6449530dc81",
+      "title": "音樂課本",
+      "summary": "我被寫到康軒版的國三音樂課本裡了，真是感謝書商這麼看得起我，有譜例、還幫我加 Moderato 耶！",
+      "image": "https://wiwi.blog/assets/images/google-da52053e5a3aaad9d642b826eb16b80b.jpg",
+      "publishedAt": "2013-06-11T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/music-textbook",
+      "detailPath": "articles/834e64e4a831b6449530dc81.json"
+    },
+    {
+      "id": "56c032bccd72a438ec72fda8",
+      "title": "對的手",
+      "summary": "最近學到的事情：",
+      "image": null,
+      "publishedAt": "2013-04-20T12:10:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/right-hand",
+      "detailPath": "articles/56c032bccd72a438ec72fda8.json"
+    },
+    {
+      "id": "98ba10a62ca03b2e249d7f1d",
+      "title": "小葉，真有你的！",
+      "summary": "今天有個關於音樂的新聞：台語歌手蕭玉芬的新歌《紙風箏》，被日本網友發現它的前奏和日本團體 B'z 的《もう一度キスしたかった》（想要再一次親吻）完全相同。",
+      "image": "https://wiwi.blog/assets/images/ye-64d2b717260462cea44c19ab6db92f86.png",
+      "publishedAt": "2013-04-17T15:52:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/small-yeh",
+      "detailPath": "articles/98ba10a62ca03b2e249d7f1d.json"
+    },
+    {
+      "id": "2b7a2e7fe151dc3cbc008205",
+      "title": "第四堂木吉他課",
+      "summary": "上吉他課已經第四堂了 老師今天一進來就說 6/30 有成果發表會要參加 所以現在才上三堂課(第四堂選歌) 而且剩兩個月 要死人了.",
+      "image": null,
+      "publishedAt": "2013-04-08T17:01:23Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/guitar-learning/",
+      "detailPath": "articles/2b7a2e7fe151dc3cbc008205.json"
+    },
+    {
+      "id": "85155053f85729babcd40578",
+      "title": "时代在变",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2013-03-26T22:09:36Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/nonsense/the-times-are-changing/",
+      "detailPath": "articles/85155053f85729babcd40578.json"
+    },
+    {
+      "id": "1d77f5534ecf12276dbc35d8",
+      "title": "大杯皺",
+      "summary": "",
+      "image": "https://wiwi.blog/assets/images/bigcup2-c0ed54b49ed2c4e0bebdbce0c24958e7.jpg",
+      "publishedAt": "2013-02-22T20:13:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/da-bei-zhou",
+      "detailPath": "articles/1d77f5534ecf12276dbc35d8.json"
+    },
+    {
+      "id": "ae380cd3845609a942163196",
+      "title": "JS ONE 是什麼？",
+      "summary": "在板橋隨處都可以見到「JS ONE」的貼紙，甚至連店家內的廁所面紙盒都有。",
+      "image": "https://wiwi.blog/assets/images/jsone-73df2943c83eea2056da19d8c7700312.jpg",
+      "publishedAt": "2013-02-21T06:47:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/js-one",
+      "detailPath": "articles/ae380cd3845609a942163196.json"
+    },
+    {
+      "id": "32ca7eca5d43cc30174dfc13",
+      "title": "懶得出門買晚餐？你可以舔鋼琴！",
+      "summary": "我的一個鋼琴學生跟我說，她在音樂教室教了一個非常難搞的鋼琴學生，並且給我看了她們上鋼琴課時拍的手機影片。",
+      "image": "https://wiwi.blog/assets/images/smudgedIpad-48a2927690163a0a829b157a626c18a0.jpg",
+      "publishedAt": "2013-02-17T14:13:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/lick-the-piano",
+      "detailPath": "articles/32ca7eca5d43cc30174dfc13.json"
+    },
+    {
       "id": "7edae2cca812453e0a34baee",
       "title": "Ulala",
       "summary": "Ulala! 2026 年 1 月 6 日備註： 這張照片是在外公外婆家的庭院拍攝的，當時正值過年期間，我們一家人到他們家拜年。 會用「Ulala」這個詞是因爲當時馬來西亞衛星電視台 Astro 以「全民賀歲 Ulala」作爲蛇年的新春主題標語，而「Ulala」取自 ular 一詞，在馬來語中是「蛇」的意思。",
@@ -549,116 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/archives/douban/Review_Movies/Review_NankingNanking_20090422/",
       "detailPath": "articles/b6900366906a3a40351ccb35.json"
-    },
-    {
-      "id": "9b765bda47ee319993da938b",
-      "title": "老照片（相簿）",
-      "summary": "前幾天被我的鋼琴學生說我的 blog 最近的文章都在混、越來越難看（妳說話還真直接），讓我心裡感到非常的受傷（笑）。所以經過超過一季沒有長篇文章的乾旱期，我今天終於要來一篇了。不過你知道，Blog 這種東西本來就是要等到有感覺的時候才寫的嘛。",
-      "image": "https://wiwi.blog/assets/images/age1-5-238913f0f3c2189c776485749661a013.jpg",
-      "publishedAt": "2009-04-04T19:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/old-pics",
-      "detailPath": "articles/9b765bda47ee319993da938b.json"
-    },
-    {
-      "id": "e0727d19afcb842a8e482981",
-      "title": "Scrabble Word of the Day",
-      "summary": "大家玩過 Scrabble 嗎？如果你不知道 Scrabble 是什麼，Scrabble 是一個很有名而且歷史悠久的拼字遊戲。",
-      "image": "https://wiwi.blog/assets/images/dildo-f76d8d10eab225524375dfae04a24285.jpg",
-      "publishedAt": "2009-02-25T02:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/scrabble-word-of-the-day",
-      "detailPath": "articles/e0727d19afcb842a8e482981.json"
-    },
-    {
-      "id": "b8b50fc6893905443932a9c3",
-      "title": "选择（《地球公民》评论）",
-      "summary": "「《地球公民》评论」",
-      "image": null,
-      "publishedAt": "2009-02-10T19:21:31Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/archives/douban/Review_Movies/Review_Earthlings_20090211/",
-      "detailPath": "articles/b8b50fc6893905443932a9c3.json"
-    },
-    {
-      "id": "ef9d07fd0ee8cc809a39d725",
-      "title": "2008 观影",
-      "summary": "「2008 年观影短评归档。」",
-      "image": null,
-      "publishedAt": "2009-01-11T15:59:00Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2008/",
-      "detailPath": "articles/ef9d07fd0ee8cc809a39d725.json"
-    },
-    {
-      "id": "15dbf67f2b4f934ef7a661e7",
-      "title": "2008 阅读",
-      "summary": "「2008 年阅读短评归档。」",
-      "image": null,
-      "publishedAt": "2009-01-03T03:08:00Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyBooks/YearlyBooks_2008/",
-      "detailPath": "articles/15dbf67f2b4f934ef7a661e7.json"
-    },
-    {
-      "id": "191634df2ec167641073804f",
-      "title": "08最爱的专辑们",
-      "summary": "「2008 专辑选」",
-      "image": null,
-      "publishedAt": "2009-01-03T00:33:32Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyBest/YearlyBest_2008_Albums/",
-      "detailPath": "articles/191634df2ec167641073804f.json"
-    },
-    {
-      "id": "30d659c3960ebe1249bbbd63",
-      "title": "2008 听音",
-      "summary": "「2008 年听音短评备份。」",
-      "image": null,
-      "publishedAt": "2008-12-30T15:59:59Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyAlbums/YearlyAlbums_2008/",
-      "detailPath": "articles/30d659c3960ebe1249bbbd63.json"
-    },
-    {
-      "id": "0672bbfe44426dbcc724d2ac",
-      "title": "好溫馨聖誕火鍋趴（相簿）",
-      "summary": "猜猜看，對於像我這樣的單身男子來說，在寒冷的平安夜，可以發生的最好的事情是什麼？有個女生陪著一起吃火鍋？",
-      "image": "https://wiwi.blog/assets/images/xmas-people02-f507110056ddd18e1cf1459d225f371c.jpg",
-      "publishedAt": "2008-12-24T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/xmas-hotpot",
-      "detailPath": "articles/0672bbfe44426dbcc724d2ac.json"
-    },
-    {
-      "id": "3410fe6aaa249893a11c640e",
-      "title": "59 公斤！",
-      "summary": "好難想像半年前我是 69 公斤的耶，現在即使用跑的過馬路或上樓梯都不會喘了，哈哈很棒！",
-      "image": "https://wiwi.blog/assets/images/59kg-small-9b43e7b1c0497b6ff813ddde34ba0b7a.jpg",
-      "publishedAt": "2008-12-11T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/59-kg",
-      "detailPath": "articles/3410fe6aaa249893a11c640e.json"
-    },
-    {
-      "id": "7470de99878fa055806d4799",
-      "title": "可樂要怎麼喝？",
-      "summary": "下面這一杯不是咖啡，它是可口可樂 Zero，它要加奶球才好喝！",
-      "image": "https://wiwi.blog/assets/images/cokeZero-1a5b15cb9d84b8d791623f58f4dbe7cc.jpg",
-      "publishedAt": "2008-12-09T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/how-to-drink-coke-zero",
-      "detailPath": "articles/7470de99878fa055806d4799.json"
     }
   ]
 }

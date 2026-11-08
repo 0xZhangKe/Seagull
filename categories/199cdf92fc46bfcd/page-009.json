@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "c54ffb50a483d1a925ed0852",
+      "title": "Hugo 的頁面 Type",
+      "summary": "新版的 Hugo 對某些定義變得很嚴格，只要條件不滿足，就不會渲染、生成到 Public 中。 這次更新，除了 code 語法不定義會讓我主題無法渲染 ，而 歷史上的今天 因爲沒定義頁面 type，也造成無法正常渲染。 原始檔案與路徑 # 頁面位置在： content/on-this-day.md title: \"歷史上的今天\" layout: \"on-this-day\" 排版位置在： themes/classic/layouts/page/on-this-day.html 這次問題就就在於，以前的 Hugo 會依序在好幾個地方尋找指定的 layout: \"on-this-day\" ，而且 Eddie 很久之前就是有研究過官方 docs，結論是好幾個地方可以放，所以 Eddie 沒去記憶，就隨便丟，讓 hug…",
+      "image": null,
+      "publishedAt": "2026-01-03T18:26:50Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/hugo-type/",
+      "detailPath": "articles/c54ffb50a483d1a925ed0852.json"
+    },
+    {
+      "id": "8da6464d37e8c7098493fbff",
+      "title": "Hugo 更新災難 SOS",
+      "summary": "前言 # 架設官網 時，一開始用了一個很複雜的主題，必須要最新的 hugo 版本，裝完之後發現太麻煩了，還要用到 docker，就換了一個簡單一點的的主題。 回頭到部落格發文 # 夭壽，突然發現過往文章 css 格式跑掉了： 查看 git 後發現，原始檔案根本都沒動，而 public 有幾百個檔案有變動。 查看後發現原始文章的 .md 若有用兩組「```」包起來，文字就會變得無法閱讀。 最後聯想到應該是 hugo 版本的問題。 弄了幾小時後… # 一直以爲是渲染失敗的問題，查了很久，最後發現如果有對「```」定義語言 1 ，就能正常渲染成功。 而 Eddie 早期的文章都沒定義，於是就出事了！ 把文章的 ``` 全部加上 text # 也試過在 config 調整設定，還是無法，最後決定把所有文章都加上 te…",
+      "image": "https://eddielv.com/musings/hugo-update-sos/weird-format.png",
+      "publishedAt": "2026-01-03T17:33:51Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/hugo-update-sos/",
+      "detailPath": "articles/8da6464d37e8c7098493fbff.json"
+    },
+    {
+      "id": "127bc7114cb2b1decde93b12",
+      "title": "gtisland.studio 網域到期，順便更新官網",
+      "summary": "自從搶到 gtisland.com 後，gtisland.studio 就一直設定爲自動導向到 .com，沒有其他作用了，而這幾天終於到期了，終於跟 studio 說拜拜，也順勢把官網的 wordpress 刷掉，改回 hugo。 那時候換 worpress 最主要是打文章時，排版方便很多，但會那樣覺得也是因爲還不是很會用 Hugo。 以爲自己很會用 Hugo 了，結果換了其他主題後才發現，是 Eddie’s Blog 用的主題邏輯太簡單了，所以重新架設還是忙了很久。 這次改版最大亮點是：網站遊戲化。 把每一篇教學包裝成類似 RPG 遊戲，要對話、接任務、破關。 Eddie 的網頁技術能力實在是很普通，已經竭盡所能了，如果有讀者有空，歡迎到 那邊 看看，給我一些建議。",
+      "image": null,
+      "publishedAt": "2026-01-03T14:55:15Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/gtisland-studio-end/",
+      "detailPath": "articles/127bc7114cb2b1decde93b12.json"
+    },
+    {
+      "id": "a0d4b2ffb1ce121203dbdafa",
+      "title": "怎麼選擇用什麼工具來做哪件事情？（無論是 Blog、DAW 還是任何物理工具）",
+      "summary": "最近一直在思考，如果有人問我 Blog 該怎麼架設，他如果完全不懂 Terminal，該推薦他 hugo 嗎？還是用 Wordpress 來架設，或有其他方式？ 想了許久，對一般人而言較簡單的方式，或許還是 Wordpress 吧？ 最終，Eddie 得到的結論是： 我用什麼，就推薦什麼；也建議如果大家在踏入完全不懂的領域時，選擇你身邊人使用的工具。 原因很簡單，教的人不用再多研究一個東西，學的人也絕對問得到答案，雙方皆大歡喜。 而這個觀念，Eddie 忘記是哪個編曲老師分享的，他說：「你身邊的人用什麼 DAW，你就用什麼，這樣你才有人能問，甚至你可以直接丟整個專案檔案請人幫你處理問題。」 以下是 Eddie 的各種入坑選擇（跟風）例子： 「我老師用 Logic Pro，我也用這個！」 「同業都用 Wing…",
+      "image": null,
+      "publishedAt": "2026-01-02T16:31:38Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/which-tools/",
+      "detailPath": "articles/a0d4b2ffb1ce121203dbdafa.json"
+    },
+    {
+      "id": "fa7668eb0cd7ba9fe404ffff",
+      "title": "隨機文章功能已上線！",
+      "summary": "到首頁點擊「 🎲 隨機文章 」就可以隨機選一篇文章來閱讀！ 這個功能跟「歷史上的今天」一樣，是爲了在文章數越來越多時，可以讓第一次到訪的讀者有一些方向可以看，而不會被文章列表嚇到。 如果你也想做一個 # 新增檔案 content/random.md --- title: \"隨機文章跳轉中...\" layout: \"random\" --- layouts/_default/random.html {{ partial \"header.html\" . }} < div class = \"article-meta\" > < h1 >< span class = \"title\" >{{ .Title }}</ span ></ h1 > </ div > < main > < div style = \"text-al…",
+      "image": null,
+      "publishedAt": "2026-01-02T16:19:00Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/random-article/",
+      "detailPath": "articles/fa7668eb0cd7ba9fe404ffff.json"
+    },
+    {
       "id": "440179f1c6003dce42968225",
       "title": "Apple 討厭開源 opus 格式",
       "summary": "《最佳聲音有損格式》 中提到，檔案壓縮效率 opus > AAC > mp3。 其中 AAC 是 Apple 制定的，這個格式在 Apple 裝置下是暢通無阻。 但如果下載了 opus 會發現 Apple 內建的播放器無法打開（內建播放器只支援能 硬體解碼 的格式），無法丟進 Logic Pro 來做音樂，opus 簡直像是外星生物。 而 Youtube 在近期的新影片中，聲音編碼同時配有 AAC 與 opus，而 Spotify 用 opus，只有 Apple Music 仍舊使用 AAC。 直接指定原始格式要 AAC or opus # 編碼 指令 原生 AAC → .m4a yt-dlp -f 140 <URL> 原生 Opus → .opus/.webM yt-dlp -f 251 <URL> You…",
@@ -604,61 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/blog-habbit/",
       "detailPath": "articles/abdc5773798121b52871c418.json"
-    },
-    {
-      "id": "8ff8834d42c31e4eab82c51f",
-      "title": "以國家「北七」爲己任？",
-      "summary": "Eddie 在某場活動中看到這行字，怎麼看都像「以國家北七爲己任」，你們可以幫忙看看嗎？",
-      "image": "https://eddielv.com/musings/beiqi/beiqi.jpg",
-      "publishedAt": "2025-12-02T05:43:19Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/beiqi/",
-      "detailPath": "articles/8ff8834d42c31e4eab82c51f.json"
-    },
-    {
-      "id": "fbeeabadcd7518b5fc56a778",
-      "title": "這個會拍，找這個",
-      "summary": "這個會拍 # 某次婚禮結束播放散場曲時，Eddie 先收舞臺器材，臺上的樂手們要拍照，突然指著 Eddie 說「這個會拍，他拍的都可以一次過！」 其實 Eddie 幫這些樂手拍，是覺得自己團體照拍得滿爛的，主要是宴會廳現場光源太複雜，表演者身上又會穿亮片，總之測光會很複雜，以哪個位置當作曝光基礎也不好抓。 這動作專業！ # 另一場婚禮，Eddie 蹲下抓構圖，就被說專業了！很會給情緒價值的一群仙女們XD 番外篇 # 「3-2-1」Eddie 用聲帶環甲肌拉伸很明顯的方式大喊倒數。 當天的主唱同時也是聲音教練，聽到 Eddie 喊聲後說：「哇你聲音很···誠懇耶！」！ 其實 Eddie 猜應該他是想要說「很拉」，Eddie 學會判斷環甲肌是否主導發聲動作後，常常就會在心理想：「這個人（環甲肌）很拉、那個人（環甲…",
-      "image": null,
-      "publishedAt": "2025-12-01T16:11:09Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/this-guy-can-take-photo/",
-      "detailPath": "articles/fbeeabadcd7518b5fc56a778.json"
-    },
-    {
-      "id": "c68e778159d91d6d2fa935b3",
-      "title": "乾眼症怎麼舒服的點人工淚液",
-      "summary": "正常人類 # 每眨眼一次，眼皮就會在眼球表面形成一層淚膜，這層淚膜會隨著時間漸漸破裂，破裂後就會覺得眼睛乾澀，自然而然就會眨眼。 專注降低眨眼頻率 # 看螢幕、讀書等等專注用眼時，會自然而然降低眨眼次數，讓淚膜破裂後，淚膜沒有即時重新被補上，久了就會導致角膜開始受損，再依照一連串的機轉，最終導致淚液分泌量下降，最後形成乾眼症。 乾眼症定義 # 淚水量 # 直接測試水量，拿試紙掛在眼角，看一分鐘刻度到多少。 淚膜破裂時間 # 眨眼一次後， 淚膜多久會破掉。 上面兩個其實就是乾眼症最常見的兩種情況，缺水與缺油，測看看是水本身不夠，還是淚膜最外層的油脂不夠導致破裂速度太快。 非乾眼症，但是忘了眨眼導致的乾澀 # 如果很久不眨眼，眼睛在非常乾的情況下，突然一次眨眼，淚膜重新補上去之後會瞬間覺得眼睛非常酸，就是因爲角膜…",
-      "image": null,
-      "publishedAt": "2025-12-01T15:40:27Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/dry-eye/",
-      "detailPath": "articles/c68e778159d91d6d2fa935b3.json"
-    },
-    {
-      "id": "3c44b7f32cf53fa7b7d8abbd",
-      "title": "2025 11 月簽到",
-      "summary": "11 月份有 2 位讀者 簽到 ！ 歡迎 Hong-Sheng Huang ！ 另一則留言則是來自 Wiwi 老師對《 沒有（網路）地方能輸出情緒 》的回應。 原文是說，抱怨文放到 Blog 可能會把不好的情緒都給讀者們，也可能讓被抱怨的對象看到，所以最後選擇沒有上傳文章。 Eddie 原先想到的另一個做法是「延遲發文」，一來時間會讓情緒先被緩住，二來過一段時間再發，被抱怨者也無法確定就是在說他！ 諷刺文跟寓言故事確實是很好的做法，以往沒有用過那樣的寫作風格，Eddie 可以嘗試看看！ 謝謝兩位留言！",
-      "image": null,
-      "publishedAt": "2025-11-29T16:58:35Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/guest-2025-11/",
-      "detailPath": "articles/3c44b7f32cf53fa7b7d8abbd.json"
-    },
-    {
-      "id": "bdc297c6c32d83667aef4cf9",
-      "title": "觀衆直接撥開樂器，跟猴子搶人類食物是一樣的行爲。",
-      "summary": "中秋檔期遇到的樂手洛莉，當時被質疑 假拉小提琴 ，雖然私下關心是說有面對酸民的心理準備，但其實看到後來的發文，發現老師心理已然千瘡百孔。 而上週長笛姐姐則是在現場被觀衆直接動手撥開樂器，因爲想知道是不是假吹。 Lily 也是一連發了好幾篇影片，看得出來非常在意這件事情。 在不知道事實的前提下，就亂噴樂手是假演奏，就跟 「不知道事實就說人外遇、犯罪、說謊」一樣，是在侮辱人格。 Eddie 作爲音響技師，常常要幫樂手們上樂器麥克風，都不敢（也不能）隨意碰樂手的樂器，會跟樂手確認要自己別麥，還是 Eddie 來別麥。 如果是 Eddie 要別麥，也會在做每個動作前，跟樂手說現在要做什麼動作，讓樂手放心。 「觀衆直接撥開樂器，跟猴子搶人類食物是一樣的行爲。」",
-      "image": null,
-      "publishedAt": "2025-11-29T16:41:30Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/fake-play-lily/",
-      "detailPath": "articles/bdc297c6c32d83667aef4cf9.json"
     }
   ]
 }

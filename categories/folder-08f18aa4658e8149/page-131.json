@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "91b8703dd9f966531f409493",
+      "title": "如何把生活中零碎的灵感或流水账，建立联系，让他们有价值？",
+      "summary": "前置条件 记录生活(个人、家庭)，目的是用来回忆。 对于自己感兴趣的东西，日常需要积累，定期回顾，输出成文，写的过程就是思考的过程。 阅读，读书要笔记，笔记最好可以很多本书关联，对一件事用狐狸的思维，而不是刺猬的思维。 具体项目，需要积累很多碎片的东西，最后完成一个项目，即可归档。 具体做法 1. 记录生活(个人、家庭)，目的是用来回忆。 由上而下，宏观规划。我有一间自己的虚拟房子，里面放了很多零零碎碎的东西，但是基本原则是遵循一个房子的建造原则，从上倒下做的规划： 这一部分的记录，就是单纯的为了家庭回忆，其实有很多分类方式，比如照片、视频、地点、目的等等。我的基本原则如下： 随手的东西，就随手记录，重要的是每天有所记录，不需要细化，只留下钩子 日常类，以月为单位，简单记录，再根据分类细化 照片、视频等媒体资…",
+      "image": "https://static.elizen.me//img/LkbpUtQg78.png",
+      "publishedAt": "2022-03-23T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2022/03/how-to-manage-information/",
+      "detailPath": "articles/91b8703dd9f966531f409493.json"
+    },
+    {
+      "id": "c033369f849cfbe2ba97f738",
+      "title": "Toots 203 2022 Mar.13 - Mar.19",
+      "summary": "「熟练地贴上了膏药」",
+      "image": null,
+      "publishedAt": "2022-03-22T10:01:26Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2022/MastodonTootsArchives_20220319/",
+      "detailPath": "articles/c033369f849cfbe2ba97f738.json"
+    },
+    {
+      "id": "688a3dc9218be3435e56209a",
+      "title": "Linux 下 Node Source 安装的 npm 权限问题",
+      "summary": "前言 近期安装了 Linux 系统作为主力机器的第二系统，双启动引导。 系统是 Pop!OS 20.04 LTS ，基于 Ubuntu 20.04 由于前端开发及部署需求，需要安装 node.js，于是使用 node source 提供的 node 发行版。 由于安装完成后，npm 存储包的目录为 /usr ，使用时必须加 sudo ，为了避免这种情况和权限安全问题，需要将 npm 的包存储到用户目录下，并且强烈不建议使用 sudo 来全局安装包到 /usr 目录下 方法 检查当前 npm 安装的包路径前缀 1 npm config get prefix 如果返回 /usr 则执行以下命令 1 2 3 mkdir ~/.npm-global export NPM_CONFIG_PREFIX = ~/.npm-…",
+      "image": null,
+      "publishedAt": "2022-03-20T17:16:02Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/npm-prefix/",
+      "detailPath": "articles/688a3dc9218be3435e56209a.json"
+    },
+    {
+      "id": "5f34ad74b791516d6e6030d1",
+      "title": "Kubernetes、集群联邦和资源分发",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2022-03-19T00:00:00Z",
+      "sourceId": "4d49716051922902",
+      "sourceTitle": "面向信仰编程 - Articles",
+      "link": "https://draven.co//kuberentes-federation",
+      "detailPath": "articles/5f34ad74b791516d6e6030d1.json"
+    },
+    {
+      "id": "aae03b6048973b569e8daa55",
+      "title": "百年未有之大变局，我试着聊点政治",
+      "summary": "自从出国之后跟国内亲人们的交流就少得多了，以前会经常和我爸讨论一些社会经验和时局的话题，现在他们更多的是关心我的新生活是否顺利。说实话，在加拿大的生活比在中国要简单很多，像这样的发达资本主义国家已经发展几百年了，方方面面都已经相当成熟，也有清晰的界限和规则，任何人都可以在一定的前提下享受明确的、不受限的自由。首先我想重申自己的一个观点就是任何人都应该关心政治，此前我提过很多次了。都知道“经济基础决定上层建筑”，也知道任何事物都不是孤立存在的，所以一定有东西能影响甚至决定经济，那就是政治。大部分情况下，经济规律只能在一个平稳的政治环境中才能体现出来，如果政治环境稍有动荡，反映到经济上就是翻天覆地。这次俄乌战争爆发之后，在美国的很多中概股跌得很严重，然后就会在社交媒体上看到很多不明真相的人都在讨论要不要抄底——如…",
+      "image": null,
+      "publishedAt": "2022-03-18T18:03:00Z",
+      "sourceId": "87c2e8631d9fb702",
+      "sourceTitle": "Tom Brew",
+      "link": "https://www.ie9.org/2022/03/my-political-opinions.html",
+      "detailPath": "articles/aae03b6048973b569e8daa55.json"
+    },
+    {
+      "id": "8f3a846955621ccaea6fe3d5",
+      "title": "大雪能让世界安静",
+      "summary": "三月的雪",
+      "image": "https://vip1.loli.io/2022/04/15/VpAJvCFMcbyWLaP.jpg#vwid=1368&vhei=1823",
+      "publishedAt": "2022-03-18T15:29:00Z",
+      "sourceId": "8b6d88d6a8f432b5",
+      "sourceTitle": "l3on.site",
+      "link": "https://l3on.site/article/snow-2022/",
+      "detailPath": "articles/8f3a846955621ccaea6fe3d5.json"
+    },
+    {
+      "id": "d0337ef20eef681ca15c05be",
+      "title": "使用 Next.js + Hexo 重构我的博客",
+      "summary": "在咕咕了一整年、只发布了三篇文章（其中两篇还是译文）之后，我决定还是稍微花一点时间好好折腾一下自己的博客，以 React 作为抓手，通过 Next.js 和 Hexo 深度共建，对标 Gatsby，打通静态 HTML 与用户交互之间的垂直领域屏障，实现多维矩阵闭环，为个人博客赋能（咳咳咳），然后水出 2022 年第一篇文章（逃） 技术选型：Gatsby vs Next.js 我使用 H...",
+      "image": "https://img.skk.moe/blog/t2022/use-nextjs-and-hexo-to-rebuild-my-blog.png",
+      "publishedAt": "2022-03-18T12:48:00Z",
+      "sourceId": "5a840ced5a57e7ff",
+      "sourceTitle": "Sukka's Blog",
+      "link": "https://blog.skk.moe/post/use-nextjs-and-hexo-to-rebuild-my-blog/",
+      "detailPath": "articles/d0337ef20eef681ca15c05be.json"
+    },
+    {
+      "id": "ea543f05de87225b9cc616fd",
+      "title": "如何减重30斤",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2022-03-16T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/%E5%A6%82%E4%BD%95%E5%87%8F%E9%87%8D30%E6%96%A4/",
+      "detailPath": "articles/ea543f05de87225b9cc616fd.json"
+    },
+    {
+      "id": "eb0c4125b413ed7daee15131",
+      "title": "英文语法简明体系",
+      "summary": "这是一篇英语兔视频学习笔记，视频以动词为核心，构建了一个简单清晰的英文语法体系。边看边做笔记，只觉得获益匪浅，不敢私藏，所以整理一下视频笔记，分享给大家。强烈推荐大家看看原片。",
+      "image": "https://vip1.loli.io/2022/04/15/tNpl3bKC45MsW2i.png#vwid=540&vhei=291",
+      "publishedAt": "2022-03-15T10:38:00Z",
+      "sourceId": "8b6d88d6a8f432b5",
+      "sourceTitle": "l3on.site",
+      "link": "https://l3on.site/article/grammar/",
+      "detailPath": "articles/eb0c4125b413ed7daee15131.json"
+    },
+    {
+      "id": "c801dfe28d06f851b7b85866",
+      "title": "Toots 201 2022 Mar.6 - Mar.12",
+      "summary": "「“原地烧烤”」",
+      "image": null,
+      "publishedAt": "2022-03-13T06:12:26Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2022/MastodonTootsArchives_20220312/",
+      "detailPath": "articles/c801dfe28d06f851b7b85866.json"
+    },
+    {
       "id": "ddf0bd281d42552c2ad67845",
       "title": "Systrace 线程 CPU 运行状态分析技巧 - Sleep 和 Uninterruptible Sleep 篇",
       "summary": "本文是 Systrace 线程 CPU 运行状态分析技巧系列的第三篇，本文主要讲了使用 Systrace 分析线程状态时遇到的 Sleep 与 Uninterruptible Sleep 状态的原因排查方法与优化方法，它们常见于正常等待，也可能拖慢关键路径，需要结合等待条件和依赖关系判断。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Systrace 这个图形化的角度，你可以理解的更深入一些。Systrace 基础和实战系列大家可以在 Systrace 基础知识 - Systrace 预备知识 或者…",
@@ -549,116 +659,6 @@
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/quaternion-and-spatial-rotation",
       "detailPath": "articles/09708de8aeff45c0e064f871.json"
-    },
-    {
-      "id": "790453e7228acd79b318d010",
-      "title": "了解一下我的精神故乡巴西",
-      "summary": "Jayme认为Princeton的经历对自己帮助巨大，所以希望Elisa也能出国求学，但Princeton当时还不收女生（我有一句骂人的话不知当讲不当讲）。看这本书时我反复想到John Nash，他的妻子也是MIT物理系早期为数不多的女生，但因为要照顾John Nash完全无法投入自己的研究事业。 Elisa也是巴西物理研究的先驱，是Brazilian Center for Physical Research (CBPF)的founder之一，但她的求学和研究经历里，多次仅仅因为她是女性就失去机会，而Jayme则完全没有这样的挫折。她在2018年去世，至此CBPF所有的奠基者都不在人世了。",
-      "image": null,
-      "publishedAt": "2022-01-16T01:58:13Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/reading/several-books-about-brazil/",
-      "detailPath": "articles/790453e7228acd79b318d010.json"
-    },
-    {
-      "id": "59c02f452d10164ee29ed5eb",
-      "title": "陽春白雪：The Mountain Eater",
-      "summary": "［音Game］ 哇哈哈哈我的分數（暫時）高過 天堂 EGHD 的啦哈哈哈哈！（沒 #陽春白雪 （之前的） （我知道 小鳥 和 Lumixanth 早就拿到真•陽春白雪了，但我們先不講這個） ←喂 2022 年 1 月 15 日補充： 陽春白雪啦哈哈哈！！！",
-      "image": "https://microblog.ttheng.com/blog/423vtZOto70w13CqljyhoH.jpg",
-      "publishedAt": "2022-01-14T11:36:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/lyrica-mountain-eater/",
-      "detailPath": "articles/59c02f452d10164ee29ed5eb.json"
-    },
-    {
-      "id": "e9af7b488dfc04a7ad0f97a3",
-      "title": "终末之旅开发日志#7",
-      "summary": "这段时间由于比较忙，所以没怎么写日志了，不过项目一直在继续进行。由于有另一位最好的朋友的参与，这段时间项目进展快了许多。 首先是露营系统方面的实现，已经成功制作出了帐篷、营火和睡袋的效果。 然后关于物件加载方面，内建的物件类也成功实现，现在可以实现在游戏中加载各种可互动的物件了，加上图块的构造，这些是作为游戏关卡设计的基础。 背包方面，已经设计好而新的背包GUI样式，之后还需要对背包进行微调。 露营三件套完成之后，接下来要做的就是关于露营系统中食物与烹饪制作，以及饮水方面的问题了。 ipfsimg://Qmd7fZi33i5qqEsWWJDRVDs6bUPp2mTSWRiKJQBdADfDWp ipfsimg://Qmf8uMrvApDesUSYwHrwf76F7vRfV8FWtzX7CdBF1YZ3ZS",
-      "image": null,
-      "publishedAt": "2022-01-11T15:44:45Z",
-      "sourceId": "716f999b030a6a78",
-      "sourceTitle": "明琪的日记",
-      "link": "https://yumieko.kikowiwu.com/posts/aeea1b88-6d94-4a01-b91a-b5262ac18f81.html",
-      "detailPath": "articles/e9af7b488dfc04a7ad0f97a3.json"
-    },
-    {
-      "id": "21a52458b67e6c2747274d83",
-      "title": "files-preview v1.1 更新了什么",
-      "summary": "我用 UI3 的 AI 功能将 UI2 中的 UX Writing 相关内容翻译成了中文，并做了一些简单校对。",
-      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/fp-1-1-markdown.png",
-      "publishedAt": "2022-01-11T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/files-preview-v1-1-updates",
-      "detailPath": "articles/21a52458b67e6c2747274d83.json"
-    },
-    {
-      "id": "193f0ec385c13b20025e23c9",
-      "title": "展开想想 之二",
-      "summary": "「另一滩碎语」",
-      "image": null,
-      "publishedAt": "2022-01-10T06:24:26Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/DailyNote/DailyNoteArchives_001/",
-      "detailPath": "articles/193f0ec385c13b20025e23c9.json"
-    },
-    {
-      "id": "473ec2f0d9d791a85e6ddca2",
-      "title": "Toots 193 2022 Jan.2 - Jan.8",
-      "summary": "「总是只顾感同，很少留意身受」",
-      "image": null,
-      "publishedAt": "2022-01-10T06:13:26Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2022/MastodonTootsArchives_20220108/",
-      "detailPath": "articles/473ec2f0d9d791a85e6ddca2.json"
-    },
-    {
-      "id": "ef6a405b3982ac16383d0fce",
-      "title": "从电子厂逃离的 17 岁 - 2021 年终总结",
-      "summary": "当我写下这段文字时，时间是 2022 年 1 月 9 日，这个时候发上一年年终总结似乎晚了点；老实说，在这个博客刚创建的时候，我没有打算写这种记录性的内容，我的目标一直都是像 Weishu’s Notes 的高质量内容；但是昨晚看 weishu 直播写代码，他说了一句让我很触动的话：“人生不需要有意义，有意思就够了。”我的 2021 可能没什么意义，但如果我不做点什么纪念一下，它很有可能就消逝在时间的长河里，连我自己都回忆不起来，更别提有意思了。",
-      "image": null,
-      "publishedAt": "2022-01-09T06:19:46Z",
-      "sourceId": "511f3e9d589e2612",
-      "sourceTitle": "残页的小博客",
-      "link": "https://blog.canyie.top/2022/01/09/end-of-2021/",
-      "detailPath": "articles/ef6a405b3982ac16383d0fce.json"
-    },
-    {
-      "id": "01e205b292d4ad63def71c93",
-      "title": "零成本播客制作指南",
-      "summary": "播客，是一种新的生活方式 作为一名多年播客（Podcast）爱好者，从 2021-06 开始，尝试制作自己的播客节目（ EmacsTalk 、 RustTalk ），从一名单纯的听众变成一名主播。这两年是中文播客的爆发期，可选择听的节目也五花八门，甚至诞生了像 小宇宙 、 汽水儿 这类专为播客诞生的 App，这毫无疑问极大促进了播客的传播。",
-      "image": "https://img.alicdn.com/imgextra/i3/581166664/O1CN01GL8UUX1z6A75UjLtv_!!581166664.png",
-      "publishedAt": "2022-01-08T02:51:57Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2022/01/08/zero-cost-podcast/",
-      "detailPath": "articles/01e205b292d4ad63def71c93.json"
-    },
-    {
-      "id": "3dc9ab0f97733f7f784783ef",
-      "title": "100 CAD的一个月Too Good To Go挑战",
-      "summary": "我一共订了6单Too Good To Go，但额外补充了蛋白质和蔬菜。这个过程中我发现周围的店在逐渐增多，但还是以烘焙店为主，只要你愿意每天都可以有很多的面包可以取到，我实在吃不了这么多。其次是东南亚的餐厅和日韩餐厅，最近还出来一家披萨店我还没有来得及去尝试，中餐整体来说是偏少的，蔬果类则更少，Grocery店的surprise bag质量参差不齐，不太好估量自己拿回来是否用得到，以后对这类店应该会更慎重一些。btw这个餐厅风格肯定是因地而异的，我正好住在一个东亚+东南亚+犹太群众比较多的地区……",
-      "image": null,
-      "publishedAt": "2022-01-07T01:19:29Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/nonsense/100cad-too-good-to-go-challenge/",
-      "detailPath": "articles/3dc9ab0f97733f7f784783ef.json"
-    },
-    {
-      "id": "549271aa85523fe5a5744b83",
-      "title": "叁拾一周：No.27",
-      "summary": "这是「叁拾一周」第二十七期，感谢这周新增的订阅读者，目前订阅人数达到了 281 位。我的下一个目标是 311。 各位新年好。每年年底我会通过回看相册里的照片和影像，写一篇当年的概览。已经写了三年，在此之前，是浩浩荡荡的文字总结，长篇大论，如今想来却毫无印象。 今天的主题想顺着概览聊一聊，这个世界会好吗。 这个世界会好吗？ 即便有 2013 年的风波和后续衍生的知道或不知道的故事，我依然每年都会读一读 南方周末 新年献词。那里曾给我许多力量。 在构思这一期内容时，最初草稿箱里只有一句话：一切的美好都将消失。在新年第一稿里聊这样的话题，似乎很不合适，但我必须承认，这就是我之所想，而后我偶然想起了 1998 年南周新年献词结尾写到：希望从来也不抛弃弱者。希望就是我们自己。 在困难的时候，尤其需要这种力量，所以最后，…",
-      "image": null,
-      "publishedAt": "2022-01-07T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/01/newsletter-027/",
-      "detailPath": "articles/549271aa85523fe5a5744b83.json"
     }
   ]
 }

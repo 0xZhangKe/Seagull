@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "b44bbae06d3086c573c1769c",
+      "title": "【数据结构与算法】哈希表",
+      "summary": "哈希表（Hash Table）是一种基于键（Key）直接访问数据的高效数据结构，其核心思想是通过哈希函数将键映射到数组的特定位置，从而实现平均时间复杂度为 O(1)O(1) 的插入、查找和删除操作。 结构定义 // 哈希表节点 typedef struct HashNode { int key; int value; struct Hashcode* next; } HashNode; // 哈希表 typedef struct { int size; HashNode** buckets; } HashTable; 初始化 创建HashTable结构体变量，进行初始化赋值，分配桶的内存。 // 初始化哈希表 HashTable *creat_hash_table(int size) { HashTable*…",
+      "image": null,
+      "publishedAt": "2025-05-28T21:44:28Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%93%88%E5%B8%8C%E8%A1%A8/",
+      "detailPath": "articles/b44bbae06d3086c573c1769c.json"
+    },
+    {
+      "id": "c39143462c007bdad4ea558a",
+      "title": "感谢恩师夸奖",
+      "summary": "课上没能回答出某个问题，遂借势挖苦批评，其中几个句子记忆犹新：“你主意太正”、“成绩不上不下”、“回家不知道是研究问题了还是学习了”。 感谢恩师夸奖。我就是主意正。 我主意正，因为我是一个有血有肉，更有灵魂的活生生的人，我有思想，我主意正，人和猩猩在行为上的显著区别就是，人知道自己在做什么，因为人的脑子很好用。我不会被戴上项圈，又或是打磨成木偶任人操控。这是我作为活人，基本该有的。 我不碌碌无为，不生活不平淡平庸。我既不会被你驯化，也没有成为推荐算法定时批量投喂的赛博牲畜，无休止地享受奶头乐，因为我主意正。 我活着有我自己的目的和意义，我主意非常正。 感谢恩师夸奖，我成绩确实不上不下。 我成绩不上不下，但我至少有一颗健全健康的心。我还是不会戴上项圈，被驯化成跪坐在主人身旁吐舌头的狗。我成绩不上不下，但是我能保…",
+      "image": null,
+      "publishedAt": "2025-05-28T20:27:55Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E6%84%9F%E8%B0%A2%E6%81%A9%E5%B8%88%E5%A4%B8%E5%A5%96/",
+      "detailPath": "articles/c39143462c007bdad4ea558a.json"
+    },
+    {
+      "id": "b23605ce3a63b5fc27a122a8",
+      "title": "入蜀记 day04 行李来了",
+      "summary": "「行李来了。」",
+      "image": null,
+      "publishedAt": "2025-05-28T14:22:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_04/",
+      "detailPath": "articles/b23605ce3a63b5fc27a122a8.json"
+    },
+    {
+      "id": "62d27fd0bb7820cea2df6bfd",
+      "title": "放在 blog 上就對了",
+      "summary": "看到 ShellSharks.com 上的這篇 Just Put It On Your Blog（就把它放到你的 blog 上）我覺得很有共鳴。",
+      "image": null,
+      "publishedAt": "2025-05-28T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/just-blog",
+      "detailPath": "articles/62d27fd0bb7820cea2df6bfd.json"
+    },
+    {
+      "id": "101f045ac8159219e48eff0d",
+      "title": "【数据结构与算法】众数、中位数",
+      "summary": "今天学这个东西的时候，看到这种线性的数据结构加上排序步骤，很难不想写个程序来跑跑。 先来说说中位数，这个比较有思路。 中位数 具体的操作步骤应该是： 排序 => 获得数据元素个数n => 是奇数 ? (n+1) / 2 : n / 2 那么排序就用之前学的冒泡排序，这种题目大概不会完全倒序给数据，编写sort函数： void sort(int arr[], int n) { for (int i = 0; i < n - 1; i++) { for (int j = 0; j < n - i - 1; j++) { if (arr[j] > arr[j + 1]) { int temp = arr[j]; arr[j] = arr[j + 1]; arr[j + 1] = temp; } } } } 接下来是…",
+      "image": null,
+      "publishedAt": "2025-05-27T19:41:53Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%BC%97%E6%95%B0%E4%B8%AD%E4%BD%8D%E6%95%B0/",
+      "detailPath": "articles/101f045ac8159219e48eff0d.json"
+    },
+    {
+      "id": "53574137ee9c90a07f0da5de",
+      "title": "贝尔实验室为何成功",
+      "summary": "我们没有贝尔实验室的原因是，我们不愿意做创造贝尔实验室所需的事情——给予聪明人彻底的自由和自主权—— 浪费时间的自由，浪费资源的自由，以及自主决定如何浪费的自由。 据说，凯利和其他人会把问题交给别人，然后在几年后去询问进展。我认识的大多数创始人和高管都会对这个想法犹豫不决。毕竟，“有什么能阻止别人偷懒呢？”凯利会争辩说，这问题问错了。正确的问题是，“你为什么会指望一个需要保姆的人提出信息论？” 正如许多事情一样，最终归结为品味。贝尔实验室之所以成功，是因为默文·凯利在人才和问题方面都有着极高的品味。他能够识别出谁拥有那种内在的动力和对更多知识的渴望，以及谁没有。 可惜的是，仅有自由和耐心是不够的。贝尔实验室的成功秘诀可以简述为： 用良好的品味去寻找伟大而有抱负的人。 让他们被其他伟大而有抱负的人围绕。 雇佣聪…",
+      "image": null,
+      "publishedAt": "2025-05-27T19:29:31Z",
+      "sourceId": "74bd1a0c7196fd9e",
+      "sourceTitle": "Owen的博客",
+      "link": "https://1517.substack.com/p/why-bell-labs-worked",
+      "detailPath": "articles/53574137ee9c90a07f0da5de.json"
+    },
+    {
+      "id": "1ebd18e21598e68c17b1b48c",
+      "title": "你是一家小公司，那就拿出小公司的样子",
+      "summary": "你不需要那些下载后感到沮丧、从此杳无音信的客户。你需要的是那些愿意深入参与、乐于提供帮助的热心用户。 以下绝对是反面教材：自称\"行业领先供应商\"，然后喋喋不休地吹嘘\"提供快速简便的XYZ 解决方案，助您回归高价值任务\"。拜托。还能更无聊点吗？ 站在早期采用者的角度想想。她愿意看那些空洞无物的废话，还是想听你如何真正理解她的痛点？你应该表现得像个庞大、成熟、稳妥的大公司，还是像个酷劲十足、充满激情、渴望改变的小团队？你是该躲在\"联系我们\"的表单后面，还是该在主页亮出电话号码和推特账号？是该宣传那些尚未实现的功能卖点，还是该推广你的论坛、博客和每周面向全体客户的虚拟会议——在那里每个人都能畅所欲言提意见？",
+      "image": null,
+      "publishedAt": "2025-05-27T19:29:31Z",
+      "sourceId": "74bd1a0c7196fd9e",
+      "sourceTitle": "Owen的博客",
+      "link": "https://longform.asmartbear.com/little-company/",
+      "detailPath": "articles/1ebd18e21598e68c17b1b48c.json"
+    },
+    {
+      "id": "1923ead40ab08dcee111bdbe",
+      "title": "Now",
+      "summary": "繼上次我弄了一個 /use 頁面來分享我愛用的工具之後，今天我又新增了 /now 這個斜線頁面（slash page），你可以直接從網站上方選單的「近況」進入，或是直接到 https://wiwi.blog/now 這個網址。",
+      "image": null,
+      "publishedAt": "2025-05-27T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/now-page",
+      "detailPath": "articles/1923ead40ab08dcee111bdbe.json"
+    },
+    {
+      "id": "18a7c87eebf2f22f5609e6fc",
+      "title": "生活是一场缓慢而坚定的离开",
+      "summary": "最近在听： 单依纯的《珠玉》 🎵 打包旧生活，在夏天重新安家 从将就到选择 来夏洛特快三年的时间了（竟然已经！），我一直住在入职之前急匆匆定下的公寓和一些微妙的妥协中。这个公寓离公司只有八分钟车程，which在大城市糟糕的早晚通勤中这简直是一种特权。但特权的代价是夏天会突然来家里“做客”的蟑螂、楼梯间永远若隐若现的大麻味儿，还有感觉怎么清洁都不到位脏兮兮的全屋地毯。 作为一个极繁主义者和坚持贯彻“房子是租来的但生活不是”主义者，我的房间被塞得满满当当的，每一寸目之所及或不所及的空间几乎都被物品占据，导致尽管 好想搬家 这件事我已经说了快两年半，但始终停留在不痛不痒的抱怨层面…我既担心搬家的繁琐又舍不得放弃便利和周边顺畅的交通。 但对于拖延症患者来说，有时候做出改变或许只需要爆发那么一瞬间突如其来的决心就足够了…",
+      "image": "https://1sle29.github.io/img/mover.png",
+      "publishedAt": "2025-05-27T00:00:00Z",
+      "sourceId": "72390a92567df082",
+      "sourceTitle": "1sle",
+      "link": "https://1sle29.github.io/p/move-527/",
+      "detailPath": "articles/18a7c87eebf2f22f5609e6fc.json"
+    },
+    {
+      "id": "ef554c52f0d55dd8d1c432ac",
+      "title": "高效率的沟通绝不会从在吗开始",
+      "summary": "“在吗？” 据考证，“在吗”发起聊天的起源，是QQ刚盛行的年代，大家都没有手机，升级普遍需要在电脑上挂QQ。 为了确认在线的是不是本人而使用的 。 那么，现在还真的需要这句话吗？ 在吗只对聊天的发起者有好处，从接受者的主观来讲，对接受者无益的请求，在回复了以后，也就难以推脱了，毕竟总不可能装死。一旦在吗这两个字被发送，一个关于对方意图的猜疑链就无穷无尽地延伸下去了。 我向来都认为，网络上的沟通效率非常高，至少对于我个人来讲，是这样的。尤其是在邮箱等正式场合，迫于信息传播的时效性，只好组织起完整、官方、正式的语言，而不是东一句西一句，在信息的密度和聚合性上，是远远高于即时通讯软件的。 网络的优势也在于，你需要面对的是一块会发光的砖头，而不是长相体态性格各异的复杂的人。这可比现实中自在太多了。在网上沟通，只需要有…",
+      "image": null,
+      "publishedAt": "2025-05-26T18:55:29Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E9%AB%98%E6%95%88%E7%8E%87%E7%9A%84%E6%B2%9F%E9%80%9A%E7%BB%9D%E4%B8%8D%E4%BC%9A%E4%BB%8E%E5%9C%A8%E5%90%97%E5%BC%80%E5%A7%8B/",
+      "detailPath": "articles/ef554c52f0d55dd8d1c432ac.json"
+    },
+    {
       "id": "9c2cc7222366a317d96f3361",
       "title": "怀念 Frutiger Aero",
       "summary": "只要出生在千禧年代以前，一定记得这种风格：一眼望去大面积的绿色或者蓝色，自然界中草地、海洋作为背景，鲜花、绿叶、动物和人类的笑容以完全真实的样貌拼贴在画面中，无论是在公交站台、户外广告、电子屏幕壁纸甚至老师的课件上，这样的风格几乎随处可见。",
@@ -549,116 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/totp",
       "detailPath": "articles/3d1b7fefd25733c51a615c0e.json"
-    },
-    {
-      "id": "897e3ecf8e64fa062a50087f",
-      "title": "有车有房总是很忙 - 2025 年 2 月小结",
-      "summary": "总结 因为 2024 年度总结过于难产，发现我还是需要月度总结，而不是 12 月怀胎憋个大的。但因为难产就是我的本性，所以我会干出5月发布2月总结这种事！ 2 月的主线：忙，快，猝不及防，一气呵成…… 2 月一共有 28 天，工作了 10 天，上学了 6 天，还剩下 12 天“有空”。 二月Calendar统计 1 号是周六，约了 看房子 ，看完之后对房子和房东都非常满意当即决定租下。 2 号排了班但是下雪了而且还是温哥华今年第一场雪，于是老板打电话过来说 snow day 不开店，理所当然地变成了休息day（虽然下午就没有再下）！下午约了朋友看电影《狗镇》吃了寿司。晚上原房东居然答应 28 号来拿钥匙，新房东也同意了砍价，非常顺利！ 6 号出门逛街买点滑雪衣裤，吃了家边湘菜，晚上独自游泳 7 号约了 1pm…",
-      "image": "https://picture-guan.oss-cn-hangzhou.aliyuncs.com/0D26CC2A-9607-4161-A334-E7F2679CC020_1_102_a.jpeg",
-      "publishedAt": "2025-05-12T00:00:00Z",
-      "sourceId": "ecbcf87e0432fdbd",
-      "sourceTitle": "关门说话",
-      "link": "https://hugo-stack-theme-mod-six.vercel.app/2025/%E6%9C%89%E8%BD%A6%E6%9C%89%E6%88%BF%E6%80%BB%E6%98%AF%E5%BE%88%E5%BF%99-2025-%E5%B9%B4-2-%E6%9C%88%E5%B0%8F%E7%BB%93/",
-      "detailPath": "articles/897e3ecf8e64fa062a50087f.json"
-    },
-    {
-      "id": "f536a13fd3f8db20dc0cf408",
-      "title": "一些独立游戏通关简评",
-      "summary": "一些旧的游戏评论。",
-      "image": null,
-      "publishedAt": "2025-05-12T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/indie-game-notes-1",
-      "detailPath": "articles/f536a13fd3f8db20dc0cf408.json"
-    },
-    {
-      "id": "ff56ebdfe906d42a6d07b632",
-      "title": "Toots 365 2025 May.4 - May.10",
-      "summary": "「命运在深处。」",
-      "image": null,
-      "publishedAt": "2025-05-11T15:02:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250510/",
-      "detailPath": "articles/ff56ebdfe906d42a6d07b632.json"
-    },
-    {
-      "id": "d0630fb482307b1bd5456c00",
-      "title": "我的孩子啊",
-      "summary": "苗姐又感冒了，昨天傍晚开始发烧，温度从38.5一路飙升到40度，傍晚她精神状态还挺好，这时39度的高烧好像没事人一样，喝了奶我给她喂了4ml泰诺，就抱着她睡觉了，半夜她又烧起来，小小的身子热的像个火炉，这时温度是40度，赶忙爬起来给她物理降温。 我和x轮流给她拍小手臂，从远端慢慢拍往近心脏的方向，凌晨3点的夜，房间里只有我俩拍她的声音，恍惚间我以第三人称视角看到了我的小时候，一样的场景，我妈妈在给我拍手臂，一边拍一边指使我爸去打水，她汗流浃背，鬓角看不清是泪还是汗，就那么一瞬间，好像时空重叠一样，我缓过神来给x说我看到妈妈了，他二话不说拿出耳温枪，滴，40度，原来我也发烧了…光顾着苗姐，没注意到自己也这么烫。 我们叁几乎整夜都没睡，我是烧的睡不着，一直在做梦，梦见苗姐叫我、梦见妈妈、梦见一直往下坠，小x是给我…",
-      "image": "https://ihaihe.cn/wp-content/uploads/2025/05/IMG_7955-scaled.webp",
-      "publishedAt": "2025-05-11T13:10:00Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/3230.htm",
-      "detailPath": "articles/d0630fb482307b1bd5456c00.json"
-    },
-    {
-      "id": "b19276636d0a8e9f1c17d401",
-      "title": "【数据结构与算法】栈",
-      "summary": "基本概念 栈（Stack）是一种后进先出（LIFO）原则的线性数据结构。核心操作包括： 压栈（Push）：将元素添加到栈顶 出栈（Pop）：移除并返回栈顶元素 查看栈顶（Check）获取但移除栈顶元素 判空（is_empty）检查栈是否为空 结构定义 使用动态数组实现栈，包含三个核心属性： typedef struct Stack { int* data; // 存储元素的数组 int top; // 栈顶指针（当前元素位置） int capacity; // 栈的最大容量 } data ：动态分配的数组指针 top ：初始值为-1，表示空栈，压栈时递增，出栈时递减 capacity ：栈的容量上限 功能实现 初始化 // 初始化栈 void init_stack(Stack *s, int capacity…",
-      "image": null,
-      "publishedAt": "2025-05-11T10:09:21Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A0%88/",
-      "detailPath": "articles/b19276636d0a8e9f1c17d401.json"
-    },
-    {
-      "id": "deac3283f19e79937cec5d6f",
-      "title": "春暖花开，体重也悄悄发芽的四月记 Vol.5",
-      "summary": "移民受阻，肩膀酸痛，好在春天的樱花依旧美丽",
-      "image": null,
-      "publishedAt": "2025-05-11T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/apr-2025/",
-      "detailPath": "articles/deac3283f19e79937cec5d6f.json"
-    },
-    {
-      "id": "9e9a0348a43c831bf0e1a903",
-      "title": "A Wall Behind A Wall: Emerging Regional Censorship in China",
-      "summary": "A Wall Behind A Wall: Emerging Regional Censorship in China Mingshi Wu ∗ GFW Report gfw.report@protonmail.com Ali Zohaib ∗ University of Massachusetts Amherst azohaib@umass.edu Zakir Durumeric Stanford University zakir@cs.stanford.edu Amir Houmansadr University of Massachusetts Amherst amir@cs.umass.edu Eric Wustrow University of Colorado Boulder ewust@colo…",
-      "image": null,
-      "publishedAt": "2025-05-11T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/publications/sp25/en/",
-      "detailPath": "articles/9e9a0348a43c831bf0e1a903.json"
-    },
-    {
-      "id": "f6da948fe58bc4094862ace6",
-      "title": "墙中之墙：中国地区性审查的兴起",
-      "summary": "墙中之墙：中国地区性审查的兴起 Mingshi Wu ∗ GFW Report gfw.report@protonmail.com Ali Zohaib ∗ University of Massachusetts Amherst azohaib@umass.edu Zakir Durumeric Stanford University zakir@cs.stanford.edu Amir Houmansadr University of Massachusetts Amherst amir@cs.umass.edu Eric Wustrow University of Colorado Boulder ewust@colorado.edu * Mingshi Wu 和 Ali Zohaib 对这项工作贡献相当…",
-      "image": null,
-      "publishedAt": "2025-05-11T00:00:00Z",
-      "sourceId": "34d02af866ebd5fa",
-      "sourceTitle": "Great Firewall Report",
-      "link": "https://gfw.report/publications/sp25/zh/",
-      "detailPath": "articles/f6da948fe58bc4094862ace6.json"
-    },
-    {
-      "id": "1b0bc9ef52d099bf7f849a6f",
-      "title": "三雙跑鞋",
-      "summary": "最近我的鞋架上有三款 Nike 的跑鞋，每天早上看著它們擠在一起的樣子，就好像是等待被我點名的求職者一樣。「今天該穿誰出門呢？」就讓我寫篇超不專業的跑鞋心得吧。",
-      "image": "https://wiwi.blog/assets/images/nike-d4296a7d3767f6678b1b7e4f2e0236c9.jpg",
-      "publishedAt": "2025-05-11T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/nike-running-shoes",
-      "detailPath": "articles/1b0bc9ef52d099bf7f849a6f.json"
-    },
-    {
-      "id": "d0195ec36c7f529cc7e8f938",
-      "title": "【数据结构与算法】冒泡排序",
-      "summary": "核心思想 通过相邻元素的两两比较，将较大的元素逐步“冒泡”到数组末尾，每轮排序确定一个最大元素的最终位置。 代码实现 void bubble_sort(int arr[], int n) { // 最外层控制循环轮数 n-1轮 for (int i = 0; i < n - 1; i++) { // 内层循环处理相邻元素比较和交换 for(int j = 0; j < n-i-1; j++) { if (arr[j] > arr[j+1]) { int temp = arr[j]; arr[j] = arr[j+1]; arr[j+1] = temp; } } } } // 调用 void print_array(int arr[], int size) { for (int i = 0; i < size;…",
-      "image": null,
-      "publishedAt": "2025-05-10T20:06:05Z",
-      "sourceId": "77e484484cd58390",
-      "sourceTitle": "映屿",
-      "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/",
-      "detailPath": "articles/d0195ec36c7f529cc7e8f938.json"
     }
   ]
 }

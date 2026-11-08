@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "e1fa5f508d5d0bed50dfb598",
+      "title": "为nginx提供GeoIP2支持",
+      "summary": "最近在处理站点的连接优化问题，需要通过检测访问者的 IP ，来选择是否经由 CloudFlare 代理，还是通过一个优化的直连地址进行体验优化。经过一些资料的比对，最终决定使用 GeoIP2 分辨来访者 IP 归属地，并通过 nginx 设置对应的规则来跳转访问。",
+      "image": null,
+      "publishedAt": "2021-02-20T03:44:55Z",
+      "sourceId": "06aa2ffd92b9d263",
+      "sourceTitle": "糖菓·部落",
+      "link": "https://candinya.com/posts/add-geoip2-support-for-nginx/",
+      "detailPath": "articles/e1fa5f508d5d0bed50dfb598.json"
+    },
+    {
+      "id": "d45f14371208c8037c9a5629",
+      "title": "ViuTV《理想國》",
+      "summary": "ViuTV《理想國》 （某部網路港劇，形式為一集一篇各異的短篇故事）真的大推，尤其是其中一集，叫作《 後美好時代 》。 有一點點劇透的介紹： 在一個虛擬實境（VR）與擴展實境（AR）科技已發達得深入所有人生活並且真假難辨程度的未來，一位只負責播報新聞的電視女主播嚮往自己能夠體驗親手採訪與撰寫新聞的過程、體驗戀愛以及家庭交流。 後來她發現自己爲虛擬主播，並且體驗到外部世界的殘酷現實。她因此決定冒着程式被刪除的風險作出行動，希望世界的真實得以被對外報導。 裡面的故事真的值得身為媒體受眾的我們省思，也給了對媒體界的一個警示。 雖然《理想國》屬於科幻劇，但《後美好時代》所要代表的卻和現實世界的某些角落越來越近…… 而且它的結局…… 滿沉重的 。 2025 年 10 月 13 日 P.S.：沒想到 AI 主播在 202…",
+      "image": null,
+      "publishedAt": "2021-02-18T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/the-republic/",
+      "detailPath": "articles/d45f14371208c8037c9a5629.json"
+    },
+    {
+      "id": "a3b34cba5514899ecf5c801e",
+      "title": "Toots 146 2021 Feb.7 - Feb.13",
+      "summary": "「Always Choose」",
+      "image": null,
+      "publishedAt": "2021-02-14T09:57:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2021/MastodonTootsArchives_20210213/",
+      "detailPath": "articles/a3b34cba5514899ecf5c801e.json"
+    },
+    {
+      "id": "87e49fcd5f17d5e7d7347c9b",
+      "title": "做猪呢，最重要的是开心",
+      "summary": "如何养猪 | wikiHow 养猪指南？不对，是猪的成长日志。 访问 https://www.yunyoujun.cn/posts/2020-summary 阅读全文。",
+      "image": "https://cos.yunle.fun/images/how-to-raise-pigs.jpg",
+      "publishedAt": "2021-02-12T21:42:43Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/2020-summary",
+      "detailPath": "articles/87e49fcd5f17d5e7d7347c9b.json"
+    },
+    {
+      "id": "1f5d339b0cf2cd8ad55a2d4c",
+      "title": "Toots 145 2021 Jan.31 - Feb.6",
+      "summary": "「生于底层与基石之上的复杂组织才会出现营养」",
+      "image": null,
+      "publishedAt": "2021-02-09T02:31:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2021/MastodonTootsArchives_20210206/",
+      "detailPath": "articles/1f5d339b0cf2cd8ad55a2d4c.json"
+    },
+    {
+      "id": "a7f1552a854cf0ab645ad069",
+      "title": "用Nginx反代实现docker安装WordPress与其他服务并存",
+      "summary": "目标：一台服务器，一个IP，使用docker安装多个服务（包括WordPress）共存，使用不同的域名或子域名。多服务共存本身不是难点，障碍是WordPress，即如何让WordPress不占用80（和443）端口。 面向对象要求：懂Unix基础命令，已经购买域名。请确保你的域名DNS设置里，已经将域名指向这台服务器的IP。 我会把我参考的教程列一下，方便不需要这么折腾的人直接用简单的方法装。",
+      "image": null,
+      "publishedAt": "2021-02-08T02:42:45Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/tech/shared-service-same-server-wordpress/",
+      "detailPath": "articles/a7f1552a854cf0ab645ad069.json"
+    },
+    {
+      "id": "e11b3604f12a557a8a8176e6",
+      "title": "《魏晋之际的政治权力与家族网络》笔记（上）",
+      "summary": "仇鹿鸣的《魏晋之际的政治权力与家族网络》，忘了为什么突然想起要找这本书看，以前很囫囵吞枣地翻过《三国志》和《晋书》，记住了一堆离婚下毒掐架的八卦，再就是《世说新语》里的段子，对零散的人物有印象，对整段历史的脉络却几乎没什么认识。 绪论里作者介绍了魏晋史研究的一些难点（历史记载单薄）和主要流派（陈寅恪和其他我记不住名字的……），我更感兴趣的是作者提到历史研究里的“倒放电影”问题，后人做研究时因为已知结果，会容易代入结果去反推人物动机，或者忽视历史人物立场的变化等等。",
+      "image": null,
+      "publishedAt": "2021-02-08T00:32:09Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/reading/between-wei-and-jin-1/",
+      "detailPath": "articles/e11b3604f12a557a8a8176e6.json"
+    },
+    {
+      "id": "cc7675ccc153263f6f6432a2",
+      "title": "当你发现还有半小时就是男朋友的生日而你什么都没有准备此时你想起你还有一个公众号",
+      "summary": "⚠️警告：大量涉黄对话。 茶茶丸夸人： 茶茶丸：你身材很好 我：谢谢 茶茶丸：很紧致 我：谢谢 茶茶丸：第一次摸的时候我就想你是钢铁侠吗 我：？ 2020-10-23 我：你今天怎么没刮胡子 茶茶丸：我忘了 我：你好扎（渣） 2020-10-26 茶茶丸：（第365次佯装要走）我走了你还能找到别的好男人吗！ 我：找不到就不找了呗 茶茶丸：☝🏻 我：女人需要男人就像鱼需要自行车。懂吗自行车？ 茶茶丸：那你还骑？ 2020-11-01 天气很冷了，我和茶茶丸两个人，在楼下因为色在同一个点上而紧紧相拥！ 2020-11-04 距离产生美是真的。昨晚睡前在生茶茶丸的气今天把他赶回家了，现在是离开茶茶丸的第4个小时我已经开始想他 2020-11-06 我对茶茶丸最深情的告白：「我愿意做你的同妻」 2020-11-11…",
+      "image": "https://fourxiajiao.github.io/2021/chachamaru/1.png",
+      "publishedAt": "2021-02-07T18:12:59Z",
+      "sourceId": "6b1e25ad8128217a",
+      "sourceTitle": "一笼虾饺有四个",
+      "link": "https://fourxiajiao.github.io/2021/chachamaru/",
+      "detailPath": "articles/cc7675ccc153263f6f6432a2.json"
+    },
+    {
+      "id": "5f90f6da215e83fdc6045542",
+      "title": "《学习究竟是什么》笔记",
+      "summary": "万维钢在《学习究竟是什么》这本书里提到了写作和研究，关于写作，他是基于“当前科学理解”这样一个前提： 最重要的前提是“当前科学理解”，面对一个问题的时候，我们应该信任当前科学家们的共识。 比如，一个四岁的孩子应该背很多唐诗、认很多字、学习加减法么？脑科学家的看法是 6 岁以前就是玩，在玩儿的过程中学习怎么跟人打交道，学习各个东西是干什么用的。 他给写作定了一个新的分类，科学写作，也就是在研究的基础上写作，科学家应该为科学作家服务，科学作家为读者服务。所以他的专栏不是写“我知道的事情”，而是“读者想知道、应该知道的事情”。不管你想没想到，只要这个思想好，我就要让你知道。 这个思路很好，毕竟我们现在都深受无限大的信息杂质毒害，李盆在《羊呆住了》中很犀利地调侃这种现象： 阅读已经普遍生活方式化的时候，读者潜意识中关…",
+      "image": null,
+      "publishedAt": "2021-02-04T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2021/02/what-is-learning/",
+      "detailPath": "articles/5f90f6da215e83fdc6045542.json"
+    },
+    {
+      "id": "a303d325b8589424b7e023fe",
+      "title": "“被浪漫”的那些日子",
+      "summary": "你的动态很久没有提到过宇宙、银河、梦想和文学了。怎么，是不是和我一样去搬砖了？",
+      "image": null,
+      "publishedAt": "2021-02-03T00:00:00Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2021-02-03",
+      "detailPath": "articles/a303d325b8589424b7e023fe.json"
+    },
+    {
       "id": "60b66c96cd86f1b5d1792dda",
       "title": "“被浪漫”的那些日子",
       "summary": "你的动态很久没有提到过宇宙、银河、梦想和文学了。怎么，是不是和我一样去搬砖了？",
@@ -549,116 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/reading/pixar-creativity-inc/",
       "detailPath": "articles/aba8f215f30a02afe16c703c.json"
-    },
-    {
-      "id": "ca9a1d1ed8db79782fbb2359",
-      "title": "Toots 139 2020 Dec.20 - Dec.26",
-      "summary": "「要像一个作家那样书写 而不要像一个时代那样书写」",
-      "image": null,
-      "publishedAt": "2020-12-27T03:19:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2020/MastodonTootsArchives_20201226/",
-      "detailPath": "articles/ca9a1d1ed8db79782fbb2359.json"
-    },
-    {
-      "id": "5cad7fcad66f9576bd1d1b44",
-      "title": "双旦",
-      "summary": "又到了12月，又是一年一度的双旦节。每一次过节，尤其是在学校里，都是一个人。 不知不觉就三年了，持续了三个圣诞。 一般都是吧，一个人听歌敲键盘，边上放着一杯刚冲好的加 1 Shot Americano 如果有我微信的朋友应该知道，从进入大学开始的第一年，每年圣诞就会听一首歌。 [hplayer title=“圣诞结” author=“陈奕迅” url=“https://cdn.taurusxin.com/old-cdn/typecho/2020/12/27/%E9%99%88%E5%A5%95%E8%BF%85%20-%20%E5%9C%A3%E8%AF%9E%E7%BB%93.mp3” size=“large” auto=“false” /] 希望你也很喜欢陈奕迅 Eason十年老粉不请自来，这首歌真的很诠…",
-      "image": null,
-      "publishedAt": "2020-12-27T01:14:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/double-festival-2020/",
-      "detailPath": "articles/5cad7fcad66f9576bd1d1b44.json"
-    },
-    {
-      "id": "220a421ecd3ba2f5251b37cb",
-      "title": "2020年终总结",
-      "summary": "这是我第三年写年终总结，想了很久，不知从何说起。大概是因为今年世界范围内实在发生了太多大事，对比之下觉得自己的生活里的事情都微不足道。今天在听播客《不合时宜：在理性完胜荷尔蒙的时代，相信青年的生命可能》，里面提到「2008年是历史性的一年，希望和迷茫交织」，那一年有很多关键性的事件，直到今天我们仍处在那些事件的涟漪中。我想也许我回望的时候也会觉得2020年是我的2008年，这一年我的生活里丢下了很多石头，而我还不知道涟漪会荡向何处。 01 据说宠物猫一般寿命是12-16岁，也就是没有意外的话我的猫大概会陪我6-10年。眼下我身边并没有什么已经陪伴我6年的东西：5年前买的靴子磨破了鞋头准备扔掉，3年前买的手机封存箱底偶尔拿出来充个电，2年前买的裤子已经穿不进去，1年前染的头发昨天刚刚剪掉，过去6年里没有在任何一…",
-      "image": "https://fourxiajiao.github.io/2020/2020-recap/Untitled.png",
-      "publishedAt": "2020-12-26T18:52:36Z",
-      "sourceId": "6b1e25ad8128217a",
-      "sourceTitle": "一笼虾饺有四个",
-      "link": "https://fourxiajiao.github.io/2020/2020-recap/",
-      "detailPath": "articles/220a421ecd3ba2f5251b37cb.json"
-    },
-    {
-      "id": "d5b2a0d00f10b3764963d6a4",
-      "title": "洋节",
-      "summary": "应该是自从那年，能在公共场合看到圣诞树已是一件十分稀有的事情。",
-      "image": null,
-      "publishedAt": "2020-12-25T22:39:48Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/christmas/",
-      "detailPath": "articles/d5b2a0d00f10b3764963d6a4.json"
-    },
-    {
-      "id": "584cdfa1d7f18988ff3f3608",
-      "title": "The State of My Desk 2020",
-      "summary": "2019年的总结 写的还是上学时的书桌。我之后搬到加州上班，疫情后又搬家一次",
-      "image": "https://i.imgur.com/IscsAZO.gif",
-      "publishedAt": "2020-12-25T08:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2020/12/25/the-state-of-my-desk-2020/",
-      "detailPath": "articles/584cdfa1d7f18988ff3f3608.json"
-    },
-    {
-      "id": "35b55080bbf9a160845aa1a0",
-      "title": "[译] HentaiVerse 建议和指导",
-      "summary": "著名的同人本资源集散地 E-hentai 有一个完全没有人在意的角落 ——「HentaiVerse」，一个纯文字网页 RPG 游戏。虽然这个游戏应该不会有太多新玩家了，不过还是翻译一篇给新玩家的指导文吧。",
-      "image": "https://img.skk.moe/blog/t2020/hentaiverse-advice.png",
-      "publishedAt": "2020-12-24T22:31:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/hentaiverse-advice/",
-      "detailPath": "articles/35b55080bbf9a160845aa1a0.json"
-    },
-    {
-      "id": "7d3a45b9937ae421b4b986cd",
-      "title": "Toots 137 2020 Dec.13 - Dec.19",
-      "summary": "「要像一个作家那样书写 而不要像一个时代那样书写」",
-      "image": null,
-      "publishedAt": "2020-12-21T06:51:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2020/MastodonTootsArchives_20201219/",
-      "detailPath": "articles/7d3a45b9937ae421b4b986cd.json"
-    },
-    {
-      "id": "4ecabf126f19f85a61b4bd33",
-      "title": "美国的小黄文",
-      "summary": "我看中文网络里读者们总想着让作者开车，可是因为大家都懂得的原因可能导致作者进监狱，既然群众有需求，那不如去看看美国小黄文吧，还能顺便学个英语。 2016年，我在Goodreads上发现了一个美国小说作家，是一个德州的有三个孩子的家庭主妇，06年开始写，50+本（这是2016年的数据，今天重新查了一下，已经70+本了），N多上了纽约时报畅销榜。 网站上打分全部4星以上，满分是5，比那种现实向情节流深厚社会背景的小说的分数还高（阿瑟黑利有几本都只有3.6或3.7）！",
-      "image": null,
-      "publishedAt": "2020-12-19T12:44:43Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/reading/us-erotic-romance-writer/",
-      "detailPath": "articles/4ecabf126f19f85a61b4bd33.json"
-    },
-    {
-      "id": "fe031dd6b9d7733e2e8558dd",
-      "title": "目前为止所有提到再生一个小孩的对话都是以苦笑结束（意味深）",
-      "summary": "最近 Toddler（总算）迷上了滑梯，一旦玩起来就变成了永动机，不断重复地上去下来，不亦乐乎。看着这张没有被社会殴打过的快乐的脸，我有时候会想，真可爱啊，要不再生一个吧？ 但不幸的是，在 Family planning 方面，很难找到不偏袒和没有成见的建议，来讲述生第二个小孩的经历。亲戚朋友当然都是鼓励啦；网上则是有很多鼓吹，或者自我安慰打鸡血，要么就是树人设的。结果就是，没有利益关系的人，我跟人家没有熟到可以分享这种私密性的建议；而熟人可以说说的，要不就是抱有“想要看到你们多多生小孩”这种偏心的想法，要不就是完全没体验过生小孩，鸡同鸭讲。所以我也是一头雾水，如果这样下去不明不白地就生了第二个小孩，那跟当初没有决定去收集信息就怀上小孩的自己，也没什么区别。 翻翻一年前的文章，确实太容易就忘了养小孩的前几个月…",
-      "image": "https://pbs.twimg.com/media/Ea1vFFRXsAEZ2Co?format=jpg&name=medium",
-      "publishedAt": "2020-12-19T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/at-the-thought-of-another-baby/",
-      "detailPath": "articles/fe031dd6b9d7733e2e8558dd.json"
-    },
-    {
-      "id": "34edb96779b6d4aa1b478b1b",
-      "title": "软件系列之Flomo",
-      "summary": "120，36，84。 现在我可以来聊一聊了。 今年，我有很大一部分精力，分给了所谓的 PKM，也就是 Personal Knowledge Management，个人知识管理系统。简单来说，就是怎么记笔记。缘起我现在写作，已经很少是一本书一本书读下来，然后整理笔记，梳理成文，更多的，是从为什么开始。 为什么德军在一战、二战中都是两线作战？ 为什么学生不喜欢学校？ 为什么农业社会不如采集社会抵抗自然灾害能力强，却依然从采集转向了农业？ 户籍制度和建设用地指标是如何阻碍社会发展？ 孩子如何思考、如何学习？ 这些问题不是某一本书可以给出答案的，它需要大量的阅读各种资料，书籍、论文、网络上搜索得来的信息。我需要做的，就是确定主题，持续跟踪，直到我对某一个为什么，足够了解，形成自己的判断。那么 OK，转向下一个。 在这…",
-      "image": null,
-      "publishedAt": "2020-12-18T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2020/12/flomo-app/",
-      "detailPath": "articles/34edb96779b6d4aa1b478b1b.json"
     }
   ]
 }

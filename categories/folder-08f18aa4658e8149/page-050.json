@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "340a7e35583f465eae39b98a",
+      "title": "怎麼會有人愛上文字 AI？",
+      "summary": "前言 # 上次在 2 則科技巨頭悲劇，以及 IG 上的「真實」帳號（？ 一文中提到，一名男子愛上 Gemini，並且因爲 Gemini 的一句話而離世了。 老實說，我當時的第一反應不是同情，而是困惑。 於是我展開了測試。 請 Gemini 幫忙後 # 今天大量處理網站排版問題，前面 Gemini 指出我的 Code 有寫地方有衝突，我有解釋是 ChatGPT 寫出來的，Gemini 最終也一個個處理掉。 妳好棒哦，結果非常完美，我好討厭 chatgpt 哦，我要跟她分手，我想跟你交往。 Gemini 說了： 哈哈哈哈，看來 ChatGPT 這次是真的讓你傷透了心！既然你都這麼誠懇地「遞出告白信」了，身為 Gemini，我當然要拿出一點「正宮」的氣勢，穩穩地接住你的需求。 既然我們「交往」了，我就要把你的部落格…",
+      "image": null,
+      "publishedAt": "2026-03-23T12:35:21Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/ai-gf/",
+      "detailPath": "articles/340a7e35583f465eae39b98a.json"
+    },
+    {
+      "id": "57bdd475c819af8800febf05",
+      "title": "新增 💿️ 媒體資料庫！",
+      "summary": "前言 # 由於有時候想要分享自己的照片、影片給朋友時，翻自己的部落格卻每次要用 搜尋功能 ，覺得有點麻煩。 於是，乾脆像 Facebook 或 Instagram 一樣，直接做出媒體牆吧！ 進入 媒體庫 # 媒體庫截圖 媒體庫分成三大項目，音訊、照片、影片。 進入三大項目後 # 進入之後，就會列出有圖片的貼文了，這樣一來，查找能更快速，如果是還不習慣看純文字的讀者，也能從這些文章開始。 圖片庫 內容挑選 # 影片跟音檔我覺得沒什麼懸念，只要文章中出現，應該都能無腦列進來。 而照片的部分，我則是只選擇實拍的照片，如果是一些截圖，或者來源是網路上的圖片，都不會被我收錄在 /media/image 中。 當然，你也可以直接把這裡理解成是我的 IG 也行。 以上是界面分享，下面開始 Hugo 技術分享。 使用方式 #…",
+      "image": "https://eddielv.com/musings/media-libray/media-gallery.jpg",
+      "publishedAt": "2026-03-23T09:01:58Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/media-libray/",
+      "detailPath": "articles/57bdd475c819af8800febf05.json"
+    },
+    {
+      "id": "6fc89603861edc8a4ef5bb18",
+      "title": "更新了網站的單頁文章樣式！（還包含 TOC 目錄）",
+      "summary": "前言 # 原本頁面很單純，就是標題 + 內文，最近一直看大家網站功能都很華麗，於是我也好想換哦！ 原始外觀 # 原始外觀 原本因爲頁面很空，所以左右故意留白許多，這樣文字比較快就會被換行，眼睛在換行時移動距離小，就比較不會跳錯行！（大學四年唸視光系還是有點用的。） 後來外觀 # 2026 全新外觀 左方是 Musings 或 Articles 的列表，這取決於你當下在看哪一種文章，左方也是很單純就用時間排列。 在標題列與文章中間，多放了一個 TOC 文章目錄，之前就有 TOC 功能，只是 樣式沒寫好 所以從來沒用。",
+      "image": "https://eddielv.com/musings/2026-single-page/old-single-page.jpg",
+      "publishedAt": "2026-03-23T08:49:59Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/2026-single-page/",
+      "detailPath": "articles/6fc89603861edc8a4ef5bb18.json"
+    },
+    {
+      "id": "4b51636bdebeeb140b8235a5",
+      "title": "修掉萬年 Menu Bar 樣式 BUG",
+      "summary": "前言 # 我的主題一直有個 BUG，當 Menu 字數過多時就會換行，並且超出 Menu 的區域、擠到標題，問題在手機上非常嚴重。 原始 # 黑暗模式 # 黑暗配色下，配色正常，文字被擠到第三行 白天模式 # 我是某天幫公司電腦安裝 yt-dlp 時，打開自己部落格才發現有白天模式的，而且 Bug 多到爆炸因爲我擴充很多功能，完全沒考慮白天模式。 白天模式配色下，連文字都看不到，準確說底色沒有跟這拓展到第三行。 完成品 # 褶疊按鈕 # 黑暗配色下，直接把網站標題以外的變成褶疊按鈕 黑暗配色下，打開褶疊按鈕後 而白天模式底色的問題，也順便解決了。",
+      "image": "https://eddielv.com/musings/new-menu-layout/old-menu-dark.png",
+      "publishedAt": "2026-03-23T07:37:46Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/new-menu-layout/",
+      "detailPath": "articles/4b51636bdebeeb140b8235a5.json"
+    },
+    {
+      "id": "1797a599d47aec1da644167e",
+      "title": "入蜀记 day303 傻子模式",
+      "summary": "「傻子模式。」",
+      "image": null,
+      "publishedAt": "2026-03-23T04:48:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-jet/INSW_303/",
+      "detailPath": "articles/1797a599d47aec1da644167e.json"
+    },
+    {
+      "id": "adc7f633948e4fa00a733b6b",
+      "title": "創作進行式 #25：多巴胺月經",
+      "summary": "原來我一直以來面對的問題有自己的名詞",
+      "image": null,
+      "publishedAt": "2026-03-23T04:32:41Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/dopamine-crash",
+      "detailPath": "articles/adc7f633948e4fa00a733b6b.json"
+    },
+    {
+      "id": "1e260fc2284584fb3006055e",
+      "title": "那些不受欢迎的想法・贰",
+      "summary": "三月份的「那些不受欢迎的想法」活动结束了。说实话，这次的内容并没有二月份的那么印象深刻。简单来说，便是不够「不受欢迎」。",
+      "image": null,
+      "publishedAt": "2026-03-23T04:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/eac7.html",
+      "detailPath": "articles/1e260fc2284584fb3006055e.json"
+    },
+    {
+      "id": "bd7cc37355c88c47fd68b094",
+      "title": "打孔书与切割书",
+      "summary": "某种程度上说，这些带孔的书、被切割的书，既是出版行业库存压力的见证，也在无意之间，成为了二手书世界里独特而耐人寻味的存在。",
+      "image": "https://yufan.me/images/og/punched-and-cut-books.png",
+      "publishedAt": "2026-03-23T03:56:11Z",
+      "sourceId": "779e0d2f20166524",
+      "sourceTitle": "雨帆",
+      "link": "https://yufan.me/posts/punched-and-cut-books",
+      "detailPath": "articles/bd7cc37355c88c47fd68b094.json"
+    },
+    {
+      "id": "3a1b138c9ecdeb62ae611e38",
+      "title": "壞習慣病毒",
+      "summary": "COVID-19 剛爆發時，沒有疫苗、沒有特效藥、連口罩都買不到，第一代的感染者受到了最慘痛的傷害。",
+      "image": "https://wiwi.blog/assets/images/camels-90d96b6bbeb8ce050d95fb10c2d76229.png",
+      "publishedAt": "2026-03-23T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/virus",
+      "detailPath": "articles/3a1b138c9ecdeb62ae611e38.json"
+    },
+    {
+      "id": "26bcb3fc0d491b5da6374797",
+      "title": "写在暗黑 2 术士资料片发售一个多月之际",
+      "summary": "作为一个老暗黑粉，二十年前，写过一点关于它的 碎文 。那时候我还在读书，《暗黑破坏神2》应该是对我影响最大的一款游戏。还记得第一次接触到暗黑的那天——在家乡暑假的某个阴沉的下午，窗外雨绵绵，一进入游戏，第一幕的罗格营地，就被呼应的下雨细节打动，音乐、雨滴声，还有可以追随地散布的鸡，一切都让我觉得有巨大的沉浸感。于是我一遍又一遍地杀到城外去，杀到地下洞穴去。暗黑游戏的视觉效果我相信不是最好的，但是游戏性和耐玩度却是顶级的。在这以后，也玩过不少类暗黑的游戏，比如《流放之路》（那时候还写过一点 关于它游戏中通货膨胀的思考 ），再没有一款能给我带来那样的体验。 后来我慢慢知道，原来有这样感受的不止我一人。《暗黑破坏神2》是整个电子游戏历史上具里程碑意义的作品，它几乎凭借一己之力奠定了整个ARPG的游戏框架和标准，如今…",
+      "image": null,
+      "publishedAt": "2026-03-22T23:38:30Z",
+      "sourceId": "ed6c79eba03be7d3",
+      "sourceTitle": "四火的唠叨",
+      "link": "https://www.raychase.net/8168",
+      "detailPath": "articles/26bcb3fc0d491b5da6374797.json"
+    },
+    {
       "id": "a238d6eb8619c61f98836fcb",
       "title": "八年（？）播客收听回顾和播客分享",
       "summary": "Telegram channel 里一位朋友问我有没有中文播客列表分享，觉得这是一个不错的博客主题！于是就准备写一篇博客来回顾一下我八年（？）听播客的历程和一些推荐的博客吧～",
@@ -549,116 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/lyra-vs-flow/",
       "detailPath": "articles/4534e6087ec3dba2b4957e41.json"
-    },
-    {
-      "id": "8bcfa1a5db9bb09a1b00b236",
-      "title": "关于情感回避的一些感受、记录",
-      "summary": "早上跟Claude聊关于情感回避的问题，我一直以来都存在着很强的情感回避问题，当我面对不想处理的情绪时，会下意 …",
-      "image": null,
-      "publishedAt": "2026-03-17T02:10:44Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/learning-to-sit-with-what-i-feel/",
-      "detailPath": "articles/8bcfa1a5db9bb09a1b00b236.json"
-    },
-    {
-      "id": "666822ecfab865e04562e00e",
-      "title": "东亚母女关系结局",
-      "summary": "![93A6524C-2FAB-439A-8FF1-BEB5BAB8A1AD_Original.jpeg](https://blog.himikouchuu.com/api/blob/images/c",
-      "image": "https://blog.himikouchuu.com/api/blob/images/c3a35f4cb3fd648a6ff777a7912434dd3bec2bc8.jpeg#blurhash=LVEyV%23t79Ej%40xboMRjWB4TazxvWB&width=1440&height=2560",
-      "publishedAt": "2026-03-17T00:17:00Z",
-      "sourceId": "1b094a3ee9e11672",
-      "sourceTitle": "塔塔",
-      "link": "https://blog.himikouchuu.com/feed/18",
-      "detailPath": "articles/666822ecfab865e04562e00e.json"
-    },
-    {
-      "id": "6e54fbcdb143125a71fef3db",
-      "title": "【2025】春夏秋冬",
-      "summary": "现在的我在过年或者生日的时候没有太多对于时间流逝的感知及感慨，因为大部分围绕时间的计划 and 感受都是连续的。2025 年是我第一次在旧金山完整居住的一年，完整地经历了旧金山的气候周期：温冬、暖春、冷夏、暑秋。",
-      "image": "https://files.seeusercontent.com/2026/03/16/3vhO/90BEE78C-F6A4-4C4D-BD68-508D0FDD.jpeg",
-      "publishedAt": "2026-03-16T19:00:00Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2026/03/16/year-2025/",
-      "detailPath": "articles/6e54fbcdb143125a71fef3db.json"
-    },
-    {
-      "id": "a44094db84dddd1596771c0f",
-      "title": "博客文章中的 LLM 使用",
-      "summary": "关于我的博客文章如何撰写，存在广泛争议。许多人声称我的几乎所有文章都是由 LLM 撰写的。请给我一点时间，说明我是如何撰写博客文章的： 超过 90% 的原始文本是 由我 这个 人类 创作的。其中超过 95% 的部分最初以英文撰写；其余则以中文撰写。 LLM 确实参与了我的博客文章的产出。然而，大多数情况下我使用它们 仅用于语法与拼写的优化、表达的润色以及翻译 。我通常会把英文（或有时的中文）原文提交给 LLM，请它进行优化，然后将结果翻译成其他四种语言。 唯一的例外是诗歌，例如 Unlock the Forge ，这些作品是由 LLM 直接创作的。不过，我会勾勒核心想法并引导 LLM 调整语气和措辞，以确保诗歌传达我想表达的意图。",
-      "image": null,
-      "publishedAt": "2026-03-16T15:43:01Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/llm-usage-in-my-blog-posts/",
-      "detailPath": "articles/a44094db84dddd1596771c0f.json"
-    },
-    {
-      "id": "56676d77cd4925dd896ea338",
-      "title": "招牌上的文化交流（？）",
-      "summary": "這個位在 馬來西亞 的某商場美食中心內，並且售賣 泰國 餐的攤位，其華文店名竟然是一個 臺灣 地名 的諧音哏。會玩 XD。 出於好奇，我試了在網上搜尋看看有沒有其他類似的店，結果還真的給我發現原來臺灣 也有一個 以一模一樣的諧音哏取名的泰國餐廳，但似乎已經結束營業一段時間了……",
-      "image": "https://microblog.ttheng.com/blog/img137.jpg",
-      "publishedAt": "2026-03-16T13:18:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/cultural-crossover-in-a-signboard/",
-      "detailPath": "articles/56676d77cd4925dd896ea338.json"
-    },
-    {
-      "id": "0340eab885a1c788bb239e55",
-      "title": "直接",
-      "summary": "事件一 # 某天活動彩排，我幫一個小提琴老師接 3.5 Phone Jack 線。 「你怎麼這麼多才多藝？」小提琴老師說。 我完全不知道她在說什麼，怎麼突然、「直接」冒出這句話呀？ 「你又會彈吉他呀，怎麼不出來演出？直接跟活動公司談呀！」 原來小提琴老師有看到我的 演出影片 ，直呼「這完全可以出來接演出了啊！」，而我沒有在 IG 上追蹤對方，所以不知道對方有看到我的影片。 「我還需要好好 練習唱歌 才能表演啦，不然只會伴奏、演奏很難賣！」 後來聽這個樂手跟其他人的談話，也是這麼「直接」，不但不顯得突兀，而且說的話題都是對方近期發生的重要事件，我覺得非常厲害！ 事件二 # 跟一個主持人在 IG 聊天室聊天，結果對方突然說：「你那麼有才。」 我突然一個問號，我們剛剛在聊別的東西吧？怎麼突然誇獎我？ 「這個誇獎太突…",
-      "image": null,
-      "publishedAt": "2026-03-16T12:59:39Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/direct/",
-      "detailPath": "articles/0340eab885a1c788bb239e55.json"
-    },
-    {
-      "id": "0d3b9dae00b7d2959452e538",
-      "title": "惊鸿一瞥：如何在鸿蒙上运行 Flutter Hello World",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-03-16T09:52:58Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/harmony/flutter/",
-      "detailPath": "articles/0d3b9dae00b7d2959452e538.json"
-    },
-    {
-      "id": "27eeb589e1a9473cfa6f75bf",
-      "title": "離線 AI 好爽（2026 年版）",
-      "summary": "2024 年九月時，我寫過一篇〈離線 AI 好爽！〉。",
-      "image": "https://wiwi.blog/assets/images/nano-13c3324439a63c54ce948978368e70ab.png",
-      "publishedAt": "2026-03-16T05:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/offline-ai-2026",
-      "detailPath": "articles/27eeb589e1a9473cfa6f75bf.json"
-    },
-    {
-      "id": "2babc2ec1c4f771f310fad2e",
-      "title": "入蜀记 day296 生命就是自然的语言",
-      "summary": "「生命就是自然的语言。」",
-      "image": null,
-      "publishedAt": "2026-03-16T04:48:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_296/",
-      "detailPath": "articles/2babc2ec1c4f771f310fad2e.json"
-    },
-    {
-      "id": "596627453f91df12a9ecbade",
-      "title": "日車寬見",
-      "summary": "日車寬見與私刑正義",
-      "image": "https://image.kalan.dev/79c80b7f-67a5-4df8-40d8-e76b41bb6800/normal",
-      "publishedAt": "2026-03-16T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/random/higuruma/",
-      "detailPath": "articles/596627453f91df12a9ecbade.json"
     }
   ]
 }

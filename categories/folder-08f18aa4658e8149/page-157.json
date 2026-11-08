@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "8e094fc65421a46983699adc",
+      "title": "Yarn的安全模式与高可靠性安装总结",
+      "summary": "最近几天又重新把cdh的安全模块与高可靠性模块重新搭建了一遍，这次用是的目前最新的5.1.0的tar包安装，以前把MRv1搭建了好，这次主要是熟悉安装过程，并且把YARN的安全模块与HA模块成功搭建起来。遇到的错误还是不少，安装过程也是废了我好几天，现在想想很多错误都比较典型，现在此记录下我搭建过程中遇到的错误与心得，一方面为自己以后查阅，另一方面希望也能对遇到同样问题的人有所启发。",
+      "image": null,
+      "publishedAt": "2014-08-06T14:36:08Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/08/06/cdh-yarn-ha-kerberos/",
+      "detailPath": "articles/8e094fc65421a46983699adc.json"
+    },
+    {
+      "id": "abe90e568fbf0bd56f360ec4",
+      "title": "hadoop1.0 高可靠性(HA)安装与总结",
+      "summary": "继上次 安装完Kerberos安全认证 后，现在我在这基础上，又给CDH加上了HA（high availability），也就是高可靠性，具体来讲就是双NameNode，双Jobtracker（我还是在MRv1模式下），有了HA后，这下集群的健壮性就能够得到很好的保证了。 我还是按照 官方文档 来操作的，有了上次的经验，建议大家在具体操作实施前，先快速阅读一遍，做到心中有数，我还阅读了 Apache官方的说明 ，也不用怎么详细，大概知道怎么回事就行了。",
+      "image": null,
+      "publishedAt": "2014-07-17T15:07:34Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/17/cdh-ha-installation/",
+      "detailPath": "articles/abe90e568fbf0bd56f360ec4.json"
+    },
+    {
+      "id": "fce364f321db5fe2d25cb852",
+      "title": "hadoop1.0 安全认证(kerberos)安装与总结",
+      "summary": "俗话说得好，万事开头难。在软件开发中，环境部署要算是第一门槛了。我最近折腾了一周时间把cdh5.0.2.tar.gz版本在MRv1模式下，成功集成了Kerberos安全认证，并且是在全分布式模式下。经过这次安装过程，对hadoop的了解又深入了一层。现在趁着自己刚搭建完环境，脑子还时不时的闪现遇到的错误，把我的安装过程记录于此，一方面方便自己今后查阅，另一方面希望对今后遇到同样问题人有所启发。",
+      "image": null,
+      "publishedAt": "2014-07-15T13:56:28Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/15/cdh-kerberos-installation/",
+      "detailPath": "articles/fce364f321db5fe2d25cb852.json"
+    },
+    {
+      "id": "179dc7424ab6bb3b8ca60c50",
+      "title": "「大上海计划」的遗珠",
+      "summary": "刚放假，因为有一个亲戚在上海住院，所以两天都去探病。所住医院为上海长海医院，位于上海东北部的江湾区。第一次开车到医院的时候，路过一个残破的石制建筑。它被铁栏杆围住，建筑前的空地上杂草丛生，里面却停着几辆轿车，爬山虎盖满了墙壁，建筑整体风格是传统的，类似于中山陵。我估摸着它建于民国时期，上了年头，但仍然疑惑这样一个建筑为什么荒败至此，而且这是在繁华的上海。 我打开手机上的地图，定位。地图显示在我身边的这个建筑是「上海市图书馆旧址」，这大概能解释它的古老，但依然无法解释它的残破，而且这让我多了一个疑惑：为什么上海市图书馆在东北部的江湾呢？这在民国应该算是郊区，一个城市的图书馆何以造在这里？ 好奇心来了便挡不住。 我上网搜索「上海市图书馆旧址」，但显示的信息都不是关于这个建筑，却指向市中心的图书馆旧馆。于是我把「黑…",
+      "image": "https://i.loli.net/2020/02/17/sDKatuzWjRVy2ml.jpg",
+      "publishedAt": "2014-07-14T16:58:02Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2014/07/14/shanghai-blueprint/",
+      "detailPath": "articles/179dc7424ab6bb3b8ca60c50.json"
+    },
+    {
+      "id": "7374f4dc29a9cd64097ea8f8",
+      "title": "JVM 的类初始化机制",
+      "summary": "当你在 Java 程序中 new 对象时，有没有考虑过 JVM 是如何把静态的字节码（byte code）转化为运行时对象的呢，这个问题看似简单，但里面的细节很多，而且由于开发者在平时与之打交道较少，很少有同学会去主动探索这块知识，但这个知识点却是面试时常考的地方，而且熟练掌握类加载是实现代码热部署的关键。",
+      "image": null,
+      "publishedAt": "2014-07-12T05:02:29Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2014/07/12/order-of-initialization-in-java/",
+      "detailPath": "articles/7374f4dc29a9cd64097ea8f8.json"
+    },
+    {
+      "id": "4c2e649547130a3082bf6c63",
+      "title": "玩木工【五】：儿童版 Adirondack Chair",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2014-07-06T05:51:24Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw005/",
+      "detailPath": "articles/4c2e649547130a3082bf6c63.json"
+    },
+    {
+      "id": "7763cd621d635a9b3339b26e",
+      "title": "一点联想（《建筑大师盖瑞速写》评论）",
+      "summary": "「《建筑大师盖瑞速写》评论」",
+      "image": null,
+      "publishedAt": "2014-07-03T06:22:44Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/archives/douban/Review_Movies/Review_SketchesOfFrankGehry_20140703/",
+      "detailPath": "articles/7763cd621d635a9b3339b26e.json"
+    },
+    {
+      "id": "a307986ae4c88de975410f3a",
+      "title": "摘录：石康的微博",
+      "summary": "「我要说的是，那些最初进入你大脑的观念是如此地重要，以至于它们成为你所有重要决策的惟一依据，当它们错了，就意味着你以后会花费数倍的代价去补救——你如果年轻时认为运动很累，那么你中年就会因没有运动习惯成天晕头涨脑，而这一点甚至补救起来更为吃力，效果不佳且缺乏乐趣」",
+      "image": null,
+      "publishedAt": "2014-07-02T03:13:15Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/Note/Note_ShiKang_Weibo/",
+      "detailPath": "articles/a307986ae4c88de975410f3a.json"
+    },
+    {
+      "id": "437c2f6b7b8f68a68c7d9e3f",
+      "title": "半日闲",
+      "summary": "下午，一家三口分别睡在屋子里三个不同的地方，各自入梦。昏睡的我慢慢恢复意识，如同从静止的时光中苏醒。除了窗外鸟鸣狗叫和客厅电视机发出的轻微声响，其余默然无声。恍惚间仿佛回到了十年前一个无事的夏日午后。",
+      "image": null,
+      "publishedAt": "2014-06-29T22:46:46Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2014/06/29/sunday-afernnon/",
+      "detailPath": "articles/437c2f6b7b8f68a68c7d9e3f.json"
+    },
+    {
+      "id": "d999c1310b189164268847d2",
+      "title": "风吹微微",
+      "summary": "回寝室之时，本已经停歇的雨，一顿晚餐的功夫又落了下来。 并不算大，骑着车，风往身后吹去。短短的路程，脑子里却闪过无数念头。 不用十分钟，就到了。脱去潮湿的衣服，冲凉。 出来以后，站在阳台上，看着风吹树枝弯曲的弧度，灰白弥漫的天空，零星散散的雨水。有一种无法名状的触动。 并不是打通任督六脉，猛然开窍之类的触动，仅仅是体悟到某种生存深处的纯质。 我想。 有的人匆忙一生为了最后的荣光与欲望的实现，有的人却恬淡度日只在乎基本的需求和日夜的微变，前者像是斗士，或真或假，而后者我愿意用隐士作为它们的代表，尽管隐士并不真的多。 梦想是我们所追求的生存状态，但梦想的背后是否是我们想要的人生的结果呢？ 比如我一心想要成为记者，做一些有价值有意义的采访报道，追求在路上，好奇追问的生活状态。 可是，我还告诉自己，要在年老以后，开一…",
+      "image": null,
+      "publishedAt": "2014-06-26T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2014/06/27/breeze",
+      "detailPath": "articles/d999c1310b189164268847d2.json"
+    },
+    {
       "id": "0c82fa7733bc676db6418717",
       "title": "玩木工【四】：开始刨木头",
       "summary": "",
@@ -549,116 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/tedx-talk",
       "detailPath": "articles/bf17c9659807cc1cd8a38820.json"
-    },
-    {
-      "id": "ab93f389ec963d654d4debf3",
-      "title": "Java中Collection和Collections的区别",
-      "summary": "前几天去一个公司参加面试遇到这个问题，Java中Collection和Collections的区别，当时不会，回来从网上找到，现在记录一下。 1、java.util.Collection 是一个 集合接口 。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。 Collection ├List │├LinkedList │├ArrayList │└Vector │ └Stack└Set 2、java.util.Collections 是一个包装类。它包含有各种有关集合操作的 静态多态方法 。此类 不能实例化 ，就像一个 工具类 ，服务于Java的Collection框架。 impo…",
-      "image": null,
-      "publishedAt": "2013-07-23T11:12:46Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2013-07-23-java-collection-collections/?utm_source=rss",
-      "detailPath": "articles/ab93f389ec963d654d4debf3.json"
-    },
-    {
-      "id": "c9da39760bd04b541dd1c3c5",
-      "title": "Linux下SVN的使用",
-      "summary": "今天在新浪sae上搭建了个人博客，新浪sae采用svn的方式进行代码管理，之前在windows下面做svn操作都是采用TortoiseSVN，今天正好开机到了linux下面，那么好吧，就用svn传我的wordpress到sae中去。 首先，安装svn。 sudo apt-get install subversion ubuntu下面安装svn，就是这么简单。 可以通过man svn查看使用手册。 下面介绍一些常用命令： 1.检出文件（checkout）。 使用命令： svn co http://{svn repository url} /destination 然后系统会用当前的用户名登录，提示输入密码，如果第一次密码输入错误，会提示你输入用户名；输入正确后，就可以检出文件了。 2、Ubuntu SVN提交文…",
-      "image": null,
-      "publishedAt": "2013-07-12T13:30:52Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2013-07-12-use-svn-in-linux/?utm_source=rss",
-      "detailPath": "articles/c9da39760bd04b541dd1c3c5.json"
-    },
-    {
-      "id": "834e64e4a831b6449530dc81",
-      "title": "音樂課本",
-      "summary": "我被寫到康軒版的國三音樂課本裡了，真是感謝書商這麼看得起我，有譜例、還幫我加 Moderato 耶！",
-      "image": "https://wiwi.blog/assets/images/google-da52053e5a3aaad9d642b826eb16b80b.jpg",
-      "publishedAt": "2013-06-11T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/music-textbook",
-      "detailPath": "articles/834e64e4a831b6449530dc81.json"
-    },
-    {
-      "id": "56c032bccd72a438ec72fda8",
-      "title": "對的手",
-      "summary": "最近學到的事情：",
-      "image": null,
-      "publishedAt": "2013-04-20T12:10:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/right-hand",
-      "detailPath": "articles/56c032bccd72a438ec72fda8.json"
-    },
-    {
-      "id": "98ba10a62ca03b2e249d7f1d",
-      "title": "小葉，真有你的！",
-      "summary": "今天有個關於音樂的新聞：台語歌手蕭玉芬的新歌《紙風箏》，被日本網友發現它的前奏和日本團體 B'z 的《もう一度キスしたかった》（想要再一次親吻）完全相同。",
-      "image": "https://wiwi.blog/assets/images/ye-64d2b717260462cea44c19ab6db92f86.png",
-      "publishedAt": "2013-04-17T15:52:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/small-yeh",
-      "detailPath": "articles/98ba10a62ca03b2e249d7f1d.json"
-    },
-    {
-      "id": "2b7a2e7fe151dc3cbc008205",
-      "title": "第四堂木吉他課",
-      "summary": "上吉他課已經第四堂了 老師今天一進來就說 6/30 有成果發表會要參加 所以現在才上三堂課(第四堂選歌) 而且剩兩個月 要死人了.",
-      "image": null,
-      "publishedAt": "2013-04-08T17:01:23Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/guitar-learning/",
-      "detailPath": "articles/2b7a2e7fe151dc3cbc008205.json"
-    },
-    {
-      "id": "85155053f85729babcd40578",
-      "title": "时代在变",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2013-03-26T22:09:36Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/nonsense/the-times-are-changing/",
-      "detailPath": "articles/85155053f85729babcd40578.json"
-    },
-    {
-      "id": "1d77f5534ecf12276dbc35d8",
-      "title": "大杯皺",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/bigcup2-c0ed54b49ed2c4e0bebdbce0c24958e7.jpg",
-      "publishedAt": "2013-02-22T20:13:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/da-bei-zhou",
-      "detailPath": "articles/1d77f5534ecf12276dbc35d8.json"
-    },
-    {
-      "id": "ae380cd3845609a942163196",
-      "title": "JS ONE 是什麼？",
-      "summary": "在板橋隨處都可以見到「JS ONE」的貼紙，甚至連店家內的廁所面紙盒都有。",
-      "image": "https://wiwi.blog/assets/images/jsone-73df2943c83eea2056da19d8c7700312.jpg",
-      "publishedAt": "2013-02-21T06:47:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/js-one",
-      "detailPath": "articles/ae380cd3845609a942163196.json"
-    },
-    {
-      "id": "32ca7eca5d43cc30174dfc13",
-      "title": "懶得出門買晚餐？你可以舔鋼琴！",
-      "summary": "我的一個鋼琴學生跟我說，她在音樂教室教了一個非常難搞的鋼琴學生，並且給我看了她們上鋼琴課時拍的手機影片。",
-      "image": "https://wiwi.blog/assets/images/smudgedIpad-48a2927690163a0a829b157a626c18a0.jpg",
-      "publishedAt": "2013-02-17T14:13:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/lick-the-piano",
-      "detailPath": "articles/32ca7eca5d43cc30174dfc13.json"
     }
   ]
 }

@@ -1,6 +1,116 @@
 {
   "items": [
     {
+      "id": "e3b2e946cb65e8c0a6577c9f",
+      "title": "一个Android开发者的Google IO 2024信息汇总",
+      "summary": "AI和大模型很火，今年的google io上面感觉各个方向都和AI有关，Android平台相关的东西倒是感觉不太多了。我这里整理一下Android相关的信息。Android主要就是Android 15的发布，以及jetpack compose的更新和google play的一些更新。 AI与Android Android 14开始手机会内置Gemini Nano，开发者可以通过AI Core来调用AI的能力，目前是google pixel 8 pro和三星的s24已经内置了。除了端上，开发这还可以使用Firebase新提供的一些能力使用AI模型。 对于开发者来说，除了开发应用提供AI能力给用户，开发过程中也能体验到google提供的AI能力，下载Android Studio Koala即可使用，提供了类似gi…",
+      "image": "https://img.isming.me/image/io24-stacks.webp",
+      "publishedAt": "2024-05-21T13:53:44Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-05-21-google-io/?utm_source=rss",
+      "detailPath": "articles/e3b2e946cb65e8c0a6577c9f.json"
+    },
+    {
+      "id": "ee2c6919f932e68a31a68ed3",
+      "title": "电台：吸尘器音乐",
+      "summary": "本期电台是计划中的第二期电台，在去年十月就说好要录了。今年4月13号开始录制，期间发生重大事故，最后在5月20号才剪辑/抢救完毕。 另外，经主播长提议，本电台更名为“双贝子电台”。 在线收听 📢：也可以用AntennaPod或苹果播客订阅本播客RSS地址（ https://emptystack.top/podcast ）来收听！ function seek(time) { const player = document.getElementById('player') player.play() player.currentTime = time } 你的浏览器不支持嵌入音频，但你可以 下载 下来听。 视频内容：俩闲人聊盯鞋音乐 00:00 噪音预警 00:17 Panchiko – D>E>A>T>H>M>…",
+      "image": null,
+      "publishedAt": "2024-05-21T11:23:58Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/vacuum/",
+      "detailPath": "articles/ee2c6919f932e68a31a68ed3.json"
+    },
+    {
+      "id": "cd3d79ddf09b74d47e83df5c",
+      "title": "Android Perfetto 系列 3：熟悉 Perfetto View",
+      "summary": "本篇是 Perfetto 系列文章的第三篇，前两篇介绍了 Perfetto 是什么以及 Perfetto Trace 怎么抓，本篇主要是在网页端打开 Perfetto Trace 之后，面对复杂的 Perfetto 信息该怎么看。 Android 官方将 Systrace 列为 legacy 工具，并 推荐在 Android 10 及以上使用 Perfetto 。写下本文时，Perfetto 在我的日常工作中已基本取代 Systrace，我接触到的 OPPO、vivo 团队也在迁移，因此用这个系列继续介绍如何观察 Android 系统。 技术核查：2026-10-14。 保留 2024 年界面与案例截图，快捷键和分析语义按官方文档及 v58.3（ 11fbaed83636 ）源码补充。原始案例 Trace 未…",
+      "image": null,
+      "publishedAt": "2024-05-20T23:30:23Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-03-how-to-analysis-perfetto/",
+      "detailPath": "articles/cd3d79ddf09b74d47e83df5c.json"
+    },
+    {
+      "id": "cf7d9716e997a897533d806d",
+      "title": "Android Perfetto 系列 2：Perfetto Trace 抓取",
+      "summary": "上一篇文章 Android Perfetto 系列 1：Perfetto 工具简介 介绍了 Perfetto 是什么，这篇简单介绍一下 Perfetto 的抓取。 Android 官方将 Systrace 列为 legacy 工具，并 推荐在 Android 10 及以上使用 Perfetto 。写下本文时，Perfetto 在我的日常工作中已基本取代 Systrace，我接触到的 OPPO、vivo 团队也在迁移，因此希望把原来的 Systrace 分析方法用 Perfetto 再讲一遍。 技术核查：2026-10-14。 本文以 Android 12+ 设备为主要示例，保留 2024 年截图；旧系统与新版 UI 的差异在对应段落说明。命令和配置按官方文档、脚本核对，本文未新增真机采集结果。",
+      "image": null,
+      "publishedAt": "2024-05-20T23:29:41Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-02-how-to-get-perfetto/",
+      "detailPath": "articles/cf7d9716e997a897533d806d.json"
+    },
+    {
+      "id": "997fd13c84aa00f414d7f205",
+      "title": "Android Perfetto 系列 1：Perfetto 工具简介",
+      "summary": "本篇是 Perfetto 系列文章的第一篇，主要是简单介绍 Perfetto 工具，包括 Perfetto 的历史、发展，以及 Perfetto 能做什么。 Android 官方将 Systrace 列为 legacy 工具，并 推荐在 Android 10 及以上使用 Perfetto 。写下本文时，Perfetto 在我的日常工作中已经基本取代 Systrace，我接触到的 OPPO、vivo 团队也在迁移。许多新接触 Android 性能优化的小伙伴面对复杂的界面和功能，希望我能把之前的 Systrace 文章用 Perfetto 来呈现。 技术核查：2026-10-14。 本文初稿和截图来自 2024 年，保留当时的使用体验。下面补充 Android 10/11/12 的数据源边界，以及 Perfet…",
+      "image": null,
+      "publishedAt": "2024-05-20T23:29:22Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2024/05/21/Android-Perfetto-01-What-is-perfetto/",
+      "detailPath": "articles/997fd13c84aa00f414d7f205.json"
+    },
+    {
+      "id": "6cec7f5c9d99d989d620cf79",
+      "title": "刀斩肉身，心斩灵魂",
+      "summary": "本是不愿意玩手游的，奈何情怀作祟，那就凑个热闹吧。 对应以前的60级，那个干什么都很慢的版本。 当年偷偷跑去黑网吧，只为把等级赶紧升到60级。奈何装备太垃圾，师父也不常在线，于是等级一直上不去。 直到我遇到了西西游戏网，那科技的力量，那秒杀的快感，让我心驰神往。 但这世间所有美好的东西，都暗暗标好了价格。手里的武器变成小木棍，六字真言。 还有我那被误封10年的账号。🌿",
+      "image": null,
+      "publishedAt": "2024-05-20T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/dnf-mobile-game",
+      "detailPath": "articles/6cec7f5c9d99d989d620cf79.json"
+    },
+    {
+      "id": "5edc14d1aa79e439a2dbdd44",
+      "title": "Toots 314 2024 May.12 - May.18",
+      "summary": "「不知道自己在留恋和遗憾什么」",
+      "image": null,
+      "publishedAt": "2024-05-20T07:52:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2024/MastodonTootsArchives_20240518/",
+      "detailPath": "articles/5edc14d1aa79e439a2dbdd44.json"
+    },
+    {
+      "id": "d629aa52408dc08326a0d51f",
+      "title": "游泳记",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-05-20T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/%E6%B8%B8%E6%B3%B3%E8%AE%B0/",
+      "detailPath": "articles/d629aa52408dc08326a0d51f.json"
+    },
+    {
+      "id": "f498d4d8b44b3b88259d6421",
+      "title": "IBM 全栈开发【8】：用于人工智能和开发项目的 Python",
+      "summary": "本文是 IBM 全栈开发课程的第八篇学习笔记，聚焦于将 Python 应用于人工智能和实际开发项目。笔记首先介绍了 Python 的编码规范（PEP8）、单元测试、包的创建等软件工程最佳实践。接着，文章讲解了如何使用 Flask 微框架来部署网络应用，涵盖了路由、请求处理和错误处理等核心功能。最后，通过一个完整的毕业项目案例，详细演示了如何利用 Watson NLP 库创建一个情感检测 AI 应用，并将其打包、测试，最终通过 Flask 部署为一个功能完善的网络服务。",
+      "image": null,
+      "publishedAt": "2024-05-19T22:49:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/224a.html",
+      "detailPath": "articles/f498d4d8b44b3b88259d6421.json"
+    },
+    {
+      "id": "68c445c9b2fb78975a430615",
+      "title": "大海里面有什么",
+      "summary": "大海里面有什么 最近在背一些海洋动物的单词，发现很多单词来源挺有意思，这里整理和分享一下。 海牛 / manatee / خروف البحر (kharuf al-bHr) 字面意思是海羊 海胆 / sea urchin / قنفذ البحر (qunfuTH al-bHr) 字面意思是海刺猬 贻贝 / mussel / بلح البحر (balaH al-bHr) 字面意思是海枣，不得不说样子确实挺像的。 但是在阿拉伯语里，更常见的枣其实是تمر (tamar)。我特地搜索了一下两种枣的区别—— بلح的形状通常是椭圆形的，皮很厚，柔软而湿润，颜色通常为黄色或棕色；但是تمر通常是圆的，颜色偏红棕色，果肉更干、更结实 بلح的味道很甜；تمر的味道通常带点酸和苦 水母 / jellyfish /…",
+      "image": "https://yuqiqin.me/img/user/B-Attachment/Pasted%20image%2020240519233549.png",
+      "publishedAt": "2024-05-19T15:54:04Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/who-lives-in-a-pineapple-under-the-sea/",
+      "detailPath": "articles/68c445c9b2fb78975a430615.json"
+    },
+    {
       "id": "2ed0c5f34734000c4b1f57d1",
       "title": "使用 Terraform 管理 CloudFlare 上的 DNS 解析记录",
       "summary": "CloudFlare 提供了一个方便的手动 DNS 解析记录管理界面，但当所需的解析规模逐渐增大，或是涉及到需要团队合作的场合时，再使用基于人力的管理方案的话，就更有可能引入一些奇怪的问题。本文以在 GitLab 上托管的仓库与流水线的实现为例，简单叙述使用 Terraform 管理 CloudFlare DNS 的操作流程。",
@@ -549,116 +659,6 @@
       "sourceTitle": "Psychic Paper",
       "link": "https://yuqiqin.me/numeral-case-marking/",
       "detailPath": "articles/d36ff0569606c0a278ac78f2.json"
-    },
-    {
-      "id": "d4f822872d45e496669329a9",
-      "title": "我在英国学阿拉伯语17——五个名词",
-      "summary": "我在英国学阿拉伯语17——五个名词 第四周 (18.2.5~2.9) 上周大部分内容都在讲主动分词和被动分词的特殊变形，我把它们单独整合在 这篇文章 里了。 这周的口语课按计划做了演讲，我讲的是中国新年，年兽的故事，也没有准备什么稿子，所以这里就不发了。 上课内容 这个内容挺简单的，5个不规则标记格的名词，它们分别是 首先是普通状态下的格标记 如果这几个词作为正偏组合的正次，或是后面有接人称的话，需要把注音变成柔母写出来 主格是waw，宾格是alif，属格是ya 比较特别的情况是，如果所接的人称是\"我\"，则这个人称后缀ya会覆盖掉所有的格标记，如例子所示。 就这么简单，最后再说一下复数变形就没了 拿\"兄弟\"举例，它有两个复数形式，第一个复数常见于\"穆斯林兄弟\"之类的词，第二个复数更多的用于日常生活中，一般如果…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-9099523faf8c495cc718da4045604654_720w.webp",
-      "publishedAt": "2024-04-22T15:34:23Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/five-special-nouns/",
-      "detailPath": "articles/d4f822872d45e496669329a9.json"
-    },
-    {
-      "id": "4ab04a15715533e42d785af0",
-      "title": "磨人的小妖精：非一类特殊动词的主动和被动分词变形",
-      "summary": "磨人的小妖精：非一类特殊动词的主动和被动分词变形 主动分词和被动分词作为阿语里很重要的一部分，花了两周的时间终于收尾了，我编辑了一下 原文章 里的内容，只留下了一类动词的基本变形，所有非一类的四类特殊动词变形都在这了，这两天上课真是累死我们了…… 一些基本规则: 主动分词和被动分词不存在第九类动词 被动分词没有第五类和第七类动词 部分词主动和被动分词词形一样，需要靠注音和语境来区分意思，这里用划线标注出来 4）基本规律（除尾柔动词）基本都是过去时基本形式+mu，然后主动分词的第二个根母为kasra，被动分词则为fatha，然后加上一些不同的改变 首柔动词 第七类动词不接受第一个根母为柔母的词，故主动分词和被动分词都不存在 中柔动词 标红的是不听话的柔母 尾柔动词 尾柔的复数变形简直想死…… 这里主动分词是加t…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-d503d3d2e219d7ddc0264a0034aadec9_720w.png",
-      "publishedAt": "2024-04-22T15:34:11Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/participles-for-some-special-verbs/",
-      "detailPath": "articles/4ab04a15715533e42d785af0.json"
-    },
-    {
-      "id": "d88f36a3f52d7ca671008398",
-      "title": "我在英国学阿拉伯语系列",
-      "summary": "我在英国学阿拉伯语系列 前言 最近在B站刷到了 2016年央视阿拉伯语大赛 的视频，重拾对阿语的兴趣，一直在用 Drops 背单词，每天5-10分钟还挺轻松的，感觉记起了很多单词。 然后想着自己已经创建了一个博客，以前写的文章毕竟也是自己的心血，所以想要在自己的博客也有个展示。与其说是「搬运」，不如说是「备份」。如果哪天知乎倒闭了，我需要能够保留我的文章底稿。 当年写这个真的付出了非常大的心血，说没就没我会很伤心的。 原本知乎的文章还是会留着的，因为感觉阅读量还挺大，希望能够帮助到其他想要学习阿语的人。 文章列表 我在英国学阿拉伯语1——学校和专业 我在英国学阿拉伯语2——大一学什么 我在英国学阿拉伯语3——地狱模式ON 我在英国学阿拉伯语4——正偏组合和首柔动词 我在英国学阿拉伯语5——第五类动词和衣服 我…",
-      "image": null,
-      "publishedAt": "2024-04-22T15:33:47Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/learning-arabic-in-the-uk/",
-      "detailPath": "articles/d88f36a3f52d7ca671008398.json"
-    },
-    {
-      "id": "3f2d01e78db3947152af72f7",
-      "title": "我在英国学阿拉伯语16——几个助词",
-      "summary": "我在英国学阿拉伯语16——几个助词 第三周 (2018.1.29~2.2) 不知道是不是上个学期上课进度太肝了，感觉这两个星期内容好少 口语课 本周口语课练习用主动分词和这周讲的几个助词造句子，看图说话，下周口语课要做一个5分钟演讲，内容是一个自己喜欢的故事。我大概会选一个中国的神话故事来讲吧，目前在夸父追日和嫦娥奔月之间纠结。 方言课 本周方言课也没教新的词汇，就练习对话，一个人当边检员，一个人当入境的叙利亚籍求学的学生。 上课内容 有一些助词很早之前就见过了，但是一直没讲到底怎么用，这周把最重要的一个kaana讲了。在一开始接触这个词的时候，老师只说这个类似于to be一样的词，今天才知道能够表示的内容其实挺多的。 因为中文不标记时态，只标记体，所以其实这部分中文翻译不太好翻，我们在上课的时候用的也是英语…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-6db88186fd3643c8535239f735cf80f9_720w.webp",
-      "publishedAt": "2024-04-22T15:33:29Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/some-auxiliary-verbs/",
-      "detailPath": "articles/3f2d01e78db3947152af72f7.json"
-    },
-    {
-      "id": "e64547627e32b1c36055aaea",
-      "title": "我在英国学阿拉伯语14——第七、第八、第十类动词",
-      "summary": "我在英国学阿拉伯语14——第七、第八、第十类动词 第一周 (18.1.15 ~ 1.20) 阻止你学好一门语言的最大杀器是放假 上学期的期考出分了，惨不忍睹，全班平均分不到50，还有两个小伙伴没及格，太可怕了，3个小时都写不完，就像在用阿拉伯语考SAT一样…… 犹记得阿拉伯语1的时候班上还有60多人，现在只剩下不到20人了，可怕…… 首先每堂课前朗诵的那首诗变成了《妈妈 妈妈》 口语课 第一周口语课主要还是复习热身，聊一聊2017年发生的事，还有对2018年的展望，下周五前交一篇相同话题的250字作文 里面提到的12星座在这里整理一下 上课内容 第七类动词 所有第七类动词都是不及物动词 现代阿语里没有任何一个第七类动词是以r, ya, waw, l, n 和 hamza打头的 所有第七类动词的现在时都是ali…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-436aad49e2d11e2c31c1aae14b14ee45_720w.webp",
-      "publishedAt": "2024-04-22T15:33:18Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/form7-form8-and-form10-verbs/",
-      "detailPath": "articles/e64547627e32b1c36055aaea.json"
-    },
-    {
-      "id": "bfa1a512e7b9aa1a612c48b0",
-      "title": "我在英国学阿拉伯语13——数字、时间和颜色",
-      "summary": "我在英国学阿拉伯语13——数字、时间和颜色 语法点和大部分词汇之前的文章都已经总结得差不多了，所以感觉也没必要再单独开一篇文章都丢进去了，之前做的笔记已经非常详细了。现在把一些特别基础的东西自己整理了一下，分享给大家。虽然学了快两年的阿语了，但是每次一说到数字心头都会紧一下。 数字 不得不说阿拉伯人真是天才，数字硬生生把我的很多同学虐出了心理阴影。我自己每学到一个新的阶段也要停下来，从头学一遍。 首先3到10的数字有阴有阳，这里基数词加了圆ta只是读着好听 序数词的基本构词法为第一个根母变长音，然后加上al 两位数的基数词 (看十位/交换性别) a. 阳性 - 个位数是阴性，十位数是阳性 b. 阴性 - 个位数是阳性，十位数是阴性 两位数的序数词 (性别一致) 几十、几十的序数词为基数词+al，并且用waw连…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-327360585419701b0e1c9e46371618dd_720w.webp",
-      "publishedAt": "2024-04-22T15:33:01Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/vocab-for-digits-time-and-colour/",
-      "detailPath": "articles/bfa1a512e7b9aa1a612c48b0.json"
-    },
-    {
-      "id": "35d8346c6a3ae82bf99c901a",
-      "title": "我在英国学阿拉伯语12——出国交换",
-      "summary": "我在英国学阿拉伯语12——出国交换 出国交换的会议开在我考口语的同一天下午，虽说已经进入复习周了，但还是想去看看。我大致了解了一圈发现，整个班20几个人，只有3个像我一样把阿拉伯语当做选修课 (专业和阿语不沾边) 的人，还有一两个交换学生。无论是从学校的制度上来看，还是父母的意愿来看，让我在未来交换到中东国家学习是不可能的，所以我只能坐在后排静静憧憬一下阿语国家的学习生活。 综合考量国际政治局势，今年可以交换的学校有这四个: 约旦，安曼，IFPO (Institute Francais du Proche - Orient) 摩洛哥，菲斯，The Arabic Language Institute 阿曼，伊比利，Noor Majan 埃及，开罗，ILI (International Language Inst…",
-      "image": null,
-      "publishedAt": "2024-04-22T15:32:40Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/abroad-exchange/",
-      "detailPath": "articles/35d8346c6a3ae82bf99c901a.json"
-    },
-    {
-      "id": "a7ea9bf490370176cec5de97",
-      "title": "我在英国学阿拉伯语11——期末口语复习",
-      "summary": "我在英国学阿拉伯语11——期末口语复习 第十一周复习周的内容没有什么特别需要分享和记录的东西，上课就是回顾之前的内容，做做练习而已。阅读课的材料如下，很普通的英翻阿: 复习的话我大概还会再分几个章节，把在OneNote里整理过的资料再发出来，现在正着重准备这周四的口语考试。因为会有演讲，题目是之前口语课的内容，所以这次更新先整理口语课学到单词。 首先是方言部分，最后一节课老师说这学期可以暂时先用标准阿语回答问题，毕竟一星期一次的口语练习还是不够，但是下学期就规定只能用自己选择学习的那一门方言回答问题。以下为Amiya方言三种时态和常见人称的变形 (直接复制粘贴课件里面的内容了): 划线部分为方言与标准阿语相同的说法 接下来是口语课需要重点掌握的词汇 (部分已发过) 身体特征 感觉 性格 身体部位 节日 购物…",
-      "image": "https://yuqiqin.me/img/user/B-Attachment/v2-7b0816a61fd6f1309b4d016b0264b9ca_720w.webp",
-      "publishedAt": "2024-04-22T15:32:29Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/final-oral-review/",
-      "detailPath": "articles/a7ea9bf490370176cec5de97.json"
-    },
-    {
-      "id": "db29ff7c88d41fce3457ee7c",
-      "title": "我在英国学阿拉伯语10——重母动词和双数",
-      "summary": "我在英国学阿拉伯语10——重母动词和双数 第十周 (17.11.20~11.24) 这周就是上课的最后一周了，下周是复习周，连柔动词被鸽到下个学期了 口语课 这周口语课介绍的是不同节日的阿语说法，然后下周会做一个小组的报告，每个组介绍一个阿拉伯世界的节日或者习俗，我们组抽到的是婚礼，下周再更新这部分的内容。 上课内容 重母动词 学了这么久的柔母突然混进来了一股清流，重母动词的变形个人感觉非常好记，首先要求掌握的大概有这些词 重母动词的变形一般有两种形态，第一种是拼在一起写然后字母上加叠符，第二种是展开写。 过去时的变形，以下四个人称把字母拼起来加叠符，其余均为展开写 现在时的变形，除了antunna和hunna展开写，其它所有人称均为拼在一起写 以上规则适用于除第二和第五类的所有动词，以下仅为举例不同形式的不…",
-      "image": "https://pic4.zhimg.com/80/v2-459cf511bd1d35a2f67635e17f6ca9e3_720w.webp",
-      "publishedAt": "2024-04-22T15:32:13Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/geminate-verbs-and-duals/",
-      "detailPath": "articles/db29ff7c88d41fce3457ee7c.json"
-    },
-    {
-      "id": "25c1077a831f3554a40b5d67",
-      "title": "我在英国学阿拉伯语8——第三、第六类动词和尾柔动词",
-      "summary": "我在英国学阿拉伯语8——第三、第六类动词和尾柔动词 第八周 (17.11.6~11.10) 这周内容爆炸多，请还没正式学到这个知识点的同学做好身心准备 口语课 本周口语课要求做一个5分钟的演讲，介绍自己的家庭，至少要讲5个特点，使用不超过5个生词。上次演讲还是方言混标准语，这次尝试着只说方言，很多方言的动词变形还是记不住，提纲如下，请自行脑补阿语： 我们家不怎么拍照，这是一张2013年的、我和我爸爸的照片。这是年轻时候的我爸，他正在教我做饭。 我爸爸以前有着和我一样的短黑发，但是现在已经没有头发了，变成秃子了 我爸爸以前很帅很迷人，有很多女孩子喜欢；虽然现在变老了，他还是很帅，他只要我妈妈 我爸爸是在我出生前2年认识我妈妈的，他们在同一所学校学习，是同学 我爸爸是个工程师，他建了很多桥；但是他最喜欢的是做菜，…",
-      "image": "https://pic1.zhimg.com/80/v2-032f64ac708c6f236ce45c51e66a5404_720w.webp",
-      "publishedAt": "2024-04-22T15:31:27Z",
-      "sourceId": "207f6e65632bf687",
-      "sourceTitle": "Psychic Paper",
-      "link": "https://yuqiqin.me/form3-form6-and-defective-verbs/",
-      "detailPath": "articles/25c1077a831f3554a40b5d67.json"
     }
   ]
 }

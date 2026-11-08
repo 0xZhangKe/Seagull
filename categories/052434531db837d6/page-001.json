@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "19cffe64927a0e090a4b0b93",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: <https://late…",
+      "image": null,
+      "publishedAt": "2026-11-07T23:57:46Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+      "detailPath": "articles/19cffe64927a0e090a4b0b93.json"
+    },
+    {
       "id": "4e351f6e5f806cf6a80e1a9d",
       "title": "Quoting Nilay Patel",
       "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone…",
@@ -318,17 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/24/battledrones/",
       "detailPath": "articles/3b5ba7901be42c97d4df4585.json"
-    },
-    {
-      "id": "ab926643ccfab1e35bfc4e72",
-      "title": "Quick Study",
-      "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no ext…",
-      "image": "https://static.simonwillison.net/static/2026/heron-oil.webp",
-      "publishedAt": "2026-10-23T21:35:13Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-      "detailPath": "articles/ab926643ccfab1e35bfc4e72.json"
     }
   ]
 }

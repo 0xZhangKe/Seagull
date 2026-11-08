@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "a48729c4a8404cfa3560a6d0",
+      "title": "Pilotman与绿墨水",
+      "summary": "互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.top/note/pilotman_ink",
+      "image": "https://emptystack.top/processed_images/Pilotman&ink-fs8.d48d3d632a53cc50.webp",
+      "publishedAt": "2019-10-27T11:29:38Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/pilotman_ink/",
+      "detailPath": "articles/a48729c4a8404cfa3560a6d0.json"
+    },
+    {
+      "id": "50de3067b076b7d0db65d24d",
+      "title": "笔记方式",
+      "summary": "让你重新拥有时间的超级笔记术：子弹笔记",
+      "image": null,
+      "publishedAt": "2019-10-24T09:34:00Z",
+      "sourceId": "7e105df8e0969fc7",
+      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
+      "link": "https://fravilion.top/index.php/archives/25/",
+      "detailPath": "articles/50de3067b076b7d0db65d24d.json"
+    },
+    {
+      "id": "a7861fad96495ae4c7579601",
+      "title": "Android 中的“后台无效动画“行为分析",
+      "summary": "这篇文章记录的是 2019 年遇到的后台动画问题：应用界面不可见了，进程里却仍有动画工作在执行。但是当用户知道一个 App 退到后台之后还在持续做无效的动画，而这个动画完全是无意义的，而且用户还不知道他在做动画，消耗用户那可怜的电量的时候，轻则被多任务杀掉，禁止后台运行，重则直接卸载。 这个问题容易被忽略。当时我使用 Systrace ，在多开应用后退回桌面，左右滑动并抓取 Systrace ，发现部分已离开的应用仍在频繁执行动画回调。复查时应固定操作和应用版本，并记录界面可见性，不能把“打开很多应用”当成必要或充分条件。 这里讨论的是界面已不可见、业务也不再需要，却仍持续推进的动画。它会增加不必要的工作；但进程还活着不等于能无限制使用 CPU，现代系统还可能冻结 cached 进程。往 Choreograp…",
+      "image": null,
+      "publishedAt": "2019-10-24T00:27:34Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/10/24/Android-Background-Animation/",
+      "detailPath": "articles/a7861fad96495ae4c7579601.json"
+    },
+    {
+      "id": "f5c0cf8e6eb340ed9bd618f9",
+      "title": "存链",
+      "summary": "「便于检索存档。」",
+      "image": null,
+      "publishedAt": "2019-10-23T02:19:03Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/PageAndToolLinks/",
+      "detailPath": "articles/f5c0cf8e6eb340ed9bd618f9.json"
+    },
+    {
+      "id": "58c0a158f4e9cb528804525b",
+      "title": "Bye Bye Beijing Project",
+      "summary": "「关于烂。」",
+      "image": null,
+      "publishedAt": "2019-10-23T02:19:03Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/BBBP_01/",
+      "detailPath": "articles/58c0a158f4e9cb528804525b.json"
+    },
+    {
+      "id": "877f8f9be20f0a0e191b69ea",
+      "title": "Android 基于 Choreographer 的渲染机制详解",
+      "summary": "本文介绍了 App 开发者不经常接触到但是在 Android Framework 渲染链路中非常重要的一个类 Choreographer。包括 Choreographer 的引入背景、Choreographer 的简介、部分源码解析、Choreographer 与 MessageQueue、Choreographer 和 APM，以及手机厂商基于 Choreographer 的一些优化思路 Choreographer 让动画、部分输入处理和 View 更新围绕显示时序协调执行。它在有待处理工作时请求帧回调，而不是每个物理刷新周期都无条件唤醒 App。2019 年常见的 60Hz 屏幕刷新间隔约为 16.67ms；90Hz、120Hz 分别约为 11.11ms、8.33ms，现代设备还可能动态切换刷新率。回调及…",
+      "image": null,
+      "publishedAt": "2019-10-22T10:55:11Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/10/22/Android-Choreographer/",
+      "detailPath": "articles/877f8f9be20f0a0e191b69ea.json"
+    },
+    {
+      "id": "8c0481daaaf018cc4992edd0",
+      "title": "LaTeX 使用笔记",
+      "summary": "访问 https://www.yunyoujun.cn/posts/latex-use-note 阅读全文。",
+      "image": null,
+      "publishedAt": "2019-10-21T14:16:18Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/latex-use-note",
+      "detailPath": "articles/8c0481daaaf018cc4992edd0.json"
+    },
+    {
       "id": "a18d375309be8ae64b4fd6d9",
       "title": "Toots 077 2019 Oct.13 - Oct.19",
       "summary": "「周更话痨日常。」",
@@ -582,83 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2019/07/17/hello-golang/",
       "detailPath": "articles/11c20988a8b131b493000c2d.json"
-    },
-    {
-      "id": "f80c469b0b4cc3bfb483299c",
-      "title": "产后问题和护理",
-      "summary": "生产之后的一段时间，发生在自己身上的种种。Spoiler: 产前看过的漫画《妊娠育児あるある》的 这一话 大部分都不幸发生在自己身上了。 过了自己的产褥期，回顾起来自我感觉的时间线大概是这样的——第一周是地狱，第二周也是地狱，第三周还是地狱，第四周好像有点好一些了，第五周第六周发现原来是自己习惯了。不过写下这些，包括 birth story 这篇 ，并不是为了抱怨产褥期的辛苦，而是为了让读到这篇的人（包括日后的自己）觉得自己并不是一个人遇到过各种各样的问题。还找到了一个 跟自己的生产、产后经历都相似的帖 ，也可以作为参考。 身体 # 按照自己觉得从影响自己身体的严重到不严重程度来排序： 睡眠 # 首当其冲的影响就是睡眠。从前固定每晚10点半上床、6点半起床的我，从 Baby 出生的那一刻开始，连续几天几乎没有…",
-      "image": null,
-      "publishedAt": "2019-07-12T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/postpartum-care/",
-      "detailPath": "articles/f80c469b0b4cc3bfb483299c.json"
-    },
-    {
-      "id": "1a85953b6b00dcc6f4576138",
-      "title": "Toots 061 2019 Jun.30 - Jul.6",
-      "summary": "「周更话痨日常。」",
-      "image": null,
-      "publishedAt": "2019-07-08T03:06:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2019/MastodonTootsArchives_20190706/",
-      "detailPath": "articles/1a85953b6b00dcc6f4576138.json"
-    },
-    {
-      "id": "b61437e8c365be5378a0ee27",
-      "title": "在医院的下半场：产后与新生儿护理",
-      "summary": "经历了 在医院的上半场 ，现场就像一场激烈的战斗刚刚结束。医生和护士们熟练地收拾、打扫，然后逐渐离开了产房。气氛也逐渐变得平静、放松。 同样，本文记录的是我作为旁观者和陪伴者的观察与感受。作为当事人，Miki 则将自己的亲身体验记录在 《生产的故事》 中。之后我们读了彼此写的内容，这才了解到对方独特的体验。 产后（postpartum/postnatal） # 婴儿出生后的15至20分钟内，一般会让婴儿和父母待在一起，同时调低周围的亮度，保持安静。对于婴儿来说，刚来到这个世界，一切都很陌生。此时父母可以与婴儿肌肤相亲，并对婴儿说话。这些都有助于让他们感到安心。胎儿（fetuses）在母体中时经常听到父母的声音。所以，他们出生来到陌生的世界后，最先能够辨认出的声音也是父母的声音。 接下来，我们从产房转移到了产后…",
-      "image": "https://fourhappylions.com/posts/postpartum-and-newborn-care/postpartum-room_hu_d074ed7f83bb3c8.jpg",
-      "publishedAt": "2019-07-08T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/postpartum-and-newborn-care/",
-      "detailPath": "articles/b61437e8c365be5378a0ee27.json"
-    },
-    {
-      "id": "96c8e60e5bc76733158e68da",
-      "title": "在医院的上半场：待产与分娩",
-      "summary": "离预产期只剩下一周，Miki 却感觉一点动静也没有。我们开始担心 Baby 的出生会不会拖到预产期之后。产科医生则安慰我们说，生产随时都可能发生，也许就是下周二——那天刚好她值班；也许就是这周五——那 Baby 就刚好和她同一天生日了。我们虽然仍将信将疑，却也宽心不少。 这里记录了我们在美国医院从破水、待产到分娩的经历。这对我们俩来说都是第一次，既兴奋又紧张。我很难体会 Miki 身体的变化和她的感受，同时又觉得自己该做些什么，但也帮不上太多忙，只能靠整理和复习之前与 Miki 一起学习的材料来缓解焦虑。索性也把当时学到的一些知识穿插其中。 另外，本文记录的是我作为旁观者和陪伴者的观察与感受。作为当事人，Miki 则将自己的亲身体验记录在 《生产的故事》 中。之后我们读了彼此写的内容，这才了解到对方独特的体验…",
-      "image": "https://fourhappylions.com/posts/labor-and-delivery/parking-sign_hu_51a34d34605dd0a5.jpg",
-      "publishedAt": "2019-07-04T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/labor-and-delivery/",
-      "detailPath": "articles/96c8e60e5bc76733158e68da.json"
-    },
-    {
-      "id": "39884f9e6ec49e4956d9fcd5",
-      "title": "2019 观影（上）",
-      "summary": "「2019 上半年观影短评备份。」",
-      "image": null,
-      "publishedAt": "2019-07-01T09:52:00Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2019_1/",
-      "detailPath": "articles/39884f9e6ec49e4956d9fcd5.json"
-    },
-    {
-      "id": "b74815979e9b9562dd7eab3c",
-      "title": "2019 阅读（上）",
-      "summary": "「2019 上半年阅读短评备份。」",
-      "image": null,
-      "publishedAt": "2019-07-01T08:13:00Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/YearlyBooks/YearlyBooks_2019_1/",
-      "detailPath": "articles/b74815979e9b9562dd7eab3c.json"
-    },
-    {
-      "id": "1d0274c7a7450d5a29876c47",
-      "title": "啤酒酒单之一",
-      "summary": "「饮酒待尝及存档。」",
-      "image": "http://z.arlmy.me/pics/DrinkBeer/DrinkBeer_1_1.5stars.jpg",
-      "publishedAt": "2019-07-01T07:23:10Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/ZArlmyMe/DrinkBeer/DrinkBeer_1_20190101/",
-      "detailPath": "articles/1d0274c7a7450d5a29876c47.json"
     }
   ]
 }

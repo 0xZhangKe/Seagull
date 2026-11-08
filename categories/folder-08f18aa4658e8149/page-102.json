@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "ca3c1ae360aa617afa3cc644",
+      "title": "繼續我的 iMac 故事",
+      "summary": "我昨天不是說要把檸檬卷的舊 iMac 降級成「Slay The Spire 專用機」嗎？結果這個計畫完全失敗，因為 macOS 連這點小小的願望都不能達成。",
+      "image": "https://wiwi.blog/assets/images/slay-0b6860a06430e48b9d3c9b7628db268e.jpg",
+      "publishedAt": "2024-12-30T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/imac-linux",
+      "detailPath": "articles/ca3c1ae360aa617afa3cc644.json"
+    },
+    {
+      "id": "a0e0c9780d68c8d493110934",
+      "title": "给 Golang 开发者的 Rust 私房菜 01 千里之行，始于足下",
+      "summary": "Bilibili 建议前往 B 站观看哦！ Rust 简介 Rust 是一门注重 内存安全 和 高性能 的系统编程语言，通过所有权机制避免常见的内存错误。自 2021 年 Linux 内核 5.13 版本 起，Rust 被正式引入，用于提高内核模块（如驱动程序）的安全性，减少内存管理漏洞。目前，Rust 在内核中的应用仍处于初期阶段，未来可能会逐步扩大。 安装 官方网站： https://www.rust-lang.org/ Homebrew 1 brew install rust HelloWorld 1 2 3 fn main () { println! ( \"Hello, World!\" ); } Hello Cargo 建立 cargo 项目 1 cargo new hello_cargo 源代码 1…",
+      "image": null,
+      "publishedAt": "2024-12-29T17:20:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/rust-tutorial-01/",
+      "detailPath": "articles/a0e0c9780d68c8d493110934.json"
+    },
+    {
+      "id": "391c03afcac73fc96f52dde9",
+      "title": "林路行",
+      "summary": "新语言 旧语言 该怎样回答 不眠的时间 上周五去参加了一个欧洲版画的展览的开幕式，展厅里有一张木口木刻肖像版画，画的是罗伯特柯霍，但是绘画风格跟其它的木口木刻版画有着微妙的差别。收藏家跟我们介绍说，在这幅版画创作的年代，摄影术已经诞生了。绘制这幅版画的画家还有个身份是摄影家，他当时借助了摄影术完成了这幅版画。但是版画家并不知道，摄影术生来就不是用来辅助版画创作的，它是来革版画的命的，那个年代的人并不知道摄影术将会给版画带来怎样的冲击。古典版画的传承者们还在用它作为一个技术手段来创作版画。那幅作品就是在这样的一种懵懂和无知的情况下，借助了那个时代的最新技术制作的一张木口木刻版画。 收藏家不无悲戚地说：“他没想到矛和盾都在他手上，这个时代一去不复返了，这是一个悲剧，虽然这是整个人类文明进程的一个喜剧，但是对于木口…",
+      "image": null,
+      "publishedAt": "2024-12-29T16:00:00Z",
+      "sourceId": "f758efe5e14ba931",
+      "sourceTitle": "瓠樽",
+      "link": "https://blog.dylanwu.space/2024/12/30/lost-in-the-jungle.html",
+      "detailPath": "articles/391c03afcac73fc96f52dde9.json"
+    },
+    {
+      "id": "7b2bfeaaef1bd020162637f3",
+      "title": "Toots 347 2024 Dec.22 - Dec.28",
+      "summary": "「谎言也有代沟」",
+      "image": null,
+      "publishedAt": "2024-12-29T05:44:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2024/MastodonTootsArchives_20241228/",
+      "detailPath": "articles/7b2bfeaaef1bd020162637f3.json"
+    },
+    {
+      "id": "8d6ee7533c36593273c7195f",
+      "title": "十二月｜東奔西跑 小病鎖喉",
+      "summary": "Hero Photo by ArtTower on Pixabay 本月Mi",
+      "image": null,
+      "publishedAt": "2024-12-29T00:00:00Z",
+      "sourceId": "a8fd4472104f3e5d",
+      "sourceTitle": "嘰嘰乞乞",
+      "link": "https://www.gigigatgat.ca/posts/dec-2024-recap/",
+      "detailPath": "articles/8d6ee7533c36593273c7195f.json"
+    },
+    {
+      "id": "396d1e1628fe6444030e4e82",
+      "title": "OpenWRT配置Bird使用OSPF国内外动态路由分流",
+      "summary": "之前写过一篇关于RouterOS上使用OSPF进行国内外动态路由分流的文章，当时就在想，国内使用RouterOS作为主路由的人群应该不是很多，大多数的人有这个需要的人，使用的主路由系统应该都是OpenWRT或者其衍生版本。今天的文章就把之前的坑补上，将在OpenWRT系统中，使用Bird实现OSPF动态路由的国内外分流。",
+      "image": "https://notion.dolingou.com/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F6d3fda40-6b03-4bf3-842b-4c9bb68a90f1%2F70ae0b4f-386d-4656-8927-035cd69b112d%2Fimage.png?table=block&id=16b97571-0fee-80c9-84e3-cb90b522bc39&t=16b97571-0fee-80c9-84e3-cb90b522bc39&width=1072&cache=v2",
+      "publishedAt": "2024-12-29T00:00:00Z",
+      "sourceId": "3f72c6c8a8442f3b",
+      "sourceTitle": "Dolingou",
+      "link": "https://www.dolingou.com/article/openwrt-bird-ospf-traffic-split-china",
+      "detailPath": "articles/396d1e1628fe6444030e4e82.json"
+    },
+    {
+      "id": "31389b893ce33caaa8cac329",
+      "title": "Mac Mini M4",
+      "summary": "檸檬卷的 2019 年的 iMac 最近開始出現很多問題：不只變得超級龜速、很燙、螢幕邊緣還微微開始變色。為了讓她剪片和教線上課時不要那麼痛苦，我只好訂了一台 Mac Mini M4。",
+      "image": "https://wiwi.blog/assets/images/dock-e1a75b59c2e4f8e9aaba592d314868eb.jpg",
+      "publishedAt": "2024-12-29T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/mac-mini-m4",
+      "detailPath": "articles/31389b893ce33caaa8cac329.json"
+    },
+    {
       "id": "e308728a9ab2788fcf651d6f",
       "title": "成熟的人拒绝谈论理想",
       "summary": "我不想改变世界 前几天看到一则马云的访谈，他在多年前曾提及对自我和世界的看法： 我在新加坡参加一个论坛，论坛上面有澳大利亚前总理霍华德、新加坡的外交部长、印尼的商务部长和德国前央行行长，还有我。 先讨论中国危机问题，讲得天花乱坠。主持人就问我，你怎么看中国，你担心中国么？我说不担心。他问我为什么？ 我说，在北京所有的餐桌上都在讨论十八大人选，出租车的司机都会告诉你政治内幕。出租车司机都在担心你有什么好担心的？ 他们又开始讨论欧洲，欧洲怎样怎样。主持人问我，马云你怎么看欧洲？ 我说，欧洲关我什么事儿啊？台下四百人哗啦啦鼓掌。 欧洲跟我有什么事情啊，欧洲你们这么knowgeable的人，都能把欧洲搞成这个样子。我说我对欧洲是一无所知啊，它跟我有什么关系？ 接着我说，十年前我很关心全世界，结果我的日子过得非常艰难；…",
@@ -582,83 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/i-made-this",
       "detailPath": "articles/9ee12cd3d61d495dc851e20c.json"
-    },
-    {
-      "id": "d2bdfcb65ede564cb876b2cc",
-      "title": "第四次工业革命",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-12-12T00:00:00Z",
-      "sourceId": "b1766968470c2fd8",
-      "sourceTitle": "一直游到海水变蓝",
-      "link": "https://nelsonboss.ink/2024/cursor-experience-review",
-      "detailPath": "articles/d2bdfcb65ede564cb876b2cc.json"
-    },
-    {
-      "id": "609395a69da5f1b98da9c534",
-      "title": "四明山赏秋蜘蛛岭徒步小记",
-      "summary": "月初跟朋友约着一起去了一趟四明山和奉化蜘蛛岭，因为相机的照片和拍的视频一直没整理，内容也就拖着没有发，正好这两日不太忙，就整理一下。 Day 1 四明山赏秋 首先驾车来到了四明湖，四明湖水杉观赏区人特别多，车不太好停。水杉树有一点红的，跟网上的图片比还差一点，晚一两周来估计会更好看。 相机只有个35mm镜头，远处好看的红杉都拍不了，还是要升级装备。 除了杉树旁边还有很多芦苇也很好看。 看完红杉在镇上吃了个面，遂驱车进山，一路上人是真的多，每一个观景台都堵车，也有交警维持秩序，因此观景台就没法停下来观看了。 因为晚上的住宿定在了溪口，随后就继续开车前往溪口了。在路上看到了红枫之乡，风景很不错，就拐了个弯进去，几个人顺着小路爬到了山上。 （以上三张照片有手机拍的和相机拍的，可以猜猜）。枫叶很多已经掉了，村民告诉我…",
-      "image": "https://img.isming.me/photo/20241130-25-7.jpg",
-      "publishedAt": "2024-12-11T14:21:26Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-12-11-shiming-hiking/?utm_source=rss",
-      "detailPath": "articles/609395a69da5f1b98da9c534.json"
-    },
-    {
-      "id": "6dec5918408d59c2345ec418",
-      "title": "用QGIS在地圖上繪製河流",
-      "summary": "最近在做一个需要标注河流的地图，使用了World Wildlife Fund (WWF) 提供的HydroRIVERS数据集。他们的数据包含全球河流，并附带了重要的水文属性，如流量和河级。 1 这份笔记记录了在QGIS中使用这份数据时遇到的主要问题及解决方案。包括： 如何使用HydroRIVERS数据 在QGIS中显示亚洲的河流网络。 想要地图上只显示主要河流，要怎幺做？ 想在特定河流上标注名称，如“熊野川”，要怎幺做？ 想在地图上删去某条河流要怎幺做？ QGIS软件窗口。以浅蓝色线条描绘了河流，并在河流上标注了“熊野川”。 1在QGIS画出亚洲所有的河流 # 数据获取 # 访问HydroSHEDS网站，找到HydroRIVERS产品页面。网址：https://www.hydrosheds.org/produ…",
-      "image": "https://wuliangdian.com/posts/mark-rivers-with-qgis/QGIS-mark-rivers-%E6%88%90%E5%93%81.jpg",
-      "publishedAt": "2024-12-11T11:00:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/mark-rivers-with-qgis/",
-      "detailPath": "articles/6dec5918408d59c2345ec418.json"
-    },
-    {
-      "id": "05a172184790fa81ff5f12f1",
-      "title": "移动公司，真不要脸",
-      "summary": "今天给老家装宽带，看了下老头的资费详单，不看不知道，一看差点把我吓死，从2022年开始，老人的话费套餐从39被移动公司电话客服给调到了110/月，110元包含80G流量+1000分钟通话，同样的套餐1000分钟通话+80G流量+IPTV+500M光纤，电信只需要59元，还带一张副卡共享套餐。 于是乎下午打12345投诉，要求他们退还两年多高额资费的差额，结果人家下午他们所谓的客服打来电话说退不了一点，发生了以下对话： 我：你们给老人办理这么高的套餐，丧良心不，这样搞不是欺诈吗！ 客服：我们有电话录音明确告诉他资费198/月，优惠后110元的，并且他同意了。 我：如果是你的父母，你觉得能接受这样的套餐吗！ 客服：如果是我的父母，我会定期查看他们资费情况，不会两年后才发现。 好吧，他们够不要脸。 不能生气、不能生…",
-      "image": "https://ihaihe.cn/wp-content/uploads/2024/12/u42198394412169222779fm253fmtautoapp138fJPEG.webp",
-      "publishedAt": "2024-12-11T09:23:31Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/2907.htm",
-      "detailPath": "articles/05a172184790fa81ff5f12f1.json"
-    },
-    {
-      "id": "c985f587b8f5f1b816cf7515",
-      "title": "建立與看見「那是什麼阿？」",
-      "summary": "前言 # 最近重新閱讀《跟任何人都能聊的來》一書，上次閱讀可能是 2016 年時。 裡面提到要建立讓人能提問「那是什麼阿？」的物品或行爲。 用「那是什麼阿？」被對方開啓話題的經驗 # 手錶 # 最近我又開始戴手錶了，一位對手錶也有點興趣的友人看到就有來詢問，成爲破冰的好話題，並且對方延伸話題，聊了他依靠買賣勞力士短期間賺了 10 萬臺幣的故事。 寶特瓶快拆釦環 # 另一次則是露營用的寶特瓶釦環，這是對於不露營的人，一個不常見的物品，多數人都沒看過，它是一種快拆釦環，能快速的把寶特瓶裝在各種地方，並且能實現快拆，對方覺得竟然有這種便宜又實用的小東西！ 快拆釦環 結語 # 有越多「那是什麼阿？」的物品，就越容易讓別人搭訕！ 反之，當我們想要向別人開口聊天時，也要仔細觀察對方身上的物品，一定能成爲很好的話題！",
-      "image": "https://eddielv.com/articles/what_is_that/bottle.webp",
-      "publishedAt": "2024-12-11T03:42:42Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/what_is_that/",
-      "detailPath": "articles/c985f587b8f5f1b816cf7515.json"
-    },
-    {
-      "id": "a03a45f3e1fb30ccfa881a8d",
-      "title": "空白",
-      "summary": "在主持了 170 集的好檸檬 Podcast、做了數十場直播和演講，還有教過好多的鋼琴和編曲課之後，我領悟到了關於說話的最重要秘訣（尤其是公開對大眾說話時）：",
-      "image": null,
-      "publishedAt": "2024-12-11T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/silence",
-      "detailPath": "articles/a03a45f3e1fb30ccfa881a8d.json"
-    },
-    {
-      "id": "d2fe5488e0ec42a2cff38368",
-      "title": "介绍 Tsukimiya bot",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2024-12-10T20:51:50Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/tsukimiya/",
-      "detailPath": "articles/d2fe5488e0ec42a2cff38368.json"
     }
   ]
 }

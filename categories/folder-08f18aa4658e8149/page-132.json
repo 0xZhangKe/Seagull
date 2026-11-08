@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "eba63c994a2b1b157cf97df2",
+      "title": "自由悖論",
+      "summary": "在一次大學講課得知一個很有趣的東西叫作「自由悖論」（freedom paradox），其中的一個重點是： 我們有選擇不自由的自由嗎？有得選和沒得選之間，哪個才是自由？ 那教授還說「上完這堂課後你會覺得很困惑嗎？如果會的話，那就對了，這就是我的目標。」XDDD",
+      "image": null,
+      "publishedAt": "2022-01-23T00:00:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/freedom-paradox/",
+      "detailPath": "articles/eba63c994a2b1b157cf97df2.json"
+    },
+    {
+      "id": "71e39d242df67d7f0e73540e",
+      "title": "并发程序设计--信号量与 PV 操作",
+      "summary": "信号量与 PV 操作, 比起管程来讲好理解",
+      "image": null,
+      "publishedAt": "2022-01-21T21:29:35Z",
+      "sourceId": "a3783910db542651",
+      "sourceTitle": "极东魔术昼寝结社",
+      "link": "https://blog.jaoushingan.com/2022/01/21/PV/",
+      "detailPath": "articles/71e39d242df67d7f0e73540e.json"
+    },
+    {
+      "id": "88a8abbda7b5b662cba2daff",
+      "title": "陽春白雪：閒適",
+      "summary": "[音 Game] [陽春白雪] 好聽！喜歡 這首歌 的 chill vibe 和伴奏的（類）爵士和聲！ 之前玩「困難」譜面的「真·陽春白雪」成績 https://www.hgapms.com/works/view/1528",
+      "image": "https://microblog.ttheng.com/blog/4MKR32spydMsVdPNxboWhp.jpg",
+      "publishedAt": "2022-01-21T08:11:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/lyrica-relax/",
+      "detailPath": "articles/88a8abbda7b5b662cba2daff.json"
+    },
+    {
+      "id": "29d39b0b11b9c3411b8fc5f5",
+      "title": "Systrace 线程 CPU 运行状态分析技巧 - Runnable 篇",
+      "summary": "本文是 Systrace 线程 CPU 运行状态分析技巧系列的第一篇，主要分析了 Systrace 中线程的 Runnable 状态出现的原因和 Runnable 过长时的一些优化思路。 本系列的目的是通过 Systrace 这个工具，从另外一个角度来看待 Android 系统整体的运行，同时也从另外一个角度来对 Framework 进行学习。也许你看了很多讲 Framework 的文章，但是总是记不住代码，或者不清楚其运行的流程，也许从 Systrace 这个图形化的角度，你可以理解的更深入一些。Systrace 基础和实战系列大家可以在 Systrace 基础知识 - Systrace 预备知识 或者 博客文章目录 这里看到完整的目录",
+      "image": null,
+      "publishedAt": "2022-01-21T02:40:18Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2022/01/21/android-systrace-cpu-state-runnable/",
+      "detailPath": "articles/29d39b0b11b9c3411b8fc5f5.json"
+    },
+    {
+      "id": "cda8ce24cbf4df634a5fd407",
+      "title": "展开想想 之三",
+      "summary": "「外加一滩碎语」",
+      "image": null,
+      "publishedAt": "2022-01-17T15:02:26Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/DailyNote/DailyNoteArchives_002/",
+      "detailPath": "articles/cda8ce24cbf4df634a5fd407.json"
+    },
+    {
+      "id": "9b49d5c483dd7aca3303fd89",
+      "title": "Toots 194 2022 Jan.9 - Jan.15",
+      "summary": "「感知波动，感知律动，感知起伏，感知不稳定，感知不永恒的支点」",
+      "image": null,
+      "publishedAt": "2022-01-17T05:13:26Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2022/MastodonTootsArchives_20220115/",
+      "detailPath": "articles/9b49d5c483dd7aca3303fd89.json"
+    },
+    {
+      "id": "09708de8aeff45c0e064f871",
+      "title": "聊聊四元数与万向锁及其实际意义",
+      "summary": "在使用 Babylon 写 ADV.JS VRM 模型编辑器 的人物骨骼旋转动画的时候，我发现几乎所有的骨骼旋转均使用四元数（Quaternion）实现。 于是我便打算好好了解一下相关的内容，但是网上搜到的不少帖子比如 Unity 欧拉角的旋转顺序都是互相矛盾的，导致自己也不知道相信哪个为好，决定还是自己实验下。 同时写了下自己对四元数和万向锁的直观理解，希望能对有兴趣了解这方面的后来者有所帮助。 因为有不少随手的截图和公式，所以就先放在了语雀上。也欢迎随时勘误！ 访问 https://www.yunyoujun.cn/posts/quaternion-and-spatial-rotation 阅读全文。",
+      "image": null,
+      "publishedAt": "2022-01-16T01:59:12Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/quaternion-and-spatial-rotation",
+      "detailPath": "articles/09708de8aeff45c0e064f871.json"
+    },
+    {
       "id": "790453e7228acd79b318d010",
       "title": "了解一下我的精神故乡巴西",
       "summary": "Jayme认为Princeton的经历对自己帮助巨大，所以希望Elisa也能出国求学，但Princeton当时还不收女生（我有一句骂人的话不知当讲不当讲）。看这本书时我反复想到John Nash，他的妻子也是MIT物理系早期为数不多的女生，但因为要照顾John Nash完全无法投入自己的研究事业。 Elisa也是巴西物理研究的先驱，是Brazilian Center for Physical Research (CBPF)的founder之一，但她的求学和研究经历里，多次仅仅因为她是女性就失去机会，而Jayme则完全没有这样的挫折。她在2018年去世，至此CBPF所有的奠基者都不在人世了。",
@@ -582,83 +659,6 @@
       "sourceTitle": "Posts on Welcome to my little blue world ♡",
       "link": "https://suicablog.cobaltkiss.blue/posts/something-about-romance-game/",
       "detailPath": "articles/35d56adb009580cd4e1c3a56.json"
-    },
-    {
-      "id": "9058f82ff1ced4eaaa2348e9",
-      "title": "叁拾一周：No.23",
-      "summary": "这是「叁拾一周」第二十三期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 253 位。我的下一个目标是 311。 上周发现了一个小而美的平台，像微博版的知识星球，有点儿意思，关注几天之后，也申请了一个，“走了后门”，周末就开通了，发了一条，未来还会发很多条。 我把它作为叁拾一周的番外，但也赋予它一些其它的意义和定位。也欢迎大家去关注，文末会放一个访问链接，要注意，订阅得花钱，不多，一年 30 块，一杯咖啡钱。 今天我想顺着这件事，聊一个主题，副产品。 我每年会定一个新年计划，大而空的那种。固定模式是 1 个关键词 + 3 个愿望，比如 2021 年，我的关键词是聚焦，三个愿望是顾家多一点，帮人多一点，反思多一点。 副产品，是 2019 年的关键词，来自郑也夫老师。 他说，文明是副产品，是人类在进化过程中，不…",
-      "image": "https://static.elizen.me/img/xiao-bao-tong.jpg",
-      "publishedAt": "2021-12-08T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2021/12/newsletter-023/",
-      "detailPath": "articles/9058f82ff1ced4eaaa2348e9.json"
-    },
-    {
-      "id": "0600b648108ebd7a4199d2b4",
-      "title": "读《张医生与王医生》",
-      "summary": "读完这 40 万字《张医生与王医生》，好像看了一部 4 个小时的电影，再一次想起书中也提到的《铁西区》。留几句读后感： 1，我对伊险峰是有滤镜的，极好的那种，不论是他做《第一财经周刊》，还是后来的好奇心日报，直到现在的小鸟文学，就像李海鹏说的，他是中国媒体界凤毛麟角的人物。 2，阅读感受不好，一方面是本书有两位作者书写，一个负责采访，一个负责专栏；另一方面，我对书中提到的伴随着工业化和城市化进程诞生的工人阶级的衰落、士绅化的了解有限。 3，当这些阶级概念以「社会」一词包装成改革开放 40 年的东北展现在我眼前时，书中说到三代人的故事，我心领神会甚至对这种熟悉感到窃喜。 4，伊险峰的重点在前言后记都写得很清楚，通过对他两个同学的采访和大量的资料，想了解曾经作为共和国长子的沈阳为何成了城市化进程中掉队的一员，以及…",
-      "image": null,
-      "publishedAt": "2021-12-08T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/12/doctor-zhang-and-doctor-wang/",
-      "detailPath": "articles/0600b648108ebd7a4199d2b4.json"
-    },
-    {
-      "id": "02de9e1f5b57d7dd33a8b124",
-      "title": "2021 年 JavaScript Promise 性能对比",
-      "summary": "我们正生活在一个「Any application that can be written in JavaScript, will eventually be written in JavaScript」的时代。作为一门兼具动态性和简单性的语言，JavaScript 已经占领了客户端、服务端，甚至在机器学习中也占据一席之地；不可避免的，异步执行也逐渐成为这门语言不可缺少的一部分。 TL;...",
-      "image": "https://img.skk.moe/blog/t2021/promise-performance-benchmark.png",
-      "publishedAt": "2021-12-07T08:19:00Z",
-      "sourceId": "5a840ced5a57e7ff",
-      "sourceTitle": "Sukka's Blog",
-      "link": "https://blog.skk.moe/post/promise-performance-benchmark/",
-      "detailPath": "articles/02de9e1f5b57d7dd33a8b124.json"
-    },
-    {
-      "id": "e11a2f5813b68111c40acd8e",
-      "title": "Toots 189 2021 Nov.28 - Dec.4",
-      "summary": "「心象变了，文字才随之变了」",
-      "image": null,
-      "publishedAt": "2021-12-05T11:38:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2021/MastodonTootsArchives_20211204/",
-      "detailPath": "articles/e11a2f5813b68111c40acd8e.json"
-    },
-    {
-      "id": "f0165ad5caa601b8e6845c4d",
-      "title": "健身笔记（二）好好吃饭",
-      "summary": "健康和美味，有点像经济学里的价格和购买，往往是一个提高另一个就下降了；但这个关系不是线性的，比如鸡胸肉到鸡腿，只提高了一点点热量，但美味度有大幅提高。 没有必要追求特别极致的没油没糖没这个没那个，balance一下。人吃东西的主要目的是健康和快乐，这不是考试看谁最少油就最高分。",
-      "image": null,
-      "publishedAt": "2021-12-04T16:50:49Z",
-      "sourceId": "88a1fc290dd0b8a7",
-      "sourceTitle": "沉默之沙",
-      "link": "https://yukieyun.net/fitness/notes-2-nutrition/",
-      "detailPath": "articles/f0165ad5caa601b8e6845c4d.json"
-    },
-    {
-      "id": "64fd00010a2d867aca5525e1",
-      "title": "从图文到短视频，内容农场对我们的影响一直都在",
-      "summary": "本文载于腾讯新闻《 全媒派 》2021年12月3日 过去，很多网友都有过类似的体验：在搜索引擎中输入关键词，会出现成千上万条信息，其中也许刚好有我们需要的，但也夹杂了许多引诱点击却徒劳无获的标题和链接。 专家们将这部分质量堪忧的信息称为来自“内容农场的内容”，哪里有流量，哪里就有内容，而随着网络用户的主要注意力从搜索引擎迁移到内容聚合平台，再迁移到短视频平台，内容农场也随之迁移。 本文聚焦短视频时代的内容农场，尝试探讨其如何从图文蔓延到短视频，以及内容农场对我们的内容消费产生的影响。 内容农场的吸睛力与吸金力 内容农场（Content Farm），又被称为“内容工厂”，这个说法最早出现在2010年前后，是指以吸引流量、增加广告收益为目的，低成本、快速地生成大量低质量内容，并关联搜索引擎中高点击率的关键词，从而…",
-      "image": null,
-      "publishedAt": "2021-12-04T16:00:00Z",
-      "sourceId": "5c361392b1f97efd",
-      "sourceTitle": "Memozine",
-      "link": "https://memozine.me/2021/12/05/content-farm",
-      "detailPath": "articles/64fd00010a2d867aca5525e1.json"
-    },
-    {
-      "id": "8d98d4a0827ff750450778cf",
-      "title": "Valine 评论系统迁至 Waline",
-      "summary": "「LeanCloud 疑似被墙，所幸有 Waline」",
-      "image": null,
-      "publishedAt": "2021-11-30T18:55:28Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/hexo/Hexo_ValineToWaline/",
-      "detailPath": "articles/8d98d4a0827ff750450778cf.json"
     }
   ]
 }

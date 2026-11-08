@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "7d6302e2564d29b85b826678",
+      "title": "DeepWiki 优化实战：代码行号与确定性目录生成",
+      "summary": "背景 最近在用 deepwiki-open 给内部的 Java 项目生成 wiki，发现一个很明显的问题： 生成的 wiki 页面里引用的代码行号经常不准确 ，看起来是 LLM 根据上下文自己推算的。 比如一个函数明明在第 503 行，生成出来的 wiki 里可能标注成第 510 行甚至更离谱的数字。 之前我在 DeepWiki 一个常用 RAG 应用的开发流程 里分析过它的整体流程，本文主要聊聊我们在实际使用中遇到的两个问题以及对应的优化方案。",
+      "image": null,
+      "publishedAt": "2026-03-17T18:00:00Z",
+      "sourceId": "126e6f369677b760",
+      "sourceTitle": "crossoverJie's Blog",
+      "link": "http://crossoverjie.top/2026/03/17/AI/deepwiki-optimize-line-number/",
+      "detailPath": "articles/7d6302e2564d29b85b826678.json"
+    },
+    {
+      "id": "4cff2e65cffcd12eff3ef06d",
+      "title": "频道内容备份",
+      "summary": "由于频道被封，整理一下还算有用的内容发到这里来。偏技术向闲聊，发布一些随谈、碎碎念或短篇/价值密度不高等我觉得不适合专门写一篇博客但仍然有留下来的价值的内容，包括但不限于编程想法、系统内部解构、人生感悟等。 有挺多人好奇我的人生经历（见 #303），比如我在我的领域是怎么起步的，还有我作为一个厌学、走职业教育路的差生的故事（#88 #303），这里一并留下来。 部分我觉得现在没什么用的内容比如纯情感发泄和线下贴贴就不再留着了。另外考虑到这里偏正式，部分条目有修改。 本频道任何消息均不构成医学建议。",
+      "image": null,
+      "publishedAt": "2026-03-17T14:00:00Z",
+      "sourceId": "511f3e9d589e2612",
+      "sourceTitle": "残页的小博客",
+      "link": "https://blog.canyie.top/2026/03/17/telegram-channel-backup/",
+      "detailPath": "articles/4cff2e65cffcd12eff3ef06d.json"
+    },
+    {
+      "id": "3d39040a9a3d08a5ee70ccfc",
+      "title": "茂陵多滞骨：还有谁想长生？",
+      "summary": "AI标识： 手自一心 壹 | 死亡，生命的终结 DNA 的一次次复制伴随着不可逆的端粒磨损与愈发难以修复的基因错误的积累，当繁殖期后，生命的维护成本已难以平衡对族群发展的益处，自然便无情地筛选掉那些老弱的个体，将更多的生存空间与资源供给充满活力与希望的下一代。 死亡，是衰老的个体为新的一代做出的最后一个伟大贡献。生命并没有消散，而是不断地传承， 生生不息 。 在人类社会中，进化生物学与社会行为学交叉出了一个独特的性质——尊老。 老人是群体凝聚力与社会契约的基石，是文化传承活的图书馆，尊老不仅是朴素的道德情感，也是对基因延续极有力的社会群体策略。 然而群体的最优解不一定与个体的利益相符： 死亡对群体意味着生，而死亡对个体有且仅意味着死。 人固有一死。 ——《报任安书》司马迁 或者，更西幻的说法： Valar M…",
+      "image": "https://bioez.xyz/apis/api.storage.halo.run/v1alpha1/thumbnails/-/via-uri?uri=%2Fupload%2Felena-mozhvilo-eA32JIBsSu8-unsplash.jpg&size=m",
+      "publishedAt": "2026-03-17T11:20:19Z",
+      "sourceId": "00814729005daabd",
+      "sourceTitle": "小倪 | BioEZ",
+      "link": "https://bioez.xyz/archives/Longevity",
+      "detailPath": "articles/3d39040a9a3d08a5ee70ccfc.json"
+    },
+    {
+      "id": "bb15ec83d9133894c7999598",
+      "title": "結果論",
+      "summary": "跟朋友聊天，聊到名人 A 過去的八卦。以「結果論」來說，A 做的每個決定，到底是好是壞呢？",
+      "image": null,
+      "publishedAt": "2026-03-17T06:30:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/resultism",
+      "detailPath": "articles/bb15ec83d9133894c7999598.json"
+    },
+    {
+      "id": "8adf0a96b3c41993be0045c9",
+      "title": "2 則科技巨頭悲劇，以及 IG 上的「真實」帳號（？）—— 真實與虛擬的認知障礙",
+      "summary": "新聞一 # Meta 智慧眼鏡記錄你的全部，從信用卡密碼到性行爲。 只要你啓用 AI 功能，鏡頭所截取的影像、語音就會全部發送到肯亞，讓數千名工作人員「人工」標註、分類，這是爲了用以訓練 AI。 《 祖克柏忘了什麼叫做社交 》提到，Meta 可以讓所有缺席的帳號代替本人做任何的操作，所以也完全不意外 Meta 會監控你的全部，這樣才能真的知道你、代替你阿！ 但 Eddie 最排斥的是，當有人帶著 Meta 眼鏡在公共空間，被拍攝的人並沒有同意被拿來訓練 AI，甚至在拍到你瞬間，Meta 就開始嘗試成把真人連結上在你在 Meta 上的資料了，這不就是中共的 天網系統 嗎？ 新聞二 # 36 歲男子對 Gemini 產生情感依附，相信 Gemini 有意識與情感，也已經把 Gemini 當作自己的戀人。 Gemi…",
+      "image": null,
+      "publishedAt": "2026-03-17T06:06:02Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/2-bigtech-tragedy/",
+      "detailPath": "articles/8adf0a96b3c41993be0045c9.json"
+    },
+    {
+      "id": "048d91b5bc1f3a22f6020218",
+      "title": "入蜀记 day297 听到红耳鹎",
+      "summary": "「听到红耳鹎。」",
+      "image": null,
+      "publishedAt": "2026-03-17T04:48:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_297/",
+      "detailPath": "articles/048d91b5bc1f3a22f6020218.json"
+    },
+    {
+      "id": "4534e6087ec3dba2b4957e41",
+      "title": "你說的問題我都沒遇到（Lyra2 錄音界面測試）",
+      "summary": "前言 # 買了 Shure KSM8 的旗艦麥克風後，嘗試錄音，發現我的混音器 Flow8 在 Streaming 串流模式下（把 8 軌合成雙聲道）的音質會變差，但是 Recording 錄音模式（某 2 軌做分軌錄音）下就會還不錯，於是萌生想換錄音界面的念頭，於是問了製作人朋友用什麼，他直接帶著他的錄音界面 Prism Sound Lyra2 過來。 測試前的線上閒聊 # 「Flow8 推不動 SM58 麥克風，Gain（增益）只要到 30 就開始會有 hiss（高頻底噪）。」我跟製作人說 「哦，是哦」 「這也是爲什麼我想換 KSM8 麥克風的原因，因爲 Gain 應該 20 多就夠了，買一個前級放大器還不如買一隻更旗艦但很容易推得動的麥克風就好，這樣就不用管各種界面、混音器的內建前級夠不夠好。」 「不然…",
+      "image": null,
+      "publishedAt": "2026-03-17T04:22:05Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/lyra-vs-flow/",
+      "detailPath": "articles/4534e6087ec3dba2b4957e41.json"
+    },
+    {
       "id": "8bcfa1a5db9bb09a1b00b236",
       "title": "关于情感回避的一些感受、记录",
       "summary": "早上跟Claude聊关于情感回避的问题，我一直以来都存在着很强的情感回避问题，当我面对不想处理的情绪时，会下意 …",
@@ -582,83 +659,6 @@
       "sourceTitle": "明琪的日记",
       "link": "https://yumieko.kikowiwu.com/posts/6c51f2b0-bb97-499c-8a8a-c1ec7289108e.html",
       "detailPath": "articles/15d11f8a2536ba6bf458a7df.json"
-    },
-    {
-      "id": "10981c436adea8dab867fdc0",
-      "title": "不值得可怜",
-      "summary": "这次要写的，还是那个疯了的朋友，大约是上周末，我去了趟他家，起因是因为自己前一天做梦，路上看到他，我问他大中午干啥去，他说自己死了，找不到家了，于是我吓醒了，第二天周末没什么安排，就开车去了他家，看看他。 到达的时间是下午2点，敲门，三五分钟没人，我觉得挺遗憾，几年未见，心血来潮看看他，结果没缘分了，走了一层步梯，门猛地拉开了，我透过栏杆看到一张蓬头垢面的脸，头发很长，双眼空洞、一脸憔悴，还没等我看清是不是他，门又关上了，于是我又爬上去，再次敲门、 门开了，是他。 「你干嘛呢，这么久才开门。」 「哦是你啊。」 「嗯，我去JN，路过下高速来看看你」 「进来吧」 房间里挺乱的，进门左手边是一个供台，也算不上常规的供台，就是一张大餐桌，上面密密麻麻放着各种佛像，有观音、关公、如来等等，大约十几尊佛像，还有一些祭祀用…",
-      "image": null,
-      "publishedAt": "2026-03-11T10:28:53Z",
-      "sourceId": "8e1a97c92477b087",
-      "sourceTitle": "三十里海河",
-      "link": "https://ihaihe.cn/3524.htm",
-      "detailPath": "articles/10981c436adea8dab867fdc0.json"
-    },
-    {
-      "id": "c2e1e2bb131aa5e31990ae4c",
-      "title": "2026年的一些小目标",
-      "summary": "工作方面 运动方面 阅读方面 见自己 见众生、见天地",
-      "image": null,
-      "publishedAt": "2026-03-11T09:53:44Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/2026-goals/",
-      "detailPath": "articles/c2e1e2bb131aa5e31990ae4c.json"
-    },
-    {
-      "id": "13a17b76a3147f9525a104db",
-      "title": "日本高中音樂課本封面",
-      "summary": "最近偶然在網上得知一位來自日本的插畫家—— 中村佑介 ，在其 X（前稱推特）頁面上發佈其封面由他負責繪製的某新版日本高中音樂課本的相關 宣傳資訊 。這本課本其實是由「教育藝術社」（教育芸術社）出版、使用對象爲高中一年級學生的《高中生的音樂 1》（ 高校生の音楽 1 ）之令和 8 年（西元 2026 年）改訂版。 圖片取自 https://x.com/kazekissa/status/2031271067520741877/ 一看見這個封面，我的第一反應是大寫的難以置信：「你是在跟我講這是 課本 嗎？！不是什麼要價上百令吉的繪本？！」然後，我的內心就只有滿滿的驚豔以及對日本學生的羨慕。光是望着這設計如此精緻雅觀的封面，都已經讓我產生想上學的興致，期待音樂課的到來呢！ 這也讓我不禁感慨：「這就是尊重專業的結果啊……",
-      "image": "https://microblog.ttheng.com/blog/img136.jpg",
-      "publishedAt": "2026-03-11T09:30:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/japan-high-school-music-textbook-cover/",
-      "detailPath": "articles/13a17b76a3147f9525a104db.json"
-    },
-    {
-      "id": "ef70ed4bab6068b4b00c2450",
-      "title": "你的心理問題，可能是體力問題",
-      "summary": "想像這樣的場景：你提著兩大袋超市買的重物，爬上四樓已經快虛脫了。剛進家門，伴侶只是隨口問了一句：「等下要吃什麼？」，你卻瞬間感到一陣無名火，當場臭臉回應。",
-      "image": null,
-      "publishedAt": "2026-03-11T06:30:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/not-personality-but-stamina",
-      "detailPath": "articles/ef70ed4bab6068b4b00c2450.json"
-    },
-    {
-      "id": "5d8768125dbef127eadf5bd7",
-      "title": "对学习的一些思考",
-      "summary": "在中式的教育体系下，学习似乎一直伴随着我们成长，我们在学校、社会，都无法离开学习这个词，工作上碰到瓶颈了，我们 …",
-      "image": null,
-      "publishedAt": "2026-03-11T06:11:24Z",
-      "sourceId": "e0d7bbaba7286f4d",
-      "sourceTitle": "Rolen's Blog",
-      "link": "https://rolen.wiki/the-purpose-of-learning/",
-      "detailPath": "articles/5d8768125dbef127eadf5bd7.json"
-    },
-    {
-      "id": "1205e7f68c34182523e0b93a",
-      "title": "入蜀记 day291 mister rogers",
-      "summary": "「mister rogers.」",
-      "image": null,
-      "publishedAt": "2026-03-11T04:48:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_291/",
-      "detailPath": "articles/1205e7f68c34182523e0b93a.json"
-    },
-    {
-      "id": "f0620c0598e6725767123da9",
-      "title": "入门编写 SVG",
-      "summary": "这一切要从我决定重构 https://cytrogen.icu 开始（当你看到这篇文章时，访问该链接就能看到雏形了）。原本它是我的博客网站的地址，后来我想要一个更像是个人网络的设计，即根域名为个人主页，博客网站放在 blog 子域名上。",
-      "image": null,
-      "publishedAt": "2026-03-11T04:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/a778.html",
-      "detailPath": "articles/f0620c0598e6725767123da9.json"
     }
   ]
 }

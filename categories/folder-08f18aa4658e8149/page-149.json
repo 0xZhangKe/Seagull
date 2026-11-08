@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "0df064e3db686495af3ecee1",
+      "title": "Toots 015 2018 Aug.12 - Aug.18",
+      "summary": "「周更话痨日常。」",
+      "image": null,
+      "publishedAt": "2018-08-21T10:43:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20180818/",
+      "detailPath": "articles/0df064e3db686495af3ecee1.json"
+    },
+    {
+      "id": "fa8081993209dc5d9a0a18cf",
+      "title": "豆瓣、知乎、饭否、微博页面自定义简化",
+      "summary": "「拯救本就不多的注意力」",
+      "image": null,
+      "publishedAt": "2018-08-21T04:44:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/ZArlmyMe/StylishCode_20170829/",
+      "detailPath": "articles/fa8081993209dc5d9a0a18cf.json"
+    },
+    {
+      "id": "36b0e58106a6306b4036b54d",
+      "title": "PHP2",
+      "summary": "bugku 矛盾 flag{bugku-789-ps-ssdf} 看代码，要求输入一个不是数字、数字字符串，同时还==1的东西。 PPT里“字符串到数字”有说数字+字符串等于那个数字，所以输入类似1admin的字符串就可以了。 cgctf md5 collision nctf{md5_collision_is_easy} 这个PPT里有一模一样的：md5('240610708') md5('QNKCDZO')，所以输入 ?a=240610708 就可以得到flag。 PHP decode >nctf base64_decode() 不用多说，是解码； gzinflate 查了下也是解码——那整个CLsI函数不就是解码么？把整个复制下来写进.php，最后改成： $ a = eval ( xxx ); var_d…",
+      "image": null,
+      "publishedAt": "2018-08-19T03:27:24Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/php2/",
+      "detailPath": "articles/36b0e58106a6306b4036b54d.json"
+    },
+    {
+      "id": "25d2ece030336a81a336d19a",
+      "title": "深入浅出垃圾回收（四）分代式 GC",
+      "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
+      "image": null,
+      "publishedAt": "2018-08-18T12:12:30Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/",
+      "detailPath": "articles/25d2ece030336a81a336d19a.json"
+    },
+    {
+      "id": "0f2ee5dadd222c4c752c9e59",
+      "title": "PHP1",
+      "summary": "WEB基础$_GET flag{bugku_get_su8kej2en} 看到要 $what=='flag' 才能打印flag， $what 是可以用 ? 传进来的，所以地址栏输入 http://120.24.86.145:8002/get/?what=flag 得到flag WEB基础$_POST flag{bugku_get_ssseint67se} 这回 $what 要用POST方法提交才行，在hackbar里选“Post data”，上面的栏填地址，下面的写 what=flag ，execute 就得到flag了。 变量1 flag{92853051ab894a64f7865cf3c2128b34} 提示flag在变量里，后续程序提取出输入的参数所代表变量的值，试了下 ?args=flag ， $fl…",
+      "image": null,
+      "publishedAt": "2018-08-16T09:31:03Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/php1/",
+      "detailPath": "articles/0f2ee5dadd222c4c752c9e59.json"
+    },
+    {
+      "id": "3b4751e9e014fb11c106dd60",
+      "title": "天津笔记：那些牺牲的19岁",
+      "summary": "对消防员家属来说，烈士的名号太遥远，他们想知道的，是什么，把年轻的生命抛入了这样的命运。… Continue reading 天津笔记：那些牺牲的19岁 →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/08/e8e5383d87a64932b0e7070edb1eb844.jpg",
+      "publishedAt": "2018-08-15T08:56:09Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2018/08/15/%e9%82%a3%e4%ba%9b%e7%89%ba%e7%89%b2%e7%9a%8419%e5%b2%81/",
+      "detailPath": "articles/3b4751e9e014fb11c106dd60.json"
+    },
+    {
+      "id": "bdc231563c65d0bed69dcd8e",
+      "title": "RE2",
+      "summary": "correct_the_byte FLAG-EiTMzujOpNwYCeervQMFod0hmZHC@ 看一晚上也不知道要correct哪个byte，问了学长得知是异或的0x13有问题。所以就 x/34xb $rsi 打印出将要被异或的值，穷举要异或的数爆破。 再加上群里flag的开头图片，ctrl+f找出flag。 rsi_list = [ 0x 0c , 0x 06 , 0x 0b , 0x 0d , 0x 67 , 0x 0f , 0x 23 , 0x 1e , 0x 07 , 0x 30 , 0x 3f , 0x 20 , 0x 05 , 0x 3a , 0x 04 , 0x 3d , 0x 13 , 0x 09 , 0x 2f , 0x 2f , 0x 38 , 0x 3c , 0x 1b , 0x…",
+      "image": null,
+      "publishedAt": "2018-08-15T08:41:57Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/re2/",
+      "detailPath": "articles/bdc231563c65d0bed69dcd8e.json"
+    },
+    {
       "id": "4cdbcde6ade34ced7e639deb",
       "title": "潮湿俱乐部",
       "summary": "我们离开城市的那个夜晚，空气凝滞，蝉鸣在高温中起伏。我们手拉着手，可以感受到彼此的手汗。在奔跑的间隙，我们回头看，西边的天空一片橘红，湮没了星星和月亮，能隐约听到消防车的声音，偶尔还有尖叫和狗吠。我们带走了必须的财物和一只叫做“舌头”的英国短毛猫。在不必须的东西里，我们带走了地图，尽管我们知道这会暴露我们的行踪，因为有了地图就有了目的地。我们还带走了一顶帐篷，虽然可以睡在车里，但我们打算在某些时刻露营。 我们以每小时八十公里的速度离开城市，不是旅行而是逃亡。这是一个真实故事，故事发生在一个闷热的夏季，为了保护我们的隐私，我们必须隐去名字、性别和年龄。这也是一个公路故事，诗人说过“生活，在别处”，而我们知道“生活，在去往别处的路上”。这还是一个酒神故事，我们要把自己投射在万物之中。狂欢？迷乱？也许不行。我们必须…",
@@ -582,83 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/FavouriteWorksTimeline/",
       "detailPath": "articles/bc987f0f5e59e6481ea21f9d.json"
-    },
-    {
-      "id": "947fe4630582c0d3aea55c0d",
-      "title": "Toots 007 2018 Jun.10 - Jun.16",
-      "summary": "「周更话痨日常。」",
-      "image": null,
-      "publishedAt": "2018-06-17T11:50:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20180616/",
-      "detailPath": "articles/947fe4630582c0d3aea55c0d.json"
-    },
-    {
-      "id": "7eefd3b3e8051e3e1d18c5a7",
-      "title": "深入浅出垃圾回收（一）简介篇",
-      "summary": "GC 算法作为计算机科学领域非常热的研究话题之一，最早可追溯到 1959 年 1 ，由 John McCarthy 在 Lisp 中实现来简化内存管理。早期的 Lisp 之所以被大众诟病慢，主要原因就是当时的 GC 实现相对简单，对程序的影响（overhead）比较严重。经过几十年的发展，GC 算法已经很成熟了，可以完全摆脱「速度慢」这个让人望而却步的标签。",
-      "image": null,
-      "publishedAt": "2018-06-15T21:28:41Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2018/06/15/garbage-collection-intro/",
-      "detailPath": "articles/7eefd3b3e8051e3e1d18c5a7.json"
-    },
-    {
-      "id": "1f55c064ad73ae3a21c8da4e",
-      "title": "Vim NEW Cheat Sheet",
-      "summary": "Cheat sheet做的就是“堆砌”，目的在方便查阅。但是对于初学者，首先要理解有什么、怎么用。这篇文章的侧重点在于以一个初学者的身份——这很重要，高手写这些把握不了分寸，容易炫技——从头审视vim指令，这些指令的发明并不是没有原因的，某一个字母肯定和我们日常体验有一定的联系。我没有去考究发明者真的的想法，但是通过联想，我尝试找出了这些指令背后可能的联系——部分是自己生搬硬套出来的，从而帮助记忆。 移动与定位 上下左右操作， hjkl 。非常容易，但只知道他们远远不够。 快速地定位，是在鼠标缺位的情况下最需要做的。熟练掌握定位之后，手再也不用从键盘上移开了，这是VIM巨大的优势。 移动的距离，单位可以分成一个字符，一个单词，一段话。如hjkl是字符单位移动。",
-      "image": "https://i.loli.net/2018/06/14/5b21ae6320a14.jpg",
-      "publishedAt": "2018-06-14T03:26:21Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2018/06/13/vimnewtimesheet/",
-      "detailPath": "articles/1f55c064ad73ae3a21c8da4e.json"
-    },
-    {
-      "id": "b66eb80ee136d960727671c5",
-      "title": "Toots 006 2018 Jun.3 - Jun.9",
-      "summary": "「周更话痨日常。」",
-      "image": null,
-      "publishedAt": "2018-06-11T16:02:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20180609/",
-      "detailPath": "articles/b66eb80ee136d960727671c5.json"
-    },
-    {
-      "id": "43c585a563822460631343cc",
-      "title": "你来到了没有知识存在的荒原",
-      "summary": "全网最详细的科学上网通俗演义，可惜已被铁拳锤死",
-      "image": null,
-      "publishedAt": "2018-06-10T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-06-10",
-      "detailPath": "articles/43c585a563822460631343cc.json"
-    },
-    {
-      "id": "8682c7b085fd4704a48f4529",
-      "title": "你来到了没有知识存在的荒原",
-      "summary": "全网最详细的科学上网通俗演义，可惜已被铁拳锤死",
-      "image": null,
-      "publishedAt": "2018-06-10T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-06-10",
-      "detailPath": "articles/8682c7b085fd4704a48f4529.json"
-    },
-    {
-      "id": "46bb046c91f48354b5326ad1",
-      "title": "姐的宽容",
-      "summary": "『手机2』引发的这场娱乐圈塌方事件。 崔爷左手抓着六爷，右手抓住范爷，将二位双双摁在石子儿路上反复摩擦。 这一摩擦就是半年，搁谁都得皮开肉绽。… Continue reading 姐的宽容 →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/06/e88081e782aee584bf.jpg",
-      "publishedAt": "2018-06-06T13:10:23Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2018/06/06/%e5%a7%90%e7%9a%84%e5%ae%bd%e5%ae%b9/",
-      "detailPath": "articles/46bb046c91f48354b5326ad1.json"
     }
   ]
 }

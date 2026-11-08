@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "59590b768cc0b47d3dc23eb1",
+      "title": "Toots 045 2019 Mar.10 - Mar.16",
+      "summary": "「周更话痨日常。」",
+      "image": null,
+      "publishedAt": "2019-04-01T09:41:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2019/MastodonTootsArchives_20190316/",
+      "detailPath": "articles/59590b768cc0b47d3dc23eb1.json"
+    },
+    {
+      "id": "7134dc9730ef23ce0d90f038",
+      "title": "repwn",
+      "summary": "IDA里shift+F12找到“Please Input Your Key_ Now!”，然后找到程序入口“sub_4014C0”（ ; DATA XREF: sub_4014C0:loc_401588↑o ）。 然后输入了一个字符串给v11， sub_4012F0((int)&v11) 需要返回1。 sub_4012F0：v2要在 *((_BYTE *)&v4 + v2) == *(_BYTE *)(v1 + a1) 的情况下从0，++到12，此时若 *(_BYTE *)(a1 + 20) == 72 则返回1。 v4这样明显超了一字节又强制转成一字节的可以在IDA里对着数值右键，转成16进制取最后两位写进z3。 from z3 import * d2c = BitVec ( ' d2c ' , 8 ) d…",
+      "image": null,
+      "publishedAt": "2019-03-31T06:48:47Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/repwn/",
+      "detailPath": "articles/7134dc9730ef23ce0d90f038.json"
+    },
+    {
+      "id": "49c72beed06ba5308faa3d91",
+      "title": "泰国曼谷、芭提雅9天休闲游",
+      "summary": "利用年后换工作之际，在 3月16号–25号这九天时间出去和女朋友浪了一圈，由于是临时起意的旅行，所以找了个近的地方——泰国，主要是芭提雅、曼谷这两个中部城市。虽然时间比较长，但是在攻略方面也没规划的很详细，基本上是提前一两天确定处理，这样也不耽误购买淘宝上的一日游项目（一般需提前一天预定）。",
+      "image": null,
+      "publishedAt": "2019-03-26T14:33:22Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2019/03/26/thailand/",
+      "detailPath": "articles/49c72beed06ba5308faa3d91.json"
+    },
+    {
+      "id": "f8b440c3b022e497d2a17209",
+      "title": "lab10",
+      "summary": "No PIE，说明可以直接用IDA中看到的地址，比如最后要执行的magic函数（// starts at 8048986）。 可以看到add_note使用了malloc，del_note只用了free但没有给指针赋值NULL，所以可以在free后使用。 结构体note有两个指针，一个指向打印note的函数（正常流程是print_note_content），一个指向note记录的 content。在print_note中会调用打印note的函数。 所以应该输入note content时用magic覆盖掉原来printnote指针指向的print_note_content，利用没有置空的printnote在print_note中执行magic函数。 结构体note在malloc时会分配为fastbin，16字节大…",
+      "image": null,
+      "publishedAt": "2019-03-20T16:35:10Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/lab10/",
+      "detailPath": "articles/f8b440c3b022e497d2a17209.json"
+    },
+    {
+      "id": "935e4a28bfc29fe5f2cddfb3",
+      "title": "在冷热之间",
+      "summary": "“冷”和“热”不仅被用来形容人对外界温度的生理感受，夏天热、冬天冷，多喝热水、摆脱冷气。还被用来形容人对外部环境的心理感受，冷漠热淡、热情热心，鲁迅用《热风》(1925)收录杂文，相反，鲍德里亚用《冷记忆》(1987)集纳微博般的灵感碎片。在人文社科的研究中，“冷”和“热”还被用来形容社会、记忆和媒介，正如词义上的差异，它们带来某种对立，有时是二元的、线性的，有时是彼此转化的。 冷社会 - 热社会 人类学家列维-斯特劳斯在《野性的思维》(1962)中，以“历史观”为标准，将社会分为“冷的”和“热的”。冷社会企图消除历史因素对其平衡和连续性的影响，热社会则坚定地使历史过程内在化，并使其成为本身发展的推动力。 这两种社会对应着不同的思维方式，冷社会依靠一种感性的、具体的、整体的思维来理解世界，列维-斯特劳斯称之为…",
+      "image": null,
+      "publishedAt": "2019-03-16T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2019/03/17/between-cold-and-hot",
+      "detailPath": "articles/935e4a28bfc29fe5f2cddfb3.json"
+    },
+    {
+      "id": "e19f757cbfdede761f341902",
+      "title": "也说“央视认罪”",
+      "summary": "“上央视”可看做是官方媒体代理司法活动行为的统称。 鉴于办案机关和热心观众的双重刚需，有网友建议央视开设“认罪频道”。… Continue reading 也说“央视认罪” →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2019/03/e99988e6b0b8e6b4b250e4b887.jpg",
+      "publishedAt": "2019-03-16T13:24:54Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2019/03/16/%e4%b9%9f%e8%af%b4%e5%a4%ae%e8%a7%86%e8%ae%a4%e7%bd%aa/",
+      "detailPath": "articles/e19f757cbfdede761f341902.json"
+    },
+    {
+      "id": "99c85a1fb686aaa714f2708e",
+      "title": "Toots 046 2019 Mar.3 - Mar.9",
+      "summary": "「周更话痨日常。」",
+      "image": null,
+      "publishedAt": "2019-03-14T10:31:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2019/MastodonTootsArchives_20190309/",
+      "detailPath": "articles/99c85a1fb686aaa714f2708e.json"
+    },
+    {
       "id": "0d3cbe4d875b7f2c045f0814",
       "title": "多语种与信息量",
       "summary": "iOS 原生辞典本身和系统整合得很好，随手就能查，我使用频繁。但是辞库是固定的几个，这就引出了问题。以上截图是一个典型例子，我遇到 autonomy 这个词，但是不是很确定意思。光看中英字典，不管简繁，突出的是一个自治。但在",
@@ -582,83 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/ZArlmyMe/CrossTheAbyss_20181221/",
       "detailPath": "articles/6b642473ccf941884977e33d.json"
-    },
-    {
-      "id": "6e960e70aa7f992eb619382f",
-      "title": "Toots 034 2018 Dec.9 - Dec.15",
-      "summary": "「周更话痨日常。」",
-      "image": null,
-      "publishedAt": "2018-12-20T06:33:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20181215/",
-      "detailPath": "articles/6e960e70aa7f992eb619382f.json"
-    },
-    {
-      "id": "0071d7e8448446f60e3b41a6",
-      "title": "支持中国工人阶级大幅涨薪是“曲线卖国”？",
-      "summary": "有理有据，令人信服",
-      "image": null,
-      "publishedAt": "2018-12-16T13:38:29Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-12-16",
-      "detailPath": "articles/0071d7e8448446f60e3b41a6.json"
-    },
-    {
-      "id": "e0d0cd4fd5755294275e55f2",
-      "title": "支持中国工人阶级大幅涨薪是“曲线卖国”？",
-      "summary": "有理有据，令人信服",
-      "image": null,
-      "publishedAt": "2018-12-16T13:38:29Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-12-16",
-      "detailPath": "articles/e0d0cd4fd5755294275e55f2.json"
-    },
-    {
-      "id": "768c83acc1bc0aac1e92252e",
-      "title": "rsbo",
-      "summary": "FLAG{Shuffling 15 not a problem, just a piece of cake... XDDDDD...iJgZBwpBFh1TtpQR} IDA里看到这个程序先读取了\"/home/ctf/flag\"作为随机数的种子，然后用随机数打乱输入的字符串再输出。一开始以为这是某种密码学+逆向的秘法就像选择明文攻击一样破解出从flag里前 0x10u 的内容。心想这玩意也太可怕了吧然后就上网查了下。 发现就是普通的rop……用open打开flag，读取，输出 flag 就可以了…… 学到的是elf.bss()返回程序的bss段，bss是可读写的可以用来存取脚本里需要的内容。 然后发现elf.start直接返回程序入口，这样就不用怕没有符号表，_start 什么的也找不到的情况了。 还有一点感…",
-      "image": null,
-      "publishedAt": "2018-12-16T09:16:59Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/rsbo/",
-      "detailPath": "articles/768c83acc1bc0aac1e92252e.json"
-    },
-    {
-      "id": "189f015e7e6f562e19afda63",
-      "title": "日本行流水账 DAY1 Tokyo",
-      "summary": "「讯息，在这里显得很重要。」",
-      "image": null,
-      "publishedAt": "2018-12-13T05:05:35Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/Travel/Travel_2018_Japan_day1/",
-      "detailPath": "articles/189f015e7e6f562e19afda63.json"
-    },
-    {
-      "id": "d301bf25fdc44522664c743c",
-      "title": "无标题文章",
-      "summary": "「周期、定义和瞎阐释。」",
-      "image": null,
-      "publishedAt": "2018-12-13T05:02:10Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/Chat/Chat_SandH_20181211/",
-      "detailPath": "articles/d301bf25fdc44522664c743c.json"
-    },
-    {
-      "id": "f01a53f53895670bcd7deab8",
-      "title": "五月天演唱會",
-      "summary": "五月天演唱會結束了。 一群神經病在雨中唱著歌， 唱著唱著，也忘記了正在下雨。 從電影劇情，連結到每首歌的故事， 背景燈光、畫面都非常讓人感動！ 有些歌唱著就默默的留下眼淚了， 每首歌都是許許多多人的寫照， 從少年時期、成年、到死亡。 整場演唱會我都沒有分析音樂， 沒有去管和弦、節奏，旋律， 只是聽著五月天想告訴我們的事。 音樂的本質就是這樣， 分享想說的話才是最重要的， 我們只是藉由某項樂器、各種技術、知識來表達我們要說的。 宋啦，超享受",
-      "image": null,
-      "publishedAt": "2018-12-12T18:34:17Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/mayday-concert/",
-      "detailPath": "articles/f01a53f53895670bcd7deab8.json"
     }
   ]
 }

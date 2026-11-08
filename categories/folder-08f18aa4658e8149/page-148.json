@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "6e960e70aa7f992eb619382f",
+      "title": "Toots 034 2018 Dec.9 - Dec.15",
+      "summary": "「周更话痨日常。」",
+      "image": null,
+      "publishedAt": "2018-12-20T06:33:07Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20181215/",
+      "detailPath": "articles/6e960e70aa7f992eb619382f.json"
+    },
+    {
+      "id": "0071d7e8448446f60e3b41a6",
+      "title": "支持中国工人阶级大幅涨薪是“曲线卖国”？",
+      "summary": "有理有据，令人信服",
+      "image": null,
+      "publishedAt": "2018-12-16T13:38:29Z",
+      "sourceId": "d48d6f28fe78bc92",
+      "sourceTitle": "DrPika's Blog",
+      "link": "https://blog.drpika.com/posts/2018-12-16",
+      "detailPath": "articles/0071d7e8448446f60e3b41a6.json"
+    },
+    {
+      "id": "e0d0cd4fd5755294275e55f2",
+      "title": "支持中国工人阶级大幅涨薪是“曲线卖国”？",
+      "summary": "有理有据，令人信服",
+      "image": null,
+      "publishedAt": "2018-12-16T13:38:29Z",
+      "sourceId": "3e335517f4e1112a",
+      "sourceTitle": "Dr.Pika's Blog",
+      "link": "https://blog.drpika.com/posts/2018-12-16",
+      "detailPath": "articles/e0d0cd4fd5755294275e55f2.json"
+    },
+    {
+      "id": "768c83acc1bc0aac1e92252e",
+      "title": "rsbo",
+      "summary": "FLAG{Shuffling 15 not a problem, just a piece of cake... XDDDDD...iJgZBwpBFh1TtpQR} IDA里看到这个程序先读取了\"/home/ctf/flag\"作为随机数的种子，然后用随机数打乱输入的字符串再输出。一开始以为这是某种密码学+逆向的秘法就像选择明文攻击一样破解出从flag里前 0x10u 的内容。心想这玩意也太可怕了吧然后就上网查了下。 发现就是普通的rop……用open打开flag，读取，输出 flag 就可以了…… 学到的是elf.bss()返回程序的bss段，bss是可读写的可以用来存取脚本里需要的内容。 然后发现elf.start直接返回程序入口，这样就不用怕没有符号表，_start 什么的也找不到的情况了。 还有一点感…",
+      "image": null,
+      "publishedAt": "2018-12-16T09:16:59Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/rsbo/",
+      "detailPath": "articles/768c83acc1bc0aac1e92252e.json"
+    },
+    {
+      "id": "189f015e7e6f562e19afda63",
+      "title": "日本行流水账 DAY1 Tokyo",
+      "summary": "「讯息，在这里显得很重要。」",
+      "image": null,
+      "publishedAt": "2018-12-13T05:05:35Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/Travel/Travel_2018_Japan_day1/",
+      "detailPath": "articles/189f015e7e6f562e19afda63.json"
+    },
+    {
+      "id": "d301bf25fdc44522664c743c",
+      "title": "无标题文章",
+      "summary": "「周期、定义和瞎阐释。」",
+      "image": null,
+      "publishedAt": "2018-12-13T05:02:10Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/Chat/Chat_SandH_20181211/",
+      "detailPath": "articles/d301bf25fdc44522664c743c.json"
+    },
+    {
+      "id": "f01a53f53895670bcd7deab8",
+      "title": "五月天演唱會",
+      "summary": "五月天演唱會結束了。 一群神經病在雨中唱著歌， 唱著唱著，也忘記了正在下雨。 從電影劇情，連結到每首歌的故事， 背景燈光、畫面都非常讓人感動！ 有些歌唱著就默默的留下眼淚了， 每首歌都是許許多多人的寫照， 從少年時期、成年、到死亡。 整場演唱會我都沒有分析音樂， 沒有去管和弦、節奏，旋律， 只是聽著五月天想告訴我們的事。 音樂的本質就是這樣， 分享想說的話才是最重要的， 我們只是藉由某項樂器、各種技術、知識來表達我們要說的。 宋啦，超享受",
+      "image": null,
+      "publishedAt": "2018-12-12T18:34:17Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mayday-concert/",
+      "detailPath": "articles/f01a53f53895670bcd7deab8.json"
+    },
+    {
       "id": "598e7e7b845564f40029ef0c",
       "title": "Toots 032 2018 Dec.2 - Dec.8",
       "summary": "「周更话痨日常。」",
@@ -582,83 +659,6 @@
       "sourceTitle": "文三娃",
       "link": "https://wentommy.wordpress.com/2018/08/21/%e7%8a%af%e5%86%b2%e8%ae%b0/",
       "detailPath": "articles/caa907f8d48bf49ebee72e0e.json"
-    },
-    {
-      "id": "0df064e3db686495af3ecee1",
-      "title": "Toots 015 2018 Aug.12 - Aug.18",
-      "summary": "「周更话痨日常。」",
-      "image": null,
-      "publishedAt": "2018-08-21T10:43:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2018/MastodonTootsArchives_20180818/",
-      "detailPath": "articles/0df064e3db686495af3ecee1.json"
-    },
-    {
-      "id": "fa8081993209dc5d9a0a18cf",
-      "title": "豆瓣、知乎、饭否、微博页面自定义简化",
-      "summary": "「拯救本就不多的注意力」",
-      "image": null,
-      "publishedAt": "2018-08-21T04:44:07Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/ZArlmyMe/StylishCode_20170829/",
-      "detailPath": "articles/fa8081993209dc5d9a0a18cf.json"
-    },
-    {
-      "id": "36b0e58106a6306b4036b54d",
-      "title": "PHP2",
-      "summary": "bugku 矛盾 flag{bugku-789-ps-ssdf} 看代码，要求输入一个不是数字、数字字符串，同时还==1的东西。 PPT里“字符串到数字”有说数字+字符串等于那个数字，所以输入类似1admin的字符串就可以了。 cgctf md5 collision nctf{md5_collision_is_easy} 这个PPT里有一模一样的：md5('240610708') md5('QNKCDZO')，所以输入 ?a=240610708 就可以得到flag。 PHP decode >nctf base64_decode() 不用多说，是解码； gzinflate 查了下也是解码——那整个CLsI函数不就是解码么？把整个复制下来写进.php，最后改成： $ a = eval ( xxx ); var_d…",
-      "image": null,
-      "publishedAt": "2018-08-19T03:27:24Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/php2/",
-      "detailPath": "articles/36b0e58106a6306b4036b54d.json"
-    },
-    {
-      "id": "25d2ece030336a81a336d19a",
-      "title": "深入浅出垃圾回收（四）分代式 GC",
-      "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
-      "image": null,
-      "publishedAt": "2018-08-18T12:12:30Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/",
-      "detailPath": "articles/25d2ece030336a81a336d19a.json"
-    },
-    {
-      "id": "0f2ee5dadd222c4c752c9e59",
-      "title": "PHP1",
-      "summary": "WEB基础$_GET flag{bugku_get_su8kej2en} 看到要 $what=='flag' 才能打印flag， $what 是可以用 ? 传进来的，所以地址栏输入 http://120.24.86.145:8002/get/?what=flag 得到flag WEB基础$_POST flag{bugku_get_ssseint67se} 这回 $what 要用POST方法提交才行，在hackbar里选“Post data”，上面的栏填地址，下面的写 what=flag ，execute 就得到flag了。 变量1 flag{92853051ab894a64f7865cf3c2128b34} 提示flag在变量里，后续程序提取出输入的参数所代表变量的值，试了下 ?args=flag ， $fl…",
-      "image": null,
-      "publishedAt": "2018-08-16T09:31:03Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/php1/",
-      "detailPath": "articles/0f2ee5dadd222c4c752c9e59.json"
-    },
-    {
-      "id": "3b4751e9e014fb11c106dd60",
-      "title": "天津笔记：那些牺牲的19岁",
-      "summary": "对消防员家属来说，烈士的名号太遥远，他们想知道的，是什么，把年轻的生命抛入了这样的命运。… Continue reading 天津笔记：那些牺牲的19岁 →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/08/e8e5383d87a64932b0e7070edb1eb844.jpg",
-      "publishedAt": "2018-08-15T08:56:09Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2018/08/15/%e9%82%a3%e4%ba%9b%e7%89%ba%e7%89%b2%e7%9a%8419%e5%b2%81/",
-      "detailPath": "articles/3b4751e9e014fb11c106dd60.json"
-    },
-    {
-      "id": "bdc231563c65d0bed69dcd8e",
-      "title": "RE2",
-      "summary": "correct_the_byte FLAG-EiTMzujOpNwYCeervQMFod0hmZHC@ 看一晚上也不知道要correct哪个byte，问了学长得知是异或的0x13有问题。所以就 x/34xb $rsi 打印出将要被异或的值，穷举要异或的数爆破。 再加上群里flag的开头图片，ctrl+f找出flag。 rsi_list = [ 0x 0c , 0x 06 , 0x 0b , 0x 0d , 0x 67 , 0x 0f , 0x 23 , 0x 1e , 0x 07 , 0x 30 , 0x 3f , 0x 20 , 0x 05 , 0x 3a , 0x 04 , 0x 3d , 0x 13 , 0x 09 , 0x 2f , 0x 2f , 0x 38 , 0x 3c , 0x 1b , 0x…",
-      "image": null,
-      "publishedAt": "2018-08-15T08:41:57Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/re2/",
-      "detailPath": "articles/bdc231563c65d0bed69dcd8e.json"
     }
   ]
 }

@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "2af0d0f445455d77e4900204",
+      "title": "Owls🦉 In Towels🧻",
+      "summary": "專門收集「被毛巾包住的貓頭鷹」照片的網站：",
+      "image": null,
+      "publishedAt": "2025-12-21T17:57:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/owls-in-towels",
+      "detailPath": "articles/2af0d0f445455d77e4900204.json"
+    },
+    {
+      "id": "16bf9a37ba7e76d19ada7284",
+      "title": "你缺这 2.75 美元吗",
+      "summary": "这个月的某一天，我在查阅维基百科的时候，又一次看到他们要捐款。 心里想着这个网站也不容易，大家几乎都在用，并且也就 2.75 美元，还是给了吧。",
+      "image": null,
+      "publishedAt": "2025-12-21T17:17:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/d33e.html",
+      "detailPath": "articles/16bf9a37ba7e76d19ada7284.json"
+    },
+    {
+      "id": "53b2335bd99c36f55e6efc01",
+      "title": "修正 RSS 排版",
+      "summary": "自從換到現在的 classic Hugo 主題之後，RSS 就沒排版了，在閱讀器中無法直接閱讀，Hugo 在沒有 rss.xml 的情況下，還是會輸出 index.xml，只是就沒有排版。 而 JN 在 10 月底特地來信告知，並且寫了一篇教學文章，只是 Eddie 太懶的拖到現在才處理。 （超級感謝，這是部落格才可能出現的事情，如果今天是社群平臺就被留言嗆爆了） 加入 layouts/_default/rss.xml # 原先的主題有 rss，但是在 theme 的 layouts 裡面，被我換主題之後，就直接一併被移除了，這次直接做在專案 的 layouts 裡面，就不用怕主題換了 rss 就不見。 這段程式碼與官方內建的幾乎一樣，但將關鍵的 .Summary 改成了 .Content： .Summary…",
+      "image": null,
+      "publishedAt": "2025-12-21T14:46:05Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/rss-fix/",
+      "detailPath": "articles/53b2335bd99c36f55e6efc01.json"
+    },
+    {
+      "id": "75f9f5aa85271568ccd73a59",
+      "title": "「搜尋」功能上線啦！",
+      "summary": "因爲文章越來越多，只靠分類其實也不好找到文章，在「 歷史上的今天 」之後，弄了搜尋功能！以下分享怎麼在 Hugo 中做到。 做出搜尋頁面的基本頁 content/search/_index --- title: \"搜尋\" type: \"search\" draft: false --- header 在導覽列做搜尋框框 themes/classic/layouts/partials/header.html <header> <nav> <ul> {{ $title := lower .Title }} {{ $section := lower .Section }} <li class=\"pull-left {{ if .IsHome }}current{{ end }}\"> <a href=\"{{ .Site…",
+      "image": null,
+      "publishedAt": "2025-12-21T13:57:54Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/search/",
+      "detailPath": "articles/75f9f5aa85271568ccd73a59.json"
+    },
+    {
+      "id": "abc2ee1a750d5e0c9b17e374",
+      "title": "随便走走漫步新加坡",
+      "summary": "最近去新加坡呆了一段时间，体验了当地的生活，品尝了美食，也走了很多地方，特地记录一下。 吃在新加坡 新加坡的人华裔和印度人（也包括孟加拉人）应该占大多数的，因此中餐还是很多的，中国的品牌也很多。到达之后，首先就是下载一个瑞幸，品尝一下0.99新币的瑞幸。 在Chinatown,也就是牛车水，有很多中餐馆，都比较正宗，值得去吃。 新加坡也有一些自己的特色美食，比如肉骨茶，田鸡粥，大螃蟹，都值得品尝一下。肉骨茶除了出名的松发，朋友推荐的黄亚细也不错，而且不用排队。 如果这些都觉得没啥的话，可以去吃吃印度餐厅，当然我在小印度的食阁鼓起了很大的勇气，还是没敢吃。 除了这些之外，到时没觉得新加坡有啥本地特色美食了。平时就是各种鸡饭的吃了。食阁里面的价格还比较便宜，但是卫生和服务态度就比较一般了，去了当地比较出名的老巴刹…",
+      "image": "https://img.isming.me/photo/sg/IMG_20251126_185318.webp",
+      "publishedAt": "2025-12-21T12:22:35Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2025-12-singapore/?utm_source=rss",
+      "detailPath": "articles/abc2ee1a750d5e0c9b17e374.json"
+    },
+    {
+      "id": "17be7ffcf89d1ef5957cc9d4",
+      "title": "「歷史上的今天」頁面建立",
+      "summary": "文章越來越多的情況下，單純用分類方式還是會很困擾，因爲列表列出之後真的太多了。處理方法可以是增加搜尋，但 Eddie 想試試看用同日期但不同年份的方式來處理，讓一次顯示的文章不要太多、太轟炸，於是「 歷史上的今天 」就建立了！ 技術層面 # 如果爲 365 天都建立一個 list 是不實際的，一個功能佔據這麼多檔案就太瞎了，因此，應該是用一個頁面來包含全部資訊，再用某種機制（判斷是）抓出自己要的文章才是正解。 html # Eddie 習慣都是做在 themes 而不是網站本身，但其實沒差，只是 hugo 優先級順序不同罷了，有確定抓到對的檔案，最終生成在 Public 內的檔案會是一樣的。 themes/classic/layouts/page/on-this-day.html {{ partial \"he…",
+      "image": null,
+      "publishedAt": "2025-12-21T07:18:41Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/on-this-day/",
+      "detailPath": "articles/17be7ffcf89d1ef5957cc9d4.json"
+    },
+    {
+      "id": "0a44f2377d41b41741ab095f",
+      "title": "30個每年復盤都可以問自己的問題",
+      "summary": "人生沒有Spotify Wrapped。所以我自己寫了一份年度復盤問卷，總結今年、微調方向、留一個時空膠囊給未來的自己。",
+      "image": null,
+      "publishedAt": "2025-12-21T07:13:49Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/annual-questions",
+      "detailPath": "articles/0a44f2377d41b41741ab095f.json"
+    },
+    {
       "id": "241a5329ae455afbeee8a9bb",
       "title": "如何當預言家（但不說出你的預言）",
       "summary": "const handleInputChange = (e) => {",
@@ -582,83 +659,6 @@
       "sourceTitle": "ArthurChiao's Blog",
       "link": "https://arthurchiao.art/blog/deepseek-agentic-dataset-synthesizing-zh/",
       "detailPath": "articles/4a5e69998829c1703ad0cd2e.json"
-    },
-    {
-      "id": "e9ccc34f35421f59beb3c404",
-      "title": "自由的代价是自由/就这样一直游到护照变蓝!",
-      "summary": "写在前面，又是一些碎碎念 从中国回来以后，我郑重其事地记下了十个想写的主题，结果最后只完成了一篇，看来写作的门槛不在于灵光乍现的念头，而在于日复一日的枯燥执行。持久对抗本能的懒散，把瞬时闪现的火花不断锻造成切实而持久的文字，的确不是人人都可以做得到的。 感受就像品尝美食一样，都有它的最佳赏味期。延迟的书写更像是一场考古，从零碎的、残缺的，不完整的回忆里小心翼翼地挖掘和拼凑，过程中难免变味。当然味道不一定必然变得更差，时间的发酵甚至可能让痛苦转化为某种温柔的甘甜，但间隔越久，失真就越严重，这是没办法改变的规律。尤其是当回忆中穿插交织着很多私人的情感，细腻的，不可言说的部分，我本能抗拒这样的挖掘和拼凑，可是拖来拖去，很多值得被珍藏和回味的感受就这样在意识海洋里慢慢褪色，最终完全消失了，我当然也并不甘心接受这样的消…",
-      "image": "https://1sle29.github.io/img/us1.JPG",
-      "publishedAt": "2025-12-16T00:00:00Z",
-      "sourceId": "72390a92567df082",
-      "sourceTitle": "1sle",
-      "link": "https://1sle29.github.io/p/the-price-of-freedom/",
-      "detailPath": "articles/e9ccc34f35421f59beb3c404.json"
-    },
-    {
-      "id": "28d48f1a0012dfbebcd5540b",
-      "title": "BlogBlog.Club 網站上線",
-      "summary": "經過了好幾天的準備，部落部落俱樂部終於上線啦！",
-      "image": null,
-      "publishedAt": "2025-12-15T16:30:00Z",
-      "sourceId": "ad9c9cc2127a7a13",
-      "sourceTitle": "BlogBlog.Club 部落部落俱樂部 Blog",
-      "link": "https://blogblog.club/blog/blogblogclub-is-up",
-      "detailPath": "articles/28d48f1a0012dfbebcd5540b.json"
-    },
-    {
-      "id": "66e33ceb749b644954d886ae",
-      "title": "海南旅行日记D12-天空之镜",
-      "summary": "海南旅行日记D12 - 天空之镜 怀着满心的期待，我大清早就来到了西岛的海边上，亲眼看着天色逐渐变亮。很遗憾的是，因为天气问题，乌云挡住了阳光，我没能在西岛上看到日出。 但好运的是，我看到了西岛的朝霞，朝霞和晚霞一样像火烧红一样的云，真的很美丽。 乘上西岛的船只，回到了码头，一看停车场，发现车辆不知道被什么东西碰撞刮蹭了一下，结果就导致我必须报交警和保险，从西岛到交管所处理，然后我又去打卡天涯海角，然后交警告诉我没找到人，要我回去开事故认定责任书。 于是就这样，我又从天涯区回到交管所，耽误了近3个多小时的行程，终于处理完了交通事故。 下午2点左右，终于吃完了午饭，于是我赶快往莺歌海盐场出发，开了两个多小时的车，才终于来到了莺歌海盐场，这里是今天这次旅行的重头戏。 莺歌海盐场有个别名叫，天空之镜，这里视野非常开…",
-      "image": null,
-      "publishedAt": "2025-12-15T13:12:12Z",
-      "sourceId": "716f999b030a6a78",
-      "sourceTitle": "明琪的日记",
-      "link": "https://yumieko.kikowiwu.com/posts/3c6327e5-0384-4b0e-af19-69b319efe0d0.html",
-      "detailPath": "articles/66e33ceb749b644954d886ae.json"
-    },
-    {
-      "id": "b09f372b7dec37ad13ca82a5",
-      "title": "玩家心態：版本更新就換個玩法",
-      "summary": "遊戲會改版，你練的技能可能一夜之間變廢招。現實也一樣：工作、技能、關係都會變。抱怨沒用，適應才是真正的技能。",
-      "image": null,
-      "publishedAt": "2025-12-15T12:17:23Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/version-update",
-      "detailPath": "articles/b09f372b7dec37ad13ca82a5.json"
-    },
-    {
-      "id": "bb968668217f96befc853c37",
-      "title": "gocar：一个Golang的cargo",
-      "summary": "经常在Go和Rust之间切换，很喜欢Rust的Cargo带来的优秀项目初始化和构建体验：cargo new <appName> # 一键创建标准项目cargo build # 统一构...",
-      "image": null,
-      "publishedAt": "2025-12-15T07:25:14Z",
-      "sourceId": "d87239607d14c88c",
-      "sourceTitle": "怕刺",
-      "link": "https://pa.ci/442.html",
-      "detailPath": "articles/bb968668217f96befc853c37.json"
-    },
-    {
-      "id": "101e7ce84225ae812a2fb4b7",
-      "title": "不要在意它會燙",
-      "summary": "從 Morgan Housel 的 Podcast 聽到這個小故事，這是來自 1962 年的經典電影《阿拉伯的勞倫斯)》裡的場景：",
-      "image": null,
-      "publishedAt": "2025-12-15T06:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/not-minding-that-it-hurts",
-      "detailPath": "articles/101e7ce84225ae812a2fb4b7.json"
-    },
-    {
-      "id": "5b76a87931b07e63449de5a5",
-      "title": "入蜀记 day205 个人的历史不归历史，归文学",
-      "summary": "「个人的历史不归历史，归文学。」",
-      "image": null,
-      "publishedAt": "2025-12-15T04:48:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_205/",
-      "detailPath": "articles/5b76a87931b07e63449de5a5.json"
     }
   ]
 }

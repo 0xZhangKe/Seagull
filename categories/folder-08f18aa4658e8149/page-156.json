@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "22a97125dfd6c1a96875f837",
+      "title": "Android 内存优化之二 - MAT使用进阶",
+      "summary": "本文是 MAT 工具使用系列的第二篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化之一：MAT 使用入门 Android内存优化之二：MAT使用进阶 Android内存优化之三：打开MAT中的Bitmap原图 技术复核（2026-10-13） ：保留 2015 年的操作截图，概念与菜单说明对照 MAT 1.17.0 文档。旧 Android Studio 的右键转换和 GC 按钮不代表当前界面；下文修正引用方向、Unreachable 和泄漏判定，并补上缺失的分析步骤。 抓取流程见本系列 入门篇 ：先在 Android Studio Profiler 以 debuggable / compl…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:26:36Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT-Pro/",
+      "detailPath": "articles/22a97125dfd6c1a96875f837.json"
+    },
+    {
+      "id": "edcb1d4763935081023653c3",
+      "title": "Android 内存优化(1) - MAT 使用入门",
+      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 技术复核（2026-10-13） ：本文保留原教程和历史截图。MAT 的堆分析概念仍适用；旧 Eclipse/DDMS 抓取流程已过期。下载与运行要求更新到 MAT 1.17.0（2026-06-10，独立版要求 Java 21+） ，并修正 ART、Bitmap、Retained Size 和引用类型说明。 现在可以先在 Android Studio Profi…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:10:29Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
+      "detailPath": "articles/edcb1d4763935081023653c3.json"
+    },
+    {
+      "id": "45c59bddec1a44274e2d27b4",
+      "title": "我来有赞了",
+      "summary": "今天晚上终于有时间来写写博客了，想想决定从ucloud离职到现在，差不多一个多月了。关于离职的原因，一句话两句话也说不清楚，离职这事也纠结了好久，正好顺着年后跳槽高峰期，从上海跳到了美丽大杭州。",
+      "image": null,
+      "publishedAt": "2015-04-03T23:10:49Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/04/03/leave-ucloud-to-youzan/",
+      "detailPath": "articles/45c59bddec1a44274e2d27b4.json"
+    },
+    {
+      "id": "4715733c507140cdc46a0cd4",
+      "title": "世界是个隐喻",
+      "summary": "「时间，是书中隐含的概念。后记里说，换算下来书里的每一张图都相当于700万年的历史，但其实每一节的时间单位都在变化。比如“宇宙”部分92亿年，“隐生宙”部分40.5亿年，“中生代”部分则只有2.9亿年……这本书的时间是涌动的。意识到这一点，又会感到生命的短暂和夏花般的灿烂。所以你会怎样看待时间？当语言中的永恒成为局限。」",
+      "image": null,
+      "publishedAt": "2015-03-31T23:55:45Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/Review/Review_Alpha_directions/",
+      "detailPath": "articles/4715733c507140cdc46a0cd4.json"
+    },
+    {
+      "id": "1795430768818b2a50f9e16b",
+      "title": "Android性能优化后续",
+      "summary": "前言 本文是一篇译文，原文 Android Performance Case Study Follow-up 的作者是大名鼎鼎的 Romain Guy 。本文讲述了Android性能优化的一些技巧、方法和工具。 技术复核（2026-10-13） ：保留 2015 年 Falcon Pro 3 / Moto X 2014 的历史案例，以下第一人称属于原作者。Tracer for OpenGL ES、Hierarchy Viewer 所在的 Android Device Monitor 已在 Android Studio 3.1 弃用、3.2 移除；旧工具步骤标为历史内容，文末补充 Android 12+ 的 Perfetto 分析入口。原站链接本次未能重新读取，技术修订依据文中列出的官方资料和版本化源码。 译文…",
+      "image": null,
+      "publishedAt": "2015-03-31T01:29:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/31/android-performance-case-study-follow-up/",
+      "detailPath": "articles/1795430768818b2a50f9e16b.json"
+    },
+    {
+      "id": "72ed4eab2103e8a0f73bbeea",
+      "title": "加速Android Studio/Gradle构建",
+      "summary": "已经使用Android Studio进行开发超过一年，随着项目的增大，依赖库的增多，构建速度越来越慢，现在最慢要6分钟才能build一个release的安装包，在网上查找资料，发现可以通过一些配置可以加快速度，这里跟大家分享一下。 开启gradle单独的守护进程 在下面的目录下面创建 gradle.properties 文件： /home/<username>/.gradle/ (Linux) /Users/<username>/.gradle/ (Mac) C:\\Users\\<username>\\.gradle (Windows) 并在文件中增加： 1 org . gradle . daemon = true 同时修改项目下的 gradle.properties 文件也可以优化： 1 2 3 4 5 6 7…",
+      "image": "http://isming.qiniudn.com/as_gradle_offline.png",
+      "publishedAt": "2015-03-18T14:56:10Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-03-18-android-build-speed-up/?utm_source=rss",
+      "detailPath": "articles/72ed4eab2103e8a0f73bbeea.json"
+    },
+    {
+      "id": "e63ffb82464b8eb849ebf554",
+      "title": "玩木工【十七】：做了一个锯子架",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-03-16T20:26:11Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw017/",
+      "detailPath": "articles/e63ffb82464b8eb849ebf554.json"
+    },
+    {
       "id": "544db41ed6af385af9976a87",
       "title": "《现代英文选评注》荟萃",
       "summary": "光是从评语来看，夏是幽默的人。这幽默是读书人的幽默，让人可以从中看出一种真性情，让人真想和他交朋友。如：“套一句金圣叹批水浒的笔法：“我亦欲问。”（p20）”看过金批的水浒，金圣叹是个妙人，夏也受其影响。 再如",
@@ -582,83 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2014/09/14/mozilla-history/",
       "detailPath": "articles/9ff5abe08df92b9fc9f7faa9.json"
-    },
-    {
-      "id": "fc5c63915951730021c91bf1",
-      "title": "Yarn概述",
-      "summary": "Yarn是随着hadoop发展而催生的新框架，全称是Yet Another Resource Negotiator，可以翻译为“另一个资源管理器”。yarn取代了以前hadoop中jobtracker（后面简写JT）的角色，因为以前JT的任务过重，负责任务的调度、跟踪、失败重启等过程，而且只能运行mapreduce作业，不支持其他编程模式，这也限制了JT使用范围，而yarn应运而生，解决了这两个问题。",
-      "image": null,
-      "publishedAt": "2014-09-07T14:07:51Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/09/07/yarn-intro/",
-      "detailPath": "articles/fc5c63915951730021c91bf1.json"
-    },
-    {
-      "id": "5ad3e28124d2adf9a47e1f49",
-      "title": "玩木工【七】：工作角",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-09-03T16:00:33Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw007/",
-      "detailPath": "articles/5ad3e28124d2adf9a47e1f49.json"
-    },
-    {
-      "id": "1dca04b54dde02a1503f7a24",
-      "title": "玩木工【六】：垃圾箱",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2014-08-18T04:27:24Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw006/",
-      "detailPath": "articles/1dca04b54dde02a1503f7a24.json"
-    },
-    {
-      "id": "c059e4c62db14fc15b1f4e15",
-      "title": "记一句后面 Jarvis 说的话",
-      "summary": "「《PULP乐队：一部关于生、死、超市的电影》评论」",
-      "image": null,
-      "publishedAt": "2014-08-17T13:08:10Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/archives/douban/Review_Movies/Review_PULP_20140817/",
-      "detailPath": "articles/c059e4c62db14fc15b1f4e15.json"
-    },
-    {
-      "id": "14c5b68d010835a2d66f679a",
-      "title": "两个水壶问题",
-      "summary": "问题描述是这样的： 假设有一个池塘，里面有无穷多的水。现有2个空水壶a，b，其容积分别为6升和5升。如何只用这2个水壶从池塘里取得3升的水**（最后，这三升水，在其中一个壶里）。",
-      "image": null,
-      "publishedAt": "2014-08-16T05:04:37Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/08/16/two-pot-question/",
-      "detailPath": "articles/14c5b68d010835a2d66f679a.json"
-    },
-    {
-      "id": "59a17a094a78371bbe3df7b5",
-      "title": "inter- intra- cept -ee -er词缀讲解",
-      "summary": "故事是这么开始的，我遇到了inter-organizational与intra-organizational这么两个词组，其实也很好区分，前面是“不同组织之间的”，后者是“同一组织内部的”，搞计算机的应该知道有个叫intranet的网，它是与internet不一样的，专指企业内部网络。我这里想以这两个词缀为基准，展开一系列联想，学英语的乐趣不就在于此嘛。",
-      "image": null,
-      "publishedAt": "2014-08-09T07:46:12Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/08/09/inter-intra-cept-ee-er/",
-      "detailPath": "articles/59a17a094a78371bbe3df7b5.json"
-    },
-    {
-      "id": "11c4ba2dc3a279519afe0f5d",
-      "title": "关于",
-      "summary": "1 ( def 刘家财 2 ( doto ( Programmer. ) 3 ( .alias \"写代码的西瓜\" \"jiacai2050\" ) 4 ( .currentJobLocation \"Hangzhou\" ) 5 ( .homepage \"https://liujiacai.net\" ) 6 ( .email \"blog@liujiacai.net\" ) 7 ( .university \"Yantai University\" ) 8 ( .favorites 9 { :sport [ \"Climbing\" \"Pingpong\" ] 10 :languages [ :Zig :Rust :Go :Clojure ] 11 :misc [ \"Podcast\" \"Reading\" \"Hack Emacs\"…",
-      "image": null,
-      "publishedAt": "2014-08-07T23:48:37Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/about/",
-      "detailPath": "articles/11c4ba2dc3a279519afe0f5d.json"
     }
   ]
 }

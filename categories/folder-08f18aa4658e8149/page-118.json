@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "688a3dc9218be3435e56209a",
+      "title": "Linux 下 Node Source 安装的 npm 权限问题",
+      "summary": "前言 近期安装了 Linux 系统作为主力机器的第二系统，双启动引导。 系统是 Pop!OS 20.04 LTS ，基于 Ubuntu 20.04 由于前端开发及部署需求，需要安装 node.js，于是使用 node source 提供的 node 发行版。 由于安装完成后，npm 存储包的目录为 /usr ，使用时必须加 sudo ，为了避免这种情况和权限安全问题，需要将 npm 的包存储到用户目录下，并且强烈不建议使用 sudo 来全局安装包到 /usr 目录下 方法 检查当前 npm 安装的包路径前缀 1 npm config get prefix 如果返回 /usr 则执行以下命令 1 2 3 mkdir ~/.npm-global export NPM_CONFIG_PREFIX = ~/.npm-…",
+      "image": null,
+      "publishedAt": "2022-03-20T17:16:02Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/npm-prefix/",
+      "detailPath": "articles/688a3dc9218be3435e56209a.json"
+    },
+    {
+      "id": "5f34ad74b791516d6e6030d1",
+      "title": "Kubernetes、集群联邦和资源分发",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2022-03-19T00:00:00Z",
+      "sourceId": "4d49716051922902",
+      "sourceTitle": "面向信仰编程 - Articles",
+      "link": "https://draven.co//kuberentes-federation",
+      "detailPath": "articles/5f34ad74b791516d6e6030d1.json"
+    },
+    {
+      "id": "aae03b6048973b569e8daa55",
+      "title": "百年未有之大变局，我试着聊点政治",
+      "summary": "自从出国之后跟国内亲人们的交流就少得多了，以前会经常和我爸讨论一些社会经验和时局的话题，现在他们更多的是关心我的新生活是否顺利。说实话，在加拿大的生活比在中国要简单很多，像这样的发达资本主义国家已经发展几百年了，方方面面都已经相当成熟，也有清晰的界限和规则，任何人都可以在一定的前提下享受明确的、不受限的自由。首先我想重申自己的一个观点就是任何人都应该关心政治，此前我提过很多次了。都知道“经济基础决定上层建筑”，也知道任何事物都不是孤立存在的，所以一定有东西能影响甚至决定经济，那就是政治。大部分情况下，经济规律只能在一个平稳的政治环境中才能体现出来，如果政治环境稍有动荡，反映到经济上就是翻天覆地。这次俄乌战争爆发之后，在美国的很多中概股跌得很严重，然后就会在社交媒体上看到很多不明真相的人都在讨论要不要抄底——如…",
+      "image": null,
+      "publishedAt": "2022-03-18T18:03:00Z",
+      "sourceId": "87c2e8631d9fb702",
+      "sourceTitle": "Tom Brew",
+      "link": "https://www.ie9.org/2022/03/my-political-opinions.html",
+      "detailPath": "articles/aae03b6048973b569e8daa55.json"
+    },
+    {
       "id": "8f3a846955621ccaea6fe3d5",
       "title": "大雪能让世界安静",
       "summary": "三月的雪",
@@ -626,39 +659,6 @@
       "sourceTitle": "沉默之沙",
       "link": "https://yukieyun.net/roam/ecuador-professional-visa-application/",
       "detailPath": "articles/74c667d4d375f3d06cc44eab.json"
-    },
-    {
-      "id": "ae94299d0edd327efa63fbdd",
-      "title": "2021年终总结",
-      "summary": "12月一到，所有App都在有意无意地通过「年终盘点」来提醒你今年又要过完了，而此刻的我仍然弄不清「2021」「2020」「2019」以及「今年」「去年」。 如果用这些条目来总结这一年是否有些乏味？它们能定义我吗？我是我看完的书和电影的集合吗？今年播放最多次的歌是我今年的主旋律吗？ 我以前很喜欢写年终总结，从某个时间点回望过去这一段不长不短的时间总有一种「看！我做到了这么多！」的满足感，不管是非常实际的重大人生事件，还是精神世界里我有了一些为我称道的变化。 但2021年没有。我很遗憾地想，大约是没有。 猫 和猫又相处了一年，有时候我对着她说话我觉得她听懂了，我说「你别走，再陪我躺一会儿」，她定定地看着我，原地转了两圈，又在我身前趴下。我抱着她蹭，一边蹭一边说「猫猫你怎么这么好」，猫重重地叹一口气。 年底我的杀马…",
-      "image": "https://fourxiajiao.github.io/2021/2021-recap/IMG_6383.jpg",
-      "publishedAt": "2021-12-31T00:56:03Z",
-      "sourceId": "6b1e25ad8128217a",
-      "sourceTitle": "一笼虾饺有四个",
-      "link": "https://fourxiajiao.github.io/2021/2021-recap/",
-      "detailPath": "articles/ae94299d0edd327efa63fbdd.json"
-    },
-    {
-      "id": "8025850c8d47b3c2af558a5d",
-      "title": "健身课程体验: Focus T25（外加 Shawn Week）",
-      "summary": "人生总是忙完这一阵就可以继续忙下一阵了，尤其是我这种处理事件的 capacity 本来就低的人来说，每天至少1-2小时躺平 decompress 为最优先。过去的半年（其实中间隔了一个月没有进行，所以实际上是5个月）里我终于试着把锻炼这件事断断续续地做了起来，以 Shawn T 的 Focus T25 program 为开始。现在来总结一下新手上路的感想。 寻找合适的 training program # 前段时间因为工作压力+找工作的压力，蓦然发现自己已经比疫情前重了15磅。刚刚 half hearted 运动了两天，马上又感冒全身没力气，所以运动大业立刻中道崩殂。对我来说运动/健身最大的阻力是没有动力，因为我几乎完全没有身材焦虑（不 care 别人 + 家里没有全身镜），又喜欢用各种甜食和膨化食品排解压力…",
-      "image": "https://fourhappylions.com/posts/focus-t25-review/bend.jpeg",
-      "publishedAt": "2021-12-31T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/focus-t25-review/",
-      "detailPath": "articles/8025850c8d47b3c2af558a5d.json"
-    },
-    {
-      "id": "11f4ee55efb6042bee2fa642",
-      "title": "致 2022 年的自己",
-      "summary": "2025.10.17 注： 这篇文章记录了我在高三的另一个侧面。焦虑、内耗、无助、混沌，尤其是把这样沉沦的状态和以前的自己比较后，对当下的自己既厌恶，又无法脱离。 所谓足以修改人生轨迹的高考一步步逼近，如此重要的关头，自己的心情还总被喜欢的人反复牵引，难以全心专注。很多道理自己都明白，但理智总是不受控制。无从正名的爱恋堆积，无得他法，唯有自渡。 展信佳。 这里是2021的你。2022年，对你来说你，想必是终身难忘的一年。 不久前，侨中举办的2021元旦晚会落下帷幕，回宿舍洗完澡已经是一天的尾声。在床上辗转反侧难以入眠，不知不觉时针已经悄悄划过十二点。可能是因为晚上的兴奋过度，也可能是在这样特殊的时间节点，想起刚刚结束月考的糟糕成绩，想起过去的一年光阴倏忽，想起去年今日的所在所感，很难遏制自己思想发散，回忆起种…",
-      "image": null,
-      "publishedAt": "2021-12-31T00:00:00Z",
-      "sourceId": "6db99b063a5d43ac",
-      "sourceTitle": "伏枥之间",
-      "link": "https://leehenry.top/posts/moment_memos/achieve/211231-wake-up-call-for-2022/",
-      "detailPath": "articles/11f4ee55efb6042bee2fa642.json"
     }
   ]
 }

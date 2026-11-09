@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "14347b082675e3a67ef5ca51",
+      "title": "一本讲 Android 流畅性的书，应该有什么内容？",
+      "summary": "最近读了一本新书：《打造流畅的 Android App》，京东链接： https://item.jd.com/10035215362170.html 。因为书名所以买了这本书，读完之后觉得有必要写一篇文章，让还没有买此书的同学了解一下 我个人的建议是：如果你是个老鸟，不建议买，这本书里面没有介绍太多原理性的东西，对于 Android 流畅性也没有一个比较全面的介绍；如果你是新手，这本书用来当做开阔视野 + 查漏补缺还可以，想更深入的了解 Android 流畅度还是差了点东西 之所以我会这么建议，是因为这本书确实没有讲太多性能或者流畅度相关的东西，也没有比较深入的原理部分，篇幅更多在讲 静态代码审查 、 AS Profiler 的使用 、 App 架构 、 保活 、 网络性能优化 、 APK 大小优化 、 Ap…",
+      "image": null,
+      "publishedAt": "2021-10-27T07:21:31Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/10/27/if-i-write-a-book-about-performance/",
+      "detailPath": "articles/14347b082675e3a67ef5ca51.json"
+    },
+    {
+      "id": "c2c41eedda07b54dab652dac",
+      "title": "Gravatar 头像镜像站已上线",
+      "summary": "停止公告 2024年5月3日，因CDN运营问题，终止 gravatar.taurusxin.com 全球头像镜像服务，镜像站已于当日停止解析，以下内容仅留作存档。 由于官方 https 站均被屏蔽，目前本站使用的是自建的 gravatar 镜像站，使用 Cachefly 全球 CDN 进行分发 说明地址： https://gravatar.taurusxin.com/ 镜像地址： https://gravatar.taurusxin.com/avatar/ 将你的博客中的头像地址改为 https://gravatar.taurusxin.com/avatar/ 即可 缓存规则如下 对 200、301 或者 302 等有效代码缓存的时间长度，特定参数 any 表示对任何响应都缓存一定时间长度 HTTP Stat…",
+      "image": "https://weavatar.com/avatar/feaf84106b961c37594cc19ba9f6d1fd?d=mm&s=300",
+      "publishedAt": "2021-10-27T00:23:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/gravatar/",
+      "detailPath": "articles/c2c41eedda07b54dab652dac.json"
+    },
+    {
+      "id": "33d499429f57e0ebb43e36f4",
+      "title": "Android 系统开发系列（1）：Android 12 源代码下载、编译和刷机",
+      "summary": "Android 12 源码于 2021 年发布，我当时用来折腾的测试机是 Pixel 3 XL。本文保留那次实操记录，并将可复现的发布版示例固定为 android-12.0.0_r3 。版本对应关系以 AOSP tags/build numbers 为准。 本文介绍这条历史分支的下载、编译和刷机。本地编译便于查看/修改系统源码、增加调试信息，主要用途如下： 可以刷真机，方便开发者进行本地 Debug，同时代码可以导入 Android Studio 进行 Debug 可以编译 userdebug 版本以使用更多调试能力。adb root/remount 是否可用还取决于 adbd、AVB/verity、分区和构建配置；userdebug 不等于所有目录直接可写，也不代替应用自身的调试权限。 可以更方便地进行 A…",
+      "image": null,
+      "publishedAt": "2021-10-26T03:49:33Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/10/26/build-android-12/",
+      "detailPath": "articles/33d499429f57e0ebb43e36f4.json"
+    },
+    {
       "id": "d7d75f8bbdec4170c22ce154",
       "title": "叁拾一周：No.17",
       "summary": "这是「叁拾一周」第十七期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 169 位。我的下一个目标是 181。 我的通讯为了保证统一性，一直还同步发在我的博客上，今年乱七八糟的笔记有点儿多，而且一条笔记还变得长了起来，往往写着写着就奔 800 字小作文去了，索性也想发在博客上，打开一看，博客已经被通讯占满了，有些不大习惯，上周就想了办法，把 newsletter 放在一个分类下，在博客主页面隐藏了。如果想从博客阅读的话，可以点击这个 链接 访问，它也是唯一能保证最终版的地方，毕竟有时候我会回来修改一些东西，用任何第三方工具都不太好搞。 近期，我也在考虑有没有比 Revue 更好用，更亲民的平台可以切换过去。试了几个，都不太理想，先保持 Revue + Blog 这种形式吧。等我有更好的办法再说。 今天想聊的…",
@@ -626,39 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2021/08/21/nice-try-summer-research/",
       "detailPath": "articles/380f0e528165355674eced5d.json"
-    },
-    {
-      "id": "d5da8cca19916624765e04e4",
-      "title": "前不朽，后生命不能承受之轻——米兰·昆德拉与现代性",
-      "summary": "“真正的资产阶级文化恰恰产生于60年代的这场旨在破坏传统文化和生活方式的革命之后：它被称为“后现代主义”，它推毁了文化的等级制，扩大了文化的范围，把一切都当作了文化。它是一种民主的文化，是一种人人可以参与的游戏。”——《中产阶级的孩子们》 预警/建议：如果你还没有看书，别看这篇文章。如果你对“现代性”感兴趣，请一定去看这本书。 这篇文章，骨骼是我个人的经验、感触、理解、反思；肌肉是顺手摘录、打乱顺序的超大量原文摘剪拼贴；有些在同一个引号里看起来很连贯的句子可能在原文里完全不挨着，不先看原著提供的语境直接看这篇文章极大概率又被剧透又看不懂。 至于灵魂，昆德拉的已经通过写作呈现在书里了，我的已经透过薄薄纸页与他共鸣了。灵魂只取决于你的灵魂和这本书，与我无关，与我看到的无关，与我写下的无关。 《不朽》 这本书名为《…",
-      "image": "https://picture-guan.oss-cn-hangzhou.aliyuncs.com/img/20220502205911.png",
-      "publishedAt": "2021-08-22T00:00:00Z",
-      "sourceId": "ecbcf87e0432fdbd",
-      "sourceTitle": "关门说话",
-      "link": "https://hugo-stack-theme-mod-six.vercel.app/2021/%E5%89%8D%E4%B8%8D%E6%9C%BD%E5%90%8E%E7%94%9F%E5%91%BD%E4%B8%8D%E8%83%BD%E6%89%BF%E5%8F%97%E4%B9%8B%E8%BD%BB%E7%B1%B3%E5%85%B0%E6%98%86%E5%BE%B7%E6%8B%89%E4%B8%8E%E7%8E%B0%E4%BB%A3%E6%80%A7/",
-      "detailPath": "articles/d5da8cca19916624765e04e4.json"
-    },
-    {
-      "id": "6f599791ea437cf73a2c9a4d",
-      "title": "Docker 入门笔记",
-      "summary": "Docker 基础知识.框架来源于 BV1og4y1q7M4,部分内容翻译自 docs.docker.com",
-      "image": null,
-      "publishedAt": "2021-08-21T11:02:13Z",
-      "sourceId": "a3783910db542651",
-      "sourceTitle": "极东魔术昼寝结社",
-      "link": "https://blog.jaoushingan.com/2021/08/21/docker/",
-      "detailPath": "articles/6f599791ea437cf73a2c9a4d.json"
-    },
-    {
-      "id": "c21787728afd9b9afc821b22",
-      "title": "Hi, Obsidian",
-      "summary": "折腾无休无止 尝试一下传说中的 Obsidian",
-      "image": "https://tva1.sinaimg.cn/large/008i3skNly1gtl1t9m9opj617m0u0who02.jpg",
-      "publishedAt": "2021-08-18T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/08/obsidian/",
-      "detailPath": "articles/c21787728afd9b9afc821b22.json"
     }
   ]
 }

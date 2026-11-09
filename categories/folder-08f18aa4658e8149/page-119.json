@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "ae94299d0edd327efa63fbdd",
+      "title": "2021年终总结",
+      "summary": "12月一到，所有App都在有意无意地通过「年终盘点」来提醒你今年又要过完了，而此刻的我仍然弄不清「2021」「2020」「2019」以及「今年」「去年」。 如果用这些条目来总结这一年是否有些乏味？它们能定义我吗？我是我看完的书和电影的集合吗？今年播放最多次的歌是我今年的主旋律吗？ 我以前很喜欢写年终总结，从某个时间点回望过去这一段不长不短的时间总有一种「看！我做到了这么多！」的满足感，不管是非常实际的重大人生事件，还是精神世界里我有了一些为我称道的变化。 但2021年没有。我很遗憾地想，大约是没有。 猫 和猫又相处了一年，有时候我对着她说话我觉得她听懂了，我说「你别走，再陪我躺一会儿」，她定定地看着我，原地转了两圈，又在我身前趴下。我抱着她蹭，一边蹭一边说「猫猫你怎么这么好」，猫重重地叹一口气。 年底我的杀马…",
+      "image": "https://fourxiajiao.github.io/2021/2021-recap/IMG_6383.jpg",
+      "publishedAt": "2021-12-31T00:56:03Z",
+      "sourceId": "6b1e25ad8128217a",
+      "sourceTitle": "一笼虾饺有四个",
+      "link": "https://fourxiajiao.github.io/2021/2021-recap/",
+      "detailPath": "articles/ae94299d0edd327efa63fbdd.json"
+    },
+    {
+      "id": "8025850c8d47b3c2af558a5d",
+      "title": "健身课程体验: Focus T25（外加 Shawn Week）",
+      "summary": "人生总是忙完这一阵就可以继续忙下一阵了，尤其是我这种处理事件的 capacity 本来就低的人来说，每天至少1-2小时躺平 decompress 为最优先。过去的半年（其实中间隔了一个月没有进行，所以实际上是5个月）里我终于试着把锻炼这件事断断续续地做了起来，以 Shawn T 的 Focus T25 program 为开始。现在来总结一下新手上路的感想。 寻找合适的 training program # 前段时间因为工作压力+找工作的压力，蓦然发现自己已经比疫情前重了15磅。刚刚 half hearted 运动了两天，马上又感冒全身没力气，所以运动大业立刻中道崩殂。对我来说运动/健身最大的阻力是没有动力，因为我几乎完全没有身材焦虑（不 care 别人 + 家里没有全身镜），又喜欢用各种甜食和膨化食品排解压力…",
+      "image": "https://fourhappylions.com/posts/focus-t25-review/bend.jpeg",
+      "publishedAt": "2021-12-31T00:00:00Z",
+      "sourceId": "dc53cf887984ae1c",
+      "sourceTitle": "四喜丸子",
+      "link": "https://fourhappylions.com/posts/focus-t25-review/",
+      "detailPath": "articles/8025850c8d47b3c2af558a5d.json"
+    },
+    {
+      "id": "11f4ee55efb6042bee2fa642",
+      "title": "致 2022 年的自己",
+      "summary": "2025.10.17 注： 这篇文章记录了我在高三的另一个侧面。焦虑、内耗、无助、混沌，尤其是把这样沉沦的状态和以前的自己比较后，对当下的自己既厌恶，又无法脱离。 所谓足以修改人生轨迹的高考一步步逼近，如此重要的关头，自己的心情还总被喜欢的人反复牵引，难以全心专注。很多道理自己都明白，但理智总是不受控制。无从正名的爱恋堆积，无得他法，唯有自渡。 展信佳。 这里是2021的你。2022年，对你来说你，想必是终身难忘的一年。 不久前，侨中举办的2021元旦晚会落下帷幕，回宿舍洗完澡已经是一天的尾声。在床上辗转反侧难以入眠，不知不觉时针已经悄悄划过十二点。可能是因为晚上的兴奋过度，也可能是在这样特殊的时间节点，想起刚刚结束月考的糟糕成绩，想起过去的一年光阴倏忽，想起去年今日的所在所感，很难遏制自己思想发散，回忆起种…",
+      "image": null,
+      "publishedAt": "2021-12-31T00:00:00Z",
+      "sourceId": "6db99b063a5d43ac",
+      "sourceTitle": "伏枥之间",
+      "link": "https://leehenry.top/posts/moment_memos/achieve/211231-wake-up-call-for-2022/",
+      "detailPath": "articles/11f4ee55efb6042bee2fa642.json"
+    },
+    {
       "id": "76d2d9438768f20f80b0ad59",
       "title": "PopOS 20.04 安装 Grub 引导 Win 11 + Linux 双系统并配置主题",
       "summary": "前言 因为 PopOS 默认内置用的是 systemd 做的系统引导，systemd 仅适合单系统引导，双系统引导就无法完成，因为其无法识别在多个硬盘上的不同分区的引导加载器，除非将 Windows 分区上的 esp 文件复制到 Linux esp 下，新手不建议折腾，直接根据本教程安装 grub 引导即可。 目标 安装 Grub 引导器到 PopOS 系统上，并且成功引导双系统（Windows 11 + PopOS） 预置要求 PopOS 20.04 Windows 10 / 11 以上系统必须为 UEFI 引导，不能是传统 BIOS Linux 下的具有 root 权限的用户 安装步骤 更新 & 安装软件包 在安装前，将系统的软件包列表更新到最新版本 1 sudo apt update -y && sud…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/newsletter/2021/11/newsletter-018/",
       "detailPath": "articles/06b6b43bc3447dcfac8e20c9.json"
-    },
-    {
-      "id": "14347b082675e3a67ef5ca51",
-      "title": "一本讲 Android 流畅性的书，应该有什么内容？",
-      "summary": "最近读了一本新书：《打造流畅的 Android App》，京东链接： https://item.jd.com/10035215362170.html 。因为书名所以买了这本书，读完之后觉得有必要写一篇文章，让还没有买此书的同学了解一下 我个人的建议是：如果你是个老鸟，不建议买，这本书里面没有介绍太多原理性的东西，对于 Android 流畅性也没有一个比较全面的介绍；如果你是新手，这本书用来当做开阔视野 + 查漏补缺还可以，想更深入的了解 Android 流畅度还是差了点东西 之所以我会这么建议，是因为这本书确实没有讲太多性能或者流畅度相关的东西，也没有比较深入的原理部分，篇幅更多在讲 静态代码审查 、 AS Profiler 的使用 、 App 架构 、 保活 、 网络性能优化 、 APK 大小优化 、 Ap…",
-      "image": null,
-      "publishedAt": "2021-10-27T07:21:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2021/10/27/if-i-write-a-book-about-performance/",
-      "detailPath": "articles/14347b082675e3a67ef5ca51.json"
-    },
-    {
-      "id": "c2c41eedda07b54dab652dac",
-      "title": "Gravatar 头像镜像站已上线",
-      "summary": "停止公告 2024年5月3日，因CDN运营问题，终止 gravatar.taurusxin.com 全球头像镜像服务，镜像站已于当日停止解析，以下内容仅留作存档。 由于官方 https 站均被屏蔽，目前本站使用的是自建的 gravatar 镜像站，使用 Cachefly 全球 CDN 进行分发 说明地址： https://gravatar.taurusxin.com/ 镜像地址： https://gravatar.taurusxin.com/avatar/ 将你的博客中的头像地址改为 https://gravatar.taurusxin.com/avatar/ 即可 缓存规则如下 对 200、301 或者 302 等有效代码缓存的时间长度，特定参数 any 表示对任何响应都缓存一定时间长度 HTTP Stat…",
-      "image": "https://weavatar.com/avatar/feaf84106b961c37594cc19ba9f6d1fd?d=mm&s=300",
-      "publishedAt": "2021-10-27T00:23:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/gravatar/",
-      "detailPath": "articles/c2c41eedda07b54dab652dac.json"
-    },
-    {
-      "id": "33d499429f57e0ebb43e36f4",
-      "title": "Android 系统开发系列（1）：Android 12 源代码下载、编译和刷机",
-      "summary": "Android 12 源码于 2021 年发布，我当时用来折腾的测试机是 Pixel 3 XL。本文保留那次实操记录，并将可复现的发布版示例固定为 android-12.0.0_r3 。版本对应关系以 AOSP tags/build numbers 为准。 本文介绍这条历史分支的下载、编译和刷机。本地编译便于查看/修改系统源码、增加调试信息，主要用途如下： 可以刷真机，方便开发者进行本地 Debug，同时代码可以导入 Android Studio 进行 Debug 可以编译 userdebug 版本以使用更多调试能力。adb root/remount 是否可用还取决于 adbd、AVB/verity、分区和构建配置；userdebug 不等于所有目录直接可写，也不代替应用自身的调试权限。 可以更方便地进行 A…",
-      "image": null,
-      "publishedAt": "2021-10-26T03:49:33Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2021/10/26/build-android-12/",
-      "detailPath": "articles/33d499429f57e0ebb43e36f4.json"
     }
   ]
 }

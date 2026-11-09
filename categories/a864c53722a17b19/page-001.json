@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "1a501043625c35f2c1501aee",
+      "title": "Minimal WebRTC handshake",
+      "summary": "Author's note: drafted by Deepseek v4.1 Flash The 23-Byte WebRTC Handshake How small can a browser-to-browser WebRTC handshake get? I spent a weekend measuring it in Chromium 157 (Microsoft Edge) and Safari 26.2. The short answer: 23 bytes per direction, if you're willing to make a few very specific assumptions. The 2015 answer was 106 characters In 2015, P…",
+      "image": null,
+      "publishedAt": "2026-11-09T08:36:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdin-20",
+      "detailPath": "articles/1a501043625c35f2c1501aee.json"
+    },
+    {
       "id": "eaba48acfb2a52b61cdf3078",
       "title": "一键清理所有高科技水印工具 「蒸矢」for macOS",
       "summary": "V站看到 警告！分享淘宝截图可能给你带来危险 于是有个很久的 idea 终于得到实施了。 https://github.com/est/Distill-SVG 把蒸馏成矢量图 SVG ，简称 蒸矢 😃 市面上有很多AI辅助把照片转SVG的，但其实矢量图不适合拿来做这事。GUI这类大量色块的截图倒是非常适合。 发行两个 dmg 13MB 完整版，适合普通用户 DistillSVG-arm64-full.dmg 400KB 适合能自己折腾 python 环境的。 DistillSVG-arm64-python.dmg 后者需要 pip 装 cv Pillow 等。可以共享已有环境避免重复安装 也可以自己 git clone 命令行操作 转文字通过 macOS 自带 OCR ，图标、头像等会尽可能给你扣出来保留 对…",
@@ -208,17 +219,6 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stdout-29",
       "detailPath": "articles/3ba089115307edbe9a8b17e0.json"
-    },
-    {
-      "id": "47ad96ada0b71a10909c478e",
-      "title": "gitweets改版，复刻微信「朋友圈」",
-      "summary": "去年搓了个 gitweets ，一个 .html 实现了「微博」，拿git历史当feed流～发推 这个周末看着 coding plan 还剩 20% 要到期，没用完，怎么办呢？想来想去，挖大坑干不完，小修小改，就拿这个 gitweets 继续填坑了 首先是让AI把界面改成模仿微信 朋友圈，啪一下，很快啊，结果让人非常印象深刻，很逼真 https://f.est.im/est 现在的AI真厉害。让我去调CSS可能这辈子都搞不出来这个效果了。 后面是我的一些唠叨，不感兴趣的可以关闭页面，或者去上面那个围观一下。 想起来独乐乐不如众乐乐，要不，支持个评论功能？ 项目的初衷是 static page，要实现互动肯定得用一些API了。 最能想到的思路，走传统的 github issue 什么的，和这个 gitweets…",
-      "image": null,
-      "publishedAt": "2026-07-12T09:53:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdout-28",
-      "detailPath": "articles/47ad96ada0b71a10909c478e.json"
     }
   ]
 }

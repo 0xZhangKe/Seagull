@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-08T22:26:00+00:00</updated><author><name>Simon Willison</name></author><entry><title>parse_number() as a SQLite extension: C vs Rust</title><link href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" rel="alternate"/><published>2026-11-08T22:26:00+00:00</published><updated>2026-11-08T22:26:00+00:00</updated><id>https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-09T04:32:33+00:00</updated><author><name>Simon Willison</name></author><entry><title>The Web Is More Than Enough, by Paul Ford</title><link href="https://simonwillison.net/2026/Nov/9/hn-50421091/" rel="alternate"/><published>2026-11-09T04:32:33+00:00</published><updated>2026-11-09T04:32:33+00:00</updated><id>https://simonwillison.net/2026/Nov/9/hn-50421091/</id><summary type="html">
+    
+        &lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=50416456#50421091"&gt;My comment&lt;/a&gt; on &lt;a href="https://news.ycombinator.com/item?id=50416456"&gt;The Web Is More Than Enough, by Paul Ford&lt;/a&gt; &amp;mdash; Hacker News.&lt;/p&gt;&lt;p&gt;OK, this comment convinced me to give that a shot.&lt;/p&gt;
+&lt;p&gt;Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: &lt;a href="https://static.simonwillison.net/static/2026/Hidden-Reef-Egg-threejs.html"&gt;https://static.simonwillison.net/static/2026/Hidden-Reef-Egg...&lt;/a&gt; (77KB)&lt;/p&gt;
+&lt;p&gt;I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread where it had built it, and got this: &lt;a href="https://static.simonwillison.net/static/2026/Hidden-Reef-Egg-Vanilla-WebGL.html"&gt;https://static.simonwillison.net/static/2026/Hidden-Reef-Egg...&lt;/a&gt; (98KB)&lt;/p&gt;
+&lt;p&gt;They aren't identical - you can see what Claude said about that in the transcript (I don't fully understand why it differed): &lt;a href="https://claude.ai/share/e56d163e-2793-4677-aa11-191d5058b414"&gt;https://claude.ai/share/e56d163e-2793-4677-aa11-191d5058b414&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But yeah, it turns out Claude Opus 5.5 is perfectly capable of 3D modeling in Vanilla JS + WebGL without Three.js.&lt;/p&gt;
+&lt;p&gt;In eyeballing the code I find the Three.js slightly easier to understand myself, but I rarely look at the code for these 3D projects so that isn't a particularly big deal.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/hacker-news"&gt;hacker-news&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/three-js"&gt;three-js&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="hacker-news"/><category term="javascript"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude"/><category term="three-js"/></entry><entry><title>Hide your slop PR descriptions behind &lt;details&gt;&lt;summary&gt;</title><link href="https://simonwillison.net/2026/Nov/9/details-summary/" rel="alternate"/><published>2026-11-09T04:25:05+00:00</published><updated>2026-11-09T04:25:05+00:00</updated><id>https://simonwillison.net/2026/Nov/9/details-summary/</id><summary type="html">
+    &lt;p&gt;Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions.&lt;/p&gt;
+&lt;h4 id="they-re-too-good-at-describing-the-work"&gt;They're too good at describing the work&lt;/h4&gt;
+&lt;p&gt;The problem is that they are &lt;em&gt;too&lt;/em&gt; good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That's a lot of information to absorb.&lt;/p&gt;
+&lt;p&gt;It's not necessarily slop, but it &lt;em&gt;reads&lt;/em&gt; like slop!&lt;/p&gt;
+&lt;p&gt;It's very easy to spot an AI-written PR, and as with other forms of AI writing my instant reaction is best summarized as "I'm not reading all of that". It doesn't matter how accurate or useful the information is, I'm instantly put off by the thought that it will take me longer to read than it took the driving author to write... even when that driving author is me!&lt;/p&gt;
+&lt;p&gt;I want human editorial judgement. I want someone to have thought just long enough about the PR to give me a human-approved introduction that helps me understand, at a high level, what the PR is for and whether it deserves more of my attention.&lt;/p&gt;
+&lt;p&gt;I think I've found a low-effort way to do this that feels right.&lt;/p&gt;
+&lt;h4 id="hide-most-of-it-in-a-details-summary"&gt;Hide most of it in a details/summary&lt;/h4&gt;
+&lt;p&gt;The HTML &lt;code&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;&lt;/code&gt; elements render as a collapsed heading (the summary) that can be expanded to view the larger piece of text. The code looks like this:&lt;/p&gt;
+&lt;div class="highlight highlight-text-html-basic"&gt;&lt;pre&gt;&lt;span class="pl-kos"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-ent"&gt;details&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="pl-kos"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-ent"&gt;summary&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;Claude Opus 5.5&lt;span class="pl-kos"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="pl-ent"&gt;summary&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="pl-kos"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-ent"&gt;h2&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;The hook&lt;span class="pl-kos"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="pl-ent"&gt;h2&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;
+  Plugins implement &lt;span class="pl-kos"&gt;&amp;lt;&lt;/span&gt;&lt;span class="pl-ent"&gt;code&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;register_agent_reference_types(datasette)&lt;span class="pl-kos"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="pl-ent"&gt;code&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;...
+&lt;span class="pl-kos"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="pl-ent"&gt;details&lt;/span&gt;&lt;span class="pl-kos"&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When rendered, it looks &lt;a href="https://github.com/datasette/datasette-agent/pull/51"&gt;like this&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026/details-summary-pr.gif" alt="Screenshot of a GitHub PR. The text &amp;quot;Claude Opus 5.5&amp;quot; sits next to a little black arrow. Clicking on that text expands a full description inside the PR body." style="max-width: 100%;" /&gt;&lt;/p&gt;
+&lt;p&gt;Crucially, &lt;code&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;&lt;/code&gt; &lt;em&gt;is supported in GitHub Markdown&lt;/em&gt;. You can drop those tags directly into an issue comment or PR description and GitHub will hide the details and display just the summary plus an expansion arrow.&lt;/p&gt;
+&lt;p&gt;I've started using this for my AI-generated pull requests.&lt;/p&gt;
+&lt;p&gt;The opening paragraph of my PRs will be carefully selected to act as a high-level explanation of what's going on - the shortest text a human can read that will help get them up to speed.&lt;/p&gt;
+&lt;p&gt;I'll sometimes throw in a screenshot as well, since images are often the best way to quickly illustrate a new feature.&lt;/p&gt;
+&lt;p&gt;The full agent-written essay then follows in a &lt;code&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;&lt;/code&gt;. I use the model name and often the effort level as that summary, to make it abundantly clear what is going on - "Claude Opus 5.5 Medium" for example.&lt;/p&gt;
+&lt;p&gt;My PRs don't feel nearly as sloppy now! The information is all still there, but a reader can glance at it and get the top, human-curated information without their eyes glazing over at multiple paragraphs of agent-written details.&lt;/p&gt;
+&lt;p&gt;I don't always write the introduction myself - sometimes the agent has given me what I need already, hidden away in the avalanche of other text. My promise to the reader is that the short opener will represent my human judgement as to what is definitely worth their time.&lt;/p&gt;
+&lt;p&gt;Here are some recent examples where I've used this pattern, including the opener I used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/simonw/datasette/pull/3052"&gt;datasette PR #3052: Redesign row page as a vertical list of fields&lt;/a&gt; - "The row page showed its single row as a one-row table. For wide tables, like a 46-column GitHub &lt;code&gt;repos&lt;/code&gt; table, that scrolled far off to the right and left most of the page blank." (then a screenshot)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/simonw/datasette/pull/3043"&gt;datasette PR #3043: Pagination bar showing which rows are on the current page&lt;/a&gt; - "Table pages that span more than one page now make it obvious where you are, and offer navigation at the top of the page as well as the bottom." (plus screenshot)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/simonw/datasette/pull/3042"&gt;datasette PR #3042: Load edit-tools.js on demand via a small loader&lt;/a&gt; - "&lt;code&gt;edit-tools.js&lt;/code&gt; (~220KB) was loaded on every table, row and database page, even for users who couldn't edit anything. Now only load it for users who can edit when they first interact with an edit feature (including mouse over an edit link)."&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/datasette/datasette-agent/pull/51"&gt;datasette-agent PR #51: register_agent_reference_types plugin hook&lt;/a&gt; - "Lets plugins add their own kinds of item to the &lt;code&gt;#&lt;/code&gt; tagging in the chat composer using a new &lt;code&gt;register_agent_reference_types(datasette)&lt;/code&gt; plugin hook." - pictured above.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/simonw/llm/pull/1838"&gt;llm PR #1838: Add llm openai endpoint add/list/remove/path commands&lt;/a&gt; - "Adds commands for managing the records in &lt;code&gt;extra-openai-models.yaml&lt;/code&gt;, so OpenAI-compatible endpoints can be saved from the command line instead of by hand-editing YAML." - then copied &lt;code&gt;--help&lt;/code&gt; output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="the-mnemonic"&gt;The mnemonic&lt;/h4&gt;
+&lt;p&gt;I used to have trouble remembering the order of the tags - is it &lt;code&gt;&amp;lt;details&amp;gt;&amp;lt;summary&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;summary&amp;gt;&amp;lt;details&amp;gt;&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Here are two tricks that helped me.&lt;/p&gt;
+&lt;p&gt;First, and most obviously, the &lt;code&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; is clearly the bit where you summarize the details. That's the tag for your line of text that can be clicked to expand - the &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; element must then wrap everything else.&lt;/p&gt;
+&lt;p&gt;An even better trick is to always refer to these two tags as "details-summary".&lt;/p&gt;
+&lt;p&gt;"details-summary" is two syllables followed by three syllables. That rolls off the tongue more smoothly than the three-two punch of "summary-details".&lt;/p&gt;
+&lt;p&gt;Say "details-summary" out loud just a few times and you'll never forget the order of the tags again.&lt;/p&gt;
+&lt;p&gt;(I still wish GitHub would add a button to their Markdown editor for this - partly to save me painstakingly typing it on my mobile keyboard, and partly to help spread the word to more GitHub users that this feature exists.)&lt;/p&gt;
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/github"&gt;github&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/html"&gt;html&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/markdown"&gt;markdown&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-assisted-programming"&gt;ai-assisted-programming&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="github"/><category term="html"/><category term="markdown"/><category term="ai"/><category term="datasette"/><category term="generative-ai"/><category term="llms"/><category term="ai-assisted-programming"/><category term="llm"/><category term="coding-agents"/></entry><entry><title>parse_number() as a SQLite extension: C vs Rust</title><link href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" rel="alternate"/><published>2026-11-08T22:26:00+00:00</published><updated>2026-11-08T22:26:00+00:00</updated><id>https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/</id><summary type="html">
     
         &lt;p&gt;&lt;strong&gt;Research:&lt;/strong&gt; &lt;a href="https://github.com/simonw/research/tree/main/sqlite-parse-number-c-vs-rust#readme"&gt;parse_number() as a SQLite extension: C vs Rust&lt;/a&gt;&lt;/p&gt;
         &lt;p&gt;I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a &lt;code&gt;parse_number()&lt;/code&gt; function for turning strings like &lt;code&gt;-$1,234.56&lt;/code&gt; or &lt;code&gt;'12.5%'&lt;/code&gt; into numeric values that could be summed and sorted.&lt;/p&gt;
@@ -13,7 +75,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;Try writing your own C function for parsing text into a decimal number that catches up to or beats the Rust implementation&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;And it did:&lt;/p&gt;
+&lt;p&gt;And it did, using "Clinger's fast path":&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Net cost per row over 2 million rows, lower is better:&lt;/p&gt;
 &lt;table&gt;
@@ -68,7 +130,7 @@
 I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an &lt;a href="https://developer.mozilla.org/en-US/docs/Glossary/Prefetch"&gt;HTTP prefetch&lt;/a&gt; to the next page of rows in that table.&lt;/p&gt;
 &lt;p&gt;This was happening because Datasette pages serve an HTTP &lt;code&gt;link&lt;/code&gt; header like this:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;link: &amp;lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv&amp;gt;; rel="next"&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This is bad. A tiny fraction of the visitors to one of those pages will click the "next" link, which means their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.&lt;/p&gt;
+&lt;p&gt;This is bad. A tiny fraction of the visitors to one of those pages will click the "next" link, which means for everyone else their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.&lt;/p&gt;
 &lt;p&gt;I dug in and learned that Firefox has &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=175418"&gt;an issue&lt;/a&gt; that has been open for 24 years about this behavior...&lt;/p&gt;
 &lt;p&gt;And one of the early comments on that issue links to &lt;a href="https://simonwillison.net/2002/Oct/17/mozillaPrefetching/"&gt;my blog post from 2002&lt;/a&gt; complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely!
 
@@ -77,7 +139,19 @@ I was looking at the Firefox network panel today when I noticed that requests to
 
 
 
-</summary><category term="firefox"/><category term="html"/><category term="mozilla"/><category term="datasette"/></entry><entry><title>Quoting Nilay Patel</title><link href="https://simonwillison.net/2026/Nov/6/nilay-patel/" rel="alternate"/><published>2026-11-06T17:13:12+00:00</published><updated>2026-11-06T17:13:12+00:00</updated><id>https://simonwillison.net/2026/Nov/6/nilay-patel/</id><summary type="html">
+</summary><category term="firefox"/><category term="html"/><category term="mozilla"/><category term="datasette"/></entry><entry><title>Terry Pratchett's Study</title><link href="https://simonwillison.net/2026/Nov/7/hn-50407316/" rel="alternate"/><published>2026-11-07T19:34:24+00:00</published><updated>2026-11-07T19:34:24+00:00</updated><id>https://simonwillison.net/2026/Nov/7/hn-50407316/</id><summary type="html">
+    
+        &lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=50405674#50407316"&gt;My comment&lt;/a&gt; on &lt;a href="https://news.ycombinator.com/item?id=50405674"&gt;Terry Pratchett&amp;#x27;s Study&lt;/a&gt; &amp;mdash; Hacker News.&lt;/p&gt;&lt;p&gt;Terry Pratchett once wrote about the concept of "horizontal wealth". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: &lt;a href="https://chibuikeani.blogspot.com/2017/02/the-price-of-happiness-horizontal-vs.html"&gt;https://chibuikeani.blogspot.com/2017/02/the-price-of-happin...&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But horizontal wealth means not letting your increased income dictate your tastes. You like books and now you have money? Buy more books! Change those catenary bookshelves for good hardwood ones! In my case, build a library extension to your office. And, of course, you buy what will be useful for that most wonderful of pursuits, blind research, which is research without direction for the sheer joy of it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Original source is his book A Slip of the Keyboard - this linked blog post quotes that bit.)&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/hacker-news"&gt;hacker-news&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/terry-pratchett"&gt;terry-pratchett&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="hacker-news"/><category term="terry-pratchett"/></entry><entry><title>Quoting Nilay Patel</title><link href="https://simonwillison.net/2026/Nov/6/nilay-patel/" rel="alternate"/><published>2026-11-06T17:13:12+00:00</published><updated>2026-11-06T17:13:12+00:00</updated><id>https://simonwillison.net/2026/Nov/6/nilay-patel/</id><summary type="html">
     &lt;blockquote cite="https://www.youtube.com/watch?v=-U4thshDTL8&amp;amp;t=422s"&gt;&lt;p&gt;The products aren't good enough to sell people on the costs.&lt;/p&gt;
 &lt;p&gt;You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history.&lt;/p&gt;
 &lt;p&gt;It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked.&lt;/p&gt;
@@ -145,7 +219,18 @@ I was looking at the Firefox network panel today when I noticed that requests to
         &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="llm"/></entry><entry><title>Qwen 3.8 27B on my laptop can interpret model weights, too</title><link href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="alternate"/><published>2026-11-03T16:29:48+00:00</published><updated>2026-11-03T16:29:48+00:00</updated><id>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</id><summary type="html">
+</summary><category term="llm"/></entry><entry><title>AI is destroying my CS degree</title><link href="https://simonwillison.net/2026/Nov/3/hn-50354278/" rel="alternate"/><published>2026-11-03T16:42:02+00:00</published><updated>2026-11-03T16:42:02+00:00</updated><id>https://simonwillison.net/2026/Nov/3/hn-50354278/</id><summary type="html">
+    
+        &lt;p&gt;&lt;a href="https://news.ycombinator.com/item?id=50353300#50354278"&gt;My comment&lt;/a&gt; on &lt;a href="https://news.ycombinator.com/item?id=50353300"&gt;AI is destroying my CS degree&lt;/a&gt; &amp;mdash; Hacker News.&lt;/p&gt;&lt;p&gt;I don't envy educators right now.&lt;/p&gt;
+&lt;p&gt;AI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like.&lt;/p&gt;
+&lt;p&gt;The worst part is that the evaluation loop is measured in multiple years! If you start trying some new education mechanism today you won't get a robust idea of how well it works until your current cohort graduate in 3-6 years time.&lt;/p&gt;
+&lt;p&gt;Students effectively all become guinea pigs for untested new ways of learning and teaching.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/education"&gt;education&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/hacker-news"&gt;hacker-news&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="education"/><category term="hacker-news"/><category term="ai"/><category term="ai-ethics"/></entry><entry><title>Qwen 3.8 27B on my laptop can interpret model weights, too</title><link href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" rel="alternate"/><published>2026-11-03T16:29:48+00:00</published><updated>2026-11-03T16:29:48+00:00</updated><id>https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/</id><summary type="html">
     &lt;p&gt;Yesterday's hot paper was &lt;a href="https://rikiyat.github.io/blog/weight-space-programming/"&gt;Sparks of Weight-Space Programming: LLMs can natively read &amp;amp; write neural network weights&lt;/a&gt; by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a "blog post", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!&lt;/p&gt;
 &lt;h4 id="weight-space-programming"&gt;Weight-Space Programming&lt;/h4&gt;
 &lt;p&gt;Here's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term &lt;strong&gt;Weight-Space Programming&lt;/strong&gt; for when LLMs analyze and modify model weights:&lt;/p&gt;
@@ -607,63 +692,4 @@ I'm at GitHub Universe this week and, &lt;a href="https://simonwillison.net/2025
 
 
 
-</summary><category term="games"/><category term="github"/><category term="hardware-hacking"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="gemini"/><category term="steve-francia"/></entry><entry><title>GPT-6.1 Terra</title><link href="https://simonwillison.net/2026/Oct/26/gpt-61-terra/" rel="alternate"/><published>2026-10-26T23:53:07+00:00</published><updated>2026-10-26T23:53:07+00:00</updated><id>https://simonwillison.net/2026/Oct/26/gpt-61-terra/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-6-1-terra/"&gt;GPT-6.1 Terra&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-It's always interesting to note which aspects of a new model are emphasized in the release announcement.&lt;/p&gt;
-&lt;p&gt;In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We’re introducing &lt;strong&gt;GPT-6.1 Terra&lt;/strong&gt;, a fast, efficient model that combines detailed visual reasoning and precise computer use alongside clearer, more natural writing. A significant step up from GPT‑5.6 Terra, it excels at the communication and computer-based tasks that fill the workday, from drafting proposals and interpreting technical drawings to filling out forms and editing videos.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Terra sits in the same position as Sonnet in the Anthropic model collection - not the cheapest or the most expensive, making it harder to decide when to use it.&lt;/p&gt;
-&lt;p&gt;Computer use is a good example of a task that benefits from a less expensive model, since you might put it to work on automated, repetitive tasks.&lt;/p&gt;
-&lt;p&gt;OpenAI's Ted Sanders provided some useful advice in &lt;a href="https://news.ycombinator.com/item?id=50248124#50249160"&gt;a comment&lt;/a&gt; on Hacker News:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In the case of GPT-6.1 Terra, I'd say Terra is probably better than Astra and Sol at technical communication, similar on vision and computer use (but much faster!), and a bit worse on most other things. For API developers, it's a nice midrange option if you want something cheaper than Sol but a lot smarter than Luna (especially for vision / computer use / communication). For subscribers, it's not a bombshell release - if you're hitting usage limits, maybe it helps you go a bit further, and if you want clearer communication or faster computer use, it can be a nice option to select.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F855d951d12c68eccca5374cd7d4f834e"&gt;the pelicans&lt;/a&gt; for the different reasoning levels. This pelican &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F855d951d12c68eccca5374cd7d4f834e#reasoning-2"&gt;for "max"&lt;/a&gt; cost &lt;a href="https://www.llm-prices.com/#it=16&amp;amp;ot=22629&amp;amp;sel=gpt-6.1-terra"&gt;11.3161 cents&lt;/a&gt; and took 4 minutes and 11 seconds:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="It's a good pelican and a good bicycle - correctly shaped frame, feet n pedals either side of the frame, has the same color scheme as the others in the GPT-6 and GPT-6.1 families." src="https://static.simonwillison.net/static/2026-10-26/terra-max.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;Here's &lt;a href="https://static.simonwillison.net/static/2026/openai-pelicans-october-2026.html"&gt;a new comparison grid&lt;/a&gt; showing pelicans for every reasoning level of OpenAI's current frontier lineup: GPT-6 Astra, GPT-6.1 Sol, GPT-6.1 Terra, and GPT-6 Luna.&lt;/p&gt;
-&lt;p&gt;GPT-6.1 Terra is priced at $1/million input tokens and $5/million output - almost half the price of GPT-5.6 Terra and GPT-6.1 Sol, and around 10x the price of GPT-6 Luna.
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50248124"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gpt"&gt;gpt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ted-sanders"&gt;ted-sanders&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="ai"/><category term="openai"/><category term="generative-ai"/><category term="llms"/><category term="llm-pricing"/><category term="pelican-riding-a-bicycle"/><category term="llm-release"/><category term="gpt"/><category term="ted-sanders"/></entry><entry><title>Quoting Jason Koebler</title><link href="https://simonwillison.net/2026/Oct/26/jason-koebler/" rel="alternate"/><published>2026-10-26T19:00:25+00:00</published><updated>2026-10-26T19:00:25+00:00</updated><id>https://simonwillison.net/2026/Oct/26/jason-koebler/</id><summary type="html">
-    &lt;blockquote cite="https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/"&gt;&lt;p&gt;Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/"&gt;Jason Koebler&lt;/a&gt;, ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/jason-koebler"&gt;jason-koebler&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/journalism"&gt;journalism&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-ethics"&gt;ai-ethics&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-misuse"&gt;ai-misuse&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/chatgpt"&gt;chatgpt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/404-media"&gt;404-media&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="jason-koebler"/><category term="openai"/><category term="journalism"/><category term="ai"/><category term="llms"/><category term="ai-ethics"/><category term="ai-misuse"/><category term="generative-ai"/><category term="chatgpt"/><category term="404-media"/></entry><entry><title>webframe: evaluated as a scraper and a sandbox</title><link href="https://simonwillison.net/2026/Oct/26/webframe-evaluation/" rel="alternate"/><published>2026-10-26T16:15:00+00:00</published><updated>2026-10-26T16:15:00+00:00</updated><id>https://simonwillison.net/2026/Oct/26/webframe-evaluation/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Research:&lt;/strong&gt; &lt;a href="https://github.com/simonw/research/tree/main/webframe-evaluation#readme"&gt;webframe: evaluated as a scraper and a sandbox&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;a href="https://github.com/tractordev/webframe"&gt;webframe&lt;/a&gt; is a neat little project from Jeff Lindsay which lets you "run a web page like a program" - you point it at a URL or file and it executes it in a hidden headless web view and outputs &lt;code&gt;console.log()&lt;/code&gt; to standard output and any exceptions to standard error.&lt;/p&gt;
-&lt;p&gt;It's written in Go on top of the &lt;a href="https://github.com/crgimenes/glaze"&gt;glaze&lt;/a&gt; library, which provides access to a system browser ("WKWebView on macOS, WebKitGTK on Linux, WebView2 on Windows") so it doesn't need to bundle its own browser engine.&lt;/p&gt;
-&lt;p&gt;It reminds me of my own &lt;a href="https://shot-scraper.datasette.io/en/stable/javascript.html"&gt;shot-scraper javascript&lt;/a&gt; tool, albeit in a much smaller package that doesn't depend on Playwright.&lt;/p&gt;
-&lt;p&gt;I had Claude Opus 5.5 &lt;a href="https://claude.ai/code/cshk_01MX3aJH8vDGmGSj1xH9BYhj2HviVvLDaJbiELHyDoReYT"&gt;put it through its paces&lt;/a&gt; and prepare a research report for me. Here's the prompt I used:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Explore https://github.com/tractordev/webframe try running it and put it though its paces, build a few exploratory prototypes, then evaluate it as a potential sandboxing tool and as a tool for scraping web pages using the same patterns encouraged by the "shot-scraper JavaScript" command (see simonw/shot-scraper on GitHub, docs directory)&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/browsers"&gt;browsers&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/go"&gt;go&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/jeff-lindsay"&gt;jeff-lindsay&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/shot-scraper"&gt;shot-scraper&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="browsers"/><category term="go"/><category term="javascript"/><category term="jeff-lindsay"/><category term="shot-scraper"/></entry><entry><title>Seam Cutter</title><link href="https://simonwillison.net/2026/Oct/25/seam-cutter/" rel="alternate"/><published>2026-10-25T15:10:19+00:00</published><updated>2026-10-25T15:10:19+00:00</updated><id>https://simonwillison.net/2026/Oct/25/seam-cutter/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/seam-cutter"&gt;Seam Cutter&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image.&lt;/p&gt;
-&lt;p&gt;I wanted this because I often use &lt;a href="https://apps.apple.com/us/app/tailor-screenshot-stitching/id926653095"&gt;Tailor&lt;/a&gt; on my iPhone to stitch several screenshots together into lot long image, but sometimes I find myself wanting to crop out a section in the middle - to redact an irrelevant prompt from a transcript, for example.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/tools"&gt;tools&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="tools"/></entry></feed>
+</summary><category term="games"/><category term="github"/><category term="hardware-hacking"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="gemini"/><category term="steve-francia"/></entry></feed>

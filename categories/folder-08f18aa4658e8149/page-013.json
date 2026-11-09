@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "d55979022b6b33503bde7bea",
+      "title": "安靜的錯誤",
+      "summary": "最近開發軟體的另一個心得──安靜的錯誤最可怕。",
+      "image": null,
+      "publishedAt": "2026-09-27T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/silent-error",
+      "detailPath": "articles/d55979022b6b33503bde7bea.json"
+    },
+    {
+      "id": "b5d446bb993ef3c968f71334",
+      "title": "中秋限定貨幣",
+      "summary": "中秋節到了，我個人是沒有烤肉，畢竟做一堆中秋晚會活動，已經夠嗆了，實在沒興趣再自己燻自己。 除了烤肉，不知道是誰規定一定要送禮盒的，前幾天才分享我收到了 竹塹餅 ，後來發現有效期限只有兩天，於是那兩天我「只」吃了竹塹餅，差點原地罹患糖尿病。 後來又收到了兩份禮盒，是蛋黃酥之類的，我吃了一盒，明顯感覺比竹塹餅更健康一點（也沒健康到哪裡去好嗎xD）！ 王師傅 至於另外一盒則送我樓上鄰居，因爲再吃我應該要去醫院報道了。結果，她馬上進屋拿一盒巧克力蛋卷回禮給我…。 說到鄰居，結果 花盆 不是她弄破的，是外送員，還好我當時沒有一口咬定是她，而外送員事後有說願意賠償（但我拒絕了）。 濃情巧克力蛋卷 這個蛋卷是 8 字形的，我還是第一次看到，我把蛋卷給唸小學跟幼兒園的外甥們吃了。 8 字形的蛋卷 中秋節實在沒有必要這樣送來…",
+      "image": "https://eddielv.com/musings/mid-autumn-currency/wang.jpg",
+      "publishedAt": "2026-09-26T15:27:36Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mid-autumn-currency/",
+      "detailPath": "articles/b5d446bb993ef3c968f71334.json"
+    },
+    {
+      "id": "9c0271358375e12cd226eff5",
+      "title": "赌博、自我实现与想象未来",
+      "summary": "我们的故事很普通，从我们在一起到分开也没有非常大的波折起伏，21的夏天我们开始交往，一开始他负担了大部分恋爱的支出，后来我大学毕业找到了工作，想到他和朋友合租，而我住在家里没有房租也不需要担心饭钱，所",
+      "image": null,
+      "publishedAt": "2026-09-26T15:26:16Z",
+      "sourceId": "1b094a3ee9e11672",
+      "sourceTitle": "塔塔",
+      "link": "https://blog.himikouchuu.com/feed/37",
+      "detailPath": "articles/9c0271358375e12cd226eff5.json"
+    },
+    {
+      "id": "fc9b056e55f8e537274e0cf5",
+      "title": "Node.js、浏览器和 Cloudflare Workers 的wasm引入问题",
+      "summary": "最近在鼓捣 WebAssembly，这玩意没啥神秘的，可以看出一坨二进制的 .js 库文件 它本身的export和调用方式是统一的，但如今天我才知道，在不同 JavaScript 运行环境加载 .wasm 方式并不完全一样。 例如 Cloudflare Workers 可以直接： import wasm from \"./simple.wasm\"; const { instance } = await WebAssembly.instantiate(wasm, imports); Cloudflare 会把 .wasm 模块作为 WebAssembly.Module 提供给代码。 浏览器通常则是通过 fetch() 获取 Wasm，再使用 WebAssembly.instantiateStreaming() ：…",
+      "image": null,
+      "publishedAt": "2026-09-26T14:51:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-36",
+      "detailPath": "articles/fc9b056e55f8e537274e0cf5.json"
+    },
+    {
+      "id": "34315f4bbdb8bebb6ae41716",
+      "title": "重温老片《烈火金钢》",
+      "summary": "这是两部印象很深的包场电影。首先它制作精良，离谱程度适度，令没见过什么大场面的90年代小学生大受震撼。其次它分成上下集两次看完，中间隔了两个多月，是包场片中唯二的存在（另一部是大决战）。第三它有原著加成。第四嘛，我写的观后感被老师批评了—— “咱班不少同学看完电影都没记住片名是什么，给我写变形金刚的刚……” 原著并不是说小屁孩看过小说，而是我们都听过评书。《肖飞买药》可是袁阔成先生的代表作之一。大约1990年左右辽宁台的18：00的评书栏目也曾经连载播讲过全篇的《烈火金钢》。还有一次区文化馆到学校演出，有个号称刘兰芳徒弟的家伙表演过“肖飞买药”。 因为是建党70周年的献礼片，所以大腕云集。 当时在小朋友间名气最大的是钻山豹，也是上部的核心人物。申军谊自从演钻山豹成名之后，演了太多的类似角色，无论是正是邪，都是…",
+      "image": null,
+      "publishedAt": "2026-09-26T11:18:51Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/09/review-steel-meets-fire.html",
+      "detailPath": "articles/34315f4bbdb8bebb6ae41716.json"
+    },
+    {
       "id": "82b58dd3613ea6731266235c",
       "title": "RestlessOS──GrapheneOS的通用系统镜像分支简单体验",
       "summary": "上周把 手表搞坏 后，我打算换一个手表系统，顺便把安卓版本从11升级到12L。由于我手表刷的都是GSI (Generic System Image, 通用系统镜像) ，于是我打算给手表找一个Android12的GSI，于是我打开了 这个页面 寻找合适的系统。 不过我在Unofficial Android 17那一栏发现了一个 RestlessOS ，怎么这么快就有第三方系统适配了Android17，并且还发了GSI镜像？抱着好奇的心态，我下载了RestlessOS的GSI镜像侧载到了我的 一加13 上，然后开机一看，我立刻就傻眼了。 这不就是GrapheneOS？ 于是我赶紧查看了下项目地址的README.md，原来这是这专门把GrapheneOS打包成GSI的项目，以便其它手机使用。这个项目名叫Restle…",
@@ -309,17 +364,6 @@
       "detailPath": "articles/ac6f60666ef0ac1ef8fc4659.json"
     },
     {
-      "id": "c4da6bbf480b492ea97ba4ec",
-      "title": "聪明 Agent 四套路 和 人肉学习",
-      "summary": "nVIDIA 联合 NTU，MIT 联合研究了一项关于 Agent harness 自我提升的 研究 ，项目叫 SoL-Pi ， Scaling Auto-Research Loops for Efficient Agent Harnesses 让 Research Agent 自动发现 Harness 里的 Token 浪费，再通过大规模实验筛掉无效改法。把结论再放进大量环境中反复测试。整个探索一共 152 个候选方向，分成 context、progress、tools、delegation、prompt/policy、improvement/evaluation 六类，然后把这些想法扔进大量相互隔离的 research lineage 里，让 agent 自己观察 trajectory、提出机制、实现、r…",
-      "image": "https://pbs.twimg.com/media/HSo5DbvaYAAuVtR?format=jpg&name=medium",
-      "publishedAt": "2026-09-23T12:21:00Z",
-      "sourceId": "a864c53722a17b19",
-      "sourceTitle": "est's blog",
-      "link": "https://blog.est.im/2026/stdin-18",
-      "detailPath": "articles/c4da6bbf480b492ea97ba4ec.json"
-    },
-    {
       "id": "a9fcb83dde9f3684afe406c9",
       "title": "Register Token以及对变形金刚AI的四大批判",
       "summary": "前几天 Yann LeCun 对 变形金刚(transformers) AI 进行了深刻的 批判 First, the reasoning abilities of current AI systems are based non-auto-regressive search (which is what I have always advocated for). But AFAICT, they do it in token space, which is limited and inefficient. I have claimed that human-like reasoning must be a search in continuous representation space. It looks…",
@@ -329,6 +373,17 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stdin-19",
       "detailPath": "articles/a9fcb83dde9f3684afe406c9.json"
+    },
+    {
+      "id": "c4da6bbf480b492ea97ba4ec",
+      "title": "聪明 Agent 四套路 和 人肉学习",
+      "summary": "nVIDIA 联合 NTU，MIT 联合研究了一项关于 Agent harness 自我提升的 研究 ，项目叫 SoL-Pi ， Scaling Auto-Research Loops for Efficient Agent Harnesses 让 Research Agent 自动发现 Harness 里的 Token 浪费，再通过大规模实验筛掉无效改法。把结论再放进大量环境中反复测试。整个探索一共 152 个候选方向，分成 context、progress、tools、delegation、prompt/policy、improvement/evaluation 六类，然后把这些想法扔进大量相互隔离的 research lineage 里，让 agent 自己观察 trajectory、提出机制、实现、r…",
+      "image": "https://pbs.twimg.com/media/HSo5DbvaYAAuVtR?format=jpg&name=medium",
+      "publishedAt": "2026-09-23T12:21:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdin-18",
+      "detailPath": "articles/c4da6bbf480b492ea97ba4ec.json"
     },
     {
       "id": "ff6d1ef7f696ee1f4db5937a",
@@ -604,61 +659,6 @@
       "sourceTitle": "折腾人生",
       "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260919/",
       "detailPath": "articles/dd33eeb02b3c043444682b0d.json"
-    },
-    {
-      "id": "7d4bb23f0e6d58b50fbaeeb5",
-      "title": "Hello Kitty 徽章",
-      "summary": "翻到這張舊照片就傳上來，記錄一下十五年前台灣的 7-11 會送這種徽章！",
-      "image": "https://wiwi.blog/assets/images/badges-a6f86045540d25de2fd35d05d0c558d7.jpg",
-      "publishedAt": "2026-09-21T02:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hello-kitty-badges",
-      "detailPath": "articles/7d4bb23f0e6d58b50fbaeeb5.json"
-    },
-    {
-      "id": "bda6366e66715561941f949a",
-      "title": "Nothing Good Happens After 2AM",
-      "summary": "這是「 BlogBlog 同樂會 - 2026 年 9 月 」的投稿文章。本月主題是「",
-      "image": null,
-      "publishedAt": "2026-09-21T00:39:28Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/21/nothing-good-happens-after-2am/",
-      "detailPath": "articles/bda6366e66715561941f949a.json"
-    },
-    {
-      "id": "3aceafdb4f05a0d0ca3c26ff",
-      "title": "Zotero的ODF Scan插件更新了，于是我也更新我的工作流",
-      "summary": "最近发现 Zotero的ODF Scan插件更新了 。感谢维护者。 于是我的工作流也有了小更新。 与此同时，周末进城上课，发现我的饭搭子还在手敲参考文献条目。 学校的资讯素养课果然各有各的草台。 写作是一种思考方式，零AI手打文稿能让我们理清自己到底想说什么；但是零科技手打参考文献就 totally shit job啊喂。 让我们用科技拯救有限的生命。 所以我打算在此处存档一下目前的工作流。 我的工作流也是看其他人的分享，一点点偷师学来的（学校的资讯素养课各有各的草台）。如果能帮上哪个和我一样的互联网街溜子，那就太好了。如果你有优化的建议也欢迎邮件告诉我；或者在你的网站上更一篇博客然后电邮我！ 2023年使用至今的旧工作流参见《 如何在Scrivener 3插入和批量修改參考文獻：Zotero + Libre…",
-      "image": null,
-      "publishedAt": "2026-09-21T00:20:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/odf-scan-workflow/",
-      "detailPath": "articles/3aceafdb4f05a0d0ca3c26ff.json"
-    },
-    {
-      "id": "be865b207cc4ca67df6a2e11",
-      "title": "用 AI 開發的三個體悟",
-      "summary": "只是最近用 AI 寫程式的一些想法。",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/three-ai-takeaways",
-      "detailPath": "articles/be865b207cc4ca67df6a2e11.json"
-    },
-    {
-      "id": "71abafec0f2feb09bfe753bf",
-      "title": "我做市场调查的方法",
-      "summary": "首次写于2023年1月，简单，粗略，非常不完善。 假设已经确定好要做的产品和市场，首先从市场出发，调研以下几个因素： 市场容量（蛋糕有多大，主要玩家有多少个） 市场竞争度（主要竞争对手） 市场发展趋势（增量市场还是存量市场） 垄断和专利情况（类目壁垒） 分析这个市场这个品类下有多少流量（最重要的），预估竞品大致的销量。分析他们的价格，做活动的重点时期，观察类目是否具有季节属性，供应链端生产周期，目标市场的发货和补货的周期。 找到最主要的竞争对手，分析他卖的最好的产品，通常排在小类目第一位。和自己要做的产品做对比，通过现有的 review 分析找出对手的缺点和自己产品的优点。 接着从产品出发，调...",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/amazon-market-research",
-      "detailPath": "articles/71abafec0f2feb09bfe753bf.json"
     }
   ]
 }

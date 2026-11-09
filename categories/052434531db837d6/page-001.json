@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "decfb7707db99b86070ca03a",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up regular Claude chat (Opus 5.5) and prompte…",
+      "image": null,
+      "publishedAt": "2026-11-08T22:26:00Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "detailPath": "articles/decfb7707db99b86070ca03a.json"
+    },
+    {
       "id": "19cffe64927a0e090a4b0b93",
       "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
       "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: <https://late…",
@@ -318,17 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
       "detailPath": "articles/18ebf66ab3feff206c3728d5.json"
-    },
-    {
-      "id": "3b5ba7901be42c97d4df4585",
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players c…",
-      "image": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg",
-      "publishedAt": "2026-10-24T03:59:57Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/24/battledrones/",
-      "detailPath": "articles/3b5ba7901be42c97d4df4585.json"
     }
   ]
 }

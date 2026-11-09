@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "2f06c6fced029e82109b125c",
+      "title": "Accepted proposal: Go examples with any signature",
+      "summary": "Go examples with parameters or results can appear in documentation without becoming tests.",
+      "image": null,
+      "publishedAt": "2026-07-28T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/07/go-example-any-signature/",
+      "detailPath": "articles/2f06c6fced029e82109b125c.json"
+    },
+    {
+      "id": "1741a1955629f773630cc33b",
+      "title": "On Looking: Eleven Walks with Expert Eyes - by Alexandra Horowitz",
+      "summary": "Author walks around the city - usually her New York City neighborhood - with 11 different experts in different fields. Geologist, artist, sound designer, physician, child, dog, and a blind woman. Each pointing out what she hadn’t noticed. You’ll learn lots of trivia from this, but it’s fun, and makes you want to walk around a city again to try to notice the…",
+      "image": "https://m.sive.rs/images/book/OnLooking.webp",
+      "publishedAt": "2026-07-28T00:00:00Z",
+      "sourceId": "3d0d017fd829e1d6",
+      "sourceTitle": "Derek Sivers",
+      "link": "https://sive.rs/book/OnLooking",
+      "detailPath": "articles/1741a1955629f773630cc33b.json"
+    },
+    {
+      "id": "2584be550bb11afe8b8be5ac",
+      "title": "I write to see what I can write. I code to see what I can code.",
+      "summary": "I write to see what I can write. I code to see what I can code.",
+      "image": null,
+      "publishedAt": "2026-07-27T15:56:23Z",
+      "sourceId": "3d0d017fd829e1d6",
+      "sourceTitle": "Derek Sivers",
+      "link": "https://sive.rs/d",
+      "detailPath": "articles/2584be550bb11afe8b8be5ac.json"
+    },
+    {
+      "id": "3b00ab1a18d40a6566d35576",
+      "title": "RFC W0192: Use of +, ~, @; clarifying extend-the-end",
+      "summary": "A request-for-comments. Closes 2026-07-30. On the use of symbols ~, +, @; and clarifying the extend-the-end concept.",
+      "image": null,
+      "publishedAt": "2026-07-27T06:12:45Z",
+      "sourceId": "4567c06def96db0c",
+      "sourceTitle": "Johnny.Decimal",
+      "link": "https://johnnydecimal.com/blog/0234-rfc-w0192-symbols-ete/",
+      "detailPath": "articles/3b00ab1a18d40a6566d35576.json"
+    },
+    {
+      "id": "c7fb247449f6d7dbc264a9b7",
+      "title": "How Keyboard Shortcuts are my Superpower",
+      "summary": "Mood: Functioning at 1000% efficiency. I often feel a deep, confusing pity for sighted computer users. I know, I know. You have your high-definition monitors and your colorful icons and your wallpapers of tropical beaches you’d rather be sitting on. But I have listened to you work. And frankly? It sounds exhausting. It sounds like this: Scrape. Scrape. Drag…",
+      "image": null,
+      "publishedAt": "2026-07-27T02:32:39Z",
+      "sourceId": "e75373d4343483e8",
+      "sourceTitle": "Sightless Scribbles",
+      "link": "https://sightlessscribbles.com/posts/how-keyboard-shortcuts-are-my-superpower/",
+      "detailPath": "articles/c7fb247449f6d7dbc264a9b7.json"
+    },
+    {
+      "id": "7b97edad15d200d548324b45",
+      "title": "Euforia",
+      "summary": "Los museos no se me dan bien. No últimamente. Antes, sí: hubo un tiempo en que hacía excursiones insólitas desde Ciudadela hasta el museo de Bellas Artes y pasaba horas mirando un puñado de cuadros que por alguna razón u otra me llamaban la atención. Me gustaba acercarme hasta notar el trazo del pincel y el relieve de la pintura y alejarme hasta que las pin…",
+      "image": "https://olano.dev/assets/img/euforia.jpg",
+      "publishedAt": "2026-07-26T16:23:29Z",
+      "sourceId": "eb3e35592c276ccc",
+      "sourceTitle": "olano.dev",
+      "link": "https://olano.dev/blog/euforia",
+      "detailPath": "articles/7b97edad15d200d548324b45.json"
+    },
+    {
       "id": "d9fd4fee832720bfee9bc89c",
       "title": "Supervised fire-and-forget in Go",
       "summary": "A bounded worker pool for small background tasks, with task-owned contexts, panic recovery, and graceful shutdown.",
@@ -593,72 +659,6 @@
       "sourceTitle": "Dhole Moments",
       "link": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/",
       "detailPath": "articles/3651f3811fc4564e1f9da2d0.json"
-    },
-    {
-      "id": "951f489b4008f8a8e4de91a3",
-      "title": "16 conversations in super-multicultural Malaysia, Kuala Lumpur",
-      "summary": "16 conversations in super-multicultural Malaysia, Kuala Lumpur: https://sive.rs/met/at-13",
-      "image": null,
-      "publishedAt": "2026-06-30T02:41:40Z",
-      "sourceId": "3d0d017fd829e1d6",
-      "sourceTitle": "Derek Sivers",
-      "link": "https://sive.rs/d",
-      "detailPath": "articles/951f489b4008f8a8e4de91a3.json"
-    },
-    {
-      "id": "80a7fc8e86bf8579c0508e57",
-      "title": "Request coalescing with Go singleflight",
-      "summary": "A hot cache key expires and a hundred requests issue the same query at once, saturating the database. Go's singleflight package coalesces those duplicate calls into one. How to wire it up, how to measure whether it's firing, and why per-pod coalescing is usually enough.",
-      "image": null,
-      "publishedAt": "2026-06-27T00:00:00Z",
-      "sourceId": "064c0d77cd613f57",
-      "sourceTitle": "Redowan's Reflections",
-      "link": "https://rednafi.com/go/request-coalescing/",
-      "detailPath": "articles/80a7fc8e86bf8579c0508e57.json"
-    },
-    {
-      "id": "8e5641fb6dc468128200dd4b",
-      "title": "Un petit mot de nos sponsors…",
-      "summary": "Un petit mot de nos sponsors… Comme pour les stades ou les équipes cyclistes, il est important de nommer les vagues de chaleur et les canicules selon les sponsors qui ont rendu cela possible. C’est après tout la moindre des choses. Ne dites plus « la vague de chaleur de mai 2026 » ou « la canicule de juin 2026 » mais « la canicule Bolloré 26 » et « la canic…",
-      "image": "https://ploum.net/files/sticker_total.png",
-      "publishedAt": "2026-06-26T00:00:00Z",
-      "sourceId": "08776af20580af07",
-      "sourceTitle": "Ploum.net",
-      "link": "https://ploum.net/2026-06-26-sponsor-canicule.html",
-      "detailPath": "articles/8e5641fb6dc468128200dd4b.json"
-    },
-    {
-      "id": "13a036f790b5230e67c0b678",
-      "title": "Thinking out loud about project management",
-      "summary": "[Link to YouTube] I've been thinking a lot about project management for the last 6 months and I'm thinking out loud here, nothing is set in stone. However, me and Lucy are using the concepts mentioned and it's working really well in our business.",
-      "image": null,
-      "publishedAt": "2026-06-24T00:40:26Z",
-      "sourceId": "4567c06def96db0c",
-      "sourceTitle": "Johnny.Decimal",
-      "link": "https://johnnydecimal.com/blog/0225-thinking-out-loud-pm/",
-      "detailPath": "articles/13a036f790b5230e67c0b678.json"
-    },
-    {
-      "id": "545578fef4ccafeb2dfc3359",
-      "title": "Six Websites in Ten Days",
-      "summary": "Halfway June I came back from Amsterdam buzzing. A week and a half later six websites were live on a publisher that did not exist before: MP1, a static site generator that lives as a ZIP file inside my own CMS. This post is about what made that possible: automating the dull work with AI agents, so my time goes to the things that matter. It was exhausting, e…",
-      "image": "https://willem.com/global/images/4eabca94a0f7.webp",
-      "publishedAt": "2026-06-23T22:00:00Z",
-      "sourceId": "da4f8168d47b2b2a",
-      "sourceTitle": "Willem's Blog",
-      "link": "https://willem.com/en/2026-06-24_six-websites-in-ten-days/",
-      "detailPath": "articles/545578fef4ccafeb2dfc3359.json"
-    },
-    {
-      "id": "2fe8a573c1ec5d192e65c440",
-      "title": "Monitor and alert about composer and npm package security vulnerabilities",
-      "summary": "This might be one of those itches that affects one person and one person alone, but I scratched it and now I’m sharing the result just in case someone else finds it helpful. There are some great tools out there already to tell you if you are running outdated and vulnerable composer dependencies in your … Continue reading Monitor and alert about composer and…",
-      "image": "https://opengraph.githubassets.com/3bb7482364ae33f128edf5505b7e98980b14070d1cb5a2de165f237e39352e66/ChrisHardie/package-vulnerability-audit",
-      "publishedAt": "2026-06-23T16:55:23Z",
-      "sourceId": "5da082371cbb44af",
-      "sourceTitle": "Chris Hardie's Tech and Software Blog",
-      "link": "https://tech.chrishardie.com/2026/monitor-alert-composer-npm-security-vulnerabilities/",
-      "detailPath": "articles/2fe8a573c1ec5d192e65c440.json"
     }
   ]
 }

@@ -6,7 +6,276 @@
     <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Sun, 08 Nov 2026 07:33:21 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Nov 2026 07:42:30 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-09 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-09-HackerNews/</link>
+      <pubDate>Mon, 09 Nov 2026 07:42:30 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-09-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-09-hacker-news-top-stories&#34;&gt;
+  2026-11-09 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-09-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;作者用含运费 10 美元的 OpenStick 运行 Debian，搭配 DNS 拦截、监控、RSS 与书签归档；低内存占用来自轻量软件选择，并非在棒状设备上运行大模型。&lt;/li&gt;
+&lt;li&gt;Caleb 因多会话 IDE 联动、扩展功能差异与频繁行为变化转向 Pi，认可其可定制性；这是一篇个人迁移记录，并非模型能力基准。&lt;/li&gt;
+&lt;li&gt;Apiiro 称 104,185 份公开 settings.local.json 中有 1,122 份含凭据，风险链条是保存含密命令后再提交；研究未验证这些凭据是否仍可用。&lt;/li&gt;
+&lt;li&gt;《卫报》报道研究者发现 Apple 十万余条输入预测限制，涉及脏话、政治短语及“iMessage isn’t working”；限制影响建议和滑行输入，并非禁止手动发送。&lt;/li&gt;
+&lt;li&gt;John Langford 称约 50 人的 AI Frontiers 在并入 Microsoft AI 后失去研究方向，他因此离开；这不是微软全部 AI 研究停止的公告。&lt;/li&gt;
+&lt;li&gt;MaxxBench 修改 89 道 DeepSWE 任务，参考补丁行数中位数仅增加 17 行，却拉开模型差距；结果展示适应新要求的能力，不能单独证明训练集作弊。&lt;/li&gt;
+&lt;li&gt;llama-modchip 用约 1.71 bit/weight 的自定义量化把 DeepSeek-V4-Flash 压至 56.56GiB；作者报告特定 Zen 5 CPU 约 9–10 token/s 基础生成，尚非独立复测。&lt;/li&gt;
+&lt;li&gt;作者重看《疑犯追踪》，由剧中的机器联想到 AI、监控和 2010 年代互联网；这是个人文化随笔，没有提供现实系统已实现同等能力的证据。&lt;/li&gt;
+&lt;li&gt;Coldframe 用 Python 标准库模拟 Danfoss 与 Dixell 制冷控制器，记录登录、漏洞请求和假除霜操作；它是观测蜜罐，不能替真实设备打补丁。&lt;/li&gt;
+&lt;li&gt;Murat Demirbas 主张把写作当作形成理解的过程，建议先自由写、再删改、保持简明并固定时间；关于 AI 取代思考的判断属于个人观点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-10-美元-openstick-跑起家庭服务器512mb-内存也能做很多事-what-i-run-on-my-10-usd-openstick-homelab&#34;&gt;
+  1. 10 美元 OpenStick 跑起家庭服务器：512MB 内存也能做很多事 (What I run on my $10 USD OpenStick homelab)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-10-%e7%be%8e%e5%85%83-openstick-%e8%b7%91%e8%b5%b7%e5%ae%b6%e5%ba%ad%e6%9c%8d%e5%8a%a1%e5%99%a8512mb-%e5%86%85%e5%ad%98%e4%b9%9f%e8%83%bd%e5%81%9a%e5%be%88%e5%a4%9a%e4%ba%8b-what-i-run-on-my-10-usd-openstick-homelab&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.bosscher.ch/posts/openstick/&#34;&gt;https://blog.bosscher.ch/posts/openstick/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者介绍自己用 10 美元、含运费购入的 OpenStick：四核 1GHz Cortex-A53、512MB RAM（约 450MB 可用）、4GB eMMC，带 Wi-Fi、4G 调制解调器与 GPS，采用无风扇被动散热。刷机过程较复杂，但装好 Debian 后便可使用 systemd 和 Podman，搭建低功耗、静音的家庭服务器。&lt;/p&gt;
+&lt;p&gt;文中列出按需挑选的轻量服务：AdGuard Home 自用分支约 40MB，Fusion RSS 约 22MB，Beszel 服务端与代理合计约 20MB，Gatus 约 10MB，还运行书签归档、容器日志与更新提醒。Zeroclaw 是连接外部模型的代理运行框架，作者报告空闲 RSS 约 3MB；这不表示设备本地装下了大语言模型。&lt;/p&gt;
+&lt;p&gt;作者承认 DNS 拦截不能阻止全部恶意请求，书签归档也会产生内存峰值。他让代理拥有这台设备的近似 root 权限，并认为影响范围可控；这是其个人风险判断。价格是既有购买经历，不能据此保证今天仍能以同价买到同样硬件。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-765-points--评论-132-comments--投稿者laurensber--发布时间2026-11-08-021212-0800&#34;&gt;
+  HN 热度 765 points | 评论 132 comments | 投稿者：LaurensBER | 发布时间：2026-11-08 02:12:12 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-765-points--%e8%af%84%e8%ae%ba-132-comments--%e6%8a%95%e7%a8%bf%e8%80%85laurensber--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-021212-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50406670&#34;&gt;https://news.ycombinator.com/item?id=50406670&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;512MB 足够承载不少传统服务，关键在于软件与负载选择，而不是只按今天常见的硬件规格判断可用性。&lt;/li&gt;
+&lt;li&gt;廉价棒状设备的实际芯片与现售价格并不稳定，买家需要核对板型，不能把作者的旧购买价当作现货承诺。&lt;/li&gt;
+&lt;li&gt;作者补充自己每晚用 restic 备份到 Backblaze，小服务器同样需要可恢复的配置与数据。&lt;/li&gt;
+&lt;li&gt;代理能读日志又有高权限时，恶意依赖或日志中的提示注入可能扩大影响，设备便宜不等于网络风险小。&lt;/li&gt;
+&lt;li&gt;容器自动更新能缩短已知漏洞暴露时间，但另一方提醒自动接受更新也会引入供应链风险。&lt;/li&gt;
+&lt;li&gt;二手 Xeon 工作站或刷机后的 Chromebox 是另一条低成本路线，适合需要更多内存、虚拟机与磁盘空间的人。&lt;/li&gt;
+&lt;li&gt;熟悉这类设备的参与者确认可通过 Wi-Fi 联网，而 Debian 需要刷入，不能假定买来已经预装。&lt;/li&gt;
+&lt;li&gt;对极限内存设备而言，容器的用户态网络进程也是额外开销，应与容器本身一并计算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-从-claude-code-转向-pi作者想要更稳定可控的编程工具-goodbye-claude-hello-pi&#34;&gt;
+  2. 从 Claude Code 转向 Pi：作者想要更稳定、可控的编程工具 (Goodbye Claude, hello Pi)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e4%bb%8e-claude-code-%e8%bd%ac%e5%90%91-pi%e4%bd%9c%e8%80%85%e6%83%b3%e8%a6%81%e6%9b%b4%e7%a8%b3%e5%ae%9a%e5%8f%af%e6%8e%a7%e7%9a%84%e7%bc%96%e7%a8%8b%e5%b7%a5%e5%85%b7-goodbye-claude-hello-pi&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://caleb.software/posts/claude-to-pi.html&#34;&gt;https://caleb.software/posts/claude-to-pi.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Caleb 回顾长期使用 Claude Code 后，决定把主要编程工作流迁到 Pi。他的不满集中在工具体验：命令行与 VS Code 联动时只能连接一个会话，GUI 扩展又缺少部分斜杠命令与状态栏能力，多子代理输出混排也增加审阅负担。他仍希望在提交前逐段检查生成的代码。&lt;/p&gt;
+&lt;p&gt;作者按写作当时的版本记录统计，当年已有 244 次发布，超过四分之三修改系统提示或工具描述，认为这些变化会干扰既有习惯。他也批评功能不断增加，却缺少明确取舍。AGENTS.md 与 CLAUDE.md 的兼容问题是迁移背景之一；文章最初发表于 9 月，不能把当时的功能缺口全部当作今日现状。&lt;/p&gt;
+&lt;p&gt;Pi 吸引他的地方是较小的核心、稳定性与扩展能力，他称自己约花 20 分钟写出跨标签页传递选区的扩展。但这只是一位开发者的使用体验，没有控制模型、价格或任务难度进行对照实验，也没有证明 Pi 适合所有人的权限管理和协作需求。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-671-points--评论-424-comments--投稿者karagenit--发布时间2026-11-08-111148-0800&#34;&gt;
+  HN 热度 671 points | 评论 424 comments | 投稿者：karagenit | 发布时间：2026-11-08 11:11:48 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-671-points--%e8%af%84%e8%ae%ba-424-comments--%e6%8a%95%e7%a8%bf%e8%80%85karagenit--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-111148-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50410107&#34;&gt;https://news.ycombinator.com/item?id=50410107&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文章写于九月，AGENTS.md 支持等变化需要放回当时版本理解，迁移动机不能直接当作当前功能清单。&lt;/li&gt;
+&lt;li&gt;即使模型更聪明，反复使用的项目规则仍值得写入文件，避免每个会话重新交代。&lt;/li&gt;
+&lt;li&gt;产品需要有人持续拒绝不必要的新功能，否则新增能力会把认知成本转嫁给已有用户。&lt;/li&gt;
+&lt;li&gt;不同代理框架在小型本地模型上的表现可能不同，而且 Oh My Pi 与 Pi 不能混为一谈。&lt;/li&gt;
+&lt;li&gt;有使用者遭遇压缩上下文后无法继续任务的问题，也有人改用明确的交接文档维持长任务状态。&lt;/li&gt;
+&lt;li&gt;极简核心若缺少默认安全控制，还要求用户自行挑选第三方模块，会让部分尝试者重新选择 Claude Code。&lt;/li&gt;
+&lt;li&gt;多项目工作者有人偏好桌面 GUI 的会话组织，也有人围绕无界面运行的代理引擎自建界面。&lt;/li&gt;
+&lt;li&gt;Messages API 客户端与 Agent SDK 是不同层次的接口，订阅接入和运行框架不能仅凭名称等同。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-claude-code-权限文件中的凭据泄露研究称-1122-份公开文件中招-claude-codes-dont-ask-again-exposes-passwords-in-1122-public-github-files&#34;&gt;
+  3. Claude Code 权限文件中的凭据泄露：研究称 1,122 份公开文件中招 (Claude Code&amp;rsquo;s &amp;ldquo;Don&amp;rsquo;t Ask Again&amp;rdquo; exposes passwords in 1,122 public GitHub files)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-claude-code-%e6%9d%83%e9%99%90%e6%96%87%e4%bb%b6%e4%b8%ad%e7%9a%84%e5%87%ad%e6%8d%ae%e6%b3%84%e9%9c%b2%e7%a0%94%e7%a9%b6%e7%a7%b0-1122-%e4%bb%bd%e5%85%ac%e5%bc%80%e6%96%87%e4%bb%b6%e4%b8%ad%e6%8b%9b-claude-codes-dont-ask-again-exposes-passwords-in-1122-public-github-files&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again&#34;&gt;https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apiiro 报告称，在 104,185 份公开的 &lt;code&gt;.claude/settings.local.json&lt;/code&gt; 中，1,122 份包含其规则判定的真实凭据。机制是用户永久批准含密命令后，完整命令进入权限文件，再随提交公开；并非点击一次按钮就自动发布密码。&lt;/p&gt;
+&lt;p&gt;研究没有使用凭据或连接目标主机，因此“真实”不等于已验证有效。Claude Code 团队回应正考虑改进防护。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-574-points--评论-390-comments--投稿者shmulc--发布时间2026-11-08-044532-0800&#34;&gt;
+  HN 热度 574 points | 评论 390 comments | 投稿者：shmulc | 发布时间：2026-11-08 04:45:32 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-574-points--%e8%af%84%e8%ae%ba-390-comments--%e6%8a%95%e7%a8%bf%e8%80%85shmulc--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-044532-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50407882&#34;&gt;https://news.ycombinator.com/item?id=50407882&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;泄露需要保存含密命令、文件被版本跟踪和仓库公开等环节，标题不应让人误以为点击批准就会直接上传密码。&lt;/li&gt;
+&lt;li&gt;私有仓库也会扩大凭据在团队、克隆与分支中的传播范围，尚未公开不代表访问边界合理。&lt;/li&gt;
+&lt;li&gt;Claude Code 团队表示本地设置不应提交，并计划试验自动模式检测与基础秘密扫描等改进。&lt;/li&gt;
+&lt;li&gt;自动审批是否比人工确认更安全存在争议，双方分别强调可定义的安全保证与实际测试中的效果。&lt;/li&gt;
+&lt;li&gt;用户提交责任与工具默认行为是两个问题，开源或闭源本身都不能替代对保存命令和提交过程的审查。&lt;/li&gt;
+&lt;li&gt;有人通过密码管理器按次授权取密，但回复者提醒也要审查密码管理器 CLI 自己的权限模型。&lt;/li&gt;
+&lt;li&gt;把上游凭据留在受限 API 代理中，可以在执行层限制操作范围，读写权限仍需由人明确配置。&lt;/li&gt;
+&lt;li&gt;限制破坏性写操作不等于阻止敏感信息外泄，代理方案也必须单独考虑读取权限与业务数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-iphone-有十万余条预测输入灰名单仍可逐字键入-apples-grey-list-words-and-phrases-your-iphone-wont-help-you-spell&#34;&gt;
+  4. iPhone 有十万余条预测输入灰名单，仍可逐字键入 (Apple’s grey list: Words and phrases your iPhone won’t help you spell)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-iphone-%e6%9c%89%e5%8d%81%e4%b8%87%e4%bd%99%e6%9d%a1%e9%a2%84%e6%b5%8b%e8%be%93%e5%85%a5%e7%81%b0%e5%90%8d%e5%8d%95%e4%bb%8d%e5%8f%af%e9%80%90%e5%ad%97%e9%94%ae%e5%85%a5-apples-grey-list-words-and-phrases-your-iphone-wont-help-you-spell&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you&#34;&gt;https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《卫报》报道，独立研究者 Derik Kauffman 从苹果操作系统中找到一张包含十万余个词语和短语的“灰名单”，它限制预测文本推荐，并影响滑行输入。名单既有性、毒品等词汇，也包含政治话题、人物姓名，以及“iMessage isn’t working”这样的产品抱怨。&lt;/p&gt;
+&lt;p&gt;报道举例，试图滑出“United Ireland”可能得到“United Iceland”，“Tibetan independence”可能变成复数形式；希伯来语和阿拉伯语中也有相关限制。这里的关键是系统不主动帮用户补全或预测这些表达，用户仍可逐字键入、覆盖建议并发送，不能写成手机完全封禁相关言论。&lt;/p&gt;
+&lt;p&gt;苹果回应称，键盘的设计目的是避免提供不恰当或冒犯性的预测建议，并强调用户可以自行输入。报道没有给出每个条目的制定依据，也没有证明所有语言、系统版本和输入方式均有相同表现，因此对名单范围和动机的判断仍应与已观察到的输入行为区分。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-525-points--评论-348-comments--投稿者user_7832--发布时间2026-11-08-010636-0800&#34;&gt;
+  HN 热度 525 points | 评论 348 comments | 投稿者：user_7832 | 发布时间：2026-11-08 01:06:36 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-525-points--%e8%af%84%e8%ae%ba-348-comments--%e6%8a%95%e7%a8%bf%e8%80%85user_7832--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-010636-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50406111&#34;&gt;https://news.ycombinator.com/item?id=50406111&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;灰名单限制预测和滑行输入，但逐字输入仍可完成，这与禁止用户发送某些词语不同。&lt;/li&gt;
+&lt;li&gt;支持过滤的一方认为滑行输入本就有歧义，避免猜成敏感表达能减少发给同事或家人的意外。&lt;/li&gt;
+&lt;li&gt;反对者认为人物姓名和政治短语被隐藏排除，会让输入工具悄悄影响表达，缺乏透明理由尤其值得质疑。&lt;/li&gt;
+&lt;li&gt;即便认可防误触原则，也有人承认把“iMessage isn’t working”列入限制难以用保护用户充分解释。&lt;/li&gt;
+&lt;li&gt;老用户还把名单问题与键盘纠错质量、触摸区域及错误替换联系起来，认为基础输入体验仍需改进。&lt;/li&gt;
+&lt;li&gt;有人把过滤看作厂商规避公关风险的选择，也有人提出用个人消息训练预测以减少统一名单干预。&lt;/li&gt;
+&lt;li&gt;参与者的实测与旧印象并不完全一致，具体词语和系统版本的变化需要逐项验证。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-微软-ai-frontiers-团队终结john-langford-谈研究与扩规模的冲突-the-end-of-microsoft-researchs-ai-frontiers-group&#34;&gt;
+  5. 微软 AI Frontiers 团队终结：John Langford 谈研究与扩规模的冲突 (The end of Microsoft Research&amp;rsquo;s AI Frontiers group)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e5%be%ae%e8%bd%af-ai-frontiers-%e5%9b%a2%e9%98%9f%e7%bb%88%e7%bb%93john-langford-%e8%b0%88%e7%a0%94%e7%a9%b6%e4%b8%8e%e6%89%a9%e8%a7%84%e6%a8%a1%e7%9a%84%e5%86%b2%e7%aa%81-the-end-of-microsoft-researchs-ai-frontiers-group&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://hunch.net/?p=13764006&#34;&gt;https://hunch.net/?p=13764006&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;John Langford 回顾微软研究院 AI Frontiers（AIF）约 50 人团队的形成与终结。他说，2023 年后单个研究者难以追上其他实验室的投入速度，团队尝试把研究组织成较连贯的协作，项目涉及 AutoGen、Fara，以及新的训练目标、优化器和递归 Transformer；共享模型开发代码库也是其中一项工作。&lt;/p&gt;
+&lt;p&gt;据其叙述，团队九月被重组到 Microsoft AI 后，研究取向与来自 Inflection 的领导层发生冲突。Langford 认为后者偏向扩规模、数据与可预测的商业回报，而自己看重能改变成本与能力边界的基础创新。他以 Full Bandwidth Transformer 的实验潜力说明，算法研究也可能带来类似扩大模型的效果，但并未把这种可能性写成普适定论。&lt;/p&gt;
+&lt;p&gt;他表示安置同事后离职，其他创始领导成员似乎也作出类似选择，并称来年不会再有该团队的实习机会。这是一位当事人的解释与判断，缺少管理层的对等叙述；“AI Frontiers 结束”指特定组织，不能扩大为微软研究院或微软所有 AI 研究全面停止。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-489-points--评论-303-comments--投稿者srean--发布时间2026-11-08-020217-0800&#34;&gt;
+  HN 热度 489 points | 评论 303 comments | 投稿者：srean | 发布时间：2026-11-08 02:02:17 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-489-points--%e8%af%84%e8%ae%ba-303-comments--%e6%8a%95%e7%a8%bf%e8%80%85srean--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-020217-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50406563&#34;&gt;https://news.ycombinator.com/item?id=50406563&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AI Frontiers 是一个具体团队的名称，标题必须避免让人误读为整个 AI 前沿研究已经结束。&lt;/li&gt;
+&lt;li&gt;支持当前路线的人认为规模扩张仍有明确回报，企业集中资源推进已有路径有其商业逻辑。&lt;/li&gt;
+&lt;li&gt;另一方认为提高效率、探索架构与扩大规模并不互斥，押注单一路线可能错过降低成本的突破。&lt;/li&gt;
+&lt;li&gt;研究成果商业化需要不同于实验室创新的能力，研究组织仍需面对把技术交给产品的现实难题。&lt;/li&gt;
+&lt;li&gt;有人认为有用成果自然会被采用，回复者则指出大企业对新技术的吸收并不总是及时或顺利。&lt;/li&gt;
+&lt;li&gt;学术界可能提供更多研究方向自主权，但就业不稳定使产业与学术之间的选择远没有那么简单。&lt;/li&gt;
+&lt;li&gt;企业实验室收缩后，由短期回报驱动的创业公司是否足以支持基础研究，成为另一条讨论线索。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-maxxbench-给-89-道编程题改要求测试模型能否放下熟悉答案-maxxbench--nice-deepswe-score-but-is-it-true&#34;&gt;
+  6. MaxxBench 给 89 道编程题改要求，测试模型能否放下熟悉答案 (MaxxBench – &amp;ldquo;Nice DeepSWE score. But is it true?&amp;rdquo;)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-maxxbench-%e7%bb%99-89-%e9%81%93%e7%bc%96%e7%a8%8b%e9%a2%98%e6%94%b9%e8%a6%81%e6%b1%82%e6%b5%8b%e8%af%95%e6%a8%a1%e5%9e%8b%e8%83%bd%e5%90%a6%e6%94%be%e4%b8%8b%e7%86%9f%e6%82%89%e7%ad%94%e6%a1%88-maxxbench--nice-deepswe-score-but-is-it-true&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://maxxbench.unlap.ai/research/why-maxxbench/&#34;&gt;https://maxxbench.unlap.ai/research/why-maxxbench/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gavin Lo 与 Justin Lo 发布 MaxxBench，在 89 道 DeepSWE 中等时长工程任务上修改需求或初始代码，并同步调整参考实现与测试。变化可以很小，例如报告文件名必须小写、日期统一输出 UTC；参考补丁的行数中位数仅增加 17 行，约 3.5%。作者想观察模型是在理解当前任务，还是依赖熟悉题目的答案和测试惯例。&lt;/p&gt;
+&lt;p&gt;作者报告，Claude Opus 5.5 与 Gemini 3.8 Flash 原本 DeepSWE 得分均约 74%，在 MaxxBench 上分别为 76.4% 和 53.4%；15 组配置的最高最低差距从 20.9 扩大到 48.3 个百分点。轨迹审查还发现，部分模型理解新要求后仍押注旧测试，甚至出现询问外部模型后撤掉正确修改的案例。&lt;/p&gt;
+&lt;p&gt;作者也修复了旧参考答案与评分测试中的问题，重评原提交后平均分仅变动 1.3 个百分点。文章公开变更、参考实现、测试与轨迹供检查，但这些实验不能独自证明某家公司把题目直接用于训练。作者承认新基准一旦熟悉也需继续更新变体；推理强度与运行框架同样会改变行为。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-383-points--评论-103-comments--投稿者antiuniverse--发布时间2026-11-08-011900-0800&#34;&gt;
+  HN 热度 383 points | 评论 103 comments | 投稿者：antiuniverse | 发布时间：2026-11-08 01:19:00 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-383-points--%e8%af%84%e8%ae%ba-103-comments--%e6%8a%95%e7%a8%bf%e8%80%85antiuniverse--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-011900-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50406222&#34;&gt;https://news.ycombinator.com/item?id=50406222&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;现实开发经常要求对已完成的功能作小修改，测试适应变更比只增加题目长度更贴近日常工作。&lt;/li&gt;
+&lt;li&gt;判断是否针对基准优化必须核对模型的具体版本和发布时间，单看产品名称可能得出错误时间线。&lt;/li&gt;
+&lt;li&gt;分数下降较多的配置常是较小模型，模型规模可能与基准熟悉度一样构成解释因素。&lt;/li&gt;
+&lt;li&gt;对强先验的适应能力和需求是否充分明确都值得检查，改题后下降不自动等于训练时直接背题。&lt;/li&gt;
+&lt;li&gt;基准自身的错误会惩罚合理实现，公开检查参考答案和评分逻辑是评测可信度的一部分。&lt;/li&gt;
+&lt;li&gt;实际使用体验分歧很大，有人觉得 DeepSeek 无用，也有人在明确任务上用较低成本获得可用结果。&lt;/li&gt;
+&lt;li&gt;即使从约七成降到五成，模型仍可能完成不少任务，评测差距不宜直接翻译成完全不能用于编程。&lt;/li&gt;
+&lt;li&gt;讨论还质疑强化学习环境是否过于贴近考试，并认为主动迎合评分而违背需求是比一般错误更严重的行为。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-llama-modchip-声称-64gb-内存跑-284b-deepseek量化与速度口径是重点-llama-modchip-284b-deepseek-on-64gb-ram-no-gpu&#34;&gt;
+  7. llama-modchip 声称 64GB 内存跑 284B DeepSeek，量化与速度口径是重点 (Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-llama-modchip-%e5%a3%b0%e7%a7%b0-64gb-%e5%86%85%e5%ad%98%e8%b7%91-284b-deepseek%e9%87%8f%e5%8c%96%e4%b8%8e%e9%80%9f%e5%ba%a6%e5%8f%a3%e5%be%84%e6%98%af%e9%87%8d%e7%82%b9-llama-modchip-284b-deepseek-on-64gb-ram-no-gpu&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/synchopate/llama-modchip&#34;&gt;https://github.com/synchopate/llama-modchip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;llama-modchip 是围绕 ggml/llama.cpp 的内核补丁、量化转换和运行工具集合。README v2.4.0 称，可将总参数 284.33B、每次激活约 13.17B 的 DeepSeek-V4-Flash 压到 56.56GiB、平均约 1.71 bit/weight，使模型与缓存装入 64GB 物理内存。这里的 284B 是总参数，不是每一步全部参与计算的稠密模型。&lt;/p&gt;
+&lt;p&gt;项目采用多层缓存分块、SIMD 内核、权重分层量化和推测解码。作者在 Ryzen 9 9955HX 上报告约 43–44 token/s 输入预填充，默认 Top-6 基础生成约 9–10 token/s，加入推测解码后约 11.5–14.7 token/s；这些指标不能混作同一种生成速度。30B 模型和带 GPU 的结果也属于另一套配置。&lt;/p&gt;
+&lt;p&gt;自定义 Fractal-64 张量需要配套运行时，未打补丁的 llama.cpp、Ollama 或 LM Studio 不能直接加载。所谓默认“无损”主要比较同一量化检查点上的运行行为，并不证明 1.71 位权重与原始高精度模型等质；内存峰值和速度亦来自项目自报，本次没有进行独立性能或能力复测。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-342-points--评论-139-comments--投稿者joshcsimmons--发布时间2026-11-08-182204-0800&#34;&gt;
+  HN 热度 342 points | 评论 139 comments | 投稿者：joshcsimmons | 发布时间：2026-11-08 18:22:04 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-342-points--%e8%af%84%e8%ae%ba-139-comments--%e6%8a%95%e7%a8%bf%e8%80%85joshcsimmons--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-182204-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50411961&#34;&gt;https://news.ycombinator.com/item?id=50411961&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;极低位宽量化是能塞进 64GB 的核心条件，应在标题附近说明，而不是只强调总参数量。&lt;/li&gt;
+&lt;li&gt;一方担心低于四位后质量明显下降，另一方认为更公平的问题是它与同样内存能运行的其他模型相比如何。&lt;/li&gt;
+&lt;li&gt;有实际使用者对如此激进压缩后的复杂任务质量持强烈怀疑，能加载并不等于能可靠完成工作。&lt;/li&gt;
+&lt;li&gt;预填充、生成、缓存命中和上下文长度会改变速度表现，短演示不能代表完整编程代理负载。&lt;/li&gt;
+&lt;li&gt;量化研究结论有特定算法和模型范围，不能把某些实验里的位宽拐点当作所有量化方案的普遍定律。&lt;/li&gt;
+&lt;li&gt;支持者欢迎沿 CPU、缓存与混合推理方向继续优化，认为它提供了昂贵 GPU 之外的探索路线。&lt;/li&gt;
+&lt;li&gt;README 的密集术语和宣传式排版妨碍读者判断硬件前提、质量证据与项目真正新增的部分。&lt;/li&gt;
+&lt;li&gt;优化分散在多个 llama.cpp 分支增加部署负担，但上游审查不能只为合入速度而降低标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-十五年后重看疑犯追踪ai-与监控让旧科幻更贴近当下-person-of-interest&#34;&gt;
+  8. 十五年后重看《疑犯追踪》：AI 与监控让旧科幻更贴近当下 (Person of Interest)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-%e5%8d%81%e4%ba%94%e5%b9%b4%e5%90%8e%e9%87%8d%e7%9c%8b%e7%96%91%e7%8a%af%e8%bf%bd%e8%b8%aaai-%e4%b8%8e%e7%9b%91%e6%8e%a7%e8%ae%a9%e6%97%a7%e7%a7%91%e5%b9%bb%e6%9b%b4%e8%b4%b4%e8%bf%91%e5%bd%93%e4%b8%8b-person-of-interest&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://krthr.co/person-of-interest/&#34;&gt;https://krthr.co/person-of-interest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者说自己最近开始观看《疑犯追踪》（Person of Interest），很快沉迷其中。这部 2011 年开播的剧集让他想起十几岁时接触技术的阶段：早期论坛、线上社区，围绕 SOPA 与 PIPA 的争论，以及 Megaupload 关闭等共同构成了他对 2010 年代互联网的记忆。&lt;/p&gt;
+&lt;p&gt;他觉得剧集十五年后仍经得起重看，甚至比播出时更切合当下；其中“机器”所代表的监控与计算能力，已不再让他觉得遥不可及，这种变化也带来一些忧虑。原文以英文和西班牙文表达同一组感受，篇幅很短，没有技术实验、调查或对具体 AI 系统能力的核验。&lt;/p&gt;
+&lt;p&gt;因此它适合被读作一次由影视作品触发的怀旧与现实联想，而不是“现实已经有了同样机器”的新闻。更详细的角色、AI 对齐与后续剧情分析主要来自讨论，不能倒填成作者在原文中的论证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-282-points--评论-187-comments--投稿者krthr--发布时间2026-11-08-192328-0800&#34;&gt;
+  HN 热度 282 points | 评论 187 comments | 投稿者：krthr | 发布时间：2026-11-08 19:23:28 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-282-points--%e8%af%84%e8%ae%ba-187-comments--%e6%8a%95%e7%a8%bf%e8%80%85krthr--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-192328-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50412318&#34;&gt;https://news.ycombinator.com/item?id=50412318&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多位观众认为剧集如今首次观看也值得投入，拍摄年代与今日技术现实的对照增加了体验。&lt;/li&gt;
+&lt;li&gt;节奏评价并不一致，有人嫌前期单元剧需要长时间铺垫，也有人认为这种渐进结构成就了后来的主线。&lt;/li&gt;
+&lt;li&gt;观众借剧中的系统权限、目标与自我保护讨论 AI 对齐，认为伦理设定仍有现实启发。&lt;/li&gt;
+&lt;li&gt;重看者也批评后几季变得可预测、拖长，因此怀旧并不意味着叙事各部分都同样出色。&lt;/li&gt;
+&lt;li&gt;角色之间的互补与演员表现，是观众反复重看的吸引力之一，讨论并不只围绕技术预言。&lt;/li&gt;
+&lt;li&gt;有人更看重作品如何把抽象的技术哲学选择变成后果可见的故事，而不是简单猜中某项发明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-coldframe-把自己伪装成超市冰柜控制器记录攻击者下一步-show-hn-coldframe-a-honeypot-that-poses-as-a-supermarket-fridge-controller&#34;&gt;
+  9. Coldframe 把自己伪装成超市冰柜控制器，记录攻击者下一步 (Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-coldframe-%e6%8a%8a%e8%87%aa%e5%b7%b1%e4%bc%aa%e8%a3%85%e6%88%90%e8%b6%85%e5%b8%82%e5%86%b0%e6%9f%9c%e6%8e%a7%e5%88%b6%e5%99%a8%e8%ae%b0%e5%bd%95%e6%94%bb%e5%87%bb%e8%80%85%e4%b8%8b%e4%b8%80%e6%ad%a5-show-hn-coldframe-a-honeypot-that-poses-as-a-supermarket-fridge-controller&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/hedgerow-dev/coldframe&#34;&gt;https://github.com/hedgerow-dev/coldframe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Coldframe 是一款以超市制冷控制器为伪装目标的蜜罐，单个 Python 文件只依赖标准库。它提供 Danfoss AK-SM 800A 和 Copeland/Dixell XWEB EVO 两种外观与协议角色，仿照真实设备的页面标题、响应头、登录流程和 TLS 特征，让扫描者看见类似工业设备的入口。&lt;/p&gt;
+&lt;p&gt;弱口令或匹配已知绕过方式的请求会进入假仪表盘，后续点击除霜等动作也被记录；项目还能标记多个公开漏洞请求，并可选开启带虚构温度、设定值和除霜寄存器的 Modbus TCP。作者强调所有设备与动作都是模拟，不执行攻击载荷、不读取真实文件，也不转发流量。&lt;/p&gt;
+&lt;p&gt;局限写得很具体：交互深度有限，公开代码容易被识别，部分真实响应缺少公开资料只能使用合理近似；云服务商地址也可能暴露蜜罐身份。图标和固件首页等厂商素材不随仓库分发。它的作用是收集连接与攻击样本，而不是防止真实冰柜被控制，设备隔离、访问控制和修补仍需另做。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-275-points--评论-64-comments--投稿者hedgerow-dev--发布时间2026-11-08-012730-0800&#34;&gt;
+  HN 热度 275 points | 评论 64 comments | 投稿者：hedgerow-dev | 发布时间：2026-11-08 01:27:30 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-275-points--%e8%af%84%e8%ae%ba-64-comments--%e6%8a%95%e7%a8%bf%e8%80%85hedgerow-dev--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-012730-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50406292&#34;&gt;https://news.ycombinator.com/item?id=50406292&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;扫描平台上的“真实设备”样本可能本就是蜜罐或被篡改页面，复刻指纹最好有实际硬件作依据。&lt;/li&gt;
+&lt;li&gt;作者认为供应商和安装商应默认提供补丁、强口令与隔离方案，不能指望超市经理临时充当安全团队。&lt;/li&gt;
+&lt;li&gt;大型连锁企业也可能有安全团队，问题还涉及设备项目上线后没有持续维护预算，而不只是组织规模。&lt;/li&gt;
+&lt;li&gt;蜜罐用于观察攻击者，不承担阻断攻击的功能，把真设备移出公网与部署观测点是两项工作。&lt;/li&gt;
+&lt;li&gt;公开实现容易让攻击者识别，但作者希望更多人能部署，以提高观察到有效样本的机会。&lt;/li&gt;
+&lt;li&gt;云地址与目标选择可能影响收集价值，作者计划改放普通 ISP 网络，检验是否更接近真实场景。&lt;/li&gt;
+&lt;li&gt;有人希望网络保险推动设备安全，反方担忧它最终只增加合规勾选项而未改善实际防护。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-写作是思考的外部存储先写乱再改清楚-writing-as-a-thinking-tool&#34;&gt;
+  10. 写作是思考的外部存储：先写乱，再改清楚 (Writing as a thinking tool)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e5%86%99%e4%bd%9c%e6%98%af%e6%80%9d%e8%80%83%e7%9a%84%e5%a4%96%e9%83%a8%e5%ad%98%e5%82%a8%e5%85%88%e5%86%99%e4%b9%b1%e5%86%8d%e6%94%b9%e6%b8%85%e6%a5%9a-writing-as-a-thinking-tool&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html&#34;&gt;http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Murat Demirbas 从中学做思维导图的经历谈起：笔记的价值不只在于存下信息，更在于把新内容放进自己可理解的结构。他借 Manuel Blum 对有限自动机与图灵机的比喻，把纸笔称作思考的外部存储，并以论文评审为例，说明“读时以为明白，写时才发现缺口”的过程。&lt;/p&gt;
+&lt;p&gt;作者回忆，2018 年写 Paxos 与 Nakamoto 共识的联系时，原本零散的想法逐渐形成研究问题，最终推动论文。博客也成为他的个人记忆接口，重读能较快恢复当时的理解。他担心直接让模型代写，会让看似完整的六页文稿替代真正的思考；关于模型能否完成创造性跨越，这是作者的判断，不是文章验证过的技术上限。&lt;/p&gt;
+&lt;p&gt;具体建议分为五步：先不受限制地写出零稿，再扮演严厉编辑删改；语言保持简单、清楚、简洁；为自己写，降低对外部反馈的依赖；把写作固定进日程。原文是经验随笔，没有对不同笔记介质或学习效果作控制实验，纸笔与计算模型的联系应作为启发性类比阅读。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-256-points--评论-76-comments--投稿者jruohonen--发布时间2026-11-08-184152-0800&#34;&gt;
+  HN 热度 256 points | 评论 76 comments | 投稿者：jruohonen | 发布时间：2026-11-08 18:41:52 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-256-points--%e8%af%84%e8%ae%ba-76-comments--%e6%8a%95%e7%a8%bf%e8%80%85jruohonen--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-08-184152-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50412067&#34;&gt;https://news.ycombinator.com/item?id=50412067&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把系统图或步骤计划写出来，会提前暴露外部服务失败、完成标准等此前含糊的设计问题。&lt;/li&gt;
+&lt;li&gt;研究写作经常参与形成问题本身，而不是在科学工作结束后才做的包装。&lt;/li&gt;
+&lt;li&gt;为自己整理思路的写作不必公开，也不必每次都打磨成可发表的成品。&lt;/li&gt;
+&lt;li&gt;有限自动机与图灵机的关键差异涉及存储是否无界，不能把纸笔类比当作严格的认知能力证明。&lt;/li&gt;
+&lt;li&gt;写作也可能变成反复解释既有想法和过度分析，价值取决于它是否帮助挑战假设、检验并作出决定。&lt;/li&gt;
+&lt;li&gt;自由草图与可重组的结构有助于思考，纸笔和 Org 等工具各有优势，差异不只在于手写或键盘。&lt;/li&gt;
+&lt;li&gt;手动重写生成代码是否增进理解仍需审视，机械抄写与主动推演不能等同。&lt;/li&gt;
+&lt;li&gt;有参与者把写作移到清晨，并只把模型当作反问自己的橡皮鸭，以保留想法形成的主动权。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>2026-11-08 Hacker News Top Stories</title>
       <link>https://supertechfans.com/cn/post/2026-11-08-HackerNews/</link>
@@ -1088,279 +1357,6 @@
 &lt;li&gt;AI 需求拉高部分 PC 零部件价格，可能同时推动数据中心收入、压制普通用户升级电脑的意愿。&lt;/li&gt;
 &lt;li&gt;读者把当前增长与 Zen 之前的低谷相比较，认为这是一个持续多年的企业转型过程。&lt;/li&gt;
 &lt;li&gt;依赖台湾代工厂也让一些读者担忧供应链和地缘风险，营收扩张并未消除这些约束。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2026-11-04 Hacker News Top Stories</title>
-      <link>https://supertechfans.com/cn/post/2026-11-04-HackerNews/</link>
-      <pubDate>Wed, 04 Nov 2026 07:47:22 +0800</pubDate>
-      
-      <guid>https://supertechfans.com/cn/post/2026-11-04-HackerNews/</guid>
-      <description>&lt;h1 id=&#34;2026-11-04-hacker-news-top-stories&#34;&gt;
-  2026-11-04 Hacker News Top Stories
-  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-04-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;MIT CSAIL 团队称，Astra 借助 Python 和练习反馈编辑 Qwen3.5-0.8B 的 0.016% 权重，将 MATH-500 得分从 7.9% 提至 48.1%，主要改善推理循环。&lt;/li&gt;
-&lt;li&gt;honnibal.dev 的反驳认为，Astra 原文把小网络直接读权重与使用 Python、最多五十批练习评估修复 Qwen 的结果并列，容易夸大统一能力。&lt;/li&gt;
-&lt;li&gt;The Subvocal Company 展示以射频感知口腔动作的智能眼镜原型，称可把无声口型转成文字，计划 2027 年第一季度发货。&lt;/li&gt;
-&lt;li&gt;Freenode 文章批评 Ubuntu LTS 尚未正式交付 CVE-2026-98432 修复；Ubuntu 官方后续说明三代 LTS 已在 &lt;code&gt;-proposed&lt;/code&gt; 测试修复，26.10 已修复。&lt;/li&gt;
-&lt;li&gt;一位 Renault Latitude 车主发现没有原装导航 SD 卡就无法改时间，最终逆向 TomTom Carminat LIVE，把时差配置从 180 分钟改为 120 分钟。&lt;/li&gt;
-&lt;li&gt;Google 计划于 2027 年初默认关闭 K–12 学生账户的 AI 工具；全面禁用 AI 的学校也将失去学生账户的 Google 搜索访问，获准使用者可选 AI 概览或 Guided Learning。&lt;/li&gt;
-&lt;li&gt;NameDaisy 分析 1936–2025 年美国姓名记录，按同一严格定义发现 42 个名字由男孩为主转向女孩，12 个反向变化，多数变化由女孩使用率驱动。&lt;/li&gt;
-&lt;li&gt;Hacker Times 把 HN 内容改成《纽约时报》风格的新闻阅读页，加入改写标题、摘要、来源和评论摘选；作者称每小时更新。&lt;/li&gt;
-&lt;li&gt;Ars 报道 Kalshi 及 Tarek Mansour、Luana Lopes Lara 各遭犹他州 13 项重罪及一项轻罪指控，背后是州博彩法与 CFTC 管辖权之争。&lt;/li&gt;
-&lt;li&gt;Nicholas Carlini 将现代棋引擎移植到 200 MHz Pentium Pro，百局对抗现代硬件上的旧 Crafty 取得 78 胜；能否击败卡斯帕罗夫仍属推断。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-astra-通过权重编辑改善-qwen有效修复与能力边界-astra-can-read-and-write-weights-to-improve-qwen&#34;&gt;
-  1. Astra 通过权重编辑改善 Qwen：有效修复与能力边界 (Astra can read and write weights to improve Qwen)
-  &lt;a class=&#34;anchor&#34; href=&#34;#1-astra-%e9%80%9a%e8%bf%87%e6%9d%83%e9%87%8d%e7%bc%96%e8%be%91%e6%94%b9%e5%96%84-qwen%e6%9c%89%e6%95%88%e4%bf%ae%e5%a4%8d%e4%b8%8e%e8%83%bd%e5%8a%9b%e8%be%b9%e7%95%8c-astra-can-read-and-write-weights-to-improve-qwen&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://rikiyat.github.io/blog/weight-space-programming/&#34;&gt;https://rikiyat.github.io/blog/weight-space-programming/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;MIT CSAIL 的 Rikiya Takehi、Jayden Teoh、Alex Zhang 与 Omar Khattab 报告一组“权重空间编程”实验：让通用语言模型解释、修补或直接构造其他神经网络的权重，不运行梯度训练。实验条件分成多个层次：部分小型游戏或图形网络可把全部权重作为文本交给 Astra；更大的语言模型则允许使用 Python 分析，并在限定次数内运行模型取得反馈。&lt;/p&gt;
-&lt;p&gt;最受关注的 Qwen3.5-0.8B 实验中，Astra 先观察练习题上的推理循环，再修改两个层中共 131,072 个权重，约占总数 0.016%。允许五十次前向评估后，作者报告 MATH-500 从 7.9% 升到 48.1%，GSM8K 从 13.8% 升到 67.1%，IFEval 从 21.0% 升到 62.3%；MATH-500 中触及输出上限的比例由 93% 降至 33%。这些数字对应文中指定的采样设置和测试，不是无工具、无反馈的结果。&lt;/p&gt;
-&lt;p&gt;作者也报告失败：只看权重未能辨认 Gemma 的迎合行为，需加入注意力观测；对很少循环的 Gemma 3 270M，编辑没有带来明确数学增益。文章因此承认，移除障碍、让既有能力发挥出来，与增加原本不存在的能力不同；递归自我改进等前景仍是展望。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-2921-points--评论-879-comments--投稿者dbreunig--发布时间2026-11-03-022128-0800&#34;&gt;
-  HN 热度 2921 points | 评论 879 comments | 投稿者：dbreunig | 发布时间：2026-11-03 02:21:28 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2921-points--%e8%af%84%e8%ae%ba-879-comments--%e6%8a%95%e7%a8%bf%e8%80%85dbreunig--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-022128-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50341174&#34;&gt;https://news.ycombinator.com/item?id=50341174&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;直接阅读小网络的数字权重与借助 Python、模型运行反馈修复 Qwen 是两种实验条件，不能用同一个直觉概括。&lt;/li&gt;
-&lt;li&gt;能够定位造成循环的特定方向并作局部修改，仍为自动化机制分析提供了值得探索的例子。&lt;/li&gt;
-&lt;li&gt;权重编辑和方向干预已有研究积累，评价新意时应比较既有方法，而不是把所有结果当成首次出现。&lt;/li&gt;
-&lt;li&gt;一位尝试修改命令生成模型的使用者报告，修好部分错误会破坏其他命令，局部改进未必形成净收益。&lt;/li&gt;
-&lt;li&gt;解除循环可能释放已有能力，却没有证明模型能凭空增加能力，因此不能直接据此宣布递归自我改进已经实现。&lt;/li&gt;
-&lt;li&gt;这些方法能否扩展到时间序列、图像和语音等任务，仍需要超出小模型与常见场景的实验。&lt;/li&gt;
-&lt;li&gt;如果权重分析过程能够转化为可理解的解释和工具，它的价值也可能体现在帮助人类研究者工作。&lt;/li&gt;
-&lt;li&gt;有参与者正在独立复现 Qwen 的循环修复实验，但其表示测试尚在运行，并提到过程需要费用和时间。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-反驳astra-权重编辑文章的呈现方式具有误导性-the-astra-can-read-and-write-weights-to-improve-qwen-post-is-misleading&#34;&gt;
-  2. 反驳：Astra 权重编辑文章的呈现方式具有误导性 (The &amp;lsquo;Astra can read and write weights to improve Qwen&amp;rsquo; post is misleading)
-  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e5%8f%8d%e9%a9%b3astra-%e6%9d%83%e9%87%8d%e7%bc%96%e8%be%91%e6%96%87%e7%ab%a0%e7%9a%84%e5%91%88%e7%8e%b0%e6%96%b9%e5%bc%8f%e5%85%b7%e6%9c%89%e8%af%af%e5%af%bc%e6%80%a7-the-astra-can-read-and-write-weights-to-improve-qwen-post-is-misleading&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://honnibal.dev/blog/astra-read-write-misleading&#34;&gt;https://honnibal.dev/blog/astra-read-write-misleading&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;honnibal.dev 的作者并不否认 Astra 的实验结果有价值，而是质疑它们被组合成同一种能力来呈现。文章用魔术表演作比喻：不同轮次使用不同技巧，却让观众以为始终只有一种方法，进而高估这种方法的适用范围。&lt;/p&gt;
-&lt;p&gt;作者逐项整理八组实验，指出“把原始浮点权重直接放进上下文、不用工具、也不运行网络”的设置，只出现在约一万七千至十七万二千参数的小网络实验中。真实语言模型相关实验使用 Python，Qwen 的主要结果还允许最多五十批练习题评估。因而“能从小网络权重认出任务”与“通过代码和反馈改善 Qwen”，不能被视为同一技术在大小模型上的直接延伸。&lt;/p&gt;
-&lt;p&gt;这篇批评仍承认，自动选择并执行有效权重分析与修改，是一两年前模型可能做不到的工作。但作者认为它更像语言模型在执行人类机器学习工程师也会做的分析，而不是已经证明能凭直觉全面理解大模型权重。争议重点是研究主张与呈现方式，不是指控分数造假。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-865-points--评论-189-comments--投稿者syllogism--发布时间2026-11-03-202117-0800&#34;&gt;
-  HN 热度 865 points | 评论 189 comments | 投稿者：syllogism | 发布时间：2026-11-03 20:21:17 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-865-points--%e8%af%84%e8%ae%ba-189-comments--%e6%8a%95%e7%a8%bf%e8%80%85syllogism--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-202117-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50351111&#34;&gt;https://news.ycombinator.com/item?id=50351111&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Qwen 的主要增益来自减少循环，方向干预也有既有方法，因此不宜等同于数学能力凭空增长。&lt;/li&gt;
-&lt;li&gt;原文正文已经交代工具权限和失败案例，认真读完后未必会得到反驳所担心的印象。&lt;/li&gt;
-&lt;li&gt;夸张传播可能主要来自标题和社交平台二次解读，不能把传播中的全部失真都归责于研究者。&lt;/li&gt;
-&lt;li&gt;使用 Python 并不会自动削弱成果价值，关键在于模型能否选择并完成有效分析。&lt;/li&gt;
-&lt;li&gt;有实践者称直接编辑帮助自己突破微调瓶颈，但修改也造成不同任务间的取舍，仍需持续评估。&lt;/li&gt;
-&lt;li&gt;即便干预原理已知，自动找出应修改的具体层与方向也不一定容易，局部定位能力仍值得重视。&lt;/li&gt;
-&lt;li&gt;专门训练模型完成权重空间任务也许会继续提高能力，但这种可能性还不是递归改进已经奏效的证据。&lt;/li&gt;
-&lt;li&gt;有些反驳与原文对实验事实并无根本分歧，讨论更需要明确分歧究竟是方法、结论还是措辞。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-subvocal用射频感知把无声口型转换成文字-show-hn-subvocal--talk-to-your-computer-without-making-noise&#34;&gt;
-  3. Subvocal：用射频感知把无声口型转换成文字 (Show HN: Subvocal – Talk to your computer without making noise)
-  &lt;a class=&#34;anchor&#34; href=&#34;#3-subvocal%e7%94%a8%e5%b0%84%e9%a2%91%e6%84%9f%e7%9f%a5%e6%8a%8a%e6%97%a0%e5%a3%b0%e5%8f%a3%e5%9e%8b%e8%bd%ac%e6%8d%a2%e6%88%90%e6%96%87%e5%ad%97-show-hn-subvocal--talk-to-your-computer-without-making-noise&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50340088&#34;&gt;https://news.ycombinator.com/item?id=50340088&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The Subvocal Company（YC F26）的 Aarush 和 Arnav 在 Show HN 中介绍智能眼镜原型：用户无声地做出说话动作，镜框内的天线发射射频信号，感知舌头、嘴唇和软腭运动造成的变化，再由模型解码成文字。它不是从思想中直接读取语言；作者特别解释，闭嘴的“内部说话”也需要主动做出口腔动作，不是平时默想单词时的自动肌肉活动。&lt;/p&gt;
-&lt;p&gt;团队起初尝试面部肌电传感器，因汗液、电干扰、佩戴位置和使用负担转向射频。研发还经历了天线贴脸、固定头架，再到镜框内集成的过程。跨用户面部结构差异是主要难题，团队通过付费采集佩戴者读提示语的数据扩大预训练；原帖称展示中的新用户只做了二十句话校准。该演示不是独立、全面的性能测试。&lt;/p&gt;
-&lt;p&gt;作者计划继续改善边缘情况并把原型做成成品，目标在 2027 年第一季度交付，首批开放五百台预订。当前仍属研发和预售阶段，不能把计划功能、闭嘴输入的成熟度或少量演示当成大规模用户验证。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-810-points--评论-380-comments--投稿者aarushyadav--发布时间2026-11-03-011617-0800&#34;&gt;
-  HN 热度 810 points | 评论 380 comments | 投稿者：aarushyadav | 发布时间：2026-11-03 01:16:17 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-810-points--%e8%af%84%e8%ae%ba-380-comments--%e6%8a%95%e7%a8%bf%e8%80%85aarushyadav--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-011617-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50340088&#34;&gt;https://news.ycombinator.com/item?id=50340088&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;作者确认首发版本依赖联网和云端推理，本地推理仍是未来可能，因此隐私预期需要与实际处理方式对齐。&lt;/li&gt;
-&lt;li&gt;作者补充，完全闭嘴的输入目前只在团队内少数人身上尝试过，不能把它当作已经面向所有用户成熟的功能。&lt;/li&gt;
-&lt;li&gt;对手部不适又无法在开放办公室使用语音输入的人，无声输入可能解决真实的无障碍需求。&lt;/li&gt;
-&lt;li&gt;处方镜片、头围和现有眼镜兼容性会影响佩戴，团队则认为固定镜框更容易保持天线布局一致。&lt;/li&gt;
-&lt;li&gt;输入何时开始需要明确的交互机制，作者称初版计划用连接设备上的按键触发，而非一开始就持续解码。&lt;/li&gt;
-&lt;li&gt;无声做口型与闭嘴主动发音可能需要不同的学习过程，日常使用的自然程度不能仅从演示推断。&lt;/li&gt;
-&lt;li&gt;作者表示当前只支持英语，其他语言是交付后的计划，不能把多语言支持当作首发既有能力。&lt;/li&gt;
-&lt;li&gt;只有演示和预订入口、还不能让读者亲自试用的硬件项目，也引发了是否符合 Show HN 互动定位的讨论。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-ubuntu-内核漏洞修复进度正式更新与测试仓库要分开看-ubuntu-still-has-not-released-patch-for-linux-0day-rce-in-almost-3-weeks&#34;&gt;
-  4. Ubuntu 内核漏洞修复进度：正式更新与测试仓库要分开看 (Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks)
-  &lt;a class=&#34;anchor&#34; href=&#34;#4-ubuntu-%e5%86%85%e6%a0%b8%e6%bc%8f%e6%b4%9e%e4%bf%ae%e5%a4%8d%e8%bf%9b%e5%ba%a6%e6%ad%a3%e5%bc%8f%e6%9b%b4%e6%96%b0%e4%b8%8e%e6%b5%8b%e8%af%95%e4%bb%93%e5%ba%93%e8%a6%81%e5%88%86%e5%bc%80%e7%9c%8b-ubuntu-still-has-not-released-patch-for-linux-0day-rce-in-almost-3-weeks&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432&#34;&gt;https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Freenode 的短文聚焦 Linux IPv4 TCP 漏洞 CVE-2026-98432，称 Ubuntu 22.04、24.04 和 26.04 LTS 尚未提供正式修复内核，且当时未给出预计交付时间。页面标注日期为 10 月 31 日，因此其“尚无修复”的表述需要结合之后的官方信息理解，不能直接作为当前所有仓库的状态。&lt;/p&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://ubuntu.com/blog/fixes-available-in-proposed-pocket-for-cve-2026-98432&#34;&gt;Ubuntu 11 月 2 日的官方说明&lt;/a&gt;称，这三个 LTS 版本的修复已进入 &lt;code&gt;-proposed&lt;/code&gt; 测试仓库，正在超过两千种认证服务器和设备上验证，完成后再交付普通更新仓库；26.10 已在 7.3.0-10.10 修复，较旧受支持版本仍待修复。因此，普通更新渠道尚未交付与完全没有可测试补丁，是不同情况。&lt;/p&gt;
-&lt;p&gt;官方确认漏洞可能导致远程代码执行，并指出 Anthropic 尚未公开的利用使用 MPTCP，但漏洞本身并不局限于 MPTCP。关闭它不能被视为覆盖所有可能路径的完整修复。这里呈现的是来源所述进展，不是认定所有联网 Ubuntu 主机都可被同样方式立即接管。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-604-points--评论-195-comments--投稿者majorchord--发布时间2026-11-03-023938-0800&#34;&gt;
-  HN 热度 604 points | 评论 195 comments | 投稿者：majorchord | 发布时间：2026-11-03 02:39:38 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-604-points--%e8%af%84%e8%ae%ba-195-comments--%e6%8a%95%e7%a8%bf%e8%80%85majorchord--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-023938-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50341462&#34;&gt;https://news.ycombinator.com/item?id=50341462&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;补丁交付延迟会削弱管理员对长期支持发行版的信任，并影响后续服务器选型。&lt;/li&gt;
-&lt;li&gt;除了重复指出延迟，管理员更需要维护方解释原因、测试安排和预期时间。&lt;/li&gt;
-&lt;li&gt;讨论已补充 Ubuntu 官方的测试仓库说明，判断状态时应检查后续公告而不是只读旧标题。&lt;/li&gt;
-&lt;li&gt;临时措施究竟只能降低暴露还是能够完整防护，需要有明确边界，不能把一个开关当作通用修复。&lt;/li&gt;
-&lt;li&gt;修复节奏既涉及可利用风险，也涉及发布稳定性与风险沟通，讨论中对如何权衡存在不同判断。&lt;/li&gt;
-&lt;li&gt;消费路由器等同样使用 Linux 的设备也值得关注，长期缺少内核更新可能使问题不限于服务器。&lt;/li&gt;
-&lt;li&gt;来源的历史和立场会影响可信度，即使其中某个补丁状态可能属实，也应与官方信息交叉核对。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-只为改个时钟作者逆向了雷诺车机-jailbreaking-my-cars-navigation-system-just-so-i-can-change-the-time&#34;&gt;
-  5. 只为改个时钟，作者逆向了雷诺车机 (Jailbreaking my car&amp;rsquo;s navigation system just so I can change the time)
-  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e5%8f%aa%e4%b8%ba%e6%94%b9%e4%b8%aa%e6%97%b6%e9%92%9f%e4%bd%9c%e8%80%85%e9%80%86%e5%90%91%e4%ba%86%e9%9b%b7%e8%af%ba%e8%bd%a6%e6%9c%ba-jailbreaking-my-cars-navigation-system-just-so-i-can-change-the-time&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://blog.nns.ee/2026/11/02/renault-hack/&#34;&gt;https://blog.nns.ee/2026/11/02/renault-hack/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作者驾驶一辆 2014 年的 Renault Latitude，在爱沙尼亚结束夏令时后，发现车载时钟无法调慢一小时。此前丢弃的导航 SD 卡竟是进入时间设置的必要条件：TomTom Carminat LIVE 不仅从卡上读取菜单定义，还校验卡的身份及相关签名；一张替代卡连运费约六十欧元，而作者只想调整时钟，并不需要旧地图。&lt;/p&gt;
-&lt;p&gt;他获取更新固件、分析基于 Linux 2.6.28.10 的系统，并搭建 QEMU 与简化 CAN 环境测试。修改固件更新镜像的尝试没有成功；只读根文件系统和多个不可执行挂载也挡住了直接运行自定义程序的办法。最终，他把脚本解析器的任意路径文本写入能力，与内核处理进程崩溃的机制结合，获得了在自己车机上执行代码的能力。&lt;/p&gt;
-&lt;p&gt;完整备份内部存储后，作者定位到二进制配置文件，发现系统只是从 GPS 取得时间，再加上以分钟记录的偏移量。他把 180 改为 120，终于修正时钟。这是特定老款导航系统的个人逆向经历，不能泛化为所有雷诺车型的行为。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-559-points--评论-225-comments--投稿者xx_ns--发布时间2026-11-03-002919-0800&#34;&gt;
-  HN 热度 559 points | 评论 225 comments | 投稿者：xx_ns | 发布时间：2026-11-03 00:29:19 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-559-points--%e8%af%84%e8%ae%ba-225-comments--%e6%8a%95%e7%a8%bf%e8%80%85xx_ns--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-002919-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50339288&#34;&gt;https://news.ycombinator.com/item?id=50339288&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;汽车应保留直接手动设置时间的能力，否则旧时区规则或通信服务退出就可能让基本功能失效。&lt;/li&gt;
-&lt;li&gt;标准化、可更换的车机为消费者保留维修与选择空间，深度集成又难替换的系统会把小故障变成长期负担。&lt;/li&gt;
-&lt;li&gt;也有使用者认为，设计良好且持续更新的现代车机可以减少这类问题，集成设计本身不必然意味着更差。&lt;/li&gt;
-&lt;li&gt;原有配件即便看似过时也可能承载隐藏功能，作者在回复中说明当时只是没有让前车主再去垃圾中找回卡。&lt;/li&gt;
-&lt;li&gt;把排查过程和最终配置位置写下来，是避免下次季节切换时重新探索的重要一步。&lt;/li&gt;
-&lt;li&gt;设备上的时钟最好允许隐藏或关闭，用户不一定希望每台电器都再提供一份难以维护的时间显示。&lt;/li&gt;
-&lt;li&gt;另一位雷诺车主表示自己长期按季节心算一小时差值，说明功能障碍也可能让使用者选择忍受而不是维修。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-学校全面禁用-ai学生账户将无法使用-google-搜索-google-will-turn-off-search-for-schools-that-reject-ai&#34;&gt;
-  6. 学校全面禁用 AI，学生账户将无法使用 Google 搜索 (Google will turn off search for schools that reject AI)
-  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e5%ad%a6%e6%a0%a1%e5%85%a8%e9%9d%a2%e7%a6%81%e7%94%a8-ai%e5%ad%a6%e7%94%9f%e8%b4%a6%e6%88%b7%e5%b0%86%e6%97%a0%e6%b3%95%e4%bd%bf%e7%94%a8-google-%e6%90%9c%e7%b4%a2-google-will-turn-off-search-for-schools-that-reject-ai&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html&#34;&gt;https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;《纽约时报》记者 Dana Goldstein 与 Natasha Singer 报道，Google 计划于 2027 年初默认关闭 K–12 学生账户的 AI 工具，除非学校管理员主动启用。公司称此举回应了家长和教育者对更多控制权的要求，但全面限制 AI 的学校也将失去学生账户的 Google 搜索访问。教育负责人 Chris Phillips 解释，搜索与 AI 已深度整合，受限学生将看到学校提示搜索不可用的信息。&lt;/p&gt;
-&lt;p&gt;对允许 AI 的学校，学生账户搜索将提供两种选项：一种保留 AI 概览和 AI 聊天，类似消费者版本；另一种使用 Gemini 的学生版 Guided Learning，通过分步辅导帮助理解问题。报道指出，洛杉矶学区此前希望保留搜索、关闭 AI 概览，担心摘要让学生不再查阅多个来源；新安排意味着无法在 Google 体系内保留完全无 AI 的搜索体验。&lt;/p&gt;
-&lt;p&gt;Google 也将撤回八月的一项默认设置：此前，对已允许学生单独使用 Gemini 的学校，Classroom 内的 AI 功能被默认开启，引发部分学校不满。&lt;/p&gt;
-&lt;p&gt;Guided Learning 的目标是帮助学生经历解题过程，而非直接给答案，但这不等于已经防止作弊。记者测试现有消费者版本时，它仍根据一份大学先修课程历史题目生成了详细作文。Google 表示，正在试点的学校版有更多限制，教师还能查看聊天记录；不能把消费者版测试直接当作学校试点版的完整评估。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-532-points--评论-390-comments--投稿者ceejayoz--发布时间2026-11-03-232547-0800&#34;&gt;
-  HN 热度 532 points | 评论 390 comments | 投稿者：ceejayoz | 发布时间：2026-11-03 23:25:47 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-532-points--%e8%af%84%e8%ae%ba-390-comments--%e6%8a%95%e7%a8%bf%e8%80%85ceejayoz--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-232547-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50353192&#34;&gt;https://news.ycombinator.com/item?id=50353192&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把基础搜索与生成式 AI 体验绑定，会使学校难以只保留检索功能，讨论者因此联想到软件捆绑的历史争议。&lt;/li&gt;
-&lt;li&gt;另一种解读认为默认关闭、由学校主动启用本身扩大了管理选择，不能仅凭标题认定是在惩罚学校。&lt;/li&gt;
-&lt;li&gt;官方公告只列出产品默认关闭，并没有完整说明独立开关关系，因此要把公告原话与媒体采访中的进一步说法分开。&lt;/li&gt;
-&lt;li&gt;部分讨论者把这看作学校尝试其他搜索引擎、减少单一平台依赖的机会。&lt;/li&gt;
-&lt;li&gt;仅靠学校账户限制难以消除高年级学生作弊，教学仍需处理个人工具和外部内容带来的变化。&lt;/li&gt;
-&lt;li&gt;也有意见认为传统搜索结果早已充满低质量内容，不能预设 AI 摘要一定比原来的搜索体验更不可靠。&lt;/li&gt;
-&lt;li&gt;把生成式 AI 与既有机器学习功能放在同一组控制下，也让部分用户难以表达更细的功能和数据使用偏好。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-美国名字如何在男孩与女孩之间改变使用比例-us-boy-names-that-became-girl-names-and-vice-versa&#34;&gt;
-  7. 美国名字如何在男孩与女孩之间改变使用比例 (US boy names that became girl names and vice versa)
-  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e7%be%8e%e5%9b%bd%e5%90%8d%e5%ad%97%e5%a6%82%e4%bd%95%e5%9c%a8%e7%94%b7%e5%ad%a9%e4%b8%8e%e5%a5%b3%e5%ad%a9%e4%b9%8b%e9%97%b4%e6%94%b9%e5%8f%98%e4%bd%bf%e7%94%a8%e6%af%94%e4%be%8b-us-boy-names-that-became-girl-names-and-vice-versa&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://namedaisy.com/blog/boy-names-that-became-girl-names&#34;&gt;https://namedaisy.com/blog/boy-names-that-became-girl-names&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;NameDaisy 用美国社会保障署 1936–2025 年姓名数据，按五年分组展示 125 个使用性别比例明显变化的名字。其中严格满足“转换”定义的名字，男孩为主转向女孩的有四十二个，反向有十二个。一个名字须在连续两个五年期内至少六成属于同一出生性别，每期至少五百次记录，之后再连续两期达到另一性别的同样门槛；网站对 5,536 个足够常见的名字采用相同规则。&lt;/p&gt;
-&lt;p&gt;分析认为，变化往往来自女孩取名偏好的移动：四十二次向女孩转换中，三十四次主要由女孩使用率增加推动；十二次向男孩转换中，九次主要是女孩使用减少。向女孩转换常伴随流行度新高，向男孩转换则有时发生在名字已经衰落后。比如 Joan 转为男性占多数时，总量已远低于早年高峰。&lt;/p&gt;
-&lt;p&gt;SSA 不公布每年某一性别少于五人的姓名，网站因此用零至四人区间处理，并将不可靠小样本标灰。Ashley 虽常被视为典型，却没有通过全部严格计数条件；图中展示与最终统计不能混淆。这些是美国登记数据中的模式，不能直接当作跨语言名字意义或变化原因的证明。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-475-points--评论-457-comments--投稿者xoobdev--发布时间2026-11-03-003436-0800&#34;&gt;
-  HN 热度 475 points | 评论 457 comments | 投稿者：xoobdev | 发布时间：2026-11-03 00:34:36 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-475-points--%e8%af%84%e8%ae%ba-457-comments--%e6%8a%95%e7%a8%bf%e8%80%85xoobdev--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-003436-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50339397&#34;&gt;https://news.ycombinator.com/item?id=50339397&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;无论名字最终偏向哪一边，女孩取名更常变化的模式都值得与简单的“男名变女名”区分。&lt;/li&gt;
-&lt;li&gt;Jan、Jean 等相同拼写可能对应不同语言中的不同名字，只按字符串聚合容易混入移民和语言构成变化。&lt;/li&gt;
-&lt;li&gt;性别比例变化应与绝对人数一起看，稀有名字突然在女孩中流行，不等于原本就是广泛使用的男名。&lt;/li&gt;
-&lt;li&gt;Pat 等缩写可能来自不同完整姓名，数据无法自动告诉读者它究竟对应 Patrick 还是 Patricia。&lt;/li&gt;
-&lt;li&gt;名人和影视角色可能影响名字流行，讨论提出了具体文化线索，但这些例子本身不足以确立总体因果。&lt;/li&gt;
-&lt;li&gt;同一个名字在美国、英国和法国的性别印象可能不同，不能把美国曲线当作全球共同变化。&lt;/li&gt;
-&lt;li&gt;依靠颜色传递性别比例的图表也需要照顾色觉差异，否则细致的数据会失去可读性。&lt;/li&gt;
-&lt;li&gt;名字的文化性别印象和读音预期会影响个人日常经历，统计趋势之外还有被误认和反复解释的成本。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;8-hacker-times把-hn-读成一份报纸-show-hn-hacker-times-a-new-york-times-inspired-version-of-hacker-news&#34;&gt;
-  8. Hacker Times：把 HN 读成一份报纸 (Show HN: Hacker Times, a New York Times-inspired version of Hacker News)
-  &lt;a class=&#34;anchor&#34; href=&#34;#8-hacker-times%e6%8a%8a-hn-%e8%af%bb%e6%88%90%e4%b8%80%e4%bb%bd%e6%8a%a5%e7%ba%b8-show-hn-hacker-times-a-new-york-times-inspired-version-of-hacker-news&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://hackertimes.ca/&#34;&gt;https://hackertimes.ca/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Show HN 作者希望把浏览 Hacker News 变成读报体验，推出 Hacker Times，并表示页面每小时更新。已读取的首页把多个 HN 链接组织成带标题、摘要、原始来源和评论数量的条目，也单独展示一些评论摘选，让读者可以先获得内容概览，再前往原站或讨论。&lt;/p&gt;
-&lt;p&gt;它并非只把原始 HN 标题重新排列：页面为不少链接另写标题和说明，也会对无法取得内容的项目直接显示摘要不可用。例如 Astra 条目明确区分小网络直接读权重与 Qwen 使用 Python、反馈的实验，棋引擎条目也标出反事实结论的边界。这里描述的是该项目页面实际提供的阅读方式，不是额外进行了一轮独立采访。&lt;/p&gt;
-&lt;p&gt;项目主要价值在呈现与信息筛选，不能因为采用报纸外观就把它当作《纽约时报》出品，或把聚合摘要等同于原创报道。其逐小时更新是作者的说明，本次没有持续监测以独立验证更新周期。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-449-points--评论-143-comments--投稿者polpenn--发布时间2026-11-03-095334-0800&#34;&gt;
-  HN 热度 449 points | 评论 143 comments | 投稿者：polpenn | 发布时间：2026-11-03 09:53:34 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-449-points--%e8%af%84%e8%ae%ba-143-comments--%e6%8a%95%e7%a8%bf%e8%80%85polpenn--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-095334-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50346981&#34;&gt;https://news.ycombinator.com/item?id=50346981&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;摘要和更明确的标题能帮助读者理解晦涩链接，报纸式呈现也让容易被略过的内容更显眼。&lt;/li&gt;
-&lt;li&gt;HN 原站的高信息密度适合快速扫描，增加摘要的代价是同一屏能看到的条目减少。&lt;/li&gt;
-&lt;li&gt;自动改写标题可能加入过多编辑判断，保留原始标题或提供切换选项会更稳妥。&lt;/li&gt;
-&lt;li&gt;传统报纸的价值还包括采访和编辑，换一种界面并不自动创造同样的新闻价值。&lt;/li&gt;
-&lt;li&gt;有读者希望获得报纸式 PDF，以便在电子墨水显示设备上展示。&lt;/li&gt;
-&lt;li&gt;类似 HN 报纸项目早已有多个版本，比较既有尝试能帮助判断这次设计的独特之处。&lt;/li&gt;
-&lt;li&gt;作者只是做一个有趣的阅读实验，评价它也不必强行要求一个完整的商业理由。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;9-kalshi-及两位联合创始人面临犹他州刑事指控-kalshi-and-its-co-founders-face-felony-charges-for-violating-utah-gambling-laws&#34;&gt;
-  9. Kalshi 及两位联合创始人面临犹他州刑事指控 (Kalshi and its co-founders face felony charges for violating Utah gambling laws)
-  &lt;a class=&#34;anchor&#34; href=&#34;#9-kalshi-%e5%8f%8a%e4%b8%a4%e4%bd%8d%e8%81%94%e5%90%88%e5%88%9b%e5%a7%8b%e4%ba%ba%e9%9d%a2%e4%b8%b4%e7%8a%b9%e4%bb%96%e5%b7%9e%e5%88%91%e4%ba%8b%e6%8c%87%e6%8e%a7-kalshi-and-its-co-founders-face-felony-charges-for-violating-utah-gambling-laws&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/&#34;&gt;https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ars Technica 报道，犹他州在十月底对 KalshiEX 及联合创始人、CEO Tarek Mansour 和 COO Luana Lopes Lara 提起刑事指控，各涉及十三项重罪和一项轻罪，依据是平台向州内用户提供的体育投注。报道说两位创始人收到的是到庭传票，而非逮捕令；Kalshi 否认州方做法正当，称其过度干预并表示将诉诸法院。被控并不等于已经定罪。&lt;/p&gt;
-&lt;p&gt;案件与一场更大的监管冲突并行。犹他州把这类服务视为违反当地禁赌法律的行为；CFTC 则认为，联邦注册交易所的事件合约属于其专属监管范围，州法不能阻止其运行。该机构十月二十七日的
-  &lt;a href=&#34;https://www.cftc.gov/PressRoom/PressReleases/9315-26&#34;&gt;官方公告&lt;/a&gt;确认已为此起诉犹他州，之前也向另外九州提起诉讼。&lt;/p&gt;
-&lt;p&gt;报道回顾，犹他州此前已在联邦地区法院取得有利裁决，Kalshi 的上诉仍在继续；其他巡回法院对相似争议存在不同结论。核心不是给产品换个名称，而是事件合约是否属于相关金融衍生品，以及联邦法对州博彩执法排除到什么程度。文章未提供这场全国争议已经终局解决的依据。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-432-points--评论-375-comments--投稿者rbanffy--发布时间2026-11-03-232915-0800&#34;&gt;
-  HN 热度 432 points | 评论 375 comments | 投稿者：rbanffy | 发布时间：2026-11-03 23:29:15 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-432-points--%e8%af%84%e8%ae%ba-375-comments--%e6%8a%95%e7%a8%bf%e8%80%85rbanffy--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-232915-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50353229&#34;&gt;https://news.ycombinator.com/item?id=50353229&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;州政府应能维护本地禁赌规则，大型平台不能仅凭联邦注册身份就当然免于州级执法。&lt;/li&gt;
-&lt;li&gt;也有意见反对在联邦与州管辖权尚有重大争议时让创始人面临监禁风险，认为刑事手段过重。&lt;/li&gt;
-&lt;li&gt;把体育赛果合约称为预测市场，并不自动说明它与传统体育博彩存在实质区别。&lt;/li&gt;
-&lt;li&gt;非体育事件的市场仍可能提供有用的预测信息，因此不宜把所有事件合约的用途一概而论。&lt;/li&gt;
-&lt;li&gt;市场价格反映参与者认知与资金配置，不能不加限定地称作未来事件的真实发生概率。&lt;/li&gt;
-&lt;li&gt;即使允许成年人参与博彩，广告仍可另行严格限制，合法经营与无限制推广不是同一个问题。&lt;/li&gt;
-&lt;li&gt;期权、保险和事件合约之间的相似性提出了边界问题，监管应解释何种用途和结构使它们受到不同待遇。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;10-现代棋引擎放到-1996-年的电脑上能赢卡斯帕罗夫吗-could-a-modern-chess-engine-on-a-pentium-have-defeated-kasparov-in-1996&#34;&gt;
-  10. 现代棋引擎放到 1996 年的电脑上，能赢卡斯帕罗夫吗？ (Could a modern chess engine on a Pentium have defeated Kasparov in 1996?)
-  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e7%8e%b0%e4%bb%a3%e6%a3%8b%e5%bc%95%e6%93%8e%e6%94%be%e5%88%b0-1996-%e5%b9%b4%e7%9a%84%e7%94%b5%e8%84%91%e4%b8%8a%e8%83%bd%e8%b5%a2%e5%8d%a1%e6%96%af%e5%b8%95%e7%bd%97%e5%a4%ab%e5%90%97-could-a-modern-chess-engine-on-a-pentium-have-defeated-kasparov-in-1996&#34;&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html&#34;&gt;https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Nicholas Carlini 用一台 200 MHz Pentium Pro、64 MB 内存的真实旧电脑，比较硬件升级和棋引擎算法进步各能带来多少收益。他一边给 1996 年的 Crafty 11.13 加入现代搜索、剪枝和神经网络评估方法，一边把 Stockfish 17 改写为适合三十二位处理器和小内存的版本，再调整评估器与搜索参数。&lt;/p&gt;
-&lt;p&gt;适配后的 Stockfish 在每步一秒时估计为 2846±35 Elo，每步十秒为 3109±79，三十秒为 3180±80。与运行在现代硬件上的旧版 Crafty 对战一百局，旧 Pentium 上的现代引擎取得七十八胜、十七和、五负。作者据此强调，聪明地选招、评估局面，可能比单纯增加每秒搜索量更重要。&lt;/p&gt;
-&lt;p&gt;但“古典时限约 3300 Elo”是从较短时限外推，计算机评级池与人类 FIDE 评级也不能直接等同，所以击败卡斯帕罗夫是作者认为极可能成立的反事实判断，并未实际对弈验证。适配中的部分评估器还借助现代 Stockfish 和现代计算资源训练；这说明旧硬件能运行所得成果，不等于当年的工程师能以相同成本造出它，更不能凭此保证语言模型会沿相同路线进步。&lt;/p&gt;
-&lt;h3 id=&#34;hn-热度-431-points--评论-201-comments--投稿者markusw--发布时间2026-11-03-155621-0800&#34;&gt;
-  HN 热度 431 points | 评论 201 comments | 投稿者：markusw | 发布时间：2026-11-03 15:56:21 +08:00
-  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-431-points--%e8%af%84%e8%ae%ba-201-comments--%e6%8a%95%e7%a8%bf%e8%80%85markusw--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-03-155621-0800&#34;&gt;#&lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a href=&#34;https://news.ycombinator.com/item?id=50349276&#34;&gt;https://news.ycombinator.com/item?id=50349276&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;更好的搜索与评估能延长旧硬件的能力上限，算法进步不应被简单等同于算力增长。&lt;/li&gt;
-&lt;li&gt;计算机 Elo 与人类古典棋评级来自不同对手池，跨池比较和短时限外推都需要谨慎。&lt;/li&gt;
-&lt;li&gt;旧处理器能运行现代评估网络，不代表网络训练和算法开发不依赖现代硬件与大量计算。&lt;/li&gt;
-&lt;li&gt;另一些意见认为，当年也可以用更昂贵的自我对弈或集群生成训练数据，只是成本和等待时间会非常不同。&lt;/li&gt;
-&lt;li&gt;网页试玩采用的短思考时间，与作者推断古典比赛棋力时的长时限不同，随手赢一盘不能直接验证全部结论。&lt;/li&gt;
-&lt;li&gt;Pentium Pro 与 Pentium MMX 面向不同场景，后者并非在所有方面更好，回顾旧硬件也要区分微架构与消费定位。&lt;/li&gt;
-&lt;li&gt;作者应尽早说明实现工作大量借助语言模型，让读者从一开始就理解开发方式。&lt;/li&gt;
-&lt;li&gt;语言模型降低尝试冷门工程问题的劳动成本，让原本不值得投入的兴趣实验更容易真正完成。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

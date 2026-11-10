@@ -1,9 +1,20 @@
 {
   "items": [
     {
+      "id": "aacd7f1c4e27520d8edae300",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve…",
+      "image": null,
+      "publishedAt": "2026-11-10T05:34:14Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "detailPath": "articles/aacd7f1c4e27520d8edae300.json"
+    },
+    {
       "id": "99a73436abfaf2b901727bac",
       "title": "llm-anthropic 0.31",
-      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\" I ran pelicans at all five reas…",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious! I've added the new models to llm-anthropic , so you can now run prompts through…",
       "image": "https://static.simonwillison.net/static/2026/fable-5.2-xhigh.avif",
       "publishedAt": "2026-11-09T23:58:46Z",
       "sourceId": "052434531db837d6",
@@ -318,17 +329,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
       "detailPath": "articles/48f804c4c5744e5052aaabb7.json"
-    },
-    {
-      "id": "786ac788492f5137968607d3",
-      "title": "The October inflection point for vibe game development",
-      "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games .…",
-      "image": "https://static.simonwillison.net/static/2026/tree-appreciator.webp",
-      "publishedAt": "2026-10-28T13:55:15Z",
-      "sourceId": "052434531db837d6",
-      "sourceTitle": "Simon Willison's Weblog",
-      "link": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-      "detailPath": "articles/786ac788492f5137968607d3.json"
     }
   ]
 }

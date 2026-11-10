@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "aacd7f1c4e27520d8edae300",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve…",
+      "image": null,
+      "publishedAt": "2026-11-10T05:34:14Z",
+      "sourceId": "052434531db837d6",
+      "sourceTitle": "Simon Willison's Weblog",
+      "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "detailPath": "articles/aacd7f1c4e27520d8edae300.json"
+    },
+    {
+      "id": "77393fee9faee2cd09a19fc2",
+      "title": "Strategically compounding correlated variables",
+      "summary": "A reader read a draft of my essay on measuring early stage progress, and said, that’s cute, but a more interesting question is what we should be compounding in the first place. Everyone seems to agree that: Compounding is powerful, and compounding good things is good Many things",
+      "image": null,
+      "publishedAt": "2026-11-10T05:20:09Z",
+      "sourceId": "e2f4758cec273fb9",
+      "sourceTitle": "The Autodidacts",
+      "link": "https://www.autodidacts.io/strategically-compounding-correlated-variables/",
+      "detailPath": "articles/77393fee9faee2cd09a19fc2.json"
+    },
+    {
+      "id": "e58b46f0552370b2dad965a4",
+      "title": "Holistic prioritization requires sometimes working on lower priority tasks",
+      "summary": "At the risk of stating the obvious: always working on your #1 priority doesn’t work. I have learned this the hard way. (Most recently, when I tried David Gauer’s cool sticky note todo list system .) Health, and specifically exercise, are generally my #2 or #3 priority.",
+      "image": null,
+      "publishedAt": "2026-11-10T05:07:51Z",
+      "sourceId": "e2f4758cec273fb9",
+      "sourceTitle": "The Autodidacts",
+      "link": "https://www.autodidacts.io/holistic-prioritization/",
+      "detailPath": "articles/e58b46f0552370b2dad965a4.json"
+    },
+    {
       "id": "f64cf496711713d8327e083e",
       "title": "Sunday, November 8th, 2026",
       "summary": "# Remembering the fallen. Lest we forget. # On my neurodiversity Growing up through the 70s and into the 80s, there was no talk about neurodiversity. Although certain conditions had been described years before, they didn't enter into mainstream conversation until the late 80s/early 90s. Even then they were discussed with very negative connotations — disease…",
@@ -14,7 +47,7 @@
     {
       "id": "99a73436abfaf2b901727bac",
       "title": "llm-anthropic 0.31",
-      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\" I ran pelicans at all five reas…",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious! I've added the new models to llm-anthropic , so you can now run prompts through…",
       "image": "https://static.simonwillison.net/static/2026/fable-5.2-xhigh.avif",
       "publishedAt": "2026-11-09T23:58:46Z",
       "sourceId": "052434531db837d6",
@@ -626,39 +659,6 @@
       "sourceTitle": "Simon Willison's Weblog",
       "link": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
       "detailPath": "articles/95ec0c1a7d7725d691a9c3b0.json"
-    },
-    {
-      "id": "399ab685482da718637fd9f6",
-      "title": "Summary of changes for October 2026",
-      "summary": "Hey everyone! This is the list of all the changes we've done to our projects during the month of October. Wiki , added taxes , and updated . Donsol , fixed some bugs. Note that we plan to release a Playdate build on itch.io next month. Rabbit Waves , finished a new comic page , added a section on monochrome signal flags (scroll to bottom) and updated the zi…",
-      "image": null,
-      "publishedAt": "2026-11-01T07:00:00Z",
-      "sourceId": "981924f06f53f00f",
-      "sourceTitle": "Hundred Rabbits — Journal",
-      "link": "https://100r.ca/site/log.html#oct2026",
-      "detailPath": "articles/399ab685482da718637fd9f6.json"
-    },
-    {
-      "id": "eebfb1bc82e01564687c0aa3",
-      "title": "I Am Relentless and Undaunted",
-      "summary": "AO3 went dark after a security breach, and fanfiction.lol doubled overnight. On the blur of breaches and Sam Altman calling it 'terrible' that people have RAM in their PCs. On the end of affordable hardware and DDR4 prices quintupling, 2026 hard drive production sold out to hyperscalers, and what we surrender when we're compelled to rent and lease and borro…",
-      "image": null,
-      "publishedAt": "2026-11-01T02:00:00Z",
-      "sourceId": "d44765325e020e3a",
-      "sourceTitle": "Brennan’s Weblog",
-      "link": "https://brennan.day/i-am-relentless-and-undaunted/",
-      "detailPath": "articles/eebfb1bc82e01564687c0aa3.json"
-    },
-    {
-      "id": "bd69541400333e650bd4fce4",
-      "title": "Las elecciones en EE.UU. podrían sumir al país en el caos",
-      "summary": "Trump ya intentó revertir una elección que perdió. El 3 de noviembre, probablemente pierda otra, y por mucho. A esta altura es obvio para casi todo el mundo que el Partido Republicano, y por ende Trump, va a recibir una paliza en las elecciones de medio término. Lo más probable es que tanto la Cámara de Representantes como el Senado cambien de manos. Hace u…",
-      "image": "https://martinvol.pe/blog/assets/images/2026-11-01-the-us-election-could-turn-the-country-into-chaos/cover.jpg",
-      "publishedAt": "2026-11-01T00:00:00Z",
-      "sourceId": "15e90975dba522e6",
-      "sourceTitle": "Volpe’s Blog",
-      "link": "https://martinvol.pe/blog/es/2026/11/01/las-elecciones-en-eeuu-podrian-sumir-al-pais-en-el-caos/",
-      "detailPath": "articles/bd69541400333e650bd4fce4.json"
     }
   ]
 }

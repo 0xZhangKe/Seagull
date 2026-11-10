@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1cf40616a14b70e4a5c033ab",
+      "title": "把 BlockNote 的 AI 接上地端 Gemma：一場跟 Vercel AI SDK tool-calling 格式的硬仗",
+      "summary": "這篇文章記錄了作者將 BlockNote 官方 AI 套件整合至地端 Gemma 3 27B 模型的完整踩坑與除錯過程。作者在純離線的開發限制下，面對官方套件高度依賴雲端模型 Tool-calling 能力的阻礙，經歷了資料流撞牆與前端假流式的挫折，最終透過讓後端模擬結構化指令（Operation）並直接對接執行器，成功還原了流暢的就地對比體驗。同時，作者也巧妙利用輕量虛擬環境繞過了公司嚴格的 MAC 端點管控，解決了開發迭代受阻的基礎設施痛點。文章穿插了詳實的 Payload 數據排查與各類邊界條件（Edge Cases）的修補細節，展現了在底層原始碼與硬體限制中尋求突破的工程韌性。整體風格務實且邏輯嚴密，反映了開發者在看透框架隱藏假設與模型能力天花板後，依然能精準給出架構妥協與解法的硬派技術精神。",
+      "image": null,
+      "publishedAt": "2026-05-28T02:53:55Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/wiring-blocknotes-ai-to-a-local-gemma",
+      "detailPath": "articles/1cf40616a14b70e4a5c033ab.json"
+    },
+    {
+      "id": "6fff3ffadd98d5648ffaeed5",
+      "title": "README：异常情绪应对手册",
+      "summary": "相信自己真的很了不起了，给自己一个拥抱吧！ 这是一篇写给自己抑郁/焦虑/僵反应/感官过载等应激状态时的应对指南，这份指南不一定能够应对所有可能的突发性情况，只是想用这种形式告诉自己，即使遇到个人层面的精神危机也可以handle，我永远是自己的情绪后盾。 1.深呼吸 【延长呼气】选择一个舒服的坐姿/躺姿安顿好自己，把注意力放到呼吸上，先把烦人的事情都抛到脑后把呼吸理顺。吸气4秒，缓慢呼气6-8秒慢慢把气吐干净，重复多次试着让自己平静下来，右手用力握拳，再放松 【冷刺激】冷水洗脸或用冰饮贴脸，通过低温刺激降低心率。 【压迫感】如果在家里试着用被子、枕头或衣物把自己裹起来，寻找一个有安全感的姿势，让自己在小巢里慢慢冷静下来 不管这些举措是否有用，都已经完成了自我抚慰的第一步，太棒了！其实我们对自己的身体其实是可以掌…",
+      "image": null,
+      "publishedAt": "2026-05-28T00:00:00Z",
+      "sourceId": "c2f93c0c7c75bc8b",
+      "sourceTitle": "Circleyellowthere",
+      "link": "https://circleyellowthere.de/blog/12/",
+      "detailPath": "articles/6fff3ffadd98d5648ffaeed5.json"
+    },
+    {
+      "id": "f9bb12cb71695c727f467eae",
+      "title": "文字接龍大師",
+      "summary": "---",
+      "image": null,
+      "publishedAt": "2026-05-28T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/word-chain",
+      "detailPath": "articles/f9bb12cb71695c727f467eae.json"
+    },
+    {
+      "id": "74f94de63ada2ca0f0309fc0",
+      "title": "宜流淌",
+      "summary": "拼贴诗一则。",
+      "image": "https://leehenry.top/_astro/image-20260528121950508.BaxOSiMG_Z2lquwL.webp",
+      "publishedAt": "2026-05-28T00:00:00Z",
+      "sourceId": "6db99b063a5d43ac",
+      "sourceTitle": "伏枥之间",
+      "link": "https://leehenry.top/posts/moment_memos/mms-vol09/",
+      "detailPath": "articles/74f94de63ada2ca0f0309fc0.json"
+    },
+    {
       "id": "2e604ff1965c67b60df645d7",
       "title": "挑战-响应中的一个严重安全问题",
       "summary": "挑战-响应的一种做法是，把一个随机字符串（ nonce ）发送给需要验证身份的人，并让对方使用自己的私钥对该字符串进行签名。然而，这会带来一个非常严重的安全问题。 例如，Alice 想要验证 Bob。但 Mallory 插在他们中间。于是会发生下面的事情： Alice 将挑战发送给被 Mallory 冒充的 ‘Bob’。 Mallory 冒充 Alice，将该挑战转发给 Bob，并请求返回响应。 Bob 把响应发回，然后 Mallory 再把响应转发回去。 在这种情况下，Mallory 已经成功向 Alice 冒充了 Bob，现在就可以进行 MITM 攻击了。 解决办法不是只把随机字符串当作挑战。一个好的挑战至少应包含以下内容： 验证者和被验证者的信任锚的标识信息（例如 OpenPGP 指纹）； 通道的标识信…",
@@ -615,50 +659,6 @@
       "sourceTitle": "Alice Hsu's Blog",
       "link": "https://alicehsu.blog/zh-tw/posts/2026/05/read-dream-of-the-red-chamber-1-to-20-chapters/",
       "detailPath": "articles/6eacb5909f845f7a2bbab135.json"
-    },
-    {
-      "id": "6e1f9ba768e0bb70e18397da",
-      "title": "用 Hugo 製作文章頁的公告功能！",
-      "summary": "已經是 5 月底了，作爲 BlogBlog.Club 的主持人，應該要出來提醒大家一下快到截止日了吧！ 但不可能每篇文章的最後都通篇提醒，因爲這是有時效性的內容呀！（前陣子整理吉他島嶼文章，花超多力氣把每一篇的過期內容刪掉…。） 因此，最後決定加入每篇文章中的公告功能！ 未來可能沒有公告時，會關閉此功能，因此還是圖片展示一下： 文章頁面的置頂公告 做法 # 建立 /layouts/partials/single-announcement.html ，內容爲： 建立核心功能核心 {{/* 判斷邏輯： 1. hugo.toml 必須啟用 single_announcement.enable 且 content 有內容 2. 該篇文章的 Front Matter 沒有設定 disable_notice = true…",
-      "image": "https://eddielv.com/musings/single-page-announcement/single-page-announcement.png",
-      "publishedAt": "2026-05-21T01:24:42Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/single-page-announcement/",
-      "detailPath": "articles/6e1f9ba768e0bb70e18397da.json"
-    },
-    {
-      "id": "9cf4e2bbbfabc5a1a292660e",
-      "title": "別放棄自己的家",
-      "summary": "科學家、發明家、美國建國元老之一、照片還被印在 100 元美金鈔票上的富蘭克林（Benjamin Franklin）說過一句名言：",
-      "image": "https://wiwi.blog/assets/images/100-note-73377e673668b50728f2b58ec1c67c6f.jpg",
-      "publishedAt": "2026-05-21T00:01:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/dont-abandon-your-home",
-      "detailPath": "articles/9cf4e2bbbfabc5a1a292660e.json"
-    },
-    {
-      "id": "759987b172c0bae7caa6422a",
-      "title": "健身（重訓）心得",
-      "summary": "分享我這陣子的重訓心得",
-      "image": "https://image.kalan.dev/d8fa6379-0b56-4c8b-7d5b-3e6b6680ab00/normal",
-      "publishedAt": "2026-05-21T00:00:00Z",
-      "sourceId": "538caf01ac3ab305",
-      "sourceTitle": "愷開的部落格",
-      "link": "https://blog.kalan.dev/random/training/",
-      "detailPath": "articles/759987b172c0bae7caa6422a.json"
-    },
-    {
-      "id": "fe369a43654cd962c597be1f",
-      "title": "完全不用 IG 2 個月後",
-      "summary": "自 2026-03-20， 完全脫離 IG 已經 2 個月，除了兩三次用電腦版 IG 來聯絡人，其他時候是完全沒有用！ 這篇文章來說說 Eddie 這 2 個月的身心變化，以及做了什麼。 外向 # 原本超內向，現在比較打開空間感，更與這個世界相融。 跟 主持人 、攝影師等等人都能聊得很開（完全不敢相信跟第一次見面的主持人聊那麼深入的話題），也會直接跟沒講過話的 店員像是老朋友一樣對話 。 寫這篇文章前一天的音響工作，剛好跟一個客人對到眼，結果突然眼睛黏住，彼此都盯著對方，我竟然直接燦笑，對方也回應我一個燦爛笑容，然後就接著忙彼此的事情。 這種事情，以前絕對不可能發生，會當沒對到眼直接撇開。 不焦慮 # 現在的確比較少焦慮了，之前會在自己刷了一晚上 IG、YT，或者沒營養的中國 AI 動漫後，感到非常焦慮。 雖…",
-      "image": null,
-      "publishedAt": "2026-05-20T23:28:02Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/escape-ig-2-month/",
-      "detailPath": "articles/fe369a43654cd962c597be1f.json"
     }
   ]
 }

@@ -14,7 +14,7 @@
     {
       "id": "95c99a3d40fdc19f73ad11f4",
       "title": "活用大寫鎖定鍵",
-      "summary": "活用 CapsLock 鍵，把本來的大寫鎖定功能改掉，換成按一下時是 Esc ，按住時是 Ctrl 。 以下是我設定的方式，都是很簡單就可以做到的。 Linux 安裝 keyd 打開 keyd 的 config file 設定檔 ，位置在 /etc/keyd/default.conf （沒有的話可以自己新增），並在裡面複製貼上這個： [ids] * [main] capslock = overload(control, esc) 啟動 keyd：打開終端機，執行以下啟動指令 sudo systemctl enable keyd --now （ enable 改 disable 就是關閉，如果某天改變心意想要改回來的話） 完成 以後如果還有改動設定檔的話，可以執行這個 reload 指令來讓設定檔套用 sudo…",
+      "summary": "活用 CapsLock 鍵，把本來的大寫鎖定功能改掉，換成按一下時是 Esc ，按住時是 Ctrl 。以下是我設定的方式，都是很簡單就可以做到的。 Linux 安裝 keyd 打開 keyd 的 config file 設定檔 ，位置在 /etc/keyd/default.conf （沒有的話可以自己新增），並在裡面複製貼上這個： [ids] * [main] capslock = overload(control, esc) 啟動 keyd：打開終端機，執行以下啟動指令 sudo systemctl enable keyd --now （ enable 改 disable 就是關閉，如果某天改變心意想要改回來的話） 完成 以後如果還有改動設定檔的話，可以執行這個 reload 指令來讓設定檔套用 sudo…",
       "image": null,
       "publishedAt": "2026-10-15T08:48:00Z",
       "sourceId": "859dc4f797795c39",

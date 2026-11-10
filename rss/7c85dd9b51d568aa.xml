@@ -12,7 +12,7 @@
 	<atom:link href="https://www.cnx-software.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.cnx-software.com/</link>
 	<description>Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC&#039;s, microcontrollers, processors, and more</description>
-	<lastBuildDate>Mon, 09 Nov 2026 14:23:49 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 10 Nov 2026 14:10:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,9 +28,69 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>LabWired allows engineers to test compiled firmware on simulated MCU boards (CPU and peripherals)</title>
+		<link>https://www.cnx-software.com/2026/11/10/labwired-allows-engineers-to-test-compiled-firmware-on-simulated-mcu-boards-cpu-and-peripherals/</link>
+					<comments>https://www.cnx-software.com/2026/11/10/labwired-allows-engineers-to-test-compiled-firmware-on-simulated-mcu-boards-cpu-and-peripherals/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Luc Aufranc (CNXSoft)]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 13:57:52 +0000</pubDate>
+				<category><![CDATA[Espressif]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Nordic Semi]]></category>
+		<category><![CDATA[Raspberry Pi]]></category>
+		<category><![CDATA[STMicro STM32]]></category>
+		<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[esp32]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[qa]]></category>
+		<category><![CDATA[risc-v]]></category>
+		<category><![CDATA[stm32]]></category>
+		<category><![CDATA[tools]]></category>
+		<guid isPermaLink="false">https://www.cnx-software.com/?p=179665</guid>
+
+					<description><![CDATA[<div><img width="720" height="405" src="https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-720x405.jpg" class="attachment-medium size-medium wp-post-image" alt="LabWired MCU board simulator" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-720x405.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-1200x675.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-300x169.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-768x432.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator-1536x864.jpg 1536w, https://www.cnx-software.com/wp-content/uploads/2026/11/LabWired-MCU-board-simulator.jpg 2048w" sizes="100vw" /></div>
+<p>Andrii Shylenko&#8217;s LabWired is an MIT-licensed MCU firmware simulation core that runs compiled firmware against modeled CPUs and peripherals, captures UART and bus output, register state, and supports repeatable checks in CI. The simulator works on Arm Cortex-M0+, Cortex-M3, Cortex-M4, Cortex-M7, Cortex-M33 cores, RISC-V architecutre, and Xtensa LX6 and LX7 (some ESP32 parts). The main benefit of the project is speeding up firmware testing since doing some on real boards is slow. The hardware must be ready, then the firmware must be flashed to the board each time you want to test it, and if something breaks, developers get a dark LED and no trace. If a firmware project needs to support multiple boards, this quickly adds up. The project is different from a CPU/MCU emulator for two main reasons: The full board is modeled, not only the chip. Sensors, displays, and bus devices are also simulated. So you can [...]</p>
+<p>The post <a href="https://www.cnx-software.com/2026/11/10/labwired-allows-engineers-to-test-compiled-firmware-on-simulated-mcu-boards-cpu-and-peripherals/">LabWired allows engineers to test compiled firmware on simulated MCU boards (CPU and peripherals)</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cnx-software.com/2026/11/10/labwired-allows-engineers-to-test-compiled-firmware-on-simulated-mcu-boards-cpu-and-peripherals/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>KiCad 10 now (unofficially) runs in a web browser or Android</title>
+		<link>https://www.cnx-software.com/2026/11/10/kicad-10-now-unofficially-runs-in-a-web-browser-or-android/</link>
+					<comments>https://www.cnx-software.com/2026/11/10/kicad-10-now-unofficially-runs-in-a-web-browser-or-android/#comments</comments>
+		
+		<dc:creator><![CDATA[Jean-Luc Aufranc (CNXSoft)]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 07:39:25 +0000</pubDate>
+				<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Testing]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[kicad]]></category>
+		<category><![CDATA[olimex]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[Reviews]]></category>
+		<category><![CDATA[tools]]></category>
+		<guid isPermaLink="false">https://www.cnx-software.com/?p=179476</guid>
+
+					<description><![CDATA[<div><img width="720" height="447" src="https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-720x447.jpg" class="attachment-medium size-medium wp-post-image" alt="KiCad 10 Web Browser Android" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-720x447.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-1200x744.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-300x186.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-768x476.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-1536x953.jpg 1536w, https://www.cnx-software.com/wp-content/uploads/2026/11/KiCad-10-Web-Browser-Android-2048x1270.jpg 2048w" sizes="100vw" /></div>
+<p>It&#8217;s now possible to run KiCad 10 directly in a web browser or as an Android app thanks to two separate open-source projects, unaffiliated with the official KiCad project. Let&#8217;s have a look at both. Ziro Designer/ZiroEDA &#8211; KiCad 10 in your web browser Akshay Rukade (ZiroEDA), an engineering student in India, ported KiCad 10.0.6 to the browser through the Ziro Designer/ZiroEDA Designer project. It&#8217;s a TypeScript translation of KiCad&#8217;s C++, kept file-for-file against the KiCad implementation, so the real schematic editor, PCB editor, interactive router, and ERC/DRC run in a browser tab and read and write normal KiCad projects. That means you can open local KiCad projects or designs hosted on GitHub directly in a web browser without having to install KiCad 10 itself on your computer, and it should also enable machines that do not natively support KiCad (e.g., RISC-V, Android tablet, iPad&#8230;) to run it. Akshay highlights [...]</p>
+<p>The post <a href="https://www.cnx-software.com/2026/11/10/kicad-10-now-unofficially-runs-in-a-web-browser-or-android/">KiCad 10 now (unofficially) runs in a web browser or Android</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://www.cnx-software.com/2026/11/10/kicad-10-now-unofficially-runs-in-a-web-browser-or-android/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>ControlBox Home Assistant solution is designed for floor heating systems, house lighting, 1-wire sensors (Crowdfunding)</title>
 		<link>https://www.cnx-software.com/2026/11/10/controlbox-home-assistant-solution-is-designed-for-floor-heating-systems-house-lighting-1-wire-sensors/</link>
-					<comments>https://www.cnx-software.com/2026/11/10/controlbox-home-assistant-solution-is-designed-for-floor-heating-systems-house-lighting-1-wire-sensors/#respond</comments>
+					<comments>https://www.cnx-software.com/2026/11/10/controlbox-home-assistant-solution-is-designed-for-floor-heating-systems-house-lighting-1-wire-sensors/#comments</comments>
 		
 		<dc:creator><![CDATA[Jean-Luc Aufranc (CNXSoft)]]></dc:creator>
 		<pubDate>Tue, 10 Nov 2026 04:00:41 +0000</pubDate>
@@ -53,13 +113,13 @@
 		<category><![CDATA[smart home]]></category>
 		<guid isPermaLink="false">https://www.cnx-software.com/?p=179373</guid>
 
-					<description><![CDATA[<div><img width="720" height="490" src="https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-720x490.jpg" class="attachment-medium size-medium wp-post-image" alt="ControlBox floor heating controller home assistant" style="margin-bottom: 10px;" decoding="async" fetchpriority="high" srcset="https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-720x490.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-1200x817.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-300x204.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-768x523.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant.jpg 1205w" sizes="100vw" /></div>
+					<description><![CDATA[<div><img width="720" height="490" src="https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-720x490.jpg" class="attachment-medium size-medium wp-post-image" alt="ControlBox floor heating controller home assistant" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-720x490.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-1200x817.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-300x204.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant-768x523.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/11/ControlBox-floor-heating-controller-home-assistant.jpg 1205w" sizes="100vw" /></div>
 <p>DomeCtrl&#8217;s ControlBox is a Raspberry Pi 5-based controller running Home Assistant and primarily designed for hydronic radiant floor heating (RFH) systems. It also supports lighting solutions and integration with energy devices such as solar collectors, photovoltaic installations, heat pumps, hydraulic pumps &#38; valves. The system controls thermal valves, hydraulic PWM pumps, and related RFH devices, and can read multiple 1-wire temperature sensors over long cables (&#62;6 m).  The ControlBox also features 32 LED-strip output channels, for up to 2 kW output. ControlBox specifications: Main board &#8211; Raspberry Pi 5 SBC with 4GB RAM Storage &#8211; 128GB NVMe SSD pre-loaded with Home Assistant Wired Communication Gigabit Ethernet on SBC Half-duplex RS485 communication bus (5 V) Wireless WiFi 5 and Bluetooth 5 on SBC W32-ESP01 header for control via ESPHome 433 MHz transmitter &#38; receiver modules for communication with wireless peripherals like &#8216;ClickOnClickOff&#8217;, curtain rails, screens, garage doors, etc. I/Os via terminal [...]</p>
 <p>The post <a href="https://www.cnx-software.com/2026/11/10/controlbox-home-assistant-solution-is-designed-for-floor-heating-systems-house-lighting-1-wire-sensors/">ControlBox Home Assistant solution is designed for floor heating systems, house lighting, 1-wire sensors (Crowdfunding)</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/11/10/controlbox-home-assistant-solution-is-designed-for-floor-heating-systems-house-lighting-1-wire-sensors/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+			<slash:comments>3</slash:comments>
 		
 		
 			</item>
@@ -189,7 +249,7 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/11/09/black-friday-deal-over-200-off-the-vzmore-ax9-max-mini-pc/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>5</slash:comments>
 		
 		
 			</item>
@@ -799,7 +859,7 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/11/02/banana-pi-bpi-m8-an-allwinner-a733-sbc-inspired-by-the-raspberry-pi-5-with-pcie-ffc-connector-ufs-module-socket/feed/</wfw:commentRss>
-			<slash:comments>4</slash:comments>
+			<slash:comments>5</slash:comments>
 		
 		
 			</item>
@@ -978,73 +1038,6 @@
 ]]></description>
 		
 					<wfw:commentRss>https://www.cnx-software.com/2026/10/30/26-banana-pi-bpi-rt2-wifi-6-router-board-features-realtek-rtl8198d-dual-core-mips-soc/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>$2600 LattePanda Sigma 2 single board server features 180 TOPS Intel Core Ultra X7 358H SoC for local AI applications</title>
-		<link>https://www.cnx-software.com/2026/10/29/2600-lattepanda-sigma-2-single-board-server-features-180-tops-intel-core-ultra-x7-358h-soc-for-local-ai-applications/</link>
-					<comments>https://www.cnx-software.com/2026/10/29/2600-lattepanda-sigma-2-single-board-server-features-180-tops-intel-core-ultra-x7-358h-soc-for-local-ai-applications/#comments</comments>
-		
-		<dc:creator><![CDATA[Jean-Luc Aufranc (CNXSoft)]]></dc:creator>
-		<pubDate>Thu, 29 Oct 2026 09:00:09 +0000</pubDate>
-				<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Intel Core]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Raspberry Pi]]></category>
-		<category><![CDATA[Ubuntu]]></category>
-		<category><![CDATA[Windows 11]]></category>
-		<category><![CDATA[10GbE]]></category>
-		<category><![CDATA[Arduino]]></category>
-		<category><![CDATA[artificial intelligence (AI)]]></category>
-		<category><![CDATA[micropython]]></category>
-		<category><![CDATA[oculink]]></category>
-		<category><![CDATA[panther lake]]></category>
-		<category><![CDATA[Raspberry Pi RP2350]]></category>
-		<category><![CDATA[server]]></category>
-		<category><![CDATA[Single Board Computer]]></category>
-		<category><![CDATA[ubuntu]]></category>
-		<category><![CDATA[windows 11]]></category>
-		<guid isPermaLink="false">https://www.cnx-software.com/?p=178269</guid>
-
-					<description><![CDATA[<div><img width="720" height="552" src="https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2-720x552.jpg" class="attachment-medium size-medium wp-post-image" alt="LattePanda Sigma 2" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2-720x552.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2-1200x921.jpg 1200w, https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2-300x230.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2-768x589.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/LattePanda-Sigma-2.jpg 1426w" sizes="100vw" /></div>
-<p>The LattePanda Sigma 2 is a compact single board server/computer powered by an Intel Core Ultra X7 358H Panther Lake-H processor with Intel Arc B390 graphics and a 50 TOPS NPU delivering up to 180 TOPS of combined performance for local AI workloads. The board features up to 64GB of LPDDR5X-8533 RAM, three M.2 M-Key slots, one M.2 E-Key slot, and an OCuLink port for storage, wireless, and accelerator expansion, as well as two Thunderbolt 4 ports, dual 10GbE, USB 3.2 Gen 2 and USB 2.0 ports, and HDMI 2.1, DisplayPort 2.1, and eDP 1.5 display interfaces. Key Specifications SoC &#8211; Intel Core Ultra X7 Processor 358H CPU – 16-core (4P + 8E + 4LPE) @ 1.9/1.5/1.5 GHz (base frequency), 4.8/3.5/3.5 GHz (Turbo frequency) Cache – 18 MB Intel Smart Cache GPU – 12-core Intel Arc B390 GPU @ 2.5 GHz up to 122 TOPS (INT8) AI accelerator – 50 [...]</p>
-<p>The post <a href="https://www.cnx-software.com/2026/10/29/2600-lattepanda-sigma-2-single-board-server-features-180-tops-intel-core-ultra-x7-358h-soc-for-local-ai-applications/">$2600 LattePanda Sigma 2 single board server features 180 TOPS Intel Core Ultra X7 358H SoC for local AI applications</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
-]]></description>
-		
-					<wfw:commentRss>https://www.cnx-software.com/2026/10/29/2600-lattepanda-sigma-2-single-board-server-features-180-tops-intel-core-ultra-x7-358h-soc-for-local-ai-applications/feed/</wfw:commentRss>
-			<slash:comments>2</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>BeagleConnect QuadESC 4-channel BLDC motor controller uses TI&#8217;s AM13E23019-based Torque module</title>
-		<link>https://www.cnx-software.com/2026/10/29/beagleconnect-quadesc-4-channel-bldc-motor-controller-ti-am13e23019-based-torque-module/</link>
-					<comments>https://www.cnx-software.com/2026/10/29/beagleconnect-quadesc-4-channel-bldc-motor-controller-ti-am13e23019-based-torque-module/#respond</comments>
-		
-		<dc:creator><![CDATA[Debashis Das]]></dc:creator>
-		<pubDate>Thu, 29 Oct 2026 00:00:24 +0000</pubDate>
-				<category><![CDATA[FreeRTOS]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Zephyr OS]]></category>
-		<category><![CDATA[beagleboard]]></category>
-		<category><![CDATA[edge ai]]></category>
-		<category><![CDATA[inyml]]></category>
-		<category><![CDATA[mcu]]></category>
-		<category><![CDATA[motor control]]></category>
-		<category><![CDATA[open source]]></category>
-		<category><![CDATA[openocd]]></category>
-		<category><![CDATA[texas instruments]]></category>
-		<category><![CDATA[zephyr]]></category>
-		<guid isPermaLink="false">https://www.cnx-software.com/?p=178776</guid>
-
-					<description><![CDATA[<div><img width="720" height="480" src="https://www.cnx-software.com/wp-content/uploads/2026/10/BeagleConnect-QuadESC-Carrier-and-BeagleConnect-Torque-SoM-720x480.jpg" class="attachment-medium size-medium wp-post-image" alt="BeagleConnect QuadESC Carrier and BeagleConnect Torque SoM" style="margin-bottom: 10px;" decoding="async" srcset="https://www.cnx-software.com/wp-content/uploads/2026/10/BeagleConnect-QuadESC-Carrier-and-BeagleConnect-Torque-SoM-720x480.jpg 720w, https://www.cnx-software.com/wp-content/uploads/2026/10/BeagleConnect-QuadESC-Carrier-and-BeagleConnect-Torque-SoM-300x200.jpg 300w, https://www.cnx-software.com/wp-content/uploads/2026/10/BeagleConnect-QuadESC-Carrier-and-BeagleConnect-Torque-SoM-768x512.jpg 768w, https://www.cnx-software.com/wp-content/uploads/2026/10/BeagleConnect-QuadESC-Carrier-and-BeagleConnect-Torque-SoM.jpg 1200w" sizes="100vw" /></div>
-<p>BeagleBoard.org has introduced the BeagleConnect QuadESC, an open-source 4-channel BLDC motor controller/carrier board built around the BeagleConnect Torque SoM. The SoM features TI&#8217;s 200 MHz AM13E23019 Arm Cortex-M33 microcontroller with a trigonometric math unit (TMU) and a TinyEngine neural-network accelerator for edge AI applications. The QuadESC carrier board supports four three-phase BLDC motor outputs, twelve current and twelve voltage sensing channels, four temperature sensors, and battery voltage monitoring. It also includes an eight-pin flight controller connector with DShot, telemetry, and current reporting signals, along with SWD debugging, a buzzer connector, and onboard power regulation. BeagleConnect Torque SoM The Torque SoM can also be integrated with custom carrier boards for robotics, motor control, and CAN-connected applications. It provides the processing, sensing, and communication interfaces, while external hardware supplies the motor power. Specifications: Main MCU– Texas Instruments AM13E23019 CPU core &#8211; Arm Cortex-M33 MCU @ 200 MHz with FPU Memory &#8211; 128KB [...]</p>
-<p>The post <a href="https://www.cnx-software.com/2026/10/29/beagleconnect-quadesc-4-channel-bldc-motor-controller-ti-am13e23019-based-torque-module/">BeagleConnect QuadESC 4-channel BLDC motor controller uses TI&#8217;s AM13E23019-based Torque module</a> appeared first on <a href="https://www.cnx-software.com">CNX Software - Embedded Systems News</a>.</p>
-]]></description>
-		
-					<wfw:commentRss>https://www.cnx-software.com/2026/10/29/beagleconnect-quadesc-4-channel-bldc-motor-controller-ti-am13e23019-based-torque-module/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

@@ -418,17 +418,17 @@
 &lt;li&gt;&lt;a href='https://www.videoproc.com/resource/how-to-install-ffmpeg.htm#install-ffmpeg-ubuntu'&gt;How to Install FFmpeg on Windows, Mac, Linux Ubuntu and Debian&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=-4&gt;检验安装&lt;/h3&gt;&lt;p&gt;这样我们就完成了两个依赖安装，打开一个终端，输入&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;--version
-ffmpeg&lt;span class="w"&gt; &lt;/span&gt;-version
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python --version
+ffmpeg -version
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;正常出现版本号，没有报错就说明安装成功了。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://vip1.loli.io/2022/05/10/fb2So4cVJLzOIZp.png#vwid=1392&amp;amp;vhei=849" alt="" /&gt;&lt;/p&gt;
 &lt;h2 id=spotdl&gt;安装 spotDL&lt;/h2&gt;&lt;p&gt;接下来的步骤就相对简单了，继续在终端中操作，只需要输入一行命令：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;spotdl
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install spotdl
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;后续需要升级 spotDL，只需要输入以下任意一行命令即可。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--upgrade&lt;span class="w"&gt; &lt;/span&gt;spotdl
-pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;-U&lt;span class="w"&gt; &lt;/span&gt;spotdl
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install --upgrade spotdl
+pip install -U spotdl
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=spotdl-1&gt;使用 spotDL&lt;/h2&gt;&lt;p&gt;如前所述，spotDL 的所有使用都发生在终端中，通过不同的指令调用不同的功能（如果不想记住，直接复制粘贴就好了）。&lt;/p&gt;
 &lt;h3 id=-5&gt;文件保存位置&lt;/h3&gt;&lt;p&gt;spotDL 默认的保存歌曲位置是在当前的工作目录下，可以在终端中使用 &lt;code&gt;pwd&lt;/code&gt; 命令查看，建议在开始下载前就先 &lt;code&gt;cd&lt;/code&gt; 到目标位置，避免一堆杂乱的文件塞满用户文件夹。&lt;/p&gt;
@@ -438,7 +438,7 @@ pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&g
 &lt;h3 id=-6&gt;下载歌曲、专辑、艺术家、播放清单&lt;/h3&gt;&lt;p&gt;下载 Spotify 的单曲、专辑、艺术家和播放清单是最简单的使用方式，只需先在 Spotify 中复制分享链接：&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://vip2.loli.io/2022/05/10/pdPNeYZC9GhDlQq.png#vwid=1352&amp;amp;vhei=888" alt="" /&gt;&lt;/p&gt;
 &lt;p&gt;再在终端中使用 &lt;code&gt;spotdl &amp;lt;url&amp;gt;&lt;/code&gt; 即可。例如我想下载这首 QUEEN，命令为：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl&lt;span class="w"&gt; &lt;/span&gt;https://open.spotify.com/track/5PimlePLQd8xdf7uKccHqS
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl https://open.spotify.com/track/5PimlePLQd8xdf7uKccHqS
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;同理，专辑、艺术家、播放清单的链接也可以依照 &lt;code&gt;spotdl &amp;lt;url&amp;gt;&lt;/code&gt; 的格式使用，如果想一次下载多个 URL 的内容，只需要在多个 URL 中加空格。&lt;/p&gt;
 &lt;p&gt;例如这里我下载两首歌曲：&lt;/p&gt;
@@ -446,15 +446,15 @@ pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&g
 &lt;p&gt;spotDL 默认使用 4 个线程进行下载，所以比起一首首下载，直接下载专辑、清单，或者多首歌曲一起下载的效率更高。&lt;/p&gt;
 &lt;p&gt;下载完成后，即可在当前的工作目录看到歌曲，如果歌曲没有问题，生成的缓存文件也可以删除。&lt;/p&gt;
 &lt;h3 id=-7&gt;通过歌曲名搜索并进行下载&lt;/h3&gt;&lt;p&gt;还有一种方法是通过歌曲名进行下载，尽管该方法不被推荐，但懒惰如我，对于一些不太容易重名的歌曲，偶尔使用一下也比较方便。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;[songQuery]&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl &lt;span class="s1"&gt;&amp;#39;[songQuery]&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;还是刚才的例子，下载 my little airport 的 QUEEN，只需要输入&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;my little airport - queen&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl &lt;span class="s1"&gt;&amp;#39;my little airport - queen&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;同样也可以下载成功。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://vip1.loli.io/2022/05/10/oMkL2YWT4Sj6xmd.png#vwid=1384&amp;amp;vhei=843" alt="" /&gt;&lt;/p&gt;
 &lt;h3 id=youtube-spotify&gt;指定 YouTube 视频和 Spotify 元信息下载&lt;/h3&gt;&lt;p&gt;为了应对识别失败的情况，如果 spotDL 没有正确识别歌曲（很少出现就是了），而我们又能够在 YouTube 上发现对应的歌曲，我们可以手动让 spotDL 下载 YouTube 上这首歌、转换成音频格式，并且写入 Spotify 上这首歌的元信息。使用方法是：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;YouTube url&amp;gt;|&amp;lt;Spotify url&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;spotdl &lt;span class="s2"&gt;&amp;quot;&amp;lt;YouTube url&amp;gt;|&amp;lt;Spotify url&amp;gt;&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;通过这种方法，歌曲的声音是来自指定的 YouTube 视频或音乐的，元信息来自指定的 Spotify 曲目。&lt;/p&gt;
 &lt;p&gt;还有许多其他的使用方法，包括指定下载线程、指定音频格式、恢复中断下载等，在项目的 &lt;a href='https://github.com/spotDL/spotify-downloader#usage'&gt;README&lt;/a&gt; 中也有了详细的介绍。这里不再赘述。&lt;/p&gt;

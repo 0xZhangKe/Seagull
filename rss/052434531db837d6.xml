@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-10T05:34:14+00:00</updated><author><name>Simon Willison</name></author><entry><title>Quoting Prompting Claude Fable 5.2</title><link href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" rel="alternate"/><published>2026-11-10T05:34:14+00:00</published><updated>2026-11-10T05:34:14+00:00</updated><id>https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-10T20:09:44+00:00</updated><author><name>Simon Willison</name></author><entry><title>llm-gemini 0.36</title><link href="https://simonwillison.net/2026/Nov/10/llm-gemini/" rel="alternate"/><published>2026-11-10T20:09:44+00:00</published><updated>2026-11-10T20:09:44+00:00</updated><id>https://simonwillison.net/2026/Nov/10/llm-gemini/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-gemini/releases/tag/0.36"&gt;llm-gemini 0.36&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Gemini 4 Carbon was announced &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"&gt;two weeks ago&lt;/a&gt; for "a subset of cyber defenders", but today it's &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"&gt;available to everyone else&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5).&lt;/p&gt;
+&lt;p&gt;Here are &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fe5bf860633fc12e8f926f305c4c3190c"&gt;three pelicans&lt;/a&gt; for the low, medium and high thinking efforts (it defaults to medium). This is the pelican I got for high:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A lovely pelican. Looks like it has a monocle on. Nice elegant sailor hat with a blue bow. Basket and fish. Funky but workable bicycle design. Pleasing use of gradients." src="https://static.simonwillison.net/static/2026/carbon-pelican.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;Gemini pelicans have all been great for a while now, so I also tested it out using Google's Antigravity IDE with a prompt I first tried &lt;a href="https://simonwillison.net/2026/Nov/10/yonkers-rises/"&gt;with Claude Fable 5.2 yesterday&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here's &lt;a href="https://static.simonwillison.net/static/2026/yonkers-mech-standalone.html"&gt;the HTML result&lt;/a&gt; (I had to prompt "build that into a standalone HTML file" to get a version with no external dependencies). I then screen-captured that as a video:&lt;/p&gt;
+&lt;video controls playsinline preload="none" width="1028" height="720" poster="https://static.simonwillison.net/static/2026/yonkers-carbon.jpg"&gt;
+  &lt;source src="https://static.simonwillison.net/static/2026/yonkers-carbon.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Huh, just saw this &lt;a href="https://www.youtube.com/watch?v=dNbkThtNzS8"&gt;on YouTube&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using Google Antigravity’s /swarm feature, Carbon built an open-world 3D game where you explore Google’s Mountain View campus as a pelican riding a GBike — coordinating subagents to model 3D assets in Blender from Omni and Nano Banana references, build the browser game in Three.js with WebGL shaders, and pair procedural Web Audio sound effects with Lyria music.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;lite-youtube videoid="dNbkThtNzS8" js-api="js-api"
+  title="Pelican Quest: Gemini 4 Carbon"
+  playlabel="Play: Pelican Quest: Gemini 4 Carbon"
+&gt; &lt;/lite-youtube&gt;&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/google"&gt;google&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="llm-release"/><category term="gemini"/><category term="llm"/><category term="google"/><category term="generative-ai"/><category term="ai"/><category term="llms"/><category term="pelican-riding-a-bicycle"/></entry><entry><title>Introducing Our Smallest, Most Efficient Model: Muse Ember</title><link href="https://simonwillison.net/2026/Nov/10/muse-ember/" rel="alternate"/><published>2026-11-10T07:28:21+00:00</published><updated>2026-11-10T07:28:21+00:00</updated><id>https://simonwillison.net/2026/Nov/10/muse-ember/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://research.meta.ai/blog/muse-ember"&gt;Introducing Our Smallest, Most Efficient Model: Muse Ember&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is &lt;em&gt;80x that price&lt;/em&gt; at $8/$40.&lt;/p&gt;
+&lt;p&gt;The pricing is a little less straightforward as prompts get longer, though. Luna, Ember, and Haiku all support up to a million input tokens, but they also all have a threshold after which the price goes up. Taking &lt;em&gt;that&lt;/em&gt; threshold into account Ember is priced between the two others:&lt;/p&gt;
+&lt;center&gt;&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Model&lt;/th&gt;
+      &lt;th&gt;Prompt size&lt;/th&gt;
+      &lt;th&gt;Input ($/M)&lt;/th&gt;
+      &lt;th&gt;Cached input&lt;/th&gt;
+      &lt;th&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;GPT-6 Luna&lt;/td&gt;
+      &lt;td&gt;≤272k&lt;/td&gt;
+      &lt;td&gt;$0.10&lt;/td&gt;
+      &lt;td&gt;$0.01&lt;/td&gt;
+      &lt;td&gt;$0.50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;272k&lt;/td&gt;
+      &lt;td&gt;$0.20&lt;/td&gt;
+      &lt;td&gt;$0.02&lt;/td&gt;
+      &lt;td&gt;$0.75&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;Muse Ember 1.0&lt;/td&gt;
+      &lt;td&gt;≤200k&lt;/td&gt;
+      &lt;td&gt;$0.10&lt;/td&gt;
+      &lt;td&gt;$0.004&lt;/td&gt;
+      &lt;td&gt;$0.50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;200k&lt;/td&gt;
+      &lt;td&gt;$0.30&lt;/td&gt;
+      &lt;td&gt;$0.012&lt;/td&gt;
+      &lt;td&gt;$1.50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;Claude Haiku 5.5&lt;/td&gt;
+      &lt;td&gt;≤100k&lt;/td&gt;
+      &lt;td&gt;$0.10&lt;/td&gt;
+      &lt;td&gt;$0.01&lt;/td&gt;
+      &lt;td&gt;$0.50&lt;/td&gt;
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;100k&lt;/td&gt;
+      &lt;td&gt;$0.50&lt;/td&gt;
+      &lt;td&gt;$0.05&lt;/td&gt;
+      &lt;td&gt;$2.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/center&gt;
+
+&lt;p&gt;But comparing price-per-token doesn't really make sense these days, when reasoning tokens mean that different models might use dramatically different numbers of tokens to solve the same problem.&lt;/p&gt;
+&lt;p&gt;For that, one measure that's useful is the Artificial Analysis. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Stacked bar chart from Artificial Analysis comparing a cost in dollars across six models, each bar split into four unlabeled stacked segments, sorted from lowest to highest total. Claude Haiku 5.5 (low): $0.04* total, bottom segment $0.02, three thin unlabeled segments above. GPT-6 Luna (non-reasoning): $0.07 total, bottom segment $0.06, thin unlabeled segments above. GPT-6 Luna (xhigh): $0.10 total, segments from bottom $0.07, $0.02, $0.02, plus a thin unlabeled top segment. Muse Ember (xhigh): $0.12 total, segments from bottom $0.06, $0.02, $0.02, plus a thin unlabeled top segment. Muse Ember (max): $0.14 total, segments from bottom $0.07, $0.03, $0.03, $0.02. Claude Haiku 5.5 (xhigh): $0.25* total, segments from bottom $0.14, $0.04, $0.05, $0.02. Anthropic bars are terracotta, OpenAI bars are dark gray, Meta bars are blue, each with the company logo beneath." src="https://static.simonwillison.net/static/2026/artificial-analysis-haiku-class.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;And even more useful than that is their Intelligence Index vs. Cost per Task chart, which shows the following for those three models:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Scatter plot from Artificial Analysis titled &amp;quot;Intelligence Index vs. Cost per Task&amp;quot;, plotting Artificial Analysis Intelligence Index (y-axis, 5 to 40) against cost per task in USD on a log scale (x-axis, $0.04 to $0.3), with a green &amp;quot;most attractive quadrant&amp;quot; in the upper left and a dotted Pareto line. Claude Haiku 5.5 (low)* scores about 19 at roughly $0.044. GPT-6 Luna (non-reasoning) scores about 9.5 at roughly $0.07. GPT-6 Luna (xhigh) scores about 23.5 at roughly $0.10. Muse Ember (xhigh) scores about 34 at roughly $0.12 and Muse Ember (max) about 36 at roughly $0.14, both on the Pareto line. Claude Haiku 5.5 (xhigh)* scores about 34.5 at roughly $0.25, well to the right of the Pareto line. Three unlabeled gray dots also sit on the Pareto line." src="https://static.simonwillison.net/static/2026/artificial-analysis-pareto.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;The Muse Ember models sit right on that Pareto line - the line at which you can only improve one dimension by giving up another. Meta call this out in their announcement:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It also sits on the efficiency frontier of the full Artificial Analysis leaderboard: no model scores higher for less per task.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(That grey dot on the Pareto line in the middle of the green area is GPT-6.1 Terra (low) - clearly I should be paying more attention to the Terra family!)&lt;/p&gt;
+&lt;p&gt;Muse Ember has six reasoning levels - minimal, low, medium, high, xhigh, and max - so I &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fc7666e8a54d84f724ac8121f9fa6cc4d"&gt;rendered six pelicans riding bicycles&lt;/a&gt;. The "high" reasoning level failed to return a full SVG, and the other SVGs were surprising in that the reasoning level didn't cleanly map to the visual quality of the response.&lt;/p&gt;
+&lt;p&gt;Here's the "max" one, but the others are worth a look too:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bicycle frame is OK, basket has fish, pelican has a weird blue hat on." src="https://static.simonwillison.net/static/2026/muse-ember.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;The Ember pelicans are comparable in quality to those &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https://gist.github.com/simonw/185cff7ff0b11379725abf7f78d5d2b2"&gt;I got from Muse Wonder&lt;/a&gt;, which is &lt;a href="https://www.llm-prices.com/#sel=muse-ember-1.0%2Cmuse-ember-1.0-200k%2Cmuse-wonder-1.0"&gt;40x the price&lt;/a&gt; of Muse Ember.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/meta"&gt;meta&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/artificial-analysis"&gt;artificial-analysis&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/muse"&gt;muse&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="meta"/><category term="llm-pricing"/><category term="llm-release"/><category term="artificial-analysis"/><category term="muse"/></entry><entry><title>Quoting Prompting Claude Fable 5.2</title><link href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" rel="alternate"/><published>2026-11-10T05:34:14+00:00</published><updated>2026-11-10T05:34:14+00:00</updated><id>https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/</id><summary type="html">
     &lt;blockquote cite="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"&gt;&lt;p&gt;Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...]&lt;/p&gt;
 &lt;p&gt;If you want the model to improve the structure as it works, say that the code is its own:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -12,7 +123,23 @@
 
 
 
-</summary><category term="prompt-engineering"/><category term="anthropic"/><category term="generative-ai"/><category term="ai"/><category term="llms"/><category term="claude-mythos-fable"/></entry><entry><title>llm-anthropic 0.31</title><link href="https://simonwillison.net/2026/Nov/9/llm-anthropic/" rel="alternate"/><published>2026-11-09T23:58:46+00:00</published><updated>2026-11-09T23:58:46+00:00</updated><id>https://simonwillison.net/2026/Nov/9/llm-anthropic/</id><summary type="html">
+</summary><category term="prompt-engineering"/><category term="anthropic"/><category term="generative-ai"/><category term="ai"/><category term="llms"/><category term="claude-mythos-fable"/></entry><entry><title>Yonkers Rises</title><link href="https://simonwillison.net/2026/Nov/10/yonkers-rises/" rel="alternate"/><published>2026-11-10T03:53:04+00:00</published><updated>2026-11-10T03:53:04+00:00</updated><id>https://simonwillison.net/2026/Nov/10/yonkers-rises/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Tool:&lt;/strong&gt; &lt;a href="https://tools.simonwillison.net/yonkers-rises"&gt;Yonkers Rises&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I &lt;a href="https://claude.ai/share/97443910-2e0a-4e17-9b9e-11d14d8ff65c"&gt;prompted Fable 5.2 Medium&lt;/a&gt; to:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It correctly deduced that "átomos" was a mobile keyboard typo for "stomps":&lt;/p&gt;
+&lt;video controls playsinline preload="none" width="572" height="360" poster="https://static.simonwillison.net/static/2026/yonkers.webp"&gt;
+  &lt;source src="https://static.simonwillison.net/static/2026/yonkers-large.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/three-js"&gt;three-js&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="three-js"/><category term="llms"/><category term="ai"/><category term="generative-ai"/><category term="claude-mythos-fable"/></entry><entry><title>llm-anthropic 0.31</title><link href="https://simonwillison.net/2026/Nov/9/llm-anthropic/" rel="alternate"/><published>2026-11-09T23:58:46+00:00</published><updated>2026-11-09T23:58:46+00:00</updated><id>https://simonwillison.net/2026/Nov/9/llm-anthropic/</id><summary type="html">
     
         &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-anthropic/releases/tag/0.31"&gt;llm-anthropic 0.31&lt;/a&gt;&lt;/p&gt;
         &lt;p&gt;Anthropic &lt;a href="https://www.anthropic.com/claude-fable-and-mythos-5-2"&gt;released Fable 5.2 and Mythos 5.2&lt;/a&gt; today. Fable 5.2 is currently &lt;a href="https://artificialanalysis.ai/models/claude-fable-5-2"&gt;ranked first on Artificial Analysis&lt;/a&gt;. Anthropic say it "solved two open problems in the physics of black holes", so clearly their internal benchmarks have become more ambitious!&lt;/p&gt;
@@ -30,10 +157,10 @@ llm -m claude-fable-5.2 "Generate an SVG of a pelican riding a bicycle"
 &lt;p&gt;I also used Fable 5.2 to &lt;a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/"&gt;help identify the source of a mysterious beep&lt;/a&gt;.&lt;/p&gt;
     
     
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;&lt;/p&gt;
     
 
-</summary><category term="llm"/><category term="anthropic"/><category term="claude"/><category term="generative-ai"/><category term="pelican-riding-a-bicycle"/><category term="ai"/><category term="llms"/><category term="claude-mythos-fable"/></entry><entry><title>Locating the source of a mysterious beep with Claude</title><link href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" rel="alternate"/><published>2026-11-09T23:57:21+00:00</published><updated>2026-11-09T23:57:21+00:00</updated><id>https://simonwillison.net/2026/Nov/9/mysterious-beeps/</id><summary type="html">
+</summary><category term="llm-release"/><category term="llm"/><category term="anthropic"/><category term="claude"/><category term="generative-ai"/><category term="pelican-riding-a-bicycle"/><category term="ai"/><category term="llms"/><category term="claude-mythos-fable"/></entry><entry><title>Locating the source of a mysterious beep with Claude</title><link href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" rel="alternate"/><published>2026-11-09T23:57:21+00:00</published><updated>2026-11-09T23:57:21+00:00</updated><id>https://simonwillison.net/2026/Nov/9/mysterious-beeps/</id><summary type="html">
     &lt;p&gt;Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started &lt;em&gt;intermittently beeping&lt;/em&gt;. The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build &lt;a href="https://github.com/simonw/beep-locator"&gt;Beep Locator&lt;/a&gt;, a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room.&lt;/p&gt;
 &lt;p&gt;Here's what Beep Locator looks like after it has been running for a while:&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://static.simonwillison.net/static/2026/beep-locator-ui.webp" alt="Screenshot of a web app that uses several phones, tablets and laptops as microphones to locate a mystery beeping sound in a room. The left column has an &amp;quot;Add a listener&amp;quot; panel with a QR code and join link, a &amp;quot;Controls&amp;quot; panel with buttons including &amp;quot;Calibrate&amp;quot;, &amp;quot;Test beep&amp;quot; and &amp;quot;It just beeped!&amp;quot; plus a &amp;quot;Listen for beeps&amp;quot; checkbox, and a &amp;quot;Mystery beep&amp;quot; note reading &amp;quot;3345 Hz · 3 confirmed · remembered across sessions&amp;quot;. Below that, a &amp;quot;Devices&amp;quot; list shows five color-coded listeners (Simon iPhone, New iPad, Old iPad, MacBook Pro, Surface Ultra), each marked &amp;quot;✓ mic working · ✓ speaker working&amp;quot;. The main area is a gridded map with a 1 m scale bar that shows the five devices as colored dots and earlier sounds as small timestamped markers. A pink shaded circle near the MacBook Pro is labeled &amp;quot;mystery beep · 2 hearings · within ~41 cm&amp;quot;, and beside it a dashed plus marker suggests &amp;quot;add a listener here? could tighten the mystery beep's position by ~12%&amp;quot;. Below the map, a &amp;quot;Mystery beep loudness warmer / colder&amp;quot; panel shows a bar for each device: Surface Ultra is loudest at &amp;quot;-6.0 dB ▲ +11.6 dB warmer&amp;quot;, with the note &amp;quot;about 6 dB louder means roughly half the distance&amp;quot;. At the bottom, a &amp;quot;Sounds located&amp;quot; table lists recent claps and beeps with coordinates, or the warning &amp;quot;arrival times are not physically possible (echo or a different sound?)&amp;quot;." style="max-width: 100%;" /&gt;&lt;/p&gt;
@@ -624,43 +751,4 @@ Don't be put off by the clickbait headline, this piece by Jacob Sansbury describ
 
 
 
-</summary><category term="game-design"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude"/><category term="coding-agents"/><category term="agentic-engineering"/><category term="claude-mythos-fable"/></entry><entry><title>Quoting Ben Hylak</title><link href="https://simonwillison.net/2026/Oct/29/ben-hylak/" rel="alternate"/><published>2026-10-29T14:06:27+00:00</published><updated>2026-10-29T14:06:27+00:00</updated><id>https://simonwillison.net/2026/Oct/29/ben-hylak/</id><summary type="html">
-    &lt;blockquote cite="https://twitter.com/benhylak/status/2115172657910120740"&gt;&lt;p&gt;every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath.&lt;/p&gt;
-&lt;p&gt;except for our product, of course. &lt;/p&gt;
-&lt;p&gt;in our product, customers love the ui and love us very much.&lt;/p&gt;
-&lt;p&gt;we're special that way.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://twitter.com/benhylak/status/2115172657910120740"&gt;Ben Hylak&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/model-context-protocol"&gt;model-context-protocol&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="model-context-protocol"/><category term="ai"/></entry><entry><title>Quoting Ted Sanders</title><link href="https://simonwillison.net/2026/Oct/28/ted-sanders/" rel="alternate"/><published>2026-10-28T23:23:21+00:00</published><updated>2026-10-28T23:23:21+00:00</updated><id>https://simonwillison.net/2026/Oct/28/ted-sanders/</id><summary type="html">
-    &lt;blockquote cite="https://news.ycombinator.com/item?id=50248124#50249160"&gt;&lt;p&gt;In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In general, models that are bigger will (a) be more performant / reliable, (b) cost more per token, and (c) have better recall of esoteric facts. As you note, our models are ordered:&lt;/p&gt;
-&lt;p&gt;Luna &amp;lt; Terra &amp;lt; Sol &amp;lt; Astra&lt;/p&gt;
-&lt;p&gt;[&lt;a href="https://news.ycombinator.com/item?id=50248124#50250804"&gt;...&lt;/a&gt;] These days, version number signifies a few things at once: the order of release, the relationship to other releases, and the magnitude of improvement. So something like 6.1 would indicate it was launched after 5.6, may share some similarities to other 6.1 models in terms of training data / personality (which is why it's not 5.7), and isn't a giant enough leap to merit the headlines and expectations that would come with a 7.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://news.ycombinator.com/item?id=50248124#50249160"&gt;Ted Sanders&lt;/a&gt;, explaining OpenAI's model naming conventions&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gpt"&gt;gpt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ted-sanders"&gt;ted-sanders&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="generative-ai"/><category term="gpt"/><category term="openai"/><category term="ai"/><category term="llms"/><category term="ted-sanders"/></entry><entry><title>GitHub Octoverse 2026</title><link href="https://simonwillison.net/2026/Oct/28/github-octoverse-2026/" rel="alternate"/><published>2026-10-28T16:45:23+00:00</published><updated>2026-10-28T16:45:23+00:00</updated><id>https://simonwillison.net/2026/Oct/28/github-octoverse-2026/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"&gt;GitHub Octoverse 2026&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-I'm at GitHub Universe today (GitHub gave  me a free ticket through their "GitHub Stars" program). EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Photo of a conference keynote stage: a wide curved screen shows three line charts side by side, with a speaker in a black sweater and dark jeans standing at its right edge beneath an overhead lighting rig. Each chart has a large colored headline number above it and a shaded line that runs low and nearly flat across the left side, then curves sharply upward on the right to end in a dot at its peak. Left, in green: &amp;quot;220M&amp;quot; &amp;quot;Merged PRs per month&amp;quot;, y-axis 0M, 50M, 100M, 150M, 200M. Middle, in magenta: &amp;quot;7.38B&amp;quot; &amp;quot;Commits per month&amp;quot;, y-axis 0B, 2B, 4B, 6B, with the most dramatic, almost vertical final spike. Right, in orange: &amp;quot;30.3M&amp;quot; &amp;quot;New repos per month&amp;quot;, y-axis 0M, 10M, 20M, 30M, with a bumpier, more gradual climb. All three share the x-axis labels '23, '24, '25, '26." src="https://static.simonwillison.net/static/2026/github-numbers.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;This is a pretty stark representation of the impact of agentic engineering on GitHub. In 2026, merged pull requests tripled in less than a year to 220 million per month. Commits more than tripled to 7.38 billion per month, with most of that increase in the second half of this year. New repository rate doubled this year, to 30.3 million per month.&lt;/p&gt;
-&lt;p&gt;The report includes new numbers by industry, and breaks out numbers for repositories that involve "interoperability or reverse engineering". The &lt;a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/#h-methodology"&gt;methodology section&lt;/a&gt; includes notes about how they did this: &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Top countries by pushes to public repositories, adjusted by profile location&lt;/strong&gt;. Pushes from each country were summed across the Octoverse year. To adjust for biases caused by VPN usage, LLM classification was used to extract the ISO 3166-1 alpha-2 code from the profiles of GitHub users who contributed pushes during this period [...]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Industry&lt;/strong&gt;. Public repositories created 2022 to 2026 were sorted into NAICS sectors by a fine-tuned multilingual embedding model using name, description, topics, and README, from random samples per year. [...]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Interoperability&lt;/strong&gt;. Counts public repositories created each year whose name, description, topics, or README mention interoperability or reverse engineering, or related terms, such as clean room implementation, drop-in replacement, or protocol re-implementation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/github"&gt;github&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/disclosures"&gt;disclosures&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="github"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="coding-agents"/><category term="disclosures"/><category term="agentic-engineering"/></entry></feed>
+</summary><category term="game-design"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude"/><category term="coding-agents"/><category term="agentic-engineering"/><category term="claude-mythos-fable"/></entry></feed>

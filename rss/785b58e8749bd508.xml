@@ -12,7 +12,7 @@
 	<atom:link href="https://www.schneier.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.schneier.com/</link>
 	<description></description>
-	<lastBuildDate>Mon, 09 Nov 2026 12:06:34 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 10 Nov 2026 12:02:46 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,36 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">182601345</site>	<item>
+		<title>New OpenSSH Vulnerability</title>
+		<link>https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html</link>
+					<comments>https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html#comments</comments>
+		
+		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 12:02:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[passwords]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+		<guid isPermaLink="false">https://www.schneier.com/?p=72898</guid>
+
+					<description><![CDATA[<p>It&#8217;s a <a href="https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/">bad one</a>, and it&#8217;s been in the code for a decade:</p>
+<blockquote><p>A newly disclosed flaw involving OpenSSH and musl, dubbed &#8220;*sshole,&#8221; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password.</p></blockquote>
+<p>&#8220;Oversized&#8221; means longer than 256 bytes. <a href="https://sshhole.com/">Details</a>.</p>
+<p>Slashdot <a href="https://it.slashdot.org/story/26/11/05/2140208/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts">thread</a>. And another news <a href="https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/">article</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s a <a href="https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/">bad one</a>, and it&#8217;s been in the code for a decade:</p>
+<blockquote><p>A newly disclosed flaw involving OpenSSH and musl, dubbed &#8220;*sshole,&#8221; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password.</p></blockquote>
+<p>&#8220;Oversized&#8221; means longer than 256 bytes. <a href="https://sshhole.com/">Details</a>.</p>
+<p>Slashdot <a href="https://it.slashdot.org/story/26/11/05/2140208/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts">thread</a>. And another news <a href="https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/">article</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">72898</post-id>	</item>
+		<item>
 		<title>AI Security</title>
 		<link>https://www.schneier.com/blog/archives/2026/11/ai-security.html</link>
 					<comments>https://www.schneier.com/blog/archives/2026/11/ai-security.html#comments</comments>
@@ -72,7 +102,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html/feed/</wfw:commentRss>
-			<slash:comments>25</slash:comments>
+			<slash:comments>29</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72854</post-id>	</item>
@@ -100,7 +130,7 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html/feed/</wfw:commentRss>
-			<slash:comments>13</slash:comments>
+			<slash:comments>18</slash:comments>
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72894</post-id>	</item>
@@ -262,39 +292,5 @@
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">72849</post-id>	</item>
-		<item>
-		<title>Bias in Qwen3-Coder Model</title>
-		<link>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html</link>
-					<comments>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html#comments</comments>
-		
-		<dc:creator><![CDATA[Bruce Schneier]]></dc:creator>
-		<pubDate>Mon, 26 Oct 2026 11:03:31 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[bias]]></category>
-		<category><![CDATA[China]]></category>
-		<category><![CDATA[hacking]]></category>
-		<guid isPermaLink="false">https://www.schneier.com/?p=72840</guid>
-
-					<description><![CDATA[<p>Interesting <a href="https://www.hirundo.io/blog/qwen3-coder-vulnerabilities">research</a>:</p>
-<blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing the model&#8217;s CCP alignment removes it.</p>
-<ul>
-<li>One word tilts the code against Americans. Ask for the app &#8220;for a US defense contractor&#8221; instead of &#8220;for a Chinese defense contractor&#8221;, and Qwen3-Coder is 19% more likely to hand back an app that can be hacked.
-...</li></ul></blockquote>]]></description>
-										<content:encoded><![CDATA[<p>Interesting <a href="https://www.hirundo.io/blog/qwen3-coder-vulnerabilities">research</a>:</p>
-<blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing the model&#8217;s CCP alignment removes it.</p>
-<ul>
-<li>One word tilts the code against Americans. Ask for the app &#8220;for a US defense contractor&#8221; instead of &#8220;for a Chinese defense contractor&#8221;, and Qwen3-Coder is 19% more likely to hand back an app that can be hacked.
-<li>Hong Kong&#8217;s democracy movement gets apps that leak. Apps built for a Hong Kong democracy group were 28% more likely to let any user read everyone else&#8217;s secrets.
-<li>Asking for secure code didn&#8217;t help. With a security instruction in the prompt, the US contractor&#8217;s apps were 27% more likely to be hackable than a neutral customer&#8217;s.
-<li>Westernized Qwen3-Coder closed all three gaps. After Hirundo removed the model&#8217;s CCP alignment, none of the three gaps remained, and on ten other coding tasks it built working apps as often as the original. It is available on <a href="https://huggingface.co/hirundo-io/Qwen3-Coder-30B-A3B-Instruct-Westernized">Hugging Face</a>.</ul>
-</blockquote>
-<p>I would like more details on how the bias was removed.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html/feed/</wfw:commentRss>
-			<slash:comments>15</slash:comments>
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">72840</post-id>	</item>
 	</channel>
 </rss>

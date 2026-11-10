@@ -8,7 +8,7 @@
     <language>zh-tw</language>
 <managingEditor>eddielv@proton.me (Eddie Lv 呂英全)</managingEditor>
 <webMaster>eddielv@proton.me (Eddie Lv 呂英全)</webMaster>    
-    <lastBuildDate>Mon, 09 Nov 2026 20:31:31 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 10:15:55 +0800</lastBuildDate>
     
         <atom:link href="https://eddielv.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -145,6 +145,168 @@
 
 &lt;p&gt;打完回顧，發現這篇有點沒重點，真的是流水帳，如果你看到這很謝謝你！&lt;/p&gt;
 &lt;p&gt;只是有點感嘆「姐姐生了三個小孩，最大的已經小一」、「好像有什麼事但也沒辦法講，感覺他們無法懂我現在遇到的事」。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>生成一輩子不會失效的 QR-Code</title>
+      <link>https://eddielv.com/articles/gen-qr-code/</link>
+      <pubDate>Tue, 10 Nov 2026 10:15:55 +0800</pubDate>
+      <guid>https://eddielv.com/articles/gen-qr-code/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;
+  前言
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e5%89%8d%e8%a8%80&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;前些日子，與人交換聯絡方式，&lt;a href=&#34;https://eddielv.com/musings/bio-link/&#34;&gt;手機背後的 QR-Code&lt;/a&gt; 竟然失效了。&lt;/p&gt;
+&lt;p&gt;這東西明明就是圖片直接轉網址的，表示我當時用的網站服務，有偷偷給我轉址，並且在不明原因下移除了該轉址。&lt;/p&gt;
+&lt;p&gt;學會教訓，還是得在本地端把事情做好，不依賴第三方網路服務。&lt;/p&gt;
+&lt;h2 id=&#34;qr-code-生成工具&#34;&gt;
+  QR-Code 生成工具
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#qr-code-%e7%94%9f%e6%88%90%e5%b7%a5%e5%85%b7&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;h3 id=&#34;安裝-qrencode&#34;&gt;
+  安裝 qrencode
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e5%ae%89%e8%a3%9d-qrencode&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;平臺爲 Linux Mint 使用 &lt;code&gt;apt&lt;/code&gt; 安裝 &lt;code&gt;qrencode&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install qrencode
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;生成-qr-code&#34;&gt;
+  生成 QR-Code
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e7%94%9f%e6%88%90-qr-code&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;qrencode -l H -o qr.png &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://eddielv.com/connect/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;-l H：設定錯誤修正等級為最高，這讓你可以在中間放入 icon 也不影響掃描。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;-o qr.png：設定輸出的檔案爲 qr.png，可以換成自己想要的檔名，或其他圖片格式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;雙引號內，放入 QR code 對應的網址。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在終端機當前位置能找到已生成的 QR-code 圖片。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;div class=&#34;media-wrapper&#34; style=&#34;text-align: center; margin: 1.5rem 0;&#34;&gt;
+  &lt;a href=&#34;https://eddielv.com/articles/gen-qr-code/qr.png&#34; 
+     data-fancybox 
+      data-caption=&#34;生成的 qr.png&#34; &gt;
+    
+    &lt;img src=&#34;https://eddielv.com/articles/gen-qr-code/qr.png&#34; 
+         alt=&#34;生成的 qr.png&#34; 
+         class=&#34;video-thumb&#34; 
+         loading=&#34;lazy&#34; 
+         onerror=&#34;this.style.display=&#39;none&#39;;&#34; /&gt;
+  &lt;/a&gt;
+  
+  
+    &lt;span class=&#34;img-caption&#34; style=&#34;display: block; font-size: 0.85rem; color: #888; margin-top: 0.5rem;&#34;&gt;
+      生成的 qr.png
+    &lt;/span&gt;
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;到這裡就已經生成完畢，而我還想在中心加入圖片，因此還需要合成。&lt;/p&gt;
+&lt;h2 id=&#34;放入中央-icon&#34;&gt;
+  放入中央 icon
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e6%94%be%e5%85%a5%e4%b8%ad%e5%a4%ae-icon&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;h3 id=&#34;安裝-imagemagick&#34;&gt;
+  安裝 imagemagick
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e5%ae%89%e8%a3%9d-imagemagick&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;用 &lt;code&gt;apt&lt;/code&gt; 安裝 &lt;code&gt;imagemagick&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install imagemagick&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;合成圖片&#34;&gt;
+  合成圖片
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e5%90%88%e6%88%90%e5%9c%96%e7%89%87&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;首先，將 QR-code 與 icon 放到同個資料夾下，並在終端機中進入該資料夾。&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;media-wrapper&#34; style=&#34;text-align: center; margin: 1.5rem 0;&#34;&gt;
+  &lt;a href=&#34;https://eddielv.com/articles/gen-qr-code/icon.png&#34; 
+     data-fancybox 
+      data-caption=&#34;示範的 icon&#34; &gt;
+    
+    &lt;img src=&#34;https://eddielv.com/articles/gen-qr-code/icon.png&#34; 
+         alt=&#34;示範的 icon&#34; 
+         class=&#34;video-thumb&#34; 
+         loading=&#34;lazy&#34; 
+         onerror=&#34;this.style.display=&#39;none&#39;;&#34; /&gt;
+  &lt;/a&gt;
+  
+  
+    &lt;span class=&#34;img-caption&#34; style=&#34;display: block; font-size: 0.85rem; color: #888; margin-top: 0.5rem;&#34;&gt;
+      示範的 icon
+    &lt;/span&gt;
+  
+&lt;/div&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;示範是將 QR-Code 命名爲 qr.png，icon 命名爲 icon.png，請以自身情況修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;convert qr.png &lt;span style=&#34;color:#ae81ff&#34;&gt;\(&lt;/span&gt; icon.png -resize 20% &lt;span style=&#34;color:#ae81ff&#34;&gt;\)&lt;/span&gt; -gravity center -composite qr_with_icon.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;( icon.png -resize 20% )：先將你的 icon 獨立縮放到原圖的 20% 大小。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;每個人圖片檔案不一樣大，可以自己調整百分比，記得掃描測試，確認能成功讀取。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-gravity center -composite：將縮放好的 icon 貼到背景 qr.png 的正中心。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;div class=&#34;media-wrapper&#34; style=&#34;text-align: center; margin: 1.5rem 0;&#34;&gt;
+  &lt;a href=&#34;https://eddielv.com/articles/gen-qr-code/qr_with_icon.png&#34; 
+     data-fancybox 
+      data-caption=&#34;最終成果！&#34; &gt;
+    
+    &lt;img src=&#34;https://eddielv.com/articles/gen-qr-code/qr_with_icon.png&#34; 
+         alt=&#34;最終成果！&#34; 
+         class=&#34;video-thumb&#34; 
+         loading=&#34;lazy&#34; 
+         onerror=&#34;this.style.display=&#39;none&#39;;&#34; /&gt;
+  &lt;/a&gt;
+  
+  
+    &lt;span class=&#34;img-caption&#34; style=&#34;display: block; font-size: 0.85rem; color: #888; margin-top: 0.5rem;&#34;&gt;
+      最終成果！
+    &lt;/span&gt;
+  
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>受傷與暴食</title>
+      <link>https://eddielv.com/musings/gluttony-after-hurt/</link>
+      <pubDate>Tue, 10 Nov 2026 09:43:02 +0800</pubDate>
+      <guid>https://eddielv.com/musings/gluttony-after-hurt/</guid>
+      <description>&lt;p&gt;「好餓哦&amp;hellip;。」&lt;/p&gt;
+&lt;p&gt;這幾天一直無限掉入肚子餓的狀態，原先明明很耐餓，一天只吃一餐都覺得不會餓的人。&lt;/p&gt;
+&lt;p&gt;當天車禍後，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;早上八點多在宴會廳吃了早餐；&lt;/li&gt;
+&lt;li&gt;中午吃了兩份便當（活動公司有多訂！）&lt;/li&gt;
+&lt;li&gt;下午大概四點多開始餓&lt;/li&gt;
+&lt;li&gt;五點多下班後吃了便當&lt;/li&gt;
+&lt;li&gt;七點多吃了牛肉麵、水餃、筒仔米糕（剛好飽而已）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;隔天&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上午十一點吃微波健康餐 + 2 顆茶葉蛋&lt;/li&gt;
+&lt;li&gt;下午二點吃便當&lt;/li&gt;
+&lt;li&gt;下午四點吃蛋包飯 + 10 元飯&lt;/li&gt;
+&lt;li&gt;晚上六點吃牛肉麵、水餃、筒仔米糕&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在每一餐結束後，幾乎就是躺著休息睡覺，形同尼特族般的生活，躺一躺肚子就又餓了。&lt;/p&gt;
+&lt;p&gt;令我意外的是，車禍當天腳還一跛一跛地，隔天已經能正常走路，只有刻意彎特定角度時才會痛。不確定這是不是當下冰敷的功勞，又或者是馬上吃消炎藥、擦消炎藥，甚至是一直吃 + 睡覺的關係。&lt;/p&gt;
+&lt;p&gt;不說了，好餓，得出門覓食了（但又好想睡覺哦 QQ）。&lt;/p&gt;
 </description>
     </item>
     
@@ -25354,11 +25516,11 @@ Linux mint 則設定爲用戶端。&lt;/p&gt;
       <link>https://eddielv.com/articles/men-explain-things-to-me/</link>
       <pubDate>Fri, 03 Apr 2026 07:51:59 +0800</pubDate>
       <guid>https://eddielv.com/articles/men-explain-things-to-me/</guid>
-      <description>&lt;h1 id=&#34;hahahugoshortcode75s0hbhb男言之癮-men-explain-things-to-me&#34;&gt;
+      <description>&lt;h1 id=&#34;hahahugoshortcode76s0hbhb男言之癮-men-explain-things-to-me&#34;&gt;
   
 
 &lt;img src=&#34;https://eddielv.com/pixel-art/book_blue16_bk32.png&#34; style=&#34;height:1.5em; vertical-align:middle; display:inline-block;&#34;&gt;《男言之癮 Men Explain Things to Me》：
-  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#hahahugoshortcode75s0hbhb%e7%94%b7%e8%a8%80%e4%b9%8b%e7%99%ae-men-explain-things-to-me&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#hahahugoshortcode76s0hbhb%e7%94%b7%e8%a8%80%e4%b9%8b%e7%99%ae-men-explain-things-to-me&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
 &lt;/h1&gt;
 
 &lt;p&gt;——那些對女人說教的男人&lt;/p&gt;

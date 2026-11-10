@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "02e7ad5e3e0286dc419629f6",
+      "title": "New OpenSSH Vulnerability",
+      "summary": "It’s a bad one , and it’s been in the code for a decade: A newly disclosed flaw involving OpenSSH and musl, dubbed “*sshole,” allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured to block password authentication simply by entering an oversized password. “Oversized” means longer than 256 bytes. Details . Slashdot…",
+      "image": null,
+      "publishedAt": "2026-11-10T12:02:38Z",
+      "sourceId": "785b58e8749bd508",
+      "sourceTitle": "Schneier on Security",
+      "link": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+      "detailPath": "articles/02e7ad5e3e0286dc419629f6.json"
+    },
+    {
       "id": "d5a85afc1cb728d7c985a4b3",
       "title": "AI Security",
       "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for researchers to understand which one they…",
@@ -98,17 +109,6 @@
       "sourceTitle": "Schneier on Security",
       "link": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
       "detailPath": "articles/f048c78e50c82273a1da8c4e.json"
-    },
-    {
-      "id": "e190f16c82fe21bb785cceaa",
-      "title": "Bias in Qwen3-Coder Model",
-      "summary": "Interesting research : TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model’s weights, and that removing the model’s CCP alignment removes it. One word tilts the c…",
-      "image": null,
-      "publishedAt": "2026-10-26T11:03:31Z",
-      "sourceId": "785b58e8749bd508",
-      "sourceTitle": "Schneier on Security",
-      "link": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-      "detailPath": "articles/e190f16c82fe21bb785cceaa.json"
     }
   ]
 }

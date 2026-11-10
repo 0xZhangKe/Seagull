@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "9c7284383321c085048d5062",
+      "title": "好和弦書習題解答",
+      "summary": "一位讀者跟我提到，我的好和弦實體書裡面有一些練習題，但我沒有附解答，所以寫完後不知道自己的答案對不對。",
+      "image": "https://wiwi.blog/assets/images/chord-5ec41ff37666b47bb8568a5a8dfe3a07.png",
+      "publishedAt": "2024-09-19T19:23:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/nicechord-book-answers",
+      "detailPath": "articles/9c7284383321c085048d5062.json"
+    },
+    {
+      "id": "76fe85baf4138874b11040e7",
+      "title": "Android源码分析：Window与Activity与View的关联",
+      "summary": "Activity是四大组件中和UI相关的那个，应用开发过程中，我们所有的界面基本都需要使用Activity才能去渲染和绘制UI，即使是ReactNative，Flutter这种跨平台的方案，在Android中，也需要一个Activity来承载。但是我们的Activity内我们设置的View又是怎么渲染到屏幕上的呢，这背后又有WindowManager和SurfaceFlinger来进行工作。本文就来看看WindowManger如何管理Window，以及Window如何与Activity产生关系的呢。 Activity与Window的初见 Activity的创建是在 ActivityThread 的 performLaunchActivity 中，这里会创建要启动的Activity，并且会调用Activity的…",
+      "image": "https://img.isming.me/image/activity-wms-relation.png",
+      "publishedAt": "2024-09-19T13:30:25Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-19-activity-wms-bind/?utm_source=rss",
+      "detailPath": "articles/76fe85baf4138874b11040e7.json"
+    },
+    {
+      "id": "4c74f6cdf86b029a7a76850c",
+      "title": "如何認識女生",
+      "summary": "今天要來回一個匿名讀者的來信：",
+      "image": null,
+      "publishedAt": "2024-09-19T11:24:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/how-to-meet-new-girls",
+      "detailPath": "articles/4c74f6cdf86b029a7a76850c.json"
+    },
+    {
+      "id": "daff7036996d7a70d99de0a1",
+      "title": "This PC",
+      "summary": "微軟的官方網站，認證了我說的話：「你的電腦不是你的電腦」。因為：",
+      "image": "https://wiwi.blog/assets/images/this-pc-02e5cacf0719569433f2a84157bec2bf.jpg",
+      "publishedAt": "2024-09-18T17:15:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/this-pc",
+      "detailPath": "articles/daff7036996d7a70d99de0a1.json"
+    },
+    {
+      "id": "47f83c91af23d7a58f176ae0",
+      "title": "回皖北农村观察随记",
+      "summary": "老家在皖北农村，一年回不了几次，上次过年回去的，这次中秋想着回家看看老爹，就回去看了看。正好也记录一下回去的所看所感。 人 中秋节的节味是越来越淡了，因为大部分的人都在外打工，现在这个节点跟过年比农村依然很冷清。但是跟平时比还人还要多一点点，因为有些住在县城的人，中秋这天还跑回来过节了。 现在大部分人家里的地都承包出去了，还能干活的人都出去打工了。留下来的只剩老弱病，以及带着小孩上学的部分发家庭。 农村的教育 我们村里的小学已经关闭好多年了，附近几个村的基本也都关的差不多了。我以前上的镇子上的初中，以前人多的时候一个年级差不多上千人，现在在那边上学的小妹说，一个年级也就200多人。我想原因是有两方面，一是不少像我这样的，在外地生活的，家里小孩也就不在当地就学了。另一方面是，县城的教育扩张，县城内新建了不少学校…",
+      "image": "https://img.isming.me/image/IMG_20240915_131753.jpg",
+      "publishedAt": "2024-09-18T14:05:48Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2024-09-18-village-survey/?utm_source=rss",
+      "detailPath": "articles/47f83c91af23d7a58f176ae0.json"
+    },
+    {
       "id": "988cdd1eccd74e5506a75a8e",
       "title": "Debug 日志：eCapture GH-604",
       "summary": "Debug 日志系列第二篇，eCapture 的 GH-604， 一个和 Go， Glibc，静态编译相关的问题 太长不看版：在 eCapture 中，由于在静态链接时 glibc 版本的差异，导致在 Ubuntu 下编译的二进制会在特定发行版上 Segment fault",
@@ -604,61 +659,6 @@
       "sourceTitle": "刑辩人在路上",
       "link": "https://xingbianren.cn/post/257.html",
       "detailPath": "articles/18cb9db6218d5559b97716d1.json"
-    },
-    {
-      "id": "e59e9872354e13095e04ad11",
-      "title": "一言“蔽”之",
-      "summary": "蔽，‌原意为遮蔽，‌引申为概括。‌这里我想暂时抛开引申义的“概括”，就单单使用遮蔽、蒙蔽之义来解释该词，并由此 […]",
-      "image": "https://i0.wp.com/cyrus19.cc/wp-content/uploads/2024/09/IMG_5195.jpeg?resize=1080%2C1809&ssl=1",
-      "publishedAt": "2024-09-02T08:58:38Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1084",
-      "detailPath": "articles/e59e9872354e13095e04ad11.json"
-    },
-    {
-      "id": "00f5d3c2972fa7e7d9324a78",
-      "title": "我目前使用的AI服务",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-09-02T07:29:13Z",
-      "sourceId": "f6c280e30d8989ed",
-      "sourceTitle": "可可托海没有海",
-      "link": "https://mp.weixin.qq.com/s/AnhyfbXtiq11rM5XQbQwXQ",
-      "detailPath": "articles/00f5d3c2972fa7e7d9324a78.json"
-    },
-    {
-      "id": "fc3acee6dbd9730a62a15f87",
-      "title": "八月月报-折腾不停歇",
-      "summary": "8月将结束，秋天已经到来，酷暑还未结束。把小朋友送到学校，才有时间又来回顾一个月。如题所示，博客折腾了许多，也体验了一下黑神话，详细见下文。 黑神话：悟空 悟空上线，全网热议，每个群里都有人在讨论，似乎身边的每个人都在玩。对于这种现象级的国产三A大作，肯定要支持一下。然而，却没时间玩，这十来天也只玩了一小会，牯护院打过去了，广智打了十几把还没过，就暂时搁置下来了。之前电脑上的游戏主要是玩回合制的比较多，这个类型的游戏之前很少，种种原因，觉得难度还挺大。 游戏画面精美，里面的碑文都能够清晰可见汉字，值得夸赞。各种建筑据说是按照很多中国的古建筑建模，即使是我这种游戏手残党也值得进入游戏游山玩水。 玩水 这个月带着娃出去完了两趟，一次是莫干山玩水，浙江多山水，适宜夏季游玩，高温天泡在水里清凉许多，详见之前 博文 。…",
-      "image": "https://img.isming.me/photo/IMG_20240901_162335.jpg",
-      "publishedAt": "2024-09-02T05:39:58Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2024-09-02-august-summary/?utm_source=rss",
-      "detailPath": "articles/fc3acee6dbd9730a62a15f87.json"
-    },
-    {
-      "id": "65a1d3c6396278a8720298a9",
-      "title": "NVIDIA 的浪漫",
-      "summary": "NVIDIA RTX 4000！而且是兩張！！",
-      "image": "https://wiwi.blog/assets/images/rtx4000x2-d1b7dc2c781458c36344f18ecf757053.jpg",
-      "publishedAt": "2024-09-02T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/two-rtx-4000s",
-      "detailPath": "articles/65a1d3c6396278a8720298a9.json"
-    },
-    {
-      "id": "dc35e525e9bb8bb7147b1647",
-      "title": "2024 Week 35",
-      "summary": "生活碎片 影院看《异形·夺命舰》，非常纯粹的恐怖片，很刺激；补了前作中的两部，看了系列的解说，感觉并不是我喜欢的类型。 看完了《边水往事》，二十多集，一个晚上加一个上午刷完了，非常有早期看《盗墓笔记》的感觉。 三分化力量训练，练二头时把肌肉拉伤了…停了大半周恢复。 测了体脂，27%，比我想象的高太多了。减肥了这么久似乎只减了体重，怎么减脂，陷入了迷茫期。",
-      "image": null,
-      "publishedAt": "2024-09-02T00:00:00Z",
-      "sourceId": "95e525ddc69ab5ef",
-      "sourceTitle": "金色河流",
-      "link": "https://goldenriver.site/posts/2024-week-35/",
-      "detailPath": "articles/dc35e525e9bb8bb7147b1647.json"
     }
   ]
 }

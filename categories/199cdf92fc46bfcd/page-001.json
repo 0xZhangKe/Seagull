@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "a90c052c842df8c488604dfb",
+      "title": "別吃消炎藥",
+      "summary": "這次 受傷 ，我做了一件錯事，那就是在第一時間吃了消炎藥，且持續吃了三天，還同時在患部擦了消炎凝膏。 韌帶、肌肉受傷時，發炎反應會招募巨噬細胞來清理受損組織，還能發訊號開始重建傷害部位。 吃了消炎藥等於關閉這一切機制，因此在急性期是不可吃消炎藥的，若要止痛，只能吃無消炎功能的止痛藥。 有趣的是，到骨科照 X-ray 確認骨頭沒事之後，醫師只開了消炎藥，而我當下卻不應該吃消炎藥。 再更有趣的是，很多骨科喜歡推銷 PRP，那是一種促進發炎反應的藥劑，能夠加速癒合，但同時也會更痛（發炎更劇烈了）。若推銷 PRP 失敗後，就會開消炎藥了，是兩種極端的處方。",
+      "image": null,
+      "publishedAt": "2026-11-10T11:26:18Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/dont-eat-anti-inflammatory-drugs/",
+      "detailPath": "articles/a90c052c842df8c488604dfb.json"
+    },
+    {
       "id": "e52c3bbabf16d14cc29ee9d9",
       "title": "生成一輩子不會失效的 QR-Code",
       "summary": "前言 # 前些日子，與人交換聯絡方式， 手機背後的 QR-Code 竟然失效了。 這東西明明就是圖片直接轉網址的，表示我當時用的網站服務，有偷偷給我轉址，並且在不明原因下移除了該轉址。 學會教訓，還是得在本地端把事情做好，不依賴第三方網路服務。 QR-Code 生成工具 # 安裝 qrencode # 平臺爲 Linux Mint 使用 apt 安裝 qrencode 。 sudo apt update sudo apt install qrencode 生成 QR-Code # qrencode -l H -o qr.png \"https://eddielv.com/connect/\" -l H：設定錯誤修正等級為最高，這讓你可以在中間放入 icon 也不影響掃描。 -o qr.png：設定輸出的檔案爲 q…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/exactly-tired/",
       "detailPath": "articles/599bcb11677c9432f807b556.json"
-    },
-    {
-      "id": "dd3825effb1056f9a54e6532",
-      "title": "催更與壓力",
-      "summary": "催更是一把雙面刃，讓創作者感到被需要，也同時讓創作者感到壓力。 在幾年前做 Youtube 教學影片時，被好多人說影片做很好，但怎麼不更新了。 當時製作影片非常疲憊，雖然被高度肯定，但同時心中也會有另一種聲音： 自己似乎沒有能力讓每一部影片都是這種品質。 於是更難產出新影片了。（後來得知這叫 冒牌者症候群 ） 看到一個好久沒更新的 Blog，我沒想著要催更，純粹寄信關心一下，沒想到就更新了，才發現自己該不會無意識催更了吧。 但仔細回想，當自己沒有期待對方產出新作品時，對方感到的被需要，是建立在已完成的「成果」之上；但若是真正的催更，對方感到的被需要，是演變成須要努力才能達成的「壓力」。",
-      "image": null,
-      "publishedAt": "2026-10-04T20:41:37Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/nag-update-and-pressure/",
-      "detailPath": "articles/dd3825effb1056f9a54e6532.json"
     }
   ]
 }

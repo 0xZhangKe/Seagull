@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "3f28de578e6437a6ba9dc6a8",
+      "title": "使用微软语音合成API批量合成拆分的音节",
+      "summary": "使用微软语音合成API批量合成拆分的音节 背景 继 使用xpath爬取字典 中的音节划分之后，后续还有任务是要制作拆分后的音节的读音。 如果找真人录音的话，成本比较高，而且需要反复纠正录音师许多发音细节（例如避免句重音和并列短语造成的音韵变化），会消耗很多时间和精力。成本最低的办法是使用语音合成的软件或者API批量生成。具体的实现办法有很多，这里就不再赘述。 为了实现精确控制发音，一般在合成的时候需要使用SSML语言对合成内容进行标记，下面主要记录为了满足这次需求所需要使用到的一些SSML参数。 具体实现 首先我们已经拿到了单词的音节划分数据，如definition /ˌde.fɪˈ.nɪ.ʃən/ 。 然后我们可以根据音节边界（syllable boundary）对内容拆分，给每一个音节都打上所需的SSML…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:26:02Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-microsoft-api-to-tts/",
+      "detailPath": "articles/3f28de578e6437a6ba9dc6a8.json"
+    },
+    {
+      "id": "b01a3d3323da3acd74bfac4c",
+      "title": "使用xpath爬取字典内容",
+      "summary": "使用xpath爬取字典内容 最近因为业务需要批量获取一些权威字典的内容，比如 韦氏字典 的音节划分，比如 词源字典 中的词根词缀解释。 所有这些工作其实都可以提一个需求给开发的，但是提需求流程好长，耗时也好久噢。因为自己感兴趣，所以就索性自己动手研究了，当然这途中也少不了开发朋友的帮忙。 具体实现方法很简单： 使用浏览器浏览页面元素，定位到对应的文本内容，复制对应的xpath 使用requets发起http请求，并将返回的结果使用etree解析 标签下只有一个内容 import requests from lxml import etree def get_data(word): wb_data = requests.get(f\"https://www.merriam-webster.com/dictiona…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:26:00Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-xpath-to-scrape-dict/",
+      "detailPath": "articles/b01a3d3323da3acd74bfac4c.json"
+    },
+    {
+      "id": "dacca2b9c458e27e738a0558",
+      "title": "统计和展示单词真题词频的问题",
+      "summary": "统计和展示单词真题词频的问题 最近在做考研词频和真题例句相关的工作，其实之前写的 这篇博客 就已经记录了简单、可复现的民用实现方法，商用级别的实现提需求给开发就好了。虽然知道简易的解决方案，但是实际应用到产品中还有各种各样的问题。 如何计算词频 一般来说，在统计词频的时候应当把单词变形（inflection）统计在内，如plays、played和playing不应当单独计数，而统计在play上。 通常这样的问题会采用词型还原（ lemmatization ）或是词干还原（stemming）的方式解决。 词型还原和词干还原的区别在于，词型还原会考虑单词的词性，而词干还原仅会参照字典将单词还原成词干形式，例如： lemmatize('meeting', 'n') = meeting lemmatize('meet…",
+      "image": "https://s1.328888.xyz/2022/06/22/s5x27.png",
+      "publishedAt": "2024-04-22T15:25:52Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/probs-with-word-freq/",
+      "detailPath": "articles/dacca2b9c458e27e738a0558.json"
+    },
+    {
+      "id": "09ca12683db38e847c4b27dd",
+      "title": "使用多进程提高搜索真题句子的速度",
+      "summary": "使用多进程提高搜索真题句子的速度 前言 在《 使用NLTK统计真题词频以及搜索真题句子 》这篇文章中，我简单介绍了我自己写的真题搜索方法，我所采用的思路是： for 每一个考纲词汇: for 每一套真题: for 真题里每一句话: 词型还原() if 词型还原的句子里有考纲词汇: 记录单词 记录句子 记录出处 用是可以用，但是速度比较慢，特别是当真题文件和考纲词汇变多的时候，那个速度怎一个慢字了得。 正好借着隔壁项目组需要我跑一个英语二真题句子出处的机会，我开始了对代码的重构。他们的需求不是做成一个Word文档供编辑挑选句子，而是做一个包含单词、句子和出处的表格。 在Koni老师的帮助下，我了解到从10年前开始，大数据开发一直在使用一个模型叫做MapReduce，通过把大量任务分发执行，然后再合并每一个任务的…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:25:52Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-multiprocessing-to-boost-efficiency/",
+      "detailPath": "articles/09ca12683db38e847c4b27dd.json"
+    },
+    {
+      "id": "e58c72496fdbbf7d6ee122e1",
+      "title": "使用NLTK统计真题词频以及搜索真题句子",
+      "summary": "使用NLTK统计真题词频以及搜索真题句子 前言 作为一个教研和英语编辑，统计真题词频和搜题是刚需中的刚需。 虽然这个需求可以通过使用企业内部的数据库，或是自行去类似 组卷网 这样的网站解决，但是有的时候还是自己做会比较好，不仅因为自己操作有很高的自由度（如绘制词云、提取关键词、一键撰稿、筛选高频词等），更是因为数据都从自己手中过能从宏观角度加深对题目的认识。 自己统计词频所需要的东西很简单： 真题（为方便读取最好是txt格式的） 考纲词表 下面是代码讲解和示例： 统计词频 首先导入需要的包。 NLTK 可以说是民用NLP界的最强武器了。 import nltk from nltk.probability import FreqDist from nltk.corpus import wordnet impor…",
+      "image": null,
+      "publishedAt": "2024-04-22T15:25:50Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/use-nltk-to-count-word-freq-and-sent-origin/",
+      "detailPath": "articles/e58c72496fdbbf7d6ee122e1.json"
+    },
+    {
       "id": "dc6596b3cf32f0dd8bce21b4",
       "title": "200篇高考文章选60篇，怎么选覆盖的考纲词汇最多？",
       "summary": "200篇高考文章选60篇，怎么选覆盖的考纲词汇最多？ 背景 最近出版团队设想了一款新的出版产品，用一句话概括是「60篇高考文章掌握高考核心2000词」。如果这款产品真的要做出来的话，那必须要解决两个核心问题： 哪2000词？ 哪60篇文章？ 第一个问题相对比较好解决，使用之前写好的词频统计脚本就能得到一个高考真题的高频词列表，结合实际做题经验和用户测试，即可在高考3500词考纲中锁定这2000个词。 第二个问题就比较复杂了。60篇文章完全覆盖2000个单词应该不太可能，但是怎么挑选这60篇文章才能覆盖最多的考纲词呢？这个听起来应该不是教研手动统计能解决的问题，于是我开始寻找能够解决这个问题的算法。 第一次尝试：动态规划 我第一时间想到的是大学时了解过的动态规划（ Dynamic Programming ），一…",
@@ -604,61 +659,6 @@
       "sourceTitle": "無糧殿",
       "link": "https://wuliangdian.com/posts/2024-the-second-half-of-march/",
       "detailPath": "articles/d409c01200d0ad59620ad4fd.json"
-    },
-    {
-      "id": "3c341145833409ed62b4e513",
-      "title": "Farewell, DNF",
-      "summary": "晚上碎掉了DNF账号上的所有装备。食之无味，弃之可惜，那就彻底拜拜吧。 下午朋友在群里发了一个DNF致歉礼包的链接，才知道今天DNF在举办什么玩家见面会，好像是针对9163事件跟玩家道歉。 懒得看都说的啥，都多久以前的事了，现在才出来道歉，未免太晚了吧。 习惯性的打开电脑领完礼包，刷了两把副本，只觉得抗拒恶心，这一套玩法究竟要炒冷饭到啥时候。 回想脱坑几次都没有彻底，每次回坑都要花不少钱，还费时费力。曾经也想过把这些全部都碎掉，但每次都因为舍不得为此付出的精力和财力而搁置。 那这次就彻底一点吧，顺便也试探一下马哥的挽留到底是不是真的。 结果就是正常概率，只冲到了一把+15的武器，不过这也算是满足了我玩这个游戏长久以来的心愿。 就这样吧，卸载，关机。",
-      "image": null,
-      "publishedAt": "2024-03-29T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/la-ji-you-xi-hui-wo-qing-chun",
-      "detailPath": "articles/3c341145833409ed62b4e513.json"
-    },
-    {
-      "id": "f69b899055963cc024e1073f",
-      "title": "加拿大Co-op經驗談",
-      "summary": "祝大家都能順利上車下",
-      "image": null,
-      "publishedAt": "2024-03-29T00:00:00Z",
-      "sourceId": "a8fd4472104f3e5d",
-      "sourceTitle": "嘰嘰乞乞",
-      "link": "https://www.gigigatgat.ca/posts/coop-sharing/",
-      "detailPath": "articles/f69b899055963cc024e1073f.json"
-    },
-    {
-      "id": "50003642dd930d7bdbb8334d",
-      "title": "我要是也能这么逆天就好了",
-      "summary": "自从电子阳痿之后，电脑也不想开，便把其中一部分娱乐时间用在了看小说上。时而品读些正经故事，时而沉迷些无脑爽文。 这两天晚上就在抖音上看一部沙雕小说，人物使用熊猫头制作，看起来很魔性。剧情俗套无脑，但又挺搞笑的，看的停不下来。 从初中就开始看这类小说，以至于现在只看前几章，就能猜出来这本书的大概剧情。无非就是废物逆袭、逆天气运，还有什么扮猪吃老虎，都是些俗到不能再俗的套路。不过，有些人还就喜欢这些。 然而，现在有些小说却是新奇的很，甚至是有些离谱，让人不得不怀疑这些作者的精神状态。 比如什么倒背圆周率、被自己直接帅死、治好脑瘫，被剥夺了当傻B的权利？？？ 卧槽，逆天，牛逼…… 真羡慕这些作者的脑洞能开的这么大，羡慕这些作者能这么癫，我要是也能像他们这样逆天就好了。 看来得找时间去 弱智吧 进修一下了。",
-      "image": null,
-      "publishedAt": "2024-03-27T16:00:00Z",
-      "sourceId": "511a941174e52a33",
-      "sourceTitle": "蒙奇日记",
-      "link": "https://luffy.cc/a/as-mad-as-a-hatter",
-      "detailPath": "articles/50003642dd930d7bdbb8334d.json"
-    },
-    {
-      "id": "dd3404e41736e37170ed3dc7",
-      "title": "Android Perfetto 系列目录",
-      "summary": "Perfetto 在我的日常工作中已基本替代旧的 Systrace 工作流。 Android 官方建议在 Android 10 及以后使用 Perfetto ，并将 Systrace 命令行工具列为 legacy。许多新接触 Android 性能优化的小伙伴觉得 Perfetto 的界面和功能复杂，希望我能把之前的 Systrace 文章用 Perfetto 重新呈现，于是有了这个系列。",
-      "image": null,
-      "publishedAt": "2024-03-27T14:29:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2024/03/27/Android-Perfetto-101/",
-      "detailPath": "articles/dd3404e41736e37170ed3dc7.json"
-    },
-    {
-      "id": "56bee04015db30281f32e421",
-      "title": "电台：2023年度游戏",
-      "summary": "本期录制于1月27日。感谢三日月和逢坂润的参与；特别感谢主播长的剪辑、绘画与时间轴。 在线收听 📢：也可以用AntennaPod或苹果播客订阅本播客RSS地址（ https://emptystack.top/podcast ）来收听！ function seek(time) { const player = document.getElementById('player') player.play() player.currentTime = time } 你的浏览器不支持嵌入音频，但你可以 下载 下来听。 视频内容：四个朋友讲自己的2023年度游戏 01:06 《赛博朋克2077》 05:04 《FIFA》 21:53 《Splatoon 3》 43:28 《TUNIC》 65:26 《怪兽远征》 69:2…",
-      "image": null,
-      "publishedAt": "2024-03-25T20:50:41Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/goty-2023/",
-      "detailPath": "articles/56bee04015db30281f32e421.json"
     }
   ]
 }

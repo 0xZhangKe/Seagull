@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "ba7de3d36c1798cc45eb030f",
+      "title": "带刺大黄鱼如何帮我反思软件？",
+      "summary": "我在《 爱拯救之 》一文中提到，博客现在运行在安装 OpenBSD 的操作系统上，而不是 Linux。我本想尝试更多的 BSD 系统，可我把 FreeBSD 的 .iso 挂载到 VPS 之后，在 VNC 里捣鼓了半天也没把系统安装好。最后还是换回 OpenBSD，在十分钟内就完成了安装。 FreeBSD 你们要不要反思一下：为什么 OpenBSD 不到 800MB 的 .iso 里纯文本的安装界面会比你们的 图形界面 更好用？ 不多说了，还是先来关注 OpenBSD 吧。 Linux people do what they do because they hate Microsoft. We do what we do because we love Unix. ——Theo de Raadt 什么是 Op…",
+      "image": "https://img.eltr.ac/geedeapro/article/openbsd/openssh-cowboy.png",
+      "publishedAt": "2026-11-10T17:23:41Z",
+      "sourceId": "7e27e325b5de8871",
+      "sourceTitle": "極客死亡計劃",
+      "link": "https://www.geedea.pro/article/openbsd/",
+      "detailPath": "articles/ba7de3d36c1798cc45eb030f.json"
+    },
+    {
       "id": "3cf7538f3b4c10850f19a0d6",
       "title": "Coffee Break Clojure, Test",
       "summary": "假设有函数 pair-sum ，把输入的数字划分为两个一对，然后对每个对求和，返回和组成的序列： ( defn pair-sum [ & nums ] ( ->> nums ( partition 2 ) ( map ( partial apply + )))) 系统运行一段时间后有人反馈了 Bug，复现方式如下： ( pair-sum 3 2 1 4 5 3 5 ) ;; => (5 5 8) 输入上述用例，函数只返回了前六个数字组成的三个对的和，最后一个 5 被丢弃了。经过判断，这的确是个 Bug，解决方案是让落单的输入单独作为和返回。 你当然可以修完 Bug 之后一走了之，但试想一下：之后的贡献者在看到这段代码的时候，会不会对「落单的输入怎么处理」这件事情产生不同的想法？他会不会认为修复后的版本反而是个…",
@@ -98,17 +109,6 @@
       "sourceTitle": "極客死亡計劃",
       "link": "https://www.geedea.pro/article/clj8/",
       "detailPath": "articles/c7a8ea6afd42fcdde0f37bf0.json"
-    },
-    {
-      "id": "c9c4228429274f86d94c3c87",
-      "title": "Coffee Break Clojure, Async",
-      "summary": "上一篇 我提及了如何用 Ring 开发 HTTP 服务器，也提到 Ring 提供了同步 API 和异步 API。那么，什么是异步编程？为什么需要异步？在什么情况下需要让一个程序同时做很多事情？ 同步、异步、并发和并行 同步（synchronization）的中文名字可能会让人误以为是多个实体同时进行操作，实际上同步的意思是指系统中所有事件都依照相同的顺序进行协调。可以用工厂流水线举例，假如流水线中一个工人需要等上一个工人交付一部分工作之后才能干活，整个流水线都要所有人一起干活才能转动起来，这个流水线就是同步的。反之，假如某些工作可以分开做，比如一部分人负责生产 A 零件，另一部分人负责生产 B 零件，两者互不干扰，而最终把 A 和 B 组装在一起的又是另一拨人，这个系统就是异步的（asynchronous）。…",
-      "image": null,
-      "publishedAt": "2026-10-12T15:48:37Z",
-      "sourceId": "7e27e325b5de8871",
-      "sourceTitle": "極客死亡計劃",
-      "link": "https://www.geedea.pro/article/clj7/",
-      "detailPath": "articles/c9c4228429274f86d94c3c87.json"
     }
   ]
 }

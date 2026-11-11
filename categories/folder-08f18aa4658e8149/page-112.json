@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "25cf9da33576dc7a7cefd3ba",
+      "title": "在通关《王国之泪》之后，来聊聊剧透这件事",
+      "summary": "6 月 11 日，我通关了《塞尔达传说：王国之泪》（以下都简称为《王国之泪》）的主线剧情，也刚好是这个游戏发售一个月。对这个游戏来说，通关主线并不代表着什么，但是对我而言，代表着我再也不用担心上网时看到什么重大的剧透了。",
+      "image": null,
+      "publishedAt": "2023-06-11T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/talking-about-spoilers-after-totk",
+      "detailPath": "articles/25cf9da33576dc7a7cefd3ba.json"
+    },
+    {
       "id": "6e5763818704a8550675b33d",
       "title": "合并PDF文件，并保留目录",
       "summary": "有些出版社只提供按章节分开的PDF文件，而我喜欢读整本书，所以查了查如何把它们拼成一整个PDF文件——很简单的！只需要安装MuPDF，然后使用如下命令即可： mutool merge -o output.pdf input1.pdf input2.pdf input3.pdf ... 我昨天以为它和 PyMuPDF的join 一样不保留目录，所以写了 如下脚本 ： import fitz from sys import argv if i := argv . index ( \" -o \" ): _ = argv . pop ( i ) output = argv . pop ( i ) # Assume `-o output.pdf` else : output = \" output.pdf \" def pa…",
@@ -648,17 +659,6 @@
       "sourceTitle": "一笼虾饺有四个",
       "link": "https://fourxiajiao.github.io/2023/toto-3/",
       "detailPath": "articles/8dc139347ac2de1210b87627.json"
-    },
-    {
-      "id": "a74a41d7703a342b3ff19456",
-      "title": "一个音乐盲如何才能听'懂'严肃音乐？",
-      "summary": "初识古典 今天收获太大了，我也终于能享受“严肃”音乐了。 事情的经过是这么样的，以前了解过 GEB ，都说他怎么怎么好，怎么把巴赫的音乐与艾舍尔的画相对比，我是个音乐盲，平时也就是听听流行歌曲，上哪里去听懂老巴赫的音乐，对音乐的唯一一点记忆是高三时上基本能力课时，一个有激情的音乐老师讲过巴赫如何牛叉，但是当时应付高考，谁去认真理睬这60分的基本能力呀。 现在作为一个程序员，职业习惯让我对任务事情都有刨根问题的兴趣，想弄明白它的本质到底是怎么样的，现在这个疑惑跑到了音乐身上。为什么我就不能“听懂”巴赫音乐中所表达出的意境呢，是我没有乐理知识嘛，为了这个我还下载了 宋大叔教音乐 ,但是没能听下，然后我想了万能的知乎，我上提了一问题 一个音乐盲如何才能听懂莫扎特、贝多芬、巴赫的作品？ ,希望知友们能给我指条明道，让…",
-      "image": "http://img03.taobaocdn.com/imgextra/i3/581166664/TB2m4K_apXXXXX5XXXXXXXXXXXX_!!581166664.png",
-      "publishedAt": "2023-04-01T05:05:20Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/05/09/understand-serious-music/",
-      "detailPath": "articles/a74a41d7703a342b3ff19456.json"
     }
   ]
 }

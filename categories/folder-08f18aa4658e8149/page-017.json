@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "c1f34c725a5366fdf345265a",
+      "title": "FoxThinking #40: 落在纸带上的输出",
+      "summary": "哦，图灵机，一个非常著名的思维模型。 图灵机和纸带，其中图灵机可以对纸带覆写入（就算只是一个写出黑点或者用空白覆盖黑点）和读入纸带。 其中图灵机内部会维护一张状态表，例如只需两个状态： 状态 A: 将当前格写出黑点，读写头向右移动一格，然后切换到状态 B 。 状态 B: 将当前格写成空白，读写头向右移动一格，然后切换回状态 A 。 运行这个就能实现在纸带上写出一直循环黑白黑白黑白的输出了。 不过除了会无限运行的图灵机，也有很多没事做的人会去关心「运行步数最多还能停下来的图灵机」，这种图灵机 叫做「忙碌海狸图灵机」，或许觉得海狸就是种看起来忙忙碌碌的生物吧。只有一个状态的图灵机自然只有一种，之后有两状 态的……直到 2024 年，人们才总算宣布找到了五状态下的图灵机 1 。是的，是在 2024 年，不是 197…",
+      "image": null,
+      "publishedAt": "2026-09-09T15:50:00Z",
+      "sourceId": "94e2b917bd1c8189",
+      "sourceTitle": "狐狸反走矣",
+      "link": "https://blog.southfox.me/2026/09/fox-thinking-40/index.html",
+      "detailPath": "articles/c1f34c725a5366fdf345265a.json"
+    },
+    {
       "id": "be2a5c058934f703c6ec096c",
       "title": "破烂扳手",
       "summary": "我无法容忍傲慢的技术。",
@@ -648,17 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/daily/75/",
       "detailPath": "articles/010b17c412cb384e1b0b11e0.json"
-    },
-    {
-      "id": "a910803af800cbb0a20a581c",
-      "title": "2026-07-11 / 放克音乐",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-09-05T05:36:45Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/74/",
-      "detailPath": "articles/a910803af800cbb0a20a581c.json"
     }
   ]
 }

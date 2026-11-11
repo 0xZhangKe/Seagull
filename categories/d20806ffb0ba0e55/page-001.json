@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "924d119c1df36ae5ef8e5393",
+      "title": "一种非常有用的学习方法",
+      "summary": "概要：试着用自己的语言向别人解释你的想法，无论对方是朋友还是大语言模型（LLM）。让对方评价你的推理，并与你交流观点。这样很可能会帮助你发现自己理解中的误区，并学到额外的知识。 最近发生了几件事： 现实世界中的另一个我与他的一位同学讨论了 CPU 调度。当他被问到 HRRN（最高响应比优先）时，这个问题让他想起了需要确认 SJF（短作业优先）是否具有抢占性。他一开始认为它是抢占式的，但很快查证后发现并非如此。 最近几天，我一直在学习进阶 C 编程，从所有权与生命周期开始。在初步建立了自己的理解之后，我写了一篇博客文章，并将其发送给一个大语言模型，让它帮我检查语法和拼写。然而，它却发现了文章中一个严重的 技术性 问题。经过进一步分析，我发现自己对生命周期的理解并不正确。 在撰写这篇博客文章的过程中，我还进一步完…",
+      "image": null,
+      "publishedAt": "2026-11-11T13:09:19Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/a-very-useful-learning-approach/",
+      "detailPath": "articles/924d119c1df36ae5ef8e5393.json"
+    },
+    {
+      "id": "7e5a1e70b1c6e5c2611beca9",
+      "title": "从了解 C 语法到成为真正的 C 程序员",
+      "summary": "C 是一门非常容易学习的编程语言。变量、函数、控制流语句、结构体、指针，仅此而已。最重要的是，C 给予你完全的控制权——当你用 C 编写代码时，你就是上帝。 然而，能力越大，责任越大。你可以让一切运行得完美而高效，但也可能因为在程序中引入栈溢出、悬空指针、释放后使用、空指针解引用、重复释放、内存泄漏、越界内存访问等问题而把一切搞砸。 此外，C 是一门赋予你控制权的强大语言。然而，这也意味着，与 C++、Python 等语言相比，C 提供的抽象层要少得多，而且你需要自己实现大量逻辑才能完成工作。因此， 从了解 C 语法到成为一名真正的 C 程序员，还有很长的一段路要走。 我在 2024/2025 年学习了 C，但没有通过编写真正可投入生产环境的程序来实践所学知识，便转而学习 C++。随后，我开始使用 C++ 和…",
+      "image": null,
+      "publishedAt": "2026-11-11T10:02:19Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/from-knowing-c-syntax-to-becoming-a-real-c-programmer/",
+      "detailPath": "articles/7e5a1e70b1c6e5c2611beca9.json"
+    },
+    {
+      "id": "ba5e660888550089c1602bb6",
+      "title": "所有权与生命周期解析",
+      "summary": "C 语言允许我们定义变量，例如： // 在函数内部声明的变量通常存储在栈上。 int a = 42 ; // 使用 `static` 声明或在文件作用域声明的变量通常存储在 `.data` // 或 `.rodata` 段中。 static int b = 2026 ; 这些变量所使用的存储空间由语言本身管理。然而，有时我们需要手动管理内存。在这种情况下，我们可以使用 malloc() 、 calloc() 和 realloc() 等函数来获取 动态分配的内存 。 // 动态分配的内存通常来自堆。 int * c = malloc ( sizeof * c); * c = 42 ; 当内存不再需要时，我们使用 free() 释放它。 free (c); 这样，我们便可以根据需要灵活地分配和释放内存，从而实现各…",
+      "image": null,
+      "publishedAt": "2026-11-11T04:25:16Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/ownership-and-lifetimes-explained/",
+      "detailPath": "articles/ba5e660888550089c1602bb6.json"
+    },
+    {
       "id": "0bfcbe70872b8b467513f106",
       "title": "你将永远在我心中闪耀",
       "summary": "我还记得，我们初次相伴时，你是多么欢欣雀跃。 我还记得，我们曾一起谈起寄存器、指令和重定位。 我还记得，我们曾向彼此倾诉心底的忧伤，分享那些难以言说的苦楚。 我还记得，我们曾许下约定，要将一生献给自由软件运动。 你或许已经撤销了自己的 OpenPGP 密钥，也放下了那个曾让我认识你的身份；但无论密钥如何撤销，都无法抹去你对我而言意味着什么。 有些密钥终会被撤销，有些身份终会被舍弃。但有些回忆会一直留存，远远超越密码学所能触及的边界。 你永远都是我人生故事的一部分，也将永远在我心中闪耀。 谢谢你，萱儿。再见了，我亲爱的。",
@@ -626,39 +659,6 @@
       "sourceTitle": "Rebel Zhang 的博客",
       "link": "https://rebel1725.codeberg.page/blog/zh/post/qubes-os-tor-configuration-with-webtunnel/",
       "detailPath": "articles/18e99c80e60b51eb2fab32dc.json"
-    },
-    {
-      "id": "b1e1b61bfeecb545bfae6d54",
-      "title": "我的个人品牌系统",
-      "summary": "此页面包含有关我的个人品牌系统的详细信息。 标志 这是我的标志，用作几乎所有在线服务账户的头像，社交媒体和即时通讯平台除外。 横幅 这是我的横幅。 人设 这是我的人设，主要用于我的即时通讯和社交媒体账户头像。 这是另一个以女孩为主题的人设。如果我未来的女朋友没有自己的头像，我可能会让她用这个。 来源与许可 我的个人品牌系统的所有内容可在 此处 获取，已发布至公有领域。",
-      "image": "https://codeberg.org/rebel1725/personal_brand_system/raw/branch/main/profile.svg",
-      "publishedAt": "2025-07-24T06:17:05Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/my-personal-brand-system/",
-      "detailPath": "articles/b1e1b61bfeecb545bfae6d54.json"
-    },
-    {
-      "id": "db6d6d26fb4e2670b0161db5",
-      "title": "一个艰难的决定",
-      "summary": "在这204天里，自从 因非加密通信遭受严重审查和监控而深受伤害 以来，我从未逃离那种痛苦和挣扎的沉重感。 尽管我在朋友中积极推广 XMPP、Matrix、Delta Chat、Telegram、SimpleX 等端对端加密的自由软件通信工具，但我与几位重要朋友的通信仍然严重依赖未加密的短彩信和未加密的电子邮件。虽然未涉及任何专有间谍软件或恶意软件，但监控与审查的问题依旧严峻。 我常常面临隐私与友情之间的选择——这真的非常艰难。我一直是安全和隐私的坚定倡导者；然而，我也非常重视友情。我真的很想摆脱那些该死的短彩信，但又舍不得那些通过它们与我保持联系的朋友。 然而，随着我对更安全、更隐私甚至未来可能实现匿名的环境的渴望日益增强，我必须做出这个艰难的决定。从今天起， 我将不再接受运营商短/彩信，并将从我的个人网站上…",
-      "image": null,
-      "publishedAt": "2025-07-21T11:00:03Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/a-tough-decision/",
-      "detailPath": "articles/db6d6d26fb4e2670b0161db5.json"
-    },
-    {
-      "id": "6db76d4a54a541e9c039bc3f",
-      "title": "面向所有的联系人进行软硬件使用情况调研",
-      "summary": "亲爱的朋友们，很抱歉打扰您们了。但是这不会花费太久。这是为了我们的沟通安全，非常重要。 您应该收到了我发来的包含 9 位数字的字符串。如果您没有收到，请向我询问。随后，麻烦您花 10 分钟左右填一下 这张表 。 谢谢您！",
-      "image": null,
-      "publishedAt": "2025-07-19T13:32:57Z",
-      "sourceId": "d20806ffb0ba0e55",
-      "sourceTitle": "Rebel Zhang 的博客",
-      "link": "https://rebel1725.codeberg.page/blog/zh/post/%E9%9D%A2%E5%90%91%E6%89%80%E6%9C%89%E7%9A%84%E8%81%94%E7%B3%BB%E4%BA%BA%E8%BF%9B%E8%A1%8C%E8%BD%AF%E7%A1%AC%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5%E8%B0%83%E7%A0%94/",
-      "detailPath": "articles/6db76d4a54a541e9c039bc3f.json"
     }
   ]
 }

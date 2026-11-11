@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "51ede0e6d016132151fa1855",
+      "title": "夏长，云懒。",
+      "summary": "记录平时拍摄的云",
+      "image": "https://images.unsplash.com/photo-1696332223628-62631dabb337",
+      "publishedAt": "2025-07-12T07:15:00Z",
+      "sourceId": "a477ed4d3d62d73f",
+      "sourceTitle": "Hsuan's Space",
+      "link": "https://quarkpixel.github.io/p/250712-summer-clouds",
+      "detailPath": "articles/51ede0e6d016132151fa1855.json"
+    },
+    {
+      "id": "1758fdc114066cef48d563e2",
+      "title": "复古风格网站的 Eepsite 现已上线",
+      "summary": "我的复古风格网站的 eepsite 终于上线了，我已经在 reg.i2p 上注册了 rebel.i2p 域名。地址传播到地址簿可能需要几天时间，但你现在可以使用这个 地址助手链接 访问。 值得一提的是，我最近发现 rebel.i2p 这个域名之前已经被注册过，但截至 2023 年 8 月 18 日，该网站已无法访问。 reg.i2p 允许重新注册已失效网站的 I2P 域名，但 stats.i2p 不允许，并仍然保留旧记录。为了避免出现意外情况，我还注册了另一个域名： rebel1725.i2p ，其地址助手链接在 这里 。",
+      "image": null,
+      "publishedAt": "2025-07-12T05:13:36Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/retro-style-website-eepsite-is-now-up/",
+      "detailPath": "articles/1758fdc114066cef48d563e2.json"
+    },
+    {
+      "id": "24765b6a7d5c8f4ef569b120",
+      "title": "給 Uber Eats 的分手信",
+      "summary": "親愛的 Uber Eats，我們需要好好聊聊。",
+      "image": null,
+      "publishedAt": "2025-07-12T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/bye-uber-eats",
+      "detailPath": "articles/24765b6a7d5c8f4ef569b120.json"
+    },
+    {
+      "id": "0b33203fc9f82e65275d6a80",
+      "title": "C语言下的二进制文件IO踩坑",
+      "summary": "C语言下的二进制文件读写有个坑，就是一定要按存储的顺序读取。例： typedef struct player { int id; double XP; double MP; }player; 这里有一个玩家的数据结构，我们创建变量并初始化。 int b_i[32] = {1, 233, 2453, 5432, 21 ,43 ,297, 752, 643}; player yingyu5658; yingyu5658.MP = 100; yingyu5658.XP = 100; yingyu5658.id = 114514; 对文件进行存储时，按照MP=>XP=>ID的顺序存储 pd = fopen(\"./data\", \"wb\"); fwrite(&yingyu5658.MP, sizeof(double),…",
+      "image": null,
+      "publishedAt": "2025-07-11T16:26:59Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/c%E8%AF%AD%E8%A8%80%E4%B8%8B%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6io/",
+      "detailPath": "articles/0b33203fc9f82e65275d6a80.json"
+    },
+    {
+      "id": "c2dc4fa6da6f2957ac04b1a4",
+      "title": "Vibe Coding是盲盒老虎機",
+      "summary": "當AI能在幾秒內寫出完美程式碼，為什麼我反而想要放慢腳步？探討在AI時代如何保持創作的主導權與樂趣。",
+      "image": null,
+      "publishedAt": "2025-07-11T15:00:00Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/ai-slot-machine",
+      "detailPath": "articles/c2dc4fa6da6f2957ac04b1a4.json"
+    },
+    {
+      "id": "6bc61e112fd7630956f6b7dd",
+      "title": "我的复古风格网站现已上线",
+      "summary": "我的复古风格网站终于上线了！欢迎访问 Tilde.club 。 此外，包含相同内容的 eepsite 也将在 rebel.i2p 上线。",
+      "image": null,
+      "publishedAt": "2025-07-11T12:08:59Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/my-retro-style-website-is-now-up/",
+      "detailPath": "articles/6bc61e112fd7630956f6b7dd.json"
+    },
+    {
       "id": "cc30161c1239f75fd249e2ab",
       "title": "新資料夾",
       "summary": "看看以下這張圖：你有一個「資料夾 A」，裡面包含了「資料夾 B」和其他檔案。你在 macOS 的 Finder 中選取了「資料夾 A」，右方欄位顯示出了其內容。",
@@ -593,72 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/articles/ag_pickup/",
       "detailPath": "articles/ecb3c66de194251332abcb02.json"
-    },
-    {
-      "id": "7f2b795f7ff0c0dd56f9a404",
-      "title": "梅雨季节的六月月报",
-      "summary": "今年的六月，连绵的下雨天和高温天，因为后半个月公司高强度线下办公，每天工作很忙，出行和看书都减少了很多。这是一个繁忙的月份，对于上班的我如此，那些促销的商家如此，即将毕业的学子如此，无论是幼儿园的小朋友还是参加高考的学子。以下是正文。 博客折腾 看到很多人的博客切换页面都很顺滑，因此也想把自己的搞一搞，查了一下可以加一下页面跳转的动画，只需添加如下的CSS即可： 1 2 3 @ view-transition { navigation : auto ; } 当然这样的效果和Astro比还是差不少，想要更好的效果看来只能换博客框架了。 另外看到 椒盐豆豉的文章 介绍的基于cloudflare实现的文章点赞功能，于是照葫芦画瓢也弄了个，欢迎来玩。 买买买 又是一年的六一八，但是现在持续的时间特别长，也没有那种节日…",
-      "image": "https://img.isming.me/photo/IMG_20250601_183742.webp",
-      "publishedAt": "2025-07-01T14:50:44Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2025-06-30-june-summary/?utm_source=rss",
-      "detailPath": "articles/7f2b795f7ff0c0dd56f9a404.json"
-    },
-    {
-      "id": "ba55cd9bef4ab2c7cb2c9499",
-      "title": "Dazzo 拾音器，誰愛用誰用！",
-      "summary": "初遇 Dazzo # 早期認識 Eddie 應該知道，我是極度推崇 Dazzo 拾音器的人，那時候裝了「單貼片」的版本在前女友的 Takamine 全「合板」的初階吉他上面，只要配上推得動的木吉他前級，聲音飽滿到不可置信！ 我用那把吉他演出大概三年，我甚至都沒有想要拿去裝第二組拾音器，來讓 Takamine 變成雙系統，就知道我有多滿意了！Dazzo 貼片單系統本身就超好用的阿！ 再次安裝 Dazzo # 有鑑於分手後沒有 Takamine 吉他可以用，不開玩笑，分手後第一件事情是把 Maestro 吉他拿去裝 Dazzo 拾音器XD 這次選擇「雙貼片的版本」。 安裝好後，回家一測試，60 Hz 底噪大聲到跟弦聲一樣大，妥妥地，這絕對是接地有問題，我馬上拿回去給店家說明情況。 過了幾天通知我處理好了，我這次直…",
-      "image": "https://eddielv.com/musings/dazzo/60hz.png",
-      "publishedAt": "2025-07-01T09:12:31Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/dazzo/",
-      "detailPath": "articles/ba55cd9bef4ab2c7cb2c9499.json"
-    },
-    {
-      "id": "dea51b3f38b1014b06d13fc0",
-      "title": "重做网页布局排版",
-      "summary": "从 Skeleton 转向 Tailwind Typography",
-      "image": null,
-      "publishedAt": "2025-07-01T07:15:00Z",
-      "sourceId": "a477ed4d3d62d73f",
-      "sourceTitle": "Hsuan's Space",
-      "link": "https://quarkpixel.github.io/p/250701-remake-typography",
-      "detailPath": "articles/dea51b3f38b1014b06d13fc0.json"
-    },
-    {
-      "id": "75281f6d6ddb00718d5ea650",
-      "title": "用 JavaScript 自制 GameBoy 模拟器（上）",
-      "summary": "本文是一篇使用现代 JavaScript (ES6) 从零开始制作 GameBoy 模拟器的详细教程（上篇）。文章循序渐进地讲解了模拟 GameBoy 核心硬件的原理与实现，内容涵盖 Z80 CPU 的指令周期、内存管理单元（MMU）的内存映射、GPU 的显示时序和瓦片图形渲染系统。最终通过一个系统调度器将这些独立的模块集成起来，构建出一个完整、可运行的模拟器基础架构。本教程不仅提供了大量代码示例，还用通俗易懂的方式解释了底层硬件的工作原理，适合对模拟器开发、计算机体系结构或复古游戏技术感兴趣的开发者。",
-      "image": null,
-      "publishedAt": "2025-07-01T04:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/4148.html",
-      "detailPath": "articles/75281f6d6ddb00718d5ea650.json"
-    },
-    {
-      "id": "c6611e9b37f37fafd4cdbe13",
-      "title": "落枕",
-      "summary": "Day 1 周六 起床感觉脖子不太对劲。家属一起床就开始在家加班。连早饭都跳过了。于是我也认真学习了大半天，先是追上了 Teaching Writing K-3 的进度，又努力学了两课 ASL，最后又看了关于教学的书。 Day 2 周日 起床发现脖子动不了了。本以为睡一觉就会好，没想到问题变严重了。非常沮丧，心怀对命运的不满——我都不记得上一次落枕是什么时候了，怎么会落枕呢。 身体这个东西，牵一发动全身，明明只是头不能自由地转了，却浑身不得劲，感觉干啥都不行了。 除了唉声叹气以外，还积极求助 Google，查了英文又查中文，试了试冰敷，可那是家属之前拔牙从诊所带回家的小冰袋，敷一会儿就不凉了。到了下午，实在太难受了，决定去试试针灸。 进了店里，得知针灸师不上班，按摩师倒是刚好因为有个客人临时取消而有了一个空档…",
-      "image": null,
-      "publishedAt": "2025-07-01T01:14:00Z",
-      "sourceId": "ea32f15981b17f0f",
-      "sourceTitle": "小小日常",
-      "link": "https://www.joeyrambles.com/2025/06/blog-post.html",
-      "detailPath": "articles/c6611e9b37f37fafd4cdbe13.json"
-    },
-    {
-      "id": "722a368c245ebd638b074d78",
-      "title": "墨爾本看表演",
-      "summary": "這次去澳洲，我們在墨爾本聽了古典音樂會、看了音樂劇，還去了爵士俱樂部，來分享一下心得。",
-      "image": "https://wiwi.blog/assets/images/hamer-f08183861e2e3ec6d8ee5e027292d4b9.jpg",
-      "publishedAt": "2025-07-01T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/melbourne-performances",
-      "detailPath": "articles/722a368c245ebd638b074d78.json"
     }
   ]
 }

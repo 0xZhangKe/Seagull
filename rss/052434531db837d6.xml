@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-10T20:09:44+00:00</updated><author><name>Simon Willison</name></author><entry><title>llm-gemini 0.36</title><link href="https://simonwillison.net/2026/Nov/10/llm-gemini/" rel="alternate"/><published>2026-11-10T20:09:44+00:00</published><updated>2026-11-10T20:09:44+00:00</updated><id>https://simonwillison.net/2026/Nov/10/llm-gemini/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-11T22:03:25+00:00</updated><author><name>Simon Willison</name></author><entry><title>Gemini Decisions API</title><link href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="alternate"/><published>2026-11-11T22:03:25+00:00</published><updated>2026-11-11T22:03:25+00:00</updated><id>https://simonwillison.net/2026/Nov/11/gemini-decisions-api/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"&gt;Gemini Decisions API&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Google join &lt;a href="https://simonwillison.net/2026/Sep/21/jev/"&gt;Jev&lt;/a&gt; and &lt;a href="https://simonwillison.net/2026/Oct/6/llm-openai-decisions/"&gt;OpenAI&lt;/a&gt; in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term "Noul" for a yes/no question.&lt;/p&gt;
+&lt;p&gt;It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.&lt;/p&gt;
+&lt;p&gt;Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.&lt;/p&gt;
+&lt;p&gt;I tested it against video by passing these questions to it along with my &lt;a href="https://simonwillison.net/2026/Nov/10/yonkers-rises/"&gt;Yonkers stomping robot&lt;/a&gt; video file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dragon: Does this video have a dragon in it?
+robot: Does this video have a robot in it?
+france: Is this video set in France?
+usa: Is this video set in the USA?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:&lt;/p&gt;
+&lt;div class="highlight highlight-source-json"&gt;&lt;pre&gt;{
+  &lt;span class="pl-ent"&gt;"dragon"&lt;/span&gt;: {
+    &lt;span class="pl-ent"&gt;"type"&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yes_no&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-ent"&gt;"probability"&lt;/span&gt;: &lt;span class="pl-c1"&gt;0.04976021841520312&lt;/span&gt;
+  },
+  &lt;span class="pl-ent"&gt;"robot"&lt;/span&gt;: {
+    &lt;span class="pl-ent"&gt;"type"&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yes_no&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-ent"&gt;"probability"&lt;/span&gt;: &lt;span class="pl-c1"&gt;0.9234055387792485&lt;/span&gt;
+  },
+  &lt;span class="pl-ent"&gt;"france"&lt;/span&gt;: {
+    &lt;span class="pl-ent"&gt;"type"&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yes_no&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-ent"&gt;"probability"&lt;/span&gt;: &lt;span class="pl-c1"&gt;0.08329171353166241&lt;/span&gt;
+  },
+  &lt;span class="pl-ent"&gt;"usa"&lt;/span&gt;: {
+    &lt;span class="pl-ent"&gt;"type"&lt;/span&gt;: &lt;span class="pl-s"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yes_no&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class="pl-ent"&gt;"probability"&lt;/span&gt;: &lt;span class="pl-c1"&gt;0.9230459995157706&lt;/span&gt;
+  }
+}&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50456791"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-release"&gt;llm-release&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/jev"&gt;jev&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/decision-models"&gt;decision-models&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="gemini"/><category term="llm-release"/><category term="jev"/><category term="decision-models"/></entry><entry><title>aws-emulator</title><link href="https://simonwillison.net/2026/Nov/11/aws-emulator/" rel="alternate"/><published>2026-11-11T21:18:30+00:00</published><updated>2026-11-11T21:18:30+00:00</updated><id>https://simonwillison.net/2026/Nov/11/aws-emulator/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/aws/aws-emulator"&gt;aws-emulator&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.&lt;/p&gt;
+&lt;p&gt;It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about &lt;a href="https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"&gt;how it came to be&lt;/a&gt; in a guest post on Werner Vogels' blog.&lt;/p&gt;
+&lt;p&gt;It currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/amazon"&gt;amazon&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/amazon-web-services"&gt;amazon-web-services&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/testing"&gt;testing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/werner-vogels"&gt;werner-vogels&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/rust"&gt;rust&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/docker"&gt;docker&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="amazon"/><category term="amazon-web-services"/><category term="testing"/><category term="werner-vogels"/><category term="ai"/><category term="rust"/><category term="docker"/><category term="generative-ai"/><category term="llms"/><category term="agentic-engineering"/></entry><entry><title>Browse tools.simonwillison.net by tag</title><link href="https://simonwillison.net/2026/Nov/11/tools-tags/" rel="alternate"/><published>2026-11-11T18:42:50+00:00</published><updated>2026-11-11T18:42:50+00:00</updated><id>https://simonwillison.net/2026/Nov/11/tools-tags/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://tools.simonwillison.net/#tags"&gt;Browse tools.simonwillison.net by tag&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+I've been wanting a better way to browse my &lt;a href=""&gt;collection of vibe-coded tools&lt;/a&gt; (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using &lt;a href="https://github.com/tree-sitter/py-tree-sitter"&gt;tree-sitter&lt;/a&gt; to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.&lt;/p&gt;
+&lt;p&gt;The homepage now features tag clouds for browsing by each of those categories of tag:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tools.simonwillison.net/#tags"&gt;&lt;img alt="Screenshot of two tag cloud sections where tags are sized by count. Browse by JavaScript libraries - Libraries loaded from a CDN by two or more tools. Select a tag to list its tools. @google/generative-ai 3, @jsquash/avif 3, @jsquash/webp 4, Babel 2, Chart.js 2, Cropper.js 2, D3 2, DOMPurify 7, js-yaml 3, JSZip 3, Leaflet 4, markdown-it 4, Marked 12, pako 2, PDF.js 3, Pyodide 11, React 3, Tesseract.js 2, three.js 3. Browse by browser APIs - Web platform features used by each tool's own code. Select a tag to list its tools. &amp;lt;dialog&amp;gt; 5, AbortController 6, Blob URLs 38, BroadcastChannel 1, Built-in AI 1, Camera / microphone 9, Canvas 2D 44, Clipboard API 69, Compression Streams 3, createImageBitmap 2, crypto random values 4, DOMParser 8, Drag and drop 30, Dynamic import() 12, ES modules 92" src="https://static.simonwillison.net/static/2026/tools-tag-cloud.webp" /&gt;&lt;/a&gt;
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/tools"&gt;tools&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/vibe-coding"&gt;vibe-coding&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="javascript"/><category term="tools"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude"/><category term="vibe-coding"/></entry><entry><title>llm 0.37.2</title><link href="https://simonwillison.net/2026/Nov/11/llm/" rel="alternate"/><published>2026-11-11T17:19:52+00:00</published><updated>2026-11-11T17:19:52+00:00</updated><id>https://simonwillison.net/2026/Nov/11/llm/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm/releases/tag/0.37.2"&gt;llm 0.37.2&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Fixes a security issue reported by &lt;a href="https://github.com/BluePlexus"&gt;Daniel de Araujo&lt;/a&gt; in &lt;a href="https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862"&gt;GHSA-v9h7-jj4g-f862&lt;/a&gt; and &lt;a href="https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w"&gt;GHSA-r639-rr7r-x72w&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;LLM has a mechanism called &lt;a href="https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model"&gt;extra-openai-models.yaml&lt;/a&gt; - now managed by the new-in-0.37 &lt;a href="https://llm.datasette.io/en/stable/other-models.html#openai-endpoint-add"&gt;llm openai endpoint add&lt;/a&gt; command - for using LLM with OpenAI-compatible API endpoints from other providers.&lt;/p&gt;
+&lt;p&gt;Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by &lt;code&gt;api_key_name&lt;/code&gt; had never been stored, or if a &lt;code&gt;responses: true&lt;/code&gt; model was run with &lt;code&gt;-o chat_completions 1&lt;/code&gt;.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/projects"&gt;projects&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/releases"&gt;releases&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="projects"/><category term="security"/><category term="llm"/><category term="releases"/></entry><entry><title>Anthropic's IPO roadshow video</title><link href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" rel="alternate"/><published>2026-11-11T15:11:59+00:00</published><updated>2026-11-11T15:11:59+00:00</updated><id>https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/</id><summary type="html">
+    
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://ipo.anthropic.com/us/#roadshow-video"&gt;Anthropic&amp;#x27;s IPO roadshow video&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works.&lt;/p&gt;
+&lt;p&gt;The section on "Approach to compute" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.&lt;/p&gt;
+&lt;p&gt;I'm not sure why there's no official video transcript, but here's &lt;a href="https://gist.github.com/simonw/9806757fe8acec6221cb0a5cce4d720d"&gt;one that I extracted&lt;/a&gt; using MacWhisper. Highlights below:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We train and serve Claude now across all four major chip families. That's only possible because early on we made an unconventional bet on a multi-chip strategy. At the time, many people thought that running AI models on different chips wasn't worth the effort. Each chip needs its own tailored software stack and inference stack, which is expensive and difficult to build. We've now been doing it for years, and we've gotten incredibly good at it. [...]&lt;/p&gt;
+&lt;p&gt;As an example, this year, we started working with AMD GPUs for the first time. In the past, bringing on a new chip platform took dozens of engineers months of work &lt;strong&gt;This time, we had Mythos try it out. It got Claude running on AMD in just three days, with basically no human intervention&lt;/strong&gt;. Claude ported or wrote almost 100% of the kernels. [...]&lt;/p&gt;
+&lt;p&gt;The second driver of our compute advantage is our rate of discovery of compute multipliers. We focus on total effective compute, which is the multiplicative product of physical capacity times the compute multipliers that we discover. Each one we discover makes our pool of total effective compute bigger. For example, say you need 100 units of compute to train a model of a certain intelligence. A 4x compute multiplier means you can use 25 units of compute to train the exact same model. Or you can use those hundred physical units to train an even more intelligent model that would have previously required 400 units.&lt;/p&gt;
+&lt;p&gt;Compute multipliers create a competitive advantage for us that's hard to replicate. They build on each other. Each new multiplier we discover has a positive effect on the multipliers before it. They stack. &lt;strong&gt;We believe that this can accelerate even further as we approach recursive self-improvement. Claude will be able to discover compute multipliers entirely by itself&lt;/strong&gt;, allowing the number of compute multipliers to grow faster and faster.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We got a hint at Anthropic's multi-chip strategy last September in their &lt;a href="https://www.anthropic.com/research/a-postmortem-of-three-recent-issues"&gt;postmortem of three recent issues&lt;/a&gt;, where they described bugs that affected just their TPU deployments.
+
+
+    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/gpus"&gt;gpus&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/recursive-self-improvement"&gt;recursive-self-improvement&lt;/a&gt;&lt;/p&gt;
+
+
+
+</summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="gpus"/><category term="claude-mythos-fable"/><category term="recursive-self-improvement"/></entry><entry><title>llm-gemini 0.36</title><link href="https://simonwillison.net/2026/Nov/10/llm-gemini/" rel="alternate"/><published>2026-11-10T20:09:44+00:00</published><updated>2026-11-10T20:09:44+00:00</updated><id>https://simonwillison.net/2026/Nov/10/llm-gemini/</id><summary type="html">
     
         &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-gemini/releases/tag/0.36"&gt;llm-gemini 0.36&lt;/a&gt;&lt;/p&gt;
         &lt;p&gt;Gemini 4 Carbon was announced &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"&gt;two weeks ago&lt;/a&gt; for "a subset of cyber defenders", but today it's &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"&gt;available to everyone else&lt;/a&gt;.&lt;/p&gt;
@@ -113,12 +206,12 @@ Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Em
 
 
 </summary><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="meta"/><category term="llm-pricing"/><category term="llm-release"/><category term="artificial-analysis"/><category term="muse"/></entry><entry><title>Quoting Prompting Claude Fable 5.2</title><link href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" rel="alternate"/><published>2026-11-10T05:34:14+00:00</published><updated>2026-11-10T05:34:14+00:00</updated><id>https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/</id><summary type="html">
-    &lt;blockquote cite="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"&gt;&lt;p&gt;Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...]&lt;/p&gt;
+    &lt;blockquote cite="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"&gt;&lt;p&gt;Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or presented the code base as someone else’s, even when that duplicated existing code. When the prompt said the code base was the model’s own, it often consolidated duplicated code and sometimes made related fixes without being asked.&lt;/p&gt;
 &lt;p&gt;If you want the model to improve the structure as it works, say that the code is its own:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;You are the owner and long-term maintainer of this codebase, and its design is up to you.&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;In Anthropic’s testing on small coding tasks, the model merged repeated code in about half of the tries with this sentence, and in under a tenth of the tries without it.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The ownership sentence makes the model much more likely to consolidate duplicated code into one shared function. In Anthropic’s testing on small coding tasks, the model consolidated duplicated code in under 10 percent of runs without the sentence and in about 75 percent of runs with it.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"&gt;Prompting Claude Fable 5.2&lt;/a&gt;, Anthropic documentation&lt;/p&gt;
 
     &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/prompt-engineering"&gt;prompt-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;&lt;/p&gt;
@@ -658,99 +751,4 @@ than PyO3's maximum supported version (3.14)
 
 
 
-</summary><category term="kyle-kingsbury"/><category term="llms"/><category term="ai"/><category term="generative-ai"/><category term="ai-misuse"/></entry><entry><title>How We Took Over ChatGPT Accounts</title><link href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="alternate"/><published>2026-10-31T23:15:22+00:00</published><updated>2026-10-31T23:15:22+00:00</updated><id>https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.parameter.ai/labs/we-found-a-gap-at-openai"&gt;How We Took Over ChatGPT Accounts&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this "Canvas" but it looks like the latest revision is called &lt;a href="https://help.openai.com/en/articles/20001246-working-with-writing-blocks-and-code-blocks-in-chatgpt"&gt;HTML previews&lt;/a&gt;), where interactive custom HTML apps are displayed in a sandboxed iframe.&lt;/p&gt;
-&lt;p&gt;It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data.&lt;/p&gt;
-&lt;p&gt;Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes &lt;a href="https://mathlive.io/mathfield/virtual-keyboard/"&gt;its own virtual keyboard&lt;/a&gt;, which can be triggered in the parent page via &lt;code&gt;postMessage()&lt;/code&gt; from the sandboxed iframe.&lt;/p&gt;
-&lt;p&gt;That message receiving code uses &lt;code&gt;innerHTML&lt;/code&gt;, so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method.&lt;/p&gt;
-&lt;p&gt;This meant untrusted code in an iframe could insert HTML, and while &lt;code&gt;innerHTML&lt;/code&gt; doesn't directly execute script elements it could be used to inject a new iframe &lt;em&gt;without&lt;/em&gt; sandbox restrictions.&lt;/p&gt;
-&lt;p&gt;OpenAI’s CSP rules blocked inline scripts entirely, and only allowed script loading from a handful of domains, but one of those was YouTube - and the YouTube oEmbed endpoint could be used to reflect JavaScript back in a way that executed it.&lt;/p&gt;
-&lt;p&gt;Once the attack had JavaScript execution on ChatGPT, it was trivial to fetch private user data from APIs and exfiltrate it via an image reference.&lt;/p&gt;
-&lt;p&gt;The end result: you could create a ChatGPT share URL which, when visited by another signed-in user, could exfiltrate their private data or take actions on their behalf.&lt;/p&gt;
-&lt;p&gt;OpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious.
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50314699"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/iframes"&gt;iframes&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/javascript"&gt;javascript&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/sandboxing"&gt;sandboxing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/security"&gt;security&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/xss"&gt;xss&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/chatgpt"&gt;chatgpt&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/content-security-policy"&gt;content-security-policy&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="iframes"/><category term="javascript"/><category term="sandboxing"/><category term="security"/><category term="xss"/><category term="openai"/><category term="chatgpt"/><category term="content-security-policy"/></entry><entry><title>datasette-llm 0.1a9</title><link href="https://simonwillison.net/2026/Oct/31/datasette-llm/" rel="alternate"/><published>2026-10-31T22:10:01+00:00</published><updated>2026-10-31T22:10:01+00:00</updated><id>https://simonwillison.net/2026/Oct/31/datasette-llm/</id><summary type="html">
-    
-        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/datasette/datasette-llm/releases/tag/0.1a9"&gt;datasette-llm 0.1a9&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;I have some big upgrades to &lt;a href="https://agent.datasette.io/"&gt;Datasette Agent&lt;/a&gt; in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying &lt;code&gt;datasette-llm&lt;/code&gt; plugin. &lt;/p&gt;
-&lt;p&gt;It now picks up the default model used by &lt;a href="https://llm.datasette.io/"&gt;LLM&lt;/a&gt;, which means you can start using Datasette Agent without needing to explicitly configure a default model:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;uvx --with datasette-agent datasette content.db --internal internal.db
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Previously you would also need to specify a model with &lt;code&gt;-s plugins.datasette-agent.default_model gpt-6-astra&lt;/code&gt;.&lt;/p&gt;
-    
-    
-        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette"&gt;datasette&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/datasette-agent"&gt;datasette-agent&lt;/a&gt;&lt;/p&gt;
-    
-
-</summary><category term="llm"/><category term="datasette"/><category term="datasette-agent"/></entry><entry><title>dbreunig/nesformer</title><link href="https://simonwillison.net/2026/Oct/30/nesformer/" rel="alternate"/><published>2026-10-30T21:59:22+00:00</published><updated>2026-10-30T21:59:22+00:00</updated><id>https://simonwillison.net/2026/Oct/30/nesformer/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dbreunig/nesformer"&gt;dbreunig/nesformer&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Inspired by &lt;a href="https://divagr.com/blog/qwenputer"&gt;qwenputer&lt;/a&gt; by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen!&lt;/p&gt;
-&lt;p&gt;In &lt;a href="https://news.ycombinator.com/item?id=50306442#50307402"&gt;a comment on Hacker News&lt;/a&gt; Drew reveals the Opus 5.5 prompts he used to build this system:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Read this article and any relevant source code: https://divagr.com/blog/qwenputer. Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, what size model would you have to build and if you could use smaller faster ones, could you get it to be at the standard clockspeed.&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Followed by:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;I think we should build it! Just for fun. It's okay if it's not fast. We want to be able to have the weights, and a cli to run them that we can point at a ROM.&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Apparently Opus found and then used &lt;a href="https://github.com/christopherpow/nes-test-roms/blob/master/other/nestest.txt"&gt;this collection of conformance tests&lt;/a&gt; for the NES CPU released 15 years ago by Christopher Pow.
-
-    &lt;p&gt;&lt;small&gt;&lt;/small&gt;Via &lt;a href="https://news.ycombinator.com/item?id=50306442"&gt;Hacker News&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/games"&gt;games&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/drew-breunig"&gt;drew-breunig&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/qwen"&gt;qwen&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/conformance-suites"&gt;conformance-suites&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="games"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="drew-breunig"/><category term="qwen"/><category term="conformance-suites"/></entry><entry><title>API credits benefit for eligible ChatGPT subscriptions</title><link href="https://simonwillison.net/2026/Oct/29/api-credits/" rel="alternate"/><published>2026-10-29T22:48:29+00:00</published><updated>2026-10-29T22:48:29+00:00</updated><id>https://simonwillison.net/2026/Oct/29/api-credits/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions"&gt;API credits benefit for eligible ChatGPT subscriptions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Earlier this month Anthropic &lt;a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/#api-credits"&gt;announced a generous new benefit&lt;/a&gt; for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use with the Anthropic API.&lt;/p&gt;
-&lt;p&gt;OpenAI have now launched pretty much exactly the same deal: if you have a $100, $200, or $500 subscription plan with them you now get that same quantity of credits to apply to one of your API organizations.&lt;/p&gt;
-&lt;p&gt;I maintain subscriptions with both companies, so this is great news for me! I may even ship some public-facing demos now that the credits are already covered by my existing subscriptions.
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/openai"&gt;openai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/anthropic"&gt;anthropic&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="ai"/><category term="openai"/><category term="generative-ai"/><category term="llms"/><category term="anthropic"/><category term="llm-pricing"/></entry><entry><title>Building a multiplayer game world with autonomous Fable-class models</title><link href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/" rel="alternate"/><published>2026-10-29T17:00:26+00:00</published><updated>2026-10-29T17:00:26+00:00</updated><id>https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/</id><summary type="html">
-    
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://twitter.com/jsnnsa/status/2115623382721126826"&gt;How I Built the Most AI-Pilled Company in the World&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building &lt;a href="https://spawn.co"&gt;Spawn&lt;/a&gt; is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models.&lt;/p&gt;
-&lt;p&gt;Spawn is a massively multiplayer gaming environment where players can use prompts (to the in-game agent, Savi) to modify the game world.&lt;/p&gt;
-&lt;p&gt;I fired it up on my phone for a few minutes and was able to prompt a castle into existence, then a dragon, then ride the dragon to fly around that castle.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Two mobile screenshots side by side from a 3D voxel-style game. Left: a first-person view from the saddle of a small teal dragon, its neck with pale diamond markings and two curved white horns in the foreground, flying toward a dark stone castle with tall teal-gray conical spires, glowing windows and teal pennants, on a rocky island in a lake with green and snowy hills behind. Top bar: profile icon, &amp;quot;keep it&amp;quot;, &amp;quot;your den&amp;quot; dropdown, &amp;quot;+ new game&amp;quot; button and a &amp;quot;...&amp;quot; menu. Right side: icon buttons and a portrait of a white-haired, freckled character labeled &amp;quot;tap to talk&amp;quot;. Bottom right buttons: &amp;quot;JUMP&amp;quot; and &amp;quot;USE&amp;quot;. Right: the same game with the chat panel open over the castle scene. Top bar: &amp;quot;your den&amp;quot; dropdown, &amp;quot;+ new game&amp;quot;. Button: &amp;quot;earlier ↑&amp;quot;. User message: &amp;quot;Make the dragon smaller and land it next to me again&amp;quot;. Replies from the white-haired character: &amp;quot;on it. shrinking it to a pony-sized dragon and landing it right beside you.&amp;quot; Then: &amp;quot;it's a little dragon now and you're already up on it over the lake. your view sits right in its saddle, horns ahead. fly back to the house and look down. saw your screen just now: flying over the water, the neck and horns ahead, the house on the far shore&amp;quot; Then: &amp;quot;oh, idea: USE while flying could breathe fire instead, with JUMP held to land. want it?&amp;quot; Input box: &amp;quot;what do you want to bring in?&amp;quot; Buttons below: upload, a small pixel-art icon, &amp;quot;lock in&amp;quot; and a microphone." src="https://static.simonwillison.net/static/2026-10-29/IMG_9406.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;By Jacob's telling, Spawn is now being developed autonomously by a swarm of Fable-powered agents costing over $3 million in tokens &lt;em&gt;per month&lt;/em&gt; ("we spend 30x payroll on AI tokens").&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Our agents change the live code directly and ship to production hourly, so they read every error, bug report and metric themselves. About 60% of our work starts from a production error, a Savi bug report (Savi is the AI you build games with in Spawn), something odd in our logs, or a feature request.&lt;/p&gt;
-&lt;p&gt;Savi files bugs herself. When a user hits one, or Savi hits one in the product, she files it. It goes straight to an agent that decides whether it's a real bug to fix, something we won't fix, or intentional design that needs a decision. Usually it becomes a change, delivered to that user within an hour, with a message in the same chat.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is &lt;a href="https://en.wikipedia.org/wiki/Continuous_deployment"&gt;continuous deployment&lt;/a&gt; turned up to 11:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A loop this tight only works if it never stops, so we treat an hour without a ship as a SEV-0, our most severe kind of incident. Unshipped changes pile up, and every problem already in production lasts longer. The feedback slows down too. An agent can only keep a few hours of work in its head, so shipping faster than that actually helps it stay coherent. [...]&lt;/p&gt;
-&lt;p&gt;We can roll back a broken change in 30 seconds, exactly where it's broken and nowhere else. When a monitor or a log alert fires, it starts or wakes an agent that owns the incident, and we break things on purpose to test that those recovery paths work.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;My eyebrows raised at least a dozen times reading this. I have trouble imagining this style of development working on software with higher stakes for when something goes wrong, but for a game this appears to be working surprisingly well.&lt;/p&gt;
-&lt;p&gt;Jacob says that Fable 5 (and then 5.1) was the model that made this level of autonomy possible. Opus 5.5 doesn't quite hack it for them, and when they tried GPT-6 Astra to apply fixes from a security review everything stopped working:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Every feature had been disabled and marked to be turned on again once the security fixes were done. Astra had gone through our whole product and made the insecure things secure by turning them off.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;These kinds of extreme experiments are why I'm &lt;a href="https://simonwillison.net/2026/Oct/28/vibe-game-development/"&gt;excited about game development&lt;/a&gt; as a substrate for exploring the edges of what today's coding agents can do.
-
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/game-design"&gt;game-design&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude"&gt;claude&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/coding-agents"&gt;coding-agents&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/agentic-engineering"&gt;agentic-engineering&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/claude-mythos-fable"&gt;claude-mythos-fable&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="game-design"/><category term="ai"/><category term="generative-ai"/><category term="llms"/><category term="claude"/><category term="coding-agents"/><category term="agentic-engineering"/><category term="claude-mythos-fable"/></entry></feed>
+</summary><category term="kyle-kingsbury"/><category term="llms"/><category term="ai"/><category term="generative-ai"/><category term="ai-misuse"/></entry></feed>

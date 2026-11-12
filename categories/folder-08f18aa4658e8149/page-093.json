@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "0f24e967ae2a4015efcb53b1",
+      "title": "记录配置SSL证书",
+      "summary": "首先你要有一个SSL证书，建议在阿里云购买或者 免费申请 ，具体过程阿里云这个页面讲的很详细，在此不过多赘述。 配置证书 由于我的nginx安装了ssl模块，直接进入配置证书。 解压下载好的证书，然后上传到服务器。位置自己方便找到即可 我放到了root/card 配置nginx.conf 进入nginx.conf，我的文件位置在 /etc/nginx/nginx.conf ,有些可能在 /usr/local/nginx/conf 编辑模式，启动！ http { include mime.types; # 包含 MIME 类型定义 default_type application/octet-stream; sendfile on; keepalive_timeout 65; # HTTPS server bl…",
+      "image": null,
+      "publishedAt": "2024-12-17T11:46:07Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/163/",
+      "detailPath": "articles/0f24e967ae2a4015efcb53b1.json"
+    },
+    {
+      "id": "8a4c67247a06a8188cbdde2a",
+      "title": "《超越百岁：长寿的科学与艺术》读后感",
+      "summary": "《超越百岁：长寿的科学与艺术》读后感 前言 从机构脱离出来之后，每天的自由时间变得多了起来。每天晚上23:00左右的时间变成了读书时间，坐在床上慢慢读很多以往想看，但是没法看的书。 追求自由职业主要是希望能够身体健康地过完这一生，我的目光很快锁定了 《超越百岁》 这本畅销书，很多人都向我推荐过。其实我的目标并不是活到超过100岁，我其实感觉我也没这个基因、没这个命，只是想要看看到底有哪些因素会影响健康罢了。 摘录 书里面有几个比较让我眼前一亮的概念—— 第一个是， 医学3.0 。 作者把医学分成了不同的版本。医学1.0指治疗手段通过观察病人得出，没有严谨的科学实验；医学2.0指我们的现代医学，遵循循证医学，需要使用严谨的科学实验才能得出治疗手段，只能治疗有限的疾病，哪里出问题打补丁治哪里，但是对于像癌症、糖尿…",
+      "image": null,
+      "publishedAt": "2024-12-17T02:58:41Z",
+      "sourceId": "207f6e65632bf687",
+      "sourceTitle": "Psychic Paper",
+      "link": "https://yuqiqin.me/reading-notes-outlive/",
+      "detailPath": "articles/8a4c67247a06a8188cbdde2a.json"
+    },
+    {
       "id": "40ce156aab191cc18ad0de3a",
       "title": "去 Google 化的手機",
       "summary": "我目前用的手機是 Google Pixel 7，但作業系統不是預設的 Google Android，而是完全去除 Google 元件的 GrapheneOS，我用這個系統已經超過一年半了，體驗相當不錯。",
@@ -637,28 +659,6 @@
       "sourceTitle": "Psychic Paper",
       "link": "https://yuqiqin.me/vworp-to-altay/",
       "detailPath": "articles/7c603d5a1a172cad19d6ba7d.json"
-    },
-    {
-      "id": "70876e5e134b07ae683c4592",
-      "title": "issue 18~27 # 你喜欢哪期影像？",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2024-12-02T09:18:22Z",
-      "sourceId": "a8171b96847c576f",
-      "sourceTitle": "ColdMe",
-      "link": "https://mp.weixin.qq.com/s/-Xsu2tqw3An9dayprnPgzQ",
-      "detailPath": "articles/70876e5e134b07ae683c4592.json"
-    },
-    {
-      "id": "feaa68024cbae9942d8ec9b3",
-      "title": "Hexo 配置 i18n",
-      "summary": "本文是一篇详细的 Hexo 博客国际化（i18n）配置教程，介绍了如何使用 hexo-generator-plus 插件为网站添加多语言支持。内容涵盖从基础的 Hexo 配置、目录结构规划、语言文件创建，到具体的 Pug 模板修改，全面讲解了首页、归档、分类和标签页面的改造过程，并提供了一个实用的导航栏语言切换方案。跟随本教程，你可以一步步为你的博客实现中英双语或更多语言功能。",
-      "image": "https://gh-card.dev/repos/kiwirafe/hexo-generator-plus.svg?fullname=",
-      "publishedAt": "2024-12-02T02:20:17Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/17cc.html",
-      "detailPath": "articles/feaa68024cbae9942d8ec9b3.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "489a4f23bf0bfe4ac2465497",
+      "title": "2019年终小记",
+      "summary": "关于2019年",
+      "image": null,
+      "publishedAt": "2019-12-31T00:00:00Z",
+      "sourceId": "1d642c054c147719",
+      "sourceTitle": "大猫的部落格",
+      "link": "https://damao.ca/posts/2019%E5%B9%B4%E7%BB%88%E5%B0%8F%E8%AE%B0/",
+      "detailPath": "articles/489a4f23bf0bfe4ac2465497.json"
+    },
+    {
+      "id": "e71a2a0efd4b2456b59ad375",
+      "title": "Numpy实现透视变换",
+      "summary": "其实就是用 numpy.linalg.solve 解方程啦 透视变换就是三维空间上的一个点乘上变换矩阵转移到别的坐标（因为图片本身是二维的，所以新旧坐标的z值都为1），即： \\begin{bmatrix} XW \\\\ YW \\\\ W \\end{bmatrix} = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & 1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix} 解得新坐标： X = \\frac {ax+by+c} W = \\frac {ax+by+c} {gx+hy+1} Y = \\frac {dx+ey+f} W = \\frac {dx+ey+f} {gx+hy+1} 但其实a-h是未知的，…",
+      "image": "https://emptystack.top/processed_images/perspective-transform-fs8.b8783eea241bf8fe.webp",
+      "publishedAt": "2019-12-30T11:22:27Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/perspective_transform/",
+      "detailPath": "articles/e71a2a0efd4b2456b59ad375.json"
+    },
+    {
       "id": "dff720e94eb5a6b98ed7971f",
       "title": "关于民航总医院恶性伤医事件的一点引申思考",
       "summary": "当医务人员把患者放在了对立面，医患关系永无宁日。",
@@ -637,28 +659,6 @@
       "sourceTitle": "四喜丸子",
       "link": "https://fourhappylions.com/posts/sleep-as-a-baby/",
       "detailPath": "articles/ba426f6297e142dd5cfb3b28.json"
-    },
-    {
-      "id": "ce208c5b1b2eb60b756f15cc",
-      "title": "四川 | 这地方，还能来一次",
-      "summary": "我希望有个如你一般的人。如这山间清晨一般明亮清爽的人，如奔赴古城道路上阳光一般的人，温暖而不炙热，覆盖我所有肌肤。由起点到夜晚，由山野到书房，一切问题的答案都很简单。 看了挺久的博客，最喜欢的还是 罗磊 老师。 这个博客有许多部分也是借鉴了他的思路 正文 三年前和初恋女友看了《从你的全世界路过》这电影，当时就记住了这个地方，也向往了三年。 阴差阳错，前段时间父母问我去不去稻城，我当时就兴奋起来了，果断订了机票酒店。 杭州到稻城只有这一班航班，略有些红眼，图为机场高速路上看日出 稻城机场，世界上海拔最高机场（没有之一） 唯一的感觉就是有一些高原反应 不过还好，以前练过管弦乐，肺活量高，呼吸还算顺畅 吃午饭海拔相对低一些 吃的团餐 晚上睡在海拔高度约2900米的民宿，就在景区门口 （第二天 景区）茅十八向荔枝求婚…",
-      "image": "https://s2.ax1x.com/2019/07/28/e1ASWF.jpg",
-      "publishedAt": "2019-07-27T21:00:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/daocheng/",
-      "detailPath": "articles/ce208c5b1b2eb60b756f15cc.json"
-    },
-    {
-      "id": "868c2b89f39a89ed82cec085",
-      "title": "Android 中的 Hardware Layer 详解",
-      "summary": "技术复核 · 2026-10-13。 本文 2019 年的截图和日志保留为历史案例，不代表当前设备的性能。源码以 AOSP android-9.0.0_r1 、 android-1",
-      "image": null,
-      "publishedAt": "2019-07-27T06:09:13Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2019/07/27/Android-Hardware-Layer/",
-      "detailPath": "articles/868c2b89f39a89ed82cec085.json"
     }
   ]
 }

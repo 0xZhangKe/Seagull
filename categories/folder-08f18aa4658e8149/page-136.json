@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "f960cb35590df1ef3190b29f",
+      "title": "android反编译-如何防止反编译",
+      "summary": "前言 前面介绍了怎样去反编译别人的代码。哈哈，这里居然又写进行防止反编译。但是，还是先来写写吧。 使用ProGuard proguard android的sdk中就有提供，使用它可以对代码进行混淆和精简，处理后的代码，虽然仍然可以反编译，但是阅读起来相当困难，降低代码的可读性。操作简单，推荐使用。 proguard使用方法和配置，可以看我之前的博客： https://isming.me/2014-05-31-use-proguard/ 另外网上有别人共享的proguard配置模板，也可以参考： https://github.com/krschultz/android-proguard-snippets 如果大家有去proguard的官网，ProGuard的公司提供的DexGuard可以给android程序提供…",
+      "image": null,
+      "publishedAt": "2015-01-17T17:35:53Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-18-android-anti-decompile/?utm_source=rss",
+      "detailPath": "articles/f960cb35590df1ef3190b29f.json"
+    },
+    {
+      "id": "90fd86fe0cea02e37d6191e9",
+      "title": "使用 Android Studio 查看 Android Lollipop 源码",
+      "summary": "技术复核（2026-10-13） ：原文面向 Android 5.0 Lollipop 与 Android Studio 1.x。下面的 IDEGen 流程已按 AOSP android-5.0.0_r1 源码核对，属于历史方案；新增的 AIDEGen 示例以 android-16.0.0_r1 文档为准。 Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本.",
+      "image": null,
+      "publishedAt": "2015-01-16T13:54:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio/",
+      "detailPath": "articles/90fd86fe0cea02e37d6191e9.json"
+    },
+    {
       "id": "5cd678610b320218a092b9e6",
       "title": "android反编译-smali语法",
       "summary": "前言 前面我们有说过android反编译的工具，如何进行反编译。反编译后可以得到jar或者得到smali文件。Android采用的是java语言进行开发，但是Android系统有自己的虚拟机Dalvik,代码编译最终不是采用的java的class，而是使用的smali。我们反编译得到的代码，jar的话可能很多地方无法正确的解释出来，如果我们反编译的是smali则可以正确的理解程序的意思。因此，我们有必要熟悉smali语法。 类型的表示 java里面包含两种类型，原始类型和引用类型(包括对象)，同时映射到smali也是有这两大类型。 原始类型 V void (只能用于返回值类型) Z boolean B byte S short C char I int J long F float D Double 对象类型…",
@@ -637,28 +659,6 @@
       "sourceTitle": "isming.me",
       "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
       "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
-    },
-    {
-      "id": "1c139bd8e75283939d7dda72",
-      "title": "解决Ubuntu下Sublime text 3中文输入的问题",
-      "summary": "好久之前便听朋友说起Sublime Text这款软件很好用，终于这几天有空折腾，把软件给装起来了。用起来确实很不错，写代码很爽。 但是用了一段时间之后，我需要输入中文了，无论怎么切换输入法，都无法切换到中文。 网上搜索了一下，原来这是Bug。找解决方法吧。下面介绍我的解决方案，是大神cjacker解决成功的啦，我只是copy一下，方便大家在遇到这个问题的时候可以方便解决。 我的系统：ubuntu 13.04 我的输入法：fcitx sublime版本：3059 理论上支持 sublime text2/3 1.保存代码sublime-imfix.c /* sublime-imfix.c Use LD_PRELOAD to interpose some function to fix sublime input…",
-      "image": null,
-      "publishedAt": "2014-03-14T16:24:45Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-15-ubuntu-sublime-text-error/?utm_source=rss",
-      "detailPath": "articles/1c139bd8e75283939d7dda72.json"
-    },
-    {
-      "id": "e9f8e637af3d3fb54ca889a7",
-      "title": "去艺圃",
-      "summary": "之前去艺圃，从西中市转进吴趋坊。这还算一条大路，但已经不是干将路或者平江路那样的门面路了，两边都是杂货店面馆五金店修理铺这样的生活必需。走到一半，连绵的店铺一下断了，出现一条小路，路口白墙上光用红字写着“艺圃”两字（其他景点标识都是一块方方正正的铁牌子棕底白字尽显“古典优雅气质”）于是我们就依据指示拐进去。一条砖路，横向大概能容四五个人，两边都是白墙黑砖的平房，住着人，门口有老头老太坐在藤椅上晒太阳，不时出现两三条土狗，或黄或黑，你追我逐。墙檐上走过一只黑猫，高高在上地看了一眼踏入小巷的陌生人，然后优雅地走着猫步离开了。 我作为带路人颇为得意对同伴说，虽然艺圃在外不出名，可它和拙政园是一起进的世界文化遗产，门票便宜人还少，我们一定不虚此行。我说得挺大声，前面走着一位的老爷爷在我落声之后淡淡地重复了一句“世界文…",
-      "image": "https://i.loli.net/2020/02/17/tO4nFNQqY5hvkVM.jpg",
-      "publishedAt": "2014-02-27T01:59:29Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/02/26/go-yipu/",
-      "detailPath": "articles/e9f8e637af3d3fb54ca889a7.json"
     }
   ]
 }

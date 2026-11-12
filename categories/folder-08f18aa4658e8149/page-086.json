@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "f03cf230d20f6a8a250bc610",
+      "title": "20250325",
+      "summary": "不得不说，官大一级压死人，这句话不是没有道理的。 最近开发的一个项目，已经到了测试阶段。 结果说改就改，开发、测试、PM在一起争论了一个小时。 都不如上一级的一句话：“那就改吧”。 那就改吧。",
+      "image": null,
+      "publishedAt": "2025-03-24T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/20250325",
+      "detailPath": "articles/f03cf230d20f6a8a250bc610.json"
+    },
+    {
+      "id": "ae366277a0c84ee79a4a2b6d",
+      "title": "该让机器人交社保吗？",
+      "summary": "两会期间，忘了在哪看到一则新闻，说有人大代表提议，要工厂里的“机器人”也交社保。 新闻一出，网络立即一片哗然。 民间一直以来都有这样一种声音，认为社保是一种“税”。这种“税”既增加了企业负担，也减少了劳动者实际到手收入。 对于现代社保制度，他们也有不同的看法，认为现代社保制度是一项不可持续的制度，它建立在经济持续发展，社会生产力不断增长的假设之上。而这个假设本身，很有可能是错误的。这种质疑的声音不仅仅针对我国的社保制度，而是对全世界所有国家现行的社保制度都提出了同样的质疑。 前段时间，以刘强东主导的京东为首，发出了“算法不能成为压榨底层兄弟工具”的时代强音，同样引出了同样的质疑声音。 质疑的理由千奇百怪，但归根结底，并没有在前人的基础上更进一步，还是加重企业负担，减少劳动者到手收入，这样的老调重弹。 只不过，…",
+      "image": null,
+      "publishedAt": "2025-03-24T12:43:52Z",
+      "sourceId": "c7356b172af43f7f",
+      "sourceTitle": "刑辩人在路上",
+      "link": "https://xingbianren.cn/post/301.html",
+      "detailPath": "articles/ae366277a0c84ee79a4a2b6d.json"
+    },
+    {
       "id": "4e8b3b4096a061edd135cb55",
       "title": "Future 的大小对性能的影响",
       "summary": "在 Rust 异步编程中，有一种观点认为： Future 的大小显著影响性能 。你是否怀疑过这个说法的真实性？如果是真的，这种性能差异的根源又是什么？今天，我翻阅了一些源码，并编写实验代码来一探究竟。 Future 的大小如何计算？ 为了验证“Future 大小影响性能”这一说法是否成立，我们先从一些简单代码入手。首要任务是弄清楚一个 Future 的大小是如何确定的。毕竟，在编译器眼里，Future 只是一个 trait： pub trait Future { type Output ; fn poll ( self : Pin < & mut Self > , cx : & mut Context < ' _ > ) -> Poll < Self :: Output > ; } 那么，其大小取决于实现这个…",
@@ -637,28 +659,6 @@
       "sourceTitle": "金色河流",
       "link": "https://goldenriver.site/posts/2025-week-10/",
       "detailPath": "articles/8e65ef878f98c1b0e0b0510c.json"
-    },
-    {
-      "id": "340d545b0f5d93ce9e0f3756",
-      "title": "Typst 2025 社区通话",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2025-03-09T19:24:52Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/typst-call/",
-      "detailPath": "articles/340d545b0f5d93ce9e0f3756.json"
-    },
-    {
-      "id": "1205f6f55164c7da193dc6b0",
-      "title": "迎着阳光盛大逃亡",
-      "summary": "迎着阳光盛大逃亡｜随笔20250308 最近英国的天气连续几天都特别好，阳光灿烂，没有早春的寒峭、只有暖意的明 […]",
-      "image": null,
-      "publishedAt": "2025-03-09T17:55:38Z",
-      "sourceId": "3c6ccf75c8f41329",
-      "sourceTitle": "CC的数字花园",
-      "link": "https://cyrus19.cc/archives/1313",
-      "detailPath": "articles/1205f6f55164c7da193dc6b0.json"
     }
   ]
 }

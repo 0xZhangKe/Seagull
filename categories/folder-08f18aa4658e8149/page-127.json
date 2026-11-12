@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "58aaa2517edbfb1cba110a36",
+      "title": "家书（2020）",
+      "summary": "老爷子： 一切安好？ 今年是要回家看你的，照规矩，三周年是大事。现在又有了变化，能否回去变得不确定，整个世界都在变。 我胸前的坠子刻着「叁拾」，这名字也用了些年头，等熬到了这三十的关口，还真是不太想认。命运就这么把人推搡着往前走，一点儿借口和余地都没有。这两年才看清楚时间，它轻声细语，却把痕迹刻得重重。日子越久，越怕时间太快，是我今年常有的感慨。 嘟嘟长得很好，比同龄孩子要稍高一些，看起来超过我希望很大。吃得饱，也睡得香，之前一直是个睡渣，最近有不少起色，也能让我和十一睡个整觉了。似乎家里最需要关心的就是他，最不用关心的也是他。每天回到家看见我，嘴里就会爸爸爸爸爸爸说个不停，要是做了什么坏事，你一问他谁干的啊，他还是会喊爸爸爸爸推卸责任给我。 这是个古灵精怪的家伙，脑子活络，记忆力也好，马上 15 个月了，会…",
+      "image": null,
+      "publishedAt": "2020-05-03T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/05/%E5%AE%B6%E4%B9%A62020/",
+      "detailPath": "articles/58aaa2517edbfb1cba110a36.json"
+    },
+    {
+      "id": "f97b52823a543d3f94d1428e",
+      "title": "数和符号的轨迹：2020年阿贝尔奖解析",
+      "summary": "本文首发于微信公众号“赛先生”，遵守首页的CC版权声明：署名-非商业性使用-禁止演绎，请自觉遵守，非授权者禁止 […]",
+      "image": "https://0.gravatar.com/avatar/9b9252f394ef79626a2b9243f7d6fbe23214eecce69b8ec94959863487e8bfd8?s=96&d=identicon&r=G",
+      "publishedAt": "2020-05-02T22:39:13Z",
+      "sourceId": "f18f137548f6d7e8",
+      "sourceTitle": "fwjmath的相空间",
+      "link": "https://fwjmath.wordpress.com/2020/05/03/2020-abel-prize/",
+      "detailPath": "articles/f97b52823a543d3f94d1428e.json"
+    },
+    {
       "id": "a563b56c4cddf1d641e748eb",
       "title": "网课和最近",
       "summary": "买错书了。。 脑子一热买了一套《计算机程序设计艺术》 一开始觉得，任何事情，只要跟艺术扯上关系，那一定是到达了一定的深度了，并且是拥有着 举几个例子，环境与艺术，工业艺术 更何况将计算机与艺术结合起来 开始觉得是将一些比较难的算法，与高等数学相结合，或者是一些程序的特殊设计与优化，亦或是解读一些难懂的程序 后来翻开书一看 这是一本纯讲数学的书 没有C语言代码，只有寥寥无几（相对整本书来说）的一些汇编 大部分是高等数学中的各种函式，方程，算法，结构等。 多多少少和计算机扯得上关系。 关于网课 最近我也在上网课，已经持续了十个周了，十分漫长 每每起床都有种想法就是为什么我明明能继续睡觉，却要爬起来看直播 没办法吧，全世界的人都在用网络上课。 哦对，今天是世界读书日，你今天读书了吗",
@@ -637,28 +659,6 @@
       "sourceTitle": "空栈顶",
       "link": "https://emptystack.top/A-Canticle-For-Syd-Mead/",
       "detailPath": "articles/11ae9aa22ba636a7e05425b7.json"
-    },
-    {
-      "id": "489a4f23bf0bfe4ac2465497",
-      "title": "2019年终小记",
-      "summary": "关于2019年",
-      "image": null,
-      "publishedAt": "2019-12-31T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/2019%E5%B9%B4%E7%BB%88%E5%B0%8F%E8%AE%B0/",
-      "detailPath": "articles/489a4f23bf0bfe4ac2465497.json"
-    },
-    {
-      "id": "e71a2a0efd4b2456b59ad375",
-      "title": "Numpy实现透视变换",
-      "summary": "其实就是用 numpy.linalg.solve 解方程啦 透视变换就是三维空间上的一个点乘上变换矩阵转移到别的坐标（因为图片本身是二维的，所以新旧坐标的z值都为1），即： \\begin{bmatrix} XW \\\\ YW \\\\ W \\end{bmatrix} = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & 1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ 1 \\end{bmatrix} 解得新坐标： X = \\frac {ax+by+c} W = \\frac {ax+by+c} {gx+hy+1} Y = \\frac {dx+ey+f} W = \\frac {dx+ey+f} {gx+hy+1} 但其实a-h是未知的，…",
-      "image": "https://emptystack.top/processed_images/perspective-transform-fs8.b8783eea241bf8fe.webp",
-      "publishedAt": "2019-12-30T11:22:27Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/perspective_transform/",
-      "detailPath": "articles/e71a2a0efd4b2456b59ad375.json"
     }
   ]
 }

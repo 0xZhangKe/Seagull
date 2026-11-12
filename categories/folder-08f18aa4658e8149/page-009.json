@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "id": "eec2450bcfe5db2e404bbfda",
+      "title": "真心，真的很珍貴(진심, 정말 소중한 것)",
+      "summary": "站在首爾塔觀察愛情鎖的時候 其實有很多感觸 但這些感觸對我來說似乎是有一點偏悲傷、負面的 那些愛情鎖，是許多人當下對另一半真心的展現，有人祈禱要永遠在一起，有人關心著另一半的身體健康…. 那些滿滿擁有真心的愛情鎖，真的是很珍貴的一件事情 因為「真心」這種東西，是無法用任何東西去換來的 再多的錢、名氣跟地位、多帥或是多美麗都無法換來真的愛一個人的真心 感情，是無法控制的 真心之所以珍貴，是因為這個無法強求 也無法用其他東西去交換過來 就像… 一個人可以付出很多、非常真誠，也可以努力成為更好的人 但對方依然可能不會心動 聽起來是滿殘酷的一件事情 也正因為漸漸明白，愛情是多麼無法控制、無法強求的事情， 所以我才更加覺得… 那些能夠彼此相愛的人們 究竟擁有著多麼珍貴的東西 진심, 정말 소중한 것 남산서울타워에서…",
+      "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/chihyoon/c2152a3c-9950-43ba-917e-e0dfa507a55e-1.webp",
+      "publishedAt": "2026-10-15T04:37:00Z",
+      "sourceId": "51aefe52efef4bf4",
+      "sourceTitle": "一起和 Yoon 聊心事",
+      "link": "https://yoon.club/4969/",
+      "detailPath": "articles/eec2450bcfe5db2e404bbfda.json"
+    },
+    {
+      "id": "af2baeb0fd57bef5e2e52c2b",
+      "title": "把寵物餵食器攝影機接進 Frigate 和 Home Assistant：拆十個品牌的 APK 選機，逆向「美國 FurSpark」",
+      "summary": "作者想替客廳的 Frigate 補一顆餵食區的近拍鏡頭,查了十個品牌的寵物餵食器攝影機,發現沒有一台開放影像串流。文中說明怎麼在購買前下載 App 安裝檔、從裡面的影像 SDK 判斷有沒有機會接出畫面,最後選了開發商其實是深圳盯盯拍的 FurSpark Big Eye:在 TCP 6200 找到私有的 H.264 串流,用 go2rtc 接進 Frigate(附設定);用 Python daemon 把雲端 MQTT 的餵食控制橋接成 Home Assistant 的 22 個 entity;再用 qemu 跑 App 裡的 arm64 TUTK 函式庫取得即時音訊,並記錄 bionic 與 glibc 不相容的處理、音訊斷線拖垮影像、外網需要 Opus 等坑。即時對講沒有做成,改用按鈕播預錄提示音。分貓方面…",
+      "image": null,
+      "publishedAt": "2026-10-15T03:43:41Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/reverse-engineering-furspark-pet-feeder-camera",
+      "detailPath": "articles/af2baeb0fd57bef5e2e52c2b.json"
+    },
+    {
+      "id": "c983ae0cef8c25303dd96fe7",
+      "title": "復刻版好和弦",
+      "summary": "前言 # 在淘宝上有很多的中囯人的原創吉他教材，我買了一些來看看他們是怎麼寫教材的。 其中一本書賣得滿貴的（以中囯出版教材來說），超過新台幣 800 元，評價也很好，我就買回來了。 漏發光碟 # 首先，購買評論的大家似乎都有光碟，我沒拿到，用百度雲端下載了快兩週才把 30 多TB 的影片、樂譜、伴奏下載完畢，這讓我極度不悅。 復刻版好和弦？ # 書籍最前面的篇章是樂理講解，一點開影片，要不是上面寫簡體中文，我差點以為他倒賣了好和弦家庭號大包裝。 影片截圖（一） 看得出他也是受 Wi 神影響，跟著買了 Mac、用了 Keynote 製作。 但，能不能換個顏色或字體啊？要有一點自己的想法吧？ 影片截圖（二） 他講的內容基本跟好和弦原版一模一樣，只差沒把哆啦 A 夢頭上頂五顆棒球的比喻也加進去了。 樂理也之佔整本書…",
+      "image": "https://eddielv.com/musings/bootleg-nicechord/video1.png",
+      "publishedAt": "2026-10-15T03:23:38Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/bootleg-nicechord/",
+      "detailPath": "articles/c983ae0cef8c25303dd96fe7.json"
+    },
+    {
+      "id": "1ac3fc86ca57164e671635b1",
+      "title": "BlogBlog 同樂會：部落格文章（與他們的產地）（2026 年十一月）",
+      "summary": "十一月份的 BlogBlog 同樂會，主題是「部落格文章（與他們的產地）」，由 BlogBlog 宇宙的元老之一──資工小廢物 - JN 主持。",
+      "image": null,
+      "publishedAt": "2026-10-15T00:00:00Z",
+      "sourceId": "ad9c9cc2127a7a13",
+      "sourceTitle": "BlogBlog.Club 部落部落俱樂部 Blog",
+      "link": "https://blogblog.club/blog/bbp-nov-2026",
+      "detailPath": "articles/1ac3fc86ca57164e671635b1.json"
+    },
+    {
+      "id": "7cc8712ae024cf8125e0d5b5",
+      "title": "什麼是 BBP？",
+      "summary": "「BBP 可以以各種方式被人體吸收。首先，它可以被皮膚吸收，⋯⋯BBP 攝取的 27% 通過此途徑發生。⋯⋯BBP 也可以口服。被身體吸收的化合物的量取決於所施用的劑量。在高劑量時吸收似乎是有限的，這意味著少量吸收比大量吸收更容易。最後，BBP 可以被吸入。在這種情況下，BBP 通過肺吸收。⋯⋯但是，如果 BBP 被身體吸收，可能會產生毒性效應。」",
+      "image": null,
+      "publishedAt": "2026-10-15T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/what-is-bbp",
+      "detailPath": "articles/7cc8712ae024cf8125e0d5b5.json"
+    },
+    {
+      "id": "3edaefa869e6edebf937546f",
+      "title": "2026-08-08 / 舞萌比赛",
+      "summary": "图为《前端猫在舞萌比赛》。不过，前端猫和舞萌在哪里？",
+      "image": "https://remnote-user-data.s3.amazonaws.com/8nF8-dx0GZREEqZ5nndUIwBPf-x8G3m8dHiRWh4HLwCrvGerRm3yo0uPT1ZraImTmiy4O0rGOR3HZ25XcldMFdbko32aef74tALpFFJRzYHFixYBzLlu37xg6RHjuNZ-.webp",
+      "publishedAt": "2026-10-14T16:46:02Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/daily/98/",
+      "detailPath": "articles/3edaefa869e6edebf937546f.json"
+    },
+    {
       "id": "39503de1524ba43ec1470e54",
       "title": "2026年10月日记（上）",
       "summary": "秋暑き日々を送りぬ日々おなじく（秋暑未消，日子一天天过去，日日如一。）—— 相馬遷子",
@@ -199,17 +265,6 @@
       "detailPath": "articles/2e0d89c61990898b397accf8.json"
     },
     {
-      "id": "cc818276cc3e159b45e0f554",
-      "title": "无标题文章",
-      "summary": "剎那圖鑑長這麼大從不支持鏈接，現在 Meta 決定支持：五十美元一個月，可以在四個帖子裏加鏈接。（原本可以加鏈 […]",
-      "image": "https://1.gravatar.com/avatar/19d667891f84a17deee970e145cef9ed58b8dd71869b0b97533a8821fb128616?s=96&d=identicon&r=G",
-      "publishedAt": "2026-10-13T04:21:59Z",
-      "sourceId": "e1dfcc8815d1c9f8",
-      "sourceTitle": "IT 公论",
-      "link": "https://blog.yitianshijie.net/2026/10/13/6128/",
-      "detailPath": "articles/cc818276cc3e159b45e0f554.json"
-    },
-    {
       "id": "ed3d56e43bd174c6962ead8e",
       "title": "一日十更僞教學",
       "summary": "前言 # 一天發佈多篇文章對 Eddie 來說滿常見的，前幾天（10-05）發佈了九篇文章，由最後一篇的時間往回推二十四小時的話，10-4 的〈連贏六次〉應該要算在同一天，等於二十四小時內發佈了十篇文章，來分享自己怎麼做到寫這麼多篇的。 寫文章的時候 # 活動音響工作 音響工作時，我的手機常年開著兩種畫面，一是活動流程表，二是備忘錄。 由於音響總是被活動公司安排要最早進場佈置，我手腳快，常常一下就弄完，有大量的空檔可以利用。 加上人在環境不同的地方時，感官 1 的差異會影響不同思緒產生，因此人在外時的「靈感」會特別多。 馬桶上 這篇文章就是在馬桶上寫的。 自從坐著尿尿之後，待在馬桶上的時間就變長了，因爲文章還沒寫完。 記得把家裡馬桶弄得乾乾淨淨，這樣寫文章才會舒服。 沒工作的時候 沒事幹所以開始創作了。 做爲…",
@@ -219,17 +274,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/multi-update-one-day/",
       "detailPath": "articles/ed3d56e43bd174c6962ead8e.json"
-    },
-    {
-      "id": "c2ea6fae6029241283b7aa33",
-      "title": "納粹酒吧去不去？",
-      "summary": "John Gruber 說啁啾會館回來了。我固然也不喜歡、不認同 Elon Musk，但退館的主要理由還是他對 […]",
-      "image": "https://1.gravatar.com/avatar/19d667891f84a17deee970e145cef9ed58b8dd71869b0b97533a8821fb128616?s=96&d=identicon&r=G",
-      "publishedAt": "2026-10-13T00:47:54Z",
-      "sourceId": "e1dfcc8815d1c9f8",
-      "sourceTitle": "IT 公论",
-      "link": "https://blog.yitianshijie.net/2026/10/13/shall-we-go-to-a-nazi-bar/",
-      "detailPath": "articles/c2ea6fae6029241283b7aa33.json"
     },
     {
       "id": "90ed05a9645b5399899a1fb3",
@@ -615,50 +659,6 @@
       "sourceTitle": "est's blog",
       "link": "https://blog.est.im/2026/stdout-39",
       "detailPath": "articles/61387542b838e626abc0b4a3.json"
-    },
-    {
-      "id": "6a307cca6bf22514be4c8122",
-      "title": "讀《一句頂一萬句》",
-      "summary": "讀《一句頂一萬句》 《 一句頂一萬句 》是劉震雲的一部長篇小說。開頭差點沒能看下去，一下子講太多人物了，老楊、老馬、老裴⋯⋯不過耐心看下去，很快主綫就會變得清晰。整本書像是一出群像劇，講了很多人的故事、不同人的家長裡短、人情世故，有種在聴不同人的八卦的感覺，誰不喜歡吃瓜呢，就越看越有意思。 書分成了兩部分，出延津記和回延津記，前者主要講述楊百順的前半生，而後者主要關於牛愛國，他是楊百順的養女的後代。 楊百順的一生并不順，遇過不少人和挫折，最後還把疼愛的養女弄丟了(被拐賣了)，於是他也像傷心的老裴一樣想离開延津這個傷心地，一直走，直到走到一個心裡不再難受的地方。 牛愛國和楊百順都一樣，和妻子沒話可說，妻子和身邊的人出軌，而他們都被妻子瞞在鼓裡。為什麼會出軌？大概是因為兩人沒話可說，聊不起來，覺得孤單寂寞，又正好…",
-      "image": null,
-      "publishedAt": "2026-10-11T06:52:00Z",
-      "sourceId": "81ef81d50cdeee4b",
-      "sourceTitle": "Taxodium",
-      "link": "https://taxodium.ink/%E8%AE%80%E3%80%8A%E4%B8%80%E5%8F%A5%E9%A0%82%E4%B8%80%E8%90%AC%E5%8F%A5%E3%80%8B.html",
-      "detailPath": "articles/6a307cca6bf22514be4c8122.json"
-    },
-    {
-      "id": "e315bbd0dc260eaa4475c7d6",
-      "title": "我的华强北手表介绍",
-      "summary": "我的华强北手表介绍 这周只在周日放了一天假，而且作业偏多，因此就不写《 学校生存指南 》了。今天我来谈一下我已经在此前几篇文章透露的我在学校里使用的华强北手表。 配置 距离我第一次戴华强北手表去学校（2023年10月23日，23w43a 1 ）到现在也快3年了，我那会压根想不到我知道现在高中还在用华强北手表，不过已经换过几款就是了。 我目前在用的华强北手表是CD12max，这款发售于2025年12月，我在今年(2026)2月时买的，不多说，直接贴出配置信息： 信息 型号：CD12max 处理器： Unisoc W517 (USW6152) 内存：4G 储存：64G 出厂系统：NOEMIE OS (Android 9) 屏幕尺寸：2.38英寸 电池容量：1400mAh 摄像头：200w像素 无线传输：WIFI(…",
-      "image": "https://blog.xinsl.xin/posts/cd12max/images/820e94595e304846b06b447e3946066c.jpg",
-      "publishedAt": "2026-10-11T06:15:29Z",
-      "sourceId": "c3607b68b8e101d3",
-      "sourceTitle": "Xinsl's Blog",
-      "link": "https://blog.xinsl.xin/posts/cd12max/",
-      "detailPath": "articles/e315bbd0dc260eaa4475c7d6.json"
-    },
-    {
-      "id": "f9c649c237cd7b4e98a793bd",
-      "title": "2026年9月阅读书摘",
-      "summary": "怀有迷惘的时候，心被景色所包围。悟道之后，景色被心所包围。",
-      "image": "https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGJvb2tzfGVufDB8fHx8MTc5MTY4NzI5Nnww&ixlib=rb-4.1.0&q=80&w=2000",
-      "publishedAt": "2026-10-11T02:56:43Z",
-      "sourceId": "78a6233ab9c3a513",
-      "sourceTitle": "Domon",
-      "link": "https://www.domon.cn/2026-9yue-yue-du-shu-zhai/",
-      "detailPath": "articles/f9c649c237cd7b4e98a793bd.json"
-    },
-    {
-      "id": "9d1318aba00e2d9d412cb7f7",
-      "title": "吉他錄音工作讓我學到的事情",
-      "summary": "單曲循環 了一天《 I Don’t Have 》，並還打開分軌檔案回顧，也讓我對錄音工作有了一些想法。 請先點擊播放再一邊閱讀！ 完全忘記怎麼彈了 # 「播放音樂，合奏玩一下！欸＊，怎麼彈？」 距離錄音也三個月左右了，雖然花點時間聽音還是能彈，但要直接來完全不行。 所以，我在這個工作當中，完全沒有進步嗎？沒記得任何東西啊！ Demo 翻譯能力 # 收到的檔案有兩種類型，一種是 MIDI 音色，一種是取樣庫的句子，前者偏假，後者則是有剪接痕跡。 我的工作是把 MIDI 音色變真，並且把取樣庫的句子重新彈過，消除剪接痕跡的問題。 這讓我想到之前遇到的各種口譯老師。以當時的例子來說，中日翻譯老師會被臺上講泰文的講師干擾，耳機還要聽著即時翻譯好的中文，再即時翻譯成日文。 給我的時間只有不到十天，那緊急的程度就如同口譯…",
-      "image": "https://eddielv.com/musings/recording-to-leran/i-dont-have-multi-track.jpeg",
-      "publishedAt": "2026-10-11T02:52:08Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/recording-to-leran/",
-      "detailPath": "articles/9d1318aba00e2d9d412cb7f7.json"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "990b427c0a8ee81edec34266",
+      "title": "Java7 HashMap 源码分析",
+      "summary": "在没有排序或额外索引的数组、链表中，按值查找最坏需要遍历全部元素。哈希表（hash table）通过哈希值定位桶，在哈希分布良好时，基本查找可以接近常数时间；这不代表所有输入下都能保证 O(1)。 HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使用 null 之外，HashMap 类与 Hashtable 大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。 本文按源码顺序看 HashMap：数组与链表的数据结构、构造函数、put 和扩容、get，最后是迭代器如何用 modCount 检查结构修改。末尾补充后续 JDK 的变化。",
+      "image": null,
+      "publishedAt": "2015-08-05T12:27:13Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/08/05/HashMap/",
+      "detailPath": "articles/990b427c0a8ee81edec34266.json"
+    },
+    {
+      "id": "77ce1ec06da3dc1437c265b0",
+      "title": "一个上传apk到fir的gradle插件",
+      "summary": "声明，这不是广告，没有任何利益瓜葛。 App内测需要把安装把安装包放在一个地方进行托管，方便内测人员下载。国内有蒲公英，fir，等等这些网站可以用。 最近fir上了新版本了，上了新的api，新界面，本以为它们会提供gradle的上传工具，结果没有，而且它们新版本还不好用，原本的下载统计浏览统计都没有了，结果上传很慢，甚至上传不了，我便写了一个gradle的上传工具。 先介绍使用方法吧 使用方法 插件目前只有唯一一个task uploadFir –上传apk到fir 集成插件本插件，你要按照如下方法使用 编辑build.gradle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 builds…",
+      "image": null,
+      "publishedAt": "2015-08-01T15:19:07Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-08-01-gradle-fir-plugin/?utm_source=rss",
+      "detailPath": "articles/77ce1ec06da3dc1437c265b0.json"
+    },
+    {
       "id": "2e3dd78697281fedf3cbddc3",
       "title": "TableTop",
       "summary": "https://www.youtube.com/watch?v=Xu9RB-N4T3g",
@@ -637,28 +659,6 @@
       "sourceTitle": "Chiaroscuro",
       "link": "https://imick.github.io/articles/jw012/",
       "detailPath": "articles/6c4236b18a3df121e0d8ffb0.json"
-    },
-    {
-      "id": "f960cb35590df1ef3190b29f",
-      "title": "android反编译-如何防止反编译",
-      "summary": "前言 前面介绍了怎样去反编译别人的代码。哈哈，这里居然又写进行防止反编译。但是，还是先来写写吧。 使用ProGuard proguard android的sdk中就有提供，使用它可以对代码进行混淆和精简，处理后的代码，虽然仍然可以反编译，但是阅读起来相当困难，降低代码的可读性。操作简单，推荐使用。 proguard使用方法和配置，可以看我之前的博客： https://isming.me/2014-05-31-use-proguard/ 另外网上有别人共享的proguard配置模板，也可以参考： https://github.com/krschultz/android-proguard-snippets 如果大家有去proguard的官网，ProGuard的公司提供的DexGuard可以给android程序提供…",
-      "image": null,
-      "publishedAt": "2015-01-17T17:35:53Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-01-18-android-anti-decompile/?utm_source=rss",
-      "detailPath": "articles/f960cb35590df1ef3190b29f.json"
-    },
-    {
-      "id": "90fd86fe0cea02e37d6191e9",
-      "title": "使用 Android Studio 查看 Android Lollipop 源码",
-      "summary": "技术复核（2026-10-13） ：原文面向 Android 5.0 Lollipop 与 Android Studio 1.x。下面的 IDEGen 流程已按 AOSP android-5.0.0_r1 源码核对，属于历史方案；新增的 AIDEGen 示例以 android-16.0.0_r1 文档为准。 Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本.",
-      "image": null,
-      "publishedAt": "2015-01-16T13:54:32Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio/",
-      "detailPath": "articles/90fd86fe0cea02e37d6191e9.json"
     }
   ]
 }

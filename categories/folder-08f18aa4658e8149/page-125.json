@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "0171003ba3144fcd8eb08a8e",
+      "title": "何处安放我们的 Go 代码",
+      "summary": "用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。 这期间也掌握了不少技巧与惯用法（idioms），比如 prosumer ，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher 吃了不少苦头 。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：",
+      "image": null,
+      "publishedAt": "2020-12-05T05:12:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2019/10/24/go-modules/",
+      "detailPath": "articles/0171003ba3144fcd8eb08a8e.json"
+    },
+    {
+      "id": "9839906a8f92d3225709d9ad",
+      "title": "由《冬天》想到的",
+      "summary": "昨天看了一篇短文，朱自清的《冬天》。提到朱自清，很多人还能背出「盼望着，盼望着，东风来了，春天的脚步近了。」很多人因为它出现在课本上，就习惯性拒绝对作者进一步了解。《冬天》一文，非常短，就四段，文章结构可以作为一篇范文来讲。前三段，写了他记忆里的几个冬天，一次是在家里吃火锅豆腐，一次是杭州与好友划船，还有一次，是回忆在台州短暂居住的一段时光。 三段，三个不同的时期，从孩童、到青年，再到一家人。文字纯朴，但这种过渡堪称典范。尤其在第三段结尾，回忆之后，先说「似乎台州空空的，只有我们四人；天地空空的，也只有我们四人。那时是民国十年，妻刚从家里出来，满自在。」紧接着一句「她死了快四年了，我却还老记着她那微笑的影子。」 结尾则非常简短：「无论怎么冷，大风大雪，想到这些，我心上总是温暖的。」 苗炜提及这篇文章，是想说好…",
+      "image": null,
+      "publishedAt": "2020-12-02T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2020/12/read-dong-tian/",
+      "detailPath": "articles/9839906a8f92d3225709d9ad.json"
+    },
+    {
+      "id": "3c312c8a2c8c9b3dfca40e2c",
+      "title": "为什么要使用长毛象？长毛象(Mastodon)怎么玩？",
+      "summary": "简单地说，长毛象（Mastodon）是一个去中心化的微博客平台，所以大致使用方式，类似微博或者twitter。区别是，它并不是一个网站，而是成百上千（or上万？）的小站点聚合而成，俗称“联邦宇宙”。这些网站都遵循同一个协议，使用Mastodon系统，每一个网站都叫做一个实例。 Mastodon（长毛象）作为一个开源微博客平台的各种优秀就不赘述了，写这个的文章很多，这里只写对个人用户来说，长毛象有哪些优势，以及简单使用入门。后面会附一些链接供有兴趣的同学继续探索。",
+      "image": null,
+      "publishedAt": "2020-11-30T18:59:39Z",
+      "sourceId": "88a1fc290dd0b8a7",
+      "sourceTitle": "沉默之沙",
+      "link": "https://yukieyun.net/nonsense/mastodon-benefits-and-how-to/",
+      "detailPath": "articles/3c312c8a2c8c9b3dfca40e2c.json"
+    },
+    {
       "id": "85310b13aec3df148674d7a5",
       "title": "周日断电惊魂",
       "summary": "周日经历了一次墨菲定律，墨菲定律是说，凡是可能出错的事就一定会出错。 前段时间我收到短信，提醒家里电费不足 30 元，当时有事情，就耽搁了，后来这件事儿虽然一直惦记着，却被大脑隐藏了，没注意到它。直到上周，我又收到一条信息，提醒我已经不足 10 元。才恍然，要交电费了。之前，我家里的 NAS 因为一次意外断电，损失了一块硬盘，好在里面的资料我及时转移，没有很大的损害。对于断电，我确实心有戚戚焉。 这一次险些漏交电费，心中不免一惊，赶紧补上。不料，我在周六交的电费，周日凌晨家里突然断电，检查过后确认，整栋楼都停电了，真的是应了那句民谣：“面包落地的时候，永远是抹黃油的一面着地。”一次实打实的重创。 周日一早，打电话询问，原来是整片街道供电系统出现问题，已经在抢修。不久，恢复。检查了一下 NAS，完好无损，石头落…",
@@ -58,7 +91,7 @@
     {
       "id": "7c592674cda213fd5ecb127e",
       "title": "从 Vite 与 Vue 开始的 D3 数据可视化之旅",
-      "summary": "这是一个极其简单的并尽可能面向未来的新手教程，它将指导你简单地使用 Vite 启动 Vue 的脚手架，并开始 D3 数据可视化的相关开发。而你无需 Vue 相关的前置使用知识，你只需跟随教程简单地使用它。 在课后如果你仍有兴趣，那么你可以继续地深入了解它。 「简单」是不是用的太多了 访问 https://www.yunyoujun.cn/posts/vue-d3-demo 阅读全文。",
+      "summary": "这是一个极其简单的并尽可能面向未来的新手教程，它将指导你简单地使用 Vite 启动 Vue 的脚手架，并开始 D3 数据可视化的相关开发。而你无需 Vue 相关的前置使用知识，你只需跟随教程简单地使用它。 在课后如果你仍有兴趣，那么你可以继续地深入了解它。 「简单」是不是用的太多了",
       "image": null,
       "publishedAt": "2020-11-21T19:56:09Z",
       "sourceId": "410b11347b8a16bf",
@@ -223,7 +256,7 @@
     {
       "id": "50dfc46c7e0f88c951fec44e",
       "title": "如何找到你朋友的社交账号",
-      "summary": "A 面与 B 面 （英语：A-side 和 B-side）是流行音乐业界术语，于 1950 年代开始常用，原本指出版的 7 英寸黑胶唱片（必须是单曲）的两面。现在 A 面和 B 面通常用来辨别歌曲的重要度——放在 A 面的歌曲为主打歌，歌手会期望这些歌经常在电台等传媒渠道曝光；放在 B 面的歌曲则属于次要或附加歌目。 前奏 前些日子，其实就是咱考完教师证（10.31）的第二天，便要前往出差。 关于我打算当老师并报考教师资格证这件事 晚间也成功地错过了万圣节。但想来这种现充的节日，也本就与我无缘。故也无从惋惜。 尽管是流水账，但勉强作为日记记录下来，以作为引入正题的前言。 「 春宵苦短，少女前进吧！ 」 访问 https://www.yunyoujun.cn/posts/find-npy-social-acco…",
+      "summary": "A 面与 B 面（英语：A-side 和 B-side）是流行音乐业界术语，于 1950 年代开始常用，原本指出版的 7 英寸黑胶唱片（必须是单曲）的两面。现在 A 面和 B 面通常用来辨别歌曲的重要度——放在 A 面的歌曲为主打歌，歌手会期望这些歌经常在电台等传媒渠道曝光；放在 B 面的歌曲则属于次要或附加歌目。 前些日子，其实就是咱考完教师证（10.31）的第二天，便要前往出差。…",
       "image": null,
       "publishedAt": "2020-11-12T11:46:38Z",
       "sourceId": "410b11347b8a16bf",
@@ -454,7 +487,7 @@
     {
       "id": "f050f9634e6973a297c85502",
       "title": "写写高斯模糊——从 CSS 模糊滤镜的白边说起",
-      "summary": "前言 通常我们可以很容易地使用 PhotoShop 中的「高斯模糊」来模糊图片。 这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。） 而 CSS3 提供了滤镜 filter / backdrop-filter ，其中的模糊功能同样也是高斯模糊。（Canvas 中的 filter 亦是如此。） 只是当我们为图片背景添加 CSS 滤镜时，便会出现不和谐的白边。 虽然有一些奇技淫巧（比如放大图片再截去模糊的边）去解决，但皆治标不治本，我们不妨借此机会探究一下高斯模糊，并尝试自己实现它。 正文 多图预警 访问 https://www.yunyoujun.cn/posts/gaussian-bl…",
+      "summary": "通常我们可以很容易地使用 PhotoShop 中的「高斯模糊」来模糊图片。 这也是一种很好的艺术效果，苹果惯用的毛玻璃效果本质便是高斯模糊，而我们将图片模糊后作为网站背景，既减小了图片的体积，也能别有一番风味。（譬如咱站点的背景也是高斯模糊后的产物。） 而 CSS3 提供了滤镜 filter/backdrop-filter，其中的模糊功能同样也是高斯模糊。（Canvas 中的 filter…",
       "image": "https://cos.yunle.fun/images/photoshop-gaussian-blur.jpg",
       "publishedAt": "2020-10-18T22:04:45Z",
       "sourceId": "410b11347b8a16bf",
@@ -542,7 +575,7 @@
     {
       "id": "c5b16dce95414dc6797ca613",
       "title": "如何从 Valine 迁移至 Disqus",
-      "summary": "此前我在 第三方评论系统之我见 中简要对比了使用过的一些评论系统，但仍旧没有得出一个尽善尽美的方案。 我很长一段时间评论系统都是使用的 Valine，但因为后来博客第一次收到了一些 不友好的评论 ，以至于我有一瞬间地冲动想要从 Valine 彻底迁移到 Disqus。 但是 Valine 本身加载速度确实很快，用着也挺好，且文章的访问量统计也依赖于此。又实在没有办法下定决心切换至 Disqus。 「任何可以用 JavaScript 编写的应用程序最终都将用 JavaScript 编写。」 In 2007, Jeff Atwood made the quote that was popularly referred to as Atwood's Law: “Any application that can be…",
+      "summary": "此前我在 第三方评论系统之我见 中简要对比了使用过的一些评论系统，但仍旧没有得出一个尽善尽美的方案。 我很长一段时间评论系统都是使用的 Valine，但因为后来博客第一次收到了一些不友好的评论，以至于我有一瞬间地冲动想要从 Valine 彻底迁移到 Disqus。 但是 Valine 本身加载速度确实很快，用着也挺好，且文章的访问量统计也依赖于此。又实在没有办法下定决心切换至 Disqus。…",
       "image": "https://cos.yunle.fun/images/make-one-for-me-too.jpg",
       "publishedAt": "2020-10-03T15:09:13Z",
       "sourceId": "410b11347b8a16bf",
@@ -575,7 +608,7 @@
     {
       "id": "a13432aa2db84365ca0e0c97",
       "title": "ADV 游戏引擎计划",
-      "summary": "ADV.JS 又一个遥遥无期的大坑。 GitHub: https://github.com/YunYouJun/advjs Demo: https://advjs.elpsy.cn 前言 按照惯例，开坑前先来三问。是什么？为什么？怎么做？ 访问 https://www.yunyoujun.cn/posts/make-an-avg-engine 阅读全文。",
+      "summary": "ADV.JS 又一个遥遥无期的大坑。 GitHub: Demo: 按照惯例，开坑前先来三问。是什么？为什么？怎么做？",
       "image": null,
       "publishedAt": "2020-09-28T19:33:17Z",
       "sourceId": "410b11347b8a16bf",
@@ -626,39 +659,6 @@
       "sourceTitle": "TaurusXin 的独立博客",
       "link": "https://www.taurusxin.com/taocp-01-introduction/",
       "detailPath": "articles/1ae1da2ac4e08f83d7fa7cc2.json"
-    },
-    {
-      "id": "1b179c28f26af0dffe0cc874",
-      "title": "1岁出头的新挑战",
-      "summary": "上一篇 说到 Toddler 的新发展，现在来说说这些新发展对于我和 Colin 的挑战。——虽然想这么总结，但这次的主要目的是求救，因为 Toddler 现在夜里又哭着不让我们睡觉了！ 刷牙和洗澡：平衡小人的意愿和我们照顾者的意愿 # 我们发现 Toddler 越来越想按照自己的方式来做事，是在1岁左右很难从 TA 手里翘开手指拿走东西的时候。只有自己愿意放手的时候才默默地目送，不愿意放手的东西如果拿走会大声抗议。不过这才是正常的反应吧！事实上1岁以前我们经常用的一招是用别的东西吸引一下注意力，就能轻松把 Toddler 手里的东西拿开，这个时候我心里总有种罪恶感。然而现在让 Toddler 放手就很难了，有时候能讲道理（“要去吃饭了所以把这个收起来”），不行的话只好采取强硬的手段（整个脸皱起来哭～～）。也…",
-      "image": null,
-      "publishedAt": "2020-09-20T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/new-challenges-with-young-toddler/",
-      "detailPath": "articles/1b179c28f26af0dffe0cc874.json"
-    },
-    {
-      "id": "4633fad98a73654559b8aada",
-      "title": "一文看完2020苹果秋季新品发布会",
-      "summary": "本文整合转载至 ITHOME 本次秋季新品发布会，苹果将硬件产品焦聚在Apple Watch和iPad上，总体来说是“4款产品，2枚芯片，2个服务”。 划重点，本次发布会真的没有iPhone 12！！ 一、四款硬件新品 Apple Watch Series 6：支持血氧检测 Apple Watch Series 6的外观设计相较于上一代几乎没有改变，但拥有 Product（RED）、蓝色、墨色和新金色四种配色。 在功能方面， Apple Watch Series 6增加了血氧饱和度检测的功能 ，它可以利用全新的红外光传感器在大约15秒内测量用户的血氧水平，这很适合经常在高海拔工作和运动的用户。 苹果表示他们正在与卫生机构合作，基于Apple Watch Series 6的血氧检测功能进行大规模研究，尝试帮助人…",
-      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/09/1919259477.png",
-      "publishedAt": "2020-09-16T10:47:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/apple-2020-autumn/",
-      "detailPath": "articles/4633fad98a73654559b8aada.json"
-    },
-    {
-      "id": "d0d167e8edf5ce25da2bb09c",
-      "title": "在 Debian 10 / Ubuntu 20.04 上安装 Pleroma",
-      "summary": "适合技术小白们的 Debian 10 / Ubuntu 20.04 Pleroma 安装指南",
-      "image": null,
-      "publishedAt": "2020-09-13T00:00:00Z",
-      "sourceId": "ec4d8f7d2c53872d",
-      "sourceTitle": "Posts on Welcome to my little blue world ♡",
-      "link": "https://suicablog.cobaltkiss.blue/posts/pleroma-installation-on-linux-using-otp-releases/",
-      "detailPath": "articles/d0d167e8edf5ce25da2bb09c.json"
     }
   ]
 }

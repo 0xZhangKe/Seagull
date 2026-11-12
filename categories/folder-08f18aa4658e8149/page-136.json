@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "7786ff6380e4bf5d0d6b1a00",
+      "title": "Android 性能优化之 Systrace 工具介绍(一)",
+      "summary": "技术复核（2026-10-13） ：本文原写于 2015 年。Systrace 的事件时间线仍有参考价值，Eclipse / Device Monitor 入口已过期；旧脚本参数以下文核对的 AOSP android-5.0.0_r1 为准。新增命令以 Android 11 / API 30 及以上的 Perfetto 为例，旧系统差异另列。后续文章见 Android Perfetto 系列目录 。 旧流程 现在的对应方式 Eclipse / Device Monitor 的 Systrace 按钮 Android 9 / API 28 起可用设备端 System Tracing；也可通过 ADB 采集 systrace.py 调用 atrace 并生成 HTML Perfetto 采集命令生成二进制 tra…",
+      "image": null,
+      "publishedAt": "2015-01-30T12:24:31Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/30/android-performance-tools-systrace-1/",
+      "detailPath": "articles/7786ff6380e4bf5d0d6b1a00.json"
+    },
+    {
+      "id": "113a9c78dccd598d74559d6d",
+      "title": "android动画-Frame Animation",
+      "summary": "动画可以在视觉上增加程序的流畅度，我之前对于动画这一块，是会用，但是不全面，这里写下博客，全面梳理一下Android动画方面的知识。当然，关于动画这块，也有很多前人写了很多内容，大家可以去参考。 3.0以前，android支持两种动画模式， Tween Animation , Frame Animation ，在android3.0中又引入了一个新的动画系统： Property Animation ，这三种动画模式在SDK中被称为 Property Animation , View Animation , Drawable Animation 。 可通过 NineOldAndroids 项目在3.0之前的系统中使用Property Animation。另外呢，还有activity之间的过渡动画，android…",
+      "image": null,
+      "publishedAt": "2015-01-28T12:13:47Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-01-28-android-frame-animation/?utm_source=rss",
+      "detailPath": "articles/113a9c78dccd598d74559d6d.json"
+    },
+    {
+      "id": "6c4236b18a3df121e0d8ffb0",
+      "title": "玩木工【十二】：新工具（玩具）",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2015-01-20T20:13:48Z",
+      "sourceId": "e20deb20a7b008d7",
+      "sourceTitle": "Chiaroscuro",
+      "link": "https://imick.github.io/articles/jw012/",
+      "detailPath": "articles/6c4236b18a3df121e0d8ffb0.json"
+    },
+    {
       "id": "f960cb35590df1ef3190b29f",
       "title": "android反编译-如何防止反编译",
       "summary": "前言 前面介绍了怎样去反编译别人的代码。哈哈，这里居然又写进行防止反编译。但是，还是先来写写吧。 使用ProGuard proguard android的sdk中就有提供，使用它可以对代码进行混淆和精简，处理后的代码，虽然仍然可以反编译，但是阅读起来相当困难，降低代码的可读性。操作简单，推荐使用。 proguard使用方法和配置，可以看我之前的博客： https://isming.me/2014-05-31-use-proguard/ 另外网上有别人共享的proguard配置模板，也可以参考： https://github.com/krschultz/android-proguard-snippets 如果大家有去proguard的官网，ProGuard的公司提供的DexGuard可以给android程序提供…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Android Performance",
       "link": "https://androidperformance.com/2014/04/01/android-service-build-your-own-notification-servers-app/",
       "detailPath": "articles/e1f74cae69936a729b95ef08.json"
-    },
-    {
-      "id": "d71f373d2c160dd636feac6b",
-      "title": "Android:Ubuntu 下执行 Adb 命令找不到设备",
-      "summary": "这篇写于 2014 年，当时用的是 Nokia X 和旧版 Android SDK。2026-10-13 更新了 Ubuntu 24.04 LTS 下的 udev 和用户组配置；旧 SYSFS 规则、Upstart 重启方式已经不适用， adb_usb.ini 的办法留在文末作历史记录。 1.问题概述 最近开发Nokia项目，遇到的问题如下： 插入Nokia x后，电脑没有反应，即不识别，同事的windows也不识别，最后在谷歌上搜索了良久，才找到了解决方案，但是没有记录，后来又要给别人配置的时候，发现忘记怎么配置了。想想这也是一个具有通性的问题，还是记录下来，分享给大家。 2.问题解决方案 先在设备上开启 USB 调试，并使用支持数据传输的 USB 线。用 adb version 确认调用的 Platfor…",
-      "image": null,
-      "publishedAt": "2014-03-25T03:15:17Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
-      "detailPath": "articles/d71f373d2c160dd636feac6b.json"
-    },
-    {
-      "id": "506ff04c13ef684ec4ef3661",
-      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
-      "summary": "1 辅助性服务介绍 2026-10-13 更新：本文原写于 2014 年，介绍 Android 4.0（API 14）起的无障碍服务配置。无障碍服务本身仍然有效，但用它实现通用通知中心的路线已过时；Android 4.3（API 18）起应使用专门的 NotificationListenerService 。下文修正服务声明和示例，并补充 Android 13（API 33）的节点回收变化。 辅助性服务（现通常称无障碍服务）用于帮助残障用户或暂时无法正常操作设备的用户使用应用，例如将界面文本读出来，或者提供触觉反馈。这一节介绍如何创建服务、接收界面事件和查询节点信息。 AccessibilityService 由系统在用户授权后绑定，不能当作普通后台任务服务来启动。下面给出服务骨架和几个方法的写法；接进自己的…",
-      "image": null,
-      "publishedAt": "2014-03-17T06:07:53Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
-      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
-    },
-    {
-      "id": "5d9ab7333063bf5c41ecbfca",
-      "title": "android异步操作总结",
-      "summary": "Android中经常会有一些操作比如网络请求，文件读写，数据库操作，比较耗时，我们需要将其放在非UI线程去处理，此时，我们需要处理任务前后UI的变化和交互。我们需要通过类似js中异步请求处理，这里总结我所了解到的，方便自己记忆，也方便别人的浏览。 AsyncTask new AysncTask().execute(); AsyncTask会按照流程执行在UI线程和一个耗时的任务线程。 1.onPreExecute() 执行预处理，它运行于UI线程，可以为后台任务做一些准备工作，比如绘制一个进度条控件。 2.doInBackground(Params…) 后台进程执行的具体计算在这里实现，doInBackground(Params…)是AsyncTask的关键，此方法必须重载。在这个方法内可以使用publish…",
-      "image": null,
-      "publishedAt": "2014-03-16T08:18:25Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
-      "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
     }
   ]
 }

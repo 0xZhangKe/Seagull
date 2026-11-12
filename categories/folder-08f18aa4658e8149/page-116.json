@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "144243d2d9a9cc4c1866faf4",
+      "title": "Speller 笔记",
+      "summary": "CS50 计算机科学入门第 5 周作业 Speller 笔记，仅作个人用途。",
+      "image": null,
+      "publishedAt": "2022-10-04T17:28:26Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/ad97.html",
+      "detailPath": "articles/144243d2d9a9cc4c1866faf4.json"
+    },
+    {
+      "id": "2d37a0834c72e7bfafac7a2c",
+      "title": "中国大规模地封锁基于TLS的翻墙服务器",
+      "summary": "自北京时间2022年10月3日起，超过一百名用户报告他们至少有一台基于TLS的翻墙服务器被封锁了。被封锁的服务器使用的协议包括了 trojan ， Xray ， V2Ray TLS+Websocket ， VLESS ，以及 gRPC 。我们还未收到任何 naiveproxy 被封锁的消息。 下面是我们总结的关于这次封锁的一些信息，以其我们的一些推测和分析 封锁先是针对翻墙服务的端口。如果用户在端口被封后， 改换了端口 ，那么整个服务器都会被封锁。需要指出，封锁似乎只是基于端口或IP地址，与翻墙服务有关的域名似乎并没有被加入到GFW的DNS或SNI黑名单中。 尽管大多数用户报告443端口被封，一部分使用非443端口的用户也报告了封锁。尽管大多数用户的服务器在流行的VPS提供商那里（ 比如 ），但至少有一位用户…",
+      "image": null,
+      "publishedAt": "2022-10-04T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/blocking_of_tls_based_circumvention_tools/zh/",
+      "detailPath": "articles/2d37a0834c72e7bfafac7a2c.json"
+    },
+    {
+      "id": "0b492e749ea049a6a2c1a839",
+      "title": "AP 计算机科学原理课笔记",
+      "summary": "高中大学选修计算机科学原理课（CSP）课堂笔记，仅作个人用途。",
+      "image": null,
+      "publishedAt": "2022-10-03T18:02:26Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/ebfb.html",
+      "detailPath": "articles/0b492e749ea049a6a2c1a839.json"
+    },
+    {
       "id": "3b1bc26d653f4f2e80ddfa6a",
       "title": "Large scale blocking of TLS-based censorship circumvention tools in China",
       "summary": "Starting from October 3, 2022 (Beijing Time), more than 100 users reported that at least one of their TLS-based censorship circumvention servers had been blocked. The TLS-based circumvention protocols that are reportedly blocked include trojan , Xray , V2Ray TLS+Websocket , VLESS , and gRPC . We have not received any report of the blocking of naiveproxy tho…",
@@ -626,39 +659,6 @@
       "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
       "link": "https://microblog.ttheng.com/junior-middle-and-senior-middle/",
       "detailPath": "articles/b194fd8e48160b151dd5ed4c.json"
-    },
-    {
-      "id": "b6cee643c9c9a12bc4b04e02",
-      "title": "简单的魔鬼计算",
-      "summary": "魔鬼计算是《脑科学专家 川岛隆太博士监修 突破极限 脑的五分钟 魔鬼锻炼》里代表性的小游戏，也是我的最爱。可惜的是，系列最新作《脑科学专家 川岛隆太博士监修 大人的Nintendo Switch脑部锻炼》没有收录这个锻炼。 [1] 最新作里收录了类似的模式：选出前N题出现的图形。由于少了计算环节，不如魔鬼计算过瘾。而且图形比数字难记。 我的3DS不在手边，却时不时想玩魔鬼计算，所以写了下面的简化版。 看完 规则 后，点击开始试试吧（开始后再点开始可以重来）： 1 溯答 开始 ? ? ? = 正确率： ?? % const id = x => document.getElementById(x) const textarea = id('input'), log = id('log'), pane = id('…",
-      "image": null,
-      "publishedAt": "2022-07-29T17:34:32Z",
-      "sourceId": "946f35b6a82d9000",
-      "sourceTitle": "空栈顶",
-      "link": "https://emptystack.top/simple-devilish-calculatons/",
-      "detailPath": "articles/b6cee643c9c9a12bc4b04e02.json"
-    },
-    {
-      "id": "b4763b6e098ed9c5f0aebf3b",
-      "title": "《大馬華語特有詞語詞典》",
-      "summary": "https://theinterview.asia/feature/72791/ 有機會的話我想把這本詞典買下捐給學校圖書館。 2025 年 10 月 13 日補充： 到現在我還是沒有買到 😅。不過我的確認爲對大馬華語的記錄與保存的確很重要，尤其是如今的馬來西亞正規教育系統對「規範華語」的執念，以及來自像 馬來西亞華語規範理事會 1 那樣的團體的施壓，導致大馬華語的生存空間受到壓制。大馬華語是最能代表馬來西亞本土華裔社群的文化資產之一，我希望更多人能瞭解它的珍貴之處。 不過馬來西亞華語規範理事會還是有做過維護本土化的事情，例如以本地慣用的華語名稱作爲馬來西亞不同地方的正式譯名（像是以「亞庇」作爲 Kota Kinabalu 的譯名而非「哥打京那巴魯」）。 ↩︎",
-      "image": null,
-      "publishedAt": "2022-07-27T00:00:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/malaysian-chinese-dictionary/",
-      "detailPath": "articles/b4763b6e098ed9c5f0aebf3b.json"
-    },
-    {
-      "id": "e9fcfcc0ac661a9a73a06886",
-      "title": "叁拾一周：No.36",
-      "summary": "这是「叁拾一周」第三十六期，感谢这周新增的邮件订阅读者，目前订阅人数达到了 506 位。我的下一个目标是 610。 让我们回到最初，叁拾一周这份通讯最早的想法就不是去做一些 News 的分享，这也是我一直用通讯替代 Newsletter 的原因。只是通讯也并不准确，在我希望提供一些与「选择」和「幸福」有关的内容时，我想到的最好、最便捷的方式，便是告诉你，我如何选择，我认为什么样的生活更接近幸福。 似乎，这个话题还是太大，太发散，难以聚焦，看起来有核心，但似乎核心能连接万物，也就失去了它的意义。 那有什么足够小，足够聚焦的内容值得聊呢。今天，顺着这个话题聊一聊。 大与小 我现在用的手机是 iPhone 13 mini，一方面是我自己的手小，经年累月的习惯导致我喜欢能把玩在手里的东西，mini 尺寸刚刚好，配上自…",
-      "image": null,
-      "publishedAt": "2022-07-27T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/newsletter/2022/07/newsletter-036/",
-      "detailPath": "articles/e9fcfcc0ac661a9a73a06886.json"
     }
   ]
 }

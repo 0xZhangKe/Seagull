@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "6d80c737dda5923002ad0480",
+      "title": "React 的 Markdown 渲染",
+      "summary": "本文是一篇在 React 中实现 Markdown 渲染的实战教程，重点解决了新版 react-markdown 库中代码高亮的难题。文章首先介绍了如何使用 react-markdown 和 remark-gfm 插件来支持 GitHub 风格的 Markdown（如表格、删除线）。核心部分针对 react-markdown 新版废弃 inline 属性导致旧教程失效的问题，提供了一个创新的解决方案：通过自定义 pre 组件来准确识别并使用 react-syntax-highlighter 渲染代码块。本文为希望在 React 项目中实现现代化 Markdown 渲染的开发者提供了一套与时俱进的实用方法。",
+      "image": null,
+      "publishedAt": "2024-02-21T04:11:13Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/c0fc.html",
+      "detailPath": "articles/6d80c737dda5923002ad0480.json"
+    },
+    {
+      "id": "aeb0bbfdb45ce39f6a94656d",
+      "title": "React 的 Textarea 高度自适应",
+      "summary": "本文是一篇在 React 中实现 textarea 高度自适应功能的实战教程，旨在模仿 ChatGPT 等现代聊天应用的输入框体验。教程详细讲解了如何利用 React Hooks (useRef, useEffect) 监听用户输入，通过动态计算 scrollHeight 来让文本框根据内容自动伸缩，并在达到最大高度后显示滚动条。文章还特别强调了在 Flexbox 布局下的实现技巧，并分享了一个因忘记 e.preventDefault() 而导致意外换行的常见“血泪教训”，为开发者提供了完整的实现方案和宝贵的避坑经验。",
+      "image": null,
+      "publishedAt": "2024-02-20T04:11:13Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/14d5.html",
+      "detailPath": "articles/aeb0bbfdb45ce39f6a94656d.json"
+    },
+    {
+      "id": "938898dd9c14a0ba29622722",
+      "title": "梦里的我想要改变世界",
+      "summary": "卷一极道·总纲",
+      "image": "https://fravilion.top/usr/uploads/2024/02/410470125.webp",
+      "publishedAt": "2024-02-19T06:20:00Z",
+      "sourceId": "7e105df8e0969fc7",
+      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
+      "link": "https://fravilion.top/index.php/archives/9/",
+      "detailPath": "articles/938898dd9c14a0ba29622722.json"
+    },
+    {
       "id": "807c4de795b5cb3a462cd18c",
       "title": "React + Express + Socket.io 之间的实时通信【2】：注册登录",
       "summary": "本文是 React + Express + Socket.io 实时通信应用教程的第二篇，重点实现用户的注册与登录功能。在前端，教程介绍了如何使用 Redux Toolkit (@reduxjs/toolkit) 管理认证状态，并通过 Socket.io 向后端发送用户数据。在后端，文章演示了如何使用 Mongoose (MongoDB) 建立用户模型，监听客户端事件，并利用 bcrypt 对密码进行哈希加密与验证。本教程完整地展示了一个包含前后端交互、数据库操作和安全实践的全栈用户认证流程。",
@@ -102,7 +135,7 @@
     {
       "id": "7d1b88421197b74824c205a1",
       "title": "没有红包封面，但是 AI 春联……",
-      "summary": "AI 春联 开门见山，今年的整活是「AI 春联」～ 站点： https://ai-sfc.yunyoujun.cn/ 根据你的提示词，自由地定制属于你的春联! 好运迎门 旧 新 岁 口 年 辞 口 口 喜 别 口 乐 口 迎 成 口 口 福 绩 口 气 斐 多 访问 https://www.yunyoujun.cn/posts/ai-sfc 阅读全文。",
+      "summary": "开门见山，今年的整活是「AI 春联」～ 站点： 根据你的提示词，自由地定制属于你的春联!",
       "image": null,
       "publishedAt": "2024-02-09T23:35:00Z",
       "sourceId": "410b11347b8a16bf",
@@ -626,39 +659,6 @@
       "sourceTitle": "伏枥之间",
       "link": "https://leehenry.top/posts/moment_memos/achieve/231231-2023-year-end-summary/",
       "detailPath": "articles/fba65634f51df25db6c4b763.json"
-    },
-    {
-      "id": "4c182bda2303590f5e974e71",
-      "title": "2023 年终总结之人物升级表",
-      "summary": "我以前是不做年度总结的，因为自己不是一个有仪式感的人，而且我已经有写每月总结了。但转念一想，如果将自己试作 RPG 游戏里的主角，那么以年为单位，自己的属性和技能有什么变化呢？作为一个 TRPG 跑团玩家，当然是以 DnD 和 CoC 的人物属性表为灵感，来写一张属于自己的人物表啦。",
-      "image": "https://cdn.jsdelivr.net/gh/kyoshiraishi/image@main/img/COC+-+CHARACTER+SHEET-11%20copy.jpg",
-      "publishedAt": "2023-12-30T14:23:31Z",
-      "sourceId": "09c2f0f0946a1f21",
-      "sourceTitle": "第三夏尔 | Third Shire",
-      "link": "https://thirdshire.com/annual-review-2023/",
-      "detailPath": "articles/4c182bda2303590f5e974e71.json"
-    },
-    {
-      "id": "0896d84292b5225f55a5b0e1",
-      "title": "文字组「雨落」",
-      "summary": "没有完成的句子",
-      "image": "https://fravilion.top/usr/uploads/2024/02/2739180305.webp",
-      "publishedAt": "2023-12-30T06:18:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/7/",
-      "detailPath": "articles/0896d84292b5225f55a5b0e1.json"
-    },
-    {
-      "id": "d9f1f1f53df3394f4b7e436f",
-      "title": "2023：文章导读",
-      "summary": "2023年，年度文章导读",
-      "image": "https://prologue.dev/static/photos/photo_2023-12-30.jpg",
-      "publishedAt": "2023-12-30T00:00:00Z",
-      "sourceId": "757145dcc77dee94",
-      "sourceTitle": "Prologue 序章",
-      "link": "https://prologue.dev/blog/2023-introduction-to-articles",
-      "detailPath": "articles/d9f1f1f53df3394f4b7e436f.json"
     }
   ]
 }

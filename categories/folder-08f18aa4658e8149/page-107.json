@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "ea142f3bea44cde2d18de0be",
+      "title": "一鼓作气，二鼓泄气",
+      "summary": "晚上回家之后便直接换好衣服，准备出门开始今天的夜跑，尽管室外的温度略低，风也呼呼作响。 七点左右到达河边，先热身几分钟，发现跑步的人寥寥无几，有的也只是散步的零星几人。周末钓鱼那会明明能看到一堆人跑步，我还以为大家都已经开始运动了，那我也不能落下。现在看来，怎么有种上当的感觉。 由于风比较大，不想出太多汗，中途便停下来走了一会。结果再继续的时候，感觉比之前要累多了，我是真服了，这还不如不休息呢。 想到一句古话，一鼓作气，再而衰，三而竭，古人真是诚不欺我。",
+      "image": null,
+      "publishedAt": "2024-04-01T16:00:00Z",
+      "sourceId": "511a941174e52a33",
+      "sourceTitle": "蒙奇日记",
+      "link": "https://luffy.cc/a/persist-while-running",
+      "detailPath": "articles/ea142f3bea44cde2d18de0be.json"
+    },
+    {
+      "id": "4c4d6ac430fd779bc9fbb61c",
+      "title": "「小工具」乱码恢复工具",
+      "summary": "工具介绍 在日常工作中，我经常会遇到一些乱码问题，比如文件编码不一致、文件编码错误等。这时候我就需要一个乱码恢复工具来帮助我解决这些问题。自己琢磨了一会儿，写了一个小工具，可以帮助我快速恢复一些字符串乱码。 引起这个问题的主要原因就是解码目标编码和实际编码不一致，导致乱码。这个工具可以帮助你快速恢复这些乱码问题。 技术栈 本来想用 Python 来写这个小工具，但是考虑到 Python 的环境配置比较麻烦，所以最后选择了 JavaScript 来实现这个小工具，我的目标是随处可以运行，无需任何环境配置。 于是就想到了类似于 Electron 之类的跨平台方案，但是一个小工具 100 多 M 的体积实在是太大了，所以最后选择了 Tauri 来打包。 开源地址 这个小工具已经开源，你可以在 GitHub 上找到并…",
+      "image": "https://cdn.taurusxin.com/hugo/2024/04/04/text-recover.png",
+      "publishedAt": "2024-04-01T05:26:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/text-recover-tool/",
+      "detailPath": "articles/4c4d6ac430fd779bc9fbb61c.json"
+    },
+    {
+      "id": "04ad9e7f2308c71daf9d8ee4",
+      "title": "倒带「贰零贰叁」：2023 年终 40 问",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2024-04-01T00:00:00Z",
+      "sourceId": "b1766968470c2fd8",
+      "sourceTitle": "一直游到海水变蓝",
+      "link": "https://nelsonboss.ink/2024/questions-for-2023",
+      "detailPath": "articles/04ad9e7f2308c71daf9d8ee4.json"
+    },
+    {
       "id": "8b4a21e1fe13c7e382e87f66",
       "title": "Q1 2024 Expenses | 2024年第一季度消费总结",
       "summary": "The Met Cloisters. March 2024 春天 周迅 （看到ig图片加音乐突发奇想在博客里插入音乐，这很千禧年） 每个月末都想着等银行交易都自动录入YNAB后再写，然后第一季度每个月都好忙没有时间回顾月度消费，所以干脆就等到Q3，冒着understate三月消费金额的风险先下手为强，毕竟稍有差错也无妨，家庭账户又不是要被审计：）Done is better than perfect! 看支出的时候还是无法相信2024年的第一季度已经过完了，得翻看手机相册和消费类别的蛛丝马迹才能想起具体经历了什么。 今年一月是我第一次得COVID，怀疑前几年在中西部一直没中招完全得益于和陌生人接触不多。即便疫情末尾看演唱会前也很小心地提前打了加强针。从未中招令我谜之自信以为自己有什么特殊免疫力，连医院建议的加…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2024/02/some-kind-of-tea/",
       "detailPath": "articles/2cd4cd630c0a5c3c37a5aa0e.json"
-    },
-    {
-      "id": "6d80c737dda5923002ad0480",
-      "title": "React 的 Markdown 渲染",
-      "summary": "本文是一篇在 React 中实现 Markdown 渲染的实战教程，重点解决了新版 react-markdown 库中代码高亮的难题。文章首先介绍了如何使用 react-markdown 和 remark-gfm 插件来支持 GitHub 风格的 Markdown（如表格、删除线）。核心部分针对 react-markdown 新版废弃 inline 属性导致旧教程失效的问题，提供了一个创新的解决方案：通过自定义 pre 组件来准确识别并使用 react-syntax-highlighter 渲染代码块。本文为希望在 React 项目中实现现代化 Markdown 渲染的开发者提供了一套与时俱进的实用方法。",
-      "image": null,
-      "publishedAt": "2024-02-21T04:11:13Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/c0fc.html",
-      "detailPath": "articles/6d80c737dda5923002ad0480.json"
-    },
-    {
-      "id": "aeb0bbfdb45ce39f6a94656d",
-      "title": "React 的 Textarea 高度自适应",
-      "summary": "本文是一篇在 React 中实现 textarea 高度自适应功能的实战教程，旨在模仿 ChatGPT 等现代聊天应用的输入框体验。教程详细讲解了如何利用 React Hooks (useRef, useEffect) 监听用户输入，通过动态计算 scrollHeight 来让文本框根据内容自动伸缩，并在达到最大高度后显示滚动条。文章还特别强调了在 Flexbox 布局下的实现技巧，并分享了一个因忘记 e.preventDefault() 而导致意外换行的常见“血泪教训”，为开发者提供了完整的实现方案和宝贵的避坑经验。",
-      "image": null,
-      "publishedAt": "2024-02-20T04:11:13Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/14d5.html",
-      "detailPath": "articles/aeb0bbfdb45ce39f6a94656d.json"
-    },
-    {
-      "id": "938898dd9c14a0ba29622722",
-      "title": "梦里的我想要改变世界",
-      "summary": "卷一极道·总纲",
-      "image": "https://fravilion.top/usr/uploads/2024/02/410470125.webp",
-      "publishedAt": "2024-02-19T06:20:00Z",
-      "sourceId": "7e105df8e0969fc7",
-      "sourceTitle": "楼船 𝑰𝑵𝑲𝑭𝑳𝑨𝑲𝑬",
-      "link": "https://fravilion.top/index.php/archives/9/",
-      "detailPath": "articles/938898dd9c14a0ba29622722.json"
     }
   ]
 }

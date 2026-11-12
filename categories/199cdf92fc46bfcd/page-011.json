@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "49cdbd091e2489be0c5f460a",
+      "title": "我有看你部落格！烏梅子醬寫作風格！",
+      "summary": "這天心情不太好，Eddie 又單身沒有一個好的訴說對象，最終找了以前工作夥伴，出來吃宵夜、吐吐苦水，講了很多心情也好了很多。 在最後道別前，工作夥伴突然說「我有看你部落格耶！」整個心情又更好了XD 也被朋友道出 Eddie 的寫作風格，前大半看起來都是很正經的文章，但是到最後快收尾的時候會突然畫風一轉，就會莫名的有點好笑。 這樣的風格是因爲，Eddie 常常寫到最後才發現，好像有點太「嚴肅」、太「技術」了，所以想用活潑一點的方式來結尾！ 而這讓 Eddie 想到《烏梅子醬》的歌詞，最前面段落是： 「背靠在樹枝上，蜻蜓落在露水旁乘涼」 雖然是白話文，但至少用「蜻蜓乘涼」來道出某種氛圍感。 而到了副歌： 「你淺淺的微笑就像烏梅子醬，我嚐了你嘴角唇膏薄荷味道」 突然就變成超級白話、超級日常用語了，彷彿換了一個人寫的…",
+      "image": null,
+      "publishedAt": "2025-10-22T16:04:45Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/i-reading-your-blog/",
+      "detailPath": "articles/49cdbd091e2489be0c5f460a.json"
+    },
+    {
+      "id": "5679214d0e4fb6729e1bcfe6",
+      "title": "Worpress 突然登入不了怎麼辦？",
+      "summary": "前言 # 想著很久沒更新官網了，所以來把一些過往文章先複製上去，結果，居然無法登入，一直顯示錯誤！而 Eddie 很確定那組密碼沒問題（應該啦…），但是無奈 SMTP 還沒設定好，所以沒辦法按忘記密碼來重設定。 暴力生成新帳號密碼 # 用 SSH 連線到伺服器之後，在 Wordpress 的資料夾建立臨時檔案 resetpw.php nano /var/www/html/你的worpress資料夾/resetpw.php 內容是 <?php require_once('wp-load.php'); // 載入 WordPress 環境 // 設定帳號資料 $username = 'newadmin'; // 你的帳號 $password = 'StrongPass123'; // 新密碼 $email = '…",
+      "image": null,
+      "publishedAt": "2025-10-21T15:37:40Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/articles/wordpress-cant-login/",
+      "detailPath": "articles/5679214d0e4fb6729e1bcfe6.json"
+    },
+    {
       "id": "36d423c6f603cad245e3825a",
       "title": "別把鹹蛋當蛋！",
       "summary": "很久沒吃到鹹蛋，一入口就覺得身體在抗拒吃下肚，一查發現一顆蛋的鈉含量就高達 700~1000mg 左右，而一天的建議攝取量在 2400mg 左右，而一餐不會只吃蛋啊，其他菜也會有鈉含量。 Salted egg 鹹的蛋應該改名爲 Egg-shaped salt 蛋形狀的鹽才對！味道完全就像是在吃鹽巴了。 當你煮粥發現味道有點淡，加點蛋狀鹽來提味； 當你炒各種青菜想加鹽，不如加點蛋狀鹽來提味！ （請照樣造句！） 也不要聽 Eddie 在這裡危言聳聽，有查到營養師說，一次只吃 1/4 顆鹹蛋就沒問題啦！ （各位控制好不要吃超過啊XD！）",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/taipei-zoo-family-day/",
       "detailPath": "articles/194f27a3f888e4cad22a8b5c.json"
-    },
-    {
-      "id": "8e7792d7a94d2a7565eeac28",
-      "title": "哆啦 A 夢面膜（確定我適合耶？）",
-      "summary": "前陣子一個樂手朋友在賣二手防曬乳，他只用了一次覺得不適合就賣了，結果多送了我兩片面膜，很感謝！ 但，要確定這不是在整我耶XD 近期一直曬太陽，臉的狀況太糟剛好需要面膜，但哆啦 A 夢實在是太不符合我的形象了吧～",
-      "image": "https://eddielv.com/musings/doraemon-mask/mask.jpg",
-      "publishedAt": "2025-09-12T06:57:21Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/doraemon-mask/",
-      "detailPath": "articles/8e7792d7a94d2a7565eeac28.json"
-    },
-    {
-      "id": "9b887306245e3634ad49ed66",
-      "title": "我把 IEM 賣了，中途還躲警察",
-      "summary": "前陣子買了 Audio Swift WX520 ，那篇文章有說，這個產品如果 Eddie 作爲樂手覺得還行，如果作爲 PA 就覺得不太行，後來越用越覺得不行（雖然我的樂手朋友覺得還 OK），於是就決定賣了。 那天我們約在臺北車站外面交，我開始介紹怎麼使用、怎麼對表頭、怎麼配對頻率等等。 「上車！！！！！！」買家突然大聲的叫。 於是我拿了包包，還有商品、盒子，就趕緊上車了，原來是警察來開違規停車的單子。 怎麼會有交易到一半需要驅車逃離的問題啦！我們是正經交易好嗎XD",
-      "image": null,
-      "publishedAt": "2025-09-12T05:57:00Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/sell-iem/",
-      "detailPath": "articles/9b887306245e3634ad49ed66.json"
     }
   ]
 }

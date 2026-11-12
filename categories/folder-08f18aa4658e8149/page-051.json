@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "f92d7d65437e971735fd7e2c",
+      "title": "我是一個很老套的人",
+      "summary": "雖然我現在連二十五歲都不到，但我是一個很老套的人。 與其用一堆以 LLM 作爲基礎的「AI 聊天機器人」或是「（完全自主的）AI 代理」花時間微調 prompt 以打造最完美（或是最適合用來聊心事）的人設，我還不如去（試着）和真人（朋友、家人或甚至是陌生人）聊天。 與其一直花時間在 Suno 之類的生成器微調 prompt 以生成最完美的樂曲，我還不如自己動手去練樂器。 與其一直花時間在 Midjourney 之類的生成器微調 prompt 以產出最完美的圖片，我還不如自己畫一個粗糙的線圖。 與其讓 LLM 一秒產生最完美的文章，我還不如自己去花時間慢慢醞釀，寫出真正發自內心的文字。",
+      "image": null,
+      "publishedAt": "2026-02-28T14:12:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/i-am-old-school-person/",
+      "detailPath": "articles/f92d7d65437e971735fd7e2c.json"
+    },
+    {
+      "id": "13f548fa012fa50270372649",
+      "title": "家鄉的星空",
+      "summary": "最近因爲過年的關係，特地飛回到山打根，並住在以前的老家。 某一天晚上出去吃飯回家的時候，家人突然（用參雜着英語的廣東話）喊道：「欸，星星！」出於好奇，我抬頭一看——真的欸！漆黑浩瀚的天空中，有着十來個閃爍的白色星光點綴，配上那天大概七分滿 1 的月亮，景色真的是好美麗！可惜手邊沒有品質好的相機，沒有辦法將當時的美景好好拍下來（我手機的相機連高樓大廈的夜晚燈光都拍不清楚了，更何況星星……）。 自從出外到光害重重的大城市生活後，想要看到如此的星空已然成爲一種奢侈，還是得在小地方才比較有機會。 唉，在這個大家（包括我）都將大多數時間用在低頭看手機的時代，我們是否還記得：抬頭向天望去，其實也能從中找到大自然所賦予的美好？ 讀到這個描述，大家也許可以猜到那天是哪一天了，那我就不明講了。 ↩︎",
+      "image": null,
+      "publishedAt": "2026-02-28T13:53:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/hometown-starry-night/",
+      "detailPath": "articles/13f548fa012fa50270372649.json"
+    },
+    {
+      "id": "66d74f784d2987294187180b",
+      "title": "Trial与CommonLisp的介绍",
+      "summary": "前言 大家好，这里明琪，这篇文章本来是打算作为一个系列的教程的，但由于最后我还是放弃使用Trial引擎了，就当作介绍下CommonLisp吧。 Trial简介 下面先简单地介绍下Trial，更详细的介绍会放到最后再说。 Trial是由瑞士独立游戏开发者、Lisp Hacker兼程序员 Yukari Hafner（又叫Shinmera）开发的一个模块化的游戏引擎，Trial基于Common Lisp语言开发，目前由Shinmera创立的工作室组织Shirakumo维护。 基于Trial开发的商业游戏作品，最具代表性的是Kandria，它是一个有丰富世界观的大型开放世界动作冒险游戏。 Common Lisp 提到Trial，就不得不提到开发Trial的编程语言：Common Lisp。这门编程语言是众多Lisp语…",
+      "image": null,
+      "publishedAt": "2026-02-28T13:17:42Z",
+      "sourceId": "716f999b030a6a78",
+      "sourceTitle": "明琪的日记",
+      "link": "https://yumieko.kikowiwu.com/posts/0a80d35a-f927-451e-8f96-8ebc00a29a4d.html",
+      "detailPath": "articles/66d74f784d2987294187180b.json"
+    },
+    {
+      "id": "b88c83d86437d7f4def73f93",
+      "title": "#15 欢喜过年的二月月报",
+      "summary": "二月就28天，再加上过年放了好几天假，因此特别快，这里就快速总结一下这个月吧。 折腾 最近获悉LeanCloud将于2027年年初停止服务，而我的博客的评论数据是用这个平台的结构化数据存储的，不过好在Waline支持多种数据存储平台，调研了一下发现Tidb Cloud提供的免费服务就够我用了，于是就迁移到这里了。迁移倒是也挺简单，通过Waline把数据导出，在tidb cloud中创建好数据库和对应的表，在Vercel后台把Waline的环境变量中的LeanCloud相关的都删掉，并且新加上tidb的，进入Waline后台再导入一下数据就好了，对于用户来说基本没啥影响。 前不久发现网上有网友基于高德地图的API做了个足迹地图，手一痒也想吧自己的搞一搞，于是就对AI发号施令，完成了足迹功能的重构，勉强能用给上线…",
+      "image": "https://img.isming.me/photo/26-feb/IMG_20260208_135511.webp",
+      "publishedAt": "2026-02-28T13:03:56Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2026-02-28-feb-summary/?utm_source=rss",
+      "detailPath": "articles/b88c83d86437d7f4def73f93.json"
+    },
+    {
+      "id": "61fbee927d2f6626221c8d0f",
+      "title": "隐说 NO.14 真理必须是前进的",
+      "summary": "本栏目《隐说》由原《棱镜通讯》分离而来，《隐说》主要聚焦于我近期读的一些好书、好文章、好的付费栏目、日常思考等等，其中有摘录、点评、扩展。 1、真理必须是前进的 “中国封建大国宗法一体化结构所造成的强控制和脆性给我们留下什么历史教训呢？那就是:真理必须是前进的。法国大数学家、思想家巴斯卡，曾说过一句著名的话：“前进的事业必须被前进所取代。”放弃对一种似乎是理想的，但不能被改进的社会追求，是十分痛苦的。拥有无比创造力的伟大的中华民族一旦从这一古老的梦中醒来，这本身就意味着巨大的...... READ MORE",
+      "image": null,
+      "publishedAt": "2026-02-28T11:26:55Z",
+      "sourceId": "b4584dd13588932a",
+      "sourceTitle": "太隐",
+      "link": "https://wangyurui.com/posts/yin-shuo-no-14-cong-zheng-zhi-xue-jiao-du-du-li-8630e17e",
+      "detailPath": "articles/61fbee927d2f6626221c8d0f.json"
+    },
+    {
+      "id": "9d0b08105111f91320db54d5",
+      "title": "想法在丙午阳中迭代",
+      "summary": "这个月我忙于一些现实中的事情，结果连月刊和自己一个月里都做了什么，全都忘了个干净…… 我希望这会是你能看到的，最后一个条目如此之少的月刊。",
+      "image": "https://media.otter.homes/media_attachments/files/115/993/043/630/434/017/original/c0949f17ecc4bd6f.jpg",
+      "publishedAt": "2026-02-28T05:00:00Z",
+      "sourceId": "bbfc2dde895349ce",
+      "sourceTitle": "Cytrogen 的个人博客（中文）",
+      "link": "https://blog.cytrogen.icu/posts/e3b9.html",
+      "detailPath": "articles/9d0b08105111f91320db54d5.json"
+    },
+    {
+      "id": "a7552e2dfc30904671787807",
+      "title": "表演「表演音樂」",
+      "summary": "昨天，檸檬卷給我看了一個 Instagram 上的自彈自唱短影片。",
+      "image": null,
+      "publishedAt": "2026-02-28T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/performing-performing-music",
+      "detailPath": "articles/a7552e2dfc30904671787807.json"
+    },
+    {
       "id": "fc5763ae9d2cd1af1f192ea7",
       "title": "斩杀线、现实的景观化和游戏语言泛滥",
       "summary": "大学的时候沉迷游戏哲学，为此特意读了荷兰学者约翰·赫伊津哈的著作《游戏的人》，他认为人类社会中音乐诗歌战争皆是游戏，尽管对于游戏的定义略微含糊，但是大概可以理解为游戏是一个有规则，人为设置障碍的活动，",
@@ -582,83 +659,6 @@
       "sourceTitle": "明琪的日记",
       "link": "https://yumieko.kikowiwu.com/posts/8c281eae-557d-45a4-ac78-fee0664331a5.html",
       "detailPath": "articles/47cbac49580c45be69061dda.json"
-    },
-    {
-      "id": "12f4683ad1aec563bbbc3e41",
-      "title": "「只有我這樣嗎？」最後一週",
-      "summary": "本期的 BlogBlog 同樂會已結束。請按這裡閱讀本期回顧文章！",
-      "image": null,
-      "publishedAt": "2026-02-23T08:25:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/bbp-feb-2026-last-week",
-      "detailPath": "articles/12f4683ad1aec563bbbc3e41.json"
-    },
-    {
-      "id": "ce847c6a4401dbd730a4fc59",
-      "title": "活過 vs. 記錄",
-      "summary": "去餐廳的時候，總會有人習慣先拍照「供奉」Instagram。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:56:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/performing-for-social-media",
-      "detailPath": "articles/ce847c6a4401dbd730a4fc59.json"
-    },
-    {
-      "id": "92a4395bcb1b963ac3259496",
-      "title": "汇编语言学习・壹",
-      "summary": "学习汇编语言的笔记。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/8e54.html",
-      "detailPath": "articles/92a4395bcb1b963ac3259496.json"
-    },
-    {
-      "id": "810de53fa038ef5cfed3da49",
-      "title": "读《大闸蟹》",
-      "summary": "这是陈昌平在零几年写的一篇短篇小说。",
-      "image": null,
-      "publishedAt": "2026-02-23T05:00:00Z",
-      "sourceId": "bbfc2dde895349ce",
-      "sourceTitle": "Cytrogen 的个人博客（中文）",
-      "link": "https://blog.cytrogen.icu/posts/b084.html",
-      "detailPath": "articles/810de53fa038ef5cfed3da49.json"
-    },
-    {
-      "id": "299f7fc8c9fd42c5df8b351a",
-      "title": "專輯歌曲順序要怎麼排？一個門外漢的排序原則",
-      "summary": "不怎麼懂音樂的我用AI做了一張專輯。12首歌，要按什麼順序排？",
-      "image": "https://alexhsu.com/_astro/lofi-jazz-stories-cover.DX7vNb0L.png",
-      "publishedAt": "2026-02-23T04:17:52Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/album-order",
-      "detailPath": "articles/299f7fc8c9fd42c5df8b351a.json"
-    },
-    {
-      "id": "1b30c421db36b9a90db558d5",
-      "title": "相反的你和我・同频的心与心",
-      "summary": "本文中，笔者赞誉《相反的你和我》为恋爱作品天花板，通过分析三段相反性格的恋爱关系，探讨青春与现实的共鸣，并分享个人深刻观感。",
-      "image": "https://ttio.cc/_astro/comic-books.Dhke1rv4_Z3tUpF.webp",
-      "publishedAt": "2026-02-23T01:26:55Z",
-      "sourceId": "c8f83e5c482b2a5b",
-      "sourceTitle": "記緒漂流",
-      "link": "https://ttio.cc/note/seihantai",
-      "detailPath": "articles/1b30c421db36b9a90db558d5.json"
-    },
-    {
-      "id": "86d8becbb818b572de089970",
-      "title": "使用體驗非常 Magic 的 Magic Mouse",
-      "summary": "我與 Magic Mouse 的相遇 # 有個老闆覺得 Magic Mouse 不好用，於是幫它買了增高墊 Plug-in，結果還是覺得不好用，就送給我音響公司的前輩，前輩覺得用 macbook 的觸控板比較方便，還不用多帶一顆滑鼠，就又送給了我。 增高墊的另一個用處是：把正下方的 Lightening 充電孔轉換成無線充電，但我沒有無線充電器就是了。 macOS + Magic Mouse 初測試 # 買回來馬上連線到 macOS，發現一直無法精準瞄準我要的目標，不斷調整速度、甚至關閉加速度後，我還是跟 120 歲才第一次用電腦的啊嬤一樣，點個視窗關閉的「X」按鈕都要瞄準超久，後來就放棄了。 「那如果在 Linux 電腦上呢？應該沒有奇怪的加速度問題吧？」 於是就試著到 Linux 電腦上測試了。 Linu…",
-      "image": "https://eddielv.com/musings/magic-mouse-2/magic-mouse.jpg",
-      "publishedAt": "2026-02-23T01:21:45Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/magic-mouse-2/",
-      "detailPath": "articles/86d8becbb818b572de089970.json"
     }
   ]
 }

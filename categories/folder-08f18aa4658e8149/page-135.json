@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "6d83e18e3ca466584b74c58e",
+      "title": "Android hwui 中 RenderThread 工作流程",
+      "summary": "前言 本篇文章是自己的一个学习笔记，记录了 Android 5.0 中 hwui 中的 RenderThread 的简单工作流程。由于是学习笔记，所以其中一些细节不会太详细，我只是将大概的流程走一遍，将其工作流标注出来，下次遇到问题的时候就可以知道去哪里查。 下图是我用 Systrace 抓取的应用启动时 RenderThread 第一次 Draw 的历史 Trace。它能帮助观察线程内的执行顺序，但 DrawFrame 区间结束不等于画面已显示：还需要核对 GPU 完成、缓冲区消费、合成和显示的时点。启动期间可能先看到 StartingWindow，它的退出也不能仅凭这段 CPU Trace 判断。",
+      "image": null,
+      "publishedAt": "2015-08-12T14:38:01Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/08/12/AndroidL-hwui-RenderThread-workflow/",
+      "detailPath": "articles/6d83e18e3ca466584b74c58e.json"
+    },
+    {
+      "id": "e272ed6164d069b2dc7c79ea",
+      "title": "乐事薯片的命名",
+      "summary": "在一个超市看到一个略奇葩的乐事薯片的口味，一下掀起了我对乐事薯片命名的好奇心。",
+      "image": null,
+      "publishedAt": "2015-08-12T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/lays-chips-naming",
+      "detailPath": "articles/e272ed6164d069b2dc7c79ea.json"
+    },
+    {
+      "id": "8aa553f1cfc0eb914a25afc6",
+      "title": "楊秀桃音樂學院",
+      "summary": "電腦音樂教室，每個人都有一台 iMac + Novation Impulse 49！",
+      "image": "https://wiwi.blog/assets/images/computerroom-be5fbddcd2ad265167a14b12e5f7507c.jpg",
+      "publishedAt": "2015-08-07T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/yst-music-school",
+      "detailPath": "articles/8aa553f1cfc0eb914a25afc6.json"
+    },
+    {
       "id": "990b427c0a8ee81edec34266",
       "title": "Java7 HashMap 源码分析",
       "summary": "在没有排序或额外索引的数组、链表中，按值查找最坏需要遍历全部元素。哈希表（hash table）通过哈希值定位桶，在哈希分布良好时，基本查找可以接近常数时间；这不代表所有输入下都能保证 O(1)。 HashMap是基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。（除了非同步和允许使用 null 之外，HashMap 类与 Hashtable 大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。 本文按源码顺序看 HashMap：数组与链表的数据结构、构造函数、put 和扩容、get，最后是迭代器如何用 modCount 检查结构修改。末尾补充后续 JDK 的变化。",
@@ -626,39 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2015/01/30/year-2014/",
       "detailPath": "articles/36b8028d4d6461e327f67a36.json"
-    },
-    {
-      "id": "7786ff6380e4bf5d0d6b1a00",
-      "title": "Android 性能优化之 Systrace 工具介绍(一)",
-      "summary": "技术复核（2026-10-13） ：本文原写于 2015 年。Systrace 的事件时间线仍有参考价值，Eclipse / Device Monitor 入口已过期；旧脚本参数以下文核对的 AOSP android-5.0.0_r1 为准。新增命令以 Android 11 / API 30 及以上的 Perfetto 为例，旧系统差异另列。后续文章见 Android Perfetto 系列目录 。 旧流程 现在的对应方式 Eclipse / Device Monitor 的 Systrace 按钮 Android 9 / API 28 起可用设备端 System Tracing；也可通过 ADB 采集 systrace.py 调用 atrace 并生成 HTML Perfetto 采集命令生成二进制 tra…",
-      "image": null,
-      "publishedAt": "2015-01-30T12:24:31Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/01/30/android-performance-tools-systrace-1/",
-      "detailPath": "articles/7786ff6380e4bf5d0d6b1a00.json"
-    },
-    {
-      "id": "113a9c78dccd598d74559d6d",
-      "title": "android动画-Frame Animation",
-      "summary": "动画可以在视觉上增加程序的流畅度，我之前对于动画这一块，是会用，但是不全面，这里写下博客，全面梳理一下Android动画方面的知识。当然，关于动画这块，也有很多前人写了很多内容，大家可以去参考。 3.0以前，android支持两种动画模式， Tween Animation , Frame Animation ，在android3.0中又引入了一个新的动画系统： Property Animation ，这三种动画模式在SDK中被称为 Property Animation , View Animation , Drawable Animation 。 可通过 NineOldAndroids 项目在3.0之前的系统中使用Property Animation。另外呢，还有activity之间的过渡动画，android…",
-      "image": null,
-      "publishedAt": "2015-01-28T12:13:47Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2015-01-28-android-frame-animation/?utm_source=rss",
-      "detailPath": "articles/113a9c78dccd598d74559d6d.json"
-    },
-    {
-      "id": "6c4236b18a3df121e0d8ffb0",
-      "title": "玩木工【十二】：新工具（玩具）",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2015-01-20T20:13:48Z",
-      "sourceId": "e20deb20a7b008d7",
-      "sourceTitle": "Chiaroscuro",
-      "link": "https://imick.github.io/articles/jw012/",
-      "detailPath": "articles/6c4236b18a3df121e0d8ffb0.json"
     }
   ]
 }

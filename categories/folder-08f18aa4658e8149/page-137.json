@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "d71f373d2c160dd636feac6b",
+      "title": "Android:Ubuntu 下执行 Adb 命令找不到设备",
+      "summary": "这篇写于 2014 年，当时用的是 Nokia X 和旧版 Android SDK。2026-10-13 更新了 Ubuntu 24.04 LTS 下的 udev 和用户组配置；旧 SYSFS 规则、Upstart 重启方式已经不适用， adb_usb.ini 的办法留在文末作历史记录。 1.问题概述 最近开发Nokia项目，遇到的问题如下： 插入Nokia x后，电脑没有反应，即不识别，同事的windows也不识别，最后在谷歌上搜索了良久，才找到了解决方案，但是没有记录，后来又要给别人配置的时候，发现忘记怎么配置了。想想这也是一个具有通性的问题，还是记录下来，分享给大家。 2.问题解决方案 先在设备上开启 USB 调试，并使用支持数据传输的 USB 线。用 adb version 确认调用的 Platfor…",
+      "image": null,
+      "publishedAt": "2014-03-25T03:15:17Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
+      "detailPath": "articles/d71f373d2c160dd636feac6b.json"
+    },
+    {
+      "id": "506ff04c13ef684ec4ef3661",
+      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
+      "summary": "1 辅助性服务介绍 2026-10-13 更新：本文原写于 2014 年，介绍 Android 4.0（API 14）起的无障碍服务配置。无障碍服务本身仍然有效，但用它实现通用通知中心的路线已过时；Android 4.3（API 18）起应使用专门的 NotificationListenerService 。下文修正服务声明和示例，并补充 Android 13（API 33）的节点回收变化。 辅助性服务（现通常称无障碍服务）用于帮助残障用户或暂时无法正常操作设备的用户使用应用，例如将界面文本读出来，或者提供触觉反馈。这一节介绍如何创建服务、接收界面事件和查询节点信息。 AccessibilityService 由系统在用户授权后绑定，不能当作普通后台任务服务来启动。下面给出服务骨架和几个方法的写法；接进自己的…",
+      "image": null,
+      "publishedAt": "2014-03-17T06:07:53Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
+      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
+    },
+    {
+      "id": "5d9ab7333063bf5c41ecbfca",
+      "title": "android异步操作总结",
+      "summary": "Android中经常会有一些操作比如网络请求，文件读写，数据库操作，比较耗时，我们需要将其放在非UI线程去处理，此时，我们需要处理任务前后UI的变化和交互。我们需要通过类似js中异步请求处理，这里总结我所了解到的，方便自己记忆，也方便别人的浏览。 AsyncTask new AysncTask().execute(); AsyncTask会按照流程执行在UI线程和一个耗时的任务线程。 1.onPreExecute() 执行预处理，它运行于UI线程，可以为后台任务做一些准备工作，比如绘制一个进度条控件。 2.doInBackground(Params…) 后台进程执行的具体计算在这里实现，doInBackground(Params…)是AsyncTask的关键，此方法必须重载。在这个方法内可以使用publish…",
+      "image": null,
+      "publishedAt": "2014-03-16T08:18:25Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2014-03-16-android-async-task/?utm_source=rss",
+      "detailPath": "articles/5d9ab7333063bf5c41ecbfca.json"
+    },
+    {
       "id": "1c139bd8e75283939d7dda72",
       "title": "解决Ubuntu下Sublime text 3中文输入的问题",
       "summary": "好久之前便听朋友说起Sublime Text这款软件很好用，终于这几天有空折腾，把软件给装起来了。用起来确实很不错，写代码很爽。 但是用了一段时间之后，我需要输入中文了，无论怎么切换输入法，都无法切换到中文。 网上搜索了一下，原来这是Bug。找解决方法吧。下面介绍我的解决方案，是大神cjacker解决成功的啦，我只是copy一下，方便大家在遇到这个问题的时候可以方便解决。 我的系统：ubuntu 13.04 我的输入法：fcitx sublime版本：3059 理论上支持 sublime text2/3 1.保存代码sublime-imfix.c /* sublime-imfix.c Use LD_PRELOAD to interpose some function to fix sublime input…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/where-is-the-typhoon",
       "detailPath": "articles/dda5467128d43ad7ab0ca82c.json"
-    },
-    {
-      "id": "d3232c51df398f0381ba51bd",
-      "title": "刷水龍頭",
-      "summary": "今天在打掃家裡的廁所，就學在日本台看到的那樣，用牙刷沾清潔劑刷水龍頭，結果效果真的不錯耶，可以把水龍頭刷得很亮。",
-      "image": "https://wiwi.blog/assets/images/faucet-f2e966c944ff5880eee503066296b9e8.jpg",
-      "publishedAt": "2008-07-11T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/faucet",
-      "detailPath": "articles/d3232c51df398f0381ba51bd.json"
-    },
-    {
-      "id": "6a0750fee8b0bd0da8eb4124",
-      "title": "Roger Federer 輸球了",
-      "summary": "這一場一開始看得超級悶的，Nadal 強勁的底線一直造成 Federer 的失誤，Federer 一直採上網的策略但是都不是很有用，就這樣 Nadal 6-4、6-4 連拿了兩盤。",
-      "image": null,
-      "publishedAt": "2008-07-10T15:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/federer-lost",
-      "detailPath": "articles/6a0750fee8b0bd0da8eb4124.json"
-    },
-    {
-      "id": "826f0d0f1c7281a9612e0ba4",
-      "title": "15 樓有夕陽",
-      "summary": "好吧，相機不夠好，其實拍下來沒有很好看，而且下面的房子和廣告招牌們有一點破壞氣氛。不過現場的感覺還是不錯的拉！",
-      "image": "https://wiwi.blog/assets/images/sunset-34cb7981484e7afe5371360cbd78c162.jpg",
-      "publishedAt": "2008-07-04T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/15f-sunset",
-      "detailPath": "articles/826f0d0f1c7281a9612e0ba4.json"
     }
   ]
 }

@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "106e602865bfe50057a07ed2",
+      "title": "一个人跑步，一个人写字，一个人走远",
+      "summary": "",
+      "image": null,
+      "publishedAt": "2025-03-25T00:18:06Z",
+      "sourceId": "27898db8e4920870",
+      "sourceTitle": "孙玲在美国",
+      "link": "https://mp.weixin.qq.com/s/ZyvAp_lmBP9Ch8YvzWQMlA",
+      "detailPath": "articles/106e602865bfe50057a07ed2.json"
+    },
+    {
+      "id": "2f620d759ebfd2c973c32101",
+      "title": "螢幕時間",
+      "summary": "看到 CommonSenseMedia.org 上一個有趣的研究報告《Media Use by Kids Zero to Eight》（零到八歲小孩的媒體使用）。這份 48 頁的報告研究了美國零到八歲的小孩的媒體使用習慣，像是在各種裝置上花了多少時間、看了什麼類別的內容等等。",
+      "image": "https://wiwi.blog/assets/images/screen-time-5ce8d6d407465385d171c470a325686d.png",
+      "publishedAt": "2025-03-25T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/screen-time",
+      "detailPath": "articles/2f620d759ebfd2c973c32101.json"
+    },
+    {
+      "id": "da4938f25ed0dd5bb555e2fa",
+      "title": "有限预算，无限探索：穷游在美国之行前准备",
+      "summary": "好大的美国！ 前言 美国这个国家幅员辽阔，地貌丰富，无论你喜欢看山看水、逛城市还是体验不同文化，总能找到心仪的地方。从震撼人心的国家公园到灯火辉煌的大都市，每个选择都有自己独特的魅力。但！辽阔的地理空间也成了旅行者的一大挑战：即使我已经在美国生活了将近8年，且属于那种\"见缝插针也要出去玩\"的类型，至今还只探索了美国的一小部分（除非你真的很有钱又很有空lol） 作为一个绝对的自然景观爱好者，我最初的美国探索主要都围绕拉斯维加斯，夏威夷或者阿拉斯加这些可以体验原始风光的地方。但是工作以后时间越来越紧张，我的旅行策略也不得不随之调整。现在更多是利用3-4天的时间进行频繁的短途旅行，于是也就自然而然地转向了更多的城市游：纽约、芝加哥、波士顿、华盛顿特区，以及一些特色文化体验：比如新奥尔良和奥兰多。 请提前规划！ “要…",
+      "image": null,
+      "publishedAt": "2025-03-25T00:00:00Z",
+      "sourceId": "72390a92567df082",
+      "sourceTitle": "1sle",
+      "link": "https://1sle29.github.io/p/trip1-us-2025/",
+      "detailPath": "articles/da4938f25ed0dd5bb555e2fa.json"
+    },
+    {
+      "id": "511b9d85f8f8b7bd09fa5b10",
+      "title": "安装配置Rime输入法",
+      "summary": "前言 其实我有能用的fcitx5+搜狗输入法的方案，但奈何kitty终端有对这个输入法的兼容性问题，无法启用中文，又奈何kitty的界面多美观舒服，和Konsole比起来简直就不是一个时代的产物。 安装Ibus框架和Rime输入法引擎 安装 IBus 和 Rime 组件 ： sudo pacman -S ibus ibus-rime 安装 Rime 双拼方案： sudo pacman -S rime-double-pinyin 配置 IBus 和 Rime 设置环境变量 在 ~/.xprofile 添加以下内容 export GTK_IM_MODULE=ibus export QT_IM_MODULE=ibus export XMODIFIERS=@im=ibus 重启系统或执行 source ~/.xpro…",
+      "image": null,
+      "publishedAt": "2025-03-24T20:37:38Z",
+      "sourceId": "77e484484cd58390",
+      "sourceTitle": "映屿",
+      "link": "https://blog.verdant.ee/posts/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AErime%E8%BE%93%E5%85%A5%E6%B3%95/",
+      "detailPath": "articles/511b9d85f8f8b7bd09fa5b10.json"
+    },
+    {
+      "id": "efb02378a136bf0a10a170bd",
+      "title": "240901 250325 痴迷",
+      "summary": "在前往东坝的出租车上闭目养神，听kokoro的翻唱歌单。kokoro的声音是令人难以琢磨的气质，很难用语言描述… Continue reading 240901 250325 痴迷 →",
+      "image": "https://0.gravatar.com/avatar/cab092a5c5ede78428d38d2c4b4d4e31e1b7ae079c59c535e65f0edd446d0a58?s=96&d=identicon&r=G",
+      "publishedAt": "2025-03-24T18:23:13Z",
+      "sourceId": "c96b327793445474",
+      "sourceTitle": "baoting's blog",
+      "link": "https://baoting.blog/2025/03/25/obsession/",
+      "detailPath": "articles/efb02378a136bf0a10a170bd.json"
+    },
+    {
       "id": "f03cf230d20f6a8a250bc610",
       "title": "20250325",
       "summary": "不得不说，官大一级压死人，这句话不是没有道理的。 最近开发的一个项目，已经到了测试阶段。 结果说改就改，开发、测试、PM在一起争论了一个小时。 都不如上一级的一句话：“那就改吧”。 那就改吧。",
@@ -252,17 +307,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/comfort-zone",
       "detailPath": "articles/7f37664f068f6e75dd92f73e.json"
-    },
-    {
-      "id": "e3089b5b490209b0337ad70a",
-      "title": "Quoi de neuf 016 偶尔没电的日子",
-      "summary": "昨天是久违的做什么都没有力气的一天，好像电量掉光，只想躺着。早上照例吃完早饭后做了 Duolingo 的练习，本来是计划开车去买菜的，但是冰箱还有够做一顿饭的最后一点存货，于是决定不去了。在沙发上看了一会儿书以后很快困了，于是定了闹钟抱着毯子眯了一会儿。到了快要去这周做小猫保姆的客户家里 meet-and-greet 的时候，才打起精神起来腌了羊排，洗了碗，出了门。天气很好很晴，太阳还有一些高度，走路去走路回，用自己人模狗样的那一面见了人。 晚上煎了羊排。这是我第一次做这样的菜。居然还算成功，还挺好吃的，很香。然而油烟特别特别大，晚上一直开着阳台门和两边房间的门，过了很久才散掉大半。今天洗锅的时候再一次被香晕了。羊油和蒜怎么可以这么香！但我以后应该不会做这个菜了，或者换成烤箱做。 后来琢磨着最近明明生活很平稳…",
-      "image": null,
-      "publishedAt": "2025-03-19T02:14:00Z",
-      "sourceId": "ea32f15981b17f0f",
-      "sourceTitle": "小小日常",
-      "link": "https://www.joeyrambles.com/2025/03/quoi-de-neuf-016.html",
-      "detailPath": "articles/e3089b5b490209b0337ad70a.json"
     },
     {
       "id": "230661970fe5f24bb637d7e6",
@@ -615,50 +659,6 @@
       "sourceTitle": "Wiwi.Blog Blog",
       "link": "https://wiwi.blog/blog/piracy-loss",
       "detailPath": "articles/c7879ee68f889afee5affe90.json"
-    },
-    {
-      "id": "11f0c037136c2f41486d3bf6",
-      "title": "想見在船上擁抱我的你 Sample Chopping & Flipping Remix",
-      "summary": "前言 # 音響公司有個同事是 DJ，而另個音控老師最近也報名了 DJ 課，並且常常放一些成熟的 Remix 作品來聽，尤其「國語作業簿」是我聽到比較多的。 於是我也想來玩玩看接歌，但不同於他們那種現場即時的接歌，這次用的是取樣剪輯重拼的方式 （Sample Chopping & Flipping），製作了這個作品。 取樣原曲 # Lovin’ You 擁抱 小船 想見你想見你想見你 和弦進行都是 IV-iii-ii-I。 來聽聽吧！ # 小小心得 # 對於不同歌曲，本身的空間效果差異很大，在混的時候會造成一定困擾，要特別注意。 一開始就要定好速度、Key，以較爲中間值的歌曲爲標準，其他歌曲向中間值靠近，變形才不會太嚴重。 VJ/VFX 視覺特效是一門專業，下次可能還是找現成的素材就好XD（影片畫面是 Eddi…",
-      "image": null,
-      "publishedAt": "2025-03-10T19:26:11Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/4321remix/",
-      "detailPath": "articles/11f0c037136c2f41486d3bf6.json"
-    },
-    {
-      "id": "2e3f2a78caa297450b677567",
-      "title": "Three.js Journey Notes 2 - Classic Techniques",
-      "summary": "课程链接：three.js journey 其他几篇： Notes 1 - Basics Notes 3 - Advanced Techniques Part1 Notes 4 - Advanced Techniques Part2 Notes 5 - Advanced Techniques Part3 Lights# basically walk through all lights types to demonstrate them one by one and feel what they can do. AmbientLight applies omnidirectional(全方向的) lighting on all geometries of the scene. good to simulate…",
-      "image": "https://static.zhuzi.dev/threejs-journey/haunted-house-1.png",
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "b9ab37590e1047a6",
-      "sourceTitle": "Blah Blah Booooom",
-      "link": "https://zhuzi.dev/posts/threejs-journey-notes-2-classic-techniques/",
-      "detailPath": "articles/2e3f2a78caa297450b677567.json"
-    },
-    {
-      "id": "5fed04b7171e26d5bd32d03a",
-      "title": "不要說",
-      "summary": "你是否曾經興奮地跟朋友分享你想做某件事，卻被他們七嘴八舌的意見澆了一頭冷水？那麼這篇貼文就是寫給你的。",
-      "image": null,
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/dont-share-your-plan",
-      "detailPath": "articles/5fed04b7171e26d5bd32d03a.json"
-    },
-    {
-      "id": "8e65ef878f98c1b0e0b0510c",
-      "title": "2025 Week 10",
-      "summary": "周记 | 2025年第10周（03-03~03-09）的见闻、体验与思考 状态 🌅 3月3日，早上5点半起，6点半出门去，晚上10点睡觉； 3月4日，早上6点半起，8点出门，晚上10点睡觉； 3月5日，早上8点起，晚上11点睡； 3月6日，凌晨4点起，看球2小时，7点出门； 3月7日，早上6点半起，11点睡； 3月8日，早上7点起。 周前还在熬大夜睡懒觉，这周就这么奇迹般地实现早睡早起了。 凌晨6点的深圳 🎶 路过好几个店在放方大同。 😌 图书馆，坐在我对面的老哥在用电脑刷抖音，我旁边的兄弟在用手机玩游戏，相比之下我刷微博或者看些无关的文章，做这些低效无任何产出的事情的都不会有压力，谢谢你们。 ⚽ 周内两场球，一场赢了一场输了。 周内两场球 🎬 周末看了场电影 《平原上的火焰》 ，还挺喜欢双雪涛小说原作的，但…",
-      "image": "https://s1mon-files.oss-cn-shenzhen.aliyuncs.com/img/202503190509659.webp",
-      "publishedAt": "2025-03-10T00:00:00Z",
-      "sourceId": "95e525ddc69ab5ef",
-      "sourceTitle": "金色河流",
-      "link": "https://goldenriver.site/posts/2025-week-10/",
-      "detailPath": "articles/8e65ef878f98c1b0e0b0510c.json"
     }
   ]
 }

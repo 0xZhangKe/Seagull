@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "25d2ece030336a81a336d19a",
+      "title": "深入浅出垃圾回收（四）分代式 GC",
+      "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
+      "image": null,
+      "publishedAt": "2018-08-18T12:12:30Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/",
+      "detailPath": "articles/25d2ece030336a81a336d19a.json"
+    },
+    {
+      "id": "0f2ee5dadd222c4c752c9e59",
+      "title": "PHP1",
+      "summary": "WEB基础$_GET flag{bugku_get_su8kej2en} 看到要 $what=='flag' 才能打印flag， $what 是可以用 ? 传进来的，所以地址栏输入 http://120.24.86.145:8002/get/?what=flag 得到flag WEB基础$_POST flag{bugku_get_ssseint67se} 这回 $what 要用POST方法提交才行，在hackbar里选“Post data”，上面的栏填地址，下面的写 what=flag ，execute 就得到flag了。 变量1 flag{92853051ab894a64f7865cf3c2128b34} 提示flag在变量里，后续程序提取出输入的参数所代表变量的值，试了下 ?args=flag ， $fl…",
+      "image": null,
+      "publishedAt": "2018-08-16T09:31:03Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/php1/",
+      "detailPath": "articles/0f2ee5dadd222c4c752c9e59.json"
+    },
+    {
+      "id": "3b4751e9e014fb11c106dd60",
+      "title": "天津笔记：那些牺牲的19岁",
+      "summary": "对消防员家属来说，烈士的名号太遥远，他们想知道的，是什么，把年轻的生命抛入了这样的命运。… Continue reading 天津笔记：那些牺牲的19岁 →",
+      "image": "https://wentommy.wordpress.com/wp-content/uploads/2018/08/e8e5383d87a64932b0e7070edb1eb844.jpg",
+      "publishedAt": "2018-08-15T08:56:09Z",
+      "sourceId": "3953acd1dfa15f46",
+      "sourceTitle": "文三娃",
+      "link": "https://wentommy.wordpress.com/2018/08/15/%e9%82%a3%e4%ba%9b%e7%89%ba%e7%89%b2%e7%9a%8419%e5%b2%81/",
+      "detailPath": "articles/3b4751e9e014fb11c106dd60.json"
+    },
+    {
       "id": "bdc231563c65d0bed69dcd8e",
       "title": "RE2",
       "summary": "correct_the_byte FLAG-EiTMzujOpNwYCeervQMFod0hmZHC@ 看一晚上也不知道要correct哪个byte，问了学长得知是异或的0x13有问题。所以就 x/34xb $rsi 打印出将要被异或的值，穷举要异或的数爆破。 再加上群里flag的开头图片，ctrl+f找出flag。 rsi_list = [ 0x 0c , 0x 06 , 0x 0b , 0x 0d , 0x 67 , 0x 0f , 0x 23 , 0x 1e , 0x 07 , 0x 30 , 0x 3f , 0x 20 , 0x 05 , 0x 3a , 0x 04 , 0x 3d , 0x 13 , 0x 09 , 0x 2f , 0x 2f , 0x 38 , 0x 3c , 0x 1b , 0x…",
@@ -256,7 +289,7 @@
     {
       "id": "9ce6be0c279ced86ec91fc2a",
       "title": "关于部落冲突的二三事儿（番外）-端午事变",
-      "summary": "回游已有不少时日，期间也发生过不少事情，虽然总裁也有在怂恿我去再写些什么，但却始终没有下定决心敲起键盘。 但我想，这一次，大概不得不说了。 访问 https://www.yunyoujun.cn/posts/coc-dragon-boat-incident 阅读全文。",
+      "summary": "回游已有不少时日，期间也发生过不少事情，虽然总裁也有在怂恿我去再写些什么，但却始终没有下定决心敲起键盘。 但我想，这一次，大概不得不说了。",
       "image": null,
       "publishedAt": "2018-06-22T23:05:24Z",
       "sourceId": "410b11347b8a16bf",
@@ -355,7 +388,7 @@
     {
       "id": "f889631eb80ccc3dd9b04b4f",
       "title": "Travis-CI 持续集成部署",
-      "summary": "Travis CI - Test and Deploy Your Code with Confidence travis-ci.org 访问 https://www.yunyoujun.cn/posts/use-travis-to-deploy 阅读全文。",
+      "summary": "Travis CI - Test and Deploy Your Code with Confidence travis-ci.org",
       "image": null,
       "publishedAt": "2018-05-24T15:04:42Z",
       "sourceId": "410b11347b8a16bf",
@@ -575,7 +608,7 @@
     {
       "id": "088a11e102a00036d6d3af4c",
       "title": "Vue 中 canvas 的自适应",
-      "summary": "最近又在写一些没什么用的小玩意儿。 ref: https://github.com/YunYouJun/star-timer/blob/master/docs/.vuepress/components/StarMap.vue 在过程中尝试使用 Vue 来实现 Html5 中 Canvas 标签的自适应。 访问 https://www.yunyoujun.cn/posts/responsive-canvas-with-vue 阅读全文。",
+      "summary": "最近又在写一些没什么用的小玩意儿。 ref: 在过程中尝试使用 Vue 来实现 Html5 中 Canvas 标签的自适应。",
       "image": null,
       "publishedAt": "2018-03-27T11:44:33Z",
       "sourceId": "410b11347b8a16bf",
@@ -586,7 +619,7 @@
     {
       "id": "cb5bce495da6d5612bca4341",
       "title": "大家一起吃火锅吧",
-      "summary": "我讨厌「命运」这一个词 出生 相遇 离别 成功与失败 人生之幸与不幸 如果这是预先被命运所决定好的话 我们究竟是为何而出生 在富裕家庭里出生的孩子 美丽的母亲所生的孩子 在饥饿和战争中所出生的孩子 如果这一切被称之为「命运」的话 那所谓的神明真是蛮不讲理而又残酷 从那时起我们便失去了所谓的未来 我们只是清楚地明了我们将会一事无成这一件事 -- 《回转企鹅罐》 访问 https://www.yunyoujun.cn/posts/eat-hot-pot-together 阅读全文。",
+      "summary": "我讨厌「命运」这一个词 出生 相遇 离别 成功与失败 人生之幸与不幸 如果这是预先被命运所决定好的话 我们究竟是为何而出生 在富裕家庭里出生的孩子 美丽的母亲所生的孩子 在饥饿和战争中所出生的孩子 如果这一切被称之为「命运」的话 那所谓的神明真是蛮不讲理而又残酷 从那时起我们便失去了所谓的未来 我们只是清楚地明了我们将会一事无成这一件事 -- 《回转企鹅罐》",
       "image": null,
       "publishedAt": "2018-03-25T08:31:11Z",
       "sourceId": "410b11347b8a16bf",
@@ -626,39 +659,6 @@
       "sourceTitle": "DrPika's Blog",
       "link": "https://blog.drpika.com/posts/2018-03-24",
       "detailPath": "articles/7a6a0d79d9aba877142f130d.json"
-    },
-    {
-      "id": "c57594a4094b640f1cff776a",
-      "title": "“吃了吗？”",
-      "summary": "随便写写，关于理解。",
-      "image": null,
-      "publishedAt": "2018-03-24T00:00:00Z",
-      "sourceId": "3e335517f4e1112a",
-      "sourceTitle": "Dr.Pika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-24",
-      "detailPath": "articles/c57594a4094b640f1cff776a.json"
-    },
-    {
-      "id": "450474e3812fdf4d6f9df416",
-      "title": "ㄏ一ㄇv",
-      "summary": "",
-      "image": "https://wiwi.blog/assets/images/bear-d02d344e3ac788ec0dbd310323f384b2.jpg",
-      "publishedAt": "2018-03-22T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/animal-drinks",
-      "detailPath": "articles/450474e3812fdf4d6f9df416.json"
-    },
-    {
-      "id": "4b1e505dd2c61695055ab53d",
-      "title": "博客折腾“大”记",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2018-03-18T00:00:00Z",
-      "sourceId": "d48d6f28fe78bc92",
-      "sourceTitle": "DrPika's Blog",
-      "link": "https://blog.drpika.com/posts/2018-03-18",
-      "detailPath": "articles/4b1e505dd2c61695055ab53d.json"
     }
   ]
 }

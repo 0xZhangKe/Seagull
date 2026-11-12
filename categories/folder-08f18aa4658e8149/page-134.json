@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "94d0128b21879f703f149093",
+      "title": "Path和Property Animation配合让线条动起来",
+      "summary": "之前做过一个图上标签但是动画样式不太好看，经过查找资料发现了一种全新的思路来实现动画，流畅的让标签的线显示和隐藏，示例如下，就在这里说一说。本文会涉及到Path，Property Animation, PathEffect, PathMeasure。我们开始一一道来。 使用Path绘制曲线 当我们需要画曲线的时候，可能会直接使用drawLine来画，不太复杂的话还比较好实现，如果需要画曲线，或者拐弯的线的时候使用drawLine就比较复杂了。这时候，我们可以借助 Path 来drawPath。 1 2 3 4 5 6 7 8 9 Paint paint = new Paint (); paint . setColor ( Color . BLACK ); paint . setStyle ( Paint .…",
+      "image": "https://isming.me/images/tag_animation.gif",
+      "publishedAt": "2016-06-07T06:03:39Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2016-06-07-path-property-animation/?utm_source=rss",
+      "detailPath": "articles/94d0128b21879f703f149093.json"
+    },
+    {
+      "id": "b51a62b8e67d4934d93473c8",
+      "title": "编程语言中的变量作用域与闭包",
+      "summary": "如果你写过 javascript，应该听说过 变量提升 （hoisting），如果你自诩“Life is short, I use Python”，那么多多少少会用过 global 、 nonlocal 这两个关键字。无论新手还是老手，遇到这些时都会觉得很别扭，稍不留神就会出现意想不到的 bug，如果你仔细观察就会发现，它们其实是一个问题：变量作用域的问题。",
+      "image": null,
+      "publishedAt": "2016-05-28T20:44:34Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2016/05/28/scope-closure/",
+      "detailPath": "articles/b51a62b8e67d4934d93473c8.json"
+    },
+    {
+      "id": "9e18ef12fc72a75caad3521b",
+      "title": "关于部落冲突的二三事儿-2",
+      "summary": "上回说到，我们中的一些人，出来发展分部。我预感到，这大概也是我们残存的激情的终点了。",
+      "image": null,
+      "publishedAt": "2016-05-26T15:09:20Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/a-story-about-coc-2",
+      "detailPath": "articles/9e18ef12fc72a75caad3521b.json"
+    },
+    {
       "id": "e64725cec07ff4d498f6059e",
       "title": "SICP 第五章总结",
       "summary": "经过第四章元语言抽象的洗礼，我们已经能够深谙编译器内部的原理，核心就是 eval-apply 循环，只是说基于这个核心可以有各种延伸，像延迟求值、amb 不定选择求值、逻辑求值等等，有了这层的理解，我们应该能够透过各种花哨的 语法糖 ，看出其本质来，像 Node.js 中的 Promise、 Python 中的 coroutine，都是 continuation 的一种应用而已。",
@@ -14,7 +47,7 @@
     {
       "id": "1cdbab96ef021396141e1038",
       "title": "关于部落冲突的二三事儿-1",
-      "summary": "2016-05-12 一切的开始还要追溯到那个公众频道还清澈干净到连广告都没有的年代，但说实在，也不过是两年前罢了。刚高考毕业的我，拥有了第一部真正属于自己的手机。高考后的暑假，稍微恣 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-1 阅读全文。",
+      "summary": "一切的开始还要追溯到那个公众频道还清澈干净到连广告都没有的年代，但说实在，也不过是两年前罢了。刚高考毕业的我，拥有了第一部真正属于自己的手机。高考后的暑假，稍微恣意放纵些也是可以的吧。然后无所事事的我与它相遇了，于是我的整个世界变得纷杂多彩起来，好吧，我自己都不信。好啦好啦，应该就是普通的在群文件里下载了个游戏，玩了起来。 与其说是相遇，倒不如说被动地天天被它撞见。入坑的源头则是友人 A，友人 A…",
       "image": null,
       "publishedAt": "2016-05-12T17:56:43Z",
       "sourceId": "410b11347b8a16bf",
@@ -25,7 +58,7 @@
     {
       "id": "7e71bff45e00de608fde103b",
       "title": "关于部落冲突的二三事儿-序",
-      "summary": "大概是因为作为少数一直玩了将尽两年这么久的游戏，又或者是因为恰巧从大学开始陪伴了我大部分光阴的游戏，已经开始进入为生活的一部分了。即便有时它的趣味不再吸引我，甚至一度想过弃游，但一想到在这里我遇到过那么多人那么多事，便不舍得放下这份回忆。想来如今它更多吸引我的大概已经不是其本身的趣味了，而是其中的种种人与事的联系。 访问 https://www.yunyoujun.cn/posts/a-story-about-coc-0 阅读全文。",
+      "summary": "大概是因为作为少数一直玩了将尽两年这么久的游戏，又或者是因为恰巧从大学开始陪伴了我大部分光阴的游戏，已经开始进入为生活的一部分了。即便有时它的趣味不再吸引我，甚至一度想过弃游，但一想到在这里我遇到过那么多人那么多事，便不舍得放下这份回忆。想来如今它更多吸引我的大概已经不是其本身的趣味了，而是其中的种种人与事的联系。",
       "image": null,
       "publishedAt": "2016-05-12T15:31:35Z",
       "sourceId": "410b11347b8a16bf",
@@ -626,39 +659,6 @@
       "sourceTitle": "Bluepikachu",
       "link": "https://bluepika.life/blog/prototype-design-1",
       "detailPath": "articles/934b66143a277903dc2f3b0e.json"
-    },
-    {
-      "id": "6d83e18e3ca466584b74c58e",
-      "title": "Android hwui 中 RenderThread 工作流程",
-      "summary": "前言 本篇文章是自己的一个学习笔记，记录了 Android 5.0 中 hwui 中的 RenderThread 的简单工作流程。由于是学习笔记，所以其中一些细节不会太详细，我只是将大概的流程走一遍，将其工作流标注出来，下次遇到问题的时候就可以知道去哪里查。 下图是我用 Systrace 抓取的应用启动时 RenderThread 第一次 Draw 的历史 Trace。它能帮助观察线程内的执行顺序，但 DrawFrame 区间结束不等于画面已显示：还需要核对 GPU 完成、缓冲区消费、合成和显示的时点。启动期间可能先看到 StartingWindow，它的退出也不能仅凭这段 CPU Trace 判断。",
-      "image": null,
-      "publishedAt": "2015-08-12T14:38:01Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/08/12/AndroidL-hwui-RenderThread-workflow/",
-      "detailPath": "articles/6d83e18e3ca466584b74c58e.json"
-    },
-    {
-      "id": "e272ed6164d069b2dc7c79ea",
-      "title": "乐事薯片的命名",
-      "summary": "在一个超市看到一个略奇葩的乐事薯片的口味，一下掀起了我对乐事薯片命名的好奇心。",
-      "image": null,
-      "publishedAt": "2015-08-12T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/lays-chips-naming",
-      "detailPath": "articles/e272ed6164d069b2dc7c79ea.json"
-    },
-    {
-      "id": "8aa553f1cfc0eb914a25afc6",
-      "title": "楊秀桃音樂學院",
-      "summary": "電腦音樂教室，每個人都有一台 iMac + Novation Impulse 49！",
-      "image": "https://wiwi.blog/assets/images/computerroom-be5fbddcd2ad265167a14b12e5f7507c.jpg",
-      "publishedAt": "2015-08-07T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/yst-music-school",
-      "detailPath": "articles/8aa553f1cfc0eb914a25afc6.json"
     }
   ]
 }

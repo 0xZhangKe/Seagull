@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://willem.com/</id>
     <title>Willem L. Middelkoop</title>
-    <updated>2026-11-03T23:00:00.000Z</updated>
+    <updated>2026-11-12T23:00:00.000Z</updated>
     <generator>Lemmid Manager</generator>
     <author>
         <name>Willem L. Middelkoop</name>
@@ -14,6 +14,36 @@
     <subtitle>Thoughts about hacking, developing, technology and other things in life</subtitle>
     <logo>https://willem.com/global/icon.png</logo>
     <icon>https://willem.com/global/icon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[The Next App Is No App]]></title>
+        <id>https://willem.com/en/2026-11-13_the-next-app-is-no-app/</id>
+        <link href="https://willem.com/en/2026-11-13_the-next-app-is-no-app/"/>
+        <link rel="enclosure" href="https://willem.com/global/images/526d1d1b8cb7.webp" type="image/webp"/>
+        <updated>2026-11-12T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I have been building apps for my customers since 2010. The next step is not a better app. It is no app at all: their own AI agent connects to my platform and does the work with them. This week the first customers started using it.]]></summary>
+        <content type="html"><![CDATA[<p><strong>I have been building apps for my customers since 2010. The next step is not a better app. It is no app at all: their own AI agent connects to my platform and does the work with them. This week the first customers started using it.</strong></p>
+<h2>Mobile first, since 2016</h2>
+<p><a target="_blank" rel="noopener" href="https://lemmid.nl">Lemmid</a> is the platform behind the websites I make and host. Two parts matter for this story: Manager, where a customer edits the content of a site, and <a target="_blank" rel="noopener" href="https://willem.com/en/2026-07-07_counting-agentic-traffic/">Count</a>, which reports how that site is read. Since 2016 the whole system has been mobile first, including the back end. Long before responsive design became the standard, everything worked 100% on a small screen.</p>
+<p>That opened a flurry of use cases nobody had planned for. Many of my customers do hands-on edits from their phone, while running their business. People love it.</p>
+<figure class="post-fig" id="mobile-first-in-situ-harry-van-de-laar-with-lemmid-store-on-his-phone-straight-from-the-kitchen"><img src="https://willem.com/global/images/bc007b901e71.webp" width="1600" height="1067" alt="Mobile first in situ: Harry van de Laar with Lemmid Store on his phone, straight from the kitchen" loading="lazy"><figcaption>Mobile first in situ: Harry van de Laar with Lemmid Store on his phone, straight from the kitchen</figcaption></figure>
+<h2>A new wish</h2>
+<p>Now my most avant-garde customers have dropped a new wish. They are, just like me, deep into agentic workflows, where humans and agents work together to get things done. They are beyond copying and pasting from a chat window. They asked for a way to let their agent (ChatGPT from OpenAI, Claude from Anthropic) connect directly to the products and services I offer as Lemmid.</p>
+<h2>A gateway for agents</h2>
+<p>So I made one: <a target="_blank" rel="noopener" href="https://agents.lemmid.com">agents.lemmid.com</a>, an agentic gateway into the Lemmid platform. A customer connects it once, logs in with the Lemmid account they already have and ticks the websites the agent may work on. From then on the agent works on their behalf.</p>
+<figure class="post-fig" id="connecting-takes-one-login-at-lemmid-tick-the-sites-and-the-agent-asks-before-it-acts"><img src="https://willem.com/global/images/a6fda619c22c.webp" width="1579" height="1600" alt="Connecting takes one login at Lemmid: tick the sites, and the agent asks before it acts" loading="lazy"><figcaption>Connecting takes one login at Lemmid: tick the sites, and the agent asks before it acts</figcaption></figure>
+<p>Every agent gets a briefing, in technical terms, about all the options the platform offers. In a way the agents help my customers discover what their system can do. An agent can explain how a website performs, day by day, page by page. I asked ChatGPT, by voice, where the October peak on <a target="_blank" rel="noopener" href="https://rembrandtplein-amsterdam.nl">rembrandtplein-amsterdam.nl</a> came from. It found the Amsterdam Dance Event. A minute later it told me which pages are already being read for New Year's Eve.</p>
+<figure class="post-fig" id="chatgpt-asked-by-voice-will-december-bring-a-peak-like-october-did"><img src="https://willem.com/global/images/371a44b74958.webp" width="1600" height="1103" alt="ChatGPT, asked by voice: will December bring a peak like October did?" loading="lazy"><figcaption>ChatGPT, asked by voice: will December bring a peak like October did?</figcaption></figure>
+<p>These insights, combined with the context a customer and the agent have about the business, lead to very informed, specific edits. They update their website without touching a content management system, an app or whatever. We enable their AI to steer.</p>
+<h2>The risks</h2>
+<p>Obviously there are risks. That is why the gateway has no powers of its own. It is an ordinary app that uses the same API as the editor, so an agent can do what its owner can do, and nothing more. Log out of Lemmid and every agent is disconnected at once.</p>
+<figure class="post-fig" id="my-note-of-12-november-the-gateway-is-an-ordinary-app-no-elevated-system-with-magic-powers-inside"><img src="https://willem.com/global/images/b0c24e911189.webp" width="1056" height="1058" alt="My note of 12 November: the gateway is an ordinary app, no elevated system with magic powers inside" loading="lazy"><figcaption>My note of 12 November: the gateway is an ordinary app, no elevated system with magic powers inside</figcaption></figure>
+<p>Versioning is improved, so that any edit to a website can be rolled back: by the customer's agent, or by ours, as a helpdesk service. And extensive logging gives a detailed trace of everything that happens on the platform, and on whose behalf.</p>
+<h2>Better together</h2>
+<p>The platform actively encourages agents to file a feature request when a site cannot do what is asked, instead of working around it. The first request came in on day one (from my own agent, I admit) and was live the same evening. Customer, agents and I: this is &quot;we make things better together&quot; in practice.</p>
+<h2>Conclusion</h2>
+<p>The next app is no app. My customers do not need another screen to learn. Their agent connects to Lemmid, gets briefed, reads the numbers and makes the edit, with a history that can put everything back. The first customers are using it now, and what they ask for decides what I build next. Curious what your agent could do with your website? <a target="_blank" rel="noopener" href="https://willem.com/en/#contact">Send me a message</a>. Then let it steer.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Laggy Legs]]></title>
         <id>https://willem.com/en/2026-11-04_laggy-legs/</id>

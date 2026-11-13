@@ -5,9 +5,19 @@
     <link>https://koimsurai.com/blog</link>
     <description>宙と木，Koimsurai 的手記。一個寫代碼的人，偶爾造點東西。</description>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 04 Nov 2026 08:23:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 15:19:30 GMT</lastBuildDate>
     <generator>sora-to-ki</generator>
     <atom:link href="https://koimsurai.com/rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>給黃仁勳的一封信</title>
+      <link>https://koimsurai.com/blog/a-letter-to-jensen-huang</link>
+      <guid isPermaLink="true">https://koimsurai.com/blog/a-letter-to-jensen-huang</guid>
+      <description>黃仁勳請辭的那個半夜，作者數著房間裡的顯卡，才發現自己這二十二年，是用他的卡一張一張排起來的：十三歲向媽媽開口要來的 GTX 960，高中在餐廳打工三個月、用一雙竹筷撐著的 RTX 2060，到現在寫的程式，要裝在他發表的晶片上，被另一個人帶回家。這是作者寫給他的一封信。</description>
+      <author>Koimsurai</author>
+      <pubDate>Fri, 13 Nov 2026 13:58:12 GMT</pubDate>
+      <category>時光切片</category>
+      <category>遊戲</category><category>個人成長</category><category>NVIDIA</category><category>回憶</category>
+    </item>
     <item>
       <title>我是如何做設計的：先找到自己的世界觀，再把每一道接縫接好</title>
       <link>https://koimsurai.com/blog/how-i-design-detail-by-detail</link>
@@ -297,16 +307,6 @@
       <pubDate>Fri, 20 Feb 2026 16:59:35 GMT</pubDate>
       <category>聲律拾遺</category>
       <category>ヨルシカ</category><category>情感療癒</category><category>日文歌</category><category>音樂解析</category><category>老人與海</category>
-    </item>
-    <item>
-      <title>打造一個會自己管理圖片的 Markdown 編輯器: 從 Monaco Editor、背景上傳，到 NAS 圖庫與圖片牆</title>
-      <link>https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own</link>
-      <guid isPermaLink="true">https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own</guid>
-      <description>從「Monaco 只能放連結、不能直接放圖」這個小需求出發,一路牽出圖片處理的整條坑:Base64 為何會讓編輯器卡頓又撐爆資料庫、貼上就自動上傳到 NAS 的設計,以及最容易忽略的一顆地雷——Docker bind mount 其實是一道「傳送門」,只要 HDD 沒掛載成功,檔案就會靜默寫回系統碟。文章也記錄了把靜態圖片牆重寫成 NAS 動態 API 的規劃,以及照片牆改版時「UI 先行、資料後補」的取捨。</description>
-      <author>Koimsurai</author>
-      <pubDate>Fri, 20 Feb 2026 04:57:13 GMT</pubDate>
-      <category>位元築夢</category>
-      <category>Monaco Editor</category><category>圖片上傳</category><category>Markdown</category><category>NAS</category><category>Nginx</category><category>後端開發</category>
     </item>
   </channel>
 </rss>

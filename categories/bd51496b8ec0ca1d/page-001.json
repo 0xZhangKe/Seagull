@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "08cc084caf60558dc61d5988",
+      "title": "給黃仁勳的一封信",
+      "summary": "黃仁勳請辭的那個半夜，作者數著房間裡的顯卡，才發現自己這二十二年，是用他的卡一張一張排起來的：十三歲向媽媽開口要來的 GTX 960，高中在餐廳打工三個月、用一雙竹筷撐著的 RTX 2060，到現在寫的程式，要裝在他發表的晶片上，被另一個人帶回家。這是作者寫給他的一封信。",
+      "image": null,
+      "publishedAt": "2026-11-13T13:58:12Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/a-letter-to-jensen-huang",
+      "detailPath": "articles/08cc084caf60558dc61d5988.json"
+    },
+    {
       "id": "01527ba9df2be5dccf9263dc",
       "title": "我是如何做設計的：先找到自己的世界觀，再把每一道接縫接好",
       "summary": "現在做網站很快，卻常常大同小異，作者認為問題多半出在不知道自己要什麼。這篇把作者的做法整理成步驟：從自己真正喜歡的東西出發，拿它回答每個站都會遇到的問題，變成一套世界觀。做大選擇時先算代價，像整站做成 3D，換到了宇宙的寬闊，也得補上效能和閱讀的負擔。接著用減法收斂，只留點和線，顏色先定角色再挑色，並做黑白測試。判斷標準不是真不真實，而是和不和諧，每個細節用五道接縫檢查，說不出哪裡不對時就去參考、學習和研究。四顆天體的故事，則要放進讀者看得到的位置。文末附上一份可以直接套到自己網站的清單。",
@@ -318,17 +329,6 @@
       "sourceTitle": "Koimsurai 手記",
       "link": "https://koimsurai.com/blog/yorushika-the-old-man-and-the-sea",
       "detailPath": "articles/d8ab96bda0a2e4d6e7f6f6ff.json"
-    },
-    {
-      "id": "3aee34eb9dac6aec9a2c1ef3",
-      "title": "打造一個會自己管理圖片的 Markdown 編輯器: 從 Monaco Editor、背景上傳，到 NAS 圖庫與圖片牆",
-      "summary": "從「Monaco 只能放連結、不能直接放圖」這個小需求出發,一路牽出圖片處理的整條坑:Base64 為何會讓編輯器卡頓又撐爆資料庫、貼上就自動上傳到 NAS 的設計,以及最容易忽略的一顆地雷——Docker bind mount 其實是一道「傳送門」,只要 HDD 沒掛載成功,檔案就會靜默寫回系統碟。文章也記錄了把靜態圖片牆重寫成 NAS 動態 API 的規劃,以及照片牆改版時「UI 先行、資料後補」的取捨。",
-      "image": null,
-      "publishedAt": "2026-02-20T04:57:13Z",
-      "sourceId": "bd51496b8ec0ca1d",
-      "sourceTitle": "Koimsurai 手記",
-      "link": "https://koimsurai.com/blog/building-a-markdown-editor-that-manages-its-own",
-      "detailPath": "articles/3aee34eb9dac6aec9a2c1ef3.json"
     }
   ]
 }

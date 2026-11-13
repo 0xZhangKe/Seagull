@@ -1,6 +1,204 @@
 {
   "items": [
     {
+      "id": "93a544dbccc73a74f3826217",
+      "title": "有錢的客戶才是好客戶？",
+      "summary": "怎麼樣的客戶會是更好的客戶呢？是覺得你很便宜的，還是覺得你很貴的？",
+      "image": null,
+      "publishedAt": "2026-10-13T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/client-wealth-theory",
+      "detailPath": "articles/93a544dbccc73a74f3826217.json"
+    },
+    {
+      "id": "71dd77d42eb37bba2842b13d",
+      "title": "寫作一年後",
+      "summary": "寫作真是件奇妙的事情，它是生活的「再完成」",
+      "image": "https://alicehsu.blog/images/Post/77/1.webp",
+      "publishedAt": "2026-10-12T21:50:00Z",
+      "sourceId": "a08fec079b5bc196",
+      "sourceTitle": "Alice Hsu's Blog",
+      "link": "https://alicehsu.blog/zh-tw/posts/2026/10/after-a-year-blogging/",
+      "detailPath": "articles/71dd77d42eb37bba2842b13d.json"
+    },
+    {
+      "id": "60946ebcffdff6e2c61c7198",
+      "title": "格友見面：Shaun",
+      "summary": "第一次跟格友Shaun見面，聊到他的徒步、義消，還有寫部落格帶來的緣分。沒想到也有人一路讀著我的文章，帶著我的書來找我簽名。",
+      "image": "https://media.alexhsu.com/img/meeting-shaun-book-and-puzzle.webp",
+      "publishedAt": "2026-10-12T15:57:11Z",
+      "sourceId": "5a534c077bd79dd1",
+      "sourceTitle": "Alex Hsu 徐小翔",
+      "link": "https://alexhsu.com/meeting-shaun",
+      "detailPath": "articles/60946ebcffdff6e2c61c7198.json"
+    },
+    {
+      "id": "a02ac7c8c3ec846895e831f5",
+      "title": "使用 Python 脚本将 CanoKey 恢复出厂设置",
+      "summary": "与 我大多数技术文章的写作方式不同——那些文章通常先由我本人撰写，再借助 LLM 润色 ，本文大部分内容由 LLM 撰写。我借助 LLM 找到了一种解决方案，确认它能够正常工作，然后将 LLM 的回答整理成了这篇文章。 我在搭载固件 3.0.3-0-g30917b92 的 CanoKey Canary 上测试了以下操作流程。 1. 准备所需工具 在 Debian 或 Ubuntu 上运行： $ sudo apt install python3-usb libusb-1.0-0 然后使用以下脚本发送命令： #!/usr/bin/env python3 import time import usb.core import usb.util VID = 0x20A0 PID = 0x42D4 INTERFACE =…",
+      "image": null,
+      "publishedAt": "2026-10-12T15:01:37Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/factory-reset-canokeys-with-a-python-script/",
+      "detailPath": "articles/a02ac7c8c3ec846895e831f5.json"
+    },
+    {
+      "id": "844b7d6332bb68869f3f8e5e",
+      "title": "按摩",
+      "summary": "距離高中畢業已經四年了，我覺得我變了很多，但也沒變。沒變的是什麼我也說不清，但我清楚有些在意的事情我還是沒完全妥協，只是我覺得我已經社會化很多了。感覺寫到這邊是不是可以接一些什麼情感澎湃的感觸文字，但我覺得現在感受是很平淡的，只覺得時間過得既快又慢，天知道這個人到底在說什麼。明年對我來說很重要到最近放假都覺得不是很輕鬆，我覺得我該好好停下來一下了。至少在這篇的文字中把自己的感受放在第一位。我記得我有幾篇文章有提到一個感覺，但覺得當時詞不達意。那個感覺隨時間累積，我慢慢有抓到一點神韻，簡單、露骨地說，就是我排斥因為部落格的公開性，讓我對自己的文字不誠實，但這個不誠實不是說我編造謊言，而是因為太顧慮別人的想法，而太過修飾文字。所以剛好現在疲憊的心，打字就像按摩般，答答答下去，不要想太多。 說起來我現在整個人是很謎…",
+      "image": null,
+      "publishedAt": "2026-10-12T14:57:21Z",
+      "sourceId": "9bbc7d640e2bc143",
+      "sourceTitle": "RayrrrrrR",
+      "link": "https://rayrrrrrrr.bearblog.dev/6842/",
+      "detailPath": "articles/844b7d6332bb68869f3f8e5e.json"
+    },
+    {
+      "id": "f79a4b082920cb07e29bf831",
+      "title": "SageFreedom 和我的第一个备用身份已失效",
+      "summary": "警告： 密钥 ID 为 0xD5C6AFE1A6186D1C 的 OpenPGP 密钥和密钥 ID 为 0x98313A47362B498B 的 OpenPGP 密钥已不再使用，现予以撤销。相应的身份分别是 SageFreedom 和 Rebel Zhang，因此均已失效。请勿再信任这两个身份。 我的主要身份 Rebel Zhang 目前仍然有效，对应的 OpenPGP 密钥 ID 为 0xBCD5DC5659C7FB50。我的备用身份对应的 OpenPGP 密钥 ID 为 0x4A52DBB4FB0D0262，目前也仍然有效。",
+      "image": null,
+      "publishedAt": "2026-10-12T14:44:24Z",
+      "sourceId": "d20806ffb0ba0e55",
+      "sourceTitle": "Rebel Zhang 的博客",
+      "link": "https://rebel1725.codeberg.page/blog/zh/post/sagefreedom-and-my-first-backup-identity-are-invalidated/",
+      "detailPath": "articles/f79a4b082920cb07e29bf831.json"
+    },
+    {
+      "id": "817a4a96e810f50737891ab8",
+      "title": "HTML里的“宏”",
+      "summary": "摊牌了，分享两个极少有人知道的技巧。 观察下面的网页 https://lab.est.im/xhtml/ 有没有发现神奇之处 <?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE html [ <!ENTITY my_symbol \"★\"> <!ENTITY wikipedia '<img height=\"14\" src=\"https://en.wikipedia.org/favicon.ico\" alt=\"Wikipedia\" />'> ]> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <title>Entity test</title> </head> <body> <p>hey &my_symbol;…",
+      "image": "https://www.mi.com/favicon.ico",
+      "publishedAt": "2026-10-12T13:29:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-40",
+      "detailPath": "articles/817a4a96e810f50737891ab8.json"
+    },
+    {
+      "id": "be72b9e6e265c6734a9964c0",
+      "title": "入蜀记 day506 悖论感、油泼面、MM",
+      "summary": "「悖论感、油泼面、MM。」",
+      "image": null,
+      "publishedAt": "2026-10-12T13:10:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_506/",
+      "detailPath": "articles/be72b9e6e265c6734a9964c0.json"
+    },
+    {
+      "id": "884e485d93d16fb68a68b5d5",
+      "title": "Accents ultimately don't mean a lot",
+      "summary": "One day when I went for my usual grocery shopping, I stumbled upon a child behind me when I was queuing up at a payment counter. The little kid, who looked to be of Chinese ethnicity and about two to three years old, was riding a fairly small-size bicycle which was obtained from the supermarket and wasn’t yet paid for. And then for some reason, he repeatedl…",
+      "image": null,
+      "publishedAt": "2026-10-12T10:27:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/accents-ultimately-dont-mean-a-lot/",
+      "detailPath": "articles/884e485d93d16fb68a68b5d5.json"
+    },
+    {
+      "id": "90cbaa7b53451f37c9867892",
+      "title": "巴别塔",
+      "summary": "Emoji 常被喻为现代的巴别塔或新世界语，但是塔终归还是要建在地上，而各地又有各地的规矩。 fin. 激赏 ！ 来信 。",
+      "image": "https://kaix.in/2026/1012/emoji_hu5873760166305983695.jpg",
+      "publishedAt": "2026-10-12T09:29:04Z",
+      "sourceId": "f451863227fe105c",
+      "sourceTitle": "KAIX.IN",
+      "link": "https://kaix.in/2026/1012/",
+      "detailPath": "articles/90cbaa7b53451f37c9867892.json"
+    },
+    {
+      "id": "7520f241580182b8dc0c5165",
+      "title": "AI 都这么强了，碰到问题为什么你还是卡着",
+      "summary": "哪怕 AI 已经这么强了，我注意到身边的人碰到问题还是会卡住，无法利用现有的工具去解决问题，我一度思考为何会产生这样的局面，有种拿着屠龙刀切菜的感觉。",
+      "image": null,
+      "publishedAt": "2026-10-12T08:30:36Z",
+      "sourceId": "e0d7bbaba7286f4d",
+      "sourceTitle": "Rolen's Blog",
+      "link": "https://rolen.wiki/why-still-stuck-with-ai/",
+      "detailPath": "articles/7520f241580182b8dc0c5165.json"
+    },
+    {
+      "id": "b7e29e008e9d638c2599ee7d",
+      "title": "終究還是人啊",
+      "summary": "問：人的最可貴之處是什麼？ 答：會讓我們感嘆「終究還是人啊」的東西。 至於會讓我們說出「終究還是人啊」的事物或行爲是什麼？這真是個值得我們捫心自問的問題呢。",
+      "image": null,
+      "publishedAt": "2026-10-12T06:25:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/still-a-human-after-all/",
+      "detailPath": "articles/b7e29e008e9d638c2599ee7d.json"
+    },
+    {
+      "id": "8f37dcace1c31bf70f547b9f",
+      "title": "Proliferation of AI signages",
+      "summary": "I’ve come across this blog post written by luke.zip , talking about the increasing ubiquity of (obviously) AI-generated signages around where he lives. Oh gosh, I can relate to this so much, as it’s the exact same thing that’s been happening around the streets in Malaysia as well! ⚠️ Eyesore alert: an example of an AI-generated signage used by an actual res…",
+      "image": "https://microblog.ttheng.com/blog/img238.jpg",
+      "publishedAt": "2026-10-12T05:34:00Z",
+      "sourceId": "a93d4f2e98fafcbe",
+      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
+      "link": "https://microblog.ttheng.com/proliferation-of-ai-signage/",
+      "detailPath": "articles/8f37dcace1c31bf70f547b9f.json"
+    },
+    {
+      "id": "967ac6e7d818016fe56a4d9e",
+      "title": "Toots 440 2026 Oct.4 - Oct.10",
+      "summary": "「寒露。」",
+      "image": null,
+      "publishedAt": "2026-10-12T05:27:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20261010/",
+      "detailPath": "articles/967ac6e7d818016fe56a4d9e.json"
+    },
+    {
+      "id": "4c867c62e8d0c444b0df7129",
+      "title": "一點點骨氣",
+      "summary": "趕公車時，堅持不跑起來。",
+      "image": null,
+      "publishedAt": "2026-10-12T04:43:22Z",
+      "sourceId": "d6867515c49adbbd",
+      "sourceTitle": "Noa's Blog",
+      "link": "https://noa.bearblog.dev/a-little-bit-of-spine/",
+      "detailPath": "articles/4c867c62e8d0c444b0df7129.json"
+    },
+    {
+      "id": "f730c1af27d35e0ce49c87f8",
+      "title": "【開箱】OXD 效果器",
+      "summary": "OXD 由來 # 一顆效果器，含運費新臺幣 500 有找，你敢信嗎？ OXD 本人 OXD 是復刻 OCD 效果器，而 OCD 是由一個老先生所製作，已經停產。 OXD 的會把吉他染色成 Marshall 音箱的形狀，削波的程度大約在從 Chrunch 到 Distortion，但在訊號的定位仍然是效果器，並非箱頭或箱體模擬。 這次測試，使用 Fender 單單單拾音器 -> OXD -> GP50（掛箱體模擬 Twin Reverb + 一些 Delay + 一些 Reverb） -> DAW 三顆旋鈕 # OXD 這顆效果器的 Gain（Drive） 大概可以分三個檔位，有三種不同的「麻」度；再通過 Tone 鈕來決定明亮度；最後使用 Volume 決定輸出的 Level 多大。 有個 HP/LP 開關，…",
+      "image": "https://eddielv.com/musings/oxd/oxd.jpg",
+      "publishedAt": "2026-10-12T03:42:29Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/oxd/",
+      "detailPath": "articles/f730c1af27d35e0ce49c87f8.json"
+    },
+    {
+      "id": "141dc4916c18ac072f8f7e8c",
+      "title": "关于“我想写博客想了四年”这档事",
+      "summary": "两年前的秋天，我在札幌街头紧紧抱住了自己。第二天上午，从酒店退房后，我在大堂的咖啡厅里坐下，一边哭，一边写下了时隔两年的一篇博文草稿。然而，那篇博文最终却没有被发布，我被莫名的恐惧与工作的琐碎缠住，直到今天……",
+      "image": null,
+      "publishedAt": "2026-10-12T03:38:15Z",
+      "sourceId": "ec4d8f7d2c53872d",
+      "sourceTitle": "Posts on Welcome to my little blue world ♡",
+      "link": "https://suicablog.cobaltkiss.blue/posts/finally-i-wrote-a-blog-after-4-years/",
+      "detailPath": "articles/141dc4916c18ac072f8f7e8c.json"
+    },
+    {
+      "id": "e9425198c9a4230b09af5dd8",
+      "title": "Zine#60 - 追加與回顧笔記法、通風、天國拯救",
+      "summary": "Zine#60 追加與回顧笔記法、通風、天國拯救 🎵 ふたたび - 久石譲 目錄 News | Article Cool Bit Blog Related Tutorial | Resource Code Related AI Related Tool | Library Emacs 一些话 | 摘抄 多媒体 News | Article Browser vertical tabs are great (and they’re older than you think!) by Dan Q 無論垂直分頁起源於何處，它們都非常棒，我超級喜歡。以下是垂直分頁之所以厲害的原因： 如果你（像我一樣）傾向於開啟大量分頁，垂直分頁捲動起來會更容易。 同樣地：假設你使用的是橫向閱讀的語言，你可以更輕鬆地閱讀標題。 在寬螢幕…",
+      "image": null,
+      "publishedAt": "2026-10-12T02:55:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/60.html",
+      "detailPath": "articles/e9425198c9a4230b09af5dd8.json"
+    },
+    {
       "id": "4e774395e881ceb5602e009a",
       "title": "它自己壞掉了",
       "summary": "以前一個嗆辣的驗光師前輩分享他客人的故事。 客人來要調整眼鏡，整個歪了，問客人怎麼會變這麼歪，客人說： 「放著，它自己就歪了！」 於是驗光師前輩一語不發，把眼鏡放在桌上端詳，但不動手，客人問：「你在看什麼？」 「我在看他會不會放著自己就修好。」",
@@ -102,7 +300,7 @@
     {
       "id": "fd4706347b265f31c552e1c9",
       "title": "飲料大小",
-      "summary": "今天中午跟蝦波吃我們都很喜歡的樂檸漢堡，結帳時覺得數字怪怪的，明明我們飲料都是點「中杯」。取餐的時候跟店員確認，才知道店裡只有「小杯」跟「中杯」。",
+      "summary": "今天中午跟蝦波吃我們都很喜歡的樂檸漢堡[^1]，結帳時覺得數字怪怪的，明明我們飲料都是點「中杯」。取餐的時候跟店員確認，才知道店裡只有「小杯」跟「中杯」。",
       "image": null,
       "publishedAt": "2026-10-11T13:50:26Z",
       "sourceId": "19b15d378a85c1f7",
@@ -461,204 +659,6 @@
       "sourceTitle": "Alice Hsu's Blog",
       "link": "https://alicehsu.blog/zh-tw/prayer-request/",
       "detailPath": "articles/a02b14ec7b323a52c47f17e9.json"
-    },
-    {
-      "id": "1160067f0b073589722e076c",
-      "title": "每夫吐槽（120）",
-      "summary": "臭宝在家里难得看一回电视，几个小时之后，把机顶盒遥控器弄丢了。可能是扔到鸭脖残骸中当垃圾一起扔了。 她可以不看，但她想看的时候不可以看不成。那就再配一个遥控器吧。 机顶盒早已停产，某宝上搜，没仔细看，拍回来才发现是带红外接收器的。这带来个问题，就是用了遥控器就不能插U盘，给我装APP带来了极大的不便（不喜欢开共享）。退了。 再搜，发现同型号遥控器早已绝版。有二手的也卖得死贵，6、70一枚。小黄鱼上价格也差不多。有心买同品牌其它系列的，又怕匹配不上白白浪费时间。 灵机一动，我干脆买整个机顶盒啊。果然，找到一个品相不太好的，只卖85，反正我又不图你盒子，只图遥控器啊。店家特别说明，送的两个遥控器不是原装的，但都保证好用。 东西到了之后，立刻测试。不好使。而且两个都不好使。跟店主录屏掰扯半天，店主教了用鼠标删除蓝牙…",
-      "image": null,
-      "publishedAt": "2026-10-09T15:13:19Z",
-      "sourceId": "474e724b69cd3e76",
-      "sourceTitle": "破襪子",
-      "link": "https://pewae.com/2026/10/random_kuso_120.html",
-      "detailPath": "articles/1160067f0b073589722e076c.json"
-    },
-    {
-      "id": "bd1adbe10724a7e0259de1c6",
-      "title": "2026 年十一假期",
-      "summary": "今年十一没出门，因为没什么旅游的兴趣，怕了人山人海。境外热门地方也挤满了中国人。还有个原因是娃上小一了，有点紧张怕他请假影响学习，尽管我内心深处认为应该没啥影响。因为要给娃腾空间放学习桌，十一前一周我就开始收拾书房了，此项工作持续到假期最后一天。扔了十几大袋闲置或无用的物品，才发现有很多没拆封的玩具、书籍。有些是我买的，有些是别人送的，虽然可惜，但既然这么多",
-      "image": "https://yipai.me/media/blog/assets/cdc2a728-da83-4374-9587-13b151a209bc-fc10099ca7e375ca.jpg",
-      "publishedAt": "2026-10-09T14:35:22Z",
-      "sourceId": "211ed4466033fe3d",
-      "sourceTitle": "一派胡言",
-      "link": "https://yipai.me/post/2554.html",
-      "detailPath": "articles/bd1adbe10724a7e0259de1c6.json"
-    },
-    {
-      "id": "8de84619ae9db099a5cef674",
-      "title": "關於那所謂的「亞洲英語腔」",
-      "summary": "⚠️ 這是一篇措辭強烈的「黑粉」抱怨文，請斟酌閱讀。 其實我一直在猶豫該不該寫這篇文，因爲對某些網紅或公衆人物而言，「炎上商法仍舊是一種商法」（或用英文來表達的話：Negative engagement is still engagement），我不想因爲這篇文而給予這些人更多的注意力（或甚至是名氣）。 耗費自己這麼多的精力，只爲了對着空氣去罵一個對此感到不痛不癢的人？真的是「 嘥～氣～ 」啊。 不過咧，我還是「過不了自己那關」：爲了發洩我心裡積累的不快，並且讓其他人看清這些人的「把戲」（？），我還是決定將此文寫下來。 在西方英語圈的搞笑表演中，有時會出現那些扮演着像是「『亞洲』大叔」或「虎媽」（tiger mom）等的角色，並且口操「亞洲英語腔」（Asian accent）講話的橋段。 以下這部影片可以說是…",
-      "image": null,
-      "publishedAt": "2026-10-09T13:29:00Z",
-      "sourceId": "a93d4f2e98fafcbe",
-      "sourceTitle": "All posts | 所有貼文 on ttheng's microblog. | 侃侃而隨想極短文。",
-      "link": "https://microblog.ttheng.com/about-the-so-called-asian-accent/",
-      "detailPath": "articles/8de84619ae9db099a5cef674.json"
-    },
-    {
-      "id": "e09a3c14465fac0ece6468b4",
-      "title": "2026-07-27 / 一天",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:33:49Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/86/",
-      "detailPath": "articles/e09a3c14465fac0ece6468b4.json"
-    },
-    {
-      "id": "305ccee7e55248fc03e35a97",
-      "title": "2026-08-04 / 始皇帝",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:14:43Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/94/",
-      "detailPath": "articles/305ccee7e55248fc03e35a97.json"
-    },
-    {
-      "id": "c75faadcc96d2c43212104fd",
-      "title": "2026-08-03 / EMOMOMO",
-      "summary": "by 新世界的大门",
-      "image": null,
-      "publishedAt": "2026-10-09T12:05:36Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/93/",
-      "detailPath": "articles/c75faadcc96d2c43212104fd.json"
-    },
-    {
-      "id": "74179757b03a47da77c8b38a",
-      "title": "入蜀记 day503 民族大学和人类学",
-      "summary": "「民族大学和人类学。」",
-      "image": null,
-      "publishedAt": "2026-10-09T08:01:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-deep/INSW_503/",
-      "detailPath": "articles/74179757b03a47da77c8b38a.json"
-    },
-    {
-      "id": "6197df5c8290ac9058f00d08",
-      "title": "格友見面會（二）",
-      "summary": "最近跟蝦波看了《畫完這個再去死》這部作品，裡頭很多關於同人展的劇情，很想實際感受一下展場的氣氛。剛好 LQ7 老師提到會出沒在「いつか一緒に輝いて－百合向 ONLY」同人活動，這麼天時地利人和的機會，當然必須好好把握才是。",
-      "image": "https://shuojen.com/assets/images/001-e85c0ae7485b7efd425639cd1e5ded13.webp",
-      "publishedAt": "2026-10-09T07:28:58Z",
-      "sourceId": "19b15d378a85c1f7",
-      "sourceTitle": "Shuo-jen Blog",
-      "link": "https://shuojen.com/blog/2026/10/09/meetup",
-      "detailPath": "articles/6197df5c8290ac9058f00d08.json"
-    },
-    {
-      "id": "36b70c06f2654cbbaf70b5a9",
-      "title": "創作進行式 #48：在書店當Sales",
-      "summary": "東京一月遊 / 瘋狂上Podcast / 在書店當Sales",
-      "image": "https://media.alexhsu.com/img/tokyo-todays-special.webp",
-      "publishedAt": "2026-10-09T06:49:36Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/bookstore-sales",
-      "detailPath": "articles/36b70c06f2654cbbaf70b5a9.json"
-    },
-    {
-      "id": "23b2e5944b4face107fcdf7a",
-      "title": "語言是工具，使用在意念",
-      "summary": "我曾經聽過一個故事，我印象它是這麼說的。很久很久以前，人類只有一種語言，所以人類很團結，有天他們想合力建造一座通天塔，神看到後感到震怒，於是把人類的語言變混亂，讓他們無法彼此了解，於是停止了工程。雖然這個故事可能有一些宗教上的其他意涵，但由於我不是信徒，所以對這塊比較沒涉獵。我想我對這個故事著迷的點，應該在語言的力量這個概念上吧，它給了我看待語言的另一個視角。 如果我們可以不用透過言語，透過心電感應，將心中的意念直接透過電波傳遞出去，不用中間再多一層的語言轉譯，這樣就能溝通那會有多好啊。說到這個，你是思考時心中會有聲音的人類嗎?我是。我曾聽過有些人是屬於思考時腦中不會撥放自己講話聲音的那類人，我就好難想像那是什麼樣的感覺。我在猜如果可以心電感應的話，腦中會不會就是這樣只存在抽象的意念呢。我覺得意念是最純粹的，…",
-      "image": null,
-      "publishedAt": "2026-10-09T04:29:00Z",
-      "sourceId": "9bbc7d640e2bc143",
-      "sourceTitle": "RayrrrrrR",
-      "link": "https://rayrrrrrrr.bearblog.dev/9896/",
-      "detailPath": "articles/23b2e5944b4face107fcdf7a.json"
-    },
-    {
-      "id": "af21f88266ce88e2c49c0f12",
-      "title": "「晚上不睡覺」回顧文章",
-      "summary": "2026 年 9 月份、第九屆「BlogBlog 同樂會」的主題是「晚上不睡覺」，這次一共收到 84 篇投稿！",
-      "image": null,
-      "publishedAt": "2026-10-09T00:00:00Z",
-      "sourceId": "ad9c9cc2127a7a13",
-      "sourceTitle": "BlogBlog.Club 部落部落俱樂部 Blog",
-      "link": "https://blogblog.club/blog/recap-sep-2026",
-      "detailPath": "articles/af21f88266ce88e2c49c0f12.json"
-    },
-    {
-      "id": "244d5391bc1a2b8e5fda49d2",
-      "title": "來都來了",
-      "summary": "當你嘆口氣說出：「來都來了，那就⋯⋯（勉強做一件根本不想做的事）⋯⋯吧！」那就是陷入沉沒成本的陷阱了。",
-      "image": "https://wiwi.blog/assets/images/come-c7396e9e94639aba5199a8665ea98f7e.jpg",
-      "publishedAt": "2026-10-09T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/might-as-well",
-      "detailPath": "articles/244d5391bc1a2b8e5fda49d2.json"
-    },
-    {
-      "id": "a11b2bbaaa5e0b9aca7574df",
-      "title": "极速聊 Nintendo Direct 260909",
-      "summary": "简单记录一下这次 Nintendo Direct 里出现的游戏，以及直播时的一些即时感想。",
-      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/nintendo-0909-kirby.png",
-      "publishedAt": "2026-10-09T00:00:00Z",
-      "sourceId": "cb9a26266745d112",
-      "sourceTitle": "Bluepikachu",
-      "link": "https://bluepika.life/blog/nintendo-direct-260909-quick-chat",
-      "detailPath": "articles/a11b2bbaaa5e0b9aca7574df.json"
-    },
-    {
-      "id": "111945236c1826939a2da868",
-      "title": "我不知道自己為什麼這麼喜歡這個世界",
-      "summary": "以前可能偶爾覺得，現在更是時常覺得：雖然我時常批評各種事情，但不管怎麼看，我真的完全不是一個憤世嫉俗的人。 我對這個世界沒有什麼怨恨。正好相反，我太喜歡這個世界，喜歡到發現自己幾乎開始怨恨怨恨這個世界的人，包含偶爾表現出對世界的怨恨的自己，甚至包含那些只不過是沒那麼喜歡這個世界的人。喜歡到幾乎開始怨恨自己，覺得自己沒有資格喜歡這個世界。可是這個世界其實比我更醜陋。於是又喜歡到幾乎也可以開始喜歡自己。畢竟我也是世界的一部分。 也許我太幸運了。可是，幸運難道是我的錯嗎？ 不。我已經厭倦了假裝自己不想要活在時尚雜誌之中。",
-      "image": null,
-      "publishedAt": "2026-10-08T17:23:01Z",
-      "sourceId": "7a1943e37d846c5c",
-      "sourceTitle": "我的部落格",
-      "link": "https://e89295.com/blog/2026-10-09.html",
-      "detailPath": "articles/111945236c1826939a2da868.json"
-    },
-    {
-      "id": "eb6d00e17d9c4821667989e3",
-      "title": "科技爱好者周刊（第 414 期）：Jev 决策模型有什么用",
-      "summary": "这里记录每周值得分享的科技内容，周五发布。 本杂志 开源 ，欢迎 投稿 。另有 《谁在招人》 服务，发布程序员招聘信息。合作请 邮件联系 （yifeng.ruan@gmail.com）。 封面图 国产首列数字地铁列车 VELLINK，完全无人驾驶，车头改成了大幅玻璃，用于观光。（ via ） Jev 决策模型有什么用 上个月，最大的 AI 新闻不是 GPT 或 Claude 模型的新版本，而是一家名不见经传的公司 TypeSafe AI 发布了一种新类型的模型 Jev 。 这种新模型跟以前的模型截然不同，叫做\"决策模型\"。 我看了以后，觉得不可置信，这么有用又这么（概念）简单的东西，以前怎么会没人想到？ Jev 模型的最大特点就是，其他模型返回文字， 它返回一个浮点数，表示概率 。 为什么返回概率就有用呢？因…",
-      "image": "https://cdn.beekka.com/blogimg/asset/202610/bg2026100816.webp",
-      "publishedAt": "2026-10-08T15:04:46Z",
-      "sourceId": "50579811ddcd4b8c",
-      "sourceTitle": "阮一峰的网络日志",
-      "link": "http://www.ruanyifeng.com/blog/2026/10/weekly-issue-414.html",
-      "detailPath": "articles/eb6d00e17d9c4821667989e3.json"
-    },
-    {
-      "id": "a134c95d83c413ad1f584033",
-      "title": "史上最偷跑 BBP",
-      "summary": "現在才 10 月 8 號，BlogBlog 同樂會的十一月主題文都還沒出來，龍女就已經發布 12 月的主題文啦！這是 BBP 史上最早上線的主題文，恭喜龍女刷新紀錄！我剛才在剪頭髮的時候看到 RSS 跳出這篇，我真的很開心。XD",
-      "image": null,
-      "publishedAt": "2026-10-08T10:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/earliest-bbp-ever",
-      "detailPath": "articles/a134c95d83c413ad1f584033.json"
-    },
-    {
-      "id": "51b11ffecc57826556da72de",
-      "title": "變年輕（？）",
-      "summary": "前些日子，招我去教高中吉他社的老闆娘說，她以爲我是大學生，說感覺頂多應屆畢業，聽到我的年齡表情很詫異。 這半年常光顧的便當店，老闆娘從來沒跟我說過話，突然問我：「你是大學生嗎？」 這兩件事情發生在兩週內，總覺得很久沒被人講得那麼年輕了。 確實前幾年很認真保養，洗完澡化妝水、 精華液 、乳液、面霜等等都沒少擦，平時防曬也會做足。今年開始，漸漸變懶了，常常沒保養，頂多就是感覺到臉有點乾的時候，擦一點化妝水，僅此而已。 我能想到的另一個原因是，因爲心靈上的富足讓我變得看起來更有活力一點。 今年（2026）開始莫名奇妙地順暢，突然就接到一些 演出 、 單曲吉他錄製 ，也接到 音響的案子 ，又有 音樂教室 跟樂器行邀請我教課或 帶社團 ，這不得不讓我撕下過往對自己貼上的 冒牌者 標籤。 （在我寫這段文字的時候，剛好又有…",
-      "image": null,
-      "publishedAt": "2026-10-08T08:40:40Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/younger/",
-      "detailPath": "articles/51b11ffecc57826556da72de.json"
-    },
-    {
-      "id": "83b2345cbdd209c26db143cb",
-      "title": "散步之年",
-      "summary": "由于公司的缘故，最近有了许多在家里的时间，虽然名义上还算是这个公司的员工，但实际上是鱼和自行车之间一般的关系，我们之间没什么关系。在这样漫长的空白里，伴侣总是催我出去走走，别辜负这样的天气，于是最近总",
-      "image": null,
-      "publishedAt": "2026-10-08T08:35:58Z",
-      "sourceId": "1b094a3ee9e11672",
-      "sourceTitle": "塔塔",
-      "link": "https://blog.himikouchuu.com/feed/38",
-      "detailPath": "articles/83b2345cbdd209c26db143cb.json"
     }
   ]
 }

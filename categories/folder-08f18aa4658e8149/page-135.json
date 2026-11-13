@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "8ba0c47c0905cfbc1218b7eb",
+      "title": "设计稿的版本控制",
+      "summary": "涉及到设计稿的版本控制，主要想解决几个问题：多人协作（批注，评论），版本回溯，版本的修改记录情况。",
+      "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/design-draft-version-control-adobe.png",
+      "publishedAt": "2015-09-09T00:00:00Z",
+      "sourceId": "cb9a26266745d112",
+      "sourceTitle": "Bluepikachu",
+      "link": "https://bluepika.life/blog/design-draft-version-control",
+      "detailPath": "articles/8ba0c47c0905cfbc1218b7eb.json"
+    },
+    {
+      "id": "206bbbdc5eeafee0d0886adf",
+      "title": "Java TreeMap 源码解析",
+      "summary": "继 上篇文章 介绍完了HashMap，这篇文章开始介绍Map系列另一个比较重要的类 TreeMap 。 大家也许能感觉到，网络上介绍HashMap的文章比较多，但是介绍TreeMap反而不那么多，这里面是有原因：一方面HashMap的使用场景比较多；二是相对于HashMap来说，TreeMap所用到的数据结构更为复杂。",
+      "image": null,
+      "publishedAt": "2015-09-04T19:54:55Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/09/04/java-treemap/",
+      "detailPath": "articles/206bbbdc5eeafee0d0886adf.json"
+    },
+    {
+      "id": "8b295ab3de8fd36ae7264d61",
+      "title": "Java HashMap 源码解析",
+      "summary": "继上一篇文章 Java集合框架综述 后，今天正式开始分析具体集合类的代码，首先以既熟悉又陌生的 HashMap 开始。 本文源码分析基于 Oracle JDK 1.7.0_71 ，请知悉。 $ java -version java version \"1.7.0_71\" Java(TM) SE Runtime Environment (build 1.7.0_71-b14) Java HotSpot(TM) 64-Bit Server VM (build 24.71-b01, mixed mode) 签名（signature） public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializab…",
+      "image": null,
+      "publishedAt": "2015-09-03T11:51:12Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/09/03/java-hashmap/",
+      "detailPath": "articles/8b295ab3de8fd36ae7264d61.json"
+    },
+    {
+      "id": "cac7ffc835951e9473d9cfc3",
+      "title": "Java集合框架综述",
+      "summary": "最近被陆陆续续问了几遍HashMap的实现，回答的不好，打算复习复习JDK中的 集合框架 ，并尝试分析其源码，这么做一方面是这些类非常实用，掌握其实现能更好的优化我们的程序；另一方面是学习借鉴JDK是如何实现了这么一套优雅高效的类库，提升编程能力。 在介绍具体适合类之前，本篇文章对Java中的集合框架做一个大致描述，从一个高的角度俯视这个框架，了解了这个框架的一些理念与约定，会大大帮助后面分析某个具体类，让我们开始吧。",
+      "image": null,
+      "publishedAt": "2015-09-01T21:18:05Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/09/01/java-collection-overview/",
+      "detailPath": "articles/cac7ffc835951e9473d9cfc3.json"
+    },
+    {
+      "id": "7898509a7e7df9fbee2b0bfb",
+      "title": "改变support中AlertDialog的样式",
+      "summary": "android最近的support库提供了AlertDialog，可以让我们在低于5.0的系统使用到跟5.0系统一样的Material Design风格的对话框，但是使用了一段时间想到一些办法去改变对话框按钮字体的颜色，都不生效。 最近在网上找到了改变的方法，首先来说一下。 改变AlertDialog的样式 在xml中定义一个主题： 1 2 3 4 5 6 7 8 <style name= \"MyAlertDialogStyle\" parent= \"Theme.AppCompat.Light.Dialog.Alert\" > <!-- Used for the buttons --> <item name= \"colorAccent\" > #FFC107 </item> <!-- Used for the ti…",
+      "image": "https://isming.me/images/modify_dialog_style.jpg",
+      "publishedAt": "2015-08-31T11:57:15Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-08-31-modify-alert-style/?utm_source=rss",
+      "detailPath": "articles/7898509a7e7df9fbee2b0bfb.json"
+    },
+    {
       "id": "9427d31300f2eefeffe804b7",
       "title": "電腦音樂教室",
       "summary": "新北高中音樂班的電腦音樂教室。30 台電腦每一台都有正版的 Reason、錄音介面、MIDI 鍵盤、還有 32 軌 Yamaha 大 mixer⋯⋯可是之前都沒有人用過，因為不會用 XD",
@@ -604,61 +659,6 @@
       "sourceTitle": "Chiaroscuro",
       "link": "https://imick.github.io/articles/jw013/",
       "detailPath": "articles/5daf1ac2015423dabd8498b7.json"
-    },
-    {
-      "id": "e7738c6a14395655b1f0afe2",
-      "title": "javascript中的数据类型",
-      "summary": "学一门编程语言，无非两方面：一是语法，二是数据类型。类C语言的语法不外乎if、while、for、函数、算术运算等，面向对象的语言再加上object。 语法只是语言设计者预先做的一套规则，不同语言语法不尽相同，但都有一些共通点，对于熟悉一两门编程语言的人，学其他的编程语言时，语法往往不是问题（当然，如果你一直学的是类C语言，那么首次接触lisp时肯定也要花些时间），学习的重点往往是数据类型及其相关操作上，不是有句老话：“数据结构＋算法＝程序”！其次，有些语言的语法本身就存在设计问题（javascript更甚），我们没必要深究这些点，当然，如果你自诩geek，可以把玩把玩。",
-      "image": null,
-      "publishedAt": "2015-02-24T21:09:45Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/02/24/javascript-datatype/",
-      "detailPath": "articles/e7738c6a14395655b1f0afe2.json"
-    },
-    {
-      "id": "8fc39c32887d9dcffddeb721",
-      "title": "保證用到壞",
-      "summary": "這是什麼保證？ @ 鹿港老街",
-      "image": "https://wiwi.blog/assets/images/broken-43ca6459184cfeb362d0784f92a4e4aa.jpg",
-      "publishedAt": "2015-02-23T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/until-it-breaks",
-      "detailPath": "articles/8fc39c32887d9dcffddeb721.json"
-    },
-    {
-      "id": "a509749250c847499107b924",
-      "title": "小白",
-      "summary": "小白是黑的。",
-      "image": "https://wiwi.blog/assets/images/white-a750f0502148ffc1da6859f5ed5c5777.jpg",
-      "publishedAt": "2015-02-13T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/small-white",
-      "detailPath": "articles/a509749250c847499107b924.json"
-    },
-    {
-      "id": "d1272f1472b8ca6b898f91b5",
-      "title": "为 Nexus 5 编译 Android Lollipop 固件",
-      "summary": "技术复核（2026-10-13） ：这是一篇 Nexus 5 / Android Lollipop 的历史教程，设备与工具链已过期。文中的 LRX22C 二进制对应 **Android 5.0.1 / AOSP android-5.0.1_r1 **，下文据此明确源码、驱动和刷机条件。新学习环境另补 Android 16 Cuttlefish 示例；不要把新版本的构建命令与旧真机固件混用。 接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无…",
-      "image": null,
-      "publishedAt": "2015-02-04T12:51:19Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2015/02/04/build-rom-for-nexus5/",
-      "detailPath": "articles/d1272f1472b8ca6b898f91b5.json"
-    },
-    {
-      "id": "cc3f5eef9f229be376894275",
-      "title": "javascript中的面向对象编程",
-      "summary": "最近工作一直在用nodejs做开发，有了nodejs，前端、后端、脚本全都可以用javascript搞定，很是方便。但是javascript的很多语法，比如对象，就和我们常用的面向对象(object oriented programming)的编程语言不同；看某个javascript开源项目，也经常会看到使用this关键字，而这个this关键字在javascript中因上下文不同而意义不同；还有让人奇怪的原型链。这些零零碎碎的东西加起来就很容易让人不知所措，所以，有必要对javascript这门语言进行一下深入了解。",
-      "image": null,
-      "publishedAt": "2015-02-01T12:53:18Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2015/02/01/javascript-oop/",
-      "detailPath": "articles/cc3f5eef9f229be376894275.json"
     }
   ]
 }

@@ -1,6 +1,193 @@
 {
   "items": [
     {
+      "id": "c64e7c1a0c9e48af9ac6125f",
+      "title": "客戶自己來",
+      "summary": "這只是一篇抱怨文。 在活動工作時，常常客戶爲了省預算，自己處理活動流程、主持人、佈景等等的，這些我覺得還算常見，做得好與不好也不會影響到我，我自然沒意見，直到那天。 活動公司：交給專業的吧！ 那晚，到一家工廠的空地做晚會活動，客戶是電氣相關產業，於是說可以自己處理電，就不跟活動公司買工業發電機了。 客戶：我自己來就好 到了現場，我們在一些特定的位置要求了 110V、220V 的插座，結果對方才在講哪裡可以哪裡不行，總之就是不想弄的樣子，讓我非常煩躁。 後來燈光音響全部架完了，電還沒拉好給我，原來他們所有的線材都是用新的電線、新的插座，現場裁剪、製作大電流用的延長線，而且又叫新手做，可能要給他們練習。 最後弄了應該有 2 個小時吧，如果是請專門做活動的發電機廠商，大概會在我把喇叭放上喇叭架、準備開始配線時，就已…",
+      "image": "https://eddielv.com/musings/customer-diy/%E5%8E%BB%E7%BE%8E%E5%AE%B9%E9%99%A2%E5%89%AA.png",
+      "publishedAt": "2026-09-27T09:05:52Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/customer-diy/",
+      "detailPath": "articles/c64e7c1a0c9e48af9ac6125f.json"
+    },
+    {
+      "id": "8daa7ffe9485fe681ee1b523",
+      "title": "Emacs 代碼块导出复用",
+      "summary": "Emacs 代碼块导出复用 在寫博客時，有時我需要顯示代碼，同時把代碼导出成 HTML，放在頁面裡用。例如在 一些關於連結的建議::進階樣式 裡，我要介紹外部連結的樣式，同時要將樣式應用在頁面上，原來我會這麼做： 一個代碼块 ( #+begin_src css ) 用於顯示代碼： #+begin_src css a[href^='http']:not([href^='http://taxodium.ink']):not([href^='https://taxodium.ink']) { &::after { /* 省略 */ } } #+end_src 一個导出块 ( #+begin_export html )，複製和代碼块相同的內容，把它导出到 HTML： #+begin_export html <styl…",
+      "image": null,
+      "publishedAt": "2026-09-27T08:45:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/reusing-emacs-code-block-when-export.html",
+      "detailPath": "articles/8daa7ffe9485fe681ee1b523.json"
+    },
+    {
+      "id": "d7aa522ab4f87899b667332b",
+      "title": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管",
+      "summary": "使用 Emacs Everywhere，把任意輸入框用 Emacs 接管 tecosaur/emacs-everywhere 是一個 Emacs 的擴展，它可以在任意輸入框輸入時，打開一個 Emacs Frame，把輸入框的內容複製到 Emacs 裡編輯， 編輯完成後，再把內容粘貼回原來的輸入框。 這樣相當於把任意輸入框「變成」Emacs，获得更好的、熟悉的輸入體驗。在一些需要輸入大量文本的場景，我就會用 Emacs Everywhere，例如在 Thunderbird 寫郵件、寫 issue、寫評論、在 LLM 對話頁寫較長的 prompt 等。 一段录󠄃屏，在 Kagi Assistant 頁面的輸入框裡有一些文字， 全選後，打開 Raycast，找到 Emacs Everywhere 的脚本命令并执行，…",
+      "image": null,
+      "publishedAt": "2026-09-27T07:55:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/use-emacs-everywhere-to-take-over-any-input-field-with-emacs.html",
+      "detailPath": "articles/d7aa522ab4f87899b667332b.json"
+    },
+    {
+      "id": "4c78c8ff8321d5c44108fd77",
+      "title": "起司與肉鬆",
+      "summary": "加購起司的選項總是誘惑（蛋餅／蔥抓餅／鍋燒意麵／火鍋／焗烤……），但我不喜歡起司當主角。 肉鬆放哪都害人掉價（個人想法啦個人想法），單吃卻無敵美味。",
+      "image": null,
+      "publishedAt": "2026-09-27T04:42:00Z",
+      "sourceId": "d6867515c49adbbd",
+      "sourceTitle": "Noa's Blog",
+      "link": "https://noa.bearblog.dev/cheese-and-meat-floss/",
+      "detailPath": "articles/4c78c8ff8321d5c44108fd77.json"
+    },
+    {
+      "id": "b180037f4c74ebefb80fd65b",
+      "title": "新的聲音設備桌面架",
+      "summary": "我的工作室聲音設備很單純，用 Flow8 當作錄音界面，再進到 YAMAHA 400i 的 Mixer。前者除了錄音用以外，還能調整 GEQ 校正喇叭，後者則只是單純用它的後級擴大機功能。 一直以來，我是用編曲桌附贈的桌面喇叭架，來把 YAMAHA 的 Mixer 架高，以方便操作，而 Flow8 直接放在桌上，老實說很難整理得漂亮。 （請到〈 2026 桌面設置 〉看我過往的桌面擺放！） 在 Maker World 上剛好滑到 @Grxmix 的作品〈 Studio Gear Organizer 〉，覺得這完全就符合我的需求啊！ Studio Gear Organizer 樣品圖 Studio Gear Organizer 圖紙 我將 YAMAHA Mixer 放上層、Flow8 放中層，整體非常合適！只可…",
+      "image": "https://eddielv.com/musings/audio-equipment-shelf/studio-gear-organizer-sample.webp",
+      "publishedAt": "2026-09-27T04:28:16Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/audio-equipment-shelf/",
+      "detailPath": "articles/b180037f4c74ebefb80fd65b.json"
+    },
+    {
+      "id": "eeaf82ffc19c1493399ac8af",
+      "title": "入蜀记 day491 呼吸自由、地板超市、唯有适应",
+      "summary": "「呼吸自由、地板超市、唯有适应。」",
+      "image": null,
+      "publishedAt": "2026-09-27T04:26:27Z",
+      "sourceId": "8e5dc5a8b5023a8e",
+      "sourceTitle": "折腾人生",
+      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_491/",
+      "detailPath": "articles/eeaf82ffc19c1493399ac8af.json"
+    },
+    {
+      "id": "6f4beea5fd233f3c62b18434",
+      "title": "水蒸蛋",
+      "summary": "水蒸蛋 水蒸蛋有啥難的？打几個雞蛋，加點水，放鍋裡一蒸不就完了嗎？ 我也是這麼想的，但想要蒸出表面光滑、整體水嫩的水蒸蛋，還是有一些細節要注意的。 食材 雞蛋若干個，具體几個，取决於你想吃几個，以及容器大小。 烹飪 打 4 個雞蛋到容器裡，按 1:1.5 的蛋水比例加水 (你可以用半個蛋殻來量，量 3 次就是 1.5 倍左右的水了，蛋殻容量可能有偏差，水量可以適當加减) 加入少許盐 (稍微增加點味道) ，把蛋液攪匀，撇去表面的浮沫 用保鮮膜盖住容器，用牙簽在上面戳几個小洞 (保鮮膜可以避免鍋盖上的水滴落在蛋液上，开孔是為了適當透氣，這一步是蛋液光滑的關鍵) 水開後蒸 12 ~ 15 分鐘 (鍋裡水要够哦，別空燒) 加入少許醬油、少許香油 (也就是芝麻油。不要多，香過頭也不好吃，稍微有點香味就好) ，用勺子在表…",
+      "image": null,
+      "publishedAt": "2026-09-27T04:17:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/recipe-shui-zheng-dan.html",
+      "detailPath": "articles/6f4beea5fd233f3c62b18434.json"
+    },
+    {
+      "id": "9b3c25cb4b3297fed465d36d",
+      "title": "一些關於連結的建議",
+      "summary": "一些關於連結的建議 目錄 內容相關 樣式相關 其它參考 內容相關 在分享連結前，可以停下來先想想要不要分享。你的每一次分享都會給連結帶來一定的點擊量，你希望這個連結被傳播嗎？它值得被傳播嗎？有時不分享也許是更好的選擇。 讓連結的文字有意義 ，即使脫離上下文，連結中的文字也應該能說明該連結會前往何處。 錯誤示範：我的博客是 這個 。 正確示範：我的博客是 Taxodium 。 只寫連結，不寫文字，如何？ 最近我還看到一種分享連結的風格，見 Pluralistic ，這種風格是直接把連結寫出來，如： https://pluralistic.net/ 而不是 Pluralistic 。 這種風格的好处是能直接看到 URL，知道域名、URL 參數，某種程度上讓連結更透明。讀者看到域名，如果是一些不喜歡的網站就可以避免…",
+      "image": null,
+      "publishedAt": "2026-09-27T03:25:00Z",
+      "sourceId": "81ef81d50cdeee4b",
+      "sourceTitle": "Taxodium",
+      "link": "https://taxodium.ink/some-advice-about-links.html",
+      "detailPath": "articles/9b3c25cb4b3297fed465d36d.json"
+    },
+    {
+      "id": "d55979022b6b33503bde7bea",
+      "title": "安靜的錯誤",
+      "summary": "最近開發軟體的另一個心得──安靜的錯誤最可怕。",
+      "image": null,
+      "publishedAt": "2026-09-27T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/silent-error",
+      "detailPath": "articles/d55979022b6b33503bde7bea.json"
+    },
+    {
+      "id": "b5d446bb993ef3c968f71334",
+      "title": "中秋限定貨幣",
+      "summary": "中秋節到了，我個人是沒有烤肉，畢竟做一堆中秋晚會活動，已經夠嗆了，實在沒興趣再自己燻自己。 除了烤肉，不知道是誰規定一定要送禮盒的，前幾天才分享我收到了 竹塹餅 ，後來發現有效期限只有兩天，於是那兩天我「只」吃了竹塹餅，差點原地罹患糖尿病。 後來又收到了兩份禮盒，是蛋黃酥之類的，我吃了一盒，明顯感覺比竹塹餅更健康一點（也沒健康到哪裡去好嗎xD）！ 王師傅 至於另外一盒則送我樓上鄰居，因爲再吃我應該要去醫院報道了。結果，她馬上進屋拿一盒巧克力蛋卷回禮給我…。 說到鄰居，結果 花盆 不是她弄破的，是外送員，還好我當時沒有一口咬定是她，而外送員事後有說願意賠償（但我拒絕了）。 濃情巧克力蛋卷 這個蛋卷是 8 字形的，我還是第一次看到，我把蛋卷給唸小學跟幼兒園的外甥們吃了。 8 字形的蛋卷 中秋節實在沒有必要這樣送來…",
+      "image": "https://eddielv.com/musings/mid-autumn-currency/wang.jpg",
+      "publishedAt": "2026-09-26T15:27:36Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/mid-autumn-currency/",
+      "detailPath": "articles/b5d446bb993ef3c968f71334.json"
+    },
+    {
+      "id": "9c0271358375e12cd226eff5",
+      "title": "赌博、自我实现与想象未来",
+      "summary": "我们的故事很普通，从我们在一起到分开也没有非常大的波折起伏，21的夏天我们开始交往，一开始他负担了大部分恋爱的支出，后来我大学毕业找到了工作，想到他和朋友合租，而我住在家里没有房租也不需要担心饭钱，所",
+      "image": null,
+      "publishedAt": "2026-09-26T15:26:16Z",
+      "sourceId": "1b094a3ee9e11672",
+      "sourceTitle": "塔塔",
+      "link": "https://blog.himikouchuu.com/feed/37",
+      "detailPath": "articles/9c0271358375e12cd226eff5.json"
+    },
+    {
+      "id": "fc9b056e55f8e537274e0cf5",
+      "title": "Node.js、浏览器和 Cloudflare Workers 的wasm引入问题",
+      "summary": "最近在鼓捣 WebAssembly，这玩意没啥神秘的，可以看出一坨二进制的 .js 库文件 它本身的export和调用方式是统一的，但如今天我才知道，在不同 JavaScript 运行环境加载 .wasm 方式并不完全一样。 例如 Cloudflare Workers 可以直接： import wasm from \"./simple.wasm\"; const { instance } = await WebAssembly.instantiate(wasm, imports); Cloudflare 会把 .wasm 模块作为 WebAssembly.Module 提供给代码。 浏览器通常则是通过 fetch() 获取 Wasm，再使用 WebAssembly.instantiateStreaming() ：…",
+      "image": null,
+      "publishedAt": "2026-09-26T14:51:00Z",
+      "sourceId": "a864c53722a17b19",
+      "sourceTitle": "est's blog",
+      "link": "https://blog.est.im/2026/stdout-36",
+      "detailPath": "articles/fc9b056e55f8e537274e0cf5.json"
+    },
+    {
+      "id": "34315f4bbdb8bebb6ae41716",
+      "title": "重温老片《烈火金钢》",
+      "summary": "这是两部印象很深的包场电影。首先它制作精良，离谱程度适度，令没见过什么大场面的90年代小学生大受震撼。其次它分成上下集两次看完，中间隔了两个多月，是包场片中唯二的存在（另一部是大决战）。第三它有原著加成。第四嘛，我写的观后感被老师批评了—— “咱班不少同学看完电影都没记住片名是什么，给我写变形金刚的刚……” 原著并不是说小屁孩看过小说，而是我们都听过评书。《肖飞买药》可是袁阔成先生的代表作之一。大约1990年左右辽宁台的18：00的评书栏目也曾经连载播讲过全篇的《烈火金钢》。还有一次区文化馆到学校演出，有个号称刘兰芳徒弟的家伙表演过“肖飞买药”。 因为是建党70周年的献礼片，所以大腕云集。 当时在小朋友间名气最大的是钻山豹，也是上部的核心人物。申军谊自从演钻山豹成名之后，演了太多的类似角色，无论是正是邪，都是…",
+      "image": null,
+      "publishedAt": "2026-09-26T11:18:51Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/09/review-steel-meets-fire.html",
+      "detailPath": "articles/34315f4bbdb8bebb6ae41716.json"
+    },
+    {
+      "id": "82b58dd3613ea6731266235c",
+      "title": "RestlessOS──GrapheneOS的通用系统镜像分支简单体验",
+      "summary": "上周把 手表搞坏 后，我打算换一个手表系统，顺便把安卓版本从11升级到12L。由于我手表刷的都是GSI (Generic System Image, 通用系统镜像) ，于是我打算给手表找一个Android12的GSI，于是我打开了 这个页面 寻找合适的系统。 不过我在Unofficial Android 17那一栏发现了一个 RestlessOS ，怎么这么快就有第三方系统适配了Android17，并且还发了GSI镜像？抱着好奇的心态，我下载了RestlessOS的GSI镜像侧载到了我的 一加13 上，然后开机一看，我立刻就傻眼了。 这不就是GrapheneOS？ 于是我赶紧查看了下项目地址的README.md，原来这是这专门把GrapheneOS打包成GSI的项目，以便其它手机使用。这个项目名叫Restle…",
+      "image": "https://blog.xinsl.xin/posts/restlessos-experience/images/screenshots.png",
+      "publishedAt": "2026-09-26T07:46:18Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/restlessos-experience/",
+      "detailPath": "articles/82b58dd3613ea6731266235c.json"
+    },
+    {
+      "id": "eae1e2bbae95b03aea4377ea",
+      "title": "老家失火",
+      "summary": "前言 # 中秋節回家看看父母親，遠遠就看到一臺貨車燒得稀巴爛，那是我姐夫的貨車。 老家是兩層樓的透天，獨門獨戶左右都是稻田，有圍牆與庭院，貨車停最外面，往內是轎車，再來才是房子。 事發經過 # 火災當時父母都不在家，我姐跟姐夫都入睡了，一名駕駛路人狂敲我家的大鐵門，我姐才醒來。依據相對位置，路人應該是真的用生命敲，我姐的房間是最深的，應該很難聽到。 於是趕緊把轎車移開，事後再看，發現火已經燒到轎車的棚子了，如果姐姐沒醒來，轎車也燃燒，那肯定會再蔓延到房子這裡來。 火災過後 現場看是真的恐怖，圍牆的水泥也被燒掉、剝落，讓紅磚露了出來，而原本貨車是有棚子的，車上也堆滿了做生意用的貨物，據說當時路上煙霧瀰漫到會看不到路的程度。 導火線 # 起火原因是什麼？ 貨車上主要是攤車、食物原料（包含食用油）等等，但這些東西不…",
+      "image": "https://eddielv.com/musings/parents-home-fire/fire.jpg",
+      "publishedAt": "2026-09-26T05:33:57Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/parents-home-fire/",
+      "detailPath": "articles/eae1e2bbae95b03aea4377ea.json"
+    },
+    {
+      "id": "33efe097e2bae595b7f183cb",
+      "title": "学校生存指南[3]：教室",
+      "summary": "教室的重要性应该不用我多说了吧？上课的地点，以及存放个人物品的地方，算是一个比较平常的地方。因此这篇我打算分享一下一些平常上课相关的技巧，也就是“不一样的打开方式” 空间管理 教室应该是除了宿舍以外，存放东西最多的地方了，基本都是书本之类的。不过众所周知，高中的各种资料简直堪称移动资料库了，有人把高中三年的书本、卷子、教辅等堆起来有三、四米高了。这么多的东西，要是没有好的整理方式简直会乱死，我经常看到有同学丢东西，甚至才开学不到3周就已经不见新书了。 作为班上公认的空间管理大师，我当然得好好地介绍一下我的资料管理方式了，不过在此之前，我还是按照惯例列出各种方案，然后我再说我自己的选择 柜筒 把书本放进柜筒里是最简单的方法，但不就是因为柜筒不够放才需要“空间管理”吗？因此除非是小学一、二年级，不然柜筒是完全不够…",
+      "image": null,
+      "publishedAt": "2026-09-26T05:23:02Z",
+      "sourceId": "c3607b68b8e101d3",
+      "sourceTitle": "Xinsl's Blog",
+      "link": "https://blog.xinsl.xin/posts/school-survival-guide/classroom/",
+      "detailPath": "articles/33efe097e2bae595b7f183cb.json"
+    },
+    {
+      "id": "a9581217d5a1d7b0c2a7168c",
+      "title": "小小的背德",
+      "summary": "周末，早上醒来后感到饥饿，于是早早爬起来。从冰箱里拿出一小块冷冻的米饭，烧水，冲泡速溶味噌汤，拿出一盒纳豆，就是一顿简朴的早饭。",
+      "image": "https://shioriblog.org/assets/images/posts/2026/09/2026-09-26.JPG",
+      "publishedAt": "2026-09-26T05:00:00Z",
+      "sourceId": "7e080d3950f65554",
+      "sourceTitle": "独居日记",
+      "link": "https://shioriblog.org/2026/09/26/%E5%B0%8F%E5%B0%8F%E7%9A%84%E8%83%8C%E5%BE%B7/",
+      "detailPath": "articles/a9581217d5a1d7b0c2a7168c.json"
+    },
+    {
       "id": "273b75059524eee2e84d049f",
       "title": "入蜀记 day490 tip toe",
       "summary": "「tip toe。」",
@@ -472,193 +659,6 @@
       "sourceTitle": "雅余  ·  茶余饭后，闲情雅致",
       "link": "https://yayu.net/6247.html",
       "detailPath": "articles/429518dfef507e483d7c278a.json"
-    },
-    {
-      "id": "2fda25cb1f0375c04f40f0e0",
-      "title": "入蜀记 day485 海鲜pasta",
-      "summary": "「海鲜pasta」",
-      "image": null,
-      "publishedAt": "2026-09-21T13:27:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_485/",
-      "detailPath": "articles/2fda25cb1f0375c04f40f0e0.json"
-    },
-    {
-      "id": "dbdca93a46b7a53e73ae5cca",
-      "title": "柴可夫斯基（好和弦）",
-      "summary": "Google 的 AI 模式，總是能在最想不到的地方逗你開心。",
-      "image": "https://wiwi.blog/assets/images/tchai-b19db9846137dadda0415ce814ec9721.png",
-      "publishedAt": "2026-09-21T10:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/tchaikovsky-nicechord",
-      "detailPath": "articles/dbdca93a46b7a53e73ae5cca.json"
-    },
-    {
-      "id": "d216d132c6703eed247f8dc8",
-      "title": "《欲望分子多巴胺（The Molecule of More）》",
-      "summary": "前言 # 這本《 欲望分子多巴胺 》（誠品線上購物）來來回回應該看了三次有吧，一直以爲自己寫過一篇關於它的文章，居然沒有。 重點整理 # 書本簡單把多巴胺分成控制迴路與欲望迴路，欲望迴路就像坐在汽車後座的小孩，看到什麼都說想要去，而駕駛（爸媽）則是控制迴路，能夠決定要不要聽從小孩的話。而多巴胺失控（成癮）的人，就像是駕駛失去的能力，只會盲目聽從小孩的話。 另外，還把多巴胺比喻成欲望分子，其他各種讓人感到滿足的分子則稱爲當下分子。 切入點 # 其中比較生活化的是這兩個章節： 第一章：愛情，講述多巴胺與愛情間的關係，人是如何從互相愛慕走向墳墓； 第四章：創意與瘋狂，提到多巴胺與創意之間的關係； 第五章：政治，講述受多巴胺驅使與不受多巴胺驅使的人們，與他們的政治傾向； 第六章：進步，講述多巴胺其實也不是壞蛋，它是驅…",
-      "image": null,
-      "publishedAt": "2026-09-21T08:15:04Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/articles/the-molecule-of-more/",
-      "detailPath": "articles/d216d132c6703eed247f8dc8.json"
-    },
-    {
-      "id": "ae87f5edc1322ec064e84b80",
-      "title": "吉他初心者 LV3 Week3",
-      "summary": "第三週的吉他初心者 LV3 練習記錄。 這週得知一個疾病：Focal Dystonia 肌張力障礙，從 up 主 yooyoyoyoy 那看到了。簡單說，這項疾病的發聲，是因爲我們在漸漸提升自己的能力時，有代償現象，隨著能力越來越強，演奏能力的上限反而會越來越低。有點像是玩遊戲吧，初期爲了快速升等，配點數用了奇淫巧技，確實能快速升等，但到了一定等級之後就發現練不上去了。 總之，現在得花一些時間開始慢速練習，把動作修正回去。 Day1：左手不舒服的一天｜365 日的電吉他練習計劃 w1-3 # 本練習來自《365 日的電吉他練習計劃》Week1 星期三，BPM=100。 前一天的練習，並沒有特別久，或者對手有太大負擔，但今天起床左手、左肩卻很不舒服，應該是工作造成。 因此今天並沒有花很多時間練習，不過有打開節拍…",
-      "image": null,
-      "publishedAt": "2026-09-21T05:28:30Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/gtb-lv3-w3/",
-      "detailPath": "articles/ae87f5edc1322ec064e84b80.json"
-    },
-    {
-      "id": "81235e4edf56b3ef5e87ab44",
-      "title": "不要光是躲在自己的王國裡",
-      "summary": "自己的王國再舒服，也不會憑空長出讀者。創作者得走進別人的王國，利用平台的流量，把真正有興趣的人帶回自己的城堡。",
-      "image": null,
-      "publishedAt": "2026-09-21T04:59:31Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/leave-your-castle",
-      "detailPath": "articles/81235e4edf56b3ef5e87ab44.json"
-    },
-    {
-      "id": "585ce8212593e31cb867723b",
-      "title": "最近惦念 20260906",
-      "summary": "「就像你说的。」",
-      "image": null,
-      "publishedAt": "2026-09-21T04:15:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/TILs/thoughts/20260906_Recently/",
-      "detailPath": "articles/585ce8212593e31cb867723b.json"
-    },
-    {
-      "id": "dd33eeb02b3c043444682b0d",
-      "title": "Toots 437 2026 Sep.13 - Sep.19",
-      "summary": "「鲸鱼可以那么平静地呼吸。」",
-      "image": null,
-      "publishedAt": "2026-09-21T03:28:27Z",
-      "sourceId": "8e5dc5a8b5023a8e",
-      "sourceTitle": "折腾人生",
-      "link": "https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260919/",
-      "detailPath": "articles/dd33eeb02b3c043444682b0d.json"
-    },
-    {
-      "id": "7d4bb23f0e6d58b50fbaeeb5",
-      "title": "Hello Kitty 徽章",
-      "summary": "翻到這張舊照片就傳上來，記錄一下十五年前台灣的 7-11 會送這種徽章！",
-      "image": "https://wiwi.blog/assets/images/badges-a6f86045540d25de2fd35d05d0c558d7.jpg",
-      "publishedAt": "2026-09-21T02:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/hello-kitty-badges",
-      "detailPath": "articles/7d4bb23f0e6d58b50fbaeeb5.json"
-    },
-    {
-      "id": "bda6366e66715561941f949a",
-      "title": "Nothing Good Happens After 2AM",
-      "summary": "這是「 BlogBlog 同樂會 - 2026 年 9 月 」的投稿文章。本月主題是「",
-      "image": null,
-      "publishedAt": "2026-09-21T00:39:28Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/21/nothing-good-happens-after-2am/",
-      "detailPath": "articles/bda6366e66715561941f949a.json"
-    },
-    {
-      "id": "3aceafdb4f05a0d0ca3c26ff",
-      "title": "Zotero的ODF Scan插件更新了，于是我也更新我的工作流",
-      "summary": "最近发现 Zotero的ODF Scan插件更新了 。感谢维护者。 于是我的工作流也有了小更新。 与此同时，周末进城上课，发现我的饭搭子还在手敲参考文献条目。 学校的资讯素养课果然各有各的草台。 写作是一种思考方式，零AI手打文稿能让我们理清自己到底想说什么；但是零科技手打参考文献就 totally shit job啊喂。 让我们用科技拯救有限的生命。 所以我打算在此处存档一下目前的工作流。 我的工作流也是看其他人的分享，一点点偷师学来的（学校的资讯素养课各有各的草台）。如果能帮上哪个和我一样的互联网街溜子，那就太好了。如果你有优化的建议也欢迎邮件告诉我；或者在你的网站上更一篇博客然后电邮我！ 2023年使用至今的旧工作流参见《 如何在Scrivener 3插入和批量修改參考文獻：Zotero + Libre…",
-      "image": null,
-      "publishedAt": "2026-09-21T00:20:00Z",
-      "sourceId": "4947a434a94c3ee9",
-      "sourceTitle": "無糧殿",
-      "link": "https://wuliangdian.com/posts/odf-scan-workflow/",
-      "detailPath": "articles/3aceafdb4f05a0d0ca3c26ff.json"
-    },
-    {
-      "id": "be865b207cc4ca67df6a2e11",
-      "title": "用 AI 開發的三個體悟",
-      "summary": "只是最近用 AI 寫程式的一些想法。",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/three-ai-takeaways",
-      "detailPath": "articles/be865b207cc4ca67df6a2e11.json"
-    },
-    {
-      "id": "71abafec0f2feb09bfe753bf",
-      "title": "我做市场调查的方法",
-      "summary": "首次写于2023年1月，简单，粗略，非常不完善。 假设已经确定好要做的产品和市场，首先从市场出发，调研以下几个因素： 市场容量（蛋糕有多大，主要玩家有多少个） 市场竞争度（主要竞争对手） 市场发展趋势（增量市场还是存量市场） 垄断和专利情况（类目壁垒） 分析这个市场这个品类下有多少流量（最重要的），预估竞品大致的销量。分析他们的价格，做活动的重点时期，观察类目是否具有季节属性，供应链端生产周期，目标市场的发货和补货的周期。 找到最主要的竞争对手，分析他卖的最好的产品，通常排在小类目第一位。和自己要做的产品做对比，通过现有的 review 分析找出对手的缺点和自己产品的优点。 接着从产品出发，调...",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/amazon-market-research",
-      "detailPath": "articles/71abafec0f2feb09bfe753bf.json"
-    },
-    {
-      "id": "58cf7efc90b0a40f1a119cb5",
-      "title": "访问量指标",
-      "summary": "几个容易搞混的亚马逊访问量指标： Page View 页面浏览量：客户浏览商品详情页面的次数，一个客户可以多次浏览详情页面（以加载完首屏内容为浏览标准） 业务报告中的 PV 包含自然浏览和广告进入浏览 Sessions 会话：在24小时内访问该亚马逊商品详情页面的客户数（24小时内多次点击进入该详情页面算为一次） Click 点击：总点击次数（点击这个行为本身） 包含自然点击和广告点击，总共有多少次点击行为发生在该链接身上 商品会话百分比 = 已订购商品数量 / 会话总数 = 转化率.",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/page-views-and-sessions",
-      "detailPath": "articles/58cf7efc90b0a40f1a119cb5.json"
-    },
-    {
-      "id": "6e5b18745467bbb55bd78e30",
-      "title": "亚马逊广告投放原则",
-      "summary": "个人野路子经验草稿，酌情参考 写于2023年1月3日，持续更新 假设运营一家亚马逊店铺，走品牌/精品路线，总 SKU 数量不超过50个，按具体产品 SKU （和不同站点，如有的话）分类创建单独广告活动 单个广告活动对应一个广告组，每个广告组对应一个子 ASIN，对于关键词投放活动，组内通常有且仅有一个投放动作，例如一个 ASIN 下建立一个广告活动 A，这个活动下只有一个广告组，广告组精准投放一个子 ASIN 的一个关键词 iPhone 18 Pro charger，广告活动 B 词组投放该子 ASIN 的关键词 iPhone 18 Pro charger，并根据实际情况精确否定 iPhone...",
-      "image": null,
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "sourceId": "fb38e83fd2a7811f",
-      "sourceTitle": "按钮与磁带",
-      "link": "https://jefftay.com/rules-of-amazon-advertising-campaigns",
-      "detailPath": "articles/6e5b18745467bbb55bd78e30.json"
-    },
-    {
-      "id": "daf6e6ec00cf516c65118075",
-      "title": "有趣系列2：在以為熟悉的地方探索",
-      "summary": "這個周末，體驗了兩次，在一個你以為自己熟悉的地方，以步行的方式移動，發現有很多地方是之前沒有注意到的。 「咦?這個地方有停車場入口」 「喔喔，這間麵食館看起來很好吃，之前都沒注意到」 想了想，以為自己熟悉的地方其實只是因為平常的通勤",
-      "image": null,
-      "publishedAt": "2026-09-20T23:39:26Z",
-      "sourceId": "bfce0110f029b1fc",
-      "sourceTitle": "I'm j2hongming",
-      "link": "https://j2hongming.github.io/2026/09/20/exploring-familiar-places-on-foot/",
-      "detailPath": "articles/daf6e6ec00cf516c65118075.json"
-    },
-    {
-      "id": "6b699e81e32e5274ec0d674b",
-      "title": "二十年前部落格圈的簡體繁體議論",
-      "summary": "凡是看過我的部落格的文章列表的人，應該會發現文章標題非常公式化。例如有「我不知道⋯⋯」系列、「有關⋯⋯的問題」系列、「○○與××」系列。不幸的是，之前寫的〈 一百年前的「精靈文」注音符號 〉是一個孤立的標題。本篇文章的主要目的，就是打破這個孤立。順便投稿 新一期 的 BlogBlog 同樂會 。 簡體與繁體（或正體）字的論爭由來已久。但是既然我們現在寫的是部落格，可以稍微留意一下部落格圈的歷史。差不多在二十年前，二〇〇六年的三月，出現了一則新聞，說聯合國從二〇〇八年起將停用繁體字，只用簡體字。新聞在當時造成不小的議論，據稱還有數萬人在網路上連署反對。 二〇〇六年可以說是中國「和平崛起」的黃金年代。尤其在兩年後的北京奧運，達到一個相當具有象徵意義的高峰。馬英九時代的路線，某種程度也是這個趨勢反應在台灣的結果。二…",
-      "image": null,
-      "publishedAt": "2026-09-20T15:31:39Z",
-      "sourceId": "7a1943e37d846c5c",
-      "sourceTitle": "我的部落格",
-      "link": "https://e89295.com/blog/2026-09-20.html",
-      "detailPath": "articles/6b699e81e32e5274ec0d674b.json"
-    },
-    {
-      "id": "2c456e46cc8a51457e2bfcdf",
-      "title": "沙蔥炒牛肉",
-      "summary": "沙蔥炒牛肉 沙蔥有一股獨特的香味，之前買過沙蔥涼拌牛肉，很好吃，但沙蔥炒牛肉好吃嗎？試試唄。 食材 牛腿肉 (或其他類似部位) 約 200g 沙蔥約 200g 沙薑 2 顆 (喂！怎麼還有沙薑啊？別問俺，俺也是看視頻裡有，就買了) 大蒜 1 顆 (是一顆，不是一瓣哦) 小米辣几根 (能吃辣就多來點，吃不了就可以省了) 備菜 牛肉切成薄片 (逆著紋理切) ，加入一點點黑胡椒 (去腥，不要太多就會有一股胡椒味也不好吃) 、適量生抽 (入個底味) 、少量小蘇打 (讓肉更嫩) 、少量油 (封住水份，也不容易粘鍋) ，攪拌均勻，腌製 10 分鐘。 沙蔥洗干净，對半切成段 沙薑、蒜、小米辣都切成碎粒 烹飪 起鍋熱油 (油多給點，不能太少，少了可能會粘鍋，你要是不知道這次多少合適，下次就知道了) ，下入沙薑、蒜、小米辣炒香…",
-      "image": null,
-      "publishedAt": "2026-09-20T14:15:00Z",
-      "sourceId": "81ef81d50cdeee4b",
-      "sourceTitle": "Taxodium",
-      "link": "https://taxodium.ink/recipe-sha-cong-chao-niu-rou.html",
-      "detailPath": "articles/2c456e46cc8a51457e2bfcdf.json"
     }
   ]
 }

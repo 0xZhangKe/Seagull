@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "1c4ae2c38ac087efc2aa51de",
+      "title": "Throwing Out The Phonebook",
+      "summary": "There’s really only one hard problem in software engineering: synchronization. OK, maybe two: cache invalidation and synchronization. Synchronization is the harder one though, especially when the thing on the other side is eventually consistent. This year we rebuilt 6PN, the private network between your Fly Machines, and we did it by avoiding the hard thing…",
+      "image": "https://fly.io/blog/throwing-out-the-phonebook/assets/frankie-on-the-phone-with-servers-c20b.webp",
+      "publishedAt": "2026-11-13T00:00:00Z",
+      "sourceId": "bf2903aa6942ed46",
+      "sourceTitle": "Flight Control",
+      "link": "https://fly.io/blog/throwing-out-the-phonebook/",
+      "detailPath": "articles/1c4ae2c38ac087efc2aa51de.json"
+    },
+    {
       "id": "ff2bb67b864a93c8a4dd68e2",
       "title": "Well, That Wasn't Fun: October 16 '26",
       "summary": "October 16, 2026 began like any other day at Fly.io (meaning, we were anticipating only a medium amount of chaos). By that evening, we had patched and rebooted our entire fleet in response to a Linux kernel bug . The full rollout took 10 hours, but the emotional damage persists. CVE-2026-99999 The rest of this won’t make much sense without a clear read on t…",
@@ -36,7 +47,7 @@
     {
       "id": "dce82dcb8437b9b484727c8e",
       "title": "Your Agent Speaks MCP. Give It a Computer.",
-      "summary": "Sprites are disposable cloud computers. They appear instantly, always include durable filesystems, and cost practically nothing when idle. They’re the best and safest place on the Internet to run agents and we want you to create dozens of them . Sprites are a place to run agents; the first thing you should think to do with a new Sprite is to type claude (or…",
+      "summary": "Sprites are disposable cloud computers. They appear instantly, always include durable filesystems, and cost practically nothing when idle. They’re the best and safest place on the Internet to run agents and we want you to create dozens of them . Update, November 2026: the Sprites MCP server now lives inside the Fly MCP at https://mcp.fly.io , and we are tra…",
       "image": "https://fly.io/blog/sprites-mcp/assets/whack.webp",
       "publishedAt": "2026-09-03T00:00:00Z",
       "sourceId": "bf2903aa6942ed46",
@@ -428,17 +439,6 @@
       "sourceTitle": "Flight Control",
       "link": "https://fly.io/blog/fuckin-robots/",
       "detailPath": "articles/e905ae495a2a7fb08c3798f9.json"
-    },
-    {
-      "id": "97c75181b761b55074385d95",
-      "title": "Operationalizing Macaroons",
-      "summary": "We’re Fly.io, a security bearer token company with a public cloud problem. You can read more about what our platform does (Docker container goes in, virtual machine in Singapore comes out), but this is just an engineering deep-dive into how we make our security tokens work. It’s a tokens nerd post. 1 We’ve spent too much time talking about security tokens ,…",
-      "image": "https://fly.io/blog/operationalizing-macaroons/assets/occult-circle.webp",
-      "publishedAt": "2025-03-27T00:00:00Z",
-      "sourceId": "bf2903aa6942ed46",
-      "sourceTitle": "Flight Control",
-      "link": "https://fly.io/blog/operationalizing-macaroons/",
-      "detailPath": "articles/97c75181b761b55074385d95.json"
     }
   ]
 }

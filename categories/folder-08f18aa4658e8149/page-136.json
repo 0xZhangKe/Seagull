@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "e7738c6a14395655b1f0afe2",
+      "title": "javascript中的数据类型",
+      "summary": "学一门编程语言，无非两方面：一是语法，二是数据类型。类C语言的语法不外乎if、while、for、函数、算术运算等，面向对象的语言再加上object。 语法只是语言设计者预先做的一套规则，不同语言语法不尽相同，但都有一些共通点，对于熟悉一两门编程语言的人，学其他的编程语言时，语法往往不是问题（当然，如果你一直学的是类C语言，那么首次接触lisp时肯定也要花些时间），学习的重点往往是数据类型及其相关操作上，不是有句老话：“数据结构＋算法＝程序”！其次，有些语言的语法本身就存在设计问题（javascript更甚），我们没必要深究这些点，当然，如果你自诩geek，可以把玩把玩。",
+      "image": null,
+      "publishedAt": "2015-02-24T21:09:45Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/02/24/javascript-datatype/",
+      "detailPath": "articles/e7738c6a14395655b1f0afe2.json"
+    },
+    {
+      "id": "8fc39c32887d9dcffddeb721",
+      "title": "保證用到壞",
+      "summary": "這是什麼保證？ @ 鹿港老街",
+      "image": "https://wiwi.blog/assets/images/broken-43ca6459184cfeb362d0784f92a4e4aa.jpg",
+      "publishedAt": "2015-02-23T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/until-it-breaks",
+      "detailPath": "articles/8fc39c32887d9dcffddeb721.json"
+    },
+    {
+      "id": "a509749250c847499107b924",
+      "title": "小白",
+      "summary": "小白是黑的。",
+      "image": "https://wiwi.blog/assets/images/white-a750f0502148ffc1da6859f5ed5c5777.jpg",
+      "publishedAt": "2015-02-13T00:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/small-white",
+      "detailPath": "articles/a509749250c847499107b924.json"
+    },
+    {
+      "id": "d1272f1472b8ca6b898f91b5",
+      "title": "为 Nexus 5 编译 Android Lollipop 固件",
+      "summary": "技术复核（2026-10-13） ：这是一篇 Nexus 5 / Android Lollipop 的历史教程，设备与工具链已过期。文中的 LRX22C 二进制对应 **Android 5.0.1 / AOSP android-5.0.1_r1 **，下文据此明确源码、驱动和刷机条件。新学习环境另补 Android 16 Cuttlefish 示例；不要把新版本的构建命令与旧真机固件混用。 接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无…",
+      "image": null,
+      "publishedAt": "2015-02-04T12:51:19Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/02/04/build-rom-for-nexus5/",
+      "detailPath": "articles/d1272f1472b8ca6b898f91b5.json"
+    },
+    {
+      "id": "cc3f5eef9f229be376894275",
+      "title": "javascript中的面向对象编程",
+      "summary": "最近工作一直在用nodejs做开发，有了nodejs，前端、后端、脚本全都可以用javascript搞定，很是方便。但是javascript的很多语法，比如对象，就和我们常用的面向对象(object oriented programming)的编程语言不同；看某个javascript开源项目，也经常会看到使用this关键字，而这个this关键字在javascript中因上下文不同而意义不同；还有让人奇怪的原型链。这些零零碎碎的东西加起来就很容易让人不知所措，所以，有必要对javascript这门语言进行一下深入了解。",
+      "image": null,
+      "publishedAt": "2015-02-01T12:53:18Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2015/02/01/javascript-oop/",
+      "detailPath": "articles/cc3f5eef9f229be376894275.json"
+    },
+    {
       "id": "d072c27dfb13daa5dde33aa4",
       "title": "android动画-View Animation",
       "summary": "视图动画（View Animation）,又称补间动画（Tween Animation）,即给出两个关键帧，通过一些算法将给定属性值在给定的时间内在两个关键帧间渐变。本文首先讲解各种基本动画的使用，其实介绍View动画的工作过程。 概述 视图动画只能作用于View对象，是对View的变换，默认支持的类型有： 透明度变化(AlphaAnimation) 缩放(ScaleAnimation) 位移(TranslateAnimation) 旋转(RotateAnimation) 可以使用AnimationSet让多个动画集合在一起运行，使用插值器(Interpolator)设置动画的速度。 上面说到的几种动画，以及AnimationSet都是Animation的之类，因此Animation中有的属性，以及xml的配…",
@@ -604,61 +659,6 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2014/05/22/search-engine-overview/",
       "detailPath": "articles/770c45def885e5b4bf48edc7.json"
-    },
-    {
-      "id": "30480f7c1817eb5ac269c99d",
-      "title": "深入Java世界",
-      "summary": "俗话说的好：不经一事，不长一智。",
-      "image": null,
-      "publishedAt": "2014-05-19T00:18:39Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/05/19/go-into-java-world/",
-      "detailPath": "articles/30480f7c1817eb5ac269c99d.json"
-    },
-    {
-      "id": "441cb6c94dc81cd2994a6b7a",
-      "title": "开启个人博客之旅",
-      "summary": "这是第一篇用octopress折腾的博客真是废了不少劲，以后就以这里为大本营了。 ——update——— octopress由于文章生成速度太慢，现在已经换成hexo。",
-      "image": null,
-      "publishedAt": "2014-05-07T07:14:41Z",
-      "sourceId": "16aa1c6246a4804c",
-      "sourceTitle": "刘家财的个人网站",
-      "link": "https://liujiacai.net/blog/2014/05/07/hello-weblog/",
-      "detailPath": "articles/441cb6c94dc81cd2994a6b7a.json"
-    },
-    {
-      "id": "74715f1970c31a94f9382ba9",
-      "title": "飞行见闻小记",
-      "summary": "飞过的夜航很少，即使有也被我睡过去了。这次延误不少，反倒睡不着。但我看见了最漂亮的星空：从天际线开始，星星布满整个天空，仔细辨认还能认出些许星座，银河更是清晰可见，强过陆地上所见不知到多少倍。地上的零星城镇与之呼应，更衬得仿",
-      "image": null,
-      "publishedAt": "2014-05-03T22:47:21Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2014/05/03/flying/",
-      "detailPath": "articles/74715f1970c31a94f9382ba9.json"
-    },
-    {
-      "id": "d5e191c706ca1a3270fd490a",
-      "title": "Android Tools - Log2File",
-      "summary": "2026-10-13 更新：2014 年版本直接向外部存储根目录写文件，这种用法已过时。Android 10（API 29）引入分区存储，Android 11（API 30）对 targetSdk 30 及以上应用忽略 requestLegacyExternalStorage 。下面改用应用内部目录，示例最低版本为 Android 4.4（API 19），不需要存储权限。 Android 11 存储变化 Log2File 工具类用于 Android 程序把应用主动记录的日志写入文件，适合下面这些场景： 无法连接电脑进行调试，例如 USB 口被 OTG 设备占用。 日志不容易实时抓取。 Bug 出现很随机，需要保留操作过程中的记录。 其他自己脑补。 它只保存传给 w() 的内容，不会自动读取系统 logcat；…",
-      "image": null,
-      "publishedAt": "2014-05-02T05:25:35Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/05/02/android_log_to_file/",
-      "detailPath": "articles/d5e191c706ca1a3270fd490a.json"
-    },
-    {
-      "id": "91482bd245155aa8df6ad232",
-      "title": "记录一些梦境",
-      "summary": "多年前做的一些梦",
-      "image": null,
-      "publishedAt": "2014-04-29T00:00:00Z",
-      "sourceId": "1d642c054c147719",
-      "sourceTitle": "大猫的部落格",
-      "link": "https://damao.ca/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E6%A2%A6%E5%A2%83/",
-      "detailPath": "articles/91482bd245155aa8df6ad232.json"
     }
   ]
 }

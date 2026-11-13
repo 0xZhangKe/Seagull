@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "9fc20dd0d410c46aa5dee29b",
+      "title": "Android Systrace 流畅性实战 1 ：了解卡顿原理",
+      "summary": "不同的人对流畅性(卡顿掉帧)有不同的理解，对卡顿阈值也有不同的感知，所以有必要在开始这个系列文章之前，先把涉及到的内容说清楚，防止出现不同的理解，也方便大家带着问题去看这几篇问题，下面是一些基本的说明 对手机用户来说，卡顿包含了很多场景，比如在 滑动列表的时候掉帧 、 应用启动白屏过长 、 点击电源键亮屏慢 、 界面操作没有反应然后闪退 、 点击图标没有响应 、 窗口动画不连贯、滑动不跟手、重启手机进入桌面卡顿 等场景，这些场景跟我们开发人员所理解的卡顿还有点不一样，开发人员会更加细分去分析这些问题，这是开发人员和用户之间的一个认知差异，这一点在处理用户(或者测试人员)的问题反馈的时候尤其需要注意 对开发人员来说，可以先按 流畅度 （画面节奏不连贯）、 响应速度 （操作后等待过长）和 稳定性 （崩溃、ANR…",
+      "image": null,
+      "publishedAt": "2021-04-24T11:55:02Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2021/04/24/android-systrace-smooth-in-action-1/",
+      "detailPath": "articles/9fc20dd0d410c46aa5dee29b.json"
+    },
+    {
+      "id": "a766b7e1f062ddbc6136f352",
+      "title": "Properly configured Shadowsocks servers reportedly blocked in China",
+      "summary": "Since March 2021, at least three users have reported that their Shadowsocks-libev servers became not pingable (temporarily in some cases) even after following the recommended setup in this tutorial ( 中文版 ). The tutorial documented how to setup a Shadowsocks-libev server that could defend against all known active probing attacks from the GFW as well as the p…",
+      "image": null,
+      "publishedAt": "2021-04-23T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/properly_configured_shadowsocks_blocked/en/",
+      "detailPath": "articles/a766b7e1f062ddbc6136f352.json"
+    },
+    {
+      "id": "1efda6dc30094572a076d400",
+      "title": "据报配置正确的 Shadowsocks 服务器在中国遭封锁",
+      "summary": "自 2021 年 3 月以来，至少三名用户报告称，即使按照 这篇教程 （ English version ）中的推荐方法进行配置，他们的 Shadowsocks-libev 服务器仍变得无法 ping 通（部分情况为暂时无法 ping 通）。这篇教程记录了如何搭建一台能够抵御 GFW 所有已知主动探测攻击 以及 partitioning oracle 攻击 的 Shadowsocks-libev 服务器。 我们在本文中记录这些报告，并正在立即着手调查其原因。 与此同时，如果你曾按照我们的教程搭建服务器，无论服务器是否遭到封锁，我们都欢迎你报告其状态。你可以选择： 在 Net4People 原帖 下回复； 在 中文评论区 或 英文评论区 留言； 或私下联系我们（更多联系方式见 gfw.report 页脚）。 2…",
+      "image": null,
+      "publishedAt": "2021-04-23T00:00:00Z",
+      "sourceId": "34d02af866ebd5fa",
+      "sourceTitle": "Great Firewall Report",
+      "link": "https://gfw.report/blog/properly_configured_shadowsocks_blocked/zh/",
+      "detailPath": "articles/1efda6dc30094572a076d400.json"
+    },
+    {
+      "id": "df38399917d934153f79f3ab",
+      "title": "前提",
+      "summary": "提供一个直观的判断标准：我想写 100 个字，针对这 100 个字阅读量应该有 10000 字，吸收、处理、输出，一整套流程在经过训练之后，速度可以很快，甚至感觉像是直觉、不经意或者潜意识里完成了这份工作。 重点是，这 10000 字的阅读，是少不了的。很多时候我们阅读一段文本信息时，经常忽略了「前提」这个重要部分。一段话被随意摘录出来，可以供给给正反两方来用，大家都能找到支持自己观点的角度，问题就在这里，他们会刻意制造某种「前提」，让你从他们规划好的路径出发去思考。 不幸的是，大家很容易上套，奇葩说是一个很好的例子。我经常跟朋友说，看一个人说话，要看他没说什么，而不是说了什么。",
+      "image": null,
+      "publishedAt": "2021-04-22T00:00:00Z",
+      "sourceId": "fc41292f8a54624e",
+      "sourceTitle": "Elizen's Blog",
+      "link": "https://elizen.me/posts/2021/04/qian-ti/",
+      "detailPath": "articles/df38399917d934153f79f3ab.json"
+    },
+    {
+      "id": "8acce1b7b93e3f9021faba50",
+      "title": "云空调，便携小空调",
+      "summary": "[ ](https://github.com/YunYouJun/air-conditioner/) ❄️ 云空调，便携小空调，为你的夏日带去清凉！ 这又是一个差不多两年前的坑。 那么它能做什么呢？没错，随时随地打开空调。唯一的缺憾是，没有风。但我们也许可以「望空调止热」。 GitHub: air-conditioner 裸机: 云空调 样板房: 空调间 遵从最宽松的 MIT 协议，你可以自行…",
+      "image": "https://img.shields.io/github/stars/YunYouJun/air-conditioner?style=social",
+      "publishedAt": "2021-04-17T09:18:47Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/air-conditioner",
+      "detailPath": "articles/8acce1b7b93e3f9021faba50.json"
+    },
+    {
       "id": "477d730c30a81eabea1f5eaa",
       "title": "谈谈 Kubernetes 的问题和局限性",
       "summary": "",
@@ -309,17 +364,6 @@
       "detailPath": "articles/95dc82192ff6ec9d47287875.json"
     },
     {
-      "id": "8ffd8c2c65134659c306d682",
-      "title": "char-dust 一个图片转字符画的 npm 包与示例站点",
-      "summary": "如题，它的全部作用就是将图片变成字符画（又称 ASCII 艺术）。 GitHub: 示例站点: 似乎有些老生常谈，那么为什么会有它的诞生呢？",
-      "image": "https://cos.yunle.fun/images/char-dust-jashin.jpg",
-      "publishedAt": "2021-03-13T01:08:46Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/why-make-char-dust",
-      "detailPath": "articles/8ffd8c2c65134659c306d682.json"
-    },
-    {
       "id": "72bcfddec70bcb08c04c5255",
       "title": "周末推书《间谍与叛徒》",
       "summary": "周末推书， 《间谍与叛徒》 ，去年关注到这本书，上周找来读一下，还没读完，很过瘾。讲的是一个关于克格勃特工判投军情六处的真实故事。除了书的内容本身好看之外，我在里面学到最多的，就是间谍特工的工作模式，极强的忍耐力，记忆力，规划能力和执行力，以及超乎常人的敏感性，逻辑思维和情绪控制。 也是去年，我尝试模仿产品沉思录，想做一个「向XXX学习」的系列专题，昨天发的向产品经理学习，其实就是阶段性观察的结果。向间谍特工学习，也很有意思。出自之外，还有向医生学习，向NGO组织学习，向顶级运动员学习，向建筑师学习，向王小波学习等等。 有时间再给大家分享。",
@@ -329,6 +373,17 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2021/03/daily-019/",
       "detailPath": "articles/72bcfddec70bcb08c04c5255.json"
+    },
+    {
+      "id": "8ffd8c2c65134659c306d682",
+      "title": "char-dust 一个图片转字符画的 npm 包与示例站点",
+      "summary": "如题，它的全部作用就是将图片变成字符画（又称 ASCII 艺术）。 GitHub: 示例站点: 似乎有些老生常谈，那么为什么会有它的诞生呢？",
+      "image": "https://cos.yunle.fun/images/char-dust-jashin.jpg",
+      "publishedAt": "2021-03-12T17:08:46Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/why-make-char-dust",
+      "detailPath": "articles/8ffd8c2c65134659c306d682.json"
     },
     {
       "id": "fd54b6c92e81bb6d00b4f49a",
@@ -463,17 +518,6 @@
       "detailPath": "articles/b5c615ee764a41f0cd70784d.json"
     },
     {
-      "id": "5fc47cf9437a6f83b690d412",
-      "title": "nnrm - 一个极简的 npm/yarn registry 切换管理器",
-      "summary": "nnrm 即 new nrm。 GitHub: nnrm - 一个极简的 npm/yarn registry 切换管理器 V2EX 一个简单的 npm/yarn registry （镜像源）切换工具 中文使用文档 首先，我赞成重复造轮子是不好的行为。 nrm 的确使得切换更加方便，譬如我们可以简单地使用 nrm use taobao 的方式切换镜像。 但是在切换镜像前，安装 nrm…",
-      "image": null,
-      "publishedAt": "2021-03-05T17:57:17Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/nnrm-new-nrm",
-      "detailPath": "articles/5fc47cf9437a6f83b690d412.json"
-    },
-    {
       "id": "d0683602b9ad584c25e6bb73",
       "title": "使用 Emacs 阅读邮件与 RSS",
       "summary": "本文不再更新，最新教程会同步在： https://wiki.liujiacai.net/emacs/email https://wiki.liujiacai.net/emacs/rss 对于程序员来说，除了编写代码外，阅读邮件与技术文章是耗时比较久的事情，更重要的一点是，这两个的信息输入量都比较大，会涉及到做笔记、TODO 等，一般来说这些事情都是分散在不同应用解决的，但对 Emacs 用户来说，自然希望能 在 Emacs 里做所有事 。",
@@ -483,6 +527,17 @@
       "sourceTitle": "刘家财的个人网站",
       "link": "https://liujiacai.net/blog/2021/03/05/emacs-love-mail-feed/",
       "detailPath": "articles/d0683602b9ad584c25e6bb73.json"
+    },
+    {
+      "id": "5fc47cf9437a6f83b690d412",
+      "title": "nnrm - 一个极简的 npm/yarn registry 切换管理器",
+      "summary": "nnrm 即 new nrm。 GitHub: nnrm - 一个极简的 npm/yarn registry 切换管理器 V2EX 一个简单的 npm/yarn registry （镜像源）切换工具 中文使用文档 首先，我赞成重复造轮子是不好的行为。 nrm 的确使得切换更加方便，譬如我们可以简单地使用 nrm use taobao 的方式切换镜像。 但是在切换镜像前，安装 nrm…",
+      "image": null,
+      "publishedAt": "2021-03-05T09:57:17Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/nnrm-new-nrm",
+      "detailPath": "articles/5fc47cf9437a6f83b690d412.json"
     },
     {
       "id": "7d964c6242e6969f9f010707",
@@ -604,61 +659,6 @@
       "sourceTitle": "Elizen's Blog",
       "link": "https://elizen.me/posts/2021/02/daily-005/",
       "detailPath": "articles/8c0071bddf9f94a89ca0aeca.json"
-    },
-    {
-      "id": "1f571381c719e6e117d18cae",
-      "title": "一点可能",
-      "summary": "我有一篇写了 500 字开头的短篇小说，话题跟科技有关。过程中，包括查资料，看新闻，读书，想到一点可能，与小说无关，也无处安放，在这里记录一下。 未来蓝领工人的角色会有怎样的转换？ 中国经历了 30 年高速发展，很多当时生活在农村的人，中学学历都没有，就有机会进入工厂，靠全球化这口大锅吃得饱饱，养育了几个孩子，但心里都明白，在工厂里造机器的比流水线上赚钱多，一心希望孩子成龙成凤，开始抓教育，国家机器也一样，要加速运转，要乘风破浪，大学不停扩招。到今天，一个总被拿出来讨论的话题就是，大学生找不到工作，公司招不到人。这后面的原因，很可能在这里。那未来会有什么样的变化呢？ 现在科技大炮越打越响，越响越得打，人工智能(AI)是排头兵，冲在最前面，但 AI 能干嘛？它有点儿像四维空间里的东西，时间对于它来说，是显性的，…",
-      "image": null,
-      "publishedAt": "2021-02-26T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/02/daily-004/",
-      "detailPath": "articles/1f571381c719e6e117d18cae.json"
-    },
-    {
-      "id": "3aa2e884dca486b457dd795a",
-      "title": "位移",
-      "summary": "这两天李如一的播客一天世界“回光返照”，不仅更新，还请了嘉宾。以往都是他一个人单口相声，现在听他被人“怼”，很有意思。 节目聊打口碟、音乐、唱片和假唱的关系。罗敏在听他们说的过程中，作为一个局外人，提醒者，不断让李如一和另一位主播页边对当代青年介绍清楚各路背景信息，什么是打口碟、磁带、唱片。现在的年轻人可能完全不知道这些东西。它们就像是另一个世界的玩物。 同样，这两天随机波动（另一档我很喜欢的播客节目）请了作家荞麦，她刚刚出一本新书《普通婚姻》，其实想借着书描述一下他们八十年代那一代人的生活路径，她自己常常怀疑，年轻时候那些梦想啊，上大学时的憧憬啊，好像现在全都不见了，就仿佛从来没有出现过一样。她说道西祠胡同的历史，那是有了互联网之后国内最早最鼎盛的 BBS 论坛，她们在混西祠的时候，从来没有人讨论要赚多少多…",
-      "image": null,
-      "publishedAt": "2021-02-25T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/02/daily-003/",
-      "detailPath": "articles/3aa2e884dca486b457dd795a.json"
-    },
-    {
-      "id": "4fa90acba8f221eab1fdde97",
-      "title": "「Notion」个人年度订阅服务总览模板共享",
-      "summary": "今天逛 罗磊博客 ，发现了一个有意思的订阅服务管理notion模版，就直接复制过来了，在此感谢罗磊老师提供的模版 可以参考「我的年度订阅」，一年算下来大概9000不到的样子，算是不少了，主要开支都在软件服务订阅上，个人在云上花费的钱比较少。 前往 Notion 链接",
-      "image": "https://cdn.taurusxin.com/old-cdn/typecho/2021/02/24/Xnip2021-02-24_10-19-40.png",
-      "publishedAt": "2021-02-24T10:16:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/notion-subs/",
-      "detailPath": "articles/4fa90acba8f221eab1fdde97.json"
-    },
-    {
-      "id": "63f1d432b223e23bc6cda44f",
-      "title": "梦与幻想",
-      "summary": "本来今天的主题应该是别追女生，因为有朋友在昨天的哭不出来中留言，想让我聊聊怎么追女生。我一看，很好的选题啊，还带着滚烫的鸡汤气质。但是好巧不巧，我看了《同学麦娜丝》，也带着滚烫的中年男人的一地鸡毛，再不写，眼看着汤要溢出来了。 单刀直入，先说个人评价，5 星。它应该是我视听世界里台湾版的《独自等待》。 我和身边很多影迷朋友不太一样，一聊起「最爱」这个话题，有说小津安二郎的，有说希区柯克的，有说伯格曼的，还有喜欢贾樟柯、李安的，总之，跑不出大师这个圈子。我倒是比较大众，有两部华语作品，喂出我不少价值观，一部是电视剧《奋斗》，一部就是伍仕贤导演的《独自等待》。 你今天让我聊《独自等待》拍了个啥，我还真聊不出来，要是有人说这部电影很一般，我也想不出什么反对的理由。这两部影片我不知道看了多少回，上句台词出来，下句八九…",
-      "image": null,
-      "publishedAt": "2021-02-24T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/02/daily-002/",
-      "detailPath": "articles/63f1d432b223e23bc6cda44f.json"
-    },
-    {
-      "id": "1bd1b2e51d386e77174fdb7f",
-      "title": "哭不出来",
-      "summary": "看完《你好，李焕英》，我经历了生命中少有的失眠。十一同学依旧哭得很厉害，她共情能力太强了，动起情来像个娃娃，两只手会呼扇呼扇得摇，你要是离远点儿看她，活脱脱一只小野兔。 我失眠，正是因为我没哭。我又没哭。看完电影已经很晚了，躺在床上，左边十一右边娃，都已经熟睡，突然就产生强烈的空虚感自责感。我怎么又没哭呢？索性开始认真地反思自己。 记忆里印象很深的一次看电影看到哭，是 2017 年，刚刚追到十一之后，请她去百老汇看香港影展，《阿郎的故事》，非常日常的剧情片。杜琪峰导演，张艾嘉，周润发主演。一个父子情深，浪子回头的故事。骑骑摩托车，打打牌，吃吃饭，闹一闹，去海边转一转，可能任何一个生活在类似厦门这种沿海小清新城市里的家庭，都可以轻松做到。 没有过多关于爱的直观表达，但我还是哭得很厉害。 去年秋天，有一次我带嘟嘟…",
-      "image": null,
-      "publishedAt": "2021-02-23T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2021/02/daily-001/",
-      "detailPath": "articles/1bd1b2e51d386e77174fdb7f.json"
     }
   ]
 }

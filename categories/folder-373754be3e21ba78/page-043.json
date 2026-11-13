@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "77a3a267971b88b793b47b08",
+      "title": "Kotlin ‘For’ loop",
+      "summary": "While converting all my java code to kotlin, one of the strange syntax change I observed was the for loop in both the languages. Later I realized in Kotlin, there are few concepts which are completely different from java or any other another language for loops.",
+      "image": null,
+      "publishedAt": "2018-01-12T00:00:00Z",
+      "sourceId": "46b0ff3e55cf7fb7",
+      "sourceTitle": "Suneet Agrawal",
+      "link": "https://agrawalsuneet.github.io/blogs/kotlin-for-loop/",
+      "detailPath": "articles/77a3a267971b88b793b47b08.json"
+    },
+    {
+      "id": "771a8a1eaa17fcbb1857083e",
+      "title": "when operator in Kotlin",
+      "summary": "when operator is a replacement of switch operator in other languages. when operator matches its argument with all the branches until it matches with anyone, else it executes the else block.",
+      "image": null,
+      "publishedAt": "2018-01-11T00:00:00Z",
+      "sourceId": "46b0ff3e55cf7fb7",
+      "sourceTitle": "Suneet Agrawal",
+      "link": "https://agrawalsuneet.github.io/blogs/when-operator-in-kotlin/",
+      "detailPath": "articles/771a8a1eaa17fcbb1857083e.json"
+    },
+    {
       "id": "b7fd45031da237f9593491de",
       "title": "Lessons from a takeaway plastic bag",
       "summary": "About five months ago I got some take away food from our local Asian restaurant. They packaged the food and gave me a plastic bag to carry it home. On my way home I was thinking about the bag. Although it has some nice styling printed on it, it's designed for single use only. What a waste... making me wonder: how long would it last if you would use it on a…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Willem's Blog",
       "link": "https://willem.com/en/2017-01-30_ipad-pro-next-to-my-primary-machine/",
       "detailPath": "articles/61159bb658aee5c23d3b9cf1.json"
-    },
-    {
-      "id": "cfb19ab9a1a32c32f83bcd96",
-      "title": "Why is the iOS PayPal app so big?",
-      "summary": "The size reported on the App Store (204MB as of today for PayPal version 6.8.0) does not take into account App Thinning. The App Thinning process only delivers the parts of the app required by the device. For example, the launch screen for iPad would not be downloaded onto my iPhone; and the 32-bit binary would not be downloaded on a 64-bit device. For my i…",
-      "image": "https://miro.medium.com/max/1400/0*fcZ1UW9u2lGjdGKs.png",
-      "publishedAt": "2017-01-26T00:00:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2017/01/26/why-is-the-ios-paypal-app-so-big/",
-      "detailPath": "articles/cfb19ab9a1a32c32f83bcd96.json"
-    },
-    {
-      "id": "66449669677718d2a040be81",
-      "title": "How to push an update to the App Store without building a new binary",
-      "summary": "This post details how to easily deal with a request from Apple to update an old app that is still working perfectly—without having to setup a development environment to build it from source. TL;DR Bump the version in Info.plist Create a new .icns icon Do a fresh codesign on the app bundle Use Application Loader to get it into iTunes Connect Submit for appro…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/update-app-no-new-binary-app-loader-1.png",
-      "publishedAt": "2017-01-19T00:00:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2017/01/19/how-to-push-an-update-to-the-app-store-without-building-a-new-binary/",
-      "detailPath": "articles/66449669677718d2a040be81.json"
     }
   ]
 }

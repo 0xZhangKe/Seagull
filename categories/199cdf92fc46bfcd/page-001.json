@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "b125bb6b05cf94f75a162359",
+      "title": "塑膠袋富人",
+      "summary": "一個月多後，成爲了塑膠袋富人。 巨量塑膠袋 感謝 教學 與 示範 。 說來慚愧，做爲一名吉他手，手指應該要很巧的，但摺速比帥熊慢多了。 不過，現在多到用不完，再這樣下去怕是某天會多到我會一次把整包一次丟掉。",
+      "image": "https://eddielv.com/musings/bags-rich-man/bags.jpg",
+      "publishedAt": "2026-11-13T09:34:31Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/bags-rich-man/",
+      "detailPath": "articles/b125bb6b05cf94f75a162359.json"
+    },
+    {
       "id": "842f714ba34f3913fc3b6676",
       "title": "CDN 的 CSS 延遲更新",
       "summary": "CSS 與 CDN # 去年（2025）的九月二十五號，我將網站串聯了 Cloudflare，來使用 CDN，以加快客戶端的速度，同時也能減緩伺服器負擔。 當時其實有遇到一個問題，那就是當我更新 Hugo 主題的 CSS 之後，本地部署都是正常，但是上傳到伺服器後，看不到變化。後來才知道使用 Cloudflare 的 CDN 後，它們爲了節省流量會有一套機制，總之該機制會判定不需要每次都抓最新的 CSS，因此要等幾分鐘，甚至是幾小時後才看得到變化。不只 hugo，只要是用傳統 CSS 都會遇到這個問題。 當時理解到 CDN 與 CSS 更新頻率之後，才知道 Hugo 有支援 SCSS 的技術，能夠在每次輸入指令 hugo 時，把新產生的整個網站中的 CSS 檔名中都加上一組隨機碼，這樣 Cloudflare…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/shit-artist-manager/",
       "detailPath": "articles/ed3a96e3ef913500ff60275c.json"
-    },
-    {
-      "id": "1dd1e9bbb2c2184a3ca0bc16",
-      "title": "誰有資格被稱作臺灣台語",
-      "summary": "前言 # 先前其實寫過一篇〈 臺語與臺灣閩南語 〉，講述臺語表示臺灣的語言，並質疑用臺語來直接代稱臺灣閩南語的合理性。 這篇的理念一樣，但對於官方現在（2026）的使用偏好展開討論。 政府偏好用語 # 前陣子做了一個學生語文競賽的頒獎典禮活動硬體，其中關於 臺灣閩南語 的各項目，名稱是使用 臺灣台語 。 在 Wikipedia 上是這樣描述的： 臺灣話 = 臺灣台語 = 臺灣閩南語，並簡稱爲臺語。 比賽項目除了臺灣閩南語外，還有臺灣客語、各種原住民語的項目。 我的疑問是：爲何臺灣的變體客語是臺灣客語，臺灣的變體閩南語是臺灣台語？ 難道原住民語跟客語不是臺灣人的語言嗎？沒有資格被稱爲台語嗎？ 理由 # 那麼，政府選擇用臺灣台語做爲臺灣閩南語的理由是什麼？ 支持臺灣台語的族群認爲，使用臺灣閩南語會讓人忽略這套語言…",
-      "image": null,
-      "publishedAt": "2026-10-05T03:36:09Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/taiwanese-taiwanese/",
-      "detailPath": "articles/1dd1e9bbb2c2184a3ca0bc16.json"
     }
   ]
 }

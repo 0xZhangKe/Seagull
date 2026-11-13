@@ -1,6 +1,61 @@
 {
   "items": [
     {
+      "id": "5f6bef8f677d0a8a9676e149",
+      "title": "Android 中的卡顿丢帧原因概述 - 方法论",
+      "summary": "技术复核 · 2026-10-13。 本文保留 2019 年厂商优化组的工作经验与当时的行业观点。技术部分补充 Android 12（API 31）FrameTimeline、JankStats 与 Macrobenchmark 的适用边界；Looper 日志语义按 AOSP android-9.0.0_r1 / android-16.0.0_r1 核对，Matrix 功能以 v2.1.0 文档为版本示例。本文未进行新的设备测量。 Android 手机使用中的卡顿问题，手机厂商和 App 开发商都会重视，内部一般会有基础组或者优化组负责分析和优化。 第三方工具如腾讯 Matrix 可以提供应用侧性能线索。厂商也会有自己的监控方案，借助系统源码和相应调试权限获取更深层数据；实际可见范围仍取决于系统版本、内核配置…",
+      "image": null,
+      "publishedAt": "2019-09-05T04:56:42Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Debug/",
+      "detailPath": "articles/5f6bef8f677d0a8a9676e149.json"
+    },
+    {
+      "id": "c3d9b24273a190ce2a86ea01",
+      "title": "Android 中的 Activity Launch Mode 详解",
+      "summary": "技术复核 · 2026-10-13。 本文保留 2019 年四种启动模式的操作记录，按 AOSP android-9.0.0_r1 、 android-16.0.0_r1 核对任务选择、affinity 与最近任务行为，并补充 Android 12（API 31）的 singleInstancePerTask。旧记录未注明设备完整版本，本次没有真机重跑，不能当作当前系统的逐步实测。 Android 中的 Activity 有几种重要的启动模式：standard、singleTop、singleTask、singleInstance。网上讲这些模式的文章不少，我这里写了个 Demo，想从任务中的 Activity 排列给大家看它们的区别；较新的 singleInstancePerTask 放在后面补充。 普通任…",
+      "image": null,
+      "publishedAt": "2019-09-01T04:37:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/01/Android-Activity-Lunch-Mode/",
+      "detailPath": "articles/c3d9b24273a190ce2a86ea01.json"
+    },
+    {
+      "id": "2be88150fb5a565fe201eb29",
+      "title": "手动更新KDE Plasma的应用菜单",
+      "summary": "安了很多新软件，发现明明/usr/share/applications/下存在对应的.desktop文件，但应用菜单里就是不显示。查了半天发现可以用 kbuildsycoca5 来定位问题。 比如我输入 kbuildsycoca5 ，显示如下： ❯ kbuildsycoca5 kbuildsycoca5 running... kf5.kservice.services: The desktop entry file \" /usr/share/applications/org.kde.kded5.desktop \" has Type= \" SystemService \" instead of \" Application \" or \" Service \" kf5.kservice.sycoca: Invalid…",
+      "image": null,
+      "publishedAt": "2019-08-26T13:34:05Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/update_plasma_menu/",
+      "detailPath": "articles/2be88150fb5a565fe201eb29.json"
+    },
+    {
+      "id": "a8741cf57c83ae177cf04538",
+      "title": "Windows 11 下使用 VS2026 源码编译 OpenSSL 4.0.0",
+      "summary": "依赖安装 安装 Strawberry Perl 前往 Strawberry Perl 官网下载并安装 Strawberry Perl 这里选择的是目前最新版本 Strawberry Perl 5.32.1.1 安装过程中务必选择完整安装 安装完成之后会自动添加环境变量，无需手动添加 检查是否已安装 1 perl -v 安装 NASM 前往 NASM 官网下载并安装 NASM 下载源代码 前往 OpenSSL 官网下载 openssl-3.1.3.tar.gz 并解压 编译 VC编译环境 Visual Studio 在安装时必须勾选 Windows C++ 的开发环境，不然没法打开开发人员命令提示符 启动命令行提示工具 【2020年5月25日更新】 使用 VS2022 的开发人员提示工具切换到源码目录，注意选择…",
+      "image": "https://cdn.taurusxin.com/old-cdn/usr/uploads/2020/04/504569709.png",
+      "publishedAt": "2019-08-20T13:00:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/openssl_win_build/",
+      "detailPath": "articles/a8741cf57c83ae177cf04538.json"
+    },
+    {
+      "id": "d5c1bfa7dbbb73d4d25bd3cb",
+      "title": "Doors",
+      "summary": "Faces come out of the rain... Let's swim to the moon... 互动 复制以下链接，并粘贴到你的 联邦宇宙 Fediverse 应用的搜索栏中，即可搜到对应本文的嘟文。对嘟文进行的点赞、转发、评论，都会出现在本文底部。快去试试吧！ 链接： https://emptystack.top/note/doors",
+      "image": "https://emptystack.top/processed_images/Doors-fs8.3f93ff74ca9f9f97.webp",
+      "publishedAt": "2019-08-19T15:08:11Z",
+      "sourceId": "946f35b6a82d9000",
+      "sourceTitle": "空栈顶",
+      "link": "https://emptystack.top/doors/",
+      "detailPath": "articles/d5c1bfa7dbbb73d4d25bd3cb.json"
+    },
+    {
       "id": "720b7a5d213955244054ee11",
       "title": "环球节律赏析",
       "summary": "对于中国最知名的“复杂”文人，我要再次提醒同胞们，他既是那个能微笑着陪你喝酒唠嗑的忠厚长者胡锡进，但转脸就会变成文字狱长单仁平。… Continue reading 环球节律赏析 →",
@@ -170,7 +225,7 @@
       "title": "CSS 陷阱",
       "summary": "CSS 的奇妙 Bug",
       "image": null,
-      "publishedAt": "2019-06-27T18:32:55Z",
+      "publishedAt": "2019-06-27T10:32:55Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/css-trap-note",
@@ -181,7 +236,7 @@
       "title": "Blender 学习笔记",
       "summary": "访问 https://www.yunyoujun.cn/posts/blender-learn-note 阅读全文。",
       "image": null,
-      "publishedAt": "2019-06-26T10:49:33Z",
+      "publishedAt": "2019-06-26T02:49:33Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/blender-learn-note",
@@ -324,22 +379,11 @@
       "title": "Everyday Auto Xuexiqiangguo",
       "summary": "You know what I mean.",
       "image": null,
-      "publishedAt": "2019-05-16T21:51:55Z",
+      "publishedAt": "2019-05-16T13:51:55Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/everyday-auto-xuexiqiangguo",
       "detailPath": "articles/b7815b32c01faa07739c1aba.json"
-    },
-    {
-      "id": "ce4bb43f08e31c1f21321933",
-      "title": "酷 Q 使用笔记",
-      "summary": "2020-07-19 因为 CoolQ 的繁琐和诸多限制，我已经弃用。所以该篇文章内容不会再更新。 如果你有兴趣，可以尝试使用 mirai (一个跨平台且轻量的 QQ 机器人库)。 此外，我使用 JS/TS 编写了一个基于 mirai 的机器人框架 el-bot，使其更易于使用与扩展，正处于持续开发维护中。 More Info: el-bot & mirai-ts 制作笔记 Webqq 早已于…",
-      "image": null,
-      "publishedAt": "2019-05-15T19:45:31Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/coolq-use-note",
-      "detailPath": "articles/ce4bb43f08e31c1f21321933.json"
     },
     {
       "id": "1bd434b032f37296e19fc5d4",
@@ -351,6 +395,17 @@
       "sourceTitle": "Memozine",
       "link": "https://memozine.me/2019/05/16/to-the-things-themselves",
       "detailPath": "articles/1bd434b032f37296e19fc5d4.json"
+    },
+    {
+      "id": "ce4bb43f08e31c1f21321933",
+      "title": "酷 Q 使用笔记",
+      "summary": "2020-07-19 因为 CoolQ 的繁琐和诸多限制，我已经弃用。所以该篇文章内容不会再更新。 如果你有兴趣，可以尝试使用 mirai (一个跨平台且轻量的 QQ 机器人库)。 此外，我使用 JS/TS 编写了一个基于 mirai 的机器人框架 el-bot，使其更易于使用与扩展，正处于持续开发维护中。 More Info: el-bot & mirai-ts 制作笔记 Webqq 早已于…",
+      "image": null,
+      "publishedAt": "2019-05-15T11:45:31Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/coolq-use-note",
+      "detailPath": "articles/ce4bb43f08e31c1f21321933.json"
     },
     {
       "id": "687b5392465f12115761a2b0",
@@ -412,7 +467,7 @@
       "title": "Deepin 使用笔记",
       "summary": "Deepin 深度操作系统 - Linux 发行版",
       "image": null,
-      "publishedAt": "2019-04-29T18:23:47Z",
+      "publishedAt": "2019-04-29T10:23:47Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/deepin-use-note",
@@ -423,7 +478,7 @@
       "title": "塞翁失马焉知非福",
       "summary": "访问 https://www.yunyoujun.cn/posts/a-blessing-in-disguise 阅读全文。",
       "image": null,
-      "publishedAt": "2019-04-28T15:48:00Z",
+      "publishedAt": "2019-04-28T07:48:00Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/a-blessing-in-disguise",
@@ -445,7 +500,7 @@
       "title": "hexo-theme-yun 制作笔记",
       "summary": "Hexo-Theme-Yun 绝赞开发中~ GitHub: Docs: Example: PV: Strato - Hexo 主题「Yun」版本宣传 PV 还在用 WordPress 的时候，总是喜新厌旧，经常换主题。且装了一堆插件，速度慢还容易崩。 而迁移到 Hexo 之后（小水管服务器太慢，拿去挂 MC 了。根本原因是没钱），光是 hexo-theme-next…",
       "image": null,
-      "publishedAt": "2019-04-27T12:00:00Z",
+      "publishedAt": "2019-04-27T04:00:00Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/make-hexo-theme-yun",
@@ -500,7 +555,7 @@
       "title": "写给可爱的学弟学妹们",
       "summary": "梦想还是要有的，万一实现了呢？ 没有了梦想的咸鱼，和咸鱼有什么区别。",
       "image": null,
-      "publishedAt": "2019-04-16T10:36:53Z",
+      "publishedAt": "2019-04-16T02:36:53Z",
       "sourceId": "410b11347b8a16bf",
       "sourceTitle": "云游君的小站",
       "link": "https://www.yunyoujun.cn/posts/to-lovely-junior",
@@ -529,17 +584,6 @@
       "detailPath": "articles/0a4ffd4117b83804e51378a6.json"
     },
     {
-      "id": "895ff0fb6b91b35ca52f6e21",
-      "title": "北线无战事",
-      "summary": "垂死挣扎、孤注一掷、苟延残喘、困兽犹斗、破釜沉舟，亦或背水一战。 我试图想了许多成语来形容本次的进京赶考，但终究略显偏颇。 所有事由结束时，我如同《少女终末旅行》中千户和尤莉，终于爬到了城市的顶端， 吃完了所剩的食物，喝完了全部的水，所能见到的却只是除了积雪外空空如也的世界。 千户和尤莉没心没肺地打起雪仗来。 自己则回想起，最后一次与朋友打雪仗或许是小学六年级的寒假。 呐，这之后怎么办？…",
-      "image": null,
-      "publishedAt": "2019-04-03T13:12:25Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/after-2nd-postgraduate-re-exam",
-      "detailPath": "articles/895ff0fb6b91b35ca52f6e21.json"
-    },
-    {
       "id": "45588ed5f46ad7ec0100ad0a",
       "title": "小王完成了一个新功能",
       "summary": "任职于某大厂浏览器部门的小王很关注最近热议的 996.ICU 话题，并且 star 了 Github 上的项目。他非常高兴——「我们程序员终于可以团结起来对抗剥削的资本家了，我一定也要添一份力」——小王暗暗下定决心并且在项目",
@@ -549,6 +593,17 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2019/04/03/a-new-feature/",
       "detailPath": "articles/45588ed5f46ad7ec0100ad0a.json"
+    },
+    {
+      "id": "895ff0fb6b91b35ca52f6e21",
+      "title": "北线无战事",
+      "summary": "垂死挣扎、孤注一掷、苟延残喘、困兽犹斗、破釜沉舟，亦或背水一战。 我试图想了许多成语来形容本次的进京赶考，但终究略显偏颇。 所有事由结束时，我如同《少女终末旅行》中千户和尤莉，终于爬到了城市的顶端， 吃完了所剩的食物，喝完了全部的水，所能见到的却只是除了积雪外空空如也的世界。 千户和尤莉没心没肺地打起雪仗来。 自己则回想起，最后一次与朋友打雪仗或许是小学六年级的寒假。 呐，这之后怎么办？…",
+      "image": null,
+      "publishedAt": "2019-04-03T05:12:25Z",
+      "sourceId": "410b11347b8a16bf",
+      "sourceTitle": "云游君的小站",
+      "link": "https://www.yunyoujun.cn/posts/after-2nd-postgraduate-re-exam",
+      "detailPath": "articles/895ff0fb6b91b35ca52f6e21.json"
     },
     {
       "id": "7134dc9730ef23ce0d90f038",
@@ -604,61 +659,6 @@
       "sourceTitle": "文三娃",
       "link": "https://wentommy.wordpress.com/2019/03/16/%e4%b9%9f%e8%af%b4%e5%a4%ae%e8%a7%86%e8%ae%a4%e7%bd%aa/",
       "detailPath": "articles/e19f757cbfdede761f341902.json"
-    },
-    {
-      "id": "0d3cbe4d875b7f2c045f0814",
-      "title": "多语种与信息量",
-      "summary": "iOS 原生辞典本身和系统整合得很好，随手就能查，我使用频繁。但是辞库是固定的几个，这就引出了问题。以上截图是一个典型例子，我遇到 autonomy 这个词，但是不是很确定意思。光看中英字典，不管简繁，突出的是一个自治。但在",
-      "image": "https://i.loli.net/2019/03/10/5c8407ef1eddc.jpg",
-      "publishedAt": "2019-03-09T21:36:02Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2019/03/09/langandinfo/",
-      "detailPath": "articles/0d3cbe4d875b7f2c045f0814.json"
-    },
-    {
-      "id": "08434e3db2891b193340d9d8",
-      "title": "星巴克观察",
-      "summary": "曾经间隔年在星巴克「混」过大半年，基本上就过去坐一个下午，一来二去和店员都混熟了，到后来甚至团建活动都会叫上我。店长也愿意和我聊天，我们常常并排坐。这样一来我就耳濡目染了星巴克门店的运行模式。我注意到两个方面，一个是新人的培",
-      "image": null,
-      "publishedAt": "2019-03-09T21:32:33Z",
-      "sourceId": "2a4afb292dd99229",
-      "sourceTitle": "散步中",
-      "link": "https://yocson.com/2019/03/09/starbucksobservation/",
-      "detailPath": "articles/08434e3db2891b193340d9d8.json"
-    },
-    {
-      "id": "3e17c88d2393befbd6523643",
-      "title": "迎接新生命：我们都准备了些什么",
-      "summary": "随着预产期的临近，购买新生儿用品也逐渐成了一项有 deadline 的任务。我们其实有些手足无措，不知从何下手。一方面陷入了“这个也许有用，那个似乎也不能少”的焦虑；另一方面，这些东西我们完全没有接触过，一切都很陌生，也很难真正开始准备。 幸运的是，Miki 的公司给了我们一个新生儿大礼包，里面有尿布、童书、玩具小推车等。其中一些尿布还被用心地堆叠起来，放在一个大篮子里，有点华丽。这算是打了个底，也帮我们开了个头。再合计一下，剩下必须准备的好像就只有配方奶、衣服、婴儿床和安全座椅。刚好对应吃穿住行。 吃 # 对于新生儿，如果以母乳喂养为主，其实好像也不太需要额外准备食物。但我们还是准备了一些配方奶。所谓配方奶，英文其实更直观：infant formula，也就是按照配方调制、可以完全或部分替代母乳的婴儿食品。…",
-      "image": "https://fourhappylions.com/posts/welcome-newborn-early-gears/infant-formula_hu_47fc402be0d2bf15.jpg",
-      "publishedAt": "2019-03-09T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/welcome-newborn-early-gears/",
-      "detailPath": "articles/3e17c88d2393befbd6523643.json"
-    },
-    {
-      "id": "b78647c65374ddb5c5c25613",
-      "title": "让百度收录你的 GitHub Pages 博客",
-      "summary": "因为一些历史缘故，GitHub 拒绝了百度的爬虫检索。 而这也导致托管在 GitHub 之上的博客无法被百度检索到。 虽然标题是让百度收录你的 GitHub Pages 博客，但终究还是走了取巧的措施。",
-      "image": null,
-      "publishedAt": "2019-03-03T21:52:57Z",
-      "sourceId": "410b11347b8a16bf",
-      "sourceTitle": "云游君的小站",
-      "link": "https://www.yunyoujun.cn/posts/baidu-seo-about-github-pages",
-      "detailPath": "articles/b78647c65374ddb5c5c25613.json"
-    },
-    {
-      "id": "67d744a9dca58046d629ee43",
-      "title": "笔记：Secrets of the Baby Whisperer",
-      "summary": "Tracy Hogg 的程序育儿系列第一部 Secrets of the Baby Whisperer （中文版： 婴语的秘密 ）。从图书馆拿到这本书的时候，发现前半本已经被翻得有点烂，最开始的几页有一些水渍和其他黄色褐色的渍，很惨的样子。不知道有多少人深陷育儿大坑，翻这书救命呢。 图片来源： amazon.com 另外发现一个台湾妈妈也对这本书做了 笔记 。 Chapter 1: Loving the baby you gave birth to # 5 days to a couple of months after birth is the best time to know the baby (or what kind of personality the baby has). The angel:…",
-      "image": "https://fourhappylions.com/posts/my-pregnancy-story/hogg.png",
-      "publishedAt": "2019-03-01T00:00:00Z",
-      "sourceId": "dc53cf887984ae1c",
-      "sourceTitle": "四喜丸子",
-      "link": "https://fourhappylions.com/posts/baby-whisperer-notes/",
-      "detailPath": "articles/67d744a9dca58046d629ee43.json"
     }
   ]
 }

@@ -1,6 +1,83 @@
 {
   "items": [
     {
+      "id": "cfd7106c88b5a946f51309a1",
+      "title": "Being a Toolshed of Optimism",
+      "summary": "Reflecting on a reader's description of me as 'nice' and the responsibility of having an audience, I commit to becoming a 'toolshed of hope and stubborn optimism' in my writing. Drawing on solutions journalism, restorative narrative, and thinkers like Rebecca Solnit, Mariame Kaba, Joanna Macy, adrienne maree brown, and Christiana Figueres, I explore how hop…",
+      "image": null,
+      "publishedAt": "2026-08-27T02:00:00Z",
+      "sourceId": "d44765325e020e3a",
+      "sourceTitle": "Brennan’s Weblog",
+      "link": "https://brennan.day/being-a-toolshed-of-optimism/",
+      "detailPath": "articles/cfd7106c88b5a946f51309a1.json"
+    },
+    {
+      "id": "70c39ece0e16740fae52b688",
+      "title": "After Fixin’ the Bugs",
+      "summary": "Fixed ’em. Fixed ’em all. Well, almost all — down to 10 bugs on the NetNewsWire bug tracker. (See the Mac 7.1.3 release notes and iOS for the big list of just-fixed bugs.) This means I’ve gotten the app to the place I’ve wanted to get to for a long time, where the bug count is manageable and close to zero. So it’s 10 bugs at this writing — and 556 feature r…",
+      "image": null,
+      "publishedAt": "2026-08-26T19:07:54Z",
+      "sourceId": "c86eb5db7fe16adf",
+      "sourceTitle": "inessential.com",
+      "link": "https://inessential.com/2026/08/26/after-fixin-the-bugs.html",
+      "detailPath": "articles/70c39ece0e16740fae52b688.json"
+    },
+    {
+      "id": "cfb4526c93e41768649a5bd6",
+      "title": "Small Models Have Arrived",
+      "summary": "The fast/cheap/good-enough models have quietly gotten good. That unlocks consumer AI, and most of the \"token spewer\" work that actually runs a business.",
+      "image": null,
+      "publishedAt": "2026-08-26T12:00:00Z",
+      "sourceId": "b37993b33fc65e3e",
+      "sourceTitle": "Calvin French-Owen",
+      "link": "https://calv.info/small-models-have-arrived",
+      "detailPath": "articles/cfb4526c93e41768649a5bd6.json"
+    },
+    {
+      "id": "9a4ec50c3f77b08a1765f621",
+      "title": "Dragoncatcher: Slop-vestigation and the digital pantograph",
+      "summary": "Gobs and gobs of text. Read here.",
+      "image": null,
+      "publishedAt": "2026-08-26T10:00:00Z",
+      "sourceId": "38eb03ecde7f8b45",
+      "sourceTitle": "Robin Sloan",
+      "link": "https://www.robinsloan.com/lab/digital-pantograph/",
+      "detailPath": "articles/9a4ec50c3f77b08a1765f621.json"
+    },
+    {
+      "id": "30c8589bc19d19f31060a9df",
+      "title": "Bubbles.town: Four Months Later",
+      "summary": "After several months of using Bubbles.town, I share my long-term review of the IndieWeb aggregator. The good: discovering diverse blogs across niche topics. The issues: glacial pace of content changes, popularity contest dynamics, categorization problems, and sparse community participation. Overall, Bubbles is a valuable tool among many for web discovery, b…",
+      "image": null,
+      "publishedAt": "2026-08-26T02:00:00Z",
+      "sourceId": "d44765325e020e3a",
+      "sourceTitle": "Brennan’s Weblog",
+      "link": "https://brennan.day/bubbles-town-four-months-later/",
+      "detailPath": "articles/30c8589bc19d19f31060a9df.json"
+    },
+    {
+      "id": "4989b5b45442e0d2ca1adf26",
+      "title": "Compose & kotlinx.html",
+      "summary": "Let's render a simple page with Ktor server and kotlinx.html : get ( \"/users.html\" ) { call . respondHtml { myLayout ( title = \"Users\" ) { userList ( users = db . users . value , ) } } } A reusable myLayout provides scaffolding, userList encapsulates the specific page content, and db.users is a StateFlow<List<User>> from the persistence layer. I've been doi…",
+      "image": null,
+      "publishedAt": "2026-08-26T00:00:00Z",
+      "sourceId": "a33fc95b48c6e3ea",
+      "sourceTitle": "Jake Wharton",
+      "link": "https://jakewharton.com/compose-and-kotlinx-html/",
+      "detailPath": "articles/4989b5b45442e0d2ca1adf26.json"
+    },
+    {
+      "id": "4450c5841777c6af2a929295",
+      "title": "Innovation Is Software",
+      "summary": "In August my computer setup changed more than it had in years. And yet the lesson of the month was the opposite of new hardware: the existing gear has stretch, innovation is software. This post is about one brain, the machine in the homelab where my files and my agents live, the machines around it, and why infrastructure has become subordinate to concept.",
+      "image": "https://willem.com/global/images/26f3aabac790.webp",
+      "publishedAt": "2026-08-25T22:00:00Z",
+      "sourceId": "da4f8168d47b2b2a",
+      "sourceTitle": "Willem's Blog",
+      "link": "https://willem.com/en/2026-08-26_innovation-is-software/",
+      "detailPath": "articles/4450c5841777c6af2a929295.json"
+    },
+    {
       "id": "3a84a89649b900336ccbc0c6",
       "title": "Provocateur Agentique",
       "summary": "",
@@ -186,17 +263,6 @@
       "sourceTitle": "fabiensanglard.net",
       "link": "https://fabiensanglard.net/agent.md/index.html",
       "detailPath": "articles/89fec105cec1e4f4e0363800.json"
-    },
-    {
-      "id": "88711b4f4a29a43a32aea846",
-      "title": "In Defence of Vent Posting",
-      "summary": "Drawing on my decade of experience as a 7cups Listener and research on emotional sharing, I argue in defense of vent posting. Venting is a natural human need for connection and validation, not a character flaw. Community support and empathy are essential medicine, and we should meet people where they are rather than moralizing their coping mechanisms.",
-      "image": null,
-      "publishedAt": "2026-08-20T02:00:00Z",
-      "sourceId": "d44765325e020e3a",
-      "sourceTitle": "Brennan’s Weblog",
-      "link": "https://brennan.day/in-defence-of-vent-posting/",
-      "detailPath": "articles/88711b4f4a29a43a32aea846.json"
     },
     {
       "id": "24b4198d6d3cef25fd2c0589",
@@ -593,72 +659,6 @@
       "sourceTitle": "Sightless Scribbles",
       "link": "https://sightlessscribbles.com/reject-hit-unfortunate-events/",
       "detailPath": "articles/f9aba1c4b19d87af52bde1c3.json"
-    },
-    {
-      "id": "099e565f5e46fab52307702d",
-      "title": "Y2K Will Be Quite Okay",
-      "summary": "Hi, folks… I’ll have the last article in the series on Maxis Software for you next week. Today, I’m happy to say that the new ebook, covering the historical year 1999, is available, and on a far more timely basis than the last one at that. My thanks go to Richard Lindner, for developing the […]",
-      "image": "https://www.filfre.net/wp-content/uploads/2023/04/Patreon-300x133-1.png",
-      "publishedAt": "2026-07-31T16:06:39Z",
-      "sourceId": "1e10ddcfb08b6f30",
-      "sourceTitle": "The Digital Antiquarian",
-      "link": "https://www.filfre.net/2026/07/y2k-will-be-quite-okay/",
-      "detailPath": "articles/099e565f5e46fab52307702d.json"
-    },
-    {
-      "id": "5a3e56b2c4f0ea83b4d35582",
-      "title": "On the Attack Helicopter story by Isabel Fall",
-      "summary": "Read the story here Read the backlash background on this Wikipedia page here I’m sitting here remembering a short story published before the pandemic this year, in 2020. My god, that seems so long ago, but the story is still in the back of my mind, even if it feels like I’m the only one that read it sometimes. Let’s back up, though. Clarkesworld Magazine, a…",
-      "image": null,
-      "publishedAt": "2026-07-31T12:01:23Z",
-      "sourceId": "e75373d4343483e8",
-      "sourceTitle": "Sightless Scribbles",
-      "link": "https://sightlessscribbles.com/posts/the-attack-helicopter-story/",
-      "detailPath": "articles/5a3e56b2c4f0ea83b4d35582.json"
-    },
-    {
-      "id": "999c9b81b15e7f576f0c67bb",
-      "title": "How to Read a Book",
-      "summary": "Or, what reading since the 1990s did not teach me.",
-      "image": "https://brajeshwar.com/static/2026/how-to-read-a-book.webp",
-      "publishedAt": "2026-07-31T00:00:00Z",
-      "sourceId": "ed5d72a436919ac4",
-      "sourceTitle": "Brajeshwar",
-      "link": "https://brajeshwar.com/2026/how-to-read-a-book/",
-      "detailPath": "articles/999c9b81b15e7f576f0c67bb.json"
-    },
-    {
-      "id": "4ccaf5b0794c89fd31f0ad5a",
-      "title": "The CSS lh unit",
-      "summary": "",
-      "image": null,
-      "publishedAt": "2026-07-31T00:00:00Z",
-      "sourceId": "9eebde4788947dae",
-      "sourceTitle": "Ahmad Shadeed",
-      "link": "https://ishadeed.com/article/lh-unit/",
-      "detailPath": "articles/4ccaf5b0794c89fd31f0ad5a.json"
-    },
-    {
-      "id": "5d69c56d2ebab2f982ece692",
-      "title": "BELTRUNNER: game design postmortem",
-      "summary": "This blog post assumes you have played BELTRUNNER , the game whose design it discusses in detail, or are familiar enough with video game design and history that you don’t need to play it. Last week I shared a look at an arcade-faithful version of Asteroids to demonstrate the totally new way of making games that I’ve been working on. It’s called Jinks and it…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/jinksgg-beltrunner.png",
-      "publishedAt": "2026-07-30T22:34:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2026/07/30/beltrunner-game-design-postmortem/",
-      "detailPath": "articles/5d69c56d2ebab2f982ece692.json"
-    },
-    {
-      "id": "3e34c66301a811cb531dc398",
-      "title": "Hi, Jinks!",
-      "summary": "Jinks is a lightweight multi-platform game engine, an interactive development environment, and more besides. I’m building it around one wonderful idea: write the engine core once, then run it everywhere—and have it behave identically wherever it runs. As with everything I make, it started with a personal need. I make games, mostly the arcade sort, and I wan…",
-      "image": "https://cdn.gingerbeardman.com/images/posts/jinks-app-icon.png",
-      "publishedAt": "2026-07-30T22:00:00Z",
-      "sourceId": "625f69e92fbd1d94",
-      "sourceTitle": "⌘I",
-      "link": "https://blog.gingerbeardman.com/2026/07/30/hi-jinks/",
-      "detailPath": "articles/3e34c66301a811cb531dc398.json"
     }
   ]
 }

@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-11T22:03:25+00:00</updated><author><name>Simon Willison</name></author><entry><title>Gemini Decisions API</title><link href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="alternate"/><published>2026-11-11T22:03:25+00:00</published><updated>2026-11-11T22:03:25+00:00</updated><id>https://simonwillison.net/2026/Nov/11/gemini-decisions-api/</id><summary type="html">
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom"><title>Simon Willison's Weblog</title><link href="http://simonwillison.net/" rel="alternate"/><link href="http://simonwillison.net/atom/everything/" rel="self"/><id>http://simonwillison.net/</id><updated>2026-11-12T22:55:19+00:00</updated><author><name>Simon Willison</name></author><entry><title>llm-gemini 0.37</title><link href="https://simonwillison.net/2026/Nov/12/llm-gemini/" rel="alternate"/><published>2026-11-12T22:55:19+00:00</published><updated>2026-11-12T22:55:19+00:00</updated><id>https://simonwillison.net/2026/Nov/12/llm-gemini/</id><summary type="html">
+    
+        &lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href="https://github.com/simonw/llm-gemini/releases/tag/0.37"&gt;llm-gemini 0.37&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Google launched &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"&gt;Gemini 4 Hydrogen&lt;/a&gt; today - the lowest cost member of the Gemini 4 family.&lt;/p&gt;
+&lt;p&gt;It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing &lt;em&gt;really&lt;/em&gt; confusing. Here's the pricing scheme:&lt;/p&gt;
+&lt;center&gt;&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Model&lt;/th&gt;
+      &lt;th&gt;Dates&lt;/th&gt;
+      &lt;th&gt;Input ($/M)&lt;/th&gt;
+      &lt;th&gt;Cached input&lt;/th&gt;
+      &lt;th&gt;Output&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;Gemini 4 Carbon&lt;/td&gt;
+      &lt;td&gt;Through Nov 30, 2026&lt;/td&gt;
+      &lt;td&gt;$2.00&lt;/td&gt;
+      &lt;td&gt;$0.10&lt;/td&gt;
+      &lt;td&gt;$10.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;From Dec 1, 2026&lt;/td&gt;
+      &lt;td&gt;$4.00&lt;/td&gt;
+      &lt;td&gt;$0.20&lt;/td&gt;
+      &lt;td&gt;$20.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;Gemini 4 Argon&lt;/td&gt;
+      &lt;td&gt;Through Nov 30, 2026&lt;/td&gt;
+      &lt;td&gt;$2.00&lt;/td&gt;
+      &lt;td&gt;$0.10&lt;/td&gt;
+      &lt;td&gt;$10.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;From Dec 1, 2026&lt;/td&gt;
+      &lt;td&gt;$4.00&lt;/td&gt;
+      &lt;td&gt;$0.20&lt;/td&gt;
+      &lt;td&gt;$20.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Gemini 4 Hydrogen&lt;/td&gt;
+      &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+      &lt;td&gt;$1.50&lt;/td&gt;
+      &lt;td&gt;$0.075&lt;/td&gt;
+      &lt;td&gt;$7.50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/center&gt;
+
+&lt;p&gt;Carbon and Argon are &lt;em&gt;the same price&lt;/em&gt;, and both are scheduled to double in price on December 1st. If they're the same price, why have two different models? &lt;a href="https://aistudio.google.com/docs/pricing"&gt;Google says&lt;/a&gt; that Argon "delivers Gemini 4 intelligence with faster responses and lower token spend per turn compared to Gemini 4 Carbon" - so it may be priced the same, but it will use less tokens per task.&lt;/p&gt;
+&lt;p&gt;Hydrogen, supposedly the cheap model, is currently only a 25% discount on its more capable peers. The Hydrogen price will make more sense after December 1st, when it will represent a 75% discount. It's still considerably more expensive than Claude Haiku 5.5 and GPT-6 Luna - they're both $0.10/$0.50, so Hydrogen is 15x that.&lt;/p&gt;
+&lt;p&gt;I had Hydrogen &lt;a href="https://tools.simonwillison.net/markdown-svg-renderer?url=https%3A%2F%2Fgist.github.com%2Fsimonw%2Fce357e95149cd16f65ec7e7106ed4fed"&gt;generate some pelicans&lt;/a&gt;. Here's a &lt;a href="https://static.simonwillison.net/static/2026/gemini-4-pelicans.html"&gt;full comparison grid&lt;/a&gt; showing the pelicans for all three members of the Gemini 4 family at their three supported effort levels:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Comparison grid of nine SVG-style illustrations of a pelican riding a bicycle, three models across by three thinking levels down. Column headers: Thinking, gemini-4-carbon, gemini-4-argon, gemini-4-hydrogen. Row HIGH: gemini-4-carbon draws a detailed pelican in a sailor cap riding a red cruiser bicycle with fenders and a wicker basket holding a fish, along a beach road with sea, sun, clouds and birds, captioned 40 input tokens, 20,305 output = 20.31 cents · 4m 11s; gemini-4-argon draws a pelican in a red cap and a streaming teal striped scarf on a red bicycle with a blue fish peeking out of the basket, on a seaside promenade with a pale sun, captioned 40 input tokens, 17,158 output = 17.17 cents · 2m 29s; gemini-4-hydrogen draws a much simpler plain white pelican on a basic red bicycle against a pale blue sky with two clouds, speed lines and flat green ground, captioned 40 input tokens, 5,311 output = 3.99 cents · 19s. Row MEDIUM: gemini-4-carbon draws a pelican in a sailor cap and red striped scarf on a red bicycle with cream fenders and a basket, on a sandy beach with a rope fence and sea, captioned 40 input tokens, 11,020 output = 11.03 cents · 1m 53s; gemini-4-argon draws a pelican with an enormous orange beak, sailor cap and flowing red scarf on a teal bicycle with a basket, on a boardwalk under a purple and pink sunset sky with a large pink sun, captioned 40 input tokens, 11,090 output = 11.10 cents · 1m 32s; gemini-4-hydrogen draws a simple cream pelican on a plain red bicycle with sparse spokes, two clouds and flat green ground, captioned 40 input tokens, 3,964 output = 2.98 cents · 17s. Row LOW: gemini-4-carbon draws a pelican in a sailor cap and red and white striped scarf on a red bicycle with fenders and a basket, passing a white seaside railing on a grey road, captioned 40 input tokens, 9,153 output = 9.16 cents · 1m 34s; gemini-4-argon draws a large, chubby pelican with a sailor cap and huge orange beak on a red bicycle with a basket, gripping the handlebars with a dark blue wing, in front of an orange setting sun and a grey road, captioned 40 input tokens, 10,177 output = 10.18 cents · 1m 21s; gemini-4-hydrogen draws the simplest image, a plain white pelican on a thin red bicycle over a single green line with no scenery, captioned 40 input tokens, 2,996 output = 2.25 cents · 10s. Overall, carbon and argon produce rich, accessorised seaside scenes at every thinking level, while hydrogen produces far plainer pelicans at a fraction of the cost and time, and detail decreases for all three models as thinking drops from high to low." src="https://static.simonwillison.net/static/2026/gemini-4-pelicans.webp" /&gt;&lt;/p&gt;
+&lt;p&gt;Considering how close they are in price, the difference in pelican quality for Hydrogen is quite stark.&lt;/p&gt;
+&lt;p&gt;Here's &lt;a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"&gt;how Google describe&lt;/a&gt; Hydrogen's intended position in their mix of models:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In real-world software development, while teams rely on frontier models like Carbon and Argon for deep architectural judgment when designing systems or untangling subtle bugs, they still need a fast, disciplined execution model for writing code, running tests, and verifying changes. Hydrogen is built to stand on its own as a model for everyday work — or to pair with Carbon and Argon as the high-efficiency execution engine in multi-model workflows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most notably, Hydrogen is the new free tier model, and is the model that will power AI features in Google Search.&lt;/p&gt;
+    
+    
+        &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/gemini"&gt;gemini&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm"&gt;llm&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/google"&gt;google&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/pelican-riding-a-bicycle"&gt;pelican-riding-a-bicycle&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llm-pricing"&gt;llm-pricing&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;&lt;/p&gt;
+    
+
+</summary><category term="gemini"/><category term="llm"/><category term="google"/><category term="pelican-riding-a-bicycle"/><category term="llm-pricing"/><category term="ai"/><category term="llms"/></entry><entry><title>Gemini Decisions API</title><link href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" rel="alternate"/><published>2026-11-11T22:03:25+00:00</published><updated>2026-11-11T22:03:25+00:00</updated><id>https://simonwillison.net/2026/Nov/11/gemini-decisions-api/</id><summary type="html">
     
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"&gt;Gemini Decisions API&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 Google join &lt;a href="https://simonwillison.net/2026/Sep/21/jev/"&gt;Jev&lt;/a&gt; and &lt;a href="https://simonwillison.net/2026/Oct/6/llm-openai-decisions/"&gt;OpenAI&lt;/a&gt; in the decision model category with "Gemini Decision 1". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term "Noul" for a yes/no question.&lt;/p&gt;
@@ -742,13 +809,4 @@ than PyO3's maximum supported version (3.14)
 
 
 
-</summary><category term="uv"/><category term="til"/><category term="python"/></entry><entry><title>Quoting Kyle Kingsbury</title><link href="https://simonwillison.net/2026/Nov/1/kyle-kingsbury/" rel="alternate"/><published>2026-11-01T16:49:04+00:00</published><updated>2026-11-01T16:49:04+00:00</updated><id>https://simonwillison.net/2026/Nov/1/kyle-kingsbury/</id><summary type="html">
-    &lt;blockquote cite="https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"&gt;&lt;p&gt;More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]&lt;/p&gt;
-&lt;p&gt;In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p class="cite"&gt;&amp;mdash; &lt;a href="https://jepsen.io/analyses/particledb-1.1.4#llm-tradeoffs"&gt;Kyle Kingsbury&lt;/a&gt;, Jepsen results for ParticleDB 1.1.4&lt;/p&gt;
-
-    &lt;p&gt;Tags: &lt;a href="https://simonwillison.net/tags/kyle-kingsbury"&gt;kyle-kingsbury&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/llms"&gt;llms&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai"&gt;ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/generative-ai"&gt;generative-ai&lt;/a&gt;, &lt;a href="https://simonwillison.net/tags/ai-misuse"&gt;ai-misuse&lt;/a&gt;&lt;/p&gt;
-
-
-
-</summary><category term="kyle-kingsbury"/><category term="llms"/><category term="ai"/><category term="generative-ai"/><category term="ai-misuse"/></entry></feed>
+</summary><category term="uv"/><category term="til"/><category term="python"/></entry></feed>

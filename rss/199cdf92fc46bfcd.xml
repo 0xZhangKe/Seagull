@@ -8,7 +8,7 @@
     <language>zh-tw</language>
 <managingEditor>eddielv@proton.me (Eddie Lv 呂英全)</managingEditor>
 <webMaster>eddielv@proton.me (Eddie Lv 呂英全)</webMaster>    
-    <lastBuildDate>Fri, 13 Nov 2026 02:30:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:09:19 +0800</lastBuildDate>
     
         <atom:link href="https://eddielv.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -145,6 +145,43 @@
 
 &lt;p&gt;打完回顧，發現這篇有點沒重點，真的是流水帳，如果你看到這很謝謝你！&lt;/p&gt;
 &lt;p&gt;只是有點感嘆「姐姐生了三個小孩，最大的已經小一」、「好像有什麼事但也沒辦法講，感覺他們無法懂我現在遇到的事」。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CDN 的 CSS 延遲更新</title>
+      <link>https://eddielv.com/musings/cdn-delay-update/</link>
+      <pubDate>Fri, 13 Nov 2026 12:09:19 +0800</pubDate>
+      <guid>https://eddielv.com/musings/cdn-delay-update/</guid>
+      <description>&lt;h2 id=&#34;css-與-cdn&#34;&gt;
+  CSS 與 CDN
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#css-%e8%88%87-cdn&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;去年（2025）的九月二十五號，我將網站串聯了 Cloudflare，來使用 CDN，以加快客戶端的速度，同時也能減緩伺服器負擔。&lt;/p&gt;
+&lt;p&gt;當時其實有遇到一個問題，那就是當我更新 Hugo 主題的 CSS 之後，本地部署都是正常，但是上傳到伺服器後，看不到變化。後來才知道使用 Cloudflare 的 CDN 後，它們爲了節省流量會有一套機制，總之該機制會判定不需要每次都抓最新的 CSS，因此要等幾分鐘，甚至是幾小時後才看得到變化。不只 hugo，只要是用傳統 CSS 都會遇到這個問題。&lt;/p&gt;
+&lt;p&gt;當時理解到 CDN 與 CSS 更新頻率之後，才知道 Hugo 有支援 SCSS 的技術，能夠在每次輸入指令 &lt;code&gt;hugo&lt;/code&gt; 時，把新產生的整個網站中的 CSS 檔名中都加上一組隨機碼，這樣 Cloudflare 就會誤以爲整個網站的 CSS 都重做了，就會在部署後每次都即時更新 CSS。&lt;/p&gt;
+&lt;p&gt;那時候工程可浩大了，原始主題的 CSS 都是寫在 &lt;code&gt;/static/&lt;/code&gt; 靜態資料底下，如果想讓 hugo 在 CSS 中填上隨機碼，就得先把 CSS 搬運到 &lt;code&gt;/assets/&lt;/code&gt; 之下，再搭配 go 語言嵌入到 &lt;code&gt;/layouts/&lt;/code&gt; 的各種 &lt;code&gt;.html&lt;/code&gt; 中。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這或許能解釋 &lt;a href=&#34;https://ikuka.blog/blog/move-to-docusaurus/&#34;&gt;ikuka&lt;/a&gt; 遇到的 Hugo 問題，看了 Docusaurus 的情況，連圖片都會用 &lt;a href=&#34;https://ikuka.blog/assets/images/26-11-02-576x1024-3ac56eee4dd63507b96fd317d1627534.webp&#34;&gt;assets&lt;/a&gt; 處理，更甭提 CSS（請看圖片連結，在 &lt;code&gt;/assets/&lt;/code&gt; 底下，且圖片檔名有一串隨機碼）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而 hugo 主題中，有非常多的主題都還是用 &lt;code&gt;/static/&lt;/code&gt; 去寫 CSS 的，因此搭配上 CDN 時就會踩這個坑。&lt;/p&gt;
+&lt;h2 id=&#34;手刻網頁&#34;&gt;
+  手刻網頁
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e6%89%8b%e5%88%bb%e7%b6%b2%e9%a0%81&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;最初看到 ikuka 踩了 hugo 的坑，我還想著「怎麼會醬子啊？好奇怪哦！」&lt;/p&gt;
+&lt;p&gt;直到最近嘗試&lt;a href=&#34;https://eddielv.com/labs/&#34;&gt;手刻網頁&lt;/a&gt;，完全&lt;a href=&#34;https://trashposts.com/blog/redesign-simple-blog/&#34;&gt;不使用各種網站生成技術&lt;/a&gt;，自己建立起 html、css、js，想把做好的獨立網頁上架時，就得放進 &lt;code&gt;/static/&lt;/code&gt; 中。&lt;/p&gt;
+&lt;p&gt;爲了修一個 CSS 的路徑超簡單 Bug，我花了三小時，問 AI 老師，也說沒問題，都差點以爲是伺服器設定有問題了。&lt;/p&gt;
+&lt;p&gt;原因不是我不會，是我改完、部署完，網頁沒變我不知道。我還有清快取、換瀏覽器、甚至換裝置都還是沒變，因此我一直以爲是我的問題，睡一覺起來發現畫面全對，才發現根本是 CDN 延遲的問題。&lt;/p&gt;
+&lt;p&gt;後來 AI 老師說，解決問題的方式其實很簡單，只要打開 Cludflare 後臺，找到「快取（Caching）」-「設定（Configurtion）」-「清除全部（Purge Everything）」，問題就解決了。&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;
+  結語
+  &lt;a class=&#34;anchor-copy-link&#34; href=&#34;#%e7%b5%90%e8%aa%9e&#34; style=&#34;text-decoration: none; visibility: hidden; cursor: pointer;&#34;&gt; #&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;當時就是沒把這件事情寫下來，才會忘記又踩一次坑，&lt;a href=&#34;https://blog.wei-lee.me/&#34;&gt;沒寫下來的事情真的會忘記&lt;/a&gt;。&lt;/p&gt;
 </description>
     </item>
     

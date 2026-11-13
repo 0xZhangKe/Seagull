@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "842f714ba34f3913fc3b6676",
+      "title": "CDN 的 CSS 延遲更新",
+      "summary": "CSS 與 CDN # 去年（2025）的九月二十五號，我將網站串聯了 Cloudflare，來使用 CDN，以加快客戶端的速度，同時也能減緩伺服器負擔。 當時其實有遇到一個問題，那就是當我更新 Hugo 主題的 CSS 之後，本地部署都是正常，但是上傳到伺服器後，看不到變化。後來才知道使用 Cloudflare 的 CDN 後，它們爲了節省流量會有一套機制，總之該機制會判定不需要每次都抓最新的 CSS，因此要等幾分鐘，甚至是幾小時後才看得到變化。不只 hugo，只要是用傳統 CSS 都會遇到這個問題。 當時理解到 CDN 與 CSS 更新頻率之後，才知道 Hugo 有支援 SCSS 的技術，能夠在每次輸入指令 hugo 時，把新產生的整個網站中的 CSS 檔名中都加上一組隨機碼，這樣 Cloudflare…",
+      "image": null,
+      "publishedAt": "2026-11-13T04:09:19Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/cdn-delay-update/",
+      "detailPath": "articles/842f714ba34f3913fc3b6676.json"
+    },
+    {
       "id": "a49b82236638ed50f94ee7a8",
       "title": "幫電腦接聲音",
       "summary": "做音響工作第一個要學會的事情，就是幫客人把電腦接到混音器，並成功發出聲音。 現在，你可以體驗看看音控老師們的工作了！ 幫電腦接聲音 快來 幫忙接上電腦的聲音 吧！ 弄不出聲音的話，這是提示： # 電腦要按下播放、把聲音打開到七成以上 電腦到 DI、DI 到混音器的線都要接上 混音器的 Volume 要記得推起 如果分不清楚 Gain 與 Volume 的話： # Gain 是把訊號強度增強多少，一開始應該要在最小／左（+ 0dB） Volume 是把訊號減少多少，一開始應該要最大／右（實際上是在 0dB 的刻度） 如果電腦輸出的音量太小，就必須要增加 Gain 來補足（實際上這樣容易有更多的底噪） 完整概念請參考〈 一篇搞懂 Gain 怎麼調 〉、〈 一篇搞懂 Gain 與 Volume 〉。 Link #…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/taiwanese-taiwanese/",
       "detailPath": "articles/1dd1e9bbb2c2184a3ca0bc16.json"
-    },
-    {
-      "id": "178f391d09b216ee820a842c",
-      "title": "出生即詛咒",
-      "summary": "在地球上，有一種詛咒出生就降臨在所有生物上。 即使早就沒聯絡，但家族裡的誰怎樣了，資訊還是會進到我這來，但我明明早就不想關注了。 血緣這種東西，不由我決定，也不能完全斷絕，他們永遠就在那。就算你選擇無視他們，實際上還是會跟著你。 「有家族病史嗎？」以前在眼科我都會這樣問病人，因為糖尿病等等疾病與基因有關係，而這些會延伸為眼睛疾病。 一群人同時擁有類似 DNA、擁有同一種疾病、擁有類似習性與行爲，且無法完全斷絕群體關係，這不就是詛咒嗎？",
-      "image": null,
-      "publishedAt": "2026-10-05T02:01:43Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/born-with-curse/",
-      "detailPath": "articles/178f391d09b216ee820a842c.json"
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "id": "1aee093cd864dac6339492c7",
+      "title": "漂流瓶",
+      "summary": "写一张纸条，放进瓶子里，让它漂过来。",
+      "image": null,
+      "publishedAt": "2026-10-27T16:05:31Z",
+      "sourceId": "ab8f1a7d1b3e35d8",
+      "sourceTitle": "HerBlue 她的蓝",
+      "link": "https://her.blue/guestbook/",
+      "detailPath": "articles/1aee093cd864dac6339492c7.json"
+    },
+    {
+      "id": "74a5ecca350cad5c59edd98c",
+      "title": "2026 年度回顧",
+      "summary": "過與不過生日 # 家裡沒有在過生日，小時候跟家裡講，得到的答案是母難日有什麼好慶祝的，然後煮飯的時候給我多加了一顆蛋，其實沒有生日也大概會有那顆蛋。 是某任女朋友跟我同年同月同日生日，她是生日一定要排放假、上餐廳的人，我才一起過了好幾年的生日，也是在分手之後就沒有特別爲自己慶祝了。 硬要說的話，會買個東西送自己，例如：Pocket3 攝影機之類的，但其實那是平時本來就會用到的，真正純粹的禮物應該是不需要但想要的東西，像是多買把吉他或模型公仔之類的。 生日的心境 # 近年來每到生日，都變成了檢視自己有沒有好好活著的時候，如果沒有會覺得自己白過一年了。 今年也是近年來覺得自己過得還不錯的一年，以前的那份焦慮變成幾乎沒有，也比以往平靜了許多。 2026 工作成就 # 接到高中 吉他社教學 開始 音樂教室 吉他教學…",
+      "image": null,
+      "publishedAt": "2026-10-27T11:31:46Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/2026-birthday/",
+      "detailPath": "articles/74a5ecca350cad5c59edd98c.json"
+    },
+    {
+      "id": "5fd80eb14148e226c26d78c0",
+      "title": "修修补补",
+      "summary": "一直信奉的是“篱笆没坏就不要去管。”，所以系统、PHP、宝塔和Wordpress版本都很老。 尤其是Wordpress，我一直觉得2016年8月的Wordpress4.6引入的WP_Post_Type是最后一个有用的功能，后面的都属没卵用的“彩电冰箱大沙发”，找不到新功能点硬往上凑。 但是上周爆发的PHP严重漏洞直接把这条老篱笆摧毁了。把所有服务停掉思考了两天接下来该怎么走。 其实只有3条路： A）把4.x搞到支持PHP8。 B）升级的7.x，干掉没用的功能。 C）放弃Wordpress。 本来一直走的A路线，试图让WP4.6在PHP8下运行，已经弄了一年多了，跑起来也大差不差，起码没白屏。 直到这次准备上线前偶然发现首页变成时间归档，顺藤摸瓜之后看到这段逻辑： 《 修修补补 》采用 署名-非商业性使用-禁止…",
+      "image": null,
+      "publishedAt": "2026-10-27T08:09:34Z",
+      "sourceId": "474e724b69cd3e76",
+      "sourceTitle": "破襪子",
+      "link": "https://pewae.com/2026/10/tinkering.html",
+      "detailPath": "articles/5fd80eb14148e226c26d78c0.json"
+    },
+    {
+      "id": "76c2806853f2ba6ad34957f3",
+      "title": "為什麼我把 Mermaid 換成 Obsidian 開源的 pele：快 20 倍，渲染器剩三成",
+      "summary": "這篇記錄作者把部落格的 Mermaid 渲染器從官方套件、beautiful-mermaid 一路換到 Obsidian 團隊開源的 pele 的過程。作者拿站上 136 張圖實測,pele 全部渲染成功、比 beautiful-mermaid 快約 9 倍、SVG 小四成,畫出來的版面也乾淨很多。文中附上接進 TanStack Start 的做法:伺服器端出 SVG、渲染器只能動態 import、換主題只換 CSS 變數、下載圖片時把顏色寫回 SVG,以及把作者自訂的節點顏色歸成四種角色。最後是作者協作的開源專案 tessera 在瀏覽器端換成 pele 的效果:要下載的渲染器剩三成,每次重畫快了約 20 倍。",
+      "image": null,
+      "publishedAt": "2026-10-27T07:18:56Z",
+      "sourceId": "bd51496b8ec0ca1d",
+      "sourceTitle": "Koimsurai 手記",
+      "link": "https://koimsurai.com/blog/mermaid-to-pele-obsidian-renderer",
+      "detailPath": "articles/76c2806853f2ba6ad34957f3.json"
+    },
+    {
       "id": "a3e63cc37300732b1c94e7da",
       "title": "聊天紀錄-中國人F",
       "summary": "2024剛好是柯文哲京華城案爆發的時候，橘子逃往海外，至今下落未明。那時有人用多啦Ａ夢的配樂剪輯柯文哲被捕的影 […] The post 聊天紀錄-中國人F first appeared on susushare.com .",
@@ -615,50 +659,6 @@
       "sourceTitle": "新世界的大门",
       "link": "https://blog.xinshijiededa.men/daily/105/",
       "detailPath": "articles/123846dcbe895c5ddc778d48.json"
-    },
-    {
-      "id": "3be9b50c55471d238445a42e",
-      "title": "2026-08-14 / 嘎嘎滴辣虾",
-      "summary": "by 新世界的大门",
-      "image": "https://remnote-user-data.s3.amazonaws.com/LKwHNZ0xsuJ0B8GFhHRFp_L_MBEh9EAquXZDMv5McrQemXNl51uvxo_enxDv_-srWUtt1D-AjlHqH5x5aIRd-PvYgj8AKSsRPkNOnmbEvNgE7wmFeihqLUJnBuDeXmjM.jpg",
-      "publishedAt": "2026-10-23T18:47:41Z",
-      "sourceId": "4f3f8eb9d72c3840",
-      "sourceTitle": "新世界的大门",
-      "link": "https://blog.xinshijiededa.men/daily/104/",
-      "detailPath": "articles/3be9b50c55471d238445a42e.json"
-    },
-    {
-      "id": "7e12bd3a496e741b9f98f41f",
-      "title": "創作進行式 #50：慢慢脫去完美主義的外殼",
-      "summary": "電子報50週週 / 脫去完美主義外殼 / 書的日文版和英文版進度",
-      "image": null,
-      "publishedAt": "2026-10-23T15:01:28Z",
-      "sourceId": "5a534c077bd79dd1",
-      "sourceTitle": "Alex Hsu 徐小翔",
-      "link": "https://alexhsu.com/newsletter-2026-10-23",
-      "detailPath": "articles/7e12bd3a496e741b9f98f41f.json"
-    },
-    {
-      "id": "12ecf3c9a4193f3b20be2fe6",
-      "title": "走大朝台我在想啥？二",
-      "summary": "null 昨天更新了前一篇没多久就有四五条博友的评论，这么久没更新这些博友们都在默默关注着我这个小小的孤岛让我有些感动，在这里诚恳的感谢大家，让我感受到了互联网、博客圈的温度。 所以趁着这股劲有还在索性今天把第二篇也写了，接回上文。 刚下车被山上的冷风一吹我差点没绷住哕了出来，为了保住面子，在路边排水槽边上站定了好几秒，借着拿背包整理装备的由头，狠狠做了深呼吸回复状态，好在清新的空气很快让我缓了过来。 大朝台已经能感受到明显的阵风，亚高原温度低于平原，吸进鼻腔的空气带着股冷冽的味道，我上身虽然套着冲锋衣，里面是一件短袖速干，下装则只穿了一条冲锋裤，都是防风不防冷，不一会就开始感觉冲锋衣面料传来的冷意，脸上也被强风吹的生疼。 跟着队友走过路边的宝坎，豁然看见左边入口边上立着一块两米多高的石敢当，上面刻着「五台山…",
-      "image": "https://cdn.1900.live/assets/2026/10/23mmexport1791035156466_compressed.jpeg",
-      "publishedAt": "2026-10-23T12:40:31Z",
-      "sourceId": "d206bb7c484c4a45",
-      "sourceTitle": "只是玩玩",
-      "link": "https://1900.live/zou-da-zhao-tai-wo-zai-xiang-sha-er/",
-      "detailPath": "articles/12ecf3c9a4193f3b20be2fe6.json"
-    },
-    {
-      "id": "7ac1335997230ec8f0444abe",
-      "title": "情緒穩定",
-      "summary": "前言 # 情緒穩定是很多人選擇合作夥伴、朋友、戀人時，會優先挑選的特質，包含我自己也是。 情緒不穩可能的原因 # 「明明我遇到什麼事情都可以沒反應、不在意，算是情緒穩定的人；而跟這個人相處之後，卻天天情緒不穩定。」這樣的情緒不穩定，好像也不能完全算是自己的問題。 分離情緒是可以訓練的，我這三年漸漸發展出一個能力，當身邊的人氣到跳腳，我依然心如止水，不然我會被影響得非常不開心。 別人現在遇事不開心，散發出的氣息讓所有人都感到壓迫，但只要想著「我不是他，那是他的情緒」，這樣就能夠很好地保護自己的情緒，讓自己的情緒穩定下來。 有空生氣的時候，不如想著怎麼把事情處理好，或者一開始就認定別人的情緒與自己無關，不然那樣工作、生活著也太 辛苦 。 情緒不穩的種類 # 情緒不穩其實也不是什麼壞事，得看是什麼情緒。 有的人遇到…",
-      "image": null,
-      "publishedAt": "2026-10-23T12:10:40Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/emotionlly-stable/",
-      "detailPath": "articles/7ac1335997230ec8f0444abe.json"
     }
   ]
 }

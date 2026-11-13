@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "d072c27dfb13daa5dde33aa4",
+      "title": "android动画-View Animation",
+      "summary": "视图动画（View Animation）,又称补间动画（Tween Animation）,即给出两个关键帧，通过一些算法将给定属性值在给定的时间内在两个关键帧间渐变。本文首先讲解各种基本动画的使用，其实介绍View动画的工作过程。 概述 视图动画只能作用于View对象，是对View的变换，默认支持的类型有： 透明度变化(AlphaAnimation) 缩放(ScaleAnimation) 位移(TranslateAnimation) 旋转(RotateAnimation) 可以使用AnimationSet让多个动画集合在一起运行，使用插值器(Interpolator)设置动画的速度。 上面说到的几种动画，以及AnimationSet都是Animation的之类，因此Animation中有的属性，以及xml的配…",
+      "image": null,
+      "publishedAt": "2015-02-01T03:10:50Z",
+      "sourceId": "368f8a851f5b565d",
+      "sourceTitle": "isming.me",
+      "link": "https://isming.me/2015-02-01-android-view-animation/?utm_source=rss",
+      "detailPath": "articles/d072c27dfb13daa5dde33aa4.json"
+    },
+    {
+      "id": "36b8028d4d6461e327f67a36",
+      "title": "【2014】我这样存在",
+      "summary": "2014一晃过去了，快到我都来不及写年终总结。 元旦后进入了长时间的复习，这两天到家又忙着搬家，实在没什么空。 我先是写了很多内容，然后觉得大多数都没什么营养，被我删删改改，最后留下几个关键字和一些补充。 旅游： 关键字：扬州、武汉，杭州、桂林、重庆、九华山、千岛湖、宁波、山西。 其中有早就想去的，有被带上的，也有因为机票便宜说走就走的，拢起来一看这一年还是去了不少地方。 1.扬州就是扬大，扬大就是扬州。扬大七个校区分散在扬州的各处，可惜我只走了其中六处。 2.武大里着了雪的梅花丝毫不逊于三月的樱花。 3.坐武汉公交车的刺激和南京齐名，有幸坐在一辆双层巴士的第一排，那感觉就像是过山车，特别是驶过武汉长江大桥时。 4.雨中的灵隐山，泉声处处，氤氲着一股初春的冷意。 5.晴西湖不如雨西湖，未下雨之前的阴西湖是最不…",
+      "image": null,
+      "publishedAt": "2015-01-31T01:12:19Z",
+      "sourceId": "2a4afb292dd99229",
+      "sourceTitle": "散步中",
+      "link": "https://yocson.com/2015/01/30/year-2014/",
+      "detailPath": "articles/36b8028d4d6461e327f67a36.json"
+    },
+    {
       "id": "7786ff6380e4bf5d0d6b1a00",
       "title": "Android 性能优化之 Systrace 工具介绍(一)",
       "summary": "技术复核（2026-10-13） ：本文原写于 2015 年。Systrace 的事件时间线仍有参考价值，Eclipse / Device Monitor 入口已过期；旧脚本参数以下文核对的 AOSP android-5.0.0_r1 为准。新增命令以 Android 11 / API 30 及以上的 Perfetto 为例，旧系统差异另列。后续文章见 Android Perfetto 系列目录 。 旧流程 现在的对应方式 Eclipse / Device Monitor 的 Systrace 按钮 Android 9 / API 28 起可用设备端 System Tracing；也可通过 ADB 采集 systrace.py 调用 atrace 并生成 HTML Perfetto 采集命令生成二进制 tra…",
@@ -637,28 +659,6 @@
       "sourceTitle": "大猫的部落格",
       "link": "https://damao.ca/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E6%A2%A6%E5%A2%83/",
       "detailPath": "articles/91482bd245155aa8df6ad232.json"
-    },
-    {
-      "id": "d61fdf989f11afa6f666e9c1",
-      "title": "Android消息循环分析",
-      "summary": "我们的常用的系统中，程序的工作通常是有事件驱动和消息驱动两种方式，在Android系统中，Java应用程序是靠消息驱动来工作的。 消息驱动的原理就是： 1. 有一个消息队列，可以往这个队列中投递消息; 2. 有一个消息循环，不断从消息队列中取出消息，然后进行处理。 在Android中通过Looper来封装消息循环，同时在其中封装了一个消息队列MessageQueue。 另外Android给我们提供了一个封装类，来执行消息的投递，消息的处理，即Handler。 在我们的线程中实现消息循环时，需要创建Looper，如： class LooperThread extends Thread { public Handler mHandler; public void run() { Looper.prepare();…",
-      "image": null,
-      "publishedAt": "2014-04-02T11:14:57Z",
-      "sourceId": "368f8a851f5b565d",
-      "sourceTitle": "isming.me",
-      "link": "https://isming.me/2014-04-02-android-message-loop-analyze/?utm_source=rss",
-      "detailPath": "articles/d61fdf989f11afa6f666e9c1.json"
-    },
-    {
-      "id": "e1f74cae69936a729b95ef08",
-      "title": "Android Service：开发自己的通知中心(2):辅助性服务实战",
-      "summary": "2026-10-13 更新：本文记录的是 Android 4.3 之前通过无障碍事件观察通知的旧方案，这条通用通知中心实现路线已过时。Android 4.3（API 18）起提供专门的 NotificationListenerService ，第 4 节补充 Android 7.0（API 24）及以上的最小监听示例。旧代码仅用于理解历史实现，不保证取得完整通知列表。 1.辅助性服务实战介绍 上一篇文章 介绍了什么是 Accessibility 以及简单的使用，这一篇文章就来讲讲如何使用Accessibility服务来创建一个简单的Android通知中心。Android中通知中心是一个系统层面的服务，负责显示应用和系统发来的通知（Notification，比如USB插入、选择输入法、未接来电、截图、天气信息、…",
-      "image": null,
-      "publishedAt": "2014-03-31T16:05:47Z",
-      "sourceId": "1aa1837ca33d8d55",
-      "sourceTitle": "Android Performance",
-      "link": "https://androidperformance.com/2014/04/01/android-service-build-your-own-notification-servers-app/",
-      "detailPath": "articles/e1f74cae69936a729b95ef08.json"
     }
   ]
 }

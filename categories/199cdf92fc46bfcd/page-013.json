@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "ffda40a98a192150f2cde3fa",
+      "title": "Gemini 2.5 Pro 生成 App 第二彈！",
+      "summary": "昨天（4/8）才剛製作了 動態亂數產生器 ，沒想到一玩下去愛不釋手，馬上又開發了第二個 APP！ 音名隨機產生器 # 這個是讓吉他手練習琴格絕對音的工具，當畫面顯示音名時，就要快速找到到那一格的訓練 APP！ Note Snap Fret Shot FretShot 是我後來做的新版本，推薦你用它。（2026/03/31） 這次的難度對 Gemini 2.5 Pro 就稍微難了一點，我一共生成了 4 次才變成我要的樣子。 最後再自行修改一下字的樣式，就完成了！ 加上上傳到伺服器，整個過程可能不到半小時。 AI 革命 # 這整個過程讓 Eddie 很興奮，有一種「工業革命」的既視感，就像人類第一次把各種農用設備投入使用，取代掉大量人力、時間，或許地球已經往下一個時代邁進了。 檔案原始碼： github （沒有…",
+      "image": null,
+      "publishedAt": "2025-04-09T09:24:49Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/gemini2.5pro2/",
+      "detailPath": "articles/ffda40a98a192150f2cde3fa.json"
+    },
+    {
       "id": "639aafc2a05b59f4fc9bcfb8",
       "title": "Rsync 同步工具超快！部署 Hugo 爲範例。",
       "summary": "前言 # 以往 Eddie 製作部落格（本站）的方式是，在本地端用 Hugo 生成好網站（Public）後，打開圖形界面 App「Filezilla」，填入伺服器的密碼，再把檔案複製到伺服器去，操作就像是 Windows 檔案總管或 macOS 的 Finder 一樣簡單。 拋棄 Filezilla # 最近，網站的檔案數量來到 700 多了，雖然並不是很多，但是透過 Filezilla 上傳網站，也要個 5 分鐘，就有一點太久了！ 擁抱 Rsync # Rsync 是純文字 App，上傳的指令如下： rsync -avz --delete -e \"ssh -p 22\" ./public/ username@your.server.com:/var/www/html/your-site-folder 說明 #…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/light_app/",
       "detailPath": "articles/6552d5045243399216834929.json"
-    },
-    {
-      "id": "9f122fa520d0f0677d95ccc0",
-      "title": "天才的定義是什麼呢？動漫語錄：異世升級（いせれべ）。",
-      "summary": "動漫簡介 # 動漫全名：在異世界獲得超強能力的我，在現實世界照樣無敵～等級提升改變人生命運～（異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～） 動漫簡稱：異世升級（いせれべ） 其實當時動漫連載時，我是有第一時間跟著最新集數觀看的，但名字長到我根本記不住，於是又不小心點開來看一次了。 語錄 # 第二集： 異世升級（いせれべ） 所謂天才「是在面對事情時，能比他人更快找到正確努力方式的人」。 這個觀點，對我來說是非常同意的！ 不是天才的我們可以做什麼呢？ # 找老師 向老師請教、或請老師帶著自己用最正確的方式去努力學習。 老師已經浪費很多時間，在摸索最有效率的的學習方式，這就是你找老師的重點，你不需要再浪費一次時間！ 找顧問 如果某項技能、觀念是很少人會，或者說每個人情況差異…",
-      "image": "https://eddielv.com/musings/iserebe/iserebe.jpg",
-      "publishedAt": "2024-10-12T16:12:01Z",
-      "sourceId": "199cdf92fc46bfcd",
-      "sourceTitle": "Eddie Lv",
-      "link": "https://eddielv.com/musings/iserebe/",
-      "detailPath": "articles/9f122fa520d0f0677d95ccc0.json"
     }
   ]
 }

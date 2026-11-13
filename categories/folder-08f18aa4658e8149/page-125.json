@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "25c0c847ee514edf14c66d98",
+      "title": "H5 Canvas前端绘图库 Fabric 简单应用",
+      "summary": "圣诞节又快到了，又到了全民给微信头像加圣诞帽的时候了。 撸了一个纯前端实现的加圣诞帽的页面， 点击前往 JS引用 1 < script src = \"https://cdn.bootcdn.net/ajax/libs/fabric.js/4.2.0/fabric.min.js\" >< /script> 直接用 bootcdn 引用 fabric.js 最新版 构建 fabric 对象 1 2 3 4 5 6 7 8 9 < div class = \"body\" id = \"uploadContainer\" > < img id = \"export\" alt = \"圣诞快乐\" src = \"\" /> < canvas id = \"cvs\" ></ canvas > < div style = \"display:…",
+      "image": null,
+      "publishedAt": "2020-12-09T12:46:00Z",
+      "sourceId": "3220115c042340a7",
+      "sourceTitle": "TaurusXin 的独立博客",
+      "link": "https://www.taurusxin.com/fabricjs/",
+      "detailPath": "articles/25c0c847ee514edf14c66d98.json"
+    },
+    {
+      "id": "02d7d0c500b671522978910a",
+      "title": "博客系统迁移：Hexo 到 Hugo",
+      "summary": "上一篇文章介绍了 Emacs 的理念以及其强大的扩展功能，基本上能在 Emacs 里面做到事，我都在 Emacs 里面做。之前的博客一直都是用的 markdown 来书写，虽然 Emacs 也有 markdown 插件，但是总感觉体验不如 org-mode。这周末就趁着手热，把博客系统进行了升级，完美支持 org-mode，这篇文章就是用 org-mode 完成的，下面就来讲一下迁移过程。",
+      "image": null,
+      "publishedAt": "2020-12-05T05:12:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2020/12/05/hexo-to-hugo/",
+      "detailPath": "articles/02d7d0c500b671522978910a.json"
+    },
+    {
       "id": "0171003ba3144fcd8eb08a8e",
       "title": "何处安放我们的 Go 代码",
       "summary": "用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。 这期间也掌握了不少技巧与惯用法（idioms），比如 prosumer ，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher 吃了不少苦头 。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：",
@@ -637,28 +659,6 @@
       "sourceTitle": "散步中",
       "link": "https://yocson.com/2020/09/25/talking-to-mon-3/",
       "detailPath": "articles/bd2e3887b9f31024fdb08414.json"
-    },
-    {
-      "id": "9a2cca9afa58e02c8d980e67",
-      "title": "深夜发嗤（34）",
-      "summary": "01. 好久不见，好久不见。尝试恢复周更。写作大概是唯一能让我静下心，体验到心流的事情了。 02. 八月份一口气买了不少书，在公号里做了记录，还顺便写了一篇文章，推荐了一下刀尔登的《鸢回头》，尴尬的是，目前只有这本《鸢回头》和一本《顿悟的时刻》没有读完。简单的做个 8 月份书目回顾。 刘子超. 失落的卫星 . 文汇出版社, 2020. 这是本挺有趣的旅行游记，而且去的地方是罕有人深入的中亚，我们实实在在的邻居。书中最有趣的部分是作者时不时表达的苏联以及苏联解体对于这些国家的深远影响，整个中亚遍布着俄罗斯人、各种斯坦国人以及朝鲜人、德国人、中国人。这样的政治产物，造就了很多扭曲的身份，国别与身份，也很有象征性。一个人，可以出生在俄罗斯，长在乌兹别克斯坦，说着塔吉克斯坦的语言，国家对于他们来说是一种畸形的存在。…",
-      "image": "https://static.elizen.me/img/2020-09-22-064952.jpg",
-      "publishedAt": "2020-09-22T00:00:00Z",
-      "sourceId": "fc41292f8a54624e",
-      "sourceTitle": "Elizen's Blog",
-      "link": "https://elizen.me/posts/2020/09/%E6%B7%B1%E5%A4%9C%E5%8F%91%E5%97%A434/",
-      "detailPath": "articles/9a2cca9afa58e02c8d980e67.json"
-    },
-    {
-      "id": "1ae1da2ac4e08f83d7fa7cc2",
-      "title": "The Art of Computer Programming (0) - introduction",
-      "summary": "With less school course lately, I had time to read this series of books called ‘The Art of Computer Programming’, which is without a doubt the bible of the computer science community. The reason I started reading this book was because my friend Rogister recommended it to me, so I purchased it just about one year ago. But for variety reasons, I procrastinate…",
-      "image": null,
-      "publishedAt": "2020-09-21T17:23:00Z",
-      "sourceId": "3220115c042340a7",
-      "sourceTitle": "TaurusXin 的独立博客",
-      "link": "https://www.taurusxin.com/taocp-01-introduction/",
-      "detailPath": "articles/1ae1da2ac4e08f83d7fa7cc2.json"
     }
   ]
 }

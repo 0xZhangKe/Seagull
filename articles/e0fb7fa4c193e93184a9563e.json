@@ -1,0 +1,11 @@
+{
+  "id": "e0fb7fa4c193e93184a9563e",
+  "title": "datasette-leaflet 0.3",
+  "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so…",
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-leaflet/releases/tag/0.3\" target=\"_blank\" rel=\"noopener noreferrer\">datasette-leaflet 0.3</a></p>\n        <p>OpenStreetMap have a very reasonable policy that hits to their hosted tile server <a href=\"https://wiki.openstreetmap.org/wiki/Referer\" target=\"_blank\" rel=\"noopener noreferrer\">should send a referrer header</a>. Datasette table pages used the <code>Referrer-Policy: no-referrer</code> HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy.</p>\n<p><code>datasette-leaflet</code> is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to <code>strict-origin-when-cross-origin</code>, passing the host but not the full path to the page.</p>\n    \n    \n        <p>Tags: <a href=\"https://simonwillison.net/tags/leaflet\" target=\"_blank\" rel=\"noopener noreferrer\">leaflet</a>, <a href=\"https://simonwillison.net/tags/datasette\" target=\"_blank\" rel=\"noopener noreferrer\">datasette</a>, <a href=\"https://simonwillison.net/tags/openstreetmap\" target=\"_blank\" rel=\"noopener noreferrer\">openstreetmap</a></p>",
+  "image": null,
+  "publishedAt": "2026-11-13T22:30:54Z",
+  "sourceId": "052434531db837d6",
+  "sourceTitle": "Simon Willison's Weblog",
+  "link": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/"
+}

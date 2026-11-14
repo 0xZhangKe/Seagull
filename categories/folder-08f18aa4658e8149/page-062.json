@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "id": "53b2335bd99c36f55e6efc01",
+      "title": "修正 RSS 排版",
+      "summary": "自從換到現在的 classic Hugo 主題之後，RSS 就沒排版了，在閱讀器中無法直接閱讀，Hugo 在沒有 rss.xml 的情況下，還是會輸出 index.xml，只是就沒有排版。 而 JN 在 10 月底特地來信告知，並且寫了一篇教學文章，只是 Eddie 太懶的拖到現在才處理。 （超級感謝，這是部落格才可能出現的事情，如果今天是社群平臺就被留言嗆爆了） 加入 layouts/_default/rss.xml # 原先的主題有 rss，但是在 theme 的 layouts 裡面，被我換主題之後，就直接一併被移除了，這次直接做在專案 的 layouts 裡面，就不用怕主題換了 rss 就不見。 這段程式碼與官方內建的幾乎一樣，但將關鍵的 .Summary 改成了 .Content： .Summary…",
+      "image": null,
+      "publishedAt": "2025-12-21T14:46:05Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/rss-fix/",
+      "detailPath": "articles/53b2335bd99c36f55e6efc01.json"
+    },
+    {
+      "id": "75f9f5aa85271568ccd73a59",
+      "title": "「搜尋」功能上線啦！",
+      "summary": "因爲文章越來越多，只靠分類其實也不好找到文章，在「 歷史上的今天 」之後，弄了搜尋功能！以下分享怎麼在 Hugo 中做到。 做出搜尋頁面的基本頁 content/search/_index --- title: \"搜尋\" type: \"search\" draft: false --- header 在導覽列做搜尋框框 themes/classic/layouts/partials/header.html <header> <nav> <ul> {{ $title := lower .Title }} {{ $section := lower .Section }} <li class=\"pull-left {{ if .IsHome }}current{{ end }}\"> <a href=\"{{ .Site…",
+      "image": null,
+      "publishedAt": "2025-12-21T13:57:54Z",
+      "sourceId": "199cdf92fc46bfcd",
+      "sourceTitle": "Eddie Lv",
+      "link": "https://eddielv.com/musings/search/",
+      "detailPath": "articles/75f9f5aa85271568ccd73a59.json"
+    },
+    {
       "id": "abc2ee1a750d5e0c9b17e374",
       "title": "随便走走漫步新加坡",
       "summary": "最近去新加坡呆了一段时间，体验了当地的生活，品尝了美食，也走了很多地方，特地记录一下。 吃在新加坡 新加坡的人华裔和印度人（也包括孟加拉人）应该占大多数的，因此中餐还是很多的，中国的品牌也很多。到达之后，首先就是下载一个瑞幸，品尝一下0.99新币的瑞幸。 在Chinatown,也就是牛车水，有很多中餐馆，都比较正宗，值得去吃。 新加坡也有一些自己的特色美食，比如肉骨茶，田鸡粥，大螃蟹，都值得品尝一下。肉骨茶除了出名的松发，朋友推荐的黄亚细也不错，而且不用排队。 如果这些都觉得没啥的话，可以去吃吃印度餐厅，当然我在小印度的食阁鼓起了很大的勇气，还是没敢吃。 除了这些之外，到时没觉得新加坡有啥本地特色美食了。平时就是各种鸡饭的吃了。食阁里面的价格还比较便宜，但是卫生和服务态度就比较一般了，去了当地比较出名的老巴刹…",
@@ -637,28 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/mac-launchpad-remove/",
       "detailPath": "articles/de39fe555e894111a487056b.json"
-    },
-    {
-      "id": "d8224e5277b8973493df657c",
-      "title": "向Readwise划线提问：如何看展",
-      "summary": "<ol> <li>把个人感受放在前面。</li> </ol> <blockquote> <p>奥西安·沃德强调私人体验并不逊于学术解读 (这是一份让你去任何毕业展都能说上两句的当代艺术解读指南)</p> </blockquote> <ol start=\"2\"> <li> <p>留白与节奏。 在园中多逛逛，再回到观看之中。Obrist就曾努力在建筑中做其他陈设，让观众在观看展览之余能够休息。这样的留白和用咖啡豆转移短期多次闻香影响的技法相似。</p> </li> <li> <p>展览是否允许观众介入？注意场景的可供性，以及场景本身的精神内涵与氛围；</p> </li> </ol> <blockquote> <p>我们对“场景”的诠释远不止于上文提到的两种含义，我们还在寻求一种更加普适的分析方式。作为这一分析阶段…",
-      "image": null,
-      "publishedAt": "2025-12-15T00:00:00Z",
-      "sourceId": "6f211a9bbc8e4e48",
-      "sourceTitle": "杜尚此在沙龙",
-      "link": "https://www.lhooq.life/words/20251215/",
-      "detailPath": "articles/d8224e5277b8973493df657c.json"
-    },
-    {
-      "id": "1bc79d19d597934e2d0881fd",
-      "title": "度假後症候群",
-      "summary": "度假後症候群（Post-Vacation Syndrome）顧名思義，指的是一個人在度假之後會產生之行為與症狀。",
-      "image": "https://alicehsu.blog/images/Post16home.jpg",
-      "publishedAt": "2025-12-14T21:00:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2025/12/%E5%BA%A6%E5%81%87%E5%BE%8C%E7%97%87%E5%80%99%E7%BE%A4/",
-      "detailPath": "articles/1bc79d19d597934e2d0881fd.json"
     }
   ]
 }

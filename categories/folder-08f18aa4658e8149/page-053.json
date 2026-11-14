@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "fad72ea33d578b88cb8cdfe1",
+      "title": "不確定很好啊",
+      "summary": "以前的公車站牌，沒有螢幕會顯示「🚌ComingSoon」。你站在那邊等，真的是不知道公車什麼時候會來，甚至是「會不會來」（如果你不確定某路線週末是不是停駛的話）。",
+      "image": "https://wiwi.blog/assets/images/bus-c99547bf921f7f65522b7e3654a516d8.jpg",
+      "publishedAt": "2026-02-18T06:00:00Z",
+      "sourceId": "7f36c3da1e6b5c71",
+      "sourceTitle": "Wiwi.Blog Blog",
+      "link": "https://wiwi.blog/blog/uncertainty-is-okay",
+      "detailPath": "articles/fad72ea33d578b88cb8cdfe1.json"
+    },
+    {
+      "id": "56cda08f5fd863239927d498",
+      "title": "HP EliteDesk 小主机 Linux “假死”与 SSH 掉线排解",
+      "summary": "问题背景 这个春节期间，最火的无疑是 OpenClaw ，于是我打算再折腾吃灰已久的 HP EliteDesk 800 G4 （ 介绍 ），安装了 Ubuntu 24.04。 为了省电，将其配置为 multi-user.target（纯文本模式）作为无头服务器（Headless Server）使用。但在实际运行中遇到了非常诡异的现象： 现象 A：机器空置一段时间后，SSH 无法连接，Ping 不通。 现象 B：以为机器卡死，手动按了一下物理电源键想唤醒，结果系统直接触发了正常关机。 现象 C：重启后通过 uptime 发现系统运行时间不对，之前的 tmux 会话全部丢失，说明系统曾发生过非预期的重启。 1 # 配置 TUI 登录 2 sudo systemctl set-default multi-user.…",
+      "image": null,
+      "publishedAt": "2026-02-18T01:40:21Z",
+      "sourceId": "16aa1c6246a4804c",
+      "sourceTitle": "刘家财的个人网站",
+      "link": "https://liujiacai.net/blog/2026/02/18/headless-ubuntu-pitfalls/",
+      "detailPath": "articles/56cda08f5fd863239927d498.json"
+    },
+    {
+      "id": "a78de1c5ff408e9983f281ec",
+      "title": "自新世界 #0x1a：六十四分之一的 Visual Studio",
+      "summary": "微软说，Visual Studio 在具有 64 GB RAM 的 Windows 11 和具有 16 个核心或更高版本的 CPU 上运行最佳。",
+      "image": null,
+      "publishedAt": "2026-02-17T16:19:29Z",
+      "sourceId": "4f3f8eb9d72c3840",
+      "sourceTitle": "新世界的大门",
+      "link": "https://blog.xinshijiededa.men/weekly/0x17/",
+      "detailPath": "articles/a78de1c5ff408e9983f281ec.json"
+    },
+    {
       "id": "f0e54198b06950baae87108c",
       "title": "你同意来到这个世界上吗？[y/N]",
       "summary": "深夜躺在伸直腿就会踢到奶奶的沙发上，忍受着三个方向此起彼伏的呼噜声，被弟弟吵醒后就再没入睡，反复打着腹稿，如果不赶紧写下来，那是别想睡了。 过年和奶奶聊天，聊到了生育这个话题。我奶奶认为人无论如何，一定要结婚生子，又拿出经典的养老问题来举例子。 根据国家统计局的数据，2025年末，全国总人口为140489万人，全年出生人口792万人、死亡人口1131万人，人口总量同比减少339万人。我国人口规模仍超过现有发达国家人口总和，这为高质量发展提供了超大规模市场，生产和消费潜力巨大。 1 为什么如此恐怖的「生不如死」的局面还要硬说成蒸蒸日上？比起官方常用的赢学伎俩，老百姓应该更关注这意味着什么。男女对立加剧、养育成本高昂、经济下行，这是众多原因的一部分。但本文不会探讨那些社会现象，我一直认为生育率低是好事，这是社会进…",
@@ -626,39 +659,6 @@
       "sourceTitle": "Eddie Lv",
       "link": "https://eddielv.com/musings/dont-daily-update/",
       "detailPath": "articles/4d1af46646d3dbfc50e4364e.json"
-    },
-    {
-      "id": "8b5eb124360f0905e9616765",
-      "title": "Quoi de neuf 033 度日如年",
-      "summary": "最近孕反很厉害，真的有度日如年的感觉。周一去了学校，孩子们吃下午点心的时候，班里的两个老师都去开会了，我就和过来帮忙的老师一起对付小孩吃点心和排队去图书馆。结果手忙脚乱，自己没吃上点心。于是到了放学的时候饿和反胃的感觉同时到达顶峰，简直太惨了。心情低落到谷底，决定第二天不去学校了，瘫坐在家。 在家不动也不行，我瘫到下午三点才挣扎着洗了澡，出了门。去了图书馆还书取书，顺便散了会儿步。本来想去吃东北饺子，不巧他们刚好周二店休，于是最后竟然吃了麦当劳。说实话，薯条也没有那么好吃了，稍微还是能感觉到有点油油的，但是当下最重要的是吃上饭，不然等我走回家做好开始吃，肯定又要饿崩溃了。 其实在书上已经看过孕反大概有哪些，但昨天还是又在网上看了 NHS 的孕期每一周的症状列表，看到自己的难受都被逐一列举出来，居然会有一点安心…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoDGAvWz83rRPo5z7eWuzuipA_c2ma6GflDG7SnEHNJGS_5Lx15dPm9gZ0Ws2wMWSHujzY9Y_sYbIxAox19vZc82u9uR3dRA-S8LOvagSO4x2cM2AYifj-3lBCSwQEIUfxzkpNxhAHbIiKmQw_cw-QOxUEIffuqCLsl3Dq932gpme5A0DoibnhBYvr6vbk/s72-c/IMG_2259.JPG",
-      "publishedAt": "2026-02-11T20:08:00Z",
-      "sourceId": "ea32f15981b17f0f",
-      "sourceTitle": "小小日常",
-      "link": "https://www.joeyrambles.com/2026/02/quoi-de-neuf-033.html",
-      "detailPath": "articles/8b5eb124360f0905e9616765.json"
-    },
-    {
-      "id": "b2f743218dc148efd6342baf",
-      "title": "99% 的生活",
-      "summary": "打開 Instagram，看見別人生活中的精彩時刻──國外的陽光和海灘、米其林餐廳的擺盤、重大的工作成就、慶生 party 的乾杯瞬間。",
-      "image": null,
-      "publishedAt": "2026-02-11T07:00:00Z",
-      "sourceId": "7f36c3da1e6b5c71",
-      "sourceTitle": "Wiwi.Blog Blog",
-      "link": "https://wiwi.blog/blog/99-percent-life",
-      "detailPath": "articles/b2f743218dc148efd6342baf.json"
-    },
-    {
-      "id": "fd54c03e2340568c3fe581c8",
-      "title": "《藥師少女的獨語》：致敬我有著亮光的朋友們",
-      "summary": "為什麼主角這些特質會引發我的共鳴呢？我想，大概是我想到了我的朋友們吧。",
-      "image": "https://alicehsu.blog/images/Post37home.jpg",
-      "publishedAt": "2026-02-10T20:40:00Z",
-      "sourceId": "a08fec079b5bc196",
-      "sourceTitle": "Alice Hsu's Blog",
-      "link": "https://alicehsu.blog/zh-tw/posts/2026/02/the-apothecary-diaries/",
-      "detailPath": "articles/fd54c03e2340568c3fe581c8.json"
     }
   ]
 }

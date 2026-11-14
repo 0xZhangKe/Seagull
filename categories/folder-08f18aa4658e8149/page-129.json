@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "e272a254430d0e5bdf564365",
+      "title": "Android 中的卡顿丢帧原因概述 - 系统篇",
+      "summary": "技术复核 · 2026-10-13。 本文案例与截图来自 2019 年。此次按 Android 8.1/9/16 的相关源码、Linux v6.6 文档及现行 Android 文档核查，保留原始图片和作者经验；修正将长 slice、核号、内存回收或输入节奏直接等同根因的结论。没有重新运行原设备或回放完整 Trace，缺少的现场条件不作补造。 在 应用篇 中，我们列举了应用侧的卡顿问题。这一篇沿系统服务、显示、调度和内存路径整理案例。各设备的硬件、内核与厂商实现不同，定位时应保留系统版本和具体配置。 手机厂商和 App 开发者通常会通过优化组、Matrix 或自有监控方案收集线索。系统权限有助于获取更多数据，但采集范围仍受构建类型、内核配置和数据源开关影响。 流畅度不能仅等同于平均 FPS。60 Hz 下的一秒…",
+      "image": null,
+      "publishedAt": "2019-09-05T12:35:35Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2019/09/05/Android-Jank-Due-To-System/",
+      "detailPath": "articles/e272a254430d0e5bdf564365.json"
+    },
+    {
       "id": "5f6bef8f677d0a8a9676e149",
       "title": "Android 中的卡顿丢帧原因概述 - 方法论",
       "summary": "技术复核 · 2026-10-13。 本文保留 2019 年厂商优化组的工作经验与当时的行业观点。技术部分补充 Android 12（API 31）FrameTimeline、JankStats 与 Macrobenchmark 的适用边界；Looper 日志语义按 AOSP android-9.0.0_r1 / android-16.0.0_r1 核对，Matrix 功能以 v2.1.0 文档为版本示例。本文未进行新的设备测量。 Android 手机使用中的卡顿问题，手机厂商和 App 开发商都会重视，内部一般会有基础组或者优化组负责分析和优化。 第三方工具如腾讯 Matrix 可以提供应用侧性能线索。厂商也会有自己的监控方案，借助系统源码和相应调试权限获取更深层数据；实际可见范围仍取决于系统版本、内核配置…",
@@ -648,17 +659,6 @@
       "sourceTitle": "Memozine",
       "link": "https://memozine.me/2019/03/17/between-cold-and-hot",
       "detailPath": "articles/935e4a28bfc29fe5f2cddfb3.json"
-    },
-    {
-      "id": "e19f757cbfdede761f341902",
-      "title": "也说“央视认罪”",
-      "summary": "“上央视”可看做是官方媒体代理司法活动行为的统称。 鉴于办案机关和热心观众的双重刚需，有网友建议央视开设“认罪频道”。… Continue reading 也说“央视认罪” →",
-      "image": "https://wentommy.wordpress.com/wp-content/uploads/2019/03/e99988e6b0b8e6b4b250e4b887.jpg",
-      "publishedAt": "2019-03-16T13:24:54Z",
-      "sourceId": "3953acd1dfa15f46",
-      "sourceTitle": "文三娃",
-      "link": "https://wentommy.wordpress.com/2019/03/16/%e4%b9%9f%e8%af%b4%e5%a4%ae%e8%a7%86%e8%ae%a4%e7%bd%aa/",
-      "detailPath": "articles/e19f757cbfdede761f341902.json"
     }
   ]
 }

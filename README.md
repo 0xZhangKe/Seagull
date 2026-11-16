@@ -1,6 +1,6 @@
 # Seagull
 
-Seagull 是一个基于 GitHub Actions 的自动化内容采集与归档项目。项目从标准 RSS/Atom 订阅源和 AI 驱动的自定义订阅源拉取内容，将结果保存到独立的 `archive` 分支，并使用 Git commit 记录每次归档的变化。归档数据可以被 Fread、GitHub Pages 以及其他阅读端共同使用。
+Seagull 是一个基于 GitHub Actions 的自动化内容采集与归档项目。项目从标准 RSS/Atom 订阅源和 AI 驱动的自定义订阅源拉取内容，将最新快照保存到独立的 `archive` 分支。归档数据可以被 Fread、GitHub Pages 以及其他阅读端共同使用。
 
 [https://0xzhangke.github.io/Seagull/](https://0xzhangke.github.io/Seagull/)
 
@@ -52,7 +52,7 @@ archive
     └── ...
 ```
 
-`archive` 是独立的 orphan 分支，不需要包含 `opml.xml`、脚本或 GitHub Actions。
+`archive` 是独立的 orphan 分支，不需要包含 `opml.xml`、脚本或 GitHub Actions。每次发布都用一个没有父提交的新快照替换分支头，分支可达历史始终只有一个 commit，不保留旧版 Feed 和渲染数据。
 
 其中 `catalog.json`、`source_state.json`、`rss/` 和 `ai/` 是归档数据；`rendered.json`、`categories/` 和 `articles/` 是 Pages 构建阶段生成并同步回 `archive` 的阅读端数据。
 
@@ -90,7 +90,7 @@ AI 来源维护在 [`ai_sources.json`](./ai_sources.json)，每个来源仅包�
 - `title` 是阅读端显示标题。
 - `promptFile` 相对于 `ai_sources.json` 所在目录，文件必须位于该目录内，内容为 1–20000 个字符。
 
-Catalog 顶层先按原顺序放置 OPML 的一级节点并保留其层级，再按配置顺序追加所有 AI 来源，阅读时 RSS 在前、AI 在后。修改标题或 Prompt 不会改变 Feed 路径。删除来源会移除导航，已有 Feed 文件和 Git 历史保留。设置 `"sources": []` 可以停用全部 AI 来源。
+Catalog 顶层先按原顺序放置 OPML 的一级节点并保留其层级，再按配置顺序追加所有 AI 来源，阅读时 RSS 在前、AI 在后。修改标题或 Prompt 不会改变 Feed 路径。删除来源会移除导航，已有 Feed 文件仍保留在最新快照中。设置 `"sources": []` 可以停用全部 AI 来源。
 
 [`ai_agent.py`](./scripts/ai_agent.py) 使用 OpenRouter 调用 DeepSeek，提供两个 Tavily 工具：`search_web` 调用 Search，`fetch_pages` 调用 Extract。无需额外 Python 依赖。模型先检索资料，再以 JSON Schema 输出标题、主链接、发布时间、摘要、要点和引用；程序再次校验字段与引用是否出现在本轮检索结果中。引用核对用于防止虚构链接，不能替代对摘要事实的人工核实。
 
@@ -98,7 +98,7 @@ Catalog 顶层先按原顺序放置 OPML 的一级节点并保留其层级，再
 
 每个来源每轮最多执行 6 轮工具规划、8 次工具调用、4 次搜索、提取 10 个页面，输出最多 10 条内容；单来源总请求预算为 300 秒，单次请求超时最多 60 秒。HTTP 429/5xx 最多重试两次，最终 JSON 校验失败最多纠正一次，均计入总时间预算。模型 token 用量、费用（接口返回时）和 Tavily credits 会输出到采集日志。
 
-AI Feed 合并新增条目，按来源 ID 和去除已知追踪参数的主链接生成稳定 GUID。重复条目保留首次整理的内容，避免模型措辞变化引起无意义更新。Feed 保留最新 200 条，完整历史由 Git 保存。正文由程序生成并转义，附原始引用链接。无法确认的发布时间保持为空，独立保存采集时间用于排序。
+AI Feed 合并新增条目，按来源 ID 和去除已知追踪参数的主链接生成稳定 GUID。重复条目保留首次整理的内容，避免模型措辞变化引起无意义更新。Feed 保留最新 200 条，超出上限的旧条目不再由 Git 历史保存。正文由程序生成并转义，附原始引用链接。无法确认的发布时间保持为空，独立保存采集时间用于排序。
 
 检索成功但没有新内容时，保留已有 Feed，只更新时间；检索、模型调用或校验失败时，保留旧 Feed 和成功时间，并记录来源失败，不影响其他 RSS/AI 来源。
 
@@ -330,11 +330,15 @@ python3 -m unittest discover -s tests -v
 1. 检出 `main` 并读取 OPML 和 AI 来源配置。
 2. 检出已有的 `archive`；如果不存在，则首次创建 orphan 分支。
 3. 生成 `archive/catalog.json`，同时继承已有时间字段。
-4. 仅在 Catalog 发生变化时创建 commit。
-5. 将 commit 推送到远端 `archive` 分支。
+4. Catalog 发生变化时生成无父提交的新快照；首次迁移旧历史时，即使内容未变化也生成新快照。
+5. 用新快照替换远端 `archive` 分支头。
 6. 触发 RSS 和 AI 统一采集。仅修改 Prompt 时即使 Catalog 未变化，也会触发采集。
 
 所有会写入 `archive` 的工作流都使用 `seagull-writer` 并发组，并配置 `queue: max` 排队，避免同时推送或替换等待中的归档任务。
+
+所有 checkout 和归档 fetch 都使用深度 1，只下载相应分支的最新版本。三个写入工作流统一调用 [`publish_archive.py`](./scripts/publish_archive.py)，从暂存区的完整文件树创建无父提交的快照，保留其他工作流写入的未修改文件。推送使用 `--force-with-lease=refs/heads/archive:<检出时的 SHA>`；如果远端被其他写入者更新，工作流失败而不会覆盖其数据。首次创建分支则要求远端 `archive` 仍不存在。归档目录是一次性 checkout，发布脚本不移动其本地 HEAD。
+
+`archive` 的分支保护或 Ruleset 必须允许工作流强制推送。新配置合并到 `main` 后，首次成功发布会自动切断原有历史；服务器上的不可达旧对象何时回收由 GitHub 管理，本地旧克隆也不会立即缩小。日常只开发代码时，可以在其他目录用 `git clone --single-branch --branch main git@github.com:0xZhangKe/Seagull.git Seagull-dev` 创建只跟踪 `main` 的副本，避免下载归档数据。
 
 ## RSS 和 AI 自动拉取
 
@@ -406,4 +410,4 @@ opml.xml + ai_sources.json → catalog.json
                     Pages 渲染数据与站点发布
 ```
 
-每轮采集完成后，本轮所有 Feed 更新和时间字段合并为一个 commit 并推送到 `archive`。因为成功拉取会更新 `lastSuccessfulFetchAt`，正常运行通常会产生一个 commit。Git 历史负责保存 Feed 文档的历史版本。
+每轮采集完成后，本轮所有 Feed 更新和时间字段与已有文件一起生成一个无父提交的快照，并替换 `archive` 分支头。因为成功拉取会更新 `lastSuccessfulFetchAt`，正常运行通常会发布一个新快照。Pages 渲染完成后同样用完整快照替换分支头，`archive` 不积累历史提交；已是单提交快照且文件内容未变化时跳过发布。

@@ -13,7 +13,9 @@ on:
       - scripts/fetch_ai.py
       - scripts/fetch_sources.py
       - scripts/generate_catalog.py
+      - scripts/publish_archive.py
       - tests/test_generate_catalog.py
+      - tests/test_publish_archive.py
       - .github/workflows/sync-catalog.yml
       - .github/workflows/fetch-rss.yml
   workflow_dispatch:
@@ -34,7 +36,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Test catalog generator
         run: python3 -m unittest discover -s tests -v
@@ -43,9 +45,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git ls-remote --exit-code --heads origin archive >/dev/null 2>&1; then
-            git fetch origin archive
-            git worktree add archive-worktree origin/archive
+          archive_ref=$(git ls-remote --heads origin refs/heads/archive)
+          if [[ -n "$archive_ref" ]]; then
+            git fetch --depth=1 --no-tags origin +refs/heads/archive:refs/remotes/origin/archive
+            git worktree add --detach archive-worktree origin/archive
           else
             git worktree add --detach archive-worktree
             git -C archive-worktree switch --orphan archive
@@ -60,23 +63,15 @@ jobs:
             --existing archive-worktree/catalog.json \
             --output archive-worktree/catalog.json
 
-      - name: Commit catalog when changed
+      - name: Publish catalog as an archive snapshot
         id: commit
         shell: bash
         run: |
           set -euo pipefail
           git -C archive-worktree add catalog.json
-          if git -C archive-worktree diff --cached --quiet; then
-            echo "Catalog is already up to date."
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          git -C archive-worktree config user.name "github-actions[bot]"
-          git -C archive-worktree config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive-worktree commit -m "catalog: sync from main@${GITHUB_SHA::7}"
-          git -C archive-worktree push origin HEAD:archive
-          echo "changed=true" >> "$GITHUB_OUTPUT"
+          python3 scripts/publish_archive.py \
+            --archive-root archive-worktree \
+            --message "catalog: sync from main@${GITHUB_SHA::7}"
 
       # Prompt-only changes do not alter catalog.json but still need a new collection.
       - name: Trigger source fetch

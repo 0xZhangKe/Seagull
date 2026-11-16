@@ -32,12 +32,14 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: main
+          fetch-depth: 1
 
       - name: Check out archive
         uses: actions/checkout@v6
         with:
           ref: archive
           path: archive-data
+          fetch-depth: 1
 
       - name: Test Pages builder
         run: python3 -m unittest discover -s tests -v
@@ -60,15 +62,9 @@ jobs:
           rsync -a --delete _site/data/articles/ archive-data/articles/
 
           git -C archive-data add -A -- rendered.json categories articles
-          if git -C archive-data diff --cached --quiet; then
-            echo "Rendered data is already up to date."
-            exit 0
-          fi
-
-          git -C archive-data config user.name "github-actions[bot]"
-          git -C archive-data config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive-data commit -m "archive: render Pages data"
-          git -C archive-data push origin HEAD:archive
+          python3 scripts/publish_archive.py \
+            --archive-root archive-data \
+            --message "archive: render Pages data"
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

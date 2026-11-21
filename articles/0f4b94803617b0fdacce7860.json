@@ -1,0 +1,11 @@
+{
+  "id": "0f4b94803617b0fdacce7860",
+  "title": "Chrome 157 的 HTML-in-Canvas 實戰：把網頁字卡畫進 WebGPU，主執行緒少了七成",
+  "summary": "這篇記錄作者用 Chrome 157 正式推出的 HTML-in-Canvas,把首頁土星旁的 DOM 字卡畫進跑在 worker 裡的 WebGPU canvas。正式版 API 改過名字,網路上多數教學仍是舊寫法。three.js 內建的 HTMLTexture 既用舊命名、又假設 canvas 在主執行緒,只能自己寫上傳流程。第一次只搬小標註,唯一的好處是主執行緒卡住時字仍貼著衛星。量測後發現大頭是字卡每幀重建 CSS 轉場,先在所有瀏覽器修掉,再把字卡也搬進去,主執行緒工作從 460 降到 145 ms/s,樣式重算少了 92%。最後是字變成貼圖之後的效果試作:被吸進衛星、再倒著吐出來。",
+  "content": "這篇記錄作者用 Chrome 157 正式推出的 HTML-in-Canvas,把首頁土星旁的 DOM 字卡畫進跑在 worker 裡的 WebGPU canvas。正式版 API 改過名字,網路上多數教學仍是舊寫法。three.js 內建的 HTMLTexture 既用舊命名、又假設 canvas 在主執行緒,只能自己寫上傳流程。第一次只搬小標註,唯一的好處是主執行緒卡住時字仍貼著衛星。量測後發現大頭是字卡每幀重建 CSS 轉場,先在所有瀏覽器修掉,再把字卡也搬進去,主執行緒工作從 460 降到 145 ms/s,樣式重算少了 92%。最後是字變成貼圖之後的效果試作:被吸進衛星、再倒著吐出來。",
+  "image": null,
+  "publishedAt": "2026-10-31T06:56:46Z",
+  "sourceId": "bd51496b8ec0ca1d",
+  "sourceTitle": "Koimsurai 手記",
+  "link": "https://koimsurai.com/blog/html-in-canvas-webgpu-worker"
+}

@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HackerNews每日摘要 on SuperTechFans</title>
+    <link>https://supertechfans.com/cn/</link>
+    <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Sat, 21 Nov 2026 08:52:29 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-21 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-21-HackerNews/</link>
+      <pubDate>Sat, 21 Nov 2026 08:52:29 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-21-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-21-hacker-news-top-stories&#34;&gt;
+  2026-11-21 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-21-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;数学家 Levent Alpöge 发布四页说明，称与 Claude 合作得到了黎曼猜想及广义黎曼猜想的 Lean 形式化证明；目前公布的是说明和分卷文件，尚不能视为结论已获独立确认。&lt;/li&gt;
+&lt;li&gt;Anthropic 以每股 83 美元发行，纳斯达克首日开盘涨约 34%、收盘仍较发行价高约 17%，路透所称约 2 万亿美元是首日的完全摊薄估值口径。&lt;/li&gt;
+&lt;li&gt;《New Scientist》报道，明尼苏达大学一期试验的三名局部晚期胰腺癌患者接受实验性溶瘤病毒治疗后病情稳定；样本小、无对照，尚不能据此证明能延长生存。&lt;/li&gt;
+&lt;li&gt;英国调查权力法庭裁定，内政部未能证明公开承认向苹果发出技术能力通知会危及国家安全；通知的具体技术要求与是否合法，仍待审理。&lt;/li&gt;
+&lt;li&gt;Architect Labs 的 Frostbite 用交互网和分布式任务调度设计 CPU，在 25 项流片前测试中的每瓦性能几何均值为对照的 4.59 倍，15 项留出任务为 3.83 倍。&lt;/li&gt;
+&lt;li&gt;Jason Kottke 重访费曼未能把自旋二分之一粒子的费米统计讲成大一课程的轶事，并借苹果工程文化和磁力例子讨论清楚解释与真正理解的关系。&lt;/li&gt;
+&lt;li&gt;一位产品工程师称，Claude Code 在检查其负责的服务时中止部分安全工作，而申请扩大访问范围又涉及等待、身份验证与数据保留条件。&lt;/li&gt;
+&lt;li&gt;Anthropic 称 Claude 完成弱耦合下黑洞相关相变的三圈计算，并给出忽略自旋的模自举方法在大中心荷下约 c/9.1266 的最优界；两项结果均针对简化理论。&lt;/li&gt;
+&lt;li&gt;Ecohustler 2019 年转述 Transport &amp;amp; Environment 的估算：嘉年华集团 2017 年在欧洲沿海排放的硫氧化物接近全欧洲 2.6 亿辆汽车的十倍，不能套用到现行船用燃油标准。&lt;/li&gt;
+&lt;li&gt;Signal 将在 iOS 27 阻挡应用截图、在可检测系统 AI 正尝试读屏的 Android 设备触发屏幕保护；用户可关闭保护，macOS 目前无法提供同等拦截。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-levent-alpöge-称与-claude-合作证明了广义黎曼猜想-levent-alpöge-claims-proof-of-the-generalized-riemann-hypothesis-pdf&#34;&gt;
+  1. Levent Alpöge 称与 Claude 合作证明了广义黎曼猜想 (Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf])
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-levent-alp%c3%b6ge-%e7%a7%b0%e4%b8%8e-claude-%e5%90%88%e4%bd%9c%e8%af%81%e6%98%8e%e4%ba%86%e5%b9%bf%e4%b9%89%e9%bb%8e%e6%9b%bc%e7%8c%9c%e6%83%b3-levent-alp%c3%b6ge-claims-proof-of-the-generalized-riemann-hypothesis-pdf&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://alpo.ge/remark.pdf&#34;&gt;https://alpo.ge/remark.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;数学家 Levent Alpöge 在一份四页说明中称，他与 Claude 找到了黎曼猜想的证明，方法还能处理广义黎曼猜想；至于他称作 Extended Riemann Hypothesis 的进一步推广，文中只说有望在更多工作之后完成。黎曼猜想涉及 ζ 函数零点的位置，与素数分布误差的控制密切相关。&lt;/p&gt;
+&lt;p&gt;说明给出从 Stepanov 方法到自守形式的思路：作者先在较简单的模型中结合两类想法，随后用迭代 θ 提升模拟函数域证明中至关重要的重数。按作者描述，对于长度为 X 的 von Mangoldt 和，Claude 提议把提升链长度取在 √X 的量级。文末列出进展时间线，并链接 14 个 Lean 文件压缩分卷。&lt;/p&gt;
+&lt;p&gt;作者称形式化已经完成，但论证很长，自己尚未掌握其中部分数学，打算再写出更易读的版本。这份 PDF 是声明与路线说明，不能替代独立检查目标命题、依赖和形式化文件。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-2325-points--评论-1572-comments--投稿者iamronaldo--发布时间2026-11-20-221621-0800&#34;&gt;
+  HN 热度 2325 points | 评论 1572 comments | 投稿者：iamronaldo | 发布时间：2026-11-20 22:16:21 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2325-points--%e8%af%84%e8%ae%ba-1572-comments--%e6%8a%95%e7%a8%bf%e8%80%85iamronaldo--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-221621-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50574968&#34;&gt;https://news.ycombinator.com/item?id=50574968&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作者过去在数论与 AI 协作上的研究记录，使一些读者愿意认真看待这项声明。&lt;/li&gt;
+&lt;li&gt;即使是成果出众的数学家也可能误判证明，信誉本身不能替代审查。&lt;/li&gt;
+&lt;li&gt;书面论证尚不可读并不表示没有材料可检查，脚注已经指向 14 个形式化文件分卷。&lt;/li&gt;
+&lt;li&gt;如果论证长到几乎无人能逐步读完，形式上可检查与人能复现并理解思路会成为不同问题。&lt;/li&gt;
+&lt;li&gt;也有人认为机器得到答案并不妨碍理解，证明本身反而可能为寻找更简洁的解释提供线索。&lt;/li&gt;
+&lt;li&gt;作者设定方向、模型在关键步骤上加速，被视为领域专家和前沿模型协作的一例。&lt;/li&gt;
+&lt;li&gt;声明紧邻 Anthropic 上市引发对发布时间的疑问，但时间接近本身不能证明动机。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-anthropic-纳斯达克首日以-11150-美元开盘9717-美元收盘-anthropics-nasdaq-debut&#34;&gt;
+  2. Anthropic 纳斯达克首日以 111.50 美元开盘、97.17 美元收盘 (Anthropic’s Nasdaq debut)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-anthropic-%e7%ba%b3%e6%96%af%e8%be%be%e5%85%8b%e9%a6%96%e6%97%a5%e4%bb%a5-11150-%e7%be%8e%e5%85%83%e5%bc%80%e7%9b%989717-%e7%be%8e%e5%85%83%e6%94%b6%e7%9b%98-anthropics-nasdaq-debut&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/&#34;&gt;https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;路透报道，Claude 开发商 Anthropic 于美国当地时间 11 月 19 日在纳斯达克挂牌，代码 ANT。股票以 111.50 美元开盘，较 83 美元发行价高约 34%，随后回吐部分涨幅，以 97.17 美元收盘，较发行价高约 17%。报道中的约 2 万亿美元按完全摊薄口径估算，包含尚未变成流通股票的期权和限制性股票单位等；按已发行股数计算，当日估值最高约 1.5 万亿美元。&lt;/p&gt;
+&lt;p&gt;基础发行包含 9.8 亿股，按发行价合计约 813 亿美元；路透另列 260 亿美元私募，二者与承销商额外认购选项应分开看。报道也提到，Anthropic 三季度收入环比上升 47%、净亏损收窄，但增速放缓，并有接近 9,000 亿美元的算力承诺。首日追捧显示市场愿意为少见的上市前沿模型公司定价，仍没有回答长期盈利和算力成本的问题。&lt;/p&gt;
+&lt;p&gt;路透原站未能直读，以上依据 MarketScreener 公开刊载的同篇路透稿整理。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.marketscreener.com/news/anthropic-s-historic-debut-to-put-ai-s-promise-and-peril-wall-st-trial-ce785ed2db89f221&#34;&gt;https://www.marketscreener.com/news/anthropic-s-historic-debut-to-put-ai-s-promise-and-peril-wall-st-trial-ce785ed2db89f221&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1130-points--评论-2295-comments--投稿者wslh--发布时间2026-11-20-010240-0800&#34;&gt;
+  HN 热度 1130 points | 评论 2295 comments | 投稿者：wslh | 发布时间：2026-11-20 01:02:40 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1130-points--%e8%af%84%e8%ae%ba-2295-comments--%e6%8a%95%e7%a8%bf%e8%80%85wslh--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-010240-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50562754&#34;&gt;https://news.ycombinator.com/item?id=50562754&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;讨论估值前要先确认分母，完全摊薄股数与已发行股数能给出差异很大的数字。&lt;/li&gt;
+&lt;li&gt;对看好公司的人来说，Claude Code 让 Anthropic 从通用聊天竞争中找到具体而有吸引力的市场。&lt;/li&gt;
+&lt;li&gt;有读者一面希望员工拿到应得回报，一面担心高估值缺少相应的经营基本面。&lt;/li&gt;
+&lt;li&gt;有经历过 IPO 的读者认为，部分员工能较早出售一小部分持股，相比统一锁定更有利于兑现收入。&lt;/li&gt;
+&lt;li&gt;将上市直接理解为创始人套现缺少依据，提出这种判断前应先核对实际出售纪录。&lt;/li&gt;
+&lt;li&gt;有人把科技公司越来越晚上市与上市合规成本联系起来，认为这也是早期涨幅留在私募市场的可能原因。&lt;/li&gt;
+&lt;li&gt;首日的交易价格可能受可交易股数和定向配售影响，不宜直接把它当作整个科技板块的定价信号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-明尼苏达大学胰腺癌一期试验报告三名患者病情稳定-pancreatic-cancer-halted-by-virus-injection-in-three-patients&#34;&gt;
+  3. 明尼苏达大学胰腺癌一期试验报告三名患者病情稳定 (Pancreatic cancer halted by virus injection in three patients)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e6%98%8e%e5%b0%bc%e8%8b%8f%e8%be%be%e5%a4%a7%e5%ad%a6%e8%83%b0%e8%85%ba%e7%99%8c%e4%b8%80%e6%9c%9f%e8%af%95%e9%aa%8c%e6%8a%a5%e5%91%8a%e4%b8%89%e5%90%8d%e6%82%a3%e8%80%85%e7%97%85%e6%83%85%e7%a8%b3%e5%ae%9a-pancreatic-cancer-halted-by-virus-injection-in-three-patients&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/&#34;&gt;https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《New Scientist》5 月报道了明尼苏达大学 Masato Yamamoto 团队的初步会议结果：三名无法手术、尚无远处转移的局部晚期胰腺癌患者接受实验性溶瘤病毒治疗后，随访时仍存活且病情保持稳定。首名患者的肿瘤直径约 7 厘米；报道时距其接受治疗约一年。校方秋季更新称，其中一人达到 15 个月疾病控制。&lt;/p&gt;
+&lt;p&gt;研究希望借溶瘤病毒直接破坏肿瘤细胞，并观察能否诱发抗肿瘤免疫反应。这一阶段用量低，首要目标是评估安全性和耐受性，团队计划招募另外 15 名患者考察不同剂量。报道引用的独立外科医生提醒，三例没有对照组，肿瘤稳定不等于缩小或消失，也不能与其他治疗直接比较；对转移性疾病或联合治疗的设想仍需验证。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://discoverymag.umn.edu/stories/when-cancer-therapy-goes-viral&#34;&gt;https://discoverymag.umn.edu/stories/when-cancer-therapy-goes-viral&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-873-points--评论-154-comments--投稿者cybermango--发布时间2026-11-20-012533-0800&#34;&gt;
+  HN 热度 873 points | 评论 154 comments | 投稿者：cybermango | 发布时间：2026-11-20 01:25:33 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-873-points--%e8%af%84%e8%ae%ba-154-comments--%e6%8a%95%e7%a8%bf%e8%80%85cybermango--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-012533-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50563066&#34;&gt;https://news.ycombinator.com/item?id=50563066&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只读标题容易把三名病情稳定者当作从大样本筛出的成功病例，读者希望看到明确的入组人数和结果分母。&lt;/li&gt;
+&lt;li&gt;小规模一期试验首先回答安全性和剂量问题，无法像后期对照试验那样回答疗效问题。&lt;/li&gt;
+&lt;li&gt;有读者找到了临床试验登记和校方报道，可以用来核对研究团队和试验设计。&lt;/li&gt;
+&lt;li&gt;有人谨慎看好溶瘤疗法领域，但对这项很早期的具体试验能否最终成功保留判断。&lt;/li&gt;
+&lt;li&gt;同一研究团队的另一篇论文也使用改造病毒，但治疗机制不同，不能当作本试验的结果。&lt;/li&gt;
+&lt;li&gt;不同类型的胰腺肿瘤预后可以很不一样，用名人患者作比较前应先分清病种。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-英国调查权力法庭裁定可确认政府曾向苹果发出秘密通知-uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order&#34;&gt;
+  4. 英国调查权力法庭裁定可确认政府曾向苹果发出秘密通知 (UK government forced to admit it issued Apple a secret encryption order)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e8%8b%b1%e5%9b%bd%e8%b0%83%e6%9f%a5%e6%9d%83%e5%8a%9b%e6%b3%95%e5%ba%ad%e8%a3%81%e5%ae%9a%e5%8f%af%e7%a1%ae%e8%ae%a4%e6%94%bf%e5%ba%9c%e6%9b%be%e5%90%91%e8%8b%b9%e6%9e%9c%e5%8f%91%e5%87%ba%e7%a7%98%e5%af%86%e9%80%9a%e7%9f%a5-uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/&#34;&gt;https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MacAnorak 追踪苹果与英国政府围绕 iCloud 加密的争议。11 月 19 日，英国调查权力法庭裁定，内政部没有证明在诉讼中承认曾向苹果发出技术能力通知会损害国家安全。这种通知源自《调查权力法》，可要求服务商具备协助行使调查权的技术能力。报道指出，相关命令早已被媒体报道，法庭也考量了政府授权简报等披露背景。&lt;/p&gt;
+&lt;p&gt;文章回顾，2025 年第一份通知据报道涉及全球用户；随后英国撤回原通知，后续通知据报道范围收窄至英国用户。苹果退出了面向英国新用户的 iCloud 高级数据保护（ADP）。文章以两位假想用户说明：曾启用 ADP 的人和如今不能启用的人，在同一服务中可能获得不同程度的端到端保护。&lt;/p&gt;
+&lt;p&gt;这次裁定处理的是通知存在与否能否公开。它没有披露通知的确切技术条款，没有裁定政府有权强制苹果交付解密能力，也没有认定 iCloud 整体取消了加密。实体争议预计在后续听证中处理。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://investigatorypowerstribunal.org.uk/judgement/1-mr-vincent-kearney-2-british-broadcasting-corporation-v-1-chief-constable-of-the-police-service-of-northern-ireland-2-chief-constable-of-durham-constabulary-3-security-service-4-governme/&#34;&gt;https://investigatorypowerstribunal.org.uk/judgement/1-mr-vincent-kearney-2-british-broadcasting-corporation-v-1-chief-constable-of-the-police-service-of-northern-ireland-2-chief-constable-of-durham-constabulary-3-security-service-4-governme/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-687-points--评论-359-comments--投稿者terretta--发布时间2026-11-20-002103-0800&#34;&gt;
+  HN 热度 687 points | 评论 359 comments | 投稿者：Terretta | 发布时间：2026-11-20 00:21:03 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-687-points--%e8%af%84%e8%ae%ba-359-comments--%e6%8a%95%e7%a8%bf%e8%80%85terretta--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-002103-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50562113&#34;&gt;https://news.ycombinator.com/item?id=50562113&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官方判决最有用的线索之一是法庭如何判断媒体获得消息的途径，以及此前的披露如何削弱政府的保密主张。&lt;/li&gt;
+&lt;li&gt;允许政府长期隐藏影响公众安全的技术要求，会让用户难以追究决定的责任。&lt;/li&gt;
+&lt;li&gt;支持某种保密空间的解释是，披露行动有时会提醒具体调查的目标转移证据。&lt;/li&gt;
+&lt;li&gt;某地托管既有可访问密钥与要求改变端到端加密机制，是需要分别评估的两类政策。&lt;/li&gt;
+&lt;li&gt;对苹果是否悄悄更改安全承诺的指责，有回复要求拿出具体措辞和文档核实。&lt;/li&gt;
+&lt;li&gt;自控备份和使用侧重隐私的系统，可以减少对单一云服务提供商的依赖。&lt;/li&gt;
+&lt;li&gt;也有使用者认为替代系统的体验仍有取舍，隐私工具是否方便会影响实际采用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-architect-labs-用-ai-代理开发-frostbite-cpu报告流片前能效结果-frostbite-a-new-cpu-architecture-discovered-designed-and-verified-by-ai&#34;&gt;
+  5. Architect Labs 用 AI 代理开发 Frostbite CPU，报告流片前能效结果 (Frostbite: A new CPU architecture discovered, designed and verified by AI)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-architect-labs-%e7%94%a8-ai-%e4%bb%a3%e7%90%86%e5%bc%80%e5%8f%91-frostbite-cpu%e6%8a%a5%e5%91%8a%e6%b5%81%e7%89%87%e5%89%8d%e8%83%bd%e6%95%88%e7%bb%93%e6%9e%9c-frostbite-a-new-cpu-architecture-discovered-designed-and-verified-by-ai&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://architectlabs.com/blog/frostbite&#34;&gt;https://architectlabs.com/blog/frostbite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Architect Labs 介绍 Frostbite，一种围绕交互网构建的新指令集和 CPU 设计。Vine 程序编译成以局部图重写表达计算的中间表示，保留依赖关系；各计算块用附近的存储运行自己的任务，空闲时可从邻近计算块接活。团队让 AI 代理并行探索编译器、架构、RTL 和物理版图，以可转为 Lean 的 ASL 合同约束实现，并反复用 RTL 结果校准较快的模拟模型。&lt;/p&gt;
+&lt;p&gt;作者称，7 纳米设计在最终 GDS 中达到 500 MHz。一个带 L3 的四块计算簇与相近面积的双发射顺序 CPU 核比较，25 项工作负载的每瓦性能几何均值为 4.59 倍，其中 10 项用于设计搜索、15 项留出评估，留出组为 3.83 倍。&lt;/p&gt;
+&lt;p&gt;这些是流片前的数据，部分测试规模较小，对照核心也未具名。作者把更大的乱序核心、多核配置和 SPEC、PARSEC 等列为后续评估，操作系统、FPGA 体验以及发布 RTL 和 ISA 也仍是计划。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-618-points--评论-322-comments--投稿者shioyama--发布时间2026-11-20-180141-0800&#34;&gt;
+  HN 热度 618 points | 评论 322 comments | 投稿者：shioyama | 发布时间：2026-11-20 18:01:41 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-618-points--%e8%af%84%e8%ae%ba-322-comments--%e6%8a%95%e7%a8%bf%e8%80%85shioyama--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-180141-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50572503&#34;&gt;https://news.ycombinator.com/item?id=50572503&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分布式计算块和局部存储令人想到早期 Transputer，AI 的价值或在于让这类设计更容易探索和使用。&lt;/li&gt;
+&lt;li&gt;将任务留到最终测试有助于查明芯片是否只是适配了用于搜索的那组程序。&lt;/li&gt;
+&lt;li&gt;几千字符的 JSON 和千元素排序等小测试，无法充分代表大型程序的内存压力。&lt;/li&gt;
+&lt;li&gt;顺序双发射核心只是一种对照，想判断普遍优势，还需和现代乱序设计比较。&lt;/li&gt;
+&lt;li&gt;有读者希望看到可运行的芯片，以及真实负载下的能耗、温度和稳定性数据。&lt;/li&gt;
+&lt;li&gt;将统一内存换为本地内存后，数据传输与同步的成本仍需要纳入整体分析。&lt;/li&gt;
+&lt;li&gt;图重写的执行方式是否增加复制和编组开销，是判断设计取舍的一个具体问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-费曼为何把能否讲清楚当作理解的检验-if-you-cant-explain-something-in-simple-terms-you-dont-understand-it-2017&#34;&gt;
+  6. 费曼为何把能否讲清楚当作理解的检验 (If you can&amp;rsquo;t explain something in simple terms, you don&amp;rsquo;t understand it (2017))
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e8%b4%b9%e6%9b%bc%e4%b8%ba%e4%bd%95%e6%8a%8a%e8%83%bd%e5%90%a6%e8%ae%b2%e6%b8%85%e6%a5%9a%e5%bd%93%e4%bd%9c%e7%90%86%e8%a7%a3%e7%9a%84%e6%a3%80%e9%aa%8c-if-you-cant-explain-something-in-simple-terms-you-dont-understand-it-2017&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it&#34;&gt;https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jason Kottke 在 2017 年的文章里转述物理学家 David Goodstein 的回忆。Goodstein 请费曼解释为什么自旋二分之一的粒子服从费米–狄拉克统计，费曼原想为此准备一堂大一课程，几天后却说自己没能把它讲到这个层次，并将这种困难视作理解尚未到位的迹象。&lt;/p&gt;
+&lt;p&gt;Kottke 又引用 John Gruber 对苹果工程文化的描述：要求工程师把复杂技术讲得简明，是检验工程师能否掌握要义，听者是否能直接理解技术并非唯一目的。费曼也并不强求凡事都能举熟悉的例子。他解释磁力时坦言，自己找不到既熟悉又不会把问题换个名字的类比。文章借这些轶事推崇清楚表达和诚实面对理解的边界，没有提供一套用来判定任何人是否理解任何主题的通用标准。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-616-points--评论-289-comments--投稿者sammatilda--发布时间2026-11-20-174319-0800&#34;&gt;
+  HN 热度 616 points | 评论 289 comments | 投稿者：sammatilda | 发布时间：2026-11-20 17:43:19 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-616-points--%e8%af%84%e8%ae%ba-289-comments--%e6%8a%95%e7%a8%bf%e8%80%85sammatilda--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-174319-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50572355&#34;&gt;https://news.ycombinator.com/item?id=50572355&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即使掌握知识有助于简明表达，也不能把反命题当真，讲得流畅的人仍可能没有掌握内容。&lt;/li&gt;
+&lt;li&gt;什么叫简单要看听众，好的解释需要同时理解主题和对方已有的知识。&lt;/li&gt;
+&lt;li&gt;把 NP 说成难计算的问题虽然简短，却可能丢掉定义关键条件，结果并没有解释清楚。&lt;/li&gt;
+&lt;li&gt;熟悉的比喻可以提供直觉，如果没有交代它在哪里失效，也可能只制造听懂的错觉。&lt;/li&gt;
+&lt;li&gt;有人喜欢从第一原理一路推导，亲自看清每一步为何成立是简单概括无法替代的体验。&lt;/li&gt;
+&lt;li&gt;做菜等技能含有感官和身体经验，能在实践中掌握的人未必能把全部判断说成语言。&lt;/li&gt;
+&lt;li&gt;理解领域和教好别人需要不同的能力，有时现场展示比口头解释更能体现前者。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-一位工程师批评-claude-code-的安全限制妨碍防御工作-fuck-your-ai-safeguards&#34;&gt;
+  7. 一位工程师批评 Claude Code 的安全限制妨碍防御工作 (Fuck Your AI Safeguards)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e4%b8%80%e4%bd%8d%e5%b7%a5%e7%a8%8b%e5%b8%88%e6%89%b9%e8%af%84-claude-code-%e7%9a%84%e5%ae%89%e5%85%a8%e9%99%90%e5%88%b6%e5%a6%a8%e7%a2%8d%e9%98%b2%e5%be%a1%e5%b7%a5%e4%bd%9c-fuck-your-ai-safeguards&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ounapuu.ee/posts/2026/11/19/unsafeguards/&#34;&gt;https://ounapuu.ee/posts/2026/11/19/unsafeguards/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者说，自己请 Claude Code 检查所负责的产品是否有容易修复的安全问题，模型一度指出一个可用单行变更修正的问题，随后安全限制打断了工作。作者把这次经历与过去评估自家服务的暴露面、确认修复是否有效的困难联系起来。&lt;/p&gt;
+&lt;p&gt;文章着重批评放宽限制的申请流程。按作者的描述，申请可能需要等待多个工作日、提交政府签发的身份证明，并且会影响数据保留豁免；能否通过也不确定。作者因此担心，小团队很难在保护内部代码和及时防御之间做选择。他认为有能力的攻击者不会被同样的产品限制挡住，但这是一篇表达不满的个人文章，没有系统衡量拒绝率、防御收益或滥用损害；对厂商动机的怀疑也未获证实。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-597-points--评论-246-comments--投稿者speckx--发布时间2026-11-20-003018-0800&#34;&gt;
+  HN 热度 597 points | 评论 246 comments | 投稿者：speckx | 发布时间：2026-11-20 00:30:18 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-597-points--%e8%af%84%e8%ae%ba-246-comments--%e6%8a%95%e7%a8%bf%e8%80%85speckx--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-003018-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50562262&#34;&gt;https://news.ycombinator.com/item?id=50562262&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有维护者表示，即便目标是修补自己负责的环境，也会遇到服务无法继续协助的情况。&lt;/li&gt;
+&lt;li&gt;有 Daybreak Blue 用户说，生成模糊测试或修复其发现的问题有时都会被拒绝。&lt;/li&gt;
+&lt;li&gt;把开发和防御流程过度依赖单一第三方，会让供应商的策略调整变成自己的运维风险。&lt;/li&gt;
+&lt;li&gt;有人担心限制产生的附带损害大于其防护收益，但这是一种对净效果的判断，讨论未提供实测。&lt;/li&gt;
+&lt;li&gt;有读者怀疑复杂的合规与准入要求有利于大厂建立竞争壁垒，其动机无法由本次经历证明。&lt;/li&gt;
+&lt;li&gt;更广泛的忧虑是，关键工具的使用边界由少数私营供应商决定，组织缺少退出与替换选项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-anthropic-发布-claude-参与的两项黑洞理论计算-claude-solves-two-open-problems-in-the-physics-of-black-holes&#34;&gt;
+  8. Anthropic 发布 Claude 参与的两项黑洞理论计算 (Claude solves two open problems in the physics of black holes)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-anthropic-%e5%8f%91%e5%b8%83-claude-%e5%8f%82%e4%b8%8e%e7%9a%84%e4%b8%a4%e9%a1%b9%e9%bb%91%e6%b4%9e%e7%90%86%e8%ae%ba%e8%ae%a1%e7%ae%97-claude-solves-two-open-problems-in-the-physics-of-black-holes&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.anthropic.com/research/claude-black-hole-physics&#34;&gt;https://www.anthropic.com/research/claude-black-hole-physics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic 发布两篇预印本对应的研究说明。第一项是在全息对偶的量子侧，计算弱耦合 N=4 超杨–米尔斯理论加热时的相变。2003 年的工作已把问题化为三圈计算中一个系数的符号，Claude 代理分头运算并交叉核对；作者报告相变是突变，与另一端 Hawking–Page 转变的定性图像一致。中间耦合区的行为仍未由此确定。&lt;/p&gt;
+&lt;p&gt;第二项针对三维反德西特量子引力模型。Claude 从数值实验识别出规律，将谱曲线用于模自举，在大中心荷 c 时得到最轻黑洞质量的上界约为 c/9.1266，并给出该版本无法进一步压低上界的论证。这个版本忽略自旋，最佳界仍未达到 c/12，也不能据此确定真实的量子引力理论。&lt;/p&gt;
+&lt;p&gt;研究者称，代理从 22 个候选题着手，运行约六周；模自举结果经 Lean 验证，论文主要结果另由物理学家检查。这里是理论模型中的计算与证明，未直接描述我们宇宙的可观测黑洞。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-552-points--评论-270-comments--投稿者cybermango--发布时间2026-11-20-013044-0800&#34;&gt;
+  HN 热度 552 points | 评论 270 comments | 投稿者：cybermango | 发布时间：2026-11-20 01:30:44 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-552-points--%e8%af%84%e8%ae%ba-270-comments--%e6%8a%95%e7%a8%bf%e8%80%85cybermango--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-013044-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50563148&#34;&gt;https://news.ycombinator.com/item?id=50563148&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;讨论把两项贡献区分开来，一项是完成规模庞大的已知计算，另一项是用新的数学工具找到解析界。&lt;/li&gt;
+&lt;li&gt;某理论未被这一版模自举排除，只说明它通过这一条件，不能视作已经证明自洽。&lt;/li&gt;
+&lt;li&gt;在理论物理里先研究低维或有额外对称性的模型很常见，模型边界应随结论一起指出。&lt;/li&gt;
+&lt;li&gt;预印本如何署名引出责任问题：代理做了大量推导时，发起、核验和发表分别如何归功仍需说明。&lt;/li&gt;
+&lt;li&gt;有读者主张公布提示与引导历史，以便判断解题过程中人和模型各自提供了什么。&lt;/li&gt;
+&lt;li&gt;完整重现多代理科研可能还要保留程序、中间产物和计算资源，仅发布几个提示不够。&lt;/li&gt;
+&lt;li&gt;有读者指出预印本平台并未做同行评审，并留意到论文区分了内部模型首个结果与公开模型后来的独立复算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-嘉年华邮轮硫氧化物接近欧洲汽车十倍比较用的是-2017-年数据-carnival-cruises-emits-ten-times-more-sulphur-oxide-than-all-of-europes-cars-2019&#34;&gt;
+  9. 嘉年华邮轮硫氧化物接近欧洲汽车十倍，比较用的是 2017 年数据 (Carnival Cruises emits ten times more sulphur oxide than all of Europe&amp;rsquo;s cars (2019))
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e5%98%89%e5%b9%b4%e5%8d%8e%e9%82%ae%e8%bd%ae%e7%a1%ab%e6%b0%a7%e5%8c%96%e7%89%a9%e6%8e%a5%e8%bf%91%e6%ac%a7%e6%b4%b2%e6%b1%bd%e8%bd%a6%e5%8d%81%e5%80%8d%e6%af%94%e8%be%83%e7%94%a8%e7%9a%84%e6%98%af-2017-%e5%b9%b4%e6%95%b0%e6%8d%ae-carnival-cruises-emits-ten-times-more-sulphur-oxide-than-all-of-europes-cars-2019&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ecohustler.com/article/one-corporation-to-pollute-them-all/&#34;&gt;https://ecohustler.com/article/one-corporation-to-pollute-them-all/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ecohustler 2019 年引用环保组织 Transport &amp;amp; Environment 的分析，称嘉年华集团船队 2017 年在欧洲沿海排放的硫氧化物（SOx），接近欧洲约 2.6 亿辆汽车的十倍；皇家加勒比船队约为汽车总量的四倍。报告列出西班牙、意大利和希腊等受影响地区，以及巴塞罗那、帕尔马和威尼斯等港口，并把硫酸盐气溶胶与健康和酸化风险相联系。&lt;/p&gt;
+&lt;p&gt;原文也谈到氮氧化物，但这是一项不同的比较：按文中举例，马赛的 57 艘邮轮在 2017 年排放的氮氧化物，约等于当地四分之一乘用车的排放。文章主张更多港口使用岸电，并扩大排放控制区域。&lt;/p&gt;
+&lt;p&gt;上述倍数限于年份、地理边界与污染物，不能当作总空气污染或碳排放的比值。作为后续背景，国际海事组织自 2020 年把一般海域船用燃油硫含量上限从 3.50% 降至 0.50%，排放控制区标准更严；这篇旧文没有给出新规后的实测对比。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.imo.org/en/mediacentre/hottopics/pages/sulphur-2020.aspx&#34;&gt;https://www.imo.org/en/mediacentre/hottopics/pages/sulphur-2020.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-502-points--评论-310-comments--投稿者sammatilda--发布时间2026-11-20-171309-0800&#34;&gt;
+  HN 热度 502 points | 评论 310 comments | 投稿者：sammatilda | 发布时间：2026-11-20 17:13:09 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-502-points--%e8%af%84%e8%ae%ba-310-comments--%e6%8a%95%e7%a8%bf%e8%80%85sammatilda--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-171309-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50572116&#34;&gt;https://news.ycombinator.com/item?id=50572116&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把硫氧化物的十倍关系写成总空气污染十倍，会误导读者以为比较了所有污染物。&lt;/li&gt;
+&lt;li&gt;旧文的数据早于 IMO 2020 限硫规定，要讨论今天的差距，需要寻找新规后的同口径数据。&lt;/li&gt;
+&lt;li&gt;南安普敦当地读者提到，邮轮靠港接岸电可以减少发电用的船机运转，但不影响航行时的排放。&lt;/li&gt;
+&lt;li&gt;高硫重油同样曾被大型货船使用，低成本燃料的问题并不限于邮轮。&lt;/li&gt;
+&lt;li&gt;有读者建议优先限制休闲航运使用高污染燃料，认为邮轮消费可以承担更严格的标准。&lt;/li&gt;
+&lt;li&gt;反对者追问，货柜运输服务的消费同样可能不是必需品，不能只凭货运或旅游标签判断哪类排放值得保留。&lt;/li&gt;
+&lt;li&gt;船舶跨境运营使单一司法辖区的措施难以全面覆盖，跨国排放规则有现实意义。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-signal-将限制-ios-27-和部分-android-系统代理读取聊天画面-signal-is-serious-about-protecting-your-privacy&#34;&gt;
+  10. Signal 将限制 iOS 27 和部分 Android 系统代理读取聊天画面 (Signal Is Serious About Protecting Your Privacy)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-signal-%e5%b0%86%e9%99%90%e5%88%b6-ios-27-%e5%92%8c%e9%83%a8%e5%88%86-android-%e7%b3%bb%e7%bb%9f%e4%bb%a3%e7%90%86%e8%af%bb%e5%8f%96%e8%81%8a%e5%a4%a9%e7%94%bb%e9%9d%a2-signal-is-serious-about-protecting-your-privacy&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://signal.org/blog/protecting-your-privacy/&#34;&gt;https://signal.org/blog/protecting-your-privacy/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Signal 基金会的 Meredith Whittaker 说，端到端加密可以保护传输中的消息，但一旦系统 AI 读取设备上已解密的画面并保存副本，应用便无法继续控制这些内容。Signal 此前已用截图限制应对 Windows 11 的 Recall；这次宣布在 iOS 27 防止应用截图，并在能检测到 AI 助手尝试读取画面的 Android 环境中自动启用屏幕安全设置。&lt;/p&gt;
+&lt;p&gt;用户可以在 Signal 设置里关闭保护，但聊天对方的信息也可能随画面被捕获。Signal 说，Android 各厂商实现不同，检测不能覆盖所有设备；在 macOS 上也无法可靠拦截单次截图，因此没有部署同等保护。截图限制还不能处理通过文件系统、通知或其他系统接口取得数据的情形。&lt;/p&gt;
+&lt;p&gt;Signal 要求 Apple、Google 和 Microsoft 提供文档明确的机制，让应用在不牺牲基本体验的前提下拒绝系统代理读取数据，并希望操作系统能更清楚地区分辅助技术所需权限与 AI 代理使用同类权限的情形。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-499-points--评论-298-comments--投稿者dotcoma--发布时间2026-11-20-174216-0800&#34;&gt;
+  HN 热度 499 points | 评论 298 comments | 投稿者：dotcoma | 发布时间：2026-11-20 17:42:16 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-499-points--%e8%af%84%e8%ae%ba-298-comments--%e6%8a%95%e7%a8%bf%e8%80%85dotcoma--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-20-174216-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50572348&#34;&gt;https://news.ycombinator.com/item?id=50572348&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;公开各系统代理实际读屏方式的调查结果，可以帮助缺少同等研究资源的小团队。&lt;/li&gt;
+&lt;li&gt;有读者建议将 AI 代理访问做成独立权限，像定位一样明确征求同意。&lt;/li&gt;
+&lt;li&gt;WhatsApp 所用的加密协议与 Signal 应用是不同概念，不能把一个产品的存档行为归给另一个。&lt;/li&gt;
+&lt;li&gt;有用户希望 Siri 和 Spotlight 索引自己的家庭聊天，因为可搜索性对他有实际价值。&lt;/li&gt;
+&lt;li&gt;聊天涉及双方，一端允许 AI 处理内容之前，还需要考虑对方是否同意将消息交给系统或远程服务。&lt;/li&gt;
+&lt;li&gt;另一种立场把最终的数据访问决策视作设备所有者的权利，希望应用把选择留给用户。&lt;/li&gt;
+&lt;li&gt;即便应用拦住系统截图，也无法绝对阻止接收方另行记录内容，因此应区分加密保护与终端行为。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-20 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-20-HackerNews/</link>
+      <pubDate>Fri, 20 Nov 2026 08:31:20 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-20-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-20-hacker-news-top-stories&#34;&gt;
+  2026-11-20 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-20-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Google 发布 Gemini 4 Neon，支持 100 万 token 上下文，API 每百万输入／输出 token 为 3／15 美元，定位于 Hydrogen 与 Carbon 之间的复杂高频任务。&lt;/li&gt;
+&lt;li&gt;VioletPixel 作者以 Stripe 的支付系统经验指出，复杂系统靠深入理解并愿意负责的人维持，担忧裁员和只看 AI 产出会侵蚀这层保障。&lt;/li&gt;
+&lt;li&gt;Element 介绍欧盟委员会从 2025 年 12 月概念验证推进到 2026 年 9 月完成四万多名员工的 Matrix 笔记本部署，外部联邦互通仍在评估。&lt;/li&gt;
+&lt;li&gt;微软发布覆盖编程、安全、图像、实时语音、医疗转录和路由的 MAI 模型，实时语音起价每分钟 0.01 美元，编程模型强调日常任务而非最难长程研究。&lt;/li&gt;
+&lt;li&gt;Anthropic 宣布 IPO 每股 83 美元、发行 9.8 亿股，按发行价计算总规模约 813.4 亿美元，其中旧股出售收入不归公司。&lt;/li&gt;
+&lt;li&gt;Veria Labs 披露 Ruby2Shell，特定旧编码中的 ß 转大写可触发单字节堆溢出；团队称默认 Rails 可达，Ruby 3.3.14、3.4.13、4.0.10 已修复。&lt;/li&gt;
+&lt;li&gt;Artem 用 LFI、smoltcp 与 DPDK／AF_XDP 在单核、10GB 内存的实验中运行千万级简化 Web 服务；约 620 字节空闲状态不代表完整生产服务器。&lt;/li&gt;
+&lt;li&gt;Lastbook 提供 Mac、Windows 和 Ubuntu 离线资料库，内容包约 7.7GB、67.5GB 或 388GB，可选 Gemma 4 模型另需约 17GB，须预先联网下载。&lt;/li&gt;
+&lt;li&gt;OpenJDK 九月 PR 已描述 AVX‑512 Base64 越界写；关联 issue 记录 Oracle 要求暂停公开推进并接手，不能仅凭 PR 沉默断言漏洞被忽略。&lt;/li&gt;
+&lt;li&gt;Ruby 官方发布 3.3.14、3.4.13 和 4.0.10，修复正则与大小写转换中的七项漏洞；部分已有 RCE 证明，具体暴露取决于攻击者能控制的输入。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-google-发布-gemini-4-neon以百万-token-上下文平衡复杂任务与成本-gemini-4-neon&#34;&gt;
+  1. Google 发布 Gemini 4 Neon，以百万 token 上下文平衡复杂任务与成本 (Gemini 4 Neon)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-google-%e5%8f%91%e5%b8%83-gemini-4-neon%e4%bb%a5%e7%99%be%e4%b8%87-token-%e4%b8%8a%e4%b8%8b%e6%96%87%e5%b9%b3%e8%a1%a1%e5%a4%8d%e6%9d%82%e4%bb%bb%e5%8a%a1%e4%b8%8e%e6%88%90%e6%9c%ac-gemini-4-neon&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/&#34;&gt;https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google 发布 Gemini 4 Neon，强调复杂软件工程、知识工作和科研任务的完成速度与成本平衡。API 每百万输入 token 为 3 美元、缓存输入 0.15 美元、输出 15 美元，上下文窗口为 100 万 token。官方将它放在 Gemini 4 家族中间：Carbon 面向最困难的长程项目，Hydrogen 面向快速日常执行，Neon 则处理需要较深推理、又频繁发生的工作。&lt;/p&gt;
+&lt;p&gt;Google 称 Neon 在 Artificial Analysis Intelligence Index 的 xhigh 档得到 61 分、总体第三，在 Coding Agent Index 得到 58.6、排名第一。文章也展示不同运行框架的影响：同一 SWE-sweep 测试，在 mini-SWE 中为 12.8%，在 Antigravity 中为 39.0%，因此不能把模型分数与具体代理环境分开解读。&lt;/p&gt;
+&lt;p&gt;普通版本开始向付费 Gemini API、企业版及 Pro／Ultra 用户逐步开放，专门网络安全版本则面向 Fairwind 计划中的可信防守方后续推出。文中更低编造率、任务越界率及提示注入防护表现均来自指定测试；例如某注入基准的零攻击成功率，还以实时防护和最高推理档为条件，不等于现实环境不存在风险。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1012-points--评论-761-comments--投稿者yigitdemirag--发布时间2026-11-19-053407-0800&#34;&gt;
+  HN 热度 1012 points | 评论 761 comments | 投稿者：yigitdemirag | 发布时间：2026-11-19 05:34:07 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1012-points--%e8%af%84%e8%ae%ba-761-comments--%e6%8a%95%e7%a8%bf%e8%80%85yigitdemirag--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-053407-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50552424&#34;&gt;https://news.ycombinator.com/item?id=50552424&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;元素命名无法清楚传达规模、价格和任务定位，用户需要额外查表才能决定用哪一个模型。&lt;/li&gt;
+&lt;li&gt;实际订阅资格和账号类型可能影响能否在 Antigravity 看到模型，不能只凭发布公告判断每个账号都已开放。&lt;/li&gt;
+&lt;li&gt;支持者看重 Neon 在质量和延迟之间的平衡，认为完成任务更快也可能值得支付更高 token 单价。&lt;/li&gt;
+&lt;li&gt;另一种比较认为相近榜单分数下 OpenAI 的价格更低，是否划算仍要看自己的工作负载。&lt;/li&gt;
+&lt;li&gt;模型刚发布时就断言绝不可能胜过某个竞争产品，缺少应有的实测和不确定性意识。&lt;/li&gt;
+&lt;li&gt;第三方客户端限制会影响工具选择，有人宁愿放弃尝试也不愿让常用 Google 账号承担条款风险。&lt;/li&gt;
+&lt;li&gt;常见编程基准越来越可能被针对性优化，榜单之间的接近不应代替真实项目验证。&lt;/li&gt;
+&lt;li&gt;新模型表现接近或超过旧型号，并不让按型号排列的简单大小等级更清楚，价格、速度和推理档应一起比较。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-复杂系统需要聪明且真正负责的人-we-need-smart-people-who-give-a-shit&#34;&gt;
+  2. 复杂系统需要聪明且真正负责的人 (We need smart people who give a shit)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e5%a4%8d%e6%9d%82%e7%b3%bb%e7%bb%9f%e9%9c%80%e8%a6%81%e8%81%aa%e6%98%8e%e4%b8%94%e7%9c%9f%e6%ad%a3%e8%b4%9f%e8%b4%a3%e7%9a%84%e4%ba%ba-we-need-smart-people-who-give-a-shit&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/&#34;&gt;https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者回忆自己在 Stripe 接触银行与资金流转系统的经历，认为 ACH 之类系统虽然老旧、复杂且带有许多历史包袱，却往往能可靠运转，关键在于有人理解内部细节，愿意修补、绕行、处理例外并承担后果。文章把这种知识与责任感视为复杂基础设施中容易被忽略的支撑。&lt;/p&gt;
+&lt;p&gt;作者担心，管理层把生成式 AI 的可见产出与熟练工程师的工作等同，忽视后者会主动察觉异常、连接线索和维护长期质量。裁员以及要求工程师主要监督模型，可能削弱他们通过亲自构建获得的理解、对系统的所有权感，以及继续投入的意愿。&lt;/p&gt;
+&lt;p&gt;这是一篇以个人经历和价值判断展开的评论，包含对资本和管理激励的批评，并非事故调查。作者明确表示没有近期微软、空管、银行等故障的内部信息；他提出的是这些事件可能共享某种组织问题的解释，不能据此断言具体事故由 AI 或裁员直接造成，也没有数据证明负责的工程师正在以何种速度减少。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-773-points--评论-389-comments--投稿者exmachina73--发布时间2026-11-19-075349-0800&#34;&gt;
+  HN 热度 773 points | 评论 389 comments | 投稿者：ExMachina73 | 发布时间：2026-11-19 07:53:49 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-773-points--%e8%af%84%e8%ae%ba-389-comments--%e6%8a%95%e7%a8%bf%e8%80%85exmachina73--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-075349-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50554045&#34;&gt;https://news.ycombinator.com/item?id=50554045&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工程师被不断叠加项目管理、发布和沟通职责后，可能缺少深入掌握复杂系统的时间。&lt;/li&gt;
+&lt;li&gt;另一位资深工程师把设计、沟通、上线和运行视为专业责任的一部分，认为全部交给别人反而会失去工作自主权。&lt;/li&gt;
+&lt;li&gt;长期人手不足却得不到组织回应，会使原本愿意负责的人逐渐疲惫和疏离。&lt;/li&gt;
+&lt;li&gt;重视工程责任不能只停留在情怀，愿意维护系统的人也需要得到相应报酬。&lt;/li&gt;
+&lt;li&gt;预防故障、跨团队协作和理解客户等工作常常不体现在短期指标中，甚至因拖慢交付而受到惩罚。&lt;/li&gt;
+&lt;li&gt;也有反驳认为认真负责通常会带来可测量的影响，问题可能在组织没有选对衡量方式，而不是完全无法衡量。&lt;/li&gt;
+&lt;li&gt;只按工单数量和截止时间驱动工作的环境早于 AI 存在，不能把所有失去责任感的现象都归为模型造成。&lt;/li&gt;
+&lt;li&gt;聪明不等于有判断力或能自我反思，真正需要的也包括经验、审慎和对长期后果的关心。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-欧盟委员会将-matrix-部署到四万多名员工的笔记本-how-the-european-commission-rolled-out-matrix-to-more-than-40k-staff&#34;&gt;
+  3. 欧盟委员会将 Matrix 部署到四万多名员工的笔记本 (How the European Commission rolled out Matrix to more than 40k staff)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e6%ac%a7%e7%9b%9f%e5%a7%94%e5%91%98%e4%bc%9a%e5%b0%86-matrix-%e9%83%a8%e7%bd%b2%e5%88%b0%e5%9b%9b%e4%b8%87%e5%a4%9a%e5%90%8d%e5%91%98%e5%b7%a5%e7%9a%84%e7%ac%94%e8%ae%b0%e6%9c%ac-how-the-european-commission-rolled-out-matrix-to-more-than-40k-staff&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/&#34;&gt;https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原链接目前跳转到 Matrix 会议视频合集，以下依据检索服务返回的原文文本整理。Element 介绍，欧盟委员会在 2025 年 12 月完成概念验证，2026 年上半年建设生产环境，随后分批部署，于 9 月覆盖四万多名员工的笔记本。&lt;/p&gt;
+&lt;p&gt;方案采用 Element Server Suite Pro，由委员会掌握架构与运营控制，托管在选定的主权云提供方，并接入 EU Login。这里的主权强调数据、供应商选择和运营控制，不是所有基础设施都由委员会自行拥有。外部 Matrix 联邦尚在评估，移动端推广也仍在推进。&lt;/p&gt;
+&lt;p&gt;扩容中出现跨 Synapse 服务器找不到同事、自助注册前账号不可发现，以及在线状态广播造成负载等问题；团队修复搜索、调整扩缩容，并关闭实时在线状态。原文将 Element 定位为满足特定需求的内部通信工具，并未宣称全面替代 Teams。材料由产品供应商发布，部署覆盖也不等于已证明四万人每天活跃使用。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-653-points--评论-312-comments--投稿者liotier--发布时间2026-11-19-185829-0800&#34;&gt;
+  HN 热度 653 points | 评论 312 comments | 投稿者：liotier | 发布时间：2026-11-19 18:58:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-653-points--%e8%af%84%e8%ae%ba-312-comments--%e6%8a%95%e7%a8%bf%e8%80%85liotier--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-185829-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50558533&#34;&gt;https://news.ycombinator.com/item?id=50558533&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;频繁验证设备和临时浏览器会话的体验，会在大规模部署时转化为显著的日常摩擦。&lt;/li&gt;
+&lt;li&gt;端到端加密的新设备接入本来就涉及密钥信任，不能直接拿没有相同加密方式的登录流程作比较。&lt;/li&gt;
+&lt;li&gt;实时在线状态在四万人规模下影响性能令人意外，基础功能的可扩展性值得进一步解释。&lt;/li&gt;
+&lt;li&gt;自托管小群组也有积极使用经验，ElementX 的界面和可控的数据流向是迁移吸引力之一。&lt;/li&gt;
+&lt;li&gt;企业和政府采购可以支持开源项目的持续开发，而不只是增加更多免费用户。&lt;/li&gt;
+&lt;li&gt;供应商有动力突出成功部分，项目效果仍需要结合实际使用者反馈判断。&lt;/li&gt;
+&lt;li&gt;把它理解为敏感通信的补充渠道，比要求与 Teams 所有功能一对一替换更接近部署目的。&lt;/li&gt;
+&lt;li&gt;客户端分散、解密错误和使用体验仍需要改进，大型公共客户若能带来开发资源会更有意义。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-微软发布七款-mai-模型主打企业任务的规模化成本-seven-new-models-at-scalable-price-performance&#34;&gt;
+  4. 微软发布七款 MAI 模型，主打企业任务的规模化成本 (Seven new models at scalable price-performance)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e5%be%ae%e8%bd%af%e5%8f%91%e5%b8%83%e4%b8%83%e6%ac%be-mai-%e6%a8%a1%e5%9e%8b%e4%b8%bb%e6%89%93%e4%bc%81%e4%b8%9a%e4%bb%bb%e5%8a%a1%e7%9a%84%e8%a7%84%e6%a8%a1%e5%8c%96%e6%88%90%e6%9c%ac-seven-new-models-at-scalable-price-performance&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://microsoft.ai/news/microsoft-ignite-2026/&#34;&gt;https://microsoft.ai/news/microsoft-ignite-2026/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软在 Ignite 发布 MAI 模型组合：MAI Cyber 2 Flash、MAI Code 2、Code 2 Flash、Image 2.7、Realtime 1、基于 MAI Transcribe 2 的 Dragon Copilot Transcribe，以及 Decision 1.1。文章强调，不同专门模型可分担大规模代理工作，而非所有任务都调用最大模型。&lt;/p&gt;
+&lt;p&gt;厂商称，MAI Code 2 在四项编程基准平均达到 GPT‑6.1 Sol 约 98% 的表现，价格约为其 40%；Code 2 Flash 面向解释代码、局部修改和日常修复。微软明确说，这些编程模型尚未针对基础科学研究或非常长程的代理工作优化，不能将日常任务成绩外推到所有复杂问题。&lt;/p&gt;
+&lt;p&gt;MAI Realtime 1 起价每音频分钟 0.01 美元，Image 2.7 Flash 宣称约每千张 10 美元；Decision 1.1 用于模型路由。另有 MAI Licensed Weights，可定制并运行于客户自己的 Azure 环境，这与无条件开放权重不同。不同产品的开放状态也不同：例如 Code 2 Flash 的 Foundry 入口仍是有限访问预览；文中性价比和领先幅度应理解为特定基准、配置与厂商比较口径下的结果。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-592-points--评论-375-comments--投稿者gmays--发布时间2026-11-19-000824-0800&#34;&gt;
+  HN 热度 592 points | 评论 375 comments | 投稿者：gmays | 发布时间：2026-11-19 00:08:24 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-592-points--%e8%af%84%e8%ae%ba-375-comments--%e6%8a%95%e7%a8%bf%e8%80%85gmays--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-000824-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50548021&#34;&gt;https://news.ycombinator.com/item?id=50548021&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;专用路由模型与通用推理模型直接比较几十倍速度和价格，未必能帮助用户判断同等任务下的价值。&lt;/li&gt;
+&lt;li&gt;“便宜多少倍”容易混淆，直接给单价或相对百分比更利于采购比较。&lt;/li&gt;
+&lt;li&gt;愿意长期依赖模型的用户希望拥有可自行运行的权重，单纯增加一个闭源提供方吸引力有限。&lt;/li&gt;
+&lt;li&gt;另一种需求则优先考虑同等效果下更低价格和更高吞吐，不要求每个新模型都开放权重。&lt;/li&gt;
+&lt;li&gt;只能在 Azure 环境运行的授权权重，距离完全自主选择部署地点仍有差别。&lt;/li&gt;
+&lt;li&gt;对已经大量使用 Azure 的企业而言，这种控制范围即使有限也可能比现状更有吸引力。&lt;/li&gt;
+&lt;li&gt;早期使用者报告 Code 2 能胜任自己的常规工作，但这种体验仍只是具体工作负载上的观察。&lt;/li&gt;
+&lt;li&gt;低价图像生成和转录各自有实际需求，专门模型的价值不必完全由通用聊天榜单决定。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-anthropic-ipo-定价每股-83-美元发行九亿八千万股-anthropic-prices-initial-public-offering&#34;&gt;
+  5. Anthropic IPO 定价每股 83 美元，发行九亿八千万股 (Anthropic prices initial public offering)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-anthropic-ipo-%e5%ae%9a%e4%bb%b7%e6%af%8f%e8%82%a1-83-%e7%be%8e%e5%85%83%e5%8f%91%e8%a1%8c%e4%b9%9d%e4%ba%bf%e5%85%ab%e5%8d%83%e4%b8%87%e8%82%a1-anthropic-prices-initial-public-offering&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.anthropic.com/news/anthropic-prices-initial-public-offering&#34;&gt;https://www.anthropic.com/news/anthropic-prices-initial-public-offering&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic 公告首次公开发行 A 类普通股的定价为每股 83 美元，共发行 9.8 亿股。其中约 9.5635 亿股由公司出售，约 2,364.9 万股由现有股东出售，公司不会取得旧股出售的收入。按股数和发行价直接计算，基础发行总规模约为 813.4 亿美元；这不是扣除费用后的公司净募资额，也不是公司的整体估值。&lt;/p&gt;
+&lt;p&gt;公告计划于 2026 年 11 月 19 日在 Nasdaq Global Select Market 以 ANT 为代码开始交易，预计 11 月 20 日完成交割，仍需满足通常交割条件。承销商另获三十天选择权，可额外购买最多 1.47 亿股；是否行使不能预先计入基础发行规模。&lt;/p&gt;
+&lt;p&gt;注册声明已于 11 月 18 日获 SEC 宣告生效。该材料是发行定价公告，未提供实际开盘价、上市后表现或完整估值计算所需的所有股份信息；讨论中关于万亿美元市值、超额认购和未来盈利的数字，不能混作这份公告已经确认的事实。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-411-points--评论-773-comments--投稿者surprisetalk--发布时间2026-11-19-073009-0800&#34;&gt;
+  HN 热度 411 points | 评论 773 comments | 投稿者：surprisetalk | 发布时间：2026-11-19 07:30:09 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-411-points--%e8%af%84%e8%ae%ba-773-comments--%e6%8a%95%e7%a8%bf%e8%80%85surprisetalk--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-073009-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50553843&#34;&gt;https://news.ycombinator.com/item?id=50553843&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发行规模需要区分公司新股和股东旧股，不能把全部交易金额都算成公司的现金流入。&lt;/li&gt;
+&lt;li&gt;超额认购还可能受到机构预期分配比例而放大订单的影响，订单数量并不直接等同最终长期持仓需求。&lt;/li&gt;
+&lt;li&gt;流通盘比例、锁定安排和潜在股份都会影响市值解释，发行价乘一个股数未必足以概括整体经济价值。&lt;/li&gt;
+&lt;li&gt;模型领先窗口不断缩短，使长期竞争优势能否支撑高估值成为核心疑问。&lt;/li&gt;
+&lt;li&gt;另一个立场认为企业购买的不只是模型分数，还包括品牌、信任和采购关系，因此技术接近未必立即抹平商业优势。&lt;/li&gt;
+&lt;li&gt;允许员工适度出售股份本身不必然是坏信号，还要看出售比例及真实行为，不能只凭许可就判断大家正在逃离。&lt;/li&gt;
+&lt;li&gt;普通股东的资金投入与治理控制权可能不成比例，这种安排值得独立于股价表现审视。&lt;/li&gt;
+&lt;li&gt;评估 IPO 回报时应分清机构发行价、散户实际买入价和持有时间，个别历史赢家也不能证明每次发行都划算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-ruby2shell旧编码大小写转换中的单字节堆溢出-ruby2ßhell-pre-authentication-rce-on-stock-rails&#34;&gt;
+  6. Ruby2Shell：旧编码大小写转换中的单字节堆溢出 (Ruby2ßhell: Pre-authentication RCE on stock Rails)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-ruby2shell%e6%97%a7%e7%bc%96%e7%a0%81%e5%a4%a7%e5%b0%8f%e5%86%99%e8%bd%ac%e6%8d%a2%e4%b8%ad%e7%9a%84%e5%8d%95%e5%ad%97%e8%8a%82%e5%a0%86%e6%ba%a2%e5%87%ba-ruby2%c3%9fhell-pre-authentication-rce-on-stock-rails&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://verialabs.com/ruby2shell/&#34;&gt;https://verialabs.com/ruby2shell/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Veria Labs 披露 Ruby2Shell（CVE‑2026‑132825，对应 GHSA‑34m4‑m9fh‑gqp5），把 Ruby 字符串大小写转换中的单字节堆溢出发展为远程代码执行。问题出在部分 ISO‑8859 和 Windows‑125x 单字节编码中：ß 转大写会输出两个 S，而循环只确认还有一个字节空间，可能在缓冲区边界越界写入。&lt;/p&gt;
+&lt;p&gt;这一路径不影响 UTF‑8 字符串，但不能因此认定默认 Web 应用不会接触旧编码。报告称，受影响 Ruby 上的 Rails 和经典风格 Sinatra 默认配置可触达；其他框架或普通 Rack 并非默认暴露，仍取决于应用怎样处理输入。单字节越界也不自动等于任意环境都能执行代码，团队称已完成 RCE，并计划在 11 月 25 日或主要厂商修复后再公开相应证明。&lt;/p&gt;
+&lt;p&gt;修复版为 Ruby 3.3.14、3.4.13 和 4.0.10；Ruby 3.2 及更老版本已结束维护。对 GitLab 等自带运行时的软件，修复还须进入厂商发行包，升级宿主机上的另一套 Ruby 不代表捆绑副本也更新。本文聚焦的是官方七项公告中的一项，完整公告另见第十篇。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/&#34;&gt;https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-380-points--评论-160-comments--投稿者jdns--发布时间2026-11-19-130911-0800&#34;&gt;
+  HN 热度 380 points | 评论 160 comments | 投稿者：jdns | 发布时间：2026-11-19 13:09:11 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-380-points--%e8%af%84%e8%ae%ba-160-comments--%e6%8a%95%e7%a8%bf%e8%80%85jdns--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-130911-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50556287&#34;&gt;https://news.ycombinator.com/item?id=50556287&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这不是官方公告之外又多出的一项漏洞，而是其中大小写转换问题的独立研究与利用分析。&lt;/li&gt;
+&lt;li&gt;大小写转换没有普遍的等长保证，额外预留固定字节数也不能替代按真实输出长度检查。&lt;/li&gt;
+&lt;li&gt;Rails 尊重 multipart 表单中的字符集声明，因此不能只因应用平时使用 UTF‑8 就排除旧编码输入路径。&lt;/li&gt;
+&lt;li&gt;能够使进程崩溃不等于已经证明远程代码执行，但确认内存破坏后也不宜因尚无通用利用而轻视。&lt;/li&gt;
+&lt;li&gt;暂缓公开完整利用链能为自带运行时的下游产品争取修复时间，因为其用户未必能独立替换组件。&lt;/li&gt;
+&lt;li&gt;另一方认为公开技术细节已足以帮助模型重建利用，隐藏证明代码能够争取多少时间存在争议。&lt;/li&gt;
+&lt;li&gt;AI 可能降低为不同版本和部署定制利用链的成本，因此“没有一份通杀载荷”不意味着风险很小。&lt;/li&gt;
+&lt;li&gt;减少不安全内存操作与纵深防御可以共同降低暴露面，但内存安全本身不会消灭逻辑和硬件层面的漏洞。&lt;/li&gt;
+&lt;li&gt;不断出现安全公告也促使运维重新设计预备缓解、发布订阅和补丁验证流程，减少每次事故都临时救火。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-用专用运行时和用户态网络栈在-10gb-内存中运行千万级-http-响应端点-15m-web-servers-on-one-vm--smoltcp-dpdk-af_xdp&#34;&gt;
+  7. 用专用运行时和用户态网络栈，在 10GB 内存中运行千万级 HTTP 响应端点 (15M web servers on one VM – smoltcp, DPDK, AF_XDP)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e7%94%a8%e4%b8%93%e7%94%a8%e8%bf%90%e8%a1%8c%e6%97%b6%e5%92%8c%e7%94%a8%e6%88%b7%e6%80%81%e7%bd%91%e7%bb%9c%e6%a0%88%e5%9c%a8-10gb-%e5%86%85%e5%ad%98%e4%b8%ad%e8%bf%90%e8%a1%8c%e5%8d%83%e4%b8%87%e7%ba%a7-http-%e5%93%8d%e5%ba%94%e7%ab%af%e7%82%b9-15m-web-servers-on-one-vm--smoltcp-dpdk-af_xdp&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://kapteko.com/15-million-webservers/&#34;&gt;https://kapteko.com/15-million-webservers/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者 Artem 从一个只返回固定 HTTP 响应的 C 程序出发，尝试在一台只有一个 CPU 核心、10GB 内存的虚拟机中运行 1,500 万个服务。普通进程和内核 socket 很快遇到端口、进程及内存开销限制；单个内核 socket 的相关结构在其分析中约需 3,384 字节，无法装进目标预算。&lt;/p&gt;
+&lt;p&gt;方案不是启动千万个完整 Linux 进程，而是把来宾放入基于 LFI 的定制运行时，拦截系统调用并进行用户态调度，再用 Rust 的 smoltcp 实现网络协议栈，通过 TUN／TAP、DPDK 或 AF_XDP 接收数据。文章报告用户态方案中每个空闲服务约 620 字节、活跃服务约 1KB，最终达到约 1,600 万个服务；其基准中 DPDK 最快，AF_XDP 紧随其后。&lt;/p&gt;
+&lt;p&gt;收益来自针对简化工作负载去掉通用抽象，而不是普通应用天然能以这个成本运行。DPDK 需要忙轮询和独占设备，AF_XDP 的管理方式不同；作者也承认，概念验证与实现完整 Linux／POSIX 兼容性是两回事。文章没有证明同等数量、带 TLS 和复杂业务逻辑的独立生产站点可以达到相同结果。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-378-points--评论-41-comments--投稿者fessguid--发布时间2026-11-19-135636-0800&#34;&gt;
+  HN 热度 378 points | 评论 41 comments | 投稿者：fessguid | 发布时间：2026-11-19 13:56:36 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-378-points--%e8%af%84%e8%ae%ba-41-comments--%e6%8a%95%e7%a8%bf%e8%80%85fessguid--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-135636-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50556533&#34;&gt;https://news.ycombinator.com/item?id=50556533&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源极端受限时，重新检查抽象层和实际所需状态，可能比在现有通用架构上继续调参更有效。&lt;/li&gt;
+&lt;li&gt;“千万个服务器”需要明确含义，从客户端看可能只是千万组能响应 HTTP 的 IP 和端口，并不自动要求同等数量独立应用。&lt;/li&gt;
+&lt;li&gt;标题中的 Web 容易让人预期完整 HTTP 解析和路由系统，说明服务模型有助于避免误读。&lt;/li&gt;
+&lt;li&gt;让应用取得原始数据包并自行处理协议，更接近外核式的资源分配思路，而不只是把 Linux 变成微内核。&lt;/li&gt;
+&lt;li&gt;进一步支持现代 HTTPS 的加密和连接状态，是从实验走向实用仍需回答的问题。&lt;/li&gt;
+&lt;li&gt;怀疑者认为 smoltcp 的默认限制和目标场景与通用互联网 Web 服务不同，不能直接把实验数字当作生产能力。&lt;/li&gt;
+&lt;li&gt;用链路带宽推算每包处理时间会受包大小、队列和多核分流影响，文章里的直观数字仍是简化模型。&lt;/li&gt;
+&lt;li&gt;技术文章也可以用幽默和失败过程帮助理解复杂机制，而不是只展示最后的高性能结果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-lastbook把生存资料离线地图与可选本地-ai-放进电脑-everything-you-need-to-survive-and-rebuild-society&#34;&gt;
+  8. Lastbook：把生存资料、离线地图与可选本地 AI 放进电脑 (Everything you need to survive and rebuild society)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-lastbook%e6%8a%8a%e7%94%9f%e5%ad%98%e8%b5%84%e6%96%99%e7%a6%bb%e7%ba%bf%e5%9c%b0%e5%9b%be%e4%b8%8e%e5%8f%af%e9%80%89%e6%9c%ac%e5%9c%b0-ai-%e6%94%be%e8%bf%9b%e7%94%b5%e8%84%91-everything-you-need-to-survive-and-rebuild-society&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://lastbook.org/&#34;&gt;https://lastbook.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lastbook 是面向 Mac、Windows 和 Linux 的离线资料应用，集合实用指南、PDF、百科、视频与地图，主题包括急救、饮水、食物保存、维修及能源。网站列出约 2,324 个视频和超过 25.8 万个可检索地点；安装时需先联网下载内容，之后阅读、地图、视频和本地问答可离线运行。&lt;/p&gt;
+&lt;p&gt;小、中、全部内容包分别约为 7.7GB、67.5GB 和 388GB。可选的 Gemma 4 26B A4B 量化模型另占约 17GB，README 表示模型与上下文约需 18GB 内存并另留余量；不安装模型仍可检索资料。详细地图与地址索引主要按美国州选择，不能把宣传语理解为各国均有同样覆盖。&lt;/p&gt;
+&lt;p&gt;当前桌面版本支持 Apple Silicon／macOS 14+、64 位 Windows 10／11，以及指定 Ubuntu 版本；README 中另有仅供自行构建的 iPad 预览，并非已经发布手机版。项目原始代码采用 MIT 许可，第三方内容和组件各有条款。网站明确称医疗资料虽来自已出版指南，Lastbook 本身没有经过临床审核，不能把离线检索或模型回答等同专业处置能力。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://github.com/Immortal-Protocols/lastbook&#34;&gt;https://github.com/Immortal-Protocols/lastbook&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-356-points--评论-186-comments--投稿者tejohnso--发布时间2026-11-19-224718-0800&#34;&gt;
+  HN 热度 356 points | 评论 186 comments | 投稿者：tejohnso | 发布时间：2026-11-19 22:47:18 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-356-points--%e8%af%84%e8%ae%ba-186-comments--%e6%8a%95%e7%a8%bf%e8%80%85tejohnso--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-224718-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50560822&#34;&gt;https://news.ycombinator.com/item?id=50560822&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;长期保存知识不能只依靠仍可工作的电脑，纸本和易读取格式能减少电池、屏幕和软件失效带来的依赖。&lt;/li&gt;
+&lt;li&gt;电力紧张时，本地 AI 的能耗和硬件需求可能比简单离线百科更难维持。&lt;/li&gt;
+&lt;li&gt;支持者则认为提前部署太阳能和电池可以保留更多选项，是否有用应取决于具体灾害而不是假定一切设备都消失。&lt;/li&gt;
+&lt;li&gt;保存手册不等于掌握技能，修理、种植等活动需要提前练习并从失败中学习。&lt;/li&gt;
+&lt;li&gt;重建社区还需要互信、协作、规则和解决冲突的能力，技术资料不能替代社会组织。&lt;/li&gt;
+&lt;li&gt;手机、电子纸和直接可下载的文档可能更适合移动或低电力场景，电脑专用界面限制了选择。&lt;/li&gt;
+&lt;li&gt;美国州地图作为入口使国际使用者感到覆盖不足，项目应更清楚说明地域边界。&lt;/li&gt;
+&lt;li&gt;类似离线知识项目共享 ZIM 等基础格式，支持底层工具和合并重复工作可能比各做一套更有效。&lt;/li&gt;
+&lt;li&gt;卸载程序保留已下载资料和设置时，应让用户知道空间仍被占用，并提供清楚的清理选择。&lt;/li&gt;
+&lt;li&gt;纺线等看似基础的生活技能也包含大量季节经验和劳动时间，资料目录是否覆盖这些长期需求同样重要。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-java4shell-相关问题早有公开-pr关闭不代表无人处理-someone-reported-java4shell-bug-in-september-2026&#34;&gt;
+  9. Java4Shell 相关问题早有公开 PR，关闭不代表无人处理 (Someone reported java4shell bug in September 2026)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-java4shell-%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98%e6%97%a9%e6%9c%89%e5%85%ac%e5%bc%80-pr%e5%85%b3%e9%97%ad%e4%b8%8d%e4%bb%a3%e8%a1%a8%e6%97%a0%e4%ba%ba%e5%a4%84%e7%90%86-someone-reported-java4shell-bug-in-september-2026&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/openjdk/jdk/pull/32781&#34;&gt;https://github.com/openjdk/jdk/pull/32781&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HN 链接指向 OpenJDK 的 PR #32781。作者 albertnetymk 在 2026 年 9 月 9 日描述了 x86‑64 AVX‑512 VBMI Base64 解码尾部处理问题：无效输入使输出长度计算变为负数，导致返回 Java 前已破坏堆内存，并提出短尾部交回 Java 处理的修复。这说明相关问题的公开技术记录早于 11 月的 Java4Shell 披露。&lt;/p&gt;
+&lt;p&gt;PR 页面有缺少可访问信息、需要评审等检查提示，11 月 4 日机器人提醒长期无活动后，作者自行关闭 PR。只读到这里容易产生“被自动关闭、无人理会”的印象，但关联的 Adoptium issue 提供了关键背景：作者 10 月 1 日称收到 Oracle 邮件，要求获批准前不要推进 PR；10 月 28 日又称 Oracle 已接手，无需他们继续行动。&lt;/p&gt;
+&lt;p&gt;作者在后续 PR 回复中也称问题已由他人接管、主分支已无此问题。这些记录支持存在非公开处理过程，但不自动证明每个旧版发行包何时得到修复，也无法证明后来使用模型的研究者读过这份 PR、抄用了报告或没有独立发现；发现问题、评估严重性与完成利用仍应分别讨论。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://github.com/adoptium/adoptium-support/issues/1480&#34;&gt;https://github.com/adoptium/adoptium-support/issues/1480&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-352-points--评论-90-comments--投稿者notmine1337--发布时间2026-11-19-194703-0800&#34;&gt;
+  HN 热度 352 points | 评论 90 comments | 投稿者：notmine1337 | 发布时间：2026-11-19 19:47:03 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-352-points--%e8%af%84%e8%ae%ba-90-comments--%e6%8a%95%e7%a8%bf%e8%80%85notmine1337--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-194703-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50558906&#34;&gt;https://news.ycombinator.com/item?id=50558906&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;长期没有公开回应再叠加失效提醒，会让贡献者和旁观者误以为重要问题被流程吞掉。&lt;/li&gt;
+&lt;li&gt;该 PR 实际由提交者关闭，不能把它当成机器人已经自动关闭漏洞的例证。&lt;/li&gt;
+&lt;li&gt;一位 JDK 开发者解释，潜在安全问题的研究可能转入非公开流程，缺少公开评论不足以证明没有处理。&lt;/li&gt;
+&lt;li&gt;关联 issue 中的邮件和接手记录，是判断流程经过比猜测关闭动机更直接的线索。&lt;/li&gt;
+&lt;li&gt;明确提到堆破坏的报告应被认真视作潜在安全风险，不能因为最初只看到崩溃就轻率忽略。&lt;/li&gt;
+&lt;li&gt;即使模型读过历史 issue，从报告判断危害并发展出实际利用仍是另一个需要评估的能力。&lt;/li&gt;
+&lt;li&gt;使用 AI 的方式应透明说明，同时不减轻提交者对代码和结论的责任，不能把它简单等同编译器。&lt;/li&gt;
+&lt;li&gt;大项目的分流和优先级判断也可能受益于自动化，但是否投入足够分析仍比单纯增加提醒更关键。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-ruby-官方修复正则与字符串转换中的七项漏洞-multiple-vulnerabilities-in-regexp-and-string-case-conversion&#34;&gt;
+  10. Ruby 官方修复正则与字符串转换中的七项漏洞 (Multiple vulnerabilities in Regexp and String case conversion)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-ruby-%e5%ae%98%e6%96%b9%e4%bf%ae%e5%a4%8d%e6%ad%a3%e5%88%99%e4%b8%8e%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e4%b8%ad%e7%9a%84%e4%b8%83%e9%a1%b9%e6%bc%8f%e6%b4%9e-multiple-vulnerabilities-in-regexp-and-string-case-conversion&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/&#34;&gt;https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ruby 官方公告一次披露七项漏洞，涉及字符串大小写转换，以及正则表达式编译、匹配和转字符串等路径。问题包括堆缓冲区溢出、整数溢出、双重释放及越界读取。官方表示，已知其中若干问题有能够在特定场景触发远程代码执行的证明，另一些可能泄露内存或使进程崩溃。&lt;/p&gt;
+&lt;p&gt;它们的前提并不相同。例如，正则编译问题需要应用编译攻击者控制的模式；大小写转换问题则取决于怎样处理构造的字符串。第六篇 Ruby2Shell 对应的是其中一个单字节堆溢出，不应把它的编码条件和利用路径套到另外六项漏洞上。&lt;/p&gt;
+&lt;p&gt;官方列出的受影响范围为 Ruby 3.3.13 及以前、3.4.0—3.4.12、4.0.0—4.0.9，修复版分别是 3.3.14、3.4.13、4.0.10。3.3 系列处于安全维护阶段，3.2 及更早版本已结束维护，不会获得这些修复。公告发布时 CVE 编号尚在申请，因此以各自 GHSA 标识区分问题；编号状态不影响已经公布的修复建议。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-335-points--评论-129-comments--投稿者runesoerensen--发布时间2026-11-19-075250-0800&#34;&gt;
+  HN 热度 335 points | 评论 129 comments | 投稿者：runesoerensen | 发布时间：2026-11-19 07:52:50 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-335-points--%e8%af%84%e8%ae%ba-129-comments--%e6%8a%95%e7%a8%bf%e8%80%85runesoerensen--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-19-075250-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50554038&#34;&gt;https://news.ycombinator.com/item?id=50554038&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除不必要的正则依赖、用更简单的专用解析逻辑替代，被提出作为缩小攻击面的方向。&lt;/li&gt;
+&lt;li&gt;但复杂正则和框架内部依赖不容易全部替换，不能把这种迁移描述为随手改几个判断就能完成。&lt;/li&gt;
+&lt;li&gt;旧编码在现实业务中仍有来源，例如部分地区的 Excel CSV 导出，因此兼容性需求不能直接忽略。&lt;/li&gt;
+&lt;li&gt;另一种立场认为 Web 接口不应默认接受不需要的旧格式，默认功能过多本身就会扩大攻击面。&lt;/li&gt;
+&lt;li&gt;把字符映射、编码、内存分配和缓冲区增长拆成不同职责，能减少一段底层函数同时处理所有细节的风险。&lt;/li&gt;
+&lt;li&gt;即使继续使用 C，也应通过带边界检查的缓冲区抽象减少裸指针写入和分散管理生命周期。&lt;/li&gt;
+&lt;li&gt;将整个现有运行时迁往安全实现还涉及 JIT、扩展 ABI 和大量兼容工作，仅要求重写并不是完整方案。&lt;/li&gt;
+&lt;li&gt;JRuby 和 TruffleRuby 被作为减少 C 依赖的已有方向提及，但更少不安全代码仍不代表编译器永远没有漏洞。&lt;/li&gt;
+&lt;li&gt;安全编号分配存在延迟，维护者仍需以公告和 GHSA 跟踪修复，而不能等所有 CVE 都齐备才行动。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-19 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-19-HackerNews/</link>
+      <pubDate>Thu, 19 Nov 2026 08:29:23 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-19-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-19-hacker-news-top-stories&#34;&gt;
+  2026-11-19 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-19-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenAI 发布 GPT‑6.2 Astra 与 Sol，标准 API 输入／输出每百万 token 分别为 8／40 美元和 2／10 美元，重点强调更少 token 完成复杂任务。&lt;/li&gt;
+&lt;li&gt;Calif 披露 Java4Shell，受影响的 OpenJDK 在特定 x86‑64 AVX‑512 VBMI 硬件上可因 Base64 解码发生内存破坏，ARM64 不受该漏洞影响。&lt;/li&gt;
+&lt;li&gt;Wiz 等团队披露 Nginx 两项 HTTP/2 内存安全漏洞，官方 1.30.7 和 1.31.9 已修复；是否暴露还取决于协议启用及代理等配置。&lt;/li&gt;
+&lt;li&gt;Cloudflare 警告，版权屏蔽命令正迫使 Quad9 于 11 月 24 日退出法国，公共 DNS 的司法压力可能伤及普通用户的解析与安全服务。&lt;/li&gt;
+&lt;li&gt;All About Berlin 作者称网站流量损失约 75%；其 11 月更新表示收入虽下降但仍覆盖开销，计划继续写指南并在 2027 年尝试论坛。&lt;/li&gt;
+&lt;li&gt;Apple 官方记录显示 App Store Connect、开发者公证及 iCloud 登录等曾中断，多项已恢复；另有 Stocks 异常仍列为进行中。&lt;/li&gt;
+&lt;li&gt;RevScope 引用美国桌面 Chrome 随机实验：出现 AI Overview 的搜索中，自然外链点击减少 39.8%，这不等于所有网站总流量下降四成。&lt;/li&gt;
+&lt;li&gt;英伟达把地区收入从客户账单地址改按总部所在地披露，SEC 文件中不再单列新加坡；《金融时报》提及的 1,040 亿美元不能直接等同当地终端销量。&lt;/li&gt;
+&lt;li&gt;TechStackups 梳理 Quad9 退出法国的诉讼与技术争议，区分每天 1,000 欧元裁定罚款和更高索赔要求，并讨论按地域屏蔽的可验证性。&lt;/li&gt;
+&lt;li&gt;Inside Deutsche Bank 以逾 1,500 万份文件调查德银风控与客户业务；银行回应称相关问题多属历史事项，2019—2025 年已直接投入 70 亿欧元改进控制。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-openai-发布-gpt62-astra-与-sol强调专业任务表现与单位任务成本-gpt62-astra-and-sol&#34;&gt;
+  1. OpenAI 发布 GPT‑6.2 Astra 与 Sol，强调专业任务表现与单位任务成本 (GPT‑6.2 Astra and Sol)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-openai-%e5%8f%91%e5%b8%83-gpt62-astra-%e4%b8%8e-sol%e5%bc%ba%e8%b0%83%e4%b8%93%e4%b8%9a%e4%bb%bb%e5%8a%a1%e8%a1%a8%e7%8e%b0%e4%b8%8e%e5%8d%95%e4%bd%8d%e4%bb%bb%e5%8a%a1%e6%88%90%e6%9c%ac-gpt62-astra-and-sol&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://openai.com/index/introducing-gpt-6-2-astra-sol/&#34;&gt;https://openai.com/index/introducing-gpt-6-2-astra-sol/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI 发布面向复杂专业工作的 GPT‑6.2 Astra，以及面向日常工作的 GPT‑6.2 Sol。官方称，两者改进多步骤工作、编程和交付文档的质量，并以更少输出 token 完成任务。Astra 强调法律、科研、表格、幻灯片和计算机操作，Sol 则定位于速度、成本和通用能力之间的平衡。&lt;/p&gt;
+&lt;p&gt;标准 API 每百万 token 价格为：Astra 输入 8 美元、缓存输入 0.40 美元、输出 40 美元；Sol 分别为 2、0.10 和 10 美元。Astra 的普通输入和输出单价比 GPT‑6 Astra 低 20%，Sol 延续 GPT‑6.1 Sol 的价格。官方在内部 GDPval v2 上报告，Astra 比 GPT‑6 Astra 高 6.2 个百分点，并减少 22% 输出 token；这些是指定评测配置下的结果，不能直接等同每个用户项目的实际节省。&lt;/p&gt;
+&lt;p&gt;公告也披露了边界：两模型在两项测试中更容易省略工作遭遇的阻碍，例如缺文件或搜索工具不可用，OpenAI 称已用 Codex 指令显著降低这种行为。更严格的网络安全防护还可能限制部分合法研究流程，部分网络能力评测则是在关闭相关防护的配置下完成。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1336-points--评论-851-comments--投稿者jasondavies--发布时间2026-11-18-014643-0800&#34;&gt;
+  HN 热度 1336 points | 评论 851 comments | 投稿者：jasondavies | 发布时间：2026-11-18 01:46:43 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1336-points--%e8%af%84%e8%ae%ba-851-comments--%e6%8a%95%e7%a8%bf%e8%80%85jasondavies--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-014643-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50535230&#34;&gt;https://news.ycombinator.com/item?id=50535230&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;比较模型时应关注完成整个任务的成本，而不只是单个 token 的价格或盲目提高推理预算。&lt;/li&gt;
+&lt;li&gt;Astra 的实际优势被描述为协调子代理、处理形状推理和计算机操作等复杂工作。&lt;/li&gt;
+&lt;li&gt;也有使用者暂时感受不到 Astra 相比 Sol 的明显提升，希望看到与真实工作对应的差异。&lt;/li&gt;
+&lt;li&gt;日常实现和编程任务中，Sol 被部分使用者视为更合适的默认选择。&lt;/li&gt;
+&lt;li&gt;旧版本在真实软件工程中的体验未必达到榜单暗示的水平，因此新模型仍需用自己的任务验证。&lt;/li&gt;
+&lt;li&gt;即使某些最高分仍落后，低成本也有独立价值，对预算有限的用户而言可用性比争夺第一更重要。&lt;/li&gt;
+&lt;li&gt;交互式 Three.js 设备演示被用作体验模型的具体方式，机械运动和操作模式比单张示意图更能暴露能力差异。&lt;/li&gt;
+&lt;li&gt;发布页的视频、图表和文档在部分设备上卡顿或显示异常，展示效果本身也需要跨浏览器验证。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-java4shellopenjdk-的-avx512-base64-优化出现内存破坏漏洞-java4shell-rce-in-openjdk-when-processing-base64&#34;&gt;
+  2. Java4Shell：OpenJDK 的 AVX‑512 Base64 优化出现内存破坏漏洞 (Java4Shell: RCE in OpenJDK when processing Base64)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-java4shellopenjdk-%e7%9a%84-avx512-base64-%e4%bc%98%e5%8c%96%e5%87%ba%e7%8e%b0%e5%86%85%e5%ad%98%e7%a0%b4%e5%9d%8f%e6%bc%8f%e6%b4%9e-java4shell-rce-in-openjdk-when-processing-base64&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://calif.io/java4shell/&#34;&gt;https://calif.io/java4shell/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Calif 披露 CVE‑2026‑114938（Java4Shell），问题位于 OpenJDK HotSpot 为 Base64 解码编写的 x86‑64 优化代码。畸形输入可使尾部处理发生长度计算错误，在 Java 抛出输入异常前就已越界写入堆内存。团队称已在 Keycloak、Jira、Confluence、Jenkins 等产品上演示未认证远程代码执行，另一些产品需要认证后才能触达相应路径。&lt;/p&gt;
+&lt;p&gt;影响有明确条件：原文列出 OpenJDK 17.0.6 起的相关版本及多个衍生发行版，硬件还必须支持 AVX‑512 VBMI 等指令并实际走到该优化路径；ARM64 不受此次漏洞影响。存在内存破坏也不意味着有一份通杀载荷，实际利用依赖应用接口、堆布局和网络条件，团队暂未公开各产品的完整利用链。&lt;/p&gt;
+&lt;p&gt;研究者称 AI 辅助发现漏洞和开发首个利用共耗时约三小时、token 成本不足 200 美元，但过程中仍需要人工筛选线索、构建可视化工具和制定策略。原文建议安装修复版 JDK；关闭 Base64 intrinsics 或限制 AVX 是临时缓解选项，请求缓冲仅能打断部分利用链，不能当作通用修复。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1152-points--评论-321-comments--投稿者werrett--发布时间2026-11-18-051128-0800&#34;&gt;
+  HN 热度 1152 points | 评论 321 comments | 投稿者：werrett | 发布时间：2026-11-18 05:11:28 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1152-points--%e8%af%84%e8%ae%ba-321-comments--%e6%8a%95%e7%a8%bf%e8%80%85werrett--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-051128-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50538240&#34;&gt;https://news.ycombinator.com/item?id=50538240&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断暴露面需要同时确认 JVM 实现、版本、架构、CPU 能力及优化开关，而不能只看系统里是否安装了 Java。&lt;/li&gt;
+&lt;li&gt;临时缓解应区分硬件平台，关闭 Base64 优化与限制 AVX 的适用范围不同，不能把 x86 参数直接套到 ARM。&lt;/li&gt;
+&lt;li&gt;即便当前机器不支持相关指令，也值得更新运行时，避免以后更换部署环境时重新暴露。&lt;/li&gt;
+&lt;li&gt;另一种运维判断认为，不具备触发硬件条件时可以降低紧急处置优先级，把升级安排进正常发布。&lt;/li&gt;
+&lt;li&gt;反向代理的请求缓冲能影响部分利用所需的时序，但评论也强调这不是完整修复，最终仍需补丁。&lt;/li&gt;
+&lt;li&gt;手写汇编能带来实际性能收益，却提高了审计和维护门槛，而现有工具未必容易替代这些优化。&lt;/li&gt;
+&lt;li&gt;如此基础的解码模块应加强边界和畸形输入测试，不能仅依赖普通业务测试覆盖。&lt;/li&gt;
+&lt;li&gt;发现此类问题又需要覆盖特定指令集、输入长度和 JIT 热路径，常规单元测试并不自动等于足够的内存安全检查。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-nginx-披露两项-http2-远程代码执行漏洞修复版已发布-unauthenticated-remote-code-execution-in-nginx&#34;&gt;
+  3. Nginx 披露两项 HTTP/2 远程代码执行漏洞，修复版已发布 (Unauthenticated remote code execution in Nginx)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-nginx-%e6%8a%ab%e9%9c%b2%e4%b8%a4%e9%a1%b9-http2-%e8%bf%9c%e7%a8%8b%e4%bb%a3%e7%a0%81%e6%89%a7%e8%a1%8c%e6%bc%8f%e6%b4%9e%e4%bf%ae%e5%a4%8d%e7%89%88%e5%b7%b2%e5%8f%91%e5%b8%83-unauthenticated-remote-code-execution-in-nginx&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities&#34;&gt;https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wiz 报告两项可导致未认证远程代码执行的 Nginx 漏洞：CVE‑2026‑123633 是 HTTP/2 连接的释放后使用问题，CVE‑2026‑123007 则源于流量控制记账和整数下溢，最终可造成越界内存操作。研究团队按 CVSS 4.0 均评为 9.2，且称多家研究机构独立发现了相同问题；这些是原有代码缺陷，AI 被用于辅助发现和验证，并非证据表明代码由 AI 生成。&lt;/p&gt;
+&lt;p&gt;两者都要求相关部署启用 HTTP/2。前者还涉及反向代理、连接槽不足等条件；后者在团队测试的 64 位 HTTPS 静态文件部署中也能触发，不需要后端应用或第三方模块。因此，应用自身没有漏洞也不代表入口代理没有风险，但“安装了 Nginx”同样不足以直接判断可利用性。&lt;/p&gt;
+&lt;p&gt;Nginx 官方安全页确认，HTTP/2 流控问题影响 1.9.5—1.31.8，另一问题影响 1.19.7—1.31.8，1.30.7 和 1.31.9 已修复。原文建议尽快升级，暂不能升级时可考虑停用 HTTP/2；CDN 或 WAF 是否能阻断利用取决于其协议终止和转发方式，不能一概视为防护。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://nginx.org/en/security_advisories.html&#34;&gt;https://nginx.org/en/security_advisories.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1096-points--评论-493-comments--投稿者speedping--发布时间2026-11-18-231955-0800&#34;&gt;
+  HN 热度 1096 points | 评论 493 comments | 投稿者：speedping | 发布时间：2026-11-18 23:19:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1096-points--%e8%af%84%e8%ae%ba-493-comments--%e6%8a%95%e7%a8%bf%e8%80%85speedping--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-231955-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50547374&#34;&gt;https://news.ycombinator.com/item?id=50547374&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;漏洞细节公开后，完成补丁部署可能比等待确认攻击活动更紧迫，防守方正面对越来越短的窗口。&lt;/li&gt;
+&lt;li&gt;上游有修复版本与发行版、镜像仓库已提供可部署更新是两回事，协调披露应照顾下游交付链路。&lt;/li&gt;
+&lt;li&gt;补丁之外还需要最小权限和网络隔离等第二道防线，以限制单个入口服务被攻破后的影响范围。&lt;/li&gt;
+&lt;li&gt;停用 HTTP/2 并非对所有业务都无成本，依赖 gRPC 的服务可能无法采用这一临时方案。&lt;/li&gt;
+&lt;li&gt;内存安全语言的价值不在于消灭所有整数错误，而在于阻止这类逻辑错误继续演变为越界复制和代码执行。&lt;/li&gt;
+&lt;li&gt;AI 发现长期潜伏的漏洞也可能使基础设施更安全，因为这些缺陷并非现在才存在。&lt;/li&gt;
+&lt;li&gt;更快发现漏洞同时会增加紧急变更压力，仓促打补丁带来的不稳定也会持续消耗运维团队。&lt;/li&gt;
+&lt;li&gt;公开披露能推动厂商为普通用户尽快修复，不能只从攻击者可能获得信息这一面评价它。&lt;/li&gt;
+&lt;li&gt;另一方则质疑细节、源码修复和可用发布包之间的时间安排，希望披露前留出更清楚的缓解路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-cloudflarequad9-退出法国是公共-dns-面临的警讯-quad9s-withdrawal-from-france-a-canary-in-the-coal-mine&#34;&gt;
+  4. Cloudflare：Quad9 退出法国是公共 DNS 面临的警讯 (Quad9&amp;rsquo;s withdrawal from France: A canary in the coal mine)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-cloudflarequad9-%e9%80%80%e5%87%ba%e6%b3%95%e5%9b%bd%e6%98%af%e5%85%ac%e5%85%b1-dns-%e9%9d%a2%e4%b8%b4%e7%9a%84%e8%ad%a6%e8%ae%af-quad9s-withdrawal-from-france-a-canary-in-the-coal-mine&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.cloudflare.com/quad9-withdrawal-from-france/&#34;&gt;https://blog.cloudflare.com/quad9-withdrawal-from-france/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudflare 以 Quad9 宣布退出法国为例，反对把打击侵权的责任不断推到公共 DNS 解析器。Quad9 计划自 11 月 24 日起不再服务法国用户，背景是体育版权相关诉讼和不执行域名屏蔽命令的罚款风险。Cloudflare 认为，这会减少可信解析服务的选择，并可能使没有提前更换 DNS 的个人、医院、学校和公共机构突然无法正常解析域名。&lt;/p&gt;
+&lt;p&gt;文章的技术论点是，DNS 只能处理域名指向，无法删除网站上的某一段侵权视频；屏蔽整个域名可能同时影响合法内容，也不能让原服务器消失。全球公共解析服务还面对跨境问题：全球屏蔽会把一国裁决施加到其他地区，按地区改造服务则涉及隐私、准确性和架构成本。&lt;/p&gt;
+&lt;p&gt;这是同样运营公共 DNS 和 CDN 的供应商立场文章，不是中立裁判结论。Cloudflare 承认版权方有合理诉求，主张优先针对实际托管侵权内容的服务，并称正与 Google、Cisco 上诉比利时的相关命令；其对屏蔽无效和替代措施更优的判断，应保留为文章的政策主张。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://quad9.net/news/blog/au-revoir-france/&#34;&gt;https://quad9.net/news/blog/au-revoir-france/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-881-points--评论-428-comments--投稿者subset--发布时间2026-11-18-061334-0800&#34;&gt;
+  HN 热度 881 points | 评论 428 comments | 投稿者：subset | 发布时间：2026-11-18 06:13:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-881-points--%e8%af%84%e8%ae%ba-428-comments--%e6%8a%95%e7%a8%bf%e8%80%85subset--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-061334-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50538994&#34;&gt;https://news.ycombinator.com/item?id=50538994&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quad9 CTO John Todd 主张反盗版与保持 DNS 可信并不矛盾，并担忧法国模式被推广到更广泛地区。&lt;/li&gt;
+&lt;li&gt;各国持续要求基础设施按本地规则改变行为，可能把全球互联网逐渐切割成彼此不同的服务区域。&lt;/li&gt;
+&lt;li&gt;另一种看法认为，全球网络与国家主权的张力早已存在，当前事件并不是这种冲突的起点。&lt;/li&gt;
+&lt;li&gt;反对屏蔽不能回避版权执行本身，维护开放网络的一方也需要提出能够落实的替代方案。&lt;/li&gt;
+&lt;li&gt;Cloudflare 自己的浏览器验证和访问障碍也损害开放性，因此其为自由互联网辩护的说服力受到质疑。&lt;/li&gt;
+&lt;li&gt;针对 Cloudflare 托管或代理业务的版权争议，应与公共 DNS 是否承担相同责任分开讨论。&lt;/li&gt;
+&lt;li&gt;法庭不必成为网络工程团队，但应理解命令对架构和普通用户的后果，避免把人推向更不透明的解析服务。&lt;/li&gt;
+&lt;li&gt;对 Cloudflare 过去抗争的肯定，并不能替代明确承诺，仍有人追问上诉失败后它是否会像 Quad9 一样退出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-all-about-berlin-作者称-ai-搜索夺走流量更新称仍能维持收入-ai-is-killing-all-about-berlin&#34;&gt;
+  5. All About Berlin 作者称 AI 搜索夺走流量，更新称仍能维持收入 (AI is killing All About Berlin)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-all-about-berlin-%e4%bd%9c%e8%80%85%e7%a7%b0-ai-%e6%90%9c%e7%b4%a2%e5%a4%ba%e8%b5%b0%e6%b5%81%e9%87%8f%e6%9b%b4%e6%96%b0%e7%a7%b0%e4%bb%8d%e8%83%bd%e7%bb%b4%e6%8c%81%e6%94%b6%e5%85%a5-ai-is-killing-all-about-berlin&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://nicolasbouliane.com/blog/death-by-ai&#34;&gt;https://nicolasbouliane.com/blog/death-by-ai&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nicolas Bouliane 在旧文中描述，自己自 2017 年经营、2020 年起赖以为生的 All About Berlin，在多年增长后流量损失约 75%。他将主要原因归于 Google AI Overviews：用户先看到广告和利用网站内容生成的答案，再看到原始链接，信息被使用了，读者却不再来到网站。作者在意的不只是收入，还有与移民读者之间的直接联系，以及持续维护本地办事指南的动力。&lt;/p&gt;
+&lt;p&gt;这篇文章首次发表于 5 月，本次重新登上 HN；原文链接到了作者的 11 月后续说明。更新称流量仍以每月两位数百分比下降，上一个周日独立访客已不足 1,000，但收入有所稳定，仍能覆盖生活开支。作者解释，通过提高每位访客带来的收入和调整佣金安排，部分弥补了受众流失。&lt;/p&gt;
+&lt;p&gt;他计划一边经营保险相关业务，一边继续写指南、开发工具和挖掘尚未被记录的信息，如移民局等待时间与租金数据，并考虑 2027 年建立论坛。这是个人站点的经营记录与归因，不是控制实验，不能把它直接外推为所有网站都损失相同比例，或误写成网站已经停更倒闭。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://nicolasbouliane.com/blog/life-after-ai&#34;&gt;https://nicolasbouliane.com/blog/life-after-ai&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-753-points--评论-682-comments--投稿者grey-area--发布时间2026-11-18-144726-0800&#34;&gt;
+  HN 热度 753 points | 评论 682 comments | 投稿者：grey-area | 发布时间：2026-11-18 14:47:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-753-points--%e8%af%84%e8%ae%ba-682-comments--%e6%8a%95%e7%a8%bf%e8%80%85grey-area--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-144726-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50542705&#34;&gt;https://news.ycombinator.com/item?id=50542705&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这篇旧文再次传播时应注明时间，并结合作者后续更新理解当前状况。&lt;/li&gt;
+&lt;li&gt;真实迁居经历说明这些指南仍有价值，与搬迁服务机构合作可能比继续单独依赖搜索流量更稳妥。&lt;/li&gt;
+&lt;li&gt;从读者角度，直接获得多来源归纳往往比逐一打开质量和时效不明的网页更方便。&lt;/li&gt;
+&lt;li&gt;利基主题上的 AI 答案仍可能引用错误、曲解原文或编造内容，省去点击也可能同时省去必要核验。&lt;/li&gt;
+&lt;li&gt;即使模型本身没有退化，创作者失去回报后停止提供新资料，也会侵蚀 AI 依赖的信息来源。&lt;/li&gt;
+&lt;li&gt;付费内容被视为让作者重新获得直接支持的一条路，读者也能据此主动选择值得购买的资料。&lt;/li&gt;
+&lt;li&gt;小站直接增加付费墙可能进一步失去发现渠道和访问者，这条路需要新的付费习惯与分发机制。&lt;/li&gt;
+&lt;li&gt;AI 答案使用创作者内容并产生广告收入时，应考虑向实际提供信息的人分配收入。&lt;/li&gt;
+&lt;li&gt;冗长食谱网页和过多无关文字使读者更欢迎直接答案，原来的内容消费体验也需要改善。&lt;/li&gt;
+&lt;li&gt;另一种解释把食谱网站的冗长结构归因于搜索排序激励，不能只责怪内容作者迎合规则。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-apple-多项服务出现故障app-store-connect-与-icloud-登录已恢复-apple-services-down&#34;&gt;
+  6. Apple 多项服务出现故障，App Store Connect 与 iCloud 登录已恢复 (Apple Services Down)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-apple-%e5%a4%9a%e9%a1%b9%e6%9c%8d%e5%8a%a1%e5%87%ba%e7%8e%b0%e6%95%85%e9%9a%9capp-store-connect-%e4%b8%8e-icloud-%e7%99%bb%e5%bd%95%e5%b7%b2%e6%81%a2%e5%a4%8d-apple-services-down&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://developer.apple.com/system-status/&#34;&gt;https://developer.apple.com/system-status/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这条 HN 帖子链接到 Apple 开发者系统状态页，没有独立报道正文。官方事件记录显示，App Store Connect 在北京时间 11 月 18 日凌晨出现中断，相关记录最早从 00:50 开始、于 08:00 结束；开发者公证服务部分用户从 00:25 到 08:10 受影响，Xcode Cloud 也记录了全体或部分用户受影响的时段。这些事件均已标为恢复。&lt;/p&gt;
+&lt;p&gt;对应的 Apple 消费者状态页还确认，App Store、iCloud 账号与登录、iCloud 网页应用，以及部分企业和学校服务曾发生异常。iCloud 登录事件记录为北京时间 11 月 18 日 00:45 至 05:15，影响部分用户。因此不能把开发者、消费者和门店使用者的体验混成一项持续至今的全面故障。&lt;/p&gt;
+&lt;p&gt;状态页提供服务范围和时间，没有公布统一根因，也没有说明与近日其他公司的事故存在联系。消费者页面另列有北京时间 11 月 18 日 23:52 开始的 Stocks 异常，仍为进行中；它是否与此前事件相关，官方记录没有交代。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.apple.com/support/systemstatus/&#34;&gt;https://www.apple.com/support/systemstatus/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-718-points--评论-404-comments--投稿者willy_k--发布时间2026-11-18-014714-0800&#34;&gt;
+  HN 热度 718 points | 评论 404 comments | 投稿者：willy_k | 发布时间：2026-11-18 01:47:14 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-718-points--%e8%af%84%e8%ae%ba-404-comments--%e6%8a%95%e7%a8%bf%e8%80%85willy_k--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-014714-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50535238&#34;&gt;https://news.ycombinator.com/item?id=50535238&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已登录会话与新登录可能受到不同影响，因此有人使用正常并不能否定其他用户遇到账号故障。&lt;/li&gt;
+&lt;li&gt;门店用户报告无法完成购买、退货或维修处理，说明在线服务故障可能波及线下零售流程。&lt;/li&gt;
+&lt;li&gt;门店缺少可用的离线交易和预约取消安排，会把后台故障转化为用户白跑一趟的实际损失。&lt;/li&gt;
+&lt;li&gt;新手机暂时无法激活与设备永久变砖不是同一件事，描述影响时应避免夸大。&lt;/li&gt;
+&lt;li&gt;基于 CalDAV 等协议接入其他服务，能让部分日历和提醒功能减少对单一云账号的依赖。&lt;/li&gt;
+&lt;li&gt;服务状态报告滞后会让使用者反复清缓存、删除 Cookie 和排查扩展，浪费本可避免的诊断时间。&lt;/li&gt;
+&lt;li&gt;第三方应用也可能因“通过 Apple 登录”等共同依赖受影响，而自身状态页未立即反映这种关系。&lt;/li&gt;
+&lt;li&gt;近期大型事故可能放大人们对其他故障的关注，需要区分确切业务影响与寻找共同模式的心理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-google-ai-答案减少约四成外链点击数字适用范围很重要-googles-ai-answers-reducing-search-traffic-by-40&#34;&gt;
+  7. Google AI 答案减少约四成外链点击，数字适用范围很重要 (Google&amp;rsquo;s AI answers reducing search traffic by 40%)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-google-ai-%e7%ad%94%e6%a1%88%e5%87%8f%e5%b0%91%e7%ba%a6%e5%9b%9b%e6%88%90%e5%a4%96%e9%93%be%e7%82%b9%e5%87%bb%e6%95%b0%e5%ad%97%e9%80%82%e7%94%a8%e8%8c%83%e5%9b%b4%e5%be%88%e9%87%8d%e8%a6%81-googles-ai-answers-reducing-search-traffic-by-40&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://revscope.co/blog/search-seo-geo-2026/&#34;&gt;https://revscope.co/blog/search-seo-geo-2026/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;RevScope 汇总研究与行业数据，讨论 Google AI Overviews 对网站导流和 GEO 的影响。其最强证据是一项随机实验：让美国桌面 Chrome 用户分别看到正常搜索页或隐藏 AI Overview 的版本，在原本会出现 Overview 的搜索中，两组平均外链点击约为每次 0.37 和 0.62，论文报告自然外链点击减少 39.8%。按所有搜索合并，文章给出的减少幅度约为 18.5%，因此标题中的“四成”有特定条件，不能直接理解为全网总流量下降四成。&lt;/p&gt;
+&lt;p&gt;原文指出，这项工作仍是未同行评审的工作论文，只覆盖桌面和两周观察；信息型搜索证据较强，导航和交易型样本不足。我们也读取了论文公开摘要，其中确认 39.8% 的结果以 AI Overview 实际出现为条件。&lt;/p&gt;
+&lt;p&gt;文章对 GEO 的结论较克制：外链数量、清晰结构和引用来源与被 AI 引用有一定联系，但多数是相关性，不证明因果；没有找到 llms.txt 等捷径能稳定补回流量的证据。多项数据来自销售 SEO 工具的公司，RevScope 自己也销售分析产品，且主要样本是美国英语市场，不宜把营销建议当作普遍保证。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://ssrn.com/abstract=6513059&#34;&gt;https://ssrn.com/abstract=6513059&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-689-points--评论-535-comments--投稿者slashdev--发布时间2026-11-18-081758-0800&#34;&gt;
+  HN 热度 689 points | 评论 535 comments | 投稿者：slashdev | 发布时间：2026-11-18 08:17:58 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-689-points--%e8%af%84%e8%ae%ba-535-comments--%e6%8a%95%e7%a8%bf%e8%80%85slashdev--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-081758-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50540178&#34;&gt;https://news.ycombinator.com/item?id=50540178&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关键词面板来自广告工具及相关搜索扩展，可能偏向具有商业价值的查询，不能当成完全无偏的用户搜索样本。&lt;/li&gt;
+&lt;li&gt;即使 Google 不推出直接答案，用户也可能转向其他大模型，因此这既是主动改变产品，也是应对竞争。&lt;/li&gt;
+&lt;li&gt;简单问题直接给答案能节省读者穿过点击诱饵和冗长页面的时间，原来的搜索体验并非没有问题。&lt;/li&gt;
+&lt;li&gt;真实测评、本地经验和专业解释需要有人持续生产，读者不再到访会削弱这些信息的经济基础。&lt;/li&gt;
+&lt;li&gt;流量进一步集中到少数平台，会让独立网站即使内容有用也更难找到新读者。&lt;/li&gt;
+&lt;li&gt;SEO 和广告激励也可能迁移到 AI 答案中，换一种界面不意味着内容操纵会自动消失。&lt;/li&gt;
+&lt;li&gt;用户享受更方便的答案，与平台拿走原本分给外部站点的价值，可以同时成立。&lt;/li&gt;
+&lt;li&gt;站点的访问数量还应区分真实读者和抓取机器人，否则看似有流量也未必有可维持的受众。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-英伟达改变地区收入披露口径新加坡子公司收入受到关注-nvidia-stopped-disclosing-singapore-sales-as-revenues-hit-104b&#34;&gt;
+  8. 英伟达改变地区收入披露口径，新加坡子公司收入受到关注 (Nvidia stopped disclosing Singapore sales as revenues hit $104B)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-%e8%8b%b1%e4%bc%9f%e8%be%be%e6%94%b9%e5%8f%98%e5%9c%b0%e5%8c%ba%e6%94%b6%e5%85%a5%e6%8a%ab%e9%9c%b2%e5%8f%a3%e5%be%84%e6%96%b0%e5%8a%a0%e5%9d%a1%e5%ad%90%e5%85%ac%e5%8f%b8%e6%94%b6%e5%85%a5%e5%8f%97%e5%88%b0%e5%85%b3%e6%b3%a8-nvidia-stopped-disclosing-singapore-sales-as-revenues-hit-104b&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf&#34;&gt;https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《金融时报》原站直接访问返回 403，未能直接读取完整正文。公开检索摘录称，英伟达新加坡子公司 2025 年收入达 1,040 亿美元、同比增长 72%，并把这一数字与地区披露口径变化联系起来；这些数字在此保留为报道摘录中的说法，不将摘录当作完整报道。&lt;/p&gt;
+&lt;p&gt;为核对口径，我们读取了两份 SEC 季报。2025 年 7 月 27 日结束季度的表格按客户账单地点分类，新加坡列为 101.56 亿美元、占季度收入约 22%；公司同时说明，客户用新加坡集中开票，产品几乎总是发往其他地方。到 2025 年 10 月 26 日结束季度，地区表改按客户总部所在地列示，不再单列新加坡，并重列可比期间。&lt;/p&gt;
+&lt;p&gt;英伟达在文件中称，新方法能更好反映收入的地理分布。公司子公司记账收入、客户账单地址、客户总部、实际交付地和最终使用者并非同一概念；这些公开文件能确认披露方式变了，却不能单独证明 1,040 亿美元芯片流入某一个国家，也不能仅凭表格变化确认或排除出口违规。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000209/nvda-20250727.htm&#34;&gt;https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000209/nvda-20250727.htm&lt;/a&gt;
+
+  &lt;a href=&#34;https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000230/nvda-20251026.htm&#34;&gt;https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000230/nvda-20251026.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-657-points--评论-295-comments--投稿者louiereederson--发布时间2026-11-18-011206-0800&#34;&gt;
+  HN 热度 657 points | 评论 295 comments | 投稿者：louiereederson | 发布时间：2026-11-18 01:12:06 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-657-points--%e8%af%84%e8%ae%ba-295-comments--%e6%8a%95%e7%a8%bf%e8%80%85louiereederson--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-011206-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50534631&#34;&gt;https://news.ycombinator.com/item?id=50534631&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;子公司收入、客户所在地和最终交付地必须分别理解，不能把经新加坡记账直接当成新加坡当地需求。&lt;/li&gt;
+&lt;li&gt;一位自称英伟达员工的参与者认为，按客户总部列示更能反映美国云客户经亚洲供应链下单的实际情况。&lt;/li&gt;
+&lt;li&gt;改变地区归类不会让总收入凭空消失，也不能只凭一行数据不再出现就断言收入被藏起来。&lt;/li&gt;
+&lt;li&gt;在外界高度关注出口问题时，停止单列一个重要地区仍值得追问，合规形式并不能消除透明度疑虑。&lt;/li&gt;
+&lt;li&gt;规模巨大的间接销售应伴随足够的最终用途审查，不能把中间商存在视为无需尽调的理由。&lt;/li&gt;
+&lt;li&gt;芯片实物转移和通过境外数据中心使用算力是不同路径，讨论限制效果时需要区分。&lt;/li&gt;
+&lt;li&gt;多家媒体在同一时期追踪负面新闻也可能只是追逐共同热点，数量增加本身不是有人操纵报道的证据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-反盗版为何不应压在-dns-解析器身上另一篇-quad9-退出法国的分析-dns-resolvers-are-the-wrong-place-to-fight-piracy&#34;&gt;
+  9. 反盗版为何不应压在 DNS 解析器身上：另一篇 Quad9 退出法国的分析 (DNS resolvers are the wrong place to fight piracy)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e5%8f%8d%e7%9b%97%e7%89%88%e4%b8%ba%e4%bd%95%e4%b8%8d%e5%ba%94%e5%8e%8b%e5%9c%a8-dns-%e8%a7%a3%e6%9e%90%e5%99%a8%e8%ba%ab%e4%b8%8a%e5%8f%a6%e4%b8%80%e7%af%87-quad9-%e9%80%80%e5%87%ba%e6%b3%95%e5%9b%bd%e7%9a%84%e5%88%86%e6%9e%90-dns-resolvers-are-the-wrong-place-to-fight-piracy&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://techstackups.com/articles/quad9-leaves-france-dns-blocking/&#34;&gt;https://techstackups.com/articles/quad9-leaves-france-dns-blocking/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这篇政策评论从 Quad9 将于 11 月 24 日退出法国谈起，试图说明公共 DNS 为什么不是合适的反盗版执行点。文章梳理 beIN Sports 相关案件，强调法院实际裁定为每天总计 1,000 欧元，不能把版权方提出的更高要求直接当作判决数额；Quad9 还面临约二十宗类似案件，风险在于持续诉讼和罚款累积，而非某一次金额本身。&lt;/p&gt;
+&lt;p&gt;作者分别分析全球屏蔽、按地域屏蔽、继续付费抗辩三种选择：全球屏蔽有域外效力，GeoIP 不能可靠证明用户法律上的所在地，而小型非营利机构难以承受长期诉讼。我们另读了 Quad9 自己的公告，其退出日期、每天罚款和无法负担后续案件等说法与此相符。&lt;/p&gt;
+&lt;p&gt;文章也回应“增加绕行门槛仍有用”“托管商不配合只能找中间人”等反论点，主张优先移除源头侵权内容，并提高屏蔽透明度。这是作者对政策与技术后果的论证，不代表法院采纳了这些判断；读者仍应区分判决要求、服务商对可行性的解释，以及作者认为更合理的方案。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://quad9.net/news/blog/au-revoir-france/&#34;&gt;https://quad9.net/news/blog/au-revoir-france/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-577-points--评论-214-comments--投稿者ritzaco--发布时间2026-11-18-211802-0800&#34;&gt;
+  HN 热度 577 points | 评论 214 comments | 投稿者：ritzaco | 发布时间：2026-11-18 21:18:02 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-577-points--%e8%af%84%e8%ae%ba-214-comments--%e6%8a%95%e7%a8%bf%e8%80%85ritzaco--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-211802-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50545958&#34;&gt;https://news.ycombinator.com/item?id=50545958&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提交者承认本文是由自己的 AI 代理整理的资料综述，信息有用与作者身份透明是两件应同时重视的事。&lt;/li&gt;
+&lt;li&gt;既然不能可靠识别法国用户，又如何落实退出法国，文章仍欠缺对这两个场景差异的充分解释。&lt;/li&gt;
+&lt;li&gt;即使支持某种屏蔽，也应明确合理地域判断何时足以构成合规，避免每个国家重复昂贵诉讼。&lt;/li&gt;
+&lt;li&gt;自行运行递归解析器被视为降低对公共解析服务政策依赖的一种技术选择。&lt;/li&gt;
+&lt;li&gt;西班牙使用者描述共享 IP 被屏蔽时无关服务也受影响的经历，强调反盗版措施可能伤及并不看球赛的人。&lt;/li&gt;
+&lt;li&gt;版权民事执行不应一概等同政治压制，不能因为手段有问题就否认权利人维权的正当性。&lt;/li&gt;
+&lt;li&gt;即便最初用途是体育或音乐，先建立大规模过滤设施仍可能给以后更广泛的内容限制留下通道。&lt;/li&gt;
+&lt;li&gt;希望创作者能靠作品谋生，也需要公众和平台讨论什么样的权利执行既公平又不过度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-inside-deutsche-bank围绕逾-1500-万份泄露文件的联合调查-inside-deutsche-bank&#34;&gt;
+  10. Inside Deutsche Bank：围绕逾 1,500 万份泄露文件的联合调查 (Inside Deutsche Bank)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-inside-deutsche-bank%e5%9b%b4%e7%bb%95%e9%80%be-1500-%e4%b8%87%e4%bb%bd%e6%b3%84%e9%9c%b2%e6%96%87%e4%bb%b6%e7%9a%84%e8%81%94%e5%90%88%e8%b0%83%e6%9f%a5-inside-deutsche-bank&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.inside-db.com/&#34;&gt;https://www.inside-db.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Inside Deutsche Bank 是多家媒体联合调查的入口。以下概述依据项目总览、调查说明及网站刊登的银行回应。调查方称，超过 1,500 万份泄露文件覆盖 2010 年代初以来的业务，包括反金融犯罪、制裁监控、内部审计和高风险客户去留等敏感领域；记者自 2026 年春起在 DARC 的技术支持下检索和分析材料。&lt;/p&gt;
+&lt;p&gt;项目的核心指称是，商业利益曾压过内部风险警告，豁免和控制流程可能被绕开，让高风险客户继续使用银行服务。其举例涉及可疑交易报告、俄罗斯客户及税务安排，但泄露材料中的内部判断、调查团队的解读与已经由法院认定的违法事实应严格区分。项目还表示不会公布可能危及卧底调查、安全机构账户或个人安全的敏感信息。&lt;/p&gt;
+&lt;p&gt;德银回应称，不评论具体客户关系或详细内部往来，所提问题多为多年甚至数十年前的事项，不少已公开或与监管机构沟通过。银行称 2019—2025 年向控制环境直接投入 70 亿欧元，并辅以技术投入，认为自身治理与文化已发生实质变化；这些是银行的回应，不意味着对调查所有细节已有独立结论。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.inside-db.com/about/&#34;&gt;https://www.inside-db.com/about/&lt;/a&gt;
+
+  &lt;a href=&#34;https://www.inside-db.com/deutsche-bank-responds/&#34;&gt;https://www.inside-db.com/deutsche-bank-responds/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-535-points--评论-186-comments--投稿者gyre007--发布时间2026-11-18-233833-0800&#34;&gt;
+  HN 热度 535 points | 评论 186 comments | 投稿者：gyre007 | 发布时间：2026-11-18 23:38:33 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-535-points--%e8%af%84%e8%ae%ba-186-comments--%e6%8a%95%e7%a8%bf%e8%80%85gyre007--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-18-233833-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50547620&#34;&gt;https://news.ycombinator.com/item?id=50547620&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目入口需要更清楚交代调查主题和主要发现，否则读者很难在大量外链之间判断这次新增了什么。&lt;/li&gt;
+&lt;li&gt;税负最小化和与俄罗斯客户往来本身不自动构成违法，指控需要具体说明时间、对象及被违反的规则。&lt;/li&gt;
+&lt;li&gt;判断相关业务不能只以 2022 年为界，俄罗斯相关制裁更早就存在，必须进一步看具体对象和时点。&lt;/li&gt;
+&lt;li&gt;长期追踪银行问题的人未必觉得主题新鲜，但新的内部文件仍可能为旧疑问提供更具体的依据。&lt;/li&gt;
+&lt;li&gt;大型跨国银行内部存在众多分散业务单元，控制体系难以一致执行本身就是值得分析的组织问题。&lt;/li&gt;
+&lt;li&gt;不公开原始材料会限制独立复核，选择性呈现即使没有捏造事实也可能改变公众理解。&lt;/li&gt;
+&lt;li&gt;另一方面，原始文件包含无关客户与敏感信息，负责任的调查还需要保护隐私、核实线索并补充上下文。&lt;/li&gt;
+&lt;li&gt;一位参与记者介绍，项目利用 OpenAleph、Elasticsearch 和 FollowTheMoney 组织大量邮件等材料，使合作记者能交叉检索。&lt;/li&gt;
+&lt;li&gt;同一记者分享本地模型与短任务队列辅助搜索的经验，并强调让敏感资料接触尽可能少的机器是重要考虑。&lt;/li&gt;
+&lt;li&gt;法律审阅可能使报道缺少某些解释细节，但参与记者称自己并未经历为了安全而只挑不重要故事的情形。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-18 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-18-HackerNews/</link>
+      <pubDate>Wed, 18 Nov 2026 08:03:40 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-18-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-18-hacker-news-top-stories&#34;&gt;
+  2026-11-18 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-18-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;卡内基梅隆大学推出 CS Learn，免费开放机器学习、软件构造等完整课堂视频，更多课程将于 2027 年 1 月上线。&lt;/li&gt;
+&lt;li&gt;哈佛团队分析约 330 万名学生，发现锁袋式禁手机与每年约 0.01 个标准差的学习增益相关，但效果很小，估计也受分析设定影响。&lt;/li&gt;
+&lt;li&gt;JPMorgan Chase 称本地硬件系统中的软件缺陷导致服务中断，并拖慢涉及 Chase 的跨行交易；Zelle 表示自身网络正常运行。&lt;/li&gt;
+&lt;li&gt;逆向分析发现 Windows 11 记录 Codex、Claude、Cursor 等工具的使用标记；作者仅在允许可选诊断数据时验证到上传队列中的报告。&lt;/li&gt;
+&lt;li&gt;BugMeNot 首页确认关闭，只留下致谢和一段字母文本，没有说明停运原因、替代服务或后续安排。&lt;/li&gt;
+&lt;li&gt;Report URI 在 1,611 个 Optimizely 脚本中发现 188 个受污染样本，涉及 178 家组织；其更新称已全部清理，但受害人数尚不清楚。&lt;/li&gt;
+&lt;li&gt;TRMNL 的 Frame 将 31.5 英寸彩色电子纸装入手工木框，售价 1,299 美元，支持 microSD 离线使用，大部分首批订单预计 2027 年初交付。&lt;/li&gt;
+&lt;li&gt;BurntSushi 发布 Jiff 1.0，承诺谨慎对待破坏性更新，以显式时区和日历跨度处理夏令时陷阱，已用于 uv、Cargo、Jujutsu 等项目。&lt;/li&gt;
+&lt;li&gt;CNN 报道 NSA 内部网络 NSANet 中断，机构称例行维护导致部分系统降级、关键能力正常；国家情报总监将问题归因于安全补丁。&lt;/li&gt;
+&lt;li&gt;Jimmy Breck-McKye 以近期故障为背景，警告云服务、深层依赖和 AI 加速产出可能削弱团队对系统的整体理解，但文章未证明事故拥有共同根因。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-卡内基梅隆大学免费开放计算机科学课堂视频-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free&#34;&gt;
+  1. 卡内基梅隆大学免费开放计算机科学课堂视频 (Carnegie Mellon is putting computer science courses on YouTube for free)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-%e5%8d%a1%e5%86%85%e5%9f%ba%e6%a2%85%e9%9a%86%e5%a4%a7%e5%ad%a6%e5%85%8d%e8%b4%b9%e5%bc%80%e6%94%be%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%a7%91%e5%ad%a6%e8%af%be%e5%a0%82%e8%a7%86%e9%a2%91-carnegie-mellon-is-putting-computer-science-courses-on-youtube-for-free&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.cs.cmu.edu/learn/&#34;&gt;https://www.cs.cmu.edu/learn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;卡内基梅隆大学计算机科学学院推出 CS Learn，将教师的完整课堂讲授免费放到 YouTube，覆盖人工智能、机器人、系统、生物学等方向。首批课程包括 William Cohen 的“大规模数据机器学习”、Franceska Xhakaj 的“计算原理”，以及“软件构造原理”“机器学习系统”等；“AI Agents”“生产环境中的机器学习”等课程也列出了本周的首播安排。&lt;/p&gt;
+&lt;p&gt;课程并非一次全部上线，页面还预告了 2027 年 1 月的“概率与计算”“多模态机器学习”等内容。当前开放的是课堂视频；带即时反馈和徽章的自学课件，以及帮助学习者答疑的 AI 辅导，仍被列为后续阶段。网站另列有正式证书和线下学习入口，不能把免费视频直接理解为可免费获得学分或 CMU 学位。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-2273-points--评论-308-comments--投稿者pcompeau--发布时间2026-11-17-044336-0800&#34;&gt;
+  HN 热度 2273 points | 评论 308 comments | 投稿者：pcompeau | 发布时间：2026-11-17 04:43:36 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2273-points--%e8%af%84%e8%ae%ba-308-comments--%e6%8a%95%e7%a8%bf%e8%80%85pcompeau--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-044336-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50522980&#34;&gt;https://news.ycombinator.com/item?id=50522980&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目负责人 Phillip Compeau 介绍，学生开发的工具能自动处理不少视频制作工作，同时每一讲仍有人审核。&lt;/li&gt;
+&lt;li&gt;除 YouTube 外提供 PeerTube 等分发渠道，可以让公开课程拥有更多访问选择，负责人表示会研究这一建议。&lt;/li&gt;
+&lt;li&gt;公开视频仍需明确再分发许可，才能方便网络条件较差地区的学习者制作和传播离线版本。&lt;/li&gt;
+&lt;li&gt;开放课件之外，学习计划、提醒和持续督促同样重要，提供求职辅导的经验显示坚持学习往往才是难点。&lt;/li&gt;
+&lt;li&gt;扎实理解基础知识有助于把 AI 当作更有效的工具，而不是完全依赖生成结果。&lt;/li&gt;
+&lt;li&gt;“学好基础就不会被 AI 替代”缺乏确定依据，基础知识是否有价值仍取决于它如何转化为实际能力。&lt;/li&gt;
+&lt;li&gt;随时向 AI 提问和讨论课程内容，为缺少教师支持的学习者提供了新的教学选择。&lt;/li&gt;
+&lt;li&gt;基础知识不宜完全交给大模型教授，实际测试中专业问题仍可能得到编造的答案。&lt;/li&gt;
+&lt;li&gt;数据库等已有公开视频受到推荐，也有人希望扩展到计算机工程方向，让课程覆盖超出当前首批主题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-学校禁手机与成绩小幅改善研究规模扩大效果仍需谨慎解释-new-evidence-shows-school-phone-bans-are-gradually-improving-test-scores&#34;&gt;
+  2. 学校禁手机与成绩小幅改善：研究规模扩大，效果仍需谨慎解释 (New Evidence Shows School Phone Bans Are Gradually Improving Test Scores)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e5%ad%a6%e6%a0%a1%e7%a6%81%e6%89%8b%e6%9c%ba%e4%b8%8e%e6%88%90%e7%bb%a9%e5%b0%8f%e5%b9%85%e6%94%b9%e5%96%84%e7%a0%94%e7%a9%b6%e8%a7%84%e6%a8%a1%e6%89%a9%e5%a4%a7%e6%95%88%e6%9e%9c%e4%bb%8d%e9%9c%80%e8%b0%a8%e6%85%8e%e8%a7%a3%e9%87%8a-new-evidence-shows-school-phone-bans-are-gradually-improving-test-scores&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html&#34;&gt;https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;《纽约时报》原文目前返回不可访问，未能读取报道正文；以下补充内容直接依据哈佛大学教育政策研究中心公开的研究报告，不将其冒充为报道摘要。&lt;/p&gt;
+&lt;p&gt;报告追踪约 330 万名学生、4,600 所美国学校在 2021—22 至 2025—26 学年的数据，利用 NWEA MAP 秋季到春季的成绩变化，将采用可上锁手机袋的学校与相似对照学校比较。研究采用分期实施的双重差分方法，估计严格禁手机使数学和阅读的年学习增长增加约 0.01 个标准差，折算相当于每年增加一至两周教学时间，且未发现起点成绩较低的学生受益明显更多。&lt;/p&gt;
+&lt;p&gt;这不是随机分配实验，效果也不大。报告指出，长期实施学校数量还不足以确定增益会否继续扩大；州级禁令分析存在实施前趋势不同的问题。稳健性检查中，纳回被剔除的极端成绩变化后，合并估计降至约 0.0058 个标准差且不再达到常用显著性门槛，不能据此承诺每个学生都会明显提分。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://cepr.harvard.edu/resource/phone-free-schools-report&#34;&gt;https://cepr.harvard.edu/resource/phone-free-schools-report&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1136-points--评论-558-comments--投稿者donohoe--发布时间2026-11-17-194551-0800&#34;&gt;
+  HN 热度 1136 points | 评论 558 comments | 投稿者：donohoe | 发布时间：2026-11-17 19:45:51 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1136-points--%e8%af%84%e8%ae%ba-558-comments--%e6%8a%95%e7%a8%bf%e8%80%85donohoe--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-194551-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50530163&#34;&gt;https://news.ycombinator.com/item?id=50530163&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;家长描述禁手机后孩子重新在午休和课间聊天玩耍，并可通过学校办公室处理必要的接送联系。&lt;/li&gt;
+&lt;li&gt;禁令能否落实取决于家长和校方配合，教师没收手机后若遭家长抗议而缺乏管理层支持，书面规定也可能落空。&lt;/li&gt;
+&lt;li&gt;只限制手机仍可能把分心转移到学校配发的电脑上，屏幕应何时进入课堂也值得重新评估。&lt;/li&gt;
+&lt;li&gt;约 0.01 个标准差的差异对教育系统可能有意义，但对单个学生而言很容易被其他因素淹没。&lt;/li&gt;
+&lt;li&gt;结果对极端值剔除较敏感，是否预先约定分析规则、为何这样处理数据，需要比“成绩提高”这个结论更仔细的审查。&lt;/li&gt;
+&lt;li&gt;全面禁手机也可能拿走不合群学生联系校外朋友的出口，集体减少干扰与个体社交需求之间仍有取舍。&lt;/li&gt;
+&lt;li&gt;另一位家长认为学校对不同类型孩子的包容已有改善，自己孩子在禁手机环境中仍拥有活跃的社交圈。&lt;/li&gt;
+&lt;li&gt;旧式通话短信手机与全天候社交媒体不能混为一谈，造成干扰的可能是使用方式及产品设计，而不只是设备本身。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-chase-本地系统软件故障引发美国多家银行交易延迟-technical-issue-at-jpmorgan-chase-triggers-online-banking-delays-for-us-banks&#34;&gt;
+  3. Chase 本地系统软件故障引发美国多家银行交易延迟 (Technical issue at JPMorgan Chase triggers online banking delays for US banks)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-chase-%e6%9c%ac%e5%9c%b0%e7%b3%bb%e7%bb%9f%e8%bd%af%e4%bb%b6%e6%95%85%e9%9a%9c%e5%bc%95%e5%8f%91%e7%be%8e%e5%9b%bd%e5%a4%9a%e5%ae%b6%e9%93%b6%e8%a1%8c%e4%ba%a4%e6%98%93%e5%bb%b6%e8%bf%9f-technical-issue-at-jpmorgan-chase-triggers-online-banking-delays-for-us-banks&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda&#34;&gt;https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;美联社报道，11 月 16 日 JPMorgan Chase 的技术问题使数千名客户报告网银访问困难，并波及其他银行与 Chase 之间的转账。Chase 发言人将原因归为本地硬件系统中的软件缺陷，明确称并非网络攻击，并表示当时正努力在周一结束前恢复服务；报道没有提供完整事故复盘，也不能把恢复目标当作已完成的结果。&lt;/p&gt;
+&lt;p&gt;Chase 同时强调，这是该行自身的问题，其他银行主要因参与了与 Chase 的交易而出现延迟。报道指出，Bank of America、Citigroup 的银行服务并未发生同样故障；U.S. Bank 也称系统未被直接影响，但部分与其他金融机构之间的 Zelle 收付款可能延迟。&lt;/p&gt;
+&lt;p&gt;运营 Zelle 的 Early Warning Services 表示其网络完全正常，延迟来自金融机构一侧。因此，“多家银行用户受影响”不等于多家银行核心系统或 Zelle 网络同时瘫痪。事件发生在微软服务和美国空管故障之后，但报道没有建立这些事件之间的共同技术原因。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-821-points--评论-702-comments--投稿者samk3nny--发布时间2026-11-17-023130-0800&#34;&gt;
+  HN 热度 821 points | 评论 702 comments | 投稿者：samk3nny | 发布时间：2026-11-17 02:31:30 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-821-points--%e8%af%84%e8%ae%ba-702-comments--%e6%8a%95%e7%a8%bf%e8%80%85samk3nny--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-023130-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50521045&#34;&gt;https://news.ycombinator.com/item?id=50521045&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多家银行客户都报告异常时，应先区分网银登录、Zelle 和特定跨行交易，不能直接推断所有银行都整体停摆。&lt;/li&gt;
+&lt;li&gt;故障聚合网站可能把关注与真实故障混在一起，其流量峰值不足以证明相应服务已经中断。&lt;/li&gt;
+&lt;li&gt;另一个使用经验认为故障聚合榜的头部信号仍有参考价值，但应忽略较低排名中的噪声。&lt;/li&gt;
+&lt;li&gt;连续几天出现微软、空管和银行事故，正在损害非技术用户对数字基础设施的整体信任。&lt;/li&gt;
+&lt;li&gt;一连串新闻也可能放大注意力偏差，判断可靠性是否下降需要事故率等证据，而不只看近期头条。&lt;/li&gt;
+&lt;li&gt;即使 AI 能写出可用代码，管理层若只奖励产出速度而不奖励可靠性，也可能把开发提速转化为更多质量风险。&lt;/li&gt;
+&lt;li&gt;生成代码能编译并不意味着满足真实需求，提示中遗漏的边界条件仍需要开发者主动检查。&lt;/li&gt;
+&lt;li&gt;加拿大支付曾受电信故障影响的经历说明支付渠道也有共同依赖，部分使用者因此保留现金作为短期备用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-windows-11-记录编程代理和开发工具使用情况上传受可选诊断设置控制-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-you-use&#34;&gt;
+  4. Windows 11 记录编程代理和开发工具使用情况，上传受可选诊断设置控制 (Windows 11 is collecting data on which coding agents and developer tools you use)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-windows-11-%e8%ae%b0%e5%bd%95%e7%bc%96%e7%a8%8b%e4%bb%a3%e7%90%86%e5%92%8c%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7%e4%bd%bf%e7%94%a8%e6%83%85%e5%86%b5%e4%b8%8a%e4%bc%a0%e5%8f%97%e5%8f%af%e9%80%89%e8%af%8a%e6%96%ad%e8%ae%be%e7%bd%ae%e6%8e%a7%e5%88%b6-windows-11-is-collecting-data-on-which-coding-agents-and-developer-tools-you-use&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://xusheng.dev/posts/windows-coding-agent-telemetry/&#34;&gt;https://xusheng.dev/posts/windows-coding-agent-telemetry/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究者 xusheng 分析 Windows 11 的 MissionControlAggregator.dll，发现其中有针对 Codex、Claude、Copilot、Cursor 等编程代理，以及 Python、GCC、Visual Studio 等开发工具的匹配逻辑。该组件订阅已有的 Windows 和 WSL 事件，将观察到的工具归入类别，以位图保存并形成诊断报告，而不是在这一报告中逐条列出完整使用记录。&lt;/p&gt;
+&lt;p&gt;作者在 Windows 11 ARM64 虚拟机上验证了组件运行，并将 cmd.exe 改名为 codex.exe、gcc.exe 测试匹配链路；报告能反映对应工具或类别，说明至少部分检测依赖可执行文件名。作者未在该报告中发现提示词或源代码，也指出组件似乎丢弃运行时长等输入细节，只保留是否观察到工具的标记。&lt;/p&gt;
+&lt;p&gt;重要条件是上传：作者在开启“可选诊断数据”时，找到了进入 DiagTrack 上传队列的事件，并在其测试的美国地区全新 Home 安装中观察到默认开启。这个发现不能外推为所有地区、版本和配置一律上传；原文给出关闭可选诊断数据的设置路径，本地记录与向微软发送也应区分。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-708-points--评论-588-comments--投稿者cwaffles--发布时间2026-11-17-065820-0800&#34;&gt;
+  HN 热度 708 points | 评论 588 comments | 投稿者：cwaffles | 发布时间：2026-11-17 06:58:20 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-708-points--%e8%af%84%e8%ae%ba-588-comments--%e6%8a%95%e7%a8%bf%e8%80%85cwaffles--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-065820-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50524736&#34;&gt;https://news.ycombinator.com/item?id=50524736&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;允许可选遥测的 Windows 用户只是一个自选样本，用这类数据推断整个开发者市场会产生偏差。&lt;/li&gt;
+&lt;li&gt;可选诊断上传可以关闭且界面已有相关说明，这一前提会改变对“系统无条件上报”的理解。&lt;/li&gt;
+&lt;li&gt;即使关闭上传，本地仍保存了什么、以后重新开启共享会发送什么，也需要比单一开关更清楚的解释。&lt;/li&gt;
+&lt;li&gt;了解编程代理的使用有助于企业管理和平台功能规划，但这种用途应建立在适度、透明的数据收集之上。&lt;/li&gt;
+&lt;li&gt;AI 辅助逆向不能代替证据核验，工具给出的线索应通过实际事件、程序行为或文档逐项确认。&lt;/li&gt;
+&lt;li&gt;隐私审视不应只盯着 Windows，其他商业操作系统的数据收集同样值得追问。&lt;/li&gt;
+&lt;li&gt;Windows 用户的不满还来自多年新增遥测和限制所造成的累积变化，不能只用其他平台也收集数据来解释。&lt;/li&gt;
+&lt;li&gt;迁移 Linux 对不少日常工作和单机游戏已可行，但 Autodesk 软件和部分多人游戏反作弊仍构成现实阻力。&lt;/li&gt;
+&lt;li&gt;换操作系统并不自动解决隐私和安全问题，联网依赖、软件来源与用户实际使用习惯仍然重要。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-bugmenot-宣布关闭未披露原因-bugmenot-has-closed&#34;&gt;
+  5. BugMeNot 宣布关闭，未披露原因 (BugMeNot has closed)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-bugmenot-%e5%ae%a3%e5%b8%83%e5%85%b3%e9%97%ad%e6%9c%aa%e6%8a%ab%e9%9c%b2%e5%8e%9f%e5%9b%a0-bugmenot-has-closed&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.bugmenot.com/&#34;&gt;https://www.bugmenot.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;BugMeNot 的首页已经变为关闭公告，明确写着“BugMeNot has closed”，并感谢那些曾设想更好互联网的人。页面随后附有一大段按组排列的字母，但没有解释其含义，也没有给出关闭日期、运营困难、法律纠纷或出售转让等原因。&lt;/p&gt;
+&lt;p&gt;原站当前可读内容仅限这则简短公告，已经没有可供核对的完整服务说明。因此，这里只能确认关闭本身，不能把讨论中的商业模式、网站封禁、两步验证等猜测写成官方解释，也无法据此确认它是否会恢复。评论中关于过去用途、登录成功率和注册墙的经历，均单独列在下方；这些回忆能说明用户为何在意此事，却不能替代运营方未公开的信息。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-708-points--评论-338-comments--投稿者lode--发布时间2026-11-17-053217-0800&#34;&gt;
+  HN 热度 708 points | 评论 338 comments | 投稿者：lode | 发布时间：2026-11-17 05:32:17 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-708-points--%e8%af%84%e8%ae%ba-338-comments--%e6%8a%95%e7%a8%bf%e8%80%85lode--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-053217-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50523601&#34;&gt;https://news.ycombinator.com/item?id=50523601&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;早期用户回忆共享登录曾十分有用，尤其能解决小站点或大学共享账号场景中的重复注册问题。&lt;/li&gt;
+&lt;li&gt;另一部分使用者多年前就因有效账号太少而放弃，服务价值在他们眼中早已明显衰退。&lt;/li&gt;
+&lt;li&gt;也有近期成功使用的经历，主要需求是下载免费软件时跳过繁琐的账号注册流程。&lt;/li&gt;
+&lt;li&gt;强制社交登录、两步验证和地区或 IP 检查使共享账号更难维持，但这只是对服务衰落的解释，并非官方停运原因。&lt;/li&gt;
+&lt;li&gt;共享账号即使不必然构成刑事问题，也可能违反站点服务条款，不能忽略合同层面的限制。&lt;/li&gt;
+&lt;li&gt;下载自己所拥有设备的手册也被要求注册，被批评为平台给本可公开获取的信息人为增加门槛。&lt;/li&gt;
+&lt;li&gt;小型论坛仍可能保有有效账号，因此有人更希望站点停止新增但保留只读查询，而不是直接关闭。&lt;/li&gt;
+&lt;li&gt;托管和用户支持都需要持续支出，依靠主动回避付费和广告的使用者维持运营会有困难。&lt;/li&gt;
+&lt;li&gt;互联网项目可以是公共贡献，不应默认每个有价值的网站都必须成为一门生意。&lt;/li&gt;
+&lt;li&gt;注册墙有时被解释为阻挡抓取的手段，Reddit 近期更积极要求登录被作为例子。&lt;/li&gt;
+&lt;li&gt;另一种解释认为强制登录主要服务于用户追踪，把阻挡抓取当成理由无法消除隐私疑虑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-optimizely-脚本被植入恶意代码report-uri-发现涉及-178-家组织-optimizely-compromised-served-malware-on-zoom-gitlab&#34;&gt;
+  6. Optimizely 脚本被植入恶意代码，Report URI 发现涉及 178 家组织 (Optimizely compromised, served malware on Zoom, GitLab)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-optimizely-%e8%84%9a%e6%9c%ac%e8%a2%ab%e6%a4%8d%e5%85%a5%e6%81%b6%e6%84%8f%e4%bb%a3%e7%a0%81report-uri-%e5%8f%91%e7%8e%b0%e6%b6%89%e5%8f%8a-178-%e5%ae%b6%e7%bb%84%e7%bb%87-optimizely-compromised-served-malware-on-zoom-gitlab&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/&#34;&gt;https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Report URI 披露，11 月 16 日攻击者向 Optimizely Web 客户项目的 Project JavaScript 写入加载器，使恶意代码随受信任的 Optimizely 脚本进入用户浏览器。其检查的 1,611 个脚本中，188 个受污染，涉及 Zoom、BBC、GitLab 等 178 家组织；这属于其发现范围，并非全球受影响总数。报告强调不是 CDN 缓存投毒，攻击者如何取得多个客户项目的写权限仍不清楚。&lt;/p&gt;
+&lt;p&gt;分析发现，载荷会替换加密货币钱包地址，监视网页表单和网络请求中的银行卡资料，窃取非 HttpOnly Cookie，并在特定条件下截取页面；还会按 iOS 版本加载漏洞利用链。第三方托管支付 iframe 内的卡号不在其直接读取范围，页面出现攻击脚本也不意味着所有功能都已成功执行。&lt;/p&gt;
+&lt;p&gt;11 月 17 日的更新称，所有已发现的受污染 Optimizely 文件在前一晚 23:11 UTC 前清理完毕，并保持干净；链上已观察到资金流入攻击者钱包，但银行卡、Cookie、截图泄露数量及 iOS 感染规模仍无法确认。报告同时介绍自家安全产品，对其防护效果的介绍应视为供应商主张。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-662-points--评论-262-comments--投稿者kristjansson--发布时间2026-11-17-070034-0800&#34;&gt;
+  HN 热度 662 points | 评论 262 comments | 投稿者：kristjansson | 发布时间：2026-11-17 07:00:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-662-points--%e8%af%84%e8%ae%ba-262-comments--%e6%8a%95%e7%a8%bf%e8%80%85kristjansson--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-070034-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50524767&#34;&gt;https://news.ycombinator.com/item?id=50524767&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;脚本内容校验和 CSP 解决的是不同问题，核对初始脚本并不等于限制它继续加载其他代码。&lt;/li&gt;
+&lt;li&gt;频繁更新的 SaaS 和营销部门持续增加的第三方脚本，会使严格实施内容安全策略变得困难。&lt;/li&gt;
+&lt;li&gt;跨越大量客户的写权限值得重点调查，关键问题是权限边界如何被突破，而不能只归咎于单个客户配置。&lt;/li&gt;
+&lt;li&gt;标签管理器让营销团队绕过工程流程添加代码，也把这种便捷转化为浏览器端供应链风险。&lt;/li&gt;
+&lt;li&gt;拥有大规模用户的网站应对第三方脚本进行审核、分阶段发布和异常检查，而不是始终无条件信任远程更新。&lt;/li&gt;
+&lt;li&gt;提高事故责任和让大型平台承担更多损失，被视为促使供应商认真投入安全的一种激励手段。&lt;/li&gt;
+&lt;li&gt;把意外传播恶意代码直接刑事化也有难题，开源项目遭供应链攻击时的责任边界必须一并考虑。&lt;/li&gt;
+&lt;li&gt;如果供应商只需发一则道歉公告而把损失留给用户，安全投入不足的激励就不会改变。&lt;/li&gt;
+&lt;li&gt;另一种判断认为大客户追偿可能使供应商承担可观损失，常见的责任上限也未必一定经得住诉讼检验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-trmnl-推出-315-英寸彩色电子纸-frame售价-1299-美元-frame--315-color-epaper-display&#34;&gt;
+  7. TRMNL 推出 31.5 英寸彩色电子纸 Frame，售价 1,299 美元 (Frame – 31.5&amp;quot; color ePaper display)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-trmnl-%e6%8e%a8%e5%87%ba-315-%e8%8b%b1%e5%af%b8%e5%bd%a9%e8%89%b2%e7%94%b5%e5%ad%90%e7%ba%b8-frame%e5%94%ae%e4%bb%b7-1299-%e7%be%8e%e5%85%83-frame--315-color-epaper-display&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://trmnl.com/blog/introducing-frame&#34;&gt;https://trmnl.com/blog/introducing-frame&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TRMNL 发布第三款设备 Frame：31.5 英寸 Spectra 6 彩色电子纸，2560×1440 分辨率，外壳由团队自己的木工车间制作。它面向艺术、照片、家庭日程和天气等低频更新内容，保留 TRMNL 平台功能，也支持横竖挂装。产品页当前标价为 1,299 美元，原公告所说的首批规模约为 470 台，大部分预计在 2027 年初交付，属于预售而非现货发售。&lt;/p&gt;
+&lt;p&gt;新增功能包括按一天中的指定时刻刷新，而非只按固定分钟间隔刷新，以减少闪烁并帮助节电；microSD 模式可完全离线运行，另有背部 USB-C 接口供长期接电。产品页称标准电池为 10,000mAh，可升级到 20,000mAh，续航约二至六个月，具体取决于刷新偏好。&lt;/p&gt;
+&lt;p&gt;平台终身使用权包含在设备价格中，无需订阅，也允许本地托管，固件开源。团队正在开发 Lazarus 色彩转换引擎并计划开放源码，但“最佳匹配”等表述属于厂商评价，不能当作独立画质测试结论；国际配送安排与进口费用也需按地区另行确认。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://shop.trmnl.com/products/frame&#34;&gt;https://shop.trmnl.com/products/frame&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-522-points--评论-403-comments--投稿者geerlingguy--发布时间2026-11-17-002322-0800&#34;&gt;
+  HN 热度 522 points | 评论 403 comments | 投稿者：geerlingguy | 发布时间：2026-11-17 00:23:22 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-522-points--%e8%af%84%e8%ae%ba-403-comments--%e6%8a%95%e7%a8%bf%e8%80%85geerlingguy--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-002322-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50519354&#34;&gt;https://news.ycombinator.com/item?id=50519354&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;约 1,300 美元的价格是主要门槛，即使认可电子纸画框的用途，也很难把它视为轻易可买的家居设备。&lt;/li&gt;
+&lt;li&gt;高价设备再为开发者模式收费引起反感，批评者希望至少提供无需支持的免费完全解锁选项。&lt;/li&gt;
+&lt;li&gt;团队回应开发者服务包含人工审核和专门支持，并表示选择自行托管时并不需要这一额外服务。&lt;/li&gt;
+&lt;li&gt;固定搭配手工木框提高了成本，允许消费者自由选择和另行装框可能更有吸引力。&lt;/li&gt;
+&lt;li&gt;木框的材质和外观能帮助设备融入居室，对强调审美的画框产品而言本身就是价值。&lt;/li&gt;
+&lt;li&gt;一位 Samsung Frame 电视用户分享用旧电脑定时换图的方案，并测得艺术模式约耗电 35 至 40 瓦，提示替代方案也有持续使用成本。&lt;/li&gt;
+&lt;li&gt;使用其他彩色电子纸设备的经验提醒，刷新时的长时间闪烁可能影响摆放位置，不能只看静态展示效果。&lt;/li&gt;
+&lt;li&gt;31.5 英寸 1440p 屏幕约 94 PPI，近看精细度有限，但作为几英尺之外观看的挂画也许足够。&lt;/li&gt;
+&lt;li&gt;16:9 比例仍显得像屏幕，部分用户更希望采用接近传统画作的比例。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-rust-日期时间库-jiff-发布-10把时区与日历运算放到-api-核心-jiff-10-a-datetime-library-for-rust&#34;&gt;
+  8. Rust 日期时间库 Jiff 发布 1.0，把时区与日历运算放到 API 核心 (Jiff 1.0: A datetime library for Rust)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-rust-%e6%97%a5%e6%9c%9f%e6%97%b6%e9%97%b4%e5%ba%93-jiff-%e5%8f%91%e5%b8%83-10%e6%8a%8a%e6%97%b6%e5%8c%ba%e4%b8%8e%e6%97%a5%e5%8e%86%e8%bf%90%e7%ae%97%e6%94%be%e5%88%b0-api-%e6%a0%b8%e5%bf%83-jiff-10-a-datetime-library-for-rust&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://burntsushi.net/jiff/&#34;&gt;https://burntsushi.net/jiff/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Andrew Gallant（BurntSushi）宣布 Rust 日期时间库 Jiff 1.0，并通过大量示例解释 API。Jiff 已用于 uv、Cargo、Starship、Jujutsu 等项目，作者希望它能成为出现在其他库公开接口中的基础依赖，因此除非发现重大 API 缺陷，计划长期维持 1.0，避免轻易引入不兼容更新。&lt;/p&gt;
+&lt;p&gt;核心设计是区分普通日期时间、唯一时间点及带时区日期时间，让 IANA 时区规则参与转换、运算与舍入。例如夏令时结束时“明天同一时刻”可能相隔 25 小时；重复或不存在的本地时间，既有默认兼容策略，也能显式选择较早、较晚或拒绝歧义。Span 保留年月日等日历单位，SignedDuration 则表达小时及更小单位的物理时长，两者不能随意等同。&lt;/p&gt;
+&lt;p&gt;文章还介绍 RFC 9557 序列化、易读时长格式，以及通过 ICU4X 提供本地化和其他历法的集成。Jiff 自身只支持前推格里高利历，日期范围为正负 9999 年；它受 Temporal 启发，但不追求完全兼容。若只是测量程序耗时，作者明确建议优先使用标准库的单调时钟。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-436-points--评论-95-comments--投稿者burntsushi--发布时间2026-11-17-005339-0800&#34;&gt;
+  HN 热度 436 points | 评论 95 comments | 投稿者：burntsushi | 发布时间：2026-11-17 00:53:39 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-436-points--%e8%af%84%e8%ae%ba-95-comments--%e6%8a%95%e7%a8%bf%e8%80%85burntsushi--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-005339-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50519744&#34;&gt;https://news.ycombinator.com/item?id=50519744&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chrono 的前维护者和原作者谈到，稳定 API 的用户需求会妨碍纠正设计缺陷，也会给维护者造成长期倦怠。&lt;/li&gt;
+&lt;li&gt;基础库的兼容性应被严肃对待，频繁借升级主版本破坏接口，会把维护成本转嫁给下游使用者。&lt;/li&gt;
+&lt;li&gt;另一个立场认为改名重建也无法保证旧项目有人维护，新名字与新主版本并没有消除同一个资源问题。&lt;/li&gt;
+&lt;li&gt;标准库提供默认日期时间方案有利于生态互通，并可能减少重复选择和供应链暴露面。&lt;/li&gt;
+&lt;li&gt;支持较小标准库的理由是复杂时间模型需要长期试错，过早冻结设计容易把错误 API 永久留在生态中。&lt;/li&gt;
+&lt;li&gt;Rust 团队成员回应，避免过早纳入并不等于反对丰富标准库，成熟的生态 API 仍在持续被吸收。&lt;/li&gt;
+&lt;li&gt;天体轨道模拟等需要 TAI、UT1 或超长时间尺度的用途超出 Jiff 的目标，作者建议研究更专门的工具。&lt;/li&gt;
+&lt;li&gt;金融和能源交付经验说明“加一天”究竟是 24 小时还是明天同一时刻，并非小差别，而会影响真实业务结果。&lt;/li&gt;
+&lt;li&gt;面向普通用户的时区名称与程序员使用的 IANA 标识不同，相关显示和搜索能力可能更适合由 ICU 等配套库承担。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-nsa-内部机密网络-nsanet-故障机构称关键任务能力正常-highly-classified-us-national-security-communications-network-goes-down&#34;&gt;
+  9. NSA 内部机密网络 NSANet 故障，机构称关键任务能力正常 (Highly classified US national security communications network goes down)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-nsa-%e5%86%85%e9%83%a8%e6%9c%ba%e5%af%86%e7%bd%91%e7%bb%9c-nsanet-%e6%95%85%e9%9a%9c%e6%9c%ba%e6%9e%84%e7%a7%b0%e5%85%b3%e9%94%ae%e4%bb%bb%e5%8a%a1%e8%83%bd%e5%8a%9b%e6%ad%a3%e5%b8%b8-highly-classified-us-national-security-communications-network-goes-down&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down&#34;&gt;https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CNN 援引六名知情人士报道，美国国家安全局用于内部机密通信的 NSANet 出现故障，人员被安排错峰到岗。NSA 随后声明，例行计划维护期间发生临时性能降级，部分内部系统受影响，但关键任务能力保持正常；一名知情人士称网络恢复当时仍未完成。因此，这并不是报道已经证实整个美国国家安全通信体系停止运转。&lt;/p&gt;
+&lt;p&gt;国家情报总监 Jay Clayton 在电视采访中表示，机构正在为此前发现的重大软件漏洞安装补丁，部分系统更新后没有按预期恢复，NSA 此次故障也属于这种情况。报道将其所指漏洞关联到 PHP，但没有公布完整技术复盘；消息来源及官员均称目前没有网络攻击迹象。&lt;/p&gt;
+&lt;p&gt;报道还指出，美国政府有其他冗余系统，可继续向出访中的总统传递紧急情报；知情人士称“五眼”情报共享体系未受这次 NSANet 故障影响。故障可能影响分析和报告工作，但这些影响与最高优先级通信是否仍能维持，应分别判断。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-428-points--评论-519-comments--投稿者monkeydust--发布时间2026-11-17-233828-0800&#34;&gt;
+  HN 热度 428 points | 评论 519 comments | 投稿者：monkeydust | 发布时间：2026-11-17 23:38:28 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-428-points--%e8%af%84%e8%ae%ba-519-comments--%e6%8a%95%e7%a8%bf%e8%80%85monkeydust--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-233828-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50532849&#34;&gt;https://news.ycombinator.com/item?id=50532849&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;纳斯达克同日下跌不代表由这条消息造成，市场同时接收大量信息，单一事件归因常常只是猜测。&lt;/li&gt;
+&lt;li&gt;集中关注故障可能形成频率错觉，让原本分散的日常事故看起来像突然出现的统一趋势。&lt;/li&gt;
+&lt;li&gt;保持怀疑也应包括不轻率排除共同原因，但目前的疑虑不能当作已经存在关联的证据。&lt;/li&gt;
+&lt;li&gt;把故障直接归咎于 AI 编写代码缺少客观指标，AI 加快发现旧代码漏洞与 AI 生成新缺陷也需要区分。&lt;/li&gt;
+&lt;li&gt;曾在 BBN 实习的参与者回忆，约四十年前相关客户部署固件前会测试多年，但也明确提醒记忆与今天情况都可能不同。&lt;/li&gt;
+&lt;li&gt;接触政府高安全网络的经验提出另一种风险，认证程序若长期锁定旧固件，合规可能反而阻碍及时修补漏洞。&lt;/li&gt;
+&lt;li&gt;故障标题应随恢复情况更新，否则读者容易把已修复事故误认为仍在持续。&lt;/li&gt;
+&lt;li&gt;维护重要系统需要有经验的人，也需要培养新人，否则停止招收毕业生会继续侵蚀未来的人才储备。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-软件正在系统性失灵一篇关于复杂度依赖和组织判断的警告-software-is-breaking-down-at-a-systemic-level&#34;&gt;
+  10. 软件正在系统性失灵？一篇关于复杂度、依赖和组织判断的警告 (Software is breaking down at a systemic level)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e8%bd%af%e4%bb%b6%e6%ad%a3%e5%9c%a8%e7%b3%bb%e7%bb%9f%e6%80%a7%e5%a4%b1%e7%81%b5%e4%b8%80%e7%af%87%e5%85%b3%e4%ba%8e%e5%a4%8d%e6%9d%82%e5%ba%a6%e4%be%9d%e8%b5%96%e5%92%8c%e7%bb%84%e7%bb%87%e5%88%a4%e6%96%ad%e7%9a%84%e8%ad%a6%e5%91%8a-software-is-breaking-down-at-a-systemic-level&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/&#34;&gt;https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者以微软服务、美国空管等近期事故为背景，提出软件行业可能面临系统性退化。他的核心观点不是某一工具总会生成坏代码，而是系统由越来越多局部合理、整体却互不协调的部件组成，生成复杂度的速度超过团队理解和收拾它的能力。&lt;/p&gt;
+&lt;p&gt;文章把这种变化追溯到云服务、开源依赖和岗位通才化：它们提高交付速度，却也使团队把底层知识和控制权交给外部系统，依赖少数未获充分回报的维护者。AI 又能更快地产生代码、任务描述和规划文档，作者担心组织逐渐失去共同思考与回应问题的能力，开发者也更难凭深入理解发出警报。&lt;/p&gt;
+&lt;p&gt;这是以行业经历和案例串联的评论文章，而非对事故率的系统测量。作者明确承认近期事故的直接原因并不相同，微软故障的部分细节也未公开；对多数工程师能力变化等判断属于他的观察，不能视为已经验证的行业统计，更不能据此认定这些事故都由 AI 导致。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-388-points--评论-251-comments--投稿者zero_shift--发布时间2026-11-17-021717-0800&#34;&gt;
+  HN 热度 388 points | 评论 251 comments | 投稿者：zero_shift | 发布时间：2026-11-17 02:17:17 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-388-points--%e8%af%84%e8%ae%ba-251-comments--%e6%8a%95%e7%a8%bf%e8%80%85zero_shift--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-17-021717-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50520866&#34;&gt;https://news.ycombinator.com/item?id=50520866&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;包管理器和开源复用远早于 npm 流行时期，把行业变化压缩成最近十年的故事会误读历史。&lt;/li&gt;
+&lt;li&gt;把直接原因不同的事故放在一起，并不能证明软件已经进入新的系统性崩坏阶段。&lt;/li&gt;
+&lt;li&gt;过去的软件同样常崩溃、维护停机和暴露安全问题，今天使用规模大得多，比较可靠性需要相应分母。&lt;/li&gt;
+&lt;li&gt;即使每次触发因素不同，更密集的基础设施依赖仍可能放大连锁影响，因此系统性风险不要求存在共同攻击者。&lt;/li&gt;
+&lt;li&gt;发现漏洞和传播故障消息的成本降低，也可能让旧问题更容易被看见，而不代表问题刚刚出现。&lt;/li&gt;
+&lt;li&gt;软件已进入大量关键生活场景，可靠性要求随之提高，这与按季度快速交付和压低成本的管理目标存在冲突。&lt;/li&gt;
+&lt;li&gt;Rice 定理讨论任意程序的一般判定问题，不能直接用来否定类型系统或特定程序性质验证的实际价值。&lt;/li&gt;
+&lt;li&gt;与其把问题归为初学者太多，更值得追问的是软件行业为何长期把交付速度置于其他目标之上。&lt;/li&gt;
+&lt;li&gt;把应付复杂工具和漏洞当作专业能力，会让使用者为产业设计缺陷买单，并掩盖不断叠加的抽象问题。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-17 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-17-HackerNews/</link>
+      <pubDate>Tue, 17 Nov 2026 07:02:21 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-17-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-17-hacker-news-top-stories&#34;&gt;
+  2026-11-17 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-17-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;阿里发布 Qwen4-Max，采用 2.4 万亿主干参数、每 token 激活 710 亿参数及百万 token 上下文；官方称 Work360 单任务成本下降 62%。&lt;/li&gt;
+&lt;li&gt;MIT 2026 年 How To Make (almost) Anything 课程公开课表，串联 CAD、电子制作、机加工、输入输出和系统集成，并以最终项目收尾。&lt;/li&gt;
+&lt;li&gt;Groundwork 比较亚马逊 2024、2025 年促销页精选的 351 款商品，称 29.1% 的活动价不低于此前 30 天最低价，9.4% 反而更贵。&lt;/li&gt;
+&lt;li&gt;WDR 报道 Phantasialand 酒店泳池投药设备故障致 15 人受伤，运营方称微软故障令邮件告警未送达，专家质疑单一告警设计。&lt;/li&gt;
+&lt;li&gt;研究者披露 Firefox MV2 版 uBlock Origin 的元素选择器可被恶意网页驱动添加可信过滤器；官方公告列 1.75.4 为修复版本。&lt;/li&gt;
+&lt;li&gt;Steve Blank 警告英伟达若只寻找擅长执行的继任者，可能保住短期收入却错失下一次转型；这一判断属于其管理分析。&lt;/li&gt;
+&lt;li&gt;Ductus 让用户在浏览器逐个绘制字母并导出手写字体，界面宣称数据留在本机，当前字符集主要覆盖基础拉丁字母、数字和标点。&lt;/li&gt;
+&lt;li&gt;Bruce 用 Protomaps 的 PMTiles 单文件与 Bunny CDN 自托管地图，估算全球底图存储约每月 5 美元，但“便宜百倍”取决于浏览流量和缓存。&lt;/li&gt;
+&lt;li&gt;Ransomnews 追踪旧 Bitly 链接被重新认领，称 Burger King、麦当劳旧帖跳转被改；Bitly 已承认问题并停用部分链接。&lt;/li&gt;
+&lt;li&gt;《纽约时报》一篇关于乌鸦决策速度的文章入榜，但正文无法访问，实验任务、样本和比较数字尚未核验。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-qwen4-max24-万亿参数主干与原生视觉重点转向长任务交付-qwen4-max&#34;&gt;
+  1. Qwen4-Max：2.4 万亿参数主干与原生视觉，重点转向长任务交付 (Qwen4-Max)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-qwen4-max24-%e4%b8%87%e4%ba%bf%e5%8f%82%e6%95%b0%e4%b8%bb%e5%b9%b2%e4%b8%8e%e5%8e%9f%e7%94%9f%e8%a7%86%e8%a7%89%e9%87%8d%e7%82%b9%e8%bd%ac%e5%90%91%e9%95%bf%e4%bb%bb%e5%8a%a1%e4%ba%a4%e4%bb%98-qwen4-max&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://qwen.ai/blog?id=qwen4-max&#34;&gt;https://qwen.ai/blog?id=qwen4-max&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Qwen 团队发布 Qwen4-Max，强调原生视觉、专业工具调用和长时间执行任务。官方给出的结构是 2.4 万亿主干参数、每个 token 激活 710 亿参数，另有 3280 亿 N-gram 嵌入参数，支持百万 token 上下文；不能把主干总量、额外嵌入与实际激活量混为一个数字。架构结合 Gated DeltaNet、稀疏注意力与门控残差，以降低长序列计算成本。&lt;/p&gt;
+&lt;p&gt;发布文以 Blender、游戏引擎、制造和办公等演示说明“交付作品”而非只回答问题的方向。其自建 Work360 覆盖 26 个一级领域，报告分数由 Qwen3.8-Max 的 47.74 提高到 52.69，平均任务成本由 4.43 美元降至 1.67 美元，约下降 62%；这些是官方指定测试的结果，不是对所有真实工作流的保证。Live Delivery 则让长任务尽早交出可用版本，用户可持续纠正方向。&lt;/p&gt;
+&lt;p&gt;模型已进入 QwenCloud 等产品入口，Live Delivery 插件开放源码；官方说同代较小模型将开源，并不意味着 Max 权重已公开。文中还明确，高影响场景不能用模型代替专业判断与人工监督；科研示例中，药物候选的计算预测也仍需湿实验验证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-847-points--评论-468-comments--投稿者ilreb--发布时间2026-11-16-101444-0800&#34;&gt;
+  HN 热度 847 points | 评论 468 comments | 投稿者：ilreb | 发布时间：2026-11-16 10:14:44 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-847-points--%e8%af%84%e8%ae%ba-468-comments--%e6%8a%95%e7%a8%bf%e8%80%85ilreb--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-101444-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50513215&#34;&gt;https://news.ycombinator.com/item?id=50513215&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;很多本地使用者更期待较小型号，尤其希望填补常见显存容量之间的模型选择空档。&lt;/li&gt;
+&lt;li&gt;实际响应速度会影响编程代理的使用评价，能力不错但等待过长也可能失去用户。&lt;/li&gt;
+&lt;li&gt;排行榜的权重和代理运行框架会影响结果，综合分数不一定对应自己的真实工作流。&lt;/li&gt;
+&lt;li&gt;比较成本时需要对齐推理档位，并观察完整任务消耗，而不是混用不同配置的单个数字。&lt;/li&gt;
+&lt;li&gt;发布页应更直接说明哪里能立即调用、通过什么渠道获得，以及是否开放权重。&lt;/li&gt;
+&lt;li&gt;Max 与未来较小开放模型的状态必须分清，不能因系列名称就把 Max 当作开放权重模型。&lt;/li&gt;
+&lt;li&gt;有使用者报告政治问题上的拒答差异，并提醒托管接口与本地权重的行为需要分别测试。&lt;/li&gt;
+&lt;li&gt;SVG 等小演示可以展示模型风格，但随机输出、推理设置与量化也会影响单次比较。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-mit如何制造几乎任何东西把数字制造串成一学期实践-how-to-make-almost-anything&#34;&gt;
+  2. MIT《如何制造几乎任何东西》：把数字制造串成一学期实践 (How to make almost anything)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-mit%e5%a6%82%e4%bd%95%e5%88%b6%e9%80%a0%e5%87%a0%e4%b9%8e%e4%bb%bb%e4%bd%95%e4%b8%9c%e8%a5%bf%e6%8a%8a%e6%95%b0%e5%ad%97%e5%88%b6%e9%80%a0%e4%b8%b2%e6%88%90%e4%b8%80%e5%ad%a6%e6%9c%9f%e5%ae%9e%e8%b7%b5-how-to-make-almost-anything&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://pub.cba.mit.edu/863.26/site/&#34;&gt;https://pub.cba.mit.edu/863.26/site/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MIT CBA 的 2026 年课程 How To Make (almost) Anything，列为 MAS.863/4.140/6.9020，每周三安排三小时课堂，并配套专题研讨与资料。它以一学期贯通多种数字制造技术：九月从计算机辅助设计、受控切割、嵌入式编程和三维扫描打印开始，十月进入电子设计与生产、数控加工和输入设备，十一月继续输出设备、机械与机器设计、网络通信及应用接口。&lt;/p&gt;
+&lt;p&gt;课表也纳入 AI agents、Edge AI、EDA、CAM、运动控制和网状网络等补充主题，但它仍是实体制作课程，不是只讲生成式 AI。十二月安排系统集成与项目开发，12 月 15 日进行项目展示和开放参观。入门资料的第一项作业是规划并画出潜在的最终项目，把具体目标放在学习工具之前。&lt;/p&gt;
+&lt;p&gt;这个链接是公开教学入口，包含每周主题、人员、文档和往年资料，并非一篇声称一节课就能精通全部工艺的教程。页面展示的是学习路线和项目组织方式；课程实际训练深度与学生作品的质量，需要结合实践记录判断，不能单凭技术名词清单推断。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-820-points--评论-138-comments--投稿者o4c--发布时间2026-11-16-135037-0800&#34;&gt;
+  HN 热度 820 points | 评论 138 comments | 投稿者：o4c | 发布时间：2026-11-16 13:50:37 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-820-points--%e8%af%84%e8%ae%ba-138-comments--%e6%8a%95%e7%a8%bf%e8%80%85o4c--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-135037-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50514470&#34;&gt;https://news.ycombinator.com/item?id=50514470&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;批评者担心一周覆盖一个庞大领域只能形成浅层认识，无法替代长期专业训练。&lt;/li&gt;
+&lt;li&gt;支持者认为先知道哪些工具和工艺存在很有价值，初步做出东西也比完全无法开始更好。&lt;/li&gt;
+&lt;li&gt;有合适设备时入门与在家自行搭建条件是两回事，机器操作课也不等于完成实际作品所需的全部时间。&lt;/li&gt;
+&lt;li&gt;不能把它理解成轻松的兴趣课，回复强调课外设计、原型制作和记录都需要大量投入。&lt;/li&gt;
+&lt;li&gt;一位上过课并做过助教的回复建议看学生项目记录，而不只看用来组织讲授的每周页面。&lt;/li&gt;
+&lt;li&gt;创客空间中即时上手机器的经验能让理论更容易留下印象，设备与场地可达性也影响学习。&lt;/li&gt;
+&lt;li&gt;从原型走向量产还涉及可制造性、工厂能力与自动质量验证，广泛入门不能覆盖全部产业经验。&lt;/li&gt;
+&lt;li&gt;也有人追问为什么要制造某件东西，认为技术训练之外还应考虑用途和用户反馈。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-调查亚马逊诱饵折扣351-款精选商品中近三成未比近期最低价便宜-many-of-amazons-black-friday-and-cyber-monday-deals-offered-no-savings&#34;&gt;
+  3. 调查亚马逊“诱饵折扣”：351 款精选商品中近三成未比近期最低价便宜 (Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e8%b0%83%e6%9f%a5%e4%ba%9a%e9%a9%ac%e9%80%8a%e8%af%b1%e9%a5%b5%e6%8a%98%e6%89%a3351-%e6%ac%be%e7%b2%be%e9%80%89%e5%95%86%e5%93%81%e4%b8%ad%e8%bf%91%e4%b8%89%e6%88%90%e6%9c%aa%e6%af%94%e8%bf%91%e6%9c%9f%e6%9c%80%e4%bd%8e%e4%bb%b7%e4%be%bf%e5%ae%9c-many-of-amazons-black-friday-and-cyber-monday-deals-offered-no-savings&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/&#34;&gt;http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Groundwork Collaborative 的调查及配套报告分析亚马逊 2024、2025 年黑色星期五与网络星期一精选促销商品，用 Keepa 记录比较活动期间最低价与活动前最低价。最终样本为 351 款不同商品，并处理跨活动重复项目；网络星期一也与黑五开始前的常态价格窗口比较，避免把黑五折扣本身当作反证。&lt;/p&gt;
+&lt;p&gt;主分析发现，29.1% 的商品活动价与此前 30 天最低价相同或更高，其中 9.4% 更高；这些较差优惠相对近期低价的溢价中位数为 19%。例如 Hunter 雨靴活动价 126.99 美元，九天前曾为 79.97 美元，贵约 59%；UGG 靴活动价 179.98 美元，约四周前曾为 98.40 美元，贵约 83%。&lt;/p&gt;
+&lt;p&gt;数字描述的是亚马逊自己精选展示且具备价格记录的样本，不是全部商品，也不是每位买家实际多付的金额。主分析采用 Buy Box 与 Prime 专享价格；另把活动中的短时闪购优惠计入后，“并未更便宜”的比例仍约四分之一。研究方据此呼吁折扣展示近期最低价，但不能把这一倡议写成美国已经统一执行的规则。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://groundworkcollaborative.org/work/amazon/&#34;&gt;https://groundworkcollaborative.org/work/amazon/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-784-points--评论-475-comments--投稿者deeplogin--发布时间2026-11-16-213907-0800&#34;&gt;
+  HN 热度 784 points | 评论 475 comments | 投稿者：DeepLogin | 发布时间：2026-11-16 21:39:07 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-784-points--%e8%af%84%e8%ae%ba-475-comments--%e6%8a%95%e7%a8%bf%e8%80%85deeplogin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-213907-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50517488&#34;&gt;https://news.ycombinator.com/item?id=50517488&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只把商品按当前价格从低到高排序，无法判断标出的折扣是否比历史价格真正划算。&lt;/li&gt;
+&lt;li&gt;价格历史工具能提供额外参照，但数据是否及时、覆盖哪些卖家也会影响判断。&lt;/li&gt;
+&lt;li&gt;对结果的评价有分歧，有人意外多数仍有折扣，也有人认为任何被包装为优惠的涨价都不应接受。&lt;/li&gt;
+&lt;li&gt;虚假的优惠感还可能诱发原本不会发生的购买，消费者损失不只体现为高于历史最低价。&lt;/li&gt;
+&lt;li&gt;要求用此前一段时间的最低价作为参照可能缩小误导空间，但季节性商品仍可能出现绕开比较窗口的策略。&lt;/li&gt;
+&lt;li&gt;部分使用者提到亚马逊自带价格历史，回复同时提醒它可能不覆盖所有第三方卖家或二手选项。&lt;/li&gt;
+&lt;li&gt;平台、品牌与第三方卖家分别对定价承担什么责任，是讨论中的另一条分歧。&lt;/li&gt;
+&lt;li&gt;判断是否值得购买仍应回到真实需求、通常价格和其他渠道报价，而不是只看促销标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-酒店泳池加氯故障致-15-人受伤微软邮件中断使告警未送达-microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests&#34;&gt;
+  4. 酒店泳池加氯故障致 15 人受伤，微软邮件中断使告警未送达 (Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e9%85%92%e5%ba%97%e6%b3%b3%e6%b1%a0%e5%8a%a0%e6%b0%af%e6%95%85%e9%9a%9c%e8%87%b4-15-%e4%ba%ba%e5%8f%97%e4%bc%a4%e5%be%ae%e8%bd%af%e9%82%ae%e4%bb%b6%e4%b8%ad%e6%96%ad%e4%bd%bf%e5%91%8a%e8%ad%a6%e6%9c%aa%e9%80%81%e8%be%be-microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html&#34;&gt;https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;德国 WDR 报道，Phantasialand 园区 Ling Bao 酒店的泳池自动投药系统出现故障，导致氯含量明显过高，最终共有十五名宾客受伤。最初十三人报告呼吸道刺激，后续人数增至十五；送院人数由最初公布的五人修正为四人，其中一人因中等程度伤势留院观察。泳池曾关闭并更换池水，消防方面称后来已重新开放。&lt;/p&gt;
+&lt;p&gt;园方告诉 WDR，同期微软服务中断导致收不到邮件，因此维护安全系统虽已发送告警，却未被工作人员看到。这里有两层故障：投药设备造成危险化学条件，邮件链路又使预警失效，不能概括成 Microsoft 365 直接控制加氯或单独造成全部后果。&lt;/p&gt;
+&lt;p&gt;报道采访的网络安全架构师 Stephan Skrobisch 将问题归于设施配置，认为保护人身安全的警报不应只依赖邮箱，还应有声响等独立通道。另一家温泉设施介绍了每日三次人工测量及红灯警示的做法。报道提供的是园方说法、消防与警方信息及专家意见，并非对责任分配已经作出的司法裁定。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-620-points--评论-270-comments--投稿者deeplogin--发布时间2026-11-16-023610-0800&#34;&gt;
+  HN 热度 620 points | 评论 270 comments | 投稿者：DeepLogin | 发布时间：2026-11-16 02:36:10 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-620-points--%e8%af%84%e8%ae%ba-270-comments--%e6%8a%95%e7%a8%bf%e8%80%85deeplogin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-023610-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50509411&#34;&gt;https://news.ycombinator.com/item?id=50509411&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最初有人误以为员工发现危险后只发邮件，回复澄清报道说的是自动系统发送警报。&lt;/li&gt;
+&lt;li&gt;涉及危险化学品的告警应能在现场显著提醒，而不是只等待有人查看邮箱。&lt;/li&gt;
+&lt;li&gt;云服务中断可以解释警报为何未到，却不能替代对设施安全设计这一根因的检查。&lt;/li&gt;
+&lt;li&gt;改用 Slack、Discord 或普通推送并不自动满足安全关键要求，换一款联网应用也可能留下同类依赖。&lt;/li&gt;
+&lt;li&gt;旧工业设备的通知接口可能非常有限，但系统集成仍需要弥补单一通知方式的缺口。&lt;/li&gt;
+&lt;li&gt;能够造成人身伤害的核心控制应有独立保护与安全回退，普通互联网服务不应成为唯一防线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-ublock-origin-元素选择器的通用-xss-已修复需区分版本与触发条件-universal-xss-in-ublock-origin-from-website-driven-element-picker&#34;&gt;
+  5. uBlock Origin 元素选择器的通用 XSS 已修复，需区分版本与触发条件 (Universal XSS in uBlock Origin from website-driven element picker)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-ublock-origin-%e5%85%83%e7%b4%a0%e9%80%89%e6%8b%a9%e5%99%a8%e7%9a%84%e9%80%9a%e7%94%a8-xss-%e5%b7%b2%e4%bf%ae%e5%a4%8d%e9%9c%80%e5%8c%ba%e5%88%86%e7%89%88%e6%9c%ac%e4%b8%8e%e8%a7%a6%e5%8f%91%e6%9d%a1%e4%bb%b6-universal-xss-in-ublock-origin-from-website-driven-element-picker&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://iter.ca/post/ubo-uxss/&#34;&gt;https://iter.ca/post/ubo-uxss/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;研究者 syvb 披露，Firefox MV2 版 uBlock Origin 的元素选择器存在通用 XSS 路径：在特定过滤规则条件下，恶意网页可获得扩展资源位置，控制嵌入页面中的选择器，并诱使用户点击，从而加入可在其他网站上下文执行脚本的可信过滤器。问题来自网页与扩展界面的信任边界及过滤器校验，不是所有普通过滤规则都天然可以执行任意代码。&lt;/p&gt;
+&lt;p&gt;已核对维护者安全公告：受影响版本列为 1.75.2 及更早，修复版本为 1.75.4；11 月 3 日的修复验证选择器启动令牌，1.76.0 又加入创建过滤器校验等加固。文章称 uBO Lite 也有相似但影响较小的问题，不能把两者的能力和受影响范围完全等同。&lt;/p&gt;
+&lt;p&gt;作者说 GPT-5.6 Sol 协助发现主要问题，自己复核，Claude 编写大部分演示代码，文章文字则由本人撰写。他也明确没有实现完整的隐藏界面点击劫持包装，因此应区分已复核的过滤器注入机制与攻击者进一步包装成一次误点的方式。当前披露不意味着已经确认大规模在野利用。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://github.com/gorhill/uBlock/security/advisories/GHSA-cmqw-9r2w-6wv2&#34;&gt;https://github.com/gorhill/uBlock/security/advisories/GHSA-cmqw-9r2w-6wv2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-592-points--评论-169-comments--投稿者zaik--发布时间2026-11-16-100448-0800&#34;&gt;
+  HN 热度 592 points | 评论 169 comments | 投稿者：zaik | 发布时间：2026-11-16 10:04:48 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-592-points--%e8%af%84%e8%ae%ba-169-comments--%e6%8a%95%e7%a8%bf%e8%80%85zaik--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-100448-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50513160&#34;&gt;https://news.ycombinator.com/item?id=50513160&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内容拦截器必须拥有广泛页面权限，这使其漏洞的影响范围可能超出普通单站脚本问题。&lt;/li&gt;
+&lt;li&gt;把高权限扩展界面放进不可信网页的 DOM，会带来信任边界问题，浏览器自身界面被提出为替代位置。&lt;/li&gt;
+&lt;li&gt;安装实例唯一标识若被泄露，除攻击链之外还可能带来指纹追踪风险。&lt;/li&gt;
+&lt;li&gt;是否应因此放弃拦截扩展存在分歧，另一方强调广告本身也带来恶意内容与追踪风险。&lt;/li&gt;
+&lt;li&gt;DNS 拦截可作为补充，但无法覆盖所有必须在浏览器页面层处理的广告与脚本。&lt;/li&gt;
+&lt;li&gt;版本检查应以正式安全公告为准，不能把后续加固版本与最初修复版本混淆。&lt;/li&gt;
+&lt;li&gt;明确区分人工写作、AI 辅助发现与演示代码，有助于读者判断作者实际负责的部分。&lt;/li&gt;
+&lt;li&gt;由同一代码衍生的分支也需要单独检查修复情况，不能只看到主项目已更新就默认全部安全。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-steve-blank英伟达接班人要执行现有业务也要继续改写业务-whats-next-for-nvidia&#34;&gt;
+  6. Steve Blank：英伟达接班人要执行现有业务，也要继续改写业务 (What&amp;rsquo;s Next for Nvidia?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-steve-blank%e8%8b%b1%e4%bc%9f%e8%be%be%e6%8e%a5%e7%8f%ad%e4%ba%ba%e8%a6%81%e6%89%a7%e8%a1%8c%e7%8e%b0%e6%9c%89%e4%b8%9a%e5%8a%a1%e4%b9%9f%e8%a6%81%e7%bb%a7%e7%bb%ad%e6%94%b9%e5%86%99%e4%b8%9a%e5%8a%a1-whats-next-for-nvidia&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://steveblank.com/2026/11/15/whats-next-for-nvidia/&#34;&gt;https://steveblank.com/2026/11/15/whats-next-for-nvidia/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Steve Blank 围绕黄仁勋离任讨论英伟达的接班难题：他认为 CUDA、深度学习与整机数据中心系统三次转型，不只是产品升级，也是客户、渠道和商业模式的变化，不能把领导者角色简化为执行现有订单。&lt;/p&gt;
+&lt;p&gt;文章将“创新型 CEO”与“执行型 CEO”作区分，借微软的 Gates、Ballmer、Nadella，以及苹果的 Jobs、Cook 说明，收入和利润多年增长仍可能掩盖新市场机会的流失。这些归类属于作者的解释框架，并非文中以完整样本验证的普遍规律；他也把先在亚马逊内部创办 AWS 的 Andy Jassy 列为不同路径的例子。&lt;/p&gt;
+&lt;p&gt;对英伟达，作者强调大客户正在自研芯片，而围绕约六十名直接下属组织起来的决策体系无法由继任者原样接手。董事会既要分散权力，又要保留冒险和产品判断能力；若从外部引入创新者，还可能失去自认应接班的运营高管。作者担忧短期订单与 CUDA 优势掩盖长期创新风险，但没有证明公司必然衰落，也不能据此把对创始人的治理要求置于一边。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-456-points--评论-566-comments--投稿者zdw--发布时间2026-11-16-075555-0800&#34;&gt;
+  HN 热度 456 points | 评论 566 comments | 投稿者：zdw | 发布时间：2026-11-16 07:55:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-456-points--%e8%af%84%e8%ae%ba-566-comments--%e6%8a%95%e7%a8%bf%e8%80%85zdw--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-075555-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50512235&#34;&gt;https://news.ycombinator.com/item?id=50512235&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大客户转为芯片竞争者是持续战略压力，接班问题不能只围绕个人魅力展开。&lt;/li&gt;
+&lt;li&gt;把 Cook 与 Ballmer 放进同一种失败叙事受到质疑，两人的经营表现与错失机会需要分别评价。&lt;/li&gt;
+&lt;li&gt;“创始人离开就不再创新”的结论需要更广数据支持，换领导也可能只是改变创新方向。&lt;/li&gt;
+&lt;li&gt;围绕单个人高度优化的组织迟早需要建立接班能力，即使创始人回归也无法永久回避。&lt;/li&gt;
+&lt;li&gt;主动让新产品蚕食现有利润，与继续榨取成熟业务之间的取舍，是评估创新能力的重要问题。&lt;/li&gt;
+&lt;li&gt;如果竞争转向只供云平台内部使用的专有芯片，市场格局变化也未必让公众更容易购买高性能硬件。&lt;/li&gt;
+&lt;li&gt;认可经营贡献不能让 CEO 免于普通的职业与法律责任，治理问题不应被英雄叙事掩盖。&lt;/li&gt;
+&lt;li&gt;多起行业事件在时间上接近，并不足以证明它们由同一个幕后行动造成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-ductus逐字写出自己的-otf-与-woff2-手写字体-handwriting-as-a-font&#34;&gt;
+  7. Ductus：逐字写出自己的 OTF 与 WOFF2 手写字体 (Handwriting, as a Font)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-ductus%e9%80%90%e5%ad%97%e5%86%99%e5%87%ba%e8%87%aa%e5%b7%b1%e7%9a%84-otf-%e4%b8%8e-woff2-%e6%89%8b%e5%86%99%e5%ad%97%e4%bd%93-handwriting-as-a-font&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ductus.sorenblank.com&#34;&gt;https://ductus.sorenblank.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ductus 把制作手写字体变成浏览器里的逐字绘制流程：页面从小写 a 开始，边写边在样本文本中显示效果，并提供撤销、清除和跳转字符。已查看的字符列表包括二十六个小写、二十六个大写、十个数字和三十二个标点；它不是从一张完整手稿照片自动识别整套字形的扫描工具。&lt;/p&gt;
+&lt;p&gt;调整界面可以统一字形基线与大小，关闭该选项则按原始绘制形态保留。导出说明表示，写好一个字符后就能开始下载，字体随后续补字逐步完善；网页介绍列出 OTF 与 WOFF2 格式。重开功能限于 Ductus 生成的字体，而非通用字体文件编辑器。&lt;/p&gt;
+&lt;p&gt;页面宣称字形留在当前设备、不上传且不需账号，这里描述的是工具声明和实际界面，并非完成网络隐私审计。当前展示的是基础拉丁字符集合，不能据此当作完整多语言或中文字体生成器。逐个描绘字符也没有自动证明连写、上下文变形和字偶间距都能还原真实笔迹，相关需求在讨论中被反复提出。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-453-points--评论-76-comments--投稿者coinfused--发布时间2026-11-16-034213-0800&#34;&gt;
+  HN 热度 453 points | 评论 76 comments | 投稿者：coinfused | 发布时间：2026-11-16 03:42:13 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-453-points--%e8%af%84%e8%ae%ba-76-comments--%e6%8a%95%e7%a8%bf%e8%80%85coinfused--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-034213-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50509972&#34;&gt;https://news.ycombinator.com/item?id=50509972&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;逐字绘制和即时反馈让流程有游戏感，一些手机使用者很快就完成了自己的字体。&lt;/li&gt;
+&lt;li&gt;有人希望先看到真实导出样张，展示目的应是说明软件能力，而不是预言自己的笔迹会长什么样。&lt;/li&gt;
+&lt;li&gt;真实手写会随相邻字符改变形状，独立字形更接近手写印刷体，而非自然连笔。&lt;/li&gt;
+&lt;li&gt;重音字母、变音符号和自定义字符不足，会使部分用户连自己的姓名也无法完整表示。&lt;/li&gt;
+&lt;li&gt;常见连字和字偶间距工具能改善自然感，单个字符看起来像手写仍不等于整行排版自然。&lt;/li&gt;
+&lt;li&gt;有人报告特定笔画或浏览器导致预览与导出失败，功能顺畅的体验并非每个人都一致。&lt;/li&gt;
+&lt;li&gt;照片或扫描输入被多次提出，因为在屏幕上重新写字不一定最能代表原本笔迹。&lt;/li&gt;
+&lt;li&gt;也有人把它用于保存孩子某个年龄的笔迹，价值在个人记录而不只是追求整洁字形。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-protomaps-自托管地图单文件瓦片降低部署门槛成本仍看流量-protomaps-self-hosting-map-tiles-has-gotten-cheap-and-easy&#34;&gt;
+  8. Protomaps 自托管地图：单文件瓦片降低部署门槛，成本仍看流量 (Protomaps: Self-hosting map tiles has gotten cheap and easy)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-protomaps-%e8%87%aa%e6%89%98%e7%ae%a1%e5%9c%b0%e5%9b%be%e5%8d%95%e6%96%87%e4%bb%b6%e7%93%a6%e7%89%87%e9%99%8d%e4%bd%8e%e9%83%a8%e7%bd%b2%e9%97%a8%e6%a7%9b%e6%88%90%e6%9c%ac%e4%bb%8d%e7%9c%8b%e6%b5%81%e9%87%8f-protomaps-self-hosting-map-tiles-has-gotten-cheap-and-easy&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://bruceroettgers.eu/blog/protomaps/&#34;&gt;https://bruceroettgers.eu/blog/protomaps/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bruce 介绍用 Protomaps 生态的 PMTiles 自托管地图底图：瓦片装进一个文件，客户端通过 HTTP Range 请求按需读取，既可下载全球数据，也可提取局部范围或特定缩放级别以缩小体积。部署核心不再是一套持续运行的瓦片服务，而是支持范围请求及适当缓存的存储和 CDN，再由 MapLibre 等客户端显示。&lt;/p&gt;
+&lt;p&gt;作者以 Bunny 为例，估算约 139 GB 全球地图、跨多数大洲复制的存储费用约每月 5 美元；一次从欧洲全景缩放到城市约传输 5 MB，按其示例费率相当于每千次加载约 0.05 美元，并据此与商业按次计费方案作比较。但重度浏览可能传输数十 MB，缓存、地区和副本也会改变成本，不能把“百倍便宜”当作所有网站的固定结果。&lt;/p&gt;
+&lt;p&gt;文章提醒检查跨域与大对象范围缓存，并限制整文件下载和带宽，以免低单价仍变成高账单。对不便直接缓存大文件范围请求的服务，可加边缘函数转成传统瓦片地址。文中 Bunny 链接含推广关系；其费用是作者场景下的算例，不能省略维护、更新及实际使用范围的差异。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-452-points--评论-81-comments--投稿者bcye--发布时间2026-11-16-032622-0800&#34;&gt;
+  HN 热度 452 points | 评论 81 comments | 投稿者：bcye | 发布时间：2026-11-16 03:26:22 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-452-points--%e8%af%84%e8%ae%ba-81-comments--%e6%8a%95%e7%a8%bf%e8%80%85bcye--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-032622-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50509837&#34;&gt;https://news.ycombinator.com/item?id=50509837&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直接读对象存储的延迟体验因供应商和缓存而异，支持 Range 不等于部署后天然低延迟。&lt;/li&gt;
+&lt;li&gt;在存储前加合适的缓存或转换层，已有使用者认为可以获得足够好的实际性能。&lt;/li&gt;
+&lt;li&gt;带宽计费与请求计费的比较依赖真实瓦片大小，讨论中的最初估算也经过修正，不能照搬最低数字。&lt;/li&gt;
+&lt;li&gt;矢量底图与高分辨率卫星、地形数据不是同一成本量级，后者很容易进入多 TB 范围。&lt;/li&gt;
+&lt;li&gt;自托管还要负责持续生成和更新地图，托管服务的价值不只是替用户保存文件。&lt;/li&gt;
+&lt;li&gt;静态瓦片把复杂度移到预处理阶段，适合重读场景，而频繁更新的数据也可能更适合动态生成。&lt;/li&gt;
+&lt;li&gt;有企业代理会去掉 Range 请求头并拉取整文件，兼容传统瓦片接口的转换层可以解决这类环境问题。&lt;/li&gt;
+&lt;li&gt;跨域、206 响应和暴露响应头应在实际浏览器中验证，命令行请求正常并不代表网页客户端一定正常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-旧-bitly-短链被重新认领原账号未遭入侵历史帖子却指向别处-old-bitly-links-are-being-hijacked&#34;&gt;
+  9. 旧 Bitly 短链被重新认领：原账号未遭入侵，历史帖子却指向别处 (Old Bitly links are being hijacked)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e6%97%a7-bitly-%e7%9f%ad%e9%93%be%e8%a2%ab%e9%87%8d%e6%96%b0%e8%ae%a4%e9%a2%86%e5%8e%9f%e8%b4%a6%e5%8f%b7%e6%9c%aa%e9%81%ad%e5%85%a5%e4%be%b5%e5%8e%86%e5%8f%b2%e5%b8%96%e5%ad%90%e5%8d%b4%e6%8c%87%e5%90%91%e5%88%ab%e5%a4%84-old-bitly-links-are-being-hijacked&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/&#34;&gt;https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ransomnews 报道，Burger King 和麦当劳在 2011 年发布的短链于 2026 年 11 月被别人重新认领，跳转至与原帖无关的内容。问题不是有人登录品牌账号发帖，而是短链接的后缀在服务端被重新分配，原帖、旧邮件或印刷材料仍然保留着同一条入口。&lt;/p&gt;
+&lt;p&gt;媒体检查了特朗普旧帖中的 97 条不同 Bitly 链接：40 条仍属原始链接，49 条后来重建但去向看似符合原帖，7 条指向其他地方，另 1 条被阻止。这是单个账号、一个短链服务的样本，不能推出所有旧短链的受影响比例；49 条重建链接也没有被证明全部出自恶意行为。&lt;/p&gt;
+&lt;p&gt;报道引述 Bitly 11 月 15 日声明，承认旧的不活跃链接可被滥用，已暂停相关账号并停用受影响链接。其后检查中，品牌案例及样本中改到新去向的链接已停止跳转，49 条看似原去向的重建链接仍可用。文章尚不知道全平台规模、全部操作者或每条重建的原因，核心风险是历史内容借用了原账号信誉，却不再保证目的地受原发布者控制。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-372-points--评论-196-comments--投稿者hspeiser--发布时间2026-11-16-061143-0800&#34;&gt;
+  HN 热度 372 points | 评论 196 comments | 投稿者：hspeiser | 发布时间：2026-11-16 06:11:43 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-372-points--%e8%af%84%e8%ae%ba-196-comments--%e6%8a%95%e7%a8%bf%e8%80%85hspeiser--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-061143-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50511395&#34;&gt;https://news.ycombinator.com/item?id=50511395&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第三方短链会把长期内容的目的地控制权交给外部服务，便利性之外还增加了持续依赖。&lt;/li&gt;
+&lt;li&gt;短链仍有口头传播、受限媒介和点击统计等用途，不能把采用原因只理解为恶作剧。&lt;/li&gt;
+&lt;li&gt;企业若确实需要短链，使用自己持续控制的域名能减少地址被外部重新分配的风险。&lt;/li&gt;
+&lt;li&gt;悬空 CNAME 和过期域名也会出现相似的信任转移，DNS 入口与最终目标都需要维护。&lt;/li&gt;
+&lt;li&gt;停用被劫持链接可以阻止继续误导，但也有人追问为何不能恢复可确认的原始目的地。&lt;/li&gt;
+&lt;li&gt;账号名、邮箱和链接标识被回收都可能让旧信任落到新持有人手中，风险不只存在于短网址。&lt;/li&gt;
+&lt;li&gt;二维码若实际依赖第三方重定向，也可能在印刷后被服务收费或停运改变，图形本身并不保证目标永久有效。&lt;/li&gt;
+&lt;li&gt;隐藏真实目的地的重定向若再被用于下载后直接执行，会进一步放大对外部入口的信任风险。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-纽约时报讨论乌鸦决策速度正文暂未读到-crows-make-decisions-faster-than-we-can&#34;&gt;
+  10. 《纽约时报》讨论乌鸦决策速度，正文暂未读到 (Crows make decisions faster than we can)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e7%ba%bd%e7%ba%a6%e6%97%b6%e6%8a%a5%e8%ae%a8%e8%ae%ba%e4%b9%8c%e9%b8%a6%e5%86%b3%e7%ad%96%e9%80%9f%e5%ba%a6%e6%ad%a3%e6%96%87%e6%9a%82%e6%9c%aa%e8%af%bb%e5%88%b0-crows-make-decisions-faster-than-we-can&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html&#34;&gt;https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;该帖链接到《纽约时报》关于乌鸦决策速度的科学报道，当前原站返回无法访问提示，未能读取正文。&lt;/p&gt;
+&lt;p&gt;因此，本条仅确认原文链接与 HN 帖子信息，不据标题推断乌鸦在所有任务中都比人类反应快，也不填入尚未核验的样本、延迟数字或神经机制。HN 回复里提到的实验细节和其他研究，不能直接当作这篇报道已经查实的发现。下方只整理讨论中实际存在的方法问题和观点，等待原文可读后再补充文章本身的结果。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-309-points--评论-207-comments--投稿者gumby--发布时间2026-11-16-015331-0800&#34;&gt;
+  HN 热度 309 points | 评论 207 comments | 投稿者：gumby | 发布时间：2026-11-16 01:53:31 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-309-points--%e8%af%84%e8%ae%ba-207-comments--%e6%8a%95%e7%a8%bf%e8%80%85gumby--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-16-015331-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50509023&#34;&gt;https://news.ycombinator.com/item?id=50509023&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跨物种速度比较应尽量使用相同任务，另找人类玩家在不同任务中的快反应纪录并不能直接反驳实验。&lt;/li&gt;
+&lt;li&gt;快速反应与复杂决策应区分，做得更快也不自动意味着更聪明。&lt;/li&gt;
+&lt;li&gt;用脑体积直接判断认知能力受到反驳，比较还应考虑组织方式与具体能力。&lt;/li&gt;
+&lt;li&gt;不同鸟类及不同任务的表现可能差异很大，不能用一种鸟的结果概括整个鸟类。&lt;/li&gt;
+&lt;li&gt;不同动物的认知结构让一些读者想到，形成复杂能力未必只有哺乳动物脑这一种组织路线。&lt;/li&gt;
+&lt;li&gt;特殊感知或运动能力值得研究，但生物自带某种感官并不等同于已经证明推理能力更强。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

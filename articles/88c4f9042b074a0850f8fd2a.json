@@ -1,0 +1,11 @@
+{
+  "id": "88c4f9042b074a0850f8fd2a",
+  "title": "两个简单的小产品",
+  "summary": "业余继续花了点时间，把「今天喝点什么呢」更新到了v1.1版本。",
+  "content": "<h2>今天喝点什么呢 v1.1</h2>\n<p>业余继续花了点时间，把「今天喝点什么呢」更新到了v1.1版本，主要更新了几个地方：</p>\n<ol>\n<li>增加了一个「关于」页面，写了几句话；</li>\n<li>优化了一些按钮和文字的效果，要去掉那默认的的描边算是挺麻烦的；</li>\n<li>对插图进行了调整，使用手绘板优化了曲线，现已向光滑如丝更近一步；</li>\n<li>更新了奶茶数据，基本上非我司的朋友们也能稍微用来玩一玩了。</li>\n</ol>\n<p>这个版本基本上都在写样式，这方面没遇到什么大问题。唯一的问题是「关于」页面和其他页面跳转时都使用了 wx.navigateTo 方法，反复跳转后很快就达到了小程序页面堆栈的十层上限，最终导致小程序卡死，后续改为了使用 wx.navigateBack 方法从「关于」页面返回后也就解决了。新版本现已发布，上一个的版本可以说是给自己各种条件制约下上线的「又不是不能用」版本，而现在的才算是我心中理想的1.0版本。</p>\n<p>点击以上文字就可以直达小程序。</p>\n<p>另外有一点很早就在留意，这个产品名字实在太长了，而且从搜索的结果来看，起名是跟关键的，所以用了一次改名机会申请改成「奶茶喝什么」，之后搜索结果的情况应该会稍微好一点，插图中已经偷偷提前更新成新名字了。</p>\n<p>来看看同事告诉我搜出来的都是些什么鬼</p>\n<h2>Measure Plus</h2>\n<blockquote>\n<p>在 Sketch 中使用 Measure 插件导出的时候，随着版本的增多，翻阅多个版本的设计稿就变得不是那么轻松了，再者，如果不希望多个子模块的设计稿占满浏览器标签，在使用目前的插件下也是做不到。</p>\n</blockquote>\n<p>后来在这一个帖子的启发下，想到了一个点子，马上向一位朋友问了下实现难度。</p>\n<p>没想到的是他当天趁着午休的时光，把核心功能写完了并发了过来。我也趁热打铁，简单测试了下，能用！周末我又抽了半个晚上，写完了样式，大功告成，从想法到最终完成一共用了一天时间。</p>\n<p>那么这究竟是一个什么东西？</p>\n<p>可以说这是 Measure 插件的插件，我简单的把它叫做 Measure Plus 吧。只要把  index.html 放到 Measure 生成的文件夹的上一层级后，打开这个网页，效果等同于在 Measure 生成的标注中多出一行 Tab 的区域，Tab 中的是 index.html 的目录下子文件夹的名称，可以由 <a href=\"http://build.sh\" target=\"_blank\" rel=\"noopener noreferrer\">build.sh</a> 生成，也可以手动从 index.html 文件里填写。</p>\n<p>文件夹结构要求样例</p>\n<p>再复杂一点，可以进行简单的嵌套，一层使用模块名称，二层使用版本号，使用效果如下图。</p>\n<p>顺便推荐一下 MeaXure，在原 Measure 插件的基础上更新了一些功能，比较吸引我的是以下几点：</p>\n<ul>\n<li>Fully works with latest version of Sketch (v66).</li>\n<li>The latest <code>Tint</code> feature support.</li>\n<li>Easily resize markers, without concerns to break them. (The <code>resizing constrain</code> feature).</li>\n<li>Customize the order of exported artboards.</li>\n</ul>\n<p>项目地址：<a href=\"https://github.com/qjebbs/sketch-meaxure\" target=\"_blank\" rel=\"noopener noreferrer\">Sketch MeaXure</a></p>\n<h3>关于公众号</h3>\n<p>迫于上次从 Notion 生成的截图查看体验不是特别好，故重新挖出来这个公众号，希望对大家的眼睛都好一点。</p>\n<p>预览了几次，总体还不错，就这样吧，晚安。</p>",
+  "image": null,
+  "publishedAt": "2020-07-17T00:00:00Z",
+  "sourceId": "cb9a26266745d112",
+  "sourceTitle": "Bluepikachu",
+  "link": "https://bluepika.life/blog/two-simple-mini-products"
+}

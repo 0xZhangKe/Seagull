@@ -1,0 +1,11 @@
+{
+  "id": "8b295ab3de8fd36ae7264d61",
+  "title": "Java HashMap 源码解析",
+  "summary": "继上一篇文章 Java集合框架综述 后，今天正式开始分析具体集合类的代码，首先以既熟悉又陌生的 HashMap 开始。 本文源码分析基于 Oracle JDK 1.7.0_71 ，请知悉。 $ java -version java version \"1.7.0_71\" Java(TM) SE Runtime Environment (build 1.7.0_71-b14) Java HotSpot(TM) 64-Bit Server VM (build 24.71-b01, mixed mode) 签名（signature） public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializab…",
+  "content": "<p>继上一篇文章<a href=\"https://liujiacai.net/blog/2015/09/01/java-collection-overview\" target=\"_blank\" rel=\"noopener noreferrer\">Java集合框架综述</a>后，今天正式开始分析具体集合类的代码，首先以既熟悉又陌生的<a href=\"http://docs.oracle.com/javase/7/docs/api/index.html?java/util/HashMap.html\" target=\"_blank\" rel=\"noopener noreferrer\">HashMap</a>开始。</p>\n<blockquote>\n<p>本文源码分析基于<a href=\"http://www.oracle.com/technetwork/java/javase/7u71-relnotes-2296187.html\" target=\"_blank\" rel=\"noopener noreferrer\">Oracle JDK 1.7.0_71</a>，请知悉。</p>\n</blockquote>\n<pre><code>$ java -version\njava version &quot;1.7.0_71&quot;\nJava(TM) SE Runtime Environment (build 1.7.0_71-b14)\nJava HotSpot(TM) 64-Bit Server VM (build 24.71-b01, mixed mode)\n</code></pre><h2>签名（signature）</h2>\n<pre><code>public class HashMap&lt;K,V&gt;\n extends AbstractMap&lt;K,V&gt;\n implements Map&lt;K,V&gt;, Cloneable, Serializable\n</code></pre><p>可以看到<code>HashMap</code>继承了</p>\n<ul>\n<li>标记接口<a href=\"http://docs.oracle.com/javase/7/docs/api/index.html?java/lang/Cloneable.html\" target=\"_blank\" rel=\"noopener noreferrer\">Cloneable</a>，用于表明<code>HashMap</code>对象会重写<code>java.lang.Object#clone()</code>方法，HashMap实现的是浅拷贝（shallow copy）。</li>\n<li>标记接口<a href=\"http://docs.oracle.com/javase/7/docs/api/index.html?java/io/Serializable.html\" target=\"_blank\" rel=\"noopener noreferrer\">Serializable</a>，用于表明<code>HashMap</code>对象可以被序列化</li>\n</ul>\n<p>比较有意思的是，<code>HashMap</code>同时继承了抽象类<code>AbstractMap</code>与接口<code>Map</code>，因为抽象类<code>AbstractMap</code>的签名为</p>",
+  "image": null,
+  "publishedAt": "2015-09-03T11:51:12Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2015/09/03/java-hashmap/"
+}

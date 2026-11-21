@@ -1,0 +1,11 @@
+{
+  "id": "ab93f389ec963d654d4debf3",
+  "title": "Java中Collection和Collections的区别",
+  "summary": "前几天去一个公司参加面试遇到这个问题，Java中Collection和Collections的区别，当时不会，回来从网上找到，现在记录一下。 1、java.util.Collection 是一个 集合接口 。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。 Collection ├List │├LinkedList │├ArrayList │└Vector │ └Stack└Set 2、java.util.Collections 是一个包装类。它包含有各种有关集合操作的 静态多态方法 。此类 不能实例化 ，就像一个 工具类 ，服务于Java的Collection框架。 impo…",
+  "content": "<p>前几天去一个公司参加面试遇到这个问题，Java中Collection和Collections的区别，当时不会，回来从网上找到，现在记录一下。</p>\n<p>1、java.util.Collection 是一个 <em>集合接口</em>。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式。</p>\n<p>Collection <br>\n├List<br>\n│├LinkedList<br>\n│├ArrayList<br>\n│└Vector<br>\n│　└Stack└Set</p>\n<p>2、java.util.Collections 是一个包装类。它包含有各种有关集合操作的 <em>静态多态方法</em>。此类 <em>不能实例化</em> ，就像一个 <em>工具类</em>，服务于Java的Collection框架。</p>\n<pre><code>import java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.List;\npublic class TestCollections {\npublic static void main(String args[]) {\n//注意List是实现Collection接口的\nList list = new ArrayList();\ndouble array[] = { 112, 111, 23, 456, 231 };\nfor (int i = 0; i &lt; array.length; i++) {\nlist.add(new Double(array[i]));\n}\nCollections.sort(list);\nfor (int i = 0; i &lt; array.length; i++) {\nSystem.out.println(list.get(i));\n}\n// 结果：23.0 111.0 112.0 231.0 456.0\n}\n}\n</code></pre><p><h4><a href=\"https://isming.me/2013-07-23-java-collection-collections/?utm_source=rss#commentsanchor\" target=\"_blank\" rel=\"noopener noreferrer\">看完评论一下吧<a target=\"_blank\" rel=\"noopener noreferrer\"></h4></p>",
+  "image": null,
+  "publishedAt": "2013-07-23T11:12:46Z",
+  "sourceId": "368f8a851f5b565d",
+  "sourceTitle": "isming.me",
+  "link": "https://isming.me/2013-07-23-java-collection-collections/?utm_source=rss"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "0171003ba3144fcd8eb08a8e",
+  "title": "何处安放我们的 Go 代码",
+  "summary": "用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。 这期间也掌握了不少技巧与惯用法（idioms），比如 prosumer ，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher 吃了不少苦头 。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：",
+  "content": "<p>\n用了近半年的 Go，真是有种相见恨晚的感觉。简洁的语法、完善并强大的开发工具链，省去新手不少折腾的时间，可以专注写代码。</p>\n<p>\n这期间也掌握了不少技巧与惯用法（idioms），比如 <a href=\"https://github.com/jiacai2050/prosumer\" target=\"_blank\" rel=\"noopener noreferrer\">prosumer</a>，就是一个踩了chan/timer 一些坑后实现生产者/消费者模式框架。但今天不去谈 chan 的使用方式，而是来谈一个最基本的问题，Go 代码应该放在哪里，其实也就是 Go 的包管理机制，有时也称为版本化，其实是一个意思。这看似简单，却让不少 Gopher <a href=\"https://stackoverflow.com/questions/tagged/go-modules\" target=\"_blank\" rel=\"noopener noreferrer\">吃了不少苦头</a>。本文就来介绍下 Go 的包管理机制，主要会包含以下内容：</p>",
+  "image": null,
+  "publishedAt": "2020-12-05T05:12:21Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2019/10/24/go-modules/"
+}

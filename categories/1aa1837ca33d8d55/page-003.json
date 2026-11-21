@@ -1,0 +1,191 @@
+{
+  "items": [
+    {
+      "id": "edcb1d4763935081023653c3",
+      "title": "Android 内存优化(1) - MAT 使用入门",
+      "summary": "本文是 MAT 工具使用系列的第一篇，这个系列共三篇，详细介绍了如何使用 MAT 来分析内存问题，既可以是 Java 应用的内存问题，也可以是 Android 应用的内存问题： Android 内存优化(1) - MAT 使用入门 Android 内存优化(2) - MAT使用进阶 Android 内存优化(3) - 打开MAT中的Bitmap原图 技术复核（2026-10-13） ：本文保留原教程和历史截图。MAT 的堆分析概念仍适用；旧 Eclipse/DDMS 抓取流程已过期。下载与运行要求更新到 MAT 1.17.0（2026-06-10，独立版要求 Java 21+） ，并修正 ART、Bitmap、Retained Size 和引用类型说明。 现在可以先在 Android Studio Profi…",
+      "image": null,
+      "publishedAt": "2015-04-11T10:10:29Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/04/11/AndroidMemory-Usage-Of-MAT/",
+      "detailPath": "articles/edcb1d4763935081023653c3.json"
+    },
+    {
+      "id": "1795430768818b2a50f9e16b",
+      "title": "Android性能优化后续",
+      "summary": "前言 本文是一篇译文，原文 Android Performance Case Study Follow-up 的作者是大名鼎鼎的 Romain Guy 。本文讲述了Android性能优化的一些技巧、方法和工具。 技术复核（2026-10-13） ：保留 2015 年 Falcon Pro 3 / Moto X 2014 的历史案例，以下第一人称属于原作者。Tracer for OpenGL ES、Hierarchy Viewer 所在的 Android Device Monitor 已在 Android Studio 3.1 弃用、3.2 移除；旧工具步骤标为历史内容，文末补充 Android 12+ 的 Perfetto 分析入口。原站链接本次未能重新读取，技术修订依据文中列出的官方资料和版本化源码。 译文…",
+      "image": null,
+      "publishedAt": "2015-03-31T01:29:00Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/31/android-performance-case-study-follow-up/",
+      "detailPath": "articles/1795430768818b2a50f9e16b.json"
+    },
+    {
+      "id": "5873e54fd2b41a0213778bfd",
+      "title": "Android 小技巧 - 5",
+      "summary": "本文是一篇译文,这篇是这个系列的第五篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：原文发表于 2014 年，本译文发表于 2015 年。旧 Support Library 链接改为 AndroidX；外部存储、缩略图和应用语言补充新版本用法。清除应用数据和数据库让出事务的副作用也在对应条目中明确说明。",
+      "image": null,
+      "publishedAt": "2015-03-14T16:32:11Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-5/",
+      "detailPath": "articles/5873e54fd2b41a0213778bfd.json"
+    },
+    {
+      "id": "9cb020a7aea7b0bb84b559e2",
+      "title": "Android 小技巧 - 4",
+      "summary": "本文是一篇译文,这篇是这个系列的第四篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：这些 View/XML API 大多仍可用，但原文关于配置变化、裁剪和文件原子性的说明需要修正。Gradle 3.0 起默认启用 Daemon； AtomicFile 的实现则以下面的 Android 4.4.4 与 Android 16 源码对照说明。",
+      "image": null,
+      "publishedAt": "2015-03-14T16:31:02Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-4/",
+      "detailPath": "articles/9cb020a7aea7b0bb84b559e2.json"
+    },
+    {
+      "id": "f01711a110aa2f1e8b02e55d",
+      "title": "Android 小技巧 -3",
+      "summary": "本文是一篇译文,这篇是这个系列的第三篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去. 技术复核（2026-10-13） ：原文发表于 2014 年，本译文发表于 2015 年。平台 android.app.Fragment 在 API 28 弃用，下面的 Fragment 建议改用 AndroidX；LocalBroadcastManager 与 Otto 已停止维护。其余条目保留原顺序，并补充 API 版本和使用边界。",
+      "image": null,
+      "publishedAt": "2015-03-14T16:29:57Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/03/15/android-tips-round-up-3/",
+      "detailPath": "articles/f01711a110aa2f1e8b02e55d.json"
+    },
+    {
+      "id": "d1272f1472b8ca6b898f91b5",
+      "title": "为 Nexus 5 编译 Android Lollipop 固件",
+      "summary": "技术复核（2026-10-13） ：这是一篇 Nexus 5 / Android Lollipop 的历史教程，设备与工具链已过期。文中的 LRX22C 二进制对应 **Android 5.0.1 / AOSP android-5.0.1_r1 **，下文据此明确源码、驱动和刷机条件。新学习环境另补 Android 16 Cuttlefish 示例；不要把新版本的构建命令与旧真机固件混用。 接前一篇文章 使用Android Studio查看Android Lollipop源码 , 我们知道,仅仅看代码,提高是比较有限的,而且理解起来也比较肤浅,往往过目就忘. 而自己写过的代码,往往会印象比较深刻,在写的时候也会比较容易理解流程. 所以我们在看代码的同时, 如果能修改代码, 在手机上跑起来并看到修改的效果,这无…",
+      "image": null,
+      "publishedAt": "2015-02-04T12:51:19Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/02/04/build-rom-for-nexus5/",
+      "detailPath": "articles/d1272f1472b8ca6b898f91b5.json"
+    },
+    {
+      "id": "7786ff6380e4bf5d0d6b1a00",
+      "title": "Android 性能优化之 Systrace 工具介绍(一)",
+      "summary": "技术复核（2026-10-13） ：本文原写于 2015 年。Systrace 的事件时间线仍有参考价值，Eclipse / Device Monitor 入口已过期；旧脚本参数以下文核对的 AOSP android-5.0.0_r1 为准。新增命令以 Android 11 / API 30 及以上的 Perfetto 为例，旧系统差异另列。后续文章见 Android Perfetto 系列目录 。 旧流程 现在的对应方式 Eclipse / Device Monitor 的 Systrace 按钮 Android 9 / API 28 起可用设备端 System Tracing；也可通过 ADB 采集 systrace.py 调用 atrace 并生成 HTML Perfetto 采集命令生成二进制 tra…",
+      "image": null,
+      "publishedAt": "2015-01-30T12:24:31Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/30/android-performance-tools-systrace-1/",
+      "detailPath": "articles/7786ff6380e4bf5d0d6b1a00.json"
+    },
+    {
+      "id": "90fd86fe0cea02e37d6191e9",
+      "title": "使用 Android Studio 查看 Android Lollipop 源码",
+      "summary": "技术复核（2026-10-13） ：原文面向 Android 5.0 Lollipop 与 Android Studio 1.x。下面的 IDEGen 流程已按 AOSP android-5.0.0_r1 源码核对，属于历史方案；新增的 AIDEGen 示例以 android-16.0.0_r1 文档为准。 Android Studio 作为Google的亲儿子,Nexus手机系列所收到的待遇大家有目共睹.Android5.0出来之后,Nexus5第一时间就升级到了最新的系统.那么作为Google亲儿子的Android Studio同样备受Google的重视,我也是第一时间从Eclipse转投到了Android Studio的怀抱中,从最初的测试版本一路升级到现在的1.0正式版本.",
+      "image": null,
+      "publishedAt": "2015-01-16T13:54:32Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/16/view-android-source-code-with-androidstudio/",
+      "detailPath": "articles/90fd86fe0cea02e37d6191e9.json"
+    },
+    {
+      "id": "322d29268520909b573e8474",
+      "title": "Android 性能优化之过度绘制 - 实战篇",
+      "summary": "前言 上一篇 文章 从理论的角度讲解了一下什么是过度绘制，以及可以用来查看和确认过度绘制的工具，还提供了一些优化过度绘制的方法。对代码和布局比较熟悉的人，看完上一篇其实就已经可以对自己的应用进行优化了。我记得有人说过，用iphone你只需要保证苹果有节操即可，用Android你就得保证所有的Android开发者都有节操。但现实是残酷的，现在Android市场上，有很多粗制滥造的应用，其中不乏大厂之作，各位打开过度绘制按钮，就知道我所言非虚。作为一个Android开发人员，我肯定是更希望Android能一步一步好起来，超越iphone。 这篇文章从实战的角度，讲解了一个过度绘制的优化过程。当然这里用到的只是很少的一部分，毕竟每个应用差别很大，优化方式也各不一样。所以这篇文章仅供参考，想把这块做好还是要下功夫的。…",
+      "image": null,
+      "publishedAt": "2015-01-13T11:38:53Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2015/01/13/android-performance-optimization-overdraw-2/",
+      "detailPath": "articles/322d29268520909b573e8474.json"
+    },
+    {
+      "id": "f5954d12ac36e56b3b2a66d2",
+      "title": "Android 性能优化之过度绘制 - 理论篇",
+      "summary": "2026-10-13 更新：本文原写于 2014 年，源码节选已对照 AOSP android-4.4.4_r2 。Overdraw 的概念仍适用，ADT、monitor、Hierarchy Viewer 和旧 OpenGL 跟踪入口已过时；Android Studio 3.1 起改用 Layout Inspector 查看层级，帧时序使用 Perfetto。下文保留历史源码，并补充 Android 12 / Android 16 的对应边界。 博客有一段时间没有更新了，到了新公司后，一直比较忙，博客也更新地不那么频繁了。最近一直在看Android上和性能相关的部分，也就是所谓的Android性能优化，才发现Android性能这一块，自己懂得还是太少了，所以从上层开始看，也算是一点一点入门吧。这个系列将讲解学…",
+      "image": null,
+      "publishedAt": "2014-10-20T15:19:23Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/10/20/android-performance-optimization-overdraw-1/",
+      "detailPath": "articles/f5954d12ac36e56b3b2a66d2.json"
+    },
+    {
+      "id": "9e57bf0cfd879bf7b4e8398d",
+      "title": "Android 小技巧 - 如何让EditText不自动获取焦点",
+      "summary": "2026-10-13 核查：这个方法适用于传统 Android View 布局，所用焦点属性从 API 1 起可用，仍然有效。但输入焦点和软键盘可见性是两个状态，不能保证加上两个属性后键盘在所有场景都不弹出。 Android中,使用EditText作为输入框很方便,但是有时候EditText会自动获取焦点,其行为:点击进入这个页面后,EditText自动获取焦点,导致软键盘直接跳出.有时候这么做很方便,但是大部分时候我们还是希望在点击EditText的时候,软键盘才弹出来.",
+      "image": null,
+      "publishedAt": "2014-06-02T16:31:49Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/06/03/android-edittext-do-not-auto-get-focus/",
+      "detailPath": "articles/9e57bf0cfd879bf7b4e8398d.json"
+    },
+    {
+      "id": "136015869d8d852d052a708d",
+      "title": "Android 小技巧 -2",
+      "summary": "2026-10-13 核查：本文是 2014 年的 View/系统工具 API 清单。 Activity.onBackPressed() 从 API 33 废弃，文字布局应优先使用 API 23 起的 Builder；下面补充替代方式，并修正闹钟、应用内存和屏幕密度的解释。 本文是一篇译文,这篇是这个系列的第二篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去.",
+      "image": null,
+      "publishedAt": "2014-05-31T10:20:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/05/31/android-tips-round-up-2/",
+      "detailPath": "articles/136015869d8d852d052a708d.json"
+    },
+    {
+      "id": "1b32ba7adcc0f95dc0a4aba5",
+      "title": "Android 小技巧 - 1",
+      "summary": "2026-10-13 核查：这份清单原写于 2014 年，主要面向 Android View 系统。多数 API 仍然有效；旧版 Html.fromHtml(String) 从 API 24 废弃，下面补充替代签名，并修正缓存目录、布局加载和动画反向播放的说明。 本文是一篇译文,这篇是这个系列的第一篇.讲述的是Android开发中遇到的一些好用的小技巧,或者一些实用的API,很多人都知道,但也有人不知道,记录下来,如果能帮助到大家,也是极好的.由于不是严格的博文,所以翻译也不那么严格,有些工具和类我也会经常用,所以我会根据自己的想法去写.有些地方作者并没有将这个工具的作用讲出来,我会补充上去.",
+      "image": null,
+      "publishedAt": "2014-05-28T15:47:43Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/05/28/android-tips-round-up-1/",
+      "detailPath": "articles/1b32ba7adcc0f95dc0a4aba5.json"
+    },
+    {
+      "id": "d5e191c706ca1a3270fd490a",
+      "title": "Android Tools - Log2File",
+      "summary": "2026-10-13 更新：2014 年版本直接向外部存储根目录写文件，这种用法已过时。Android 10（API 29）引入分区存储，Android 11（API 30）对 targetSdk 30 及以上应用忽略 requestLegacyExternalStorage 。下面改用应用内部目录，示例最低版本为 Android 4.4（API 19），不需要存储权限。 Android 11 存储变化 Log2File 工具类用于 Android 程序把应用主动记录的日志写入文件，适合下面这些场景： 无法连接电脑进行调试，例如 USB 口被 OTG 设备占用。 日志不容易实时抓取。 Bug 出现很随机，需要保留操作过程中的记录。 其他自己脑补。 它只保存传给 w() 的内容，不会自动读取系统 logcat；…",
+      "image": null,
+      "publishedAt": "2014-05-02T05:25:35Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/05/02/android_log_to_file/",
+      "detailPath": "articles/d5e191c706ca1a3270fd490a.json"
+    },
+    {
+      "id": "e1f74cae69936a729b95ef08",
+      "title": "Android Service：开发自己的通知中心(2):辅助性服务实战",
+      "summary": "2026-10-13 更新：本文记录的是 Android 4.3 之前通过无障碍事件观察通知的旧方案，这条通用通知中心实现路线已过时。Android 4.3（API 18）起提供专门的 NotificationListenerService ，第 4 节补充 Android 7.0（API 24）及以上的最小监听示例。旧代码仅用于理解历史实现，不保证取得完整通知列表。 1.辅助性服务实战介绍 上一篇文章 介绍了什么是 Accessibility 以及简单的使用，这一篇文章就来讲讲如何使用Accessibility服务来创建一个简单的Android通知中心。Android中通知中心是一个系统层面的服务，负责显示应用和系统发来的通知（Notification，比如USB插入、选择输入法、未接来电、截图、天气信息、…",
+      "image": null,
+      "publishedAt": "2014-03-31T16:05:47Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/04/01/android-service-build-your-own-notification-servers-app/",
+      "detailPath": "articles/e1f74cae69936a729b95ef08.json"
+    },
+    {
+      "id": "d71f373d2c160dd636feac6b",
+      "title": "Android:Ubuntu 下执行 Adb 命令找不到设备",
+      "summary": "这篇写于 2014 年，当时用的是 Nokia X 和旧版 Android SDK。2026-10-13 更新了 Ubuntu 24.04 LTS 下的 udev 和用户组配置；旧 SYSFS 规则、Upstart 重启方式已经不适用， adb_usb.ini 的办法留在文末作历史记录。 1.问题概述 最近开发Nokia项目，遇到的问题如下： 插入Nokia x后，电脑没有反应，即不识别，同事的windows也不识别，最后在谷歌上搜索了良久，才找到了解决方案，但是没有记录，后来又要给别人配置的时候，发现忘记怎么配置了。想想这也是一个具有通性的问题，还是记录下来，分享给大家。 2.问题解决方案 先在设备上开启 USB 调试，并使用支持数据传输的 USB 线。用 adb version 确认调用的 Platfor…",
+      "image": null,
+      "publishedAt": "2014-03-25T03:15:17Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/25/ubuntu-adb-can-not-find-devices/",
+      "detailPath": "articles/d71f373d2c160dd636feac6b.json"
+    },
+    {
+      "id": "506ff04c13ef684ec4ef3661",
+      "title": "Android Service：开发自己的通知中心(1):辅助性服务介绍",
+      "summary": "1 辅助性服务介绍 2026-10-13 更新：本文原写于 2014 年，介绍 Android 4.0（API 14）起的无障碍服务配置。无障碍服务本身仍然有效，但用它实现通用通知中心的路线已过时；Android 4.3（API 18）起应使用专门的 NotificationListenerService 。下文修正服务声明和示例，并补充 Android 13（API 33）的节点回收变化。 辅助性服务（现通常称无障碍服务）用于帮助残障用户或暂时无法正常操作设备的用户使用应用，例如将界面文本读出来，或者提供触觉反馈。这一节介绍如何创建服务、接收界面事件和查询节点信息。 AccessibilityService 由系统在用户授权后绑定，不能当作普通后台任务服务来启动。下面给出服务骨架和几个方法的写法；接进自己的…",
+      "image": null,
+      "publishedAt": "2014-03-17T06:07:53Z",
+      "sourceId": "1aa1837ca33d8d55",
+      "sourceTitle": "Android Performance",
+      "link": "https://androidperformance.com/2014/03/17/android-build-your-own-android-notification-service-app/",
+      "detailPath": "articles/506ff04c13ef684ec4ef3661.json"
+    }
+  ]
+}

@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Hsuan's Space</title>
+        <link>https://quarkpixel.github.io</link>
+        <description>Hsuan's personal blog about tech, life, and thoughts</description>
+        <lastBuildDate>Thu, 21 May 2026 02:16:53 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <language>zh-CN</language>
+        <image>
+            <title>Hsuan's Space</title>
+            <url>https://quarkpixel.github.io/favicon/dark.svg</url>
+            <link>https://quarkpixel.github.io</link>
+        </image>
+        <copyright>All rights reserved 2026, Xuancong Meng</copyright>
+        <item>
+            <title><![CDATA[看《Zero To Production In Rust》，顺手造个轮子]]></title>
+            <link>https://quarkpixel.github.io/p/260404-lets-zero-to-production-in-rust</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/260404-lets-zero-to-production-in-rust</guid>
+            <pubDate>Sat, 04 Apr 2026 02:44:00 GMT</pubDate>
+            <description><![CDATA[本文纯属事逼找茬]]></description>
+            <content:encoded><![CDATA[<p>很喜欢这本书。我一直秉持「实践大于理解」的学习理念。这样学起来既有成就感推着自己往下走，又能顺便把常见用法记住了。</p>
+<p>这本书正好符合上述理念：带领搭建邮件订阅服务，每次新概念的引入都是碰见了刚需，可以直觉地通过上下文快速理解。</p>
+<blockquote>
+<p><strong>关于中文版</strong></p>
+<p>我一开始是从多抓鱼淘的二手中文版《从零构建 Rust 生产级服务》，但读了几章后发现翻译错误不少，还有一些莫名其妙的错漏，排版也经不起细看（代码块里本该等宽的字体挤成一坨）。所以现在我中英文对照着看（英语还是太烂了😭），最终还是以英文原版为准。中文版当辅助参考可以，但不太建议当主力。</p>
+</blockquote>
+<p><strong>Z-Library 下载地址：</strong></p>
+<ul>
+<li>英文原版：<a href="https://z-library.sk/book/dRzarqLJOo/zero-to-production-in-rust-an-opinionated-introduction-to-backend-development.html">Zero To Production In Rust</a></li>
+<li>中文版：<a href="https://z-library.sk/book/QRM1ZynBRV/%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BArust%E7%94%9F%E4%BA%A7%E7%BA%A7%E6%9C%8D%E5%8A%A1.html">从零构建 Rust 生产级服务</a></li>
+</ul>
+<h2>这个系列想做什么</h2>
+<p>这本书写于 2021 年，Rust 生态变化又快得离谱。当时的很多写法现在已经有更简洁、更地道的替代方案了。</p>
+<p>所以我想做的不是逐章摘抄书的内容，而是记录跟着书学的过程中遇到的那些「书上这么写，但现在可以写得更好」的地方。姑且算是一份学习笔记吧，<del>但更多是我强迫症性格的极致体现🤣</del>。</p>
+<hr>
+<h2>为了写得更优雅，我自己造了个轮子</h2>
+<p>进入正题。<a href="https://lpalmieri.com/posts/an-introduction-to-property-based-testing-in-rust/#implementing-the-arbitrary-trait">书的第 6 章</a> 讲到给邮箱验证写属性测试（property-based test），用的是 <code>quickcheck</code> + <code>fake</code> 的组合：</p>
+<pre><code class="language-rust">//! src/domain/subscriber_email.rs
+
+#[cfg(test)]
+mod tests {
+  #[derive(Debug, Clone)]
+  struct ValidEmailFixture(pub String);
+
+  impl quickcheck::Arbitrary for ValidEmailFixture {
+    fn arbitrary&lt;G: quickcheck::Gen&gt;(g: &amp;mut G) -&gt; Self {
+       let email = SafeEmail().fake_with_rng(g);
+       Self(email)
+    }
+  }
+
+  #[quickcheck_macros::quickcheck]
+  fn valid_emails_are_parsed_successfully(valid_email: ValidEmailFixture) -&gt; bool {
+    SubscriberEmail::parse(valid_email.0).is_ok()
+  }
+}
+</code></pre>
+<p>逻辑很清晰，代码也很干净。<code>quickcheck</code> 的 <code>Gen</code> 类型在老版本中实现了 <code>rand::Rng</code>，直接传给 <code>fake</code> 的 <code>fake_with_rng()</code> 就能生成确定性的随机数据。</p>
+<p>但编译器给了我们当头一棒，<del>剧本不是这么来的啊？</del></p>
+<pre><code>error[E0277]: the trait bound `Gen: Rng` is not satisfied
+</code></pre>
+<p>查了一圈才搞明白：<code>quickcheck</code> 升到 1.x 之后，作者把 <code>Gen</code> 从 trait 改成了 struct，并且<strong>有意移除了所有 <code>rand</code> 相关的 trait 实现</strong>。理由是 rand 生态的 semver 变动太频繁了，不想让 quickcheck 的公共 API 被 rand 的版本更新拖着走。</p>
+<p><a href="https://github.com/BurntSushi/quickcheck/issues/241">https://github.com/BurntSushi/quickcheck/issues/241</a></p>
+<p>能理解作者的选择，但这让我们处于尴尬的境地中。</p>
+<ul>
+<li><p><strong>降级到书上用的版本。</strong> 理论上应该这么做——保持 Rust 2021 Edition、用一样的库版本和工具链。但面对一门变化这么快的语言，我给自己定了个目标：书中提到的所有工具都要用最新版本实现对应功能。所以这条路走不通。<del>我就是和自己过不去</del></p>
+</li>
+<li><p>弃用 <code>.fake_with_rng()</code>，直接用 <code>.fake()</code> 生成与 Rng 无关的随机邮箱。但本着折腾为上的原则，我不接受 😜</p>
+</li>
+<li><p><strong>拉 fake 的 git master 分支。</strong> 当时以为问题是 fake 4.4.0（最新发布版）用的 <code>rand 0.9</code>，而 <code>quickcheck 1.1.0</code> 已经升到了 <code>rand 0.10</code>。升级 <code>rand 0.10</code> 的 PR 在当时（2月26日）刚合并到 master，但还没发布新版本。尝试了但失败了，因为问题根本不在 fake。<del>我操 quickcheck 怎么这么坑 😡</del></p>
+</li>
+<li><p><strong>手动种子桥接。</strong> 代码太臃肿了，吃过细糠怎么咽粗粮？见过那么优雅的写法，肯定想让自己代码也那么干净！
+原版：</p>
+<pre><code class="language-rust">impl quickcheck::Arbitrary for ValidEmailFixture {
+    fn arbitrary(g: &amp;mut quickcheck::Gen) -&gt; Self {
+        let email = SafeEmail().fake_with_rng(g);
+        Self(email)
+    }
+}
+</code></pre>
+<p>桥接后：</p>
+<pre><code class="language-rust">impl quickcheck::Arbitrary for ValidEmailFixture {
+    fn arbitrary(g: &amp;mut quickcheck::Gen) -&gt; Self {
+        use quickcheck::Arbitrary;
+        use rand::SeedableRng;
+
+        let seed: [u8; 32] = std::array::from_fn(|_| u8::arbitrary(g));
+        let mut rng = rand::rngs::StdRng::from_seed(seed);
+        let email = SafeEmail().fake_with_rng(&amp;mut rng);
+        Self(email)
+    }
+}
+</code></pre>
+</li>
+</ul>
+<p>折腾了一阵无果，换了个思路：既然 quickcheck 和 rand 生态已经脱钩了，干脆换个测试框架试试。书上提到过一嘴的 <code>proptest</code> 貌似能解决问题：proptest 的内部 RNG 类型 <code>TestRng</code> 实现了 <code>rand_core::RngCore</code>，天然能和 <code>fake</code>、<code>rand</code> 以及整个 rand 生态配合使用。</p>
+<pre><code class="language-rust">proptest! {
+    #[test]
+    fn valid_emails_are_parsed_successfully(
+        rng in any::&lt;u8&gt;().prop_perturb(|_, mut rng| rng.new_rng())
+    ) {
+        let email: String = SafeEmail().fake_with_rng(&amp;mut rng);
+        assert_ok!(SubscriberEmail::try_new(email));
+    }
+}
+</code></pre>
+<p>好像可以运行！但是这段代码怎么还是又臭又长？</p>
+<pre><code class="language-rust">rng in any::&lt;u8&gt;().prop_perturb(|_, mut rng| rng.new_rng())
+</code></pre>
+<p>这像黑魔法一样的东西是什么鬼？一点可读性都没有！为什么不能直接写成这样？<del>（怎么事那么多，事儿逼）</del></p>
+<pre><code class="language-rust">rng in any::&lt;TestRng&gt;()
+</code></pre>
+<p>原因很简单：<code>TestRng</code> 没有实现 proptest 自己的 <code>Arbitrary</code> trait，没法直接 <code>any::&lt;TestRng&gt;()</code> 来拿一个 RNG 当测试参数。得用 <code>prop_perturb</code> 方法把 proptest 内部的 RNG 偷出来用。每次都要写这么一段样板代码，心里还是难受。</p>
+<p>想了想，干脆自己写个库解决这个问题：<a href="https://crates.io/crates/proptest-rng"><strong>proptest-rng</strong></a>。</p>
+<p>思路很简单：写一个 newtype wrapper <code>ProptestRng</code>，让它同时实现 <code>Arbitrary</code>（proptest 能生成它）和 <code>RngCore</code>（rand 生态能用它）。再加上 <code>Deref&lt;Target = TestRng&gt;</code>，<code>TestRng</code> 的方法也能直接调用。</p>
+<p>有意思的是：这个 crate 的依赖<strong>只有 <code>proptest</code></strong>，不需要显式依赖 <code>rand</code> 或 <code>rand_core</code>。因为 <code>rand_core 0.9</code> 里有一个 blanket impl：</p>
+<pre><code class="language-rust">impl&lt;T: DerefMut&gt; RngCore for T where T::Target: RngCore { ... }
+</code></pre>
+<p>也就是说，只要 <code>ProptestRng</code> 实现了 <code>DerefMut&lt;Target = TestRng&gt;</code>，而 <code>TestRng</code> 已经实现了 <code>RngCore</code>，那 <code>ProptestRng</code> 就自动继承了 <code>RngCore</code>。不用多写一行代码，不用多加一个依赖。</p>
+<p>现在代码变成了这样：</p>
+<pre><code class="language-rust">proptest! {
+    #[test]
+    fn valid_emails_are_parsed_successfully(
+        rng in any::&lt;TestRng&gt;()
+    ) {
+        let email: String = SafeEmail().fake_with_rng(&amp;mut rng);
+        assert_ok!(SubscriberEmail::try_new(email));
+    }
+}
+</code></pre>
+<p>甚至还能进一步优化：</p>
+<pre><code class="language-rust">#[test]
+fn valid_emails_are_parsed_successfully(
+    email in any::&lt;ProptestRng&gt;()
+        .prop_map(|mut rng| SafeEmail().fake_with_rng::&lt;String, _&gt;(&amp;mut rng))
+) {
+    assert_ok!(SubscriberEmail::try_new(email));
+}
+</code></pre>
+<p>这样不仅更简洁紧凑，还更测试友好。测试失败时返回的是出问题的 email，而不是一串随机的 Rng 字符串。</p>
+<h3>最终效果</h3>
+<p>对比一下原书的写法：</p>
+<pre><code class="language-rust">#[derive(Debug, Clone)]
+struct ValidEmailFixture(pub String);
+
+impl quickcheck::Arbitrary for ValidEmailFixture {
+  fn arbitrary&lt;G: quickcheck::Gen&gt;(g: &amp;mut G) -&gt; Self {
+    // Cannot compile!
+    let email = SafeEmail().fake_with_rng(g);
+    Self(email)
+  }
+}
+
+#[quickcheck_macros::quickcheck]
+fn valid_emails_are_parsed_successfully(valid_email: ValidEmailFixture) -&gt; bool {
+  SubscriberEmail::parse(valid_email.0).is_ok()
+}
+</code></pre>
+<p>我们的代码完整复现了原书想要的功能，而且更加简洁了！</p>
+<p>在实际项目中，这么折腾肯定是得不偿失的。我是抱着「探索研究」的心态去追求代码的优雅，才有了上面的心路历程。分享出来，供有同样癖好的佬友参考。</p>
+<hr>
+<p>文中提到的 <code>proptest-rng</code> 库源码在 <a href="https://github.com/QuarkPixel/proptest-rng">GitHub</a>，crate 在 <a href="https://crates.io/crates/proptest-rng">crates.io</a>。如果你的项目也在用 proptest + fake 或者其他 rand 生态的 crate 做测试，欢迎试试。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB64]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB64</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB64</guid>
+            <pubDate>Fri, 21 Nov 2025 09:13:00 GMT</pubDate>
+            <description><![CDATA['']]></description>
+            <content:encoded><![CDATA[<p>这周读完了《被讨厌的勇气》。我本来是一个很少读书的人，在多方面听到不同的人推荐这本书，便找来读了。有意思的是，现在貌似有些读书的习惯了。目前在试着读《禅与摩托车维修艺术》，同样是在不同的地方了解到这本书，但书名本身就很吸引我。</p>
+<p>再说回《被讨厌的勇气》，里面的一些概念确实很引人深思，首先就是关于「课题分离」。这个名词我首先是在<a href="https://www.geedea.pro/cards/%E8%AF%BE%E9%A2%98%E5%88%86%E7%A6%BB/">极客死亡计划</a>上阅读到的，我当时便发觉「自己这方面做的不好」。事实上后来在和别人诉苦时也被推荐了这本书，所以书中的内容另外影响深刻。</p>
+<p>这本书的最后两章其实和我<a href="/logs/0xB63">上周的内容</a>奇妙的呼应上了。</p>
+<blockquote>
+<p>人生中最大的谎言就是不活在“此时此刻”。纠结过去、关注未来，把微弱而模糊的光打向人生整体，自认为看到了些什么。你之前就一直忽略“此时此刻”，只关注根本不存在的过去和未来。对自己的人生和无可替代的刹那撒了一个大大的谎言。</p>
+</blockquote>
+<blockquote>
+<p>人想要选择自由的时候当然就有可能会迷路。所以，作为自由人生的重大指针，阿德勒心理学提出了“引导之星”。</p>
+</blockquote>
+<p>虽然我还不能分清这里的「人生的目标」与之前所讲的「学习上的目标」能否一概而论，但确实是这样，我们一定要分清楚目标的作用：只是给你一个引导。**它不是期待，不是幻想的素材，它是为了你当下服务的。**这点很有意思。</p>
+<p>祝你有美好的一天。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB63]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB63</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB63</guid>
+            <pubDate>Fri, 14 Nov 2025 01:44:00 GMT</pubDate>
+            <description><![CDATA['何为目标']]></description>
+            <content:encoded><![CDATA[<p>再和老师交流的过程中，老师指出了我没有目标这个事实。好像确实是这样，自己甚至会以此为某种「与众不同」的谈资：</p>
+<blockquote>
+<p>谁能料到未来怎么样？不都是计划赶不上变化，所以做那么多规划干什么呢？过好当下不就行了，以后的就交给以后再说好了。</p>
+</blockquote>
+<p>老师说，她之前就感受到我学习没有目标，整个劲是散的，学习是发散的，所以其实并没有真的学到什么。</p>
+<p>她和我讲这些是因为我向她分享了关于我<a href="/p/251108-how-to-stay-aware">因感受不到痛苦而恐惧</a>。她是这么分析的：</p>
+<blockquote>
+<p>以前你都是被痛苦驱动着，后面一直有个东西推着你，推着就能感受到你的存在。但是现在这个东西消失了，一下子你就没有方向了，<strong>你就不知道你在哪了</strong>。所以你现在缺少一个目标，如果你有个目标，你就知道你应该走向哪，往哪去。</p>
+<p>当然目标不是为了让你去真的实现的，现在变化太快了，谁知道以后怎么样呢？<strong>目标只是为了让你知道你应该往哪个方向使劲</strong>。</p>
+</blockquote>
+<p>是这样的啊，我以前没有太长远的目标，根本原因是我不需要或者没有意识到应该要活着清醒。我确实无解了「目标」的作用。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB62]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB62</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB62</guid>
+            <pubDate>Sat, 08 Nov 2025 15:06:00 GMT</pubDate>
+            <description><![CDATA['']]></description>
+            <content:encoded><![CDATA[<p>最近在思考如何保持觉知，<a href="/p/251108-how-to-stay-aware">想了一些有的没的</a>。</p>
+<h2>「人生皆苦」并非悲观</h2>
+<p>了解了佛教中的「人生皆苦海」概念后，引发了一些思考。
+首先这个概念将苦分为了三层：</p>
+<ul>
+<li><strong>苦苦</strong>
+苦苦是最浅层的，代表着最直接的痛苦。如分手、受伤、生病这些。</li>
+<li><strong>坏苦</strong>
+按我粗浅的理解，坏苦是苦苦的先前态，也就是快乐。因为世事无常，有得必有失。当你养了一只小猫时，你感到的快乐就是坏苦。当他有一天离你而去时，坏苦就应验成了苦苦。</li>
+<li><strong>行苦</strong>
+当你意识到“并没有什么事情是单纯的快乐，都是所谓的「坏苦」时，那这种感受就是行苦了。<strong>听起来很悲观不是吗？世上其实没啥快乐的事，他们的内核都是悲伤的。</strong></li>
+</ul>
+<p>但我发现，这三层苦好像都能对应一种乐：乐乐、好乐以及行乐<a href="%E5%90%8D%E5%AD%97%E6%98%AF%E6%88%91%E8%87%AA%E5%B7%B1%E7%BC%96%E7%9A%84%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E4%B8%A5%E8%B0%A8%E5%90%AB%E4%B9%89%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E4%B8%8E%E4%B8%89%E5%B1%82%E8%8B%A6%E5%AF%B9%E5%BA%94%E3%80%82">^1</a>。</p>
+<ul>
+<li>坏苦：<strong>乐乐</strong>
+最容易理解的，当你在快乐时，虽然是种坏苦，但其最明显的特征还是本身的快乐，因此暂且将其定为“乐乐”。</li>
+<li>苦苦：<strong>好乐</strong>
+最普世的痛苦，何尝不是一种乐呢？记得某个心理学家说过「禁欲这件事本身就让人有性欲」。当你因为某件事而痛苦时，还是因为世事无常，其后定会有一个瞬间让你补齐痛苦的感受，比如禁欲后突破的那一瞬间。</li>
+<li>行苦：<strong>行乐</strong>
+当你意识到当下的痛苦都是暂时的，一定会有熬出头的那一天，且当下经历的痛苦都会转化成自己的力量时，一切都充满了希望。</li>
+</ul>
+<p>这三层乐讨论的其实和三层苦是一样的东西，但我更喜欢后者的表达，差别取决于两者观察的视角不同。佛教中强调“人生皆苦”我认为主要还是警醒人们“苦”是逃不掉的。但我觉得大家生活的已经够苦了，辩证地看待以给自己一些慰籍不是更好吗？当然可能佛教中有与我刚才提到的观点类似的说法，只不过我还没了解到。</p>
+<p>送一首来自 Louis Armstrong 的 <em>What a Wonderful World</em> 给你。</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/what-a-wonderful-world/1440787250?i=1440787254"></iframe>
+
+<h2>WebGPU 好起来了</h2>
+<p>在推特上刷到<a href="https://x.com/cerpow/status/1964953851603358112">使用 TypeGPU 实现的超级炫酷的进度条</a>，很有意思。</p>
+<h2>媽媽送給我最特別的禮物，是教我如何欣賞一道彩虹。</h2>
+<p>最近很迷窦靖童的歌，在这里分享一首《烟花》。</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E7%83%9F%E8%8A%B1/1680713507?i=1680713510"></iframe>
+
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[如何保持觉知]]></title>
+            <link>https://quarkpixel.github.io/p/251108-how-to-stay-aware</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/251108-how-to-stay-aware</guid>
+            <pubDate>Sat, 08 Nov 2025 05:12:00 GMT</pubDate>
+            <description><![CDATA[失踪后的一些想法]]></description>
+            <content:encoded><![CDATA[<p>上周没有写周刊，自我内心处于一些纠结焦虑中。但客观的讲，这半个月来我过的很快乐。</p>
+<h2>自觉地活着清醒</h2>
+<p>过的快乐让我感到<strong>惶恐</strong>。因为我觉知不到痛苦，丢失感官信息的感觉不好，就像不会游泳的人脚怎么样也够不到池底。这个时候我也许大多就逆来顺受，肆意的感受快乐麻木自己。事实上我大多时候都是这样的，一大部分上周没有写 log 也主要是因为这点：没有了痛苦，自然就会坚持不住那些自己在痛苦中养成的习惯。</p>
+<p>好在我之间给自己立的 <a href="/logs/0xB59#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%86%99-logs">flag</a> 或多或少还记得，突然不写的决定提醒我好像出现了一些异样。遂有了这些想法，很有意思。</p>
+<p>“在快乐中保持觉知”是一个重要的课题。以前的我可以被痛苦驱动，让自己做出改变；现在的我需要寻找一个更加普世的内驱力来驱动自己。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB60]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB60</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB60</guid>
+            <pubDate>Sun, 26 Oct 2025 04:17:00 GMT</pubDate>
+            <description><![CDATA[点点是笨猫]]></description>
+            <content:encoded><![CDATA[<p>点点<a href="%E4%B9%9F%E5%B0%B1%E6%98%AF%E6%88%91%E5%9C%A8%5B0xB5F%5D(./0xB5F)%E4%B8%AD%E6%8F%90%E5%88%B0%E8%B5%B0%E5%A4%B1%E7%9A%84%E9%82%A3%E5%8F%AA%E3%80%82">^1</a>已经平安回家了，后来因为实在没办法了，请了专业找猫的团队。</p>
+<h2>你为何不喊也不叫</h2>
+<p>点点藏在了我们住的楼的正下方的一个「洞」中，怀疑是知道我们在这但是不知道怎么上楼。这个洞也很有说法，整个小区的楼的边缘都有一层缝，往里面纵深有三四米。</p>
+<p>她在里面也不嚎也不叫，天天下去找他找了一个星期都不回应我们。实在是受不了🤦‍♂️。</p>
+<p><img src="/img/logs/0xb60-0.jpeg" alt=""></p>
+<p>后来点点也不出来，只好我们钻进去抓她。我也是第一次意识到人可以从那么小的缝钻进去，只不过我身上的衣服遭殃了，全是泥巴。</p>
+<h2>爱是我们必经的痛苦</h2>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/1644823778"></iframe>
+
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5F]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5F</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5F</guid>
+            <pubDate>Sun, 19 Oct 2025 13:22:00 GMT</pubDate>
+            <description><![CDATA[小猫小猫快回家]]></description>
+            <content:encoded><![CDATA[<p>我的点点于周四走丢，希望能快些回来～</p>
+<h2>历险记</h2>
+<p>点点走丢了，具体的发生经过是这样的：
+买了一个比较大件的快递，无法放入快递柜中，于是快递员给我打电话。由于我当时正在上课，打了两遍都没有接，所以直接去我家门口了。当时点点正在家门口玩，她胆子很小，见人就跑。何况我猜当时快递员也是有点脾气，吼了一声「可有人在家」，猫咪受惊就跑到不知道哪里去了。</p>
+<h3>寻找</h3>
+<p>每天都会试着去找，但都无果，可以说是自从走丢后杳无音讯。甚至用上了玄学与宗教。不过好消息是今天有了新的进展：</p>
+<p>在尝试了一系列诸如算卦等行动后，得出结论她可能被其他家收养了，故制作了若干张寻猫启事。贴完还不过五分钟就有人来电话，说明小区里有个专门喂流浪猫的老奶奶说今天上午刚见到过她，真是不幸中的万幸！</p>
+<h3>奶奶是一个很温柔的人</h3>
+<p>在电话中了解到，最后一次见到那只白猫就在我隔壁的一栋楼的 ground floor <del>(这种设计国内还挺少见的)</del>，遂急忙赶过去查看。路上，电话中提到的那个老奶奶认出了我，说看我走路急急忙忙的应该是来找猫猫的。</p>
+<p>她说如果下次投喂再见到那只猫的话就会给我回电话，并且表示让我每天 11:00 和 19:00 分别来这栋楼底下检查一下。我在对话中多次表示对她的感谢，她都很干脆的说「不用客气」这样的话语。她提到自己以前也收养流浪猫，后来也跑丢了，是一年前的事。在那之后她就一直在小区里面给流浪猫提供食物，令人感动。</p>
+<h3>是什么令我动容</h3>
+<p>在电话打来并且知道来意后，我觉得自己要流泪了。在过去的一段时间里我从来没有获得一点关于点点的消息，但是我今天终于得到了。回想以往，自己只有在情绪崩溃时歇斯底里的发疯会落泪，正常 emo 时很少有这种情况。有流泪的感觉更多是在感动、激动这样的情绪之下，包括我之前提到的<a href="./0xB59">美国南北战争</a>故事中，会比自己情绪低落时更加动容。</p>
+<h2>佛教</h2>
+<p>上文提到自己甚至束手无策的尝试去使用宗教的力量，我以此为契机试着去了解佛教。因为我不止一次从别人口中听到佛教的好。鉴于目前连入门都算不上，就先不写一些具体的细节了。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5E]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5E</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5E</guid>
+            <pubDate>Sat, 11 Oct 2025 01:58:00 GMT</pubDate>
+            <description><![CDATA[科技新闻大乱斗]]></description>
+            <content:encoded><![CDATA[<p>调休罪该万死！</p>
+<h2>Sora 2 的新商业模式</h2>
+<p>文章链接：<a href="https://web.okjike.com/u/FCEA29D3-5BB5-4174-B7A9-1DEE77CEDC46/post/68e09b4b342fa4ca3a823f51">orange.ai@即刻</a></p>
+<p>Sora于2025年早些时候公开发布后，迅速流行，用户生成涉及热门IP的视频，导致版权投诉激增。日本版权方（尤其是任天堂等巨头）是主要投诉来源之一，他们通过DMCA通知要求OpenAI移除侵权内容。报道显示，Sora上线一周内收到数百起投诉，主要来自亚洲和好莱坞。</p>
+<p>但现在Altman很显然已经找到了新的出路，即向版权所有方分成。这是一个绝妙的想法。</p>
+<h2>你知道你是AI生成的吗？</h2>
+<p>没错，这条还是关于 Sora 2 ，讨论其生成的一类视频。
+大致内容就是一个记者采访群众，问「你知道你是AI生成的吗？」，受访者的回答千奇百怪，如「我当然知道」「我怎么可能是呢？不然我那么努力工作有什么意义」。可能是与现实的那条边界快被打破，视频看得我毛骨悚然。</p>
+<p>毕竟展开来讲，当前原子化的社会里谁又不想那个生成出来的AI呢？<del>而现在连AI都不如，人家至少还会飞</del></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115308429907957&bvid=BV1nyH3zBEzC&cid=32808111821&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"></iframe>
+
+<p>有《楚门的世界》既视感。</p>
+<h2>有开源项目要救我于Arc的水火之中了吗！</h2>
+<p><a href="https://github.com/nook-browser/Nook">Nook</a> 是一款仿<a href="https://arc.net/">Arc</a>的浏览器，继承了它大部分的UX与UI，很令我惊喜。直到现在我一直使用的是Arc浏览器，一款被 <a href="https://www.thebrowser.company/">The Browser Company</a>遗弃的很不错的浏览器<a href="%E5%8F%82%E8%80%83%EF%BC%9Ahttps://youtu.be/NXsId9C4zpg?si=72ctR8qzGqSX2XMA">^1</a>。当然现在也有类似的浏览器如<a href="https://zen-browser.app/">Zen</a>是复刻Arc的开源项目，但奈何实在用不来Firefox内核，且还相当不完善😂。</p>
+<p>而Nook令我惊喜的是，它是由Swift编写的，所以动画效果较Zed就更加流畅。他目前的体积只有8.19MB，得益于直接调用了macOS的系统内容。<del>（也许理解为Wrapper而非浏览器更准确一些？）</del></p>
+<p>现在还没有切换至 Nook ，想着还是等再发展一下？但是发现这个项目令我开心。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[占星的奇怪用法]]></title>
+            <link>https://quarkpixel.github.io/p/251009-discussing-constellations-is-kind-of-positioning</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/251009-discussing-constellations-is-kind-of-positioning</guid>
+            <pubDate>Thu, 09 Oct 2025 03:19:00 GMT</pubDate>
+            <description><![CDATA[初次接触星座后的一些感想]]></description>
+            <content:encoded><![CDATA[<p><strong>本文不讨论严谨的星座、算命等内容，只以此为引子。</strong></p>
+<p>我不止一次听到身边的朋友说算星座准等类似的论调，以前从来没有尝试过的我也多少对此感谢兴趣。在与暧昧对象聊天的过程中，我试着去用一些很笼统的信息来算两个人的关系，再将计算的结果与实际比较。这个过程中<strong>我发现了一些很有意思的现象</strong>，故想在此讨论一下。</p>
+<h2>占星真的很准吗？</h2>
+<p>可能是我给出的信息太过笼统，类似于「xx座和xx座」这样基本上等于没有的信息，所以其实并没有多少是真的说中的。事实上，我觉得如果这样也能说中就太可怕了！想象一下，把人按照出生月份分成12等分，世界上所有在这一月出生的人都有同样的性格，细思极恐。</p>
+<h2>预言最有意思的就是标签化的陈述</h2>
+<p>事实上，我本身就是抱着娱乐的态度进行极不严谨地浏览。结果会告诉你几个关键词：这个人直爽、那个人理性。</p>
+<p>很笼统，但已经足够了。在后续与她的交流中，我时常会把这几个关键词带入，去以此判断对面的这个人怎么样、她实际上会是什么性格。</p>
+<p>我是一个在文学方面概括能力很差的人。在听别人对某人的评价时，我往往惊讶于别人的用词，甚至有时候会对一个很常见词表现出「原来这个词描述的是这么一种状态」。所以给我的几个看似随机的关键词其实<strong>反而能提示我要从什么角度去判断这个人</strong>。</p>
+<p>也许只是我的个人差异所致吧～</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5D]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5D</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5D</guid>
+            <pubDate>Fri, 03 Oct 2025 10:14:00 GMT</pubDate>
+            <description><![CDATA[全是音乐分享]]></description>
+            <content:encoded><![CDATA[<p>我现在会习惯把值得写的内容先记下来，每周末写周刊的时候参考着写。</p>
+<p>然后发现这周全是音乐相关的 😂</p>
+<h2>This Temporary Ensemble Vol. 2 - EP</h2>
+<p>这是来自 <a href="https://9m88.co/">9m88</a> 的一张很特殊的 EP。</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/this-temporary-ensemble-vol-2-ep/1836073610"></iframe>
+
+<p>这张 EP 中，88 邀请了不同的创作者，和他们一起重新演绎自己的旧作。这绝对不是炒冷饭，甚至从某种角度上来说，我更喜欢这次的翻版。它少了流行元素，取而代之的是爵士的感觉，很有 Artist 的味道。如果想了解更多信息，我推荐你可以收听来自 <em>Vibration 歪波音室</em> 的<a href="https://xyzfm.link/s/FVePAc">《9月新歌推荐》，标记时点【24:21】</a>。</p>
+<p><del>我超级喜欢 9m88 !!!!</del></p>
+<h2>Citypop 令人感动</h2>
+<p>起因其实是最近比较火的一首 <em>真夜中のドア〜Stay with Me</em>：</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%AE%E3%83%89%E3%82%A2-stay-with-me/1457964469?i=1457964473"></iframe>
+
+<p>音乐的高潮部分太有感染力，也就以此为契机听了更多的 Citypop。我爱<strong>这种充满都市浪漫气息的音乐风格</strong>。</p>
+<h2>Something Stupid</h2>
+<p>在听<a href="https://zh.wikipedia.org/wiki/%E7%AB%B9%E5%85%A7%E7%91%AA%E8%8E%89%E4%BA%9E">竹内玛莉亚</a>的过程中，我听到了一首熟悉的 <em>Something Stupid</em> ：</p>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/something-stupid/1541673202?i=1541673210"></iframe>
+
+<p>震惊的原因是，狭隘的我一直以为这首歌是出自于 <a href="https://breakingbad.fandom.com/wiki/Something_Stupid"><em>Better Call Saul</em></a>，当时就很喜欢这首歌，平时也会经常听。现在居然在这又听到了。经过搜索我发现这首歌有很多翻唱，最早由 <strong>Carson and Gaile</strong> 在 1966 年录制并发行。</p>
+<hr>
+<p>可能最近的心态有些变化罢，听的歌很多，自己好像更感性了。我认为这是件好事儿？不然总是麻木的，活着有什么意思～。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Tauri 太丝滑了]]></title>
+            <link>https://quarkpixel.github.io/p/251003-tauri-is-smooth</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/251003-tauri-is-smooth</guid>
+            <pubDate>Fri, 03 Oct 2025 05:24:40 GMT</pubDate>
+            <description><![CDATA[记一次折腾的过程]]></description>
+            <content:encoded><![CDATA[<p>昨天尝试使用 <a href="https://tauri.app/">Tauri</a> 将网页构建成本地应用，使用体验很丝滑，很爽。</p>
+<h2>“Rust 的定位其实是脚本语言”</h2>
+<p>标题的这句调侃出自于 <a href="https://x.com/tsoding/status/1969190491246731449">Tsoding 在推特上的回复</a>：</p>
+<blockquote>
+<p>I always knew that the niche of Rust is a Scripting Language.</p>
+</blockquote>
+<p>这句话其实是他在回应一条新闻[^1]时说的。</p>
+<p>之所以会有这种调侃，是因为 Rust 写的各种命令行工具和小程序体验非常好，用起来甚至比传统的「脚本语言」还要顺手，于是就有了“Rust 其实是脚本语言”的说法。</p>
+<p>为什么文章一开头就提到这个呢？当然是因为 Tauri 也是用 Rust 写的啦。构建一个本地应用就像「把大象放到冰箱里」那么简单：</p>
+<ul>
+<li>下载 Tauri</li>
+<li>把网页放到项目文件中</li>
+<li>编译</li>
+</ul>
+<h2>软件开发是个草台班子</h2>
+<p>事情的起因是<a href="https://quarkpixel.github.io/logs/0xB5B#%E5%85%BC%E8%81%8C">公司</a>发了个软件，内容就是各种的搭建图纸步骤，还是 3D 的，用作给学生演示就很方便。但由于软件在演示时会有其他公司的 Logo 水印，是不允许在上课时直接拿来给学生演示的。解决方案要么自己跟着步骤翻拍（对，就是每做一步用手机拍一张照），要么就直接背下来上课带着学生现场做。两种做法我感觉都太蛋疼了，于是想从软件本身入手。</p>
+<h3>所谓的「3D 演示」只是个 <code>iframe</code></h3>
+<p>回想当时，我之所以这么直觉的下论断[^2]可能是因为：除了这个演示界面，还有一个「播放视频」的界面，里面是直接放的 bilibili 的嵌入视频。但问题是，知道是个网页了，但因为软件已经打包好，根本没有什么调试的可行性，就打算从软件包下手。</p>
+<h3>软件本身就是个网页啊！</h3>
+<p>打开文件所在的路径，看到了熟悉的文件：</p>
+<pre><code class="language-bash">➜ . ls
+chrome_100_percent.pak  libEGL.dll              resources
+chrome_200_percent.pak  libGLESv2.dll           resources.pak
+d3dcompiler_47.dll      LICENSE                 snapshot_blob.bin
+ffmpeg.dll              LICENSES.chromium.html  swiftshader
+icudtl.dat              locales                 v8_context_snapshot.bin
+KuBit.exe               natives_blob.bin        version
+</code></pre>
+<p><em>（没错，软件只有 Windows 版）</em></p>
+<p>通过瞪眼法可以很轻松地看出整个软件本身就是个浏览器套壳的软件，怪不得大小有 <code>140 MB</code> 。</p>
+<pre><code class="language-bash">➜ . cd resources/app
+➜ ./resources/app ls
+app.ico                 main.js                 src
+assets                  node_modules            style-desktop.dfd76.css
+cocos2d-js-min.f7db5.js pack.bat                style-mobile.6e9cd.css
+favicon.8de18.ico       package-lock.json       unpack.json
+fileconfig.json         package.json            version.json
+index.html              run.bat
+main.6f18c.js           splash.85cfd.png
+</code></pre>
+<p><em>这里还可以看出软件本体是使用 <a href="https://www.cocos.com/en/creator">Cocos</a> 开发的</em></p>
+<h3>Electron 真的只是「纯」套壳</h3>
+<p>发现了个 <code>index.html</code>，试着用 <a href="https://www.npmjs.com/package/http-server"><code>http-server</code></a> 打开，发现居然已经能完美运行了。这可能得益于 Cocos 本体和 Electron 模块相互独立，软件的开发也没有做更深层的整合优化。</p>
+<p>也就是说，我当时专门为这个软件下载了个 Windows 虚拟机其实是完全没有必要的！我完全可以通过上述的这些操作在自己的 macOS 上运行这个所谓的软件。</p>
+<h3>总算可以拿到 <code>iframe</code> 的链接了</h3>
+<p>在本地部署，浏览器中打开后应该就可以调试网页了。事实上也确实如此，轻松的获得了对应的「3D 演示」的链接地址。</p>
+<h2>去除水印</h2>
+<p>调试网页，发现只要设置 <code>body {background-image: none !important;}</code> 水印就可以轻松消失。</p>
+<p>实现这一点其实也很轻松，例如使用各种「自定义 CSS」插件即可。我使用 <a href="https://arc.net/">Arc</a> 浏览器有一个 <a href="https://resources.arc.net/hc/en-us/articles/19212718608151-Boosts-Customize-Any-Website">Boosts</a> 功能，相当于浏览器内置了自定义功能（体验还蛮不错的），因此修改起来也非常方便。</p>
+<p><img src="https://resources.arc.net/hc/article_attachments/25703394042263" alt="create-a-Boost-in-Arc-for-macOS">
+<em>来源：Arc</em></p>
+<p>这下可以在上课时直接用演示软件了☺️ 也就是说，在每次上课前，把对应的网址存下来，用时再打开就可以了。</p>
+<h2>我就是爱折腾</h2>
+<p>这就够了么？还是太麻烦了！</p>
+<p>我每次需要一个网址都需要先进到对应目录、再启动 <code>http-server</code>、打开对应的网站、登陆、进入对应模型、打开开发者面板、找到 <code>iframe</code> 元素、复制对应的 <code>src</code> 属性才可以。</p>
+<h3>Tauri 助我！</h3>
+<p>终于回收标题了。</p>
+<p>我创建了一个 Tauri 项目，并且将 <code>./resources/app</code> 目录下的所有文件先一股脑塞进去，想着再根据报错进行修改。</p>
+<center style="font-size: x-large; font-weight: bold">但是尽然直接跑起来了！！</center>
+
+<p>那一刻太震惊了，我没想过会如此顺利。现在解决了每次启动的一系列繁琐步骤，像一个正常 app 启动它即可。但是获取 <code>src</code> 还是太麻烦了。</p>
+<h3>更方便的获取 <code>iframe</code> 链接</h3>
+<p>我打算对源代码动手。由于都是编译过的代码，所以根本没有可读性。我直接在全文中搜索 <code>iframe</code>，好在只有一处有相关代码。</p>
+<p>代码大致如下：</p>
+<pre><code class="language-javascript">loadURL: function (t) {
+	var e = this._iframe;
+	if (e) {
+		e.src = t;
+		……
+	}
+}
+</code></pre>
+<p>其实很明显了，这里的 <code>t</code> 就是我们所想要的链接。为了把网址展示出来，尝试了几种方案：</p>
+<ul>
+<li><code>console.log(t)</code> ：还是要打开控制台，不方便。而且 Tauri 不加参数编译后是不会附带控制台的</li>
+<li><code>alert(t)</code> ：Tauri 的程序里 <code>alert</code> 是直接不起作用的</li>
+<li>官方屏蔽了 <code>alert</code>，但是提供了一个系统级的插件 <code>notification</code> 。但由于我目前的代码是编译后的纯 js，相当于强兼源代码了，无法使用外部的功能。</li>
+</ul>
+<p>最后我使用的方案是 <code>navigator.clipboard.writeText(t)</code> 。现在看来反而最符合直觉。每当创建一个 <code>iframe</code> ，即打开一个「3D 演示」/「视频」，就会自动将对应的链接拷贝至剪贴板。这时我只用在浏览器中粘贴即可。</p>
+<h3>收尾</h3>
+<p>因此，现在的流程被简化为了：</p>
+<ul>
+<li>打开自己编译的软件</li>
+<li>打开对应模型</li>
+<li>在需要的地方粘贴
+效率被极大提高了。</li>
+</ul>
+<h4>编译</h4>
+<p>值得注意的是，自己的这次再编译得到了很多好的副作用：</p>
+<ol>
+<li><strong>软件体积的缩小</strong>
+ 现在新版的软件由于 Tauri 的特性，只有 <code>13 MB</code> ，舒服的很</li>
+<li><strong>不用再开虚拟机来使用软件了</strong>
+ 这次直接将软件打包成了 macOS 的版本，再也不用开一个虚拟机只为了运行一个网页套壳应用了🤓 此外，我还交叉编译了一份 Windows 版本，备用。</li>
+</ol>
+<h2>尾记</h2>
+<p>这次整体的开发都非常丝滑，没有遇到什么大坑。是一次很不错的体验。不得不感慨「Web 是一项伟大的技术」以及「『计算机』真是一门在各行业都能吃香的技能」。</p>
+<p>[^1]: 原文可以上推特进行查看，主要是想说 git v3.0 将完全用 Rust 替换 Perl。但我对这则新闻的真实性存疑，因为我没有查到很多相关信息。</p>
+<p>[^2]: 自己这方面的直觉一向很准，准得出奇。可能我天生就是学计算机的料吧 🤓</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5C]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5C</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5C</guid>
+            <pubDate>Sat, 27 Sep 2025 06:15:00 GMT</pubDate>
+            <description><![CDATA[又是忙碌的一周～]]></description>
+            <content:encoded><![CDATA[<p><a href="/logs/0xB5A">Malloc Lab 终于完成了</a> 🎉</p>
+<h2>人一忙起来就会忙起来</h2>
+<p>标题很废话，但好像就是这样，<del>我也太贱了</del>。这一周来都比较忙碌，发生的事情很多。有意思的是，在我平时休息时间大幅减少的情况下，反而更容易将余下的休息时间用来学习？</p>
+<p>正因为此 Malloc Lab 才得以完成 😂 还有最后三章整本 CS:APP 就啃完了，希望可以一鼓作气 ☝️🤓</p>
+<h2>OK Go 发布新专辑</h2>
+<p>乐队 OK Go 发布了新专辑 And the Adjacent Possible，其中第一首歌的 MV 很令人印象深刻：</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fwzbIUffcR4?si=eVskIeIPkwuTYZQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+
+<p>看到的第一眼还以为是什么 MV 拍摄幕后花絮，后来发现好像就是正片 。OK Go 的松弛感以及天马行空的想象力，也许就是我喜欢的原因吧。「这个乐队的 MV 很有意思」何尝不是一种有力的营销 👀</p>
+<h2>本站的西文字体终于不像一坨狗屎了</h2>
+<p><del>标题依旧长难句。</del></p>
+<p>更换了本站的西文字体，使用的是 <a href="https://fonts.google.com/specimen/Ysabeau">Ysabeau</a>，一款气质和 <a href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷</a><a href="%E6%9C%AC%E7%AB%99%E7%9B%AE%E5%89%8D%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93">^1</a> 气质很相近的字体。事实上，官方就是这么推荐的：</p>
+<blockquote>
+<p>对于搭配的西文字体，个人推荐 Ysabeau 系列字体。另有 Ysabeau Office 与霞鹜文楷轻便版的合并字体 LXGW Bright，采用 字体合并补全工具 将两款字体合并而成。亦有中英文合并的等宽字体 LXGW Bright Code，采用 Monaspace Argon 经缩窄调整后与霞鹜文楷轻便版合并而成。</p>
+</blockquote>
+<p>一开始本站使用的就是由官方提供的合并版本，但由于合并的版本没有<a href="https://github.com/w3c/clreq/issues/221#issuecomment-508055215">标点挤压</a>，故草率的直接使用了没有合并的官方版本，沿用至今。所以之前用的西文字体一直是霞鹜文楷自己设计的西文字体，看起来很难受。现在修改为直接在网站引用 Ysabeau ，通过 <code>fallback</code> 特性让整体看起来和谐且保留标点挤压等特性。</p>
+<h2>返回现在更智能了</h2>
+<p>如果你留意的话，会发现在文章页面滚动一定量后，页面的 Header 部分会展示标题，且鼠标放上去后会显示一个小小的返回按钮（小箭头出现的特效我特别喜欢，甚至还有一点点形变🤓）。</p>
+<p>这次我修改了一下返回的逻辑，且其细节处理我认为非常值得和你唠唠：</p>
+<p>之前返回按钮用的是浏览器原生的 <code>history.back()</code>。但它有个问题：如果从 <code>/foo</code> 跳到 <code>/bar</code>，再切到 <code>/bar#anchor</code>，点击返回时只会停在 <code>/bar</code>，而不是回到预期的 <code>/foo</code>。</p>
+<p>为了解决这个，我实现了一个「严格意义上的返回」功能：只在真正跨页面跳转时才记录历史，锚点变化不计入其中。这样 <code>/foo</code> → <code>/bar</code> → <code>/bar#anchor</code> 时，返回就能正确回到 <code>/foo</code>。</p>
+<p>比较有意思的是考虑到了浏览器自带的返回按钮（比如手势后退）。为了保持一致性，我通过监听返回事件，自动同步维护的历史记录。这样无论用什么方式返回，体验都是一致的。</p>
+<pre><code class="language-javascript">window.addEventListener(&#39;popstate&#39;, this.handlePopState.bind(this));
+</code></pre>
+<p>另外为了避免页面刷新导致状态丢失，返回时使用的是 SPA 路由跳转而不是直接改变网址。用户感知不到这个差别，但技术上保证了流畅性。</p>
+<h2>开发了一款 Zed Theme</h2>
+<p><a href="https://github.com/QuarkPixel/Vynora">Vynora</a> 这款主题是我自己在 <a href="https://monokai.pro/">Monokai</a> 的基础上改的，用了有一段时间了。前两天把他上架到了 <a href="https://zed.dev/extensions/vynora">Zed Extensions</a>。</p>
+<p>修改这款主题的契机有以下几点[^2]：</p>
+<ul>
+<li>原版的红色关键字可读性太差了，当时测量过<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E9%A1%B5%E9%A2%9C%E8%89%B2#%E9%A2%9C%E8%89%B2%E5%AF%B9%E6%AF%94%E5%BA%A6">对比度</a>只有 <code>3.84:1</code> [^3]</li>
+<li>其他颜色（如蓝色）也过于轻浮，很像老师珍藏了十年的 PPT 里用的文字颜色</li>
+<li>分不清主次，代码层级不清晰</li>
+</ul>
+<p><img src="/img/logs/0xb5c-0.png" alt="原版截图">
+<em>原版 Monokai-og 截图</em></p>
+<p>因此自己的修改版本 Vynora 也就应运而生了。相较于原版，颜色更加浑厚复古，辨识度也更好。要说的再玄乎一点的话，感觉自己的版本更有 Jazzy 的味道 🤓</p>
+<p><img src="/img/logs/0xb5c-1.png" alt="Vynora 截图">
+<em>Vynora 截图</em></p>
+<p>欢迎下载体验～</p>
+<p>[^2]: 鉴于Monokai版本众多且不一，这里只针对Zed上的 <a href="https://zed-themes.com/themes/monokai-og?name=Monokai-og">Monokai-og</a>。</p>
+<p>[^3]: 正常来说常规的文本对比度应不小于 <code>4.5:1</code></p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5B]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5B</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5B</guid>
+            <pubDate>Sat, 20 Sep 2025 12:34:00 GMT</pubDate>
+            <description><![CDATA[19 岁啦 🎉]]></description>
+            <content:encoded><![CDATA[<p>最近发生了特别多事，感觉还挺奇怪的，说不上来的感觉。但是觉得一切都好起来了（？）</p>
+<h2>兼职</h2>
+<p>在老师的推荐下，我进入了一家教培机构做兼职，目前看来薪资还不错？主要的工作内容是带小孩子做一些乐高积木等科技类的益智项目。我所在的公司会承接类似学校的外包项目，负责为孩子们开设社团课程。现在我还在培训阶段，会以助教的身份跟着听课和协助上课，对象大多是二年级左右的孩子。</p>
+<h3>治愈</h3>
+<p>论最特殊的感受，还是治愈。尽管我经常吐槽自己讨厌小孩子，但真的回到「小学课堂」这个环境中，我觉得他们还是可爱的。<del>（也许是因为本校的老师比较凶吧，至少我们上课的时候训过不止一个孩子）</del></p>
+<p>我一直对小学的印象不太好，原因是我经常被霸凌。这点是我后来回想才意识到的。我在小学就是实打实的「怪小孩」，成绩又还垫底。在那样的环境下，连支笔都没人愿意借给我。</p>
+<p>但是再回到小学课堂上，身份成了「老师」，说不上来的感觉。</p>
+<h2>推荐库：Libra.js</h2>
+<p>来自 Eltrac 的库 <a href="https://github.com/BigCoke233/libra">Libra.js</a> 是一款极致轻量的灯箱插件，很极简。现已在本博客实装。</p>
+<p><img src="https://images.unsplash.com/photo-1755420482578-53e67d19e5ea" alt="">
+<em>用于演示灯箱插件，图片来自本人 <a href="https://unsplash.com/@quarkpixel">Unsplash</a>。</em></p>
+<p>我在关于 overlay 的设置上花了些小巧思，做出了很有质感的效果。我貌似很避讳单独使用 <code>backdrop-filter: blur()</code> 来实现效果，要么是像这里添加小点点、要么<a href="/p/250525-tech-stack-in-hsuans-space#header-%E7%9A%84%E8%83%8C%E6%99%AF%E5%99%AA%E5%A3%B0%E5%9B%BE">像 Header 部分那样添加噪点</a>来让模糊「没那么干净」。</p>
+<h2>Apple OS 26 series is sucked</h2>
+<p>Flag Time：我是绝对不会升级 26 系列的系统的，就算升我也只会等 27 🤓</p>
+<p><img src="https://pbs.twimg.com/media/G1J04s2XIAAnq-t?format=png" alt="">
+<em>图片来源：<a href="https://x.com/Zeko369/status/1968764524028186967">twitter@Zeko368</a></em></p>
+<h2>生日</h2>
+<p>昨天（9月19日）是我的 19 岁生日。
+<img src="/img/logs/0xb5b-0.jpg" alt="">
+于是我们当晚就真的出去了。</p>
+<p>不得不感叹，身边有那么些个靠谱的朋友，真的很幸福。我以前要么是和家长一起过的，要么大一些后就不过生日。所以昨天的生日真的很令我难忘。</p>
+<p>我们去了海底捞，吃得很开心。我们刚进去的时候，店员正在为别人庆祝生日，发生了以下对话：</p>
+<p>「蛮也给你搞一个」</p>
+<p>「不要不要不要，我谢谢你」</p>
+<p>「你就等着吧」</p>
+<p><del>（本来是全程南京话的，但是写出来就没有那种感觉，反正自己脑补那种语调情绪吧 😂）</del></p>
+<p>我本来以为就是开玩笑的，直到放音乐的那个推车推到我们桌前。在这之前我没起一点疑心，即使她之前还去找服务员沟通了一会（可能因为当时太累了，大脑转不动了。）</p>
+<p>清晰地记得，隔壁桌的兄弟也在为我唱生日歌，祝我生日快乐。</p>
+<p><img src="/img/logs/0xb5b-1.jpg" alt=""></p>
+<p>很难以言说的情绪。曾经 18 岁生日，因为还在与当时的女友的纠缠中，一点点仪式感都没有。我还记得那天我连一条朋友圈都没发，当天只收到了几个人的祝福。放学后回家就躺在床上，然后想了想「喔，我现在成年了。」。虽然当时有些许失落，但其实都还好，直到我看到了别人的 18 岁生日发的朋友圈，我觉得后悔。</p>
+<p>在今年年初刚分手的时候，我甚至连一个可以谈心的朋友都没有。我才意识到我为了那段 bullshit 的感情放弃了太多，她消耗了我太多。我当时为自己立的 Flag 就是，19 岁的生日一定要好好过。但是事实上，直到我昨天约朋友们出来前，我都打算自己随便过过算了。</p>
+<p><strong>真心感谢我的朋友们。</strong></p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[网页排版碎碎念]]></title>
+            <link>https://quarkpixel.github.io/p/250916-typography-thoughts</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250916-typography-thoughts</guid>
+            <pubDate>Tue, 16 Sep 2025 02:34:40 GMT</pubDate>
+            <description><![CDATA[记录这个博客网站在排版技术上的一些探索和实践]]></description>
+            <content:encoded><![CDATA[<p>作为一个以文字内容为主的博客网站，排版质量直接影响着读者的阅读体验。在<a href="./250701-remake-typography">重做网页布局排版</a>转向 Tailwind Typography 之后，我对网站的排版系统进行了进一步的优化，主要集中在字体加载和智能断行两个方面。这篇文章就来聊聊这些排版技术的具体实现。</p>
+<h2>字体分包</h2>
+<h3>中文字体的加载难题</h3>
+<p>中文字体文件往往体积庞大，动辄几十 MB。像霞鹜文楷这样的优质字体，单个字重就有 <a href="https://github.com/lxgw/LxgwWenKai/releases/">20+ MB</a>，对网页首屏加载是沉重负担。</p>
+<h3>字体分包解君愁</h3>
+<p>和好友 <a href="https://studiountagged.top/">Steven Liu</a> 交流时，我了解到<a href="https://chinese-font.netlify.app">中文网字计划</a>提供的<a href="https://chinese-font.netlify.app/zh-cn/online-split/">字体分包器</a>。其核心思路是：将完整的字体文件拆分成若干 <code>woff2</code> 分包，浏览器只在渲染页面所需文字时才加载对应的片段，而不必下载整个字体。这样大幅减少了首次加载体积，而大多数不常用的生僻字则不会被请求。</p>
+<h3>渐进式加载的体验</h3>
+<p>使用字体分包后，网站呈现出独特的「字体逐步加载」效果。有《黑客帝国》的即视感。</p>
+<p><img src="/img/250916-0.webp" alt="字体渐进式加载效果演示"></p>
+<h2>智能断行</h2>
+<h3>浏览器自带的断行</h3>
+<p>CSS 中有一个非常有用的属性 <code>word-break: auto-phrase</code>，它能够按照语言的语义单位进行断行，避免在奇怪的位置换行。</p>
+<p><img src="https://developer.chrome.com/blog/css-i18n-features/image/word-break-auto-phrase.png" alt="word-break: auto-phrase 会在自然词组边界处换行"></p>
+<p>然而现实很骨感，这个属性目前<a href="https://developer.chrome.com/blog/css-i18n-features?hl=zh-cn#japanese_phrase_line_breaking_word-break_auto-phrase">只支持日文</a>，对中文的支持还在开发中。对于一个中文博客网站来说，这显然无法满足需求。</p>
+<h3>BudouX 真是太香了</h3>
+<p>为了解决这个问题，我引入了 Google 开源的 <a href="https://github.com/google/budoux">BudouX</a> 工具。BudouX 是 Budou 的后继产品，是一个机器学习驱动的断行组织工具。</p>
+<h4>工作原理</h4>
+<p>BudouX 的核心思想是将文本按语义切分为数组，例如：</p>
+<pre><code class="language-javascript">console.log(parse(&#39;这是段需要优化断行的文本&#39;));
+// [&#39;这&#39;, &#39;是&#39;, &#39;段&#39;, &#39;需要&#39;, &#39;优化&#39;, &#39;断行&#39;, &#39;的&#39;, &#39;文本&#39;]
+</code></pre>
+<p>配合特定的 CSS 属性，这样的文本可以优先在数组元素之间进行断行，而不是在字符中间强制换行。以下是用Svelte实现的自定义展示组件：</p>
+<pre><code class="language-svelte">&lt;script&gt;
+	const { text, class: className = &#39;&#39;, ...rest } = $props();
+&lt;/script&gt;
+
+{#each text as word, i (i)}
+	&lt;span style=&quot;word-break: keep-all; overflow-wrap: anywhere;&quot; class={className} {...rest}&gt;
+		{word}
+	&lt;/span&gt;
+{/each}
+</code></pre>
+<h4>实现效果</h4>
+<p>你可以尝试缩放本网页来观察标题部分的换行效果。相比于浏览器的默认断行逻辑，BudouX 优化后的断行更符合中文的阅读习惯，避免了语义单位被不合理拆分的问题。</p>
+<h2>其他排版优化</h2>
+<p>在 <a href="https://github.com/QuarkPixel/QuarkPixel.github.io/blob/master/src/lib/styles/article.scss"><code>article.scss</code></a> 中，我还应用了一些现代 CSS 排版特性：</p>
+<h3>文本对齐与标点悬挂</h3>
+<pre><code class="language-scss">.prose {
+	text-align: justify; // 两端对齐
+	quotes: &#39;「&#39; &#39;」&#39; &#39;『&#39; &#39;』&#39;; // 中文引号样式
+	hanging-punctuation: first last; // 标点悬挂
+}
+</code></pre>
+<p><code>hanging-punctuation</code> 属性让标点符号可以&quot;悬挂&quot;在文本行的边界之外，这是中文排版中的传统做法，能让文本边界看起来更加整齐。但可惜的是目前大部分浏览器都还不支持 :(</p>
+<h3>链接样式优化</h3>
+<pre><code class="language-scss">:where(a):not(:where([class~=&#39;not-prose&#39;], [class~=&#39;not-prose&#39;] *)) {
+	text-decoration: none;
+	color: var(--tw-prose-body);
+	@include wave.auto-theme();
+}
+</code></pre>
+<p>链接使用了自定义的波浪线装饰效果，既保持了视觉识别度，又不会过于突兀地破坏阅读节奏。具体灵感来源等信息可查看周刊 <a href="/logs/0xB59#%E7%BD%91%E7%AB%99%E7%9A%84%E5%85%B6%E4%BB%96%E5%8F%98%E5%8A%A8">0xB59</a>。</p>
+<h2>碎碎念</h2>
+<p>我是一个很爱扣细节的人，舒适的排版令我愉快。曾经有人说我适合去做文字排版相关的工作，我自己也是这么想的。在此特感谢 Eric Liu 与 钱争予 老师，他们的播客<a href="https://www.thetype.com/typechat/">《字谈字畅》</a>在排版方面的科普给予了我很多帮助，如果没有这样播客形式的科普我可能从来都不会对字体排印有这么深刻的认识😂。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Web'</category>
+            <category>'Typography'</category>
+            <category>'Technique']</category>
+        </item>
+        <item>
+            <title><![CDATA[颤动]]></title>
+            <link>https://quarkpixel.github.io/p/250915-shake</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250915-shake</guid>
+            <pubDate>Mon, 15 Sep 2025 04:02:45 GMT</pubDate>
+            <description><![CDATA[短篇文，想试着记录下自己的感受]]></description>
+            <content:encoded><![CDATA[<p>刷到了<a href="https://v.douyin.com/onmLtrYkhNA/">以前和前女友去过的一家小书店</a>。</p>
+<p>那家书店很小，很美，很低调。以至于我已近乎将其忘却。</p>
+<p>但我刷到它时，我的心<strong>颤动</strong>。</p>
+<p>我无法再用更精准的词去形容自己的状态，这个感受太微妙：美好的回忆、痛苦的回忆以及当晚我和她在那散步的当下。<strong>像突然打开的淋浴一样冲刷着身体。</strong></p>
+<p>当时的我在想些什么呢？我已经有些记不清了。</p>
+<p><img src="/img/250915-1.jpeg" alt=""></p>
+<p><img src="/img/250915-2.jpeg" alt=""></p>
+<p><img src="/img/250915-0.jpeg" alt="">
+<em>图片下方的一楼即为所述书店，当时的随手一拍。</em></p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB5A]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB5A</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB5A</guid>
+            <pubDate>Fri, 12 Sep 2025 14:00:00 GMT</pubDate>
+            <description><![CDATA[继上次 Log 糊了个副标题后，我仍不知道在这该写什么。]]></description>
+            <content:encoded><![CDATA[<p>最近在看 CSAPP 中关于 Dynamic Memory Allocation 的内容，并且准备开始写 Malloc Lab 。听起来好像挺充实的，但实际上不知从何时起我的学习效率变得极低，一直不见什么进展。可能总是和身边发生的各种事以及对该任务的低优先级有关吧。</p>
+<h2>论创作预期</h2>
+<p>说来神奇，在我主动地<a href="/logs/0xB59#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%86%99-logs">降低了自己的创作预期</a>后，我反而更能将生活中的一些见闻转化成所写，从而达成了更高的创作频率。我认为这与自己不再在意一些所谓的「个人包袱」后更加轻松有关：不用在意自己写的是什么，流水账也好发牢骚也好，都是写给自己看的。这样的想法帮助我很多。</p>
+<p>提到创作预期，我还想到了自己曾经听过的一集播客：<a href="https://www.xiaoyuzhoufm.com/episode/684435c36dbe9284e741eb6e">《这世上的偶然》：看得见，就是邂逅的开始吧</a> 。播客中同样讨论的是与「创作预期」相关的话题，但讨论的侧重点不一样：<strong>不要试着去规划好一切，因为你根本没法预料到创作的过程中会有什么新的灵感迸发。当你计划好一切时，反而会限制自己的创作力。</strong></p>
+<p>有趣的是，尽管关注点不一样、目的也不一样的前提下，其外化的表现形式却与我目前所践行的几乎一致。这让我联想到乔布斯刻意将房间弄得凌乱，从中获得灵感，将原本一点也不相关的事物联系在一起的选择。这貌似是一个更大的话题了，今天先点到为止～</p>
+<p><del>（反正我是忍受不了房间凌乱，会有强烈的失控感，令人厌烦 👎）</del></p>
+<h2>银翼杀手 2049</h2>
+<p>在晚饭时刷马克骐的《银翼杀手2049》拉片，感触很深以至于写了篇<a href="/p/250909-sex-between-k-joy-prostitute">相关笔记</a>。我打算找个时间重新再看一遍这部电影，貌似有挺多地方之前都没有看懂。</p>
+<h2>论崇拜</h2>
+<p>在完成了那篇拉片笔记后，分享给了与自己玩的很好的一个初中同学。他是个怪人，平时与他讨论深度问题往往令人难以接受， 甚至自讽「有恋词癖」和「歇斯底里」。分享完没过多久，没有关于那篇文章内容的讨论，而是一句「傻逼齐泽克」。他一向如此直率，也特有魅力。</p>
+<p>令我感兴趣的是我们后续的讨论转变为了「不要信任何其他人」，言外之意就是不要崇拜别人（我还挺惊讶的，因为在我写到这里之前，我一直以为「崇拜」这个词是他先提出，我再进行反驳的。刚才在翻看聊天记录时才发现是我从他的话里提炼出了崇拜这个意味并且下意识的进行了转化）。我明确的和他表示我从来没有崇拜过齐泽克，我只是就事论事的讨论这件事本身。我最多只会欣赏某个人，并且更加频繁地去阅读ta的作品，企图获得更多的知识。</p>
+<p>后来细想了一下，貌似我从来没有崇拜过任何人；恰恰相反，我厌恶「崇拜」。这个词带有很强烈的「抛开理性判断、盲目的去追求某个人」的意味。说的言重些，「崇拜」是奴性的思想。</p>
+<h2>分手以后还能做朋友吗</h2>
+<p>在和朋友的聊天中又提到了这个话题。尽管本人在爱情中受的伤极深，但这个问题的答案在我心中仍是乌托邦般的「是」。</p>
+<p>我得出如此答案源自于自己对于另外一种社交能力的向往，即<strong>情景分隔</strong>。</p>
+<blockquote>
+<p>所谓情境分隔，可以用一个常见的场景来说明：
+创业中，白天在工作时因不同看法而吵的面红耳赤，甚至一度动手，气氛剑拔弩张；但一到下班，又能迅速把矛盾放下，好兄弟一样「走，吃饭去」，转而成为无话不谈的好兄弟。第二天回到工作场合，争吵依旧，但丝毫不影响其友情。</p>
+</blockquote>
+<p>「分手还做朋友」显然是这样情景分隔的升级版，甚至上述场景本身我都仍未习得。所以我不知道自己口中的实现起来到底有多难，或者到底能不能实现。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[K、Joy、仿生人妓女与性爱]]></title>
+            <link>https://quarkpixel.github.io/p/250909-sex-between-k-joy-prostitute</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250909-sex-between-k-joy-prostitute</guid>
+            <pubDate>Tue, 09 Sep 2025 04:02:45 GMT</pubDate>
+            <description><![CDATA[《银翼杀手 2049》的拉片笔记]]></description>
+            <content:encoded><![CDATA[<p>看 <a href="https://space.bilibili.com/3546697279998233">bilibili@马克骐</a> 的《银翼杀手2049》拉片，收获很多，是站内我见过最深刻的解读之一。其中对<a href="https://www.bilibili.com/video/BV1JxuVzLE9U/?t=631">性爱片段</a>的分析令我很震撼，写些笔记。</p>
+<h2>与齐泽克「对坠入爱河的恐惧」</h2>
+<p>博主引用了齐泽克的一段访谈：</p>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rrxk2WzrE14?si=4XYjM4YaV947kUBB" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+</center>
+
+<p>这是博主搬来和电影场景并置的片段。但问题是：<strong>为什么要把齐泽克放进来？</strong></p>
+<p>毕竟两边的重点并不完全一样：齐泽克在批判<strong>现代人害怕真正去爱</strong>；拉片分析的却是<strong>爱本身的不可能性</strong>。听起来好像不太一样。</p>
+<h3>齐泽克在说什么</h3>
+<p>齐泽克是拉康派，他经常强调：幻想不是让我们远离真实，而是让我们能忍受真实。</p>
+<p>放到爱情里，就是：</p>
+<ul>
+<li>我们不是爱上了对方「本来的样子」；</li>
+<li>我们爱上的是在对方身上寄托的<strong>我们的幻想</strong>。</li>
+</ul>
+<p>所以在齐泽克看来，爱从来就是「间接」的，它必须通过幻想来运作。这也是齐泽克在《透过真实的裂缝》《暴力》等书中反复强调的立场。</p>
+<p>在这次访谈里，他更多是在讨论当代人为什么害怕坠入爱河：真正的爱是一种偶然的事件（<strong>fall</strong> in love），它无法计划，却能改变整个人生。现代人为了避免这种创伤，转而追求“去风险化”的爱——类似“无糖可乐”“无酒精啤酒”，一种可控的替代品。</p>
+<h3>与拉片的共振</h3>
+<p>这样就能理解博主的选择了。虽然齐泽克和拉片的落点不同，但他们碰到的共同点是：</p>
+<p><strong>爱从来不是直接的，它必须依赖幻想和虚拟的中介才能发生。</strong></p>
+<p>在电影里，这个逻辑被具象化：K 并没有真正「触碰」乔伊，而是借助妓女的身体作为中介。性爱在这里成了一场虚拟拼贴：既荒谬又动人，也揭示了爱只能通过虚拟结构间接实现。</p>
+<h2>真爱本身只存在于虚拟吗？</h2>
+<p>我认为博主还隐式地提出了一个问题：<strong>是不是所有的爱，其实都是“虚拟性爱”的变体？</strong></p>
+<p>博主在分析时已经点到：乔伊为了让自己的爱「有实感」，只能借助妓女的身体；而妓女在场时，她在意的也不是 K 本人，而是他在反抗组织中的价值。所有人都带着各自的幻想和目的进入性爱场景，于是性爱成了一种「双重虚拟」。荒谬，但又真实地触到了他们的需求。</p>
+<p>齐泽克的哲学恰好也解释了这一点：爱从来都需要幻想才能成立。我们从来不是爱上了一个人「真实的样子」，而是爱上了我们在对方身上寄托的投影。即使是真实的人与人之间的关系，也无法脱离这种「虚拟结构」。</p>
+<h3>「真爱」是否还可能存在</h3>
+<p>如果爱总是依赖幻想和虚拟，那么它到底还是真爱吗？</p>
+<p>齐泽克在访谈中提到了：真爱就是<strong>承认这种不可能性</strong>，却依然坚持与对方建立联系。</p>
+<ul>
+<li>爱并不是找到一个“刚好满足你所有幻想的人”。</li>
+<li>爱是接受对方的裂缝、缺失、不可满足。</li>
+</ul>
+<p>电影中的片段看似荒谬，但更是展现出了一种<strong>有力量的爱情</strong>。它的那种「不可能性」正是其魅力所在。</p>
+<p>这也解释了一个容易混淆的地方：齐泽克批判的对象，并不是像 K 和乔伊这样的人。相反，他们正是值得赞扬的——因为他们明知道不可能，依然尽全力去尝试接触所谓的真爱。齐泽克真正批判的，是那些甚至不去尝试、只追求安全替代品的人。</p>
+<h2>荒诞但动人</h2>
+<p>是不是所有的爱都是虚拟性爱的变体？我认为是的。但这并不是一种贬低，而是揭示。</p>
+<p><strong>我们明知不可及却又凭尽全力试着去拥有乌托邦式的爱情</strong>这件事本身，是我对这场戏的总结。这既是对《银翼杀手2049》性爱场景的注解，也是对齐泽克所说‘真正的爱’的一种影像化回应。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[Logs::0xB59]]></title>
+            <link>https://quarkpixel.github.io/logs/0xB59</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/logs/0xB59</guid>
+            <pubDate>Fri, 05 Sep 2025 17:27:00 GMT</pubDate>
+            <description><![CDATA[Intro]]></description>
+            <content:encoded><![CDATA[<p>这是本博客的第一篇周刊，周刊的内容主要就是发一些牢骚。</p>
+<h2>关于本周刊</h2>
+<h3>为什么写 &quot;Logs&quot;</h3>
+<p>本周与 <a href="https://www.guhub.cn/">Eltrac</a> 写信交流，聊得很开心。交流中，老师建议我降低写作的心理门槛，并且保证持续的创作，即使是流水账也可以。故打算学习老师的 <a href="https://www.geedea.pro/posts/weekly/intro/">稻草人周刊</a> ，尝试着去记一些生活中的小事。</p>
+<h3>设定上的一些趣事</h3>
+<p>关于该周刊，整体的设计我都是往 geeks 的方向上去靠拢的。以下是自己的一些想法～</p>
+<h4>名称</h4>
+<p>“Logs” 这个词本身就挺 geek 的，毕竟日志嘛。但后来才发现 “Blog” 一词竟然也是来自 “<a href="https://en.wikipedia.org/wiki/Blog">Web log</a>”，觉得还蛮巧合的。但随着时间推移两个词所指代东西也不一样了，用 “Logs” 作为我的周刊名称我觉得也无伤大雅 😁。</p>
+<h4>编号</h4>
+<p>计算方式如下：</p>
+<p><img src="/img/logs/0xb59-0.gif" alt="1970-01-01 to now to weeks to hex">
+<em>所用的软件为 <a href="https://www.raycast.com/">Raycast</a></em></p>
+<p>从 1970/01/01 开始计算，问就是<strong>极客精神</strong> 🤓</p>
+<h4>字体</h4>
+<p>使用了 <a href="https://fonts.adobe.com/fonts/calluna-sans">Calluna Sans</a>，一款很有人文主义的无衬线体。最开始知道是我平时常听的播客 <a href="https://anyway.fm/">Anyway.FM</a> 的官网默认西文字体。我比较喜欢它的
+<a href="https://fonts.google.com/knowledge/introducing_type/understanding_numerals">oldstyle numerals</a> 设计，认为很适合在这里当作编号使用。</p>
+<h2>网站的其他变动</h2>
+<p>主要是<strong>更新了超链接样式</strong>，灵感同样是来源于 <a href="https://www.geedea.pro/posts/weekly/44/">極客死亡計劃</a>（疯狂cue 🤪）：</p>
+<blockquote>
+<p>调整了超链接的样式，现在不再是蓝色，下划线的颜色也不那么显眼了，避免超链接起到不该有的强调作用（强调文本应该用粗体或者高亮样式）。</p>
+</blockquote>
+<p>其实我也早就注意到了这个问题。如果你留意的话，会记得原来的超链接样式就是正文样式的红色版本。但我一直没有修改、也不知道怎么改比较好，直到见到了帆迹老师的设计，有了灵感。<strong>在此特别感谢老师主动及无意中给予我的帮助</strong> 🌹。</p>
+<p><del>但是目前还是有一些显示 bug，需要再修😮‍💨</del></p>
+<h2>开学</h2>
+<p>9月1日了，开学了。每次开学我都和同学的感觉不太一样，有一种期待感。可能是自己平时生活相对还是比较孤僻吧，上学以后可以热闹一点。</p>
+<h2>群像的力量</h2>
+<p>我好像平时很能被所谓的群像的力量所打动。</p>
+<p><a href="https://xyzfm.link/s/G2Ip67">分享播客《EP19: 黑人的歌白人唱》, 标记时点【15:26】</a></p>
+<blockquote>
+<p>1862 年年底美国南北战争进行时，联邦军和邦联军在田纳西的 Morphysboro 相遇。
+开战前一天，12 月 30 号，两边几千军人在战场上对峙。两边的军乐队就开始演奏，当然是两边演奏自己的爱国歌曲，就跟拉歌一样。北方奏一首 Yankee Doodle，南方就回应一首南方国歌 Dixie 这样的。
+最后呢，一边开始奏 Home Sweet Home，结果呢，另外一边也开始奏这首歌，变成了大家合唱一曲，收兵回营。没办法，当兵的最想家了，毕竟你都不知道自己还回得去回不去呢。这一唱就成了催泪弹。
+第二天，Stone&#39;s River 战役开打，三天里几千人战死，永远就回不了家了。</p>
+</blockquote>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Develop Diary']</category>
+        </item>
+        <item>
+            <title><![CDATA[完美主义是否也是一种「园丁妄想症」？]]></title>
+            <link>https://quarkpixel.github.io/p/250810-perfectionism-also-kind-of-gardener-delusions</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250810-perfectionism-also-kind-of-gardener-delusions</guid>
+            <pubDate>Sun, 10 Aug 2025 07:25:00 GMT</pubDate>
+            <description><![CDATA[由 Eltrac 的文章《园丁妄想症》引发的思考。]]></description>
+            <content:encoded><![CDATA[<p>读完 Eltrac 的文章《<a href="https://www.geedea.pro/posts/%E5%9B%AD%E4%B8%81%E5%A6%84%E6%83%B3%E7%97%87/">园丁妄想症</a>》，<del>感觉被骂了</del> 引发了自己很多的反思。推荐去读原文。</p>
+<p>简单回顾一下文章的核心概念：「园丁妄想症」描述的是人们看到他人的完美成果后，立刻幻想自己也能拥有，却忽略了背后的过程、动机和现实条件等一整条链路。结果就是冲动行动，浪费资源，最终一事无成。</p>
+<p>但我发现，完美主义者的行为模式与此惊人相似——只不过他们不是在羡慕别人的花园，而是在追逐一个虚幻的「完美花园」。</p>
+<h2>相似的行为模式</h2>
+<p>读到原文中这段话时，我感到一种奇妙的熟悉感：</p>
+<blockquote>
+<p>之后，我急于调整个人主页的设计，几乎没有太多思考，把代码结构搞得乱七八糟，最后也没做出什么名堂。最好笑的是，两个小时过去了，我还在打磨那个「作品集」页面，而本来想做的 Now 页面和数字花园压根还没开始。</p>
+<p>就像开头故事里的小李，忙活了一下午也没种花，而是铺路，可最后路也没修好。</p>
+</blockquote>
+<p>这不就是完美主义的经典表现吗？</p>
+<p>完美主义者经常陷入这样的困境：为了追求一个理想化的结果，他们在细节上无休止地打磨，却忽略了真正重要的目标。他们害怕不完美，所以宁愿停留在 “准备阶段”，也不愿意面对现实的不完美。</p>
+<h2>完美主义的「内在妄想」</h2>
+<p>园丁妄想症的核心是对<strong>他人成果</strong>的幻想，而完美主义则是对<strong>理想自我</strong>的幻想。</p>
+<p>想象一下：你准备写一篇文章，脑海中浮现的是一篇逻辑完美、文笔优雅、观点深刻的作品。你甚至能想象读者读完后的赞叹，想象这篇文章为你带来的认可。这种 “完美图景” 一旦形成，现实中的任何不足都变得无法忍受。</p>
+<p>这就是完美主义的妄想性质：<strong>它让你爱上了一个不存在的理想版本，而不是专注于真实的创作过程</strong>。</p>
+<p>更有意思的是，完美主义者往往会在脑海中构建一个 “完美的自己”——这个自己永远不会犯错，永远能产出完美的作品，永远不需要修改和调整。就像园丁妄想中的小李幻想朋友来花园做客的场景一样，完美主义者也在幻想一个根本不存在的“完美状态”。</p>
+<p>结果呢？真实的创作变得痛苦不堪，因为每一个不完美的细节都在提醒你：现实与幻想之间的差距。</p>
+<h2>为什么完美主义更隐蔽</h2>
+<p>园丁妄想症相对容易识别，因为它的指向很明确：<strong>别人有的，我也想要</strong>。当你发现自己在模仿他人时，理性很容易介入。</p>
+<p>但完美主义不同。它披着&quot;追求卓越&quot;的外衣，社会文化还在不断强化这种价值观。<strong>“精益求精”、“不断进步”、“追求完美”</strong>——这些词汇听起来都那么正面，谁敢说自己反对呢？</p>
+<p>这种文化包装让完美主义变得极其隐蔽。你很难意识到自己陷入了一种妄想，因为周围的声音都在告诉你：这样做是对的。</p>
+<p>更糟糕的是，完美主义还有一个强大的自我欺骗机制：<strong>它总是能找到合理的理由</strong>。“我只是想把这件事做好”、“细节决定成败”、“我对自己要求高一点有什么错”——听起来都很有道理，不是吗？</p>
+<p>但问题在于，这种&quot;要求高&quot;往往脱离了现实的约束条件。就像文中的小李忘记了自己其实并不喜欢花一样，完美主义者也忘记了自己的真实目的是什么。</p>
+<h2>同样忽略过程的本质</h2>
+<p>原文提到，园丁妄想的核心问题是 “只看结果，忽略过程”。完美主义在这一点上如出一辙。</p>
+<p>完美主义者眼中只有那个完美的终点，对到达那里的路径却缺乏耐心。他们希望第一稿就是完美的，希望第一次尝试就成功，希望跳过所有笨拙和混乱的中间状态。</p>
+<p>这种对过程的厌恶导致了一个悖论：<strong>为了追求完美，他们反而拒绝了通往完美的唯一路径——不完美的练习</strong>。</p>
+<p>我自己写代码时就经常遇到这种情况。明明知道 “先让它跑起来，再让它跑得好” 的道理，但还是忍不住想要一次性写出 “完美” 的代码。结果往往是在架构设计上纠结半天，最后什么都没写出来。</p>
+<p>真正的创作过程永远是混乱的：第一稿是垃圾，第二稿还是垃圾，第三稿开始有点样子……这个过程既必要又痛苦，但完美主义者往往选择逃避这种痛苦。</p>
+<h2>相通的解决之道</h2>
+<p>既然完美主义本质上是一种「内在的园丁妄想」，那么原文的解决方案同样适用。</p>
+<p><strong>专注自己的花园</strong>，在完美主义语境下就是：<strong>专注真实的需求和过程，而不是虚幻的完美标准</strong>。</p>
+<p>原文提到的几个要点都很有启发：</p>
+<ol>
+<li><p><strong>审视动机</strong>：你追求完美是因为真的需要，还是因为恐惧？很多时候，完美主义源于对失败、批评或拒绝的恐惧，而不是对质量的真实需求。</p>
+</li>
+<li><p><strong>接受过程的不完美</strong>：就像邻居是从一两簇花开始，慢慢浇灌出花园一样，任何创作都需要从粗糙的开始逐步完善。</p>
+</li>
+<li><p><strong>关注内在热情</strong>：真正的园丁种花是因为喜欢，不是为了炫耀。真正的创作者写作是因为有话要说，不是为了证明自己完美。</p>
+</li>
+<li><p><strong>允许删除和舍弃</strong>：原文建议不要把冲动想法放进 GTD 系统，因为「如果一件事情对你来说真的重要，你的大脑会记住的」。同样，如果一个完美主义的标准让你痛苦而无产出，也许它根本就不重要。</p>
+</li>
+</ol>
+<h2>结语</h2>
+<p>我也在实践这个道理。我自知我的文笔不好，换做以前的自己可能根本不会选择去写个人博客。我不敢把自己不好的一面，或者说「未来的我看到会觉得像傻逼」的东西放出来。</p>
+<p>我现在正尝试努力克服自己的「不包容」：包容自己，包容他人。</p>
+<p>也许这就是摆脱&quot;园丁妄想症&quot;的真正含义，<strong>停止追逐虚幻的完美花园，开始享受真实的种植过程</strong>。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category></category>
+        </item>
+        <item>
+            <title><![CDATA[TextAnimation 的实现细节]]></title>
+            <link>https://quarkpixel.github.io/p/250721-details-in-text-animation</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250721-details-in-text-animation</guid>
+            <pubDate>Mon, 21 Jul 2025 12:44:11 GMT</pubDate>
+            <description><![CDATA[深入解析 svelte-text-animation 组件的技术实现与最新优化]]></description>
+            <content:encoded><![CDATA[<p>在<a href="./250525-tech-stack-in-hsuans-space">之前的文章</a>中，我简单提到了自己开发的 <a href="https://github.com/QuarkPixel/svelte-text-animation"><code>svelte-text-animation</code></a> 组件。这个组件最初是为了本站首页 Landing 部分的文字动画效果而设计的，后来觉得特别好用就抽象成了一个独立的组件。最近对组件进行了一些优化更新，借此机会来详细介绍一下这个库的实现细节。</p>
+<h2>核心设计思路</h2>
+<h3>基本原理</h3>
+<p>整个动画的核心思想非常简洁：<strong>使用高斯函数叠加边缘递减函数</strong>，为文本中的每个字符计算一个效果强度值，然后通过回调函数将这个强度转换为具体的样式。</p>
+<p><img src="https://raw.githubusercontent.com/QuarkPixel/svelte-text-animation/master/assets/example.gif" alt="Demo"></p>
+<h3>数学模型</h3>
+<p>动画效果由两个关键函数组成：</p>
+<ol>
+<li><strong>高斯函数</strong>：控制效果在文本中的空间分布</li>
+<li><strong>边缘递减函数</strong>：确保动画在起始和结束时平滑过渡</li>
+</ol>
+<h2>最新优化：更平缓的边缘递减函数</h2>
+<h3>原有实现的局限性</h3>
+<p>在之前的版本中，边缘递减函数使用的是简单的二次函数：</p>
+<p>$$
+f_{\text{old}}(p) = 4p(1 - p)
+$$</p>
+<p>其中 $p$ 表示动画进度（progress）。这个函数确实能够满足边界条件：在 $p = 0$ 和 $p = 1$ 时函数值为 0，在 $p = 0.5$ 时达到最大值 $1$，实现了平滑过渡的目标。</p>
+<p>然而，这种实现存在一个显著问题：<strong>动画效果仅在进度接近 0.5 时才能完全展现，其他位置的效果都会被显著削弱</strong>。这意味着动画的大部分时间里，文字效果都无法达到理想状态。</p>
+<h3>新的数学方案</h3>
+<p>经过深入思考和数学推导，我设计了一个更高阶的多项式函数：</p>
+<p>$$
+f_{\text{new}}(p) = 1 - (2p - 1)^{2n}
+$$</p>
+<p>其中 $n$ 对应新增的 <code>edgeFlatness</code> 参数（默认值为 5），用于控制函数的平缓程度。</p>
+<p>这个改进后的函数具有以下优秀特性：</p>
+<ul>
+<li><strong>保持边界条件</strong>：当 $p = 0$ 或 $p = 1$ 时，函数值依然为 $0$</li>
+<li><strong>峰值位置不变</strong>：在 $p = 0.5$ 时函数值仍为 $1$</li>
+<li><strong>中间区域显著改善</strong>：通过调整 $n$ 参数，可以让更大范围内的进度值都接近最大效果强度</li>
+</ul>
+<h3>函数特性分析</h3>
+<p>通过数学分析可以发现，当 $n = 1$ 时，新函数退化为原有的二次函数。而当 $n &gt; 1$ 时，函数变为 $2n$ 次多项式，相当于在原有基础上增加了一个可调节的平缓度参数。</p>
+<center>
+<img class="outline outline-[#26796D] outline-3 w-[50%]" src="/img/250721-0.gif" alt="edgeFactor 函数演示" data-libra />
+<em>不同 flatness 值下的边缘递减函数对比</em>
+</center>
+
+<p>从图中可以直观看出，随着 <code>flatness</code> 参数的增大，函数在中间区域变得更加平缓，这意味着动画效果在更大的进度范围内都能保持接近最大强度，显著提升了整体的视觉表现。</p>
+<h2>核心实现解析</h2>
+<h3>效果强度数组生成算法</h3>
+<pre><code class="language-typescript">function generateEffectArray(
+	length: number,
+	progress: number,
+	spread: number,
+	flatness: number
+): number[] {
+	// 计算边缘递减因子
+	const edgeFactor = 1 - Math.pow(2 * progress - 1, 2 * flatness);
+	const result = new Array(length).fill(0);
+
+	// 早期返回优化：当边缘因子为负时直接返回零数组
+	if (edgeFactor &lt;= 0) {
+		return result;
+	}
+
+	// 计算当前动画焦点在文本中的位置
+	const offset = progress * (length + 2 * spread + 1) - spread - 1;
+
+	// 优化计算范围，避免不必要的高斯函数计算
+	const startIdx = Math.max(0, Math.floor(offset - spread * 3));
+	const endIdx = Math.min(length - 1, Math.ceil(offset + spread * 3));
+
+	for (let i = startIdx; i &lt;= endIdx; i++) {
+		const z = (i - offset) / spread;
+		const zSquared = z * z;
+
+		// 性能优化：当 z² &gt; 9 时，e^(-z²) &lt; 0.01，可以忽略
+		if (zSquared &lt; 9) {
+			result[i] = Math.exp(-zSquared) * edgeFactor;
+		}
+	}
+
+	return result;
+}
+</code></pre>
+<h3>关键优化策略</h3>
+<ol>
+<li><strong>早期返回优化</strong>：当边缘因子小于等于 0 时，直接返回零数组，避免后续无意义的计算</li>
+<li><strong>智能范围限制</strong>：仅对可能产生显著效果的字符范围进行计算，大幅降低计算复杂度</li>
+<li><strong>高斯函数截断</strong>：利用指数函数的快速衰减特性，当距离过远时直接跳过计算</li>
+</ol>
+<h2>API 设计</h2>
+<h3>核心参数接口</h3>
+<pre><code class="language-typescript">interface Props {
+	text: string;                                 // 要进行动画的文本内容
+	progress: number;                             // 动画进度，取值范围 [0, 1]
+	spread?: number;                              // 效果扩散半径，默认 3
+	edgeFlatness?: number;                        // 边缘平缓度，默认 5
+	styleCallback: (intensity: number) =&gt; string; // 强度到样式的转换函数
+	innerClassName?: string;                      // 字符容器的 CSS 类名
+}
+</code></pre>
+<h3>实际使用示例</h3>
+<pre><code class="language-svelte">&lt;TextAnimation
+    text=&quot;Hello, World!&quot;
+    {progress}
+    spread={4}
+    edgeFlatness={6}
+    styleCallback={(intensity) =&gt; `
+        transform: scale(${1 + intensity * 0.5});
+        color: rgb(${255}, ${Math.floor(255 * intensity)}, ${Math.floor(255 * intensity)});
+    `}
+/&gt;
+</code></pre>
+<p>你可以在 <a href="https://svelte.dev/playground/434018293cfb415b925f19b47ef4a85c?version=5.33.1">Svelte Playground</a> 中直接体验这个组件的效果。</p>
+<p>实际应用场景可以参考本博客首页的 Landing 部分，对应的源码实现：<a href="https://github.com/QuarkPixel/QuarkPixel.github.io/blob/master/src/routes/Landing.svelte">Landing.svelte</a>。</p>
+<hr>
+<h2>总结</h2>
+<p><code>svelte-text-animation</code> 通过精心设计的数学函数组合，实现了既平滑又视觉效果出色的文字动画。最新版本中边缘递减函数的优化，通过引入可调节的平缓度参数，显著提升了动画在整个进度范围内的表现效果。</p>
+<p>这种基于数学模型的设计方法不仅保证了动画的流畅性，还为开发者提供了充分的自定义空间。如果你对这个组件感兴趣，欢迎在 <a href="https://github.com/QuarkPixel/svelte-text-animation">GitHub</a> 上为项目点个 Star 😆</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Technique'</category>
+            <category>'Web']</category>
+        </item>
+        <item>
+            <title><![CDATA[HDR 在被滥用吗]]></title>
+            <link>https://quarkpixel.github.io/p/250720-is-hdr-being-overused</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250720-is-hdr-being-overused</guid>
+            <pubDate>Sun, 20 Jul 2025 11:24:30 GMT</pubDate>
+            <description><![CDATA[谈谈现今 HDR 的一些问题]]></description>
+            <content:encoded><![CDATA[<p><strong>这是一篇讨论帖，由于本人没有实际上手过新的操作系统，故所有内容均来自网络，内容可能有误。欢迎发表自己的看法～</strong></p>
+<h2>引言</h2>
+<p>起因来自一条视频，展示了 Apple 在新系统的画笔中支持选择 <a href="https://en.wikipedia.org/wiki/High_dynamic_range">HDR</a> 颜色。</p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114789544101486&bvid=BV1TW33zdE2T&cid=30832918627&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"></iframe>
+
+<p>给我的第一感受就是：<strong>怪</strong>。</p>
+<p>我其实能理解为什么 Apple 会允许选择 HDR 颜色，让系统整体对 HDR 有更深度的融合。但我不禁要问：这样的 HDR 真的合理吗？设计生态真的准备好了吗？</p>
+<p>我的担心是：HDR 技术为 UI 带来了更丰富的视觉表现力，但在缺乏统一设计语言和生态支持的前提下，Apple 等厂商的 &quot;开放式 HDR
+策略&quot; 反而可能破坏用户界面的一致性，增加设计负担。</p>
+<h2>HDR 的潜力</h2>
+<p>HDR 如果处理得好的话，UI 确实可以美到飞起。</p>
+<p>HDR 不只是让画面更亮、更艳，更重要的是它为界面设计引入了 &quot;亮度空间&quot; 这一新的表达维度。从传统的颜色/对比度控制，拓展到了真实光强的建构。得益于此，HDR
+可作为界面结构化、分层与焦点引导的新工具。例如：</p>
+<ul>
+<li><p>通过局部高亮引导用户注意力，而非依赖颜色或动画；</p>
+</li>
+<li><p>模拟真实光源制造视觉层次感，从而增强沉浸体验；</p>
+</li>
+<li><p>赋予 UI 元素不同的“光学存在感”，区分主次关系。</p>
+</li>
+</ul>
+<p>这些观点指向一个共识：<strong>HDR 是视觉强化的强力工具，但前提是 &quot;设计得好&quot; ，且配合统一的设计语言与生态标准。</strong> 否则，它也可能成为破坏体验的利器。</p>
+<h2>问题在于 HDR 没有统一标准</h2>
+<p>但现实情况是，我们的 HDR UI 体验远没有达到理想状态。</p>
+<h3>系统层面的设计不一致</h3>
+<p>最明显的问题是视觉连贯性的缺失。我们经常能看到 HDR 视频在普通 UI 界面上播放，导致整体界面看起来发灰、不协调。这种 &quot;接缝感&quot;
+破坏了用户界面应有的统一性。</p>
+<p>还有 Reddit
+用户提到 <a href="https://www.reddit.com/r/appletv/comments/x2al6l/youtube_adverts_causing_huge_delay_because_tv/">YouTube 广告因 HDR 切换导致画面延迟和色彩跳变</a>
+，严重影响观看体验。</p>
+<p>这些问题的根源在于：<strong>HDR 在系统 UI 中的体验不连贯，打断了用户的视觉流，这是设计上的失败。</strong></p>
+<h3>缺乏设计指导下的 &quot;自由发挥&quot;</h3>
+<p>当技术门槛降低，HDR 变得人人可用时，缺乏设计规范的约束就会带来问题。</p>
+<p>我们确实看到了一些令人担忧的现象：抖音上有用户开始使用带有HDR高亮的表情包进行恶搞，这些内容因为比平常的图片更亮而获得关注。</p>
+<details>
+  <summary>[视频] 这年头，表情包都自带HDR了？</summary>
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114636049355816&bvid=BV1HkTuzcE7V&cid=30352540082&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"></iframe>
+</details>
+
+<p>类似的情况还出现在广告投放中，HDR被用作粗暴的注意力抓取工具，而不是精心设计的视觉体验。这些现象本身不是核心问题，而是设计缺位的副作用。</p>
+<details>
+  <summary>[视频] 野生的网页 HDR 广告</summary>
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1101573401&bvid=BV1sw4m1d7L1&cid=1463107028&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"></iframe>
+</details>
+
+<p><strong>HDR UI 当前的问题不是 HDR 本身，而是没有明确的 &quot;设计语言&quot; 和规范来驾驭它。</strong></p>
+<h3>生态支持的不成熟</h3>
+<p>更深层的问题在于，我们的数字生态还没有准备好迎接 &quot;全面HDR化&quot;。</p>
+<p>第三方应用、浏览器、视频播放器对 HDR 的支持参差不齐，导致用户在不同场景下体验到的 HDR 效果千差万别。有时候 HDR
+让界面更加精致，有时候又让整体显得突兀。这种不可预测性正是设计大忌。</p>
+<p>Steam 社区论坛上有用户抱怨 <a href="https://steamcommunity.com/discussions/forum/11/7074686901648727412/">HDR 显示器效果的糟糕</a>
+，虽然不知道具体的原因，但我们可以明确的是现在的 HDR 领域无比混乱。</p>
+<h2>结语</h2>
+<p>回到开头的问题：Apple 开放 HDR 究竟是好事还是坏事？</p>
+<p>我的观点是：<strong>HDR是好工具，但应该被认真对待。</strong></p>
+<p>我们需要的不是 HDR 的全面开放，而是有设计指导的 HDR 应用。Apple 等厂商在推广 HDR 技术时，应该投入更多精力建立统一的设计规范和使用标准；软件厂商在对接
+HDR 技术时，也更应该谨慎对待。</p>
+<h2>参考文章</h2>
+<ul>
+<li><a href="https://medium.com/design-bootcamp/what-hdr-in-ui-tells-us-about-the-future-of-digital-perception-bb3d9133d1f6">HDR in UI: Designing Perception Through
+Brightness</a></li>
+<li><a href="https://medium.com/design-bootcamp/the-rise-of-hdr-ui-not-a-visual-gimmick-but-a-paradigm-shift-in-perceptual-logic-8062247f72dd">HDR UI and EDR: Rethinking Brightness in Interface Design</a></li>
+<li><a href="https://medium.com/design-bootcamp/is-your-ui-design-file-still-representing-the-final-output-in-the-hdr-ui-era-4bd4fb1f4b9d">Is Your UI Design File Still Representing the Final Output in the HDR UI Era?</a></li>
+</ul>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Thinking'</category>
+            <category>'Visual']</category>
+        </item>
+        <item>
+            <title><![CDATA[夏长，云懒。]]></title>
+            <link>https://quarkpixel.github.io/p/250712-summer-clouds</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250712-summer-clouds</guid>
+            <pubDate>Sat, 12 Jul 2025 07:15:00 GMT</pubDate>
+            <description><![CDATA[记录平时拍摄的云]]></description>
+            <content:encoded><![CDATA[<p><strong>夏日的云，也想慵懒。</strong></p>
+<p>平时喜欢去天台散心：没有喧嚣，只有自己。夏日的云和其它时候都不一样。从专业术语的角度出发，我爱看夏天的<a href="https://zh.wikipedia.org/wiki/%E7%A7%AF%E4%BA%91">积云</a>。记这些年来拍到的夏日云：</p>
+<div class="bg-surface-100-900 outline-9 rounded-xl my-2 outline-surface-100-900 grid grid-cols-3 grid-rows-6 gap-2 [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:m-0 *>rounded-xl *>shadow-lg *>overflow-hidden *>bg-gray-200">
+  <div data-libra class="col-start-1 col-span-2 row-start-1 row-span-2">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332223628-62631dabb337"/>
+  </div>
+
+  <div class="col-start-3 col-span-1 row-start-1 row-span-3">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332223533-993114881882"/>
+  </div>
+
+  <div class="col-start-1 col-span-1 row-start-3 row-span-3">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332223583-0d94cb2911f7"/>
+  </div>
+
+  <div class="col-start-2 col-span-2 row-start-4 row-span-1">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1695450148576-675cab2c9215"/>
+  </div>
+
+  <div class="col-start-2 col-span-1 row-start-3 row-span-1">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332223520-1278796028f5"/>
+  </div>
+
+  <div class="col-start-3 col-span-1 row-start-5 row-span-2">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332222129-6e44eb7e3f29"/>
+  </div>
+
+  <div class="col-start-2 col-span-1 row-start-5 row-span-2">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1727843062665-040b10410226"/>
+  </div>
+
+  <div class="col-start-1 col-span-1 row-start-6 row-span-1">
+    <img alt="clouds" src="https://images.unsplash.com/photo-1696332223050-253b7b199a68"/>
+  </div>
+</div>
+<div class="-mt-1"><a class="text-surface-400-600 font-noto-sans text-sm" href="https://unsplash.com/@quarkpixel">Unsplash @quarkpixel</a></div>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>[ 'Photography' ]</category>
+        </item>
+        <item>
+            <title><![CDATA[重做网页布局排版]]></title>
+            <link>https://quarkpixel.github.io/p/250701-remake-typography</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250701-remake-typography</guid>
+            <pubDate>Tue, 01 Jul 2025 07:15:00 GMT</pubDate>
+            <description><![CDATA[从 Skeleton 转向 Tailwind Typography]]></description>
+            <content:encoded><![CDATA[<p>许久之前就无法忍受网页的排版。作为一个博客网站，文字的呈现效果是至关重要的。在之前介绍<a href="./250525-tech-stack-in-hsuans-space">网站使用的技术栈</a>时就提到我使用了 Skeleton 作为 UI 框架。然而这个框架在排版方面的表现很不尽如人意。我趁着最近在大量升级网站的机会，将排版系统从 Skeleton + MDsveX 自定义样式转向了 Tailwind Typography + MDsveX 默认对接。</p>
+<center>
+<img class="outline outline-[#808CA9] outline-4 rounded-[1px] mb-[44px]" src="/img/250701-0.webp" alt="" data-libra/>
+<em>左图：新版｜右图：老版</em>
+</center>
+
+<h2>使用 Skeleton 所遇到的问题</h2>
+<p><a href="https://skeleton.dev/">Skeleton</a> 是一个非常优秀的 UI 框架，它为 SvelteKit 提供了美观且功能丰富的组件库。在构建网站的导航栏、按钮、卡片等常规 UI 组件时，Skeleton 的表现令人满意。</p>
+<p>然而，当面对大量文字排版这样的特定场景时，Skeleton 就不再能胜任。它更着重于 UI，而非排版。在此之前我因为偷懒，就没有想着用专业的排版引擎 😂</p>
+<p>此外，即使作为一个 UI 组件集，我认为 Skeleton 在排版方面也远不算合格。它不基于语义化标签作用样式，甚至还将语义化标签的样式都重置了。因此当你直接使用 <code>&lt;h1&gt;</code> 时，它是没有任何样式的。这是因为 Skeleton 要求你为每个标题添加对应的 class：</p>
+<pre><code class="language-html">&lt;!-- 没有样式，因为缺少 class --&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;!-- “正确” 的使用方式，但很难评 --&gt;
+&lt;h1 class=&quot;h1&quot;&gt;Hello World&lt;/h1&gt;
+</code></pre>
+<p>而这在与 MDsveX 对接时就产生了问题：MDsveX 只生成纯 HTML 结构，这在与 Skeleton 的对接中就出现了问题。因此我不得不为每一个基本元素都写一个包装组件：</p>
+<pre><code class="language-bash">➜ HsuansSpace/src/lib/components/typography master ✓ tree .
+.
+├── Anchor.svelte
+├── BaseList.svelte
+├── Blockquote.svelte
+├── Code.svelte
+├── Del.svelte
+├── H1.svelte
+├── H2.svelte
+├── H3.svelte
+├── H4.svelte
+├── H5.svelte
+├── H6.svelte
+├── Hr.svelte
+├── Ins.svelte
+├── Italic.svelte
+├── Keyboard.svelte
+├── Mark.svelte
+├── OrderedList.svelte
+├── P.svelte
+├── Pre.svelte
+├── Table.svelte
+├── TableBody.svelte
+├── UnorderedList.svelte
+└── index.ts
+
+1 directory, 24 files
+</code></pre>
+<p>抛去麻烦的问题外，还有一些样式的不兼容等问题就在这样一层又一层的屎山中构建起来了。</p>
+<h2>转换为 Tailwind Typography</h2>
+<p><a href="https://tailwindcss.com/docs/typography-plugin">Tailwind Typography</a> 是一个官方专门为文章排版设计的插件。它提供了：</p>
+<ul>
+<li>精心调教的文字间距和行高</li>
+<li>优雅的标题层级样式</li>
+<li>完善的列表和引用样式</li>
+<li>适配不同屏幕尺寸的响应式排版</li>
+</ul>
+<p>最重要的是，Tailwind Typography 完全基于语义化标签工作，与 MDsveX 的默认渲染完美契合。这意味着我们可以专注于写作内容，不必再为每个 HTML 标签编写包装组件，因为屎山堆叠所导致的样式错误问题也消失了。</p>
+<h2>迁移过程</h2>
+<p>迁移过程出乎意料地顺利。主要步骤包括：</p>
+<ol>
+<li>移除 Skeleton 中的文章样式覆盖</li>
+<li>配置 Tailwind Typography 插件</li>
+<li>为文章容器添加 <code>prose</code> 类</li>
+<li>调整默认颜色配置，使其适配 Skeleton 的颜色系统</li>
+</ol>
+<h2>总结</h2>
+<p>有时候，简单的解决方案反而是最好的。Tailwind Typography 专注于解决文章排版这一具体问题，而不是试图成为一个全能的框架。这让它在这个特定场景下的表现远超 Skeleton。</p>
+<p>你可以在这里查看完整的 <a href="/test">Markdown 语法测试</a>，体验新的排版效果。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>[ 'Develop Diary' ]</category>
+        </item>
+        <item>
+            <title><![CDATA[支持 RSS 订阅啦！]]></title>
+            <link>https://quarkpixel.github.io/p/250629-new-rss-feature</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250629-new-rss-feature</guid>
+            <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[添加 RSS Feed 支持，以及其他方面的网站改进]]></description>
+            <content:encoded><![CDATA[<p>为博客添加了 RSS 订阅功能！🎉</p>
+<p>现在你可以通过 RSS 阅读器订阅本博客的更新了。支持以下几种订阅格式：</p>
+<ul>
+<li><a href="/feed/rss.xml">RSS 2.0</a></li>
+<li><a href="/feed/atom.xml">Atom</a></li>
+<li><a href="/feed/feed.json">JSON Feed</a></li>
+</ul>
+<p>RSS（Really Simple Syndication）是一种很棒的信息获取方式。通过 RSS，你可以在自己喜欢的阅读器中统一管理和阅读订阅的内容，不会错过任何更新，也不用担心算法推荐的干扰。</p>
+<p>此外，网站更新的内容还有：</p>
+<ul>
+<li>Footer 的重置***（新版本的效果我很满意😁）***</li>
+<li>友链支持</li>
+<li>网站后台监控***（使用 <a href="https://umami.is">Umami</a> 服务）***以及更新 <a href="/privacy">隐私政策</a></li>
+<li>首页 Landing 现在可以鼠标交互了✨</li>
+</ul>
+<p>欢迎订阅本博客的 RSS feed！📮</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>[ 'Develop Diary' ]</category>
+        </item>
+        <item>
+            <title><![CDATA[Rust 是一门适合 Vibe Coding 的语言]]></title>
+            <link>https://quarkpixel.github.io/p/250623-rust-is-suitable-for-vibe-coding</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250623-rust-is-suitable-for-vibe-coding</guid>
+            <pubDate>Mon, 23 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[从安全特性、错误提示和自动化验证的角度，探讨为什么 Rust 可能是最适合 AI 编程的语言]]></description>
+            <content:encoded><![CDATA[<p><del>(文章标题有些暴论，李姐万岁)</del></p>
+<p><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding</a> 是一种借助 AI 生成代码，并通过人机协作快速验证和迭代想法的开发方式。在这种模式下，开发效率高度依赖于两个关键环节：生成代码的初步质量，以及后续验证与修正的可靠性。而 Rust 的诸多语言特性，恰恰能够在这两个环节中提供显著支持。</p>
+<h2>语言特性的安全保障</h2>
+<p>AI 生成的代码往往存在潜在缺陷，尤其在内存管理、并发控制和边界条件处理等方面容易出现疏漏。考虑这样一个常见场景，生成如下的 C++ 代码：</p>
+<pre><code class="language-cpp">// 存在悬垂指针风险
+int* createInt() {
+    int value = 42; // 局部变量，函数结束时销毁
+    return &amp;value;  // 返回局部变量的地址
+}
+</code></pre>
+<p>这段代码在运行时可能导致未定义行为，而编译器往往只会给出警告，甚至完全不报错。但如果 AI 试图在 Rust 中生成类似的代码：</p>
+<pre><code class="language-rust">fn create_int() -&gt; &amp;i32 {
+    let value = 42; // 局部变量
+    &amp;value // 错误：返回局部变量的引用
+}
+</code></pre>
+<p>Rust 编译器会直接拒绝编译，并给出明确的生命周期错误提示：</p>
+<pre><code>error[E0106]: missing lifetime specifier
+ --&gt; src/main.rs:1:20
+  |
+1 | fn create_int() -&gt; &amp;i32 {
+  |                    ^ expected named lifetime parameter
+  |
+  = help: this function&#39;s return type contains a borrowed value, but there is no value for it to be borrowed from
+help: consider using the `&#39;static` lifetime, but this is uncommon unless you&#39;re returning a borrowed value from a `const` or a `static`
+  |
+1 | fn create_int() -&gt; &amp;&#39;static i32 {
+  |                     +++++++
+help: instead, you are more likely to want to return an owned value
+  |
+1 - fn create_int() -&gt; &amp;i32 {
+1 + fn create_int() -&gt; i32 {
+  |
+For more information about this error, try `rustc --explain E0106`.
+error: could not compile `demo_rust` (bin &quot;demo_rust&quot;) due to 1 previous error
+</code></pre>
+<p>Rust 的所有权系统、借用检查机制和严格的类型系统，能够在编译阶段拦截许多常见错误。这不仅显著降低了运行时崩溃的风险，也使得 AI 即使生成出不够完善的代码，仍能在编译器指导下逐步逼近正确实现。</p>
+<h2>人性化的错误提示</h2>
+<p>Rust 编译器所提供的错误信息一向以清晰、详尽而著称。它不只是告诉你「错了」，而是手把手教你「该怎么改」。就像上面的例子中，编译器不仅指出了生命周期问题，还直接建议了两种修复方案：使用 <code>&#39;static</code> 生命周期或返回拥有值。这种详细的错误信息，甚至包含了修复建议，让 AI 能够自主进行多轮修正。开发者则可以将精力集中于更高层的逻辑设计，而不必深入调试每一个低级错误。</p>
+<p>相比之下，C++ 的错误信息往往会让人摸不着头脑：</p>
+<pre><code>main.cpp:5:13: warning: address of stack memory associated with local variable &#39;value&#39; returned [-Wreturn-stack-address]
+    return &amp;value;  // 返回局部变量的地址
+            ^~~~~
+1 warning generated.
+</code></pre>
+<p>这样的错误信息对 AI 和开发者都不够友好，即使 AI 大部分时候可以像经验丰富的开发者一样知道问题出现的原因，但这种模糊的提示仍然增加了调试成本。</p>
+<h2>编译时检查作为自动化验证</h2>
+<p>传统 Vibe Coding 流程中，代码的正确性严重依赖人工测试与审查，这不仅效率低下，也容易引入主观偏差。而 Rust 的编译时检查机制（包括类型安全、生命周期验证、数据竞争检测等）构成了一套自动化、标准化的验证基础。它确保了生成的代码至少在内存安全、数据竞争等基础层面是可信的，从而为后续的功能测试和集成验证节省大量时间。</p>
+<p>举个例子，在多线程场景中，即使 AI 生成了可能存在数据竞争的代码，Rust 编译器也会在编译阶段就将其拦截，并引导向使用 <code>Arc&lt;Mutex&lt;T&gt;&gt;</code> 或其他合适的同步原语的正确方案。这种&quot;编译通过即基本安全&quot;的特性，在快速原型开发中尤为宝贵。</p>
+<h2>类型系统的引导作用</h2>
+<p>Rust 的类型系统还能够引导 AI 生成更加精确的代码。例如，当处理可能失败的操作时，Rust 的 <code>Result</code> 类型会强制处理错误情况，而不像某些动态语言那样可以随意忽略异常处理。这种「强制正确性」的设计哲学，与 AI 编程中「快速迭代但保证质量」的需求高度契合。</p>
+<h2>局限性和现状</h2>
+<p>目前，Python 和 JavaScript 在 Vibe Coding 中确实更加普及，主要原因在于它们的生态丰富度和语法简洁性。动态类型语言在原型开发阶段确实更加灵活，而且 AI 训练数据中这些语言的代码占比很大。相比之下，Rust 的学习资源和代码语料仍然相对有限，这在一定程度上限制了 AI 模型对 Rust 的支持深度。</p>
+<p>不过，随着 Rust 在系统编程、Web 开发和区块链等领域的快速发展，以及 Microsoft、Google 等大厂的推动，这一差距正在逐渐缩小。</p>
+<h2>结论</h2>
+<p>Rust 通过其内在的安全机制、友好的诊断信息以及强大的编译时验证，为 Vibe Coding 提供了一条兼具高可靠性和自动化程度的开发路径。虽然它可能不如 Python 那样&quot;即写即跑&quot;，但在需要高质量、可维护代码的场景中，Rust 的这些特性能够显著提升人机协作的效率和成果质量。</p>
+<p>随着 AI 编程工具的不断发展和 Rust 生态的日益成熟，我相信会有越来越多的开发者发现：让 AI 在 Rust 的约束下编写代码，往往能够得到更加可靠和优雅的解决方案。这种&quot;约束即自由&quot;的开发体验，也许正是未来 AI 辅助编程的理想形态。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Rust'</category>
+            <category>'AI']</category>
+        </item>
+        <item>
+            <title><![CDATA[上线评论功能～]]></title>
+            <link>https://quarkpixel.github.io/p/250616-new-giscus-module</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250616-new-giscus-module</guid>
+            <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[添加基于 Giscus 的评论系统]]></description>
+            <content:encoded><![CDATA[<p>终于给博客加上了评论功能！🎉</p>
+<p>选用了 <a href="https://giscus.app/">giscus</a> 作为评论系统，它基于 GitHub Discussions，完全开源且免费。最重要的是，它支持 Markdown 语法，可以让我们能更好地交流想法。</p>
+<p>现在，你可以在每篇文章的底部看到评论区了。欢迎来聊聊天呀～</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>[ 'Develop Diary' ]</category>
+        </item>
+        <item>
+            <title><![CDATA[也许我们早已在电车难题中做出了选择？]]></title>
+            <link>https://quarkpixel.github.io/p/250609-the-trolley-problem-and-suicide</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250609-the-trolley-problem-and-suicide</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[聊聊阻止自杀与电车难题]]></description>
+            <content:encoded><![CDATA[<p>最近我在思考一个问题：电车难题的选择与阻止自杀的抉择是否有着相似的本质？</p>
+<h2>引子：一个假设性思想实验</h2>
+<p>最初的思考源于一个假设：</p>
+<blockquote>
+<p>假设世界有这样一条设定**（尽管价值观未必正确，但有助于讨论）<strong>：存在天堂，只有通过自杀</strong>（主观选择死亡）**的人因其&quot;勇敢&quot;而获得更好的待遇，而非自主死亡的人则命运平庸。</p>
+<p>在此设定下，一个人选择自杀，另一人阻止他，是否正确？</p>
+</blockquote>
+<p>这看似荒谬，但换个角度思考：<strong>选择自杀的人往往因极度痛苦而寻求解脱</strong>。自杀对他们而言，如同进入&quot;天堂&quot;或摆脱苦难。从这点看，自杀的动机与&quot;天堂假设&quot;殊途同归：主体都追求更好的结果。</p>
+<p>但前提是，若自杀未遂，生活未改善，痛苦依旧。关键问题是：<strong>若救下自杀者却无法善待他，阻止自杀是否成了错误？</strong></p>
+<h2>与电车难题的类比</h2>
+<p>我们可以将此与<strong>电车难题</strong>类比：</p>
+<ul>
+<li><strong>一人（自杀者）</strong>：若不拉杆**（不阻止自杀）<strong>，他得以&quot;解脱&quot;</strong>（如同进入天堂或摆脱痛苦）**</li>
+<li><strong>五人（在意他的人）</strong>：泛指任何得知自杀后会伤心的人，如亲友</li>
+<li><strong>抉择</strong>：拉杆**（阻止自杀）<strong>亦或不拉杆</strong>（放任自杀）**</li>
+</ul>
+<h2>道德权衡的复杂性</h2>
+<p>由此，问题转化为：</p>
+<p><strong>不拉杆</strong>：自杀者解脱，但在意他的人因失去他而痛苦。</p>
+<p><strong>拉杆</strong>：自杀者被救下，若未被善待，则继续痛苦；在意他的人免于悲伤。</p>
+<p>阻止自杀的人做错了吗？我的答案是：<strong>没有</strong>。他只是做出了电车难题中的选择，权衡了个体解脱与他人的情感损失。同样，若有人选择不阻止自杀，也不应苛责，因为这也是基于个人价值观的决定。</p>
+<h2>我们早已做出的选择</h2>
+<p>那么，对于电车难题中的拉杆抉择，我们是否早已在生活中做出了选择？</p>
+<p>在&quot;被救者未被善待&quot;的前提下，阻止自杀可能让痛苦延续，类似电车难题中牺牲一人救多数的道德困境。然而，若救下的人能被善待，痛苦得以缓解，这场抉择的意义便截然不同。</p>
+<h2>结语</h2>
+<p>或许，电车难题与阻止自杀的共通之处在于：我们都在有限的信息与复杂的道德权重中挣扎。拉杆与否，没有绝对的正误，<strong>关键在于后续的善待能否实现</strong>。</p>
+<p>如果我们能确保救下的灵魂被温柔以待，电车难题的拉杆，或许早已有了答案。否则，我们的选择可能只是将痛苦从一方移到另一方，永远在伦理的灰色地带徘徊。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Thinking']</category>
+        </item>
+        <item>
+            <title><![CDATA[Hsuan's Space 中用到的技术栈]]></title>
+            <link>https://quarkpixel.github.io/p/250525-tech-stack-in-hsuans-space</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250525-tech-stack-in-hsuans-space</guid>
+            <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[谈谈本站的开发历程]]></description>
+            <content:encoded><![CDATA[<p>关于「我要做一个关于自己的网页」这个 Flag 我已经立了若干年了，最近这段时间终于有动力来完成它。尝试了没有接触过的技术，花了近半个月的时间，完成了网页的搭建。</p>
+<p><img src="https://wakatime.com/badge/user/018b19a3-343c-48f6-8ba9-5713e3a014cc/project/e4f1a103-1fe2-4a7b-afe8-35b4df2164b6.svg?style=flat-square" alt="Wakatime badage">
+<em>Time in this web project over all time</em></p>
+<p>本站采用了现代化的 Web 开发技术栈，主要包括：SvelteKit、TailwindCSS、MDsveX 和 Skeleton UI.</p>
+<h2>1. 字体</h2>
+<p>正文部分使用 <a href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷</a>。</p>
+<h4>其余字体</h4>
+<ul>
+<li>Noto Serif SC Variable</li>
+<li>Noto Sans SC Variable</li>
+<li>Caveat Variable</li>
+<li>Gravitas One</li>
+</ul>
+<p>值得注意的是，本网站使用了<a href="https://chinese-font.netlify.app/zh-cn/online-split/">字体分包</a>技术，由<a href="https://chinese-font.netlify.app/zh-cn/">中文网字计划</a>支持。因此在初次访问网站时，字体会有很独特的加载顺序。</p>
+<h2>2. 动画</h2>
+<h3>可变字体动画</h3>
+<p>使用自己做的另外一款组件<a href="https://github.com/QuarkPixel/svelte-text-animation"><code>svelte-text-animation</code></a>，这款组件的开发是在网页的开发过程中想到的灵感，就花了差不多一个下午的时间来实现。整体效果还是很惊艳的，用在了首页 Landing
+的部分 😆。</p>
+<p>具体实现的细节其实很是很简单的，使用一个高斯函数叠加上一个边缘递减函数，就可以实现一个平滑的动画效果。</p>
+<h3>Logo 动画</h3>
+<p>我尝试了市面上很多的 SVG 动画库，但是要么就是太过臃肿，要么就是实现的效果很奇怪，没法做到我要求的“点对点移动”的效果。于是我心一狠，直接手撕了一个SVG动画引擎。其实实际实现起来，没有想象的那么复杂。这也多亏了
+Svelte 大量的内置函数，使用起来体验很不错。</p>
+<script>
+    import Logo from '$lib/components/Logo.svelte';
+    import { bounceOut, elasticOut } from 'svelte/easing';
+	let logoOfficial = true;
+</script>
+
+<p>&lt;button
+  class=&quot;mt-20 mb-3 w-full flex justify-around gap-10 _:h-30 _:w-40&quot;
+  onmouseenter={() =&gt; logoOfficial = false}
+  onmouseleave={() =&gt; logoOfficial = true}</p>
+<blockquote>
+</blockquote>
+<pre><code>&lt;Logo
+    official={logoOfficial}
+    easing={elasticOut}
+/&gt;
+&lt;Logo
+    official={logoOfficial}
+/&gt;
+&lt;Logo
+    official={logoOfficial}
+    easing={bounceOut}
+/&gt;
+</code></pre>
+</button>
+
+<div align="center" class="mb-15 opacity-65 font-gravitas-one">↑ Hover Me ↑</div>
+
+<h4>核心代码：</h4>
+<pre><code class="language-typescript">// Derive interpolated path coordinates
+let interpolatedPaths: Shape[] = $derived(
+	paths.map((path) =&gt;
+		path.initial.map((start, i) =&gt; {
+			const end = path.target[i];
+			const x = start[0] + (end[0] - start[0]) * path.tween.current;
+			const y = start[1] + (end[1] - start[1]) * path.tween.current;
+			return [x, y];
+		})
+	)
+);
+
+// Derive SVG path d attributes
+let dValues: string[] = $derived(
+	interpolatedPaths.map((points) =&gt; `M${points.map((point) =&gt; point.join(&#39; &#39;)).join(&#39;L&#39;)}Z`)
+);
+</code></pre>
+<h3>Header 的背景噪声图</h3>
+<p>具体实现是使用一张噪声纹理图</p>
+<center>
+<p>
+    <img src="/assets/noise-texture.png" alt>
+    <em>噪声纹理图</em>
+</p>
+</center>
+
+<h5>但由于不同屏幕尺寸可能会导致纹理图发糊。因此我做了这些工作：</h5>
+<ul>
+<li>添加属性 <code>image-rendering: pixelated;</code>，具体属性说明参见<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering">MDN</a></li>
+<li>动态计算图片展示大小，使得图片可以1:1像素展示在显示器上：</li>
+</ul>
+<pre><code class="language-typescript">function calcNoiseSize() {
+	const dpr = window.devicePixelRatio || 1;
+	noiseTextureSize = NOISE_TEXTURE_SIZE / dpr;
+}
+
+if (browser) {
+	calcNoiseSize();
+}
+
+onMount(() =&gt; {
+	window.addEventListener(&#39;resize&#39;, calcNoiseSize);
+
+	return () =&gt; window.removeEventListener(&#39;resize&#39;, calcNoiseSize);
+});
+</code></pre>
+<h3>Marquee</h3>
+<p>页面内所有的跑马灯效果均使用 <a href="https://github.com/selemondev/svelte-marquee"><code>svelte-marquee</code></a> 组件实现</p>
+<h3>Markdown 渲染</h3>
+<p>使用 <a href="https://mdsvex.pngwn.io/">MDsvex</a> 实现对 md 的渲染</p>
+<h2>部署和性能</h2>
+<p>项目使用 <code>@sveltejs/adapter-static</code> 生成静态网站，通过 GitHub Pages 进行部署。得益于 Svelte 的优秀性能和静态站点生成的特性，网站具有：</p>
+<ul>
+<li>快速的首屏加载</li>
+<li>优秀的 SEO 表现</li>
+<li>简单可靠的部署流程</li>
+</ul>
+<p>如果你对这个项目感兴趣，可以在 <a href="https://github.com/QuarkPixel/QuarkPixel.github.io">GitHub</a> 上查看源代码，项目代码采用 GPLv3 许可证开源。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>['Web'</category>
+            <category>'Develop Diary']</category>
+        </item>
+        <item>
+            <title><![CDATA[我从未将 Rust 视作一门「安全」的语言]]></title>
+            <link>https://quarkpixel.github.io/p/250523-never-regarded-rust-as-safety</link>
+            <guid isPermaLink="false">https://quarkpixel.github.io/p/250523-never-regarded-rust-as-safety</guid>
+            <pubDate>Fri, 23 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[安全只是它的 Side Effects]]></description>
+            <content:encoded><![CDATA[<p>每每在社交平台上看到有关 Rust 的内容，「内存安全」和「类型安全」总是如影随形，仿佛这是 Rust 的全部定义。Rust 似乎被贴上了一个光鲜的标签：安全语言。它的官网宣称「丰富的类型系统和所有权模型保证内存安全和线程安全」，社区也乐此不疲地传颂它的可靠性。然而，我从未将 Rust 视为一门「安全」的语言。安全，只是 Rust 独特设计带来的副作用，而非它的核心目标。Rust 的真正魅力，远不止于此。</p>
+<p>在这篇文章中，我将从 Rust 的设计哲学出发，剖析安全特性如何作为副作用自然浮现；探讨为何「安全」标签被官方和社区共同放大；并揭示 Rust 在性能、表达力和灵活性上的多面价值。我希望你能放下对「安全」的刻板印象，重新审视这门语言。</p>
+<h2>安全从何而来？</h2>
+<p>Rust 诞生于 Mozilla，旨在解决 C++ 在系统编程中的痛点：手动内存管理复杂、并发问题难以调试、错误排查耗时。它的核心设计——所有权模型、借用检查器和生命周期——并非为了追求「安全」，而是为了让开发者能够编写可靠、高效的系统级代码。这些机制的细节可以在 <a href="https://doc.rust-lang.org/book/">Rust 官方书籍</a> 中找到，但其核心思想很简单：通过编译时规则，确保内存和并发行为的正确性。</p>
+<p>所有权模型规定，每个值有且仅有一个所有者，值在作用域结束时自动销毁。这消除了 C++ 中手动释放内存的负担，同时避免了悬垂指针和双重释放。借用检查器进一步通过引用规则（不可变借用与可变借用互斥）约束内存访问，防止数据竞争。生命周期则确保引用的有效性，避免引用失效。这些机制共同构成了 Rust 的编译时保障体系，杜绝了空指针、缓冲区溢出等常见错误。</p>
+<p>但这些规则的初衷是什么？不是为了让开发者炫耀「我的代码内存安全」，而是为了解放我们，让我们专注于程序逻辑而非调试内存泄漏或线程死锁。安全，只是这些设计的副作用就。像健康饮食可能带来体重控制，Rust 的设计目标是可靠性和性能，安全是实现这些目标的自然结果。官方虽然强调「内存安全和线程安全」，但更突出「赋予每个人构建可靠且高效软件」的愿景。<strong>安全是手段，而非目的。</strong></p>
+<h2>Unsafe：语法层面的注释</h2>
+<p>如果 Rust 的安全特性是其设计的全部，为何它还提供了 <code>unsafe</code> 关键字？其实这个问题很好回答。毕竟作为一个系统级的编程语言，对底层的可操控性和 Python 一样、或者语法像 C++ 一样灵活好像都不那么合适。因此引入了这样一个「乍看奇怪，实则合理」的产物。</p>
+<p>我对 <code>unsafe</code> 的理解是，它是一种降低开发者心智负担的工具。在非 <code>unsafe</code> 代码中，Rust 的所有权模型和借用检查器充当守门人，自动防止内存泄漏、数据竞争或空指针错误。开发者无需时刻担心变量生命周期或指针合法性，编译器会在错误发生前报错。这种「默认安全」让开发者专注于逻辑而非内存管理。然而，当需要与硬件交互或优化性能时，unsafe 就像一个路标，提醒开发者：「这里要小心。」它要求明确声明责任，划定安全与非安全的边界。</p>
+<p>与 C++ 不同，C++ 要求开发者时刻保持警惕，而 Rust 的 unsafe 将高风险操作隔离到特定代码块，让开发者在大多数时候可以「偷懒」，仅在必要时全神贯注。这种设计平衡了安全与灵活性，体现了 Rust 的实用主义：通过编译时约束最大化可靠性，同时保留系统编程的控制力。unsafe 不是对安全的妥协，而是对开发者的信任，提醒他们在自由与责任间选择。安全，仍是 Rust 优化心智负担的副作用，而非绝对目标。</p>
+<h2>再谈为何「安全」被放大</h2>
+<p>「安全」成为 Rust 的代名词，源于官方的宣传以及社交媒体上越发趋于给一个事物打“标签”。现在的编程语言市场已经趋于饱和，对于新兴语言来说，极力需要一个“卖点”来推销自己。对于官方来说，「安全」就是那个卖点。而对于社交媒体来说，没有一个词可以比「安全」这样一个简洁有力的词来概括一门语言了。因此社交媒体上的这种做法，是极其不负责任的。</p>
+<p>但“安全”标签带来了认知偏差，让 Rust 被简化为“防御性”语言，掩盖其性能和表达力的优势。借用检查器的严格性让新手望而却步，凸显安全并非免费。作为程序员，我们应跳出“安全”这个人云亦云的概念，更加客观、更加全面的去了解一件事物。</p>
+<h2>安全之外</h2>
+<p>如果安全只是副作用，Rust 的真正价值是什么？答案在于它的多面性：性能、表达力和灵活性的完美平衡。</p>
+<p>首先，Rust 的性能接近 C++，得益于其零成本抽象（Zero-Cost Abstractions）。它没有运行时或垃圾回收器，编译器通过优化（如内联、循环展开）确保代码高效运行。这使得 Rust 在高性能场景（如 <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm">WebAssembly</a>、嵌入式系统）中大放异彩。</p>
+<p>其次，Rust 的类型系统和宏系统提供了强大的表达力。枚举和模式匹配让复杂逻辑更加简洁优雅；<a href="https://doc.rust-lang.org/book/ch20-05-macros.html">声明式宏</a>（<code>macro_rules!</code>）和过程宏支持元编程，极大地减少样板代码。这些特性让 Rust 代码不仅可靠，还充满美感，吸引了追求代码艺术的开发者。</p>
+<p>最后，Rust 的灵活性使其超越了传统系统编程语言的范畴。它支持多种编程范式（函数式、面向对象），适用于从区块链到 AI 的广泛领域。例如，Discord 使用 Rust 优化后端，AWS 的 Firecracker 虚拟化技术也依赖 Rust 的高性能和可靠性。这些案例虽非重点，但足以证明 Rust 的通用性。</p>
+<p>安全只是 Rust 的敲门砖。它的真正魅力在于，它让开发者在性能、可靠性和表达力之间找到平衡。你可以编写接近硬件的低级代码，也可以构建抽象层次高、逻辑清晰的高级系统，而不必被内存管理或并发问题拖累。Rust 不是“安全的 C++”，而是一门重新定义系统编程的语言。</p>
+<h2>重新定义 Rust 的价值</h2>
+<p>Rust 的魅力远不止「安全」二字。它以所有权模型和编译时检查为开发者卸下内存管理的重担，却从不以安全为唯一目标。性能、表达力与灵活性的融合，让 Rust 成为系统编程的新标杆。放下「安全语言」的刻板标签，我们应重新审视 Rust 的初心：赋予开发者自由与掌控力，构建可靠而高效的未来。无论是优化性能的极致追求，还是优雅代码的艺术表达，Rust 都以其独特的设计，邀请我们探索系统编程的无限可能。</p>
+]]></content:encoded>
+            <author>xuancongmeng@gmail.com (Xuancong Meng)</author>
+            <category>[ 'Rust' ]</category>
+        </item>
+    </channel>
+</rss>

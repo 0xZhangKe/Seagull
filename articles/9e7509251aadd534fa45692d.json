@@ -1,0 +1,11 @@
+{
+  "id": "9e7509251aadd534fa45692d",
+  "title": "使用pydub切分音频",
+  "summary": "使用pydub切分音频 前段时间另一个项目的负责人在做一款听力相关的demo测试，原定在周五下班前给开发一批单词音频的数据，但是因为原本找的一批单词音频音质很差，而且读音有误，眼看快要上线了。情急之下找了另外一个语音合成的软件，临时合成了200多个音频，但是导出的时候给的是完整的一个mp3，可开发的要求是单独的音频文件，现场用Adobe Premiere Pro切肯定也来不及了。 于是就找到了我，还好StackOverflow相关帖子很多，用pydub就能解决，代码也很好理解，具体代码如下： from pydub import AudioSegment from pydub.silence import split_on_silence # 放在虚拟环境 AudioSegment.ffprobe = '~/s…",
+  "content": "<h1>使用pydub切分音频</h1>\n<p>前段时间另一个项目的负责人在做一款听力相关的demo测试，原定在周五下班前给开发一批单词音频的数据，但是因为原本找的一批单词音频音质很差，而且读音有误，眼看快要上线了。情急之下找了另外一个语音合成的软件，临时合成了200多个音频，但是导出的时候给的是完整的一个mp3，可开发的要求是单独的音频文件，现场用Adobe Premiere Pro切肯定也来不及了。</p>\n<p>于是就找到了我，还好StackOverflow相关帖子很多，用pydub就能解决，代码也很好理解，具体代码如下：</p>\n<pre><code>from pydub import AudioSegment  \nfrom pydub.silence import split_on_silence  \n  \n# 放在虚拟环境\nAudioSegment.ffprobe = &#x27;~/site-packages/ffprobe&#x27;  \n  \ndef match_target_amplitude(aChunk, target_dBFS):  \n    change_in_dBFS = target_dBFS - aChunk.dBFS  \n    return aChunk.apply_gain(change_in_dBFS)  \n  \n  \n# 选择音频\nsong = AudioSegment.from_mp3(&quot;.mp3&quot;)  \n\n# 阈值可以根据实际情况调整\nchunks = split_on_silence (  \n    song,  \n    min_silence_len=200,  \n    silence_thresh=-100  \n)  \nfor i, chunk in enumerate(chunks):  \n\t# 前后都加silence才不会太突兀\n    silence_chunk = AudioSegment.silent(duration=500)  \n    audio_chunk = silence_chunk + chunk + silence_chunk  \n  \n\t# 平衡一下每个音频的音量\n    normalized_chunk = match_target_amplitude(audio_chunk, -20.0) \n\t\n\t# 按计数器命名并导出\n    normalized_chunk.export(  \n        f&quot;~/chunk{i}.mp3&quot;,  \n        bitrate = &quot;192k&quot;,  \n        format = &quot;mp3&quot;  \n    )\n</code></pre>\n<p>唯一可能会踩的坑是，当使用pip安装玩pydub之后，运行会报错<br>\n<code>FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code></p>\n<p>或者<br>\n<code>FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffmpeg&#x27;</code></p>\n<p>这个似乎是一个高频报错，网上很多办法都不好用，唯一一个成功的解决方案是：去ffbinaries的<a href=\"https://ffbinaries.com/downloads\" target=\"_blank\" rel=\"noopener noreferrer\">官网</a>下载<code>ffprobe</code>和 <code>ffmpeg</code>，然后放到虚拟环境的<code>site-packages</code>的目录下。</p>",
+  "image": null,
+  "publishedAt": "2024-04-22T15:26:17Z",
+  "sourceId": "207f6e65632bf687",
+  "sourceTitle": "Psychic Paper",
+  "link": "https://yuqiqin.me/use-pydub-to-segment-audio/"
+}

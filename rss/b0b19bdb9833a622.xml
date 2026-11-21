@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Shtetl-Optimized</title>
+	<atom:link href="https://scottaaronson.blog/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>https://scottaaronson.blog</link>
+	<description>The Blog of Scott Aaronson</description>
+	<lastBuildDate>Fri, 20 Nov 2026 22:20:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://scottaaronson.blog/wp-content/uploads/2021/10/cropped-Jacket-32x32.gif</url>
+	<title>Shtetl-Optimized</title>
+	<link>https://scottaaronson.blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">129520580</site>	<item>
+		<title>The stochastic parrots have apparently proved the Riemann Hypothesis</title>
+		<link>https://scottaaronson.blog/?p=10344</link>
+					<comments>https://scottaaronson.blog/?p=10344#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2026 18:29:03 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[The Fate of Humanity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10344</guid>
+
+					<description><![CDATA[&#8220;&#8230; it is very probable that all roots are real. Of course one would wish for a rigorous proof here; I have for the time being, after some fleeting vain attempts, provisionally put aside the search for this, as it appears dispensable for the immediate objective of my investigation.&#8221; &#8211;Bernhard Riemann, 1859 [Update: According to [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p class="wp-block-paragraph">&#8220;&#8230; it is very probable that all roots are real. Of course one would wish for a rigorous proof here; I have for the time being, after some fleeting vain attempts, provisionally put aside the search for this, as it appears dispensable for the immediate objective of my investigation.&#8221; &#8211;Bernhard Riemann, 1859</p>
+</blockquote>
+
+
+
+<p class="wp-block-paragraph">[<strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">Update:</mark></strong> According to “Poe’s Law,” there is no irony or sarcasm on the Internet so obvious that it won’t fly over countless people’s heads.  In line with that, lots of people on social media are now saying variants of “how dare Scott Aaronson call LLMs ‘stochastic parrots,’ that demeaning and trivializing term from 2021?  Doesn’t he understand that these so-called ‘stochastic parrots’ just proved the Riemann Hypothesis?”  ROFL.]</p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;m in California to visit <a href="https://www.oratomic.com/">Oratomic</a> and then <a href="https://www.inkhaven.blog/fall-26">Inkhaven</a>. I woke up this morning to the news that Levent Alpöge says that he&#8217;s gotten Anthropic models to <a href="https://alpo.ge/remark.pdf">prove the Generalized Riemann Hypothesis</a>, producing <a href="https://github.com/CocoSgt/riemann-hypothesis-lean">17.4 million (!!) lines of Lean code</a>.</p>
+
+
+
+<p class="wp-block-paragraph">At a dinner last night, someone asked me &#8220;so, how much longer until an AI proves the Riemann Hypothesis?  Still several more years?&#8221;  I replied, don’t be sure of such things anymore.  After all, AI has already proved that the nontrivial zeros of the Riemann zeta function are <a href="https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/">at most 3/8 away from the critical line</a> (<em>Quanta</em> just published its article on that breakthrough yesterday!), and that already carries most of the implications for number theory that a full proof of RH would have.  So who the hell knows what else is possible, and how quickly?</p>
+
+
+
+<p class="wp-block-paragraph">For those tuning in from home, the <a href="https://en.wikipedia.org/wiki/Riemann_hypothesis">Riemann Hypothesis</a> says (in its easiest-to-understand version) that the number of prime numbers from 1 to n is very close to what it would be if each integer x&gt;1 had an independent 1/ln(x) probability of being prime, up to a standard statistical error term that never exceeds Õ(√n).  While we&#8217;ve known since 1896 that the number of primes from 1 to n is asymptotic to n/ln(n) (that&#8217;s the famous <a href="https://en.wikipedia.org/wiki/Prime_number_theorem">Prime Number Theorem</a>), you could&#8217;ve imagined the deviations being much larger.</p>
+
+
+
+<p class="wp-block-paragraph">David Hilbert famously said, &#8220;If I were to awaken after having slept for a thousand years, my first question would be: Has the Riemann Hypothesis been proven?&#8221;  Meanwhile G. H. Hardy, on a ship that he feared might sink, sent his colleagues a telegram claiming to have proven RH, so that if the worst came to pass, at least the world might believe that a proof sank with him.</p>
+
+
+
+<p class="wp-block-paragraph">Many will of course question whether the proof announced today will stand.  They&#8217;ll point out that, despite how heavily the world is now &#8220;lean-ing&#8221; on it, the Lean formal verification system still has issues, from kernel bugs (which have, in the past, allowed proofs of 0=1) to uncertain soundness of the underlying type theory.  In my view, these issues can and should urgently be fixed!  Until they are, a sufficiently motivated AI could almost certainly exploit them to prove a false statement!</p>
+
+
+
+<p class="wp-block-paragraph">All the same, I see zero indications that that&#8217;s happening right now.  I note that, so far, not one of the AI results with Lean certificates has needed to be retracted (while several without Lean certificates <em>have</em> needed to be). So I&#8217;m not 100% sure, but my bet is that the proof will stand.</p>
+
+
+
+<p class="wp-block-paragraph">Mathematicians of course won&#8217;t be satisfied with 17 million lines of Lean.&nbsp; They&#8217;ll be satisfied when, and only when, they&#8217;re able to explain and distill and reconstruct the ideas for themselves.&nbsp; And that will probably take years, since human mathematicians move only at biological speeds.&nbsp; And while they&#8217;re working on it, how many <em>more</em> such wonders will there be, in this age of wonders and terrors?</p>
+
+
+
+<p class="wp-block-paragraph">My 9-year-old son, informed that RH was proved, replied that he&#8217;s not even surprised at this point.  Maybe you need to have come of age in the human math era to be surprised by such things.</p>
+
+
+
+<p class="wp-block-paragraph">The P=?NP problem now moves firmly into place as the Final Boss of the Math We&#8217;ve Cared About, the position I always thought it should occupy.  But for how much longer?  For how much longer will <em>anything</em> last that we currently take for granted?</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">It was only a couple days ago that my wife and I had the following conversation:</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Dana:</strong> I turned off the irrigation, yet somehow water in our house is still leaking. We need to&#8230;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Me:</strong> Look, a lot of the smartest people I know now think that recursive self-improvement and the end of the entire known world are coming in 12-18 months. This leak&#8230;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Dana:</strong> We should still fix the leak.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10344</wfw:commentRss>
+			<slash:comments>71</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10344</post-id>	</item>
+		<item>
+		<title>More podcasts, conversations, talks</title>
+		<link>https://scottaaronson.blog/?p=10321</link>
+					<comments>https://scottaaronson.blog/?p=10321#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sun, 15 Nov 2026 14:30:28 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Complexity]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10321</guid>
+
+					<description><![CDATA[Here&#8217;s my talk &#8220;Are We Cooked?&#8221; about the AI Mathocalypse&#8212;the one where, every time I give it, I need to update it with all the big theorems AI has proved since the last time I gave the talk. This version is from the Institute for Foundations of Machine Learning (IFML) here at UT Austin, back [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Here&#8217;s my talk &#8220;Are We Cooked?&#8221; about the AI Mathocalypse&#8212;the one where, every time I give it, I need to update it with all the big theorems AI has proved since the <em>last</em> time I gave the talk.  This version is from the Institute for Foundations of Machine Learning (IFML) here at UT Austin, back on October 2 (so, ancient times).</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/aOo_CoM4hcE?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;start=3&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">Here I am with Rabbi Neil Blumofe of Agudas Achim synagogue in Austin.  Rabbi Blumofe asks me about quantum mechanics, AI, consciousness, free will, why I say &#8220;please&#8221; and &#8220;thank you&#8221; to GPT, and why I blog about Israel.  The questions from the audience, unexpectedly, were more like &#8220;will cryptocurrencies that use RSA or Diffie-Hellman take longer to break with quantum computers than those that use elliptic curve cryptography?&#8221;  Thanks to Rabbi Blumofe for doing this.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/u5rzC2VtxyY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">And here’s a podcast with Yu Shen, with Chinese subtitles. I haven’t watched this one and don’t remember what we talked about.  (Oh — looking at the title graphic, apparently we talked about when AI will solve the P vs NP problem?)</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/1GNYbhJ7fVA?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10321</wfw:commentRss>
+			<slash:comments>53</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10321</post-id>	</item>
+		<item>
+		<title>Dana&#8217;s talk on OpenAI&#8217;s proof of the Unique Games Conjecture, now on YouTube!</title>
+		<link>https://scottaaronson.blog/?p=10318</link>
+					<comments>https://scottaaronson.blog/?p=10318#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2026 20:27:28 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Complexity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10318</guid>
+
+					<description><![CDATA[Enjoy all three hours of this! Dana covers what the Unique Games problem is and why people cared about it, the structure of a proof of its NP-hardness, exactly where the previous attempts to complete the proof (based on the Long Code and the Hadamard Code) got stuck, the new tree-based code that the AI [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/de-CszI9YXc?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<p class="wp-block-paragraph">Enjoy all three hours of this! Dana covers what the Unique Games problem is and why people cared about it, the structure of a proof of its NP-hardness, exactly where the previous attempts to complete the proof (based on the Long Code and the Hadamard Code) got stuck, the new tree-based code that the AI discovered, and how the new code gets around the Long Code and Hadamard Code&#8217;s limitations. She doesn&#8217;t get to the soundness analysis.</p>
+
+
+
+<p class="wp-block-paragraph">Feel free to ask questions in the comments.  I might write some notes here later with my own doofus understanding of Dana&#8217;s talk.  Experts are of course hard at work on more formal writeups of the proof (which will hopefully be more comprehensible than the AI&#8217;s writeup).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10318</wfw:commentRss>
+			<slash:comments>132</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10318</post-id>	</item>
+		<item>
+		<title>Aaronson-Ambainis Conjecture proved!  (By AI, of course)</title>
+		<link>https://scottaaronson.blog/?p=10295</link>
+					<comments>https://scottaaronson.blog/?p=10295#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sun, 08 Nov 2026 21:44:31 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Complexity]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Rage Against Doofosity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10295</guid>
+
+					<description><![CDATA[The &#8220;For Dummies&#8221; Version (apologies for not including this earlier): We now, of course, live in age where longstanding open problems in quantum computing theory (and all theoretical computer science, and all math) are dropping like flies, to the extent that there&#8217;s no way I could possibly do a post on each and every bombshell. [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><strong>The &#8220;For Dummies&#8221; Version (apologies for not including this earlier):</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Yes, an AI solved a big open problem about quantum computing</li>
+
+
+
+<li>No, this doesn&#8217;t kill quantum supremacy, or change how we build quantum computers, or whatever else you read on Twitter</li>
+
+
+
+<li>What it does, is to rule out a potential class of quantum speedups that most of us didn&#8217;t believe would exist anyway (namely, those that would compute a yes-or-no property of exponentially many <em>random</em> bits, superpolynomially faster than any classical algorithm)</li>
+
+
+
+<li>It means my prediction was right, so you should listen to me more in the future!</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">We now, of course, live in age where longstanding open problems in quantum computing theory (and all theoretical computer science, and all math) are dropping like flies, to the extent that there&#8217;s no way I could possibly do a post on each and every bombshell.  But I can&#8217;t exactly avoid the Aaronson-Ambainis Conjecture, given that my name is on it, and that I cared about the answer to this one (back in 2019, I even <a href="https://scottaaronson.blog/?p=4414">blogged</a> about an attempted solution that ultimately turned out to be fallacious).</p>
+
+
+
+<p class="wp-block-paragraph">For those tuning in from home, the AA Conjecture, which <a href="https://arxiv.org/abs/0911.0996">Andris and I posed</a> back in 2009, says that every degree-d polynomial p:{0,1}<sup>n</sup>→[0,1] in n Boolean variables, with constant variance, has some variable whose influence is at least 1/poly(d). The reason Andris and I cared about this conjecture is that, as we proved, it implies that there&#8217;s no superpolynomial advantage of quantum query complexity over classical query complexity for decision problems that works on <em>most</em> Boolean inputs. Or, in terms of complexity classes, that there&#8217;s no hope of separating P from BQP <em>relative to a random oracle</em>, without proving P≠BQP or something of the kind in the unrelativized world. This would finally answer a question of <a href="https://arxiv.org/abs/cs/9811023">Fortnow and Rogers</a> from 1998.</p>
+
+
+
+<p class="wp-block-paragraph">The connection between quantum algorithms and polynomials came from the famous 1998 paper of <a href="https://arxiv.org/abs/quant-ph/9802049">Beals et al.</a>, which showed that, if Q is a quantum algorithm that makes T queries to an oracle X, then Pr[Q(X) accepts] can be written as a multivariate real polynomial p(X) in the bits of X, of degree at most 2T. The proof of my and Andris&#8217;s result is then simply this: take the polynomial p, find in it a variable of influence at least 1/poly(T), and query that variable, and keep repeating until there&#8217;s no longer such an influential variable&#8212;at which point, by assumption, p is nearly a constant polynomial, which means you&#8217;ve learned whether Q accepts with high probability over X. This provides a classical simulation of the quantum algorithm Q&#8212;a simulation that makes poly(T) queries to the oracle X and that works for most X&#8217;s.</p>
+
+
+
+<p class="wp-block-paragraph">The AA Conjecture caught on to an extent Andris and I couldn&#8217;t have predicted. Some who worked on it barely even cared about the implication for quantum computing, and just wanted to solve the problem about polynomials! There were, I&#8217;m both proud and sorry to report, Fourier analysis experts and grad students who oriented their whole research programs around trying to prove AA, with lots of proofs of special cases, some of them <a href="https://arxiv.org/pdf/2608.19158">very</a> <a href="https://arxiv.org/abs/2608.20297">recent</a>. A proof of full AA was one of the last remaining open problems in quantum query complexity that everyone seemed to agree was centrally important. I was surprised, honestly, to see it missing from OpenAI&#8217;s <a href="https://scottaaronson.blog/?p=10169">Mathocalypse dump</a> a few weeks ago. Surely they tried it, so was it really so much harder than all the problems that <em>were</em> solved?</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">Now a startup called Physical Superintelligence has <a href="https://psi.inc/research/aaronson-ambainis/">announced a proof of the AA Conjecture</a>, specifically showing that there&#8217;s a variable of influence at least ~1/d<sup>6</sup>, which they say they obtained using their proprietary research harness on an internal Claude model.  (What role the harness played, compared to the internal model, is something I don&#8217;t know.)  The effort was led by David Turturean and Jim Halverson at PSI.  They actually let me know about this several weeks ago, but I had to keep it secret until the announcement late last week.</p>
+
+
+
+<p class="wp-block-paragraph">I haven&#8217;t yet understood the proof, although I hope to. In the meantime, though, I believe the proof is correct for two reasons. Firstly, there&#8217;s a Lean certificate, and secondly, human experts (<em>I&#8217;m</em> no longer an expert on my own conjecture!) have already gone over it and understood it. In fact, there&#8217;s already a <strong><a href="https://guyblanc.github.io/AA_Exposition.pdf">beautiful-looking exposition</a></strong> written by Guy Blanc of MIT and Jordan Docter, Carmen Strassle, and Li-Yang Tan of Stanford, which looks like a perfect starting point for those seeking to go much deeper. Or, for those seeking to go only <em>slightly</em> deeper, PSI&#8217;s <a href="https://psi.inc/research/aaronson-ambainis/"><strong>blog post on the advance</strong></a> is sufficiently well-written that it saves me from the need to write too much more here.</p>
+
+
+
+<p class="wp-block-paragraph">Alas, as <a href="https://x.com/quantumashley/status/2119160138711904463">reported</a> by Ashley Montanaro, there were the usual forehead-banging misconceptions about what this result means for quantum computing. So for example, Pedro Domingos of U. of Washington <a href="https://x.com/pmddomingos/status/2118865209637179826">blasted out to his 137,000 X followers</a> that the proof means that &#8220;the dream of quantum supremacy is dead.&#8221; The truth, as Pedro knows perfectly well (or easily could know), is that it rules out <em>one particular type of quantum supremacy (namely, for yes-or-no problems relative to random oracles) that we&#8217;d already conjectured didn&#8217;t exist anyway.</em> It doesn&#8217;t undermine any form of quantum supremacy that we <em>did</em> conjecture to exist! It has zero effect, for example, on Shor&#8217;s factoring algorithm, which uses a highly <em>non</em>-random (periodic) oracle for the key internal step. It has zero effect on the simulation of quantum physics and chemistry, which generally doesn&#8217;t depend on oracle algorithms at all. Even just relative to random oracles, the <a href="https://arxiv.org/abs/2204.02063">Yamakawa-Zhandry breakthrough</a> from 2022 dramatically underscored that, if we switch our attention from decision problems to other kind of problems (in Yamakawa and Zhandry&#8217;s case, to NP search problems), then exponential quantum speedups <em>do</em> become possible. Anyway, this was sufficiently intellectually dishonest on Pedro&#8217;s part that it makes me disinclined to take him seriously about anything ever again [ADDED: I appreciate that Pedro has now posted a <a href="https://x.com/pmddomingos/status/2119862160398639365?s=46">partial correction</a>, saying &#8220;or maybe not&#8221;].</p>
+
+
+
+<p class="wp-block-paragraph">But, OK, given how radically new it is to have an AI solve so many of our longstanding open problems, I suppose &#8220;people are wildly misinterpreting a QC advance on social media&#8221; is an almost comfortingly familiar problem to have!</p>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re wondering how I feel about the proof of AA&#8212;well, much like my wife Dana with the Unique Games Conjecture, it&#8217;s many different emotions at once.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Satisfied</strong> that our conjecture turned out to be true after all (it&#8217;s nice to be 100% right about something from time to time!)</li>
+
+
+
+<li><strong>Awestruck</strong> by the new reality of the world in which we live in</li>
+
+
+
+<li><strong>Disappointed</strong> that humans didn&#8217;t get to snag this conjecture before the robots did (with some more years, I think it&#8217;s very likely that they would have)</li>
+
+
+
+<li><strong>Fatigued</strong> by the endless wonders from Aladdin&#8217;s Cave, the neverending buffet of solutions to longstanding open problems, wondering when if ever we&#8217;ll have time to digest it all</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Anyway, huge congratulations to David Turturean and Jim Halverson, to Physical Superintelligence, and of course to Claude on this achievement!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10295</wfw:commentRss>
+			<slash:comments>44</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10295</post-id>	</item>
+		<item>
+		<title>Thoughts on a historic week</title>
+		<link>https://scottaaronson.blog/?p=10283</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 17:48:44 +0000</pubDate>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Obviously I'm Not Defending Aaronson]]></category>
+		<category><![CDATA[The Fate of Humanity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10283</guid>
+
+					<description><![CDATA[As everyone knows, this week was a (an?) historic one for the State of Texas and for the United States as a whole&#8212;because this is the week when my wife Dana finally gave a 3-hour public lecture on OpenAI&#8217;s recent proof of the Unique Games Conjecture! Thanks so much to the nearly 200 people who [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">As everyone knows, this week was a (an?) historic one for the State of Texas and for the United States as a whole&#8212;because this is the week when my wife Dana finally gave a 3-hour <a href="https://scottaaronson.blog/?p=10232">public lecture</a> on OpenAI&#8217;s recent proof of the Unique Games Conjecture!  Thanks so much to the nearly 200 people who joined us in person or via Zoom, and to the staff of UT Austin&#8217;s CS department for pulling the event together on short notice.  Video will be up on YouTube as soon as we can manage it.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">But also, yes, there was an election.</p>
+
+
+
+<p class="wp-block-paragraph">I remember that, when Dana and I moved to Texas in the summer of 2016, we were excited to be a small part of what seemed at the time like Texas’s impending transformation into a cosmopolitan blue state.</p>
+
+
+
+<p class="wp-block-paragraph">And now the prophecy is finally being fulfilled. But so many strange and harrowing things have happened in the interim, that I feel like Murph when her father finally returns to her at the end of the movie <a href="https://en.wikipedia.org/wiki/Interstellar_(film)">Interstellar</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">So it turns out that, indeed, the Democrats could&#8217;ve easily recaptured both houses of Congress without any need to sell their souls to the likes of Hasan Piker or Abdul El-Sayed.  And now the keffiyeh-clad revolutionaries will claim a mandate directly from the people, to put to the sword all the evil landlords and techbros and kulaks and bourgeoisie and (obviously) Zionists, and thereby finally usher in the utopia that failed the first 10,000 times it was tried.  I see them as more likely to inspire a Republican comeback in 2028 (as unlikely as it seems this week) than to achieve their stated goals.</p>
+
+
+
+<p class="wp-block-paragraph">For please remember that the socialist firebrands massively <em>underperformed</em> more moderate Democrats on Tuesday&#8212;it looks like the socialists were merely lifted up by the same tide of justified anti-MAGA rage.  Yes, in the US and across the Western world, some university humanities departments continue to churn out young people who&#8217;d see my family&#8217;s slaughter as an inspiring (or at least deeply understandable) act of revolutionary justice, and who vote on that basis.  By and large, though, the American voters simply belatedly realized that Trump is a charlatan who was never going to deliver anything he promised, and also they wanted cheaper gas.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">The Allied victory over Nazi Germany was glorious, it called for parades and dancing in the street, and it was 3,000% earned by Nazi behavior if anything in human history ever was. It left only one tiny problem for the future&#8212;namely that, within the winning coalition, the fans of liberal democracy, science, and Enlightenment still needed to confront the Stalinists, whose evil rivaled even the Nazis&#8217;, yet who believed <em>their</em> fanatical ideology to be the one vindicated by events. Why was I so often thinking about that these past couple days?</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">There was, of course, <em>also</em> a big election in Israel. Given the results, I pray that Gadi Eisenkot finds some way to form a coalition, or at least soft coalition, with Israel&#8217;s Arab parties, since that&#8217;s clearly what it will now take finally to topple Netanyahu, a man whose corruption (like Trump&#8217;s or Ken Paxton&#8217;s) knows no bounds. I&#8217;m under no illusions that this step would do anything to appease the hundreds of millions of protesters around the world whose true demand (as they&#8217;ll explain if you ask them) never had anything to do with Israeli policies or Gaza or the West Bank or Bibi Netanyahu, but was always simply that Israel cease to exist&#8212;that Israel&#8217;s Jews either &#8220;go back to Poland&#8221; or the other countries where their grandparents were murdered or expelled, or preferably just die, as on October 7.</p>
+
+
+
+<p class="wp-block-paragraph">Nevertheless, I pray for a coalition of moderate Israeli Jews and Arabs, firstly because it&#8217;s morally right, secondly because it&#8217;s politically expedient, and thirdly because it will impress on at least some fair-minded observers the enormity of the moral chasm here&#8212;that, whereas the Arab countries expelled or murdered virtually all of their Jews, the State of Israel not only tolerates its Arab minority but gives it the right to vote and to wield power.</p>
+
+
+
+<p class="wp-block-paragraph">Whatever else one can say, Israel&#8217;s Arabs have been sufficiently loyal to their nation that, on October 7, Hamas murdered them right along with the Jews, treating them as Zionist collaborators and traitors to Islam.  I&#8217;d like to see that loyalty rewarded with a role in Israel&#8217;s governing coalition.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">As is becoming standard practice with my political posts, I&#8217;m closing the comments&#8212;because life is short, and these days, the overwhelming majority of comments that I get on posts like this one, <em>whichever</em> ideological axe they&#8217;re grinding, are not ones that engender in me even minimal respect for their authors.  I apologize to those who would&#8217;ve actually pursued a thoughtful dialogue with me or others had I left the comments open&#8212;to all five of you, or however many righteous men of Sodom there might be.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10283</post-id>	</item>
+		<item>
+		<title>Podcasts about the Topic: Part III, with Brian Greene</title>
+		<link>https://scottaaronson.blog/?p=10270</link>
+					<comments>https://scottaaronson.blog/?p=10270#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sat, 31 Oct 2026 21:40:33 +0000</pubDate>
+				<category><![CDATA[Adventures in Meatspace]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[The Fate of Humanity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10270</guid>
+
+					<description><![CDATA[Boooooo! What spooooky times we now live in, with AI rapidly advancing in capabilities and solving more and more major open math problems! So it seems like a perfect occasion to share yet another podcast. I know I&#8217;ve been dropping them like every day, but this is a special one, with Brian Greene for his [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Boooooo!  What <em>spooooky</em> times we now live in, with AI rapidly advancing in capabilities and solving more and more major open math problems!</p>
+
+
+
+<p class="wp-block-paragraph">So it seems like a perfect occasion to share yet another podcast.  I know I&#8217;ve been dropping them like every day, but this is a <a href="https://www.youtube.com/watch?v=NWNbAEivyvs">special one</a>, with Brian Greene for his World Science Festival, recorded in-person when I visited Columbia University a week ago.  Note that we don&#8217;t talk about OpenAI&#8217;s refutation of the Exponential Time Hypothesis because the announcement of that was still two days in the future!</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/NWNbAEivyvs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph"><strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-red-color">Bonus Addition From Just This Morning (Nov. 3):</mark></strong> <a href="https://www.youtube.com/watch?v=C4xrZCZfmMc&amp;t=176s">Another podcast</a>, about quantum computing, foundations of quantum mechanics, AI, consciousness, and I forget what else &#8230; this one with writer Robert Wright, whose book <a href="https://www.amazon.com/clp/0679763996?lv=shuf&amp;channelId=500">The Moral Animal</a> made a huge impression on me back when I was 13 years old!</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/C4xrZCZfmMc?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;start=176&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10270</wfw:commentRss>
+			<slash:comments>53</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10270</post-id>	</item>
+		<item>
+		<title>Talk by Dana Moshkovitz: The Unique Games Conjecture &#8211; Proved (!!?)</title>
+		<link>https://scottaaronson.blog/?p=10232</link>
+					<comments>https://scottaaronson.blog/?p=10232#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 23:27:34 +0000</pubDate>
+				<category><![CDATA[Adventures in Meatspace]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Complexity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10232</guid>
+
+					<description><![CDATA[In my &#8220;Mathocalypse&#8221; post, I mentioned that my wife Dana&#8212;who&#8217;s been working on Subhash Khot&#8217;s Unique Games Conjecture since ~2009, for the entire time I&#8217;ve known her&#8212;has for the past few weeks (while on sabbatical at the Simons Institute in Berkeley) been spending essentially all of her time laboring to understand OpenAI&#8217;s recent proof of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="aligncenter size-full"><a href="https://scottaaronson.blog/wp-content/uploads/2026/10/image-3.png"><img loading="lazy" decoding="async" width="359" height="393" src="https://scottaaronson.blog/wp-content/uploads/2026/10/image-3.png" alt="" class="wp-image-10267" srcset="https://scottaaronson.blog/wp-content/uploads/2026/10/image-3.png 359w, https://scottaaronson.blog/wp-content/uploads/2026/10/image-3-274x300.png 274w" sizes="auto, (max-width: 359px) 100vw, 359px" /></a></figure>
+</div>
+
+
+<p class="wp-block-paragraph">In my &#8220;Mathocalypse&#8221; post, I <a href="https://scottaaronson.blog/?p=10169">mentioned</a> that my wife Dana&#8212;who&#8217;s been working on Subhash Khot&#8217;s <a href="https://en.wikipedia.org/wiki/Unique_games_conjecture">Unique Games Conjecture</a> since ~2009, for the entire time I&#8217;ve known her&#8212;has for the past few weeks (while on sabbatical at the Simons Institute in Berkeley) been spending essentially all of her time laboring to understand <a href="https://github.com/openai/math/blob/main/preprints/The-Unique-Games-Theorem-September-23-2026/paper.pdf">OpenAI&#8217;s recent proof of the conjecture</a>. Having now studied the proof closely in collaboration with Subhash Khot himself, Johan Håstad, Dor Minzer, and other colleagues, and (naturally) GPT-6 Astra, Dana probably now understands this crown jewel of OpenAI&#8217;s release as well as anyone does. This week, she gave two well-received whiteboard talks on the proof at Simons Institute. So, I and others encouraged her to give the same talks next week at UT Austin when she&#8217;s back here, and Dana agreed! Because of the large timely interest, we&#8217;re going to do a live Zoom option, and will also record the talk for later sharing on YouTube. <em>Please note:</em> While all are welcome, this is a 2-hour technical talk.  The first hour will review key ideas from hardness of approximation, while the second hour will describe the new construction. &#8212;SA</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph"><strong>Title:</strong> The Unique Games Conjecture &#8211; Proved (!!?)</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Speaker:</strong> <a href="https://www.cs.utexas.edu/~danama/">Dana Moshkovitz</a> (UT Austin)</p>
+
+
+
+<p class="wp-block-paragraph"><strong>When:</strong> Wednesday Nov. 4, 3:30-5:30pm US Central (with a brief break in the middle)</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where:</strong> UT Austin, Gates Dell Complex 6.302.  <a href="https://utexas.zoom.us/j/99833119884">Live Zoom will be available here</a>, and a recording will be available later.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Abstract:</strong> The Unique Games Conjecture of Khot says that it is NP-hard, given a system of linear equations of the form x<sub>i</sub>-x<sub>j</sub>=b<sub>ij</sub> (mod p) over variables x<sub>1</sub>&#8230;x<sub>n</sub>, where 99% fraction of the equations can be satisfied, to find an assignment satisfying 1% of the equations (here p is a sufficiently large constant).</p>
+
+
+
+<p class="wp-block-paragraph">This conjecture implies optimal inapproximability results for many optimization problems.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">A few weeks ago OpenAI released a writeup with a proof of the&nbsp;Unique Games Conjecture, as well as a Lean formalization of the proof. The writeup, like others released that day, is not written in a way that&#8217;s especially readable to human mathematicians.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">My goal in this talk is to offer my mental map of the proof, in a way that&#8217;s helpful to theoretical computer scientists who are familiar with the&nbsp;area. I think of the innovation as a new code construction, &#8220;Hadamard with a noise test.&#8221; I&#8217;ll sketch how it fits into the NP-hardness reduction. Then I&#8217;ll describe the code construction fully and sketch its soundness analysis.&nbsp; &nbsp;&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;ll also point out a couple of ingredients of the proof that are of independent interest, like a simple quadratic that behaves &#8220;like a linear,&#8221; and a probability bound using a trick with harmonic numbers.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10232</wfw:commentRss>
+			<slash:comments>27</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10232</post-id>	</item>
+		<item>
+		<title>Podcasts about the Topic: Part II</title>
+		<link>https://scottaaronson.blog/?p=10239</link>
+					<comments>https://scottaaronson.blog/?p=10239#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2026 22:03:37 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[Complexity]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10239</guid>
+
+					<description><![CDATA[As always, I strongly recommend 2x speed, which compensates somewhat for my verbal infelicities! New! More podcasts keep dropping! This one is with the AI alignment researcher Roman Yampolskiy, about &#8230; well, AI alignment, plus the Mathocalypse, plus quantum computing, plus whether the universe is a simulation, and I forget what else! Man do the [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">As always, I <em>strongly</em> recommend 2x speed, which compensates somewhat for my verbal infelicities!</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">New!  More podcasts keep dropping!  <a href="https://www.youtube.com/watch?v=NDS2dw1vJQs">This one</a> is with the AI alignment researcher Roman Yampolskiy, about &#8230; well, AI alignment, plus the Mathocalypse, plus quantum computing, plus whether the universe is a simulation, and I forget what else!  <em>Man</em> do the YouTube comments make me despair of humanity though.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/NDS2dw1vJQs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">Another one that recently dropped, <a href="https://www.youtube.com/watch?v=UXuNGuHdUWY&amp;t=2s">with Sophia Aryan</a>:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/UXuNGuHdUWY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;start=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.youtube.com/watch?v=3yXtXTwz4J4">With Curt Jaimungal:</a></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/3yXtXTwz4J4?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<p class="wp-block-paragraph">The title Curt put next to my head could&#8217;ve been in reference to many, many things! But sorry, he just mean AI.  He and I start with the <a href="https://scottaaronson.blog/?p=10169">Mathacre</a>, of course, but then we get onto the firewall paradox and then Curt starts asking about computational complexity and the Second Law, and then about <a href="https://scottaaronson.blog/?p=1799">Integrated Information Theory</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">Ah, and another one that just dropped!  <a href="https://www.youtube.com/watch?v=2_CZfN2iOFk">Man&#8217;s Search for Meaning podcast</a> (recorded in-person in Austin), with Yannick Bernard, who asked me about quantum computing, AI, my personal story, grade-skipping, antisemitism, and I don&#8217;t even remember what else.  I didn&#8217;t refuse to answer anything.  (<em>Note:</em> this one was recorded over the summer, which is why I so weirdly omit the latest AI math breakthroughs!)</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/2_CZfN2iOFk?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">OK, despite the title of this post, short break from &#8220;The Topic.&#8221;  Here&#8217;s an <a href="https://www.youtube.com/watch?v=kMHCl2PGloQ">absolute masterpiece</a> of mathematical exposition, from the &#8220;Polylog&#8221; YouTube channel, which tells the story of the determination of Busy Beaver values through spectacular animations.  I play cameo roles in the video, although I embarrass myself (as the video silently points out) by transposing two digits in the value of BB(5)&#8230;!</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/kMHCl2PGloQ?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">Just for old times&#8217; sake, a short <a href="https://www.youtube.com/watch?v=4Sn6kR1fPRY">podcast about quantum computing</a> with Danny Li.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" class="youtube-player" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/4Sn6kR1fPRY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en-US&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe>
+</div></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">And, coming soon (not on YouTube quite yet): a conversation about the Mathacre with celebrated physics popularizer (and character on <em>The Big Bang Theory</em>) <a href="https://www.briangreene.org/">Brian Greene</a>, recorded in-person in NYC during my recent trip to <a href="https://www.scottaaronson.com/talks/arewecooked5.pptx">speak</a> in the math department at Columbia University!</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">And to preempt the inevitable comments about it: <strong>yes</strong>, my students just came to my office to tell me that an OpenAI model has now <a href="https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf">refuted the Exponential Time Hypothesis</a>, by giving an algorithm to solve 3SAT in an amount of time that scales roughly like exp(n/√log(n)).  Even as we struggle to digest the previous courses, the endless buffet continues!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10239</wfw:commentRss>
+			<slash:comments>162</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10239</post-id>	</item>
+		<item>
+		<title>Vote! (Israeli edition)</title>
+		<link>https://scottaaronson.blog/?p=10235</link>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sun, 25 Oct 2026 21:54:26 +0000</pubDate>
+				<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[The Fate of Humanity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10235</guid>
+
+					<description><![CDATA[Someone writing an article for the Israeli press about “people abroad who love Israel but might be worried” emailed me the following questions: “1. What is something about Israel that you admire/appreciate over the years? 2. What are you worried the most about Israel these days?” So I replied as follows: “It’s hard to know [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Someone writing an article for the Israeli press about “people abroad who love Israel but might be worried” emailed me the following questions:</p>
+
+
+
+<p class="wp-block-paragraph">“1. What is something about Israel that you admire/appreciate over the years?</p>
+
+
+
+<p class="wp-block-paragraph">2. What are you worried the most about Israel these days?”</p>
+
+
+
+<p class="wp-block-paragraph">So I replied as follows:</p>
+
+
+
+<p class="wp-block-paragraph">“It’s hard to know where to start with either of your questions! But briefly:</p>
+
+
+
+<p class="wp-block-paragraph">Tiny Israel standing up for itself, against an often hostile and unjust world, is a huge part of what’s given me the self-confidence to stand up for myself in my own life. That was true even before I had visited Israel or spent significant time there, gazed across the desert at the still-clear ruins of the Roman siege of Masada, staggered overwhelmed out of Yad Vashem into the sunlight of Jerusalem, tasted the hummus or pomegranate juice or ice cream with blended fruit, befriended or had academic collaborations with dozens of Israelis, or married an Israeli woman.</p>
+
+
+
+<p class="wp-block-paragraph">My fear is merely the ‘obvious’ one — that, in response to the staggering hostility directed against the &#8216;Jew among the nations,&#8217; Israel will become more and more belligerent, isolated, and right-wing. It will get demographically overwhelmed by those who don’t want to work or serve in the army, while hundreds of thousands of secular educated Israelis leave. It will be internally divided almost to the point of civil war. It will repudiate the liberal-democratic vision of Herzl and Ben-Gurion, of world-class universities and making the deserts bloom, for the swaggering, theocratic vision of Smotrich and Ben-Gvir, of chasing Palestinians from their olive groves. It will become more and more like the hateful caricature of itself that the anti-Israel people in the West always imagined. And then, having been internally weakened in all of these ways, it will finally be destroyed by its external enemies, who will never have rested the whole time, who never once wavered in their dream of a second Holocaust.</p>
+
+
+
+<p class="wp-block-paragraph">I hope and pray that in the upcoming election, the Israeli voters make optimistic choices that repudiate these fears.”</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph">As I&#8217;ll do more and more with political posts, I&#8217;m leaving the comments off.  Why?  Because my remaining life is too short to spend it battling an endless parade of trolls and griefers, leftists and rightists and just nihilists, who might or might not be AI.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10235</post-id>	</item>
+		<item>
+		<title>Vote!</title>
+		<link>https://scottaaronson.blog/?p=10222</link>
+					<comments>https://scottaaronson.blog/?p=10222#comments</comments>
+		
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2026 05:13:08 +0000</pubDate>
+				<category><![CDATA[Adventures in Meatspace]]></category>
+		<category><![CDATA[Announcements]]></category>
+		<category><![CDATA[The Fate of Humanity]]></category>
+		<guid isPermaLink="false">https://scottaaronson.blog/?p=10222</guid>
+
+					<description><![CDATA[Today, I take a break from your regularly-scheduled AI mathocalypse programming to urge my American readers to vote in the Congressional midterms, early if possible, if you haven&#8217;t already. Especially if your state faces one or more major contests, as does my adopted home state of Texas. Me, I voted straight-ticket Democrat today, as I&#8217;ve [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Today, I take a break from your regularly-scheduled AI mathocalypse programming to urge my American readers to vote in the Congressional midterms, early if possible, if you haven&#8217;t already.  <em>Especially</em> if your state faces one or more major contests, as does my adopted home state of Texas.</p>
+
+
+
+<p class="wp-block-paragraph">Me, I voted straight-ticket Democrat today, as I&#8217;ve done in every election since I became eligible over a quarter-century ago (except for when I vote-swapped with someone from another state).</p>
+
+
+
+<p class="wp-block-paragraph">So yes, I voted for the guy who studied theology a short walk from my house, and who seems to have <em>really</em> internalized the whole Jesus thing about kindness to everyone&#8212;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><a href="https://scottaaronson.blog/wp-content/uploads/2026/10/image-1.png"><img loading="lazy" decoding="async" width="363" height="435" src="https://scottaaronson.blog/wp-content/uploads/2026/10/image-1.png" alt="" class="wp-image-10224" srcset="https://scottaaronson.blog/wp-content/uploads/2026/10/image-1.png 363w, https://scottaaronson.blog/wp-content/uploads/2026/10/image-1-250x300.png 250w" sizes="auto, (max-width: 363px) 100vw, 363px" /></a></figure>
+</div>
+
+
+<p class="wp-block-paragraph">&#8212;over his sneering, thuggish, cartoonishly <a href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/06/22/555172/texas-ken-paxton-james-talarico-senate-election-scandals/">mafia-like</a> opponent.  Fingers crossed that Talarico pulls off a historic upset for our state (he&#8217;s currently a <a href="https://polymarket.com/event/texas-senate-election-winner">2-to-1 favorite</a> in the prediction markets).</p>
+
+
+
+<p class="wp-block-paragraph">The Texas Republicans did everything they possibly could to make this choice easy for me, by being corrupt, conspiratorial, racist, and Taliban-like even by the jaw-droppingly debased standards of MAGA in 2026.  As I draw breath, I could never vote for a slate one of whose candidates <a href="https://www.dallasnews.com/news/politics/article/students-speak-after-bo-french-attack-22431674.php">attacked UT students</a> for the crime of being visibly Southeast Asian while cheering their school&#8217;s football victory from the stands&#8212;and whose other candidates could barely bring themselves to condemn this knuckle-dragging racist, for fear of angering their base.  (It&#8217;s like, didn&#8217;t you <em>want</em> immigrants to assimilate to American culture?  What more could these kids possibly do, short of skin bleach?)</p>
+
+
+
+<p class="wp-block-paragraph">All the same, this was also the first US election in my lifetime where I felt like my vote was genuinely in play&#8212;especially when I listened to Talarico&#8217;s condemnations of Israel, for having the temerity to fight the same kind of war any random other nation would&#8217;ve fought had it been attacked as Israel was on October 7.  When Hasan Piker came to speak to a cheering crowd here at UT Austin, I actually wrote to someone I know in the Talarico campaign, to ask whether Talarico would show enough balls to condemn Piker&#8217;s many antisemitic and anti-American statements, and renounce his support.  My contact was nice enough to reply to me, saying: <em>don&#8217;t worry, James is taking care to be far away from Austin during Piker&#8217;s visit, so he won&#8217;t need to engage at all!</em></p>
+
+
+
+<p class="wp-block-paragraph">So then, this is my candidate: the guy who&#8217;s <em>strategically silent</em> on the wildly-popular streamer who&#8217;d gladly see my Israeli family members raped and beheaded, rather than campaigning with that streamer like Abdul El-Sayed did in Michigan.  I unironically believe that, for Talarico, it took genuine moral courage to resist the whole momentum of his party&#8217;s youth even to this extent.</p>
+
+
+
+<p class="wp-block-paragraph">To earn my vote in the near future under these circumstances, all a Texas Republican would need to do is be <em>somewhat</em> sane or reasonable. He or she might affirm, for example, that racism is bad, that abortion is a woman&#8217;s choice, that Christianity is not the state religion of the US, that Covid vaccines work, that human emissions are worryingly changing the earth’s climate, and/or that Joe Biden won in 2020, while still being arbitrarily right-wing on taxes and other stuff. He or she could then simply wait for the Democrats to descend fully into the worldview of the masked hooligans who are currently setting France&#8217;s beautiful cities aflame, terrorizing its shopkeepers, and looting as many Louis Vuitton handbags as they can carry &#8230; all for Palestine, of course, and for the death of global capitalism, and for the violent overthrow of the <s>scheming, money-grubbing, hook-nosed, international Talmudic</s> &#8230; err, I mean &#8220;Zionists.&#8221;</p>
+
+
+
+<p class="wp-block-paragraph">What I&#8217;m trying to say is, it was a genuine achievement on the part of the Texas Republicans to fail to earn a single vote from me this cycle.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://scottaaronson.blog/?feed=rss2&#038;p=10222</wfw:commentRss>
+			<slash:comments>17</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10222</post-id>	</item>
+	</channel>
+</rss>

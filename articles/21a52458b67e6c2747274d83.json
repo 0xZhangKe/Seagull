@@ -1,0 +1,11 @@
+{
+  "id": "21a52458b67e6c2747274d83",
+  "title": "files-preview v1.1 更新了什么",
+  "summary": "我用 UI3 的 AI 功能将 UI2 中的 UX Writing 相关内容翻译成了中文，并做了一些简单校对。",
+  "content": "<p>在 <a href=\"https://gitee.com/Jioho/files-preview\" target=\"_blank\" rel=\"noopener noreferrer\">files-preview</a> 新版本中，我们新增了「文档模式」这个特性，这是一个对 Markdown 文件的特定预览模式。当文件夹内包含 md 后缀的文件时，打开该文件夹将会自动进入这个模式，打开后的效果如下图所示。</p>\n<figure><img src=\"https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/fp-1-1-markdown.png\" alt=\"新版本界面\"><figcaption>新版本界面</figcaption></figure>\n<p>我们依然遵循「你的所有文件都保存在本地」这个原则，所有的文件储存和修改都只需要在你的本地进行。</p>\n<p>你可以用任意的编辑器，如 Typora、Obsidian、VS Code 或其他软件，对你的文档进行编写和编排，完成后开启 files-preview 服务，就能快速得到一个内部文档网站并分享给其他人。</p>\n<p>左侧栏的目录结构将会和你的本地文件夹层级结构对应，目前最多支持两级目录。</p>\n<h1>For macOS</h1>\n<p>为了避免频繁在「终端」上手动输入命令，我们为 macOS 的用户提供了一个自动操作来开启 files-preview，安装完成后，在选中文件夹时，点击右键「服务 - 快速开启 FP 服务」就可以快速启动服务（如下图所示）。</p>\n<p>自动操作下载地址：<a href=\"https://gitee.com/Jioho/files-preview/raw/master/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%90%AF%20FP%20%E6%9C%8D%E5%8A%A1.zip\" target=\"_blank\" rel=\"noopener noreferrer\">自动操作 - 快速开启 FP 服务</a>，解压后双击安装即可。</p>\n<figure><img src=\"https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/fp-1-1-mac.png\" alt=\"右键快速开启\"><figcaption>右键快速开启</figcaption></figure>\n<h1>其他更新</h1>\n<ul>\n<li>支持预览 gif、bmp、webp、tif、svga 格式文件</li>\n<li>项目封面支持 gif 格式</li>\n<li>修复了 CentOS 下的运行问题</li>\n<li>初步优化图片预览体验</li>\n</ul>\n<h1>More</h1>\n<p>在小程序「奶茶喝什么」 快要上线 500 天之际，看了下统计数据，使用人数竟然还在缓慢增加，于是我偷偷补充了一些新的数据，现在它应该能更通用化了，欢迎大家来玩。</p>",
+  "image": "https://pub-acdbc21bc3964d18a684b0c51010a4e5.r2.dev/fp-1-1-markdown.png",
+  "publishedAt": "2022-01-11T00:00:00Z",
+  "sourceId": "cb9a26266745d112",
+  "sourceTitle": "Bluepikachu",
+  "link": "https://bluepika.life/blog/files-preview-v1-1-updates"
+}

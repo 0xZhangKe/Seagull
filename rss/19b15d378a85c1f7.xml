@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Shuo-jen Blog</title>
+        <link>https://shuojen.com/blog</link>
+        <description>我專屬的人生博物館</description>
+        <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-TW</language>
+        <copyright>Copyright © 2026 Shuo-jen Huang</copyright>
+        <item>
+            <title><![CDATA[殘局練習系列 04 -后對單兵]]></title>
+            <link>https://shuojen.com/blog/2026/11/20/queen_pawn</link>
+            <guid>https://shuojen.com/blog/2026/11/20/queen_pawn</guid>
+            <pubDate>Fri, 20 Nov 2026 09:54:51 GMT</pubDate>
+            <description><![CDATA[王＋后對王＋兵，黑兵已經走到第 2 橫線、下一步就要升變，白王又離得很遠。這時候白后要一邊將軍、一邊拖時間，讓白王慢慢走過來。]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/queen-pawn">興趣區</a>。</p></div></div>
+<p>王＋后對王＋兵，黑兵已經走到第 2 橫線、下一步就要升變，白王又離得很遠。這時候白后要<strong>一邊將軍、一邊拖時間</strong>，讓白王慢慢走過來。</p>
+<p>來試試看吧！</p>
+<p><strong>進攻</strong>：你執白，阻止黑兵升變並殺王。</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="勝法說明">勝法說明<a href="https://shuojen.com/blog/2026/11/20/queen_pawn#%E5%8B%9D%E6%B3%95%E8%AA%AA%E6%98%8E" class="hash-link" aria-label="勝法說明的直接連結" title="勝法說明的直接連結" translate="no">​</a></h2>
+<ul>
+<li class="">用后<strong>將軍或牽制</strong>，目標是逼黑王<strong>走到兵的前面</strong>（升變格 b1）。</li>
+<li class="">黑王一站到 b1，兵就被自己的王擋住，白方就<strong>多出一步</strong>，這一步拿來讓<strong>白王往前走</strong>。</li>
+<li class="">黑王離開 b1 去躲將軍時，后再用將軍或牽制把它逼回兵前面。</li>
+<li class="">一直重複，等白王走到附近，就能吃兵或直接殺王。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>c、f 兵的例外</div><div class="admonitionContent_BuS1"><p>同樣的局面，如果黑兵換成 <strong>c 兵或 f 兵</strong>，白方就<strong>贏不了</strong>。黑王不必站到兵前面，可以直接躲進角落（例如 c2 兵時走 Ka1），這時白后如果吃兵就是<strong>逼和</strong>，白方擠不出讓王走上來的那一步，所以是和棋。</p><p>a、h 線的邊兵也守得和，但原理不一樣：黑王<strong>直接站到兵前面的角落</strong>（例如 a2 兵時走 Ka1），這時白后只要同時控制 b1、b2（例如 Qb3）就是<strong>逼和</strong>，所以白后沒辦法把黑王關在角落，白王走過來也收不了網。</p><p>以上都是白王離得很遠的情況，白王如果本來就在附近，還是有機會贏。</p></div></div>
+<p><strong>守和</strong>：換成 c 兵，你執黑，守成和棋。</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<p>黑兵升后之後，白方如果沒辦法馬上吃掉新后，就算和棋。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="守和方怎麼守和">守和方：怎麼守和<a href="https://shuojen.com/blog/2026/11/20/queen_pawn#%E5%AE%88%E5%92%8C%E6%96%B9%E6%80%8E%E9%BA%BC%E5%AE%88%E5%92%8C" class="hash-link" aria-label="守和方：怎麼守和的直接連結" title="守和方：怎麼守和的直接連結" translate="no">​</a></h2>
+<ul>
+<li class="">黑王<strong>貼著兵</strong>，守住升變格 c1，白后沒控制住 c1 時<strong>直接升后</strong>。</li>
+<li class="">被將軍時<strong>往角落那一側躲</strong>（b1、a2、a1），<strong>不要走到兵的前面</strong>，也不要往 e 線那邊跑。站到 c1 會讓白方多出一步走王，跑遠了兵就沒人保護。</li>
+<li class="">被將軍、只能站到 c1 時，下一步馬上<strong>往 b2、b1 走</strong>，回到兵的旁邊。</li>
+<li class="">最後被將軍逼到角落就<strong>走 Ka1</strong>：兵沒有保護，但白后吃兵就是<strong>逼和</strong>；不吃兵，黑兵下一步又要升后了。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[西洋棋規則完整介紹]]></title>
+            <link>https://shuojen.com/blog/2026/11/19/chess_rules</link>
+            <guid>https://shuojen.com/blog/2026/11/19/chess_rules</guid>
+            <pubDate>Wed, 18 Nov 2026 16:12:11 GMT</pubDate>
+            <description><![CDATA[西洋棋推坑裡沒有詳細介紹過規則，這篇文章參考維基百科的 Rules of chess 與國際棋聯（FIDE）的規則，每個重點都搭配棋盤說明，看完就能開始自己的第…]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/rules">興趣區</a>。</p></div></div>
+<p><a class="" href="https://shuojen.com/docs/chess/introduce">西洋棋推坑</a>裡沒有詳細介紹過規則，這篇文章參考維基百科的 <a href="https://en.wikipedia.org/wiki/Rules_of_chess" target="_blank" rel="noopener noreferrer" class="">Rules of chess</a> 與國際棋聯（FIDE）的規則，每個重點都搭配棋盤說明，看完就能開始自己的第一盤棋了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="棋盤與擺放">棋盤與擺放<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E6%A3%8B%E7%9B%A4%E8%88%87%E6%93%BA%E6%94%BE" class="hash-link" aria-label="棋盤與擺放的直接連結" title="棋盤與擺放的直接連結" translate="no">​</a></h2>
+<p>棋盤是 8×8 共 64 格，深淺交錯，不管實際是什麼顏色，淺色格都叫<strong>白格</strong>、深色格都叫<strong>黑格</strong>。</p>
+<ul>
+<li class="">棋盤要擺成<strong>兩邊玩家的右手邊角落都是白格</strong>（white on right）。</li>
+<li class="">雙方各有 16 個棋子：1 王、1 后、2 車、2 象、2 馬、8 兵。</li>
+<li class="">最外側是車，往內依序是馬、象，中間兩格放后跟王，兵排在前面一整排。</li>
+<li class="">后站在跟自己同色的格子：<strong>白后在白格</strong>(d1)，<strong>黑后在黑格</strong>(d8)，王站剩下那一格。</li>
+</ul>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="格子的名字">格子的名字<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E6%A0%BC%E5%AD%90%E7%9A%84%E5%90%8D%E5%AD%97" class="hash-link" aria-label="格子的名字的直接連結" title="格子的名字的直接連結" translate="no">​</a></h3>
+<p>直的一排叫<strong>直線</strong>（file），從白方左手邊開始依序是 a～h；橫的一排叫<strong>橫線</strong>（rank），從白方這邊數過來是 1～8。每一格就用「直線＋橫線」命名，例如下圖藍色的 e 線和黃色的第 4 橫線交會在 <strong>e4</strong>。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="記譜">記譜<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E8%A8%98%E8%AD%9C" class="hash-link" aria-label="記譜的直接連結" title="記譜的直接連結" translate="no">​</a></h3>
+<p>文章裡的棋盤都會用代數記譜法標出每一步，先認得這幾個符號就看得懂了：</p>
+<table><thead><tr><th style="text-align:center">符號</th><th style="text-align:left">意思</th><th style="text-align:left">例子</th></tr></thead><tbody><tr><td style="text-align:center">K、Q、R、B、N</td><td style="text-align:left">王、后、車、象、馬（兵不寫字母）</td><td style="text-align:left">Nf3：馬走到 f3；e4：兵走到 e4</td></tr><tr><td style="text-align:center">x</td><td style="text-align:left">吃子</td><td style="text-align:left">Bxc6：象吃 c6；exd5：e 線的兵吃 d5</td></tr><tr><td style="text-align:center">+</td><td style="text-align:left">將軍</td><td style="text-align:left">Qh5+</td></tr><tr><td style="text-align:center">#</td><td style="text-align:left">將死</td><td style="text-align:left">Qxf7#</td></tr><tr><td style="text-align:center">O-O／O-O-O</td><td style="text-align:left">短易位／長易位</td><td style="text-align:left"></td></tr><tr><td style="text-align:center">=</td><td style="text-align:left">升變</td><td style="text-align:left">e8=Q：兵走到 e8 升成后</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="基本規則">基本規則<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%9F%BA%E6%9C%AC%E8%A6%8F%E5%89%87" class="hash-link" aria-label="基本規則的直接連結" title="基本規則的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>白方先走</strong>，之後雙方輪流，每次走一步。</li>
+<li class="">輪到你就<strong>一定要走</strong>，不能跳過（pass），就算每一步都會讓局面變差也一樣。</li>
+<li class="">誰拿白棋規則本身沒有規定，比賽由賽會安排，平常下棋可以猜子決定：一手握白兵、一手握黑兵讓對方猜。</li>
+<li class="">走到對方棋子所在的格子就是<strong>吃子</strong>，被吃的棋子拿下棋盤，不再回來。</li>
+<li class="">不能走到自己棋子佔的格子；除了馬以外，<strong>所有棋子都不能跳過其他棋子</strong>。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="棋子的走法">棋子的走法<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E6%A3%8B%E5%AD%90%E7%9A%84%E8%B5%B0%E6%B3%95" class="hash-link" aria-label="棋子的走法的直接連結" title="棋子的走法的直接連結" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="王king">王（King）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E7%8E%8Bking" class="hash-link" aria-label="王（King）的直接連結" title="王（King）的直接連結" translate="no">​</a></h3>
+<p>往<strong>任何方向走一格</strong>。王是最重要的棋子，不能被吃，也<strong>不能走到會被對方攻擊的格子</strong>。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="車rook">車（Rook）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E8%BB%8Arook" class="hash-link" aria-label="車（Rook）的直接連結" title="車（Rook）的直接連結" translate="no">​</a></h3>
+<p><strong>直走或橫走</strong>，格數不限，但不能越過其他棋子。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="象bishop">象（Bishop）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E8%B1%A1bishop" class="hash-link" aria-label="象（Bishop）的直接連結" title="象（Bishop）的直接連結" translate="no">​</a></h3>
+<p><strong>斜走</strong>，格數不限。象永遠待在同一種顏色的格子上，所以雙方各有一隻<strong>白格象</strong>和一隻<strong>黑格象</strong>。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="后queen">后（Queen）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%90%8Equeen" class="hash-link" aria-label="后（Queen）的直接連結" title="后（Queen）的直接連結" translate="no">​</a></h3>
+<p>車加象，<strong>直、橫、斜</strong>八個方向都能走，格數不限，是威力最大的棋子。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="馬knight">馬（Knight）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E9%A6%ACknight" class="hash-link" aria-label="馬（Knight）的直接連結" title="馬（Knight）的直接連結" translate="no">​</a></h3>
+<p>走 <strong>L 形</strong>：先直或橫走兩格，再轉 90 度走一格。馬是唯一能<strong>跳過其他棋子</strong>的棋子，被包圍也照樣跳得出去。每走一步，馬所在的格子顏色都會換一次。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="兵pawn">兵（Pawn）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%85%B5pawn" class="hash-link" aria-label="兵（Pawn）的直接連結" title="兵（Pawn）的直接連結" translate="no">​</a></h3>
+<p>兵的規則最多：</p>
+<ul>
+<li class=""><strong>只能往前</strong>，一次走一格，不能後退。</li>
+<li class="">還沒動過的兵，第一步可以<strong>一次走兩格</strong>（中間那格要是空的）。</li>
+<li class=""><strong>吃子是斜前方一格</strong>，跟走法不一樣。</li>
+<li class="">正前方有棋子擋住就不能前進，不管是自己還是對方的棋子。</li>
+</ul>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="子力價值">子力價值<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%AD%90%E5%8A%9B%E5%83%B9%E5%80%BC" class="hash-link" aria-label="子力價值的直接連結" title="子力價值的直接連結" translate="no">​</a></h3>
+<p>這不是規則，但下棋時常拿來衡量交換划不划算：</p>
+<table><thead><tr><th style="text-align:center">棋子</th><th style="text-align:center">兵</th><th style="text-align:center">馬</th><th style="text-align:center">象</th><th style="text-align:center">車</th><th style="text-align:center">后</th><th style="text-align:center">王</th></tr></thead><tbody><tr><td style="text-align:center">價值</td><td style="text-align:center">1</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">5</td><td style="text-align:center">9</td><td style="text-align:center">無價</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="特殊走法">特殊走法<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E7%89%B9%E6%AE%8A%E8%B5%B0%E6%B3%95" class="hash-link" aria-label="特殊走法的直接連結" title="特殊走法的直接連結" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="王車易位castling">王車易位（Castling）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E7%8E%8B%E8%BB%8A%E6%98%93%E4%BD%8Dcastling" class="hash-link" aria-label="王車易位（Castling）的直接連結" title="王車易位（Castling）的直接連結" translate="no">​</a></h3>
+<p>一步棋同時動王和車：<strong>王往車的方向走兩格，車跳到王的另一邊</strong>，把王藏到角落，也讓車出來參戰。王往 h 線那邊叫<strong>短易位</strong>（O-O），往 a 線那邊叫<strong>長易位</strong>（O-O-O）。</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<p>易位要同時滿足這些條件：</p>
+<ul>
+<li class="">王和這隻車<strong>都沒有動過</strong>（動過再走回原位也不行）。</li>
+<li class="">王和車<strong>中間沒有任何棋子</strong>。</li>
+<li class="">王<strong>現在沒有被將軍</strong>。</li>
+<li class="">王<strong>經過的格子</strong>和<strong>落腳的格子</strong>都<strong>沒有被對方攻擊</strong>。</li>
+</ul>
+<p>注意最後一條只限制<strong>王</strong>，車經過的格子被攻擊沒關係。下圖黑象攻擊 f1，王會經過 f1，所以不能短易位；黑車雖然攻擊 b1，但長易位只有車經過 b1，所以可以長易位。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="吃過路兵en-passant">吃過路兵（En passant）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%90%83%E9%81%8E%E8%B7%AF%E5%85%B5en-passant" class="hash-link" aria-label="吃過路兵（En passant）的直接連結" title="吃過路兵（En passant）的直接連結" translate="no">​</a></h3>
+<p>兵第一步<strong>走兩格</strong>，剛好停在對方兵的<strong>正旁邊</strong>時，對方的兵可以把它當作只走一格來吃：斜走到它<strong>跳過的那一格</strong>，再把它拿下棋盤。</p>
+<ul>
+<li class="">只有兵能吃過路兵，被吃的也只能是兵。</li>
+<li class=""><strong>只能在對方剛走完兩格的下一步吃</strong>，錯過這步就不能再吃了。</li>
+</ul>
+<p>下面黑兵 d7 一次走到 d5，停在白兵 e5 旁邊，白兵就可以走到 d6 把它吃掉：</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="升變promotion">升變（Promotion）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%8D%87%E8%AE%8Apromotion" class="hash-link" aria-label="升變（Promotion）的直接連結" title="升變（Promotion）的直接連結" translate="no">​</a></h3>
+<p>兵走到最後一橫線時，<strong>必須升變</strong>成同顏色的<strong>后、車、象或馬</strong>，不能留著當兵，也不能變成王。升變不受已經被吃掉的棋子限制，一方同時有兩隻以上的后也可以。</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<p>絕大多數都是升后，但偶爾升成其他棋子比較好，叫做<strong>低升變</strong>。下面升后沒有將軍，黑后就跑掉了；升成馬卻能<strong>將軍並同時抓后</strong>：</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="將軍與將死">將軍與將死<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%B0%87%E8%BB%8D%E8%88%87%E5%B0%87%E6%AD%BB" class="hash-link" aria-label="將軍與將死的直接連結" title="將軍與將死的直接連結" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="將軍check">將軍（Check）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%B0%87%E8%BB%8Dcheck" class="hash-link" aria-label="將軍（Check）的直接連結" title="將軍（Check）的直接連結" translate="no">​</a></h3>
+<p>王被對方的棋子攻擊就叫<strong>將軍</strong>。被將軍的一方<strong>下一步一定要解除將軍</strong>，方法只有三種。以下圖為例，黑車在 e8 將軍白王（紅）：</p>
+<ol>
+<li class=""><strong>移動王</strong>（藍），走到不會被攻擊的格子：白王可以走 d1、d2、f2，但 e2 還在黑車的攻擊線上，不能走。</li>
+<li class=""><strong>吃掉</strong>將軍的棋子（綠）：白車沿著第 8 橫線吃掉黑車（Rxe8+），吃完還反過來將軍黑王。</li>
+<li class="">把棋子<strong>擋</strong>在中間（黃）：白象走到 e2 擋住黑車（Be2）。</li>
+</ol>
+<p>注意：如果是被馬將軍，就沒辦法擋，因為馬是用跳的。</p>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="不能自己送將">不能自己送將<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E4%B8%8D%E8%83%BD%E8%87%AA%E5%B7%B1%E9%80%81%E5%B0%87" class="hash-link" aria-label="不能自己送將的直接連結" title="不能自己送將的直接連結" translate="no">​</a></h3>
+<p>任何讓<strong>自己的王被攻擊</strong>的走法都是違規的，所以：</p>
+<ul>
+<li class="">王不能走到被攻擊的格子，<strong>兩個王也不能相鄰</strong>。</li>
+<li class="">擋在王前面的棋子被<strong>釘住</strong>時不能離開，否則等於把王送給對方吃。</li>
+</ul>
+<div style="height:420px;max-width:420px;margin:2rem auto"></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="將死checkmate">將死（Checkmate）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%B0%87%E6%AD%BBcheckmate" class="hash-link" aria-label="將死（Checkmate）的直接連結" title="將死（Checkmate）的直接連結" translate="no">​</a></h3>
+<p>被將軍而<strong>三種方法都解不了</strong>，就是<strong>將死</strong>，被將死的一方輸棋。實際上王從來不會真的被吃掉，將死的那一刻棋局就結束了。</p>
+<p>最常見的是<strong>底線殺</strong>：王被自己的兵關在底線，車一下去就死了。</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<p>最快的將死只要兩步，叫做<strong>愚人殺</strong>，白方亂推兩隻兵，黑后直接殺王：</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<p>新手很容易被<strong>學者殺</strong>：白后和白象一起攻擊只有王保護的 f7。</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="結束棋局">結束棋局<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E7%B5%90%E6%9D%9F%E6%A3%8B%E5%B1%80" class="hash-link" aria-label="結束棋局的直接連結" title="結束棋局的直接連結" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="勝負">勝負<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%8B%9D%E8%B2%A0" class="hash-link" aria-label="勝負的直接連結" title="勝負的直接連結" translate="no">​</a></h3>
+<ul>
+<li class="">將死對方。</li>
+<li class="">對方<strong>認輸</strong>。</li>
+<li class="">對方<strong>超時</strong>（見下面比賽規則）。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="和棋">和棋<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%92%8C%E6%A3%8B" class="hash-link" aria-label="和棋的直接連結" title="和棋的直接連結" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="逼和stalemate">逼和（Stalemate）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E9%80%BC%E5%92%8Cstalemate" class="hash-link" aria-label="逼和（Stalemate）的直接連結" title="逼和（Stalemate）的直接連結" translate="no">​</a></h4>
+<p>輪到的一方<strong>沒有被將軍</strong>，但<strong>一步合法的棋都走不了</strong>，就是逼和，直接和棋。這是快贏的一方最常犯的錯：下面白方大優，走 Qf7 之後黑王沒有被將軍，卻哪裡都不能去，和棋了。改走 <strong>Qf8#</strong> 才是將死。</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="子力不足死局">子力不足（死局）<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%AD%90%E5%8A%9B%E4%B8%8D%E8%B6%B3%E6%AD%BB%E5%B1%80" class="hash-link" aria-label="子力不足（死局）的直接連結" title="子力不足（死局）的直接連結" translate="no">​</a></h4>
+<p>雙方<strong>用任何合法的走法都不可能將死對方</strong>時，直接和棋，例如：</p>
+<ul>
+<li class="">王對王。</li>
+<li class="">王＋象對王。</li>
+<li class="">王＋馬對王。</li>
+<li class="">王＋象對王＋象，而且兩隻象在同顏色的格子。</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="三次重複">三次重複<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E4%B8%89%E6%AC%A1%E9%87%8D%E8%A4%87" class="hash-link" aria-label="三次重複的直接連結" title="三次重複的直接連結" translate="no">​</a></h4>
+<p><strong>同一個局面</strong>（同一方要走，棋子位置一樣，易位和吃過路兵的權利也一樣）出現<strong>第三次</strong>時，可以宣告和棋，不必連續出現。最常見的是<strong>長將</strong>：一直將軍讓對方擺脫不了。下面黑方多了一車，白方卻靠后不停將軍，同一局面重複三次就和棋：</p>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="五十步規則">五十步規則<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E4%BA%94%E5%8D%81%E6%AD%A5%E8%A6%8F%E5%89%87" class="hash-link" aria-label="五十步規則的直接連結" title="五十步規則的直接連結" translate="no">​</a></h4>
+<p>雙方<strong>各走 50 步</strong>，期間都沒有吃子、也沒有動兵，就可以宣告和棋。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="自動和棋">自動和棋<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E8%87%AA%E5%8B%95%E5%92%8C%E6%A3%8B" class="hash-link" aria-label="自動和棋的直接連結" title="自動和棋的直接連結" translate="no">​</a></h4>
+<p>三次重複和五十步規則都要<strong>有人提出</strong>才算，沒人提就繼續下；但同一局面重複<strong>五次</strong>，或雙方各走 <strong>75 步</strong>沒有吃子和動兵，就不用宣告，<strong>直接和棋</strong>。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="協議和棋">協議和棋<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%8D%94%E8%AD%B0%E5%92%8C%E6%A3%8B" class="hash-link" aria-label="協議和棋的直接連結" title="協議和棋的直接連結" translate="no">​</a></h4>
+<p>任何一方都可以<strong>提和</strong>，對方同意就和棋。正式比賽要在自己走完棋、按鐘之前提出。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="比賽規則">比賽規則<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E6%AF%94%E8%B3%BD%E8%A6%8F%E5%89%87" class="hash-link" aria-label="比賽規則的直接連結" title="比賽規則的直接連結" translate="no">​</a></h2>
+<p>平常線上下棋，網站會幫你處理好這些事，但實體比賽有幾條一定要知道：</p>
+<ul>
+<li class=""><strong>摸子動子</strong>：故意碰了自己的棋子就<strong>一定要走那個棋子</strong>；碰了對方的棋子，能吃的話就<strong>一定要吃它</strong>。只是想把棋子擺正，要先說「<strong>我調整一下</strong>」。</li>
+<li class=""><strong>放手就算</strong>：棋子拿在手上還沒放開時，可以改放到這個棋子的其他合法格子；一旦<strong>手放開</strong>，這步就確定了，不能反悔，就算走錯也一樣。王車易位要<strong>先碰王</strong>再動車，先碰車的話就只能走車、不能易位了。</li>
+<li class=""><strong>用同一隻手</strong>走棋和按鐘，走完棋才按鐘。</li>
+<li class=""><strong>超時判負</strong>：自己的時間用完就輸，但如果對方剩下的子力<strong>怎麼走都不可能將死你</strong>（例如對方只剩單王），就是和棋。</li>
+<li class=""><strong>違規走法</strong>：走了違規的棋要收回重走，而且<strong>碰到哪個棋子就要盡量走那個棋子</strong>。依 FIDE 規則，第一次違規<strong>對方加時</strong>（慢棋加 2 分鐘，快棋、超快棋加 1 分鐘），<strong>第二次違規直接判負</strong>。</li>
+<li class=""><strong>記譜</strong>：慢棋比賽要用代數記譜法把每一步寫在記錄紙上。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="參考資料">參考資料<a href="https://shuojen.com/blog/2026/11/19/chess_rules#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99" class="hash-link" aria-label="參考資料的直接連結" title="參考資料的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://en.wikipedia.org/wiki/Rules_of_chess" target="_blank" rel="noopener noreferrer" class="">Rules of chess - Wikipedia</a></li>
+</ul>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[殘局練習系列 03 -王兵殘局]]></title>
+            <link>https://shuojen.com/blog/2026/11/18/king_pawn</link>
+            <guid>https://shuojen.com/blog/2026/11/18/king_pawn</guid>
+            <pubDate>Wed, 18 Nov 2026 02:22:42 GMT</pubDate>
+            <description><![CDATA[王＋兵對單王是所有兵殘局的基礎，同一個局面，輪到誰走就可能決定勝負。下面這個局面白先可以贏，黑先卻可以守和。]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/king-pawn">興趣區</a>。</p></div></div>
+<p>王＋兵對單王是所有兵殘局的基礎，同一個局面，<strong>輪到誰走</strong>就可能決定勝負。下面這個局面白先可以贏，黑先卻可以守和。</p>
+<p>來試試看吧！</p>
+<p><strong>進攻</strong>：你執白，把兵送到底線並殺王。</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<p><strong>守和</strong>：你執黑，守成和棋。</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="進攻方怎麼贏">進攻方：怎麼贏<a href="https://shuojen.com/blog/2026/11/18/king_pawn#%E9%80%B2%E6%94%BB%E6%96%B9%E6%80%8E%E9%BA%BC%E8%B4%8F" class="hash-link" aria-label="進攻方：怎麼贏的直接連結" title="進攻方：怎麼贏的直接連結" translate="no">​</a></h2>
+<ul>
+<li class="">兵在第 2～4 橫線時，兵前面兩格和它的左右兩格叫做<strong>關鍵格</strong>，白王只要站上關鍵格就一定能贏，例如 c2 兵的關鍵格是 b4、c4、d4。</li>
+<li class=""><strong>王走在兵前面</strong>，不要急著推兵。</li>
+<li class="">跟黑王<strong>對王</strong>，逼黑王讓路，王再往前走。</li>
+<li class="">王卡進第 7 橫線，就能順利把兵推進升變。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="守和方怎麼守和">守和方：怎麼守和<a href="https://shuojen.com/blog/2026/11/18/king_pawn#%E5%AE%88%E5%92%8C%E6%96%B9%E6%80%8E%E9%BA%BC%E5%AE%88%E5%92%8C" class="hash-link" aria-label="守和方：怎麼守和的直接連結" title="守和方：怎麼守和的直接連結" translate="no">​</a></h2>
+<ul>
+<li class="">黑王<strong>搶先站上關鍵格</strong>，擋在兵前面。</li>
+<li class="">一直<strong>擋在兵的正前方</strong>，白王靠近時就跟它<strong>對王</strong>。</li>
+<li class="">被將軍要後退時，<strong>直直往後退</strong>，不要往旁邊躲，才能在底線搶回對王。</li>
+<li class="">撐到最後，白方只能逼和，或是放棄兵。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>邊兵例外</div><div class="admonitionContent_BuS1"><p>a、h 線的兵（邊兵）只要黑王能躲進兵前面的角落，就算白王在前面也贏不了，幾乎都是和棋。</p></div></div>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[西洋棋系列文]]></title>
+            <link>https://shuojen.com/blog/2026/11/17/chess_practice</link>
+            <guid>https://shuojen.com/blog/2026/11/17/chess_practice</guid>
+            <pubDate>Tue, 17 Nov 2026 14:54:27 GMT</pubDate>
+            <description><![CDATA[前幾天寫了〈車兵殘局：Lucena 還是 Philidor？〉後，就很想做一個可以實時練習的殘局系列，把最基本到困難的經典殘局都整理起來，可以在網站上輕鬆的自主…]]></description>
+            <content:encoded><![CDATA[<p>前幾天寫了<a class="" href="https://shuojen.com/blog/2026/11/15/rook_endgame">〈車兵殘局：Lucena 還是 Philidor？〉</a>後，就很想做一個可以實時練習的殘局系列，把最基本到困難的經典殘局都整理起來，可以在網站上輕鬆的自主練習。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-殘局">WHY 殘局？<a href="https://shuojen.com/blog/2026/11/17/chess_practice#why-%E6%AE%98%E5%B1%80" class="hash-link" aria-label="WHY 殘局？的直接連結" title="WHY 殘局？的直接連結" translate="no">​</a></h2>
+<p>在西洋棋中，開局固然是很重要的一環，但是支線過於千變萬化，我想過可能只整理合乎開局原則的關鍵局面，還在慢慢思考怎麼把我自己常用的體系整理起來。相反的殘局是有「理論解」的，可以在不同局面下用觀念判斷該做什麼事，但只要理論知識不足，往往走錯一步就從勝勢錯失成和棋了。</p>
+<p>更難的還有像是雙象殺王、馬象殺王、單后對單車、或是各種王兵、車兵殘局的局面，慢慢把資料庫整理起來，就可以好好加強殘局了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="時間壓力">時間壓力<a href="https://shuojen.com/blog/2026/11/17/chess_practice#%E6%99%82%E9%96%93%E5%A3%93%E5%8A%9B" class="hash-link" aria-label="時間壓力的直接連結" title="時間壓力的直接連結" translate="no">​</a></h2>
+<p>比賽中常常在開局以及中局的計算，就耗費了大量的時間，到了殘局慌亂之下，就容易走出錯誤的招法。所以實時的練習是很有必要的，不管是勝勢方拿下，或是劣勢方強制守和，都一定要練習的萬無一失，不然勝勢局面因為掉鐘<sup><a href="https://shuojen.com/blog/2026/11/17/chess_practice#user-content-fn-1-6fe011" id="user-content-fnref-1-6fe011" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>而輸棋，豈不是太可惜了嗎？</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="殘局練習系列">殘局練習系列<a href="https://shuojen.com/blog/2026/11/17/chess_practice#%E6%AE%98%E5%B1%80%E7%B7%B4%E7%BF%92%E7%B3%BB%E5%88%97" class="hash-link" aria-label="殘局練習系列的直接連結" title="殘局練習系列的直接連結" translate="no">​</a></h2>
+<p>我把第一課設計成單后殺單王、第二課設計成單車殺單王。因為學會這兩個的話，代表雙車、雙后也一定沒問題了，不過其實兩個直線武器可以學 Ladder Mate 的技巧（考慮再加一個第零課），最後提醒一下，不管什麼情況都必須要小心無子可動平手。</p>
+<p>可以一直無限練習的感覺實在是太爽了，不只可以練準確的殺王，還可以像<a href="https://trashposts.com/blog/super-mario-bros-speedrun-sub-5/" target="_blank" rel="noopener noreferrer" class=""> Speedrun </a>一樣練習在最短的時間內成功，真的滿好玩的！</p>
+<p>這裡附上<a class="" href="https://shuojen.com/blog/2026/11/16/queen_mate">單后殺王</a>、<a class="" href="https://shuojen.com/blog/2026/11/17/rook_mate">單車殺王</a>的範例影片，基本上都可以在個位數秒就準確的殺王。棋盤右下角的時間就是自己的棋鐘，在移動自己棋子的時候會算時間，而我在影片中使用的技巧叫做 Premove（預走）<sup><a href="https://shuojen.com/blog/2026/11/17/chess_practice#user-content-fn-2-6fe011" id="user-content-fnref-2-6fe011" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup>，不管對手走什麼，下一步都會走我選的那一步（Premove 可以無限使用）。</p>
+<video controls="" width="320"><source src="https://media.shuojen.com/video/queen.mp4" type="video/mp4"><p>抱歉，您的瀏覽器不支援內嵌影片。</p></video>
+<video controls="" width="320"><source src="https://media.shuojen.com/video/rook.mp4" type="video/mp4"><p>抱歉，您的瀏覽器不支援內嵌影片。</p></video>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/11/17/chess_practice#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-6fe011">
+<p>指時間歸零而落敗 <a href="https://shuojen.com/blog/2026/11/17/chess_practice#user-content-fnref-1-6fe011" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-2-6fe011">
+<p>Premove 花費一步的時間是 0.1 秒 <a href="https://shuojen.com/blog/2026/11/17/chess_practice#user-content-fnref-2-6fe011" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[殘局練習系列 02 -單車殺王]]></title>
+            <link>https://shuojen.com/blog/2026/11/17/rook_mate</link>
+            <guid>https://shuojen.com/blog/2026/11/17/rook_mate</guid>
+            <pubDate>Tue, 17 Nov 2026 01:51:05 GMT</pubDate>
+            <description><![CDATA[王＋車對單王是單后殺王之後的下一個基本殺法，車只能走直線，步數會比較多。]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/rook-mate">興趣區</a>。</p></div></div>
+<p>王＋車對單王是<a class="" href="https://shuojen.com/blog/2026/11/16/queen_mate">單后殺王</a>之後的下一個基本殺法，車只能走直線，步數會比較多。</p>
+<p>來試試看吧！</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="殺法說明">殺法說明<a href="https://shuojen.com/blog/2026/11/17/rook_mate#%E6%AE%BA%E6%B3%95%E8%AA%AA%E6%98%8E" class="hash-link" aria-label="殺法說明的直接連結" title="殺法說明的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>車先切一條線</strong>，把黑王關在棋盤的一邊。</li>
+<li class=""><strong>王走上來</strong>，跟黑王面對面（中間隔一格），這叫<strong>對王</strong>。</li>
+<li class="">對王時<strong>車將軍</strong>，黑王就被逼退一排，車再往前切。</li>
+<li class="">黑王不肯對王時，<strong>車沿同一條線走一步等著</strong>，逼黑王自己走進對王的位置。</li>
+<li class="">黑王靠近車時，<strong>把車移到另一邊遠一點</strong>，不要被吃掉。</li>
+<li class="">黑王被逼到邊線，對王時車將軍就是殺棋。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>無子可動平手</div><div class="admonitionContent_BuS1"><p>當對手無子可動時，有被將軍就是<strong>殺棋</strong>，沒有被將軍就是<strong>和棋</strong>喔！</p></div></div>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[殘局練習系列 01 -單后殺王]]></title>
+            <link>https://shuojen.com/blog/2026/11/16/queen_mate</link>
+            <guid>https://shuojen.com/blog/2026/11/16/queen_mate</guid>
+            <pubDate>Mon, 16 Nov 2026 13:07:10 GMT</pubDate>
+            <description><![CDATA[王＋后對單王是西洋棋最基本的殺法，學會後只要最後比對手多一隻兵升變，就可以單后殺王了。]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/queen-mate">興趣區</a>。</p></div></div>
+<p>王＋后對單王是西洋棋最基本的殺法，學會後只要最後比對手多一隻兵升變，就可以單后殺王了。</p>
+<p>來試試看吧！</p>
+<div style="max-width:400px;aspect-ratio:1 / 1;margin:1.5rem auto"></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="殺法說明">殺法說明<a href="https://shuojen.com/blog/2026/11/16/queen_mate#%E6%AE%BA%E6%B3%95%E8%AA%AA%E6%98%8E" class="hash-link" aria-label="殺法說明的直接連結" title="殺法說明的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>不要一直將軍</strong>，后放在離黑王一個馬步的位置，限制它的範圍。</li>
+<li class="">后跟著黑王，<strong>把方框縮小</strong>，逼到邊線。</li>
+<li class="">黑王剩邊線兩格時，<strong>后停下來，換王上來</strong>。</li>
+<li class="">每走一步后之前，先確認黑王<strong>還有空格可以走</strong>，避免逼和。</li>
+</ul>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>無子可動平手</div><div class="admonitionContent_BuS1"><p>當對手無子可動時，有被將軍就是<strong>殺棋</strong>，沒有被將軍就是<strong>和棋</strong>喔！</p></div></div>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[車兵殘局：Lucena 還是 Philidor？]]></title>
+            <link>https://shuojen.com/blog/2026/11/15/rook_endgame</link>
+            <guid>https://shuojen.com/blog/2026/11/15/rook_endgame</guid>
+            <pubDate>Sun, 15 Nov 2026 07:55:15 GMT</pubDate>
+            <description><![CDATA[看到這支 Short：Lucena or Philidor? Name the Position 想到以前社課劉業揚老師教過的「四線搭橋」跟「六線守和」，分別對…]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>此文章同步到<a class="" href="https://shuojen.com/docs/chess/rook-endgame">興趣區</a>。</p></div></div>
+<!-- -->
+<p>看到這支 Short：<a href="https://www.youtube.com/shorts/BrF4-pY52c4" target="_blank" rel="noopener noreferrer" class="">Lucena or Philidor? Name the Position</a> 想到以前社課劉業揚老師教過的「四線搭橋」跟「六線守和」，分別對應 Lucena 和 Philidor 這兩個非常重要的理論殘局，一個是<strong>攻方怎麼贏</strong>，一個是<strong>守方怎麼和</strong>。</p>
+<p>車兵對單車是實戰很常出現的殘局，可以看 Carlsen 示範如何簡單棄兵形成 Lucena position 獲勝，<a href="https://youtu.be/n-Or_qz30hI?t=508" target="_blank" rel="noopener noreferrer" class="">《Magnus Carlsen Explains the Lucena Position (Building the Bridge)》</a>。</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="第一課王的位置">第一課：王的位置<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%AC%AC%E4%B8%80%E8%AA%B2%E7%8E%8B%E7%9A%84%E4%BD%8D%E7%BD%AE" class="hash-link" aria-label="第一課：王的位置的直接連結" title="第一課：王的位置的直接連結" translate="no">​</a></h2>
+<p>最關鍵的判斷：</p>
+<blockquote>
+<p><strong>防守方的王，能不能站到兵的前面？</strong></p>
+</blockquote>
+<table><thead><tr><th></th><th>Lucena 局面</th><th>Philidor 局面</th></tr></thead><tbody><tr><td>結果</td><td>攻方<strong>勝</strong></td><td>守方<strong>和</strong></td></tr><tr><td>防守王</td><td>被車<strong>切斷</strong>在旁邊的直線，到不了兵前面</td><td><strong>站在兵的升變格（或兵正前方）</strong></td></tr><tr><td>兵的位置</td><td>已經到第 7 橫線（從攻方看）</td><td>通常還在第 5 橫線，還沒衝上第 6</td></tr><tr><td>攻方王</td><td>站在升變格上，被自己的兵擋住出不來</td><td>在兵旁邊，想帶兵前進</td></tr><tr><td>誰要會技巧</td><td>攻方：<strong>搭橋</strong>（Building a bridge）</td><td>守方：<strong>第三橫線防守</strong></td></tr></tbody></table>
+<p>簡單說：<strong>防守方的王在兵前 → Philidor（和）；防守方的王被切開、兵在第 7 → Lucena（勝）。</strong></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="第二課判斷流程">第二課：判斷流程<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%AC%AC%E4%BA%8C%E8%AA%B2%E5%88%A4%E6%96%B7%E6%B5%81%E7%A8%8B" class="hash-link" aria-label="第二課：判斷流程的直接連結" title="第二課：判斷流程的直接連結" translate="no">​</a></h2>
+<p>看到一個車兵對單車的局面，依序判斷：</p>
+<ol>
+<li class=""><strong>防守王在兵前面嗎？</strong>（在升變格，或在兵正前方的格子）<!-- -->
+<ul>
+<li class="">是 → 這是 <strong>Philidor 類型</strong>。守方只要用對方法就是和棋，進第三課。</li>
+<li class="">否 → 繼續問第 2 題。</li>
+</ul>
+</li>
+<li class=""><strong>防守王被車切斷了嗎？</strong>（攻方的車佔住一條直線，防守王過不來兵這一側）<!-- -->
+<ul>
+<li class="">否 → 防守王還能回來，通常還是往 Philidor 的方向走。</li>
+<li class="">是 → 繼續問第 3 題。</li>
+</ul>
+</li>
+<li class=""><strong>兵在第 7 橫線、攻方王在升變格上嗎？</strong>
+<ul>
+<li class="">是 → <strong>Lucena</strong>，攻方用搭橋必勝，進第四課。</li>
+<li class="">還沒 → 攻方的目標就是把局面推進成 Lucena。</li>
+</ul>
+</li>
+<li class=""><strong>最後檢查：是不是邊兵（a、h 兵）？</strong>
+<ul>
+<li class="">是 → <strong>Lucena 的搭橋不成立</strong>，王會被關在角落，常常是和棋（第五課）。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="第三課philidor-防守守方和棋">第三課：Philidor 防守（守方和棋）<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%AC%AC%E4%B8%89%E8%AA%B2philidor-%E9%98%B2%E5%AE%88%E5%AE%88%E6%96%B9%E5%92%8C%E6%A3%8B" class="hash-link" aria-label="第三課：Philidor 防守（守方和棋）的直接連結" title="第三課：Philidor 防守（守方和棋）的直接連結" translate="no">​</a></h2>
+<p><strong>辨認特徵</strong>：黑王站在 e8（兵的升變格），白兵在 e5、白王在 f5，黑車站在<strong>第 6 橫線</strong>。</p>
+<p><strong>核心想法分兩階段</strong>：</p>
+<ol>
+<li class=""><strong>兵還沒上第 6 橫線時</strong>：車守在第 6 橫線左右移動，白王就上不來，因為一上來就會被橫向將軍。</li>
+<li class=""><strong>兵一推到第 6 橫線</strong>：車<strong>立刻跑到第 1 橫線</strong>，從後面一直將軍。這時白兵已經佔掉第 6 橫線，白王找不到可以躲將軍的掩護。</li>
+</ol>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>常見錯誤</div><div class="admonitionContent_BuS1"><p>守方最容易犯的錯是把車<strong>縮在自己的底線</strong>（第 8 橫線）被動防守。白王一旦上到第 6 橫線，黑王會同時面對底線殺棋和兵升變的威脅，通常就輸了。<strong>車要積極，守在第六橫線。</strong></p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="第四課lucena-搭橋攻方必勝">第四課：Lucena 搭橋（攻方必勝）<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%AC%AC%E5%9B%9B%E8%AA%B2lucena-%E6%90%AD%E6%A9%8B%E6%94%BB%E6%96%B9%E5%BF%85%E5%8B%9D" class="hash-link" aria-label="第四課：Lucena 搭橋（攻方必勝）的直接連結" title="第四課：Lucena 搭橋（攻方必勝）的直接連結" translate="no">​</a></h2>
+<p><strong>辨認特徵</strong>：白兵在 d7、白王在 d8（自己擋住自己），黑王被 f 線的白車切斷在 g 線，黑車在 c 線封住白王往左的出口。</p>
+<p><strong>難點</strong>：白王一離開 d8，黑車就會從後面一直將軍。</p>
+<p><strong>解法：搭橋</strong></p>
+<ol>
+<li class="">先把車放到<strong>第 4 橫線</strong>（Rf4!）。</li>
+<li class="">王走出來，被將軍時沿著 d、e 線往下走。</li>
+<li class="">走到第 5 橫線時，車回到 d 線擋住將軍（Rd4），兵就升變了。</li>
+</ol>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>記憶口訣</div><div class="admonitionContent_BuS1"><p><strong>「四線搭橋」</strong> 車放的橫線要讓王走到下一橫線時剛好能擋，所以兵在第 7 → 車放第 4。</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="第五課例外邊兵">第五課：例外，邊兵<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%AC%AC%E4%BA%94%E8%AA%B2%E4%BE%8B%E5%A4%96%E9%82%8A%E5%85%B5" class="hash-link" aria-label="第五課：例外，邊兵的直接連結" title="第五課：例外，邊兵的直接連結" translate="no">​</a></h2>
+<p>邊兵（a、h 兵）的 Lucena <strong>不成立</strong>。白王在 a8、白兵在 a7，只要黑王守在 c7/c8，白王永遠走不出角落：b 線一直被黑車或黑王控制，白車又沒辦法替王開路。</p>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="判斷練習">判斷練習<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E5%88%A4%E6%96%B7%E7%B7%B4%E7%BF%92" class="hash-link" aria-label="判斷練習的直接連結" title="判斷練習的直接連結" translate="no">​</a></h2>
+<p>回到 <a href="https://www.youtube.com/shorts/BrF4-pY52c4" target="_blank" rel="noopener noreferrer" class="">Mate in Motion 的 Short</a>。先看棋盤判斷是 Lucena 還是 Philidor、能贏還是和棋。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="練習-1白先贏還是和">練習 1：白先，贏還是和？<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%B7%B4%E7%BF%92-1%E7%99%BD%E5%85%88%E8%B4%8F%E9%82%84%E6%98%AF%E5%92%8C" class="hash-link" aria-label="練習 1：白先，贏還是和？的直接連結" title="練習 1：白先，贏還是和？的直接連結" translate="no">​</a></h3>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>答案</summary><div><div class="collapsibleContent_i85q"><p><strong>Philidor，和棋。</strong> 黑王站在 e8，正好是兵的升變格；黑車在第 6 橫線擋住白王。黑方只要車留在第 6 橫線，等白兵推到 e6 再下底線從後面將軍就和了。</p></div></div></details>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="練習-2白先贏還是和">練習 2：白先，贏還是和？<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%B7%B4%E7%BF%92-2%E7%99%BD%E5%85%88%E8%B4%8F%E9%82%84%E6%98%AF%E5%92%8C" class="hash-link" aria-label="練習 2：白先，贏還是和？的直接連結" title="練習 2：白先，贏還是和？的直接連結" translate="no">​</a></h3>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>答案</summary><div><div class="collapsibleContent_i85q"><p><strong>Lucena，白勝。</strong> 黑王被 e 線的白車切斷，到不了兵前面；兵在第 7、白王在升變格，就是 Lucena。</p><p>這題多一個細節：黑王在 f7，離兵只隔一條線，還控制著白王的出口 e7。所以要先 <strong>1.Rf1+</strong> 把黑王趕到 g 線，再 <strong>2.Rf4</strong> 搭橋。</p></div></div></details>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="練習-3白先贏還是和">練習 3：白先，贏還是和？<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%B7%B4%E7%BF%92-3%E7%99%BD%E5%85%88%E8%B4%8F%E9%82%84%E6%98%AF%E5%92%8C" class="hash-link" aria-label="練習 3：白先，贏還是和？的直接連結" title="練習 3：白先，贏還是和？的直接連結" translate="no">​</a></h3>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>答案</summary><div><div class="collapsibleContent_i85q"><p><strong>Lucena，白勝。</strong> 跟練習 2 同一個模式，只是換到 b 兵。b 兵不是邊兵，所以 Lucena 照樣成立（只有 a、h 兵才是例外）。</p><p>先 <strong>1.Rd1+</strong> 把黑王趕到 e 線，白王才有 c7 可以走，接著 <strong>2.Rd4</strong> 搭橋。</p></div></div></details>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="練習-4黑先贏還是和">練習 4：黑先，贏還是和？<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E7%B7%B4%E7%BF%92-4%E9%BB%91%E5%85%88%E8%B4%8F%E9%82%84%E6%98%AF%E5%92%8C" class="hash-link" aria-label="練習 4：黑先，贏還是和？的直接連結" title="練習 4：黑先，贏還是和？的直接連結" translate="no">​</a></h3>
+<div style="height:380px;display:flex;align-items:center;justify-content:center;background:var(--ifm-color-emphasis-100);border-radius:12px;color:var(--ifm-color-emphasis-600)">♟️ 研究面板載入中...</div>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>答案</summary><div><div class="collapsibleContent_i85q"><p><strong>Philidor，和棋。</strong> 這次是黑方帶兵、白方防守，把棋盤上下顛倒來看：白王站在 e1，正好是黑兵的升變格；白車在白方的第三橫線（第 3 橫線）。</p><p>黑兵一推到 e3，就佔掉了黑王原本可以躲將軍的位置，白車馬上跑到第 8 橫線從後面將軍，黑王沒地方躲。</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="複習重點">複習重點<a href="https://shuojen.com/blog/2026/11/15/rook_endgame#%E8%A4%87%E7%BF%92%E9%87%8D%E9%BB%9E" class="hash-link" aria-label="複習重點的直接連結" title="複習重點的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>王在兵前 → Philidor → 守方用第三橫線防守 → 和。</strong></li>
+<li class=""><strong>王被切斷 + 兵在第 7 + 攻方王在升變格 → Lucena → 攻方搭橋 → 勝。</strong></li>
+<li class="">Philidor 守方的關鍵時機：<strong>兵一上第 6 橫線，車立刻下底線從後面將軍。</strong></li>
+<li class="">Lucena 攻方的關鍵：<strong>車先放第 4 橫線，再出王。</strong></li>
+<li class="">防守王只隔一條線、還擋住攻方王的出口時：<strong>先用車將軍把它趕遠一線，再搭橋。</strong></li>
+<li class="">邊兵例外：Lucena 不成立。</li>
+</ul>]]></content:encoded>
+            <category>chess</category>
+        </item>
+        <item>
+            <title><![CDATA[Claude]]></title>
+            <link>https://shuojen.com/blog/2026/11/11/blog_update</link>
+            <guid>https://shuojen.com/blog/2026/11/11/blog_update</guid>
+            <pubDate>Wed, 11 Nov 2026 15:43:21 GMT</pubDate>
+            <description><![CDATA[大概去年九月左右，手機壽終正寢，於是我換了 S25 這隻手機。]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="llm">LLM<a href="https://shuojen.com/blog/2026/11/11/blog_update#llm" class="hash-link" aria-label="LLM的直接連結" title="LLM的直接連結" translate="no">​</a></h2>
+<p>大概去年九月左右，手機壽終正寢，於是我換了 S25 這隻<a class="" href="https://shuojen.com/blog/2026/10/04/phone">手機</a>。</p>
+<p>當時換手機有一個活動，直接送了半年還一年的 Gemini Pro 的方案，當時我對 LLM 還一無所知，也就是因為這個契機，直接運用 AI 從零開始架了這個部落格，發了<a class="" href="https://shuojen.com/blog/First_blog">第一篇貼文</a>。</p>
+<p>一開始我是用從小到大學東西的管道來架網站──看 YouTube。但是架網站這種事情真的太客製化，太難統一每個人的狀況了，所以真的有點難以適應，當我有點卡關的時候，想到不如直接截圖問看看 AI 吧，沒想到令我驚為天人，不管什麼問題都可以跟這位手把手教學的老師，慢慢一步一步試到好。當時的我還不知道 Agent 是什麼，光是用笨的要死的模型（還是比我聰明）來回一直對話自行修改，就讓我覺得超級厲害了。</p>
+<p>現在發現當時手機的活動實在辦得太成功，抓到了我這個滿意客戶，在活動到期後還一路續訂到了現在。而且在我發現了<a class="" href="https://shuojen.com/blog/2026/05/22/aseprite#%E5%BE%8C%E8%A8%98"> Antigravity </a>直接操作 Agent 的用法之後，體驗又更上一層樓，完全回不去了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="claude">Claude<a href="https://shuojen.com/blog/2026/11/11/blog_update#claude" class="hash-link" aria-label="Claude的直接連結" title="Claude的直接連結" translate="no">​</a></h2>
+<p>雖然一直聽到 Claude 很厲害，但是習慣成自然實在太可怕，一直都沒有想要換的衝動。直到前兩天想說訂來玩看看好了，下個月再考慮留哪一個。結果真的太驚人，Claude Opus 5.5 的效果實在出奇的好，執行指令的精確度、速度都讓我相當滿意，就連精簡不廢話的語氣都更符合我的胃口。而且在終端機跟 VSCodium 裡操作，我也覺得完全沒有操作與轉換上的難度<sup><a href="https://shuojen.com/blog/2026/11/11/blog_update#user-content-fn-1-637206" id="user-content-fnref-1-637206" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>，真的相見恨晚。</p>
+<p>Token 用量對我來說 Pro 方案也夠用了。長駐使用 Opus 5.5 medium 來處理工作以及維護這個部落格的程式碼，也不太會有見底的用量焦慮。偷偷小改版了部落格上的幾個頁面，<a class="" href="https://shuojen.com/blog/archive"><code>/archive</code></a>、<a class="" href="https://shuojen.com/guestbook"><code>/guestbook</code></a>、<a class="" href="https://shuojen.com/photography"><code>/photography</code></a>、<a href="https://shuojen.com/game.html" target="_blank" rel="noopener noreferrer" class="">成語迷宮遊戲</a>，真的太開心了。</p>
+<p>總算過足了<a class="" href="https://shuojen.com/blog/2026/11/08/docusaurus#%E5%BE%8C%E8%A8%98">「改網頁」</a>的乾癮。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/11/11/blog_update#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>提到看 YouTube，仔細想想，我的興趣好像幾乎都是看 YouTube 學來的。從小學的魔術方塊，高中時學吉他，大學玩水族、學檔車、玩攝影，研究所學下西洋棋，都是「看」來的，中文的內容不夠看就看英文的。</p>
+<p>這也變相產生了一個奇怪的現象，我的英文理應明明只有國中程度才對。因為我超討厭英文課，整個高中每堂英文課我都直接睡過去，但是大學後看了很多魔術方塊之類的英文 YouTube 影片，所以我的聽力比閱讀好很多。口說又因為常常聽的緣故，所以即使單字量很破，實際說起來好像又還過得去。</p>
+<p>大學時裸考多益甚至出現聽力比閱讀高兩倍的怪異現象（通常大家都相反），雖然也還是只有 600 多分，我的英文還是很爛（想考高分請讀書）。語言這種東西，認真說好像還是得多少背一點單字才行，畢竟我從國中後就再也沒「學」過英文了。</p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/11/11/blog_update#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-637206">
+<p>唯一有讓我苦惱的是，一開始不知道怎麼貼上截圖，結果就在跑指令的時候，下方直接出現提示：<kbd>Alt</kbd> + <kbd>V</kbd>可以貼上截圖，天哪 Claude 你會讀心嗎！ <a href="https://shuojen.com/blog/2026/11/11/blog_update#user-content-fnref-1-637206" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>blog</category>
+        </item>
+        <item>
+            <title><![CDATA[格友的部落格]]></title>
+            <link>https://shuojen.com/blog/2026/11/08/docusaurus</link>
+            <guid>https://shuojen.com/blog/2026/11/08/docusaurus</guid>
+            <pubDate>Sat, 07 Nov 2026 18:07:45 GMT</pubDate>
+            <description><![CDATA[樂樂人生 今天看到〈2026, 07, Nov&部落格觀察〉，提到「樂樂人生」的部落格改網址了。我大約在前幾個禮拜注意到這件事，但是一直查不到轉到哪個網址。還好…]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>資訊</div><div class="admonitionContent_BuS1"><p>這是我在「<a href="https://blogblog.club/party/" target="_blank" rel="noopener noreferrer" class="">BlogBlog 同樂會 - 2026 年 11 月</a>」的投稿文章。本月主題是「<a href="https://blog.giveanornot.com/blogblogparty-blog-posts" target="_blank" rel="noopener noreferrer" class="">部落格文章（與他們的產地）</a>」，由 <a href="https://blog.giveanornot.com/" target="_blank" rel="noopener noreferrer" class="">資工小廢物 - JN</a> 主持。如果你有自己的部落格，歡迎一起來參加！</p></div></div>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="樂樂人生">樂樂人生<a href="https://shuojen.com/blog/2026/11/08/docusaurus#%E6%A8%82%E6%A8%82%E4%BA%BA%E7%94%9F" class="hash-link" aria-label="樂樂人生的直接連結" title="樂樂人生的直接連結" translate="no">​</a></h2>
+<p>今天看到<a href="https://ordinarykuma.bearblog.dev/2026-07-11/" target="_blank" rel="noopener noreferrer" class="">〈2026, 07, Nov&amp;部落格觀察〉</a>，提到<a href="https://lelelife.bearblog.dev/" target="_blank" rel="noopener noreferrer" class="">「樂樂人生」</a>的部落格改網址了。我大約在前幾個禮拜注意到這件事，但是一直查不到轉到哪個網址。還好這篇文章幫我解惑，感謝 ordinarykuma，又可以看可愛的<a href="https://lelelife.bearblog.dev/1257/" target="_blank" rel="noopener noreferrer" class="">狗狗</a>了！</p>
+<p>我常常苦惱有些格友換網址後就不知道怎麼找回來，就算記憶還在，但是怎麼 Google 也找不到。雖然不排除也可能是真的把網站關掉了，像是派的部落格、Gou 的部落格，都是我心中失聯的部落格。如果有人知道這些網站在哪裡，希望可以告訴我！</p>
+<p>逝去的部落格對我來說就像喜歡的店家關店，再也嚐不到那個熟悉的味道了。不會到難過那麼嚴重，但總有那麼一點遺憾，因為心裡知道，有些東西永遠不會再被復刻了。</p>
+<p>明白自己長大的瞬間就是，發現很多熟悉的東西都在不斷失去，而且我們坦然的面對這些失去，繼續往前邁進。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ikuka-的第二個家">ikuka 的第二個家<a href="https://shuojen.com/blog/2026/11/08/docusaurus#ikuka-%E7%9A%84%E7%AC%AC%E4%BA%8C%E5%80%8B%E5%AE%B6" class="hash-link" aria-label="ikuka 的第二個家的直接連結" title="ikuka 的第二個家的直接連結" translate="no">​</a></h2>
+<p>恭喜格友<a href="https://ikuka.blog/blog/" target="_blank" rel="noopener noreferrer" class=""> ikuka </a>搬家成功！一起成為 Docusaurus 的一份子！（<a class="" href="https://shuojen.com/blog/2026/07/30/ichigo-ichie#%E7%B6%B2%E5%8F%8B%E9%96%93%E7%9A%84%E4%B8%80%E6%9C%9F%E4%B8%80%E6%9C%83">老梗新用</a>）</p>
+<div style="text-align:center;padding:1.5rem 1rem;border-radius:16px;border:1px solid var(--ifm-color-emphasis-200);background:var(--ifm-card-background-color, var(--ifm-background-color));color:var(--ifm-font-color-base);margin:1.5rem 0;box-shadow:0 4px 12px rgba(0, 0, 0, 0.05);box-sizing:border-box"><div style="font-size:clamp(1.2rem, 4.5vw, 1.6rem);font-weight:bold;margin:0 0 10px 0;line-height:1.4;word-break:break-word;min-height:2.2rem;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease">🎉 恭喜喬遷之喜！ 🎉</div><p style="font-size:1rem;margin-bottom:1.2rem;opacity:0.85;line-height:1.5">祝新部落格使用順利，耶嘿</p><button type="button" style="padding:10px 24px;font-size:1rem;font-weight:bold;color:#fff;background-color:#ff4757;border:none;border-radius:50px;cursor:pointer;box-shadow:0 4px 12px rgba(255, 71, 87, 0.3);transition:transform 0.1s ease, box-shadow 0.15s ease">🎉 放彩條慶祝！</button></div>
+<p>雖然一直都有關注 ikuka 尋覓下一個家這件事，但是基於不好意思指手畫腳，所以沒有寄信推坑一起來當恐龍。一方面也是不知道 ikuka 會不會喜歡 Docusaurus 的頁面，總感覺 Docusaurus 的風格跟 ikuka 原本女孩子的那種可愛部落格<sup><a href="https://shuojen.com/blog/2026/11/08/docusaurus#user-content-fn-1-2f081c" id="user-content-fnref-1-2f081c" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>差很多，好像太「文件感」了一點，說的更直接一點就是，進入預設的 Docusaurus，我大概就會下意識的說出：</p>
+<blockquote>
+<p>恩...好「直男」的部落格。</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="部落格風格帶給我的樂趣">部落格風格帶給我的樂趣<a href="https://shuojen.com/blog/2026/11/08/docusaurus#%E9%83%A8%E8%90%BD%E6%A0%BC%E9%A2%A8%E6%A0%BC%E5%B8%B6%E7%B5%A6%E6%88%91%E7%9A%84%E6%A8%82%E8%B6%A3" class="hash-link" aria-label="部落格風格帶給我的樂趣的直接連結" title="部落格風格帶給我的樂趣的直接連結" translate="no">​</a></h2>
+<p>根據我毫無根據的刻版印象，我自己熟悉的格友裡使用 Docusaurus 的，似乎都是男性居多，像是<a href="https://wiwi.blog/" target="_blank" rel="noopener noreferrer" class=""> Wiwi</a>、<a href="https://til.trashposts.com/blog/" target="_blank" rel="noopener noreferrer" class="">皮皮的 TIL</a>、<a href="https://immarcus.com/blog" target="_blank" rel="noopener noreferrer" class="">Marcus</a> 等等。也許是因為它的定位本來就比較偏「技術文件網站」的緣故，倒不是技術文件就跟性別有什麼關係，只是體感上好像風格就比較冰冷一點點。</p>
+<p>這讓我更期待 ikuka 會慢慢將網站怎麼改成符合她的風格，畢竟看別人暴改網站也是追部落格社群有趣的一環。像是之前看到 Wiwi 的 <a href="https://wiwi.blog/crepe" target="_blank" rel="noopener noreferrer" class=""><code>/crepe</code></a> 頁面就讓我興奮好一陣子、「前」恐龍格友 Jaron 把網頁整個<a href="https://jaron.tw/blog/redesign" target="_blank" rel="noopener noreferrer" class="">重新設計</a>、或是<a href="https://hshuang.com/" target="_blank" rel="noopener noreferrer" class="">黃宏勝的部落格</a>當初無預警大改，也讓我覺得哇好酷呀！另外還有印象深刻的<a href="https://blog.giveanornot.com/" target="_blank" rel="noopener noreferrer" class=""> JN 的部落格 </a>，一波大更新把 Hugo 改得風格十足，搭配有特色的像素字，不禁讓我驚歎連連，實在太有才華了。</p>
+<p>部落格生態真的好有趣，這種慢慢看著網頁變化的樂趣，在一般社群媒體可以說是絕無僅有的體驗。有時候點開朋友傳的 Threads 連結，看到一則貼文，字稍微多個幾行，內文就直接被擠到留言區，真的發自內心覺得悲哀到不小心笑出來。</p>
+<p>就算不會架網站，懶得折騰 AI 和程式碼，像是<a href="https://bearblog.dev/" target="_blank" rel="noopener noreferrer" class=""> Bear blog </a>這種簡易架站部落格，也有超級多可愛的主題可以選擇。例如注意到<a href="https://noa.bearblog.dev/" target="_blank" rel="noopener noreferrer" class=""> Noa </a>還有<a href="https://calke.bearblog.dev/" target="_blank" rel="noopener noreferrer" class=""> Tommy </a>換了主題，也會讓我心情愉悅一整天，就像發現什麼彩蛋一樣。想要客製化自訂當然也沒問題，例如<a href="https://hjhmi89.bearblog.dev/" target="_blank" rel="noopener noreferrer" class="">小米紀錄簿</a>、<a href="https://shuyulin1127.com/" target="_blank" rel="noopener noreferrer" class="">Shuyu</a>，也把 Bear blog 妝點的超級有個人特色又漂亮。</p>
+<p>可以依自己自由意志隨意裝飾的地方才能稱為房間，只能跟著典獄長一個口令一個動作的，也許叫「牢房」會更貼切。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/11/08/docusaurus#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>原本只是想簡單寫一篇廢文來恭喜 ikuka<sup><a href="https://shuojen.com/blog/2026/11/08/docusaurus#user-content-fn-2-2f081c" id="user-content-fnref-2-2f081c" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup>，不知不覺好像意外的讓我寫完了 BBP 十一月的投稿主題，文章自己長成我自己都不知道的樣子（又一個寫部落格有趣的地方）。而且意外的我又在投稿文章裡對 ikuka 放彩條，這也不是我原來預期中會發生的事（啥鬼）。</p>
+<p>原本還在苦惱是不是要把<a class="" href="https://shuojen.com/blog/2026/04/22/blog_questions">〈部落格問題挑戰〉</a>直接拿來投稿了，想不到要寫什麼，看來不用出此下策了。感謝 ikuka 帶給我的靈感，拯救了我的十一月 BBP！</p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/11/08/docusaurus#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-2f081c">
+<p>現在<a href="https://ikuka.blog/blog/" target="_blank" rel="noopener noreferrer" class="">夜間模式</a>的這種 <code>#1F1719</code> 暗紅色整個感覺就不一樣了，好好看！哎呀光是一個底色馬上就跟我這種臭直男拉開差距了 QQ <a href="https://shuojen.com/blog/2026/11/08/docusaurus#user-content-fnref-1-2f081c" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-2-2f081c">
+<p>昨天看到新 Docusaurus 頁面心裡就期待的不行了，奇怪又不是自己大改網站是在興奮什麼(?) <a href="https://shuojen.com/blog/2026/11/08/docusaurus#user-content-fnref-2-2f081c" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>blog</category>
+            <category>blogparty</category>
+        </item>
+        <item>
+            <title><![CDATA[無限循環]]></title>
+            <link>https://shuojen.com/blog/2026/11/07/loop</link>
+            <guid>https://shuojen.com/blog/2026/11/07/loop</guid>
+            <pubDate>Sat, 07 Nov 2026 05:40:49 GMT</pubDate>
+            <description><![CDATA[在 XX 上班的話]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="在-xx-上班的話">在 XX 上班的話<a href="https://shuojen.com/blog/2026/11/07/loop#%E5%9C%A8-xx-%E4%B8%8A%E7%8F%AD%E7%9A%84%E8%A9%B1" class="hash-link" aria-label="在 XX 上班的話的直接連結" title="在 XX 上班的話的直接連結" translate="no">​</a></h2>
+<p>Eddie 的<a href="https://eddielv.com/musings/work-in-zoo/" target="_blank" rel="noopener noreferrer" class="">「在 XX 上班的話」</a>系列很有趣。我也曾經想過自己有沒有可能做跟現在完全八竿子打不著的職業。如果有這個可能的話，我覺得當理髮師或許是個很酷的主意。但我從來沒有幫任何人剪過頭髮，這讓我好奇到底該怎麼開始幫別人剪頭髮，感覺就會落入一個無限循環。</p>
+<blockquote>
+<p>從來沒幫別人剪過頭髮 -&gt; 需要幫別人剪頭髮累積經驗 -&gt; 沒經驗所以沒人敢給我剪頭髮 -&gt; 從來沒幫別人剪過頭髮</p>
+</blockquote>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>想到這個經典迷因</summary><div><div class="collapsibleContent_i85q"><img src="https://shuojen.com/assets/images/meme-30996f9ef86b9d305f3021f5c893a6ec.jpg" width="600" alt="無限循環 圖 1"></div></div></details>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="魚油">魚油<a href="https://shuojen.com/blog/2026/11/07/loop#%E9%AD%9A%E6%B2%B9" class="hash-link" aria-label="魚油的直接連結" title="魚油的直接連結" translate="no">​</a></h2>
+<p>前幾天收到 IXXXX 寄給我的 E-mail，提醒我每四個月自動續訂的魚油會直接寄過來，但我根本常常忘記每天吃，所以存貨還有很多。只好先囤著然後取消訂閱，我感覺自己又落入一個無限循環。</p>
+<blockquote>
+<p>記憶力不好忘了吃魚油 -&gt; 買魚油來吃增強記憶力 -&gt; 記憶力不好忘了吃魚油</p>
+</blockquote>]]></content:encoded>
+            <category>life</category>
+            <category>shitpost</category>
+        </item>
+        <item>
+            <title><![CDATA[中央大學趣事]]></title>
+            <link>https://shuojen.com/blog/2026/11/03/ncu</link>
+            <guid>https://shuojen.com/blog/2026/11/03/ncu</guid>
+            <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[今天看到雲彩的〈中央大學推甄遊記〉，想到多年以前參加中央大學[^1]研究所考試時發生的趣事。]]></description>
+            <content:encoded><![CDATA[<p>今天看到雲彩的<a href="https://yuncolorblog.com/posts/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/ncu/" target="_blank" rel="noopener noreferrer" class="">〈中央大學推甄遊記〉</a>，想到多年以前參加中央大學<sup><a href="https://shuojen.com/blog/2026/11/03/ncu#user-content-fn-1-f01baf" id="user-content-fnref-1-f01baf" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>研究所考試時發生的趣事。</p>
+<p>土木系結構組的考科有結構學、材料力學、工程數學。其中最難準備的就是工程數學，內容橫跨常微分方程式、偏微分方程式、線性代數與矩陣、拉普拉斯轉換、傅立葉轉換、向量分析、複變等等。</p>
+<p>這些考題雖然我已全然忘卻，但是章節名稱卻還記憶深刻，足以證明它們曾對我留下何等心裡陰影。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="考試當天">考試當天<a href="https://shuojen.com/blog/2026/11/03/ncu#%E8%80%83%E8%A9%A6%E7%95%B6%E5%A4%A9" class="hash-link" aria-label="考試當天的直接連結" title="考試當天的直接連結" translate="no">​</a></h2>
+<p>當時考試座位的分配是一張三人長桌，兩端各坐一位同學，中間空著。第一節課的應考項目就是大魔王工程數學。</p>
+<p>當時一發考題，我就愣住整整一分鐘。眼前的四題都難得像鬼一樣，而隔壁同學馬上振筆疾書的寫字聲，更聽得我冷汗直流。這是我人生中數一數二痛苦的一小時，數學這種東西不會就是不會，實在很難硬寫出什麼筆墨分。最後寫了半小時左右，終於放棄抵抗交卷。旁邊的同學依然持續穩定的輸出「刷刷刷」的聲音，我的心就這樣沉到了谷底。</p>
+<p>出了教室後，我愣愣的站在門口發呆，猛然看到座位表上，隔壁同學的應考資訊。</p>
+<p>「客家語文暨社會科學學系」。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/11/03/ncu#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>後來我成功進入研究所考試的複試（口試），惴惴不安的帶著三十幾分的工數成績與三位教授面談，某位教授竟然說我工數不錯，期待我進入中央大學就讀。</p>
+<blockquote>
+<p><a href="https://lq7.tw/thinking/we-suffer-more-often-in-imagination-than-in-reality/" target="_blank" rel="noopener noreferrer" class="">「我們在想像中受的苦多於現實中」</a></p>
+<p>──塞內卡（Seneca）</p>
+</blockquote>
+<p>嗯，如果早點看過 LQ7 大大的文章就好了呢！</p>
+<img src="https://shuojen.com/assets/images/20210209-f6710b31556e5b234433917f83f4982c.jpg" width="600" alt="中央大學趣事 圖 1">
+<p>▲<em>2021-02-09 攝於中央大學校園</em></p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/11/03/ncu#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-f01baf">
+<p>還有一個印象是中央校園裡的風真的超大，體感上一點都不輸新竹能把機車吹倒的怪風。 <a href="https://shuojen.com/blog/2026/11/03/ncu#user-content-fnref-1-f01baf" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>fun</category>
+        </item>
+        <item>
+            <title><![CDATA[海綿寶寶幸運路跑]]></title>
+            <link>https://shuojen.com/blog/2026/11/01/road_race</link>
+            <guid>https://shuojen.com/blog/2026/11/01/road_race</guid>
+            <pubDate>Sun, 01 Nov 2026 04:57:35 GMT</pubDate>
+            <description><![CDATA[今天跟蝦波一早六點多就起床，騎車去三重參加《海綿寶寶人生馬拉松》路跑活動，現場人超級多。這是我們第一次參加路跑活動，還滿有趣的。只要一小時內跑完四公里即可，沒什…]]></description>
+            <content:encoded><![CDATA[<p>今天跟蝦波一早六點多就起床，騎車去三重參加《海綿寶寶人生馬拉松》路跑活動，現場人超級多。這是我們第一次參加路跑活動，還滿有趣的。只要一小時內跑完四公里即可，沒什麼壓力就可以完賽了！</p>
+<img src="https://shuojen.com/assets/images/001-4cc0aa4e6fd1048eb8248e5158074e9e.webp" width="600" alt="海綿寶寶幸運路跑 圖 1">
+<img src="https://shuojen.com/assets/images/002-bf11c2408aeaad9e3e6aed97d3f4ec3b.webp" width="600" alt="海綿寶寶幸運路跑 圖 2">
+<img src="https://shuojen.com/assets/images/003-bedba3c660ce1eead6db436f8f2bbce3.webp" width="600" alt="海綿寶寶幸運路跑 圖 3">
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="今天運氣超級不好">今天運氣超級不好<a href="https://shuojen.com/blog/2026/11/01/road_race#%E4%BB%8A%E5%A4%A9%E9%81%8B%E6%B0%A3%E8%B6%85%E7%B4%9A%E4%B8%8D%E5%A5%BD" class="hash-link" aria-label="今天運氣超級不好的直接連結" title="今天運氣超級不好的直接連結" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1">1<a href="https://shuojen.com/blog/2026/11/01/road_race#1" class="hash-link" aria-label="1的直接連結" title="1的直接連結" translate="no">​</a></h3>
+<p>大約跑到一半的時候肚子就開始作怪，還好絞痛是一陣一陣的，痛完一下就沒那麼痛了。不過手邊完全沒有衛生紙，所以就算有流動廁所也無濟於事，想到這點緊張起來肚子又更痛了。好不容易抵達終點，興沖沖的領完完賽小禮物，我們就趕緊騎車到附近有廁所的便利商店，危機解除。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2">2<a href="https://shuojen.com/blog/2026/11/01/road_race#2" class="hash-link" aria-label="2的直接連結" title="2的直接連結" translate="no">​</a></h3>
+<p>活動結束我們到三重我心目中第一名的今大滷肉飯享用早餐。</p>
+<img src="https://shuojen.com/assets/images/004-45cfbe273c61ed9b0718af77e0839e58.webp" width="600" alt="海綿寶寶幸運路跑 圖 4">
+<p>趕快來開完賽盲盒！有路人魚、公主魚、阿嬤魚，蝦波開到了公主魚。我心想只要不要抽到阿嬤魚就好。</p>
+<p>噠啦！阿嬤魚！</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3">3<a href="https://shuojen.com/blog/2026/11/01/road_race#3" class="hash-link" aria-label="3的直接連結" title="3的直接連結" translate="no">​</a></h3>
+<p>最後結束整個行程準備回家。好久沒有那麼早起床，完成一個活動騎車回家還不到中午，真是開心。騎車即將到家的最後五百公尺。嗯？</p>
+<p>機車沒油了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/11/01/road_race#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>雖然直覺來說覺得今天挺衰的，但是仔細想想又覺得其實今天超級幸運耶！</p>
+<p>完賽後蝦波馬上就找到一個騎車五分鐘就有廁所的便利商店，環境很好而且還有提供衛生紙，真的是佛心店家（買舒跑支持店家）。</p>
+<p>機車剛好沒油在一大堆空機車格的路邊，而且是平常很熟悉走路就到的地方，我可以之後再帶一罐油回來救援。不過實在是很不解，明明油錶就還有兩格。家裡的老速克達真是太不給面子了。</p>
+<p>最後完賽禮至少蝦波抽到了公主魚，而且她願意跟我交換！</p>
+<img src="https://shuojen.com/assets/images/005-4a9702df8c60b4433f7581cdfd84a818.webp" width="400" alt="海綿寶寶幸運路跑 圖 5">
+<p>在一些活動、旅途中，當下不順利的事情，常常在未來都會變成很好的回憶。我喜歡笑著說自己某次旅行走錯了路、爬雪山的時候高山症、跟朋友在台東海邊眼鏡被海浪捲走...</p>
+<blockquote>
+<p><strong>「發生那麼多好笑的事，今天真是相當幸運的一天！」</strong></p>
+</blockquote>]]></content:encoded>
+            <category>life</category>
+            <category>sport</category>
+        </item>
+        <item>
+            <title><![CDATA[簡易拍照構圖法]]></title>
+            <link>https://shuojen.com/blog/2026/10/29/composition</link>
+            <guid>https://shuojen.com/blog/2026/10/29/composition</guid>
+            <pubDate>Thu, 29 Oct 2026 12:17:59 GMT</pubDate>
+            <description><![CDATA[先推廣一下 LQ7 大大的〈一個攝影會〉[^1]群組！很棒的好地方，可以分享一些攝影相關的話題與閒聊，其中也有 LQ7 大大精心整理的攝影筆記，今天剛好在大大整…]]></description>
+            <content:encoded><![CDATA[<p>先推廣一下 LQ7 大大的〈一個攝影會〉<sup><a href="https://shuojen.com/blog/2026/10/29/composition#user-content-fn-1-24f9ce" id="user-content-fnref-1-24f9ce" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>群組！很棒的好地方，可以分享一些攝影相關的話題與閒聊，其中也有 LQ7 大大精心整理的攝影筆記，今天剛好在大大整理的 Matt Stuart 街拍心得與筆記看到這段：</p>
+<blockquote>
+<p>Matt Stuart 不信任任何構圖法，表示無招勝有招，決定拍攝的主體後，左右移動相機，試著將主體擺在不同的位置，看畫面中是否有其他元素可以互相搭配。</p>
+</blockquote>
+<p>這裡我有點認同但又不是完全認同。</p>
+<p>我覺得當拍攝者累積一定經驗後，對於眼睛看到的畫面，通常腦中已經有概念該如何呈現畫面了。有點像是高手已經內化了構圖法，信手捻來皆是好照片，不必拘泥於「劍招」，只懂「劍意」即可。但前題還是先得學習、認識招式，再將招式忘得一乾二淨，才能得其神髓。（就像張三丰在武當山教張無忌太極劍法的時候一樣）</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="減法原則與構圖法">減法原則與構圖法<a href="https://shuojen.com/blog/2026/10/29/composition#%E6%B8%9B%E6%B3%95%E5%8E%9F%E5%89%87%E8%88%87%E6%A7%8B%E5%9C%96%E6%B3%95" class="hash-link" aria-label="減法原則與構圖法的直接連結" title="減法原則與構圖法的直接連結" translate="no">​</a></h2>
+<p>我認為好照片有一個最關鍵的要素──<strong>乾淨</strong>。</p>
+<p>主體越明確越好、畫面元素越少越好、色彩種類越少越好。當做到了這一點，即使不思考多餘的構圖，也一定會得到一張看起來相當不錯的照片。</p>
+<p>基於這個「減法原則」，我們可以利用一些額外的方式讓畫面乾淨。例如色彩太雜亂？可以嘗試黑白的照片，降低干擾。這也是為什麼用黑白照片街拍會有更容易出片、更富人文氣息的感覺。再比如畫面太多物體？可以嘗試用大光圈突出主體（新手萬用招），不然就用長一點的焦段。推薦人文街拍用 50mm，手機主鏡頭通常是 24mm-28mm，可以試著用 2 倍鏡拍拍看，會有意想不到的效果，焦段越廣越難以駕馭，因為畫面越容易亂。</p>
+<p>我認為「構圖法」也是一定程度在輔佐拍攝者，讓畫面達到以上條件。以下就簡單用<a class="" href="https://shuojen.com/photography"> <code>/photography</code> </a>裡的照片，介紹一下我常用的幾種構圖法。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="居中構圖">居中構圖<a href="https://shuojen.com/blog/2026/10/29/composition#%E5%B1%85%E4%B8%AD%E6%A7%8B%E5%9C%96" class="hash-link" aria-label="居中構圖的直接連結" title="居中構圖的直接連結" translate="no">​</a></h2>
+<p>大道至簡。每個人都會的構圖法，也是我最喜歡的構圖，可以讓畫面對稱和諧。</p>
+<img src="https://shuojen.com/assets/images/003-37f7a41e9981f69bcd54e0fd6a4ae4a6.webp" width="600" alt="簡易拍照構圖法 圖 1">
+<img src="https://shuojen.com/assets/images/020-1048757551af9656505d4fa9bd38ddd5.webp" width="600" alt="簡易拍照構圖法 圖 2">
+<img src="https://shuojen.com/assets/images/007-c32a2a66bd16590c732667e6012605c2.webp" width="600" alt="簡易拍照構圖法 圖 3">
+<img src="https://shuojen.com/assets/images/016-919cc81a0a963cea7b731cf10f69ff2b.webp" width="600" alt="簡易拍照構圖法 圖 4">
+<img src="https://shuojen.com/assets/images/002-c87eedfe22fffa48c6bf3d9b4b1e69d3.webp" width="600" alt="簡易拍照構圖法 圖 5">
+<p>▲居中構圖+三分構圖</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="三分構圖">三分構圖<a href="https://shuojen.com/blog/2026/10/29/composition#%E4%B8%89%E5%88%86%E6%A7%8B%E5%9C%96" class="hash-link" aria-label="三分構圖的直接連結" title="三分構圖的直接連結" translate="no">​</a></h2>
+<p>我也滿常使用的一種構圖法，將拍攝主體放在畫面三分之一處，有引導視線的作用。</p>
+<img src="https://shuojen.com/assets/images/014-0e7285e01d2203524f8427d66ba176a0.webp" width="600" alt="簡易拍照構圖法 圖 6">
+<img src="https://shuojen.com/assets/images/010-002918d81675ed9e3d768d93508d871e.webp" width="600" alt="簡易拍照構圖法 圖 7">
+<img src="https://shuojen.com/assets/images/005-122d4d3c78250f36c45e1523ac8121a1.webp" width="600" alt="簡易拍照構圖法 圖 8">
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="前景構圖">前景構圖<a href="https://shuojen.com/blog/2026/10/29/composition#%E5%89%8D%E6%99%AF%E6%A7%8B%E5%9C%96" class="hash-link" aria-label="前景構圖的直接連結" title="前景構圖的直接連結" translate="no">​</a></h2>
+<p>有時候可以試著尋找一點遮蔽的前景，可以營造富有層次的效果。</p>
+<img src="https://shuojen.com/assets/images/009-ca254c87640c29bd828c78e08f79606c.webp" width="600" alt="簡易拍照構圖法 圖 9">
+<img src="https://shuojen.com/assets/images/005-456c522faea99958343eab18cb8c5116.webp" width="600" alt="簡易拍照構圖法 圖 10">
+<img src="https://shuojen.com/assets/images/009-0ed8afe562dba13d108c8c847b788c10.webp" width="600" alt="簡易拍照構圖法 圖 11">
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="框架構圖">框架構圖<a href="https://shuojen.com/blog/2026/10/29/composition#%E6%A1%86%E6%9E%B6%E6%A7%8B%E5%9C%96" class="hash-link" aria-label="框架構圖的直接連結" title="框架構圖的直接連結" translate="no">​</a></h2>
+<p>可以用門、鏡子、窗戶等等將拍攝的主體框住，很有趣，可以盡情發揮創意。</p>
+<img src="https://shuojen.com/assets/images/001-516f119115fde9309408daeb4f2a4c63.webp" width="600" alt="簡易拍照構圖法 圖 12">
+<img src="https://shuojen.com/assets/images/053-9cebbb10f2394f850f26b9a81b2597b7.webp" width="600" alt="簡易拍照構圖法 圖 13">
+<img src="https://shuojen.com/assets/images/001-10a1152f3eb3daed416418734040d33f.webp" width="600" alt="簡易拍照構圖法 圖 14">
+<img src="https://shuojen.com/assets/images/001-4f7b5e83e60ed29e213ebc2f97050b02.webp" width="600" alt="簡易拍照構圖法 圖 15">
+<img src="https://shuojen.com/assets/images/015-72cd40e727b3e587b19d953b131a9df4.webp" width="600" alt="簡易拍照構圖法 圖 16">
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/10/29/composition#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>這篇文章起源於 LQ7 大大熱情邀約參加一個攝影會群組，想說必須寫個小小的攝影心得，簡單分享一下。難以啟齒的是，從 2019 開始，其實除了自己瞎拍，我從來沒上過任何攝影的課程，這幾年間也只隨意看了一些 YouTube 影片。要說起光學原理、高深的拍攝技術，坦白說自己還真是胸無點墨。要說我是專門玩街拍的，也說不大上來，就是出門旅行的時候會帶相機隨意拍拍而已，只是除了家人朋友，我偶爾也喜歡拍拍不認識的路人、可愛的孩子、貓貓狗狗。</p>
+<p>這篇大概就是一些自己這幾年攝影的小小心得，最後順便推薦幾個我喜歡，也對我有所啟發的頻道或攝影部落格。</p>
+<ol>
+<li class="">
+<p><a href="https://www.behance.net/gpx2000?locale=zh_TW" target="_blank" rel="noopener noreferrer" class="">gpx2000</a>：GPX2000 大大，最早是在 IG 上看。我喜歡用 2.39:1 比例也是啟發於他，一定程度上奠定了我對攝影的審美。</p>
+</li>
+<li class="">
+<p><a href="https://www.youtube.com/@linksphotograph/videos" target="_blank" rel="noopener noreferrer" class="">Links TV</a>：影片照片都拍得非常美，文案也寫得極好。我從 Links 在日本讀書的時候就在看這個頻道了（驕傲），最早還在拍底片的時候，從這學習到了很多。</p>
+</li>
+<li class="">
+<p><a href="https://www.youtube.com/@FaizalWestcott/videos" target="_blank" rel="noopener noreferrer" class="">Faizal Westcott</a>：一開始因為也是富士用戶所以看的，有學到了一些街拍的技巧還有色彩風格。</p>
+</li>
+</ol>
+<p>最後關於調色這門大學問，我實在所知甚淺，也許之後有興致再來寫個下集，聊聊照片的色彩風格這件事。</p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/10/29/composition#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-24f9ce">
+<p>欲加入 DC 社團請聯絡<a href="https://lq7.tw/" target="_blank" rel="noopener noreferrer" class=""> LQ7 </a>大大！ <a href="https://shuojen.com/blog/2026/10/29/composition#user-content-fnref-1-24f9ce" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>photo</category>
+        </item>
+        <item>
+            <title><![CDATA[淺色主題]]></title>
+            <link>https://shuojen.com/blog/2026/10/29/theme</link>
+            <guid>https://shuojen.com/blog/2026/10/29/theme</guid>
+            <pubDate>Thu, 29 Oct 2026 11:25:28 GMT</pubDate>
+            <description><![CDATA[看到〈米色道林紙〉後趕緊來抄作業。]]></description>
+            <content:encoded><![CDATA[<p>看到<a href="https://lq7.tw/mood/cream-paper/" target="_blank" rel="noopener noreferrer" class="">〈米色道林紙〉</a>後趕緊來抄作業。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="預設主題">預設主題<a href="https://shuojen.com/blog/2026/10/29/theme#%E9%A0%90%E8%A8%AD%E4%B8%BB%E9%A1%8C" class="hash-link" aria-label="預設主題的直接連結" title="預設主題的直接連結" translate="no">​</a></h2>
+<p>一直以來我都預設自己的網頁是深色主題，因為純白色實在是太刺了，我自己從來沒用過白色。但似乎也有喜歡開燈的朋友，還是得照顧一下！於是我把底色從純白的 <code>#FFFFFF</code> 改成非常淺的灰白色 <code>#F6F6F7</code>，這樣應該比較柔和一點了。</p>
+<p>對如何設計主題實在不怎麼在行，感覺簡單乾淨就好了。所以我原本就把主要的顏色基調訂「黑白灰」，也許有一點單調，但是簡約的風格大概是最不會膩的吧，就像白米飯一樣，雖然無聊，但是無聊的很剛好。</p>
+<img src="https://shuojen.com/assets/images/theme-58c489d19356bbd7dfc7c6f15c5f3093.png" width="800" alt="淺色主題 圖 1">]]></content:encoded>
+            <category>blog</category>
+        </item>
+        <item>
+            <title><![CDATA[週末雜記]]></title>
+            <link>https://shuojen.com/blog/2026/10/28/weekend</link>
+            <guid>https://shuojen.com/blog/2026/10/28/weekend</guid>
+            <pubDate>Wed, 28 Oct 2026 01:39:41 GMT</pubDate>
+            <description><![CDATA[相反的你和我]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="相反的你和我">相反的你和我<a href="https://shuojen.com/blog/2026/10/28/weekend#%E7%9B%B8%E5%8F%8D%E7%9A%84%E4%BD%A0%E5%92%8C%E6%88%91" class="hash-link" aria-label="相反的你和我的直接連結" title="相反的你和我的直接連結" translate="no">​</a></h2>
+<img src="https://shuojen.com/assets/images/001-1beb49a5ceb2e9d25b16418076c0d586.jpg" width="500" alt="週末雜記 圖 1">
+<p>這個連假和蝦波一次把阿澤賀老師的《相反的你和我》兩季動畫追完。</p>
+<p>我們都更喜歡這部的調性更勝老師的另一部作品《冰之城牆》，《相反的你和我》是一部色彩鮮明歡快的作品，主線的三對情侶都各有討喜與可愛之處<sup><a href="https://shuojen.com/blog/2026/10/28/weekend#user-content-fn-1-39a6b5" id="user-content-fnref-1-39a6b5" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>，更讓我喜歡的是校園生活同學間的友誼，真摯可愛。這部作品帶到的負面情緒比較少，點到為止的程度剛剛好，各方面都是看了心情非常好的作品。兩季完結，收尾的非常漂亮，很喜歡最後一集的首尾呼應，以及主角谷的內心轉變，喜歡校園戀愛喜劇的不要錯過。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="消失的法老古夫金字塔-vr-沉浸體驗">消失的法老：古夫金字塔 VR 沉浸體驗<a href="https://shuojen.com/blog/2026/10/28/weekend#%E6%B6%88%E5%A4%B1%E7%9A%84%E6%B3%95%E8%80%81%E5%8F%A4%E5%A4%AB%E9%87%91%E5%AD%97%E5%A1%94-vr-%E6%B2%89%E6%B5%B8%E9%AB%94%E9%A9%97" class="hash-link" aria-label="消失的法老：古夫金字塔 VR 沉浸體驗的直接連結" title="消失的法老：古夫金字塔 VR 沉浸體驗的直接連結" translate="no">​</a></h2>
+<p>禮拜天跟蝦波跑到松菸第一次玩 VR，體驗很新奇又有趣，但是玩了一陣子習慣後就開始無聊了，NPC 導覽味太重，我期待會有刺激的冒險劇情，結果也沒有發生，後面都和蝦波一直亂走，玩人物穿模，幫 NPC 做牙齒檢查。</p>
+<p>也許之後可以試看看 VR 遊戲，體驗會更有趣一點！</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="成語迷宮改版">成語迷宮改版<a href="https://shuojen.com/blog/2026/10/28/weekend#%E6%88%90%E8%AA%9E%E8%BF%B7%E5%AE%AE%E6%94%B9%E7%89%88" class="hash-link" aria-label="成語迷宮改版的直接連結" title="成語迷宮改版的直接連結" translate="no">​</a></h2>
+<p>幾天前玩了一個<a href="https://taiwanguessr.com/" target="_blank" rel="noopener noreferrer" class=""> taiwanguessr </a>網頁小遊戲，突然覺得毎天一題的型式還不錯。於是就把我之前做的<a href="https://shuojen.com/game.html" target="_blank" rel="noopener noreferrer" class="">成語迷宮</a>遊戲改成這種型式，主要是這樣就不用再寫新題目了，就這樣簡單一天玩一題也不錯。</p>
+<p>我喜歡網頁的版本更勝 App，乾淨自由也不用下載程式，雖然大概賺不了什麼錢，其實我也不太在意，主要是把自己小時候的回憶做出來很好玩。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="聯盟戰棋">聯盟戰棋<a href="https://shuojen.com/blog/2026/10/28/weekend#%E8%81%AF%E7%9B%9F%E6%88%B0%E6%A3%8B" class="hash-link" aria-label="聯盟戰棋的直接連結" title="聯盟戰棋的直接連結" translate="no">​</a></h2>
+<p>蝦波連假找我一起玩英雄聯盟的戰棋。這個遊戲就跟幾年棋很紅的自走棋一樣，當初開創風潮的 Dota 自走棋感覺已經不紅了，剩下戰棋還有一席之地。這個玩法還是挺有趣的，跟麻將的邏輯有點像，技術與運氣的比重大概一半一半吧。雖然不熟遊戲 Meta 前幾場玩的有點痛苦，但是玩久了就開始覺得有趣了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="黏土耳塞">黏土耳塞<a href="https://shuojen.com/blog/2026/10/28/weekend#%E9%BB%8F%E5%9C%9F%E8%80%B3%E5%A1%9E" class="hash-link" aria-label="黏土耳塞的直接連結" title="黏土耳塞的直接連結" translate="no">​</a></h2>
+<p>最近睡覺喜歡用一種長的像黏土的耳塞，是一種軟矽膠材質。使用方法就是捏成圓餅狀，然後壓在耳朵上，睡覺的時候形狀就會自行貼合跟耳道一樣，用起來很舒服，隔音效果也不錯，已經回不去一般的耳塞了。</p>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/10/28/weekend#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-39a6b5">
+<p>私心最喜歡平東線！ <a href="https://shuojen.com/blog/2026/10/28/weekend#user-content-fnref-1-39a6b5" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>life</category>
+        </item>
+        <item>
+            <title><![CDATA[文字雲與恐怖片雜談]]></title>
+            <link>https://shuojen.com/blog/2026/10/20/recent</link>
+            <guid>https://shuojen.com/blog/2026/10/20/recent</guid>
+            <pubDate>Tue, 20 Oct 2026 06:57:05 GMT</pubDate>
+            <description><![CDATA[/now 頁面]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="now-頁面">/now 頁面<a href="https://shuojen.com/blog/2026/10/20/recent#now-%E9%A0%81%E9%9D%A2" class="hash-link" aria-label="/now 頁面的直接連結" title="/now 頁面的直接連結" translate="no">​</a></h2>
+<p>看到皮皮<a href="https://trashposts.com/blog/small-thoughts-9/" target="_blank" rel="noopener noreferrer" class="">〈雜談 #9〉</a>提到<a href="https://skyhong.tw/" target="_blank" rel="noopener noreferrer" class=""> skyhong 大大</a>，看到他的主頁有一個近況文字雲，覺得很有趣，於是依樣畫葫蘆放了一個在自己的<a class="" href="https://shuojen.com/now"><code>/now</code></a>頁面，隨著近況頁面的更新還有新貼文會自動更新內容，滿好玩的。</p>
+<p>剛好這裡很久沒更新，都要長灰塵了就順便改了一下。</p>
+<img src="https://shuojen.com/assets/images/001-c5bc2fda10988bc20044a99c6b9acd2c.png" width="600" alt="文字雲與恐怖片雜談 圖 1">
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="恐怖片">恐怖片<a href="https://shuojen.com/blog/2026/10/20/recent#%E6%81%90%E6%80%96%E7%89%87" class="hash-link" aria-label="恐怖片的直接連結" title="恐怖片的直接連結" translate="no">​</a></h2>
+<p>最近跟蝦波看了幾部很棒的恐怖片，都是新銳導演的作品，非常開心這些有才華的導演受到重視和肯定，可以繼續拍出優秀的作品。</p>
+<ol>
+<li class="">丹尼菲利普（Danny Philippou）與麥可菲利普（Michael Philippou）</li>
+</ol>
+<p>這對雙胞胎導演之前的《鬼手鬼手請開口》就讓我印象深刻。最近看了《滿血復活》超級喜歡。簡單、直接、大膽，比起廉價的 Jump scare，運用更多氣氛營造，是一部相當優秀的作品，比起預告給人的感覺，其實正片不會太可怕，我覺得是一般人也能看的程度，幾個血腥畫面比較驚悚而已。</p>
+<p>《滿血復活》講述的親情、執念不特別。但卻以一個很不同角度切入，看得非常過癮。</p>
+<ol start="2">
+<li class="">札克·克瑞格（Zach Cregger）</li>
+</ol>
+<p>跟蝦波進電影院看了《惡靈古堡：爆發夜》後，就對導演產生興趣。補了《凶器》和《宿劫》，記得去年在電影院看過《凶器》的預告，題材滿有意思的。</p>
+<p>這個導演喜歡用非線性與不同章節的視角來呈現故事，這點很對到我的電波，但不會像諾蘭的作品常有炫技感，看久了越來越疲乏（雖然頂尖對決還是我最愛的電影），比較像昆汀的《黑色追緝令》和《惡棍特工》清楚的分節，破碎感不會很強烈。</p>
+<p>《凶器》是一部可圈可點的恐怖片，但後半稍弱。幾個嚇人的手段也挺俗爛，所以我的評價比較低。創意跟氣氛都不錯，但可惜的是前面鋪陣的多好，謎團揭露反而沒那麼驚喜，這點比較可惜。最後也有導演一貫的荒謬喜感，滿不錯的。</p>
+<p>《宿劫》讓我非常驚豔，故事整體性非常好，導演用了兩個很像魔術手法的錯誤引導，非常高明。這部沒什麼廉價的 Jump scare，劇本的諷刺傳達的很清晰，卻不帶多餘的說教，留白給觀眾的足夠的餘韻與想像空間。中間片段的喜劇感給的恰到好處，真的荒謬到笑出來，超喜歡。我對這部的評價非常高，推薦給不看恐怖片的人，一定要試試看，其實認真說不會很可怕。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="恐怖電影的轉變">恐怖電影的轉變<a href="https://shuojen.com/blog/2026/10/20/recent#%E6%81%90%E6%80%96%E9%9B%BB%E5%BD%B1%E7%9A%84%E8%BD%89%E8%AE%8A" class="hash-link" aria-label="恐怖電影的轉變的直接連結" title="恐怖電影的轉變的直接連結" translate="no">​</a></h2>
+<p>我近期越來越喜歡恐怖驚悚電影，相較過去純粹帶給觀眾驚嚇的「傳統鬼片」，越來越多作品在本質上轉變為「以恐怖驚悚的題材」去說好一個故事。這對我而言是更高明的，之前推過的新銳導演柯瑞·巴克的作品<a class="" href="https://shuojen.com/blog/2026/08/09/obsession">《愛你致死不渝》</a>，就是在說到爛的劇情上，帶出不一樣的人性可怕，以及教科書般的氣氛營造，把觀眾壓力拉到最滿。</p>
+<p>而另一位新銳導演凱恩·帕森斯的《後室》，就是以純嚇人的角度沒有講好該傳達的中心精神（或者說傳達的不好），《後室》不錯的點大概只剩場景創意優秀了。</p>
+<p>氣氛調度不好又老是以 Jump scare 純嚇人的鬼片就沒意思了，對我來說，浪費兩個小時看了沒劇情的電影，比什麼鬼都還可怕。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="之後想看的片單">之後想看的片單<a href="https://shuojen.com/blog/2026/10/20/recent#%E4%B9%8B%E5%BE%8C%E6%83%B3%E7%9C%8B%E7%9A%84%E7%89%87%E5%96%AE" class="hash-link" aria-label="之後想看的片單的直接連結" title="之後想看的片單的直接連結" translate="no">​</a></h2>
+<p>前陣子看到 HowHow 推導演白石晃士的《詛咒ノロイ》跟《近畿．禁忌》，都滿想看看的，期待。</p>]]></content:encoded>
+            <category>movie</category>
+            <category>blog</category>
+        </item>
+        <item>
+            <title><![CDATA[全國棋藝智力運動技能競賽]]></title>
+            <link>https://shuojen.com/blog/2026/10/18/chess</link>
+            <guid>https://shuojen.com/blog/2026/10/18/chess</guid>
+            <pubDate>Sun, 18 Oct 2026 08:18:50 GMT</pubDate>
+            <description><![CDATA[繼研究所大專盃後久違的參賽，同事峻寶寶第一次參賽就奪得冠軍，真是太強了，不愧是桌球乙組跟西洋棋雙料冠軍。]]></description>
+            <content:encoded><![CDATA[<div style="display:flex;gap:10px;justify-content:center;align-items:center"><div style="flex:36;min-width:0"><img src="https://shuojen.com/assets/images/001-1a154bcfd23cc93d2500339f23032ecf.jpg" alt="比賽" style="width:100%;height:auto;display:block"></div><div style="flex:64;min-width:0"><img src="https://shuojen.com/assets/images/002-e011a3cc49ea86ea009e9f9db1013223.jpg" alt="比賽" style="width:100%;height:auto;display:block"></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="比賽">比賽<a href="https://shuojen.com/blog/2026/10/18/chess#%E6%AF%94%E8%B3%BD" class="hash-link" aria-label="比賽的直接連結" title="比賽的直接連結" translate="no">​</a></h2>
+<p>繼研究所大專盃後久違的參賽，同事峻寶寶第一次參賽就奪得冠軍，真是太強了，不愧是桌球乙組跟西洋棋雙料冠軍。</p>
+<p>這次比賽前三名可以取得段位，下次就只能參賽段位組了（我大概要墊底）。</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Standings</summary><div><div class="collapsibleContent_i85q"><img src="https://shuojen.com/assets/images/001-cf47e981dd09962ec960b9efcd868946.png" width="600" alt="全國棋藝智力運動技能競賽 圖 3"></div></div></details>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="棋譜">棋譜<a href="https://shuojen.com/blog/2026/10/18/chess#%E6%A3%8B%E8%AD%9C" class="hash-link" aria-label="棋譜的直接連結" title="棋譜的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="">持黑對歐忞侖（負）</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>備註</div><div class="admonitionContent_BuS1"><p>第 20 步非常可惜，touch move 後手放開的那一瞬間我就知道錯了，雖然歐哥說不介意，但我還是照規則落子，不然這盤局勢很好。學了個經驗，以後一定要想好再摸子（一方面也是邊下邊記棋譜實在很干擾思緒），最後棋鐘倒數就沒記錄了。</p><p>題外話，剛到賽場跟歐哥友誼賽就下這個倫敦開局。第一場實戰又對到，第三步他就換招了。其實他應該走原本那步，反而換招落入我的準備。</p></div></div>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<ol start="2">
+<li class="">持白對彭冠勳（勝）</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>備註</div><div class="admonitionContent_BuS1"><p>對方開了 F 斜線讓我很快就優勢，但我中間沒有算出最好的棋，有點懊惱，最終三步殺棋。</p></div></div>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<ol start="3">
+<li class="">持黑對吳浚楷（勝）</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>備註</div><div class="admonitionContent_BuS1"><p>這局 French Defense 利用對手王城空洞攻殺後抽后取勝。</p></div></div>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<ol start="4">
+<li class="">持白對黃子齊（勝）</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>備註</div><div class="admonitionContent_BuS1"><p>這局前期對手送子失誤，連續多個戰術後，抽后取勝。</p></div></div>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>
+<ol start="5">
+<li class="">持黑對張恒峻（勝）</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>備註</div><div class="admonitionContent_BuS1"><p>這局對到峻寶寶，兩個人實在下太多次了，Wing Gambit 對我沒什麼效果，慢慢擴大優勢後，最終殺棋取勝，最後棋鐘倒數就沒記錄了。</p></div></div>
+<div style="height:400px;display:flex;align-items:center;justify-content:center">載入棋盤中...</div>]]></content:encoded>
+            <category>chess</category>
+            <category>game</category>
+            <category>fun</category>
+            <category>life</category>
+        </item>
+        <item>
+            <title><![CDATA[檔車推發記]]></title>
+            <link>https://shuojen.com/blog/2026/10/14/push_start</link>
+            <guid>https://shuojen.com/blog/2026/10/14/push_start</guid>
+            <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[昨天晚上接到一通電話。]]></description>
+            <content:encoded><![CDATA[<p>昨天晚上接到一通電話。</p>
+<p>「你的機車燈是亮的，好像鑰匙忘記拔了耶，我幫你把電門關掉，鑰匙留在上面喔。」管理員說。我連連道謝後趕到地下室，已經來不及了，電門開著三個小時電早就流光光，車也無法發動了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="推發">推發<a href="https://shuojen.com/blog/2026/10/14/push_start#%E6%8E%A8%E7%99%BC" class="hash-link" aria-label="推發的直接連結" title="推發的直接連結" translate="no">​</a></h2>
+<p>我想起來大四的時候放假回臺北，把我的<a class="" href="https://shuojen.com/blog/2026/06/18/motorcycle">野狼</a>丟在雲林的車庫兩個月，回去的時候也完全發不動，但當時我使用了「推發」的技巧，後來有成功發動。</p>
+<ol>
+<li class="">將檔車入二檔或三檔，讓齒比不要維持太高</li>
+<li class="">拉離合後用力往前推讓車子有一定的速度</li>
+<li class="">跳上車子鬆開離合，後輪帶動引擎成功發動</li>
+<li class="">趕快拉離合防止熄火，同時補一點油門</li>
+<li class="">穩定後騎一陣子，讓電瓶充飽電就救回來了</li>
+</ol>
+<p>沙盤推演過後，腦中的如意算盤就這樣打好了，我當時還不知道這是悲劇的開始。</p>
+<p>我在平地先推了一下，放開離合的瞬間車子有快發動的感覺，這讓我信心大增。經過十幾分鐘的努力，卻怎麼樣都無法成功，我納悶可能是速度不夠，於是我打開地下室的鐵門，把一百多公斤的車推上大約 45 度的斜坡到一樓。</p>
+<p>我心想這樣應該沒問題了吧，於是騎上車就這樣溜下去，放開離合時有那麼一瞬間好像發動了，我急忙催了一下油門，但是沒有同時拉離合，錯過了那一秒車子馬上就熄火了。</p>
+<p>我開始思考是哪裡出了問題，是檔位太高嗎？也許我可以從三檔換成二檔試試。是我應該在斜坡上就放離合嗎？還是到平地速度最快的時候放？</p>
+<p>我又將車推上斜坡三次。</p>
+<p>每次控制一個變因，情況卻越來越慘，連一點點發動的跡象都沒有了。我全身都是汗，像是進了健身房的雪橇車地獄。這時候一個小時過去了，我決定把車推到家裡附近的車行，直接接電發動算了。</p>
+<p>最後一次把車推到斜坡上，肩膀的三角肌在悲鳴，大腿奮力的收縮，檔車像膽固醇一樣軟趴趴地靠在我身上，卻重的要命，真是不要臉。終於推到一樓，到平地就輕鬆多了，我踩著沉重的步伐，一步又一步推到車行，滿頭大汗的我請老闆幫我接電，發動，付錢，騎走。我已經累得說不出話了。</p>
+<p>高度運動後睡了深沉的一個好覺，今天早上上班，我帶著愉快的心情轉動鑰匙，準備發動機車。</p>
+<p>「嗯？」車子紋絲不動。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="後記">後記<a href="https://shuojen.com/blog/2026/10/14/push_start#%E5%BE%8C%E8%A8%98" class="hash-link" aria-label="後記的直接連結" title="後記的直接連結" translate="no">​</a></h2>
+<p>後來我才知道，沒拔鑰匙把電流光光，跟之前化油老野狼很久沒騎發不動是兩件事。鉛酸電池完全放乾後，大概率電瓶也受損無法再蓄電了，而且電壓太低，推發的微小電流也不足以讓現代噴射的車種發動。所以我嘗試推發一個多小時，基本上都是徒勞無功。</p>
+<p>「原來有些事怎麼樣努力都是不可能達成的」。在錯誤的方向上努力，永遠無法成功，退一步尋找別的解法才是正確的策略。但人往往都是到了體力透支、無法再向前一步才會明白這件事。固執己見地想著「堅持到底就是勝利」時，第一步得先確認方向正確，一切努力才有意義。</p>
+<p>今天回到家，我又將車推到車行一次，請店家幫我換電瓶。心情意外的很輕鬆，一是因為今天只推上斜坡一次，二是我想通了一個很棒的道理，這次的經驗其實不無收穫。</p>
+<p><strong>「騎完車要記得拔鑰匙！」</strong></p>]]></content:encoded>
+            <category>life</category>
+            <category>bike</category>
+        </item>
+        <item>
+            <title><![CDATA[文字雜想]]></title>
+            <link>https://shuojen.com/blog/2026/10/13/period</link>
+            <guid>https://shuojen.com/blog/2026/10/13/period</guid>
+            <pubDate>Tue, 13 Oct 2026 15:16:46 GMT</pubDate>
+            <description><![CDATA[今天看 RayrrrrrR 的這篇文章，其中這句話讓我覺得很有意思]]></description>
+            <content:encoded><![CDATA[<p>今天看 RayrrrrrR 的這篇<a href="https://rayrrrrrrr.bearblog.dev/6842/" target="_blank" rel="noopener noreferrer" class="">文章</a>，其中這句話讓我覺得很有意思</p>
+<blockquote>
+<p>我今年放假的時候塞滿了行程以至於覺得自己空白時間很零碎，對，我沒放逗號是故意的。我想營造一種沒停頓的感覺。</p>
+</blockquote>
+<p>RayrrrrrR 的部落格寫了不少有關標點符號的文章，像是<a href="https://rayrrrrrrr.bearblog.dev/5502/" target="_blank" rel="noopener noreferrer" class="">〈反省：句讀之不知〉</a>、<a href="https://rayrrrrrrr.bearblog.dev/347/" target="_blank" rel="noopener noreferrer" class="">〈逗號、潤稿與部落格好處〉</a>，讓我有不少體悟。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="對文字的感受">對文字的感受<a href="https://shuojen.com/blog/2026/10/13/period#%E5%B0%8D%E6%96%87%E5%AD%97%E7%9A%84%E6%84%9F%E5%8F%97" class="hash-link" aria-label="對文字的感受的直接連結" title="對文字的感受的直接連結" translate="no">​</a></h2>
+<p>我的感受跟 RayrrrrrR 還滿相似的，自從開始寫部落格之後，對文字的敏感度有些提升，也開始變得重視文字的細節。像是<a class="" href="https://shuojen.com/blog/2025/10/12/typestyle">中英間的空格</a>、半形與全形的差別，這類有關文字視覺的清爽度；標點符號的使用、文字的分段、精簡贅字，這類有關文字質感的方方面面。</p>
+<p>連帶著我越來越能感受到不同文筆帶來的韻律。<a href="https://yangbear.bearblog.dev/blog/" target="_blank" rel="noopener noreferrer" class="">「YangBear」</a>的文筆像是平靜流淌的水；<a href="https://e89295.com/blog/" target="_blank" rel="noopener noreferrer" class="">「我的部落格」</a>（不是我）給我一種很獨特的翻譯文學味道，密集而有節奏；<a href="https://noa.bearblog.dev/" target="_blank" rel="noopener noreferrer" class="">「Noa」</a>的文筆輕盈靈動，常常讓我腦中浮現湯舒雯的影子。</p>
+<p>文字對我的意義開始有一點點不同。我曾經覺得文字只是媒介，只是單純用來表達的工具。條列出自己的想法後，用生成的也無所謂。但漸漸我發現，文字本身的體現也是思考的一部份。如何調動文字，琢磨字句，每個標點的運用所帶來那一點點細微差異，都是很有趣的。</p>
+<p>我開始不用語言模型去潤飾任何文字。寫作本身漸漸變成目的，不再是過程了。就像 RayrrrrrR 運用標點來營造文字帶給讀者不一樣的感覺，這也是我想做的事情。</p>
+<p>內容本身就像是一團黏土，語言模型可以快速的幫我雕成一個及格的標準答案，甚至直接把黏土無中生有然後交給我，但這一點意義也沒有。我偶然翻到了之前自己生成過的東西，連自己看了都感到反胃。我希望未來某一天，我看到自己留下來的文字，裡頭存在著自己曾經的呼吸，與一點點的侷促。</p>
+<p>不完美，但是有人類活著的味道。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="標點符號的差異">標點符號的差異<a href="https://shuojen.com/blog/2026/10/13/period#%E6%A8%99%E9%BB%9E%E7%AC%A6%E8%99%9F%E7%9A%84%E5%B7%AE%E7%95%B0" class="hash-link" aria-label="標點符號的差異的直接連結" title="標點符號的差異的直接連結" translate="no">​</a></h2>
+<p>朱宥勳老師舉過的一個<a href="https://www.youtube.com/watch?v=r50OwVfARy8&amp;list=PLhas0ZjiPiD_Nz2kZ9AKuVkNPNdS8dNmX&amp;index=2" target="_blank" rel="noopener noreferrer" class="">例子</a>我覺得非常有趣，下面這兩個句子只有逗號與句號使用位置不同而已，卻營造兩種不同的心理感受。</p>
+<ul>
+<li class="">A 版本</li>
+</ul>
+<p>「我早上吃了一份沙拉，覺得還有點餓，於是再去切了一塊餅。這時候剛好被室友看到，於是又多切了一塊。」</p>
+<ul>
+<li class="">B 版本</li>
+</ul>
+<p>「我早上吃了一份沙拉，覺得還有點餓。於是再去切了一塊餅，這時候剛好被室友看到。於是又多切了一塊。」</p>
+<p>我覺得 A 版本有一種暖男的感覺，看到室友來了，所以也切給他。而 B 版本帶有一點戲劇張力，像是切餅的瞬間被室友看到，被抓到做壞事只好不甘願的也切一塊賄賂他。</p>
+<p>真的很神奇呢，推薦朱宥勳老師的<a href="https://www.youtube.com/playlist?list=PLhas0ZjiPiD_Nz2kZ9AKuVkNPNdS8dNmX" target="_blank" rel="noopener noreferrer" class="">《文字診療室》</a>系列，學到了很多有趣的東西。</p>
+<blockquote>
+<p>一個標點符號放對了位置，就會令人不寒而慄。</p>
+<p>──郭松棻</p>
+</blockquote>]]></content:encoded>
+            <category>life</category>
+            <category>read</category>
+        </item>
+        <item>
+            <title><![CDATA[飲料大小]]></title>
+            <link>https://shuojen.com/blog/2026/10/11/size</link>
+            <guid>https://shuojen.com/blog/2026/10/11/size</guid>
+            <pubDate>Sun, 11 Oct 2026 13:50:26 GMT</pubDate>
+            <description><![CDATA[今天中午跟蝦波吃我們都很喜歡的樂檸漢堡[^1]，結帳時覺得數字怪怪的，明明我們飲料都是點「中杯」。取餐的時候跟店員確認，才知道店裡只有「小杯」跟「中杯」。]]></description>
+            <content:encoded><![CDATA[<p>今天中午跟蝦波吃我們都很喜歡的樂檸漢堡<sup><a href="https://shuojen.com/blog/2026/10/11/size#user-content-fn-1-6e7875" id="user-content-fnref-1-6e7875" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>，結帳時覺得數字怪怪的，明明我們飲料都是點「中杯」。取餐的時候跟店員確認，才知道店裡只有「小杯」跟「中杯」。</p>
+<p>仔細回想，點餐時確實店員只問了：「請問飲料是中杯嗎？」而不是：「請問飲料是小杯還中杯？」沒有確認清楚的確是我的問題，但是沒想到還有這一招，讓我又學到一課。</p>
+<p>臺灣飲料店的杯裝尺寸真的是懶得吐槽了，明明只有<strong>兩種</strong>大小，有些店只有「中杯、大杯」，有些店只有「小杯、中杯」。我建議臺灣應該立法統一飲料容量度量衡，以後全部都以毫升來點餐。</p>
+<blockquote>
+<p>一杯阿華田<sup><a href="https://shuojen.com/blog/2026/10/11/size#user-content-fn-2-6e7875" id="user-content-fnref-2-6e7875" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup>微糖微冰，700 毫升，謝謝！</p>
+</blockquote>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://shuojen.com/blog/2026/10/11/size#footnote-label" class="hash-link" aria-label="Footnotes的直接連結" title="Footnotes的直接連結" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-6e7875">
+<p>它們家的大俠牛肉堡、鱈魚堡、雞塊、薯條都很好吃 <a href="https://shuojen.com/blog/2026/10/11/size#user-content-fnref-1-6e7875" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-2-6e7875">
+<p>最近跟蝦波覺得五十嵐的阿華田還不錯喝，「700 毫升」只要 60 塊，現在已經算便宜的手搖飲料了 <a href="https://shuojen.com/blog/2026/10/11/size#user-content-fnref-2-6e7875" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+            <category>life</category>
+            <category>shitpost</category>
+        </item>
+    </channel>
+</rss>

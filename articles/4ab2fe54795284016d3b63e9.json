@@ -1,0 +1,11 @@
+{
+  "id": "4ab2fe54795284016d3b63e9",
+  "title": "实践总结：在 Java 中调用 Go 代码",
+  "summary": "在 Java 中调用 Go 的大致过程如下 go --> cgo --> jna --> java 整个过程要解决的问题主要两个： 数据类型在两种语言中如何转化 何时清理无用的数据 下面就围绕上述调用过程来阐述，本文涉及代码完整版可以在 这里 找到。",
+  "content": "<p>在 Java 中调用 Go 的大致过程如下</p>\n<pre><code>go --&gt; cgo --&gt; jna --&gt; java\n</code></pre><p>整个过程要解决的问题主要两个：</p>\n<ol>\n<li>数据类型在两种语言中如何转化</li>\n<li>何时清理无用的数据</li>\n</ol>\n<p>下面就围绕上述调用过程来阐述，本文涉及代码完整版可以在<a href=\"https://github.com/jiacai2050/blog-snippets/tree/master/cgo-jna-demo\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>找到。</p>",
+  "image": null,
+  "publishedAt": "2020-08-08T09:30:53Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2020/08/08/go-meet-java/"
+}

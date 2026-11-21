@@ -1,0 +1,11 @@
+{
+  "id": "24dc33cfd097c1da12134b8f",
+  "title": "为 Cloudflare Tunnel 二级子域名启用 TLS 支持",
+  "summary": "本文介绍如何在 Cloudflare 免费套餐中，通过 Cloudflare for SaaS 为二级子域名签发 TLS 证书，并以一级子域名为回退源，将请求经隧道转发至本地服务。",
+  "content": "<p>通常而言，Cloudflare 的 DNS 在 Free Plan 下只会为<strong>根域名</strong>和<strong>一级泛域名</strong>提供 TLS 证书，这对通常的 Web 服务而言大抵是够用的。</p>\n<p>但总有些刁钻的场景：我通过 Cloudflare Tunnel 访问家里的 NAS，但想统一通过 <code>*.nas.example.com</code> 作为分组来路由各项服务以划定域名边界，同时又希望分组下的二级子域名可以由 Cloudflare 分发 TLS 证书，就会有些棘手。</p>\n<p>好在<del>大爹</del> Cloudflare 还是提供了一些曲线救国的方案，也就是 <a href=\"https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/\" target=\"_blank\" rel=\"noopener noreferrer\">Cloudflare for SaaS</a>。</p>\n<h2><a target=\"_blank\" rel=\"noopener noreferrer\">原理</a></h2>\n<p><strong>Cloudflare for SaaS</strong> 在 Free Plan 下包含 100 个额度，该功能原本用于给 SaaS 客户的外部域名单独签发边缘证书。</p>\n<p>但由于不限制域名归属，因此可以直接用于自己的域名以签发免费证书。</p>\n<p>完整请求链路如下：</p>\n<ol>\n<li>二级子域名通过开启代理的 DNS 记录，将访客请求引导至 Cloudflare 边缘节点；</li>\n<li>边缘节点匹配到已注册的自定义主机名，使用单独签发的二级子域名证书完成 HTTPS 握手并卸载 TLS；</li>\n<li>边缘节点保留原始 <code>Host</code> 请求头，将流量转发至预设的回退源，从而进入对应的 Cloudflare Tunnel；</li>\n<li><code>cloudflared</code> 再根据 <code>Host</code> 头匹配规则，将请求转发到本地对应端口。</li>\n</ol>\n<h2><a target=\"_blank\" rel=\"noopener noreferrer\">步骤</a></h2>\n<p>首先在 <a href=\"https://dash.cloudflare.com/?to=/:account/tunnels\" target=\"_blank\" rel=\"noopener noreferrer\">Cloudflare Tunnel</a> 中新建一条隧道并拿到 <code>隧道 ID</code>。</p>\n<p>此时可以直接添加一个目标服务并绑定相应的二级子域名（如 <code>webdav.nas.example.com</code>），此时 Cloudflare 会自动添加一条 DNS 记录。<span>不过只要开启了代理，这条 DNS 的值其实可以是任意的。</span></p>\n<p>接着在 DNS 中继续添加用于分组的一级子域名（<code>nas.example.com</code>），开启代理并将 <code>CNAME</code> 指向 <code>&lt;隧道 ID&gt;.cfargotunnel.com</code>。</p>\n<p>再配置回退源，在 <em>SSL/TLS → 自定义主机名</em> 下启用 Cloudflare for Saas，并将上述分组域名设置为<strong>回退源</strong>。</p>\n<p>然后点击<strong>添加自定义主机名</strong>，填入二级子域名，<strong>证书验证方法</strong>选择 <code>HTTP 验证</code> 即可生效。</p>",
+  "image": null,
+  "publishedAt": "2026-11-18T19:04:45Z",
+  "sourceId": "c8f83e5c482b2a5b",
+  "sourceTitle": "記緒漂流",
+  "link": "https://ttio.cc/jotting/second-level-subdomain-tls"
+}

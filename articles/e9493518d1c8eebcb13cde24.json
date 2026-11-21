@@ -1,0 +1,11 @@
+{
+  "id": "e9493518d1c8eebcb13cde24",
+  "title": "博客平台近况更新",
+  "summary": "最近对博客进行了一些小更新。 框架仍旧用 Hexo，但是不再搭建在 Github 上。因为很多次 Deploy 之后无法触发 Github 的 Build。于是转至 Netlify，意外得好用。它可以和 Git",
+  "content": "<p>最近对博客进行了一些小更新。</p><p>框架仍旧用 Hexo，但是不再搭建在 Github 上。因为很多次 Deploy 之后无法触发 Github 的 Build。于是转至 Netlify，意外得好用。它可以和 Github 关联，只要有 Commit 就可以触发 Build 并且 Deploy。同时它还可以管理自定义的域名，这样我就可以把我的 DNS 管理从国内网站移过来了。<br>另外还考虑过用 Hugo 代替 Hexo，主要是因为 Hexo 依赖于 npm 而往往带来巨量不必要的软件包，极其占用容量。Hugo 基于 Go，速度上也有优势。但最后我没有在 Hugo 上找到合适的主题，作罢。<br>如果将来 Hugo 成熟，我会直接使用 Hugo + Firebase。Firebase 简单易用，我也熟悉，简单 Host 一个博客也是免费的。</p><p>优化技术栈的最终目的还是简化流程，这些架构本身应该是轻量的，但开源的东西，越发展越容易变繁重。还是不要把太多时间花在平台和工具上，内容的产出才是最重要的。</p>",
+  "image": null,
+  "publishedAt": "2019-12-31T08:50:52Z",
+  "sourceId": "2a4afb292dd99229",
+  "sourceTitle": "散步中",
+  "link": "https://yocson.com/2019/12/31/blog-stack-update/"
+}

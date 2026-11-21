@@ -1,0 +1,11 @@
+{
+  "id": "76c2806853f2ba6ad34957f3",
+  "title": "為什麼我把 Mermaid 換成 Obsidian 開源的 pele：快 20 倍，渲染器剩三成",
+  "summary": "這篇記錄作者把部落格的 Mermaid 渲染器從官方套件、beautiful-mermaid 一路換到 Obsidian 團隊開源的 pele 的過程。作者拿站上 136 張圖實測,pele 全部渲染成功、比 beautiful-mermaid 快約 9 倍、SVG 小四成,畫出來的版面也乾淨很多。文中附上接進 TanStack Start 的做法:伺服器端出 SVG、渲染器只能動態 import、換主題只換 CSS 變數、下載圖片時把顏色寫回 SVG,以及把作者自訂的節點顏色歸成四種角色。最後是作者協作的開源專案 tessera 在瀏覽器端換成 pele 的效果:要下載的渲染器剩三成,每次重畫快了約 20 倍。",
+  "content": "這篇記錄作者把部落格的 Mermaid 渲染器從官方套件、beautiful-mermaid 一路換到 Obsidian 團隊開源的 pele 的過程。作者拿站上 136 張圖實測,pele 全部渲染成功、比 beautiful-mermaid 快約 9 倍、SVG 小四成,畫出來的版面也乾淨很多。文中附上接進 TanStack Start 的做法:伺服器端出 SVG、渲染器只能動態 import、換主題只換 CSS 變數、下載圖片時把顏色寫回 SVG,以及把作者自訂的節點顏色歸成四種角色。最後是作者協作的開源專案 tessera 在瀏覽器端換成 pele 的效果:要下載的渲染器剩三成,每次重畫快了約 20 倍。",
+  "image": null,
+  "publishedAt": "2026-10-27T07:18:56Z",
+  "sourceId": "bd51496b8ec0ca1d",
+  "sourceTitle": "Koimsurai 手記",
+  "link": "https://koimsurai.com/blog/mermaid-to-pele-obsidian-renderer"
+}

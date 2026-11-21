@@ -1,0 +1,11 @@
+{
+  "id": "b37515be5e80bf197fb52f6a",
+  "title": "String的注意事项",
+  "summary": "String的注意事项 String对象的内容不可改变， 被称为不可变字符串对象。 只要是以“…”的方式写出的字符串，都会存储到字符串常量池，且相同的字符串只存储一份； 但通过new方式创建字符串对象，每new一次都会产生一个新的对象放在堆内存中。 不可变字符串对象 不可变？它肯定可变啊，比如 package string; public class StringDemo3 { public static void main(String[] args) { String name = \"yingyu5658\"; name += \".me\"; name += \"域名\"; System.out.println(name); } } 这时候把name打印出来不就是 yingyu5658.me域名 了吗？ 每次试图…",
+  "content": "<h1>String的注意事项</h1>\n<ul>\n<li>\n<ol>\n<li>String对象的内容不可改变， 被称为不可变字符串对象。</li>\n</ol>\n</li>\n<li>\n<ol>\n<li>只要是以“…”的方式写出的字符串，都会存储到字符串常量池，且相同的字符串只存储一份；</li>\n</ol>\n</li>\n<li>但通过new方式创建字符串对象，每new一次都会产生一个新的对象放在堆内存中。</li>\n</ul>\n<h1>不可变字符串对象</h1>\n<p>不可变？它肯定可变啊，比如</p>\n<pre><code>package string; \n \npublic class StringDemo3 { \n public static void main(String[] args) { \n String name = &quot;yingyu5658&quot;; \n name += &quot;.me&quot;; \n name += &quot;域名&quot;; \n System.out.println(name); \n \n } \n}\n</code></pre>\n<p>这时候把name打印出来不就是<code>yingyu5658.me域名</code>了吗？\n<strong>每次试图改变字符串对象实际上是新产生可字符串对象，变量每次都与指向了新的字符串对象，之前字符串对象的内容确实是没有改变的，因此说String的对象都是不可变的。</strong></p>\n<h1>第二点注意事项</h1>\n<p>示例代码：</p>\n<pre><code>package string; \n \npublic class StringDemo3 { \n public static void main(String[] args) { \n String s1 = &quot;abc&quot;; \n String s2 = &quot;abc&quot;; \n System.out.println(s1 == s2); \n //true \n } \n}\n</code></pre>\n<p>这里使用双等来判断两个变量的地址是否相同，返回结果为<code>true</code>,也就是说，地址是相同的。\n原理：上文提到，双引号包裹住的字符串，会被保存到字符串常量池中，<strong>且相同的字符串只存储一份</strong>。这里我们声明了两个内容为abc的String类型变量。Java是很聪明的，当我们把s2声明，它要存到字符串常量池时，看到内容一样，就不再存了，而是把<strong>s2也指向abc</strong>，因此s1地址和s2地址是一样的。</p>\n<h2>new</h2>\n<p>示例代码：</p>\n<pre><code>package string; \n \npublic class StringDemo3 { \n public static void main(String[] args) { \n char[] chars = {&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;}; \n String a1 = new String(chars); \n String a2 = new String(chars); \n System.out.println(a1 == a2); \n //false \n } \n}\n</code></pre>\n<p>上文提到，每new一次就会创建一个新的对象，所以此时再比较两者地址，返回false，是不同的。</p>",
+  "image": null,
+  "publishedAt": "2024-12-19T22:28:15Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/171/"
+}

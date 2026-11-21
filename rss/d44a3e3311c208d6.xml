@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Jake Wharton</title>
+    <description>Public posts from @jw@jakewharton.com</description>
+    <link>https://mastodon.jakewharton.com/@jw</link>
+    <image>
+      <url>https://mastodon.jakewharton.com/system/accounts/avatars/109/264/113/707/033/919/original/30ea156e4501f7c4.png</url>
+      <title>Jake Wharton</title>
+      <link>https://mastodon.jakewharton.com/@jw</link>
+    </image>
+    <lastBuildDate>Tue, 29 Sep 2026 13:41:33 +0000</lastBuildDate>
+    <webfeeds:icon>https://mastodon.jakewharton.com/system/accounts/avatars/109/264/113/707/033/919/original/30ea156e4501f7c4.png</webfeeds:icon>
+    <generator>Mastodon v4.7.3+glitch</generator>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117354613537051036</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117354613537051036</link>
+      <pubDate>Tue, 29 Sep 2026 13:41:33 +0000</pubDate>
+      <description>&lt;p&gt;I hope after signing the offer letter he waited to receive confirmation before quitting his job.&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://www.&lt;/span&gt;&lt;span class="ellipsis"&gt;reuters.com/technology/mongodb&lt;/span&gt;&lt;span class="invisible"&gt;-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117292688321190005</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117292688321190005</link>
+      <pubDate>Fri, 18 Sep 2026 15:13:09 +0000</pubDate>
+      <description>&lt;p&gt;SQL Delight 2.4.0 is now available!&lt;/p&gt;&lt;p&gt;This is the first release since the project's ownership transfer. Moving forward we will be once again be making regular releases.&lt;/p&gt;&lt;p&gt;The IDE plugin update is still awaiting approval, but otherwise the build artifacts are ready to use.&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/sqldelight/sqldelight/releases/tag/2.4.0" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;github.com/sqldelight/sqldelig&lt;/span&gt;&lt;span class="invisible"&gt;ht/releases/tag/2.4.0&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117242612809649452</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117242612809649452</link>
+      <pubDate>Wed, 09 Sep 2026 18:58:17 +0000</pubDate>
+      <description>&lt;p&gt;This is &lt;em&gt;so&lt;/em&gt; exhaustingly good&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=VU3gABvwZCM" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://www.&lt;/span&gt;&lt;span class=""&gt;youtube.com/watch?v=VU3gABvwZCM&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117216317291409215</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117216317291409215</link>
+      <pubDate>Sat, 05 Sep 2026 03:31:00 +0000</pubDate>
+      <description>&lt;p&gt;Added support for the s390x architecture in the next version of Mosaic.&lt;/p&gt;&lt;p&gt;It was a simple, one-line change thanks to Zig's cross-compilation. But also many thanks to the IBM LinuxONE Community Cloud for donating a VM on a real s390x server which allowed me to actually test it.&lt;/p&gt;&lt;p&gt;RISC-V support is also coming in the next release. Also a one-line change, but for this I just bought a little RISC-V board to try it out!&lt;/p&gt;</description>
+      <media:content url="https://mastodon.jakewharton.com/system/media_attachments/files/117/216/303/464/600/725/original/b1b899404677bca5.png" type="image/png" fileSize="179618" medium="image">
+        <media:rating scheme="urn:simple">nonadult</media:rating>
+        <media:description type="plain">Terminal emulator screenshot showing `uname -a` command listing "s390x" architecture, and then execution of a `bin/jest` sample binary which produces a unit test-like output (using Mosaic).</media:description>
+      </media:content>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117202013185228655</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117202013185228655</link>
+      <pubDate>Wed, 02 Sep 2026 14:53:16 +0000</pubDate>
+      <description>&lt;p&gt;Kotlin 2.5's compiler will only run on JDK 17 or newer. This does not prevent it from still producing libraries which target all the way back to JDK 8. But if you are doing that with a Gradle JVM toolchain, you are cross-compiling incorrectly and about to be broken by this change.&lt;/p&gt;&lt;p&gt;Migrate to Java's &lt;code&gt;-release&lt;/code&gt; flag and Kotlin's &lt;code&gt;-Xjdk-release=&lt;/code&gt; flag today. Plus you can then enjoy using &lt;em&gt;any&lt;/em&gt; modern JDK instead of one from nearly a decade ago.&lt;/p&gt;&lt;p&gt;&lt;a href="https://youtrack.jetbrains.com/issue/KT-88173" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;youtrack.jetbrains.com/issue/K&lt;/span&gt;&lt;span class="invisible"&gt;T-88173&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117198986587409692</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117198986587409692</link>
+      <pubDate>Wed, 02 Sep 2026 02:03:34 +0000</pubDate>
+      <description>&lt;p&gt;Come on &lt;span class="h-card" translate="no"&gt;&lt;a href="https://mastodon.social/@arstechnica" class="u-url mention" rel="nofollow noopener" target="_blank"&gt;@&lt;span&gt;arstechnica&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;!&lt;/p&gt;</description>
+      <media:content url="https://mastodon.jakewharton.com/system/media_attachments/files/117/198/981/521/241/255/original/a7a98c04d78a818a.png" type="image/png" fileSize="87652" medium="image">
+        <media:rating scheme="urn:simple">nonadult</media:rating>
+        <media:description type="plain">Browser screenshot of an Ars Technica article talking about "7 cool science stories" one of which is "black hole stars". The find dialog is open with a search term of "soundgarden" with zero results.</media:description>
+      </media:content>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117188223714826529</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117188223714826529</link>
+      <pubDate>Mon, 31 Aug 2026 04:26:26 +0000</pubDate>
+      <description>&lt;p class="quote-inline"&gt;RE: &lt;a href="https://social.ridetrans.it/@Andres4NY/117187452052265420" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;social.ridetrans.it/@Andres4NY&lt;/span&gt;&lt;span class="invisible"&gt;/117187452052265420&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Silo s03e10 airing this Thursday at 9pm on Apple TV.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117179598679397808</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117179598679397808</link>
+      <pubDate>Sat, 29 Aug 2026 15:52:58 +0000</pubDate>
+      <description>&lt;p&gt;I got a new roof, but the shingles keep slowly moving all over the place.&lt;/p&gt;</description>
+      <media:content url="https://mastodon.jakewharton.com/system/media_attachments/files/117/179/592/372/157/829/original/63298590fbe82e6f.jpg" type="image/jpeg" fileSize="663760" medium="image">
+        <media:rating scheme="urn:simple">nonadult</media:rating>
+        <media:description type="plain">Grass lawn with a white sign that says "Ken Burns Roofing"</media:description>
+      </media:content>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117165029145618692</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117165029145618692</link>
+      <pubDate>Thu, 27 Aug 2026 02:07:45 +0000</pubDate>
+      <description>&lt;p&gt;I'm not shipping 5MiB of JS to the browser just to update a list. With Molecule and a web socket I can turn a static kotlinx.html-generated page into a dynamic one in 5 lines of code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://jakewharton.com/compose-and-kotlinx-html/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;jakewharton.com/compose-and-ko&lt;/span&gt;&lt;span class="invisible"&gt;tlinx-html/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117152333803063211</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117152333803063211</link>
+      <pubDate>Mon, 24 Aug 2026 20:19:09 +0000</pubDate>
+      <description>&lt;p&gt;The timeline delivers.&lt;/p&gt;</description>
+      <media:content url="https://mastodon.jakewharton.com/system/media_attachments/files/117/152/322/330/900/510/original/f09de0ed8fdf0e00.png" type="image/png" fileSize="53129" medium="image">
+        <media:rating scheme="urn:simple">nonadult</media:rating>
+        <media:description type="plain">A boost by Dan Sandler immediately followed by someone complaining about the "Android Easter Egg" application.</media:description>
+      </media:content>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117150702911711344</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117150702911711344</link>
+      <pubDate>Mon, 24 Aug 2026 13:24:24 +0000</pubDate>
+      <description>&lt;p&gt;This weekend I no joke had a dream in which I was looking for a Mastodon post with technical details to solve some problem I had in the dream. Except, I guess it was a nightmare, because I couldn't find the post, because there's no timeline search!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117094650221420536</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117094650221420536</link>
+      <pubDate>Fri, 14 Aug 2026 15:49:28 +0000</pubDate>
+      <description>&lt;p&gt;As of today, the Lysine projects (OkHttp, Okio, Retrofit, and the SQL Delight family) have a contribution policy that forbids LLM usage for creating code and for PR/issue descriptions and comments.&lt;/p&gt;&lt;p&gt;There is an exception for translation assistance provided you disclose its use.&lt;/p&gt;&lt;p&gt;If you choose to use LLMs locally for research, analysis, and/or experimentation we can't stop you. But for contributing we require &lt;u&gt;you&lt;/u&gt; to write the code, and for our interactions to be with &lt;u&gt;you&lt;/u&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117086442718556539</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117086442718556539</link>
+      <pubDate>Thu, 13 Aug 2026 05:02:11 +0000</pubDate>
+      <description>&lt;p&gt;&lt;span class="h-card" translate="no"&gt;&lt;a href="https://social.alexwlchan.net/@alex" class="u-url mention" rel="nofollow noopener" target="_blank"&gt;@&lt;span&gt;alex&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; Hi. Do you plan to post about your entry on the Tailscale blog from today? Would love to boost the original source!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/117080477565860668</guid>
+      <link>https://mastodon.jakewharton.com/@jw/117080477565860668</link>
+      <pubDate>Wed, 12 Aug 2026 03:45:10 +0000</pubDate>
+      <description>&lt;p class="quote-inline"&gt;RE: &lt;a href="https://mastodon.jakewharton.com/@jw/111349898321347165" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;mastodon.jakewharton.com/@jw/1&lt;/span&gt;&lt;span class="invisible"&gt;11349898321347165&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Once again this saved my bacon and let me find something from a month ago that I &lt;em&gt;knew&lt;/em&gt; I saw but neglected to bookmark or favorite.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116931174357867192</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116931174357867192</link>
+      <pubDate>Thu, 16 Jul 2026 18:55:24 +0000</pubDate>
+      <description>&lt;p&gt;The Retrofit, OkHttp, and Okio repos have now moved to their new homes!&lt;/p&gt;&lt;p&gt;&lt;a href="https://github.com/lysine-dev/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class=""&gt;github.com/lysine-dev/&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116930741264159937</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116930741264159937</link>
+      <pubDate>Thu, 16 Jul 2026 17:05:15 +0000</pubDate>
+      <description>&lt;p&gt;Two months ago I gave my first ever live programming talk at KotlinConf. Part of my talk-writing process is lots of procrastination and distraction. This year that materialized in writing a tool to help my code stay on track during the presentation.&lt;/p&gt;&lt;p&gt;&lt;a href="https://jakewharton.com/live-coding-with-dir-stepper/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;jakewharton.com/live-coding-wi&lt;/span&gt;&lt;span class="invisible"&gt;th-dir-stepper/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116851383491706169</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116851383491706169</link>
+      <pubDate>Thu, 02 Jul 2026 16:43:32 +0000</pubDate>
+      <description>&lt;p&gt;The video of my KotlinConf talk "Talking to terminals (and how they talk back)" is now available to watch!&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=QYlzKV0Oe1A" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://www.&lt;/span&gt;&lt;span class=""&gt;youtube.com/watch?v=QYlzKV0Oe1A&lt;/span&gt;&lt;span class="invisible"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116839752464750539</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116839752464750539</link>
+      <pubDate>Tue, 30 Jun 2026 15:25:36 +0000</pubDate>
+      <description>&lt;p&gt;Two weeks left to submit candidates for the Kotlin Foundation's library grant to all you Kotlin library authors out there.&lt;/p&gt;&lt;p&gt;&lt;a href="https://kotlinfoundation.org/news/grant-program-for-library-authors-2026/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;kotlinfoundation.org/news/gran&lt;/span&gt;&lt;span class="invisible"&gt;t-program-for-library-authors-2026/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116774120617585085</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116774120617585085</link>
+      <pubDate>Fri, 19 Jun 2026 01:14:34 +0000</pubDate>
+      <description>&lt;p&gt;So far the biggest disappointment in announcing the move of these projects is that not one person has asked about the live action Jurassic Park adaptation!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <guid isPermaLink="true">https://mastodon.jakewharton.com/@jw/116766013559604089</guid>
+      <link>https://mastodon.jakewharton.com/@jw/116766013559604089</link>
+      <pubDate>Wed, 17 Jun 2026 14:52:50 +0000</pubDate>
+      <description>&lt;p&gt;OkHttp, Retrofit, Okio, and SQL Delight are moving to &lt;span class="h-card" translate="no"&gt;&lt;a href="https://fosstodon.org/@commonhaus_fdn" class="u-url mention" rel="nofollow noopener" target="_blank"&gt;@&lt;span&gt;commonhaus_fdn&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;! &lt;/p&gt;&lt;p&gt;&lt;a href="https://jakewharton.com/the-lysine-contingency/" target="_blank" rel="nofollow noopener" translate="no"&gt;&lt;span class="invisible"&gt;https://&lt;/span&gt;&lt;span class="ellipsis"&gt;jakewharton.com/the-lysine-con&lt;/span&gt;&lt;span class="invisible"&gt;tingency/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

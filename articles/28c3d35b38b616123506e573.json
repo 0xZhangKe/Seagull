@@ -1,0 +1,11 @@
+{
+  "id": "28c3d35b38b616123506e573",
+  "title": "用 org-mode 寫博客",
+  "summary": "很早就聽說有一包喚作 ox-hugo ，可以用 org-mode 來寫博客，但當時我不以為然。然而在我用 org 製作了个人主頁後，體驗了 org-mode 與 Emacs 的流暢集成後，我也習慣了 org-mode 的操作，再回到 Markdown 環境簡直像回到原始社會，必須要配置一下了，正好也為博客寫作找點新鮮感。 安裝方面很簡單，根著文檔走即可。 (use-package ox-hugo :ensure t ;Auto-install the package from Melpa :pin melpa ;`package-archives' should already have (\"melpa\" . \"https://melpa.org/packages/\") :after ox) 然後設置一下 H…",
+  "content": "<p>很早就聽說有一包喚作 <code>ox-hugo</code> ，可以用 org-mode 來寫博客，但當時我不以為然。然而在我用 org 製作了个人主頁後，體驗了 org-mode 與 Emacs 的流暢集成後，我也習慣了 org-mode 的操作，再回到 Markdown 環境簡直像回到原始社會，必須要配置一下了，正好也為博客寫作找點新鮮感。</p>\n<p>安裝方面很簡單，根著文檔走即可。</p>\n<pre><code>(use-package ox-hugo\n :ensure t ;Auto-install the package from Melpa\n :pin melpa ;`package-archives&#x27; should already have (&quot;melpa&quot; . &quot;https://melpa.org/packages/&quot;)\n :after ox)\n</code></pre>\n<p>然後設置一下 Hugo 目錄的變量：</p>\n<pre><code>(setq org-hugo-base-dir &quot;/home/verdant/blog/&quot;)\n</code></pre>\n<p>為了方便，我寫了一個 Org Capture 來快速創建新文章：</p>\n<pre><code>(with-eval-after-load &#x27;org-capture\n(setq org-capture-templates\n &#x27;((&quot;b&quot; &quot;New blog post&quot; plain\n (file (lambda ()\n (let ((slug (read-string &quot;Post Slug (如 my-post): &quot;)))\n (expand-file-name\n (format-time-string (concat slug &quot;.org&quot;))\n &quot;/home/verdant/blog/org/&quot;))))\n &quot;#+title: %^{文章標題}\\n#+date: %&lt;%Y-%m-%d&gt;\\n#+hugo_categories: %^{分類}\\n#+hugo_tags: %^{標籤}\\n#+hugo_custom_front_matter: :showMeta true\\n\\n%?&quot;))))\n</code></pre>\n<p>在 Capture Buffer 鍵入 <code>b</code> 就可以開始創建。</p>\n<figure><img src=\"https://images.verdant.ee/2026-07-18_19-13.gif\">\n</figure>",
+  "image": "https://images.verdant.ee/2026-07-18_19-13.gif",
+  "publishedAt": "2026-07-18T00:00:00Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/%E7%94%A8org-mode%E5%AF%AB%E5%8D%9A%E5%AE%A2/"
+}

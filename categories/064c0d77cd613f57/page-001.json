@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "id": "c46244ca53d2dc59db541607",
+      "title": "Accepted proposal: omit the type in composite literals",
+      "summary": "Go 1.28 is set to let you drop the type from a composite literal when the compiler can infer it from the place where the value goes.",
+      "image": null,
+      "publishedAt": "2026-11-16T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/11/go-untyped-composite-literals/",
+      "detailPath": "articles/c46244ca53d2dc59db541607.json"
+    },
+    {
+      "id": "7fdfed476ab8ce4ef51a1609",
+      "title": "Accepted proposal: grow an existing map with maps.Grow",
+      "summary": "The maps package is getting a Grow function that presizes a map you already have, and maps.Copy will start doing it for you.",
+      "image": null,
+      "publishedAt": "2026-11-03T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/11/go-maps-grow/",
+      "detailPath": "articles/7fdfed476ab8ce4ef51a1609.json"
+    },
+    {
+      "id": "b6243f0b0ab1d6c0ee5b5381",
+      "title": "Partial updates with field masks",
+      "summary": "Keep the value and the update intent in separate fields of a PATCH request.",
+      "image": null,
+      "publishedAt": "2026-10-12T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/patch-field-mask/",
+      "detailPath": "articles/b6243f0b0ab1d6c0ee5b5381.json"
+    },
+    {
+      "id": "5fb9571d8694fa0442d545dd",
+      "title": "Why do we listen to people with no skin in the game?",
+      "summary": "On taking software advice from managers and influencers who don't have to build or deliver it themselves.",
+      "image": "https://blob.rednafi.com/zephyr/no-skin-in-the-game/megaphone-b0b0c559cf0b.jpg",
+      "publishedAt": "2026-09-19T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/zephyr/no-skin-in-the-game/",
+      "detailPath": "articles/5fb9571d8694fa0442d545dd.json"
+    },
+    {
+      "id": "18cc31855858862e5c21ce2e",
+      "title": "The irrational effectiveness of the Pi harness",
+      "summary": "A month of coding with Pi, its small agent loop, and the skills and extensions I've added to it.",
+      "image": "https://blob.rednafi.com/misc/pi-harness/cover-62823da84914.png",
+      "publishedAt": "2026-09-04T22:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/misc/pi-harness/",
+      "detailPath": "articles/18cc31855858862e5c21ce2e.json"
+    },
+    {
+      "id": "5926f1d9a814962e8fe12925",
+      "title": "Postgres as an isolation reference model",
+      "summary": "Use PostgreSQL's transaction isolation levels as a reference model for reasoning about the guarantees and tradeoffs of other relational and non-relational databases.",
+      "image": "https://blob.rednafi.com/system/pg-return-isolation/postgresql-isolation-levels-dafec4753c2c.png",
+      "publishedAt": "2026-08-19T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/system/pg-isolation-ref/",
+      "detailPath": "articles/5926f1d9a814962e8fe12925.json"
+    },
+    {
+      "id": "6a5455f8b82267f356453d32",
+      "title": "Accepted proposal: range over all command-line flags",
+      "summary": "The flag package is getting a range-friendly iterator and a direct way to tell whether a flag was set successfully.",
+      "image": null,
+      "publishedAt": "2026-07-29T22:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/07/go-flag-all-is-set/",
+      "detailPath": "articles/6a5455f8b82267f356453d32.json"
+    },
+    {
+      "id": "2f06c6fced029e82109b125c",
+      "title": "Accepted proposal: Go examples with any signature",
+      "summary": "Go examples with parameters or results can appear in documentation without becoming tests.",
+      "image": null,
+      "publishedAt": "2026-07-28T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/07/go-example-any-signature/",
+      "detailPath": "articles/2f06c6fced029e82109b125c.json"
+    },
+    {
+      "id": "d9fd4fee832720bfee9bc89c",
+      "title": "Supervised fire-and-forget in Go",
+      "summary": "A bounded worker pool for small background tasks, with task-owned contexts, panic recovery, and graceful shutdown.",
+      "image": null,
+      "publishedAt": "2026-07-25T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/supervised-fire-and-forget/",
+      "detailPath": "articles/d9fd4fee832720bfee9bc89c.json"
+    },
+    {
+      "id": "4f36f78ec6d37817b8723945",
+      "title": "GC shape stenciling in Go generics",
+      "summary": "How Go's compiler shares generic function bodies by GC shape and uses dictionaries for the concrete types.",
+      "image": null,
+      "publishedAt": "2026-07-11T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/gc-shape-stenciling/",
+      "detailPath": "articles/4f36f78ec6d37817b8723945.json"
+    },
+    {
+      "id": "45c4d3f06c9781e70d6e761a",
+      "title": "Modernizers & go fix",
+      "summary": "Go 1.26 rebuilt go fix on the analysis framework. It modernizes your code and respects the Go version your module declares. The post covers the modernizers, the bigger x/tools suite, and what //go:fix inline can and can't migrate.",
+      "image": null,
+      "publishedAt": "2026-07-04T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/gofix/",
+      "detailPath": "articles/45c4d3f06c9781e70d6e761a.json"
+    },
+    {
+      "id": "80a7fc8e86bf8579c0508e57",
+      "title": "Request coalescing with Go singleflight",
+      "summary": "A hot cache key expires and a hundred requests issue the same query at once, saturating the database. Go's singleflight package coalesces those duplicate calls into one. How to wire it up, how to measure whether it's firing, and why per-pod coalescing is usually enough.",
+      "image": null,
+      "publishedAt": "2026-06-27T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/request-coalescing/",
+      "detailPath": "articles/80a7fc8e86bf8579c0508e57.json"
+    },
+    {
+      "id": "94895915f3740f5f247a48be",
+      "title": "Channel iteration and goroutine leak",
+      "summary": "A for-range over a channel that's never closed leaks the receiver. Why a fixed number of receives is safe, why a range isn't, and how to catch it with Go 1.27's leak profile.",
+      "image": null,
+      "publishedAt": "2026-06-21T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/go/channel-iteration-goroutine-leak/",
+      "detailPath": "articles/94895915f3740f5f247a48be.json"
+    },
+    {
+      "id": "3466ef3ec951505bdfe75416",
+      "title": "Accepted proposal: a goroutine leak profile in the Go standard library",
+      "summary": "Notes on Go's accepted goroutine leak profile and how it reuses the GC to find them.",
+      "image": null,
+      "publishedAt": "2026-06-18T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/shards/2026/06/go-goroutine-leak-profile/",
+      "detailPath": "articles/3466ef3ec951505bdfe75416.json"
+    },
+    {
+      "id": "5225abd9a576985cd92c0bd6",
+      "title": "Reading your own writes with WAIT FOR LSN in Postgres 19",
+      "summary": "PostgreSQL 19's new WAIT FOR LSN command lets a replica block until it has replayed your write. The read-after-write problem it solves, the workarounds it replaces, and what the timeout, status, and mode options are actually for.",
+      "image": null,
+      "publishedAt": "2026-06-13T00:00:00Z",
+      "sourceId": "064c0d77cd613f57",
+      "sourceTitle": "Redowan's Reflections",
+      "link": "https://rednafi.com/system/pg-wait-for-lsn/",
+      "detailPath": "articles/5225abd9a576985cd92c0bd6.json"
+    }
+  ]
+}

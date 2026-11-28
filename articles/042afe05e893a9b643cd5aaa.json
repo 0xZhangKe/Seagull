@@ -1,0 +1,11 @@
+{
+  "id": "042afe05e893a9b643cd5aaa",
+  "title": "Java中HashMap和HashTable的区别",
+  "summary": "面试中遇到，但是不会，回来google到，分享下吧，据说是老掉牙的问题 HashMap 是Hashtable 的轻量级实现（非线程安全的实现），他们都完成了Map 接口，主要区别在于HashMap 允许空（null）键值（key）,由于非线程安全，效率上可能高于Hashtable。 HashMap 允许将null 作为一个entry 的key 或者value，而Hashtable 不允许。 HashMap 把Hashtable 的contains 方法去掉了，改成containsvalue 和containsKey。因为contains方法容易让人引起误解。 Hashtable 继承自Dictionary 类，而HashMap 是Java1.2 引进的Map interface 的一个实现。 最大的不同是，H…",
+  "content": "<p>面试中遇到，但是不会，回来google到，分享下吧，据说是老掉牙的问题\nHashMap 是Hashtable 的轻量级实现（非线程安全的实现），他们都完成了Map 接口，主要区别在于HashMap 允许空（null）键值（key）,由于非线程安全，效率上可能高于Hashtable。</p>\n<p>HashMap 允许将null 作为一个entry 的key 或者value，而Hashtable 不允许。</p>\n<p>HashMap 把Hashtable 的contains 方法去掉了，改成containsvalue 和containsKey。因为contains方法容易让人引起误解。</p>\n<p>Hashtable 继承自Dictionary 类，而HashMap 是Java1.2 引进的Map interface 的一个实现。</p>\n<p>最大的不同是，Hashtable 的方法是Synchronize 的，而HashMap 不是，在多个线程访问Hashtable 时，不需要自己为它的方法实现同步，而HashMap 就必须为之提供外同步。</p>\n<p>Hashtable 和HashMap 采用的hash/rehash 算法都大概一样，所以性能不会有很大的差异。</p><p><h4><a href=\"https://isming.me/2013-07-28-java-hashmaphe-hashtable/?utm_source=rss#commentsanchor\" target=\"_blank\" rel=\"noopener noreferrer\">看完评论一下吧<a target=\"_blank\" rel=\"noopener noreferrer\"></h4></p>",
+  "image": null,
+  "publishedAt": "2013-07-28T13:30:01Z",
+  "sourceId": "368f8a851f5b565d",
+  "sourceTitle": "isming.me",
+  "link": "https://isming.me/2013-07-28-java-hashmaphe-hashtable/?utm_source=rss"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "56cda08f5fd863239927d498",
+  "title": "HP EliteDesk 小主机 Linux “假死”与 SSH 掉线排解",
+  "summary": "问题背景 这个春节期间，最火的无疑是 OpenClaw ，于是我打算再折腾吃灰已久的 HP EliteDesk 800 G4 （ 介绍 ），安装了 Ubuntu 24.04。 为了省电，将其配置为 multi-user.target（纯文本模式）作为无头服务器（Headless Server）使用。但在实际运行中遇到了非常诡异的现象： 现象 A：机器空置一段时间后，SSH 无法连接，Ping 不通。 现象 B：以为机器卡死，手动按了一下物理电源键想唤醒，结果系统直接触发了正常关机。 现象 C：重启后通过 uptime 发现系统运行时间不对，之前的 tmux 会话全部丢失，说明系统曾发生过非预期的重启。 1 # 配置 TUI 登录 2 sudo systemctl set-default multi-user.…",
+  "content": "<div>\n<h3>\n问题背景\n</h3>\n<div>\n<p>这个春节期间，最火的无疑是 <a href=\"https://openclaw.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenClaw</a>，于是我打算再折腾吃灰已久的 <a href=\"https://support.hp.com/gb-en/product/details/hp-elitedesk-800-65w-g4-desktop-mini-pc/21353734\" target=\"_blank\" rel=\"noopener noreferrer\">HP EliteDesk 800 G4</a>（<a href=\"https://zhuanlan.zhihu.com/p/1893623963327911375\" target=\"_blank\" rel=\"noopener noreferrer\">介绍</a>），安装了 Ubuntu 24.04。\n为了省电，将其配置为 multi-user.target（纯文本模式）作为无头服务器（Headless Server）使用。但在实际运行中遇到了非常诡异的现象：</p>\n<ul>\n<li>现象 A：机器空置一段时间后，SSH 无法连接，Ping 不通。</li>\n<li>现象 B：以为机器卡死，手动按了一下物理电源键想唤醒，结果系统直接触发了正常关机。</li>\n<li>现象 C：重启后通过 uptime 发现系统运行时间不对，之前的 tmux 会话全部丢失，说明系统曾发生过非预期的重启。</li>\n</ul>\n<div>\n<div><pre><code><span><span>1</span><span><span># 配置 TUI 登录</span>\n</span></span><span><span>2</span><span>sudo systemctl set-default multi-user.target\n</span></span><span><span>3</span><span><span># 配置 GUI 登录</span>\n</span></span><span><span>4</span><span>sudo systemctl set-default graphical.target</span></span></code></pre></div>\n</div>\n</div>\n</div>",
+  "image": null,
+  "publishedAt": "2026-02-18T01:40:21Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2026/02/18/headless-ubuntu-pitfalls/"
+}

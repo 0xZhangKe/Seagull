@@ -1,0 +1,11 @@
+{
+  "id": "a7f447d09f3117f738146128",
+  "title": "重建博客日记",
+  "summary": "为什么要迁 wiki的方式不适合我 选择tag或许更适合我些 模板不喜欢 想试着自己写 完全掌握所有代码 astro构建太慢了 听说了hugo便闻着味道来了 于是入坑 想从github换到codeberg 过程 学习hugo 了解架构 （很有意思) 阅读官方文档还是很舒服的 设计页面 注册codeberg 托管代码 手动部署到cloudflare 尝试构建自动部署流程 安装 Wrangler 申请 Codeberg 提供的 Woodpecker CI 申请 Cloudflare API Token 创建 .woodpecker.yml ，编写部署流程 View deployment diagram ------------------------------- Codeberg (Store Code) |…",
+  "content": "<h2>为什么要迁</h2>\n<ol>\n<li>wiki的方式不适合我 选择tag或许更适合我些</li>\n<li>模板不喜欢 想试着自己写 完全掌握所有代码</li>\n<li>astro构建太慢了 听说了hugo便闻着味道来了 于是入坑</li>\n<li>想从github换到codeberg</li>\n</ol>\n<h2>过程</h2>\n<ol>\n<li>学习hugo 了解架构 （很有意思) 阅读官方文档还是很舒服的</li>\n<li>设计页面</li>\n<li>注册codeberg 托管代码</li>\n<li>手动部署到cloudflare</li>\n<li>尝试构建自动部署流程\n<ol>\n<li>安装 Wrangler</li>\n<li>申请 Codeberg 提供的 Woodpecker CI</li>\n<li>申请 Cloudflare API Token</li>\n<li>创建 <code>.woodpecker.yml</code>，编写部署流程</li>\n</ol>\n</li>\n</ol>\n\n\n\tView deployment diagram\n\t<pre><code> -------------------------------\n Codeberg\n (Store Code)\n |\n | git push\n | Webhook notification\n v\n Woodpecker CI\n (Manage Pipeline)\n |\n | Assign Job\n v\n CI Runner\n +------------------+\n | |\n | Hugo Build |\n | | |\n | v |\n | Wrangler Deploy |\n | |\n +------------------+\n |\n | Upload files\n v\n Cloudflare\n (Host Website)\n ----------------------------------\n</code></pre>",
+  "image": null,
+  "publishedAt": "2026-11-15T00:00:00Z",
+  "sourceId": "12b3a2db9dd9ca55",
+  "sourceTitle": "Home on yun",
+  "link": "https://kokfine.cc/posts/%E9%87%8D%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%A5%E8%AE%B0/"
+}

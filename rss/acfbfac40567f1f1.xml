@@ -1,0 +1,3065 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kotlin : A concise multiplatform language developed by JetBrains | The JetBrains Blog</title>
+	<atom:link href="https://blog.jetbrains.com/kotlin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.jetbrains.com</link>
+	<description>Developer Tools for Professionals and Teams</description>
+	<lastBuildDate>Fri, 27 Nov 2026 22:01:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://blog.jetbrains.com/wp-content/uploads/2026/09/icon-512.webp</url>
+	<title>Kotlin : A concise multiplatform language developed by JetBrains | The JetBrains Blog</title>
+	<link>https://blog.jetbrains.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Introducing the Kotlin Security Newsletter</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/introducing-the-kotlin-security-newsletter/</link>
+		
+		<dc:creator><![CDATA[Alina Dolgikh]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2026 13:56:11 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/Kotlin-Blog-featured-cover-1280-720.png</featuredImage>		<product ><![CDATA[security]]></product>
+		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=761896</guid>
+
+					<description><![CDATA[Today, we&#8217;re launching the Kotlin Security Newsletter, a single place where you can track security fixes across Kotlin and its ecosystem. We&#8217;ll collect recent security fixes across the projects we cover in one digest, publish it on our blog, and send it to your inbox, so you don&#8217;t have to follow each Kotlin library or [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Today, we&#8217;re launching the Kotlin Security Newsletter, a single place where you can track security fixes across Kotlin and its ecosystem. We&#8217;ll collect recent security fixes across the projects we cover in one digest, publish it on our blog, and send it to your inbox, so you don&#8217;t have to follow each Kotlin library or tool update separately. We will also include broader ecosystem security news if it affects Kotlin applications.</p>
+
+
+
+<p>The newsletter covers topics relevant to Android, server-side, and Kotlin Multiplatform development. We aim to publish about once a month, when there’s something to share.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://kotlinlang.org/security-newsletter/?utm_source=kotlin-blog&#038;utm_medium=referral&#038;utm_campaign=kotlin-security-newsletter&#038;utm_content=signup-cta" target="_blank" rel="noopener"><i class="download-icon"></i>Subscribe to the Kotlin Security Newsletter</a></p>
+
+
+
+<h2 class="wp-block-heading">Why it matters now</h2>
+
+
+
+<p>You probably noticed more security updates than usual this year. One of the latest examples is the quarterly OpenJDK update published in October 2026. It lists <a href="https://openjdk.org/groups/vulnerability/advisories/2026-10-20" target="_blank" rel="noreferrer noopener">54 fixed vulnerabilities</a>, which is three times as many as any previous update since OpenJDK started publishing them in 2019.</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" fetchpriority="high" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/11/image-76.png" alt="" class="wp-image-761897"/></figure>
+
+
+
+<p>These days, security research is moving faster across the industry, and AI tools help researchers find issues in widely used code. Finding and fixing more issues is a good thing, but it also means more updates for your team to track, assess, and apply.</p>
+
+
+
+<p>The Kotlin team sees exactly the same trend. So far this year, we&#8217;ve published <a href="https://www.jetbrains.com/privacy-security/issues-fixed/" target="_blank" rel="noreferrer noopener">10 security fixes</a> for Kotlin, Ktor, Exposed, and the kotlinx libraries, compared with one in each of the previous two years. Most of them came from security researcher reports. Some fixes are in backend code, such as the Ktor server and Exposed. Others are in Kotlin&#8217;s build tooling and in libraries that many Android and Kotlin Multiplatform apps rely on, such as the Ktor client and kotlinx.serialization.</p>
+
+
+
+<p>Earlier this year, we introduced a security support policy for the Kotlin standard library on the JVM. Since Kotlin 2.4.0, each release line of the Kotlin standard library for the JVM gets <a href="https://blog.jetbrains.com/kotlin/2026/05/security-support-policy-for-the-kotlin-standard-library/" target="_blank" rel="noreferrer noopener">security fixes for 18 months</a>. The newsletter is the next step in that work.</p>
+
+
+
+<h2 class="wp-block-heading">What&#8217;s in each digest</h2>
+
+
+
+<p>Here’s what you’ll find in the digest:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Security fixes in Kotlin and its ecosystem.</strong> This includes Kotlin itself, the kotlinx libraries, Compose Multiplatform, Ktor, and Exposed. For each fix, you&#8217;ll see the affected and fixed versions, with a link to the details.</li>
+
+
+
+<li><strong>Security news from the wider ecosystem. </strong>We may highlight vulnerabilities that affect Kotlin applications. When we do, we’ll explain what’s affected and link to any available fixes or workarounds.</li>
+
+
+
+<li><strong>Occasional Kotlin security events.</strong> We’re planning to organize online or in-person sessions for the community. We will share invitations in the digest, including the topic and how to join.</li>
+</ul>
+
+
+
+<p>We&#8217;ll keep each digest short and focused on what you may need to act on. If a month has no new fixes, we&#8217;ll wait until there&#8217;s something to share.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://kotlinlang.org/security-newsletter/?utm_source=kotlin-blog&amp;utm_medium=referral&amp;utm_campaign=kotlin-security-newsletter&amp;utm_content=signup-cta" target="_blank" rel=" noreferrer noopener"><img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/11/1360-336-1.png" alt="" class="wp-image-762007"/></a></figure>
+
+
+
+<h2 class="wp-block-heading">Found a vulnerability? Tell us</h2>
+
+
+
+<p>If you find a security issue in Kotlin or one of its libraries, please follow our <a href="https://kotlinlang.org/docs/security.html" target="_blank" rel="noreferrer noopener">security reporting guidelines</a>. We always want to hear about security issues you find in Kotlin and its libraries. To report one, create a ticket in the <a href="https://youtrack.jetbrains.com/newIssue?project=KT&amp;c=Type%20Security%20Problem" target="_blank" rel="noreferrer noopener">Kotlin issue tracker</a> with the Security Problem type, which limits who can see it. You can also email security@jetbrains.com.</p>
+
+
+
+<p>Please include steps to reproduce the issue and coordinate any public disclosure with us. We also ask that you confirm AI-assisted findings manually before reporting them. The <a href="https://www.jetbrains.com/legal/docs/terms/coordinated-disclosure/" target="_blank" rel="noreferrer noopener">JetBrains Coordinated Disclosure Policy</a> explains how we handle reports and publish fixes.</p>
+
+
+
+<p>Thank you to everyone who reported security issues to us this year!</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Advent of Code 2026: ’Tis the Season to Code in Kotlin</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/advent-of-code-2026-in-kotlin/</link>
+		
+		<dc:creator><![CDATA[Ksenia Shneyveys]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2026 22:35:00 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/KT-social-BlogFeatured-1280x720-1-6.png</featuredImage>		<category><![CDATA[education]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[advent-of-code]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=761744</guid>
+
+					<description><![CDATA[December is almost here, and so is one of our favorite coding traditions! We’re excited to take part in Advent of Code once again and invite you to join us for another season of festive puzzles, clever Kotlin solutions, and friendly competition. Advent of Code is a great opportunity to learn something new and have [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>December is almost here, and so is one of our favorite coding traditions! We’re excited to take part in Advent of Code once again and invite you to join us for another season of festive puzzles, clever Kotlin solutions, and friendly competition.</p>
+
+
+
+<p>Advent of Code is a great opportunity to learn something new and have fun along the way. Here’s what’s planned for this year:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Four days of <a href="https://youtube.com/playlist?list=PLaREJ9wqJKLI&amp;si=COOVxJdb0ZRrxxBC" target="_blank" rel="noreferrer noopener">livestreams</a> (December 1–4) with Kotlin Developer Advocate Sebastian Aigner and special guests from the Kotlin team and community, exploring different approaches to solving the puzzles.</li>
+
+
+
+<li>A welcoming community in <a href="https://slack-chats.kotlinlang.org/c/advent-of-code" target="_blank" rel="noreferrer noopener">Kotlinlang Slack</a>, where you can exchange ideas, share solutions, and help each other out.</li>
+
+
+
+<li>Kotlin leaderboards and exclusive prizes for the top performer, a randomly selected participant, and an outstanding community contributor</li>
+</ul>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe src="https://www.youtube.com/embed/Z2kajEnLf3k?list=PLaREJ9wqJKLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Four days of festive coding, live</h2>
+
+
+
+<p>From December 1 to 4, join Sebastian and a different guest each day as they work through the Advent of Code puzzles in Kotlin.</p>
+
+
+
+<p>Discover new ways to use Kotlin’s features, explore alternative solutions, pick up a few tricks, and join the conversation on Slack!</p>
+
+
+
+<p>Join the <em>#advent-of-code</em> channel in <a href="https://slack-chats.kotlinlang.org/c/advent-of-code" target="_blank" rel="noreferrer noopener">Kotlinlang Slack</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Join the Kotlin community and leaderboards</h2>
+
+
+
+<p>If you enjoy a bit of friendly competition, join one of our Kotlin leaderboards on adventofcode.com. Go to the <em>Leaderboard</em> section of your Advent of Code profile and enter one of the following codes:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Leaderboard 1: 2553782-ea9e5df5</li>
+
+
+
+<li>Leaderboard 2: 2553918-5c580ce9</li>
+
+
+
+<li>Leaderboard 3: 3240094-10740dfa</li>
+</ul>
+
+
+
+<p>Please join only one leaderboard to leave room for other participants.</p>
+
+
+
+<h2 class="wp-block-heading">How to win prizes</h2>
+
+
+
+<p>This year, we’ll once again be rewarding participants for their problem-solving skills, a little bit of luck, and their contributions to the Kotlin community.</p>
+
+
+
+<p>For a chance to win exclusive Kotlin prizes:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Solve at least three Advent of Code 2026 puzzles in Kotlin without using AI.</li>
+
+
+
+<li>Publish your solutions on GitHub and add the <code>aoc-2026-in-kotlin</code> topic to your repository.</li>
+
+
+
+<li>Make sure we can contact you through your GitHub profile by including an email address, X handle, or Bluesky handle.</li>
+</ol>
+
+
+
+<p>To add the topic, open your GitHub repository, go to the <em>About</em> section, click the gear icon, and enter <code>aoc-2026-in-kotlin</code> in the <em>Topics</em> field.</p>
+
+
+
+<p>You don’t have to be the fastest to win a prize. We’ll also recognize randomly selected participants and community members who make Advent of Code in Kotlin a welcoming and supportive experience.</p>
+
+
+
+<h2 class="wp-block-heading">Enjoy the challenge – Solve it yourself</h2>
+
+
+
+<p>Anyone can generate a quick solution now, but there’s still something especially rewarding about figuring things out yourself.</p>
+
+
+
+<p>As the Advent of Code creator puts it:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p><em>                If you send a friend to the gym on your behalf, would you expect to get stronger?</em></p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading">Get ready to code</h2>
+
+
+
+<p>Here are a few resources to help you get started:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://github.com/kotlin-hands-on/advent-of-code-kotlin-template" target="_blank" rel="noreferrer noopener">Advent of Code Kotlin template</a>.</li>
+
+
+
+<li><a href="https://blog.jetbrains.com/kotlin/2024/11/advent-of-code-2024-in-kotlin/#template" target="_blank" rel="noreferrer noopener">Instructions on how to use the template</a>.</li>
+
+
+
+<li><a href="https://kotlinlang.org/docs/advent-of-code.html" target="_blank" rel="noreferrer noopener">Advent of Code in Kotlin solutions from previous years</a>.</li>
+</ul>
+
+
+
+<p>Happy coding, and see you on December 1!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kotlin Heroes: Episode 15 – Anniversary Edition</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/kotlin-heroes-episode-15-anniversary-edition/</link>
+		
+		<dc:creator><![CDATA[Ksenia Shneyveys]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2026 17:30:19 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/Component-1-1.png</featuredImage>		<category><![CDATA[education]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[kotlin-heroes]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=761144</guid>
+
+					<description><![CDATA[Kotlin turned 15 this year, and we’re celebrating with the 15th episode of Kotlin Heroes! 💜 Kotlin Heroes is a series of online programming contests, where participants solve algorithmic problems using Kotlin. Whether you&#8217;re new to the language or an experienced programmer, it&#8217;s a chance to practice your Kotlin skills, challenge yourself, and have some [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Kotlin turned 15 this year, and we’re celebrating with the <a href="https://codeforces.com/contests/2286,2282" target="_blank" rel="noreferrer noopener">15th episode of Kotlin Heroes</a>! 💜</p>
+
+
+
+<p>Kotlin Heroes is a series of online programming contests, where participants solve algorithmic problems using Kotlin. Whether you&#8217;re new to the language or an experienced programmer, it&#8217;s a chance to practice your Kotlin skills, challenge yourself, and have some fun along the way.</p>
+
+
+
+<p>Over the past 14 episodes, Kotlin Heroes has attracted nearly 190,000 registrations across practice rounds and contests. A big thank-you to everyone who&#8217;s been part of this journey!</p>
+
+
+
+<p>The next contest takes place on <strong>December 8, 2026</strong>, and the practice round will open on <strong>December 1, 2026</strong>. Join us for this anniversary edition and get a chance to win an exclusive Kotlin Heroes anniversary T-shirt!</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://codeforces.com/contests/2286,2282" target="_blank" rel="noopener"><i class="download-icon"></i>Join Kotlin Heroes: Episode 15</a></p>
+
+
+
+<h2 class="wp-block-heading">How it works</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Warm up in the practice round. Get familiar with the contest format, solve training problems, and use available hints and solutions whenever you need help.</li>
+
+
+
+<li>Compete on December 8. You&#8217;ll have 2 hours and 30 minutes to tackle problems ranging from beginner-friendly tasks to challenges for experienced competitive programmers.</li>
+
+
+
+<li>Win prizes! Top participants will receive cash prizes and exclusive anniversary T-shirts. Plus, everyone who solves at least one problem in the main contest has a chance to win a T-shirt in the raffle.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Why join?</h2>
+
+
+
+<p>Learning a new programming language is a valuable skill, and one of the best ways to improve is to solve problems yourself.</p>
+
+
+
+<p>With AI becoming part of everyday programming, Kotlin Heroes is an opportunity to celebrate human problem-solving, challenge yourself, and discover what you can accomplish with Kotlin!</p>
+
+
+
+<h2 class="wp-block-heading">Prizes</h2>
+
+
+
+<p>You don&#8217;t have to finish at the top of the leaderboard to win something!</p>
+
+
+
+<ul class="wp-block-list">
+<li>🥇 1st place: $512</li>
+
+
+
+<li>🥈 2nd place: $256</li>
+
+
+
+<li>🥉 3rd place: $128</li>
+
+
+
+<li>🎽 Top 50 participants: Exclusive Kotlin Heroes 15th anniversary T-shirts</li>
+
+
+
+<li>🎁 50 additional anniversary T-shirts: Raffled among participants who solve at least one problem</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Get ready for the contest</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Watch our<a href="https://www.youtube.com/playlist?list=PLlFc5cFwUnmyQA0l15nAfE1-pnu6fSvvG" target="_blank" rel="noreferrer noopener"> Kotlin in Competitive Programming playlist</a> for tips from experienced competitive programmers.</li>
+
+
+
+<li>Read the<a href="https://kotlinlang.org/docs/competitive-programming.html" target="_blank" rel="noreferrer noopener"> Kotlin competitive programming tutorial</a>.</li>
+
+
+
+<li>Explore previous Kotlin Heroes contest solutions, including<a href="https://codeforces.com/contests/2087,2088" target="_blank" rel="noreferrer noopener"> Episode 12</a>,<a href="https://codeforces.com/contests/2141,2142" target="_blank" rel="noreferrer noopener"> Episode 13</a>, and<a href="https://codeforces.com/contests/2198,2199" target="_blank" rel="noreferrer noopener"> Episode 14</a>.</li>
+</ul>
+
+
+
+<p>A note on fair play: Kotlin Heroes is about testing your own problem-solving skills. AI-assisted problem solving is restricted during the main contest, so please review the<a href="https://codeforces.com/blog/entry/133941" target="_blank" rel="noreferrer noopener"> Codeforces AI usage rules</a> before participating. Let&#8217;s keep the competition fair and enjoyable for everyone!</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://codeforces.com/contests/2286,2282" target="_blank" rel="noopener"><i class="download-icon"></i>Register for Kotlin Heroes: Episode 15</a></p>
+
+
+
+<p>See you on December 8, and good luck!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kotlin Benchmark 2.0: How AI Coding Agents Handle Harder Tasks and Closed-Source Code</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/kotlin-benchmark-2-0-how-ai-coding-agents-handle-harder-tasks-and-closed-source-code/</link>
+		
+		<dc:creator><![CDATA[Alyona Chernyaeva]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2026 14:13:29 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/DSGN-26813-1920x1080-1.png</featuredImage>		<product ><![CDATA[ai]]></product>
+		<category><![CDATA[kotlin]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=759663</guid>
+
+					<description><![CDATA[In July, we released the Kotlin Benchmark – a collection of 105 real repository-level tasks for evaluating AI coding agents’ work with Kotlin. Since then, we&#8217;ve updated it to be more representative of what Kotlin teams do, with more reliable results and more data to help you choose an agent-model configuration. The new tasks require [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In July, we released the <a href="https://kotlinlang.org/benchmark/" target="_blank" rel="noopener">Kotlin Benchmark</a> – a collection of 105 real repository-level tasks for evaluating AI coding agents’ work with Kotlin. Since then, we&#8217;ve updated it to be more representative of what Kotlin teams do, with more reliable results and more data to help you choose an agent-model configuration.</p>
+
+
+
+<p>The new tasks require changes across multiple files, come from projects in different Kotlin domains, and include code from private repositories. To prevent reward hacking and improve the reliability of our results, we restricted network access when agents solve open-source tasks, so they can&#8217;t look up a fix that has already been published. We also set  30-minute-per-task resolution time limit for each configuration, balancing the additional time required to solve complex problems with the need for a manageable evaluation time.</p>
+
+
+
+<p><a href="https://kotlinlang.org/benchmark/" target="_blank" rel="noreferrer noopener">See the latest Kotlin Benchmark results</a></p>
+
+
+
+<h3 class="wp-block-heading">What&#8217;s new&nbsp;</h3>
+
+
+
+<p></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Harder tasks:</strong> The collection of tasks now focuses on medium- and high-complexity problems that require multi-step reasoning, debugging, and changes across multiple files. Simple single-file edits have been filtered out.</li>
+
+
+
+<li><strong>Open-source and closed-source tasks</strong>: Of the 100 tasks, 70 come from open-source GitHub repositories and 30 from private JetBrains ones, where neither the code nor the fix is available online. The leaderboard shows the results for the full suite and for each group separately, allowing for a direct comparison of the configuration’s performance on public and private code.</li>
+
+
+
+<li><strong>Broader Kotlin domain coverage</strong>: The 70 open-source tasks now come from 25 repositories, and they span key Kotlin domains: 30 Android, 20 backend, 10 Kotlin Multiplatform, and 10 libraries and tools. The 30 closed-source tasks come from internal JetBrains server-side Kotlin projects.</li>
+
+
+
+<li><strong>Restricted network access to prevent reward hacking: </strong>Agents complete the open-source tasks without network access, so a configuration can&#8217;t inflate its score by looking up the published fix.</li>
+
+
+
+<li><strong>New models, including open ones:</strong> The evaluated lineup has changed and now includes open models – Kimi and DeepSeek, both running via OpenCode. If you&#8217;re considering an open model, you can compare it with closed ones on the same tasks. Every configuration runs the full suite three times, and the exact agent-model pairings, versions, and run settings are on the leaderboard.</li>
+
+
+
+<li><strong>Average cost, tokens, and steps per task:</strong> The leaderboard now displays the average cost, tokens, and number of steps per task, alongside resolution rate and latency, so you can see how resource-intensive each configuration is.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Stricter guardrails to prevent solution lookup</h3>
+
+
+
+<p>When benchmark tasks come from previously solved public issues, an agent can retrieve the existing fix instead of deriving one from the task and the codebase. This is known as reward hacking, and in our preliminary runs, we found agents were doing exactly that.</p>
+
+
+
+<p>To prevent it, agents now solve the open-source tasks in a stricter sandbox with restricted network access. Only calls to the model itself are allowed as traffic. Dependencies are cached in advance, the repository history is hidden, and agents are explicitly informed that network access is disabled to prevent repeated attempts to access it. Network access remains available for solving closed-source tasks, because their fixes aren&#8217;t published anywhere.</p>
+
+
+
+<p>These controls prevent agents from looking up solutions at runtime, but they don&#8217;t help rule out data contamination. The open-source repositories and their associated fixes may be part of a model&#8217;s training data. That&#8217;s the reason for the 30 closed-source tasks, which stay private. The <a href="https://kotlinlang.org/benchmark/methodology/" target="_blank" rel="noopener">methodology</a> documents the evaluation setup and its limits.</p>
+
+
+
+<h3 class="wp-block-heading">The results</h3>
+
+
+
+<p>In the new evaluation, the best resolution rate on the full suite (combining both open- and closed-source tasks) comes from Claude Code with Opus 5.5, which posted a 75.3% resolution rate and an average cost of \$0.84 per task. The other 12 configurations resolved between 54.3% and 73.7% and cost between \$0.02 and \$3.14 per task.</p>
+
+
+
+<p><strong>For the open-source dataset</strong>, the highest-scoring configurations are Claude Code with Fable 5.1 (86.2%), followed by Claude Code with Opus 5.5 (84.8%) and Junie using Opus 5.5 and GPT 6 Luna (79.5%). However, the latter configurations offer a comparable score at lower average costs per task (\$0.68 and \$0.33, respectively, versus \$2.38).</p>
+
+
+
+<p><strong>On the closed dataset</strong> (consisting of Kotlin server-side tasks), Antigravity CLI with Gemini 3.8 Flash performed the best (60%, \$1.74 per task), closely followed by OpenCode with Deepseek V4.1 Flash (58.9%), which had a more moderate price tag of \$0.08 per task.</p>
+
+
+
+<p>As you compare, keep in mind that the latest Kotlin Benchmark uses a different, harder task suite, so its scores are not comparable with the first release. A lower number here doesn&#8217;t mean a model got worse. Compare configurations within the same benchmark version.</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/11/Kotlin-Benchmark-2.0-leaderboard-infographic-1920x1080-23-Nov-2026.png" alt="" class="wp-image-760065"/></figure>
+
+
+
+<p><em><em>Results shown here reflect the second public iteration of the Kotlin Benchmark. The leaderboard will be updated as newer model evaluations are added.</em></em></p>
+
+
+
+<p>As before, a task counts as completed only when the generated patch passes the required tests, and the scores are a comparison signal, not a guarantee for every codebase. Use the leaderboard to shortlist configurations, and then validate them on representative tasks from your own projects.</p>
+
+
+
+<h3 class="wp-block-heading">What’s next</h3>
+
+
+
+<p>In the coming weeks, we plan to release follow-up materials for this benchmark iteration. Specifically, we will:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Analyze the agentic solutions for the open-source tasks and identify any that have potentially been contaminated (reproduced from memory).</li>
+
+
+
+<li>Compile results that go beyond resolution rate: we will run <a href="https://www.jetbrains.com/qodana/" target="_blank" rel="noreferrer noopener">Qodana</a>, the static analysis tool from JetBrains, to determine whether agents introduced any bugs, security issues, or code smells with their solutions.&nbsp;</li>
+</ul>
+
+
+
+<p>The Kotlin Benchmark and the follow-up analyses are part of our own research on how agents work with Kotlin code. By studying how they complete these tasks and where they fail, we learn what to improve in Kotlin and its tooling.</p>
+
+
+
+<p>If you&#8217;d like to help us improve Kotlin&#8217;s compatibility with AI tools, let us know where you run into trouble and use <a href="http://forms.gle/wr8WTcgrHUdd3Uk19" target="_blank" rel="noreferrer noopener">this form</a> to share examples of where AI gives you a poor, incorrect, or unhelpful result when working with Kotlin.</p>
+
+
+
+<p>To learn more, explore the <a href="https://kotlinlang.org/benchmark/" target="_blank" rel="noreferrer noopener">leaderboard</a>, read the <a href="https://kotlinlang.org/benchmark/methodology/" target="_blank" rel="noreferrer noopener">methodology</a>, or inspect the public tasks and harnesses on <a href="https://github.com/Kotlin/kotlin-swe-bench" target="_blank" rel="noreferrer noopener">GitHub</a>.</p>
+
+
+
+<h3 class="wp-block-heading">Further reading</h3>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://kotlinlang.org/benchmark/" target="_blank" rel="noreferrer noopener">The Kotlin Benchmark Leaderboard</a></li>
+
+
+
+<li><a href="https://kotlinlang.org/benchmark/methodology/" target="_blank" rel="noreferrer noopener">The Kotlin Benchmark Methodology</a></li>
+
+
+
+<li><a href="https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/" target="_blank" rel="noreferrer noopener"><em>Introducing the Kotlin Benchmark for AI Coding Agents</em></a></li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kotlin Toolchain 0.14: Agentic Development and iOS Publishing</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/kotlin-toolchain-0-14-agentic-development-and-ios-publishing/</link>
+		
+		<dc:creator><![CDATA[Kirill Likhodedov]]></dc:creator>
+		<pubDate>Tue, 17 Nov 2026 15:25:05 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/KT-social-BlogFeatured-1280x720-1-2.png</featuredImage>		<category><![CDATA[multiplatform]]></category>
+		<category><![CDATA[releases]]></category>
+		<category><![CDATA[kotlin-toolchain]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=757982</guid>
+
+					<description><![CDATA[The Kotlin Toolchain helps you build and ship multiplatform apps faster, with less setup and configuration. Its CLI provides a unified workflow for building, running, testing, and publishing apps for Android, iOS, desktop, and web, whether you&#8217;re developing with AI agents or writing code yourself. Kotlin Toolchain 0.14 makes it easier to publish iOS apps [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The Kotlin Toolchain helps you build and ship multiplatform apps faster, with less setup and configuration. Its CLI provides a unified workflow for building, running, testing, and publishing apps for Android, iOS, desktop, and web, whether you&#8217;re developing with AI agents or writing code yourself.<br><br>Kotlin Toolchain 0.14 makes it easier to publish iOS apps to TestFlight and brings improvements to agentic development workflows, along with several other enhancements.</p>
+
+
+
+<div class="buttons">
+        <div class="buttons__row">
+            <a class="ek-link jb-download-button" title="Install Kotlin Toolchain" href="https://kotlin-toolchain.org/latest/" target="_blank" rel="noopener" data-test="blog-article-cta" data-cl="true">Install Kotlin Toolchain</a>
+         </div>
+</div>
+
+
+
+<p>Or try this prompt in your favorite agent:&nbsp;</p>
+
+
+
+<div style="background:#6B3FD0;border-radius:16px;padding:20px 24px;margin:24px 0;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px;box-sizing:border-box;">
+<div style="flex:1 1 auto;min-width:0;margin:0;padding:0;background:transparent;border:0;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.6;white-space:normal;overflow-wrap:anywhere;">Create a new Kotlin Multiplatform app for Android, iOS, desktop, and web with the Kotlin Toolchain CLI (https://kotlin-toolchain.org/latest).</div>
+<button type="button" data-event-tracking="copy" onclick="var b=this;navigator.clipboard.writeText(b.previousElementSibling.innerText).then(function(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy'},2000)});" style="background:#fff;color:#000;border:0;border-radius:999px;padding:10px 24px;margin:0;width:auto;height:auto;font-size:14px;font-weight:500;line-height:1.2;text-transform:none;box-shadow:none;cursor:pointer;flex:0 0 auto;">Copy</button></div>
+
+
+
+<p><em>To access the latest Kotlin Toolchain features from your IDE, use <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener noreferrer">IntelliJ IDEA&nbsp;2026.2.4</a> (or newer) or Android Studio&nbsp;Rabbit&nbsp;1&nbsp;|&nbsp;2026.2.1 (or newer). Make sure the latest version of the <a href="https://plugins.jetbrains.com/plugin/31850-kotlin-toolchain" target="_blank" rel="noopener noreferrer">Kotlin Toolchain plugin</a> is installed.</em></p>
+
+
+
+<h2 class="wp-block-heading"><strong>iOS application publishing</strong></h2>
+
+
+
+<p>You can now publish iOS apps using the <code>kotlin publish testflight</code> command.<br>This launches an easy publishing flow that guides you through most of the setup and steps required to publish a new application to TestFlight for the first time. After the first publication, you can publish updates automatically using the same command.<br><br>The command will ask for an App Store Connect access token (Apple Developer Program membership is required, as usual), which is a standard way to authorize automations to publish applications in App Store Connect. We never save the private key itself or ask for Apple ID credentials.</p>
+
+
+
+<figure class="wp-block-video"><video controls src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/11/video1_testflight_fixed.mov"></video></figure>
+
+
+
+<p>Note that you can also still access an Xcode project and use that to set up publishing with manual signing and other advanced options, if necessary.</p>
+
+
+
+<p>For more information see the <a href="https://kotlin-toolchain.org/0.14/user-guide/publishing/ios-application/" target="_blank" rel="noreferrer noopener">documentation</a>.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Agentic workflows support</strong></h2>
+
+
+
+<p>The Kotlin CLI wizard now helps configure agents by generating relevant files in your project, such as MCP server configuration and an <code>AGENTS.md</code> file. These files provide general recommendations for agents to help them act more accurately and reduce the development feedback loop.</p>
+
+
+
+<p>We also added Kotlin Toolchain skills as part of the <a href="https://www.skills.sh/kotlin/kotlin-agent-skills" target="_blank" rel="noreferrer noopener">Kotlin agent skills</a> collection.</p>
+
+
+
+<p>To install the skills, run in your terminal:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">npx skills add kotlin/kotlin-agent-skills</pre>
+
+
+
+<p>Our <a href="https://github.com/JetBrains/kotlin-toolchain/tree/8f64e5c40ef20eae068e562bf3744815d51ba131/ai-evals/results#readme" target="_blank" rel="noopener">AI evals</a> show that using these skills helps to reduce the token consumption of working with Kotlin Toolchain-based projects.</p>
+
+
+
+<figure class="wp-block-video"><video controls src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/11/video2_ultrafriendly.mov"></video></figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Error and warning visibility in templates in the IDE</strong></h2>
+
+
+
+<p>Now, when a module has errors or warnings originating from the template application, the IDE displays the problem both at its source and the template application.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/11/templates1.png" alt="" class="wp-image-758141" style="width:541px;height:auto; width:100% !important; height:auto !important; max-width:100% !important;"/></figure>
+
+
+
+<p>If a template issue only arises upon application (e.g., via module dependency conflicts), the template message includes a hint specifying when it occurs.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/11/templates2.png" alt="" class="wp-image-758152" style="width:545px;height:auto; width:100% !important; height:auto !important; max-width:100% !important;"/></figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Java 8+ API desugaring for Android</strong></h2>
+
+
+
+<p>Android’s <a href="https://developer.android.com/studio/write/java8-support-table" target="_blank" rel="noreferrer noopener">core library desugaring</a> is now supported natively by the Kotlin Toolchain: a single <code>desugaring: enabled</code> line in <code>module.yaml</code> turns it on, with the desugaring library itself overridable via the <code>library</code> option. See the <a href="https://kotlin-toolchain.org/0.14/reference/module/?h=desugaring#settingsandroiddesugaring" target="_blank" rel="noreferrer noopener">settings reference</a> for more details.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Customizable external tool download URLs</strong></h2>
+
+
+
+<p>The Kotlin Toolchain downloads the external tools it needs under the hood, and every location it downloads from is now <a href="https://kotlin-toolchain.org/0.14/cli/provisioning/#customizing-download-urls" target="_blank" rel="noreferrer noopener">documented</a> and overridable with an environment variable. This makes it possible to route all downloads through internal mirrors, whether to comply with corporate network policies or to avoid Maven Central&#8217;s rate limits.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Dependency resolution optimization</strong></h2>
+
+
+
+<p>The first import of a project – the one where every dependency has to be resolved and downloaded from the network – just got significantly faster. According to our benchmarks, importing the Kotlin Toolchain project itself without caches is now more than 3x faster. The updated resolver makes fewer unnecessary requests to repositories, downloads more dependencies in parallel, and still ensures that all downloaded files are valid.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Install Kotlin Toolchain 0.14.0</strong></h2>
+
+
+
+<p>Ready to start building with the Kotlin Toolchain?</p>
+
+
+
+<p>Check out our <a href="https://kotlin-toolchain.org/latest/getting-started/" target="_blank" rel="noreferrer noopener">Getting started</a> guide to dive into code examples, tutorials, or explore the comprehensive user guide to learn more.</p>
+
+
+
+<div class="buttons">
+        <div class="buttons__row">
+            <a class="ek-link jb-download-button" title="Install Kotlin Toolchain" href="https://kotlin-toolchain.org/latest/" target="_blank" rel="noopener" data-test="blog-article-cta" data-cl="true">Install Kotlin Toolchain</a>
+         </div>
+</div>
+
+
+
+<p>Or try this prompt in your favorite agent:&nbsp;</p>
+
+
+
+<div style="background:linear-gradient(135deg,#6B3FD0 0%,#8A30DC 60%,#B521E9 100%);border-radius:16px;padding:20px 24px;margin:24px 0;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px;box-sizing:border-box;">
+<div style="flex:1 1 auto;min-width:0;margin:0;padding:0;background:transparent;border:0;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.6;white-space:normal;overflow-wrap:anywhere;">Create a new Kotlin Multiplatform app for Android, iOS, desktop, and web with the Kotlin Toolchain CLI (https://kotlin-toolchain.org/latest).</div>
+<button type="button" data-event-tracking="copy" onclick="var b=this;navigator.clipboard.writeText(b.previousElementSibling.innerText).then(function(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy'},2000)});" style="background:#fff;color:#000;border:0;border-radius:999px;padding:10px 24px;margin:0;width:auto;height:auto;font-size:14px;font-weight:500;line-height:1.2;text-transform:none;box-shadow:none;cursor:pointer;flex:0 0 auto;">Copy</button></div>
+
+
+
+<h2 class="wp-block-heading"><strong>Share your feedback</strong></h2>
+
+
+
+<p>Have feedback or ideas? Join the conversation in the <a href="https://slack-chats.kotlinlang.org/c/kotlin-toolchain" target="_blank" rel="noreferrer noopener">#kotlin-toolchain Slack channel</a> (get invite: <a href="https://kotl.in/slack" target="_blank" rel="noreferrer noopener">kotl.in/slack</a>) or share your suggestions and ideas in <a href="https://youtrack.jetbrains.com/issues/KTC" target="_blank" rel="noreferrer noopener">JetBrains YouTrack</a>. Your input and use cases help shape the future of the Kotlin Toolchain!</p>
+]]></content:encoded>
+					
+		
+		
+		                    <language>
+                        <code><![CDATA[zh-hans]]></code>
+                        <url>https://blog.jetbrains.com/zh-hans/kotlin/2026/11/kotlin-toolchain-0-14-agentic-development-and-ios-publishing/</url>
+                    </language>
+                	</item>
+		<item>
+		<title>The Kotlin Multiplatform Contest Is Open: Win a Trip to KotlinConf</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/11/kotlin-multiplatform-contest-2027/</link>
+		
+		<dc:creator><![CDATA[Ksenia Shneyveys]]></dc:creator>
+		<pubDate>Thu, 05 Nov 2026 22:05:21 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/11/KM-social-BlogFeatured-1280x720-1.png</featuredImage>		<category><![CDATA[education]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[contest]]></category>
+		<category><![CDATA[kmp]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=753700</guid>
+
+					<description><![CDATA[The Kotlin Multiplatform Contest is back!&#160; Students and recent graduates, turn your idea into a cross-platform project with Kotlin Multiplatform (KMP).&#160; The authors of the top three projects will each win a trip to KotlinConf 2027 in Kraków, Poland, with conference tickets, travel, and accommodation covered by the Kotlin Foundation. Authors of all other valid [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The Kotlin Multiplatform Contest is back!&nbsp;</p>
+
+
+
+<p>Students and recent graduates, turn your idea into a cross-platform project with Kotlin Multiplatform (KMP).&nbsp;</p>
+
+
+
+<p>The authors of the top three projects will each win a trip to KotlinConf 2027 in Kraków, Poland, with conference tickets, travel, and accommodation covered by the Kotlin Foundation. Authors of all other valid entries will receive Kotlin souvenirs.</p>
+
+
+
+<p>Submissions are open until December 7, 2026.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://kotlinconf.com/contest/" target="_blank" rel="noopener"><i class="download-icon"></i>Join the contest</a></p>
+
+
+
+<p>Your project can be a game, a developer utility, a productivity app, an experiment with AI, or something entirely different. It needs to be created specifically for the contest, use KMP, and run on at least two platforms. Target Android, iOS, desktop, web, backend, or beyond.</p>
+
+
+
+<p>Last year, we received 88 submissions, with 76 eligible entries from more than 30 countries. Participants built everything from AI-powered learning tools to social-impact projects and accessibility apps.</p>
+
+
+
+<p>We can&#8217;t wait to see what you build this year!</p>
+
+
+
+<h1 class="wp-block-heading">Important dates</h1>
+
+
+
+<ul class="wp-block-list">
+<li>Submission deadline: December 7, 2026, 23:59 CET</li>
+
+
+
+<li>Winners announced: December 21, 2026</li>
+
+
+
+<li>KotlinConf 2027: April 22–23, 2027, Kraków, Poland</li>
+</ul>
+
+
+
+<p>For the official rules on eligibility, submission, and prize conditions, <a href="https://kotlinconf.com/contest-rules/" target="_blank" rel="noreferrer noopener">see here</a>.</p>
+
+
+
+<h1 class="wp-block-heading">Have questions or need help?&nbsp;</h1>
+
+
+
+<p>Join the KMP Contest Slack channel to ask questions, follow contest updates, and connect with other participants and Kotlin experts.</p>
+
+
+
+<p><a href="https://slack-chats.kotlinlang.org/c/kotlin-multiplatform-contest" target="_blank" rel="noreferrer noopener">Join the KMP Contest Slack channel →</a></p>
+
+
+
+<h1 class="wp-block-heading">Start here</h1>
+
+
+
+<p>You don&#8217;t need to know KMP before entering. This year’s contest page includes resources to help you get started, including the new <a href="https://github.com/KotlinFoundation/kmp-contest-starter-kit" target="_blank" rel="noreferrer noopener">KMP Contest Starter Kit</a>.</p>
+
+
+
+<p>The starter kit is an open-source starting point for developers new to KMP. It provides an AI-assisted path from idea to app, with ready-to-use agent skills, prompts, and workflows designed to help you build and test your applications. It complements the <a href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html" target="_blank" rel="noreferrer noopener">official KMP documentation</a>.</p>
+
+
+
+<p>Other resources include:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://kotlinlang.org/docs/multiplatform/kmp-learning-resources.html" target="_blank" rel="noreferrer noopener">Kotlin Multiplatform learning resources</a>.</li>
+
+
+
+<li><a href="https://github.com/joreilly/PeopleInSpace" target="_blank" rel="noreferrer noopener">PeopleInSpace: Multiplatform sample projects</a>.</li>
+
+
+
+<li><a href="https://kotlinlang.org/docs/kotlin-with-ai.html" target="_blank" rel="noreferrer noopener">Kotlin AI examples</a>.</li>
+</ul>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://kotlinconf.com/contest/" target="_blank" rel="noopener"><i class="download-icon"></i>Join the contest</a></p>
+
+
+
+<h1 class="wp-block-heading">What previous participants built</h1>
+
+
+
+<p>Over the past four years, participants have built projects spanning education, health and well-being, sustainability, developer tools, games, and plenty of unexpected ideas.</p>
+
+
+
+<p>Here are just a few of the things they&#8217;ve built:</p>
+
+
+
+<ul class="wp-block-list">
+<li>🧑‍🌾 AI assistant for farmers.</li>
+
+
+
+<li>🛗 Office elevator controller.</li>
+
+
+
+<li>🛟 Flood rescue device.</li>
+
+
+
+<li>🎹 Synthesizer that lets you hear mathematical equations.</li>
+
+
+
+<li>🤖 Robot control app.</li>
+
+
+
+<li>🐣 Egg encyclopedia.</li>
+
+
+
+<li>🏓 Game that turns your phone into a ping-pong racket.</li>
+</ul>
+
+
+
+<p>Your project doesn&#8217;t need to fit a particular category. Build something you find useful, interesting, or simply fun, and use KMP to bring it to life across platforms.</p>
+
+
+
+<h1 class="wp-block-heading">What previous winners say</h1>
+
+
+
+<p>“You don&#8217;t need to be a Kotlin expert to enter; I definitely wasn&#8217;t. Kotlin Multiplatform let me share almost everything across Android and iOS, and still go native where it mattered. That&#8217;s what turned an idea into something real.” – Javier Quilumba</p>
+
+
+
+<p>“The contest was a really good excuse to push myself and see how far I could take Kotlin Multiplatform with an actual product, rather than just experimenting with it.” – Tochukwu Adrian Ikeaba</p>
+
+
+
+<p>“Kotlin Multiplatform showed me that you can just start building things. It became a starting point for many of my later projects, helped me explore new technologies, and the trip to KotlinConf was truly inspiring.” – Valerii Ovchinnikov</p>
+
+
+
+<p>“Winning the contest and traveling to KotlinConf was an incredible experience. It gave me the opportunity to connect with the community and learn directly from industry experts.” – Mikołaj Lemański</p>
+
+
+
+<p>“To me, it was important that I managed to do something I was proud of and learn something along the way.” – Andreea-Ștefana Vrabie</p>
+
+
+
+<h1 class="wp-block-heading">Ready to build?</h1>
+
+
+
+<p>You have until December 7 to take an idea, turn it into a KMP project, and <a href="https://kotlinconf.com/contest/" target="_blank" rel="noopener">submit it</a>. </p>
+
+
+
+<p>Build across platforms. Experiment with something new. And perhaps we&#8217;ll see you at KotlinConf 2027 in Kraków!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kodee’s Kotlin Roundup: Shipaton 2026 Winners, Kotlin 2.5.0-Beta2, and KotlinConf 2027</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/kodee-s-kotlin-roundup-shipaton-2026-winners-kotlin-2-5-0-beta2-and-kotlinconf-2027/</link>
+		
+		<dc:creator><![CDATA[Kodee]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2026 12:02:33 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/KT-social-BlogFeatured-1280x720-1-3.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[kotlin-roundup]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=750101</guid>
+
+					<description><![CDATA[Hi everyone! It’s been a busy few weeks since my last roundup: the Shipaton 2026 winners are in, and three Kotlin Multiplatform apps took the Ship Kotlin Everywhere Award. In other news, Kotlin 2.5.0 is taking shape with its second Beta, KotlinConf 2027 is officially heading to Kraków with the call for speakers open, and [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Hi everyone! It’s been a busy few weeks since my last roundup: the Shipaton 2026 winners are in, and three Kotlin Multiplatform apps took the Ship Kotlin Everywhere Award. In other news, Kotlin 2.5.0 is taking shape with its second Beta, <a href="https://kotlinconf.com/" target="_blank" rel="noopener">KotlinConf 2027 is officially heading to Kraków</a> with the call for speakers open, and the new State of Kotlin in 2026 report shows where the language stands after 15 years. Here’s what stood out to me most:</p>
+
+
+            <div class="newsletter">
+                            <h2>Kodee-approved spotlight</h2>
+                                                            <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/Kotlin-Release-X-LinkedIn-FB-Bluesky-1200x675-1-3.webp" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>Ship Kotlin Everywhere winners at RevenueCat Shipaton 2026</h3>
+                                                        <p>Out of 3,985 Shipaton submissions, three standout projects took home JetBrains’ Ship Kotlin Everywhere awards. What caught my eye is that the same Kotlin Multiplatform and Compose Multiplatform toolkit yielded three completely different results.</p>
+<p>🥇 BoatBrawl by Rehaan Cubes and Ashwin K M<br />
+🥈 AfterFade by Kanon Fujita<br />
+🥉 Lumeo by Piotr Prus</p>
+<p>A huge congratulations to the winners, and to everyone who shipped an app. I’m off to start a new project of my own!</p>
+                                                            <a href="https://www.revenuecat.com/blog/company/shipaton-2026-winners/#ship-kotlin-everywhere" class="btn" target="_blank" rel="noopener">Meet the Shipaton 2026 winners</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/KM-social-BlogFeatured-1280x720-1-1.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>Start your next KMP app with Kotlin Toolchain 0.13</h3>
+                                                        <p>Kotlin Toolchain 0.13 brings `kotlin new` for interactive project creation, smoother iOS setup, SwiftPM dependency support, and faster Kotlin/Native rebuilds. We recommend it for most new KMP projects. Give it a try!</p>
+                                                            <a href="https://blog.jetbrains.com/kotlin/2026/10/start-your-next-kmp-app-with-kotlin-toolchain-0-13/" class="btn" target="_blank">See what’s new in Toolchain 0.13</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/09/X-800x418-1.png" alt="State of Kotlin in 2026">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>The State of Kotlin in 2026 report</h3>
+                                                        <p>Kotlin turned 15 this year, and the new report offers a fascinating look at how the ecosystem has grown. More than half of Kotlin developers report working on backend projects. Among surveyed Kotlin developers, 93% use at least one AI coding tool, and 81% say AI-generated Kotlin code is fully correct or requires only minor fixes. What surprised you most?</p>
+                                                            <a href="https://kotlinlang.org/assets/state-of-kotlin-2026.pdf" class="btn" target="_blank" rel="noopener">Read the State of Kotlin 2026 report </a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/meta-kotlinconf-img.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>KotlinConf 2027 is coming to Kraków</h3>
+                                                        <p>Save the dates! KotlinConf 2027 is heading to Kraków, Poland, April 21–23. April 21 is workshop day, followed by two conference days. Have an experience, tool, or Kotlin lesson worth sharing? The call for speakers is open, with submissions due November 27. I’d love to see you on stage or somewhere in the audience!</p>
+                                                            <a href="https://kotlinconf.com/" class="btn" target="_blank" rel="noopener">Explore KotlinConf 2027</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/JB-social-BlogFeatured-1280x720-1-11.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>The Kotlin Multiplatform Contest is open: Win a trip to KotlinConf </h3>
+                                                        <p>Students and recent graduates, turn your idea into a cross-platform project with Kotlin Multiplatform!<br />
+The authors of the top three projects will each win a trip to KotlinConf 2027 in Kraków, Poland. Authors of all other valid entries will receive Kotlin souvenirs. Submissions are open until December 7, 2026.</p>
+                                                            <a href="https://kotlinconf.com/contest/" class="btn" target="_blank" rel="noopener">Check out</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/KT-social-BlogFeatured-1280x720-1-2.webp" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>Kotlin 2.5.0-Beta2 and Kotlin 2.4.21</h3>
+                                                        <p>Kotlin 2.5.0-Beta2 landed on October 21. It brings stable name-based destructuring in only-syntax mode, an unused return value checker, Java 28 support, and Swift export in Beta with a new DSL. Kotlin/Native incremental compilation is also now enabled by default on Apple targets. Prefer a maintenance release? <a href="https://github.com/JetBrains/kotlin/releases/tag/v2.4.21" target="_blank" rel="noopener noreferrer">Kotlin 2.4.21</a> arrived in October with bug fixes.</p>
+                                                            <a href="https://kotlinlang.org/docs/whatsnew-eap.html" class="btn" target="_blank" rel="noopener">Try Kotlin 2.5.0-Beta2</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/KT-social-BlogFeatured-1280x720-1-1.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>The Kotlin compiler will require JDK 17 or newer</h3>
+                                                        <p>The minimum JDK version required to run the Kotlin compiler is changing. In Kotlin 2.5.0-Beta1, running the compiler on a JDK older than 17 triggers a warning. In Kotlin 2.5.0-Beta2 and 2.5.0, it triggers an error, with a flag to temporarily continue using an older JDK. Starting with Kotlin 2.5.20-Beta1, JDK 17 or newer is required. If your machines or CI still use an older JDK, now is a good time to upgrade.</p>
+                                                            <a href="https://youtrack.jetbrains.com/issue/KT-88173" class="btn" target="_blank" rel="noopener">Share your feedback on YouTrack</a>
+                                                    </div>
+                    </article>
+                                    <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/klibsionew.jpg" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>KMP library spotlight</h3>
+                                                        <p>Looking for the right libraries for your next multiplatform app? On Klibs.io, you can compare Voyager, Decompose, and Circuit for Compose Multiplatform navigation. Or try Ktorfit to describe HTTP APIs with a familiar Retrofit-style interface while using Ktor under the hood. You can also let your AI agent do the checking – the Klibs.io MCP server gives it direct access to the multiplatform library catalog.</p>
+                                                            <a href="https://klibs.io/" class="btn" target="_blank" rel="noopener">Discover libraries on Klibs.io</a>
+                                                    </div>
+                    </article>
+                                    </div>
+    
+
+
+<h1 class="wp-block-heading"><strong>Where you can learn more</strong></h1>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://jb.gg/e5bb41" target="_blank" rel="noreferrer noopener">Kotlin Developer Survey</a></li>
+
+
+
+<li><a href="https://blog.jetbrains.com/kotlin/2026/09/the-companions-to-come/" target="_blank" rel="noreferrer noopener">The Companions to Come</a></li>
+
+
+
+<li><a href="https://dev.to/cobrainer/the-jvm-speaks-ai-cobrainers-journey-with-kotlin-koog-and-exposed-386h" target="_blank" rel="noreferrer noopener">The JVM Speaks AI: Cobrainer’s Journey with Kotlin, Koog, and Exposed</a></li>
+
+
+
+<li><a href="https://blog.jetbrains.com/kotlin/2026/10/kotlinconf-recap-lessons-from-verifone-s-architect-on-kotlin-in-mission-critical-payments/" target="_blank" rel="noreferrer noopener">KotlinConf Recap: Lessons from Verifone’s Architect on Kotlin in Mission-Critical Payments</a></li>
+
+
+
+<li><a href="https://blog.jetbrains.com/kotlin/2026/10/what-makes-a-great-kotlinconf-proposal/" target="_blank" rel="noreferrer noopener">What Makes a Great KotlinConf Proposal?</a></li>
+
+
+
+<li><a href="https://blog.jetbrains.com/amper/2026/10/amper-is-now-the-kotlin-toolchain-moving-to-the-kotlin-blog/" target="_blank" rel="noreferrer noopener">Amper Is Now the Kotlin Toolchain: Moving to the Kotlin Blog</a><br></li>
+</ul>
+
+
+
+<h1 class="wp-block-heading"><strong>YouTube highlights</strong></h1>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://www.youtube.com/watch?v=gHxvCWA5mtY" target="_blank" rel="noreferrer noopener">Swift Export: Where We Stand | Pamela Hill-Galloway</a></li>
+
+
+
+<li><a href="https://www.youtube.com/watch?v=QqTdGg2wYxY" target="_blank" rel="noreferrer noopener">Building AI-Powered Web Apps in Kotlin/Wasm | Zalim Bashorov</a></li>
+
+
+
+<li><a href="https://www.youtube.com/watch?v=He8J34KHEY4" target="_blank" rel="noreferrer noopener">Kotlin’s Name-Based Destructuring</a></li>
+
+
+
+<li><a href="https://www.youtube.com/watch?v=UhRfN7fx5rs" target="_blank" rel="noreferrer noopener">What’s New in Kotlin 2.4.20</a></li>
+</ul>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google Summer of Code 2026 With the Kotlin Foundation: Recap</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/</link>
+					<comments>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/#respond</comments>
+		
+		<dc:creator><![CDATA[Ksenia Shneyveys]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 15:03:05 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/Google_Summer_of_Code_2026_Recap_2560x1440.png</featuredImage>		<category><![CDATA[education]]></category>
+		<category><![CDATA[news]]></category>
+		<category><![CDATA[gsoc]]></category>
+		<category><![CDATA[open-source]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=746576</guid>
+
+					<description><![CDATA[Google Summer of Code 2026 has wrapped up! This was the Kotlin Foundation’s fourth year participating in GSoC, bringing new contributors into the Kotlin open-source ecosystem through hands-on projects and mentorship. This year, two projects successfully reached completion, tackling two areas of the ecosystem: improving recursion support in the Kotlin/Wasm backend and building a global [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Google Summer of Code 2026 has wrapped up! This was the <a href="https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation" data-type="link" data-id="https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation" target="_blank" rel="noreferrer noopener">Kotlin Foundation</a>’s fourth year participating in GSoC, bringing new contributors into the Kotlin open-source ecosystem through hands-on projects and mentorship.</p>
+
+
+
+<p>This year, two projects successfully reached completion, tackling two areas of the ecosystem: <a href="https://gist.github.com/ternbusty/28bf25ac426e9954b550afc02407453f" target="_blank" rel="noreferrer noopener">improving recursion support in the Kotlin/Wasm backend</a> and building a global <a href="https://kotlin-education-landscape.labs.jb.gg/" target="_blank" rel="noreferrer noopener">picture of where Kotlin is taught</a>.</p>
+
+
+
+<p>Congratulations to <strong>Ayako Hayasaka</strong> and <strong>Mark Seif Khalil</strong>, and a huge thank-you to our mentors for supporting them throughout the program!</p>
+
+
+
+<p>Here&#8217;s more on what they accomplished.</p>
+
+
+
+<h1 class="wp-block-heading">Tail call support in the Kotlin/Wasm backend</h1>
+
+
+
+<p><strong>Contributor:</strong> Ayako Hayasaka<br><strong>Mentor:</strong> Charlie Zhang (JetBrains)</p>
+
+
+
+<p>Ayako’s project added support for WebAssembly tail-call instructions to the Kotlin/Wasm backend. The compiler can now detect calls in tail position and emit return_call or return_call_ref, helping recursive Kotlin/Wasm programs avoid increasing the call stack.</p>
+
+
+
+<p>In Ayako’s benchmarks, several recursive patterns became 1.7–4.3x faster at a recursion depth of 10,000. At a depth of one million, the same programs crashed without tail calls and completed successfully with them.</p>
+
+
+
+<p>Testing the change on real-world projects also revealed an unexpected performance regression in V8. Ayako traced it to a missing optimization for return_call, submitted a fix, and had the <a href="https://ternbusty.github.io/posts/v8-return-call-wki-bug.html" target="_blank" rel="noreferrer noopener">patch merged into V8</a>.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">    <div class="blockquote">
+                    <blockquote><p>“What surprised me the most was that Ayako, after implementing the new WebAssembly instructions and using them in the Kotlin backend, actually found a bug in the Google V8 engine. Not only did she report the bug, she fixed it as well.”</p></blockquote>
+            <div class="blockquote__author">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Charlie Zhang</strong>
+                                                        </div>
+            </div>
+            </div>
+</blockquote>
+
+
+
+<p>Ayako has continued working on follow-up optimizations and other approaches to supporting recursive code beyond the original GSoC project.</p>
+
+
+
+<p>For Ayako, GSoC 2026 was also a chance to work much more closely on language and runtime internals than in her everyday work.</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“In my day job, I rarely get to touch the internals of a language, so I simply had a lot of fun with this opportunity. While investigating the slowdown, I had to read not only the compiler but also V8, and I realized how much there is to learn beyond the code I usually work on.”</p></blockquote>
+            <div class="blockquote__author">
+                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="blockquote__author-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/2026-06-28-17.38.09-EDIT.jpg" alt="Ayako Hayasaka GSoC 2026">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Ayako Hayasaka</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>Read Ayako’s full story → <a href="https://gist.github.com/ternbusty/28bf25ac426e9954b550afc02407453f" target="_blank" rel="noreferrer noopener">Final project report</a></p>
+
+
+
+<h1 class="wp-block-heading">Mapping the global Kotlin education landscape</h1>
+
+
+
+<p><strong>Contributor:</strong> Mark Seif Khalil<br><strong>Mentors:</strong> Ksenia Shneyveys (JetBrains) and Elizaveta Artser (JetBrains)</p>
+
+
+
+<p>Mark’s project set out to create a structured overview of where and in what context Kotlin is being taught, considering that the information is spread across websites, course curricula, repositories, learning platforms, and other sources. The project brought that fragmented information together and created a structured and automated way to gather this data.</p>
+
+
+
+<p>Over the course of GSoC 2026, Mark explored different sources and approaches to collecting this information, built a database, and developed a process for parsing and structuring data from multiple sources.&nbsp;</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“The biggest thing I learned is when to stop pushing on something that is not working and change my approach. This is a lesson I will keep with me in every project.”</p></blockquote>
+            <div class="blockquote__author">
+                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="blockquote__author-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/Mark-Seif-Photo.jpeg" alt="Mark Seif Khalil GSoC 2026">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Mark Seif Khalil</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>The resulting project gives us a reusable foundation for monitoring Kotlin’s presence in education and identifying trends and gaps.</p>
+
+
+    <div class="blockquote">
+                    <blockquote><p>“What impressed us both the most about Mark was his ability to take an initially exploratory idea and bring his own vision for the research while continuously incorporating our feedback. Mark turned this scattered information into a resource we can actually use to understand Kotlin education worldwide.”</p></blockquote>
+            <div class="blockquote__author">
+                                <div class="blockquote__author-info">
+                                            <strong class="blockquote__author-title">Ksenia Shneyveys, Elizaveta Artser</strong>
+                                                        </div>
+            </div>
+            </div>
+
+
+
+<p>Read Mark’s full story → <a href="https://github.com/markoeltiger/kotlin-education-landscape/tree/main" target="_blank" rel="noreferrer noopener">Kotlin Education Landscape<br></a><a href="https://youtu.be/20_CsSYvnwY" target="_blank" rel="noreferrer noopener">Watch Mark’s GSoC reflection</a></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Interested in contributing to Kotlin through a future Google Summer of Code – or mentoring a project yourself?</p>
+
+
+
+<p>Join the <a href="https://surveys.jetbrains.com/s3/kotlin-slack-sign-up" target="_blank" rel="noreferrer noopener">#gsoc channel in the Kotlin Slack</a> to meet the community, ask questions, and follow future GSoC announcements.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://blog.jetbrains.com/kotlin/2026/10/google-summer-of-code-2026-with-kotlin/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Makes a Great KotlinConf Proposal?</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/what-makes-a-great-kotlinconf-proposal/</link>
+		
+		<dc:creator><![CDATA[Jelena Ilic]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2026 09:11:39 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/Blog-Post.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[kotlinconf]]></category>
+		<category><![CDATA[kotlinconf-2027]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=745924</guid>
+
+					<description><![CDATA[The KotlinConf 2027 Call for Papers is now open! We invite developers from across the Kotlin community to bring their ideas, experiences, and expertise to the stage in Kraków. Do you have a Kotlin lesson or discovery that could help other developers? Perhaps you solved a difficult technical problem, introduced Kotlin into an existing codebase, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The KotlinConf 2027 Call for Papers is now open! We invite developers from across the Kotlin community to bring their ideas, experiences, and expertise to the stage in Kraków.</p>
+
+
+
+<p>Do you have a Kotlin lesson or discovery that could help other developers? Perhaps you solved a difficult technical problem, introduced Kotlin into an existing codebase, built something unexpected, or learned valuable lessons from an approach that did not go according to plan.</p>
+
+
+
+<p>That experience could become a KotlinConf talk.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" title="Submit your KotlinConf2027 proposal" href="https://sessionize.com/kotlinconf-2027" target="_blank" rel="noopener">Submit your proposal</a></p>
+
+
+
+<p>However, turning an idea into a convincing conference proposal can be challenging, especially if you’ve never submitted one before. How do you know whether your experience is worth sharing? What do reviewers notice first? How detailed should your abstract be? And how can you make a familiar topic stand out?</p>
+
+
+
+<p>To help you prepare your submission, we asked Kotlin developers, developer advocates, experienced speakers, and KotlinConf program committee members what makes a strong proposal. Alongside practical advice for shaping your title, abstract, and takeaways, we have added a new section answering an especially important question: What do reviewers notice first when they open a proposal?</p>
+
+
+
+<h2 class="wp-block-heading">First-time speaker? Submit your idea anyway!</h2>
+
+
+
+<p>It’s easy to assume that a KotlinConf talk must begin with a groundbreaking discovery, a major production system, or years of speaking experience. In reality, a valuable talk can begin with a simple idea or a lesson learned while solving an everyday development problem.</p>
+
+
+
+<p>You don’t need to know everything about Kotlin – you need something useful to share and a clear idea of who it could help.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Submit your idea anyway! There have been some wildly successful talks at KotlinConf that started out as just a simple idea.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>If you’re unsure whether your topic would interest anyone, discuss it with the people around you. Explain the idea to colleagues, friends, members of a user group, or people in the Kotlin community. Their questions and reactions can help you understand which parts are most valuable.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">If you can find one interested person, there are probably more! If you can find at least two people around you who find the topic interesting and can listen for more than five minutes, it is already a decent candidate.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Previous conference experience is not required. A clear, authentic proposal based on something you understand and care about can be more compelling than a polished proposal with little substance behind it.</p>
+
+
+
+<h2 class="wp-block-heading">Start with the story you want to tell</h2>
+
+
+
+<p>Before writing the title or opening the submission form, identify the central story behind your talk.</p>
+
+
+
+<p>“A talk about coroutines” or “a session about Kotlin Multiplatform” describes a subject, but it doesn’t explain what makes the session valuable.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>What problem, question, or opportunity did you encounter?</li>
+
+
+
+<li>Why was it important or difficult?</li>
+
+
+
+<li>What did you try?</li>
+
+
+
+<li>What surprised you?</li>
+
+
+
+<li>What succeeded and what did not?</li>
+
+
+
+<li>What did you learn that other developers could apply?</li>
+</ul>
+
+
+
+<p>Your story doesn’t need to come from a large company or a system used by millions of people. A focused lesson from a small project can be just as useful if it offers an original insight or explains a difficult subject clearly.</p>
+
+
+
+<p>Try summarizing the idea in one sentence, for example:</p>
+
+
+
+<p><em>This talk will show [audience] how we [solved or explored something], what we learned, and how they can apply those lessons.</em></p>
+
+
+
+<p>If you can’t complete that sentence clearly, the idea may need a little more development before you start writing the proposal.</p>
+
+
+
+<h2 class="wp-block-heading">What do reviewers notice first?</h2>
+
+
+
+<p>The title may be the first line reviewers read, but the overall level of care quickly becomes visible.</p>
+
+
+
+<p>Reviewers consider not only whether the topic is interesting, but also whether the speaker can explain it clearly. A thoughtful title, focused description, concrete takeaways, and careful formatting show that you have spent time developing your idea.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">I can sum it up by saying that the care you take in writing the proposal is probably more obvious than people think. If I can see that you took the time to come up with a catchy or descriptive title that works well with the content, I am more comfortable giving you a thumbs-up to speak at KotlinConf. If your description is so short or so long, or so clearly AI-generated, that you cannot express your idea clearly and neatly, I will probably not vote positively for your talk.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>This doesn’t mean you need to use complicated language or create a perfect marketing pitch. It means giving reviewers enough information to understand your idea and showing that the proposal represents your own experience and voice.</p>
+
+
+
+<p>Marcin Moskała’s <em>Taming Asynchronous Beasts: Debugging and Performance Tuning in a Coroutine World</em> provides a good example of a precise promise: “You’ll learn how to effectively use built-in tools, recognize problematic patterns, and implement proven optimization strategies.”</p>
+
+
+
+<h2 class="wp-block-heading">Write a clear and informative title</h2>
+
+
+
+<p>A strong title should give reviewers, and eventually attendees, an accurate idea of what the talk will cover.</p>
+
+
+
+<p>Creativity can make a title memorable, but clarity should come first. Avoid titles that rely entirely on a joke, reference, or metaphor without explaining the subject.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">A carefully-selected title can make all the difference! Audience members often lack the time or attention span to read more than the title when deciding whether to attend a talk. Prefer clarity over a catchy or fun title that doesn’t give a good idea of what the talk is about in a nutshell.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Compare the following title examples:</p>
+
+
+
+<p>Too broad:<br><em>Our Multiplatform Journey</em></p>
+
+
+
+<p>More informative:<br><em>What We Learned Migrating Our Mobile App to Kotlin Multiplatform</em></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Too vague:<br><em>Coroutines Gone Wild</em></p>
+
+
+
+<p>More informative:<br><em>Debugging Coroutine Performance Problems in Production</em></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Too general:<br><em>Building Better APIs</em></p>
+
+
+
+<p>More informative:<br><em>Designing Type-Safe Kotlin APIs That Are Difficult to Misuse</em></p>
+
+
+
+<p>A good title usually communicates at least two of the following:</p>
+
+
+
+<ul class="wp-block-list">
+<li>The main topic</li>
+
+
+
+<li>The problem or question</li>
+
+
+
+<li>The context in which it was explored</li>
+
+
+
+<li>The practical benefit for attendees</li>
+
+
+
+<li>The expected experience level</li>
+</ul>
+
+
+
+<p>You can still use humor or wordplay, but make sure the title does not hide what the session is actually about.</p>
+
+
+
+<h2 class="wp-block-heading">Build your abstract around a clear journey</h2>
+
+
+
+<p>Your abstract doesn’t need to contain your entire presentation. However, it should provide enough detail for reviewers to understand the problem, the direction of the talk, and its value.</p>
+
+
+
+<p>Two or three focused paragraphs will usually communicate more than either a single vague sentence or a very long description covering every detail.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/sebastian.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Sebastian Sellmair. Software Developer and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/Sellmair">X</a>, <a href="https://bsky.app/profile/sellmair.dev" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.youtube.com/@s.sellmair" target="_blank" rel="noopener">YouTube </a></p>
+<p><i><span style="font-weight: 400;">Talking at KotlinConf is a great experience and a huge achievement for any Kotlin developer. While choosing a great title, having highly polished animations, and curating high-quality memes might enhance your talk, the most important thing is having a story worth telling. Do you have something novel and technically interesting to present? Can you break down a topic in a way that is engaging and truly fun? Can you inspire fellow developers?</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn </a></p>
+<p><i><span style="font-weight: 400;">While we don’t need a full script for your talk as the abstract, we’re also unlikely to accept a talk where the abstract is just a single sentence. Two or three paragraphs are usually enough to provide meaningful detail.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>A simple structure can help:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The context</strong></h3>
+
+
+
+<p>Introduce the situation and the audience likely to recognize it.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The challenge</strong></h3>
+
+
+
+<p>Explain the problem, limitation, or question that motivated the work.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/jodie.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Jodie Burchell. Developer Advocate and Data Scientist</h4>
+                                                <p><a href="https://www.linkedin.com/in/jodieburchell" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://fosstodon.org/@t_redactyl" target="_blank" rel="noopener">Mastodon</a>, <a href="https://bsky.app/profile/t-redactyl.bsky.social" target="_blank" rel="noopener">BlueSky</a></p>
+<p><i><span style="font-weight: 400;">Hook your audience by telling them the problem you’re going to be solving. People love mystery books for a reason, and that’s because they build up a bit of suspense before they jump into the solution. A great proposal will do the same thing.</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h3 class="wp-block-heading"><strong>The approach</strong></h3>
+
+
+
+<p>Describe what you explored, implemented, compared, or discovered.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>The outcome</strong></h3>
+
+
+
+<p>Clarify what attendees will learn and how they can use it.</p>
+
+
+
+<p>A strong takeaway can be as concrete as the one from Tadeas Kriz’s <em>Dependencies and Kotlin/Native</em>: “Learn how native dependencies interact, how they are loaded, and the unexpected complexities of the native world.”</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains </h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Avoid vague promises. Instead, use action verbs and specific outcomes to describe the exact capabilities and transformations the audience will gain. Will they leave your talk feeling that their time was well spent? If so, what practical knowledge, immediately applicable skills, or high-value tools will they take with them?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>For example:</p>
+
+
+
+<p><em>Maintaining separate Android and iOS implementations allowed our teams to move independently, but it also resulted in duplicated business logic and inconsistent behavior between the applications.</em></p>
+
+
+
+<p><em>In this session, we’ll examine how we introduced Kotlin Multiplatform gradually, beginning with one shared feature rather than attempting a complete migration. We’ll discuss how we selected the first component, structured the shared code, tested it across platforms, and worked with the existing native applications.</em></p>
+
+
+
+<p><em>You’ll leave with a practical framework for evaluating where to introduce shared code, which challenges to expect, and how to plan an incremental Kotlin Multiplatform adoption without rebuilding your entire application.</em></p>
+
+
+
+<p>The example establishes the problem, explains what the session will cover, and gives the audience a reason to attend. It doesn’t reveal every detail, but it makes a concrete promise.</p>
+
+
+
+<h2 class="wp-block-heading">Think like an attendee</h2>
+
+
+
+<p>A strong proposal doesn’t focus only on what the speaker wants to present. It also explains what the audience will gain.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Who is this session for?</li>
+
+
+
+<li>What knowledge should attendees already have?</li>
+
+
+
+<li>What problem will the talk help them solve?</li>
+
+
+
+<li>What will they understand or be able to do afterward?</li>
+
+
+
+<li>Why should they choose this session over another talk happening at the same time?</li>
+</ul>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/svetlana.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Svetlana Isakova. Team Lead in Kotlin Developer Advocacy, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/sveta_isakova">X</a></p>
+<p><i><span style="font-weight: 400;">When submitting a talk, think like an attendee. Would you want to sit through this? What’s in it for the audience? That’s why we ask about key takeaways. What do you want people to learn, try, do, or feel inspired by?</span></i></p>
+<p>&nbsp;</p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Avoid broad promises such as:</p>
+
+
+
+<ul class="wp-block-list">
+<li>“You will learn best practices.”</li>
+
+
+
+<li>“We will explore Kotlin Multiplatform.”</li>
+
+
+
+<li>“This talk will cover coroutines.”</li>
+</ul>
+
+
+
+<p>Instead, describe specific outcomes:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Attendees will learn how to identify and debug three common coroutine performance problems.</li>
+
+
+
+<li>Attendees will understand how we structured shared code across Android and iOS.</li>
+
+
+
+<li>Attendees will be able to evaluate whether the approach fits their own project.</li>
+
+
+
+<li>Attendees will learn which parts of our migration worked, which did not, and what we would change today.</li>
+</ul>
+
+
+
+<p>Specific takeaways make the proposal easier to evaluate. If the talk is selected, they also help attendees decide whether it is relevant to them.</p>
+
+
+
+<h2 class="wp-block-heading">Make a familiar topic feel fresh</h2>
+
+
+
+<p>Your subject doesn’t have to be completely new. Many valuable conference talks revisit established technologies from perspectives that have not been explored in the same way before.</p>
+
+
+
+<p>If you are proposing a popular topic, identify what makes your version distinctive. This could be:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A real production case</li>
+
+
+
+<li>An unusual scale or environment</li>
+
+
+
+<li>A surprising result</li>
+
+
+
+<li>A failed approach and what it taught you</li>
+
+
+
+<li>A comparison between several possible solutions</li>
+
+
+
+<li>A gradual migration rather than a greenfield implementation</li>
+
+
+
+<li>An unconventional use of Kotlin</li>
+
+
+
+<li>A personal experience that challenges a common assumption</li>
+
+
+
+<li>A particularly clear way of explaining a difficult concept</li>
+</ul>
+
+
+
+<p>For example, “Introduction to Kotlin Multiplatform” is broad and familiar. “What Broke When We Introduced Kotlin Multiplatform Into a Seven-Year-Old Mobile App” offers a specific context and creates curiosity.</p>
+
+
+
+<p>Be honest about trade-offs. A talk doesn’t need to present a flawless success story. Explaining what failed, what changed, and what you would do differently can be especially useful to other developers.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains </h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Bringing a real, practical narrative to a familiar topic can strengthen a proposal. Be honest about what broke, what made your team unhappy, or what you would do differently if you could turn back the clock. A familiar issue can feel fresh when you look at it from the perspective of someone who will encounter the same problem for the first time tomorrow.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Rather than providing another general overview, build the talk around one specific pain point or discovery and introduce broader themes only where they support that story. A takeaway that attendees can immediately apply to their work can also help distinguish the proposal from a basic tutorial.</p>
+
+
+
+<h2 class="wp-block-heading">Keep the proposal relevant to KotlinConf</h2>
+
+
+
+<p>KotlinConf welcomes talks about backend development, Android, multiplatform development, web, desktop, AI, language design, tooling, libraries, developer experience, and other parts of the Kotlin ecosystem.</p>
+
+
+
+<p>Whatever your area, the role Kotlin plays in the story should be clear.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Keep in mind that your talk should be related to Kotlin! For example, not every Android talk is necessarily a good fit for the KotlinConf audience. Or talks about Jetpack Compose often cover things that work the exact same way with Compose Multiplatform, and the latter is much more likely to be accepted at KotlinConf!</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>An Android topic, for example, is not automatically a KotlinConf topic. The proposal becomes more relevant when it explains how Kotlin influenced the solution, explores a Kotlin-specific technical decision, or provides lessons that Kotlin developers can apply.</p>
+
+
+
+<p>Ask yourself:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Why is this a Kotlin story?</li>
+
+
+
+<li>Which parts of the experience are especially relevant to Kotlin developers?</li>
+
+
+
+<li>Would the proposal still be essentially the same if Kotlin were removed from it?</li>
+</ul>
+
+
+
+<p>If the answer to the final question is yes, strengthen the connection to Kotlin before submitting.</p>
+
+
+
+<p>Anshika Koul’s <em>Kotlin Multiplatform’s Cross-Platform Brilliance at Norway’s 377-Year-Old National Postal Service</em> offers a clear example of a Kotlin-centered takeaway: “We’ll learn how KMP provides a unified framework for code sharing and execution across various platforms to solve the challenge of different codebases targeting different runtimes.”</p>
+
+
+
+<h2 class="wp-block-heading">Sound confident, but stay true to yourself</h2>
+
+
+
+<p>Your proposal should show that you understand what you want to share and why it matters.</p>
+
+
+
+<p>This doesn’t mean exaggerating your expertise or pretending that you have no doubts. It means presenting the idea as a clear statement rather than repeatedly questioning its value.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Keep statements as statements and questions as questions. It is normal to doubt yourself; everybody does, but a common mistake is to let it show in the text, for example, by changing statements into questions. Read your submission, or even better, ask someone else to read it, and ask yourself: Does this person sound convinced about what they want to tell?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>For example:</p>
+
+
+
+<p>Uncertain:<br><em>Could Kotlin Multiplatform possibly help teams reduce duplicated business logic? In this talk, we might find out.</em></p>
+
+
+
+<p>More confident:<br><em>In this talk, I’ll show how our team used Kotlin Multiplatform to reduce duplicated business logic, including where sharing code helped and where it did not.</em></p>
+
+
+
+<p>Confidence should not erase your personality. The proposal should still sound like you.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marcin.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Marcin Mycek. Product Manager, Kotlin Build Tools</h4>
+                                                <p><a href="https://nl.linkedin.com/in/mycek" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Stay true to yourself! It is important to make sure that your submission can be understood by others. A great practice is to give it to a few people you trust and ask what they understood from it and how it made them feel. However, keep your soul in it. A lot of great talks are quirky, do not follow every best practice, and people are there for it.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Advice and templates can help you organize your thoughts, but they shouldn’t make every proposal sound identical. Your perspective, language, humor, and enthusiasm are part of what makes the submission memorable.</p>
+
+
+
+<h2 class="wp-block-heading">Show reviewers how you communicate</h2>
+
+
+
+<p>Examples of previous talks help reviewers understand your presentation style and energy. If you have recordings from conferences, meetups, webinars, or livestreams, include the most relevant ones.</p>
+
+
+
+<p>If you’re a first-time speaker and don’t have a formal recording, you can record yourself explaining part of the proposed talk. A simple laptop recording is enough. It doesn’t need professional lighting, editing, or production.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/svetlana.jpeg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Svetlana Isakova. Team Lead in Kotlin Developer Advocacy, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/sveta_isakova">X</a></p>
+<p><i><span style="font-weight: 400;">Examples of your talks help us make better choices. If you’re a first-time speaker and don’t have recordings, no worries! You can simply record yourself (even just part of your proposed talk) on your laptop and share the link. We would really appreciate it.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Depending on the topic, you can also include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>A technical article</li>
+
+
+
+<li>An open-source project</li>
+
+
+
+<li>Documentation you have written</li>
+
+
+
+<li>A short technical demonstration</li>
+
+
+
+<li>A podcast or meetup appearance</li>
+
+
+
+<li>Other work connected to the proposed session</li>
+</ul>
+
+
+
+<p>These materials support your proposal, but they don’t replace a clear title, abstract, and set of takeaways. Reviewers should still be able to understand the session from the submission itself.</p>
+
+
+
+<h2 class="wp-block-heading">Choose the format that fits the idea</h2>
+
+
+
+<p>Not every subject needs a full-length session.</p>
+
+
+
+<p>A focused lesson, experiment, side project, or surprising discovery may work better as a lightning talk. A subject that involves significant technical context, several connected lessons, or a detailed demonstration may require a regular session.</p>
+
+
+
+<p>Choose the format according to the amount of meaningful material you have. If you need to repeat yourself or add unnecessary content to fill a regular session, consider proposing a lightning talk instead.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Don’t forget that we also accept lightning talks! If you feel like your content would have to be padded to fill a regular session, it might be more enjoyable as a lightning talk.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>You can also submit more than one proposal if you have several distinct ideas. Each submission should have its own story, audience, and takeaways rather than being a minor variation of another proposal.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/pamela.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Pamela Hill-Galloway. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/pamelaahill">X</a>, <a href="https://bsky.app/profile/pamelaahill.bsky.social" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/pamelaahill" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Submit more than one talk! It gives you more chances to join in on the KotlinConf fun.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h2 class="wp-block-heading">Review the proposal before submitting</h2>
+
+
+
+<p>Once you have completed your draft, step away from it and return later from the perspective of someone encountering the idea for the first time.</p>
+
+
+
+<p>Check whether your proposal answers the following questions:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Can someone understand the subject from the title?</li>
+
+
+
+<li>Is the connection to Kotlin clear?</li>
+
+
+
+<li>Does the abstract identify a real problem, question, or story?</li>
+
+
+
+<li>Is it clear who the session is for?</li>
+
+
+
+<li>Are the takeaways concrete?</li>
+
+
+
+<li>Does the proposal explain what makes your perspective different?</li>
+
+
+
+<li>Is the scope realistic for the selected format?</li>
+
+
+
+<li>Does the writing sound confident and authentic?</li>
+
+
+
+<li>Have you checked the spelling, grammar, links, and formatting?</li>
+
+
+
+<li>Does the proposal sound like the person who will deliver the talk?</li>
+</ul>
+
+
+
+<p>Ask someone else to review it, too. Rather than simply asking whether they like it, ask them to describe what they think the talk will cover and what they expect to learn. Their answer will show whether the proposal communicates what you intended.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/chantal.jpg" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Chantal Loncle. Software Developer, Exposed, JetBrains</h4>
+                                                <p><a href="https://ca.linkedin.com/in/chantal-mp-loncle" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Double-check that the intended audience level aligns with the description and expected takeaways. Review the proposal from the perspective of someone you hope will be in the audience. Does it make sense as it is, or is it missing context that may be obvious to you but not to the reviewer or the future audience they are keeping in mind?</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>AI tools may help you check grammar or organize your thoughts, but the final proposal should reflect your own experience, ideas, and voice. A polished abstract without specific or authentic insight won’t be as convincing as one that clearly represents the speaker behind it.</p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/marton.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Márton Braun. Developer Advocate, KotlinConf Program Committee member, and KotlinConf speaker</h4>
+                                                <p><a href="https://x.com/zsmb13">X</a>, <a href="https://bsky.app/profile/zsmb.co" target="_blank" rel="noopener">BlueSky</a>, <a href="https://www.linkedin.com/in/zsmb13" target="_blank" rel="noopener">LinkedIn</a></p>
+<p><i><span style="font-weight: 400;">Your submission should show that you’ve put some thought and energy into preparing it. Check your submission for formatting issues and typos, and please don’t submit abstracts that were generated by LLMs.</span></i></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<h2 class="wp-block-heading">Your Kotlin story could take the stage</h2>
+
+
+
+<p>You don’t need to know everything about Kotlin or have years of conference experience to submit a proposal. You need a useful story, an understanding of who it can help, and a clear explanation of why it matters.</p>
+
+
+
+<p>Not every strong proposal can be selected. Conference programs must balance subjects, formats, experience levels, and audience interests. If your submission is not accepted, continue refining the idea, sharing your knowledge, and looking for other opportunities to present it.</p>
+
+
+
+<p>Your experience might be exactly what another Kotlin developer needs to hear.</p>
+
+
+
+<p>The KotlinConf 2027 Call for Papers is open! Share your experience, ideas, and Kotlin expertise with the community in Kraków.</p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" title="Submit your KotlinConf2027 proposal" href="https://sessionize.com/kotlinconf-2027" target="_blank" rel="noopener">Submit your proposal</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>KotlinConf Recap: Lessons from Verifone&#8217;s Architect on Kotlin in Mission-Critical Payments</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/kotlinconf-recap-lessons-from-verifone-s-architect-on-kotlin-in-mission-critical-payments/</link>
+		
+		<dc:creator><![CDATA[Alina Dolgikh]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2026 11:03:00 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/image-167.png</featuredImage>		<category><![CDATA[backend]]></category>
+		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[kotlinconf]]></category>
+		<category><![CDATA[kotlin-conf-2026]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=746126</guid>
+
+					<description><![CDATA[This article was written by an external contributor. Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&#160; Neither would most engineers: if you understand the words in your application [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p><em>This article was written by an external contributor.</em></p>
+
+
+    <div class="about-author ">
+        <div class="about-author__box">
+            <div class="row">
+                                                            <div class="about-author__box-img">
+                            <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/Ad2dLe2AFcCKCJdw59PhuWW6LDAPMatti4HwN63rGpA-1.webp" alt="" loading="lazy">
+                        </div>
+                                        <div class="about-author__box-text">
+                                                    <h4>Aniket Bhattacharyea</h4>
+                                                <p>Aniket is a Mathematics postgraduate who has a passion for computers and software. He likes to explore various areas related to coding and works as a web developer using Ruby on Rails and Next.JS.</p>
+<p><a href="https://abhattacharyea.dev/" target="_blank" rel="noopener">Website</a></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+
+
+<p>Yuri Geronimus&#8217;s four-year-old son once asked him what his job was. Yuri told him he writes books: books that describe what he wants to change in the physical world. His son didn&#8217;t fully get it.&nbsp;</p>
+
+
+
+<p>Neither would most engineers: if you understand the words in your application code, you build good systems. If you don&#8217;t, you build bugs.</p>
+
+
+
+<p>That&#8217;s the spine of <a href="https://www.youtube.com/watch?v=XFwhtftwp6s" target="_blank" rel="noreferrer noopener">Yuri Geronimus&#8217;s KotlinConf 2026 talk</a>, &#8220;Kotlin as a Safety Net: Type-Driven Reliability in the Finance Industry&#8221;. Yuri is an architect at Verifone, where he works across payment terminals, gateways, and the systems that connect them to banks and regulators in the EMEA region. His method, in one line: write code in the exact words of the regulator or card network specs, and let the compiler enforce it. Enforce not by discipline, but by the compiler.</p>
+
+
+
+<h2 class="wp-block-heading">Watch the KotlinConf 2026 talk</h2>
+
+
+
+<p>Watch Yuri Geronimus&#8217;s KotlinConf 2026 talk to learn how Kotlin helps build reliable payment systems.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Kotlin as a Safety Net Type Driven Reliability in the Finance Industry | Yuri Geronimus" src="https://www.youtube.com/embed/XFwhtftwp6s?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+            <div class="newsletter">
+                                                            <article class="newsletter__post">
+                                                                                    <img style="width:100% !important; height:auto !important; max-width:100% !important;" decoding="async" class="newsletter__post-img" src="https://blog.jetbrains.com/wp-content/uploads/2026/10/kotlin-enterprise-playbook-highlight.png" alt="">
+                                                                            <div class="newsletter__post-text">
+                                                            <h3>A Legacy Modernization Strategy and Business Case Playbook for Enterprise Kotlin Adoption</h3>
+                                                                                                                    <a href="https://kotlinlang.org/lp/enterprise-playbook/" class="btn" target="_blank" rel="noopener">Read the Playbook</a>
+                                                    </div>
+                    </article>
+                                    </div>
+    
+
+
+<h2 class="wp-block-heading"><strong>The world behind the terminal</strong></h2>
+
+
+
+<p>Before the patterns, Yuri set the stakes. A &#8220;payment&#8221; isn&#8217;t one app. It&#8217;s a mobile sales app, a point-of-sale app, a payment terminal running on a locked-down OS, payment gateways, terminal management systems, merchant platforms, and, underneath it all, processors, banks, and regulators. Each country carries thousands of pages of specifications and roughly 1,000 scenarios that must be met before anything reaches production.</p>
+
+
+
+<p>Some of those terminals have to keep working offline for up to 40 days, by regulation, because in the country they operate in, a payment terminal is critical infrastructure on the same level as a gas station or a pharmacy. Payment teams also have to satisfy contradictory rules from different regulators governing the same shared infrastructure: one country requires a behavior, another forbids it, and both must be enforced in the same codebase. That&#8217;s the environment the type system has to hold up in. Not a demo. Production, worldwide, for decades, not a year.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Six ways one word breaks a payment system</strong></h2>
+
+
+
+<p>Yuri walked through real incident patterns from his 15 years in payments and banks, each one traced back to a single missing or misused word:</p>
+
+
+
+<ul class="wp-block-list">
+<li>An incorrect field caused a reversal, and someone else&#8217;s money landed in the wrong account.</li>
+
+
+
+<li>A mandatory field was made nullable &#8220;just in case&#8221;. When a firmware update stopped sending it, the code fell back to a default, and part of the terminal fleet stopped processing payments.</li>
+
+
+
+<li>A card number ended up in a log line and a stack trace: a disclosure obligation, and a real compliance problem.</li>
+
+
+
+<li>An authorization was approved while the fraud check timed out, and money was stolen.</li>
+
+
+
+<li>A request timed out, but the authorization had succeeded upstream, and the customer paid twice.</li>
+</ul>
+
+
+
+<p>Each of these traces back to the same root cause: somewhere, the code disagreed with the specification about what a word meant, and nothing forced that disagreement into the open before it reached production.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>The method: write the spec, then let the compiler check your work</strong></h2>
+
+
+
+<p>Yuri described this as a set of patterns, not a framework. Ten of them, all doing the same job: making illegal states impossible to construct, not just invalid ones you catch later.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>1. Value classes for spec nouns</strong></h3>
+
+
+
+<p>Fraud and risk models carry dozens of similarly shaped IDs: merchant ID, terminal ID, acquirer ID, and more, several of which are literally identical in format due to regulation. As plain strings, nothing stops a refactor or copy-paste from swapping two of them, and the transaction silently routes to the wrong acquirer, for example. Yuri’s fix is a value class per ID.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class MerchantId(val value: String)
+@JvmInline value class AcquirerId(val value: String)
+@JvmInline value class AmountMinor(val value: String)
+
+data class AuthRequest(val merchantId: MerchantId, val acquirerId: AcquirerId, val amount: AmountMinor)
+
+fun demo(merchantId: MerchantId, acquirerId: AcquirerId, amount: AmountMinor) {
+    AuthRequest(merchantId, acquirerId, amount)   // ✅ compiles
+    // AuthRequest(acquirerId, merchantId, amount)   // ❌ type mismatch: swapped arguments do not compile
+}</pre>
+
+
+
+<p>Swap the arguments now, and the code doesn&#8217;t compile. The mistake that used to reach production becomes a build error on the engineer&#8217;s own machine.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>2. Validate factories</strong></h3>
+
+
+
+<p>Every external field, whether it comes from a bank&#8217;s API or a terminal&#8217;s firmware, arrives as an untyped string that might not mean what the spec assumes. Yuri’s pattern parses it immediately into a sealed result at the boundary rather than trusting it downstream.<br></p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@JvmInline value class RawStan(val value: String)   // untrusted input
+@JvmInline value class Stan(val value: String)      // validated, per spec
+
+sealed interface ParsedStan {
+    data class Valid(val stan: Stan) : ParsedStan
+    sealed interface Invalid : ParsedStan {
+        val rawStan: RawStan
+        data class WrongLength(override val rawStan: RawStan) : Invalid
+        data class NotNumeric(override val rawStan: RawStan) : Invalid
+    }
+
+    companion object {
+        fun of(rawStan: RawStan): ParsedStan = when {
+            rawStan.value.length != 6         -> Invalid.WrongLength(rawStan)
+            !rawStan.value.all(Char::isDigit) -> Invalid.NotNumeric(rawStan)
+            else                              -> Valid(Stan(rawStan.value))
+        }
+    }
+}
+
+fun authorize(rawStan: RawStan): AuthResponse =
+    when (val parsed = ParsedStan.of(rawStan)) {
+        is ParsedStan.Valid   -> gateway.authorize(parsed.stan)   // happy path
+        is ParsedStan.Invalid -> reject(parsed)                   // structured rejection
+    }   // no else, no try/catch, no Result&lt;T> to unwrap – exhaustiveness is enforced
+
+fun demo(raw: RawStan) {
+    when (val parsed = ParsedStan.of(raw)) {   // bad input is a value, not an exception
+        is ParsedStan.Valid               -> gateway.authorize(parsed.stan)
+        is ParsedStan.Invalid.WrongLength -> reject(parsed)
+        is ParsedStan.Invalid.NotNumeric  -> reject(parsed)
+        // forget any of the cases → ❌ 'when' expression must be exhaustive
+    }
+}</pre>
+
+
+
+<p>This approach Yuri thinks is a very good practice: it doesn’t throw exceptions; it helps prevent the not-best approach with <code>Result&lt;T&gt;</code>, which hides the business domain, and prevents runCatching pitfalls in coroutines</p>
+
+
+
+<h3 class="wp-block-heading"><strong>3. Non-null types at the boundary</strong></h3>
+
+
+
+<p>Many times, mandatory fields are marked nullable “just in case”, which requires juggling with silent fallbacks that often hide the real culprit. Yuri suggests leveraging Kotlin’s null-safety to fail loudly in one place:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">data class KernelResult(val tvr: TerminalVerificationResults) // ← not Optional, not nullable
+
+fun fromFirmware(raw: FirmwareResponse) = KernelResult(
+    tvr = requireNotNull(raw.tvr) { "TVR null - firmware contract violated" }
+)
+// One loud failure at the boundary. Never a silent fallback downstream
+
+fun demo(raw: FirmwareResponse) {
+    // raw.tvr ?: TerminalVerificationResults()   // ❌ "just in case" fallback: silently hides the broken contract
+    val result = fromFirmware(raw)   // one loud failure here, at the single parsing point where it is monitored
+    val tvr: TerminalVerificationResults = result.tvr   // non-null: nothing downstream has to guard against it
+}</pre>
+
+
+
+<p>This is the fix for the terminal-fleet outage: the field that was made nullable &#8220;just in case&#8221; never got a silent default again. It fails once, loudly, at the one predictable place it&#8217;s parsed, where it can be monitored, instead of failing quietly somewhere downstream where nobody is watching for it.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>4. Mask sensitive data by default</strong></h3>
+
+
+
+<p>Card numbers travel through logs and stack traces as plain strings, and that&#8217;s a disclosure obligation waiting to happen. Yuri wraps the value in a class with a private constructor and overrides toString(), so the safe behavior is the default.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// Illustration of the idea: in production this is hidden much deeper (PCI scope, key management, encryption)
+@JvmInline
+value class Pan private constructor(private val value: String) {
+    override fun toString() = "PAN[****]"                         // ← always safe
+    fun masked(): String = TODO("Pan.masked: masking according to spec")
+    fun toNetwork() = value                                       // deliberate, grep-able
+
+    companion object {
+        fun of(raw: String): Pan? = TODO("Pan.of: the only way in – validate length, digits and Luhn, then construct")
+    }
+}
+
+fun demo(card: Pan) {
+    logger.info("Processing card $card")   // → "Processing card PAN[****]". Safe by default
+    val onWire = card.toNetwork()          // the real value only through an explicit, grep-able call
+}</pre>
+
+
+
+<p>An accidental log.info(&#8220;processing $pan&#8221;) now prints four masked digits. Getting the real value out, the one thing that&#8217;s genuinely needed to talk to the network, requires an explicit, auditable call. Nothing about that path is invisible anymore. Small note from Yuri: in real systems it hid much deeper.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>5. Give every state its own class, not just its own name</strong></h3>
+
+
+
+<p>A transaction that&#8217;s been refunded should never be able to call refund again, but a single mutable Transaction class with a status field relies on someone remembering to check that status everywhere. Yuri&#8217;s next-level version gives each state its own data class, so the method cannot change transaction state from the wrong data class; this ensures that a transition that shouldn’t happen (for example, refunding a reversed transaction) is blocked by the compiler.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import TransactionStatus.Captured
+import TransactionStatus.FullyRefunded
+import TransactionStatus.Reversed
+import java.time.Instant
+
+// One class per state: each state carries only the data that is valid in it
+sealed interface TransactionStatus {
+    data class Captured(val amount: AmountMinor)    : TransactionStatus
+    data class FullyRefunded(val at: Instant)       : TransactionStatus
+    data class Reversed(val reason: ReversalReason) : TransactionStatus
+}
+
+// Refund exists only on Captured: that is where the spec allows it
+fun Captured.fullRefund(refundReason: RefundReason) = RefundAuthorization(amount, refundReason)
+
+fun demo(captured: Captured, refunded: FullyRefunded, reversed: Reversed, reason: RefundReason) {
+    captured.fullRefund(reason)   // ✅ compiles
+    // refunded.fullRefund(reason)   // ❌ unresolved reference: a refunded transaction cannot be refunded again
+    // reversed.fullRefund(reason)   // ❌ unresolved reference: a reversed transaction cannot be refunded
+}</pre>
+
+
+
+<h3 class="wp-block-heading"><strong>6. Immutability and named transition</strong>s</h3>
+
+
+
+<p>This continues the previous pattern. Make the class with your business data immutable and give every transition a name. The name is a verb from the spec. Any method that shouldn&#8217;t be callable simply doesn&#8217;t exist:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">@ConsistentCopyVisibility  // Kotlin 2.0.20+: copy() is as private as the constructor
+data class PurchasedAuthorization private constructor(
+    val stan: Stan,
+    val amount: AmountMinor,
+) : Authorization {
+    fun fullRefund(refundReason: RefundReason) = RefundAuthorization(stan, amount, refundReason)
+    // no reverseAuthorization(): the spec does not allow it for a purchase
+}
+
+fun demo(purchaseAuthorization: PurchasedAuthorization, reason: RefundReason) {
+    purchaseAuthorization.fullRefund(reason)         // ✅ compiles
+    // purchaseAuthorization.reverseAuthorization()  // ❌ compile error: unresolved reference 'reverseAuthorization'
+}</pre>
+
+
+
+<p>Yuri called this his favorite pattern because it affects how engineers read a spec. This changes how engineers think and speak about the business domain.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>7. Delete the else branch</strong></h3>
+
+
+
+<p>If a specification lists every case explicitly and never says &#8220;otherwise,&#8221; then an else in the code is inventing a case the spec doesn&#8217;t describe. His team had handled only full refunds. When partial refunds became a real scenario, the old else branch would have absorbed it silently: compiles fine, tests pass, and it&#8217;s wrong in production. Delete the else, and the same new case becomes a compile error that points to every place needing an update.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fun authorize(request: AuthorizationRequest): Authorization = when (request) {
+    is PurchaseRequest   -> purchase(request)
+    is FullRefundRequest -> fullRefund(request)
+    // ← no else. Adding a new state BREAKS compilation here
+}
+
+fun demo(purchase: PurchaseRequest, refund: FullRefundRequest) {
+    authorize(purchase)   // ✅ compiles
+    authorize(refund)
+    // spec adds: class PartialRefundRequest : AuthorizationRequest
+    // → ❌ authorize() stops compiling: 'when' must be exhaustive
+}</pre>
+
+
+
+<p>The business drifts constantly quarterly and monthly in payment in one country, and for the whole EMEA region &#8211; it becomes daily at Yuri’s scale. An exhaustive when turns every drift into a list of exactly what needs to change, rather than a bug report from a customer who was charged the wrong amount.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>8. Choose the coroutine scope the spec implies</strong></h3>
+
+
+
+<p>Yuri’s Black Friday example: authorization, risk management, and fraud checks used to run as three independent calls, each in its own try/catch. If fraud management ran slowly under load, the transaction could still be approved while the fraud check silently failed, and stolen cards could start getting approved. Kotlin gives two structured concurrency scopes that look similar and behave completely differently, and the spec, not convenience, should decide which one you use.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import kotlinx.coroutines.*
+// coroutineScope = fail-fast.   ← partial success is an incident: one failure cancels the rest
+// In production each call also gets its own timeout, and a timeout is an outcome, not a thrown exception
+// (full version with tests: production/08_coroutine_scopes)
+suspend fun authorize(req: Request) = coroutineScope {
+    val auth  = async { acquirer.authorize(req) }
+    val risk  = async { riskEngine.score(req) }
+    val fraud = async { fraudService.check(req) }
+    Outcome.from(auth.await(), risk.await(), fraud.await())
+}
+// supervisorScope = isolate.    ← partial success is the goal
+// Note: runCatching also catches CancellationException. In production rethrow it
+// (e.g. `catch (e: CancellationException) { throw e }`) so cancelling the parent still works.
+suspend fun fanOut(event: Event) = supervisorScope {
+    listOf(
+        async { runCatching { sms(event) } },
+        async { runCatching { analytics(event) } },
+        async { runCatching { feed(event) } },
+    ).awaitAll()   // never throws: each failure is a Result.failure in the list
+}</pre>
+
+
+
+<p>Here, <code>coroutineScope</code> fails fast: if the fraud check fails, authorization and risk are canceled as well, and nothing is silently approved. A supervisorScope would let siblings keep running independently, which is the right call for something like fan-out notifications, where one failure shouldn&#8217;t cancel the rest. The question isn&#8217;t which scope is more idiomatic. It&#8217;s what the spec says should happen when one branch fails.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>9. Model timeout as a domain outcome, not an exception</strong></h3>
+
+
+
+<p>A gateway call that times out isn&#8217;t necessarily a failure. The acquirer may have already processed it; the client just didn&#8217;t hear back in time. Catching that as a generic exception and moving on erases the difference between &#8220;nothing happened&#8221; and &#8220;something happened, we&#8217;re just not sure what&#8221;. Yuri’s fix models a Timeout as a first-class outcome in the domain.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">import AuthorizationOutcome.Approved
+import AuthorizationOutcome.Declined
+import AuthorizationOutcome.TimedOut
+
+sealed interface AuthorizationOutcome {
+    data class Approved(val authCode: AuthCode)    : AuthorizationOutcome
+    data class Declined(val reason: DeclineReason) : AuthorizationOutcome
+    data object TimedOut                           : AuthorizationOutcome // ← spec verb, named in domain
+}
+
+fun demo(req: Req) {
+    when (val outcome = processAuth(req)) {
+        is Approved -> settleTransaction(outcome.authCode)
+        is Declined -> notifyCardHolder(outcome.reason)
+        is TimedOut -> reconcile(req)  // not retry: it may have succeeded upstream
+    }
+}</pre>
+
+
+
+<p><code>TimedOut</code> isn&#8217;t the absence of an answer. It&#8217;s a distinct state that routes to a reconciliation query rather than a retry, because a naive retry after a timeout that actually succeeded upstream is exactly how a customer ends up charged twice.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>10. Make the tests something a regulator can read</strong></h3>
+
+
+
+<p>Yuri’s least expected pattern targets certification tests, not application code. A typical certification suite runs a thousand tests at roughly 200 lines each, and, in his words, not even an architect can read that. The team rewrote the tests as Kotlin DSL. Written that way, a certification specialist who has never written Kotlin can read the test, follow the logic against the specification, and sign off on it directly. The test stops being an artifact only test engineers can verify and becomes a specification the business and certification specialists can review.</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">val purchaseOverFloorLimit = scenario("Purchase with tap card above floor limit must go online") {
+    terminal { floorLimit = 50.EUR }
+    posRequest  { purchase(amount = 75.EUR) }
+    tap { card = TestCards.visaWithOnlinePIN }
+
+    expect {
+        terminalDecision  mustBe  GoOnline
+        outcome           mustBe  Approved
+    }
+}</pre>
+
+
+
+<h2 class="wp-block-heading"><strong>What actually moved</strong></h2>
+
+
+
+<p>Yuri is specific about the outcomes: development ran 2.7 times faster, and certification passed with only one defect and on the first attempt, unusual enough that regulators asked what had changed. The resulting codebase was about 30% smaller. Code review shifted from hunting for missed state checks to comparing code against the specification sentence by sentence, because the compiler now catches the class of bug reviewers used to look for by hand. Onboarding a new engineer used to take two or three weeks before they understood enough of a 5,000-page specification and a legacy codebase to ship anything. Afterward, new hires opened a production pull request within days. Engineers could also move between device teams and backend teams, something a split codebase in two different languages had made difficult. The last effect Yuri called out was that engineers started speaking the business&#8217;s language well enough to talk directly with product managers, sales, and regulators, occasionally proposing changes to the regulations themselves.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Payments modernization without a rewrite</strong></h2>
+
+
+
+<p>Yuri is direct about the mistake most teams make: treating migration as one project, a rewrite in Kotlin. His systems run 25-year-old Java and C++ code processing live transactions every second, with no acceptable downtime, so a rewrite was never on the table. Framed as a refactor-vs-rewrite decision, the answer for a live payments platform is almost always refactor. His alternative is four tracks that run in parallel, not in sequence.</p>
+
+
+
+<ol class="wp-block-list">
+<li><strong>Optimize the existing codebase first</strong>, in Java or C++, without touching the language; modernize code structure now &#8211; shared layout, clean architecture, screaming architecture &#8211; even before any Kotlin lands.</li>
+
+
+
+<li><strong>Shift to acceptance-test-driven development</strong>, not unit-test-driven. Nobody outside the engineering team cares what&#8217;s inside a function; everybody cares about the end-to-end behavior.</li>
+
+
+
+<li><strong>Build fitness functions</strong> to check compliance, security, scalability, and other “-lities” that run alongside the migration rather than being assessed at the end.</li>
+
+
+
+<li><strong>Migrate incrementally</strong>: new adapters first, then new domain models, then the legacy code that changes most often, working to reduce the number of &#8220;shared ports&#8221; to zero. Kotlin&#8217;s interop with Java is what makes this incremental path possible at all: a new adapter can sit alongside unmodified Java code without a dual-maintenance period.</li>
+</ol>
+
+
+
+<p>Running all four at once, according to Yuri, is what makes a payments modernization effort safe and cost-effective in a regulated environment. Running them in sequence is what makes migrations stall.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Migration is an investment decision, not a language preference</strong></h2>
+
+
+
+<p>Yuri pointed out who needs convincing in an enterprise: it isn&#8217;t the engineering team. He referenced <a href="https://www.youtube.com/watch?v=w7e4g86EyXk" target="_blank" rel="noopener">a talk from Uber&#8217;s team the day before his</a>, at the same event, making a similar point: even a company known for moving fast treats language migration as an investment decision once it&#8217;s operating at enterprise scale. A credible business case has to account for the costs of running old and new systems in parallel, the costs of decommissioning what&#8217;s being replaced, the learning curve for the team, and the risk of the transition itself. Getting the migration approved is not the same as its adoption. Without an operating model for how the migration actually runs day-to-day, Yuri was blunt: there&#8217;s no happy ending waiting at the end of it.</p>
+
+
+
+<p>He pointed to a resource for that exact gap: a <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noreferrer noopener">22-page playbook on the Kotlin site</a>, published two days before this talk, covering, in his words, &#8220;the part that everybody skips&#8221;.</p>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1791809546909" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>What is Yuri Geronimus&#8217;s core method, in one sentence?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Write code in the literal words of the specification and let the compiler enforce them, rather than relying on discipline or documentation to catch gaps between the two.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809559945" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Do you have to rewrite a legacy Java or C++ system to use these patterns?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>No. Yuri explicitly argues against treating migration as a rewrite project. His four tracks run in parallel: optimizing the existing codebase, shifting to acceptance testing, more focus on fitness functions, and migrating incrementally, starting with adapters and the domain models, then going from the most-often-changed parts.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809566348" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Why doesn&#8217;t discipline or code review catch these bugs instead?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>At the scale Yuri operates, 20 teams worldwide, discipline doesn&#8217;t scale evenly. A compiler check applies identically everywhere, every time, regardless of who&#8217;s on call or how careful any one reviewer is that day.</p>
+
+</div>
+</div>
+<div id="faq-question-1791809576890" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>Further reading</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Yuri Geronimus writes more broadly on Kotlin in payments and fintech in his <a href="https://yurigeronimus.medium.com/kotlin-in-payment-gateways-and-fintech-a-strategic-fit-for-2026-architectures-f049a01059f9" target="_blank" rel="noopener">own posts on Medium</a>. For the business case and operating model he referenced in the talk, the resource is JetBrains&#8217; <a href="https://kotlinlang.org/lp/enterprise-playbook/" target="_blank" rel="noopener">enterprise Kotlin adoption playbook</a>, also written with Yuri Geronimus.</p>
+
+</div>
+</div>
+</div>
+</div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Start Your Next KMP App With Kotlin Toolchain 0.13</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/start-your-next-kmp-app-with-kotlin-toolchain-0-13/</link>
+		
+		<dc:creator><![CDATA[Anton Makeev]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 10:21:46 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/KM-social-BlogFeatured-1280x720-1-1.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[multiplatform]]></category>
+		<category><![CDATA[releases]]></category>
+		<category><![CDATA[toolchain]]></category>
+		<category><![CDATA[kotlin-toolchain]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=744876</guid>
+
+					<description><![CDATA[The Kotlin Toolchain is a unified entry point into Kotlin. It lets you build JVM, Android, iOS, multiplatform, and server-side applications with a simple declarative configuration. With the release of v0.13, we now recommend the Kotlin Toolchain for most new Kotlin Multiplatform (KMP) projects. Earlier this year, we promoted the Kotlin Toolchain to Alpha. Since [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>The Kotlin Toolchain is a unified entry point into Kotlin. It lets you build JVM, Android, iOS, multiplatform, and server-side applications with a simple declarative configuration.</p>
+
+
+
+<p>With the release of v0.13, we now recommend the Kotlin Toolchain for most new Kotlin Multiplatform (KMP) projects.</p>
+
+
+
+<p>Earlier this year, we <a href="https://blog.jetbrains.com/amper/2026/06/kotlin-toolchain-0-11/" target="_blank" rel="noreferrer noopener">promoted the Kotlin Toolchain to Alpha</a>. Since then, our Slack channels and issue tracker have been very active. So many of you in the community have joined us to create a great build experience for Kotlin. Thank you – your continuous feedback helped us get here!</p>
+
+
+
+<p><em>Not using the Kotlin Toolchain yet? Experience automated environment setup and an intuitive CLI that works well with your AI agents.</em></p>
+
+
+
+<p align="center"><a class="ek-link jb-download-button" href="https://kotlin-toolchain.org" target="_blank" rel="noopener"><i class="download-icon"></i>Install Kotlin Toolchain</a></p>
+
+
+
+<p><em>To access the latest Kotlin Toolchain features from your IDE, use </em><a href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer noopener"><em>IntelliJ IDEA 2026.2.3</em></a><em>,  Android Studio Rabbit 1 | 2026.2.1 (or newer). Make sure the latest version of the </em><a href="https://plugins.jetbrains.com/plugin/31850-kotlin-toolchain" target="_blank" rel="noreferrer noopener"><em>Kotlin Toolchain plugin</em></a><em> is installed.</em></p>
+
+
+
+<h2 class="wp-block-heading">How the Kotlin Toolchain simplifies getting started</h2>
+
+
+
+<p>Getting started with Kotlin Multiplatform often means working with unfamiliar platforms. Android developers might be discovering iOS for the first time, while other teams are expanding to web or desktop. Every platform comes with its own tools to install and build configurations to understand.</p>
+
+
+
+<p>The Kotlin Toolchain changes that. It is a single CLI entry point for configuring the environment, creating, building, testing, and publishing your KMP apps and libraries. It comes with a declarative project configuration and set of all necessary tools – everything you need in one place.</p>
+
+
+
+<p>In recent releases, we’ve refined the CLI and IDE experiences, added support for web and cinterop, and made many other improvements based on your feedback. Our internal dogfooding and positive community feedback have given us the confidence to recommend it for new projects!</p>
+
+
+
+<p>We’ll feature the Kotlin Toolchain in our KMP getting started guides, web and IDE project wizards. These updates will make it easier for both developers and AI agents to select the Kotlin Toolchain when it&#8217;s most appropriate for the task at hand.</p>
+
+
+
+<h2 class="wp-block-heading">Direct support for agentic workflows</h2>
+
+
+
+<p>From early on, we designed the Kotlin Toolchain to be reliable and easy to use for both developers and IDEs. It turns out that the automatic environment setup, declarative configurations, and clear, actionable error messages provide an ideal foundation for AI agents as well.</p>
+
+
+
+<p>We’ve taken this further by introducing a Hot Reload MCP server and dedicated AI agent skills, included in the official AI agent skills for Kotlin. You can install them with:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">npx skills add kotlin/kotlin-agent-skills</pre>
+
+
+
+<p>Eventually, these skills will be delivered directly through the Kotlin Toolchain. In our benchmarks, AI agents already generate and maintain Kotlin Toolchain projects <a href="https://github.com/JetBrains/kotlin-toolchain/tree/main/ai-evals/results" target="_blank" rel="noreferrer noopener">more reliably while consuming fewer tokens</a>.</p>
+
+
+
+<h2 class="wp-block-heading">What’s new in the 0.13 release</h2>
+
+
+
+<h3 class="wp-block-heading">New project creation with <code>kotlin new</code></h3>
+
+
+
+<p>Version 0.13 introduces the <code>kotlin new</code> command, offering an interactive setup flow similar to the <a href="https://kmp.jetbrains.com/?android=true&amp;ios=true&amp;iosui=compose&amp;includeTests=true" target="_blank" rel="noreferrer noopener">Kotlin Multiplatform Wizard</a>. Note that the <code>kotlin init</code> command remains available; it has been updated to match the behavior of <code>kotlin new</code>, but it generates project files directly inside your current directory.</p>
+
+
+
+<p>When you run <code>kotlin new</code>, the first prompt asks you to select your application type:</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/01-kotlin-new-application-type.png" alt="" class="wp-image-745063"/></figure>
+
+
+
+<p>For Kotlin Multiplatform applications, you can choose your target platforms in the second step:</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/02-kotlin-new-target-platforms.png" alt="" class="wp-image-745074"/></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>Better onboarding UX for iOS applications</strong></h3>
+
+
+
+<p>Setting up iOS applications on a clean machine is now significantly smoother:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Better Xcode installation diagnostics: Get clear, actionable messages regarding Xcode license acceptance and first-run status.</li>
+
+
+
+<li>iOS simulator runtimes are downloaded automatically when needed. An iOS simulator is created automatically if none exists.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Download progress reporting in the CLI</strong></h3>
+
+
+
+<p>The TUI now displays rich download progress bars when the Kotlin Toolchain downloads required tools, such as JDKs, Android SDK components, iOS runtimes, and compilers.</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/03-tool-download-progress.gif" alt="" class="wp-image-745102"/></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>Android improvements</strong></h3>
+
+
+
+<p>In previous versions, the Android SDK was automatically provisioned when running <code>kotlin build</code> or <code>kotlin run</code> but not when opening the project in an IDE. If you opened a project in your IDE before running a build, missing SDKs could cause setup errors.</p>
+
+
+
+<p>We have aligned CLI and IDE behavior, and the Kotlin Toolchain now automatically provisions missing Android SDK components on project import.</p>
+
+
+
+<p>Additionally, we’ve also tightened validation for namespace and application ID definitions so you don’t accidentally publish app or library builds with sample IDs like <code>com.example.app</code>.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Sync status in the IDE editor</strong></h3>
+
+
+
+<p>You can now monitor the current IDE sync status inside your file editor:</p>
+
+
+
+<figure class="wp-block-image size-full"><img style="width:100% !important; height:auto !important; max-width:100% !important;" loading="lazy" decoding="async" src="https://admin.blog.jetbrains.com/wp-content/uploads/2026/10/04-ide-sync-status.png" alt="" class="wp-image-745085"/></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>SPM import</strong></h3>
+
+
+
+<p>The Kotlin Toolchain now supports Swift Package Manager dependencies for Apple platforms.</p>
+
+
+
+<p>Modules with Apple platform support (e.g. <code>kmp/lib</code>, <code>ios/app</code>) can import Objective-C APIs from Objective-C and Swift code using SwiftPM dependencies:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">product: ios/app
+
+dependencies:
+  - swiftPackage:
+      repository: "https://github.com/firebase/firebase-ios-sdk.git"
+      version: "12.17.0"
+      products: [ "FirebaseCore", "FirebaseFirestore", "FirebaseAnalytics" ]
+</pre>
+
+
+
+<p>Imported Objective-C APIs are namespaced using the swiftPMImport prefix and ending with the module name:</p>
+
+
+
+<pre class="EnlighterJSRAW" data-enlighter-language="kotlin" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// app/src/app.kt
+import swiftPMImport.app.FIRAnalytics
+import swiftPMImport.app.FIRApp</pre>
+
+
+
+<p>Kotlin Toolchain also supports local SwiftPM packages using the <code>localSwiftPackage</code> key. See our <a href="https://kotlin-toolchain.org/dev/user-guide/dependencies/#swiftpm-dependencies" target="_blank" rel="noreferrer noopener">documentation</a> for more details.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Multiplatform library publication improvements</strong></h3>
+
+
+
+<p>When publishing multiplatform libraries, your Compose Resources and SwiftPM dependencies metadata are published along with your build artifacts.</p>
+
+
+
+<p>Compose Resources are also resolved from third-party multiplatform libraries.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Kotlin/Native compiler caches</strong></h3>
+
+
+
+<p>Kotlin/Native rebuilds just got faster. With <a href="https://youtrack.jetbrains.com/issue/KTC-5422/Support-Kotlin-Native-compiler-caches-in-Kotlin-Toolchain" target="_blank" rel="noopener">KTC-5422</a>, the Kotlin Toolchain caches compiled native dependencies and reuses them across builds and even across projects. Project code gets per-file caches, letting the compiler rebuild only the affected code during linking. Once the caches are populated, small edits mean less work and faster edit–build–run cycles for native apps and tests.</p>
+
+
+
+<p>The feature uses the existing <code>settings.kotlin.compileIncrementally</code> setting and supports non-optimized debug binaries on compatible targets. Compilation to <code>.klib</code> files continues to run in full.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>What’s next for the Kotlin Toolchain and KMP</strong></h2>
+
+
+
+<p>We have some exciting milestones on our roadmap, including:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Installing the Kotlin Toolchain via <code>brew install kotlin</code>.</li>
+
+
+
+<li>Providing AI skills out of the box.</li>
+
+
+
+<li>Supporting Swift Export as it stabilizes.</li>
+
+
+
+<li>Streamlining and automating app store publishing workflows.<br></li>
+</ul>
+
+
+
+<p>Much of our immediate focus will be on understanding new user feedback and closing existing gaps, including those for existing Gradle projects, before recommending migrations.</p>
+
+
+
+<p>To achieve this, we want to hear from you! As we refine the functionality, some changes may require adjustments to your projects, and we’ll do our best to support you through those migrations and make them as smooth as possible.</p>
+
+
+
+<p>Join the conversation in the <a href="https://slack-chats.kotlinlang.org/c/kotlin-toolchain" target="_blank" rel="noreferrer noopener">#kotlin-toolchain Slack channel</a> (get invite: <a href="https://kotl.in/slack" target="_blank" rel="noreferrer noopener">kotl.in/slack</a>) or share your suggestions and ideas in <a href="https://youtrack.jetbrains.com/issues/KTC" target="_blank" rel="noreferrer noopener">JetBrains YouTrack</a>. Your input and use cases help shape the future of the Kotlin Toolchain!</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Install Kotlin Toolchain 0.13.0</strong></h2>
+
+
+
+<p>Ready to give the Kotlin Toolchain a go? Check out our <a href="https://kotlin-toolchain.org/latest/getting-started/" target="_blank" rel="noreferrer noopener">Getting started</a> guide to dive into code examples, tutorials, or our comprehensive user guide.</p>
+
+
+    <div class="buttons">
+        <div class="buttons__row">
+                                                <a href="https://kotlin-toolchain.org/latest/" class="btn " target="" rel="noopener">Install Kotlin Toolchain</a>
+                                    </div>
+    </div>
+
+
+
+
+
+
+
+<p>Already using the Kotlin Toolchain? Simply run <code>kotlin update</code> in your terminal to upgrade.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Discontinuing Swift Language IDE Support in the Kotlin Multiplatform Plugin</title>
+		<link>https://blog.jetbrains.com/kotlin/2026/10/discontinuing-swift-language-ide-support-in-the-kotlin-multiplatform-plugin/</link>
+		
+		<dc:creator><![CDATA[Anton Makeev]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2026 10:46:19 +0000</pubDate>
+		<featuredImage>https://blog.jetbrains.com/wp-content/uploads/2026/10/KM-social-BlogFeatured-1280x720-1.png</featuredImage>		<category><![CDATA[kotlin]]></category>
+		<category><![CDATA[multiplatform]]></category>
+		<category><![CDATA[kotlin-multiplatform]]></category>
+		<guid isPermaLink="false">https://blog.jetbrains.com/?post_type=kotlin&#038;p=744281</guid>
+
+					<description><![CDATA[Starting with IntelliJ IDEA 2026.3 and Android Studio Rabbit 2 &#124; 2026.2.2, we’re discontinuing Swift language IDE features in the Kotlin Multiplatform (KMP) plugin. This includes editing, syntax highlighting, and navigation within Swift files and between Swift and Kotlin. Running iOS applications and debugging Kotlin code on iOS will remain fully supported. Kotlin/Native functionality, such [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Starting with IntelliJ IDEA 2026.3 and Android Studio Rabbit 2 | 2026.2.2, we’re discontinuing Swift language IDE features in the Kotlin Multiplatform (KMP) plugin. This includes editing, syntax highlighting, and navigation within Swift files and between Swift and Kotlin.</p>
+
+
+
+<p>Running iOS applications and debugging Kotlin code on iOS will remain fully supported. Kotlin/Native functionality, such as <a href="https://kotlinlang.org/docs/native-swift-export.html" target="_blank" rel="noreferrer noopener">Swift Export</a> and <a href="https://kotlinlang.org/docs/multiplatform/multiplatform-spm-import.html" target="_blank" rel="noreferrer noopener">importing Swift packages into Kotlin projects</a>, is not affected. </p>
+
+
+
+<p>The existing Swift functionality will remain available in earlier versions of IntelliJ IDEA, Android Studio, and the Kotlin Multiplatform plugin, though these older versions will not receive further updates.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Background</strong></h2>
+
+
+
+<p>We originally developed Swift support for AppCode (our since-discontinued iOS IDE) and for working directly with Xcode projects. This technology was later adapted for Fleet’s polyglot capabilities and, most recently, for working with mixed Kotlin–Swift codebases using the Kotlin Multiplatform plugin.</p>
+
+
+
+<p>While analyzing feature adoption, we found that active usage was limited and steadily declining. Our telemetry and user research showed that most iOS developers working on KMP projects prefer using Xcode for Swift development, while teams that primarily work in the Kotlin Multiplatform plugin increasingly use Kotlin and Compose Multiplatform.</p>
+
+
+
+<p>Maintaining this Swift tooling, which inherited its core architecture from AppCode, requires substantial ongoing effort to stay compatible with continuous changes in Swift, Xcode, and the IntelliJ Platform. While we previously considered expanding Kotlin–Swift IDE support in the plugin, after weighing the necessary engineering investment against actual usage numbers we decided not to continue.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Looking ahead</strong></h2>
+
+
+
+<p>We do not currently plan to replace these features. Moving forward, we will continue evaluating workflows and focus on providing excellent Kotlin tooling in IntelliJ IDEA and Android Studio and improving the KMP experience for iOS developers.<br><br>We would like to thank everyone who used Swift IDE features, especially those who have been with us since the AppCode days, and to all the contributors who put so much dedication into building and refining Swift support over the years.</p>
+
+
+
+<p>Yours,&nbsp;</p>
+
+
+
+<p>The Kotlin team</p>
+]]></content:encoded>
+					
+		
+		
+		                    <language>
+                        <code><![CDATA[zh-hans]]></code>
+                        <url>https://blog.jetbrains.com/zh-hans/kotlin/2026/10/discontinuing-swift-language-ide-support-in-the-kotlin-multiplatform-plugin/</url>
+                    </language>
+                	</item>
+	</channel>
+</rss>

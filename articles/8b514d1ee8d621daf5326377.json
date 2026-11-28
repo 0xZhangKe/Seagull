@@ -1,0 +1,11 @@
+{
+  "id": "8b514d1ee8d621daf5326377",
+  "title": "如何备份和管理Flash存档",
+  "summary": "Flash游戏的存档同步一直是个大问题（例如泞之翼系列），如果是本地或者其他站点打开的SWF文件，其存档记录并 … 继续阅读 如何备份和管理Flash存档 →",
+  "content": "<p>Flash游戏的存档同步一直是个大问题（例如泞之翼系列），如果是本地或者其他站点打开的SWF文件，其存档记录并不是同步的。前段时间为了接续主电脑的Flash存档放在X61T上去玩，去请教了社区的一些朋友，求得存档的存储位置。</p>\n\n\n\n<p>在Windows系统下，Flash的存档状态存储在<del>臭名昭著的</del>AppData的这个路径下：</p>\n\n\n\n<pre><code>%AppData%\\Macromedia\\Flash Player\\#SharedObjects\\</code></pre>\n\n\n\n<p>只要是使用Flash Player打开的SWF文件，其所有的存档状态被储存为一个.sol后缀的文件，对于本地打开（localhost）的SWF文件则不分盘符、只认路径。</p>\n\n\n\n<p>至于备份的方式，可以直接简单粗暴的复制粘贴然后做版本系统管理，用Robocopy写BAT还是同步到SVN、Acronis都算是一种办法。按照Unix的逻辑，一切皆文件。</p>\n\n\n\n<p>有一些工具软件是可以可视化管理SWF甚至修改信息的，例如 <strong>FlashCookiesView</strong> 可以用来管理Windows电脑上的Flash存档，它是著名的NirSoft系列的软件之一；<strong>Flash Sol Editor</strong> 也是用来修改存档文件的工具，而<strong>JPEXS Free Flash Decompiler</strong> 反编译工具也有类似功能。</p>\n\n<p><a href=\"https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/\" target=\"_blank\" rel=\"noopener noreferrer\">来源</a></p>",
+  "image": "https://v1sta.xyz/wp-content/uploads/2026/03/V1sta-Orb-Output512-2.png",
+  "publishedAt": "2026-10-13T12:38:07Z",
+  "sourceId": "d29b4f2186bb32e1",
+  "sourceTitle": "景の域",
+  "link": "https://v1sta.xyz/gaming/%e5%a6%82%e4%bd%95%e5%a4%87%e4%bb%bd%e5%92%8c%e7%ae%a1%e7%90%86flash%e5%ad%98%e6%a1%a3/"
+}

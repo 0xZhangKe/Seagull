@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:thr="http://purl.org/syndication/thread/1.0"
+      xml:lang="fr">
+	<title type="text">Ploum.net</title>
+	<subtitle type="text">le blog de Lionel Dricot</subtitle>
+
+	<updated>2026-11-25T14:21:24.552677Z</updated>
+
+	<link rel="alternate" type="text/html" href="https://ploum.net/" />
+	<id>https://ploum.net/</id>
+	<link rel="self" type="application/atom+xml" href="https://ploum.net/atom.xml" />
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">Confiscating the Commons, part 2: The Androidification of Open Source</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-11-24-androidification.html" />
+	<id>https://ploum.net/2026-11-24-androidification.html</id>
+	<published>2026-11-24T00:00:00Z</published>
+	<updated>2026-11-24T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;Confiscating the Commons, part 2: The Androidification of Open Source&lt;/h1&gt;
+		&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-11-23-invention_proprietary_software.html&quot;&gt;Confiscating the Commons, part 1: The invention of proprietary software (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt; Free and Open Source software are part of our commons. But those commons have been confiscated through a process I call &amp;quot;Androidification&amp;quot;. Androidification allows monopolistic corporate entities to benefit from the Open Source commons at very little cost while killing competition, destroying freedoms and keeping users captive. A true monopolist wet dream.&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;In the early 2000s, despite a dominant position of Microsoft Windows, nerds that cared could install a free operating system on their computers. Sometimes, they could even be reimbursed the price of the pre-installed Windows. But, with Windows CE, Palm, Symbian and Blackberry, everybody foresaw that mobile computing platforms were the next big thing. For freedom lovers, all hopes were on the Maemo platform championed by Nokia. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-03-08-linux_desktop3.html&quot;&gt;20 years of Linux on the Desktop (part 3) (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The iPhone took everyone by surprise. Including Steve Jobs himself (who only designed it as an iPod with phone capabilities, not a tool that serious people would use as it lacked a keyboard). Given that success, Google understood that people didn’t really need a keyboard and adapted its Android prototype to remove it.&lt;/p&gt;
+&lt;p&gt;When the first Android phone came out, the Open Source and Linux aspects were heavily highlighted in the geek circles. Prototypes even circulated early at FOSDEM. Nokia was failing to deliver the promised Maemo phone. And, to be fair, it would not end well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-07-23-linux_desktop4.html&quot;&gt;20 years of Linux on the Desktop (part 4) (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Could Google be the champion of our freedoms?&lt;/p&gt;
+&lt;p&gt;Google was cooler than Nokia. Google was heavily sponsoring Free and Open Source projects. Google was trying to get new developers interested in Open Source through the Google Summer of Code. Heck, Google even invited Open Source developers for trips in Mountain View, all expense paid (I went myself to Mountain View in 2009).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/226-in-bed-with-ryan-lortie/index.html&quot;&gt;In bed with Ryan Lortie (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Android was nice. Android was Open Source exactly in the sense dreamed by Eric Raymond and Bruce Perens: a big open source foundation sprinkled with a few proprietary custom services on top.&lt;/p&gt;
+&lt;p&gt;But, as I explored the brand new Android platform, stuff seemed a little odd. Some choices were not really sound from a technical perspective. I had myself many questions about the multimedia framework. Why not use GStreamer? I received some answer about performances that were not really satisfactory.&lt;/p&gt;
+&lt;p&gt;It took me years to understand the real reason: GStreamer was under the LGPL copyleft license. At that point, I realised that, besides the Linux kernel, nothing in Android was copylefted.&lt;/p&gt;
+&lt;p&gt;Corporate lawyers, I thought. This didn’t seem that bad.&lt;/p&gt;
+&lt;p&gt;But, over the years, more and more features of the Android Open Source Project (AOSP) were subtly moved to proprietary components. Essential features were now linked to those proprietary components. &lt;/p&gt;
+&lt;p&gt;We believed we were using free software but, suddenly, we could not access our phone without a Google account. The open source part is now a decreasingly thin part isolating the copylefted Linux kernel from the Google proprietary system where you cannot even install software without Google’s agreement. Open Source versions of Android (LineageOS, GrapheneOS, …) need to reimplement more and more parts of the system while being unable to run an increasing number of Android apps.&lt;/p&gt;
+&lt;p&gt;Android had been a trap all along. &lt;/p&gt;
+&lt;h2 id=&quot;soustitre-1&quot;&gt;Apple’s Androidification playbook&lt;/h2&gt;
+&lt;p&gt;Despite its name, Androidification had not been invented by Google. I’m sure you could find earlier instances. For example, Apple had been doing the same, although more openly and more quickly. MacOS (OS X, as it was known at the time), was heavily based on the Open Source FreeBSD merged with some design components from NeXT (which was itself relying on BSD).&lt;/p&gt;
+&lt;p&gt;This was made possible because there was no copylefted code in BSD. In facts, BSD people were happy to see their code used that way. And Apple never pretended to care about Open Source.&lt;/p&gt;
+&lt;p&gt;Nevertheless, I saw many of my free software fellows happily jump into the Apple frenzy with the excuse &amp;quot;It’s all UNIX and free software under the hood&amp;quot;. The cage is golden, let’s fly in it!&lt;/p&gt;
+&lt;p&gt;The candid naivety of software geeks never ceases to impress me.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-03-28-geeks-naivety.html&quot;&gt;The candid naivety of geeks (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;Is Canonical next?&lt;/h2&gt;
+&lt;p&gt;To avoid any risk of legal liability, keys to a good Androidification are:&lt;/p&gt;
+&lt;p&gt;1. Avoid or remove any copylefted code from your platform&lt;br&gt;
+2. Make important features depend on centralised services you control.&lt;br&gt;
+3. Even better: requires an account on your proprietary platform &lt;/p&gt;
+&lt;p&gt;Andoidification is exactly what Canonical had been doing for years with Ubuntu. Keep only the GPL Linux at the heart while removing all the GNU copylefted tools. The similarity between Snap and the Google Play store is striking when you think about it that way. Will they try to resurrect the defunct online Ubuntu One account?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://go.theregister.com/feed/www.theregister.com/2025/03/19/ubuntu_2510_rust/&quot;&gt;Ubuntu 25.10 plans to swap GNU coreutils for Rust (go.theregister.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But, of course, you don’t replace 40-year-old tools without breaking the life of the people who really use those tools. Enshitification is a symptom on Androidification: stuff that works too well is now broken in order to be replaced by alternatives that can control you (and don’t get me started on how Snap is breaking everything everywhere)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible&quot;&gt;blog/linux/Ubuntu2604RustSudoNotCompatible (cks)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;How Androidification turned our code against ourselves&lt;/h2&gt;
+&lt;p&gt;We now live in a vast proprietary software infrastructure which is every day harder to escape. This infrastructure is not only proprietary and making us pay for it, it is actively harming us. Making us addict, spying us, bombarding us with ads, denouncing us, stealing our elections.&lt;/p&gt;
+&lt;p&gt;We thought that some proprietary software was acceptable. We believed that Open Source mattered more than Free Software. As a consequence, we have lost all nearly all our online freedoms in the process. We lost our free will. We are losing the free Internet, which was probably the best tool we had to save our planet.&lt;/p&gt;
+&lt;p&gt;But the worst is that we, young idealist geeks, we contributed to that torment nexus. We wrote the code of our own demise.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Android_logo_3.jpg&quot;&gt;Photo-collage based on a public domain picture (look, I’m Cory Doctorow!)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">Confiscating the Commons, part 1: The invention of proprietary software</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-11-23-invention_proprietary_software.html" />
+	<id>https://ploum.net/2026-11-23-invention_proprietary_software.html</id>
+	<published>2026-11-23T00:00:00Z</published>
+	<updated>2026-11-23T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;Confiscating the Commons, part 1: The invention of proprietary software&lt;/h1&gt;
+		&lt;p&gt;It is worth remembering that, historically, software had always been free. Software described ideas, ways of using computers, algorithms and nobody thought you could &amp;quot;own&amp;quot; something like that. Software could be as volatile as some notes on a sheet of paper or verbal instructions about how to plug wires. &lt;/p&gt;
+&lt;p&gt;When the young Bill Gates wrote his &amp;quot;letter to hobbyists&amp;quot; in 1976, he was trying to convince people to sell and buy software instead of just sharing them, a position that was not widespread at the time. Even Apple replied in ads to advertise the fact that they were favouring free software that could be shared. Richard Stallman doesn’t even remember reading that Bill Gates letter although he was reading that particular magazine.&lt;/p&gt;
+&lt;p&gt;Apple changed its stance in 1983, suing Franklin, which was copying Apple software to sell clones of Apple’s computers (which were popular because they were the only computers able to run the independent software Visicalc, the first spreadsheet). Apple lost.&lt;/p&gt;
+&lt;p&gt;Let me repeat this : in 1983, a vendor was selling computers with Apple software, without paying Apple, and the court judged it was perfectly legal.&lt;/p&gt;
+&lt;p&gt;But Apple appealed the decision. &lt;/p&gt;
+&lt;p&gt;And won. &lt;/p&gt;
+&lt;p&gt;The rest is history.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://linfo2401.net/4_licenses.html&quot;&gt;Licenses and the invention of proprietary software (linfo2401.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-1&quot;&gt;Free Software and Open Source&lt;/h2&gt;
+&lt;p&gt;This was not random. The writing had been on the wall. A nascent software industry heavily wanted to make software &amp;quot;proprietary&amp;quot;. One of the only person to perceive that confiscation of users’ freedoms was Richard Stallman, who counterattacked by creating the Free Software movement.&lt;/p&gt;
+&lt;p&gt;Richard Stallman managed to build a whole counterculture but insisted on being &amp;quot;pure&amp;quot;. Any proprietary software was evil in his eyes. He foresaw that if you gave up anything to proprietary software, your freedoms would evaporate. You were as free as the least free software of your toolchain.&lt;/p&gt;
+&lt;p&gt;But most software hackers had to deal with proprietary software. They also saw potential business opportunities by mixing free and proprietary software. That’s how, nearly 15 years after Stallman’s GNU project inception, Eric Raymond and Bruce Perens formalised the &amp;quot;Open Source Software&amp;quot; concept.&lt;/p&gt;
+&lt;p&gt;Technically, Open Source and Free Software were the same things. The goal was to appeal to businesses by removing the word &amp;quot;free&amp;quot; and distancing the movement from the non-business-minded Stallman.&lt;/p&gt;
+&lt;p&gt;What Raymond and Perens envisioned was a huge common of Free and Open Source Software. Those could be used to build small proprietary tools on top of them. Under the free market theory, those proprietary tools would be used only because they were absolutely the best. Also, any popular proprietary software would, of course, be relatively quickly implemented as a free software.  &lt;/p&gt;
+&lt;p&gt;This would force proprietary developers to innovate continuously while the commons would be constantly improved. Purely proprietary solutions, like Microsoft was developing, could not be sustainable in the long term, according to Raymond. Open Source would eventually win. &lt;/p&gt;
+&lt;p&gt;That was the vision, that was the dream.&lt;/p&gt;
+&lt;p&gt;And, by some aspect, it was right: Open Source won. Most software in use today are based on the Open Source commons. Without Open Source, there would be no Google, no Apple, no Meta, no Netflix.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;Open Source: free labour for businesses&lt;/h2&gt;
+&lt;p&gt;Reluctantly at first, businesses started to jump into the Open Source bandwagon. Microsoft was one of the latest but quickly became the biggest when they discovered that, with Open Source, you could freely pillage the commons without any downsides. You could simply use the work done for free by thousands of volunteers. Sure, it might sometimes be required to put their name in some obscure infobox but, even if you forgot, who would care? But if you did, they would sometimes be proud to work for free for you and listen to your suggestions and do even more unpaid labour. &lt;/p&gt;
+&lt;p&gt;That’s why Microsoft went as far as buying Github to get a monopoly on Free Software forge.&lt;/p&gt;
+&lt;p&gt;The only thing you needed to be careful was to avoid &amp;quot;copyleft&amp;quot;. Fortunately, it was easy to convince free software hackers that copyleft was a &amp;quot;cancer&amp;quot; and that copylefting your code was hurting your chances to become a dot-com billionaire. And to be sure, MIT became the default license on Github.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2024-07-01-opensource_sustainability.html&quot;&gt;On Open Source and the Sustainability of the Commons (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;The end of our freedoms&lt;/h2&gt;
+&lt;p&gt;The main reason why monopolistic companies were so wary to avoid any copylefted code was that copyleft was assuming strong copyright laws, something they wanted. In the grand scheme of things, copyleft was validating the systemic vision of a world where everything is copyrightable. Best of all: most pundits totally missed the power of copyleft. Die hard freedom fans would defend MIT as the true freedom license. It looks like, besides Stallman, nobody really understood copyleft. And Stallman was awkward, to say the least.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2023-06-19-more-rms.html&quot;&gt;We need more of Richard Stallman, not less (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See, for example, how Molly White pokes fun at people who want to open their code but not have it reused &amp;quot;like that&amp;quot;. She, like many, totally missed the copyleft part.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.citationneeded.news/free-and-open-access-in-the-age-of-generative-ai/&quot;&gt;“Wait, not like that”: Free and open access in the age of generative AI (www.citationneeded.news)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The next step in that plundering is to have LLMs trained on our free software commons so they can generate very similar looking codes which, magically, have no license. The copyrighting of the code which was deemed so important by Bill Gates and Apple is, suddenly, not important anymore. Respecting the laws they defended for 40 years might even &amp;quot;kill their business model&amp;quot;. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zdnet.com/article/why-open-source-may-not-survive-the-rise-of-generative-ai/&quot;&gt;Why open source may not survive the rise of generative AI (www.zdnet.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We were told that the copyright would protect our work. It is not true anymore. Marcello Vitali-Rosati told it: don’t call it AI, call it privatisation of the commons.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.sens-public.org/marcellovitalirosati/ia-capitalisme.html&quot;&gt;Arrêtons de parler d&amp;#x27;Intelligence Artificielle: ce n&amp;#x27;est que le nom de la privatisation de l&amp;#x27;espace public (blog.sens-public.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But this privatisation is not new. There’s even a whole strategy for it that I call &amp;quot;Androidification&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Continue reading:&lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-11-24-androidification.html&quot;&gt;Confiscating the Commons, part 2: The Androidification of Open Source (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">The Simulation We Are Living In</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-11-19-capitalist_roleplay.html" />
+	<id>https://ploum.net/2026-11-19-capitalist_roleplay.html</id>
+	<published>2026-11-19T00:00:00Z</published>
+	<updated>2026-11-19T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;The Simulation We Are Living In&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;Or How We Are Roleplaying a Successful Capitalist Life &lt;/h2&gt;
+&lt;p&gt;Nat wrote a piece about Copilot being the peak-oil of high technology.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.obsessivefacts.com/gemini-proxy?uri=gemini://gemini.njms.ca/gemlog/peak-oil-high-technology.gmi&quot;&gt;Copilot is the peak oil of high technology (gemini.njms.ca)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I agree with Nat’s anger and the feeling of disorientation.&lt;/p&gt;
+&lt;p&gt;I’ve lived through multiple tech bubbles and, in all of them, the &amp;quot;believers&amp;quot; were a minority. In fact, you always had a minority of vocal believers opposing &amp;quot;serious seasoned people&amp;quot;. The vast majority of the world didn’t care much about the bubble or were exposed to it only through mainstream media. I’ve witnessed crazy stuff, including very influential and powerful people trying to &amp;quot;join the bubble&amp;quot;. But if I disconnected, walked out of parties or meeting or went outside, I would see little trace of the bubble.&lt;/p&gt;
+&lt;p&gt;With the AI bubble, it seems like nearly everyone has been turned into a believer. Around me, every single conversation seems to be about AI, especially in non-tech circles. While my experience told me that most industries have always been very reluctant to adopt new technologies, we are witnessing a world where every big company, every CEO, every manager and every teacher/academic is suddenly voluntarily sabotaging a lifetime of experience to make sure we use an unreliable-by-design tool everywhere even though it barely existed a couple of years ago.&lt;/p&gt;
+&lt;p&gt;From a technological perspective, this is absolute nonsense.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;Remember that everything is propaganda&lt;/h2&gt;
+&lt;p&gt;Reading Chomsky helped me a lot here: I was reminded that everything we read, everything we &lt;br&gt;
+hear is propaganda. Those are not facts. Those are intentionally designed messages to turn us into believers.&lt;/p&gt;
+&lt;p&gt;The current propaganda is geared toward making chatbots the new norm because this is our current consumption bubble and the system always needs something into which we will inject as much money as we can.&lt;/p&gt;
+&lt;p&gt;According to Chomsky, propaganda means you should always invert cause and consequence:&lt;/p&gt;
+&lt;p&gt;- People don’t write good things about vibecoding because it works for them, they believe it works for them because they read and need to write good things about it.&lt;br&gt;
+- Chatbots are not inevitable: people try to convince themselves they are inevitable to justify using them.&lt;/p&gt;
+&lt;p&gt;We now know that, at least for Open Source programming, AI doesn’t make you more productive. But it makes you believe that you are. Just like drugs make you believe you are smart and alcohol makes you believe that you are a good driver. The productivity of LLMs is not a fact. But the intoxication is real.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2507.09089&quot;&gt;[2507.09089] Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (arxiv.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The propaganda is not even subtle! It is transparent and sometimes borderline parodic, like the time when an Anthropic employee recognized that it was stupid to have an AI managing your business but you had to prepare for that world because you had no choice.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-12-19-prepare-for-that-world.html&quot;&gt;Prepare for That Stupid World (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Bad managers are leading the world&lt;/h2&gt;
+&lt;p&gt;In the end, this is mainly propaganda to make us believe that we live in the world as seen through the eyes of Juliuses (my word for what Ed Zitron calls &amp;quot;the business idiots&amp;quot;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2024-12-23-julius-en.html&quot;&gt;My colleague Julius (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Juliuses are people who don’t even understand that there are things to understand. They don’t even have access to that part of consciousness where you truly understand a concept. They live in a blurry state of consciousness where they only care about the &amp;quot;next action&amp;quot;. They &lt;br&gt;
+don’t have any notion of &amp;quot;rationality&amp;quot; or &amp;quot;logic&amp;quot;. They believe intuition is as good as scientific knowledge (&amp;quot;Oh, you are Sagittarius? That explains why you speak like that!&amp;quot;)&lt;/p&gt;
+&lt;p&gt;Feynman famously said that, to solve a problem, you need to:&lt;/p&gt;
+&lt;p&gt;1. Write the problem down&lt;br&gt;
+2. Think hard&lt;br&gt;
+3. Write the solution&lt;/p&gt;
+&lt;p&gt;As Feynman said, most people do everything they can to skip steps 1 and 2. &lt;br&gt;
+They really want to go straight to 3. That’s why AI is wonderful: it even does what looks like step 3 for you if you are not qualified enough to check.&lt;/p&gt;
+&lt;p&gt;But it cannot work for one simple reason: if your problem is not clear, you will never have a good solution. Writing code is 90% about defining the problem and all its edge cases. Writing code is taking decisions, by essence. The same can be said for legal contracts. Lawyers are people who write a form of code where they want to account for every conceivable situation and decide what to do before it happens.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;We are delegating our free will to remove accountability&lt;/h2&gt;
+&lt;p&gt;In his book &amp;quot;Éloge du bug&amp;quot;, Marcello Vitali-Rosati draws an analogy with the genie of Aladdin. In the story, Aladdin asks for &amp;quot;beautiful clothes&amp;quot; and the genie obeys. Or does he?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.editions-zones.fr/livres/eloge-du-bug/&quot;&gt;Éloge du bug - Éditions Zones (www.editions-zones.fr)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In fact, the genie makes a lot of decisions about what &amp;quot;beautiful clothes&amp;quot; are. Would they be clothes that &amp;quot;look expensive&amp;quot;? That &amp;quot;follow the norms&amp;quot; or, on the contrary, that are completely new and creative? Without realizing it, Aladdin completely gave up on his free will and his own identity. From that moment, Aladdin is just a puppet in the genie’s hands.&lt;/p&gt;
+&lt;p&gt;The whole point of vibecoding is &amp;quot;let an opaque proprietary algorithm controlled by a huge economic entity take all the decisions about what it thinks I want now and how I should live my future&amp;quot;. It cannot work if there’s some accountability in play. Nobody would sign a randomly generated contract. So the trick is to remove accountability. &lt;/p&gt;
+&lt;p&gt;We have all encountered examples of &amp;quot;I’m not wrong, this is what AI told me&amp;quot;. By communicating a lot about ChatGPT mistakes and saying they take them seriously, OpenAI is reinforcing the sense that you are not accountable for blindly obeying ChatGPT. You can delegate your responsibilities to them. The whole discourse about &amp;quot;inevitability&amp;quot; is only that: it is about removing liability and responsibility. &amp;quot;Of course I signed that random contract. Everyone does it. It is inevitable. And they will make the next contract better.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Juliuses live in a world where they do everything to get immediate benefits and avoid accountability. That’s what modern businesses are built for: you get the money as an individual but the company pays fines and nobody goes to jail, even if you kill millions with a defective product (except if you mess with shareholders money,then you are liable). At worst, you are fired (with a golden parachute if you are high enough on the ladder).&lt;/p&gt;
+&lt;p&gt;In that regard, LLMs are a terrible engineering tool. After all, they have random output, are unreliable by design and act randomly. But they are perfect business tools because they remove agency, free will and liability.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-5&quot;&gt;The successful capitalist roleplay &lt;/h2&gt;
+&lt;p&gt;On his blog, Ron Gilbert quotes &amp;quot;AI feels amazing when it’s talking about a subject you know nothing about, but is laughably wrong when you do&amp;quot;. The solution is thus simple: make sure nobody knows anything about anything anymore.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://grumpygamer.com/my_dinner_with_ai/&quot;&gt;My Dinner With AI (grumpygamer.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The social media bubble was led by marketers and their view of the world. They wanted us to believe that everybody was a marketer, that our life should be marketed (&amp;quot;personal branding&amp;quot;), that every happy moment was there to &amp;quot;advertize&amp;quot; how cool we are. People do not meet to have fun, they meet to take pictures to convince the world they had fun.&lt;/p&gt;
+&lt;p&gt;The cryptocurrency bubble was led by financiers. They told us that everything is an asset and everyone is a trader. We should all become rich while selling assets to each other. The AI bubble is led by management. Everyone should be the manager of a team of &amp;quot;agents&amp;quot; that blindly obey and agree to everything we say.&lt;/p&gt;
+&lt;p&gt;The capitalist system is successfully selling us the fact that, after our long hours at a shitty job, if we are lucky enough to have one, we can roleplay a very successful capitalist life on a small bright screen. Indeed, they were wrong about the VR bubble! No need for immersive virtual reality. We are intoxicated enough by the capitalist roleplay to break our necks while spending our nights looking at a screen smaller than those Terry Gilliam envisioned in Brazil. At least, in Brazil, they still had real keyboards!&lt;/p&gt;
+&lt;figure&gt;
+&lt;a href=&quot;https://ploum.net/files/brazil.jpg&quot;&gt;&lt;img alt=&quot;Still from the movie &amp;quot;Brazil&amp;quot; (by Terry Gilliam)&quot; src=&quot;https://ploum.net/files/brazil.jpg&quot; width=&quot;450&quot; class=&quot;center&quot;&gt;&lt;/a&gt;
+&lt;figcaption&gt;Still from the movie &amp;quot;Brazil&amp;quot; (by Terry Gilliam)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Remember the pods in The Matrix? Turns out small addictive screens do the job. We even pay for them! Neo is not fighting Agent Smith with a cool leather jacket and guns. He wears a lousy t-shirt and is ignored, frowned upon or, at best, offered social skills therapy.&lt;/p&gt;
+&lt;p&gt;When you understand that this is all propaganda, a fiction, a shared dream (or a nightmare), that business people are all lying through their teeth because, for them, it’s part of the game, it gradually starts to make sense.&lt;/p&gt;
+&lt;p&gt;But it is no less frightening…&lt;/p&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="fr">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">À la recherche de notre temps perdu.</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-11-16-temps_perdu.html" />
+	<id>https://ploum.net/2026-11-16-temps_perdu.html</id>
+	<published>2026-11-16T00:00:00Z</published>
+	<updated>2026-11-16T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;À la recherche de notre temps perdu.&lt;/h1&gt;
+		&lt;p&gt;Longtemps, j’ai voulu me coucher de bonne heure. Parfois, à peine mon smartphone éteint, je fermais les yeux très vite pour n’avoir pas le temps de me dire : « Quoi ? Déjà deux heures du mat ? Mais j’ai à peine regardé quelques posts ! »&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-1&quot;&gt;Où est donc passé le temps ?&lt;/h2&gt;
+&lt;p&gt;Si une vidéo Tik-Tok de 10 secondes fait un million de vues, c’est un succès, Un buzz. On en parlera même peut-être à la télé !&lt;/p&gt;
+&lt;p&gt;En réalité, cela signifie un total de 10 millions de secondes de vie. Probablement moins, car beaucoup de vues sont factices ou incomplètes. Il suffit d’observer une personne faire du « Doom scrolling » (défilement infini de la mort) pour voir que les 10 secondes de la vidéo ne sont jamais atteintes. Le défilement est parfois arrêté le temps de mettre un like avant de continuer. Une seconde, deux à tout casser. Souvent moins.&lt;/p&gt;
+&lt;p&gt;Si un article de blog met 10 minutes à lire, il faut qu’il soit lu 16.000 fois pour atteindre autant de temps humain. Cela reste un succès impressionnant, mais, soudainement, beaucoup moins rare. Lorsque j’avais encore des statistiques, mon record était de plus de 100.000 visiteurs uniques sur le même billet en une journée (mais cela ne signifie pas pour autant des lecteurs).&lt;/p&gt;
+&lt;p&gt;Un film de 1h30 devra être vu moins de 2000 moins pour arriver au même nombre de secondes. Et pour un livre qui se lit en 6h, le nombre de lecteurs nécessaires descend alors à seulement 460 !&lt;/p&gt;
+&lt;p&gt;460 lecteurs, c’est à la portée de beaucoup de livres, même autoédités. Rien qu’avec la promotion dans son réseau proche et en offrant des exemplaires dans les bibliothèques, on arrive assez facilement à la moitié de ça.&lt;/p&gt;
+&lt;p&gt;Or ce nombre paraît ridicule. Risible. Aucun livre n’affichera fièrement « Déjà plus de 460 exemplaires vendus ! »  Par contre, « A captivé l’humanité durant 10 millions de secondes », c’est tout de suite plus vendeur, non ? Je vais proposer le truc à mon éditeur !&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;L’inutilité du temps disparu&lt;/h2&gt;
+&lt;p&gt;Sans compter que ce calcul relève d’une sous-estimation totale. Car la vidéo Tik-Tok est coincée entre deux vidéos semblables. Elle sera immédiatement oubliée. Plusieurs expériences ont démontré que, ne changeant pas de contexte, nous oublions littéralement ce que nous avons vu et que cet oubli est responsable du fait de « ne pas voir le temps passer ». &lt;/p&gt;
+&lt;p&gt;C’est le principe du doom-scrolling: Nous avons vu, nous avons liké, notre « vue » a été comptabilisée par tous les algorithmes, mais nous sommes incapables de nous en souvenir. Nous avons échangé du temps de vie contre une décharge de dopamine, nous avons transformé une partie de notre existence en une statistique marketing dont nous n’avons même pas conscience.&lt;/p&gt;
+&lt;p&gt;Une vidéo de 10 secondes qui fait un million de vues a littéralement volé 10 millions de secondes à l’humanité, presque 4 mois de vie !&lt;/p&gt;
+&lt;p&gt;Un article de blog réellement lu par quelques milliers de personnes pourra, par contre, rester en mémoire, avoir un impact. Impact qui, si j’en crois les mails que je reçois, peut même parfois être durable même si c’est certainement assez rare.&lt;/p&gt;
+&lt;p&gt;À l’opposé, la lecture d’un livre est souvent étalée sur plusieurs jours. Jours durant lesquels le lecteur quittera régulièrement l’univers poétique pour y replonger à chaque reprise. Des jours où il gambergera, réfléchira, en rêvera parfois. Au final, le livre laissera un souvenir marquant qui peut durer plusieurs années voire toute une vie !&lt;/p&gt;
+&lt;p&gt;Un livre qui change la vie d’une dizaine de lecteurs aurait alors beaucoup plus d’impact réel que n’importe quel influenceur avec des millions de vues qui vole littéralement le temps de ses followers.&lt;/p&gt;
+&lt;p&gt;Les métriques des réseaux sociaux sont non seulement fausses et trompeuses : elles nous ont volé la temporalité, nous faisant croire que seule existait l’instantanéité.&lt;/p&gt;
+&lt;p&gt;J’en veux particulièrement aux médias qui, pour la plupart, ont complètement abandonné leur mission d’information pour se concentrer sur les &amp;quot;buzz&amp;quot; de hier ou avant-hier tout en espérant créer celui de demain. Toute espèce de critique laisse la place au « meta-buzz ». Mais ce n’est pas nouveau :&lt;/p&gt;
+&lt;blockquote&gt; « Ce que je reproche aux journaux c’est de nous faire faire attention tous les jours à des choses insignifiantes tandis que nous lisons trois ou quatre fois dans notre vie les livres où il y a des choses essentielles. »&lt;br&gt; &lt;br&gt; — Proust, Du côté de chez Swann&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;Alors, sortez de ce piège. Il vous reste probablement moins de 2 milliards de secondes à vivre ! Arrêtez de vous les faire voler : lisez des livres !&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Encart publicitaire&lt;/h2&gt;
+&lt;p&gt;Tiens, justement, vu qu’on parle de livres, c’est l’opération de Noël des éditions PVH !&lt;/p&gt;
+&lt;blockquote&gt; « Oh ben ça ça tombe bien alors ! »&lt;br&gt; &lt;br&gt; — Les lecteurs de ce blog, à chaque fois que je place une publicité pour mes bouquins&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;Le principe de l’opération de Noël de PVH, c’est de vous faire commander le plus tôt possible vos cadeaux parce que nous savons par expérience que les différentes postes nationales sont souvent submergées en décembre et que les colis prennent du retard. Et parce qu’offrir un beau roman sous licence libre, ça fait toujours plaisir !&lt;/p&gt;
+&lt;p&gt;Il y a deux ans, je vous avais proposé une petite sélection qui est toujours d’actualité (car un bon livre, c’est intemporel !)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2024-11-27-offrez-des-livres.html&quot;&gt;Offrez des évasions livresques ! (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cette année, il est également possible d’acquérir au tiers du prix normal des livres légèrement abimé. 4,5€ pour « Stagiaire au spatioport Omega 3000 et autres joyeusetés que nous réserve le futur ». À ce prix là, je me tranche la gorge !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pvh-editions.com/operation-noel-2026&quot;&gt;Opération de Noël 2026 (pvh-editions.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tous les bénéfices de l’opération de Noël alimenteront une cagnotte qui servira à lancer le département « bandes dessinées » de PVH. Je vous raconterai tout ça très bientôt !&lt;/p&gt;
+&lt;p&gt;Vous pouvez bien entendu commander vos livres chez votre libraire préféré. La période de Noël est essentielle pour assurer la survie des commerces indépendants, soutenez vos libraires !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Geschmolzene_Uhr_Kerzenstaender_Buecher_Stillleben_Galaxy-Note-8_2019.jpg&quot;&gt;Photo par VSchagow (commons.wikimedia.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;À propos de l’auteur :&lt;/h3&gt;
+&lt;p&gt;Je suis &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt; et je viens de publier &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, une fable écolo-cycliste entièrement tapée sur une machine à écrire mécanique. Pour me soutenir, &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;achetez mes livres&lt;/a&gt; (si possible chez votre libraire) !&lt;/p&gt; 
+&lt;p&gt;Recevez directement par mail &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/fr.listes.ploum.net/&quot;&gt;mes écrits en français&lt;/a&gt; et &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;en anglais&lt;/a&gt;. Votre adresse ne sera jamais partagée. Vous pouvez également utiliser &lt;a href=&quot;/atom_fr.xml&quot;&gt;mon flux RSS francophone&lt;/a&gt; ou &lt;a href=&quot;/atom.xml&quot;&gt;le flux RSS complet&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">The anti-marketing aspect of the Gemini network</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-11-12-anti-marketing-gemini.html" />
+	<id>https://ploum.net/2026-11-12-anti-marketing-gemini.html</id>
+	<published>2026-11-12T00:00:00Z</published>
+	<updated>2026-11-12T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;The anti-marketing aspect of the Gemini network&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;And why your niche should stay a niche&lt;/h2&gt;
+&lt;p&gt;I like Gemini. Not the Google Chatbot but the network that existed before Google named its product. If you are enough of a geek, you may want to give it a try.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://brennan.day/creating-a-blog-in-gemini/&quot;&gt;Creating a Blog in Gemini:// (brennan.day)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eoin is counting the number of &amp;quot;capsules&amp;quot; on the Gemini network. A capsule is the equivalent of a &amp;quot;website&amp;quot; on the Web or a &amp;quot;hole&amp;quot; on Gopher. It’s a personal space, a bunch of pages. Blogs become &amp;quot;gemlogs&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Eoin’s first observation is that the number of active capsules is slowly growing. The network is healthy.&lt;/p&gt;
+&lt;p&gt;But his second observation is really interesting: there’s absolutely no correlation between the number of new capsules in a given month and articles about the Gemini protocol being promoted on the first page of Hacker News.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.obsessivefacts.com/gemini-proxy?uri=gemini://spool-five.com/gemlog/2026-02-02_counting_capsules.gmi&quot;&gt;Counting Capsules (spool-five.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spool-five.com/posts/2026-02-02_counting_capsules/&quot;&gt;same content but on the Web&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is a confirmation of what I’ve been trying to explain for years: your metrics and web statistics are completely useless. The number of visitors, the number of clicks are worthless if you are not a marketer trying to extract money from a big brand. They don’t mean anything.&lt;/p&gt;
+&lt;p&gt;By the way: you should really avoid Hacker News these days. The front page is heavily manipulated to promote pro-AI stuff and bury everything that might question wether fascism-capitalism is good.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://drewdevault.com/blog/Why-is-HN-like-that/&quot;&gt;Why is Hacker News like that? (drewdevault.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A Mozilla employee is leaving after 15 years and comes to a similar conclusion. Mozilla is awesome because it has always been abnormal. It is mostly used by abnormal people. This means that hiring &amp;quot;normal managers&amp;quot; who try to make it &amp;quot;normal&amp;quot; and chase &amp;quot;normal&amp;quot; metrics is, of course, a recipe for failure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.unitedheroes.net/5751&quot;&gt;jr conlin&amp;#x27;s ink stained banana (blog.unitedheroes.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I always failed to understand those marketing people who try to be &amp;quot;like others but a bit cheaper&amp;quot;. While all the value is being different enough to nurture your own niche.&lt;/p&gt;
+&lt;p&gt;I completely removed statistics from my blog in 2013. At the time, I had a very strong realisation that the blog posts that mattered most, those I was proudest of, and those that prompted people to mail me even years later all had mediocre statistics. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/how-i-learned-to-stop-worrying-and-love-the-web/index.html&quot;&gt;How I Learned to Stop Worrying and Love the Web (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the contrary, most of my hit, my &amp;quot;buzz&amp;quot;, were quickly forgotten. But, being addicted to statistics, I was unconsciously adapting my writing style to improve those numbers. I was scrolling through social media posts that were highly popular while trying to create some myself.&lt;/p&gt;
+&lt;p&gt;Closing my social media accounts and, instead, procrastinating on Gemini had the opposite effect: making me read other ideas without caring about reactions, about popularity. Jsreed5 made the same observation while he was trying the Nostr protocol. While Nostr’s technicalities may be interesting by themselves, the content on it is similar to the one found of mainstream social networks. And our smolnet Gemini-formatted brains cannot take it anymore!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.obsessivefacts.com/gemini-proxy?uri=gemini://jsreed5.org/log/2026/202605/20260520-a-geminauts-view-of-nostr.gmi&quot;&gt;A Geminaut&amp;#x27;s View of Nostr (jsreed5.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We really need a simple Gemini hosting provider that would also provide a Web version, to welcome less technical-minded people who still may want to access a quieter, non-commercial, out-of-time virtual space.&lt;/p&gt;
+&lt;p&gt;Lot of people are trying Gemini and find that there’s no content on it, that they can’t have their news and dopamine hit on it. Well, that’s exactly the point. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2022-10-05-there-is-no-content-on-gemini.html&quot;&gt;There Is No Content on Gemini (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The fact that only a niche minority want to use it is also part of the point. Gemini might not be for you. That’s fine. The modern Web and even the real world (where every device is actively working against me and every human interaction seems to be about AI) is increasingly not for me. So let me have my strange niche space.&lt;/p&gt;
+&lt;p&gt;UPDATE: Those Gemini hosting providers exist:&lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gemcities.com/&quot;&gt;Gemcities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://smol.pub/&quot;&gt;Smol.pub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">The AI Pascal’s Wager</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-10-01-pascal_wager.html" />
+	<id>https://ploum.net/2026-10-01-pascal_wager.html</id>
+	<published>2026-10-01T00:00:00Z</published>
+	<updated>2026-10-01T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;The AI Pascal’s Wager&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;Should you accept contributions generated by LLMs in your Open Source project?&lt;/h2&gt;
+&lt;p&gt;Let’s put aside for a moment all the ethical/ecological/societal considerations about the use of generated code (also known as &amp;quot;slop&amp;quot; if you don’t like it and &amp;quot;vibecode&amp;quot; if you do) in open source projects and consider it from a simple, practical, pragmatic point of view.&lt;/p&gt;
+&lt;p&gt;There are basically three potential positions:&lt;/p&gt;
+&lt;p&gt;1. Mostly accepting LLMs as neutral tools that contributors could use (with safeguards or not, with policy of human reviewing or not).&lt;br&gt;
+2. Finding a compromise or choosing not to do anything, issuing some &amp;quot;not yes, not no&amp;quot; guidelines. This is now known as the &amp;quot;Debian AI policy&amp;quot;.  &lt;br&gt;
+3. Strongly rejecting LLMs (with potential exceptions that have major safeguards).&lt;/p&gt;
+&lt;p&gt;The middle ground (position 2) may seem like the most rational position to take. It is also the default. Let’s wait and not decide too quickly!&lt;/p&gt;
+&lt;p&gt;But what we can learn from Debian is that nobody is really happy with it. If we think about it from a longer-term perspective, we can infer that the middle-ground position is unsustainable. LLM generated contributions will eventually slip in despite some guardrails such as &amp;quot;human review is mandatory&amp;quot;. The longer a project stays in the &amp;quot;middle ground&amp;quot;, the more ineluctable the slop infection becomes. &lt;/p&gt;
+&lt;p&gt;Which is to say: not choosing or trying to choose a middle ground is basically full support of generated code, but slower. It is effectively choosing position 1 (pro-AI) without being explicit about it. It is either naive or hypocritical.&lt;/p&gt;
+&lt;p&gt;Instead of letting the world choose for you, I believe that each open source project is now facing a strong choice that has to be made urgently. Accept AI-generated contributions or not. &lt;/p&gt;
+&lt;p&gt;This is not easy.&lt;/p&gt;
+&lt;p&gt;Both choices will alienate some part of the community and some key contributors. That’s sad, but a project cannot please everyone.&lt;/p&gt;
+&lt;p&gt;Now, contributors may argue whether pro-vibecode or anti-slop is better from a philosophical, ethical or pragmatic point of view. Nobody can decide what is best for a project but its key community members.&lt;/p&gt;
+&lt;p&gt;Let’s try to think from a generic strategical point of view. What will be the effects of both positions on the project?&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;Adopting AI&lt;/h2&gt;
+&lt;p&gt;PROS: &lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;More contributions and less time spent developing annoying stuff. While every study on the subject tends to conclude that using LLMs is actually slower than writing code yourself, let’s admit that advantage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CONS: &lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Alienate a part of the community that rejects vibecoded software. In some FLOSS circles, that may include very influential users.&lt;/li&gt;
+&lt;li&gt;Developing your project become increasingly dependent of on expensive and completely proprietary software over which you have no control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, in the short term, adopting AI mostly alienates some community members and abandons your independence in order to improve some (perceived) productivity.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Rejecting AI&lt;/h2&gt;
+&lt;p&gt;PROS: &lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Strong support from the “ethical” part of the community (see the growing number of anti-AI software lists)&lt;/li&gt;
+&lt;li&gt;Nothing changes. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CONS:&lt;br&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Alienate some contributors who really want to use AI.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you think about it, contributors who are completely turned away by the fact that they can’t use LLMs are probably contributors you don’t want in your project, even if you have a Debian-like “moderate use of AI” position. People who don’t want to contribute without LLMs are probably not able to review and understand the code by themselves (or they will lose that ability soon enough). To illustrate this, see the number of Pull Requests on Github were the author admits &amp;quot;not having the knowledge to test their own code&amp;quot;.&lt;/p&gt;
+&lt;p&gt;So refusing contributions from those people is probably more of an advantage than a disadvantage. &lt;/p&gt;
+&lt;p&gt;More importantly, rejecting AI will not alienate any users. Nobody in the world is saying &amp;quot;I’m refusing to use this software because it was made by humans&amp;quot;.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;The longer-term perspective&lt;/h2&gt;
+&lt;p&gt;One of the main problems with using generated code is that we still don’t know what impact it could have in the long term. What will the codebase look like when each contribution is less and less understood by humans? What if AI assistants become suddenly too expensive to use and nobody understand the architecture anymore? What if huge portions of your code are, in fact, copy-pasted from another project using a different incompatible license?&lt;/p&gt;
+&lt;p&gt;Cory Doctorow compares slop to asbestos: it looks nice, shiny and it is easy to put it everywhere. But if you ever need to regain control or remove the slop, it will take years of work, at best.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-5&quot;&gt;Your own version of Pascal’s wager&lt;/h2&gt;
+&lt;p&gt;While mass marketing is trying to instil a Fear of Missing Out hysteria, the most rational and pragmatic approach is to strongly reject all AI-generated contributions to your projects. For now.&lt;/p&gt;
+&lt;p&gt;Someday, we might realise that LLMs are doing good in the world, that they are evolving toward ethical, reliable, sustainable solutions, and that people who use them are happier (try to read that sentence again without rolling your eyes). If that really happens, you could always change your AI policy. It will cost you nothing.&lt;/p&gt;
+&lt;p&gt;But if you let the slop in now, you may regret it forever… You may be forced to abandon your project.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you refuse AI-generated contributions to your project right now, the worst very hypothetical regret you could ever have is &amp;quot;I should probably have done it sooner&amp;quot;. &lt;/p&gt;
+&lt;p&gt;The conclusion is simple: If you are AI-agnostic, the pragmatic course of action is to strongly refuse any AI-generated contribution to your project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Pascaline-CnAM_823-1-IMG_6513.JPG&quot;&gt;Picture of a Pascaline by Rama&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="fr">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">Ah ouais, quand même, on en est là !</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-09-23-on_en_est_la.html" />
+	<id>https://ploum.net/2026-09-23-on_en_est_la.html</id>
+	<published>2026-09-23T00:00:00Z</published>
+	<updated>2026-09-23T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;Ah ouais, quand même, on en est là !&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;À ce point immergé dans notre propre stupidité. &lt;/h2&gt;
+&lt;p&gt;Durant la dernière vague de chaleur, je suis tombé sur un article dans la presse nationale belge vantant les mérites d’une application permettant de mieux survivre à la canicule. Il suffisait d’entrer sa position et quelques données techniques sur son habitation (volume, type d’isolant, exposition…) et l’application vous disait quand ouvrir et fermer vos fenêtres pour garder un maximum de fraîcheur.&lt;/p&gt;
+&lt;p&gt;Cet article m’a frappé. Ni le journaliste ni l’auteur de l’app ne se rendait compte à quel point le principe était complètement irrémédiablement débile. D’une connerie sans nom.&lt;/p&gt;
+&lt;p&gt;Car, pour conserver autant que possible la température de votre logement, il suffit de tout fermer quand l’air est plus chaud dehors et de tout ouvrir quand l’air est plus frais dehors. Si vous avez deux thermomètres, le tour est joué. &lt;/p&gt;
+&lt;p&gt;J’ai beau me creuser la tête, je n’arrive pas à trouver un seul cas de figure différent. Et si un cas très spécifique existe (baie vitrée par exemple), ce n’est pas une app qui va pouvoir vous aider.&lt;/p&gt;
+&lt;p&gt;Dans l’article, l’auteur de l’application reconnaissait n’avoir aucune formation de développeur et d’avoir « vibecodé » tout le bazar. Lui-même n’a donc aucune idée de comment fonctionne son app, même approximativement. Et le résultat est là : sans avoir testé l’app moi-même, je peux garantir que l’app ne fonctionne pas, qu’elle ne fait qu’afficher des recommandations purement aléatoires.&lt;/p&gt;
+&lt;p&gt;Et le journaliste ne s’est posé aucune question.&lt;/p&gt;
+&lt;p&gt;Ah ouais, quand même, on en est là !&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;Un outil pour les idiots&lt;/h2&gt;
+&lt;p&gt;Si le créateur de l’app avait été un entrepreneur et avait engagé un développeur, il aurait été forcé de se confronter à des questions telles que « sur quelles bases scientifiques nous basons-nous pour le calcul ? ». Mais, grâce aux chatbots, plus besoin de cela. On peut désormais faire semblant de réaliser nos idées les plus stupides sans garde-fou. Je dis bien « faire semblant » car, comme le prouve l’exemple, au final cela ne marche pas. &lt;/p&gt;
+&lt;p&gt;Comme le dit Cory Doctorow: les patrons adorent les chatbots non parce qu’ils font le travail, mais parce qu’ils disent toujours oui et trouvent toutes vos idées géniales. C’est peut-être pour ça que je n’aime pas les chatbots: quand quelqu’un trouve toutes mes idées géniales, je me dis qu’il réfléchit encore moins que moi au sujet !&lt;/p&gt;
+&lt;p&gt;Un autre cas avait fait le buzz : une personne qui avait patiemment développé une app à travers ChatGPT, pendant des semaines. App qu’elle demandait à ChatGPT de faire tourner pour la déboguer à travers des captures d’écran générées par ChatGPT.  Au final, quand cette personne avait voulu accéder au code source, ChatGPT avait fini par reconnaître qu’il n’y avait pas d’app, pas de code source, que tout était inventé en direct.&lt;/p&gt;
+&lt;p&gt;Cory Doctorow a mis le doigt sur un point crucial de cette bulle IA : si les chatbots devaient soudainement disparaître demain, rien ne changerait à part quelques collégiens qui devraient réapprendre à copier les uns sur les autres pour leurs devoirs. Les états s’empressent de vouloir développer une « IA souveraine », mais si demain Trump bloquait ChatGPT et Claude dans toute l’Europe, l’impact serait nul. Voire positifs argueront certains.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pluralistic.net/2026/08/01/dare-snot/&quot;&gt;Pluralistic: Why businesses lie about AI (01 Aug 2026) (pluralistic.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comparez cela au chaos total si, soudainement, Trump bloquait Outlook, Whatsapp ou Gmail dans toute l’Europe. &lt;/p&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Non, l’IA n’est pas la nouvelle bulle Internet&lt;/h2&gt;
+&lt;p&gt;Comme le dit Cory, la bulle Internet s’est construite sur des employés qui voulaient utiliser Internet pour être plus efficaces alors que leurs patrons leur interdisaient. Des milliers de nouvelles entreprises apparaissaient chaque jour pour tenter de coloniser ce nouvel espace. La bulle IA, au contraire, est imposée par les patrons et j’ai déjà entendu de première main des témoignages de gens qui prétendent que le code qu’ils ont écrit manuellement a été généré, juste pour faire plaisir à leur boss. Certains des employés m’ont personnellement raconté faire tourner les chatbots sur des questions sans intérêt juste pour montrer à leur patron qu’ils ont utilisé des tokens.&lt;/p&gt;
+&lt;p&gt;Une personne a même reçu une réprimande pour n’avoir pas utilisé assez de tokens. Donc pour avoir fait son travail en utilisant moins d’argent que prévu.&lt;/p&gt;
+&lt;p&gt;Ah ouais, quand même, on en est là !&lt;/p&gt;
+&lt;p&gt;Et, malgré tout le ramdam, nous n’avons pas encore la moindre success-story d’une entreprise qui aurait fait fortune grâce à un produit au moins partiellement conçu par l’IA.&lt;/p&gt;
+&lt;p&gt;Si l’IA était une ruée vers l’or, des milliards seraient utilisés pour nous convaincre que les nouvelles pelles intelligentes sont la panacée, les blogs seraient remplis de témoignages comme quoi la pelle intelligente fait vraiment gagner du temps pour planter ses bégonias dans son jardin de banlieue, mais personne n’aurait encore trouvé la moindre pépite d’or. Toute la bulle tiendrait sur le fait que « Vu comme on creuse, on va forcément trouver de l’or et si un jour on trouve de l’or, mieux vaut être habitué à utiliser une Pelle Intelligente (TM) pour en profiter ».&lt;/p&gt;
+&lt;p&gt;Chose marrante, certains patrons qui poussent l’utilisation de l’IA commencent à se demander pourquoi leurs employés font de la merde.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://futurism.com/artificial-intelligence/shopify-ceo-ai-workplace-staff-horrified-backfire&quot;&gt;Shopify CEO Who Pushed Staff to Use AI Is Now Horrified by What He&amp;#x27;s Wrought (futurism.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;Le culte de l’idée&lt;/h2&gt;
+&lt;p&gt;Le problème majeur, je l’ai déjà expliqué, c’est que nous sommes biberonnés au concept de « La grande idée ». Il n’est pas un film d’action, d’aventures ou d’espionnage qui ne repose sur la découverte ou le vol d’un objet représentant « une grande idèe ». Hitchock appelle d’ailleurs ces objets des « McGuffin ».&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-09-18-idees-mystifiees.html&quot;&gt;De la mystification de la Grande Idée (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or, je me répète, l’idée seule ne vaut rien. Strictement rien ! Et une idée doit être confrontée, discutée, mise en balance pour s’affiner, se transformer et, après bien des efforts, exister.&lt;/p&gt;
+&lt;p&gt;Comme le soulignait très bien Marcello Vitali-Rosati dans « Éloge du bug », cette croyance imprègne la philosophie occidentale depuis Platon : il y a les penseurs-décideurs et les exécutants. Rien d’étonnant donc qu’un produit qui vous fait croire que vous êtes un décideur avec accès à une puissance d’exécution ait du succès. Marcello compare cette croyance au génie de la lampe d’Alladin qui, sous prétexte d’obéir à Alladin, le manipule en réalité à sa guise.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-10-27-outil-va-faire-de-moi.html&quot;&gt;Qu’est-ce que l’outil va faire de moi ? (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Décrire une idée dans ses moindres détails revient, en réalité, à la réaliser. Il est tellement compliqué de faire des spécifications exactes d’un logiciel qu’on a littéralement inventé des règles pour traduire ces spécifications en langage machine. Cela s’appelle « un langage de programmation ». Et si vous n’êtes pas capable de programmer, vous n’êtes tout simplement pas compétent pour demander à un chatbot de le faire à votre place.&lt;/p&gt;
+&lt;p&gt;Cela fait 60 ans que nous avons des langages de programmation, cela fait 60 ans que l’on tente de trouver un moyen de se passer des programmeurs (genre avec des schémas graphiques, avec des &amp;quot;langages de spécification&amp;quot;). Mais c’est impossible : les idées humaines sont par définition imprécises et floues, un ordinateur ne peut pas faire quelque chose de précis à partir d’idées floues. &lt;/p&gt;
+&lt;p&gt;Les chatbots sont un produit qui prétend réaliser votre idée sans la discuter, en acceptant tout. Les chatbots sont donc, essentiellement, une arnaque parfaite pour ce que Ed Zitron appelle les « business idiots » et que j’appelle les « Juliuses ».&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2024-12-23-julius-fr.html&quot;&gt;Mon collègue Julius (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le résultat issu d’un chatbot est soit non-fonctionnel, ce qui est parfois marrant, soit fonctionnel, ce qui est terrifiant. Parce que cela signifie que des centaines voire des milliers de décisions n’ont pas été prises. Les choix que vous n’avez pas vus ont été aléatoirement faits par le génie d’Alladin, un algorithme opaque d’une grande entreprise américaine. Si cela ne vous terrifie pas, c’est que vous n’y avez pas réfléchi assez.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-5&quot;&gt;Des outils incompétents pour personnes compétentes&lt;/h2&gt;
+&lt;p&gt;Nombre de projets Open Source que je fréquente sont désormais envahis de contributions générées par chatbots. J’ai été témoin d’un pseudocontributeur qui disait, en substance « voici un patch pour corriger le bug XXX. Je l’ai généré et n’étant pas codeur, je n’ai pas la compétence de savoir s’il fonctionne ». &lt;/p&gt;
+&lt;p&gt;Reconnaissons à cette personne d’être honnête et transparente. Mais si j’avais cette personne en face de moi, j’aurais envie de lui demander si elle avait réfléchi deux minutes à ce qu’elle fait. Quelle est la valeur qu’elle espère ajouter au projet ?  Si résoudre le bug était juste une question de demander un patch à un chatbot, ne serait-ce pas fait depuis longtemps ?&lt;/p&gt;
+&lt;p&gt;Ah ouais, quand même, on en est là !&lt;/p&gt;
+&lt;p&gt;Il faut être honnête : j’ai été témoin de cas où je reconnais l’utilité des chatbots. Mais, sans exception, il s’agissait à chaque fois d’une personne compétente. D’une personne qui aurait pu réaliser le travail sans chatbot et a réussi à gagner un peu de temps. De l’ordre de quelques minutes à quelques jours selon ses dires. Sûrement moins, mais passons…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://calnewport.com/ai-isnt-breaking-work-its-already-broken/&quot;&gt;AI Isn’t Breaking Work. It’s Already Broken. (calnewport.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans 100% des cas que j’ai entendus, il faut préciser qu’il s’agissait soit de prototypage très expérimental, soit de réaliser une tâche parfaitement absurde, mais administrativement nécessaire. J’ai moi-même codé, à la main, un générateur aléatoire de timesheets lorsque j’ai été soumis à ce régime.&lt;/p&gt;
+&lt;p&gt;Force est de constater que si vous vous posez la question de développer une app et que vous n’avez pas envie de concevoir un prototype, un petit test vibecodé pourrait éventuellement vous permettre de &amp;quot;tester&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Mais comme le démontre amplement l’exemple de l’application anti-canicule, même le prototypage nécessite un minimum de compréhension du problème, de compétence, bref, d’intelligence.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-6&quot;&gt;L’effet Tetris&lt;/h2&gt;
+&lt;p&gt;Une intelligence qui nécessite de l’attention, de la concentration.&lt;/p&gt;
+&lt;p&gt;Vous vous souvenez de vos heures passées à jouer à Tetris ? Le soir, en vous endormant, est-ce que vous ne voyiez pas des pièces tomber devant vos yeux ?  Moi j’ai eu ça très fort en jouant à démineur sur mon 386 et en écoutant en boucle un CD de 2unlimited  (oui, je sais, mais il y a prescription). Lorsque j’entends 2unlimited aujourd’hui, 35 ans plus tard, je revois des carrés de démineur devant mes yeux.&lt;/p&gt;
+&lt;p&gt;Ce que nous apprend cette expérience c’est à quel point notre cerveau est déformé par ce à quoi nous donnons notre temps et notre attention. Ce qui peut être une bonne chose lorsque c’est intentionnel.&lt;/p&gt;
+&lt;p&gt;Mais la notification qui vient de vous interrompre est-elle intentionnelle ? La 7ème vidéo Youtube que vous regardez durant votre « pause » est-elle intentionnelle ? Et ce n’est pas parce que c’est libre que c’est mieux. Ce enième toot mastodon sur le réchauffement climatique est-il intentionnel ?&lt;/p&gt;
+&lt;p&gt;Non ? Pourtant, il déforme votre cerveau comme le faisait Tetris ou chez moi, démineur…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://alicegg.tech/2026/09/21/attention&quot;&gt;Attention is all you have (alicegg.tech)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Du coup, je n’ose pas imaginer l’état du cerveau des gens qui chattent avec une IA toute la journée, ne s’interrompant que pour les notifications de leur smartphone. Surtout si ces personnes ont du pouvoir.&lt;/p&gt;
+&lt;p&gt;Ah ouais, peut‑être que ça explique pourquoi on en est là !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Water_buffalo_bathing_with_water_reflection_at_golden_hour_in_Don_Det_Laos.jpg&quot;&gt;Photo par Basile Morin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;À propos de l’auteur :&lt;/h3&gt;
+&lt;p&gt;Je suis &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt; et je viens de publier &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, une fable écolo-cycliste entièrement tapée sur une machine à écrire mécanique. Pour me soutenir, &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;achetez mes livres&lt;/a&gt; (si possible chez votre libraire) !&lt;/p&gt; 
+&lt;p&gt;Recevez directement par mail &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/fr.listes.ploum.net/&quot;&gt;mes écrits en français&lt;/a&gt; et &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;en anglais&lt;/a&gt;. Votre adresse ne sera jamais partagée. Vous pouvez également utiliser &lt;a href=&quot;/atom_fr.xml&quot;&gt;mon flux RSS francophone&lt;/a&gt; ou &lt;a href=&quot;/atom.xml&quot;&gt;le flux RSS complet&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="fr">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">Fuir le numérique ou bien le reconquérir ?</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-09-21-fuir_ou_reconquerir.html" />
+	<id>https://ploum.net/2026-09-21-fuir_ou_reconquerir.html</id>
+	<published>2026-09-21T00:00:00Z</published>
+	<updated>2026-09-21T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;Fuir le numérique ou bien le reconquérir ?&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;Le numérique est-il intrinsèquement mauvais ?&lt;/h2&gt;
+&lt;p&gt;Comme le souligne Sandra, le minimalisme numérique ne vient pas du fait que le numérique soit mauvais en soi, mais juste qu’on a réussi à le rendre le pire possible sur tous les niveaux. Au niveau physique : on fait tout sur un petit écran trop brillant sans aucune sensation tactile et qui nous force à plier la nuque, au niveau psychologique avec l’addiction et l’optimisation pour les pertes de temps ainsi qu’au niveau économique : votre smartphone ne vous appartient pas vraiment, vous n’avez aucun contrôle dessus et, pire, il sert à vous espionner. Et vous allez racheter exactement le même rectangle noir tous les ans ou tous les deux ans.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://idiomdrottning.org/minimalism-vs-digital-minimalism&quot;&gt;Minimalism vs Digital Minimalism (idiomdrottning.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Car comme le dit très bien Solderpunk, le créateur du protocole Gemini, nous croulons sous les appareils électroniques de mauvaise qualité qui envoyés au rebut (ou dans un tiroir) parce que « plus supporté par la société qui les a produit ».&lt;/p&gt;
+&lt;p&gt;Le contrôle de nos appareils nous pousse à en racheter de nouveaux, mais modifie également nos pensées au point de considérer que s’il n’y a plus de mise à jour, l’appareil se transforme soudain en presse-papier.  Nous  sommes tellement formatés à obéir aux grandes entreprises que nous en perdons toute créativité et toute compétence réelle avec des appareils qui sont des miracles de technologie.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.obsessivefacts.com/gemini-proxy?uri=gemini://zaibatsu.circumlunar.space/~solderpunk/gemlog/lateral-thinking-with-withered-technology.gmi&quot;&gt;Lateral Thinking with Withered Technology (solderpunk)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Des miracles de la technologie qui fonctionne contre nous et non pas pour nous.&lt;/p&gt;
+&lt;p&gt;CodeTiger achète un robot « intelligent » et décide de bloquer l’envoi de données vers le fabricant. Ce qui entraîne à chaque fois une panne après quelque jour. Fâché, iel décide d’investiguer les entrailles de l’appareil : le robot est en fait un ordinateur tournant sous Linux qui envoie toutes ses données au fabricant, y compris la configuration de la maison, les habitudes des occupants, les codes wifi. On s’y attendait un peu. Mais, en plus, il est piloté à distance !&lt;/p&gt;
+&lt;p&gt;Une fois qu’il cesse d’envoyer ses données, quelqu’un envoie une commande pour désactiver l’appareil volontairement !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://codetiger.in/blog/the-day-my-smart-vacuum-turned-against-me/&quot;&gt;The Day My Smart Vacuum Turned Against Me (codetiger.in)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: l’immonde illustration générée n’existait pas lorsque j’ai bookmarké ce site.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;La fuite ?&lt;/h2&gt;
+&lt;p&gt;Ce n’est pas un hasard si de plus en plus d’experts du numérique se tournent vers le retrocomputing ou le technopunk.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2025-11-17-techpunk.html&quot;&gt;La complainte du technopunk ringard (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-08-03-offpunk_manifesto.html&quot;&gt;Un manifeste Offpunk (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Par exemple, le vénérable et très minimaliste navigateur web Dillo, relancé en 2024, après une petite décennie d’abandon.&lt;/p&gt;
+&lt;p&gt;Mais à quoi peut servir un navigateur qui ne supporte pas le JavaScript ? Bobby Hiltz explique comment il s’est mis à l’utiliser de plus en plus pour faire des recherches, lire les blogs et même écouter de la musique sur Bandcamp !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bobbyhiltz.com/posts/2025/02/dillo/index.html&quot;&gt;Dillo Web Browser (bobbyhiltz.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et non, ça ne scale pas. Le technopunk s’en fout de la mise à l’échelle ou de convaincre les investisseurs, il veut juste que ça fonctionne pour lui et ses potes. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tante.cc/2025/01/26/against-scale/&quot;&gt;Against scale (tante.cc)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cette même population fuit également de plus en plus la nocivité intrinsèque des réseaux sociaux.&lt;/p&gt;
+&lt;p&gt;Car suivre nos proches sur les réseaux sociaux serait en fait une mauvaise idée. Si les réseaux peuvent rapprocher des inconnus aux intérêts similaires, ce qu’ils ont fait à leurs débuts, ils peuvent également éloigner des gens proches dont les intérêts spécifiques ou les opinions diffèrent. Ils emprisonnent des groupes d’humains pleins d’énergie et de motivation dans un carcan consumériste (dédicace aux groupes Facebook qui se disent &amp;quot;anticapitalistes&amp;quot;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://lalunemauve.fr/amitie-internet/&quot;&gt;Du risque de transformer nos amitiés IRL en relations parasociales (lalunemauve.fr)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Alors, certes, quitter Whatsapp n’est pas évident. Mais c’est possible.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.baudelot.eu/2026/08/10/resolution-de-la-rentree-quitter-whatsapp/&quot;&gt;Résolution de la rentrée : quitter WhatsApp (www.baudelot.eu)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C’est par contre plus facile de quitter X…&lt;/p&gt;
+&lt;figure&gt;
+&lt;a href=&quot;https://ploum.net/files/xmeme_by_raphj_mamot.png&quot;&gt;&lt;img alt=&quot;Une image d’un meeting d’Hitler où une voix au milieu de la foule dit &amp;quot;Je reste sur X, mais c’est uniquement pour apporter de la contradiction&amp;quot; (posté par raphj@mamot.fr sur Mastodon)&quot; src=&quot;https://ploum.net/files/xmeme_by_raphj_mamot.png&quot; width=&quot;450&quot; class=&quot;center&quot;&gt;&lt;/a&gt;
+&lt;figcaption&gt;Une image d’un meeting d’Hitler où une voix au milieu de la foule dit &amp;quot;Je reste sur X, mais c’est uniquement pour apporter de la contradiction&amp;quot; (posté par raphj@mamot.fr sur Mastodon)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;C’est marrant, car ça me fait penser à ma nouvelle humoristique « Le dernier espoir » dans laquelle je mets justement en scène un handicapé numérique qui tente de lutter contre l’espionnage de toutes ces plateformes alors que sa famille essaye de le convaincre de les rejoindre.  La nouvelle est dans le recueil « Stagiaire au spatioport Omega 3000 et autres joyeusetés que nous réserve le futur », disponible dans toutes les bonnes librairies, sur le site de l’éditeur (sans DRM) ou dans les archives d’Anna la pirate.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pvh-editions.com/product/stagiaire-au-spatioport-omega-3000-papier&quot;&gt;Stagiaire au spatioport Omega 3000 (pvh-editions.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Un problème politique et social&lt;/h2&gt;
+&lt;p&gt;Le pire, c’est qu’on ne vous ment (presque) pas : tout est dans les conditions que vous avez acceptées.&lt;/p&gt;
+&lt;p&gt;Nicolas Vivant insiste sur ce point : en cliquant &amp;quot;J’accepte&amp;quot;, nous marquons notre accord pour être espionnés, mais, également, nous prétendons avoir l’accord de nos amis pour qu’elleux soient espionnés.&lt;/p&gt;
+&lt;p&gt;C’est notamment le cas de Whatsapp qui envoie toutes les infos de votre carnet d’adresses à Meta.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://grenoble.ninja/nous-ne-lisons-pas-les-conditions-dutilisation-et-cest-problematique/&quot;&gt;Nous ne lisons pas les conditions d’utilisation, et c’est problématique (grenoble.ninja)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bien que n’ayant plus de compte Meta sous quelque forme que ce soit, il existe un profil avec mon numéro de téléphone, tous les noms sous lesquels je suis renseigné dans les carnets d’adresses, un graphe de contacts qui permet de me situer précisément dans le tissu social. Sans compter les infos que j’ai données lorsque j’étais jeune et naẗf. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/le-suicide-de-mon-compte-whatsapp/index.html&quot;&gt;Le suicide de mon compte WhatsApp (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le plus effrayant, c’est que le fait que j’aie supprimé tous mes comptes doit certainement me faire apparaître dans une liste particulière qui peut-être utilisée pour tenter de me cibler avec des pubs qui vont me convaincre, puis pour s’assurer de me pourrir subtilement la vie et, enfin, pour me mettre sur la liste de &amp;quot;potentiels terroristes&amp;quot; le jour où le gouvernement de mon pays se mettra à suivre cette mode mondiale du fascisme.&lt;/p&gt;
+&lt;p&gt;Si j’étais Meta, par exemple, et que j’avais des infos sur un &amp;quot;réfractaire&amp;quot; à Meta et Google, je demanderais à Google de faire en sorte que les messages qu’il envoie via SMS se perdent un peu plus souvent. Que ses appels sonnent un peu plus dans le vide.&lt;/p&gt;
+&lt;p&gt;Nicolas oublie de préciser qu’il avait été estimé que si nous devions lire les conditions d’utilisation de tous les logiciels que nous utilisons, et leur mise à jour, 24h par jour n’y suffirait pas. L’acceptation des conditions d’utilisation est donc une pure fiction.&lt;/p&gt;
+&lt;p&gt;Le problème n’est donc pas que nous ne lisons pas les conditions d’utilisation. Le problème est que cette fiction permet aux entreprises de faire n’importe quoi. « Bien sûr que nous allons enlever son premier né pour boire son sang ! L’utilisateur a accepté ! »&lt;/p&gt;
+&lt;p&gt;Et il suffit d’une seule personne dans vos cercles sociaux qui accepte ces conditions en votre nom pour vous faire espionner.&lt;/p&gt;
+&lt;p&gt;Autrement dit, ce n’est pas de la faute de l’individu, c’est un problème 100% politique. &lt;/p&gt;
+&lt;p&gt;La preuve, c’est l’impact qu’a eu le RGPD dans le monde. Alors, certes, il n’est pas idéal et, en réalité, ne fonctionne pas vraiment.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nikolak.com/gdpr-failure/&quot;&gt;GDPR is a failure (nikolak.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mais, quand même, le fait que tout le monde déteste le GDPR est un signe que c’est un pas dans la bonne direction. Il ne fonctionne pas vraiment, mais il fait très très peur aux grandes entreprises.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/&quot;&gt;matduggan.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;Reconquérir notre indépendance&lt;/h2&gt;
+&lt;p&gt;Il est temps de réactiver vos comptes &amp;quot;indépendants&amp;quot; que vous n’utilisez pas, car &amp;quot;moins facile&amp;quot;, &amp;quot;moins de personnes&amp;quot;, &amp;quot;moins de dopamine&amp;quot;,…  Votre site perso, votre compte sur le Fediverse, vos expérimentations sur Gopher ou Gemini… &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://midnight.pub/posts/2851&quot;&gt;Eternal 2020 (or not) (midnight.pub)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://brennan.day/creating-a-blog-in-gemini/&quot;&gt;Creating a Blog in Gemini:// (brennan.day)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et surtout, de le faire avec vos petites mains, votre petit cerveau et toutes vos maladresses humaines.&lt;/p&gt;
+&lt;p&gt;Car quand vous publiez un billet de blog ou un post sur les réseaux sociaux qui a été généré par un chatbot, vos lecteurs s’en rendent compte. Très vite. Et ils arrêtent de vous lire instantanément. Et ils arrêtent de vous lire pour toujours.&lt;/p&gt;
+&lt;p&gt;Croire que ça ne se voit pas, c’est comme un fumeur qui pense que parce qu’il a éteint sa clope avant de rentrer dans une pièce, il n’empeste pas. C’est juste que le monde autour de vous est juste trop poli pour vous le dire franchement.&lt;/p&gt;
+&lt;p&gt;Comme le dit Bryan Cantrill, si vous pensez que personne ne va le remarquer, c’est que soit vous n’avez pas lu vous-même ce que vous postez, soit vous êtes devenu tellement incompétent en termes de lecture (pas d’écriture, de lecture) que vous n’êtes plus capable de lire correctement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/&quot;&gt;The revolt of the reader (bcantrill.dtrace.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comme je le disais, si vous ne prenez pas le temps de l’écrire, pourquoi devrais-je prendre le temps de le lire ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-09-14-ecrire_et_ia.html&quot;&gt;Soyez humains, communiquez ! (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Et si il n’y que la « performance » qui compte pour vous, vous êtes en train de détruire votre réputation. Pareil avec les illustrations générées. Le moteur de recherche Kagi permet de signaler les contenus qui sont du « slop » de manière à les cacher. Petit à petit des réseaux vont se mettre en place pour exclure les contenus générés. Et la réputation que vous êtes en train de construire aujourd’hui aura un effet demain. Plus vite que vous ne le pensez…&lt;/p&gt;
+&lt;p&gt;J’utilise personnellement le filtre AI Blacklist pour uBlock Origin. Il m’a arrêté bien des fois lorsque je suivais un lien. Et vous savez quoi? Je ne l’ai jamais regretté jusqu’à présent !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/alvi-se/ai-ublock-blacklist&quot;&gt;AI uBlock Origin Blacklist (github.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;D’ailleurs, il est grand temps de mettre vos filtres uBlock à jour vu qu’OpenAI tente désormais d’espionner votre comportement en ligne, même si vous êtes déconnecté de votre compte ChatGPT. J’avoue être bien content de n’en avoir jamais créé, même « pour tester ». &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/&quot;&gt;ChatGPT now knows what you do on other websites via ad collector (www.buchodi.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Évitez le slop, évitez d’en générer et tentez de créer et de communiquer le plus loin possible des grandes plateformes privatrices. Bref, cultivez votre indépendance !&lt;/p&gt;
+&lt;p&gt;Vous allez voir, on y prend vite goût !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg&quot;&gt;Illustration : La Liberté guidant le peuple, de Delacroix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;À propos de l’auteur :&lt;/h3&gt;
+&lt;p&gt;Je suis &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt; et je viens de publier &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, une fable écolo-cycliste entièrement tapée sur une machine à écrire mécanique. Pour me soutenir, &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;achetez mes livres&lt;/a&gt; (si possible chez votre libraire) !&lt;/p&gt; 
+&lt;p&gt;Recevez directement par mail &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/fr.listes.ploum.net/&quot;&gt;mes écrits en français&lt;/a&gt; et &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;en anglais&lt;/a&gt;. Votre adresse ne sera jamais partagée. Vous pouvez également utiliser &lt;a href=&quot;/atom_fr.xml&quot;&gt;mon flux RSS francophone&lt;/a&gt; ou &lt;a href=&quot;/atom.xml&quot;&gt;le flux RSS complet&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="fr">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">Soyez humains, communiquez !</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-09-14-ecrire_et_ia.html" />
+	<id>https://ploum.net/2026-09-14-ecrire_et_ia.html</id>
+	<published>2026-09-14T00:00:00Z</published>
+	<updated>2026-09-14T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;Soyez humains, communiquez !&lt;/h1&gt;
+		&lt;h2 id=&quot;soustitre-1&quot;&gt;Pourquoi le moindre humain écrira toujours mieux que le chatbot le plus perfectionné.&lt;/h2&gt;
+&lt;p&gt;Dans ma vie, j’ai écrit plusieurs millions de mots, sur des myriades de sujets et pour des dizaines ou des centaines d’audiences différentes. Rien que ce blog en fait 250.000. J’estime également en lire plusieurs millions chaque année.&lt;/p&gt;
+&lt;p&gt;Bref, j’ai une relation profonde et intime avec l’écriture et la lecture. C’est ma passion, mon métier et même une manière de vivre. Je suis capable, en me concentrant, de lire particulièrement vite. À une époque, je pouvais lire &amp;quot;photographiquement&amp;quot;. De même, j’ai l’écriture très facile. Lancez-moi sur un sujet et je peux discourir pendant des pages et des pages sans effort.&lt;/p&gt;
+&lt;p&gt;À celleux qui me demandent comment écrire, je n’ai qu’un conseil : réduisez la friction entre votre cerveau et les mots en apprenant la dactylo (mes passages au Bépo puis à Ergol ont été des étapes incroyables dans mon processus d’écriture). Pour le reste, il suffit de prendre goût au fait d’écrire.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/216-le-bepo-sur-le-bout-des-doigts/index.html&quot;&gt;Le bépo sur le bout des doigts (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ergol.org/&quot;&gt;Ergo‑L (ergol.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Écrire c’est très facile si on accepte de se laisser aller, si on prend confiance en soi.&lt;/p&gt;
+&lt;p&gt;Essayez, vous verrez !&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;La concision fait la qualité de l’écriture&lt;/h2&gt;
+&lt;p&gt;Bien écrire, c’est évidemment beaucoup plus difficile, en tout cas pour moi. Mais l’essence de « bien écrire » est très simple. Il faut que chaque mot ait une utilité.&lt;/p&gt;
+&lt;p&gt;Bien écrire, ce n’est pas écrire beaucoup. Au contraire ! Bien écrire, c’est couper, supprimer pour aller à l’essentiel. Chaque mot doit être une manière d’amener subtilement votre idée, votre émotion, votre raison d’écrire à se clarifier dans votre cerveau et dans celui du lecteur. L’écriture est une forme de télépathie. La qualité de l’écriture est la mise au point, la netteté. &lt;/p&gt;
+&lt;p&gt;C’est la raison pour laquelle les textes générés par chatbots/IA/pouetpouetGPT me sont insupportables. Ils sont creux, longs, verbeux.&lt;/p&gt;
+&lt;p&gt;Même les résumés automatiques sont une catastrophe. Ils trahissent le cheminement de l’auteur, ils se trompent régulièrement sur les points subtils, mais cruciaux et, comble de la bêtise, ils sont souvent plus longs que le texte original qu’ils sont censés résumer. Un résumé ou un surlignage est intrinsèquement personnel. Il doit vous permettre de vous rappeler votre expérience de lecture.&lt;/p&gt;
+&lt;p&gt;Et ce n’est pas une question de qualité du modèle. Non PouetPouetGPT 42.3 n’est pas révolutionnaire ! Il ne peut pas l’être.&lt;/p&gt;
+&lt;p&gt;Parce qu’il ne peut pas inventer l’information. Il ne fait que diluer le prompt que vous lui donnez, le mettre en forme selon ses standards, l’agglomérer à des milliards de statistiques. Mais il ne peut pas lire dans vos pensées et deviner ce que vous voulez me dire.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;Le message utile sera toujours plus court que le prompt pour l’obtenir&lt;/h2&gt;
+&lt;p&gt;Si vous demandez à PouetPouetGPT d’envoyer un mail à Ploum pour savoir comment il va, la seule information valable, la seule écriture qualitative est: &lt;/p&gt;
+&lt;blockquote&gt; Salut, Ploum, comment ça va ?&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;Tout le reste n’est que du bruit. De la mauvaise écriture (et je m’y connais en mauvaise écriture). C’est juste que la mise en page, l’orthographe, le respect de certains styles peuvent donner l’apparence que c’est « bien écrit ». Ça ne l’est pas. Ça ne le sera jamais parce que « bien écrire » c’est avant tout « bien communiquer ». Et rajouter du bruit ne permet pas de bien communiquer.&lt;/p&gt;
+&lt;p&gt;L’équation est simple : un message bien écrit sera toujours plus court que le prompt équivalent. Les agents d’aide à l’écriture exploitent le manque de confiance. « J’écris mal, je vais demander à l’IA ». L’apparence du résultat fera encore plus baisser l’estime de l’auteur qui, pour couronner le tout, pratiquera de moins en moins l’écriture et sera de moins en moins au clair avec ses propres idées.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-04-10-rien-a-penser.html&quot;&gt;Ne rien avoir à penser (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Imaginez une conversation téléphonique. Le réseau est mauvais. On vous entend mal. Vous décidez alors de mettre de la musique à fond en arrière-plan parce que la musique est jolie. Avez-vous amélioré votre capacité à communiquer ?&lt;/p&gt;
+&lt;p&gt;Et, surtout, pensez-vous que c’est respectueux de votre interlocuteur ?&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;Lorsque l’écriture n’est plus le fruit d’un effort intellectuel&lt;/h2&gt;
+&lt;p&gt;Jusqu’il y a peu, lorsque je tombais sur un billet de blog, lorsque je recevais un email, je partais du principe qu’un humain avait fait l’effort de l’écrire. Je faisais donc l’effort de le lire, au moins rapidement. J’abordais tout texte avec cette question en tête : « Qu’est-ce que l’auteur essaye de me dire ? »&lt;/p&gt;
+&lt;p&gt;Ce n’est aujourd’hui plus le cas. Je dois traiter chaque email, chaque site web inconnu comme étant potentiellement généré et n’ayant demandé aucun effort humain. Dans le doute, je vais désormais m’abstenir de lire et de répondre. Après tout, si vous n’avez pas pris le temps de l’écrire, je prends comme une insulte que vous pensiez que je puisse prendre le temps de lire.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-09-09-ai_policy.html&quot;&gt;I Don’t Want to Interact With Stochastic Parrots (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bien entendu, je n’ai pas de détecteur IA parfait. Je me fie à mon instinct. Mais, comme je l’ai dit en introduction, celui-ci est particulièrement développé pour l’écrit. Un message qui porte une énorme attention au style, à l’orthographe, qui est long, mais qui est particulièrement pauvre en information est soit généré, soit écrit par quelqu’un qui fait du remplissage et ne vaut guère mieux (typiquement, un marketeux).&lt;/p&gt;
+&lt;p&gt;Mon expérience de prof joue aussi peut-être : les textes générés ressemblent de manière frappante aux examens que je fais passer à des étudiants qui ont beaucoup de charisme, mais qui n’ont rien compris. Ils brodent, tournent autour du pot, tentent de camoufler leur ignorance avec une assurance déconcertante. Mais aucun prof ne s’y trompe : l’étudiant sera recalé ! Et encore plus sévèrement que l’étudiant qui avoue son ignorance de manière transparente.&lt;/p&gt;
+&lt;p&gt;Un humain qui écrit très peu et a du mal à structurer ses idées ne fera pas autant d’efforts pour faire &amp;quot;de belles phrases&amp;quot; bien creuses. Ça n’a aucun sens ! Au contraire, les personnes les moins à l’aise avec l’écriture ont tendance, malgré leurs maladresses de style bien excusables, à donner beaucoup d’informations, à avoir envie d’exprimer des choses.&lt;/p&gt;
+&lt;p&gt;Et, oui, vous pourriez certainement générer un message qui me tromperait. C’est peut-être déjà arrivé. Mais, pour être sûr de votre coup, générer le prompt vous demandera sans doute beaucoup plus de travail que d’écrire le message directement. Ce qui est fondamentalement stupide, non ? Quelle est la finalité de tout ça ? À un certain point, votre grossièreté devient de la malveillance.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-5&quot;&gt;De nos belles et humaines maladresses &lt;/h2&gt;
+&lt;p&gt;La maladroite phrase d’une personne à peine lettrée aura toujours plus de valeur, sera toujours une meilleure manière de communiquer que l’apparence formelle d’un message généré. Et même le modèle PouetPouetGPT le plus parfait au monde ne pourra jamais rien y changer.&lt;/p&gt;
+&lt;p&gt;Si vous pensez que la version 42.3 s’est justement grandement améliorée, que je devrais tester, c’est juste que vous vous êtes habitué à l’outil, que vous cédez à la normalisation, que vous avez atteint votre propre seuil d’incompétence. Que vous n’avez pas compris à quoi servent l’écriture et la lecture. Que vous êtes en train de perdre votre confiance en vous et votre capacité à écrire.&lt;/p&gt;
+&lt;p&gt;Alors, par pitié, continuez de penser, d’écrire. Ne déléguez pas votre libre arbitre. Et si vous voulez communiquer avec moi, acceptez vos maladresses, vos fautes et votre humanité. Un simple correcteur orthographique peut aider à améliorer la lisibilité et votre confiance en vous. Mais ce n’est pas nécessaire lorsqu’on communique informellement entre humains. &lt;/p&gt;
+&lt;p&gt;Respectez votre correspondant : soyez humain !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Scribe-A_42-IMG_9257.JPG&quot;&gt;Détail d’une statue de scribe de la Vème dynastie égyptienne (photo par Rama)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;À propos de l’auteur :&lt;/h3&gt;
+&lt;p&gt;Je suis &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt; et je viens de publier &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, une fable écolo-cycliste entièrement tapée sur une machine à écrire mécanique. Pour me soutenir, &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;achetez mes livres&lt;/a&gt; (si possible chez votre libraire) !&lt;/p&gt; 
+&lt;p&gt;Recevez directement par mail &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/fr.listes.ploum.net/&quot;&gt;mes écrits en français&lt;/a&gt; et &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;en anglais&lt;/a&gt;. Votre adresse ne sera jamais partagée. Vous pouvez également utiliser &lt;a href=&quot;/atom_fr.xml&quot;&gt;mon flux RSS francophone&lt;/a&gt; ou &lt;a href=&quot;/atom.xml&quot;&gt;le flux RSS complet&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;/div&gt;
+	</content>
+</entry>
+<entry xml:lang="en">
+	<author><name>Ploum</name><uri>https://ploum.net</uri></author>
+	<title type="html">I Don’t Want to Interact With Stochastic Parrots</title>
+	<link rel="alternate" type="text/html" href="https://ploum.net/2026-09-09-ai_policy.html" />
+	<id>https://ploum.net/2026-09-09-ai_policy.html</id>
+	<published>2026-09-09T00:00:00Z</published>
+	<updated>2026-09-09T00:00:00Z</updated>
+	<content type="html">
+		&lt;h1&gt;I Don’t Want to Interact With Stochastic Parrots&lt;/h1&gt;
+		&lt;blockquote&gt; My AI policy is &amp;quot;I don’t want any kind of interaction with that thing.&amp;quot; And this should be all you need to know.&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;I don’t care if you call it AI, LLM, chatbot, or whateverGPT. I simply don’t want to interact with it in any form. If you interact with me, make sure to never send me any output from those nor to use it as a &amp;quot;source&amp;quot; to justify one of your arguments. &lt;/p&gt;
+&lt;p&gt;I’m one of those people deeply interested in all the extraordinary stuff other humans have to say. Unfortunately, life is already too short to hear them all. I need to make a lot of choices. That’s why I will not tolerate any attempt to steal the little time I’ve on this planet by making me interact with stochastic algorithms trained to produce tons of &amp;quot;average,&amp;quot; non-human content.&lt;/p&gt;
+&lt;p&gt;The direct consequence of my choice is that I will refuse to interact with humans who take pride in making themselves a meat interface between me and the algorithm they’ve chosen to replace their free will. &lt;/p&gt;
+&lt;p&gt;I will not read your website, I will ignore your emails and I will happily walk away from real-life conversations as soon as it is clear that I’m not talking to a fully sentient Homo sapiens sapiens but to an empty shell who has happily delegated their cognitive abilities to an external proprietary tool designed to be some sort of &amp;quot;random average garbage.&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-1&quot;&gt;I will not read the text&lt;/h2&gt;
+&lt;p&gt;The very essence of writing is what makes you think. When you write, even something as mundane as a short email, you transform a bunch of contradictory neural stimuli into an ordered thought.&lt;/p&gt;
+&lt;p&gt;If you don’t care to write it, there’s no reason I should waste one single second reading it. The effort should be on your side first.&lt;/p&gt;
+&lt;p&gt;I don’t mind mistakes, typos, or badly formed sentences. In fact, I subtly appreciate them when we interact because they are part of you, they tell a lot about yourself. I’m not a literary agent, I will not judge your way of writing: I’m there to exchange ideas, knowledge, and experiences.&lt;/p&gt;
+&lt;p&gt;If you find yourself typing a prompt to express your idea, then just send me that prompt. I’m not interested in what an algorithm would do with your prompt, I want to know what you asked in the first place. I care about you, the human. &lt;/p&gt;
+&lt;p&gt;You may find it hard to express yourself, to write what you think: remember that the less you practice, the worse it will be. Prompting might feel easier. It does not make it right.&lt;/p&gt;
+&lt;p&gt;If it is from an algorithm, it is not you. Only you can write what’s inside yourself.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-2&quot;&gt;I will not look at the pictures&lt;/h2&gt;
+&lt;p&gt;Generated images. Seriously. They all look hideous.&lt;/p&gt;
+&lt;p&gt;When I spot one in a given context, I immediately have a feeling of cheapness, bad taste, and poor culture. Like this fancy restaurant of a luxury hotel I saw in a big European city. It had a huge AI generated picture on its main building: a kid eating malformed fries with his six-fingered hand and putting them in his skull through his cheek. Or this other restaurant which had a very nice menu, full of pictures of Italian cities. Until the kid’s menu which, was shockingly out of place and totally unnecessary. It also showed a kid awkwardly eating a pizza even though there was no pizza on the kid’s menu.&lt;/p&gt;
+&lt;p&gt;If you don’t have the resources to pay for an artist, you probably don’t need a picture at all. If you are making a poster, write what is important to know instead of burying it in a gloomy generated picture. If you write a blog post, I will not read if it is illustrated by generated pictures.&lt;/p&gt;
+&lt;p&gt;A website illustration, if any, conveys an emotion, a feeling. I sometimes spend more time finding a good illustration for a post than writing it. If I don’t find a satisfying picture, I don’t put any. &lt;/p&gt;
+&lt;p&gt;The first feeling conveyed to me by a generated picture is an uncanny unease, an obnoxious emotion that immediately makes me want to leave. It also tells me enough about the author not to want to know more. It might be a kind of overreaction. But as I said, there’s too much to read anyway so it’s a good first filter.&lt;/p&gt;
+&lt;p&gt;No, that picture is not pretty. No, it is not funny. It doesn’t share any human feeling, any artistic expression. You like it because you had fun generating it. But it is wasting my time.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-3&quot;&gt;I will not run the code&lt;/h2&gt;
+&lt;p&gt;I don’t want to run generated code on my computer.&lt;/p&gt;
+&lt;p&gt;Good code is knowledge. Even in a purely productivity-oriented business, every line of code should reflect the choice of an employee knowing the business and choosing a way to solve a business problem.&lt;/p&gt;
+&lt;p&gt;Reality is, of course, different. I’ve worked with enough different codebases to know that proprietary software is simply badly coded. Each line is written assuming &amp;quot;I will not be there anymore to deal with it in a few years.&amp;quot; But at least we know that each line, as bad as it can be, was added by a human for a reason. LLMs move the needle from &amp;quot;no need to care in a few years&amp;quot; to &amp;quot;no need to care right now.&amp;quot; You cannot assume anything about generated code. Maybe it was simply hallucinated and, by chance, it compiled. &lt;/p&gt;
+&lt;p&gt;Which means that, as soon as generated code is added to a project, the whole project becomes unmaintainable by humans. You can’t understand the code because there’s nothing to understand in the first place! &lt;/p&gt;
+&lt;p&gt;It follows that the whole project now needs LLMs for any change which, will make it even worse from a human perspective. We end up adding more and more lines of code nobody understand where the problem has always been &amp;quot;There are too many lines of code and too few people understand them.&amp;quot;&lt;/p&gt;
+&lt;p&gt;I’m convinced that accepting generated code will lead most projects to become broken beyond all hope of repair in only a few years. &amp;quot;Carefully reviewing&amp;quot; will soon not be enough. Unfathomable code will eventually slip in and gradually destroy the whole project. I predict that the projects too important to be left to rot and die will take decades to recover from those couple years of &amp;quot;assisted productivity.&amp;quot;&lt;/p&gt;
+&lt;p&gt;We need to remember that what we call &amp;quot;code&amp;quot; is merely a specification of the software we want. Those specifications will be given to the compiler to make the real software. The role of a coder is to take vague, imprecise, and contradictory specifications from a manager or customer and then make sure to remove any ambiguity. This could be done by clarifying with the customer or by silently making choices. History and mathematics have demonstrated that humans cannot make unambiguous and non-contradictory specifications without using a formal language designed expressly for that purpose. Natural languages simply cannot remove ambiguities and this may be an evolutionary feature.&lt;/p&gt;
+&lt;p&gt;Removing the coder and replacing them with a tool designed to pretend to agree to anything said could never produce good, maintainable software. It may produce a small throwaway script. It may find security holes more efficiently than fuzzing. But it will never be able to build something useful and reliable for the long term. &lt;/p&gt;
+&lt;p&gt;Which is what I expect from software.&lt;/p&gt;
+&lt;p&gt;I want to be able to trust software enough to invest time in learning it. That has always been one of my main arguments for using open source: if a free software is good enough, I trust that there will always be people to maintain it or to fork it if needed. If I have a problem with a free software, I can always look at the code to understand what the humans who designed it wanted to do. I may also modify it. This is not theoretical: I’ve done that with countless pieces of software in the last 20 years. I rely on it!&lt;/p&gt;
+&lt;p&gt;For that reason, I will carefully avoid running any openly &amp;quot;vibecoded&amp;quot; tool, and I’m trying to focus my efforts on projects that actively try to distance themselves from the current bubble.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-4&quot;&gt;I will not listen to the discussion&lt;/h2&gt;
+&lt;p&gt;&amp;quot;I’ve asked ChatGPT and…&amp;quot;&lt;/p&gt;
+&lt;p&gt;That’s it. No need to say more. All those years speaking about &amp;quot;fake news&amp;quot; and &amp;quot;checking your sources&amp;quot; just to blindly repeat a random series of letters assembled by a stochastic algorithm? Seriously?&lt;/p&gt;
+&lt;p&gt;I don’t care about your credentials, I don’t care about your experience. With a couple of words, you gladly announced that you are obliterating them and refusing all forms of free will. Goodbye!&lt;/p&gt;
+&lt;p&gt;That’s not very friendly, I know. I never pretended to be. And I didn’t start it.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-5&quot;&gt;I will not grade the student report&lt;/h2&gt;
+&lt;p&gt;Across the last years, I’ve not managed to find one single student who astonished me with their use of a chatbot. In every single case I’ve met, the use of a chatbot made my student perform worse. Sometimes spectacularly like, this student who contributed to a project on Github but, when asked, could not even tell me what the project was about. &lt;/p&gt;
+&lt;p&gt;On the opposite, forcing the student not to use any AI makes them better every single time. No exception. It also vastly improved their self-confidence.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ploum.net/2026-01-19-exam-with-chatbots.html&quot;&gt;Giving University Exams in the Age of Chatbots (ploum.net)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is not a matter of &amp;quot;learning to use the tool&amp;quot;. You cannot learn to use a proprietary stochastic tool which can be changed at any time. You don’t need to &amp;quot;learn to chat&amp;quot; (and if you do, not in my course).  What the &amp;quot;tool&amp;quot; is really doing is making you lose the essential ability to learn, making you lose your self-confidence. As John Scalzi points out: playing Guitar Hero is fun. But even thousands of hours of playing Guitar Hero will not enable you to play &amp;quot;Happy Birthday&amp;quot; on a real guitar.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://whatever.scalzi.com/2026/08/06/generative-ai-the-guitar-hero-of-creativity/&quot;&gt;Generative “AI”: The Guitar Hero of Creativity (whatever.scalzi.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I consider that my students are in my class to learn. Chatbots are actively preventing any kind of learning. That’s why, from now on, I make it a strict policy that anything my students are submitting should be entirely produced by them. &lt;/p&gt;
+&lt;p&gt;It can be short. It will be imperfect. It will be full of mistakes. It may even be wrong. The report will have fewer bullet points and emojis. But it will be yours, and that’s what I want to see.&lt;/p&gt;
+&lt;p&gt;I will not technologically &amp;quot;enforce&amp;quot; this rule. Cheating has always been part of university. If you are smart enough not to be caught, you probably deserve to pass. But it will probably require a lot more effort on your side than simply writing your own goddamn report with your bloody fingers on a keyboard.&lt;/p&gt;
+&lt;h2 id=&quot;soustitre-6&quot;&gt;I will not judge what you do in private&lt;/h2&gt;
+&lt;p&gt;AI/chatbots/LLMs are known to have a terrible impact on your brain. They are bad for you, for the whole economy, for the political atmosphere, and for the environment. They consume huge resources, destroy the whole Internet and our ecosystem.&lt;/p&gt;
+&lt;p&gt;But they are addictive, I get it. They make you feel productive (which, studies have demonstrated, is largely a feeling). I consider them a kind of drug.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://calnewport.com/ai-isnt-breaking-work-its-already-broken/&quot;&gt;AI Isn’t Breaking Work. It’s Already Broken. (calnewport.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They may also be useful when you are forced to accomplish a stupid one-time task you don’t want to do but is required. We all have to deal with our share of bullshit jobs, I get it.&lt;/p&gt;
+&lt;p&gt;Using AI is like a shameful drug addiction or a weird sex fetish. If you want to use it privately or between consenting adults, it’s up to you. As long as you don’t brag about it, I will not judge. &lt;/p&gt;
+&lt;p&gt;Just make sure that I don’t have to interact with it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Human_made_logo_by_Matt_Kindt.png&quot;&gt;Human made logo by Matt Kindt (commons.wikimedia.org)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;signature&quot;&gt;&lt;h3&gt;About the author&lt;/h3&gt;
+&lt;p&gt;I’m &lt;a href=&quot;https://fr.wikipedia.org/wiki/Ploum&quot;&gt;Ploum&lt;/a&gt;, a writer and an engineer. I like to explore how technology impacts society. You can subscribe &lt;a href=&quot;https://listes.ploum.net/mailman3/lists/en.listes.ploum.net/&quot;&gt;by email&lt;/a&gt; or &lt;a href=&quot;/atom_en.xml&quot;&gt;by rss&lt;/a&gt;. I value privacy and never share your adress.&lt;/p&gt;
+&lt;p&gt;I write &lt;a href=&quot;https://pvh-editions.com/ploum&quot;&gt;science-fiction novels in French&lt;/a&gt;. For &lt;a href=&quot;https://bikepunk.fr&quot;&gt;Bikepunk&lt;/a&gt;, my new post-apocalyptic-cyclist book, my publisher is looking for contacts in other countries to distribute it in languages other than French. If you can help, &lt;a href=&quot;about.html&quot;&gt;contact me&lt;/a&gt;!&lt;/p&gt; 
+
+&lt;/div&gt;
+	</content>
+</entry>
+
+</feed>

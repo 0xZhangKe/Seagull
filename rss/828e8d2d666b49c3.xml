@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>今日境</title><link>https://kyo.iroiro.party/</link><description>但是光明的一面是什么呢？我确实不知道啦，也许你只要保持专注，它会突然落到你的身上？</description><atom:link href="https://kyo.iroiro.party/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2026 &lt;a href="mailto:gudzpoz@live.com"&gt;Kana&lt;/a&gt; CC BY-SA 4.0</copyright><lastBuildDate>Tue, 24 Nov 2026 14:52:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Journal 2026</title><link>https://kyo.iroiro.party/posts/journals/2026/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/journals/2026/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 2 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>link-blog</category><guid>https://kyo.iroiro.party/posts/journals/2026/</guid><pubDate>Thu, 29 Jan 2026 16:00:00 GMT</pubDate></item><item><title>一次 BIOS 掉电的恢复记录</title><link>https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;nav id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#zheng-zhuang"&gt;1. 症状&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#hui-fu-windows-deng-lu"&gt;2. 恢复：Windows 登录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#hui-fu-linux-uefi-qi-dong-xiang"&gt;3. 恢复 Linux UEFI 启动项&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#cong-windows-xi-tong-hui-fu"&gt;3.1. 从 Windows 系统恢复&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#cong-linux-xi-tong-hui-fu"&gt;3.2. 从 Linux 系统恢复&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#hui-fu-secure-boot"&gt;4. 恢复 Secure Boot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/#qi-ta"&gt;5. 其它&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;p&gt;
+昨天把开始嗡嗡响的风扇给换了，顺便清了清灰、换了硅脂。一切结束之后就发现电脑没法启动了……折腾了半天之后发现应该是 BIOS 掉电，连带导致 UEFI 引导丢失，Secure Boot
+配置丢失、TPM 设置丢失，最后造成了一系列乍一看不可解的症状。这里记录一下对应方法。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 1 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>https://kyo.iroiro.party/posts/recovery-from-bios-power-outage/</guid><pubDate>Thu, 28 Aug 2025 06:50:11 GMT</pubDate></item><item><title>在 Nikola 里使用 Org-mode 撰写博客</title><link>https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;nav id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#ji-ben-she-zhi"&gt;1. 基本设置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#geng-duo-block-lei-xing"&gt;2. 更多 Block 类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#html-biao-ti-id-sheng-cheng"&gt;3. HTML 标题 ID 生成&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#yi-chu-huan-xing-kong-ge"&gt;4. 移除换行空格&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#zheng-que-dao-chu-wen-jian-jian-de-lian-jie"&gt;5. 正确导出文件间的链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#shi-xian-jue-zhu-wei-zhi-zi-you"&gt;6. 实现脚注位置自由&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#biao-shi-results-nei-rong"&gt;7. 标识 &lt;code&gt;#+RESULTS:&lt;/code&gt; 内容&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#zai-yi-dong-duan-yun-xu-biao-ge-heng-xiang-gun-dong"&gt;8. 在移动端允许表格横向滚动&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#tangle"&gt;9. Tangle!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/#footnotes"&gt;10. Footnotes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;p&gt;
+&lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; 有一个 Org-mode 插件基本上可以在博客里实现开箱即用的 &lt;a href="https://orgmode.org/"&gt;Org-mode&lt;/a&gt; 支持。之前一直是用的 reStructuredText 或是 Markdown 写的文章；现在时隔一年多没更博客，脑子里也只剩 Org-mode 了，索性直接迁移到 Org-mode 上来。
+&lt;/p&gt;
+
+&lt;p&gt;
+我维护了一个自己版本的插件：&lt;a href="https://github.com/gudzpoz/nikola-orgmode"&gt;nikola-orgmode&lt;/a&gt;，增加了部分的中文以及排版的支持。
+Nikola 及插件安装方法较简单，直接跟着官网和插件页面走即可。下面主要是记录一些
+Nikola 原版 Org-mode 插件没有覆盖到的个人配置，顺便也找机会测试一下各种语法的支持。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 6 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>emacs</category><guid>https://kyo.iroiro.party/posts/org-mode-for-nikola-blogging/</guid><pubDate>Thu, 16 Jan 2025 14:22:37 GMT</pubDate></item><item><title>Journal 2025</title><link>https://kyo.iroiro.party/posts/journals/2025/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;
+总之是之前看了 &lt;a href="https://rednafi.com/misc/link_blog/"&gt;Link blog in a static site - Redowan&lt;/a&gt; 这篇文章，正好博客太久没有更新过了。看看能不能就这样稍微凑凑更新频率（事实证明并不能……
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/journals/2025/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 5 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>link-blog</category><guid>https://kyo.iroiro.party/posts/journals/2025/</guid><pubDate>Tue, 31 Dec 2024 16:00:00 GMT</pubDate></item><item><title>中文/CJK 开源像素字体收集</title><link>https://kyo.iroiro.party/posts/cjk-pixel-fonts/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;稍微记录一下中文/CJK &lt;a class="brackets" href="https://kyo.iroiro.party/posts/cjk-pixel-fonts/#cjk" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; 的开源像素字体。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/cjk-pixel-fonts/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 1 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>web</category><guid>https://kyo.iroiro.party/posts/cjk-pixel-fonts/</guid><pubDate>Tue, 19 Dec 2023 03:40:29 GMT</pubDate></item><item><title>(Arch) Linux 个人电脑设置</title><link>https://kyo.iroiro.party/posts/linux-pc/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;nav id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#arch-linux-an-zhuang"&gt;1. Arch Linux 安装&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#geng-xin-xi-tong-ruan-jian-yuan"&gt;1.1. 更新系统软件源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#locale"&gt;1.2. Locale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#pei-zhi-secure-boot"&gt;2. 配置 Secure Boot&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#grub-wai-guan-tiao-zheng"&gt;2.0.1. GRUB 外观调整&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#wang-luo-pei-zhi"&gt;2.1. 网络配置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#ge-ren-chang-yong-ruan-jian"&gt;3. 个人常用软件&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#zhong-wen-zi-ti"&gt;3.1. 中文字体&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#zhuo-mian-huan-jing"&gt;3.2. 桌面环境&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#ri-yong-ruan-jian"&gt;3.3. 日用软件&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#ming-ling-xing-yun-wei-xiang-guan"&gt;3.3.1. 命令行运维相关&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#xi-tong-xiang-guan"&gt;3.3.2. 系统相关&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#hu-lian-wang"&gt;3.3.3. 互联网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#kai-fa"&gt;3.3.4. 开发&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#windows-shuang-xi-tong-an-zhuang"&gt;3.4. Windows 双系统安装&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/#windows-ruan-jian"&gt;3.4.1. Windows 软件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;p&gt;
+之前的文章写的是服务器电脑配置，这篇文章稍微记录一下个人日用电脑（Arch Linux / EndeavourOS）的配置。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-pc/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 5 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>https://kyo.iroiro.party/posts/linux-pc/</guid><pubDate>Sat, 12 Aug 2023 04:07:51 GMT</pubDate></item><item><title>树莓派无显示屏安装配置</title><link>https://kyo.iroiro.party/posts/raspberrypi-headless/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;之前还没有 HDMI 显示屏没有路由器，但是需要把一个树莓派设置起来，于是就有了这篇文章。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/raspberrypi-headless/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 2 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>linux</category><guid>https://kyo.iroiro.party/posts/raspberrypi-headless/</guid><pubDate>Sun, 06 Aug 2023 04:27:32 GMT</pubDate></item><item><title>Linux 服务器运维笔记</title><link>https://kyo.iroiro.party/posts/linux-maintenance/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;nav id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#shen-kao-li-zi"&gt;1. 参考例子&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#friendica-fu-wu-qi-da-jian"&gt;1.1. Friendica 服务器搭建&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#qian-zhi-zhi-shi"&gt;2. 前置知识&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#linux-fa-xing-ban"&gt;2.1. Linux 发行版&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#bao-guan-li-qi"&gt;2.2. 包管理器&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ruan-jian-yuan"&gt;2.2.1. 软件源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ming-ling-xing"&gt;2.3. 命令行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ssh"&gt;2.4. SSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#yong-hu-de-wen-jian-quan-xian"&gt;2.5. 用户的文件权限&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ru-he-du-dong-hou-wen-de-ming-ling-xing-dai-ma"&gt;2.6. 如何读懂后文的命令行代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#pei-zhi-wen-jian"&gt;2.7. 配置文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#chang-jian-tao-lu"&gt;3. 常见套路&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#chuang-jian-yong-hu"&gt;3.1. 创建用户&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#bian-ji-ming-ling"&gt;3.2. 编辑命令&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ruan-jian-fu-wu-guan-li"&gt;3.3. 软件服务管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ssh-an-quan-bao-zheng"&gt;3.4. SSH 安全保证&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#geng-xin-fu-wu-qi-ruan-jian"&gt;3.5. 更新服务器软件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#ufw-jian-dan-fang-huo-qiang"&gt;3.6. UFW 简单防火墙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#kai-qi-bbr"&gt;3.7. 开启 BBR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#caddy-an-zhuang"&gt;3.8. Caddy 安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#php-an-zhuang"&gt;3.9. PHP 安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#mysql-an-zhuang"&gt;3.10. MySQL 安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#mysql-chuang-jian-yong-hu-yu-shu-ju-ku"&gt;3.11. MySQL 创建用户与数据库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#friendica-ben-ti-ruan-jian-an-zhuang"&gt;3.12. Friendica 本体软件安装&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#cha-qu"&gt;4. 插曲&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#cloudcone-an-zhuang-arch-linux"&gt;4.1. CloudCone 安装 Arch Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#doas"&gt;4.2. Doas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/#mox"&gt;4.3. Mox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;p&gt;
+之前每搭一次服务器就想写一篇搭建笔记，但这样效率不高，参考价值也不大。这篇文章尝试把常见的一些套路汇总起来，希望能够对不同 Linux 发行版下不同软件的运维都提供一定的帮助。
+&lt;/p&gt;
+
+&lt;p&gt;
+虽然可能也是鸽了的命运，剩下懒得搬过来的先看之前的&lt;a href="https://kyo.iroiro.party/posts/server-initialization"&gt;简单服务器搭建流程&lt;/a&gt;吧。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/linux-maintenance/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 3 分钟)&lt;/p&gt;&lt;/div&gt;</description><guid>https://kyo.iroiro.party/posts/linux-maintenance/</guid><pubDate>Sun, 30 Jul 2023 15:00:06 GMT</pubDate></item><item><title>NarraScope 2023 小小笔记</title><link>https://kyo.iroiro.party/posts/narrascope-2023/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;前段时间见到 fedi 上有人转 NarraScope 的相关内容，毕竟可以在线参加，就打算到时看看。
+本篇文章稍微记录一下所见所闻。
+（注：NarraScope 是 IF（Interactive Fiction, 互动小说）相关的一个活动。）&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/narrascope-2023/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 1 分钟)&lt;/p&gt;&lt;/div&gt;</description><category>leasure</category><guid>https://kyo.iroiro.party/posts/narrascope-2023/</guid><pubDate>Sat, 10 Jun 2023 13:07:31 GMT</pubDate></item><item><title>遗忘录</title><link>https://kyo.iroiro.party/posts/journals/notes/</link><dc:creator>Kana</dc:creator><description>&lt;div&gt;&lt;p&gt;有很多不记下来就会渐渐遗忘的东西，懒得一一整理，总之都记录在这里。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kyo.iroiro.party/posts/journals/notes/"&gt;阅读更多…&lt;/a&gt; (剩余阅读时间 2 分钟)&lt;/p&gt;&lt;/div&gt;</description><guid>https://kyo.iroiro.party/posts/journals/notes/</guid><pubDate>Wed, 17 May 2023 10:14:37 GMT</pubDate></item></channel></rss>

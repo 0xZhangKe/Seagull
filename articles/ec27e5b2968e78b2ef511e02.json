@@ -1,0 +1,11 @@
+{
+  "id": "ec27e5b2968e78b2ef511e02",
+  "title": "深入浅出程序运行时内存结构",
+  "summary": "最近在写 Zig 时遇到一个奇怪的 bus error，下面是简化后的代码： 1 fn foo (arr: * [ 3 ] u8 ) void { 2 arr[ 0 ] = 100 ; 3 } 4 5 pub fn main () ! void { 6 const arr: [ 3 ] u8 = .{ 1 , 2 , 3 }; 7 foo ( @constCast ( & arr)); 8 } 直接 zig run main.zig 执行，会报错：",
+  "content": "<p>\n最近在写 Zig 时遇到一个奇怪的 bus error，下面是简化后的代码：</p>\n<div>\n<div><pre><code><span><span>1</span><span><span>fn</span><span> </span><span>foo</span>(arr:<span> </span><span>*</span>[<span>3</span>]<span>u8</span>)<span> </span><span>void</span><span> </span>{<span>\n</span></span></span><span><span>2</span><span><span> </span>arr[<span>0</span>]<span> </span><span>=</span><span> </span><span>100</span>;<span>\n</span></span></span><span><span>3</span><span>}<span>\n</span></span></span><span><span>4</span><span><span>\n</span></span></span><span><span>5</span><span><span>pub</span><span> </span><span>fn</span><span> </span><span>main</span>()<span> </span><span>!</span><span>void</span><span> </span>{<span>\n</span></span></span><span><span>6</span><span><span> </span><span>const</span><span> </span>arr:<span> </span>[<span>3</span>]<span>u8</span><span> </span><span>=</span><span> </span>.{<span> </span><span>1</span>,<span> </span><span>2</span>,<span> </span><span>3</span><span> </span>};<span>\n</span></span></span><span><span>7</span><span><span> </span><span>foo</span>(<span>@constCast</span>(<span>&amp;</span>arr));<span>\n</span></span></span><span><span>8</span><span>}</span></span></code></pre></div>\n</div>\n<p>直接 <code>zig run main.zig</code> 执行，会报错：</p>",
+  "image": null,
+  "publishedAt": "2024-08-04T04:26:27Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2024/08/04/program-memory-layout/"
+}

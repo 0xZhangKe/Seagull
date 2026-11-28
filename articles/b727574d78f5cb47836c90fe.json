@@ -1,0 +1,11 @@
+{
+  "id": "b727574d78f5cb47836c90fe",
+  "title": "Clojure 运行原理之字节码生成篇",
+  "summary": "上一篇文章 讲述了 Clojure 编译器工作的整体流程，主要涉及 LispReader 与 Compiler 这两个类，而且指出编译器并没有把 Clojure 转为相应的 Java 代码，而是直接使用 ASM 生成可运行在 JVM 中的 bytecode。本文将主要讨论 Clojure 编译成的 bytecode 如何实现动态运行时以及为什么 Clojure 程序启动慢，这会涉及到 JVM 的类加载机制。",
+  "content": "<p><a href=\"https://liujiacai.net/blog/2017/02/05/clojure-compiler-analyze/\" target=\"_blank\" rel=\"noopener noreferrer\">上一篇文章</a>讲述了 Clojure 编译器工作的整体流程，主要涉及 LispReader 与 Compiler 这两个类，而且指出编译器并没有把 Clojure 转为相应的 Java 代码，而是直接使用 ASM 生成可运行在 JVM 中的 bytecode。本文将主要讨论 Clojure 编译成的 bytecode 如何实现动态运行时以及为什么 Clojure 程序启动慢，这会涉及到 JVM 的类加载机制。</p>",
+  "image": null,
+  "publishedAt": "2017-02-09T21:51:29Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2017/02/09/clojure-compiler-analyze-2/"
+}

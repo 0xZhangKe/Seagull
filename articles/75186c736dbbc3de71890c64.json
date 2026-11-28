@@ -1,0 +1,11 @@
+{
+  "id": "75186c736dbbc3de71890c64",
+  "title": "Zig 构建系统（下）：编译管线与底层运行机制",
+  "summary": "在上篇 《Zig 构建系统（上）：设计理念与最佳实践》 中，我们介绍了 build.zig 的核心抽象模型（Step DAG、Module 与 LazyPath）。 本文结合 Zig 0.16.0 源码 ，讨论执行 zig build 后的底层流程：Build Runner 的动态编译、Step.Compile 如何拼装底层编译命令、ZCU 单体编译分析，以及内嵌 Clang 编译器与 LLD 链接器的集成机制。",
+  "content": "<p>在上篇 <a href=\"https://liujiacai.net/blog/2026/10/01/zig-build-system-design/\" target=\"_blank\" rel=\"noopener noreferrer\">《Zig 构建系统（上）：设计理念与最佳实践》</a> 中，我们介绍了 <code>build.zig</code> 的核心抽象模型（Step DAG、Module 与 LazyPath）。</p>\n<p>本文结合 <a href=\"https://codeberg.org/ziglang/zig/src/tag/0.16.0\" target=\"_blank\" rel=\"noopener noreferrer\">Zig 0.16.0 源码</a>，讨论执行 <code>zig build</code> 后的底层流程：Build Runner 的动态编译、Step.Compile 如何拼装底层编译命令、ZCU 单体编译分析，以及内嵌 Clang 编译器与 LLD 链接器的集成机制。</p>",
+  "image": null,
+  "publishedAt": "2026-10-02T01:00:00Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2026/10/02/zig-build-system-pipeline/"
+}

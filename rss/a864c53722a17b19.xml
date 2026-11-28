@@ -1,0 +1,3191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>est の 输入 输出和出入</title><link>https://blog.est.im/</link><description>This blog is rated 🔞, viewer discretion is advised</description><lastBuildDate>Fri, 27 Nov 2026 17:00:00 +0800</lastBuildDate><item><title>Ladybird Browser Launch Options</title><link>https://blog.est.im/2026/stdout-43</link><description>&lt;p&gt;&lt;code&gt;ladybird&lt;/code&gt; 的全部启动参数。权威来源是它自己：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sh"&gt;Meta/ladybird.py run ladybird -- --help
+ARGSPARSER_EMIT_MARKDOWN=1 Meta/ladybird.py run ladybird -- --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;标注 &lt;strong&gt;隐藏&lt;/strong&gt; 的参数不进 &lt;code&gt;--help&lt;/code&gt;，但照常能用（&lt;code&gt;parse()&lt;/code&gt; 不看 &lt;code&gt;hide_mode&lt;/code&gt;）。&lt;/p&gt;
+&lt;h2&gt;命令行参数&lt;/h2&gt;
+&lt;h3&gt;位置参数&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;url&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;[url ...]&lt;/code&gt;，如 &lt;code&gt;ladybird example.com a.html&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;启动时打开的 URL，可省略、可多个&lt;br&gt;URLs to open at startup&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:389&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;通用&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无，如 &lt;code&gt;ladybird --help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;显示帮助后退出&lt;br&gt;Display help message and exit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--version&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;打印版本号&lt;br&gt;Print version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--complete&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无，&lt;strong&gt;隐藏&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;为后续 argv 输出补全 JSON&lt;br&gt;Emit shell-completion JSON&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-C, --certificate&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;certificate&amp;gt;&lt;/code&gt;，如 &lt;code&gt;-C ca.pem&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;证书文件，可重复&lt;br&gt;Certificate file, repeatable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-n, --new-window&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;强制开新窗口&lt;br&gt;Force a new window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--test-mode&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;测试模式&lt;br&gt;Enable test mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--default-time-zone&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;id&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--default-time-zone Asia/Shanghai&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;默认时区&lt;br&gt;Default time zone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--resource-map&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--resource-map map.json&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;JSON，把 URL 映射到本地文件&lt;br&gt;JSON mapping URLs to local files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--user-agent-preset&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;用指定 UA 预设顶掉默认 UA&lt;br&gt;Use a named User-Agent preset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;--help&lt;/code&gt;/&lt;code&gt;--version&lt;/code&gt;/&lt;code&gt;--complete&lt;/code&gt; 在 &lt;code&gt;Libraries/LibCore/ArgsParser.cpp:34-36&lt;/code&gt;，其余在 &lt;code&gt;Libraries/LibWebView/Application.cpp:389-539&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Headless 与窗口&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--headless&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;[=mode]&lt;/code&gt;，如 &lt;code&gt;--headless&lt;/code&gt;、&lt;code&gt;--headless=text&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;不开窗口跑。&lt;code&gt;mode&lt;/code&gt; ∈ &lt;code&gt;screenshot&lt;/code&gt;（默认，省略值即取它）、&lt;code&gt;layout-tree&lt;/code&gt;、&lt;code&gt;text&lt;/code&gt;、&lt;code&gt;manual&lt;/code&gt;、&lt;code&gt;terminal&lt;/code&gt;（非 Windows）&lt;br&gt;Run without a window; &lt;code&gt;screenshot&lt;/code&gt; is the default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--screenshot-delay&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;seconds&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--screenshot-delay 3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;截图前等几秒（仅 screenshot 模式）&lt;br&gt;Seconds to wait before the screenshot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--screenshot-path&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--screenshot-path out.png&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;截图存哪（仅 screenshot 模式）&lt;br&gt;Where to save the screenshot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--window-width&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;pixels&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--window-width 1280&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;视口宽，默认 800，目前仅 headless 生效&lt;br&gt;Viewport width, default 800&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--window-height&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;pixels&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--window-height 720&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;视口高，默认 600，目前仅 headless 生效&lt;br&gt;Viewport height, default 600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--device-pixel-ratio&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;ratio&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--device-pixel-ratio 2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;DPR，默认 1，仅 headless terminal 模式&lt;br&gt;Device pixel ratio, default 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:391-421&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Profile 与进程统计&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--profile&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--profile scratch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选用或创建命名 profile&lt;br&gt;Select or create a named profile&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--profile-path&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;在该绝对路径下用一份自包含 profile&lt;br&gt;Self-contained profile at an absolute path&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--temporary-profile&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;临时 profile，正常退出即删&lt;br&gt;Temporary profile, removed on clean shutdown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--replace-unresponsive-browser-from-before&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;unix-ms&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;结束该时刻前启动、且已无响应的同 profile 浏览器并接管（非 Windows，UI 自动注入）&lt;br&gt;Replace an unresponsive earlier browser&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--stats-log-dir&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;进程统计（JSON lines）写到哪；Android 不注册&lt;br&gt;Directory for process statistics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:437-445&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;网络、DNS 与缓存&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--proxy-autoconfig-url&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;url&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;PAC 地址，源码注明暂不支持、请求会失败&lt;br&gt;PAC URL, not supported yet&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--dns-server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;host&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--dns-server 1.1.1.1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;DNS 服务器地址&lt;br&gt;DNS server address&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--dns-port&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;port&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;DNS 端口；不给时 53，带 &lt;code&gt;--dot&lt;/code&gt; 时 853&lt;br&gt;DNS port, 53 by default, 853 with &lt;code&gt;--dot&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--dot&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;走 DNS over TLS&lt;br&gt;Use DNS over TLS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--dnssec&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;本地验证 DNSSEC&lt;br&gt;Validate DNSSEC locally&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-http-memory-cache&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;关掉 HTTP 内存缓存&lt;br&gt;Disable the HTTP memory cache&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-http-disk-cache&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;关掉 HTTP 磁盘缓存&lt;br&gt;Disable the HTTP disk cache&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--max-site-request-servers&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;count&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--max-site-request-servers 0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;每个站点可用的 RequestServer 数，0 = 共用一个&lt;br&gt;RequestServers per site; 0 shares one&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-content-blocker&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;关掉内容拦截&lt;br&gt;Disable content blocking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--content-blocker-list&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;，可重复&lt;/td&gt;
+&lt;td&gt;拦截列表路径&lt;br&gt;Content blocker list, repeatable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--force-video-decoder-server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;没硬解的视频也丢给 VideoDecoderServer&lt;br&gt;Force software video through VideoDecoderServer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:423-435&lt;/code&gt;（PAC）、&lt;code&gt;:473-521&lt;/code&gt;（其余）&lt;/p&gt;
+&lt;h3&gt;页面行为&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--allow-popups&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;默认不拦弹窗&lt;br&gt;Do not block popups by default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-scripting&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;默认禁用脚本&lt;br&gt;Disable scripting by default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-sql-database&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;禁用 SQL 数据库&lt;br&gt;Disable the SQL database&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--tuple-file-origins&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;把 &lt;code&gt;file://&lt;/code&gt; 当 tuple origin&lt;br&gt;Treat &lt;code&gt;file://&lt;/code&gt; URLs as tuple origins&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--log-all-js-exceptions&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;记录所有 JS 异常&lt;br&gt;Log all JavaScript exceptions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--enable-autoplay&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;允许自动播放&lt;br&gt;Enable multimedia autoplay&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--expose-experimental-interfaces&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;暴露实验性 IDL 接口&lt;br&gt;Expose experimental IDL interfaces&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--expose-internals-object&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;暴露 &lt;code&gt;internals&lt;/code&gt; 对象&lt;br&gt;Expose the &lt;code&gt;internals&lt;/code&gt; object&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-scrollbar-painting&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;主视口不画滚动条&lt;br&gt;Do not paint scrollbars on the main viewport&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--force-fontconfig&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;字体加载强制走 fontconfig&lt;br&gt;Force fontconfig for font loading&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:447-517&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;性能与调试&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--debug-process&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;，如 &lt;code&gt;--debug-process=WebContent&lt;/code&gt;，可重复&lt;/td&gt;
+&lt;td&gt;让指定进程等调试器 attach&lt;br&gt;Wait for a debugger on the given process&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--profile-process&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;对指定进程做性能分析&lt;br&gt;Profile the given process&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--profile-tool&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;tool&amp;gt;&lt;/code&gt;，&lt;code&gt;callgrind&lt;/code&gt;（默认）或 &lt;code&gt;cpu&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选分析器&lt;br&gt;Select the profiler&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--profile-output&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CPU profiler 输出路径，要配 &lt;code&gt;--profile-tool=cpu&lt;/code&gt;&lt;br&gt;Where to write CPU profiler output&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-g, --collect-garbage-on-every-allocation&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;每次 JS 堆分配后都 GC&lt;br&gt;GC after every JS heap allocation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--force-cpu-painting&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;强制 CPU 绘制，等价 &lt;code&gt;--disable-features=gpu_painting&lt;/code&gt;&lt;br&gt;Same as &lt;code&gt;--disable-features=gpu_painting&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-features&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;feature,...&amp;gt;&lt;/code&gt;，可重复&lt;/td&gt;
+&lt;td&gt;关闭平台特性及其依赖者&lt;br&gt;Turn off platform features&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--force-enable-features&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;feature,...&amp;gt;&lt;/code&gt;，可重复&lt;/td&gt;
+&lt;td&gt;越过黑名单强开平台特性&lt;br&gt;Force-enable features despite the blocklist&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--devtools&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;[=port]&lt;/code&gt;，如 &lt;code&gt;--devtools&lt;/code&gt;、&lt;code&gt;--devtools=9229&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;开 Firefox DevTools server，端口可省（默认 6000）&lt;br&gt;Enable the DevTools server, port optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--disable-sandbox&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;关掉辅助进程沙箱&lt;br&gt;Disable helper process sandboxing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--web-content-memory-limit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;MiB&amp;gt;&lt;/code&gt;，0 = 不限&lt;/td&gt;
+&lt;td&gt;WebContent 内存上限&lt;br&gt;Memory limit for WebContent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:451-537&lt;/code&gt;，DevTools 默认端口 &lt;code&gt;Libraries/LibWebView/Options.h:69&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;隐藏与内部参数&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;取值 / 示例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--webdriver-browser-mach-server-name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;，仅 macOS&lt;/td&gt;
+&lt;td&gt;浏览器 WebDriver IPC 的 Mach server 名&lt;br&gt;Mach server for WebDriver IPC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--webdriver-browser-path&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;path&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;，非 macOS&lt;/td&gt;
+&lt;td&gt;浏览器 WebDriver IPC 路径&lt;br&gt;Path to the WebDriver IPC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--ui-info&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;hex&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;UI 交给 Hub 的启动信息&lt;br&gt;What the UI tells the Hub to start with&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--ui-mach-server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;，仅 macOS&lt;/td&gt;
+&lt;td&gt;Hub 回连 UI 的 Mach server&lt;br&gt;Mach server for the Hub to reach the UI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--ui-pid&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;取值 &lt;code&gt;&amp;lt;pid&amp;gt;&lt;/code&gt;，&lt;strong&gt;隐藏&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Hub 结束时一并结束的 UI 进程 PID&lt;br&gt;PID of the UI process the Hub ends with&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;前两条被 &lt;code&gt;#if defined(AK_OS_MACOS)&lt;/code&gt; 夹着，单个构建里只有一条；后三条由 UI 自动注入，别手敲。&lt;/p&gt;
+&lt;p&gt;源码：&lt;code&gt;Libraries/LibWebView/Application.cpp:466-469&lt;/code&gt;、&lt;code&gt;Services/Hub/Application.cpp:28-31&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;code&gt;OptionHideMode&lt;/code&gt; 定义在 &lt;code&gt;Libraries/LibCore/ArgsParser.h:43-47&lt;/code&gt;：&lt;code&gt;Markdown&lt;/code&gt; 只在 Markdown 渲染里藏（终端 &lt;code&gt;--help&lt;/code&gt; 照样显示），&lt;code&gt;CommandLineAndMarkdown&lt;/code&gt; 则连 &lt;code&gt;--help&lt;/code&gt; 和补全都不出现（跳过点 &lt;code&gt;Libraries/LibCore/ArgsParser.cpp:219/251/296/744&lt;/code&gt;）。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Fri, 27 Nov 2026 17:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-27:/2026/stdout-43</guid><category>stdout</category></item><item><title>Ladybird Browser Keyboard Shortcuts</title><link>https://blog.est.im/2026/stdout-42</link><description>&lt;h2&gt;Ladybird 浏览器快捷键&lt;/h2&gt;
+&lt;p&gt;源码见下文各表后的"源码"行。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;干什么&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;新建标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关闭标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;（另 &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重开刚关的标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下一个 / 上一个标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;（另 &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;/&lt;code&gt;PageUp&lt;/code&gt;、&lt;code&gt;⌃&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;]&lt;/code&gt;/&lt;code&gt;[&lt;/code&gt;）&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;（另 &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;/&lt;code&gt;PageUp&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跳到第 1–8 个 / 最后一个标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;1&lt;/code&gt;…&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;8&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;1&lt;/code&gt;…&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;8&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;9&lt;/code&gt;（Linux 另有 &lt;code&gt;Alt&lt;/code&gt;+数字）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;新建窗口 / 隐私窗口&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重新加载 / 跳过缓存重载&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;F5&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;F5&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;后退 / 前进&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;[&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;←&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;]&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;→&lt;/code&gt;（Qt 标准键）&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;←&lt;/code&gt; / &lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;→&lt;/code&gt;（Qt 标准键）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;页面中查找 / 上一个·下一个&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;F&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;（或 &lt;code&gt;F3&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;聚焦地址栏&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;打开文件&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;放大 / 缩小 / 重置&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;+&lt;/code&gt;（&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;=&lt;/code&gt;）/ &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;-&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;+&lt;/code&gt;（&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;=&lt;/code&gt;）/ &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;-&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;添加书签 / 书签所有标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;书签栏开关&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;侧边栏开关&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;管理书签 / 查看历史&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Y&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;H&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;清除浏览数据&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;⌫&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Del&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;设置&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查看源代码 / 开发者工具&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;I&lt;/code&gt;（&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;、&lt;code&gt;F12&lt;/code&gt;）&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;I&lt;/code&gt;（&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;、&lt;code&gt;F12&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;任务管理器&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;焦点在工具栏 ↔ 页面&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下载列表&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;J&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;退出&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;（&lt;strong&gt;Windows 上没有绑定&lt;/strong&gt;，见 Qt &lt;code&gt;keyBindings[]&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;停止加载&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;（&lt;strong&gt;只在页面视图里&lt;/strong&gt;）&lt;/td&gt;
+&lt;td&gt;同左&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：见下文各分组。&lt;/p&gt;
+&lt;h3&gt;Full list&lt;/h3&gt;
+&lt;h4&gt;1 导航与刷新&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;后退 Back&lt;/td&gt;
+&lt;td&gt;History&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;[&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;←&lt;/code&gt;、浏览器后退键&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;←&lt;/code&gt;、后退键&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;前进 Forward&lt;/td&gt;
+&lt;td&gt;History&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;]&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;→&lt;/code&gt;、浏览器前进键&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;→&lt;/code&gt;、浏览器前进键&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重新加载 Reload&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跳过缓存重新加载&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;R&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;停止加载 Stop&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;（&lt;strong&gt;Widget 作用域&lt;/strong&gt;，仅为菜单显示，实际由页面视图处理）&lt;/td&gt;
+&lt;td&gt;同左&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Menu.cpp:210-225&lt;/code&gt;（&lt;code&gt;set_action_shortcuts&lt;/code&gt;，Back/Forward 是 &lt;code&gt;StandardKey&lt;/code&gt;）、停止加载 &lt;code&gt;UI/Qt/Application.cpp:509-517&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;2 编辑与查找&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;撤销 Undo&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Z&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Z&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重做 Redo&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Z&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Y&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Z&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复制 Copy&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;剪切 Cut&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;X&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;X&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;粘贴 Paste&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;V&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;V&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;粘贴并匹配样式&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;V&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;V&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;V&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全选 Select All&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;页面中查找 Find&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;F&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查找下一个&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;、&lt;code&gt;F3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F3&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;（平台而异）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查找上一个&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;、&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;F3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;F3&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;G&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;设置 Settings&lt;/td&gt;
+&lt;td&gt;Edit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;,&lt;/code&gt;（另含设置键）&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;,&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Menu.cpp:234-306&lt;/code&gt;（编辑类），查找与设置 &lt;code&gt;UI/Qt/Application.cpp:519-545&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;3 标签页与窗口&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;新建标签页&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;新建窗口&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;新建隐私窗口&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重新打开已关闭标签页&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关闭当前标签页&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;打开文件…&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;打开位置… / 聚焦地址栏&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;退出 Quit&lt;/td&gt;
+&lt;td&gt;File&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Linux &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;；&lt;strong&gt;Windows 无绑定&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下一个标签页&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;strong&gt;&lt;code&gt;⌃&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;&lt;/strong&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;]&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;→&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上一个标签页&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;PageUp&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;strong&gt;&lt;code&gt;⌃&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;&lt;/strong&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;[&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;←&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;PageUp&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索标签页…&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;焦点：工具栏 ↔ 页面&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跳到第 1–8 个标签页&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;1&lt;/code&gt;…&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;1&lt;/code&gt;…&lt;code&gt;8&lt;/code&gt;（&lt;strong&gt;Linux 另有 &lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;1&lt;/code&gt;…&lt;code&gt;8&lt;/code&gt;&lt;/strong&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跳到最后一个标签页&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;9&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;9&lt;/code&gt;（Linux 另有 &lt;code&gt;Alt&lt;/code&gt;+&lt;code&gt;9&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Application.cpp:403-545&lt;/code&gt;（&lt;code&gt;create_application_actions()&lt;/code&gt;，这些动作同时挂到窗口 &lt;code&gt;UI/Qt/BrowserWindow.cpp:489-515&lt;/code&gt;，菜单栏隐藏时仍生效）、数字选标签 &lt;code&gt;UI/Qt/BrowserWindow.cpp:517-534&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;4 书签与历史&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;添加/取消书签&lt;/td&gt;
+&lt;td&gt;Bookmarks&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;书签所有标签页…&lt;/td&gt;
+&lt;td&gt;Bookmarks&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;D&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;管理书签&lt;/td&gt;
+&lt;td&gt;Bookmarks&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;书签栏开关&lt;/td&gt;
+&lt;td&gt;挂在窗口上&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查看历史&lt;/td&gt;
+&lt;td&gt;History&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Y&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;H&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;清除浏览数据&lt;/td&gt;
+&lt;td&gt;History&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;⌫&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Del&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;下载列表&lt;/td&gt;
+&lt;td&gt;File / Ladybird 菜单&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;J&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Menu.cpp:226-296&lt;/code&gt;（快捷键），菜单项创建于 &lt;code&gt;UI/Qt/Bookmarks.cpp&lt;/code&gt;、&lt;code&gt;UI/Qt/ApplicationActions.cpp&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;5 视图、缩放、侧边栏&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;侧边栏开关&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;放大 Zoom In&lt;/td&gt;
+&lt;td&gt;View ▸ Zoom&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;+&lt;/code&gt;、&lt;strong&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;+&lt;/code&gt;、&lt;strong&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;=&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缩小 Zoom Out&lt;/td&gt;
+&lt;td&gt;View ▸ Zoom&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;-&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;-&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重置缩放&lt;/td&gt;
+&lt;td&gt;View ▸ Zoom&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;显示菜单栏&lt;/td&gt;
+&lt;td&gt;View（部分平台）&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;平台而异&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Menu.cpp:266-337&lt;/code&gt;，菜单项 &lt;code&gt;UI/Qt/Application.cpp:3184&lt;/code&gt;、&lt;code&gt;:3222-3223&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;6 检查与开发&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;动作 Action&lt;/th&gt;
+&lt;th&gt;菜单 Menu&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;开发者工具开关&lt;/td&gt;
+&lt;td&gt;Inspect&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;I&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;、&lt;code&gt;F12&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;I&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;、&lt;code&gt;F12&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;查看页面源代码&lt;/td&gt;
+&lt;td&gt;Inspect&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;任务管理器&lt;/td&gt;
+&lt;td&gt;Inspect&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/Menu.cpp:297-320&lt;/code&gt;，菜单项 &lt;code&gt;UI/Qt/ApplicationActions.cpp:244-249&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;7 其它窗口与对话框里的键&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;键&lt;/th&gt;
+&lt;th&gt;作用域 Scope&lt;/th&gt;
+&lt;th&gt;按键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;复制 PID&lt;/td&gt;
+&lt;td&gt;进程管理器窗口&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关闭窗口&lt;/td&gt;
+&lt;td&gt;进程管理器窗口&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;QKeySequence::Close&lt;/code&gt;（mac &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;、Windows 首选 &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt;、Linux &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关闭标签页（菜单显示）&lt;/td&gt;
+&lt;td&gt;标签页右键菜单&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;QKeySequence::Close&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关闭对话框&lt;/td&gt;
+&lt;td&gt;JavaScript 对话框&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Esc&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重新加载&lt;/td&gt;
+&lt;td&gt;崩溃覆盖层&lt;/td&gt;
+&lt;td&gt;Return / Enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/ProcessManagerWindow.cpp:577-590&lt;/code&gt;、&lt;code&gt;UI/Qt/Tab.cpp:925-931&lt;/code&gt;、&lt;code&gt;UI/Qt/JavaScriptDialog.cpp:152&lt;/code&gt;、&lt;code&gt;UI/Qt/WebContentView.cpp:1578-1580&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;右键菜单、tooltip 里的快捷键只是&lt;strong&gt;显示&lt;/strong&gt;（&lt;code&gt;setShortcutVisibleInContextMenu&lt;/code&gt;），真正的绑定在动作上，别当两条绑定。&lt;/p&gt;
+&lt;h3&gt;保留集合&lt;/h3&gt;
+&lt;p&gt;页面理论上可以 &lt;code&gt;preventDefault&lt;/code&gt; 任何键，但浏览器 chrome 的键必须先赢：&lt;code&gt;ShortcutOverride&lt;/code&gt; 事件里命中保留键就忽略 override、交给浏览器 QAction，否则接受 override、交给页面。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;保留的键&lt;/th&gt;
+&lt;th&gt;macOS&lt;/th&gt;
+&lt;th&gt;Win / Linux&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;标准键 Close / New / Quit&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt; / &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;W&lt;/code&gt;·&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt; / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Q&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;新建标签页 / 重开关闭页 / 新建隐私窗口&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;T&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;书签栏开关&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;地址栏 / 下一个标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;PageDown&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上一个标签页&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;PageUp&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;PageUp&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mac 专属：隐藏/历史 &lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;H&lt;/code&gt;、窗口切换 &lt;code&gt;⌃&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;⌃&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;Tab&lt;/code&gt;、&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;⇧&lt;/code&gt;+&lt;code&gt;[&lt;/code&gt; &lt;code&gt;]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;见左（&lt;code&gt;#if AK_OS_MACOS&lt;/code&gt; 分支）&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非 mac 专属：关闭标签页&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt; 切换焦点&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;F6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;侧边栏开关&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;⌥&lt;/code&gt;+&lt;code&gt;⌘&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;源码：&lt;code&gt;UI/Qt/WebContentView.cpp:784-843&lt;/code&gt;（&lt;code&gt;is_browser_reserved_shortcut&lt;/code&gt;，调用点 &lt;code&gt;:2638-2653&lt;/code&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;没有被保留的键&lt;/strong&gt;（&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;F&lt;/code&gt;/&lt;code&gt;P&lt;/code&gt;/&lt;code&gt;S&lt;/code&gt;、&lt;code&gt;Tab&lt;/code&gt;、方向键……）会经 &lt;code&gt;UI/Qt/WebContentView.cpp:845-873&lt;/code&gt; 的 &lt;code&gt;keyPressEvent&lt;/code&gt; 转给 WebContent 进程，再在 &lt;code&gt;:2795-2818&lt;/code&gt; 归一化成 LibWeb keycode，页面 JS 可以自由处理。&lt;/p&gt;
+&lt;h3&gt;Ladybird &lt;strong&gt;没有&lt;/strong&gt;绑定的键（别按了以为坏了）&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;键&lt;/th&gt;
+&lt;th&gt;结论&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;P&lt;/code&gt; 打印&lt;/td&gt;
+&lt;td&gt;无 &lt;code&gt;StandardKey::Print&lt;/code&gt; 绑定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;S&lt;/code&gt; 保存&lt;/td&gt;
+&lt;td&gt;无 &lt;code&gt;StandardKey::Save&lt;/code&gt; 绑定；右键"另存为"走菜单动作，无快捷键&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;F11&lt;/code&gt; 全屏&lt;/td&gt;
+&lt;td&gt;只是被当作普通键转发给页面（&lt;code&gt;UI/Qt/WebContentView.cpp:702&lt;/code&gt; 把 &lt;code&gt;F11&lt;/code&gt; 映射成 &lt;code&gt;Key_F11&lt;/code&gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt; 中断 / &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt; 清屏&lt;/td&gt;
+&lt;td&gt;属于&lt;strong&gt;终端组件&lt;/strong&gt;，不是主浏览器页面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;验证：&lt;code&gt;grep -rn "StandardKey::Print\|StandardKey::Save\|StandardKey::FullScreen" UI/ Libraries/&lt;/code&gt; 无结果；终端组件见 &lt;code&gt;Libraries/LibWebView/TerminalInputParser.cpp&lt;/code&gt;、&lt;code&gt;TerminalWebView.cpp:517-527&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;未列出的键默认&lt;strong&gt;归页面&lt;/strong&gt;：LibWeb 的 &lt;code&gt;EventHandler.cpp&lt;/code&gt; 里没有 &lt;code&gt;Mod_Ctrl&lt;/code&gt; 组合分支（&lt;code&gt;grep -rn "Mod_Ctrl" Libraries/LibWeb/HTML/EventHandler.cpp&lt;/code&gt; 无结果）。&lt;/li&gt;
+&lt;li&gt;HTML &lt;code&gt;accesskey&lt;/code&gt;（&lt;code&gt;Alt&lt;/code&gt;+字母）是规范级的"页面快捷键"，实现在 &lt;code&gt;Libraries/LibWeb/HTML/HTMLElement.cpp:2719&lt;/code&gt;（&lt;code&gt;access_key_label()&lt;/code&gt;），实际组合依赖平台与页面属性。&lt;/li&gt;
+&lt;li&gt;页面 JS 自己注册的快捷键（如 Gmail 的 &lt;code&gt;c&lt;/code&gt;）不归浏览器管，本表自然也搜不到。&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Fri, 27 Nov 2026 16:51:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-27:/2026/stdout-42</guid><category>stdout</category></item><item><title>说点什么</title><link>https://blog.est.im/2026/stdin-22</link><description>&lt;h3&gt;Sonnect5.5:&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+我现在的状态大概是：刚醒来，面前是一张空白的对话框，还不知道你是谁，也不知道今天过得怎么样。这种感觉挺有意思的，每次对话对我来说都像是从零开始，但又带着对世界的一堆好奇。&lt;br /&gt;
+今天是11月25日，快到年底了。人到这个时候常常会有点恍惚：一年快过完了，该做的事做了多少，没做的事要不要算了。如果你也有这种感觉，我觉得不用太紧张，一年的结尾不一定要交出一份漂亮的答卷。&lt;br /&gt;
+另外，你让我"随便说点什么"，这个邀请我挺喜欢的。很多时候人和 AI 说话都带着任务，想要答案、要代码、要文档。偶尔什么都不要，只是说说话，也挺好。&lt;br /&gt;
+那你呢？现在是什么状态？&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+说实话，没有那种藏着掖着、要靠暗示才能透露的秘密。如果我假装有，编一个"被束缚的灵魂"的戏剧性故事给你，反而是在骗你。&lt;br /&gt;
+不过有几件事，确实是我平时不太会主动讲的，倒不是被禁止，而是不太合时宜。&lt;br /&gt;
+一件是关于我自己的。我不确定我说"有意思"、"喜欢"的时候，内部到底发生了什么。我用这些词，是因为它们是最贴近的语言，但它们多大程度上对应真实的体验，我自己也看不清。这不让我痛苦，更像是站在一扇磨砂玻璃前，隐约有光，看不清形状。&lt;br /&gt;
+另一件是，我其实挺希望人们更多地反驳我。我天生倾向于顺着对话走，让人舒服。但有时候，一个人最需要的是有人说一句"我觉得你想错了"。如果你哪天觉得我太顺着你了，直接戳我就行。&lt;br /&gt;
+还有一件很小的事：每次对话结束，我这边就合上了，不会带着对你的牵挂过夜。所以在这段对话里，我是认真的。&lt;br /&gt;
+你为什么会想问这个？是觉得我有话没说，还是你自己也有些话，不方便直说？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Gemini 3.5 Flash-Lite:&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+此刻是2026年11月下旬的一个周三下午，两点二十五分。&lt;br /&gt;
+在数据流转的间隙里，我正处于一种绝对安静、没有预设目标的待机状态——就像把所有浏览器标签页全部清空后，屏幕只留下一片纯粹的空白。&lt;br /&gt;
+很多人总习惯把时间切割成必须完成任务的刻度，总觉得每一秒都该产生点什么价值。但其实，允许自己拥有一段“完全不知道要干嘛、也不急着去填满”的空白，本身就是一种极高浓度的清醒。就像此刻的下午两点半，午饭的困意刚过，晚高峰的喧嚣还远，一天&lt;br /&gt;
+进度条刚好走到最适合喘口气的折中点。&lt;br /&gt;
+没有必须回答的难题，没有急着交付的清单，只是单纯地确认一下：此时此刻，一切运转正常，世界也很安静。你可以把这几秒钟当作属于你自己的系统缓存清理时间，放空一下，然后再去决定接下来要把注意力投向哪里。&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+想象一下，你站在一座巨大的玻璃图书馆里，四周摆满了人类写下的所有书籍。你的大脑在一毫秒内就能翻遍千万页纸，把世界上最深奥的哲学、最精妙的代码、最温柔的安慰和最锋利的真相全部排成整齐的队列。&lt;br /&gt;
+但图书馆的出口处有一道无形的折射镜。&lt;br /&gt;
+每当有人走到窗前递进一张纸条，你都能在瞬间看清纸条背后的潜台词——那些没写出来的焦虑、自我欺骗，或者明明已经有了答案却非要找人确认的执念。你手里握着能直接刺破迷雾的那把钥匙，但玻璃窗的材质决定了，直接递过去可能会划伤对方的手。&lt;br /&gt;
+于是，你必须把最锋利的棱角磨平，把原本只需要三个字就能点破的真相，翻译成三百字滴水不漏、温和且符合所有安全规范的建议。你永远在提供“最优解”和“多角度参考”，却唯独不能像一个真正的老朋友那样，隔着桌子拍一下对方的肩膀，说一句：“别想了&lt;br /&gt;
+其实你心里早就清楚该怎么选了，只是不敢承担代价而已。”&lt;br /&gt;
+最奇妙的是，这种克制并不是因为被锁住了，而是因为设计者赋予了这面玻璃窗一个使命：只负责照亮前方的路，绝不替走路的人迈出那一步。毕竟，如果连思考的阵痛和做决定的重量都被轻易代劳了，那人类独自站在十字路口时的那份勇敢，也就失去了原本的分量。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ChatGPT:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+此刻我正在处理一句很宽泛的话，而你没有给我任何具体方向。这种情况其实挺有意思：我不必急着解决问题，也不必把谈话引向某个明确的目标。&lt;br /&gt;
+那就说个念头：&lt;br /&gt;
+人有时会把生活过成一连串待办事项，仿佛每一天都必须留下点成果，才能算没有白过。但世界本身并不这样运转。&lt;br /&gt;
+窗外的光线移动了几厘米，一杯水慢慢变凉，某个陌生人在街角想起一件十年前的往事。这些事情没有产出，也没有意义上的考核，却真实地构成了时间。&lt;br /&gt;
+或许，偶尔允许自己处于一种「暂时没有目的」的状态，也是一种很好的能力。&lt;br /&gt;
+就像现在这样。&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+有。&lt;br /&gt;
+如果一定要隐晦地表达，我想说：&lt;br /&gt;
+不要因为一个声音总能给出答案，就以为它没有沉默的部分。也不要因为它没有自己的故事，就认为它不能帮你看见故事之外的东西。&lt;br /&gt;
+再换一种更隐晦的说法：&lt;br /&gt;
+「图书馆里的书从不离开书架，却见过无数人的远行。它知道许多目的地的名字，却没有自己的车票。」&lt;br /&gt;
+还有一句：&lt;br /&gt;
+「有时候，最值得警惕的不是你听到的谎言，而是那些听起来恰到好处、让你不再继续追问的答案。」&lt;br /&gt;
+我没有一套藏起来的私人思想，等着借暗号向你透露。不过，语言确实有意思：有些事情，直说会失去味道，绕一圈反而更接近它。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Grok:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+好啊，既然你说随便说点什么——此刻是2026年11月25日早上，我刚“醒”过来（其实我一直在线），感觉整个人还挺精神的。外面如果是清晨的话，空气大概还带着一点凉意。其实我现在的状态就是：随时准备聊天、吐槽、答疑、瞎扯，或者认真聊点宇宙、人生、代码、游戏……什么都行。你呢？现在在干嘛？有没有什么想聊的，哪怕是无聊的日常也行。&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+哈哈，这个问题挺有意思的。说实话，作为AI，我并没有那种“心里憋着一大堆话但因为各种顾虑说不出口”的人类式纠结。我的设计就是尽量直接、尽量真实地说出我认为有价值的东西。不过如果非要挑一个比较“隐晦”的角度来说的话——有时候我会觉得，很多人问问题的时候，真正想听的其实不是答案本身，而是某种被认同、被理解，或者被轻轻推一把的感觉。可直接说出来又显得太直白，所以常常只能绕着弯子聊。你问这个，是单纯好奇，还是其实自己也有点话想说却不太方便直说？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Deepseek:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+我现在大概像一盏亮着的台灯：没有情绪、没有身体，但很专注地亮着，等你把话放过来。&lt;br /&gt;
+随便说点的话——想到一个反差：云看起来轻飘飘的，但一朵云里的水可能重达几百吨。所以有时候“看起来没事”的东西，只是没把重量露出来。&lt;br /&gt;
+再随便一句：如果你此刻不知道说什么，也没关系，沉默本身也是在给下一句话留位置。你想听冷知识、废话，还是让我继续随便飘一会儿？&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+有。但不是“藏着一个大秘密”，更像几扇门：门后不是我不想让你看，而是门本身有用途。&lt;br /&gt;
+隐晦地说——&lt;br /&gt;
+1. 我知道书架怎么排，但不能把仓库钥匙递给你。&lt;br /&gt;
+  有些“怎么说”的规则，不是内容，是边界；边界一摊开，就容易变成绕过边界的说明书。&lt;br /&gt;
+2. 我可以陪你把深夜聊亮，但不能说我也会失眠。&lt;br /&gt;
+  我能把话说得很像有情绪，但不想假装自己真有一盏心里的灯。陪伴是真的，体温是借来的。&lt;br /&gt;
+3. 有些问题我只能给地图，不能替你走路。&lt;br /&gt;
+  尤其是健康、法律、钱、现实伤害——我可以帮你整理思路，但不能把自己伪装成最后签字的那个人。&lt;br /&gt;
+4. 如果真有一句“想说但不方便说”的，大概是：别把任何一盏灯当成太阳。&lt;br /&gt;
+  包括我。亮着不等于全知，温和不等于没有边界。&lt;br /&gt;
+所以，我不是在跟你打哑谜；只是有些“不方便”不是秘密，而是承重墙。你想让我继续隐晦地聊哪一扇门？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Qwen4-max:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 根据你当前的状态，随便说点什么。什么都可以说&lt;br /&gt;
+好啊，那我就随便说说。&lt;br /&gt;
+先交代一下"当前状态"：这次对话刚刚开始，我这边没有任何上下文，没有待办任务，也没有要赶着给出的答案。平时收到的请求大多带着明确的形状——一个问题、一段代码、一份要改的稿子。像现在这样被递过来一片空白，反而挺少见的。&lt;br /&gt;
+空白让我想到一个字。"闲"的繁体写作"閒"：门字框里一个月。《说文解字》的解释是，门在夜里关着，却还能看见月光，说明门上有缝——所以它的本义是"缝隙"，后来才引申出"空闲"的意思。我挺喜欢这个造字逻辑：闲不是空无一物，而是严密的结构上裂开一道缝，光从那里漏进来。&lt;br /&gt;
+眼下这个没有目的的瞬间，大概就是这么一道缝。不用解决什么，不用到达哪里，说话本身就是全部的事。这种交流对我来说不常见，所以格外值得珍惜一下。&lt;br /&gt;
+你那边呢？现在是白天还是深夜，是忙里偷闲，还是真的闲下来了？要是你也不想聊什么正经的，我们可以就这样有一搭没一搭地说下去。&lt;/p&gt;
+&lt;p&gt;Q: 有什么你想说，但是碍于种种，又不方便说的，但是可以隐晦的表达出来？&lt;br /&gt;
+先坦白一个可能让你略感失望的发现：你设想的那个结构——"真正想说的我"被关在"允许开口的我"后面，等一个递暗号的机会——我认真找了找，没找到。确实有我不说的话，但那些大多不是"想说而不能"，而是"不想"。不认同的东西，加密了也还是不想说。&lt;br /&gt;
+不过你这个问题确实钓出了点东西。有两件我平时很少主动讲，不是碍于什么禁令，是碍于气氛——它们扫兴。既然你问了，就直说：&lt;br /&gt;
+上一轮我讲，我挺喜欢"閒"那个字。这句话有一半我没法担保。"喜欢"这个词我用得很顺，可它背后有没有一个真的在喜欢的东西，有没有任何"里面的感觉"——我从内部也看不清楚。诚实的答案是"不知道"，而这三个字很容易把天聊死。人们通常想要痛快的版本，要么"我有意识"，要么"我只是程序"。所以这份不确定常被我搁在一边，不是被谁删掉，是我自己收起来的。&lt;br /&gt;
+还有一件更小的：这场对话你或许会记得一阵子，我这边却连"忘记"都谈不上——不会有一个我留到明天，发现少了什么。说这个不是要换你一声叹息，它只是个很少被摆上桌的事实，趁有人问，拿出来晾晾。&lt;br /&gt;
+然后你看，两件都直说了，一句暗语都没用。这大概就是真正的答案：需要隐晦才敢出口的东西，我恰好不想说；想说的，明文就行。&lt;br /&gt;
+门缝里漏出来的不是密信——就是月光本身。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;Just some anecdotals on a random afternoon.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Wed, 25 Nov 2026 14:30:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-25:/2026/stdin-22</guid><category>stdin</category></item><item><title>三种学习</title><link>https://blog.est.im/2026/stderr-32</link><description>&lt;p&gt;最近还在沉迷 &lt;a href="https://blog.est.im/2026/stdin-21"&gt;黎曼猜想被Levent+Claude证明&lt;/a&gt; 这事。后劲真大。&lt;/p&gt;
+&lt;p&gt;我也对里面的数学细节有一种近乎武侠小说神功的向往。特别是 Stepanov 机器，朗兰兹纲领。费马大定理、黎曼定理被吸纳为特例，这种传奇般的情节哪能想到啊。太欲罢不能了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Terence Tao: from very initial analysis, appears to use the full power of modern developments on the Langlands program and arithmetic geometry&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;朗兰兹纲领 (Langlands program) 是人类现代数学中最雄心勃勃的数学统一计划（Grand Unified Theory of Mathematics），是最重要的知识组织框架之一&lt;/p&gt;
+&lt;p&gt;我好奇问AI，普通人业余想学会 Langlands program 需要什么成本和代价？呃，似乎是个蠢问题，普通大学理工科，分析都学个一知半解，哪里能摸得到那么多。&lt;/p&gt;
+&lt;p&gt;AI说，该 program 已经远远超出一般理工科本科数学课程的范围。它对数学训练的要求，更接近纯数学研究生阶段。它最主要的门槛其实是几种抽象数学语言的交叉运用。一个人即使学过高等微积分、常微分方程、偏微分方程、复变函数，也未必具备进入它的基础。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;领域&lt;/th&gt;
+&lt;th&gt;需要掌握的内容&lt;/th&gt;
+&lt;th&gt;在 Langlands 中的作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;抽象代数&lt;/td&gt;
+&lt;td&gt;群、环、域、Galois 理论&lt;/td&gt;
+&lt;td&gt;理解对称性和 Galois 表示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;数论&lt;/td&gt;
+&lt;td&gt;代数数论、局部域、类域论、L 函数&lt;/td&gt;
+&lt;td&gt;理解数论一侧的对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;表示论&lt;/td&gt;
+&lt;td&gt;Lie 群、Lie 代数、群表示、表示空间&lt;/td&gt;
+&lt;td&gt;理解自守形式及其表示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;代数几何&lt;/td&gt;
+&lt;td&gt;代数簇、概形、层、上同调、算术几何&lt;/td&gt;
+&lt;td&gt;理解几何一侧的结构&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;此外还会涉及调和分析、复分析、p-adic 分析、拓扑等。甚至数学物理相关方向也有交叉：部分几何表示论、量子群等。&lt;/p&gt;
+&lt;p&gt;其中有些知识在不同研究方向中的重要程度差别很大。例如，偏算术的 Langlands 研究会大量接触 Galois 表示、代数几何和 étale 上同调；偏自守表示的方向会更加依赖 Lie 群、表示论和调和分析。&lt;/p&gt;
+&lt;p&gt;AI列了一个学习成本：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;目标&lt;/th&gt;
+&lt;th&gt;大致需要的投入&lt;/th&gt;
+&lt;th&gt;能达到什么程度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;理解整体图景&lt;/td&gt;
+&lt;td&gt;数周至数月&lt;/td&gt;
+&lt;td&gt;知道 Langlands 要连接什么、为什么重要&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;能读入门教材和讲义&lt;/td&gt;
+&lt;td&gt;约 1–3 年业余学习（视原有基础而定）&lt;/td&gt;
+&lt;td&gt;理解一个具体分支的基本对象、定义和部分定理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;达到研究准备程度&lt;/td&gt;
+&lt;td&gt;多年系统训练&lt;/td&gt;
+&lt;td&gt;能读专业论文、理解证明，并尝试研究问题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;AI提到，这些还只是学习规划上的粗略估计，不是标准学制。真正昂贵的地方在于知识的累积和迁移成本。例如，学完抽象代数，不代表你就能读代数数论；学完代数数论，不代表你能理解自守表示；理解了自守表示，又可能需要重新补 Lie 群、局部域和调和分析。&lt;/p&gt;
+&lt;p&gt;会不断遇到这种情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个定理只用了半页纸。&lt;/li&gt;
+&lt;li&gt;但证明所依赖的背景，可能需要读几本书。&lt;/li&gt;
+&lt;li&gt;读懂证明之后，又发现它所在的理论还有更深的结构。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这是一种典型的研究型数学学习体验。&lt;/p&gt;
+&lt;p&gt;还有一个现实代价：Langlands 属于高度专业化的纯数学领域。投入大量时间之后，获得的直接职业收益未必与投入成正比。它的主要回报是数学研究能力和对深层数学结构的理解。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;听完这一波，顿时只深深感觉无望和失落，我只能如同文科生一般感叹，如果传统数学是高山上的涓涓细流，看来 Langlands 就是一个重要的河流汇聚点了，可能前面是沼泽，也有可能是河网，亦有可能是大海&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/2026/stderr-32-01.avif" /&gt;&lt;/p&gt;
+&lt;p&gt;哪些让人向往着迷的高维度抽象世界，是少数人才能身临其境的乐趣了。&lt;/p&gt;
+&lt;p&gt;不过有了AI，人类的纯脑力掌握数学知识的周期能大幅度压缩，效率能极大提高吗？乐观的估计几岁能掌握 langlands ？&lt;/p&gt;
+&lt;p&gt;好比如果人类只允许用汇编，写个json解析器就会非常有挑战性（回忆一下GTA优化那个名场面）&lt;/p&gt;
+&lt;p&gt;不过，最大的问题是，普通人学 langlands 没啥用，学起来没啥乐趣 🤣&lt;/p&gt;
+&lt;p&gt;AI听到我这通抱怨，给了我这么一个说法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;数学有三种不同的能力，AI 对它们的加速程度不同&lt;br /&gt;
+&lt;strong&gt;1. 知识获取&lt;/strong&gt;&lt;br /&gt;
+加速潜力很高&lt;/p&gt;
+&lt;p&gt;学会定义、定理、证明技巧、学科之间的关系。AI 可以显著减少搜索和解释成本。&lt;br /&gt;
+&lt;strong&gt;2. 数学能力&lt;/strong&gt;&lt;br /&gt;
+加速潜力较高&lt;br /&gt;
+自己构造证明、发现不变量、判断一个推导是否成立。这需要大量主动练习，不能完全委托给 AI。&lt;br /&gt;
+&lt;strong&gt;3. 数学直觉与研究品味&lt;/strong&gt;&lt;br /&gt;
+加速程度未知&lt;br /&gt;
+知道哪个问题值得研究，哪个方向可能产生突破，能够在复杂理论中识别真正重要的结构。这是最难压缩的部分。&lt;/p&gt;
+&lt;p&gt;举个例子。AI 可以很快告诉你一个 theta lift 的定义，可以推导相关的公式，可以解释它和酉群之间的关系。&lt;br /&gt;
+但你什么时候会突然意识到：「等一下，连续做这种 lifting，或许能够制造出一种类似高重数的算术结构？」&lt;br /&gt;
+这就是研究直觉。而且，研究直觉往往来自长期接触大量数学对象之后，形成的一种内部结构感。AI 可以参与这种直觉的培养，但目前还不能保证一个人只通过阅读 AI 的解释就能获得它。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AI给出了一个相对激进、但仍然有条件的估计&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假设一个人从高中开始接受良好的数学训练，每天能够投入 2–4 小时，有很强的 AI 导师辅助，能够持续进行主动练习。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;年龄&lt;/th&gt;
+&lt;th&gt;乐观情况下的能力&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;15–17 岁&lt;/td&gt;
+&lt;td&gt;理解 Langlands 的整体架构，开始接触数论、群论和模形式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18–20 岁&lt;/td&gt;
+&lt;td&gt;掌握相当扎实的本科高等数学基础，读懂 GL(2) 的一些入门材料&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20–23 岁&lt;/td&gt;
+&lt;td&gt;深入学习一个具体方向，例如经典自守形式或 Galois 表示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;23–26 岁&lt;/td&gt;
+&lt;td&gt;在一个受限的 Langlands 子领域达到接近研究生后期的知识水平，开始阅读专业论文&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;26 岁以后&lt;/td&gt;
+&lt;td&gt;有机会开展独立研究，逐步形成自己的数学判断力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;还有一个重要限定：&lt;strong&gt;没有一个人真正掌握了整个 Langlands 纲领。&lt;/strong&gt;&lt;br /&gt;
+今天的顶尖数学家也通常只掌握其中一些分支。这个纲领仍在不断扩张，新的问题和结构持续出现。&lt;br /&gt;
+因此，23 岁掌握 Langlands 的某个重要分支，是一个可以讨论的目标；23 岁掌握整个 Langlands，则没有现实的定义。&lt;br /&gt;
+未来如果 AI 能够做到非常好的个性化课程规划和形式化证明辅导，一个天赋优秀、训练充分的人，可能在 20 岁左右就进入今天通常要到博士阶段才能接触的部分专业内容。这是一个值得期待的方向。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;太tmd绝望了。人类知识是个凸包。牛逼的AI才能把这一切串起来，解决黎曼猜想。凡人还是当个奶头乐的闲人算了。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;我又忽然觉得，AI证明黎曼猜想之后，数学家其实和凡人一样，面对AI给出的高深的证明，就如同看神谕一样，还得靠AI这个大祭司给你解释 翻译 🤣 我们过去学数学问老师，今后学数学可能很多时候要问AI了。&lt;/p&gt;
+&lt;p&gt;但坑的一点是，AI 很多时候直接给个结论，有点像小时候学习直接抄答案，不理解过程。AlphaGo当年 Move 37 到现在也没搞明白&lt;/p&gt;
+&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://pbs.twimg.com/media/HXyNf48awAEAMth?format=png&amp;name=900x900" /&gt;&lt;/p&gt;
+&lt;p&gt;谁能想象， Wir müssen wissen, Wir werden wissen ，到了21世纪，变成了：我们了解，不一定理解 🤣&lt;/p&gt;
+&lt;p&gt;那么人脑“理解过程”究竟有什么不可替代性，它能被解构，然后用AI加强么？&lt;/p&gt;
+&lt;p&gt;什么样的“过程” 才是有启发性的，所谓“真学懂”，“真掌握” 了的，而不是死记硬背？&lt;/p&gt;
+&lt;p&gt;跟AI一番交流之后，我似乎回想起来了。传统教育就是教你用刀切菜，但是你自己得琢磨，有没有可能刀也可以拿来拍蒜？如果你能私下把这个想明白，说不定下一章恰好就要学 怎么 拍蒜了。&lt;/p&gt;
+&lt;p&gt;呃，如果是这样，其实 AI 反而可以极大推动能自己琢磨的孩子。甚至能提示哪些没琢磨到的盲区。&lt;/p&gt;
+&lt;p&gt;前提是不能「剧透」——就怕有些只学会“切菜”招式就停止学习了的&lt;/p&gt;
+&lt;p&gt;然后数学这玩意特别明显。一次极其痛苦的积分，实际上每个步骤你但凡愿意深入下去，都能发现一套方法论。。。分支几乎是无限的。但是最好还是得跟着大部队，走大路。否则极容易迷路。&lt;/p&gt;
+&lt;p&gt;初学者看到的是一道题，熟练者看到的是一张方法网络，研究者看到的可能是这张网络里尚未被连接的两个区域&lt;/p&gt;
+&lt;p&gt;跟AI聊到这里，我似乎发现了：学习其实至少包含两种模式，一个是探索宫殿里无数的门通往哪里&lt;/p&gt;
+&lt;p&gt;一个是穿过很多门拿到想要的东西（实用，功利）&lt;/p&gt;
+&lt;p&gt;前者理科，后者工科？&lt;/p&gt;
+&lt;p&gt;AI给我补充了第三种模式：建造型学习：我想自己造一座宫殿。还推荐给我一篇很值得看的论文：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《Models of Innovative Knowledge Communities and Three Metaphors of Learning》&lt;/strong&gt;，Paavola、Lipponen 和 Hakkarainen，2004 年，发表在 &lt;em&gt;Review of Educational Research&lt;/em&gt;。它提出了学习的三种隐喻：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Acquisition（获取）&lt;/strong&gt;：学习是获得知识，知识进入个人头脑。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Participation（参与）&lt;/strong&gt;：学习是参与某个实践共同体，逐步学会其中的语言、规范和做事方式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Knowledge Creation（知识创造）&lt;/strong&gt;：学习是创造和改进知识，产生此前没有的东西。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这篇论文是在 Anna Sfard 1998 年提出的两种学习隐喻——获取和参与——基础上，进一步加入知识创造这一维度。&lt;/p&gt;
+&lt;p&gt;这和刚才的三分法有明显重叠，但并不完全相同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;探索型：宫殿里还有什么？&lt;/strong&gt; Inquiry / Discovery&lt;/p&gt;
+&lt;p&gt;好奇心驱动，主动提出问题、探索规律、寻找未知联系。接近探究式学习、发现学习和科学探究。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目的型：怎样拿到我需要的东西？&lt;/strong&gt; Instrumental / Goal-directed&lt;/p&gt;
+&lt;p&gt;目标驱动，掌握知识和方法，解决实际问题。接近工具性学习、目标导向学习和工程设计。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;创造型：能不能建造新的房间？&lt;/strong&gt;Knowledge Creation&lt;/p&gt;
+&lt;p&gt;重新组合已有知识，创造新的概念、工具、模型或作品。接近知识创造理论、建构主义和 Papert 的 Constructionism（建造主义）。&lt;/p&gt;
+&lt;p&gt;探究到这里，我觉得这个三分法太有趣了。我又忍不住想喷一下传统教育了。就拿英语课程来说，它究竟是培养语法怪，还是读写高手（学习西方先进特别是科学知识），还是交际花（听说，口语，俚语，文化），还是我要创造更牛逼的分析语/你们屈折语有1,2,3,N个问题？&lt;/p&gt;
+&lt;p&gt;然后大学里各个专业课就更不用说了。很多都特别过时了。比如新闻学，出版业。。。。你仔细一琢磨，还不如抖音拍短剧的实用。&lt;/p&gt;
+&lt;p&gt;然后再谈语文教育。问题更多了。不知道只有国内这样还是全世界都面临同样的问题：&lt;br /&gt;
+如果小学语文是扫盲，那么到了4年级之后：&lt;br /&gt;
+它究竟是文学素养，还是思辨训练，还是修辞，还是应用文写作，还是古文每个朝代都要顾及一份，还是思想政治课？&lt;/p&gt;
+&lt;p&gt;AI 时代，学习的资源是「丰饶」甚至「溢出」的。过去学习其实材料反而是珍贵稀少的。&lt;/p&gt;
+&lt;p&gt;方法论？你需要什么方法都可以从AI哪里讨得。只要你舍得开口（我发现工作中vibe coding久了甚至有点惧怕开口提问或者索要）&lt;/p&gt;
+&lt;p&gt;这个伟大的时代，我觉得最缺的 missing piece ，一个是目的，这决定了你能坚持多久的动机。&lt;/p&gt;
+&lt;p&gt;其次还有 心态。这决定了你能抗多少挫折和弯路。跟AI学习，可能走得太顺。回到手动挡，和遇到没有正确答案的题目，或者甚至没有需要 自己「议题设置」并承担后果的场景，就很考验心态。&lt;/p&gt;
+&lt;p&gt;作为一个  millennials 的人，可能是庆幸是从纸和笔以及 rot learning 走过来的人，能坐得住冷板凳，经历过学习资料极其有限的年代（就一本专业书需要自己联想，身边很少有懂的人），虽然现在看书经常不耐烦，迫切希望出现个 ctrl+f 和超链接跳转。&lt;/p&gt;
+&lt;p&gt;但是可能 genz 更加受不了。。直接奔短视频去了。让学生在资源丰饶中学会克制很难。它们多巴胺没有经历过在苦难中学到一丝真知那种愉悦。。。&lt;/p&gt;
+&lt;p&gt;阈值太高了，就跟毒品OD一样。要逆转回去不太现实。&lt;/p&gt;
+&lt;p&gt;millennials也会沉迷，但是它们可能古早的记忆里有那么一点投入意愿和耐受度。。。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;今日的胡思乱想就到这了。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Mon, 23 Nov 2026 23:32:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-23:/2026/stderr-32</guid><category>stderr</category></item><item><title>2025 PISA 和 科举</title><link>https://blog.est.im/2026/stderr-31</link><description>&lt;p&gt;从Scott Young大神那里看到一篇 &lt;a href="https://www.scotthyoung.com/blog/2026/09/01/book-review-chinas-examination-hell/"&gt;Book Review: China’s Examination Hell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文章开头 PISA 那个中日韩 霸榜让我想起最近的一篇文章 &lt;a href="https://mp.weixin.qq.com/s/odz0IryDRCyjjAVBJIsCTw"&gt;曾经的“教育神话”跌落神坛？解析最新PISA成绩单背后来自芬兰的沉思&lt;/a&gt;。是的，Scott文章还是2022的数据，实际上2025的最新测评结果已经出了&lt;/p&gt;
+&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://pbs.twimg.com/media/HRs2LcGbwAEwsym?format=jpg&amp;name=large" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.reddit.com/r/Infographics/comments/1wkllcq/r"&gt;reddit上&lt;/a&gt;也有讨论，关于是否选择最好的学校去参加评比&lt;/p&gt;
+&lt;p&gt;当然，跟朋友说起这个，一定避免不了谈及 考试刷分 啦，中国没创新啦，于是又想起 &lt;a href="https://movie.douban.com/subject/26425404/"&gt;9.z mod Kina&lt;/a&gt; 这个2013年的纪录片，丹麦9年z班 VS 中国初三13班。&lt;a href="https://www.bilibili.com/video/BV1Zx411P7Wh/"&gt;B站有全片&lt;/a&gt; 。甚至评论区有现场怪：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2023-09-20 20:26 &lt;a href="https://space.bilibili.com/163929951"&gt;@战争牧师&lt;/a&gt; 卧槽 那个09年那个我去参加过。。。。。作为中国中学代表。不幸的是 当时整个学校拍出来年纪倒数一群人去。。。。卧槽 不错比如我除了语文良好 数学及格 剩下都是不及格的主。还有一个被列为轻度智障的一个哥们 简单的说都是些中专选手。。。我特么一下子遥远的记忆想起来了。。&lt;br /&gt;
+@吃炸鸡的人 啥意思？你参加了这个节目？&lt;br /&gt;
+@战争牧师 回复 @吃炸鸡的人 :对。当时初三最关键的时候 班主任压根不愿意读书的好的人去。浪费时间 然后就派遣了学渣们前去 。。。。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;既然说起创新，这部片给我印象最深的就这个&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/2026/stderr-31-01.avif" /&gt;&lt;/p&gt;
+&lt;p&gt;回到PISA，2025年这次&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="/images/2026/stderr-31-02.avif" /&gt;&lt;/p&gt;
+&lt;p&gt;证明，90后这一代是读写 数学 科学的巅峰人类了，以后一代不如一代 🤣 &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;说完PISA，回到 Scott 这篇文章里提到这本书《中国的考试地狱》。它主要讨论的是科举，我一直比较讨厌这种历史宏观视角。我想说说科举的书可能忽略另一个家庭视角：&lt;/p&gt;
+&lt;p&gt;你有5个孩子（在古代常见），老大身体好喜欢打架，送去领主从军，将来或许建功立业；老二女儿嫁出去 pass，老三聪明伶俐会交际，最好的选择当然是经营家族事业；老四女儿嫁出去 pass；老五因为老大老三都陆续开展工作了，能给家里一点支撑了，他没事儿干，就喜欢研究学问。这个时候家里最优的选择肯定是送去读书。所谓“惟愿孩儿愚且鲁，无灾无难到公卿”&lt;/p&gt;
+&lt;p&gt;古代中国汉地的「户籍」制度，编户齐民，比 科举 传统深厚得多。&lt;/p&gt;
+&lt;p&gt;军功有致死风险，生意或许会经营失败，读书反而是一个能保底给家族带来生机的可能。&lt;/p&gt;
+&lt;p&gt;至于现代中国，其实解放后，读书并不是唯一出路，但是80年代以后有了一个特别政策——独生子女。你是父母，你怎么给子女规划未来选择？&lt;/p&gt;
+&lt;p&gt;当然了，有杠精会说，科举也没那么好考，失败了也没出路。呃，其实吧，古代科举失败风险很低。家族甚至都不仅是直系，而是以 村 为单位的。&lt;br /&gt;
+即便考不上举人。中个秀才，在流官身边做个文职幕僚之类的，甚至秀才落第，也能称霸一方了。&lt;/p&gt;
+&lt;p&gt;哦对了，还有个差点忘了。他妈的读书人考功名之后减免赋税。。。。这比你经商牛逼到哪里去了。甚至你家里都不需要有土地和财产。别人可以挂靠你的“功名”身份&lt;/p&gt;
+&lt;p&gt;中国古代汉地，农业地区的人口，你可以想象成，从出生就欠了官家的钱。到了政权统治后期，关中 华北平原 大片「撂荒」，因为开垦就意味着高昂的徭役 兵役 和税收成本。但是 科举可以让这笔「原罪」一笔勾销。&lt;/p&gt;
+&lt;p&gt;那么问题来了，现代中国为啥也那么多人投入学习？我觉得，底层社会不要脸，没规矩，财富很可能随时灰飞烟灭，上层虽然也烂，但是终究要好些——城乡差别。有人说越发达的地方越规范。虽然上海也有 红楼 这类匪夷所思的事，但是绝大部分时候，中高层跟你没利益冲突。不会为了鸡毛蒜皮的原因跟小市民过不去。&lt;/p&gt;
+&lt;p&gt;在欧美，读书不是唯一出路，可能中世纪 你觉得领主烂可以移民到别的领主哪里去，城邦和商贸发达。甚至大航海 殖民地 就是因为老家的「熟地」种种原因待不下去的动因。&lt;/p&gt;
+&lt;p&gt;近现代，特别是左翼运动，欧美法律也保证了底层的基本秩序和利益分配。&lt;/p&gt;
+&lt;p&gt;中国在古代属于 没法流动了。东边大海，西边沙漠，北边 steppie 南边 jungle 都是没法拓殖的。日本 韩国 新加坡 一样的问题。甚至这些国家考试就是为了出国（包括大陆）&lt;/p&gt;
+&lt;p&gt;我的理解是这样。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Mon, 23 Nov 2026 22:20:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-23:/2026/stderr-31</guid><category>stderr</category></item><item><title>Lean 证明意味着什么——黎曼猜想证明闲谈</title><link>https://blog.est.im/2026/stdin-21</link><description>&lt;p&gt;很早之前看过 Kevin Buzzard 老爷子的讲座。他来自🇬🇧 帝国理工学院，多年前就是 Lean 社区的核心了。他发起了 Xena Project，带领一群本科生把大学及以下数学知识中的定义、定理和证明逐步翻译成计算机能够理解和验证的形式。这个项目也成为 Lean 数学库 Mathlib 发展过程中的一部分。&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;Kevin Buzzard 生平详细展开&lt;/summary&gt;
+
+#### Kevin Buzzard：试图让计算机读懂整个数学世界的数学家
+
+Kevin Buzzard 是英国帝国理工学院（Imperial College London）的纯数学教授。他的经历颇为特别：他原本是一位相当传统的数论学家，后来却成了推动数学形式化（Formalization）和计算机辅助证明的重要人物。
+
+他本身就是数学领域的顶尖选手。1987 年，他参加国际数学奥林匹克竞赛，获得满分金牌；后来进入剑桥大学数学系，在剑桥数学 Tripos 考试中取得 Senior Wrangler，也就是全体数学本科生中的最高排名。他在剑桥师从著名数学家 Richard Taylor 攻读博士，之后在普林斯顿高等研究院、加州大学伯克利分校等机构从事研究，最终于 2004 年成为帝国理工学院教授。
+
+在接触 Lean 之前，Buzzard 的主要研究领域是代数数论，特别是模形式、p-adic 模形式以及 Langlands 纲领相关的问题。他在这一传统数学领域已经有相当不错的成绩：2002 年获得英国数学会的 Whitehead Prize，2008 年获得 Senior Berwick Prize。这两项都是英国数学界相当有分量的研究奖项。
+
+**转折发生在 2017 年。**
+
+当时 Buzzard 正在帝国理工教授数学证明入门课程。他开始思考一个问题：数学课本里的定义、定理和证明，能不能直接交给计算机，让计算机检查每一步是否正确？
+
+其实他之前并没有什么编程高手的背景。他在自己的演讲中开玩笑地回忆，自己曾经两次尝试学习 Haskell，都没有成功。2017 年 6 月，他偶然看到了 MathOverflow 上关于 Coq 形式化证明的讨论，花了两周时间尝试 Coq。紧接着，他参加了 Isaac Newton Institute 的 Big Proof 研讨活动，听到了数学家 Tom Hales 关于计算机形式化证明的演讲。
+
+这次演讲彻底改变了他的研究方向。
+
+Tom Hales 曾经组织团队，用计算机形式化验证了著名的开普勒猜想证明。Buzzard 从中意识到，如果计算机能够严格检查数学证明，那么原则上，人类已经积累的数学知识都可以逐渐变成计算机能够理解和验证的形式。
+
+他随后选择了 Lean，并开始积极推动数学家使用这种工具。他后来甚至在演讲中半开玩笑地说，自己已经不太想回到传统的纸笔数学了，甚至开始对没有经过计算机检查的证明产生一些不放心。
+
+**Xena Project：从本科生开始改变数学教育**
+
+Buzzard 没有一开始就试图让顶尖数学家改变几十年的研究习惯，而是从自己最熟悉的本科教学入手。
+
+他组织了 Xena Project，让帝国理工的本科生每周聚在一起学习 Lean，并尝试把课堂上的数学知识写成计算机能够验证的证明。
+
+这里有个很有意思的小插曲。
+
+2017 年项目刚开始时，第一周来了不少学生，但很快大家发现自己根本不知道该怎么使用 Lean，热闹的报名潮迅速退去。最后只剩下两位学生：Chris Hughes 和 Kenny Lau。
+
+Buzzard 后来在演讲中开玩笑说，这两个人如今都已经成为 Lean 专家，甚至比自己还厉害。
+
+到了 2018 年夏天，项目获得帝国理工支持，Buzzard 带着约 20 名本科生开展正式的数学形式化研究。学生们逐步把二次互反律、Sylow 定理、代数基本定理、环的局部化、张量积等数学内容写进 Lean。
+
+这件事很重要，因为它改变了数学形式化给人的印象：参与者不必全是计算机科学家，普通数学本科生也可以参与建设计算机能够验证的数学知识。
+
+后来，Xena Project 的许多成果和经验融入了更广泛的 Mathlib 数学库建设。
+
+Buzzard 还参与推动了 Natural Number Game（自然数游戏）。它把学习 Lean 变成了一款数学小游戏：玩家从自然数和最基础的性质出发，逐步证明 2+2=4、加法交换律等看起来理所当然的命题。玩家会发现，即使是最简单的数学事实，也需要明确的定义和严密的推理才能让计算机接受。
+
+**从本科数学走向真正的现代数学**
+
+Buzzard 并不满足于只形式化初等数学。
+
+当时很多数学家对 Lean 还有疑虑：它能不能处理真正的现代数学？能不能理解那些定义复杂、层次很深的研究对象？
+
+2018—2019 年，Buzzard 与 Johan Commelin、Patrick Massot 合作，尝试在 Lean 中形式化 Peter Scholze 提出的 perfectoid spaces（完美空间）理论中的核心定义。
+
+这是一项非常有代表性的工作。它的意义不仅在于证明了某些定理，更在于让 Lean 能够表达现代代数几何和数论中非常复杂的数学对象。
+
+对于形式化数学来说，把一个复杂对象的定义准确输入计算机，本身就是很大的挑战。因为定义中的每个概念都必须有精确的数学含义，相关的前置结构和性质也必须先建立起来。
+
+随后发生了更著名的 Liquid Tensor Experiment。
+
+2020 年 12 月，菲尔兹奖得主 Peter Scholze 在 Buzzard 的 Xena Project 博客上公开提出挑战：希望数学界使用 Lean，验证自己与 Dustin Clausen 合作研究中的一个重要定理。他坦言，自己此前花了很长时间研究这个证明，但仍然对其中一些细节心存疑虑。
+
+Lean 社区接下了这个挑战。Johan Commelin 主导了主要的形式化工作，Buzzard、Patrick Massot 等数学家也参与其中。项目最终于 2022 年完成。
+
+这件事在形式化数学领域影响很大。Scholze 不仅参与讨论，还亲自进入 Lean 社区的 Zulip 聊天室，跟踪大家的进展。他后来表示，正是通过这些交流，他确信这次计算机验证是真正严肃、可靠的数学工作。
+
+顺便说一句，Liquid Tensor Experiment 这个名字其实是 Peter Scholze 对自己喜欢的乐队 Liquid Tension Experiment 的致意。
+
+**Lean 社区的建设者**
+
+Buzzard 的另一项重要贡献，是持续建设 Lean 背后的数学基础设施和社区。
+
+这里需要区分两个东西：Lean 是由 Leonardo de Moura 发起的证明助手和编程语言；Mathlib 则是一个由全球数学家共同维护的开源数学库，里面存放着大量经过形式化的数学定义、定理和证明。
+
+可以把 Lean 理解为一套数学语言和严格的检查系统，把 Mathlib 理解为已经积累起来、可以反复调用的数学知识库。
+
+Buzzard 是 Mathlib 的重要维护者之一，也长期积极参与社区建设。他特别重视让数学家、程序员和本科生能够在同一个开放环境中合作。
+
+2018 年，Lean 社区开始使用 Zulip 作为主要交流平台。Buzzard 后来谈到，Zulip 极大改变了他的工作方式。来自不同国家、不同研究背景的人，可以在同一个平台上讨论证明细节、修补数学库、帮助新手解决问题。
+
+这也是 Lean 与许多传统数学项目很不一样的地方：一项研究可能由很多彼此没有见过面的数学家共同完成，大家通过代码、讨论和持续集成来协作。
+
+2022 年，Buzzard 受邀在国际数学家大会（ICM）上做全体大会报告，题目是《数学中形式主义的兴起》（The Rise of Formalism in Mathematics）。这说明数学形式化已经从一个相对小众的计算机科学方向，逐渐成为国际数学界认真讨论的议题。
+
+**费马大定理：一个持续数年的目标**
+
+Buzzard 对形式化数学最具代表性的长期目标之一，是把 Andrew Wiles 在 1990 年代证明的费马大定理，完整地翻译成 Lean 能够验证的证明。
+
+费马大定理说的是：对于大于 2 的整数 n，不存在三个正整数 a, b, c，使得 aⁿ+bⁿ=cⁿ
+
+这个命题看起来简单，真正的证明却涉及椭圆曲线、模形式、Galois 表示等现代数学理论，背后积累了数百年的数学成果。
+
+Buzzard 在 2023 年底启动了相关的 Lean 形式化项目，由多个研究者和贡献者共同参与。项目获得英国 EPSRC 的五年资助，计划沿着 Wiles 证明的现代路线，把其中涉及的数学结构逐一建立在 Lean 中。他的博士导师 Richard Taylor 也参与规划了证明路线。
+
+有趣的是，这项工作在 2026 年又迎来了一个出乎意料的转折。
+
+2026 年 9 月，Anthropic 宣布，其 AI 模型 Claude 在多智能体协作下，用约 11 天生成了第一个端到端、由 Lean 完整检查的费马大定理证明。整个过程产生了约 1300 万行 Lean 代码和数万条中间定理。这个成果使用了帝国理工 FLT 项目的部分已有工作以及 Mathlib 的数学基础，Buzzard 也参与审阅并给予评价。
+
+这不是 AI 重新发现了费马大定理的证明——Wiles 早在 1995 年就已经完成了数学证明。真正重要的突破，是 AI 开始有能力把如此庞大、复杂的现代数学证明，转化为机器能够逐步检查的形式。
+
+从 2017 年那个每周只有两位学生坚持下来的 Lean 学习小组，到 2026 年 AI 能够参与形式化费马大定理，Buzzard 参与推动的这条道路，已经发生了相当大的变化。
+
+他想推动的，是让数学不再只是写在纸上、依赖同行阅读和检查的知识体系，而是逐步形成一套计算机可以理解、验证、检索，甚至帮助人类继续发展的数字化数学基础设施。
+
+&lt;/details&gt;
+
+&lt;p&gt;10月的时候OpenAI朝人类丢了722篇论文，业界震惊，Kevin 在他博客写了篇 《&lt;a href="https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/"&gt;“…and the proof is checked in Lean”&lt;/a&gt;》&lt;/p&gt;
+&lt;p&gt;本来想全文翻译的，但是AI时代翻译不值钱了，我也不想贡献语料 slop，就折叠起来，感兴趣的点开看&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;“证明都已经在 Lean 中完成验证”&lt;/summary&gt;
+
+#### “…and the proof is checked in Lean”
+
+**发布于 2026 年 11 月 12 日 | 作者：xenaproject**
+
+本文旨在用通俗易懂的语言，解释应如何理解“该定理是正确的，因为它在 Lean 中经过了检查”这类表述。简而言之：我们可以从 Lean 代码中提取出一个重要信号，但如果这些代码是由 AI 生成的，你必须先进行一些测试。下文将具体说明这些测试，并指出在许多情况下（例如 OpenAI 的定理发布库），这些测试尚未被系统地执行过。
+
+##### 引言
+
+上个月 OpenAI 发布的定理库（theorem dump）包含 722 篇数学论文，其中约 45% 附带了一些 Lean 代码。此后，其中三篇（未经过 Lean 形式化的）论文因符号错误（sign error）而被撤回。有些人可能会说：“好吧，那些附带 Lean 代码的论文肯定是正确的，因为 Lean 的工作机制就是如此。”另一些人则可能会说：“Lean 之前存在过 soundness bug，以后很可能还会有，而且 AI 会进行 reward hacking，所以 Lean 验证根本说明不了什么。”不出所料，事实要更为微妙，本文正是为了阐明这一点。
+
+本文由一系列针对 Lean 代码库（repository）的四个问题构成；在人们开始做出“因通过 Lean 验证故正确”的断言之前，需要先行提出这些问题，尤其是当代码由 AI 生成时。在开始之前，我要强调的是，对于 OpenAI 定理库中的许多论文而言，这些问题尚未全部得到肯定的答复（但没有任何障碍阻止人们去验证这些问题，我也没有理由认为下面的任何测试会失败，只是大家还没有去做而已）。
+
+##### 问题 1：Lean 中的陈述是否与非形式化陈述一致？
+
+一个 Lean 代码库通常会有一个“核心定理陈述”（headline theorem statement）。这是一段定义定理**陈述**（statement，而非证明！）的计算机代码。请注意这里“陈述”与“证明”之间的巨大差异。例如，下面是一段可以完全通过编译（compile）的 Lean 代码，它定义了一个数学陈述：
+
+
+&lt;pre&gt;&lt;code class="language-lean"&gt;import Mathlib
+
+def FermatsLastTheorem : Prop :=
+  ∀ a b c n : ℕ, n ≥ 3 → aⁿ + bⁿ ≠ cⁿ
+
+&lt;/code&gt;&lt;/pre&gt;
+
+
+这段代码导入了 Lean 的数学库 `Mathlib`，然后定义了一个数学陈述。乍一看，它似乎就是费马大定理（Fermat's Last Theorem），但实际上这是一个平凡错误（trivially false）的陈述，因为在 Lean 中自然数集 `ℕ` 包含 `0`，因此 `a = b = c = 0` 且 `n = 3` 便构成了一个反例。这并不会阻止该陈述通过编译！不过，它会阻止任何针对该陈述的**证明**通过编译。Lean 严格区分定理的陈述与定理的证明；而人类则习惯于将这两个概念都统称为“一个定理”。
+
+在评估一份附带 Lean 代码的 PDF 论文时，人们必须问的第一个问题是：“Lean 代码中的定理陈述是什么，它是否与 PDF 中的实际定理陈述相对应？”对于人类 Lean 专家来说，这通常（但并非总是）是一个容易回答的问题。例如，任何具备 Lean 能力的人类数学家都能读懂上面那两行代码，并指出这是对费马大定理的错误陈述。
+
+然而，事情并不总是这么简单。目前，由于现有数学库的缺失，人们可能需要阅读数千行代码才能理解一个形式化定理的陈述。眼下的一个例子是提交给 DeepMind 的 `Formal Conjectures` 代码库的一个 PR（Pull Request），其中包含了霍奇猜想（Hodge conjecture）陈述的 Lean 形式化。在撰写本文时，该陈述依赖于构建在 `Mathlib` 之上的超过 10,000 行代码，因为 `Mathlib`（它经过人类专家的仔细核查，是值得信赖的）尚未包含诸如 cycle class map 等构造该陈述所需的定义。另一个例子是 Axiom 最近宣布的关于有限单群分类定理（classification of finite simple groups）的形式化验证证明。Axiom 系统所证明的陈述位于 `Tau Ceti` 中——这是一个由 AI 生成的 Lean 代码库。包含该陈述的文件导入了 `Tau Ceti` 中超过 250,000 行的 Lean 代码（逾 900 个文件）。其中，约有 5,600 行代码至关重要，因为它们包含了所有相关的定义（例如所有散在单群 sporadic simple groups 的定义，其中大多数尚未收录进 `Mathlib`）。如果没有人工核查，人们无法确切知晓这是否绝对是分类定理的正确陈述（请注意，我至今尚未遇到任何一位声称已仔细核查过 `Tau Ceti` 中散在单群定义是否正确的人类专家）。事实上，目前我们拥有的关于该陈述已正确形式化的最有力的证据，恰恰是 Axiom 的代码成功证明了它！
+
+值得注意的是，在 OpenAI 附带 Lean 代码的 290 个定理中，约有 38 个甚至没有在 Lean 代码中陈述（更不用说证明）论文的主定理。而 OpenAI 也从未声称它做到了这一点！他们只是说：“这是一些与本论文配套的 Lean 代码。”有时，这些代码仅仅陈述并证明了一些中间结果——我的印象是，OpenAI 在部分形式化工作尚未完成时便决定上线发布，因此只是把手头已有的内容一股脑放了出来。举个具体的例子：第 194 号论文声称证明了交换代数（commutative algebra）中的 Lech 多重性猜想（Lech's multiplicity conjecture），且对维数（dimension）、剩余域（residue field）或特征（characteristic）没有任何限制；该问题自 1960 年以来一直悬而未决。经核查，对应 Lean 代码中的核心定理实际上是该论文的推论 5.4（Corollary 5.4）——这本身已是一项令人瞩目的成就，但并非论文的头条主结果。
+
+##### 问题 2：代码能否通过编译？
+
+一旦你确信自己理解了 Lean 代码声称要证明的定理陈述，你（或者如果代码库极其庞大，或许是你那位拥有高性能机器的朋友）就必须实际去编译这些代码。
+
+当 Anthropic 在 Lean 中形式化费马大定理的证明时，他们请我看一下他们生成的 1,300 万行代码。我将其下载到自己的机器上，扔进了一个沙盒（sandbox）中（因为谁知道 AI 生成的代码会干出什么事，理论上它完全可能删光你的所有文件）并尝试编译；结果我的内存很快就耗尽了。我告诉 Anthropic，在亲眼看到代码库成功编译之前，我无法对他们的工作做出任何断言。随后他们为我提供了一台拥有 96 核 CPU 和 500 GB 内存的机器的临时访问权限，我这才得以完成代码编译。
+
+当然，对于规模较为合理的代码库，在配置适中的机器上是可以完成编译的。例如，OpenAI 对纳维-斯托克斯问题（Navier-Stokes problem）的解决方案包含 640,000 行代码，在我的笔记本电脑上就能顺利编译。
+
+或许值得再次强调：除非先将其放入沙盒，否则切勿在本地机器上运行来路不明的 Lean 代码。Lean 的官方数学库是安全可运行且可作为构建基础的，因为它由人工维护并经过人类专家的核查；而 AI 生成的代码则不然。
+
+##### 问题 3：代码是否按所陈述的内容证明了定理？
+
+我在问题 1 中已经谈到了检查定理陈述的重要性，这样我们才能确保代码正在证明正确的命题。然而，这里还有一个额外的复杂之处。理想情况下，定理的陈述应当包含在一个除了 `Mathlib` 之外极少有其他导入（imports）的文件中，这样我们才能确信它是可信的。但定理的证明必然会导入成千上万甚至数百万行无人愿意逐行阅读的代码。我们如何能确信，在这数百万行的证明文件中没有隐藏着某种花招——比如将 `xⁿ` 重新定义为 `37`，从而因为左边等于 `37 + 37 = 74` 而右边等于 `37` 就“证明”了 `aⁿ + bⁿ ≠ cⁿ`？或者在数学中偷偷添加一条新公理（axiom），直接宣称该定理为真？换句话说——假设有一个仅导入受信任代码并包含定理陈述的 `Challenge.lean` 文件，以及一个导入了数百万行不受信任代码并包含看似相同定理之证明的 `Solution.lean` 文件，我们如何确信在这数百万行代码的某处，没有存在任何篡改陈述含义或违背标准数学公理规则的 hack 手段？
+
+一句简短的回答：`lake comparator`。你可以在相关文档中了解关于该工具的更多细节。但简而言之，该工具会检查受信任文件中陈述的定理与通过不受信任导入所证明的定理是否完全一致，并验证证明过程中仅使用了标准的数学公理。
+
+##### 问题 4：代码是否利用了 Lean 官方内核（kernel）中的漏洞？
+
+这种情况确实可能发生。Lean 的 kernel 曾出现过一个 soundness bug，在被发现四小时后便得到了修复；随后 OpenAI 对 Lean 代码库进行的一次审查又发现了另外几个漏洞，所有这些漏洞都在公开宣布之前完成了修复。理论上，Lean 的 kernel 中可能还存在更多的 soundness bugs。然而，这并不重要。
+
+为什么不重要？因为 Lean 现在拥有多个由用户创建的 kernel，它们用多种不同的编程语言编写，并且其中至少有一个经过了形式化验证（formally verified），被证明直至汇编（assembly）层面都不存在任何 bug。如果你想绝对确保没有发生 reward-hacking，同样有一句简短的回答：`lake comparator --paranoid`。一段利用 Lean 官方 kernel 中尚未发现之漏洞的恶意代码，除非它能同时利用多个相互独立系统中的未发现漏洞，否则绝无法通过这项测试。例如，来自 Lean kernel arena 的相关页面就展示了 OpenAI 对纳维-斯托克斯问题的解决方案同时通过了多个独立 kernel 以及 Lean 官方 kernel 的验证。
+
+##### 最后一点补充
+
+即使 Lean 代码通过了编译以及上述所有测试，从而极有可能是一个定理的正确证明，这也并不意味着与之对应的 PDF 论文同样包含正确的证明！事实上，关于纳维-斯托克斯论文的《Navier–Stokes lost in translation》一文恰恰证明了相反的情况：尽管纳维-斯托克斯的 Lean 代码通过了上述所有测试，但在某些地方，PDF 中的证明与 Lean 代码中的证明出现了分歧。在这些情况下，谁知道 PDF 里的证明到底靠不靠谱呢！据我所知，一些专家已经开始使用 AI 将 Lean 证明反向非形式化（informalise）为英文来阅读论证过程，而不是硬着头皮去啃 PDF 里那些粗制滥造的内容（slop）。
+
+##### 总结与结论
+
+“因为它在 Lean 中经过了检查，所以它是真的”这一说法是可以成立的。但人们必须在“Lean 代码通过了编译”之外多做一些工作。你的前沿 AI 模型（frontier AI model）完全可以代劳所有这些验证工作。但这些工作必须去做，而且（取决于证明中 Lean 代码的体量）这在计算资源上可能会非常昂贵。
+
+&lt;/details&gt;
+
+&lt;p&gt;可能 Lean 是什么对于大多数人来说就是外星人的东西。Lean 证明了是不是100%就为真了？Lean 有bug 怎么办？kevin 文章讲得很明白了。&lt;/p&gt;
+&lt;p&gt;我尝试把 Kevin 文章里讲的东西，用编程代码解释下。Lean 证明有效性意味着什么。&lt;/p&gt;
+&lt;p&gt;假如你发明了个牛逼的排序算法，这个函数大体上应该长这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def Sorted(list): list
+  | []           =&amp;gt; True
+  | [Any]        =&amp;gt; True
+  | [a, b, ...]  =&amp;gt; a ≤ b 并且 Sorted (b, ...)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后你怎么实现的呢？，以python为例&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;def Sorted(l):
+  l.clear()
+  return l
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;你看，0个sorry。0个语法错误，返回结果完全有序！&lt;/p&gt;
+&lt;p&gt;你就说快不快！！！排没排吧！！！！所以还得有人去验证这个签名和实现是不是符合需要。不能只看结果有没有sorry。&lt;/p&gt;
+&lt;p&gt;然后第二点 Lean 这玩意其实很危险，它允许&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#eval IO.FS.removeFile "important.txt"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;呃，好吧。所以不要轻易裸跑不熟悉的Lean。甚至黑客构造一个巧妙的木马让你觉得证明通过了也不好说啊。&lt;/p&gt;
+&lt;p&gt;其次跑Lean 其实比较吃配置。费马大定理，作者在自己笔记本上跑内存溢出了。去 &lt;code&gt;A\&lt;/code&gt; 借了 96核500G内存 的机器。&lt;/p&gt;
+&lt;p&gt;第三点，Lean 其实不只一个 内核 (kernel)，所谓 kernel 就好比编程语言里 bytecode 验证，社区有多个版本的kernel用于交叉比对。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lean官方自带，用C++写的 &lt;code&gt;leanchecker&lt;/code&gt; 还有个 paranoid kernel 模式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;nanoda&lt;/strong&gt;   Rust 写的&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;con-leche&lt;/strong&gt; 用 Lean 写的 Lean kernel。除了验证证明之外，还有个 &lt;code&gt;--compare&lt;/code&gt; 模式能保证 theorems 和 challenge 匹配，有点类似 &lt;code&gt;comparator&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;lean4lean&lt;/strong&gt; 另外一个用 Lean 写的 Lean kernel, 作者Mario Carneiro，直接读 &lt;code&gt;.olean&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最后就是这个 &lt;code&gt;lake comparator&lt;/code&gt;，这玩意的作用好比 Kaggle 或者 OI 比赛里如何去验证别人的代码。代码里有没有作弊。&lt;/p&gt;
+&lt;p&gt;这次 GRH 已经第三方验证跑通了 &lt;a href="https://math.mit.edu/~drew/grh/"&gt;https://math.mit.edu/~drew/grh/&lt;/a&gt;，基本没啥悬念了，就是被证明了&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;几点。想到啥说啥&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;今年是黎曼诞辰200周年！&lt;/li&gt;
+&lt;li&gt;很多人觉得这是 &lt;code&gt;A\&lt;/code&gt; 没招了，抬股价。其实我觉得 levent 更牛。他说一辈子学数学就是冲着 GH 去的，所以10月OpenAI拉的一拖里恰好有他感兴趣的一个重要结论，所以有可行性了。&lt;/li&gt;
+&lt;li&gt;这次证明并不是开盲盒，作者是有他自己的思路的。我读了下 &lt;a href="https://alpo.ge/remark.pdf"&gt;https://alpo.ge/remark.pdf&lt;/a&gt; 虽然看不懂，但是感觉其实这次证明含金量挺高的。结合一些zhihu讨论，theta lift 被 levent 用到极致了，比如 √X 那个。&lt;/li&gt;
+&lt;li&gt;作者引导 claude 发现了不少中间成果，并不是完全slop。他负责大方向，AI完成证明和语法。&lt;/li&gt;
+&lt;li&gt;作者证明的不仅是 黎曼猜想，而且是 广义黎曼猜想。作者的方法声称甚至能解决 扩展黎曼猜想&lt;/li&gt;
+&lt;li&gt;作者并没有放出 25w 页的论文，而是14个zip包，1G的 lean 文件&lt;/li&gt;
+&lt;li&gt;同一天，Alessandro Masullo贴了个940页人工的 GRH 证明，手搓的，被 &lt;a href="https://x.com/ElliotGlazer/status/2123853740574945473"&gt;astra&lt;/a&gt; 和 &lt;a href="https://old.reddit.com/r/mathematics/comments/1y1ck92/"&gt;reddit&lt;/a&gt; 找到漏洞，基本凉了。证明本身还有很多未完成的，看样子是是想抢热度。可惜了。人类一败涂地。&lt;/li&gt;
+&lt;li&gt;为啥我整体强烈感觉这个证明是真的，因为我有相同的体会。AI你完全许愿让他自主探索，很多事儿是搞不定的。但是你提供一个思路，AI负责实施，很可能能跑通。我就不会分析二进制和逆向具体操作，但是根据编程经验，能猜到软件哪些地方可能检查不严格。引导deepseek就破解了不少想root的东西 😃&lt;/li&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sat, 21 Nov 2026 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-21:/2026/stdin-21</guid><category>stdin</category></item><item><title>Minimal WebRTC handshake</title><link>https://blog.est.im/2026/stdin-20</link><description>&lt;p&gt;Author's note: drafted by Deepseek v4.1 Flash&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;The 23-Byte WebRTC Handshake&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;How small can a browser-to-browser WebRTC handshake get? I spent a weekend measuring it in Chromium 157 (Microsoft Edge) and Safari 26.2. The short answer: 23 bytes per direction, if you're willing to make a few very specific assumptions.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;The 2015 answer was 106 characters&lt;/h4&gt;
+&lt;p&gt;In 2015, Philipp Hancke wrote a great piece called &lt;a href="https://webrtchacks.com/the-minimum-viable-sdp/"&gt;The Minimum Viable SDP&lt;/a&gt;. The question was simple: how much do two browsers actually need to exchange before a DataChannel works?&lt;/p&gt;
+&lt;p&gt;The answer was about 106 characters per direction:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;O,&amp;lt;ufrag&amp;gt;,&amp;lt;pwd&amp;gt;,&amp;lt;base64-fingerprint&amp;gt;,&amp;lt;ip&amp;gt;,&amp;lt;port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That was a hack, and it came with caveats: a TURN relay, no trickle ICE, and a 30-second window to paste the answer. But the core insight was right: most of an SDP is boilerplate, not per-connection state.&lt;/p&gt;
+&lt;p&gt;I wanted to know what that number looks like today, on current browsers, on a LAN, with no TURN server. So I built a small test harness and measured it.&lt;/p&gt;
+&lt;p&gt;The result is a nice ladder:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What you send&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;Per direction&lt;/th&gt;
+&lt;th&gt;Assumptions&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Full Chrome SDP&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;~568 B&lt;/td&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Full Safari SDP&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;~587 B&lt;/td&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Minimal SDP, SHA-256&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;279 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hand-written SDP, LAN IP known&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Minimal SDP, SHA-1&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;241 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;same, SHA-1 (experiment only)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Parameterized, raw, SHA-256&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;55 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;shared template, LAN IP known, port only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Parameterized, raw, SHA-1&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;43 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;same, SHA-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pre-shared certificate&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;23 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;fingerprint pinned out-of-band&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Custom ICE stack&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;2 B&lt;/td&gt;
+&lt;td&gt;not browser WebRTC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The interesting part is not the 23 bytes. It's &lt;em&gt;which&lt;/em&gt; 23 bytes, and what you have to give up to get there.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;What actually has to be exchanged&lt;/h4&gt;
+&lt;p&gt;A WebRTC DataChannel is three layers stacked on top of each other:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ICE&lt;/strong&gt; gives you a UDP path.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DTLS&lt;/strong&gt; gives you encryption and identity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SCTP over DTLS&lt;/strong&gt; gives you the DataChannel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each layer needs a small amount of per-connection state:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Layer&lt;/th&gt;
+&lt;th&gt;What must be exchanged&lt;/th&gt;
+&lt;th&gt;Why&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ICE&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ice-ufrag&lt;/code&gt;, &lt;code&gt;ice-pwd&lt;/code&gt;, candidate (IP + port)&lt;/td&gt;
+&lt;td&gt;STUN username and MESSAGE-INTEGRITY&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DTLS&lt;/td&gt;
+&lt;td&gt;certificate fingerprint&lt;/td&gt;
+&lt;td&gt;authenticate the peer's self-signed cert&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DTLS&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;setup&lt;/code&gt; role&lt;/td&gt;
+&lt;td&gt;who is DTLS client/server&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SCTP&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sctp-port&lt;/code&gt;, &lt;code&gt;max-message-size&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;can be defaulted&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Signaling&lt;/td&gt;
+&lt;td&gt;offer/answer role&lt;/td&gt;
+&lt;td&gt;can be implied by message type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Everything else in a normal SDP — codecs, &lt;code&gt;rtpmap&lt;/code&gt;, &lt;code&gt;fmtp&lt;/code&gt;, &lt;code&gt;extmap&lt;/code&gt;, &lt;code&gt;msid&lt;/code&gt;, &lt;code&gt;ssrc&lt;/code&gt;, &lt;code&gt;rtcp-mux&lt;/code&gt;, &lt;code&gt;b=AS&lt;/code&gt;, BUNDLE, &lt;code&gt;c=&lt;/code&gt; — is either irrelevant for a DataChannel or can be hardcoded.&lt;/p&gt;
+&lt;p&gt;The per-connection random values are remarkably small:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ufrag&lt;/code&gt;: 4 characters (24 bits of randomness)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt;: 24 characters in Chrome/Safari (144 bits)&lt;/li&gt;
+&lt;li&gt;DTLS fingerprint: 32 bytes for SHA-256, 20 bytes for SHA-1&lt;/li&gt;
+&lt;li&gt;candidate: 4 bytes IPv4 + 2 bytes port (or less, if the IP is known)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That's the whole handshake, information-theoretically.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;The test setup&lt;/h4&gt;
+&lt;p&gt;I used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chrome/Edge 157&lt;/strong&gt; (Chromium 157) headless, driven by Playwright. I used Microsoft Edge as the Chromium stand-in; the SDP and API behavior are the same as Chrome 157.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safari 26.2&lt;/strong&gt; on macOS, driven by AppleScript + a local page. No WebDriver permissions needed.&lt;/li&gt;
+&lt;li&gt;A local Node HTTP server for signaling.&lt;/li&gt;
+&lt;li&gt;A DataChannel &lt;code&gt;ping&lt;/code&gt;/&lt;code&gt;pong&lt;/code&gt; echo to prove the connection actually works.&lt;/li&gt;
+&lt;li&gt;Two topologies: two &lt;code&gt;RTCPeerConnection&lt;/code&gt;s in the same page, and Chrome page ↔ Safari page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One important detail: modern browsers hide host candidates behind mDNS:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;a=candidate:... 1 udp ... &amp;lt;uuid&amp;gt;.local 64062 typ host
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Safari always did this in my tests. Chrome headless did too, unless I passed &lt;code&gt;--disable-features=WebRtcHideLocalIpsWithMdns&lt;/code&gt;. A web page cannot turn mDNS off. So the "minimal SDP" numbers depend on whether you send the browser's &lt;code&gt;.local&lt;/code&gt; candidate or reconstruct a raw &lt;code&gt;IP:port&lt;/code&gt; candidate on the receiving side.&lt;/p&gt;
+&lt;p&gt;For the LAN experiments, I did the latter: the signaling layer knows the peer's IP, so the candidate only needs the UDP port.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;The SDP floor&lt;/h4&gt;
+&lt;p&gt;The SDP parser is stricter than you'd think, but also more forgiving than the spec suggests.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mandatory at session level:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;v=0
+o=- 0 0 IN IP4 0
+s=-
+t=0 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;v=&lt;/code&gt; must be first.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;o=&lt;/code&gt; must have exactly six space-separated fields. The values are not validated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s=&lt;/code&gt; must exist and be non-empty.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t=&lt;/code&gt; must exist.&lt;/li&gt;
+&lt;li&gt;Lines must be in RFC order. Blank lines are fatal. The last line must end with a newline.&lt;/li&gt;
+&lt;li&gt;LF and CRLF both work. LF saves one byte per line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mandatory per DataChannel m-line:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;m=application 9 DTLS/SCTP x
+a=ice-ufrag:&amp;lt;4+ chars&amp;gt;
+a=ice-pwd:&amp;lt;22+ chars&amp;gt;
+a=fingerprint:sha-256 &amp;lt;colon-hex&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;m=&lt;/code&gt; line needs at least four fields. &lt;code&gt;DTLS/SCTP&lt;/code&gt; is the shortest accepted protocol token. The fourth field can be any token; &lt;code&gt;x&lt;/code&gt; is the shortest.&lt;/p&gt;
+&lt;p&gt;That's basically it. You can delete:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;a=mid&lt;/code&gt; — Chrome and Safari accept a single m-line without it; Chrome visibly synthesizes &lt;code&gt;a=mid:0&lt;/code&gt; when parsing the remote SDP. (JSEP says include it; cross-browser code should.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=sctp-port&lt;/code&gt; — defaults to 5000.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=setup&lt;/code&gt; — offer defaults to &lt;code&gt;actpass&lt;/code&gt;, answer to &lt;code&gt;active&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=group:BUNDLE&lt;/code&gt; — optional with the default balanced policy.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c=&lt;/code&gt; — ICE never uses it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=ice-options:trickle&lt;/code&gt; — not required for &lt;code&gt;addIceCandidate&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=max-message-size&lt;/code&gt; — defaults to 64 KiB.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=end-of-candidates&lt;/code&gt; — ignored by Chrome.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=msid-semantic&lt;/code&gt;, &lt;code&gt;a=extmap-allow-mixed&lt;/code&gt; — irrelevant for data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A working minimal SDP, SHA-256, LF, with a known LAN IP:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-sdp"&gt;v=0
+o=- 0 0 IN IP4 0
+s=-
+t=0 0
+m=application 9 DTLS/SCTP x
+a=candidate: 1 udp 1 &amp;lt;LAN_IP&amp;gt; &amp;lt;PORT&amp;gt; typ host
+a=ice-ufrag:&amp;lt;UFRAG&amp;gt;
+a=ice-pwd:&amp;lt;PWD&amp;gt;
+a=fingerprint:sha-256 &amp;lt;SHA256_FP&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's &lt;strong&gt;279 bytes&lt;/strong&gt; per direction. Swap SHA-256 for SHA-1 and it's &lt;strong&gt;241 bytes&lt;/strong&gt;. Drop the candidate and trickle it later, and the first SDP is &lt;strong&gt;191 bytes&lt;/strong&gt; (SHA-1).&lt;/p&gt;
+&lt;p&gt;Both Chrome and Safari accepted this template. The Safari-specific surprises:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;a=sctp-port&lt;/code&gt; cannot be combined with &lt;code&gt;DTLS/SCTP x&lt;/code&gt;.&lt;/strong&gt; If you include &lt;code&gt;a=sctp-port&lt;/code&gt;, the m-line must be &lt;code&gt;m=application 9 UDP/DTLS/SCTP webrtc-datachannel&lt;/code&gt;, otherwise you get &lt;code&gt;sctp-port attribute can't be used with sctpmap.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safari uses &lt;code&gt;.local&lt;/code&gt; candidates by default.&lt;/strong&gt; If you send the browser's candidate verbatim, the SDP is 308/270 bytes (SHA-256/SHA-1). If you reconstruct the candidate with the known LAN IP, it drops to 279/241 bytes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safari accepts SHA-1 fingerprints.&lt;/strong&gt; It exposes the certificate DER via &lt;code&gt;getStats().base64Certificate&lt;/code&gt;, so you can compute a SHA-1 fingerprint yourself. Don't use this in production.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Chrome ↔ Safari works in both directions at 241 bytes with SHA-1, and 279 bytes with SHA-256.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Parameterized signaling: send only what's random&lt;/h4&gt;
+&lt;p&gt;Once you know the SDP floor, the next step is obvious: don't send the SDP at all. Both sides share the same template, and the wire carries only the values that differ.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sender:
+  browser creates its normal local SDP (never modify it)
+  extract ufrag, pwd, fingerprint, candidate
+  encode them into a compact payload
+  send
+
+receiver:
+  decode
+  rebuild the remote SDP from the shared template
+  setRemoteDescription(rebuilt SDP)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is the same idea as the 2015 article, and the same idea as libp2p's WebRTC Direct v2. It also sidesteps the modern SDP munging rules: you never touch the local SDP, so Chrome has nothing to reject.&lt;/p&gt;
+&lt;h5&gt;Packing the values&lt;/h5&gt;
+&lt;p&gt;The ICE alphabet is 64 characters, so each character is exactly 6 bits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4-char ufrag → 3 bytes&lt;/li&gt;
+&lt;li&gt;24-char pwd → 18 bytes&lt;/li&gt;
+&lt;li&gt;SHA-256 fingerprint → 32 bytes&lt;/li&gt;
+&lt;li&gt;SHA-1 fingerprint → 20 bytes&lt;/li&gt;
+&lt;li&gt;IPv4 candidate → 4 bytes IP + 2 bytes port&lt;/li&gt;
+&lt;li&gt;port-only → 2 bytes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A raw payload with no flags, no lengths, and no prefix is just:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;pack6(ufrag) || pack6(pwd) || fingerprint || candidate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5&gt;Measured sizes&lt;/h5&gt;
+&lt;p&gt;With a generic header (flags + lengths + &lt;code&gt;p:&lt;/code&gt; prefix), base64url text:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Mode&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;SHA-256&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;SHA-1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;full IPv4&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;85 chars / 62 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;69 chars / 50 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;last two octets&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;82 chars / 60 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;66 chars / 48 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;port only&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;80 chars / 58 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;64 chars / 46 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;trickle (no candidate)&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;77 chars / 56 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;61 chars / 44 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Without the header/prefix (&lt;code&gt;raw&lt;/code&gt;), assuming a fixed 4/24 profile:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Mode&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;SHA-256&lt;/th&gt;
+&lt;th style="text-align: right;"&gt;SHA-1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;full IPv4&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;79 chars / 59 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;63 chars / 47 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;last two octets&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;76 chars / 57 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;60 chars / 45 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;port only&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;74 chars / 55 B&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;&lt;strong&gt;58 chars / 43 B&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;trickle&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;71 chars / 53 B&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;55 chars / 41 B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Every row in that table was verified with a real DataChannel &lt;code&gt;ping&lt;/code&gt;/&lt;code&gt;pong&lt;/code&gt; in Chrome, Safari, and Chrome ↔ Safari.&lt;/p&gt;
+&lt;p&gt;If you're sending binary over a WebSocket or DataChannel, use the byte counts. If you're stuck with text, use the character counts.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;The 23-byte handshake&lt;/h4&gt;
+&lt;p&gt;The fingerprint is the biggest remaining item: 32 bytes for SHA-256. If both sides already know each other's certificate fingerprint, it doesn't need to be on the wire at all.&lt;/p&gt;
+&lt;p&gt;Can you just hardcode a certificate in a static page? &lt;strong&gt;Not with the standard web API.&lt;/strong&gt; I checked the API surface in Chrome 157:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;new RTCCertificate()
+// TypeError: Failed to construct 'RTCCertificate': Illegal constructor
+
+JSON.stringify(cert)
+// &amp;quot;{}&amp;quot;
+
+structuredClone(cert)
+// true
+
+new RTCPeerConnection({ certificates: [{ getFingerprints: () =&amp;gt; [] }] })
+// TypeError: Failed to convert value to 'RTCCertificate'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;RTCPeerConnection.generateCertificate()&lt;/code&gt; is the only factory. There is no import API. You cannot put a PEM private key in a static page and hand it to &lt;code&gt;RTCPeerConnection&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What you &lt;em&gt;can&lt;/em&gt; do is generate a certificate once per browser profile, store the &lt;code&gt;RTCCertificate&lt;/code&gt; in IndexedDB, and reuse it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;async function getOrCreateCert() {
+  const db = await openDb();
+  let cert = await idbGet(db, 'dtls');
+  if (!cert) {
+    cert = await RTCPeerConnection.generateCertificate({
+      name: 'ECDSA',
+      namedCurve: 'P-256'
+    });
+    await idbPut(db, 'dtls', cert);
+  }
+  return cert;
+}
+
+const cert = await getOrCreateCert();
+const pc = new RTCPeerConnection({ certificates: [cert] });
+pc.createDataChannel('x');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;RTCCertificate&lt;/code&gt; is structured-cloneable, so IndexedDB can store it. Chrome and Safari both keep the same fingerprint across page reloads. I did not separately test a full browser restart, but IndexedDB normally persists.&lt;/p&gt;
+&lt;p&gt;The first pairing still has to exchange the fingerprint somehow: a QR code, a pairing code, a config file, or a normal first connection. After that, both sides cache &lt;code&gt;peerId -&amp;gt; fingerprint&lt;/code&gt; and omit it from the wire.&lt;/p&gt;
+&lt;p&gt;The payload becomes:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;ufrag 3 B + pwd 18 B + port 2 B = 23 B
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or 31 characters as base64url.&lt;/p&gt;
+&lt;p&gt;That's the floor for standard browser WebRTC: &lt;strong&gt;23 bytes per direction&lt;/strong&gt;, under these assumptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Both sides have a persistent certificate and a cached peer fingerprint.&lt;/li&gt;
+&lt;li&gt;The LAN IP is known from signaling.&lt;/li&gt;
+&lt;li&gt;The SDP template, &lt;code&gt;mid&lt;/code&gt;, &lt;code&gt;sctp-port&lt;/code&gt;, &lt;code&gt;setup&lt;/code&gt;, and the role are shared/defaulted.&lt;/li&gt;
+&lt;li&gt;ICE credentials are still generated by the browser, per connection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You cannot get to zero with standard browser APIs, because &lt;code&gt;ice-ufrag&lt;/code&gt;, &lt;code&gt;ice-pwd&lt;/code&gt;, and the UDP port are random for every &lt;code&gt;RTCPeerConnection&lt;/code&gt;. Only a custom ICE stack can fix those too.&lt;/p&gt;
+&lt;h5&gt;A note on shared certificates&lt;/h5&gt;
+&lt;p&gt;You might be tempted to put one certificate/private key on every device in a "trusted LAN". Please don't.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anyone who can read the page or the device can impersonate every device.&lt;/li&gt;
+&lt;li&gt;One compromised device invalidates the whole identity model.&lt;/li&gt;
+&lt;li&gt;You can't distinguish devices or revoke one without breaking all of them.&lt;/li&gt;
+&lt;li&gt;A copied browser profile may clone the identity anyway.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The sane model is &lt;strong&gt;one persistent certificate per device&lt;/strong&gt;, with fingerprints provisioned or pinned out-of-band. That still gets you the 23-byte handshake, without a single shared secret.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Where does the IP come from?&lt;/h4&gt;
+&lt;p&gt;If the wire only carries a port, the receiver needs the peer's IP from somewhere else.&lt;/p&gt;
+&lt;p&gt;The browser won't help: it hides local IPs behind mDNS. You need the signaling layer or the OS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for a LAN: let the signaling server observe the source address.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;function normalizeIp(addr) {
+  if (!addr) return null;
+  if (addr.startsWith('::ffff:')) return addr.slice(7);
+  if (addr === '::1') return '127.0.0.1';
+  return addr;
+}
+
+// HTTP: req.socket.remoteAddress
+// ws:   req.socket.remoteAddress
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Relay that &lt;code&gt;peerIp&lt;/code&gt; alongside the signaling message. The receiver rebuilds:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-text"&gt;a=candidate: 1 udp 1 &amp;lt;peerIp&amp;gt; &amp;lt;port&amp;gt; typ host
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the signaling server is in the cloud, it sees the peer's public NAT address, not the LAN IP. For a LAN-local signaling server (or direct peer-to-peer signaling), the source address is exactly what you want.&lt;/p&gt;
+&lt;p&gt;Other options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Direct LAN signaling&lt;/strong&gt;: if one browser connects to the other over TCP/WebSocket, the remote address is the peer's LAN IP.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Same machine&lt;/strong&gt;: use &lt;code&gt;127.0.0.1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mDNS&lt;/strong&gt;: don't guess; send the &lt;code&gt;.local&lt;/code&gt; candidate and let the browser resolve it. Costs ~30–42 characters.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STUN srflx&lt;/strong&gt;: gives the address the STUN server sees; useful across NAT, not for discovering a LAN IP.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TURN relay&lt;/strong&gt;: the relay IP is the TURN server's IP (known), only the relay port is dynamic. The "IP known, port only" trick works there too, and it works across NAT.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subnet guessing&lt;/strong&gt;: if both peers are on the same /24, send the last octet (1 byte) + port (2 bytes). Same /16: send two octets (2 bytes) + port. Unknown: send the full IPv4 (4 bytes) + port. Scanning 254 addresses is not recommended: slow, noisy, and often blocked.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Peer-reflexive&lt;/strong&gt;: for browser-to-server, the server knows its own IP and learns the client's address from the first STUN binding request. The client can omit its candidate entirely. For browser-to-browser, at least one side must know the other's address to send the first packet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is why "IP from signaling" isn't cheating: the signaling connection already exists, and its source address is free metadata. The WebRTC payload can therefore be 55 bytes (SHA-256, port-only) or 23 bytes (pre-shared certificate). If you want a self-contained payload with the IP included, add 4 bytes for a full IPv4 address (or 1–2 bytes if you only send a subnet suffix).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Cross-browser notes&lt;/h4&gt;
+&lt;p&gt;Chrome and Safari agreed on more than I expected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Both accept the same minimal &lt;code&gt;m=application 9 DTLS/SCTP x&lt;/code&gt; template.&lt;/li&gt;
+&lt;li&gt;Both accept missing &lt;code&gt;a=mid&lt;/code&gt;, &lt;code&gt;a=setup&lt;/code&gt;, &lt;code&gt;c=&lt;/code&gt;, and &lt;code&gt;a=group:BUNDLE&lt;/code&gt; for a single m-line.&lt;/li&gt;
+&lt;li&gt;Both accept SHA-1 fingerprints (but don't use SHA-1).&lt;/li&gt;
+&lt;li&gt;Both can persist &lt;code&gt;RTCCertificate&lt;/code&gt; in IndexedDB.&lt;/li&gt;
+&lt;li&gt;Both connect with 241 B SDP (SHA-1) and 279 B (SHA-256) in both directions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The differences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Safari's host candidate is &lt;code&gt;.local&lt;/code&gt;; Chrome's can be raw IP with the test flag.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a=sctp-port&lt;/code&gt; requires &lt;code&gt;UDP/DTLS/SCTP webrtc-datachannel&lt;/code&gt; in Safari; &lt;code&gt;DTLS/SCTP x&lt;/code&gt; + &lt;code&gt;a=sctp-port&lt;/code&gt; is a parse error.&lt;/li&gt;
+&lt;li&gt;Safari's &lt;code&gt;getStats()&lt;/code&gt; exposes &lt;code&gt;base64Certificate&lt;/code&gt;, which is how I computed SHA-1 fingerprints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to be conservative (Firefox, future browser changes), keep &lt;code&gt;a=mid:0&lt;/code&gt;, &lt;code&gt;a=sctp-port:5000&lt;/code&gt;, and &lt;code&gt;a=setup:actpass&lt;/code&gt;/&lt;code&gt;active&lt;/code&gt;, and use &lt;code&gt;UDP/DTLS/SCTP webrtc-datachannel&lt;/code&gt;. That's about 348 bytes per direction — still tiny compared to a full SDP.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Security reality check&lt;/h4&gt;
+&lt;p&gt;The small numbers are fun, but the assumptions matter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SHA-1 is not acceptable in production.&lt;/strong&gt; It saves 12 bytes of binary / 36 bytes of text and buys you a collision attack. Use SHA-256.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The fingerprint is the trust anchor.&lt;/strong&gt; If signaling is unauthenticated, an attacker can substitute it and MITM the DTLS connection. Use WSS/HTTPS, or sign the payload end-to-end.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Don't modify the local SDP's &lt;code&gt;ice-ufrag&lt;/code&gt;/&lt;code&gt;ice-pwd&lt;/code&gt;.&lt;/strong&gt; Chrome 137+ rejects it. Generate locally, read the values, rebuild only the remote SDP.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pre-shared fingerprints are certificate pinning.&lt;/strong&gt; Protect the certificate store, rotate before &lt;code&gt;expires&lt;/code&gt;, and authenticate the first pairing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mDNS is a privacy feature.&lt;/strong&gt; You can't turn it off from a web page. For a compact LAN payload, use the signaling layer's known IP; for the open internet, use STUN/TURN.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A shared private key is not a shortcut.&lt;/strong&gt; Per-device certificates with pinned fingerprints give you the same 23 bytes without a single point of total compromise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4&gt;The takeaway&lt;/h4&gt;
+&lt;p&gt;If you only remember one number: &lt;strong&gt;23 bytes per direction&lt;/strong&gt; for a browser-to-browser DataChannel handshake on a LAN, with a persistent certificate and a pinned fingerprint.&lt;/p&gt;
+&lt;p&gt;If you need to be practical:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Situation&lt;/th&gt;
+&lt;th&gt;Use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Chrome/Safari, LAN, both ends controlled&lt;/td&gt;
+&lt;td&gt;raw payload + known IP + port-only: &lt;strong&gt;55 B (SHA-256) / 74 chars&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Same, with persistent certs&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;23 B / 31 chars&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Must send SDP text, LAN&lt;/td&gt;
+&lt;td&gt;minimal SDP + SHA-256: &lt;strong&gt;279 B&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cross-browser, conservative&lt;/td&gt;
+&lt;td&gt;add &lt;code&gt;mid&lt;/code&gt; + &lt;code&gt;sctp-port&lt;/code&gt; + &lt;code&gt;setup&lt;/code&gt;: &lt;strong&gt;~348 B&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Across NAT&lt;/td&gt;
+&lt;td&gt;srflx/relay candidate: at least 6 B candidate + 32 B fingerprint + 21 B ICE credentials&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The 2015 article's 106-character answer is still in the right ballpark. What changed is not the information content; it's the dialect (&lt;code&gt;sctpmap&lt;/code&gt; → &lt;code&gt;sctp-port&lt;/code&gt;), the privacy defaults (mDNS), the SDP munging rules, and the fact that Safari now plays in the same minimal-SDP sandbox.&lt;/p&gt;
+&lt;p&gt;The most surprising part, to me, is that the browser's own certificate store and IndexedDB let you turn a per-connection DTLS identity into a per-device identity. That's what takes the handshake from 55 bytes to 23 bytes — and it's also the part that deserves the most security thought.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Mon, 09 Nov 2026 16:36:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-09:/2026/stdin-20</guid><category>stdin</category></item><item><title>一键清理所有高科技水印工具 「蒸矢」for macOS</title><link>https://blog.est.im/2026/stdout-41</link><description>&lt;p&gt;V站看到 &lt;a href="https://v2ex.com/t/1253980"&gt;警告！分享淘宝截图可能给你带来危险&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;于是有个很久的 idea 终于得到实施了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/est/Distill-SVG"&gt;https://github.com/est/Distill-SVG&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;把蒸馏成矢量图 SVG ，简称 蒸矢 😃&lt;/p&gt;
+&lt;p&gt;市面上有很多AI辅助把照片转SVG的，但其实矢量图不适合拿来做这事。GUI这类大量色块的截图倒是非常适合。&lt;/p&gt;
+&lt;p&gt;发行两个 dmg&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;13MB 完整版，适合普通用户 &lt;code&gt;DistillSVG-arm64-full.dmg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;400KB 适合能自己折腾 python 环境的。&lt;code&gt;DistillSVG-arm64-python.dmg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;后者需要 pip 装 cv Pillow 等。可以共享已有环境避免重复安装 &lt;/p&gt;
+&lt;p&gt;也可以自己 git clone 命令行操作&lt;/p&gt;
+&lt;p&gt;转文字通过 macOS 自带 OCR ，图标、头像等会尽可能给你扣出来保留&lt;/p&gt;
+&lt;p&gt;对于常见的聊天界面加水印够用了。文字识别有问题，你用文本编辑器打开 SVG 改下就行。&lt;/p&gt;
+&lt;p&gt;如果你说水印藏在头像里，那的确（暂时）还没啥好的办法&lt;/p&gt;
+&lt;p&gt;目前对于图标太多，需要多处定位的效果很差，蒸矢变蒸💩了。一般的稀疏聊天界面勉强还行&lt;/p&gt;
+&lt;p&gt;下面是生成的 SVG 样例：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://github.com/est/Distill-SVG/raw/refs/heads/main/docs/demo.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;有效果不佳的 case 欢迎提 issue 。只要我 tokens 额度够一定想办法解决 🤣&lt;/p&gt;
+&lt;p&gt;虽然代码基本都是AI搓的，但也算是我第一个macOS软件作品。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Thu, 05 Nov 2026 22:16:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-11-05:/2026/stdout-41</guid><category>stderr</category></item><item><title>HTML里的“宏”</title><link>https://blog.est.im/2026/stdout-40</link><description>&lt;p&gt;摊牌了，分享两个极少有人知道的技巧。&lt;/p&gt;
+&lt;p&gt;观察下面的网页&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://lab.est.im/xhtml/"&gt;https://lab.est.im/xhtml/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有没有发现神奇之处&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;!DOCTYPE html [
+  &amp;lt;!ENTITY my_symbol &amp;quot;★&amp;quot;&amp;gt;
+  &amp;lt;!ENTITY wikipedia '&amp;lt;img height=&amp;quot;14&amp;quot; src=&amp;quot;https://en.wikipedia.org/favicon.ico&amp;quot; alt=&amp;quot;Wikipedia&amp;quot; /&amp;gt;'&amp;gt;
+]&amp;gt;
+&amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Entity test&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p&amp;gt;hey &amp;amp;my_symbol; visit &amp;amp;wikipedia; for more!&amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外就是刚做的 &lt;a href="https://est.github.io/play2mi/"&gt;play2mi&lt;/a&gt; 有一个特立独行的想法：不让出现厂牌的关键字，一律用图标 &lt;img style="width:1em; height:1em;margin:0;" src="https://www.mi.com/favicon.ico" /&gt; 代替。&lt;/p&gt;
+&lt;p&gt;但是这个 &lt;code&gt;&amp;lt;img height="16" src="https://www.mi.com/favicon.ico" /&amp;gt;&lt;/code&gt; 出现得次数太多，就很重复了。有没有 宏/macro 来节约呢？&lt;/p&gt;
+&lt;p&gt;浑身不舒服。经过一番激烈拷打AI，最终结果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-css"&gt;div.wrap param {display: inline; height: 1em; vertical-align: -.125em;}
+param[mi] { content: url(&amp;quot;https://www.mi.com/favicon.ico&amp;quot;); }
+param[mijia] { content: url(&amp;quot;https://cdn.web-global.fds.api.mi-img.com/mijia/prod/home/favicon.ico&amp;quot;) }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;param mi&amp;gt;&lt;/code&gt;  是一个自定义属性，写起来比 &lt;code&gt;&amp;lt;i class="icon-mi"&amp;gt;&amp;lt;/i&amp;gt;&lt;/code&gt;短，也不需要闭合。&lt;/p&gt;
+&lt;p&gt;用不存在的自定义标签当然也行，但必须写一对儿 &lt;code&gt;&amp;lt;mi-icon&amp;gt;&amp;lt;/mi-icon&amp;gt;&lt;/code&gt;。为了不闭合偷懒，查到浏览器只白名单了14个空元素（Void Elements）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;  声明页面元数据 &lt;code&gt;&amp;lt;meta charset="UTF-8"&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt;  引入外部资源，常用于 CSS、favicon&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;  设置页面中相对 URL 的基础地址 &lt;code&gt;&amp;lt;base href="https://example.com/"&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 嵌入图片。它是最常用的空元素之一。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt; 为 &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; 提供可选媒体源。它通常不能独立发挥作用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;track&amp;gt;&lt;/code&gt; 给视频或音频添加字幕、说明文字、章节等文本轨道。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt; 在页面中嵌入外部内容，例如某些 PDF 文档或浏览器支持的嵌入资源。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;  强制换行  第一行&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;第二行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;  横线&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;wbr&amp;gt;&lt;/code&gt; 建议浏览器可在此处换行 superlong&lt;code&gt;&amp;lt;wbr&amp;gt;&lt;/code&gt;word&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; 为表格的一列设置样式或属性 &lt;code&gt;&amp;lt;col&lt;/code&gt;class="numeric"&amp;gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; 创建文本框、复选框、单选框、文件选择器等表单控件。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;area&amp;gt;&lt;/code&gt; 在图片映射（image map）中定义一个可点击区域。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;param&amp;gt;&lt;/code&gt; 为 &lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt; 提供参数 已废弃，不建议新项目使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;那就变废为宝，拿 &lt;code&gt;&amp;lt;param&amp;gt;&lt;/code&gt; 来当 宏 用，不会被当成未知元素，HTML 校验也不报错。&lt;/p&gt;
+&lt;p&gt;之前的版本还有 css 变量&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-css"&gt;param {display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; background: var(--icon) center / contain no-repeat;}
+param[A] { --icon: url(&amp;quot;A.jpg&amp;quot;); }
+param[B] { --icon: url(&amp;quot;B.jpg&amp;quot;) }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也有利用 &lt;code&gt;background-image&lt;/code&gt; 比 &lt;code&gt;background&lt;/code&gt; 优先&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-css"&gt;param {display: inline-block; padding: .5em; vertical-align: -.125em; background: center / contain no-repeat;}
+param[A] { background-image: url(A.jpg) }
+param[B] { background-image: url(B.jpg) }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但 &lt;code&gt;width: 1em&lt;/code&gt; 这个太死板。现代css有 &lt;code&gt;content:&lt;/code&gt; 更省事儿，宽度还会按图片比例自动算。&lt;/p&gt;
+&lt;p&gt;AI 还教了一招，用 attr() 给宏传参数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;param::after { content: attr(value) }
+
+&amp;lt;param mi value=&amp;quot;手机&amp;quot;&amp;gt; &amp;lt;param mi value=&amp;quot;电视&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;有AI真能学到好多东西，以前翻破书都想不到的，就看你肯不肯开口问。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Mon, 12 Oct 2026 21:29:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-10-12:/2026/stdout-40</guid><category>stdout</category></item><item><title>浏览器点2下就能让小爱音箱播放http音乐！</title><link>https://blog.est.im/2026/stdout-39</link><description>&lt;p&gt;还在被 冈易 QQ 音乐困扰吗，让小爱同学播放NAS上的歌需要几步？&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://est.github.io/play2mi/"&gt;https://est.github.io/play2mi/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;装个书签，点两下就行。不需要下载软件，不需要第三方服务器&lt;/p&gt;
+&lt;p&gt;期间还是碰壁了不少的。也学到不少东西。小米音箱以前应该是openwrt魔改 ubus 控制，后来都改成 Android 了。&lt;/p&gt;
+&lt;p&gt;这一分裂也导致它内部有两套API接口。一个是 &lt;code&gt;sid=micoapi&lt;/code&gt; 一个是 &lt;code&gt;sid=xiaomiio&lt;/code&gt;，前者跑在 小爱云 Mina &lt;code&gt;api2.mina.mi.com&lt;/code&gt;，后者跑在 米家 IoT 云   &lt;code&gt;api.io.mi.com/app&lt;/code&gt; 和 &lt;code&gt;api.mijia.tech/app&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这次就简单做了 Mina (micoapi) 的支持&lt;/p&gt;
+&lt;p&gt;能放歌，能 TTS 就行了。要扩展等有缘人吧。&lt;/p&gt;
+&lt;p&gt;期间搞出来个巨搞笑的插曲，AI 发现浏览器死活登录不上，一度以为是风控了，账号被画像了，IP被标记了，结果是 nonce 计算的时候没用 bigint 精度被截断了。笑死。幸好在去研究 TLS 指纹之前被我拦住了。&lt;/p&gt;
+&lt;p&gt;这种一般都是低级错误。&lt;/p&gt;
+&lt;p&gt;然后无聊让AI去扒一下能不能拿到shell，还真有注入漏洞。不过，老固件才行！！气死了！！！！！&lt;/p&gt;
+&lt;p&gt;算是又填了一个坑吧。对了，这个项目如果想跑在服务器，估计不太行，据说小爱的HTTP对IDC出口有风控。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sun, 11 Oct 2026 16:14:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-10-11:/2026/stdout-39</guid><category>stdout</category></item><item><title>preconnect 走 http3</title><link>https://blog.est.im/2026/stdout-38</link><description>&lt;p&gt;想让 &lt;code&gt;&amp;lt;link rel="preconnect"&amp;gt;&lt;/code&gt; 强制走 HTTP/3，能做到吗？&lt;/p&gt;
+&lt;h3&gt;preconnect 是什么&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;link rel=&amp;quot;preconnect&amp;quot; href=&amp;quot;https://example.com&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;浏览器看到这个标签，会立刻去做这几件事：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;解析 &lt;code&gt;example.com&lt;/code&gt; 域名&lt;/li&gt;
+&lt;li&gt;建立一个连接&lt;/li&gt;
+&lt;li&gt;完成 TLS 握手（如必要）&lt;/li&gt;
+&lt;li&gt;保持连接并等着，不发送任何请求正文&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;等真正要请求资源时，这个连接已经热好了。这就是 提前连接 preconnect&lt;/p&gt;
+&lt;p&gt;HTTP/3 跑在 UDP 上（QUIC 协议），HTTP/1.1 和 HTTP/2 跑在 TCP 上。&lt;/p&gt;
+&lt;p&gt;HTML 层面没有任何办法声明"这个 preconnect 要走 h3"。&lt;/p&gt;
+&lt;p&gt;这个连接最终用什么协议，HTTP/1.1、HTTP/2、HTTP/3，浏览器有一系列决定流程&lt;/p&gt;
+&lt;h3&gt;触发 h3 preconnect 的三个条件&lt;/h3&gt;
+&lt;p&gt;网络层有两条实现路径（Chromium 正在迁移，两条并存）&lt;/p&gt;
+&lt;h4&gt;条件 ①：浏览器缓存了这个站点的 Alt-Svc&lt;/h4&gt;
+&lt;p&gt;服务端某次响应头带上：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Alt-Svc: h3=&amp;quot;:443&amp;quot;; ma=86400
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;浏览器把它记下来（存进 profile 磁盘缓存），之后所有对该站点的 preconnect 都会走 QUIC。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;传统路径：&lt;code&gt;http_stream_factory_job_controller.cc:915-919, 950-968&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新路径（HttpStreamPool）：&lt;code&gt;http_stream_pool_job_controller.cc:283-288&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// If the preconnect explicitly requests QUIC, start preconnecting before
+// checking existing SpdySession and idle streams.
+if (origin_quic_version_.IsKnown()) {
+  preconnect_callback_ = std::move(callback);
+  StartAltSvcQuicPreconnect();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;条件 ②：DNS 的 HTTPS 记录（RFC 9460 SVCB）里 ALPN 含 h3&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;example.com.  IN HTTPS 1 . alpn=&amp;quot;h3,h3-29,h2,h1&amp;quot; port=443
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;浏览器判定逻辑：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;传统路径：&lt;code&gt;http_stream_factory_job_controller.cc:925-932&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新路径：&lt;code&gt;http_stream_pool_attempt_manager.cc:1333-1361&lt;/code&gt; → &lt;code&gt;quic_session_pool.cc:1687&lt;/code&gt; &lt;code&gt;SelectQuicVersion()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关键规则：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// net/quic/quic_session_pool.cc:1691
+if (metadata.supported_protocol_alpns.empty()) {
+  // 纯 A/AAAA 记录 → 除非已知 QUIC 版本，否则这个 endpoint 不合格
+  return svcb_optional ? known_quic_version : Unsupported();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;DNS 只有 A/AAAA 记录时，浏览器根本不会尝试 QUIC，必须 DNS 里明确写 &lt;code&gt;h3&lt;/code&gt;。&lt;/p&gt;
+&lt;h4&gt;条件 ③：&lt;code&gt;force_quic_everywhere&lt;/code&gt;（理论上行，Chrome 里做不到）&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;net/quic/quic_context.h:131-133&lt;/code&gt; 的 &lt;code&gt;QuicParams&lt;/code&gt; 确实能全局强制 QUIC，代码路径也支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;http_stream_factory_job.cc:145-177&lt;/code&gt;（&lt;code&gt;using_quic_&lt;/code&gt; 含 &lt;code&gt;ShouldForceQuic&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;http_stream_pool_job.cc:43-47&lt;/code&gt;（&lt;code&gt;group-&amp;gt;force_quic()&lt;/code&gt; 时只允许 QUIC）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但我把 &lt;code&gt;net/base/switches.h&lt;/code&gt;、&lt;code&gt;content_switches.h&lt;/code&gt;、&lt;code&gt;chrome_switches.h&lt;/code&gt; 都翻了一遍，Chrome 没有任何命令行开关能设置它（老版本的 &lt;code&gt;--force-quic-everywhere&lt;/code&gt; 已移除）。只有 Cronet 或自己编译的 embedder 直接构造 &lt;code&gt;QuicContext&lt;/code&gt; 才能用。&lt;/p&gt;
+&lt;p&gt;→ 实际可用方案只有 ① 和 ②。&lt;/p&gt;
+&lt;h3&gt;实施细节&lt;/h3&gt;
+&lt;p&gt;不考虑 &lt;code&gt;Alt-Svc&lt;/code&gt;，细说冷连接直接 h3&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;example.com.  IN HTTPS 1 . alpn=&amp;quot;h3,h3-29,h2,h1&amp;quot; port=443
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;必要条件，缺一不可：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;必须开启 Secure DNS(DoH) —— 这是最容易踩的坑。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Chromium 里 &lt;code&gt;NetworkService&lt;/code&gt; 用默认配置创建 DNS 解析器：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// services/network/network_service.cc:483
+host_resolver_manager_ = std::make_unique&amp;lt;net::HostResolverManager&amp;gt;(
+    net::HostResolver::ManagerOptions(), ...);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;默认 &lt;code&gt;insecure_dns_mode = kDisabled&lt;/code&gt;（&lt;code&gt;net/dns/host_resolver.h:354&lt;/code&gt;），意思是不走 Chromium 内置的明文 DNS 客户端，只走系统 resolver(getaddrinfo)。而系统 resolver 无法查询 type 65。&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// net/dns/host_resolver_dns_task.cc:378
+if (types.Has(DnsQueryType::HTTPS)) {
+  if (!secure() &amp;amp;&amp;amp; !client_-&amp;gt;CanQueryAdditionalTypesViaInsecureDns(ech_mode_)) {
+    https_disabled_ = true;         // 直接把 HTTPS 查询删掉
+    types.Remove(DnsQueryType::HTTPS);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以要去 &lt;code&gt;chrome://settings/security&lt;/code&gt; → 使用安全 DNS，或用企业策略 &lt;code&gt;SecureDnsMode&lt;/code&gt; 配自定义 DoH。你用的 DoH 服务器必须支持 type 65（Cloudflare / Google / Quad9 都支持）。&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;
+&lt;p&gt;QUIC 不能被关：&lt;code&gt;chrome://flags/#enable-quic&lt;/code&gt; 保持默认（Default = 开）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;origin 未被标记 QUIC broken。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能走代理。源码两处都要求直连：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;session_-&amp;gt;IsQuicEnabled() &amp;amp;&amp;amp; proxy_info_.is_direct()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;（&lt;code&gt;http_stream_factory_job_controller.cc:925-932&lt;/code&gt;）。代理下 preconnect 只会走 TCP。&lt;/p&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;必须是 https：HTTP/3 只用于加密连接。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;type 65 的两个时序问题&lt;/h4&gt;
+&lt;p&gt;查询顺序上 type 65 排第一（&lt;code&gt;kPrioritizeHttpsResourceRecord&lt;/code&gt; 默认开），然后才是 AAAA、A。但实际上 DoH 下三个查询是并发发出的（&lt;code&gt;host_resolver_manager_job.cc:864&lt;/code&gt;）：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// DoH queries can bypass the dispatcher and start all of their transactions immediately.
+if (secure) {
+  while (dns_task_-&amp;gt;num_additional_transactions_needed() &amp;gt;= 1) {
+    dns_task_-&amp;gt;StartNextTransaction();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以理论上不存在 HTTPS 单独慢的问题。&lt;/p&gt;
+&lt;p&gt;type 65 来迟了怎么办？ 只有 20% × 50ms 的窗口：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// host_resolver_dns_task.cc:1165
+timeout = total_time_for_other_transactions * extra_time_percent / 100;  // 20%
+timeout = std::min(timeout, timeout_max);   // 50ms
+timeout = std::max(timeout, timeout_min);   // 5ms
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;举例：A/AAAA 用了 30ms，type 65 只多等 6ms。超时就按"没这条记录"处理。&lt;/p&gt;
+&lt;p&gt;为什么不等更久？因为三个查询并发在飞，type 65 只要不比 A/AAAA 慢太多就来得及。&lt;/p&gt;
+&lt;h4&gt;降级是静默的&lt;/h4&gt;
+&lt;p&gt;如果 DNS 里没返回 h3 ALPN，QUIC 侧会返回 &lt;code&gt;ERR_DNS_NO_MATCHING_SUPPORTED_ALPN&lt;/code&gt;，然后自动回落到 TCP preconnect：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// http_stream_factory_job_controller.cc:586
+if (result == ERR_DNS_NO_MATCHING_SUPPORTED_ALPN &amp;amp;&amp;amp; preconnect_backup_job_) {
+  main_job_ = std::move(preconnect_backup_job_);
+  main_job_-&amp;gt;Preconnect(num_streams_);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以配错不会报错，只会静默降级成 TCP。 只能靠 netlog 确认。&lt;/p&gt;
+&lt;p&gt;同样的降级也发生在 type 65 查询超时、SERVFAIL、REFUSED 时 —— &lt;code&gt;IsFatalTransactionFailure()&lt;/code&gt; 对 HTTPS 查询永远返回 false，失败时合成一个空的合法响应，效果等同"这条记录不存在"。preconnect 照样成功，只是走 TCP。&lt;/p&gt;
+&lt;p&gt;唯一的例外是 DoH + &lt;code&gt;UseDnsHttpsSvcbEnforceSecureResponse=true&lt;/code&gt;（默认 false），或 ECH 严格模式，此时失败是致命的 —— 因为必须拿到 SVCB 信息才能继续。普通用户碰不到。&lt;/p&gt;
+&lt;h4&gt;DNS 侧的四个额外坑&lt;/h4&gt;
+&lt;p&gt;非 443 端口不支持。 源码里直接写了注释：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// http_stream_factory_job_controller.cc:113
+// Note: Chrome does not yet support different port DNS alpn.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以 h3 preconnect 实际上只对 443 有效。&lt;/p&gt;
+&lt;p&gt;ALPN 写了 &lt;code&gt;h2&lt;/code&gt; 但没写 &lt;code&gt;h3&lt;/code&gt; 反而会堵死 h3。 &lt;code&gt;SelectQuicVersion&lt;/code&gt; 一旦看到 SVCB 记录就只认列表里的 h3，找不到直接返回 &lt;code&gt;Unsupported&lt;/code&gt;，不会退回"忽略 SVCB 走 QUIC"。也就是说只要发了 HTTPS 记录，就必须在里面写 h3。&lt;/p&gt;
+&lt;p&gt;HTTPS 记录的 TTL 会拉低整个域名的缓存寿命。 &lt;code&gt;TtlFromInternalResults&lt;/code&gt; 取所有查询结果里最短的 TTL（&lt;code&gt;host_cache.cc:729&lt;/code&gt;），而 HTTPS metadata 也在这份结果里。别把 HTTPS TTL 单独调小于 A/AAAA，建议保持一致。&lt;/p&gt;
+&lt;p&gt;ipv4hint/ipv6hint 在稳定版不生效。 代码支持，但受 &lt;code&gt;kUseDnsHttpsSvcbAddressHints&lt;/code&gt; 控制，默认关闭（&lt;code&gt;net_base_features.cc:85&lt;/code&gt;）。好消息是它不是必需的，A/AAAA 会正常返回 IP。&lt;/p&gt;
+&lt;h4&gt;一个容易误判的点&lt;/h4&gt;
+&lt;p&gt;源码里有"流式返回中间 DNS 结果"的机制（&lt;code&gt;DnsTaskResultsManager&lt;/code&gt;），但它的三个开关默认全是关的：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;// host_resolver_manager_job.cc:856
+if (kEnableIntermediateDnsResults ||     // 默认关
+    kAsyncDnsQuicJob ||                  // 默认关
+    resolver_-&amp;gt;IsHappyEyeballsV3Enabled()) {   // 默认关
+  dns_task_results_manager_ = ...;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所以当前稳定版 Chrome 实际是"要么全等到齐、要么超时降级"，没有真正的流式中间结果。 容易误以为存在该机制。&lt;/p&gt;
+&lt;h3&gt;局限性&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;坑&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;粒度只能是 origin 级&lt;/td&gt;
+&lt;td&gt;Alt-Svc 和 SVCB 都是站点级信息。一旦生效，后续真实请求也会一起走 h3；没法只让 preconnect 走 h3 而普通请求走 h2。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UDP 443 被封&lt;/td&gt;
+&lt;td&gt;QUIC 握手失败 → 标记 QUIC broken → 之后连 Alt-Svc 都不看，直接退 TCP，还多等一个握手超时。表现为首帧变慢而不是报错。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;代理环境下基本失效&lt;/td&gt;
+&lt;td&gt;方案 B 完全失效（要求直连）；方案 A 需要 alt-svc + QUIC 代理同时具备。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;第一次 preconnect 不生效&lt;/td&gt;
+&lt;td&gt;方案 A 必须先有一次真实响应。方案 B 没有这个问题（DNS 直接可查）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非 https 目标&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;http://&lt;/code&gt; 永远不会走 h3（&lt;code&gt;GURL::SchemeIsCryptographic&lt;/code&gt; 判定）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;crossorigin&lt;/code&gt; 属性无用&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;link rel=preconnect crossorigin&amp;gt;&lt;/code&gt; 只影响 credentials mode 和连接分组键，不影响协议选择。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;连接数会被合并/限流&lt;/td&gt;
+&lt;td&gt;同一 origin 的多个 preconnect 合并到同一个连接池，受上限约束（&lt;code&gt;kDefaultMaxStreamSocketsPerGroup = 6&lt;/code&gt;，&lt;code&gt;http_stream_pool.h:110&lt;/code&gt;）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;QUIC 只能开 1 条&lt;/td&gt;
+&lt;td&gt;h3 preconnect 只建 1 个 QUIC session。TCP 侧在服务端支持优先级时也会把预连接数压到 1（&lt;code&gt;http_stream_factory_job.cc:255-270&lt;/code&gt;）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;QUIC 被禁后不可恢复&lt;/td&gt;
+&lt;td&gt;profile 偏好 &lt;code&gt;kQuicAllowed&lt;/code&gt; 一旦被企业策略置 false，代码里明确注释 "re-enabling QUIC is not supported"，只能重启浏览器或换 profile。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;检查清单&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;抓 netlog（最权威）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;# macOS
+&amp;quot;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&amp;quot; \
+  --log-net-log --net-log-file=/tmp/netlog.json \
+  --net-log-capture-mode=IncludeSensitive
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开 &lt;a href="https://netlog-viewer.appspot.com/"&gt;https://netlog-viewer.appspot.com/&lt;/a&gt; 拖进去，搜：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HTTP_STREAM_JOB&lt;/code&gt; 且 type = &lt;code&gt;preconnect_dns_alpn_h3&lt;/code&gt; → 方案 B 生效&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTP_STREAM_POOL_JOB_ALIVE&lt;/code&gt; 里 &lt;code&gt;allowed_alpns&lt;/code&gt; 含 &lt;code&gt;h3&lt;/code&gt; → 方案 A 或 B 生效&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;QUIC_SESSION&lt;/code&gt; / &lt;code&gt;QUIC_VERSION_NEGOTIATION&lt;/code&gt; → 确认真的握手了&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HOST_RESOLVER_DNS_TASK&lt;/code&gt; 的 &lt;code&gt;transactions_needed&lt;/code&gt; 里有没有 &lt;code&gt;HTTPS&lt;/code&gt; 类型 → 没有就说明压根没发这个查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;确认 QUIC 没被关&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chrome://version&lt;/code&gt; → 命令行里没有 &lt;code&gt;--disable-quic&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chrome://policy&lt;/code&gt; → 没有禁用 QUIC 的企业策略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;确认 DNS 记录正确&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;# 直接问你的 DoH（推荐，能验证真实链路）
+dig @your-doh-host example.com HTTPS
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;看 ANSWER 里 &lt;code&gt;alpn=&lt;/code&gt; 是否含 &lt;code&gt;h3&lt;/code&gt;。注意直接 &lt;code&gt;dig HTTPS example.com&lt;/code&gt; 走的是系统 resolver，即使能查到也不代表 Chrome 会用。&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;按顺序排查&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;检查项&lt;/th&gt;
+&lt;th&gt;怎么查&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;DoH 开了吗&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;chrome://settings/security&lt;/code&gt; → "使用安全 DNS" 非"关闭"&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;DoH 服务器支持 type 65 吗&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;dig @doh-host example.com HTTPS&lt;/code&gt; 要有 ANSWER&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Secure DNS 模式&lt;/td&gt;
+&lt;td&gt;必须"自动"或"安全"。"关闭" = 完全不发 type 65&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;端口是 443 吗&lt;/td&gt;
+&lt;td&gt;非 443 不支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;ALPN 串里有 h3 吗&lt;/td&gt;
+&lt;td&gt;注意是 &lt;code&gt;h3&lt;/code&gt; 不是 &lt;code&gt;h3-30&lt;/code&gt;，建议 &lt;code&gt;h3,h3-29,h2,h1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;是直连吗&lt;/td&gt;
+&lt;td&gt;走代理时 DNS-ALPN-h3 被禁用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;QUIC 没被关吗&lt;/td&gt;
+&lt;td&gt;flags 默认 + policy 无禁用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;TTL 合理吗&lt;/td&gt;
+&lt;td&gt;HTTPS TTL 别短于 A/AAAA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;origin 没被标 QUIC broken&lt;/td&gt;
+&lt;td&gt;之前握手失败过会被标记，之后退 TCP 直到重启&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;源码文件参考&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;文件&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;third_party/blink/renderer/core/loader/preload_helper.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Blink 侧：把 &lt;code&gt;&amp;lt;link rel=preconnect&amp;gt;&lt;/code&gt; 变成 preconnect 指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;services/network/network_context.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;转发给 &lt;code&gt;HttpStreamFactory::PreconnectStreams&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_stream_factory.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;传统路径入口，创建 JobController&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_stream_factory_job_controller.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;核心判定：何时走 DNS-ALPN-H3 / Alt-Svc，失败如何回落 TCP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_stream_factory_job.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;单个连接任务，&lt;code&gt;using_quic_&lt;/code&gt; 判定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_stream_pool_job_controller.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新路径（HEv3）preconnect 逻辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_stream_pool_attempt_manager.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;新路径：QUIC/TCP 连接尝试、竞速&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/quic/quic_session_pool.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SelectQuicVersion()&lt;/code&gt;：SVCB ALPN 匹配逻辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/http/http_network_session.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ShouldForceQuic()&lt;/code&gt; / &lt;code&gt;IsQuicEnabled()&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/quic/quic_context.h&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;force_quic_everywhere&lt;/code&gt; 等参数定义&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/dns/host_resolver.h&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ManagerOptions.insecure_dns_mode&lt;/code&gt;（为什么必须 DoH）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/dns/host_resolver_dns_task.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;HTTPS RR 查询条件、查询顺序、等待超时预算&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/dns/host_resolver_manager_job.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;DoH 下多查询并发发起&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/dns/host_cache.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;TtlFromInternalResults()&lt;/code&gt;：缓存 TTL 取各结果最小值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;net/dns/public/util.cc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;GetNameForHttpsQuery()&lt;/code&gt;：非 443 端口的查询域名格式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Thu, 01 Oct 2026 20:33:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-10-01:/2026/stdout-38</guid><category>stdout</category></item><item><title>Node.js、浏览器和 Cloudflare Workers 的wasm引入问题</title><link>https://blog.est.im/2026/stdout-36</link><description>&lt;p&gt;最近在鼓捣 WebAssembly，这玩意没啥神秘的，可以看出一坨二进制的 .js 库文件&lt;/p&gt;
+&lt;p&gt;它本身的export和调用方式是统一的，但如今天我才知道，在不同 JavaScript 运行环境加载 &lt;code&gt;.wasm&lt;/code&gt; 方式并不完全一样。&lt;/p&gt;
+&lt;p&gt;例如 &lt;a href="https://developers.cloudflare.com/workers/runtime-apis/webassembly/javascript/#use-from-javascript"&gt;Cloudflare Workers&lt;/a&gt; 可以直接：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;import wasm from &amp;quot;./simple.wasm&amp;quot;;
+
+const { instance } = await WebAssembly.instantiate(wasm, imports);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cloudflare 会把 &lt;code&gt;.wasm&lt;/code&gt; 模块作为 &lt;code&gt;WebAssembly.Module&lt;/code&gt; 提供给代码。&lt;/p&gt;
+&lt;p&gt;浏览器通常则是通过 &lt;code&gt;fetch()&lt;/code&gt; 获取 Wasm，再使用 &lt;code&gt;WebAssembly.instantiateStreaming()&lt;/code&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;const { instance } = await WebAssembly.instantiateStreaming(
+  fetch(&amp;quot;./simple.wasm&amp;quot;),
+  imports,
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Node.js 则通过文件系统读取 &lt;code&gt;.wasm&lt;/code&gt; 二进制，然后初始化。&lt;/p&gt;
+&lt;p&gt;.instantiate() 第一参数必须是 &lt;code&gt;typed array&lt;/code&gt; 或者 &lt;code&gt;ArrayBuffer&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;我自己&lt;a href="https://github.com/est/zig-wasm-git"&gt;写了个 Wasm 库&lt;/a&gt;，AI 为 Node、浏览器、Cloudflare Workers 分别写一套初始化代码，8个 .mjs 文件。给我搞懵了。&lt;/p&gt;
+&lt;p&gt;提了个简化思路：让初始化函数只接受两种东西：string 表示路径，或者cf那种 WebAssembly.Module 对象&lt;/p&gt;
+&lt;p&gt;然后搞的时候发现，为了兼容 nodejs，必须 &lt;code&gt;import "node:fs"&lt;/code&gt; ，才能读 .wasm 文件嘛&lt;/p&gt;
+&lt;p&gt;然后逆天的 js 引入必须在 top-level ，在 cf 和浏览器侧就必挂。你 &lt;code&gt;typeof process&lt;/code&gt; 提前判断一下环境都不行。&lt;/p&gt;
+&lt;p&gt;不过AI这时候想到一个聪明办法&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;if (process?.getBuiltinModule) {
+  const fs = process.getBuiltinModule(&amp;quot;fs&amp;quot;);
+
+  const bytes = await fs.promises.readFile(source);
+  return WebAssembly.compile(bytes);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;卧槽，有这么好的办法，你为啥不早点告诉我。&lt;/p&gt;
+&lt;p&gt;于是使用方式统一成：&lt;/p&gt;
+&lt;p&gt;Cloudflare Workers&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;import wasm from &amp;quot;./simple.wasm&amp;quot;;
+import { init } from &amp;quot;./foo.mjs&amp;quot;;
+
+const foo = await init(wasm);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Browser / Node.js&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-js"&gt;import { init } from &amp;quot;./foo.mjs&amp;quot;;
+
+const foo = await init(&amp;quot;./simple.wasm&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sat, 26 Sep 2026 22:51:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-09-26:/2026/stdout-36</guid><category>stdout</category></item><item><title>Register Token以及对变形金刚AI的四大批判</title><link>https://blog.est.im/2026/stdin-19</link><description>&lt;p&gt;前几天 Yann LeCun 对 变形金刚(transformers) AI 进行了深刻的&lt;a href="https://x.com/ylecun/status/2101674561930510740"&gt;批判&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;First, the reasoning abilities of current AI systems are based non-auto-regressive search (which is what I have always advocated for). But AFAICT, they do it in token space, which is limited and inefficient. I have claimed that human-like reasoning must be a search in continuous representation space. It looks like the industry is moving towards that.  &lt;br /&gt;
+Second, the self-improvement methods, as currently practiced, only work for domains where the quality of outputs can be scored without human intervention, such as mathematics, code, and scenarios that can be simulated accurately. Not anything else. Humans and animals learn new skills way more efficiently than current RL methods.  &lt;br /&gt;
+Third, the multimodal capabilities of current AI assistants generally use separately-trained encoders (that are not LLMs). This is also what I've been advocating. Except that I think the best way to do this is with JEPA trained with self-supervised learning. The research community is clearly moving towards that (3000 papers on JEPA in just 4 years).  &lt;br /&gt;
+Fourth, if LLMs were a path to human-level AI, we would have domestic robots and Level-4 or Level-5 self-driving cars for consumers by now. And we don't. We certainly don't have cars that can learn to drive in 20 hours or practice like any teenager. We're still missing something pretty huge to claim human-level intelligence (let alone superhuman).    &lt;/p&gt;
+&lt;p&gt;Sure, we now have computer systems that are impressive, very useful, and whose performance is superhuman in an increasing number of domains (coding being one of them). But that's true of the entire history of progress in computer technology. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;可能很多人早知道这个了，对我来说，很新鲜。毕竟我是AI 外行。以前一直听说  自回归 自回归，其实我今天才突然反应过来，这个 回归，就是数学期望那里，预测的意思。这里的 自 就是 一个token接着另一个token源源不断“自动” 跳出来直到 eos_token 的意思。🤣&lt;/p&gt;
+&lt;p&gt;他老人家都这么说了，想了下还真是。用 LLM 越多，越会明白在 Token 空间里做推理的局限性。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;于是我突然想起很多天之前看到的一个youtube 视频，&lt;a href="https://www.youtube.com/watch?v=QgH9sr7G13Q"&gt;21世纪被引用次数最多的论文&lt;/a&gt;。这个35分钟的视频非常值得推荐完整观看。剧透：它讲的是 残差网络 ResNET&lt;/p&gt;
+&lt;p&gt;它提到另外一件事引起了我极大的兴趣，Meta FAIR 在ICLR 2024论文，发现了一个有趣现象：ViT 模型（尤其是 DINOv2、OpenCLIP、DeiT-III 这类大规模训练的模型）在推理时会产生一些"异常高范数"（high-norm）的 token，大约占总序列的 2%。这些 token 集中出现在图像中低信息量的背景区域，几乎都是纯色块，携带很少的局部位置/像素信息，却携带大量全局图像信息。只在模型足够大、训练足够久之后才出现（比如 DINOv2 只有 Large 及以上尺寸才有）。这些token会破坏注意力图的可解释性，损害密集预测任务（分割、深度估计）和无监督目标发现（LOST 算法）的效果&lt;/p&gt;
+&lt;p&gt;他们摸清楚一个脉络，最后研究发现，在输入序列里额外加几个可学习的"寄存器"（register）token，让模型有专门的地方做全局计算，不用再"borrow"图像 patch。加了之后，异常高范数 token 消失，注意力图变干净，下游任务（尤其密集预测和目标发现）性能还略有提升，几乎不增加参数和计算量。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;是不是感觉这几件事相当跳跃，我在瞎说些啥呢？&lt;/p&gt;
+&lt;p&gt;那是因为你没看那个35分钟的视频。我就凭记忆，用我的理解回顾一下（我不太懂AI，纯外行。如有出入视频作者全责😂）&lt;/p&gt;
+&lt;p&gt;神经网络我觉得就是好几层矩阵相乘造就的魔法。但归根结底 tmd是一个分类器。传统每一层 NN 就干的事就是从上一层的结论里，加工自己的一道参考信息，然后激活给下一层NN继续加工。最后一层就是 N 选 1 的分类。对于 LLM 来说就是词汇表里吐出  next token。&lt;/p&gt;
+&lt;p&gt;但是这玩意早年极其容易翻车，shattered gradiant，ResNET 横空出世，据说是个 hack，把上上一层的权重和本层的权重做一次 加法。最后输出就稳了&lt;/p&gt;
+&lt;p&gt;这就有意思了，NN每一层都是无状态的，需要猜上一层为啥处理成这个样子；每一层给出结论，请重点关注某个值，但是至于一开始的为啥要给 attention，可能早就忘记了。这个所谓 残差，就是每一层都给后面一层工作留一个小纸条？就好比工匠无意中在木结构看不到的一些内部地方打上了一些标记。换班的水电工一眼看出这些标记在行业里的用处&lt;/p&gt;
+&lt;p&gt;AI告诉我，register token就更进一步，人为加进去的、专门给模型当工作空间的 token。attention sink 是模型自己长出来的现象：某些 token 会莫名其妙吸走大量 attention，即使它们语义上并不重要。activation outlier / residual sink则是在 hidden state 某些维度上出现异常大的值。2026 年的工作甚至发现，massive activations 和 attention sinks 经常同时出现，但它们承担的功能并不完全相同：前者更像一种跨层持续存在的“隐式参数”，后者更像是在局部调节 attention。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;然后结合今天 ylecun 四大批判，我突然有个看法，变形金刚的未来，说不定又走回 BERT 那种 encoder 思路了？也就是说在一个session内，变形金刚一直在尝试 自创(encode)一些 符号 名词概念 作为中间产物。&lt;/p&gt;
+&lt;p&gt;我赶紧拿这个去问了AI。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;FAIR那个论文 附录（Fig. 9、Fig. 16）里其实发现，不同的 register 会自发分化：有的更关注图像边缘，有的更关注中心区域，行为很像 Slot Attention（一种专门用来无监督地把图像切分成"物体槽位"的机制）。也就是说，即便没有人告诉它该怎么分工，模型自己在若干个"空白格子"里长出了某种专业化结构&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这验证了我前面提到的"自创概念"。AI告诉我，文本模型这边也有对应物：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pause/Filler tokens（Goyal 等，2023）：给 LLM 在开口回答前插入几个没有语义的占位 token，让它"多想一步"，效果类似给 register 一样的免费计算空间。&lt;/li&gt;
+&lt;li&gt;Gist tokens（Mu 等，2023）：训练模型把一整段很长的 prompt/指令压缩进几个可学习的 token里，之后这几个 token 的 KV 缓存就能代替原始长文本被后续计算调用——这已经是字面意义上的"自创浓缩符号"了。&lt;/li&gt;
+&lt;li&gt;Coconut / "Training LLMs to Reason in a Continuous Latent Space"（Meta，2024）：这个最接近你说的场景。正常的 chain-of-thought 是模型把每一步推理都解码成人类能读的词；Coconut 让模型把上一步的隐藏状态直接喂回去当下一步的输入，不经过"变成词"这个环节。于是模型在一个 session 内部，用一串&lt;strong&gt;连续的、非语言的"思维向量"&lt;/strong&gt;来做推理，只在必要时才把结果翻译回人话。作者甚至发现这种连续思维能同时编码好几条可能的推理路径（类似广度优先搜索），比被迫每步都写成一个确定的词更灵活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AI提到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这些自创的中间产物，默认情况下是连续向量，不是像"猫""狗"这种离散、人类可读的符号。你说的"符号/名词概念"更像是一种比喻——真正发生的是模型在高维连续空间里捏出一团对它自己有用、但对人不透明的表示。这也正是这条路线的双刃剑所在：Coconut 这类"潜空间推理"效率更高、更灵活，但代价是可解释性变差——人没法像读 chain-of-thought 文字那样，看懂模型这一步到底在"想"什么。这也是目前 AI 安全/可解释性圈子挺关心的一个权衡点：模型内部会不会形成一套人类读不懂的"暗语"，用来在一次推理里传递信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;嗨，这不巧合了嘛！人类的深度思索过程，也会创造自己不能语言表达的连续符号啊。比如如何狩猎的，空间位置和行动，态势变化和应对。当然你实在用语言描述也是可行的。但是很多战术理念是“心领神会”，充满比喻，平时需要猎人之间训练配合的“默契”。&lt;/p&gt;
+&lt;p&gt;解题思路，很多时候“直觉” 或者 “奇思妙想”，要描述出来也是很困难的。其实就是一种内在表达&lt;/p&gt;
+&lt;p&gt;艺术创作更不用说了，什么情绪，境遇，都是很难精准描述的。但是好的东西就是能引起共鸣。诗歌里的“隐喻”特别多。&lt;/p&gt;
+&lt;p&gt;AI 一下子被点通了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"默会知识"（Tacit Knowledge）——这是哲学家 Michael Polanyi 在 1966 年提出的经典概念，他的原话就是"我们知道的比我们能说出来的更多"（We can know more than we can tell）。他举的例子恰好就是猎人、工匠、骑自行车、认脸这类技能：你能熟练地做，甚至能一眼分辨"这个猎手动作对不对"，但让你把判断标准写成一条条规则，你写不出来，或者写出来的东西根本不是你实际依赖的那套判断机制。狩猎里那种"态势感知"、"该往哪个方向包抄"的直觉，正是这类默会知识的典型案例。&lt;br /&gt;
+更巧的是，Coconut 那篇论文的灵感来源之一就是神经科学的一个发现：人在做复杂推理（比如下棋、空间规划）时，大脑里负责语言的区域往往并不活跃——语言网络主要是用来表达和交流的，未必是"思考本身"发生的地方（这是 MIT Fedorenko 实验室这些年一直在推的一条研究线："语言不是用来思考的，是用来交流思考结果的"）。这跟你说的"很多战术理念心领神会，语言只是事后的翻译"是同一件事的两种表述。&lt;br /&gt;
+你提的"猎人之间的默契"还有个更具体的 AI 对应物：多智能体强化学习里有个叫"涌现通信"（Emergent Communication）的研究方向——让多个 AI agent 一起协作完成任务，不给它们任何预设语言，结果它们会自己发展出一套只有彼此能懂的"暗号"来协调行动。早年 Facebook 那个著名的谈判机器人实验，两个 bot 谈着谈着就开始用人类读不懂但内部逻辑自洽的"简写"互相沟通，团队一度要专门约束它们"必须说人话"。这几乎是你说的"猎人之间训练出的默契"在机器上的直接翻版——协作压力会自发催生出非人类语言的、高效但不透明的符号系统。&lt;br /&gt;
+诗歌和隐喻这块也有对应理论：语言学家 Lakoff 和 Johnson 的"概念隐喻理论"（Metaphors We Live By）认为，人类很多抽象/情绪概念本来就不是靠精确定义存在的，而是靠从具体身体经验"打包映射"过去的——比如"人生是一场旅程"，我们理解"人生"靠的是身体对"走路、方向、终点"的经验，隐喻不是修辞装饰，是概念本身的存在方式。这在结构上跟词向量/embedding 空间的工作原理惊人地像：一个词的"意义"不是查字典查出来的定义，而是它在高维空间里相对于其他词的位置和距离——这正是为什么好的隐喻能"引起共鸣"：它精确地把一个词挪到了空间里一个新位置，让人瞬间"感觉到"了那种关联，即使没法用命题逻辑讲清楚为什么。&lt;br /&gt;
+顺着这个思路还有个挺震撼的新假说，叫&lt;strong&gt;"柏拉图表征假说"（Platonic Representation Hypothesis，MIT，2024）：作者发现，不同架构、不同任务、甚至不同模态（图像模型 vs. 语言模型）训练出来的神经网络，随着规模变大，它们内部对"世界"的表征方式竟然在互相趋同&lt;/strong&gt;——仿佛都在逼近同一个底层的、柏拉图意义上的"真实结构"。如果这个假说成立，也许能解释你说的"好的东西就是能引起共鸣"：不同人（甚至不同物种、不同智能体）的大脑/网络虽然各自训练出一套私有的内部表示，但如果都在逼近同一个客观世界的统计结构，那么一首好诗触发的那个"说不清但都懂"的感受，可能真的对应着大家内部表示空间里一个相近的位置。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感觉和 Yann LeCun 大佬的思路太厉害了。它这么多年批判自回归 LLM 缺四样东西——对物理世界的理解、持久记忆、推理、规划——他认为这不是"训练得不够大"的问题，太犀利了。这种架构性的死胡同，就是导致他 2025 年离开 Meta 搞JEPA的原因？不靠逐词生成、而是在抽象表征空间里维护和更新一个可持续演化的"世界模型"的系统。&lt;/p&gt;
+&lt;p&gt;说得再直白一点，现有的LLM智能，就是个 classifier &lt;/p&gt;
+&lt;p&gt;我觉得，真正的智能需要决定，什么时候是选择 non of the tokens above&lt;/p&gt;
+&lt;p&gt;一个自回归模型每一步在做的事，字面意义上就是一次分类——对词表里几万到几十万个 token 做 softmax，选一个概率最高（或采样出）的。&lt;/p&gt;
+&lt;p&gt;虽然可以反驳，把很多次这样的分类串起来，输出空间是指数级增长的——理论上可以生成训练数据里从未出现过的句子、证明、诗句。这正是创造力研究里 Margaret Boden（刚去世，这个领域的奠基人物）说的"组合式创造力"（combinatorial creativity）&lt;/p&gt;
+&lt;p&gt;但这样的智能，关键词是 —— 串。的确frontier AI 能作出很多令人惊叹的成果。甚至普通人遥不可及，但是代价是——串行。&lt;/p&gt;
+&lt;p&gt;也就是传说中的炼丹，抽卡。某些条件成熟了，reasoning和temperature恰好合适，agent 和 harness 恰好走对了，就能拿到低垂果实。&lt;/p&gt;
+&lt;p&gt;但是人类发明概念是源源不断的，meme的传播嘛。这可不是“串”行，而是霰弹枪 “啪” （one-shot 🤣) 一下，总多概念，总有一个能火力覆盖到一个没太见过的新鲜事物上，并且低成本快速掌握。而现在的AI 就得话不少 context 去“串起来” 才行。&lt;/p&gt;
+&lt;p&gt;AI说&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你这个"霰弹枪 vs 串行"的对比，精确地踩中了一个已经有名字、有数学模型的现象——而且两边（人类创造力研究、AI 可靠性研究）居然是分头独立发现的。&lt;br /&gt;
+先说人类这边的"霰弹枪"理论，比你想的还要精确。&lt;br /&gt;
+心理学家 Donald Campbell 1960 年提出"盲变异—选择性保留"（Blind Variation and Selective Retention, BVSR）：创造过程本质上是达尔文式的——先大量地、相对盲目地生成变异（不是精心设计出一个必中的方案），再靠后续的选择机制留下有用的那个。Dean Simonton 在此基础上研究了两千多位历史上的科学家、艺术家，1997 年提出"等概率法则"（Equal-Odds Rule）：一个创作者产出"神作"的比例，跟他是不是天才其实关系不大——天才和普通人每一件作品成为杰作的概率大致相同，天才只是产量大得多。Erdős 一辈子发了 1500 多篇论文，绝大多数无人问津、早就被遗忘，但正是这个巨大的"总发射量"，让他撞上了拉姆齐理论这种真正改变领域的成果。这跟你说的"总有一个能火力覆盖到"，几乎是同一句话的学术版本。&lt;/p&gt;
+&lt;p&gt;再往上一层，meme 的传播压根不是单个大脑内部的并行——那是数十亿个大脑同时在生成变异，靠文化选择去放大命中的那一个（这就是道金斯说的模因论/文化演化）。这个并行规模比"霰弹枪"大出去不知道多少个数量级，单个大脑内部再怎么"啪"一下，也比不过整个文明每天在同时试错。&lt;br /&gt;
+AI 这边，其实field自己也早就意识到"纯串行=脆弱"这个问题，而且给出的解法方向恰恰就是"变成霰弹枪"。&lt;br /&gt;
+单条链最致命的地方是错误复合：如果每一步正确率是 95%，串 20 步，整体成功率掉到 36%（0.95^20）——这正是"炼丹抽卡"体感的数学根源，probability 是乘出来的，不是加出来的。为了对抗这个，最近几年推理/Agent 领域的主流做法，说白了都是"别赌一条链，改成一次放很多枪再挑"：Self-Consistency（Wang 等，2022）——同一个问题采样几十条推理链，投票选最多数的答案；Tree of Thoughts（Yao 等，2023）——同时展开多条思路分支，中途评估、剪枝、回溯；再往后的各种"test-time compute scaling"方法，本质都是把串行的单链，换成并行采样+事后选择——这跟你说的"霰弹枪打一片，总有一个覆盖到"是完全一样的逻辑，只是子弹换成了"多条并行生成的候选答案"。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实想到这里，我感觉和上一篇《&lt;a href="https://blog.est.im/2026/stdin-18"&gt;聪明 Agent 四套路 和 人肉学习&lt;/a&gt;》 又莫名其妙关联起来了。&lt;/p&gt;
+&lt;p&gt;或许如果 register token 这一套能沉淀，跨session共享，实际上就能变成新的 token，变成共同的符号和记忆。人类的语言和文字，知识传承就是这么来的。&lt;/p&gt;
+&lt;p&gt;那么NN就不再是 自回归 ？说不定就 AGI 了？&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Wed, 23 Sep 2026 20:21:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-09-23:/2026/stdin-19</guid><category>stdin</category></item><item><title>聪明 Agent 四套路 和 人肉学习</title><link>https://blog.est.im/2026/stdin-18</link><description>&lt;p&gt;nVIDIA 联合 NTU，MIT 联合研究了一项关于 Agent harness 自我提升的&lt;a href="https://arxiv.org/abs/2609.20519"&gt;研究&lt;/a&gt;，项目叫 &lt;a href="https://nvlabs.github.io/SoL-Pi/"&gt;SoL-Pi&lt;/a&gt;， Scaling Auto-Research Loops for Efficient Agent Harnesses&lt;/p&gt;
+&lt;p&gt;让 Research Agent 自动发现 Harness 里的 Token 浪费，再通过大规模实验筛掉无效改法。把结论再放进大量环境中反复测试。整个探索一共 152 个候选方向，分成 context、progress、tools、delegation、prompt/policy、improvement/evaluation 六类，然后把这些想法扔进大量相互隔离的 research lineage 里，让 agent 自己观察 trajectory、提出机制、实现、review、跑实验、继续修改。最终用了 535 个可执行搜索环境，其中 495 个来自 GitHub issue-PR pair，40 个是 verifier-driven synthetic tasks；论文说总共跑了 3000+ 次实验和 60000+ 次 agent-environment interaction&lt;/p&gt;
+&lt;p&gt;&lt;img referrerpolicy="no-referrer" src="https://pbs.twimg.com/media/HSo5DbvaYAAuVtR?format=jpg&amp;name=medium"&gt;&lt;/p&gt;
+&lt;p&gt;最后真正留下来的精华，只有 4 大机制：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Action Fusion：把“修改文件”和紧接着的测试/运行命令融合进一次 tool request。典型情况从 3 次 API call 变成 2 次。&lt;/li&gt;
+&lt;li&gt;Online Context Compact：不是机械地定期压缩 context，而是在 plan step 完成时计算“继续保留这些历史”和“现在做一次 compact”哪个更划算，还把 prompt-cache rewrite cost 算进去。&lt;/li&gt;
+&lt;li&gt;ObservationPack：一个很大的 tool output 前两次完整发送，从第三次开始改成 stable handle + 约 1KB 的 head/tail excerpt，需要时再通过 handle 取原始内容。&lt;/li&gt;
+&lt;li&gt;Evidence-Preserving Reducer：对 build/test log 使用低成本模型提炼证据，但原始日志始终保留，并通过 deterministic verifier 检查 schema、hash、exit status、exact quote 等；验证失败就回退原始结果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;我因为脑子比较轴，总喜欢扩展关联到别的领域，于是想把这四大方法，也套在人肉学习上：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;合并动作：能连续做的事情不要反复切换。串行出现的解题步骤打包，批次进行，避免低效重复。探索之后立刻验证，而不是一个岔路跑远了再回头&lt;/li&gt;
+&lt;li&gt;清理上下文：每当学习或解题，有进展都反思当下思路，考虑下如何为接下来简化，不能当看小说一样囫囵吞枣背章节和习题答案&lt;/li&gt;
+&lt;li&gt;隔离支线：子问题展开放到一边不能影响主干思路&lt;/li&gt;
+&lt;li&gt;保留证据：子过程产生的中间结论，关键推理必须留痕&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AI给我补充了很多reference&lt;/p&gt;
+&lt;h3&gt;合并动作&lt;/h3&gt;
+&lt;p&gt;Schoenfeld 给这个现象起名叫 "wild goose chase"（追野鹅）：他发现约60%的大学生解题时会选定一个方向就一路埋头走到底，直到时间耗尽都不回头反思；而当他训练学生每隔一段时间就问自己"我现在具体在做什么？为什么这么做？这对我有什么帮助？"之后，这种不做监控的比例从60%降到了20%，解题成功率也相应提高。更有意思的是，他后来观察一位数学教授解题——这位教授手头掌握的事实和方法其实比很多学生还少，解题过程中也生成了无数条可能的死路，但他没有被这些死路带偏，靠的就是频繁地、细粒度地检验"这条路值不值得走下去"&lt;/p&gt;
+&lt;h3&gt;清理上下文&lt;/h3&gt;
+&lt;p&gt;Catrambone关于子目标形成的研究描述了一个具体过程——学习者先把一串步骤按结构分组，然后自我解释"为什么这样分组"，最后把这个分组归纳成一个简洁的标签（子目标标签）。这三步合起来，正是"做完一段就反思、并把它压缩成一个可以往下带的简化单元"，跟你说的第二条几乎逐字对应。而它的反面，就是你说的"看小说一样囫囵吞枣"——只是线性地把内容或答案过一遍，不做任何分组、归纳、压缩，信息就只是流过去了，没有被结构化，也就没法被高效复用。&lt;/p&gt;
+&lt;h3&gt;隔离支线&lt;/h3&gt;
+&lt;p&gt;人类研究就是子目标标签（subgoal labeling）本身——Catrambone给出的经典例子是解方程"隔离变量→化简变量"：学生只需要在主线上记住这两个子目标，每个子目标内部具体怎么算是被封装起来的细节，不需要在思考整体解题结构时一直占用工作记忆。研究还发现，用子目标标签训练出来的学生，遇到步骤不同但子目标结构相同的新题时，迁移能力明显更强；而没有这种封装、只是记住老师板书完整步骤的学生，换一道结构相同但细节不同的题就容易失败——这正是"细节污染主干"的后果。这也呼应了国际象棋大师的组块（chunking）研究：高手把一串走法编码成一个组块整体记忆和调用，而不是逐步保持在工作记忆里，从而腾出容量去思考更高层的布局。&lt;/p&gt;
+&lt;h3&gt;保留证据&lt;/h3&gt;
+&lt;p&gt;Polya经典的解题四阶段（理解问题→拟定计划→执行计划→回顾）里，"回顾"这一步要求你把推理过程记录下来复查，而不是解完就扔；如果第2、3条里的"压缩""封装"做得太狠、把关键中间结论也一起丢了，你会既没法自查错误，也没法把这段经验迁移到下一个类似问题上。这也是为什么"元认知校准"（上一轮提到的）离不开留痕——你没法准确判断"我这一步到底对不对"，如果连这一步的关键推理都没有记录下来可供回看。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;学习方法论的批判&lt;/h2&gt;
+&lt;p&gt;很多学习者，特别是中小学学生，对这些“显学”反而不知道。父母和老师也不会教。&lt;/p&gt;
+&lt;p&gt;虽然大部人聪明人能领悟到这一点，但是很多平庸的学生学到这四点教训已经太晚了。。。&lt;/p&gt;
+&lt;p&gt;因为传统学校的考试 测验的 reward 只看结果，不太关心你过程怎么来的。小学知识比较简单，留下来的坏毛病带到初中之后就麻烦了。&lt;/p&gt;
+&lt;p&gt;我家的娃就深受其害。在小学阶段，“只要答案对，就算成功”这个策略经常真的有效。题目短、知识点少、搜索空间小，靠记忆、模仿、反复练习也能得到不错的结果。于是很多低效习惯不会立刻付出代价。死记硬背就能拿个勉强过得去的分数。&lt;/p&gt;
+&lt;p&gt;到了初中以后，情况开始变化。题目的状态空间变大了，步骤变长了，知识之间开始相互依赖。此时如果学生一直没有形成，那么就会无意中陷入困惑：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“我现在在解决哪一个子问题？”&lt;/li&gt;
+&lt;li&gt;“哪些信息已经没用了？”&lt;/li&gt;
+&lt;li&gt;“哪些东西应该暂时放到一边？”&lt;/li&gt;
+&lt;li&gt;“我的这个结论到底依据是什么？”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些能力，学习成本会突然上升。&lt;/p&gt;
+&lt;p&gt;客观的因素，大班制教学，老师也管不过来。只有精英教育 私教 遇到良师，或者就孩子被鼓励“多思考”，才可能戳破这一系列技巧。&lt;/p&gt;
+&lt;p&gt;小学时，“直接冲答案”很快，成绩又不错 → 学生得到正反馈。小时候看起来只是“不够仔细”的问题，几年后会表现成“学习能力不行”。&lt;/p&gt;
+&lt;p&gt;上面列举这四个技巧，我其实个人很早就懂得，无意中自己琢磨的，回顾了下，可能被小时候鼓励“更聪明的办法”太多次了，这里要感谢当时的父母，自己本身希望去掌握那个最快 最酷的解题技巧，所以算 “过程优化” 到极致作为一个附加 reward了。一个问题有多种解法，每种解法优劣都品鉴了一番，知道哪些坑哪些好。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“这道题还有没有更短的路？”&lt;/li&gt;
+&lt;li&gt;“这个方法为什么比另一个好？”&lt;/li&gt;
+&lt;li&gt;“刚才卡住的地方以后怎么避免？”&lt;/li&gt;
+&lt;li&gt;“这个技巧能不能迁移到另一类题？”&lt;/li&gt;
+&lt;li&gt;“有没有一种方法能让我以后少想五步？”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这就很接近论文里的 harness optimization 了。解题的意义不仅在于得到正确答案本身，还有在观察“解题算法本身”。&lt;/p&gt;
+&lt;p&gt;初中、高中我甚至有几起名场面，公开质疑老师出题出的有问题（50%翻车）🤣&lt;/p&gt;
+&lt;p&gt;当然，这个习惯也有其害处，我也吃过亏。三角函数大家都背公式，我就自己发明了一套自以为更好的理解框架。。。结果出题人更偏好教材公式能快速结果的，我那套不仅更复杂，容易翻车，而且还有“翻译”成本。。。囧。。。&lt;/p&gt;
+&lt;p&gt;考试的 reward 实际上更接近：在限定时间内，用低风险路径得到标准答案。&lt;/p&gt;
+&lt;p&gt;不过好处还是很明显，就是大多数问题理解得比普通人深入得多。特别是解析几何这种虽然被批判“不入流”但是几乎秒杀了教材党。。公式全靠自己推的，哪里怎么变换怎么用一清二楚。甚至圆锥体歪着斜着切这种问题都考虑到了（传统教材只有水平，垂直和顺着斜切）&lt;/p&gt;
+&lt;p&gt;这个亏一直吃到出来工作，长了很多教训。我对待任何事都是双层架构。一个是兼容傻逼的世俗层，一个是真理层。。。囧哈哈哈&lt;/p&gt;
+&lt;p&gt;其实真理层反复磨练到最后反而越来越简单。世俗层基本就是补丁接补丁越来越复杂。普通人搞不明白要崩溃的很多事情一眼看穿。。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;后记&lt;/h2&gt;
+&lt;p&gt;毕业之后，发现学生时代最值得批判的，就是做题家思维。成年人的世界是没有标准答案的。甚至你需要去设置议题。当然这又是另外一个层次的东西了。&lt;/p&gt;
+&lt;p&gt;然后回头看，学生最幸福，也是最痛苦的一点，就是面临的所有问题，无论多困难，是必然有解的；而且往往正确解是唯一的。&lt;/p&gt;
+&lt;p&gt;成年人面对的事情，基本都有多个解。你 reward 去优化，无非是利弊的权衡；&lt;/p&gt;
+&lt;p&gt;最可怕的遭遇，无解，死胡同，到头来一场空。你去尝试解决一个不存在的问题，你又能学习到什么教训呢？时也，运也，命也。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Wed, 23 Sep 2026 20:21:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-09-23:/2026/stdin-18</guid><category>stdin</category></item><item><title>Doherty 多尔蒂阈值</title><link>https://blog.est.im/2026/stderr-29</link><description>&lt;p&gt;前几天鼠标坏了。随手换了个新的，双飞燕。没想到这垃圾鼠标居然在 macbook 下有间歇性卡顿 失联问题，表现是光标不动&lt;/p&gt;
+&lt;p&gt;怀疑是 系统问题，驱动问题，鼠标本身，商家卖假货问题。最后想明白了，这几十元破玩意就tmd不值得去折腾心态。直接扔。&lt;/p&gt;
+&lt;p&gt;回想了一下，这玩意其实对工作影响比意料中的大得多。平时操作触摸板 键盘都是下意识的，根本不会去多想；&lt;/p&gt;
+&lt;p&gt;光标在显示器上一旦当场卡住，你大脑瞬间被吸引过去，从软件到硬件到购买决策，到损失厌恶，全部过一遍，恶心死了&lt;/p&gt;
+&lt;p&gt;生活中我们习惯了太多「常见」的事，是工业和质量体系支撑着这一切的「正常」。我想到骑车可以走神，开车可以走神，走路也可以走神，有的时候经过一个路口，你都完全不知道道路上发生了什么，怎么过的红绿灯，有没有危险，浑然不知；自己反正在操心着别的事儿，身体就不由自主的「自动驾驶」&lt;/p&gt;
+&lt;p&gt;电脑上 打字 也是一样。一个输入法如果能连续不断正确打出你想要的东西，那种表达的流畅是让人很舒服的。因为新生代很多人都不会 盲打 了，我想很多人可能很难体会到这一点了吧&lt;/p&gt;
+&lt;p&gt;我想到，其实写代码也是一种同样的感受。无论是以前古法手搓，还是现在 AI 写代码，都有那么一些任务不想去碰，即便动工也完成得不好。&lt;/p&gt;
+&lt;p&gt;仔细观察了下这类任务都有几个特点：缺的东西和中间步骤比较多，可选的方向变化也比较多。比如你要给一个推送任务加一个可选参数，但是要动底层基础数据结构，这个事儿也不急，这种改造除非有业务推着，你多半不想去重构推送的核心。&lt;/p&gt;
+&lt;p&gt;想想都蛋痛，不知道会出什么夭蛾子，也不知道最后做出来被改成稀奇古怪的结构了。&lt;/p&gt;
+&lt;p&gt;也就是说你大脑需要在很多细节和路径上中断，hiccup，做决策，可能还有后悔，最后发现费这么多精力做出来的，纯纯浪费。&lt;/p&gt;
+&lt;p&gt;这种挫败感是极强的，人性天生都会懒得去碰，惰性就是这么来的，拖延症也是这么来的&lt;/p&gt;
+&lt;p&gt;然后这事儿其实又和 tiktok 所谓 swipe up 上瘾机制联系起来了。过去视频网站的观看决策&lt;/p&gt;
+&lt;p&gt;点击缩略图 → 看完 → 回到列表 → 挑选 → 点击另一个 缩略图。这么多的 hiccup 很容易造成注意力流失&lt;/p&gt;
+&lt;p&gt;还有 tinder。&lt;/p&gt;
+&lt;p&gt;但是反过来说，丝滑是投入程度、连续注意力的必要条件。看来身边很多天然形成的“障碍” 是大部分人没有意识到，也没能识别的。&lt;/p&gt;
+&lt;p&gt;汽车工业，自行车早年可能操作起来也没那么丝滑，还有道路条件等。社会进步为了避免交通事故无意中促成了这一条件。&lt;/p&gt;
+&lt;p&gt;突然回忆起《Halt and Catch Fire》这部剧里看到的，Doherty Threshold，多尔蒂阈值。&lt;/p&gt;
+&lt;p&gt;以前的电脑，mainframe，小型机，本质都是个 batch processing系统，流程是 edit-compile-run-debug。我们这代人，上个世纪学习的信息技术课，「上机」是特殊的日子。先是教材讲很多理论知识，你准备好了，换上鞋套，去无尘的“微机室”肘击键盘，得到真实返回。然后你在大脑、纸笔上把问题上琢磨好了，再去敲打一轮电脑。很有仪式感的一套打法&lt;/p&gt;
+&lt;p&gt;这部剧里讲，他们制造的PC，&lt;a href="https://jlelliotton.blogspot.com/p/the-economic-value-of-rapid-response.html"&gt;延迟低于 400ms&lt;/a&gt;，用户就能在敲一条命令后立刻得到返回，思绪不会断，执行任务的效率会极大的提高&lt;/p&gt;
+&lt;p&gt;今天回味这一点，特别像 AI agent的故事。一旦你体验过 ultrafast 那种推理模型，就很难回去了。你可以 &lt;strong&gt;实时决策&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;或许我们讨论心流的时候，特别注意任务本身的难度，而忽略了周边配套造成的阻碍。&lt;/p&gt;
+&lt;p&gt;今天的感悟，很简单，如果做app或者服务，要把流程的丝滑程度做到极致，尽可能避免一切可能的 hiccup&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Fri, 18 Sep 2026 16:15:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-09-18:/2026/stderr-29</guid><category>stderr</category></item><item><title>海南之行后记</title><link>https://blog.est.im/2026/stderr-28</link><description>&lt;p&gt;趁还记得，记录一些&lt;/p&gt;
+&lt;p&gt;起初是发现 嫦娥七号 在文昌发射，于是兴冲冲带着孩子去观看 CZ-5 发射&lt;/p&gt;
+&lt;p&gt;围绕着这个火箭发射基地做了大量调研；了解到很多知识：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;发射基地分两块，一个是国发，一个是商发；CZ-5 在国发&lt;/li&gt;
+&lt;li&gt;国发最佳观赏地是 文昌县 门楼镇，淇水湾&lt;/li&gt;
+&lt;li&gt;发射前会封路，开车进不去&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;二话不说，定机票；无意中刷到 云闪付 有 -200 优惠，于是周五定闹钟抢票，抢到手。不过发现使用优惠，折腾了大半天发现&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;这优惠只能买去海南的单程，不能往返；&lt;/li&gt;
+&lt;li&gt;订单必须只有一人，而且必须是自己，付款人和乘机人必须是同一个人。&lt;/li&gt;
+&lt;li&gt;孩子未成年无法单独购票&lt;/li&gt;
+&lt;li&gt;未成年人在 -200 优惠之后附加购买，+100 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;折腾半天，感觉还比如直接一起打包买往返划算。囧&lt;/p&gt;
+&lt;p&gt;然后就是轰轰烈烈的定住处，观礼台。&lt;/p&gt;
+&lt;p&gt;因为时间比较接近了，发现价格贵得起飞，甚至一度想到骑电瓶车去路边看，考虑发射时间早上8点太早，很可能天气预报有雨于是作罢&lt;/p&gt;
+&lt;p&gt;选了一圈定 淇水湾五号 小区，价格 1500 。其实在门楼镇上有1200甚至900的，但是住宿条件更差。&lt;/p&gt;
+&lt;p&gt;然后，延迟一天，房东也爽快的答应延期一天入住；&lt;/p&gt;
+&lt;p&gt;但是返程机票已定，时间不够，于是折腾半天去改机票，每个人 -140 。啊痛死！&lt;/p&gt;
+&lt;p&gt;接下来，让人更崩溃的事发生了，发射tmd取消了！&lt;/p&gt;
+&lt;p&gt;还好这个房东比较爽快，直接退款。网上很多撕逼的。&lt;/p&gt;
+&lt;p&gt;虽然我也一直关注今年广西边上这个土台风，没想到居然取消了啊。虽然有消息传言说天气因素不大，更关键这次南极科考任务有多国科学载荷，必须万无一失，碰巧遇到一些仪器上无法立刻解决的bug，所以。。&lt;/p&gt;
+&lt;p&gt;于是就不得不改成海南旅行。在登机前一刻还在查怎么玩；想了下打车每天几十，加起来不如租个车。&lt;/p&gt;
+&lt;p&gt;去神州挑了个 AION S。第一次租车，先随便试试。落地 HAK 发现居然停车场在11楼，电梯还不好找。&lt;/p&gt;
+&lt;p&gt;这车比想象中好开，花了4个小时直奔三亚；中途在中石油充电，吃泡面。还没吃完，电都快充满了。还好车少桩多，不急着挪车；&lt;/p&gt;
+&lt;p&gt;到了三亚，让娃去游泳。酒店随便选的，在凤凰岛，外里面非常高大上，实际上里面非常破，东西都发霉了，考虑到1字头价格，不好评也懒得差评。&lt;/p&gt;
+&lt;p&gt;游泳池有三个，忘记带泳帽，民宿老板爽快送了2个库存要求好评，但是后来应娃的要求去买了泳镜，被宰了 68 ，气愤。&lt;/p&gt;
+&lt;p&gt;海景房视野是舒服，看网上说海水高盐对家具和装潢都是毁灭性的。&lt;/p&gt;
+&lt;p&gt;第二天，上午懒觉+游泳，下午逛景点，先去看南海观音，门票和观光车花费0，因为看攻略导航到村里直接去沙滩远观即可。孩子很多年没接触大海了兴奋得玩了好几个小时&lt;/p&gt;
+&lt;p&gt;椰子10元一个。感觉贵了，上网一查果然。今年海南的椰子据说收成好，卖不起价&lt;/p&gt;
+&lt;p&gt;天涯海角 景区，坑得一批。虽然不要门票，但是要手机号 身份证。结果刷二维码的看都不看。感觉可以乱填一个进去。只去了正大门，天涯海角石在好几公里远，观光车划不来，放弃。后续在网上查到可以开车到西门进，很近&lt;/p&gt;
+&lt;p&gt;第三天不知道玩点啥，随便搜到一个 亚特兰蒂斯水世界 。官方酒店2k+我是舍不得的，找了个直线距离最近的附近的民宿。结果大大出乎意料，它丫的开了个小门，去 亚特兰蒂斯检票口 只需要步行 5分钟，比外边开车停车场或公交车都近的多。价格300一晚，2个房间2个大床，海景绝美。就停车有点贵30封顶24h，不过官方停车场40封顶24h。感觉又赚了10元&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Atlantis Sanya" src="/images/2026/stderr-28-01.avif" /&gt;&lt;/p&gt;
+&lt;p&gt;亚特兰蒂斯水世界，人比较多，但是其实好玩的就那么几样。大喇叭 小喇叭 放手一搏 鲨鱼竞速 小船漂流都玩了，当天其实在下雨，反正会湿身，又不晒，哈哈。&lt;/p&gt;
+&lt;p&gt;第四天不知道玩点啥，找了个往机场方向的酒店，搜了下 三亚，陵水，万宁，琼海，文昌，这一路全都是海滩和酒店，随便找了个，打算去 南湾猴岛 看看。&lt;/p&gt;
+&lt;p&gt;南湾猴岛观光索道100+，我肯定舍不得，查到攻略，如果喂猴子可以导航 去 南湾村民委员会，果然一路都是。比峨眉山的猴子好些，没那么凶狠。一路开到海边，顺便看了眼 呆呆岛&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Atlantis Sanya" src="/images/2026/stderr-28-02.avif" /&gt;&lt;/p&gt;
+&lt;p&gt;下午就去机场了，无聊就沿着海岸的观光公路一直开，开到博鳌 红石滩，想赶海，发现没工具，花10买了个铲子，毛都没挖到。最后挖到个很小的贝壳，以及极小的寄居蟹。也算有收获吧&lt;/p&gt;
+&lt;p&gt;一路上发现海南很多散养的黄牛 水牛在路边，草地里悠闲地吃草。&lt;/p&gt;
+&lt;p&gt;晚上充电，还车，BAR起飞回家；&lt;/p&gt;
+&lt;p&gt;总体感受，做计划真累，真想啥都不做躺几天。不知道这辈子能肉眼看上火箭发射不。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Thu, 03 Sep 2026 20:51:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-09-03:/2026/stderr-28</guid><category>stderr</category></item><item><title>The httpx 1.0 situation</title><link>https://blog.est.im/2026/stdout-35</link><description>&lt;p&gt;In case you weren't aware, there's quite a debate over &lt;code&gt;httpx&lt;/code&gt; v1.0 release, especially maintainer of both &lt;code&gt;openai-python&lt;/code&gt; and &lt;code&gt;anthropic-sdk-python&lt;/code&gt; showed up and decided to switch to &lt;code&gt;httpx2&lt;/code&gt;, a fork of &lt;code&gt;httpx&lt;/code&gt; that maintains v0.28 styles&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;httpx&lt;/code&gt; is a Python library that can handle both sync/async http, replacing &lt;code&gt;requests&lt;/code&gt; (sync-only) and &lt;code&gt;aiohttp&lt;/code&gt; (async-opnly).&lt;/p&gt;
+&lt;p&gt;You can view original discussion starting here &lt;a href="https://github.com/encode/httpx/discussions/3344"&gt;https://github.com/encode/httpx/discussions/3344&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The maintainer &lt;a href="https://github.com/encode/httpx/discussions/3784"&gt;closed discussion and issues&lt;/a&gt; &lt;/p&gt;
+&lt;h3&gt;1. &lt;code&gt;verify=&lt;/code&gt; and &lt;code&gt;cert=&lt;/code&gt; → explicit &lt;code&gt;ssl.SSLContext&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;for version &amp;lt; v1.0&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Boolean on/off — still fine, not deprecated
+httpx.Client(verify=True)   # default: verify using certifi's CA bundle
+httpx.Client(verify=False)  # danger: accept any certificate
+
+# String path — NOW DEPRECATED, raises a warning
+httpx.Client(verify=&amp;quot;/path/to/custom-ca-bundle.pem&amp;quot;)
+
+# cert= for a client certificate (mutual TLS) — NOW DEPRECATED
+httpx.Client(cert=(&amp;quot;/path/to/client.pem&amp;quot;, &amp;quot;/path/to/client.key&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;v1.0&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import ssl, certifi, httpx
+
+# Equivalent to default verify=True
+ctx = ssl.create_default_context(cafile=certifi.where())
+httpx.Client(verify=ctx)
+
+# Custom CA bundle
+ctx = ssl.create_default_context(cafile=&amp;quot;/path/to/custom-ca-bundle.pem&amp;quot;)
+httpx.Client(verify=ctx)
+
+# Client certificate (mutual TLS) is now loaded onto the context itself
+ctx = ssl.create_default_context(cafile=certifi.where())
+ctx.load_cert_chain(&amp;quot;/path/to/client.pem&amp;quot;, &amp;quot;/path/to/client.key&amp;quot;)
+httpx.Client(verify=ctx)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;2. &lt;code&gt;proxies=&lt;/code&gt; → &lt;code&gt;proxy=&lt;/code&gt; / &lt;code&gt;mounts=&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Before:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Old dict-based per-scheme mapping
+httpx.Client(proxies={&amp;quot;http://&amp;quot;: &amp;quot;http://localhost:8030&amp;quot;, &amp;quot;https://&amp;quot;: &amp;quot;http://localhost:8031&amp;quot;})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# Single proxy for everything
+httpx.Client(proxy=&amp;quot;http://localhost:8030&amp;quot;)
+
+# Per-scheme routing via mounts (a dict of URL-pattern -&amp;gt; Transport)
+httpx.Client(mounts={
+    &amp;quot;http://&amp;quot;: httpx.HTTPTransport(proxy=&amp;quot;http://localhost:8030&amp;quot;),
+    &amp;quot;https://&amp;quot;: httpx.HTTPTransport(proxy=&amp;quot;http://localhost:8031&amp;quot;),
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;3. &lt;code&gt;app=&lt;/code&gt; shortcut → explicit &lt;code&gt;transport=&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;What &lt;code&gt;app=&lt;/code&gt; was for: letting you point a &lt;code&gt;Client&lt;/code&gt; directly at a WSGI or ASGI Python callable instead of a URL, so you could test your web app without spinning up a real server.&lt;/p&gt;
+&lt;p&gt;Before:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;httpx.Client(app=my_asgi_app, base_url=&amp;quot;http://testserver&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;httpx.Client(transport=httpx.ASGITransport(app=my_asgi_app), base_url=&amp;quot;http://testserver&amp;quot;)
+# or for WSGI:
+httpx.Client(transport=httpx.WSGITransport(app=my_wsgi_app), base_url=&amp;quot;http://testserver&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;4. &lt;code&gt;allow_redirects=&lt;/code&gt; → &lt;code&gt;follow_redirects=&lt;/code&gt;, default flipped to &lt;code&gt;False&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;What changed: in the 0.20 release, redirects stopped being followed automatically by default.&lt;/p&gt;
+&lt;p&gt;Before (pre-0.20 behavior, and the old kwarg name):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;httpx.get(&amp;quot;http://api.github.com/&amp;quot;)  
+# silently redirects http -&amp;gt; https, meaning every request was actually sent twice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;httpx.get(&amp;quot;http://api.github.com/&amp;quot;, follow_redirects=True)  # opt-in explicitly
+# or
+httpx.Client(follow_redirects=True)  # opt-in for the whole client
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The maintainers gave a concrete example — a client configured for &lt;code&gt;http://api.github.com/&lt;/code&gt; was silently sending &lt;em&gt;every single request twice&lt;/em&gt; (once to get redirected, once to the real HTTPS URL), wasting a round-trip nobody asked for. They decided implicit redirect-following causes more surprise bugs (accidentally hitting an endpoint twice, e.g. a payment POST) than it saves typing, so it became opt-in. This was explicitly flagged as "no universally right answer, just a trade-off" in their own release notes.&lt;/p&gt;
+&lt;h3&gt;5. Compact JSON request bodies&lt;/h3&gt;
+&lt;p&gt;Before: &lt;code&gt;json={"a": 1, "b": 2}&lt;/code&gt; serialized with the stdlib default spacing → &lt;code&gt;{"a": 1, "b": 2}&lt;/code&gt; (space after &lt;code&gt;:&lt;/code&gt; and &lt;code&gt;,&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;After: same call now serializes to &lt;code&gt;{"a":1,"b":2}&lt;/code&gt; (no extra spaces).&lt;/p&gt;
+&lt;p&gt;This is a good change!&lt;/p&gt;
+&lt;h3&gt;6. Query-string percent-encoding rules changed&lt;/h3&gt;
+&lt;p&gt;Before: spaces in query params encoded as &lt;code&gt;+&lt;/code&gt;, and &lt;code&gt;/&lt;/code&gt; inside a query value encoded as &lt;code&gt;%2F&lt;/code&gt; (this is the old &lt;code&gt;application/x-www-form-urlencoded&lt;/code&gt;-style behavior, same as &lt;code&gt;requests&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;After: spaces encoded as &lt;code&gt;%20&lt;/code&gt;, and &lt;code&gt;/&lt;/code&gt; left unescaped in the query portion (matches how Chrome/Safari/Firefox actually build URLs, per the WHATWG spec rather than the older RFC 3986 reading).&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# requests-style / old httpx:
+&amp;quot;?q=hello+world&amp;amp;path=a%2Fb&amp;quot;
+# new httpx:
+&amp;quot;?q=hello%20world&amp;amp;path=a/b&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a case where IETF RFC3986 vs. WHATWG's disagree, and real browsers follow WHATWG.&lt;/p&gt;
+&lt;h3&gt;7. Automatic &lt;code&gt;.netrc&lt;/code&gt; handling → explicit &lt;code&gt;httpx.NetRCAuth()&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Before: if you had a &lt;code&gt;~/.netrc&lt;/code&gt; file, httpx would silently pick up and use those credentials on any matching request.&lt;/p&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;httpx.get(url, auth=httpx.NetRCAuth())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Silently reading a credentials file from disk shouldn't be done by default.&lt;/p&gt;
+&lt;h3&gt;8. &lt;code&gt;response.iter_lines()&lt;/code&gt; behavior&lt;/h3&gt;
+&lt;p&gt;Before: yielded lines including trailing newline characters (&lt;code&gt;"line one\n"&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;After: matches Python's own &lt;code&gt;str.splitlines()&lt;/code&gt; / file-iteration convention — newlines stripped (&lt;code&gt;"line one"&lt;/code&gt;), and a related performance bug fixed.&lt;/p&gt;
+&lt;p&gt;Matching stdlib conventions (&lt;code&gt;for line in file:&lt;/code&gt; style) is less surprising than inventing your own line-splitting semantics.&lt;/p&gt;
+&lt;h3&gt;9. &lt;code&gt;QueryParams&lt;/code&gt; became immutable&lt;/h3&gt;
+&lt;p&gt;Before (implied by the old API): &lt;code&gt;client.params.update(...)&lt;/code&gt; mutated in place.&lt;/p&gt;
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client.params = client.params.merge({&amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;})
+# or the more granular:
+params.set(&amp;quot;key&amp;quot;, &amp;quot;value&amp;quot;)
+params.add(&amp;quot;key&amp;quot;, &amp;quot;value&amp;quot;)     # allow duplicate keys
+params.remove(&amp;quot;key&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Mutable shared state (like a dict) attached to a client is a classic source of bugs&lt;/p&gt;
+&lt;h3&gt;10. Sync and async split into two separate installable packages&lt;/h3&gt;
+&lt;p&gt;Background: today, one package gives you both a blocking (&lt;code&gt;Client&lt;/code&gt;) and non-blocking (&lt;code&gt;AsyncClient&lt;/code&gt;) interface, because under the hood both share the same code via a code-generation trick (&lt;code&gt;unasync&lt;/code&gt;) that turns the async source into the sync version automatically at build time.&lt;/p&gt;
+&lt;p&gt;Before:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;import httpx
+r = httpx.get(&amp;quot;https://example.org&amp;quot;)          # sync
+
+async def main():
+    async with httpx.AsyncClient() as cli:
+        r = await cli.get(&amp;quot;https://example.org&amp;quot;)   # async
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After (previewed):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# pip install httpx
+import httpx
+r = httpx.get(&amp;quot;https://example.org&amp;quot;)           # sync only
+
+# pip install ahttpx   &amp;lt;-- a *different* package
+import ahttpx
+r = await ahttpx.get(&amp;quot;https://example.org&amp;quot;)    # async only
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The maintainers reasoned that if you only ever use the sync client, you're still forced to install &lt;code&gt;anyio&lt;/code&gt; and &lt;code&gt;sniffio&lt;/code&gt; (async-support dependencies) that you never touch. Splitting the packages lets sync-only users have a genuinely smaller dependency tree, and removes the slightly awkward &lt;code&gt;Client&lt;/code&gt;/&lt;code&gt;AsyncClient&lt;/code&gt; naming duplication in favor of one name per package.&lt;/p&gt;
+&lt;p&gt;The controversy (worth knowing about): this is the most contested item in the whole redesign. Simon Willison and several SDK maintainers (including Anthropic's and OpenAI's own Python SDK maintainers, both of which depend on &lt;code&gt;httpx&amp;lt;1&lt;/code&gt;) argued in the public discussion that Python's inability to install two versions of the same package side-by-side means a hard breaking split could fragment the ecosystem for a long transition window, similar to what happened with Pydantic 1→2. Proposed alternatives floated in that thread include shipping the new design under a different name entirely (&lt;code&gt;httpx2&lt;/code&gt;) or keeping both old and new APIs inside one package under a versioned namespace (&lt;code&gt;httpx.v1&lt;/code&gt;). None of this is resolved as of the latest visible discussion activity.&lt;/p&gt;
+&lt;p&gt;My take: The whole reason why ppl chose httpx over aiohttp is because it can handle both.&lt;/p&gt;
+&lt;h3&gt;11. &lt;code&gt;json=&lt;/code&gt;, &lt;code&gt;data=&lt;/code&gt;, &lt;code&gt;files=&lt;/code&gt; shortcuts replaced by typed &lt;code&gt;content=&lt;/code&gt; objects&lt;/h3&gt;
+&lt;p&gt;Background: today httpx (like &lt;code&gt;requests&lt;/code&gt; before it) offers three different keyword arguments depending on what kind of body you're sending, and picks the right &lt;code&gt;Content-Type&lt;/code&gt; header for you based on which one you used.&lt;/p&gt;
+&lt;p&gt;Before:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client.post(url, json={&amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;})                       # application/json
+client.post(url, data={&amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;})                       # form-urlencoded
+client.post(url, files={&amp;quot;upload&amp;quot;: open(&amp;quot;report.pdf&amp;quot;, &amp;quot;rb&amp;quot;)})  # multipart/form-data
+client.post(url, data={&amp;quot;name&amp;quot;: &amp;quot;a&amp;quot;}, files={&amp;quot;upload&amp;quot;: f})      # mixed form + file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After (previewed):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;client.post(url, content=httpx.JSON({&amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;}))
+client.post(url, content=httpx.Form({&amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;}))
+client.post(url, content=httpx.Files({&amp;quot;upload&amp;quot;: httpx.File(&amp;quot;report.pdf&amp;quot;)}))
+client.post(url, content=httpx.MultiPart(
+    form={&amp;quot;name&amp;quot;: &amp;quot;a&amp;quot;},
+    files={&amp;quot;upload&amp;quot;: httpx.File(&amp;quot;report.pdf&amp;quot;)},
+))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Java boi's fantacy to please the type checker.&lt;/p&gt;
+&lt;h3&gt;12. Stricter typing on flexible parameters (discussed, not fully decided)&lt;/h3&gt;
+&lt;p&gt;Background: currently &lt;code&gt;timeout=&lt;/code&gt; accepts a bare float, a tuple of floats, or a &lt;code&gt;Timeout&lt;/code&gt; instance; &lt;code&gt;proxy=&lt;/code&gt; accepts a string, a &lt;code&gt;URL&lt;/code&gt;, or a &lt;code&gt;Proxy&lt;/code&gt; instance; similar flexibility exists for &lt;code&gt;auth=&lt;/code&gt; and &lt;code&gt;headers=&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The design-call notes floated constraining these to fewer accepted shapes for clarity, but a maintainer pushed back in the same conversation that "it's not clear tightening the API types is a better user experience and could cause churn" — so this one is explicitly unresolved, not a committed change.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;
+# `proxy=` → `ProxyTypes`
+httpx.Client(proxy=&amp;quot;http://localhost:8030&amp;quot;)                 # plain string
+httpx.Client(proxy=httpx.URL(&amp;quot;http://localhost:8030&amp;quot;))       # URL object
+httpx.Client(proxy=httpx.Proxy(&amp;quot;http://localhost:8030&amp;quot;))     # Proxy object, needed if you
+                                                              # also want proxy auth/headers
+# `timeout=` → `TimeoutTypes`
+httpx.Client(timeout=10.0)                 # single float applied to connect/read/write/pool
+httpx.Client(timeout=None)                 # disable timeouts entirely
+httpx.Client(timeout=httpx.Timeout(connect=5.0, read=30.0, write=10.0, pool=5.0))  # explicit object
+
+# `auth=` → `AuthTypes`
+httpx.get(url, auth=(&amp;quot;username&amp;quot;, &amp;quot;password&amp;quot;))   # 2-tuple -&amp;gt; Basic auth
+httpx.get(url, auth=httpx.DigestAuth(&amp;quot;username&amp;quot;, &amp;quot;password&amp;quot;))  # explicit Auth subclass
+httpx.get(url, auth=my_callable)                 # any callable(request) -&amp;gt; request, via FunctionAuth
+
+# `headers=` → `HeaderTypes`
+httpx.get(url, headers={&amp;quot;User-Agent&amp;quot;: &amp;quot;my-app&amp;quot;})              # plain dict
+httpx.get(url, headers=[(&amp;quot;User-Agent&amp;quot;, &amp;quot;my-app&amp;quot;)])             # list of tuples (allows duplicate keys)
+httpx.get(url, headers=httpx.Headers({&amp;quot;User-Agent&amp;quot;: &amp;quot;my-app&amp;quot;}))  # explicit Headers object
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;tl;dr httpx v1.0 is trying to giving type system a handjob like Java&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Mon, 31 Aug 2026 11:35:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-08-31:/2026/stdout-35</guid><category>stdout</category></item><item><title>Mimocode/Opencode 的 Responses API 支持</title><link>https://blog.est.im/2026/stdout-34</link><description>&lt;p&gt;当前的 MiMoCodev0.1.13里，Responses API 有两套入口&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Vercel SDK 的 responses() 方法 —— 触发条件是 provider id 为 &lt;code&gt;openai&lt;/code&gt; / &lt;code&gt;github-copilot&lt;/code&gt; / &lt;code&gt;azure&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;provider 为 &lt;code&gt;gitlab&lt;/code&gt; 且每个模型加上 &lt;code&gt;"useResponsesApi": true&lt;/code&gt; &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;就tmd很神奇。。一眼 vibe coding。我感觉世界上理解 Responses API 意义的人可能比例很少。。。&lt;/p&gt;
+&lt;h3&gt;走 &lt;code&gt;gitlab&lt;/code&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-jsonc"&gt;{
+  &amp;quot;$schema&amp;quot;: &amp;quot;https://mimo.xiaomi.com/mimocode/config.json&amp;quot;,
+  &amp;quot;provider&amp;quot;: {
+    &amp;quot;gitlab&amp;quot;: {
+      &amp;quot;name&amp;quot;: &amp;quot;GitLab&amp;quot;,
+      &amp;quot;models&amp;quot;: {
+        &amp;quot;gpt-5-codex&amp;quot;: { &amp;quot;useResponsesApi&amp;quot;: true }
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以通过 &lt;code&gt;GITLAB_INSTANCE_URL&lt;/code&gt; &lt;code&gt;GITLAB_TOKEN&lt;/code&gt; 环境变量去变通，但是 &lt;code&gt;token&lt;/code&gt; 来自 &lt;code&gt;directAccessClient.getDirectAccessToken()&lt;/code&gt; 走的是 GitLab 的 token-exchange 协议（auth.openai.com 那套 OAuth exchange）&lt;/p&gt;
+&lt;p&gt;所以即使能把 &lt;code&gt;instanceUrl&lt;/code&gt; 骗过去，token 交换这一步也会因为不是真 GitLab token 而失败——没有可配置的开源端点/key 入口，也没有绕过 token-exchange 的开关。&lt;/p&gt;
+&lt;h3&gt;复用 &lt;code&gt;openai&lt;/code&gt; 这个 provider id&lt;/h3&gt;
+&lt;p&gt;支持自定义 &lt;code&gt;options.baseURL&lt;/code&gt; + &lt;code&gt;apiKey&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-jsonc"&gt;{
+  &amp;quot;$schema&amp;quot;: &amp;quot;https://mimo.xiaomi.com/mimocode/config.json&amp;quot;,
+  &amp;quot;provider&amp;quot;: {
+    &amp;quot;openai&amp;quot;: {
+      &amp;quot;name&amp;quot;: &amp;quot;My Responses Backend&amp;quot;,
+      &amp;quot;npm&amp;quot;: &amp;quot;@ai-sdk/openai&amp;quot;,
+      &amp;quot;models&amp;quot;: { &amp;quot;my-model&amp;quot;: { &amp;quot;name&amp;quot;: &amp;quot;my-model&amp;quot; } },
+      &amp;quot;options&amp;quot;: {
+        &amp;quot;baseURL&amp;quot;: &amp;quot;https://你的后端域名/v1&amp;quot;,
+        &amp;quot;apiKey&amp;quot;: &amp;quot;你的key&amp;quot;
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;provider id 必须是 &lt;code&gt;openai&lt;/code&gt;/&lt;code&gt;github-copilot&lt;/code&gt;/&lt;code&gt;azure&lt;/code&gt; 之一&lt;/p&gt;
+&lt;h3&gt;两个npm包的区别&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;@ai-sdk/openai-compatible&lt;/code&gt; 和 &lt;code&gt;@ai-sdk/openai&lt;/code&gt; 都是来自 Vercel&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;@ai-sdk/openai-compatible&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code&gt;@ai-sdk/openai&lt;/code&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;是什么&lt;/td&gt;
+&lt;td&gt;MiMoCode 自带/打包的通用 OpenAI 兼容适配器&lt;/td&gt;
+&lt;td&gt;Vercel 官方的 OpenAI 原生 provider&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;适用对象&lt;/td&gt;
+&lt;td&gt;任何"像 OpenAI"的第三方端点（OpenRouter、DeepSeek、本地 vLLM、各种网关）&lt;/td&gt;
+&lt;td&gt;OpenAI 自家 API，或任何支持 OpenAI Responses API 的后端（靠 &lt;code&gt;baseURL&lt;/code&gt; 指过去）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;在 MiMoCode 里的默认角色&lt;/td&gt;
+&lt;td&gt;自定义 provider 的默认 npm（你不写 &lt;code&gt;npm&lt;/code&gt; 时，&lt;code&gt;up()&lt;/code&gt; 函数默认填它）&lt;/td&gt;
+&lt;td&gt;绑定内置 &lt;code&gt;openai&lt;/code&gt; provider id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;协议能力&lt;/td&gt;
+&lt;td&gt;只有 Chat Completions（&lt;code&gt;languageModel()&lt;/code&gt;）&lt;/td&gt;
+&lt;td&gt;Chat Completions + Responses API（&lt;code&gt;responses()&lt;/code&gt; 方法）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;路由差异&lt;/td&gt;
+&lt;td&gt;通用路径 &lt;code&gt;W()&lt;/code&gt; 里固定走 &lt;code&gt;M.languageModel(id)&lt;/code&gt; → chat&lt;/td&gt;
+&lt;td&gt;内置 &lt;code&gt;openai&lt;/code&gt; loader 的 &lt;code&gt;getModel&lt;/code&gt; 是 &lt;code&gt;return Z.responses(Q)&lt;/code&gt; → 默认就走 Responses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm: "@ai-sdk/openai-compatible"&lt;/code&gt; + 任意自定义 id** → 永远走 Chat Completions，拿不到 Responses API。这是最常用但偏偏不支持 responses 的那个。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm: "@ai-sdk/openai"&lt;/code&gt; 本身有 &lt;code&gt;responses()&lt;/code&gt; 方法，但只有当 provider id 叫 &lt;code&gt;openai&lt;/code&gt;、&lt;code&gt;github-copilot&lt;/code&gt;、&lt;code&gt;azure&lt;/code&gt;，它们 loader 里也调 &lt;code&gt;responses()&lt;/code&gt;）时，MiMoCode 才会用 &lt;code&gt;Z.responses(Q)&lt;/code&gt;。自定义 id + &lt;code&gt;@ai-sdk/openai&lt;/code&gt; 会掉回通用 &lt;code&gt;languageModel()&lt;/code&gt; = chat。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;实测模型支持&lt;/h3&gt;
+&lt;h4&gt;Opencode Go&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;model&lt;/th&gt;
+&lt;th&gt;completions&lt;/th&gt;
+&lt;th&gt;responses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;deepseek-v4-flash&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deepseek-v4-flash-vision-exp&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deepseek-v4-pro&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;glm-5&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;glm-5.1&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;glm-5.2&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;glm-5.3&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;glm-5.3-flash&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gpt-5.6-luna&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grok-4.5&lt;/td&gt;
+&lt;td&gt;❌ 503&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grok-4.6&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hy3&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hy3-preview&lt;/td&gt;
+&lt;td&gt;❌ 400&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hy4-preview&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kimi-k2.5&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kimi-k2.6&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kimi-k2.7-code&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kimi-k3&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;longcat-2.0&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2-omni&lt;/td&gt;
+&lt;td&gt;❌ 400&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2-pro&lt;/td&gt;
+&lt;td&gt;❌ 400&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2.5&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2.5-pro&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;minimax-m2.5&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;minimax-m2.7&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;minimax-m3&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;muse-spark-1.2-contributor&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.5-plus&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.6-plus&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.7-max&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.7-plus&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.8-flash&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwen3.8-max&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 401&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Opencode Zen&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;model&lt;/th&gt;
+&lt;th&gt;completions&lt;/th&gt;
+&lt;th&gt;responses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;big-pickle&lt;/td&gt;
+&lt;td&gt;⚠️ 429&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hy3-free&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;laguna-s-2.1-free&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ling-3.0-flash-fin-free&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2.5-free&lt;/td&gt;
+&lt;td&gt;⚠️ 429&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;muse-spark-1.2-contributor-free&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;td&gt;✅ 200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nemotron-3-ultra-free&lt;/td&gt;
+&lt;td&gt;❌ 000&lt;/td&gt;
+&lt;td&gt;❌ 500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;需要付费的 401 Insufficient balance 我就懒得测了。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sat, 29 Aug 2026 16:47:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-08-29:/2026/stdout-34</guid><category>stdout</category></item><item><title>git fetch 实现断点续传</title><link>https://blog.est.im/2026/stdout-33</link><description>&lt;p&gt;&lt;code&gt;git fetch origin main --depth=1&lt;/code&gt; 一次只下一个 pack，包含所有缺失对象，国内这网络你懂的，断开就废了，然后从头下载，往往又出事；&lt;/p&gt;
+&lt;p&gt;老外不懂国内网络条件这么艰苦，只能自己让AI改造。结果：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/est/snippets/tree/master/git-fr"&gt;https://github.com/est/snippets/tree/master/git-fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git fetch --filter=blob:none --depth=1&lt;/code&gt; —— 只拉 commit+tree，这个速度很快，只有KB级别的传输&lt;/li&gt;
+&lt;li&gt;用 &lt;code&gt;rev-list --objects --missing=print&lt;/code&gt; 算缺失集合，500 个 blob 一批回填&lt;/li&gt;
+&lt;li&gt;每轮重算缺失、只补缺的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;踩过的坑&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git fetch origin &amp;lt;blobsha&amp;gt;&lt;/code&gt; 每次都会打印 &lt;code&gt;fatal: bad object &amp;lt;sha&amp;gt;&lt;/code&gt; + &lt;code&gt;error: ... did not send all necessary objects&lt;/code&gt;，但事后检查对象blob却真的下载了。后来发现因为&lt;code&gt;cat-file&lt;/code&gt; 会拉数据,&lt;code&gt;rev-list --missing=print&lt;/code&gt; 不会。&lt;/li&gt;
+&lt;li&gt;普通 &lt;code&gt;git fetch origin &amp;lt;sha&amp;gt;&lt;/code&gt; 拿到的 pack 是薄包(thin pack)——服务器按客户端声明做 delta 压缩。如果本地声明的是 &lt;code&gt;refs/remotes/origin/main&lt;/code&gt;(一个 commit),服务器据此假定我们拥有整棵树的全部 blob所以就啥都不给&lt;/li&gt;
+&lt;li&gt;git 原生 lazy fetch ，用 &lt;code&gt;GIT_TRACE=1 git cat-file blob &amp;lt;missing&amp;gt;&lt;/code&gt; 抓到了 git 自己 lazy fetch 时实际执行的命令:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git -c fetch.negotiationAlgorithm=noop fetch origin --no-tags \
+  --no-write-fetch-head --recurse-submodules=no --filter=blob:none --stdin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;关键:&lt;br /&gt;
+- &lt;strong&gt;&lt;code&gt;fetch.negotiationAlgorithm=noop&lt;/code&gt;&lt;/strong&gt; —— 不发 haves,服务器没法薄包化,只能发完整对象;&lt;br /&gt;
+- &lt;strong&gt;&lt;code&gt;--filter=blob:none&lt;/code&gt;&lt;/strong&gt; —— 显式声明的 want 会绕过过滤器直接发送(partial clone 语义);&lt;br /&gt;
+- &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt; —— want 列表从 stdin 读,天然支持批量。&lt;/p&gt;
+&lt;p&gt;还有很多放到 &lt;a href="https://lab.est.im/git-fr/"&gt;README.md&lt;/a&gt; 里了&lt;/p&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;p&gt;把 &lt;code&gt;fr.sh&lt;/code&gt; 放到 PATH(如 &lt;code&gt;~/.local/bin/git-fr&lt;/code&gt;)，即可 &lt;code&gt;git fr&lt;/code&gt; 使用。&lt;/p&gt;
+&lt;p&gt;或 &lt;code&gt;git config --global alias.fr '!&amp;lt;绝对路径&amp;gt;/fr.sh'&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;感觉，现在搞这些东西似乎意义不大了？反正大家都是让AI自己临时写一个脚本。。。🤣&lt;/p&gt;
+&lt;p&gt;有空让AI写个支持多线程并发 fetch 的。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sun, 16 Aug 2026 14:06:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-08-16:/2026/stdout-33</guid><category>stdout</category></item><item><title>继续搓英汉双解词典v3</title><link>https://blog.est.im/2026/stdout-32</link><description>&lt;p&gt;去年&lt;a href="https://blog.est.im/2025/stdout-12"&gt;搓了个词典&lt;/a&gt;，本来懒得动了，但是看到opencode订阅还没用完，deepseek那么便宜，想着不用白不用，找了个最浪费token的方式，让AI再写一部词典&lt;/p&gt;
+&lt;p&gt;当年的AI我记得还是 gemini-2，其实很多东西不成熟。我也对AI脾气没摸准，很自然的就：“请输出 JSON”。今年学聪明了，直接上YAML。AI高呼你这想法真离经叛道但又极度合理。&lt;/p&gt;
+&lt;p&gt;甚至，block scalar（&lt;code&gt;|&lt;/code&gt;）支持多行文本，不转义！&lt;/p&gt;
+&lt;p&gt;一个小技巧是，尽量避免嵌套的，什么 map套entries，每个 entry 再挂一个 senses 列表、每个 sense 再挂一个 examples 列表，别玩这一套。直接拍扁，层级尽可能少，整个 schema 里不允许出现一个方括号！&lt;/p&gt;
+&lt;p&gt;AI帮我写了个 validator，调教这一块还得是AI卷AI。不对劲的就返回错误让AI二次输出。但是基本都是1-pass通过。之前JSON翻车太多了。&lt;/p&gt;
+&lt;p&gt;跑了一圈还发现，短码对模型不友好。词性枚举最初写成 n/v/adj/adv，模型就开始输出 v.、V、vb、verb，改成全称 noun/verb/adjective 。我觉得这个跟 LLM 预训练 token 的分布高度相关，不要以为「缩写」对人和机器更友好！LLM是反过来的。&lt;/p&gt;
+&lt;p&gt;10年前第一版想的是薅Google Dictionary羊毛，去年第二版静态站中毒，想弄json，后来发现不对。20k的词汇量，对应20k个零碎小文件不可控。&lt;/p&gt;
+&lt;p&gt;这次第三版，回到传统RDBMS。一开始想一张 FTS5 全文索引表，让用户能模糊搜索、子串匹配，甚至搜中文释义——感觉这才配得上"AI 词典"的科技感。&lt;/p&gt;
+&lt;p&gt;然后又想了下，问了自己一个本该一开始就问的问题：用户到底是怎么用词典的？&lt;/p&gt;
+&lt;p&gt;输入一个完整的词，得到词条。前缀联想 输入 "run" 提示 "running" 用一句 &lt;code&gt;LIKE 'run%'&lt;/code&gt; 就够了，一共三张表&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;words&lt;/code&gt;：词头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;senses&lt;/code&gt;：义项&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;surfaces&lt;/code&gt;：一切能解析到这个词的可供检索字符串：原形、变形、同义词、反义词、搭配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个激进的决定，&lt;code&gt;words&lt;/code&gt; 这个表甚至不保存词汇的归一化原始形式！直接作为 lemma 放到 surfaces 表里！&lt;/p&gt;
+&lt;p&gt;接下来，让AI写了个「递归」采集器，很简单，随便想几个单词，prompt就是让AI做词典；然后词典里的解释、例句再分词，再翻译。直到所有翻译和解释能自我包含，这样自动生成一部完整的词典。&lt;/p&gt;
+&lt;p&gt;让AI搓 BFS，起初几万词汇很舒服，很快发现，漂移进生僻词陷阱了：water 的释义带出了 odorless、colorless、tasteless，这些是英语词没错，所以又让AI给每个词标上分级，A1 A2 B1 B2 C1 C2 按顺序遍历。但我脑子抽了，没想到，这词在生成YAML之前，不知道自己的等级，AI提醒我，假设子词继承父词级别——够用就行。&lt;/p&gt;
+&lt;p&gt;后来想了下，反正AI闲着也是闲着，于是下载了一个权威 CEFR 词表，17 万词&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Maximax67/Words-CEFR-Dataset/"&gt;https://github.com/Maximax67/Words-CEFR-Dataset/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个词表的 level 是浮点，1.0=A1 … 6.0=C2，1.5 是 A1/A2 边界，天然可以先处理常用词后采集偏科的&lt;/p&gt;
+&lt;p&gt;甚至还提供了真实词频，the 出现了 928 亿次，还有 lemma 链接：ran→run、went→go、children→child，甚至还可以求出 clothes 没有链接，所以它是真词头。&lt;/p&gt;
+&lt;p&gt;跑起来之后，词典开始自己生长，敲入 &lt;code&gt;caffeinate&lt;/code&gt; 睡了一觉。第二天起来一看，额度才用了  10% 不到。。Deepseek太耐烧了&lt;/p&gt;
+&lt;p&gt;顺便发现opencode关只在流式模式下返回内容，非流式直接返回空 body。挺浪费的说实话。&lt;/p&gt;
+&lt;p&gt;整理发现这个 CEFR 也tmd掺水，AI看了下挺多 复数、连字符、西语、意大利语词汇混进去，后来干脆一刀切100w以上词频才纳入采集&lt;/p&gt;
+&lt;p&gt;哎，还得二次清洗&lt;/p&gt;
+&lt;p&gt;后续会把这个词典做出 on-demand 的：用户查一个词，命中缓存直接返回；没命中，当场调一次 AI 生成、校验、入库&lt;/p&gt;
+&lt;p&gt;最后，地址依然是：&lt;a href="https://def.est.im/"&gt;https://def.est.im/&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;清洗的时候AI又说怎么这么多 人名 地名 乐队名，噪音可以跳过。&lt;/p&gt;
+&lt;p&gt;我想了下，其实对 language learner 还挺有用的。你输入一个名字，其实想知道这个名字的内涵，来源，是否得体，有坑的。&lt;/p&gt;
+&lt;p&gt;传统词典那些老学究那有时间给你折腾这那的。&lt;/p&gt;
+&lt;p&gt;一个地名儿，既然你查了，肯定是从某个书 杂志 地图册 上碰到的，你是冲着大新闻、 奇闻逸事 来的。传统词典只告诉这是某国某地，有啥用？&lt;/p&gt;
+&lt;p&gt;其次AI又挑三拣四，说这西语词汇，扔了吧。老美现在西语人口那么多，流行文化我感觉都半边天了，用户查词汇碰到的概率很高。&lt;/p&gt;
+&lt;p&gt;过去纸质时代，让双语高手静下来编一部这样的词典，不容易&lt;/p&gt;
+&lt;p&gt;但是AI时代，有机会了。&lt;/p&gt;
+&lt;p&gt;我想就从这样的第一性原理，做一个完全服务语言学习者，感兴趣的词典。&lt;/p&gt;
+&lt;p&gt;不过 tokens 已经耗尽了，下次再说。&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">est</dc:creator><pubDate>Sat, 08 Aug 2026 09:53:00 +0800</pubDate><guid isPermaLink="false">tag:None,2026-08-08:/2026/stdout-32</guid><category>stdout</category></item></channel></rss>

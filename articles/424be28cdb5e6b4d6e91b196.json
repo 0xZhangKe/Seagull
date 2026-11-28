@@ -1,0 +1,11 @@
+{
+  "id": "424be28cdb5e6b4d6e91b196",
+  "title": "异步 I/O 的两种范式：Readiness 与 Completion",
+  "summary": "构建高性能网络服务和系统运行时，离不开 异步 I/O（Asynchronous I/O） 。 在操作系统与主流编程语言中，异步 I/O 主要分为两条技术路线： 一是以 Linux epoll 、macOS kqueue 、Nginx、Redis、Node.js ( libuv )、Rust ( Tokio )、Go ( netpoller ) 为代表的 Readiness-based（基于就绪通知 / Reactor 模式） ； 二是以 Windows IOCP 、Linux io_uring 、ScyllaDB、C# (async/await)、Zig ( std.Io )、Rust ( monoio ) 为代表的 Completion-based（基于完成通知 / Proactor 模式） 。 底层的 I…",
+  "content": "<p>构建高性能网络服务和系统运行时，离不开<strong>异步 I/O（Asynchronous I/O）</strong>。</p>\n<p>在操作系统与主流编程语言中，异步 I/O 主要分为两条技术路线：</p>\n<ul>\n<li>一是以 <strong>Linux <code>epoll</code>、macOS <code>kqueue</code>、Nginx、Redis、Node.js (<code>libuv</code>)、Rust (<code>Tokio</code>)、Go (<code>netpoller</code>)</strong> 为代表的 <strong>Readiness-based（基于就绪通知 / Reactor 模式）</strong>；</li>\n<li>二是以 <strong>Windows <code>IOCP</code>、Linux <code>io_uring</code>、ScyllaDB、C# (async/await)、Zig (<code>std.Io</code>)、Rust (<code>monoio</code>)</strong> 为代表的 <strong>Completion-based（基于完成通知 / Proactor 模式）</strong>。</li>\n</ul>\n<p>底层的 I/O 机制往往决定了上层编程语言的异步抽象设计：为什么 Go 能够以纯同步的代码写出高并发？为什么 Rust 的 <code>Future</code> 与 <code>epoll</code> 天然契合，却在面对 <code>io_uring</code> 时遇到缓冲区所有权借用冲突？为什么 Zig 会选择直接基于完成模型设计标准库？为什么 Windows 体系最早催生了现代的 <code>async/await</code> 语法？</p>",
+  "image": null,
+  "publishedAt": "2026-10-27T03:00:00Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2026/10/27/io-models/"
+}

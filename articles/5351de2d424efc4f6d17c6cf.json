@@ -1,0 +1,11 @@
+{
+  "id": "5351de2d424efc4f6d17c6cf",
+  "title": "记录Typecho博客转移到Hexo",
+  "summary": "前言 折腾来折腾去，最后发现归宿还是静态博客，安全性高、性能开销小，用Github直接省去服务器费用还差不多永生。每年把域名钱交了就得了，图片的问题再想想办法，总能解决的。 突然有一种为了躲避战乱带着一家人四处奔波的悲凉感 分析 博客网站的内容，都可以拆分为以下几个点： 文章 评论 文章插图 网站贴图资源 先从最主要的文章开始，想想有没有什么可以用的。 gitee上有一个 插件 ，看起来好像有点用，折腾安装一下试试先。 Tp2MD插件迁移文章 远程登录服务器，把本地下号的zip传到服务器上并解压。 cd到插件目录 /usr/share/nginx/html/usr/plugins 解压压缩包 unzip Typecho-Plugin-Tp2MD-master.zip 重命名为插件的自述文件要求的名称 mv T…",
+  "content": "<h1>前言</h1>\n<p>折腾来折腾去，最后发现归宿还是静态博客，安全性高、性能开销小，用Github直接省去服务器费用还差不多永生。每年把域名钱交了就得了，图片的问题再想想办法，总能解决的。\n<del>突然有一种为了躲避战乱带着一家人四处奔波的悲凉感</del></p>\n<h1>分析</h1>\n<p>博客网站的内容，都可以拆分为以下几个点：</p>\n<ul>\n<li>文章</li>\n<li>评论</li>\n<li>文章插图</li>\n<li>网站贴图资源</li>\n</ul>\n<p>先从最主要的文章开始，想想有没有什么可以用的。\ngitee上有一个<a href=\"https://gitcode.com/gh_mirrors/ty/Typecho-Plugin-Tp2MD\" target=\"_blank\" rel=\"noopener noreferrer\">插件</a>，看起来好像有点用，折腾安装一下试试先。</p>\n<h1>Tp2MD插件迁移文章</h1>\n<p>远程登录服务器，把本地下号的zip传到服务器上并解压。\ncd到插件目录\n<code>/usr/share/nginx/html/usr/plugins</code></p>\n<p>解压压缩包\n<code>unzip Typecho-Plugin-Tp2MD-master.zip</code></p>\n<p>重命名为插件的自述文件要求的名称\n<code>mv Typecho-Plugin-Tp2MD-master Tp2MD</code></p>\n<p>登录网站后台，启用插件。点击插件的设置，保存后按照教程访问。\n这里提示<code>不能写入文件，请检查 cache 文件夹权限！</code>，我们在插件目录设置一下权限\n<code>sudo chmod -R 777 cache</code>a\n注意是这个插件目录下的cache！！</p>\n<p>提示导出成功，cd到这个目录，把文件压缩下载下来查看\n可能是因为我有的文章点了多篇分类，导出文件夹有点问题，无所谓，后期再调，拿到了就行。至此，文章部分搞定！</p>\n<h1>评论</h1>\n<p>评论这里，我折腾了两天，尝试尽了各种方案（Disqus Valine Waline Utterances Twikoo Atalk），最后还是选择了Giscus。我也知道这样读者没有github就没办法发评论，但是其他几种方案都会出现各种奇奇怪怪且无法解决的问题比如Cloudflare拦截、CORS出毛病、服务器被墙以及莫名其妙404、403。我真的尽力了。</p>\n<h1>文章插图</h1>\n<h2>转移图片文件</h2>\n<p>进入<code>/usr/uploads/</code>，压缩下载图片</p>\n<p>重组Hexo图片目录：复制所有图片到Hexo的<code>source/images/</code>目录。</p>\n<p>手动替换图片路径 ，注意，静态资源解析默认以source为根目录，所以直接写以source为根目录的绝对路径就行。</p>\n<h1>部署到vercel加速访问</h1>\n<ol>\n<li>注册vercel账号</li>\n<li>创建项目，关联仓库</li>\n<li>域名解析</li>\n</ol>\n<p>2025.3.3，博客全部迁移完毕，粗略累计用时六天，一直没什么时间搞，耗时最长的还是在评论系统上的试错。</p>",
+  "image": null,
+  "publishedAt": "2025-03-03T07:40:00Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/4/"
+}

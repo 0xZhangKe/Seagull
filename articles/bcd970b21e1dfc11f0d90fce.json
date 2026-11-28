@@ -1,0 +1,11 @@
+{
+  "id": "bcd970b21e1dfc11f0d90fce",
+  "title": "这可能是最好的Hexo图片管理方案",
+  "summary": "前言 通常在Hexo博客中，我们管理图片资源都有以下两种方案： 在 _post 目录下新建文章同名文件夹 在 source 目录下新建images文件夹，存放所有图片 两种方法各有优劣，前者方便查找但污染目录，后者集中管理但维护成本高。所以就诞生出本文要介绍的方法—— images 目录下新建文章同名目录 这是一个折中的办法，既保留方法1的查找方便，又保留方法2的集中性。 实现方法 创建脚本文件 在Hexo根目录的 scripts 文件夹（若不存在则新建）下创建一个javascript脚本，我这里就命名为 auto-image-folder.js const fs = require(\"fs\") const path = require(\"path\") hexo.on(\"new\", function(data…",
+  "content": "<h2>前言</h2>\n<p>通常在Hexo博客中，我们管理图片资源都有以下两种方案：</p>\n<ol>\n<li>在<code>_post</code>目录下新建文章同名文件夹</li>\n<li>在<code>source</code>目录下新建images文件夹，存放所有图片</li>\n</ol>\n<p>两种方法各有优劣，前者方便查找但污染目录，后者集中管理但维护成本高。所以就诞生出本文要介绍的方法——<code>images</code>目录下新建文章同名目录</p>\n<p>这是一个折中的办法，既保留方法1的查找方便，又保留方法2的集中性。</p>\n<h2>实现方法</h2>\n<p><strong>创建脚本文件</strong></p>\n<p>在Hexo根目录的<code>scripts</code>文件夹（若不存在则新建）下创建一个javascript脚本，我这里就命名为<code>auto-image-folder.js</code></p>\n<pre><code>const fs = require(&quot;fs&quot;)\nconst path = require(&quot;path&quot;)\n\nhexo.on(&quot;new&quot;, function(data) {\n const postName = path.basename(data.path, &quot;.md&quot;)\n const imageDir = path.join(hexo.source_dir, &quot;images&quot;, postName)\n\n if(!fs.existsSync(imageDir)){\n fs.mkdirSync(imageDir, {recusive: true})\n }\n})\n</code></pre>\n<p><strong>效果测试</strong></p>\n<pre><code>hexo new &quot;新文章&quot;\n</code></pre>\n<p>这时候就在images目录下新建了一个与文章同名的文件夹。</p>\n<h2>编辑器设置优化</h2>\n<h3>Typora</h3>\n<p>打开Typora → 偏好设置 → 图像</p>\n<p>设置：</p>\n<ul>\n<li>\n<p>插入图片时：复制到指定路径</p>\n</li>\n<li>\n<p>自定义路径：../source/images/${filename}/</p>\n</li>\n<li>\n<p>勾选：优先使用相对路径</p>\n</li>\n</ul>\n<pre><code>PS E:\\blog&gt; ls .\\source\\images\\测试\\\n\n\n 目录: E:\\blog\\source\\images\\测试\n\n\nMode LastWriteTime Length Name\n---- ------------- ------ ----\n-a---- 2025/6/29 11:14 229 image-20250629111411456.png\n</code></pre>\n<p>完成！</p>",
+  "image": null,
+  "publishedAt": "2025-06-29T10:52:05Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84hexo%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/"
+}

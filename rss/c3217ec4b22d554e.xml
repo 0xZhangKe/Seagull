@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://commonsware.com/blog/atom.xml" rel="self" type="application/atom+xml" /><link href="https://commonsware.com/" rel="alternate" type="text/html" /><updated>2026-11-25T17:26:48-05:00</updated><id>https://commonsware.com/blog/atom.xml</id><title type="html">CommonsWare</title><subtitle>CommonsWare is your home for Android app development support, offering books, training, consulting, and other resources.</subtitle><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><entry><title type="html">25 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/25/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="25 November 2026 Artifact Wave" /><published>2026-11-25T16:32:21-05:00</published><updated>2026-11-25T16:32:21-05:00</updated><id>https://commonsware.com/blog/2026/11/25/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/25/jetpack-artifact-wave.html"><![CDATA[<p>The clogged drain holding up the Compose <code class="language-plaintext highlighter-rouge">1.13.0</code> stable release was cleared late last week, so those artifacts showed up in today’s scan.</p>
+
+<p>In addition, <code class="language-plaintext highlighter-rouge">statestore-datastore</code> is now multiplatform:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-desktop</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-iosarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-iossimulatorarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-js</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-linuxarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-linuxx64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-macosarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-tvosarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-tvossimulatorarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-wasm-js</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-watchosarm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-watchosdevicearm64</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore-watchossimulatorarm64</code></li>
+</ul>
+
+<p>Plus, we got some new Remote Compose artifacts and something for Nav3 that seems truly dynamic:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.compose.remote:remote-creation-compose-android</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.compose.remote:remote-creation-compose-jvm</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.compose.remote:remote-generator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.navigation3:navigation3-dynamic-features</code></li>
+</ul>
+
+<p>Overall, we got <a href="/androidx/2026-11-25">around 900 artifact updates</a>.</p>
+
+<p>If you are in the United States, I hope that you have a Merry Thanksgiving! If you reside elsewhere, I hope you have a great day too!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">18 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/18/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="18 November 2026 Artifact Wave" /><published>2026-11-18T18:01:08-05:00</published><updated>2026-11-18T18:01:08-05:00</updated><id>https://commonsware.com/blog/2026/11/18/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/18/jetpack-artifact-wave.html"><![CDATA[<p>Well, this is awkward.</p>
+
+<p>Google <a href="https://developer.android.com/blog/posts/jetpack-compose-november-2026-release">announced</a> earlier today that the <code class="language-plaintext highlighter-rouge">2026.11.01</code> BOM was available and it has the stable <code class="language-plaintext highlighter-rouge">1.13.0</code> edition of Jetpack Compose. However, several hours later, none of that has been published on <code class="language-plaintext highlighter-rouge">maven.google.com</code>. See, for example, <a href="https://maven.google.com/web/index.html#androidx.compose:compose-bom">the stable BOM versions</a> and the <a href="https://maven.google.com/web/index.html#androidx.compose.foundation:foundation">Compose Foundation versions</a>. As I write this, the latest Compose Foundation is <code class="language-plaintext highlighter-rouge">1.13.0-rc01</code> and the latest stable BOM is <code class="language-plaintext highlighter-rouge">2026.09.00</code>.</p>
+
+<p>Presumably, that will be fixed in the coming days.</p>
+
+<p>However, we did get <a href="/androidx/2026-11-18">a bit over 300 artifact updates</a>, including a stable <code class="language-plaintext highlighter-rouge">1.7.0</code> of Jetpack Camera.</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">11 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="11 November 2026 Artifact Wave" /><published>2026-11-11T18:45:35-05:00</published><updated>2026-11-11T18:45:35-05:00</updated><id>https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/11/jetpack-artifact-wave.html"><![CDATA[<p>Media3 is up to <code class="language-plaintext highlighter-rouge">1.12.0-beta01</code>, and Test has a bunch of new alphas:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-alpha:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-beta:2026.11.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-cast:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common-ktx:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-container:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-database:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-cronet:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-ktor:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-okhttp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-rtmp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-decoder:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-lottie:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-play-services:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-dash:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-hls:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-ima:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-midi:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-rtsp:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-smoothstreaming:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-workmanager:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-extractor:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector-frame:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-muxer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-session:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils-robolectric:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-transformer:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose-material3:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-leanback:1.12.0-beta01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:core:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:core-ktx:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:monitor:1.9.0-alpha05</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:orchestrator:1.7.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:rules:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test:runner:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-accessibility:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-contrib:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-core:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-device:1.2.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-idling-resource:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-intents:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-remote:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso:espresso-web:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso.idling:idling-concurrent:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.espresso.idling:idling-net:3.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:junit:1.4.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:junit-ktx:1.4.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.ext:truth:1.8.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.services:storage:1.7.0-alpha04</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.services:test-services:1.7.0-alpha04</code></li>
+</ul>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">4 November 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="4 November 2026 Artifact Wave" /><published>2026-11-04T17:51:19-05:00</published><updated>2026-11-04T17:51:19-05:00</updated><id>https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/11/04/jetpack-artifact-wave.html"><![CDATA[<p>This time, we got one new artifact group, <code class="language-plaintext highlighter-rouge">androidx.web</code>, containing a single artifact, <code class="language-plaintext highlighter-rouge">androidx.web:web</code>. This does not appear in the documentation, but <a href="https://maven.google.com/web/index.html#androidx.web:web:1.0.0-alpha01">the artifact description is</a>:</p>
+
+<blockquote>
+  <p>Web is a collection of modern APIs that can be used with android.webkit and androidx.webkit.</p>
+</blockquote>
+
+<p>Overall, we got <a href="/androidx/2026-11-04">just shy of 400 artifact updates</a>.</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">28 October 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/10/28/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="28 October 2026 Artifact Wave" /><published>2026-10-28T18:11:23-04:00</published><updated>2026-10-28T18:11:23-04:00</updated><id>https://commonsware.com/blog/2026/10/28/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/10/28/jetpack-artifact-wave.html"><![CDATA[<p>We got two new artifact groups this time around.</p>
+
+<p><code class="language-plaintext highlighter-rouge">androidx.appstate.statestore</code> contains a <code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore</code> artifact (with multiplatform support) and a <code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore</code> artifact (Android-only). According to <a href="https://developer.android.com/jetpack/androidx/releases/appstate-statestore#1.0.0-alpha01">the limited description</a>:</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">AppState StateStore</code> is a new library built on the Compose runtime that acts as a wrapper to provide custom integrations. The <code class="language-plaintext highlighter-rouge">androidx.appstate.statestore</code> artifact provides the library APIs and it also comes with a <code class="language-plaintext highlighter-rouge">androidx.appstate.statestore:statestore-datastore</code> artifact for state persistence. Developers can use <code class="language-plaintext highlighter-rouge">StateStore</code> to hoist their snapshot state into their application layer and the datastore integration to persist that state.</p>
+</blockquote>
+
+<p>Similarly, <code class="language-plaintext highlighter-rouge">androidx.appstate.transform</code> conains a <code class="language-plaintext highlighter-rouge">androidx.appstate.transform:transform</code> artifact and a <code class="language-plaintext highlighter-rouge">androidx.appstate.transform:transform-testing</code> artifact, each with multiplatform support. This is <a href="https://developer.android.com/jetpack/androidx/releases/appstate-transform#1.0.0-alpha01">described as</a>:</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">AppState Transform</code> is a new library built on the Compose runtime that allows for running a composition outside of your UI. The <code class="language-plaintext highlighter-rouge">androidx.appstate.transform:transform</code> artifact provides the library APIs and it also comes with a <code class="language-plaintext highlighter-rouge">androidx.appstate.transform:transform-testing</code> artifact for testing. Developers can use Transform to manage their composition anywhere within their app.</p>
+</blockquote>
+
+<p>Also, <code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-play-services</code> is a new artifact.</p>
+
+<p>Here are <a href="/androidx/2026-10-28">the overall artifact updates</a>.</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">21 October 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/10/21/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="21 October 2026 Artifact Wave" /><published>2026-10-21T19:43:09-04:00</published><updated>2026-10-21T19:43:09-04:00</updated><id>https://commonsware.com/blog/2026/10/21/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/10/21/jetpack-artifact-wave.html"><![CDATA[<p>We got a few new artifacts this time around:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.compose.remote:remote-creation-expression</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.photopicker:photopicker-activity</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.photopicker:photopicker-embedded</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.photopicker:photopicker-embedded-compose</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.photopicker:photopicker-embedded-testing</code></li>
+</ul>
+
+<p>Those are part of the <a href="/androidx/2026-10-21">800+ artifact updates</a> this time around!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">14 October 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/10/14/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="14 October 2026 Artifact Wave" /><published>2026-10-14T18:23:01-04:00</published><updated>2026-10-14T18:23:01-04:00</updated><id>https://commonsware.com/blog/2026/10/14/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/10/14/jetpack-artifact-wave.html"><![CDATA[<p>We have a new artifact group, <code class="language-plaintext highlighter-rouge">androidx.annotation.keep</code>, containing some plugins and multiplatform libraries:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:androidx.annotation.keep.gradle.plugin:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-android:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-gradle-plugin:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-iosarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-iossimulatorarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-jvm:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-linuxarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-linuxx64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-macosarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-mingwx64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-tvosarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-tvossimulatorarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-watchosarm32:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-watchosarm64:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.annotation.keep:keep-watchosdevicearm64:1.0.0-alpha01</code></li>
+</ul>
+
+<p>We also got <a href="/androidx/2026-10-14">over 150 other artifact updates</a>, including a DataStore RC and patch releases for Paging and Tracing.</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">7 October 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/10/07/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="7 October 2026 Artifact Wave" /><published>2026-10-07T16:23:18-04:00</published><updated>2026-10-07T16:23:18-04:00</updated><id>https://commonsware.com/blog/2026/10/07/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/10/07/jetpack-artifact-wave.html"><![CDATA[<p>No new-to-us artifacts or artifact groups this wave. But, we did get <a href="/androidx/2026-10-07">over 400 new artifact versions</a>, including the first beta of Compose <code class="language-plaintext highlighter-rouge">1.13</code> and a stable <code class="language-plaintext highlighter-rouge">navigationevent</code> release!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">23 September 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/09/23/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="23 September 2026 Artifact Wave" /><published>2026-09-23T16:01:08-04:00</published><updated>2026-09-23T16:01:08-04:00</updated><id>https://commonsware.com/blog/2026/09/23/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/09/23/jetpack-artifact-wave.html"><![CDATA[<p>We have a two new artifact groups, <code class="language-plaintext highlighter-rouge">androidx.a2ui</code> and <code class="language-plaintext highlighter-rouge">androidx.a2ui.compose</code>, which contain Google’s first official implementation of <a href="https://a2ui.org/">A2UI</a> for Compose. There are a handful of artifacts in those groups:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.a2ui:a2ui-engine:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.a2ui:a2ui-model:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.a2ui.compose:compose-runtime:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.a2ui.compose:compose-ui:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.a2ui.compose:compose-ui-testing:1.0.0-alpha01</code></li>
+</ul>
+
+<p>Also, <code class="language-plaintext highlighter-rouge">androidx.compose.material3:material3-a2ui</code> is a new artifact, also presumably tied to A2UI.</p>
+
+<p>(FWIW, I wrote a bit about A2UI for Compose over on <a href="https://pac.commonsware.com/archive/and-now-a2ui/">my Pedal Assist Coding newsletter</a>)</p>
+
+<p>There is also a new <code class="language-plaintext highlighter-rouge">androidx.test.backup</code> group with two artifacts:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.backup:backup:1.0.0-alpha01</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.test.backup:backup-host:1.0.0-alpha01</code></li>
+</ul>
+
+<p>Soon, there should be a <code class="language-plaintext highlighter-rouge">androidx.transition:transition-ktx:1.7.2</code> artifact release. That release seems to have been incomplete, as the POM file is missing.</p>
+
+<p>In addition, we got <a href="/androidx/2026-09-23">over 500 new artifact versions</a> this wave!</p>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry><entry><title type="html">16 September 2026 Artifact Wave</title><link href="https://commonsware.com/blog/2026/09/16/jetpack-artifact-wave.html" rel="alternate" type="text/html" title="16 September 2026 Artifact Wave" /><published>2026-09-16T15:33:36-04:00</published><updated>2026-09-16T15:33:36-04:00</updated><id>https://commonsware.com/blog/2026/09/16/jetpack-artifact-wave</id><content type="html" xml:base="https://commonsware.com/blog/2026/09/16/jetpack-artifact-wave.html"><![CDATA[<p>Media3 is up to <code class="language-plaintext highlighter-rouge">1.11.1</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog:2026.09.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-alpha:2026.09.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.gradle:gradle-version-catalog-beta:2026.09.00</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-cast:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-common-ktx:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-container:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-database:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-cronet:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-ktor:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-okhttp:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-datasource-rtmp:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-decoder:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-effect-lottie:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-dash:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-hls:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-ima:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-midi:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-rtsp:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-smoothstreaming:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-exoplayer-workmanager:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-extractor:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-inspector-frame:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-muxer:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-session:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-test-utils-robolectric:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-transformer:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-compose-material3:1.11.1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">androidx.media3:media3-ui-leanback:1.11.1</code></li>
+</ul>]]></content><author><name>CommonsWare</name><uri>https://commonsware.com</uri></author><category term="blog" /><category term="sdk" /><summary type="html"><![CDATA[Here is what we got as new Jetpack artifacts this week!]]></summary></entry></feed>

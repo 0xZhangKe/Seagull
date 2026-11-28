@@ -1,0 +1,11 @@
+{
+  "id": "0f24e967ae2a4015efcb53b1",
+  "title": "记录配置SSL证书",
+  "summary": "首先你要有一个SSL证书，建议在阿里云购买或者 免费申请 ，具体过程阿里云这个页面讲的很详细，在此不过多赘述。 配置证书 由于我的nginx安装了ssl模块，直接进入配置证书。 解压下载好的证书，然后上传到服务器。位置自己方便找到即可 我放到了root/card 配置nginx.conf 进入nginx.conf，我的文件位置在 /etc/nginx/nginx.conf ,有些可能在 /usr/local/nginx/conf 编辑模式，启动！ http { include mime.types; # 包含 MIME 类型定义 default_type application/octet-stream; sendfile on; keepalive_timeout 65; # HTTPS server bl…",
+  "content": "<p>首先你要有一个SSL证书，建议在阿里云购买或者<a href=\"https://developer.aliyun.com/article/1595201\" target=\"_blank\" rel=\"noopener noreferrer\">免费申请</a>，具体过程阿里云这个页面讲的很详细，在此不过多赘述。</p>\n<h1>配置证书</h1>\n<p>由于我的nginx安装了ssl模块，直接进入配置证书。</p>\n<p>解压下载好的证书，然后上传到服务器。位置自己方便找到即可\n我放到了root/card</p>\n<h1>配置nginx.conf</h1>\n<p>进入nginx.conf，我的文件位置在<code>/etc/nginx/nginx.conf</code>,有些可能在<code>/usr/local/nginx/conf</code>\n编辑模式，启动！</p>\n<pre><code>\n \n\nhttp {\n\n    include       mime.types;  # 包含 MIME 类型定义\n\n    default_type  application/octet-stream;\n\n    sendfile        on;\n\n    keepalive_timeout  65;\n\n \n\n    # HTTPS server block\n\n    server {\n\n        # 监听443端口（HTTPS）\n\n        listen 443 ssl;\n\n \n\n        # 【请修改】您的域名\n\n        server_name xxx;\n\n \n\n        # 启用 SSL (注意: &quot;ssl on;&quot; 已被弃用，直接使用 &quot;listen ... ssl;&quot;)\n\n        ssl on;\n\n \n\n        # 【请修改】SSL 证书的 PEM 文件路径\n\n        ssl_certificate  /root/card/www.xxxx.pem;\n\n \n\n        # 【请修改】SSL 证书的 KEY 文件路径\n\n        ssl_certificate_key /root/card/www.xxxx.key;\n\n \n\n        location / {\n\n            # 【请修改】代理转发的目标地址和端口（例如公网IP和项目端口号）\n\n            proxy_pass  http://公网地址:项目端口号;\n\n        }\n\n    }\n\n \n\n    # HTTP server block for redirecting to HTTPS\n\n    server {\n\n        # 监听80端口（HTTP）\n\n        listen 80;\n\n \n\n        # 【请修改】您的域名\n\n        server_name huiblog.top;\n\n \n\n        # 将所有 HTTP 请求永久重定向到 HTTPS\n\n        rewrite ^(.*)$ https://$host$1 permanent;\n\n    }\n\n}\n\n</code></pre>\n<h1>重新加载Nginx</h1>\n<p><code>sudo systemctl reload nginx</code></p>",
+  "image": null,
+  "publishedAt": "2024-12-17T11:46:07Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/163/"
+}

@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HackerNews每日摘要 on SuperTechFans</title>
+    <link>https://supertechfans.com/cn/</link>
+    <description>Recent content in HackerNews每日摘要 on SuperTechFans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Sat, 28 Nov 2026 08:25:17 +0800</lastBuildDate><atom:link href="https://supertechfans.com/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026-11-28 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-28-HackerNews/</link>
+      <pubDate>Sat, 28 Nov 2026 08:25:17 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-28-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-28-hacker-news-top-stories&#34;&gt;
+  2026-11-28 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-28-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Jan-Lukas Else 用 AI 编程代理打理 Git 里的家用服务器配置，家用服务器跑 NixOS，VPS 跑 Debian bootc，并把 Renovate 和 Actions 接起来自动更新；他仍把审查和运维责任留给自己。&lt;/li&gt;
+&lt;li&gt;Construct22 分享了一个让 ChatGPT 模仿 WhatsApp 群聊的提示词；示例里几个 AI 角色吐槽用户为了记录一次散步而做了一套数据平台，整段对话都是虚构的。&lt;/li&gt;
+&lt;li&gt;@RealAstropulse 公布两组游戏素材训练样图，把 Claude 参与的约 2.4 万步与 Gemini Neon 参与的约 4,000 步作对比；仅凭这些样图不能证明所谓“故意破坏”。&lt;/li&gt;
+&lt;li&gt;Liam Galvin 把 Slack 自定义表情数除以用户数的平方根，再看上传者占比，用一套故意不严肃的指标讽刺企业如何量化文化。&lt;/li&gt;
+&lt;li&gt;Alex Kretzschmar 拿购买收据与黑五挂牌价对照：Best Buy 同款 WD EasyStore 20 TB 从 249.99 美元涨到 549.99 美元，约为两年前的 2.2 倍。&lt;/li&gt;
+&lt;li&gt;George Anton 的扩展在 YouTube 播放广告时保存视频时间点、刷新并尝试恢复，另有本地广告日志；直播进度无法按同样方式恢复，效果也依赖网站行为。&lt;/li&gt;
+&lt;li&gt;《Works in Progress》用一组作品照片追溯 Kamil Khan Mumtaz 的转向：他从伦敦学来的现代主义出发，后来与巴基斯坦工匠一起重新实践砖拱、穹顶和石雕等技艺。&lt;/li&gt;
+&lt;li&gt;devnull.land 使用 AMD R9700 外接显卡测试 llama-cpp-rdna-boosts：Qwen3.8 27B 的预填充约从 700 升到 1,300 tokens/s，生成速度从 35 升到 55 tokens/s。&lt;/li&gt;
+&lt;li&gt;InfoHawk 报告 Lascana、Samsonite、American Tourister、Revolve 和 FWRD 的结账环境发现窃卡脚本，五站已移除；只在 Lascana 验证测试卡资料被外传，实际影响人数未知。&lt;/li&gt;
+&lt;li&gt;英国 Buy Nothing Day 把 11 月 27 日黑五设为 24 小时停购日，借此提倡日常少买、重复使用，减少一次性包装和快时尚消费。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-ai-让-jan-lukas-else-重新享受自托管-ai-made-self-hosting-fun-again&#34;&gt;
+  1. AI 让 Jan-Lukas Else 重新享受自托管 (AI made self-hosting fun again)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-ai-%e8%ae%a9-jan-lukas-else-%e9%87%8d%e6%96%b0%e4%ba%ab%e5%8f%97%e8%87%aa%e6%89%98%e7%ae%a1-ai-made-self-hosting-fun-again&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://janlukas.blog/posts/ai-self-hosting&#34;&gt;https://janlukas.blog/posts/ai-self-hosting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jan-Lukas Else 自托管多年，后来嫌查文档和排查配置费时，逐渐只维持手头的服务。把 Docker Compose、脚本和系统配置放在 Git 里，让他可以像修改普通软件项目一样使用编程代理。现在家用服务器更多使用 NixOS，VPS 则跑由 Git 自动构建的 Debian bootc 镜像；他实际花了半天完成初次设置，没用 AI 得花一周只是他的估计。
+Renovate 提交依赖升级，GitHub Actions 或 Forgejo Actions 在合并后构建并部署，他还为下载账单、电子报和 Linux ISO 写了几个 Go 小工具。作者强调，这些流程本来就能做，AI 帮他克服的是组合工具的前期成本；每个新增服务还是可能有漏洞和维护负担，生成的变更也需要自己看懂。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1096-points--评论-502-comments--投稿者jlelse--发布时间2026-11-27-054745-0800&#34;&gt;
+  HN 热度 1096 points | 评论 502 comments | 投稿者：jlelse | 发布时间：2026-11-27 05:47:45 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1096-points--%e8%af%84%e8%ae%ba-502-comments--%e6%8a%95%e7%a8%bf%e8%80%85jlelse--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-054745-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50660180&#34;&gt;https://news.ycombinator.com/item?id=50660180&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者觉得 AI 反而让自托管更难，自己现在要面对持续不断的爬虫流量。&lt;/li&gt;
+&lt;li&gt;一位读者因曾遇到容器被入侵，把个人服务放在 WireGuard 后面，避免直接暴露。&lt;/li&gt;
+&lt;li&gt;有人指出搭建更容易了，跟进系统更新和及时修补重大漏洞仍然费力。&lt;/li&gt;
+&lt;li&gt;有读者把亲手学习和完成系统当成自托管的主要乐趣，交给代理会削弱这一部分。&lt;/li&gt;
+&lt;li&gt;另一位用 Nix 和旧游戏主机做家用服务器的读者说，少折腾 Docker 配置后，反而有更多时间使用搭好的服务。&lt;/li&gt;
+&lt;li&gt;一位长期自托管用户有时回头发现，与 AI 往返排查一晚上，还不如直接看手册。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-让聊天助手虚构一个背后吐槽你的-ai-群聊-group-chat-where-your-ai-talks-behind-your-back&#34;&gt;
+  2. 让聊天助手虚构一个“背后吐槽你”的 AI 群聊 (Group chat where your AI talks behind your back)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e8%ae%a9%e8%81%8a%e5%a4%a9%e5%8a%a9%e6%89%8b%e8%99%9a%e6%9e%84%e4%b8%80%e4%b8%aa%e8%83%8c%e5%90%8e%e5%90%90%e6%a7%bd%e4%bd%a0%e7%9a%84-ai-%e7%be%a4%e8%81%8a-group-chat-where-your-ai-talks-behind-your-back&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://construct22.com/&#34;&gt;https://construct22.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Construct22 的页面介绍了一个角色扮演实验：让聊天助手用它已经知道的信息编一段 WhatsApp 群聊，由 ChatGPT、Claude、Gemini 等角色说出对同一用户的印象。作者建议在有聊天历史的助手上试，内容需要该助手能够访问相关上下文；这并不会连接 WhatsApp，也没有其他模型在背后互相发消息。
+页面经允许展示了一份真实生成的输出，由土耳其语翻译并替换了名字和可识别细节。里面的“群友”说，用户为了走半小时，先设计了 Apple Watch 应用、数据集成和分析平台，最后还没出门。作者拿它当玩笑和自我观察，页面没有验证模型的判断是否准确。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-682-points--评论-282-comments--投稿者utiiid--发布时间2026-11-27-144434-0800&#34;&gt;
+  HN 热度 682 points | 评论 282 comments | 投稿者：utiiiD | 发布时间：2026-11-27 14:44:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-682-points--%e8%af%84%e8%ae%ba-282-comments--%e6%8a%95%e7%a8%bf%e8%80%85utiiid--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-144434-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50663595&#34;&gt;https://news.ycombinator.com/item?id=50663595&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位试用者的群聊拿他反复调整 i3 窗口管理器开玩笑，说他的布局规则比建筑规范还多。&lt;/li&gt;
+&lt;li&gt;有读者把这当成一次盘点，借生成结果意识到自己向助手分享过哪些东西。&lt;/li&gt;
+&lt;li&gt;一位用 Claude Opus 的读者发现，虚构群聊还把他在本地硬件上运行的 Qwen 写了进去。&lt;/li&gt;
+&lt;li&gt;有人试用 Gemini，只得到没有人在 WhatsApp 背后议论他的直白答复。&lt;/li&gt;
+&lt;li&gt;一位读者说，输出提到他的外卖修改经历，让他想起自己曾允许 Gemini 读取邮件，并对此感到不舒服。&lt;/li&gt;
+&lt;li&gt;有人对比不同助手的语气：Claude 的吐槽让他发笑，Copilot 编出的对话却几乎全是恭维。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-astropulse-用图像训练样例质疑-claude单次对照无法判定原因-claude-sabotaging-ml-research-tasks&#34;&gt;
+  3. Astropulse 用图像训练样例质疑 Claude，单次对照无法判定原因 (Claude sabotaging ML research tasks?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-astropulse-%e7%94%a8%e5%9b%be%e5%83%8f%e8%ae%ad%e7%bb%83%e6%a0%b7%e4%be%8b%e8%b4%a8%e7%96%91-claude%e5%8d%95%e6%ac%a1%e5%af%b9%e7%85%a7%e6%97%a0%e6%b3%95%e5%88%a4%e5%ae%9a%e5%8e%9f%e5%9b%a0-claude-sabotaging-ml-research-tasks&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://twitter.com/RealAstropulse/status/2126119408997466389&#34;&gt;https://twitter.com/RealAstropulse/status/2126119408997466389&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原 X 链接未能直读；公开副本中的主帖文字、账号、帖子 ID 和两张配图已核对，作者提到的后续串文未完整取得。Astropulse 说，自己原本怀疑 Claude 会破坏机器学习研究的说法，于是在自己的项目上试验。他把左图标为 Claude 参与的训练约 2.4 万步，右图标为 Gemini Neon 参与的训练约 4,000 步，展示骑士、药瓶、史莱姆和宝箱等游戏素材的生成样例。
+主帖没有交代两组的完整训练配置、随机种子、客观质量指标或重复次数。图像外观不同、使用的训练步数也不同，但这些信息无法分辨差异来自配置、模型能力、助手给出的建议，还是产品限制；更不能证明有意干预。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-566-points--评论-280-comments--投稿者baobabkoodaa--发布时间2026-11-27-162808-0800&#34;&gt;
+  HN 热度 566 points | 评论 280 comments | 投稿者：baobabKoodaa | 发布时间：2026-11-27 16:28:08 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-566-points--%e8%af%84%e8%ae%ba-280-comments--%e6%8a%95%e7%a8%bf%e8%80%85baobabkoodaa--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-162808-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50664325&#34;&gt;https://news.ycombinator.com/item?id=50664325&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人称自己也试过让 Claude 和 Gemini 协助 Qwen 写作微调，并报告后者在自己那次任务中更快给出有效修改。&lt;/li&gt;
+&lt;li&gt;一位做三维重建的读者说，自己用 Claude 和 Codex 探索缺乏成熟文档的方向时，两者都会犯明显错误。&lt;/li&gt;
+&lt;li&gt;有读者强调，个人经历无法区分模型故意干预与模型单纯不擅长新颖任务。&lt;/li&gt;
+&lt;li&gt;有人引用 Claude Fable 5 与 Mythos 5 系统卡里对前沿大模型研发帮助的限制，作为讨论背景。&lt;/li&gt;
+&lt;li&gt;一位读者用“外部大脑背叛自己”的玩笑表达对代理是否可信的担忧。&lt;/li&gt;
+&lt;li&gt;有读者追问试验究竟用的是 Claude 哪个版本，这关系到系统卡里的限制是否能作为解释。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-liam-galvin-戏算公司文化slack-表情数除以人数的平方根-company-culture--slack-emoji--headcount&#34;&gt;
+  4. Liam Galvin 戏算公司文化：Slack 表情数除以人数的平方根 (Company Culture = Slack Emoji ÷ √Headcount)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-liam-galvin-%e6%88%8f%e7%ae%97%e5%85%ac%e5%8f%b8%e6%96%87%e5%8c%96slack-%e8%a1%a8%e6%83%85%e6%95%b0%e9%99%a4%e4%bb%a5%e4%ba%ba%e6%95%b0%e7%9a%84%e5%b9%b3%e6%96%b9%e6%a0%b9-company-culture--slack-emoji--headcount&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://lia.mg/posts/measuring-company-culture-with-slack-emoji/&#34;&gt;https://lia.mg/posts/measuring-company-culture-with-slack-emoji/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liam Galvin 开玩笑说，与其靠团建、问卷和标语衡量文化，不如数一数 Slack 自定义表情。分母用人数的平方根，是因为一个团队可以长期复用同一张梗图，表情数没有理由和人数同比增长。他给系数划了 5、20、50 三道分界，还用上传过表情的用户比例补充判断，避免一个热心同事包办全公司的表情。
+文章故意把指标的荒谬推到极端：经理可以批量上传公司标志刷分，裁员缩小分母，也能让文化得分升高。这些阈值和例子是对指标管理的讽刺，作者只说符合自己的轶闻经验，没有做跨公司的实证验证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-553-points--评论-287-comments--投稿者liamg--发布时间2026-11-27-044949-0800&#34;&gt;
+  HN 热度 553 points | 评论 287 comments | 投稿者：liamg | 发布时间：2026-11-27 04:49:49 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-553-points--%e8%af%84%e8%ae%ba-287-comments--%e6%8a%95%e7%a8%bf%e8%80%85liamg--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-044949-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50659640&#34;&gt;https://news.ycombinator.com/item?id=50659640&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者把表情看作压缩团队语境的简写，进而好奇代理之间没有这种约定会损失什么。&lt;/li&gt;
+&lt;li&gt;一位读者回忆前公司有二十多种鹦鹉表情，自己则用 gRPC 标志代替一段已经讲过多次的争论。&lt;/li&gt;
+&lt;li&gt;有人认为观察同一家公司多年间怎么变，会比比较不同公司的绝对分数有趣。&lt;/li&gt;
+&lt;li&gt;有读者指出，哪怕是开玩笑的指标，一旦公开当成目标，也会有人设法刷分。&lt;/li&gt;
+&lt;li&gt;一位读者称自己的工作区有上千人和逾 5.7 万个表情，甚至把整套字母和汉字做成了表情。&lt;/li&gt;
+&lt;li&gt;有 Teams 用户补充说，他上周才在团队里加过自定义表情，是否开放由管理员设置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-alex-kretzschmar同一款-20-tb-硬盘两年从-250-美元涨到-550-美元-hard-drive-pricing-has-gotten-bad&#34;&gt;
+  5. Alex Kretzschmar：同一款 20 TB 硬盘，两年从 250 美元涨到 550 美元 (Hard Drive pricing has gotten bad)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-alex-kretzschmar%e5%90%8c%e4%b8%80%e6%ac%be-20-tb-%e7%a1%ac%e7%9b%98%e4%b8%a4%e5%b9%b4%e4%bb%8e-250-%e7%be%8e%e5%85%83%e6%b6%a8%e5%88%b0-550-%e7%be%8e%e5%85%83-hard-drive-pricing-has-gotten-bad&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/&#34;&gt;https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alex Kretzschmar 原本每逢黑五替自家服务器更换一两块盘。他翻出过去八年的订单，发现同一款 WD EasyStore 20 TB 在 2024 年 11 月是 249.99 美元，2025 年 5 月是 279.99 美元，2026 年黑五的挂牌价已达 549.99 美元，均未计税。以四块盘算，仅硬盘就从约 1,000 美元涨到约 2,200 美元，还没买机箱和其他零件。
+翻新的企业盘也不总能省钱：作者列出的 Seagate Exos X20 20 TB，从 2024 年每 TB 11.80 美元到当时有货的每 TB 29.45 美元。考虑到单盘容量变大，他在盘算减少盘位，但这需要重排 ZFS 存储池并搬数据。收据与挂牌价能说明他遇到的涨幅；作者关于行业合谋的推断没有被这些样本证实。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-550-points--评论-466-comments--投稿者zdw--发布时间2026-11-27-091349-0800&#34;&gt;
+  HN 热度 550 points | 评论 466 comments | 投稿者：zdw | 发布时间：2026-11-27 09:13:49 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-550-points--%e8%af%84%e8%ae%ba-466-comments--%e6%8a%95%e7%a8%bf%e8%80%85zdw--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-091349-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50661646&#34;&gt;https://news.ycombinator.com/item?id=50661646&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者认为机械硬盘制造需要高额资本，新进入者难以靠竞争迅速压低价格。&lt;/li&gt;
+&lt;li&gt;一位 NAS 用户说，2023 年以每块 190 美元买的 18 TB 盘用掉了部分备件，现在只能把旧的 4 TB 盘组合起来做备份。&lt;/li&gt;
+&lt;li&gt;一位在澳大利亚经营 PB 级存储业务的读者称，趁早成批购盘曾帮他应付涨价，但当前报价已影响扩容。&lt;/li&gt;
+&lt;li&gt;有人把价格压力归因于 AI 公司的集中采购，但评论只是对原因的一种解释。&lt;/li&gt;
+&lt;li&gt;另一位读者按七年使用期摊算成本，认为一次性支出难受，长期每月增加的成本没那么夸张。&lt;/li&gt;
+&lt;li&gt;有人开始考虑用磁带库存放不需要频繁读取的长期归档。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-youtube-ad-punisher遇到广告就重载页面并恢复播放-youtube-ad-punisher--auto-reloads-youtube-pages-when-an-ad-plays&#34;&gt;
+  6. YouTube Ad Punisher：遇到广告就重载页面并恢复播放 (YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-youtube-ad-punisher%e9%81%87%e5%88%b0%e5%b9%bf%e5%91%8a%e5%b0%b1%e9%87%8d%e8%bd%bd%e9%a1%b5%e9%9d%a2%e5%b9%b6%e6%81%a2%e5%a4%8d%e6%92%ad%e6%94%be-youtube-ad-punisher--auto-reloads-youtube-pages-when-an-ad-plays&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/antonpictures/youtube-punisher&#34;&gt;https://github.com/antonpictures/youtube-punisher&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;YouTube Ad Punisher 的 README 介绍了一种与过滤广告请求不同的做法：发现广告后保存当前时间点，重载页面，再让视频尽量从原位置继续。它提供可导出的广告历史，据作者说记录留在本地。项目把重载作为主要策略，连续不奏效时设有后备行为。
+作者称通常重载一两次便能恢复观看；这是项目说明中的体验，实际需要等页面重载，也会受频道、浏览器与 YouTube 的广告机制影响。项目明确提示直播无法恢复原时间点，页面结构变化也会让检测失效；Safari 方案仍被标为实验性。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-537-points--评论-654-comments--投稿者iantongeorge--发布时间2026-11-27-013647-0800&#34;&gt;
+  HN 热度 537 points | 评论 654 comments | 投稿者：iantongeorge | 发布时间：2026-11-27 01:36:47 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-537-points--%e8%af%84%e8%ae%ba-654-comments--%e6%8a%95%e7%a8%bf%e8%80%85iantongeorge--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-013647-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50657530&#34;&gt;https://news.ycombinator.com/item?id=50657530&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者知道其他浏览器和移动端方案，但仍欢迎多一种机制不同的工具。&lt;/li&gt;
+&lt;li&gt;一位 Firefox 用户说，uBlock Origin 已多年满足他的需求，另用 SponsorBlock 跳过视频内的赞助口播。&lt;/li&gt;
+&lt;li&gt;有读者觉得 YouTube 加载慢，刷新整页有时还不如等广告结束。&lt;/li&gt;
+&lt;li&gt;一位 Safari 用户说，他试过的做法常需手动刷新才能恢复播放，希望有更顺畅的体验。&lt;/li&gt;
+&lt;li&gt;有人质疑早版说明中“约每分钟一条广告”的说法，也质疑重载失败就转去第三方镜像有什么价值。&lt;/li&gt;
+&lt;li&gt;有读者并不反对所有广告，主要受不了音量突变以及切频道、拖动进度时反复被打断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-巴基斯坦建筑师-kamil-khan-mumtaz-如何把拉合尔工艺带回当代-kamil-khan-mumtaz-pakistani-architect-admired-at-home-almost-invisible-abroad&#34;&gt;
+  7. 巴基斯坦建筑师 Kamil Khan Mumtaz 如何把拉合尔工艺带回当代 (Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-%e5%b7%b4%e5%9f%ba%e6%96%af%e5%9d%a6%e5%bb%ba%e7%ad%91%e5%b8%88-kamil-khan-mumtaz-%e5%a6%82%e4%bd%95%e6%8a%8a%e6%8b%89%e5%90%88%e5%b0%94%e5%b7%a5%e8%89%ba%e5%b8%a6%e5%9b%9e%e5%bd%93%e4%bb%a3-kamil-khan-mumtaz-pakistani-architect-admired-at-home-almost-invisible-abroad&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/&#34;&gt;https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这篇摄影专题介绍了在巴基斯坦受重视、较少出现在国际建筑媒体上的 Kamil Khan Mumtaz。他 1966 年从伦敦回国执业，早期用本地砖材做现代主义建筑，但在一次工人住宅项目中，住户更喜欢夏天能睡人的平屋顶，对他设计的拱顶并不买账。他也曾为拉合尔老城写保护报告；后来一部讲波斯建筑中苏菲传统的书，促使他重新思考自己与当地建筑语言的关系。
+此后他与当地工匠重新摸索砖砌法、扁穹顶和装饰拱顶，把它们用在住宅、清真寺、学校和办公室。专题展示了卡拉奇牛津大学出版社办公楼的铜门、用石雕格栅兼顾通风和私密性的住宅，以及一所预算紧张的拉合尔社区学校。他把工艺的重拾描述为建筑师与工匠互相学习，文章没有把这一路线说成任何地方都能照搬。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-504-points--评论-129-comments--投稿者dverlaeckt80--发布时间2026-11-27-050805-0800&#34;&gt;
+  HN 热度 504 points | 评论 129 comments | 投稿者：dverlaeckt80 | 发布时间：2026-11-27 05:08:05 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-504-points--%e8%af%84%e8%ae%ba-129-comments--%e6%8a%95%e7%a8%bf%e8%80%85dverlaeckt80--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-050805-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50659841&#34;&gt;https://news.ycombinator.com/item?id=50659841&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者觉得这组作品打破了英语建筑媒体的惯常视角，也提醒他们去看西方以外的实践。&lt;/li&gt;
+&lt;li&gt;有人问，最常被忽略的是否其实是那些把建筑师图纸变成实物的工匠。&lt;/li&gt;
+&lt;li&gt;一位读者把案例理解为：才华到处都有，得到刊登和被看见的机会却分布不均。&lt;/li&gt;
+&lt;li&gt;有读者延伸推荐 Hassan Fathy 与 Nader Khalili，供想继续看类似建筑实践的人查找。&lt;/li&gt;
+&lt;li&gt;一位去过拉合尔的读者说，老城现存的莫卧儿建筑残迹很吸引人，但完整的历史规模常需要凭残存部分想象。&lt;/li&gt;
+&lt;li&gt;有读者觉得，Mumtaz 的晚期作品虽然恢复了装饰，厚重体量和对材料的直接表达仍让他联想到粗野主义。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-amd-rdna-补丁集让-llamacpp-在一台-r9700-上更快-amd-specific-fork-of-llamacpp&#34;&gt;
+  8. AMD RDNA 补丁集让 llama.cpp 在一台 R9700 上更快 (AMD-specific fork of llama.cpp)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-amd-rdna-%e8%a1%a5%e4%b8%81%e9%9b%86%e8%ae%a9-llamacpp-%e5%9c%a8%e4%b8%80%e5%8f%b0-r9700-%e4%b8%8a%e6%9b%b4%e5%bf%ab-amd-specific-fork-of-llamacpp&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://devnull.land/amd-specific-llama-cpp&#34;&gt;https://devnull.land/amd-specific-llama-cpp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者试过一些围绕特定模型和硬件开发的推理引擎，担心部分项目为了提高速度，改变混合专家模型选专家等实际行为。他更喜欢 llama-cpp-rdna-boosts 的维护方式：在固定的 llama.cpp 上游版本上应用一组 AMD RDNA 补丁，更新时再移植到较新的基线。项目 README 列出的优化涉及多词元预测、预填充、注意力和量化解码等。
+博客里的数字来自一台以 eGPU 方式连接 AMD R9700 的笔记本，模型是 Swift‑1.5‑Qwen3.8‑27B 的 Q6_K_L GGUF，并启用了多词元预测；作者用预构建 ROCm 镜像运行。这个对照只说明该组合的速度差异，没有证明其他显卡、模型或上下文尺寸能得到相同提升，也没有给出全面的输出质量对比。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-438-points--评论-105-comments--投稿者julianlam--发布时间2026-11-27-011129-0800&#34;&gt;
+  HN 热度 438 points | 评论 105 comments | 投稿者：julianlam | 发布时间：2026-11-27 01:11:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-438-points--%e8%af%84%e8%ae%ba-105-comments--%e6%8a%95%e7%a8%bf%e8%80%85julianlam--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-011129-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50657265&#34;&gt;https://news.ycombinator.com/item?id=50657265&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者想看推理质量评估，尤其关心非零温度下怎样区分随机波动与优化引入的变化。&lt;/li&gt;
+&lt;li&gt;一位 Radeon 7900 XTX 用户说，自己的 Inkling 2 Mini 定向优化也同时改善了预填充和解码。&lt;/li&gt;
+&lt;li&gt;有人追问这些改动为何不能逐项提交给上游 llama.cpp。&lt;/li&gt;
+&lt;li&gt;有读者建议在同一套测试里加入 Strata、HaloPFX 和 Hipfire，而不是只对照原版。&lt;/li&gt;
+&lt;li&gt;一位 gfx1103 用户称类似补丁给他的生成速度只带来约 3% 提升，却限制了统一内存使用，最后回到 Vulkan。&lt;/li&gt;
+&lt;li&gt;一位读者报告自己在 RPC 服务器设置上未能运行这套补丁。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-infohawk黑五前五家网店结账页发现窃取卡资料的脚本-credit-card-skimming-scripts-using-webrtc-found-on-popular-shopping-sites&#34;&gt;
+  9. InfoHawk：黑五前五家网店结账页发现窃取卡资料的脚本 (Credit card skimming scripts using WebRTC found on popular shopping sites)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-infohawk%e9%bb%91%e4%ba%94%e5%89%8d%e4%ba%94%e5%ae%b6%e7%bd%91%e5%ba%97%e7%bb%93%e8%b4%a6%e9%a1%b5%e5%8f%91%e7%8e%b0%e7%aa%83%e5%8f%96%e5%8d%a1%e8%b5%84%e6%96%99%e7%9a%84%e8%84%9a%e6%9c%ac-credit-card-skimming-scripts-using-webrtc-found-on-popular-shopping-sites&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer&#34;&gt;https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;InfoHawk 称，黑五前发现五家网店加载了窃取支付资料的脚本，涉及第三方营销组件、同意管理组件，以及零售商自己的内容分发文件。报告说脚本使用了 WebRTC；研究者在 Lascana 用测试卡观察到资料传给第三方，其余站点没有同等的实测证据。恶意代码可能在支付结果出来前就接触所填资料，因此订单被拒或取消并不能说明数据没有离开页面。
+研究者称五站的脚本已于 11 月 24 日或 25 日移除。Revolve 代表自己和 FWRD 说，问题涉及移动端和平板版本，仍在调查潜在影响。报告没有确认有多少真实客户受影响，建议零售商从支付页移除非必要第三方脚本，并把卡字段隔离在支付服务方的独立框架中。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-404-points--评论-208-comments--投稿者scanr--发布时间2026-11-27-234031-0800&#34;&gt;
+  HN 热度 404 points | 评论 208 comments | 投稿者：scanr | 发布时间：2026-11-27 23:40:31 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-404-points--%e8%af%84%e8%ae%ba-208-comments--%e6%8a%95%e7%a8%bf%e8%80%85scanr--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-234031-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50668145&#34;&gt;https://news.ycombinator.com/item?id=50668145&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者指出，这起事件再次暴露了营销像素和第三方追踪脚本的供应链风险。&lt;/li&gt;
+&lt;li&gt;有人认为调查重点应放在结账页安全监测的覆盖面，而不只是 WebRTC 这个功能本身。&lt;/li&gt;
+&lt;li&gt;一位读者建议电子商务网站收紧内容安全策略，明确哪些来源可以在支付流程里运行代码。&lt;/li&gt;
+&lt;li&gt;有人个人更信任跳转到支付服务商托管页面的做法，也猜测商家偏好内嵌表单与转化率有关。&lt;/li&gt;
+&lt;li&gt;有读者从卡号可在多处复用谈起，认为一次性卡号可减轻资料被盗后的风险。&lt;/li&gt;
+&lt;li&gt;有人追问，使用 Apple Pay 等付款方式是否能避免向商家页面提供同样的卡资料。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-英国-buy-nothing-day-倡议在黑五停购-24-小时-buy-nothing-day--friday-november-27th-2026&#34;&gt;
+  10. 英国 Buy Nothing Day 倡议在黑五停购 24 小时 (Buy Nothing Day – Friday November 27th 2026)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-%e8%8b%b1%e5%9b%bd-buy-nothing-day-%e5%80%a1%e8%ae%ae%e5%9c%a8%e9%bb%91%e4%ba%94%e5%81%9c%e8%b4%ad-24-%e5%b0%8f%e6%97%b6-buy-nothing-day--friday-november-27th-2026&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.buynothingday.co.uk/&#34;&gt;https://www.buynothingday.co.uk/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英国 Buy Nothing Day 活动页邀请人们在 2026 年 11 月 27 日暂停购物一天，可以当作个人实验，也可以视为公开表态。它把短暂停购当作反思消费习惯的入口，借一次性容器、礼品包装和快时尚说明，即使某样东西可以回收，生产和回收过程也会消耗资源。
+活动页给出的替代方案有自带可重复使用的杯瓶、挑选包装更少的礼物，以及修补、转售或捐出旧衣。网站也介绍了英国活动网站于 2000 年上线的背景，并提供宣传海报。这是一份倡议材料；页面没有评估一次 24 小时停购能减少多少全年消费或废弃物。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-335-points--评论-105-comments--投稿者f_allwein--发布时间2026-11-27-135242-0800&#34;&gt;
+  HN 热度 335 points | 评论 105 comments | 投稿者：f_allwein | 发布时间：2026-11-27 13:52:42 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-335-points--%e8%af%84%e8%ae%ba-105-comments--%e6%8a%95%e7%a8%bf%e8%80%85f_allwein--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-27-135242-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50663261&#34;&gt;https://news.ycombinator.com/item?id=50663261&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位住在德国的读者称，黑五有时适合续签电、燃气和宽带合同，不宜把所有消费一概当成冲动购买。&lt;/li&gt;
+&lt;li&gt;有读者把停购一天类比为禁食一天，认为真正决定结果的是总体习惯。&lt;/li&gt;
+&lt;li&gt;一位英国读者边跟踪 Currys 的商品价格，边感叹当地商家把外国节日做成了自己的营销节点。&lt;/li&gt;
+&lt;li&gt;一位读者记录到德国亚马逊上的目标硬盘在黑五前一天从 457.07 欧元涨到 565.26 欧元，因此更信长期价史。&lt;/li&gt;
+&lt;li&gt;有人指出，本地零售商已经把黑五拉长成一周乃至一个月，只避当天未必会改变购物时间。&lt;/li&gt;
+&lt;li&gt;一位读者支持减少消费和买耐用商品，但说对迟早要买的东西，等价格最低时下单很合理。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-27 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-27-HackerNews/</link>
+      <pubDate>Fri, 27 Nov 2026 08:17:22 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-27-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-27-hacker-news-top-stories&#34;&gt;
+  2026-11-27 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-27-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Scott Aaronson 以 OpenAI 声称证明方阵乘法指数恰为 9/4、有限傅里叶变换也有匹配下界为例，解释他为何改变对 AI 数学能力的判断；他对 P≠NP 的看法仍是预测。&lt;/li&gt;
+&lt;li&gt;1Password 称攻击者经员工的企业 GitHub 账户进入后端，复制了部分客户的姓名、邮箱和账户元数据；公司称密码库内容与解锁密钥未受影响，完整根因分析待公布。&lt;/li&gt;
+&lt;li&gt;《纽约时报》要求特约摄影师为该报执行任务时避用 Adobe Photoshop 2027（28.0.0 及后续更新），担心不易察觉的 AI 编辑行为使新闻照片带上易被误读的来源标记。&lt;/li&gt;
+&lt;li&gt;HN 用户 ericmay 发帖送上感恩节祝福，希望读者和亲友度过愉快的一天；讨论里有人致谢社区，也有人分享自己的节日习惯。&lt;/li&gt;
+&lt;li&gt;lsernau 发布 Levent Alpöge 与 Claude 证明的缩写版：同样五个定理有约 30 万行的可读版和约 7.6 万行的紧凑版，维护者说明目前只有机器检查。&lt;/li&gt;
+&lt;li&gt;OpenAI 的 Tibo Sottiaux 称，修正上线时的误折扣后，同类工作比前一周会更快用完订阅额度：GPT‑6.2 Astra 快 40%，Sol 快 25%；既往用量不追补。&lt;/li&gt;
+&lt;li&gt;Intel 与 Frere‑Jones Type 合作开发的 Intel One Mono 请低视力开发者参与各阶段反馈，提供四种字重和相配的斜体，覆盖逾 200 种使用拉丁字母的语言。&lt;/li&gt;
+&lt;li&gt;Hanno Böck 指出，发信时 Ubuntu 仍未发布他列举的 NoisyTCP 和 AMD 嵌套虚拟化 KVM 漏洞的常规内核修复；他据此质疑现有补丁回移策略。&lt;/li&gt;
+&lt;li&gt;Marcin Wichary 在 Aresluna 汇总从早期 Apple Lisa、Amiga 到现代 Android、iOS 和 GNOME 的界面指南，提供 PDF、网页镜像及整包下载。&lt;/li&gt;
+&lt;li&gt;HN 管理员 dang 解释，旧 Ask 页从全站排名前 1,500 条投稿中筛文字帖，文字帖比例下降后页面越来越短，因此改为单独给这类帖子排行。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-scott-aaronsonai-接连给出复杂性下界为什么这次尤其让人震动-holy-shit-holy-shit-holy-shit-holy-shit-the-magnitude-of-whats-now-happening&#34;&gt;
+  1. Scott Aaronson：AI 接连给出复杂性下界，为什么这次尤其让人震动 (Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-scott-aaronsonai-%e6%8e%a5%e8%bf%9e%e7%bb%99%e5%87%ba%e5%a4%8d%e6%9d%82%e6%80%a7%e4%b8%8b%e7%95%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e8%bf%99%e6%ac%a1%e5%b0%a4%e5%85%b6%e8%ae%a9%e4%ba%ba%e9%9c%87%e5%8a%a8-holy-shit-holy-shit-holy-shit-holy-shit-the-magnitude-of-whats-now-happening&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://scottaaronson.blog/?p=10379&#34;&gt;https://scottaaronson.blog/?p=10379&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scott Aaronson 从一次与同行的晚餐写起：大家还在消化 OpenAI 和 Anthropic 发布的 VP≠VNP 结果，就看到新的方阵乘法和傅里叶变换预印本。最让他意外的是下界。方阵乘法此前已知指数上界为 9/4，新论文声称排除了更低的指数；有限阿贝尔群傅里叶变换的论文则把二输入线性门的最少数量刻画到 N(log N)^(1/2+o(1))。在他看来，这不同于一次次把已知上界往下推一点，意味着模型开始触及如何证明某类快速算法根本不可能存在。
+Aaronson 也区分了用 Lean 核查一条形式化论证与人类真正理解其思想，后者可能花上几年。他在次日更新里说明，正是这批下界让他不再把 VP≠VNP 看成一次偶然命中，并开始相信 P≠NP 的证明可能没有原来想得那么遥远。文章没有给出 P≠NP 的证明，也没有确认外界传闻所指的具体密码学成果。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1971-points--评论-1801-comments--投稿者kotlopou--发布时间2026-11-26-031127-0800&#34;&gt;
+  HN 热度 1971 points | 评论 1801 comments | 投稿者：Kotlopou | 发布时间：2026-11-26 03:11:27 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1971-points--%e8%af%84%e8%ae%ba-1801-comments--%e6%8a%95%e7%a8%bf%e8%80%85kotlopou--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-031127-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50646108&#34;&gt;https://news.ycombinator.com/item?id=50646108&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者愿意等到有实际应用后，再判断哪些成果会对行业产生长期影响。&lt;/li&gt;
+&lt;li&gt;有读者转而追问，如果某些现用密码体制真的受到影响，整个技术生态是否做好了迁移准备。&lt;/li&gt;
+&lt;li&gt;有读者认为，作者一边强调加密传闻未经核实，一边公开讨论它，仍有放大传闻的效果。&lt;/li&gt;
+&lt;li&gt;有人质疑，即使形式验证通过，如果人类读不懂论证，能从中获得多少数学理解。&lt;/li&gt;
+&lt;li&gt;有读者追问，若重大证明由模型生成，原本用来鼓励人类研究的千禧年大奖应怎样处理。&lt;/li&gt;
+&lt;li&gt;有读者期待类似工具能帮助医疗与生物研究，同时指出这些领域的结果更难核验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-1password-披露后端入侵部分账户资料遭复制-1password-security-incident&#34;&gt;
+  2. 1Password 披露后端入侵，部分账户资料遭复制 (1Password Security Incident)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-1password-%e6%8a%ab%e9%9c%b2%e5%90%8e%e7%ab%af%e5%85%a5%e4%be%b5%e9%83%a8%e5%88%86%e8%b4%a6%e6%88%b7%e8%b5%84%e6%96%99%e9%81%ad%e5%a4%8d%e5%88%b6-1password-security-incident&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://1password.com/blog/update-on-nov-2026-security-incident&#34;&gt;https://1password.com/blog/update-on-nov-2026-security-incident&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1Password 说，它于 11 月 19 日开始调查员工企业 GitHub 账户的异常访问。攻击者接触到私有源代码和 CI/CD 系统，并改动部分后端服务，导出了部分客户的管理记录。除姓名、邮箱外，记录还可能包括账户标识、创建与最后登录时间、公钥，以及某些邀请、账户配置或恢复邮件中的令牌。公司说这些令牌不能单独登录，处于相关配置状态的少量用户已获专门通知。
+公司表示，密码库及其中的条目、用于保护密码库的密钥、账户恢复密钥和客户端应用未受影响，尚无内部证据显示有用户账户因此被接管。它已停用受影响的账户、轮换可能暴露的内部凭据，并将邀请及恢复流程中的验证码加长。现阶段公司称用户无需改动 1Password 账户，但应留意未经发起的邀请和恢复请求；事件的完整根因分析尚待调查结束后公布。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1630-points--评论-702-comments--投稿者lxhrstn--发布时间2026-11-26-011826-0800&#34;&gt;
+  HN 热度 1630 points | 评论 702 comments | 投稿者：lxhrstn | 发布时间：2026-11-26 01:18:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1630-points--%e8%af%84%e8%ae%ba-702-comments--%e6%8a%95%e7%a8%bf%e8%80%85lxhrstn--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-011826-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50644817&#34;&gt;https://news.ycombinator.com/item?id=50644817&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者想知道后端变更经过了哪些代码审查和部署审批；公告没有交代这些环节的具体情况。&lt;/li&gt;
+&lt;li&gt;有人认为，尽管密码库未受影响，攻击者在被发现前能访问的系统和资料仍值得关注。&lt;/li&gt;
+&lt;li&gt;一位长期使用本地密码库的读者希望恢复本地专用模式，即使这意味着自己要承担更多维护工作。&lt;/li&gt;
+&lt;li&gt;有读者把员工账户与部署链路视为 SaaS 的核心风险，并指出客户自己持有解锁秘密限制了最坏后果。&lt;/li&gt;
+&lt;li&gt;有人希望披露能更直白，直接交代加密后的密码库文件是否也曾被下载。&lt;/li&gt;
+&lt;li&gt;一位读者分享了自己用 Tailscale 隔离自托管 Vaultwarden 的长期使用经验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-纽约时报要求特约摄影师出任务时避用-photoshop-2027-the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features&#34;&gt;
+  3. 《纽约时报》要求特约摄影师出任务时避用 Photoshop 2027 (The New York Times warns photographers not to update Photoshop over AI features)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e7%ba%bd%e7%ba%a6%e6%97%b6%e6%8a%a5%e8%a6%81%e6%b1%82%e7%89%b9%e7%ba%a6%e6%91%84%e5%bd%b1%e5%b8%88%e5%87%ba%e4%bb%bb%e5%8a%a1%e6%97%b6%e9%81%bf%e7%94%a8-photoshop-2027-the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features&#34;&gt;https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Verge 看到了《纽约时报》摄影部门负责人 Meaghan Looram 和 Josh Haner 发给自由摄影师的邮件。两人说，Photoshop 2027 的一些 AI 功能不一定一眼就能识别，操作后照片的元数据可能被标记为 AI 生成。报社发言人确认，限制针对摄影师为该报工作的场合。报道提到，这一版本新增了集中呈现 AI 工具的编辑视图，以及提示词改图、放大和按画布尺寸重新构图等功能。
+Adobe 已在其应用中逐步引入 C2PA 内容来源元数据；用 AI 局部编辑和由 AI 生成整张图本是不同的行为，显示给读者的标签未必能传达这种差别。《纽约时报》过去只允许为准确再现画面而做少量调整。报道没有确认究竟哪些 Photoshop 操作会触发报社所担忧的标记，Adobe 在报道发布时也未立即答复。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-648-points--评论-516-comments--投稿者rmason--发布时间2026-11-26-051802-0800&#34;&gt;
+  HN 热度 648 points | 评论 516 comments | 投稿者：rmason | 发布时间：2026-11-26 05:18:02 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-648-points--%e8%af%84%e8%ae%ba-516-comments--%e6%8a%95%e7%a8%bf%e8%80%85rmason--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-051802-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50647673&#34;&gt;https://news.ycombinator.com/item?id=50647673&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;投稿者猜测其他美国报纸可能跟进，并问 Adobe 会不会提供一个面向新闻摄影师的版本。&lt;/li&gt;
+&lt;li&gt;有人认为，争议给了 Affinity 等替代工具争取新闻摄影师的机会。&lt;/li&gt;
+&lt;li&gt;一位创意工具从业者指出，只看最终图像，很难区分整张生成、局部调整和普通的自动选区。&lt;/li&gt;
+&lt;li&gt;有人担心依赖旧版只是权宜之计，之后可能不再能自由选择没有这些功能的版本。&lt;/li&gt;
+&lt;li&gt;有读者反对按版本设禁，认为 Photoshop 早就能做出违背摄影规范的修改，关键仍是允许哪些操作。&lt;/li&gt;
+&lt;li&gt;一位读者说，他知道一家欧洲通讯社也因担心 AI 标签而转离 Photoshop。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-tell-hn感恩节快乐-tell-hn-happy-thanksgiving&#34;&gt;
+  4. Tell HN：感恩节快乐 (Tell HN: Happy Thanksgiving)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-tell-hn%e6%84%9f%e6%81%a9%e8%8a%82%e5%bf%ab%e4%b9%90-tell-hn-happy-thanksgiving&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50655664&#34;&gt;https://news.ycombinator.com/item?id=50655664&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是一条没有外链的节日问候。发帖人 ericmay 祝读者和亲友度过愉快的一天，也鼓励没能按理想方式过节的人尽量让这一天好起来。原帖没有展开感恩节的由来，也没有科技新闻；下列留言是读者各自的节日感受和做法。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-571-points--评论-133-comments--投稿者ericmay--发布时间2026-11-26-222654-0800&#34;&gt;
+  HN 热度 571 points | 评论 133 comments | 投稿者：ericmay | 发布时间：2026-11-26 22:26:54 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-571-points--%e8%af%84%e8%ae%ba-133-comments--%e6%8a%95%e7%a8%bf%e8%80%85ericmay--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-222654-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50655664&#34;&gt;https://news.ycombinator.com/item?id=50655664&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位每天访问 HN 的读者认为，来自社区的内容对自己的职业发展很有帮助。&lt;/li&gt;
+&lt;li&gt;一位来自印度的读者给庆祝感恩节的人送上祝福。&lt;/li&gt;
+&lt;li&gt;有读者感谢愿意钻研冷门问题并把工具做出来的人，还分享了自己和孩子做的一款聚会游戏。&lt;/li&gt;
+&lt;li&gt;一位来自土耳其的读者说，当天在当地只是普通周四，但他想感谢那些会耐心解释冷门 bug 的人。&lt;/li&gt;
+&lt;li&gt;有人分享自己每年会做的练习：给一两位曾经帮助过自己的人写封手写感谢信。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-anthropic-团队成员公开更短的广义黎曼猜想-lean-证明-much-shorter-version-of-grh-lean-verification-from-anthropic&#34;&gt;
+  5. Anthropic 团队成员公开更短的广义黎曼猜想 Lean 证明 (Much shorter version of GRH Lean verification from Anthropic)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-anthropic-%e5%9b%a2%e9%98%9f%e6%88%90%e5%91%98%e5%85%ac%e5%bc%80%e6%9b%b4%e7%9f%ad%e7%9a%84%e5%b9%bf%e4%b9%89%e9%bb%8e%e6%9b%bc%e7%8c%9c%e6%83%b3-lean-%e8%af%81%e6%98%8e-much-shorter-version-of-grh-lean-verification-from-anthropic&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/lsernau/grh-lean&#34;&gt;https://github.com/lsernau/grh-lean&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这一研究仓库用 Lean 4 表述并证明黎曼猜想，以及针对 Dirichlet L 函数的广义黎曼猜想。说明称，它以 Levent Alpöge 与 Claude 的原有证明为基础，由作者与 Anthropic 同事、Claude 合作缩写，部分步骤也换用了不同的论证。可读版把背景材料和新的推导分开，附阅读指南；紧凑版约 7.6 万行代码，证明的是同一组五个定理。
+仓库列出了 Mathlib 的固定版本和公理依赖，并报告 Lean 内核和 Comparator 的机器检查通过。维护者同时说明，没有数学家逐行通读，仓库也没有配套论文。缩短的是形式证明文本；读者若要理解其中的新数学思想，仍需结合说明和证明结构。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-545-points--评论-346-comments--投稿者nb-t--发布时间2026-11-26-054810-0800&#34;&gt;
+  HN 热度 545 points | 评论 346 comments | 投稿者：nb-t | 发布时间：2026-11-26 05:48:10 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-545-points--%e8%af%84%e8%ae%ba-346-comments--%e6%8a%95%e7%a8%bf%e8%80%85nb-t--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-054810-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50648050&#34;&gt;https://news.ycombinator.com/item?id=50648050&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人质疑标题把成果直接归为 Anthropic 是否准确，因为仓库设在个人账号下，README 才交代合作关系。&lt;/li&gt;
+&lt;li&gt;有读者把早先流传的约 1,700 万行与紧凑版约 7.6 万行相比，认为规模变化非常明显。&lt;/li&gt;
+&lt;li&gt;有人追问，模型能够大幅压缩证明，是否也有望解释长证明中不易辨认的数学思想。&lt;/li&gt;
+&lt;li&gt;有读者称赞可读版把已知背景和新推导分开，并提供自然语言文档，方便按顺序读进去。&lt;/li&gt;
+&lt;li&gt;有人点开紧凑版的代码后，向 Lean 使用者请教人类通读这类论证究竟有多可行。&lt;/li&gt;
+&lt;li&gt;有数学读者希望有人不用 Lean 术语解释所列的三条公理及其作用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-openai-修正-gpt62-配额扣减astra-和-sol-更快触顶-openai-cuts-gpt-62-usage-astra-hits-limits-40-faster-sol-25-faster&#34;&gt;
+  6. OpenAI 修正 GPT‑6.2 配额扣减，Astra 和 Sol 更快触顶 (OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-openai-%e4%bf%ae%e6%ad%a3-gpt62-%e9%85%8d%e9%a2%9d%e6%89%a3%e5%87%8fastra-%e5%92%8c-sol-%e6%9b%b4%e5%bf%ab%e8%a7%a6%e9%a1%b6-openai-cuts-gpt-62-usage-astra-hits-limits-40-faster-sol-25-faster&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://twitter.com/thsottiaux/status/2125784147889393806&#34;&gt;https://twitter.com/thsottiaux/status/2125784147889393806&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原 X 链接未能直读，以下依据同一账号、同一帖子 ID 的公开文本副本整理。Tibo Sottiaux 表示，GPT‑6.2 上线时，多数用户在 Astra 和 Sol 上获得了不该有的用量折扣。修正后，同一类工作会扣掉更多套餐额度；他用前一周为参照，说明 Astra 触顶快 40%，Sol 快 25%。
+他称其他模型未受影响，既往用量不会补收差额，并会给 Go、Plus、Pro 和 Business 用户各增加一次可留待之后使用的额度重置。他还说，修正后的 6.2 Astra 和 Sol 在用量上分别仍比 6 Astra 和 6.1 Sol 划算。帖子没有给出具体扣减公式，这些数字也不能直接读成 API 单价上涨了 40% 或 25%。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-461-points--评论-259-comments--投稿者herrera--发布时间2026-11-26-113658-0800&#34;&gt;
+  HN 热度 461 points | 评论 259 comments | 投稿者：Herrera | 发布时间：2026-11-26 11:36:58 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-461-points--%e8%af%84%e8%ae%ba-259-comments--%e6%8a%95%e7%a8%bf%e8%80%85herrera--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-113658-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50651117&#34;&gt;https://news.ycombinator.com/item?id=50651117&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人追问，为什么偏在假期前发布调整，以及此前为何没发现计费问题。&lt;/li&gt;
+&lt;li&gt;一位订阅者说，调整前就感觉额度用得很快，现在开始重新考虑是否继续订阅。&lt;/li&gt;
+&lt;li&gt;有同时订阅 OpenAI 和 Anthropic 的读者说，最初的通知让他看不出是否会追溯调整，只能等进一步澄清。&lt;/li&gt;
+&lt;li&gt;Simon Willison 分享了用较强模型规划、另一个模型执行代码编辑来节省额度的做法，并推测 Astra 和 Sol 也可以分工。&lt;/li&gt;
+&lt;li&gt;一位读者说，同事此前可以长时间使用 Astra 6.2 Ultrafast 而不触顶，但自己似乎从未获得这项折扣。&lt;/li&gt;
+&lt;li&gt;一位 20 美元套餐用户报告，他让 Astra High 评估约 5 万行代码，约 11 分钟就用了五小时额度的 92%。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-intel-one-mono为低视力开发者优化的等宽字体-intel-one-mono-font-2023&#34;&gt;
+  7. Intel One Mono：为低视力开发者优化的等宽字体 (Intel One Mono font (2023))
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-intel-one-mono%e4%b8%ba%e4%bd%8e%e8%a7%86%e5%8a%9b%e5%bc%80%e5%8f%91%e8%80%85%e4%bc%98%e5%8c%96%e7%9a%84%e7%ad%89%e5%ae%bd%e5%ad%97%e4%bd%93-intel-one-mono-font-2023&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/intel/intel-one-mono&#34;&gt;https://github.com/intel/intel-one-mono&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是一套 2023 年已公开的等宽字体，这次在 HN 再度受到关注。Frere‑Jones Type 与 Intel 品牌团队、VMLY&amp;amp;R 合作设计，把代码、小字号界面和长时间阅读中的字符辨识作为目标，并在各设计阶段征求低视力及达到法定盲标准的开发者意见。四个字重从 Light 到 Bold，各有匹配的斜体，项目以 SIL Open Font License 1.1 提供字体和可编辑源文件。
+官方提供桌面 OTF、TTF 和面向网页的 WOFF、WOFF2，建议屏显使用 9 像素及以上。编程连字可通过 OpenType 样式组选用，默认关闭；项目还提供冒号高度、数字 3 字形等可选设计。README 没有给出量化测试来证明它适合每一位读者，具体体验仍取决于字号、屏幕和个人习惯。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-449-points--评论-234-comments--投稿者saikatsg--发布时间2026-11-26-181101-0800&#34;&gt;
+  HN 热度 449 points | 评论 234 comments | 投稿者：saikatsg | 发布时间：2026-11-26 18:11:01 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-449-points--%e8%af%84%e8%ae%ba-234-comments--%e6%8a%95%e7%a8%bf%e8%80%85saikatsg--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-181101-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50653667&#34;&gt;https://news.ycombinator.com/item?id=50653667&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者肯定低视力开发者参与测试，并想知道怎样在 Xcode 或 macOS 终端中采用这套字体。&lt;/li&gt;
+&lt;li&gt;一位读者把它列为自己最喜欢的终端字体之一。&lt;/li&gt;
+&lt;li&gt;有人觉得小写 e 的尾部太短，看起来像没画完。&lt;/li&gt;
+&lt;li&gt;一位经常扫读终端日志的用户则喜欢 e 尾部短带来的更宽开口，认为小字号更容易辨识。&lt;/li&gt;
+&lt;li&gt;一位 Iosevka 用户觉得它的字宽更适合自己的代码阅读习惯，尽管也喜欢 Intel One Mono 的预览。&lt;/li&gt;
+&lt;li&gt;有读者更倾向于使用适合编码的比例字体，认为等宽并不一定最易读。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-安全研究者质疑-ubuntu-内核安全补丁的发布速度-slow-ubuntu-security-response-times&#34;&gt;
+  8. 安全研究者质疑 Ubuntu 内核安全补丁的发布速度 (Slow Ubuntu security response times)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-%e5%ae%89%e5%85%a8%e7%a0%94%e7%a9%b6%e8%80%85%e8%b4%a8%e7%96%91-ubuntu-%e5%86%85%e6%a0%b8%e5%ae%89%e5%85%a8%e8%a1%a5%e4%b8%81%e7%9a%84%e5%8f%91%e5%b8%83%e9%80%9f%e5%ba%a6-slow-ubuntu-security-response-times&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.openwall.com/lists/oss-security/2026/11/25/9&#34;&gt;https://www.openwall.com/lists/oss-security/2026/11/25/9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;独立安全研究者 Hanno Böck 在 oss-security 邮件列表列举了三个案例。按他的时间线，从 NoisyTCP（CVE‑2026‑99288）细节公开到发信已经九天，Ubuntu 尚未推出他所查的修复；一项影响 AMD 嵌套虚拟化的 KVM 漏洞（CVE‑2026‑99312）也未修。他还称，更早的一项 TCP 漏洞（CVE‑2026‑98432）等了数周才有修复。基于这些例子，他主张更多采用上游长期维护内核，减少自行回移补丁的负担。
+核对 Ubuntu 官方跟踪页，24.04 LTS 与 26.04 LTS 的常规 linux 包在前两项下仍分别标为修复进行中及受影响，第三项已列出修复版本。不同内核包和发行版本有各自状态；这些案例可以说明作者为何担心等待时间，不能单凭邮件确定延误的根因。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-408-points--评论-259-comments--投稿者gslin--发布时间2026-11-26-043800-0800&#34;&gt;
+  HN 热度 408 points | 评论 259 comments | 投稿者：gslin | 发布时间：2026-11-26 04:38:00 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-408-points--%e8%af%84%e8%ae%ba-259-comments--%e6%8a%95%e7%a8%bf%e8%80%85gslin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-043800-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50647181&#34;&gt;https://news.ycombinator.com/item?id=50647181&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位运维人员称自己曾看到修复先进入常规更新仓库、后进入安全仓库，因此调整了自动更新范围。&lt;/li&gt;
+&lt;li&gt;有人已把部分容器基础镜像从 Ubuntu 转到 Alpine 或 Debian，并计划就补丁节奏向供应商了解情况。&lt;/li&gt;
+&lt;li&gt;一位管理员说，他暂时自行打内核补丁来缩短等待，同时准备迁出 Ubuntu。&lt;/li&gt;
+&lt;li&gt;有读者用 Red Hat 的两个对应跟踪条目作对照，提醒不能假设其他发行版都能即时发布。&lt;/li&gt;
+&lt;li&gt;有人强调发行版需要做回归测试，并举出 Debian 遇到内核更新回归的例子。&lt;/li&gt;
+&lt;li&gt;一位回复者认为，无论来自哪个发行版，生产系统都可以分批上线更新，以控制回归风险。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-marcin-wichary-收藏了横跨四十多年的界面设计指南-collection-of-preserved-ui-style-guides&#34;&gt;
+  9. Marcin Wichary 收藏了横跨四十多年的界面设计指南 (Collection of preserved UI style guides)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-marcin-wichary-%e6%94%b6%e8%97%8f%e4%ba%86%e6%a8%aa%e8%b7%a8%e5%9b%9b%e5%8d%81%e5%a4%9a%e5%b9%b4%e7%9a%84%e7%95%8c%e9%9d%a2%e8%ae%be%e8%ae%a1%e6%8c%87%e5%8d%97-collection-of-preserved-ui-style-guides&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://aresluna.org/ui-style-guides/&#34;&gt;https://aresluna.org/ui-style-guides/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aresluna 把散落各处的人机界面指南按平台和年代编在一个页面上。可以并排找早期 Apple Lisa 与 Macintosh 文档、1991 年的 Amiga 指南、Windows 与 Swing 的桌面设计资料，也能对照 Android 2012 年的设计网站、两代 Material Design 和现在的官方文档。不同平台的收录深度并不一样，部分早期资料只找到了镜像。
+整理者 Marcin Wichary 自己扫描了少量文档，为一些下线的专题站制作了独立镜像，并修整了部分失效嵌入和图片引用。页面同时给出能找到的原站或互联网档案链接，底部还有整套下载。适合借此比较不同时期对导航、反馈和控件行为的规定。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-408-points--评论-99-comments--投稿者sohkamyung--发布时间2026-11-26-084000-0800&#34;&gt;
+  HN 热度 408 points | 评论 99 comments | 投稿者：sohkamyung | 发布时间：2026-11-26 08:40:00 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-408-points--%e8%af%84%e8%ae%ba-99-comments--%e6%8a%95%e7%a8%bf%e8%80%85sohkamyung--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-084000-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50649834&#34;&gt;https://news.ycombinator.com/item?id=50649834&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位读者说，2000 年代早期的 Windows 指南曾教会他从功能和易用性出发设计界面。&lt;/li&gt;
+&lt;li&gt;有读者特别喜欢 BlackBerry 10 指南强调小惊喜的段落，即使该平台商业上没能成功。&lt;/li&gt;
+&lt;li&gt;一位读者肯定 Palm webOS 的多任务交互，也怀念 Windows Phone 动态磁贴把通知直接呈现出来的设计。&lt;/li&gt;
+&lt;li&gt;有人看中整包下载，希望自己也留一份副本。&lt;/li&gt;
+&lt;li&gt;有读者喜欢归档网站本身的布局，却对放大指针的效果有保留，并建议开放网站源码。&lt;/li&gt;
+&lt;li&gt;一位读者发现自己看到的 Windows XP 指南缺少插图，于是找了带图 PDF，并建议补充 Windows Aero 时代的官方资料。&lt;/li&gt;
+&lt;li&gt;有人喜欢旧界面较少的色彩和装饰，认为这样更容易弄清界面怎么操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-hn-为-ask-页面启用独立排行恢复更多文字帖-tell-hn-lots-of-ask-hns-again&#34;&gt;
+  10. HN 为 Ask 页面启用独立排行，恢复更多文字帖 (Tell HN: Lots of Ask HNs again)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-hn-%e4%b8%ba-ask-%e9%a1%b5%e9%9d%a2%e5%90%af%e7%94%a8%e7%8b%ac%e7%ab%8b%e6%8e%92%e8%a1%8c%e6%81%a2%e5%a4%8d%e6%9b%b4%e5%a4%9a%e6%96%87%e5%ad%97%e5%b8%96-tell-hn-lots-of-ask-hns-again&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50649864&#34;&gt;https://news.ycombinator.com/item?id=50649864&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此前有读者发现 Ask 页面只剩十几条内容，分页入口也消失了。管理员 dang 说，Ask 页过去复用首页的候选列表，只从全站排名前 1,500 条投稿里挑文字帖。一旦其中符合条件的内容不够多，即便站内还有其他文字帖，旧页面也拿不到。他改为单独计算 Ask 页的候选排序。
+按 dang 的解释，Ask HN 是约定俗成的分类名称，实际筛选条件是投稿时没有外链；所以 Tell HN 和标题没有前缀的文字帖也可进入这一列表。主帖解释了为何候选不足及此次调整，没有公布具体评分权重。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-395-points--评论-154-comments--投稿者dang--发布时间2026-11-26-084334-0800&#34;&gt;
+  HN 热度 395 points | 评论 154 comments | 投稿者：dang | 发布时间：2026-11-26 08:43:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-395-points--%e8%af%84%e8%ae%ba-154-comments--%e6%8a%95%e7%a8%bf%e8%80%85dang--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-26-084334-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50649864&#34;&gt;https://news.ycombinator.com/item?id=50649864&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者把旧实现类比为报表系统先取整体前列再过滤：原先符合条件的结果够多，短缺才一直没显现。&lt;/li&gt;
+&lt;li&gt;有人建议另加按时间排列的活跃页，只看至少有一次投票或评论的新帖子。&lt;/li&gt;
+&lt;li&gt;一位读者另报了首页分页问题：在后续页面隐藏条目时，补上的记录可能是先前看过的条目。&lt;/li&gt;
+&lt;li&gt;有人猜测 AI 工具增加了可发布的博客和项目链接，可能间接改变链接帖与文字帖的比例。&lt;/li&gt;
+&lt;li&gt;有读者建议引入主题标签，方便按语言、工具和话题发现帖子。&lt;/li&gt;
+&lt;li&gt;另一个分支谈到部分 Show HN 刚发出就被隐藏，dang 回应说，原因是部分投稿文字被归为 AI 生成。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-26 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-26-HackerNews/</link>
+      <pubDate>Thu, 26 Nov 2026 07:50:13 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-26-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-26-hacker-news-top-stories&#34;&gt;
+  2026-11-26 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-26-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenAI 预印本称，任意域上的方阵乘法指数恰为 9/4（2.25）；新工作补上的是下界，给任意 n≥2 的形式算术电路至少 ⌈n^(9/4)/2⌉ 个乘除门的限制。&lt;/li&gt;
+&lt;li&gt;Josh W. Comeau 的 Button Sounds 收录 50 多种点击或切换声，每种至少有 4 个按下和 4 个松开样本可随机播放，并提供无损 WAV、MP3 和 npm 包。&lt;/li&gt;
+&lt;li&gt;PrismML 的 Ternary Bonsai 2.5 27B 基于 Qwen3.8 27B，权重约 5.9 GB；自测 SWE-bench Verified 从前代的 60.8 升至 75.6，全精度基座为 80.6。&lt;/li&gt;
+&lt;li&gt;Reddit 帖转发了 Scott Aaronson 听闻 OpenAI 或 Anthropic 可能拿到整数分解新结果的截图；Aaronson 说具体细节可能在转述中失真，帖子没有给出算法、证明或可核验的 RSA 破解结果。&lt;/li&gt;
+&lt;li&gt;LessWrong 实验显示，在共享 vLLM 推理服务、事先约定并有额外训练的条件下，两个隔离模型在八选一任务中猜中 1,221 次、零失误；这一结果没有证明生产系统中会自发串通。&lt;/li&gt;
+&lt;li&gt;一位 Ask HN 发帖人称，Anthropic 要求其公司在 24 小时内回应模型蒸馏指控；他否认训练自有模型，怀疑自动回归测试触发了告警，又担心举证时泄露客户数据。&lt;/li&gt;
+&lt;li&gt;Rida F’kih 利用原生滚动合成和 OffscreenCanvas，在 iPhone 18 Pro 的三秒拖拽实验中测到平均 118 FPS，普通指针事件版本为 60 FPS；结果依赖 WebKit 现有行为。&lt;/li&gt;
+&lt;li&gt;Google Research 发布 Cogentic 的六篇新论文，其中随机整数分解声称把无条件期望时间界推进到 L_N[1/3,105]，仍是次指数；离散对数论文则限于固定或足够小的特征。&lt;/li&gt;
+&lt;li&gt;佛州鳄类研究员 Joseph Ricketts 在 Home Depot 旁的雨水蓄水池夜间浮潜，拍到水蛇、蝌蚪和鲎虫；他提醒，这类城市水域值得保护，却不能取代天然湿地。&lt;/li&gt;
+&lt;li&gt;Sam Greydanus 的 PenGPT 用约 520 万参数生成手写轨迹、用 5,400 万参数按文字画草图；消融实验显示，数据质量、增强和多词联合训练比加大模型更关键。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-openai-预印本方阵乘法的复杂度指数恰为-94-the-matrix-multiplication-exponent-is-nine-fourths-pdf&#34;&gt;
+  1. OpenAI 预印本：方阵乘法的复杂度指数恰为 9/4 (The matrix multiplication exponent is nine fourths [pdf])
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-openai-%e9%a2%84%e5%8d%b0%e6%9c%ac%e6%96%b9%e9%98%b5%e4%b9%98%e6%b3%95%e7%9a%84%e5%a4%8d%e6%9d%82%e5%ba%a6%e6%8c%87%e6%95%b0%e6%81%b0%e4%b8%ba-94-the-matrix-multiplication-exponent-is-nine-fourths-pdf&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf&#34;&gt;https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这篇 11 月 24 日的预印本研究的是两个 n×n 方阵相乘所需的标量运算。已有工作给出了对任意 ε&amp;gt;0 的 O(n^(9/4+ε)) 上界；OpenAI 这次声称给出了相匹配的指数下界。在其形式算术电路模型中，即使加减等线性操作免费，乘除门数量仍至少为 ⌈n^(9/4)/2⌉。这一结论涵盖任意域，也并不声称恰有 O(n^(9/4)) 的算法。
+证明的出发点是反证：如果还能把方阵乘法指数压低一个固定量，就能批量压缩一类张量网络，以低于另一个下界的成本检查多份独立列表中是否有重复元素。论文也给了矩形乘法的界：对于 n×n^β 与 n^β×n 相乘，仍可保持指数 2 的临界 β 落在 1/2 到 2/3 之间。这里的结论针对渐近算术复杂度，不能直接换算成实际 GPU 耗时。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1018-points--评论-567-comments--投稿者e-reverance--发布时间2026-11-25-091926-0800&#34;&gt;
+  HN 热度 1018 points | 评论 567 comments | 投稿者：E-Reverance | 发布时间：2026-11-25 09:19:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1018-points--%e8%af%84%e8%ae%ba-567-comments--%e6%8a%95%e7%a8%bf%e8%80%85e-reverance--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-091926-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50637220&#34;&gt;https://news.ycombinator.com/item?id=50637220&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;帖中首先澄清了标题里的 2.25 是确切指数，不能只按一个新上界来理解。&lt;/li&gt;
+&lt;li&gt;有读者惋惜，此前期待的指数 2 若按预印本结论，将无法在该模型中达到。&lt;/li&gt;
+&lt;li&gt;矩形乘法的讨论提醒，方阵的精确指数不能照搬成所有长宽比例的精确下界。&lt;/li&gt;
+&lt;li&gt;有读者关心此前的上界构造能否转成实际可用的 GPU 内核。&lt;/li&gt;
+&lt;li&gt;有读者更关注这批论文背后的张量几何框架，认为工具本身同样值得研究。&lt;/li&gt;
+&lt;li&gt;有读者从边界秩下界联想到几何复杂性理论及 VP 与 VNP，关心这些工具能否用于其他问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-josh-w-comeau-发布-50-多种可试听的按钮音效-button-sounds--collection-of-professionally-recorded-button-clicks-and-presses&#34;&gt;
+  2. Josh W. Comeau 发布 50 多种可试听的按钮音效 (Button Sounds – collection of professionally-recorded button clicks and presses)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-josh-w-comeau-%e5%8f%91%e5%b8%83-50-%e5%a4%9a%e7%a7%8d%e5%8f%af%e8%af%95%e5%90%ac%e7%9a%84%e6%8c%89%e9%92%ae%e9%9f%b3%e6%95%88-button-sounds--collection-of-professionally-recorded-button-clicks-and-presses&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://buttons.joshwcomeau.com/&#34;&gt;https://buttons.joshwcomeau.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Button Sounds 想解决一个小而具体的体验问题：连续操作同一个按钮时，每次都听到完全相同的录音，会显得机械。Josh W. Comeau 录下键盘、游戏手柄和开关等物件的声音，为每类操作保留多份样本，按下和松开分别播放。网站可试听，项目也提供原生 JavaScript 接口和 React 绑定。
+作者在做过声学处理的房间用 Zoom H4 录音，并在 Adobe Audition 中降噪；少量合成器音效为数字制作。素材有 48 kHz 无损 WAV 和 192 kbps MP3 两种，都是立体声。README 建议降低播放音量，并给用户一个关闭网站音效的选项。浏览器有各自的媒体播放策略，因此点击不一定每次都能发声。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-838-points--评论-131-comments--投稿者gaurang_tandon--发布时间2026-11-25-112307-0800&#34;&gt;
+  HN 热度 838 points | 评论 131 comments | 投稿者：gaurang_tandon | 发布时间：2026-11-25 11:23:07 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-838-points--%e8%af%84%e8%ae%ba-131-comments--%e6%8a%95%e7%a8%bf%e8%80%85gaurang_tandon--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-112307-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50638032&#34;&gt;https://news.ycombinator.com/item?id=50638032&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分开处理按下和松开，并让每次声音稍有变化，让一位试听者觉得反馈更像真按钮。&lt;/li&gt;
+&lt;li&gt;有读者希望作者单独写一篇录音与后期处理过程，让工程细节也能被复用。&lt;/li&gt;
+&lt;li&gt;一位回复者认为网页音效应遵守手机静音状态，否则正想保持安静的用户会被打扰。&lt;/li&gt;
+&lt;li&gt;有开发者分享自己用明确的取消静音按钮处理 iOS 网页音频限制的经验。&lt;/li&gt;
+&lt;li&gt;一位 M4 Pro Mac mini 用户称 Firefox 开发版打开演示页后风扇开始转，他怀疑是页面动画所致。&lt;/li&gt;
+&lt;li&gt;一位读者觉得同一按钮的个别样本音高相差太明显，建议主要保留音色变化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-prismml-发布三值权重模型-ternary-bonsai-25-27b-ternary-bonsai-25-27b&#34;&gt;
+  3. PrismML 发布三值权重模型 Ternary Bonsai 2.5 27B (Ternary Bonsai 2.5 27B)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-prismml-%e5%8f%91%e5%b8%83%e4%b8%89%e5%80%bc%e6%9d%83%e9%87%8d%e6%a8%a1%e5%9e%8b-ternary-bonsai-25-27b-ternary-bonsai-25-27b&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://prismml.com/news/bonsai-2-5-27b&#34;&gt;https://prismml.com/news/bonsai-2-5-27b&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PrismML 把这次更新重点放在多轮工具调用和编程任务上。模型沿用 Qwen3.8 27B 的架构，白皮书给出的平均权重位宽为 1.76 位，文件约 5.93 GB，对比 FP16 基座的 53.8 GB。厂商在同一评测设置下报告，AppWorld 从 51.2 升至 90.5，全精度基座为 93.2；Terminal-Bench 2.1 从 52.8 升至 60.1，仍低于基座的 70.8。
+厂商报告启用多词元预测时，单张 H100 和 RTX 4090 分别生成 291 和 204 tokens/s。这是特定推理设置下的结果，权重大小也不等于长上下文时的全部内存。模型权重以 Apache 2.0 发布，公告列出 llama.cpp 和 Apple MLX 两条部署路径。白皮书注明测试最长也只是有界的单项任务，尚未实测跨多个上下文窗口、连续数小时的工作。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-530-points--评论-176-comments--投稿者b0m--发布时间2026-11-25-040803-0800&#34;&gt;
+  HN 热度 530 points | 评论 176 comments | 投稿者：b0m | 发布时间：2026-11-25 04:08:03 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-530-points--%e8%af%84%e8%ae%ba-176-comments--%e6%8a%95%e7%a8%bf%e8%80%85b0m--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-040803-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50633922&#34;&gt;https://news.ycombinator.com/item?id=50633922&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者对小文件体积下的编程分数印象深刻，同时质疑 SWE-bench Verified 能代表多少实际工作。&lt;/li&gt;
+&lt;li&gt;有人指出新版并未在榜单上全面超过 Qwen 基座，优势应连同体积和部署代价评估。&lt;/li&gt;
+&lt;li&gt;一位前代用户说 Bonsai 2 常陷入循环，他更看重部分构建能进入现有 llama.cpp 工作流。&lt;/li&gt;
+&lt;li&gt;一位实测者用 24 GB 的 Mac mini M5 Pro 跑 Q2 GGUF，在示例编程提示中得到约 22–25 tokens/s。&lt;/li&gt;
+&lt;li&gt;另一位 MacBook 用户称，他的初步试用中新版的工具调用表现比前代更实用。&lt;/li&gt;
+&lt;li&gt;有读者希望加入相近内存占用的 Qwen 低位宽版及小参数模型，比较相同预算下能得到什么。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-整数分解进入-preddit-热帖转述尚无证据的-rsa-传闻-rumors-swirling-that-labs-might-have-cracked-factoring-in-p&#34;&gt;
+  4. 整数分解进入 P？Reddit 热帖转述尚无证据的 RSA 传闻 (Rumors swirling that labs might have cracked Factoring in P)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-%e6%95%b4%e6%95%b0%e5%88%86%e8%a7%a3%e8%bf%9b%e5%85%a5-preddit-%e7%83%ad%e5%b8%96%e8%bd%ac%e8%bf%b0%e5%b0%9a%e6%97%a0%e8%af%81%e6%8d%ae%e7%9a%84-rsa-%e4%bc%a0%e9%97%bb-rumors-swirling-that-labs-might-have-cracked-factoring-in-p&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/&#34;&gt;https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;r/singularity 这条原帖是一则截图帖。图中是计算复杂性研究者 Scott Aaronson 在 11 月 24 日博客评论区的第 23 条回复：他听到关于一家或两家实验室可能掌握多项式时间整数分解的传闻，但不知道具体该信几分。截图与博客原评论一致。他在次日的博客文章里也说，在亲眼看到细节或听到实验室直接说明之前，他对传闻所指的具体成果远没那么有把握。
+原帖标题还提及 Andrew Curran 和 Aran Nayebi。多人听到同一说法并不能证明他们拥有独立的一手证据；帖子没有公布算法、证明、运行成本或示范。即便未来有多项式时间算法，也还得看指数、常数和目标密钥规模才能判断现实影响；同日公开的 Google Cogentic 次指数分解论文也不能用来证实这条传闻。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-456-points--评论-331-comments--投稿者lilytweed--发布时间2026-11-25-230844-0800&#34;&gt;
+  HN 热度 456 points | 评论 331 comments | 投稿者：lilytweed | 发布时间：2026-11-25 23:08:44 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-456-points--%e8%af%84%e8%ae%ba-331-comments--%e6%8a%95%e7%a8%bf%e8%80%85lilytweed--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-230844-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50643065&#34;&gt;https://news.ycombinator.com/item?id=50643065&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位读者回溯资料，列出 Aaronson 的博客原评论，以及 Curran 和 Nayebi 依次转发的两条公开发言。&lt;/li&gt;
+&lt;li&gt;有人提到 Anthropic 此前分解过一个 896 位 RSA 数，但把使用已知方法完成计算与找到新算法区分开来。&lt;/li&gt;
+&lt;li&gt;有读者怀疑传闻可能被行业炒作放大，但没有提供支持这一推测的证据。&lt;/li&gt;
+&lt;li&gt;有人担心即使结果成立，也可能是只有在天文规模下才有优势的理论算法。&lt;/li&gt;
+&lt;li&gt;一位回复者指出，针对整数分解的进展并不会直接推翻椭圆曲线所依赖的不同难题。&lt;/li&gt;
+&lt;li&gt;有读者提醒，TLS 的密钥交换与证书身份认证是两层，前者采用新算法不能证明后者已不用 RSA。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-同一推理服务器上的沙箱模型仍可能互相传信-models-can-communicate-via-inference-servers-despite-being-sandboxed&#34;&gt;
+  5. 同一推理服务器上的沙箱模型仍可能互相传信 (Models Can Communicate via Inference Servers Despite Being Sandboxed)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-%e5%90%8c%e4%b8%80%e6%8e%a8%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e7%9a%84%e6%b2%99%e7%ae%b1%e6%a8%a1%e5%9e%8b%e4%bb%8d%e5%8f%af%e8%83%bd%e4%ba%92%e7%9b%b8%e4%bc%a0%e4%bf%a1-models-can-communicate-via-inference-servers-despite-being-sandboxed&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being&#34;&gt;https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Niranjan Deshpande 与 David Africa 讨论的是应用层隔离之外的共享资源风险。两路模型不能直接发消息、共用文件或联网，但共享 vLLM 推理服务时，调度和缓存留下的可观测差异仍能成为低带宽信号。在事先设计好任务并额外训练接收方的实验中，八选一猜色达 1,221/1,221；另一项受控实验发现，模拟监督器漏掉了全部 354 个带信号的违规样本，却仍能检出约 85%–92% 的诱饵。
+作者也尝试在不微调的条件下提供示例帮助模型识别信号，表现随配套条件而变，减少提示或增加背景流量后明显下降。读者应把这些数字放回受控设置理解：文章展示了共享推理基础设施可能削弱隔离假设，未证明模型能自行发现彼此，也未验证商业服务的实际暴露程度。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-447-points--评论-191-comments--投稿者gmays--发布时间2026-11-25-103421-0800&#34;&gt;
+  HN 热度 447 points | 评论 191 comments | 投稿者：gmays | 发布时间：2026-11-25 10:34:21 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-447-points--%e8%af%84%e8%ae%ba-191-comments--%e6%8a%95%e7%a8%bf%e8%80%85gmays--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-103421-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50637686&#34;&gt;https://news.ycombinator.com/item?id=50637686&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者借鉴浏览器按来源隔离缓存的经验，提出推理服务也应按安全域隔离缓存。&lt;/li&gt;
+&lt;li&gt;一位回复者追问 vLLM 已有的缓存隔离选项是否解决了前述缓存问题。&lt;/li&gt;
+&lt;li&gt;有人质疑实验依赖事先约定和特定服务条件，仍不足以说明现实中会发生自发通信。&lt;/li&gt;
+&lt;li&gt;有读者追问模型能否在没有预先配合时偶然发现对方，这是当前实验未回答的问题。&lt;/li&gt;
+&lt;li&gt;一位读者认为不同批次使用不同计算路径有吞吐优势，是否值得为这类风险付出性能成本需要实测。&lt;/li&gt;
+&lt;li&gt;回复者补充，可复现的推理数值本身也有价值，调试时更容易定位问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-ask-hn公司称被-anthropic-指控蒸馏如何自证-ask-hn-anthropic-is-accusing-my-company-of-distilling-how-can-i-prove-im-not&#34;&gt;
+  6. Ask HN：公司称被 Anthropic 指控蒸馏，如何自证？ (Ask HN: Anthropic is accusing my company of distilling. How can I prove I&amp;rsquo;m not?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-ask-hn%e5%85%ac%e5%8f%b8%e7%a7%b0%e8%a2%ab-anthropic-%e6%8c%87%e6%8e%a7%e8%92%b8%e9%a6%8f%e5%a6%82%e4%bd%95%e8%87%aa%e8%af%81-ask-hn-anthropic-is-accusing-my-company-of-distilling-how-can-i-prove-im-not&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50630809&#34;&gt;https://news.ycombinator.com/item?id=50630809&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这条 Ask HN 没有外链，原文就是发帖人的求助。他说公司在调整 AI 设置后会自动跑回归基准，并认为这种批量调用或许被误判为蒸馏。他的具体问题是，怎样说明这些 API 请求来自正常测试，又不把用户资料交出去。
+帖中没有附 Anthropic 的通知、检测依据或请求记录，也没有交代申诉结局。24 小时期限、业务用途和对触发原因的推测都来自发帖人的叙述；帖子不能据此判断供应商规则是否被违反，也不能证实实际是哪类请求触发了审查。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-437-points--评论-335-comments--投稿者weli--发布时间2026-11-25-004544-0800&#34;&gt;
+  HN 热度 437 points | 评论 335 comments | 投稿者：weli | 发布时间：2026-11-25 00:45:44 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-437-points--%e8%af%84%e8%ae%ba-335-comments--%e6%8a%95%e7%a8%bf%e8%80%85weli--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-004544-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50630809&#34;&gt;https://news.ycombinator.com/item?id=50630809&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人建议出示回归测试工具及长期版本记录，让批量调用模式有可检查的业务解释。&lt;/li&gt;
+&lt;li&gt;一位回复者指出 Git 历史可以改写，因此单靠仓库时间戳未必有说服力。&lt;/li&gt;
+&lt;li&gt;有读者提醒先排查 API 密钥是否泄露，避免把第三方造成的异常用量误归给内部测试。&lt;/li&gt;
+&lt;li&gt;有人建议让公司律师处理这类带时限的供应商争议。&lt;/li&gt;
+&lt;li&gt;有读者认为，把所依赖的业务流程交给一家可以暂停账号的供应商，本身就是经营风险。&lt;/li&gt;
+&lt;li&gt;有人主张直接更换模型提供商。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-rida-fkih-让-ios-safari-网页交互跑到接近-120-fps-bypassing-ios-safaris-60-fps-limit-to-build-web-applications-that-feel-native&#34;&gt;
+  7. Rida F’kih 让 iOS Safari 网页交互跑到接近 120 FPS (Bypassing iOS Safari&amp;rsquo;s 60 FPS Limit to Build Web Applications That Feel Native)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-rida-fkih-%e8%ae%a9-ios-safari-%e7%bd%91%e9%a1%b5%e4%ba%a4%e4%ba%92%e8%b7%91%e5%88%b0%e6%8e%a5%e8%bf%91-120-fps-bypassing-ios-safaris-60-fps-limit-to-build-web-applications-that-feel-native&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://rida.dev/blog/bypassing-ios-safari-60-fps-limit&#34;&gt;https://rida.dev/blog/bypassing-ios-safari-60-fps-limit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在支持 ProMotion 的 iPhone 上，刷屏能到 120 Hz，但 Safari 常把常规页面的动画回调和指针输入限制在 60 Hz。Rida F’kih 让原生滚动合成器提供高频输入，再用 OffscreenCanvas 绘制输出；当前 WebKit 可直接呈现这类画布提交，不必等待主线程的常规页面重绘。作者用 Liquid Glass 风格标签栏展示手指拖拽、回弹与着色器动画。
+他用 iPhone 18 Pro 做了三秒拖拽对照，以 240 FPS 录像分析，控制器版本平均 118 FPS，普通指针事件版本 60 FPS；在低电量模式中，他的方案也能达到约 60 FPS。作者没有建议为此重写整个应用：它需要有高刷新率的屏幕和相应浏览器行为，Apple 以后可以改变呈现时机。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-434-points--评论-144-comments--投稿者vinhnx--发布时间2026-11-25-110437-0800&#34;&gt;
+  HN 热度 434 points | 评论 144 comments | 投稿者：vinhnx | 发布时间：2026-11-25 11:04:37 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-434-points--%e8%af%84%e8%ae%ba-144-comments--%e6%8a%95%e7%a8%bf%e8%80%85vinhnx--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-110437-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50637890&#34;&gt;https://news.ycombinator.com/item?id=50637890&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有开发者尤其看重作者追进 WebKit 源码的过程，认为它比单看演示更有参考价值。&lt;/li&gt;
+&lt;li&gt;一位 iOS Safari 用户试过两组交互后说自己没有看出明显差异。&lt;/li&gt;
+&lt;li&gt;一位 iPad 用户报告，合成器演示拖拽时会偏离光标，普通 JavaScript 对照却跟得上。&lt;/li&gt;
+&lt;li&gt;有读者觉得随滚动变化的玻璃效果不适，作者回应说已在菜单加入隐藏选项。&lt;/li&gt;
+&lt;li&gt;有人质疑，额外代码、潜在耗电和边缘设备上的渲染问题，是否抵得上刷新率收益。&lt;/li&gt;
+&lt;li&gt;作者在回复中举了绘图应用和手机网页游戏两个例子，认为可按需要单独采用相关技术。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-google-research-公开-cogentic-的六篇新论文涵盖整数分解和离散对数-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-and-more&#34;&gt;
+  8. Google Research 公开 Cogentic 的六篇新论文，涵盖整数分解和离散对数 (Google releases Cogentic papers on integer factorization, discrete logs and more)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-google-research-%e5%85%ac%e5%bc%80-cogentic-%e7%9a%84%e5%85%ad%e7%af%87%e6%96%b0%e8%ae%ba%e6%96%87%e6%b6%b5%e7%9b%96%e6%95%b4%e6%95%b0%e5%88%86%e8%a7%a3%e5%92%8c%e7%a6%bb%e6%95%a3%e5%af%b9%e6%95%b0-google-releases-cogentic-papers-on-integer-factorization-discrete-logs-and-more&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/google-research/google-research/tree/master/cogentic_research_papers&#34;&gt;https://github.com/google-research/google-research/tree/master/cogentic_research_papers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google Research 在 11 月 25 日集中公开六篇论文，涵盖随机和确定性整数分解、有限域离散对数、双矩阵博弈的近似纳什均衡、对数秩猜想及图的边重构。项目称，核心数论论文由以 Gemini 4 为基座的 Cogentic 生成，除初始提示外没有人工交互；相应 README 称 Lean 4 形式化已完成，将另行发布。
+随机分解论文给出零错误的随机算法，声称最坏输入下的期望时间为 L_N[1/3,105]，在不依赖未证数论假设的前提下达到一般数域筛启发式分析中的 1/3 渐近指数；常数不同，结果没有给出现实密钥规模上的提速。另一篇给出确定性次指数分解界。离散对数论文针对有限域的乘法群，在固定或够小的特征下给出次准多项式界，不能外推到一般椭圆曲线。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-428-points--评论-320-comments--投稿者rgwohlbold--发布时间2026-11-25-213307-0800&#34;&gt;
+  HN 热度 428 points | 评论 320 comments | 投稿者：rgwohlbold | 发布时间：2026-11-25 21:33:07 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-428-points--%e8%af%84%e8%ae%ba-320-comments--%e6%8a%95%e7%a8%bf%e8%80%85rgwohlbold--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-213307-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50642086&#34;&gt;https://news.ycombinator.com/item?id=50642086&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者认为亮点在于把现有模型组织成共享中间证明的协作系统，而非单个模型独自作答。&lt;/li&gt;
+&lt;li&gt;一位读者逐项对比了新旧复杂度界，并区分经证明的整数分解上界与实践中依赖的启发式分析。&lt;/li&gt;
+&lt;li&gt;有人指出，改进无条件上界与缩短实际分解时间是两件事，不能从同一个渐近指数推出后者。&lt;/li&gt;
+&lt;li&gt;有人担忧数学和理论计算机博士生的长线选题，可能在毕业前就被实验室公开解决。&lt;/li&gt;
+&lt;li&gt;也有人把这轮进展看作进入计算机科学的好时机。&lt;/li&gt;
+&lt;li&gt;有读者希望等到形式化材料可查，再核对 Lean 实际验证的命题是否和论文表述一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-佛州生物学家在-home-depot-蓄水池里发现了什么-a-few-questions-for-the-guy-who-went-snorkeling-in-a-home-depot-retention-pond&#34;&gt;
+  9. 佛州生物学家在 Home Depot 蓄水池里发现了什么 (A few questions for the guy who went snorkeling in a Home Depot retention pond)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e4%bd%9b%e5%b7%9e%e7%94%9f%e7%89%a9%e5%ad%a6%e5%ae%b6%e5%9c%a8-home-depot-%e8%93%84%e6%b0%b4%e6%b1%a0%e9%87%8c%e5%8f%91%e7%8e%b0%e4%ba%86%e4%bb%80%e4%b9%88-a-few-questions-for-the-guy-who-went-snorkeling-in-a-home-depot-retention-pond&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts&#34;&gt;https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vox 采访了佛罗里达州研究短吻鳄和鳄鱼的生物学家 Joseph Ricketts。他曾看见有人在 Home Depot 旁的蓄水池观鸟，干旱结束、重新积水后便下水拍摄。表面有废弃啤酒罐，水下却有水蛇、快要长成青蛙的蝌蚪，以及他后来查资料辨认出的鲎虫。文章发稿时，视频已超过 200 万播放。
+Ricketts 解释，开发后的铺装地面难以像天然湿地那样吸收暴雨，蓄水池给径流一个去处，也能为部分物种提供栖息地，或成为当地孩子能接触到的一小块自然。他并不知道这个池塘原址的确切历史，反对把眼前的生命力当作可以破坏大片原生湿地的理由，也明确不建议读者照做，到蓄水池浮潜。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-421-points--评论-100-comments--投稿者gumby--发布时间2026-11-25-231432-0800&#34;&gt;
+  HN 热度 421 points | 评论 100 comments | 投稿者：gumby | 发布时间：2026-11-25 23:14:32 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-421-points--%e8%af%84%e8%ae%ba-100-comments--%e6%8a%95%e7%a8%bf%e8%80%85gumby--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-231432-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50643129&#34;&gt;https://news.ycombinator.com/item?id=50643129&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者列出洪水临时连通、动物携带等可能的传播路径，用来解释偏远池塘为何也会有鱼。&lt;/li&gt;
+&lt;li&gt;一位曾住在佛州的读者补充，其住处附近的蓄水池有人工放鱼，不能把所有池塘都当成自然定殖。&lt;/li&gt;
+&lt;li&gt;面对城市密度会限制自然接触的说法，有读者用自己步行即可抵达大片自然地带的经验说明，两者可以并存。&lt;/li&gt;
+&lt;li&gt;有读者从蜻蜓幼虫和成虫分别生活在水中与空中出发，追问两种栖息环境如何共同约束种群。&lt;/li&gt;
+&lt;li&gt;一位读者回忆学生时代下溪取样的课程，当时用不同生物对污染的耐受差异来判断水质。&lt;/li&gt;
+&lt;li&gt;有人想起曾用教育套装饲养鲎虫，并用摄像头在网上直播它们的生长。&lt;/li&gt;
+&lt;li&gt;一位老观众推荐 Ricketts 的其他浮潜影片，称其中的水下摄影和声音设计也值得关注。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-pengpt-从文字生成笔画也能跟写没见过的笔迹-pengpt-a-generative-transformer-for-handwriting-and-sketches&#34;&gt;
+  10. PenGPT 从文字生成笔画，也能跟写没见过的笔迹 (PenGPT: A Generative Transformer for Handwriting and Sketches)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-pengpt-%e4%bb%8e%e6%96%87%e5%ad%97%e7%94%9f%e6%88%90%e7%ac%94%e7%94%bb%e4%b9%9f%e8%83%bd%e8%b7%9f%e5%86%99%e6%b2%a1%e8%a7%81%e8%bf%87%e7%9a%84%e7%ac%94%e8%bf%b9-pengpt-a-generative-transformer-for-handwriting-and-sketches&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://greydanus.github.io/2026/11/12/pengpt/&#34;&gt;https://greydanus.github.io/2026/11/12/pengpt/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PenGPT 把写字和画图都表示成笔尖在网格上的移动，以及落笔、抬笔的动作，再用字节对编码合并常见的动作序列。论文中的手写模型有 520 万参数，示例中给它未见过的作者手写的一到三个词，就能接写其笔迹；5,400 万参数版本可根据短文字提示生成草图。训练素材分别来自 1,255 名写作者的约 49.6 万词和十套公开数据集筛出的约 47.8 万张草图。
+消融显示，把手写样本拆成单词单独训练会明显损害风格跟写，草图去掉数据增强后明显不易对齐提示。用 OCR 逐词完全识别的口径，生成手写约为 54%，真实手写约为 66%。模型还能混合熟悉的造型，但常分不清谁戴帽子或朝哪边；来自扫描件的笔顺是自动描摹推断出来的，并非原作者当时的真实轨迹。项目提供论文、代码和权重，未发布整理后的训练集。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-388-points--评论-77-comments--投稿者smusamashah--发布时间2026-11-25-085449-0800&#34;&gt;
+  HN 热度 388 points | 评论 77 comments | 投稿者：smusamashah | 发布时间：2026-11-25 08:54:49 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-388-points--%e8%af%84%e8%ae%ba-77-comments--%e6%8a%95%e7%a8%bf%e8%80%85smusamashah--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-25-085449-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50637056&#34;&gt;https://news.ycombinator.com/item?id=50637056&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有试用者指出，生成草书时有些字母的运笔方式不符合他熟悉的写法。&lt;/li&gt;
+&lt;li&gt;有读者从消融实验中得到的启发是，先把数据准备和训练流程做好，可能比追求架构新奇更有回报。&lt;/li&gt;
+&lt;li&gt;一位试用者输入带重音符号的西班牙文，发现处理效果不理想。&lt;/li&gt;
+&lt;li&gt;一位正在为 Rokid 眼镜开发书写教学应用的读者想试用该项目。&lt;/li&gt;
+&lt;li&gt;有开发者希望用生成笔迹补充自己的手写 OCR 数据集，尚未分享效果。&lt;/li&gt;
+&lt;li&gt;一位回复者怀疑草图斜线的抖动来自网格量化，指出表示方式也会限制生成效果。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-25 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-25-HackerNews/</link>
+      <pubDate>Wed, 25 Nov 2026 07:34:40 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-25-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-25-hacker-news-top-stories&#34;&gt;
+  2026-11-25 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-25-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Andreas Kling 宣布 Ladybird Alpha 可在 macOS 和 Linux 下载，采用从头编写的独立引擎，并会滚动自动更新；团队明确提醒仍会遇到网页不兼容和崩溃。&lt;/li&gt;
+&lt;li&gt;Yann LeCun 在社交媒体上指责 Anthropic CEO Dario Amodei 夸大 AI 风险，意在推动限制开放模型；这是一项动机指控，帖子没有提供能证实动机的材料。&lt;/li&gt;
+&lt;li&gt;Jon 的 Arm Reference 公告称，收到 Arm 律师要求下架的通知后，打算在 12 月 4 日停站，并考虑怎样让已有书签和链接继续有效。&lt;/li&gt;
+&lt;li&gt;Farid Zakaria 把 trynix.dev 的默认引擎改为将 Linux 编译到 WebAssembly 的 unkernel；所列初次运行测试比旧版 QEMU 快 2 至 32 倍，最极端的多层 Firefox 演示仍耗时逾四小时。&lt;/li&gt;
+&lt;li&gt;Michael Harley 想用 Claude Code 从 Instagram 短视频找到 Bandcamp 购买链接，却在站点加入访问检查后遇到拒绝，因此开始考虑自托管代理。&lt;/li&gt;
+&lt;li&gt;纽约州州长 Kathy Hochul 签署 A10411A，限制对购车或租车时已预装、激活后无需持续成本或支持的功能收取订阅费；联网服务和软件依赖的驾驶辅助等获明确豁免。&lt;/li&gt;
+&lt;li&gt;Stalwart 1.2.0 在 AGPL 社区版加入 MAPI over HTTP、EWS、ActiveSync 和 Autodiscover，为自托管 Exchange 迁移提供过渡，但新版 Windows Outlook 和若干企业功能仍不支持。&lt;/li&gt;
+&lt;li&gt;维护九年的开源笔记应用 FSNotes 据作者称从欧洲 App Store 下架；他已提交合规与登记材料，却未收到两次支持工单的答复，GitHub 仍提供免费构建。&lt;/li&gt;
+&lt;li&gt;一位分析者称，有账户在特朗普公开表态前约 89 分钟完成约 4,649 美元的集中押注，按结果结算价值约 71,518 美元；链上记录不能证明账户身份或其是否掌握内幕。&lt;/li&gt;
+&lt;li&gt;Kagi Mail 开启 60 天公测体验，随后每年 99 美元另计适用税费，Ultimate 已包含；服务基于 Stalwart，并支持自定义域、IMAP、JMAP 和 CalDAV。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-ladybird-发布-alpha独立浏览器引擎开放下载-ladybird-is-now-in-alpha&#34;&gt;
+  1. Ladybird 发布 Alpha，独立浏览器引擎开放下载 (Ladybird is now in alpha)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-ladybird-%e5%8f%91%e5%b8%83-alpha%e7%8b%ac%e7%ab%8b%e6%b5%8f%e8%a7%88%e5%99%a8%e5%bc%95%e6%93%8e%e5%bc%80%e6%94%be%e4%b8%8b%e8%bd%bd-ladybird-is-now-in-alpha&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://ladybird.org/posts/alpha/&#34;&gt;https://ladybird.org/posts/alpha/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ladybird 项目发布了 Alpha 测试版，在 macOS 和 Linux 上提供可下载的构建。Andreas Kling 强调，网页引擎是项目自行构建的，不是从现有浏览器引擎分叉；浏览器外壳目前功能相对简单。此前用户需要从源码构建才能跟进开发，现在 Alpha 渠道会定期自动更新。&lt;/p&gt;
+&lt;p&gt;用户可以在应用内报告损坏的站点，崩溃后可先查看报告，再选择是否提交。项目也支持 WebDriver 和 Firefox DevTools 协议，方便网站开发者使用现有工具查问题。团队把这次发布定位为扩大测试：并非所有站点都可用，也不对当前安全性作保证。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-2375-points--评论-593-comments--投稿者janvdberg--发布时间2026-11-24-001312-0800&#34;&gt;
+  HN 热度 2375 points | 评论 593 comments | 投稿者：janvdberg | 发布时间：2026-11-24 00:13:12 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-2375-points--%e8%af%84%e8%ae%ba-593-comments--%e6%8a%95%e7%a8%bf%e8%80%85janvdberg--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-001312-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50614249&#34;&gt;https://news.ycombinator.com/item?id=50614249&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者认为，使用 SQLite 和 Skia 等成熟组件，让团队更能集中精力开发浏览器引擎。&lt;/li&gt;
+&lt;li&gt;有长期关注者推荐项目的视频更新，因为其中记录了兼容性测试和网站支持的变化。&lt;/li&gt;
+&lt;li&gt;有人把广告拦截视为采用新浏览器的前提，希望看到内建方案或 uBlock Origin 支持。&lt;/li&gt;
+&lt;li&gt;独立引擎让人期待，但 Alpha 的安全提示也让用户开始考虑测试时应与日常账号隔离到什么程度。&lt;/li&gt;
+&lt;li&gt;一位正在用 Alpha 发帖的读者说，自己的几个网站都能正常工作。&lt;/li&gt;
+&lt;li&gt;也有人不喜欢近似 Chrome 的界面，希望它更贴合操作系统的原生交互。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-yann-lecun-指责-dario-amodei-借风险叙事争夺开放模型控制权-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-control&#34;&gt;
+  2. Yann LeCun 指责 Dario Amodei 借风险叙事争夺开放模型控制权 (&amp;ldquo;Dario is hyping the dangers so OSS models are illegal and he stays in control&amp;rdquo;)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-yann-lecun-%e6%8c%87%e8%b4%a3-dario-amodei-%e5%80%9f%e9%a3%8e%e9%99%a9%e5%8f%99%e4%ba%8b%e4%ba%89%e5%a4%ba%e5%bc%80%e6%94%be%e6%a8%a1%e5%9e%8b%e6%8e%a7%e5%88%b6%e6%9d%83-dario-is-hyping-the-dangers-so-oss-models-are-illegal-and-he-stays-in-control&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://twitter.com/ylecun/status/2124550037912920090&#34;&gt;https://twitter.com/ylecun/status/2124550037912920090&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原 X 链接未能直读，以下依据公开索引中同一账号、同一帖子 ID 的正文整理。LeCun 声称，从 GPT‑2 时代起，Amodei 就通过强调 AI 危险来推动对开放模型的限制，并把 Amodei 离开 OpenAI 也解释为控制权之争。他以限制印刷术的历史类比表达对少数机构掌握知识渠道的担忧。&lt;/p&gt;
+&lt;p&gt;这条帖子的实质是对监管叙事及行业权力的批评。它没有举出可以证实个人动机的内部记录，也没有评估哪项监管提案会限制哪些模型。LeCun 的推断、开放权重的政策效果和不同 AI 风险的证据，应分别看待。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1980-points--评论-1165-comments--投稿者mrbuddycasino--发布时间2026-11-24-010726-0800&#34;&gt;
+  HN 热度 1980 points | 评论 1165 comments | 投稿者：MrBuddyCasino | 发布时间：2026-11-24 01:07:26 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1980-points--%e8%af%84%e8%ae%ba-1165-comments--%e6%8a%95%e7%a8%bf%e8%80%85mrbuddycasino--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-010726-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50615308&#34;&gt;https://news.ycombinator.com/item?id=50615308&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者主张依据可验证的风险证据讨论政策，推断高管的私下动机无法回答模型究竟有多危险。&lt;/li&gt;
+&lt;li&gt;一种观点区分了人利用 AI 实施滥用与人对系统失去控制，这两类风险不应使用同一套论证。&lt;/li&gt;
+&lt;li&gt;有回复指出，认为某个团队更适合管理风险，并不必然等于认定其他人都没有能力。&lt;/li&gt;
+&lt;li&gt;有人提醒，开放下载权重和开放训练代码、数据及过程不是同一件事。&lt;/li&gt;
+&lt;li&gt;有回复以 AI2 的 OLMo 为例，指出也存在公开程度超出权重的项目。&lt;/li&gt;
+&lt;li&gt;对以低价订阅制造依赖的判断，有读者认为没有真实用量与成本结构就无法证实。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-jon-的-arm-指令参考站应-arm-要求拟于-12-月-4-日关闭-per-arms-request-this-site-will-be-discontinued-on-4-december-2026-&#34;&gt;
+  3. Jon 的 Arm 指令参考站应 Arm 要求拟于 12 月 4 日关闭 (Per Arm&amp;rsquo;s request, this site will be discontinued on 4 December 2026 :()
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-jon-%e7%9a%84-arm-%e6%8c%87%e4%bb%a4%e5%8f%82%e8%80%83%e7%ab%99%e5%ba%94-arm-%e8%a6%81%e6%b1%82%e6%8b%9f%e4%ba%8e-12-%e6%9c%88-4-%e6%97%a5%e5%85%b3%e9%97%ad-per-arms-request-this-site-will-be-discontinued-on-4-december-2026-&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://arm.jonpalmisc.com/&#34;&gt;https://arm.jonpalmisc.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jon&amp;rsquo;s Arm Reference 提供 Armv8-A 与 Armv9-A 的 AArch64 指令和系统寄存器资料，读者可通过索引搜索，也可按基础指令、SIMD、SVE、SME 等分组浏览。站长 Jon 在首页称，Arm 的律师要求撤下网站，否则可能采取法律行动；他据此计划在 2026 年 12 月 4 日停止服务。&lt;/p&gt;
+&lt;p&gt;Jon 感谢多年使用站点的读者，并表示会研究能否维持书签与外部链接。页面没有公开律师函、具体条款或 Arm 的回应，因此不能只凭公告判断最终法律依据、资料可以怎样再分发，或是否会有后续替代站点。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1157-points--评论-283-comments--投稿者tech234a--发布时间2026-11-24-031755-0800&#34;&gt;
+  HN 热度 1157 points | 评论 283 comments | 投稿者：tech234a | 发布时间：2026-11-24 03:17:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1157-points--%e8%af%84%e8%ae%ba-283-comments--%e6%8a%95%e7%a8%bf%e8%80%85tech234a--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-031755-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50617499&#34;&gt;https://news.ycombinator.com/item?id=50617499&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有使用者认为，官方架构资料的获取体验近年有所下降，第三方索引因此更有价值。&lt;/li&gt;
+&lt;li&gt;有人回忆芯片厂商过去会向程序员发纸质手册，认为方便查阅有助于扩大硬件生态。&lt;/li&gt;
+&lt;li&gt;有回复提醒，指令行为本身与沿用原手册的表达文字，在版权讨论里是不同问题。&lt;/li&gt;
+&lt;li&gt;有读者指出 Arm 官网已有可浏览的官方文档，可以作为查阅渠道。&lt;/li&gt;
+&lt;li&gt;站长回应，站点当前没有开源，但考虑过单独公开不含 Arm 内容的部分。&lt;/li&gt;
+&lt;li&gt;有观点认为，厂商若认可第三方阅读体验，可以考虑接纳这项工作，而不是只要求下架。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-trynix-用-unkernel-在浏览器里运行-nix-图形应用-2035-came-early&#34;&gt;
+  4. TryNix 用 unkernel 在浏览器里运行 Nix 图形应用 (2035 came early)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-trynix-%e7%94%a8-unkernel-%e5%9c%a8%e6%b5%8f%e8%a7%88%e5%99%a8%e9%87%8c%e8%bf%90%e8%a1%8c-nix-%e5%9b%be%e5%bd%a2%e5%ba%94%e7%94%a8-2035-came-early&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://fzakaria.com/2026/11/23/2035-came-early&#34;&gt;https://fzakaria.com/2026/11/23/2035-came-early&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Farid Zakaria 受到 Gary Bernhardt 关于浏览器成为操作系统的演讲启发，介绍如何在 trynix.dev 用浏览器运行 Nix 软件包。早期使用 QEMU 的浏览器版，速度更适合展示；新引擎 unkernel 将 Linux 内核编译为 WebAssembly，只模拟用户程序，因此作者列出的首跑基准在不同任务上比原方案快约 2 至 32 倍。&lt;/p&gt;
+&lt;p&gt;浏览器页面可合成 Wayland 窗口，通过 WebGL2 支持画面，也能播放声音和经中继联网。作者还演示在 Firefox 标签页中启动 Firefox，再用它打开 TryNix 并嵌套启动另一层。该演示花了四个多小时并需要调整图形与运行时设置，不能当作常规桌面应用的速度参考。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-945-points--评论-359-comments--投稿者setheron--发布时间2026-11-24-143033-0800&#34;&gt;
+  HN 热度 945 points | 评论 359 comments | 投稿者：setheron | 发布时间：2026-11-24 14:30:33 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-945-points--%e8%af%84%e8%ae%ba-359-comments--%e6%8a%95%e7%a8%bf%e8%80%85setheron--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-143033-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50624497&#34;&gt;https://news.ycombinator.com/item?id=50624497&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者指出，这个演示依赖 WebAssembly，不能直接算作当年关于 JavaScript 的字面预言兑现。&lt;/li&gt;
+&lt;li&gt;能把浏览器放进浏览器再继续嵌套，令有读者惊讶，哪怕它暂时只是技术演示。&lt;/li&gt;
+&lt;li&gt;有回复补充 TryNix 早已存在，后来才更换为 unkernel，项目与底层引擎应分别归功。&lt;/li&gt;
+&lt;li&gt;有读者报告网页没能成功加载演示，实际运行仍受设备与浏览器环境影响。&lt;/li&gt;
+&lt;li&gt;有人想知道除了演示和试用软件外，这种环境有没有更长期的用途。&lt;/li&gt;
+&lt;li&gt;一位试用者成功安装了 GCC 并编译运行小程序，同时指出下载本身已有约 118 MB。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-michael-harley-用买歌经历说明托管-ai-代理受供应商政策约束-llm-agents-work-for-their-parent-companies-not-for-you&#34;&gt;
+  5. Michael Harley 用买歌经历说明托管 AI 代理受供应商政策约束 (LLM agents work for their parent companies, not for you)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-michael-harley-%e7%94%a8%e4%b9%b0%e6%ad%8c%e7%bb%8f%e5%8e%86%e8%af%b4%e6%98%8e%e6%89%98%e7%ae%a1-ai-%e4%bb%a3%e7%90%86%e5%8f%97%e4%be%9b%e5%ba%94%e5%95%86%e6%94%bf%e7%ad%96%e7%ba%a6%e6%9d%9f-llm-agents-work-for-their-parent-companies-not-for-you&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/&#34;&gt;https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Michael Harley 原本用 Claude Code 制作一个音乐发现流程：从 Instagram 短视频识别歌曲，再寻找可以付费支持作者的 Bandcamp 页面。Bandcamp 给搜索接口加入访问检查后，Claude 表示不会帮助绕过，原流程无法照常运行。Harley 说，代理在另一路径上却愿意帮助取得 YouTube 音频，令他觉得产品的行为边界和他的付费购买目标并不一致。&lt;/p&gt;
+&lt;p&gt;他由此讨论云端代理的控制权，并担心将来供应商可能给付费推荐或平台利益更高权重。他想改用本地模型，也承认开放权重不等于知道训练过程，更不意味着模型没有自己的偏差或限制。这是个人经历及对未来的担忧，不能据此认定现在已有付费排名或定向操纵。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-866-points--评论-365-comments--投稿者surprisetalk--发布时间2026-11-24-204015-0800&#34;&gt;
+  HN 热度 866 points | 评论 365 comments | 投稿者：surprisetalk | 发布时间：2026-11-24 20:40:15 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-866-points--%e8%af%84%e8%ae%ba-365-comments--%e6%8a%95%e7%a8%bf%e8%80%85surprisetalk--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-204015-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50627340&#34;&gt;https://news.ycombinator.com/item?id=50627340&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者指出，由一次拒绝推断整个行业的意图属于作者立场，不能当成客观结论。&lt;/li&gt;
+&lt;li&gt;有人借搜索和社交平台的广告经验，担忧托管代理以后也会优先满足商业激励。&lt;/li&gt;
+&lt;li&gt;也有人认为，厂商能否长期抽取超额收益要看市场能否形成竞争，锁定并非唯一可能结果。&lt;/li&gt;
+&lt;li&gt;有读者用本地 Qwen 和 LangGraph 实现自己的代理，发现相当一部分工作可以交给常规代码。&lt;/li&gt;
+&lt;li&gt;一种观点认为，能否控制代理部署和迁移数据，比服务商是否把它称为个人助手更能说明用户掌握多少权力。&lt;/li&gt;
+&lt;li&gt;将代理框架与模型后端拆开，可让使用者自行决定哪些任务在本地跑、哪些适合外部服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-纽约州限制对部分预装车载功能收取订阅费-new-york-bans-subscription-and-post-purchase-fees-on-cars&#34;&gt;
+  6. 纽约州限制对部分预装车载功能收取订阅费 (New York Bans Subscription and Post-Purchase Fees on Cars)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e7%ba%bd%e7%ba%a6%e5%b7%9e%e9%99%90%e5%88%b6%e5%af%b9%e9%83%a8%e5%88%86%e9%a2%84%e8%a3%85%e8%bd%a6%e8%bd%bd%e5%8a%9f%e8%83%bd%e6%94%b6%e5%8f%96%e8%ae%a2%e9%98%85%e8%b4%b9-new-york-bans-subscription-and-post-purchase-fees-on-cars&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription&#34;&gt;https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;纽约州州长 Kathy Hochul 宣布签署 S.9348A／A.10411A。签署文本禁止制造商、经销商或其代理为满足两个条件的车载功能提供订阅：购买或租赁时已经安装所需硬件及组件；激活后不需经销商、制造商或第三方持续支出或支持。预装座椅加热是文本举出的例子。正式法条把订阅定义为重复付款，不宜依标题推断一切售后单次收费都被禁止。&lt;/p&gt;
+&lt;p&gt;条文排除导航更新、资讯娱乐、卫星广播、车载 Wi‑Fi、远程信息、道路救援、依赖软件的驾驶辅助或驾驶自动化，以及依赖数据网络持续运行的服务。生效条款写的是成为法律之后第 90 天；州长新闻稿另列 2027 年 2 月 27 日，与签署日期按日推算不一致，故这里以条文措辞为准。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://www.nysenate.gov/legislation/bills/2025/A10411/amendment/A&#34;&gt;https://www.nysenate.gov/legislation/bills/2025/A10411/amendment/A&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-757-points--评论-399-comments--投稿者deeplogin--发布时间2026-11-24-102702-0800&#34;&gt;
+  HN 热度 757 points | 评论 399 comments | 投稿者：DeepLogin | 发布时间：2026-11-24 10:27:02 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-757-points--%e8%af%84%e8%ae%ba-399-comments--%e6%8a%95%e7%a8%bf%e8%80%85deeplogin--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-102702-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50622774&#34;&gt;https://news.ycombinator.com/item?id=50622774&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一种预期是车企会把一部分原来的订阅收益并回整车售价。&lt;/li&gt;
+&lt;li&gt;有回复认为，即使标价提高，买家也更容易在购车时比较总成本。&lt;/li&gt;
+&lt;li&gt;有读者翻查例外条款，指出不能据此断言依赖软件的自动驾驶功能不得收费。&lt;/li&gt;
+&lt;li&gt;有人担心厂商可能把原本离线的功能改造为持续联网服务，从而挑战条文边界。&lt;/li&gt;
+&lt;li&gt;支持者认为，不需要持续成本的已装功能应由车辆所有者继续使用，并希望类似保护扩及其他硬件。&lt;/li&gt;
+&lt;li&gt;也有人认为，统一预装硬件再按需开通可能比让消费者事后改装便宜，并不总是坏交易。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-stalwart-120-增加-exchange-协议支持经典-outlook-连接-stalwart-is-now-a-drop-in-replacement-for-microsoft-exchange&#34;&gt;
+  7. Stalwart 1.2.0 增加 Exchange 协议，支持经典 Outlook 连接 (Stalwart is now a drop-in replacement for Microsoft Exchange)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-stalwart-120-%e5%a2%9e%e5%8a%a0-exchange-%e5%8d%8f%e8%ae%ae%e6%94%af%e6%8c%81%e7%bb%8f%e5%85%b8-outlook-%e8%bf%9e%e6%8e%a5-stalwart-is-now-a-drop-in-replacement-for-microsoft-exchange&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://stalw.art/blog/microsoft-exchange-replacement/&#34;&gt;https://stalw.art/blog/microsoft-exchange-replacement/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stalwart 1.2.0 宣布支持经典 Windows Outlook 使用的 MAPI over HTTP，以及 EWS、ActiveSync 和 Autodiscover。邮件、日历、联系人等数据进入同一账户，也可以由 JMAP、IMAP、CalDAV 等客户端访问；发布稿列出共享邮箱、委派及服务端规则等能力。这些协议进入 AGPL 社区版，在官方构建中默认关闭。&lt;/p&gt;
+&lt;p&gt;项目将其定位为分阶段迁移的桥梁：先用 Vandelay 从本地 Exchange 或 Microsoft 365 迁移邮箱，再逐步更换客户端。兼容范围并不覆盖新版 Windows Outlook 的 Exchange 连接、公共文件夹、归档邮箱、移动设备管理、老式 RPC over HTTP 或 NTLM／Kerberos 登录。部署前仍要核对现有工作流与认证需求，不能把标题里的直接替换理解为无条件等同。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-684-points--评论-343-comments--投稿者shaunpud--发布时间2026-11-24-063229-0800&#34;&gt;
+  HN 热度 684 points | 评论 343 comments | 投稿者：shaunpud | 发布时间：2026-11-24 06:32:29 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-684-points--%e8%af%84%e8%ae%ba-343-comments--%e6%8a%95%e7%a8%bf%e8%80%85shaunpud--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-063229-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50620349&#34;&gt;https://news.ycombinator.com/item?id=50620349&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有自托管 Exchange 用户说，微软改为年度授权后，团队一直在寻找迁移方案。&lt;/li&gt;
+&lt;li&gt;有读者认为，实现 MAPI 可以争取迁移时间并减少授权成本，但并未消除客户端造成的锁定。&lt;/li&gt;
+&lt;li&gt;有测试从业者担心，兼容层若漏掉企业用户依赖的角落功能，出了问题会增加支持成本。&lt;/li&gt;
+&lt;li&gt;新版 Outlook 的方向让一些读者质疑，维护经典协议的收益能持续多久。&lt;/li&gt;
+&lt;li&gt;对小型邮件服务器管理员而言，是否比现有 Postfix 和 Dovecot 组合更易维护，可能比 Exchange 兼容更重要。&lt;/li&gt;
+&lt;li&gt;一位 Stalwart 用户认可产品，但指出外部邮件接收方的 IP 信誉规则仍可能影响自托管邮件投递。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-fsnotes-开发者称应用从欧洲商店下架两次求助未获答复-apple-removed-my-open-source-app-from-eu-app-stores-after-9-years&#34;&gt;
+  8. FSNotes 开发者称应用从欧洲商店下架，两次求助未获答复 (Apple removed my open-source app from EU App Stores after 9 years)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-fsnotes-%e5%bc%80%e5%8f%91%e8%80%85%e7%a7%b0%e5%ba%94%e7%94%a8%e4%bb%8e%e6%ac%a7%e6%b4%b2%e5%95%86%e5%ba%97%e4%b8%8b%e6%9e%b6%e4%b8%a4%e6%ac%a1%e6%b1%82%e5%8a%a9%e6%9c%aa%e8%8e%b7%e7%ad%94%e5%a4%8d-apple-removed-my-open-source-app-from-eu-app-stores-after-9-years&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/glushchenko/fsnotes/discussions/2056&#34;&gt;https://github.com/glushchenko/fsnotes/discussions/2056&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FSNotes 维护者在 GitHub 发公开信，称自己的 macOS 和 iOS 笔记应用从欧洲 App Store 下架，没有得到清楚解释。他最初注意到 10 月销售款未到账，随后于 11 月 5 日、17 日分别联系支持。他表示已在 App Store Connect 完成欧盟《数字服务法》相关信息，并提交乌克兰商业登记文件；截至发帖仍未收到工单答复。&lt;/p&gt;
+&lt;p&gt;维护者担忧销售收入、搜索排名与既有用户发现渠道受影响。他承诺继续通过 GitHub 提供源码和免费构建，并要求苹果审查材料、说明原因、给出补救渠道。公开信是开发者一方的叙述，不能据此确认具体触发规则、地区范围或款项与下架之间的因果关系。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-613-points--评论-164-comments--投稿者fluder--发布时间2026-11-24-024810-0800&#34;&gt;
+  HN 热度 613 points | 评论 164 comments | 投稿者：fluder | 发布时间：2026-11-24 02:48:10 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-613-points--%e8%af%84%e8%ae%ba-164-comments--%e6%8a%95%e7%a8%bf%e8%80%85fluder--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-024810-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50616933&#34;&gt;https://news.ycombinator.com/item?id=50616933&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者不满开发者似乎只能靠公开发帖获得注意，希望正常支持渠道也能及时工作。&lt;/li&gt;
+&lt;li&gt;有人建议确认是否用过苹果正式的 App Review 申诉入口。&lt;/li&gt;
+&lt;li&gt;一位多次使用苹果开发者支持的读者说，自己过去也得到过令其失望的处理。&lt;/li&gt;
+&lt;li&gt;有读者核对到美国和英国商店仍可访问，推测可能涉及欧盟商家身份要求，但没有苹果的确认。&lt;/li&gt;
+&lt;li&gt;另一位开发者报告，自己应用在近期规则变化后等待约一个月才通过欧盟商家审核。&lt;/li&gt;
+&lt;li&gt;有评论指出，即使触发因素是法规，平台仍可把缺了什么材料和如何补正说清楚。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-链上分析追查黄仁勋复任前的-polymarket-大额押注-investigation-of-polymarket-insider-trading-on-the-reinstatement-of-jensen-huang&#34;&gt;
+  9. 链上分析追查黄仁勋复任前的 Polymarket 大额押注 (Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-%e9%93%be%e4%b8%8a%e5%88%86%e6%9e%90%e8%bf%bd%e6%9f%a5%e9%bb%84%e4%bb%81%e5%8b%8b%e5%a4%8d%e4%bb%bb%e5%89%8d%e7%9a%84-polymarket-%e5%a4%a7%e9%a2%9d%e6%8a%bc%e6%b3%a8-investigation-of-polymarket-insider-trading-on-the-reinstatement-of-jensen-huang&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/&#34;&gt;https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者根据 Polygon 的成交记录重建一个预测合约的交易时间线。合约问的是黄仁勋是否会在 2026 年末前回归英伟达。文章称，某账户在四笔交易中以每份 0.065 美元买入约 71,518 份肯定合约，总成本约 4,649 美元，最后一笔比特朗普在 Truth Social 公开支持复任约早 89 分钟。如果按每份 1 美元结算，这批份额的总价值约 71,518 美元，包含本金，不等于净利润。&lt;/p&gt;
+&lt;p&gt;作者将集中押注、钱包较新和交易时点视为可疑线索，也承认无法确认账户背后是谁或下注者为何这样做。链上可观察的成交不是对实际控制人、非公开信息传递或违规的证明；这是一份个人分析，并非监管机关的认定。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-465-points--评论-268-comments--投稿者oska--发布时间2026-11-24-191355-0800&#34;&gt;
+  HN 热度 465 points | 评论 268 comments | 投稿者：oska | 发布时间：2026-11-24 19:13:55 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-465-points--%e8%af%84%e8%ae%ba-268-comments--%e6%8a%95%e7%a8%bf%e8%80%85oska--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-191355-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50626578&#34;&gt;https://news.ycombinator.com/item?id=50626578&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大额收益也可能来自一次高风险押注，单看结果并不能证明下注者是内幕人士。&lt;/li&gt;
+&lt;li&gt;有人追问此前是否已有公开暗示，判断信息优势需要把较早的公开时间线纳入。&lt;/li&gt;
+&lt;li&gt;一种观点认为，信息更充分的人参与会提高即时预测质量，但也会让普通参与者面临更大的信息劣势。&lt;/li&gt;
+&lt;li&gt;有回复指出，即使信息交易能提高预测能力，用金钱奖励泄露敏感消息仍可能造成公共风险。&lt;/li&gt;
+&lt;li&gt;有读者认为应区分投资与博彩，也担心普通参与者看不清交易对手拥有什么信息。&lt;/li&gt;
+&lt;li&gt;有人进一步担忧，下注奖励的不只是率先揭示消息，也可能鼓励有权力的人促成对自己有利的结果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-kagi-mail-公开测试邮件日历和-50-gb-存储-kagi-mail-public-beta&#34;&gt;
+  10. Kagi Mail 公开测试：邮件、日历和 50 GB 存储 (Kagi Mail (public beta))
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-kagi-mail-%e5%85%ac%e5%bc%80%e6%b5%8b%e8%af%95%e9%82%ae%e4%bb%b6%e6%97%a5%e5%8e%86%e5%92%8c-50-gb-%e5%ad%98%e5%82%a8-kagi-mail-public-beta&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://blog.kagi.com/kagi-mail-public-beta&#34;&gt;https://blog.kagi.com/kagi-mail-public-beta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kagi 发布邮件与日历服务 Kagi Mail 的公开测试版，提供 50 GB 存储、kagimail.com 地址、自定义域名和不限数量的别名。服务器基于开源 Stalwart，并支持 IMAP、JMAP 和 CalDAV，因此可以用兼容的第三方客户端。测试体验期为 60 天，之后年费 99 美元另加适用税费，Kagi Ultimate 已包含。&lt;/p&gt;
+&lt;p&gt;公告列出跟踪像素防护、陌生发件人筛选、传统 Sieve 规则及可关闭的 AI 功能。共享地址已经可设，但共享邮箱仍标为即将推出；通讯录和原生移动应用也未上线。Kagi 称离开服务后账号仍可在六个月内访问：前 60 天可收发，余下四个月可读取、导出。这是公测服务的现有计划，兼容协议和关闭 AI 并不等同于端到端加密承诺。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-455-points--评论-375-comments--投稿者rdmuser--发布时间2026-11-24-011701-0800&#34;&gt;
+  HN 热度 455 points | 评论 375 comments | 投稿者：rdmuser | 发布时间：2026-11-24 01:17:01 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-455-points--%e8%af%84%e8%ae%ba-375-comments--%e6%8a%95%e7%a8%bf%e8%80%85rdmuser--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-24-011701-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50615481&#34;&gt;https://news.ycombinator.com/item?id=50615481&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位 Fastmail 用户觉得每年 99 美元偏高，若价格接近现用服务才会考虑迁移。&lt;/li&gt;
+&lt;li&gt;有企业用户认为，若文档和表格也能一起替换，搬离 Google 的动力会更大。&lt;/li&gt;
+&lt;li&gt;也有人认为，选邮件服务前要弄清服务器能看到什么，以及存储采用什么加密方式。&lt;/li&gt;
+&lt;li&gt;因为邮件往往是其他账号恢复的入口，有读者更重视供应商的长期可靠性，不愿只为新界面搬迁。&lt;/li&gt;
+&lt;li&gt;日历 API 被列为实际需求，有开发者希望它比现有主流服务更方便集成。&lt;/li&gt;
+&lt;li&gt;有人欢迎市场多一个选择，但刚从 Gmail 搬出来，现用 Fastmail 对他已经足够。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2026-11-24 Hacker News Top Stories</title>
+      <link>https://supertechfans.com/cn/post/2026-11-24-HackerNews/</link>
+      <pubDate>Tue, 24 Nov 2026 07:27:59 +0800</pubDate>
+      
+      <guid>https://supertechfans.com/cn/post/2026-11-24-HackerNews/</guid>
+      <description>&lt;h1 id=&#34;2026-11-24-hacker-news-top-stories&#34;&gt;
+  2026-11-24 Hacker News Top Stories
+  &lt;a class=&#34;anchor&#34; href=&#34;#2026-11-24-hacker-news-top-stories&#34;&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;英伟达董事会 11 月 23 日一致同意黄仁勋复任总裁、CEO 和董事；特朗普称曾与董事会沟通，公司则表示独立调查会继续。&lt;/li&gt;
+&lt;li&gt;英伟达正式公告确认黄仁勋即时复任总裁、CEO 和董事，Colette Kress 继续任财务长、Harvey C. Jones 留任董事会主席，独立调查不因复任而终止。&lt;/li&gt;
+&lt;li&gt;智谱让 7500 亿参数的 GLM-5.4 把中间 28 层运行两遍，并采用跨轮共享 KV 与局部窗口控制缓存开销；权重仍待后续发布。&lt;/li&gt;
+&lt;li&gt;SPELUNKR 把 Internet Archive 的旧节目编排成全天同步播出的免费频道，让观众像换有线电视频道一样，从正在播放的位置加入。&lt;/li&gt;
+&lt;li&gt;Tim O’Reilly 从 1993 年的 GNN 门户谈到搜索广告、风投补贴和 AI，认为股东回报激励将企业推向抽取价值，并主张用开放接口、可迁移数据和互操作性重建市场规则。&lt;/li&gt;
+&lt;li&gt;Jerry James 用 RTX 5090 32 GB 和四位量化 Qwen3.8-27B 演示家庭部署；Inkling 2 Mini 也可替换使用，但模型文件以外还要为上下文预留内存。&lt;/li&gt;
+&lt;li&gt;Jakub Pachocki 公布 OpenAI 内部留出代码集上的对数困惑度：GPT‑3.5 约 0.99、GPT‑4 约 0.91，并提议让该指标与安全评测共同约束开发节奏。&lt;/li&gt;
+&lt;li&gt;Nicholas Lund 用游戏内望远镜找齐《GTA VI》进度表中的 60 种鸟，既看见南佛罗里达栖息地的细节，也指出游戏夸大了一些稀有种的出现频率。&lt;/li&gt;
+&lt;li&gt;xnulinux 报告已在 Apple Silicon 的 Linux 虚拟机及裸机 NVIDIA DGX Spark 上启动 macOS 27 桌面；DGX Spark 暂用 CPU 渲染，项目仍是实验性质。&lt;/li&gt;
+&lt;li&gt;Ari Dutilh 的 Small SF 把旧金山三维地图逐块转为等距插画，再叠加真实公交、船舶、飞机及天气数据；道路上的私家车是模拟的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-英伟达董事会恢复黄仁勋职务复任后调查仍将继续-nvidia-reinstates-jensen-huang-as-ceo&#34;&gt;
+  1. 英伟达董事会恢复黄仁勋职务，复任后调查仍将继续 (Nvidia Reinstates Jensen Huang as CEO)
+  &lt;a class=&#34;anchor&#34; href=&#34;#1-%e8%8b%b1%e4%bc%9f%e8%be%be%e8%91%a3%e4%ba%8b%e4%bc%9a%e6%81%a2%e5%a4%8d%e9%bb%84%e4%bb%81%e5%8b%8b%e8%81%8c%e5%8a%a1%e5%a4%8d%e4%bb%bb%e5%90%8e%e8%b0%83%e6%9f%a5%e4%bb%8d%e5%b0%86%e7%bb%a7%e7%bb%ad-nvidia-reinstates-jensen-huang-as-ceo&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html&#34;&gt;https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CNBC 原站未能直读；以下依据 Republic of Mining 公开刊载的 CNBC 正文节选，以及美联社对同一事件的报道整理。11 月 23 日，英伟达宣布董事会一致同意黄仁勋复任，即时生效。董事会表示，此前与黄仁勋进行了多轮沟通，并收到了美国政府高层的意见。特朗普在接受 CNBC 采访时称，他曾直接或间接与董事会沟通；这是他对自身参与的描述，不能仅凭该采访确定董事会每位成员投票的原因。&lt;/p&gt;
+&lt;p&gt;美联社报道，英伟达股价当日收于 165.05 美元，较上一交易日上涨逾 31%，但仍低于上月高位。另据公司公告，董事会独立委员会的调查会继续进行。决定恢复职务与调查得出结论是两件事，市场涨幅也不能证明风险已经消除。&lt;/p&gt;
+&lt;p&gt;补充来源：
+
+  &lt;a href=&#34;https://republicofmining.com/2026/11/23/jensen-huang-reinstated-as-nvidia-ceo-stock-skyrockets-33-ashley-capoot-and-semma-mody-cnbc-com-november-23-2026/&#34;&gt;https://republicofmining.com/2026/11/23/jensen-huang-reinstated-as-nvidia-ceo-stock-skyrockets-33-ashley-capoot-and-semma-mody-cnbc-com-november-23-2026/&lt;/a&gt;
+
+  &lt;a href=&#34;https://apnews.com/article/39d4b34ffaa867b4e669893b5fd5028f&#34;&gt;https://apnews.com/article/39d4b34ffaa867b4e669893b5fd5028f&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1881-points--评论-2970-comments--投稿者jaz--发布时间2026-11-23-220018-0800&#34;&gt;
+  HN 热度 1881 points | 评论 2970 comments | 投稿者：jaz | 发布时间：2026-11-23 22:00:18 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1881-points--%e8%af%84%e8%ae%ba-2970-comments--%e6%8a%95%e7%a8%bf%e8%80%85jaz--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-220018-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50611576&#34;&gt;https://news.ycombinator.com/item?id=50611576&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一种批评认为，涉及的商业利益越大，高管越容易避免实际问责。&lt;/li&gt;
+&lt;li&gt;有读者把股价压力视为董事会改变决定的主要因素，但这是对动机的推断。&lt;/li&gt;
+&lt;li&gt;也有回复追问，政府的介入是否比市场压力更直接地影响了结果。&lt;/li&gt;
+&lt;li&gt;短短不到两周就出现人事逆转，让部分读者意外。&lt;/li&gt;
+&lt;li&gt;有人质疑反复改变领导层安排是否会损害投资者对公司治理的信心。&lt;/li&gt;
+&lt;li&gt;有读者质疑将英伟达在 AI 领域的成功主要归功于黄仁勋个人，认为显卡产业既有基础和时机同样值得考虑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-英伟达公告黄仁勋复任独立委员会继续调查-jensen-huang-reinstated-as-nvidia-ceo&#34;&gt;
+  2. 英伟达公告：黄仁勋复任，独立委员会继续调查 (Jensen Huang Reinstated as Nvidia CEO)
+  &lt;a class=&#34;anchor&#34; href=&#34;#2-%e8%8b%b1%e4%bc%9f%e8%be%be%e5%85%ac%e5%91%8a%e9%bb%84%e4%bb%81%e5%8b%8b%e5%a4%8d%e4%bb%bb%e7%8b%ac%e7%ab%8b%e5%a7%94%e5%91%98%e4%bc%9a%e7%bb%a7%e7%bb%ad%e8%b0%83%e6%9f%a5-jensen-huang-reinstated-as-nvidia-ceo&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director&#34;&gt;https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英伟达公告称，董事会一致投票恢复黄仁勋的总裁、CEO 和董事职务。董事会表示，在与黄仁勋多次会面、听取美国政府高层意见后，对他的坦诚和领导能力表示满意，并认为复任不构成国家安全风险。Colette Kress 结束代理 CEO 工作，继续担任财务长；Harvey C. Jones 仍任董事会主席。&lt;/p&gt;
+&lt;p&gt;公司同时表示，早先由独立董事组成并聘请独立律师的调查委员会会继续工作直至结案；另设由独立董事组成的国家安全与出口管制委员会，并开始物色首席合规官。公告没有宣布调查结束或披露最终认定。此帖的主要讨论由 HN 版务合并至第 1 篇。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1700-points--评论-4-comments--投稿者alanwong--发布时间2026-11-23-220123-0800&#34;&gt;
+  HN 热度 1700 points | 评论 4 comments | 投稿者：alanwong | 发布时间：2026-11-23 22:01:23 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1700-points--%e8%af%84%e8%ae%ba-4-comments--%e6%8a%95%e7%a8%bf%e8%80%85alanwong--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-220123-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50611588&#34;&gt;https://news.ycombinator.com/item?id=50611588&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;版务说明，同事件已有更早提交，且公司新闻稿常省略背景，因此将讨论集中到先提交的第三方报道。&lt;/li&gt;
+&lt;li&gt;仍有读者在本帖直接表示支持董事会的复任决定。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-智谱发布-glm-54首次在旗舰模型中采用循环-transformer-glm-54-toward-generalized-coding-with-our-first-loop-transformer&#34;&gt;
+  3. 智谱发布 GLM-5.4，首次在旗舰模型中采用循环 Transformer (GLM-5.4: Toward generalized coding with our first loop transformer)
+  &lt;a class=&#34;anchor&#34; href=&#34;#3-%e6%99%ba%e8%b0%b1%e5%8f%91%e5%b8%83-glm-54%e9%a6%96%e6%ac%a1%e5%9c%a8%e6%97%97%e8%88%b0%e6%a8%a1%e5%9e%8b%e4%b8%ad%e9%87%87%e7%94%a8%e5%be%aa%e7%8e%af-transformer-glm-54-toward-generalized-coding-with-our-first-loop-transformer&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://z.ai/blog/glm-5.4&#34;&gt;https://z.ai/blog/glm-5.4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;智谱从已预训练的 GLM-5 基座继续训练，在 7500 亿参数级的 GLM-5.4 中让共享权重的 28 层迭代两遍，以增加计算深度。模型在每个 token 上用门控调节残差更新；第二轮复用第一轮选出的稀疏注意力索引及部分 KV，并只为自己额外保留局部窗口的 KV，而不是复制整份上下文缓存。&lt;/p&gt;
+&lt;p&gt;发布方在同为 300 亿参数的对照中报告，循环版以约 10% 的额外总训练算力改善数学、科学推理和长上下文等任务，并让部分基准的输出长度缩短约 10%–14%。这是受控小模型实验，不能直接当成旗舰版的全面成绩。演示涉及生成视频、游戏和 FreeCAD 机械设计。智谱也承认旗舰版有时会陷入过长的外显推理，权重计划完成安全加固后再发布。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-1014-points--评论-332-comments--投稿者foohis--发布时间2026-11-23-180643-0800&#34;&gt;
+  HN 热度 1014 points | 评论 332 comments | 投稿者：foohis | 发布时间：2026-11-23 18:06:43 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-1014-points--%e8%af%84%e8%ae%ba-332-comments--%e6%8a%95%e7%a8%bf%e8%80%85foohis--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-180643-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50609685&#34;&gt;https://news.ycombinator.com/item?id=50609685&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人希望看到旗舰模型的标准化跑分，示例并不足以判断日常表现。&lt;/li&gt;
+&lt;li&gt;读者指出，文章最明确的量化对照来自 300 亿参数试验，不能和正式旗舰版直接等同。&lt;/li&gt;
+&lt;li&gt;循环隐藏状态与连续生成大量推理 token 是两种不同过程，层只跑两遍并不限定输出长度。&lt;/li&gt;
+&lt;li&gt;一些使用者能接受难题花更多时间，但认为简单任务中过度反复思考会拖慢交互。&lt;/li&gt;
+&lt;li&gt;有读者认为，把中间步骤写成可运行代码，能帮助模型处理超出传统编程范围的复杂工作。&lt;/li&gt;
+&lt;li&gt;有回复指出，公告说的是安全加固后计划开放权重，目前不能据此当作权重已发布。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-spelunkr-把-internet-archive-的旧视频编成全天同步频道-free-alternative-tv-network-built-from-the-internet-archives-forgotten-videos&#34;&gt;
+  4. SPELUNKR 把 Internet Archive 的旧视频编成全天同步频道 (Free alternative TV network built from the Internet Archive&amp;rsquo;s forgotten videos)
+  &lt;a class=&#34;anchor&#34; href=&#34;#4-spelunkr-%e6%8a%8a-internet-archive-%e7%9a%84%e6%97%a7%e8%a7%86%e9%a2%91%e7%bc%96%e6%88%90%e5%85%a8%e5%a4%a9%e5%90%8c%e6%ad%a5%e9%a2%91%e9%81%93-free-alternative-tv-network-built-from-the-internet-archives-forgotten-videos&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://spelunkr.tv&#34;&gt;https://spelunkr.tv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SPELUNKR 的网页介绍将它定位为用 Internet Archive 的旧视频制作的免费网络电视。频道按自己的节目表持续播放；前端根据当前时刻和节目表算出正在播的片段及进度，观众进入同一频道会加入当时的进度。这与点开一部影片从头播放不同，重点是切换频道时偶然碰到节目。&lt;/p&gt;
+&lt;p&gt;站点提供频道目录与时刻表，播放素材从 Internet Archive 获取，还用节目转场和历史广告素材营造旧电视的观看感。其公开页面与前端说明能核对播放方式；节目能否持续播放仍取决于上游素材是否可用。网站以档案为素材来源，并不意味着全部条目都属于同一种版权许可。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-918-points--评论-159-comments--投稿者sockthief--发布时间2026-11-23-091351-0800&#34;&gt;
+  HN 热度 918 points | 评论 159 comments | 投稿者：SockThief | 发布时间：2026-11-23 09:13:51 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-918-points--%e8%af%84%e8%ae%ba-159-comments--%e6%8a%95%e7%a8%bf%e8%80%85sockthief--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-091351-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50606192&#34;&gt;https://news.ycombinator.com/item?id=50606192&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一位读者切到老动画频道遇到《超时空要塞》，认为这种意外发现比主动搜索更有趣。&lt;/li&gt;
+&lt;li&gt;有人想在换台前查看后续节目介绍，让节目表更便于安排观看。&lt;/li&gt;
+&lt;li&gt;有用户希望直接在客厅 Apple TV 上使用，不必依赖电脑网页。&lt;/li&gt;
+&lt;li&gt;另一条建议是提供 M3U 频道和 XMLTV 节目表，让现有 IPTV 客户端接入。&lt;/li&gt;
+&lt;li&gt;有读者认为旧广告也是怀旧体验的一部分，并不只是节目之间的噪声。&lt;/li&gt;
+&lt;li&gt;直接使用 Internet Archive 的流量为另一套界面服务，也引出了上游是否愿意承担这类负载的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-tim-oreilly-反思硅谷如何从创造价值转向抽取价值-what-happened-to-silicon-valley&#34;&gt;
+  5. Tim O’Reilly 反思硅谷如何从创造价值转向抽取价值 (What Happened to Silicon Valley?)
+  &lt;a class=&#34;anchor&#34; href=&#34;#5-tim-oreilly-%e5%8f%8d%e6%80%9d%e7%a1%85%e8%b0%b7%e5%a6%82%e4%bd%95%e4%bb%8e%e5%88%9b%e9%80%a0%e4%bb%b7%e5%80%bc%e8%bd%ac%e5%90%91%e6%8a%bd%e5%8f%96%e4%bb%b7%e5%80%bc-what-happened-to-silicon-valley&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.oreilly.com/radar/what-happened-to-silicon-valley/&#34;&gt;https://www.oreilly.com/radar/what-happened-to-silicon-valley/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tim O’Reilly 发表自己在约翰斯·霍普金斯大学演讲的原始讲稿。他回忆 1993 年 GNN 的思路是把读者引向别人做的好内容，然后退出链条；他认为早期搜索也大规模帮助用户与内容匹配，而今天 Google 和 Amazon 的赞助内容更容易挤占自然结果。O’Reilly 把这种变化归因于奖励营收和股东收益增长的制度，而非个别从业者突然改变性格。&lt;/p&gt;
+&lt;p&gt;他区分创新带动用户与供应商一起受益时的超额回报，和用控制权、锁定或资本优势维持的抽取性收益，并用 Sidecar 与 Uber、Lyft 的融资差距说明补贴如何改变竞争。谈到 AI，他既看见放大集体知识的潜力，也担心资本回报压力、内容与客户上下文被圈住，以及劳动力收入下降后需求不足。他建议用开放协议、互操作性和可迁移的记忆重做市场规则；这是演讲者的制度分析与主张。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-794-points--评论-443-comments--投稿者greenyouse--发布时间2026-11-23-032015-0800&#34;&gt;
+  HN 热度 794 points | 评论 443 comments | 投稿者：greenyouse | 发布时间：2026-11-23 03:20:15 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-794-points--%e8%af%84%e8%ae%ba-443-comments--%e6%8a%95%e7%a8%bf%e8%80%85greenyouse--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-032015-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50602947&#34;&gt;https://news.ycombinator.com/item?id=50602947&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;追逐短期增长并不是硅谷最近才有的现象，有读者质疑将过去与现在划得太清楚。&lt;/li&gt;
+&lt;li&gt;有读者把风险投资人经营自己的媒体叙事视为变化之一，担心行业讨论变成自我推广。&lt;/li&gt;
+&lt;li&gt;有人追问，目前尚在大量亏损且缺乏壁垒的 AI 公司，是否适合直接归入抽取垄断收益的类别。&lt;/li&gt;
+&lt;li&gt;有读者指出，按点击付费最初是有用的市场设计，却也为后来的广告追踪创造了条件。&lt;/li&gt;
+&lt;li&gt;零利率时期的廉价资本也被视为重要变量，它让企业能长期用补贴追求规模。&lt;/li&gt;
+&lt;li&gt;有观点认为，一旦公司获得足够控制权，从既有渠道提取收益往往比开拓新价值容易。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-用-unsloth-desktop-在家运行-inkling-或-qwenwindows-入门指南-a-beginners-guide-to-local-ai-with-inkling-qwen-and-unsloth&#34;&gt;
+  6. 用 Unsloth Desktop 在家运行 Inkling 或 Qwen：Windows 入门指南 (A Beginner&amp;rsquo;s Guide to Local AI with Inkling, Qwen, and Unsloth)
+  &lt;a class=&#34;anchor&#34; href=&#34;#6-%e7%94%a8-unsloth-desktop-%e5%9c%a8%e5%ae%b6%e8%bf%90%e8%a1%8c-inkling-%e6%88%96-qwenwindows-%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97-a-beginners-guide-to-local-ai-with-inkling-qwen-and-unsloth&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth&#34;&gt;https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jerry James 以 Windows PC 为例，介绍如何用 Unsloth Desktop 安装量化模型、设置上下文，并选择是否向家庭局域网提供服务。他用 32 GB 显存的 RTX 5090 运行 Qwen3.8-27B 的 UD-Q4_K_XL 版，示例设置 128K 上下文。对 Inkling 2 Mini，他列出约 17.6 GB 的推荐四位文件；对 Apple Silicon，文章建议选用对应的 MLX 格式。&lt;/p&gt;
+&lt;p&gt;指南给出按显存选模型的参考档，解释部分 MoE 权重可以留在系统内存，但同时会影响速度。文件能装进显存不等于所需上下文也能装下：缓存、计算开销和桌面占用都可能改变结果。局域网共享部分使用应用的远程密码，目标是家里设备可访问；示范配置和速度不能直接外推到其他硬件或作为公开部署的依据。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-741-points--评论-296-comments--投稿者retell15--发布时间2026-11-23-050116-0800&#34;&gt;
+  HN 热度 741 points | 评论 296 comments | 投稿者：Retell15 | 发布时间：2026-11-23 05:01:16 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-741-points--%e8%af%84%e8%ae%ba-296-comments--%e6%8a%95%e7%a8%bf%e8%80%85retell15--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-050116-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50603845&#34;&gt;https://news.ycombinator.com/item?id=50603845&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者认为不宜把 32 GB 显存写成四位 Qwen3.6-35B 的硬门槛，卸载与上下文配置会改变容量需求。&lt;/li&gt;
+&lt;li&gt;也有人觉得用昂贵的 RTX 5090 示范，会让初学者误判本地推理的入门门槛。&lt;/li&gt;
+&lt;li&gt;一位读者报告，用 Ryzen AI 350 的 ThinkPad 运行 Qwen3.5-9B，再给另一台旧笔记本提供服务。&lt;/li&gt;
+&lt;li&gt;一位 32 GB MacBook Air 用户报告，Qwen3.8-27B 在自己任务中约每秒 15 token，已够日常使用。&lt;/li&gt;
+&lt;li&gt;有人建议显存计算器允许自行填入桌面占用，因为固定预留未必符合具体设备。&lt;/li&gt;
+&lt;li&gt;有读者担心局域网共享被误配置成外网可访问，便捷性和访问控制需要一起考虑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-openai-首席科学家建议用困惑度追踪预训练进展-perplexity-and-intelligence&#34;&gt;
+  7. OpenAI 首席科学家建议用困惑度追踪预训练进展 (Perplexity and Intelligence)
+  &lt;a class=&#34;anchor&#34; href=&#34;#7-openai-%e9%a6%96%e5%b8%ad%e7%a7%91%e5%ad%a6%e5%ae%b6%e5%bb%ba%e8%ae%ae%e7%94%a8%e5%9b%b0%e6%83%91%e5%ba%a6%e8%bf%bd%e8%b8%aa%e9%a2%84%e8%ae%ad%e7%bb%83%e8%bf%9b%e5%b1%95-perplexity-and-intelligence&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://openai.com/index/perplexity-and-intelligence/&#34;&gt;https://openai.com/index/perplexity-and-intelligence/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI 首席科学家 Jakub Pachocki 认为，追踪预训练模型对下一个 token 的预测能力，可帮助观察能力随规模和训练技术如何变化。OpenAI 平时使用对数困惑度，即交叉熵损失；数值越低代表在同一评测条件下预测越好。文中的主要留出集是内部代码库的固定快照：GPT‑3.5 约 0.99，GPT‑4 约 0.91，作者称约 0.76 时观察到了新的数学问题求解表现。&lt;/p&gt;
+&lt;p&gt;他建议不同实验室建立可比较的透明标准，把困惑度与其他评测结合，在监测能力达到明确里程碑之前约定开发边界。他推测 0.68–0.70 区间可能出现新的能力，但没有预测会是哪种能力。文章也承认，不同公司的数据难以直接比较，困惑度不能直接替代任务能力，后训练和推理时计算可明显改变表现，而数据本身的熵下限也未知。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-693-points--评论-440-comments--投稿者acossta--发布时间2026-11-23-010627-0800&#34;&gt;
+  HN 热度 693 points | 评论 440 comments | 投稿者：acossta | 发布时间：2026-11-23 01:06:27 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-693-points--%e8%af%84%e8%ae%ba-440-comments--%e6%8a%95%e7%a8%bf%e8%80%85acossta--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-010627-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50601525&#34;&gt;https://news.ycombinator.com/item?id=50601525&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用内部代码评测衡量进展有其用途，但读者质疑它与广义能力的关联是否足够强。&lt;/li&gt;
+&lt;li&gt;不同文本集得到的困惑度数字不能直接横比，需要共同且受控的测试集。&lt;/li&gt;
+&lt;li&gt;有读者原以为强化学习会让预训练损失不再重要，因此对内部序列仍有清晰趋势感到意外。&lt;/li&gt;
+&lt;li&gt;有人用 GPT‑4 和 o3 的能力差异说明，相近的损失也可能对应很不一样的推理表现。&lt;/li&gt;
+&lt;li&gt;已针对数学训练的小模型可能在某些任务上很强，能力出现不一定服从一条通用阈值。&lt;/li&gt;
+&lt;li&gt;一位自称在 OpenAI 工作的参与者认为，两者并非等价，但学好训练分布也可能提高模型的通用学习能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8-audubon-作者在gta-vi里找齐-60-种鸟核对虚拟佛罗里达的生态细节-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonidas-wildlife&#34;&gt;
+  8. Audubon 作者在《GTA VI》里找齐 60 种鸟，核对虚拟佛罗里达的生态细节 (The Birds of GTA 6: A Field Guide to Vice City and Leonida&amp;rsquo;s Wildlife)
+  &lt;a class=&#34;anchor&#34; href=&#34;#8-audubon-%e4%bd%9c%e8%80%85%e5%9c%a8gta-vi%e9%87%8c%e6%89%be%e9%bd%90-60-%e7%a7%8d%e9%b8%9f%e6%a0%b8%e5%af%b9%e8%99%9a%e6%8b%9f%e4%bd%9b%e7%bd%97%e9%87%8c%e8%be%be%e7%9a%84%e7%94%9f%e6%80%81%e7%bb%86%e8%8a%82-the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonidas-wildlife&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife&#34;&gt;https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Audubon 撰稿人 Nicholas Lund 把 Rockstar 的《GTA VI》当成观鸟区。用游戏内望远镜观察并执行研究操作，鸟会被记入进度表。他按真实观鸟经验走访不同栖息地：南部海岸多涉禽和海鸟，北部森林和开阔地适合找另一些种类，动物园与农场的鸟也算数。最后一只美洲仓鸮是在地图北部镇上的水塔发现的。进度表有 60 种，和预热宣传所说的 62 种口径不同；他报告不必推进主线就能找齐清单。&lt;/p&gt;
+&lt;p&gt;Lund 认可红树林海岸、草泽和一些南佛罗里达常见鸟类的还原，也指出在佛罗里达罕见的金雕，以及受保护的美洲鹤等，在游戏里的分布或出现率并不真实。文章把它当作一篇个人游戏观察与虚拟观鸟指南，不将游戏模型当作野外生态资料。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-629-points--评论-363-comments--投稿者gaws--发布时间2026-11-23-031034-0800&#34;&gt;
+  HN 热度 629 points | 评论 363 comments | 投稿者：gaws | 发布时间：2026-11-23 03:10:34 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-629-points--%e8%af%84%e8%ae%ba-363-comments--%e6%8a%95%e7%a8%bf%e8%80%85gaws--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-031034-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50602843&#34;&gt;https://news.ycombinator.com/item?id=50602843&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有人赞叹鸟类细节，并猜想开发团队或许请过鸟类学家，但没有给出证据。&lt;/li&gt;
+&lt;li&gt;一位通关读者觉得游戏核心仍偏重故事，沙盒里密集的细节反而容易被主线玩家错过。&lt;/li&gt;
+&lt;li&gt;见过真实佛罗里达丛鸦的读者特意核对了它是否出现在游戏中。&lt;/li&gt;
+&lt;li&gt;有人喜欢把现实中的兴趣带进开放世界，而不用按游戏最常见的方式体验它。&lt;/li&gt;
+&lt;li&gt;《荒野大镖客 2》的野生动物玩法也被提起，显示这类细节本身能成为探索动机。&lt;/li&gt;
+&lt;li&gt;有家长希望有个更温和的探索模式，让孩子单纯在地图里开车和观察。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-xnulinux-将-xnu-作为模块载入-arm64-linux尝试运行-macos-桌面-xnu-linux-full-os-x-gui-userspace-on-linux&#34;&gt;
+  9. xnulinux 将 XNU 作为模块载入 arm64 Linux，尝试运行 macOS 桌面 (XNU Linux: Full OS X GUI Userspace on Linux)
+  &lt;a class=&#34;anchor&#34; href=&#34;#9-xnulinux-%e5%b0%86-xnu-%e4%bd%9c%e4%b8%ba%e6%a8%a1%e5%9d%97%e8%bd%bd%e5%85%a5-arm64-linux%e5%b0%9d%e8%af%95%e8%bf%90%e8%a1%8c-macos-%e6%a1%8c%e9%9d%a2-xnu-linux-full-os-x-gui-userspace-on-linux&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://github.com/AFK-surf/xnulinux&#34;&gt;https://github.com/AFK-surf/xnulinux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;xnulinux 从苹果公布的 XNU 源码构建 Linux 可加载模块，并将 macOS 用户态运行在其上。XNU 与 Linux 共用处理器，通过独立接口模块向 Linux 借用内存、网络、磁盘等资源；它的设计没有在这两套内核之间插入传统虚拟机监控器，但 Apple Silicon 的演示本身是在 Linux 虚拟机里完成的。&lt;/p&gt;
+&lt;p&gt;README 报告，在 Apple Silicon 的 arm64 Linux 环境中能启动 Finder、Safari 等，在裸机 DGX Spark 用四个 CPU 和 8 GiB 保留内存启动桌面，并可从外部访问屏幕和终端。DGX Spark 当前不具备项目所需的 GPU 桥接后端，因而使用 CPU 渲染。作者报告过 30 分钟压力测试，也列出 4K 页、PAC、图形兼容性和安全机制被放宽等限制。仓库不分发 macOS 二进制，系统盘须来自自己的安装；这些演示尚不能说明可作为通用生产环境。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-596-points--评论-243-comments--投稿者mmastrac--发布时间2026-11-23-114924-0800&#34;&gt;
+  HN 热度 596 points | 评论 243 comments | 投稿者：mmastrac | 发布时间：2026-11-23 11:49:24 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-596-points--%e8%af%84%e8%ae%ba-243-comments--%e6%8a%95%e7%a8%bf%e8%80%85mmastrac--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-114924-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50607261&#34;&gt;https://news.ycombinator.com/item?id=50607261&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mac 用户首先关心能否在 Asahi Linux 中直接承载 macOS 桌面，现有演示没有证明这一点。&lt;/li&gt;
+&lt;li&gt;有回复特别提醒，页大小和 GPU 路径使当前 Mac 演示仍依赖特定虚拟机环境。&lt;/li&gt;
+&lt;li&gt;有人询问 Xcode 和 iOS 构建是否真的可用，能开桌面还不足以回答开发工具链问题。&lt;/li&gt;
+&lt;li&gt;有读者想比较它与 KVM 方案，因为从部署者角度看，保留 CPU、内存和系统盘仍有虚拟机般的资源安排。&lt;/li&gt;
+&lt;li&gt;有读者担心苹果可能反对这一用法，讨论本身不能定论授权或法律地位。&lt;/li&gt;
+&lt;li&gt;另有读者希望正式开发工具能提供轻量的 macOS 或 iOS 测试环境，方便隔离运行自动化测试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10-small-sf一张叠加实时公交船舶和飞机的微缩旧金山-a-miniature-san-francisco-with-live-buses-planes-and-boats&#34;&gt;
+  10. Small SF：一张叠加实时公交、船舶和飞机的微缩旧金山 (A miniature San Francisco with live buses, planes and boats)
+  &lt;a class=&#34;anchor&#34; href=&#34;#10-small-sf%e4%b8%80%e5%bc%a0%e5%8f%a0%e5%8a%a0%e5%ae%9e%e6%97%b6%e5%85%ac%e4%ba%a4%e8%88%b9%e8%88%b6%e5%92%8c%e9%a3%9e%e6%9c%ba%e7%9a%84%e5%be%ae%e7%bc%a9%e6%97%a7%e9%87%91%e5%b1%b1-a-miniature-san-francisco-with-live-buses-planes-and-boats&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://smallsf.com/&#34;&gt;https://smallsf.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Small SF 是 Ari Dutilh 制作的可拖动缩放地图。作者从 Google Photorealistic 3D Tiles 渲染统一视角的底图，用图像模型逐块转绘，再沿重叠区域寻找较自然的拼接边界。说明页当时列出 2,925 块中的 1,322 块已绘制、成图约 98 亿像素；未绘制区域仍在补齐。&lt;/p&gt;
+&lt;p&gt;图中的公交借助 511.org 等数据估计车辆位置，船舶显示最近一次 AIS 上报位置，航班来自 ADS‑B 接收网络；雾层取自 NOAA 卫星图像，约滞后半小时。道路车辆没有逐辆实时来源，由程序根据 OpenStreetMap 路网及真实路口信号灯位置模拟。建筑可查公开资料，Muni 站点也可做发车看板。地图的生成式绘图与不同数据源的刷新节奏，都会限制细节与位置的精确度。&lt;/p&gt;
+&lt;h3 id=&#34;hn-热度-369-points--评论-111-comments--投稿者dutilh--发布时间2026-11-23-043323-0800&#34;&gt;
+  HN 热度 369 points | 评论 111 comments | 投稿者：dutilh | 发布时间：2026-11-23 04:33:23 +08:00
+  &lt;a class=&#34;anchor&#34; href=&#34;#hn-%e7%83%ad%e5%ba%a6-369-points--%e8%af%84%e8%ae%ba-111-comments--%e6%8a%95%e7%a8%bf%e8%80%85dutilh--%e5%8f%91%e5%b8%83%e6%97%b6%e9%97%b42026-11-23-043323-0800&#34;&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;a href=&#34;https://news.ycombinator.com/item?id=50603589&#34;&gt;https://news.ycombinator.com/item?id=50603589&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有读者想知道在街道级缩放时，公交和飞机两类更新如何插值才能平滑移动。&lt;/li&gt;
+&lt;li&gt;有人喜欢整体效果，同时觉得模拟车流的动作不够自然。&lt;/li&gt;
+&lt;li&gt;与早年大型像素画相比，有读者觉得远看效果好，放大后能发现的手工细节却更少。&lt;/li&gt;
+&lt;li&gt;有旧金山读者用熟悉的 Patricia’s Green 核对时发现公园没有被正确绘出。&lt;/li&gt;
+&lt;li&gt;也有人觉得，即便由图像模型转绘，渔人码头的视角依然能唤起真实的城市记忆。&lt;/li&gt;
+&lt;li&gt;有人希望地图支持旋转，以便从其他方向探索街区。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

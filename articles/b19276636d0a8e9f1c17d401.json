@@ -1,0 +1,11 @@
+{
+  "id": "b19276636d0a8e9f1c17d401",
+  "title": "【数据结构与算法】栈",
+  "summary": "基本概念 栈（Stack）是一种后进先出（LIFO）原则的线性数据结构。核心操作包括： 压栈（Push）：将元素添加到栈顶 出栈（Pop）：移除并返回栈顶元素 查看栈顶（Check）获取但移除栈顶元素 判空（is_empty）检查栈是否为空 结构定义 使用动态数组实现栈，包含三个核心属性： typedef struct Stack { int* data; // 存储元素的数组 int top; // 栈顶指针（当前元素位置） int capacity; // 栈的最大容量 } data ：动态分配的数组指针 top ：初始值为-1，表示空栈，压栈时递增，出栈时递减 capacity ：栈的容量上限 功能实现 初始化 // 初始化栈 void init_stack(Stack *s, int capacity…",
+  "content": "<h2>基本概念</h2>\n<p>栈（Stack）是一种后进先出（LIFO）原则的线性数据结构。核心操作包括：</p>\n<ul>\n<li>压栈（Push）：将元素添加到栈顶</li>\n<li>出栈（Pop）：移除并返回栈顶元素</li>\n<li>查看栈顶（Check）获取但移除栈顶元素</li>\n<li>判空（is_empty）检查栈是否为空</li>\n</ul>\n<h2>结构定义</h2>\n<p>使用动态数组实现栈，包含三个核心属性：</p>\n<pre><code>typedef struct Stack {\n int* data; // 存储元素的数组\n int top; // 栈顶指针（当前元素位置）\n int capacity; // 栈的最大容量\n}\n</code></pre>\n<ul>\n<li><code>data</code>：动态分配的数组指针</li>\n<li><code>top</code>：初始值为-1，表示空栈，压栈时递增，出栈时递减</li>\n<li><code>capacity</code>：栈的容量上限</li>\n</ul>\n<h2>功能实现</h2>\n<h3>初始化</h3>\n<pre><code>// 初始化栈\nvoid init_stack(Stack *s, int capacity) {\n // 计算最大容量\n s -&gt; data = (int*)malloc(sizeof(int) * capacity)\n if(!s -&gt; data) {\n printf(&quot;内存分配失败！\\n&quot;);\n exit(1);\n }\n // 初始化栈顶为-1，表空\n s -&gt; top = -1;\n // 把当前计算的最大容量赋值给传进来的栈\n s -&gt; capacity = capacity;\n}\n</code></pre>\n<p>这个函数中进行了动态分配内存计算最大容量，初始化赋值和异常处理。</p>\n<h3>压栈（Push）</h3>\n<pre><code>// 压栈（Push）\nvoid push(Stack *s, int value) {\n if (s -&gt; top = s -&gt; capacity -1) {\n printf(&quot;栈已满！\\n&quot;);\n return;\n }\n s -&gt; data[++s-&gt;top] = value;\n}\n</code></pre>\n<p>检查栈是否已满，先递增指针再存入数据</p>\n<h3>出栈（Pop）</h3>\n<pre><code>// 出栈（Pop）\nint pop(Stack *s) {\n if(is_empty(s)) {\n printf(&quot;栈为空！\\n&quot;);\n return -1;\n }\n return s-&gt;data[s-&gt;top--];\n}\n</code></pre>\n<p>检查栈是否为空，返回当前栈顶元素后移动指针</p>\n<h3>辅助功能</h3>\n<pre><code>// 判空\nint is_empty(Stack *s) {\n return s-&gt; top == -1\n}\n\n// 查看栈顶元素\nint peek(Stack *s) {\n return is_empty(s) ? -1 : s-&gt;data[s-&gt;top];\n}\n\n// 销毁\nvoid destory_stack(Stack *S) {\n free(s-&gt;data);\n s -&gt; top = -1;\n s -&gt; capacity = 0;\n}\n</code></pre>",
+  "image": null,
+  "publishedAt": "2025-05-11T10:09:21Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E6%A0%88/"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cfbdcce5152d89fbdfc3427d",
+  "title": "Linux Desmume 安装",
+  "summary": "本文是一篇在 Linux 系统上安装 NDS 模拟器 DeSmuME 的简明教程，内容搬运并汉化自其官方。文章主要介绍了如何通过从源代码编译的方式来安装最新版本的 DeSmuME，涵盖了使用 Git 克隆或直接下载源码，以及执行 ./autogen.sh, ./configure, make 等一系列编译安装命令的完整流程。本教程为希望在 Linux 上运行 NDS 游戏的玩家提供了清晰直接的操作指南。",
+  "content": "<p>该文档讲述了如何在 Linux 系统下安装最新版本的 Desmume。</p><span></span><div><p>开始阅读前，需要知道：</p><ul><li>Desmume 是一个 NDS 模拟器</li><li>NDS 是任天堂在 04 年发售的便携式游戏机，具有双屏幕显示、触摸屏等功能或特色</li><li>该文档搬运且汉化了 <a href=\"https://wiki.desmume.org/index.php?title=Installing_DeSmuME_from_source_on_Linux\" target=\"_blank\" rel=\"noopener noreferrer\">Wiki</a> 上的安装方法：用 Git 安装</li></ul></div>————————<h1><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 获取源码</h1><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 如果没有 Git</h2><ol><li>进入 Desmume 的 <a href=\"https://github.com/TASVideos/desmume\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub 仓库</a>。</li><li>点击绿色的 <strong>Code</strong> 按钮，点击 <strong>Download ZIP</strong>。</li><li>解压后备用。</li></ol><h2><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 反之有 Git</h2><ol><li>打开终端，输入 <code>git clone https://github.com/TASVideos/desmume</code></li></ol> ————————<h1><a target=\"_blank\" rel=\"noopener noreferrer\"></a> 安装</h1><ol><li><p>打开终端，输入以下：</p> <pre><code>cd desmume/desmume/src/frontend/posix./autogen.sh./configuremakesudo make install</code></pre><p>如果想使用 offscreen mesa 作为替补 3D 引擎，改用 <code>./configure --enable-osmesa</code>。</p><p>如果想启用 HUD 显示，则用 <code>./configure --enable-hud</code>。</p></li><li><p>安装成功，在终端中输入 <code>desmume</code> 或在应用中点击其图标即可开启。</p></li></ol>",
+  "image": null,
+  "publishedAt": "2022-08-02T00:37:26Z",
+  "sourceId": "bbfc2dde895349ce",
+  "sourceTitle": "Cytrogen 的个人博客（中文）",
+  "link": "https://blog.cytrogen.icu/posts/ec37.html"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "25d2ece030336a81a336d19a",
+  "title": "深入浅出垃圾回收（四）分代式 GC",
+  "summary": "上文 介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。 阅读本文需要熟悉 之前提及的术语 。",
+  "content": "<p><a href=\"https://liujiacai.net/blog/2018/08/04/incremental-gc\" target=\"_blank\" rel=\"noopener noreferrer\">上文</a>介绍的增量式 GC 是对 mark 阶段的一大优化，可以极大避免 STW 的影响。本文将要介绍的分代式 GC 根据对象生命周期（后面称为 age）的特点来优化 GC，降低其性能消耗。</p>\n<p>阅读本文需要熟悉<a href=\"https://liujiacai.net/blog/2018/07/08/mark-sweep/#%E6%9C%AF%E8%AF%AD\" target=\"_blank\" rel=\"noopener noreferrer\">之前提及的术语</a>。</p>",
+  "image": null,
+  "publishedAt": "2018-08-18T12:12:30Z",
+  "sourceId": "16aa1c6246a4804c",
+  "sourceTitle": "刘家财的个人网站",
+  "link": "https://liujiacai.net/blog/2018/08/18/generational-gc/"
+}

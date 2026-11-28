@@ -1,0 +1,11 @@
+{
+  "id": "ab3f4d5980727df7c67827e1",
+  "title": "Windows蓝牙总是自动断开，令我社死",
+  "summary": "我的蓝牙耳机一直在和windows电脑冷战。 经常我听着音乐，耳机和电脑的蓝牙突然断开了（但是蓝牙鼠标没事），然后Windows就自动切换到电脑扬声器功放音乐。 在公共场所真的汗如雨下。导致我有段时间心惊胆战地听音乐。 一开始以为要换耳机了。（但是没钱。） 用了个笨办法：禁用电脑扬声器。这样耳机拔出后电脑也不会出声。 1 很蠢的办法吧。但是能用。 问题解决了。 本月意识到可能不是耳机的问题，是Windows的问题。 在微软的支持页面找到了 Bluetooth keeps disconnecting in Windows 。 大概意思就是Windows为了省电，会自动关闭蓝牙适配器（……）只要关掉这个功能，耳机就不再莫名断开了。 2 windows你是大笨蛋啊。 （但是蓝牙鼠标为什么会没事啊……） 按 Win…",
+  "content": "<p>我的蓝牙耳机一直在和windows电脑冷战。</p>\n<p>经常我听着音乐，耳机和电脑的蓝牙突然断开了（但是蓝牙鼠标没事），然后Windows就自动切换到电脑扬声器功放音乐。\n在公共场所真的汗如雨下。导致我有段时间心惊胆战地听音乐。</p>\n<p>一开始以为要换耳机了。（但是没钱。）\n用了个笨办法：禁用电脑扬声器。这样耳机拔出后电脑也不会出声。<sup>1</sup>\n很蠢的办法吧。但是能用。\n问题解决了。</p>\n<p>本月意识到可能不是耳机的问题，是Windows的问题。\n在微软的支持页面找到了<a href=\"https://support.microsoft.com/en-us/windows/hardware/bluetooth/bluetooth-keeps-disconnecting-in-windows\" target=\"_blank\" rel=\"noopener noreferrer\">Bluetooth keeps disconnecting in Windows</a>。\n大概意思就是Windows为了省电，会自动关闭蓝牙适配器（……）只要关掉这个功能，耳机就不再莫名断开了。<sup>2</sup></p>\n<p>windows你是大笨蛋啊。\n（但是蓝牙鼠标为什么会没事啊……）</p>\n<div>\n<hr>\n<ol>\n<li>\n<p>按 Win + R，输入 mmsys.cpl，打开“声音”设置。在“播放”选项卡里，找到“扬声器”，然后禁用它。（竟然没有“拔出耳机后自动静音扬声器”的通用选项……）</p>\n</li>\n<li>\n<p>具体做法： 右键“开始”→“设备管理器”→展开“蓝牙”→右键名称像英特尔无线 Intel wireless、Realtek或MediaTek的<strong>蓝牙适配器</strong>→“属性”→“电源管理”→取消勾选“允许计算机关闭此设备以节约电源”。</p>\n</li>\n</ol>\n</div>\n<p><a href=\"https://wuliangdian.com/posts/bluetooth-keeps-disconnecting-in-windows/\" target=\"_blank\" rel=\"noopener noreferrer\">阅读原文</a></p>",
+  "image": null,
+  "publishedAt": "2026-11-02T01:30:00Z",
+  "sourceId": "4947a434a94c3ee9",
+  "sourceTitle": "無糧殿",
+  "link": "https://wuliangdian.com/posts/bluetooth-keeps-disconnecting-in-windows/"
+}

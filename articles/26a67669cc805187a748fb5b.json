@@ -1,0 +1,11 @@
+{
+  "id": "26a67669cc805187a748fb5b",
+  "title": "Spigot服务端控制台中文乱码解决方案",
+  "summary": "把 -Dfile.encoding=UTF-8 加在开服脚本文件的 -jar 前即可。 在启动脚本第一行加上 chcp 65001 我的启动脚本如下： chcp 65001 java -Dfile.encoding=UTF-8 -jar spigot-1.21.jar",
+  "content": "<ol>\n<li>把<code>-Dfile.encoding=UTF-8</code>加在开服脚本文件的<code>-jar</code>前即可。</li>\n<li>在启动脚本第一行加上<code>chcp 65001</code>\n我的启动脚本如下：</li>\n</ol>\n<pre><code>chcp 65001\njava -Dfile.encoding=UTF-8 -jar spigot-1.21.jar\n</code></pre>",
+  "image": null,
+  "publishedAt": "2025-01-04T08:35:00Z",
+  "sourceId": "77e484484cd58390",
+  "sourceTitle": "映屿",
+  "link": "https://blog.verdant.ee/posts/181/"
+}

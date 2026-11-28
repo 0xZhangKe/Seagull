@@ -1,0 +1,11 @@
+{
+  "id": "8cd82419e904c2290607b4fc",
+  "title": "Use Aggregate Devices to Rename USB Audio Devices",
+  "summary": "A workaround to fake-rename USB audio devices in MacOS",
+  "content": "<p>I bought a <a href=\"https://www.dell.com/en-gb/shop/monitors/apd/dell-s-27-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-\" target=\"_blank\" rel=\"noopener noreferrer\">new monitor</a> last week to play GTA VI, among other things, and for boring reasons I won&#x27;t get into here, I had occasion to plug in two USB audio dinguses — one for my headphones and one for my speakers. The problem with that even though I have two entirely different devices, they are both called &quot;USB Audio Device&quot; in MacOS and as far as I can tell, there&#x27;s no way to directly rename them. Currently my list looks like this:</p>\n<pre><code>$ SwitchAudioSource <span>-a</span> <span>-t</span> output<br>DELL S2725QC<br>USB Audio Device<br>USB Audio Device<br>MacBook Pro Speakers</code></pre>\n<p>What you <em>can</em> do is create an aggregate device in the Audio MIDI Setup app so when you look at your list of outputs either in Settings or in a CLI tool like <a href=\"https://github.com/deweller/switchaudio-osx\" target=\"_blank\" rel=\"noopener noreferrer\"><code>switchaudio-osx</code></a>, it will have a useful name.</p>\n<p>Open Audio MIDI Setup, hit the plus button, choose <code>Create Aggregate Device</code>, give it name, then tick the audio device you want to &quot;rename&quot;. I did this for my speakers and my headphones so now when I run <code>SwitchAudioSource</code> I see two <code>USB Audio Device</code> listed but also my new <code>Speakers</code> and <code>Headphones</code> outputs. There&#x27;s no way to remove the generic-named devices but this is much better solution that accidentally choosing the wrong output when I want to switch.</p>\n<pre><code>$ SwitchAudioSource <span>-a</span> <span>-t</span> output<br>DELL S2725QC<br>USB Audio Device<br>USB Audio Device<br>MacBook Pro Speakers<br>Speakers<br>Headphones</code></pre>",
+  "image": null,
+  "publishedAt": "2026-11-24T13:29:27Z",
+  "sourceId": "99310985b3738c4e",
+  "sourceTitle": "rknight.me",
+  "link": "https://rknight.me/blog/use-aggregate-devices-to-rename-usb-audio-devices/"
+}
